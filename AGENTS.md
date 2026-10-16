@@ -10,9 +10,26 @@ Vacation Assistant, Türkiye'den (İstanbul ya da Ankara) yurt dışına kısa �
 
 ## Komutlar
 
+Node 22 gerekir (`.nvmrc`). Önce `npm ci`.
+
 | Komut | Ne yapar |
 | --- | --- |
-| _(adım 1'de doldurulacak)_ | |
+| `npm run dev` | Geliştirme sunucusu (http://localhost:3000, Turbopack) |
+| `npm run build` | Üretim derlemesi |
+| `npm start` | Derlenmiş uygulamayı çalıştırır |
+| `npm run lint` | ESLint (uyarı da hata sayılır) |
+| `npm run typecheck` | Next.js route tiplerini üretir, ardından `tsc --noEmit` (strict) |
+| `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`) |
+
+CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test ve build çalıştırır.
+
+## Kod düzeni
+
+- `src/app/globals.css` — tüm renk token'ları (light + dark), Tailwind teması, grain dokusu. Ham renk değeri yalnızca burada durur; `src/test/design-tokens.test.ts` bunu ve WCAG AA kontrastını denetler.
+- `src/app/fonts.ts` — Fraunces, Geist, Geist Mono (`next/font/google`).
+- `src/components/ui/` — temel bileşenler: Button, Caption, Chip, Skeleton, Stamp, Ticket.
+- `src/lib/format.ts` — `tr-TR` biçimlendirme (`12.450 ₺`, `14 Kas Cmt`, 24 saat).
+- `/styleguide` — bileşen ve tipografi vitrini.
 
 ## Çalışma kuralları
 
