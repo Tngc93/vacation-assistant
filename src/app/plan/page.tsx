@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { PlanSections } from "@/components/plan/PlanSections";
+import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
 import { PlanSummary } from "@/components/plan/PlanSummary";
 import { SearchForm } from "@/components/search/SearchForm";
 import { Caption, Skeleton, SkeletonTicket } from "@/components/ui";
@@ -67,6 +68,10 @@ async function PlanContent({ searchParams }: Props) {
       </Caption>
       <h1 className="mb-8 mt-3 font-display text-display">{destination.nameTr}</h1>
       <PlanSummary search={result.value} />
+      {/* The rate streams in on its own; a slow or failing source never blocks the plan. */}
+      <Suspense fallback={<RateLineFallback className="mt-4" />}>
+        <RateLine currency={destination.currency} className="mt-4" />
+      </Suspense>
       <PlanSections search={result.value} />
     </>
   );

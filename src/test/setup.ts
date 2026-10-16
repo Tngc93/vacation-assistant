@@ -17,6 +17,10 @@ if (!window.matchMedia) {
     }) as MediaQueryList;
 }
 
+// Tests never touch the network: real sources are replaced by fixtures and fake fetchers.
+globalThis.fetch = (input: RequestInfo | URL) =>
+  Promise.reject(new Error(`Network access in tests is not allowed: ${String(input)}`));
+
 afterEach(() => {
   cleanup();
 });

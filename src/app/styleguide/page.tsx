@@ -152,10 +152,18 @@ export default function StyleguidePage() {
         </div>
       </Section>
 
-      <Section title="Vize damgası" note="Hafif eğik; 0° hâlinde de net okunur.">
-        <div className="flex flex-wrap items-center gap-10">
+      <Section
+        title="Vize damgası"
+        note="Vizesiz --ok · varışta vize, e-vize, ETA --sea · vize gerekli, giriş yok --warn · bilinmiyor --ink-muted. 0° hâlinde de net okunur."
+      >
+        <div className="flex flex-wrap items-center gap-8 md:gap-10">
           <Stamp label="Vizesiz" detail="90 gün" tone="ok" />
+          <Stamp label="Varışta vize" tone="sea" />
+          <Stamp label="E-vize" tone="sea" />
+          <Stamp label="ETA" detail="Elektronik izin" tone="sea" />
           <Stamp label="Vize gerekli" tone="warn" />
+          <Stamp label="Giriş yok" tone="warn" />
+          <Stamp label="Bilinmiyor" tone="muted" />
           <Stamp label="Vizesiz" detail="90 gün" tone="ok" tilted={false} />
         </div>
       </Section>

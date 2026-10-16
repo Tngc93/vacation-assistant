@@ -20,9 +20,11 @@ Node 22 gerekir (`.nvmrc`). Önce `npm ci`.
 | `npm run lint` | ESLint (uyarı da hata sayılır) |
 | `npm run typecheck` | Next.js route tiplerini üretir, ardından `tsc --noEmit` (strict) |
 | `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`) |
+| `npm run test:e2e` | Playwright: üretim build'ine karşı uçtan uca testler (önce `npm run build`; ilk seferde `npx playwright install chromium`) |
+| `npm run data:visa` | Vize verisini indirir, yalnızca TR pasaportunu `src/data/visa-tr.json`'a yazar (ağ ister; JSON commit'lenir, build ve CI vize verisi için internete çıkmaz) |
 | `npm run verify:destinations` | `src/data/destinations.ts`'i Wikidata'ya karşı yeniden doğrular (ağ ister, CI'da çalışmaz) |
 
-CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test ve build çalıştırır.
+CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test, build ve ardından e2e çalıştırır; Playwright tarayıcısı önbelleğe alınır.
 
 ## Kod düzeni
 
@@ -32,6 +34,7 @@ CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, tes
 - `src/lib/format.ts` — `tr-TR` biçimlendirme (`12.450 ₺`, `14 Kas Cmt`, 24 saat).
 - `src/data/` — kalkış şehirleri (`origins.ts`) ve ~65 varış şehri (`destinations.ts`; QID ve koordinatlar Wikidata'dan).
 - `src/lib/search/` — arama durumu: URL ayrıştırma ve doğrulama yalnızca `params.ts`'te (zod); tarih kuralları `dates.ts`; Türkçe arama `normalize.ts`.
+- `src/lib/visa/` — vize: CSV → JSON dönüşümü, gereklilik türleri, damga metinleri. `src/lib/rates/` — kur: TCMB → Frankfurter → Exchange Rate API, 4 sn zaman aşımı, ~6 saat önbellek, asla uydurma kur yok.
 - `src/components/search/` — biniş kartı arama formu: kalkış, combobox, tarih aralığı, yolcu.
 - `/` arama formu · `/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2` plan sayfası · `/styleguide` bileşen vitrini.
 
