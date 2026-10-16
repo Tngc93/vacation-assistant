@@ -4,6 +4,8 @@ import { findDestination } from "@/data/destinations";
 import { findOrigin } from "@/data/origins";
 import { daysBetween } from "@/lib/search/dates";
 import type { SearchState } from "@/lib/search/params";
+import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
+import type { CategoryId } from "@/lib/places/categories";
 import { RateLine, RateLineFallback } from "./RateLine";
 import { VisaCard } from "./VisaCard";
 
@@ -21,7 +23,7 @@ function Placeholder({ text, children }: { text: string; children?: ReactNode })
   );
 }
 
-function sectionsFor(search: SearchState): Section[] {
+function sectionsFor(search: SearchState, categories: CategoryId[]): Section[] {
   const origin = findOrigin(search.from)!;
   const destination = findDestination(search.to)!;
   const days = daysBetween(search.depart, search.return) + 1;
@@ -57,9 +59,10 @@ function sectionsFor(search: SearchState): Section[] {
     {
       id: "sehir-rehberi",
       title: "Şehir rehberi",
-      status: "Yakında",
       body: (
-        <Placeholder text="Görülecek yerler, restoranlar ve akşam mekânları OpenStreetMap verisiyle, harita üzerinde burada olacak." />
+        <Suspense fallback={<CityGuideSkeleton />}>
+          <CityGuide destination={destination} categories={categories} />
+        </Suspense>
       ),
     },
     {
@@ -71,11 +74,11 @@ function sectionsFor(search: SearchState): Section[] {
   ];
 }
 
-/** The plan's sections. Visa is live; the rest say what is coming without showing data. */
-export function PlanSections({ search }: { search: SearchState }) {
+/** The plan's sections. Visa and the city guide are live; the rest say what is coming without showing data. */
+export function PlanSections({ search, categories }: { search: SearchState; categories: CategoryId[] }) {
   return (
     <div className="mt-16 grid gap-12 md:mt-20 md:gap-16">
-      {sectionsFor(search).map((section) => (
+      {sectionsFor(search, categories).map((section) => (
         <section key={section.id} id={section.id} aria-labelledby={`${section.id}-title`}>
           <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
             <h2 id={`${section.id}-title`} className="font-display text-title">

@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { PlanSections } from "@/components/plan/PlanSections";
-import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
+import { CityMasthead } from "@/components/city/CityMasthead";
 import { PlanSummary } from "@/components/plan/PlanSummary";
 import { SearchForm } from "@/components/search/SearchForm";
 import { Caption, Skeleton, SkeletonTicket } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
 import { todayInIstanbul } from "@/lib/search/dates";
 import { describeSearch } from "@/lib/search/describe";
+import { parseCategories } from "@/lib/places/cats";
 import { parseSearch } from "@/lib/search/params";
 
 type Props = Pick<PageProps<"/plan">, "searchParams">;
@@ -63,16 +64,11 @@ async function PlanContent({ searchParams }: Props) {
   const destination = findDestination(result.value.to)!;
   return (
     <>
-      <Caption as="p">
-        Plan · {destination.countryTr}
-      </Caption>
-      <h1 className="mb-8 mt-3 font-display text-display">{destination.nameTr}</h1>
-      <PlanSummary search={result.value} />
-      {/* The rate streams in on its own; a slow or failing source never blocks the plan. */}
-      <Suspense fallback={<RateLineFallback className="mt-4" />}>
-        <RateLine currency={destination.currency} className="mt-4" />
-      </Suspense>
-      <PlanSections search={result.value} />
+      <CityMasthead destination={destination} />
+      <div className="mt-10">
+        <PlanSummary search={result.value} />
+      </div>
+      <PlanSections search={result.value} categories={parseCategories(params.cats)} />
     </>
   );
 }
