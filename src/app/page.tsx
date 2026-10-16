@@ -1,3 +1,5 @@
+import { BoardingPassHero } from "@/components/home/BoardingPassHero";
+
 export default function HomePage() {
-  return <p>Vacation Assistant — yapım aşamasında.</p>;
+  return <BoardingPassHero />;
 }
