@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "verify:destinations": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/verify-destinations.mjs",
-    "data:visa": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-visa.mjs"
+    "data:visa": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-visa.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.2",
@@ -23,6 +24,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/turbopack": "^4",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",

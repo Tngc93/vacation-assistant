@@ -20,10 +20,11 @@ Node 22 gerekir (`.nvmrc`). Önce `npm ci`.
 | `npm run lint` | ESLint (uyarı da hata sayılır) |
 | `npm run typecheck` | Next.js route tiplerini üretir, ardından `tsc --noEmit` (strict) |
 | `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`) |
+| `npm run test:e2e` | Playwright: üretim build'ine karşı uçtan uca testler (önce `npm run build`; ilk seferde `npx playwright install chromium`) |
 | `npm run data:visa` | Vize verisini indirir, yalnızca TR pasaportunu `src/data/visa-tr.json`'a yazar (ağ ister; JSON commit'lenir, build ve CI vize verisi için internete çıkmaz) |
 | `npm run verify:destinations` | `src/data/destinations.ts`'i Wikidata'ya karşı yeniden doğrular (ağ ister, CI'da çalışmaz) |
 
-CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test ve build çalıştırır.
+CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test, build ve ardından e2e çalıştırır; Playwright tarayıcısı önbelleğe alınır.
 
 ## Kod düzeni
 
