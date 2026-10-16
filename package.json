@@ -10,7 +10,8 @@
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "verify:destinations": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/verify-destinations.mjs"
+    "verify:destinations": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/verify-destinations.mjs",
+    "data:visa": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-visa.mjs"
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.2",
