@@ -1,10 +1,11 @@
 import { cn } from "@/lib/cn";
 
-export type StampTone = "ok" | "warn";
+export type StampTone = "ok" | "warn" | "muted";
 
 const tones: Record<StampTone, string> = {
   ok: "text-ok",
   warn: "text-warn",
+  muted: "text-ink-muted",
 };
 
 export type StampProps = {
