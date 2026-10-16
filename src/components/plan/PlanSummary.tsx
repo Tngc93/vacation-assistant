@@ -31,16 +31,17 @@ export function PlanSummary({ search }: { search: SearchState }) {
       }
     >
       <div className="flex items-end justify-between gap-4">
-        <div className="min-w-0">
+        <div className="shrink-0">
           <Caption as="p">Nereden</Caption>
-          <p className="mt-1 truncate font-mono text-title tabular tracking-tight">{originAirportsLabel(origin)}</p>
+          <p className="mt-1 whitespace-nowrap font-mono text-title tabular tracking-tight">{originAirportsLabel(origin)}</p>
           <p className="text-caption text-ink-muted">{origin.nameTr}</p>
         </div>
         <span aria-hidden="true" className="mb-6 hidden h-px flex-1 border-t border-dashed border-rule sm:block" />
         <div className="min-w-0 text-right">
           <Caption as="p">Nereye</Caption>
           <p className="mt-1 font-mono text-title tabular tracking-tight">{destination.cityCode}</p>
-          <p className="truncate text-caption text-ink-muted">
+          {/* Long country names wrap instead of squeezing the airport codes. */}
+          <p className="text-caption text-ink-muted">
             {destination.nameTr}, {destination.countryTr}
           </p>
         </div>
