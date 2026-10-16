@@ -1,3 +1,4 @@
+import { externalFetch } from "@/lib/net";
 import { parseErApi, parseFrankfurter, parseTcmbXml } from "./parse";
 import { SOURCES, type Fetcher, type RateResult, type RateSourceId } from "./types";
 
@@ -56,7 +57,7 @@ function reasonOf(error: unknown): string {
  */
 export async function getTryRate(currency: string, options: RateOptions = {}): Promise<RateResult> {
   const code = currency.toUpperCase();
-  const fetcher: Fetcher = options.fetcher ?? ((url, init) => fetch(url, init));
+  const fetcher: Fetcher = options.fetcher ?? ((url, init) => externalFetch(url, init));
   const timeoutMs = options.timeoutMs ?? RATE_TIMEOUT_MS;
   const attempts: Array<{ source: RateSourceId; reason: string }> = [];
 

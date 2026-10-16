@@ -16,5 +16,8 @@ export default defineConfig({
     url: `http://localhost:${PORT}`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
+    // External sources (rates, Overpass, Wikidata, Commons) fail fast, so pages
+    // render their "not available" states deterministically and without network.
+    env: { VA_OFFLINE: "1" },
   },
 });
