@@ -20,6 +20,7 @@ Node 22 gerekir (`.nvmrc`). Önce `npm ci`.
 | `npm run lint` | ESLint (uyarı da hata sayılır) |
 | `npm run typecheck` | Next.js route tiplerini üretir, ardından `tsc --noEmit` (strict) |
 | `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`) |
+| `npm run verify:destinations` | `src/data/destinations.ts`'i Wikidata'ya karşı yeniden doğrular (ağ ister, CI'da çalışmaz) |
 
 CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test ve build çalıştırır.
 
@@ -29,7 +30,10 @@ CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, tes
 - `src/app/fonts.ts` — Fraunces, Geist, Geist Mono (`next/font/google`).
 - `src/components/ui/` — temel bileşenler: Button, Caption, Chip, Skeleton, Stamp, Ticket.
 - `src/lib/format.ts` — `tr-TR` biçimlendirme (`12.450 ₺`, `14 Kas Cmt`, 24 saat).
-- `/styleguide` — bileşen ve tipografi vitrini.
+- `src/data/` — kalkış şehirleri (`origins.ts`) ve ~65 varış şehri (`destinations.ts`; QID ve koordinatlar Wikidata'dan).
+- `src/lib/search/` — arama durumu: URL ayrıştırma ve doğrulama yalnızca `params.ts`'te (zod); tarih kuralları `dates.ts`; Türkçe arama `normalize.ts`.
+- `src/components/search/` — biniş kartı arama formu: kalkış, combobox, tarih aralığı, yolcu.
+- `/` arama formu · `/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2` plan sayfası · `/styleguide` bileşen vitrini.
 
 ## Çalışma kuralları
 
