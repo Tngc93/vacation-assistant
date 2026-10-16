@@ -23,6 +23,11 @@ describe("VisaCard", () => {
     expect(screen.getByRole("img", { name: "Vize gerekli" }).className).toContain("text-warn");
   });
 
+  it("uses the sea tone for an e-visa", () => {
+    render(<VisaCard destination={findDestination("DXB")!} />);
+    expect(screen.getByRole("img", { name: "E-vize" }).className).toContain("text-sea");
+  });
+
   it("says unknown and still points to the official page when the country is missing", () => {
     const nowhere: Destination = { ...findDestination("PAR")!, countryCode: "ZZ", countryTr: "Bilinmeyen Ülke" };
     render(<VisaCard destination={nowhere} />);

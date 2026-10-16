@@ -1,6 +1,11 @@
 import type { VisaRequirement } from "./requirements";
 
-export type StampTone = "ok" | "warn" | "muted";
+/**
+ * Three tones plus unknown: ok = no visa, sea = a formality before or on
+ * arrival (visa on arrival, e-visa, ETA), warn = a visa or no entry,
+ * muted = no data.
+ */
+export type StampTone = "ok" | "sea" | "warn" | "muted";
 
 export type VisaPresentation = {
   /** Stamp main line (rendered uppercase). */
@@ -31,20 +36,20 @@ export function describeVisa(requirement: VisaRequirement, countryTr: string): V
     case "visa-on-arrival":
       return {
         label: "Varışta vize",
-        tone: "warn",
+        tone: "sea",
         sentence: `${countryTr} vizeyi varışta, sınır kapısında veriyor.`,
       };
     case "e-visa":
       return {
         label: "E-vize",
-        tone: "warn",
+        tone: "sea",
         sentence: `${countryTr} için seyahatten önce çevrimiçi e-vize alman gerekiyor.`,
       };
     case "eta":
       return {
         label: "ETA",
         detail: "Elektronik izin",
-        tone: "warn",
+        tone: "sea",
         sentence: `${countryTr} için seyahatten önce çevrimiçi elektronik seyahat izni (ETA) alman gerekiyor.`,
       };
     case "visa-required":

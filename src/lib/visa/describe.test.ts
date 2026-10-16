@@ -7,9 +7,9 @@ describe("stamp texts", () => {
   it.each<[VisaRequirement, { label: string; detail?: string; tone: string }]>([
     [{ kind: "visa-free", days: 90 }, { label: "Vizesiz", detail: "90 gün", tone: "ok" }],
     [{ kind: "visa-free", days: null }, { label: "Vizesiz", tone: "ok" }],
-    [{ kind: "visa-on-arrival" }, { label: "Varışta vize", tone: "warn" }],
-    [{ kind: "e-visa" }, { label: "E-vize", tone: "warn" }],
-    [{ kind: "eta" }, { label: "ETA", detail: "Elektronik izin", tone: "warn" }],
+    [{ kind: "visa-on-arrival" }, { label: "Varışta vize", tone: "sea" }],
+    [{ kind: "e-visa" }, { label: "E-vize", tone: "sea" }],
+    [{ kind: "eta" }, { label: "ETA", detail: "Elektronik izin", tone: "sea" }],
     [{ kind: "visa-required" }, { label: "Vize gerekli", tone: "warn" }],
     [{ kind: "no-admission" }, { label: "Giriş yok", tone: "warn" }],
     [{ kind: "unknown", raw: "covid ban" }, { label: "Bilinmiyor", tone: "muted" }],

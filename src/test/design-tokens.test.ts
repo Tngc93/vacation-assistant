@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import type { StampTone } from "@/components/ui";
 import { contrastRatio, readTokenBlock } from "./contrast";
 
 const SRC = path.resolve(__dirname, "..");
@@ -50,6 +51,16 @@ describe("design tokens", () => {
       expect(contrastRatio(tokens.accent, tokens.paper)).toBeGreaterThanOrEqual(3);
       expect(contrastRatio(tokens.accent, tokens["paper-raised"])).toBeGreaterThanOrEqual(3);
     });
+  });
+});
+
+// Each visa stamp tone and the token it prints in; stamps sit on paper and paper-raised.
+const STAMP_TONE_TOKENS: Record<StampTone, string> = { ok: "ok", sea: "sea", warn: "warn", muted: "ink-muted" };
+
+describe.each(Object.entries(themes))("visa stamp tones, %s theme", (_, tokens) => {
+  it.each(Object.entries(STAMP_TONE_TOKENS))("%s (--%s) passes WCAG AA on paper and paper-raised", (_, token) => {
+    expect(contrastRatio(tokens[token], tokens.paper)).toBeGreaterThanOrEqual(4.5);
+    expect(contrastRatio(tokens[token], tokens["paper-raised"])).toBeGreaterThanOrEqual(4.5);
   });
 });
 
