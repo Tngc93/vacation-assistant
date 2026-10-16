@@ -39,9 +39,10 @@ function score(entry: Indexed, query: string): number | null {
   if (entry.codes.includes(query)) return 0;
   if (entry.names.some((n) => n.startsWith(query))) return 1;
   if (entry.countries.some((c) => c.startsWith(query))) return 2;
+  // Words are split on spaces and hyphens (normalizeForSearch turns hyphens into spaces).
   const words = [...entry.names, ...entry.countries].flatMap((t) => t.split(" "));
   if (words.some((w) => w.startsWith(query))) return 3;
-  // No mid-word matches: "ital" should not find "Brussels-Capital Region".
+  // Deliberately no mid-word (substring) matches: "ital" must not find "cap-ital".
   return null;
 }
 

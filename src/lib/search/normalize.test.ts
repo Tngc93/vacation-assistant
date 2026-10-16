@@ -55,9 +55,22 @@ describe("searchDestinations", () => {
     expect(searchDestinations("İSPANYA").map((d) => d.cityCode)).toEqual(spanish);
   });
 
-  it("matches the start of words, not the middle", () => {
-    expect(searchDestinations("ital").map((d) => d.cityCode).sort()).toEqual(["FLR", "MIL", "NAP", "ROM", "VCE"]);
+  // Regression: substring matching once let "ital" find Brussels ("Brussels-Capital Region").
+  it("returns only Italian cities for 'ital'", () => {
+    const italian = DESTINATIONS.filter((d) => d.countryCode === "IT").map((d) => d.cityCode).sort();
+    expect(searchDestinations("ital").map((d) => d.cityCode).sort()).toEqual(italian);
+    expect(searchDestinations("ital").every((d) => d.countryCode === "IT")).toBe(true);
+  });
+
+  it("matches the start of words separated by spaces or hyphens, never the middle", () => {
     expect(first("dabi")).toBe("AUH");
+    expect(first("lumpur")).toBe("KUL");
+    expect(first("peterburg")).toBe("LED");
+    expect(first("hersek")).toBe("SJJ");
+    expect(searchDestinations("lona")).toEqual([]);
+    expect(searchDestinations("peste")).toEqual([]);
+    expect(searchDestinations("kahir").map((d) => d.cityCode)).toEqual(["CAI"]);
+    expect(searchDestinations("ahire")).toEqual([]);
   });
 
   it("knows everyday country names", () => {
