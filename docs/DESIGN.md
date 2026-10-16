@@ -25,7 +25,9 @@ Define these as CSS variables in `app/globals.css` and map them into the Tailwin
 | `--accent-ink` | `#FBF8F2` | `#0F1216` | text on accent |
 | `--sea` | `#1F5560` | `#6FA8B3` | map water, info states, links |
 | `--ok` | `#3F6B45` | `#86B98C` | visa-free, success |
-| `--warn` | `#9A6A12` | `#D9A441` | visa needed, estimate warnings |
+| `--warn` | `#8F6210`¹ | `#D9A441` | visa needed, estimate warnings |
+
+¹ Originally `#9A6A12`, which is only 4.13:1 on `--paper`. Darkened to `#8F6210` (4.67:1) to meet the WCAG AA quality bar below.
 
 - Radius: 4px for inputs and chips, 6px for cards. No pill-shaped cards, no `rounded-2xl`.
 - Shadows: none, or one very soft shadow for raised tickets (`0 1px 0 var(--rule), 0 8px 24px -16px rgb(0 0 0 / .25)`).
