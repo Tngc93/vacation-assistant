@@ -35,6 +35,8 @@ CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, tes
 - `src/data/` — kalkış şehirleri (`origins.ts`) ve ~65 varış şehri (`destinations.ts`; QID ve koordinatlar Wikidata'dan).
 - `src/lib/search/` — arama durumu: URL ayrıştırma ve doğrulama yalnızca `params.ts`'te (zod); tarih kuralları `dates.ts`; Türkçe arama `normalize.ts`.
 - `src/lib/visa/` — vize: CSV → JSON dönüşümü, gereklilik türleri, damga metinleri. `src/lib/rates/` — kur: TCMB → Frankfurter → Exchange Rate API, 4 sn zaman aşımı, ~6 saat önbellek, asla uydurma kur yok.
+- `src/lib/places/` — şehir rehberi: kategori eşlemesi tek dosyada (`categories.ts`), Overpass sorgusu, sıralama (Vikipedi dil sayısı ya da OSM kaydının ayrıntısı), `?cats=` parametresi; `use cache: remote` ile şehir + kategori başına ~7 gün. `src/lib/city/` — masthead: Commons fotoğrafı ve lisans filtresi, koordinat ve yerel saat.
+- Wikimedia/Wikidata/Overpass istekleri `VacationAssistant/0.1 (https://github.com/Tngc93/vacation-assistant)` User-Agent'ı ile gider. `VA_OFFLINE=1` (yalnızca e2e sunucusu) tüm dış kaynakları anında başarısız kılar.
 - `src/components/search/` — biniş kartı arama formu: kalkış, combobox, tarih aralığı, yolcu.
 - `/` arama formu · `/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2` plan sayfası · `/styleguide` bileşen vitrini.
 
