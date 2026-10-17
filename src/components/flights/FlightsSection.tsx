@@ -1,9 +1,12 @@
 import { Caption, SkeletonTicket } from "@/components/ui";
-import { AIRPORT_NAMES } from "@/lib/flights/display";
+import { airlineName } from "@/data/airlines";
+import { AIRPORT_NAMES, cacheCaption, formatStops, formatTicketDay } from "@/lib/flights/display";
+import { formatTRY } from "@/lib/format";
 import { FLIGHTS_ERROR_MESSAGES } from "@/lib/flights/errors";
 import { loadFlights } from "@/lib/flights/load";
 import type { AirportGroup, FlightsResult } from "@/lib/flights/search";
 import { choiceRef, chooseFlight } from "@/lib/flights/select";
+import type { FlightTicket, Leg } from "@/lib/flights/tickets";
 import { DirectChip } from "./DirectChip";
 import { FlightsLinks } from "./FlightsLinks";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
@@ -22,7 +25,37 @@ type Props = {
 /** Cached Travelpayouts prices for every origin airport (server-side; the token never reaches the browser). */
 export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight }: Props) {
   const result = await loadFlights(from, to, depart, ret, pax, direct);
-  return <FlightsView result={result} budgetRef={choiceRef(chooseFlight(result, flight))} />;
+  const choice = chooseFlight(result, flight);
+  return (
+    <>
+      <div className="print:hidden">
+        <FlightsView result={result} budgetRef={choiceRef(choice)} />
+      </div>
+      <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
+    </>
+  );
+}
+
+/** Printed instead of the cards: the budget's flight in one line. */
+export function FlightPrintSummary({ ticket }: { ticket: FlightTicket | null }) {
+  if (!ticket) return <p className="hidden text-body print:block">Uçuş seçilmedi; seçilen tarihler için önbellekte fiyat yok.</p>;
+  const leg = (l: Leg) => `${formatTicketDay(l.departDate)} · ${l.from} ${l.departTime} → ${l.to} ${l.arriveTime ?? "--:--"}${l.arriveDayOffset ? ` (+${l.arriveDayOffset})` : ""} · ${formatStops(l.stops).toLocaleLowerCase("tr")}`;
+  return (
+    <div className="hidden print:block">
+      <p className="text-body">
+        {airlineName(ticket.airline)} · {ticket.airline} {ticket.flightNumber}
+      </p>
+      <p className="mt-1 font-mono text-caption tabular">Gidiş: {leg(ticket.out)}</p>
+      {ticket.back ? <p className="font-mono text-caption tabular">Dönüş: {leg(ticket.back)}</p> : null}
+      <p className="mt-1 font-mono text-caption tabular">
+        {ticket.pax} yolcu × {formatTRY(ticket.pricePerAdult)} = {formatTRY(ticket.totalPrice)}
+      </p>
+      <Caption as="p" className="mt-1">
+        {cacheCaption(ticket.foundOn)}
+        {ticket.differentDates ? " · FARKLI TARİH" : ""}
+      </Caption>
+    </div>
+  );
 }
 
 const SOURCE_LINE = "KAYNAK: TRAVELPAYOUTS (AVIASALES) · SON 48 SAATTEKİ ARAMALARA DAYALI ÖNBELLEK · TAHMİNİ";

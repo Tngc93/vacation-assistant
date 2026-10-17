@@ -11,7 +11,8 @@ import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
 import type { CategoryId } from "@/lib/places/categories";
 import { VisaCard } from "./VisaCard";
 
-type Section = { id: string; title: string; status?: string; body: ReactNode };
+/** `print: false` leaves a section out of the printed plan. */
+type Section = { id: string; title: string; status?: string; body: ReactNode; print?: false };
 
 function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams, skip: string[]): Section[] {
   const destination = findDestination(search.to)!;
@@ -37,6 +38,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     {
       id: "konaklama",
       title: "Konaklama",
+      print: false,
       body: <StayCard destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax} />,
     },
     {
@@ -51,6 +53,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     {
       id: "sehir-rehberi",
       title: "Şehir rehberi",
+      print: false,
       body: (
         <Suspense fallback={<CityGuideSkeleton />}>
           <CityGuide destination={destination} categories={categories} />
@@ -94,7 +97,12 @@ export function PlanSections({
   return (
     <div className="mt-16 grid gap-12 md:mt-20 md:gap-16">
       {sectionsFor(search, categories, direct, budget, skip).map((section) => (
-        <section key={section.id} id={section.id} aria-labelledby={`${section.id}-title`}>
+        <section
+          key={section.id}
+          id={section.id}
+          aria-labelledby={`${section.id}-title`}
+          className={section.print === false ? "print:hidden" : undefined}
+        >
           <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
             <h2 id={`${section.id}-title`} className="font-display text-title">
               {section.title}

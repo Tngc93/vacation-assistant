@@ -28,7 +28,12 @@ export async function CityMasthead({ destination }: { destination: Destination }
           </Suspense>
         </div>
       </div>
-      {photo ? <CityPhoto photo={photo} cityName={destination.nameTr} /> : null}
+      {/* The photo is not printed (print: title, flight, visa, budget total and the plan). */}
+      {photo ? (
+        <div className="contents print:hidden">
+          <CityPhoto photo={photo} cityName={destination.nameTr} />
+        </div>
+      ) : null}
     </header>
   );
 }

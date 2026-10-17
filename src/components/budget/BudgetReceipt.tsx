@@ -127,8 +127,9 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
   const currencies = localCurrency === "TRY" ? ["TRY"] : ["TRY", localCurrency];
 
   return (
-    <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] md:items-start">
-      <div className="grid gap-5">
+    <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] md:items-start print:block">
+      {/* Printed: only the total (the inputs and rows stay on screen). */}
+      <div className="grid gap-5 print:hidden">
         {currencies.length > 1 ? (
           <div>
             <p id="butce-para-birimi" className="text-caption font-medium">
@@ -173,7 +174,7 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
 
       <section aria-label="Bütçe fişi" className="rounded-md border border-rule bg-paper-raised px-5 py-4 shadow-ticket md:px-8 md:py-6">
         <Caption as="p">BÜTÇE FİŞİ · TL</Caption>
-        <dl className="mt-2 divide-y divide-dashed divide-rule">
+        <dl className="mt-2 divide-y divide-dashed divide-rule print:hidden">
           {receipt.rows.map((row) => (
             <Row key={row.id} row={row} />
           ))}
