@@ -51,7 +51,10 @@ describe("FlightsView", () => {
     expect(within(tk).getByText("DÖNÜŞ · 18 Kas Çar")).toBeInTheDocument();
     expect(within(tk).getAllByText(/AKTARMASIZ/)).toHaveLength(2);
     expect(within(tk).getByText("AKTARMASIZ · 4 sa 05 dk")).toBeInTheDocument();
-    expect(within(tk).getByText("HAVAYOLU TK · GİDİŞ SEFERİ TK 1853")).toBeInTheDocument();
+    expect(within(tk).getByText(/^Türk Hava Yolları ·/)).toBeInTheDocument();
+    expect(within(tk).getByText("TK 1853")).toBeInTheDocument();
+    const lh = within(istGroup).getByRole("article", { name: /5\.310 ₺/ });
+    expect(within(lh).getByText(/^Lufthansa ·/).textContent).toBe("Lufthansa · LH 1301");
     expect(within(tk).getByText("1 YETİŞKİN")).toBeInTheDocument();
     expect(within(tk).getByText("TAHMİNİ TOPLAM · 2 YOLCU")).toBeInTheDocument();
     expect(within(tk).getByText("14.960 ₺")).toBeInTheDocument();
@@ -116,6 +119,12 @@ describe("FlightsView", () => {
       "https://www.aviasales.com/search/IST1411BCN18112",
     );
     expect(screen.getByRole("link", { name: /Google Flights'ta aç/ }).getAttribute("href")).toMatch(/^https:\/\/www\.google\.com\/travel\/flights\?/);
+  });
+
+  it("keeps an airline code it has no name for", async () => {
+    const unknown = ist.data.map((t) => ({ ...t, airline: "ZZ" }));
+    render(<FlightsView result={await resultFor(istanbul, { "IST-2026-11-14": unknown })} />);
+    expect(screen.getAllByText(/^ZZ ·/)[0].textContent).toMatch(/^ZZ · ZZ \d+$/);
   });
 
   it("explains each failure in its own words", async () => {

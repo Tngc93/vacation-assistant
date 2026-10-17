@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { buttonClasses, Caption, Ticket } from "@/components/ui";
+import { airlineName } from "@/data/airlines";
 import { cn } from "@/lib/cn";
 import { formatTRY } from "@/lib/format";
 import { cacheCaption, formatDuration, formatStops, formatTicketDay } from "@/lib/flights/display";
@@ -80,9 +81,12 @@ export function FlightTicketCard({ ticket, mark }: { ticket: FlightTicket; mark:
         <LegRow label="GİDİŞ" leg={ticket.out} />
         {ticket.back ? <LegRow label="DÖNÜŞ" leg={ticket.back} /> : null}
       </div>
-      <Caption as="p" tone="ink" className="mt-5">
-        HAVAYOLU {ticket.airline} · GİDİŞ SEFERİ {ticket.airline} {ticket.flightNumber}
-      </Caption>
+      <p className="mt-5 text-caption">
+        {airlineName(ticket.airline)} ·{" "}
+        <span className="font-mono tabular">
+          {ticket.airline} {ticket.flightNumber}
+        </span>
+      </p>
     </Ticket>
   );
 }
