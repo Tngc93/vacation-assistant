@@ -23,6 +23,11 @@ const PAGES = [
     name: "plan (flight tickets)",
     path: `/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`,
   },
+  {
+    // A filled budget in the destination's currency, with a chosen flight.
+    name: "plan (filled budget)",
+    path: `/plan?from=ESB&to=LON&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=4&stay=1234567.89&daily=98765.43&cur=GBP`,
+  },
   { name: "plan (invalid link)", path: "/plan?from=IST&to=XXX&depart=2020-01-01&pax=12" },
   { name: "styleguide", path: "/styleguide" },
 ];
@@ -44,12 +49,17 @@ for (const width of WIDTHS) {
           .filter((el) => !el.parentElement || el.parentElement.getBoundingClientRect().right <= viewport + 0.5)
           .slice(0, 5)
           .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} → ${Math.round(el.getBoundingClientRect().right)}px`);
-        return { scrollWidth: root.scrollWidth, clientWidth: viewport, offenders };
+        // Plan sections keep the 16px side gutter: one wide child would widen the whole column.
+        const gutterBreaks = [...document.querySelectorAll<HTMLElement>("main section[id]")]
+          .filter((el) => el.getBoundingClientRect().right > viewport - 16 + 0.5)
+          .map((el) => `#${el.id} → ${Math.round(el.getBoundingClientRect().right)}px`);
+        return { scrollWidth: root.scrollWidth, clientWidth: viewport, offenders, gutterBreaks };
       });
 
       expect(result.scrollWidth, `overflowing: ${result.offenders.join(" | ") || "none found"}`).toBeLessThanOrEqual(
         result.clientWidth,
       );
+      expect(result.gutterBreaks, "sections past the 16px gutter").toEqual([]);
     });
   }
 }
