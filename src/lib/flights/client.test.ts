@@ -10,7 +10,7 @@ describe("fetchPrices", () => {
   it("sends the token only in the X-Access-Token header, with a 1 hour cache", async () => {
     const fetcher = reply(200, ist);
     const outcome = await fetchPrices(query, { token: TOKEN, fetcher });
-    expect(outcome.ok && outcome.tickets).toHaveLength(5);
+    expect(outcome.ok && outcome.tickets).toHaveLength(6);
     const [url, init] = fetcher.mock.calls[0];
     expect(url).not.toContain(TOKEN);
     expect(new Headers(init.headers).get("X-Access-Token")).toBe(TOKEN);

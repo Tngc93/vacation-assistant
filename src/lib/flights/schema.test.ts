@@ -9,7 +9,7 @@ describe("parsePricesResponse", () => {
     const parsed = parsePricesResponse(ist);
     expect(parsed).toMatchObject({ ok: true, dropped: 0 });
     if (!parsed.ok) return;
-    expect(parsed.tickets).toHaveLength(5);
+    expect(parsed.tickets).toHaveLength(6);
     expect(parsed.tickets[0]).toMatchObject({ origin_airport: "IST", destination_airport: "BCN", price: 7480, airline: "TK", flight_number: "1853" });
   });
 

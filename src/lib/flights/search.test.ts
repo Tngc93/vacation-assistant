@@ -57,6 +57,24 @@ describe("searchFlights", () => {
     expect(result.cheapestId).toBe(result.groups[1].tickets[0].id);
   });
 
+  it("applies the 5 cards per airport after merging returns of the same outbound flight", async () => {
+    const base = ist.data[0];
+    const outbound = (n: number) => ({ ...base, flight_number: String(2000 + n), price: 9000 + n * 100 });
+    // Six outbound flights; the cheapest has three return options.
+    const data = [
+      outbound(0),
+      { ...outbound(0), price: 9050, return_at: "2026-11-18T08:00:00+01:00" },
+      { ...outbound(0), price: 9070, return_at: "2026-11-18T21:00:00+01:00" },
+      ...[1, 2, 3, 4, 5].map(outbound),
+    ];
+    const result = await searchFlights(istanbul, deps(routes({ "IST-2026-11-14": data })));
+    if (result.status !== "ok") throw new Error(result.status);
+    const cards = result.groups[0].tickets;
+    expect(cards.map((t) => t.flightNumber)).toEqual(["2000", "2001", "2002", "2003", "2004"]);
+    expect(cards[0].otherReturns.map((t) => t.pricePerAdult)).toEqual([9050, 9070]);
+    expect(result.cheapestId).toBe(cards[0].id);
+  });
+
   it("asks for 100 rows, enough for both airports in one IST answer", async () => {
     const fetcher = routes({ "IST-2026-11-14": ist.data });
     await searchFlights(istanbul, deps(fetcher));

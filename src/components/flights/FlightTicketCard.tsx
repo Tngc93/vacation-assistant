@@ -87,6 +87,47 @@ export function FlightTicketCard({ ticket, mark }: { ticket: FlightTicket; mark:
           {ticket.airline} {ticket.flightNumber}
         </span>
       </p>
+      {ticket.otherReturns.length ? <OtherReturns tickets={ticket.otherReturns} /> : null}
     </Ticket>
+  );
+}
+
+/** The same outbound flight with other return flights, each with its own price and link. */
+function OtherReturns({ tickets }: { tickets: FlightTicket[] }) {
+  return (
+    <details className="mt-5 border-t border-rule pt-4">
+      <summary className="cursor-pointer select-none text-caption underline underline-offset-4">
+        Diğer dönüş saatleri ({tickets.length})
+      </summary>
+      <ul className="mt-3 grid gap-3">
+        {tickets.map((t) =>
+          t.back ? (
+            <li key={t.id} className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 border-b border-dashed border-rule pb-3 last:border-b-0 last:pb-0">
+              <div className="min-w-0">
+                <Caption as="p">DÖNÜŞ · {formatTicketDay(t.back.departDate)}</Caption>
+                <p className="mt-1 font-mono text-body tabular">
+                  {t.back.from} <span className="text-ink-muted">{t.back.departTime}</span> → <span className="text-ink-muted">{t.back.arriveTime ?? "--:--"}</span>
+                  {t.back.arriveDayOffset > 0 ? <sup className="ml-0.5 text-micro text-ink-muted">+{t.back.arriveDayOffset}</sup> : null} {t.back.to}
+                </p>
+                <Caption as="p" className="mt-0.5">
+                  {formatStops(t.back.stops)}
+                  {t.back.durationMin ? ` · ${formatDuration(t.back.durationMin)}` : ""}
+                </Caption>
+              </div>
+              <div className="text-right">
+                <p className="font-mono text-body tabular">{formatTRY(t.pricePerAdult)}</p>
+                <Caption as="p">
+                  1 YETİŞKİN · TOPLAM {formatTRY(t.totalPrice)}
+                </Caption>
+                <a href={t.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="mt-1 inline-flex items-center gap-1 text-caption underline underline-offset-4">
+                  Güncel fiyatı gör
+                  <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
+                </a>
+              </div>
+            </li>
+          ) : null,
+        )}
+      </ul>
+    </details>
   );
 }

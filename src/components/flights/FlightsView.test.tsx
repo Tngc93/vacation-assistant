@@ -65,6 +65,29 @@ describe("FlightsView", () => {
     );
   });
 
+  it("shows other return times of the same outbound flight under one card", async () => {
+    const user = userEvent.setup();
+    render(<FlightsView result={await resultFor(istanbul, { "IST-2026-11-14": ist.data, "SAW-2026-11-14": saw.data })} />);
+    expect(screen.getAllByText(/^Lufthansa ·/)).toHaveLength(1);
+    const lh = screen.getByText(/^Lufthansa ·/).closest("article")!;
+    // The card shows the cheapest combination.
+    expect(within(lh).getByText("5.310 ₺")).toBeInTheDocument();
+    const summary = within(lh).getByText("Diğer dönüş saatleri (1)");
+    const list = summary.closest("details")!;
+    expect(list).not.toHaveAttribute("open");
+    await user.click(summary);
+    expect(list).toHaveAttribute("open");
+    expect(within(list).getByText("DÖNÜŞ · 18 Kas Çar")).toBeVisible();
+    expect(within(list).getByText("6.150 ₺")).toBeVisible();
+    expect(within(list).getByText("1 YETİŞKİN · TOPLAM 12.300 ₺")).toBeVisible();
+    expect(within(list).getByRole("link", { name: /Güncel fiyatı gör/ })).toHaveAttribute(
+      "href",
+      "https://www.aviasales.com/search/IST1411BCN18112?marker=4242",
+    );
+    // Cards without other returns have no list.
+    expect(screen.getAllByText(/Diğer dönüş saatleri/)).toHaveLength(1);
+  });
+
   it("marks the cheapest overall and the cheapest at each airport in accent", async () => {
     render(<FlightsView result={await resultFor(istanbul, { "IST-2026-11-14": ist.data, "SAW-2026-11-14": saw.data })} />);
     expect(screen.getAllByText("EN UCUZ")).toHaveLength(1);
