@@ -1,0 +1,59 @@
+{
+ "_note": "Sample data for development, screenshots and e2e only; not real prices. {depart}/{return} are filled with the requested dates, {month}/{returnMonth} with the requested months.",
+ "success": true,
+ "data": [
+  {
+   "origin": "IST",
+   "destination": "BCN",
+   "origin_airport": "SAW",
+   "destination_airport": "BCN",
+   "price": 4990,
+   "airline": "PC",
+   "flight_number": "1203",
+   "departure_at": "{depart}T08:30:00+03:00",
+   "return_at": "{return}T14:15:00+01:00",
+   "transfers": 0,
+   "return_transfers": 0,
+   "duration": 455,
+   "duration_to": 240,
+   "duration_back": 215,
+   "link": "/search/FIXTURE?t=FIXTURE&search_date=16102026&expected_price_currency=try"
+  },
+  {
+   "origin": "IST",
+   "destination": "BCN",
+   "origin_airport": "SAW",
+   "destination_airport": "BCN",
+   "price": 5640,
+   "airline": "PC",
+   "flight_number": "1205",
+   "departure_at": "{depart}T21:50:00+03:00",
+   "return_at": "{return}T22:30:00+01:00",
+   "transfers": 0,
+   "return_transfers": 0,
+   "duration": 455,
+   "duration_to": 240,
+   "duration_back": 215,
+   "link": "/search/FIXTURE?t=FIXTURE&search_date=15102026&expected_price_currency=try"
+  },
+  {
+   "origin": "IST",
+   "destination": "BCN",
+   "origin_airport": "SAW",
+   "destination_airport": "BCN",
+   "price": 4380,
+   "airline": "W6",
+   "flight_number": "4402",
+   "departure_at": "{depart}T05:55:00+03:00",
+   "return_at": "{return}T11:20:00+01:00",
+   "transfers": 1,
+   "return_transfers": 1,
+   "duration": 1025,
+   "duration_to": 520,
+   "duration_back": 505,
+   "link": "/search/FIXTURE?t=FIXTURE&search_date=16102026&expected_price_currency=try"
+  }
+ ],
+ "error": null,
+ "currency": "try"
+}

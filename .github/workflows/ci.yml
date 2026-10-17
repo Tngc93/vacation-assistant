@@ -54,11 +54,15 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+      # A fake "canary" token: check:bundle fails if its value reaches the browser bundle.
       - run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-      # Server-only data must never reach the browser bundle.
+          TRAVELPAYOUTS_TOKEN: ci-canary-token-not-real
+      # Server-only data and secrets must never reach the browser bundle.
       - run: npm run check:bundle
+        env:
+          TRAVELPAYOUTS_TOKEN: ci-canary-token-not-real
 
       # End-to-end checks run against the production build above.
       - name: Read Playwright version
