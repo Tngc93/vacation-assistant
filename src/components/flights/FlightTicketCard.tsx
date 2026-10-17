@@ -5,6 +5,7 @@ import { cn } from "@/lib/cn";
 import { formatTRY } from "@/lib/format";
 import { cacheCaption, formatDuration, formatStops, formatTicketDay } from "@/lib/flights/display";
 import type { FlightTicket, Leg } from "@/lib/flights/tickets";
+import { AddToBudgetButton } from "./AddToBudgetButton";
 
 /** Overall cheapest on the chosen dates, cheapest at one airport, or cheapest of the ±3 day fallback. */
 export type CheapestMark = "overall" | "airport" | "nearby" | null;
@@ -37,7 +38,7 @@ function LegRow({ label, leg }: { label: string; leg: Leg }) {
 }
 
 /** DESIGN.md "Flight tickets": codes, times, stops, airline and price in mono; the cheapest price in accent. */
-export function FlightTicketCard({ ticket, mark }: { ticket: FlightTicket; mark: CheapestMark }) {
+export function FlightTicketCard({ ticket, mark, budgetRef = null }: { ticket: FlightTicket; mark: CheapestMark; budgetRef?: string | null }) {
   return (
     <Ticket
       stubBeside="md"
@@ -69,6 +70,7 @@ export function FlightTicketCard({ ticket, mark }: { ticket: FlightTicket; mark:
             Güncel fiyatı gör
             <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.5} />
           </a>
+          <AddToBudgetButton flightRef={ticket.ref} inBudget={ticket.ref === budgetRef} className="self-center" />
         </div>
       }
     >
@@ -87,13 +89,13 @@ export function FlightTicketCard({ ticket, mark }: { ticket: FlightTicket; mark:
           {ticket.airline} {ticket.flightNumber}
         </span>
       </p>
-      {ticket.otherReturns.length ? <OtherReturns tickets={ticket.otherReturns} /> : null}
+      {ticket.otherReturns.length ? <OtherReturns tickets={ticket.otherReturns} budgetRef={budgetRef} /> : null}
     </Ticket>
   );
 }
 
 /** The same outbound flight with other return flights, each with its own price and link. */
-function OtherReturns({ tickets }: { tickets: FlightTicket[] }) {
+function OtherReturns({ tickets, budgetRef }: { tickets: FlightTicket[]; budgetRef: string | null }) {
   return (
     <details className="mt-5 border-t border-rule pt-4">
       <summary className="cursor-pointer select-none text-caption underline underline-offset-4">
@@ -123,6 +125,9 @@ function OtherReturns({ tickets }: { tickets: FlightTicket[] }) {
                   Güncel fiyatı gör
                   <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
                 </a>
+                <div>
+                  <AddToBudgetButton flightRef={t.ref} inBudget={t.ref === budgetRef} className="mt-1" />
+                </div>
               </div>
             </li>
           ) : null,

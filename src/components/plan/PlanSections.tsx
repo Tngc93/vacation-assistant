@@ -1,13 +1,14 @@
 import { Suspense, type ReactNode } from "react";
 import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
 import { daysBetween } from "@/lib/search/dates";
 import type { SearchState } from "@/lib/search/params";
+import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection";
 import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
+import { StayCard } from "@/components/stays/StayCard";
+import type { BudgetParams } from "@/lib/budget/params";
 import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
 import type { CategoryId } from "@/lib/places/categories";
-import { RateLine, RateLineFallback } from "./RateLine";
 import { VisaCard } from "./VisaCard";
 
 type Section = { id: string; title: string; status?: string; body: ReactNode };
@@ -24,8 +25,7 @@ function Placeholder({ text, children }: { text: string; children?: ReactNode })
   );
 }
 
-function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean): Section[] {
-  const origin = findOrigin(search.from)!;
+function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams): Section[] {
   const destination = findDestination(search.to)!;
   const days = daysBetween(search.depart, search.return) + 1;
   return [
@@ -35,32 +35,30 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
       body: (
         <Suspense fallback={<FlightsSkeleton />}>
           <FlightsSection
-            origin={origin}
-            destination={destination}
+            from={search.from}
+            to={search.to}
             depart={search.depart}
             return={search.return}
             pax={search.pax}
             direct={direct}
+            flight={budget.flight}
           />
         </Suspense>
       ),
     },
     { id: "vize", title: "Vize", body: <VisaCard destination={destination} /> },
     {
+      id: "konaklama",
+      title: "Konaklama",
+      body: <StayCard destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax} />,
+    },
+    {
       id: "butce",
       title: "Bütçe",
-      status: "Yakında",
       body: (
-        <Placeholder text="Uçuş, konaklama ve günlük harcamanın TL toplamı, her satırın kaynağıyla birlikte burada olacak.">
-          {destination.currency !== "TRY" ? (
-            <div className="mt-4">
-              <Caption as="p">Hesapta kullanılacak kur</Caption>
-              <Suspense fallback={<RateLineFallback className="mt-2" />}>
-                <RateLine currency={destination.currency} className="mt-1" />
-              </Suspense>
-            </div>
-          ) : null}
-        </Placeholder>
+        <Suspense fallback={<BudgetSkeleton />}>
+          <BudgetSection search={search} destination={destination} direct={direct} budget={budget} />
+        </Suspense>
       ),
     },
     {
@@ -81,11 +79,21 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
   ];
 }
 
-/** The plan's sections. Flights, visa and the city guide are live; the rest say what is coming without showing data. */
-export function PlanSections({ search, categories, direct }: { search: SearchState; categories: CategoryId[]; direct: boolean }) {
+/** The plan's sections. Everything but the day-by-day plan is live; that one says what is coming without showing data. */
+export function PlanSections({
+  search,
+  categories,
+  direct,
+  budget,
+}: {
+  search: SearchState;
+  categories: CategoryId[];
+  direct: boolean;
+  budget: BudgetParams;
+}) {
   return (
     <div className="mt-16 grid gap-12 md:mt-20 md:gap-16">
-      {sectionsFor(search, categories, direct).map((section) => (
+      {sectionsFor(search, categories, direct, budget).map((section) => (
         <section key={section.id} id={section.id} aria-labelledby={`${section.id}-title`}>
           <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
             <h2 id={`${section.id}-title`} className="font-display text-title">
