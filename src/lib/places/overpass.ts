@@ -1,3 +1,4 @@
+import { distanceKm } from "@/lib/geo";
 import { externalFetch, timeoutSignal } from "@/lib/net";
 import { CATEGORIES, CATEGORY_IDS, type CategoryId } from "./categories";
 
@@ -37,13 +38,7 @@ export function boundingBox(rawLat: number, rawLon: number, radiusKm: number): [
 }
 
 /** Great-circle distance in kilometres. */
-export function distanceKm(aLat: number, aLon: number, bLat: number, bLon: number): number {
-  const toRad = (d: number) => (d * Math.PI) / 180;
-  const dLat = toRad(bLat - aLat);
-  const dLon = toRad(bLon - aLon);
-  const h = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * Math.sin(dLon / 2) ** 2;
-  return 2 * 6371.0088 * Math.asin(Math.sqrt(h));
-}
+export { distanceKm };
 
 /**
  * One deterministic query per city and category (same input, same text, same

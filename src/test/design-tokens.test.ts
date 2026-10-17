@@ -38,6 +38,10 @@ describe("design tokens", () => {
     expect(Object.keys(tokens).sort()).toEqual([...TOKENS].sort());
   });
 
+  it("print uses the light palette whatever the theme", () => {
+    expect(readTokenBlock(css, 'html:root:not([data-theme="print"])')).toEqual(themes.light);
+  });
+
   it("system dark and manual dark are identical", () => {
     expect(themes["dark (system)"]).toEqual(themes["dark (manual)"]);
   });

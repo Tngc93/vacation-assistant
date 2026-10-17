@@ -60,6 +60,34 @@
   --grain-opacity: 0.045;
 }
 
+/*
+ * Print: always the light palette (dark text on white paper), whatever the
+ * theme. The selector outranks both dark selectors above; the test checks
+ * that these values match the light theme.
+ */
+@media print {
+  html:root:not([data-theme="print"]) {
+    color-scheme: light;
+
+    --paper: #f4efe6;
+    --paper-raised: #fbf8f2;
+    --ink: #16181d;
+    --ink-muted: #6b665e;
+    --rule: #d9d1c3;
+    --accent: #b8492a;
+    --accent-ink: #fbf8f2;
+    --sea: #1f5560;
+    --ok: #3f6b45;
+    --warn: #8f6210;
+
+    --grain-opacity: 0;
+  }
+
+  @page {
+    margin: 14mm;
+  }
+}
+
 /* Fluid type: the top two steps shrink on mobile (44 / 32 instead of 72 / 48). */
 :root {
   --size-display: 2.75rem;
