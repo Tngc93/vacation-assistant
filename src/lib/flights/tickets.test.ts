@@ -40,9 +40,11 @@ describe("toFlightTicket", () => {
   });
 
   it("links to the Aviasales search for the ticket's own airport, dates and passengers", () => {
-    expect(toFlightTicket(api(0), { ...ctx, marker: "777" }).bookingUrl).toBe(
+    expect(toFlightTicket(api(0), { ...ctx, partner: { marker: "777", trs: null } }).bookingUrl).toBe(
       "https://www.aviasales.com/search/IST1411BCN18112?marker=777",
     );
+    const partner = new URL(toFlightTicket(api(0), { ...ctx, partner: { marker: "777", trs: "888" } }).bookingUrl);
+    expect(partner.searchParams.get("u")).toBe("https://www.aviasales.com/search/IST1411BCN18112");
   });
 
   it("flags tickets on other dates and has no arrival time without a duration", () => {

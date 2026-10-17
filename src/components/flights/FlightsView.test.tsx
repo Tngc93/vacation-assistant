@@ -30,7 +30,7 @@ const fetcher = (map: Record<string, unknown[]>): Fetcher =>
   };
 
 async function resultFor(search: FlightsSearch, map: Record<string, unknown[]>): Promise<FlightsResult> {
-  return searchFlights(search, { fetcher: fetcher(map), token: "t", marker: "4242", fixture: false });
+  return searchFlights(search, { fetcher: fetcher(map), token: "t", partner: { marker: "4242", trs: null }, fixture: false });
 }
 
 describe("FlightsView", () => {
@@ -110,7 +110,7 @@ describe("FlightsView", () => {
   });
 
   it("shows a calm message and both links instead of cards without a token", async () => {
-    const result = await searchFlights(istanbul, { token: null, marker: null, fixture: false });
+    const result = await searchFlights(istanbul, { token: null, partner: { marker: null, trs: null }, fixture: false });
     render(<FlightsView result={result} />);
     expect(screen.getByText("Tahmini fiyatlar için Travelpayouts bağlantısı henüz kurulmadı.")).toBeInTheDocument();
     expect(screen.queryByRole("article")).not.toBeInTheDocument();
@@ -140,7 +140,7 @@ describe("FlightsView", () => {
   });
 
   it("states the source and that prices are cached estimates, and flags sample data", async () => {
-    const result = await searchFlights(istanbul, { token: null, marker: null, fixture: true });
+    const result = await searchFlights(istanbul, { token: null, partner: { marker: null, trs: null }, fixture: true });
     render(<FlightsView result={result} />);
     expect(screen.getByText(/KAYNAK: TRAVELPAYOUTS \(AVIASALES\).*TAHMİNİ/)).toBeInTheDocument();
     expect(screen.getByText(/ÖRNEK VERİ · GELİŞTİRME FIXTURE'I · GERÇEK FİYAT DEĞİL/)).toBeInTheDocument();

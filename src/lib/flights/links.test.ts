@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { aviasalesParams, aviasalesSearchUrl, googleFlightsUrl } from "./links";
+import { aviasalesParams, aviasalesSearchUrl, googleFlightsUrl, partnerUrl } from "./links";
 
 const search = { origin: "IST", destination: "BCN", depart: "2026-11-14", return: "2026-11-18", pax: 2 };
 
@@ -11,10 +11,24 @@ describe("links to live prices", () => {
     );
   });
 
-  it("adds the partner marker when there is one, and only a numeric one", () => {
+  it("wraps the search in the Travelpayouts partner link when marker and project are set", () => {
+    const url = new URL(aviasalesSearchUrl(search, { marker: "123456", trs: "654321" }));
+    expect(url.origin + url.pathname).toBe("https://tp.media/r");
+    expect(Object.fromEntries(url.searchParams)).toEqual({
+      campaign_id: "100",
+      marker: "123456",
+      p: "4114",
+      trs: "654321",
+      u: "https://www.aviasales.com/search/IST1411BCN18112",
+    });
+  });
+
+  it("falls back to a plain marker without a project, and to the bare link without a marker", () => {
     expect(aviasalesSearchUrl(search)).toBe("https://www.aviasales.com/search/IST1411BCN18112");
-    expect(aviasalesSearchUrl(search, "123456")).toBe("https://www.aviasales.com/search/IST1411BCN18112?marker=123456");
-    expect(aviasalesSearchUrl(search, "12&x=1")).toBe("https://www.aviasales.com/search/IST1411BCN18112");
+    expect(aviasalesSearchUrl(search, { marker: "123456", trs: null })).toBe("https://www.aviasales.com/search/IST1411BCN18112?marker=123456");
+    expect(aviasalesSearchUrl(search, { marker: null, trs: "654321" })).toBe("https://www.aviasales.com/search/IST1411BCN18112");
+    // Only numeric ids are used, so nothing can be injected into the link.
+    expect(partnerUrl("https://www.aviasales.com/search/X1", { marker: "12&x=1", trs: "1" })).toBe("https://www.aviasales.com/search/X1");
   });
 
   it("opens the same round trip on Google Flights in Turkish and lira", () => {

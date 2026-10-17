@@ -16,7 +16,8 @@
     "test:e2e": "playwright test",
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
     "data:places": "tsx scripts/fetch-places.mts",
-    "check:bundle": "node scripts/check-client-bundle.mjs"
+    "check:bundle": "node scripts/check-client-bundle.mjs",
+    "verify:partner-links": "tsx scripts/verify-partner-links.mts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.2",

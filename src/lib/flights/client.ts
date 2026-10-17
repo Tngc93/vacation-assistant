@@ -1,6 +1,7 @@
 import "server-only";
 import { externalFetch, timeoutSignal } from "@/lib/net";
 import { reasonForStatus, type FlightsErrorReason } from "./errors";
+import type { Partner } from "./links";
 import { pricesUrl, type PricesQuery } from "./params";
 import { parsePricesResponse, type ApiTicket } from "./schema";
 
@@ -14,13 +15,16 @@ export type FetchOutcome = { ok: true; tickets: ApiTicket[] } | { ok: false; rea
 
 /**
  * Server-only settings. The token never leaves this module except as a
- * request header to api.travelpayouts.com; the marker is public (it is part
- * of every partner link).
+ * request header to api.travelpayouts.com; the marker and the project id
+ * (trs) are public, they are part of every partner link.
  */
-export function flightsConfig(): { token: string | null; marker: string | null } {
-  const token = process.env.TRAVELPAYOUTS_TOKEN?.trim() || null;
-  const marker = process.env.TRAVELPAYOUTS_MARKER?.trim() || null;
-  return { token, marker: marker && /^\d+$/.test(marker) ? marker : null };
+export function flightsConfig(): { token: string | null; partner: Partner } {
+  const read = (name: string) => process.env[name]?.trim() || null;
+  const numeric = (value: string | null) => (value && /^\d+$/.test(value) ? value : null);
+  return {
+    token: read("TRAVELPAYOUTS_TOKEN"),
+    partner: { marker: numeric(read("TRAVELPAYOUTS_MARKER")), trs: numeric(read("TRAVELPAYOUTS_PROJECT_ID")) },
+  };
 }
 
 /** One `prices_for_dates` request. Never throws; failures come back as a reason. */

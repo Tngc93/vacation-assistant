@@ -1,5 +1,5 @@
 import { daysBetween } from "@/lib/search/dates";
-import { aviasalesSearchUrl } from "./links";
+import { aviasalesSearchUrl, type Partner } from "./links";
 import type { ApiTicket } from "./schema";
 
 /** One direction of a round trip, in the local time of each airport. */
@@ -47,7 +47,7 @@ export type TicketContext = {
   depart: string;
   return: string;
   pax: number;
-  marker?: string;
+  partner?: Partner;
 };
 
 const partsCache = new Map<string, Intl.DateTimeFormat>();
@@ -116,7 +116,7 @@ export function toFlightTicket(api: ApiTicket, ctx: TicketContext): FlightTicket
     foundOn: foundOnFromLink(api.link),
     bookingUrl: aviasalesSearchUrl(
       { origin: api.origin_airport, destination: ctx.destinationCity, depart: out.departDate, return: returnDate ?? ctx.return, pax: ctx.pax },
-      ctx.marker,
+      ctx.partner,
     ),
   };
 }

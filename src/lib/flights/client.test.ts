@@ -51,13 +51,15 @@ describe("fetchPrices", () => {
 });
 
 describe("flightsConfig", () => {
-  it("reads the token and a numeric marker from the server environment", () => {
+  it("reads the token, a numeric marker and the project id from the server environment", () => {
     vi.stubEnv("TRAVELPAYOUTS_TOKEN", " abc ");
     vi.stubEnv("TRAVELPAYOUTS_MARKER", "12345");
-    expect(flightsConfig()).toEqual({ token: "abc", marker: "12345" });
+    vi.stubEnv("TRAVELPAYOUTS_PROJECT_ID", "678");
+    expect(flightsConfig()).toEqual({ token: "abc", partner: { marker: "12345", trs: "678" } });
     vi.stubEnv("TRAVELPAYOUTS_TOKEN", "");
     vi.stubEnv("TRAVELPAYOUTS_MARKER", "not-a-marker");
-    expect(flightsConfig()).toEqual({ token: null, marker: null });
+    vi.stubEnv("TRAVELPAYOUTS_PROJECT_ID", "");
+    expect(flightsConfig()).toEqual({ token: null, partner: { marker: null, trs: null } });
     vi.unstubAllEnvs();
   });
 });
