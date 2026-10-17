@@ -11,7 +11,7 @@ import {
   type StyleSpecification,
 } from "maplibre-gl";
 import { useEffect, useRef } from "react";
-import type { RankedPlace } from "@/lib/places/rank";
+import type { StoredPlace } from "@/lib/places/file";
 import {
   applyPatches,
   MAP_ATTRIBUTION,
@@ -22,7 +22,7 @@ import {
 } from "@/lib/places/mapStyle";
 
 export type PlacesMapProps = {
-  places: readonly RankedPlace[];
+  places: readonly StoredPlace[];
   center: { lat: number; lon: number };
   activeId: string | null;
   selectedId: string | null;
@@ -40,7 +40,7 @@ function readPalette(): MapPalette {
   ) as MapPalette;
 }
 
-function toFeatures(places: readonly RankedPlace[]): GeoJSON.FeatureCollection {
+function toFeatures(places: readonly StoredPlace[]): GeoJSON.FeatureCollection {
   return {
     type: "FeatureCollection",
     features: places.map((p) => ({
@@ -243,7 +243,7 @@ export default function PlacesMap({ places, center, activeId, selectedId, onActi
   );
 }
 
-function fitToPlaces(map: MapLibreMap, places: readonly RankedPlace[]) {
+function fitToPlaces(map: MapLibreMap, places: readonly StoredPlace[]) {
   if (places.length === 0) return;
   const bounds = new LngLatBounds();
   for (const p of places) bounds.extend([p.lon, p.lat]);

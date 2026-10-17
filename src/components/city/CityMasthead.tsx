@@ -3,11 +3,13 @@ import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
 import { Caption } from "@/components/ui";
 import type { Destination } from "@/data/destinations";
 import { formatCoordinates } from "@/lib/city/geo";
-import { CityPhoto, CityPhotoFallback } from "./CityPhoto";
+import { loadPlacesFile } from "@/lib/places/load";
+import { CityPhoto } from "./CityPhoto";
 import { LocalTime } from "./LocalTime";
 
 /** City name in very large Fraunces, a mono data line, and a credited photo beside it. */
-export function CityMasthead({ destination }: { destination: Destination }) {
+export async function CityMasthead({ destination }: { destination: Destination }) {
+  const photo = (await loadPlacesFile(destination.cityCode))?.photo ?? null;
   return (
     <header className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] md:items-end md:gap-12">
       <div className="min-w-0">
@@ -26,9 +28,7 @@ export function CityMasthead({ destination }: { destination: Destination }) {
           </Suspense>
         </div>
       </div>
-      <Suspense fallback={<CityPhotoFallback />}>
-        <CityPhoto wikidataId={destination.wikidataId} cityName={destination.nameTr} />
-      </Suspense>
+      {photo ? <CityPhoto photo={photo} cityName={destination.nameTr} /> : null}
     </header>
   );
 }

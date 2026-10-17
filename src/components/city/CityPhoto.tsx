@@ -1,21 +1,8 @@
 import Image from "next/image";
-import { Skeleton } from "@/components/ui";
-import { getCityPhoto } from "@/lib/city/cache";
-import type { CityPhoto as Photo } from "@/lib/city/photo";
+import type { StoredPhoto } from "@/lib/places/file";
 
-async function loadPhoto(wikidataId: string): Promise<Photo | null> {
-  try {
-    return await getCityPhoto(wikidataId);
-  } catch {
-    // No photo is better than a broken page; the masthead stands on its own.
-    return null;
-  }
-}
-
-/** Wikimedia Commons photo in duotone, with the mandatory author and licence credit. */
-export async function CityPhoto({ wikidataId, cityName }: { wikidataId: string; cityName: string }) {
-  const photo = await loadPhoto(wikidataId);
-  if (!photo) return null;
+/** Wikimedia Commons photo in duotone, with the mandatory author and licence credit. Served from the Commons CDN. */
+export function CityPhoto({ photo, cityName }: { photo: StoredPhoto; cityName: string }) {
   return (
     <figure className="min-w-0">
       <div className="duotone aspect-[4/3] overflow-hidden rounded-md">
@@ -43,8 +30,4 @@ export async function CityPhoto({ wikidataId, cityName }: { wikidataId: string; 
       </figcaption>
     </figure>
   );
-}
-
-export function CityPhotoFallback() {
-  return <Skeleton className="aspect-[4/3] w-full rounded-md" />;
 }

@@ -1,18 +1,16 @@
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import type { RankedPlace } from "@/lib/places/rank";
+import type { StoredPlace } from "@/lib/places/file";
 import { PlacesExplorer, type CategoryResult } from "./PlacesExplorer";
 
 const replace = vi.fn();
-const refresh = vi.fn();
-vi.mock("next/navigation", () => ({ useRouter: () => ({ replace, refresh }) }));
+vi.mock("next/navigation", () => ({ useRouter: () => ({ replace }) }));
 // MapLibre needs WebGL; the explorer's own behaviour is what is under test here.
 vi.mock("next/dynamic", () => ({ default: () => () => <div data-testid="map" /> }));
 
-const museum: RankedPlace = {
+const museum: StoredPlace = {
   id: "node/1",
-  category: "museum",
   name: "Picasso Müzesi",
   localName: "Museu Picasso",
   lat: 41.3851,
@@ -21,9 +19,8 @@ const museum: RankedPlace = {
   website: "https://museupicasso.bcn.cat/",
   wikipediaCount: 112,
 };
-const restaurant: RankedPlace = {
+const restaurant: StoredPlace = {
   id: "node/2",
-  category: "restaurant",
   name: "7 Portes",
   lat: 41.382,
   lon: 2.183,
@@ -33,7 +30,7 @@ const restaurant: RankedPlace = {
 };
 
 const results: CategoryResult[] = [
-  { category: "see", status: "error" },
+  { category: "see", status: "missing" },
   { category: "museum", status: "ok", places: [museum], wikipediaCountsAvailable: true },
   { category: "restaurant", status: "ok", places: [restaurant], wikipediaCountsAvailable: true },
 ];
@@ -42,8 +39,10 @@ function renderExplorer(overrides: Partial<Parameters<typeof PlacesExplorer>[0]>
   return render(
     <PlacesExplorer
       center={{ lat: 41.3825, lon: 2.1769 }}
+      timeZone="Europe/Madrid"
       categories={["see", "museum", "restaurant"]}
       results={results}
+      fetchedAt="2026-10-17T00:00:00.000Z"
       {...overrides}
     />,
   );
@@ -52,7 +51,6 @@ function renderExplorer(overrides: Partial<Parameters<typeof PlacesExplorer>[0]>
 describe("PlacesExplorer", () => {
   beforeEach(() => {
     replace.mockReset();
-    refresh.mockReset();
     window.history.replaceState(null, "", "/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2");
   });
 
@@ -91,13 +89,51 @@ describe("PlacesExplorer", () => {
     expect(within(card).getByRole("link", { name: /Web sitesi/ })).toHaveAttribute("href", "https://museupicasso.bcn.cat/");
   });
 
-  it("shows a calm error with one action per failed category", async () => {
-    const user = userEvent.setup();
+  it("shows a calm message with one action when a category has no data yet", () => {
     renderExplorer();
     const section = screen.getByRole("heading", { name: "Görülecek yer", level: 3 }).closest("section")!;
-    expect(within(section).getByText("Bu kategorinin verisi şu an alınamadı.")).toBeInTheDocument();
-    await user.click(within(section).getByRole("button", { name: "Yeniden dene" }));
-    expect(refresh).toHaveBeenCalled();
+    expect(within(section).getByText("Bu kategorinin verisi henüz hazır değil.")).toBeInTheDocument();
+    expect(within(section).getByRole("link", { name: /OpenStreetMap'te bak/ })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Yeniden dene" })).not.toBeInTheDocument();
+  });
+
+  it("shows one calm message when the city has no data file", () => {
+    renderExplorer({ fetchedAt: null });
+    expect(screen.getByText("Bu şehir için mekân verisi henüz hazır değil.")).toBeInTheDocument();
+    expect(screen.queryByRole("group", { name: "Mekân kategorileri" })).not.toBeInTheDocument();
+  });
+
+  it("turns opening hours into a status line and a readable week, never the raw value", async () => {
+    const user = userEvent.setup();
+    renderExplorer();
+    const card = screen.getByRole("heading", { name: "7 Portes" }).closest("article")!;
+    expect(within(card).queryByText("Mo-Su 13:00-01:00")).not.toBeInTheDocument();
+    expect(within(card).getByText(/^Şu an (açık|kapalı) · /)).toBeInTheDocument();
+    await user.click(within(card).getByText("Tüm saatler"));
+    expect(within(card).getByText("Pazartesi–Pazar 13:00–01:00")).toBeVisible();
+  });
+
+  it("hides opening hours it cannot read", () => {
+    renderExplorer({
+      results: [
+        {
+          category: "restaurant",
+          status: "ok",
+          wikipediaCountsAvailable: true,
+          places: [{ ...restaurant, openingHours: "Mo-Fr 09:00-18:00; PH off" }],
+        },
+      ],
+      categories: ["restaurant"],
+    });
+    const card = screen.getByRole("heading", { name: "7 Portes" }).closest("article")!;
+    expect(within(card).queryByText(/Şu an/)).not.toBeInTheDocument();
+    expect(within(card).queryByText("Tüm saatler")).not.toBeInTheDocument();
+    expect(within(card).queryByText(/PH off/)).not.toBeInTheDocument();
+  });
+
+  it("states when the place data was fetched", () => {
+    renderExplorer();
+    expect(screen.getByText(/17 Eki 2026 tarihinde alındı/)).toBeInTheDocument();
   });
 
   it("shows a calm empty state with one action", () => {

@@ -8,7 +8,7 @@ import { Button, Caption, Skeleton } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import { serializeCategories, toggleCategory } from "@/lib/places/cats";
-import type { RankedPlace } from "@/lib/places/rank";
+import type { StoredPlace } from "@/lib/places/file";
 import { CategoryChips } from "./CategoryChips";
 import { PlaceCard } from "./PlaceCard";
 
@@ -19,14 +19,20 @@ const PlacesMap = dynamic(() => import("./PlacesMap"), {
 });
 
 export type CategoryResult =
-  | { category: CategoryId; status: "ok"; places: RankedPlace[]; wikipediaCountsAvailable: boolean }
-  | { category: CategoryId; status: "error" };
+  | { category: CategoryId; status: "ok"; places: StoredPlace[]; wikipediaCountsAvailable: boolean }
+  | { category: CategoryId; status: "missing" };
 
 export type PlacesExplorerProps = {
   center: { lat: number; lon: number };
+  /** The city's IANA time zone, for "open now". */
+  timeZone: string;
   categories: readonly CategoryId[];
   results: readonly CategoryResult[];
+  /** When the city file was fetched; null when there is no file for this city yet. */
+  fetchedAt: string | null;
 };
+
+const fetchedDate = new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "short", year: "numeric" });
 
 function subscribeWide(callback: () => void) {
   const query = window.matchMedia("(min-width: 48rem)");
@@ -39,7 +45,7 @@ function osmUrl(center: { lat: number; lon: number }) {
 }
 
 /** Category chips, the place list and the map, kept in sync. Categories live in the URL (?cats=). */
-export function PlacesExplorer({ center, categories, results }: PlacesExplorerProps) {
+export function PlacesExplorer({ center, timeZone, categories, results, fetchedAt }: PlacesExplorerProps) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -56,6 +62,7 @@ export function PlacesExplorer({ center, categories, results }: PlacesExplorerPr
   const mapRef = useRef<HTMLDivElement>(null);
 
   const places = useMemo(() => results.flatMap((r) => (r.status === "ok" ? r.places : [])), [results]);
+
 
   const onToggle = (id: CategoryId) => {
     const params = new URLSearchParams(window.location.search);
@@ -78,6 +85,15 @@ export function PlacesExplorer({ center, categories, results }: PlacesExplorerPr
     requestAnimationFrame(() => mapRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }));
   };
 
+  if (!fetchedAt) {
+    return (
+      <EmptyState
+        text="Bu şehir için mekân verisi henüz hazır değil."
+        action={<OsmLink center={center} />}
+      />
+    );
+  }
+
   return (
     <div>
       <CategoryChips selected={categories} onToggle={onToggle} />
@@ -97,24 +113,10 @@ export function PlacesExplorer({ center, categories, results }: PlacesExplorerPr
                     <Caption>{result.places.length} kayıt</Caption>
                   ) : null}
                 </div>
-                {result.status === "error" ? (
-                  <EmptyState
-                    text="Bu kategorinin verisi şu an alınamadı."
-                    action={
-                      <Button variant="secondary" onClick={() => startTransition(() => router.refresh())}>
-                        Yeniden dene
-                      </Button>
-                    }
-                  />
+                {result.status === "missing" ? (
+                  <EmptyState text="Bu kategorinin verisi henüz hazır değil." action={<OsmLink center={center} />} />
                 ) : result.places.length === 0 ? (
-                  <EmptyState
-                    text="Bu kategoride kayıt bulamadık."
-                    action={
-                      <a href={osmUrl(center)} target="_blank" rel="noopener noreferrer" className="text-caption text-sea underline">
-                        Bölgeye OpenStreetMap&apos;te bak
-                      </a>
-                    }
-                  />
+                  <EmptyState text="Bu kategoride kayıt bulamadık." action={<OsmLink center={center} />} />
                 ) : (
                   <>
                     {CATEGORIES[result.category].ranking === "wikipedia" && !result.wikipediaCountsAvailable ? (
@@ -126,6 +128,8 @@ export function PlacesExplorer({ center, categories, results }: PlacesExplorerPr
                       {result.places.map((place) => (
                         <PlaceCard
                           key={place.id}
+                          category={result.category}
+                          timeZone={timeZone}
                           ref={(el) => {
                             if (el) cardRefs.current.set(place.id, el);
                             else cardRefs.current.delete(place.id);
@@ -147,8 +151,9 @@ export function PlacesExplorer({ center, categories, results }: PlacesExplorerPr
             <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="underline">
               © OpenStreetMap katkıcıları
             </a>{" "}
-            (ODbL). Görülecek yerler ve müzeler Vikipedi&apos;deki dil sayısına (Wikidata), yeme-içme mekânları OSM
-            kaydının ayrıntısına göre sıralanır; puan verisi yoktur.
+            (ODbL), {fetchedDate.format(new Date(fetchedAt))} tarihinde alındı. Görülecek yerler ve müzeler
+            Vikipedi&apos;deki dil sayısına (Wikidata), yeme-içme mekânları OSM kaydının ayrıntısına göre sıralanır;
+            puan verisi yoktur.
           </p>
         </div>
 
@@ -171,6 +176,14 @@ export function PlacesExplorer({ center, categories, results }: PlacesExplorerPr
         </div>
       </div>
     </div>
+  );
+}
+
+function OsmLink({ center }: { center: { lat: number; lon: number } }) {
+  return (
+    <a href={osmUrl(center)} target="_blank" rel="noopener noreferrer" className="text-caption text-sea underline">
+      Bölgeye OpenStreetMap&apos;te bak
+    </a>
   );
 }
 

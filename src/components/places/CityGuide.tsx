@@ -1,34 +1,26 @@
 import { Skeleton } from "@/components/ui";
 import type { Destination } from "@/data/destinations";
-import { getCategoryPlaces } from "@/lib/places/cache";
 import type { CategoryId } from "@/lib/places/categories";
+import { loadPlacesFile } from "@/lib/places/load";
 import { PlacesExplorer, type CategoryResult } from "./PlacesExplorer";
 
-async function loadResult(cityCode: string, category: CategoryId): Promise<CategoryResult> {
-  try {
-    const result = await getCategoryPlaces(cityCode, category);
-    return {
-      category,
-      status: "ok",
-      places: result.places,
-      wikipediaCountsAvailable: result.wikipediaCountsAvailable,
-    };
-  } catch {
-    // Every Overpass endpoint failed; this category shows a retry, the others still render.
-    return { category, status: "error" };
-  }
-}
-
-/**
- * Places for the selected categories from the shared cache. Uncached
- * categories are fetched one after another, not in parallel: Overpass allows
- * only a couple of concurrent queries per IP and answers 429 beyond that.
- */
+/** Places for the selected categories, read from the pre-fetched city file (no live queries). */
 export async function CityGuide({ destination, categories }: { destination: Destination; categories: CategoryId[] }) {
-  const results: CategoryResult[] = [];
-  for (const category of categories) results.push(await loadResult(destination.cityCode, category));
+  const file = await loadPlacesFile(destination.cityCode);
+  const results: CategoryResult[] = categories.map((category) => {
+    const entry = file?.categories[category];
+    return entry?.status === "ok"
+      ? { category, status: "ok", places: entry.places, wikipediaCountsAvailable: entry.wikipediaCountsAvailable }
+      : { category, status: "missing" };
+  });
   return (
-    <PlacesExplorer center={{ lat: destination.lat, lon: destination.lon }} categories={categories} results={results} />
+    <PlacesExplorer
+      center={{ lat: destination.lat, lon: destination.lon }}
+      timeZone={destination.timeZone}
+      categories={categories}
+      results={results}
+      fetchedAt={file?.fetchedAt ?? null}
+    />
   );
 }
 

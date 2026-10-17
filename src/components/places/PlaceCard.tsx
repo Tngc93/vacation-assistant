@@ -4,17 +4,21 @@ import { ExternalLink, MapPin } from "lucide-react";
 import type { Ref } from "react";
 import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import { CATEGORIES } from "@/lib/places/categories";
-import type { RankedPlace } from "@/lib/places/rank";
+import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
+import type { StoredPlace } from "@/lib/places/file";
+import { OpeningHours } from "./OpeningHours";
 
-export function googleMapsUrl(place: Pick<RankedPlace, "lat" | "lon">): string {
+export function googleMapsUrl(place: Pick<StoredPlace, "lat" | "lon">): string {
   return `https://www.google.com/maps/search/?api=1&query=${place.lat.toFixed(6)}%2C${place.lon.toFixed(6)}`;
 }
 
 const wikipediaCount = new Intl.NumberFormat("tr-TR");
 
 export type PlaceCardProps = {
-  place: RankedPlace;
+  place: StoredPlace;
+  category: CategoryId;
+  /** The city's IANA time zone. */
+  timeZone: string;
   active: boolean;
   ref?: Ref<HTMLElement>;
   onActivate: (id: string | null) => void;
@@ -22,7 +26,7 @@ export type PlaceCardProps = {
 };
 
 /** One place: name, category, address, optional website and hours, and honest ranking captions. */
-export function PlaceCard({ place, active, ref, onActivate, onShowOnMap }: PlaceCardProps) {
+export function PlaceCard({ place, category, timeZone, active, ref, onActivate, onShowOnMap }: PlaceCardProps) {
   return (
     <article
       ref={ref}
@@ -44,14 +48,12 @@ export function PlaceCard({ place, active, ref, onActivate, onShowOnMap }: Place
           <h4 className="text-body font-medium text-ink">{place.name}</h4>
           {place.localName ? <p className="text-caption text-ink-muted">{place.localName}</p> : null}
         </div>
-        <Caption className="shrink-0">{CATEGORIES[place.category].label}</Caption>
+        <Caption className="shrink-0">{CATEGORIES[category].label}</Caption>
       </div>
 
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}
       {place.cuisine ? <p className="mt-1 text-caption text-ink-muted">Mutfak: {place.cuisine}</p> : null}
-      {place.openingHours ? (
-        <p className="mt-1 break-words font-mono text-micro tabular text-ink-muted">{place.openingHours}</p>
-      ) : null}
+      {place.openingHours ? <OpeningHours value={place.openingHours} timeZone={timeZone} /> : null}
 
       {place.wikipediaCount ? (
         <Caption as="p" tone="sea" className="mt-3">
