@@ -6,9 +6,9 @@ import type { FlightsErrorReason } from "./errors";
 import { fixtureFetcher, fixturesEnabled } from "./fixtures";
 import { aviasalesSearchUrl, googleFlightsUrl, type Partner } from "./links";
 import { EXACT_LIMIT, MONTH_LIMIT, NEARBY_DAYS, nearbyMonthPairs, type PricesQuery } from "./params";
-import { byPrice, cheapest, isDirect, isNearby, toFlightTicket, uniqueTickets, type FlightTicket, type TicketContext } from "./tickets";
+import { cheapest, isDirect, isNearby, mergeSameOutbound, toFlightTicket, uniqueTickets, type FlightTicket, type TicketContext } from "./tickets";
 
-/** Tickets shown per airport. */
+/** Cards shown per airport, after tickets with the same outbound flight are merged into one card. */
 export const TICKETS_PER_AIRPORT = 5;
 const ORIGIN_TIME_ZONE = "Europe/Istanbul";
 
@@ -99,7 +99,7 @@ export async function searchFlights(search: FlightsSearch, deps: SearchDeps = {}
 
   const groups = await Promise.all(
     airports.map(async (airport, i): Promise<AirportGroup> => {
-      const own = onDates.filter((t) => t.originAirport === airport).sort(byPrice);
+      const own = mergeSameOutbound(onDates.filter((t) => t.originAirport === airport));
       if (own.length) return { airport, outcome: "exact", tickets: own.slice(0, TICKETS_PER_AIRPORT) };
       const result = exact[i];
       if (!result.ok) return { airport, outcome: "error", reason: result.reason, tickets: [] };
@@ -110,9 +110,11 @@ export async function searchFlights(search: FlightsSearch, deps: SearchDeps = {}
           load(query(airport, departMonth, returnMonth, MONTH_LIMIT)),
         ),
       );
-      const nearby = usable(months)
-        .filter((t) => t.originAirport === airport && t.differentDates && isNearby(t, search.depart, search.return, search.today, NEARBY_DAYS))
-        .sort(byPrice);
+      const nearby = mergeSameOutbound(
+        usable(months).filter(
+          (t) => t.originAirport === airport && t.differentDates && isNearby(t, search.depart, search.return, search.today, NEARBY_DAYS),
+        ),
+      );
       return nearby.length
         ? { airport, outcome: "nearby", tickets: nearby.slice(0, TICKETS_PER_AIRPORT) }
         : { airport, outcome: "none", tickets: [] };

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { IST_BCN as ist } from "./__fixtures__/samples";
 import { apiTicketSchema } from "./schema";
-import { byPrice, cheapest, foundOnFromLink, isDirect, isNearby, toFlightTicket, uniqueTickets } from "./tickets";
+import { byPrice, cheapest, foundOnFromLink, isDirect, isNearby, mergeSameOutbound, outboundKey, toFlightTicket, uniqueTickets } from "./tickets";
 
 const ctx = {
   originTimeZone: "Europe/Istanbul",
@@ -51,6 +51,38 @@ describe("toFlightTicket", () => {
     const t = toFlightTicket(api(0, { departure_at: "2026-11-13T07:35:00+03:00", duration_to: undefined }), ctx);
     expect(t.differentDates).toBe(true);
     expect(t.out.arriveTime).toBeNull();
+  });
+});
+
+describe("mergeSameOutbound", () => {
+  const ticket = (i: number, patch: Record<string, unknown> = {}) => toFlightTicket(api(i, patch), ctx);
+  // LH 1301 06:10 with two returns (the sample has 17:40 for 5.310 ₺ and 09:20 for 6.150 ₺).
+  const lhLate = ticket(2);
+  const lhEarly = ticket(5);
+
+  it("puts one outbound flight with several returns on one card, cheapest combination first", () => {
+    expect(outboundKey(lhLate)).toBe(outboundKey(lhEarly));
+    const [card, ...rest] = mergeSameOutbound([lhEarly, ticket(0), lhLate]);
+    expect(card).toMatchObject({ airline: "LH", flightNumber: "1301", pricePerAdult: 5310 });
+    expect(card.back?.departTime).toBe("17:40");
+    expect(card.otherReturns.map((t) => [t.back?.departTime, t.pricePerAdult])).toEqual([["09:20", 6150]]);
+    expect(rest.map((t) => t.flightNumber)).toEqual(["1853"]);
+  });
+
+  it("keeps different outbound flights apart, even with the same number", () => {
+    const otherDay = ticket(2, { departure_at: "2026-11-15T06:10:00+03:00" });
+    const otherConnection = ticket(2, { duration_to: 500 });
+    const otherNumber = ticket(2, { flight_number: "1303" });
+    expect(mergeSameOutbound([lhLate, otherDay, otherConnection, otherNumber])).toHaveLength(4);
+  });
+
+  it("gives the same cards whatever the input order, and never nests", () => {
+    const tickets = ist.data.map((_, i) => ticket(i));
+    const a = mergeSameOutbound(tickets);
+    const b = mergeSameOutbound([...tickets].reverse());
+    expect(a.map((t) => t.id)).toEqual(b.map((t) => t.id));
+    expect(a.flatMap((t) => t.otherReturns).every((t) => t.otherReturns.length === 0)).toBe(true);
+    expect(a.map((t) => t.pricePerAdult)).toEqual([...a.map((t) => t.pricePerAdult)].sort((x, y) => x - y));
   });
 });
 

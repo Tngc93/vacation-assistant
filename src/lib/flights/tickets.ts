@@ -36,6 +36,11 @@ export type FlightTicket = {
   foundOn: string | null;
   /** Aviasales search for this ticket's airports, dates and passengers. */
   bookingUrl: string;
+  /**
+   * The same outbound flight with other return flights, cheapest first.
+   * Filled by mergeSameOutbound; empty for a ticket on its own.
+   */
+  otherReturns: FlightTicket[];
 };
 
 export type TicketContext = {
@@ -118,6 +123,7 @@ export function toFlightTicket(api: ApiTicket, ctx: TicketContext): FlightTicket
       { origin: api.origin_airport, destination: ctx.destinationCity, depart: out.departDate, return: returnDate ?? ctx.return, pax: ctx.pax },
       ctx.partner,
     ),
+    otherReturns: [],
   };
 }
 
@@ -151,4 +157,30 @@ export function uniqueTickets(tickets: readonly FlightTicket[]): FlightTicket[] 
 
 export function cheapest(tickets: readonly FlightTicket[]): FlightTicket | null {
   return tickets.length ? [...tickets].sort(byPrice)[0] : null;
+}
+
+/**
+ * The outbound flight: same airport, airline, flight number and departure,
+ * plus the same arrival and stops (so the outbound row on the card is true
+ * for every return listed under it).
+ */
+export function outboundKey(t: FlightTicket): string {
+  const o = t.out;
+  return [t.originAirport, t.airline, t.flightNumber, o.departDate, o.departTime, o.arriveTime ?? "", o.arriveDayOffset, o.stops].join("|");
+}
+
+/**
+ * One card per outbound flight. Each card is its cheapest combination; the
+ * other return flights for that outbound go into `otherReturns`, cheapest
+ * first. Input order does not matter; output is cheapest first.
+ */
+export function mergeSameOutbound(tickets: readonly FlightTicket[]): FlightTicket[] {
+  const byOutbound = new Map<string, FlightTicket[]>();
+  for (const t of [...tickets].sort(byPrice)) {
+    const key = outboundKey(t);
+    byOutbound.set(key, [...(byOutbound.get(key) ?? []), t]);
+  }
+  return [...byOutbound.values()]
+    .map(([main, ...rest]) => ({ ...main, otherReturns: rest.map((r) => ({ ...r, otherReturns: [] })) }))
+    .sort(byPrice);
 }
