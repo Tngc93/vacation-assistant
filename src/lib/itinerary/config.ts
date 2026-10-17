@@ -37,11 +37,6 @@ export const ITINERARY = {
 
   /** Anchors (each day's most important stop) are at least this far apart; halved when the city is too small. */
   anchorMinKm: 1.2,
-  /**
-   * OSM often maps one place as several objects (La Rambla in Barcelona is nine ways). Places with the
-   * same name within this distance count as one.
-   */
-  sameNameKm: 1,
   /** The evening place: the best ranked one within this distance of the last stop, else the nearest. */
   eveningRadiusKm: 1.5,
 } as const;

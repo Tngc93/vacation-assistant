@@ -1,4 +1,5 @@
-import { distanceKm } from "./overpass";
+// geo, not overpass: the day-by-day plan uses this rule in the browser too.
+import { distanceKm } from "@/lib/geo";
 
 /**
  * OSM often maps one place as several objects (Barcelona's La Rambla is nine
