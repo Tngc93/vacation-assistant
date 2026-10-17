@@ -20,7 +20,9 @@ Node 22 gerekir (`.nvmrc`). Önce `npm ci`.
 | `npm run lint` | ESLint (uyarı da hata sayılır) |
 | `npm run typecheck` | Next.js route tiplerini üretir, ardından `tsc --noEmit` (strict) |
 | `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`) |
+| `npm run check:bundle` | Build sonrası: sunucuya özel verinin (mekân dosyaları) istemci paketine sızmadığını kontrol eder |
 | `npm run test:e2e` | Playwright: üretim build'ine karşı uçtan uca testler (önce `npm run build`; ilk seferde `npx playwright install chromium`) |
+| `npm run data:places` | 68 şehir için mekân verisini (OSM/Overpass, Wikidata, Commons) sırayla çekip `src/data/places/<KOD>.json`'a yazar (ağ ister; ~1 saat). Uygulama bu dosyaları yalnızca sunucuda okur |
 | `npm run data:visa` | Vize verisini indirir, yalnızca TR pasaportunu `src/data/visa-tr.json`'a yazar (ağ ister; JSON commit'lenir, build ve CI vize verisi için internete çıkmaz) |
 | `npm run verify:destinations` | `src/data/destinations.ts`'i Wikidata'ya karşı yeniden doğrular (ağ ister, CI'da çalışmaz) |
 
@@ -35,8 +37,8 @@ CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, tes
 - `src/data/` — kalkış şehirleri (`origins.ts`) ve ~65 varış şehri (`destinations.ts`; QID ve koordinatlar Wikidata'dan).
 - `src/lib/search/` — arama durumu: URL ayrıştırma ve doğrulama yalnızca `params.ts`'te (zod); tarih kuralları `dates.ts`; Türkçe arama `normalize.ts`.
 - `src/lib/visa/` — vize: CSV → JSON dönüşümü, gereklilik türleri, damga metinleri. `src/lib/rates/` — kur: TCMB → Frankfurter → Exchange Rate API, 4 sn zaman aşımı, ~6 saat önbellek, asla uydurma kur yok.
-- `src/lib/places/` — şehir rehberi: kategori eşlemesi tek dosyada (`categories.ts`), Overpass sorgusu, sıralama (Vikipedi dil sayısı ya da OSM kaydının ayrıntısı), `?cats=` parametresi; `use cache: remote` ile şehir + kategori başına ~7 gün. `src/lib/city/` — masthead: Commons fotoğrafı ve lisans filtresi, koordinat ve yerel saat.
-- Wikimedia/Wikidata/Overpass istekleri `VacationAssistant/0.1 (https://github.com/Tngc93/vacation-assistant)` User-Agent'ı ile gider. `VA_OFFLINE=1` (yalnızca e2e sunucusu) tüm dış kaynakları anında başarısız kılar.
+- `src/lib/places/` — şehir rehberi: kategori eşlemesi tek dosyada (`categories.ts`), Overpass sorgusu, sıralama (Vikipedi dil sayısı ya da OSM kaydının ayrıntısı), `?cats=` parametresi; veri önceden çekilmiş JSON'dan (`src/data/places/`, ODbL) sunucuda okunur, çalışma anında Overpass/Wikidata/Commons çağrısı yok. Açılış saatleri `hours.ts` (desteklenmeyen biçim gizlenir). `src/lib/city/` — masthead: Commons fotoğrafı ve lisans filtresi, koordinat ve yerel saat.
+- Wikimedia/Wikidata/Overpass istekleri (yalnızca veri script'inde) `VacationAssistant/0.1 (https://github.com/Tngc93/vacation-assistant)` User-Agent'ı ile gider. `VA_OFFLINE=1` (yalnızca e2e sunucusu) tüm dış kaynakları anında başarısız kılar.
 - `src/components/search/` — biniş kartı arama formu: kalkış, combobox, tarih aralığı, yolcu.
 - `/` arama formu · `/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2` plan sayfası · `/styleguide` bileşen vitrini.
 
