@@ -1,0 +1,339 @@
+import { distanceKm } from "@/lib/geo";
+import type { CategoryId } from "@/lib/places/categories";
+import { addDays, daysBetween } from "@/lib/search/dates";
+import { DAYTIME_CATEGORIES, ITINERARY, type DaytimeCategory } from "./config";
+import { shortId } from "./ids";
+import { openVerdict } from "./openCheck";
+import { hhmm, roundDown, roundUp, toMinutes, weekdayOf } from "./time";
+import { travelBetween, type Travel } from "./travel";
+
+/** A place the plan may use (from the pre-fetched city file). */
+export type PlanPlace = {
+  id: string;
+  name: string;
+  localName?: string;
+  lat: number;
+  lon: number;
+  address?: string;
+  openingHours?: string;
+  wikipediaCount?: number;
+  detailed?: true;
+  category: CategoryId;
+};
+
+/** Local date and time in the destination's time zone. */
+export type LocalMoment = { date: string; time: string };
+
+export type ItineraryInput = {
+  /** Trip dates (YYYY-MM-DD); days = nights + 1. */
+  depart: string;
+  return: string;
+  timeZone: string;
+  /** The budget's flight, in destination local time; null when there is none. */
+  flight: { arrive: LocalMoment | null; leave: LocalMoment | null; label: string } | null;
+  /** Daytime candidates (see, museum, viewpoint), each list in its stored rank order. */
+  daytime: PlanPlace[];
+  /** Evening candidates from the chosen evening categories, each list in its stored rank order. */
+  evening: PlanPlace[];
+  /** Short ids the user removed. */
+  skip: readonly string[];
+};
+
+export type PlanStop = {
+  id: string;
+  shortId: string;
+  name: string;
+  localName?: string;
+  category: CategoryId;
+  kind: "daytime" | "evening";
+  lat: number;
+  lon: number;
+  address?: string;
+  start: string;
+  end: string;
+  durationMin: number;
+  /** "unknown": no readable opening hours, so the card says to check them. */
+  hours: "open" | "unknown";
+  /** From the previous stop of the day; null for the first. */
+  travel: Travel | null;
+  osmUrl: string;
+};
+
+export type DayTag = "VARIŞ GÜNÜ" | "DÖNÜŞ GÜNÜ" | "YARIM GÜN" | "TAM GÜN";
+
+export type PlanDay = {
+  number: number;
+  date: string;
+  tags: DayTag[];
+  /** When the day's plan may start and must end (local), null when no time is left that day. */
+  window: { start: string; end: string } | null;
+  stops: PlanStop[];
+  /** Why a day has fewer or no stops. */
+  note: string | null;
+};
+
+export type Itinerary = {
+  days: PlanDay[];
+  /** "flight": first and last day follow the chosen flight; "assumed": half days, no flight chosen. */
+  basis: "flight" | "assumed";
+  timeZone: string;
+  /** Short ids actually skipped (present in the data). */
+  skipped: string[];
+};
+
+const FULL_DAYTIME = ITINERARY.daytimeEnd - ITINERARY.dayStart;
+
+function visitMinutes(p: PlanPlace, kind: "daytime" | "evening"): number {
+  if (kind === "evening") return ITINERARY.visitMin.evening;
+  return ITINERARY.visitMin[p.category as DaytimeCategory] ?? ITINERARY.visitMin.see;
+}
+
+/** Total order: Wikipedia language count, then category, then stored rank, then id. */
+function importanceOrder(places: PlanPlace[]): PlanPlace[] {
+  const rank = new Map(places.map((p, i) => [p.id, i]));
+  const catIndex = (c: CategoryId) => DAYTIME_CATEGORIES.indexOf(c as DaytimeCategory);
+  return [...places].sort(
+    (a, b) =>
+      (b.wikipediaCount ?? 0) - (a.wikipediaCount ?? 0) ||
+      catIndex(a.category) - catIndex(b.category) ||
+      rank.get(a.id)! - rank.get(b.id)! ||
+      (a.id < b.id ? -1 : a.id > b.id ? 1 : 0),
+  );
+}
+
+const byId = (a: PlanPlace, b: PlanPlace) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+const dist = (a: { lat: number; lon: number }, b: { lat: number; lon: number }) => distanceKm(a.lat, a.lon, b.lat, b.lon);
+
+/**
+ * The most important places at least 1.2 km apart. When the city has fewer
+ * such areas than days, the distance halves and more anchors are added, but
+ * the ones already found keep their place, so the longest days still start in
+ * clearly different areas.
+ */
+export function chooseAnchors(ordered: PlanPlace[], count: number): PlanPlace[] {
+  const target = Math.min(count, ordered.length);
+  const anchors: PlanPlace[] = [];
+  for (let minKm: number = ITINERARY.anchorMinKm; anchors.length < target && minKm >= 0.01; minKm /= 2) {
+    for (const p of ordered) {
+      if (anchors.length === target) break;
+      if (!anchors.includes(p) && anchors.every((a) => dist(a, p) >= minKm)) anchors.push(p);
+    }
+  }
+  // Places on top of each other: fill up in importance order.
+  for (const p of ordered) if (anchors.length < target && !anchors.includes(p)) anchors.push(p);
+  return anchors;
+}
+
+const nameKey = (p: PlanPlace) => p.name.toLocaleLowerCase("tr").normalize("NFC").replace(/\s+/g, " ").trim();
+
+/**
+ * One entry per place, in the given order: the same OSM id twice, or the same
+ * name within 1 km (one place mapped as several objects), keeps the first.
+ */
+export function sameNameOnce(places: PlanPlace[]): PlanPlace[] {
+  const kept: PlanPlace[] = [];
+  const ids = new Set<string>();
+  for (const p of places) {
+    if (ids.has(p.id)) continue;
+    ids.add(p.id);
+    if (kept.some((k) => nameKey(k) === nameKey(p) && dist(k, p) <= ITINERARY.sameNameKm)) continue;
+    kept.push(p);
+  }
+  return kept;
+}
+
+/** Absolute minutes from the first trip day's midnight. */
+function absolute(depart: string, moment: LocalMoment): number {
+  return daysBetween(depart, moment.date) * 1440 + toMinutes(moment.time);
+}
+
+type DayFrame = {
+  number: number;
+  date: string;
+  tags: DayTag[];
+  daytime: { start: number; end: number } | null;
+  capacity: number;
+  evening: boolean;
+  note: string | null;
+};
+
+function frames(input: ItineraryInput): DayFrame[] {
+  const count = daysBetween(input.depart, input.return) + 1;
+  const flight = input.flight;
+  const last = (count - 1) * 1440;
+  const ready = flight?.arrive ? absolute(input.depart, flight.arrive) + ITINERARY.arrivalBufferMin : ITINERARY.halfDaySplit;
+  const deadline = flight?.leave ? absolute(input.depart, flight.leave) - ITINERARY.departureBufferMin : last + ITINERARY.halfDaySplit;
+
+  return Array.from({ length: count }, (_, i) => {
+    const base = i * 1440;
+    const start = Math.max(base + ITINERARY.dayStart, roundUp(ready));
+    const end = Math.min(base + ITINERARY.daytimeEnd, roundDown(deadline));
+    const length = end - start;
+    const capacity = length >= FULL_DAYTIME ? ITINERARY.maxDaytimeStops : Math.max(0, Math.floor((ITINERARY.maxDaytimeStops * length) / FULL_DAYTIME));
+    const eveningStart = base + ITINERARY.eveningStart;
+    const evening = ready <= eveningStart && deadline >= eveningStart + ITINERARY.visitMin.evening;
+    const tags: DayTag[] = [];
+    if (i === 0) tags.push("VARIŞ GÜNÜ");
+    if (i === count - 1) tags.push("DÖNÜŞ GÜNÜ");
+    tags.push(capacity === ITINERARY.maxDaytimeStops && evening ? "TAM GÜN" : "YARIM GÜN");
+    const note =
+      capacity === 0 && !evening
+        ? i === 0
+          ? "Varıştan sonra plan için zaman kalmıyor."
+          : "Dönüş uçuşundan önce plan için zaman kalmıyor."
+        : null;
+    return {
+      number: i + 1,
+      date: addDays(input.depart, i),
+      tags,
+      daytime: capacity > 0 ? { start, end } : null,
+      capacity,
+      evening,
+      note,
+    };
+  });
+}
+
+function toStop(p: PlanPlace, kind: "daytime" | "evening", start: number, travel: Travel | null, hours: "open" | "unknown"): PlanStop {
+  const durationMin = visitMinutes(p, kind);
+  return {
+    id: p.id,
+    shortId: shortId(p.id),
+    name: p.name,
+    ...(p.localName ? { localName: p.localName } : {}),
+    category: p.category,
+    kind,
+    lat: p.lat,
+    lon: p.lon,
+    ...(p.address ? { address: p.address } : {}),
+    start: hhmm(start),
+    end: hhmm(start + durationMin),
+    durationMin,
+    hours,
+    travel,
+    osmUrl: `https://www.openstreetmap.org/${p.id}`,
+  };
+}
+
+/**
+ * The deterministic day-by-day plan (PRD 20). Same input, same plan: every
+ * sort is a total order and nothing is random.
+ *
+ * 1. Each day gets a time window: full days 09:00–18:30 plus an evening; the
+ *    first and last follow the flight (2 h after landing, 3.5 h before the
+ *    return), or are half days split at 13:00 when no flight is chosen.
+ * 2. One anchor per day with daytime capacity: the most important places
+ *    (Wikipedia language count) that are at least 1.2 km apart, so each
+ *    day's main stop is in a different area. Every place belongs to its
+ *    nearest anchor; days with the most time get the most important anchors.
+ * 3. Each day starts at its anchor and continues to the nearest unused place
+ *    of its area (then any area), skipping places surely closed at that time
+ *    and stops that would not fit before the day ends.
+ * 4. The evening place is the best ranked one near the last stop.
+ */
+export function buildItinerary(input: ItineraryInput): Itinerary {
+  const skip = new Set(input.skip);
+  const allIds = new Set([...input.daytime, ...input.evening].map((p) => shortId(p.id)));
+  // Twins are removed before skipping, so removing a place never brings back its twin.
+  const daytime = sameNameOnce(importanceOrder(input.daytime)).filter((p) => !skip.has(shortId(p.id)));
+  const evening = sameNameOnce(input.evening).filter((p) => !skip.has(shortId(p.id)));
+  const eveningRank = new Map(evening.map((p, i) => [p.id, (p.detailed ? 0 : 1) * 100_000 + i]));
+
+  const days = frames(input);
+  const used = new Set<string>();
+  const planned = new Map<number, PlanStop[]>(days.map((d) => [d.number, []]));
+
+  // Days with the most daytime come first, then by date: they get the most important anchors.
+  const order = days.filter((d) => d.capacity > 0).sort((a, b) => b.capacity - a.capacity || a.number - b.number);
+  const anchors = chooseAnchors(daytime, order.length);
+  const areaOf = new Map<string, number>();
+  for (const p of daytime) {
+    let best = 0;
+    anchors.forEach((a, i) => {
+      if (dist(p, a) < dist(p, anchors[best]) - 1e-9) best = i;
+    });
+    areaOf.set(p.id, best);
+  }
+
+  order.forEach((day, i) => {
+    const window = day.daytime!;
+    const weekday = weekdayOf(day.date);
+    const base = (day.number - 1) * 1440;
+    const anchor = anchors[i];
+    const stops: PlanStop[] = [];
+    let at: PlanPlace | null = null;
+    let clock = window.start;
+
+    while (stops.length < day.capacity) {
+      const unused = daytime.filter((p) => !used.has(p.id));
+      const own = unused.filter((p) => anchor && areaOf.get(p.id) === i);
+      const others = unused.filter((p) => !anchor || areaOf.get(p.id) !== i);
+      const from: PlanPlace | null = at ?? anchor ?? null;
+      const near = (list: PlanPlace[]) =>
+        from ? [...list].sort((a, b) => dist(from, a) - dist(from, b) || byId(a, b)) : list;
+      // The first stop is the area's most important open place; then nearest neighbour.
+      const candidates: PlanPlace[] = at === null ? [...own, ...near(others)] : [...near(own), ...near(others)];
+
+      let chosen: PlanStop | null = null;
+      for (const p of candidates) {
+        const travel: Travel | null = at ? travelBetween(at, p) : null;
+        const start = roundUp(clock + (travel?.scheduledMin ?? 0));
+        const end = start + visitMinutes(p, "daytime");
+        if (end > window.end) continue;
+        const verdict = openVerdict(p.openingHours, weekday, start - base, end - base);
+        if (verdict === "closed") continue;
+        chosen = toStop(p, "daytime", start - base, travel, verdict);
+        used.add(p.id);
+        at = p;
+        clock = end;
+        break;
+      }
+      if (!chosen) break;
+      stops.push(chosen);
+    }
+    planned.set(day.number, stops);
+  });
+
+  // Evening places, in date order, near each day's last stop (or the day's anchor, or the city's first sight).
+  for (const day of days) {
+    if (!day.evening) continue;
+    const stops = planned.get(day.number)!;
+    const lastStop = stops.at(-1);
+    const fallback = anchors[order.findIndex((d) => d.number === day.number)] ?? daytime[0] ?? evening[0];
+    const ref = lastStop ?? fallback;
+    if (!ref) continue;
+    const weekday = weekdayOf(day.date);
+    const start = ITINERARY.eveningStart;
+    const end = start + ITINERARY.visitMin.evening;
+    const open = evening
+      .filter((p) => !used.has(p.id))
+      .map((p) => ({ p, verdict: openVerdict(p.openingHours, weekday, start, end), km: dist(ref, p) }))
+      .filter((c) => c.verdict !== "closed");
+    const close = open.filter((c) => c.km <= ITINERARY.eveningRadiusKm);
+    const pick = (close.length
+      ? close.sort((a, b) => eveningRank.get(a.p.id)! - eveningRank.get(b.p.id)! || byId(a.p, b.p))
+      : open.sort((a, b) => a.km - b.km || byId(a.p, b.p)))[0];
+    if (!pick) continue;
+    used.add(pick.p.id);
+    const travel = lastStop ? travelBetween(lastStop, pick.p) : null;
+    stops.push(toStop(pick.p, "evening", start, travel, pick.verdict === "open" ? "open" : "unknown"));
+  }
+
+  return {
+    days: days.map((d) => {
+      const stops = planned.get(d.number)!;
+      const window =
+        d.daytime || d.evening
+          ? {
+              start: hhmm(d.daytime ? d.daytime.start - (d.number - 1) * 1440 : ITINERARY.eveningStart),
+              end: hhmm(d.evening ? ITINERARY.eveningStart + ITINERARY.visitMin.evening : d.daytime!.end - (d.number - 1) * 1440),
+            }
+          : null;
+      const note = d.note ?? (stops.length === 0 && window ? "Bu zaman aralığına uyan açık bir mekân bulunamadı." : null);
+      return { number: d.number, date: d.date, tags: d.tags, window, stops, note };
+    }),
+    basis: input.flight?.arrive && input.flight?.leave ? "flight" : "assumed",
+    timeZone: input.timeZone,
+    skipped: input.skip.filter((s) => allIds.has(s)),
+  };
+}

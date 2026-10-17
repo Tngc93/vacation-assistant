@@ -1,33 +1,21 @@
 import { Suspense, type ReactNode } from "react";
 import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
-import { daysBetween } from "@/lib/search/dates";
 import type { SearchState } from "@/lib/search/params";
 import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection";
 import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
+import { ItinerarySection, ItinerarySkeleton } from "@/components/itinerary/ItinerarySection";
 import { StayCard } from "@/components/stays/StayCard";
 import type { BudgetParams } from "@/lib/budget/params";
 import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
 import type { CategoryId } from "@/lib/places/categories";
 import { VisaCard } from "./VisaCard";
 
-type Section = { id: string; title: string; status?: string; body: ReactNode };
+/** `print: false` leaves a section out of the printed plan. */
+type Section = { id: string; title: string; status?: string; body: ReactNode; print?: false };
 
-function Placeholder({ text, children }: { text: string; children?: ReactNode }) {
-  return (
-    <div className="rounded-md border border-dashed border-rule px-5 py-6 md:px-8">
-      <p className="max-w-2xl text-body text-ink-muted">{text}</p>
-      {children}
-      <Caption as="p" className="mt-3">
-        Henüz veri yok
-      </Caption>
-    </div>
-  );
-}
-
-function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams): Section[] {
+function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams, skip: string[]): Section[] {
   const destination = findDestination(search.to)!;
-  const days = daysBetween(search.depart, search.return) + 1;
   return [
     {
       id: "ucuslar",
@@ -50,6 +38,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     {
       id: "konaklama",
       title: "Konaklama",
+      print: false,
       body: <StayCard destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax} />,
     },
     {
@@ -64,6 +53,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     {
       id: "sehir-rehberi",
       title: "Şehir rehberi",
+      print: false,
       body: (
         <Suspense fallback={<CityGuideSkeleton />}>
           <CityGuide destination={destination} categories={categories} />
@@ -73,28 +63,46 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     {
       id: "gun-gun-plan",
       title: "Gün gün plan",
-      status: "Yakında",
-      body: <Placeholder text={`${days} günlük rota, yakın duraklar aynı güne düşecek şekilde burada kurulacak.`} />,
+      body: (
+        <Suspense fallback={<ItinerarySkeleton />}>
+          <ItinerarySection
+            search={search}
+            destination={destination}
+            categories={categories}
+            direct={direct}
+            flight={budget.flight}
+            skip={skip}
+          />
+        </Suspense>
+      ),
     },
   ];
 }
 
-/** The plan's sections. Everything but the day-by-day plan is live; that one says what is coming without showing data. */
+/** The plan's sections. */
 export function PlanSections({
   search,
   categories,
   direct,
   budget,
+  skip,
 }: {
   search: SearchState;
   categories: CategoryId[];
   direct: boolean;
   budget: BudgetParams;
+  /** `?skip=`: stops removed from the day-by-day plan. */
+  skip: string[];
 }) {
   return (
     <div className="mt-16 grid gap-12 md:mt-20 md:gap-16">
-      {sectionsFor(search, categories, direct, budget).map((section) => (
-        <section key={section.id} id={section.id} aria-labelledby={`${section.id}-title`}>
+      {sectionsFor(search, categories, direct, budget, skip).map((section) => (
+        <section
+          key={section.id}
+          id={section.id}
+          aria-labelledby={`${section.id}-title`}
+          className={section.print === false ? "print:hidden" : undefined}
+        >
           <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
             <h2 id={`${section.id}-title`} className="font-display text-title">
               {section.title}

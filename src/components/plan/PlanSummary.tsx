@@ -24,7 +24,7 @@ export function PlanSummary({ search }: { search: SearchState }) {
               {nights} gece · {search.pax} kişi
             </p>
           </div>
-          <Link href={editHref(search)} className={buttonClasses({ variant: "secondary", className: "w-full no-underline" })}>
+          <Link href={editHref(search)} className={buttonClasses({ variant: "secondary", className: "w-full no-underline print:hidden" })}>
             Düzenle
           </Link>
         </div>
