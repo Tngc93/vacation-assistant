@@ -59,7 +59,8 @@ function AmountField({
           onChange={(event) => onChange(event.target.value)}
           aria-invalid={error ? true : undefined}
           aria-describedby={`${id}-hint${error ? ` ${id}-error` : ""}`}
-          className="h-full min-w-0 flex-1 bg-transparent font-mono text-body tabular text-ink outline-none"
+          // w-full: an input's default width (about 20 characters) would otherwise set the column's minimum.
+          className="h-full w-full min-w-0 flex-1 bg-transparent font-mono text-body tabular text-ink outline-none"
         />
         <span className="font-mono text-caption text-ink-muted">{currency === "TRY" ? "₺" : currency}</span>
       </div>
@@ -79,7 +80,8 @@ function Row({ row }: { row: ReceiptRow }) {
   return (
     <div className="py-3">
       <div className="flex items-baseline gap-2">
-        <dt className="shrink-0 text-body">{row.label}</dt>
+        {/* The label may wrap; the amount never does, so a narrow screen never scrolls sideways. */}
+        <dt className="min-w-0 text-body">{row.label}</dt>
         <span aria-hidden="true" className="min-w-4 flex-1 translate-y-[-0.3em] border-b border-dotted border-ink-muted" />
         <dd className={cn("shrink-0 font-mono text-body tabular", row.amount === null && "text-ink-muted")}>
           {row.amount === null ? row.missing : formatMinor(row.amount, "TRY")}
@@ -178,7 +180,7 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
         </dl>
         <div className="mt-2 border-t-[3px] border-double border-ink pt-3">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <p className="flex items-baseline gap-2">
+            <p className="flex flex-wrap items-baseline gap-x-2">
               <span className="font-display text-heading">Toplam</span>
               {receipt.partial ? <Caption tone="warn">KISMİ TOPLAM</Caption> : null}
             </p>
