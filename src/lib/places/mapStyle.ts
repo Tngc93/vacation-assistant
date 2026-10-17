@@ -1,8 +1,16 @@
 /** Recolours the OpenFreeMap "positron" style with the design tokens. */
 
 export const OPENFREEMAP_STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
-export const MAP_ATTRIBUTION =
-  '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap katkıcıları</a> · <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>';
+/**
+ * The map's only attribution, naming each source once. MapLibre's own
+ * attribution control is not used: it also collects the tile server's
+ * TileJSON credit at runtime, which repeated OpenFreeMap and OpenMapTiles.
+ */
+export const MAP_ATTRIBUTION: ReadonlyArray<{ label: string; href: string }> = [
+  { label: "© OpenStreetMap katkıcıları", href: "https://www.openstreetmap.org/copyright" },
+  { label: "OpenFreeMap", href: "https://openfreemap.org" },
+  { label: "© OpenMapTiles", href: "https://openmaptiles.org" },
+];
 
 export type MapPalette = {
   paper: string;

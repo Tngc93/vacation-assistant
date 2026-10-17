@@ -208,17 +208,6 @@
 }
 
 /* MapLibre controls restyled with tokens, so they follow the theme (scoped to win over maplibre-gl.css). */
-.maplibregl-map .maplibregl-ctrl.maplibregl-ctrl-attrib {
-  background-color: color-mix(in srgb, var(--paper-raised) 88%, transparent);
-  color: var(--ink-muted);
-  font-family: var(--font-sans);
-  font-size: 0.6875rem;
-}
-
-.maplibregl-map .maplibregl-ctrl-attrib a {
-  color: var(--ink-muted);
-}
-
 .maplibregl-map .maplibregl-ctrl-group:not(:empty) {
   background-color: var(--paper-raised);
   border: 1px solid var(--rule);

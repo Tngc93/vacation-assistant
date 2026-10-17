@@ -45,9 +45,10 @@ describe("map recolouring", () => {
     expect(layers[0].paint).toEqual({ "background-color": "x" });
   });
 
-  it("credits OpenStreetMap contributors and OpenFreeMap", () => {
-    const text = MAP_ATTRIBUTION.replace(/<[^>]+>/g, "");
-    expect(text).toBe("© OpenStreetMap katkıcıları · OpenFreeMap");
-    expect(MAP_ATTRIBUTION).toContain('href="https://www.openstreetmap.org/copyright"');
+  it("credits each source exactly once", () => {
+    const text = MAP_ATTRIBUTION.map((a) => a.label).join(" · ");
+    expect(text).toBe("© OpenStreetMap katkıcıları · OpenFreeMap · © OpenMapTiles");
+    for (const name of ["OpenStreetMap", "OpenFreeMap", "OpenMapTiles"]) expect(text.split(name)).toHaveLength(2);
+    expect(MAP_ATTRIBUTION[0].href).toBe("https://www.openstreetmap.org/copyright");
   });
 });
