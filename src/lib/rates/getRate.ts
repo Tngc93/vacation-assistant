@@ -1,4 +1,4 @@
-import { externalFetch } from "@/lib/net";
+import { externalFetch, timeoutSignal } from "@/lib/net";
 import { parseErApi, parseFrankfurter, parseTcmbXml } from "./parse";
 import { SOURCES, type Fetcher, type RateResult, type RateSourceId } from "./types";
 
@@ -65,7 +65,7 @@ export async function getTryRate(currency: string, options: RateOptions = {}): P
 
   const get = async (url: string) => {
     const res = await fetcher(url, {
-      signal: AbortSignal.timeout(timeoutMs),
+      signal: timeoutSignal(timeoutMs),
       next: { revalidate: RATE_REVALIDATE_SECONDS },
     });
     if (!res.ok && res.status !== 404) throw new Error(`HTTP ${res.status}`);

@@ -1,4 +1,4 @@
-import { externalFetch } from "@/lib/net";
+import { externalFetch, timeoutSignal } from "@/lib/net";
 import { CATEGORIES, CATEGORY_IDS, type CategoryId } from "./categories";
 
 /** Public Overpass instances, tried in order. */
@@ -88,7 +88,7 @@ export async function runOverpass(
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": USER_AGENT },
         body: new URLSearchParams({ data: query }).toString(),
-        signal: AbortSignal.timeout(timeoutMs),
+        signal: timeoutSignal(timeoutMs),
         cache: "no-store",
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);

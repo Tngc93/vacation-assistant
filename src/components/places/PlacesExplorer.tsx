@@ -3,7 +3,7 @@
 import { Map as MapIcon } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { useCallback, useMemo, useRef, useState, useSyncExternalStore, useTransition } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, useTransition } from "react";
 import { Button, Caption, Skeleton } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
@@ -32,7 +32,13 @@ export type PlacesExplorerProps = {
   fetchedAt: string | null;
 };
 
-const fetchedDate = new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "short", year: "numeric" });
+// A fixed zone, so the server render, the browser and every test agree on the day.
+const fetchedDate = new Intl.DateTimeFormat("tr-TR", {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+  timeZone: "Europe/Istanbul",
+});
 
 function subscribeWide(callback: () => void) {
   const query = window.matchMedia("(min-width: 48rem)");
@@ -60,6 +66,8 @@ export function PlacesExplorer({ center, timeZone, categories, results, fetchedA
   const showMap = isWide || mapOnPhone;
   const cardRefs = useRef(new Map<string, HTMLElement>());
   const mapRef = useRef<HTMLDivElement>(null);
+  // Bumped by "Haritada göster"; the effect scrolls once the map container has rendered.
+  const [mapScrollRequest, setMapScrollRequest] = useState(0);
 
   const places = useMemo(() => results.flatMap((r) => (r.status === "ok" ? r.places : [])), [results]);
 
@@ -82,8 +90,12 @@ export function PlacesExplorer({ center, timeZone, categories, results, fetchedA
   const onShowOnMap = (id: string) => {
     setSelectedId(id);
     setMapOnPhone(true);
-    requestAnimationFrame(() => mapRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }));
+    setMapScrollRequest((n) => n + 1);
   };
+
+  useEffect(() => {
+    if (mapScrollRequest > 0) mapRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [mapScrollRequest]);
 
   if (!fetchedAt) {
     return (

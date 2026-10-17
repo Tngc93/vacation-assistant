@@ -18,7 +18,7 @@ async function readSearch(searchParams: Props["searchParams"]) {
   const params = await searchParams;
   // "Today" belongs to the request, not to the build.
   await connection();
-  return { params, result: parseSearch(params, todayInIstanbul()) };
+  return { params, result: parseSearch(params, todayInIstanbul(new Date())) };
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {

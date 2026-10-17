@@ -104,11 +104,13 @@ describe("PlacesExplorer", () => {
   });
 
   it("turns opening hours into a status line and a readable week, never the raw value", async () => {
+    // Saturday 17 Oct 2026, 23:30 in Barcelona (CEST, UTC+2).
+    vi.setSystemTime(new Date("2026-10-17T21:30:00Z"));
     const user = userEvent.setup();
     renderExplorer();
     const card = screen.getByRole("heading", { name: "7 Portes" }).closest("article")!;
     expect(within(card).queryByText("Mo-Su 13:00-01:00")).not.toBeInTheDocument();
-    expect(within(card).getByText(/^Şu an (açık|kapalı) · /)).toBeInTheDocument();
+    expect(within(card).getByText("Şu an açık · 01:00'de kapanır")).toBeInTheDocument();
     await user.click(within(card).getByText("Tüm saatler"));
     expect(within(card).getByText("Pazartesi–Pazar 13:00–01:00")).toBeVisible();
   });
@@ -131,9 +133,12 @@ describe("PlacesExplorer", () => {
     expect(within(card).queryByText(/PH off/)).not.toBeInTheDocument();
   });
 
-  it("states when the place data was fetched", () => {
+  it("states when the place data was fetched, as a date in Istanbul whatever the machine's zone", () => {
     renderExplorer();
     expect(screen.getByText(/17 Eki 2026 tarihinde alındı/)).toBeInTheDocument();
+    // 22:30 UTC on the 16th is already the 17th in Istanbul.
+    renderExplorer({ fetchedAt: "2026-10-16T22:30:00.000Z" });
+    expect(screen.getAllByText(/17 Eki 2026 tarihinde alındı/)).toHaveLength(2);
   });
 
   it("shows a calm empty state with one action", () => {
@@ -149,8 +154,13 @@ describe("PlacesExplorer", () => {
     const user = userEvent.setup();
     renderExplorer();
     expect(screen.queryByTestId("map")).not.toBeInTheDocument();
+    const scroll = vi.spyOn(Element.prototype, "scrollIntoView");
     await user.click(screen.getAllByRole("button", { name: /Haritada göster/ })[0]);
     expect(screen.getByTestId("map")).toBeInTheDocument();
+    // The scroll happens after the map container renders, inside the click, not on a later frame.
+    expect(scroll).toHaveBeenCalledTimes(1);
+    expect(scroll.mock.contexts[0]).toContainElement(screen.getByTestId("map"));
+    scroll.mockRestore();
   });
 
   it("credits OpenStreetMap for the place data", () => {

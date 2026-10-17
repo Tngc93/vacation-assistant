@@ -1,9 +1,9 @@
 "use client";
 
-import { useMemo, useSyncExternalStore } from "react";
+import { useMemo } from "react";
 import { cn } from "@/lib/cn";
 import { describeWeek, openStatus, parseOpeningHours } from "@/lib/places/hours";
-import { subscribeMinute } from "@/lib/time/clock";
+import { useMinuteNow } from "@/lib/time/clock";
 
 /**
  * "Şu an açık · 18:00'de kapanır" in the city's time zone, plus the full week
@@ -13,24 +13,20 @@ import { subscribeMinute } from "@/lib/time/clock";
  */
 export function OpeningHours({ value, timeZone }: { value: string; timeZone: string }) {
   const week = useMemo(() => parseOpeningHours(value), [value]);
-  const status = useSyncExternalStore(
-    subscribeMinute,
-    () => (week ? JSON.stringify(openStatus(week, new Date(), timeZone)) : "null"),
-    () => "null",
-  );
+  const now = useMinuteNow();
   if (!week) return null;
-  const now = JSON.parse(status) as ReturnType<typeof openStatus>;
+  const status = now ? openStatus(week, now, timeZone) : null;
 
   return (
     <div className="mt-2">
-      {now ? (
+      {status ? (
         <p
           className={cn(
             "font-mono text-micro uppercase tracking-[0.08em]",
-            now.open ? "text-ok" : "text-ink-muted",
+            status.open ? "text-ok" : "text-ink-muted",
           )}
         >
-          {now.text}
+          {status.text}
         </p>
       ) : null}
       <details className="mt-1 text-caption text-ink-muted">

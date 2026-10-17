@@ -57,7 +57,7 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const draft: SearchDraft = { from, to, depart: dates.depart, return: dates.return, pax };
-    const result = parseSearch(new URLSearchParams(serializeSearch(draft)), today ?? todayInIstanbul());
+    const result = parseSearch(new URLSearchParams(serializeSearch(draft)), today ?? todayInIstanbul(new Date()));
     if (!result.ok) {
       setErrors(toErrors(result.issues));
       return;

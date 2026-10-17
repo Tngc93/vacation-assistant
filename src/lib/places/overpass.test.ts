@@ -78,7 +78,11 @@ describe("runOverpass", () => {
       call++ === 0
         ? new Promise((_, reject) => init.signal?.addEventListener("abort", () => reject(init.signal?.reason)))
         : Promise.resolve(json({ elements: [] }));
-    await expect(runOverpass("q", { fetcher, timeoutMs: 20 })).resolves.toEqual([]);
+    vi.useFakeTimers();
+    const result = runOverpass("q", { fetcher, timeoutMs: 45_000 });
+    await vi.advanceTimersByTimeAsync(45_000);
+    await expect(result).resolves.toEqual([]);
+    expect(call).toBe(2);
   });
 
   it("throws when every endpoint fails, naming each failure", async () => {

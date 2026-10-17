@@ -1,4 +1,4 @@
-import { externalFetch } from "@/lib/net";
+import { externalFetch, timeoutSignal } from "@/lib/net";
 import { USER_AGENT, type Fetcher } from "./overpass";
 
 export const WIKIDATA_BATCH = 50;
@@ -48,7 +48,7 @@ export async function fetchWikipediaCounts(
 ): Promise<Map<string, number>> {
   const counts = new Map<string, number>();
   for (const url of wikidataBatchUrls(ids)) {
-    const res = await fetcher(url, { headers: { "User-Agent": USER_AGENT }, signal: AbortSignal.timeout(timeoutMs) });
+    const res = await fetcher(url, { headers: { "User-Agent": USER_AGENT }, signal: timeoutSignal(timeoutMs) });
     if (!res.ok) throw new Error(`Wikidata HTTP ${res.status}`);
     const json = (await res.json()) as { entities?: Record<string, { sitelinks?: Record<string, unknown> }>; error?: unknown };
     if (!json.entities) throw new Error("Wikidata: no entities");

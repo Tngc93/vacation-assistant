@@ -1,4 +1,4 @@
-import { externalFetch } from "@/lib/net";
+import { externalFetch, timeoutSignal } from "@/lib/net";
 import { USER_AGENT, type Fetcher } from "@/lib/places/overpass";
 
 export const PHOTO_TIMEOUT_MS = 8_000;
@@ -96,7 +96,7 @@ export async function fetchCityPhoto(
   wikidataId: string,
   { fetcher = externalFetch, timeoutMs = PHOTO_TIMEOUT_MS }: { fetcher?: Fetcher; timeoutMs?: number } = {},
 ): Promise<CityPhoto | null> {
-  const init = () => ({ headers: { "User-Agent": USER_AGENT }, signal: AbortSignal.timeout(timeoutMs) });
+  const init = () => ({ headers: { "User-Agent": USER_AGENT }, signal: timeoutSignal(timeoutMs) });
   const claimsUrl = `https://www.wikidata.org/w/api.php?${new URLSearchParams({
     action: "wbgetclaims",
     entity: wikidataId,

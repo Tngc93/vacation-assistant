@@ -14,7 +14,7 @@ export function SearchFormFromUrl() {
   const hasSearch = ["to", "depart", "return", "pax", "from"].some((key) => params.has(key));
   if (!hasSearch) return <SearchForm />;
 
-  const result = parseSearch(params, todayInIstanbul());
+  const result = parseSearch(params, todayInIstanbul(new Date()));
   const initial = result.ok ? result.value : result.draft;
   // Only surface problems with values that were actually in the link.
   const issues = result.ok ? [] : result.issues.filter((issue) => params.has(issue.field));
