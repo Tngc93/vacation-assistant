@@ -1,0 +1,56 @@
+name: Refresh place data
+
+on:
+  schedule:
+    # 03:17 UTC on the 1st of every month (off the hour, as Overpass etiquette asks).
+    - cron: "17 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-places
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    # 68 cities, one polite request at a time; Overpass queues can be long.
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run data:places
+      # Schema, coverage and attribution checks for the new files.
+      - run: npm test
+
+      - name: Open a pull request when the data changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Ignore runs where only the fetch timestamps moved.
+          if ! git diff -U0 -- src/data/places | grep -E '^[+-][^+-]' | grep -vq '"fetchedAt"'; then
+            echo "No place data changes."
+            exit 0
+          fi
+          branch="chore/refresh-places-$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add src/data/places
+          git commit -m "chore: refresh place data"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "chore: refresh place data" --body "$(cat <<'BODY'
+          Monthly refresh of `src/data/places/` from OpenStreetMap (Overpass), Wikidata and Wikimedia Commons, made by `npm run data:places`.
+
+          - Data: © OpenStreetMap contributors, ODbL 1.0 (see `src/data/places/README.md`).
+          - Tests (schema, one file per destination, at most 30 places per category, attribution fields) passed in the refresh workflow.
+          - Pull requests opened with `GITHUB_TOKEN` do not start other workflows, so CI does not run on this PR automatically. Push an empty commit or re-run CI before merging.
+          BODY
+          )"

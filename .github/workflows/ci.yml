@@ -28,6 +28,8 @@ jobs:
       - run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
+      # Server-only data must never reach the browser bundle.
+      - run: npm run check:bundle
 
       # End-to-end checks run against the production build above.
       - name: Read Playwright version
