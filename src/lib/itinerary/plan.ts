@@ -1,5 +1,6 @@
 import { distanceKm } from "@/lib/geo";
 import type { CategoryId } from "@/lib/places/categories";
+import { nameKey, sameNameOnce } from "@/lib/places/twins";
 import { addDays, daysBetween } from "@/lib/search/dates";
 import { DAYTIME_CATEGORIES, ITINERARY, type DaytimeCategory } from "./config";
 import { shortId } from "./ids";
@@ -124,24 +125,6 @@ export function chooseAnchors(ordered: PlanPlace[], count: number): PlanPlace[] 
   return anchors;
 }
 
-const nameKey = (p: PlanPlace) => p.name.toLocaleLowerCase("tr").normalize("NFC").replace(/\s+/g, " ").trim();
-
-/**
- * One entry per place, in the given order: the same OSM id twice, or the same
- * name within 1 km (one place mapped as several objects), keeps the first.
- */
-export function sameNameOnce(places: PlanPlace[]): PlanPlace[] {
-  const kept: PlanPlace[] = [];
-  const ids = new Set<string>();
-  for (const p of places) {
-    if (ids.has(p.id)) continue;
-    ids.add(p.id);
-    if (kept.some((k) => nameKey(k) === nameKey(p) && dist(k, p) <= ITINERARY.sameNameKm)) continue;
-    kept.push(p);
-  }
-  return kept;
-}
-
 /** Absolute minutes from the first trip day's midnight. */
 function absolute(depart: string, moment: LocalMoment): number {
   return daysBetween(depart, moment.date) * 1440 + toMinutes(moment.time);
@@ -229,14 +212,20 @@ function toStop(p: PlanPlace, kind: "daytime" | "evening", start: number, travel
  * 3. Each day starts at its anchor and continues to the nearest unused place
  *    of its area (then any area), skipping places surely closed at that time
  *    and stops that would not fit before the day ends.
- * 4. The evening place is the best ranked one near the last stop.
+ * 4. The evening place is the best ranked one near the last stop; a chain's
+ *    name is suggested only once in the plan.
  */
 export function buildItinerary(input: ItineraryInput): Itinerary {
   const skip = new Set(input.skip);
   const allIds = new Set([...input.daytime, ...input.evening].map((p) => shortId(p.id)));
-  // Twins are removed before skipping, so removing a place never brings back its twin.
+  // Sights mapped as several OSM objects count once (the shared rule in places/twins.ts). Twins are removed
+  // before skipping, so removing a place never brings back its twin.
   const daytime = sameNameOnce(importanceOrder(input.daytime)).filter((p) => !skip.has(shortId(p.id)));
-  const evening = sameNameOnce(input.evening).filter((p) => !skip.has(shortId(p.id)));
+  // Food and drink are not merged (the same name nearby is usually another branch of a chain); instead each
+  // name is suggested as an evening place at most once in the plan.
+  const seenEvening = new Set<string>();
+  const evening = input.evening.filter((p) => !seenEvening.has(p.id) && seenEvening.add(p.id) && !skip.has(shortId(p.id)));
+  const eveningNames = new Set<string>();
   const eveningRank = new Map(evening.map((p, i) => [p.id, (p.detailed ? 0 : 1) * 100_000 + i]));
 
   const days = frames(input);
@@ -306,7 +295,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     const start = ITINERARY.eveningStart;
     const end = start + ITINERARY.visitMin.evening;
     const open = evening
-      .filter((p) => !used.has(p.id))
+      .filter((p) => !used.has(p.id) && !eveningNames.has(nameKey(p)))
       .map((p) => ({ p, verdict: openVerdict(p.openingHours, weekday, start, end), km: dist(ref, p) }))
       .filter((c) => c.verdict !== "closed");
     const close = open.filter((c) => c.km <= ITINERARY.eveningRadiusKm);
@@ -315,6 +304,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
       : open.sort((a, b) => a.km - b.km || byId(a.p, b.p)))[0];
     if (!pick) continue;
     used.add(pick.p.id);
+    eveningNames.add(nameKey(pick.p));
     const travel = lastStop ? travelBetween(lastStop, pick.p) : null;
     stops.push(toStop(pick.p, "evening", start, travel, pick.verdict === "open" ? "open" : "unknown"));
   }

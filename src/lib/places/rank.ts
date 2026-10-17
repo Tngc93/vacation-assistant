@@ -1,5 +1,6 @@
 import { CATEGORIES, type CategoryId } from "./categories";
 import type { Place } from "./place";
+import { sameNameOnce } from "./twins";
 
 export const MAX_PLACES_PER_CATEGORY = 30;
 
@@ -23,6 +24,9 @@ export function detailScore(place: Place): number {
  * - sights, museums, viewpoints: by Wikipedia language count (if known), then detail;
  * - food and drink: by how detailed the OSM record is. No ratings exist, so no "best".
  * Ties fall back to the name, so the order is stable.
+ * A sight mapped as several OSM objects (same name within 1 km, like the nine
+ * ways of La Rambla) is kept once, at its best rank. Food and drink are not
+ * merged: there the same name nearby is usually another branch of a chain.
  */
 export function rankPlaces(
   places: readonly Place[],
@@ -47,5 +51,6 @@ export function rankPlaces(
       detailScore(b) - detailScore(a) ||
       collator.compare(a.name, b.name),
   );
-  return ranked.slice(0, MAX_PLACES_PER_CATEGORY);
+  const once = CATEGORIES[category].ranking === "wikipedia" ? sameNameOnce(ranked) : ranked;
+  return once.slice(0, MAX_PLACES_PER_CATEGORY);
 }

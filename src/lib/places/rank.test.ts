@@ -67,6 +67,28 @@ describe("rankPlaces", () => {
     ]);
   });
 
+  it("keeps one place mapped as several OSM objects once, at its best rank, without using up a slot", () => {
+    const counts = new Map([["Q1", 80]]);
+    const twins = [
+      place("way/2", { name: "La Rambla", lat: 41.3841, lon: 2.1706 }),
+      place("way/1", { name: "La Rambla", lat: 41.3809, lon: 2.1735, wikidataId: "Q1" }),
+    ];
+    const many = Array.from({ length: 40 }, (_, i) => place(`P${String(i).padStart(2, "0")}`));
+    const ranked = rankPlaces([...twins, ...many], "museum", counts);
+    expect(ranked).toHaveLength(MAX_PLACES_PER_CATEGORY);
+    expect(ranked[0]).toMatchObject({ id: "way/1", wikipediaCount: 80 });
+    expect(ranked.filter((p) => p.name === "La Rambla")).toHaveLength(1);
+    expect(ranked.at(-1)?.name).toBe("P28");
+  });
+
+  it("keeps chain branches with the same name apart in food and drink", () => {
+    const branches = [
+      place("node/1", { category: "cafe", name: "Starbucks", lat: 41.3851, lon: 2.1734 }),
+      place("node/2", { category: "cafe", name: "Starbucks", lat: 41.3871, lon: 2.1701 }),
+    ];
+    expect(rankPlaces(branches, "cafe")).toHaveLength(2);
+  });
+
   it("scores detail from website, opening hours and cuisine", () => {
     expect(detailScore(place("x", { website: "w", openingHours: "o", cuisine: "c" }))).toBe(3);
     expect(detailScore(place("x"))).toBe(0);

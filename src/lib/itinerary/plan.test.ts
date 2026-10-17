@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 import { distanceKm } from "@/lib/geo";
 import { ITINERARY } from "./config";
 import { shortId } from "./ids";
-import { buildItinerary, chooseAnchors, sameNameOnce, type ItineraryInput, type PlanPlace } from "./plan";
+import { sameNameOnce } from "@/lib/places/twins";
+import { buildItinerary, chooseAnchors, type ItineraryInput, type PlanPlace } from "./plan";
 import { EVENING, SIGHTS } from "./testCity";
 import { toMinutes } from "./time";
 
@@ -50,6 +51,27 @@ describe("buildItinerary", () => {
     // Same name far apart: two different places.
     const far = { ...twins[1], lat: SIGHTS[0].lat + 0.05 };
     expect(sameNameOnce([twins[0], far])).toHaveLength(2);
+  });
+
+  it("suggests a chain's name as an evening place only once, without merging its branches", () => {
+    // Three branches of one chain, each the best-ranked place near one area (like Espresso House in Stockholm).
+    const chain = [0, 1, 2].map((a) => ({ ...EVENING[a * 2], id: `way/${900 + a}`, name: "Espresso House", detailed: true as const }));
+    const plan = buildItinerary({ ...base, evening: [...chain, ...EVENING] });
+    const evenings = allStops(plan).filter((s) => s.kind === "evening");
+    expect(evenings.filter((s) => s.name === "Espresso House")).toHaveLength(1);
+    expect(new Set(evenings.map((s) => s.name)).size).toBe(evenings.length);
+    // The branches stay separate places in the data: removing the chosen one lets another branch take an evening.
+    const chosen = evenings.find((s) => s.name === "Espresso House")!;
+    const without = buildItinerary({ ...base, evening: [...chain, ...EVENING], skip: [chosen.shortId] });
+    const again = allStops(without).filter((s) => s.name === "Espresso House");
+    expect(again).toHaveLength(1);
+    expect(again[0].id).not.toBe(chosen.id);
+  });
+
+  it("uses the shared twin rule for sights (places/twins.ts)", () => {
+    const twins = [0, 1].map((i) => ({ ...SIGHTS[0], id: `way/${7100 + i}`, name: "La Rambla", wikipediaCount: 300 - i }));
+    const expected = sameNameOnce(twins).map((p) => p.id);
+    expect(allStops(buildItinerary({ ...base, daytime: [...twins, ...SIGHTS] })).filter((s) => s.name === "La Rambla").map((s) => s.id)).toEqual(expected);
   });
 
   it("has days = nights + 1, at most 4 daytime stops and 1 evening place, in order and inside the day", () => {
