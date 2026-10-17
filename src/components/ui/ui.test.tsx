@@ -15,6 +15,15 @@ describe("Button", () => {
     expect(buttonClasses({ variant: "ghost" })).not.toContain("bg-accent");
   });
 
+  it("keeps labels on one line by default, and lets them wrap when asked", () => {
+    expect(buttonClasses()).toContain("whitespace-nowrap");
+    expect(buttonClasses()).toContain("h-10");
+    const wrapping = buttonClasses({ wrap: true });
+    expect(wrapping).not.toContain("whitespace-nowrap");
+    expect(wrapping).not.toMatch(/(^| )h-10( |$)/);
+    expect(wrapping).toContain("min-h-10");
+  });
+
   it("calls onClick, and not when disabled", async () => {
     const user = userEvent.setup();
     const onClick = vi.fn();
