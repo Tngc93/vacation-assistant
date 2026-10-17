@@ -4,6 +4,7 @@ import { findDestination } from "@/data/destinations";
 import { findOrigin } from "@/data/origins";
 import { daysBetween } from "@/lib/search/dates";
 import type { SearchState } from "@/lib/search/params";
+import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
 import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
 import type { CategoryId } from "@/lib/places/categories";
 import { RateLine, RateLineFallback } from "./RateLine";
@@ -23,7 +24,7 @@ function Placeholder({ text, children }: { text: string; children?: ReactNode })
   );
 }
 
-function sectionsFor(search: SearchState, categories: CategoryId[]): Section[] {
+function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean): Section[] {
   const origin = findOrigin(search.from)!;
   const destination = findDestination(search.to)!;
   const days = daysBetween(search.depart, search.return) + 1;
@@ -31,11 +32,17 @@ function sectionsFor(search: SearchState, categories: CategoryId[]): Section[] {
     {
       id: "ucuslar",
       title: "Uçuşlar",
-      status: "Yakında",
       body: (
-        <Placeholder
-          text={`${origin.airports.join(" ve ")} çıkışlı ${destination.cityCode} uçuşları, kaynağı ve "tahmini" etiketiyle burada listelenecek.`}
-        />
+        <Suspense fallback={<FlightsSkeleton />}>
+          <FlightsSection
+            origin={origin}
+            destination={destination}
+            depart={search.depart}
+            return={search.return}
+            pax={search.pax}
+            direct={direct}
+          />
+        </Suspense>
       ),
     },
     { id: "vize", title: "Vize", body: <VisaCard destination={destination} /> },
@@ -74,11 +81,11 @@ function sectionsFor(search: SearchState, categories: CategoryId[]): Section[] {
   ];
 }
 
-/** The plan's sections. Visa and the city guide are live; the rest say what is coming without showing data. */
-export function PlanSections({ search, categories }: { search: SearchState; categories: CategoryId[] }) {
+/** The plan's sections. Flights, visa and the city guide are live; the rest say what is coming without showing data. */
+export function PlanSections({ search, categories, direct }: { search: SearchState; categories: CategoryId[]; direct: boolean }) {
   return (
     <div className="mt-16 grid gap-12 md:mt-20 md:gap-16">
-      {sectionsFor(search, categories).map((section) => (
+      {sectionsFor(search, categories, direct).map((section) => (
         <section key={section.id} id={section.id} aria-labelledby={`${section.id}-title`}>
           <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
             <h2 id={`${section.id}-title`} className="font-display text-title">
