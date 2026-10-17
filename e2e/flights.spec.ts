@@ -37,3 +37,17 @@ test("Ankara flights fall back to nearby dates, each labelled as a different dat
   await expect(flights.getByText("FARKLI TARİH · seçtiğin tarihler değil")).toHaveCount(3);
   await expect(flights.getByText("EN UCUZ", { exact: true })).toHaveCount(0);
 });
+
+test("the loading placeholder is gone once the cards arrive, and other returns open", async ({ page }) => {
+  await page.goto(`/plan?from=IST&to=BCN&depart=${depart}&return=${ret}&pax=2`);
+  const flights = page.locator("#ucuslar");
+  await expect(flights.getByRole("article").first()).toBeVisible();
+  // The Suspense fallback ("Uçuşlar yükleniyor") is replaced, not left on screen or in the accessibility tree.
+  await expect(flights.getByRole("status")).toHaveCount(0);
+  await expect(page.getByText("Uçuşlar yükleniyor")).toHaveCount(0);
+  expect(await page.locator("body").innerText()).not.toContain("Uçuşlar yükleniyor");
+
+  await expect(flights.getByText(/^Lufthansa ·/)).toHaveCount(1);
+  await flights.getByText("Diğer dönüş saatleri (1)").click();
+  await expect(flights.locator("details[open]").getByText("6.150 ₺")).toBeVisible();
+});
