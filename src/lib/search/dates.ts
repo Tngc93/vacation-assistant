@@ -47,7 +47,7 @@ export function daysBetween(from: string, to: string): number {
 }
 
 /** Today's date in Istanbul. */
-export function todayInIstanbul(now: Date = new Date()): string {
+export function todayInIstanbul(now: Date): string {
   // en-CA formats as YYYY-MM-DD.
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Europe/Istanbul",

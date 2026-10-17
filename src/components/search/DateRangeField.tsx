@@ -70,7 +70,7 @@ export function DateRangeField({ value, onChange, departError, returnError, toda
 
   const openCalendar = () => {
     // "Today" is read when the calendar opens, never during rendering.
-    setToday(todayOverride ?? todayInIstanbul());
+    setToday(todayOverride ?? todayInIstanbul(new Date()));
     setOpen(true);
   };
 

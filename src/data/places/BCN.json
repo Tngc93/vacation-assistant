@@ -1,0 +1,1937 @@
+{
+ "version": 1,
+ "cityCode": "BCN",
+ "fetchedAt": "2026-10-16T23:18:26.244Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_%2851227006134%29.jpg/1280px-Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_%2851227006134%29.jpg",
+  "width": 1280,
+  "height": 853,
+  "author": "dronepicr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia,_Barcelona,_Spain_(51227006134).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/9194723",
+     "name": "Basílica de la Sagrada Família",
+     "lat": 41.4035,
+     "lon": 2.17428,
+     "website": "https://sagradafamilia.org/",
+     "openingHours": "Nov-Feb: Mo-Sa 09:00-18:00, Su 10:30-18:00; Mar-Oct: Mo-Fr 09:00-19:00, Sa 09:00-18:00, Su 10:30-19:00; Apr-Sep: Mo-Fr 09:00-20:00, Sa 09:00-18:00, Su 10:30-20:00; Dec 25,Dec 26,Jan 01,Jan 06 09:00-14:00; PH off",
+     "wikipediaCount": 103
+    },
+    {
+     "id": "way/377216661",
+     "name": "Palau de la Música Catalana",
+     "lat": 41.38758,
+     "lon": 2.17522,
+     "address": "Carrer del Palau de la Música 4-6",
+     "website": "https://www.palaumusica.cat/",
+     "openingHours": "Mo-Su 09:00-15:30",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "relation/3298476",
+     "name": "Catedral de la Santa Creu i Santa Eulàlia",
+     "lat": 41.38393,
+     "lon": 2.17635,
+     "website": "https://www.catedralbcn.org/",
+     "openingHours": "Mo-Fr 09:30-18:30; Sa 09:30-17:15; Su,PH 14:00-17:00",
+     "wikipediaCount": 42
+    },
+    {
+     "id": "way/126336685",
+     "name": "La Rambla",
+     "lat": 41.3791,
+     "lon": 2.17508,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/545937950",
+     "name": "La Rambla",
+     "lat": 41.3808,
+     "lon": 2.17379,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1117840324",
+     "name": "La Rambla",
+     "lat": 41.38129,
+     "lon": 2.17316,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1117840326",
+     "name": "La Rambla",
+     "lat": 41.37992,
+     "lon": 2.17435,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1117840337",
+     "name": "La Rambla",
+     "lat": 41.3812,
+     "lon": 2.17324,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1117840338",
+     "name": "La Rambla",
+     "lat": 41.38348,
+     "lon": 2.17156,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1360092510",
+     "name": "La Rambla",
+     "lat": 41.38067,
+     "lon": 2.1737,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1428778318",
+     "name": "La Rambla",
+     "lat": 41.38023,
+     "lon": 2.17408,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/1436366169",
+     "name": "La Rambla",
+     "lat": 41.38111,
+     "lon": 2.17332,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/166565579",
+     "name": "Palau Güell",
+     "lat": 41.37881,
+     "lon": 2.17423,
+     "website": "https://inici.palauguell.cat/",
+     "openingHours": "Apr-Oct: 10:00-20:00; Nov-Mar: 10:00-17:30",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "way/51260215",
+     "name": "Basílica de Santa Maria del Mar",
+     "lat": 41.3838,
+     "lon": 2.182,
+     "website": "https://www.santamariadelmarbarcelona.org/",
+     "openingHours": "Mo-Su 10:00-20:30",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/67917935",
+     "name": "Pavelló Mies van der Rohe",
+     "lat": 41.37055,
+     "lon": 2.14996,
+     "address": "Avinguda de Francesc Ferrer i Guàrdia 7",
+     "website": "https://miesbcn.com/ca/el-pavello/",
+     "openingHours": "Mar-Oct 10:00-20:00; Nov-Feb 10:00-18:00; Dec 25 off",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/377875377",
+     "name": "Arc de Triomf",
+     "lat": 41.39104,
+     "lon": 2.18064,
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/10426929",
+     "name": "Gran Teatre del Liceu",
+     "lat": 41.38013,
+     "lon": 2.17341,
+     "website": "http://www.liceubarcelona.cat/",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "relation/6288735",
+     "name": "Mercat de Sant Josep - La Boqueria",
+     "lat": 41.38173,
+     "lon": 2.17158,
+     "address": "La Rambla 91",
+     "website": "https://www.boqueria.barcelona/",
+     "openingHours": "Mo-Sa 08:00-20:30",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/35816134",
+     "name": "Font Màgica de Montjuïc",
+     "lat": 41.37116,
+     "lon": 2.15174,
+     "openingHours": "Apr 01-May 31: Fr,Sa 21:00-22:00; Jun 01-Sep 30: We-Su 21:30-22:30; Oct 01-31: Th-Sa 21:00-22:00; Nov 01-Jan 06,Mar 01-31: Th-Sa 20:00-21:00; PH off",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "way/126451774",
+     "name": "Monument a Colom",
+     "lat": 41.3758,
+     "lon": 2.17777,
+     "website": "https://thisisbarcelona.com/ca/tickets/monumento-mirador-colom",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "way/163393541",
+     "name": "Torre de Comunicacions de Montjuïc",
+     "lat": 41.36428,
+     "lon": 2.15061,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "relation/19658818",
+     "name": "Castell de Montjuïc",
+     "lat": 41.3627,
+     "lon": 2.16478,
+     "website": "https://ajuntament.barcelona.cat/castelldemontjuic/ca",
+     "openingHours": "Nov 01-Feb 28 10:00-18:00; Mar 01-Oct 31 10:00-20:00; Dec 25,Jan 01 off; PH off",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/625295824",
+     "name": "Parròquia Basílica de Santa Maria del Pi",
+     "lat": 41.38204,
+     "lon": 2.17392,
+     "website": "https://www.basilicadelpi.cat/",
+     "openingHours": "Mo-Th 18:00-20:00; Fr,Sa 09:30-11:00, 18:00-20:00; Su,PH 11:00-13:00",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/679019157",
+     "name": "Casa Lleó Morera",
+     "lat": 41.39112,
+     "lon": 2.16523,
+     "website": "http://www.casalleomorera.com/en/",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "way/541071062",
+     "name": "Plaça Reial",
+     "lat": 41.38009,
+     "lon": 2.17527,
+     "wikipediaCount": 16
+    },
+    {
+     "id": "relation/18708616",
+     "name": "Plaça del Rei",
+     "lat": 41.38413,
+     "lon": 2.17741,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/1091176334",
+     "name": "Drassanes Reials de Barcelona",
+     "lat": 41.37531,
+     "lon": 2.17586,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "relation/2874767",
+     "name": "Palau de la Generalitat de Catalunya",
+     "lat": 41.38311,
+     "lon": 2.17632,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "relation/1819559",
+     "name": "Les Quatre Columnes",
+     "lat": 41.37065,
+     "lon": 2.15208,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/1533889825",
+     "name": "Palau Reial Major",
+     "lat": 41.38416,
+     "lon": 2.17741,
+     "wikipediaCount": 10
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/14075577293",
+     "name": "Museu Nacional d'Art de Catalunya",
+     "lat": 41.3686,
+     "lon": 2.15346,
+     "website": "https://www.museunacional.cat/",
+     "openingHours": "Tu-Sa 10:00-18:00; Su 10:00-15:00; May-Sep: Tu-Sa 10:00-20:00; PH off",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "way/188938001",
+     "name": "Museu Picasso",
+     "lat": 41.3851,
+     "lon": 2.18124,
+     "website": "https://museupicassobcn.cat/",
+     "openingHours": "Jan 1, May 1, Jun 24, Dec 25 off; Tu, We, Su 09:00-20:00; Th-Sa 09:00-21:00",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "way/36930946",
+     "name": "Museu d'Art Contemporani de Barcelona",
+     "lat": 41.3831,
+     "lon": 2.16675,
+     "website": "https://www.macba.cat/",
+     "openingHours": "Mo,We-Fr 11:00-19:30; Sa 10:00-20:00; Su,PH 10:00-15:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "node/1643199193",
+     "name": "Museu d'Història de Barcelona",
+     "lat": 41.38392,
+     "lon": 2.17768,
+     "address": "Carrer del Veguer 4",
+     "website": "https://www.barcelona.cat/museuhistoria/",
+     "openingHours": "Mo-Sa 10:00-19:00; Su 10:00-20:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/40547571",
+     "name": "Poble Espanyol de Barcelona",
+     "lat": 41.36865,
+     "lon": 2.1485,
+     "website": "https://poble-espanyol.com/",
+     "openingHours": "Mo 10:00-20:00; Tu-Su,PH 10:00-24:00; Jan 07-Feb 05 Tu-Th 10:00-20:00; Dec 25 10:00-14:00; Dec 26 10:00-24:00; Jan 01 13:00-24:00; Jan 06 10:00-20:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/167056918",
+     "name": "Museu de la Xocolata",
+     "lat": 41.38711,
+     "lon": 2.18173,
+     "website": "http://www.museuxocolata.cat/",
+     "openingHours": "Mo-Sa 10:00-19:00; Su 10:00-15:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/14080861534",
+     "name": "Museu Marítim de Barcelona",
+     "lat": 41.3755,
+     "lon": 2.17643,
+     "website": "https://www.mmb.cat/",
+     "openingHours": "Mo-Su,PH 10:00-20:00; Dec 24,Dec 31 10:00-15:00; Dec 25,Dec 26,Jan 01,Jan 06 off",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/132533806",
+     "name": "Palau de la Virreina",
+     "lat": 41.38235,
+     "lon": 2.17153,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/217475661",
+     "name": "CaixaForum Barcelona",
+     "lat": 41.37148,
+     "lon": 2.14936,
+     "website": "https://caixaforum.es/barcelona",
+     "openingHours": "Mo-Su 10:00-20:00; Jul-Aug: We 10:00-23:00; Dec 24,Dec 31,Jan 05: 10:00-18:00; Dec 25,Jan 01,Jan 06: off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/2136227451",
+     "name": "Museu de la Marihuana",
+     "lat": 41.38081,
+     "lon": 2.18012,
+     "address": "Carrer Ample 35",
+     "website": "http://hempmuseumgallery.com/",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/1962723905",
+     "name": "Museu Tàpies",
+     "lat": 41.39162,
+     "lon": 2.16366,
+     "address": "Carrer d'Aragó 255",
+     "website": "https://museutapies.org/",
+     "openingHours": "Tu-Sa 10:00-19:00; Su 10:00-15:00; Jan 1 off; Jan 6 off; Dec 25 off; Dec 26 off",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "relation/2873579",
+     "name": "Centre de Cultura Contemporània de Barcelona",
+     "lat": 41.38372,
+     "lon": 2.16658,
+     "website": "https://www.cccb.org/",
+     "openingHours": "Tu-Su,PH 10:00-20:00; Dec 24,Dec 26,Dec 31,Jan 05,Jan 06: 10:00-15:00; Jan 01,Dec 25 off",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/6742154244",
+     "name": "Museu d'Història de Catalunya",
+     "lat": 41.38082,
+     "lon": 2.18587,
+     "website": "https://mhcat.cat/",
+     "openingHours": "Tu,Th-Sa 10:00-19:00; We 10:00-20:00; Su,PH 10:00-14:30; Jan 01,Jan 06,May 01,Jun 06,Dec 25,Dec 26 off",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/454488169",
+     "name": "Museu Frederic Marès",
+     "lat": 41.38438,
+     "lon": 2.17677,
+     "address": "Plaça de Sant Iu 5",
+     "website": "http://www.museumares.bcn.cat/",
+     "openingHours": "Tu-Sa 10:00-19:00; Su 11:00-20:00; Jan 01,May 01,Dec 25-26, PH off",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/2456223233",
+     "name": "Temple d'August",
+     "lat": 41.38337,
+     "lon": 2.17723,
+     "address": "Carrer del Paradís 10",
+     "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/temple-daugust",
+     "openingHours": "Mo 10:00-14:00; Tu-Sa 10:00-19:00; Su 10:00-20:00; Jan 01,May 01,Jun 24,Dec 25 off; PH off",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/9589229",
+     "name": "Museu d'Arqueologia de Catalunya",
+     "lat": 41.36977,
+     "lon": 2.15766,
+     "website": "https://www.mac.cat/ca/Visita-ns-Portada/Barcelona-Portada-Seu",
+     "openingHours": "Tu-Sa 09:30-19:00; Su,PH 10:00-14:30; Dec 24,Dec 31: 10:00-15:00; Dec 25,Dec 26,Jan 01,Jan 06 off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/166566543",
+     "name": "Museu de Cera",
+     "lat": 41.37742,
+     "lon": 2.17728,
+     "website": "https://www.museocerabcn.com/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/192944873",
+     "name": "Can Framis",
+     "lat": 41.40315,
+     "lon": 2.19498,
+     "website": "https://www.fundaciovilacasas.com/ca/museu/museu-can-framis-barcelona",
+     "openingHours": "Tu-Sa 11:00-18:00; Jan 05,Mar 29: Su 11:00-14:00; PH closed",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/673264230",
+     "name": "Museu de la Música",
+     "lat": 41.39889,
+     "lon": 2.18558,
+     "address": "Carrer de Lepant 150",
+     "website": "https://www.bcn.cat/museumusica/",
+     "openingHours": "Tu-We,Fr 10:00-18:00; Th 10:00-23:15; Sa,Su 10:00-19:00; Dec 24; Dec 31; Jan 05 10:00-15:00; PH,Mo off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/3647299861",
+     "name": "Museu Europeu d'Art Modern",
+     "lat": 41.38501,
+     "lon": 2.18047,
+     "address": "Carrer Barra de Ferro 5",
+     "website": "https://www.meam.es/ca/",
+     "openingHours": "Tu-Th,Su 11:00-19:00; Fr,Sa 11:00-20:00; Dec 25 off; Dec 26 off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/214435557",
+     "name": "Museu Olímpic i de l'Esport Joan Antoni Samaranch",
+     "lat": 41.36603,
+     "lon": 2.15771,
+     "website": "https://www.museuolimpicbcn.cat/ca/",
+     "openingHours": "Tu-Sa 10:00-18:00; Su,PH 10:00-14:30; Apr-Sep Tu-Sa 10:00-19:00; Jan 01 off; May 01 off; Dec 25 off; Dec 26 off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/8731194994",
+     "name": "Museu de les Arts Escèniques",
+     "lat": 41.37178,
+     "lon": 2.15762,
+     "address": "Plaça de Margarida Xirgu",
+     "website": "https://www.cdmae.cat/",
+     "openingHours": "Mo-Fr 09:30-18:30",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/6357834157",
+     "name": "Museu Egipci",
+     "lat": 41.39362,
+     "lon": 2.16474,
+     "address": "Carrer de València 284",
+     "website": "https://www.museuegipci.com/",
+     "openingHours": "Mo-Fr 10:00-14:00,16:00-19:30; Sa 10:00-15:00,16:00-19:30; Su 10:00-14:00; PH off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/4724329201",
+     "name": "Museu Eròtic de Barcelona",
+     "lat": 41.38224,
+     "lon": 2.17257,
+     "website": "http://www.erotica-museum.com/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/4724895518",
+     "name": "Museu i Centre d'Estudis de l'Esport Doctor Melcior Colet",
+     "lat": 41.39309,
+     "lon": 2.14819,
+     "website": "https://esport.gencat.cat/ca/secretaria_general_de_lesport/museu-i-centre-destudis-de-lesport-melcior-colet/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/1962720907",
+     "name": "Museu del Modernisme Català",
+     "lat": 41.38885,
+     "lon": 2.1634,
+     "address": "Carrer de Balmes 48",
+     "website": "https://www.mmbcn.cat/",
+     "openingHours": "Mo-Fr 10:30-14:00,16:00-19:00; Sa 10:30-14:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "relation/7363116",
+     "name": "Saló del Tinell",
+     "lat": 41.38431,
+     "lon": 2.17711,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/6982850087",
+     "name": "Arxiu Fotogràfic de Barcelona",
+     "lat": 41.38691,
+     "lon": 2.18179,
+     "address": "Plaça de Pons i Cierch 2 2on.",
+     "website": "https://ajuntament.barcelona.cat/arxiumunicipal/arxiufotografic/ca",
+     "openingHours": "Mo-Fr 10:00-19:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/14022328893",
+     "name": "El Born",
+     "lat": 41.38571,
+     "lon": 2.18364,
+     "address": "Plaça Comercial 12",
+     "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/el-born",
+     "openingHours": "Mar-Oct Tu-Su 10:00-20:00; Nov-Feb Tu-Sa 10:00-19:00, Su 10:00-20:00; Dec 26 10:00-14:30; Jan 01,May 01,Jun 24,Dec 25 off; PH off",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/13977557087",
+     "name": "Museu Diocesà de Barcelona",
+     "lat": 41.38461,
+     "lon": 2.17612,
+     "address": "Pla de la Seu 7",
+     "website": "https://museudiocesa.esglesia.barcelona/",
+     "openingHours": "Mo-Su,PH 09:30-20:00; Jan 01,Dec 25 off",
+     "wikipediaCount": 3
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2509826686",
+     "name": "Mirador de l'Alcalde",
+     "lat": 41.36668,
+     "lon": 2.16946,
+     "website": "https://www.meet.barcelona/ca/visita-la-i-estima-la/punts-dinteres-de-la-ciutat/jardins-del-mirador-de-l-alcalde-1338142144"
+    },
+    {
+     "id": "way/1340124967",
+     "name": "Mirador de Freddie Mercury i Montserrat Caballé",
+     "lat": 41.4022,
+     "lon": 2.18528
+    },
+    {
+     "id": "node/7066756385",
+     "name": "Mirador de l'antic teatre del parc d'atraccions",
+     "lat": 41.36806,
+     "lon": 2.16669
+    },
+    {
+     "id": "node/11329029362",
+     "name": "Mirador de la Rambla del Trencaones",
+     "lat": 41.36443,
+     "lon": 2.18581
+    },
+    {
+     "id": "node/898852798",
+     "name": "Mirador de Miramar",
+     "lat": 41.37054,
+     "lon": 2.17237
+    },
+    {
+     "id": "node/12155870101",
+     "name": "Mirador del Palau Nacional",
+     "lat": 41.36902,
+     "lon": 2.15319
+    },
+    {
+     "id": "node/7603117271",
+     "name": "Mirador del Passeig del Trencaones",
+     "lat": 41.36358,
+     "lon": 2.1875
+    },
+    {
+     "id": "node/10681884421",
+     "name": "Mirador del Poble Sec",
+     "lat": 41.37185,
+     "lon": 2.1719
+    },
+    {
+     "id": "node/10834404716",
+     "name": "Mirador Maria Aurèlia Capmany",
+     "lat": 41.38168,
+     "lon": 2.17768
+    },
+    {
+     "id": "node/9714435350",
+     "name": "Mirador Torre Glòries",
+     "lat": 41.40352,
+     "lon": 2.18952
+    },
+    {
+     "id": "node/9864584405",
+     "name": "Mirador Vela",
+     "lat": 41.36923,
+     "lon": 2.19112
+    },
+    {
+     "id": "node/5126584569",
+     "name": "Torre de l'esglesia",
+     "lat": 41.38287,
+     "lon": 2.17819
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2495136749",
+     "name": "¡Hola Nepal!",
+     "lat": 41.40721,
+     "lon": 2.17278,
+     "address": "Carrer de Lepant 323",
+     "website": "https://holanepal.es/",
+     "openingHours": "Tu-Su 12:30-16:00, 19:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/1192702494",
+     "name": "7 Portes",
+     "lat": 41.38217,
+     "lon": 2.18325,
+     "website": "https://7portes.com/catala/index2.php",
+     "openingHours": "Mo-Su 13:00-01:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/3126271608",
+     "name": "Afrodita",
+     "lat": 41.38041,
+     "lon": 2.17797,
+     "address": "Carrer d'en Carabassa 3",
+     "website": "http://www.afroditarestaurant.com/",
+     "openingHours": "Mo-Su 12:30-23:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2848240944",
+     "name": "Askadinya",
+     "lat": 41.40386,
+     "lon": 2.15695,
+     "address": "Carrer de Verdi 28",
+     "website": "http://askadinya.com/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "cuisine": "palestine",
+     "detailed": true
+    },
+    {
+     "id": "node/2489047099",
+     "name": "Bambarol",
+     "lat": 41.39508,
+     "lon": 2.14633,
+     "website": "https://bambarol.cat/",
+     "openingHours": "Tu-Sa 13:30-15:30,20:00-23:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/2486105464",
+     "name": "Bar el Lliure",
+     "lat": 41.40274,
+     "lon": 2.15601,
+     "address": "Carrer del Montseny 47",
+     "website": "http://www.teatrelliure.com/",
+     "openingHours": "Su-Tu 18:00-24:00; Fr-Sa 18:00-03:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1192698924",
+     "name": "Bilbao Berria",
+     "lat": 41.3842,
+     "lon": 2.17487,
+     "address": "Plaça Nova 3",
+     "website": "https://www.grupobilbaoberria.com/",
+     "openingHours": "Mo-Su 10:00-00:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/2102974092",
+     "name": "Bodega Joan",
+     "lat": 41.39171,
+     "lon": 2.1555,
+     "address": "Carrer del Rosselló 164",
+     "website": "https://www.bodegajoan.com/",
+     "openingHours": "Mo-Fr 00:00-01:00,07:00-24:00; Sa 00:00-03:00,07:00-24:00; Su 00:00-03:00,08:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2412873943",
+     "name": "Can Culleretes",
+     "lat": 41.38121,
+     "lon": 2.17442,
+     "address": "Carrer d'en Quintana 5",
+     "website": "https://www.culleretes.com/",
+     "openingHours": "Tu-We,Su 13:00-15:45; Th-Sa13:00-15:45,20:00-22:30; PH Mo 13:00-15:45",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/2056514585",
+     "name": "Can Lluís",
+     "lat": 41.37811,
+     "lon": 2.16537,
+     "address": "Carrer de la Cera 49",
+     "website": "https://canlluis.com/",
+     "openingHours": "Mo-Su 13:00-16:30,20:00-23:00",
+     "cuisine": "catalan",
+     "detailed": true
+    },
+    {
+     "id": "node/476327681",
+     "name": "Can Paixano",
+     "lat": 41.38176,
+     "lon": 2.18342,
+     "website": "https://www.canpaixano.com/",
+     "openingHours": "Tu-Sa 12:00-22:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/1640963945",
+     "name": "Can Ramonet",
+     "lat": 41.38082,
+     "lon": 2.18892,
+     "address": "Carrer de La Maquinista 17",
+     "website": "https://www.elnouramonet.com/",
+     "openingHours": "Mo-Su 13:00-24:00",
+     "cuisine": "regional, fish, seafood, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/2968119449",
+     "name": "Cantina Machito",
+     "lat": 41.40432,
+     "lon": 2.15774,
+     "address": "Carrer de Torrijos 50",
+     "website": "https://www.laantiguademexico.com/cantina-machito",
+     "openingHours": "Mo-Su 11:00-00:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/3084507933",
+     "name": "Caravelle",
+     "lat": 41.38229,
+     "lon": 2.16885,
+     "address": "Carrer del Pintor Fortuny 31",
+     "website": "https://www.caravellebcn.com/",
+     "openingHours": "Mo-Tu 09:30-17:00; We-Th 09:30-24:00; Fr 09:30-00:30; Sa 10:00-00:30; Su 10:00-17:00",
+     "cuisine": "brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/1969866741",
+     "name": "Casa Alfonso",
+     "lat": 41.3901,
+     "lon": 2.17306,
+     "address": "Carrer de Roger de Llúria 6",
+     "website": "https://casaalfonso.com/",
+     "openingHours": "Mo-Fr 08:00-01:00; Sa 13:00-01:00",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/1960366982",
+     "name": "Casa Amalia",
+     "lat": 41.39625,
+     "lon": 2.16856,
+     "address": "Passatge del Mercat 14",
+     "website": "https://casaamalia.com/",
+     "openingHours": "Mo-Su 13:00-17:30,19:30-24:00",
+     "cuisine": "catalan",
+     "detailed": true
+    },
+    {
+     "id": "node/2866873011",
+     "name": "Casa Leopoldo",
+     "lat": 41.37927,
+     "lon": 2.16951,
+     "address": "Carrer de Sant Rafael 24",
+     "website": "https://www.bancodeboquerones.com/restaurante/casa-leopoldo/",
+     "openingHours": "Tu-Fr 13:30-15:30,20:30-23:00; Sa 13:30-16:00,20:30-23:00; Su 13:30-16:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1676887354",
+     "name": "Ciudadela",
+     "lat": 41.38944,
+     "lon": 2.18374,
+     "address": "Passeig de Pujades 5",
+     "website": "https://restaurante.ciudadelaparc.com/",
+     "openingHours": "Mo-Su 08:00-12:00,13:00-16:00,19:30-23:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/1948912981",
+     "name": "Corgi Cafe",
+     "lat": 41.38861,
+     "lon": 2.18161,
+     "address": "Carrer del Comerç 1-3",
+     "website": "https://corgicafe.es/",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "cuisine": "bagel, breakfast, cake, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/2268406110",
+     "name": "Dante Barceloneta",
+     "lat": 41.37584,
+     "lon": 2.18799,
+     "website": "https://dantebarceloneta.com/",
+     "openingHours": "Mo-Fr 08:00-00:30; Sa,Su,PH 08:00-01:30",
+     "cuisine": "italian, turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/2239890971",
+     "name": "Dionisos",
+     "lat": 41.38553,
+     "lon": 2.18546,
+     "address": "Avinguda del Marquès de l'Argentera 27",
+     "website": "https://dionisos.com/restaurantes/dionisos-born/",
+     "openingHours": "Mo-Th 11:00-24:00; Fr 11:00-25:00; Sa 10:00-25:00; Su 10:00-24:00",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/1310450869",
+     "name": "El Filete Ruso",
+     "lat": 41.39255,
+     "lon": 2.1559,
+     "address": "Enric Granados 95",
+     "website": "https://elfileteruso.com/",
+     "openingHours": "Su-Th 13:00-16:00,20:00-23:00; Fr 13:00-16:00,20:00-23:30; Sa 13:00-23:30",
+     "cuisine": "mediterranean, meat, organic",
+     "detailed": true
+    },
+    {
+     "id": "node/1192709211",
+     "name": "El Xampanyet",
+     "lat": 41.38451,
+     "lon": 2.18167,
+     "address": "Carrer de Montcada 22",
+     "website": "https://www.elxampanyet.com/",
+     "openingHours": "Tu-Sa 12:00-15:30,19:00-23:00; Su 12:00-15:30",
+     "cuisine": "tapas, spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/2085902132",
+     "name": "Els 'Pollos' de Llull",
+     "lat": 41.39106,
+     "lon": 2.19094,
+     "address": "Ramón Turró 13",
+     "website": "https://www.elspollos.com/",
+     "openingHours": "Mo-Th 12:00-18:00; We off; Fr-Sa 12:00-23:00; Su 12:00-20:00",
+     "cuisine": "chicken",
+     "detailed": true
+    },
+    {
+     "id": "node/2866804016",
+     "name": "Fantastico",
+     "lat": 41.39287,
+     "lon": 2.15224,
+     "address": "Carrer de París 177",
+     "website": "http://www.barfantastico.es/",
+     "openingHours": "Mo-Fr 08:00-01:00; Sa 19:30-02:00; Su closed",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2187270200",
+     "name": "FRATELLI LA BUFALA",
+     "lat": 41.40559,
+     "lon": 2.19322,
+     "address": "Carrer de la Llacuna 150",
+     "website": "https://www.fratellilabufala.eu/",
+     "openingHours": "closed",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2609183969",
+     "name": "Fukuoka",
+     "lat": 41.40226,
+     "lon": 2.1613,
+     "address": "Carrer de Milà i Fontanals 60",
+     "website": "https://linktr.ee/fukuokabcn",
+     "openingHours": "Mo-Su 13:00-16:00, 20:00-00:00",
+     "cuisine": "japanese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/704035994",
+     "name": "Hard Rock Cafe",
+     "lat": 41.38596,
+     "lon": 2.17075,
+     "address": "Plaça Catalunya 21-22",
+     "website": "https://www.hardrockcafe.com/location/barcelona/",
+     "openingHours": "Su-Th 11:30-01:00; Fr-Sa 11:30-01:00",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "node/2977297774",
+     "name": "Honest Greens",
+     "lat": 41.38343,
+     "lon": 2.18321,
+     "address": "Pla de Palau 11",
+     "website": "https://honestgreens.com/",
+     "openingHours": "PH,Mo-Su 09:30-23:00",
+     "cuisine": "organic",
+     "detailed": true
+    },
+    {
+     "id": "node/3231375761",
+     "name": "HOT Frankfurt",
+     "lat": 41.38472,
+     "lon": 2.18297,
+     "address": "Passeig del Born 26",
+     "website": "https://hotfrankfurt.com/",
+     "openingHours": "Mo-We 12:00-01:00; Th 12:00-02:00; Fr-Sa 12:00-03:00; Su 12:00-01:00",
+     "cuisine": "hot dog, sausage",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4446086989",
+     "name": "Alsur Café",
+     "lat": 41.39107,
+     "lon": 2.17137,
+     "address": "Carrer de Roger de Llúria 23",
+     "website": "https://www.alsurcafe.com/lluria.html",
+     "openingHours": "Mo-Su 08:30-23:00",
+     "cuisine": "brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/4503193765",
+     "name": "Bicioci",
+     "lat": 41.39992,
+     "lon": 2.16191,
+     "address": "Carrer de Venus 1-3",
+     "website": "https://www.bicioci.com/",
+     "openingHours": "Mo 08:00-16:00; Tu-Fr 08:00-16:00, 19:00-00:00; Sa 10:00-15:00, 19:00-00:00; PH 10:00-15:00",
+     "cuisine": "coffee shop, italian, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/4833189827",
+     "name": "Black remedy",
+     "lat": 41.38246,
+     "lon": 2.17777,
+     "address": "Carrer de la Ciutat 5",
+     "website": "http://blackremedy.com/",
+     "openingHours": "Mo-Fr 09:00-19:00; Sa-Su 10:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/674680026",
+     "name": "Buenas Migas",
+     "lat": 41.37534,
+     "lon": 2.1895,
+     "address": "Plaça del Mar 1",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Su, PH 08:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2091604718",
+     "name": "Buenas Migas",
+     "lat": 41.37556,
+     "lon": 2.14853,
+     "address": "Plaça Espanya 6-8",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Su 08:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2598482920",
+     "name": "Buenas Migas",
+     "lat": 41.38381,
+     "lon": 2.17731,
+     "address": "Baixada de Santa Clara 2",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3730796125",
+     "name": "Buenas Migas",
+     "lat": 41.39755,
+     "lon": 2.15879,
+     "address": "Passeig de Gràcia 120",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Th 07:00-01:00; Fr-Sa 07:00-02:00; Su 08:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4278033120",
+     "name": "Buenas Migas",
+     "lat": 41.3838,
+     "lon": 2.16962,
+     "address": "Plaça del Bonsuccés 6",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Fr 08:00-00:00; Sa-Su 08:00-01:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5111804421",
+     "name": "Buenas Migas",
+     "lat": 41.38522,
+     "lon": 2.16334,
+     "address": "Plaça de la Universitat 1",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Su 08:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5318409424",
+     "name": "Buenas Migas",
+     "lat": 41.39448,
+     "lon": 2.14978,
+     "address": "Carrer del Bon Pastor 3",
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Fr 08:00-23:00; Sa-Su 09:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5611733921",
+     "name": "Buenas Migas",
+     "lat": 41.40243,
+     "lon": 2.17433,
+     "website": "http://www.buenasmigas.com/",
+     "openingHours": "Mo-Su 08:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2056517879",
+     "name": "Caelum",
+     "lat": 41.38305,
+     "lon": 2.17444,
+     "address": "Carrer de la Palla 8",
+     "website": "https://www.caelumbarcelona.com/",
+     "openingHours": "Mo-Th 10:00-20:00; Su 10:00-20:00; Fr-Sa 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2598482829",
+     "name": "Cafés El Magnifico",
+     "lat": 41.38352,
+     "lon": 2.18101,
+     "address": "Carrer de l'Argenteria 64-66",
+     "website": "https://cafeselmagnifico.com/",
+     "openingHours": "Mo-Sa 09:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4729539590",
+     "name": "Caj Chai",
+     "lat": 41.38287,
+     "lon": 2.17557,
+     "address": "Carrer de Salomó ben Adret 12",
+     "website": "https://cajchai.com/",
+     "openingHours": "Mo-Su 15:00-20:00 \"off during reservations (see website)\"",
+     "cuisine": "teahouse",
+     "detailed": true
+    },
+    {
+     "id": "node/3513069498",
+     "name": "Chocolatería La Nena",
+     "lat": 41.40266,
+     "lon": 2.15887,
+     "address": "Carrer de Ramón y Cajal 36",
+     "website": "http://www.chocolaterialanena.com/",
+     "openingHours": "Mo 08:30-14:00,16:00-22:30; Tu-Fr 08:30-22:30; Sa 09:00-22:30; Su 09:30-22:30",
+     "cuisine": "cake, coffee shop, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4210487190",
+     "name": "FabCafe Barcelona",
+     "lat": 41.39175,
+     "lon": 2.1772,
+     "address": "Carrer de Bailèn 11",
+     "website": "https://www.fabcafe.com/barcelona/fab/",
+     "openingHours": "Mo-Fr 09:30-20:00; Sa 10:00-14:00",
+     "cuisine": "sandwich, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4364289794",
+     "name": "Faborit",
+     "lat": 41.39158,
+     "lon": 2.16506,
+     "address": "Passeig de Gràcia 41",
+     "website": "https://www.faborit.com/",
+     "openingHours": "Mo-Fr 08:00-22:00; Sa, Su, PH 08:30-22:00",
+     "cuisine": "salad",
+     "detailed": true
+    },
+    {
+     "id": "node/5198854184",
+     "name": "Godot",
+     "lat": 41.40017,
+     "lon": 2.15696,
+     "address": "Carrer de Sant Domènec 17-19",
+     "website": "http://www.cafegodot.com/",
+     "openingHours": "Mo-Th 10:00-01:00; Fr 10:00-02:00; Sa 11:00-02:00; Su 11:00-01:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/4516538193",
+     "name": "Más Que Sushi",
+     "lat": 41.37742,
+     "lon": 2.15272,
+     "address": "Gran Via de les Corts Catalanes 420-422",
+     "website": "https://masquesushi.com/",
+     "openingHours": "13:00-16:00,20:30-23:00",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/5805410453",
+     "name": "Morrow Coffee",
+     "lat": 41.37714,
+     "lon": 2.15133,
+     "address": "Gran Via de les Corts Catalanes 403",
+     "website": "https://morrowcoffee.com/",
+     "openingHours": "Mo-Fr 08:30-17:00; Sa-Su 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3612059306",
+     "name": "Nabuco Tiramisú",
+     "lat": 41.40045,
+     "lon": 2.15772,
+     "address": "Plaça de la Vila de Gràcia 8",
+     "website": "https://www.nabuccotiramisu.com/",
+     "openingHours": "Mo-Su 09:00-21:30",
+     "cuisine": "salad, pizza, cake, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/5010794821",
+     "name": "Nomad Frutas Selectas",
+     "lat": 41.39793,
+     "lon": 2.19555,
+     "address": "Carrer de Pujades 95",
+     "website": "https://nomadcoffee.es/pages/locales-nomad-coffee-en-barcelona#p-frutas-selectas-p",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5198201322",
+     "name": "Sabio Infante",
+     "lat": 41.4,
+     "lon": 2.15962,
+     "address": "Carrer del Torrent de l'Olla",
+     "website": "https://www.sabioinfante.com/",
+     "openingHours": "Mo-Fr 09:00-20:00; Sa-Su 10:00-19:00",
+     "cuisine": "cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5111894222",
+     "name": "SandwiChez",
+     "lat": 41.40508,
+     "lon": 2.16122,
+     "address": "Carrer de Bruniquer 33",
+     "website": "https://www.sandwichez.com/",
+     "openingHours": "Mo-Su 07:15-20:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/704051187",
+     "name": "Starbucks",
+     "lat": 41.38802,
+     "lon": 2.16792,
+     "address": "Rambla de Catalunya 10",
+     "website": "https://www.starbucks.co.uk/store-locator/40416-90706/rambla-cataluna",
+     "openingHours": "Fr-Sa 07:30-23:00; Su-Th 07:30-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2120131925",
+     "name": "Starbucks",
+     "lat": 41.38526,
+     "lon": 2.16324,
+     "website": "https://www.starbucks.co.uk/store-locator/40432-98094/placa-universitat",
+     "openingHours": "Mo-Th 07:30-22:00; Fr,Sa 08:00-22:00; Su,PH 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4344571595",
+     "name": "Ugot",
+     "lat": 41.38129,
+     "lon": 2.15538,
+     "website": "https://www.ugotbruncherie.com/",
+     "openingHours": "Mo-Su 09:00-16:00",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/4901562521",
+     "name": "WER-HAUS",
+     "lat": 41.39376,
+     "lon": 2.16672,
+     "website": "https://wer-haus.com/",
+     "openingHours": "Mo, We-Fr 10:00-20:00; Sa-Su 11:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1709793864",
+     "name": "365",
+     "lat": 41.37509,
+     "lon": 2.1711,
+     "address": "Avinguda del Paral·lel 54",
+     "openingHours": "Mo-Su 06:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2468197823",
+     "name": "365",
+     "lat": 41.37521,
+     "lon": 2.16352,
+     "address": "Avinguda del Paral·lel 105",
+     "openingHours": "Mo-Su 06:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/13069782185",
+     "name": "GinGin Gay Queer Bar",
+     "lat": 41.38764,
+     "lon": 2.16055,
+     "address": "Carrer d'Aribau 40",
+     "website": "https://gingingaybar.com/",
+     "openingHours": "Mo-Th 17:00-03:00; Fr-Sa 17:00-03:30; Su 17:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11978457509",
+     "name": "Priscilla Cafè",
+     "lat": 41.38767,
+     "lon": 2.16096,
+     "address": "Carrer del Consell de Cent 273",
+     "website": "https://priscillacafe.com/",
+     "openingHours": "Mo-Th, Su 10:00-03:00; Fr-Sa 10:00-03:30",
+     "detailed": true
+    },
+    {
+     "id": "node/5380437122",
+     "name": "Dr Stravinsky",
+     "lat": 41.38418,
+     "lon": 2.18067,
+     "address": "Carrer dels Mirallers 5",
+     "website": "https://drstravinsky.cat/"
+    },
+    {
+     "id": "node/5089020421",
+     "name": "Elephanta",
+     "lat": 41.40478,
+     "lon": 2.15845,
+     "address": "Carrer del Torrent d'en Vidalet 37",
+     "website": "https://elephanta.cat/"
+    },
+    {
+     "id": "node/9084455138",
+     "name": "El Copetín",
+     "lat": 41.38483,
+     "lon": 2.18269
+    },
+    {
+     "id": "node/10624636006",
+     "name": "Sips",
+     "lat": 41.38887,
+     "lon": 2.15672
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3491476947",
+     "name": "Bar del Pla",
+     "lat": 41.3856,
+     "lon": 2.18002,
+     "address": "Carrer de Montcada 2",
+     "website": "https://www.bardelpla.cat/",
+     "openingHours": "Mo-Th 12:00-23:00; Fr-Sa 12:00-00:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/4401234193",
+     "name": "BlackLab Brewhouse & Kitchen",
+     "lat": 41.38123,
+     "lon": 2.18546,
+     "address": "Plaça de Pau Vila 1",
+     "website": "https://blacklab.es/",
+     "openingHours": "Mo,Tu 16:00-00:00; We,Th 12:30-00:00; Fr,Sa 12:30-01:00; Su 10:30-23:00",
+     "cuisine": "asian, american",
+     "detailed": true
+    },
+    {
+     "id": "node/2247768611",
+     "name": "Cassette Bar",
+     "lat": 41.37746,
+     "lon": 2.17355,
+     "address": "Carrer de l'Est 11",
+     "website": "https://myspace.com/cassettebarbarcelona",
+     "openingHours": "Fr-Sa 19:00-03:00; Mo-Th 19:00-02:30",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/2848210517",
+     "name": "Creps al Born",
+     "lat": 41.38429,
+     "lon": 2.18271,
+     "address": "Passeig del Born 12",
+     "website": "https://www.crepsalbornbcn.com/",
+     "openingHours": "Mo-Th 17:30-02:30; Fr 17:30-03:00; Sa 12:00-03:00; Su 12:00-02:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2432073329",
+     "name": "El Rabipelao",
+     "lat": 41.40371,
+     "lon": 2.15985,
+     "address": "Carrer del Torrent d'en Vidalet 22",
+     "website": "https://app.resmio.com/el-rabipelao/menu-widget?",
+     "openingHours": "Tu-Th 19:00-24:00; Fr-Sa 19:00-02:45",
+     "cuisine": "regional, arepa",
+     "detailed": true
+    },
+    {
+     "id": "node/2892028393",
+     "name": "Kino",
+     "lat": 41.3826,
+     "lon": 2.16655,
+     "address": "Carrer de Ferlandina 23",
+     "website": "https://kinobcn.com/",
+     "openingHours": "Mo-Su 11:00-02:00",
+     "cuisine": "burger, sandwich, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/4387192496",
+     "name": "La Terraza del Central",
+     "lat": 41.38513,
+     "lon": 2.17787,
+     "address": "Via Laietana 30",
+     "website": "https://www.grandhotelcentral.com/es/rooftop-barcelona/",
+     "openingHours": "Mo-Su 09:00-24:00",
+     "cuisine": "regional, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/2892037115",
+     "name": "23 Robadors",
+     "lat": 41.3796,
+     "lon": 2.17089,
+     "address": "Carrer d'en Robador 23",
+     "website": "https://23robadors.com/",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1497595784",
+     "name": "4Gats",
+     "lat": 41.38574,
+     "lon": 2.17364,
+     "address": "Carrer de Montsió 3",
+     "website": "https://www.4gats.com/",
+     "openingHours": "Tu 11:00-17:00; We-Fr 11:00-24:00; Sa 12:00-00:00; Su 12:00-17:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4449149167",
+     "name": "Bacon Bear Bar",
+     "lat": 41.38528,
+     "lon": 2.15914,
+     "address": "Carrer de Casanova 64",
+     "website": "https://baconbearbar.com/",
+     "openingHours": "Mo-We 18:30-03:00; Th 19:00-03:00; Fr-Sa 18:30-03:30; Su 18:30-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3517276245",
+     "name": "Bar Canigó",
+     "lat": 41.40297,
+     "lon": 2.15792,
+     "address": "Carrer de Verdi 2",
+     "website": "http://www.barcanigo.com/",
+     "openingHours": "Mo-Th 10:00-02:00; Fr 10:00-03:00; Sa 20:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4321334989",
+     "name": "Bar Cugat",
+     "lat": 41.39558,
+     "lon": 2.16763,
+     "address": "Carrer del Bruc 97",
+     "website": "http://barcugat.com/",
+     "openingHours": "Mo-Th 09:00-00:30; Fr 09:00-02:30; Sa 11:00-02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/2710652088",
+     "name": "Bar Falstaff",
+     "lat": 41.39986,
+     "lon": 2.16202,
+     "address": "Carrer de Venus 3",
+     "website": "http://barfalstaff.com/",
+     "openingHours": "Th 20:00-02:30; Fr-Sa 20:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1960248155",
+     "name": "Bar Morryssom",
+     "lat": 41.39949,
+     "lon": 2.1651,
+     "address": "Carrer de Girona 162",
+     "openingHours": "Mo-Fr 08:00-01:00; Sa 08:00-18:00",
+     "cuisine": "tapas, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/4776361623",
+     "name": "Bar Pietro",
+     "lat": 41.4026,
+     "lon": 2.15975,
+     "address": "Travessera de Gràcia 197",
+     "openingHours": "Mo 08:00-15:00; Tu-Sa 08:00-23:00; Su 11:00-17:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5226505321",
+     "name": "Bodega E. Marin",
+     "lat": 41.40256,
+     "lon": 2.16096,
+     "address": "Carrer de Milà i Fontanals 72",
+     "openingHours": "Mo-Fr 07:00-15:00, 17:00-22:00; Sa 08:00-15:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/5210881000",
+     "name": "Bollocks",
+     "lat": 41.38105,
+     "lon": 2.18051,
+     "address": "Carrer Ample 46",
+     "website": "https://www.bollocksbar.com/",
+     "openingHours": "Mo-Th,Su 19:00-02:30; Fr-Sa 19:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4449149162",
+     "name": "Boys Bar BCN",
+     "lat": 41.38429,
+     "lon": 2.15913,
+     "address": "Carrer de la Diputació 174",
+     "website": "https://www.boysbarbcn.com/",
+     "openingHours": "Tu-Th, Su 21:00-02:30; Fr-Sa 21:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4204740193",
+     "name": "Cal Oksana",
+     "lat": 41.38764,
+     "lon": 2.15607,
+     "address": "Carrer de Casanova 110",
+     "openingHours": "Mo-Su 19:00-12:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/5152356104",
+     "name": "Casa Figari",
+     "lat": 41.40352,
+     "lon": 2.15556,
+     "address": "Carrer del Torrent de l'Olla 141",
+     "website": "https://www.casafigari.com/",
+     "openingHours": "Mo-Su 10:00-21:00; Fr-Sa 10:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3954672458",
+     "name": "Cerveseria Jazz",
+     "lat": 41.37225,
+     "lon": 2.16316,
+     "address": "Carrer de Margarit 43",
+     "website": "http://www.cerveceriajazz.com/",
+     "openingHours": "Tu-Sa 19:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1445598561",
+     "name": "Contracorrent",
+     "lat": 41.39557,
+     "lon": 2.1819,
+     "address": "Carrer de Ribes 35",
+     "website": "https://contracorrentbar.com/",
+     "openingHours": "Mo,Th 17:30-23:00; Fr-Su 12:30-16:30,19:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2247789630",
+     "name": "Craft Barcelona",
+     "lat": 41.38316,
+     "lon": 2.17698,
+     "address": "Carrer del Paradís 4",
+     "website": "https://www.craftbarcelona.com/",
+     "openingHours": "Mo off; Tu-We 18:00-01:00; Th 18:00-02:00; Fr 18:00-03:00; Sa 12:30-03:00; Su 17:30-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4449149170",
+     "name": "Dmen's",
+     "lat": 41.38686,
+     "lon": 2.15991,
+     "address": "Carrer del Consell de Cent 257",
+     "website": "https://www.grupoarena.com/",
+     "openingHours": "Fr-Sa 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2910251572",
+     "name": "Dry Martini",
+     "lat": 41.39274,
+     "lon": 2.154,
+     "address": "Carrer d'Aribau 162",
+     "website": "https://www.drymartiniorg.com/locales/dry-martini-v2/",
+     "openingHours": "Mo-Th 13:00-02:30; Fr-Sa 13:00-03:00; Su 16:30-01:30",
+     "detailed": true
+    },
+    {
+     "id": "node/3815929008",
+     "name": "El Vaso de Oro",
+     "lat": 41.38186,
+     "lon": 2.18725,
+     "address": "Carrer de Balboa 6",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/5207046926",
+     "name": "Estudiantil",
+     "lat": 41.38631,
+     "lon": 2.16464,
+     "website": "https://barestudiantil.net/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4726613692",
+     "name": "Foxy Bar",
+     "lat": 41.38033,
+     "lon": 2.16434,
+     "address": "Carrer de la Riera Alta 59",
+     "website": "https://wearefoxy.wordpress.com/",
+     "openingHours": "Su-Th 16:00-02:00; Fr-Sa 17:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3987217352",
+     "name": "Ginger",
+     "lat": 41.38276,
+     "lon": 2.17853,
+     "address": "Carrer de la Palma de Sant Just 1",
+     "website": "http://ginger.cat/GINGER_BARCELONA/welcome_to_Ginger_Barcelona.html",
+     "openingHours": "Tu-Sa 19:30-02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/5082607261",
+     "name": "Ina",
+     "lat": 41.38729,
+     "lon": 2.18043,
+     "address": "Carrer dels Carders 43",
+     "openingHours": "Mo, We-Fr 09:30-16:00, 19:00-01:30; Sa 09:30-01:30; Su 09:30-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3158729112",
+     "name": "Almo2bar",
+     "lat": 41.40561,
+     "lon": 2.16211,
+     "address": "Carrer de Bruniquer 59,61",
+     "website": "https://grupalmodobar.com/almo2bar/",
+     "openingHours": "23:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2247754303",
+     "name": "Antilla Latin Club",
+     "lat": 41.38457,
+     "lon": 2.1546,
+     "address": "Carrer d'Aragó 141",
+     "website": "https://www.antillasalsa.com/",
+     "openingHours": "We 22:00-05:00; Th 23:00-05:00; Fr,Sa 23:00-06:00; Su 19:00-sunrise, PH -1 day 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10649981205",
+     "name": "Arena Xperience",
+     "lat": 41.38957,
+     "lon": 2.17394,
+     "address": "Ronda de Sant Pere 19-21",
+     "website": "https://grupoarena.com/",
+     "openingHours": "Su-Th 23:59-05:00; Fr-Sa 23:59-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13069782182",
+     "name": "Believe Club",
+     "lat": 41.38944,
+     "lon": 2.16261,
+     "address": "Carrer de Balmes 56",
+     "website": "https://thebelieve.club/",
+     "openingHours": "Mo-Th 23:00-05:00; Fr-Sa 23:00-06:00; Su 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4958849921",
+     "name": "Berlin Dark",
+     "lat": 41.37432,
+     "lon": 2.15618,
+     "address": "Passatge de Prunera 18",
+     "website": "https://www.berlindark.com/",
+     "openingHours": "Tu-Th 22:00-03:00; Fr, Sa 22:00-03:30; Su 20:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8685951182",
+     "name": "Costa Breve",
+     "lat": 41.3953,
+     "lon": 2.15038,
+     "address": "Carrer d'Aribau 230",
+     "website": "https://grupocostabreve.com/",
+     "openingHours": "Th 00:00-05:00; Fr,Sa 00:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14065925801",
+     "name": "Maricon Ghetto LGBT+ bar",
+     "lat": 41.38841,
+     "lon": 2.15913,
+     "address": "Carrer d'Aribau 55",
+     "website": "https://mariconbar.com/",
+     "openingHours": "We-Su 18:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4958833624",
+     "name": "Night Barcelona",
+     "lat": 41.3843,
+     "lon": 2.15871,
+     "address": "Carrer de la Diputació 161",
+     "website": "https://www.nightbarcelona.net/",
+     "openingHours": "Mo-Th 18:00-02:30; Fr-Sa 18:00-03:00; Su 18:00-02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/12077033449",
+     "name": "Nitsa Club",
+     "lat": 41.37436,
+     "lon": 2.16952,
+     "website": "https://www.nitsa.com/",
+     "openingHours": "Fr 23:59-23:59; Sa 00:00-06:00, 23:59-23:59, Su 00:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4958833022",
+     "name": "Open Mind",
+     "lat": 41.38494,
+     "lon": 2.1557,
+     "website": "https://www.openmindbcn.com/",
+     "openingHours": "Mo 00:00-05:00, Th 23:00-00:00, Fr-Sa 00:00-04:00, 23:00-00:00, Su 00:00-07:00, 20:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "way/426162558",
+     "name": "Razzmatazz",
+     "lat": 41.39759,
+     "lon": 2.19125,
+     "address": "Carrer dels Almogàvers 122",
+     "website": "https://www.salarazzmatazz.com/",
+     "openingHours": "\"Depending on the concert\"",
+     "detailed": true
+    },
+    {
+     "id": "node/3961122030",
+     "name": "Safari Disco Club",
+     "lat": 41.37834,
+     "lon": 2.14487,
+     "address": "Carrer de Tarragona 141-157",
+     "website": "http://www.safaridiscoclub.com/",
+     "openingHours": "Fr 23:59-06:00; Sa 18:00-23:45, 23:59-06:00; Su 18:00-23:45",
+     "detailed": true
+    },
+    {
+     "id": "node/6038913886",
+     "name": "Almodobar",
+     "lat": 41.40368,
+     "lon": 2.16753,
+     "address": "Carrer d'en Grassot 36",
+     "website": "https://grupalmodobar.com/almodobar/"
+    },
+    {
+     "id": "node/8658397927",
+     "name": "Barroko's",
+     "lat": 41.39576,
+     "lon": 2.14977,
+     "address": "Carrer d'Aribau 242",
+     "website": "https://www.discotecabarrokos.com/"
+    },
+    {
+     "id": "node/2498389550",
+     "name": "Black Box",
+     "lat": 41.38844,
+     "lon": 2.16398,
+     "address": "Carrer de la Diputació 233",
+     "openingHours": "Fr-Sa 23:59-06:00"
+    },
+    {
+     "id": "node/1886635516",
+     "name": "Chica Club",
+     "lat": 41.3931,
+     "lon": 2.15689,
+     "address": "Carrer del Rosselló 217",
+     "website": "https://www.chicabcn.cat/"
+    },
+    {
+     "id": "node/2247748060",
+     "name": "Club Astoria",
+     "lat": 41.39384,
+     "lon": 2.15324,
+     "address": "Carrer de París 193",
+     "website": "https://www.clubastoriabcn.com/"
+    },
+    {
+     "id": "node/13859960401",
+     "name": "Fluid",
+     "lat": 41.37375,
+     "lon": 2.16621,
+     "address": "Carrer de Salvà 21",
+     "openingHours": "Fr-Sa 20:00-03:00; Su 17:00-22:30; We-Th 20:00-01:00"
+    },
+    {
+     "id": "node/2457874856",
+     "name": "Harlem Jazz Club",
+     "lat": 41.38112,
+     "lon": 2.17843,
+     "address": "Carrer de la Comtessa de Sobradiel 8",
+     "website": "https://www.harlemjazzclub.es/"
+    },
+    {
+     "id": "node/11690535934",
+     "name": "La Fira Casanova",
+     "lat": 41.39189,
+     "lon": 2.15005,
+     "address": "Carrer de Casanova 171",
+     "website": "https://lafiragroup.com/"
+    },
+    {
+     "id": "node/12246183831",
+     "name": "La Paloma",
+     "lat": 41.38237,
+     "lon": 2.16422,
+     "address": "Carrer del Tigre 27",
+     "website": "https://lapaloma.com/"
+    },
+    {
+     "id": "node/5663251369",
+     "name": "La Terrrazza",
+     "lat": 41.36893,
+     "lon": 2.14924,
+     "address": "Avinguda de Francesc Ferrer i Guàrdia",
+     "website": "https://laterrrazza.com/"
+    },
+    {
+     "id": "node/13627121901",
+     "name": "Les Enfants Brillants",
+     "lat": 41.37805,
+     "lon": 2.17368,
+     "address": "Carrer de Guàrdia 3",
+     "website": "https://www.lesenfantsclub.com/"
+    },
+    {
+     "id": "node/2879811887",
+     "name": "Macarena Club",
+     "lat": 41.3794,
+     "lon": 2.17686,
+     "address": "Carrer Nou de Sant Francesc 5",
+     "website": "https://www.macarenaclub.com/"
+    },
+    {
+     "id": "node/7042784186",
+     "name": "Matinée Barcelona Events",
+     "lat": 41.36885,
+     "lon": 2.14686,
+     "address": "Av. Francesc Ferrer i Guàrdia 13",
+     "website": "https://matineegroup.com/"
+    },
+    {
+     "id": "node/3892711667",
+     "name": "Museum",
+     "lat": 41.38317,
+     "lon": 2.16274,
+     "address": "Carrer de Sepúlveda 178",
+     "openingHours": "Fr-Sa 23:00-03:00"
+    },
+    {
+     "id": "node/5554720357",
+     "name": "Razzmatazz sales 2 & 3",
+     "lat": 41.39728,
+     "lon": 2.19108,
+     "openingHours": "\"Depending on the concert\""
+    },
+    {
+     "id": "node/3072968504",
+     "name": "Sala Apolo",
+     "lat": 41.37439,
+     "lon": 2.16956,
+     "website": "https://www.sala-apolo.com/"
+    },
+    {
+     "id": "node/2522915521",
+     "name": "Sala de Fiestas Tango",
+     "lat": 41.38085,
+     "lon": 2.15458,
+     "address": "Carrer de la Diputació 94",
+     "website": "https://saladefiestastango.com/"
+    },
+    {
+     "id": "way/684764234",
+     "name": "Sala Vol",
+     "lat": 41.39939,
+     "lon": 2.19126,
+     "address": "Carrer de Sancho de Ávila 78",
+     "website": "https://salavol.com/"
+    }
+   ]
+  }
+ }
+}

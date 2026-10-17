@@ -1,0 +1,1591 @@
+{
+ "version": 1,
+ "cityCode": "BRU",
+ "fetchedAt": "2026-10-16T23:22:25.913Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg/1280px-Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg",
+  "width": 1280,
+  "height": 768,
+  "author": "Ank Kumar",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Brussels_view_from_Mont_des_Arts,_Brussels,_Belgium_(cropped).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/240866019",
+     "name": "Manneken Pis",
+     "lat": 50.84499,
+     "lon": 4.34999,
+     "wikipediaCount": 63
+    },
+    {
+     "id": "way/13431536",
+     "name": "Cathédrale Saints-Michel-et-Gudule - Sint-Michiels-en-Goedelekathedraal",
+     "lat": 50.84784,
+     "lon": 4.36005,
+     "website": "https://www.cathedralisbruxellensis.be/",
+     "openingHours": "Mo-Fr 07:30-18:00; Sa 07:30-15:30; Su 14:00-18:00",
+     "wikipediaCount": 35
+    },
+    {
+     "id": "relation/3299902",
+     "name": "Palais Royal - Koninklijk Paleis",
+     "lat": 50.84193,
+     "lon": 4.36245,
+     "website": "https://www.monarchie.be/en/heritage/royal-palace-of-brussels",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "way/1126164595",
+     "name": "Hôtel de Ville de Bruxelles - Stadhuis van Brussel",
+     "lat": 50.8465,
+     "lon": 4.35177,
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/169173072",
+     "name": "Palais de justice - Justitiepaleis",
+     "lat": 50.83667,
+     "lon": 4.35162,
+     "openingHours": "Mo-Fr 08:00-17:00",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "way/22407928",
+     "name": "Église Notre-Dame des Victoires au Sablon - Onze-Lieve-Vrouw-ter-Zavelkerk",
+     "lat": 50.84033,
+     "lon": 4.35624,
+     "openingHours": "Mo-Fr 09:00-18:30; Sa,Su 10:00-19:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "node/475214141",
+     "name": "Colonne du Congrès - Congreskolom",
+     "lat": 50.85011,
+     "lon": 4.36345,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/13494623",
+     "name": "Bourse - Beurs",
+     "lat": 50.84795,
+     "lon": 4.35043,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "relation/3502984",
+     "name": "Palais d'Egmont - Egmontpaleis",
+     "lat": 50.83879,
+     "lon": 4.35748,
+     "website": "https://ccegmont.be/",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/243559501",
+     "name": "Église Saint-Jean-Baptiste-au-Béguinage - Sint-Jan Baptist ten Begijnhofkerk",
+     "lat": 50.85273,
+     "lon": 4.35046,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/28302044",
+     "name": "Église Sainte-Catherine - Sint-Katelijnekerk",
+     "lat": 50.85081,
+     "lon": 4.34861,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/225779391",
+     "name": "Palais des Académies - Academiënpaleis",
+     "lat": 50.84215,
+     "lon": 4.36556,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/399754753",
+     "name": "Monument à l'Infanterie Belge - Monument voor de Belgische Infanterie",
+     "lat": 50.83789,
+     "lon": 4.35227,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/1019259724",
+     "name": "Palais de Charles de Lorraine - Paleis van Karel van Lotharingen",
+     "lat": 50.84299,
+     "lon": 4.35706,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "relation/3502982",
+     "name": "Palais du Comte de Flandre - Paleis van de Graaf van Vlaanderen",
+     "lat": 50.84128,
+     "lon": 4.35881,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/244850905",
+     "name": "Tour Noire - Zwarte Toren",
+     "lat": 50.8508,
+     "lon": 4.34982,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/129463929",
+     "name": "Ascenseurs Poelaert - Poelaertliften",
+     "lat": 50.838,
+     "lon": 4.35106,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/33739415",
+     "name": "Pro Patria",
+     "lat": 50.85171,
+     "lon": 4.35634,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/1078069094",
+     "name": "La Bellone",
+     "lat": 50.85126,
+     "lon": 4.34612,
+     "website": "https://www.bellone.be/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/306856681",
+     "name": "Galerie de la Reine - Koninginnegalerij",
+     "lat": 50.8473,
+     "lon": 4.35462,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/306856680",
+     "name": "Galerie du Roi - Koningsgalerij",
+     "lat": 50.84819,
+     "lon": 4.35536,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/244064794",
+     "name": "Palais de l'Industrie Nationale - Paleis voor de Nationale Nijverheid",
+     "lat": 50.8424,
+     "lon": 4.35692,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/138696691",
+     "name": "Palais du marquis d'Assche - Paleis van de Markies van Assche",
+     "lat": 50.84323,
+     "lon": 4.37237,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/119630814",
+     "name": "Frédéric de Mérode",
+     "lat": 50.85146,
+     "lon": 4.3561,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/257712474",
+     "name": "Hôtel de Roest d'Alkemade",
+     "lat": 50.84527,
+     "lon": 4.34936,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/119630808",
+     "name": "Jenneval",
+     "lat": 50.85196,
+     "lon": 4.35658,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/227681451",
+     "name": "Maison des Arts",
+     "lat": 50.85964,
+     "lon": 4.37003,
+     "website": "http://lamaisondesarts.be/"
+    },
+    {
+     "id": "node/9519554582",
+     "name": "#BXL♥",
+     "lat": 50.85133,
+     "lon": 4.35087
+    },
+    {
+     "id": "node/1012474434",
+     "name": "De Smet de Naeyer",
+     "lat": 50.83505,
+     "lon": 4.35227
+    },
+    {
+     "id": "way/975427152",
+     "name": "Hôtel Belle-Vue",
+     "lat": 50.84262,
+     "lon": 4.36039
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/87493075",
+     "name": "Centre Belge de la Bande Dessinée - Belgisch Stripcentrum",
+     "lat": 50.85123,
+     "lon": 4.36013,
+     "website": "https://www.comicscenter.net/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/31500439",
+     "name": "Musée des instruments de musique - Muziekinstrumentenmuseum",
+     "lat": 50.84284,
+     "lon": 4.35909,
+     "website": "https://www.mim.be/",
+     "openingHours": "Tu-Fr 09:30-17:00; PH,Sa,Su 10:00-17:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "node/9026522736",
+     "name": "Musée Magritte Museum",
+     "lat": 50.84242,
+     "lon": 4.3588,
+     "website": "https://www.musee-magritte-museum.be/",
+     "openingHours": "Tu-Fr 10:00-17:00; Sa,Su 11:00-18:00",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/9385524853",
+     "name": "Musée de la Porte de Hal - Hallepoort Museum",
+     "lat": 50.8331,
+     "lon": 4.34492,
+     "website": "https://www.hallegatemuseum.be/",
+     "openingHours": "Mo-Fr 09:30-17:00; Sa,Su 10:00-17:00; PH off",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/9704161376",
+     "name": "Musée de la ville de Bruxelles - Museum van de Stad Brussel",
+     "lat": 50.84698,
+     "lon": 4.35278,
+     "website": "https://www.brusselscitymuseum.brussels/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/2514258897",
+     "name": "Musée BELvue - BELvue Museum",
+     "lat": 50.84261,
+     "lon": 4.36069,
+     "website": "https://belvue.be/",
+     "openingHours": "Mo off; Tu-Fr 09:00-17:00; Sa-Su 10:00-18:00; Jul-Aug Tu-Fr 10:00-18:00; Jan 01 off; Dec 24 09:00-16:00; Dec 25 off; Dec 31 09:00-16:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/2583649779",
+     "name": "Musée Charlier - Charliermuseum",
+     "lat": 50.84756,
+     "lon": 4.36993,
+     "website": "http://www.charliermuseum.be/",
+     "openingHours": "Mo-Th 12:00-17:00; Fr 10:00-13:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/1078916006",
+     "name": "Choco Story Brussels",
+     "lat": 50.84551,
+     "lon": 4.34997,
+     "website": "https://choco-story-brussels.be/",
+     "openingHours": "Mo-Su,PH 10:00-16:30",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/1755861324",
+     "name": "Parlamentarium",
+     "lat": 50.84009,
+     "lon": 4.37433,
+     "website": "https://visiting.europarl.europa.eu/en/visitor-offer/brussels/parlamentarium",
+     "openingHours": "Mo 13:00-18:00; Tu-Fr 09:00-18:00; Sa,Su 10:00-18:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/9026522738",
+     "name": "Coudenberg",
+     "lat": 50.84289,
+     "lon": 4.35976,
+     "website": "https://www.coudenberg.com/",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/3860518453",
+     "name": "CINEMATEK",
+     "lat": 50.8441,
+     "lon": 4.36014,
+     "website": "https://cinematek.be/",
+     "openingHours": "Mo,Tu,We,Fr 17:30-21:30+; Th,Su 14:30-21:30+; Sa 16:30-21:30+; PH Mo,Tu,We,Fr 17:30-21:30+; PH Th,Su 14:30-21:30+; PH Sa 16:30-21:30+",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/3506769937",
+     "name": "Musée de la Banque nationale de Belgique - Museum van de Nationale Bank van België",
+     "lat": 50.8498,
+     "lon": 4.3572,
+     "website": "https://www.nbbmuseum.be/",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/236193520",
+     "name": "Musée Wiertz Museum",
+     "lat": 50.83718,
+     "lon": 4.37571,
+     "website": "https://www.fine-arts-museum.be/en/museums/musee-wiertz-museum",
+     "openingHours": "off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/9315005837",
+     "name": "Bruxella 1238",
+     "lat": 50.84826,
+     "lon": 4.35045,
+     "website": "https://www.brusselsmuseums.be/en/museums/bruxella-1238",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/1054279810",
+     "name": "La Fonderie",
+     "lat": 50.85261,
+     "lon": 4.33538,
+     "website": "https://www.lafonderie.be/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/1035986134",
+     "name": "MigratieMuseumMigration",
+     "lat": 50.85749,
+     "lon": 4.34376,
+     "website": "https://mmm.brussels/",
+     "openingHours": "Tu-Th 10:00-17:00; Fr 10:00-19:00; Sa,Su 12:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/3859789657",
+     "name": "Musée Fin de siècle - Fin de siècle Museum",
+     "lat": 50.84175,
+     "lon": 4.35799,
+     "website": "https://www.fine-arts-museum.be/en/museums/musee-fin-de-siecle-museum",
+     "openingHours": "off \"Closed for renovation\"",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/1009171340",
+     "name": "Musée Mode & Dentelle - Mode & Kant Museum",
+     "lat": 50.84583,
+     "lon": 4.35189,
+     "website": "https://www.fashionandlacemuseum.brussels/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/12448693822",
+     "name": "Musée national de la Résistance - Nationaal Museum van de Weerstand",
+     "lat": 50.83933,
+     "lon": 4.32792,
+     "website": "http://www.museumresistance.be/",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/3859789659",
+     "name": "Musée Oldmasters - Oldmasters Museum",
+     "lat": 50.84159,
+     "lon": 4.35776,
+     "website": "https://www.fine-arts-museum.be/en/museums/musee-oldmasters-museum",
+     "openingHours": "Tu-Fr 10:00-17:00; Sa,Su 11:00-18:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/3862188901",
+     "name": "Maison Marc Sleen - Huis Marc Sleen",
+     "lat": 50.85085,
+     "lon": 4.36001,
+     "website": "https://www.marcsleen.be/",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/2514192428",
+     "name": "Archives et Musée de la Littérature - Archief en Museum van de Franstalige Literatuur",
+     "lat": 50.84366,
+     "lon": 4.35534,
+     "website": "http://www.aml-cfwb.be/",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/3860512418",
+     "name": "Art & marges musée - Art & marges museum",
+     "lat": 50.83477,
+     "lon": 4.34643,
+     "website": "https://www.artetmarges.be/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/3859757967",
+     "name": "Brussels Comics Figurines Museum",
+     "lat": 50.84602,
+     "lon": 4.35604,
+     "website": "https://www.brussels-comics-figurines-museum.be/",
+     "openingHours": "Th-Mo 10:30-18:00; Jul-Aug Mo-Su 10:30-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/2509496179",
+     "name": "Musée Belge de la Franc-Maçonnerie - Belgisch Museum van de Vrijmetselarij",
+     "lat": 50.85299,
+     "lon": 4.35154,
+     "website": "http://mbfm.be/",
+     "openingHours": "Tu-Sa 13:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/6222623824",
+     "name": "Musée de l'érotisme et de la mythologie - Museum van erotiek en mythologië",
+     "lat": 50.84126,
+     "lon": 4.35559,
+     "website": "https://www.m-e-m.be/",
+     "openingHours": "Mo,Th,Fr 14:00-19:00; Sa,Su 11:00-17:30",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/3862380057",
+     "name": "Musée des Égouts - Riolenmuseum",
+     "lat": 50.84462,
+     "lon": 4.33884,
+     "website": "https://www.sewermuseum.brussels/",
+     "openingHours": "Tu-Su 10:00-17:00; Jan 01,May 01,Nov 01,Nov 11,Dec 25 off; Dec 24 10:00-16:00; Dec 31 10:00-16:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/2506176872",
+     "name": "Archief en Museum voor het Vlaams Leven te Brussel",
+     "lat": 50.85524,
+     "lon": 4.34901,
+     "website": "https://www.amvb.be/",
+     "openingHours": "Mo-Fr 09:00-16:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/11174383235",
+     "name": "Belgian Beer World",
+     "lat": 50.848,
+     "lon": 4.35067,
+     "website": "https://www.belgianbeerworld.be/",
+     "openingHours": "Mo-Su 09:30-18:00; Jan 1 off",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/8391808859",
+     "name": "KBR museum",
+     "lat": 50.84353,
+     "lon": 4.35639,
+     "website": "https://www.kbr.be/museum/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 2
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/8790431227",
+     "name": "La Dalle",
+     "lat": 50.84043,
+     "lon": 4.34809
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4413734368",
+     "name": "'T Kelderke",
+     "lat": 50.84626,
+     "lon": 4.35297,
+     "website": "https://www.restaurant-het-kelderke.be/",
+     "openingHours": "Su-Th 12:00-23:00; Fr,Sa 12:00-00:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4461505043",
+     "name": "A l'Angolo",
+     "lat": 50.84937,
+     "lon": 4.3498,
+     "website": "https://alangolo.be/",
+     "openingHours": "12:00-23:00; Fr,Sa 12:00-00:00",
+     "cuisine": "italian, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/3632161905",
+     "name": "Al Barmaki",
+     "lat": 50.84513,
+     "lon": 4.35313,
+     "website": "https://www.albarmaki.be/",
+     "openingHours": "Mo-Sa 19:00-24:00",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/3863699466",
+     "name": "Al Solito Posto",
+     "lat": 50.849,
+     "lon": 4.36553,
+     "website": "https://alsolitoposto.be/",
+     "openingHours": "Mo-Fr 12:00-14:30,18:00-22:30; Sa 18:00-22:30; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3384141535",
+     "name": "Amadeus",
+     "lat": 50.84989,
+     "lon": 4.34793,
+     "website": "https://amadeus-resto.be/amadeus-brussel/",
+     "openingHours": "Mo-Th 18:30-23:00; Fr,Sa 18:00-24:00; Su 18:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/826830627",
+     "name": "Arion Café",
+     "lat": 50.83332,
+     "lon": 4.35647,
+     "website": "https://www.arionbrussels.be/",
+     "openingHours": "Su-Fr 12:00-22:30; Sa 12:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4560141946",
+     "name": "Au Bon Bol",
+     "lat": 50.84922,
+     "lon": 4.34917,
+     "website": "https://bonbol.be/en",
+     "openingHours": "Mo-Fr 18:00-23:00; Sa-Su 12:00-23:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/2478526101",
+     "name": "Aux Armes de Bruxelles",
+     "lat": 50.84809,
+     "lon": 4.3539,
+     "website": "https://auxarmesdebruxelles.com/",
+     "openingHours": "Mo-Fr 12:00-22:45; Sa 12:00-23:15; Su 12:00-22:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/993030379",
+     "name": "Bab Dar",
+     "lat": 50.8306,
+     "lon": 4.35604,
+     "website": "http://www.babdar.be/",
+     "openingHours": "Mo-Fr 12:00-14:30,19:00-22:30; Sa 19:00-22:30",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/4413952478",
+     "name": "Baladi",
+     "lat": 50.84577,
+     "lon": 4.35259,
+     "website": "https://culsec-bistro.business.site/",
+     "openingHours": "We-Fr 12:00-15:00,18:00-22:00; Sa 12:00-22:30; Su 12:00-22:00",
+     "cuisine": "lebanese, syrian",
+     "detailed": true
+    },
+    {
+     "id": "node/2476764620",
+     "name": "Banh Mi Express",
+     "lat": 50.84868,
+     "lon": 4.36962,
+     "website": "https://www.banhmiexpress.be/",
+     "openingHours": "Mo-Fr 11:00-16:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/4418285613",
+     "name": "Baogo",
+     "lat": 50.8488,
+     "lon": 4.35296,
+     "website": "https://www.baogo.be/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/2339843343",
+     "name": "Basils",
+     "lat": 50.84946,
+     "lon": 4.3659,
+     "website": "https://basils.org/",
+     "openingHours": "Mo-Sa 12:00-14:00,18:00-22:45",
+     "cuisine": "italian, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/3863696750",
+     "name": "Basils Liberté",
+     "lat": 50.84967,
+     "lon": 4.36603,
+     "website": "https://www.basilsliberte.com/",
+     "openingHours": "Sa 18:30-22:00; Mo-Fr 12:00-14:00,18:30-22:00; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3863737378",
+     "name": "Beat",
+     "lat": 50.848,
+     "lon": 4.36379,
+     "website": "https://beatrestaurants.be/",
+     "openingHours": "11:00-01:00",
+     "cuisine": "belgian",
+     "detailed": true
+    },
+    {
+     "id": "node/3505027549",
+     "name": "Bia Mara",
+     "lat": 50.84866,
+     "lon": 4.35078,
+     "website": "https://www.biamara.com/",
+     "openingHours": "Mo-Th 12:00-14:00,18:00-21:30; Fr 12:00-14:00,18:00-22:00; Sa 12:00-22:00; Su 12:00-15:00,18:00-21:00",
+     "cuisine": "fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/2420204401",
+     "name": "Bij den Boer",
+     "lat": 50.85253,
+     "lon": 4.34716,
+     "website": "https://www.bijdenboer.com/",
+     "openingHours": "Mo-Sa 12:00-14:30,18:00-22:30; Su off",
+     "cuisine": "fish",
+     "detailed": true
+    },
+    {
+     "id": "node/1151269436",
+     "name": "Bombay Inn",
+     "lat": 50.84866,
+     "lon": 4.35341,
+     "website": "https://www.bombayinn.be/",
+     "openingHours": "Mo-Sa,PH 12:00-14:30,18:00-23:30; Su 17:00-22:30",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/4413365657",
+     "name": "Brasserie de la Presse",
+     "lat": 50.84815,
+     "lon": 4.36284,
+     "website": "https://www.restauration-nouvelle.be/etablissement/brasserie-de-la-presse/",
+     "openingHours": "Mo-Fr 12:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4737479821",
+     "name": "Brasserie Horta",
+     "lat": 50.85099,
+     "lon": 4.36015,
+     "website": "https://brasseriehorta.be/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "cuisine": "belgian",
+     "detailed": true
+    },
+    {
+     "id": "node/3863812078",
+     "name": "Brassonomie Gus",
+     "lat": 50.85054,
+     "lon": 4.36805,
+     "website": "https://www.gus-brussels.be/",
+     "openingHours": "Mo off; Tu,Th,Fr 12:00-13:30; We 12:00-13:30,19:00-21:30; Sa, Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2345001387",
+     "name": "Café Caberdouche",
+     "lat": 50.8499,
+     "lon": 4.36668,
+     "website": "https://www.caberdouche.com/",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/4642580479",
+     "name": "Casa do Brasil",
+     "lat": 50.84833,
+     "lon": 4.36438,
+     "website": "https://casadobrasil.be/",
+     "openingHours": "Tu-Fr 12:00-14:15,18:00-22:00; Sa-Su 12:00-15:30,18:00-22:00",
+     "cuisine": "brazilian",
+     "detailed": true
+    },
+    {
+     "id": "node/3775682901",
+     "name": "Caspian",
+     "lat": 50.84526,
+     "lon": 4.35246,
+     "website": "https://restaurant-caspian.be/",
+     "openingHours": "Tu-Sa 12:00-14:30, 18:00-22:30; Su 18:00-22:30",
+     "cuisine": "persian",
+     "detailed": true
+    },
+    {
+     "id": "node/3873671159",
+     "name": "Chandigarh",
+     "lat": 50.84885,
+     "lon": 4.36531,
+     "website": "https://www.chandigarh.be/",
+     "openingHours": "Mo,Tu off; We-Fr 18:30-22:30; Sa 11:00-14:30,18:30-22:30; Su 11:00-15:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/4318137517",
+     "name": "Chez Kimchi",
+     "lat": 50.84815,
+     "lon": 4.35252,
+     "website": "https://www.chez-kimchi.be/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "korean",
+     "detailed": true
+    },
+    {
+     "id": "node/4960616121",
+     "name": "Chicago Café",
+     "lat": 50.85159,
+     "lon": 4.34656,
+     "website": "https://chicagocafe.be/chicago-cafe-home",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2698048065",
+     "name": "Chou Sando",
+     "lat": 50.84697,
+     "lon": 4.34869,
+     "website": "https://www.chou-sando.be/",
+     "openingHours": "Tu-Fr 11:30-14:30,18:00-21:30; Sa 11:30-21:30; Mo 11:30-14:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/4485233393",
+     "name": "Comptoir Royal",
+     "lat": 50.85113,
+     "lon": 4.36445,
+     "website": "http://www.comptoirroyalbrasserie.com/",
+     "openingHours": "Mo-Th 08:00-22:30; Fr 08:00-06:00; Sa 12:00-06:00; Su 12:00-22:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2473323774",
+     "name": "De Ultieme Hallucinatie",
+     "lat": 50.85749,
+     "lon": 4.36768,
+     "website": "https://www.deultiemehallucinatie.be/",
+     "openingHours": "We-Fr 11:30-14:00,18:00-22:00; Sa 12:00-23:00; Su-Tu off",
+     "cuisine": "regional",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3118694138",
+     "name": "Bigg Cake",
+     "lat": 50.84887,
+     "lon": 4.35438,
+     "website": "https://biggcake.com/",
+     "openingHours": "Mo-Su 08:30-18:30",
+     "cuisine": "bagel, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2522239653",
+     "name": "BoOm Café Associatif",
+     "lat": 50.84804,
+     "lon": 4.34635,
+     "website": "https://boomcafe.be/",
+     "openingHours": "We-Su 15:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4413802968",
+     "name": "Bubbletearoom.be",
+     "lat": 50.84677,
+     "lon": 4.35372,
+     "website": "https://www.bubbletearoom.be/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/7976058340",
+     "name": "Buddy Buddy",
+     "lat": 50.83615,
+     "lon": 4.35862,
+     "website": "https://buddybuddy.co/pages/brussels",
+     "openingHours": "Mo-Fr 08:30-19:00; Sa-Su 09:00-19:00",
+     "cuisine": "coffee shop, organic",
+     "detailed": true
+    },
+    {
+     "id": "node/1037462990",
+     "name": "Café Capitale",
+     "lat": 50.8465,
+     "lon": 4.34984,
+     "website": "https://www.blackpotioncoffee.com/",
+     "openingHours": "Mo-Fr 08:00-19:00, Sa-Su 08:30-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4864726693",
+     "name": "Café Circus",
+     "lat": 50.8378,
+     "lon": 4.36842,
+     "website": "https://www.cafecircus.be/",
+     "openingHours": "Mo-Sa 12:00-01:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/2522239659",
+     "name": "Café Tiera",
+     "lat": 50.84805,
+     "lon": 4.34586,
+     "website": "https://cafetiera.be/",
+     "openingHours": "Mo-Su 09:00-19:00",
+     "cuisine": "bagel, coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/7231290685",
+     "name": "Cécile",
+     "lat": 50.85222,
+     "lon": 4.34737,
+     "website": "https://cecilebrussels.be/",
+     "openingHours": "Sa 10:00-15:00; Su 10:00-15:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11811587921",
+     "name": "Chez Albert",
+     "lat": 50.83645,
+     "lon": 4.33599,
+     "website": "https://www.chezalbert.be/",
+     "openingHours": "07:00-20:00",
+     "cuisine": "waffle",
+     "detailed": true
+    },
+    {
+     "id": "node/13287403733",
+     "name": "Chinese Tea with Wenwei",
+     "lat": 50.85399,
+     "lon": 4.37052,
+     "website": "https://chineseteawithwenwei.substack.com/",
+     "openingHours": "Fr-Su 10:00-21:00",
+     "cuisine": "tea",
+     "detailed": true
+    },
+    {
+     "id": "node/5787074314",
+     "name": "Crème Brussels",
+     "lat": 50.8419,
+     "lon": 4.35326,
+     "website": "https://cremebrussels.be/",
+     "openingHours": "Mo-Fr 09:00-18:00; Sa 09:30-18:00; Su 09:30-18:00",
+     "cuisine": "coffee shop, sandwich, salad, pancake",
+     "detailed": true
+    },
+    {
+     "id": "node/4418284331",
+     "name": "Cup Cats",
+     "lat": 50.84842,
+     "lon": 4.3545,
+     "website": "https://www.cupcats.be/",
+     "openingHours": "Mo-Th 10:00-17:30; Fr,Su 10:00-19:00; Sa 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11598862631",
+     "name": "Forcado",
+     "lat": 50.85197,
+     "lon": 4.34367,
+     "website": "https://www.forcado.be/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/5464255321",
+     "name": "Gazetta",
+     "lat": 50.83152,
+     "lon": 4.36048,
+     "website": "http://www.gazetta.be/",
+     "openingHours": "Mo-Sa 09:00-23:00; Su 11:00-17:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/7976089830",
+     "name": "Izy Coffee",
+     "lat": 50.84878,
+     "lon": 4.34877,
+     "website": "https://www.izycoffee.be/",
+     "openingHours": "07:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5115207019",
+     "name": "Joe & The Juice",
+     "lat": 50.83954,
+     "lon": 4.361,
+     "website": "https://www.joejuice.com/",
+     "openingHours": "Mo-Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10101802298",
+     "name": "Kafei Dansaert",
+     "lat": 50.84975,
+     "lon": 4.34704,
+     "website": "https://kafeidansaert.eatbu.com/",
+     "openingHours": "Mo off; Tu-Fr 08:30-16:00; Sa,Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4119669190",
+     "name": "kaffabar",
+     "lat": 50.84316,
+     "lon": 4.34538,
+     "website": "https://kaffabar.be/",
+     "openingHours": "Tu-Fr 08:00-18:00; Sa 09:00-18:00; Su-Mo off",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3496856999",
+     "name": "Karsmakers",
+     "lat": 50.83834,
+     "lon": 4.3727,
+     "website": "http://www.karsmakers.be/",
+     "openingHours": "Mo-Fr 07:00-18:00",
+     "cuisine": "bagel",
+     "detailed": true
+    },
+    {
+     "id": "node/8826970586",
+     "name": "KET Café",
+     "lat": 50.86314,
+     "lon": 4.36004,
+     "website": "https://www.ketcafe.be/",
+     "openingHours": "Mo-Fr 08:00-16:00",
+     "cuisine": "coffee shop, sandwich, pastry",
+     "detailed": true
+    },
+    {
+     "id": "node/8723123142",
+     "name": "L'Estaminet 1030",
+     "lat": 50.85978,
+     "lon": 4.37014,
+     "website": "https://www.estaminet1030.be/",
+     "openingHours": "Tu-Fr 10:00-22:00; Sa 12:00-19:00; Su 12:00-18:00",
+     "cuisine": "cake, coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4413933717",
+     "name": "Latté Pilates & Coffee",
+     "lat": 50.8471,
+     "lon": 4.35077,
+     "website": "https://www.latte.brussels/",
+     "openingHours": "Mo-Fr 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3118681459",
+     "name": "Le Pain Quotidien",
+     "lat": 50.84718,
+     "lon": 4.35463,
+     "website": "https://www.lepainquotidien.com/be/en/locations/Galerie_de_la_Reine/Galerie-de-la-Reine-11",
+     "openingHours": "Mo-Sa 07:00-19:00; Su,PH 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3682490784",
+     "name": "Le Pain Quotidien",
+     "lat": 50.84007,
+     "lon": 4.3554,
+     "website": "https://www.lepainquotidien.com/be/en/locations/Sablon/Rue-des-Sablons-11",
+     "openingHours": "Mo-Sa 07:30-18:00; Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5254367030",
+     "name": "Le Pain Quotidien",
+     "lat": 50.8492,
+     "lon": 4.34736,
+     "website": "http://www.lepainquotidien.be/be/store/le-pain-quotidien-dansaert-nl/",
+     "openingHours": "Mo-Su,PH 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7287577732",
+     "name": "Le Pain Quotidien",
+     "lat": 50.86353,
+     "lon": 4.34826,
+     "website": "https://www.lepainquotidien.com/be/fr/locations/tour-taxis/Avenue-du-Port-86C",
+     "openingHours": "Mo-Fr 08:00-15:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1242137440",
+     "name": "Lloyd Coffee Eatery",
+     "lat": 50.83379,
+     "lon": 4.3552,
+     "website": "https://lloydcoffee.com/en/shops/",
+     "openingHours": "Mo-Fr 08:00-20:00; Sa,Su 09:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2522741195",
+     "name": "MOK",
+     "lat": 50.85285,
+     "lon": 4.34175,
+     "website": "https://mokcoffee.be/",
+     "openingHours": "Mo-Fr 08:30-15:00; Sa-Su 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10554279232",
+     "name": "MOK Studio",
+     "lat": 50.85059,
+     "lon": 4.36,
+     "website": "https://mokcoffee.be/",
+     "openingHours": "We-Fr 09:00-18:00; Sa 11:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/14047308508",
+     "name": "My Koffee",
+     "lat": 50.85739,
+     "lon": 4.35331,
+     "website": "https://brunchmykoffee.com/",
+     "openingHours": "Mo-Su 08:00-20:30; We off",
+     "cuisine": "brunch, coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2518122689",
+     "name": "Life Is Beautiful",
+     "lat": 50.85259,
+     "lon": 4.34305,
+     "website": "https://www.libcocktailbar.com/",
+     "openingHours": "Mo-Tu off; We-Fr 17:00-00:00; Fr-Sa 17:00-01:00",
+     "detailed": true
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1488409184",
+     "name": "À La Bécasse",
+     "lat": 50.84829,
+     "lon": 4.35122,
+     "website": "https://www.alabecasse.com/",
+     "openingHours": "Mo-Su 11:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "way/244850884",
+     "name": "billie",
+     "lat": 50.85006,
+     "lon": 4.34733,
+     "website": "https://www.billie.brussels/",
+     "openingHours": "Mo-We 11:00-01:00; Th 11:00-02:00; Fr-Sa 11:00-03:00; Su 11:00-01:00",
+     "cuisine": "spaghetti bolognese",
+     "detailed": true
+    },
+    {
+     "id": "node/10870462702",
+     "name": "Flamingo",
+     "lat": 50.85599,
+     "lon": 4.35281,
+     "website": "https://flamingobrussel.be/",
+     "openingHours": "Su-Th 09:00-24:00, Fr,Sa 09:00-01:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4413802978",
+     "name": "La Çaí",
+     "lat": 50.84764,
+     "lon": 4.35244,
+     "website": "https://lacai.be/",
+     "openingHours": "Mo-Fr 10:00-19:00; Sa-Su 10:00-20:00",
+     "cuisine": "juice",
+     "detailed": true
+    },
+    {
+     "id": "node/2698048271",
+     "name": "Le Grand Café",
+     "lat": 50.84852,
+     "lon": 4.3502,
+     "website": "https://www.legrandcafe.be/",
+     "openingHours": "Mo-Su 10:00-00:00",
+     "cuisine": "belgian",
+     "detailed": true
+    },
+    {
+     "id": "node/4329730610",
+     "name": "Le Maquis",
+     "lat": 50.85285,
+     "lon": 4.34693,
+     "website": "https://www.lemaquisbar.be/",
+     "openingHours": "Mo-We 16:00-22:00; Th-Su 16:00-02:00",
+     "cuisine": "finger food",
+     "detailed": true
+    },
+    {
+     "id": "node/1196935388",
+     "name": "Mazette",
+     "lat": 50.83639,
+     "lon": 4.34586,
+     "website": "https://mazette.brussels/",
+     "openingHours": "Tu 17:00-00:00; We-Th 11:00-00:00; Fr 11:00-01:00; Sa 10:00-01:00; Su 10:00-18:30",
+     "cuisine": "breakfast, cake, coffee shop, tapas, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/3506580891",
+     "name": "Scott's Bar",
+     "lat": 50.84882,
+     "lon": 4.35597,
+     "website": "https://www.scottsbarbrussels.com/",
+     "openingHours": "Mo-We 11:00-01:00; Th 11:00-01:30; Fr-Su 11:00-02:00",
+     "cuisine": "beer, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/10963322605",
+     "name": "Tope",
+     "lat": 50.85572,
+     "lon": 4.36339,
+     "website": "https://thehoxton.com/brussels/tope-restaurant",
+     "openingHours": "Mo-Su 16:00-24:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/4480414658",
+     "name": "À la Mort Subite",
+     "lat": 50.84862,
+     "lon": 4.35627,
+     "website": "https://www.alamortsubite.com/en",
+     "openingHours": "Mo-Sa 11:00-01:00; Su 12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2506176994",
+     "name": "Au Bassin",
+     "lat": 50.85294,
+     "lon": 4.34687,
+     "website": "https://aubassin.be/",
+     "openingHours": "Mo 15:00-24:00; Tu-We 15:00-01:00; Th-Fr 15:00-02:30; Sa 14:00-02:30; Su 14:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11958288581",
+     "name": "Bambino",
+     "lat": 50.84563,
+     "lon": 4.35903,
+     "website": "https://bambino-canteen.com/central/",
+     "openingHours": "Mo-Fr 08:30-16:30; PH closed",
+     "detailed": true
+    },
+    {
+     "id": "node/2522741179",
+     "name": "BBP Dansaert",
+     "lat": 50.85278,
+     "lon": 4.34193,
+     "website": "https://www.beerproject.be/en/taproom/dansaert/",
+     "openingHours": "Tu-Th 17:00-21:00; Fr 17:00-23:30; Sa 14:00-23:30; Mo,Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/4214999994",
+     "name": "Beer Capital Brussels",
+     "lat": 50.84767,
+     "lon": 4.34865,
+     "website": "https://beercapitalbrussels.com/",
+     "openingHours": "11:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4461557973",
+     "name": "Bier Central",
+     "lat": 50.84969,
+     "lon": 4.35074,
+     "website": "https://www.biercentral.be/",
+     "openingHours": "Mo-Su 11:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11291127371",
+     "name": "Bonnefooi",
+     "lat": 50.84748,
+     "lon": 4.34953,
+     "website": "https://www.lebonnefooi.be/",
+     "openingHours": "Tu-Sa 22:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2594805780",
+     "name": "Brasserie Surréaliste",
+     "lat": 50.85048,
+     "lon": 4.34388,
+     "website": "https://www.brasseriesurrealiste.com/",
+     "openingHours": "Th,Fr,Sa 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11285056195",
+     "name": "Café Bizon",
+     "lat": 50.84848,
+     "lon": 4.34782,
+     "website": "https://www.cafebizon.com/",
+     "openingHours": "Mo-Su 00:00-02:00,18:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11390036402",
+     "name": "Café Central",
+     "lat": 50.84771,
+     "lon": 4.34777,
+     "website": "https://www.lecafecentral.com/",
+     "openingHours": "Mo-Su 00:00-02:00,16:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10139406861",
+     "name": "Café Merlo",
+     "lat": 50.85316,
+     "lon": 4.34672,
+     "website": "https://www.cafe-merlo.com/",
+     "openingHours": "Su-Th 15:00-01:00; Fr-Sa 15:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/350815522",
+     "name": "Café Tulipant",
+     "lat": 50.8335,
+     "lon": 4.36674,
+     "website": "https://compagnieabc.be/restaurant/cafe-tulipant/",
+     "openingHours": "Mo-Fr 16:00-01:00; Sa-Su 10:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13586128423",
+     "name": "Café Walvis",
+     "lat": 50.85305,
+     "lon": 4.34198,
+     "website": "https://walviscafe.com/",
+     "openingHours": "Mo-Fr 09:00-24:00; Sa 10:00-24:00; Su 10:00-18:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13513115404",
+     "name": "Che Habana Café",
+     "lat": 50.84691,
+     "lon": 4.35313,
+     "website": "https://chehabana.com/",
+     "openingHours": "Th-Su 21:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9571785660",
+     "name": "Chez StephY",
+     "lat": 50.83117,
+     "lon": 4.35757,
+     "website": "https://www.stephy.be/",
+     "openingHours": "Tu-Su 17:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/13198484434",
+     "name": "Churchill's",
+     "lat": 50.84901,
+     "lon": 4.35393,
+     "website": "https://churchills.be/",
+     "openingHours": "Mo-Th 17:00-23:00, Fr 16:00-01:00, Sa 13:00-01:00, Su 13:00-20:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10931797359",
+     "name": "Cobra",
+     "lat": 50.84893,
+     "lon": 4.34748,
+     "website": "https://www.cobrabar.be/",
+     "openingHours": "Mo-Su 17:30-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6487476523",
+     "name": "Contrebande",
+     "lat": 50.83332,
+     "lon": 4.36621,
+     "website": "https://contrebande-bar.be/",
+     "openingHours": "Mo-Th 16:00-24:00; Fr 16:00-02:00; Sa 14:00-02:00; Su 14:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13038966068",
+     "name": "Espérance",
+     "lat": 50.85279,
+     "lon": 4.35523,
+     "website": "https://www.hotel-esperance.be/restaurant/",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11123876660",
+     "name": "Estaminet de Toone - Stamineï van Toone",
+     "lat": 50.84761,
+     "lon": 4.35387,
+     "website": "https://toone.be/",
+     "openingHours": "We-Su 12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11411988611",
+     "name": "Gansbeek",
+     "lat": 50.85412,
+     "lon": 4.34988,
+     "website": "https://nl.gansbeek.be/",
+     "openingHours": "\"by appointment\"",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5115659181",
+     "name": "Birdy",
+     "lat": 50.83749,
+     "lon": 4.3576,
+     "website": "https://www.birdybrussels.com/",
+     "openingHours": "Sa,Su 00:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "way/243559866",
+     "name": "Madame Moustache",
+     "lat": 50.85149,
+     "lon": 4.34897,
+     "website": "https://www.madamemoustache.be/",
+     "openingHours": "Mo off; Tu-Sa 20:00-04:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/4539678381",
+     "name": "Nostalgia",
+     "lat": 50.84875,
+     "lon": 4.35378,
+     "website": "https://www.nostalgia-club.be/",
+     "openingHours": "Fr-Sa 22:00-dawn",
+     "detailed": true
+    },
+    {
+     "id": "node/11816542728",
+     "name": "Barrio",
+     "lat": 50.84114,
+     "lon": 4.35043,
+     "website": "https://www.barrio-brussels.be/"
+    },
+    {
+     "id": "node/9762478271",
+     "name": "Bloody Louis",
+     "lat": 50.83455,
+     "lon": 4.3568,
+     "website": "https://www.bloodylouis.be/"
+    },
+    {
+     "id": "node/10295323314",
+     "name": "C12",
+     "lat": 50.84608,
+     "lon": 4.3561,
+     "website": "https://c12space.com/"
+    },
+    {
+     "id": "node/12140099647",
+     "name": "Fuse",
+     "lat": 50.83536,
+     "lon": 4.34476,
+     "website": "https://fuse.be/"
+    },
+    {
+     "id": "node/6254463049",
+     "name": "Le You",
+     "lat": 50.84487,
+     "lon": 4.35403,
+     "openingHours": "Sa 22:00+"
+    },
+    {
+     "id": "node/247432461",
+     "name": "Mirano Brussels",
+     "lat": 50.84934,
+     "lon": 4.37143,
+     "website": "https://www.miranobrussels.com/"
+    },
+    {
+     "id": "node/12551469672",
+     "name": "Society Boiler Club",
+     "lat": 50.84137,
+     "lon": 4.35588,
+     "openingHours": "Fr,Sa 22:00-04:00"
+    },
+    {
+     "id": "node/11302383342",
+     "name": "UMI",
+     "lat": 50.84593,
+     "lon": 4.35313,
+     "website": "https://umibrussels.art/"
+    },
+    {
+     "id": "node/11734945055",
+     "name": "Bazaar",
+     "lat": 50.8376,
+     "lon": 4.3485
+    },
+    {
+     "id": "node/5306815408",
+     "name": "Bunker 98",
+     "lat": 50.8493,
+     "lon": 4.35312
+    },
+    {
+     "id": "node/12895325282",
+     "name": "Claridge",
+     "lat": 50.84916,
+     "lon": 4.37112
+    },
+    {
+     "id": "node/9654650708",
+     "name": "L'Interdit",
+     "lat": 50.83019,
+     "lon": 4.35859
+    },
+    {
+     "id": "node/10300102653",
+     "name": "La Clave",
+     "lat": 50.84869,
+     "lon": 4.35375
+    },
+    {
+     "id": "node/13379157567",
+     "name": "Le Grand Mambo",
+     "lat": 50.83687,
+     "lon": 4.36553
+    },
+    {
+     "id": "node/5146193123",
+     "name": "The UpClub",
+     "lat": 50.84526,
+     "lon": 4.35321
+    }
+   ]
+  }
+ }
+}

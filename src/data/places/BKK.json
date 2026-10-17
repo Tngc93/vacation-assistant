@@ -1,0 +1,1568 @@
+{
+ "version": 1,
+ "cityCode": "BKK",
+ "fetchedAt": "2026-10-17T00:09:20.820Z",
+ "radiusKm": 4,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg/1280px-Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg",
+  "width": 1280,
+  "height": 853,
+  "author": "Preecha.MJ",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_(cropped).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/23482754",
+     "name": "Büyük Saray",
+     "localName": "พระบรมมหาราชวัง",
+     "lat": 13.74957,
+     "lon": 100.49179,
+     "website": "https://www.royalgrandpalace.th/en/home",
+     "openingHours": "Mo-Su 08:30-15:30",
+     "wikipediaCount": 47
+    },
+    {
+     "id": "way/230010054",
+     "name": "Phra Kaew Tapınağı",
+     "localName": "วัดพระศรีรัตนศาสดาราม",
+     "lat": 13.75151,
+     "lon": 100.49269,
+     "address": "Na Phra Lan Road",
+     "website": "https://www.palaces.thai.net/",
+     "openingHours": "08:30-15:30; Mo-Su 08:30-16:30",
+     "wikipediaCount": 44
+    },
+    {
+     "id": "way/23481741",
+     "name": "วัดอรุณ",
+     "lat": 13.74382,
+     "lon": 100.48849,
+     "address": "Thanon Wang Doem 158",
+     "website": "https://www.bangkok.com/attraction-temple/wat-arun.htm",
+     "openingHours": "Mo-Su 08:30-18:00",
+     "wikipediaCount": 42
+    },
+    {
+     "id": "relation/11169995",
+     "name": "Pho Tapınağı",
+     "localName": "วัดพระเชตุพนวิมลมังคลารามราชวรมหาวิหาร",
+     "lat": 13.74591,
+     "lon": 100.49276,
+     "website": "https://www.watpho.com/",
+     "openingHours": "08:00-18:30",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/31987718",
+     "name": "วัดเบญจมบพิตรดุสิตวนารามราชวรวิหาร",
+     "lat": 13.76612,
+     "lon": 100.51371,
+     "address": "ถนนพระรามที่ 5 69",
+     "website": "https://www.facebook.com/watbencham/",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "way/178329973",
+     "name": "Demokrasi Anıtı",
+     "localName": "อนุสาวรีย์ประชาธิปไตย",
+     "lat": 13.75669,
+     "lon": 100.50184,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "node/1872413363",
+     "name": "สะพานพระราม 8",
+     "lat": 13.76965,
+     "lon": 100.49586,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "relation/12822616",
+     "name": "พระราชวังดุสิต",
+     "lat": 13.77264,
+     "lon": 100.51188,
+     "wikipediaCount": 18
+    },
+    {
+     "id": "way/32011053",
+     "name": "Suthat Thep Wararam Tapınağı",
+     "localName": "วัดสุทัศนเทพวรารามราชวรมหาวิหาร",
+     "lat": 13.75012,
+     "lon": 100.50096,
+     "openingHours": "Mo-Su 08:30-21:00",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/23610119",
+     "name": "Khao San Caddesi",
+     "localName": "ถนนข้าวสาร",
+     "lat": 13.7589,
+     "lon": 100.49732,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/1516377328",
+     "name": "Khao San Caddesi",
+     "localName": "ถนนข้าวสาร",
+     "lat": 13.7589,
+     "lon": 100.49732,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/31987914",
+     "name": "พระที่นั่งวิมานเมฆ",
+     "lat": 13.77422,
+     "lon": 100.51241,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/462532630",
+     "name": "ถนนเยาวราช",
+     "lat": 13.73869,
+     "lon": 100.51225,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/754824716",
+     "name": "ถนนเยาวราช",
+     "lat": 13.74001,
+     "lon": 100.51045,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/832948770",
+     "name": "ถนนเยาวราช",
+     "lat": 13.74127,
+     "lon": 100.50839,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/872380813",
+     "name": "ถนนเยาวราช",
+     "lat": 13.74061,
+     "lon": 100.50942,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/1305800722",
+     "name": "ถนนเยาวราช",
+     "lat": 13.73925,
+     "lon": 100.51171,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/23630366",
+     "name": "พระตำหนักจิตรลดารโหฐาน",
+     "lat": 13.76833,
+     "lon": 100.52061,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/210284648",
+     "name": "พระตำหนักจิตรลดารโหฐาน",
+     "lat": 13.76933,
+     "lon": 100.52072,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/158185227",
+     "name": "อนุสาวรีย์ชัยสมรภูมิ",
+     "lat": 13.76493,
+     "lon": 100.53829,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/178353988",
+     "name": "Dev Salıncak",
+     "localName": "เสาชิงช้า",
+     "lat": 13.75181,
+     "lon": 100.50128,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/178329987",
+     "name": "Maha That Tapınağı",
+     "localName": "วัดมหาธาตุยุวราชรังสฤษฎิ์ราชวรมหาวิหาร",
+     "lat": 13.75477,
+     "lon": 100.4908,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/138947464",
+     "name": "วัดราชบพิธสถิตมหาสีมารามราชวรวิหาร",
+     "lat": 13.74906,
+     "lon": 100.49718,
+     "openingHours": "Mo-Su 06:00-18:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/31987148",
+     "name": "พระที่นั่งอนันตสมาคม",
+     "lat": 13.77171,
+     "lon": 100.5131,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/103022363",
+     "name": "Ratchanaddaram Tapınağı",
+     "localName": "วัดราชนัดดารามวรวิหาร",
+     "lat": 13.75484,
+     "lon": 100.50425,
+     "address": "ถนนมหาไชย 2",
+     "openingHours": "Mo-Su 08:00-17:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/1410385850",
+     "name": "วังสวนผักกาด",
+     "lat": 13.75683,
+     "lon": 100.5371,
+     "website": "http://www.suanpakkad.com/",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/321722223",
+     "name": "Sathorn Unique Tower",
+     "lat": 13.71732,
+     "lon": 100.51522,
+     "address": "สาทร",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/205707903",
+     "name": "พระที่นั่งอภิเศกดุสิต",
+     "lat": 13.77338,
+     "lon": 100.51323,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/863463383",
+     "name": "พระราชวังพญาไท",
+     "lat": 13.76882,
+     "lon": 100.533,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/342337807",
+     "name": "วัดราชประดิษฐสถิตมหาสีมารามราชวรวิหาร",
+     "lat": 13.74954,
+     "lon": 100.49562,
+     "wikipediaCount": 5
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/20505832",
+     "name": "Bangkok Milli Müzesi",
+     "localName": "พิพิธภัณฑสถานแห่งชาติ พระนคร",
+     "lat": 13.75815,
+     "lon": 100.49153,
+     "openingHours": "We-Su 09:00-16:00; PH off",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "way/48966995",
+     "name": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
+     "lat": 13.74675,
+     "lon": 100.53027,
+     "address": "ถนนพระราม 1 939",
+     "website": "https://www.bacc.or.th/",
+     "openingHours": "Tu-Su 10:00-20:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "relation/20710624",
+     "name": "พิพิธภัณฑสถานแห่งชาติ หอศิลป",
+     "lat": 13.75918,
+     "lon": 100.49407,
+     "address": "พระนคร",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/341577338",
+     "name": "พิพิธภัณฑ์บ้านจิม ทอมป์สัน",
+     "lat": 13.74922,
+     "lon": 100.52828,
+     "address": "Soi Kasemsan 2, Rama 1 Road 6",
+     "website": "https://www.jimthompsonhouse.com/",
+     "openingHours": "Mo-Su 09:00-18:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/230891857",
+     "name": "สวนผักกาด",
+     "lat": 13.75668,
+     "lon": 100.53718,
+     "website": "http://www.suanpakkad.com/",
+     "openingHours": "Mo-Su 09:00-16:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/349609932",
+     "name": "Siyam Müzesi",
+     "localName": "มิวเซียมสยาม",
+     "lat": 13.74396,
+     "lon": 100.49385,
+     "website": "https://www.museumsiam.org/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/3542061032",
+     "name": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
+     "lat": 13.76828,
+     "lon": 100.49954,
+     "website": "https://www.botlc.or.th/museum",
+     "openingHours": "Sat-Sun 09:30-16:30",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2447283108",
+     "name": "Songkran Niyosane Adli Tıp Müzesi ve Parazit Müzesi",
+     "localName": "พิพิธภัณฑ์การแพทย์ศิริราช",
+     "lat": 13.75871,
+     "lon": 100.4855,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/863463383",
+     "name": "พระราชวังพญาไท",
+     "lat": 13.76882,
+     "lon": 100.533,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/205637198",
+     "name": "หอศิลป์สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ",
+     "lat": 13.75655,
+     "lon": 100.50513,
+     "address": "พระนคร",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/82542417",
+     "name": "พิพิธภัณฑ์ผ้าในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ",
+     "lat": 13.75203,
+     "lon": 100.49072,
+     "address": "พระนคร",
+     "website": "https://www.qsmtthailand.org/",
+     "openingHours": "Mo-Su 09:00-16:30",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/202235947",
+     "name": "พิพิธภัณฑสถานแห่งชาติ เรือพระราชพิธี",
+     "lat": 13.76197,
+     "lon": 100.48457,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/210306786",
+     "name": "พิพิธภัณฑ์ชาวบางกอก",
+     "lat": 13.72811,
+     "lon": 100.51811,
+     "openingHours": "Tu-Su,PH 09:00-16:00; Mo closed",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/3096836185",
+     "name": "พิพิธภัณฑ์ท้องถิ่นกรุงเทพมหานคร เขตสัมพันธวงศ์",
+     "lat": 13.73672,
+     "lon": 100.5111,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/2411920280",
+     "name": "พิพิธภัณฑ์เทคโนโลยีทางภาพ",
+     "lat": 13.73712,
+     "lon": 100.52985,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/1467232352",
+     "name": "พิพิธภัณฑ์บ้านกุฎีจีน",
+     "lat": 13.73941,
+     "lon": 100.49305,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/229966092",
+     "name": "พิพิธภัณฑ์พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว",
+     "lat": 13.75607,
+     "lon": 100.50649,
+     "address": "ป้อมปราบศัตรูพ่าย",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/320273828",
+     "name": "พิพิธภัณฑ์ศิริราชพิมุขสถาน",
+     "lat": 13.75976,
+     "lon": 100.48679,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/373098282",
+     "name": "พิพิธภัณฑสถานธรรมชาติวิทยา",
+     "lat": 13.73748,
+     "lon": 100.53008,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/351091872",
+     "name": "หอศิลป์มหาวิทยาลัยศิลปากร",
+     "lat": 13.75292,
+     "lon": 100.48997,
+     "address": "พระนคร",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/241865727",
+     "name": "บ้าน ม.ร.ว.คึกฤทธิ์ ปราโมช",
+     "lat": 13.71984,
+     "lon": 100.53369,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/539017238",
+     "name": "บ้านปาร์คนายเลิศ",
+     "lat": 13.74626,
+     "lon": 100.54718,
+     "address": "ปทุมวัน",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/2962489061",
+     "name": "พิพิธภัณฑ์แรงงานไทย",
+     "lat": 13.75304,
+     "lon": 100.54976,
+     "address": "Ratchathewi Road",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/82078207",
+     "name": "ศาลาเครื่องราชอิสริยยศ เครื่องราชอิสริยาภรณ์ และเหรียญกษาปณ์",
+     "lat": 13.75101,
+     "lon": 100.49173,
+     "address": "พระนคร",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/5764199061",
+     "name": "100 tonson gallery",
+     "lat": 13.73905,
+     "lon": 100.54449,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/200670984",
+     "name": "พิพิธภัณฑ์มหาวิทยาลัย",
+     "lat": 13.7396,
+     "lon": 100.53237,
+     "address": "ปทุมวัน",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/10693793825",
+     "name": "Art4C",
+     "lat": 13.73366,
+     "lon": 100.52721,
+     "website": "http://www.faa.chula.ac.th/art4c/",
+     "openingHours": "Mo-Sa 09:00-18:00"
+    },
+    {
+     "id": "way/1228611155",
+     "name": "Number 1 Gallery",
+     "lat": 13.72109,
+     "lon": 100.5186,
+     "address": "ซอยสีลม 21 19",
+     "website": "https://www.number1gallery.com/",
+     "openingHours": "Mo-Sa 11:00-19:00"
+    },
+    {
+     "id": "node/9739291657",
+     "name": "Patpong Museum",
+     "lat": 13.72878,
+     "lon": 100.53214,
+     "website": "https://www.patpongmuseum.com/",
+     "openingHours": "Mo-Tu 12:00-21:00; Th-Su 12:00-21:00"
+    },
+    {
+     "id": "node/10792898504",
+     "name": "จอยแมน แกลลอรี่",
+     "lat": 13.75179,
+     "lon": 100.5046,
+     "address": "ถนนมหาไชย 357-359",
+     "website": "https://www.joymangallery.com/",
+     "openingHours": "Tu-Su 11:00-18:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/6259620985",
+     "name": "MAHANAKHON SKYWALK",
+     "lat": 13.72315,
+     "lon": 100.52808,
+     "address": "Naradhiwas Radjanagarindra rd. 114/1"
+    },
+    {
+     "id": "way/1190810492",
+     "name": "Public Rooftop Garden",
+     "lat": 13.72688,
+     "lon": 100.51561
+    },
+    {
+     "id": "node/11806216522",
+     "name": "จุดชมวิวท่าเตียน",
+     "lat": 13.7458,
+     "lon": 100.4903
+    },
+    {
+     "id": "node/6232721188",
+     "name": "จุดชมวิวท่าวัดโพธิ์",
+     "lat": 13.7445,
+     "lon": 100.49124
+    },
+    {
+     "id": "node/8797708205",
+     "name": "ตึกใบหยก 2",
+     "lat": 13.75456,
+     "lon": 100.5404
+    },
+    {
+     "id": "node/7737340673",
+     "name": "สวนลอยฟ้าเจ้าพระยา",
+     "lat": 13.7391,
+     "lon": 100.49859
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2103963329",
+     "name": "Brasserie 9",
+     "lat": 13.72435,
+     "lon": 100.53308,
+     "address": "ซอยสาทร 6 27",
+     "website": "http://www.brasserie9.com/",
+     "openingHours": "17:00-01:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2066146197",
+     "name": "D'Orsay",
+     "lat": 13.74222,
+     "lon": 100.54379,
+     "website": "http://www.facebook.com/dorsay",
+     "openingHours": "Tu-Su 11:00-14:00,17:00-22:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2398070810",
+     "name": "Eat Me Restaurant",
+     "lat": 13.72548,
+     "lon": 100.5339,
+     "address": "Soi Phipat 2",
+     "website": "https://eatmerestaurant.com/",
+     "openingHours": "Mo-Su 15:00-01:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/2066101996",
+     "name": "Emperor Yakiniku Buffet",
+     "lat": 13.74198,
+     "lon": 100.54392,
+     "website": "http://www.facebook.com/Emperor.Yakiniku.Buffet",
+     "openingHours": "11:00-22:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/2081842900",
+     "name": "Le Normandie",
+     "lat": 13.72359,
+     "lon": 100.51425,
+     "address": "Oriental Avenue 48",
+     "website": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/anne-sophie-pic-at-le-normandie",
+     "openingHours": "We-Su 08:00-15:30,18:30-23:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2075731960",
+     "name": "MK Restaurants",
+     "lat": 13.74371,
+     "lon": 100.50158,
+     "website": "https://www.mkrestaurant.com/",
+     "openingHours": "Mo-Su 09:00-18:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3839364811",
+     "name": "MK Restaurants",
+     "lat": 13.74487,
+     "lon": 100.52975,
+     "website": "https://www.mkrestaurant.com/",
+     "openingHours": "Mo-Su,PH 10:00-22:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3392530963",
+     "name": "No. 43 Italian Bistro",
+     "lat": 13.74108,
+     "lon": 100.54357,
+     "address": "Soi Langsuan 43",
+     "website": "https://www.capehouse.com/dining.html",
+     "openingHours": "06:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2066146199",
+     "name": "Saboten",
+     "lat": 13.74199,
+     "lon": 100.54367,
+     "website": "http://www.saboten.in.th/",
+     "openingHours": "11:00-22:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/2401924845",
+     "name": "Shoshana",
+     "lat": 13.75994,
+     "lon": 100.49628,
+     "address": "ถนนจักรพงษ์ 86",
+     "website": "http://shoshanarestaurant.com/",
+     "openingHours": "Mo-Su 10:00-23:30",
+     "cuisine": "mediterranean, thai",
+     "detailed": true
+    },
+    {
+     "id": "node/358876587",
+     "name": "Sirocco",
+     "lat": 13.72129,
+     "lon": 100.51687,
+     "address": "Silom Road 1055",
+     "website": "https://www.lebua.com/sirocco",
+     "openingHours": "18:00-01:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/3471419765",
+     "name": "Tasca Sabio",
+     "lat": 13.72947,
+     "lon": 100.5297,
+     "address": "ถนนสุรวงศ์ 80",
+     "website": "https://www.sabio.food/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "spanish, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/3392579956",
+     "name": "The Ninth Cafe",
+     "lat": 13.73922,
+     "lon": 100.54316,
+     "address": "Soi Langsuan 59/5",
+     "website": "http://www.theninthcafe.com/branch_langsuan.html",
+     "openingHours": "10:00-22:00, Mo closed",
+     "cuisine": "italian, thai",
+     "detailed": true
+    },
+    {
+     "id": "node/1868781115",
+     "name": "ทิพย์สมัย",
+     "lat": 13.75276,
+     "lon": 100.50482,
+     "website": "https://www.thipsamai.com/",
+     "openingHours": "Mo-Su 17:00-02:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/4489090890",
+     "name": "ลิ้มเหล่าโหงว บิสโทร",
+     "lat": 13.7448,
+     "lon": 100.53386,
+     "address": "สยามสแควร์ซอย 5",
+     "website": "https://www.limlaongow.com/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "noodles, thai, chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/4377059090",
+     "name": "สมบูรณ์โภชนา",
+     "lat": 13.72822,
+     "lon": 100.52668,
+     "address": "ถนนสุรวงศ์",
+     "website": "https://somboonseafood.com/",
+     "openingHours": "Mo-Su 07:30-21:30",
+     "cuisine": "seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/3251675167",
+     "name": "เสวยโภชนา",
+     "lat": 13.74366,
+     "lon": 100.54414,
+     "address": "Ploenchit Rd 540",
+     "website": "https://www.savoey.co.th/",
+     "openingHours": "11:30 - 21:30",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3023506182",
+     "name": "Chote Chipr",
+     "lat": 13.75213,
+     "lon": 100.49794,
+     "address": "ถนนแพร่งภูธร 140",
+     "openingHours": "Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3839364802",
+     "name": "Fuji",
+     "lat": 13.74472,
+     "lon": 100.52972,
+     "openingHours": "Mo-Su,PH 10:00-22:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1097741978",
+     "name": "Green House",
+     "lat": 13.76002,
+     "lon": 100.49706,
+     "openingHours": "Mo-Su, PH 06:30-01:30",
+     "cuisine": "thai, mediterranean, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3952004863",
+     "name": "Guptaji Ki Kitchen",
+     "lat": 13.75394,
+     "lon": 100.53939,
+     "address": "122/11 Pratunam",
+     "website": "https://www.guptajikitchen.com/",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2065909826",
+     "name": "Juize etc.",
+     "lat": 13.742,
+     "lon": 100.54365,
+     "website": "http://www.facebook.com/pages/JuiZe-ETC/207461839316649",
+     "cuisine": "italian, thai",
+     "detailed": true
+    },
+    {
+     "id": "node/2066149880",
+     "name": "kopitiam restaurant",
+     "lat": 13.74196,
+     "lon": 100.54391,
+     "website": "http://www.thaikopitiam.com/",
+     "openingHours": "11:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2085346365",
+     "name": "Madam Musur Samsen",
+     "lat": 13.76301,
+     "lon": 100.49927,
+     "website": "https://www.facebook.com/madamesamsen/",
+     "openingHours": "Mo-Su 09:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1700165042",
+     "name": "MK Restaurants",
+     "lat": 13.74595,
+     "lon": 100.5347,
+     "website": "https://www.mkrestaurant.com/",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/2400134536",
+     "name": "MK Restaurants",
+     "lat": 13.71939,
+     "lon": 100.51519,
+     "website": "https://www.mkrestaurant.com/",
+     "cuisine": "suki",
+     "detailed": true
+    },
+    {
+     "id": "node/3487195889",
+     "name": "MK Restaurants",
+     "lat": 13.74776,
+     "lon": 100.52414,
+     "website": "https://www.mkrestaurant.com/",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3858706155",
+     "name": "MK Restaurants",
+     "lat": 13.74713,
+     "lon": 100.54096,
+     "website": "https://www.mkrestaurant.com/",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/2404584181",
+     "name": "My Darling",
+     "lat": 13.75938,
+     "lon": 100.49787,
+     "address": "รามบุตรี",
+     "openingHours": "Mo-Su 08:00-00:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/4148053090",
+     "name": "Nai Mong Hoy Tod",
+     "lat": 13.74204,
+     "lon": 100.51065,
+     "openingHours": "Mo-Su 10:30-21:30",
+     "cuisine": "asian",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/8082427786",
+     "name": "Art Café Sourire @ Rattanakosin Island",
+     "lat": 13.75709,
+     "lon": 100.50331,
+     "address": "ซอยดำเนินกลางเหนือ 235",
+     "website": "http://www.sourirebangkok.com/contact.htm",
+     "openingHours": "Mo-Su 06:30-15:30",
+     "cuisine": "coffee shop, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2129707136",
+     "name": "Cafe De O'Sha",
+     "lat": 13.76441,
+     "lon": 100.49949,
+     "website": "http://www.facebook.com/deosha.fanpage/",
+     "openingHours": "Mo-Su 07:00-16:00",
+     "cuisine": "breakfast, thai",
+     "detailed": true
+    },
+    {
+     "id": "node/10904745106",
+     "name": "Cannabis Kingdom Dispensary & Cafe",
+     "lat": 13.72541,
+     "lon": 100.53418,
+     "address": "Convent 18/1",
+     "website": "http://cannabisbkk.com/",
+     "openingHours": "Mo-Th 08:30-23:00; Su 09:00-23:00; Fr 08:30-23:30; Sa 09:00-23:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1700165314",
+     "name": "Coffee Beans by Dao",
+     "lat": 13.74665,
+     "lon": 100.5345,
+     "website": "https://coffeebeans.co.th/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "thai, international",
+     "detailed": true
+    },
+    {
+     "id": "node/10938884747",
+     "name": "Mae Chan Tai Coffee Shop",
+     "lat": 13.72066,
+     "lon": 100.53031,
+     "address": "ถนนสาทรใต้ 1",
+     "website": "https://www.akhamaechantaicoffee.com/",
+     "openingHours": "Mo-Su 07:30-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2066076953",
+     "name": "Pause II Play",
+     "lat": 13.742,
+     "lon": 100.54376,
+     "website": "http://www.facebook.com/pause2play",
+     "openingHours": "Mo-Fr 11:30-19:00; Sa-Su 12:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6843795859",
+     "name": "Peacock Alley",
+     "lat": 13.74236,
+     "lon": 100.54088,
+     "address": "ถนนราชดำริ 151",
+     "website": "https://www.hilton.com/en/hotels/bkkwawa-waldorf-astoria-bangkok/dining/peacock-alley/",
+     "openingHours": "10:00 - 21:30",
+     "cuisine": "local, afternoon tea",
+     "detailed": true
+    },
+    {
+     "id": "node/2894977953",
+     "name": "Quest Cafe",
+     "lat": 13.75536,
+     "lon": 100.53275,
+     "address": "Phaya Thai Road",
+     "website": "http://www.questcafebkk.com/",
+     "openingHours": "06:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10289206346",
+     "name": "Raku-Tea",
+     "lat": 13.76052,
+     "lon": 100.49658,
+     "address": "ถนนจักรพงษ์ 124",
+     "website": "https://www.facebook.com/profile.php?id=100088703807863",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "coffee shop, bubble tea, juice",
+     "detailed": true
+    },
+    {
+     "id": "node/3487243262",
+     "name": "Reno Espresso Bar",
+     "lat": 13.7472,
+     "lon": 100.5295,
+     "website": "https://www.renohotel.co.th/restaurant",
+     "openingHours": "07:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7177878885",
+     "name": "Sarnies Sourdough",
+     "lat": 13.72119,
+     "lon": 100.51563,
+     "website": "https://linktr.ee/sarnies.sourdough",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "pizza, pasta, salad, juice, sandwich, coffee shop, tea, dessert",
+     "detailed": true
+    },
+    {
+     "id": "node/3251663426",
+     "name": "Starbucks",
+     "lat": 13.74398,
+     "lon": 100.54591,
+     "website": "https://www.starbucks.co.th/",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3251675162",
+     "name": "Starbucks",
+     "lat": 13.74363,
+     "lon": 100.54431,
+     "website": "https://www.starbucks.co.th/",
+     "openingHours": "Mo-Fr 07:00-21:30; Sa-Su 07:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3272170164",
+     "name": "Starbucks",
+     "lat": 13.7452,
+     "lon": 100.53036,
+     "website": "https://www.starbucks.com/",
+     "openingHours": "Mo-Su,PH 10:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3272170166",
+     "name": "Starbucks",
+     "lat": 13.75562,
+     "lon": 100.5327,
+     "address": "ถนนพญาไท 138",
+     "website": "https://www.starbucks.co.th/",
+     "openingHours": "Mo-Su 06:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3444472390",
+     "name": "Starbucks",
+     "lat": 13.74436,
+     "lon": 100.52965,
+     "website": "https://www.starbuckscard.in.th/",
+     "openingHours": "Mo-Su,PH 10:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3444474797",
+     "name": "Starbucks",
+     "lat": 13.7463,
+     "lon": 100.5444,
+     "website": "https://www.starbucks.co.th/",
+     "openingHours": "Mo-Fr 06:30-20:00; Sa,Su 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5277054815",
+     "name": "คาเฟ่ อเมซอน",
+     "lat": 13.77029,
+     "lon": 100.50452,
+     "website": "http://www.cafe-amazon.com/",
+     "openingHours": "Mo-Su 06:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/8602550989",
+     "name": "คาเฟ่ อเมซอน",
+     "lat": 13.7779,
+     "lon": 100.50996,
+     "website": "https://www.cafe-amazon.com/",
+     "openingHours": "6:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4411212890",
+     "name": "โซวเฮงไถ่",
+     "lat": 13.73363,
+     "lon": 100.51198,
+     "website": "https://m.facebook.com/Sohengtai/",
+     "openingHours": "Mo-Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1800295277",
+     "name": "บีเคเค เบเกิล เบเกอรี่",
+     "lat": 13.74389,
+     "lon": 100.54204,
+     "website": "http://www.bkkbagels.com/",
+     "openingHours": "Mo-Su 07:00-17:00",
+     "cuisine": "bagel",
+     "detailed": true
+    },
+    {
+     "id": "node/9394269217",
+     "name": "-273° Coffee",
+     "lat": 13.7254,
+     "lon": 100.53125,
+     "address": "ซอยสีลม 3",
+     "openingHours": "Mo-Sa 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2896468788",
+     "name": "8 Bit House",
+     "lat": 13.75174,
+     "lon": 100.53063,
+     "address": "Soi Phaya Nak",
+     "openingHours": "07:00-21:00",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/6888391085",
+     "name": "Alice Cafe",
+     "lat": 13.74858,
+     "lon": 100.49793,
+     "address": "ถนนเฟื่องนคร 125",
+     "openingHours": "Mo-Su 08:00-17:00",
+     "cuisine": "thai, tea, italian, pasta, coffee shop, cake, seafood, sandwich, local",
+     "detailed": true
+    },
+    {
+     "id": "node/2065797055",
+     "name": "Be Organic by Lemon Farm",
+     "lat": 13.74223,
+     "lon": 100.54368,
+     "website": "http://www.facebook.com/beOrganicfan",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2085346364",
+     "name": "Bow's Restaurant",
+     "lat": 13.76358,
+     "lon": 100.50002,
+     "address": "Soi Samsen 4 168/7",
+     "openingHours": "Mo-Su 08:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1523240497",
+     "name": "Café Amazon",
+     "lat": 13.74263,
+     "lon": 100.49614,
+     "website": "http://www.cafe-amazon.com/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7041790736",
+     "name": "Café Amazon",
+     "lat": 13.75235,
+     "lon": 100.49406,
+     "website": "http://www.cafe-amazon.com/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11323335076",
+     "name": "Café Amazon",
+     "lat": 13.73355,
+     "lon": 100.52838,
+     "openingHours": "24/7",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3839364801",
+     "name": "Coco",
+     "lat": 13.74488,
+     "lon": 100.52985,
+     "openingHours": "Mo-Su,PH 10:00-22:00",
+     "cuisine": "bubble tea",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/14135618602",
+     "name": "Balcony Lounge and Humidor Cigar Bar",
+     "lat": 13.7449,
+     "lon": 100.54142,
+     "address": "ถนนเพลินจิต 973",
+     "website": "https://bangkok.intercontinental.com/dining/balcony-lounge",
+     "openingHours": "Mo-Su 08:00-00:00",
+     "cuisine": "cake, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/4346775770",
+     "name": "Snooze Coffee House",
+     "lat": 13.76576,
+     "lon": 100.50044,
+     "address": "Samsen Soi 4 170",
+     "website": "http://www.facebook.com/CaffeineloverBKK/",
+     "openingHours": "Mo-Su 08:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6255804090",
+     "name": "Swing Bar",
+     "lat": 13.75249,
+     "lon": 100.50219,
+     "website": "https://www.chingchabangkok.com/",
+     "openingHours": "Mo-Su 17:00-24:00",
+     "cuisine": "thai, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3977891363",
+     "name": "Tep bar",
+     "lat": 13.7396,
+     "lon": 100.51436,
+     "website": "https://www.tepmahanakhon.com/",
+     "openingHours": "Mo-Su 18:00-00:00",
+     "cuisine": "regional, thai",
+     "detailed": true
+    },
+    {
+     "id": "node/2066072188",
+     "name": "Wine Loft",
+     "lat": 13.74199,
+     "lon": 100.54369,
+     "website": "https://www.wineloft.com/",
+     "openingHours": "11:00-24:00",
+     "cuisine": "steak, pasta, spagetti",
+     "detailed": true
+    },
+    {
+     "id": "node/14069656101",
+     "name": "AQUA Bar",
+     "lat": 13.74117,
+     "lon": 100.54043,
+     "address": "ถนนราชดำริ 155",
+     "website": "https://aquabangkok.com/",
+     "openingHours": "Mo-Su 12:00-00:30",
+     "detailed": true
+    },
+    {
+     "id": "node/14069607501",
+     "name": "Bar Sathorn",
+     "lat": 13.72211,
+     "lon": 100.52892,
+     "website": "https://barsathorn.com/",
+     "openingHours": "Mo-Su 14:30-01:00",
+     "detailed": true
+    },
+    {
+     "id": "way/1224022261",
+     "name": "Beer Pradith",
+     "lat": 13.73645,
+     "lon": 100.52159,
+     "address": "ถนนบรรทัดทอง 2056",
+     "website": "https://facebook.com/beerpradith",
+     "openingHours": "Mo-Su 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12640894703",
+     "name": "Chit Hole Surawong",
+     "lat": 13.73008,
+     "lon": 100.53154,
+     "address": "ถนนสุรวงศ์ 54",
+     "website": "https://chitholding.com/",
+     "openingHours": "18:00-01:00; Th,Fr 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5372329542",
+     "name": "Cloud9",
+     "lat": 13.72425,
+     "lon": 100.52947,
+     "website": "https://cloud47bangkok.com/",
+     "openingHours": "Mo-Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3977890871",
+     "name": "El Chiringuito",
+     "lat": 13.73938,
+     "lon": 100.51394,
+     "address": "ซอยนานา 221",
+     "openingHours": "Th-Su 18:00-00:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/14069651001",
+     "name": "G.O.D (Genius in Drugs)",
+     "lat": 13.7398,
+     "lon": 100.51437,
+     "website": "https://nightify.co/book/god",
+     "openingHours": "Mo-Su 19:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13997018402",
+     "name": "La Casa del Habano Sindhorn Kempinski",
+     "lat": 13.73659,
+     "lon": 100.54349,
+     "address": "ถนนสารสิน 68/3",
+     "website": "https://pacificcigar.com/our-locations/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14069601501",
+     "name": "Lennon's",
+     "lat": 13.74347,
+     "lon": 100.54899,
+     "address": "ถนนเพลินจิต 1037/1",
+     "website": "https://rosewoodhotels.com/en/bangkok/dining/lennons",
+     "openingHours": "Mo-Su 18:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14069642101",
+     "name": "Opium Bar",
+     "lat": 13.73921,
+     "lon": 100.50848,
+     "website": "https://opiumbarbangkok.com/",
+     "openingHours": "Th-Tu 16:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "way/626817132",
+     "name": "Saxophone Pub and Restaurant",
+     "lat": 13.76363,
+     "lon": 100.53808,
+     "address": "ซอยราชวิถี 11 3/8",
+     "website": "http://www.saxophonepub.com/",
+     "openingHours": "18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7055405411",
+     "name": "T LOFT",
+     "lat": 13.73993,
+     "lon": 100.54065,
+     "address": "Soi Mahatlek Luang 2 2/60",
+     "website": "https://loft.teeragit.com/",
+     "openingHours": "24/7",
+     "detailed": true
+    },
+    {
+     "id": "node/6839690397",
+     "name": "The Champagne Bar",
+     "lat": 13.74273,
+     "lon": 100.54117,
+     "address": "ถนนราชดำริ 151",
+     "website": "https://www.hilton.com/en/hotels/bkkwawa-waldorf-astoria-bangkok/dining/",
+     "openingHours": "Mo-Sa 17:00-24:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/6839846710",
+     "name": "The Loft",
+     "lat": 13.7427,
+     "lon": 100.54123,
+     "address": "ถนนราชดำริ 151",
+     "website": "https://www.hilton.com/en/hotels/bkkwawa-waldorf-astoria-bangkok/dining/the-loft/",
+     "openingHours": "Mo-Th 17:00 - 00:00, Fr-Sat 17:00 - 01:00, Sun 17:00 - 00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6263926889",
+     "name": "ร้าน มีไวน์ ช้อป",
+     "lat": 13.72885,
+     "lon": 100.53573,
+     "address": "ถนนศาลาแดง 12",
+     "website": "https://mewinesshop.com/",
+     "openingHours": "Mo-Sa 11:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5230304422",
+     "name": "八號",
+     "lat": 13.74025,
+     "lon": 100.51406,
+     "address": "ซอยนานา 8",
+     "website": "https://linktr.ee/bahao8",
+     "openingHours": "Mo-Su 17:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13517035401",
+     "name": "AsSajan",
+     "lat": 13.75811,
+     "lon": 100.50977,
+     "address": "ถนนจักรพรรดิพงษ์ 121, 123",
+     "openingHours": "Tu-Su 16:00-00:00"
+    },
+    {
+     "id": "node/2248151306",
+     "name": "Bar@494",
+     "lat": 13.74335,
+     "lon": 100.54051,
+     "address": "Ratchadamri Rd",
+     "website": "https://bangkok.grand.hyatt.com/hyatt/hotels-bangkok-grand/entertainment/dining_detail.jsp?itemDesc=fboutlet&itemId=1000112"
+    },
+    {
+     "id": "node/4665596791",
+     "name": "BarBar Fetish Club",
+     "lat": 13.72826,
+     "lon": 100.53258,
+     "address": "Patpong Soi 2",
+     "website": "https://www.barbarfetish.com/"
+    },
+    {
+     "id": "node/776037982",
+     "name": "Bully's Bankok",
+     "lat": 13.7421,
+     "lon": 100.55248,
+     "website": "https://www.facebook.com/BullysBKK"
+    },
+    {
+     "id": "node/4180187292",
+     "name": "cotton jazz club",
+     "lat": 13.7404,
+     "lon": 100.51006,
+     "address": "yaowarat rd 489",
+     "openingHours": "Th-Su"
+    },
+    {
+     "id": "node/7136730885",
+     "name": "HI-SO Rooftop Bar",
+     "lat": 13.7261,
+     "lon": 100.54325,
+     "address": "ถนนสาทรเหนือ 2",
+     "openingHours": "Mo-Su 17:00-00:30"
+    },
+    {
+     "id": "node/11945247325",
+     "name": "House of HEALS",
+     "lat": 13.7427,
+     "lon": 100.5419,
+     "website": "https://www.thehealsbkk.com/"
+    },
+    {
+     "id": "node/12409925501",
+     "name": "Independence Cocktail Bar",
+     "lat": 13.73964,
+     "lon": 100.51476,
+     "address": "ถนนไมตรีจิตต์ 687",
+     "openingHours": "Mo-Su 19:00-01:00"
+    },
+    {
+     "id": "way/1510184034",
+     "name": "Is Orange",
+     "lat": 13.75835,
+     "lon": 100.49813,
+     "address": "ถนนข้าวสาร",
+     "cuisine": "local, regional, thai"
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3600379622",
+     "name": "Superflow Beach Club",
+     "lat": 13.75907,
+     "lon": 100.49579,
+     "address": "Khao San Road 9 Khao San",
+     "website": "https://www.superflowbeachclub.com/"
+    },
+    {
+     "id": "way/1305599193",
+     "name": "Chinatown Yacht Club",
+     "lat": 13.73968,
+     "lon": 100.51386,
+     "address": "ซอยนานา 92"
+    },
+    {
+     "id": "node/2900166434",
+     "name": "Concept CM2",
+     "lat": 13.74487,
+     "lon": 100.53492
+    },
+    {
+     "id": "node/3083236042",
+     "name": "DJ Station",
+     "lat": 13.72935,
+     "lon": 100.53535
+    },
+    {
+     "id": "node/7068181705",
+     "name": "Dowan lobby",
+     "lat": 13.76003,
+     "lon": 100.49828
+    },
+    {
+     "id": "node/3083236044",
+     "name": "G.O.D. Club",
+     "lat": 13.72905,
+     "lon": 100.53461
+    },
+    {
+     "id": "node/13844079924",
+     "name": "Horn",
+     "lat": 13.72846,
+     "lon": 100.53294,
+     "address": "Soi Si Lom 4 71-73"
+    },
+    {
+     "id": "node/4257984189",
+     "name": "Khao San Road",
+     "lat": 13.75963,
+     "lon": 100.49576,
+     "address": "ถนนข้าวสาร"
+    },
+    {
+     "id": "node/2900166436",
+     "name": "Party House One",
+     "lat": 13.74714,
+     "lon": 100.52689
+    },
+    {
+     "id": "node/2405819499",
+     "name": "The Club",
+     "lat": 13.75924,
+     "lon": 100.4968
+    },
+    {
+     "id": "way/1226660066",
+     "name": "Top House BKK",
+     "lat": 13.72913,
+     "lon": 100.53525,
+     "address": "ถนนสีลม 12"
+    },
+    {
+     "id": "node/4783766643",
+     "name": "เดอะซัน ตะวันคลับ",
+     "lat": 13.72909,
+     "lon": 100.53003,
+     "address": "ซอยทานตะวัน 7/4"
+    }
+   ]
+  }
+ }
+}

@@ -166,6 +166,70 @@
 }
 
 /*
+ * Duotone photos from two tokens: shadows take --duo-shadow, highlights
+ * --duo-highlight. The pair flips with the theme so a photo never turns
+ * into a negative in dark mode.
+ */
+:root {
+  --duo-shadow: var(--sea);
+  --duo-highlight: var(--paper-raised);
+}
+
+:root[data-theme="dark"] {
+  --duo-shadow: var(--paper);
+  --duo-highlight: var(--sea);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --duo-shadow: var(--paper);
+    --duo-highlight: var(--sea);
+  }
+}
+
+@utility duotone {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--duo-highlight);
+
+  & img {
+    filter: grayscale(1) contrast(1.1);
+    mix-blend-mode: multiply;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--duo-shadow);
+    mix-blend-mode: lighten;
+    pointer-events: none;
+  }
+}
+
+/* MapLibre controls restyled with tokens, so they follow the theme (scoped to win over maplibre-gl.css). */
+.maplibregl-map .maplibregl-ctrl-group:not(:empty) {
+  background-color: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.maplibregl-map .maplibregl-ctrl-group button + button {
+  border-top-color: var(--rule);
+}
+
+:root[data-theme="dark"] .maplibregl-ctrl-icon {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .maplibregl-ctrl-icon {
+    filter: invert(1);
+  }
+}
+
+/*
  * Paper grain: a fixed SVG noise overlay. Decorative only, so it is
  * removed in print and when the user asks for less motion or transparency.
  */

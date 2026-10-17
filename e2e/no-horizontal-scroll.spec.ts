@@ -14,6 +14,10 @@ const PAGES = [
     name: "plan (valid link)",
     path: `/plan?from=IST&to=SJJ&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`,
   },
+  {
+    name: "plan (all city-guide categories)",
+    path: `/plan?from=ESB&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=1&cats=see,museum,viewpoint,restaurant,cafe,cocktail,pub,club`,
+  },
   { name: "plan (invalid link)", path: "/plan?from=IST&to=XXX&depart=2020-01-01&pax=12" },
   { name: "styleguide", path: "/styleguide" },
 ];

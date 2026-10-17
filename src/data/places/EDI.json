@@ -1,0 +1,1782 @@
+{
+ "version": 1,
+ "cityCode": "EDI",
+ "fetchedAt": "2026-10-16T23:41:47.968Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Edinburgh_cityscapes_-_aerial_-_2025-04-19_20.jpg/1280px-Edinburgh_cityscapes_-_aerial_-_2025-04-19_20.jpg",
+  "width": 1280,
+  "height": 720,
+  "author": "瑞丽江的河水",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_cityscapes_-_aerial_-_2025-04-19_20.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/4301292",
+     "name": "Edinburgh Kalesi",
+     "localName": "Edinburgh Castle",
+     "lat": 55.94867,
+     "lon": -3.20041,
+     "address": "Castlehill",
+     "website": "https://www.edinburghcastle.scot/",
+     "openingHours": "Apr 01-Sep 30 09:30-18:00; Oct 01-Dec 23,Dec 27-31,Jan 02-Mar 31 09:30-17:00; Dec 24 09:30-16:00; Jan 01 11:00-17:00; Dec 25-26 off",
+     "wikipediaCount": 57
+    },
+    {
+     "id": "relation/4599",
+     "name": "The Scottish Parliament",
+     "lat": 55.95188,
+     "lon": -3.17523,
+     "website": "https://www.parliament.scot/",
+     "wikipediaCount": 54
+    },
+    {
+     "id": "relation/16769442",
+     "name": "Palace of Holyroodhouse",
+     "lat": 55.9527,
+     "lon": -3.17207,
+     "address": "Canongate",
+     "website": "https://www.royalcollection.org.uk/visit/palace-of-holyroodhouse",
+     "openingHours": "Nov 01-Mar 29 09:30-16:30; Mar 31-Oct 31 09:30-18:00",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/42407060",
+     "name": "St Giles' Cathedral",
+     "lat": 55.94947,
+     "lon": -3.19086,
+     "address": "Royal Mile",
+     "website": "https://www.stgilescathedral.org.uk/",
+     "openingHours": "Apr-Oct Mo-Fr 10:00-18:00; Apr-Oct Sa 09:00-17:00; Apr-Oct,Nov-Mar Su 13:00-17:00; Nov-Mar Mo-Sa 09:00-17:00",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/41893742",
+     "name": "Holyrood Abbey",
+     "lat": 55.95314,
+     "lon": -3.17163,
+     "wikipediaCount": 24
+    },
+    {
+     "id": "node/505014478",
+     "name": "Mons Meg",
+     "lat": 55.94879,
+     "lon": -3.20016,
+     "website": "https://www.edinburghcastle.scot/see-and-do/highlights/mons-meg",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "way/39044819",
+     "name": "Scott Monument",
+     "lat": 55.95236,
+     "lon": -3.19326,
+     "address": "East Princes Street Gardens",
+     "website": "https://www.edinburghmuseums.org.uk/venue/scott-monument",
+     "openingHours": "Mo-Su 10:00-21:00",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/225470834",
+     "name": "St Mary's Episcopal Cathedral",
+     "lat": 55.94861,
+     "lon": -3.21628,
+     "address": "Palmerston Place 23",
+     "website": "https://www.cathedral.net/",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/22412844",
+     "name": "National Monument of Scotland",
+     "lat": 55.95475,
+     "lon": -3.18177,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/287130390",
+     "name": "Greyfriars Kirk",
+     "lat": 55.94664,
+     "lon": -3.19228,
+     "address": "Greyfriars Place",
+     "website": "https://greyfriarskirk.com/",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/62066717",
+     "name": "Ross Fountain",
+     "lat": 55.95006,
+     "lon": -3.20304,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/33710",
+     "name": "Old College",
+     "lat": 55.94742,
+     "lon": -3.18726,
+     "address": "South Bridge",
+     "website": "https://www.ed.ac.uk/",
+     "openingHours": "Mo-Su 08:00-21:30",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/268408103",
+     "name": "Camera Obscura & World of Illusions",
+     "lat": 55.94903,
+     "lon": -3.1956,
+     "address": "Castlehill 549",
+     "website": "https://www.camera-obscura.co.uk/",
+     "openingHours": "08:00-22:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/465938528",
+     "name": "Nelson Monument",
+     "lat": 55.95436,
+     "lon": -3.18258,
+     "website": "https://cultureedinburgh.com/our-venues/nelson-monument",
+     "openingHours": "10:00-15:30",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/2914760336",
+     "name": "The Scotch Whisky Experience",
+     "lat": 55.94874,
+     "lon": -3.19587,
+     "address": "Castlehill 354",
+     "website": "https://www.scotchwhiskyexperience.co.uk/",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/293890858",
+     "name": "John Knox House",
+     "lat": 55.95064,
+     "lon": -3.18508,
+     "address": "High Street 45",
+     "website": "https://www.scottishstorytellingcentre.com/john-knox-house/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/320974678",
+     "name": "Dugald Stewart Monument",
+     "lat": 55.95452,
+     "lon": -3.18443,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/239888879",
+     "name": "Political Martyrs' Monument",
+     "lat": 55.95337,
+     "lon": -3.18579,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/4618730691",
+     "name": "Gladstone's Land",
+     "lat": 55.94943,
+     "lon": -3.19368,
+     "address": "Lawnmarket 477B",
+     "website": "https://www.nts.org.uk/visit/places/gladstones-land",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/62061248",
+     "name": "Church of St John the Evangelist",
+     "lat": 55.95004,
+     "lon": -3.20648,
+     "address": "Princes Street",
+     "website": "https://www.stjohns-edinburgh.org.uk/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/465223757",
+     "name": "St Stephen's Church",
+     "lat": 55.95857,
+     "lon": -3.2035,
+     "address": "St Stephen Street 105",
+     "website": "http://saintstephensstockbridge.com/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/62061368",
+     "name": "The Parish Church of St Cuthbert",
+     "lat": 55.94963,
+     "lon": -3.20512,
+     "address": "Lothian Road 5",
+     "website": "https://www.st-cuthberts.net/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/12223010635",
+     "name": "Melville's Monument",
+     "lat": 55.95422,
+     "lon": -3.19315,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/314597265",
+     "name": "Melville's Monument",
+     "lat": 55.95422,
+     "lon": -3.19315,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/41558984",
+     "name": "Holyrood Distillery",
+     "lat": 55.94302,
+     "lon": -3.17751,
+     "address": "St Leonard's Lane 19",
+     "website": "https://www.holyrooddistillery.co.uk/",
+     "openingHours": "Mo-Su 11:30+",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/2853530751",
+     "name": "Georgian House",
+     "lat": 55.95249,
+     "lon": -3.20821,
+     "address": "Charlotte Square 7",
+     "website": "https://www.nts.org.uk/Property/Georgian-House/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/81243762",
+     "name": "New Town Church",
+     "lat": 55.95408,
+     "lon": -3.19587,
+     "address": "George Street 15-17",
+     "website": "https://www.edinburghnewtownchurch.org.uk/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/2973367148",
+     "name": "The Edinburgh Dungeon",
+     "lat": 55.95108,
+     "lon": -3.19088,
+     "address": "Market Street 31",
+     "website": "https://www.thedungeons.com/edinburgh/en/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/164545444",
+     "name": "Mercat Cross",
+     "lat": 55.94965,
+     "lon": -3.19018,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/442615638",
+     "name": "Brassfounders Column",
+     "lat": 55.94602,
+     "lon": -3.1854,
+     "wikipediaCount": 1
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/5182746",
+     "name": "National Gallery",
+     "lat": 55.95088,
+     "lon": -3.19562,
+     "website": "https://www.nationalgalleries.org/",
+     "openingHours": "Mo-Su 10:00-17:00; Th 10:00-19:00",
+     "wikipediaCount": 39
+    },
+    {
+     "id": "way/467226683",
+     "name": "National Museum of Scotland",
+     "lat": 55.94706,
+     "lon": -3.18953,
+     "address": "Chambers Street",
+     "website": "https://www.nms.ac.uk/national-museum-of-scotland",
+     "openingHours": "Mo-Su 10:00-17:00; Jan 01 12:00-17:00; Dec 25 off; Dec 26 12:00-17:00",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "way/73090302",
+     "name": "Scottish National Portrait Gallery",
+     "lat": 55.95548,
+     "lon": -3.1936,
+     "address": "Queen Street 1",
+     "website": "https://www.nationalgalleries.org/visit/scottish-national-portrait-gallery",
+     "openingHours": "Mo-Su 10:00-17:00; Th 10:00-19:00",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "node/4618730690",
+     "name": "Writers' Museum",
+     "lat": 55.94969,
+     "lon": -3.19374,
+     "address": "Lady Stair's Close",
+     "website": "https://www.edinburghmuseums.org.uk/venue/writers-museum",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/259067386",
+     "name": "Museum of Edinburgh",
+     "lat": 55.95121,
+     "lon": -3.17943,
+     "address": "Canongate 142-146",
+     "website": "https://www.edinburghmuseums.org.uk/venue/museum-edinburgh",
+     "openingHours": "Mo-Sa 10:00-17:00; Aug: Su 12:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/25946269",
+     "name": "Dynamic Earth",
+     "lat": 55.95053,
+     "lon": -3.17441,
+     "website": "https://www.dynamicearth.org.uk/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2955931322",
+     "name": "Museum of Childhood",
+     "lat": 55.95033,
+     "lon": -3.18551,
+     "address": "High Street 42",
+     "website": "https://www.edinburghmuseums.org.uk/venue/museum-childhood",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/4618730716",
+     "name": "Museum on the Mound",
+     "lat": 55.95019,
+     "lon": -3.19325,
+     "address": "The Mound",
+     "website": "https://www.museumonthemound.com/",
+     "openingHours": "Mo,Su off; Tu-Fr 10:00-17:00; Sa,PH 13:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/5182745",
+     "name": "Royal Scottish Academy",
+     "lat": 55.95167,
+     "lon": -3.19627,
+     "address": "The Mound",
+     "website": "https://www.royalscottishacademy.org/",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/41893740",
+     "name": "The King's Gallery",
+     "lat": 55.95259,
+     "lon": -3.17388,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/70826506",
+     "name": "Fruitmarket",
+     "lat": 55.95126,
+     "lon": -3.1897,
+     "address": "Market Street 45",
+     "website": "https://www.fruitmarket.co.uk/",
+     "openingHours": "11:00-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/41299975",
+     "name": "National War Museum",
+     "lat": 55.94879,
+     "lon": -3.20166,
+     "website": "https://www.nms.ac.uk/national-war-museum/",
+     "openingHours": "Apr-Sep: Mo-Su 09:45-17:45; Oct-Mar: Mo-Su 09:45-16:45",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/291214494",
+     "name": "Talbot Rice Gallery",
+     "lat": 55.94707,
+     "lon": -3.18777,
+     "address": "South Bridge",
+     "website": "https://www.trg.ed.ac.uk/",
+     "openingHours": "Tu-Sa 10:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/70954995",
+     "name": "The People's Story Museum",
+     "lat": 55.95148,
+     "lon": -3.17994,
+     "address": "Canongate 163",
+     "website": "https://www.edinburghmuseums.org.uk/Venues/The-People-s-Story",
+     "openingHours": "Mo-Sa 10:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/70955023",
+     "name": "Trinity Apse",
+     "lat": 55.95096,
+     "lon": -3.18568,
+     "openingHours": "\"on appointment\"",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/42261848",
+     "name": "St Cecilia's Hall",
+     "lat": 55.94899,
+     "lon": -3.1864,
+     "website": "https://www.stcecilias.ed.ac.uk/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/9422760984",
+     "name": "Museum of Scottish Fire Heritage",
+     "lat": 55.96378,
+     "lon": -3.18384,
+     "address": "Dryden Terrace 1A",
+     "website": "https://museumofscottishfireheritage.org/",
+     "openingHours": "Tu-Sa 10:00-16:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/57709519",
+     "name": "RBGE Inverleith House",
+     "lat": 55.965,
+     "lon": -3.21015,
+     "website": "http://www.rbge.org.uk/the-gardens/edinburgh/inverleith-house",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/6715804556",
+     "name": "The Royal Scots Dragoon Guards Museum",
+     "lat": 55.94809,
+     "lon": -3.20088,
+     "website": "https://www.scotsdgmuseum.com/",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/446654897",
+     "name": "The Royal Scots Regimental Museum",
+     "lat": 55.94824,
+     "lon": -3.20038,
+     "website": "https://www.theroyalscots.co.uk/museum/",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/5025640452",
+     "name": "Anatomical Museum",
+     "lat": 55.94485,
+     "lon": -3.1901,
+     "website": "https://www.ed.ac.uk/biomedical-sciences/anatomy/anatomical-museum",
+     "openingHours": "Sa[-1] 10:00-16:00; Jun-Jul off"
+    },
+    {
+     "id": "node/11503362946",
+     "name": "Close",
+     "lat": 55.95566,
+     "lon": -3.20224,
+     "address": "Howe Street 4B",
+     "website": "https://www.gallery-close.com/",
+     "openingHours": "We-Sa 10:00-18:00"
+    },
+    {
+     "id": "node/499991519",
+     "name": "Dovecot Gallery",
+     "lat": 55.94821,
+     "lon": -3.18484,
+     "address": "Infirmary Street 10",
+     "website": "https://dovecotstudios.com/",
+     "openingHours": "Mo-Sa 10:00-17:00; Su off"
+    },
+    {
+     "id": "node/5856860528",
+     "name": "Ingleby Gallery",
+     "lat": 55.95784,
+     "lon": -3.19135,
+     "address": "Barony Street 33",
+     "website": "https://www.inglebygallery.com/",
+     "openingHours": "We-Sa 11:00-17:00; Aug Mo-Sa 11:00-17:00"
+    },
+    {
+     "id": "node/4625806993",
+     "name": "Museum Collections Centre",
+     "lat": 55.9577,
+     "lon": -3.19273,
+     "address": "Broughton Market 10",
+     "website": "https://www.edinburghmuseums.org.uk/Venues/Museum-Collections-Centre",
+     "openingHours": "Tu[1] 14:00+ || \"by appointment\""
+    },
+    {
+     "id": "node/2298043778",
+     "name": "Saorsa Art Gallery",
+     "lat": 55.95806,
+     "lon": -3.20934,
+     "address": "Deanhaugh Street 8",
+     "website": "https://www.saorsa-art.com/",
+     "openingHours": "Th-Su 12:00-16:00"
+    },
+    {
+     "id": "node/12670410517",
+     "name": "Scott Lawrie Gallery",
+     "lat": 55.94613,
+     "lon": -3.20651,
+     "address": "Chuckie Pend 2",
+     "website": "https://www.scottlawrie.com/",
+     "openingHours": "Mo-Tu,Su off; We-Sa 11:00-18:00"
+    },
+    {
+     "id": "node/2934543737",
+     "name": "Stills",
+     "lat": 55.95068,
+     "lon": -3.19021,
+     "address": "Cockburn Street 23",
+     "website": "https://www.stills.org/",
+     "openingHours": "Tu-Sa 11:00-17:00"
+    },
+    {
+     "id": "node/727348494",
+     "name": "Studio Bizio",
+     "lat": 55.95903,
+     "lon": -3.21057,
+     "address": "Raeburn Place 20A",
+     "website": "https://www.studiobizio.com/",
+     "openingHours": "Mo-Sa 10:00-17:30"
+    },
+    {
+     "id": "node/3072411821",
+     "name": "Surgeons' Hall Museums",
+     "lat": 55.94677,
+     "lon": -3.18468,
+     "address": "Nicolson Street",
+     "website": "https://museum.rcsed.ac.uk/",
+     "openingHours": "Mo-Su 10:00-17:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1484679632",
+     "name": "North Viewpoint",
+     "lat": 55.95604,
+     "lon": -3.18249
+    },
+    {
+     "id": "node/3798302141",
+     "name": "Photo trail",
+     "lat": 55.95277,
+     "lon": -3.19177
+    },
+    {
+     "id": "node/259860021",
+     "name": "South Viewpoint",
+     "lat": 55.95412,
+     "lon": -3.18085
+    },
+    {
+     "id": "node/9775076217",
+     "name": "View over Dean Village",
+     "lat": 55.95322,
+     "lon": -3.21456
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1707107355",
+     "name": "10 To 10 In Delhi",
+     "lat": 55.94545,
+     "lon": -3.18479,
+     "address": "Nicolson Street 67",
+     "website": "https://10to10indelhi.co.uk/",
+     "openingHours": "10:00-22:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2096817812",
+     "name": "Avery",
+     "lat": 55.95783,
+     "lon": -3.20649,
+     "address": "St Stephen Street 54",
+     "website": "https://www.averyedi.co.uk/",
+     "openingHours": "Tu-Sa 17:00-20:00",
+     "cuisine": "fine dining",
+     "detailed": true
+    },
+    {
+     "id": "node/2096740503",
+     "name": "Bella Italia",
+     "lat": 55.95025,
+     "lon": -3.18785,
+     "address": "North Bridge 54-56",
+     "website": "https://www.bellaitalia.co.uk/restaurants/edinburgh/northbridge",
+     "openingHours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3201174951",
+     "name": "Bento",
+     "lat": 55.95923,
+     "lon": -3.21307,
+     "address": "Raeburn Place 78",
+     "website": "https://www.bento.uk.com/",
+     "openingHours": "Mo-Su 12:00-21:00",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/2382624246",
+     "name": "Bento Ya by Ishi",
+     "lat": 55.94593,
+     "lon": -3.20483,
+     "address": "Bread Street 13",
+     "website": "https://bentoya.co.uk/",
+     "openingHours": "Mo-Th 12:00-15:00, 17:00-22:30; Fr 12:00-15:00, 17:00-23:00; Sa 13:00-23:00; Su 13:00-22:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/504331543",
+     "name": "Blonde",
+     "lat": 55.9425,
+     "lon": -3.17941,
+     "address": "St Leonard's Street 71-75",
+     "website": "https://blonderestaurant.co.uk/",
+     "openingHours": "Mo 18:00-21:00; Tu-Sa 12:00-14:30, 18:00-22:00; Su 12:00-14:30, 18:00-21:00",
+     "cuisine": "scottish, european",
+     "detailed": true
+    },
+    {
+     "id": "node/1951328191",
+     "name": "Bread Meats Bread",
+     "lat": 55.94631,
+     "lon": -3.20599,
+     "address": "Lothian Road 90,92",
+     "website": "https://breadmeatsbread.com/",
+     "openingHours": "11:00-22:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/2880219553",
+     "name": "Bubba Q",
+     "lat": 55.95013,
+     "lon": -3.18868,
+     "address": "High Street 209-213",
+     "website": "https://www.bubbaq.co.uk/",
+     "openingHours": "Su-Th 12:00-21:00; Fr-Sa 12:00-22:00",
+     "cuisine": "american, barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/2774790567",
+     "name": "Café Andamiro",
+     "lat": 55.9419,
+     "lon": -3.18377,
+     "address": "Buccleuch Street 113",
+     "website": "https://www.cafe-andamiro.co.uk/",
+     "openingHours": "Tu-Sa 11:30-15:00, Tu-Sa 17:00-21:00",
+     "cuisine": "korean, japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/2114384586",
+     "name": "Café Saint Honoré",
+     "lat": 55.95409,
+     "lon": -3.20024,
+     "address": "Thistle Street North West Lane 34",
+     "website": "https://www.cafesthonore.com/",
+     "openingHours": "Mo-Fr 12:00-14:00, 17:15-22:00; Sa-Su 12:00-14:00, 17:15-22:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2089220368",
+     "name": "Chaskaa",
+     "lat": 55.94116,
+     "lon": -3.20328,
+     "address": "Leven Street 30-32",
+     "website": "https://www.chaskaaindian.co.uk/",
+     "openingHours": "Tu-Th 14:00-20:00; Fr,Sa 13:00-22:30; Su 14:00-22:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/44551391",
+     "name": "Ciao Roma",
+     "lat": 55.94745,
+     "lon": -3.18597,
+     "address": "South Bridge 64",
+     "website": "https://www.ciaoroma.co.uk/",
+     "openingHours": "12:00-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2345480633",
+     "name": "Ciao Roma",
+     "lat": 55.94741,
+     "lon": -3.1857,
+     "address": "Drummond Street 3-3A",
+     "website": "http://www.hispaniola-edinburgh.co.uk/",
+     "openingHours": "Mo-Su 12:00-23:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3120543866",
+     "name": "Côte Brasserie",
+     "lat": 55.95382,
+     "lon": -3.20059,
+     "address": "Frederick Street 51",
+     "website": "https://www.cote.co.uk/restaurant/edinburgh",
+     "openingHours": "Mo-Sa 08:00-23:00; Sa 09:00-23:00; Su 09:00-22:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/3000236862",
+     "name": "Curran Geal",
+     "lat": 55.94137,
+     "lon": -3.20327,
+     "address": "Leven Street 20",
+     "website": "http://www.currangeal.co.uk/",
+     "openingHours": "Tu-Fr 07:00-17:00; Sa 09:00-17:00; Su 10:00-16:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/2075188414",
+     "name": "Dulse Seafood & Wine",
+     "lat": 55.95086,
+     "lon": -3.20999,
+     "address": "Queensferry Street 17",
+     "website": "https://www.dulse.co.uk/",
+     "openingHours": "Tu-We 17:00-24:00; Th-Sa 12:00-24:00",
+     "cuisine": "seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/2821050924",
+     "name": "eleanore",
+     "lat": 55.96172,
+     "lon": -3.17988,
+     "website": "https://www.eleanore.uk/",
+     "openingHours": "Mo-Su 12:00-16:30,17:30-23:00; Tu off; We off; Th off; Fr 16:00-23:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/3103808259",
+     "name": "Fat Hippo",
+     "lat": 55.9528,
+     "lon": -3.2026,
+     "address": "George Street 95",
+     "website": "https://fathippo.co.uk/locations/edinburgh/",
+     "openingHours": "Mo-Su 11:30-22:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/2114384659",
+     "name": "Fishers in the City",
+     "lat": 55.95384,
+     "lon": -3.19953,
+     "address": "Thistle Street 58",
+     "website": "http://www.fishersbistros.co.uk/",
+     "openingHours": "Mo-Su 12:00-22:30",
+     "cuisine": "seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/1327629863",
+     "name": "Frenchie",
+     "lat": 55.95706,
+     "lon": -3.18839,
+     "address": "Broughton Street 14",
+     "website": "https://www.barfrenchie.com/",
+     "openingHours": "Mo-We 12:00-15:00,17:00-21:00; Th-Sa 12:00-22:00; Su 12:00-21:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/635745118",
+     "name": "Fresh Mex",
+     "lat": 55.94599,
+     "lon": -3.20525,
+     "address": "Lothian Road 119",
+     "website": "https://freshmex.co.uk/",
+     "openingHours": "Mo 09:30-21:00; Tu-We 09:30-22:00; Th 09:30-22:30; Fr-Sa 11:00-23:00; Su 10:00-22:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/2729707981",
+     "name": "Gautam's",
+     "lat": 55.95658,
+     "lon": -3.16175,
+     "address": "Dalziel Place 13-14",
+     "website": "https://www.gautams.co.uk/",
+     "openingHours": "Mo-Th 16:00-22:30; Fr,Sa 13:00-22:30; Su 13:00-22:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/588498407",
+     "name": "Golden Ambal",
+     "lat": 55.96248,
+     "lon": -3.17886,
+     "website": "https://www.goldenambal.com/",
+     "openingHours": "Tu-Th 14:00-22:30; Fr 14:00-23:00; Sa 12:00-23:00; Su 12:00-22:00; Mo off",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2089174652",
+     "name": "Gurkha",
+     "lat": 55.94259,
+     "lon": -3.20093,
+     "address": "Brougham Place 6-6A",
+     "website": "https://gurkhaedinburgh.com/",
+     "openingHours": "Mo-Th 14:00-23:00; Fr-Su 11:30-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/499994245",
+     "name": "Harajuku Kitchen",
+     "lat": 55.94063,
+     "lon": -3.20393,
+     "address": "Gillespie Place 10",
+     "website": "https://harajukukitchen.co.uk/",
+     "openingHours": "Mo-Fr 12:00-15:00, 17:00-22:30; Sa 12:00-22:30; Su 12:00-16:00, 17:00-21:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1661691450",
+     "name": "Hoi An",
+     "lat": 55.94029,
+     "lon": -3.20427,
+     "address": "Bruntsfield Place 4,5",
+     "website": "https://hoianuk.com/",
+     "openingHours": "12:00-22:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/3397807661",
+     "name": "Holyrood",
+     "lat": 55.9492,
+     "lon": -3.18212,
+     "address": "Holyrood Road 20",
+     "website": "https://www.pibroch-scottish-restaurant.co.uk/",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/2103111403",
+     "name": "Indaba",
+     "lat": 55.94298,
+     "lon": -3.20419,
+     "address": "Lochrin Terrace 3",
+     "website": "https://www.edindaba.co.uk/",
+     "openingHours": "Mo-Th 17:00-21:30; Fr-Sa 17:00-22:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/2891470274",
+     "name": "Jolly",
+     "lat": 55.95842,
+     "lon": -3.18356,
+     "address": "Elm Row 9",
+     "website": "https://jollyrestaurant.co.uk/",
+     "openingHours": "Mo-Fr 12:00-14:30, 17:00-21:30; Sa 12:00-21:30; Su 12:30-21:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2396871205",
+     "name": "Kahani",
+     "lat": 55.9581,
+     "lon": -3.18503,
+     "website": "https://kahanirestaurant.co.uk/",
+     "openingHours": "Mo-Su 12:00+",
+     "cuisine": "indian",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/726796589",
+     "name": "Artisan Roast",
+     "lat": 55.95929,
+     "lon": -3.21383,
+     "address": "Raeburn Place 102A",
+     "website": "https://artisanroast.co.uk/pages/stockbridge-cafe",
+     "openingHours": "Mo-Fr 08:30-17:00; Sa-Su 09:30-17:00",
+     "cuisine": "coffee shop, pastry, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/2081456442",
+     "name": "Artisan Roast",
+     "lat": 55.9579,
+     "lon": -3.18887,
+     "address": "Broughton Street 57",
+     "website": "https://www.artisanroast.co.uk/",
+     "openingHours": "Mo-Fr 08:00-18:30; Sa-Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2381071966",
+     "name": "Bing Tea",
+     "lat": 55.94467,
+     "lon": -3.18539,
+     "address": "West Nicolson Street 37",
+     "website": "http://www.adorabubbletea.com/",
+     "openingHours": "Mo-Fr 12:00-18:00",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/366191581",
+     "name": "Black Medicine Coffee Co",
+     "lat": 55.94714,
+     "lon": -3.18579,
+     "address": "Nicolson Street 2",
+     "website": "http://www.blackmed.co.uk/",
+     "openingHours": "Mo-Sa 08:00-19:00; Su 10:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6720646285",
+     "name": "Black Rabbit",
+     "lat": 55.94286,
+     "lon": -3.2019,
+     "address": "Brougham Street 33",
+     "website": "https://www.blackrabbitedinburgh.co.uk/",
+     "openingHours": "Tu-Su 10:00-16:00",
+     "cuisine": "coffee shop, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/635745105",
+     "name": "Black Sheep Coffee",
+     "lat": 55.94592,
+     "lon": -3.20522,
+     "address": "Lothian Road 123",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/lothian-road",
+     "openingHours": "Mo-Fr 06:00-21:00; Sa 06:30-20:00; Su 07:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1514368237",
+     "name": "Black Sheep Coffee",
+     "lat": 55.95315,
+     "lon": -3.19116,
+     "address": "Princes Street 24-25",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/25-princes-street",
+     "openingHours": "Mo-Sa 06:30-20:00; Su 07:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1977975407",
+     "name": "Black Sheep Coffee",
+     "lat": 55.95326,
+     "lon": -3.19757,
+     "address": "George Street 32",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/32-george-street",
+     "openingHours": "Mo-Fr 06:00-21:00; Sa 06:30-21:00; Su 07:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2073161538",
+     "name": "Black Sheep Coffee",
+     "lat": 55.94944,
+     "lon": -3.21022,
+     "address": "Shandwick Place 56",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/shandwick-place",
+     "openingHours": "Mo-Fr 06:30-22:00; Sa-Su 06:30-21:30",
+     "cuisine": "coffee shop, sandwich, cake, pastry",
+     "detailed": true
+    },
+    {
+     "id": "node/2112387188",
+     "name": "Black Sheep Coffee",
+     "lat": 55.95053,
+     "lon": -3.18743,
+     "address": "North Bridge 25",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/edinburgh-north-bridge",
+     "openingHours": "05:45-20:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3182685206",
+     "name": "Black Sheep Coffee",
+     "lat": 55.95179,
+     "lon": -3.19907,
+     "address": "Princes Street 95-96",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/95-princes-street",
+     "openingHours": "Mo-Sa 06:30-22:00; Su 07:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2103111398",
+     "name": "Brekkie",
+     "lat": 55.9458,
+     "lon": -3.21033,
+     "address": "Morrison Street 107,109",
+     "website": "http://weecoffeebar.co.uk/",
+     "openingHours": "Mo-Fr 07:00-15:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/3829574785",
+     "name": "Burr & Co",
+     "lat": 55.95387,
+     "lon": -3.19649,
+     "address": "George Street 21",
+     "website": "https://www.theburrandco.co.uk/",
+     "openingHours": "Mo-Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/444742617",
+     "name": "Caffè Nero",
+     "lat": 55.94789,
+     "lon": -3.18591,
+     "address": "South Bridge 54",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-blackwells",
+     "openingHours": "Mo-Fr 07:00-18:30; Sa 07:30-18:30; Su 10:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/504631805",
+     "name": "Caffè Nero",
+     "lat": 55.94491,
+     "lon": -3.1842,
+     "address": "Nicolson Street 91,93",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-nicolson-st",
+     "openingHours": "Mo-Fr 07:00-18:30; Sa 07:30-18:30; Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1106076816",
+     "name": "Caffè Nero",
+     "lat": 55.95791,
+     "lon": -3.20827,
+     "address": "Glanville Place 4-6",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-glanville-place",
+     "openingHours": "Mo-Sa 07:30-18:30; Su 08:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2085414547",
+     "name": "Caffè Nero",
+     "lat": 55.95244,
+     "lon": -3.18909,
+     "address": "Waverley Bridge 4",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-waverley",
+     "openingHours": "Mo-Sa 05:00-22:30; Su 07:00-21:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2097398013",
+     "name": "Caffè Nero",
+     "lat": 55.94967,
+     "lon": -3.18988,
+     "address": "High Street 192",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-royal-mile",
+     "openingHours": "Mo-Fr 06:30-18:30; Sa-Su 07:00-18:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2106068170",
+     "name": "Caffè Nero",
+     "lat": 55.94799,
+     "lon": -3.20598,
+     "address": "Lothian Road 43-45",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-lothian-rd",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:30-19:00; Su 08:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2126539512",
+     "name": "Caffè Nero",
+     "lat": 55.94915,
+     "lon": -3.21082,
+     "address": "Stafford Street 2",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-coates-crescent",
+     "openingHours": "Mo-Fr 07:00-18:00; Sa 07:30-18:00; Su 08:30-18:00",
+     "cuisine": "coffee shop, sandwich, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/4866558381",
+     "name": "Caffè Nero",
+     "lat": 55.94366,
+     "lon": -3.19486,
+     "address": "Lister Square",
+     "website": "https://www.caffenero.com/uk/stores/edinburgh-quartermile",
+     "openingHours": "Mo-Fr 07:30-18:00; Sa,Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2993795234",
+     "name": "Cairngorm",
+     "lat": 55.9512,
+     "lon": -3.21109,
+     "address": "Melville Place 1",
+     "website": "https://cairngorm.coffee/",
+     "openingHours": "Mo-Sa 07:00-19:00; Su 08:00-19:00",
+     "cuisine": "breakfast, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2974293122",
+     "name": "Cappuccino",
+     "lat": 55.95117,
+     "lon": -3.18495,
+     "address": "Jeffrey Street 25-27",
+     "website": "https://www.instagram.com/cappuccinoedinburgh/",
+     "openingHours": "Mo-Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2718792117",
+     "name": "Chayan",
+     "lat": 55.94898,
+     "lon": -3.18719,
+     "address": "South Bridge 91",
+     "website": "https://www.chayan.uk/",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2897544781",
+     "name": "Coffee Saints",
+     "lat": 55.9477,
+     "lon": -3.19346,
+     "address": "Candlemaker Row 86",
+     "website": "https://www.coffeesaints.co.uk/",
+     "openingHours": "Mo-Su 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2590442013",
+     "name": "Costa",
+     "lat": 55.9485,
+     "lon": -3.18697,
+     "address": "South Bridge 78",
+     "website": "https://www.costa.co.uk/stores/edinburgh-sth-bridge",
+     "openingHours": "Mo-Fr 06:30-18:30; Sa 07:00-18:30; Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3271025731",
+     "name": "Costa",
+     "lat": 55.95213,
+     "lon": -3.18962,
+     "website": "https://www.costa.co.uk/stores/edinburgh-waverley",
+     "openingHours": "Mo-Sa 05:15-22:00; Su 07:30-20:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3349693338",
+     "name": "Costa",
+     "lat": 55.95215,
+     "lon": -3.19695,
+     "address": "Princes Street 78",
+     "website": "https://www.costa.co.uk/stores/edinburgh-princes-st-79",
+     "openingHours": "Mo-Sa 06:00-21:00; Su 07:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4274042303",
+     "name": "Costa",
+     "lat": 55.95141,
+     "lon": -3.18365,
+     "address": "East Market Street 35",
+     "website": "https://www.costa.co.uk/stores/edin-east-market-st",
+     "openingHours": "Mo-Fr 07:00-18:00; Sa 07:30-17:30; Su 08:30-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2076694668",
+     "name": "Croccante & Co",
+     "lat": 55.95174,
+     "lon": -3.21258,
+     "website": "https://croccanteandco.co.uk/",
+     "openingHours": "Mo-Fr 08:00-17:00; Sa 08:30-17:00; Su 09:00-17:00",
+     "cuisine": "breakfast, cake, coffee shop, italian, sandwich",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1234959188",
+     "name": "All Bar One",
+     "lat": 55.95378,
+     "lon": -3.19708,
+     "address": "George Street 29-31",
+     "website": "https://www.allbarone.co.uk/national-search/scotland-and-northern-ireland/all-bar-one-george-street-edinburgh#/",
+     "openingHours": "Mo-We 08:00-23:00; Th 08:00-00:00; Fr 08:00-01:00; Sa 09:00-01:00; Su 09:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/1951380239",
+     "name": "All Bar One",
+     "lat": 55.94749,
+     "lon": -3.20696,
+     "address": "Lothian Road 50",
+     "website": "https://www.allbarone.co.uk/allbaroneexchangeplazaedinburgh/"
+    },
+    {
+     "id": "node/2888279093",
+     "name": "Slug & Lettuce",
+     "lat": 55.95636,
+     "lon": -3.18557,
+     "address": "Greenside Place 61 / 8",
+     "website": "https://www.slugandlettuce.co.uk/edinburgh-omni-centre"
+    },
+    {
+     "id": "node/2100296385",
+     "name": "The Slug and Lettuce",
+     "lat": 55.95258,
+     "lon": -3.20414,
+     "address": "George Street 111-113",
+     "website": "https://www.slugandlettuce.co.uk/edinburgh-george-street"
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/588498410",
+     "name": "Brass Monkey",
+     "lat": 55.96403,
+     "lon": -3.17783,
+     "address": "Leith Walk 362",
+     "website": "https://www.brassmonkeyleith.com/",
+     "openingHours": "Mo 15:00-01:00, Tu-Su 12:00-01:00",
+     "cuisine": "burger, hot dog",
+     "detailed": true
+    },
+    {
+     "id": "node/2323807241",
+     "name": "The Advocate",
+     "lat": 55.94952,
+     "lon": -3.18795,
+     "address": "Blair Street 7",
+     "website": "https://www.belhaven.co.uk/pubs/midlothian/advocate",
+     "openingHours": "Su-Th 12:00-23:00; Fr-Sa 12:00-00:00",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/2317496551",
+     "name": "Arthur's Food and Drink",
+     "lat": 55.93966,
+     "lon": -3.16998,
+     "address": "Holyrood Park Road 18",
+     "website": "https://www.accom.ed.ac.uk/during-your-stay/catering/",
+     "openingHours": "Mo-Fr 12:00-23:00; Sa,Su 19:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4114821564",
+     "name": "Badger & Co",
+     "lat": 55.95205,
+     "lon": -3.20363,
+     "address": "Castle Street 32",
+     "website": "https://www.badgerandco.com/",
+     "openingHours": "Mo-Su 09:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2338724156",
+     "name": "Biddy Mulligans",
+     "lat": 55.94797,
+     "lon": -3.19488,
+     "address": "Grassmarket 94,96",
+     "website": "https://www.biddymulligans.co.uk/",
+     "openingHours": "Mo-Su 08:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/499994553",
+     "name": "Black Ivy",
+     "lat": 55.93759,
+     "lon": -3.20277,
+     "website": "https://weareblackivy.com/",
+     "openingHours": "08:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1367318907",
+     "name": "Bow Bar",
+     "lat": 55.94842,
+     "lon": -3.19414,
+     "address": "West Bow 80",
+     "website": "https://www.thebowbar.co.uk/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/322064154",
+     "name": "Brass Monkey Grange",
+     "lat": 55.9368,
+     "lon": -3.18064,
+     "address": "Grange Road 1",
+     "website": "https://www.brassmonkeygrange.co.uk/",
+     "openingHours": "Su-We 12:00-00:00; Th-Sa 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "way/1251687153",
+     "name": "BrewDog",
+     "lat": 55.95232,
+     "lon": -3.18901,
+     "website": "https://drink.brewdog.com/uk/edinburgh-waverley",
+     "openingHours": "Mo-We 07:00-23:00; Th 07:30-23:30; Fr-Sa 08:00-24:00; Su 11:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/57542915",
+     "name": "Cafe Royal",
+     "lat": 55.9538,
+     "lon": -3.19048,
+     "address": "West Register Street 19",
+     "website": "http://www.caferoyaledinburgh.co.uk/",
+     "openingHours": "Mo-We 11:00-23:00; Th 11:00-00:00; Fr-Sa 11:00-01:00; Su 11:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2338302328",
+     "name": "Cloisters Bar",
+     "lat": 55.94327,
+     "lon": -3.20188,
+     "address": "Brougham Street 26",
+     "website": "https://www.cloistersbar.com/",
+     "openingHours": "Mo-Th 12:00-00:00; Fr-Sa 12:00-01:00; Su 12:30-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3829574786",
+     "name": "Copper Blossom",
+     "lat": 55.95267,
+     "lon": -3.20336,
+     "address": "George Street 107",
+     "website": "https://www.copperblossom.com/",
+     "openingHours": "Mo-Su 11:45-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2109786401",
+     "name": "Coyote Ugly",
+     "lat": 55.95071,
+     "lon": -3.20633,
+     "address": "South Charlotte Street 4",
+     "website": "https://www.coyoteuglysaloonuk.com/",
+     "openingHours": "Mo-Su 12:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/727348502",
+     "name": "Crybaby",
+     "lat": 55.95859,
+     "lon": -3.21038,
+     "address": "Dean Street 4-6",
+     "website": "https://linktr.ee/crybabyedinburgh",
+     "openingHours": "We-Su 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2555487974",
+     "name": "Devil's Advocate",
+     "lat": 55.9503,
+     "lon": -3.19164,
+     "address": "Advocate's Close 9",
+     "website": "https://devilsadvocateedinburgh.co.uk/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2934543718",
+     "name": "Ecco Vino",
+     "lat": 55.95066,
+     "lon": -3.19041,
+     "address": "Cockburn Street 19",
+     "website": "https://eccovinoedinburgh.com/",
+     "openingHours": "Su-Th 12:00-23:00, Fr,Sa 12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2697752625",
+     "name": "Fayre Play",
+     "lat": 55.95707,
+     "lon": -3.18672,
+     "address": "Picardy Place 14",
+     "website": "https://thefayreplay.co.uk/edinburgh/",
+     "openingHours": "We-Th 17:00-23:00; Fr 16:00-00:00; Sa 12:00-00:00; Su 12:30-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1367308785",
+     "name": "Fiddler's Arms",
+     "lat": 55.9469,
+     "lon": -3.19787,
+     "address": "Grassmarket 11-13",
+     "website": "https://www.thefiddlersarms.com/",
+     "openingHours": "Mo-Th,Su 12:00-00:00; Fr-Sa 11:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/41483829",
+     "name": "Fierce Bar",
+     "lat": 55.95145,
+     "lon": -3.20531,
+     "address": "Rose Street 167",
+     "website": "https://fiercebeer.com/pages/edinburgh-bar",
+     "openingHours": "Tu-Th 14:00-23:00; Fr-Sa 12:00-00:00; Su 12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/634866813",
+     "name": "Footlights Bar & Grill",
+     "lat": 55.94604,
+     "lon": -3.20366,
+     "address": "Spittal Street 7",
+     "website": "https://www.footlightsbar.co.uk/",
+     "openingHours": "Mo-Su 10:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3170337812",
+     "name": "Freddy's",
+     "lat": 55.95245,
+     "lon": -3.20037,
+     "address": "Frederick Street 24A",
+     "website": "https://www.freddysedin.com/",
+     "openingHours": "Mo-Su 00:00-03:00,16:00-24:00; Th,Fr 00:00-03:00,14:00-24:00; Sa 00:00-03:00,12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2338357475",
+     "name": "George IV Bar",
+     "lat": 55.94814,
+     "lon": -3.19164,
+     "address": "George IV Bridge 54-55",
+     "website": "https://www.georgeivbar.com/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2110838419",
+     "name": "Ghillie-Dhu",
+     "lat": 55.9498,
+     "lon": -3.20805,
+     "address": "Rutland Place 6",
+     "website": "https://ghillie-dhu.co.uk/",
+     "openingHours": "Mo-Fr 11:00-03:00; Sa-Su 10:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2338734297",
+     "name": "Greyfriars Bobby",
+     "lat": 55.94682,
+     "lon": -3.19151,
+     "address": "Candlemaker Row 34",
+     "website": "https://www.nicholsonspubs.co.uk/restaurants/scotlandandnorthernireland/greyfriarsbobbysbarcandlemakerrowedinburgh",
+     "openingHours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:30-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2100295733",
+     "name": "Hanover Tap",
+     "lat": 55.95453,
+     "lon": -3.19814,
+     "address": "Hanover Street 112",
+     "website": "https://www.crafted-social.co.uk/hanover-tap-edinburgh",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/705831581",
+     "name": "Haymarket",
+     "lat": 55.94638,
+     "lon": -3.21618,
+     "address": "West Maitland Street 11-14A",
+     "website": "https://www.nicholsonspubs.co.uk/haymarketedinburgh/",
+     "openingHours": "Mo-Th 10:00-00:00; Fr-Sa 10:00-01:00; Su 11:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10853538417",
+     "name": "Herringbone",
+     "lat": 55.95741,
+     "lon": -3.17287,
+     "website": "https://www.herringbone-abbeyhill.co.uk/",
+     "openingHours": "Fr-Sa 09:00-24:00; Su-Th 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4155675760",
+     "name": "Jackson the Tailor",
+     "lat": 55.95375,
+     "lon": -3.1882,
+     "address": "Leith Street 5-11",
+     "website": "https://www.jacksonthetailor.co.uk/",
+     "openingHours": "Mo-Th 16:00-01:00; Fr-Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1249972539",
+     "name": "Jeremiah's Taproom",
+     "lat": 55.95836,
+     "lon": -3.18362,
+     "address": "Elm Row 7-8",
+     "website": "https://www.jeremiahstaproom.co.uk/",
+     "cuisine": "fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/1369533379",
+     "name": "Joseph Pearce",
+     "lat": 55.95899,
+     "lon": -3.18302,
+     "address": "Elm Row 23",
+     "website": "https://www.josephpearceedinburgh.co.uk/",
+     "openingHours": "Mo-We 15:00-24:00; Th,Su 12:00-24:00; Fr-Sa 12:00-01:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/522823456",
+     "name": "Hangar 5",
+     "lat": 55.94601,
+     "lon": -3.18821,
+     "website": "https://www.eusa.ed.ac.uk/eatdrinkshop/findaspace/hangar5",
+     "openingHours": "Mo-Fr,Su off; Sa 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3259778902",
+     "name": "La Belle Angèle",
+     "lat": 55.94838,
+     "lon": -3.18739,
+     "address": "Hastie's Close 11",
+     "website": "https://la-belleangele.com/",
+     "openingHours": "Mo-Su 19:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/483044126",
+     "name": "Sneaky Pete's",
+     "lat": 55.94817,
+     "lon": -3.19148,
+     "address": "Cowgate 73",
+     "website": "https://sneakypetes.co.uk/",
+     "openingHours": "Mo-Su 19:00-27:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3829574791",
+     "name": "Stramash",
+     "lat": 55.94856,
+     "lon": -3.1878,
+     "address": "Cowgate 209",
+     "website": "https://www.stramashedinburgh.com/",
+     "openingHours": "Mo-Su 17:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/483043342",
+     "name": "Legends",
+     "lat": 55.94818,
+     "lon": -3.19158,
+     "address": "Cowgate 71",
+     "openingHours": "Mo-Su 20:00-03:00"
+    },
+    {
+     "id": "node/11042738372",
+     "name": "Shanghai Club",
+     "lat": 55.95357,
+     "lon": -3.19608,
+     "address": "George Street 16",
+     "website": "https://shanghaiclub.co.uk/"
+    },
+    {
+     "id": "node/3201174955",
+     "name": "Subway Cowgate",
+     "lat": 55.94817,
+     "lon": -3.19168,
+     "address": "Cowgate 69",
+     "openingHours": "Mo 21:00-03:00, Tu-Sa 22:00-03:00"
+    },
+    {
+     "id": "node/4166866989",
+     "name": "The Bongo Club",
+     "lat": 55.94821,
+     "lon": -3.1921,
+     "address": "Cowgate 66",
+     "website": "https://www.thebongoclub.co.uk/"
+    },
+    {
+     "id": "node/3007617849",
+     "name": "The Liquid Room",
+     "lat": 55.94852,
+     "lon": -3.19373,
+     "address": "Victoria Street 9C",
+     "website": "https://www.liquidroom.com/"
+    },
+    {
+     "id": "node/3259772347",
+     "name": "The Mash House",
+     "lat": 55.94837,
+     "lon": -3.18764,
+     "address": "Guthrie Street 37",
+     "website": "https://themashhouse.co.uk/"
+    },
+    {
+     "id": "node/41483851",
+     "name": "The Shack",
+     "lat": 55.95204,
+     "lon": -3.20173,
+     "address": "Rose Street 119",
+     "website": "http://www.theshackedinburgh.co.uk/"
+    },
+    {
+     "id": "node/2415446250",
+     "name": "Whynot",
+     "lat": 55.95359,
+     "lon": -3.19558,
+     "address": "George Street 14",
+     "website": "https://www.wnclub.co.uk/"
+    },
+    {
+     "id": "node/3112300366",
+     "name": "Club Tropicana",
+     "lat": 55.94834,
+     "lon": -3.20611,
+     "address": "Lothian Road 23"
+    },
+    {
+     "id": "node/3193747654",
+     "name": "El Barrio",
+     "lat": 55.95307,
+     "lon": -3.19672,
+     "address": "Hanover Street 47"
+    },
+    {
+     "id": "node/2100295821",
+     "name": "Garibaldi's",
+     "lat": 55.95445,
+     "lon": -3.19745,
+     "address": "Hanover Street 97A"
+    },
+    {
+     "id": "node/5703029425",
+     "name": "La Vida",
+     "lat": 55.95035,
+     "lon": -3.20928,
+     "address": "Queensferry Street Lane 3"
+    },
+    {
+     "id": "node/3946332182",
+     "name": "Live at Hoots",
+     "lat": 55.94336,
+     "lon": -3.20395,
+     "address": "Home Street 16"
+    },
+    {
+     "id": "node/13438278688",
+     "name": "People's Leisure Club",
+     "lat": 55.94621,
+     "lon": -3.18923,
+     "address": "Lothian Street 45"
+    },
+    {
+     "id": "node/2061581555",
+     "name": "Summerhall",
+     "lat": 55.93984,
+     "lon": -3.18219
+    }
+   ]
+  }
+ }
+}

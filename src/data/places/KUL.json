@@ -1,0 +1,1668 @@
+{
+ "version": 1,
+ "cityCode": "KUL",
+ "fetchedAt": "2026-10-17T00:10:35.520Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Kuala_Lumpur_with_Petronas_Towers.jpg",
+  "width": 1280,
+  "height": 819,
+  "author": "thomasgl",
+  "license": "Public domain",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_with_Petronas_Towers.jpg",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_with_Petronas_Towers.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/279944536",
+     "name": "Petronas Towers",
+     "localName": "Menara Berkembar Petronas",
+     "lat": 3.15797,
+     "lon": 101.71176,
+     "wikipediaCount": 88
+    },
+    {
+     "id": "node/5839389988",
+     "name": "Menara Kuala Lumpur",
+     "lat": 3.15286,
+     "lon": 101.70376,
+     "address": "Jalan Puncak 2",
+     "website": "https://www.menarakl.com.my/",
+     "openingHours": "Mo-Su 09:00-22:00",
+     "wikipediaCount": 42
+    },
+    {
+     "id": "way/480717734",
+     "name": "Masjid Jamek Kuala Lumpur",
+     "lat": 3.14884,
+     "lon": 101.6958,
+     "address": "Jalan Tun Perak",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "way/23069513",
+     "name": "Dataran Merdeka",
+     "lat": 3.14864,
+     "lon": 101.69365,
+     "website": "http://www.visitkl.gov.my/visitklv2/index.php?r=column/cthree&id=55&place_id=979",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/446256442",
+     "name": "Jalan Petaling",
+     "lat": 3.14387,
+     "lon": 101.69762,
+     "openingHours": "11:00-24:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "way/1212049483",
+     "name": "Tugu Negara",
+     "lat": 3.14887,
+     "lon": 101.68379,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/169403450",
+     "name": "Muzium Diraja",
+     "lat": 3.13254,
+     "lon": 101.69589,
+     "address": "Jalan Istana",
+     "website": "https://www.jmm.gov.my/ms/muzium/muzium-diraja",
+     "openingHours": "Mo-Sa 09:00-17:00; Su off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/28287741",
+     "name": "Taman Eko Rimba Kuala Lumpur",
+     "lat": 3.15294,
+     "lon": 101.70264,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/24577285",
+     "name": "Sin Sze Si Ya Temple",
+     "lat": 3.14565,
+     "lon": 101.69639,
+     "address": "Lebuh Pudu 14A",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/776280279",
+     "name": "Taman Orkid",
+     "lat": 3.14396,
+     "lon": 101.68759,
+     "openingHours": "Mo-Su 09:00-18:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/801320516",
+     "name": "Kwai Chai Hong",
+     "lat": 3.1416,
+     "lon": 101.69768,
+     "website": "https://www.kwaichaihong.com/",
+     "openingHours": "Mo-Su 09:00-24:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/471992046",
+     "name": "Jalan Alor",
+     "lat": 3.14569,
+     "lon": 101.70867,
+     "openingHours": "Mo-Su 16:00-02:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/1919710738",
+     "name": "Upside Down House",
+     "lat": 3.15146,
+     "lon": 101.70276,
+     "website": "https://www.menarakl.com.my/index.php/attractions/tower-attractions/upside-down-house",
+     "openingHours": "09:00-19:00"
+    },
+    {
+     "id": "way/480708779",
+     "name": "Bangunan Sultan Abdul Samad",
+     "lat": 3.14846,
+     "lon": 101.69484,
+     "website": "https://bsas.com.my/"
+    },
+    {
+     "id": "way/572720082",
+     "name": "Glutton Street Market",
+     "lat": 3.13532,
+     "lon": 101.71327,
+     "openingHours": "Mo-Su 16:30-22:00"
+    },
+    {
+     "id": "node/11694943469",
+     "name": "MiniNature Malaysia",
+     "lat": 3.14404,
+     "lon": 101.71104,
+     "website": "https://minnature.com/"
+    },
+    {
+     "id": "way/765200301",
+     "name": "Pintasan Saloma",
+     "lat": 3.16101,
+     "lon": 101.70823,
+     "openingHours": "Mo-Sa 05:00-01:00, Su,PH 05:00-00:30"
+    },
+    {
+     "id": "way/1237772915",
+     "name": "Pintasan Saloma",
+     "lat": 3.16137,
+     "lon": 101.70789,
+     "openingHours": "Mo-Sa 05:00-01:00, Su,PH 05:00-00:30"
+    },
+    {
+     "id": "way/776280280",
+     "name": "Taman Bunga Raya",
+     "lat": 3.14533,
+     "lon": 101.68625,
+     "openingHours": "Mo-Su 09:00-18:00"
+    },
+    {
+     "id": "way/480033934",
+     "name": "Bangunan Zhongshan",
+     "lat": 3.13789,
+     "lon": 101.69714,
+     "address": "Jalan Rotan 82"
+    },
+    {
+     "id": "way/1427557823",
+     "name": "Blue Corridor",
+     "lat": 3.14852,
+     "lon": 101.69545
+    },
+    {
+     "id": "relation/21406751",
+     "name": "Brahminy Kite",
+     "lat": 3.14264,
+     "lon": 101.68809
+    },
+    {
+     "id": "relation/21406749",
+     "name": "Bulbul Land",
+     "lat": 3.14246,
+     "lon": 101.68871
+    },
+    {
+     "id": "relation/21406739",
+     "name": "Flightless Birds",
+     "lat": 3.145,
+     "lon": 101.68812
+    },
+    {
+     "id": "node/13394723207",
+     "name": "Godzilla x Kong Mural",
+     "lat": 3.1445,
+     "lon": 101.69584
+    },
+    {
+     "id": "relation/21406744",
+     "name": "Hornbill Park",
+     "lat": 3.14353,
+     "lon": 101.68898
+    },
+    {
+     "id": "way/466670179",
+     "name": "Istana Darul Aman Kedah",
+     "lat": 3.14052,
+     "lon": 101.67764,
+     "address": "Jalan Kedah 2"
+    },
+    {
+     "id": "way/381408310",
+     "name": "Istana Hinggap Johor",
+     "lat": 3.1521,
+     "lon": 101.71552
+    },
+    {
+     "id": "way/477022180",
+     "name": "Istana Hinggap Negeri Sembilan",
+     "lat": 3.13785,
+     "lon": 101.68043
+    },
+    {
+     "id": "way/171114876",
+     "name": "Istana Hinggap Perak",
+     "lat": 3.13623,
+     "lon": 101.68149
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/323394984",
+     "name": "Muzium Negara",
+     "lat": 3.13771,
+     "lon": 101.68738,
+     "address": "Jalan Damansara",
+     "website": "https://www.muziumnegara.gov.my/",
+     "openingHours": "09:00-17:00",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "way/659878360",
+     "name": "Muzium Kesenian Islam Malaysia",
+     "lat": 3.14145,
+     "lon": 101.68975,
+     "address": "Jalan Lembah",
+     "website": "https://www.iamm.org.my/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "node/7221496859",
+     "name": "Planetarium Negara",
+     "lat": 3.13949,
+     "lon": 101.6893,
+     "address": "Jalan Perdana 53",
+     "website": "https://www.planetariumnegara.gov.my/",
+     "openingHours": "09:00-16:30; Mo off",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/169403450",
+     "name": "Muzium Diraja",
+     "lat": 3.13254,
+     "lon": 101.69589,
+     "address": "Jalan Istana",
+     "website": "https://www.jmm.gov.my/ms/muzium/muzium-diraja",
+     "openingHours": "Mo-Sa 09:00-17:00; Su off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/23766164",
+     "name": "Muzium Telekom",
+     "lat": 3.14905,
+     "lon": 101.69928,
+     "address": "Jalan Gereja 98",
+     "openingHours": "Mo-Su 9:00-17:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/11261866685",
+     "name": "Muzium Tekstil Negara",
+     "lat": 3.14655,
+     "lon": 101.69394,
+     "address": "Jalan Sultan Hishamuddin 26",
+     "website": "http://www.muziumtekstilnegara.gov.my/",
+     "openingHours": "09:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/4329258589",
+     "name": "Muzium Polis Diraja Malaysia",
+     "lat": 3.14094,
+     "lon": 101.68891,
+     "address": "Jalan Perdana 5",
+     "openingHours": "Tu-Su 10:00-18:00; Fr 12:30-14:30 off \"Friday's prayer\"",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/1086403294",
+     "name": "Sri Taman Memorial Tun Abdul Razak",
+     "lat": 3.14196,
+     "lon": 101.68688,
+     "address": "Jalan Perdana",
+     "openingHours": "Tu-Fr 09:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/4770727112",
+     "name": "Wei-Ling Gallery",
+     "lat": 3.13589,
+     "lon": 101.69143,
+     "address": "Jalan Scott 8",
+     "website": "https://weiling-gallery.com/",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/4770741269",
+     "name": "Galeri Petronas",
+     "lat": 3.15795,
+     "lon": 101.71203,
+     "website": "http://www.galeripetronas.com.my/Pages/Current.aspx",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/4283481889",
+     "name": "Kuala Lumpur City Gallery",
+     "lat": 3.14724,
+     "lon": 101.69337,
+     "website": "http://www.klcitygallery.com.my/",
+     "openingHours": "09:00-18:30; Tu off",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/10682643094",
+     "name": "Muzium dan Galeri Seni Bank Negara Malaysia",
+     "lat": 3.15738,
+     "lon": 101.69071,
+     "website": "https://museum.bnm.gov.my/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/13598068743",
+     "name": "Galeria Sri Perdana",
+     "lat": 3.1444,
+     "lon": 101.67418,
+     "website": "https://www.arkib.gov.my/en/web/guest/galeria-sri-perdana",
+     "openingHours": "10:00-17:30; Fr 10:00-12:00,15:00-17:30; Mo off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/386523816",
+     "name": "Muzium Etnologi Dunia Melayu",
+     "lat": 3.13768,
+     "lon": 101.68844,
+     "website": "https://www.jmm.gov.my/ms/muzium-etnologi-dunia-melayu",
+     "openingHours": "09:00-17:30",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/13527820228",
+     "name": "Galeri Seri Negara",
+     "lat": 3.1418,
+     "lon": 101.68196,
+     "website": "https://serinegara.com.my/",
+     "openingHours": "Tu-Su 10:00-18:00 \"Reserve a slot via website\""
+    },
+    {
+     "id": "node/4703275089",
+     "name": "ILHAM Gallery",
+     "lat": 3.15911,
+     "lon": 101.71882,
+     "website": "https://www.ilhamgallery.com/",
+     "openingHours": "Tu-Sa 11:00-19:00; Su 11:00-17:00; Mo,PH off"
+    },
+    {
+     "id": "node/4661264031",
+     "name": "Jadi Batik Gallery",
+     "lat": 3.14571,
+     "lon": 101.71904,
+     "website": "https://www.jadibatek.com/",
+     "openingHours": "09:00-17:30"
+    },
+    {
+     "id": "way/1266999282",
+     "name": "Kompleks Arkib Perdana Menteri Dan Arkib Negarawan",
+     "lat": 3.15613,
+     "lon": 101.69097,
+     "website": "https://www.arkib.gov.my/",
+     "openingHours": "09:00-17:00; Fr 09:00–12:00 15:00–17:00; Mo off"
+    },
+    {
+     "id": "node/7217517474",
+     "name": "Muzium Seni Kraf Orang Asli",
+     "lat": 3.13775,
+     "lon": 101.68853,
+     "website": "https://www.jmm.gov.my/en/museum/orang-asli-crafts-museum",
+     "openingHours": "Mo-Su 09:00-18:00"
+    },
+    {
+     "id": "node/13527849283",
+     "name": "Sultan Abdülsamet Binası",
+     "localName": "Bangunan Sultan Abdul Samad",
+     "lat": 3.14863,
+     "lon": 101.69445,
+     "address": "Jalan Raja",
+     "website": "https://bsas.com.my/",
+     "openingHours": "Mo-Su 09:00-18:00"
+    },
+    {
+     "id": "node/11497118871",
+     "name": "Ur-Mu",
+     "lat": 3.14757,
+     "lon": 101.7095,
+     "address": "Jalan Bedara 3",
+     "website": "https://ur-mu.com/",
+     "openingHours": "Tu-Su 10:00-08:30"
+    },
+    {
+     "id": "node/13390296100",
+     "name": "Art Is Art Gallery",
+     "lat": 3.13866,
+     "lon": 101.71102,
+     "website": "https://www.facebook.com/artisartgallery/"
+    },
+    {
+     "id": "node/1919715404",
+     "name": "Galeri Interaktif NRE",
+     "lat": 3.15006,
+     "lon": 101.70242,
+     "openingHours": "Mo-Su 09:00-17:00"
+    },
+    {
+     "id": "node/13527855002",
+     "name": "Galeri Royal Selangor",
+     "lat": 3.14885,
+     "lon": 101.69455,
+     "openingHours": "Mo-Su 09:00-18:00"
+    },
+    {
+     "id": "node/4525948489",
+     "name": "Herbarium",
+     "lat": 3.14684,
+     "lon": 101.68694,
+     "openingHours": "Mo-Fr 08:30-17:00"
+    },
+    {
+     "id": "node/12469300177",
+     "name": "Immersify Kuala Lumpur",
+     "lat": 3.13992,
+     "lon": 101.70898,
+     "address": "Jalan Hang Tuah Level G & 1 BBCC Hab",
+     "website": "https://immersifykl.com/"
+    },
+    {
+     "id": "node/9572727988",
+     "name": "Memorial Lim Lian Geok",
+     "lat": 3.13705,
+     "lon": 101.7012,
+     "address": "Jalan Maharajalela 89 & 91",
+     "website": "https://llgcultural.com/memorialllg/"
+    },
+    {
+     "id": "node/11292514141",
+     "name": "Muzium Kraf Kuala Lumpur",
+     "lat": 3.14893,
+     "lon": 101.71871,
+     "openingHours": "09:00-17:00"
+    },
+    {
+     "id": "node/10035485588",
+     "name": "Petrosains",
+     "lat": 3.15753,
+     "lon": 101.71187,
+     "address": "Jalan Ampang",
+     "website": "https://petrosains.com.my/"
+    },
+    {
+     "id": "node/12540592418",
+     "name": "Pioneers Of Kuala Lumpur Museum",
+     "lat": 3.14562,
+     "lon": 101.69655,
+     "website": "https://www.facebook.com/p/%E5%90%89%E9%9A%86%E5%9D%A1%E5%B8%88%E7%88%B7%E5%BA%99%E6%8B%93%E8%8D%92%E5%8D%9A%E7%89%A9%E9%A6%86-Sin-Sze-Si-Ya-Temple-Pioneers-of-Kuala-Lumpur-Museum-100090781340904/"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/12147363374",
+     "name": "SkyDeck",
+     "lat": 3.15257,
+     "lon": 101.71616,
+     "website": "https://www.imperiallexiskl.com/facilities/skydeck",
+     "openingHours": "Mo-Su 09:00-22:00"
+    },
+    {
+     "id": "node/10904707515",
+     "name": "Changkat Tunku Lookout Point",
+     "lat": 3.16284,
+     "lon": 101.67732
+    },
+    {
+     "id": "node/13099936092",
+     "name": "Hill Viewpoint",
+     "lat": 3.15638,
+     "lon": 101.71605
+    },
+    {
+     "id": "node/12043210293",
+     "name": "Petronas tower viewpoint #5",
+     "lat": 3.155,
+     "lon": 101.71539
+    },
+    {
+     "id": "node/6246346788",
+     "name": "Petronas Towers Viewpoint #1",
+     "lat": 3.15895,
+     "lon": 101.71089
+    },
+    {
+     "id": "node/2517533554",
+     "name": "Petronas Towers Viewpoint #2",
+     "lat": 3.15618,
+     "lon": 101.71376
+    },
+    {
+     "id": "node/11015351705",
+     "name": "Petronas Towers Viewpoint #3",
+     "lat": 3.15529,
+     "lon": 101.71469
+    },
+    {
+     "id": "node/12043216925",
+     "name": "Petronas towers viewpoint #6",
+     "lat": 3.15464,
+     "lon": 101.71551
+    },
+    {
+     "id": "node/5316288322",
+     "name": "River of Life",
+     "lat": 3.14723,
+     "lon": 101.69519
+    },
+    {
+     "id": "node/13068256101",
+     "name": "View on Merdeka Tower 118",
+     "lat": 3.1428,
+     "lon": 101.6986
+    },
+    {
+     "id": "node/13068263801",
+     "name": "View on Merdeka Tower 118",
+     "lat": 3.14279,
+     "lon": 101.70086
+    },
+    {
+     "id": "node/13068265101",
+     "name": "View on Merdeka Tower 118",
+     "lat": 3.14271,
+     "lon": 101.70139
+    },
+    {
+     "id": "node/6259611407",
+     "name": "Viewpoint of KL TV Tower between 2 buildings",
+     "lat": 3.1401,
+     "lon": 101.70544
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4616278836",
+     "name": "Anjappar",
+     "lat": 3.13217,
+     "lon": 101.68714,
+     "address": "Jalan Tun Sambanthan 136",
+     "website": "https://www.anjappar.com/",
+     "openingHours": "09:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/4365494946",
+     "name": "Bavarian Bierhaus",
+     "lat": 3.15203,
+     "lon": 101.7121,
+     "website": "https://www.bavarianbierhaus.com/",
+     "openingHours": "11:00-23:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/4787665922",
+     "name": "Bijan Bar and Restaurant",
+     "lat": 3.14839,
+     "lon": 101.70597,
+     "address": "Jalan Ceylon 3",
+     "website": "http://www.bijanrestaurant.com/",
+     "openingHours": "Mo-Su 16:30-23:00",
+     "cuisine": "malaysian",
+     "detailed": true
+    },
+    {
+     "id": "node/4663419870",
+     "name": "Ciccio",
+     "lat": 3.14776,
+     "lon": 101.70711,
+     "address": "Changkat Bukit Bintang 15",
+     "website": "https://ciccio.com.my/",
+     "openingHours": "Mo-Su 17:00-24:00",
+     "cuisine": "pizza, pasta, salad, seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/4482281415",
+     "name": "Dining in the Dark KL",
+     "lat": 3.14745,
+     "lon": 101.70823,
+     "address": "Changkat Bukit Bintang 50A",
+     "website": "https://dininginthedarkkl.com/",
+     "openingHours": "18:00-23:00; Mo off",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/4663419850",
+     "name": "El Cerdo",
+     "lat": 3.1474,
+     "lon": 101.70788,
+     "address": "Changkat Bukit Bintang 43,45",
+     "website": "https://elcerdokl.com/",
+     "openingHours": "18:00-24:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/4639805263",
+     "name": "Fuego Troika Sky Dining",
+     "lat": 3.15831,
+     "lon": 101.71795,
+     "website": "https://www.troikaskydining.com/fuego/",
+     "openingHours": "18:30-22:30",
+     "cuisine": "latin american",
+     "detailed": true
+    },
+    {
+     "id": "node/3788466249",
+     "name": "Hakka",
+     "lat": 3.15071,
+     "lon": 101.71295,
+     "address": "Jalan Raja Chulan 90",
+     "website": "https://www.hakkakl.com/",
+     "openingHours": "12:00-15:00,18:00-23:30",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/6126128699",
+     "name": "Halab - Beremi",
+     "lat": 3.14756,
+     "lon": 101.71036,
+     "address": "Jalan Beremi 7",
+     "website": "https://halabrestaurant.com/",
+     "openingHours": "Mo-Fr 10:00-04:00",
+     "cuisine": "arab",
+     "detailed": true
+    },
+    {
+     "id": "node/2917317311",
+     "name": "Halab Restaurant",
+     "lat": 3.1477,
+     "lon": 101.70866,
+     "address": "Jalan Berangan 35",
+     "website": "https://halabrestaurant.com/",
+     "openingHours": "11:00-04:00, Fr,Sa 11:00-06:00; Mo-Su 10:00-04:00",
+     "cuisine": "arab",
+     "detailed": true
+    },
+    {
+     "id": "node/4698078717",
+     "name": "Iketeru",
+     "lat": 3.13535,
+     "lon": 101.68596,
+     "website": "http://life.hiltonkl.com/Restaurants/Iketeru/",
+     "openingHours": "12:00-14:30,18:30-22:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/6702191485",
+     "name": "Joloko",
+     "lat": 3.15736,
+     "lon": 101.70058,
+     "address": "Jalan Kamunting 43",
+     "website": "https://www.bar-joloko.com/",
+     "openingHours": "Mo-Su 17:00-00:00",
+     "cuisine": "caribbean, jamaican",
+     "detailed": true
+    },
+    {
+     "id": "node/7474118086",
+     "name": "Les Bouchons",
+     "lat": 3.16042,
+     "lon": 101.71128,
+     "website": "https://www.lesbouchonsmalaysia.com/",
+     "openingHours": "12:00–14:30,18:00–22:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/7437342222",
+     "name": "Luce",
+     "lat": 3.15067,
+     "lon": 101.70425,
+     "address": "Lorong Raja Chulan 10",
+     "website": "https://www.luceosteria.com/",
+     "openingHours": "12:00-23:45; Mo 16:00-23:45",
+     "cuisine": "italian, pizza, pasta, salad",
+     "detailed": true
+    },
+    {
+     "id": "node/6175999168",
+     "name": "Marini's on 57 - Restaurant",
+     "lat": 3.15641,
+     "lon": 101.71147,
+     "website": "https://marinis57.com/",
+     "openingHours": "Mo-Th 19:00-23:00; Fr,Sa 18:30-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/6150936816",
+     "name": "MTR",
+     "lat": 3.13153,
+     "lon": 101.68727,
+     "address": "Jalan Thambipillay 69",
+     "website": "https://mtr1924malaysia.com/",
+     "openingHours": "Mo-Fr 08:00-15:30,17:00-22:30; Sa,Su 08:00-22:30",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/4423264501",
+     "name": "Nam Heong",
+     "lat": 3.14353,
+     "lon": 101.69855,
+     "address": "Jalan Sultan 60",
+     "website": "http://namheongchickenrice.com/",
+     "openingHours": "Mo-Su 10:00-15:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/4238875703",
+     "name": "Noble House",
+     "lat": 3.14481,
+     "lon": 101.71996,
+     "website": "https://www.orientalrestaurants.com.my/noble-house/",
+     "openingHours": "11:00-15:30,18:00-22:30",
+     "cuisine": "cantonese",
+     "detailed": true
+    },
+    {
+     "id": "node/4663336691",
+     "name": "Pacific Restaurant and Bar",
+     "lat": 3.14737,
+     "lon": 101.70847,
+     "website": "https://pacificrestaurantbar.com/",
+     "openingHours": "Mo-Su 14:30-03:00",
+     "cuisine": "western",
+     "detailed": true
+    },
+    {
+     "id": "node/5302322824",
+     "name": "Samad Al Iraqi",
+     "lat": 3.15565,
+     "lon": 101.70948,
+     "website": "https://www.samadaliraqirestaurant.com.my/",
+     "openingHours": "Mo-Su 11:30-23:30",
+     "cuisine": "arab",
+     "detailed": true
+    },
+    {
+     "id": "node/4627772477",
+     "name": "Sao Nam",
+     "lat": 3.14581,
+     "lon": 101.70753,
+     "address": "Tengkat Tong Shin 25",
+     "website": "https://www.saonam.com.my/",
+     "openingHours": "12:30-14:30,19:30-22:30",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/7473799556",
+     "name": "Sassolino",
+     "lat": 3.16091,
+     "lon": 101.71161,
+     "website": "http://www.sassolino.com.my/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4970181682",
+     "name": "Sassorosso",
+     "lat": 3.16374,
+     "lon": 101.71416,
+     "address": "Lorong Yap Kwan Seng 9",
+     "website": "https://www.sassorosso.com.my/",
+     "openingHours": "12:00–15:00,18:00–23:00",
+     "cuisine": "italian, wine",
+     "detailed": true
+    },
+    {
+     "id": "node/6324418185",
+     "name": "Sushi Zanmai",
+     "lat": 3.13326,
+     "lon": 101.68665,
+     "website": "https://www.supersushi.com.my/",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/6755819885",
+     "name": "Tapestry",
+     "lat": 3.15729,
+     "lon": 101.70023,
+     "website": "https://www.tapestrydining.my/",
+     "openingHours": "08:00-16:30",
+     "cuisine": "brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/7181866686",
+     "name": "The Hungry Tapir",
+     "lat": 3.1418,
+     "lon": 101.69772,
+     "address": "Jalan Petaling 135",
+     "website": "https://www.hungrytapir.com/",
+     "openingHours": "Tu-Su 12:00-22:00",
+     "cuisine": "western",
+     "detailed": true
+    },
+    {
+     "id": "node/4217208789",
+     "name": "Yut Kee",
+     "lat": 3.15648,
+     "lon": 101.7003,
+     "address": "Jalan Kamunting 1",
+     "website": "https://yutkeerestaurant.beepit.com/",
+     "openingHours": "Tu-Su 08:00-16:30",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/7152084150",
+     "name": "1919",
+     "lat": 3.16201,
+     "lon": 101.71324,
+     "address": "Jalan Yap Kwan Seng 15A",
+     "openingHours": "12:00-15:00,17:30-22:30",
+     "cuisine": "malay",
+     "detailed": true
+    },
+    {
+     "id": "node/5328588221",
+     "name": "ABC Bistro Cafe",
+     "lat": 3.13264,
+     "lon": 101.68779,
+     "address": "Jalan Tun Sambanthan 110",
+     "openingHours": "Mo-Su 06:00-00:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/6384524986",
+     "name": "ABC One Bistro Banana Leaf 24 Hrs",
+     "lat": 3.13225,
+     "lon": 101.68808,
+     "address": "Jalan Thambipillay 33",
+     "openingHours": "24/7",
+     "cuisine": "indian",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/10969004662",
+     "name": "Blitz X Colony",
+     "lat": 3.15204,
+     "lon": 101.71308,
+     "address": "Jalan Kia Peng 6",
+     "website": "https://blitzandco.com/",
+     "openingHours": "Mo-Sa 08:00-16:00",
+     "cuisine": "coffee shop, specialty coffee, omakase, croissant, eclairs, pastries, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/4277653989",
+     "name": "Moontree House",
+     "lat": 3.14197,
+     "lon": 101.69722,
+     "address": "Jalan Panggung 6",
+     "website": "http://moontree-house.blogspot.my/",
+     "openingHours": "We-Mo 10:00-20:00",
+     "cuisine": "cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/13556215501",
+     "name": "OGA Tea & Dining",
+     "lat": 3.14564,
+     "lon": 101.71719,
+     "website": "https://linktr.ee/oga.my",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "malaysian",
+     "detailed": true
+    },
+    {
+     "id": "node/12538578404",
+     "name": "Petra Pudu Rooftop Cafe",
+     "lat": 3.13632,
+     "lon": 101.71203,
+     "address": "Jalan Pudu 392C;392",
+     "website": "https://www.instagram.com/petrapudu",
+     "openingHours": "\"Attached to Sibermerdeka\"",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/6095219214",
+     "name": "Ra-Ft Café/Bistro",
+     "lat": 3.15874,
+     "lon": 101.71747,
+     "address": "Lorong Binjai Unit G1",
+     "website": "https://ra-ft.com/",
+     "openingHours": "Th-Su 08:00-22:00; Mo-We 08:00-17:00",
+     "cuisine": "european",
+     "detailed": true
+    },
+    {
+     "id": "node/11383165776",
+     "name": "Starbucks Reserve",
+     "lat": 3.1432,
+     "lon": 101.71674,
+     "website": "https://starbucks.com.my/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6148554785",
+     "name": "Vintage 1988",
+     "lat": 3.14286,
+     "lon": 101.69858,
+     "address": "Jalan Sultan 34",
+     "website": "https://www.vintage1988.com/",
+     "openingHours": "Fr-Sa 09:00-00:00; Su-Th 00:00-24:00",
+     "cuisine": "cake, coffee shop, deli",
+     "detailed": true
+    },
+    {
+     "id": "node/11397413455",
+     "name": "ZUS Coffee",
+     "lat": 3.14341,
+     "lon": 101.71757,
+     "website": "https://zuscoffee.com/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/12600965988",
+     "name": "ZUS Coffee",
+     "lat": 3.15882,
+     "lon": 101.71743,
+     "website": "https://zuscoffee.com/",
+     "openingHours": "Mo-Su 07:00-17:40",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5663764521",
+     "name": "ACE Corner",
+     "lat": 3.15753,
+     "lon": 101.70153,
+     "website": "https://www.acecafekualalumpur.com.my/",
+     "openingHours": "Mo-Su 12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6227286185",
+     "name": "Ann Nasi Lemak",
+     "lat": 3.13804,
+     "lon": 101.71442,
+     "address": "Jalan 1/77C Pudu G24 ICC Pudu",
+     "openingHours": "Tu-Th, Sa-Su 06:30-12:30",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/5793385854",
+     "name": "Bacha Coffee",
+     "lat": 3.15736,
+     "lon": 101.7129,
+     "address": "Ground Floor",
+     "openingHours": "8:00 - 22:00",
+     "cuisine": "viele Kaffesorten, Internationale Küche",
+     "detailed": true
+    },
+    {
+     "id": "node/7253014878",
+     "name": "Cafe 5",
+     "lat": 3.13802,
+     "lon": 101.71121,
+     "address": "Jalan Lengkungan Brunei 5",
+     "openingHours": "Mo-Sa 08:30-22:00, Su 12:00-22:00",
+     "cuisine": "coffee shop, Belgian waffles, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/12606472720",
+     "name": "Chef Kecik Boulangerie",
+     "lat": 3.14163,
+     "lon": 101.70762,
+     "website": "https://chefkecik.com/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7181866685",
+     "name": "Ching Ching by Pandan Republic",
+     "lat": 3.14161,
+     "lon": 101.69757,
+     "address": "Lorong Panggung 6",
+     "openingHours": "Th-Tu 10:00-17:30",
+     "cuisine": "coffee shop, ice cream, malaysian, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/9665686633",
+     "name": "Chun Yang Tea",
+     "lat": 3.14094,
+     "lon": 101.70827,
+     "address": "Jalan Hang Tuah LG1-FH15",
+     "website": "https://www.chunyangtea.com/pages/store03",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/12147288579",
+     "name": "Coralz",
+     "lat": 3.15266,
+     "lon": 101.71624,
+     "website": "https://www.imperiallexiskl.com/dining/coralz-cafe",
+     "openingHours": "Mo-Su 08:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7434311129",
+     "name": "dipndip",
+     "lat": 3.14844,
+     "lon": 101.7127,
+     "website": "https://dipndip.com/",
+     "openingHours": "Mo-Su 10:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13830402704",
+     "name": "Durian BB Park",
+     "lat": 3.1452,
+     "lon": 101.71738,
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "durian",
+     "detailed": true
+    },
+    {
+     "id": "node/5534127847",
+     "name": "Gavel Coffee Kitchen Craft beers",
+     "lat": 3.15767,
+     "lon": 101.70028,
+     "address": "Jalan Yap Ah Shak 20",
+     "openingHours": "Tu-Sa 12:00-22:00; Su 12:00-18:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/12387478188",
+     "name": "Grumpy Bagels",
+     "lat": 3.14568,
+     "lon": 101.71624,
+     "openingHours": "09:00-17:00",
+     "cuisine": "bagel",
+     "detailed": true
+    },
+    {
+     "id": "node/12460420402",
+     "name": "Jamaica Blue",
+     "lat": 3.14492,
+     "lon": 101.70446,
+     "address": "Jalan Pudu G-09",
+     "openingHours": "Mo-Su 07:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10235060624",
+     "name": "Kenny Hills Bistro",
+     "lat": 3.15856,
+     "lon": 101.7139,
+     "website": "https://www.kennyhillsbistro.com/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12702877199",
+     "name": "Lachér to-go",
+     "lat": 3.15097,
+     "lon": 101.71985,
+     "website": "https://store.lacherpatisserie.com/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4332356289",
+     "name": "Lokl Coffee Co",
+     "lat": 3.14879,
+     "lon": 101.69799,
+     "address": "Jalan Tun H.S. Lee 30",
+     "website": "http://loklcoffee.com/",
+     "openingHours": "Mo-Su 08:00-17:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13240450101",
+     "name": "Miss Coco",
+     "lat": 3.14911,
+     "lon": 101.70772,
+     "address": "Lorong Ceylon",
+     "website": "https://www.misscococafe.com/",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/13648812454",
+     "name": "Miss J",
+     "lat": 3.16104,
+     "lon": 101.71272,
+     "address": "Jalan Mayang 1",
+     "openingHours": "08:00-18:00",
+     "cuisine": "coffee shop, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/10701095795",
+     "name": "Mixue",
+     "lat": 3.14561,
+     "lon": 101.69587,
+     "address": "Jalan Hang Kasturi 24",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "ice cream, bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/11587383848",
+     "name": "Mixue",
+     "lat": 3.14628,
+     "lon": 101.71052,
+     "address": "Jalan Bukit Bintang 100",
+     "openingHours": "24/7",
+     "cuisine": "ice cream, bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/11668555877",
+     "name": "Mixue",
+     "lat": 3.14112,
+     "lon": 101.70824,
+     "address": "Jalan Todak 2 LG-K6",
+     "website": "https://www.mixuemalaysia.com/our-stores",
+     "cuisine": "ice cream, bubble tea",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/7192417385",
+     "name": "Altitude Bar & High Tea",
+     "lat": 3.1506,
+     "lon": 101.71372,
+     "website": "https://www.banyantree.com/en/malaysia/kuala-lumpur/dining/ebisu-and-altitude",
+     "openingHours": "15:00-18:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12614684017",
+     "name": "Bar@21",
+     "lat": 3.15306,
+     "lon": 101.70812,
+     "website": "https://www.hyatt.com/hyatt-centric/kulct-hyatt-centric-city-centre-kuala-lumpur/dining",
+     "openingHours": "Mo-Su 16:30-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5635556724",
+     "name": "Canopy Bar & Lounge",
+     "lat": 3.16041,
+     "lon": 101.7113,
+     "website": "http://www.canopylounge.my/",
+     "openingHours": "Mo-Su 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9628941117",
+     "name": "Gravy Baby",
+     "lat": 3.1476,
+     "lon": 101.70752,
+     "address": "Changkat Bukit Bintang 25;27;29;31",
+     "website": "https://www.gravybaby.com/",
+     "openingHours": "08:00–03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2294792463",
+     "name": "Havana",
+     "lat": 3.14781,
+     "lon": 101.70686,
+     "address": "Lorong Sahabat 2;4",
+     "website": "https://havanakl.com/",
+     "openingHours": "Mo-Th 16:00-03:00, Fr,Sa 14:00-03:00, Su 13:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4908954006",
+     "name": "Loco",
+     "lat": 3.14781,
+     "lon": 101.70748,
+     "address": "Changkat Bukit Bintang 22",
+     "openingHours": "Mo-Su 11:00-03:00",
+     "cuisine": "pizza, chicken",
+     "detailed": true
+    },
+    {
+     "id": "node/4897654475",
+     "name": "Luna Bar at Menara Panglobal",
+     "lat": 3.15309,
+     "lon": 101.70552,
+     "address": "Lorong P Ramlee 8",
+     "website": "http://www.pacific-regency.com/dining/lunar-bar/",
+     "openingHours": "Mo-Th,Su 11:00-01:00; Fr,Sa 11:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7192419987",
+     "name": "Man Tao Rooftop Bar",
+     "lat": 3.15705,
+     "lon": 101.70055,
+     "website": "https://www.stripeskl.com/man-tao-bar.html",
+     "openingHours": "Mo-Su 15:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4668435089",
+     "name": "Marini's on 57 - Rooftop Bar",
+     "lat": 3.15641,
+     "lon": 101.71145,
+     "website": "https://marinis57.com/",
+     "openingHours": "Mo-Th 19:00-23:00; Fr,Sa 18:30-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4664238568",
+     "name": "Pisco Bar",
+     "lat": 3.14858,
+     "lon": 101.70868,
+     "address": "Jalan Mesui 29",
+     "website": "http://www.piscobarkl.com/",
+     "openingHours": "05:00-01:00; Mo off",
+     "detailed": true
+    },
+    {
+     "id": "node/6195302606",
+     "name": "Pool Bar & Grill@8",
+     "lat": 3.13582,
+     "lon": 101.68642,
+     "website": "https://www.dining.lemeridienkualalumpur.com/en/poolbargrill8",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7239292364",
+     "name": "Rastarbar",
+     "lat": 3.14729,
+     "lon": 101.7081,
+     "website": "http://www.rastarbarchangkat.com/",
+     "openingHours": "18:00–02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11922199369",
+     "name": "Rhubarb & Roses Bar & Florist Malaysia",
+     "lat": 3.14344,
+     "lon": 101.70476,
+     "address": "Jalan Sin Chew Kee 8",
+     "openingHours": "16:00-24:00; Tu off",
+     "cuisine": "chinese, local, malaysian",
+     "detailed": true
+    },
+    {
+     "id": "node/4663419853",
+     "name": "Rock Bottom",
+     "lat": 3.14753,
+     "lon": 101.70803,
+     "website": "https://www.theolivetreegroup.com/",
+     "openingHours": "15:00–02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/12147363373",
+     "name": "Satellite",
+     "lat": 3.1523,
+     "lon": 101.71623,
+     "website": "https://www.imperiallexiskl.com/dining/satellite-restaurant-bar",
+     "openingHours": "Mo-Su 17:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1456303689",
+     "name": "Sky Bar",
+     "lat": 3.15407,
+     "lon": 101.71505,
+     "website": "https://www.shangri-la.com/kualalumpur/traders/dining/bars-lounges/sky-bar/",
+     "openingHours": "Su-Th 12:00-01:00; Fr,Sa 12:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7426090290",
+     "name": "Smoke And Lilly",
+     "lat": 3.1485,
+     "lon": 101.70901,
+     "address": "Jalan Angsoka 17",
+     "website": "https://thesmokeandlilly.com/",
+     "openingHours": "Mo-Su 10:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9633447517",
+     "name": "Soul Room",
+     "lat": 3.14746,
+     "lon": 101.70782,
+     "website": "https://www.theolivetreegroup.com/our-brands/soul-room/",
+     "openingHours": "16:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2702298162",
+     "name": "The Rabbit Hole",
+     "lat": 3.14807,
+     "lon": 101.70711,
+     "address": "Changkat Bukit Bintang 16",
+     "website": "https://www.rabbithole.com.my/",
+     "openingHours": "09:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6948729685",
+     "name": "Vertigo",
+     "lat": 3.15058,
+     "lon": 101.71382,
+     "website": "https://www.banyantree.com/en/malaysia/kuala-lumpur/dining/vertigo",
+     "openingHours": "Mo-Su 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7284496785",
+     "name": "Baijiu KL",
+     "lat": 3.14167,
+     "lon": 101.69762,
+     "openingHours": "17:00-02:00"
+    },
+    {
+     "id": "node/6702456185",
+     "name": "Beer Bank",
+     "lat": 3.15067,
+     "lon": 101.70941,
+     "address": "Jalan Raja Chulan 86",
+     "openingHours": "Mo-Sa 12:00-02:00; Su 12:00-00:00"
+    },
+    {
+     "id": "node/5243778421",
+     "name": "Bloom Restaurant + Bar",
+     "lat": 3.15783,
+     "lon": 101.71767,
+     "openingHours": "09:00-22:00"
+    },
+    {
+     "id": "node/11684621159",
+     "name": "Blue at EQ",
+     "lat": 3.15296,
+     "lon": 101.70989,
+     "openingHours": "Mo-Su 17:00-01:00"
+    },
+    {
+     "id": "node/10243870826",
+     "name": "FUBAR",
+     "lat": 3.15686,
+     "lon": 101.70011,
+     "address": "Jalan Kamunting 12",
+     "openingHours": "12:00-15:00,17:00-02:00"
+    },
+    {
+     "id": "node/12676849691",
+     "name": "G-String KL",
+     "lat": 3.14146,
+     "lon": 101.69791,
+     "openingHours": "17:00-02:00"
+    },
+    {
+     "id": "node/4215310098",
+     "name": "Healy Mac's",
+     "lat": 3.15497,
+     "lon": 101.70828,
+     "address": "Jalan P. Ramlee 12",
+     "website": "https://www.healymacs.com/"
+    },
+    {
+     "id": "node/13059440143",
+     "name": "ING LIVE KL",
+     "lat": 3.1512,
+     "lon": 101.71361,
+     "address": "Jalan Kia Peng 1",
+     "openingHours": "Mo-Sa 17:30-03:00"
+    },
+    {
+     "id": "node/4907320606",
+     "name": "Latin Tropical Yoko’s",
+     "lat": 3.14764,
+     "lon": 101.70784,
+     "address": "Changkat Bukit Bintang 36",
+     "openingHours": "15:00–03:00"
+    },
+    {
+     "id": "node/7283953521",
+     "name": "MariGin",
+     "lat": 3.15607,
+     "lon": 101.71074,
+     "address": "Jalan Pinang 6",
+     "openingHours": "Mo-Su 16:00-01:00"
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/12704011416",
+     "name": "kyō",
+     "lat": 3.15535,
+     "lon": 101.71204,
+     "website": "https://clubkyokl.asia/",
+     "openingHours": "We-Su 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12198559854",
+     "name": "PITT Kuala Lumpur",
+     "lat": 3.15357,
+     "lon": 101.70868,
+     "website": "https://www.pittclubkl.com/",
+     "openingHours": "We-Sa 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12605924234",
+     "name": "fono",
+     "lat": 3.13783,
+     "lon": 101.69703,
+     "website": "https://www.fonokl.com/"
+    },
+    {
+     "id": "node/13526046950",
+     "name": "MiMi Superhouse KL",
+     "lat": 3.15443,
+     "lon": 101.70783,
+     "openingHours": "Mo-Su 22:00-03:00"
+    },
+    {
+     "id": "node/7315042388",
+     "name": "Rockstar",
+     "lat": 3.14789,
+     "lon": 101.70738,
+     "openingHours": "Mo-Su 20:00-03:00"
+    },
+    {
+     "id": "node/12702436233",
+     "name": "Spark Club KL",
+     "lat": 3.14181,
+     "lon": 101.72151,
+     "address": "Jalan Tun Razak 436",
+     "website": "https://sparkclubkl.com.my/"
+    },
+    {
+     "id": "node/12702263074",
+     "name": "Amber",
+     "lat": 3.14046,
+     "lon": 101.72115
+    },
+    {
+     "id": "node/13358577546",
+     "name": "Anlive House",
+     "lat": 3.14091,
+     "lon": 101.7094,
+     "address": "Jalan Pudu 262"
+    },
+    {
+     "id": "node/11074435821",
+     "name": "Bombay Glitz",
+     "lat": 3.15789,
+     "lon": 101.69985
+    },
+    {
+     "id": "node/12702289745",
+     "name": "BoomBoxx3",
+     "lat": 3.14023,
+     "lon": 101.72111
+    },
+    {
+     "id": "node/7489635531",
+     "name": "Club De Vegas",
+     "lat": 3.14302,
+     "lon": 101.7121
+    },
+    {
+     "id": "node/11671046770",
+     "name": "Dhakaa Bollywood",
+     "lat": 3.149,
+     "lon": 101.7109
+    },
+    {
+     "id": "node/12198559850",
+     "name": "Dil Se Bollywood Lounge",
+     "lat": 3.14896,
+     "lon": 101.7109
+    },
+    {
+     "id": "node/12702199975",
+     "name": "Elixir",
+     "lat": 3.14078,
+     "lon": 101.72127
+    },
+    {
+     "id": "node/12260928710",
+     "name": "Fifty Three",
+     "lat": 3.14812,
+     "lon": 101.69715
+    },
+    {
+     "id": "node/12558746658",
+     "name": "GClub",
+     "lat": 3.14559,
+     "lon": 101.69748
+    },
+    {
+     "id": "node/11906855215",
+     "name": "Kelab Lucky",
+     "lat": 3.16434,
+     "lon": 101.71629
+    },
+    {
+     "id": "node/12702279768",
+     "name": "Le Club",
+     "lat": 3.14192,
+     "lon": 101.72152
+    },
+    {
+     "id": "node/13608983123",
+     "name": "Manhattan",
+     "lat": 3.1432,
+     "lon": 101.70944
+    },
+    {
+     "id": "node/14050434575",
+     "name": "Sense 3",
+     "lat": 3.1493,
+     "lon": 101.71079
+    },
+    {
+     "id": "node/12702294741",
+     "name": "Spade",
+     "lat": 3.14035,
+     "lon": 101.72124
+    },
+    {
+     "id": "node/4639795379",
+     "name": "T-Club KL",
+     "lat": 3.15148,
+     "lon": 101.71315
+    },
+    {
+     "id": "node/4618388489",
+     "name": "食街。",
+     "lat": 3.13466,
+     "lon": 101.714
+    }
+   ]
+  }
+ }
+}

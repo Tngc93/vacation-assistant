@@ -1,0 +1,2001 @@
+{
+ "version": 1,
+ "cityCode": "PAR",
+ "fetchedAt": "2026-10-16T23:14:23.526Z",
+ "radiusKm": 4,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1280px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+  "width": 1280,
+  "height": 800,
+  "author": "Yann Caradec from Paris, France",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/201611261",
+     "name": "Notre Dame Katedrali",
+     "localName": "Cathédrale Notre-Dame de Paris",
+     "lat": 48.85294,
+     "lon": 2.34987,
+     "address": "Parvis Notre-Dame - Place Jean-Paul II 6",
+     "website": "https://www.notredamedeparis.fr/",
+     "openingHours": "Mo,Tu,We,Fr 07:50-19:00; Th 07:50-22:00; Sa,Su 08:15-19:30",
+     "wikipediaCount": 116
+    },
+    {
+     "id": "node/4533627787",
+     "name": "Champs Élysées",
+     "lat": 48.87076,
+     "lon": 2.30533,
+     "website": "https://en.parisinfo.com/transport/73130/Avenue-des-Champs-Elysees",
+     "wikipediaCount": 89
+    },
+    {
+     "id": "node/13411401985",
+     "name": "Ruines de la Bastille",
+     "lat": 48.8527,
+     "lon": 2.36878,
+     "wikipediaCount": 84
+    },
+    {
+     "id": "way/13859706",
+     "name": "Père Lachaise Mezarlığı",
+     "localName": "Cimetière du Père-Lachaise",
+     "lat": 48.86114,
+     "lon": 2.39418,
+     "address": "Boulevard de Ménilmontant 8",
+     "website": "https://www.paris.fr/equipements/cimetiere-du-pere-lachaise-4080",
+     "openingHours": "Mo-Fr 08:00-17:30; Sa 08:30-17:30; Su 09:00-17:30",
+     "wikipediaCount": 67
+    },
+    {
+     "id": "node/10844713782",
+     "name": "Pendule de Foucault",
+     "lat": 48.84619,
+     "lon": 2.34614,
+     "wikipediaCount": 65
+    },
+    {
+     "id": "relation/1060803",
+     "name": "Palais de l'Élysée",
+     "lat": 48.87038,
+     "lon": 2.31661,
+     "website": "https://www.elysee.fr/",
+     "wikipediaCount": 64
+    },
+    {
+     "id": "way/54667456",
+     "name": "Opéra Garnier",
+     "lat": 48.87203,
+     "lon": 2.33173,
+     "website": "https://www.operadeparis.fr/",
+     "openingHours": "10:00-17:00",
+     "wikipediaCount": 61
+    },
+    {
+     "id": "way/16407465",
+     "name": "Panthéon",
+     "lat": 48.84619,
+     "lon": 2.34607,
+     "address": "Place du Panthéon",
+     "website": "https://www.paris-pantheon.fr/",
+     "openingHours": "Mo-Su 10:00-18:00; Apr 1-Sep 30: Mo-Su 10:00-18:30; Jan 1,May 1,Dec 25: off",
+     "wikipediaCount": 60
+    },
+    {
+     "id": "way/432819047",
+     "name": "Place de la Concorde",
+     "lat": 48.86549,
+     "lon": 2.32119,
+     "wikipediaCount": 60
+    },
+    {
+     "id": "way/23762981",
+     "name": "Sacré-cœur Bazilikası",
+     "localName": "Basilique du Sacré-Cœur",
+     "lat": 48.8868,
+     "lon": 2.34303,
+     "website": "https://www.sacre-coeur-montmartre.com/",
+     "openingHours": "06:00-22:30",
+     "wikipediaCount": 58
+    },
+    {
+     "id": "way/175448742",
+     "name": "Assemblée nationale",
+     "lat": 48.86175,
+     "lon": 2.31796,
+     "website": "https://www.assemblee-nationale.fr/",
+     "wikipediaCount": 58
+    },
+    {
+     "id": "relation/3344870",
+     "name": "Sainte-Chapelle",
+     "lat": 48.8554,
+     "lon": 2.34501,
+     "address": "Boulevard du Palais 8",
+     "website": "http://sainte-chapelle.monuments-nationaux.fr/",
+     "openingHours": "Jan-Mar 09:00-17:00; Apr-Sep 09:00-19:00; Oct-Dec 09:00-17:00",
+     "wikipediaCount": 57
+    },
+    {
+     "id": "way/4208595",
+     "name": "Champ de Mars",
+     "lat": 48.85616,
+     "lon": 2.29783,
+     "website": "https://www.paris.fr/lieux/parc-du-champ-de-mars-1807",
+     "openingHours": "24/7",
+     "wikipediaCount": 56
+    },
+    {
+     "id": "relation/1463538",
+     "name": "Hôtel des Invalides",
+     "lat": 48.85595,
+     "lon": 2.31255,
+     "address": "Rue de Grenelle 129",
+     "website": "https://parisjetaime.com/culture/hotel-national-des-invalides-p1014",
+     "wikipediaCount": 56
+    },
+    {
+     "id": "way/4433289",
+     "name": "Université Paris 1 Panthéon-Sorbonne - Centre Sorbonne",
+     "lat": 48.84864,
+     "lon": 2.34361,
+     "address": "Rue de la Sorbonne 17",
+     "website": "https://www.pantheonsorbonne.fr/",
+     "wikipediaCount": 55
+    },
+    {
+     "id": "relation/975955",
+     "name": "Palais du Luxembourg",
+     "lat": 48.84855,
+     "lon": 2.33714,
+     "wikipediaCount": 52
+    },
+    {
+     "id": "way/128206209",
+     "name": "Jardin du Luxembourg",
+     "lat": 48.84671,
+     "lon": 2.33636,
+     "website": "https://www.senat.fr/visite/jardin/",
+     "openingHours": "open \"check website https://www.senat.fr/visite/jardin/horaires.html\"; (sunset-00:30)-(sunrise-00:15) closed; Mar01-Sep30 (sunset-00:30)-07:30 closed",
+     "wikipediaCount": 50
+    },
+    {
+     "id": "way/16406633",
+     "name": "Tour Montparnasse",
+     "lat": 48.84211,
+     "lon": 2.32198,
+     "openingHours": "Mo-Su 09:30-23:30",
+     "wikipediaCount": 47
+    },
+    {
+     "id": "relation/3300400",
+     "name": "Palais Royal",
+     "lat": 48.86352,
+     "lon": 2.33692,
+     "wikipediaCount": 47
+    },
+    {
+     "id": "way/437812893",
+     "name": "Grande Mosquée de Paris",
+     "lat": 48.84207,
+     "lon": 2.35512,
+     "address": "Place du Puits de l'Ermite 2 bis",
+     "website": "https://www.mosqueedeparis.net/",
+     "openingHours": "Sa-Th 09:00-18:00",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "way/54180046",
+     "name": "Église de la Madeleine",
+     "lat": 48.87003,
+     "lon": 2.32447,
+     "address": "Place de la Madeleine",
+     "openingHours": "Mo-Su 09:30-19:00",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "node/910390736",
+     "name": "Conciergerie",
+     "lat": 48.85595,
+     "lon": 2.34603,
+     "address": "Boulevard du Palais 2",
+     "website": "https://www.paris-conciergerie.fr/",
+     "openingHours": "Mo-Su 09:30-18:00",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/53574149",
+     "name": "Pont Neuf",
+     "lat": 48.85652,
+     "lon": 2.34081,
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/53574164",
+     "name": "Pont Neuf",
+     "lat": 48.8578,
+     "lon": 2.34194,
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/375076234",
+     "name": "Pyramide du Louvre",
+     "lat": 48.86101,
+     "lon": 2.33585,
+     "wikipediaCount": 43
+    },
+    {
+     "id": "relation/1019368",
+     "name": "Palais Bourbon",
+     "lat": 48.86161,
+     "lon": 2.31825,
+     "wikipediaCount": 41
+    },
+    {
+     "id": "way/54175774",
+     "name": "Place Vendôme",
+     "lat": 48.86747,
+     "lon": 2.32944,
+     "wikipediaCount": 41
+    },
+    {
+     "id": "relation/3262297",
+     "name": "Palais du Louvre",
+     "lat": 48.86148,
+     "lon": 2.33517,
+     "website": "https://www.louvre.fr/",
+     "wikipediaCount": 39
+    },
+    {
+     "id": "way/227483542",
+     "name": "Arc de Triomphe du Carrousel",
+     "lat": 48.86173,
+     "lon": 2.33291,
+     "wikipediaCount": 39
+    },
+    {
+     "id": "relation/284089",
+     "name": "Hôtel de ville",
+     "lat": 48.85643,
+     "lon": 2.35253,
+     "address": "Place de l’Hotel de Ville",
+     "website": "https://www.paris.fr/",
+     "openingHours": "Mo-Sa 10:00-19:00",
+     "wikipediaCount": 36
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/247618453",
+     "name": "Musée des Arts et Métiers",
+     "lat": 48.8661,
+     "lon": 2.35541,
+     "address": "Rue Réaumur 60",
+     "website": "https://www.arts-et-metiers.net/",
+     "openingHours": "Tu-Th 10:00-18:00; Fr 10:00-21:00; Sa-Su 10:00-18:00",
+     "wikipediaCount": 53
+    },
+    {
+     "id": "node/493870538",
+     "name": "Catacombes de Paris",
+     "lat": 48.83374,
+     "lon": 2.33229,
+     "address": "Avenue du Colonel Henri Rol Tanguy 1",
+     "website": "https://www.catacombes.paris.fr/",
+     "openingHours": "Tu-Su 09:45-20:30",
+     "wikipediaCount": 45
+    },
+    {
+     "id": "node/910390736",
+     "name": "Conciergerie",
+     "lat": 48.85595,
+     "lon": 2.34603,
+     "address": "Boulevard du Palais 2",
+     "website": "https://www.paris-conciergerie.fr/",
+     "openingHours": "Mo-Su 09:30-18:00",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "node/130102845",
+     "name": "Musée de l'Armée",
+     "lat": 48.85704,
+     "lon": 2.31188,
+     "address": "Rue de Grenelle 129",
+     "website": "http://www.musee-armee.fr/",
+     "openingHours": "Nov-Mar: Mo-Su 10:00-17:00; Apr-Oct: Mo-Su 10:00-18:00; Apr-Sep: Tu 21:00+; Jan 1 off; May 1 off; Dec 25 off",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "node/251851363",
+     "name": "Musée Grévin",
+     "lat": 48.87184,
+     "lon": 2.3421,
+     "address": "Boulevard Montmartre 10",
+     "website": "https://www.grevin.com/",
+     "openingHours": "Mo-Fr 09:30-18:30; Sa,Su 09:30-19:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "node/1426215340",
+     "name": "Musée Maillol",
+     "lat": 48.85477,
+     "lon": 2.3249,
+     "address": "Rue de Grenelle 59-61",
+     "website": "https://www.museemaillol.com/",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "node/247584452",
+     "name": "Musée des Arts Décoratifs",
+     "lat": 48.86317,
+     "lon": 2.33295,
+     "address": "Rue de Rivoli 107",
+     "website": "https://madparis.fr/musee-des-arts-decoratifs",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "node/251318666",
+     "name": "Musée national Gustave Moreau",
+     "lat": 48.8779,
+     "lon": 2.33455,
+     "address": "Rue Catherine de La Rochefoucauld 14",
+     "website": "https://musee-moreau.fr/",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "node/252970813",
+     "name": "Espace Dali",
+     "lat": 48.88648,
+     "lon": 2.3399,
+     "address": "Rue Poulbot 11",
+     "website": "https://www.daliparis.com/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/254033221",
+     "name": "Maison de Victor Hugo",
+     "lat": 48.8548,
+     "lon": 2.36614,
+     "address": "Place des Vosges 6",
+     "website": "https://www.maisonsvictorhugo.paris.fr/paris",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/1336873192",
+     "name": "Musée de la Franc-Maçonnerie",
+     "lat": 48.87492,
+     "lon": 2.34315,
+     "address": "Rue Cadet 16",
+     "website": "http://www.museefm.org/",
+     "openingHours": "Tu-Fr 10:00-12:30,14:00-18:00; Sa 10:00-13:00,14:00-19:00; Su 10:00-12:30,14:00-18:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "node/11148144370",
+     "name": "Musée des égouts",
+     "lat": 48.86263,
+     "lon": 2.30258,
+     "address": "Esplanade Habib Bourguiba",
+     "website": "https://musee-egouts.paris.fr/",
+     "openingHours": "Tu-Su 10:00-17:00; Dec 25,Jan 01-Jan 15 closed",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/993828548",
+     "name": "Musée de la Poste",
+     "lat": 48.84146,
+     "lon": 2.31722,
+     "address": "Boulevard de Vaugirard 34",
+     "website": "https://www.museedelaposte.fr/",
+     "openingHours": "Mo-Sa 10:00-18:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/323911913",
+     "name": "Maison européenne de la Photographie",
+     "lat": 48.85512,
+     "lon": 2.35896,
+     "address": "Rue de Fourcy 5-7",
+     "website": "https://www.mep-fr.org/",
+     "openingHours": "We-Su 11:00-20:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/11259580512",
+     "name": "Musée Curie",
+     "lat": 48.84424,
+     "lon": 2.34479,
+     "website": "https://musee.curie.fr/",
+     "openingHours": "We-Sa 13:00-17:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/3303412974",
+     "name": "Musée des Plans-Reliefs",
+     "lat": 48.85646,
+     "lon": 2.31324,
+     "address": "Rue de Grenelle 129",
+     "website": "https://www.museedesplansreliefs.culture.fr/",
+     "openingHours": "Oct-Mar: Mo-Su 10:00-17:00; Apr-Sep: Mo-Su 10:00-18:00; Mo[1] off; Jan 1 off; May 1 off; Nov 1 off; Dec 25 off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/252211317",
+     "name": "Musée Edith Piaf",
+     "lat": 48.86624,
+     "lon": 2.38174,
+     "address": "Rue Camille Crespin du Gast 5",
+     "website": "https://www.parisinfo.com/musee-monument-paris/71402/Musee-Edith-Piaf",
+     "openingHours": "Mo-We 13:00-18:00; Th 10:00-12:00 \"mandatory reservation by phone\"",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/4664509356",
+     "name": "Musée des Archives nationales",
+     "lat": 48.86045,
+     "lon": 2.35781,
+     "address": "Rue des Francs Bourgeois 60",
+     "website": "https://www.archives-nationales.culture.gouv.fr/le-musee-des-archives-nationales",
+     "openingHours": "Mo,We-Fr 10:00-17:30, Sa,Su 14:00-17:30",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/4745608521",
+     "name": "Fondation Custodia",
+     "lat": 48.86136,
+     "lon": 2.31977,
+     "address": "Rue de Lille 121",
+     "website": "https://www.fondationcustodia.fr/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/7552537853",
+     "name": "Musée de la Magie",
+     "lat": 48.85312,
+     "lon": 2.36117,
+     "address": "Rue Saint-Paul 11",
+     "website": "https://www.museedelamagie.com/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/1426016793",
+     "name": "Musée Adam Mickiewicz",
+     "lat": 48.85135,
+     "lon": 2.35559,
+     "address": "Quai d'Orléans 6",
+     "website": "https://www.ibpp.eu/",
+     "openingHours": "Tu-Fr 10:00-13:00, 14:00-18:00; Sa 10:00-18:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/3303412973",
+     "name": "Musée de l'Ordre de la Libération",
+     "lat": 48.85569,
+     "lon": 2.31133,
+     "address": "Rue de Grenelle 129",
+     "website": "https://www.ordredelaliberation.fr/fr_doc/musee.html",
+     "openingHours": "Apr 01-Oct 31: Mo-Su 10:00-18:00; Nov 01,Mar 31: Mo-Su 10:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/1419519631",
+     "name": "Pavillons de Bercy",
+     "lat": 48.83277,
+     "lon": 2.38934,
+     "address": "Avenue des Terroirs de France 53",
+     "website": "https://arts-forains.com/",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/1426281644",
+     "name": "Bibliothèque-Musée de l'Opéra",
+     "lat": 48.87188,
+     "lon": 2.33121,
+     "address": "Rue Scribe 8",
+     "website": "https://www.bnf.fr/",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/1426176059",
+     "name": "Musée d'Histoire de la Médecine",
+     "lat": 48.85132,
+     "lon": 2.3409,
+     "address": "Rue de l'École de Médecine 12",
+     "website": "https://u-paris.fr/musee-de-lhistoire-de-la-medecine",
+     "openingHours": "Mo-We,Fr,Sa 14:00-17:30",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/3209234481",
+     "name": "Galerie Perrotin",
+     "lat": 48.86052,
+     "lon": 2.36537,
+     "website": "https://www.perrotin.com/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/6860970815",
+     "name": "Le Musée du Fumeur",
+     "lat": 48.85865,
+     "lon": 2.38222,
+     "website": "https://www.museedufumeur.net/",
+     "openingHours": "Mo-Sa 12:30-19:30",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/1426245245",
+     "name": "Musée de Minéralogie",
+     "lat": 48.84539,
+     "lon": 2.33946,
+     "address": "Boulevard Saint-Michel 60",
+     "website": "https://www.musee.minesparis.psl.eu/",
+     "openingHours": "Tu-Fr 13:30-18:00; Sa 10:00-12:30,14:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/11209951498",
+     "name": "Musée social",
+     "lat": 48.85786,
+     "lon": 2.32181,
+     "address": "Rue Las Cases 5",
+     "website": "https://www.cedias.org/",
+     "openingHours": "Mo-Th 09:00-12:00, 14:00-18:00; Fr 09:00-12:00, 14:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/4512162051",
+     "name": "Fondation Dosne-Thiers",
+     "lat": 48.87843,
+     "lon": 2.33708,
+     "address": "Place Saint-Georges 27",
+     "website": "https://www.fondation-dosne-thiers.fr/",
+     "wikipediaCount": 4
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/339023638",
+     "name": "La Terrasse des Galeries Lafayette",
+     "lat": 48.87338,
+     "lon": 2.33183,
+     "website": "https://www.galerieslafayette.com/m/magasin-haussmann/experiences/la-terrasse"
+    },
+    {
+     "id": "node/5550058515",
+     "name": "Belvédère",
+     "lat": 48.83349,
+     "lon": 2.38577
+    },
+    {
+     "id": "node/321830153",
+     "name": "Belvédère de la Sibylle",
+     "lat": 48.88109,
+     "lon": 2.38307
+    },
+    {
+     "id": "node/977195330",
+     "name": "Butte de Coupeaux",
+     "lat": 48.84314,
+     "lon": 2.35592
+    },
+    {
+     "id": "node/12758280455",
+     "name": "Espace de biodiversité",
+     "lat": 48.8338,
+     "lon": 2.38548
+    },
+    {
+     "id": "node/1697195692",
+     "name": "Montmartre",
+     "lat": 48.88611,
+     "lon": 2.34312
+    },
+    {
+     "id": "node/7883928585",
+     "name": "Notre Dame",
+     "lat": 48.85324,
+     "lon": 2.34705
+    },
+    {
+     "id": "node/3462104314",
+     "name": "Palais Garnier",
+     "lat": 48.87143,
+     "lon": 2.33197
+    },
+    {
+     "id": "node/5164114322",
+     "name": "Pont Alexandre III",
+     "lat": 48.86373,
+     "lon": 2.31356
+    },
+    {
+     "id": "node/4551075167",
+     "name": "Pont des Arts",
+     "lat": 48.8586,
+     "lon": 2.3377
+    },
+    {
+     "id": "node/5163691221",
+     "name": "Pont Saint-Louis",
+     "lat": 48.85277,
+     "lon": 2.35276
+    },
+    {
+     "id": "node/4893981921",
+     "name": "Terrass'' Hôtel",
+     "lat": 48.8866,
+     "lon": 2.33287
+    },
+    {
+     "id": "node/4551082413",
+     "name": "Terrasse du Printemps",
+     "lat": 48.8739,
+     "lon": 2.32761
+    },
+    {
+     "id": "node/1645352764",
+     "name": "Vue sur la tour Eiffel",
+     "lat": 48.8738,
+     "lon": 2.38518
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/247696096",
+     "name": "404",
+     "lat": 48.86446,
+     "lon": 2.35431,
+     "address": "Rue des Gravilliers 69",
+     "website": "https://www.404-resto.com/",
+     "openingHours": "Mo-Fr 12:00-14:30,19:30-22:30; Sa-Su 12:00-16:00,19:30-22:30",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/681555427",
+     "name": "A Casaluna",
+     "lat": 48.86607,
+     "lon": 2.33905,
+     "website": "https://www.acasaluna.com/",
+     "openingHours": "Mo-Su,PH 12:00-14:00+,19:00-22:00+",
+     "cuisine": "corsican",
+     "detailed": true
+    },
+    {
+     "id": "node/626614315",
+     "name": "Aki",
+     "lat": 48.86615,
+     "lon": 2.33533,
+     "website": "https://akiparis.fr/pages/aki-restaurant",
+     "openingHours": "Mo-Th 11:30-22:45; Fr-Sa 11:30-23:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/447033643",
+     "name": "Amarvi",
+     "lat": 48.84743,
+     "lon": 2.34323,
+     "website": "https://www.amarvi.fr/",
+     "openingHours": "Mo-Fr 12:00-15:00,19:00-24:00, Sa,Su 12:00-16:00,18:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/667338347",
+     "name": "Asahi",
+     "lat": 48.82896,
+     "lon": 2.32989,
+     "address": "Rue Bézout 30",
+     "website": "http://www.asahi14.fr/",
+     "openingHours": "Mo-Sa 11:00-14:30,18:30-22:40; Su 18:30-22:40",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/536515303",
+     "name": "Assanabel",
+     "lat": 48.82755,
+     "lon": 2.33564,
+     "website": "https://www.restaurant-assanabel.com/",
+     "openingHours": "Mo-Su 12:00-15:00,19:00-23:00",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/322093112",
+     "name": "Au Chien qui Fume",
+     "lat": 48.84571,
+     "lon": 2.31922,
+     "website": "https://www.auchienquifumemontparnasse.fr/",
+     "openingHours": "Mo-Fr 07:00-24:00; Sa 08:00-24:00; Su 09:00-21:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/678802941",
+     "name": "Au Chien qui Fume",
+     "lat": 48.86135,
+     "lon": 2.34484,
+     "address": "Rue du Pont Neuf 33",
+     "website": "https://www.auchienquifume.com/",
+     "openingHours": "Mo-Su 08:00-01:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/534660995",
+     "name": "Au Soleil de la Butte",
+     "lat": 48.88651,
+     "lon": 2.34526,
+     "website": "http://le-soleil-de-la-butte.lafourchette.rest/",
+     "openingHours": "Su-We 09:00-12:00, Fr,Sa 09:00-06:00; Th 09:00-05:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/582743234",
+     "name": "Bagelstein",
+     "lat": 48.85622,
+     "lon": 2.30441,
+     "address": "Avenue Bosquet 44",
+     "website": "https://www.bagelstein.com/restaurant/paris-bosquet/",
+     "openingHours": "Mo-Sa 09:00-20:30; Su 10:00-18:00",
+     "cuisine": "bagel",
+     "detailed": true
+    },
+    {
+     "id": "node/496109850",
+     "name": "Bai Thong",
+     "lat": 48.85143,
+     "lon": 2.3723,
+     "website": "http://www.baithong.fr/",
+     "openingHours": "Mo-Sa 12:00-14:30,19:00-23:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/473827193",
+     "name": "Belle Napoli",
+     "lat": 48.84005,
+     "lon": 2.38081,
+     "website": "https://www.bellenapoli.fr/",
+     "openingHours": "07:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/617827763",
+     "name": "Benihana",
+     "lat": 48.86338,
+     "lon": 2.33485,
+     "website": "https://www.benihana.fr/",
+     "openingHours": "12:00-22:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/252263209",
+     "name": "Biondi",
+     "lat": 48.86382,
+     "lon": 2.36707,
+     "address": "Rue Amelot 118",
+     "website": "https://www.biondi-restaurant.fr/",
+     "openingHours": "Mo-Sa 12:00-14:30, 19:00-23:00",
+     "cuisine": "argentinian",
+     "detailed": true
+    },
+    {
+     "id": "node/251670428",
+     "name": "Bistro des Poèmes",
+     "lat": 48.84935,
+     "lon": 2.33915,
+     "address": "Rue Corneille 7",
+     "website": "https://bistrodeslettres.com/bistro-des-poemes",
+     "openingHours": "Mo-Su 11:45-22:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/530272903",
+     "name": "Bistrot de la Gare",
+     "lat": 48.84584,
+     "lon": 2.3721,
+     "website": "https://www.bistrotdelagare.com/",
+     "openingHours": "Mo-Su 08:00-00:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/589485658",
+     "name": "Bistrot Paul Bert",
+     "lat": 48.85222,
+     "lon": 2.38492,
+     "website": "https://bistrotpaulbert.fr/",
+     "openingHours": "Mo-Th 12:00-14:00,19:30-22:45; Fr,Sa 12:00-14:30,19:30-23:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/293982723",
+     "name": "Black Angus République",
+     "lat": 48.86675,
+     "lon": 2.36572,
+     "website": "https://restaurantblackangus.com/",
+     "openingHours": "Su-Th 12:00-23:00; Fr-Sa 12:00-23:30",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/274250572",
+     "name": "Bocamexa",
+     "lat": 48.85705,
+     "lon": 2.356,
+     "website": "https://www.bocamexa.com/",
+     "openingHours": "Su-Th 11:30-22:00; Fr-Sa 11:30-23:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/251851391",
+     "name": "Bouillon Chartier",
+     "lat": 48.87591,
+     "lon": 2.35877,
+     "website": "https://www.bouillon-chartier.com/gare-de-lest/",
+     "openingHours": "Mo-Su 11:30-00:00",
+     "cuisine": "french, brasserie",
+     "detailed": true
+    },
+    {
+     "id": "node/418053066",
+     "name": "Bouillon de Paris",
+     "lat": 48.8675,
+     "lon": 2.36249,
+     "address": "pl de la République 17",
+     "website": "https://bouillondeparis.com/",
+     "openingHours": "Mo-Su 12:00-23:59",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/251851388",
+     "name": "Bouillon Julien",
+     "lat": 48.87054,
+     "lon": 2.35322,
+     "website": "https://www.bouillon-julien.com/",
+     "openingHours": "Mo-Su 11:45-24:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/968153548",
+     "name": "Brasserie Bofinger",
+     "lat": 48.85391,
+     "lon": 2.36804,
+     "website": "https://www.bofingerparis.com/",
+     "openingHours": "Mo-Sa 12:00-15:00, 18:30-00:00; Su 12:00-15:00, 18:30-23:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/408952534",
+     "name": "Brasserie Wepler",
+     "lat": 48.88386,
+     "lon": 2.32772,
+     "address": "Place de Clichy 14",
+     "website": "http://www.wepler.com/fr/brasserie-place-clichy-paris-18-site-officiel.php",
+     "openingHours": "Mo-Su 08:30-00:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/589485677",
+     "name": "BREIZH Café",
+     "lat": 48.85253,
+     "lon": 2.38473,
+     "address": "Rue Paul Bert 23",
+     "website": "https://www.breizhcafe.com/paul-bert",
+     "openingHours": "11:00-22:00",
+     "cuisine": "crepe, pancake, regional, french",
+     "detailed": true
+    },
+    {
+     "id": "node/374235775",
+     "name": "Café Charlot",
+     "lat": 48.86302,
+     "lon": 2.36258,
+     "website": "https://cafecharlotparis.com/",
+     "openingHours": "Mo-Sa 09:00-01:00; Su 09:00-24:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/365136324",
+     "name": "Café Juliette",
+     "lat": 48.85149,
+     "lon": 2.39869,
+     "address": "Rue d'Avron 1",
+     "website": "https://cafe-juliette.fr/",
+     "openingHours": "Mo-Su 08:00-01:00",
+     "cuisine": "french, brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/599513428",
+     "name": "Caffé Vito",
+     "lat": 48.85761,
+     "lon": 2.35465,
+     "address": "Rue des Archives 12",
+     "website": "https://www.caffe-vito.fr/",
+     "openingHours": "08:00-02:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/252590177",
+     "name": "Cannibale Café",
+     "lat": 48.86841,
+     "lon": 2.37933,
+     "address": "Rue Jean-Pierre Timbaud 93",
+     "website": "https://www.cannibalecafe.com/",
+     "openingHours": "Mo-Fr 08:00-02:00; Sa 09:00-02:00; Su 09:00-01:00",
+     "cuisine": "regional, french",
+     "detailed": true
+    },
+    {
+     "id": "node/495667480",
+     "name": "Casa Dagusto",
+     "lat": 48.83247,
+     "lon": 2.32001,
+     "address": "Rue de Plaisance 25",
+     "website": "https://www.restaurantcolombien.fr/",
+     "openingHours": "Tu-Th 12:00-15:00, 19:00-22:00; Fr-Sa 12:00-15:00, 19:00-23:00; Su 12:00-16:00",
+     "cuisine": "columbian",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1244411731",
+     "name": "Bel Horizon Cofee Roaster",
+     "lat": 48.84688,
+     "lon": 2.30445,
+     "address": "Boulevard Garibaldi 26",
+     "website": "https://belhorizon.coffee/",
+     "openingHours": "Mo-Fr 08:00-17:30; Sa 10:00-18:00; Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/306154412",
+     "name": "Café Biergit",
+     "lat": 48.8836,
+     "lon": 2.32336,
+     "address": "Rue des Batignolles 8",
+     "website": "http://www.cafebiergit.com/",
+     "openingHours": "Mo 08:00-24:00; Tu-Sa 08:00-02:00; Su 10:00-24:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/321932192",
+     "name": "Café Panis",
+     "lat": 48.8522,
+     "lon": 2.34837,
+     "address": "Quai de Montebello 21",
+     "website": "https://www.cafepanis.com/",
+     "openingHours": "Mo-Fr 07:00-01:00; Sa-Su 08:00-01:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/428133145",
+     "name": "Café Pivoine",
+     "lat": 48.85058,
+     "lon": 2.3846,
+     "address": "Rue Faidherbe 6",
+     "website": "https://www.instagram.com/cafepivoine/",
+     "openingHours": "Mo-Su 06:30-02:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/293982742",
+     "name": "Café République",
+     "lat": 48.86672,
+     "lon": 2.36388,
+     "address": "Place de la République 9",
+     "website": "https://www.cafe-republique.com/",
+     "openingHours": "Mo-Th 06:30-02:00; Fr 06:30-04:00; Sa 06:30-05:00; Su 06:30-24:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/322681096",
+     "name": "Caféothèque de Paris",
+     "lat": 48.85444,
+     "lon": 2.35584,
+     "address": "Rue de l'Hôtel de Ville 52",
+     "website": "https://www.lacafeotheque.com/",
+     "openingHours": "Mo-Su 09:30-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1351854164",
+     "name": "Casa café",
+     "lat": 48.84728,
+     "lon": 2.37793,
+     "address": "Rue de Charenton 103 ter",
+     "website": "https://casa-cafe.fr/",
+     "openingHours": "Mo-Fr 08:30-17:30; Sa-Su 09:00-17:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/589495688",
+     "name": "Columbus Café & Co",
+     "lat": 48.84638,
+     "lon": 2.37991,
+     "website": "https://www.columbuscafe.com/boutique/paris-boulevard-diderot",
+     "openingHours": "Mo-Fr 06:30-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/726579051",
+     "name": "Columbus Café & Co",
+     "lat": 48.84706,
+     "lon": 2.3413,
+     "address": "Rue Soufflot",
+     "website": "https://www.columbuscafe.com/boutique/paris-rue-soufflot/",
+     "openingHours": "Mo-Sa 08:00-18:30; Su 12:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/620894718",
+     "name": "Culottée Café",
+     "lat": 48.87062,
+     "lon": 2.34176,
+     "address": "Galerie Montmartre 26",
+     "website": "https://www.culotteecafe.fr/",
+     "openingHours": "Mo-Sa 09:00-18:00",
+     "cuisine": "coffee shop, french",
+     "detailed": true
+    },
+    {
+     "id": "node/1232684908",
+     "name": "Doriimu",
+     "lat": 48.87188,
+     "lon": 2.33392,
+     "website": "http://doriimuparis.com/",
+     "openingHours": "Mo-Su 12:00-21:00",
+     "cuisine": "asian, bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/1440251000",
+     "name": "Jovia",
+     "lat": 48.87646,
+     "lon": 2.33855,
+     "address": "Rue Bourdaloue 5",
+     "website": "https://joviaparis.fr/",
+     "openingHours": "Mo-Th 10:00-15:00; Sa-Su 10:00-17:00",
+     "cuisine": "teahouse, smoothie, coffee shop, brunch, fusion",
+     "detailed": true
+    },
+    {
+     "id": "node/1183500950",
+     "name": "Kozy Bosquet",
+     "lat": 48.85545,
+     "lon": 2.3054,
+     "address": "Avenue Bosquet 79",
+     "website": "https://www.kozy.fr/",
+     "openingHours": "Mo-Sa 08:00-20:00; Su 09:00-19:00",
+     "cuisine": "breakfast, french",
+     "detailed": true
+    },
+    {
+     "id": "node/814805922",
+     "name": "La Pépinière",
+     "lat": 48.87507,
+     "lon": 2.32019,
+     "address": "Place Saint-Augustin 6",
+     "website": "https://brasserie-la-pepiniere.fr/",
+     "openingHours": "Mo-Fr 07:00-01:30; Sa-Su 07:30-01:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/708980723",
+     "name": "Le Bouledogue",
+     "lat": 48.86094,
+     "lon": 2.35458,
+     "address": "Rue Rambuteau 20",
+     "website": "http://www.lebouledogue.fr/",
+     "openingHours": "Mo-Sa 09:30-23:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/1144591712",
+     "name": "Le Café Saint-Médard",
+     "lat": 48.83932,
+     "lon": 2.35036,
+     "address": "Rue Censier 53",
+     "website": "https://www.cafesaintmedard.com/",
+     "openingHours": "Mo-Th 07:00-23:30; Fr 07:00-00:00; Sa 08:00-00:00; Su 08:00-23:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/251043135",
+     "name": "Le Loir dans la Théière",
+     "lat": 48.85623,
+     "lon": 2.36105,
+     "address": "Rue des Rosiers 3",
+     "website": "http://leloirdanslatheiere.com/",
+     "openingHours": "Mo-Su 09:00-19:30",
+     "cuisine": "teahouse",
+     "detailed": true
+    },
+    {
+     "id": "node/428040493",
+     "name": "Le Penty",
+     "lat": 48.84898,
+     "lon": 2.37722,
+     "address": "Rue de Cotte 11",
+     "website": "https://lepenty.eatbu.com/",
+     "openingHours": "Mo-Su 07:00-02:00",
+     "cuisine": "salad, snack",
+     "detailed": true
+    },
+    {
+     "id": "node/689142383",
+     "name": "Le Petit Vendôme",
+     "lat": 48.86879,
+     "lon": 2.32971,
+     "address": "Rue des Capucines 8",
+     "website": "https://lepetitvendome.fr/",
+     "openingHours": "Mo 08:00-16:30; Tu-Fr 08:00-02:00; Sa 10:00-02:00",
+     "cuisine": "brasserie, french",
+     "detailed": true
+    },
+    {
+     "id": "node/1528702647",
+     "name": "Le Saint-Régis",
+     "lat": 48.85293,
+     "lon": 2.35369,
+     "address": "Rue Jean du Bellay 6",
+     "website": "http://www.cafesaintregisparis.com/",
+     "openingHours": "Mo-Su 07:30-02:00",
+     "cuisine": "breakfast, french",
+     "detailed": true
+    },
+    {
+     "id": "node/599513369",
+     "name": "Les Marronniers",
+     "lat": 48.85778,
+     "lon": 2.35486,
+     "address": "Rue des Archives 18",
+     "website": "https://cartes.opossum.pro/marronniers/",
+     "openingHours": "Mo-Su 09:00-02:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/705458747",
+     "name": "Maeum",
+     "lat": 48.85196,
+     "lon": 2.36661,
+     "address": "Rue de Lesdiguières 2",
+     "website": "https://www.instagram.com/maeumofficial/?hl=fr",
+     "openingHours": "Tu-Sa 12:00-19:00; Su 12:00-18:00",
+     "cuisine": "cake, ice cream, japanese, korean",
+     "detailed": true
+    },
+    {
+     "id": "node/687096476",
+     "name": "Mex'iik",
+     "lat": 48.87043,
+     "lon": 2.33715,
+     "address": "Rue de Marivaux 1",
+     "website": "https://mexiik.com/",
+     "openingHours": "Tu-Th 12:00-15:00, 18:00-00:00; Fr 18:00-23:00; Sa 12:00-15:00, 19:00-00:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/1277051667",
+     "name": "Molly's Bar",
+     "lat": 48.84811,
+     "lon": 2.37658,
+     "website": "https://mollys-paris.com/",
+     "openingHours": "Mo-Sa 09:30-00:30",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/1301125402",
+     "name": "Partea",
+     "lat": 48.85684,
+     "lon": 2.36851,
+     "address": "Boulevard Beaumarchais 46",
+     "website": "https://www.instagram.com/partea.paris/",
+     "openingHours": "Mo-Su 11:00-21:30",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/739769457",
+     "name": "Salon de thé de La Mosquée de Paris",
+     "lat": 48.84168,
+     "lon": 2.35563,
+     "website": "http://www.la-mosquee.com/",
+     "openingHours": "Mo-Su 09:00-24:00",
+     "cuisine": "arab, mediterranean, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/597414570",
+     "name": "Starbucks",
+     "lat": 48.87146,
+     "lon": 2.30443,
+     "website": "https://www.starbucks.fr/store-locator/13110-111588",
+     "openingHours": "Mo-Fr 07:30-22:00; Sa-Su 08:30-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/690982213",
+     "name": "Starbucks",
+     "lat": 48.87065,
+     "lon": 2.34689,
+     "website": "https://www.starbucks.fr/store-locator/12687-102534",
+     "openingHours": "Mo-Fr 07:00-20:00; Sa-Su 08:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/780157924",
+     "name": "Starbucks",
+     "lat": 48.85196,
+     "lon": 2.33947,
+     "website": "https://www.starbucks.fr/store-locator/13190-95612",
+     "openingHours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 08:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/817223167",
+     "name": "Starbucks",
+     "lat": 48.87538,
+     "lon": 2.32365,
+     "website": "https://www.starbucks.fr/",
+     "openingHours": "Mo-Fr 07:00-21:00; Sa,Su 07:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/508597074",
+     "name": "Chante!",
+     "lat": 48.84992,
+     "lon": 2.37377,
+     "address": "Rue de Charenton 50",
+     "website": "http://www.lechina.eu/",
+     "openingHours": "Su-Th 12:00-02:00; Fr-Sa 12:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3936222238",
+     "name": "Copper Bay",
+     "lat": 48.86984,
+     "lon": 2.35703,
+     "website": "http://www.copperbay.fr/",
+     "openingHours": "Th-Sa 18:00-02:00, Su-We 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8299964054",
+     "name": "Freemousse.bar",
+     "lat": 48.89039,
+     "lon": 2.34721,
+     "address": "Rue Marcadet 76",
+     "website": "https://freemousse.bar/",
+     "openingHours": "Mo-Sa 00:00-02:00, 17:00-23:59; Su 00:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3161149524",
+     "name": "L'Escale",
+     "lat": 48.88599,
+     "lon": 2.34762,
+     "website": "https://lescale75018.eatbu.com/?lang=fr",
+     "openingHours": "Tu-Su 09:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4416571837",
+     "name": "Le Carmen",
+     "lat": 48.88206,
+     "lon": 2.33417,
+     "address": "Rue Duperré 34",
+     "website": "https://le-carmen.fr/",
+     "openingHours": "Tu-Sa 18:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3265513124",
+     "name": "Little Red Door",
+     "lat": 48.86366,
+     "lon": 2.36359,
+     "address": "Rue Charlot 60",
+     "website": "https://www.lrdparis.com/",
+     "openingHours": "Mo-Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8659006255",
+     "name": "Les Petites Saisons",
+     "lat": 48.89029,
+     "lon": 2.34555,
+     "address": "Rue Ramey 57",
+     "website": "https://www.lespetitessaisons.com/"
+    },
+    {
+     "id": "node/9913322709",
+     "name": "Mobster Bar - the speakeasy",
+     "lat": 48.86392,
+     "lon": 2.36738,
+     "address": "Rue de Crussol 8",
+     "openingHours": "Mo-Th 19:00-01:00, Fr-Sa 19:00-02:00, Su 19:00-01:00"
+    },
+    {
+     "id": "node/305903409",
+     "name": "Les Caves Populaires",
+     "lat": 48.88478,
+     "lon": 2.32463
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2183846709",
+     "name": "5e Cru",
+     "lat": 48.84902,
+     "lon": 2.35416,
+     "website": "http://www.5ecru.com/",
+     "openingHours": "Mo-Fr 12:00-15:00, 19:00-00:00; Sa 19:00-00:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2043908277",
+     "name": "Café Montparnasse",
+     "lat": 48.84424,
+     "lon": 2.32352,
+     "address": "Place du 18 Juin 1940 8",
+     "website": "https://www.cafemontparnasse.fr/",
+     "openingHours": "Mo-Su 07:30-02:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/623423905",
+     "name": "Café Oz",
+     "lat": 48.83329,
+     "lon": 2.33384,
+     "address": "Place Denfert-Rochereau 3",
+     "website": "https://cafe-oz.com/denfert-rochereau.html",
+     "openingHours": "Mo 00:00-02:00,12:00-24:00; Tu 00:00-02:00,12:00-24:00; We 00:00-03:00,12:00-24:00; Th 00:00-03:00,12:00-24:00; Fr 00:00-05:00,12:00-24:00; Sa 00:00-05:00,12:00-24:00; Su 00:00-05:00,11:00-24:00",
+     "cuisine": "australian",
+     "detailed": true
+    },
+    {
+     "id": "node/1236341638",
+     "name": "Clavelin",
+     "lat": 48.8796,
+     "lon": 2.34351,
+     "address": "Rue Rodier 44",
+     "website": "https://www.clavelinparis.com/",
+     "openingHours": "Tu-Sa 18:00-23:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2179813042",
+     "name": "Falstaff",
+     "lat": 48.85372,
+     "lon": 2.37024,
+     "address": "Place de la Bastille 10-12",
+     "website": "https://falstaffcafe.fr/fr/",
+     "openingHours": "Mo-Su 07:00-06:45",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/251851354",
+     "name": "Hanoï Cà Phê Opéra",
+     "lat": 48.87146,
+     "lon": 2.33571,
+     "address": "Boulevard des Italiens 26",
+     "website": "http://hanoi-caphe.com/",
+     "openingHours": "Mo-Su 12:00-02:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/1164839323",
+     "name": "Hellfest Corner",
+     "lat": 48.86079,
+     "lon": 2.3503,
+     "address": "Rue Quincampoix 37",
+     "website": "https://www.hellfestcorner.com/",
+     "openingHours": "Tu-Sa 07:00-02:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/486096218",
+     "name": "Irish Pub",
+     "lat": 48.8475,
+     "lon": 2.39706,
+     "address": "Place de la Nation 26",
+     "website": "https://www.irishpubnation.com/",
+     "openingHours": "Mo-Su 11:00-24:00",
+     "cuisine": "burger, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2149109986",
+     "name": "Le Président",
+     "lat": 48.87144,
+     "lon": 2.30979,
+     "address": "Avenue Franklin Delano Roosevelt 59",
+     "website": "https://lepresident.paris/",
+     "openingHours": "Mo-Fr 07:00-23:59; Sa-Su 10:00-23:59",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/1789944746",
+     "name": "Les Petites Flèches",
+     "lat": 48.86685,
+     "lon": 2.3739,
+     "address": "Rue Jean-Pierre Timbaud 49",
+     "website": "https://lespetitesfleches.com/",
+     "openingHours": "Mo 18:00-00:00; Tu-We 18:00-01:00; Th-Fr 18:00-02:00; Sa 15:30-02:00; Su 15:30-23:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/881545302",
+     "name": "Les Rigoles",
+     "lat": 48.87338,
+     "lon": 2.39027,
+     "website": "https://www.lesrigoles.com/",
+     "openingHours": "Mo-Su 00:00-02:00, 07:00-23:59",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/1827138894",
+     "name": "Les Saisons",
+     "lat": 48.87666,
+     "lon": 2.34014,
+     "website": "https://www.restaurant-les-saisons.com/",
+     "openingHours": "Mo 19:00-22:15; Tu-Fr 12:00-14:15, 19:00-22:15; Sa 19:00-22:15",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1827138913",
+     "name": "Milton",
+     "lat": 48.87666,
+     "lon": 2.34061,
+     "website": "https://fr-fr.facebook.com/Les-madeleines-parisiennes-343278205695571/",
+     "openingHours": "Mo-Th 18:00-24:00; Fr 00:00-01:00, 18:00-24:00; Sa 00:00-02:00, 18:00-24:00; Su 00:00-02:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2157952434",
+     "name": "Paname Brewing Company",
+     "lat": 48.88783,
+     "lon": 2.37876,
+     "address": "Quai de la Loire 41 bis",
+     "website": "https://www.panamebrewingcompany.com/",
+     "openingHours": "Mo-Su 11:00-01:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/1483017732",
+     "name": "Quartier Lorette",
+     "lat": 48.87586,
+     "lon": 2.33884,
+     "address": "Rue de Châteaudun 19",
+     "website": "https://www.quartierlorette.com/",
+     "openingHours": "Mo-Fr 07:30-01:00; Sa-Su 08:00-01:00",
+     "cuisine": "brasserie",
+     "detailed": true
+    },
+    {
+     "id": "node/609212551",
+     "name": "The Frog",
+     "lat": 48.83299,
+     "lon": 2.3862,
+     "website": "https://www.frogpubs.com/fr/pub-bercy-village-paris.php",
+     "openingHours": "Mo-Su 12:00-02:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/536574152",
+     "name": "The Frog & British Library",
+     "lat": 48.83089,
+     "lon": 2.37678,
+     "address": "Avenue de France 114",
+     "website": "https://www.frogpubs.com/fr/pub-british-library-paris.php",
+     "openingHours": "Su-We 08:00-01:00, Th-Sa 08:00-02:00",
+     "cuisine": "burger, fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/418497769",
+     "name": "The Moose Bar",
+     "lat": 48.85182,
+     "lon": 2.33771,
+     "website": "https://www.mooseparis.com/",
+     "openingHours": "Mo-Su 12:00-02:00",
+     "cuisine": "canadian",
+     "detailed": true
+    },
+    {
+     "id": "node/1877310786",
+     "name": "All Good Things Paris",
+     "lat": 48.88975,
+     "lon": 2.34345,
+     "address": "Rue Custine 60",
+     "website": "https://www.allgoodthingsparis.com/",
+     "openingHours": "Sa 09:30-23:30; Su 09:30-18:00; Mo,Tu off; We-Fr 08:30-15:30,17:30-23:30",
+     "detailed": true
+    },
+    {
+     "id": "node/691436463",
+     "name": "Avek Bar",
+     "lat": 48.86593,
+     "lon": 2.34889,
+     "address": "Rue Saint-Sauveur 21",
+     "website": "https://www.avekbar.com/",
+     "openingHours": "18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1685494665",
+     "name": "B.O.A",
+     "lat": 48.86931,
+     "lon": 2.3323,
+     "website": "https://lebiscornuopera.fr/",
+     "openingHours": "Mo-Sa 18:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/749696090",
+     "name": "Bar Ourcq",
+     "lat": 48.88646,
+     "lon": 2.37724,
+     "address": "Quai de la Loire 68",
+     "website": "https://www.instagram.com/le_bar_ourcq/",
+     "openingHours": "We-Sa 15:00-22:00; Su 15:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/416560238",
+     "name": "Café Charbon",
+     "lat": 48.86586,
+     "lon": 2.37783,
+     "address": "Rue Oberkampf 109",
+     "website": "https://www.lecafecharbon.fr/",
+     "openingHours": "Mo-Su 08:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/599513533",
+     "name": "Café Cox",
+     "lat": 48.85825,
+     "lon": 2.35483,
+     "address": "Rue des Archives 15",
+     "website": "https://cox.fr/",
+     "openingHours": "Mo-Su 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/622205225",
+     "name": "Café D'italie",
+     "lat": 48.83214,
+     "lon": 2.35471,
+     "openingHours": "Mo-Su 08:00-24:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1109781731",
+     "name": "Café Gisèle",
+     "lat": 48.8505,
+     "lon": 2.34753,
+     "address": "Boulevard Saint-Germain 68",
+     "website": "https://cafe-gisele.com/",
+     "openingHours": "07:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/706315812",
+     "name": "Café Léonard",
+     "lat": 48.86572,
+     "lon": 2.35658,
+     "website": "https://cafeleonard.eatbu.com/",
+     "openingHours": "Mo-Tu 00:00-00:30, 07:00-23:59; We 00:00-01:00, 07:00-23:59; Th-Fr 00:00-02:00, 07:00-23:59; Sa 00:00-02:00, 09:00-23:59; Su 00:00-02:00, 10:00-23:59",
+     "detailed": true
+    },
+    {
+     "id": "node/1235153111",
+     "name": "Café Oz",
+     "lat": 48.87178,
+     "lon": 2.34247,
+     "address": "Boulevard Montmartre",
+     "website": "https://cafe-oz.com/fr/grands-boulevards",
+     "openingHours": "Mo-We 13:00-04:00; Th-Sa 13:00-05:00; Su 12:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2234105653",
+     "name": "Capitole Café - Brasserie",
+     "lat": 48.86642,
+     "lon": 2.3523,
+     "address": "Boulevard de Sébastopol 105",
+     "website": "https://lecapitolecafe.wixsite.com/info",
+     "openingHours": "Mo 07:00-23:59; Tu-Sa 00:00-02:00, 07:00-23:59; Su 00:00-02:00, 08:00-17:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1165739794",
+     "name": "Caveau des Oubliettes",
+     "lat": 48.852,
+     "lon": 2.34674,
+     "address": "Rue Galande 52",
+     "website": "https://www.caveau-des-oubliettes.com/",
+     "openingHours": "We-Su 17:30-02:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1902788158",
+     "name": "La Pachanga",
+     "lat": 48.83966,
+     "lon": 2.32301,
+     "website": "https://www.lapachanga.fr/",
+     "openingHours": "We-Th 19:00-02:00; Fr-Sa 19:00-05:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/9862863074",
+     "name": "2+2",
+     "lat": 48.84076,
+     "lon": 2.32525,
+     "website": "https://www.2plus2.fr/",
+     "openingHours": "12:00-19:00,20:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2180116943",
+     "name": "911",
+     "lat": 48.83938,
+     "lon": 2.37082,
+     "website": "https://www.villagerusse.fr/911-paris",
+     "openingHours": "Fr-Sa 20:00-07:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5239868124",
+     "name": "Angie",
+     "lat": 48.87244,
+     "lon": 2.31147,
+     "website": "http://angie-paris.com/",
+     "openingHours": "Fr-Sa 00:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9778082484",
+     "name": "Club Paradisio",
+     "lat": 48.85366,
+     "lon": 2.33671,
+     "address": "Rue de Buci 25",
+     "website": "https://club-paradisio.com/",
+     "openingHours": "We-Sa 23:30-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10178083072",
+     "name": "Jangal",
+     "lat": 48.86465,
+     "lon": 2.33461,
+     "website": "https://jangalparis.com/",
+     "openingHours": "Th-Sa 23:45-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13699194001",
+     "name": "JASS CLUB Paris",
+     "lat": 48.82603,
+     "lon": 2.35919,
+     "address": "Rue de Tolbiac 141",
+     "website": "https://jassclub.paris/",
+     "openingHours": "Fr-Sa 19:00-02:00; Su, We-Th 19:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10048944671",
+     "name": "La Pomme d'Ève",
+     "lat": 48.84716,
+     "lon": 2.3479,
+     "website": "https://lapommedeve.com/",
+     "openingHours": "Mo 12:00-02:00, We-Fr 20:00-02:00, Sa 16:00-02:00, Su 22:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9861508352",
+     "name": "La Suite 34",
+     "lat": 48.83891,
+     "lon": 2.37054,
+     "website": "https://lasuite34paris.fr/",
+     "openingHours": "Th-Su 19:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "way/366020273",
+     "name": "Le Bateau phare",
+     "lat": 48.83341,
+     "lon": 2.37925,
+     "website": "https://www.lebateauphare.co/",
+     "openingHours": "Mo,Tu 18:00-24:00, We 18:00-01:00, Th,Fr 18:00-02:00, Sa 13:00-02:00, Su 13:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4537714186",
+     "name": "Le Tango",
+     "lat": 48.86452,
+     "lon": 2.35675,
+     "address": "Rue au Maire 13",
+     "website": "https://tangoparis.com/",
+     "openingHours": "Fr-Sa 22:30-05:00; Su 18:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12768471675",
+     "name": "Les Chandelles",
+     "lat": 48.86569,
+     "lon": 2.3364,
+     "website": "https://www.leschandelles.com/",
+     "openingHours": "We-Mo 21:30+",
+     "detailed": true
+    },
+    {
+     "id": "way/63638493",
+     "name": "Pan Piper",
+     "lat": 48.858,
+     "lon": 2.38864,
+     "website": "https://www.pan-piper.com/",
+     "openingHours": "Mo 00:00-02:00; Fr 19:30-24:00; Sa,Su 00:00-02:00,19:30-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12800402112",
+     "name": "Redzone",
+     "lat": 48.8626,
+     "lon": 2.33966,
+     "website": "https://redzone-bar.com/",
+     "openingHours": "18:00-04:00, Su 15:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5552694364",
+     "name": "Rex Club",
+     "lat": 48.87058,
+     "lon": 2.34734,
+     "website": "https://rexclub.com/",
+     "openingHours": "We-Sa 23:55-07:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12786836677",
+     "name": "Studio 56",
+     "lat": 48.86808,
+     "lon": 2.37361,
+     "address": "Rue de la Fontaine au Roi 56",
+     "website": "https://shotgun.live/fr/venues/studio-56",
+     "openingHours": "Mo-Th 23:00-06:00; Fr-Sa 23:00-07:00; Su 23:59-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3703077368",
+     "name": "Taken-Club",
+     "lat": 48.85201,
+     "lon": 2.35456,
+     "website": "https://www.taken-club.fr/",
+     "openingHours": "Tu-Th 22:30-04:00, Fr-Sa 22:30-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12729979687",
+     "name": "Tape",
+     "lat": 48.86482,
+     "lon": 2.3363,
+     "website": "https://www.tape-paris.fr/",
+     "openingHours": "Mo-Su 00:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3804195354",
+     "name": "The Penthouse club Paris",
+     "lat": 48.87255,
+     "lon": 2.30417,
+     "website": "http://thepenthouseclubparis.com/",
+     "openingHours": "22:00-24:00,00:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3079788462",
+     "name": "Badaboum",
+     "lat": 48.85359,
+     "lon": 2.37571,
+     "website": "https://badaboum.paris/"
+    },
+    {
+     "id": "node/1980835275",
+     "name": "Bombonera à la Tanguedia",
+     "lat": 48.85326,
+     "lon": 2.39776,
+     "address": "Rue des Vignoles 3",
+     "openingHours": "Th 19:00-24:00"
+    },
+    {
+     "id": "node/4680082601",
+     "name": "Castel",
+     "lat": 48.85204,
+     "lon": 2.33462,
+     "address": "Rue Princesse 15",
+     "website": "https://castel.paris/"
+    },
+    {
+     "id": "node/1108414671",
+     "name": "Caveau de la Huchette",
+     "lat": 48.85279,
+     "lon": 2.3463,
+     "address": "Rue de la Huchette 5",
+     "website": "http://www.caveaudelahuchette.fr/"
+    },
+    {
+     "id": "node/12312129878",
+     "name": "Essaim",
+     "lat": 48.88225,
+     "lon": 2.36206,
+     "address": "Rue Philippe de Girard 14",
+     "website": "https://fr.ra.co/clubs/248763"
+    },
+    {
+     "id": "node/12900300858",
+     "name": "Fvtvr",
+     "lat": 48.84019,
+     "lon": 2.37099,
+     "website": "https://shotgun.live/fr/venues/fvtvr"
+    },
+    {
+     "id": "node/3429417881",
+     "name": "L'Impact",
+     "lat": 48.86527,
+     "lon": 2.35116,
+     "address": "Rue Greneta 18",
+     "openingHours": "Mo-Th 19:00-04:00; Fr-Sa 19:00-06:00; Su 17:00-04:00"
+    },
+    {
+     "id": "node/1020227152",
+     "name": "La Java",
+     "lat": 48.87131,
+     "lon": 2.37362,
+     "address": "Rue du Faubourg du Temple 150",
+     "website": "http://www.la-java.fr/"
+    },
+    {
+     "id": "node/8459561473",
+     "name": "La Marquise",
+     "lat": 48.86145,
+     "lon": 2.34283,
+     "openingHours": "Tu-Su 22:00-05:00"
+    },
+    {
+     "id": "node/3058148641",
+     "name": "Le Balajo",
+     "lat": 48.85402,
+     "lon": 2.37216,
+     "address": "Rue de Lappe 9",
+     "website": "https://www.balajo.fr/"
+    },
+    {
+     "id": "node/3846860861",
+     "name": "Le Globo",
+     "lat": 48.87007,
+     "lon": 2.35495,
+     "website": "https://www.leglobo.fr/"
+    }
+   ]
+  }
+ }
+}

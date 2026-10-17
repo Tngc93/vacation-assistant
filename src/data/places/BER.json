@@ -1,0 +1,1911 @@
+{
+ "version": 1,
+ "cityCode": "BER",
+ "fetchedAt": "2026-10-16T23:23:18.627Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Cityscape_Berlin.jpg/1280px-Cityscape_Berlin.jpg",
+  "width": 1280,
+  "height": 655,
+  "author": "Thomas Wolf , www.foto-tw.de",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Cityscape_Berlin.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/518071791",
+     "name": "Brandenburg Kapısı",
+     "localName": "Brandenburger Tor",
+     "lat": 52.51627,
+     "lon": 13.3777,
+     "address": "Pariser Platz 1",
+     "openingHours": "24/7",
+     "wikipediaCount": 84
+    },
+    {
+     "id": "relation/7288267",
+     "name": "Brandenburg Kapısı",
+     "localName": "Brandenburger Tor",
+     "lat": 52.51627,
+     "lon": 13.37783,
+     "wikipediaCount": 84
+    },
+    {
+     "id": "relation/2201742",
+     "name": "Reichstagsgebäude",
+     "lat": 52.5186,
+     "lon": 13.3761,
+     "address": "Platz der Republik 1",
+     "openingHours": "Mo-Su 08:00-24:00",
+     "wikipediaCount": 72
+    },
+    {
+     "id": "way/556435241",
+     "name": "Berliner Fernsehturm",
+     "lat": 52.52082,
+     "lon": 13.40942,
+     "address": "Panoramastraße 1a",
+     "website": "https://www.tv-turm.de/",
+     "wikipediaCount": 56
+    },
+    {
+     "id": "way/330840129",
+     "name": "Museumsinsel",
+     "lat": 52.52,
+     "lon": 13.39718,
+     "website": "https://www.museumsinsel-berlin.de/",
+     "wikipediaCount": 56
+    },
+    {
+     "id": "way/313670734",
+     "name": "Berliner Dom",
+     "lat": 52.51909,
+     "lon": 13.40103,
+     "address": "Am Lustgarten",
+     "website": "https://www.berlinerdom.de/",
+     "openingHours": "Mo-Fr 09:00-18:00; Sa 09:00-17:00; Su,PH 12:00-17:00; Jun-Aug Mo-Sa 09:00-19:00; Jun-Aug Su,PH 12:00-19:00",
+     "wikipediaCount": 50
+    },
+    {
+     "id": "node/417346627",
+     "name": "Çarli Kontrol Noktası",
+     "localName": "Checkpoint Charlie",
+     "lat": 52.50743,
+     "lon": 13.39038,
+     "address": "Friedrichstraße 43-45",
+     "website": "https://www.berlin.de/en/attractions-and-sights/3560059-3104052-checkpoint-charlie.en.html",
+     "wikipediaCount": 49
+    },
+    {
+     "id": "relation/3200536",
+     "name": "Potsdamer Platz",
+     "lat": 52.5092,
+     "lon": 13.37599,
+     "wikipediaCount": 48
+    },
+    {
+     "id": "relation/910651",
+     "name": "Berlin Hauptbahnhof",
+     "lat": 52.52501,
+     "lon": 13.36895,
+     "address": "Europaplatz 1",
+     "website": "https://www.bahnhof.de/en/berlin-hauptbahnhof",
+     "wikipediaCount": 44
+    },
+    {
+     "id": "relation/3007958",
+     "name": "Berliner Schloss",
+     "lat": 52.51722,
+     "lon": 13.40161,
+     "address": "Schloßplatz 1",
+     "website": "https://berliner-schloss.de/",
+     "wikipediaCount": 44
+    },
+    {
+     "id": "way/718035022",
+     "name": "Siegessäule",
+     "lat": 52.51451,
+     "lon": 13.35011,
+     "openingHours": "Nov-Mar: Mo-Fr 10:00-17:00; Sa,Su 10:00-17:30; Apr-Oct: Mo-Fr 09:30-18:30; Sa,Su 09:30-19:00",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/172234733",
+     "name": "Katledilen Avrupalı Yahudiler Anıtı",
+     "localName": "Denkmal für die ermordeten Juden Europas",
+     "lat": 52.5139,
+     "lon": 13.37871,
+     "address": "Cora-Berliner-Straße 1",
+     "website": "http://www.stiftung-denkmal.de/",
+     "openingHours": "24/7",
+     "wikipediaCount": 41
+    },
+    {
+     "id": "relation/4211905",
+     "name": "Rotes Rathaus",
+     "lat": 52.51827,
+     "lon": 13.40856,
+     "address": "Rathausstraße 15",
+     "website": "https://www.berlin.de/rbmskzl/",
+     "openingHours": "Mo-Fr 09:00-18:00",
+     "wikipediaCount": 38
+    },
+    {
+     "id": "way/1034456118",
+     "name": "Schloss Bellevue",
+     "lat": 52.51725,
+     "lon": 13.35315,
+     "address": "Spreeweg 1",
+     "website": "https://www.bundespraesident.de/DE/Die-Amtssitze/Schloss-Bellevue/schloss-bellevue-node.html",
+     "openingHours": "24/7",
+     "wikipediaCount": 36
+    },
+    {
+     "id": "way/58608090",
+     "name": "St. Hedwigs-Kathedrale Berlin",
+     "lat": 52.51576,
+     "lon": 13.39484,
+     "address": "Hinter der Katholischen Kirche 3",
+     "website": "https://www.hedwigs-kathedrale.de/",
+     "openingHours": "Mo-Sa 10:00-17:00; Su 13:00-17:00; PH off",
+     "wikipediaCount": 35
+    },
+    {
+     "id": "way/24054915",
+     "name": "Yeni Sinagog",
+     "localName": "Neue Synagoge",
+     "lat": 52.52499,
+     "lon": 13.39432,
+     "address": "Oranienburger Straße 28-30",
+     "website": "https://centrumjudaicum.de/",
+     "openingHours": "Apr-Sep: Mo-Fr 10:00-18:00; Su 10:00-19:00; Oct-Mar: Su-Th 10:00-18:00; Fr 10:00-15:00",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "way/474111581",
+     "name": "St. Marienkirche",
+     "lat": 52.52055,
+     "lon": 13.40722,
+     "address": "Karl-Liebknecht-Straße 8",
+     "website": "https://marienkirche-berlin.de/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/844740667",
+     "name": "Gendarmenmarkt",
+     "lat": 52.51361,
+     "lon": 13.39229,
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/157390075",
+     "name": "Bundeskanzleramt",
+     "lat": 52.52016,
+     "lon": 13.36816,
+     "address": "Willy-Brandt-Straße 1",
+     "website": "http://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/Bundeskanzleramt/bundeskanzleramt.html",
+     "openingHours": "\"Nur mit Termin\"",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "way/28248283",
+     "name": "Französischer Dom",
+     "lat": 52.5144,
+     "lon": 13.39236,
+     "address": "Gendarmenmarkt 7",
+     "website": "https://franzoesischer-dom.berlin/",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/217512230",
+     "name": "Konzerthaus Berlin",
+     "lat": 52.51358,
+     "lon": 13.39185,
+     "address": "Mitte",
+     "website": "https://www.konzerthaus.de/",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "relation/3626485",
+     "name": "Philharmonie",
+     "lat": 52.50999,
+     "lon": 13.36959,
+     "address": "Herbert-von-Karajan-Straße 1",
+     "website": "https://www.berliner-philharmoniker.de/",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/43347270",
+     "name": "Deutscher Dom",
+     "lat": 52.51275,
+     "lon": 13.3927,
+     "address": "Mitte",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/24240381",
+     "name": "Neue Wache",
+     "lat": 52.51789,
+     "lon": 13.39554,
+     "address": "Unter den Linden 4",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/183272253",
+     "name": "Das Center am Potsdamer Platz",
+     "lat": 52.51018,
+     "lon": 13.37352,
+     "website": "https://www.das-center-am-potsdamer-platz.de/",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/41368167",
+     "name": "Sowjetisches Ehrenmal Tiergarten",
+     "lat": 52.51664,
+     "lon": 13.37195,
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/23813204",
+     "name": "Neptunbrunnen",
+     "lat": 52.5196,
+     "lon": 13.40684,
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/312391532",
+     "name": "Nikolaiviertel",
+     "lat": 52.51688,
+     "lon": 13.40651,
+     "website": "http://berlin-nikolaiviertel.com/",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/43723722",
+     "name": "Kulturforum",
+     "lat": 52.50846,
+     "lon": 13.36774,
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/27695497",
+     "name": "Portikus des zerstörten Anhalter Bahnhofs",
+     "lat": 52.50368,
+     "lon": 13.38252,
+     "address": "Askanischer Platz 6",
+     "wikipediaCount": 20
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/313659704",
+     "name": "Pergamonmuseum",
+     "lat": 52.52091,
+     "lon": 13.39647,
+     "address": "Am Kupfergraben 5",
+     "website": "https://www.smb.museum/museen-einrichtungen/pergamonmuseum/",
+     "openingHours": "off",
+     "wikipediaCount": 59
+    },
+    {
+     "id": "way/18578139",
+     "name": "Neues Museum",
+     "lat": 52.52018,
+     "lon": 13.39774,
+     "address": "Bodestraße 1",
+     "website": "https://www.smb.museum/museen-einrichtungen/neues-museum/",
+     "openingHours": "Mo off; Tu-Su 10:00-18:00; PH 10:00-18:00; Dec 24 off; Dec 31 off",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "relation/3619",
+     "name": "Altes Museum",
+     "lat": 52.51945,
+     "lon": 13.39879,
+     "address": "Am Lustgarten",
+     "website": "https://www.smb.museum/museen-einrichtungen/altes-museum/home/",
+     "openingHours": "Mo off; Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00; PH 10:00-18:00; Dec 24 off; Dec 31 off",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "relation/4211594",
+     "name": "Bode-Museum",
+     "lat": 52.52165,
+     "lon": 13.39502,
+     "address": "Am Kupfergraben 1-3",
+     "website": "https://www.smb.museum/museen-und-einrichtungen/bode-museum/home.html",
+     "openingHours": "Mo off; Tu-Fr 10:00-17:00; Sa-Su 10:00-18:00; PH 10:00-18:00; Dec 24 off; Dec 31 off",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "relation/3626233",
+     "name": "Gemäldegalerie am Kulturforum",
+     "lat": 52.50851,
+     "lon": 13.36493,
+     "website": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/home/",
+     "openingHours": "Mo off; Tu-Su 10:00-18:00",
+     "wikipediaCount": 39
+    },
+    {
+     "id": "way/313670733",
+     "name": "Alte Nationalgalerie",
+     "lat": 52.52083,
+     "lon": 13.39832,
+     "address": "Bodestraße 1-3",
+     "website": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/home/",
+     "openingHours": "Mo off; Tu-Su 10:00-18:00; PH 10:00-18:00; Dec 24 off; Dec 31 off",
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/302942554",
+     "name": "Jüdisches Museum",
+     "lat": 52.50194,
+     "lon": 13.39624,
+     "address": "Lindenstraße 9-14",
+     "website": "https://www.jmberlin.de/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 37
+    },
+    {
+     "id": "node/538692583",
+     "name": "Museum für Naturkunde",
+     "lat": 52.53049,
+     "lon": 13.37912,
+     "address": "Invalidenstraße 43",
+     "website": "https://www.museumfuernaturkunde.berlin/",
+     "openingHours": "Tu-Fr 09:30-18:00; Sa,Su 10:00-18:00",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "node/3203167561",
+     "name": "Deutsches Historisches Museum",
+     "lat": 52.51775,
+     "lon": 13.39702,
+     "address": "Unter den Linden 2",
+     "website": "https://www.dhm.de/",
+     "openingHours": "Mo-Su 10:00-18:00; Dec 24 off",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "way/31622818",
+     "name": "Deutsches Technikmuseum",
+     "lat": 52.49721,
+     "lon": 13.3765,
+     "address": "Trebbiner Straße 9",
+     "website": "https://technikmuseum.berlin/",
+     "openingHours": "Tu-Fr 09:00-17:30; Sa-Su 10:00-18:00; PH 10:00-18:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/23813200",
+     "name": "Nikolaikirche",
+     "lat": 52.51682,
+     "lon": 13.40751,
+     "address": "Nikolaikirchplatz",
+     "website": "http://www.stadtmuseum.de/nikolaikirche",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "node/8413352835",
+     "name": "Humboldt Forum",
+     "lat": 52.51703,
+     "lon": 13.40123,
+     "address": "Schloßplatz",
+     "website": "https://www.humboldtforum.org/",
+     "openingHours": "Mo,We-Su 10:30-18:30; Tu off",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "way/25652321",
+     "name": "Neue Nationalgalerie",
+     "lat": 52.50698,
+     "lon": 13.36758,
+     "address": "Potsdamer Straße 50",
+     "website": "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/",
+     "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-20:00",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "node/1860480265",
+     "name": "Hamburger Bahnhof - Nationalgalerie der Gegenwart",
+     "lat": 52.52844,
+     "lon": 13.37204,
+     "address": "Invalidenstraße 50-51",
+     "website": "https://www.smb.museum/museen-einrichtungen/hamburger-bahnhof/home/",
+     "openingHours": "Tu-We,Fr 10:00-18:00; Th 10:00-20:00; Sa-Su 11:00-18:00",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "node/2818117012",
+     "name": "Schwules Museum *",
+     "lat": 52.50425,
+     "lon": 13.35822,
+     "address": "Lützowstraße 73",
+     "website": "https://www.schwulesmuseum.de/",
+     "openingHours": "Mo, We, Fr 12:00-18:00; Th 12:00-20:00; Sa 14:00-19:00; Su 14:00-18:00",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/24368681",
+     "name": "Topographie des Terrors",
+     "lat": 52.50619,
+     "lon": 13.38434,
+     "address": "Niederkirchnerstraße 8",
+     "website": "https://www.topographie.de/",
+     "openingHours": "Mo-Su,PH 10:00-20:00; Jan 01,Dec 24,Dec 31 off",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/1065864180",
+     "name": "Dünya Kültürleri Evi",
+     "localName": "Haus der Kulturen der Welt",
+     "lat": 52.51874,
+     "lon": 13.36485,
+     "address": "John-Foster-Dulles-Allee 10",
+     "website": "https://www.hkw.de/",
+     "openingHours": "We-Mo 11:00-19:00",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/33743630",
+     "name": "Berlinische Galerie",
+     "lat": 52.5039,
+     "lon": 13.39823,
+     "address": "Alte Jakobstraße 124-128",
+     "website": "https://berlinischegalerie.de/",
+     "openingHours": "Mo,We-Su 10:00-18:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/175149971",
+     "name": "DDR-Museum",
+     "lat": 52.51942,
+     "lon": 13.40226,
+     "address": "Karl-Liebknecht-Straße 1",
+     "website": "http://www.ddr-museum.de/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/2401869345",
+     "name": "Mauermuseum",
+     "lat": 52.50719,
+     "lon": 13.39068,
+     "address": "Friedrichstraße 43-45",
+     "website": "https://www.mauermuseum.de/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "relation/28134",
+     "name": "Kunstgewerbemuseum",
+     "lat": 52.5097,
+     "lon": 13.36739,
+     "website": "https://www.smb.museum/museen-einrichtungen/kunstgewerbemuseum/home/",
+     "openingHours": "Mo-Tu off; We-Fr 10:00-17:00; Sa-Su 11:00-18:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/22990151",
+     "name": "Musikinstrumenten-Museum",
+     "lat": 52.51049,
+     "lon": 13.37084,
+     "address": "Tiergartenstraße 1",
+     "website": "https://www.simpk.de/museum/besuch.html",
+     "openingHours": "Tu,We,Fr 09:00-17:00; Th 09:00-22:00; Sa,Su 10:00-17:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "relation/11516702",
+     "name": "Gropius-Bau",
+     "lat": 52.50672,
+     "lon": 13.38193,
+     "address": "Niederkirchnerstraße 7",
+     "website": "https://www.gropiusbau.de/",
+     "openingHours": "Sa-Su 10:00-19:00; Mo, We-Fr 12:00-19:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/194422265",
+     "name": "James-Simon-Galerie",
+     "lat": 52.51993,
+     "lon": 13.39701,
+     "website": "https://www.museumsinsel-berlin.de/",
+     "openingHours": "Mo off; Tu-Su 10:00-18:00",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/22990276",
+     "name": "Kupferstichkabinett",
+     "lat": 52.50841,
+     "lon": 13.36666,
+     "website": "https://www.smb.museum/museen-einrichtungen/kupferstichkabinett/home/",
+     "openingHours": "Mo-Tu off; We-Fr 10:00-17:00; Sa-Su,PH 11:00-18:00; Jan 01 12:00-18:00; Dec 24,Dec 31 off",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "relation/1652105",
+     "name": "Märkisches Museum",
+     "lat": 52.51354,
+     "lon": 13.4147,
+     "address": "Am Köllnischen Park 5",
+     "website": "http://www.stadtmuseum.de/maerkisches-museum",
+     "openingHours": "Tu-Su 10:00-18:00; We 12:00-20:00",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/2164030082",
+     "name": "Anne Frank Zentrum",
+     "lat": 52.52449,
+     "lon": 13.40192,
+     "address": "Rosenthaler Straße 39",
+     "website": "https://www.annefrank.de/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/73696610",
+     "name": "Gedenkstätte Deutscher Widerstand",
+     "lat": 52.50761,
+     "lon": 13.36299,
+     "address": "Stauffenbergstraße 13-14",
+     "website": "https://www.gdw-berlin.de/",
+     "openingHours": "Mo-Fr 09:00-18:00; Sa,Su,PH 10:00-18:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/3749451170",
+     "name": "Deutsches Spionagemuseum",
+     "lat": 52.50901,
+     "lon": 13.37929,
+     "address": "Leipziger Platz 9",
+     "website": "https://www.deutsches-spionagemuseum.de/",
+     "openingHours": "10:00-20:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/285972948",
+     "name": "Ephraim-Palais",
+     "lat": 52.51587,
+     "lon": 13.40714,
+     "address": "Poststraße 16",
+     "website": "https://www.stadtmuseum.de/ephraim-palais/",
+     "openingHours": "Tu-Su 10:00-18:00; We 12:00-20:00",
+     "wikipediaCount": 8
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2432753840",
+     "name": "Reichstagskuppel",
+     "lat": 52.51859,
+     "lon": 13.37611,
+     "address": "Platz der Republik 1",
+     "website": "https://www.bundestag.de/besuche/architektur/reichstag/kuppel",
+     "openingHours": "08:00-21:45; Dec 24 off; Dec 31 08:00-13:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/773640801",
+     "name": "Panoramapunkt",
+     "lat": 52.50899,
+     "lon": 13.37512,
+     "address": "Potsdamer Platz 1",
+     "website": "https://www.panoramapunkt.de/",
+     "openingHours": "Mo-Su 10:00-19:00"
+    },
+    {
+     "id": "way/48124228",
+     "name": "Berlin Hi-Flyer",
+     "lat": 52.50791,
+     "lon": 13.38611,
+     "website": "https://air-service-berlin.de/weltballon/"
+    },
+    {
+     "id": "node/10651702805",
+     "name": "Dachterrasse Humboldt Forum",
+     "lat": 52.51726,
+     "lon": 13.40054,
+     "website": "https://www.humboldtforum.org/de/programm/dauerangebot/must-see/dachterrasse-34092"
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/89274696",
+     "name": "Aapka",
+     "lat": 52.5236,
+     "lon": 13.41097,
+     "address": "Karl-Liebknecht-Straße 23",
+     "website": "https://www.aapka.de/restaurants/berlin-alexanderplatz/",
+     "openingHours": "11:30+",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/320217469",
+     "name": "Aapka",
+     "lat": 52.53399,
+     "lon": 13.40483,
+     "address": "Kastanienallee 50",
+     "website": "http://www.aapka.de/",
+     "openingHours": "Mo-Fr 16:00-23:00; Sa,Su 12:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/487563994",
+     "name": "Aftab",
+     "lat": 52.5381,
+     "lon": 13.40947,
+     "address": "Kastanienallee 90",
+     "website": "https://aftab-persianstreetfood.de/",
+     "openingHours": "PH,Mo-Su 11:00-22:00",
+     "cuisine": "persian",
+     "detailed": true
+    },
+    {
+     "id": "node/675316406",
+     "name": "Agata Torrisi",
+     "lat": 52.53636,
+     "lon": 13.37794,
+     "address": "Wöhlertstraße 5",
+     "website": "https://www.agata-torrisi-berlin.de/",
+     "openingHours": "Mo-Th 11:30-17:00; Fr 11:30-16:00; Sa-Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/896453674",
+     "name": "Aiko",
+     "lat": 52.53053,
+     "lon": 13.40039,
+     "address": "Brunnenstraße 193",
+     "website": "http://www.aiko-sushi.de/",
+     "openingHours": "Mo-Fr 12:00-24:00; Sa,Su 13:00-24:00",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/1389419271",
+     "name": "Aki Tatsu",
+     "lat": 52.52861,
+     "lon": 13.39476,
+     "address": "Torstraße 176",
+     "website": "https://www.aki-tatsu-berlin.de/",
+     "openingHours": "Tu-We 12:00-23:00; Fr 12:00-23:00; Sa-Su 14:00-22:30",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/531309278",
+     "name": "Alt-Berliner Wirtshaus",
+     "lat": 52.51432,
+     "lon": 13.38141,
+     "address": "Wilhelmstraße 77",
+     "website": "https://www.altberliner-wirtshaus.de/",
+     "openingHours": "Mo-Su 11:00-23:00+; Dec 24 off",
+     "cuisine": "german, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/609901041",
+     "name": "Altberliner Restaurant",
+     "lat": 52.53708,
+     "lon": 13.40386,
+     "address": "Fürstenberger Straße 1",
+     "website": "http://www.altberliner-restaurant.de/",
+     "openingHours": "We-Sa 17:00-22:00; Su 12:00-21:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/279302123",
+     "name": "Amrit",
+     "lat": 52.52594,
+     "lon": 13.38963,
+     "address": "Oranienburger Straße 45",
+     "website": "https://www.amrit.de/",
+     "openingHours": "Su-Th 11:30-24:00,Fr-Sa 11:30-01:00; PH off",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/531319944",
+     "name": "Amrit",
+     "lat": 52.51062,
+     "lon": 13.37709,
+     "address": "Ebertstraße 14",
+     "website": "https://www.amrit.de/indisch-essen-potsdamer-platz/",
+     "openingHours": "Mo-Su 11:30-24:00; Fr-Sa 11:30-01:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/332625330",
+     "name": "Anand",
+     "lat": 52.52121,
+     "lon": 13.38497,
+     "address": "Albrechtstraße 12",
+     "website": "https://restaurant-anand.de/",
+     "openingHours": "Mo-Su 12:00-22:30",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/777117528",
+     "name": "Ännchen von Tharau",
+     "lat": 52.51537,
+     "lon": 13.41657,
+     "address": "Rolandufer 6",
+     "website": "http://www.aennchen-von-tharau.de/",
+     "openingHours": "Mo-Fr 10:00-20:00; Sa 11:00-20:00; Su 11:00-19:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/1349696690",
+     "name": "Antica Lasagneria",
+     "lat": 52.51868,
+     "lon": 13.3856,
+     "website": "http://www.ilpunto.net/main.php?web_id=1",
+     "openingHours": "\"Restaurant öffnet für Buchungen\"",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/975312194",
+     "name": "Aposto",
+     "lat": 52.52267,
+     "lon": 13.39992,
+     "address": "Monbijouplatz 12",
+     "website": "https://aposto-berlin.de/",
+     "openingHours": "11:30-23:45",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/330160536",
+     "name": "Atame",
+     "lat": 52.52357,
+     "lon": 13.40686,
+     "address": "Dircksenstraße 40",
+     "website": "https://www.atame-berlin.de/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/901804851",
+     "name": "Augustiner am Gendarmenmarkt",
+     "lat": 52.51381,
+     "lon": 13.39107,
+     "address": "Charlottenstraße 55",
+     "website": "http://www.augustiner-braeu-berlin.de/",
+     "openingHours": "Mo-Su 10:00-01:00",
+     "cuisine": "bavarian",
+     "detailed": true
+    },
+    {
+     "id": "node/542575908",
+     "name": "Austernbank",
+     "lat": 52.51592,
+     "lon": 13.39175,
+     "address": "Behrenstraße 42",
+     "website": "https://www.austernbank-berlin.de/",
+     "openingHours": "Th-Sa 17:00-01:00",
+     "cuisine": "seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/778710969",
+     "name": "Babel",
+     "lat": 52.5367,
+     "lon": 13.40745,
+     "address": "Kastanienallee 33",
+     "website": "http://babel-restaurant.com/",
+     "openingHours": "Mo-Su 11:00-24:00",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/892565238",
+     "name": "BBQ Kitchen",
+     "lat": 52.52282,
+     "lon": 13.4032,
+     "address": "Am Zwirngraben 5",
+     "website": "http://www.bbq-kitchen.de/",
+     "openingHours": "Mo-Su 11:00-00:00",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/89274641",
+     "name": "Beast Berlin",
+     "lat": 52.52429,
+     "lon": 13.41185,
+     "address": "Karl-Liebknecht-Straße 29",
+     "website": "https://beast-berlin.com/",
+     "openingHours": "Mo-Su 17:00-01:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/957661480",
+     "name": "Bejte Ethiopia",
+     "lat": 52.49935,
+     "lon": 13.35707,
+     "address": "Zietenstraße 8",
+     "website": "https://www.bejte-ethiopia.de/",
+     "openingHours": "Mo-Fr 16:00-02:00, Sa-Su 14:00-02:00",
+     "cuisine": "african, ethiopian",
+     "detailed": true
+    },
+    {
+     "id": "node/577100959",
+     "name": "Berkis",
+     "lat": 52.49688,
+     "lon": 13.35364,
+     "address": "Winterfeldtstraße 45",
+     "website": "https://www.berkis.de/",
+     "openingHours": "Mo-Sa 11:30-24:00, Su,PH 13:00-24:00",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/437612731",
+     "name": "BLOCK HOUSE",
+     "lat": 52.52053,
+     "lon": 13.40516,
+     "address": "Karl-Liebknecht-Straße 7",
+     "website": "http://www.block-house.de/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su 12:00-22:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/1349696691",
+     "name": "BLOCK HOUSE",
+     "lat": 52.5204,
+     "lon": 13.38846,
+     "address": "Friedrichstraße 100",
+     "website": "https://www.block-house.de/",
+     "openingHours": "Su-Th 12:00-22:00; Fr,Sa 12:00-23:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/86001794",
+     "name": "Bocca di Bacco",
+     "lat": 52.51511,
+     "lon": 13.38891,
+     "address": "Friedrichstraße 167;168",
+     "website": "http://www.boccadibacco.de/",
+     "openingHours": "Mo-Sa 12:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/337503862",
+     "name": "Bonjour Vietnam",
+     "lat": 52.51614,
+     "lon": 13.38991,
+     "address": "Rosmarinstraße 8",
+     "website": "https://www.bonjourvietnam.berlin/",
+     "openingHours": "Mo-Fr 11:30-22:00; Su 11:30-22:00",
+     "cuisine": "japanese, vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/595644017",
+     "name": "Brauhaus Georgbräu",
+     "lat": 52.51651,
+     "lon": 13.4054,
+     "address": "Spreeufer 4",
+     "website": "http://www.georgbraeu.de/",
+     "openingHours": "Mo-Su 12:00-24:00+",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/336384888",
+     "name": "Brechts",
+     "lat": 52.52147,
+     "lon": 13.38587,
+     "address": "Schiffbauerdamm 6-7",
+     "website": "https://www.brechts.de/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "german, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/1239055308",
+     "name": "Cana",
+     "lat": 52.51231,
+     "lon": 13.40875,
+     "address": "Neue Roßstraße 11-12",
+     "website": "http://www.canarestaurant.de/",
+     "openingHours": "Mo-Sa 11:30-23:30; Su 11:30-23:30",
+     "cuisine": "oriental",
+     "detailed": true
+    },
+    {
+     "id": "node/1363488869",
+     "name": "Cancún",
+     "lat": 52.51908,
+     "lon": 13.40944,
+     "address": "Rathausstraße 5-13",
+     "website": "https://www.cancun-restaurant.de/",
+     "openingHours": "Mo-Th 11:00-01:00, Fr,Sa,PH 11:00+, Su 09:00-01:00",
+     "cuisine": "mexican",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1433120465",
+     "name": "Bandy Brooks",
+     "lat": 52.5192,
+     "lon": 13.40264,
+     "address": "Karl-Liebknecht-Straße 1",
+     "website": "http://www.bandybrooks.com/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/3457756793",
+     "name": "Bell’ Chicco",
+     "lat": 52.52475,
+     "lon": 13.41039,
+     "address": "Rosa-Luxemburg-Straße 16",
+     "website": "https://www.bellchicco.de/",
+     "openingHours": "Tu-Fr 08:00-15:00; Sa 08:30-13:30; Su,Mo off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/802550080",
+     "name": "Bonanza Coffee Heroes",
+     "lat": 52.54,
+     "lon": 13.40538,
+     "address": "Oderberger Straße 35",
+     "website": "https://www.bonanzacoffee.de/",
+     "openingHours": "Mo-Fr 08:30-18:30; Sa-Su 10:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/69226202",
+     "name": "Brammibal's Donuts",
+     "lat": 52.50793,
+     "lon": 13.37373,
+     "address": "Alte Potsdamer Straße 7",
+     "website": "https://www.brammibalsdonuts.com/",
+     "openingHours": "Mo-Fr 09:00-21:00; Sa 10:00-21:00; Su,PH 10:00-20:00",
+     "cuisine": "donut",
+     "detailed": true
+    },
+    {
+     "id": "node/333136478",
+     "name": "Café Albrecht",
+     "lat": 52.52309,
+     "lon": 13.38375,
+     "address": "Reinhardtstraße 23",
+     "website": "https://www.cafe-albrecht.com/",
+     "openingHours": "Mo-Fr 07:00-18:00; Sa 08:00-17:00; Su 08:00-16:00",
+     "cuisine": "pasta, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/582747040",
+     "name": "Café Bar Chagall",
+     "lat": 52.53132,
+     "lon": 13.4128,
+     "address": "Kollwitzstraße 2",
+     "website": "https://www.cafe-chagall.com/",
+     "openingHours": "Mo-Sa 10:00-03:00, Su 10:00-02:00",
+     "cuisine": "russian",
+     "detailed": true
+    },
+    {
+     "id": "node/531795198",
+     "name": "Cafe Buchhandlung",
+     "lat": 52.52617,
+     "lon": 13.39376,
+     "address": "Tucholskystraße 32",
+     "website": "http://caffetteria-buchhandlung.kunstzeit.eu/infos.htm",
+     "openingHours": "Su-Th 10:00-00:00; Fr-Sa 10:00-02:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/1412218896",
+     "name": "Cafe Einstein",
+     "lat": 52.5171,
+     "lon": 13.38595,
+     "address": "Unter den Linden 42",
+     "website": "http://www.einstein-udl.com/",
+     "openingHours": "Mo-Su 07:00-22:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/336139006",
+     "name": "Café Fleury",
+     "lat": 52.53122,
+     "lon": 13.40224,
+     "address": "Weinbergsweg 20",
+     "website": "https://cafe-fleury.eatbu.com/?lang=en",
+     "openingHours": "Mo-Su 09:00-19:00",
+     "cuisine": "breakfast, cake, french",
+     "detailed": true
+    },
+    {
+     "id": "node/2575029355",
+     "name": "Café Kreuzzwerg",
+     "lat": 52.49374,
+     "lon": 13.38177,
+     "address": "Hornstraße 23",
+     "website": "https://www.cafe-kreuzzwerg.de/",
+     "openingHours": "Tu-Th 14:00-18:00; Fr-Mo 10:00-18:00",
+     "cuisine": "bistro",
+     "detailed": true
+    },
+    {
+     "id": "node/1920148932",
+     "name": "Café Re",
+     "lat": 52.51312,
+     "lon": 13.41093,
+     "address": "Märkisches Ufer 22",
+     "website": "http://www.cafe-re.de/",
+     "openingHours": "Mo-Fr 12:00+; Sa-Su 14:00+",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/3937876096",
+     "name": "Café Ribo",
+     "lat": 52.53093,
+     "lon": 13.39661,
+     "address": "Ackerstraße 157",
+     "website": "https://www.caferibo.de/",
+     "openingHours": "Mo-Fr 08:00-21:00; Sa 09:00-18:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/1591637176",
+     "name": "Campus Café",
+     "lat": 52.52489,
+     "lon": 13.37899,
+     "address": "Luisenstraße 13",
+     "website": "http://www.frauschneider-cafe.de/",
+     "openingHours": "Mo-Th 07:00-17:00; Fr 07:00-16:00; Sa,Su,PH off",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/3920547058",
+     "name": "Canal III",
+     "lat": 52.52531,
+     "lon": 13.40167,
+     "address": "Sophienstraße 5",
+     "website": "https://canal.berlin/",
+     "openingHours": "Mo-Su 10:00-19:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/1346939879",
+     "name": "Chez Michel",
+     "lat": 52.50257,
+     "lon": 13.42002,
+     "website": "http://www.chezmichel-berlin.de/",
+     "openingHours": "Mo-Fr 11:00-23:00;Sa-Su 17:00-23:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/961626616",
+     "name": "Coffee Circle",
+     "lat": 52.5265,
+     "lon": 13.38875,
+     "address": "Linienstraße 130",
+     "website": "https://www.coffeecircle.com/de/e/coffee-circle-cafe#oranien",
+     "openingHours": "Mo-Fr 08:00-19:00; Sa,Su,PH 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/821271943",
+     "name": "Coffee Fellows",
+     "lat": 52.50824,
+     "lon": 13.39006,
+     "address": "Friedrichstraße 204",
+     "website": "https://www.coffee-fellows.com/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa,Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3205029103",
+     "name": "Coffee Fellows",
+     "lat": 52.52272,
+     "lon": 13.40965,
+     "address": "Karl-Liebknecht-Straße 13",
+     "website": "https://www.coffee-fellows.com/",
+     "openingHours": "Mo-Su 08:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3670473949",
+     "name": "Coffee Room",
+     "lat": 52.52979,
+     "lon": 13.4153,
+     "address": "Saarbrücker Straße 30",
+     "website": "https://www.coffeeroom.berlin/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa 10:00-18:00; Su,PH off",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/1860404844",
+     "name": "Comebuy",
+     "lat": 52.52359,
+     "lon": 13.39922,
+     "address": "Oranienburger Straße 83",
+     "website": "https://www.comebuy2002.de/",
+     "openingHours": "Mo-Su 11:00-20:00",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/935637567",
+     "name": "cuccuma",
+     "lat": 52.49058,
+     "lon": 13.39436,
+     "website": "https://www.cuccuma.de/",
+     "openingHours": "Mo-Fr 07:30-19:00; Sa,Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3487433393",
+     "name": "Du Bonheur",
+     "lat": 52.53627,
+     "lon": 13.3978,
+     "address": "Brunnenstraße 39",
+     "website": "https://www.dubonheur.de/",
+     "openingHours": "We-Fr 08:00-19:00; Sa,Su 09:00-18:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/1367516641",
+     "name": "Egen Tied",
+     "lat": 52.52849,
+     "lon": 13.37657,
+     "address": "Invalidenstraße 90",
+     "website": "https://egentied.de/",
+     "openingHours": "Mo-Fr 07:00-18:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/440923198",
+     "name": "Einstein Kaffee",
+     "lat": 52.51248,
+     "lon": 13.39367,
+     "website": "https://einstein-kaffee.de/standorte/standorte-berlin/gendarmenmarkt/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/333136721",
+     "name": "Espresso Ambulanz",
+     "lat": 52.52601,
+     "lon": 13.38802,
+     "address": "Oranienburger Straße 51",
+     "website": "http://www.espresso-ambulanz.de/",
+     "openingHours": "08:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/84644791",
+     "name": "Espresso House",
+     "lat": 52.50827,
+     "lon": 13.377,
+     "address": "Potsdamer Platz 10",
+     "website": "https://de.espressohouse.com/find-us/potsdamer-platz-10",
+     "openingHours": "Mo-Fr 06:00-22:00; Sa-Su 07:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/87036259",
+     "name": "Espresso House",
+     "lat": 52.53076,
+     "lon": 13.38315,
+     "address": "Invalidenstraße 35",
+     "website": "https://de.espressohouse.com/coffee-shops/chausseestrae/",
+     "openingHours": "Mo-Fr 06:30-20:00; Sa,Su 07:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/275564580",
+     "name": "Espresso House",
+     "lat": 52.52591,
+     "lon": 13.387,
+     "address": "Friedrichstraße 125",
+     "website": "https://de.espressohouse.com/find-us/b-friedrichstrase",
+     "openingHours": "Mo-Sa 07:00-19:30; Su,PH 08:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3868790052",
+     "name": "Father Carpenter Coffee Brewers",
+     "lat": 52.52444,
+     "lon": 13.4066,
+     "address": "Münzstraße 21",
+     "website": "http://www.fathercarpenter.com/",
+     "openingHours": "Mo-Fr 09:00-16:00; Sa 10:00-17:00; Su 12:00-16:00",
+     "cuisine": "coffee shop, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/3636472602",
+     "name": "Five Elephant",
+     "lat": 52.53375,
+     "lon": 13.40991,
+     "address": "Schwedter Straße 11",
+     "website": "https://www.fiveelephant.com/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa-Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4307700921",
+     "name": "Bata",
+     "lat": 52.53036,
+     "lon": 13.36705,
+     "address": "Heidestraße 50",
+     "website": "https://www.batabar.com/",
+     "openingHours": "Su-Th 15:00-24:00, Fr-Sa 15:00-02:00",
+     "cuisine": "pasta, pizza, vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/7101244895",
+     "name": "Belushi's",
+     "lat": 52.5236,
+     "lon": 13.39104,
+     "address": "Ziegelstraße 28",
+     "website": "https://belushis.com/berlin-mitte-ziegelstrase",
+     "openingHours": "Mo-Su 10:00-2:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/5726198087",
+     "name": "Berlin Icebar - Polar Expedition",
+     "lat": 52.52127,
+     "lon": 13.40363,
+     "address": "Spandauer Straße 2",
+     "website": "https://berlinicebar.com/",
+     "openingHours": "Mo-Fr 15:00-22:00; Sa-Su 14:00-22:00",
+     "cuisine": "waffle, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/332625324",
+     "name": "Böse Buben Bar",
+     "lat": 52.52232,
+     "lon": 13.38389,
+     "address": "Marienstraße 18",
+     "website": "http://www.boesebubenbar.de/",
+     "openingHours": "10:00+",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4367758889",
+     "name": "Brło Brwhouse",
+     "lat": 52.50002,
+     "lon": 13.37361,
+     "address": "Schöneberger Straße 16",
+     "website": "https://www.brlo.de/",
+     "openingHours": "Tu-Fr 17:00-23:55; Sa-Su 12:00-23:55",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/490740360",
+     "name": "Kilkenny",
+     "lat": 52.52244,
+     "lon": 13.40156,
+     "address": "Am Zwirngraben 17-20",
+     "website": "http://www.kilkenny-pub.de/",
+     "openingHours": "Su-Th 10:00-24:00, Fr,Sa 10:00-02:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/330257797",
+     "name": "Perlin",
+     "lat": 52.53591,
+     "lon": 13.405,
+     "address": "Griebenowstraße 5",
+     "website": "https://www.weinerei.com/#!/location-perlin",
+     "openingHours": "We-Su 18:00+",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/891502072",
+     "name": "Schokoladen",
+     "lat": 52.52974,
+     "lon": 13.39718,
+     "address": "Ackerstraße 169",
+     "website": "https://schokoladen-mitte.de/",
+     "openingHours": "Tu-Th 19:00-02:00, Fr-Sa 19:00-03:00",
+     "cuisine": "juice, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/322178039",
+     "name": "Sophieneck",
+     "lat": 52.5264,
+     "lon": 13.39857,
+     "address": "Große Hamburger Straße 37",
+     "website": "https://www.sophieneck-berlin.de/",
+     "openingHours": "PH,Mo-Su 12:00-02:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/929208382",
+     "name": "Stadtklause",
+     "lat": 52.50083,
+     "lon": 13.38661,
+     "address": "Stresemannstraße 37",
+     "website": "https://stadtklause.wordpress.com/",
+     "openingHours": "Mo-Sa 15:00-24:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/309054593",
+     "name": "The Lir",
+     "lat": 52.52024,
+     "lon": 13.34434,
+     "address": "Flensburger Straße 7",
+     "website": "https://www.thelir.de/",
+     "openingHours": "Tu-Th 16:30+; Fr-Su 15:00+; Mo off",
+     "cuisine": "pub",
+     "detailed": true
+    },
+    {
+     "id": "node/4948143723",
+     "name": "203 Bar im Fernsehturm",
+     "lat": 52.52086,
+     "lon": 13.40936,
+     "address": "Panoramastraße 1a",
+     "website": "https://www.tv-turm.de/de/bar-restaurant",
+     "openingHours": "Mo-Su 10:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/811187906",
+     "name": "32-16-8",
+     "lat": 52.53254,
+     "lon": 13.35102,
+     "address": "Perleberger Straße 58",
+     "website": "https://www.32168.de/",
+     "openingHours": "We-Sa 18:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/4172803384",
+     "name": "8MM",
+     "lat": 52.53122,
+     "lon": 13.41157,
+     "address": "Schönhauser Allee 177B",
+     "website": "https://www.8mmbar.de/",
+     "openingHours": "Mo-Su 19:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1149058591",
+     "name": "Anna Koschke",
+     "lat": 52.52529,
+     "lon": 13.39824,
+     "address": "Krausnickstraße 11",
+     "website": "http://www.anna-koschke.de/",
+     "openingHours": "Mo-Th 17:00-01:00, Fr-Sa 17:00-03:00, Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1161915839",
+     "name": "Baiz",
+     "lat": 52.53595,
+     "lon": 13.41275,
+     "website": "https://www.baiz.info/",
+     "openingHours": "Mo-Su 16:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/3830235403",
+     "name": "Bar am Lützowplatz",
+     "lat": 52.50458,
+     "lon": 13.35356,
+     "website": "http://baramluetzowplatz.com/",
+     "openingHours": "We,Th 18:00-02:00, Fr,Sa 18:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9045180679",
+     "name": "Bar Saint Jean",
+     "lat": 52.52359,
+     "lon": 13.39075,
+     "address": "Ziegelstraße 29",
+     "website": "https://sites.google.com/view/barsaintjean/",
+     "openingHours": "Mo,Su off; Tu-Th 19:00-02:00; Fr-Sa 20:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5324651378",
+     "name": "Bar Schwips",
+     "lat": 52.52949,
+     "lon": 13.3881,
+     "address": "Eichendorffstraße 1",
+     "website": "https://barschwips.de/",
+     "openingHours": "Mo-Tu off; We-Th 16:00-22:00; Fr-Sa 16:00-23:00; Su 16:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3239758885",
+     "name": "Bar Steinkeller",
+     "lat": 52.52735,
+     "lon": 13.40396,
+     "address": "Steinstraße 20",
+     "website": "https://cocktailbar-steinkeller.de/",
+     "openingHours": "Su-Fr 17:00-02:00; Sa 17:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1391604297",
+     "name": "Bar Tausend",
+     "lat": 52.52082,
+     "lon": 13.38471,
+     "address": "Schiffbauerdamm 11",
+     "website": "https://tausendberlin.com/",
+     "openingHours": "Th-Sa 21:00-24:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/383851727",
+     "name": "Bar Voyage",
+     "lat": 52.49798,
+     "lon": 13.3563,
+     "address": "Nollendorfstraße 1",
+     "website": "https://www.barvoyage.de/",
+     "openingHours": "Tu-Su 17:00-24:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/7016358158",
+     "name": "Begine",
+     "lat": 52.4968,
+     "lon": 13.3619,
+     "address": "Potsdamer Straße 138",
+     "website": "https://www.begine.de/",
+     "openingHours": "Mo-Fr 17:00+; Sa 19:00+; Su \"laut Programm\"",
+     "detailed": true
+    },
+    {
+     "id": "node/86001835",
+     "name": "Bellboy Berlin",
+     "lat": 52.51205,
+     "lon": 13.39188,
+     "address": "Anton-Wilhelm-Amo-Straße 30",
+     "website": "https://bellboybar.com/",
+     "openingHours": "Tu-Su 18:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/3895249257",
+     "name": "Belushi's Berlin",
+     "lat": 52.52687,
+     "lon": 13.41065,
+     "address": "Rosa-Luxemburg-Straße 41",
+     "website": "http://www.belushis.com/bars/berlin",
+     "openingHours": "10:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3600762160",
+     "name": "Berliner Marcus Bräu",
+     "lat": 52.52399,
+     "lon": 13.40922,
+     "address": "Münzstraße 1-3",
+     "website": "https://volkskochtopf.de/",
+     "openingHours": "Mo-Fr 12:00-00:00; Sa 14:00-00:00; Su 16:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1278254656",
+     "name": "Betty F***",
+     "lat": 52.52754,
+     "lon": 13.40521,
+     "address": "Mulackstraße 13",
+     "website": "http://www.bettyf.de/",
+     "openingHours": "Mo-Th 20:00-03:00, Fr,Sa 20:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6074181222",
+     "name": "Bierbar Alkopole",
+     "lat": 52.52147,
+     "lon": 13.41159,
+     "website": "http://www.alkopole.de/",
+     "openingHours": "Mo-We 10:00-23:00, Th-Sa 09:00-01:00, Su,PH 11:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4866118021",
+     "name": "Biermeisterei by Lemke Berlin",
+     "lat": 52.52255,
+     "lon": 13.40794,
+     "address": "Karl-Liebknecht-Straße 13",
+     "website": "https://biermeisterei.lemke.berlin/",
+     "openingHours": "Mo-Sa 12:00-22:00; Su 15:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1552565067",
+     "name": "Bijou Bar",
+     "lat": 52.52298,
+     "lon": 13.39996,
+     "address": "Monbijouplatz 1",
+     "website": "http://www.monbijouhotel.de/",
+     "openingHours": "Mo-Su 07:00-00:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/736787851",
+     "name": "1820",
+     "lat": 52.52679,
+     "lon": 13.4107,
+     "address": "Rosa-Luxemburg-Straße 41",
+     "website": "https://www.belushis.com/bars/berlin",
+     "openingHours": "Mo-Su 19:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/262818281",
+     "name": "ASeven Club",
+     "lat": 52.52323,
+     "lon": 13.41643,
+     "address": "Alexanderstraße 7",
+     "website": "https://www.aseven.de/",
+     "openingHours": "Fr 23:30-06:00, Sa 19:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1820069776",
+     "name": "b-flat",
+     "lat": 52.52355,
+     "lon": 13.40699,
+     "address": "Dircksenstraße 40",
+     "website": "http://b-flat-berlin.de/",
+     "openingHours": "Mo-Su 20:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/910429971",
+     "name": "Ballhaus Berlin",
+     "lat": 52.53208,
+     "lon": 13.38029,
+     "address": "Chausseestraße 102",
+     "website": "https://www.ballhaus-berlin.de/",
+     "openingHours": "Mo-Sa 15:00-04:00, Su 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/429735547",
+     "name": "Clärchens Ballhaus",
+     "lat": 52.52647,
+     "lon": 13.39691,
+     "address": "Auguststraße 24",
+     "website": "https://www.claerchensball.haus/",
+     "openingHours": "Tu-Fr 17:00-23:00; Sa-Su 14:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "way/36908987",
+     "name": "Gretchen",
+     "lat": 52.49604,
+     "lon": 13.38754,
+     "address": "Obentrautstraße 19-21",
+     "website": "https://www.gretchen-club.de/",
+     "openingHours": "\"Je nach Veranstaltung\"",
+     "detailed": true
+    },
+    {
+     "id": "node/1145853246",
+     "name": "Hafenbar",
+     "lat": 52.52176,
+     "lon": 13.40755,
+     "address": "Karl-Liebknecht-Straße 11",
+     "website": "https://www.hafenbar-berlin.de/",
+     "openingHours": "Fr-Sa 21:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "way/379305718",
+     "name": "Metropol",
+     "lat": 52.49895,
+     "lon": 13.3527,
+     "address": "Nollendorfplatz 5",
+     "website": "https://metropol-berlin.de/",
+     "openingHours": "\"zu Veranstaltungen\"",
+     "detailed": true
+    },
+    {
+     "id": "node/7230925407",
+     "name": "Mokka Mitte Bar",
+     "lat": 52.52224,
+     "lon": 13.39831,
+     "website": "https://www.mokkamitte.de/",
+     "openingHours": "Mo-Th 16:00-23:00; Fr 14:00-23:30; Sa 13:00-23:30; Su 12:30-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/670069373",
+     "name": "NBI Club",
+     "lat": 52.53567,
+     "lon": 13.40118,
+     "address": "Zionskirchstraße 5",
+     "website": "http://www.neueberlinerinitiative.de/",
+     "openingHours": "Mo-Su 20:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/979969868",
+     "name": "Ritter Butzke",
+     "lat": 52.50301,
+     "lon": 13.40814,
+     "address": "Ritterstraße 26",
+     "website": "https://club.ritterbutzke.com/",
+     "openingHours": "\"siehe Website\"",
+     "detailed": true
+    },
+    {
+     "id": "node/3830239588",
+     "name": "Trompete",
+     "lat": 52.50443,
+     "lon": 13.35344,
+     "address": "Lützowplatz 9",
+     "website": "https://trompete-berlin.de/",
+     "openingHours": "Th 19:00+; Sa 21:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/1162812586",
+     "name": "Weekend Club",
+     "lat": 52.5229,
+     "lon": 13.41642,
+     "address": "Alexanderstraße 7",
+     "website": "http://www.week-end-berlin.de/",
+     "openingHours": "Fr,Tu 22:00-06:00, Sa 19:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1144034120",
+     "name": "AM to PM",
+     "lat": 52.52294,
+     "lon": 13.40346,
+     "address": "Am Zwirngraben 2",
+     "openingHours": "zurzeit geschlossen"
+    },
+    {
+     "id": "node/4217156190",
+     "name": "Beate Uwe",
+     "lat": 52.51748,
+     "lon": 13.41902,
+     "address": "Schillingstraße 31",
+     "website": "https://beate-uwe.de/"
+    },
+    {
+     "id": "node/1310466406",
+     "name": "BRICKS Club",
+     "lat": 52.51213,
+     "lon": 13.39324,
+     "address": "Anton-Wilhelm-Amo-Straße 30",
+     "website": "https://bricks-berlin.club/"
+    },
+    {
+     "id": "node/918183904",
+     "name": "Club R8",
+     "lat": 52.51618,
+     "lon": 13.38995,
+     "address": "Rosmarinstraße 8",
+     "website": "http://www.clubr8.com/"
+    },
+    {
+     "id": "node/6482231157",
+     "name": "Cosmic Kaspar",
+     "lat": 52.52998,
+     "lon": 13.40069,
+     "address": "Brunnenstraße 197-198",
+     "website": "https://www.cosmic-kaspar.de/"
+    },
+    {
+     "id": "node/10621062970",
+     "name": "Fitzroy",
+     "lat": 52.51308,
+     "lon": 13.42287,
+     "address": "Holzmarktstraße 15—18",
+     "website": "https://fitzroy-berlin.de/"
+    },
+    {
+     "id": "node/3121055734",
+     "name": "Flow Bar",
+     "lat": 52.52612,
+     "lon": 13.39368,
+     "address": "Tucholskystraße 32",
+     "openingHours": "Su,Mo,Tu off, We,Th 21:00-05:00, Fr,Sa 21:00-06:00"
+    },
+    {
+     "id": "node/4784529624",
+     "name": "Geheimclub (Annika von Trier)",
+     "lat": 52.5268,
+     "lon": 13.39087,
+     "address": "Linienstraße 144",
+     "website": "https://annika-von-trier.com/geheimclub/"
+    },
+    {
+     "id": "way/72984386",
+     "name": "Golden Gate",
+     "lat": 52.51598,
+     "lon": 13.41693,
+     "website": "https://www.goldengate-berlin.de/"
+    },
+    {
+     "id": "way/136852556",
+     "name": "Hangar 49",
+     "lat": 52.51319,
+     "lon": 13.42236,
+     "address": "Mitte",
+     "website": "https://hangar49.de/"
+    },
+    {
+     "id": "node/259845846",
+     "name": "Junction-Bar",
+     "lat": 52.49137,
+     "lon": 13.39315,
+     "address": "Gneisenaustraße 18",
+     "website": "https://www.junction-bar.de/"
+    },
+    {
+     "id": "way/293386107",
+     "name": "Kater Blau",
+     "lat": 52.51192,
+     "lon": 13.42533,
+     "address": "Holzmarktstraße 25",
+     "website": "http://www.katerblau.de/"
+    },
+    {
+     "id": "node/729294555",
+     "name": "Kit Kat Club",
+     "lat": 52.51121,
+     "lon": 13.41692,
+     "address": "Köpenicker Straße 76",
+     "website": "http://www.kitkatclub.org/"
+    },
+    {
+     "id": "node/12137704154",
+     "name": "Kreuzwerk",
+     "lat": 52.50301,
+     "lon": 13.40783,
+     "address": "Lobeckstraße 30-35",
+     "website": "https://kreuzwerk.berlin/"
+    },
+    {
+     "id": "way/136852555",
+     "name": "LARK",
+     "lat": 52.51302,
+     "lon": 13.42278,
+     "address": "Holzmarktstraße 15—18",
+     "website": "https://larkberlin.com/"
+    },
+    {
+     "id": "node/3783242657",
+     "name": "M-BIA",
+     "lat": 52.52263,
+     "lon": 13.40923,
+     "address": "Dircksenstraße 123-124",
+     "openingHours": "We 23:00-07:00; Fr-Sa 23:00-09:00"
+    },
+    {
+     "id": "node/9272743117",
+     "name": "Melancholie 2",
+     "lat": 52.51117,
+     "lon": 13.41681,
+     "address": "Brückenstraße 1",
+     "openingHours": "Su 16:00-04:00; Fr-Sa 23:00-10:00"
+    }
+   ]
+  }
+ }
+}

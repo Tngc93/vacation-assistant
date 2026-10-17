@@ -1,0 +1,1966 @@
+{
+ "version": 1,
+ "cityCode": "HAM",
+ "fetchedAt": "2026-10-16T23:27:14.028Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Hamburg_view_St._Nikolai.jpg/1280px-Hamburg_view_St._Nikolai.jpg",
+  "width": 1280,
+  "height": 847,
+  "author": "kallerna",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_view_St._Nikolai.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/24981342",
+     "name": "Elbphilharmonie",
+     "lat": 53.54125,
+     "lon": 9.98411,
+     "address": "Platz der Deutschen Einheit 1",
+     "website": "https://www.elbphilharmonie.de/de/",
+     "wikipediaCount": 40
+    },
+    {
+     "id": "node/4417808181",
+     "name": "Speicherstadt",
+     "lat": 53.54401,
+     "lon": 9.98698,
+     "wikipediaCount": 39
+    },
+    {
+     "id": "node/5894237785",
+     "name": "Chilehaus Hamburg",
+     "lat": 53.54834,
+     "lon": 10.00185,
+     "address": "Fischertwiete 2",
+     "website": "https://www.chilehaus.de/de/Auf-einen-Blick.html",
+     "wikipediaCount": 34
+    },
+    {
+     "id": "node/10946039386",
+     "name": "Miniatur Wunderland",
+     "lat": 53.54382,
+     "lon": 9.98894,
+     "address": "Kehrwieder 2-4",
+     "website": "https://www.miniatur-wunderland.de/",
+     "openingHours": "Mo-Su 07:00-01:00",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "way/22731336",
+     "name": "Hauptkirche St. Michaelis",
+     "lat": 53.5484,
+     "lon": 9.9789,
+     "address": "Englische Planke 1A",
+     "website": "https://www.st-michaelis.de/",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "way/142944431",
+     "name": "Rathaus",
+     "lat": 53.55041,
+     "lon": 9.99237,
+     "address": "Rathausmarkt 1",
+     "website": "https://www.hamburg.de/rathaus/",
+     "openingHours": "Mo-Th 10:00-15:15; Fr-Su 10:00-13:15",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "relation/8103463",
+     "name": "Planten un Blomen",
+     "lat": 53.55687,
+     "lon": 9.97998,
+     "website": "https://plantenunblomen.hamburg.de/",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/45017024",
+     "name": "Bismarck-Denkmal",
+     "lat": 53.54869,
+     "lon": 9.97205,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/48361392",
+     "name": "St. Pauli-Elbtunnel",
+     "lat": 53.54587,
+     "lon": 9.9666,
+     "address": "Bei den St. Pauli-Landungsbrücken",
+     "website": "https://www.hamburg.de/alter-elbtunnel/",
+     "openingHours": "24/7",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/2720636699",
+     "name": "Heinrich-Hertz-Turm",
+     "lat": 53.56313,
+     "lon": 9.97581,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/137224834",
+     "name": "Rickmer Rickmers",
+     "lat": 53.54458,
+     "lon": 9.97295,
+     "website": "https://www.rickmer-rickmers.de/",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/845145391",
+     "name": "Peking",
+     "lat": 53.52646,
+     "lon": 10.00062,
+     "website": "https://peking-freunde.de/",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/268476108",
+     "name": "Hamburg Dungeon",
+     "lat": 53.54387,
+     "lon": 9.9894,
+     "address": "Kehrwieder 2",
+     "website": "https://www.the-dungeons.de/",
+     "openingHours": "Su-Th 10:00-17:00; Fr 11:00-19:00; Sa 10:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/979332538",
+     "name": "Hamburger DOM",
+     "lat": 53.55343,
+     "lon": 9.97011,
+     "website": "https://www.hamburg.de/dom",
+     "openingHours": "2026 Mar 20-2026 Apr 19 Mo-Th 15:00-23:00; 2026 Mar 20-2026 Apr 19 Fr-Sa 15:00-24:00; 2026 Mar 20-2026 Apr 19 Su 14:00-23:00; 2026 Apr 03 off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/443383971",
+     "name": "Panoptikum",
+     "lat": 53.54943,
+     "lon": 9.96655,
+     "address": "Spielbudenplatz 3",
+     "website": "https://www.panoptikum.de/de/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/142944250",
+     "name": "Deichstraße",
+     "lat": 53.54663,
+     "lon": 9.98794,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/1419324731",
+     "name": "Deichstraße",
+     "lat": 53.54701,
+     "lon": 9.98868,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/973035313",
+     "name": "Polizeikommissariat 15 - Davidwache",
+     "lat": 53.54889,
+     "lon": 9.96278,
+     "address": "Spielbudenplatz 31",
+     "website": "https://polizei.hamburg/",
+     "openingHours": "24/7",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/128398939",
+     "name": "Krameramtsstuben",
+     "lat": 53.54802,
+     "lon": 9.98029,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/432980656",
+     "name": "BLEICHEN",
+     "lat": 53.52937,
+     "lon": 9.99869,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/568490944",
+     "name": "Alsterfontäne",
+     "lat": 53.55507,
+     "lon": 9.99578,
+     "website": "http://alsterfontaene.de/typisch-hamburg/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/31053577",
+     "name": "Alter Botanischer Garten",
+     "lat": 53.55948,
+     "lon": 9.98604,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/617018037",
+     "name": "Bischofsturm",
+     "lat": 53.55001,
+     "lon": 9.9979,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/849896397",
+     "name": "Schilleroper",
+     "lat": 53.55801,
+     "lon": 9.96175,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/442010897",
+     "name": "Park Fiction",
+     "lat": 53.54619,
+     "lon": 9.95708,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/997127889",
+     "name": "Vierländerin-Brunnen",
+     "lat": 53.54766,
+     "lon": 9.99018,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/268807434",
+     "name": "PENNY",
+     "lat": 53.54974,
+     "lon": 9.96057,
+     "address": "Reeperbahn 108-114",
+     "website": "https://www.penny.de/markt/hamburg/530133/penny-kiez-reeperbahn-108-114",
+     "openingHours": "Mo-Sa 07:00-23:00; PH off"
+    },
+    {
+     "id": "way/1414020805",
+     "name": "\"Grüne Schute\" - Lebendige Alster",
+     "lat": 53.54748,
+     "lon": 9.98429,
+     "website": "https://www.lebendigealster.de/gr%C3%BCne-schute/"
+    },
+    {
+     "id": "node/12291795969",
+     "name": "Panik City",
+     "lat": 53.54902,
+     "lon": 9.96422,
+     "website": "https://www.panikcity.de/"
+    },
+    {
+     "id": "node/12709538501",
+     "name": "Paradieshof",
+     "lat": 53.55022,
+     "lon": 9.98192,
+     "address": "Alter Steinweg 11",
+     "website": "https://www.denkmalverein.de/gerettet/paradieshof"
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/142944355",
+     "name": "Hamburger Kunsthalle",
+     "lat": 53.55529,
+     "lon": 10.00308,
+     "address": "Glockengießerwall 5",
+     "website": "https://www.hamburger-kunsthalle.de/",
+     "openingHours": "Tu-We 10:00-18:00; Th 10:00-21:00; Fr-Su 10:00-18:00",
+     "wikipediaCount": 34
+    },
+    {
+     "id": "node/6695848618",
+     "name": "St. Nikolai Museum",
+     "lat": 53.54766,
+     "lon": 9.9912,
+     "address": "Willy-Brandt-Straße 60",
+     "website": "https://www.mahnmal-st-nikolai.de/",
+     "openingHours": "Mo-Su 10:00-21:00",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "way/42864381",
+     "name": "Museum für Kunst und Gewerbe Hamburg",
+     "lat": 53.5513,
+     "lon": 10.0093,
+     "address": "Steintorplatz 1",
+     "website": "https://www.mkg-hamburg.de/",
+     "openingHours": "Tu,We,Fr-Su 10:00-18:00; Mo off; Th 10:00-21:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/25337154",
+     "name": "Internationales Maritimes Museum Hamburg",
+     "lat": 53.54335,
+     "lon": 9.99982,
+     "address": "Koreastraße 1",
+     "website": "https://www.imm-hamburg.de/",
+     "openingHours": "Mo-Su,PH 10:00-18:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/137318607",
+     "name": "Cap San Diego",
+     "lat": 53.54319,
+     "lon": 9.97624,
+     "address": "Überseebrücke",
+     "website": "https://www.capsandiego.de/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/23191265",
+     "name": "Deichtorhallen",
+     "lat": 53.54726,
+     "lon": 10.00676,
+     "address": "Deichtorstraße 1",
+     "website": "https://www.deichtorhallen.de/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/265761266",
+     "name": "Dialoghaus Hamburg",
+     "lat": 53.54621,
+     "lon": 10.00168,
+     "address": "Alter Wandrahm 4",
+     "website": "https://dialog-in-hamburg.de/",
+     "openingHours": "Tu-Th 10:00-17:00; Fr-Sa 10:00-17:45; Su, PH 11:00-17:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/13041286663",
+     "name": "KomponistenQuartier Hamburg",
+     "lat": 53.55133,
+     "lon": 9.97687,
+     "address": "Peterstraße 29-39",
+     "website": "https://www.komponistenquartier.de/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/706970884",
+     "name": "Brahms-Museum",
+     "lat": 53.55122,
+     "lon": 9.9766,
+     "address": "Peterstraße 39",
+     "website": "https://brahms-hamburg.de/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/3912562937",
+     "name": "Kaffeemuseum Burg",
+     "lat": 53.54469,
+     "lon": 9.99674,
+     "website": "https://kaffeemuseum-burg.de/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/5892735585",
+     "name": "Erotic Art Museum",
+     "lat": 53.54702,
+     "lon": 9.96162,
+     "address": "Bernhard-Nocht-Straße 79",
+     "website": "https://erotic-art-museum.com/",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/861287892",
+     "name": "Deutsches Hafenmuseum",
+     "lat": 53.52537,
+     "lon": 10.00007,
+     "address": "Australiastraße",
+     "website": "https://shmh.de/de/deutsches-hafenmuseum",
+     "openingHours": "Nov-Mar: off; Mo-Fr 10:00-17:00; Tu off; Sa,Su 10:00-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/1650071826",
+     "name": "PROTOTYP -Das Automuseum",
+     "lat": 53.54336,
+     "lon": 10.00251,
+     "address": "Shanghaiallee 7",
+     "website": "https://www.prototyp-hamburg.de/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/1643193207",
+     "name": "Telemann-Museum",
+     "lat": 53.55128,
+     "lon": 9.97715,
+     "website": "http://www.telemann-hamburg.de/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/27443629",
+     "name": "Zoologisches Museum",
+     "lat": 53.56713,
+     "lon": 9.97822,
+     "address": "Bundesstraße 52",
+     "website": "https://www.cenak.uni-hamburg.de/ausstellungen/museum-zoologie.html",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/277296724",
+     "name": "Deutsches Zollmuseum",
+     "lat": 53.54594,
+     "lon": 9.99801,
+     "address": "Alter Wandrahm 15-16",
+     "website": "https://www.museum.zoll.de/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/302710293",
+     "name": "Speicherstadtmuseum",
+     "lat": 53.54308,
+     "lon": 9.98753,
+     "address": "Am Sandtorkai 36",
+     "website": "https://www.shmh.de/speicherstadtmuseum/",
+     "openingHours": "Mar-Nov Mo-Fr 10:00-17:00, Mar-Nov Sa,Su 10:00-18:00; Dec-Feb Th-Su 10:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/4960538797",
+     "name": "Carl-Philipp-Emanuel-Bach-Museum",
+     "lat": 53.55125,
+     "lon": 9.97713,
+     "website": "http://www.komponistenquartier.de/die-museen/carl-philipp-emanuel-bach-museum",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/1636614093",
+     "name": "Freie Akademie der Künste",
+     "lat": 53.54853,
+     "lon": 10.00671,
+     "website": "https://www.akademie-der-kuenste.de/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/4960538796",
+     "name": "Johann-Adolf-Hasse-Museum",
+     "lat": 53.55121,
+     "lon": 9.97711,
+     "website": "http://www.komponistenquartier.de/die-museen/johann-adolf-hasse-museum",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/946081680",
+     "name": "Deutsches Zusatzstoffmuseum",
+     "lat": 53.5408,
+     "lon": 10.02095,
+     "address": "Auf der Brandshofer Schleuse 4",
+     "website": "https://www.zusatzstoffmuseum.de/",
+     "openingHours": "We,Fr-Su 11:00-17:00; Th 14:00-20:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/5460118667",
+     "name": "FC St. Pauli - Museum",
+     "lat": 53.55465,
+     "lon": 9.96905,
+     "website": "https://www.fcstpauli-museum.de/",
+     "openingHours": "We,Fr 15:00-19:00; Th 15:00-22:00; Sa 11:00-19:00; Su 10:00-18:00; PH off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/28207271",
+     "name": "Geologisch-Paläontologisches Museum",
+     "lat": 53.56799,
+     "lon": 9.97406,
+     "address": "Bundesstraße",
+     "website": "https://www.uni-hamburg.de/geol_pal/",
+     "openingHours": "Mo-Fr 10:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/3168353161",
+     "name": "Hamburger Genossenschaftsmuseum",
+     "lat": 53.55058,
+     "lon": 10.01208,
+     "website": "https://www.kaufmann-stiftung.de/Genossenschaftsmuseum.html",
+     "openingHours": "Tu-Th 14:00 -17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/2712372730",
+     "name": "Hamburger Schulmuseum",
+     "lat": 53.55064,
+     "lon": 9.96337,
+     "website": "http://www.hamburger-schulmuseum.de/",
+     "openingHours": "Mo-Fr 10:00-16:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/23191264",
+     "name": "Haus der Photographie",
+     "lat": 53.54631,
+     "lon": 10.00625,
+     "address": "Deichtorstraße 2",
+     "website": "https://www.deichtorhallen.de/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/34544690",
+     "name": "Mineralogisches Museum",
+     "lat": 53.5663,
+     "lon": 9.98243,
+     "address": "Grindelallee 46",
+     "website": "http://www.museen.uni-hamburg.de/mineralogie/de/start/index.html",
+     "openingHours": "We 10:00-18:00, Su 10:00-17:00; PH closed",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/301998423",
+     "name": "Spicy's Gewürzmuseum",
+     "lat": 53.54315,
+     "lon": 9.98839,
+     "address": "Am Sandtorkai 34",
+     "website": "https://www.spicys.de/",
+     "openingHours": "Nov-Jun Tu-Su 10:00-17:00;Jul-Oct Mo-Su 10:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/11242020637",
+     "name": "Zaubermuseum Bellachini",
+     "lat": 53.555,
+     "lon": 10.01147,
+     "website": "https://hamburger-zaubermuseum.com/",
+     "openingHours": "Th-Fr 11:00-17:00; Sa-Su 11:00-18:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/3664674297",
+     "name": "Affenfaust Galerie",
+     "lat": 53.55328,
+     "lon": 9.9562,
+     "address": "Paul-Roosen-Straße 43",
+     "website": "https://affenfaustgalerie.de/",
+     "openingHours": "We,Th,Sa 14:00-18:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4510933902",
+     "name": "Plaza",
+     "lat": 53.54157,
+     "lon": 9.98407,
+     "website": "https://www.elbphilharmonie.de/de/plaza",
+     "openingHours": "Mo-Su,PH 10:00-24:00"
+    },
+    {
+     "id": "node/12037260919",
+     "name": "Stadtgarten",
+     "lat": 53.55647,
+     "lon": 9.96989,
+     "website": "https://www.bunker-stpauli.de/",
+     "openingHours": "Mo-Su 09:00-21:00"
+    },
+    {
+     "id": "node/6220873585",
+     "name": "Historische Häuser",
+     "lat": 53.5457,
+     "lon": 9.98762,
+     "website": "https://www.hamburg.de/deichstrasse-hamburg/"
+    },
+    {
+     "id": "node/1260271221",
+     "name": "St. Nikolai Kirche - Aussichtsplattform",
+     "lat": 53.5475,
+     "lon": 9.99067,
+     "website": "https://www.mahnmal-st-nikolai.de/"
+    },
+    {
+     "id": "node/1382343767",
+     "name": "Afrikahöft",
+     "lat": 53.53406,
+     "lon": 9.99031
+    },
+    {
+     "id": "node/13671737202",
+     "name": "Cruise Center HafenCity",
+     "lat": 53.53868,
+     "lon": 9.99818
+    },
+    {
+     "id": "node/4668489941",
+     "name": "Himmelsberg",
+     "lat": 53.53794,
+     "lon": 10.01616
+    },
+    {
+     "id": "node/1189396931",
+     "name": "Park Fiction",
+     "lat": 53.54605,
+     "lon": 9.95714
+    },
+    {
+     "id": "node/3376185258",
+     "name": "Platz Strandhöft",
+     "lat": 53.53994,
+     "lon": 9.9881
+    },
+    {
+     "id": "node/1716035732",
+     "name": "Schauermanns Park",
+     "lat": 53.54629,
+     "lon": 9.95823
+    },
+    {
+     "id": "node/1603304029",
+     "name": "St. Petri",
+     "lat": 53.55036,
+     "lon": 9.99636
+    },
+    {
+     "id": "way/464787241",
+     "name": "View Point",
+     "lat": 53.53855,
+     "lon": 10.0081
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1724278716",
+     "name": "Ændrè",
+     "lat": 53.57125,
+     "lon": 9.98607,
+     "address": "Schlüterstraße 86",
+     "website": "https://aendre.de/standorte/das-restaurant/",
+     "openingHours": "We-Fr 09:00-15:00; Sa-Su 09:00-16:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/541393167",
+     "name": "Ahoi",
+     "lat": 53.55193,
+     "lon": 10.0021,
+     "address": "Spitalerstraße 12",
+     "website": "https://www.ahoisteffenhenssler.de/filiale/ahoi-hamburg/",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "fish and chips, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/303380925",
+     "name": "Akari",
+     "lat": 53.56859,
+     "lon": 10.0179,
+     "address": "Papenhuder Straße 67",
+     "website": "https://www.restaurant-akari.de/",
+     "openingHours": "Mo-Sa 18:00-22:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/302717401",
+     "name": "Al Lido",
+     "lat": 53.54149,
+     "lon": 9.99172,
+     "address": "Am Kaiserkai 13",
+     "website": "https://www.allido-hamburg.de/",
+     "openingHours": "Tu-Fr 11:30-15:00,17:30-22:00; Sa,Su 14:30-22:00",
+     "cuisine": "pizza, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1891826639",
+     "name": "Alitalia",
+     "lat": 53.54517,
+     "lon": 10.02547,
+     "address": "Hammerbrookstraße 93",
+     "website": "https://ristorante-alitalia.jimdo.com/",
+     "openingHours": "Mo-Fr 12:00-14:30,18:00-22:00; Sa 17:00-22:00",
+     "cuisine": "italian, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1914040900",
+     "name": "Alte Liebe",
+     "lat": 53.54325,
+     "lon": 9.99997,
+     "address": "Koreastraße 1",
+     "website": "http://alte-liebe.hamburg/",
+     "openingHours": "Mo-Su 11:00-19:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/456732791",
+     "name": "Apple & Eve",
+     "lat": 53.56552,
+     "lon": 9.98316,
+     "address": "Grindelallee 34A",
+     "website": "https://speisekarte.appleeve.de/restaurant/apple-and-eve-grindel",
+     "openingHours": "Mo-Th, Su 12:00-21:30; Fr, Sa 12:00-23:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/1391523547",
+     "name": "Asia Lounge",
+     "lat": 53.56937,
+     "lon": 9.97979,
+     "address": "Grindelallee 146",
+     "website": "https://www.asialounge.hamburg/",
+     "openingHours": "Mo-Fr 11:30-15:30,17:30-22:30; Sa 13:00-22:30; Su 14:00-22:30",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/841884238",
+     "name": "Azeitona",
+     "lat": 53.55881,
+     "lon": 9.96533,
+     "address": "Beckstraße 19",
+     "website": "https://www.azeitona.de/",
+     "openingHours": "Su-Th 12:00-23:00; Fr,Sa 12:00+",
+     "cuisine": "arab",
+     "detailed": true
+    },
+    {
+     "id": "node/740412879",
+     "name": "Badshah HafenCity",
+     "lat": 53.54287,
+     "lon": 9.99293,
+     "address": "Am Sandtorkai 54",
+     "website": "https://badshahrestaurant.de/badshah-hafen-city/",
+     "openingHours": "Mo-Su 11:30-22:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2275119397",
+     "name": "Balutschi",
+     "lat": 53.5657,
+     "lon": 9.98225,
+     "address": "Grindelallee 31",
+     "website": "http://www.balutschi.com/",
+     "openingHours": "Fr,Sa 12:00-23:00; Su-Th 12:00-22:00",
+     "cuisine": "pakistani",
+     "detailed": true
+    },
+    {
+     "id": "node/1912670942",
+     "name": "Beets & Roots",
+     "lat": 53.55582,
+     "lon": 9.98814,
+     "address": "Gänsemarkt 43",
+     "website": "https://www.beetsandroots.de/",
+     "openingHours": "Mo-Fr 11:00-16:00",
+     "cuisine": "bowl",
+     "detailed": true
+    },
+    {
+     "id": "node/315107300",
+     "name": "Beira Rio",
+     "lat": 53.54592,
+     "lon": 9.97292,
+     "address": "Hafentor 3",
+     "website": "https://www.beirario.de/",
+     "openingHours": "Mo,We-Fr 17:00-24:00; Sa,Su 12:00-24:00",
+     "cuisine": "portuguese, spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/650416277",
+     "name": "Bella Italia",
+     "lat": 53.54645,
+     "lon": 9.99679,
+     "address": "Brandstwiete 58",
+     "website": "https://trattoria-bellaitalia.de/",
+     "openingHours": "Mo-Fr 12:00-14:30,18:00-22:30; Sa 17:30-22:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/315107896",
+     "name": "Big Bull",
+     "lat": 53.55094,
+     "lon": 9.97964,
+     "address": "Großneumarkt 24",
+     "website": "http://www.big-bull.de/",
+     "openingHours": "Sa 15:00-24:00; Su 14:00-24:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/457009532",
+     "name": "BLOCK HOUSE",
+     "lat": 53.5718,
+     "lon": 9.99497,
+     "website": "https://www.block-house.de/restaurant/poeseldorf/",
+     "openingHours": "Su-Th 12:00-22:00; Fr,Sa 12:00-23:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/2295492914",
+     "name": "BLOCK HOUSE",
+     "lat": 53.55324,
+     "lon": 10.0089,
+     "address": "Kirchenallee 49-51",
+     "website": "https://www.block-house.de/block-house-restaurant-best-steaks-since-1968/",
+     "openingHours": "11:30-24:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/1502029210",
+     "name": "Brasserie Flum",
+     "lat": 53.56341,
+     "lon": 9.99005,
+     "address": "Rothenbaumchaussee 10",
+     "website": "https://www.grand-elysee.com/restaurants/brasserie-flum/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2341650879",
+     "name": "Burger Vision",
+     "lat": 53.56789,
+     "lon": 9.98005,
+     "address": "Grindelallee 91",
+     "website": "https://burgervision.de/hamburg-grindel/",
+     "openingHours": "Su-Th 12:00-22:00; Fr-Sa 12:00-23:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/3266553360",
+     "name": "Burgerlich",
+     "lat": 53.5497,
+     "lon": 9.99897,
+     "address": "Speersort 1",
+     "website": "https://www.burgerlich.com/locations/#hamburg-speersort",
+     "openingHours": "Su-Th 11:30-21:30; Fr,Sa 11:30-22:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/2068108804",
+     "name": "Café de Artistes",
+     "lat": 53.55195,
+     "lon": 9.99863,
+     "website": "http://cafedesartistes.de/",
+     "openingHours": "Mo-Sa 12:00-21:00; PH,Su off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/3222189144",
+     "name": "cantinetta ristorante",
+     "lat": 53.54376,
+     "lon": 9.99546,
+     "website": "https://www.hotel-speicherstadt.de/gastronomie/cantinetta-ristorante",
+     "openingHours": "Mo-Fr 06:30-11:00,12:00-14:30,18:00-23:00; Sa-Su 07:00-13:00,18:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/315347574",
+     "name": "Casa del Sabor",
+     "lat": 53.54565,
+     "lon": 9.97535,
+     "address": "Reimarusstraße 9",
+     "website": "http://www.casa-del-sabor.de/",
+     "openingHours": "Tu-Fr 17:00-23:30; Sa 12:00-23:30; PH,Su 12:00-22:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/2713620703",
+     "name": "Casa Franco Caramba",
+     "lat": 53.54514,
+     "lon": 9.97608,
+     "website": "https://www.casa-franco.de/",
+     "openingHours": "Mo-Su,PH 17:00-23:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/450652005",
+     "name": "Casa Mia",
+     "lat": 53.5701,
+     "lon": 9.98434,
+     "address": "Grindelhof 65",
+     "website": "https://ristorante-casa-mia-hh.de/",
+     "openingHours": "Tu-Su 11:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1987651462",
+     "name": "Casa Nova",
+     "lat": 53.57031,
+     "lon": 10.0173,
+     "address": "Hofweg 22",
+     "website": "http://casa-nova-hamburg.de/",
+     "openingHours": "Mo-Fr 11:00-24:00;Sa 17:00-24:00;Su 12:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/311932375",
+     "name": "Casa Romana",
+     "lat": 53.55539,
+     "lon": 10.00885,
+     "address": "Lange Reihe 12a",
+     "website": "http://casa-romana-ristorante.com/",
+     "openingHours": "Mo-Su 11:30-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/296936722",
+     "name": "Casse-Croûte",
+     "lat": 53.55456,
+     "lon": 9.98618,
+     "address": "ABC-Straße 44-46",
+     "website": "https://www.casse-croute.de/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su off",
+     "cuisine": "french, german",
+     "detailed": true
+    },
+    {
+     "id": "node/1696704113",
+     "name": "cHHurrinos",
+     "lat": 53.55775,
+     "lon": 9.967,
+     "website": "https://chhurrinos-hamburg.eatbu.com/",
+     "openingHours": "Fr-Su 10:00-23:00; Mo-Th 11:00-22:00",
+     "cuisine": "churro",
+     "detailed": true
+    },
+    {
+     "id": "node/1508604273",
+     "name": "Chinarestaurant Mei Moon",
+     "lat": 53.55351,
+     "lon": 10.00919,
+     "address": "Bremer Reihe 10",
+     "website": "http://www.meimoon.de/",
+     "openingHours": "Mo-Su 12:30-23:00",
+     "cuisine": "chinese",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/713016838",
+     "name": "Bistro Cà Phê Viet",
+     "lat": 53.55484,
+     "lon": 9.98279,
+     "address": "Bäckerbreitergang 14",
+     "website": "https://www.capheviet.de/",
+     "openingHours": "Mo-Fr 11:00-14:30",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/1935146389",
+     "name": "Brammibal's Donuts",
+     "lat": 53.555,
+     "lon": 9.9893,
+     "address": "Jungfernstieg 47",
+     "website": "https://www.brammibalsdonuts.com/",
+     "openingHours": "Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su,PH 11:00-19:00",
+     "cuisine": "donut",
+     "detailed": true
+    },
+    {
+     "id": "node/4435624077",
+     "name": "Brühwerk",
+     "lat": 53.55363,
+     "lon": 9.99887,
+     "address": "Ferdinandstraße 40a",
+     "website": "https://www.bruehwerk.com/",
+     "openingHours": "Mo-Fr 08:00-17:00; Sa 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/13981352903",
+     "name": "Café Blattwerk",
+     "lat": 53.56548,
+     "lon": 9.98439,
+     "address": "Von-Melle-Park 5",
+     "website": "https://www.stwhh.de/gastronomie/mensen-cafes-weiteres/mensa/cafe-blattwerk",
+     "openingHours": "Mo-Fr 08:00-18:00",
+     "cuisine": "bagel, breakfast, coffee shop, donut, sandwich, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/7611580201",
+     "name": "CAFE BY DOKUWA",
+     "lat": 53.55836,
+     "lon": 9.97286,
+     "address": "Marktstraße 21",
+     "website": "https://dokuwa-communications.com/cafe",
+     "openingHours": "Sa,Su 11:00-17:00; Mo-Fr 10:00-17:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/3460178864",
+     "name": "Café Johanna",
+     "lat": 53.54706,
+     "lon": 9.97504,
+     "address": "Venusberg 26",
+     "website": "https://cafejohanna.de/",
+     "openingHours": "Tu-Fr 09:00-15:00; Sa-Su 10:00-17:00",
+     "cuisine": "tea, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "way/135510541",
+     "name": "Café Minah",
+     "lat": 53.54489,
+     "lon": 9.98555,
+     "address": "Kajen 1",
+     "website": "http://www.cafe-minah.de/",
+     "openingHours": "\"Owner says depends on the weather :)\"",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/1909894526",
+     "name": "Cafe Paris",
+     "lat": 53.54989,
+     "lon": 9.99435,
+     "address": "Rathausstraße 4",
+     "website": "https://www.cafeparis.net/",
+     "openingHours": "Mo-Sa 09:00-00:00; Su; PH 09:30-23:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2619851503",
+     "name": "Café Stenzel",
+     "lat": 53.56142,
+     "lon": 9.96223,
+     "address": "Schulterblatt 61",
+     "website": "http://www.cafe-stenzel.de/",
+     "openingHours": "Mo 07:00-18:00; Tu-Th 06:30-23:00; Fr,Sa 06:30-24:00; Su 07:30-23:00",
+     "cuisine": "cake",
+     "detailed": true
+    },
+    {
+     "id": "node/2268137398",
+     "name": "Cafeteria Studierendenwerk",
+     "lat": 53.55483,
+     "lon": 10.01762,
+     "website": "https://www.stwhh.de/gastronomie/mensen-cafes-weiteres/mensa/cafe-alexanderstrasse",
+     "openingHours": "Mo-Th 07:45-16:30; Fr 07:45-15:30",
+     "cuisine": "bagel, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/302715021",
+     "name": "Campus Suite",
+     "lat": 53.54182,
+     "lon": 9.9932,
+     "address": "Großer Grasbrook 10",
+     "website": "https://www.campussuite.de/stores/hamburg",
+     "openingHours": "Mo-Tu 07:00-19:00; Fr-Su, PH 09:00-20:00",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/743152028",
+     "name": "Campus Suite",
+     "lat": 53.53879,
+     "lon": 9.99379,
+     "address": "Am Strandkai 1",
+     "website": "https://www.campussuite.de/",
+     "openingHours": "Mo-Fr 09:00-16:00; Sa,Su 09:00-18:00",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/9633823596",
+     "name": "Campus Suite",
+     "lat": 53.55586,
+     "lon": 9.98602,
+     "address": "Valentinskamp 88-90",
+     "website": "https://www.campussuite.de/stores/hamburg",
+     "openingHours": "Mo-Fr 08:00-17:00; Sa 09:00-17:00; PH off",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4866957108",
+     "name": "Capo's Coffee",
+     "lat": 53.54219,
+     "lon": 10.00444,
+     "address": "Yokohamastraße 10",
+     "website": "https://www.caposcoffee.de/",
+     "openingHours": "Mo-Fr 08:00-17:00; Sa 09:30-18:00; Su 09:30-18:00",
+     "cuisine": "cake",
+     "detailed": true
+    },
+    {
+     "id": "node/2613076730",
+     "name": "Chakra",
+     "lat": 53.56215,
+     "lon": 9.96328,
+     "address": "Susannenstraße 11",
+     "website": "https://cafe-chakra.de/",
+     "openingHours": "Mo-Sa 09:00-24:00; Su 10:00-24:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/11151315602",
+     "name": "Cinnamood",
+     "lat": 53.55148,
+     "lon": 10.00216,
+     "website": "https://cinnamood.de/",
+     "openingHours": "Mo-Sa 09:30-20:30; Su 10:00-20:00",
+     "cuisine": "cake",
+     "detailed": true
+    },
+    {
+     "id": "node/1355395085",
+     "name": "Coffee Fellows",
+     "lat": 53.55796,
+     "lon": 9.98926,
+     "address": "Stephansplatz 2-8",
+     "website": "https://www.coffee-fellows.com/locations/hamburg-stephansplatz",
+     "openingHours": "Mo-Fr 07:30-19:00; Sa 09:00-19:00; Su,PH 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1774111005",
+     "name": "Coffee Fellows",
+     "lat": 53.55366,
+     "lon": 10.00253,
+     "address": "Brandsende 2-4",
+     "website": "https://www.coffee-fellows.com/en/locations/hamburg-brandsende",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:00-19:30; Su,PH 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "way/733736697",
+     "name": "DB Lounge",
+     "lat": 53.55341,
+     "lon": 10.00744,
+     "website": "https://www.bahn.de/service/zug/db-lounge#hamburg",
+     "openingHours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:30-20:30",
+     "cuisine": "drinks, snacks",
+     "detailed": true
+    },
+    {
+     "id": "node/10875226405",
+     "name": "Deathpresso",
+     "lat": 53.55888,
+     "lon": 9.96361,
+     "address": "Beim Grünen Jäger 24",
+     "website": "https://deathpresso.de/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "cuisine": "cake, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/454616259",
+     "name": "EISCAFE29",
+     "lat": 53.56835,
+     "lon": 9.99524,
+     "website": "https://eiscafe29.de/",
+     "openingHours": "Mo-Su 08:00-19:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4933567609",
+     "name": "elbgold",
+     "lat": 53.54961,
+     "lon": 9.99306,
+     "address": "Schauenburgerstraße 50",
+     "website": "https://elbgold.com/",
+     "openingHours": "Mo-Fr 08:00-19:00, Sa 10:00-19:00; PH closed",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5046354930",
+     "name": "Elisa – Konditorei und Café",
+     "lat": 53.56251,
+     "lon": 10.03881,
+     "address": "Conventstraße 21",
+     "website": "https://elisa-konditorei.com/",
+     "openingHours": "Mo-Su 10:00-18:00; Tu off",
+     "cuisine": "breakfast, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/441266948",
+     "name": "Espresso house",
+     "lat": 53.55788,
+     "lon": 10.01211,
+     "address": "Danziger Straße 70",
+     "website": "https://de.espressohouse.com/coffee-shops/st-georg/",
+     "openingHours": "Mo-Fr 07:00-19:30; Sa,Su 08:00-19:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/457006309",
+     "name": "Espresso house",
+     "lat": 53.57094,
+     "lon": 9.99534,
+     "address": "Mittelweg 130",
+     "website": "https://de.espressohouse.com/coffee-shops/mittelweg/",
+     "openingHours": "Mo-Fr 07:30-19:30; Sa, Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/275633114",
+     "name": "Espresso House",
+     "lat": 53.55173,
+     "lon": 9.99828,
+     "address": "Alstertor 1",
+     "website": "https://de.espressohouse.com/coffee-shops/thalia-theater/",
+     "openingHours": "Mo-Fr 07:30-19:30; Sa 09:30-19:30; PH,Su 10:00-19:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/311465092",
+     "name": "Espresso House",
+     "lat": 53.55283,
+     "lon": 10.00376,
+     "address": "Kurze Mühren 4",
+     "website": "https://de.espressohouse.com/find-us/kurze-muhren",
+     "openingHours": "Mo-Fr 06:30-20:30; Su 08:00-20:30; Sa 07:30-20:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/442006772",
+     "name": "Espresso House",
+     "lat": 53.55644,
+     "lon": 9.99017,
+     "address": "Gustav-Mahler-Platz 1",
+     "website": "https://de.espressohouse.com/find-us/gustav-mahler-platz",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-20:00; PH 10:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1502029200",
+     "name": "Espresso House",
+     "lat": 53.56793,
+     "lon": 9.98171,
+     "address": "Grindelhof 15",
+     "website": "https://de.espressohouse.com/coffee-shops/grindelhof/",
+     "openingHours": "Mo-Fr 07:30-18:30; Sa,Su 08:30-18:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3536740038",
+     "name": "Espresso House",
+     "lat": 53.54399,
+     "lon": 9.97898,
+     "address": "Vorsetzen 31",
+     "website": "https://de.espressohouse.com/coffee-shops/hamburg-vorsetzen/",
+     "openingHours": "Mo-Th, Su 12:00-16:00; Fr-Su 11:00-19:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3775042457",
+     "name": "Copa Cabana",
+     "lat": 53.55257,
+     "lon": 9.96263,
+     "address": "Clemens-Schultz-Straße 79",
+     "website": "http://www.cabana-stpauli.de/",
+     "openingHours": "Fr 14:00-20:00; Su 12:00-20:00; Sa 12:00-20:00; Mo-Th off",
+     "detailed": true
+    },
+    {
+     "id": "node/3787329491",
+     "name": "Story",
+     "lat": 53.54979,
+     "lon": 9.96304,
+     "address": "Reeperbahn 66",
+     "website": "https://story-reeperbahn.de/",
+     "openingHours": "Tu-Fr 18:00+; Sa 14:00+; Su 18:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/12504959425",
+     "name": "Toom Peerstall",
+     "lat": 53.55243,
+     "lon": 9.96176,
+     "website": "https://toom-peerstall.de/",
+     "openingHours": "Mo-Su 18:00+",
+     "detailed": true
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/575175283",
+     "name": "Café Miller",
+     "lat": 53.55205,
+     "lon": 9.9652,
+     "address": "Detlev-Bremer-Straße 16",
+     "website": "http://www.cafe-miller.de/",
+     "openingHours": "Mo-Th 09:00-24:00; Fr-Sa 09:00-02:00; Su 09:00-00:00",
+     "cuisine": "breakfast, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/12039976802",
+     "name": "Efi Bar Weingeschwister",
+     "lat": 53.56256,
+     "lon": 9.96796,
+     "address": "Lagerstraße 30",
+     "website": "https://www.efi-bar.de/",
+     "openingHours": "Tu-Th 17:00-24:00; Fr-Sa 17:00-25:00; Su 00:00-01:00, 10:00-20:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/2410714455",
+     "name": "Frau Möller",
+     "lat": 53.55868,
+     "lon": 10.01325,
+     "address": "Lange Reihe 96",
+     "website": "https://fraumoeller.com/",
+     "openingHours": "Mo-Th 08:00-04:00; Fr-Sa 08:00-05:00; Su 08:00-03:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/1979216193",
+     "name": "Irish Pub in the Fleetenkieker",
+     "lat": 53.54865,
+     "lon": 9.99229,
+     "address": "Börsenbrücke 10",
+     "website": "https://www.irishpub-fleetenkieker.de/",
+     "openingHours": "Mo-Th 16:00-01:00; Fr,Sa,Su 12:00+",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/4572862511",
+     "name": "Kemp's",
+     "lat": 53.56822,
+     "lon": 9.99516,
+     "address": "Mittelweg 27",
+     "website": "http://www.kempspub.de/",
+     "openingHours": "Mo-Sa 18:00-23:30",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/330506887",
+     "name": "Mathilde Bar",
+     "lat": 53.57164,
+     "lon": 9.97674,
+     "address": "Bogenstraße 5",
+     "website": "https://www.mathilde-hh.de/mathilde-bar-eimsb%C3%BCttel/",
+     "openingHours": "Mo-Sa 17:00+",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5835037894",
+     "name": "Minus Gelato Bar",
+     "lat": 53.55767,
+     "lon": 9.97524,
+     "address": "Karolinenstraße 6",
+     "website": "https://www.minus.bar/",
+     "openingHours": "Su-Th 13:00-24:00; Fr-Sa 13:00-02:00",
+     "cuisine": "ice cream, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6458752330",
+     "name": "P&P - drinks & gude laune",
+     "lat": 53.55256,
+     "lon": 9.96072,
+     "address": "Clemens-Schultz-Straße 55",
+     "website": "https://www.paulapaulina.de/",
+     "openingHours": "Tu-Sa 17:00-22:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/287860170",
+     "name": "StrandPauli",
+     "lat": 53.54601,
+     "lon": 9.96206,
+     "address": "St. Pauli Hafenstraße 89",
+     "website": "https://www.strandpauli.de/",
+     "openingHours": "Mo-Th 12:00-23:00; PH,Fr,Sa 12:00-24:00; Su 10:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2533943571",
+     "name": "The Baby Goat Barn",
+     "lat": 53.55016,
+     "lon": 9.96497,
+     "address": "Detlev-Bremer-Straße 49",
+     "website": "https://www.thebabygoat.de/pubs/the-barn",
+     "openingHours": "Tu-Th 17:00-24:00, Fr,Sa 16:00-02:00, Su 14:00-23:00",
+     "cuisine": "burger, pizza, salad, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/3280992083",
+     "name": "20up",
+     "lat": 53.54721,
+     "lon": 9.96335,
+     "address": "Bernhard-Nocht-Straße 97",
+     "website": "https://www.empire-riverside.de/de/hotel-restaurant-bars-hamburg/",
+     "openingHours": "Su-Th 18:00-01:00; Fr-Sa 18:00-01:30",
+     "detailed": true
+    },
+    {
+     "id": "node/11932687172",
+     "name": "A WOLF WILL NEVER BE A PET",
+     "lat": 53.55882,
+     "lon": 9.9752,
+     "address": "Karolinenstraße 18",
+     "website": "https://www.dokuwa-communications.com/wolf",
+     "openingHours": "Mo,Su off; Tu-Th 18:00-23:00; Fr-Sa 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2622684453",
+     "name": "Absinth",
+     "lat": 53.56388,
+     "lon": 9.96521,
+     "address": "Schanzenstraße 99",
+     "website": "https://absinth-bar.com/",
+     "openingHours": "Tu-Sa 20:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/12828824101",
+     "name": "Adega Nau Weinbar",
+     "lat": 53.54587,
+     "lon": 9.97556,
+     "address": "Ditmar-Koel-Straße 13",
+     "website": "https://adega.hamburg/",
+     "cuisine": "deli, portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/14140545279",
+     "name": "Air Bar 13",
+     "lat": 53.53903,
+     "lon": 9.99926,
+     "website": "https://www.elementerestaurant.com/air-bar-13",
+     "openingHours": "We-Sa 16:00-00:30",
+     "detailed": true
+    },
+    {
+     "id": "node/11426080722",
+     "name": "Alkotheke St. Pauli",
+     "lat": 53.54911,
+     "lon": 9.96074,
+     "address": "Reeperbahn",
+     "website": "https://alkotheke.eatbu.com/",
+     "openingHours": "Th 18:00-04:00; Fr-Sa 18:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5766710097",
+     "name": "Bairro Bar",
+     "lat": 53.54589,
+     "lon": 9.97453,
+     "address": "Ditmar-Koel-Straße 24",
+     "website": "https://www.bairro-bar.de/",
+     "openingHours": "Mo-Th 15:00-24:00; Fr-Sa 14:00+; Su 12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6090949460",
+     "name": "Bar Bleu",
+     "lat": 53.55157,
+     "lon": 9.98631,
+     "address": "Stadthausbrücke 10",
+     "website": "https://www.tortue.de/de/bars/bar-bleu.html",
+     "openingHours": "We-Sa 18:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3673876622",
+     "name": "Bar Hamburg",
+     "lat": 53.55636,
+     "lon": 10.00632,
+     "address": "Rautenbergstraße 6-8",
+     "website": "https://www.barhh.com/",
+     "openingHours": "Su-Th 16:00-01:00, Fr,Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3141379529",
+     "name": "Barbarabar",
+     "lat": 53.55066,
+     "lon": 9.96105,
+     "address": "Hamburger Berg 11",
+     "website": "https://www.barbarabar.de/",
+     "openingHours": "We-Sa 20:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/6952805285",
+     "name": "Bayern Stüberl",
+     "lat": 53.54843,
+     "lon": 9.96216,
+     "address": "Friedrichstraße 5",
+     "openingHours": "Tu-Sa 18:00-05:00",
+     "cuisine": "bavarian",
+     "detailed": true
+    },
+    {
+     "id": "node/437355075",
+     "name": "BeerPONG BAR",
+     "lat": 53.54975,
+     "lon": 9.96089,
+     "address": "Reeperbahn 102",
+     "website": "https://beerpongbar.de/",
+     "openingHours": "We-Th 19:00-01:00; Fr 18:00-04:00; Sa 15:00-04:00; Su 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3886742071",
+     "name": "Berg 4",
+     "lat": 53.55017,
+     "lon": 9.9611,
+     "address": "Hamburger Berg 4",
+     "website": "https://www.berg4-bar.de/",
+     "openingHours": "Fr-Sa 18:00+; Su-Th 19:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/9214586954",
+     "name": "Bermuda",
+     "lat": 53.5503,
+     "lon": 9.9611,
+     "address": "Hamburger Berg 6",
+     "website": "https://bermuda-stpauli.de/",
+     "openingHours": "Tu 20:00-03:00;We 20:00-05:00;Tu-Fr 20:00-06:00;Sa20:00-07:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1571194308",
+     "name": "Café Geyer",
+     "lat": 53.54735,
+     "lon": 9.95714,
+     "website": "http://thgeyer.com/de",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/267625943",
+     "name": "Cafe Unter den Linden",
+     "lat": 53.56123,
+     "lon": 9.96029,
+     "address": "Juliusstraße 16",
+     "openingHours": "Mo-Su,PH 09:30-01:00",
+     "cuisine": "breakfast, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/603248363",
+     "name": "Caipi Colada",
+     "lat": 53.57272,
+     "lon": 10.01612,
+     "website": "https://caipi-colada.de/",
+     "openingHours": "Th-Su 17:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/5695849921",
+     "name": "CARLS Weinbar",
+     "lat": 53.54082,
+     "lon": 9.98595,
+     "website": "https://carls-brasserie.de/carls-weinbar/",
+     "openingHours": "We-Su 13:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3396311415",
+     "name": "Cave Bar",
+     "lat": 53.56464,
+     "lon": 9.97055,
+     "address": "Sternschanze 6",
+     "website": "http://www.moevenpick-hotels.com/de/europe/germany/hamburg/hotel-hamburg/restaurants/restaurants/cave-bar/",
+     "openingHours": "Fr 18:00-24:00; Sa 17:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3802077759",
+     "name": "Central Congress",
+     "lat": 53.54996,
+     "lon": 10.00425,
+     "address": "Steinstraße 5-7",
+     "website": "https://centralcongress.de/",
+     "openingHours": "Tu-Sa 17:00+",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4469658919",
+     "name": "Bahnhof Pauli",
+     "lat": 53.54907,
+     "lon": 9.96416,
+     "address": "Spielbudenplatz 21-22",
+     "website": "https://bahnhofpauli.de/",
+     "openingHours": "Fr-Sa 23:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "way/1531077100",
+     "name": "Beat Boutique",
+     "lat": 53.54605,
+     "lon": 10.00715,
+     "address": "Altländer Straße 12",
+     "website": "https://beatboutique.club/",
+     "openingHours": "23:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3141379530",
+     "name": "BETTY",
+     "lat": 53.55078,
+     "lon": 9.96111,
+     "address": "Hamburger Berg 13",
+     "website": "https://betty.hamburg/",
+     "openingHours": "Fr-Sa 22:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10771255809",
+     "name": "BKI: Kiezinternat",
+     "lat": 53.55033,
+     "lon": 9.9576,
+     "address": "Große Freiheit 10",
+     "website": "http://www.blankenesekiezinternat.de/",
+     "openingHours": "Fr-Sa 22:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/9177093418",
+     "name": "Colibri",
+     "lat": 53.55108,
+     "lon": 9.95787,
+     "address": "Große Freiheit 34",
+     "website": "https://www.colibri-club.de/",
+     "openingHours": "SH Th 22:00+; Fr,Sa 21:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/9177141617",
+     "name": "DrunkenLama",
+     "lat": 53.54865,
+     "lon": 9.96051,
+     "address": "Hans-Albers-Platz 3",
+     "website": "https://www.drunkenlama.de/",
+     "openingHours": "Mo-Th off; Fr 21:00-02:00; Sa 21:00-04:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/1004006269",
+     "name": "Frieda B.",
+     "lat": 53.54835,
+     "lon": 9.96094,
+     "address": "Friedrichstraße 13",
+     "website": "https://www.friedab.de/",
+     "openingHours": "Fr 22:00+; Sa 22:00+",
+     "detailed": true
+    },
+    {
+     "id": "way/1445762366",
+     "name": "Fundbureau",
+     "lat": 53.54616,
+     "lon": 10.00723,
+     "address": "Altländer Straße 11",
+     "website": "https://fundbureau.de/",
+     "openingHours": "Fr-Su 23:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12469799037",
+     "name": "Große Freiheit Nr.7",
+     "lat": 53.55024,
+     "lon": 9.95733,
+     "address": "Große Freiheit 7",
+     "website": "https://www.grossefreiheit-nr7.de/",
+     "openingHours": "Fr-Sa 23:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/14023540987",
+     "name": "Gruenspan",
+     "lat": 53.56185,
+     "lon": 9.97219,
+     "website": "https://www.gruenspan.de/",
+     "openingHours": "\"abhängig vom Programm\"",
+     "detailed": true
+    },
+    {
+     "id": "way/66997571",
+     "name": "Gruenspan",
+     "lat": 53.55181,
+     "lon": 9.95839,
+     "address": "Große Freiheit 58",
+     "website": "https://www.gruenspan.de/",
+     "openingHours": "\"wegen Sanierung geschlossen\"",
+     "detailed": true
+    },
+    {
+     "id": "node/8722058413",
+     "name": "Halo Club",
+     "lat": 53.55023,
+     "lon": 9.95788,
+     "address": "Große Freiheit 6",
+     "website": "https://halo.club/",
+     "openingHours": "Fr-Sa 22:30+",
+     "detailed": true
+    },
+    {
+     "id": "node/8305157339",
+     "name": "Herz St. Pauli",
+     "lat": 53.5499,
+     "lon": 9.96399,
+     "website": "http://www.herzblut-st-pauli.de/",
+     "openingHours": "Mo-Th 17:00+, Fr 17:00-04:00, Sa 13:00-04:00, Su 13:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/5477425896",
+     "name": "Hörsaal",
+     "lat": 53.55026,
+     "lon": 9.96032,
+     "address": "Talstraße 12",
+     "website": "http://hoersaal-hamburg.de/",
+     "openingHours": "Th,Sa 22:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/5387158207",
+     "name": "Hühnerposten",
+     "lat": 53.5496,
+     "lon": 10.00788,
+     "website": "https://www.huehner-posten.de/",
+     "openingHours": "\"bei Veranstaltungen\"",
+     "detailed": true
+    },
+    {
+     "id": "node/9242143190",
+     "name": "INDRA Musikclub",
+     "lat": 53.55199,
+     "lon": 9.95816,
+     "address": "Große Freiheit 64",
+     "website": "http://www.indramusikclub.com/",
+     "openingHours": "\"abhängig vom Programm\"",
+     "detailed": true
+    },
+    {
+     "id": "node/1525291987",
+     "name": "Knust",
+     "lat": 53.55814,
+     "lon": 9.96793,
+     "address": "Neuer Kamp 30",
+     "website": "https://www.knusthamburg.de/",
+     "openingHours": "Su-Fr 16:00-23:30; Sa 10:00-23:30",
+     "detailed": true
+    },
+    {
+     "id": "node/10771255808",
+     "name": "MashUp - Music Bar",
+     "lat": 53.55028,
+     "lon": 9.95761,
+     "address": "Große Freiheit 8",
+     "website": "https://mashupbar.de/",
+     "openingHours": "Mo-Su 18:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/3008963133",
+     "name": "Mojo Club",
+     "lat": 53.54968,
+     "lon": 9.96761,
+     "address": "Reeperbahn 1",
+     "website": "https://www.mojo.de/program",
+     "openingHours": "\"Nur bei Veranstaltungen geöffnet.\"",
+     "detailed": true
+    },
+    {
+     "id": "node/4469660003",
+     "name": "Nachtasyl",
+     "lat": 53.5521,
+     "lon": 9.99831,
+     "website": "https://www.thalia-theater.de/de/spielplan/nachtasyl/",
+     "openingHours": "Mo-Su,PH 19:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/1571194363",
+     "name": "Pudel Musik Club",
+     "lat": 53.54619,
+     "lon": 9.95777,
+     "address": "St. Pauli Fischmarkt 27",
+     "website": "https://pudel.com/",
+     "openingHours": "We-Mo 20:00+; Tu off",
+     "detailed": true
+    },
+    {
+     "id": "node/14029885503",
+     "name": "SLIDE Hamburg Club",
+     "lat": 53.57047,
+     "lon": 9.99714,
+     "address": "Magdalenenstraße 19",
+     "website": "https://www.slide-hamburg.de/",
+     "openingHours": "We-Th 22:00-03:00; Fr-Sa 22:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4469658920",
+     "name": "Sommersalon",
+     "lat": 53.54922,
+     "lon": 9.96436,
+     "address": "Spielbudenplatz 22",
+     "website": "https://sommersalon.de/",
+     "openingHours": "16:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/1408551428",
+     "name": "Uebel und Gefährlich",
+     "lat": 53.55655,
+     "lon": 9.97042,
+     "address": "Feldstraße 66",
+     "website": "https://www.uebelundgefaehrlich.com/",
+     "openingHours": "\"Abhängig vom Veranstaltungsbeginn\"",
+     "detailed": true
+    },
+    {
+     "id": "node/5204071866",
+     "name": "Baalsaal",
+     "lat": 53.55007,
+     "lon": 9.96612,
+     "address": "Reeperbahn 25",
+     "website": "https://www.baalsaal.club/"
+    },
+    {
+     "id": "node/5290249809",
+     "name": "BASEMENT XXV",
+     "lat": 53.55348,
+     "lon": 10.0151,
+     "address": "Pulverteich 23",
+     "website": "http://www.basementxxv.de/"
+    },
+    {
+     "id": "node/3789624490",
+     "name": "Cascadas",
+     "lat": 53.55469,
+     "lon": 10.00063,
+     "address": "Ferdinandstraße 12",
+     "website": "https://www.cascadas.club/"
+    },
+    {
+     "id": "node/5203789918",
+     "name": "Club Hamburg",
+     "lat": 53.54994,
+     "lon": 9.96439,
+     "address": "Reeperbahn 48",
+     "website": "http://www.clubhamburg.info/"
+    },
+    {
+     "id": "node/1450920230",
+     "name": "DOCKS",
+     "lat": 53.54921,
+     "lon": 9.96458,
+     "address": "Spielbudenplatz 19",
+     "website": "https://www.docks.de/"
+    },
+    {
+     "id": "node/4469658923",
+     "name": "Gaga",
+     "lat": 53.54903,
+     "lon": 9.96436,
+     "address": "Spielbudenplatz 21-22",
+     "website": "https://ga-ga.de/"
+    }
+   ]
+  }
+ }
+}

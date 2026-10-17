@@ -1,0 +1,1875 @@
+{
+ "version": 1,
+ "cityCode": "LED",
+ "fetchedAt": "2026-10-16T23:59:05.121Z",
+ "radiusKm": 4,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Peter_%26_Paul_fortress_in_SPB_03.jpg/1280px-Peter_%26_Paul_fortress_in_SPB_03.jpg",
+  "width": 1280,
+  "height": 848,
+  "author": "Florstein ( Telegram: WikiPhoto.Space )",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Peter_%26_Paul_fortress_in_SPB_03.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/69424",
+     "name": "Зимний дворец",
+     "lat": 59.94047,
+     "lon": 30.31379,
+     "address": "Дворцовая набережная 38 литА",
+     "website": "https://ermitazh.org/",
+     "wikipediaCount": 74
+    },
+    {
+     "id": "relation/227969",
+     "name": "Петропавловская крепость",
+     "lat": 59.95006,
+     "lon": 30.31643,
+     "website": "https://www.spbmuseum.ru/themuseum/museum_complex/peterpaul_fortress/",
+     "wikipediaCount": 50
+    },
+    {
+     "id": "relation/11763697",
+     "name": "Казанский собор",
+     "lat": 59.93446,
+     "lon": 30.32477,
+     "address": "Казанская площадь 2",
+     "website": "http://kazansky-spb.ru/",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "node/249082841",
+     "name": "Петру Великому",
+     "lat": 59.93641,
+     "lon": 30.30218,
+     "wikipediaCount": 35
+    },
+    {
+     "id": "relation/238571",
+     "name": "Михайловский замок",
+     "lat": 59.94038,
+     "lon": 30.33772,
+     "address": "Садовая улица 2",
+     "website": "https://www.rusmuseum.ru/mikhailovsky-castle/",
+     "openingHours": "Mo,We,Fr-Su 10:00-18:00; Th 13:00-21:00; Tu off",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "relation/2612859",
+     "name": "Адмиралтейство",
+     "lat": 59.938,
+     "lon": 30.30777,
+     "address": "Адмиралтейский проезд 1 литА",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "relation/3801092",
+     "name": "Таврический дворец",
+     "lat": 59.94792,
+     "lon": 30.37589,
+     "address": "Шпалерная улица 47",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "relation/2000648",
+     "name": "Александровская колонна",
+     "lat": 59.93904,
+     "lon": 30.31582,
+     "wikipediaCount": 28
+    },
+    {
+     "id": "relation/2001070",
+     "name": "Мариинский дворец",
+     "lat": 59.93069,
+     "lon": 30.30968,
+     "address": "Исаакиевская площадь 6",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "relation/969622",
+     "name": "Мраморный дворец",
+     "lat": 59.94518,
+     "lon": 30.32669,
+     "address": "Миллионная улица 5/1",
+     "website": "https://rusmuseum.ru/museums/marble-palace",
+     "openingHours": "Mo,We-Su 10:00-18:00; Tu off",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/123243367",
+     "name": "Юсуповский дворец",
+     "lat": 59.92926,
+     "lon": 30.29918,
+     "address": "набережная реки Мойки 94",
+     "website": "https://yusupov-palace.ru/",
+     "openingHours": "Mo-Su 10:00-19:30",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "relation/3798383",
+     "name": "Аничков дворец",
+     "lat": 59.93299,
+     "lon": 30.33982,
+     "address": "Невский проспект 39",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "relation/1028087",
+     "name": "Строгановский дворец",
+     "lat": 59.9356,
+     "lon": 30.32057,
+     "address": "Невский проспект 17",
+     "website": "https://www.rusmuseum.ru/stroganov-palace/",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/216655164",
+     "name": "Дворец Меншикова",
+     "lat": 59.93893,
+     "lon": 30.29577,
+     "address": "Университетская набережная 15",
+     "website": "https://www.hermitagemuseum.org/visitus/menshikov-palace",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "relation/13933407",
+     "name": "Витебский вокзал",
+     "lat": 59.91963,
+     "lon": 30.32946,
+     "address": "Загородный проспект 52",
+     "website": "http://vitebsky.dzvr.ru/",
+     "openingHours": "24/7",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/41230751",
+     "name": "Летний дворец Петра I",
+     "lat": 59.94723,
+     "lon": 30.33609,
+     "address": "Дворцовая набережная 2А",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "way/102305449",
+     "name": "Дом Зингера",
+     "lat": 59.93586,
+     "lon": 30.32589,
+     "address": "Невский проспект 28",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "relation/5737615",
+     "name": "Банковский мост",
+     "lat": 59.93218,
+     "lon": 30.32493,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "relation/1588865",
+     "name": "Дворец Белосельских-Белозерских",
+     "lat": 59.93268,
+     "lon": 30.34457,
+     "address": "Невский проспект 41",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "relation/1502547",
+     "name": "Михайловский дворец",
+     "lat": 59.93872,
+     "lon": 30.33231,
+     "address": "Инженерная улица 2-4 литД",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "relation/1435420",
+     "name": "Дворец великого князя Владимира Александровича",
+     "lat": 59.94317,
+     "lon": 30.31984,
+     "address": "Дворцовая набережная 26",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "relation/1404109",
+     "name": "Николаевский дворец",
+     "lat": 59.93244,
+     "lon": 30.29309,
+     "address": "площадь Труда 4 литВ",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/1123474657",
+     "name": "Памятник императору Николаю I",
+     "lat": 59.9321,
+     "lon": 30.30843,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "relation/17343294",
+     "name": "Ново-Михайловский дворец",
+     "lat": 59.94389,
+     "lon": 30.32231,
+     "address": "Дворцовая набережная 18",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "relation/3084726",
+     "name": "Санкт-Петербургская Биржа",
+     "lat": 59.94349,
+     "lon": 30.3046,
+     "address": "Биржевая площадь 4",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/99698297",
+     "name": "Дворец Великого князя Алексея Александровича",
+     "lat": 59.92805,
+     "lon": 30.28343,
+     "address": "набережная реки Мойки 122",
+     "website": "https://www.spdm.ru/alekseevskiy-dvorec",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/28055973",
+     "name": "Каменноостровский дворец",
+     "lat": 59.97986,
+     "lon": 30.30454,
+     "address": "набережная реки Малой Невки 1",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/3801088",
+     "name": "Шереметевский дворец",
+     "lat": 59.93649,
+     "lon": 30.34567,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/1484228",
+     "name": "Шуваловский Дворец",
+     "lat": 59.9349,
+     "lon": 30.34261,
+     "address": "набережная реки Фонтанки 21",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/2594690",
+     "name": "Алексеевский равелин",
+     "lat": 59.9489,
+     "lon": 30.31117,
+     "wikipediaCount": 6
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/8092294",
+     "name": "Государственный Эрмитаж",
+     "lat": 59.94123,
+     "lon": 30.31563,
+     "address": "Дворцовая набережная 38 литА",
+     "website": "https://ermitazh.org/",
+     "openingHours": "Tu-Su 12:00-21:00",
+     "wikipediaCount": 81
+    },
+    {
+     "id": "relation/3272566",
+     "name": "Крейсер \"Аврора\"",
+     "lat": 59.95542,
+     "lon": 30.33781,
+     "website": "https://navalmuseum.ru/filials/cruiser_aurora",
+     "openingHours": "We-Su 11:00-18:00",
+     "wikipediaCount": 56
+    },
+    {
+     "id": "relation/3229838",
+     "name": "Исаакиевский собор",
+     "lat": 59.93408,
+     "lon": 30.30616,
+     "address": "Исаакиевская площадь 4",
+     "website": "https://cathedral.ru/",
+     "openingHours": "10:00-18:00; May-Sep 10:00-21:00",
+     "wikipediaCount": 54
+    },
+    {
+     "id": "relation/2614475",
+     "name": "Русский музей",
+     "lat": 59.93858,
+     "lon": 30.33072,
+     "website": "https://www.rusmuseum.ru/",
+     "openingHours": "Mo,We,Fr-Su 10:00-18:00; Th 13:00-21:00; Tu off",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "relation/2594681",
+     "name": "Петропавловский собор",
+     "lat": 59.9502,
+     "lon": 30.31647,
+     "website": "https://www.spbmuseum.ru/",
+     "wikipediaCount": 45
+    },
+    {
+     "id": "way/28966446",
+     "name": "Собор Воскресения Христова на Крови",
+     "lat": 59.94009,
+     "lon": 30.32884,
+     "address": "набережная канала Грибоедова 2б литА",
+     "website": "https://cathedral.ru/",
+     "openingHours": "Oct 01-Apr 30: Th-Tu 10:00-18:00; May 01-Sep 30: Th-Tu 10:00-22:30; We off",
+     "wikipediaCount": 44
+    },
+    {
+     "id": "relation/3296328",
+     "name": "Музей антропологии и этнографии имени Петра Великого Российской Академии наук",
+     "lat": 59.94153,
+     "lon": 30.30425,
+     "address": "Университетская набережная 3 литБ",
+     "website": "https://www.kunstkamera.ru/",
+     "openingHours": "Tu-Su 10:00-18:00;Mo off;Tu[-1] off",
+     "wikipediaCount": 36
+    },
+    {
+     "id": "relation/238571",
+     "name": "Михайловский замок",
+     "lat": 59.94038,
+     "lon": 30.33772,
+     "address": "Садовая улица 2",
+     "website": "https://www.rusmuseum.ru/mikhailovsky-castle/",
+     "openingHours": "Mo,We,Fr-Su 10:00-18:00; Th 13:00-21:00; Tu off",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "relation/969622",
+     "name": "Мраморный дворец",
+     "lat": 59.94518,
+     "lon": 30.32669,
+     "address": "Миллионная улица 5/1",
+     "website": "https://rusmuseum.ru/museums/marble-palace",
+     "openingHours": "Mo,We-Su 10:00-18:00; Tu off",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/123243367",
+     "name": "Юсуповский дворец",
+     "lat": 59.92926,
+     "lon": 30.29918,
+     "address": "набережная реки Мойки 94",
+     "website": "https://yusupov-palace.ru/",
+     "openingHours": "Mo-Su 10:00-19:30",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "relation/1028087",
+     "name": "Строгановский дворец",
+     "lat": 59.9356,
+     "lon": 30.32057,
+     "address": "Невский проспект 17",
+     "website": "https://www.rusmuseum.ru/stroganov-palace/",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/216655164",
+     "name": "Дворец Меншикова",
+     "lat": 59.93893,
+     "lon": 30.29577,
+     "address": "Университетская набережная 15",
+     "website": "https://www.hermitagemuseum.org/visitus/menshikov-palace",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/309796655",
+     "name": "Восточное крыло Главного штаба",
+     "lat": 59.93855,
+     "lon": 30.31836,
+     "address": "Дворцовая площадь 6-8",
+     "website": "https://www.hermitagemuseum.org/wps/portal/hermitage/visitus/general-staff/",
+     "openingHours": "Tu-Su 12:00-21:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "node/507091461",
+     "name": "Музей Ф. М. Достоевского",
+     "lat": 59.92737,
+     "lon": 30.35068,
+     "address": "Кузнечный переулок 5/2",
+     "website": "https://md.spb.ru/",
+     "openingHours": "Tu,Th-Su 11:00-18:00; We 13:00-20:00",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "node/1486061637",
+     "name": "Военно-исторический музей артиллерии, инженерных войск и войск связи",
+     "lat": 59.95346,
+     "lon": 30.3142,
+     "website": "http://www.artillery-museum.ru/",
+     "openingHours": "We-Su 11:00-18:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "relation/2594680",
+     "name": "Монетный двор",
+     "lat": 59.94951,
+     "lon": 30.31456,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "node/12153910621",
+     "name": "Зоологический музей",
+     "lat": 59.94284,
+     "lon": 30.30567,
+     "website": "https://www.zin.ru/museum",
+     "openingHours": "Mo,We-Su 11:00-19:00; Tu,We[2] off",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/3702115194",
+     "name": "Музей Фаберже",
+     "lat": 59.93472,
+     "lon": 30.34313,
+     "website": "https://fabergemuseum.ru/",
+     "openingHours": "10:00-21:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/30198549",
+     "name": "Государственный мемориальный музей А. В. Суворова",
+     "lat": 59.94328,
+     "lon": 30.37655,
+     "address": "Кирочная улица 43",
+     "website": "http://suvorovmuseum.ru/",
+     "openingHours": "Mo off; Tu,Th-Su 10:00-18:00; We 12:00-20:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "relation/3801086",
+     "name": "Музей Анны Ахматовой в Фонтанном доме",
+     "lat": 59.93595,
+     "lon": 30.34625,
+     "address": "Литейный проспект 53",
+     "website": "https://akhmatova.spb.ru/",
+     "openingHours": "Tu-Su 10:30-18:30; We 12:00-20:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/12154899850",
+     "name": "Музей Арктики и Антарктики",
+     "lat": 59.92745,
+     "lon": 30.3536,
+     "website": "https://polarmuseum.ru/",
+     "openingHours": "We, Fr-Su 10:00-18:00; Th 12:00-20:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/2385986746",
+     "name": "Центральный военно-морской музей",
+     "lat": 59.93027,
+     "lon": 30.29323,
+     "website": "https://navalmuseum.ru/",
+     "openingHours": "We-Mo 10:00-18:00, Tu off",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "relation/3283438",
+     "name": "Ледокол «Красин»",
+     "lat": 59.92785,
+     "lon": 30.269,
+     "website": "https://www.krassin.ru/",
+     "openingHours": "We-Su 11:00-18:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/1438259722",
+     "name": "Музей истории религии",
+     "lat": 59.93184,
+     "lon": 30.30145,
+     "website": "https://gmir.ru/",
+     "openingHours": "Th-Mo 11:00-18:00; Tu 13:00-21:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/235984453",
+     "name": "Российский этнографический музей",
+     "lat": 59.93794,
+     "lon": 30.33433,
+     "address": "Инженерная улица 4/1 литЕ",
+     "website": "https://www.ethnomuseum.ru/",
+     "openingHours": "Tu 10:00-21:00; We-Su 10:00-18:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "relation/11284410",
+     "name": "Манеж",
+     "lat": 59.93399,
+     "lon": 30.30245,
+     "address": "Исаакиевская площадь 1/2",
+     "website": "http://www.manege.spb.ru/",
+     "openingHours": "Mo,Tu 11:00-20:00; We 11:00-21:00; Th-Su 11:00-20:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/28712275",
+     "name": "Домик Петра I",
+     "lat": 59.95329,
+     "lon": 30.33085,
+     "address": "Петровская набережная 6",
+     "website": "http://www.rusmuseum.ru/",
+     "openingHours": "Mo,We,Fr-Su 10:00-18:00; Tu off; Th 13:00-21:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/43679385",
+     "name": "Музей политической истории России",
+     "lat": 59.95457,
+     "lon": 30.32529,
+     "address": "улица Куйбышева 2-4",
+     "website": "https://polithistory.ru/",
+     "openingHours": "10:00-18:00; We 10:00-20:00; Th off; Mo[-1] off; Jan 01,Jan 02,Jan 07,May 01,Dec 31 off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "relation/2594678",
+     "name": "Великокняжеская усыпальница",
+     "lat": 59.95067,
+     "lon": 30.31734,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/100549426",
+     "name": "Музей-квартира А. С. Пушкина",
+     "lat": 59.94103,
+     "lon": 30.3215,
+     "website": "https://www.museumpushkin.ru/vserossijskij_muzej_a._s._pushkina/muzej-kvartira_a.s.pushkina.html",
+     "openingHours": "Mo-Su 10:30-17:00; Tu off; Fr[-1] off",
+     "wikipediaCount": 6
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/669936547",
+     "name": "Стрелка Васильевского острова",
+     "lat": 59.94429,
+     "lon": 30.30725,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/10167915288",
+     "name": "Думская башня",
+     "lat": 59.93471,
+     "lon": 30.32961,
+     "website": "https://tchcenter.ru/afisha-sobytij/ekskursiya-na-dumskuyu-bashnyu/",
+     "openingHours": "10:00-22:00; We off"
+    },
+    {
+     "id": "node/5263894121",
+     "name": "Крыша",
+     "lat": 59.92201,
+     "lon": 30.35548,
+     "openingHours": "Mo-Su 09:00-23:00"
+    },
+    {
+     "id": "node/3768499136",
+     "name": "Арка Новой Голландии",
+     "lat": 59.92794,
+     "lon": 30.29043
+    },
+    {
+     "id": "node/11013962947",
+     "name": "Балкон музея Карла Буллы",
+     "lat": 59.93438,
+     "lon": 30.33613
+    },
+    {
+     "id": "node/11197898964",
+     "name": "Бартизан Государева бастиона",
+     "lat": 59.94998,
+     "lon": 30.32164
+    },
+    {
+     "id": "node/1586975009",
+     "name": "Вид на дом Капустина",
+     "lat": 59.91655,
+     "lon": 30.29708
+    },
+    {
+     "id": "node/12999399401",
+     "name": "вид на Кресты",
+     "lat": 59.94995,
+     "lon": 30.35998
+    },
+    {
+     "id": "node/4271175480",
+     "name": "Вид с Дворцового моста на Зимний Дворец",
+     "lat": 59.94102,
+     "lon": 30.3087
+    },
+    {
+     "id": "node/4271179826",
+     "name": "Вид с Дворцового моста на Петропавловскую крепость",
+     "lat": 59.94151,
+     "lon": 30.30797
+    },
+    {
+     "id": "node/4271179317",
+     "name": "Вид с Дворцового моста юго-запад",
+     "lat": 59.94134,
+     "lon": 30.3075
+    },
+    {
+     "id": "node/4271176767",
+     "name": "Дворцовый мост",
+     "lat": 59.94084,
+     "lon": 30.30824
+    },
+    {
+     "id": "node/9111941917",
+     "name": "мост Бетанкура",
+     "lat": 59.95986,
+     "lon": 30.26944
+    },
+    {
+     "id": "node/812011824",
+     "name": "Невская панорама",
+     "lat": 59.94919,
+     "lon": 30.31816
+    },
+    {
+     "id": "node/4275172789",
+     "name": "Обзор ангела",
+     "lat": 59.94264,
+     "lon": 30.31644
+    },
+    {
+     "id": "node/2197612079",
+     "name": "Семимостье",
+     "lat": 59.92072,
+     "lon": 30.29871
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3286404921",
+     "name": "#стейкдавай",
+     "lat": 59.96076,
+     "lon": 30.30358,
+     "website": "http://steakdavay.ru/",
+     "openingHours": "Mo-Th,Su 12:00-23:00; Fr-Sa 12:00-05:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/2283310776",
+     "name": "Asiatiq",
+     "lat": 59.94068,
+     "lon": 30.34811,
+     "website": "https://asiatiq-ramen.ru/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "ramen, noodle",
+     "detailed": true
+    },
+    {
+     "id": "node/4231384197",
+     "name": "Bahroma",
+     "lat": 59.95753,
+     "lon": 30.29777,
+     "address": "Большой проспект П.С. 30",
+     "website": "https://www.bahroma1.ru/",
+     "openingHours": "Mo-Th,Su 12:00-23:00; Fr-Sa 12:00-24:00",
+     "cuisine": "georgian, asian",
+     "detailed": true
+    },
+    {
+     "id": "node/909068965",
+     "name": "Barashki",
+     "lat": 59.92664,
+     "lon": 30.32062,
+     "website": "https://barashkispb.ru/",
+     "openingHours": "Su-Th 11:00-00:00; Fr-Sa 11:00-03:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/951472062",
+     "name": "BBQ",
+     "lat": 59.94216,
+     "lon": 30.27941,
+     "website": "http://reca.rest/restaurants/bbqrest",
+     "openingHours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-02:00",
+     "cuisine": "barbecue, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/4867850023",
+     "name": "BeefZavod",
+     "lat": 59.96909,
+     "lon": 30.31826,
+     "address": "Аптекарский проспект 2 литЗ",
+     "website": "https://beefzavod.com/",
+     "openingHours": "Mo-Su 12:00-23:00+",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/891394193",
+     "name": "Bollywood Nights",
+     "lat": 59.92209,
+     "lon": 30.35136,
+     "website": "http://bollywoodnights.ru/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/5073871625",
+     "name": "Bomu",
+     "lat": 59.92671,
+     "lon": 30.34123,
+     "address": "улица Ломоносова 26",
+     "website": "https://bomu.jp/",
+     "openingHours": "Mo-Th,Su 12:00-23:00; Fr-Sa 12:00-01:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/4527471492",
+     "name": "Charlie",
+     "lat": 59.92709,
+     "lon": 30.3157,
+     "address": "набережная канала Грибоедова 54",
+     "website": "https://charlierestaurant.ru/",
+     "openingHours": "Mo-Th 09:00-22:00; Fr-Su 09:00-23:00",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/2955779122",
+     "name": "Chipollino",
+     "lat": 59.94525,
+     "lon": 30.33853,
+     "website": "http://www.chipollino-fontanka.ru/",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5172224926",
+     "name": "Curry House",
+     "lat": 59.93908,
+     "lon": 30.35136,
+     "website": "https://curryhousespb.ru/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/1652758499",
+     "name": "Demidoff",
+     "lat": 59.9418,
+     "lon": 30.33951,
+     "website": "https://demidoff.sob.ru/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "russian",
+     "detailed": true
+    },
+    {
+     "id": "node/4111958907",
+     "name": "du Nord 1834",
+     "lat": 59.93059,
+     "lon": 30.36027,
+     "website": "http://www.dunord.spb.ru/",
+     "openingHours": "24/7",
+     "cuisine": "french, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/5058371148",
+     "name": "Duo Asia",
+     "lat": 59.93017,
+     "lon": 30.34488,
+     "website": "http://duoasia.ru/",
+     "openingHours": "Mo-Su 18:00-24:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/1312387854",
+     "name": "Entrée",
+     "lat": 59.92251,
+     "lon": 30.30307,
+     "address": "Никольская площадь 6",
+     "website": "https://www.restaurant-entree.ru/",
+     "openingHours": "10:00-24:00",
+     "cuisine": "french, cake, breakfast, pasta, fish",
+     "detailed": true
+    },
+    {
+     "id": "node/4359036490",
+     "name": "Eristov",
+     "lat": 59.96829,
+     "lon": 30.31762,
+     "address": "набережная реки Карповки 5 литП",
+     "website": "https://eristov.spb.ru/",
+     "openingHours": "Mo-Su 11:00-24:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/1320550046",
+     "name": "Finnegan's Wake",
+     "lat": 59.95143,
+     "lon": 30.29729,
+     "website": "https://www.finnegans.ru/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/4871957822",
+     "name": "Fort Maverick",
+     "lat": 59.94119,
+     "lon": 30.36589,
+     "website": "http://www.fortmaverick.bar/",
+     "openingHours": "Mo-Fr 11:00-23:00; Sa-Su 12:00-24:00",
+     "cuisine": "steak house, international, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2751337845",
+     "name": "Francesco",
+     "lat": 59.93984,
+     "lon": 30.37796,
+     "website": "https://ginza.ru/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/970695835",
+     "name": "Frank",
+     "lat": 59.9595,
+     "lon": 30.30228,
+     "website": "https://frankribs.ru/",
+     "openingHours": "Fr-Sa 12:00-03:00; Mo-Th,Su 12:00-01:00",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/999492861",
+     "name": "Frank",
+     "lat": 59.92641,
+     "lon": 30.34221,
+     "website": "https://frankribs.ru/",
+     "openingHours": "Su-Th 12:00-01:00, Fr-Sa 12:00-03:00",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/4204476089",
+     "name": "Fresa's",
+     "lat": 59.93475,
+     "lon": 30.30868,
+     "website": "https://fresas.restaurant/",
+     "openingHours": "09:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4247666241",
+     "name": "Goose Goose",
+     "lat": 59.93684,
+     "lon": 30.32229,
+     "address": "Большая Конюшенная улица 27",
+     "website": "https://italyco.rest/goose-goose",
+     "openingHours": "Fr-Sa 10:00-24:00; Mo-Th,Su 10:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1285019543",
+     "name": "Italiani",
+     "lat": 59.93178,
+     "lon": 30.35345,
+     "website": "https://italiani.rest/",
+     "openingHours": "24/7",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4595655390",
+     "name": "Italy",
+     "lat": 59.93582,
+     "lon": 30.31744,
+     "website": "https://italyco.rest/italy-bolshaya-morskaya",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3165417102",
+     "name": "Janno",
+     "lat": 59.94099,
+     "lon": 30.32057,
+     "website": "https://www.janno.org/",
+     "openingHours": "Mo-Su 08:00-23:00",
+     "cuisine": "russian",
+     "detailed": true
+    },
+    {
+     "id": "node/806509590",
+     "name": "Jérôme",
+     "lat": 59.93429,
+     "lon": 30.31314,
+     "website": "https://jeromerestaurant.ru/",
+     "openingHours": "09:00-24:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/4352757289",
+     "name": "Kazan-Mangal",
+     "lat": 59.93618,
+     "lon": 30.31846,
+     "website": "https://reca.rest/restaurants/kazanmangal_nevskij",
+     "openingHours": "Mo-Th,Su 12:00-23:30; Fr-Sa 12:00-01:00",
+     "cuisine": "georgian, uzbek",
+     "detailed": true
+    },
+    {
+     "id": "node/3888733093",
+     "name": "Ketch Up",
+     "lat": 59.96553,
+     "lon": 30.31277,
+     "website": "https://ketch-up.ru/",
+     "openingHours": "11:00-23:00",
+     "cuisine": "american, breakfast, burger, coffee shop, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/2940632482",
+     "name": "KIDO",
+     "lat": 59.96449,
+     "lon": 30.28602,
+     "address": "Большая Зеленина улица 31",
+     "website": "https://spb.kido.ru/places/zelenina.html",
+     "openingHours": "12:00-23:00",
+     "cuisine": "sushi",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2126427790",
+     "name": "Baggins Coffee",
+     "lat": 59.91898,
+     "lon": 30.28836,
+     "website": "https://bagginscoffee.com/",
+     "openingHours": "Mo-Fr 07:30-20:30; Sa-Su 09:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2930653177",
+     "name": "Baggins Coffee",
+     "lat": 59.92145,
+     "lon": 30.33128,
+     "website": "https://bagginscoffee.com/",
+     "openingHours": "Mo-Fr 07:30-20:30; Sa-Su 09:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3171912364",
+     "name": "Baggins Coffee",
+     "lat": 59.93787,
+     "lon": 30.27694,
+     "website": "https://bagginscoffee.com/",
+     "openingHours": "Mo-Fr 08:00-21:00; Sa-Su 09:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1304597930",
+     "name": "BISTRO A-STYLE",
+     "lat": 59.93388,
+     "lon": 30.34445,
+     "website": "https://bistroast.ru/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "american, burger, coffee shop, international, italian, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/1457604265",
+     "name": "City Grill",
+     "lat": 59.93424,
+     "lon": 30.32637,
+     "website": "https://www.citygrillexpress.ru/",
+     "openingHours": "12:00-22:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/808014170",
+     "name": "Coffeeshop Company",
+     "lat": 59.93581,
+     "lon": 30.32434,
+     "website": "https://www.coffeeshopcompany.ru/",
+     "openingHours": "24/7",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1288238573",
+     "name": "Coffeeshop Company",
+     "lat": 59.93197,
+     "lon": 30.35542,
+     "website": "https://www.coffeeshopcompany.ru/",
+     "openingHours": "24/7",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1085331754",
+     "name": "Cofix",
+     "lat": 59.93101,
+     "lon": 30.35969,
+     "website": "https://cofix.global/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2197659026",
+     "name": "FermA",
+     "lat": 59.92587,
+     "lon": 30.31662,
+     "website": "https://white-group.ru/restaurants/view/konditerskaya-ferma/",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "cuisine": "cake",
+     "detailed": true
+    },
+    {
+     "id": "node/1892516723",
+     "name": "Frida",
+     "lat": 59.94631,
+     "lon": 30.35837,
+     "website": "https://teahouse-group.ru/frida",
+     "openingHours": "Su, Tu-Th 12:00-24:00; Fr-Sa 12:00-01:00; Mo 13:00-00:00",
+     "cuisine": "coffee shop, mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/920079997",
+     "name": "Juno",
+     "lat": 59.92865,
+     "lon": 30.31058,
+     "website": "http://pashtetspb.ru/",
+     "openingHours": "Mo-Th,Su 11:30-23:30; Fr-Sa 11:30-01:00",
+     "cuisine": "deli, international, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/394830180",
+     "name": "Ôpetit",
+     "lat": 59.95228,
+     "lon": 30.29731,
+     "website": "https://o-petit.ru/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "cuisine": "breakfast, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2575806179",
+     "name": "Pho'n'Roll",
+     "lat": 59.93581,
+     "lon": 30.35547,
+     "website": "https://www.phonrollcafe.ru/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/1304597926",
+     "name": "Pizza Milano",
+     "lat": 59.93364,
+     "lon": 30.34434,
+     "website": "http://www.pizzamilanobar.ru/",
+     "openingHours": "Mo-Su 12:00+",
+     "cuisine": "italian, mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/3150689793",
+     "name": "Playloft Gaga",
+     "lat": 59.93522,
+     "lon": 30.31085,
+     "website": "https://playloftgaga.ru/",
+     "openingHours": "12:00-23:00; Fr-Sa 12:00-06:00",
+     "cuisine": "coffee",
+     "detailed": true
+    },
+    {
+     "id": "node/975905023",
+     "name": "Ramen & Wok",
+     "lat": 59.96191,
+     "lon": 30.29178,
+     "address": "Большая Зеленина улица 15",
+     "website": "https://ramenwok.ru/",
+     "openingHours": "11:00-22:30",
+     "cuisine": "ramen",
+     "detailed": true
+    },
+    {
+     "id": "node/2291203936",
+     "name": "Rimini",
+     "lat": 59.94531,
+     "lon": 30.36281,
+     "website": "https://cafe-rimini.ru/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1920560916",
+     "name": "Roni's Donuts",
+     "lat": 59.9579,
+     "lon": 30.30716,
+     "website": "https://ronisdonuts.ru/",
+     "openingHours": "Mo-Fr 08:00-21:00; Sa-Su 09:00-21:00",
+     "cuisine": "donut",
+     "detailed": true
+    },
+    {
+     "id": "node/3406657130",
+     "name": "Surf Coffee",
+     "lat": 59.96549,
+     "lon": 30.31366,
+     "website": "https://www.surfcoffee.ru/",
+     "openingHours": "Mo-Sa 08:00-22:00; Su 10:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/444776758",
+     "name": "Wahaha",
+     "lat": 59.9305,
+     "lon": 30.36418,
+     "website": "https://ostdari.github.io/",
+     "openingHours": "10:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/305880722",
+     "name": "Больше Кофе",
+     "lat": 59.9545,
+     "lon": 30.32051,
+     "address": "Александровский парк 3Г",
+     "website": "https://bolshecoffee.ru/",
+     "openingHours": "Mo-Th 10:00-22:00; Fr 10:00-23:00; Sa,Su 11:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1288238600",
+     "name": "Британские пекарни",
+     "lat": 59.93221,
+     "lon": 30.35349,
+     "website": "https://british-bakery.ru/",
+     "openingHours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
+     "cuisine": "cake, breakfast, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/1369643087",
+     "name": "Британские пекарни",
+     "lat": 59.93798,
+     "lon": 30.36967,
+     "website": "https://british-bakery.ru/shops/grecheskiy-pr-25/",
+     "openingHours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
+     "cuisine": "cake, breakfast, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/1095136133",
+     "name": "Брынза",
+     "lat": 59.96263,
+     "lon": 30.30081,
+     "website": "https://cafebrynza.ru/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "cuisine": "empanada, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/2107701176",
+     "name": "Брынза",
+     "lat": 59.92197,
+     "lon": 30.33149,
+     "website": "https://cafebrynza.ru/",
+     "openingHours": "24/7",
+     "cuisine": "empanada, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/2167055536",
+     "name": "Брынза",
+     "lat": 59.93092,
+     "lon": 30.3576,
+     "website": "https://cafebrynza.ru/",
+     "openingHours": "Fr 09:00-24:00; Mo-Th 09:00-23:00; Sa 00:00-24:00; Su 06:00-23:00",
+     "cuisine": "empanada, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/2856659440",
+     "name": "Брынза",
+     "lat": 59.93456,
+     "lon": 30.33497,
+     "website": "https://cafebrynza.ru/",
+     "openingHours": "24/7",
+     "cuisine": "empanada, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/3263244000",
+     "name": "Брынза",
+     "lat": 59.93391,
+     "lon": 30.34127,
+     "website": "https://cafebrynza.ru/",
+     "openingHours": "10:00-23:00",
+     "cuisine": "empanada, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/1034363210",
+     "name": "буше",
+     "lat": 59.93077,
+     "lon": 30.35471,
+     "website": "https://bushe.ru/",
+     "openingHours": "08:00-22:00",
+     "cuisine": "coffee shop, dessert, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/2327833868",
+     "name": "буше",
+     "lat": 59.93572,
+     "lon": 30.35994,
+     "website": "https://bushe.ru/",
+     "openingHours": "08:00-22:00",
+     "cuisine": "coffee shop, dessert, sandwich",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2119377244",
+     "name": "Al Capone",
+     "lat": 59.93588,
+     "lon": 30.35127,
+     "website": "https://alcaponebar.ru/",
+     "openingHours": "Mo-Th,Su 18:00-03:00; Fr-Sa 18:00-06:05",
+     "cuisine": "american, italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/4605066120",
+     "name": "Asiatiq",
+     "lat": 59.92017,
+     "lon": 30.30768,
+     "website": "https://asiatiq-ramen.ru/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "asian, japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/8675904762",
+     "name": "Co-op Garage",
+     "lat": 59.92707,
+     "lon": 30.32279,
+     "website": "http://cooperativegarage.com/",
+     "openingHours": "Su-Th 12:00-24:00, Fr-Sa 12:00-02:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1280400717",
+     "name": "Fiddler's Green",
+     "lat": 59.93176,
+     "lon": 30.34529,
+     "website": "https://hatgroup.ru/fiddlers-green/",
+     "openingHours": "Fr-Sa 14:00-03:00; Mo-Th,Su 14:00-02:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/6145478885",
+     "name": "Fish Fabrique Nouvelle",
+     "lat": 59.92914,
+     "lon": 30.35897,
+     "website": "https://www.fishfabriquebar.ru/",
+     "openingHours": "Mo-Su 17:00-03:00",
+     "cuisine": "burger, sandwich, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7004650887",
+     "name": "Friends Time",
+     "lat": 59.93599,
+     "lon": 30.36005,
+     "website": "https://karaokefriends.ru/",
+     "openingHours": "Fr-Su 00:00-24:00",
+     "cuisine": "pasta, local, international",
+     "detailed": true
+    },
+    {
+     "id": "node/4274088539",
+     "name": "Kriek",
+     "lat": 59.93258,
+     "lon": 30.34713,
+     "website": "http://www.kriek.ru/contacts/restoran-na-nevskom-47/",
+     "openingHours": "Mo-Th,Su 11:30-01:00; Fr-Sa 11:30-02:00",
+     "cuisine": "belgian",
+     "detailed": true
+    },
+    {
+     "id": "node/5018271222",
+     "name": "Pub 357",
+     "lat": 59.94728,
+     "lon": 30.28529,
+     "address": "набережная Макарова 22",
+     "website": "https://pub357.ru/",
+     "openingHours": "Mo-Th 12:00-23:00; Fr-Sa 12:00-02:00; Su off",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/487255525",
+     "name": "Shamrock",
+     "lat": 59.9266,
+     "lon": 30.29576,
+     "address": "улица Декабристов 27",
+     "website": "http://shamrock.spb.ru/",
+     "openingHours": "Mo-Su 11:00-02:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/7778271118",
+     "name": "Tawny Bar",
+     "lat": 59.94077,
+     "lon": 30.34083,
+     "address": "набережная реки Фонтанки 20",
+     "website": "http://tawny.bar/",
+     "openingHours": "15:00-23:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/4402281792",
+     "name": "Tower",
+     "lat": 59.93612,
+     "lon": 30.32265,
+     "address": "Невский проспект 22",
+     "website": "https://pub-tower.ru/",
+     "openingHours": "24/7",
+     "cuisine": "irish, friture, local, regional, fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/1637619822",
+     "name": "United Butchers",
+     "lat": 59.93918,
+     "lon": 30.36023,
+     "website": "https://unitedbutchers.ru/",
+     "openingHours": "Mo-Th, Su 12:00-01:00; Fr, Sa 12:00-02:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/6236981475",
+     "name": "Ателье",
+     "lat": 59.96156,
+     "lon": 30.30278,
+     "website": "https://www.facebook.com/ateliertapasbar/",
+     "openingHours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-01:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/3689523351",
+     "name": "Барслона",
+     "lat": 59.92953,
+     "lon": 30.34446,
+     "website": "http://barslona.ru/",
+     "openingHours": "12:00-06:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/3329715118",
+     "name": "Бекицер",
+     "lat": 59.92661,
+     "lon": 30.34268,
+     "website": "http://bekitzer.ru/",
+     "openingHours": "Mo-Th 10:00-02:00; Fr-Su 10:00-06:00",
+     "cuisine": "breakfast, coffee shop, mediterranean, jewish",
+     "detailed": true
+    },
+    {
+     "id": "node/5505718223",
+     "name": "Блуждающий форвард",
+     "lat": 59.9678,
+     "lon": 30.30769,
+     "address": "Каменноостровский проспект 42Б",
+     "website": "https://forwardbar.ru/",
+     "openingHours": "Mo-Th 12:00-01:00; Fr 12:00-02:00; Sa 13:00-02:00; Su 13:00-01:00",
+     "cuisine": "friture, chicken, burger, coffee shop, german, russian, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/774981910",
+     "name": "Бюро",
+     "lat": 59.93523,
+     "lon": 30.33535,
+     "website": "https://barbureau.ru/",
+     "openingHours": "12:00-01:00",
+     "cuisine": "american, burger, coffee shop, international",
+     "detailed": true
+    },
+    {
+     "id": "node/2575806178",
+     "name": "Бюро",
+     "lat": 59.93581,
+     "lon": 30.3557,
+     "website": "https://barbureau.ru/",
+     "openingHours": "12:00-01:00",
+     "cuisine": "american, burger, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3425666981",
+     "name": "Бюро",
+     "lat": 59.94124,
+     "lon": 30.27151,
+     "website": "https://barbureau.ru/",
+     "openingHours": "12:00-01:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/3911300357",
+     "name": "Бюро",
+     "lat": 59.95818,
+     "lon": 30.2977,
+     "website": "https://barbureau.ru/",
+     "openingHours": "12:00-01:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/2608871729",
+     "name": "Моллис Мьюз",
+     "lat": 59.94016,
+     "lon": 30.32386,
+     "website": "https://molly.su/mews/",
+     "openingHours": "Su-Th 12:00-02:00; Fr-Sa 12:00-03:00",
+     "cuisine": "burger, sandwich, russian, irish, fish and chips, friture, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3511128419",
+     "name": "Руки вверх",
+     "lat": 59.93249,
+     "lon": 30.3257,
+     "address": "набережная канала Грибоедова 28",
+     "website": "https://9994949.ru/",
+     "openingHours": "18:00-06:00",
+     "cuisine": "russian",
+     "detailed": true
+    },
+    {
+     "id": "node/1030648729",
+     "name": "Чердак",
+     "lat": 59.95795,
+     "lon": 30.33424,
+     "website": "http://www.cherdakcafe.ru/",
+     "openingHours": "Su-Th 12:00-23:30; Fr-Sa 12:00-02:00",
+     "cuisine": "russian",
+     "detailed": true
+    },
+    {
+     "id": "node/3929750302",
+     "name": "3/4",
+     "lat": 59.94665,
+     "lon": 30.3567,
+     "website": "https://kultbar34.ru/",
+     "openingHours": "Tu-Su 18:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4464785456",
+     "name": "Ararat Wine",
+     "lat": 59.92332,
+     "lon": 30.29219,
+     "website": "https://www.ararat-wine.ru/",
+     "openingHours": "11:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8119978017",
+     "name": "Bacchus",
+     "lat": 59.93472,
+     "lon": 30.34108,
+     "website": "http://bacchusbarshop.ru/",
+     "openingHours": "Mo-Th 13:00-00:00; Fr-Sa 13:00-01:00; Su 12:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6381277975",
+     "name": "Barmaley Bar",
+     "lat": 59.96355,
+     "lon": 30.30743,
+     "address": "Бармалеева улица 4",
+     "openingHours": "Su-Th 15:00-01:00; Fr,Sa 14:00-02:00",
+     "cuisine": "burger, grill",
+     "detailed": true
+    },
+    {
+     "id": "node/977671890",
+     "name": "Beer House",
+     "lat": 59.96621,
+     "lon": 30.31319,
+     "website": "https://beerhousebar.ru/",
+     "openingHours": "Mo-Su 12:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/977892506",
+     "name": "Beer House",
+     "lat": 59.94139,
+     "lon": 30.28097,
+     "website": "https://beerhousebar.ru/",
+     "openingHours": "Mo-Su 12:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2126427681",
+     "name": "Beer House",
+     "lat": 59.91931,
+     "lon": 30.28808,
+     "website": "https://beerhousebar.ru/",
+     "openingHours": "Mo-Su 12:00-06:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2974761159",
+     "name": "7sky",
+     "lat": 59.93696,
+     "lon": 30.35643,
+     "website": "https://spb7sky.ru/",
+     "openingHours": "Mo-Su 18:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2283310772",
+     "name": "Blues club Hendricks",
+     "lat": 59.94104,
+     "lon": 30.34814,
+     "address": "Литейный проспект 33",
+     "website": "https://gablues.com/",
+     "openingHours": "Mo-Sa 15:00-02:00; Su 16:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5146412362",
+     "name": "Music Bar 11",
+     "lat": 59.9358,
+     "lon": 30.31286,
+     "website": "https://www.musicbar11.ru/",
+     "openingHours": "21:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2590603726",
+     "name": "Nebar",
+     "lat": 59.93489,
+     "lon": 30.34772,
+     "website": "https://nebar.ru/",
+     "openingHours": "18:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4853535603",
+     "name": "Nebar",
+     "lat": 59.93253,
+     "lon": 30.32627,
+     "website": "https://nebar.ru/",
+     "openingHours": "19:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5650395134",
+     "name": "Plan B",
+     "lat": 59.93588,
+     "lon": 30.34782,
+     "website": "https://planbspb.ru/",
+     "openingHours": "19:00-11:00; Mo[1] off \"Санитарный день\"",
+     "detailed": true
+    },
+    {
+     "id": "node/4833075421",
+     "name": "Playground",
+     "lat": 59.93221,
+     "lon": 30.32724,
+     "website": "http://plgrspb.ru/",
+     "openingHours": "We-Su 20:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11611599769",
+     "name": "Secrets",
+     "lat": 59.92689,
+     "lon": 30.36888,
+     "website": "https://secretsnightroom.com/",
+     "openingHours": "Fr-Sa 09:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5234094474",
+     "name": "Zависть Flirt bar",
+     "lat": 59.93234,
+     "lon": 30.34563,
+     "website": "https://zavist.bar/",
+     "openingHours": "Mo-Su 20:00-8:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4580909692",
+     "name": "Zависть Lounge bar",
+     "lat": 59.93083,
+     "lon": 30.34806,
+     "website": "https://zavist.bar/",
+     "openingHours": "Mo-Su 20:00-08:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9218640183",
+     "name": "Zависть Private Bar",
+     "lat": 59.93439,
+     "lon": 30.33955,
+     "website": "https://zavist.bar/",
+     "openingHours": "Mo-Su 19:00-07:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2046697139",
+     "name": "А2",
+     "lat": 59.96904,
+     "lon": 30.31513,
+     "website": "https://a2.fm/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4281112405",
+     "name": "Виновница Концерт Холл",
+     "lat": 59.94019,
+     "lon": 30.32622,
+     "website": "https://vnvncconcerthall.ru/",
+     "openingHours": "Mo-Sa 22:00-08:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3345681023",
+     "name": "Дуэты",
+     "lat": 59.93812,
+     "lon": 30.34737,
+     "website": "https://karaoke-duet.ru/",
+     "openingHours": "18:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11766349267",
+     "name": "Реванш",
+     "lat": 59.9337,
+     "lon": 30.34856,
+     "website": "https://revansh.club/",
+     "openingHours": "Fr-Sa 21:00-07:00; Mo-Th,Su 21:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4749884018",
+     "name": "Центральная станция",
+     "lat": 59.9324,
+     "lon": 30.32668,
+     "address": "улица Ломоносова 1",
+     "website": "https://www.centralstationspb.com/",
+     "openingHours": "Mo-Th,Su 22:00-08:00; Fr-Sa 20:00-08:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7097902185",
+     "name": "G Leps Bar",
+     "lat": 59.94077,
+     "lon": 30.32645,
+     "openingHours": "Mo-Th,Su 20:00-05:00; Fr-Sa 20:00-06:00"
+    },
+    {
+     "id": "node/5757244721",
+     "name": "Hi Hat Rooftop",
+     "lat": 59.96965,
+     "lon": 30.31846,
+     "website": "http://hihat-rooftop.com/"
+    },
+    {
+     "id": "node/5082736149",
+     "name": "Kuznya Club",
+     "lat": 59.92954,
+     "lon": 30.28886,
+     "openingHours": "Fr-Sa 23:00-06:00"
+    },
+    {
+     "id": "node/3535531180",
+     "name": "Lomonosov Bar",
+     "lat": 59.93212,
+     "lon": 30.32749,
+     "openingHours": "21:00-06:00"
+    },
+    {
+     "id": "node/4931990215",
+     "name": "Rossi’s Club",
+     "lat": 59.92986,
+     "lon": 30.33512,
+     "website": "https://rossis.ru/"
+    },
+    {
+     "id": "node/10124398893",
+     "name": "Royal Neva",
+     "lat": 59.94086,
+     "lon": 30.32548,
+     "openingHours": "19:00-06:00"
+    },
+    {
+     "id": "node/5589416751",
+     "name": "S16",
+     "lat": 59.9309,
+     "lon": 30.35283,
+     "openingHours": "19:00-07:00"
+    },
+    {
+     "id": "node/5138687937",
+     "name": "Santa Barbara",
+     "lat": 59.9326,
+     "lon": 30.31984,
+     "website": "https://santabarbaraclub.ru/"
+    },
+    {
+     "id": "node/656688748",
+     "name": "The Stories",
+     "lat": 59.9349,
+     "lon": 30.33569,
+     "openingHours": "19:00-06:00"
+    },
+    {
+     "id": "node/5109250229",
+     "name": "Zависть Strip bar",
+     "lat": 59.93648,
+     "lon": 30.32212,
+     "address": "Большая Конюшенная улица 29",
+     "website": "https://zavist.bar/"
+    },
+    {
+     "id": "node/4911475365",
+     "name": "Кабаре",
+     "lat": 59.92156,
+     "lon": 30.35259,
+     "address": "Разъезжая улица 43",
+     "website": "https://cabarespb.ru/"
+    },
+    {
+     "id": "node/6273604585",
+     "name": "Кружок",
+     "lat": 59.93924,
+     "lon": 30.32501,
+     "address": "Конюшенная площадь 2 литВ",
+     "openingHours": "Fr-Sa 23:00-06:00"
+    },
+    {
+     "id": "node/8947404855",
+     "name": "Пляски",
+     "lat": 59.93799,
+     "lon": 30.37049,
+     "openingHours": "Mo-Th 13:00-02:00; Fr 13:00-05:00; Sa 15:00-05:00; Su 15:00-02:00"
+    },
+    {
+     "id": "node/1198994127",
+     "name": "Рассвет",
+     "lat": 59.95516,
+     "lon": 30.37269,
+     "website": "https://rassvet.place/"
+    }
+   ]
+  }
+ }
+}

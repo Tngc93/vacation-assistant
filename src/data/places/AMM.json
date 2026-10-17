@@ -1,0 +1,954 @@
+{
+ "version": 1,
+ "cityCode": "AMM",
+ "fetchedAt": "2026-10-17T00:04:21.935Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Amman.jpg/1280px-Amman.jpg",
+  "width": 1280,
+  "height": 853,
+  "author": "David Bjorgen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Amman.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/35200952",
+     "name": "تل القلعة",
+     "lat": 31.95492,
+     "lon": 35.93487,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/608094627",
+     "name": "Roman Theatre",
+     "lat": 31.95162,
+     "lon": 35.93932,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/245144085",
+     "name": "معبد هيراكليس",
+     "lat": 31.95375,
+     "lon": 35.93486,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "node/2807835007",
+     "name": "Nymphaeum",
+     "lat": 31.95015,
+     "lon": 35.93618,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/757688579",
+     "name": "قصر الأمويين",
+     "lat": 31.95589,
+     "lon": 35.93368,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/4788766570",
+     "name": "Ammonite Watchtower",
+     "lat": 31.9577,
+     "lon": 35.90457
+    },
+    {
+     "id": "way/659422039",
+     "name": "Gate of Ammon",
+     "lat": 31.95483,
+     "lon": 35.93432
+    },
+    {
+     "id": "way/659422038",
+     "name": "Residential Units",
+     "lat": 31.95549,
+     "lon": 35.93375
+    },
+    {
+     "id": "way/757058723",
+     "name": "Roman Temenos",
+     "lat": 31.95367,
+     "lon": 35.93569
+    },
+    {
+     "id": "node/6723097286",
+     "name": "Scale colorate",
+     "lat": 31.95138,
+     "lon": 35.93454
+    },
+    {
+     "id": "way/757688568",
+     "name": "Umayyad Market place \"Souk\"",
+     "lat": 31.95517,
+     "lon": 35.93454
+    },
+    {
+     "id": "way/757801430",
+     "name": "Umayyad Market place \"Souk\"",
+     "lat": 31.95504,
+     "lon": 35.93406
+    },
+    {
+     "id": "way/757801476",
+     "name": "Umayyad Residential Units",
+     "lat": 31.95439,
+     "lon": 35.93431
+    },
+    {
+     "id": "way/757880130",
+     "name": "Umayyad Residential Units",
+     "lat": 31.95594,
+     "lon": 35.9341
+    },
+    {
+     "id": "way/758084955",
+     "name": "Umayyad Residential Units",
+     "lat": 31.95549,
+     "lon": 35.93437
+    },
+    {
+     "id": "way/509602521",
+     "name": "Zidian Hotel",
+     "lat": 31.94998,
+     "lon": 35.91668,
+     "address": "شارع البحتري 69"
+    },
+    {
+     "id": "node/798905026",
+     "name": "أم صويوينة",
+     "lat": 31.93333,
+     "lon": 35.91667
+    },
+    {
+     "id": "way/428913211",
+     "name": "الصهريج الأموي المفتوح",
+     "lat": 31.95557,
+     "lon": 35.93462
+    },
+    {
+     "id": "way/608092189",
+     "name": "الكنيسة البيزنطية",
+     "lat": 31.95452,
+     "lon": 35.93517
+    },
+    {
+     "id": "way/523701385",
+     "name": "المسجد الأموي",
+     "lat": 31.9547,
+     "lon": 35.93432
+    },
+    {
+     "id": "way/757668998",
+     "name": "برج المراقبة الأيوبي",
+     "lat": 31.9534,
+     "lon": 35.93504
+    },
+    {
+     "id": "way/486630396",
+     "name": "حدائق الساحة الهاشمية",
+     "lat": 31.95212,
+     "lon": 35.93997
+    },
+    {
+     "id": "node/5285724421",
+     "name": "ساحة النخيل",
+     "lat": 31.94533,
+     "lon": 35.92834
+    },
+    {
+     "id": "node/5024847823",
+     "name": "ساحة باريس",
+     "lat": 31.95574,
+     "lon": 35.92795
+    },
+    {
+     "id": "node/6979404485",
+     "name": "سوق الخضرا",
+     "lat": 31.95002,
+     "lon": 35.93555
+    },
+    {
+     "id": "way/757880133",
+     "name": "شارع الأعمدة",
+     "lat": 31.95591,
+     "lon": 35.93381
+    },
+    {
+     "id": "way/758135470",
+     "name": "قاعة الاجتماعات الأموية وقاعة العرش",
+     "lat": 31.95622,
+     "lon": 35.93339
+    },
+    {
+     "id": "node/6768714853",
+     "name": "قناة الاردن اليوم",
+     "lat": 31.9554,
+     "lon": 35.91297
+    },
+    {
+     "id": "node/4883755922",
+     "name": "كنيسة الكاثوليك السريان مار يوسف",
+     "lat": 31.95197,
+     "lon": 35.919
+    },
+    {
+     "id": "node/12778670301",
+     "name": "ياسين هادي الحشيشي",
+     "lat": 31.95043,
+     "lon": 35.90766
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/179440338",
+     "name": "متحف الأردن",
+     "lat": 31.94562,
+     "lon": 35.92725,
+     "address": "شارع علي بن أبي طالب",
+     "website": "https://jordanmuseum.jo/",
+     "openingHours": "Sa-Mo,We,Th 09:00-17:00; Fr 14:00-18:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "way/381723554",
+     "name": "متحف القلعة",
+     "lat": 31.95412,
+     "lon": 35.93429,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/370887424",
+     "name": "Villa Abu Al Huda",
+     "lat": 31.95102,
+     "lon": 35.93185,
+     "address": "شارع عثمان بن عفان 30",
+     "openingHours": "Sa-Th 10:00-18:00"
+    },
+    {
+     "id": "node/6032290185",
+     "name": "المتحف الشعبي للحلي والأزياء",
+     "lat": 31.95185,
+     "lon": 35.93955,
+     "openingHours": "Mo,We,Th,Sa,Su 09:00-18:00; Fr 15:00-19:00; Tu off"
+    },
+    {
+     "id": "node/3907302486",
+     "name": "دارة الفنون (مؤسّسة خالد الشومان)",
+     "lat": 31.9542,
+     "lon": 35.93046,
+     "address": "شارع نديم الملّاح 13",
+     "website": "https://daratalfunun.org/"
+    },
+    {
+     "id": "node/8632420338",
+     "name": "وطن",
+     "lat": 31.94686,
+     "lon": 35.92995,
+     "openingHours": "Sa-Th 11:00-20:00"
+    },
+    {
+     "id": "node/7108967647",
+     "name": "Beit Shkair",
+     "lat": 31.94766,
+     "lon": 35.93198
+    },
+    {
+     "id": "node/9668110211",
+     "name": "Coin museum",
+     "lat": 31.9571,
+     "lon": 35.93131
+    },
+    {
+     "id": "node/9064080422",
+     "name": "Gallery Hodroj",
+     "lat": 31.95642,
+     "lon": 35.92429
+    },
+    {
+     "id": "node/2807842989",
+     "name": "Islamic Museum",
+     "lat": 31.96086,
+     "lon": 35.9135
+    },
+    {
+     "id": "way/178988234",
+     "name": "Jordan National Gallery of Fine Arts, Building 1",
+     "lat": 31.95886,
+     "lon": 35.91556,
+     "address": "Hosni Fareez 6"
+    },
+    {
+     "id": "way/232958482",
+     "name": "Jordan National Gallery of Fine Arts, Building 2",
+     "lat": 31.95794,
+     "lon": 35.91523,
+     "address": "Husni Fareez Street 28"
+    },
+    {
+     "id": "node/13340545252",
+     "name": "Museum Jerusalem",
+     "lat": 31.95798,
+     "lon": 35.91545
+    },
+    {
+     "id": "node/7128562799",
+     "name": "Nabad",
+     "lat": 31.95139,
+     "lon": 35.92999,
+     "address": "شارع عثمان بن عفان 46"
+    },
+    {
+     "id": "node/10860290805",
+     "name": "آرمات عمان",
+     "lat": 31.95272,
+     "lon": 35.93216
+    },
+    {
+     "id": "node/5824803762",
+     "name": "لجنة دعم المساجدوالمشاريع الخيرية",
+     "lat": 31.96826,
+     "lon": 35.91022
+    },
+    {
+     "id": "way/523862995",
+     "name": "متحف الحياة البرلمانية",
+     "lat": 31.95111,
+     "lon": 35.92118
+    },
+    {
+     "id": "node/970179165",
+     "name": "متحف الفلكلور الأردني",
+     "lat": 31.95173,
+     "lon": 35.93899
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5157086126",
+     "name": "المدرج الروماني",
+     "lat": 31.95223,
+     "lon": 35.93864
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3745205221",
+     "name": "Buffalo Wings & Rings",
+     "lat": 31.95098,
+     "lon": 35.92297,
+     "website": "https://www.buffalowingsandrings.com/",
+     "cuisine": "american, chicken, fried chicken, fries",
+     "detailed": true
+    },
+    {
+     "id": "way/200945991",
+     "name": "Fakhreldin",
+     "lat": 31.95219,
+     "lon": 35.92031,
+     "address": "Taha Hussein Street",
+     "website": "https://www.fakhreldin.com/",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2109018160",
+     "name": "Romero",
+     "lat": 31.9526,
+     "lon": 35.91251,
+     "website": "https://www.romero-jordan.com/",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2807828757",
+     "name": "Sufra",
+     "lat": 31.94928,
+     "lon": 35.92912,
+     "address": "شارع الرينبو",
+     "website": "https://www.romero-jordan.com/sufra.html",
+     "cuisine": "regional, arabic",
+     "detailed": true
+    },
+    {
+     "id": "way/370575208",
+     "name": "Wild Jordan Center",
+     "lat": 31.95117,
+     "lon": 35.93087,
+     "address": "شارع عثمان بن عفان",
+     "website": "http://www.wildjordancafe-jo.com/",
+     "cuisine": "international, regional, smoothies, coffee",
+     "detailed": true
+    },
+    {
+     "id": "way/763105435",
+     "name": "مطعم جوهرة جبل النظيف",
+     "lat": 31.94072,
+     "lon": 35.92603,
+     "openingHours": "07:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2417964229",
+     "name": "Al Quds",
+     "lat": 31.95269,
+     "lon": 35.93237,
+     "cuisine": "regional, arabic"
+    },
+    {
+     "id": "node/7098059630",
+     "name": "Ataba",
+     "lat": 31.94905,
+     "lon": 35.92768,
+     "address": "شارع الرينبو",
+     "cuisine": "jordanian"
+    },
+    {
+     "id": "node/6005739786",
+     "name": "Cantaloupe",
+     "lat": 31.94948,
+     "lon": 35.93085,
+     "cuisine": "international"
+    },
+    {
+     "id": "node/9053774518",
+     "name": "Chapters",
+     "lat": 31.9557,
+     "lon": 35.92715,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/9053790017",
+     "name": "Ciao Ciao",
+     "lat": 31.956,
+     "lon": 35.92633,
+     "cuisine": "italian"
+    },
+    {
+     "id": "way/1453546856",
+     "name": "Dar Ne'meh",
+     "lat": 31.95449,
+     "lon": 35.93793,
+     "cuisine": "arab"
+    },
+    {
+     "id": "node/13340545221",
+     "name": "Del Grano",
+     "lat": 31.95655,
+     "lon": 35.92379,
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/3748997311",
+     "name": "El Cairo",
+     "lat": 31.94875,
+     "lon": 35.93435,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/7119254497",
+     "name": "Jadayel Hawa",
+     "lat": 31.95553,
+     "lon": 35.93064,
+     "address": "شارع نمر العدوان 25",
+     "cuisine": "regional, arabic"
+    },
+    {
+     "id": "node/2417964228",
+     "name": "Jafra",
+     "lat": 31.95227,
+     "lon": 35.93074,
+     "cuisine": "regional, arabic"
+    },
+    {
+     "id": "way/232959122",
+     "name": "Jordan Heritage",
+     "lat": 31.95576,
+     "lon": 35.925,
+     "cuisine": "regional, arab"
+    },
+    {
+     "id": "node/13290525694",
+     "name": "Joz Hind",
+     "lat": 31.9559,
+     "lon": 35.92679,
+     "openingHours": "Mo-Th,Su 11:30-15:30"
+    },
+    {
+     "id": "node/2412814706",
+     "name": "Khal Restaurant",
+     "lat": 31.95584,
+     "lon": 35.92614,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/7125899539",
+     "name": "Konya",
+     "lat": 31.95143,
+     "lon": 35.92622,
+     "cuisine": "turkish"
+    },
+    {
+     "id": "node/2102790464",
+     "name": "Koshari Calcio",
+     "lat": 31.95516,
+     "lon": 35.91058,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/9056367217",
+     "name": "Lolita",
+     "lat": 31.95626,
+     "lon": 35.92735,
+     "cuisine": "latin american"
+    },
+    {
+     "id": "node/7034548085",
+     "name": "Mille Rosse",
+     "lat": 31.95634,
+     "lon": 35.92668,
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/9074160217",
+     "name": "Najla's Kitchen",
+     "lat": 31.95412,
+     "lon": 35.92948,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/3257711404",
+     "name": "Oliva",
+     "lat": 31.95702,
+     "lon": 35.92597,
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/8874868617",
+     "name": "Papaya",
+     "lat": 31.95621,
+     "lon": 35.92494,
+     "cuisine": "thai"
+    },
+    {
+     "id": "node/13306337471",
+     "name": "Pizza Nina",
+     "lat": 31.96446,
+     "lon": 35.90712,
+     "cuisine": "pizza"
+    },
+    {
+     "id": "node/7125931405",
+     "name": "Qamar Deen Restaurant",
+     "lat": 31.95143,
+     "lon": 35.92578,
+     "cuisine": "arab"
+    },
+    {
+     "id": "node/9414954417",
+     "name": "Rawan",
+     "lat": 31.95674,
+     "lon": 35.92306,
+     "cuisine": "arab"
+    },
+    {
+     "id": "node/4671703314",
+     "name": "restaurant institut",
+     "lat": 31.95598,
+     "lon": 35.92665,
+     "cuisine": "french"
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3328076970",
+     "name": "Shams el Balad",
+     "lat": 31.9506,
+     "lon": 35.92734,
+     "address": "شارع معاذ بن جبل 69",
+     "website": "https://www.shamselbalad.com/",
+     "openingHours": "10:00-24:00",
+     "cuisine": "regional, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/7133312613",
+     "name": "منارة",
+     "lat": 31.95511,
+     "lon": 35.92414,
+     "website": "https://www.manaraculture.com/",
+     "openingHours": "Mo-Sa 09:00-23:00",
+     "cuisine": "pastry, coffee",
+     "detailed": true
+    },
+    {
+     "id": "node/2530704864",
+     "name": "Books@Café",
+     "lat": 31.94802,
+     "lon": 35.93138,
+     "openingHours": "Mo-Su 09:00+",
+     "cuisine": "cake, coffee shop, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/7104098853",
+     "name": "Dimitri's Coffee",
+     "lat": 31.95647,
+     "lon": 35.9263,
+     "website": "https://dimitriscoffee.com/",
+     "cuisine": "coffee shop, cake, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/6174829044",
+     "name": "MAGENTA COFFEE AND ART HOUSE",
+     "lat": 31.9499,
+     "lon": 35.9324,
+     "address": "شارع عثمان بن عفان",
+     "openingHours": "Mo-Sa 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6130325761",
+     "name": "QahwaBLK",
+     "lat": 31.95807,
+     "lon": 35.9087,
+     "address": "Arar Street, Jabal al-Webdeh, Amman",
+     "website": "https://blk.jo/locations/training-branch/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3257711402",
+     "name": "Rumi Cafe",
+     "lat": 31.95615,
+     "lon": 35.92583,
+     "website": "https://www.facebook.com/rumicafejo",
+     "cuisine": "coffee, cake, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/9070255112",
+     "name": "Shababeek Albalad Cafe",
+     "lat": 31.95243,
+     "lon": 35.92938,
+     "address": "Prince Muhammad / Stairway 1",
+     "website": "https://www.facebook.com/Shababeek-Albalad-Cafe-%D9%85%D9%82%D9%87%D9%89-%D8%B4%D8%A8%D8%A7%D8%A8%D9%8A%D9%83-%D8%A7%D9%84%D8%A8%D9%84%D8%AF-112659777744232",
+     "cuisine": "ice cream, pizza, burger, coffee shop, sandwich, breakfast, lunch, smoothies, pasta, salad, dessert",
+     "detailed": true
+    },
+    {
+     "id": "node/9286217417",
+     "name": "1212 The Mid Coffeehouse",
+     "lat": 31.949,
+     "lon": 35.92754,
+     "address": "شارع ولي الدين يكن",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/11368391541",
+     "name": "Boho",
+     "lat": 31.95124,
+     "lon": 35.92656,
+     "address": "amman 1",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4779945121",
+     "name": "Fruit Salad",
+     "lat": 31.95114,
+     "lon": 35.91597,
+     "cuisine": "juice"
+    },
+    {
+     "id": "node/13340545223",
+     "name": "Full Moon Bubble Tea",
+     "lat": 31.95596,
+     "lon": 35.92587,
+     "cuisine": "bubble tea"
+    },
+    {
+     "id": "node/6199335286",
+     "name": "Jungle Fever",
+     "lat": 31.95803,
+     "lon": 35.91524,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/9835333500",
+     "name": "Pappa Rotti",
+     "lat": 31.96433,
+     "lon": 35.90646,
+     "website": "https://www.papparoti.ae/"
+    },
+    {
+     "id": "node/2417964227",
+     "name": "Rakwet Arab",
+     "lat": 31.95619,
+     "lon": 35.9275,
+     "cuisine": "arab"
+    },
+    {
+     "id": "node/9097542421",
+     "name": "Starbucks",
+     "lat": 31.96417,
+     "lon": 35.90894,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/12139634485",
+     "name": "ستاربكس",
+     "lat": 31.95248,
+     "lon": 35.93098,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/13306337470",
+     "name": "Arabica",
+     "lat": 31.96445,
+     "lon": 35.90659
+    },
+    {
+     "id": "node/4534895317",
+     "name": "Aristotle",
+     "lat": 31.95689,
+     "lon": 35.92538
+    },
+    {
+     "id": "way/368289201",
+     "name": "Astrolabe Coffee Downtown",
+     "lat": 31.95237,
+     "lon": 35.93122
+    },
+    {
+     "id": "node/13340545269",
+     "name": "Beanerz",
+     "lat": 31.9559,
+     "lon": 35.92266
+    },
+    {
+     "id": "node/2905529315",
+     "name": "Beit Baladna",
+     "lat": 31.95382,
+     "lon": 35.93007,
+     "address": "Nadeem Al Mallah St"
+    },
+    {
+     "id": "way/444668279",
+     "name": "Books@Cafe",
+     "lat": 31.94811,
+     "lon": 35.93139,
+     "address": "شارع عمر بن الخطاب 12"
+    },
+    {
+     "id": "node/13306239723",
+     "name": "Bun Fellows",
+     "lat": 31.96355,
+     "lon": 35.90828
+    },
+    {
+     "id": "node/6203392986",
+     "name": "Cafe alaoberg",
+     "lat": 31.95208,
+     "lon": 35.93195
+    },
+    {
+     "id": "node/9064080418",
+     "name": "Café Caché",
+     "lat": 31.95586,
+     "lon": 35.92717
+    },
+    {
+     "id": "way/548151848",
+     "name": "Cafe de Dania",
+     "lat": 31.94992,
+     "lon": 35.92431
+    },
+    {
+     "id": "node/5002858889",
+     "name": "Central Cafe",
+     "lat": 31.95257,
+     "lon": 35.93214
+    },
+    {
+     "id": "node/8874868420",
+     "name": "Chocoholic Cafe",
+     "lat": 31.95606,
+     "lon": 35.92516
+    },
+    {
+     "id": "node/8765767825",
+     "name": "Esquires Coffee",
+     "lat": 31.95699,
+     "lon": 35.92497
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/13275502201",
+     "name": "Buffalo Wings & Rings",
+     "lat": 31.95548,
+     "lon": 35.92761,
+     "address": "Paris Square 12",
+     "website": "https://amman.bwr-intl.com/",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "way/200945990",
+     "name": "Bonitas",
+     "lat": 31.95317,
+     "lon": 35.91156,
+     "address": "شارع الكلية العلمية الإسلامية",
+     "website": "https://www.bonitaamman.com/"
+    },
+    {
+     "id": "way/372323205",
+     "name": "Dali",
+     "lat": 31.95483,
+     "lon": 35.92788,
+     "address": "شارع نقولا غنما 5",
+     "openingHours": "Mo-Su 08:00-00:30"
+    },
+    {
+     "id": "node/3624798798",
+     "name": "The Corner's Pub",
+     "lat": 31.95206,
+     "lon": 35.91817,
+     "website": "https://www.facebook.com/TheCornersPub"
+    },
+    {
+     "id": "node/3267690446",
+     "name": "كوباس سنترال",
+     "lat": 31.94936,
+     "lon": 35.92304,
+     "website": "https://www.facebook.com/pages/Copas-Central/309229965897036"
+    },
+    {
+     "id": "node/4200543283",
+     "name": "Chestnut",
+     "lat": 31.95208,
+     "lon": 35.91333
+    },
+    {
+     "id": "node/3266781397",
+     "name": "Jordan Bar",
+     "lat": 31.95175,
+     "lon": 35.93234
+    },
+    {
+     "id": "node/3724628502",
+     "name": "Picadilly Pub",
+     "lat": 31.95924,
+     "lon": 35.91778
+    },
+    {
+     "id": "node/4755359582",
+     "name": "Q Restaurant",
+     "lat": 31.94909,
+     "lon": 35.92954,
+     "address": "شارع الرينبو"
+    },
+    {
+     "id": "node/7114624370",
+     "name": "Rayz Restaurant and Bar",
+     "lat": 31.95013,
+     "lon": 35.92677,
+     "address": "Shukri Sha'asha'a St 8"
+    },
+    {
+     "id": "node/11482963916",
+     "name": "Rayz Restaurant and Bar",
+     "lat": 31.95021,
+     "lon": 35.92668
+    },
+    {
+     "id": "node/5760149766",
+     "name": "Sekrab",
+     "lat": 31.94978,
+     "lon": 35.93113
+    },
+    {
+     "id": "node/3951681145",
+     "name": "أميغو",
+     "lat": 31.94922,
+     "lon": 35.923
+    },
+    {
+     "id": "node/7136538356",
+     "name": "انكل سام",
+     "lat": 31.95335,
+     "lon": 35.91251
+    },
+    {
+     "id": "node/3267690447",
+     "name": "بعد الثامنة",
+     "lat": 31.94915,
+     "lon": 35.92298
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  }
+ }
+}

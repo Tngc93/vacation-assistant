@@ -1,0 +1,1400 @@
+{
+ "version": 1,
+ "cityCode": "MLA",
+ "fetchedAt": "2026-10-16T23:52:46.869Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Malta%2C_2010_-_panoramio_-_Bengt_Nyman_%2823%29.jpg/1280px-Malta%2C_2010_-_panoramio_-_Bengt_Nyman_%2823%29.jpg",
+  "width": 1280,
+  "height": 640,
+  "author": "Bengt Nyman",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta,_2010_-_panoramio_-_Bengt_Nyman_(23).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/23352829",
+     "name": "Kon-Katidral ta' San Ġwann",
+     "lat": 35.8977,
+     "lon": 14.51262,
+     "address": "Triq San Ġwann",
+     "website": "https://stjohnscocathedral.com/",
+     "openingHours": "Mo-Fr 09:30-16:30; Sa 09:30-12:30; Su,PH off",
+     "wikipediaCount": 34
+    },
+    {
+     "id": "relation/4434917",
+     "name": "Grand Master's Palace",
+     "lat": 35.8986,
+     "lon": 14.51411,
+     "website": "https://www.heritagemalta.org/",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "relation/7905228",
+     "name": "City Gate",
+     "lat": 35.89623,
+     "lon": 14.50907,
+     "wikipediaCount": 25
+    },
+    {
+     "id": "relation/5760252",
+     "name": "Il-Berġa ta' Kastilja",
+     "lat": 35.8959,
+     "lon": 14.51136,
+     "address": "Pjazza Kastilja",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "way/54896162",
+     "name": "Forti Sant'Anġlu",
+     "lat": 35.89182,
+     "lon": 14.51821,
+     "website": "https://heritagemalta.mt/explore/fort-st-angelo/",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "relation/7893491",
+     "name": "Forti Sant'Iermu",
+     "lat": 35.90198,
+     "lon": 14.51863,
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/691542011",
+     "name": "Forti Rikażli",
+     "lat": 35.89675,
+     "lon": 14.52693,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/15684588",
+     "name": "Dar il-Mediterran għall-Konferenzi",
+     "lat": 35.8991,
+     "lon": 14.51801,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/33506206",
+     "name": "Auberge d'Italie",
+     "lat": 35.89648,
+     "lon": 14.51139,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/551701982",
+     "name": "Fort Manoel",
+     "lat": 35.90293,
+     "lon": 14.50516,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/400118202",
+     "name": "Victoria Gate",
+     "lat": 35.89598,
+     "lon": 14.51364,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/141054675",
+     "name": "Il-Qrati ta' Malta",
+     "lat": 35.89826,
+     "lon": 14.51201,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/33506481",
+     "name": "Il-Berġa ta' Bavjera",
+     "lat": 35.90153,
+     "lon": 14.51418,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2381143255",
+     "name": "Malta Memorial",
+     "lat": 35.89456,
+     "lon": 14.50782,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/352179825",
+     "name": "Cambridge Battery",
+     "lat": 35.90902,
+     "lon": 14.50967,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/339457756",
+     "name": "Garden Battery",
+     "lat": 35.90829,
+     "lon": 14.51084,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/339457757",
+     "name": "Garden Battery",
+     "lat": 35.90801,
+     "lon": 14.5114,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/153030272",
+     "name": "Il-Batterija tas-Sliema",
+     "lat": 35.91411,
+     "lon": 14.50712,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/2489082272",
+     "name": "Il-Lift tal-Barrakka",
+     "lat": 35.89432,
+     "lon": 14.51198,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/1535809746",
+     "name": "Il-Monument ta' Spencer",
+     "lat": 35.88745,
+     "lon": 14.49765,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/5590784922",
+     "name": "Auberge d’Auvergne et de Provence",
+     "lat": 35.88846,
+     "lon": 14.52258,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/5590796821",
+     "name": "Auberge de Castille et Portugal",
+     "lat": 35.8884,
+     "lon": 14.52346,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/400118196",
+     "name": "Il-Monument ta' Sir Alexander Ball",
+     "lat": 35.89749,
+     "lon": 14.51755,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "relation/3968465",
+     "name": "Archbishop's Palace",
+     "lat": 35.90073,
+     "lon": 14.51314,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/404197034",
+     "name": "Il-Gardjola",
+     "lat": 35.89071,
+     "lon": 14.51395,
+     "openingHours": "24/7"
+    },
+    {
+     "id": "node/3363135396",
+     "name": "31st March 1979 - Freedom Day",
+     "lat": 35.88717,
+     "lon": 14.521
+    },
+    {
+     "id": "node/1513473056",
+     "name": "Bastion Castille",
+     "lat": 35.88761,
+     "lon": 14.52447
+    },
+    {
+     "id": "node/1513452539",
+     "name": "Couvre de Porte",
+     "lat": 35.88546,
+     "lon": 14.52254
+    },
+    {
+     "id": "node/3363877120",
+     "name": "Dom Mintoff",
+     "lat": 35.88228,
+     "lon": 14.52087
+    },
+    {
+     "id": "node/5316661546",
+     "name": "Eks Forti Rinella",
+     "lat": 35.89431,
+     "lon": 14.53234
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/4434917",
+     "name": "Grand Master's Palace",
+     "lat": 35.8986,
+     "lon": 14.51411,
+     "website": "https://www.heritagemalta.org/",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "way/54896162",
+     "name": "Forti Sant'Anġlu",
+     "lat": 35.89182,
+     "lon": 14.51821,
+     "website": "https://heritagemalta.mt/explore/fort-st-angelo/",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/31233115",
+     "name": "National Museum of Archaeology",
+     "lat": 35.89751,
+     "lon": 14.51116,
+     "website": "https://www.heritagemalta.org/",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "way/30382084",
+     "name": "Saint James Cavalier",
+     "lat": 35.89581,
+     "lon": 14.5103,
+     "address": "Pjazza Kastilja",
+     "website": "https://stjamescavalier.com/",
+     "openingHours": "Tu-Su 09:00-21:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "relation/5760253",
+     "name": "National Museum of Fine Arts",
+     "lat": 35.89829,
+     "lon": 14.50922,
+     "website": "https://www.heritagemalta.org/",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/240871554",
+     "name": "Mużew Marittimu ta' Malta",
+     "lat": 35.88775,
+     "lon": 14.52081,
+     "website": "https://www.heritagemalta.org/museums/maritime/maritimeinfo.html",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/33506558",
+     "name": "Casa Rocca Piccola",
+     "lat": 35.89983,
+     "lon": 14.51533,
+     "address": "Triq ir-Repubblika 74",
+     "website": "https://www.casaroccapiccola.com/",
+     "openingHours": "Mo-Sa 10:00-16:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/2269130526",
+     "name": "Forti Rinella",
+     "lat": 35.89379,
+     "lon": 14.53147,
+     "website": "https://www.fortrinella.com/",
+     "openingHours": "Th-Sa 10:00-17:00; PH off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/293534848",
+     "name": "Inquisitor's Palace",
+     "lat": 35.88719,
+     "lon": 14.52248,
+     "address": "Main Gate Street",
+     "website": "https://heritagemalta.org/the-inquisitors-palace/",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2269127527",
+     "name": "Saluting Battery",
+     "lat": 35.8946,
+     "lon": 14.51255,
+     "website": "https://www.salutingbattery.com/",
+     "openingHours": "Mo-Sa 10:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/2269128025",
+     "name": "Lascaris War Rooms",
+     "lat": 35.89488,
+     "lon": 14.51278,
+     "website": "https://www.lascariswarrooms.com/",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/2269132352",
+     "name": "Malta at War Museum",
+     "lat": 35.88542,
+     "lon": 14.52238,
+     "address": "Triq Couvre Porte",
+     "website": "https://www.maltaatwarmuseum.com/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/372943057",
+     "name": "The Fortress Builders - Fortifications Interpretation Centre",
+     "lat": 35.89955,
+     "lon": 14.50906,
+     "website": "https://thefortressbuilders.weebly.com/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/3257012705",
+     "name": "Armerija tal-Palazz",
+     "lat": 35.89851,
+     "lon": 14.51434,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/4508807392",
+     "name": "L-Esplora",
+     "lat": 35.89195,
+     "lon": 14.52401,
+     "address": "Triq Marina",
+     "website": "https://www.esplora.org.mt/",
+     "openingHours": "Tu-Fr 09:30-16:00; Sa 10:30-05:00; Su 11:30-06:00"
+    },
+    {
+     "id": "way/1448581797",
+     "name": "Malta International Contemporary Art Space",
+     "lat": 35.89422,
+     "lon": 14.50073,
+     "address": "Triq Joseph Mangion",
+     "website": "https://micas.art/",
+     "openingHours": "We-Th,Sa-Su 10:00-18:00; Fr 10:00-20:00; Tu 12:00-18:00"
+    },
+    {
+     "id": "way/1509762340",
+     "name": "MICAS Vaults",
+     "lat": 35.89457,
+     "lon": 14.50084,
+     "address": "Triq Joseph Mangion",
+     "website": "https://micas.art/",
+     "openingHours": "We-Th,Sa-Su 10:00-18:00; Fr 10:00-20:00; Tu 12:00-18:00"
+    },
+    {
+     "id": "node/6220843187",
+     "name": "MUŻA - Mużew Nazzjonali tal-Arti",
+     "lat": 35.89629,
+     "lon": 14.51126,
+     "address": "Triq il-Merkanti",
+     "website": "https://muza.mt/",
+     "openingHours": "Jan-Feb: Mo,We-Su 09:00-17:00, Tu off; Mar-Oct: Mo-Su 10:00-18:00; Nov-Dec: Mo-Su 09:00-17:00"
+    },
+    {
+     "id": "node/5304879821",
+     "name": "Mużew Nazzjonali tal-Gwerra",
+     "lat": 35.90197,
+     "lon": 14.51874,
+     "website": "https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/",
+     "openingHours": "Mo-Su 10:00-18:00; Dec 24-Dec 25 off; Dec 31-Jan 01 off"
+    },
+    {
+     "id": "node/10284966810",
+     "name": "Mużew tal-Posta ta' Malta",
+     "lat": 35.89868,
+     "lon": 14.51469,
+     "address": "Triq l-Arċisqof 135",
+     "website": "https://www.maltapostalmuseum.com/",
+     "openingHours": "Mo-Fr 10:00-16:00; Sa 10:00-14:00; Su,PH OFF"
+    },
+    {
+     "id": "node/11898372172",
+     "name": "Spazju Kreattiv",
+     "lat": 35.89561,
+     "lon": 14.51044,
+     "address": "Misraħ Kastilja",
+     "website": "https://kreattivita.org/en/",
+     "openingHours": "Tu-Fr 09:00-21:00; Sa-Su 10:00-21:00"
+    },
+    {
+     "id": "node/12735970670",
+     "name": "Art by the Seaside Art Gallery",
+     "lat": 35.88753,
+     "lon": 14.51818,
+     "address": "Triq il-Mina tax-Xatt 16",
+     "website": "https://seasideart.com.mt/"
+    },
+    {
+     "id": "node/3362500863",
+     "name": "Bir Mula Heritage",
+     "lat": 35.883,
+     "lon": 14.52367,
+     "website": "https://www.birmula.com/"
+    },
+    {
+     "id": "way/27577949",
+     "name": "Cathedral Museum",
+     "lat": 35.89733,
+     "lon": 14.51278,
+     "address": "Triq il-Merkanti",
+     "website": "https://stjohnscocathedral.com/"
+    },
+    {
+     "id": "node/12664527917",
+     "name": "Ghost House",
+     "lat": 35.88801,
+     "lon": 14.52385,
+     "address": "Triq il-Kwartier 15",
+     "openingHours": "Mo-Su 09:00-19:00"
+    },
+    {
+     "id": "node/13175530704",
+     "name": "Malta Time-Gun Museum",
+     "lat": 35.8953,
+     "lon": 14.51162,
+     "address": "Misraħ Kastilja",
+     "website": "https://www.wirtartna.org/maltatimegunmuseum"
+    },
+    {
+     "id": "node/14142152103",
+     "name": "Mysterium Fidei Monastery",
+     "lat": 35.90006,
+     "lon": 14.51452,
+     "address": "Triq Kristofru",
+     "website": "https://mysteriumfidei.mt/"
+    },
+    {
+     "id": "node/293534852",
+     "name": "Oratorju San Ġużepp",
+     "lat": 35.88764,
+     "lon": 14.52176,
+     "openingHours": "Mo-Su 09:30-12:00"
+    },
+    {
+     "id": "way/1246898828",
+     "name": "The Norman House",
+     "lat": 35.88812,
+     "lon": 14.52321,
+     "openingHours": "Mo-Su 08:30-17:00"
+    },
+    {
+     "id": "node/10284301909",
+     "name": "Underground Valletta",
+     "lat": 35.89707,
+     "lon": 14.51266,
+     "address": "Triq il-Merkanti",
+     "website": "https://heritagemalta.mt/explore/underground-valletta/"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4692646990",
+     "name": "Kalkara",
+     "lat": 35.88799,
+     "lon": 14.52902
+    },
+    {
+     "id": "node/12974234801",
+     "name": "Panoramic View of Valetta",
+     "lat": 35.90566,
+     "lon": 14.51291
+    },
+    {
+     "id": "node/5366882521",
+     "name": "Tigné Point Beach",
+     "lat": 35.90603,
+     "lon": 14.51442
+    },
+    {
+     "id": "node/7129244686",
+     "name": "Valletta view",
+     "lat": 35.90262,
+     "lon": 14.50595
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3257222384",
+     "name": "67 Kapitali",
+     "lat": 35.89955,
+     "lon": 14.51252,
+     "address": "Triq l-Ifran 67",
+     "website": "http://www.67kapitali.com/",
+     "openingHours": "Mo-Tu 17:00-23:00; We 12:00-23:00; Th-Fr 12:00-24:00; Sa 12:00-01:00; Su 12:00-24:00",
+     "cuisine": "italian, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/11586933974",
+     "name": "Agora Restaurant by Halo",
+     "lat": 35.89746,
+     "lon": 14.49377,
+     "address": "Triq Ix-Xatt Ta' Ta' Xbiex",
+     "website": "https://www.facebook.com/agorarestaurantmalta/",
+     "openingHours": "Mo-Su 11:00-01:00",
+     "cuisine": "mediterranean, turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/13167935895",
+     "name": "ALWAN Grill",
+     "lat": 35.8979,
+     "lon": 14.49394,
+     "address": "Triq Abate Rigord",
+     "website": "https://alwan.mt/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/6799762216",
+     "name": "AYU The Travelers Kitchen",
+     "lat": 35.90447,
+     "lon": 14.49566,
+     "address": "The Strand",
+     "website": "https://ayu.mt/",
+     "openingHours": "Mo-Su 10:00-01:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/2485598065",
+     "name": "Boa Steak and Lobster House",
+     "lat": 35.88817,
+     "lon": 14.52056,
+     "address": "Ix-Xatt tal-Birgu",
+     "website": "https://www.facebook.com/BoaMalta",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "steak house, seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/12639768515",
+     "name": "Butler's Diner",
+     "lat": 35.88418,
+     "lon": 14.52079,
+     "website": "https://www.sevenrooms.com/explore/butlers/reservations/create/search/",
+     "openingHours": "Tu-Su 12:00-23:00",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "way/454633767",
+     "name": "Compass Lounge",
+     "lat": 35.9119,
+     "lon": 14.50699,
+     "address": "Triq it-Torri",
+     "website": "https://thecompasslounge.com/",
+     "openingHours": "Mo-Su 07:00-02:00",
+     "cuisine": "burger, pizza, sandwich, italian, seafood, fish and chips, fish, pasta, salad, coffee shop, ice cream, cake, dessert",
+     "detailed": true
+    },
+    {
+     "id": "node/12651728308",
+     "name": "Del Borgo",
+     "lat": 35.88618,
+     "lon": 14.52256,
+     "address": "Triq San Duminku 33",
+     "website": "https://delborgomalta.com/",
+     "openingHours": "Mo-Sa 06:00-24:00",
+     "cuisine": "meltese",
+     "detailed": true
+    },
+    {
+     "id": "node/5435838854",
+     "name": "Don Berto",
+     "lat": 35.88851,
+     "lon": 14.52048,
+     "website": "https://donberto.com/",
+     "openingHours": "Mo-Tu 06:30-22:30; We-Su 12:00-15:00; 18:30-22:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/6842570566",
+     "name": "Enchante Restaurant",
+     "lat": 35.8867,
+     "lon": 14.5189,
+     "website": "https://enchante-restaurant.com/",
+     "openingHours": "We-Mo 12:00-15:30; 18:30-22:30",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/9989026317",
+     "name": "Fra Divino",
+     "lat": 35.88823,
+     "lon": 14.52053,
+     "address": "Triq l-Assedju l-Kbir 1565",
+     "website": "https://www.fradivino.com/",
+     "openingHours": "Mo-Su 10:30-22:00",
+     "cuisine": "maltese",
+     "detailed": true
+    },
+    {
+     "id": "node/7139015371",
+     "name": "Il Pirata Senglea",
+     "lat": 35.88784,
+     "lon": 14.5177,
+     "website": "https://ilpirata.com.mt/",
+     "openingHours": "Mo,We,Th 18:00-22:00; Fr,Sa,Su 12:00-15:00; 18:00-22:30",
+     "cuisine": "italian, seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/3466523846",
+     "name": "Il-Fortizza",
+     "lat": 35.9143,
+     "lon": 14.50702,
+     "address": "Triq it-Torri 124",
+     "website": "https://fortizzamalta.com/",
+     "openingHours": "Mo-Sa 09:00-24:00; Su 09:00-23:30",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/4265970289",
+     "name": "Il-Ħnejja Restaurant",
+     "lat": 35.88713,
+     "lon": 14.51862,
+     "address": "Xatt Juan B. Azopardo 14",
+     "website": "https://www.facebook.com/Hnejja",
+     "openingHours": "Tu-Sa 11:30-15:00; 18:00-22:30; Su 11:00-16:30",
+     "cuisine": "maltese",
+     "detailed": true
+    },
+    {
+     "id": "node/6943208385",
+     "name": "Il-Malti",
+     "lat": 35.9081,
+     "lon": 14.50057,
+     "address": "The Strand 96",
+     "website": "https://il-malti.com/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/6600887774",
+     "name": "JuFu Asian Restaurant",
+     "lat": 35.8883,
+     "lon": 14.51734,
+     "address": "Triq ix-Xatt Juan B. Azopardo 24",
+     "website": "https://www.facebook.com/jufuasian/",
+     "openingHours": "Mo-Su 11:30-15:30; 17:30-23:30",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/5041166921",
+     "name": "LaPira Maltese Kitchen",
+     "lat": 35.89742,
+     "lon": 14.51324,
+     "address": "Triq il-Merkanti 35",
+     "website": "http://www.facebook.com/lapiraValletta",
+     "openingHours": "Mo-Fr 10:00-21:00; Sa 09:00-16:00; Su off",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "way/1184681563",
+     "name": "Mason's Bistro",
+     "lat": 35.91345,
+     "lon": 14.50694,
+     "address": "Triq it-Torri",
+     "website": "https://www.tripadvisor.com/Restaurant_Review-g190327-d7079993-Reviews-Mason_s_Bistro-Sliema_Island_of_Malta.html",
+     "openingHours": "Mo-Sa 07:00-01:00; Su 07:00-24:00",
+     "cuisine": "barbecue, burger, fish, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/4421946090",
+     "name": "Nan Yuan",
+     "lat": 35.89016,
+     "lon": 14.50798,
+     "address": "Xatt Pinto 14",
+     "website": "https://www.nanyuanmalta.com/",
+     "openingHours": "Mo off; Tu-Sa 19:00-22:30; Su 12:00-15:00,19:00-23:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/10303519709",
+     "name": "Opa!",
+     "lat": 35.90853,
+     "lon": 14.50646,
+     "address": "Triq Ix-Xatt 163",
+     "website": "https://opamalta.com/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "cuisine": "fish, greek, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/6765235985",
+     "name": "Posh Turkish",
+     "lat": 35.90607,
+     "lon": 14.49714,
+     "address": "Triq Sir Frederick Ponsonby",
+     "website": "https://www.posh.com.mt/",
+     "openingHours": "Mo-Su 09:00-03:00",
+     "cuisine": "balkan, burger, cake, chicken, coffee shop, donut, grill, kebab, pizza, sausage, tea, turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/2803684544",
+     "name": "Sakura",
+     "lat": 35.91326,
+     "lon": 14.50658,
+     "address": "Tower Road 122",
+     "website": "https://www.sakura.com.mt/",
+     "openingHours": "Mo-Su 09:00-24:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/7037041186",
+     "name": "South Street Lounge",
+     "lat": 35.89722,
+     "lon": 14.50994,
+     "address": "Triq Nofsinhar 11",
+     "website": "https://www.facebook.com/southstreetvalletta",
+     "openingHours": "Fr 07:00-23:00; Mo-Th 07:00-20:00; Sa 08:00-23:00",
+     "cuisine": "italian, mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/681242456",
+     "name": "Ta' Kris",
+     "lat": 35.90904,
+     "lon": 14.50643,
+     "address": "Sqaq Fawwara 80",
+     "website": "https://www.takrisrestaurant.com/",
+     "openingHours": "Mo-Su 12:30-23:30",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/6659782485",
+     "name": "Tal-Petut Restaurant",
+     "lat": 35.88758,
+     "lon": 14.52294,
+     "address": "Triq Pacifiku Scicluna 20",
+     "website": "https://www.talpetut.com/",
+     "openingHours": "Mo-Sa 18:30-22:00",
+     "cuisine": "maltese",
+     "detailed": true
+    },
+    {
+     "id": "node/12651726180",
+     "name": "Taste of Vietnam",
+     "lat": 35.88683,
+     "lon": 14.52318,
+     "address": "Triq Alessandru VII 24",
+     "website": "https://www.facebook.com/tasteofvietnam.asiancuisine",
+     "openingHours": "Tu-Sa 13:00-22:00; Su 11:00-18:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/12640523800",
+     "name": "Tasty Bites",
+     "lat": 35.88355,
+     "lon": 14.52107,
+     "website": "https://www.facebook.com/TastyBites.mt/",
+     "openingHours": "Mo-Fr 17:00-22:00; Sa-Su 10:00-22:00",
+     "cuisine": "filipino",
+     "detailed": true
+    },
+    {
+     "id": "node/6029375986",
+     "name": "Terrace Restaurant Sliema",
+     "lat": 35.90662,
+     "lon": 14.50931,
+     "address": "Ix-Xatt ta' Tigné",
+     "website": "https://terracerestaurant.mt/",
+     "openingHours": "Mo-Su 09:00-23:05",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/11005353463",
+     "name": "The Chophouse",
+     "lat": 35.90586,
+     "lon": 14.51275,
+     "website": "https://chophouse.com.mt/",
+     "openingHours": "Mo-Sa 19:00-23:00; Su 12:00-15:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/11591855288",
+     "name": "The Wild West Bar and Grill",
+     "lat": 35.88529,
+     "lon": 14.52129,
+     "address": "Triq l-Assedju l-Kbir",
+     "website": "https://thewildwest.com.mt/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "cuisine": "international",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/12642186385",
+     "name": "Aghmilli Kafe",
+     "lat": 35.88346,
+     "lon": 14.52104,
+     "address": "Sqaq Santa Tereża",
+     "website": "https://www.facebook.com/aghmillikafe/",
+     "openingHours": "Mo-Su 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11001354245",
+     "name": "Busy Bee",
+     "lat": 35.90907,
+     "lon": 14.50343,
+     "address": "Triq Ix-Xatt 38",
+     "website": "https://busybee.com.mt/",
+     "openingHours": "08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5107239721",
+     "name": "LOT61",
+     "lat": 35.89785,
+     "lon": 14.51416,
+     "address": "Triq it-Teatru l-Antik 30",
+     "website": "https://www.lotsixtyonecoffeemalta.com/",
+     "openingHours": "Mo-Fr 07:30-18:00; Sa,Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4344290327",
+     "name": "Babel Bistro",
+     "lat": 35.8991,
+     "lon": 14.51432,
+     "address": "Triq l-Arċisqof 120",
+     "website": "https://babelvalletta.com/",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/12639768514",
+     "name": "Bella Sicilia",
+     "lat": 35.88441,
+     "lon": 14.52085,
+     "openingHours": "Mo-Su 09:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3583546190",
+     "name": "Belt is-Sebħ Canteen",
+     "lat": 35.89541,
+     "lon": 14.50416,
+     "openingHours": "06:30-16:00",
+     "cuisine": "fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/2334290384",
+     "name": "Cafe du Brazil",
+     "lat": 35.88826,
+     "lon": 14.52219,
+     "website": "https://www.facebook.com/pages/Cafe-Du-Brazil-Birgu/148177598583671",
+     "openingHours": "Mo-Su 07:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/369663057",
+     "name": "Café Jubilee",
+     "lat": 35.89886,
+     "lon": 14.51211,
+     "address": "Triq Santa Luċija 125",
+     "website": "https://cafejubilee.com/",
+     "cuisine": "mediterranean, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/12639615366",
+     "name": "Café Rouge",
+     "lat": 35.88171,
+     "lon": 14.52052,
+     "openingHours": "Mo-Su 08:00-24:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11211920137",
+     "name": "COFFEE & strangers Espresso Bar",
+     "lat": 35.91039,
+     "lon": 14.49755,
+     "address": "Triq Manwel Dimech 267",
+     "openingHours": "Mo-Th 08:00-15:00; Fr 08:00-15:00,18:00-22:00; Sa 08:00-17:00; Su 09:00-13:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11215176238",
+     "name": "Coffee Circus Lisboa",
+     "lat": 35.89686,
+     "lon": 14.5127,
+     "address": "Triq San Ġwann 106D",
+     "openingHours": "Mo-Sa 08:30-22:00; Su 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/12981977878",
+     "name": "Coffee Fellows",
+     "lat": 35.90708,
+     "lon": 14.50856,
+     "website": "https://coffeefellows.mt/",
+     "openingHours": "07:00-21:00; PH off",
+     "detailed": true
+    },
+    {
+     "id": "node/3138986654",
+     "name": "Costa",
+     "lat": 35.89863,
+     "lon": 14.51234,
+     "openingHours": "Mo-Fr 07:00-21:30; Sa 08:00-21:30; Su 09:00-21:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/14080888902",
+     "name": "Five Beans Valetta",
+     "lat": 35.89898,
+     "lon": 14.51191,
+     "openingHours": "Mo-Fr 07:30-17:00; Sa 08:30-15:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3344204797",
+     "name": "Hammett's Gastro Bar",
+     "lat": 35.90817,
+     "lon": 14.50691,
+     "website": "https://www.hammettsgastrobar.com/",
+     "openingHours": "Mo-Th 17:00-23:00; Fr 00:00-23:00; Sa-Su 11:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12013063069",
+     "name": "Kir Royal Café",
+     "lat": 35.8961,
+     "lon": 14.51234,
+     "address": "Triq San Pawl 337",
+     "openingHours": "Mo-Fr 06:30-15:30",
+     "cuisine": "bagel, cake, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/11645713893",
+     "name": "La Caffetteria Siciliana",
+     "lat": 35.89064,
+     "lon": 14.50606,
+     "address": "Triq San Tumas 14",
+     "openingHours": "Mo-Sa 07:00-18:00",
+     "cuisine": "coffee shop, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/12642212131",
+     "name": "Seamen's",
+     "lat": 35.88266,
+     "lon": 14.52089,
+     "openingHours": "Mo-Sa 05:00-15:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/13964436918",
+     "name": "Snug Café",
+     "lat": 35.89793,
+     "lon": 14.51513,
+     "openingHours": "Mo-Su 06:30-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10284656109",
+     "name": "Starbucks",
+     "lat": 35.89709,
+     "lon": 14.51057,
+     "address": "Republic Street 300",
+     "openingHours": "Mo-Su 07:30-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10816696916",
+     "name": "Starbucks",
+     "lat": 35.91213,
+     "lon": 14.5066,
+     "address": "Tower Road 56",
+     "website": "https://www.starbucks.com/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10995169234",
+     "name": "Starbucks",
+     "lat": 35.90925,
+     "lon": 14.5051,
+     "website": "https://www.starbucks.co.uk/store-locator/65746-300269/the-strand-sliema",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10303491909",
+     "name": "Sunday In Scotland",
+     "lat": 35.89721,
+     "lon": 14.51367,
+     "address": "Triq Santa Lucija 173",
+     "website": "https://sundayinscotland.com/",
+     "openingHours": "Su-Th 07:30-20:00; Fr-Sa 08:30-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12837347701",
+     "name": "Sunday in Scotland",
+     "lat": 35.90939,
+     "lon": 14.5048,
+     "openingHours": "Mo-Su 07:30-21:30",
+     "cuisine": "cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11579057381",
+     "name": "Afro Deli & Cafe",
+     "lat": 35.90513,
+     "lon": 14.4958,
+     "cuisine": "african"
+    },
+    {
+     "id": "node/7139358556",
+     "name": "Bacino",
+     "lat": 35.88535,
+     "lon": 14.52131,
+     "openingHours": "Mo-Su 09:00-23:00"
+    },
+    {
+     "id": "node/1348991156",
+     "name": "Bookbites Cafe",
+     "lat": 35.9071,
+     "lon": 14.49817,
+     "cuisine": "international"
+    },
+    {
+     "id": "node/6329181872",
+     "name": "Brillace",
+     "lat": 35.90362,
+     "lon": 14.49487,
+     "address": "Triq il-Gżira 61",
+     "openingHours": "Mo-Sa 08:00-15:00"
+    },
+    {
+     "id": "node/8710001217",
+     "name": "Cadena",
+     "lat": 35.89746,
+     "lon": 14.51333,
+     "address": "Triq il-Merkanti 38",
+     "openingHours": "Mo-Sa 09:00-23:00; Su 09:00-17:00"
+    },
+    {
+     "id": "node/381921303",
+     "name": "Café Cordina",
+     "lat": 35.89872,
+     "lon": 14.51321,
+     "address": "Triq Ir-Repubblika 244/245",
+     "website": "https://www.caffecordina.com/"
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/6562632749",
+     "name": "1926 Beach Club",
+     "lat": 35.91098,
+     "lon": 14.50985,
+     "address": "Triq Tony Nicholl",
+     "website": "https://1926lesoleil.com/",
+     "openingHours": "PH,Mo-Su 09:30-18:30",
+     "detailed": true
+    },
+    {
+     "id": "node/5101432121",
+     "name": "Trabuxù",
+     "lat": 35.89735,
+     "lon": 14.50993,
+     "address": "Strait Street 2",
+     "website": "https://www.trabuxu.com.mt/",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/6558354107",
+     "name": "97 Notes",
+     "lat": 35.90032,
+     "lon": 14.51464,
+     "address": "Strait Street 97-98",
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/7159231287",
+     "name": "Alchemy",
+     "lat": 35.90015,
+     "lon": 14.51441,
+     "address": "steait street",
+     "website": "https://www.alchemyvalletta.com/"
+    },
+    {
+     "id": "node/4344581428",
+     "name": "Bridge Bar",
+     "lat": 35.89617,
+     "lon": 14.51357,
+     "website": "https://www.facebook.com/www.bridgebar.valletta/"
+    },
+    {
+     "id": "node/6236973586",
+     "name": "Brincellu Bar",
+     "lat": 35.88816,
+     "lon": 14.5226,
+     "address": "Triq il-Majjistral",
+     "openingHours": "We-Sa 18:30-21:30; Su 10:30-16:00"
+    },
+    {
+     "id": "node/6222667137",
+     "name": "Caffé Berry",
+     "lat": 35.90935,
+     "lon": 14.50312,
+     "address": "Triq San Duminku",
+     "openingHours": "Mo-Sa 07:30-19:00; Su 09:00-14:00"
+    },
+    {
+     "id": "node/5643696862",
+     "name": "Casa Asti",
+     "lat": 35.89573,
+     "lon": 14.51259,
+     "address": "Triq Sant'Orsola 18",
+     "website": "https://casaastimalta.com/"
+    },
+    {
+     "id": "node/5896567802",
+     "name": "Dolce Sicilia",
+     "lat": 35.91007,
+     "lon": 14.50662,
+     "address": "Triq Tigné",
+     "openingHours": "Mo-Sa 06:00-21:30"
+    },
+    {
+     "id": "node/6203084121",
+     "name": "Goldie's",
+     "lat": 35.89926,
+     "lon": 14.49077,
+     "address": "Triq Testaferrata",
+     "openingHours": "Mo-Sa 09:00-18:00"
+    },
+    {
+     "id": "node/4692258789",
+     "name": "Ġugar Hangout & Bar",
+     "lat": 35.90017,
+     "lon": 14.51577,
+     "address": "Triq ir-Repubblika 89A",
+     "openingHours": "Fr-Su 17:00-01:00; Mo-Th off"
+    },
+    {
+     "id": "node/3336268497",
+     "name": "Hole in The Wall Bar",
+     "lat": 35.91178,
+     "lon": 14.50546,
+     "address": "Triq il-Kbira 35",
+     "website": "https://holeinthewall.com.mt/"
+    },
+    {
+     "id": "node/13607492501",
+     "name": "Kaktüs Queer Bar Ta' Xbiex",
+     "lat": 35.89852,
+     "lon": 14.50037,
+     "address": "Ix-Xatt ta' Xbiex TBX 1027",
+     "openingHours": "Su, Tu-Th 15:00-01:00; Fr-Sa 15:00-02:00"
+    },
+    {
+     "id": "node/12971074701",
+     "name": "Kamy Cocktail Bar Valletta",
+     "lat": 35.8994,
+     "lon": 14.51231,
+     "openingHours": "Mo-Sa 17:00-01:00; Su 17:00-01:30"
+    },
+    {
+     "id": "node/5535655221",
+     "name": "Maori (Anshel Bar)",
+     "lat": 35.90139,
+     "lon": 14.5152,
+     "address": "Triq il-Lanċa",
+     "openingHours": "\"variable\""
+    },
+    {
+     "id": "node/6236953585",
+     "name": "Old City Pub",
+     "lat": 35.88674,
+     "lon": 14.52134,
+     "address": "Triq San Lawrenz 104",
+     "cuisine": "coffee shop, breakfast, fish and chips, burger, sandwich"
+    },
+    {
+     "id": "node/12972073501",
+     "name": "Over Grain",
+     "lat": 35.89884,
+     "lon": 14.51529,
+     "openingHours": "Tu-Sa 18:30-24:00"
+    },
+    {
+     "id": "node/3305873370",
+     "name": "Salisbury Arms",
+     "lat": 35.91221,
+     "lon": 14.50306,
+     "address": "Triq Il-Kbira 81",
+     "website": "https://www.salisburyarmspub.com/"
+    },
+    {
+     "id": "node/12651728309",
+     "name": "The Prince Bar & Lounge",
+     "lat": 35.88643,
+     "lon": 14.52257,
+     "address": "Triq il-Mina il-Kbira 38",
+     "website": "https://www.theprincebarlounge.com/"
+    },
+    {
+     "id": "node/4262863432",
+     "name": "Yard 32 Gin & Tapas Bar",
+     "lat": 35.8984,
+     "lon": 14.51161,
+     "address": "Triq id-Dejqa 32",
+     "openingHours": "We-Su 18:30-18:00+"
+    },
+    {
+     "id": "node/3354226095",
+     "name": "222 Wine Bar",
+     "lat": 35.89994,
+     "lon": 14.50888
+    },
+    {
+     "id": "node/14219158199",
+     "name": "8th December Bar",
+     "lat": 35.88245,
+     "lon": 14.52096,
+     "address": "Triq ir-Regatta"
+    },
+    {
+     "id": "node/11623001269",
+     "name": "Bar Queen Elizabeth II",
+     "lat": 35.90706,
+     "lon": 14.50915
+    },
+    {
+     "id": "node/3344204818",
+     "name": "Black Gold Saloon Malta",
+     "lat": 35.90817,
+     "lon": 14.50063,
+     "address": "Triq Ix-Xatt"
+    },
+    {
+     "id": "node/6594723085",
+     "name": "Bottega",
+     "lat": 35.89775,
+     "lon": 14.51358,
+     "address": "Triq il-Merkanti 200"
+    },
+    {
+     "id": "node/11581977711",
+     "name": "Breakwater Bar",
+     "lat": 35.89949,
+     "lon": 14.51662
+    },
+    {
+     "id": "node/13167075967",
+     "name": "Bros Bar",
+     "lat": 35.8928,
+     "lon": 14.50375
+    },
+    {
+     "id": "node/11586958561",
+     "name": "Brown Jug",
+     "lat": 35.90394,
+     "lon": 14.49538
+    },
+    {
+     "id": "node/5648461925",
+     "name": "Café Society",
+     "lat": 35.8965,
+     "lon": 14.51303,
+     "address": "Triq San Ġwann"
+    },
+    {
+     "id": "node/7139729686",
+     "name": "Carcass",
+     "lat": 35.89892,
+     "lon": 14.51249
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  }
+ }
+}

@@ -46,6 +46,8 @@ describe("destinations data", () => {
     expect(d.lat).toBeLessThanOrEqual(90);
     expect(d.lon).toBeGreaterThanOrEqual(-180);
     expect(d.lon).toBeLessThanOrEqual(180);
+    expect(d.radiusKm).toBeGreaterThanOrEqual(0.5);
+    expect(d.radiusKm).toBeLessThanOrEqual(5);
     expect(d.countryCode).toMatch(/^[A-Z]{2}$/);
     expect(d.countryTr).toBe(regionNames.of(d.countryCode));
     expect(currencies.has(d.currency), `${d.currency} is not an ISO 4217 code`).toBe(true);

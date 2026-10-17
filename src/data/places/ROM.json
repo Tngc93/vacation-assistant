@@ -1,0 +1,1789 @@
+{
+ "version": 1,
+ "cityCode": "ROM",
+ "fetchedAt": "2026-10-16T23:15:21.311Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/1280px-Rome_Skyline_%288012016319%29.jpg",
+  "width": 1280,
+  "height": 853,
+  "author": "Bert Kaufmann from Roermond, Netherlands",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Rome_Skyline_(8012016319).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/1834818",
+     "name": "Kolezyum",
+     "localName": "Colosseo",
+     "lat": 41.89026,
+     "lon": 12.49237,
+     "address": "Piazza del Colosseo",
+     "website": "https://colosseo.it/",
+     "openingHours": "Mar 29-Sep 30 08:30-19:15; Oct 01-Oct 24 08:30-18:30; Oct 25-Feb 28 08:30-16:30; Jan 01 off; Dec 25 off",
+     "wikipediaCount": 143
+    },
+    {
+     "id": "way/244159210",
+     "name": "Basilica di San Pietro",
+     "lat": 41.90216,
+     "lon": 12.45371,
+     "address": "Piazza San Pietro",
+     "website": "https://www.basilicasanpietro.va/it/",
+     "openingHours": "Mo-Su 07:00-20:00",
+     "wikipediaCount": 129
+    },
+    {
+     "id": "way/215289671",
+     "name": "Cappella Sistina",
+     "lat": 41.90293,
+     "lon": 12.4544,
+     "website": "https://m.museivaticani.va/content/museivaticani-mobile/it/collezioni/musei/cappella-sistina/storia-cappella-sistina.html",
+     "openingHours": "Mo-Sa 08:00-20:00",
+     "wikipediaCount": 87
+    },
+    {
+     "id": "relation/3374342",
+     "name": "Pantheon",
+     "lat": 41.89863,
+     "lon": 12.47683,
+     "address": "Piazza della Rotonda",
+     "website": "https://pantheonroma.org/",
+     "openingHours": "Mo-Sa 08:30-19:15; Su 09:00-17:45",
+     "wikipediaCount": 79
+    },
+    {
+     "id": "relation/1841080",
+     "name": "Forum Romanum",
+     "lat": 41.89168,
+     "lon": 12.48708,
+     "wikipediaCount": 68
+    },
+    {
+     "id": "relation/1849832",
+     "name": "Piazza del Foro",
+     "lat": 41.89236,
+     "lon": 12.48515,
+     "wikipediaCount": 68
+    },
+    {
+     "id": "relation/13448560",
+     "name": "Fontana di Trevi",
+     "lat": 41.90096,
+     "lon": 12.48328,
+     "wikipediaCount": 66
+    },
+    {
+     "id": "relation/10044166",
+     "name": "Piazza San Pietro",
+     "lat": 41.90223,
+     "lon": 12.45736,
+     "wikipediaCount": 63
+    },
+    {
+     "id": "relation/36444",
+     "name": "Basilica di San Giovanni in Laterano",
+     "lat": 41.88576,
+     "lon": 12.50559,
+     "address": "Piazza di San Giovanni in Laterano",
+     "website": "https://www.basilicasangiovanni.va/",
+     "openingHours": "Mo-Su 07:00-18:30",
+     "wikipediaCount": 61
+    },
+    {
+     "id": "node/365475871",
+     "name": "Colle Palatino",
+     "lat": 41.88931,
+     "lon": 12.48711,
+     "openingHours": "Jan 02-Feb 15,Oct 28-Dec 31 08:30-16:30; Jan 16-Mar 15 08:30-17:00; Mar 16-24 08:30-17:30; Mar 25-Aug 31 08:30-19:15; Sep 01-30 08:30-19:00",
+     "wikipediaCount": 61
+    },
+    {
+     "id": "relation/49690",
+     "name": "Palatium Apostolicum",
+     "lat": 41.90325,
+     "lon": 12.45531,
+     "wikipediaCount": 59
+    },
+    {
+     "id": "way/8035487",
+     "name": "Sant'Angelo Kalesi",
+     "localName": "Castel Sant’Angelo",
+     "lat": 41.90308,
+     "lon": 12.46633,
+     "openingHours": "Mo-Su 09:00-19:30",
+     "wikipediaCount": 56
+    },
+    {
+     "id": "way/131564482",
+     "name": "Santa Maria Maggiore Bazilikası",
+     "localName": "Basilica di Santa Maria Maggiore",
+     "lat": 41.89761,
+     "lon": 12.49846,
+     "address": "Piazza di Santa Maria Maggiore",
+     "website": "https://www.basilicasantamariamaggiore.va/",
+     "openingHours": "Mo-Su 07:00-19:00",
+     "wikipediaCount": 54
+    },
+    {
+     "id": "relation/3376015",
+     "name": "Colonna di Traiano",
+     "lat": 41.89581,
+     "lon": 12.48427,
+     "wikipediaCount": 54
+    },
+    {
+     "id": "relation/2707110",
+     "name": "Palazzo del Quirinale",
+     "lat": 41.90066,
+     "lon": 12.48761,
+     "address": "Piazza del Quirinale",
+     "website": "https://palazzo.quirinale.it/",
+     "openingHours": "Tu-We, Fr-Su 09:30-14:30",
+     "wikipediaCount": 51
+    },
+    {
+     "id": "relation/11384819",
+     "name": "Circo Massimo",
+     "lat": 41.886,
+     "lon": 12.4857,
+     "wikipediaCount": 51
+    },
+    {
+     "id": "way/23590989",
+     "name": "Arco di Costantino",
+     "lat": 41.88976,
+     "lon": 12.49067,
+     "wikipediaCount": 47
+    },
+    {
+     "id": "way/4247138",
+     "name": "Piazza Navona",
+     "lat": 41.89893,
+     "lon": 12.4731,
+     "wikipediaCount": 45
+    },
+    {
+     "id": "relation/1754380",
+     "name": "Foro di Traiano",
+     "lat": 41.89516,
+     "lon": 12.48517,
+     "website": "https://www.mercatiditraiano.it/",
+     "openingHours": "09:30-19:30",
+     "wikipediaCount": 44
+    },
+    {
+     "id": "relation/1849830",
+     "name": "Altare della Patria",
+     "lat": 41.8947,
+     "lon": 12.48318,
+     "wikipediaCount": 42
+    },
+    {
+     "id": "way/23913953",
+     "name": "Arco di Tito",
+     "lat": 41.89067,
+     "lon": 12.48858,
+     "wikipediaCount": 42
+    },
+    {
+     "id": "way/201882369",
+     "name": "Basilica di San Pietro in Vincoli",
+     "lat": 41.89386,
+     "lon": 12.49316,
+     "address": "Piazza di San Pietro in Vincoli 4/a",
+     "website": "http://www.lateranensi.org/sanpietroinvincoli/",
+     "openingHours": "08:00-12:30,15:00-18:00; Mar Su[-1]-Oct Su[-1] -1 day 08:00-12:30,15:00-19:00",
+     "wikipediaCount": 41
+    },
+    {
+     "id": "relation/13476232",
+     "name": "Terme di Caracalla",
+     "lat": 41.87891,
+     "lon": 12.49239,
+     "website": "https://www.coopculture.it/heritage.cfm?id=6",
+     "openingHours": "Tu-Su 10:00-19:15",
+     "wikipediaCount": 41
+    },
+    {
+     "id": "way/201291264",
+     "name": "Ara Pacis Augustae",
+     "lat": 41.90615,
+     "lon": 12.4755,
+     "wikipediaCount": 39
+    },
+    {
+     "id": "way/134400816",
+     "name": "Ispanyol merdivenleri",
+     "localName": "Scalinata della Trinità dei Monti",
+     "lat": 41.90607,
+     "lon": 12.48281,
+     "wikipediaCount": 39
+    },
+    {
+     "id": "relation/2752093",
+     "name": "Palazzo Lateranense",
+     "lat": 41.88656,
+     "lon": 12.50574,
+     "website": "https://www.palazzolateranense.com/",
+     "wikipediaCount": 38
+    },
+    {
+     "id": "relation/13474926",
+     "name": "Piazza di Spagna",
+     "lat": 41.90567,
+     "lon": 12.48228,
+     "wikipediaCount": 38
+    },
+    {
+     "id": "relation/1842062",
+     "name": "Tempio di Vesta",
+     "lat": 41.89169,
+     "lon": 12.4862,
+     "wikipediaCount": 38
+    },
+    {
+     "id": "way/49824161",
+     "name": "Arco di Settimio Severo",
+     "lat": 41.89283,
+     "lon": 12.48474,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "way/201735339",
+     "name": "Colonna di Marco Aurelio",
+     "lat": 41.90085,
+     "lon": 12.47999,
+     "wikipediaCount": 37
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/112137587",
+     "name": "Musei Vaticani",
+     "lat": 41.90627,
+     "lon": 12.45274,
+     "website": "https://www.museivaticani.va/",
+     "openingHours": "Mo-Sa 09:00-18:00; Su 09:00-14:00",
+     "wikipediaCount": 64
+    },
+    {
+     "id": "way/255959482",
+     "name": "Musei Vaticani",
+     "lat": 41.90493,
+     "lon": 12.45462,
+     "website": "https://www.museivaticani.va/",
+     "wikipediaCount": 64
+    },
+    {
+     "id": "node/1440405490",
+     "name": "Galleria Borghese",
+     "lat": 41.91411,
+     "lon": 12.49211,
+     "address": "Piazzale Scipione Borghese 5",
+     "website": "https://galleriaborghese.beniculturali.it/",
+     "openingHours": "Tu-Su 09:00-19:00",
+     "wikipediaCount": 45
+    },
+    {
+     "id": "relation/9909127",
+     "name": "Musei Capitolini",
+     "lat": 41.89289,
+     "lon": 12.48276,
+     "website": "https://www.museicapitolini.org/",
+     "openingHours": "Mo-Su 09:30-19:30; Dec 24,31 09:30-14:00; Jan 01 off; May 01 off; Dec 25 off",
+     "wikipediaCount": 45
+    },
+    {
+     "id": "node/10774102107",
+     "name": "Stanze di Raffaello",
+     "lat": 41.9033,
+     "lon": 12.45454,
+     "website": "https://www.museivaticani.va/content/museivaticani/es/collezioni/musei/stanze-di-raffaello.html",
+     "wikipediaCount": 34
+    },
+    {
+     "id": "node/2122709063",
+     "name": "Galleria Nazionale d'Arte Antica",
+     "lat": 41.90333,
+     "lon": 12.48987,
+     "address": "Via delle Quattro Fontane 13",
+     "website": "https://www.barberinicorsini.org/",
+     "openingHours": "Tu-Su 08:30-19:00; Mo off; Jan 1 off; Dec 25 off",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "relation/2980622",
+     "name": "Galleria Nazionale d'Arte Moderna e Contemporanea",
+     "lat": 41.91724,
+     "lon": 12.48232,
+     "address": "Viale delle Belle Arti 131",
+     "website": "https://lagallerianazionale.com/",
+     "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 01 off; Dec 25 off",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "node/706793341",
+     "name": "Palazzo Doria Pamphilj",
+     "lat": 41.89782,
+     "lon": 12.48156,
+     "address": "Via del Corso 305",
+     "website": "https://www.dopart.it/",
+     "openingHours": "Mo-Th 09:00-19:00; Fr-Su 10:00-20:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "relation/1849827",
+     "name": "Carcere Mamertino",
+     "lat": 41.89314,
+     "lon": 12.48458,
+     "openingHours": "09:00-17:00",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "node/13460785710",
+     "name": "Villa Giulia Ulusal Etrüsk Müzesi",
+     "localName": "Museo Nazionale Etrusco di Villa Giulia",
+     "lat": 41.91823,
+     "lon": 12.4781,
+     "address": "Piazzale di Villa Giulia 9",
+     "website": "https://www.museoetru.it/",
+     "openingHours": "Tu-Su 09:00-20:00; Mo off; Jan 01 off; Dec 25 off; easter +1 day open",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "node/4891858022",
+     "name": "Accademia di Francia a Roma",
+     "lat": 41.90827,
+     "lon": 12.48272,
+     "website": "https://www.villamedici.it/",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "node/1649776329",
+     "name": "Galleria Colonna",
+     "lat": 41.89745,
+     "lon": 12.48484,
+     "address": "Via della Pilotta 17",
+     "website": "https://www.galleriacolonna.it/",
+     "openingHours": "Sa 09:00-13:15",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "node/2296913458",
+     "name": "Stadio di Domiziano",
+     "lat": 41.9002,
+     "lon": 12.47256,
+     "address": "Via di Tor Sanguigna 3",
+     "website": "https://stadiodomiziano.com/",
+     "openingHours": "Mo-Fr 10:00-19:00, Su 10:00-19:00; Sa 10:00-20:00",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "node/3612947728",
+     "name": "San Giovanni",
+     "lat": 41.88532,
+     "lon": 12.50993,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/132581385",
+     "name": "Casa di Augusto",
+     "lat": 41.88857,
+     "lon": 12.48533,
+     "wikipediaCount": 16
+    },
+    {
+     "id": "relation/1391821",
+     "name": "MACRO - Museo d'Arte Contemporanea di Roma",
+     "lat": 41.91314,
+     "lon": 12.50291,
+     "address": "Via Nizza 138",
+     "website": "https://www.museomacro.it/",
+     "openingHours": "Tu,We,Th,Fr,Su 12:00-19:00; Sa 10:00-19:00; Mo off",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/51930840",
+     "name": "Palazzo delle Esposizioni",
+     "lat": 41.89957,
+     "lon": 12.49009,
+     "address": "Via Nazionale 194",
+     "website": "https://www.palazzoesposizioni.it/",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/656532697",
+     "name": "Galleria Spada",
+     "lat": 41.89389,
+     "lon": 12.4722,
+     "address": "Piazza Capo di Ferro 13",
+     "website": "https://galleriaspada.beniculturali.it/index.php?it/1/home",
+     "openingHours": "We-Mo 08:30-19:30; Tu off; May 1 off; Dec 25 off",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/35027800",
+     "name": "Pinacoteca Vaticana",
+     "lat": 41.90576,
+     "lon": 12.45279,
+     "openingHours": "Mo-Sa 08:00-17:00+",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/10074889581",
+     "name": "Museo di scultura antica Giovanni Barracco",
+     "lat": 41.8968,
+     "lon": 12.47259,
+     "website": "https://www.museobarracco.it/",
+     "openingHours": "Oct-May: Tu-Su 10:00-16:00; Dec 24,31 09:00-14:00; Jun-Sep: Tu-Su 13:00-19:00, Mo off; Mo off; Jan 01 off; May 01 off; Dec 25 off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/10774102205",
+     "name": "Galleria delle Carte Geografiche",
+     "lat": 41.90451,
+     "lon": 12.45421,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/6718428617",
+     "name": "Museo Pio Clementino",
+     "lat": 41.90655,
+     "lon": 12.45458,
+     "website": "https://www.museivaticani.va/content/museivaticani/it/collezioni/musei/museo-pio-clementino.html",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "relation/13475193",
+     "name": "Polo museale ATAC Porta San Paolo",
+     "lat": 41.87504,
+     "lon": 12.48117,
+     "address": "Via Bartolomeo Bossi 7",
+     "website": "https://www.astralspa.it/",
+     "openingHours": "Mo,We 10:00-14:00, Fr 14:00-17:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/4470099910",
+     "name": "Museo Ebraico di Roma",
+     "lat": 41.89196,
+     "lon": 12.47799,
+     "address": "Largo Stefano Gaj Tachè",
+     "openingHours": "Apr 18-20 off; Apr 25-26 off; Aug 15 off; Aug 09 off; Fr 09:00-13:15; Jan 01 off; Jun 08-09 off; Mar 20 off; May 10 off; Oct 13-14 off; Oct 19-21 off; Oct 07-08 off; Sa off; Sep 29-30 off; Su-Tu 10:00-16:15",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/1857985",
+     "name": "Museo Palatino",
+     "lat": 41.88829,
+     "lon": 12.48661,
+     "openingHours": "08:30-(sunset-01:00)",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/2408805739",
+     "name": "Museo Storico della Liberazione",
+     "lat": 41.88872,
+     "lon": 12.50635,
+     "address": "Via Tasso 145",
+     "website": "http://www.viatasso.eu/",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/3456447054",
+     "name": "Museo Boncompagni Ludovisi per le arti decorative",
+     "lat": 41.90867,
+     "lon": 12.49515,
+     "address": "Via Boncompagni 18",
+     "website": "https://direzionemuseiroma.cultura.gov.it/museo-boncompagni-ludovisi/",
+     "openingHours": "Tu-Su 09:00-18:00; Mo off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/656829698",
+     "name": "Museo di Roma",
+     "lat": 41.89728,
+     "lon": 12.47278,
+     "address": "Piazza di San Pantaleo 10",
+     "website": "https://www.museodiroma.it/",
+     "openingHours": "Tu-Su 10:00-19:00; Jan 01 11:00-19:30; Dec 24,31 10:00-14:00; Jan 01 off; Mo off; May 01 off; Dec 25 off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/4376017562",
+     "name": "Museo Nazionale del Palazzo di Venezia",
+     "lat": 41.89637,
+     "lon": 12.48153,
+     "address": "Piazza Venezia 1",
+     "website": "https://vive.cultura.gov.it/it/palazzo-venezia",
+     "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/2244843070",
+     "name": "Casa di Goethe",
+     "lat": 41.90905,
+     "lon": 12.47717,
+     "address": "Via del Corso 18",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 7
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5108555139",
+     "name": "Cupola di San Pietro",
+     "lat": 41.90217,
+     "lon": 12.45346,
+     "website": "https://www.vatican.va/various/basiliche/san_pietro/it/cupola/orari.htm",
+     "openingHours": "Mo-Su 07:30-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/649529694",
+     "name": "Balconata del Pincio",
+     "lat": 41.91109,
+     "lon": 12.47793
+    },
+    {
+     "id": "node/4829505522",
+     "name": "Belvedere Dei Salvati",
+     "lat": 41.89661,
+     "lon": 12.46162
+    },
+    {
+     "id": "node/1880658326",
+     "name": "Belvedere Niccolò Scatoli",
+     "lat": 41.889,
+     "lon": 12.4645
+    },
+    {
+     "id": "node/393180368",
+     "name": "Belvedere Romolo E Remo",
+     "lat": 41.8857,
+     "lon": 12.48496
+    },
+    {
+     "id": "node/10162305305",
+     "name": "Bosco di viale Aurelio Saffi",
+     "lat": 41.88208,
+     "lon": 12.46611
+    },
+    {
+     "id": "node/5978649686",
+     "name": "Colosseo",
+     "lat": 41.89101,
+     "lon": 12.49435
+    },
+    {
+     "id": "node/364860899",
+     "name": "Forum Romanum view",
+     "lat": 41.89246,
+     "lon": 12.48364
+    },
+    {
+     "id": "node/653947448",
+     "name": "Giardino degli Aranci",
+     "lat": 41.88543,
+     "lon": 12.47991
+    },
+    {
+     "id": "node/4798313727",
+     "name": "Isola Tiberina",
+     "lat": 41.88964,
+     "lon": 12.47923
+    },
+    {
+     "id": "node/4858500722",
+     "name": "Passeggiata del gianicolo",
+     "lat": 41.89667,
+     "lon": 12.46162
+    },
+    {
+     "id": "node/5446426922",
+     "name": "Piazza del Quirinale",
+     "lat": 41.89938,
+     "lon": 12.48627
+    },
+    {
+     "id": "node/4978038129",
+     "name": "Punto panoramico di Ponte Umberto I",
+     "lat": 41.90235,
+     "lon": 12.47141
+    },
+    {
+     "id": "node/1272283718",
+     "name": "Punto panoramico di viale della Galea",
+     "lat": 41.90634,
+     "lon": 12.45539
+    },
+    {
+     "id": "node/13094031501",
+     "name": "Stadio Palatino",
+     "lat": 41.88822,
+     "lon": 12.48826
+    },
+    {
+     "id": "node/8238431744",
+     "name": "Terrazza Augustinians",
+     "lat": 41.90099,
+     "lon": 12.45721
+    },
+    {
+     "id": "node/10082731670",
+     "name": "Terrazza Caffarelli",
+     "lat": 41.89256,
+     "lon": 12.4815
+    },
+    {
+     "id": "node/10778420069",
+     "name": "Terrazza Caffarelli",
+     "lat": 41.89233,
+     "lon": 12.48224
+    },
+    {
+     "id": "node/1001130475",
+     "name": "Terrazza del Gianicolo",
+     "lat": 41.89148,
+     "lon": 12.46139
+    },
+    {
+     "id": "node/8238431745",
+     "name": "Terrazza Ovest Hotel Paolo VI",
+     "lat": 41.90101,
+     "lon": 12.45675
+    },
+    {
+     "id": "node/1305038875",
+     "name": "Terrazza Viale del Belvedere",
+     "lat": 41.90957,
+     "lon": 12.48006
+    },
+    {
+     "id": "node/1987788474",
+     "name": "Torre del Tabularium",
+     "lat": 41.89072,
+     "lon": 12.4865
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2276044251",
+     "name": "Achilli Enoteca al Parlamento",
+     "lat": 41.90237,
+     "lon": 12.47688,
+     "address": "Via dei Prefetti 15",
+     "website": "https://achilli.restaurant/",
+     "openingHours": "Tu-Sa 10:30-22:30; Mo 10:30-20:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2149029061",
+     "name": "Antico Arco",
+     "lat": 41.88827,
+     "lon": 12.46118,
+     "address": "Piazzale Aurelio 7",
+     "website": "https://www.anticoarco.it/",
+     "openingHours": "We-Mo 12:00-00:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2276143197",
+     "name": "Armando al Pantheon",
+     "lat": 41.89906,
+     "lon": 12.4762,
+     "address": "Salita de' Crescenzi 31",
+     "website": "https://www.armandoalpantheon.it/",
+     "openingHours": "Mo-Fr 12:30-15:00,19:00-23:00; Sa 12:30-15:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3738996307",
+     "name": "Augusto",
+     "lat": 41.89046,
+     "lon": 12.47033,
+     "address": "Piazza de' Renzi 15",
+     "website": "https://www.trattoria-romana.it/da/augusto",
+     "openingHours": "12:30-15:00; 20:00-23:00",
+     "cuisine": "italian, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2820204086",
+     "name": "Babette",
+     "lat": 41.90977,
+     "lon": 12.47831,
+     "address": "Via Margutta 1/d",
+     "website": "https://www.babetteristorante.it/",
+     "openingHours": "Tu-Su 09:00-23:00",
+     "cuisine": "italian, international, creative",
+     "detailed": true
+    },
+    {
+     "id": "node/2273987475",
+     "name": "Baccano",
+     "lat": 41.90037,
+     "lon": 12.48236,
+     "address": "Via delle Muratte 23",
+     "website": "https://www.baccanoroma.com/",
+     "openingHours": "Mo-Su 12:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/422019522",
+     "name": "Cacio e pepe",
+     "lat": 41.91529,
+     "lon": 12.46671,
+     "address": "Via Giuseppe Avezzana 11",
+     "website": "https://trattoriacacioepepeprati.com/",
+     "openingHours": "Mo-Sa 12:30-15:00, 19:30-23:00",
+     "cuisine": "italian, local",
+     "detailed": true
+    },
+    {
+     "id": "node/2399335233",
+     "name": "Canonica",
+     "lat": 41.88987,
+     "lon": 12.46971,
+     "address": "Vicolo del Piede 13A",
+     "website": "https://www.lacanonicaristorante.it/",
+     "openingHours": "Mo-Su 10:00-01:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4260252591",
+     "name": "Cantina e Cucina",
+     "lat": 41.89797,
+     "lon": 12.47162,
+     "address": "Via del Governo Vecchio 87",
+     "website": "https://www.cantinaecucina.it/",
+     "openingHours": "Mo-Su 11:00-01:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2138753806",
+     "name": "Cencio la Parolaccia",
+     "lat": 41.89045,
+     "lon": 12.46889,
+     "address": "Vicolo del Cinque 3",
+     "website": "https://cenciolaparolaccia.it/",
+     "openingHours": "Mo-Sa 20:00-24:00; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3693023670",
+     "name": "Chihana sushi restaurant",
+     "lat": 41.88226,
+     "lon": 12.47638,
+     "address": "Via Marmorata 181",
+     "website": "https://chihanaroma.com/",
+     "openingHours": "Mo-Su 12:00-15:00,19:00-00:00",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/1535130844",
+     "name": "Da Bucatino",
+     "lat": 41.88034,
+     "lon": 12.47686,
+     "address": "Via Luca della Robbia 84;86",
+     "website": "https://www.dabucatino.it/",
+     "openingHours": "Tu-Su 12:00-15:00, 19:00-23:55",
+     "cuisine": "italian, italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/301351789",
+     "name": "Da Francesco",
+     "lat": 41.89932,
+     "lon": 12.4704,
+     "address": "Piazza del Fico 29",
+     "website": "https://www.dafrancesco.it/",
+     "openingHours": "Mo-Su 12:30-16:30, 19:00-23:00",
+     "cuisine": "pasta",
+     "detailed": true
+    },
+    {
+     "id": "node/3823161166",
+     "name": "DEROMA",
+     "lat": 41.90252,
+     "lon": 12.48265,
+     "address": "Via Poli 27",
+     "website": "https://www.deromamor.com/",
+     "openingHours": "Mo-Su 08:00-01:00",
+     "cuisine": "italian, salad, pasta, grill, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2120597861",
+     "name": "EnOsteria",
+     "lat": 41.90401,
+     "lon": 12.48488,
+     "address": "Via di Capo le Case 51A",
+     "website": "https://www.enosteria.it/",
+     "openingHours": "Mo-Sa 12:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1572825942",
+     "name": "Felice a Testaccio",
+     "lat": 41.8785,
+     "lon": 12.47747,
+     "address": "Via Mastro Giorgio 29",
+     "website": "https://www.feliceatestaccio.com/",
+     "openingHours": "Mo-Su 12:30-15:30, 19:00-23:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4173975522",
+     "name": "Gainn",
+     "lat": 41.90381,
+     "lon": 12.50331,
+     "address": "Via dei Mille 18",
+     "website": "http://www.gainnrome.com/",
+     "openingHours": "Mo-Sa 12:15-15:00,18:15-21:30",
+     "cuisine": "korean",
+     "detailed": true
+    },
+    {
+     "id": "node/2138746280",
+     "name": "Glass Hostaria",
+     "lat": 41.89051,
+     "lon": 12.46919,
+     "address": "Vicolo del Cinque 58",
+     "website": "https://glasshostaria.it/",
+     "openingHours": "We-Fr 19:30-22:30; Sa-Su 12:30-15:00, 19:30-22:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1688847325",
+     "name": "Gran Caffe Martini & Rossi",
+     "lat": 41.88971,
+     "lon": 12.49416,
+     "website": "https://www.caffemartiniroma.com/",
+     "openingHours": "Mo-Su 08:30-01:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2244914145",
+     "name": "Gregory's Live Jazz & Dinner Club",
+     "lat": 41.90427,
+     "lon": 12.48511,
+     "address": "Via Gregoriana 54",
+     "website": "https://www.gregorysjazz.com/",
+     "openingHours": "Mo 11:00-16:30; Tu-Su 11:00-02:00",
+     "cuisine": "international, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2611978494",
+     "name": "Hostaria Cannavota",
+     "lat": 41.88761,
+     "lon": 12.50606,
+     "address": "Piazza di San Giovanni in Laterano 20",
+     "website": "https://www.cannavota.it/",
+     "openingHours": "We-Su 00:45-15:00,19:45-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1559435023",
+     "name": "I Quattro Mori",
+     "lat": 41.89812,
+     "lon": 12.4559,
+     "address": "Via di Santa Maria alle Fornaci 8",
+     "website": "http://www.iquattromorihostaria.com/food-gallery.html",
+     "openingHours": "Tu-Su 12:00-15:00,19:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/550325597",
+     "name": "Il Baffetto",
+     "lat": 41.8983,
+     "lon": 12.47035,
+     "address": "Via del Governo Vecchio 114",
+     "website": "https://www.pizzeriabaffetto.it/",
+     "openingHours": "Mo-Su 12:00-15:00, 18:00-00:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2274383598",
+     "name": "Il Convivio Troiani",
+     "lat": 41.90153,
+     "lon": 12.47252,
+     "address": "Vicolo dei Soldati 31",
+     "website": "http://www.ilconviviotroiani.com/",
+     "openingHours": "Mo-Sa 19:30-23:00; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3101360995",
+     "name": "Il Vero Alfredo",
+     "lat": 41.90589,
+     "lon": 12.47728,
+     "address": "Piazza Augusto Imperatore 30",
+     "website": "https://alfredo-roma.it/",
+     "openingHours": "Mo-Su 12:30-15:30, 19:30-23:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1545965950",
+     "name": "Ippokrates",
+     "lat": 41.90901,
+     "lon": 12.49837,
+     "address": "Via Piave 20",
+     "website": "https://www.ippokrates.it/",
+     "openingHours": "Tu-Fr 12:00-15:00,18:00-23:00; Sa 18:00-23:00; Su 12:00-15:00; Mo off",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/3178411665",
+     "name": "Isola della Pizza",
+     "lat": 41.90841,
+     "lon": 12.45712,
+     "address": "Via degli Scipioni 45",
+     "website": "http://isoladellapizza.com/",
+     "openingHours": "Th-Tu 12:30-15:00,19:30-24:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2959462937",
+     "name": "Ivo a Trastevere",
+     "lat": 41.88813,
+     "lon": 12.47109,
+     "address": "Via di San Francesco a Ripa 158",
+     "website": "https://ivoatrastevere.it/",
+     "openingHours": "Mo-Sa 18:00-24:30; Su 12:00-15:30, 18:00-24:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2269519020",
+     "name": "Jaipur",
+     "lat": 41.88626,
+     "lon": 12.47249,
+     "address": "Via di San Francesco a Ripa 56",
+     "website": "https://www.ristorantejaipur.com/",
+     "openingHours": "Tu-Su 12:00-15:00, 19:00-00:00; Mo 19:00-00:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2140862140",
+     "name": "Kiki's Kitchen",
+     "lat": 41.87805,
+     "lon": 12.47261,
+     "address": "Via Beniamino Franklin 9",
+     "website": "https://kikiskitchen.net/",
+     "openingHours": "Mo-Su 18:00-3:00",
+     "cuisine": "regional",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4345062090",
+     "name": "Duecento Gradi",
+     "lat": 41.90645,
+     "lon": 12.45654,
+     "address": "Piazza del Risorgimento 3",
+     "website": "https://www.duecentogradi.it/",
+     "openingHours": "Mo-Th 11:00-02:00; Fr-Sa 11:00-05:00; Su 10:00-02:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4868418897",
+     "name": "écru",
+     "lat": 41.89996,
+     "lon": 12.46461,
+     "address": "Via Acciaioli 9;11;13",
+     "website": "https://www.ecrurawfood.it/",
+     "openingHours": "Su-Mo, Th-Fr 12:00-21:00; Sa 12:00-23:00",
+     "cuisine": "raw food",
+     "detailed": true
+    },
+    {
+     "id": "node/4802113122",
+     "name": "Fonte della salute",
+     "lat": 41.88775,
+     "lon": 12.47339,
+     "address": "Via Cardinale Marmaggi 2",
+     "website": "http://www.fontedellasalute.bio/",
+     "openingHours": "Mo-Su 10:00-01:00",
+     "cuisine": "italian, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4736658721",
+     "name": "Gatsby Cafè",
+     "lat": 41.89381,
+     "lon": 12.50388,
+     "address": "Piazza Vittorio Emanuele II;Piazza Vittorio Emanuele Secondo 106",
+     "website": "http://www.gatsby.cafe/",
+     "openingHours": "Mo-Th, Su 08:00-01:00; Fr, Sa 08:00-02:00",
+     "cuisine": "salad, coffee, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/4386770790",
+     "name": "Gelateria Ciampini",
+     "lat": 41.90374,
+     "lon": 12.47803,
+     "address": "Piazza di San Lorenzo in Lucina 29",
+     "website": "https://ciampini.com/",
+     "openingHours": "Mo-Sa 08:00-23:00",
+     "cuisine": "coffee shop, ice cream, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4664779090",
+     "name": "Marzapane",
+     "lat": 41.91405,
+     "lon": 12.47511,
+     "address": "Via Flaminia 64",
+     "website": "https://www.marzapaneroma.com/",
+     "openingHours": "Mo-Su 08:30-16:00",
+     "cuisine": "cake, coffee shop, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5428723777",
+     "name": "Ottavi dal 1921",
+     "lat": 41.89941,
+     "lon": 12.51574,
+     "address": "Via dei Dalmati 3;5;7",
+     "website": "https://ottavi1921.it/",
+     "openingHours": "Mo-Sa 08:00-23:00",
+     "cuisine": "pizza, regional, coffee shop, italian, dessert, pasta, cake, juice, burger, pancake",
+     "detailed": true
+    },
+    {
+     "id": "node/4418927289",
+     "name": "Pane&Vino",
+     "lat": 41.88914,
+     "lon": 12.49532,
+     "address": "Via Ostilia 10",
+     "website": "http://facebook.com/colosseopanevino",
+     "openingHours": "Mo-Su 10:30-17:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3578048539",
+     "name": "Pasticceria Dagnino",
+     "lat": 41.90323,
+     "lon": 12.49494,
+     "address": "Via Vittorio Emanuele Orlando 75",
+     "website": "https://www.pasticceriadagnino.com/",
+     "openingHours": "Mo-Su 07:00-23:00",
+     "cuisine": "cake, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5398978422",
+     "name": "Romana Street Bio Food",
+     "lat": 41.89924,
+     "lon": 12.46891,
+     "website": "https://www.romanapizza.it/",
+     "openingHours": "Mo-Sa 11:30-21:00",
+     "cuisine": "italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/261859088",
+     "name": "Sant'Eustachio",
+     "lat": 41.89825,
+     "lon": 12.47543,
+     "address": "Piazza di Sant'Eustachio 82",
+     "website": "http://www.santeustachioilcaffe.it/",
+     "openingHours": "Su-Th 07:30-01:00; Fr 07:30-01:30; Sa 07:30-02:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1987147392",
+     "name": "Trapizzino",
+     "lat": 41.89146,
+     "lon": 12.46991,
+     "address": "Piazza Trilussa 46",
+     "website": "https://trapizzino.it/",
+     "openingHours": "Su, Tu-Th 12:00-01:00; Fr-Sa 12:00-02:00; Mo 12:00-00:00",
+     "cuisine": "italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/4215519937",
+     "name": "W il Gelato",
+     "lat": 41.88053,
+     "lon": 12.50581,
+     "address": "Via Gallia 168",
+     "website": "http://www.wilgelato.com/",
+     "openingHours": "08:00-24:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/3217327590",
+     "name": "075 zerosettantacinque",
+     "lat": 41.88795,
+     "lon": 12.48394,
+     "address": "Via dei Cerchi 65",
+     "website": "https://www.075roma.com/",
+     "openingHours": "Mo-Su 11:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3140117950",
+     "name": "Antico Caffé del Moro",
+     "lat": 41.89042,
+     "lon": 12.47085,
+     "address": "Via del Moro 28",
+     "website": "https://www.anticocaffedelmoro.net/",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5987022885",
+     "name": "Aromaticus",
+     "lat": 41.89686,
+     "lon": 12.49453,
+     "address": "Via Urbana 134",
+     "website": "https://www.aromaticus-roma.com/",
+     "openingHours": "Tu-Su 11:00-21:30",
+     "detailed": true
+    },
+    {
+     "id": "node/4359128194",
+     "name": "Barnum cafe",
+     "lat": 41.89673,
+     "lon": 12.47068,
+     "address": "Via del Pellegrino 63/65",
+     "website": "https://barnumroma.com/",
+     "openingHours": "Mo-Su 08:00-15:30",
+     "detailed": true
+    },
+    {
+     "id": "node/2336909846",
+     "name": "Brancaccio Caffè",
+     "lat": 41.89366,
+     "lon": 12.50083,
+     "address": "Via Merulana 245",
+     "openingHours": "Mo-Sa 06:30-00:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5411116066",
+     "name": "Caffè Margherita",
+     "lat": 41.91319,
+     "lon": 12.50661,
+     "address": "Via Nomentana 191",
+     "openingHours": "Mo-Fr 05:30-20:30; Sa 06:00-20:30",
+     "cuisine": "cafeteria, tobacco",
+     "detailed": true
+    },
+    {
+     "id": "node/5739931623",
+     "name": "Caffetteria del Chiostro del Bramante",
+     "lat": 41.90016,
+     "lon": 12.47167,
+     "address": "Arco della Pace 5",
+     "website": "https://chiostrodelbramante.it/caffetteria-en/",
+     "openingHours": "Mo-Fr 10:00-19:00; Sa-Su 10:00-20:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1437002284",
+     "name": "Chakra Cafè",
+     "lat": 41.88912,
+     "lon": 12.47226,
+     "address": "Piazza di Santa Rufina 13",
+     "website": "https://www.chakracaferoma.com/",
+     "openingHours": "We-Mo 16:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5246084451",
+     "name": "Charro Café",
+     "lat": 41.87592,
+     "lon": 12.47618,
+     "address": "Via di Monte Testaccio 73",
+     "website": "http://charrocafe.it/",
+     "openingHours": "Th-Sa 20:30-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4455036145",
+     "name": "Cottini",
+     "lat": 41.89668,
+     "lon": 12.49913,
+     "address": "Via Merulana 287",
+     "openingHours": "Mo-Su 05:00-21:30",
+     "cuisine": "italian, sandwich, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4631804287",
+     "name": "Faro",
+     "lat": 41.91025,
+     "lon": 12.49838,
+     "address": "Via Piave 55",
+     "openingHours": "Mo-Fr 08:00-16:00; Sa,Su 08:30-16:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6198138465",
+     "name": "Friends Bar",
+     "lat": 41.88528,
+     "lon": 12.45961,
+     "address": "Via del Vascello 36b",
+     "openingHours": "Mo-Sa 05:15-20:00",
+     "cuisine": "italian, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4377698791",
+     "name": "Gelateria I Caruso",
+     "lat": 41.90789,
+     "lon": 12.49762,
+     "address": "Via Collina 13/15",
+     "openingHours": "Mo-Su 12:00-24:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4377736890",
+     "name": "Gelateria ICarusO",
+     "lat": 41.90773,
+     "lon": 12.47072,
+     "address": "Via Federico Cesi 48",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/32631124",
+     "name": "Giolitti",
+     "lat": 41.90106,
+     "lon": 12.47725,
+     "address": "Via degli Uffici del Vicario 40",
+     "openingHours": "Mo-Su 07:00-01:30",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/5411116071",
+     "name": "Il Pero",
+     "lat": 41.91446,
+     "lon": 12.50444,
+     "address": "Viale Regina Margherita 202",
+     "openingHours": "Mo-Sa 05:30-20:00",
+     "cuisine": "cafeteria",
+     "detailed": true
+    },
+    {
+     "id": "node/6057560165",
+     "name": "il grottino di san Bernardo",
+     "lat": 41.90376,
+     "lon": 12.49396,
+     "address": "Piazza San Bernardo 108",
+     "openingHours": "05:30-21:00",
+     "cuisine": "pizza",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4192923989",
+     "name": "Anima Mundi",
+     "lat": 41.88939,
+     "lon": 12.48353,
+     "address": "Via del Velabro 1",
+     "website": "https://www.animamundiroma.it/",
+     "openingHours": "Mo-Su 10:00-02:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3736269126",
+     "name": "Finn Pub",
+     "lat": 41.88249,
+     "lon": 12.45662,
+     "address": "Viale di Villa Pamphili 54/56",
+     "website": "https://www.finnpub.it/",
+     "openingHours": "Su, Tu-Th 18:00-01:00; Fr-Sa 18:00-02:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/11300371543",
+     "name": "Lana Mixology & Rooftop bar",
+     "lat": 41.87219,
+     "lon": 12.47695,
+     "address": "Via del Porto Fluviale 35",
+     "website": "https://lanarooftop.com/",
+     "openingHours": "Mo-Sa 18:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4438125791",
+     "name": "Officine San Giovanni",
+     "lat": 41.8852,
+     "lon": 12.51116,
+     "address": "Largo Brindisi 25",
+     "website": "https://www.officinesangiovannibistrot.it/",
+     "openingHours": "Mo-Th,Su 17:00-01:30, Fr,Sa 17:00-02:30",
+     "cuisine": "burger, breakfast, grill, coffee shop, friture, pasta, italian, pizza, chicken",
+     "detailed": true
+    },
+    {
+     "id": "node/11161724105",
+     "name": "Pandorum, Ludopub",
+     "lat": 41.882,
+     "lon": 12.45633,
+     "address": "Via Santa Sofia 2",
+     "website": "http://www.pandorumroma.com/ludopub.html",
+     "openingHours": "Su-Mo, We 20:00-01:00; Th-Sa 20:00-02:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/11482527484",
+     "name": "Salotto Stadlin",
+     "lat": 41.88232,
+     "lon": 12.5154,
+     "address": "Largo Vercelli 9",
+     "website": "https://www.salottostadlin.net/",
+     "openingHours": "Mo-Sa 18:00-02:00; We off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3997755066",
+     "name": "Shari Vari",
+     "lat": 41.89714,
+     "lon": 12.47632,
+     "address": "Via di Torre Argentina 78",
+     "website": "https://www.sharivari.it/",
+     "openingHours": "08:00-16:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/307961799",
+     "name": "404 Name Not Found",
+     "lat": 41.88761,
+     "lon": 12.47716,
+     "address": "Via di Santa Cecilia 31",
+     "openingHours": "Tu-Th 06:30-23:00; Fr-Su 06:30-25:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5598775186",
+     "name": "Almalu Trastavere",
+     "lat": 41.89043,
+     "lon": 12.46874,
+     "address": "Via della Scala 77",
+     "website": "https://www.facebook.com/almalu.trastevere.roma",
+     "openingHours": "Mo-Th 18:00-2:00, Fr-Su 16:00-2:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9919861981",
+     "name": "Artisan",
+     "lat": 41.89587,
+     "lon": 12.51389,
+     "website": "https://www.instagram.com/artisanbeerbar/",
+     "openingHours": "Su-Th 18:00-01:00; Fr-Sa 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12823207001",
+     "name": "Bar Celestino 1904 Ristorante & Cocktail San Lorenzo",
+     "lat": 41.89825,
+     "lon": 12.51698,
+     "address": "Via degli Ausoni 62",
+     "openingHours": "Mo-Sa 11:00-01:30",
+     "cuisine": "coffee shop, italian, local",
+     "detailed": true
+    },
+    {
+     "id": "node/257351831",
+     "name": "Bar San Calisto",
+     "lat": 41.88905,
+     "lon": 12.47074,
+     "address": "Piazza di San Calisto 3/4/5",
+     "website": "https://barsancalisto.it/",
+     "openingHours": "Mo-Su 06:30-01:30",
+     "detailed": true
+    },
+    {
+     "id": "node/5552446179",
+     "name": "Be.Re.",
+     "lat": 41.9067,
+     "lon": 12.45655,
+     "address": "Via Vespasiano 2",
+     "website": "https://be-re.eu/",
+     "openingHours": "Mo-Su 11:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7022428800",
+     "name": "Beige Roma",
+     "lat": 41.89085,
+     "lon": 12.4712,
+     "address": "Via del Politeama 13/14",
+     "website": "http://www.beige-roma.com/",
+     "openingHours": "Mo-Su 19:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3631760159",
+     "name": "Birrifugio",
+     "lat": 41.87757,
+     "lon": 12.46608,
+     "address": "Via Federico Rosazza 4",
+     "website": "https://www.birrifugio.com/",
+     "openingHours": "Mo-Su 19:30-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4439097392",
+     "name": "Brasserie 4:20",
+     "lat": 41.87891,
+     "lon": 12.4686,
+     "address": "Via Portuense 82",
+     "website": "https://brasserie420.com/",
+     "openingHours": "Mo-We 19:00-02:00; Th 18:00-03:00; Fr 18:00-04:00; Sa 18:00-03:00; Su 20:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13783244172",
+     "name": "Club Cabaret Voltaire Roma",
+     "lat": 41.89676,
+     "lon": 12.49229,
+     "address": "Via Panisperna 87",
+     "website": "https://www.galleriacabaretvoltaire.it/",
+     "openingHours": "Tu-Su 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4455036146",
+     "name": "Fiddler's Elbow",
+     "lat": 41.89631,
+     "lon": 12.49728,
+     "address": "Via dell'Olmata 43",
+     "website": "https://thefiddlerselbow.wordpress.com/",
+     "openingHours": "Mo-Fr 17:00-02:00; Sa-Su 15:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12827403102",
+     "name": "Fonclea",
+     "lat": 41.90611,
+     "lon": 12.46042,
+     "address": "Via Crescenzio 82a",
+     "website": "https://fonclea.it/",
+     "openingHours": "Mo-Su 00:00-02:00,18:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10797762152",
+     "name": "Full Moon Club",
+     "lat": 41.88716,
+     "lon": 12.46824,
+     "address": "Via Luigi Santini 13",
+     "website": "https://fullmoonclub.org/",
+     "openingHours": "Tu-Fr, Su 20:30-02:00; Sa 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6253603993",
+     "name": "Gus Bar & Social Club",
+     "lat": 41.90535,
+     "lon": 12.4732,
+     "address": "Via dei Cosmati 3",
+     "website": "https://gusroma.it/",
+     "openingHours": "Th-Sa 20:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11964573970",
+     "name": "Hopside",
+     "lat": 41.87048,
+     "lon": 12.48217,
+     "address": "Via Francesco Negri 39/41",
+     "website": "https://www.hopside.it/",
+     "openingHours": "Tu-Sa 18:00-02:00; Su-Mo 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/962348457",
+     "name": "Ice Club",
+     "lat": 41.89409,
+     "lon": 12.48856,
+     "address": "Via della Madonna dei Monti 18/19",
+     "website": "https://www.iceclubroma.it/",
+     "openingHours": "Mo-Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2273997542",
+     "name": "L'Antica Birreria Peroni",
+     "lat": 41.89877,
+     "lon": 12.48246,
+     "address": "Via di San Marcello 19",
+     "website": "https://www.anticabirreriaperoni.net/",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5336733133",
+     "name": "La Civetta LudoPub",
+     "lat": 41.88068,
+     "lon": 12.50741,
+     "address": "Via Cereate 8",
+     "website": "https://asscivetta.it/",
+     "openingHours": "Mo-Th 20:00-01:00; Fr-Sa 20:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11999789369",
+     "name": "Luppolo12",
+     "lat": 41.89946,
+     "lon": 12.51453,
+     "address": "Via dei Marrucini 12",
+     "website": "https://luppolo12.it/",
+     "openingHours": "Su-Th 17:00-01:00; Fr-Sa 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2818358459",
+     "name": "Ma Che Siete Venuti A Fà",
+     "lat": 41.89173,
+     "lon": 12.46918,
+     "address": "Via Benedetta 25",
+     "website": "https://www.football-pub.com/",
+     "openingHours": "Mo-Su 11:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10692773572",
+     "name": "Mate Bar",
+     "lat": 41.89164,
+     "lon": 12.4691,
+     "address": "Via Benedetta 17",
+     "website": "http://www.m8bar.com/",
+     "openingHours": "Mo-Su 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11482527483",
+     "name": "Mr Hyde Pub",
+     "lat": 41.88226,
+     "lon": 12.51528,
+     "address": "Largo Vercelli 7",
+     "website": "https://mrhydepub.it/",
+     "openingHours": "Mo-Su 17:30-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5825531457",
+     "name": "Mr. Brown Pub",
+     "lat": 41.89128,
+     "lon": 12.46998,
+     "address": "Vicolo del Cinque 29",
+     "website": "https://www.facebook.com/mrbrowntrastevere/",
+     "openingHours": "Mo-Su 17:00-02:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2791024986",
+     "name": "Coyote",
+     "lat": 41.87522,
+     "lon": 12.47486,
+     "address": "Via di Monte Testaccio 48b",
+     "website": "http://coyotebar.it/",
+     "openingHours": "Mo-Su 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5247115784",
+     "name": "L'Alibi",
+     "lat": 41.87536,
+     "lon": 12.47443,
+     "address": "Via di Monte Testaccio 34",
+     "website": "https://alibiclubroma.com/",
+     "openingHours": "We 00:00-04:00; Fr-Sa 00:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2244954388",
+     "name": "Escopazzo",
+     "lat": 41.89539,
+     "lon": 12.47938,
+     "address": "Via d'Aracoeli 41",
+     "website": "https://www.escopazzo.it/"
+    },
+    {
+     "id": "node/11608407754",
+     "name": "IL PIPISTRELLO",
+     "lat": 41.90685,
+     "lon": 12.48903,
+     "website": "https://pipistrello-nightclub.it/"
+    },
+    {
+     "id": "node/2244959592",
+     "name": "Level Club",
+     "lat": 41.89945,
+     "lon": 12.47023,
+     "address": "Vicolo del Fico 3",
+     "website": "http://levelroma.eu/"
+    },
+    {
+     "id": "node/5297903141",
+     "name": "Too Club",
+     "lat": 41.87605,
+     "lon": 12.48555,
+     "address": "Viale di Porta Ardeatina 119",
+     "website": "https://tooclub.it/"
+    },
+    {
+     "id": "node/4984834225",
+     "name": "Akab Club",
+     "lat": 41.87546,
+     "lon": 12.47652,
+     "address": "Via di Monte Testaccio 69"
+    },
+    {
+     "id": "node/6167913786",
+     "name": "Club Epoque",
+     "lat": 41.9032,
+     "lon": 12.48795
+    },
+    {
+     "id": "node/10923870905",
+     "name": "Elite 2",
+     "lat": 41.89954,
+     "lon": 12.48241
+    },
+    {
+     "id": "node/12500409252",
+     "name": "La galleria delle arti",
+     "lat": 41.89548,
+     "lon": 12.51258,
+     "address": "Via dei Sabelli 2"
+    },
+    {
+     "id": "node/4593937395",
+     "name": "Raspoutine Rome",
+     "lat": 41.91055,
+     "lon": 12.47342,
+     "address": "Via Maria Cristina 2"
+    },
+    {
+     "id": "node/13705269601",
+     "name": "The Random Club",
+     "lat": 41.89323,
+     "lon": 12.51102,
+     "address": "Via Pietro Micca 9"
+    },
+    {
+     "id": "node/6167913787",
+     "name": "Toy RoOm Rome",
+     "lat": 41.90318,
+     "lon": 12.48788
+    },
+    {
+     "id": "node/9028216458",
+     "name": "Zanussi",
+     "lat": 41.88155,
+     "lon": 12.51008
+    }
+   ]
+  }
+ }
+}

@@ -83,15 +83,24 @@ describe("timeouts and failures", () => {
       frankfurter: "hang",
       erapi: () => ok(fixture("erapi-aed.json")),
     });
-    const started = Date.now();
-    const rate = await getTryRate("AED", { fetcher, timeoutMs: 30 });
-    expect(Date.now() - started).toBeLessThan(2_000);
+    vi.useFakeTimers();
+    let rate: Awaited<ReturnType<typeof getTryRate>> | undefined;
+    void getTryRate("AED", { fetcher, timeoutMs: 4_000 }).then((r) => (rate = r));
+    // Each hanging source gets exactly its 4 s, then the next one is asked.
+    await vi.advanceTimersByTimeAsync(3_999);
+    expect(fetcher).toHaveBeenCalledTimes(1);
+    await vi.advanceTimersByTimeAsync(1);
+    expect(fetcher).toHaveBeenCalledTimes(2);
+    await vi.advanceTimersByTimeAsync(4_000);
     expect(rate).toMatchObject({ ok: true, source: { id: "erapi" } });
   });
 
   it("reports why each source failed and never invents a rate", async () => {
     const fetcher = fakeFetch({ tcmb: "hang", frankfurter: new TypeError("fetch failed"), erapi: () => ok("not json") });
-    const rate = await getTryRate("EUR", { fetcher, timeoutMs: 30 });
+    vi.useFakeTimers();
+    const pending = getTryRate("EUR", { fetcher, timeoutMs: 4_000 });
+    await vi.advanceTimersByTimeAsync(4_000);
+    const rate = await pending;
     expect(rate.ok).toBe(false);
     if (rate.ok) return;
     expect(rate.attempts.map((a) => a.source)).toEqual(["tcmb", "frankfurter", "erapi"]);
