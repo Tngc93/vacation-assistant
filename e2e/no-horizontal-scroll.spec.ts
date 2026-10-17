@@ -18,6 +18,11 @@ const PAGES = [
     name: "plan (all city-guide categories)",
     path: `/plan?from=ESB&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=1&cats=see,museum,viewpoint,restaurant,cafe,cocktail,pub,club`,
   },
+  {
+    // Flight ticket cards (sample prices: the e2e server runs with VA_FLIGHTS_FIXTURES=1).
+    name: "plan (flight tickets)",
+    path: `/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`,
+  },
   { name: "plan (invalid link)", path: "/plan?from=IST&to=XXX&depart=2020-01-01&pax=12" },
   { name: "styleguide", path: "/styleguide" },
 ];
