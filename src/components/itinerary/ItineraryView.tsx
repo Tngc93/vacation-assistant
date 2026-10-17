@@ -108,6 +108,23 @@ function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRe
   );
 }
 
+/** Unplanned time before the evening place: shown, never filled with made-up stops. */
+function FreeTime({ free }: { free: { start: string; end: string } }) {
+  return (
+    <li className="relative grid grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]">
+      <p className="font-mono text-caption tabular text-ink-muted">
+        {free.start}
+        <span className="block">{free.end}</span>
+      </p>
+      <div className="border-l border-dashed border-rule pl-4">
+        <Caption as="p">
+          SERBEST ZAMAN · {free.start}–{free.end}
+        </Caption>
+      </div>
+    </li>
+  );
+}
+
 function tagText(tags: DayTag[]) {
   return tags.join(" · ");
 }
@@ -152,10 +169,20 @@ function Day({
           </button>
         ) : null}
       </div>
-      {day.note ? <p className="mt-4 text-body text-ink-muted">{day.note}</p> : null}
+      {day.note ? (
+        <div className="mt-4">
+          <p className="text-body text-ink-muted">{day.note}</p>
+          {day.flightNote ? (
+            <a href="#ucuslar" className="mt-1 inline-block text-caption underline underline-offset-4 print:hidden">
+              Daha uygun saatli uçuşlara bak
+            </a>
+          ) : null}
+        </div>
+      ) : null}
       {day.stops.length ? (
         <ol className="mt-5">
           {day.stops.flatMap((stop, i) => [
+            ...(stop.kind === "evening" && day.free ? [<FreeTime key="free" free={day.free} />] : []),
             <TravelLine key={`${stop.id}-travel`} stop={stop} />,
             <Stop key={stop.id} stop={stop} number={i + 1} onRemove={onRemove} />,
           ])}

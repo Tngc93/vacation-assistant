@@ -5,6 +5,7 @@ import { addDays, daysBetween } from "@/lib/search/dates";
 import { DAYTIME_CATEGORIES, ITINERARY, type DaytimeCategory } from "./config";
 import { shortId } from "./ids";
 import { openVerdict } from "./openCheck";
+import { withLocative } from "@/lib/places/hours";
 import { hhmm, roundDown, roundUp, toMinutes, weekdayOf } from "./time";
 import { travelBetween, type Travel } from "./travel";
 
@@ -69,8 +70,12 @@ export type PlanDay = {
   /** When the day's plan may start and must end (local), null when no time is left that day. */
   window: { start: string; end: string } | null;
   stops: PlanStop[];
+  /** Unplanned time between the last daytime stop and the evening place, when longer than 90 minutes. */
+  free: { start: string; end: string } | null;
   /** Why a day has fewer or no stops. */
   note: string | null;
+  /** True when the note is about the flight's times: the page links to the flights section. */
+  flightNote: boolean;
 };
 
 export type Itinerary = {
@@ -82,7 +87,6 @@ export type Itinerary = {
   skipped: string[];
 };
 
-const FULL_DAYTIME = ITINERARY.daytimeEnd - ITINERARY.dayStart;
 
 function visitMinutes(p: PlanPlace, kind: "daytime" | "evening"): number {
   if (kind === "evening") return ITINERARY.visitMin.evening;
@@ -134,11 +138,13 @@ type DayFrame = {
   number: number;
   date: string;
   tags: DayTag[];
+  /** Absolute minutes; null when no daytime visit fits. */
   daytime: { start: number; end: number } | null;
-  capacity: number;
-  evening: boolean;
-  note: string | null;
+  /** Absolute start of the evening place; null when there is no time for it. */
+  evening: number | null;
 };
+
+const SHORTEST_VISIT = Math.min(ITINERARY.visitMin.see, ITINERARY.visitMin.museum, ITINERARY.visitMin.viewpoint);
 
 function frames(input: ItineraryInput): DayFrame[] {
   const count = daysBetween(input.depart, input.return) + 1;
@@ -151,30 +157,34 @@ function frames(input: ItineraryInput): DayFrame[] {
     const base = i * 1440;
     const start = Math.max(base + ITINERARY.dayStart, roundUp(ready));
     const end = Math.min(base + ITINERARY.daytimeEnd, roundDown(deadline));
-    const length = end - start;
-    const capacity = length >= FULL_DAYTIME ? ITINERARY.maxDaytimeStops : Math.max(0, Math.floor((ITINERARY.maxDaytimeStops * length) / FULL_DAYTIME));
-    const eveningStart = base + ITINERARY.eveningStart;
-    const evening = ready <= eveningStart && deadline >= eveningStart + ITINERARY.visitMin.evening;
+    const daytime = end - start >= SHORTEST_VISIT ? { start, end } : null;
+    // Dinner at 19:30, or after settling in on a late arrival, as long as it starts by 21:30 and ends before the return.
+    const eveningAt = Math.max(base + ITINERARY.eveningStart, roundUp(ready));
+    const evening =
+      eveningAt <= base + ITINERARY.eveningLatestStart && eveningAt + ITINERARY.visitMin.evening <= deadline ? eveningAt : null;
+    const full = daytime?.start === base + ITINERARY.dayStart && daytime.end === base + ITINERARY.daytimeEnd && evening !== null;
     const tags: DayTag[] = [];
     if (i === 0) tags.push("VARIŞ GÜNÜ");
     if (i === count - 1) tags.push("DÖNÜŞ GÜNÜ");
-    tags.push(capacity === ITINERARY.maxDaytimeStops && evening ? "TAM GÜN" : "YARIM GÜN");
-    const note =
-      capacity === 0 && !evening
-        ? i === 0
-          ? "Varıştan sonra plan için zaman kalmıyor."
-          : "Dönüş uçuşundan önce plan için zaman kalmıyor."
-        : null;
-    return {
-      number: i + 1,
-      date: addDays(input.depart, i),
-      tags,
-      daytime: capacity > 0 ? { start, end } : null,
-      capacity,
-      evening,
-      note,
-    };
+    tags.push(full ? "TAM GÜN" : "YARIM GÜN");
+    return { number: i + 1, date: addDays(input.depart, i), tags, daytime, evening };
   });
+}
+
+/** Free time between two moments (minutes past midnight), shown only when longer than 90 minutes. */
+export function freeTimeBlock(from: number, to: number): { start: string; end: string } | null {
+  return to - from > ITINERARY.freeTimeMin ? { start: hhmm(from), end: hhmm(to) } : null;
+}
+
+/** The calm note for a first or last day the flight leaves without daytime stops. */
+function flightDayNote(first: boolean, flight: NonNullable<ItineraryInput["flight"]>, withEvening: boolean): string | null {
+  if (first && flight.arrive) {
+    return `Bu uçuşla varış ${withLocative(flight.arrive.time)}; ilk gün yalnızca yerleşme${withEvening ? " ve akşam yemeği" : ""}.`;
+  }
+  if (!first && flight.leave) {
+    return `Bu uçuşla dönüş kalkışı ${withLocative(flight.leave.time)}; son gün ${withEvening ? "akşam yemeği ve " : ""}havalimanına geçiş için.`;
+  }
+  return null;
 }
 
 function toStop(p: PlanPlace, kind: "daytime" | "evening", start: number, travel: Travel | null, hours: "open" | "unknown"): PlanStop {
@@ -202,16 +212,19 @@ function toStop(p: PlanPlace, kind: "daytime" | "evening", start: number, travel
  * The deterministic day-by-day plan (PRD 20). Same input, same plan: every
  * sort is a total order and nothing is random.
  *
- * 1. Each day gets a time window: full days 09:00–18:30 plus an evening; the
- *    first and last follow the flight (2 h after landing, 3.5 h before the
- *    return), or are half days split at 13:00 when no flight is chosen.
+ * 1. Each day gets a time window: full days 09:00–18:00 plus an evening
+ *    place at 19:30; the first and last follow the flight (2 h after landing,
+ *    3.5 h before the return; dinner may move to 21:30 after a late landing),
+ *    or are half days split at 13:00 when no flight is chosen.
  * 2. One anchor per day with daytime capacity: the most important places
  *    (Wikipedia language count) that are at least 1.2 km apart, so each
  *    day's main stop is in a different area. Every place belongs to its
  *    nearest anchor; days with the most time get the most important anchors.
  * 3. Each day starts at its anchor and continues to the nearest unused place
  *    of its area (then any area), skipping places surely closed at that time
- *    and stops that would not fit before the day ends.
+ *    and stops that would not fit: the daytime fills by time, up to 6 stops.
+ *    A gap over 90 minutes before the evening place is shown as free time,
+ *    never filled with made-up stops.
  * 4. The evening place is the best ranked one near the last stop; a chain's
  *    name is suggested only once in the plan.
  */
@@ -233,7 +246,8 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const planned = new Map<number, PlanStop[]>(days.map((d) => [d.number, []]));
 
   // Days with the most daytime come first, then by date: they get the most important anchors.
-  const order = days.filter((d) => d.capacity > 0).sort((a, b) => b.capacity - a.capacity || a.number - b.number);
+  const length = (d: DayFrame) => (d.daytime ? d.daytime.end - d.daytime.start : 0);
+  const order = days.filter((d) => d.daytime).sort((a, b) => length(b) - length(a) || a.number - b.number);
   const anchors = chooseAnchors(daytime, order.length);
   const areaOf = new Map<string, number>();
   for (const p of daytime) {
@@ -253,7 +267,8 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     let at: PlanPlace | null = null;
     let clock = window.start;
 
-    while (stops.length < day.capacity) {
+    // Fill the daytime window by time; never more than six stops.
+    while (stops.length < ITINERARY.maxDaytimeStops) {
       const unused = daytime.filter((p) => !used.has(p.id));
       const own = unused.filter((p) => anchor && areaOf.get(p.id) === i);
       const others = unused.filter((p) => !anchor || areaOf.get(p.id) !== i);
@@ -285,14 +300,14 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
 
   // Evening places, in date order, near each day's last stop (or the day's anchor, or the city's first sight).
   for (const day of days) {
-    if (!day.evening) continue;
+    if (day.evening === null) continue;
     const stops = planned.get(day.number)!;
     const lastStop = stops.at(-1);
     const fallback = anchors[order.findIndex((d) => d.number === day.number)] ?? daytime[0] ?? evening[0];
     const ref = lastStop ?? fallback;
     if (!ref) continue;
     const weekday = weekdayOf(day.date);
-    const start = ITINERARY.eveningStart;
+    const start = day.evening - (day.number - 1) * 1440;
     const end = start + ITINERARY.visitMin.evening;
     const open = evening
       .filter((p) => !used.has(p.id) && !eveningNames.has(nameKey(p)))
@@ -309,18 +324,36 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     stops.push(toStop(pick.p, "evening", start, travel, pick.verdict === "open" ? "open" : "unknown"));
   }
 
+  const lastIndex = days.length - 1;
   return {
-    days: days.map((d) => {
+    days: days.map((d, i) => {
+      const base = (d.number - 1) * 1440;
       const stops = planned.get(d.number)!;
+      const evening = stops.find((s) => s.kind === "evening") ?? null;
       const window =
-        d.daytime || d.evening
+        d.daytime || d.evening !== null
           ? {
-              start: hhmm(d.daytime ? d.daytime.start - (d.number - 1) * 1440 : ITINERARY.eveningStart),
-              end: hhmm(d.evening ? ITINERARY.eveningStart + ITINERARY.visitMin.evening : d.daytime!.end - (d.number - 1) * 1440),
+              start: hhmm(d.daytime ? d.daytime.start - base : d.evening! - base),
+              end: hhmm(d.evening !== null ? d.evening - base + ITINERARY.visitMin.evening : d.daytime!.end - base),
             }
           : null;
-      const note = d.note ?? (stops.length === 0 && window ? "Bu zaman aralığına uyan açık bir mekân bulunamadı." : null);
-      return { number: d.number, date: d.date, tags: d.tags, window, stops, note };
+
+      // Free time: from the last daytime stop (or the start of an empty daytime) to leaving for the evening place.
+      const lastDaytime = stops.filter((s) => s.kind === "daytime").at(-1);
+      const freeFrom = lastDaytime ? toMinutes(lastDaytime.end) : d.daytime ? d.daytime.start - base : null;
+      const freeTo = evening ? roundDown(toMinutes(evening.start) - (evening.travel?.scheduledMin ?? 0)) : null;
+      const free = freeFrom !== null && freeTo !== null ? freeTimeBlock(freeFrom, freeTo) : null;
+
+      const edge = i === 0 || i === lastIndex;
+      const flightNote = edge && !d.daytime && input.flight ? flightDayNote(i === 0, input.flight, evening !== null) : null;
+      const note =
+        flightNote ??
+        (!d.daytime && d.evening === null
+          ? "Bu gün için plan zamanı kalmıyor."
+          : stops.length === 0
+            ? "Bu zaman aralığına uyan açık bir mekân bulunamadı."
+            : null);
+      return { number: d.number, date: d.date, tags: d.tags, window, stops, free, note, flightNote: flightNote !== null };
     }),
     basis: input.flight?.arrive && input.flight?.leave ? "flight" : "assumed",
     timeZone: input.timeZone,

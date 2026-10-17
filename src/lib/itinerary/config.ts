@@ -12,15 +12,19 @@ export const ITINERARY = {
   /** Without a chosen flight, the first day starts and the last day ends here ("half day"). */
   halfDaySplit: 13 * 60,
 
-  /** Daytime stops fit between these times on a full day. */
+  /** Daytime stops fill the time between these, however many fit (up to `maxDaytimeStops`). */
   dayStart: 9 * 60,
-  daytimeEnd: 18 * 60 + 30,
-  /** The evening place starts at this time. */
+  daytimeEnd: 18 * 60,
+  /** The evening place starts at this time… */
   eveningStart: 19 * 60 + 30,
+  /** …or later, up to this time, when the day starts late (a late landing): dinner after settling in. */
+  eveningLatestStart: 21 * 60 + 30,
 
-  /** Limits for a full day; shorter days get proportionally fewer daytime stops. */
-  maxDaytimeStops: 4,
+  /** At most this many daytime stops, even when more would fit; and one evening place. */
+  maxDaytimeStops: 6,
   maxEveningStops: 1,
+  /** A gap longer than this between the last daytime stop and the evening place shows as free time. */
+  freeTimeMin: 90,
 
   /** Visit length per category. */
   visitMin: { museum: 120, see: 60, viewpoint: 30, evening: 120 } satisfies Record<"museum" | "see" | "viewpoint" | "evening", number>,
