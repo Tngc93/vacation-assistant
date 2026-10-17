@@ -115,6 +115,22 @@ describe("PlacesExplorer", () => {
     expect(within(card).getByText("Pazartesi–Pazar 13:00–01:00")).toBeVisible();
   });
 
+  it("names the cuisine in Turkish, keeping values it has no name for", () => {
+    renderExplorer({
+      results: [
+        {
+          category: "restaurant",
+          status: "ok",
+          wikipediaCountsAvailable: true,
+          places: [restaurant, { ...restaurant, id: "node/3", name: "Masala", cuisine: "indian, pizza" }],
+        },
+      ],
+      categories: ["restaurant"],
+    });
+    expect(screen.getByText("Mutfak: Hint, Pizza")).toBeInTheDocument();
+    expect(screen.getByText("Mutfak: Catalan")).toBeInTheDocument();
+  });
+
   it("hides opening hours it cannot read", () => {
     renderExplorer({
       results: [

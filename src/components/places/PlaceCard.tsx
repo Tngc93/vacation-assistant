@@ -5,6 +5,7 @@ import type { Ref } from "react";
 import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
+import { describeCuisine } from "@/lib/places/cuisine";
 import type { StoredPlace } from "@/lib/places/file";
 import { OpeningHours } from "./OpeningHours";
 
@@ -52,7 +53,7 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
       </div>
 
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}
-      {place.cuisine ? <p className="mt-1 text-caption text-ink-muted">Mutfak: {place.cuisine}</p> : null}
+      {place.cuisine ? <p className="mt-1 text-caption text-ink-muted">Mutfak: {describeCuisine(place.cuisine)}</p> : null}
       {place.openingHours ? <OpeningHours value={place.openingHours} timeZone={timeZone} /> : null}
 
       {place.wikipediaCount ? (
