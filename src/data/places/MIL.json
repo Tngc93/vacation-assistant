@@ -1,0 +1,1832 @@
+{
+ "version": 1,
+ "cityCode": "MIL",
+ "fetchedAt": "2026-10-16T23:16:05.168Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Milano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg/1280px-Milano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg",
+  "width": 1280,
+  "height": 750,
+  "author": "Steffen Schmitz",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano,_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II,_2016.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/18017026",
+     "name": "Duomo di Milano",
+     "lat": 45.46418,
+     "lon": 9.19161,
+     "website": "https://www.duomomilano.it/",
+     "openingHours": "Mo-Su 08:00-19:00",
+     "wikipediaCount": 75
+    },
+    {
+     "id": "relation/6552704",
+     "name": "Teatro alla Scala",
+     "lat": 45.46759,
+     "lon": 9.18913,
+     "website": "https://www.teatroallascala.org/",
+     "wikipediaCount": 70
+    },
+    {
+     "id": "relation/19382652",
+     "name": "Chiesa di Santa Maria delle Grazie",
+     "lat": 45.46597,
+     "lon": 9.17118,
+     "website": "https://legraziemilano.it/",
+     "openingHours": "Mo-Sa 09:00-12:20, 15:00-17:50; Su,PH 15:00-17:50",
+     "wikipediaCount": 54
+    },
+    {
+     "id": "relation/1918",
+     "name": "Castello Sforzesco",
+     "lat": 45.47029,
+     "lon": 9.17956,
+     "website": "https://www.milanocastello.it/",
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/163757278",
+     "name": "Galleria Vittorio Emanuele Secondo",
+     "lat": 45.46472,
+     "lon": 9.19003,
+     "wikipediaCount": 40
+    },
+    {
+     "id": "way/166623693",
+     "name": "Galleria Vittorio Emanuele Secondo",
+     "lat": 45.46561,
+     "lon": 9.19001,
+     "wikipediaCount": 40
+    },
+    {
+     "id": "way/166623705",
+     "name": "Galleria Vittorio Emanuele Secondo",
+     "lat": 45.46564,
+     "lon": 9.19001,
+     "wikipediaCount": 40
+    },
+    {
+     "id": "way/331883966",
+     "name": "Galleria Vittorio Emanuele Secondo",
+     "lat": 45.46568,
+     "lon": 9.19002,
+     "wikipediaCount": 40
+    },
+    {
+     "id": "way/1261410658",
+     "name": "Galleria Vittorio Emanuele Secondo",
+     "lat": 45.46479,
+     "lon": 9.19003,
+     "wikipediaCount": 40
+    },
+    {
+     "id": "node/13185691618",
+     "name": "Lanciatore Vega",
+     "lat": 45.46153,
+     "lon": 9.17174,
+     "wikipediaCount": 37
+    },
+    {
+     "id": "relation/37717",
+     "name": "Basilica di Sant'Ambrogio",
+     "lat": 45.46237,
+     "lon": 9.17568,
+     "website": "https://www.basilicasantambrogio.it/",
+     "openingHours": "Mo-Sa 10:00-12:00, 14:30-18:00; Su 15:00-17:00",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "node/11155707089",
+     "name": "Bosco Verticale",
+     "lat": 45.48561,
+     "lon": 9.1904,
+     "wikipediaCount": 23
+    },
+    {
+     "id": "relation/16020020",
+     "name": "Bosco Verticale",
+     "lat": 45.48586,
+     "lon": 9.1903,
+     "wikipediaCount": 23
+    },
+    {
+     "id": "relation/19371855",
+     "name": "Basilica di San Lorenzo Maggiore",
+     "lat": 45.45809,
+     "lon": 9.18209,
+     "website": "http://www.sanlorenzomaggiore.com/",
+     "openingHours": "Mo-Sa 08:00-18:30; Su 09:00-19:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/45671470",
+     "name": "Chiesa di Santa Maria presso San Satiro",
+     "lat": 45.4627,
+     "lon": 9.18777,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/4915384",
+     "name": "Cimitero Monumentale",
+     "lat": 45.4875,
+     "lon": 9.1779,
+     "address": "Piazzale Cimitero Monumentale",
+     "website": "https://monumentale.comune.milano.it/",
+     "openingHours": "Tu-Su 08:00-18:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "relation/178303",
+     "name": "Palazzo di Brera",
+     "lat": 45.47188,
+     "lon": 9.18861,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/165882138",
+     "name": "Basilica di Sant'Eustorgio",
+     "lat": 45.45397,
+     "lon": 9.1815,
+     "website": "https://www.santeustorgio.it/",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/24971631",
+     "name": "Basilica San Nazaro in Brolo",
+     "lat": 45.45876,
+     "lon": 9.19271,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/39349468",
+     "name": "Chiesa di San Bernardino alle Ossa",
+     "lat": 45.4626,
+     "lon": 9.19556,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "relation/2570199",
+     "name": "Palazzo Lombardia",
+     "lat": 45.48676,
+     "lon": 9.1958,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/44601409",
+     "name": "Basilica di San Carlo al Corso",
+     "lat": 45.46629,
+     "lon": 9.19618,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/38000599",
+     "name": "Basilica di San Simpliciano",
+     "lat": 45.47399,
+     "lon": 9.18469,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/164070432",
+     "name": "Chiesa di Santa Maria della Passione",
+     "lat": 45.46526,
+     "lon": 9.20378,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/46103655",
+     "name": "San Maurizio al Monastero Maggiore",
+     "lat": 45.46544,
+     "lon": 9.17895,
+     "website": "https://www.museoarcheologicomilano.it/oltre-il-museo/la-chiesa-s.-maurizio-al-monastero-maggiore",
+     "openingHours": "Tu-Su 10:00-17:30",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/23227442",
+     "name": "Chiesa di San Fedele",
+     "lat": 45.46675,
+     "lon": 9.19157,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/27596084",
+     "name": "Chiesa di San Pietro in Gessate",
+     "lat": 45.4631,
+     "lon": 9.2015,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/42106021",
+     "name": "Chiesa parrocchiale di San Marco",
+     "lat": 45.47332,
+     "lon": 9.18896,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "relation/2747454",
+     "name": "Palazzo Belgioioso",
+     "lat": 45.46767,
+     "lon": 9.19269,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "relation/2357934",
+     "name": "Palazzo Castiglioni",
+     "lat": 45.47116,
+     "lon": 9.20115,
+     "wikipediaCount": 11
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1029667846",
+     "name": "Pinacoteca di Brera",
+     "lat": 45.47224,
+     "lon": 9.18841,
+     "address": "Via Brera 28",
+     "website": "https://pinacotecabrera.org/",
+     "openingHours": "Tu-Su 09:30-18:30; Mo, Jan 1, May 1, Dec 25 off",
+     "wikipediaCount": 35
+    },
+    {
+     "id": "node/2400614071",
+     "name": "Museo Poldi Pezzoli",
+     "lat": 45.46847,
+     "lon": 9.19178,
+     "address": "Via Alessandro Manzoni 12",
+     "website": "https://www.museopoldipezzoli.it/",
+     "openingHours": "We-Mo 10:00-18:00; Tu, easter, Jan 01, Apr 25, May 01, Aug 15, Nov 01, Dec 25 off",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "relation/36488",
+     "name": "Palazzo Reale",
+     "lat": 45.46291,
+     "lon": 9.19122,
+     "website": "https://www.palazzorealemilano.it/",
+     "openingHours": "Tu-We, Fr-Su 10:00-19:30; Th 10:00-22:30; Mo off",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "node/3910270284",
+     "name": "Museo Pietà Rondanini",
+     "lat": 45.4697,
+     "lon": 9.17885,
+     "address": "Piazza Castello",
+     "website": "https://rondanini.milanocastello.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off, Jan 01 off , May 01 off , Dec 25 off",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "node/9551885699",
+     "name": "Museo di Storia Naturale",
+     "lat": 45.47273,
+     "lon": 9.20244,
+     "address": "Corso Venezia 55",
+     "website": "https://museodistorianaturalemilano.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Jan 01, Dec 25, May 01 off",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "node/2153388340",
+     "name": "Museo Astronomico di Brera",
+     "lat": 45.47171,
+     "lon": 9.18935,
+     "address": "Via Brera 28",
+     "website": "http://museoastronomico.brera.inaf.it/",
+     "openingHours": "Tu, Th 10:00-15:00; Fr 14:00-18:00; Sa, Su 10:00-18:00",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "node/1223091032",
+     "name": "Museo del Novecento",
+     "lat": 45.46339,
+     "lon": 9.19023,
+     "address": "Via Guglielmo Marconi 1",
+     "website": "https://www.museodelnovecento.org/it/",
+     "openingHours": "Tu-We,Fr-Su 09:30-19:30; Th 09:30-22:30; Mo off",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "node/2324825968",
+     "name": "Gallerie d'Italia",
+     "lat": 45.46726,
+     "lon": 9.19053,
+     "address": "Piazza della Scala 6",
+     "website": "https://www.gallerieditalia.com/it/milano/",
+     "openingHours": "Tu,We,Fr,Sa,Su 09:30-19:30; Th 09:30-22:30; Mo off",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "node/9560216692",
+     "name": "Civico museo archeologico di Milano",
+     "lat": 45.46562,
+     "lon": 9.17872,
+     "address": "Corso Magenta 15",
+     "website": "https://www.museoarcheologicomilano.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/6424667157",
+     "name": "Galleria d'Arte Moderna",
+     "lat": 45.47253,
+     "lon": 9.19968,
+     "address": "Via Palestro 16",
+     "website": "https://www.gam-milano.com/it/home/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 01 off; May 01 off; Dec 25 off",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/1828890767",
+     "name": "Museo Teatrale alla Scala",
+     "lat": 45.46731,
+     "lon": 9.18926,
+     "address": "Largo Antonio Ghiringhelli 1",
+     "website": "https://www.museoscala.org/",
+     "openingHours": "Mo-Su 09:30-17:30; Jan 01,May 01,Aug 15,Dec 07,25,26 off",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/2537169197",
+     "name": "Pinacoteca del Castello Sforzesco",
+     "lat": 45.47126,
+     "lon": 9.1798,
+     "address": "Piazza Castello",
+     "website": "https://pinacoteca.milanocastello.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo, Jan 01, May 01, Dec 25 off",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/2531365878",
+     "name": "Museo Bagatti Valsecchi",
+     "lat": 45.46948,
+     "lon": 9.19498,
+     "address": "Via Gesù 5",
+     "website": "https://museobagattivalsecchi.org/",
+     "openingHours": "Th-Fr 13:00-17:45; Sa-Su 10:00-17:45; We 13:00-20:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/420005515",
+     "name": "Museo Nazionale Scienza e Tecnologia Leonardo da Vinci",
+     "lat": 45.46179,
+     "lon": 9.17097,
+     "address": "Via San Vittore 21",
+     "website": "https://www.museoscienza.org/it",
+     "openingHours": "Tu-Fr 09:30-17:30; Sa,Su,PH 09:30-18:30; Mo off; Jan 01 off; Dec 24 off; Dec 25 off",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/2531406270",
+     "name": "Museo degli Strumenti Musicali",
+     "lat": 45.47025,
+     "lon": 9.17897,
+     "address": "Piazza Castello",
+     "website": "https://strumentimusicali.milanocastello.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off, Jan 01 off, May 01, Dec 25 off",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/4305608681",
+     "name": "Museo del Risorgimento",
+     "lat": 45.47211,
+     "lon": 9.18964,
+     "address": "Via Borgonuovo 23",
+     "website": "http://www.museodelrisorgimento.mi.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off, Jan 1, May 1, Aug 15, Dec 25-26 off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/2535087543",
+     "name": "Pinacoteca Ambrosiana",
+     "lat": 45.46364,
+     "lon": 9.18601,
+     "address": "Piazza Pio Undicesimo 2",
+     "website": "https://www.ambrosiana.it/",
+     "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 10:00-18:00, Mo off, Jan 01, easter, May 01, Dec 25 off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/2535106339",
+     "name": "Museo d'Arte Antica",
+     "lat": 45.4707,
+     "lon": 9.1796,
+     "address": "Piazza Castello",
+     "website": "https://arteantica.milanocastello.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo, Jan 01, May 01, Dec 25 off",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/2529645009",
+     "name": "Museo Egizio",
+     "lat": 45.47105,
+     "lon": 9.17938,
+     "address": "Piazza Castello",
+     "website": "https://museoegizio.milanocastello.it/",
+     "openingHours": "Tu-Su 09:30-17:30",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/252422994",
+     "name": "Padiglione d'Arte Contemporanea",
+     "lat": 45.4728,
+     "lon": 9.1991,
+     "website": "http://www.pacmilano.it/",
+     "openingHours": "Tu-We 10:00-19:30; Th 10:00-22:30; Fr-Su 10:00-19:30; Mo off",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/9560211533",
+     "name": "Casa Manzoni",
+     "lat": 45.46781,
+     "lon": 9.19208,
+     "address": "Via Gerolamo Morone 1",
+     "website": "https://www.casadelmanzoni.it/",
+     "openingHours": "Tu-Fr 10:00-18:00; Sa 14:00-18:00; Su-Mo off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/138750066",
+     "name": "Villa Necchi Campiglio",
+     "lat": 45.46828,
+     "lon": 9.20182,
+     "website": "https://fondoambiente.it/luoghi/villa-necchi-campiglio",
+     "openingHours": "We-Su 10:00-18:00; Mo-Tu off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/8765487736",
+     "name": "ADI Design Museum",
+     "lat": 45.48317,
+     "lon": 9.17928,
+     "address": "Piazza Compasso d’Oro 1",
+     "website": "https://www.adidesignmuseum.org/",
+     "openingHours": "Sa-Th 10:30-20:00; Fr off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/341447523",
+     "name": "Armani/Silos",
+     "lat": 45.45151,
+     "lon": 9.16469,
+     "website": "https://www.armanisilos.com/it/",
+     "openingHours": "We-Su 11:00-19:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/1898336420",
+     "name": "Museo Diocesano di Milano",
+     "lat": 45.45467,
+     "lon": 9.18103,
+     "address": "Piazza Sant'Eustorgio 3",
+     "website": "https://chiostrisanteustorgio.it/",
+     "openingHours": "Tu-Su 10:00-18:00; Mo off , Jan 01,May 01,Dec 25,26 off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/425004880",
+     "name": "Fondazione Prada",
+     "lat": 45.44394,
+     "lon": 9.20432,
+     "website": "https://www.fondazioneprada.org/",
+     "openingHours": "Mo 10:00-19:00; Tu off; We-Su 10:00-19:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2531342458",
+     "name": "Memoriale della Shoah",
+     "lat": 45.48822,
+     "lon": 9.2082,
+     "address": "Piazza Edmond Jacob Safra 1",
+     "website": "https://www.memorialeshoah.it/",
+     "openingHours": "Mo-Su 10:00-16:00; Fr off; Fr[-1] 10:00-18:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2531420511",
+     "name": "Museo dei Mobili e delle Sculture Lignee",
+     "lat": 45.47115,
+     "lon": 9.17918,
+     "address": "Piazza Castello",
+     "website": "https://museodeimobili.milanocastello.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo, Jan 01, May 01, Dec 25 off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/9560662874",
+     "name": "Museo delle Arti Decorative",
+     "lat": 45.4704,
+     "lon": 9.17819,
+     "address": "Piazza Castello",
+     "website": "https://artidecorative.milanocastello.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/2531211706",
+     "name": "Casa-museo Boschi Di Stefano",
+     "lat": 45.47903,
+     "lon": 9.21175,
+     "address": "Via Giorgio Jan 15",
+     "website": "https://www.fondazioneboschidistefano.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
+     "wikipediaCount": 4
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/18237430",
+     "name": "Torre Branca",
+     "lat": 45.47329,
+     "lon": 9.17288,
+     "website": "https://www.museobranca.it/torre-branca/",
+     "openingHours": "We 10:30-12:30,16:00-18:30; Sa 10:30-13:00,15:00-18:30,20:30-24:00; Su 10:30-14:00,14:30-19:00; May 15-Sep 15 Tu,Th,Fr 15:00-19:00,20:30-24:00; May 15-Sep 15 We 10:30-12:30,15:00-19:00,20:30-24:00; May 15-Sep 15 Sa,Su 10:30-14:00,14:30-19:30,20:30-24:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/4714788078",
+     "name": "Highline Galleria",
+     "lat": 45.46501,
+     "lon": 9.18996,
+     "address": "Via Silvio Pellico 2",
+     "website": "https://www.highlinegalleria.it/"
+    },
+    {
+     "id": "node/11879389710",
+     "name": "The Roof Milano Bar & Restaurant",
+     "lat": 45.46083,
+     "lon": 9.1887,
+     "website": "https://www.deicavaliericollection.com/en/the-roof/index"
+    },
+    {
+     "id": "node/12918022068",
+     "name": "Belvedere Silvio Berlusconi",
+     "lat": 45.48694,
+     "lon": 9.19569
+    },
+    {
+     "id": "node/10575200279",
+     "name": "Vista sul Parco Sempione",
+     "lat": 45.47169,
+     "lon": 9.1777
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2279270380",
+     "name": "Acero",
+     "lat": 45.45684,
+     "lon": 9.17233,
+     "address": "Viale Papiniano 57",
+     "website": "https://www.ristoranteacero.it/",
+     "openingHours": "Mo,Tu 19:00-23:30; We-Sa 12:00-14:30,19:00-23:30; Su 12:00-14:30,19:00-23:00",
+     "cuisine": "sushi, chinese, japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/2758108707",
+     "name": "Acquasala",
+     "lat": 45.4503,
+     "lon": 9.16896,
+     "address": "Ripa di Porta Ticinese 71",
+     "website": "https://www.acquasala.it/",
+     "openingHours": "Th-Su 12:30-14:30,19:30-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2162395707",
+     "name": "Antica Osteria Cavallini",
+     "lat": 45.48104,
+     "lon": 9.20391,
+     "address": "Via Mauro Macchi 2",
+     "website": "https://www.anticaosteriacavallini.it/",
+     "openingHours": "Mo-Fr 12:00-15:00, Su 12:00-15:30, Mo-Su 19:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/540824133",
+     "name": "Aquarius",
+     "lat": 45.48167,
+     "lon": 9.16369,
+     "address": "Corso Sempione 49",
+     "website": "http://www.ristoranteaquarius.com/home-1138.html",
+     "openingHours": "Mo-Sa 07:00-01:00",
+     "cuisine": "seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/2064483921",
+     "name": "Beirut",
+     "lat": 45.45255,
+     "lon": 9.21512,
+     "address": "Via Tito Livio 1",
+     "website": "https://www.ristorantebeirut.it/",
+     "openingHours": "Mo-Sa 18:30-23:30",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/3147154514",
+     "name": "Berberè",
+     "lat": 45.48745,
+     "lon": 9.19107,
+     "address": "Via Sebenico 21",
+     "website": "https://www.berberepizza.it/#",
+     "openingHours": "Mo-Fr 12:30-14:30,19:00-23:30; Sa,Su 12:30-15:00,19:00-23:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2266640273",
+     "name": "Bettola Siciliana",
+     "lat": 45.45207,
+     "lon": 9.20502,
+     "address": "Via Lodovico Muratori 11",
+     "website": "https://www.bettolasiciliana.it/",
+     "openingHours": "Tu-Fr 12:00-14:30,19:30-24:00; Sa 12:00-15:00,19:30-24:00; Su 12:00-15:00; Mo off",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1189928766",
+     "name": "Bon Wei",
+     "lat": 45.48463,
+     "lon": 9.1644,
+     "address": "Via Lodovico Castelvetro 16",
+     "website": "https://www.bon-wei.it/",
+     "openingHours": "Tu-Su 12:00-14:30,19:00-23:30",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/1901845019",
+     "name": "Bottega Ghiotta",
+     "lat": 45.46258,
+     "lon": 9.18952,
+     "address": "Piazza Armando Diaz 6",
+     "website": "https://www.bottegaghiotta.it/",
+     "openingHours": "Mo-Su 07:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2226730506",
+     "name": "Cacio e Pepe",
+     "lat": 45.4529,
+     "lon": 9.18206,
+     "address": "Viale Gian Galeazzo 3",
+     "website": "https://www.ristorantecacioepepe.com/",
+     "openingHours": "Mo-Fr 12:45-15:00,19:45-23:00; Sa 19:45-23:00; PH off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1721474901",
+     "name": "Cantun",
+     "lat": 45.46406,
+     "lon": 9.16073,
+     "address": "Via Polibio 1",
+     "website": "https://www.cantun.it/",
+     "openingHours": "Mo-Fr 07:00-22:30; Sa-Su 08:00-22:30",
+     "cuisine": "italian, poke, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/3049154290",
+     "name": "Da Martino",
+     "lat": 45.48362,
+     "lon": 9.18185,
+     "address": "Via Carlo Farini 8",
+     "website": "https://damartino1950.com/",
+     "openingHours": "Mo-Tu 12:00-14:30,19:30-22:30; Th-Su 12:00-14:30, 19:30-22:30",
+     "cuisine": "pizza, italian, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/626841128",
+     "name": "Dal Bolognese",
+     "lat": 45.45889,
+     "lon": 9.187,
+     "address": "Via Amedei 8",
+     "website": "https://milano.dalbolognese.it/",
+     "openingHours": "Mo-Fr 12:45-15:00,20:00-23:00; Sa 20:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2312510063",
+     "name": "el Brellìn ristorante",
+     "lat": 45.45188,
+     "lon": 9.17472,
+     "address": "Alzaia Naviglio Grande 14",
+     "website": "https://brellin.com/",
+     "openingHours": "Mo-Su 12:30-15:00,18:30-01:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/301979351",
+     "name": "Fabbrica",
+     "lat": 45.45078,
+     "lon": 9.16926,
+     "address": "Alzaia Naviglio Grande 68",
+     "website": "https://www.fabbricapizzeriamilano.com/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/540813456",
+     "name": "Fresco",
+     "lat": 45.48112,
+     "lon": 9.16442,
+     "address": "Corso Sempione 41",
+     "website": "https://www.frescotrattoria.it/fresco-sempione-milano/",
+     "openingHours": "Mo-Su 12:00-15:30,19:00-23:30",
+     "cuisine": "italian pizza, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2524613439",
+     "name": "Grani & Braci",
+     "lat": 45.48522,
+     "lon": 9.18233,
+     "address": "Via Carlo Farini",
+     "website": "http://www.graniebraci.it/it/ristorante-pizzeria-steak-house-milano",
+     "openingHours": "Mo-Fr 12:00-15:00,19:00-02:00; Sa 12:00-15:00,19:00-03:00; Su 12:00-02:00",
+     "cuisine": "italian, pizza, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/3217982897",
+     "name": "Hosteria La Cadrega",
+     "lat": 45.48162,
+     "lon": 9.19739,
+     "address": "Via Gustavo Fara 1",
+     "website": "http://www.hosterialacadrega.it/",
+     "openingHours": "Mo-Su 12:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1112456201",
+     "name": "I Capatosta",
+     "lat": 45.45102,
+     "lon": 9.1705,
+     "address": "Alzaia Naviglio Grande 56",
+     "website": "https://www.icapatosta.it/",
+     "openingHours": "Mo-Th 11:00-14:30, 19:00-00:00; Fr-Sa 11:30-00:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2774913927",
+     "name": "Il Mannarino Navigli",
+     "lat": 45.45226,
+     "lon": 9.17645,
+     "address": "Alzaia Naviglio Grande 2",
+     "website": "https://www.ilmannarino.it/ristoranti/milano-alzaia-naviglio-grande-2/",
+     "openingHours": "Mo-Su 12:00-15:00, 19:00-23:30",
+     "cuisine": "meat",
+     "detailed": true
+    },
+    {
+     "id": "node/3292516226",
+     "name": "Il Salumaio di Montenapoleone",
+     "lat": 45.46976,
+     "lon": 9.19461,
+     "address": "Via Santo Spirito 10",
+     "website": "https://www.ilsalumaiodimontenapoleone.it/",
+     "openingHours": "Mo-Sa 08:30-22:30; Su off",
+     "cuisine": "italian, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2417414819",
+     "name": "Il Tavolino",
+     "lat": 45.48401,
+     "lon": 9.1983,
+     "address": "Via Gustavo Fara 23",
+     "website": "http://www.altavolino.it/",
+     "openingHours": "12:00-24:00",
+     "cuisine": "pizza, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/3078973271",
+     "name": "Isola Greca",
+     "lat": 45.48092,
+     "lon": 9.18883,
+     "address": "Viale Monte Grappa 18",
+     "website": "https://isolagreca.it/",
+     "openingHours": "Mo-Th,Sa 12:00-15:00,19:00-24:00; Fr 12:00-15:00; Su off",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2724178334",
+     "name": "Kagurazaka Saryō Milano",
+     "lat": 45.48214,
+     "lon": 9.18752,
+     "address": "Corso Como 12",
+     "website": "https://www.saryomilano.com/",
+     "openingHours": "Mo-Sa 12:00-21:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/540813399",
+     "name": "Katei",
+     "lat": 45.48489,
+     "lon": 9.16499,
+     "website": "https://www.kateirestaurant.com/",
+     "openingHours": "We-Mo 12:00-14:45, 19:00-23:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1056386098",
+     "name": "La Magolfa",
+     "lat": 45.45004,
+     "lon": 9.17546,
+     "address": "Via Magolfa 15",
+     "website": "http://www.lamagolfa.it/",
+     "openingHours": "Mo-Su 11:00-16:00,18:00-02:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2266246540",
+     "name": "La Tradizionale",
+     "lat": 45.45438,
+     "lon": 9.16307,
+     "address": "Via Bergognone Da Fossano 16",
+     "website": "https://www.latradizionale.com/",
+     "openingHours": "Mo-Su 12:00-14:30, 19:00-00:00",
+     "cuisine": "pizza, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2404012455",
+     "name": "Langosteria 10",
+     "lat": 45.45563,
+     "lon": 9.16863,
+     "address": "Via Savona 10",
+     "website": "https://langosteria.com/langosteria-cucina/",
+     "openingHours": "Mo-Su 19:00-24:00",
+     "cuisine": "italian, seafood, dessert",
+     "detailed": true
+    },
+    {
+     "id": "node/1111563533",
+     "name": "Langosteria Bistrot",
+     "lat": 45.45561,
+     "lon": 9.1715,
+     "address": "Via privata Bobbio 2",
+     "website": "https://langosteria.com/langosteria-bistrot/",
+     "openingHours": "Mo-Su 12:00-18:00",
+     "cuisine": "italian, fish",
+     "detailed": true
+    },
+    {
+     "id": "node/598600404",
+     "name": "Lleva Taps",
+     "lat": 45.45984,
+     "lon": 9.17148,
+     "address": "Via Ariberto 31",
+     "website": "https://www.llevataps.it/",
+     "openingHours": "Mo-Fr 12:30-14:30, 19:00-00:00; Sa 19:00-00:00; Su off",
+     "cuisine": "spanish",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4170003690",
+     "name": "12oz Cofee Joint",
+     "lat": 45.4636,
+     "lon": 9.18912,
+     "address": "Via Dogana 2",
+     "website": "https://www.12ozcj.com/",
+     "openingHours": "Mo-Th 07:30-22:30; Fr-Su,PH 07:30-23:00",
+     "cuisine": "dessert",
+     "detailed": true
+    },
+    {
+     "id": "node/3368777733",
+     "name": "Aroma Napoletano",
+     "lat": 45.48988,
+     "lon": 9.18994,
+     "address": "Via Traù 2",
+     "website": "https://aromanapoletanomilano.com/",
+     "openingHours": "Mo-Sa 07:00-18:30; Su 08:00-18:30",
+     "cuisine": "coffee shop, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/4277859515",
+     "name": "Mai dire bar",
+     "lat": 45.48738,
+     "lon": 9.20981,
+     "address": "Via Giovanni Pierluigi da Palestrina 32",
+     "website": "https://mai-dire-bar.eatbu.com/",
+     "openingHours": "Mo-Fr 07:30-20:00 Sa 07:30 - 15:30 18:00 - 20:00",
+     "cuisine": "coffee shop, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/3758916383",
+     "name": "Norin Caffè Bistrot",
+     "lat": 45.48514,
+     "lon": 9.19872,
+     "address": "Via Gustavo Fara 33",
+     "website": "https://www.pizzeriabistronorin.com/",
+     "openingHours": "Mo-Fr 07:30-22:00",
+     "cuisine": "italian, italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/472290659",
+     "name": "Pucatè - Bubble Tea",
+     "lat": 45.47879,
+     "lon": 9.20334,
+     "website": "https://www.facebook.com/pucatemilano/",
+     "openingHours": "Mo-Su 12:30-20:00",
+     "cuisine": "coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/3555883404",
+     "name": "Seitaly",
+     "lat": 45.4601,
+     "lon": 9.18801,
+     "address": "Corso Italia 6",
+     "website": "https://www.seitaly.it/",
+     "openingHours": "Mo-Su 07:30-00:00",
+     "cuisine": "breakfast, italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/282314361",
+     "name": "Starbucks",
+     "lat": 45.4882,
+     "lon": 9.19535,
+     "address": "Viale Francesco Restelli 5",
+     "website": "https://www.starbucks.co.uk/store-locator/59651-293868/milano-restelli",
+     "openingHours": "Mo-Fr 07:30-18:30; Sa-Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1901845038",
+     "name": "Actors' Studio Cafe",
+     "lat": 45.46553,
+     "lon": 9.17611,
+     "address": "Via Terraggio 11",
+     "website": "https://it-it.facebook.com/actorstudiocafe/",
+     "openingHours": "Mo-Th 09:00-00:00; Fr 09:00-01:00; Sa 21:00-02:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/4457582690",
+     "name": "Art Cafe",
+     "lat": 45.47649,
+     "lon": 9.18168,
+     "address": "Via Legnano 26",
+     "website": "http://www.artcafemilano.it/",
+     "openingHours": "Mo-Sa 07:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/313056151",
+     "name": "Bar Baldassarre",
+     "lat": 45.48187,
+     "lon": 9.20363,
+     "address": "Via Ruggero Boscovich 22",
+     "openingHours": "Mo-Su 07:00-01:30",
+     "cuisine": "pizza, regional, chicken, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4348681394",
+     "name": "Bar Castello",
+     "lat": 45.46903,
+     "lon": 9.18179,
+     "address": "Piazza Castello 2",
+     "website": "https://www.gelateriabarcastello.com/",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2399642737",
+     "name": "Bar Mercurio",
+     "lat": 45.46294,
+     "lon": 9.18862,
+     "address": "Via Dogana 3",
+     "website": "http://www.barmercurio.it/",
+     "openingHours": "Mo-Sa 05:30-20:30",
+     "detailed": true
+    },
+    {
+     "id": "node/4228929267",
+     "name": "Barbisa 1920",
+     "lat": 45.4521,
+     "lon": 9.20544,
+     "address": "Via Lodovico Muratori 11",
+     "website": "https://barbisa-1920.eatbu.com/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2409688064",
+     "name": "Bricco Cafè",
+     "lat": 45.48419,
+     "lon": 9.18727,
+     "address": "Piazza Sigmund Freud 1",
+     "openingHours": "Mo-Su 05:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4170003389",
+     "name": "Ca'puccino",
+     "lat": 45.4622,
+     "lon": 9.19045,
+     "address": "Piazza Armando Diaz 5",
+     "website": "https://www.ca-puccino.com/",
+     "openingHours": "Mo-Su 07:30-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3760450111",
+     "name": "cafe Victum",
+     "lat": 45.46756,
+     "lon": 9.20679,
+     "website": "http://victum.it/",
+     "openingHours": "Tu-Su 07:00-20:00; Mo 07:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3848621230",
+     "name": "Caffè Panzera",
+     "lat": 45.48378,
+     "lon": 9.20442,
+     "website": "http://www.caffepanzera.it/",
+     "openingHours": "07:00-23:30",
+     "detailed": true
+    },
+    {
+     "id": "node/2838294277",
+     "name": "Caffè Teatro Foro Buonaparte",
+     "lat": 45.46776,
+     "lon": 9.18008,
+     "address": "Foro Buonaparte 63",
+     "website": "http://www.caffeteatromilano.com/",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4457568260",
+     "name": "Calicantus",
+     "lat": 45.47045,
+     "lon": 9.17896,
+     "website": "https://www.calicantus.me/project/nullam-lobortis-lacus-2/",
+     "openingHours": "Tu-Su 09:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3605724823",
+     "name": "Chateau Dufan",
+     "lat": 45.48192,
+     "lon": 9.18124,
+     "address": "Via Paolo Sarpi 2",
+     "website": "https://www.chateaudufan.com/",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/723173227",
+     "name": "Chocolat",
+     "lat": 45.46767,
+     "lon": 9.17409,
+     "address": "Via Giovanni Boccaccio 9n03",
+     "website": "https://www.chocolatmilano.it/",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/3812740474",
+     "name": "Crazy Cat Café",
+     "lat": 45.48097,
+     "lon": 9.20344,
+     "website": "https://www.crazycatcafe.it/",
+     "openingHours": "Tu-Su 09:30-21:30",
+     "detailed": true
+    },
+    {
+     "id": "node/3188691735",
+     "name": "DG Martini",
+     "lat": 45.46831,
+     "lon": 9.1983,
+     "address": "Corso Venezia 15",
+     "website": "https://world.dolcegabbana.com/it/martini/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3025736556",
+     "name": "Eatme&Go",
+     "lat": 45.46095,
+     "lon": 9.18469,
+     "address": "Via Torino 49",
+     "website": "http://www.eatmeandgo.it/",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3025539006",
+     "name": "Fruteiro",
+     "lat": 45.46006,
+     "lon": 9.18052,
+     "address": "Via Cesare Correnti 2",
+     "website": "http://www.fruteiro.it/",
+     "cuisine": "fruit drinking",
+     "detailed": true
+    },
+    {
+     "id": "node/4304781356",
+     "name": "Illy",
+     "lat": 45.4832,
+     "lon": 9.19023,
+     "address": "Piazza Gae Aulenti 6",
+     "openingHours": "Mo-Fr 07:30-21:00; Sa-Su 08:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2471413099",
+     "name": "La Ciribiciaccola",
+     "lat": 45.46947,
+     "lon": 9.22414,
+     "address": "Viale Romagna 10",
+     "openingHours": "We-Mo 07:00-08:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4171185989",
+     "name": "La gelateria della Musica",
+     "lat": 45.47207,
+     "lon": 9.21432,
+     "address": "Via privata Giuseppe Abamonti 2",
+     "openingHours": "Tu-Su 14:00-22:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4315735806",
+     "name": "La Rocchetta",
+     "lat": 45.46883,
+     "lon": 9.17631,
+     "address": "Via Pietro Paleocapa 1",
+     "website": "https://www.larocchettacaffe.it/",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3233553052",
+     "name": "Manuelina",
+     "lat": 45.46539,
+     "lon": 9.19214,
+     "address": "Via Santa Radegonda 3",
+     "website": "http://www.manuelinafocacceria.it/",
+     "cuisine": "pizza",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4978187693",
+     "name": "Nottingham Forest",
+     "lat": 45.46872,
+     "lon": 9.20671,
+     "address": "Viale Piave 1",
+     "website": "http://www.nottingham-forest.com/",
+     "openingHours": "Mo off; Tu-Sa 18:30-02:00; Su 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6847063985",
+     "name": "PoP",
+     "lat": 45.47634,
+     "lon": 9.20508,
+     "address": "Via Alessandro Tadino 5",
+     "website": "http://www.pop-milano.it/",
+     "openingHours": "We-Su 18:00+",
+     "detailed": true
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/304775595",
+     "name": "Bar Magenta",
+     "lat": 45.46569,
+     "lon": 9.17566,
+     "address": "Via Giosuè Carducci 13",
+     "website": "https://barmagenta.it/",
+     "openingHours": "Mo-Su 07:30-02:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/702123543",
+     "name": "Bhangrabar",
+     "lat": 45.47622,
+     "lon": 9.17132,
+     "address": "Corso Sempione 1",
+     "website": "https://bhangrabar.it/",
+     "openingHours": "Mo-Su 18:00-02:00; Dec 24,25,31 off",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/1923838407",
+     "name": "Brasserie Bruxelles",
+     "lat": 45.47874,
+     "lon": 9.21673,
+     "address": "Viale Abruzzi 33",
+     "website": "https://www.brasseriebruxelles.eu/",
+     "openingHours": "Mo-Su 17:00-02:00",
+     "cuisine": "burger, nachos, piadina",
+     "detailed": true
+    },
+    {
+     "id": "node/667274860",
+     "name": "La Belle Alliance",
+     "lat": 45.44625,
+     "lon": 9.17922,
+     "address": "Via Evangelista Torricelli 1",
+     "website": "https://www.labellealliance.it/",
+     "openingHours": "Su-Th 18:00-01:00; Fr-Sa 17:00-02:00",
+     "cuisine": "snack, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/3753376616",
+     "name": "Lambiczoon",
+     "lat": 45.45412,
+     "lon": 9.21334,
+     "address": "Via Friuli 46",
+     "website": "https://www.lambiczoon.com/",
+     "openingHours": "Mo-Th 18:00-01:00; Fr-Sa 18:00-02:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/3442415711",
+     "name": "MEZCA",
+     "lat": 45.4772,
+     "lon": 9.16996,
+     "address": "Corso Sempione 7",
+     "website": "https://www.mezca.it/",
+     "openingHours": "Mo-Su 18:00-02:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/1726715782",
+     "name": "O' Connell Country Pub",
+     "lat": 45.46968,
+     "lon": 9.18794,
+     "address": "Via Brera 3",
+     "website": "https://www.oconnellirishpubmilanobrera.it/",
+     "openingHours": "Mo-Fr 17:00-02:00, Sa-Su 12:00-02:00",
+     "cuisine": "burger, snack",
+     "detailed": true
+    },
+    {
+     "id": "node/2226705938",
+     "name": "Pico Brew Station",
+     "lat": 45.4452,
+     "lon": 9.17669,
+     "address": "Via Ascanio Sforza 63",
+     "website": "https://www.picobrew.it/",
+     "openingHours": "Su-Th 17:30-01:00, Fr,Sa 17:30-02:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/3976155261",
+     "name": "150UP",
+     "lat": 45.49025,
+     "lon": 9.18473,
+     "address": "Via Medardo Rosso 16",
+     "website": "https://150up.com/",
+     "openingHours": "Mo-Sa 09:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/6915202747",
+     "name": "Agua Sancta",
+     "lat": 45.47913,
+     "lon": 9.1859,
+     "website": "https://www.aguasancta.it/",
+     "openingHours": "Tu 12:00-24:00; We-Sa 00:00-02:00,12:00-24:00; Su 00:00-02:00, 18:00-24:00; Mo 00:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1285244654",
+     "name": "Bar Bianco",
+     "lat": 45.47355,
+     "lon": 9.17753,
+     "address": "Viale Ibsen 4",
+     "website": "https://www.barbiancomilano.com/",
+     "openingHours": "Mo-Su 09:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6380520757",
+     "name": "BeerShow",
+     "lat": 45.4891,
+     "lon": 9.18923,
+     "website": "https://beershowmilano.wixsite.com/",
+     "openingHours": "Su-Fr 18:00-02:00; Fr 12:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5154117623",
+     "name": "Bere Buona Birra",
+     "lat": 45.44805,
+     "lon": 9.20522,
+     "address": "Via Adige 13",
+     "website": "https://www.berebuonabirra.com/",
+     "openingHours": "We-Fr,Su,Mo 17:00-23:00; Sa 13:00-23:00; Tu off",
+     "detailed": true
+    },
+    {
+     "id": "node/7126823730",
+     "name": "Big Store de Milàn",
+     "lat": 45.45766,
+     "lon": 9.17725,
+     "address": "Via Conca del Naviglio 10",
+     "website": "https://www.facebook.com/pages/Big-Store-De-Milan/1823761261247304",
+     "openingHours": "Mo-Su 08:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/418360920",
+     "name": "Blues Bikers Pub",
+     "lat": 45.44692,
+     "lon": 9.18055,
+     "address": "Via Francesco Brioschi 7",
+     "website": "https://www.bluesbikerspub.com/",
+     "openingHours": "Tu-Su 19:00-02:00; Mo off",
+     "detailed": true
+    },
+    {
+     "id": "node/2774913913",
+     "name": "Blues Canal",
+     "lat": 45.45158,
+     "lon": 9.17087,
+     "address": "Via Casale 7",
+     "website": "https://www.bluescanalmilano.com/",
+     "openingHours": "Mo-Tu, Th-Fr 14:00-04:00; We 14:00 - 01:00; Sa 12:00-02:30; Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9962701124",
+     "name": "Bobino",
+     "lat": 45.4536,
+     "lon": 9.16985,
+     "address": "Piazzale Stazione Genova 4",
+     "website": "https://bobino.it/",
+     "openingHours": "Mo off; Tu-Su 18:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5538301816",
+     "name": "Brewfist pub",
+     "lat": 45.44635,
+     "lon": 9.17772,
+     "address": "Via Ettore Troilo 14",
+     "website": "https://www.brewfistpub.it/",
+     "openingHours": "Tu-Th,Su 17:00-00:30, Fr,Sa 17:00-02:00; Mo off",
+     "detailed": true
+    },
+    {
+     "id": "node/4770096721",
+     "name": "Cape Town Cafe",
+     "lat": 45.45271,
+     "lon": 9.17567,
+     "address": "Via Vigevano 3",
+     "website": "http://capetowncafe.it/",
+     "openingHours": "Mo-Su 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9379505885",
+     "name": "Carico",
+     "lat": 45.4561,
+     "lon": 9.17016,
+     "address": "Via Savona 1",
+     "website": "https://www.carico.io/",
+     "openingHours": "Mo 19:00-02:00; Tu off; We-Sa 19:00-02:00; Su 18:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3049190340",
+     "name": "Ceresio 7",
+     "lat": 45.48352,
+     "lon": 9.18031,
+     "address": "Via Ceresio 7",
+     "website": "https://www.ceresio7.com/",
+     "openingHours": "Mo-Su 12:30-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6788402885",
+     "name": "Colibrì",
+     "lat": 45.46152,
+     "lon": 9.19582,
+     "address": "Via Laghetto 9/11",
+     "website": "https://www.colibrimilano.it/",
+     "openingHours": "Mo 09:00-22:00; Tu-Fr 09:00-24:00; Sa 16:00-24:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/10220153085",
+     "name": "Enoteca naturale",
+     "lat": 45.4534,
+     "lon": 9.18198,
+     "address": "Via Santa Croce 19",
+     "website": "https://enotecanaturale.it/",
+     "openingHours": "Mo-Fr 17:30-23:00; Sa-Su 12:30-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6053139596",
+     "name": "Euro Jolly",
+     "lat": 45.45405,
+     "lon": 9.17108,
+     "address": "Corso Cristoforo Colombo 13",
+     "website": "https://jollybiliardi.it/",
+     "openingHours": "Mo-Th 10:00-03:00; Fr-Sa 10:00-04:00; Su 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/340096546",
+     "name": "Frida",
+     "lat": 45.48875,
+     "lon": 9.18711,
+     "address": "Via Antonio Pollaiuolo 3",
+     "website": "https://www.fridaisola.it/",
+     "openingHours": "Mo-Fr 10:00-15:00,18:00-02:00; Sa 16:00-02:00; Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/559731854",
+     "name": "Frizzi & Lazzi",
+     "lat": 45.44566,
+     "lon": 9.17837,
+     "address": "Via Evangelista Torricelli 5",
+     "openingHours": "Mo-Su 18:30-02:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4049918599",
+     "name": "Ginger Cocktail Lab",
+     "lat": 45.44967,
+     "lon": 9.17771,
+     "address": "Via Ascanio Sforza 21",
+     "website": "https://www.gingercocktailab.it/",
+     "openingHours": "Tu-Su 17:30-02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/1679695858",
+     "name": "Harp Pub Guinness",
+     "lat": 45.47725,
+     "lon": 9.22552,
+     "address": "Piazza Leonardo da Vinci 10",
+     "website": "https://harppubguinness.eatbu.com/",
+     "openingHours": "Mo-Fr 11:00-24:00; Sa 00:00-01:00, 18:00-24:00; Su 00:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6302943485",
+     "name": "Iter",
+     "lat": 45.45118,
+     "lon": 9.17444,
+     "address": "Via Mario Fusetti 1",
+     "website": "https://www.farmilygroup.com/locali/iter",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/746951476",
+     "name": "King's Pub",
+     "lat": 45.45132,
+     "lon": 9.17769,
+     "address": "Alzaia Naviglio Pavese 8",
+     "website": "https://kingspub.it/",
+     "openingHours": "Mo-Fr 18:00-02:00; Sa 16:00-02:00; Su 12:00-02:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/13816813881",
+     "name": "Justme Milano",
+     "lat": 45.47313,
+     "lon": 9.17295,
+     "address": "Viale Guglielmo Shakespeare",
+     "website": "http://milano.cavalliclub.com/",
+     "openingHours": "19:30-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4041811953",
+     "name": "Sauna Metro club Milano Centrale",
+     "lat": 45.48926,
+     "lon": 9.20553,
+     "address": "Via Giovanni Schiaparelli 1",
+     "website": "https://www.metroclubmilano.it/",
+     "openingHours": "Mo-Su 12:00-01:30",
+     "detailed": true
+    },
+    {
+     "id": "node/2272639841",
+     "name": "11 Clubroom",
+     "lat": 45.48242,
+     "lon": 9.18681,
+     "address": "Via Alessio di Tocqueville 11",
+     "website": "https://www.11milano.it/"
+    },
+    {
+     "id": "node/6910530501",
+     "name": "Apollo",
+     "lat": 45.44732,
+     "lon": 9.17471,
+     "address": "Via Giosuè Borsi 9",
+     "website": "https://www.apollomilano.com/"
+    },
+    {
+     "id": "node/11046200967",
+     "name": "Apophis Club",
+     "lat": 45.46259,
+     "lon": 9.19605,
+     "address": "Via Carlo Giuseppe Merlo 3",
+     "website": "https://www.apophisclub.com/"
+    },
+    {
+     "id": "node/2993628023",
+     "name": "Armani Privè",
+     "lat": 45.47088,
+     "lon": 9.19299,
+     "address": "Via Alessandro Manzoni 31",
+     "website": "http://www.milan.armanihotels.com/"
+    },
+    {
+     "id": "way/205040446",
+     "name": "Black Hole Milano",
+     "lat": 45.46074,
+     "lon": 9.21792,
+     "website": "http://www.loginmilano.com/"
+    },
+    {
+     "id": "node/2719628296",
+     "name": "Blue Note",
+     "lat": 45.48953,
+     "lon": 9.18885,
+     "address": "Via Pietro Borsieri 37",
+     "website": "https://www.bluenotemilano.com/"
+    },
+    {
+     "id": "node/6087470974",
+     "name": "Extasià",
+     "lat": 45.4635,
+     "lon": 9.19852,
+     "address": "Largo Augusto 7",
+     "website": "https://www.extasiadiscotopless.com/"
+    },
+    {
+     "id": "node/2724178325",
+     "name": "Hollywood",
+     "lat": 45.48259,
+     "lon": 9.18721,
+     "address": "Corso Como 15",
+     "website": "https://www.discotecahollywood.com/"
+    },
+    {
+     "id": "node/2724178332",
+     "name": "LoolaPaloosa",
+     "lat": 45.48252,
+     "lon": 9.18719,
+     "address": "Corso Como 15",
+     "website": "http://www.loolapaloosa.com/"
+    },
+    {
+     "id": "node/12072440574",
+     "name": "Magazzini Generali",
+     "lat": 45.4441,
+     "lon": 9.19526,
+     "address": "Via Pietrasanta 16",
+     "website": "https://www.magazzinigenerali.org/"
+    },
+    {
+     "id": "way/548593534",
+     "name": "Old Fashion",
+     "lat": 45.47285,
+     "lon": 9.17364,
+     "address": "Viale Luigi Camoens",
+     "website": "https://oldfashion.it/"
+    },
+    {
+     "id": "node/4225439979",
+     "name": "Pineta Milano",
+     "lat": 45.48619,
+     "lon": 9.17386,
+     "address": "Via Messina 38",
+     "website": "https://www.pinetamilano.com/"
+    },
+    {
+     "id": "node/4170005103",
+     "name": "Porta d'Oro",
+     "lat": 45.46235,
+     "lon": 9.19044,
+     "address": "Piazza Armando Diaz 3",
+     "website": "http://www.portadoroclub.it/"
+    },
+    {
+     "id": "node/4170005832",
+     "name": "Shilling's",
+     "lat": 45.46195,
+     "lon": 9.19089,
+     "address": "Via Paolo da Cannobio 2",
+     "website": "https://www.shillings.it/it/shillings"
+    },
+    {
+     "id": "node/4217061020",
+     "name": "The Club",
+     "lat": 45.47754,
+     "lon": 9.18415,
+     "website": "https://www.theclubmilano.it/"
+    },
+    {
+     "id": "node/2272639838",
+     "name": "Tocqueville",
+     "lat": 45.48241,
+     "lon": 9.18648,
+     "address": "Via Alessio di Tocqueville 13",
+     "website": "http://www.tocqueville13.it/"
+    },
+    {
+     "id": "node/4170005990",
+     "name": "Venus Night Club",
+     "lat": 45.46264,
+     "lon": 9.18947,
+     "address": "Via Gaetano Giardino 1",
+     "website": "http://www.venusnightclub.it/"
+    },
+    {
+     "id": "node/6370709685",
+     "name": "Volt Club",
+     "lat": 45.45689,
+     "lon": 9.18408,
+     "address": "Via Molino delle Armi 16",
+     "website": "https://www.voltclub.it/"
+    },
+    {
+     "id": "node/8900916012",
+     "name": "747",
+     "lat": 45.47533,
+     "lon": 9.2211
+    },
+    {
+     "id": "node/4622039218",
+     "name": "Block",
+     "lat": 45.4824,
+     "lon": 9.18657,
+     "address": "Via Alessio di Tocqueville 13"
+    },
+    {
+     "id": "node/2947882515",
+     "name": "Exotica",
+     "lat": 45.48262,
+     "lon": 9.18501,
+     "address": "Via privata Nino Bonnet 11"
+    },
+    {
+     "id": "node/2524604847",
+     "name": "Fashion Rio Disco Village",
+     "lat": 45.48502,
+     "lon": 9.18489,
+     "address": "Via Giuseppe Ferrari 10"
+    },
+    {
+     "id": "node/7235042648",
+     "name": "Foca Loca",
+     "lat": 45.46133,
+     "lon": 9.19146
+    },
+    {
+     "id": "node/11109109776",
+     "name": "Luxy Club Milano",
+     "lat": 45.47946,
+     "lon": 9.20957
+    },
+    {
+     "id": "node/3078973270",
+     "name": "Play Club",
+     "lat": 45.48088,
+     "lon": 9.18955,
+     "address": "Viale Monte Grappa 14"
+    },
+    {
+     "id": "node/4441599267",
+     "name": "Rocket",
+     "lat": 45.44966,
+     "lon": 9.16126,
+     "address": "Alzaia Naviglio Grande 98"
+    },
+    {
+     "id": "node/13299575926",
+     "name": "Super Club",
+     "lat": 45.45044,
+     "lon": 9.16358,
+     "address": "Via Tortona 27"
+    },
+    {
+     "id": "node/1901845033",
+     "name": "Top Down Nightclub",
+     "lat": 45.46165,
+     "lon": 9.19098
+    }
+   ]
+  }
+ }
+}

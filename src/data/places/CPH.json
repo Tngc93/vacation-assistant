@@ -1,0 +1,1803 @@
+{
+ "version": 1,
+ "cityCode": "CPH",
+ "fetchedAt": "2026-10-16T23:37:27.070Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Copenhagen_-_view_from_Christiansborg_castle.jpg/1280px-Copenhagen_-_view_from_Christiansborg_castle.jpg",
+  "width": 1280,
+  "height": 777,
+  "author": "Pudelek",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_-_view_from_Christiansborg_castle.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/250989045",
+     "name": "Hristiyanya",
+     "localName": "Christiania",
+     "lat": 55.67721,
+     "lon": 12.60533,
+     "website": "https://www.christiania.org/",
+     "wikipediaCount": 47
+    },
+    {
+     "id": "way/378106484",
+     "name": "Amalienborg",
+     "lat": 55.68398,
+     "lon": 12.59314,
+     "wikipediaCount": 43
+    },
+    {
+     "id": "way/25992657",
+     "name": "Christiansborg Slot",
+     "lat": 55.67565,
+     "lon": 12.57906,
+     "website": "https://denkongeligesamling.dk/christiansborg-slot/",
+     "wikipediaCount": 39
+    },
+    {
+     "id": "way/25524592",
+     "name": "Rosenborg Slot",
+     "lat": 55.68569,
+     "lon": 12.57743,
+     "website": "https://www.kongernessamling.dk/rosenborg/",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 38
+    },
+    {
+     "id": "way/25466204",
+     "name": "Børsen",
+     "lat": 55.67552,
+     "lon": 12.58403,
+     "wikipediaCount": 35
+    },
+    {
+     "id": "way/1088494374",
+     "name": "Operaen",
+     "lat": 55.68199,
+     "lon": 12.60074,
+     "website": "https://kglteater.dk/",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "relation/6476337",
+     "name": "Nyhavn",
+     "lat": 55.67974,
+     "lon": 12.59091,
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/1011492033",
+     "name": "Rundetårn",
+     "lat": 55.68136,
+     "lon": 12.57579,
+     "website": "https://www.rundetaarn.dk/",
+     "openingHours": "May 01-Sep 30; Mo-Su 10:00-20:00; Oct 01-Apr 30; Mo,Th-Su 10:00-18:00; Tu,We 10:00-21:00",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "way/25524833",
+     "name": "Marmorkirken",
+     "lat": 55.68498,
+     "lon": 12.58957,
+     "website": "https://marmorkirken.dk/",
+     "openingHours": "Mo-Th 10:00-17:00; Fr 12:00-17:00; Sa 10:00-17:00; Su 13:00-17:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/25607908",
+     "name": "Vor Frelsers Kirke",
+     "lat": 55.67291,
+     "lon": 12.59425,
+     "website": "http://vorfrelserskirke.dk/",
+     "openingHours": "Mo-Su 11:00-15:30",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/25451190",
+     "name": "Vor Frue Kirke",
+     "lat": 55.67938,
+     "lon": 12.57273,
+     "website": "https://www.domkirken.dk/",
+     "openingHours": "Mo-Sa 08:00-17:00",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/25466133",
+     "name": "Det Kongelige Teater",
+     "lat": 55.67906,
+     "lon": 12.58645,
+     "website": "https://www.kgl-teater.dk/",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "relation/52142",
+     "name": "Kopenhag Belediye Binası",
+     "localName": "Københavns Rådhus",
+     "lat": 55.67527,
+     "lon": 12.57032,
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/175208408",
+     "name": "Kastellet",
+     "lat": 55.6914,
+     "lon": 12.59426,
+     "openingHours": "Mo-Su 06:00-22:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "relation/55955",
+     "name": "Frederiksberg Slot",
+     "lat": 55.67183,
+     "lon": 12.52527,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "relation/1629331",
+     "name": "Strøget",
+     "lat": 55.67835,
+     "lon": 12.57716,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/3098803",
+     "name": "Botanisk Have",
+     "lat": 55.68694,
+     "lon": 12.574,
+     "website": "https://snm.dk/en/botanical-garden",
+     "openingHours": "Apr-Sep: 08:30-18:00, Oct-Mar: 08:30-16:00",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "way/304697944",
+     "name": "Kongens Nytorv",
+     "lat": 55.68043,
+     "lon": 12.58627,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/264362254",
+     "name": "Holmens Kirke",
+     "lat": 55.67662,
+     "lon": 12.58351,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/549543686",
+     "name": "Rådhuspladsen",
+     "lat": 55.67604,
+     "lon": 12.56883,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/26363619",
+     "name": "Synagogen",
+     "lat": 55.68113,
+     "lon": 12.57352,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/133104582",
+     "name": "Helligåndskirken",
+     "lat": 55.67904,
+     "lon": 12.57697,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/40106991",
+     "name": "Christians Kirke",
+     "lat": 55.67234,
+     "lon": 12.58715,
+     "website": "http://www.christianskirke.com/",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/26436022",
+     "name": "Sankt Petri Kirke",
+     "lat": 55.68002,
+     "lon": 12.57083,
+     "website": "http://www.sankt-petri.dk/",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/25701472",
+     "name": "Skuespilhuset",
+     "lat": 55.68007,
+     "lon": 12.5947,
+     "website": "https://kglteater.dk/",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/12961134226",
+     "name": "Jens Olsens Verdensur",
+     "lat": 55.67554,
+     "lon": 12.56947,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/24721845",
+     "name": "Amagertorv",
+     "lat": 55.67879,
+     "lon": 12.57828,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/29416223",
+     "name": "HDMS Peder Skram",
+     "lat": 55.68853,
+     "lon": 12.60483,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/27226058",
+     "name": "Frihedsstøtten",
+     "lat": 55.6742,
+     "lon": 12.56329,
+     "website": "http://www.kulturarv.dk/1001fortaellinger/da_DK/frihedsstoetten-vesterbrogade-koebenhavn",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/26950604",
+     "name": "Københavns Universitetsbibliotek Fiolstræde",
+     "lat": 55.68033,
+     "lon": 12.57292,
+     "openingHours": "Tu,We,Fr,Sa 10:00-17:00; Th 10:00-16:30",
+     "wikipediaCount": 7
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/1989714",
+     "name": "Danimarka Millî Müzesi",
+     "localName": "Nationalmuseet",
+     "lat": 55.67471,
+     "lon": 12.5748,
+     "website": "https://www.nationalmuseet.dk/",
+     "openingHours": "Apr-Oct Mo-Su,PH 10:00-17:00; Nov-Mar Mo closed, Tu-Su,PH 10:00-17:00; Dec 24,25,31 off",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "way/25451395",
+     "name": "SMK - Statens Museum for Kunst",
+     "lat": 55.68875,
+     "lon": 12.57837,
+     "website": "https://www.smk.dk/",
+     "openingHours": "Tu, Th-Su 10:00-18:00; We 10:00-20:00",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "relation/1322262",
+     "name": "Ny Carlsberg Glyptotek",
+     "lat": 55.67253,
+     "lon": 12.57193,
+     "website": "https://www.glyptoteket.dk/",
+     "openingHours": "Tu-We, Fr-Su 10:00-17:00; Th 10:00-21:00",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "relation/2351676",
+     "name": "Thorvaldsens Museum",
+     "lat": 55.67675,
+     "lon": 12.5784,
+     "website": "https://www.thorvaldsensmuseum.dk/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "way/25451373",
+     "name": "Den Hirschsprungske Samling",
+     "lat": 55.68991,
+     "lon": 12.57748,
+     "website": "https://hirschsprung.dk/",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "relation/5693118",
+     "name": "Designmuseum Danmark",
+     "lat": 55.68637,
+     "lon": 12.59354,
+     "website": "https://designmuseum.dk/",
+     "openingHours": "Tu-We, Fr-Su 10:00-18:00; Th 10:00-20:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/148223101",
+     "name": "Københavns Museum",
+     "lat": 55.67438,
+     "lon": 12.57248,
+     "website": "https://cphmuseum.kk.dk/",
+     "openingHours": "Mo-We,Fr 10:00-17:00; Th 10:00-20:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/1291394245",
+     "name": "Davids Samling",
+     "lat": 55.68428,
+     "lon": 12.58238,
+     "website": "https://www.davidmus.dk/",
+     "openingHours": "Mo off; Tu,Th-Su 10:00-17:00; We 10:00-21:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/862967576",
+     "name": "Statens Naturhistoriske Museum",
+     "lat": 55.68739,
+     "lon": 12.57699,
+     "website": "https://snm.ku.dk/",
+     "openingHours": "Mo-Tu 10:00-17:00, We 10:00-21:00, Th-Su 10:00-17:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/25451113",
+     "name": "Krigsmuseet",
+     "lat": 55.67426,
+     "lon": 12.5803,
+     "website": "https://krigsmuseet.dk/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/45894028",
+     "name": "Arbejdermuseet",
+     "lat": 55.68481,
+     "lon": 12.57032,
+     "website": "https://www.arbejdermuseet.dk/",
+     "openingHours": "Mo-We 10:00-17:00; Th 10:00-20:00; Fr-Su 10:00-17:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/738986844",
+     "name": "Dansk Jødisk Museum",
+     "lat": 55.67437,
+     "lon": 12.5823,
+     "website": "https://jewmus.dk/",
+     "openingHours": "We-Su 11:00-17:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/113974090",
+     "name": "Den Frie",
+     "lat": 55.69144,
+     "lon": 12.58723,
+     "website": "https://denfrie.dk/da/",
+     "openingHours": "Mo-Tu off; We,Fr 12:00-18:00; Th 12:00-21:00; Sa-Su 10:00-18:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/283581117",
+     "name": "Teatermuseet",
+     "lat": 55.67478,
+     "lon": 12.57863,
+     "website": "https://www.teatermuseet.dk/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/166353794",
+     "name": "Cisternerne",
+     "lat": 55.66958,
+     "lon": 12.52419,
+     "website": "https://frederiksbergmuseerne.dk/da/cisternerne/",
+     "openingHours": "Mo 11:00-18:00; Tu 11:00-18:00; We-Th 11:00-20:00; Fr-Su 11:00-18:00; Oct-Nov Mo off",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/4331285861",
+     "name": "Nordatlantens Brygge",
+     "lat": 55.6776,
+     "lon": 12.59667,
+     "website": "https://www.nordatlantens.dk/",
+     "openingHours": "Mo-Fr 10:00-17:00; Sa-Su 12:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/150092019",
+     "name": "Bakkehusmuseet",
+     "lat": 55.6683,
+     "lon": 12.53196,
+     "website": "https://frederiksbergmuseerne.dk/da/bakkehuset/",
+     "openingHours": "11:00-18:00; Sa-Su 11:00-17:00; Mo off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/5936280185",
+     "name": "Dansk Arkitektur Center",
+     "lat": 55.67199,
+     "lon": 12.57906,
+     "website": "https://www.dac.dk/",
+     "openingHours": "Mo,Th,Fr 10:00-21:00; Tu,We,Sa,Su 10:00-18:00; Dec 24-25 off; Dec 31 off; Jan 1 off",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/184070826",
+     "name": "DieselHouse",
+     "lat": 55.65649,
+     "lon": 12.55523,
+     "website": "https://www.dieselhouse.dk/",
+     "openingHours": "Tu-Fr 10:00-16:00; Su 10:00-13:30; PH,Su off",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/894315602",
+     "name": "Medicinsk Museion",
+     "lat": 55.68596,
+     "lon": 12.5919,
+     "website": "https://www.museion.ku.dk/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/104564097",
+     "name": "Lille Mølle",
+     "lat": 55.6715,
+     "lon": 12.59629,
+     "website": "https://xn--lillemlle-q8a.dk/",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/783475006",
+     "name": "Frihedsmuseet",
+     "lat": 55.68819,
+     "lon": 12.5958,
+     "website": "https://natmus.dk/museer-og-slotte/frihedsmuseet/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/4315966262",
+     "name": "Kongernes Lapidarium",
+     "lat": 55.67313,
+     "lon": 12.57974,
+     "website": "http://www.kongerneslapidarium.dk/",
+     "openingHours": "May 17-Aug 31 Tu-Su 12:00-16:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/1517820296",
+     "name": "Politimuseet",
+     "lat": 55.69003,
+     "lon": 12.56085,
+     "website": "https://politi.dk/politimuseet",
+     "openingHours": "Mo,We,Fr,Sa off; Tu,Th,Su 11:00-16:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/9747492611",
+     "name": "Den Kongelige Afstøbningssamling",
+     "lat": 55.6861,
+     "lon": 12.5974,
+     "website": "https://www.smk.dk/article/den-kgl-afstoebningssamling/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/33196806",
+     "name": "Møstings Hus",
+     "lat": 55.67837,
+     "lon": 12.52776,
+     "website": "https://www.moestingshus.dk/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/176714013",
+     "name": "Enigma",
+     "lat": 55.69989,
+     "lon": 12.57451,
+     "website": "https://www.enigma.dk/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/3858601945",
+     "name": "Kongernes Samling Amalienborg",
+     "lat": 55.68445,
+     "lon": 12.59245,
+     "website": "https://denkongeligesamling.dk/amalienborgmuseet/",
+     "openingHours": "Tu-Su 10:00-16:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/4329579150",
+     "name": "Magasin du Nord Museum",
+     "lat": 55.67875,
+     "lon": 12.58401,
+     "website": "https://magasinmuseum.dk/",
+     "openingHours": "Th-Fr 13:00-15:00, Sa-Su 11:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/2473702013",
+     "name": "Overgaden",
+     "lat": 55.67247,
+     "lon": 12.5902,
+     "website": "https://overgaden.org/",
+     "openingHours": "Tu-Su 13:00-17:00; Th 13:00-20:00",
+     "wikipediaCount": 2
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/95401017",
+     "name": "Zootårnet",
+     "lat": 55.672,
+     "lon": 12.52351,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/6772144886",
+     "name": "Christiansborg Slotstårn",
+     "lat": 55.67628,
+     "lon": 12.58042,
+     "openingHours": "Tu-Sa 11:00-21:00; Su 11:00-17:30"
+    },
+    {
+     "id": "node/13092719505",
+     "name": "Grand view",
+     "lat": 55.67351,
+     "lon": 12.58253
+    },
+    {
+     "id": "node/11042697337",
+     "name": "ZooLook",
+     "lat": 55.6741,
+     "lon": 12.52216
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/6770661263",
+     "name": "À terre",
+     "lat": 55.67862,
+     "lon": 12.58741,
+     "website": "https://www.aterre.dk/",
+     "openingHours": "Tu-Sa 17:00-22:00; Su-Mo off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/281544325",
+     "name": "Akropolis",
+     "lat": 55.68436,
+     "lon": 12.5516,
+     "website": "http://www.restaurant-akropolis.dk/",
+     "openingHours": "Mo,Th,Sa 16:00-01:00, Sa-Su 16:00-05:00",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/287954706",
+     "name": "Allegade 10",
+     "lat": 55.676,
+     "lon": 12.53322,
+     "website": "https://www.allegade10.dk/",
+     "openingHours": "10:00-22:00",
+     "cuisine": "danish",
+     "detailed": true
+    },
+    {
+     "id": "node/280790034",
+     "name": "Ankara",
+     "lat": 55.68113,
+     "lon": 12.57411,
+     "website": "https://ankaracity.dk/",
+     "openingHours": "11:00-24:00; Su,PH 13:00-24:00",
+     "cuisine": "turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/727708770",
+     "name": "Asador",
+     "lat": 55.67239,
+     "lon": 12.59006,
+     "website": "https://www.asador.dk/",
+     "openingHours": "Su-Th 17:30-24:00; Fr,Sa 17:00-24:00",
+     "cuisine": "argentinian",
+     "detailed": true
+    },
+    {
+     "id": "node/3772684953",
+     "name": "Baan Thai Isarn",
+     "lat": 55.67062,
+     "lon": 12.56026,
+     "website": "https://baanthaiisarn.dk/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3659148934",
+     "name": "Bæst",
+     "lat": 55.69222,
+     "lon": 12.55591,
+     "website": "https://baest.dk/",
+     "openingHours": "Tu-Su 17:00-22:30",
+     "cuisine": "italian, organic",
+     "detailed": true
+    },
+    {
+     "id": "node/4018786112",
+     "name": "Bar' Vin",
+     "lat": 55.68074,
+     "lon": 12.57619,
+     "website": "http://barvin.dk/",
+     "openingHours": "Mo-Su 14:00-24:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/1595066431",
+     "name": "Barshu",
+     "lat": 55.66798,
+     "lon": 12.59671,
+     "website": "https://barshu.dk/",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/281539304",
+     "name": "Beijing",
+     "lat": 55.67703,
+     "lon": 12.57033,
+     "website": "http://www.restaurantbeijing.dk/",
+     "openingHours": "11:00-22:00",
+     "cuisine": "chinese buffet",
+     "detailed": true
+    },
+    {
+     "id": "node/298078187",
+     "name": "Bindia Blegdamsvej",
+     "lat": 55.69864,
+     "lon": 12.57616,
+     "website": "https://www.bindia.dk/",
+     "openingHours": "Mo-Su 16:00-21:00",
+     "cuisine": "indian, chicken, sushi, asian",
+     "detailed": true
+    },
+    {
+     "id": "node/1830057767",
+     "name": "Bindia Elmegade",
+     "lat": 55.68959,
+     "lon": 12.55829,
+     "website": "https://www.bindia.dk/",
+     "openingHours": "Mo-Su 16:00-21:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/4001229093",
+     "name": "Bindia Gl. Kongevej",
+     "lat": 55.6768,
+     "lon": 12.53944,
+     "website": "https://www.bindia.dk/",
+     "openingHours": "Mo-Su 16:00-21:00",
+     "cuisine": "indian, chicken, asian, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/894340379",
+     "name": "Bistro Boheme",
+     "lat": 55.68732,
+     "lon": 12.59126,
+     "website": "https://bistroboheme.dk/",
+     "openingHours": "11:30-00:30; Su off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/3887006773",
+     "name": "Bistro Royal",
+     "lat": 55.68141,
+     "lon": 12.58508,
+     "website": "https://www.madklubben.dk/bistro-royal/menu/",
+     "openingHours": "Mo-Fr 08:00-24:00; Sa 12:00-24:00; Su 12:00-23:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/5633560204",
+     "name": "Blaaregn",
+     "lat": 55.68772,
+     "lon": 12.547,
+     "website": "http://www.blaaregn.com/",
+     "openingHours": "We 17:30-22:00; Th-Sa 17:00-22:00; Su-Tu off",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4006260937",
+     "name": "Blue Elephant",
+     "lat": 55.66719,
+     "lon": 12.5858,
+     "website": "http://www.blueelephant.dk/",
+     "openingHours": "17:00-23:00; Su off",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/5900438262",
+     "name": "Boathouse",
+     "lat": 55.67744,
+     "lon": 12.59508,
+     "website": "https://boathouse.dk/",
+     "openingHours": "Mo-Fr 11:30-24:00, Sa,Su 10:00-24:00, Fr-Su 00:00-01:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1628914282",
+     "name": "Brdr. Price",
+     "lat": 55.68398,
+     "lon": 12.57439,
+     "website": "https://www.brdr-price.dk/",
+     "openingHours": "Mo-Su 12:00+",
+     "cuisine": "danish",
+     "detailed": true
+    },
+    {
+     "id": "node/895769852",
+     "name": "Bryggeriet Apollo",
+     "lat": 55.67482,
+     "lon": 12.5661,
+     "website": "http://a-h-b.dk/tivoli/",
+     "openingHours": "Su-Th 10:00-16:00,17:00-24:00; Fr-Sa 10:00-16:00,17:00-01:30",
+     "cuisine": "steak",
+     "detailed": true
+    },
+    {
+     "id": "node/7206690636",
+     "name": "Bulko",
+     "lat": 55.66657,
+     "lon": 12.53953,
+     "website": "https://www.bulko.dk/",
+     "openingHours": "Tu-Su 16:00-21:00",
+     "cuisine": "korean",
+     "detailed": true
+    },
+    {
+     "id": "node/1596794742",
+     "name": "Cafe Gl. Torv",
+     "lat": 55.67801,
+     "lon": 12.57145,
+     "website": "https://cafegammeltorv.dk/",
+     "openingHours": "11:30-17:00",
+     "cuisine": "smørrebrød",
+     "detailed": true
+    },
+    {
+     "id": "node/4692078130",
+     "name": "Café Patina",
+     "lat": 55.66796,
+     "lon": 12.54794,
+     "website": "http://www.cafepatina.dk/",
+     "openingHours": "We-Su 17:00-22:30",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/894328164",
+     "name": "Café Petersborg",
+     "lat": 55.68736,
+     "lon": 12.59299,
+     "website": "https://www.cafe-petersborg.dk/",
+     "openingHours": "Mo-Sa 11:45-16:00,17:00-21:00",
+     "cuisine": "danish",
+     "detailed": true
+    },
+    {
+     "id": "node/286533157",
+     "name": "Cantina",
+     "lat": 55.68232,
+     "lon": 12.58418,
+     "website": "https://www.cantinacph.dk/",
+     "openingHours": "Su-We 11:00-23:00; Th 11:00-01:00; Fr-Sa 11:00-02:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1629994151",
+     "name": "Cap Horn",
+     "lat": 55.68041,
+     "lon": 12.58952,
+     "website": "https://www.caphorn.dk/",
+     "openingHours": "09:00-24:00",
+     "cuisine": "danish",
+     "detailed": true
+    },
+    {
+     "id": "node/7179414878",
+     "name": "CC Restaurant",
+     "lat": 55.68468,
+     "lon": 12.55335,
+     "website": "http://ccrestaurant.dk/",
+     "openingHours": "Mo-Th 14:00-23:00; Fr-Su 13:00-23:00",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/3799572492",
+     "name": "CHAHBAR",
+     "lat": 55.66299,
+     "lon": 12.6016,
+     "website": "https://www.theflames.dk/",
+     "openingHours": "11:00-18:30",
+     "cuisine": "pakistinani",
+     "detailed": true
+    },
+    {
+     "id": "node/4389544397",
+     "name": "Chim Chim",
+     "lat": 55.6756,
+     "lon": 12.5642,
+     "website": "https://www.chimchim.dk/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/3932209403",
+     "name": "China Palace",
+     "lat": 55.67459,
+     "lon": 12.56196,
+     "website": "http://chinapalace-cph.dk/",
+     "openingHours": "12:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/6710880670",
+     "name": "20 grams",
+     "lat": 55.68227,
+     "lon": 12.57232,
+     "website": "https://www.20grams.dk/",
+     "openingHours": "09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1628402614",
+     "name": "42 Raw Pilestræde",
+     "lat": 55.68067,
+     "lon": 12.58054,
+     "website": "https://www.42raw.com/",
+     "openingHours": "Mo-Fr 08:00-20:00; Sa-Su 09:00-18:00",
+     "cuisine": "raw food, raw",
+     "detailed": true
+    },
+    {
+     "id": "node/8087849735",
+     "name": "Apotek 57",
+     "lat": 55.68693,
+     "lon": 12.58593,
+     "website": "https://framacph.com/stories/apotek-57",
+     "openingHours": "07:30-17:00; Sa 09:00-17:00; Su 09:00-16:00; Mo-Tu off",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/2452231120",
+     "name": "Beau Marché Cafe & Vin",
+     "lat": 55.68212,
+     "lon": 12.58144,
+     "website": "http://beau-marche.dk/",
+     "openingHours": "Sa 11:00-24:00; Mo-Fr 08:00-24:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/3726666042",
+     "name": "Bevar's",
+     "lat": 55.68844,
+     "lon": 12.562,
+     "website": "https://www.bevars.dk/",
+     "openingHours": "Mo 10:00-23:00, Tu-We 10:00-24:00, Th 10:00-01:00, Fr 10:00-02:30, Sa 10:00-02:30, Su 10:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/7706081105",
+     "name": "Bistro cocorico",
+     "lat": 55.69847,
+     "lon": 12.57589,
+     "website": "https://www.bistrococorico.dk/",
+     "openingHours": "11:00-21:00; Mo off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/4955456895",
+     "name": "Boheme",
+     "lat": 55.66461,
+     "lon": 12.60466,
+     "website": "https://www.bohemekaffebar.com/",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6689617065",
+     "name": "Botega Barlie",
+     "lat": 55.68723,
+     "lon": 12.5856,
+     "website": "https://barlie.dk/",
+     "openingHours": "Mo-We 07:30-23:00; Th-Fr 07:30-00:00; Sa 09:00-00:00; Su 10:00-16:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/4328324001",
+     "name": "Byens Bogcafé Vesterbro",
+     "lat": 55.66892,
+     "lon": 12.55197,
+     "website": "https://byensforlag.dk/",
+     "openingHours": "08:00-19:00; Sa-Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1463845914",
+     "name": "Cafe 22",
+     "lat": 55.68906,
+     "lon": 12.56465,
+     "website": "https://www.cafe22.dk/",
+     "openingHours": "Mo-We 10:30-23:00, Th 10:30-23:30, Fr 10:30-24:00, Sa 09:30-24:00, Su 09:30-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/899170201",
+     "name": "Cafe Alma",
+     "lat": 55.66548,
+     "lon": 12.57863,
+     "website": "https://cafealma.dk/",
+     "openingHours": "Sa-Th 10:00-24:00; Fr 10:00-02:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4489479206",
+     "name": "Cafe Analog",
+     "lat": 55.65999,
+     "lon": 12.59095,
+     "website": "https://cafeanalog.dk/",
+     "openingHours": "Mo-Th 08:00-15:30; Fr 08:00-13:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/518902404",
+     "name": "Café Funder",
+     "lat": 55.67505,
+     "lon": 12.53144,
+     "website": "http://www.funders.dk/frederiksberg.html",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/281253914",
+     "name": "Cafe Katz",
+     "lat": 55.67605,
+     "lon": 12.57507,
+     "website": "https://katz.dk/",
+     "openingHours": "10:00-24:00, Fr-Sa 10:00-02:00",
+     "cuisine": "burger, pasta",
+     "detailed": true
+    },
+    {
+     "id": "node/5902641228",
+     "name": "Café kopenhag",
+     "lat": 55.67169,
+     "lon": 12.57252,
+     "website": "http://kopenhag.dk/",
+     "openingHours": "07:00-20:00; Th-Sa 07:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4005982996",
+     "name": "Café Leo",
+     "lat": 55.68578,
+     "lon": 12.5849,
+     "website": "https://cafeleo.dk/",
+     "openingHours": "12:00-22:00; Sa 11:00-22:00; Su 10:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/894309869",
+     "name": "Café Oscar",
+     "lat": 55.6854,
+     "lon": 12.59139,
+     "website": "https://www.cafeoscar.dk/",
+     "openingHours": "10:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/894404556",
+     "name": "Café Paludan",
+     "lat": 55.68039,
+     "lon": 12.57323,
+     "website": "https://www.paludanbogcafe.com/",
+     "openingHours": "Mo-Th 09:00-22:00; Sa 10:00-23:00; Fr 09:00-23:00; Su 10:00-22:00",
+     "cuisine": "regional, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/8089020100",
+     "name": "Cafe Risico Amager",
+     "lat": 55.66418,
+     "lon": 12.60099,
+     "website": "http://caferisico.dk/",
+     "openingHours": "Mo-Fr 15:00-20:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1478768949",
+     "name": "Café Sorgenfri",
+     "lat": 55.67772,
+     "lon": 12.57471,
+     "website": "https://www.cafesorgenfri.dk/",
+     "openingHours": "Mo-Sa 11:00-23:00; Su 12:00-18:00",
+     "cuisine": "smørrebrød",
+     "detailed": true
+    },
+    {
+     "id": "node/279143826",
+     "name": "Café Viggo",
+     "lat": 55.67408,
+     "lon": 12.54971,
+     "website": "https://cafeviggo.com/",
+     "openingHours": "Mo-We 10:30-24:00, Th 10:30-01:00, Fr 10:30-02:00, Sa 11:00-02:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4222913303",
+     "name": "Cafe Vivaldi Frederiksberg",
+     "lat": 55.68031,
+     "lon": 12.53364,
+     "website": "https://cafevivaldi.dk/cafe/Falkoner-all%C3%A9",
+     "openingHours": "10:00-22:00; Fr-Sa 10:00-24:00; PH 10:00-22:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/8089020101",
+     "name": "Cava Cafe",
+     "lat": 55.66339,
+     "lon": 12.59753,
+     "website": "https://cavacafe.dk/",
+     "openingHours": "09:00-22:00",
+     "cuisine": "burger, brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/335962988",
+     "name": "Coffee Collective",
+     "lat": 55.69372,
+     "lon": 12.54228,
+     "website": "https://coffeecollective.dk/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa 08:00-19:00; Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5118372733",
+     "name": "Coffee Collective Bernikow",
+     "lat": 55.68003,
+     "lon": 12.58245,
+     "website": "https://coffeecollective.dk/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa 08:00-19:00; Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/8092337139",
+     "name": "Coffee Collective Sankt Hans Torv",
+     "lat": 55.69052,
+     "lon": 12.56023,
+     "website": "https://coffeecollective.dk/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5900039854",
+     "name": "Dac Cafe",
+     "lat": 55.67213,
+     "lon": 12.57931,
+     "website": "https://dac.dk/en/cafe/",
+     "openingHours": "10:00-17:30; Th 10:00-20:30",
+     "cuisine": "nordic",
+     "detailed": true
+    },
+    {
+     "id": "node/7752543169",
+     "name": "Darcys Kaffe",
+     "lat": 55.68535,
+     "lon": 12.55321,
+     "website": "https://darcyskaffe.dk/",
+     "openingHours": "07:30-17:00; Sa-Su 09:00-16:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/8399508284",
+     "name": "Den Lille Cafe",
+     "lat": 55.69649,
+     "lon": 12.58686,
+     "website": "https://denlillecafe.dk/",
+     "openingHours": "07:00-17:00; Sa-Su 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4554558854",
+     "name": "Ello Food Cafe",
+     "lat": 55.65554,
+     "lon": 12.54692,
+     "website": "https://www.supermarco.dk/da/",
+     "openingHours": "Mo-Fr 08:30-19:00; Sa 08:30-16:00",
+     "cuisine": "italian",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/10807087539",
+     "name": "Bar 7",
+     "lat": 55.67895,
+     "lon": 12.57073,
+     "website": "https://bar7.dk/",
+     "openingHours": "18:00-02:00 , Fr 16:00-04:00, Sa 18:00-04:00, Su-We off",
+     "detailed": true
+    },
+    {
+     "id": "node/9645254584",
+     "name": "Blume",
+     "lat": 55.6788,
+     "lon": 12.56984,
+     "website": "https://blumecph.dk/",
+     "openingHours": "Fr-Sa 20:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5110956545",
+     "name": "Bootleggers",
+     "lat": 55.68359,
+     "lon": 12.57026,
+     "website": "https://bootleggers.dk/city/",
+     "openingHours": "Mo,Tu 15:00-24:00, We,Th 15:00-01:00, Fr 14:00-03:00, Sa 13:00-03:00, Su 14:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6071076502",
+     "name": "Duck and Cover",
+     "lat": 55.67185,
+     "lon": 12.55239,
+     "website": "https://duckandcoverbar.dk/",
+     "openingHours": "Tu-Sa 16:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "way/324488860",
+     "name": "Lidkøb",
+     "lat": 55.67329,
+     "lon": 12.55172,
+     "website": "https://lidkoeb.dk/",
+     "openingHours": "Tu-Sa 16:00-02:00; Mo 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10918330250",
+     "name": "Side Hustle",
+     "lat": 55.67892,
+     "lon": 12.57063,
+     "website": "https://www.cafesidehustle.dk/",
+     "openingHours": "09:00-24:00, Fr-Sa 09:00-02:00, Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/13043234688",
+     "name": "Curfew",
+     "lat": 55.67311,
+     "lon": 12.55874,
+     "website": "https://curfew.dk/"
+    },
+    {
+     "id": "node/12881142012",
+     "name": "Inferno",
+     "lat": 55.67077,
+     "lon": 12.55821,
+     "openingHours": "We 18:00-00:00; Th 18:00-00:00; Fr 15:00-03:00; Sa 18:00-03:00"
+    },
+    {
+     "id": "node/4536946914",
+     "name": "The Barbershop",
+     "lat": 55.68329,
+     "lon": 12.58798,
+     "website": "https://www.thebarbershop.dk/"
+    },
+    {
+     "id": "node/8205379977",
+     "name": "The Union Local",
+     "lat": 55.68102,
+     "lon": 12.59007,
+     "website": "https://www.theunionkitchen.dk/local"
+    },
+    {
+     "id": "node/9157591532",
+     "name": "Pulp",
+     "lat": 55.69048,
+     "lon": 12.56038
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5909838195",
+     "name": "Bar Una",
+     "lat": 55.66791,
+     "lon": 12.55021,
+     "website": "https://www.baruna.dk/",
+     "openingHours": "We-Th 17:00-01:00, Fr-Sa 17:00-04:00",
+     "cuisine": "cocktails",
+     "detailed": true
+    },
+    {
+     "id": "node/1628413117",
+     "name": "Kjær & Sommerfeldt",
+     "lat": 55.68113,
+     "lon": 12.58168,
+     "website": "https://www.kjaersommerfeldt.dk/butik-k%C3%B8benhavn",
+     "openingHours": "Mo-Th,Sa 10:00-18:00; Fr 10:00-20:00",
+     "cuisine": "wine",
+     "detailed": true
+    },
+    {
+     "id": "node/4330130939",
+     "name": "Ved Stranden 10",
+     "lat": 55.6773,
+     "lon": 12.5816,
+     "website": "https://www.vedstranden10.dk/",
+     "openingHours": "Mo-Fr 15:00-22:00; Sa 12:00-22:00; Su off",
+     "cuisine": "winebar",
+     "detailed": true
+    },
+    {
+     "id": "node/7785159023",
+     "name": "Åben",
+     "lat": 55.66826,
+     "lon": 12.56155,
+     "website": "https://www.aabenbryg.dk/aaben-koedbyen",
+     "openingHours": "Mo-We 12:00-24:00, Th 14:00-01:00, Fr-Sa 13:00-02:00, Su 14:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/277703258",
+     "name": "Alléenberg",
+     "lat": 55.67527,
+     "lon": 12.53289,
+     "website": "https://www.alleenberg.dk/",
+     "openingHours": "Tu-Sa 22:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8112044321",
+     "name": "Aloha Beach Bar",
+     "lat": 55.68161,
+     "lon": 12.58431,
+     "website": "https://alohabeachbar.dk/",
+     "openingHours": "Mo-We 18:00-03:00, Th 18:00-04:00, Fr-Sa 18:00-03:05",
+     "detailed": true
+    },
+    {
+     "id": "node/3106600429",
+     "name": "Amagerhylden",
+     "lat": 55.66263,
+     "lon": 12.60439,
+     "website": "https://www.amagercentret.dk/butikker/centerpub-amagerhylden",
+     "openingHours": "Mo-Fr 10:00-19:00; Sa,Su 10:00-17:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9094826517",
+     "name": "Anarkist",
+     "lat": 55.67284,
+     "lon": 12.56674,
+     "website": "https://www.tivoli.dk/",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/4593377199",
+     "name": "Ancestrale",
+     "lat": 55.67121,
+     "lon": 12.54967,
+     "website": "https://ancestrale.dk/",
+     "openingHours": "Mo-Th 16:00-23:00; Fr-Sa 16:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/898930207",
+     "name": "Andy's Bar",
+     "lat": 55.68216,
+     "lon": 12.58224,
+     "website": "https://andysbar.dk/",
+     "openingHours": "16:00+;Fr 14:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/893959430",
+     "name": "Axelborg Bodega",
+     "lat": 55.67543,
+     "lon": 12.56444,
+     "website": "http://www.axelborgbodega.dk/",
+     "openingHours": "11:00-16:00,16:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/4328446361",
+     "name": "Balthazar Champagne Bar",
+     "lat": 55.68054,
+     "lon": 12.58335,
+     "openingHours": "We 18:00-24:00, Th 16:00-02:00, Fr 16:00-02:00, Sa 14:00-02:00",
+     "cuisine": "champagne",
+     "detailed": true
+    },
+    {
+     "id": "node/25440922",
+     "name": "Bankeråt",
+     "lat": 55.68341,
+     "lon": 12.56518,
+     "website": "https://www.bankeraat.com/",
+     "openingHours": "Mo-Fr 10:00-24:00; Sa-Su 10:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/674777891",
+     "name": "Bar 33 Vesterbro",
+     "lat": 55.66606,
+     "lon": 12.55351,
+     "website": "https://bar33.dk/",
+     "openingHours": "Fr,Sa 11:00-02:00, Su-Th 11:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6693570070",
+     "name": "Bar Deco",
+     "lat": 55.68122,
+     "lon": 12.58376,
+     "website": "https://bardeco.dk/",
+     "openingHours": "Mo-We 16:00-01:00, Th-Sa 16:00-02:00, Su 15:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8706595479",
+     "name": "Bar Vivant",
+     "lat": 55.68952,
+     "lon": 12.55819,
+     "website": "https://vivant.dk/",
+     "openingHours": "Tu-Th 12:00-23:00; Fr, Sa 12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3372385621",
+     "name": "Barkowski",
+     "lat": 55.68463,
+     "lon": 12.56759,
+     "website": "https://barkowskibar.dk/",
+     "openingHours": "Tu-We 16:00-24:00, Th 14:00-02:00, Fr 14:00-05:00, Sa 13:00-05:00, Su 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6689640698",
+     "name": "Belma",
+     "lat": 55.67021,
+     "lon": 12.55639,
+     "website": "https://www.belma.dk/",
+     "openingHours": "09:00-24:00,Th 09:00-01:00,Fr-Sa 09:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/978057337",
+     "name": "Bibendum",
+     "lat": 55.68374,
+     "lon": 12.56518,
+     "website": "https://bibendum.dk/",
+     "openingHours": "Mo-Th 17:00-23:00; Fr-Sa 16:00-23:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/7061980768",
+     "name": "Bip Bip Bar",
+     "lat": 55.6889,
+     "lon": 12.55976,
+     "website": "https://bipbipbar.dk/",
+     "openingHours": "Mo-We 15:00-00:00; Th 15:00-01:00; Fr 15:00-03:00; Sa 12:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/25869217",
+     "name": "Black Swan",
+     "lat": 55.68649,
+     "lon": 12.58743,
+     "website": "https://www.blackswanbar.dk/",
+     "openingHours": "Mo-We,Su 15:00-01:00; Th 15:00-02:00; Fr-Sa 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/281998525",
+     "name": "Blågårds Apotek",
+     "lat": 55.68646,
+     "lon": 12.55797,
+     "website": "https://www.kroteket.dk/",
+     "openingHours": "Mo-Th 14:00-02:00, Fr-Su 12:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1358983535",
+     "name": "Bootleggers Craft Beer Bar",
+     "lat": 55.66458,
+     "lon": 12.60453,
+     "website": "https://www.facebook.com/bootamager/",
+     "openingHours": "Mo-We 15:00-24:00, Th 15:00-01:00, Fr 14:00-02:00, Sa 13:00-02:00, Su 14:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/430486590",
+     "name": "Bootleggers Vesterbro",
+     "lat": 55.66818,
+     "lon": 12.54948,
+     "website": "https://bootleggers.dk/vesterbro/",
+     "openingHours": "Mo-Fr 08:00-00:00; Sa-Su 10:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4489479205",
+     "name": "Boulebar Sankt Petri",
+     "lat": 55.68094,
+     "lon": 12.57134,
+     "website": "https://www.boulebar.dk/",
+     "openingHours": "Mo-Th 15:00-23:00, Fr 12:00-01:00, Sa 10:30-01:00, Su 11:00-17:00",
+     "detailed": true
+    },
+    {
+     "id": "node/281787637",
+     "name": "Brew Pub",
+     "lat": 55.67711,
+     "lon": 12.5695,
+     "website": "https://brewpub.dk/",
+     "openingHours": "Mo-We 12:00-24:00, Th 12:00-24:00, Fr,Sa 12:00-02:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/8110000748",
+     "name": "Brus Bar",
+     "lat": 55.69182,
+     "lon": 12.55572,
+     "website": "https://tapperietbrus.dk/bar/",
+     "openingHours": "Mo-We 15:00-24:00, Th 14:00-01:00, Fr 12:00-03:00, Sa 11:00-03:00, Su 11:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7704420213",
+     "name": "Café Dan Turell",
+     "lat": 55.68161,
+     "lon": 12.58179,
+     "website": "https://cafedanturell.dk/",
+     "openingHours": "Mo 16:00-22:00, Tu-Th 16:00-24:00, Fr,Sa 16:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/683192044",
+     "name": "Café Grotten",
+     "lat": 55.66755,
+     "lon": 12.55539,
+     "website": "http://www.cafegrotten.dk/",
+     "openingHours": "Mo-We 10:00-02:00, Th-Sa 10:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/277694702",
+     "name": "Cafe Intime",
+     "lat": 55.67709,
+     "lon": 12.53212,
+     "website": "http://www.cafeintime.dk/",
+     "openingHours": "Mo-Su 16:00 - 02:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/12950339019",
+     "name": "A R C H Copenhagen",
+     "lat": 55.68157,
+     "lon": 12.57098,
+     "website": "https://www.archcph.com/",
+     "openingHours": "We 23:00-04:00,Fr-Sa 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2020615652",
+     "name": "Baggen",
+     "lat": 55.66873,
+     "lon": 12.5597,
+     "website": "http://bakkenkbh.dk/",
+     "openingHours": "Th 21:00-05:00; Fr-Sa 20:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2346118016",
+     "name": "Box54",
+     "lat": 55.68647,
+     "lon": 12.58397,
+     "website": "https://culture-box.com/",
+     "openingHours": "Fr-Sa 21:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/6837307185",
+     "name": "Chateau Motel",
+     "lat": 55.67803,
+     "lon": 12.57439,
+     "website": "https://www.chateaumotel.dk/",
+     "openingHours": "Fr-Sa 22:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8206006777",
+     "name": "Culture Box",
+     "lat": 55.68648,
+     "lon": 12.58398,
+     "website": "https://culture-box.com/",
+     "openingHours": "Fr-Sa 21:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/8141496997",
+     "name": "Dorsia",
+     "lat": 55.67737,
+     "lon": 12.57059,
+     "website": "https://dorsia.dk/",
+     "openingHours": "11:00-05:00, Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/9659449387",
+     "name": "High Voltage Copenhagen",
+     "lat": 55.68219,
+     "lon": 12.58213,
+     "website": "https://highvoltagecph.dk/",
+     "openingHours": "Fr-Sa 19:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8141496994",
+     "name": "Hive",
+     "lat": 55.67856,
+     "lon": 12.57304,
+     "website": "https://hivecph.dk/",
+     "openingHours": "Th-Sa 23:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/4460697690",
+     "name": "Jolene",
+     "lat": 55.66727,
+     "lon": 12.5612,
+     "website": "https://www.jolene.dk/",
+     "openingHours": "Su-Th 17:00-02:00, Fr-Sa 17:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9662350848",
+     "name": "Lola",
+     "lat": 55.68163,
+     "lon": 12.58417,
+     "website": "https://lolaclub.dk/kobenhavn/",
+     "openingHours": "We-Su 22:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/280530603",
+     "name": "Maxims",
+     "lat": 55.67196,
+     "lon": 12.55555,
+     "website": "https://maxims.dk/",
+     "openingHours": "14:00-24:00, Th-Sa 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8141496992",
+     "name": "Museo",
+     "lat": 55.67956,
+     "lon": 12.58357,
+     "website": "https://www.museoclub.com/",
+     "openingHours": "Fr-Sa 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/705923959",
+     "name": "Rust",
+     "lat": 55.69122,
+     "lon": 12.55925,
+     "website": "https://rust.dk/",
+     "openingHours": "Fr,Sa 23:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9645254582",
+     "name": "Alexandra",
+     "lat": 55.67853,
+     "lon": 12.5721,
+     "website": "https://alexandrahus.com/"
+    },
+    {
+     "id": "node/10840065681",
+     "name": "Basement",
+     "lat": 55.66774,
+     "lon": 12.54416,
+     "website": "https://basement.kk.dk/"
+    },
+    {
+     "id": "node/8117602442",
+     "name": "Chateau Motel Natclub",
+     "lat": 55.67796,
+     "lon": 12.57444,
+     "website": "https://chateaumotel.dk/"
+    },
+    {
+     "id": "node/280464811",
+     "name": "Club Mambo",
+     "lat": 55.67509,
+     "lon": 12.57219,
+     "website": "https://www.clubmambo.dk/"
+    },
+    {
+     "id": "node/4617344415",
+     "name": "Jazzhus Montmartre",
+     "lat": 55.682,
+     "lon": 12.58246,
+     "website": "https://www.jazzhusmontmartre.dk/"
+    },
+    {
+     "id": "node/567867798",
+     "name": "Loppen",
+     "lat": 55.67402,
+     "lon": 12.59732,
+     "website": "https://www.loppen.dk/"
+    },
+    {
+     "id": "node/11410423431",
+     "name": "Motopol",
+     "lat": 55.66862,
+     "lon": 12.61066,
+     "website": "http://www.motopol.dk/"
+    },
+    {
+     "id": "node/1590836108",
+     "name": "Copenhagen Coyote Club",
+     "lat": 55.67761,
+     "lon": 12.58123
+    },
+    {
+     "id": "node/1629986053",
+     "name": "Copenhagen Redlight",
+     "lat": 55.6807,
+     "lon": 12.58858
+    },
+    {
+     "id": "node/6858009985",
+     "name": "CPH DEEP",
+     "lat": 55.66201,
+     "lon": 12.5409
+    },
+    {
+     "id": "node/898917987",
+     "name": "Den Røde Baron",
+     "lat": 55.68225,
+     "lon": 12.58539
+    },
+    {
+     "id": "node/898920753",
+     "name": "Duke",
+     "lat": 55.68161,
+     "lon": 12.58412
+    },
+    {
+     "id": "node/674801748",
+     "name": "Ideal bar",
+     "lat": 55.6678,
+     "lon": 12.54419
+    },
+    {
+     "id": "node/250354071",
+     "name": "Kakadu Bar",
+     "lat": 55.67273,
+     "lon": 12.56161
+    },
+    {
+     "id": "node/1608830245",
+     "name": "Karel van Mander",
+     "lat": 55.67954,
+     "lon": 12.58332
+    },
+    {
+     "id": "way/36881682",
+     "name": "mBAR",
+     "lat": 55.69927,
+     "lon": 12.55887
+    },
+    {
+     "id": "node/12920684397",
+     "name": "Module",
+     "lat": 55.67558,
+     "lon": 12.56656
+    }
+   ]
+  }
+ }
+}

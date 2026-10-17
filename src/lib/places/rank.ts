@@ -8,7 +8,7 @@ export type RankedPlace = Place & {
   /** Wikipedia language editions with an article (sights, museums, viewpoints). */
   wikipediaCount?: number;
   /** True when OSM records a website, opening hours and/or cuisine (at least two). */
-  detailed?: boolean;
+  detailed?: true;
 };
 
 const collator = new Intl.Collator("tr");

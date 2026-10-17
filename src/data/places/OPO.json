@@ -1,0 +1,1834 @@
+{
+ "version": 1,
+ "cityCode": "OPO",
+ "fetchedAt": "2026-10-16T23:21:01.770Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg/1280px-O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg",
+  "width": 1280,
+  "height": 857,
+  "author": "Rititaneves",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:O_Porto_(visto_da_Ponte_Dom_Luis_I).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/603359226",
+     "name": "Casa da Música",
+     "lat": 41.15888,
+     "lon": -8.63078,
+     "address": "Avenida da Boavista 604-610",
+     "website": "https://www.casadamusica.com/",
+     "openingHours": "Mo-Su 09:30-18:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/210461448",
+     "name": "Sé do Porto",
+     "lat": 41.1428,
+     "lon": -8.61121,
+     "openingHours": "Apr-Oct 09:00-18:30; Nov-Mar 09:00-17:30",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "relation/5424595",
+     "name": "Palácio da Bolsa",
+     "lat": 41.14132,
+     "lon": -8.61586,
+     "address": "Rua da Alegria",
+     "website": "https://cciporto.com/",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/1159533444",
+     "name": "Estação de São Bento",
+     "lat": 41.14548,
+     "lon": -8.60952,
+     "website": "https://www.cp.pt/passageiros/pt/consultar-horarios/estacoes/porto-sao-bento",
+     "openingHours": "Mo-Fr 00:00-00:45,04:15-24:00; Sa,Su 00:00-00:45,05:20-24:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "node/12514092225",
+     "name": "Livraria Lello & Irmão",
+     "lat": 41.14683,
+     "lon": -8.61485,
+     "website": "https://www.livrarialello.pt/",
+     "openingHours": "Mo-Su 09:30-19:00",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "node/3398944840",
+     "name": "Barcos Rabelo",
+     "lat": 41.13826,
+     "lon": -8.61238,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "relation/3012085",
+     "name": "Câmara Municipal do Porto",
+     "lat": 41.15006,
+     "lon": -8.61071,
+     "address": "Rua do Clube dos Fenianos",
+     "website": "https://www.cm-porto.pt/",
+     "openingHours": "Mo-Sa 09:00-17:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/238893532",
+     "name": "Igreja de Santa Clara",
+     "lat": 41.14251,
+     "lon": -8.6092,
+     "address": "Largo Primeiro de Dezembro 155",
+     "website": "https://santaclaraporto.pt/",
+     "openingHours": "Mo-Su 09:00-13:00,14:00-18:00; PH off",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "relation/4673533",
+     "name": "Mosteiro da Serra do Pilar",
+     "lat": 41.13834,
+     "lon": -8.60781,
+     "address": "Largo de Avis",
+     "website": "https://culturanorte.gov.pt/patrimonio/mosteiro-da-serra-do-pilar/",
+     "openingHours": "Nov-Mar Tu-Su 10:00-17:30; Apr-Oct Tu-Su 10:00-18:30; PH off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/31573133",
+     "name": "Funicular dos Guindais",
+     "lat": 41.14096,
+     "lon": -8.60951,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/156208913",
+     "name": "Funicular dos Guindais",
+     "lat": 41.14272,
+     "lon": -8.60849,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/238899871",
+     "name": "Funicular dos Guindais",
+     "lat": 41.14221,
+     "lon": -8.60875,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/332568541",
+     "name": "Funicular dos Guindais",
+     "lat": 41.14138,
+     "lon": -8.60926,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/332568544",
+     "name": "Funicular dos Guindais",
+     "lat": 41.14198,
+     "lon": -8.60889,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/332568547",
+     "name": "Funicular dos Guindais",
+     "lat": 41.14198,
+     "lon": -8.60889,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/12453652303",
+     "name": "Café Majestic",
+     "lat": 41.14717,
+     "lon": -8.60664,
+     "website": "https://www.cafemajestic.com/",
+     "openingHours": "Mo-Sa 09:00-23:30",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/247168260",
+     "name": "Torre dos Clérigos",
+     "lat": 41.14566,
+     "lon": -8.61463,
+     "website": "https://www.torredosclerigos.pt/",
+     "openingHours": "Mo-Su 09:00-19:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/185005666",
+     "name": "Feitoria Britânica",
+     "lat": 41.14159,
+     "lon": -8.61374,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "relation/2880744",
+     "name": "Paço Episcopal do Porto",
+     "lat": 41.14199,
+     "lon": -8.6116,
+     "address": "Terreiro da Sé",
+     "website": "http://www.diocese-porto.pt/index.php?option=com_content&view=article&id=3812:visitas-paco-episcopal&catid=76:noticias",
+     "openingHours": "Mo-Su 09:00-13:00,14:00-18:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/210757796",
+     "name": "Teatro Nacional São João",
+     "lat": 41.14456,
+     "lon": -8.60754,
+     "address": "Praça da Batalha",
+     "website": "https://www.tnsj.pt/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/244599647",
+     "name": "Jardins do Palácio de Cristal",
+     "lat": 41.14703,
+     "lon": -8.62651,
+     "address": "Rua de Dom Manuel II",
+     "website": "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal",
+     "openingHours": "Oct-Mar: Mo-Su 08:00-19:00; Apr-Sep: Mo-Su 08:00-21:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/107436948",
+     "name": "Teleférico de Gaia",
+     "lat": 41.13762,
+     "lon": -8.61291,
+     "website": "https://gaiacablecar.com/",
+     "openingHours": "Apr 26-Sep 24 10:00-20:00; Mar 24-Apr 25 10:00-19:00; Sep 25-Oct 24 10:00-19:00; Oct 25-Mar 23 10:00-18:00; Dec 25 off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/365610859",
+     "name": "Capela das Almas",
+     "lat": 41.14983,
+     "lon": -8.60555,
+     "openingHours": "Tu 03:00-05:15",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/241300113",
+     "name": "Fonte das Virtudes",
+     "lat": 41.14465,
+     "lon": -8.61896,
+     "address": "Calçada das Virtudes s/n",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/286005374",
+     "name": "Igreja da Santíssima Trindade",
+     "lat": 41.15107,
+     "lon": -8.61029,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/395125611",
+     "name": "Igreja de Santo António dos Congregados",
+     "lat": 41.14634,
+     "lon": -8.6107,
+     "address": "Rua de Sá da Bandeira 11",
+     "website": "http://www.igrejacongregados.com/",
+     "openingHours": "Mo-Su 07:15-18:30",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "relation/3046626",
+     "name": "Mercado do Bolhão",
+     "lat": 41.14934,
+     "lon": -8.60712,
+     "website": "https://mercadobolhao.pt/",
+     "openingHours": "Mo-Sa 08:00-20:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/224769221",
+     "name": "Teatro Municipal Rivoli",
+     "lat": 41.14782,
+     "lon": -8.61,
+     "address": "Praça de Dom João I",
+     "website": "https://www.teatromunicipaldoporto.pt/",
+     "openingHours": "Tu-Sa 11:00-20:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/216425163",
+     "name": "Chafariz da Colher",
+     "lat": 41.14372,
+     "lon": -8.62161,
+     "address": "Rua de Miragaia s/n",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/211297740",
+     "name": "Palácio de São João Novo",
+     "lat": 41.14251,
+     "lon": -8.61773,
+     "wikipediaCount": 4
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2478836067",
+     "name": "MÜZE",
+     "localName": "Palácio da Bolsa",
+     "lat": 41.14141,
+     "lon": -8.61573,
+     "address": "Rua de Ferreira Borges",
+     "website": "http://www.palaciodabolsa.com/",
+     "openingHours": "Nov-Mar: Mo-Su 09:00-12:30,14:00-17:30; Apr-Oct: Mo-Su 09:00-18:30; Dec 25 off; Jan 1 off",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/261265893",
+     "name": "Museu Nacional Soares dos Reis",
+     "lat": 41.1483,
+     "lon": -8.62185,
+     "address": "Rua de Dom Manuel II 44",
+     "website": "https://museusoaresdosreis.gov.pt/",
+     "openingHours": "Tu 14:00-18:00; We-Su 10:00-18:00; Jan 1 off; May 1 off; Dec 1 off",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "relation/2883918",
+     "name": "Antiga Cadeia e Tribunal da Relação do Porto",
+     "lat": 41.14462,
+     "lon": -8.61596,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/332479849",
+     "name": "Museu do Carro Eléctrico",
+     "lat": 41.14802,
+     "lon": -8.63266,
+     "address": "Alameda Basílio Teles 51",
+     "website": "https://www.museudocarroelectrico.pt/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/4586091689",
+     "name": "Centro Português de Fotografia",
+     "lat": 41.14472,
+     "lon": -8.61589,
+     "address": "Largo Amor de Perdição",
+     "website": "https://cpf.pt/",
+     "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 15:00-19:00; Jan 01 off; easter off; May 01 off; Dec 25 off; PH 15:00-19:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/210571326",
+     "name": "Museu do Vinho do Porto",
+     "lat": 41.14011,
+     "lon": -8.6153,
+     "address": "Rua da Reboleira 33;35;37",
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/museu-do-vinho-do-porto",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/210461454",
+     "name": "Casa-Museu Guerra Junqueiro",
+     "lat": 41.14245,
+     "lon": -8.61079,
+     "address": "Rua de Dom Hugo 32",
+     "website": "https://museudoporto.pt/estacao/museu-guerra-junqueiro/",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/2892472764",
+     "name": "Museu Municipal de Numismática",
+     "lat": 41.14892,
+     "lon": -8.61534,
+     "address": "Praça de Carlos Alberto 71",
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/gabinete-de-numismatica_3",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/1652873556",
+     "name": "Museu Aurélia e Sofia de Souza",
+     "lat": 41.15943,
+     "lon": -8.62551,
+     "address": "Rua de Nossa Senhora de Fátima 291",
+     "website": "https://museudoporto.pt/estacao/casa-marta-ortigao-sampaio/",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/167487345",
+     "name": "Casa da Câmara",
+     "lat": 41.14304,
+     "lon": -8.61164,
+     "website": "https://museudoporto.pt/estacao/antiga-casa-da-camara/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/544594862",
+     "name": "Casa Oficina António Carneiro",
+     "lat": 41.1495,
+     "lon": -8.59388,
+     "address": "Rua de António Carneiro 363",
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/casa-oficina-antonio-carneiro",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/216272583",
+     "name": "Museu dos Transportes e Comunicações",
+     "lat": 41.14262,
+     "lon": -8.62101,
+     "website": "https://www.amtc.pt/",
+     "openingHours": "Tu-Fr 10:00-13:00, 14:00-18:00; Sa-Su 15:00-19:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "relation/2880925",
+     "name": "Museu Municipal Casa do Infante",
+     "lat": 41.14072,
+     "lon": -8.61425,
+     "address": "Rua da Alfândega 10",
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/casa-do-infante",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/449722702",
+     "name": "Museu Militar do Porto",
+     "lat": 41.14561,
+     "lon": -8.59498,
+     "address": "Rua do Heroísmo 329",
+     "website": "https://www.exercito.pt/pt/quem-somos/organizacao/ceme/vceme/dhcm/porto",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/255998376",
+     "name": "Casa Tait",
+     "lat": 41.14778,
+     "lon": -8.62855,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/256158892",
+     "name": "Casa Tait",
+     "lat": 41.14812,
+     "lon": -8.62825,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/12505592144",
+     "name": "Museu das Marionetas do Porto",
+     "lat": 41.14245,
+     "lon": -8.61674,
+     "address": "Rua de Belomonte 61",
+     "website": "https://marionetasdoporto.pt/museu-das-marionetas-do-porto/",
+     "openingHours": "We-Fr 14:00-18:00; Sa-Su 11:00-13:00,14:00-18:00; Jan 01 off; May 01 off; Jun 24 off; Dec 24-25 off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/255778741",
+     "name": "Museu do Romântico",
+     "lat": 41.14762,
+     "lon": -8.62845,
+     "address": "Rua de Entre-Quintas 220",
+     "website": "https://museudoporto.pt/estacao/museu-romantico/",
+     "openingHours": "Tu-Sa 10:00-17:30; PH off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/266663736",
+     "name": "Museu e Igreja da Misericórdia do Porto",
+     "lat": 41.14372,
+     "lon": -8.61467,
+     "address": "Rua das Flores 15",
+     "website": "https://www.mmipo.pt/",
+     "openingHours": "Mo-Su 10:00-17:30; Apr 01-Sep 30 10:00-17:30; Jan 01 off; Dec 24-25 off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/6540216045",
+     "name": "Banco de Materiais",
+     "lat": 41.14909,
+     "lon": -8.61567,
+     "address": "Praça de Carlos Alberto 71",
+     "website": "https://museudoporto.pt/estacao/banco-de-materiais/",
+     "openingHours": "Tu-Su 10:00-17:00"
+    },
+    {
+     "id": "node/12276956390",
+     "name": "Biblioteca Sonora",
+     "lat": 41.14591,
+     "lon": -8.60159,
+     "address": "Rua de Dom João IV 2",
+     "website": "https://museudoporto.pt/estacao/biblioteca-sonora/",
+     "openingHours": "Mo,Sa 10:00-18:00; Tu-Fr 09:30-19:30"
+    },
+    {
+     "id": "node/9762140816",
+     "name": "Culturgest Porto",
+     "lat": 41.14789,
+     "lon": -8.61071,
+     "address": "Avenida dos Aliados 104",
+     "website": "https://www.culturgest.pt/",
+     "openingHours": "Tu-Su 13:00-18:00"
+    },
+    {
+     "id": "node/6268146614",
+     "name": "Espaço Mira",
+     "lat": 41.14858,
+     "lon": -8.58736,
+     "address": "Rua de Miraflor 159",
+     "website": "https://miragalerias.net/homepage/",
+     "openingHours": "Tu-Sa 15:00-19:00"
+    },
+    {
+     "id": "node/12639664083",
+     "name": "Experience Trindade",
+     "lat": 41.15079,
+     "lon": -8.61036,
+     "address": "Praça da Trindade 182",
+     "website": "https://www.experience-trindade.com/",
+     "openingHours": "Mo-Su 09:30-19:00"
+    },
+    {
+     "id": "node/12992474851",
+     "name": "Galeria Municipal do Porto",
+     "lat": 41.14815,
+     "lon": -8.62694,
+     "address": "Rua de Dom Manuel II",
+     "website": "https://www.galeriamunicipaldoporto.pt/",
+     "openingHours": "Tu-Su 10:00-18:00"
+    },
+    {
+     "id": "node/11430017585",
+     "name": "Galeria Presença",
+     "lat": 41.14933,
+     "lon": -8.62371,
+     "address": "Rua de Miguel Bombarda 570",
+     "website": "https://www.galeriapresenca.pt/",
+     "openingHours": "Mo-Fr 10:00-12:30,15:00-19:30; Sa 15:00-19:30"
+    },
+    {
+     "id": "node/11430017581",
+     "name": "Galeria Serpente",
+     "lat": 41.14934,
+     "lon": -8.62362,
+     "address": "Rua de Miguel Bombarda 558",
+     "website": "https://www.galeriaserpente.com/",
+     "openingHours": "Th-Sa 15:00-19:00"
+    },
+    {
+     "id": "node/13184407665",
+     "name": "House of Filigree",
+     "lat": 41.14617,
+     "lon": -8.61212,
+     "address": "Rua do Almada 10",
+     "website": "https://houseoffiligree.com/",
+     "openingHours": "Tu-Sa 10:00-19:00"
+    },
+    {
+     "id": "node/12456103081",
+     "name": "Kubikgallery",
+     "lat": 41.14628,
+     "lon": -8.63092,
+     "address": "Rua da Restauração 2,4,6,8",
+     "website": "https://kubikgallery.com/",
+     "openingHours": "Tu-Sa 15:00-19:00"
+    },
+    {
+     "id": "node/11231050477",
+     "name": "Laboratório Ferreira da Silva",
+     "lat": 41.14628,
+     "lon": -8.61604,
+     "website": "https://mhnc.up.pt/laboratorio-ferreira-da-silva/",
+     "openingHours": "Tu-Su 10:00-13:00,14:00-18:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/9813026801",
+     "name": "Dick’s Bar & Bistro",
+     "lat": 41.13383,
+     "lon": -8.61296,
+     "openingHours": "10:00-01:00"
+    },
+    {
+     "id": "node/2319986838",
+     "name": "Miradouro da Muralha Fernandina",
+     "lat": 41.14125,
+     "lon": -8.60964,
+     "openingHours": "off"
+    },
+    {
+     "id": "node/1670330650",
+     "name": "Miradouro do Largo de Aviz",
+     "lat": 41.13831,
+     "lon": -8.60866,
+     "openingHours": "24/7"
+    },
+    {
+     "id": "node/6051512598",
+     "name": "Miradouro do teleférico",
+     "lat": 41.13816,
+     "lon": -8.60909,
+     "openingHours": "24/7"
+    },
+    {
+     "id": "node/9979902170",
+     "name": "Porto 360",
+     "lat": 41.14668,
+     "lon": -8.62594,
+     "website": "https://www.portosecretspots.com/porto360-palaciodecristal"
+    },
+    {
+     "id": "node/2488756629",
+     "name": "Miradouro da Bandeirinha da Saúde",
+     "lat": 41.1444,
+     "lon": -8.62205
+    },
+    {
+     "id": "node/1804497644",
+     "name": "Miradouro da Escarpa",
+     "lat": 41.13973,
+     "lon": -8.60215
+    },
+    {
+     "id": "node/2205918391",
+     "name": "Miradouro da Rua das Aldas",
+     "lat": 41.14243,
+     "lon": -8.61262
+    },
+    {
+     "id": "way/244543121",
+     "name": "Miradouro da Torre",
+     "lat": 41.1455,
+     "lon": -8.62761
+    },
+    {
+     "id": "node/2712350986",
+     "name": "Miradouro da Vitória",
+     "lat": 41.14312,
+     "lon": -8.61577
+    },
+    {
+     "id": "node/4562423390",
+     "name": "Miradouro das Fontaínhas",
+     "lat": 41.14256,
+     "lon": -8.60091
+    },
+    {
+     "id": "node/2205918631",
+     "name": "Miradouro do Largo do Colégio",
+     "lat": 41.14206,
+     "lon": -8.61294
+    },
+    {
+     "id": "node/4972459686",
+     "name": "Miradouro do Monte do Tadeu",
+     "lat": 41.15706,
+     "lon": -8.60126
+    },
+    {
+     "id": "node/2255178454",
+     "name": "Miradouro do Passeio das Virtudes",
+     "lat": 41.14448,
+     "lon": -8.61861
+    },
+    {
+     "id": "node/5280168728",
+     "name": "Miradouro do Prado do Repouso",
+     "lat": 41.14181,
+     "lon": -8.59349
+    },
+    {
+     "id": "node/2205918557",
+     "name": "Miradouro do Terreiro da Sé",
+     "lat": 41.14231,
+     "lon": -8.61205
+    },
+    {
+     "id": "node/2319986841",
+     "name": "Miradouro Ponte Luiz I",
+     "lat": 41.13965,
+     "lon": -8.60934
+    },
+    {
+     "id": "node/12295006748",
+     "name": "Torre sul da Sé do Porto",
+     "lat": 41.14269,
+     "lon": -8.61159
+    },
+    {
+     "id": "node/9496426718",
+     "name": "Vista sobre a Torre dos Clérigos",
+     "lat": 41.14615,
+     "lon": -8.60716
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/8672804656",
+     "name": "Adega Bodega",
+     "lat": 41.14711,
+     "lon": -8.61686,
+     "address": "Rua do Carmo 14 A",
+     "website": "https://www.adegabodega.pt/",
+     "openingHours": "Tu-Su 08:00-16:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5832101685",
+     "name": "Al Forno da Baixa",
+     "lat": 41.14765,
+     "lon": -8.61209,
+     "address": "Rua do Almada 160",
+     "website": "https://www.facebook.com/francesinhasalfornodabaixa",
+     "openingHours": "12:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5618476591",
+     "name": "Arco da Velha, Bistro & Wine Bar",
+     "lat": 41.15564,
+     "lon": -8.61842,
+     "address": "Travessa da Figueirôa 52",
+     "website": "https://arcodavelha.wordpress.com/",
+     "openingHours": "Tu-Th 19:00-23:00; Fr,Sa 19:00-24:00",
+     "cuisine": "mediterranean, portuguese, european",
+     "detailed": true
+    },
+    {
+     "id": "node/6264717186",
+     "name": "Boa Bao",
+     "lat": 41.14927,
+     "lon": -8.61306,
+     "address": "Rua da Picaria 61-65",
+     "website": "https://en.boabao.pt/porto",
+     "openingHours": "Mo-Fr 18:30-22:30; Sa-Su 12:30-15:00, 18:30-22:30",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/3765179369",
+     "name": "Bufete Fase",
+     "lat": 41.15639,
+     "lon": -8.60475,
+     "address": "Rua de Santa Catarina 1147",
+     "website": "https://bufetefase.eatbu.com/",
+     "openingHours": "Mo-Fr 12:00-16:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/6384549512",
+     "name": "Buga Ramen Aliados",
+     "lat": 41.14881,
+     "lon": -8.61194,
+     "address": "Rua de Ramalho Ortigão 53",
+     "website": "https://bugaramenlisboa.pt/listing",
+     "openingHours": "12:00-22:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/3223953612",
+     "name": "Bugo Art Burgers",
+     "lat": 41.14928,
+     "lon": -8.62402,
+     "address": "Rua de Miguel Bombarda 598",
+     "website": "https://bugo.com.pt/",
+     "openingHours": "Mo-Tu 12:00-15:00,19:30-23:30;Fr 12:00-15:00,19:30-24:00;Sa 12:00-16:00,19:30-24:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/4606966389",
+     "name": "Café Santiago",
+     "lat": 41.14645,
+     "lon": -8.60478,
+     "address": "Rua de Passos Manuel 226",
+     "website": "https://cafesantiago.pt/",
+     "openingHours": "Mo-Sa 11:00-23:00",
+     "cuisine": "local, portuguese, sandwich, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/7250391484",
+     "name": "Capim Dourado",
+     "lat": 41.15169,
+     "lon": -8.61757,
+     "address": "Rua de Cedofeita 322",
+     "website": "https://capimdourado.pt/en/home/",
+     "openingHours": "We,Th 12:30-15:00,19:30-23:00; Fr 12:30-15:00,19:30-24:00; Sa 13:00-16:00,19:30-24:00; Su 13:00-16:00,19:30-23:00",
+     "cuisine": "brazilian",
+     "detailed": true
+    },
+    {
+     "id": "node/9460739517",
+     "name": "Casa Guedes Rooftop",
+     "lat": 41.146,
+     "lon": -8.60412,
+     "address": "Praça dos Poveiros 76",
+     "website": "https://casaguedes.pt/",
+     "openingHours": "Mo-Th 12:00-23:30; Fr-Sa 12:00-24:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/3622670566",
+     "name": "Cervejaria Brasão Aliados",
+     "lat": 41.14917,
+     "lon": -8.61178,
+     "address": "Rua de Ramalho Ortigão 28",
+     "website": "https://www.brasao.pt/",
+     "openingHours": "Mo-We 12:00-14:30, 19:00-24:00; Th-Sa 12:00-14:30, 19:00-02:00; Su 12:00-14:30, 19:00-24:00",
+     "cuisine": "portuguese, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/3223968740",
+     "name": "Cervejaria Diu",
+     "lat": 41.15651,
+     "lon": -8.62113,
+     "address": "Rua da Boavista 665",
+     "website": "https://www.facebook.com/diuboavista",
+     "openingHours": "Mo-Sa 12:00-02:00",
+     "cuisine": "regional, francesinha",
+     "detailed": true
+    },
+    {
+     "id": "node/3695905667",
+     "name": "Cult of Pita",
+     "lat": 41.14997,
+     "lon": -8.60621,
+     "address": "Rua de Fernandes Tomás 652",
+     "website": "https://www.cultofpita.com/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "middle eastern",
+     "detailed": true
+    },
+    {
+     "id": "node/6366118027",
+     "name": "Domo Domo",
+     "lat": 41.15061,
+     "lon": -8.60971,
+     "address": "Rua de Fernandes Tomás 953",
+     "website": "https://domodomo.pt/",
+     "openingHours": "Mo-Th 12:30-15:00,19:30-23:00; Fr 12:30-15:00,19:30-24:00; Sa 19:30-24:00",
+     "cuisine": "japanese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/5454862522",
+     "name": "Douro Velho",
+     "lat": 41.13797,
+     "lon": -8.61156,
+     "address": "Avenida de Diogo Leite 302",
+     "website": "https://dourovelho.pt/",
+     "openingHours": "Mo-Su 12:00 - 23:00",
+     "cuisine": "coffee shop, portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/2207669776",
+     "name": "Em Canto",
+     "lat": 41.14457,
+     "lon": -8.61208,
+     "address": "Rua de Afonso Martins Alho 6",
+     "website": "https://em-canto.pt/",
+     "openingHours": "Tu-Sa 12:00-22:30; Su 12:00-15:30",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/4560809090",
+     "name": "Hard Rock Cafe",
+     "lat": 41.14722,
+     "lon": -8.61207,
+     "address": "Rua do Almada 120",
+     "website": "https://cafe.hardrock.com/porto/",
+     "openingHours": "Mo-Su 12:00-23:30",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "node/9193106512",
+     "name": "NOLA 2.0",
+     "lat": 41.15133,
+     "lon": -8.60715,
+     "address": "Rua do Bolhão 124",
+     "website": "https://nola.com.pt/",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "cuisine": "international, brunch, breakfast, healthy",
+     "detailed": true
+    },
+    {
+     "id": "node/4999524021",
+     "name": "Noshi",
+     "lat": 41.14709,
+     "lon": -8.6168,
+     "address": "Rua do Carmo 11,12",
+     "website": "https://coffee.noshi.pt/",
+     "openingHours": "08:00-18:00",
+     "cuisine": "breakfast, regional, burger, asian",
+     "detailed": true
+    },
+    {
+     "id": "node/4470178155",
+     "name": "Nova Era",
+     "lat": 41.14698,
+     "lon": -8.59643,
+     "address": "Rua de Ferreira Cardoso 56",
+     "website": "http://www.novaerarestaurante.com/",
+     "openingHours": "09:00-00:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/7192070888",
+     "name": "Real Hamburgueria Portuguesa",
+     "lat": 41.15256,
+     "lon": -8.62001,
+     "address": "Rua da Torrinha 134",
+     "website": "https://www.realhamburgueria.pt/",
+     "openingHours": "Tu-Sa 12:00-23:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/4273681794",
+     "name": "Reitoria",
+     "lat": 41.1476,
+     "lon": -8.61538,
+     "address": "Rua Sá de Noronha 33",
+     "website": "https://www.reitoria.pt/",
+     "openingHours": "12:00-24:00",
+     "cuisine": "regional, steakhouse, wine bar",
+     "detailed": true
+    },
+    {
+     "id": "node/2209115564",
+     "name": "Restaurante Astória",
+     "lat": 41.14594,
+     "lon": -8.61116,
+     "address": "Praça da Liberdade 25",
+     "website": "https://astoriarestaurante.com/",
+     "openingHours": "Mo-Su 12:30-15:30,19:30-22:30",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/4689785692",
+     "name": "Restaurante Cidraria Celta Endovélico",
+     "lat": 41.15295,
+     "lon": -8.60799,
+     "address": "Rua do Bonjardim 680",
+     "website": "https://portaldasidra.pt/",
+     "openingHours": "Tu-Th 19:00-23:00; Fr-Sa 19:00-01:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/5316076222",
+     "name": "Ris8tto da Baixa",
+     "lat": 41.14827,
+     "lon": -8.61223,
+     "address": "Rua do Almada 203",
+     "website": "https://www.ris8tto.com/",
+     "openingHours": "Mo-Su 11:00-00:00",
+     "cuisine": "portuguese, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4621518200",
+     "name": "Shiko",
+     "lat": 41.14342,
+     "lon": -8.60773,
+     "address": "Rua do Sol 238",
+     "website": "https://fb.com/shikotascajaponesa",
+     "openingHours": "Th, Fr 12:30-15:00, 19:30-22:30; Sa 13:00-16:00, 19:30-23:00",
+     "cuisine": "sushi, japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/6214994685",
+     "name": "Subenshi",
+     "lat": 41.14646,
+     "lon": -8.61661,
+     "address": "Praça de Parada Leitão 13",
+     "website": "https://www.subenshi.pt/",
+     "openingHours": "Mo-Th 12:00-16:00,19:30-22:30; Fr 12:00-16:00,19:30-23:00; Sa 12:30-16:00,19:30-23:00; Su 12:30-16:00,19:30-22:30",
+     "cuisine": "japanese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/3411872393",
+     "name": "Tapabento",
+     "lat": 41.14595,
+     "lon": -8.61004,
+     "address": "Rua da Madeira 222",
+     "website": "https://www.tapabento.com/",
+     "openingHours": "Mo-Su 12:00-24:00; Fr,Sa 00:00-02:00,12:00-24:00",
+     "cuisine": "mediterranean, portuguese, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/5223167123",
+     "name": "Tascö",
+     "lat": 41.14762,
+     "lon": -8.61226,
+     "address": "Rua do Almada 151 A",
+     "website": "https://otasco.pt/",
+     "openingHours": "19:00-00:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/7827886685",
+     "name": "The Lingerie Restaurant - Porto",
+     "lat": 41.15367,
+     "lon": -8.60881,
+     "address": "Rua de Gonçalo Cristóvão 198",
+     "website": "https://porto.thelingerierestaurant.com/",
+     "openingHours": "We-Fr 20:30-01:00; Sa 19:00-02:00",
+     "cuisine": "fine dining",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2232562423",
+     "name": "Café Santiago F",
+     "lat": 41.14655,
+     "lon": -8.60527,
+     "address": "Rua de Passos Manuel 198",
+     "website": "https://cafesantiago.pt/",
+     "openingHours": "Mo-Sa 12:00-22:50",
+     "cuisine": "local, portuguese, sandwich, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/6077105387",
+     "name": "Combi Coffee",
+     "lat": 41.14666,
+     "lon": -8.60138,
+     "address": "Rua do Morgado de Mateus 29",
+     "website": "http://combicoffee.pt/",
+     "openingHours": "09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2246117828",
+     "name": "Diplomata",
+     "lat": 41.14815,
+     "lon": -8.61433,
+     "address": "Rua de José Falcão 32",
+     "website": "https://www.facebook.com/odiplomatabar/",
+     "openingHours": "We-Su 09:00-16:00",
+     "cuisine": "american, diner, pancake",
+     "detailed": true
+    },
+    {
+     "id": "node/11919782527",
+     "name": "DOM | specialty coffee & brunch",
+     "lat": 41.15614,
+     "lon": -8.61884,
+     "address": "Rua da Boavista 469",
+     "website": "https://cafedom.pt/",
+     "openingHours": "Mo-Fr 10:00-16:00; Sa,Su 09:00-16:00; Jan 01 off",
+     "cuisine": "belarusian, european",
+     "detailed": true
+    },
+    {
+     "id": "node/13255745798",
+     "name": "Esquires Coffee",
+     "lat": 41.14625,
+     "lon": -8.60757,
+     "address": "Rua de 31de Janeiro 197",
+     "website": "http://www.esquirescoffee.pt/",
+     "openingHours": "08:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6406276685",
+     "name": "Fábrica Coffee Roasters - Porto",
+     "lat": 41.14895,
+     "lon": -8.61414,
+     "address": "Rua de José Falcão 122",
+     "website": "https://www.fabricacoffeeroasters.com/",
+     "openingHours": "09:00-17:00",
+     "cuisine": "breakfast, coffee shop, deli",
+     "detailed": true
+    },
+    {
+     "id": "node/12798015870",
+     "name": "Francisco",
+     "lat": 41.15092,
+     "lon": -8.61201,
+     "address": "Rua do Almada 440",
+     "website": "https://www.instagram.com/fran.cisco.porto",
+     "openingHours": "Tu-Sa 10:00-18:00",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4920992113",
+     "name": "Jeronymo",
+     "lat": 41.14582,
+     "lon": -8.61051,
+     "address": "Praça de Almeida Garrett",
+     "website": "https://www.jeronymo.pt/",
+     "openingHours": "Mo-Su 08:00-21:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2925394654",
+     "name": "Lado B",
+     "lat": 41.14658,
+     "lon": -8.60538,
+     "address": "Rua de Passos Manuel 190",
+     "website": "https://www.ladobcafe.pt/",
+     "openingHours": "Mo-Th 11:00-23:30; Fr-Sa 11:00-01:45",
+     "cuisine": "regional, portuguese, local",
+     "detailed": true
+    },
+    {
+     "id": "node/10271288409",
+     "name": "LOOK.Sharp Cafe Porto | Coworking | Events | Retail",
+     "lat": 41.14456,
+     "lon": -8.6087,
+     "address": "Rua de Cimo de Vila 41",
+     "website": "https://www.google.com/maps?cid=18212082232445119419",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/12473562701",
+     "name": "My Coffee Porto",
+     "lat": 41.14379,
+     "lon": -8.61011,
+     "address": "Rua Chã 72",
+     "website": "https://menumigo.com/my-coffee-porto-rua-cha-specialty-coffee-shop",
+     "openingHours": "Mo-Su 08:00-17:00",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/4853102921",
+     "name": "Nata Lisboa",
+     "lat": 41.14506,
+     "lon": -8.61176,
+     "address": "Rua das Flores 291",
+     "website": "https://www.natalisboa.com/",
+     "openingHours": "Mo-Su 10:00-20:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/12140946755",
+     "name": "Nata7",
+     "lat": 41.15213,
+     "lon": -8.609,
+     "website": "https://www.nata7.com/",
+     "openingHours": "Mo-Su 08:00-19:00",
+     "cuisine": "pastel de nata, coffee",
+     "detailed": true
+    },
+    {
+     "id": "node/9920631317",
+     "name": "SO Coffee Roasters",
+     "lat": 41.14848,
+     "lon": -8.61505,
+     "address": "Rua de Sá Noronha 119",
+     "website": "https://www.soroasters.com/",
+     "openingHours": "Mo-Sa 09:00-17:00; Su 09:30-13:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1278190164",
+     "name": "Starbucks",
+     "lat": 41.14578,
+     "lon": -8.6135,
+     "address": "Rua dos Clérigos 73",
+     "website": "https://www.starbucks.pt/",
+     "openingHours": "Mo-Fr 07:30-21:00; Sa 07:30-21:30; Su,PH 07:30-20:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/9011072317",
+     "name": "Starbucks",
+     "lat": 41.14994,
+     "lon": -8.60503,
+     "website": "https://www.starbucks.pt/",
+     "openingHours": "Mo-Th,Su 07:30-21:00; Fr,Sa 07:30-21:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/9300234971",
+     "name": "Starbucks",
+     "lat": 41.15662,
+     "lon": -8.63028,
+     "website": "https://www.starbucks.pt/",
+     "openingHours": "Mo-Sa 09:30-20:00; Su 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11970686661",
+     "name": "Starbucks",
+     "lat": 41.14336,
+     "lon": -8.61028,
+     "address": "Rua de Saraiva de Carvalho 1",
+     "website": "https://www.starbucks.pt/",
+     "openingHours": "Mo-Su,PH 08:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/12453480440",
+     "name": "Starbucks",
+     "lat": 41.14342,
+     "lon": -8.61307,
+     "address": "Rua de Mouzinho da Silveira 196",
+     "website": "https://www.starbucks.pt/",
+     "openingHours": "Mo-Su 07:30-20:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5023887152",
+     "name": "Zenith Porto",
+     "lat": 41.14848,
+     "lon": -8.61547,
+     "address": "Praça de Carlos Alberto 86",
+     "website": "http://www.zenithcaffe.pt/",
+     "openingHours": "Mo-Su 08:00-18:00",
+     "cuisine": "brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/12408974706",
+     "name": "A Certain Café",
+     "lat": 41.14703,
+     "lon": -8.60054,
+     "address": "Rua do Morgado de Mateus 107",
+     "website": "https://www.a-certain.com/",
+     "openingHours": "Mo-Su 09:00-17:00; Tu off; Fr,Sa 09:00-17:00,19:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12453706948",
+     "name": "Belami",
+     "lat": 41.14954,
+     "lon": -8.60436,
+     "openingHours": "Mo-Fr 07:00-19:00; Sa-Su 07:00-16:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/11430015647",
+     "name": "Bicho",
+     "lat": 41.15141,
+     "lon": -8.61855,
+     "address": "Rua do Breiner 72",
+     "website": "https://obicho.pt/",
+     "openingHours": "We-Fr 10:00-18:00; Sa-Su,PH 10:00-16:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13372020637",
+     "name": "Brunch Na Sé",
+     "lat": 41.14256,
+     "lon": -8.61325,
+     "address": "Rua de Sant'Ana 24",
+     "openingHours": "Mo-Sa 08:30-15:00",
+     "cuisine": "coffee shop, breakfast, tea, bagel, brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/6438144186",
+     "name": "C'alma - Specialty Coffee Room",
+     "lat": 41.14711,
+     "lon": -8.60798,
+     "address": "Rua de Passos Manuel 44",
+     "openingHours": "PH,Mo-Sa 10:00-18:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/3694252553",
+     "name": "Café Aliança",
+     "lat": 41.14826,
+     "lon": -8.61056,
+     "address": "Avenida dos Aliados 152",
+     "website": "https://cafealianca.eatbu.com/",
+     "openingHours": "Mo-Fr 06:30-20:00; Sa 07:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12408974705",
+     "name": "Café Asa de Mosca",
+     "lat": 41.14725,
+     "lon": -8.59893,
+     "address": "Rua do Duque da Terceira 377",
+     "openingHours": "Mo-Fr 08:00-23:00",
+     "cuisine": "coffee shop, portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/6652110076",
+     "name": "Café Casa da Música",
+     "lat": 41.15908,
+     "lon": -8.63077,
+     "address": "Avenida da Boavista 604",
+     "website": "https://www.restaurantecasadamusica.com/caf-casa-da-msica-1",
+     "openingHours": "Mo-Th 09:00-22:00; Fr,Sa 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2222466728",
+     "name": "Café Lobito",
+     "lat": 41.14459,
+     "lon": -8.60624,
+     "address": "Rua de Alexandre Herculano 396",
+     "website": "https://cafelobito.wixsite.com/home",
+     "openingHours": "Mo-Fr 07:00-20:00; Su 08:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6588870292",
+     "name": "Café M.",
+     "lat": 41.15301,
+     "lon": -8.60356,
+     "address": "Rua da Alegria 372",
+     "openingHours": "Mo-Fr 09:00-18:00; Sa 09:00-15:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4606935253",
+     "name": "17° Bar",
+     "lat": 41.15219,
+     "lon": -8.60722,
+     "address": "Rua do Bolhão 223",
+     "website": "https://decimosetimo.pt/pt/bar/",
+     "openingHours": "Mo-Su 12:00-02:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/4795833221",
+     "name": "Catraio Craft Beer Shop & Bar",
+     "lat": 41.15111,
+     "lon": -8.6173,
+     "address": "Rua de Cedofeita 256",
+     "website": "https://catraio.pt/",
+     "openingHours": "Mo-Th 17:00-23:00; Fr-Sa 17:00-24:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/4689677796",
+     "name": "Wine Quay Bar",
+     "lat": 41.14035,
+     "lon": -8.61419,
+     "address": "Cais da Estiva 111;112",
+     "website": "https://winequaybar.com/",
+     "openingHours": "Mo-Sa 16:00-23:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/2730418376",
+     "name": "Aduela",
+     "lat": 41.14892,
+     "lon": -8.61505,
+     "address": "Rua das Oliveiras 36",
+     "website": "https://aduela.eatbu.com/",
+     "openingHours": "Tu-Sa 13:00-02:00; Su 15:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9590511990",
+     "name": "Bar of Soap",
+     "lat": 41.15144,
+     "lon": -8.60711,
+     "address": "Rua do Bolhão 132",
+     "website": "https://instagram.com/barofsoapporto",
+     "openingHours": "Tu-Th 17:00-24:00; Fr, Sa 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "way/595190603",
+     "name": "Base Porto",
+     "lat": 41.14618,
+     "lon": -8.61472,
+     "address": "Rua das Carmelitas 151",
+     "website": "https://baseporto.com/",
+     "openingHours": "Mo-Su 11:00-22:00; Fr,Sa 00:00-02:00,11:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13261859301",
+     "name": "Bosco Porto",
+     "lat": 41.14488,
+     "lon": -8.61857,
+     "address": "Rua de Azevedo de Albuquerque 1",
+     "website": "http://bosco.pt/",
+     "openingHours": "Tu-Th 12:00-01:00; Mo 14:00-21:00; Fr-Sa 12:00-02:00; Su 12:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9187107718",
+     "name": "Café A Brasileira",
+     "lat": 41.14687,
+     "lon": -8.60947,
+     "website": "https://abrasileiraporto.com/cafetaria.php",
+     "openingHours": "08:30-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2413523268",
+     "name": "Capela Incomum",
+     "lat": 41.14905,
+     "lon": -8.61781,
+     "address": "Travessa do Carregal 79",
+     "website": "https://www.capelaincomum.pt/",
+     "openingHours": "Tu,We 16:00-24:00;Th-Sa 16:00-02:00;Mo-Sa 16:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12533953306",
+     "name": "Casa Guedes Tradicional",
+     "lat": 41.146,
+     "lon": -8.60346,
+     "address": "Praça dos Poveiros 130",
+     "website": "https://casaguedes.pt/",
+     "openingHours": "Mo-Sa 08:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/3651488236",
+     "name": "Cervejaria Gazela",
+     "lat": 41.14489,
+     "lon": -8.6076,
+     "address": "Travessa de Cimo de Vila 4",
+     "openingHours": "Mo-Sa 12:00-22:30; PH off",
+     "cuisine": "hot dog",
+     "detailed": true
+    },
+    {
+     "id": "node/5870333488",
+     "name": "Fábrica Nortada",
+     "lat": 41.1479,
+     "lon": -8.60822,
+     "address": "Rua de Sá da Bandeira 210",
+     "website": "https://cervejanortada.pt/",
+     "openingHours": "Tu-Sa 12:00-00:00; Su 16:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11417119412",
+     "name": "Galerias de Paris;Galerias Paris",
+     "lat": 41.14711,
+     "lon": -8.61431,
+     "address": "Rua da Galeria de Paris 56",
+     "website": "https://www.facebook.com/restaurantegaleriadeparis",
+     "openingHours": "Mo-Th 10:00-03:00, Fr-Sa 10:00-04:00, Su 10:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9190502624",
+     "name": "Lounge Nr1",
+     "lat": 41.15247,
+     "lon": -8.6057,
+     "address": "Rua de Sá da Bandeira 740",
+     "website": "https://www.lounge1.pt/",
+     "openingHours": "Mo-Th, Su 14:00-01:00; Fr, Sa 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2232562405",
+     "name": "Maus Hábitos",
+     "lat": 41.14667,
+     "lon": -8.60581,
+     "address": "Rua de Passos Manuel 178",
+     "website": "https://www.maushabitos.com/",
+     "openingHours": "Mo 18:00-24:00; Tu-Th 12:00-24:00; Fr 00:00-02:00,12:00-24:00; Sa 00:00-06:00,12:00-24:00; Su 00:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13340100021",
+     "name": "Mirajazz",
+     "lat": 41.14168,
+     "lon": -8.6181,
+     "website": "https://mirajazz.pt/",
+     "openingHours": "Mo-Su 13:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12083642269",
+     "name": "Nope",
+     "lat": 41.14974,
+     "lon": -8.62057,
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "russian",
+     "detailed": true
+    },
+    {
+     "id": "node/5809054754",
+     "name": "Prova",
+     "lat": 41.14251,
+     "lon": -8.61513,
+     "address": "Rua Ferreira Borges 86",
+     "website": "https://prova.com.pt/",
+     "openingHours": "Mo-Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4025646592",
+     "name": "Vicent",
+     "lat": 41.14605,
+     "lon": -8.60828,
+     "address": "Rua de 31 de Janeiro 174",
+     "website": "https://casavicent.pt/",
+     "openingHours": "We-Th,Su 15:00-23:00; Fr-Sa 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11076874406",
+     "name": "Vinum",
+     "lat": 41.13776,
+     "lon": -8.62372,
+     "address": "Rua do Agro 141",
+     "website": "https://vinumatgrahams.com/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12261073614",
+     "name": "A Cervejaria by Caçula Group",
+     "lat": 41.14932,
+     "lon": -8.6164,
+     "address": "Rua de Cedofeita",
+     "openingHours": "Su-Th 12:00-11:00; Fr-Sa 12:00-00:00"
+    },
+    {
+     "id": "node/5870352186",
+     "name": "A Fábrica da Picaria",
+     "lat": 41.14953,
+     "lon": -8.6129,
+     "address": "Rua da Picaria 72",
+     "openingHours": "Mo-Sa 11:15-00:00"
+    },
+    {
+     "id": "node/7844488442",
+     "name": "Adega do Praxista",
+     "lat": 41.1489,
+     "lon": -8.59904,
+     "openingHours": "Mo-Sa 05:45-18:00+"
+    },
+    {
+     "id": "node/4311036190",
+     "name": "African Bar",
+     "lat": 41.14209,
+     "lon": -8.61331,
+     "address": "Rua dos Mercadores 124",
+     "cuisine": "diner, african, coffee shop"
+    },
+    {
+     "id": "node/4552745887",
+     "name": "Arco das Verdades",
+     "lat": 41.14151,
+     "lon": -8.61108,
+     "address": "Escadas das Verdades 13",
+     "openingHours": "Tu-We,Su 09:00-20:00; Th 09:00-19:30; Fr-Sa 09:00-22:00"
+    },
+    {
+     "id": "node/5870352185",
+     "name": "Armazém da Cerveja",
+     "lat": 41.14765,
+     "lon": -8.60367,
+     "address": "Rua Formosa 130",
+     "openingHours": "Mo-Su 16:00-00:00"
+    },
+    {
+     "id": "node/5531827969",
+     "name": "Bali-Hai Polynesian Bar",
+     "lat": 41.15629,
+     "lon": -8.61796,
+     "address": "Rua das Águas Férreas 9",
+     "openingHours": "Mo-Su 21:30-01:00"
+    },
+    {
+     "id": "node/10007151517",
+     "name": "Baobab Craft Beer",
+     "lat": 41.15037,
+     "lon": -8.61218,
+     "address": "Rua do Almada 377",
+     "openingHours": "Mo-Su 16:00-24:00"
+    },
+    {
+     "id": "node/13512697804",
+     "name": "Bar High Life com Maus Hábitos",
+     "lat": 41.14536,
+     "lon": -8.60686,
+     "address": "Praça da Batalha 47",
+     "openingHours": "Tu-Su 12:00-20:00; Fr,Sa 14:00-22:00"
+    },
+    {
+     "id": "node/6549945394",
+     "name": "Bierhaus Porto",
+     "lat": 41.14706,
+     "lon": -8.614,
+     "address": "Rua Cândido dos Reis 81",
+     "openingHours": "Su-Th 19:00-02:00, Fr,Sa 19:00-04:00"
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4554590988",
+     "name": "Hot Five Jazz & Blues Club",
+     "lat": 41.14236,
+     "lon": -8.60789,
+     "website": "https://hotfive.pt/",
+     "openingHours": "Th-Su 21:30-02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/12681175788",
+     "name": "Barracuda clube de roque",
+     "lat": 41.14599,
+     "lon": -8.60962,
+     "address": "Rua da Madeira 186",
+     "openingHours": "Fi-Sa 23:00-07:00"
+    },
+    {
+     "id": "node/2204179845",
+     "name": "Gare Club",
+     "lat": 41.146,
+     "lon": -8.60959,
+     "address": "Rua da Madeira",
+     "website": "https://shotgun.live/en/venues/gare-porto"
+    },
+    {
+     "id": "node/1223740137",
+     "name": "Hard Club",
+     "lat": 41.14182,
+     "lon": -8.61489,
+     "address": "Mercado Ferreira Borges",
+     "website": "https://www.hard-club.com/"
+    },
+    {
+     "id": "node/2616002805",
+     "name": "More Club",
+     "lat": 41.14724,
+     "lon": -8.61424,
+     "address": "Rua Galeria de Paris 80",
+     "website": "https://www.facebook.com/MoreClubPorto"
+    },
+    {
+     "id": "node/11417119421",
+     "name": "Auditório",
+     "lat": 41.14746,
+     "lon": -8.61393
+    },
+    {
+     "id": "node/11417119437",
+     "name": "Baixa",
+     "lat": 41.14665,
+     "lon": -8.61389
+    },
+    {
+     "id": "node/12453652314",
+     "name": "Boîte Porto",
+     "lat": 41.14694,
+     "lon": -8.60596,
+     "address": "Rua de Passos Manuel 131"
+    },
+    {
+     "id": "node/11417119422",
+     "name": "Cento e Dezasseis",
+     "lat": 41.14731,
+     "lon": -8.61376,
+     "address": "Rua de Cândido dos Reis 116"
+    },
+    {
+     "id": "node/3584605826",
+     "name": "Eskada Porto",
+     "lat": 41.15607,
+     "lon": -8.60254,
+     "address": "Rua da Alegria 611"
+    },
+    {
+     "id": "node/11417119405",
+     "name": "Fabrik",
+     "lat": 41.14761,
+     "lon": -8.61421
+    },
+    {
+     "id": "node/11417119438",
+     "name": "Hora Extra Club",
+     "lat": 41.14673,
+     "lon": -8.61387
+    },
+    {
+     "id": "node/12052716269",
+     "name": "Ideal Club de Fado",
+     "lat": 41.14774,
+     "lon": -8.60794
+    },
+    {
+     "id": "node/9823596017",
+     "name": "Maomaria",
+     "lat": 41.14701,
+     "lon": -8.61381
+    },
+    {
+     "id": "node/11417508295",
+     "name": "Maria Pistolas",
+     "lat": 41.14839,
+     "lon": -8.61275
+    },
+    {
+     "id": "node/11417119440",
+     "name": "Mezzanine",
+     "lat": 41.14678,
+     "lon": -8.61386
+    },
+    {
+     "id": "node/11417119441",
+     "name": "Muda",
+     "lat": 41.14684,
+     "lon": -8.61385
+    },
+    {
+     "id": "node/11816190870",
+     "name": "Pérola Negra",
+     "lat": 41.15371,
+     "lon": -8.61033,
+     "address": "Rua de Gonçalo Cristóvão 288"
+    },
+    {
+     "id": "node/2204179798",
+     "name": "Pitch Club",
+     "lat": 41.14711,
+     "lon": -8.60815
+    },
+    {
+     "id": "node/4554247076",
+     "name": "Real Feitorya",
+     "lat": 41.14144,
+     "lon": -8.61388
+    },
+    {
+     "id": "node/8635769125",
+     "name": "Shisha bar",
+     "lat": 41.15219,
+     "lon": -8.63068
+    },
+    {
+     "id": "node/4925132156",
+     "name": "Top Ten",
+     "lat": 41.14508,
+     "lon": -8.60807
+    },
+    {
+     "id": "node/8677637948",
+     "name": "Tuareg - Morrocan Shisha Bar",
+     "lat": 41.14622,
+     "lon": -8.61798
+    },
+    {
+     "id": "node/11417119443",
+     "name": "Wall",
+     "lat": 41.14707,
+     "lon": -8.6138
+    },
+    {
+     "id": "node/11417119424",
+     "name": "Wblack",
+     "lat": 41.14721,
+     "lon": -8.61378
+    },
+    {
+     "id": "node/10726244125",
+     "name": "Zoom",
+     "lat": 41.14683,
+     "lon": -8.60816
+    }
+   ]
+  }
+ }
+}

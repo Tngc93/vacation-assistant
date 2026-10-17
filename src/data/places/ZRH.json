@@ -1,0 +1,1671 @@
+{
+ "version": 1,
+ "cityCode": "ZRH",
+ "fetchedAt": "2026-10-16T23:30:31.990Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Zuerich_Fraumuenster_St_Peter.jpg/1280px-Zuerich_Fraumuenster_St_Peter.jpg",
+  "width": 1280,
+  "height": 853,
+  "author": "Ikiwaner",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Zuerich_Fraumuenster_St_Peter.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/121597493",
+     "name": "Labyrinthplatz",
+     "lat": 47.37705,
+     "lon": 8.52986,
+     "website": "https://www.labyrinthplatz.ch/",
+     "openingHours": "24/7"
+    },
+    {
+     "id": "way/289424569",
+     "name": "Fraumünster Kreuzgang",
+     "lat": 47.36956,
+     "lon": 8.54108,
+     "address": "Stadthausquai 19",
+     "openingHours": "Mo-Fr 07:30-18:30; Sa 08:00-18:00"
+    },
+    {
+     "id": "node/3483897061",
+     "name": "Lindenhof-Keller",
+     "lat": 47.37268,
+     "lon": 8.54088,
+     "website": "https://www.stadt-zuerich.ch/hbd/de/index/staedtebau/archaeo_denkmal/archaeo/geschichte/a_fenster/lindenhofkeller.html"
+    },
+    {
+     "id": "node/1037402795",
+     "name": "Römische Bäder",
+     "lat": 47.37129,
+     "lon": 8.5414,
+     "openingHours": "24/7"
+    },
+    {
+     "id": "node/3395919442",
+     "name": "Stadtmodell 1800",
+     "lat": 47.37237,
+     "lon": 8.54573,
+     "openingHours": "Mo-Fr 08:00-18:00; Sa 10:00-16:00"
+    },
+    {
+     "id": "node/763169808",
+     "name": "Alte Militärkaserne",
+     "lat": 47.37578,
+     "lon": 8.53308
+    },
+    {
+     "id": "node/14066736031",
+     "name": "Einstein's locker",
+     "lat": 47.37603,
+     "lon": 8.54841
+    },
+    {
+     "id": "node/268473573",
+     "name": "Galerie Bruno Bischofberger",
+     "lat": 47.36423,
+     "lon": 8.54652
+    },
+    {
+     "id": "node/7423846036",
+     "name": "Sodbrunnen",
+     "lat": 47.37306,
+     "lon": 8.53957
+    },
+    {
+     "id": "node/7050244186",
+     "name": "Stadtmodell Zürich Heute",
+     "lat": 47.37413,
+     "lon": 8.54018
+    },
+    {
+     "id": "way/127124097",
+     "name": "Zürileu",
+     "lat": 47.35957,
+     "lon": 8.53711
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/3768127",
+     "name": "Kunsthaus",
+     "lat": 47.37023,
+     "lon": 8.54802,
+     "address": "Heimplatz 1",
+     "website": "https://www.kunsthaus.ch/",
+     "openingHours": "Tu-Su 10:00-18:00; Th 10:00-20:00; PH 10:00-18:00",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "relation/4281153",
+     "name": "Landesmuseum",
+     "lat": 47.37924,
+     "lon": 8.54015,
+     "address": "Museumstrasse 2",
+     "website": "https://www.landesmuseum.ch/",
+     "openingHours": "Tu-We, Fr-Su 10:00-17:00; Th 10:00-19:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "node/451722224",
+     "name": "Museum Rietberg",
+     "lat": 47.35892,
+     "lon": 8.52974,
+     "address": "Gablerstrasse 15",
+     "website": "https://www.rietberg.ch/",
+     "openingHours": "Mo off; Tu 10:00-17:00; We 10:00-20:00; Th,Fr,Sa,Su,PH 10:00-17:00; Dec 25 off",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/140392627",
+     "name": "Museum für Gestaltung",
+     "lat": 47.38298,
+     "lon": 8.5358,
+     "address": "Ausstellungsstrasse 60",
+     "website": "https://www.museum-gestaltung.ch/",
+     "openingHours": "Tu-Su 10:00-17:00; We 10:00-20:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/3856298289",
+     "name": "FIFA Museum",
+     "lat": 47.36358,
+     "lon": 8.53152,
+     "address": "Seestrasse 27",
+     "website": "https://www.fifamuseum.com/",
+     "openingHours": "Mo off; Tu-Su 10:00-18:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/10680040405",
+     "name": "MoneyMuseum",
+     "lat": 47.38881,
+     "lon": 8.55149,
+     "address": "Hadlaubstrasse 106",
+     "website": "https://moneymuseum.com/",
+     "openingHours": "Th 10:00-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/30924953",
+     "name": "Völkerkundemuseum der Universität Zürich",
+     "lat": 47.37083,
+     "lon": 8.53436,
+     "address": "Pelikanstrasse 40",
+     "website": "https://www.musethno.uzh.ch/",
+     "openingHours": "Tu-We,Fr 10:00-17:00; Th 10:00-19:00; Sa 14:00-17:00; Su 11:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/5543639586",
+     "name": "Museum Strauhof",
+     "lat": 47.37172,
+     "lon": 8.54002,
+     "address": "Augustinergasse 9",
+     "website": "https://strauhof.ch/",
+     "openingHours": "We 12:00-18:00; Th 12:00-00:00; Fr 12:00-18:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/1855509127",
+     "name": "Naturhistorisches Museum",
+     "lat": 47.37518,
+     "lon": 8.54796,
+     "address": "Karl-Schmid-Strasse 4",
+     "website": "https://www.nmz.uzh.ch/",
+     "openingHours": "Tu-Su 10:00-17:00; Th 10:00-17:00,17:30-20:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/6499882199",
+     "name": "Rösli Saat Müzesi",
+     "localName": "Uhrenmuseum zum Rösli",
+     "lat": 47.39014,
+     "lon": 8.54436,
+     "address": "Röslistrasse 46",
+     "website": "https://www.uhrenmuseumroesli.ch/",
+     "openingHours": "Mo-Fr 13:30-17:30",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/4191882104",
+     "name": "Stiftung SAPA",
+     "lat": 47.38836,
+     "lon": 8.52588,
+     "address": "Limmatstrasse 265",
+     "website": "https://sapa.swiss/",
+     "openingHours": "Tu,Th 10:00-16:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/1855509137",
+     "name": "Archäologisches Museum",
+     "lat": 47.37535,
+     "lon": 8.54891,
+     "website": "https://www.archaeologische-sammlung.uzh.ch/",
+     "openingHours": "Tu-Fr 14:00-18:00; Sa,Su 12:00-17:00; Mo,PH off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/2326150629",
+     "name": "Focus Terra",
+     "lat": 47.37836,
+     "lon": 8.54746,
+     "address": "Sonneggstrasse 5",
+     "website": "https://focusterra.ethz.ch/",
+     "openingHours": "Mo-Fr 09:00-17:00; Su 10:00-16:00; Sa off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/1115159416",
+     "name": "Galerie Gmurzynska",
+     "lat": 47.36945,
+     "lon": 8.53895,
+     "website": "https://www.gmurzynska.com/",
+     "openingHours": "Mo-Fr 10:00-18:30; Sa 10:00-16:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/4909023759",
+     "name": "Galerie Gmurzynska",
+     "lat": 47.36922,
+     "lon": 8.53748,
+     "address": "Talstrasse 37",
+     "website": "https://www.gmurzynska.com/",
+     "openingHours": "Mo-Fr 10:00-18:30; Sa 10:00-16:00; PH closed",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/113308557",
+     "name": "Johann Jacobs Museum",
+     "lat": 47.3597,
+     "lon": 8.54806,
+     "address": "Seefeldquai 17",
+     "website": "http://www.johannjacobs.com/",
+     "openingHours": "Tu 16:00-21:00; Sa, Su 11:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/589605486",
+     "name": "Kulturama",
+     "lat": 47.36872,
+     "lon": 8.55561,
+     "address": "Englischviertelstrasse 9",
+     "website": "https://www.kulturama.ch/",
+     "openingHours": "Tu,Th-Fr 13:00-17:00; We 13:00-20:00; Sa-Su 09:00-18:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/6499882200",
+     "name": "Moulagen Müzesi",
+     "localName": "Moulagenmuseum",
+     "lat": 47.38042,
+     "lon": 8.5486,
+     "address": "Haldenbachstrasse 14",
+     "website": "https://www.moulagen.uzh.ch/",
+     "openingHours": "We 14:00-18:00; Sa 13:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/2959909845",
+     "name": "Thomas-Mann-Archiv",
+     "lat": 47.37592,
+     "lon": 8.54803,
+     "address": "Rämistrasse 101",
+     "website": "https://tma.ethz.ch/",
+     "openingHours": "Mo-Fr 10:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/489786062",
+     "name": "Uhrenmuseum Beyer Zürich",
+     "lat": 47.37092,
+     "lon": 8.53854,
+     "address": "Bahnhofstrasse 31",
+     "website": "https://www.beyer-ch.com/de/uhrenmuseum/",
+     "openingHours": "Mo-Fr 14:00-18:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/4963589217",
+     "name": "Art Empowers",
+     "lat": 47.38303,
+     "lon": 8.54326,
+     "address": "Weinbergstrasse 71",
+     "website": "https://artempowers.ch/",
+     "openingHours": "Mo-Tu,Fr-Su off; We-Th 14:00-17:00"
+    },
+    {
+     "id": "node/9097320832",
+     "name": "Artifiche Poster Gallery",
+     "lat": 47.36738,
+     "lon": 8.53509,
+     "address": "Stockerstrasse 38",
+     "website": "https://artifiche.com/",
+     "openingHours": "Th 11:00-15:00 || Tu 11:00-14:00 \"by appointment only\", We 14:00-18:00 \"by appointment only\", Th 16:00-19:00 \"by appointment only\"; PH off"
+    },
+    {
+     "id": "node/11619652079",
+     "name": "Barbara Seiler",
+     "lat": 47.36808,
+     "lon": 8.54691,
+     "address": "Rämistrasse 18",
+     "website": "https://www.barbaraseiler.ch/",
+     "openingHours": "Tu-Fr 12:00-18:00; Sa 11:00-17:00 || \"or by appointment\""
+    },
+    {
+     "id": "node/11649755873",
+     "name": "Bernheim x ADZ Gallery",
+     "lat": 47.36862,
+     "lon": 8.54728,
+     "website": "https://bernheimgallery.com/",
+     "openingHours": "Mo-Tu,Th,Su off; We,Fr 12:00-18:00; Sa 12:00-17:00"
+    },
+    {
+     "id": "node/10572116908",
+     "name": "Bildhalle",
+     "lat": 47.36943,
+     "lon": 8.52814,
+     "address": "Stauffacherquai 56",
+     "website": "https://www.bildhalle.ch/",
+     "openingHours": "We-Fr 12:00-18:30; Sa 11:00-16:00"
+    },
+    {
+     "id": "node/11656371292",
+     "name": "Bildhalle",
+     "lat": 47.36936,
+     "lon": 8.52759,
+     "address": "Manessestrasse 2",
+     "website": "https://www.bildhalle.ch/",
+     "openingHours": "We-Fr 12:00-18:30; Sa 11:00-16:00"
+    },
+    {
+     "id": "node/875674518",
+     "name": "Blue Velvet Projects",
+     "lat": 47.37077,
+     "lon": 8.52402,
+     "address": "Birmensdorferstrasse 83",
+     "website": "https://www.bluevelvetprojects.com/",
+     "openingHours": "Tu-Fr 10:00-18:00, Sa 11:00-17:00"
+    },
+    {
+     "id": "node/9811018967",
+     "name": "Dierking",
+     "lat": 47.36906,
+     "lon": 8.53826,
+     "website": "https://dierking.ch/",
+     "openingHours": "We-Fr 12:00-18:00 closed \"by appointment \"; PH closed"
+    },
+    {
+     "id": "node/11633736757",
+     "name": "Fabian & Claude Walter Galerie",
+     "lat": 47.36804,
+     "lon": 8.54695,
+     "address": "Rämistrasse 18",
+     "website": "https://fabian-claude-walter.com/",
+     "openingHours": "We-Fr 14:00-18:00; Sa 12:00-16:00 || \"und nach Vereinbarung\""
+    },
+    {
+     "id": "node/12495382014",
+     "name": "FCZ Museum",
+     "lat": 47.37717,
+     "lon": 8.53256,
+     "address": "Freischützgasse 1",
+     "website": "https://www.fcz.ch/pages/museum",
+     "openingHours": "Mo-Fr 10:00-18:30; Sa 10:00-17:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/429333071",
+     "name": "Karlsturm",
+     "lat": 47.37015,
+     "lon": 8.54368,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/305674981",
+     "name": "Bürkliplatz",
+     "lat": 47.36615,
+     "lon": 8.54153
+    },
+    {
+     "id": "node/309750020",
+     "name": "Bürkliplatz",
+     "lat": 47.36636,
+     "lon": 8.54219
+    },
+    {
+     "id": "node/3932311906",
+     "name": "Kirche Enge",
+     "lat": 47.36247,
+     "lon": 8.53001
+    },
+    {
+     "id": "node/1031293132",
+     "name": "Lindenhof",
+     "lat": 47.37306,
+     "lon": 8.54139
+    },
+    {
+     "id": "node/1584068320",
+     "name": "Polyterrasse",
+     "lat": 47.3761,
+     "lon": 8.54652
+    },
+    {
+     "id": "node/309750022",
+     "name": "Quaibrücke",
+     "lat": 47.36661,
+     "lon": 8.54238
+    },
+    {
+     "id": "node/3854575000",
+     "name": "Rigiblick",
+     "lat": 47.38615,
+     "lon": 8.55433
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/317769155",
+     "name": "10' dieci",
+     "lat": 47.37453,
+     "lon": 8.54392,
+     "address": "Niederdorfstrasse 40",
+     "website": "https://dieci.ch/de/gelateria-zuerich-niederdorf",
+     "openingHours": "Nov-Mar Mo-Sa 11:30-22:00; Apr-Oct Su-Th 11:00-23:00; Apr-Oct Fr-Sa 11:00-24:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2904476133",
+     "name": "4Leoni Firenze",
+     "lat": 47.38433,
+     "lon": 8.53024,
+     "address": "Luisenstrasse 43",
+     "website": "https://4leoni-firenze.ch/",
+     "openingHours": "Mo-Fr 11:30-14:30,18:00-23:30; Sa 18:00-23:30; Su 11:30-23:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/475991816",
+     "name": "60 Seconds to Napoli",
+     "lat": 47.37617,
+     "lon": 8.53386,
+     "address": "Kasernenstrasse 77a",
+     "website": "https://60secondstonapoli.de/standort/zuerich/",
+     "openingHours": "Mo-Su 11:30-24:00",
+     "cuisine": "italian, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/721046235",
+     "name": "A Fatt",
+     "lat": 47.38631,
+     "lon": 8.52895,
+     "address": "Limmatstrasse 189",
+     "website": "https://www.afatt.ch/",
+     "openingHours": "Sa-Su 11:00-14:00, 17:00-22:00; Tu-Fr 17:00-22:00",
+     "cuisine": "malaysian",
+     "detailed": true
+    },
+    {
+     "id": "node/334300587",
+     "name": "Aargauerhof",
+     "lat": 47.37737,
+     "lon": 8.52617,
+     "address": "Hohlstrasse 43",
+     "website": "https://restaurant-aargauerhof.ch/",
+     "openingHours": "Mo,We-Th,Sa 11:00-23:00; Tu,Fr 10:00-23:00; Su 16:00-22:00",
+     "cuisine": "regional, swiss",
+     "detailed": true
+    },
+    {
+     "id": "node/914703086",
+     "name": "Accademia del Gusto",
+     "lat": 47.37533,
+     "lon": 8.52866,
+     "address": "Rotwandstrasse 48",
+     "website": "https://www.accademiadelgusto.ch/",
+     "openingHours": "Mo-Fr 11:30-15:00,18:30-24:00; Sa 18:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/656649674",
+     "name": "Ach'i",
+     "lat": 47.37704,
+     "lon": 8.52878,
+     "address": "Brauerstrasse 4",
+     "website": "https://www.achi.restaurant/",
+     "openingHours": "Mo-Fr 11:00-14:30, 18:00-22:00; Sa 12:00-22:00; Su 17:00-22:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/270798749",
+     "name": "Afghan Anar",
+     "lat": 47.36979,
+     "lon": 8.55298,
+     "address": "Hottingerstrasse 27",
+     "website": "https://www.afghananar.ch/",
+     "openingHours": "Mo-Fr 11:30-14:00,18:00-22:00; Sa 18:00-22:00",
+     "cuisine": "afghan, oriental",
+     "detailed": true
+    },
+    {
+     "id": "node/1442004393",
+     "name": "Ah-Hua",
+     "lat": 47.37609,
+     "lon": 8.52785,
+     "address": "Ankerstrasse 110",
+     "website": "https://www.ah-hua.ch/",
+     "openingHours": "Tu-Fr 11:30-14:30,17:30-22:30; Sa,Su 12:00-22:30",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/914812684",
+     "name": "Akaraka",
+     "lat": 47.37469,
+     "lon": 8.52948,
+     "address": "Bäckerstrasse 30",
+     "website": "https://www.akaraka.ch/",
+     "openingHours": "Mo-Fr 11:30-14:00,18:00-23:00; Sa 18:00-23:30",
+     "cuisine": "korean",
+     "detailed": true
+    },
+    {
+     "id": "node/2888172595",
+     "name": "Alba",
+     "lat": 47.38152,
+     "lon": 8.54222,
+     "address": "Stampfenbachstrasse 68",
+     "website": "https://www.alba.pizza/alba-locations/alba-stampfenbach",
+     "openingHours": "Mo-Fr 11:30-14:00,17:30-22:00; Sa off; Su 17:30-22:00",
+     "cuisine": "italian, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/721046177",
+     "name": "Alpenrose",
+     "lat": 47.38716,
+     "lon": 8.52849,
+     "address": "Fabrikstrasse 12",
+     "website": "https://www.restaurantalpenrose.ch/",
+     "openingHours": "Tu-Fr 11:00-23:00; Sa 17:00-23:30; Su 17:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/268471384",
+     "name": "Amalfi",
+     "lat": 47.36067,
+     "lon": 8.54999,
+     "address": "Mainaustrasse 23",
+     "website": "https://www.bindella.ch/restaurants/amalfi",
+     "openingHours": "Mo-Th 11:30-23:00; Fr 11:30-23:30; Sa 12:00-23:30; Su 12:00-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/289669794",
+     "name": "Amara",
+     "lat": 47.36351,
+     "lon": 8.53231,
+     "address": "General-Wille-Strasse 21",
+     "website": "https://amara-zurich.ch/",
+     "openingHours": "Mo-Sa 09:00-22:00; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/270938652",
+     "name": "Ăn Ăn",
+     "lat": 47.3693,
+     "lon": 8.54057,
+     "website": "https://www.anan.ch/",
+     "openingHours": "Mo-Th 10:00-23:00; Fr,Sa 10:00-00:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/267879347",
+     "name": "AnaMiRa",
+     "lat": 47.36419,
+     "lon": 8.52042,
+     "website": "https://anamira.ch/",
+     "openingHours": "Mo-Fr 11:30-14:00,17:30-22:00; Sa 17:30-22:00; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/465277329",
+     "name": "Anemoia",
+     "lat": 47.38636,
+     "lon": 8.52802,
+     "address": "Fabrikstrasse 23",
+     "website": "https://www.anemoia.ch/",
+     "openingHours": "Mo-Fr 10:00-14:30, 17:00-22:00; Sa-Su 10:00-21:45",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/317024417",
+     "name": "Antica Roma",
+     "lat": 47.37022,
+     "lon": 8.53183,
+     "address": "Sihlamtsstrasse 5",
+     "website": "https://www.antica-roma.ch/",
+     "openingHours": "Mo-Fr 11:30-14:00,18:00-22:00; Sa 18:00-22:30; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/370809277",
+     "name": "Arcade Pizzeria",
+     "lat": 47.37105,
+     "lon": 8.52435,
+     "website": "https://arcadepizzeria.ch/",
+     "openingHours": "Mo-Th 11:00-14:00,18:00-22:00; Fr 11:30-14:00,18:00-23:00; Sa-Su 12:00-14:30,18:00-22:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/283458368",
+     "name": "Astra",
+     "lat": 47.37439,
+     "lon": 8.53555,
+     "website": "https://astra-kitchenbar.ch/",
+     "openingHours": "Tu-Th 11:30-24:00, Fr 11:30-01:45, Sa 19:00-01:45",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/656754116",
+     "name": "Baba Baos",
+     "lat": 47.37476,
+     "lon": 8.52467,
+     "address": "Langstrasse 10",
+     "website": "https://www.instagram.com/baba.baos",
+     "openingHours": "Tu-Fr 11:30-14:00,17:00-24:00, Sa 10:00-24:00, Su 10:00-15:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/2140368471",
+     "name": "Bamboo Inn",
+     "lat": 47.38048,
+     "lon": 8.54724,
+     "website": "https://bamboo-inn.ch/",
+     "openingHours": "Tu-Sa 11:45-14:00,18:00-22:00; Su 11:45-14:00; Mo off",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/1413703430",
+     "name": "Barranco",
+     "lat": 47.37923,
+     "lon": 8.5158,
+     "address": "Sihlfeldstrasse 141",
+     "website": "https://www.barranco.ch/",
+     "openingHours": "Tu-Su 18:00-24:00",
+     "cuisine": "peruvian",
+     "detailed": true
+    },
+    {
+     "id": "node/639029708",
+     "name": "Bauern Schänke",
+     "lat": 47.37242,
+     "lon": 8.54521,
+     "website": "https://www.bauernschaenke.ch/",
+     "openingHours": "Mo-Fr 11:30-14:30,18:00-24:00; Sa 18:00-24:00; Su off",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/270938093",
+     "name": "Bei Moudi am Kunsthaus",
+     "lat": 47.37073,
+     "lon": 8.54799,
+     "website": "https://www.beimoudi.ch/",
+     "openingHours": "Mo-Su 11:00-23:00; PH off",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/345525376",
+     "name": "Beke",
+     "lat": 47.37486,
+     "lon": 8.515,
+     "address": "Bertastrasse 16",
+     "website": "https://www.beke.restaurant/",
+     "openingHours": "Tu-Fr 18:00-24:00, Sa 10:00-24:00, Su 10:00-16:00; PH off",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/638966009",
+     "name": "Bianchi",
+     "lat": 47.37353,
+     "lon": 8.54301,
+     "address": "Limmatquai 82",
+     "website": "https://www.bindella.ch/de/bianchi.html",
+     "openingHours": "Mo-Sa 11:30-23:30; Su 11:30-22:30",
+     "cuisine": "fish",
+     "detailed": true
+    },
+    {
+     "id": "node/331184721",
+     "name": "Bindella",
+     "lat": 47.37068,
+     "lon": 8.54064,
+     "address": "In Gassen 6",
+     "website": "https://www.bindella.ch/de/bindella-zuerich.html",
+     "openingHours": "Mo-Sa 11:30-23:30; Su 17:30-22:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2341965691",
+     "name": "Black Tap",
+     "lat": 47.37491,
+     "lon": 8.53953,
+     "address": "Werdmühlestrasse 4",
+     "website": "https://blacktap.com/location/zurich/",
+     "openingHours": "Su,Mo 11:30-22:00; Tu-Sa 11:30-23:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/270799836",
+     "name": "Blockhus",
+     "lat": 47.36818,
+     "lon": 8.54518,
+     "address": "Kruggasse 2",
+     "website": "https://restaurant-blockhus.ch/",
+     "openingHours": "Mo-Tu 11:30-14:00,17:30-23:00; We-Sa 11:30-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/10951893276",
+     "name": "Al Paso",
+     "lat": 47.37351,
+     "lon": 8.54451,
+     "address": "Spitalgasse 12",
+     "website": "https://alpaso.ch/",
+     "openingHours": "Mo-Fr 11:00-14:00",
+     "cuisine": "sandwich, soup, salad",
+     "detailed": true
+    },
+    {
+     "id": "node/4244051791",
+     "name": "Albanesi",
+     "lat": 47.37731,
+     "lon": 8.53836,
+     "address": "Bahnhofplatz 12",
+     "website": "https://www.albanesigroup.ch/",
+     "openingHours": "Mo-Fr 07:00-20:00; Sa 08:00-21:00; Su 09:30-20:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/683404164",
+     "name": "Ambrosi",
+     "lat": 47.38705,
+     "lon": 8.52437,
+     "address": "Viaduktstrasse 37",
+     "website": "https://www.ambrosi.ch/",
+     "openingHours": "Mo-Fr 11:30-22:30; Sa 11:00-22:30; Su 10:00-22:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4035706224",
+     "name": "Apo THEKE",
+     "lat": 47.37349,
+     "lon": 8.55281,
+     "address": "Zürichbergstrasse 17",
+     "website": "https://www.apotheke-zh.ch/",
+     "openingHours": "Mo-Fr 08:00-22:00, Sa 09:00-16:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/4892315255",
+     "name": "Bäckerei Hausammann",
+     "lat": 47.37651,
+     "lon": 8.55926,
+     "address": "Vorderberg 5",
+     "website": "https://www.zopfbeck.ch/fil.vor.html",
+     "openingHours": "Mo-Fr 06:15-19:00; Sa 06:00-17:00; Su 08:00-17:00",
+     "cuisine": "breakfast, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/866538630",
+     "name": "Bakery Bakery",
+     "lat": 47.39206,
+     "lon": 8.5391,
+     "address": "Hotzestrasse 65",
+     "website": "https://bakerybakery.ch/standorte/schaffhauserplatz",
+     "openingHours": "Mo-Fr 07:00-18:00; Sa 08:00-17:00; Su 09:00-16:00",
+     "cuisine": "bagel, cake, coffee shop, donut, local, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/11775729223",
+     "name": "Bang On",
+     "lat": 47.37408,
+     "lon": 8.53195,
+     "address": "Kasernenstrasse 15",
+     "website": "https://www.bang-on.ch/",
+     "openingHours": "Mo-Fr 11:00-19:00, Sa 11:00-18:00; PH off",
+     "cuisine": "brazilian",
+     "detailed": true
+    },
+    {
+     "id": "node/10824269601",
+     "name": "Besteas Bar",
+     "lat": 47.37279,
+     "lon": 8.52818,
+     "address": "Strassburgstrasse 15",
+     "website": "https://www.instagram.com/besteas.bar/",
+     "openingHours": "Tu-Th 12:00-19:00; Fr-Sa 12:00-20:00; Su 14:00-20:00",
+     "cuisine": "tea",
+     "detailed": true
+    },
+    {
+     "id": "node/442522931",
+     "name": "Bistro Park Stadelhofen",
+     "lat": 47.36629,
+     "lon": 8.54776,
+     "address": "Stadelhoferplatz 1",
+     "website": "https://www.stadelhofen-park.ch/",
+     "openingHours": "Mar-Oct: Mo-Su 11:00-24:00 \"bei schönem Wetter\"",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/5559734861",
+     "name": "Bros Beans & Beats",
+     "lat": 47.3728,
+     "lon": 8.52528,
+     "address": "Gartenhofstrasse 24",
+     "website": "https://www.brosbeansbeats.ch/",
+     "openingHours": "Mo-Fr 08:00-19:00; Sa-Su 10:00-18:00",
+     "cuisine": "coffee shop, breakfast, brunch, drinks",
+     "detailed": true
+    },
+    {
+     "id": "node/5688147987",
+     "name": "bubblish",
+     "lat": 47.36301,
+     "lon": 8.54971,
+     "address": "Seefeldstrasse 40",
+     "website": "https://bubblish.ch/",
+     "openingHours": "Mo-Su 12:00-19:30",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/370843777",
+     "name": "Café & Conditorei 1842",
+     "lat": 47.37149,
+     "lon": 8.54437,
+     "address": "Napfgasse 4",
+     "website": "https://www.cafe1842.ch/",
+     "openingHours": "Mo-Su 09:00-19:00",
+     "cuisine": "cake",
+     "detailed": true
+    },
+    {
+     "id": "node/4053473355",
+     "name": "Cafe am Platz",
+     "lat": 47.39119,
+     "lon": 8.53845,
+     "website": "https://www.cafeamplatz.ch/",
+     "openingHours": "Mo-Fr 07:00-11:30, 12:00-15:00; Sa 09:00-12:00, 13:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/270799257",
+     "name": "Café Berner",
+     "lat": 47.36956,
+     "lon": 8.55405,
+     "address": "Hottingerstrasse 33",
+     "website": "https://www.walterbuchmann.ch/berner",
+     "openingHours": "Mo-Fr 07:00-17:00; Sa off; Su 08:00-13:00",
+     "cuisine": "breakfast, coffee shop, sandwich, cake, salad, pastry, bakery",
+     "detailed": true
+    },
+    {
+     "id": "node/1895863272",
+     "name": "Café des Amis",
+     "lat": 47.38865,
+     "lon": 8.53611,
+     "address": "Nordstrasse 88",
+     "website": "https://www.desamis.ch/",
+     "openingHours": "Mo-We 08:00-23:00; Th-Fr 08:00-24:00; Sa 09:00-24:00; Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1372569844",
+     "name": "Cafe Miyuko",
+     "lat": 47.36975,
+     "lon": 8.53658,
+     "address": "Bärengasse 20",
+     "website": "https://www.miyuko.ch/",
+     "openingHours": "We-Fr 09:00-18:00; Sa,Su 10:00-18:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/370657577",
+     "name": "Café Tartines",
+     "lat": 47.36837,
+     "lon": 8.5606,
+     "address": "Römerhofplatz 5",
+     "website": "https://www.cafetartines.ch/",
+     "openingHours": "Mo-Su 07:30-19:00",
+     "cuisine": "breakfast, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1057633612",
+     "name": "CafeBar",
+     "lat": 47.37632,
+     "lon": 8.54804,
+     "website": "https://ethz.ch/de/campus/erleben/gastronomie-und-einkaufen/gastronomie/restaurants-und-cafeterias/zentrum/cafebar.html",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa 08:00-15:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5733725988",
+     "name": "Cafeteria UZH Zentrum für Zahnmedizin (ZZM)",
+     "lat": 47.37447,
+     "lon": 8.553,
+     "address": "Plattenstrasse 11",
+     "website": "https://www.zfv.ch/de/essen-gehen/cafeteria-zentrum-fuer-zahnmedizin-zzm",
+     "openingHours": "Mo-Fr 09:00-14:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5119622514",
+     "name": "Caffè Spettacolo",
+     "lat": 47.37874,
+     "lon": 8.5399,
+     "website": "https://www.spettacolo.ch/",
+     "openingHours": "Mo-Sa 05:00-21:00; Su 06:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5356681393",
+     "name": "Caffè Spettacolo",
+     "lat": 47.36702,
+     "lon": 8.54798,
+     "address": "Stadelhoferstrasse 8",
+     "website": "https://www.spettacolo.ch/",
+     "openingHours": "Mo-Fr 06:15-14:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7537198472",
+     "name": "Caffè Spettacolo",
+     "lat": 47.36668,
+     "lon": 8.54876,
+     "address": "Stadelhoferstrasse 8",
+     "website": "https://www.spettacolo.ch/",
+     "openingHours": "Mo-Fr 05:30-19:00; Sa-Su 07:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/638966087",
+     "name": "Colibri Bar",
+     "lat": 47.37339,
+     "lon": 8.54405,
+     "address": "Spitalgasse 2",
+     "website": "https://www.instagram.com/colibribarzurich/",
+     "openingHours": "Mo-Th 14:00-23:30; Fr-Sa 14:00-24:00; Su 14:00-23:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/4869996376",
+     "name": "Collana Bar e Caffè",
+     "lat": 47.3659,
+     "lon": 8.54664,
+     "address": "Theaterstrasse 9",
+     "website": "https://www.commercio.ch/collana/",
+     "openingHours": "Mo-Su 09:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/12120638615",
+     "name": "Commercial - The Project Bahnhofstrasse",
+     "lat": 47.37472,
+     "lon": 8.53849,
+     "address": "Bahnhofstrasse 75",
+     "website": "https://mame.coffee/",
+     "openingHours": "Mo-Sa 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/13026054404",
+     "name": "CouCou",
+     "lat": 47.38564,
+     "lon": 8.52699,
+     "address": "Röntgenstrasse 66",
+     "website": "https://www.coucou-bar.ch/",
+     "openingHours": "Tu-Fr 08:00-23:00; Sa 09:00-23:00; Su 09:00-18:00",
+     "cuisine": "coffee shop, regional, ice cream, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/12293474713",
+     "name": "CREAM Coffee Bar Food",
+     "lat": 47.38738,
+     "lon": 8.52331,
+     "website": "https://cream-zurich.ch/",
+     "openingHours": "Mo-We 07:30-21:00; Th-Fr 07:30-22:00; Sa 09:00-22:00; Su 09:00-18:00",
+     "cuisine": "mediterranean, fusion",
+     "detailed": true
+    },
+    {
+     "id": "node/14203277409",
+     "name": "CTRL Café Bar",
+     "lat": 47.36955,
+     "lon": 8.55729,
+     "address": "Asylstrasse 11",
+     "website": "https://www.ctrl-cafe.ch/",
+     "openingHours": "Mo-Tu, Th-Fr 08:00-16:00; Sa-Su 09:00-14:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1069585320",
+     "name": "DuBischDra - Board Game Café",
+     "lat": 47.37415,
+     "lon": 8.5213,
+     "address": "Kalkbreitestrasse 3",
+     "website": "https://dubischdra.ch/de/brettspiel-cafe",
+     "openingHours": "Mo 11:30-14:00; Tu-Th 11:30-23:00; Fr 11:30-00:00; Sa 10:00-00:00; Su 10:00-18:00",
+     "cuisine": "coffee shop, sandwich, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/6514786485",
+     "name": "flavour coffee & plants",
+     "lat": 47.38242,
+     "lon": 8.52979,
+     "address": "Langstrasse 200",
+     "website": "https://www.flavourcoffee.ch/",
+     "openingHours": "Mo-We 07:00-18:00; Th-Fr 07:00-22:00; Sa 09:00-17:00",
+     "cuisine": "cake, coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/648956175",
+     "name": "La Stanza",
+     "lat": 47.36847,
+     "lon": 8.53679,
+     "address": "Bleicherweg 10",
+     "website": "https://www.lastanza.ch/",
+     "openingHours": "Mo-We 07:00-23:00; Th 07:00-24:00; Fr 07:00-01:00, Sa 09:00-01:30, Su 10:00-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "way/107080965",
+     "name": "Rio Bar",
+     "lat": 47.37631,
+     "lon": 8.5357,
+     "address": "Gessnerallee 17",
+     "website": "https://www.riozurich.ch/",
+     "openingHours": "Mo-Fr 08:00-24:00; Sa 09:00-24:00; Su 10:00-22:00",
+     "cuisine": "cake, sandwich, lunch",
+     "detailed": true
+    },
+    {
+     "id": "node/633584200",
+     "name": "The Alehouse Palmhof",
+     "lat": 47.37908,
+     "lon": 8.54788,
+     "address": "Universitätstrasse 23",
+     "website": "https://www.alehouse.ch/",
+     "openingHours": "Mo-Fr 10:00-24:00; Sa 11:30-24:00; Su 11:30-22:00",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "node/315566479",
+     "name": "Trattoria Neumarkt",
+     "lat": 47.37258,
+     "lon": 8.54563,
+     "website": "https://neumarkt-zuerich.ch/",
+     "openingHours": "Tu-Sa 12:00-14:00, 18:00-23:00; Su 12:00-21:00",
+     "cuisine": "italian, japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/317023457",
+     "name": "2. Akt",
+     "lat": 47.36983,
+     "lon": 8.53364,
+     "address": "Selnaustrasse 2",
+     "website": "https://2akt.ch/",
+     "openingHours": "Tu-Fr 11:00-14:00, Tu-Th 17:00-23:00, Fr 17:00-02:00, Sa 15:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/370835059",
+     "name": "5. Akt",
+     "lat": 47.37549,
+     "lon": 8.54408,
+     "address": "Niederdorfstrasse 64",
+     "website": "http://www.akt-niederdorf.ch/",
+     "openingHours": "Tu-Th 16:00-24:00; Fr-Sa 16:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/920508290",
+     "name": "After Dark",
+     "lat": 47.37658,
+     "lon": 8.52817,
+     "address": "Ankerstrasse 119",
+     "website": "https://afterdark-bar.ch/",
+     "openingHours": "Mo-Th 16:30-24:00, Fr 16:30-03:00, Sa 18:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/297710735",
+     "name": "Almodobar",
+     "lat": 47.36698,
+     "lon": 8.53339,
+     "website": "https://almodobar.com/",
+     "openingHours": "Mo-We 07:30-24:00; Th-Fr 07:30-02:00; Fr-Sa 07:30-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11777908596",
+     "name": "Altstadt Bar",
+     "lat": 47.36936,
+     "lon": 8.54409,
+     "website": "https://altstadt-bar.ch/",
+     "openingHours": "Mo-We 07:00-22:00, Th-Fr 07:00-23:00, Sa 08:00-23:00, Su 08:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/656535507",
+     "name": "Amazonia Bar",
+     "lat": 47.37977,
+     "lon": 8.52671,
+     "address": "Sihlhallenstrasse 11",
+     "website": "https://amazonia-bar.ch/",
+     "openingHours": "Mo-Th 09:00-02:00, Fr-Su 09:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1245160899",
+     "name": "Amboss Rampe",
+     "lat": 47.38116,
+     "lon": 8.53189,
+     "address": "Zollstrasse 80",
+     "website": "https://ambossrampe.ch/rampe/",
+     "openingHours": "Mo-We 17:00-24:00; Th-Fr 16:00-02:00; Sa 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3085740534",
+     "name": "Armando's by Vergani",
+     "lat": 47.37527,
+     "lon": 8.5372,
+     "address": "Seidengasse 15",
+     "website": "https://www.vergani.ch/loewenplatz",
+     "openingHours": "Tu-Sa 11:30-23:00; PH off",
+     "detailed": true
+    },
+    {
+     "id": "node/2447923884",
+     "name": "Atelier",
+     "lat": 47.37033,
+     "lon": 8.53767,
+     "address": "Talacker 16",
+     "website": "https://atelierbar.ch/",
+     "openingHours": "Mo-Fr 07:45-24:00,Sa 10:00-24:00;PH off",
+     "detailed": true
+    },
+    {
+     "id": "node/1016012582",
+     "name": "Bagatelle §93",
+     "lat": 47.37813,
+     "lon": 8.52666,
+     "website": "https://www.bagatelle93.ch/",
+     "openingHours": "Tu-We 21:00+; Th-Sa 20:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/4479056690",
+     "name": "Balboa Bar & Gym",
+     "lat": 47.36868,
+     "lon": 8.53564,
+     "website": "https://www.balboamove.ch/",
+     "openingHours": "Mo-Fr 10:00-20:00; Sa 10:00-19:00; Su 10:00-20:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2352498668",
+     "name": "Bar am Egge",
+     "lat": 47.3695,
+     "lon": 8.55734,
+     "website": "https://baramegge.ch/",
+     "openingHours": "Mo-Sa 17:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9172909572",
+     "name": "Bar am Wasser",
+     "lat": 47.36757,
+     "lon": 8.54164,
+     "website": "https://www.baramwasser.ch/",
+     "openingHours": "Mo-Sa 16:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1520228530",
+     "name": "Bar Basso",
+     "lat": 47.37259,
+     "lon": 8.53348,
+     "address": "Sihlstrasse 59",
+     "website": "https://barbasso.ch/",
+     "openingHours": "Mo-Sa 11:00-24:00; Su,PH off",
+     "detailed": true
+    },
+    {
+     "id": "node/10560490884",
+     "name": "Bar Lupo",
+     "lat": 47.37429,
+     "lon": 8.52183,
+     "address": "Badenerstrasse 155",
+     "website": "https://lupo.bar/",
+     "openingHours": "Mo-Sa 18:00-24:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/3242600651",
+     "name": "Bar OTRO",
+     "lat": 47.37845,
+     "lon": 8.52874,
+     "website": "https://www.otro.bar/",
+     "openingHours": "Mo,Su off; Tu-Th 17:00-24:00; Fr-Sa 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5803645580",
+     "name": "Bar Rossi",
+     "lat": 47.37948,
+     "lon": 8.52723,
+     "website": "https://www.bar-rossi.ch/",
+     "openingHours": "Mo-Th 17:00+; Fr 17:00-04:00, Sa 20:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5250341383",
+     "name": "Bar Sacchi",
+     "lat": 47.37535,
+     "lon": 8.51657,
+     "website": "https://sacchi.bar/",
+     "openingHours": "Tu,We 17:00-00:00; Th 17:00-01:00; Fr,Sa 17:00-02:00; Su 17:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4935627393",
+     "name": "BARADOX",
+     "lat": 47.37276,
+     "lon": 8.53333,
+     "address": "Sihlstrasse 73",
+     "website": "https://www.baradox.ch/",
+     "openingHours": "Tu-Th 17:00-24:00; Fr 17:00+; Sa 16:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/297710736",
+     "name": "Barfly'z",
+     "lat": 47.36588,
+     "lon": 8.53679,
+     "address": "Gotthardstrasse 21",
+     "website": "https://barflyz.ch/",
+     "openingHours": "Mo-Fr 08:00-24:00; Tu 08:00-01:00; Sa 17:00-02:00; Su \"Auf Anfrage\"",
+     "detailed": true
+    },
+    {
+     "id": "node/5736598489",
+     "name": "Barfussbar",
+     "lat": 47.36845,
+     "lon": 8.54203,
+     "website": "https://barfussbar.ch/",
+     "openingHours": "20:00-24:00; Mo off",
+     "detailed": true
+    },
+    {
+     "id": "node/1491966832",
+     "name": "Bederbar",
+     "lat": 47.36248,
+     "lon": 8.52675,
+     "website": "https://bederhof.ch/",
+     "openingHours": "Mo-Fr 09:30-14:00,16:30-23:00; Sa 16:30-23:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/6236201160",
+     "name": "Bierlab",
+     "lat": 47.3726,
+     "lon": 8.52598,
+     "address": "Grüngasse 7",
+     "website": "https://bierlab.ch/",
+     "openingHours": "Tu-Fr 17:00-24:00; Sa 14:00-24:00; Su 14:00-20:00",
+     "detailed": true
+    },
+    {
+     "id": "node/8912884300",
+     "name": "Bierwerk Züri",
+     "lat": 47.37945,
+     "lon": 8.5316,
+     "address": "Gustav-Gull-Platz 10",
+     "website": "https://www.bierwerkzueri.ch/",
+     "openingHours": "Mo-Fr 14:00-24:00; Sa 13:00-24:00; Su 13:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12050011843",
+     "name": "Cigar Bar",
+     "lat": 47.37123,
+     "lon": 8.54166,
+     "address": "Weinplatz 2",
+     "website": "https://storchen.ch/de/restaurants-bars/cigar-bar",
+     "openingHours": "Mo-Su 07:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1240044545",
+     "name": "Club HW",
+     "lat": 47.38075,
+     "lon": 8.52689,
+     "address": "Neufrankengasse 22",
+     "website": "https://www.h-w.club/",
+     "openingHours": "Fr-Sa 20:00-05:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4496703517",
+     "name": "Gonzo",
+     "lat": 47.38006,
+     "lon": 8.52774,
+     "address": "Langstrasse 135",
+     "website": "https://gonzoclub.ch/",
+     "openingHours": "We-Sa 23:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/656327506",
+     "name": "Heaven Club",
+     "lat": 47.37355,
+     "lon": 8.54411,
+     "address": "Spitalgasse 5",
+     "website": "https://heavenclub.ch/",
+     "openingHours": "Fr-Sa 22:45-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11246759770",
+     "name": "Heldenbar",
+     "lat": 47.38747,
+     "lon": 8.5302,
+     "address": "Sihlquai 240",
+     "website": "https://www.heldenbar.ch/",
+     "openingHours": "We 20:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/2205041423",
+     "name": "ICON",
+     "lat": 47.37148,
+     "lon": 8.53999,
+     "website": "https://www.icon-zurich.ch/",
+     "openingHours": "Fr 23:00+; Sa 23:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/338639750",
+     "name": "Kauz",
+     "lat": 47.38156,
+     "lon": 8.53697,
+     "address": "Ausstellungsstrasse 21",
+     "website": "https://www.kauzig.ch/",
+     "openingHours": "22:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/300384722",
+     "name": "Palais Mascotte",
+     "lat": 47.36629,
+     "lon": 8.54677,
+     "website": "https://palais-mascotte.club/",
+     "openingHours": "We-Sa 18:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/13400753409",
+     "name": "Schneiderei",
+     "lat": 47.37918,
+     "lon": 8.52725,
+     "address": "Langstrasse 117",
+     "website": "https://schneiderei-club.ch/",
+     "openingHours": "Fr-Sa 22:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6136508321",
+     "name": "Widder Garage",
+     "lat": 47.37169,
+     "lon": 8.53981,
+     "website": "https://www.widderhotel.com/essen-trinken/widder-garage/",
+     "openingHours": "Th 17:15-24:00; Fr 00:00-01:00,17:15-24:00; Sa 00:00-02:00,17:15-24:00; Su 00:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5297598013",
+     "name": "Alte Kaserne",
+     "lat": 47.37684,
+     "lon": 8.52904,
+     "address": "Kanonengasse 16",
+     "website": "https://www.altekaserne.com/"
+    },
+    {
+     "id": "node/6327730346",
+     "name": "Bogen F",
+     "lat": 47.38478,
+     "lon": 8.52077,
+     "address": "Viaduktstrasse 97",
+     "website": "https://www.bogenf.ch/"
+    },
+    {
+     "id": "node/4237469793",
+     "name": "Club Bar Aura",
+     "lat": 47.36866,
+     "lon": 8.53773,
+     "openingHours": "Mo-Th 17:00-24:00; Fr-Sa 17:00-02:00; PH closed"
+    },
+    {
+     "id": "node/13414054685",
+     "name": "Club Bellevue",
+     "lat": 47.36749,
+     "lon": 8.5461,
+     "website": "https://club-bellevue.ch/"
+    },
+    {
+     "id": "node/5128008060",
+     "name": "Club Wunderbox",
+     "lat": 47.37775,
+     "lon": 8.52672,
+     "website": "https://www.wunderboxclub.ch/"
+    },
+    {
+     "id": "node/4425335090",
+     "name": "Heile Welt",
+     "lat": 47.38078,
+     "lon": 8.5269,
+     "address": "Neufrankengasse 22",
+     "website": "https://www.h-w.club/"
+    },
+    {
+     "id": "node/267345397",
+     "name": "Hive",
+     "lat": 47.38487,
+     "lon": 8.52024,
+     "address": "Geroldstrasse 5",
+     "website": "https://www.hiveclub.ch/"
+    },
+    {
+     "id": "node/4012858729",
+     "name": "Jade Club",
+     "lat": 47.37164,
+     "lon": 8.5359,
+     "address": "Pelikanplatz",
+     "website": "https://jade.ch/"
+    },
+    {
+     "id": "node/300744285",
+     "name": "Kaufleuten Klubsaal",
+     "lat": 47.37181,
+     "lon": 8.53642,
+     "address": "Pelikanstrasse 18",
+     "website": "https://kaufleuten.ch/"
+    },
+    {
+     "id": "node/3926182141",
+     "name": "New Crazy Horse",
+     "lat": 47.37494,
+     "lon": 8.52985,
+     "address": "Müllerstrasse 37",
+     "openingHours": "Mo-Th 16:00-03:00, Fr,Sa 16:00-05:00"
+    },
+    {
+     "id": "node/298172592",
+     "name": "Plaza Klub",
+     "lat": 47.37415,
+     "lon": 8.5248,
+     "address": "Badenerstrasse 109",
+     "website": "https://www.plaza-zurich.ch/"
+    },
+    {
+     "id": "node/869269133",
+     "name": "Privé",
+     "lat": 47.37685,
+     "lon": 8.52505,
+     "website": "https://www.club-prive.ch/"
+    },
+    {
+     "id": "node/474778383",
+     "name": "provitreff",
+     "lat": 47.38746,
+     "lon": 8.53026,
+     "address": "Sihlquai 240",
+     "website": "https://provitreff.ch/"
+    },
+    {
+     "id": "node/3840760484",
+     "name": "UMBO",
+     "lat": 47.38682,
+     "lon": 8.53394,
+     "address": "Wasserwerkstrasse 89a",
+     "website": "https://radar.squat.net/de/zurich/umbo"
+    },
+    {
+     "id": "node/365892147",
+     "name": "Werk 21",
+     "lat": 47.38322,
+     "lon": 8.53941,
+     "website": "https://www.dynamo.ch/raum/werk-21"
+    },
+    {
+     "id": "node/5246161331",
+     "name": "Attica",
+     "lat": 47.38224,
+     "lon": 8.53452
+    },
+    {
+     "id": "node/7059418846",
+     "name": "El Presidente",
+     "lat": 47.37762,
+     "lon": 8.52662,
+     "address": "Langstrasse 80"
+    },
+    {
+     "id": "node/10861648025",
+     "name": "Flamingo Club",
+     "lat": 47.38218,
+     "lon": 8.5346
+    },
+    {
+     "id": "way/56004913",
+     "name": "Kanzlei Turnhalle",
+     "lat": 47.3755,
+     "lon": 8.52647,
+     "address": "Kanzleistrasse 54"
+    },
+    {
+     "id": "node/1241219598",
+     "name": "Locarno 2000",
+     "lat": 47.37856,
+     "lon": 8.52669,
+     "address": "Dienerstrasse 45"
+    },
+    {
+     "id": "node/6033594854",
+     "name": "Petit Prince",
+     "lat": 47.36762,
+     "lon": 8.53515
+    }
+   ]
+  }
+ }
+}

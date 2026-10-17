@@ -1,0 +1,2167 @@
+{
+ "version": 1,
+ "cityCode": "LON",
+ "fetchedAt": "2026-10-16T23:13:31.686Z",
+ "radiusKm": 4,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/1280px-London_Skyline_%28125508655%29.jpeg",
+  "width": 1280,
+  "height": 720,
+  "author": "Ilya Grigorik",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:London_Skyline_(125508655).jpeg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/5208404",
+     "name": "Buckingham Sarayı",
+     "localName": "Buckingham Palace",
+     "lat": 51.50083,
+     "lon": -0.14266,
+     "website": "https://www.royalcollection.org.uk/visit/the-state-rooms-buckingham-palace",
+     "openingHours": "Mo-Su 10:00-17:30",
+     "wikipediaCount": 93
+    },
+    {
+     "id": "node/1802652184",
+     "name": "Big Ben",
+     "lat": 51.5007,
+     "lon": -0.12457,
+     "address": "Bridge Street",
+     "wikipediaCount": 87
+    },
+    {
+     "id": "way/123557148",
+     "name": "Elizabeth Tower",
+     "lat": 51.5007,
+     "lon": -0.12457,
+     "wikipediaCount": 87
+    },
+    {
+     "id": "way/364313092",
+     "name": "Westminster Abbey",
+     "lat": 51.4994,
+     "lon": -0.12739,
+     "address": "Dean's Yard 20",
+     "website": "https://www.westminster-abbey.org/",
+     "openingHours": "Mo-Sa 09:30-16:00",
+     "wikipediaCount": 86
+    },
+    {
+     "id": "way/370870741",
+     "name": "Londra Kalesi",
+     "localName": "Tower of London",
+     "lat": 51.50813,
+     "lon": -0.07629,
+     "address": "Tower Hill",
+     "website": "https://www.hrp.org.uk/toweroflondon",
+     "wikipediaCount": 86
+    },
+    {
+     "id": "node/2079674503",
+     "name": "Tower Bridge",
+     "lat": 51.50552,
+     "lon": -0.07537,
+     "website": "https://www.towerbridge.org.uk/",
+     "wikipediaCount": 85
+    },
+    {
+     "id": "relation/1567699",
+     "name": "Palace of Westminster",
+     "lat": 51.49939,
+     "lon": -0.12457,
+     "address": "Westminster",
+     "website": "https://www.parliament.uk/",
+     "wikipediaCount": 84
+    },
+    {
+     "id": "way/204068874",
+     "name": "London Eye",
+     "lat": 51.50334,
+     "lon": -0.11968,
+     "address": "Westminster Bridge Road",
+     "website": "https://www.londoneye.com/",
+     "openingHours": "Mo-Su 11:00-18:00",
+     "wikipediaCount": 77
+    },
+    {
+     "id": "way/378493707",
+     "name": "London Bridge",
+     "lat": 51.50802,
+     "lon": -0.08768,
+     "wikipediaCount": 77
+    },
+    {
+     "id": "way/4680891",
+     "name": "British Library",
+     "lat": 51.53,
+     "lon": -0.12771,
+     "address": "Euston Road 96",
+     "website": "https://www.bl.uk/",
+     "openingHours": "Mo-Th 09:30-20:00; Sa 09:30-17:00; Su 11:00-17:00; Fr 09:30-18:00",
+     "wikipediaCount": 76
+    },
+    {
+     "id": "relation/553472",
+     "name": "Bank of England",
+     "lat": 51.51411,
+     "lon": -0.08856,
+     "address": "Threadneedle Street 8AH",
+     "website": "https://www.bankofengland.co.uk/",
+     "wikipediaCount": 73
+    },
+    {
+     "id": "way/369161987",
+     "name": "St Paul's Cathedral",
+     "lat": 51.51378,
+     "lon": -0.09844,
+     "address": "St Paul's Churchyard",
+     "website": "https://www.stpauls.co.uk/",
+     "openingHours": "Mo-Sa 08:30-16:00",
+     "wikipediaCount": 72
+    },
+    {
+     "id": "relation/3962877",
+     "name": "Trafalgar Meydanı",
+     "localName": "Trafalgar Square",
+     "lat": 51.50817,
+     "lon": -0.12827,
+     "wikipediaCount": 72
+    },
+    {
+     "id": "relation/1879842",
+     "name": "10 Downing Street",
+     "lat": 51.5035,
+     "lon": -0.12755,
+     "address": "Downing Street 10",
+     "website": "https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street",
+     "wikipediaCount": 64
+    },
+    {
+     "id": "way/372975520",
+     "name": "Hyde Park",
+     "lat": 51.50741,
+     "lon": -0.16305,
+     "wikipediaCount": 61
+    },
+    {
+     "id": "way/31110737",
+     "name": "The Shard",
+     "lat": 51.50437,
+     "lon": -0.08648,
+     "address": "London Bridge Street 32",
+     "website": "https://www.the-shard.com/",
+     "wikipediaCount": 59
+    },
+    {
+     "id": "way/33721672",
+     "name": "Royal Opera House",
+     "lat": 51.51288,
+     "lon": -0.1225,
+     "address": "Bow Street",
+     "website": "https://www.rbo.org.uk/",
+     "wikipediaCount": 55
+    },
+    {
+     "id": "relation/8250949",
+     "name": "Piccadilly Circus",
+     "lat": 51.5099,
+     "lon": -0.13438,
+     "wikipediaCount": 53
+    },
+    {
+     "id": "way/372860405",
+     "name": "Royal Albert Hall",
+     "lat": 51.50101,
+     "lon": -0.17741,
+     "address": "Kensington Gore 4",
+     "website": "http://www.royalalberthall.com/",
+     "wikipediaCount": 50
+    },
+    {
+     "id": "relation/545040",
+     "name": "Saint James's Palace",
+     "lat": 51.50455,
+     "lon": -0.13797,
+     "wikipediaCount": 50
+    },
+    {
+     "id": "way/216998718",
+     "name": "Westminster Bridge",
+     "lat": 51.50083,
+     "lon": -0.12099,
+     "wikipediaCount": 48
+    },
+    {
+     "id": "way/920237507",
+     "name": "Westminster Bridge",
+     "lat": 51.50087,
+     "lon": -0.12256,
+     "wikipediaCount": 48
+    },
+    {
+     "id": "way/920237508",
+     "name": "Westminster Bridge",
+     "lat": 51.50085,
+     "lon": -0.12203,
+     "wikipediaCount": 48
+    },
+    {
+     "id": "relation/19306462",
+     "name": "Westminster Bridge",
+     "lat": 51.50085,
+     "lon": -0.12178,
+     "wikipediaCount": 48
+    },
+    {
+     "id": "way/25739565",
+     "name": "Harrods",
+     "lat": 51.49924,
+     "lon": -0.16301,
+     "address": "Brompton Road 87-135",
+     "website": "https://www.harrods.com/",
+     "openingHours": "Mo-Sa 10:00-21:00; Su 11:30-18:00",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "way/10810446",
+     "name": "Westminster Cathedral",
+     "lat": 51.49582,
+     "lon": -0.13952,
+     "address": "Francis Street",
+     "website": "https://westminstercathedral.org.uk/",
+     "openingHours": "Mo-Fr 09:30-17:00; Sa-Su 09:00-18:00",
+     "wikipediaCount": 45
+    },
+    {
+     "id": "node/1948210427",
+     "name": "Site of the original Globe Theatre",
+     "lat": 51.50684,
+     "lon": -0.09474,
+     "wikipediaCount": 45
+    },
+    {
+     "id": "node/11899012453",
+     "name": "Former Whitehall Palace Steps",
+     "lat": 51.50456,
+     "lon": -0.12403,
+     "wikipediaCount": 44
+    },
+    {
+     "id": "way/150920358",
+     "name": "Nelson's Column",
+     "lat": 51.50776,
+     "lon": -0.12793,
+     "wikipediaCount": 38
+    },
+    {
+     "id": "way/30734422",
+     "name": "St Martin-in-the-Fields",
+     "lat": 51.50883,
+     "lon": -0.12668,
+     "address": "St Martin's Place 5",
+     "website": "https://www.stmartin-in-the-fields.org/",
+     "wikipediaCount": 36
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/177044",
+     "name": "British Museum",
+     "lat": 51.51931,
+     "lon": -0.12688,
+     "address": "Great Russell Street",
+     "website": "https://www.britishmuseum.org/",
+     "openingHours": "Sa-Th 10:00-17:00; Fr 10:00-20:30",
+     "wikipediaCount": 107
+    },
+    {
+     "id": "way/4372002",
+     "name": "National Gallery",
+     "lat": 51.50889,
+     "lon": -0.12875,
+     "website": "https://www.nationalgallery.org.uk/",
+     "openingHours": "Sa-Th 10:00-18:00; Fr 10:00-21:00",
+     "wikipediaCount": 70
+    },
+    {
+     "id": "way/684695074",
+     "name": "Madame Tussauds",
+     "lat": 51.5229,
+     "lon": -0.15487,
+     "address": "Marylebone Road 8-10",
+     "website": "https://www.madametussauds.com/london/en/plan-your-visit/which-entrance/",
+     "openingHours": "Mo-Fr 09:30-17:30; Sa-Su 09:00-18:00",
+     "wikipediaCount": 67
+    },
+    {
+     "id": "relation/29795",
+     "name": "Victoria and Albert Museum",
+     "lat": 51.49691,
+     "lon": -0.17212,
+     "address": "Cromwell Road",
+     "website": "https://www.vam.ac.uk/",
+     "openingHours": "Sa-Th 10:00-17:45; Fr 10:00-22:00; Dec 24-26 off",
+     "wikipediaCount": 60
+    },
+    {
+     "id": "way/24642569",
+     "name": "Tate Modern",
+     "lat": 51.50743,
+     "lon": -0.09939,
+     "address": "Bankside",
+     "website": "https://www.tate.org.uk/visit/tate-modern",
+     "openingHours": "Su-Th 10:00-18:00; Fr-Sa 10:00-21:00",
+     "wikipediaCount": 59
+    },
+    {
+     "id": "way/24436446",
+     "name": "Doğa Tarihi Müzesi",
+     "localName": "Natural History Museum",
+     "lat": 51.49646,
+     "lon": -0.17602,
+     "address": "Cromwell Road",
+     "website": "https://www.nhm.ac.uk/",
+     "openingHours": "10:00-17:30",
+     "wikipediaCount": 53
+    },
+    {
+     "id": "way/59161723",
+     "name": "National Portrait Gallery",
+     "lat": 51.5093,
+     "lon": -0.12821,
+     "website": "https://www.npg.org.uk/",
+     "openingHours": "Su-Th 10:30-18:00; Fr-Sa 10:30-21:00",
+     "wikipediaCount": 47
+    },
+    {
+     "id": "way/27765411",
+     "name": "Science Museum",
+     "lat": 51.4974,
+     "lon": -0.17623,
+     "website": "https://www.sciencemuseum.org.uk/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 46
+    },
+    {
+     "id": "way/31510288",
+     "name": "Royal Academy of Arts",
+     "lat": 51.50926,
+     "lon": -0.1397,
+     "address": "Piccadilly",
+     "website": "https://www.royalacademy.org.uk/",
+     "wikipediaCount": 41
+    },
+    {
+     "id": "way/8614496",
+     "name": "Imperial War Museum London",
+     "lat": 51.4958,
+     "lon": -0.10859,
+     "address": "Lambeth Road",
+     "website": "https://www.iwm.org.uk/visits/iwm-london",
+     "openingHours": "10:00-18:00; Dec 24-26 off",
+     "wikipediaCount": 36
+    },
+    {
+     "id": "way/24553580",
+     "name": "Tate Britain",
+     "lat": 51.49114,
+     "lon": -0.12759,
+     "address": "Millbank",
+     "website": "https://www.tate.org.uk/visit/tate-britain",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 35
+    },
+    {
+     "id": "way/110753809",
+     "name": "Royal Institute of British Architects",
+     "lat": 51.52127,
+     "lon": -0.14486,
+     "address": "Portland Place 66-68",
+     "website": "https://www.architecture.com/",
+     "openingHours": "Mo 08:00-17:30; Tu 08:00-20:00; We-Fr 08:00-17:45; Sa 10:00-17:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "node/3916613190",
+     "name": "Sherlock Holmes Museum",
+     "lat": 51.52376,
+     "lon": -0.15847,
+     "address": "Baker Street 221B",
+     "website": "https://www.sherlock-holmes.co.uk/",
+     "openingHours": "Mo-Su 09:30-18:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/83488820",
+     "name": "The Wallace Collection",
+     "lat": 51.51751,
+     "lon": -0.15304,
+     "address": "Manchester Square",
+     "openingHours": "Mo-Su 10:00-17:00; Fr,Sa 10:00-23:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/120316250",
+     "name": "Apsley House",
+     "lat": 51.50349,
+     "lon": -0.15171,
+     "address": "Piccadilly 149",
+     "website": "https://www.wellingtoncollection.co.uk/",
+     "openingHours": "We-Su 11:00-17:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "way/27703085",
+     "name": "Petrie Museum of Egyptian Archeology",
+     "lat": 51.52358,
+     "lon": -0.13298,
+     "address": "Malet Place",
+     "website": "http://www.ucl.ac.uk/museums/petrie",
+     "openingHours": "Tu-Sa 13:00-17:00",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "way/61453261",
+     "name": "Sir John Soane's Museum",
+     "lat": 51.51708,
+     "lon": -0.11747,
+     "address": "Lincoln's Inn Fields 13",
+     "website": "https://www.soane.org/",
+     "openingHours": "Tu-Sa 10:00-16:30",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "way/5317958",
+     "name": "Saatchi Gallery",
+     "lat": 51.49065,
+     "lon": -0.15876,
+     "address": "King's Road",
+     "website": "http://www.saatchigallery.com/",
+     "openingHours": "Mo-Su 11:00-18:00",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/44599803",
+     "name": "London Transport Museum",
+     "lat": 51.51199,
+     "lon": -0.12122,
+     "address": "Covent Garden Piazza",
+     "website": "https://www.ltmuseum.co.uk/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/197206542",
+     "name": "Churchill War Rooms",
+     "lat": 51.50221,
+     "lon": -0.12925,
+     "address": "King Charles Street",
+     "website": "https://www.iwm.org.uk/visits/churchill-war-rooms",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "node/2647639741",
+     "name": "The Courtauld Gallery",
+     "lat": 51.51162,
+     "lon": -0.1177,
+     "address": "Strand",
+     "website": "https://courtauld.ac.uk/gallery/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "node/334631276",
+     "name": "Charles Dickens Museum",
+     "lat": 51.52359,
+     "lon": -0.11632,
+     "address": "Doughty Street 48-49",
+     "website": "https://dickensmuseum.com/",
+     "openingHours": "We-Su 10:00-16:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/25913653",
+     "name": "Hayward Gallery",
+     "lat": 51.50617,
+     "lon": -0.11549,
+     "address": "Belvedere Road",
+     "website": "https://www.southbankcentre.co.uk/venues/hayward-gallery",
+     "openingHours": "Mo off; Tu-Fr,Su 10:00-18:00; Sa 10:00-20:00",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/1493424622",
+     "name": "Handel & Hendrix",
+     "lat": 51.51294,
+     "lon": -0.14588,
+     "address": "Brook Street 25",
+     "website": "https://handelhendrix.org/",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/1289223308",
+     "name": "The King's Gallery",
+     "lat": 51.49983,
+     "lon": -0.14255,
+     "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/5741257603",
+     "name": "The Florence Nightingale Museum",
+     "lat": 51.50001,
+     "lon": -0.11767,
+     "address": "Lambeth Palace Road 2",
+     "website": "https://www.florence-nightingale.co.uk/",
+     "openingHours": "Tu-Su 10:00-17:00; \"Last Th of month close at 20:00\"",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/10807015",
+     "name": "National Army Museum",
+     "lat": 51.48624,
+     "lon": -0.16029,
+     "website": "https://www.nam.ac.uk/",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/4513341393",
+     "name": "Bank of England Museum",
+     "lat": 51.5142,
+     "lon": -0.08768,
+     "website": "https://www.bankofengland.co.uk/museum",
+     "openingHours": "Mo-Fr 10:00-17:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/5247197725",
+     "name": "The Charterhouse",
+     "lat": 51.52146,
+     "lon": -0.09978,
+     "website": "https://thecharterhouse.org/",
+     "openingHours": "Tu-Su 11:00-16:45",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/2617821322",
+     "name": "Wellcome Collection",
+     "lat": 51.52597,
+     "lon": -0.13402,
+     "address": "Euston Road 183",
+     "website": "http://www.wellcomecollection.org/",
+     "openingHours": "Tu-We,Fr-Su 10:00-18:00; Th 10:00-20:00",
+     "wikipediaCount": 8
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3272712570",
+     "name": "Sky Garden",
+     "lat": 51.5111,
+     "lon": -0.0836,
+     "address": "Fenchurch Street 20",
+     "website": "https://skygarden.london/",
+     "openingHours": "Mo-Fr 10:00-18:00; Sa-Su,PH 11:00-21:00"
+    },
+    {
+     "id": "node/11262672466",
+     "name": "Horizon 22",
+     "lat": 51.51437,
+     "lon": -0.08315,
+     "website": "https://horizon22.co.uk/"
+    },
+    {
+     "id": "node/11148594121",
+     "name": "The Lookout",
+     "lat": 51.51401,
+     "lon": -0.0836,
+     "website": "https://www.8bishopsgate.com/lookout"
+    },
+    {
+     "id": "node/13764193801",
+     "name": "Soham’s Spot",
+     "lat": 51.50851,
+     "lon": -0.09938
+    },
+    {
+     "id": "node/4880465176",
+     "name": "Switch House",
+     "lat": 51.50714,
+     "lon": -0.10029,
+     "address": "Bankside"
+    },
+    {
+     "id": "node/13829107501",
+     "name": "Terrace (One Leadenhall)",
+     "lat": 51.51306,
+     "lon": -0.0835,
+     "address": "Leadenhall Street 1"
+    },
+    {
+     "id": "node/6284793459",
+     "name": "The Garden at 120",
+     "lat": 51.51214,
+     "lon": -0.08078,
+     "address": "Fenchurch Street 120"
+    },
+    {
+     "id": "node/5352812330",
+     "name": "Tower Bridge",
+     "lat": 51.50557,
+     "lon": -0.07547,
+     "address": "Tower Bridge"
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/691728906",
+     "name": "Akoko",
+     "lat": 51.51769,
+     "lon": -0.13684,
+     "address": "Berners Street 21",
+     "website": "https://akoko.co.uk/",
+     "openingHours": "Mo off; Tu-We 18:00-21:00; Th-Sa 12:00-14:00,18:00-21:00; Su off",
+     "cuisine": "african, west african",
+     "detailed": true
+    },
+    {
+     "id": "node/686568571",
+     "name": "Amora Gusto",
+     "lat": 51.50417,
+     "lon": -0.1056,
+     "address": "Isabella street 94-95",
+     "website": "https://www.amoragusto.com/",
+     "openingHours": "Mo-Sa 12:00-23:00",
+     "cuisine": "italian, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/322970463",
+     "name": "Arments Pie & Mash",
+     "lat": 51.48437,
+     "lon": -0.09299,
+     "address": "Westmoreland Road 7-9",
+     "website": "https://armentspieandmash.com/",
+     "openingHours": "Tu-Fr 10:30-16:00; Sa 10:30-17:00",
+     "cuisine": "pie and mash",
+     "detailed": true
+    },
+    {
+     "id": "node/300425812",
+     "name": "Bella Italia",
+     "lat": 51.49307,
+     "lon": -0.17661,
+     "address": "Old Brompton Road 60",
+     "website": "https://www.bellaitalia.co.uk/restaurants/london/south-kensington",
+     "openingHours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/751822960",
+     "name": "Cafe Amisha",
+     "lat": 51.49522,
+     "lon": -0.07674,
+     "address": "Grange Road 161",
+     "website": "https://cafeamisha.com/",
+     "openingHours": "Tu-Sa 12:00-22:30; Su 12:00-21:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/662185230",
+     "name": "Café Rouge",
+     "lat": 51.50823,
+     "lon": -0.07271,
+     "address": "St. Katharine's Way",
+     "website": "https://www.caferouge.com/bistro-brasserie/london/st-katherine-docks",
+     "openingHours": "Mo-Fr 08:00-23:00; Sa 08:30-23:30; Su 09:00-22:30",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/387690502",
+     "name": "Camden Diner",
+     "lat": 51.5407,
+     "lon": -0.14465,
+     "address": "Jamestown Road 2-2A",
+     "website": "https://camdendiner.com/",
+     "openingHours": "Fr-Sa 09:00-00:00; Su-Th 09:00-23:00",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "node/662185232",
+     "name": "Chicome",
+     "lat": 51.50838,
+     "lon": -0.07324,
+     "address": "St. Katharine's Way 2",
+     "website": "https://chicome.co.uk/",
+     "openingHours": "Tu-Sa 12:00-22:00",
+     "cuisine": "mexican, south american, grill",
+     "detailed": true
+    },
+    {
+     "id": "node/666745313",
+     "name": "Constancia",
+     "lat": 51.50003,
+     "lon": -0.07852,
+     "address": "Tanner Street 52",
+     "website": "http://www.constancia.co.uk/",
+     "openingHours": "Mo-We 17:00-22:30; Th-Fr 12:00-15:30, 17:00-22:30; Sa 12:00-22:30; Su 12:00-21:30",
+     "cuisine": "argentinian",
+     "detailed": true
+    },
+    {
+     "id": "node/282686486",
+     "name": "Côte Brasserie",
+     "lat": 51.50533,
+     "lon": -0.11693,
+     "address": "Belvedere Road",
+     "website": "https://www.cote.co.uk/restaurant/royal-festival-hall",
+     "openingHours": "Mo-Fr 09:00-24:00; Sa 10:00-24:00; Su 10:00-22:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/469937774",
+     "name": "Delamina East",
+     "lat": 51.52129,
+     "lon": -0.07573,
+     "address": "Commercial Street 151-153",
+     "website": "https://www.delaminaeast.co.uk/",
+     "openingHours": "Mo 12:00-21:30; Tu-Th 12:00-22:00; Sa 11:00-22:30; Su 10:30-21:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/441698041",
+     "name": "EV",
+     "lat": 51.50417,
+     "lon": -0.10634,
+     "address": "Isabella Street 97-99",
+     "website": "https://evrestaurant.co.uk/",
+     "openingHours": "Tu-Sa 12:00-23:30; Su-Mo 12:00-22:30",
+     "cuisine": "turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/509901937",
+     "name": "Fantasia Palace",
+     "lat": 51.51807,
+     "lon": -0.17134,
+     "address": "Praed Street 28",
+     "website": "http://www.fantasiapalace.co.uk/",
+     "openingHours": "Mo-Th 10:00-23:30; Fr 10:00-24:00; Sa 10:00-24:00; Su 10:00-23:00",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/462008326",
+     "name": "Fish Central",
+     "lat": 51.52757,
+     "lon": -0.09711,
+     "address": "Central Street 149-155",
+     "website": "https://www.fishcentral.co.uk/",
+     "openingHours": "Mo-Sa 11:30-22:30",
+     "cuisine": "fish",
+     "detailed": true
+    },
+    {
+     "id": "node/581959113",
+     "name": "Gazette Brasserie",
+     "lat": 51.52268,
+     "lon": -0.10356,
+     "address": "Clerkenwell Road 86-88",
+     "website": "https://www.gazettebrasserie.co.uk/clerkenwell",
+     "openingHours": "Mo-Fr 07:30-22:00 open, Mo-Fr 07:30-10:30 open \"Breakfast\"; Sa-Su 08:00-22:00 open, Sa-Su 08:00-10:30 open \"Breakfast\"",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/262565580",
+     "name": "Giraffe",
+     "lat": 51.50631,
+     "lon": -0.11714,
+     "address": "Riverside Level 1",
+     "website": "https://www.giraffe.net/",
+     "openingHours": "Mo-Th 08:00-23:00;Fr 08:00-23:30;Sa 09:00-23:30;Su 09:00-22:30",
+     "cuisine": "international, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/348905523",
+     "name": "HAPPY",
+     "lat": 51.51013,
+     "lon": -0.13247,
+     "address": "Coventry Street 25-29",
+     "website": "https://happyrestaurants.com/",
+     "openingHours": "Mo-Sa 12:00-23:00",
+     "cuisine": "burger, chicken, international, seafood, fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/540705964",
+     "name": "Hard Rock Cafe",
+     "lat": 51.50387,
+     "lon": -0.14905,
+     "address": "Old Park Lane 150",
+     "website": "https://cafe.hardrock.com/london/",
+     "openingHours": "Mo-Th 11:30-00:30; Fr 11:30-01:00; Sa 11:00-01:00; Su 11:30-22:30",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "node/703362628",
+     "name": "Holborn Dining Room",
+     "lat": 51.51764,
+     "lon": -0.11779,
+     "address": "High Holborn 252",
+     "website": "https://www.rosewoodhotels.com/en/london/dining/holborn-dining-room",
+     "openingHours": "Mo-Su 07:00-22:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/692129403",
+     "name": "Homeslice",
+     "lat": 51.51841,
+     "lon": -0.13998,
+     "address": "Wells Street 52",
+     "website": "https://www.homeslicepizza.co.uk/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su 12:00-22:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/282686485",
+     "name": "Honest Burgers",
+     "lat": 51.50526,
+     "lon": -0.11671,
+     "address": "Festival Terrace 9",
+     "website": "https://www.honestburgers.co.uk/locations/south-bank/",
+     "openingHours": "Mo-Sa 10:30-23:00; Su 10:30-22:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/299616421",
+     "name": "Hong Kong Restaurant",
+     "lat": 51.53896,
+     "lon": -0.1021,
+     "address": "Upper Street 301",
+     "website": "https://www.hkcuisine.co.uk/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/333726500",
+     "name": "Indian YMCA",
+     "lat": 51.52277,
+     "lon": -0.13896,
+     "address": "Fitzroy Street 41",
+     "website": "https://www.indianymca.org/our-restaurant/",
+     "openingHours": "Mo-Fr 07:30-09:15, 12:00-15:00; Sa-Su 07:30-09:15, 12:00-14:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/670649313",
+     "name": "Jumak 39",
+     "lat": 51.50949,
+     "lon": -0.13202,
+     "address": "Panton Street 39",
+     "website": "https://jumak39.co.uk/",
+     "openingHours": "Mo-Fr 12:00-15:00, 17:00-22:30; Sa 12:00-22:30; Su 12:00-22:00",
+     "cuisine": "barbecue, korean",
+     "detailed": true
+    },
+    {
+     "id": "node/618653277",
+     "name": "Kanada-Ya",
+     "lat": 51.53471,
+     "lon": -0.10508,
+     "address": "Upper Street 35",
+     "website": "https://www.kanada-ya.com/",
+     "openingHours": "Mo-Fr 12:00-15:00, 17:00-22:30; Sa 12:00-15:00, 17:00-22:30; Su 12:00-20:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/534962783",
+     "name": "Katzenjammers Bavarian Bierkeller",
+     "lat": 51.50484,
+     "lon": -0.09097,
+     "address": "Southwark Street 24",
+     "website": "http://www.katzenjammers.co.uk/",
+     "openingHours": "Mo-Th 12:00-23:00; Fr,Sa 12:00-24:00; Su 12:00-22:30",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/466926237",
+     "name": "Kiln",
+     "lat": 51.51135,
+     "lon": -0.136,
+     "address": "Brewer Street 58",
+     "website": "https://www.kilnsoho.com/",
+     "openingHours": "Mo-Sa 12:00-14:30, 17:00-22:30; Su 13:00-20:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/348357924",
+     "name": "La Farola",
+     "lat": 51.53762,
+     "lon": -0.10299,
+     "address": "Upper Street 101",
+     "website": "https://lafarolacafe.co.uk/",
+     "openingHours": "Mo-Th 11:00-23:00; Fr 11:00-00:00; Sa 09:00-00:00; Su 09:00-22:30",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/699848874",
+     "name": "Lima",
+     "lat": 51.51773,
+     "lon": -0.13437,
+     "address": "Rathbone Place 31",
+     "website": "https://www.limalondongroup.com/fitzrovia",
+     "openingHours": "Mo-Sa 12:00-14:30,17:30-22:30; Su off",
+     "cuisine": "peruvian",
+     "detailed": true
+    },
+    {
+     "id": "node/677316017",
+     "name": "M. Manze",
+     "lat": 51.49634,
+     "lon": -0.08275,
+     "address": "Tower Bridge Road 87",
+     "website": "https://www.manze.co.uk/",
+     "openingHours": "Mo-Th 10:30-17:45; Fr 10:00-18:45; Sa 10:00-19:45; Su 11:00-14:45",
+     "cuisine": "pie and mash",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3206389319",
+     "name": "Attendant",
+     "lat": 51.52127,
+     "lon": -0.07892,
+     "address": "Folgate Street 8-9",
+     "website": "https://www.the-attendant.com/",
+     "openingHours": "Mo-Fr 08:00-16:00, Sa-Su 09:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3223507049",
+     "name": "Black Sheep Coffee",
+     "lat": 51.49301,
+     "lon": -0.14904,
+     "address": "Elizabeth Street 6-9",
+     "website": "https://blacksheepcoffee.co.uk/blogs/locations/elizabeth-street",
+     "openingHours": "Mo-Fr 05:45-19:00; Sa 06:30-19:00; Su 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3085263821",
+     "name": "Blank Street Coffee",
+     "lat": 51.51668,
+     "lon": -0.1291,
+     "address": "New Oxford Street 110",
+     "website": "https://www.blankstreet.com/",
+     "openingHours": "Mo-Fr 06:30-20:00; Sa 07:00-20:00; Su 07:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3306596294",
+     "name": "Blank Street Coffee",
+     "lat": 51.51061,
+     "lon": -0.08541,
+     "address": "Eastcheap 2A",
+     "website": "https://www.blankstreet.com/en-GB/locations/london/LB9VF0QD2PKPT-monument",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 07:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/666475916",
+     "name": "Cafe Below",
+     "lat": 51.51387,
+     "lon": -0.09353,
+     "address": "Cheapside",
+     "website": "https://www.cafebelow.co.uk/",
+     "openingHours": "Mo-Fr 07:00-10:00, 11:30-14:30",
+     "cuisine": "breakfast, local",
+     "detailed": true
+    },
+    {
+     "id": "node/348871686",
+     "name": "Caffè Concerto",
+     "lat": 51.51145,
+     "lon": -0.13284,
+     "address": "Shaftesbury Avenue 50",
+     "website": "https://www.caffeconcerto.co.uk/restaurant/shaftesbury-avenue.html",
+     "openingHours": "07:30-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/299444032",
+     "name": "Caffè Nero",
+     "lat": 51.53639,
+     "lon": -0.10378,
+     "address": "Upper Street 75",
+     "website": "https://www.caffenero.com/uk/stores/islington",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa,Su 07:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/338507462",
+     "name": "Caffè Nero",
+     "lat": 51.51609,
+     "lon": -0.11973,
+     "address": "Kingsway 77D",
+     "website": "https://www.caffenero.com/uk/stores/kingsway",
+     "openingHours": "Mo-Fr 06:30-21:00; Sa 07:00-21:00; Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/534907516",
+     "name": "Caffè Nero",
+     "lat": 51.51493,
+     "lon": -0.09776,
+     "address": "Newgate Street 30",
+     "website": "https://www.caffenero.com/uk/stores/paternoster-sq",
+     "openingHours": "Mo-Fr 06:00-19:30; Sa 06:30-20:00; Su 07:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/534964186",
+     "name": "Caffè Nero",
+     "lat": 51.50675,
+     "lon": -0.0906,
+     "address": "Cathedral Street 3",
+     "website": "https://www.caffenero.com/uk/stores/golden-hind",
+     "openingHours": "Mo-Fr 06:30-20:30; Sa-Su 07:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/544456208",
+     "name": "Caffè Nero",
+     "lat": 51.50112,
+     "lon": -0.12462,
+     "address": "Bridge Street 70",
+     "website": "https://www.caffenero.com/uk/stores/portcullis-house",
+     "openingHours": "Mo-Fr 06:00-21:30; Sa 07:00-21:30; Su 07:30-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/559520875",
+     "name": "Caffè Nero",
+     "lat": 51.50728,
+     "lon": -0.12837,
+     "address": "Trafalgar Square 60-61",
+     "website": "https://www.caffenero.com/uk/stores/trafalgar-sq",
+     "openingHours": "Mo-Fr 06:30-21:00; Sa 07:00-21:00; Su 07:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/595303835",
+     "name": "Caffè Nero",
+     "lat": 51.50947,
+     "lon": -0.13235,
+     "address": "Haymarket 27",
+     "website": "https://www.caffenero.com/uk/stores/haymarket",
+     "openingHours": "Mo-Th 06:30-21:00; Fr-Sa 06:30-22:00; Su 07:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/603128624",
+     "name": "Caffè Nero",
+     "lat": 51.51149,
+     "lon": -0.12767,
+     "address": "Cranbourn Street 32",
+     "website": "https://www.caffenero.com/uk/stores/cranbourn-st",
+     "openingHours": "Mo-Th 06:00-21:00; Fr 06:00-22:00; Sa 07:00-22:00; Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/647875599",
+     "name": "Caffè Nero",
+     "lat": 51.52086,
+     "lon": -0.11649,
+     "address": "Theobalds Road 54",
+     "website": "https://www.caffenero.com/uk/stores/theobalds-rd",
+     "openingHours": "Mo-Fr 07:00-19:00, Sa 07:30-18:00, Su 07:30-17:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/668820569",
+     "name": "Caffè Nero",
+     "lat": 51.51198,
+     "lon": -0.07993,
+     "address": "London Street 22",
+     "website": "https://www.caffenero.com/uk/stores/fenchurch-street",
+     "openingHours": "Mo-Fr 06:00-18:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/690721437",
+     "name": "Caffè Nero",
+     "lat": 51.50694,
+     "lon": -0.14598,
+     "address": "Curzon Street 50-52",
+     "website": "https://www.caffenero.com/uk/stores/curzon-st",
+     "openingHours": "Mo-Su 06:30-19:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/708866092",
+     "name": "Caffè Nero",
+     "lat": 51.51525,
+     "lon": -0.07994,
+     "address": "Saint Mary Axe 50",
+     "website": "https://www.caffenero.com/uk/stores/st-mary-axe",
+     "openingHours": "Mo-Th 06:30-17:30; Fr 06:30-17:00; Sa-Su closed",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/878029964",
+     "name": "Caffè Nero",
+     "lat": 51.49559,
+     "lon": -0.12906,
+     "address": "Marsham Street 53",
+     "website": "https://www.caffenero.com/uk/stores/marsham-st",
+     "openingHours": "Mo-Fr 07:00-18:30; Sa 08:30-18:00; Su 08:30-17:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1962952854",
+     "name": "Caffè Nero",
+     "lat": 51.51344,
+     "lon": -0.11795,
+     "address": "Kingsway 7B",
+     "website": "https://www.caffenero.com/uk/stores/kingsway-aldwych",
+     "openingHours": "Mo-Fr 07:00-20:00; Sa 08:30-19:00; Su 09:00-17:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2122653029",
+     "name": "Caffè Nero",
+     "lat": 51.50841,
+     "lon": -0.10848,
+     "website": "https://www.caffenero.com/uk/stores/oxo-tower",
+     "openingHours": "Mo-Th 06:30-22:00, Fr 06:30-22:30, Sa 07:00-22:30, Su 07:30-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/638925838",
+     "name": "Candid Cafe",
+     "lat": 51.53219,
+     "lon": -0.10516,
+     "address": "Torrens Street 3",
+     "website": "https://candidarts.wordpress.com/cafe/",
+     "openingHours": "Mo-Sa 12:00-22:00; Su 12:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2898949673",
+     "name": "City Càphê",
+     "lat": 51.51476,
+     "lon": -0.09159,
+     "address": "Ironmonger Lane 17",
+     "website": "https://www.citycaphe.com/",
+     "openingHours": "Mo-Fr 11:30-13:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/1230966521",
+     "name": "Costa",
+     "lat": 51.49704,
+     "lon": -0.14115,
+     "address": "Cardinal Walk 3",
+     "website": "https://www.costa.co.uk/stores/cardinal-place-ldn",
+     "openingHours": "Mo-Fr 06:30-19:00; Su 07:30-18:00; Sa 06:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1941606902",
+     "name": "FWD:Coffee",
+     "lat": 51.52335,
+     "lon": -0.09326,
+     "address": "Whitecross Street 161a",
+     "website": "https://www.fwdcoffee.co.uk/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/462025234",
+     "name": "H.R. Higgins",
+     "lat": 51.5131,
+     "lon": -0.15066,
+     "address": "Duke Street 79",
+     "website": "https://www.hrhiggins.co.uk/",
+     "openingHours": "Mo-Fr 08:00-17:30; Sa 10:00-18:00; Su 11:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3080553851",
+     "name": "Half Cup",
+     "lat": 51.52783,
+     "lon": -0.12481,
+     "address": "Judd Street 100-102",
+     "website": "https://halfcup.co.uk/",
+     "openingHours": "Mo-Fr 08:00-16:00; Sa,Su 09:00-16:00",
+     "cuisine": "breakfast, brunch, coffee",
+     "detailed": true
+    },
+    {
+     "id": "node/3159073264",
+     "name": "Koshari Street",
+     "lat": 51.51091,
+     "lon": -0.12686,
+     "address": "St Martin's Lane 56",
+     "website": "https://www.kosharistreet.com/",
+     "openingHours": "Mo-Sa 11:30-21:30; Su 12:00-20:00",
+     "cuisine": "egyptian, arab, african",
+     "detailed": true
+    },
+    {
+     "id": "node/587775005",
+     "name": "La Cucina Di Mamma",
+     "lat": 51.5025,
+     "lon": -0.11761,
+     "address": "Belvedere Road 3j, 3k",
+     "website": "https://cucina-restaurant.com/",
+     "openingHours": "Mo-Sa 11:00-00:00; Su 11:00-22:30",
+     "cuisine": "italian pizza, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/863838548",
+     "name": "Little Bread Pedlar",
+     "lat": 51.50062,
+     "lon": -0.11304,
+     "address": "Lower Marsh 20",
+     "website": "https://www.lbpedlar.com/",
+     "openingHours": "Mo-Fr 08:00-15:00, Sa-Su 09:00-16:00",
+     "cuisine": "coffee shop, sandwich, pastry",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/21593238",
+     "name": "All Bar One",
+     "lat": 51.51634,
+     "lon": -0.11932,
+     "address": "Kingsway 58",
+     "website": "http://www.allbarone.co.uk/all-bar-one-kingsway/",
+     "openingHours": "Mo-Th 09:00-23:00; Fr-Sa 09:00-24:00; Su 10:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/14178896071",
+     "name": "Barrio",
+     "lat": 51.51415,
+     "lon": -0.13661,
+     "address": "Poland Street 6",
+     "website": "http://www.barriocentral.com/",
+     "openingHours": "Mo-Fr 16:00-01:00;Sa-Su 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/371050910",
+     "name": "Freud",
+     "lat": 51.51547,
+     "lon": -0.12664,
+     "address": "Shaftesbury Avenue 198",
+     "website": "https://www.freud.eu/",
+     "openingHours": "Mo-We 16:00-24:00; Th-Fr 16:00-02:00; Sa 15:00-02:00; Su 16:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5717663193",
+     "name": "London Cocktail Club",
+     "lat": 51.52217,
+     "lon": -0.08425,
+     "address": "Worship Street 63",
+     "website": "https://www.thecocktailclub.com/bars/old-street",
+     "openingHours": "Mo-We 17:00-01:00; Th 16:00-02:30; Fr 16:00-02:00; Sa 17:00-02:00; Su 16:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4779511343",
+     "name": "Nancy's",
+     "lat": 51.50617,
+     "lon": -0.08742,
+     "address": "London Bridge Walk",
+     "website": "https://www.nancys.co.uk/",
+     "openingHours": "Th-Sa 16:00-26:00; Su,Tu,We 16:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "way/279088487",
+     "name": "Simmons Bar",
+     "lat": 51.51493,
+     "lon": -0.13028,
+     "address": "Manette Street 17",
+     "website": "https://www.simmonsbar.co.uk/venues/tottenham-court-road/",
+     "openingHours": "Mo-Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "way/164243084",
+     "name": "Simmons Bars",
+     "lat": 51.52544,
+     "lon": -0.08011,
+     "address": "Curtain Road 104-108",
+     "website": "https://www.simmonsbar.co.uk/venues/shoreditch/",
+     "openingHours": "Mo 17:00-24:00; Tu-Fr 00:00-01:00,17:00-24:00; Sa 00:00-02:00,17:00-24:00; Su 00:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "way/279570939",
+     "name": "Simmons Bars",
+     "lat": 51.5141,
+     "lon": -0.13122,
+     "address": "Bateman Street 2",
+     "website": "https://www.simmonsbar.co.uk/venues/soho/",
+     "openingHours": "Mo-Th 15:00-23:30; Fr-Sa 12:00-00:00; Su 15:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/569524162",
+     "name": "Slug and Lettuce",
+     "lat": 51.50261,
+     "lon": -0.11687,
+     "address": "Chicheley Street 5",
+     "website": "https://www.slugandlettuce.co.uk/county-hall",
+     "openingHours": "Mo-Th 09:00-23:00; Fr 09:00-00:00; Sa 10:00-00:00; Su 10:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/259245834",
+     "name": "The Slug and Lettuce",
+     "lat": 51.50842,
+     "lon": -0.07343,
+     "address": "St. Katharine's Way",
+     "website": "https://www.slugandlettuce.co.uk/tower-bridge",
+     "openingHours": "Su-We 10:00-23:00; Th-Sa 10:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/569524165",
+     "name": "All Bar One",
+     "lat": 51.50267,
+     "lon": -0.11711,
+     "address": "Chicheley Street 1",
+     "website": "https://www.allbarone.co.uk/"
+    },
+    {
+     "id": "node/2961946211",
+     "name": "All Bar One",
+     "lat": 51.4975,
+     "lon": -0.13679,
+     "address": "Victoria Street 60",
+     "openingHours": "Mo-Th 08:00-11:30; Fr 08:00-24:00; Sa 09:00-24:00; Su 09:00-22:30"
+    },
+    {
+     "id": "node/4972504270",
+     "name": "All Bar One",
+     "lat": 51.51,
+     "lon": -0.13062,
+     "address": "Leicester Square 46",
+     "cuisine": "international"
+    },
+    {
+     "id": "way/249343302",
+     "name": "Be at One",
+     "lat": 51.51153,
+     "lon": -0.13432,
+     "address": "Great Windmill Street",
+     "website": "https://www.beatone.co.uk/piccadilly-circus"
+    },
+    {
+     "id": "node/348426433",
+     "name": "Be At One",
+     "lat": 51.53384,
+     "lon": -0.10578,
+     "address": "Upper Street 12",
+     "website": "https://www.beatone.co.uk/islington"
+    },
+    {
+     "id": "node/4774214523",
+     "name": "Be At One",
+     "lat": 51.51292,
+     "lon": -0.12089,
+     "website": "https://www.beatone.co.uk/russell-street-covent-garden"
+    },
+    {
+     "id": "node/5426645563",
+     "name": "Be At One",
+     "lat": 51.51402,
+     "lon": -0.13068,
+     "address": "Greek Street 17",
+     "website": "https://www.beatone.co.uk/greek-street-soho"
+    },
+    {
+     "id": "way/99952327",
+     "name": "Be At One",
+     "lat": 51.51178,
+     "lon": -0.12018,
+     "address": "Wellington Street 23",
+     "website": "https://www.beatone.co.uk/lyceum-covent-garden"
+    },
+    {
+     "id": "way/309399252",
+     "name": "Be At One",
+     "lat": 51.5162,
+     "lon": -0.08339,
+     "address": "Old Broad Street 45",
+     "website": "https://www.beatone.co.uk/liverpool-street"
+    },
+    {
+     "id": "way/502509287",
+     "name": "Be At One",
+     "lat": 51.52025,
+     "lon": -0.10045,
+     "address": "Charterhouse Street 40-42",
+     "website": "https://www.beatone.co.uk/farringdon"
+    },
+    {
+     "id": "way/837365134",
+     "name": "London Cocktail Club",
+     "lat": 51.5181,
+     "lon": -0.07947,
+     "address": "Bishopsgate 206-210",
+     "website": "https://www.thecocktailclub.com/bars/liverpool-street"
+    },
+    {
+     "id": "node/691719964",
+     "name": "Simmons",
+     "lat": 51.51568,
+     "lon": -0.13583,
+     "address": "Wardour Street 201-203",
+     "website": "https://www.simmonsbar.co.uk/venues/oxford-street/"
+    },
+    {
+     "id": "node/4360076798",
+     "name": "Simmons",
+     "lat": 51.51326,
+     "lon": -0.08623,
+     "address": "Cornhill 33-35",
+     "website": "https://www.simmonsbar.co.uk/venues/bank/"
+    },
+    {
+     "id": "way/157258551",
+     "name": "Simmons",
+     "lat": 51.52624,
+     "lon": -0.08596,
+     "address": "Old Street 235",
+     "website": "https://www.simmonsbar.co.uk/venues/old-street/"
+    },
+    {
+     "id": "way/279088481",
+     "name": "Simmons",
+     "lat": 51.51461,
+     "lon": -0.13106,
+     "address": "Greek Street 7",
+     "openingHours": "Mo-Th 15:00-23:30; Fr-Sa 15:00-24:00; Su 15:00-22:30"
+    },
+    {
+     "id": "way/314760755",
+     "name": "Simmons",
+     "lat": 51.51817,
+     "lon": -0.07815,
+     "address": "Widegate Street 20-21",
+     "website": "https://www.simmonsbar.co.uk/venues/liverpool-street/"
+    },
+    {
+     "id": "node/1895129841",
+     "name": "Simmons Bar",
+     "lat": 51.512,
+     "lon": -0.13686,
+     "address": "Golden Square 4",
+     "website": "https://www.graphicbar.com/"
+    },
+    {
+     "id": "node/4699715433",
+     "name": "Simmons Bars",
+     "lat": 51.51279,
+     "lon": -0.11354,
+     "address": "Milford Lane 1",
+     "website": "https://www.simmonsbar.co.uk/venues/temple/"
+    },
+    {
+     "id": "node/12507179080",
+     "name": "Simmons Bars",
+     "lat": 51.51028,
+     "lon": -0.12916,
+     "address": "Leicester Square 28a",
+     "website": "https://www.simmonsbar.co.uk/venues/leicester-square/"
+    },
+    {
+     "id": "node/1684709914",
+     "name": "Slug & Lettuce",
+     "lat": 51.51632,
+     "lon": -0.09402,
+     "address": "Love Lane 2",
+     "website": "https://www.slugandlettuce.co.uk/st-pauls-london"
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/271387709",
+     "name": "Cask",
+     "lat": 51.49109,
+     "lon": -0.13732,
+     "address": "Charlwood Street 6",
+     "website": "https://www.caskpubandkitchen.com/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su 12:00-22:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/375848733",
+     "name": "Duke of Cambridge",
+     "lat": 51.53459,
+     "lon": -0.09869,
+     "address": "St. Peter's Street 30",
+     "website": "https://dukeorganic.co.uk/",
+     "openingHours": "Tu-Sa 12:00-23:00; Su 12:00-18:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/383980821",
+     "name": "Green Man",
+     "lat": 51.51554,
+     "lon": -0.13666,
+     "address": "Berwick Street 57",
+     "website": "https://www.nicholsonspubs.co.uk/restaurants/london/thegreenman",
+     "openingHours": "Mo-We 11:00-23:30; Th-Sa 10:00-01:00; Su 10:00-22:30",
+     "cuisine": "fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "node/288045288",
+     "name": "Hoop and Grapes",
+     "lat": 51.51425,
+     "lon": -0.0742,
+     "address": "Aldgate High Street 47",
+     "website": "https://www.nicholsonspubs.co.uk/restaurants/london/thehoopandgrapesaldgatelondon",
+     "openingHours": "Su-Fr 12:00-23:30; Sa 11:00-18:00",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/1561417481",
+     "name": "Hung, Drawn and Quartered",
+     "lat": 51.50953,
+     "lon": -0.08079,
+     "address": "Great Tower Street 26-27",
+     "website": "https://www.hung-drawn-and-quartered.co.uk/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su 12:00-18:00",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/752177862",
+     "name": "Strongroom",
+     "lat": 51.52608,
+     "lon": -0.0799,
+     "address": "Curtain Road 120-124",
+     "website": "https://www.strongroombar.com/",
+     "openingHours": "Mo 12:00-23:00; Tu-We 12:00-24:00; Th 12:00-01:00; Fr-Sa 12:00-02:00; Su 12:00-22:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/692190788",
+     "name": "Swift Bar",
+     "lat": 51.51374,
+     "lon": -0.12999,
+     "address": "Old Compton Street 12",
+     "website": "https://www.barswift.com/soho",
+     "openingHours": "Mo-Th 12:00-22:30; Fr 12:00-22:45; Sa 12:30-22:45; Su 12:30-21:30",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/646585258",
+     "name": "The Barrel Vault",
+     "lat": 51.53261,
+     "lon": -0.12636,
+     "address": "The Circle, Saint Pancras Station Unit 23",
+     "website": "https://www.jdwetherspoon.com/pubs/the-barrel-vault-camden/",
+     "openingHours": "Mo-Th 06:30-00:00; Fr, Sa 06:30-01:00; Su 07:30-23:00",
+     "cuisine": "burger, italian pizza, curry, pasta, salad, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/313234121",
+     "name": "The Black Dog",
+     "lat": 51.48869,
+     "lon": -0.1209,
+     "address": "Vauxhall Walk 112",
+     "website": "https://theblackdogvauxhall.co.uk/",
+     "openingHours": "Mo-Sa 12:00-23:30; Su 12:00-21:30",
+     "cuisine": "spanish, british",
+     "detailed": true
+    },
+    {
+     "id": "node/302410081",
+     "name": "The Foxglove",
+     "lat": 51.5392,
+     "lon": -0.1069,
+     "address": "Liverpool Road 209 – 211",
+     "website": "https://www.thefoxglove.co.uk/",
+     "openingHours": "Mo-Tu 16:00-22:00; We 16:00-23:00; Th-Sa 12:00-23:00; Su 12:00-21:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/292705417",
+     "name": "The Hydrant",
+     "lat": 51.51029,
+     "lon": -0.0862,
+     "address": "Monument Street 1",
+     "website": "https://www.thehydrant.co.uk/",
+     "openingHours": "Mo-Fr 08:00-23:00; Sa 10:00-23:00; Su 10:00-18:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/591974938",
+     "name": "The Monument",
+     "lat": 51.51009,
+     "lon": -0.08628,
+     "address": "Fish Street Hill 18",
+     "website": "https://www.greeneking.co.uk/pubs/greater-london/monument",
+     "openingHours": "Mo-We, Fr-Sa 11:00-23:00; Th 11:00-00:00; Su 12:00-19:00",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/1769294100",
+     "name": "The Oyster Shed",
+     "lat": 51.50911,
+     "lon": -0.08974,
+     "address": "Angel Lane 1",
+     "website": "https://www.oystershed.co.uk/",
+     "openingHours": "Mo-Sa 10:00-23:00; Su 11:00-17:00",
+     "cuisine": "fish",
+     "detailed": true
+    },
+    {
+     "id": "node/331318827",
+     "name": "The Regent",
+     "lat": 51.53898,
+     "lon": -0.10698,
+     "address": "Liverpool Road 201-203",
+     "website": "https://theregentpub.com/",
+     "openingHours": "Mo-We 15:00-23:00; Th 12:00-23:00; Fr-Sa 12:00-00:00; Su 12:00-22:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/618653525",
+     "name": "Wetherspoons",
+     "lat": 51.49511,
+     "lon": -0.14415,
+     "website": "https://www.jdwetherspoon.com/pubs/all-pubs/england/london/wetherspoons-victoria-station-concourse",
+     "openingHours": "Mo-Sa 06:00-00:00; Su 08:00-23:00",
+     "cuisine": "breakfast, burger, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/401529129",
+     "name": "Baaria",
+     "lat": 51.51267,
+     "lon": -0.12857,
+     "address": "Charing Cross Road 76-78",
+     "website": "https://www.baaria.co.uk/",
+     "openingHours": "08:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/639114112",
+     "name": "Bar Soho",
+     "lat": 51.51321,
+     "lon": -0.13096,
+     "website": "https://www.barsoho.co.uk/london-bar",
+     "openingHours": "Mo-Th 16:00-25:00; Fr 16:00-27:00; Sa 12:00-27:00; Su 12:00-25:00",
+     "detailed": true
+    },
+    {
+     "id": "node/347412853",
+     "name": "Belushi's London Bridge",
+     "lat": 51.50282,
+     "lon": -0.0918,
+     "address": "Borough High Street 161-165",
+     "website": "https://belushis.com/",
+     "openingHours": "Mo-Th 08:00-02:00; Fr-Su 08:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/385564475",
+     "name": "Bradley's Spanish Bar",
+     "lat": 51.51653,
+     "lon": -0.13268,
+     "address": "Hanway Street 42-44",
+     "website": "https://www.bradleysspanishbar.com/",
+     "openingHours": "Mo-Sa 12:00-22:00; Su 12:00-18:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2492718707",
+     "name": "Brewdog Paddington",
+     "lat": 51.51905,
+     "lon": -0.17056,
+     "address": "West End Quay Unit 1",
+     "website": "https://drink.brewdog.com/uk/paddington",
+     "openingHours": "Tu-Sa 12:00-23:00; Su-Mo 12:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1387549550",
+     "name": "Central Station",
+     "lat": 51.53344,
+     "lon": -0.12093,
+     "address": "Wharfdale Road 37",
+     "website": "https://www.centralstation.co.uk/",
+     "openingHours": "Mo-Su 17:00-24:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/2905796901",
+     "name": "Clays Soho",
+     "lat": 51.51108,
+     "lon": -0.13614,
+     "address": "Brewer Street 77",
+     "website": "https://clays.bar/soho",
+     "openingHours": "Mo 16:00-22:00, Tu,We 12:00-24:00, Th-Sa 12:00-01:00, Su 12:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/344084670",
+     "name": "Craft Beer Co.",
+     "lat": 51.51564,
+     "lon": -0.12598,
+     "address": "High Holborn 168",
+     "website": "http://thecraftbeerco.com/pubs/coventgarden/",
+     "openingHours": "Su-We 12:00-00:00;Th-Sa 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/25510381",
+     "name": "Crown & Cushion",
+     "lat": 51.49946,
+     "lon": -0.11396,
+     "address": "Westminster Bridge Road 133-135",
+     "website": "https://www.thecrownandcushion-london.foodanddrinksites.co.uk/",
+     "openingHours": "Mo-Sa 11:00-23:00; Su 11:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/675808547",
+     "name": "Davy's",
+     "lat": 51.50605,
+     "lon": -0.13801,
+     "address": "Crown Passage",
+     "website": "https://www.davy.co.uk/",
+     "openingHours": "Mo-Fr 12:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/265664308",
+     "name": "Dickens Inn",
+     "lat": 51.50675,
+     "lon": -0.07022,
+     "address": "Marble Quay",
+     "website": "https://www.dickensinn.co.uk/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/293754855",
+     "name": "Escape Sports Bar & Restaurant",
+     "lat": 51.53277,
+     "lon": -0.13739,
+     "address": "Lidlington Place 2",
+     "website": "https://www.escapemornington.co.uk/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su 12:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/332118048",
+     "name": "Euston Flyer",
+     "lat": 51.52867,
+     "lon": -0.1267,
+     "address": "Euston Road 83-87",
+     "website": "https://www.eustonflyer.co.uk/",
+     "openingHours": "Mo 10:00-23:00; Tu-Th 10:00-23:30; Fr 10:00-24:00; Sa 08:00-00:00; Su 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/603120730",
+     "name": "Freud",
+     "lat": 51.5154,
+     "lon": -0.12661,
+     "website": "http://freud.eu/",
+     "openingHours": "Su-We 16:00-00:00; Th 16:00-01:00; Fr-Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2316821043",
+     "name": "Friend at Hand",
+     "lat": 51.52285,
+     "lon": -0.12459,
+     "address": "Herbrand Street 2-4",
+     "website": "https://www.greeneking.co.uk/pubs/greater-london/friend-at-hand",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2168949323",
+     "name": "Amber Bar",
+     "lat": 51.51946,
+     "lon": -0.08914,
+     "address": "Ropemaker Street 1",
+     "website": "http://www.amber-bar.co.uk/",
+     "openingHours": "Mo-We 12:00-01:00, Th-Fr 12:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6548960314",
+     "name": "Cococure",
+     "lat": 51.51347,
+     "lon": -0.07573,
+     "address": "Minories 5",
+     "website": "https://cococure.com/",
+     "openingHours": "Fr-Sa 22:30-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10968314400",
+     "name": "She Soho",
+     "lat": 51.51323,
+     "lon": -0.1309,
+     "address": "Old Compton Street 23a",
+     "website": "https://ku-bar.co.uk/she",
+     "openingHours": "Mo off; Tu-Sa 17:00-25:00; Su 17:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "way/173037429",
+     "name": "Shoreditch Townhouse",
+     "lat": 51.52302,
+     "lon": -0.08458,
+     "address": "Paul Street 25",
+     "website": "https://www.shoreditchtownhouse.com/",
+     "openingHours": "Mo-Fr 19:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5618206360",
+     "name": "Tape London",
+     "lat": 51.5143,
+     "lon": -0.14468,
+     "address": "Hanover Square 17",
+     "website": "https://tapelondon.com/",
+     "openingHours": "Mo off; Tu 23:00-27:30; We-Th off; Fr-Su 23:00-27:30",
+     "detailed": true
+    },
+    {
+     "id": "node/2993795433",
+     "name": "The Roxy",
+     "lat": 51.51662,
+     "lon": -0.13307,
+     "address": "Rathbone Place 3-5",
+     "website": "https://theroxy.co.uk/",
+     "openingHours": "Mo-Th 17:00-03:00; Fr 17:00-03:30; Sa 18:30-22:30; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/313349354",
+     "name": "100 Club",
+     "lat": 51.51611,
+     "lon": -0.13536,
+     "address": "Oxford Street 100",
+     "website": "https://www.the100club.co.uk/"
+    },
+    {
+     "id": "node/11876483273",
+     "name": "Alaska - Waterloo",
+     "lat": 51.50387,
+     "lon": -0.11109,
+     "address": "Alaska Street 129",
+     "website": "https://www.alaskawaterloo.com/"
+    },
+    {
+     "id": "node/1614146298",
+     "name": "Arizona Lounge",
+     "lat": 51.52223,
+     "lon": -0.158,
+     "address": "Marylebone Road 134",
+     "website": "https://www.arizonalounge.com/"
+    },
+    {
+     "id": "node/6135314065",
+     "name": "BEAT London",
+     "lat": 51.51647,
+     "lon": -0.14168,
+     "address": "Margaret Street 48",
+     "website": "https://beat-london.com/"
+    },
+    {
+     "id": "node/5724481761",
+     "name": "Charlie",
+     "lat": 51.50847,
+     "lon": -0.14336,
+     "address": "Berkeley Street 15",
+     "website": "http://www.fbmayfair.co.uk/"
+    },
+    {
+     "id": "node/662188966",
+     "name": "Charlie's Angels and Club Oops!",
+     "lat": 51.51354,
+     "lon": -0.07128,
+     "address": "Alie Street 30",
+     "website": "http://www.cluboops.co.uk/"
+    },
+    {
+     "id": "node/5568733249",
+     "name": "Cirque Le Soir",
+     "lat": 51.51296,
+     "lon": -0.13894,
+     "website": "http://www.cirquelesoir.com/"
+    },
+    {
+     "id": "node/5468301612",
+     "name": "Club Reina",
+     "lat": 51.51969,
+     "lon": -0.10221,
+     "address": "Charterhouse Street 85",
+     "website": "http://www.clubreina.co.uk/"
+    },
+    {
+     "id": "node/1548849869",
+     "name": "Corsica Studios",
+     "lat": 51.49349,
+     "lon": -0.09877,
+     "address": "Elephant Road 4/5",
+     "website": "https://www.corsicastudios.com/"
+    },
+    {
+     "id": "node/7904778383",
+     "name": "Dolce Kensington Club",
+     "lat": 51.49399,
+     "lon": -0.17578,
+     "address": "Harrington Road 17a",
+     "website": "https://www.dolce-london.com/"
+    },
+    {
+     "id": "node/6772902785",
+     "name": "Egg London Nightclub",
+     "lat": 51.54183,
+     "lon": -0.12479,
+     "address": "York Way 200",
+     "website": "https://www.egglondon.co.uk/"
+    },
+    {
+     "id": "node/14206898628",
+     "name": "Electric Ballroom",
+     "lat": 51.53969,
+     "lon": -0.14304,
+     "address": "Camden High Street 184",
+     "website": "https://electricballroom.co.uk/"
+    },
+    {
+     "id": "way/331438863",
+     "name": "Fire",
+     "lat": 51.48492,
+     "lon": -0.12355,
+     "address": "Parry Street 39",
+     "website": "https://www.firelondon.net/"
+    },
+    {
+     "id": "node/13577489801",
+     "name": "Fire London",
+     "lat": 51.48448,
+     "lon": -0.12417,
+     "address": "Parry Street 39",
+     "website": "https://www.firelondon.net/"
+    },
+    {
+     "id": "node/345887283",
+     "name": "Heaven",
+     "lat": 51.50787,
+     "lon": -0.12456,
+     "address": "Villiers Street 10A",
+     "website": "http://www.heavennightclub-london.com/"
+    },
+    {
+     "id": "node/5683818786",
+     "name": "Kadie's Club",
+     "lat": 51.50943,
+     "lon": -0.13759,
+     "address": "Swallow Street 9",
+     "website": "https://www.kadiesclub.com/"
+    },
+    {
+     "id": "way/225465155",
+     "name": "KOKO",
+     "lat": 51.53474,
+     "lon": -0.13817,
+     "address": "Camden High Street 1A",
+     "website": "https://www.koko.co.uk/"
+    },
+    {
+     "id": "node/9697951364",
+     "name": "Lafayette",
+     "lat": 51.53419,
+     "lon": -0.12584,
+     "address": "Goods Way 11",
+     "website": "https://www.lafayettelondon.com/"
+    },
+    {
+     "id": "node/368025671",
+     "name": "Lightbox",
+     "lat": 51.48536,
+     "lon": -0.12348,
+     "address": "South Lambeth Place 6a",
+     "website": "https://www.lightboxlondon.net/"
+    },
+    {
+     "id": "way/289954045",
+     "name": "Mahiki",
+     "lat": 51.50775,
+     "lon": -0.14128,
+     "address": "Dover Street 1",
+     "website": "https://mahiki.com/"
+    },
+    {
+     "id": "node/14178896068",
+     "name": "Milk and Honey",
+     "lat": 51.5137,
+     "lon": -0.13654,
+     "address": "Poland Street 61",
+     "website": "https://www.mlkhny.com/"
+    },
+    {
+     "id": "way/380605745",
+     "name": "Ministry of Sound",
+     "lat": 51.49777,
+     "lon": -0.0995,
+     "address": "Gaunt Street 103",
+     "website": "http://www.ministryofsound.com/"
+    },
+    {
+     "id": "node/5643033215",
+     "name": "No4 Mayfair",
+     "lat": 51.51249,
+     "lon": -0.14233,
+     "address": "Mill Street 4",
+     "website": "https://www.no4mayfair.com/"
+    },
+    {
+     "id": "node/582582173",
+     "name": "O2 Academy Islington",
+     "lat": 51.53457,
+     "lon": -0.1057,
+     "address": "Parkfield Street 16",
+     "website": "https://www.academymusicgroup.com/o2academyislington/"
+    }
+   ]
+  }
+ }
+}

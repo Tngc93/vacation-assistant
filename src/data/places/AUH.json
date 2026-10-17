@@ -1,0 +1,575 @@
+{
+ "version": 1,
+ "cityCode": "AUH",
+ "fetchedAt": "2026-10-17T00:02:07.906Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_%28Abu_Dhabi%29_-_panoramio_%281%29.jpg",
+  "width": 1280,
+  "height": 738,
+  "author": "Валерий Дед",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_(Abu_Dhabi)_-_panoramio_(1).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5516299322",
+     "name": "جامع عبدالجليل الفهيم",
+     "lat": 24.46655,
+     "lon": 54.37716
+    },
+    {
+     "id": "node/6156999285",
+     "name": "حديقة الدلافين",
+     "lat": 24.45395,
+     "lon": 54.40557
+    },
+    {
+     "id": "node/5516299321",
+     "name": "مسجد سراقة بن مالك",
+     "lat": 24.46239,
+     "lon": 54.38547
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1704229127",
+     "name": "AL SAYYAD Restaurant & grill br.",
+     "lat": 24.43888,
+     "lon": 54.41507,
+     "address": "Al Dhafra 25 Street",
+     "website": "https://alsayyad-ad.com/",
+     "openingHours": "Mo-Su 10:00-23:55",
+     "cuisine": "arab, breakfast, chicken, coffee shop, diner, fish, fish and chips, grill, sandwich, seafood, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/916385939",
+     "name": "IL Forno",
+     "lat": 24.45678,
+     "lon": 54.38227,
+     "address": "2nd Street",
+     "website": "https://ilforno.me/",
+     "openingHours": "Mo-Su 10:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/8828100809",
+     "name": "In A Box Burger And Pasta",
+     "lat": 24.46402,
+     "lon": 54.38026,
+     "address": "شارع الشيخة فاطمة بنت مبارك",
+     "website": "https://www.instagram.com/inabox.ae",
+     "openingHours": "Mo-Su 13:00-2:00",
+     "cuisine": "burger, pasta, italian, american",
+     "detailed": true
+    },
+    {
+     "id": "node/4513920694",
+     "name": "مطعم ومشاوي الصياد البحري",
+     "lat": 24.4387,
+     "lon": 54.41549,
+     "address": "Al Dhafra 25 Street",
+     "website": "https://alsayyad-ad.com/",
+     "openingHours": "Mo-Su 09:00-23:55",
+     "cuisine": "arab, chicken, diner, fish, fish and chips, grill, kebab, local, sandwich, seafood, tea",
+     "detailed": true
+    },
+    {
+     "id": "way/167467020",
+     "name": "20%80",
+     "lat": 24.46577,
+     "lon": 54.37412,
+     "website": "https://www.instagram.com/2080_cuisine/?hl=en",
+     "cuisine": "burger, pasta, chicken, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5027206945",
+     "name": "20%80 Restaurant",
+     "lat": 24.46573,
+     "lon": 54.37412,
+     "website": "https://www.instagram.com/2080_cuisine/?hl=en",
+     "cuisine": "burger, pasta, chicken, sandwich, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/3519109347",
+     "name": "Al Maskoof Al Iraqi",
+     "lat": 24.45764,
+     "lon": 54.38331,
+     "address": "Sheikh Rashid Bin Saeed Al Maktoum Street",
+     "openingHours": "10:00-01:00",
+     "cuisine": "iraqi",
+     "detailed": true
+    },
+    {
+     "id": "node/2064158051",
+     "name": "BiancoRosso",
+     "lat": 24.46538,
+     "lon": 54.38716,
+     "openingHours": "15:00-23:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2137500234",
+     "name": "HanKang",
+     "lat": 24.44012,
+     "lon": 54.37802,
+     "address": "Khalifa bin Shakhbout Street",
+     "openingHours": "17:30-22:30",
+     "cuisine": "korean",
+     "detailed": true
+    },
+    {
+     "id": "node/3827875557",
+     "name": "Hwy 55 Burgers, Shakes, & Fries",
+     "lat": 24.46493,
+     "lon": 54.38717,
+     "address": "Rabbadat Lufouq Street",
+     "website": "https://www.hwy55.com/locations/abu-dhabi",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/8872350211",
+     "name": "IL Forno",
+     "lat": 24.43392,
+     "lon": 54.4132,
+     "website": "https://ilforno.me/",
+     "openingHours": "Mo-Su 10:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3519109346",
+     "name": "Manna Land",
+     "lat": 24.46462,
+     "lon": 54.38677,
+     "address": "Commercial Road",
+     "openingHours": "12:00-00:00",
+     "cuisine": "korean",
+     "detailed": true
+    },
+    {
+     "id": "node/12801860431",
+     "name": "Village Bakery",
+     "lat": 24.45579,
+     "lon": 54.37023,
+     "address": "شارع الشيخة فاطمة بنت مبارك",
+     "openingHours": "07:00-21:00",
+     "cuisine": "cake, pastry, sandwich, bagel",
+     "detailed": true
+    },
+    {
+     "id": "node/4447104090",
+     "name": "ملك الأقاشي أبوظبي",
+     "lat": 24.4595,
+     "lon": 54.38815,
+     "openingHours": "24/7",
+     "cuisine": "barbecue, arab, tea, sausage, sandwich, grill, coffee shop, chicken",
+     "detailed": true
+    },
+    {
+     "id": "node/2146182828",
+     "name": "19th Street Bar",
+     "lat": 24.4433,
+     "lon": 54.38192,
+     "cuisine": "international"
+    },
+    {
+     "id": "node/1439293265",
+     "name": "Chawarmino Restaurant",
+     "lat": 24.44674,
+     "lon": 54.40218,
+     "cuisine": "american"
+    },
+    {
+     "id": "node/8568587351",
+     "name": "Fresh Bite Paprika Restaurant",
+     "lat": 24.45593,
+     "lon": 54.38486,
+     "cuisine": "sri lankan"
+    },
+    {
+     "id": "node/2522037398",
+     "name": "Inner Mongolian Xiao Wei Yang Little Lamb Hot Pot Restaurant",
+     "lat": 24.46637,
+     "lon": 54.37497,
+     "cuisine": "chinese"
+    },
+    {
+     "id": "node/840560486",
+     "name": "La Brioche",
+     "lat": 24.45567,
+     "lon": 54.3704,
+     "cuisine": "french"
+    },
+    {
+     "id": "node/1320235440",
+     "name": "Le Boulanger",
+     "lat": 24.43866,
+     "lon": 54.41259,
+     "cuisine": "french"
+    },
+    {
+     "id": "node/2268605709",
+     "name": "Mondo Pizzeria",
+     "lat": 24.44329,
+     "lon": 54.38398,
+     "address": "Al Saada",
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/1320191690",
+     "name": "Pizza Hut",
+     "lat": 24.45906,
+     "lon": 54.38052,
+     "cuisine": "pizza"
+    },
+    {
+     "id": "node/1439294902",
+     "name": "Pizza Hut",
+     "lat": 24.44533,
+     "lon": 54.40326,
+     "address": "Muroor Road",
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/4689067289",
+     "name": "Pizza Hut",
+     "lat": 24.43652,
+     "lon": 54.40227,
+     "cuisine": "pizza"
+    },
+    {
+     "id": "way/88674817",
+     "name": "Sardinia",
+     "lat": 24.44284,
+     "lon": 54.38357,
+     "address": "Saada Street",
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/2064159005",
+     "name": "Shabby Chic",
+     "lat": 24.46443,
+     "lon": 54.38693,
+     "cuisine": "international"
+    },
+    {
+     "id": "node/4174202561",
+     "name": "مطعم اليمن السعيد",
+     "lat": 24.44973,
+     "lon": 54.39083,
+     "address": "Sheikh Rashid bin Saeed Street",
+     "openingHours": "Mo-Su 07:00-23:30"
+    },
+    {
+     "id": "node/4751425526",
+     "name": "Afghanistan Restaurant",
+     "lat": 24.4593,
+     "lon": 54.38852,
+     "address": "Sultan Bin Zayed The First Street"
+    },
+    {
+     "id": "node/4148254289",
+     "name": "Aikanaad Seafood Restaurant",
+     "lat": 24.46798,
+     "lon": 54.38261
+    },
+    {
+     "id": "node/3981910021",
+     "name": "Al Arab Restaurant",
+     "lat": 24.45785,
+     "lon": 54.38312
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1083721047",
+     "name": "Cafe Arabia",
+     "lat": 24.45588,
+     "lon": 54.37932,
+     "address": "Mohammed Bin Khalifa Street (15th Street)",
+     "website": "https://www.facebook.com/CafeArabia",
+     "openingHours": "Mo-We 08:00-22:30, Th-Fr 08:00-22:00, Sa-Su 08:00-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/12847659436",
+     "name": "Three Cups Speciality Coffee",
+     "lat": 24.44453,
+     "lon": 54.40471,
+     "address": "Hadbat Al Za`Faranah - Zone 1",
+     "website": "https://linktr.ee/threecupsspeciality",
+     "openingHours": "Mo-Su 07:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4738107321",
+     "name": "فيليب كفيه",
+     "lat": 24.46394,
+     "lon": 54.376,
+     "website": "https://fillicafe.com/stores/uae/abu-dhabi/al-manhal",
+     "openingHours": "Mo-Th 07:30-01:30; Fr-Su 07:30-02:30",
+     "detailed": true
+    },
+    {
+     "id": "way/345227775",
+     "name": "Galleria Specialty Cafe",
+     "lat": 24.46715,
+     "lon": 54.38456,
+     "cuisine": "coffee shop, burger, chicken, sandwich, grill"
+    },
+    {
+     "id": "node/3959129337",
+     "name": "Gloria Jean's Coffees",
+     "lat": 24.43395,
+     "lon": 54.41345,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/3048793567",
+     "name": "Mercato Cafeteria",
+     "lat": 24.45653,
+     "lon": 54.39113,
+     "cuisine": "regional"
+    },
+    {
+     "id": "way/263019047",
+     "name": "Royal Stables Cafe",
+     "lat": 24.43789,
+     "lon": 54.38852,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/5032027899",
+     "name": "Starbucks",
+     "lat": 24.42632,
+     "lon": 54.4073,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/7695432010",
+     "name": "swan",
+     "lat": 24.46491,
+     "lon": 54.38082,
+     "cuisine": "ice cream, coffee shop"
+    },
+    {
+     "id": "node/4273981190",
+     "name": "ستاربكس",
+     "lat": 24.43662,
+     "lon": 54.40251,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4367371489",
+     "name": "ستاربكس",
+     "lat": 24.46375,
+     "lon": 54.38736,
+     "address": "Commercial Road",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4367377789",
+     "name": "ستاربكس",
+     "lat": 24.45533,
+     "lon": 54.39585,
+     "address": "Sultan Bin Zayed The First Street",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/5432815824",
+     "name": "ستاربكس",
+     "lat": 24.43418,
+     "lon": 54.41339,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4565447663",
+     "name": "كاريبو كوفي",
+     "lat": 24.45271,
+     "lon": 54.39318,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4723224421",
+     "name": "3S & Nutrition Bar",
+     "lat": 24.46412,
+     "lon": 54.38644,
+     "address": "Ahl Al 'Azm Street"
+    },
+    {
+     "id": "node/5784561054",
+     "name": "Ad Cafe",
+     "lat": 24.44723,
+     "lon": 54.40241
+    },
+    {
+     "id": "node/4158705002",
+     "name": "Al Akkawi Cafeteria",
+     "lat": 24.45876,
+     "lon": 54.38083
+    },
+    {
+     "id": "node/4723248363",
+     "name": "Al Prince Cafe",
+     "lat": 24.45615,
+     "lon": 54.39141,
+     "address": "Al Darah Street"
+    },
+    {
+     "id": "node/4751425521",
+     "name": "Arish Coffee Shop",
+     "lat": 24.46357,
+     "lon": 54.38443,
+     "address": "Thanyat Al Hidan Street"
+    },
+    {
+     "id": "node/4059867575",
+     "name": "Bite Rite Cafe",
+     "lat": 24.47068,
+     "lon": 54.37947
+    },
+    {
+     "id": "node/4723056936",
+     "name": "Cafe Day to Day",
+     "lat": 24.46646,
+     "lon": 54.38501,
+     "address": "Sarouq An Nasub Street"
+    },
+    {
+     "id": "node/4721048013",
+     "name": "Cool Cafe",
+     "lat": 24.46891,
+     "lon": 54.37889,
+     "address": "Al Turath Street"
+    },
+    {
+     "id": "node/3981914138",
+     "name": "Costa Coffee",
+     "lat": 24.46345,
+     "lon": 54.37647
+    },
+    {
+     "id": "node/916391598",
+     "name": "Esquires",
+     "lat": 24.46355,
+     "lon": 54.38756
+    },
+    {
+     "id": "node/3959236361",
+     "name": "Expo Juice",
+     "lat": 24.4343,
+     "lon": 54.41263
+    },
+    {
+     "id": "node/4798813037",
+     "name": "itzaa pizza",
+     "lat": 24.45328,
+     "lon": 54.38564
+    },
+    {
+     "id": "node/4721048012",
+     "name": "Lesamis Cafe",
+     "lat": 24.46896,
+     "lon": 54.37884,
+     "address": "Al Turath Street"
+    },
+    {
+     "id": "node/4232926789",
+     "name": "lets go for tea",
+     "lat": 24.45355,
+     "lon": 54.38721
+    },
+    {
+     "id": "node/12452909401",
+     "name": "Milestones coffee",
+     "lat": 24.45274,
+     "lon": 54.37962
+    },
+    {
+     "id": "node/4723056931",
+     "name": "Port City Java",
+     "lat": 24.46709,
+     "lon": 54.38441,
+     "address": "Sarouq An Nasub Street"
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4753761620",
+     "name": "Gulf Bride Saloon",
+     "lat": 24.46416,
+     "lon": 54.37709,
+     "address": "Sheikh Rashid bin Saeed Street"
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  }
+ }
+}

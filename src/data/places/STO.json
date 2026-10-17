@@ -1,0 +1,1702 @@
+{
+ "version": 1,
+ "cityCode": "STO",
+ "fetchedAt": "2026-10-16T23:38:09.551Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Stockholm_gamlastan_etc.jpg",
+  "width": 1280,
+  "height": 900,
+  "author": "JZ",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholm_gamlastan_etc.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/34394",
+     "name": "Stockholms slott",
+     "lat": 59.32694,
+     "lon": 18.07163,
+     "address": "Slottsbacken 1",
+     "website": "https://www.kungligaslotten.se/",
+     "wikipediaCount": 44
+    },
+    {
+     "id": "node/29775128",
+     "name": "Gamla stan",
+     "lat": 59.32495,
+     "lon": 18.07064,
+     "wikipediaCount": 41
+    },
+    {
+     "id": "way/8049504",
+     "name": "Storkyrkan",
+     "lat": 59.32577,
+     "lon": 18.07041,
+     "website": "https://www.svenskakyrkan.se/stockholmsdomkyrkoforsamling/visitors",
+     "wikipediaCount": 34
+    },
+    {
+     "id": "way/23841420",
+     "name": "Riddarholmskyrkan",
+     "lat": 59.32468,
+     "lon": 18.06458,
+     "website": "https://www.kungahuset.se/",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "way/8049509",
+     "name": "Tyska kyrkan",
+     "lat": 59.32414,
+     "lon": 18.0717,
+     "openingHours": "10:30-16:30",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "way/145662484",
+     "name": "Rosendals slott",
+     "lat": 59.32891,
+     "lon": 18.11733,
+     "website": "https://www.kungligaslotten.se/vara-besoksmal/rosendals-slott.html",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "way/141844590",
+     "name": "Sagerska huset",
+     "lat": 59.32876,
+     "lon": 18.06728,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/8049544",
+     "name": "Riddarhuset",
+     "lat": 59.32593,
+     "lon": 18.06572,
+     "website": "https://www.riddarhuset.se/",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "way/37079169",
+     "name": "Katarina kyrka",
+     "lat": 59.31706,
+     "lon": 18.07813,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "relation/2440883",
+     "name": "Hallwylska palatset",
+     "lat": 59.33328,
+     "lon": 18.07453,
+     "address": "Hamngatan 4",
+     "website": "https://hallwylskamuseet.se/",
+     "openingHours": "Tu, Th-Fr 12:00-16:00; We 12:00-19:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "node/2441872774",
+     "name": "Junibacken",
+     "lat": 59.32947,
+     "lon": 18.08909,
+     "website": "https://www.junibacken.se/",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/40859302",
+     "name": "Kulturhuset",
+     "lat": 59.33205,
+     "lon": 18.06493,
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/16095343",
+     "name": "Bondeska palatset",
+     "lat": 59.32626,
+     "lon": 18.06644,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/41079299",
+     "name": "Tessinska palatset",
+     "lat": 59.32563,
+     "lon": 18.07298,
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/49744847",
+     "name": "Kastellet",
+     "lat": 59.3226,
+     "lon": 18.09015,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/34590009",
+     "name": "Wrangelska palatset",
+     "lat": 59.32511,
+     "lon": 18.06296,
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/27742012",
+     "name": "Af Chapman",
+     "lat": 59.32529,
+     "lon": 18.08023,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "relation/279567",
+     "name": "Arvfurstens palats",
+     "lat": 59.32903,
+     "lon": 18.06756,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "relation/11144024",
+     "name": "Karlbergs slott",
+     "lat": 59.34112,
+     "lon": 18.02203,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/170363224",
+     "name": "Axel Oxenstiernas palats",
+     "lat": 59.32593,
+     "lon": 18.06962,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/23841414",
+     "name": "Stenbockska palatset",
+     "lat": 59.32541,
+     "lon": 18.06374,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/11005807868",
+     "name": "Finngrundet",
+     "lat": 59.32736,
+     "lon": 18.0903,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/11005807867",
+     "name": "S/S Sankt Erik",
+     "lat": 59.32712,
+     "lon": 18.09088,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/24210274",
+     "name": "Åhléns",
+     "lat": 59.33234,
+     "lon": 18.0615,
+     "website": "https://www.ahlens.se/varuhus/stockholm-city",
+     "openingHours": "Mo-Fr 10:00-20:00; Sa 10:00-19:00; Su 11:00-19:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/23841408",
+     "name": "Hessensteinska palatset",
+     "lat": 59.32528,
+     "lon": 18.06457,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/11005807869",
+     "name": "HMS Spica",
+     "lat": 59.32699,
+     "lon": 18.09038,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/300162703",
+     "name": "Obelisken",
+     "lat": 59.32587,
+     "lon": 18.07151,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/108507585",
+     "name": "Sparreska palatset",
+     "lat": 59.32445,
+     "lon": 18.06364,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "relation/21288970",
+     "name": "Schering Rosenhanes palats",
+     "lat": 59.32571,
+     "lon": 18.06261,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/2988582414",
+     "name": "Twister",
+     "lat": 59.3226,
+     "lon": 18.09523,
+     "wikipediaCount": 4
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/24968329",
+     "name": "Nationalmuseum",
+     "lat": 59.32849,
+     "lon": 18.0782,
+     "website": "https://www.nationalmuseum.se/",
+     "openingHours": "Mo off; Tu-We,Fr-Su 11:00-17:00; Th 11:00-20:00",
+     "wikipediaCount": 39
+    },
+    {
+     "id": "way/27288534",
+     "name": "Vasamuseet",
+     "lat": 59.32814,
+     "lon": 18.09139,
+     "website": "https://vasamuseet.se/",
+     "openingHours": "Mo-Su 08:30-18:00",
+     "wikipediaCount": 39
+    },
+    {
+     "id": "node/304603727",
+     "name": "Nobelprismuseet",
+     "lat": 59.32522,
+     "lon": 18.07083,
+     "website": "https://www.nobelprizemuseum.se/",
+     "openingHours": "Sep-Mar Tu-Th 11:00-17:00; Fr 11:00-21:00; Sa-Su 11:00-17:00; Mo off; Apr-May Tu-Th 11:00-17:00; Fr 11:00-21:00; Sa-Su 10:00-18:00; Mo off; Jun-Aug Mo-Th,Sa-Su 10:00-19:00; Fr 10:00-21:00; PH off",
+     "wikipediaCount": 35
+    },
+    {
+     "id": "way/348345482",
+     "name": "Nordiska museet",
+     "lat": 59.32915,
+     "lon": 18.09387,
+     "website": "https://nordiskamuseet.se/",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 33
+    },
+    {
+     "id": "node/29898032",
+     "name": "Moderna museet",
+     "lat": 59.32635,
+     "lon": 18.084,
+     "website": "https://www.modernamuseet.se/",
+     "openingHours": "Mo off; Tu,Fr 10:00-20:00; We-Th,Sa-Su 10:00-18:00",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "relation/93398",
+     "name": "Historiska museet",
+     "lat": 59.33485,
+     "lon": 18.09015,
+     "website": "https://www.historiska.se/",
+     "openingHours": "Tu, Th-Su 11:00-17:00; We 11:00-20:00",
+     "wikipediaCount": 28
+    },
+    {
+     "id": "way/33275424",
+     "name": "Abbamuseet",
+     "lat": 59.3249,
+     "lon": 18.09657,
+     "address": "Djurgårdsvägen 68",
+     "website": "https://abbathemuseum.com/",
+     "openingHours": "10:00-18:00",
+     "wikipediaCount": 23
+    },
+    {
+     "id": "node/304606190",
+     "name": "Livrustkammaren",
+     "lat": 59.32661,
+     "lon": 18.07308,
+     "website": "https://livrustkammaren.se/",
+     "openingHours": "Jan-Apr Tu-Su 11:00-17:00, Th 11:00-20:00; May-Jun Tu-Su 11:00-17:00; Jul-Aug Tu-Su 10:00-18:00; Sep-Dec Tu-Su 11:00-17:00, Th 11:00-20:00",
+     "wikipediaCount": 21
+    },
+    {
+     "id": "node/1476007025",
+     "name": "Östasiatiska museet",
+     "lat": 59.32738,
+     "lon": 18.08167,
+     "website": "https://www.ostasiatiskamuseet.se/",
+     "openingHours": "Tu 11:00-20:00; We-Su 11:00-17:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "node/289851448",
+     "name": "Armémuseum",
+     "lat": 59.33476,
+     "lon": 18.08026,
+     "website": "https://www.armemuseum.se/",
+     "openingHours": "We-Su 11:00-17:00; Tu 11:00-19:00",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "node/1241136436",
+     "name": "Tekniska museet",
+     "lat": 59.33251,
+     "lon": 18.11884,
+     "website": "https://www.tekniskamuseet.se/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/4581111990",
+     "name": "Prins Eugens Waldemarsudde",
+     "lat": 59.32022,
+     "lon": 18.11455,
+     "website": "https://www.waldemarsudde.se/",
+     "openingHours": "Mo off; Tu-We,Fr-Su 11:00-17:00; Th 11:00-20:00",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/10502251",
+     "name": "Sjöhistoriska museet",
+     "lat": 59.3325,
+     "lon": 18.11581,
+     "website": "https://www.sjohistoriska.se/",
+     "openingHours": "Mo off; Tu,Th-Su 10:00-17:00; We 10:00-20:00; Jan 01,May 29,Jun 19-20,Dec 23-25,Dec 31 off",
+     "wikipediaCount": 15
+    },
+    {
+     "id": "way/10502303",
+     "name": "Etnografiska museet",
+     "lat": 59.33256,
+     "lon": 18.12071,
+     "website": "https://www.etnografiskamuseet.se/",
+     "openingHours": "Mo closed; Tu 11:00-17:00; We 11:00-20:00; Th-Su 11:00-17:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "relation/2440883",
+     "name": "Hallwylska palatset",
+     "lat": 59.33328,
+     "lon": 18.07453,
+     "address": "Hamngatan 4",
+     "website": "https://hallwylskamuseet.se/",
+     "openingHours": "Tu, Th-Fr 12:00-16:00; We 12:00-19:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/33114705",
+     "name": "Liljevalchs konsthall",
+     "lat": 59.32552,
+     "lon": 18.09608,
+     "website": "https://www.liljevalchs.se/",
+     "openingHours": "We, Fr-Mo 11:00-17:00; Tu, Th 11:00-20:00",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/304602016",
+     "name": "Stadsmuseet i Stockholm",
+     "lat": 59.31959,
+     "lon": 18.07126,
+     "website": "https://stadsmuseet.stockholm/",
+     "openingHours": "Mo-Tu, Th-Su 11:00-17:00; We 11:00-20:00",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/868261113",
+     "name": "Fotografiska",
+     "lat": 59.318,
+     "lon": 18.0847,
+     "address": "Stadsgårdshamnen 22",
+     "website": "https://www.fotografiska.com/sto/",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/304609719",
+     "name": "Medelhavsmuseet",
+     "lat": 59.32945,
+     "lon": 18.0673,
+     "website": "https://www.medelhavsmuseet.se/",
+     "openingHours": "Mo off; Tu-Su 11:00-17:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/1092471973",
+     "name": "Arkitektur- och designcentrum",
+     "lat": 59.32581,
+     "lon": 18.08465,
+     "website": "https://arkdes.se/",
+     "openingHours": "Tu 10:00-22:00; We-Su 10:00-18:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/33114307",
+     "name": "Biologiska museet",
+     "lat": 59.32712,
+     "lon": 18.0977,
+     "openingHours": "off \"closed for renovations\"",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/304578099",
+     "name": "Strindbergsmuseet",
+     "lat": 59.33853,
+     "lon": 18.05661,
+     "website": "https://www.strindbergsmuseet.se/",
+     "openingHours": "Mo off; Tu-Su 12:00-16:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/304624735",
+     "name": "Scenkonstmuseet",
+     "lat": 59.33372,
+     "lon": 18.0783,
+     "address": "Sibyllegatan 2",
+     "website": "https://scenkonstmuseet.se/",
+     "openingHours": "Tu-Su 11:00-17:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/304610243",
+     "name": "Dansmuseet",
+     "lat": 59.32974,
+     "lon": 18.06534,
+     "website": "https://dansmuseet.se/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/304577359",
+     "name": "Judiska muséet",
+     "lat": 59.32383,
+     "lon": 18.07302,
+     "website": "https://judiskamuseet.se/",
+     "openingHours": "Mo off; Tu-We 11:00-17:00; Th 11:00-20:00; Fr 11:00-16:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/304603696",
+     "name": "Postmuseum",
+     "lat": 59.32409,
+     "lon": 18.068,
+     "website": "https://www.postmuseum.se/",
+     "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 10:00-16:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/137165681",
+     "name": "Sven-Harrys konstmuseum",
+     "lat": 59.33959,
+     "lon": 18.04391,
+     "website": "https://www.sven-harrys.se/",
+     "openingHours": "Mo off; Tu-We,Fr 10:00-18:00; Th 10:00-20:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/1815123227",
+     "name": "Gustav III:s antikmuseum",
+     "lat": 59.32754,
+     "lon": 18.07205,
+     "website": "http://www.kungahuset.se/besokkungligaslotten/kungligaslottet/gustaviiisantikmuseum",
+     "openingHours": "\"By reservation\"",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/141463240",
+     "name": "Baltic Sea Science Center",
+     "lat": 59.32461,
+     "lon": 18.10447,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/35205940",
+     "name": "Bonniers konsthall",
+     "lat": 59.33709,
+     "lon": 18.04262,
+     "website": "https://www.bonnierskonsthall.se/",
+     "openingHours": "Mo-Tu off; We 12:00-20:00; Th-Su 12:00-18:00",
+     "wikipediaCount": 4
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/103570725",
+     "name": "Katarinahissen",
+     "lat": 59.31992,
+     "lon": 18.07317,
+     "wikipediaCount": 15
+    },
+    {
+     "id": "node/1706341734",
+     "name": "Fåfängan",
+     "lat": 59.31504,
+     "lon": 18.10123,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/1531271091",
+     "name": "Åsöberget",
+     "lat": 59.31446,
+     "lon": 18.09583,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/255862094",
+     "name": "Fatburen",
+     "lat": 59.32599,
+     "lon": 18.10251
+    },
+    {
+     "id": "node/1576004436",
+     "name": "Monteliusvägen",
+     "lat": 59.32075,
+     "lon": 18.06041
+    },
+    {
+     "id": "node/1576017890",
+     "name": "Monteliusvägen",
+     "lat": 59.32088,
+     "lon": 18.06261
+    },
+    {
+     "id": "node/5909496741",
+     "name": "Per Anders Fogelströms Terrass",
+     "lat": 59.31734,
+     "lon": 18.08786
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/776659641",
+     "name": "Abyssinia",
+     "lat": 59.34275,
+     "lon": 18.0376,
+     "website": "https://abyssinia.se/",
+     "openingHours": "Mo-Sa 14:00-22:30; Su off",
+     "cuisine": "ethiopian",
+     "detailed": true
+    },
+    {
+     "id": "node/538182066",
+     "name": "Acaza",
+     "lat": 59.34373,
+     "lon": 18.0477,
+     "website": "https://www.acaza.se/",
+     "openingHours": "Tu-Th 16:30-23:00; Fr 16:30-24:00; Sa 12:00-24:00; Su 16:30-22:00",
+     "cuisine": "portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/842440843",
+     "name": "Agapi",
+     "lat": 59.31073,
+     "lon": 18.05887,
+     "website": "https://www.restaurangagapi.se/",
+     "openingHours": "Mo-Th 10:30-22:00; Fr 10:30-24:00; Sa 13:00-24:00",
+     "cuisine": "greek, lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1151463175",
+     "name": "Aiyara",
+     "lat": 59.34669,
+     "lon": 18.0964,
+     "website": "http://www.aiyara.se/",
+     "openingHours": "Mo-Fr 11:00-21:00;Sa-Su off",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/503503196",
+     "name": "Angela",
+     "lat": 59.34024,
+     "lon": 18.03309,
+     "website": "http://www.angelasdeli.se/",
+     "openingHours": "Mo-Fr 10:00-21:00;Sa 11:00-21:00;Su 12:00-19:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/449884316",
+     "name": "Asian Post Office",
+     "lat": 59.33617,
+     "lon": 18.06787,
+     "website": "https://www.asianpostoffice.se/",
+     "openingHours": "Mo-Tu 11:30-14:30,16:30-24:00;We-Th 11:30-14:30,16:30-01:00;Fr 11:30-14:30,16:00-02:00;Sa 16:30-02:00;Su off",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/426930512",
+     "name": "Åsö noodles",
+     "lat": 59.31251,
+     "lon": 18.07169,
+     "website": "https://asonoodles.se/",
+     "openingHours": "Mo-Fr 11:00-21:00; Sa, Su 12:00-21:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/719629911",
+     "name": "Bamboo Garden",
+     "lat": 59.31308,
+     "lon": 18.07601,
+     "website": "https://www.bamboo-garden.se/",
+     "openingHours": "Mo-Th 11:00-22:00; Fr 11:00-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/320553891",
+     "name": "Banyan",
+     "lat": 59.33146,
+     "lon": 18.02974,
+     "website": "http://www.restaurangbanyan.se/",
+     "openingHours": "Mo-Fr 16:00-21:00; Sa,Su 13:00-21:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/449884393",
+     "name": "Bao Asian Tapas",
+     "lat": 59.33437,
+     "lon": 18.05843,
+     "website": "https://baoasiantapas.se/",
+     "openingHours": "Mo-Th 11:30-21:00; Fr 11:30-22:00; Sa 15:00-22:00; Su 15:00-21:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/1149275321",
+     "name": "Bar Europa",
+     "lat": 59.31838,
+     "lon": 18.05574,
+     "website": "https://www.bareuropa.eu/",
+     "openingHours": "Tu-Th 16:00-23:00; Fr 16:00-01:00; Sa 14:00-01:00",
+     "cuisine": "european",
+     "detailed": true
+    },
+    {
+     "id": "node/449884364",
+     "name": "Barbeque Steakhouse",
+     "lat": 59.33476,
+     "lon": 18.05997,
+     "website": "https://bbqsteakhouse.se/",
+     "openingHours": "Mo-Th 11:00-23:00;Fr-Sa 11:00-01:00;Su 12:00-22:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/1211022292",
+     "name": "Barobao",
+     "lat": 59.31862,
+     "lon": 18.05948,
+     "website": "https://barobao.se/",
+     "openingHours": "Mo-Fr 11:30-23:00; Sa 12:00-23:00; Su 12:00-18:00",
+     "cuisine": "asian fusion",
+     "detailed": true
+    },
+    {
+     "id": "node/503503233",
+     "name": "Bastard Burgers",
+     "lat": 59.3426,
+     "lon": 18.05835,
+     "website": "https://bastardburgers.com/se/restaurants/vasastan/",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/689302305",
+     "name": "Bastard Burgers",
+     "lat": 59.34267,
+     "lon": 18.03586,
+     "website": "https://bastardburgers.com/se/restaurants/birkastan-3/",
+     "openingHours": "Mo-Su 11:00-21:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/685336973",
+     "name": "Bella Vista",
+     "lat": 59.33599,
+     "lon": 18.0319,
+     "website": "https://www.bellavista.nu/",
+     "openingHours": "Mo-Fr 10:30-22:00; Sa-Su 12:00-22:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/429340748",
+     "name": "Bergamott",
+     "lat": 59.32903,
+     "lon": 18.04219,
+     "website": "http://www.restaurangbergamott.se/",
+     "openingHours": "Mo off; Tu-Th 17:30-23:00; Sa-Su 17:30-24:00; Su off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/372786398",
+     "name": "Best of India",
+     "lat": 59.34851,
+     "lon": 18.0621,
+     "website": "https://www.restaurantbestofindia.com/",
+     "openingHours": "Mo-Fr 11:00-22:00; Sa-Su 13:00-22:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/1211022333",
+     "name": "Blå Dörren",
+     "lat": 59.32024,
+     "lon": 18.07015,
+     "website": "http://www.bla-dorren.se/",
+     "openingHours": "Mo-Tu 10:30-23:00; We-Th 10:30-24:00; Fr 10:30-01:00; Sa 13:00-01:00; Su 13:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/810044221",
+     "name": "Bröd&Salt Kväll",
+     "lat": 59.34596,
+     "lon": 18.03475,
+     "website": "https://brodsalt.se/",
+     "openingHours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-17:00",
+     "cuisine": "italian, pizza, pasta",
+     "detailed": true
+    },
+    {
+     "id": "node/318320198",
+     "name": "Brödernas",
+     "lat": 59.33124,
+     "lon": 18.04464,
+     "website": "https://www.brodernas.nu/restauranger/kungsholmen",
+     "openingHours": "Mo-Tu 11:00-23:00; We-Th 11:00-00:00; Fr 11:00-01:00; Sa 12:00-01:00; Su 12:00-23:00",
+     "cuisine": "burger, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/778311032",
+     "name": "Bún Bò Huê",
+     "lat": 59.3465,
+     "lon": 18.04034,
+     "website": "https://www.bunbohue.se/",
+     "openingHours": "Mo-Fr 11:00-22:00; Sa-Su 12:00-22:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/769280836",
+     "name": "Byblos",
+     "lat": 59.34517,
+     "lon": 18.05705,
+     "website": "https://byblos.nu/",
+     "openingHours": "Mo-Tu 16:00-23:00; We-Fr 16:00-24:00; Fr-Sa 16:00-01:00",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/320195063",
+     "name": "Café Corniche",
+     "lat": 59.32861,
+     "lon": 18.03024,
+     "website": "https://www.cafecorniche.se/",
+     "openingHours": "Mo-Th 17:00-24:00; Fr-Sa 17:00-01:00; Su 17:00-22:00",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/330944608",
+     "name": "Caliente",
+     "lat": 59.33334,
+     "lon": 18.0426,
+     "website": "https://caliente.se/",
+     "openingHours": "Mo-Th 16:00-22:30; Fr 15:00-24:00; Sa 13:00-24:00; Su 13:00-22:00",
+     "cuisine": "spanish, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/846109896",
+     "name": "Caliente",
+     "lat": 59.33705,
+     "lon": 18.05892,
+     "website": "https://caliente.se/stockholm",
+     "openingHours": "Mo-Fr 16:00+; Sa 13:00+; Su 15:00+",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/957946633",
+     "name": "Campoloro",
+     "lat": 59.34408,
+     "lon": 18.05817,
+     "website": "https://campoloro.se/",
+     "openingHours": "Mo off; Tu-Sa 17:00-23:00; Su off",
+     "cuisine": "corsican, french",
+     "detailed": true
+    },
+    {
+     "id": "node/640304842",
+     "name": "Canto Papa",
+     "lat": 59.31858,
+     "lon": 18.06194,
+     "website": "https://www.cantopapa.se/",
+     "openingHours": "Mo off; Tu-Fr 17:00-22:00; Sa-Su 13:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/503503179",
+     "name": "Capri Due's Bakficka",
+     "lat": 59.34131,
+     "lon": 18.03088,
+     "website": "https://capridue.se/",
+     "openingHours": "Mo 16:00-22:00; Tu-Sa 16:00-23:00; Su 16:00-22:00",
+     "cuisine": "pizza, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/373469927",
+     "name": "Cassi",
+     "lat": 59.33653,
+     "lon": 18.09122,
+     "website": "https://www.cassi.se/",
+     "openingHours": "Mo-Fr 10:45-20:00;Sa off;Su 13:00-20:00",
+     "cuisine": "french",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1256871288",
+     "name": "À la Crepe",
+     "lat": 59.31118,
+     "lon": 18.08072,
+     "website": "https://www.crepes.nu/",
+     "openingHours": "Mo 16:00-22:00;Tu-Fr 16:00-23:00;Sa 13:00-23:00;Su 13:00-22:00",
+     "cuisine": "crepe",
+     "detailed": true
+    },
+    {
+     "id": "node/538907119",
+     "name": "À la Lo",
+     "lat": 59.34538,
+     "lon": 18.06252,
+     "website": "https://alalo.se/",
+     "openingHours": "Mo-Fr 07:00-16:00; Sa-Su 09:00-16:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/503503242",
+     "name": "Babel Deli",
+     "lat": 59.34166,
+     "lon": 18.05922,
+     "website": "http://babeldeli.com/",
+     "openingHours": "Mo-Fr 10:00-20:00; Sa 11:00-16:00; Su off",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/5320227658",
+     "name": "Bistro BKH",
+     "lat": 59.33707,
+     "lon": 18.04258,
+     "website": "https://bonnierskonsthall.se/cafe/",
+     "openingHours": "Mo-Tu,Sa-Su off; Th-Fr 11:00-14:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/1541177345",
+     "name": "Bliss Cafe",
+     "lat": 59.30934,
+     "lon": 18.07927,
+     "website": "https://blisscafe.se/",
+     "openingHours": "Sa 12:00-16:00",
+     "cuisine": "raw food",
+     "detailed": true
+    },
+    {
+     "id": "node/5022983968",
+     "name": "Bröd & Salt",
+     "lat": 59.33022,
+     "lon": 18.05843,
+     "website": "https://brodsalt.se/",
+     "openingHours": "Mo-Fr 05:30-23:00; Sa,Su 06:30-23:00",
+     "cuisine": "pizza, coffee shop, sandwich, cake, pancake, salad",
+     "detailed": true
+    },
+    {
+     "id": "node/6594663371",
+     "name": "Café Koya",
+     "lat": 59.34073,
+     "lon": 18.04008,
+     "website": "https://cafekoya.se/",
+     "openingHours": "Mo closed; Tu 13:00-18:00; We-Su 11:00-18:00",
+     "cuisine": "coffee shop, bubble tea, cake, salad",
+     "detailed": true
+    },
+    {
+     "id": "node/1198848870",
+     "name": "Café Mariaberget",
+     "lat": 59.32022,
+     "lon": 18.06234,
+     "website": "http://www.cafemariaberget.se/",
+     "openingHours": "Mo-Tu closed; We-Fr 11:00-18:00; Sa-Su 11:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1771653726",
+     "name": "Cafe Schweizer",
+     "lat": 59.32615,
+     "lon": 18.06886,
+     "website": "https://schweizer.se/",
+     "openingHours": "Mo-Su 07:00-20:00",
+     "cuisine": "breakfast, cake, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/6188609205",
+     "name": "Cafe Söderberg",
+     "lat": 59.33055,
+     "lon": 18.07101,
+     "website": "https://cafesoderberg.se/",
+     "openingHours": "Mo-Su 10:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1639251921",
+     "name": "Caffè Nero",
+     "lat": 59.30742,
+     "lon": 18.07562,
+     "website": "https://caffenero.com/se/stores",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa,Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1779515388",
+     "name": "Caffellini",
+     "lat": 59.32351,
+     "lon": 18.07147,
+     "website": "https://shop.caffellini.nu/",
+     "openingHours": "Mo-Fr 08:00-16:00; Sa 10:00-18:00; Su off",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1402697511",
+     "name": "Chaikhana",
+     "lat": 59.3241,
+     "lon": 18.07231,
+     "website": "https://chaikhana.se/",
+     "openingHours": "Tu-Su 11:00-19:00; Mo closed",
+     "cuisine": "tea",
+     "detailed": true
+    },
+    {
+     "id": "node/1743438570",
+     "name": "Ciao Ciao",
+     "lat": 59.34078,
+     "lon": 18.0836,
+     "website": "https://ciaociaodeli.se/",
+     "openingHours": "Mo-Fr 10:30-21:30;Sa-Su 12:00-21:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1657548758",
+     "name": "CoCo Fresh Tea & Juice",
+     "lat": 59.33303,
+     "lon": 18.09137,
+     "website": "http://www.cococarmen.se/",
+     "openingHours": "Th-Fr 12:00-16:00,17:30-23:30; Tu-We,Sa 17:30-23:30",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/2698629348",
+     "name": "Drop Coffee Roasters",
+     "lat": 59.31691,
+     "lon": 18.06281,
+     "website": "https://www.dropcoffee.com/",
+     "openingHours": "Mo-Fr 08:00-18:00;Sa-Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/415981781",
+     "name": "Espresso House",
+     "lat": 59.3332,
+     "lon": 18.05674,
+     "website": "https://www.espressohouse.se/hitta-oss/vasagatan-sto",
+     "openingHours": "Mo-Su 06:30-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/457817738",
+     "name": "Espresso House",
+     "lat": 59.34063,
+     "lon": 18.05911,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa-Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/473467313",
+     "name": "Espresso House",
+     "lat": 59.34525,
+     "lon": 18.04032,
+     "website": "https://espressohouse.com/hitta-oss/vanadisplan",
+     "openingHours": "Mo-Th 06:30-18:00; Fr 07:00-18:00; Sa-Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/497171122",
+     "name": "Espresso House",
+     "lat": 59.3318,
+     "lon": 18.06333,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Fr 06:30-23:00; Sa 07:00-23:00; Su 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1095094730",
+     "name": "Espresso House",
+     "lat": 59.33135,
+     "lon": 18.05823,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Su 06:30-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1290922075",
+     "name": "Espresso House",
+     "lat": 59.32342,
+     "lon": 18.06842,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Fr 07:00-20:00; Sa,Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1348515108",
+     "name": "Espresso House",
+     "lat": 59.31399,
+     "lon": 18.07322,
+     "website": "https://espressohouse.com/",
+     "openingHours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1351575562",
+     "name": "Espresso House",
+     "lat": 59.33478,
+     "lon": 18.06795,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa 09:00-19:00; Su 09:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1429311494",
+     "name": "Espresso House",
+     "lat": 59.33653,
+     "lon": 18.05896,
+     "website": "https://espressohouse.com/coffee-shops/drottninggatan-norr/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa 08:00-19:00; Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1779515390",
+     "name": "Espresso House",
+     "lat": 59.32409,
+     "lon": 18.07068,
+     "website": "https://www.espressohouse.se/hitta-oss/vasterlanggatan-sto",
+     "openingHours": "Mo-Fr 07:00-20:00; Sa 08:00-20:00; Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1959024121",
+     "name": "Espresso House",
+     "lat": 59.33495,
+     "lon": 18.07133,
+     "website": "https://espressohouse.com/hitta-oss/norrlandsgatan",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa-Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2371137589",
+     "name": "Espresso House",
+     "lat": 59.3301,
+     "lon": 18.06531,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Th 07:00-21:00;Fr 07:00-22:00;Sa 08:00-22:00;Su 08:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2447537970",
+     "name": "Espresso House",
+     "lat": 59.33516,
+     "lon": 18.0626,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Fr 07:30-21:00; Sa 09:00-21:00; Su 09:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3758991516",
+     "name": "Espresso House",
+     "lat": 59.31816,
+     "lon": 18.07147,
+     "website": "https://www.espressohouse.se/",
+     "openingHours": "Mo-Th 06:30-22:00, Fr 06:30-24:00, Sa 08:00-24:00, Su 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/9573877917",
+     "name": "Hernö Gin Bar",
+     "lat": 59.31974,
+     "lon": 18.07038,
+     "website": "https://www.hernogin.com/herno-gin-bar/stockholm",
+     "openingHours": "Tu 16:00-22:00; We-Th 16:00-24:00; Fr 16:00-01:00; Sa 14:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1309284935",
+     "name": "Paradiso",
+     "lat": 59.31751,
+     "lon": 18.06024,
+     "website": "https://paradisostockholm.se/",
+     "openingHours": "Mo-Th 17:00-01:00; Fr 16:00-01:00; Sa-Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/410559896",
+     "name": "The Oaken Inn",
+     "lat": 59.33785,
+     "lon": 18.06908,
+     "website": "https://www.oakeninn.se/",
+     "openingHours": "Mo-Th,Su 16:00-23:00; Fr 15:00-03:00; Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4191266294",
+     "name": "Tweed",
+     "lat": 59.32439,
+     "lon": 18.068,
+     "website": "https://www.tweedbar.se/",
+     "openingHours": "Mo-Sa 17:00-01:00;Su off",
+     "detailed": true
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5929180588",
+     "name": "Birka Bowling",
+     "lat": 59.34029,
+     "lon": 18.03509,
+     "website": "https://birkabowling.se/",
+     "openingHours": "Mo 16:00-22:00; Tu-Th 12:00-23:00; Fr-Sa 12:00-24:00; Sa 12:00-22:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/5615945423",
+     "name": "Bron",
+     "lat": 59.33798,
+     "lon": 18.03565,
+     "website": "https://restaurangbron.com/",
+     "openingHours": "Mo-Su 15:00-01:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/9215045909",
+     "name": "Chewie's Bar",
+     "lat": 59.3269,
+     "lon": 18.04294,
+     "website": "https://www.chewiesbar.com/",
+     "openingHours": "Tu-Th 15:00-22:00; Fr 15:00-23:00; Sa 13:00-19:00",
+     "cuisine": "swedish",
+     "detailed": true
+    },
+    {
+     "id": "node/1509877656",
+     "name": "El Clasico",
+     "lat": 59.31246,
+     "lon": 18.08178,
+     "website": "https://gastrogate.com/restaurang/elclasico/",
+     "openingHours": "Mo-Th 17:00-22:00;Fr-Sa 17:00-01:00;Su 17:00-22:00",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/1348515292",
+     "name": "Holly Bush Bar and Restaurant",
+     "lat": 59.31141,
+     "lon": 18.07437,
+     "website": "https://hollybush.se/",
+     "openingHours": "Mo-Fr 11:00-01:00; Sa-Su 12:00-01:00",
+     "cuisine": "burger, fish and chips, pub",
+     "detailed": true
+    },
+    {
+     "id": "node/617376744",
+     "name": "Krogen Soldaten Švejk",
+     "lat": 59.31442,
+     "lon": 18.07673,
+     "website": "https://www.svejk.se/",
+     "openingHours": "Mo-Th 16:00-23:00, Fr 16:00-24:00, Sa 15:00-24:00; Su 16:00-23:00",
+     "cuisine": "czech",
+     "detailed": true
+    },
+    {
+     "id": "node/503503209",
+     "name": "Molly Malone's",
+     "lat": 59.34193,
+     "lon": 18.04782,
+     "website": "https://mollymalone.se/",
+     "openingHours": "Tu-Sa 13:00-01:00, Su,Mo 13:00-24:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/2020585989",
+     "name": "Mondo",
+     "lat": 59.3441,
+     "lon": 18.05663,
+     "website": "https://www.mondotapas.com/",
+     "openingHours": "Mo-Tu 17:00-22:00; We-Th 17:00-22:30; Fr-Sa 16:00-23:30; Su off",
+     "cuisine": "tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/1778361751",
+     "name": "O'Connells",
+     "lat": 59.32442,
+     "lon": 18.06905,
+     "website": "https://www.oconnells.se/",
+     "openingHours": "Mo-Sa 11:00-01:00; Su 12:00-00:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/1436224084",
+     "name": "O'Learys",
+     "lat": 59.34986,
+     "lon": 18.04881,
+     "website": "https://olearys.se/",
+     "openingHours": "Mo-Tu 16:00-22:00; We-Th 16:00-23:00; Fr 16:00-01:00; Sa 11:00-01:00; Su 11:00-22:00",
+     "cuisine": "sportsbar",
+     "detailed": true
+    },
+    {
+     "id": "node/702371901",
+     "name": "Oliver Twist",
+     "lat": 59.31835,
+     "lon": 18.06981,
+     "website": "http://www.olivertwist.se/",
+     "openingHours": "Mo 11:00-22:00; Tu-We 11:00-24:00; Th-Fr 11:00-01:00; Sa 12:00-01:00; Su 13:00-22:00",
+     "cuisine": "burger, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1248735261",
+     "name": "Omnipollos hatt",
+     "lat": 59.31806,
+     "lon": 18.07223,
+     "website": "http://www.omnipolloshatt.com/",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1037788347",
+     "name": "Queen's Head",
+     "lat": 59.33881,
+     "lon": 18.0567,
+     "website": "https://www.queenshead.se/",
+     "openingHours": "Mo-Th 16:00-01:00; Fr 15:00-01:00; Sa-Su 13:00-01:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/769286831",
+     "name": "Retro",
+     "lat": 59.34489,
+     "lon": 18.05509,
+     "website": "https://svea.retrobar.se/",
+     "openingHours": "Mo-Tu 13:00-01:00; We-Th 13:00-01:00; Fr-Sa 12:00-01:00; Su 12:00-24:00",
+     "cuisine": "sportsbar",
+     "detailed": true
+    },
+    {
+     "id": "node/8976327273",
+     "name": "Stigbergets Fot",
+     "lat": 59.31914,
+     "lon": 18.07095,
+     "website": "https://stigbergetsfot.se/",
+     "openingHours": "Mo-Tu 16:00-24:00, We-Th 11:30-24:00, Fr 11:30-01:00, Sa 12:00-01:00, Su 12:00-24:00",
+     "cuisine": "burger, mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/444777111",
+     "name": "The Auld Dub",
+     "lat": 59.3354,
+     "lon": 18.06144,
+     "website": "https://www.theaulddub.se/",
+     "openingHours": "Mo-Th 15:00-01:00; Fr 14:00-03:00; Sa 12:00-03:00; Su 12:00-23:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/1778361758",
+     "name": "The Liffey",
+     "lat": 59.32352,
+     "lon": 18.0702,
+     "website": "https://www.theliffey.se/",
+     "openingHours": "Mo 15:00-23:00; Tu 15:00-24:00; We-Th 15:00-01:00; Fr-Sa 11:00-01:00; Su 12:00-24:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/503503229",
+     "name": "The Old Brewer",
+     "lat": 59.34409,
+     "lon": 18.05723,
+     "website": "https://vasastan.theoldbrewer.se/",
+     "openingHours": "Mo-Fr 11:30-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/29898135",
+     "name": "Tudor Arms",
+     "lat": 59.33489,
+     "lon": 18.08535,
+     "website": "http://tudorarms.se/",
+     "openingHours": "Mo-Tu 16:00-22:00; We-Th 16:00-23:00, Fr-Sa 15:00-23:00; Su 15:00-20:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/1451010622",
+     "name": "Waku waku",
+     "lat": 59.33894,
+     "lon": 18.05655,
+     "website": "https://wakuwakubar.se/",
+     "openingHours": "Mo-Tu 11:00-14:30; We-Th 11:00-14:30,17:00-22:00; Fr 11:00-14:30,17:00-01:00; Sa 11:00-01:00; Su off",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1790169472",
+     "name": "20hundra5",
+     "lat": 59.34415,
+     "lon": 18.03971,
+     "website": "https://www.noll5.se/",
+     "openingHours": "Mo-Su 17:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/475072962",
+     "name": "Akkurat",
+     "lat": 59.31981,
+     "lon": 18.06885,
+     "website": "https://akkurat.se/",
+     "openingHours": "Mo-Tu 11:00-24:00; We-Fr 11:00-01:00; Sa 13:00-01:00; Su 15:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/503503186",
+     "name": "Bagpipers's Inn",
+     "lat": 59.34036,
+     "lon": 18.03114,
+     "website": "https://bagpipers.se/",
+     "openingHours": "Mo 16:00-23:00; Tu 16:00-24:00; We-Th 16:00-01:00; Fr 15:00-01:00; Sa 14:00-01:00; Su 14:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2749153061",
+     "name": "Bar à Vins",
+     "lat": 59.33675,
+     "lon": 18.09109,
+     "website": "http://www.baravins.se/",
+     "openingHours": "Tu-Sa 17:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6672696085",
+     "name": "Bar Agrikultur",
+     "lat": 59.31287,
+     "lon": 18.08323,
+     "website": "https://baragrikultur.com/",
+     "openingHours": "Mo-Su 17:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/9685745216",
+     "name": "Bar Kaja",
+     "lat": 59.31787,
+     "lon": 18.07005,
+     "website": "https://barkaja.org/",
+     "openingHours": "Mo off; Tu-Th 16:00-23:00; Fr-Sa 16:00-21:45; Su closed",
+     "detailed": true
+    },
+    {
+     "id": "node/13369836534",
+     "name": "Bar Nacka",
+     "lat": 59.30967,
+     "lon": 18.0826,
+     "website": "https://barnacka.se/",
+     "openingHours": "We-Fr 17:00-23:00; Sa 13:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1519949106",
+     "name": "Bar Nîmes",
+     "lat": 59.34238,
+     "lon": 18.06547,
+     "website": "https://bar-nimes.se/",
+     "openingHours": "Mo-Th 17:00-23:00; Fr 17:00-01:00; Sa 13:00-01:00; Su 13:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9785421430",
+     "name": "Bar Nordic",
+     "lat": 59.3346,
+     "lon": 18.05606,
+     "website": "https://www.barnordic.com/",
+     "openingHours": "Mo closed; Tu-Th 17:00-22:00; Fr-Sa 16:00-24:00; Su closed",
+     "detailed": true
+    },
+    {
+     "id": "node/13302560955",
+     "name": "Bar Talea",
+     "lat": 59.32436,
+     "lon": 18.07381,
+     "website": "https://bartalea.se/",
+     "openingHours": "Mo-Th 15:00-23:00; Fr-Sa 12:00-01:00; Su 12:00-21:00; PH closed",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/2336793891",
+     "name": "Café Opera",
+     "lat": 59.33001,
+     "lon": 18.07108,
+     "website": "https://www.cafeopera.se/",
+     "openingHours": "Mo-Tu off; We-Su 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/449884326",
+     "name": "Golden Hits",
+     "lat": 59.3358,
+     "lon": 18.06686,
+     "website": "https://goldenhits.se/",
+     "openingHours": "We 17:30-01:00, Th 17:30-02:00, Fr,Sa 17:30-03:00; Su-Tu off",
+     "detailed": true
+    },
+    {
+     "id": "node/640305033",
+     "name": "Guldapan",
+     "lat": 59.31881,
+     "lon": 18.06337,
+     "website": "http://guldapan.nu/",
+     "openingHours": "We,Fr-Sa 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/454221014",
+     "name": "Nivå 22",
+     "lat": 59.33242,
+     "lon": 18.02853,
+     "website": "https://www.niva22.se/",
+     "openingHours": "Mo-Fr 15:00-01:00; Sa 14:00-01:00; Su 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1186968935",
+     "name": "Patricia",
+     "lat": 59.3214,
+     "lon": 18.05276,
+     "address": "Söder Mälarstrand",
+     "website": "http://www.patricia.st/",
+     "openingHours": "Mo-Tu off; We-Th 17:00-00:00; Fr-Su 18:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/360759275",
+     "name": "Rose",
+     "lat": 59.3331,
+     "lon": 18.07494,
+     "website": "https://www.roseclub.se/",
+     "openingHours": "Mo-Tu closed; We 22:00-03:00; Th closed; Sa-Su 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/410545369",
+     "name": "Spy Bar",
+     "lat": 59.33655,
+     "lon": 18.07214,
+     "website": "https://www.stureplansgruppen.se/the-spy-bar-1.aspx",
+     "openingHours": "We-Sa 22:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1393925985",
+     "name": "Sturecompagniet",
+     "lat": 59.33649,
+     "lon": 18.07346,
+     "website": "https://www.sturecompagniet.se/",
+     "openingHours": "Th-Sa 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1422123882",
+     "name": "Baras ställe",
+     "lat": 59.31332,
+     "lon": 18.07057,
+     "openingHours": "Fr,Sa 20:00-03:00"
+    },
+    {
+     "id": "node/369976808",
+     "name": "Berns",
+     "lat": 59.33218,
+     "lon": 18.0739,
+     "website": "https://www.berns.se/"
+    },
+    {
+     "id": "node/6863422794",
+     "name": "Debaser",
+     "lat": 59.31446,
+     "lon": 18.03244,
+     "website": "https://www.debaser.se/"
+    },
+    {
+     "id": "node/415981774",
+     "name": "Fasching",
+     "lat": 59.3334,
+     "lon": 18.05576,
+     "website": "https://www.fasching.se/"
+    },
+    {
+     "id": "node/1937145796",
+     "name": "Fou",
+     "lat": 59.3331,
+     "lon": 18.07519,
+     "website": "https://fouclub.com/"
+    },
+    {
+     "id": "node/1778361749",
+     "name": "Kolingen",
+     "lat": 59.32251,
+     "lon": 18.07216,
+     "openingHours": "Mo-Th off; Fr-Sa 22:00-03:00; Su 03:00-24:00 off"
+    },
+    {
+     "id": "node/14177701760",
+     "name": "Noppe Bar",
+     "lat": 59.33373,
+     "lon": 18.07621,
+     "website": "https://www.noppe.se/"
+    },
+    {
+     "id": "node/2407774345",
+     "name": "SLM Stockholm",
+     "lat": 59.31674,
+     "lon": 18.06148,
+     "website": "https://slmstockholm.se/"
+    },
+    {
+     "id": "node/1844498178",
+     "name": "Trädgården",
+     "lat": 59.3045,
+     "lon": 18.0787,
+     "website": "https://www.tradgarden.com/"
+    },
+    {
+     "id": "node/462630509",
+     "name": "Södra Bar",
+     "lat": 59.31837,
+     "lon": 18.07426
+    },
+    {
+     "id": "node/1541177382",
+     "name": "Staybar",
+     "lat": 59.30735,
+     "lon": 18.07707
+    }
+   ]
+  }
+ }
+}

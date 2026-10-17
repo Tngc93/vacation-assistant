@@ -1,0 +1,998 @@
+{
+ "version": 1,
+ "cityCode": "RAK",
+ "fetchedAt": "2026-10-17T00:06:10.146Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Djemaa_el_Fna%2C_evening.JPG/1280px-Djemaa_el_Fna%2C_evening.JPG",
+  "width": 1280,
+  "height": 820,
+  "author": "Donar Reiskoffer",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Djemaa_el_Fna,_evening.JPG"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/1132585098",
+     "name": "ⵊⴰⵎⵄ ⵍⴼⵏⴰ جامع الفناء",
+     "lat": 31.62582,
+     "lon": -7.98924,
+     "openingHours": "24/7",
+     "wikipediaCount": 37
+    },
+    {
+     "id": "relation/1770461",
+     "name": "Medersa Ben Youssef",
+     "lat": 31.63198,
+     "lon": -7.98625,
+     "website": "https://www.medersabenyoussef.ma/",
+     "openingHours": "09:00-18:00; PH closed \"religous holidays\"",
+     "wikipediaCount": 24
+    },
+    {
+     "id": "relation/3241554",
+     "name": "Palais El Badi قصر البديع",
+     "lat": 31.61818,
+     "lon": -7.98537,
+     "website": "https://badipalace.com/",
+     "openingHours": "09:00-17:00",
+     "wikipediaCount": 20
+    },
+    {
+     "id": "node/374299688",
+     "name": "باب أكناو",
+     "lat": 31.61754,
+     "lon": -7.99068,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/614070192",
+     "name": "Almoravid Koubba القبة المرابطية",
+     "lat": 31.63146,
+     "lon": -7.98716,
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/102739972",
+     "name": "Dar El Bacha دار الباشا",
+     "lat": 31.62974,
+     "lon": -7.99266,
+     "website": "https://darbacha.com/",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/448190360",
+     "name": "Le Jardin Secret",
+     "lat": 31.63087,
+     "lon": -7.98993,
+     "address": "Rue Mouassine 121",
+     "website": "https://www.lejardinsecretmarrakech.com/",
+     "openingHours": "Mo-Su 09:30-18:00"
+    },
+    {
+     "id": "relation/7117612",
+     "name": "Palais Bahia قصر الباهية",
+     "lat": 31.62164,
+     "lon": -7.98203,
+     "address": "Rue Riad Zitoun El Jedid 5",
+     "website": "https://e-services.minculture.gov.ma/fr/tickets/palais-bahia",
+     "openingHours": "Mo-Su 09:00-17:00"
+    },
+    {
+     "id": "way/46584518",
+     "name": "Cimetière Juif Miaara",
+     "lat": 31.62034,
+     "lon": -7.97907,
+     "website": "http://www.cimetierejuifmarrakech.com/"
+    },
+    {
+     "id": "node/385205622",
+     "name": "Bab Ghemat",
+     "lat": 31.62385,
+     "lon": -7.97458
+    },
+    {
+     "id": "node/13283252604",
+     "name": "Bab Ghemat",
+     "lat": 31.62387,
+     "lon": -7.97454
+    },
+    {
+     "id": "node/5469651023",
+     "name": "carpet souq",
+     "lat": 31.62924,
+     "lon": -7.98734
+    },
+    {
+     "id": "node/5457796223",
+     "name": "central souqs",
+     "lat": 31.6303,
+     "lon": -7.98746
+    },
+    {
+     "id": "node/5469548721",
+     "name": "derb essamour",
+     "lat": 31.63298,
+     "lon": -7.99792
+    },
+    {
+     "id": "node/660578137",
+     "name": "Fontaine Mouassine",
+     "lat": 31.62988,
+     "lon": -7.98927
+    },
+    {
+     "id": "node/5469548821",
+     "name": "foundour el amir",
+     "lat": 31.63153,
+     "lon": -7.99075
+    },
+    {
+     "id": "node/6331506985",
+     "name": "Jardin de l'Agdal",
+     "lat": 31.61218,
+     "lon": -7.97969
+    },
+    {
+     "id": "node/10919414705",
+     "name": "Medina Marrakech مدينة مراكش",
+     "lat": 31.62591,
+     "lon": -7.98875
+    },
+    {
+     "id": "relation/7503094",
+     "name": "Palais Youssef Ben Tachfine",
+     "lat": 31.62129,
+     "lon": -7.99379
+    },
+    {
+     "id": "node/2284525756",
+     "name": "Quartier des tanneurs",
+     "lat": 31.63371,
+     "lon": -7.97887
+    },
+    {
+     "id": "way/15164098",
+     "name": "Rahba Kedima Square",
+     "lat": 31.62888,
+     "lon": -7.98705
+    },
+    {
+     "id": "node/5613547523",
+     "name": "Souk des teinturiers",
+     "lat": 31.63037,
+     "lon": -7.98858
+    },
+    {
+     "id": "node/5243357923",
+     "name": "Souk El Jadid",
+     "lat": 31.62653,
+     "lon": -7.98844
+    },
+    {
+     "id": "way/484286472",
+     "name": "Tannery",
+     "lat": 31.63359,
+     "lon": -7.97847
+    },
+    {
+     "id": "node/14071629301",
+     "name": "Tinsmiths Square",
+     "lat": 31.61962,
+     "lon": -7.98477
+    },
+    {
+     "id": "node/5318856745",
+     "name": "Tomb of Abdelaziz al-Tebaa",
+     "lat": 31.63206,
+     "lon": -7.98902
+    },
+    {
+     "id": "node/6475678439",
+     "name": "ציורים על קנבס",
+     "lat": 31.62939,
+     "lon": -7.9877
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/4627685",
+     "name": "Musée de Marrakech متحف مراكش",
+     "lat": 31.63155,
+     "lon": -7.98607,
+     "website": "https://marrakechmuseum.com/",
+     "openingHours": "09:00-18:30",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "relation/15662474",
+     "name": "Tombeaux Saadiens ضريح السعديين",
+     "lat": 31.61726,
+     "lon": -7.98853,
+     "address": "Rue de la Kasbah",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "node/5365982121",
+     "name": "Synagogue Laazama",
+     "lat": 31.62007,
+     "lon": -7.9823,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/4595271890",
+     "name": "Musée de la Musique",
+     "lat": 31.62936,
+     "lon": -7.98878,
+     "address": "Derb Hammam 5",
+     "website": "https://museedelamusique.ma/",
+     "openingHours": "Mo-Su 10:00-19:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/5744334021",
+     "name": "Musée Dar El Bacha\n دار الباشا",
+     "lat": 31.63139,
+     "lon": -7.99235,
+     "website": "https://darbacha.com/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/4595267208",
+     "name": "Dar Bellarj دار بلارج",
+     "lat": 31.63218,
+     "lon": -7.98656,
+     "address": "Derb Zaouia Lahdar",
+     "website": "https://www.darbellarj-fondation.com/",
+     "openingHours": "Mo-Sa 09:00-17:30"
+    },
+    {
+     "id": "node/4838054203",
+     "name": "Maison de la Photographie",
+     "lat": 31.63199,
+     "lon": -7.98437,
+     "address": "Rue Ahal Fès 46",
+     "website": "https://www.maisondelaphotographie.ma/",
+     "openingHours": "Mo-Su 09:30-19:00"
+    },
+    {
+     "id": "node/11449375969",
+     "name": "Monde des Arts de la Parure (MAP)",
+     "lat": 31.61867,
+     "lon": -7.98797,
+     "address": "Rue Touareg Ksibat Nhas 39-40",
+     "website": "https://www.lemapmarrakech.com/",
+     "openingHours": "Tu-Su 10:00-17:30"
+    },
+    {
+     "id": "way/42839736",
+     "name": "Musée Dar Si Saïd متحف دار السي سعيد",
+     "lat": 31.62338,
+     "lon": -7.98386,
+     "website": "https://fnm.ma/musees-ouverts/musee-dar-si-said-de-marrakech/",
+     "openingHours": "24/7 closed"
+    },
+    {
+     "id": "way/476368906",
+     "name": "Musée Jamaâ el-Fna du patrimoine immatériel",
+     "lat": 31.625,
+     "lon": -7.98919,
+     "website": "https://jemaa-elfnaa.com/fr/musee-du-patrimoine-culturel-immateriel/",
+     "openingHours": "Mo-Su 09:00-18:00"
+    },
+    {
+     "id": "node/660578117",
+     "name": "Musée Tiskiwin",
+     "lat": 31.62227,
+     "lon": -7.98407,
+     "address": "Derb El Bahia 8",
+     "website": "https://tiskiwin.wdro.net/",
+     "openingHours": "09:00-12:30; 14:30-18:00"
+    },
+    {
+     "id": "node/4595269910",
+     "name": "Dar Cherifa",
+     "lat": 31.62919,
+     "lon": -7.99029,
+     "address": "Derb Chorfa Lakbir 8",
+     "website": "https://darcherifa.com/"
+    },
+    {
+     "id": "node/1749842345",
+     "name": "Musée du Parfum",
+     "lat": 31.63462,
+     "lon": -7.98828,
+     "website": "https://www.benchaabane.com/lemuseeduparfum/"
+    },
+    {
+     "id": "node/6980909285",
+     "name": "Dar Zniber",
+     "lat": 31.62157,
+     "lon": -7.98425,
+     "address": "Rue Riad Zitoun El Jedid"
+    },
+    {
+     "id": "node/11966228283",
+     "name": "Subhan Art Gallery Marrakech",
+     "lat": 31.63035,
+     "lon": -7.98986
+    },
+    {
+     "id": "node/4595268267",
+     "name": "Zimroda Art's Galerie",
+     "lat": 31.63162,
+     "lon": -7.99102
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4841961021",
+     "name": "Concerie",
+     "lat": 31.63341,
+     "lon": -7.98046
+    },
+    {
+     "id": "node/5914108488",
+     "name": "Tower",
+     "lat": 31.63107,
+     "lon": -7.99043
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3370583713",
+     "name": "Angsana Si Said",
+     "lat": 31.62271,
+     "lon": -7.98389,
+     "website": "https://www.angsana.com/en/web/angsana/em-morocco-riad-collection/restaurant-si-said",
+     "openingHours": "12:00-15:00;19:30-23:00",
+     "cuisine": "thai, moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/7140767285",
+     "name": "Exotic Bali",
+     "lat": 31.63362,
+     "lon": -7.98915,
+     "address": "Derb Chentouf 56",
+     "website": "https://exotic-bali.com/",
+     "openingHours": "Tu-Su 17:00-22:00",
+     "cuisine": "asian, seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/3266079194",
+     "name": "Fouquet's",
+     "lat": 31.62897,
+     "lon": -7.9969,
+     "address": "Rue DJebel Alakhdar",
+     "website": "http://www.lucienbarriere.com/en/luxury-hotel/Marrakech-Hotel-Naoura-Barriere/Fouquets-Marrakech.html",
+     "openingHours": "12:30-14:30; 19:30-22:30",
+     "cuisine": "french, maroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/3370584423",
+     "name": "Imlil Snack Bar",
+     "lat": 31.62619,
+     "lon": -7.99177,
+     "website": "http://news.lesjardinsdelakoutoubia.com/lesjardinsdelakoutoubia/uk/carte-bar-imlil.asp",
+     "openingHours": "12:30-16:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/6188520785",
+     "name": "Koulchi Zine - Rooftop Restaurant",
+     "lat": 31.6218,
+     "lon": -7.98622,
+     "address": "Riad Zitoun Lakdim رياض الزيتون القديم 12",
+     "website": "https://koulchizine.com/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "arab, diner, fine dining, moroccan, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/14274598301",
+     "name": "La Kamounya",
+     "lat": 31.61663,
+     "lon": -7.98921,
+     "address": "Rue de la Kasbah",
+     "website": "http://la-kamounya.com/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/4065506096",
+     "name": "La table du Palais",
+     "lat": 31.62973,
+     "lon": -7.99051,
+     "address": "Rue Sidi El Yamani 63",
+     "website": "https://www.palaislamrani.com/",
+     "openingHours": "Th-Tu 12:00-14:30,18:30-21:30",
+     "cuisine": "regional, international",
+     "detailed": true
+    },
+    {
+     "id": "node/13420772298",
+     "name": "La Terrasse Du Jardin",
+     "lat": 31.63606,
+     "lon": -7.99676,
+     "address": "Rue El Gza",
+     "website": "https://www.laterrassedujardin.ma/",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/3215150598",
+     "name": "La Villa des Orangers",
+     "lat": 31.62032,
+     "lon": -7.99174,
+     "address": "Rue Sidi Mimoun 6",
+     "website": "https://www.villadesorangers.com/index.php/the-restaurant",
+     "openingHours": "19:30+",
+     "cuisine": "french, moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/3266021545",
+     "name": "Le Foundouk",
+     "lat": 31.63192,
+     "lon": -7.9849,
+     "address": "Rue Souk El Fassi 55",
+     "website": "https://www.foundouk.com/",
+     "openingHours": "Tu-Su 19:00-00:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4694974090",
+     "name": "Le Jardin",
+     "lat": 31.63208,
+     "lon": -7.98866,
+     "website": "https://lejardinmarrakech.com/",
+     "openingHours": "Mo-Su 10:00-22:30",
+     "cuisine": "breakfast, mediterranean, moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/12467240401",
+     "name": "M Bacha",
+     "lat": 31.63182,
+     "lon": -7.99679,
+     "address": "Derb Dekkak 2",
+     "website": "https://mbacha.net/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "japanese, moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/5640112829",
+     "name": "Naranj Libanese",
+     "lat": 31.62454,
+     "lon": -7.98521,
+     "address": "Rue Riad Zitoun El Jedid 84",
+     "website": "https://naranj.ma/",
+     "openingHours": "Mo-Sa 12:30-22:30",
+     "cuisine": "lebanese",
+     "detailed": true
+    },
+    {
+     "id": "node/3370585425",
+     "name": "Pepe Nero",
+     "lat": 31.62527,
+     "lon": -7.98391,
+     "address": "Derb Cherkaoui 17",
+     "website": "https://www.pepenero-marrakech.com/",
+     "openingHours": "Tu-Su 12:00-14:30,19:30-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4486825290",
+     "name": "Restaurant Al Baraka",
+     "lat": 31.62591,
+     "lon": -7.99032,
+     "address": "Place Jamâa El Fna، 1",
+     "website": "https://www.albaraka-marrakech.com/",
+     "openingHours": "Mo-Su 10:00-15:00,19:00-23:00",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/660578116",
+     "name": "Un Déjeuner à Marrakech",
+     "lat": 31.62401,
+     "lon": -7.98495,
+     "address": "Douar Graoua 2-4",
+     "website": "https://www.undejeuneramarrakech.com/",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/660578084",
+     "name": "Zwin Zwin café",
+     "lat": 31.62198,
+     "lon": -7.98846,
+     "address": "Rue El Moustachfa 10",
+     "website": "https://www.zwinzwincafe.net/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "moroccan, regional, international",
+     "detailed": true
+    },
+    {
+     "id": "node/13147797551",
+     "name": "دار دار",
+     "lat": 31.62228,
+     "lon": -7.98642,
+     "address": "Riad Zitoun Lakdim رياض الزيتون القديم",
+     "website": "http://restaurantdardar.com/",
+     "openingHours": "Mo-Su 10:00-00:00",
+     "cuisine": "coffee shop, moroccan, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/6993611185",
+     "name": "Broc The Kasbah",
+     "lat": 31.634,
+     "lon": -7.99078,
+     "address": "Rue Riad Laarous 300",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "arab, burger, diner, moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/4312385398",
+     "name": "Café Clock",
+     "lat": 31.61303,
+     "lon": -7.98729,
+     "address": "Derb Chtouka 224",
+     "website": "https://www.cafeclock.com/",
+     "openingHours": "Mo-Su 09:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1446424854",
+     "name": "Dar Moha",
+     "lat": 31.63137,
+     "lon": -7.99327,
+     "address": "Rue Dar El Bacha 91",
+     "website": "https://www.darmoha.ma/",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4595268268",
+     "name": "Dar Tazi",
+     "lat": 31.63207,
+     "lon": -7.98418,
+     "address": "Rue de Fassis 44",
+     "website": "https://www.restaurantdartazi.com/",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/3372315226",
+     "name": "Diaffa",
+     "lat": 31.62716,
+     "lon": -7.99384,
+     "address": "Rue Jebel Lakhdar 1",
+     "website": "http://www.restaurant-diaffa.ma/",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/13285114301",
+     "name": "Enjoy Your Meal",
+     "lat": 31.62581,
+     "lon": -7.9862,
+     "address": "Route Kennaria Dbchi 133",
+     "website": "https://enjoyyourmeal.ma/",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/3265126973",
+     "name": "Jad Mahal",
+     "lat": 31.62201,
+     "lon": -8.00022,
+     "website": "http://www.palaisjadmahal.com/",
+     "openingHours": "17:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/13357604585",
+     "name": "Kabana",
+     "lat": 31.62614,
+     "lon": -7.99295,
+     "website": "https://www.kabana-marrakech.com/",
+     "openingHours": "11:00-26:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4851287123",
+     "name": "Kui-Zin",
+     "lat": 31.63244,
+     "lon": -7.98853,
+     "address": "Rue Amsafah 12",
+     "website": "https://www.kui-zin.com/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13091711963",
+     "name": "La Fontaine des épices",
+     "lat": 31.63111,
+     "lon": -7.98944,
+     "address": "131 Rue Mouassine",
+     "website": "https://lafontainedesepices.com/",
+     "openingHours": "Mo-Su 10:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2278835023",
+     "name": "La Terrasse Des Epices",
+     "lat": 31.63107,
+     "lon": -7.98888,
+     "address": "Souk Cherifia 15",
+     "website": "https://www.terrassedesepices.com/",
+     "openingHours": "12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5639855511",
+     "name": "Le Comptoir du Pacha",
+     "lat": 31.6315,
+     "lon": -7.9943,
+     "address": "Arset Aouzal 218",
+     "website": "http://www.lecomptoirdupacha.com/",
+     "cuisine": "french, mediterranean, moroccan",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/660578106",
+     "name": "Café de France",
+     "lat": 31.62634,
+     "lon": -7.98731,
+     "website": "https://www.cafe-france-marrakech.com/",
+     "openingHours": "Mo-Su 07:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10776570505",
+     "name": "Foundounk Gargaa",
+     "lat": 31.62609,
+     "lon": -7.99105,
+     "address": "Rue Koutoubia 9",
+     "website": "https://instagram.com/foundouk_gargaa_marrakech",
+     "openingHours": "Su-Sa 10:00-19:00",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/3264290165",
+     "name": "Henna Cafe",
+     "lat": 31.63159,
+     "lon": -7.99425,
+     "address": "Arset Aouzal Souikat 93",
+     "website": "http://www.hennacafemarrakech.com/",
+     "openingHours": "11:00-20:00",
+     "cuisine": "berber",
+     "detailed": true
+    },
+    {
+     "id": "node/13846867622",
+     "name": "1112",
+     "lat": 31.63115,
+     "lon": -7.98655,
+     "website": "https://1112marrakech.com/",
+     "cuisine": "teahouse",
+     "detailed": true
+    },
+    {
+     "id": "node/14274592701",
+     "name": "Boughaz Coffee",
+     "lat": 31.61665,
+     "lon": -7.98922,
+     "openingHours": "Mo-Su 07:00-23:00",
+     "cuisine": "coffee shop, crepe",
+     "detailed": true
+    },
+    {
+     "id": "node/660578110",
+     "name": "Café des Epices",
+     "lat": 31.62906,
+     "lon": -7.98732,
+     "address": "75 Rahba Lakdima 75",
+     "website": "https://cafedesepices.ma/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3217481857",
+     "name": "Kasbah Cafe",
+     "lat": 31.61712,
+     "lon": -7.98951,
+     "address": "Boutouil Kasbah 47",
+     "website": "https://kasbahcafemarrakech.com/",
+     "cuisine": "arab",
+     "detailed": true
+    },
+    {
+     "id": "node/4841221621",
+     "name": "Le Cantine Des Gazelles",
+     "lat": 31.62593,
+     "lon": -7.9862,
+     "website": "https://m.facebook.com/pages/La-Cantine-des-Gazelles/283771211987912",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
+     "id": "node/13846867619",
+     "name": "Alaseel",
+     "lat": 31.62995,
+     "lon": -7.98375,
+     "cuisine": "tea, coffee"
+    },
+    {
+     "id": "node/660578103",
+     "name": "Aqua",
+     "lat": 31.62613,
+     "lon": -7.98748,
+     "cuisine": "american, italian, moroccan"
+    },
+    {
+     "id": "node/3902678444",
+     "name": "Bakchich Cafe",
+     "lat": 31.62589,
+     "lon": -7.98617,
+     "cuisine": "moroccan"
+    },
+    {
+     "id": "node/5050353453",
+     "name": "Bonna",
+     "lat": 31.62451,
+     "lon": -7.97577,
+     "address": "Triq Bab Ghmat",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/5983333085",
+     "name": "Café Dar Touareg",
+     "lat": 31.61951,
+     "lon": -7.9862,
+     "address": "Rue Tougma",
+     "cuisine": "moroccan"
+    },
+    {
+     "id": "node/4379055590",
+     "name": "Henna Art Cafe",
+     "lat": 31.62373,
+     "lon": -7.98708,
+     "website": "http://www.marrakechhennaartcafe.com/"
+    },
+    {
+     "id": "node/12498227687",
+     "name": "Jijo Mazel",
+     "lat": 31.62738,
+     "lon": -7.99346,
+     "address": "10 Rue Fatima Zahra",
+     "openingHours": "Mo-Su 10:00-22:00"
+    },
+    {
+     "id": "node/13846867623",
+     "name": "Kesh Cup",
+     "lat": 31.63146,
+     "lon": -7.98918,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/9129086053",
+     "name": "La Poterne",
+     "lat": 31.63011,
+     "lon": -7.99775,
+     "openingHours": "Mo-Su 08:00-21:00"
+    },
+    {
+     "id": "node/6296545485",
+     "name": "Laiterie Yacoute",
+     "lat": 31.6262,
+     "lon": -7.99103,
+     "address": "Derb Fahal Al Zaqriti درب فحل الزقريتي",
+     "cuisine": "arab, moroccan"
+    },
+    {
+     "id": "node/12616786001",
+     "name": "Mama terrasse",
+     "lat": 31.63303,
+     "lon": -7.9895,
+     "cuisine": "african"
+    },
+    {
+     "id": "node/3200149787",
+     "name": "Méchoui Quessabine",
+     "lat": 31.62714,
+     "lon": -7.98699,
+     "cuisine": "moroccan"
+    },
+    {
+     "id": "node/3009789816",
+     "name": "Rahba Kedima",
+     "lat": 31.62882,
+     "lon": -7.98705,
+     "address": "Rahba kedima 168",
+     "cuisine": "sandwich"
+    },
+    {
+     "id": "node/5535818526",
+     "name": "Regue Jamaa",
+     "lat": 31.63139,
+     "lon": -7.99632,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/13890571754",
+     "name": "Simple Specialty Coffee",
+     "lat": 31.63158,
+     "lon": -7.99091,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/2343045929",
+     "name": "7 Saints",
+     "lat": 31.62521,
+     "lon": -7.98795
+    },
+    {
+     "id": "node/13094770401",
+     "name": "Aassila Coffee",
+     "lat": 31.62759,
+     "lon": -7.9816,
+     "address": "Rue Sidi Boulabada, Marrakesh 40000, Marocco"
+    },
+    {
+     "id": "node/13450247002",
+     "name": "Abaq",
+     "lat": 31.63138,
+     "lon": -7.98861
+    },
+    {
+     "id": "node/5066644778",
+     "name": "Bab Espresso",
+     "lat": 31.61757,
+     "lon": -7.99113
+    },
+    {
+     "id": "node/4377968598",
+     "name": "Bazaar Cafe",
+     "lat": 31.62891,
+     "lon": -7.9911
+    },
+    {
+     "id": "node/4549915511",
+     "name": "Bistro Laksour",
+     "lat": 31.62711,
+     "lon": -7.99329
+    },
+    {
+     "id": "node/660578134",
+     "name": "Bougainvillea",
+     "lat": 31.62984,
+     "lon": -7.98993
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3265181994",
+     "name": "Grand Tazi Bar",
+     "lat": 31.62238,
+     "lon": -7.98954,
+     "openingHours": "to 23:00"
+    },
+    {
+     "id": "node/8378277217",
+     "name": "Kabana",
+     "lat": 31.62608,
+     "lon": -7.99302,
+     "cuisine": "moroccan"
+    },
+    {
+     "id": "node/3264432743",
+     "name": "Piano Bar",
+     "lat": 31.62592,
+     "lon": -7.99169,
+     "address": "Rue de la Koutoubia 26",
+     "openingHours": "17:00-24:00"
+    },
+    {
+     "id": "node/2343037306",
+     "name": "Riad Monceau",
+     "lat": 31.6245,
+     "lon": -7.98682,
+     "address": "Derb Chaabane 7;8",
+     "website": "https://www.riad-monceau.com/"
+    },
+    {
+     "id": "node/3214364742",
+     "name": "Al Bahia Lounge Royal bar",
+     "lat": 31.6212,
+     "lon": -7.98384
+    },
+    {
+     "id": "node/4786280731",
+     "name": "مراكش",
+     "lat": 31.62198,
+     "lon": -7.99851
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  }
+ }
+}

@@ -1,0 +1,1478 @@
+{
+ "version": 1,
+ "cityCode": "TBS",
+ "fetchedAt": "2026-10-16T23:55:17.354Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg/1280px-View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg",
+  "width": 1280,
+  "height": 853,
+  "author": "Alexey Komarov",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/9841336",
+     "name": "მთაწმინდის პანთეონი",
+     "lat": 41.69588,
+     "lon": 44.78895,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "relation/1020718",
+     "name": "საქართველოს პარლამენტი",
+     "lat": 41.69667,
+     "lon": 44.79794,
+     "address": "რუსთაველის გამზირი 8",
+     "website": "https://parliament.ge/",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "way/1236448832",
+     "name": "საქართველოს ბანკის სათავო ოფისი",
+     "lat": 41.73574,
+     "lon": 44.77078,
+     "address": "იური გაგარინის ქუჩა 29ა",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/1056991782",
+     "name": "პირველი რესპუბლიკის მოედანი",
+     "lat": 41.70389,
+     "lon": 44.79209,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/1150481713",
+     "name": "მშრალი ხიდი",
+     "lat": 41.70047,
+     "lon": 44.80256,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/1234716193",
+     "name": "თბილისის ცირკი",
+     "lat": 41.71434,
+     "lon": 44.78523,
+     "address": "მარი ბროსეს ქუჩა 1",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/690861173",
+     "name": "გალაკტიონ ტაბიძის ხიდი",
+     "lat": 41.70776,
+     "lon": 44.79268,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "relation/14069191",
+     "name": "თბილისის მოსწავლე ახალგაზრდობის ეროვნული სასახლე",
+     "lat": 41.69603,
+     "lon": 44.79895,
+     "address": "შოთა რუსთაველის გამზირი 6",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/1105505029",
+     "name": "თავად ვასილ გაბაშვილის სახლი",
+     "lat": 41.70257,
+     "lon": 44.7905,
+     "address": "შოთა რუსთაველის გამზირი 54",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/462898536",
+     "name": "კინოთეატრი აპოლო",
+     "lat": 41.71545,
+     "lon": 44.79351,
+     "address": "დავით აღმაშენებლის გამზირი 135",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/337269648",
+     "name": "მთაწმინდის მამადავითის სახელობის ეკლესია",
+     "lat": 41.69583,
+     "lon": 44.78887,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/1066637619",
+     "name": "შოთა რუსთაველი",
+     "lat": 41.70389,
+     "lon": 44.78993,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/1185163208",
+     "name": "მელიქ-აზარიანცის სახლი",
+     "lat": 41.7036,
+     "lon": 44.79136,
+     "address": "შოთა რუსთაველის გამზირი 37",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/34747066",
+     "name": "მზიურის პარკი",
+     "lat": 41.71168,
+     "lon": 44.77162,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/1278771525",
+     "name": "რესპუბლიკური გ. მიქელაძის სახელობის სამეცნიერო-ტექნიკური ბიბლიოთეკა",
+     "lat": 41.70989,
+     "lon": 44.78533,
+     "address": "მერაბ კოსტავას ქუჩა 47",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/196887176",
+     "name": "მუშტაიდი",
+     "lat": 41.72255,
+     "lon": 44.78702,
+     "openingHours": "Mo-Su 06:00-24:00"
+    },
+    {
+     "id": "node/12474246172",
+     "name": "აბრა \"Entrée à la passage Frs Oumansky\"",
+     "lat": 41.70396,
+     "lon": 44.80262
+    },
+    {
+     "id": "way/65254634",
+     "name": "არშაკუნის სასახლე",
+     "lat": 41.70142,
+     "lon": 44.79277
+    },
+    {
+     "id": "way/285012750",
+     "name": "ბერტა და არტურ ზუტნერების სახლი",
+     "lat": 41.71005,
+     "lon": 44.79366,
+     "address": "დიმიტრი უზნაძის ქუჩა 54"
+    },
+    {
+     "id": "way/595516357",
+     "name": "გმირთა მემორიალი",
+     "lat": 41.71313,
+     "lon": 44.78249
+    },
+    {
+     "id": "way/1064347135",
+     "name": "დედა ენის ძეგლი",
+     "lat": 41.70057,
+     "lon": 44.804
+    },
+    {
+     "id": "way/242179609",
+     "name": "მოჭიქული კიბეები",
+     "lat": 41.70178,
+     "lon": 44.79296
+    },
+    {
+     "id": "node/4610058085",
+     "name": "საგრიმიორო No 406",
+     "lat": 41.71135,
+     "lon": 44.79631
+    },
+    {
+     "id": "way/289527792",
+     "name": "ჰიდრომეტეოროლოგიის ინსტიტუტი",
+     "lat": 41.71682,
+     "lon": 44.78972
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/56677915",
+     "name": "ცისფერი გალერეა",
+     "lat": 41.69831,
+     "lon": 44.79881,
+     "address": "შოთა რუსთაველის გამზირი 11",
+     "wikipediaCount": 13
+    },
+    {
+     "id": "node/1561059942",
+     "name": "გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი",
+     "lat": 41.69939,
+     "lon": 44.79918,
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/57038408",
+     "name": "საქართველოს თეატრის, მუსიკის, კინოსა და ქორეოგრაფიის სახელმწიფო მუზეუმი",
+     "lat": 41.71587,
+     "lon": 44.79429,
+     "address": "ია კარგარეთელის ქუჩა 6",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/6162064485",
+     "name": "ქართული სახვითი ხელოვნების მუზეუმი",
+     "lat": 41.69721,
+     "lon": 44.79955,
+     "website": "http://www.finearts.ge/",
+     "openingHours": "Tu-Su 10:00-19:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/135869289",
+     "name": "აბრეშუმის სახელმწიფო მუზეუმი",
+     "lat": 41.72189,
+     "lon": 44.78821,
+     "address": "გიორგი ცაბაძის ქუჩა 6",
+     "website": "http://www.silkmuseum.ge/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/11051825158",
+     "name": "ჯალილ მამედყულიზადეს სახლ-მუზეუმი",
+     "lat": 41.6968,
+     "lon": 44.79438,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/11008994146",
+     "name": "ზაქარია ფალიაშვილის მემორიალური სახლ-მუზეუმი",
+     "lat": 41.70553,
+     "lon": 44.78579,
+     "website": "https://tbilisimuseumsunion.ge/en/museums/zakaria-faliashvilis-sakhl-muzeumi/",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/142657226",
+     "name": "ზურაბ წერეთლის თანამედროვე ხელოვნების მუზეუმი",
+     "lat": 41.7016,
+     "lon": 44.79516,
+     "address": "შოთა რუსთაველის გამზირი 27",
+     "openingHours": "Mo,We-Su 11:00-18:00; Tu off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/9890728875",
+     "name": "იაკობ ნიკოლაძის სახლ-მუზეუმი",
+     "lat": 41.70904,
+     "lon": 44.78213,
+     "address": "როდენის ქუჩა 8",
+     "openingHours": "Tu-Su 11:00-18:00; Mo off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/1551655810",
+     "name": "ნიკო ფიროსმანაშვილის სახელმწიფო მუზეუმი",
+     "lat": 41.71867,
+     "lon": 44.80033,
+     "openingHours": "Mo off; Tu-Su 10:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/13562481469",
+     "name": "მერაბ კოსტავას სახლ-მუზეუმი",
+     "lat": 41.70403,
+     "lon": 44.7891,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/5430976851",
+     "name": "Fotografia",
+     "lat": 41.70047,
+     "lon": 44.79858,
+     "address": "რევაზ თაბუკაშვილის ქუჩა 21",
+     "website": "https://www.fotografia.ge/",
+     "openingHours": "Su-Mo 10:10-18:00;Tu-Th 12:00-20:00;Fr-Sa 10:00-20:00"
+    },
+    {
+     "id": "node/10285884964",
+     "name": "Noblesse Art Gallery",
+     "lat": 41.70594,
+     "lon": 44.7887,
+     "website": "https://qr1.be/WYNA",
+     "openingHours": "11:00-22:00"
+    },
+    {
+     "id": "node/4328045889",
+     "name": "ლადო გუდიაშვილის სახელობის გალერეა",
+     "lat": 41.69758,
+     "lon": 44.80021,
+     "address": "ლადო გუდიაშვილის ქუჩა 11",
+     "website": "https://ladogudiashvili.ge/",
+     "openingHours": "Mo off; Tu-Su 11:00-18:30"
+    },
+    {
+     "id": "node/10207543017",
+     "name": "iArt გალერეა",
+     "lat": 41.70319,
+     "lon": 44.80292,
+     "address": "ზაქარია ქურდიანის ქუჩა",
+     "openingHours": "Mo-Su 12:00-20:00"
+    },
+    {
+     "id": "node/6844357003",
+     "name": "ბაია გელერეა",
+     "lat": 41.69626,
+     "lon": 44.79652,
+     "openingHours": "12:00-19:00"
+    },
+    {
+     "id": "node/921298269",
+     "name": "ილია ჭავჭავაძის ლიტერატურულ-მემორიალური მუზეუმი",
+     "lat": 41.70401,
+     "lon": 44.80609,
+     "openingHours": "Mo-Fr 11:00-17:00"
+    },
+    {
+     "id": "node/13725084187",
+     "name": "საავტორო თოჯინების გალერეა",
+     "lat": 41.71839,
+     "lon": 44.78866,
+     "openingHours": "12:00-19:00"
+    },
+    {
+     "id": "node/12193291534",
+     "name": "ტიციან ტაბიძის ბინა-მემორიალი",
+     "lat": 41.70063,
+     "lon": 44.7939,
+     "openingHours": "Tu-Su 11:00-17:00"
+    },
+    {
+     "id": "node/5442825832",
+     "name": "Apollo",
+     "lat": 41.70325,
+     "lon": 44.80414,
+     "address": "დავით აღმაშენებლის გამზირი 9"
+    },
+    {
+     "id": "node/11420560992",
+     "name": "Ato",
+     "lat": 41.7035,
+     "lon": 44.78957
+    },
+    {
+     "id": "way/1075603017",
+     "name": "Cube in Context",
+     "lat": 41.712,
+     "lon": 44.77092
+    },
+    {
+     "id": "way/217728721",
+     "name": "Gallery Nectar",
+     "lat": 41.70349,
+     "lon": 44.80294,
+     "address": "დავით აღმაშენებლის გამზირი 16"
+    },
+    {
+     "id": "node/13531533910",
+     "name": "Hermit Space",
+     "lat": 41.70869,
+     "lon": 44.78051
+    },
+    {
+     "id": "node/10697317338",
+     "name": "Silk Factory Gallery",
+     "lat": 41.71177,
+     "lon": 44.78466
+    },
+    {
+     "id": "way/1131162702",
+     "name": "ანიმაციური თოჯინების მუზეუმი",
+     "lat": 41.71265,
+     "lon": 44.79737
+    },
+    {
+     "id": "node/11375345024",
+     "name": "გალერეა 9",
+     "lat": 41.70297,
+     "lon": 44.80344
+    },
+    {
+     "id": "way/427003509",
+     "name": "ეთნოგრაფიული ექსპოზიცია",
+     "lat": 41.70001,
+     "lon": 44.80391
+    },
+    {
+     "id": "node/2891332680",
+     "name": "ელენე ახვლედიანის სახლ-მუსეუმი",
+     "lat": 41.70579,
+     "lon": 44.7906
+    },
+    {
+     "id": "node/10291487511",
+     "name": "თანამედროვე ხელოვნების გალერეა",
+     "lat": 41.70517,
+     "lon": 44.78247,
+     "address": "ივანე თარხნიშვილის ქუჩა 25"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1401085004",
+     "name": "2 ტონა",
+     "lat": 41.72727,
+     "lon": 44.76744,
+     "website": "https://2tona.ge/",
+     "openingHours": "Mo-Su 11:00-01:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/10078006117",
+     "name": "Craft Wine",
+     "lat": 41.71568,
+     "lon": 44.79844,
+     "website": "https://craftwinerestaurant.com/",
+     "openingHours": "Mo-Th 15:00-24:00; Fr-Su 15:00-01:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/12542406265",
+     "name": "Giorgio",
+     "lat": 41.69911,
+     "lon": 44.79295,
+     "website": "https://linktr.ee/restaurantgiorgio",
+     "openingHours": "13:00-24:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/6246252487",
+     "name": "Grape wine & kitchen",
+     "lat": 41.72107,
+     "lon": 44.75881,
+     "website": "https://grapewines.ge/",
+     "openingHours": "12:00-00:00",
+     "cuisine": "georgian,  european",
+     "detailed": true
+    },
+    {
+     "id": "node/11964341918",
+     "name": "Mr Kabab (qardaş təbrizli)",
+     "lat": 41.73297,
+     "lon": 44.76852,
+     "address": "იური გაგარინის ქუჩა 8",
+     "website": "https://mrkababtbilisi.com/",
+     "openingHours": "12:00-23:00",
+     "cuisine": "persian",
+     "detailed": true
+    },
+    {
+     "id": "node/10983783107",
+     "name": "ალ ხალიჯ რესტორანი (კვების ქარხანა)",
+     "lat": 41.71055,
+     "lon": 44.79675,
+     "website": "https://www.thefoodfactory.ge/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "arab, indian",
+     "detailed": true
+    },
+    {
+     "id": "node/6590590985",
+     "name": "ბანნი",
+     "lat": 41.70198,
+     "lon": 44.79298,
+     "website": "https://www.famoustbilisi.com/",
+     "openingHours": "Mo-Su 11:00-02:00",
+     "cuisine": "georgian, pizza, international, breakfast, diner, dessert, fine dining, european",
+     "detailed": true
+    },
+    {
+     "id": "node/5770502453",
+     "name": "ბინა N37",
+     "lat": 41.73344,
+     "lon": 44.76719,
+     "address": "სოფრომ მგალობლიშვილის ქუჩა 5a",
+     "website": "https://m.facebook.com/bina37bina37/?tsid=0.1760631444660824&source=result",
+     "openingHours": "Mo-Su 13:00-23:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/13591074893",
+     "name": "ბროდ",
+     "lat": 41.71925,
+     "lon": 44.79623,
+     "website": "https://bellhopgroup.com/",
+     "openingHours": "09:00-22:30",
+     "cuisine": "american, georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/10143014917",
+     "name": "დავითის ბაღი",
+     "lat": 41.70499,
+     "lon": 44.78809,
+     "address": "მიხეილ ზანდუკელის ჩიხი 5ა",
+     "website": "https://instagram.com/davids.rest",
+     "openingHours": "Mo-Th,Su 13:00-01:00; Fr-Sa 13:00-02:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/13395308394",
+     "name": "დოდო პიცა",
+     "lat": 41.74558,
+     "lon": 44.77839,
+     "website": "https://dodopizza.ge/",
+     "openingHours": "10:00-23:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/10787002705",
+     "name": "ვან გოგი",
+     "lat": 41.70415,
+     "lon": 44.7865,
+     "website": "https://instagram.com/vangoghi.rest",
+     "openingHours": "13:00-24:00",
+     "cuisine": "breakfast, georgian, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/6622438587",
+     "name": "იბერია",
+     "lat": 41.70201,
+     "lon": 44.79374,
+     "address": "Shota Rustaveli Ave 40",
+     "website": "https://iberiarestauranttbilisi.wordpress.com/",
+     "openingHours": "Mo-Su 10:00-04:00",
+     "cuisine": "chinese, chicken, diner, italian, kebab, coffee shop, indian, local, arab, georgian, persian, pizza, ice cream, international",
+     "detailed": true
+    },
+    {
+     "id": "node/8432033717",
+     "name": "კაფე დაფნა თბილისი",
+     "lat": 41.69991,
+     "lon": 44.8022,
+     "website": "https://cafedaphna.ge/tbilisi",
+     "openingHours": "Su-Th 11:00-02:00; Fr-Sa 11:00-06:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/11646839069",
+     "name": "მადრე",
+     "lat": 41.69607,
+     "lon": 44.79334,
+     "website": "https://madre-restaurant.com/",
+     "openingHours": "Mo-Th 15:00-00:00; Fr 15:00-01:00; Sa 12:00-01:00; Su 12:00-00:00",
+     "cuisine": "spanish",
+     "detailed": true
+    },
+    {
+     "id": "node/11379133469",
+     "name": "მარმარილო",
+     "lat": 41.7279,
+     "lon": 44.77298,
+     "website": "https://instagram.com/marmariloburger",
+     "openingHours": "Su-Sa 11:00-23:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/13003994745",
+     "name": "მირაი",
+     "lat": 41.70695,
+     "lon": 44.7743,
+     "website": "https://miraifood.ge/",
+     "openingHours": "11:00-02:00",
+     "cuisine": "sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/9549814382",
+     "name": "ნინიას ბაღი",
+     "lat": 41.71153,
+     "lon": 44.79328,
+     "website": "https://javshani.com/restaurant/ninias-garden/reserve/tables",
+     "openingHours": "Mo-Su 13:00-02:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/13244313065",
+     "name": "სანჯა ჭულა",
+     "lat": 41.71683,
+     "lon": 44.81965,
+     "address": "ატოცის ქუჩა 10",
+     "website": "https://sanjhachulha.ge/",
+     "openingHours": "Mo-Su 11:00-23:30",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/1401085006",
+     "name": "ტერემOK",
+     "lat": 41.72642,
+     "lon": 44.76624,
+     "address": "ალექსანდრე ყაზბეგის გამზირი 9",
+     "website": "https://teremok.ge/",
+     "openingHours": "24/7",
+     "cuisine": "russian, ukrainian",
+     "detailed": true
+    },
+    {
+     "id": "node/10928781698",
+     "name": "ფიესტა",
+     "lat": 41.70215,
+     "lon": 44.79647,
+     "website": "https://fiestabartbilisi.ge/",
+     "openingHours": "Mo-Su 13:00-23:00",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/1578044137",
+     "name": "ქართული სახლი",
+     "lat": 41.72055,
+     "lon": 44.78598,
+     "website": "https://www.georgian-house.ge/",
+     "openingHours": "09:00-02:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/13339961011",
+     "name": "შუა ქალაქი",
+     "lat": 41.72186,
+     "lon": 44.78862,
+     "address": "Giorgi Tsabadze St 6A",
+     "website": "https://shuakalaki.ge/en",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/12073637047",
+     "name": "წისქვილი ტერასა",
+     "lat": 41.70484,
+     "lon": 44.79368,
+     "website": "https://tsiskvili.ge/tsiskvili-terasa",
+     "openingHours": "Mo-Th 11:00-23:00; Fr-Su 11:00-01:00",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/10201076617",
+     "name": "Alfredo",
+     "lat": 41.70787,
+     "lon": 44.76542,
+     "address": "ირაკლი აბაშიძის ქუჩა 31",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/5527742922",
+     "name": "Ankara Style Restaurant",
+     "lat": 41.71147,
+     "lon": 44.79569,
+     "address": "დავით აღმაშენებლის გამზირი 114",
+     "website": "https://www.ankstyle.com/",
+     "cuisine": "turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/12662100814",
+     "name": "Chez Kinsky",
+     "lat": 41.71018,
+     "lon": 44.79389,
+     "address": "დიმიტრი უზნაძის ქუჩა 54",
+     "openingHours": "Mo-Th,Su 18:00-24:00; Fr-Sa 18:00-01:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/6449987067",
+     "name": "Chveni",
+     "lat": 41.70517,
+     "lon": 44.79982,
+     "address": "ანზორ ერქომაიშვილის ქუჩა 8",
+     "website": "https://rezto.ge/reservation/chveni",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10737377645",
+     "name": "Ghebi",
+     "lat": 41.71274,
+     "lon": 44.79516,
+     "address": "დავით აღმაშენებლის გამზირი 113",
+     "openingHours": "24/7",
+     "cuisine": "georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/12726566884",
+     "name": "Kobo",
+     "lat": 41.71894,
+     "lon": 44.78992,
+     "openingHours": "Mo-Th,Su 18:00-24:00; Fr-Sa 18:00-01:00",
+     "cuisine": "japanese",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/10144419471",
+     "name": "BNKR",
+     "lat": 41.69875,
+     "lon": 44.80329,
+     "address": "გიორგი ათონელის ქუჩა 19",
+     "website": "https://bnkr.mayaprodesign.com/",
+     "openingHours": "12:00-24:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11167624052",
+     "name": "BNKR",
+     "lat": 41.70573,
+     "lon": 44.78145,
+     "website": "https://bnkr.mayaprodesign.com/",
+     "openingHours": "Mo-Fr 09:00-22:00; Sa-Su 10:00-22:00",
+     "cuisine": "breakfast, cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5044957525",
+     "name": "Chez Bureau",
+     "lat": 41.69939,
+     "lon": 44.8001,
+     "website": "https://conceptbureau.netlify.app/",
+     "openingHours": "Mo-Su 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/13952543661",
+     "name": "Day Off",
+     "lat": 41.7073,
+     "lon": 44.76917,
+     "website": "https://dayoff.invite.ge/",
+     "openingHours": "08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10187536088",
+     "name": "Duchef Tbilisi",
+     "lat": 41.69707,
+     "lon": 44.79718,
+     "address": "ტარას შევჩენკოს ქუჩა 1",
+     "website": "http://www.facebook.com/ducheftbilisi",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "coffee shop, pastry",
+     "detailed": true
+    },
+    {
+     "id": "node/13240686817",
+     "name": "Hats and Coffee",
+     "lat": 41.70333,
+     "lon": 44.80416,
+     "website": "https://hatsandcoffee.com/",
+     "openingHours": "12:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/12014997370",
+     "name": "Okomeya",
+     "lat": 41.69766,
+     "lon": 44.80195,
+     "website": "https://www.okomeya.ge/",
+     "openingHours": "Mo-Su 14:00-22:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/3694378185",
+     "name": "Respublika Grill Bar",
+     "lat": 41.69587,
+     "lon": 44.79614,
+     "address": "ინგოროყვას ქუჩა 19",
+     "website": "http://www.facebook.com/respublikagrillbar",
+     "openingHours": "Mo-Su 11:00-00:00",
+     "cuisine": "grill, burger, pasta, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/11420560986",
+     "name": "Souper Tiki",
+     "lat": 41.70413,
+     "lon": 44.78562,
+     "website": "https://souper.cafe/",
+     "openingHours": "13:00-22:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/11228024714",
+     "name": "They Said Books",
+     "lat": 41.70549,
+     "lon": 44.79008,
+     "website": "https://theysaidbooks.com/",
+     "openingHours": "Mo-Su 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3417120428",
+     "name": "ანტრე",
+     "lat": 41.70892,
+     "lon": 44.79757,
+     "website": "https://entree.ge/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "coffee shop, sandwich, salad, cake",
+     "detailed": true
+    },
+    {
+     "id": "node/6881816985",
+     "name": "ანტრე",
+     "lat": 41.70426,
+     "lon": 44.78549,
+     "website": "https://www.entree.ge/en",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "cake, coffee, pastry, sandwich, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/11371075930",
+     "name": "ბრევიო",
+     "lat": 41.7098,
+     "lon": 44.80416,
+     "address": "Arnold Chikobava Street 57",
+     "website": "https://brewio.ge/",
+     "openingHours": "10:00-19:00; Su 12:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11185862214",
+     "name": "ენთუზიასტები",
+     "lat": 41.71197,
+     "lon": 44.80344,
+     "website": "https://taplink.cc/enthusiasts",
+     "openingHours": "Th-Mo 12:00-20:00",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/14155389827",
+     "name": "ვესთერნ კოფე",
+     "lat": 41.71098,
+     "lon": 44.78288,
+     "website": "https://westerncoffee.ge/",
+     "openingHours": "Mo-Sa 08:00-19:00; Su 12:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10871232205",
+     "name": "თი თაიმ",
+     "lat": 41.72667,
+     "lon": 44.78566,
+     "address": "ვახუშტი ბაგრატიონის ქუჩა 22",
+     "website": "https://instagram.com/teatime.ge",
+     "openingHours": "Mo-Su 12:00-20:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/9181660117",
+     "name": "ლუი",
+     "lat": 41.70996,
+     "lon": 44.76803,
+     "website": "https://lui.coffee/",
+     "openingHours": "24/7",
+     "cuisine": "breakfast, burger, coffee shop, pasta, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/10676976921",
+     "name": "მაო ჩაის ბუშტები",
+     "lat": 41.70871,
+     "lon": 44.77259,
+     "address": "ილია ჭავჭავაძის გამზირი 26",
+     "website": "https://www.facebook.com/MaoBubbletea.GE",
+     "openingHours": "Mo-Su 11:00-22:00",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/11290346369",
+     "name": "მერი ჯოს",
+     "lat": 41.69811,
+     "lon": 44.8032,
+     "website": "https://maryjos.ge/",
+     "openingHours": "09:00-01:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/1442529560",
+     "name": "მზიური",
+     "lat": 41.71055,
+     "lon": 44.76915,
+     "address": "ილია ჭავჭავაძის გამზირი 23",
+     "website": "https://cafemziuri.ge/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/12073571792",
+     "name": "პასთაჩი",
+     "lat": 41.69941,
+     "lon": 44.7969,
+     "website": "https://pastachi.ge/",
+     "openingHours": "11:00-01:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/12652423317",
+     "name": "პოლ",
+     "lat": 41.72612,
+     "lon": 44.76253,
+     "website": "https://paul-bakeries.com/",
+     "openingHours": "09:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6698908285",
+     "name": "პური გულიანი",
+     "lat": 41.70223,
+     "lon": 44.80521,
+     "address": "ზაარბრიუკენის მოედანი",
+     "website": "https://puriguliani.ge/",
+     "openingHours": "09:00-24:00",
+     "cuisine": "coffee shop, georgian, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/9891897204",
+     "name": "რადიოკაფე",
+     "lat": 41.69979,
+     "lon": 44.8021,
+     "website": "https://radiocafe.ge/",
+     "openingHours": "11:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/11302697843",
+     "name": "რამეკაი",
+     "lat": 41.69821,
+     "lon": 44.80255,
+     "website": "https://ramekai.com/",
+     "openingHours": "12:00-24:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/9531553117",
+     "name": "სკა ჯუს ბარი",
+     "lat": 41.70874,
+     "lon": 44.76461,
+     "address": "ოთარ თაქთაქიშვილის ქუჩა 7",
+     "website": "https://www.skagroup.ge/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "juice, smoothie, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/10872781405",
+     "name": "სკა ჯუს ბარი",
+     "lat": 41.72614,
+     "lon": 44.76264,
+     "address": "ალექსანდრე ყაზბეგის გამზირი 15",
+     "website": "https://www.skagroup.ge/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "juice, smoothie, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/10703913905",
+     "name": "სლინკ კაფე",
+     "lat": 41.70908,
+     "lon": 44.79972,
+     "address": "დავით აღმაშენებლის გამზირი 73A",
+     "website": "http://www.slink.cafe/",
+     "openingHours": "Tu-Su 10:00-20:00",
+     "cuisine": "breakfast, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11813767414",
+     "name": "სუში ჰათ",
+     "lat": 41.70286,
+     "lon": 44.7836,
+     "address": "Nutsubidze street 44-1",
+     "website": "https://sushihut.ge/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/4396101391",
+     "name": "ტარტანი",
+     "lat": 41.7059,
+     "lon": 44.78377,
+     "website": "https://www.facebook.com/cafeteriatartan/",
+     "openingHours": "Mo-Su 09:00-22:00",
+     "cuisine": "georgian",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/341914117",
+     "name": "Secret place",
+     "lat": 41.69862,
+     "lon": 44.80368,
+     "address": "ანტონ ფურცელაძის ქუჩა 28",
+     "website": "https://t.me/secrettssssssss",
+     "openingHours": "Mo-Th 16:00-24:00; Fr-Su 16:00-01:00",
+     "cuisine": "fast food",
+     "detailed": true
+    },
+    {
+     "id": "node/9992485217",
+     "name": "ბრუტ",
+     "lat": 41.69863,
+     "lon": 44.80315,
+     "address": "გიორგი ათონელის ქუჩა 20",
+     "website": "https://instagram.com/brutbar.ge",
+     "openingHours": "Mo-Su 15:00-00:00",
+     "cuisine": "friture, international, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/9864732202",
+     "name": "პოდდონ",
+     "lat": 41.70062,
+     "lon": 44.79672,
+     "website": "https://www.instagram.com/pddbar_ge/",
+     "openingHours": "Mo-Su 16:00-02:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/13758678803",
+     "name": "Atoneli Wine Window",
+     "lat": 41.69901,
+     "lon": 44.80318,
+     "address": "Giorgi Atoneli Street 21",
+     "website": "https://maps.app.goo.gl/YjsxnYa3unTr3gzz8?g_st=ac",
+     "openingHours": "Mo-Su 13:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12802203897",
+     "name": "Buro",
+     "lat": 41.7089,
+     "lon": 44.77687,
+     "website": "https://buro.ge/",
+     "openingHours": "Mo-Th,Su 17:00-24:00; Fr-Sa 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11147903705",
+     "name": "Kapi bar",
+     "lat": 41.69781,
+     "lon": 44.80152,
+     "openingHours": "Mo-Su 16:00-02:00",
+     "cuisine": "barbecue, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/12070431394",
+     "name": "Noto",
+     "lat": 41.70231,
+     "lon": 44.79673,
+     "website": "https://noto.resos.com/booking",
+     "openingHours": "Mo-Tu off; We-Su 18:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5693680821",
+     "name": "Number 8",
+     "lat": 41.70729,
+     "lon": 44.76938,
+     "address": "ირაკლი აბაშიძის ქუჩა 22",
+     "openingHours": "Mo-Su 12:00-01:00",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "way/1084548857",
+     "name": "Old Time",
+     "lat": 41.74609,
+     "lon": 44.79036,
+     "address": "ეკა ბეჟანიშვილის ქუჩა 11ა",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "cuisine": "sausage",
+     "detailed": true
+    },
+    {
+     "id": "node/14058932194",
+     "name": "Rustaveli Wine Bar",
+     "lat": 41.70064,
+     "lon": 44.79647,
+     "address": "Shota Rustaveli Ave 25",
+     "website": "https://www.instagram.com/rustaveliwinebar",
+     "openingHours": "Mo-Su 16:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11173535050",
+     "name": "Seven roads",
+     "lat": 41.71036,
+     "lon": 44.80357,
+     "website": "https://www.instagram.com/sevenroads.tbi/",
+     "openingHours": "Mo-Th 18:00-00:00; Fr 18:00-02:00; Sa 16:00-02:00; Su 18:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11833117707",
+     "name": "Supertramp Garage",
+     "lat": 41.70463,
+     "lon": 44.79136,
+     "website": "https://supertrampsworldwide.com/garagetbi",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/10224387764",
+     "name": "UHAB - ხელოვნების ცენტრი და ღვინის ბარი",
+     "lat": 41.70261,
+     "lon": 44.80701,
+     "address": "ივანე ჯავახიშვილის ქუჩა 13/5",
+     "website": "https://uhab.ge/",
+     "openingHours": "Tu-Su 16:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11473056558",
+     "name": "Vuokśa",
+     "lat": 41.70903,
+     "lon": 44.78496,
+     "openingHours": "Mo-Th 16:00-02:00,Fr-Sa 16:00-03:00,Su 16:00-02:00",
+     "cuisine": "karelian",
+     "detailed": true
+    },
+    {
+     "id": "node/11240967345",
+     "name": "პაბ 44",
+     "lat": 41.70412,
+     "lon": 44.78682,
+     "website": "https://pub44.ge/",
+     "openingHours": "14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11387997169",
+     "name": "ქური ლაუნჯ ბარი",
+     "lat": 41.70657,
+     "lon": 44.78193,
+     "address": "აკაკი ხორავას ქუჩა 14",
+     "website": "https://menu.ps.me/7e2QPAjk0u8",
+     "openingHours": "Mo-Su 17:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4405710391",
+     "name": "ჩაბას ჯაზ როკ კაფე",
+     "lat": 41.70619,
+     "lon": 44.7888,
+     "openingHours": "Mo-Su 12:00-04:00",
+     "cuisine": "hungarian, georgian",
+     "detailed": true
+    },
+    {
+     "id": "node/10690553105",
+     "name": "ჩვენი ბარი",
+     "lat": 41.70871,
+     "lon": 44.7848,
+     "address": "შალვა ღამბაშიძის ქუჩა 4",
+     "openingHours": "Mo-Su 15:00-24:00",
+     "cuisine": "american, hot dog",
+     "detailed": true
+    },
+    {
+     "id": "node/12229731601",
+     "name": "#8 BBQ HOUSE",
+     "lat": 41.71508,
+     "lon": 44.79355,
+     "openingHours": "Mo-Su 15:00-02:00"
+    },
+    {
+     "id": "node/11487202832",
+     "name": "5327°",
+     "lat": 41.70836,
+     "lon": 44.78382,
+     "openingHours": "Mo-Th 17:00-02:00; Fr 17:00-03:00; Sa 14:00-03:00; Su 14:00-02:00"
+    },
+    {
+     "id": "node/4968314229",
+     "name": "8000 მოსავალი",
+     "lat": 41.72125,
+     "lon": 44.76472,
+     "openingHours": "11:00-01:00"
+    },
+    {
+     "id": "node/13724990458",
+     "name": "Brød Basement",
+     "lat": 41.71918,
+     "lon": 44.79627,
+     "openingHours": "Mo-Sa 21:00-02:00; Su off"
+    },
+    {
+     "id": "node/12070431392",
+     "name": "Drunken Poets Syndicate",
+     "lat": 41.71506,
+     "lon": 44.79346,
+     "openingHours": "Mo-Tu off; We-Su 20:00-02:00"
+    },
+    {
+     "id": "node/2891333542",
+     "name": "H2SO4 მწერლების ბარი",
+     "lat": 41.70723,
+     "lon": 44.7893,
+     "openingHours": "Mo off; Tu-Su 17:00-01:00"
+    },
+    {
+     "id": "node/10588056447",
+     "name": "Hidden Bar",
+     "lat": 41.69754,
+     "lon": 44.80207,
+     "openingHours": "Mo off; Tu-Su 19:00-02:00"
+    },
+    {
+     "id": "node/9654505601",
+     "name": "Nozomi",
+     "lat": 41.70337,
+     "lon": 44.8033,
+     "address": "დავით აღმაშენებლის გამზირი 12",
+     "cuisine": "japanese"
+    },
+    {
+     "id": "node/534210323",
+     "name": "Prego",
+     "lat": 41.72723,
+     "lon": 44.76696,
+     "cuisine": "beer \"zubr\""
+    },
+    {
+     "id": "node/3156150103",
+     "name": "Sulico",
+     "lat": 41.70429,
+     "lon": 44.78425,
+     "cuisine": "georgian, fish"
+    },
+    {
+     "id": "node/11242144714",
+     "name": "Supertramp",
+     "lat": 41.71726,
+     "lon": 44.77617,
+     "openingHours": "12:00-02:00"
+    },
+    {
+     "id": "node/12187507078",
+     "name": "Tap&Tails",
+     "lat": 41.7056,
+     "lon": 44.78009,
+     "openingHours": "20:00-02:00"
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/12691244601",
+     "name": "Left bank",
+     "lat": 41.70549,
+     "lon": 44.79568,
+     "address": "ნიკოლოზ ბარათაშვილის სახელობის მარცხენა სანაპირო 10",
+     "website": "http://leftbank.club/",
+     "openingHours": "Fr-Su 23:59-10:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6117627285",
+     "name": "Success Bar",
+     "lat": 41.70612,
+     "lon": 44.78869,
+     "openingHours": "PH,Tu-Su 22:00-04:00+"
+    },
+    {
+     "id": "node/10056346257",
+     "name": "ბანკ კლუბი",
+     "lat": 41.71005,
+     "lon": 44.78476,
+     "openingHours": "Mo-Su 22:00-06:00"
+    },
+    {
+     "id": "node/4367002390",
+     "name": "ბასიანი",
+     "lat": 41.72277,
+     "lon": 44.79082,
+     "address": "აკაკი წერეთლის გამზირი",
+     "website": "https://bassiani.com//"
+    },
+    {
+     "id": "node/11302789876",
+     "name": "ბეისმენთი",
+     "lat": 41.69825,
+     "lon": 44.80377,
+     "openingHours": "20:00-03:00"
+    },
+    {
+     "id": "node/13632911801",
+     "name": "მექანიკა საუნდ ქლაბი",
+     "lat": 41.70269,
+     "lon": 44.80381,
+     "address": "დიმიტრი უზნაძის ქუჩა 9",
+     "openingHours": "We-Su 20:00-06:00"
+    },
+    {
+     "id": "node/12909853167",
+     "name": "Arena",
+     "lat": 41.70415,
+     "lon": 44.7923
+    },
+    {
+     "id": "node/9895004142",
+     "name": "Black king club",
+     "lat": 41.70826,
+     "lon": 44.79858
+    },
+    {
+     "id": "node/13969058909",
+     "name": "Cloud 9",
+     "lat": 41.69978,
+     "lon": 44.79302,
+     "address": "Alexander Chavchavadze Street 11"
+    },
+    {
+     "id": "node/13836824360",
+     "name": "Hype",
+     "lat": 41.69805,
+     "lon": 44.80423
+    },
+    {
+     "id": "node/12909853166",
+     "name": "Laila",
+     "lat": 41.70426,
+     "lon": 44.79216
+    },
+    {
+     "id": "node/11873851509",
+     "name": "Meoba",
+     "lat": 41.71671,
+     "lon": 44.79771,
+     "address": "კონსტიტუციის ქუჩა 4"
+    },
+    {
+     "id": "node/11255351447",
+     "name": "Mimosa",
+     "lat": 41.70622,
+     "lon": 44.78912
+    },
+    {
+     "id": "node/10588133224",
+     "name": "Sigma",
+     "lat": 41.69808,
+     "lon": 44.80413
+    },
+    {
+     "id": "node/4585342391",
+     "name": "Spacehall",
+     "lat": 41.72318,
+     "lon": 44.79071
+    },
+    {
+     "id": "node/6116710196",
+     "name": "დეჟა ვუ",
+     "lat": 41.7076,
+     "lon": 44.78604
+    },
+    {
+     "id": "node/12177006435",
+     "name": "მონოჰოლი",
+     "lat": 41.70328,
+     "lon": 44.79024,
+     "address": "ძმები კაკაბაძეების ქუჩა 2"
+    },
+    {
+     "id": "node/1671576289",
+     "name": "მტკვარზე",
+     "lat": 41.72261,
+     "lon": 44.78385
+    }
+   ]
+  }
+ }
+}

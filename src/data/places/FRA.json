@@ -1,0 +1,1741 @@
+{
+ "version": 1,
+ "cityCode": "FRA",
+ "fetchedAt": "2026-10-16T23:26:27.285Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg/1280px-Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg",
+  "width": 1280,
+  "height": 755,
+  "author": "Thomas Wolf , www.foto-tw.de",
+  "license": "CC BY-SA 3.0 de",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurter_Altstadt_mit_Skyline_2019_(100MP).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/11526375",
+     "name": "Paulskirche",
+     "lat": 50.11118,
+     "lon": 8.68071,
+     "address": "Paulsplatz 11",
+     "website": "https://frankfurt.de/frankfurt-entdecken-und-erleben/sehenswuerdigkeiten/fuer-historisch-interessierte/paulskirche",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 30
+    },
+    {
+     "id": "way/11018815",
+     "name": "Kaiserdom St. Bartholomäus",
+     "lat": 50.11067,
+     "lon": 8.68535,
+     "address": "Domplatz 1",
+     "website": "https://www.dom-frankfurt.de/dom/",
+     "openingHours": "Mo-Su 09:00-20:00",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "node/34223060",
+     "name": "Römer",
+     "lat": 50.11047,
+     "lon": 8.68166,
+     "openingHours": "Mo-Su 10:30-12:30",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/384153099",
+     "name": "Alte Oper",
+     "lat": 50.11603,
+     "lon": 8.67199,
+     "address": "Opernplatz 1",
+     "website": "https://www.alteoper.de/",
+     "wikipediaCount": 17
+    },
+    {
+     "id": "way/174501393",
+     "name": "Goethe-Haus",
+     "lat": 50.11121,
+     "lon": 8.67756,
+     "address": "Großer Hirschgraben 23-25",
+     "website": "https://www.goethehaus-frankfurt.de/",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/28426081",
+     "name": "Katharinenkirche",
+     "lat": 50.11319,
+     "lon": 8.67941,
+     "address": "Zeil 131",
+     "openingHours": "Mo-Sa 10:00-18:00",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "way/27769650",
+     "name": "Hauptwache",
+     "lat": 50.11349,
+     "lon": 8.67873,
+     "address": "An der Hauptwache 15",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/27769415",
+     "name": "Alte Nikolaikirche",
+     "lat": 50.10998,
+     "lon": 8.68236,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/174637354",
+     "name": "Glockenturm der Alten Nikolaikirche",
+     "lat": 50.11004,
+     "lon": 8.68247,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/53671623",
+     "name": "Eschenheimer Turm",
+     "lat": 50.11695,
+     "lon": 8.6797,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "relation/1688621",
+     "name": "Palais Thurn und Taxis",
+     "lat": 50.11517,
+     "lon": 8.67994,
+     "address": "Thurn-und-Taxis-Platz 1",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/49842069",
+     "name": "Liebfrauenkirche",
+     "lat": 50.11305,
+     "lon": 8.68144,
+     "website": "https://liebfrauen.net/",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/53567953",
+     "name": "Kirche St. Leonhard",
+     "lat": 50.10891,
+     "lon": 8.68016,
+     "address": "Am Leonhardstor 25",
+     "website": "https://www.dom-frankfurt.de/dompfarrei/kirchorte/st-leonhard/kirche",
+     "openingHours": "Mo-Fr 15:00-19:00; Sa-Su 11:00-18:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/156298612",
+     "name": "Dreikönigskirche",
+     "lat": 50.10723,
+     "lon": 8.68504,
+     "website": "https://dreikoenigsgemeinde.ekhn.de/startseite.html",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/174825000",
+     "name": "Staufenmauer",
+     "lat": 50.11354,
+     "lon": 8.68675,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/72471247",
+     "name": "Steinernes Haus",
+     "lat": 50.11077,
+     "lon": 8.68279,
+     "address": "Markt 44",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/34378270",
+     "name": "Kaiserpfalz franconofurd",
+     "lat": 50.11056,
+     "lon": 8.6843,
+     "website": "https://www.archaeologisches-museum-frankfurt.de/besucherinformationen/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/53798956",
+     "name": "Gerechtigkeitsbrunnen",
+     "lat": 50.11042,
+     "lon": 8.68214,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/71324413",
+     "name": "Deutschordenskirche",
+     "lat": 50.10653,
+     "lon": 8.6881,
+     "address": "Brückenstraße 7",
+     "website": "http://pfarrei-deutschorden.de/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/968095863",
+     "name": "Holbeinsteg",
+     "lat": 50.10411,
+     "lon": 8.67172,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/11651042",
+     "name": "Holzhausenschlösschen",
+     "lat": 50.12618,
+     "lon": 8.67917,
+     "address": "Justinianstraße 5",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/42254763",
+     "name": "Leinwandhaus",
+     "lat": 50.11009,
+     "lon": 8.68524,
+     "address": "Weckmarkt 17",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/174500421",
+     "name": "Saalhof",
+     "lat": 50.10954,
+     "lon": 8.68295,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/449377753",
+     "name": "Kleinmarkthalle",
+     "lat": 50.11274,
+     "lon": 8.68309,
+     "address": "Hasengasse 5-7",
+     "website": "https://kleinmarkthalle.de/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00; PH off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/35428742",
+     "name": "Affentorhäuser",
+     "lat": 50.10474,
+     "lon": 8.69003,
+     "address": "Affentorplatz 1",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/68811159",
+     "name": "Affentorhäuser",
+     "lat": 50.10467,
+     "lon": 8.68964,
+     "address": "Affentorplatz 2",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/174931826",
+     "name": "Alte Stadtbibliothek",
+     "lat": 50.10946,
+     "lon": 8.69309,
+     "address": "Schöne Aussicht 2",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/174500420",
+     "name": "Haus Wertheym",
+     "lat": 50.10946,
+     "lon": 8.68192,
+     "address": "Fahrtor 1",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "relation/1126033",
+     "name": "Karmeliterkloster",
+     "lat": 50.10913,
+     "lon": 8.67813,
+     "address": "Karmelitergasse 1",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/68970488",
+     "name": "Kuhhirtenturm (Elefant)",
+     "lat": 50.10669,
+     "lon": 8.68971,
+     "wikipediaCount": 1
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/144346893",
+     "name": "Städel Museum",
+     "lat": 50.10329,
+     "lon": 8.67386,
+     "address": "Schaumainkai 63",
+     "website": "https://www.staedelmuseum.de/de",
+     "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-21:00; Mo off",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "way/35216115",
+     "name": "Museum MMK",
+     "lat": 50.11198,
+     "lon": 8.68502,
+     "address": "Domstraße 10",
+     "website": "https://www.mmk.art/",
+     "openingHours": "Tu,Th-Su 11:00-18:00; We 11:00-19:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "node/385171326",
+     "name": "Deutsches Architekturmuseum",
+     "lat": 50.10498,
+     "lon": 8.67731,
+     "address": "Schaumainkai 43",
+     "website": "https://dam-online.de/",
+     "openingHours": "Tu,Th-Su 11:00-18:00; We 11:00-20:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/689507214",
+     "name": "Schirn Kunsthalle",
+     "lat": 50.11026,
+     "lon": 8.68384,
+     "address": "Saalgasse 20",
+     "website": "https://www.schirn.de/",
+     "openingHours": "closed \"Wegen Sanierung vorübergehender Umzug in die Dondorf Druckerei in Bockenheim.\"",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/2547104680",
+     "name": "Historisches Museum Frankfurt",
+     "lat": 50.1096,
+     "lon": 8.68244,
+     "address": "Fahrtor 2",
+     "website": "https://www.historisches-museum-frankfurt.de/",
+     "openingHours": "Tu-We, Fr-Su 11:00-18:00; Th 11:00-21:00",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "relation/8171080",
+     "name": "Historisches Museum Frankfurt",
+     "lat": 50.10954,
+     "lon": 8.68277,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/144343388",
+     "name": "Museum Angewandte Kunst",
+     "lat": 50.10627,
+     "lon": 8.68095,
+     "address": "Schaumainkai 17",
+     "website": "http://www.museumangewandtekunst.de/",
+     "openingHours": "Tu,Th-Su 10:00-18:00; We 10:00-20:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/265793228",
+     "name": "Jüdisches Museum",
+     "lat": 50.10722,
+     "lon": 8.67424,
+     "address": "Bertha-Pappenheim-Platz 1",
+     "website": "https://www.juedischesmuseum.de/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/144349808",
+     "name": "Liebieghaus Skulpturensammlung",
+     "lat": 50.10167,
+     "lon": 8.67175,
+     "address": "Schaumainkai 71",
+     "website": "https://www.liebieghaus.de/de",
+     "openingHours": "Tu,We 12:00-18:00; Th 10:00-21:00; Fr-Su 10:00-18:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/4292738515",
+     "name": "Museum für Kommunikation",
+     "lat": 50.10438,
+     "lon": 8.67587,
+     "website": "https://www.mfk-frankfurt.de/",
+     "openingHours": "Tu,Th-Su,PH 10:00-18:00; We 10:00-20:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/12245796003",
+     "name": "Archäologisches Museum",
+     "lat": 50.10907,
+     "lon": 8.67817,
+     "address": "Karmelitergasse 1",
+     "website": "https://www.archaeologisches-museum.frankfurt.de/",
+     "openingHours": "Tu, Th-Su 10:00-18:00; We 10:00-20:00; Mo off",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/385171325",
+     "name": "Deutsches Filminstitut Filmmuseum",
+     "lat": 50.10506,
+     "lon": 8.67769,
+     "address": "Schaumainkai 41",
+     "website": "https://www.dff.film/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/1851762708",
+     "name": "Caricatura",
+     "lat": 50.11013,
+     "lon": 8.68526,
+     "address": "Weckmarkt 17",
+     "website": "https://www.caricatura-museum.de/",
+     "openingHours": "Mo off; PH,Tu-Su 11:00-19:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/898239357",
+     "name": "Deutsches Romantik-Museum",
+     "lat": 50.11102,
+     "lon": 8.67749,
+     "address": "Großer Hirschgraben 17-21",
+     "website": "https://deutsches-romantik-museum.de/",
+     "openingHours": "Fr-We,PH 10:00-18:00; Th 10:00-21:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/7427950218",
+     "name": "Museum Giersch der Goethe-Universität",
+     "lat": 50.10138,
+     "lon": 8.67023,
+     "address": "Schaumainkai 83",
+     "website": "https://www.mggu.de/",
+     "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-20:00; PH 10:00-18:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/300928576",
+     "name": "Weltkulturen Museum",
+     "lat": 50.10574,
+     "lon": 8.67936,
+     "address": "Schaumainkai 29-37",
+     "website": "https://www.weltkulturenmuseum.de/",
+     "openingHours": "We 11:00-20:00; Th-Su 11:00-18:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/1851804853",
+     "name": "Frankfurter Kunstverein",
+     "lat": 50.11078,
+     "lon": 8.68299,
+     "website": "https://www.fkv.de/",
+     "openingHours": "Tu-Su 11:00-19:00; Th 11:00-21:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/6882184609",
+     "name": "Ikonen-Museum",
+     "lat": 50.10675,
+     "lon": 8.688,
+     "website": "http://www.ikonenmuseumfrankfurt.de/",
+     "openingHours": "We 12:00-20:00; Fr-Su 10:00-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/39383376",
+     "name": "Portikus",
+     "lat": 50.10802,
+     "lon": 8.68731,
+     "address": "Alte Brücke 2",
+     "website": "https://www.portikus.de/",
+     "openingHours": "Tu-Su 11:00-18:00; We 11:00-20:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/3891320264",
+     "name": "Deutsches Museum für Kochkunst und Tafelkultur",
+     "lat": 50.11414,
+     "lon": 8.68301,
+     "address": "Holzgraben 4",
+     "website": "https://www.tafelkultur.com/",
+     "openingHours": "Su 15:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/7448608926",
+     "name": "Dommuseum",
+     "lat": 50.11084,
+     "lon": 8.68504,
+     "address": "Domplatz 1",
+     "website": "https://dommuseum-frankfurt.de/",
+     "openingHours": "Tu-Fr 10:00-17:00; Sa,Su 11:00-17:00; Mo off",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/5308338523",
+     "name": "Fotografie Forum Frankfurt",
+     "lat": 50.11123,
+     "lon": 8.68255,
+     "website": "https://www.fffrankfurt.org/",
+     "openingHours": "Tu, Th-Su 11:00-18:00; We 11:00-20:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/10587495568",
+     "name": "Kai Middendorff Galerie",
+     "lat": 50.10839,
+     "lon": 8.65942,
+     "address": "Niddastraße 84",
+     "website": "http://www.kaimiddendorff.com/",
+     "openingHours": "We-Fr 14:00-18:30; Sa 11:30-16:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/715551908",
+     "name": "Struwwelpeter-Museum",
+     "lat": 50.111,
+     "lon": 8.68374,
+     "address": "Hinter dem Lämmchen 2-4",
+     "website": "https://www.struwwelpeter-museum.de/",
+     "openingHours": "Tu-Su 11:00-18:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/55456112",
+     "name": "Nebbiensches Gartenhaus",
+     "lat": 50.11752,
+     "lon": 8.67644,
+     "openingHours": "We-Su 12:00-18:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/843464889",
+     "name": "Art Foyer, DZ BANK [Kunstsammlung]",
+     "lat": 50.11022,
+     "lon": 8.65951,
+     "address": "Friedrich-Ebert-Anlage",
+     "website": "https://kunststiftungdzbank.de/",
+     "openingHours": "Tu-Sa 11:00-19:00"
+    },
+    {
+     "id": "node/10587495569",
+     "name": "Bernhard Knaus Fine Art",
+     "lat": 50.10806,
+     "lon": 8.6596,
+     "address": "Niddastraße 84",
+     "website": "https://bernhardknaus.com/",
+     "openingHours": "Tu-Fr 13:00-18:00; Sa 11:00-15:00"
+    },
+    {
+     "id": "node/2671107504",
+     "name": "Bibelhaus Erlebnis Museum",
+     "lat": 50.10536,
+     "lon": 8.68165,
+     "address": "Metzlerstraße 19",
+     "website": "https://www.bibelhaus-frankfurt.de/",
+     "openingHours": "Tu-Sa 10:00-17:00; Su 14:00-18:00"
+    },
+    {
+     "id": "node/11206320821",
+     "name": "Deutsche Börse Visitors Center",
+     "lat": 50.11512,
+     "lon": 8.67794,
+     "address": "Börsenplatz 4",
+     "website": "https://www.boerse-frankfurt.de/besuch",
+     "openingHours": "Mo-Fr 11:00-12:00,13:00-14:00,15:00-16:00; PH closed"
+    },
+    {
+     "id": "node/10137308400",
+     "name": "Dialogmuseum",
+     "lat": 50.11312,
+     "lon": 8.67869,
+     "website": "https://dialogmuseum.de/",
+     "openingHours": "Tu 09:00-13:00; We-Fr 09:00-17:30; Sa 10:00-18:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1719597181",
+     "name": "Domturm",
+     "lat": 50.11067,
+     "lon": 8.68486,
+     "website": "https://www.dom-frankfurt.de/dom/dommuseum",
+     "openingHours": "Apr-Oct: 09:00-18:00; Nov-Mar: 11:00-17:00; Nov 01-Mar 06: Tu,We off"
+    },
+    {
+     "id": "node/1745231328",
+     "name": "Main Tower",
+     "lat": 50.11241,
+     "lon": 8.67217,
+     "website": "https://www.maintower.de/",
+     "openingHours": "Mar Su[-1] - Oct Su[-1] - 1 day: Mo-Th,Su,PH 10:00-21:00; Fr,Sa 10:00-23:00; Oct Su[-1] - Mar Su[-1] - 1 day: Mo-Th,Su,PH 10:00-19:00; Fr,Sa 10:00-21:00"
+    },
+    {
+     "id": "node/13955651601",
+     "name": "Great view on Frankfurt Skyline",
+     "lat": 50.10781,
+     "lon": 8.69264
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/930997948",
+     "name": "aiso",
+     "lat": 50.11496,
+     "lon": 8.68164,
+     "website": "https://www.asiagourmet.de/aiso.htm",
+     "openingHours": "Mo-Sa 10:00-22:00; Su 12:00-22:00",
+     "cuisine": "japanese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/1652652105",
+     "name": "Alebrijes - Latin plant based food",
+     "lat": 50.12581,
+     "lon": 8.69033,
+     "address": "Neuhofstraße 15",
+     "website": "https://www.alebrijesws.de/",
+     "openingHours": "Tu-Sa 17:00-22:00; Su 17:00-21:00",
+     "cuisine": "mexican, peruvian",
+     "detailed": true
+    },
+    {
+     "id": "node/946491120",
+     "name": "Allgaiers",
+     "lat": 50.1139,
+     "lon": 8.66224,
+     "website": "https://www.allgaiers.eu/",
+     "openingHours": "Tu-Sa 17:30-22:00; Su,Mo off; PH off",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/1033446750",
+     "name": "Alte Kanzlei",
+     "lat": 50.11312,
+     "lon": 8.6656,
+     "address": "Niedenau 50",
+     "website": "https://www.altekanzlei.eu/",
+     "openingHours": "Mo-Fr 11:30-15:00,18:00-22:30; Sa 18:00-22:30;Su,PH \"nur an Messetagen\"",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/504317537",
+     "name": "Apfelweinwirtschaft Fichtekränzi",
+     "lat": 50.10462,
+     "lon": 8.68905,
+     "address": "Wallstraße 5",
+     "website": "http://www.fichtekraenzi.de/",
+     "openingHours": "Mo-Su,PH 17:00-18:00+",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/504316686",
+     "name": "Apfelweinwirtschaft Wagner",
+     "lat": 50.10061,
+     "lon": 8.68225,
+     "address": "Schweizer Straße 71",
+     "website": "https://www.apfelwein-wagner.com/",
+     "openingHours": "11:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/3241178322",
+     "name": "Arkadius",
+     "lat": 50.11571,
+     "lon": 8.66277,
+     "address": "Feuerbachstraße 25",
+     "website": "https://www.restaurantarkadius-frankfurtammain.de/",
+     "openingHours": "Mo-Fr 11:00-15:00,18:00-22:00; Sa 18:00-22:00",
+     "cuisine": "polish",
+     "detailed": true
+    },
+    {
+     "id": "node/4004775094",
+     "name": "Aroydee",
+     "lat": 50.11664,
+     "lon": 8.68044,
+     "address": "Stiftstraße 34",
+     "website": "https://www.aroydee.de/",
+     "openingHours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 14:00-22:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/543662530",
+     "name": "Atschel",
+     "lat": 50.10484,
+     "lon": 8.68893,
+     "address": "Wallstraße 7",
+     "website": "https://www.atschel.de/",
+     "openingHours": "Mo-We 17:00-23:30, Th-Su 12:00-24:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/3133897954",
+     "name": "Babam",
+     "lat": 50.10806,
+     "lon": 8.67125,
+     "address": "Münchener Straße 11",
+     "website": "https://babam.de/",
+     "openingHours": "Mo-Fr 11:30-22:00; Sa-Su 12:00-22:00",
+     "cuisine": "persian",
+     "detailed": true
+    },
+    {
+     "id": "node/290629238",
+     "name": "Bangkok",
+     "lat": 50.11725,
+     "lon": 8.69595,
+     "website": "http://www.bangkok-restaurant.com/",
+     "openingHours": "Mo-Su 12:00-15:00,18:00-23:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/1469617564",
+     "name": "Bibis Baguettes & Burgers",
+     "lat": 50.12718,
+     "lon": 8.68508,
+     "website": "https://www.bibibabu.de/",
+     "openingHours": "Mo-Fr 11:30-21:30; Sa 12:00-21:30; Su 14:00-20:30; Tu off",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/2661220035",
+     "name": "Biondo",
+     "lat": 50.10288,
+     "lon": 8.67865,
+     "website": "https://restaurant-biondo.de/",
+     "openingHours": "Tu-Sa 17:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2830340731",
+     "name": "Bistro Bornheim",
+     "lat": 50.11951,
+     "lon": 8.6942,
+     "website": "https://diekooperative.de/bistro-catering/#bornheim",
+     "openingHours": "Fr,Sa 12:00-16:00; Th 12:00-19:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/1960365088",
+     "name": "BLOCK HOUSE",
+     "lat": 50.11845,
+     "lon": 8.66301,
+     "address": "Wiesenau 1",
+     "website": "https://www.block-house.de/restaurants/frankfurt-main/westend/",
+     "openingHours": "Mo-Th,Su 12:00-22:00; Fr-Sa 12:00-23:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/803016467",
+     "name": "Bombay Palace",
+     "lat": 50.10367,
+     "lon": 8.69006,
+     "website": "https://www.bombaypalace.de/",
+     "openingHours": "Tu-Sa 18:00-23:00; Su 17:30-22:00; Mo off",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/1487407200",
+     "name": "Brasserie du Sud",
+     "lat": 50.10088,
+     "lon": 8.68068,
+     "website": "https://brasserie-du-sud.de/",
+     "openingHours": "Mo-Su 09:00-00:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2970680828",
+     "name": "Brizzis",
+     "lat": 50.12101,
+     "lon": 8.67506,
+     "website": "https://www.brizzis.com/",
+     "openingHours": "Mo-We 08:00-18:00; Th-Sa 08:00-21:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/290629239",
+     "name": "Buchholz",
+     "lat": 50.11837,
+     "lon": 8.69725,
+     "address": "Sandweg 38",
+     "website": "https://buchholz-restaurant.de/",
+     "openingHours": "Mo,We-Sa 16:30-23:00; PH,Su 11:30-22:00; Tu off",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/317082875",
+     "name": "Calmacaos",
+     "lat": 50.10876,
+     "lon": 8.67057,
+     "address": "Kaiserstraße 39",
+     "website": "https://calmacaos.de/",
+     "openingHours": "11:30-22:00; Fr,Sa 11:30-23:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/843510962",
+     "name": "Cantina Divino",
+     "lat": 50.11244,
+     "lon": 8.6659,
+     "address": "Zimmerweg 8",
+     "website": "https://www.cantina-divino.com/",
+     "openingHours": "Mo-Fr 12:00-15:00, 18:00-00:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/305591770",
+     "name": "Carte blanche",
+     "lat": 50.12615,
+     "lon": 8.69229,
+     "address": "Egenolffstraße 39",
+     "website": "http://www.carteblanche-ffm.de/",
+     "openingHours": "We-Su 18:00-23:00; Mo,Tu off",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/1976912935",
+     "name": "Central Grill",
+     "lat": 50.10788,
+     "lon": 8.67054,
+     "website": "https://www.centralgrill-frankfurt.de/",
+     "openingHours": "Mo-Sa 07:00-03:00; Su 07:00-01:00",
+     "cuisine": "turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/924250801",
+     "name": "Centro Sabatini",
+     "lat": 50.11449,
+     "lon": 8.67424,
+     "website": "https://www.centro-sabatini.de/",
+     "openingHours": "Mo-Sa 11:30-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4021621289",
+     "name": "China Leckerbissen",
+     "lat": 50.11716,
+     "lon": 8.68602,
+     "address": "Alte Gasse 4",
+     "website": "https://www.chinaleckerbissen.de/",
+     "openingHours": "Mo-Fr 11:30-21:00; Sa-Su,PH off",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/4004794554",
+     "name": "China Restaurant Yung 容龍酒家",
+     "lat": 50.12006,
+     "lon": 8.67998,
+     "address": "Oeder Weg 32",
+     "website": "https://chinayung.de/",
+     "openingHours": "Tu-Fr 12:00-15:00,18:00-22:00; Sa,Su 13:00-22:00",
+     "cuisine": "cantonese, chinese, dim sum",
+     "detailed": true
+    },
+    {
+     "id": "node/3610389327",
+     "name": "Coq au Vin",
+     "lat": 50.10504,
+     "lon": 8.68802,
+     "address": "Wallstraße 19",
+     "website": "https://www.coq-au-vin.de/",
+     "openingHours": "Tu-Su 17:30-22:30;Mo off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/3932249669",
+     "name": "Cucina delle Grazie",
+     "lat": 50.11084,
+     "lon": 8.68458,
+     "address": "Domplatz 3",
+     "website": "https://www.cucina-delle-grazie.de/",
+     "openingHours": "Mo-Sa 10:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2683677756",
+     "name": "Dauth-Schneider",
+     "lat": 50.10487,
+     "lon": 8.69024,
+     "website": "http://www.dauth-schneider.de/",
+     "openingHours": "PH,Mo-Su 11:30-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/282654608",
+     "name": "Demera",
+     "lat": 50.12661,
+     "lon": 8.67447,
+     "website": "http://demera-frankfurt.com/",
+     "openingHours": "Sa 17:00-01:00; Mo off, Su 15:00-23:00, Tu-Fr 17:00-23:00",
+     "cuisine": "ethiopian",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4036640659",
+     "name": "Bizziice Nordend",
+     "lat": 50.12323,
+     "lon": 8.68798,
+     "address": "Koselstraße 42",
+     "website": "https://bizzi-ice.com/",
+     "openingHours": "May-Sep: Mo-Su 11:00-12:00; Oct-Apr: Mo-Su 11:00-19:00",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/11998366098",
+     "name": "Bunca Roaster",
+     "lat": 50.12047,
+     "lon": 8.69643,
+     "address": "Berger Straße 52",
+     "website": "https://bunca.de/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa-Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2672718902",
+     "name": "cà phê, ơi!",
+     "lat": 50.09996,
+     "lon": 8.68155,
+     "website": "https://www.capheoi.de/",
+     "openingHours": "Mo-Su 09:30-18:00",
+     "cuisine": "breakfast, vietnamese",
+     "detailed": true
+    },
+    {
+     "id": "node/929816395",
+     "name": "Cafe Extrablatt",
+     "lat": 50.11667,
+     "lon": 8.67941,
+     "address": "Große Eschenheimer Straße 45",
+     "website": "https://cafe-extrablatt.de/standorte/details/cafe-extrablatt-frankfurt-eschenheimer-tor",
+     "openingHours": "Fr,Sa 09:00-02:00, Mo-Th 09:00-01:00, Su 10:00-01:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7147436207",
+     "name": "Cafe Faleyda",
+     "lat": 50.12073,
+     "lon": 8.69565,
+     "address": "Merianplatz 4",
+     "website": "https://www.faleyda.de/",
+     "openingHours": "Mo-Fr 11:00-19:00; Sa-Su 10:00-20:00",
+     "cuisine": "cafe, cake, frozen yogurt, waffle",
+     "detailed": true
+    },
+    {
+     "id": "node/463191856",
+     "name": "Café Laumer",
+     "lat": 50.11805,
+     "lon": 8.66245,
+     "address": "Bockenheimer Landstraße 67",
+     "website": "http://cafelaumer.de/",
+     "openingHours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
+     "cuisine": "breakfast, cake, german, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/744783302",
+     "name": "Café Metropol",
+     "lat": 50.11023,
+     "lon": 8.68554,
+     "address": "Weckmarkt 13-15",
+     "website": "https://www.metropolcafe.de/",
+     "openingHours": "Tu-Sa 10:00-23:00; Su 10:00-22:00",
+     "cuisine": "italian, asian, regional, indian",
+     "detailed": true
+    },
+    {
+     "id": "node/9599131756",
+     "name": "Cafe Tasse",
+     "lat": 50.10505,
+     "lon": 8.68889,
+     "address": "Wallstraße 10",
+     "website": "http://www.cafetasse-ffm.de/",
+     "openingHours": "Tu-Th,Su 11:00-18:00; Fr,Sa 10:00-19:00;Mo off",
+     "cuisine": "coffee shop, cake, quiche, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/8705269917",
+     "name": "Casa de Portugal",
+     "lat": 50.10449,
+     "lon": 8.68708,
+     "website": "https://www.casadeportugal.de/",
+     "openingHours": "Mo-Fr 11:00-19:00; Sa 10:00-16:00",
+     "cuisine": "breakfast, cake, coffee shop, portuguese",
+     "detailed": true
+    },
+    {
+     "id": "node/9994430717",
+     "name": "Chinaski Tagesbar",
+     "lat": 50.11533,
+     "lon": 8.67046,
+     "address": "Bockenheimer Anlage 1",
+     "website": "https://chinaskitagesbar.de/",
+     "openingHours": "Mo 08:00-17:00, Tu-Fr 08:00-24:00, Sa 09:00-24:00, Su 09:00-17:00",
+     "cuisine": "breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/575639220",
+     "name": "Club Voltaire",
+     "lat": 50.11511,
+     "lon": 8.67397,
+     "address": "Kleine Hochstraße 5",
+     "website": "https://www.club-voltaire.de/",
+     "openingHours": "Mo-Su 18:00-00:00",
+     "cuisine": "tarte flambee",
+     "detailed": true
+    },
+    {
+     "id": "node/1333449451",
+     "name": "Coffee Fellows",
+     "lat": 50.11089,
+     "lon": 8.67541,
+     "website": "https://www.coffee-fellows.com/",
+     "openingHours": "Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su 09:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3206428962",
+     "name": "Coffee Fellows",
+     "lat": 50.10642,
+     "lon": 8.66427,
+     "address": "Am Hauptbahnhof",
+     "website": "https://www.coffee-fellows.com/",
+     "openingHours": "Mo-Su 06:30-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3832612448",
+     "name": "ConditCouture Café",
+     "lat": 50.10936,
+     "lon": 8.68198,
+     "address": "Fahrtor 1",
+     "website": "https://www.conditcouture.com/",
+     "openingHours": "Mo-Su 11:00-18:00",
+     "cuisine": "cake",
+     "detailed": true
+    },
+    {
+     "id": "way/293705681",
+     "name": "DB Lounge",
+     "lat": 50.1069,
+     "lon": 8.66384,
+     "website": "https://www.bahn.de/service/zug/db-lounge",
+     "openingHours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/9055765917",
+     "name": "Drei Kaffeebar",
+     "lat": 50.11148,
+     "lon": 8.68627,
+     "address": "Fahrgasse 23",
+     "website": "https://instagram.com/drei.kaffeebar",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1581300013",
+     "name": "Eis Cafe Olimpio",
+     "lat": 50.12214,
+     "lon": 8.68102,
+     "address": "Oeder Weg 58",
+     "website": "https://eiscafe-olimpio.de/",
+     "openingHours": "Tu-Sa 12:00-21:30; Su,PH 12:00-21:30",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/1771752991",
+     "name": "Eis Fontanella",
+     "lat": 50.10891,
+     "lon": 8.67122,
+     "address": "Kaiserstraße 35",
+     "website": "https://www.eisfontanella-frankfurt.de/",
+     "openingHours": "Mo-Th 11:00-21:30; Fr-Sa 11:00-22:00; Su 12:00-21:30",
+     "cuisine": "ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/4195048002",
+     "name": "Glauburg Café",
+     "lat": 50.12702,
+     "lon": 8.68818,
+     "address": "Glauburgstraße 28",
+     "website": "https://www.glauburg-cafe.de/",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "cuisine": "sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/2541357814",
+     "name": "Gudes",
+     "lat": 50.12611,
+     "lon": 8.69172,
+     "address": "Friedberger Landstraße 107",
+     "website": "http://gudes-frankfurt.de/",
+     "openingHours": "Mo-Fr 13:00-23:00; Sa 10:00-23:00; Su 10:00-22:00",
+     "cuisine": "breakfast, coffee shop, german, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/12273394259",
+     "name": "Happy Coffee Moments",
+     "lat": 50.10341,
+     "lon": 8.66603,
+     "address": "Wilhelm-Leuschner-Straße 79",
+     "website": "https://www.happycoffeemoments.de/",
+     "openingHours": "Mo-Su 08:30-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3818834727",
+     "name": "Hoppenworth & Ploch",
+     "lat": 50.12477,
+     "lon": 8.69198,
+     "website": "https://hoppenworth-ploch.de/",
+     "openingHours": "Mo-Fr 08:00-19:00; Sa,Su 09:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6911937330",
+     "name": "Hoppenworth & Ploch",
+     "lat": 50.11092,
+     "lon": 8.68371,
+     "address": "Markt 22",
+     "website": "https://hoppenworth-ploch.de/",
+     "openingHours": "PH,Su-Th 09:00-19:00; Fr,Sa 09:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/482615656",
+     "name": "Hucks Lieblingsplatz",
+     "lat": 50.11858,
+     "lon": 8.66209,
+     "address": "Bockenheimer Landstraße 66",
+     "website": "https://www.baeckerei-huck.de/filialen",
+     "openingHours": "Mo-Su 07:00-19:00",
+     "cuisine": "cafe, bakery",
+     "detailed": true
+    },
+    {
+     "id": "node/741650419",
+     "name": "Iimori Pâtisserie",
+     "lat": 50.11135,
+     "lon": 8.68303,
+     "address": "Braubachstraße 24",
+     "website": "https://www.iimori.de/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/9878950990",
+     "name": "Isabella - glutenfreie Pâtisserie",
+     "lat": 50.11225,
+     "lon": 8.68051,
+     "address": "Neue Kräme 29",
+     "website": "https://shop.isabella-patisserie.de/",
+     "openingHours": "Mo-Fr 09:30-18:00; Sa 10:00-18:00",
+     "cuisine": "cake, coffee shop, tea",
+     "detailed": true
+    },
+    {
+     "id": "node/1917412655",
+     "name": "Le Petit Cafe",
+     "lat": 50.11597,
+     "lon": 8.6975,
+     "website": "http://cafe-bohne.info/",
+     "openingHours": "Mo-Fr 08:00-18:00, Sa-Su 08:00-19:00; PH unknown \"probably open with same opening hours as Sunday, but not specified on website\"",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/2678904921",
+     "name": "Nativo Coffee & Shop Sachsenhausen",
+     "lat": 50.10541,
+     "lon": 8.68755,
+     "address": "Wallstraße 26",
+     "website": "https://www.nativokaffee.de/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10951265489",
+     "name": "Retablo",
+     "lat": 50.10389,
+     "lon": 8.68874,
+     "address": "Schifferstraße 10",
+     "website": "https://retablocoffee.de/",
+     "openingHours": "Mo-Th 08:00-17:00; Fr 08:00-22:00; Sa 10:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3479521855",
+     "name": "roseli",
+     "lat": 50.11143,
+     "lon": 8.67852,
+     "address": "Weißadlergasse 9",
+     "website": "http://www.roseli.net/",
+     "openingHours": "Mo-Su 09:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/917930424",
+     "name": "4 Corners",
+     "lat": 50.11504,
+     "lon": 8.69277,
+     "address": "Zeil 10",
+     "website": "http://www.fourcornerspub.de/",
+     "openingHours": "Mo-Th 17:00-01:00, Fr 16:00-03:00, Sa 12:00-03:00, Su 12:00-01:00",
+     "cuisine": "pub, indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2683677764",
+     "name": "Daheim bei den drei Steubern",
+     "lat": 50.10517,
+     "lon": 8.69189,
+     "address": "Dreieichstraße 28",
+     "website": "https://www.drei-steubern.de/",
+     "openingHours": "Tu-Sa 17:00-24:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/7222862085",
+     "name": "J'epoca SAKAbar",
+     "lat": 50.10519,
+     "lon": 8.68863,
+     "website": "http://jepoca-sakabar.eu/index.php/de/",
+     "openingHours": "Mo-Th 18:30-23:00; Fr 18:30-01:00; Sa 18:00-01:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1910716481",
+     "name": "Mampf-Jazz",
+     "lat": 50.12001,
+     "lon": 8.69898,
+     "website": "http://www.mampf-jazz.de/",
+     "openingHours": "Mo-Su 18:00+",
+     "cuisine": "german, local",
+     "detailed": true
+    },
+    {
+     "id": "node/6110518185",
+     "name": "Pirosmani Cigar-Lounge & Bar",
+     "lat": 50.11394,
+     "lon": 8.69502,
+     "address": "Friedberger Anlage 1-3",
+     "website": "http://cigar-lounge-ffm.de/",
+     "openingHours": "Th-Sa 20:00-02:00",
+     "cuisine": "barbecue",
+     "detailed": true
+    },
+    {
+     "id": "node/540613359",
+     "name": "The Fox and Hound",
+     "lat": 50.11132,
+     "lon": 8.66309,
+     "address": "Niedenau 2",
+     "website": "https://www.foxpub.de/",
+     "openingHours": "Tu-Fr 16:00-01:00; Sa 15:00-01:00; Su 12:00-22:00; Mo 10:00-00:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/1419906447",
+     "name": "Wir Komplizen",
+     "lat": 50.1262,
+     "lon": 8.69508,
+     "address": "Egenolffstraße 17",
+     "website": "https://www.wir-komplizen.de/",
+     "openingHours": "Mo-Tu off; We,Th 18:00-23:00; Fr,Sa 18:00-01:00; Su 10:00-15:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/2626223865",
+     "name": "Zur Kutscherklause",
+     "lat": 50.11172,
+     "lon": 8.69952,
+     "address": "Ostendstraße 47",
+     "website": "https://www.kutscherklause.de/",
+     "openingHours": "Mo-Th 12:00-23:00; Fr,Sa 12:00-24:00; Su 13:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/265561607",
+     "name": "12 Apostel",
+     "lat": 50.11739,
+     "lon": 8.68635,
+     "address": "Rosenbergerstraße 1",
+     "website": "https://12aposteln-frankfurt.de/",
+     "openingHours": "Mo-Su 11:30-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/741650429",
+     "name": "Alten Limpurg",
+     "lat": 50.11023,
+     "lon": 8.68171,
+     "website": "https://www.alten-limpurg.com/",
+     "openingHours": "00:00-01:00,09:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10100697317",
+     "name": "amp",
+     "lat": 50.10898,
+     "lon": 8.67169,
+     "website": "https://ampyourself.de/",
+     "openingHours": "Su-We 17:00-01:00; Th 17:00-03:00; Fr 18:30-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12248159301",
+     "name": "Balalaika",
+     "lat": 50.10348,
+     "lon": 8.68985,
+     "website": "https://www.facebook.com/p/Balalaika-100063968976603/",
+     "openingHours": "Mo-Th 20:00-01:00; Fr-Sa 20:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/634222443",
+     "name": "Birmingham Pub",
+     "lat": 50.11277,
+     "lon": 8.68767,
+     "address": "Battonnstraße 50",
+     "openingHours": "Mo-Fr 17:00-06:00, Sa,Su 12:00-06:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/269595656",
+     "name": "Bootshaus YACHTKLUB",
+     "lat": 50.10756,
+     "lon": 8.689,
+     "address": "Deutschherrnufer",
+     "website": "http://www.yachtklub.org/",
+     "openingHours": "We-Fr 16:00+; Sa,Su 14:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/3770449161",
+     "name": "Bristol Bar",
+     "lat": 50.10782,
+     "lon": 8.65855,
+     "address": "Ludwigstraße 15",
+     "website": "http://www.bristol-bar.com/",
+     "openingHours": "08:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1598422041",
+     "name": "Bull and Bear",
+     "lat": 50.11504,
+     "lon": 8.67838,
+     "address": "Schillerstraße 11",
+     "website": "https://bullandbear.de/",
+     "openingHours": "Mo-Th 08:00-01:00, Fr,Sa 08:00-02:00, Su,PH 09:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2706991262",
+     "name": "Bummelbahn",
+     "lat": 50.09428,
+     "lon": 8.67985,
+     "address": "Mörfelder Landstraße 167",
+     "openingHours": "Mo-Su 16:00-00:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "node/924249530",
+     "name": "Central Park Corner",
+     "lat": 50.11491,
+     "lon": 8.67363,
+     "address": "Große Bockenheimer Straße 52",
+     "website": "https://www.centralparkcorner.de/",
+     "openingHours": "Mo-Th 08:00-02:00; Fr-Sa 08:00-03:00; Su 09:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/631931158",
+     "name": "Chinaski Club",
+     "lat": 50.11527,
+     "lon": 8.67023,
+     "address": "Bockenheimer Landstraße 3",
+     "website": "https://chinaskiclub.de/",
+     "openingHours": "We-Sa 22:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2830197208",
+     "name": "Das Nord",
+     "lat": 50.11997,
+     "lon": 8.69892,
+     "website": "http://www.dasnordhochzwei.de/",
+     "openingHours": "Th 18:30-01:00, Fr,Sa 18:30-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1426828318",
+     "name": "Déjà Vu - Shisha Lounge",
+     "lat": 50.10961,
+     "lon": 8.68619,
+     "address": "Mainkai 10",
+     "website": "http://dejavu-lounge.de/",
+     "openingHours": "Mo-Th, Su 15:00 - 01:00; Fr-Sa, PH 15:00 - 04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2535534891",
+     "name": "die rote bar",
+     "lat": 50.10962,
+     "lon": 8.68658,
+     "address": "Mainkai 7",
+     "website": "http://www.rotebar.com/",
+     "openingHours": "Mo-Su 20:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1581300018",
+     "name": "Die Weinbar",
+     "lat": 50.12021,
+     "lon": 8.6803,
+     "address": "Jahnstraße 51",
+     "website": "http://www.die-weinbar-frankfurt.de/",
+     "openingHours": "Mo-Sa 17:30-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6327724165",
+     "name": "East Grape",
+     "lat": 50.11258,
+     "lon": 8.70571,
+     "website": "https://eastgrape.de/",
+     "openingHours": "Tu-Fr 17:00-24:00, Sa 15:00-24:00, Su 15:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/315864572",
+     "name": "Gaststätte Moseleck",
+     "lat": 50.10714,
+     "lon": 8.66759,
+     "address": "Moselstraße 21",
+     "website": "http://www.moseleck-ffm.de/",
+     "openingHours": "Mo-Su 06:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12066743024",
+     "name": "Gregor's Boutique Vinothek",
+     "lat": 50.1172,
+     "lon": 8.66483,
+     "address": "Bockenheimer Landstraße 47",
+     "website": "https://gregors-wein.de/",
+     "openingHours": "Mo-Th 16:00-23:00; Fr 16:00-24:00; Sa 14:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9098641317",
+     "name": "Harmonie Bar Frankfurt",
+     "lat": 50.10503,
+     "lon": 8.68983,
+     "website": "https://harmonie-bar.de/",
+     "openingHours": "Mo-Th 17:00-03:00; Fr-Sa 17:00-05:00; Su 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5071289401",
+     "name": "Hunky Dory Bar",
+     "lat": 50.10387,
+     "lon": 8.66557,
+     "address": "Baseler Straße 10",
+     "website": "https://www.hunkydorybar.com/",
+     "openingHours": "We-Th 18:00-01:00, Fr 18:00-02:00, Sa 19:00-02:00; PH off",
+     "detailed": true
+    },
+    {
+     "id": "node/6504183535",
+     "name": "HUQ-UP",
+     "lat": 50.11385,
+     "lon": 8.68255,
+     "website": "https://www.huq-up.de/",
+     "openingHours": "Mo-We 14:00-02:00; Th-Sa 14:00-04:00; Su 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/603128477",
+     "name": "Kaibo 75 Wein Bier Häppchen",
+     "lat": 50.123,
+     "lon": 8.67772,
+     "openingHours": "Mo-Fr 17:00-23:00",
+     "cuisine": "spanish, tapas",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/10100697417",
+     "name": "Elferclub",
+     "lat": 50.10567,
+     "lon": 8.69018,
+     "address": "Kleine Rittergasse 14-20",
+     "website": "https://elferclub.de/",
+     "openingHours": "We 19:00-01:00; Th-Fr 23:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10100715117",
+     "name": "FREUD",
+     "lat": 50.11382,
+     "lon": 8.68259,
+     "website": "https://freud.zone/",
+     "openingHours": "Th-Fr 23:00-08:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4233671530",
+     "name": "Gibson",
+     "lat": 50.11415,
+     "lon": 8.68221,
+     "address": "Zeil 85-93",
+     "website": "https://www.gibson-club.de/",
+     "openingHours": "Th 21:00-04:00,Fr 23:00-05:00,Sa 23:00-05:00, PH -1 day 23:00-05:00, Mo-Fr 10:00-17:00 \"office\"",
+     "detailed": true
+    },
+    {
+     "id": "node/921136740",
+     "name": "Jazzkeller",
+     "lat": 50.11437,
+     "lon": 8.67374,
+     "address": "Kleine Bockenheimer Straße 18a",
+     "website": "https://jazzkeller.de/",
+     "openingHours": "\"Geöffnet nur bei Veranstaltungen, Mittwoch Jam Session, Freitag: Swingin'-Latin-Funky DanceNite 22:00 - 03:00 Konzertbeginn: Wochentags, einschl. Samstag um 21:00 Uhr, Sonntags 20:00 Uhr, öffnen 1 Std. v. Konzertbeginn (Freitags: 22:00)\"",
+     "detailed": true
+    },
+    {
+     "id": "node/4045825089",
+     "name": "Nachtleben (Club)",
+     "lat": 50.11408,
+     "lon": 8.68751,
+     "address": "Kurt-Schumacher-Straße 45",
+     "website": "https://batschkapp.tickets.de/de/customer/blogs/index/2-Nachtleben_Partys",
+     "openingHours": "Mo-Th 11:00-01:00, Fr,Sa 11:00-04:00, Su,PH 19:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3051044140",
+     "name": "PRACHT",
+     "lat": 50.10952,
+     "lon": 8.66353,
+     "address": "Niddastraße 54",
+     "website": "https://pracht.club/",
+     "openingHours": "Th 22:00-04:00, Fr-Sa 22:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3945866846",
+     "name": "The Cave",
+     "lat": 50.11575,
+     "lon": 8.68313,
+     "address": "Brönnerstraße 11",
+     "website": "http://the-cave.rocks/",
+     "openingHours": "Su-We off; Th-Sa 22:00+; PH unknown",
+     "detailed": true
+    },
+    {
+     "id": "node/11333700969",
+     "name": "TOKONOMA",
+     "lat": 50.10866,
+     "lon": 8.67073,
+     "address": "Gutleutstraße 320",
+     "website": "https://www.tokonoma.club/",
+     "openingHours": "Th-Fr 23:00-06:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5725284122",
+     "name": "Mantis Roofgarden",
+     "lat": 50.11296,
+     "lon": 8.67943,
+     "website": "http://www.mantis-ffm.de/"
+    },
+    {
+     "id": "node/4557966289",
+     "name": "Orange Peel",
+     "lat": 50.10874,
+     "lon": 8.67068,
+     "website": "https://www.orange-peel.de/"
+    },
+    {
+     "id": "node/5437228111",
+     "name": "Pik Dame",
+     "lat": 50.10893,
+     "lon": 8.66726,
+     "address": "Elbestraße 31",
+     "website": "https://www.pikdamefrankfurt.com/pik"
+    },
+    {
+     "id": "node/4856249092",
+     "name": "Ponyhof",
+     "lat": 50.10527,
+     "lon": 8.69109,
+     "address": "Klappergasse 16",
+     "website": "https://ponyhof-club.de/"
+    },
+    {
+     "id": "node/918407798",
+     "name": "Silbergold",
+     "lat": 50.11547,
+     "lon": 8.69125,
+     "address": "Heiligkreuzgasse 22",
+     "website": "https://www.silbergold-club.de/"
+    },
+    {
+     "id": "node/5430554423",
+     "name": "Velvet Club",
+     "lat": 50.10939,
+     "lon": 8.67552,
+     "openingHours": "Mo,We 22:00-04:00; Fr,Sa 23:00-05:00"
+    },
+    {
+     "id": "way/440183549",
+     "name": "Bahnhofs Musik-local",
+     "lat": 50.09973,
+     "lon": 8.68599
+    },
+    {
+     "id": "node/10776366405",
+     "name": "HouseBar55",
+     "lat": 50.1101,
+     "lon": 8.66603
+    },
+    {
+     "id": "node/13574237842",
+     "name": "In Time",
+     "lat": 50.11353,
+     "lon": 8.69123
+    },
+    {
+     "id": "node/1224405009",
+     "name": "La Louve",
+     "lat": 50.11611,
+     "lon": 8.68307,
+     "address": "Brönnerstraße 17"
+    },
+    {
+     "id": "node/430298631",
+     "name": "Oberbayern",
+     "lat": 50.10552,
+     "lon": 8.69
+    },
+    {
+     "id": "node/431266480",
+     "name": "XO Disco Club",
+     "lat": 50.10568,
+     "lon": 8.6902
+    }
+   ]
+  }
+ }
+}

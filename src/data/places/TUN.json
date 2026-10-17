@@ -1,0 +1,925 @@
+{
+ "version": 1,
+ "cityCode": "TUN",
+ "fetchedAt": "2026-10-17T00:06:58.536Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Panoramique_du_centre_de_Tunis_%283197369985%29_%28cropped%29.jpg/1280px-Panoramique_du_centre_de_Tunis_%283197369985%29_%28cropped%29.jpg",
+  "width": 1280,
+  "height": 745,
+  "author": "Citizen59 from Tunis, Tunisie",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Panoramique_du_centre_de_Tunis_(3197369985)_(cropped).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/95197171",
+     "name": "مدينة تونس العتيقة",
+     "lat": 36.7986,
+     "lon": 10.17106,
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/109942104",
+     "name": "باب الجديد",
+     "lat": 36.79245,
+     "lon": 10.17113,
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/3682664995",
+     "name": "المعهد الوطني للتراث بتونس",
+     "lat": 36.79567,
+     "lon": 10.17057,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/95197173",
+     "name": "تربة الباي",
+     "lat": 36.79366,
+     "lon": 10.17312,
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/5668859929",
+     "name": "قصر صاحب الطابع",
+     "lat": 36.8078,
+     "lon": 10.16739,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/4962438745",
+     "name": "الرشيدية",
+     "lat": 36.7984,
+     "lon": 10.16968,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "relation/1465965",
+     "name": "الوزارة الأولى",
+     "lat": 36.79757,
+     "lon": 10.16922,
+     "address": "نهج القصبة",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/379587676",
+     "name": "دار باش حامبة",
+     "lat": 36.79621,
+     "lon": 10.17344,
+     "address": "Rue Bach Hamba 9",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "relation/1552763",
+     "name": "دار بن عبد الله",
+     "lat": 36.794,
+     "lon": 10.17381,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/95197159",
+     "name": "دار عثمان",
+     "lat": 36.79495,
+     "lon": 10.17428,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "relation/3881987",
+     "name": "Club Culturel Taher Haddad",
+     "lat": 36.80208,
+     "lon": 10.16817,
+     "address": "Rue du Tribunal 20",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/1103582388",
+     "name": "قصر خزندار",
+     "lat": 36.80872,
+     "lon": 10.16769,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/380570838",
+     "name": "قصر خير الدين باشا",
+     "lat": 36.80168,
+     "lon": 10.16847,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/5668791876",
+     "name": "Dâr Bou Hachem",
+     "lat": 36.79862,
+     "lon": 10.17193,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/5668454330",
+     "name": "دار الجزيري",
+     "lat": 36.80226,
+     "lon": 10.16825,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/5668725790",
+     "name": "دار الحداد",
+     "lat": 36.79553,
+     "lon": 10.16997,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/5668536175",
+     "name": "دار بن عاشور",
+     "lat": 36.80144,
+     "lon": 10.16711,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/5669215310",
+     "name": "زاوية سيدي إبراهيم الرياحي",
+     "lat": 36.80268,
+     "lon": 10.16801,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "relation/1557521",
+     "name": "Centre National d'Art de la Calligraphie Arabe",
+     "lat": 36.80742,
+     "lon": 10.16628,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/5668791873",
+     "name": "2e Dar Romdane Bey",
+     "lat": 36.8001,
+     "lon": 10.1691
+    },
+    {
+     "id": "way/253063090",
+     "name": "Bataille de Jallaz",
+     "lat": 36.78875,
+     "lon": 10.18104
+    },
+    {
+     "id": "node/5668800806",
+     "name": "Dâr Aghar",
+     "lat": 36.79884,
+     "lon": 10.17228
+    },
+    {
+     "id": "node/5668800808",
+     "name": "Dâr Babouria",
+     "lat": 36.79896,
+     "lon": 10.17229
+    },
+    {
+     "id": "node/5668725799",
+     "name": "Dar Bairam Turki",
+     "lat": 36.7978,
+     "lon": 10.17352
+    },
+    {
+     "id": "node/5668697123",
+     "name": "Dâr Ben Salem",
+     "lat": 36.79415,
+     "lon": 10.17326
+    },
+    {
+     "id": "node/5668725791",
+     "name": "Dar Bribech",
+     "lat": 36.79613,
+     "lon": 10.17269
+    },
+    {
+     "id": "node/5669215307",
+     "name": "Dar el Mestiri",
+     "lat": 36.804,
+     "lon": 10.16888
+    },
+    {
+     "id": "node/5668791866",
+     "name": "Dâr El-'Asfouri",
+     "lat": 36.79817,
+     "lon": 10.1719
+    },
+    {
+     "id": "node/5668800805",
+     "name": "Dâr El-Ayâri",
+     "lat": 36.79899,
+     "lon": 10.17209
+    },
+    {
+     "id": "node/5668800804",
+     "name": "Dâr el-Jnoun",
+     "lat": 36.79899,
+     "lon": 10.1724
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/1552763",
+     "name": "دار بن عبد الله",
+     "lat": 36.794,
+     "lon": 10.17381,
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/1036946012",
+     "name": "متحف العملة",
+     "lat": 36.80466,
+     "lon": 10.18506,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/1263965887",
+     "name": "متحف المالية",
+     "lat": 36.80112,
+     "lon": 10.17831,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/5089226022",
+     "name": "متحف السينما",
+     "lat": 36.79643,
+     "lon": 10.1656,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/9148150382",
+     "name": "Le 32Bis",
+     "lat": 36.79509,
+     "lon": 10.1838,
+     "address": "Rue Ali Ben Gedhahem 32"
+    },
+    {
+     "id": "node/10296641011",
+     "name": "MACAM Tunis",
+     "lat": 36.81055,
+     "lon": 10.18646
+    },
+    {
+     "id": "node/5090400921",
+     "name": "Musée des Timbres",
+     "lat": 36.7969,
+     "lon": 10.17866
+    },
+    {
+     "id": "relation/1555964",
+     "name": "دار معقل الزعيم",
+     "lat": 36.79365,
+     "lon": 10.16437
+    },
+    {
+     "id": "node/5669152954",
+     "name": "متحف العدل وحقوق الإنسان",
+     "lat": 36.79988,
+     "lon": 10.16613
+    },
+    {
+     "id": "node/1103552060",
+     "name": "متحف مدينة تونس",
+     "lat": 36.80162,
+     "lon": 10.1685
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/5422663621",
+     "name": "مقهى بانوراما",
+     "lat": 36.79691,
+     "lon": 10.17042
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/11761027585",
+     "name": "Chez Soi",
+     "lat": 36.81568,
+     "lon": 10.16749,
+     "address": "نهج العربي الكبادي",
+     "website": "https://chezsoi74.tn/",
+     "openingHours": "Mo-Su 09:00-22:00",
+     "cuisine": "pizza, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/6176895487",
+     "name": "Fondouk El Attarine",
+     "lat": 36.79784,
+     "lon": 10.17179,
+     "website": "http://www.fondoukelattarine.com/",
+     "openingHours": "Mo-Fr 10:00-18:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "way/679063831",
+     "name": "L'Astragale",
+     "lat": 36.82485,
+     "lon": 10.17907,
+     "address": "Avenue Charles Nicolle 17",
+     "website": "https://www.restaurant-lastragale.com/",
+     "openingHours": "Mo-Fr 12:00-14:00,20:00-22:00; Sa 20:00-22:00; Aug off",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2817718376",
+     "name": "فيلا 78",
+     "lat": 36.81926,
+     "lon": 10.18186,
+     "address": "ممر محمد الخامس 78",
+     "website": "http://www.villa78tunis.com/",
+     "openingHours": "Mo-Sa 17:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4791816106",
+     "name": "El Ali Resto et Café Culturel",
+     "lat": 36.79811,
+     "lon": 10.17289,
+     "openingHours": "Mo-Sa 08:00-16:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/7184789952",
+     "name": "El Walima",
+     "lat": 36.81252,
+     "lon": 10.17766,
+     "address": "نهج لبنان 35",
+     "openingHours": "10:00-15:30",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5339769722",
+     "name": "La Salle à Manger",
+     "lat": 36.82194,
+     "lon": 10.18133,
+     "address": "نهج الإمام سحنون 3",
+     "openingHours": "Mo-Sa 12:00-15:30, 18:30-24:00",
+     "cuisine": "fine dining, french",
+     "detailed": true
+    },
+    {
+     "id": "node/3660718726",
+     "name": "Le Grand Café du Theatre",
+     "lat": 36.79929,
+     "lon": 10.18116,
+     "openingHours": "Mo-Su 07:00-23:00",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
+     "id": "node/5499943626",
+     "name": "Restaurant Sfax",
+     "lat": 36.80031,
+     "lon": 10.18309,
+     "address": "Rue du Caire 4",
+     "openingHours": "Mo 11:00-18:00; Tu-Su 11:00-21:00",
+     "cuisine": "tunisian",
+     "detailed": true
+    },
+    {
+     "id": "node/4603748890",
+     "name": "الماركيز",
+     "lat": 36.81972,
+     "lon": 10.18396,
+     "address": "نهج ساحل العاج",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/1037098515",
+     "name": "دار الجلد Dar El Jeld",
+     "lat": 36.79856,
+     "lon": 10.16916,
+     "address": "Rue Dar El Jeld",
+     "website": "https://www.dareljeld.com/en/gastronomy/",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/6300053822",
+     "name": "Auto-Restaurant, Prêt-à-Manger, Cafétéria & Traiteur",
+     "lat": 36.82253,
+     "lon": 10.19422,
+     "cuisine": "fast food"
+    },
+    {
+     "id": "way/1225871312",
+     "name": "Cafétéria d'Italia",
+     "lat": 36.80933,
+     "lon": 10.15726,
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/3816766257",
+     "name": "Chez Slah Restaurant",
+     "lat": 36.80207,
+     "lon": 10.18418,
+     "address": "نهج بيار دي كوبرتان 14bis",
+     "cuisine": "fish"
+    },
+    {
+     "id": "node/4085016860",
+     "name": "Dar Belhadj",
+     "lat": 36.79815,
+     "lon": 10.17166,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/4961802322",
+     "name": "Dar Slah",
+     "lat": 36.79865,
+     "lon": 10.17125,
+     "address": "Rue de la Kasbah",
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/5995561125",
+     "name": "El M‘rabet Restaurant",
+     "lat": 36.79747,
+     "lon": 10.16984,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/7184881150",
+     "name": "L'Ardoise",
+     "lat": 36.82657,
+     "lon": 10.17909,
+     "address": "Rue Felicien Challaye",
+     "cuisine": "italian"
+    },
+    {
+     "id": "node/7148197385",
+     "name": "La Matignon Express",
+     "lat": 36.80322,
+     "lon": 10.17953,
+     "cuisine": "breakfast"
+    },
+    {
+     "id": "node/4791816048",
+     "name": "Le Baroque",
+     "lat": 36.82668,
+     "lon": 10.17914,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/330182866",
+     "name": "Le Capitole",
+     "lat": 36.79946,
+     "lon": 10.18189,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/7184279889",
+     "name": "Le Carnot",
+     "lat": 36.80234,
+     "lon": 10.18064,
+     "cuisine": "french"
+    },
+    {
+     "id": "node/7184279893",
+     "name": "Le Petit Tunis",
+     "lat": 36.80028,
+     "lon": 10.17946,
+     "cuisine": "regional"
+    },
+    {
+     "id": "way/1234639928",
+     "name": "restaurant dar ali",
+     "lat": 36.79804,
+     "lon": 10.17165,
+     "cuisine": "regional, tradictionnel, burger"
+    },
+    {
+     "id": "node/2706703550",
+     "name": "Restaurant universitaire Bouchoucha",
+     "lat": 36.8058,
+     "lon": 10.15091,
+     "cuisine": "regional"
+    },
+    {
+     "id": "node/13684938401",
+     "name": "Saray Turkish restaurant",
+     "lat": 36.81744,
+     "lon": 10.18187,
+     "address": "شارع الهادي شاكر",
+     "website": "https://saray.tn/"
+    },
+    {
+     "id": "node/1158225731",
+     "name": "Steak Haus",
+     "lat": 36.80241,
+     "lon": 10.1823,
+     "address": "Rue Garibaldi",
+     "cuisine": "steak house"
+    },
+    {
+     "id": "node/6550115420",
+     "name": "لا روزاز بيتزاريا",
+     "lat": 36.81284,
+     "lon": 10.17964,
+     "cuisine": "pizza"
+    },
+    {
+     "id": "node/4651098104",
+     "name": "مطعم وأكلة خفيفة ااقصر",
+     "lat": 36.81632,
+     "lon": 10.1779,
+     "address": "شارع الحرية 96",
+     "openingHours": "Mo-Sa"
+    },
+    {
+     "id": "node/2306410635",
+     "name": "نادي الضباط",
+     "lat": 36.82111,
+     "lon": 10.17567,
+     "openingHours": "24/7"
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4359209495",
+     "name": "سمرقند",
+     "lat": 36.82013,
+     "lon": 10.18467,
+     "openingHours": "Mo-Fr 07:00-17:00; Sa 07:00-13:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/4988341671",
+     "name": "Café em",
+     "lat": 36.79854,
+     "lon": 10.16871,
+     "address": "Rue Dabdaba",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/13231484744",
+     "name": "Cafe Hannibal",
+     "lat": 36.80925,
+     "lon": 10.18039,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/7470853143",
+     "name": "Choupette",
+     "lat": 36.82151,
+     "lon": 10.17981,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4945580521",
+     "name": "El Mrabat",
+     "lat": 36.79741,
+     "lon": 10.17054,
+     "address": "Souk Ettrok 27",
+     "cuisine": "french"
+    },
+    {
+     "id": "way/110347342",
+     "name": "Espresso House",
+     "lat": 36.81381,
+     "lon": 10.18321,
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/13699951699",
+     "name": "Ksar Ezzahraa Tunis Lemdina قصر الزهراء",
+     "lat": 36.79647,
+     "lon": 10.17365,
+     "address": "Rue Kouttab Louzir 32",
+     "cuisine": "middle eastern"
+    },
+    {
+     "id": "node/8540554703",
+     "name": "La Calèche",
+     "lat": 36.81828,
+     "lon": 10.1786,
+     "address": "Avenue de La Liberté",
+     "website": "http://lacaleche.tn/"
+    },
+    {
+     "id": "node/6065955142",
+     "name": "La petite scène",
+     "lat": 36.80062,
+     "lon": 10.18432,
+     "address": "نهج بيار دي كوبرتان",
+     "openingHours": "Mo-Su 07:00-20:00"
+    },
+    {
+     "id": "node/4413297593",
+     "name": "العنبة",
+     "lat": 36.79669,
+     "lon": 10.17154,
+     "address": "Rue Souk Errbâa",
+     "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/4222791289",
+     "name": "مقهى ليلى بيه",
+     "lat": 36.77723,
+     "lon": 10.18959,
+     "address": "Avenue de Bellevue",
+     "cuisine": "tea, coffee shop"
+    },
+    {
+     "id": "node/6550115417",
+     "name": "Au Bon Menu",
+     "lat": 36.81309,
+     "lon": 10.1821
+    },
+    {
+     "id": "node/6087846386",
+     "name": "Ben's",
+     "lat": 36.81037,
+     "lon": 10.17966
+    },
+    {
+     "id": "node/6550115426",
+     "name": "Bochra",
+     "lat": 36.8126,
+     "lon": 10.17967
+    },
+    {
+     "id": "node/6550115416",
+     "name": "Bros Coffee",
+     "lat": 36.81335,
+     "lon": 10.18208
+    },
+    {
+     "id": "node/8776041030",
+     "name": "Café",
+     "lat": 36.81384,
+     "lon": 10.17601
+    },
+    {
+     "id": "node/2039897965",
+     "name": "Café 100%",
+     "lat": 36.8084,
+     "lon": 10.18388
+    },
+    {
+     "id": "node/2157231103",
+     "name": "Café Al Khairat",
+     "lat": 36.8088,
+     "lon": 10.18333
+    },
+    {
+     "id": "node/6515253875",
+     "name": "Café Allala",
+     "lat": 36.79242,
+     "lon": 10.18626
+    },
+    {
+     "id": "node/6515613068",
+     "name": "Café Aroussi",
+     "lat": 36.80239,
+     "lon": 10.175
+    },
+    {
+     "id": "node/13395436802",
+     "name": "Café Ballon d'Or",
+     "lat": 36.79944,
+     "lon": 10.18276
+    },
+    {
+     "id": "node/6342144674",
+     "name": "Café Beb Lkhatra",
+     "lat": 36.80635,
+     "lon": 10.17358
+    },
+    {
+     "id": "node/6300053853",
+     "name": "Café Becha",
+     "lat": 36.80099,
+     "lon": 10.17917
+    },
+    {
+     "id": "node/10297344609",
+     "name": "Café Belkadhi",
+     "lat": 36.79856,
+     "lon": 10.17008
+    },
+    {
+     "id": "node/6300053829",
+     "name": "Café Bonaparte",
+     "lat": 36.80203,
+     "lon": 10.18357
+    },
+    {
+     "id": "node/6515253876",
+     "name": "Café Chahir",
+     "lat": 36.79571,
+     "lon": 10.18483
+    },
+    {
+     "id": "node/6550115415",
+     "name": "Cafe Ciao",
+     "lat": 36.81226,
+     "lon": 10.18198
+    },
+    {
+     "id": "node/6795833085",
+     "name": "Café Cosmitto",
+     "lat": 36.7966,
+     "lon": 10.18129
+    },
+    {
+     "id": "node/11694523926",
+     "name": "Cafe Daly",
+     "lat": 36.80439,
+     "lon": 10.18403
+    },
+    {
+     "id": "node/6515613596",
+     "name": "Café de l'Espérance Sportive de Tunis",
+     "lat": 36.80479,
+     "lon": 10.16802
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/11504046285",
+     "name": "Chez Vous",
+     "lat": 36.80036,
+     "lon": 10.18244,
+     "openingHours": "Mo-Sa 12:00-02:30"
+    },
+    {
+     "id": "node/6819154487",
+     "name": "جنتلمن",
+     "lat": 36.82271,
+     "lon": 10.19336,
+     "openingHours": "Mo-Sa 15:00-01:00"
+    },
+    {
+     "id": "node/4587009091",
+     "name": "مطعم إيطاليا الكبرى",
+     "lat": 36.81543,
+     "lon": 10.17878,
+     "address": "شارع الولايات المتحدة الأمريكية 03",
+     "website": "http://www.darismailhotels.com/"
+    },
+    {
+     "id": "node/6302251655",
+     "name": "Bar L'Avenue",
+     "lat": 36.79893,
+     "lon": 10.18235
+    },
+    {
+     "id": "node/6300053852",
+     "name": "Café Bar de la Lyre",
+     "lat": 36.8009,
+     "lon": 10.17825
+    },
+    {
+     "id": "node/6302251637",
+     "name": "Café Bar Palace",
+     "lat": 36.79919,
+     "lon": 10.18267
+    },
+    {
+     "id": "node/6302251631",
+     "name": "Frida Bar",
+     "lat": 36.79909,
+     "lon": 10.18389
+    },
+    {
+     "id": "node/6580422459",
+     "name": "Le Bleuet",
+     "lat": 36.80257,
+     "lon": 10.18188
+    },
+    {
+     "id": "node/6561719406",
+     "name": "Le Bristol",
+     "lat": 36.80355,
+     "lon": 10.17936
+    },
+    {
+     "id": "way/525859842",
+     "name": "Le Duplex",
+     "lat": 36.81883,
+     "lon": 10.18381
+    },
+    {
+     "id": "node/6550115446",
+     "name": "Le Madison",
+     "lat": 36.81761,
+     "lon": 10.18397
+    },
+    {
+     "id": "node/6300053841",
+     "name": "Le Pub Gentleman",
+     "lat": 36.80042,
+     "lon": 10.18408
+    },
+    {
+     "id": "node/6580422460",
+     "name": "Le Roi",
+     "lat": 36.80279,
+     "lon": 10.18158
+    },
+    {
+     "id": "node/6300053836",
+     "name": "Le Vieux Port",
+     "lat": 36.80069,
+     "lon": 10.18173
+    },
+    {
+     "id": "node/7959921022",
+     "name": "Maison Bleue",
+     "lat": 36.81967,
+     "lon": 10.17847,
+     "address": "شارع الحرية 141"
+    },
+    {
+     "id": "node/6515253881",
+     "name": "Marius",
+     "lat": 36.79723,
+     "lon": 10.17947
+    },
+    {
+     "id": "node/6302251638",
+     "name": "Rossini palace",
+     "lat": 36.79947,
+     "lon": 10.18228
+    },
+    {
+     "id": "node/7470853144",
+     "name": "Schilling",
+     "lat": 36.82129,
+     "lon": 10.17993,
+     "address": "شارع محمد الخامس 93"
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  }
+ }
+}

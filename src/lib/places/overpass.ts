@@ -1,5 +1,5 @@
 import { externalFetch } from "@/lib/net";
-import { CATEGORIES, type CategoryId } from "./categories";
+import { CATEGORIES, CATEGORY_IDS, type CategoryId } from "./categories";
 
 /** Public Overpass instances, tried in order. */
 export const OVERPASS_ENDPOINTS = [
@@ -54,6 +54,20 @@ export function buildOverpassQuery(category: CategoryId, lat: number, lon: numbe
   const bbox = boundingBox(lat, lon, radiusKm).join(",");
   const statements = CATEGORIES[category].filters.map((f) => `  nwr${f}["name"];`).join("\n");
   return `[out:json][timeout:${OVERPASS_QUERY_TIMEOUT_S}][bbox:${bbox}];\n(\n${statements}\n);\nout tags center ${OVERPASS_MAX_ELEMENTS};`;
+}
+
+/**
+ * One query per city covering every category, each with its own output
+ * limit. Used by the offline data script so a city costs Overpass one
+ * request instead of eight.
+ */
+export function buildCityQuery(lat: number, lon: number, radiusKm: number, timeoutS = 120): string {
+  const bbox = boundingBox(lat, lon, radiusKm).join(",");
+  const blocks = CATEGORY_IDS.map((category) => {
+    const statements = CATEGORIES[category].filters.map((f) => `  nwr${f}["name"];`).join("\n");
+    return `(\n${statements}\n);\nout tags center ${OVERPASS_MAX_ELEMENTS};`;
+  });
+  return `[out:json][timeout:${timeoutS}][bbox:${bbox}];\n${blocks.join("\n")}`;
 }
 
 export type Fetcher = (url: string, init: RequestInit) => Promise<Response>;

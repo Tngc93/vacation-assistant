@@ -1,0 +1,1817 @@
+{
+ "version": 1,
+ "cityCode": "HEL",
+ "fetchedAt": "2026-10-16T23:39:39.315Z",
+ "radiusKm": 2,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg/1280px-Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg",
+  "width": 1280,
+  "height": 840,
+  "author": "Old Pionear",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_Lutheran_Cathedral_(panoraaman%C3%A4k%C3%B6ala)-2_(s%C3%A4%C3%A4t%C3%B6).jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/1542850662",
+     "name": "Helsingin tuomiokirkko",
+     "lat": 60.17038,
+     "lon": 24.95219,
+     "address": "Unioninkatu 29",
+     "website": "https://helsingintuomiokirkko.fi/",
+     "openingHours": "Jun-Aug: Su-Sa 09:00-24:00; Sep-May: Su-Sa 09:00-18:00",
+     "wikipediaCount": 49
+    },
+    {
+     "id": "node/4371604494",
+     "name": "Tuomiokirkon krypta",
+     "lat": 60.17068,
+     "lon": 24.95211,
+     "address": "Kirkkokatu 18",
+     "website": "https://helsingintuomiokirkko.fi/index/cafekrypta.html",
+     "wikipediaCount": 49
+    },
+    {
+     "id": "way/124143121",
+     "name": "Temppeliaukion kirkko",
+     "lat": 60.17297,
+     "lon": 24.9252,
+     "address": "Lutherinkatu 3",
+     "website": "https://www.temppeliaukionkirkko.fi/",
+     "openingHours": "Mo,We-Fr 09:00-17:00; Tu,Su 12:00-17:00; Sa 09:00-11:45,12:45-13:15,14:15-14:45,15:45-17:00",
+     "wikipediaCount": 27
+    },
+    {
+     "id": "way/15242921",
+     "name": "Uspenskin katedraali",
+     "lat": 60.16846,
+     "lon": 24.95995,
+     "address": "Kanavakatu 1",
+     "website": "http://hos.fi/fi/uspenskin-katedraali",
+     "openingHours": "Tu-Fr 09:30-16:00; Sa 10:00-15:00; Su 12:00-15:00",
+     "wikipediaCount": 26
+    },
+    {
+     "id": "node/25290864",
+     "name": "Sibelius-monumentti",
+     "lat": 60.18203,
+     "lon": 24.91342,
+     "website": "https://www.hamhelsinki.fi/veistos/sibelius-monumentti/",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "relation/2123871",
+     "name": "Presidentinlinna",
+     "lat": 60.16843,
+     "lon": 24.95631,
+     "address": "Pohjoisesplanadi 1",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/457948795",
+     "name": "Kauppatori",
+     "lat": 60.16719,
+     "lon": 24.95433,
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/89533459",
+     "name": "Eduskuntatalo",
+     "lat": 60.17254,
+     "lon": 24.93294,
+     "address": "Mannerheimintie 30",
+     "website": "https://www.eduskunta.fi/FI/tietoaeduskunnasta/eduskunnan_talot_ja_taide/Sivut/default.aspx",
+     "wikipediaCount": 18
+    },
+    {
+     "id": "way/123814071",
+     "name": "Vanha Kauppahalli",
+     "lat": 60.16616,
+     "lon": 24.95278,
+     "address": "Eteläranta 9",
+     "website": "https://vanhakauppahalli.fi/",
+     "openingHours": "Mo-Sa 08:00-18:00; Su 10:00-17:00",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "way/127286563",
+     "name": "Talvipuutarha",
+     "lat": 60.18612,
+     "lon": 24.93173,
+     "address": "Hammarskjöldintie 1A",
+     "website": "https://www.hel.fi/fi/kulttuuri-ja-vapaa-aika/ulkoilu-puistot-ja-luontokohteet/puistot/talvipuutarha",
+     "openingHours": "Mo-Th 10:00-16:00; Sa-Su 10:00-16:00; Fr off",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/287564778",
+     "name": "Kirnu",
+     "lat": 60.18826,
+     "lon": 24.93999,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/139499388",
+     "name": "Hakaniemen kauppahalli",
+     "lat": 60.18007,
+     "lon": 24.95134,
+     "address": "Hämeentie 1 a",
+     "website": "https://www.hakaniemenkauppahalli.fi/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/122954081",
+     "name": "Hietalahden kauppahalli",
+     "lat": 60.16302,
+     "lon": 24.92945,
+     "address": "Lönnrotinkatu 34",
+     "website": "https://www.hietalahdenkauppahalli.fi/",
+     "openingHours": "Mo-Tu 08:00-18:00; We-Th 08:00-20:00; Fr-Sa 08:00-21:00; Su off",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "way/122869882",
+     "name": "Kaisaniemen kasvitieteellinen puutarha",
+     "lat": 60.17533,
+     "lon": 24.94712,
+     "address": "Kaisaniemenranta 2",
+     "website": "https://www.luomus.fi/fi/kaisaniemen-kasvitieteellinen-puutarha",
+     "openingHours": "Mo-Su 09:00-20:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/6807298155",
+     "name": "Taiga",
+     "lat": 60.18833,
+     "lon": 24.93918,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/287563234",
+     "name": "Tulireki",
+     "lat": 60.18776,
+     "lon": 24.93842,
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/5240070521",
+     "name": "Valon tuoja - Talvisodan kansallinen muistomerkki",
+     "lat": 60.165,
+     "lon": 24.94897,
+     "website": "https://www.hamhelsinki.fi/veistos/talvisodan-kansallinen-muistomerkki/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/287561405",
+     "name": "Salama",
+     "lat": 60.18724,
+     "lon": 24.93948,
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/60242198",
+     "name": "Merenkulkijoiden ja mereen menehtyneiden muistomerkki",
+     "lat": 60.15409,
+     "lon": 24.93843,
+     "website": "https://www.hamhelsinki.fi/veistos/merenkulkijoiden-ja-mereen-menehtyneiden-muistomerkki/",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/988146106",
+     "name": "Panoraama",
+     "lat": 60.18759,
+     "lon": 24.9411,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/287563015",
+     "name": "Pikajuna",
+     "lat": 60.18755,
+     "lon": 24.93841,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/287560868",
+     "name": "Rinkeli",
+     "lat": 60.18791,
+     "lon": 24.93924,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/287570877",
+     "name": "Swingi",
+     "lat": 60.18812,
+     "lon": 24.94115,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/25238963",
+     "name": "Lapinlahden Lähde",
+     "lat": 60.16759,
+     "lon": 24.91319,
+     "address": "Lapinlahdenpolku 8",
+     "website": "https://lapinlahdenlahde.fi/",
+     "openingHours": "Mo-Fr 09:00-18:00"
+    },
+    {
+     "id": "way/457949936",
+     "name": "SkyWheel Helsinki",
+     "lat": 60.16673,
+     "lon": 24.95945,
+     "address": "Katajanokanlaituri 2",
+     "website": "https://www.skywheel.fi/",
+     "openingHours": "Mo-Th 10:00-21:00; Sa 10:00-23:00; Su 10:00-20:00; Fr 10:00-22:00"
+    },
+    {
+     "id": "node/6238798912",
+     "name": "Uusi Sauna",
+     "lat": 60.15936,
+     "lon": 24.91812,
+     "address": "Välimerenkatu 10",
+     "website": "https://uusisauna.fi/",
+     "openingHours": "We-Su 16:00-22:00"
+    },
+    {
+     "id": "node/790308340",
+     "name": "Hypytin",
+     "lat": 60.18839,
+     "lon": 24.94277,
+     "website": "https://www.linnanmaki.fi/"
+    },
+    {
+     "id": "node/10586906992",
+     "name": "Lapinlahti hospital Mental Museum",
+     "lat": 60.16761,
+     "lon": 24.91282,
+     "website": "https://lapinlahdenlahde.fi/mental-museum/"
+    },
+    {
+     "id": "node/826771962",
+     "name": "Rekkaralli",
+     "lat": 60.18756,
+     "lon": 24.93887,
+     "website": "https://www.linnanmaki.fi/en/rides/rekkaralli"
+    },
+    {
+     "id": "node/8985351078",
+     "name": "Suomen korkein benji",
+     "lat": 60.15314,
+     "lon": 24.93167,
+     "website": "https://www.skybreakers.com/suomenkorkein.htm"
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "way/8033120",
+     "name": "Ateneum",
+     "lat": 60.17002,
+     "lon": 24.94407,
+     "address": "Kaivokatu 2",
+     "website": "https://ateneum.fi/",
+     "openingHours": "Tu 10:00-18:00; We-Th 10:00-20:00; Fr 10:00-18:00; Sa-Su 10:00-17:00",
+     "wikipediaCount": 31
+    },
+    {
+     "id": "relation/6635",
+     "name": "Kansallismuseo",
+     "lat": 60.17496,
+     "lon": 24.9316,
+     "address": "Mannerheimintie 34",
+     "website": "https://www.kansallismuseo.fi/",
+     "openingHours": "off \"Closed until 2027\"",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "way/495923233",
+     "name": "Sinebrychoffin taidemuseo",
+     "lat": 60.16253,
+     "lon": 24.93254,
+     "address": "Bulevardi 40",
+     "website": "https://www.sinebrychoffintaidemuseo.fi/",
+     "openingHours": "Mo off; Tu,Th-Fr 11:00-18:00; We 10:00-20:00; Sa-Su 10:00-17:00",
+     "cuisine": "regional",
+     "wikipediaCount": 14
+    },
+    {
+     "id": "node/4723948808",
+     "name": "Helsingin kaupunginmuseo",
+     "lat": 60.16876,
+     "lon": 24.95403,
+     "address": "Aleksanterinkatu 16",
+     "website": "http://www.helsinginkaupunginmuseo.fi/",
+     "openingHours": "Mo-Fr 11:00-19:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "way/22562853",
+     "name": "Mannerheim-museo",
+     "lat": 60.15887,
+     "lon": 24.96047,
+     "address": "Kalliolinnantie 14",
+     "website": "https://www.mannerheim-museo.fi/",
+     "openingHours": "Fr-Su 11:00-17:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/5887336141",
+     "name": "Amos Rex",
+     "lat": 60.17069,
+     "lon": 24.93644,
+     "address": "Mannerheimintie 22-24",
+     "website": "https://amosrex.fi/",
+     "openingHours": "Mo,We-Fr 11:00-20:00; Tu off; Sa-Su 11:00-17:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/1381017855",
+     "name": "Helsingin taidemuseo HAM",
+     "lat": 60.16978,
+     "lon": 24.93023,
+     "address": "Eteläinen Rautatiekatu 8",
+     "website": "https://hamhelsinki.fi/",
+     "openingHours": "Tu-Su 11:00-19:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/1381017823",
+     "name": "Luonnontieteellinen museo",
+     "lat": 60.17144,
+     "lon": 24.93122,
+     "address": "Pohjoinen Rautatiekatu 13",
+     "website": "https://www.luomus.fi/",
+     "openingHours": "Su 10:00-16:00; Sa 10:00-18:00; Tu-Fr 10:00-17:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "node/606949808",
+     "name": "Tiedemuseo Liekki",
+     "lat": 60.16973,
+     "lon": 24.94955,
+     "website": "https://www.helsinki.fi/fi/tiedemuseo-liekki/tiedemuseo-liekin-nayttelykeskus",
+     "openingHours": "Mo,Su off; Tu-We,Fr-Sa 12:00-16:00; Th 12:00-20:00",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/23233917",
+     "name": "Ratikkamuseo",
+     "lat": 60.18405,
+     "lon": 24.92051,
+     "address": "Töölönkatu 51 A",
+     "website": "https://trammuseum.fi/",
+     "openingHours": "Mo-Su 11:00-17:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/124697240",
+     "name": "Hakasalmen huvila",
+     "lat": 60.17467,
+     "lon": 24.93413,
+     "address": "Mannerheimintie 13 B",
+     "website": "https://hakasalmivilla.fi/",
+     "openingHours": "Tu 11:00-19:00; We-Su 11:00-17:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/34937117",
+     "name": "Ruiskumestarin talo",
+     "lat": 60.17548,
+     "lon": 24.95609,
+     "address": "Kristianinkatu 12",
+     "website": "https://ruiskumestarintalo.fi/",
+     "openingHours": "Nov 26-Dec 21 We-Fr 13:00-18:00; Nov 26-Dec 21 Sa,Su 11:00-17:00; Dec 22-Jan 08 We-Fr 11:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/4777841321",
+     "name": "Urheilun ja liikunnan kulttuurikeskus TAHTO",
+     "lat": 60.18736,
+     "lon": 24.92529,
+     "address": "Paavo Nurmen tie 1",
+     "website": "https://tahto.com/",
+     "openingHours": "Mo, We, Fr 09:00-16:00; Tu, Th 09:00-19:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "way/22500092",
+     "name": "Arkkitehtuuri- ja designmuseo",
+     "lat": 60.16309,
+     "lon": 24.94661,
+     "address": "Korkeavuorenkatu 23",
+     "website": "https://www.admuseo.fi/",
+     "openingHours": "11:00-18:00; PH off",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/1221210297",
+     "name": "Merkki",
+     "lat": 60.1657,
+     "lon": 24.94534,
+     "address": "Ludviginkatu 2-4",
+     "website": "http://www.merkkiin.fi/",
+     "openingHours": "Mo-Su 11:00-17:00",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/8042215",
+     "name": "Kiasma",
+     "lat": 60.17204,
+     "lon": 24.93658,
+     "address": "Mannerheiminaukio 2",
+     "website": "https://kiasma.fi/",
+     "openingHours": "Tu 10:00-17:00; We-Fr 10:00-20:30; Sa-Su 10:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/606949807",
+     "name": "Suomen Pankin rahamuseo",
+     "lat": 60.17033,
+     "lon": 24.95327,
+     "address": "Snellmaninkatu 2",
+     "website": "https://www.rahamuseo.fi/",
+     "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 11:00-16:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/1375995144",
+     "name": "Väestönsuojelumuseo",
+     "lat": 60.17644,
+     "lon": 24.95407,
+     "address": "Siltavuorenranta 14",
+     "website": "https://hvssy.fi/vaestonsuojelumuseo/",
+     "openingHours": "Sep-May: Sa 10:00-14:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/2026095895",
+     "name": "Päivikki ja Sakari Sohlbergin kotimuseo",
+     "lat": 60.16724,
+     "lon": 24.96731,
+     "address": "Kauppiaankatu 11",
+     "website": "https://pss-saatio.fi/kotimuseo/",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/1037603239",
+     "name": "Red Conception",
+     "lat": 60.15916,
+     "lon": 24.9375,
+     "address": "Pursimiehenkatu",
+     "website": "https://www.facebook.com/redconceptionhelsinki/",
+     "openingHours": "Mo-Fr 11:00-15:00",
+     "cuisine": "asian"
+    },
+    {
+     "id": "node/4754875476",
+     "name": "A2 Galleria",
+     "lat": 60.1644,
+     "lon": 24.94015,
+     "address": "Annankatu 12",
+     "website": "https://www.galleria-a2.fi/",
+     "openingHours": "Mo off; Tu-Fr 12:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/12000592012",
+     "name": "Ama Gallery",
+     "lat": 60.16619,
+     "lon": 24.94709,
+     "address": "Rikhardinkatu 1",
+     "website": "https://ama.gallery/",
+     "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/4745463994",
+     "name": "Art Frida",
+     "lat": 60.16352,
+     "lon": 24.94633,
+     "address": "Korkeavuorenkatu 25",
+     "website": "https://www.artfrida.fi/",
+     "openingHours": "Mo-Tu,Fr off; We-Th 11:00-17:00; Sa 11:00-16:00; Su 12:00-16:00"
+    },
+    {
+     "id": "node/8863509976",
+     "name": "EVA International Art Gallery",
+     "lat": 60.17061,
+     "lon": 24.92975,
+     "address": "Pohjoinen Rautatiekatu 17",
+     "website": "https://evainternationalartgallery.com/",
+     "openingHours": "Mo off; Tu-Su 12:00-16:00"
+    },
+    {
+     "id": "node/4738322126",
+     "name": "Feri's Sausage",
+     "lat": 60.16053,
+     "lon": 24.94137,
+     "address": "Pursimiehenkatu 2",
+     "website": "https://www.feris.fi/",
+     "openingHours": "Mo-Fr 11:00-18:00; Sa 11:00-16:00"
+    },
+    {
+     "id": "node/10736737099",
+     "name": "Forum Box",
+     "lat": 60.16166,
+     "lon": 24.92487,
+     "address": "Ruoholahdenranta 3",
+     "website": "https://forumbox.fi/",
+     "openingHours": "Tu-Su 12:00-17:00"
+    },
+    {
+     "id": "node/4753386033",
+     "name": "G12 Galleria",
+     "lat": 60.16539,
+     "lon": 24.93876,
+     "address": "Annankatu 16",
+     "website": "https://www.galleria12.fi/",
+     "openingHours": "Mo,PH off; Tu-Th 12:00-17:00; Fr-Su 12:00-16:00"
+    },
+    {
+     "id": "node/3632905516",
+     "name": "Galerie Anhava",
+     "lat": 60.16552,
+     "lon": 24.9356,
+     "address": "Fredrikinkatu 43",
+     "website": "http://anhava.com/",
+     "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/4865883645",
+     "name": "Galleria 4-kuus",
+     "lat": 60.1647,
+     "lon": 24.94175,
+     "address": "Uudenmaankatu 4-6",
+     "website": "https://www.galleria4-kuus.fi/",
+     "openingHours": "Mo off; Tu 10:00-16:00; We-Fr 11:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/12177327112",
+     "name": "Galleria Akvart",
+     "lat": 60.18506,
+     "lon": 24.92082,
+     "address": "Humalistonkatu 1",
+     "website": "https://akvart.fi/",
+     "openingHours": "Mo off; Tu,Th-Fr 11:00-17:00; We 11:00-18:00; Sa-Su 12:00-18:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/15865567",
+     "name": "Näköalatasanne",
+     "lat": 60.15621,
+     "lon": 24.92102,
+     "address": "Tyynenmerenkatu 11",
+     "website": "https://www.verkkokauppa.com/"
+    },
+    {
+     "id": "node/1263607781",
+     "name": "Linnunlaulu",
+     "lat": 60.18168,
+     "lon": 24.93842
+    },
+    {
+     "id": "node/1263607765",
+     "name": "Sinisen huvilan kahvila",
+     "lat": 60.18131,
+     "lon": 24.93694
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1377250652",
+     "name": "Aangan",
+     "lat": 60.16315,
+     "lon": 24.92785,
+     "address": "Hietalahdenkatu 8",
+     "website": "https://www.aangan.fi/",
+     "openingHours": "Mo-Th 10:30-22:00; Fr 10:30-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+     "cuisine": "nepalese",
+     "detailed": true
+    },
+    {
+     "id": "node/673606087",
+     "name": "Alfons Pizza",
+     "lat": 60.15929,
+     "lon": 24.94252,
+     "address": "Vuorimiehenkatu 35",
+     "website": "https://www.alfonspizza.fi/",
+     "openingHours": "Mo-Th 16:30-21:00; Fr 11:00-22:00; Sa 13:00-22:00; Su 13:00-20:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/472662935",
+     "name": "Ani",
+     "lat": 60.15728,
+     "lon": 24.93342,
+     "website": "https://ani.fi/",
+     "openingHours": "Mo-Fr 10:30-23:00; Sa-Su 11:00-23:00",
+     "cuisine": "turkish",
+     "detailed": true
+    },
+    {
+     "id": "node/2268402718",
+     "name": "Bacco",
+     "lat": 60.16806,
+     "lon": 24.95375,
+     "address": "Pohjoisesplanadi 9",
+     "website": "https://bacco.fi/",
+     "openingHours": "Mo-Th 11:00-22:00; Fr 11:00-24:00; Sa 12:00-24:00; Su 12:00-21:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4776225421",
+     "name": "Barbarossa Pizza & Kebab",
+     "lat": 60.16819,
+     "lon": 24.93092,
+     "address": "Kampinkuja 2",
+     "website": "https://barbarossapizzeria.fi/",
+     "openingHours": "Mo-Sa 10:00-21:30; Su 11:00-21:30",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2482697835",
+     "name": "Belge Bar & Bistro",
+     "lat": 60.16917,
+     "lon": 24.94261,
+     "address": "Keskuskatu 4",
+     "website": "https://www.raflaamo.fi/fi/ravintola/helsinki/belge",
+     "openingHours": "Mo-Tu 11:00-22:00; We-Th 11:00-23:00; Fr-Sa 11:00-02:00; Su 12:00-22:00",
+     "cuisine": "bistro",
+     "detailed": true
+    },
+    {
+     "id": "node/1375925295",
+     "name": "Bistro Gimis",
+     "lat": 60.16212,
+     "lon": 24.92425,
+     "address": "Ruoholahdenranta 3",
+     "website": "https://www.s-kanava.fi/toimipaikka/bistro-gimis/3350815",
+     "openingHours": "Mo-Fr 06:30-10:00, Sa,Su 07:30-11:30, Sa 17:00-23:00, Mo-Fr 18:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/1975276944",
+     "name": "BLINIt",
+     "lat": 60.18794,
+     "lon": 24.94519,
+     "address": "Sturenkatu 9",
+     "website": "https://www.blinit.fi/",
+     "openingHours": "Mo-Fr 13:00-22:00; Sa-Su 12:00-22:00",
+     "cuisine": "russian, fast food",
+     "detailed": true
+    },
+    {
+     "id": "node/2268402715",
+     "name": "Bona Fide",
+     "lat": 60.17223,
+     "lon": 24.95558,
+     "address": "Vironkatu 8",
+     "website": "https://bonafide.fi/",
+     "openingHours": "Mo-Tu,Su off; We-Sa 17:00-23:00",
+     "cuisine": "finedining",
+     "detailed": true
+    },
+    {
+     "id": "node/2249127684",
+     "name": "Boreal",
+     "lat": 60.16503,
+     "lon": 24.94205,
+     "address": "Uudenmaankatu 9",
+     "website": "https://borealhki.fi/",
+     "openingHours": "Mo-Tu,Su off; We-Sa 17:00-23:00",
+     "cuisine": "local",
+     "detailed": true
+    },
+    {
+     "id": "node/1533487184",
+     "name": "Box Tuohi",
+     "lat": 60.17797,
+     "lon": 24.95154,
+     "address": "John Stenbergin ranta 6",
+     "website": "https://www.ravintolatuohi.fi/",
+     "openingHours": "Mo-Fr 10:30-21:00; Sa 12:00-20:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/1985598534",
+     "name": "Brasserie Lionne",
+     "lat": 60.16783,
+     "lon": 24.94459,
+     "address": "Pohjoisesplanadi 37",
+     "website": "https://brasserielionne.fi/",
+     "openingHours": "Mo-Fr 08:00-23:00; Sa 09:00-24:00; Su 10:00-22:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/4691849231",
+     "name": "Bumi Punavuori",
+     "lat": 60.15931,
+     "lon": 24.93726,
+     "address": "Pursimiehenkatu 21",
+     "website": "https://bumicafe.com/fi/",
+     "openingHours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:30; Su 12:00-19:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/526787866",
+     "name": "Burgers & Wine",
+     "lat": 60.16133,
+     "lon": 24.91434,
+     "address": "Jaalaranta 5",
+     "website": "https://burgersandwine.fi/ruoholahti/",
+     "openingHours": "Tu 11:00-23:00; We-Fr 11:00-24:00; Sa 13:00-24:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/648237235",
+     "name": "Chalupa",
+     "lat": 60.16611,
+     "lon": 24.9374,
+     "address": "Lönnrotinkatu 9",
+     "website": "https://chalupa.fi/",
+     "openingHours": "Mo-Fr 10:30-21:30; Sa,Su 11:30-21:30",
+     "cuisine": "mexican",
+     "detailed": true
+    },
+    {
+     "id": "node/389078466",
+     "name": "Classic Pizza",
+     "lat": 60.16905,
+     "lon": 24.93909,
+     "address": "Mannerheimintie 18",
+     "website": "https://classicpizza.fi/",
+     "openingHours": "Mo-Th 10:30-22:00; Fr 10:30-24:00; Sa 11:00-24:00; Su 11:00-22:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/5010060723",
+     "name": "Daddy Greens Pizzabar",
+     "lat": 60.185,
+     "lon": 24.92065,
+     "address": "Humalistonkatu 3",
+     "website": "https://www.daddygreens.fi/",
+     "openingHours": "Tu-Th 16:00-22:00; Fr 16:00-23:00; Sa 12:00-23:00; Su 12:00-23:00",
+     "cuisine": "italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/1377222625",
+     "name": "Domo",
+     "lat": 60.16642,
+     "lon": 24.93497,
+     "address": "Kalevankatu 21",
+     "website": "https://domoravintola.fi/",
+     "openingHours": "Mo-Fr 11:00-14:30, Mo-Fr 17:00-21:00, Sa 12:00-21:30, Su off",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/340927266",
+     "name": "Dong Bei House",
+     "lat": 60.17169,
+     "lon": 24.95412,
+     "address": "Rauhankatu 15",
+     "website": "https://www.dongbeihouse.fi/",
+     "openingHours": "Mo-Fr 11:00-21:00, Sa-Su 12:00-21:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/92762548",
+     "name": "Döner Osman",
+     "lat": 60.18082,
+     "lon": 24.94988,
+     "address": "Siltasaarenkatu 11",
+     "website": "https://xn--dnerosman-07a.fi/",
+     "openingHours": "Mo-Th 10:30-22:30; Fr 10:30-03:00; Sa 11:00-03:00; Su 12:00-21:00",
+     "cuisine": "kebab",
+     "detailed": true
+    },
+    {
+     "id": "node/311096937",
+     "name": "Dragon Phoenix",
+     "lat": 60.1658,
+     "lon": 24.95191,
+     "website": "https://www.dragonphoenix.fi/",
+     "openingHours": "Mo-Fr 10:30-21:00; Sa-Su 12:00-21:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/1378007245",
+     "name": "Dragon Spring",
+     "lat": 60.1683,
+     "lon": 24.93241,
+     "address": "Urho Kekkosen katu 4-6",
+     "website": "https://www.dragonspring.fi/",
+     "openingHours": "Mo, We, Th 11:00-22:00; Fr 11:00-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/607014800",
+     "name": "Ego Ravintola",
+     "lat": 60.16395,
+     "lon": 24.94629,
+     "address": "Korkeavuorenkatu 27",
+     "website": "https://ego-ravintola.fi/",
+     "openingHours": "Tu-Fr 11:30-14:00,17:00-24:00; Sa 14:00-24:00",
+     "cuisine": "nordic",
+     "detailed": true
+    },
+    {
+     "id": "node/2026108529",
+     "name": "Everest Nokka",
+     "lat": 60.16788,
+     "lon": 24.96662,
+     "address": "Luotsikatu 12 a",
+     "website": "https://www.everestyeti.fi/",
+     "openingHours": "Mo-Fr 10:30-22:00; Sa-Su 12:00-22:00",
+     "cuisine": "nepalese",
+     "detailed": true
+    },
+    {
+     "id": "node/2199663527",
+     "name": "Flavour Heaven",
+     "lat": 60.17967,
+     "lon": 24.95888,
+     "address": "Haapaniemenkatu 7-9",
+     "website": "https://flavourheaven.fi/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/2264356403",
+     "name": "Focaccina",
+     "lat": 60.16772,
+     "lon": 24.93707,
+     "address": "Eerikinkatu 4",
+     "website": "https://focaccina.fi/",
+     "openingHours": "Mo-Th 11:00-22:00; Fr 11:00-23:00; Sa 12:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/606996930",
+     "name": "Frans & Amélie",
+     "lat": 60.16948,
+     "lon": 24.94721,
+     "address": "Kluuvikatu 8",
+     "website": "https://www.raflaamo.fi/en/helsinki/frans-amelie-helsinki",
+     "openingHours": "Mo-Th 11:00-23:00; Fr 11:00-00:00; Sa 12:00-00:00; Su 13:00-19:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/606996894",
+     "name": "Fuji Biyori",
+     "lat": 60.16657,
+     "lon": 24.94603,
+     "address": "Korkeavuorenkatu 47",
+     "website": "https://fujibiyori.com/",
+     "openingHours": "Mo-Th 11:00-15:00, 17:00-22:00; Fr 11:00-15:00, 17:00-22:00; Sa 12:00-22:00; Su 12:00-20:00",
+     "cuisine": "japanese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/4692013478",
+     "name": "Goodwin",
+     "lat": 60.16637,
+     "lon": 24.95223,
+     "website": "https://www.steak.fi/fin/helsinki/index.html",
+     "openingHours": "Mo-Fr 11:00-23:00; Sa,Su 12:00-23:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/1660789797",
+     "name": "Green Hippo",
+     "lat": 60.17864,
+     "lon": 24.92437,
+     "address": "Sandelsinkatu 2",
+     "website": "https://www.greenhippocafe.rocks/locations/toolo",
+     "openingHours": "Mo-Fr 08:00-21:00; Sa 09:00-21:00",
+     "cuisine": "salad, pasta",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/6139262633",
+     "name": "Arnolds",
+     "lat": 60.16876,
+     "lon": 24.9383,
+     "address": "Mannerheimintie 20",
+     "website": "https://www.arnolds.fi/",
+     "openingHours": "Mo-Fr 08:00-20:00; Sa 09:00-18:00; Su 12:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2222510493",
+     "name": "Beard Park Cafe",
+     "lat": 60.18432,
+     "lon": 24.9519,
+     "address": "Agricolankatu 13",
+     "website": "https://beardparkcafe.fi/",
+     "openingHours": "Mo-Fr 09:00-19:00; Sa-Su 09:30-18:00",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/13055787001",
+     "name": "Cafe Braku",
+     "lat": 60.18692,
+     "lon": 24.95064,
+     "address": "Helsinginkatu 25",
+     "website": "https://hifk-bandy.fi/cafe-braku/",
+     "openingHours": "Mo 17:00-18:30; Tu 19:30-22:00; We 16:00-18:30; Th 17:30-19:30; Fr 19:30-21:30; Sa 09:30-13:00, 20:00-21:30; Su 09:00-11:00, 16:00-21:30",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "way/123825329",
+     "name": "Café Carusel",
+     "lat": 60.1537,
+     "lon": 24.94252,
+     "address": "Merisatamanranta 10",
+     "website": "https://carusel.fi/",
+     "openingHours": "Mo-Sa 10:00-20:00; Su 11:00-18:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/11712182004",
+     "name": "Café Clé",
+     "lat": 60.17306,
+     "lon": 24.95663,
+     "address": "Mariankatu 21",
+     "website": "https://www.cafeclehelsinki.com/",
+     "openingHours": "Tu-Su 09:00-16:00",
+     "cuisine": "breakfast, sandwich, brunch",
+     "detailed": true
+    },
+    {
+     "id": "node/4751244140",
+     "name": "Cafe Esplanad",
+     "lat": 60.16781,
+     "lon": 24.94401,
+     "address": "Pohjoisesplanadi 37",
+     "website": "https://cafeesplanad.fi/",
+     "openingHours": "Mo-Fr 08:00-21:00; Sa 10:00-20:00; Su 11:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3388093930",
+     "name": "Café Lov",
+     "lat": 60.17115,
+     "lon": 24.95683,
+     "address": "Mariankatu 13 B",
+     "website": "https://www.cafelov.fi/",
+     "openingHours": "Mo-We 09:00-19:00; Th-Sa 09:00-21:00",
+     "cuisine": "german",
+     "detailed": true
+    },
+    {
+     "id": "way/93949051",
+     "name": "Cafe Regatta",
+     "lat": 60.18017,
+     "lon": 24.91179,
+     "address": "Merikannontie 8",
+     "website": "http://caferegatta.fi/",
+     "openingHours": "09:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/9554548117",
+     "name": "Café Tampopo",
+     "lat": 60.16644,
+     "lon": 24.93283,
+     "address": "Eerikinkatu 15-17",
+     "website": "https://cafetampopo.fi/",
+     "openingHours": "Mo-Th 10:00-19:30; Fr-Sa 10:00-19:00",
+     "cuisine": "japanese, cafe",
+     "detailed": true
+    },
+    {
+     "id": "node/8856566815",
+     "name": "Cafelito",
+     "lat": 60.18291,
+     "lon": 24.9572,
+     "address": "Hämeentie 26",
+     "website": "https://cafelito.fi/",
+     "openingHours": "Mo 08:00-18:00; Tu-Th 08:00-22:00; Fr 08:00-23:00; Sa 09:00-23:00; Su off",
+     "cuisine": "coffee shop, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/962999980",
+     "name": "Cafferino Oba",
+     "lat": 60.16439,
+     "lon": 24.92924,
+     "address": "Kalevankatu 47",
+     "website": "https://cafferinooba.com/",
+     "openingHours": "Mo 09:00-18:00; Tu-Fr 09:00-20:00; Sa-Su 10:00-17:00",
+     "cuisine": "mediterranean, breakfast",
+     "detailed": true
+    },
+    {
+     "id": "node/14177928010",
+     "name": "Cloudspoon",
+     "lat": 60.16896,
+     "lon": 24.94124,
+     "address": "Mannerheimintie 3",
+     "website": "https://www.instagram.com/cloudspoonbistro",
+     "openingHours": "Mo-Sa 11:00-21:00; Su 11:00-20:00",
+     "cuisine": "pancake, japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1369465571",
+     "name": "Coffee House",
+     "lat": 60.17076,
+     "lon": 24.93901,
+     "address": "Asema-aukio 2",
+     "website": "https://www.raflaamo.fi/fi/ravintola/helsinki/coffee-house-asema-aukio-helsinki",
+     "openingHours": "Mo-Fr 09:00-19:00; Sa-Su 10:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/316422245",
+     "name": "Ducky Bubble Tea & More",
+     "lat": 60.17527,
+     "lon": 24.95064,
+     "address": "Unioninkatu 45",
+     "website": "https://duckybubbletea.fi/",
+     "openingHours": "Mo-Th 11:00-20:00; Fr-Sa 11:00-21:00; Su 12:00-18:00",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/6139262620",
+     "name": "Espresso House",
+     "lat": 60.1687,
+     "lon": 24.93805,
+     "address": "Mannerheimintie 14-20",
+     "website": "https://fi.espressohouse.com/coffee-shops/forum-hki/",
+     "openingHours": "Mo-Fr 07:45-21:00; Sa 09:00-21:00; Su 10:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/269497238",
+     "name": "Fazer Cafe",
+     "lat": 60.17624,
+     "lon": 24.92184,
+     "address": "Runeberginkatu 32",
+     "website": "https://www.fazer.fi/fazer-cafe/kahvilat/fazer-cafe-runeberginkatu/",
+     "openingHours": "Mo-Fr 07:30-20:00, Sa 08:00-19:00, Su 09:00-18:00",
+     "cuisine": "coffee shop, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/6139262619",
+     "name": "Fazer Café",
+     "lat": 60.16918,
+     "lon": 24.93778,
+     "address": "Mannerheimintie 20",
+     "website": "https://www.fazer.fi/fazer-cafe/kahvilat/fazer-cafe-forum/",
+     "openingHours": "Mo-Fr 07:30-20:00; Sa 08:30-20:00; Su 10:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/10709117707",
+     "name": "Fazer Café",
+     "lat": 60.1675,
+     "lon": 24.93579,
+     "address": "Annankatu 28",
+     "website": "https://www.fazer.fi/fazer-cafe/kahvilat/fazer-cafe-annankatu/",
+     "openingHours": "Mo-Fr 07:30-20:00; Sa 08:00-20:00; Su 09:00-18:00",
+     "cuisine": "coffee shop, cake, salad, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/10745326605",
+     "name": "Fazer Café",
+     "lat": 60.16892,
+     "lon": 24.93203,
+     "website": "https://www.fazer.fi/fazer-cafe/kahvilat/fazer-cafe-kamppi/",
+     "openingHours": "Mo-Fr 07:30-21:00; Sa 08:00-21:00; Su 09:00-20:00",
+     "cuisine": "cake, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6095700738",
+     "name": "Fazer Cafe Töölö",
+     "lat": 60.18357,
+     "lon": 24.91853,
+     "address": "Topeliuksenkatu 17",
+     "website": "https://www.fazer.fi/fazer-cafe/kahvilat/fazer-cafe-toolo/",
+     "openingHours": "Mo-Fr 07:00-20:00; Sa 08:00-19:00; Su 08:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/12151886005",
+     "name": "Finca Las Ventanas",
+     "lat": 60.16634,
+     "lon": 24.96485,
+     "address": "Kanavakatu 3",
+     "website": "https://www.fincalasventanas.com/",
+     "openingHours": "Mo-Fr 07:30-14:30; Sa-Su 08:30-15:00",
+     "cuisine": "colombian",
+     "detailed": true
+    },
+    {
+     "id": "node/151007313",
+     "name": "Gran Delicato",
+     "lat": 60.16522,
+     "lon": 24.93228,
+     "website": "https://www.grandelicato.fi/",
+     "openingHours": "Mo-Fr 08:00-20:00; Sa 10:00-18:00",
+     "cuisine": "international, sandwich, greek",
+     "detailed": true
+    },
+    {
+     "id": "node/8903756517",
+     "name": "Happy Waffle",
+     "lat": 60.17156,
+     "lon": 24.94727,
+     "address": "Vuorikatu 14",
+     "website": "https://www.happywaffle.fi/",
+     "openingHours": "We-Sa 12:00-18:00",
+     "cuisine": "pancake, savory pancakes",
+     "detailed": true
+    },
+    {
+     "id": "node/4226632191",
+     "name": "IPI Kulmakuppila",
+     "lat": 60.18323,
+     "lon": 24.95383,
+     "address": "Viides linja 9",
+     "website": "https://ipikulmakuppila.fi/",
+     "openingHours": "Mo-Fr 08:00-18:00; Sa 11:00-16:00; Su off",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/6049453051",
+     "name": "Joe & The Juice",
+     "lat": 60.16835,
+     "lon": 24.94257,
+     "address": "Aleksanterinkatu 52",
+     "website": "https://www.joejuice.com/",
+     "openingHours": "Mo-Fr 10:00-20:00; Sa 10:00-19:00; Su 12:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11156411288",
+     "name": "Kakkugalleria",
+     "lat": 60.18144,
+     "lon": 24.94945,
+     "address": "Siltasaarenkatu 13",
+     "website": "https://www.kakkugalleria.com/",
+     "openingHours": "Mo-Fr 09:00-18:00; Sa 10:00-18:00; Su 12:00-17:00",
+     "cuisine": "bakery",
+     "detailed": true
+    },
+    {
+     "id": "node/5648878021",
+     "name": "La Torrefazione",
+     "lat": 60.17058,
+     "lon": 24.93611,
+     "website": "https://www.latorre.fi/",
+     "openingHours": "Mo-Fr 07:30-20:00; Sa 09:00-19:00; Su 10:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1385407342",
+     "name": "Levain",
+     "lat": 60.17306,
+     "lon": 24.92316,
+     "website": "https://levain.fi/",
+     "openingHours": "Mo-Fr 08:00-17:00; Sa 08:30-17:00; Su 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11700007866",
+     "name": "Matcha Crew",
+     "lat": 60.1667,
+     "lon": 24.92971,
+     "address": "Lapinlahdenkatu 19",
+     "website": "https://matchacrew.com/",
+     "openingHours": "Mo-Sa 12:00-18:00",
+     "cuisine": "teahouse",
+     "detailed": true
+    },
+    {
+     "id": "node/303146160",
+     "name": "Momochi",
+     "lat": 60.16948,
+     "lon": 24.93783,
+     "address": "Mannerheimintie 20",
+     "website": "https://momochi.fi/",
+     "openingHours": "Mo-Fr 11:00-20:00; Sa 11:00-19:00; Su 12:00-18:00",
+     "cuisine": "japanese, cafe",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4756735884",
+     "name": "Gate A21",
+     "lat": 60.16676,
+     "lon": 24.9373,
+     "address": "Annankatu 21",
+     "website": "https://gatea21.fi/",
+     "openingHours": "Mo-Su 16:00-04:30",
+     "detailed": true
+    },
+    {
+     "id": "node/12250418000",
+     "name": "Kupoli",
+     "lat": 60.16935,
+     "lon": 24.93998,
+     "address": "Mannerheimintie 5",
+     "website": "https://www.kupolibar.com/"
+    }
+   ]
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/13647331901",
+     "name": "Beaky Basterd & Co.",
+     "lat": 60.16681,
+     "lon": 24.96419,
+     "address": "Ankkurikatu 5",
+     "website": "https://www.beakybasterd.fi/",
+     "openingHours": "Su-Th 15:00-22:00; Fr-Sa 17:00-01:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/1387141291",
+     "name": "Malt & Wine",
+     "lat": 60.18188,
+     "lon": 24.92672,
+     "address": "Mannerheimintie 58",
+     "website": "https://www.raflaamo.fi/fi/ravintola/helsinki/malt-wine",
+     "openingHours": "Mo-Th 15:00-00:00; Fr 14:00-02:00; Sa 12:00-02:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/340375052",
+     "name": "Sake Bar & Izakaya",
+     "lat": 60.17239,
+     "lon": 24.95386,
+     "address": "Vironkatu 11",
+     "website": "http://sakebar.fi/",
+     "openingHours": "Th-Mo 17:00-23:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/57720046",
+     "name": "Amsterdam",
+     "lat": 60.16258,
+     "lon": 24.91432,
+     "address": "Itämerenkuja 1 C",
+     "website": "https://www.raflaamo.fi/en/helsinki/amsterdam",
+     "openingHours": "Mo-Th 15:00-01:00; We-Th 13:00-01:00; Fr-Sa 13:00-02:00; Su 15:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/151006269",
+     "name": "Anna.K",
+     "lat": 60.16721,
+     "lon": 24.93668,
+     "address": "Annankatu 23",
+     "website": "https://www.karaokebar.net/",
+     "openingHours": "Mo-Th 17:00-03:00; Fr-Su 15:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2264313695",
+     "name": "Apéro",
+     "lat": 60.16423,
+     "lon": 24.92948,
+     "website": "https://www.apero.fi/",
+     "openingHours": "Su-Th 12:00-24:00, Fr,Sa 12:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/615217028",
+     "name": "Apollo Street Bar",
+     "lat": 60.16889,
+     "lon": 24.93872,
+     "address": "Mannerheimintie 20",
+     "website": "https://www.apolloliveclub.fi/apollo-street-bar/",
+     "openingHours": "Mo-Th 15:00-22:00; Fr-Sa 14:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7872950470",
+     "name": "Apotek viinibaari",
+     "lat": 60.16636,
+     "lon": 24.93247,
+     "address": "Lapinlahdenkatu 1a",
+     "website": "https://viinibaariapotek.fi/en/",
+     "openingHours": "Mo,Su off; Tu-Th 16:00-24:00; Fr 16:00-02:00; Sa 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7699177449",
+     "name": "Arkade",
+     "lat": 60.16556,
+     "lon": 24.93326,
+     "address": "Kalevankatu 30",
+     "website": "https://www.arkade.fi/",
+     "openingHours": "Mo \"with reservation\"; Tu-Fr 16:00-01:30; Sa 14:00-01:30; Su 16:00-01:30",
+     "detailed": true
+    },
+    {
+     "id": "node/1377211664",
+     "name": "Ateljée Bar Hotel Torni",
+     "lat": 60.16781,
+     "lon": 24.93864,
+     "address": "Yrjönkatu 26",
+     "website": "https://www.raflaamo.fi/fi/ravintola/helsinki/ateljee-bar",
+     "openingHours": "Mo 12:00-22:00; Tu-Th 12:00-00:00; Fr-Sa 12:00-02:00; Su 12:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1371731157",
+     "name": "Aussie bar",
+     "lat": 60.16997,
+     "lon": 24.93299,
+     "address": "Salomonkatu 5",
+     "website": "https://aussiebar.net/",
+     "openingHours": "Mo,Tu 14:00-24:00, We,Th 14:00-01:00, Fr,Sa 14:00-04:00, Su 14:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/606981023",
+     "name": "B.B.Badger&Co.",
+     "lat": 60.16344,
+     "lon": 24.94638,
+     "address": "Korkeavuorenkatu 25",
+     "website": "https://www.badgerbar.fi/",
+     "openingHours": "Mo-Fr 11:00-24:00, Sa,Su 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1930869347",
+     "name": "Bar All In",
+     "lat": 60.17195,
+     "lon": 24.94537,
+     "website": "http://www.barallin.fi/",
+     "openingHours": "Su-Th 15:00-02:00; Fr-Sa 15:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/60543533",
+     "name": "Bar Favela",
+     "lat": 60.17199,
+     "lon": 24.92048,
+     "address": "Mechelininkatu 13",
+     "website": "https://favela.fi/",
+     "openingHours": "Tu-Th 16:00-00:00; Fr 16:00-02:00; Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1785364202",
+     "name": "Bar Loose",
+     "lat": 60.16669,
+     "lon": 24.9374,
+     "address": "Annankatu 21",
+     "website": "https://barloose.com/",
+     "openingHours": "We,Th 18:00-02:00, Fr,Sa 17:00-04:30",
+     "detailed": true
+    },
+    {
+     "id": "node/11945164571",
+     "name": "Bar Mate",
+     "lat": 60.16426,
+     "lon": 24.94528,
+     "website": "https://barmate.fi/",
+     "openingHours": "We-Th 16:00-00:00; Fr-Sa 16:00-02:00; Su 18:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/319917192",
+     "name": "Bar Teos",
+     "lat": 60.18052,
+     "lon": 24.92487,
+     "address": "Runeberginkatu 61",
+     "website": "https://barteos.fi/",
+     "openingHours": "Mo-Su 15:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7086261469",
+     "name": "Barley & Bait",
+     "lat": 60.15824,
+     "lon": 24.91372,
+     "address": "Välimerenkatu 20",
+     "website": "https://barleybait.fi/",
+     "openingHours": "Su-Th 14:00-01:00, Fr,Sa 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4691849225",
+     "name": "Basbas Kulma",
+     "lat": 60.15781,
+     "lon": 24.93376,
+     "address": "Tehtaankatu 27-29",
+     "website": "https://basbas.fi/",
+     "openingHours": "Mo-Tu,Su off; We-Th 16:00-24:00; Fr 16:00-01:00; Sa 14:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/2264356392",
+     "name": "Base Bar",
+     "lat": 60.16795,
+     "lon": 24.93951,
+     "address": "Kalevankatu 3",
+     "website": "https://www.basebar.fi/",
+     "openingHours": "Mo-Th 16:00-03:00; Fr-Sa 14:00-04:00; Su 18:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/3423321083",
+     "name": "Bier-Bier",
+     "lat": 60.16555,
+     "lon": 24.94414,
+     "address": "Erottajankatu 13",
+     "website": "https://www.bier-bier.fi/",
+     "openingHours": "Mo-Th 16:00-24:00;Fr-Sa 14:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9113815604",
+     "name": "Bierhuis Rotterdam",
+     "lat": 60.16917,
+     "lon": 24.93264,
+     "address": "Tennispalatsinaukio 4",
+     "website": "https://www.raflaamo.fi/fi/helsinki/rotterdam",
+     "openingHours": "Su-Mo 11:00-00:00; Tu-Th 11:00-01:00; Fr-Sa 11:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10904389168",
+     "name": "Blanda",
+     "lat": 60.16896,
+     "lon": 24.95276,
+     "address": "Aleksanterinkatu 22",
+     "website": "https://blanda.fi/",
+     "openingHours": "We,Th 17:00-24:00, Fr,Sa 17:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10932053714",
+     "name": "Bob's Laundry",
+     "lat": 60.15913,
+     "lon": 24.93286,
+     "address": "Merimiehenkatu 40",
+     "website": "https://sonofapunch.com/",
+     "openingHours": "Tu 16:00-00:00; We, Th 16:00-01:00; Fr, Sa 16:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/151007198",
+     "name": "Boothill Rock Club",
+     "lat": 60.1647,
+     "lon": 24.93341,
+     "address": "Lönnrotinkatu 25",
+     "website": "https://www.boothill.fi/",
+     "openingHours": "Mo-Su 10:00-01:30",
+     "detailed": true
+    },
+    {
+     "id": "node/8874925438",
+     "name": "Bricco",
+     "lat": 60.16777,
+     "lon": 24.93962,
+     "address": "Kalevankatu 4",
+     "website": "https://www.bricco.fi/",
+     "openingHours": "Tu-Th 14:00-23:00; Fr 14:00-01:00; Sa 12:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9417739108",
+     "name": "Cafe del Mar",
+     "lat": 60.18387,
+     "lon": 24.95135,
+     "address": "Viides linja 16",
+     "website": "https://www.cafedelmar.fi/",
+     "openingHours": "Mo-Su 10:30-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1589624914",
+     "name": "Café Talo",
+     "lat": 60.18034,
+     "lon": 24.9507,
+     "address": "Hämeentie 2 B",
+     "website": "https://cafetalo.fi/",
+     "openingHours": "Mo 11:00-24:00; Tu-Fr 11:00-02:00; Sa 12:00-02:00; Su 11:00-16:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4749332825",
+     "name": "Chihuahua Julep",
+     "lat": 60.16505,
+     "lon": 24.9442,
+     "address": "Erottajankatu 9",
+     "website": "http://www.chihuahuajulep.fi/",
+     "openingHours": "Mo-Su 17:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4433247906",
+     "name": "Crazy Wine",
+     "lat": 60.16902,
+     "lon": 24.95984,
+     "address": "Kanavaranta 3",
+     "website": "https://crazywine.fi/",
+     "openingHours": "We-Th 16:00-23:00; Fr 16:00-02:00; Sa 14:00-02:00",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/247155970",
+     "name": "Alcatraz Club",
+     "lat": 60.16771,
+     "lon": 24.93636,
+     "address": "Eerikinkatu 3",
+     "website": "https://www.alcatraz.fi/",
+     "openingHours": "Mo-Su 20:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/331112168",
+     "name": "Apollo Live Club",
+     "lat": 60.16874,
+     "lon": 24.93891,
+     "address": "Mannerheimintie 16",
+     "website": "https://apolloliveclub.fi/",
+     "openingHours": "Fr-Sa 23:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10887503186",
+     "name": "Bar Ihku",
+     "lat": 60.17045,
+     "lon": 24.93169,
+     "address": "Antinkatu 1",
+     "website": "https://barihku.fi/",
+     "openingHours": "Su-Th 21:00-05:00, Fr,Sa 16:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1381017808",
+     "name": "El Patron",
+     "lat": 60.16927,
+     "lon": 24.93717,
+     "address": "Simonkatu 6",
+     "website": "https://www.elpatron.fi/",
+     "openingHours": "Mo-Th,Su off; Fr-Sa 22:00-04:30",
+     "detailed": true
+    },
+    {
+     "id": "node/13415369402",
+     "name": "H₂O₂ Bar",
+     "lat": 60.18423,
+     "lon": 24.96029,
+     "address": "Kaikukatu 4",
+     "website": "https://h2o2.bar/",
+     "openingHours": "Fr-Sa 21:00-04:30",
+     "detailed": true
+    },
+    {
+     "id": "node/1618018213",
+     "name": "Heidi’s Bier Bar Helsinki",
+     "lat": 60.16744,
+     "lon": 24.93915,
+     "address": "Yrjönkatu 24",
+     "website": "https://www.heidisbierbar.fi/",
+     "openingHours": "Tu 20:00-02:00; We-Th 17:00-04:30; Fr-Sa 17:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/946387586",
+     "name": "Kaarle XII",
+     "lat": 60.16562,
+     "lon": 24.94749,
+     "address": "Kasarmikatu 40",
+     "website": "http://www.kaarle.com/",
+     "openingHours": "Th-Sa 21:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/648525100",
+     "name": "Karaoke Nighclub Swengi",
+     "lat": 60.16361,
+     "lon": 24.943,
+     "address": "Iso Roobertinkatu 10",
+     "website": "https://swengi.fi/",
+     "openingHours": "We-Sa 19:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11794085832",
+     "name": "Noname Bar & Nightclub",
+     "lat": 60.16759,
+     "lon": 24.93909,
+     "address": "Kalevankatu 6",
+     "website": "https://nonamehki.fi/",
+     "openingHours": "Tu 18:00-02:00; We-Fr 18:00-05:00; Sa 16:00-05:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1371747507",
+     "name": "Semifinal",
+     "lat": 60.16826,
+     "lon": 24.93285,
+     "address": "Urho Kekkosen katu 6, sisäpiha/inner yard",
+     "website": "http://www.semifinal.fi/",
+     "openingHours": "Su-Th 20:00-01:00, Fr 20:00-03:00, Sa 20:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/1371747508",
+     "name": "Tavastia Klubi",
+     "lat": 60.1685,
+     "lon": 24.93297,
+     "address": "Urho Kekkosen katu 4-6",
+     "website": "https://tavastiaklubi.fi/",
+     "openingHours": "Su-Th 20:00-01:00, Fr 20:00-03:00, Sa 20:00-04:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13443826824",
+     "name": "Charm",
+     "lat": 60.16689,
+     "lon": 24.94501,
+     "address": "Eteläesplanadi 22",
+     "openingHours": "Fr-Sa 21:00-04:00"
+    },
+    {
+     "id": "node/13271898479",
+     "name": "Club Stadion",
+     "lat": 60.18691,
+     "lon": 24.92862,
+     "website": "https://clubstadion.fi/"
+    },
+    {
+     "id": "node/4675433986",
+     "name": "G Livelab",
+     "lat": 60.16405,
+     "lon": 24.94457,
+     "address": "Yrjönkatu 3",
+     "website": "https://www.glivelab.fi/"
+    },
+    {
+     "id": "node/2285959821",
+     "name": "Kaiku",
+     "lat": 60.18376,
+     "lon": 24.9599,
+     "address": "Kaikukatu 4",
+     "website": "https://clubkaiku.fi/"
+    },
+    {
+     "id": "way/22563578",
+     "name": "Kaivohuone",
+     "lat": 60.15755,
+     "lon": 24.95594,
+     "address": "Iso Puistotie 1",
+     "website": "https://www.kaivohuone.fi/"
+    },
+    {
+     "id": "node/11746037019",
+     "name": "Kult",
+     "lat": 60.18807,
+     "lon": 24.94421,
+     "website": "https://kulttuuritalo.fi/kult/"
+    },
+    {
+     "id": "node/848590998",
+     "name": "Kuudes linja",
+     "lat": 60.18373,
+     "lon": 24.95955,
+     "address": "Hämeentie 13b",
+     "website": "https://www.kuudeslinja.com/"
+    },
+    {
+     "id": "node/4756333505",
+     "name": "Le Bloom",
+     "lat": 60.16705,
+     "lon": 24.94786,
+     "openingHours": "Mo,Tu 17:00-23:00, We,Th 16:00-24:00, Fr 17:00-04:30, Sa 16:00-04:30"
+    },
+    {
+     "id": "node/6255654108",
+     "name": "Maxine",
+     "lat": 60.16942,
+     "lon": 24.93407,
+     "address": "Urho Kekkosen katu 1",
+     "website": "https://maxine.fi/"
+    },
+    {
+     "id": "node/848591001",
+     "name": "Siltanen",
+     "lat": 60.18413,
+     "lon": 24.96029,
+     "website": "https://www.siltanen.org/"
+    },
+    {
+     "id": "node/6266679085",
+     "name": "Hercules",
+     "lat": 60.17012,
+     "lon": 24.94245,
+     "address": "Keskuskatu 8"
+    },
+    {
+     "id": "node/12000505642",
+     "name": "Mummotunneli",
+     "lat": 60.16837,
+     "lon": 24.94489
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1716 @@
+{
+ "version": 1,
+ "cityCode": "DUB",
+ "fetchedAt": "2026-10-16T23:40:25.404Z",
+ "radiusKm": 3,
+ "license": {
+  "name": "ODbL-1.0",
+  "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap katkıcıları"
+ },
+ "sources": [
+  {
+   "name": "OpenStreetMap (Overpass API)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "license": "ODbL-1.0",
+   "usedFor": "mekânlar, adresler, açılış saatleri"
+  },
+  {
+   "name": "Wikidata",
+   "url": "https://www.wikidata.org",
+   "license": "CC0-1.0",
+   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+  },
+  {
+   "name": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org",
+   "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
+   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+  }
+ ],
+ "photo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/1280px-Dublin_-_aerial_-_2025-07-07_01.jpg",
+  "width": 1280,
+  "height": 720,
+  "author": "瑞丽江的河水",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_-_aerial_-_2025-07-07_01.jpg"
+ },
+ "categories": {
+  "see": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/429638456",
+     "name": "Book of Kells",
+     "lat": 53.3439,
+     "lon": -6.25649,
+     "address": "College Street",
+     "website": "https://www.visittrinity.ie/book-of-kells-experience/",
+     "openingHours": "Mo-Sa 08:30-17:00; Su 09:00-17:00",
+     "wikipediaCount": 52
+    },
+    {
+     "id": "way/350242806",
+     "name": "Dublin Kalesi",
+     "localName": "Dublin Castle",
+     "lat": 53.34265,
+     "lon": -6.26694,
+     "address": "Castle Street",
+     "website": "https://www.dublincastle.ie/",
+     "openingHours": "Mo-Sa 09:45-16:45; Su 12:00-16:45",
+     "wikipediaCount": 38
+    },
+    {
+     "id": "way/43981182",
+     "name": "Saint Patrick's Cathedral",
+     "lat": 53.33955,
+     "lon": -6.27148,
+     "address": "Patrick Street",
+     "website": "https://www.stpatrickscathedral.ie/",
+     "openingHours": "Mo-Fr 09:30-17:00; Sa 09:00-17:00; Su 09:00-10:30,13:00-14:30",
+     "wikipediaCount": 33
+    },
+    {
+     "id": "way/231082840",
+     "name": "National Library of Ireland",
+     "lat": 53.34113,
+     "lon": -6.25451,
+     "address": "Kildare Street 7/8",
+     "website": "https://www.nli.ie/",
+     "openingHours": "Mo-We 09:30-19:45; Th-Fr 09:30-16:45; Sa 09:30-12:45",
+     "wikipediaCount": 32
+    },
+    {
+     "id": "way/96578181",
+     "name": "Spire of Dublin",
+     "lat": 53.3498,
+     "lon": -6.26025,
+     "wikipediaCount": 31
+    },
+    {
+     "id": "way/27291101",
+     "name": "Christ Church Cathedral",
+     "lat": 53.34341,
+     "lon": -6.2712,
+     "address": "Christchurch Place 6",
+     "website": "https://christchurchcathedral.ie/",
+     "openingHours": "Mo-Sa 09:30-18:00; Mar-Oct Su 12:30-14:30,16:30-18:00; Apr-Sep Mo-Sa 09:30-19:00; Apr-Sep,Nov-Feb Su 12:30-14:30,16:30-19:00; Nov-Feb Mo-Sa 09:30-17:00",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "relation/289528",
+     "name": "General Post Office",
+     "lat": 53.34929,
+     "lon": -6.26121,
+     "address": "O'Connell Street Lower",
+     "openingHours": "Mo-Sa 08:30-18:00",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "node/2986012929",
+     "name": "Temple Bar",
+     "lat": 53.3455,
+     "lon": -6.26311,
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/76592311",
+     "name": "Temple Bar",
+     "lat": 53.34522,
+     "lon": -6.26472,
+     "wikipediaCount": 21
+    },
+    {
+     "id": "way/399007550",
+     "name": "Ha'penny Bridge",
+     "lat": 53.34633,
+     "lon": -6.26309,
+     "openingHours": "24/7",
+     "wikipediaCount": 19
+    },
+    {
+     "id": "way/269121322",
+     "name": "Royal Irish Academy",
+     "lat": 53.3407,
+     "lon": -6.25783,
+     "address": "Dawson Street 19",
+     "website": "https://www.ria.ie/",
+     "wikipediaCount": 16
+    },
+    {
+     "id": "way/44597908",
+     "name": "Guinness Storehouse",
+     "lat": 53.34185,
+     "lon": -6.28673,
+     "address": "Market Street South",
+     "website": "https://www.guinness-storehouse.com/",
+     "openingHours": "Mo-Su 09:30-17:00",
+     "wikipediaCount": 12
+    },
+    {
+     "id": "way/60270053",
+     "name": "The Convention Centre Dublin",
+     "lat": 53.34819,
+     "lon": -6.23952,
+     "address": "North Wall Quay 1",
+     "website": "https://www.theccd.ie/",
+     "openingHours": "Mo-Th 08:30-17:00; Fr 08:30-16:30",
+     "wikipediaCount": 11
+    },
+    {
+     "id": "node/5968488535",
+     "name": "Hungry Tree",
+     "lat": 53.35213,
+     "lon": -6.27305,
+     "wikipediaCount": 10
+    },
+    {
+     "id": "way/229658261",
+     "name": "Marsh's Library",
+     "lat": 53.3392,
+     "lon": -6.27041,
+     "address": "St. Patrick's Close",
+     "website": "https://www.marshlibrary.ie/",
+     "openingHours": "Mo 09:30-13:00, 14:00-17:00; We-Fr 09:30-13:00, 14:00-17:00; Sa 10:00-17:00",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/25631284",
+     "name": "Dublin City Hall",
+     "lat": 53.34386,
+     "lon": -6.26716,
+     "address": "Cork Hill",
+     "website": "https://www.dublincity.ie/residential/arts-and-events/city-hall",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/16141015",
+     "name": "National Botanic Gardens",
+     "lat": 53.37219,
+     "lon": -6.27324,
+     "address": "Botanic Road",
+     "website": "https://botanicgardens.ie/",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/40498842",
+     "name": "Wellington Monument",
+     "lat": 53.34904,
+     "lon": -6.30312,
+     "wikipediaCount": 7
+    },
+    {
+     "id": "node/9873301517",
+     "name": "National Leprechaun Museum",
+     "lat": 53.34732,
+     "lon": -6.26886,
+     "address": "Mary's Abbey 2-3",
+     "website": "https://www.leprechaunmuseum.ie/",
+     "openingHours": "Mo-Su 10:00-18:30",
+     "wikipediaCount": 6
+    },
+    {
+     "id": "node/10013398691",
+     "name": "The Brazen Head",
+     "lat": 53.34494,
+     "lon": -6.27631,
+     "address": "Bridge Street Lower 19-20",
+     "website": "https://brazenhead.com/",
+     "openingHours": "Mo-Th 10:30-23:30; Fr-Sa 10:30-00:30; Su 12:30-23:30",
+     "cuisine": "irish, fish and chips",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/41685963",
+     "name": "Royal Hospital Kilmainham",
+     "lat": 53.34346,
+     "lon": -6.30255,
+     "address": "Military Road",
+     "website": "https://rhk.ie/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "relation/18631966",
+     "name": "Fusiliers' Arch",
+     "lat": 53.33966,
+     "lon": -6.26051,
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/228705547",
+     "name": "Teeling Whiskey Company",
+     "lat": 53.33759,
+     "lon": -6.2771,
+     "address": "Newmarket 13-17",
+     "website": "https://teelingwhiskey.com/",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/906593798",
+     "name": "Charles Stewart Parnell Monument",
+     "lat": 53.35259,
+     "lon": -6.26148,
+     "website": "https://www.buildingsofireland.ie/buildings-search/building/50010557/charles-stewart-parnell-monument-oconnell-street-upper-parnell-street-dublin-dublin",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/603833917",
+     "name": "Daniel O'Connell",
+     "lat": 53.34771,
+     "lon": -6.25934,
+     "website": "https://www.buildingsofireland.ie/buildings-search/building/50010320/oconnell-monument-oconnell-street-lower-dublin-1-dublin",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/310207793",
+     "name": "Jameson Chimney",
+     "lat": 53.34849,
+     "lon": -6.27784,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/635060745",
+     "name": "Saint Audoen's Gate",
+     "lat": 53.34395,
+     "lon": -6.27402,
+     "wikipediaCount": 1
+    },
+    {
+     "id": "node/9994239510",
+     "name": "Custom House Visitor Centre",
+     "lat": 53.34845,
+     "lon": -6.25317,
+     "address": "Custom House Quay",
+     "website": "https://heritageireland.ie/custom-house-visitor-centre/",
+     "openingHours": "Mo-Su 09:30-16:45"
+    },
+    {
+     "id": "way/239059341",
+     "name": "Pearse Lyons",
+     "lat": 53.34372,
+     "lon": -6.28943,
+     "address": "James's Street 121/122",
+     "website": "https://www.pearselyonsdistillery.com/",
+     "openingHours": "Mo-Sa 09:30-18:00; Su 11:30-18:00; PH 11:30-18:00"
+    },
+    {
+     "id": "way/231250679",
+     "name": "Sweny's Pharmacy",
+     "lat": 53.34188,
+     "lon": -6.25055,
+     "address": "Lincoln Place 1",
+     "website": "https://www.sweny.ie/",
+     "openingHours": "Mo-Sa 11:00-17:00; Su off"
+    }
+   ]
+  },
+  "museum": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "relation/3101326",
+     "name": "National Gallery of Ireland",
+     "lat": 53.34111,
+     "lon": -6.2525,
+     "address": "Merrion Square West 89",
+     "website": "https://www.nationalgallery.ie/",
+     "openingHours": "Su,Mo 11:00-17:30; Tu,We,Fr,Sa 09:15-17:30; Th 09:15-20:30",
+     "wikipediaCount": 29
+    },
+    {
+     "id": "node/10020524598",
+     "name": "Chester Beatty Library",
+     "lat": 53.3422,
+     "lon": -6.26745,
+     "address": "Dublin Castle",
+     "website": "https://chesterbeatty.ie/",
+     "openingHours": "Mo-Fr 10:00-17:00; Sa 11:00-17:00; Su 13:00-17:00",
+     "wikipediaCount": 25
+    },
+    {
+     "id": "relation/21749",
+     "name": "Irish Museum of Modern Art",
+     "lat": 53.34294,
+     "lon": -6.30005,
+     "address": "Military Road",
+     "website": "https://imma.ie/",
+     "openingHours": "Tu-Fr 11:30-17:30; Sa 10:00-17:30; Su 12:00-17:30; PH 12:00-17:30",
+     "wikipediaCount": 22
+    },
+    {
+     "id": "way/357707494",
+     "name": "Hugh Lane Gallery",
+     "lat": 53.35448,
+     "lon": -6.26488,
+     "address": "Parnell Square North 22",
+     "website": "https://www.hughlane.ie/",
+     "wikipediaCount": 10
+    },
+    {
+     "id": "node/3585952597",
+     "name": "Dublinia",
+     "lat": 53.34324,
+     "lon": -6.27202,
+     "address": "Saint Michael's Hill",
+     "website": "https://www.dublinia.ie/",
+     "openingHours": "Mo-Su 10:00-18:30",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "way/47638298",
+     "name": "Royal Hibernian Academy",
+     "lat": 53.33708,
+     "lon": -6.25492,
+     "address": "Ely Place Upper 15",
+     "website": "http://www.royalhibernianacademy.ie/",
+     "wikipediaCount": 9
+    },
+    {
+     "id": "node/4427119837",
+     "name": "EPIC The Irish Emigration Museum",
+     "lat": 53.34827,
+     "lon": -6.24798,
+     "address": "Custom House Quay",
+     "website": "https://epicchq.com/",
+     "openingHours": "10:00-18:45",
+     "wikipediaCount": 8
+    },
+    {
+     "id": "way/281253912",
+     "name": "Dublin Writers Museum",
+     "lat": 53.35442,
+     "lon": -6.26403,
+     "address": "Parnell Square North 18",
+     "website": "http://www.writersmuseum.com/",
+     "wikipediaCount": 7
+    },
+    {
+     "id": "way/590878259",
+     "name": "Jeanie Johnston",
+     "lat": 53.34762,
+     "lon": -6.24674,
+     "address": "Custom House Quay",
+     "website": "https://jeaniejohnston.ie/",
+     "openingHours": "Mo-Su 11:00-16:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "node/6788214010",
+     "name": "Museum of Literature Ireland",
+     "lat": 53.33679,
+     "lon": -6.26042,
+     "address": "St. Stephen's Green 86",
+     "website": "https://moli.ie/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/231082847",
+     "name": "National Museum of Ireland, Natural History",
+     "lat": 53.33989,
+     "lon": -6.25334,
+     "address": "Merrion Square West 49",
+     "website": "https://www.museum.ie/en-IE/Museums/Natural-History",
+     "openingHours": "off \"Closed temporarily\"",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/252807597",
+     "name": "The James Joyce Centre",
+     "lat": 53.35419,
+     "lon": -6.25997,
+     "address": "North Great George's Street 35",
+     "website": "https://jamesjoyce.ie/",
+     "openingHours": "Tu-Sa 10:30-16:30",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/57371552",
+     "name": "National Print Museum",
+     "lat": 53.3352,
+     "lon": -6.2354,
+     "website": "https://www.nationalprintmuseum.ie/",
+     "wikipediaCount": 5
+    },
+    {
+     "id": "way/48806099",
+     "name": "National Museum of Ireland (Decorative Arts & History)",
+     "lat": 53.34882,
+     "lon": -6.28573,
+     "website": "https://www.museum.ie/en-IE/Museums/Decorative-Arts-History",
+     "openingHours": "Tu-Sa 10:00-17:00; Su,Mo 13:00-17:00",
+     "wikipediaCount": 4
+    },
+    {
+     "id": "relation/5982000",
+     "name": "National Museum of Ireland, Decorative Arts & History",
+     "lat": 53.34887,
+     "lon": -6.28872,
+     "wikipediaCount": 4
+    },
+    {
+     "id": "node/878517402",
+     "name": "Douglas Hyde Gallery",
+     "lat": 53.34316,
+     "lon": -6.25771,
+     "website": "https://www.douglashydegallery.com/",
+     "openingHours": "Mo-Fr 11:00-18:00;Th 11:00-19:00;Sa 11:00-16:45",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/2357100885",
+     "name": "The Little Museum of Dublin",
+     "lat": 53.33954,
+     "lon": -6.2584,
+     "address": "St. Stephen's Green 15",
+     "website": "https://www.littlemuseum.ie/",
+     "openingHours": "Mo-We 09:30-17:00, Th 09:30-20:00, Fr-Su 09:30-17:00",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/755734351",
+     "name": "Irish Jewish Museum",
+     "lat": 53.33073,
+     "lon": -6.26937,
+     "address": "Walworth Road 3",
+     "website": "http://www.jewishireland.org/museum.html",
+     "wikipediaCount": 3
+    },
+    {
+     "id": "node/470326898",
+     "name": "Old Jameson Distillery",
+     "lat": 53.34812,
+     "lon": -6.27708,
+     "website": "http://www.tours.jamesonwhiskey.com/Home/The-Old-Jameson-Distillery-Dublin.aspx",
+     "openingHours": "Mo-Su 09:00-17:30",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "way/281028379",
+     "name": "14 Henrietta Street museum",
+     "lat": 53.35235,
+     "lon": -6.27015,
+     "address": "Henrietta Street 14",
+     "website": "https://14henriettastreet.ie/",
+     "wikipediaCount": 2
+    },
+    {
+     "id": "node/3560461559",
+     "name": "Garda Museum",
+     "lat": 53.34366,
+     "lon": -6.26625,
+     "address": "Dublin Castle",
+     "website": "https://www.garda.ie/en/about-us/our-history/the-garda-museum-at-dublin-castle/",
+     "openingHours": "Mo-Fr 10:00-14:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "way/231140810",
+     "name": "Irish Architectural Archive",
+     "lat": 53.3387,
+     "lon": -6.24683,
+     "address": "Merrion Square East 44-45",
+     "website": "https://iarc.ie/",
+     "openingHours": "Tu-Fr 10:00-17:00",
+     "wikipediaCount": 1
+    },
+    {
+     "id": "relation/4547344",
+     "name": "Custom House",
+     "lat": 53.34845,
+     "lon": -6.25317,
+     "website": "https://heritageireland.ie/customs-house-visitor-centre",
+     "openingHours": "10:00-16:45"
+    },
+    {
+     "id": "way/316377240",
+     "name": "Gallery of Photography",
+     "lat": 53.34483,
+     "lon": -6.26533,
+     "website": "https://photomuseumireland.ie/",
+     "openingHours": "Tu-Sa 11:00-18:00; Su 13:00-18:00"
+    },
+    {
+     "id": "node/13372467623",
+     "name": "GalleryX",
+     "lat": 53.33782,
+     "lon": -6.25444,
+     "address": "Hume Street 11",
+     "website": "http://www.galleryx.ie/",
+     "openingHours": "Th-Sa 13:00-17:00"
+    },
+    {
+     "id": "node/915546257",
+     "name": "Georgian House Museum",
+     "lat": 53.33789,
+     "lon": -6.24773,
+     "address": "Fitzwilliam Street Lower 29",
+     "website": "https://numbertwentynine.ie/",
+     "openingHours": "Tu-Sa 10:00-17:00; Su 12:00-17:00"
+    },
+    {
+     "id": "node/13240990292",
+     "name": "GPO Museum",
+     "lat": 53.34946,
+     "lon": -6.26062,
+     "address": "O'Connell Street Lower",
+     "website": "http://www.gpomuseum.ir/",
+     "openingHours": "Mo-Sa 10:00-17:00"
+    },
+    {
+     "id": "node/4234320290",
+     "name": "Irish Whiskey Museum",
+     "lat": 53.34414,
+     "lon": -6.25954,
+     "address": "Grafton Street 119",
+     "website": "https://irishwhiskeymuseum.ie/",
+     "openingHours": "Mo-Su 10:00-18:00"
+    },
+    {
+     "id": "node/3005930483",
+     "name": "Mary Aikenhead Heritage Centre",
+     "lat": 53.32642,
+     "lon": -6.2807,
+     "address": "Harold's Cross Road",
+     "website": "http://www.rscmaheritage.com/",
+     "openingHours": "Tu-Su 10:30-16:00"
+    },
+    {
+     "id": "way/1029441205",
+     "name": "National Museum of Ireland, Archaeology",
+     "lat": 53.34023,
+     "lon": -6.25497,
+     "address": "Kildare Street",
+     "website": "https://www.museum.ie/en-IE/Museums/Archaeology",
+     "openingHours": "Tu-Sa 10:00-17:00; Su,Mo 13:00-17:00"
+    }
+   ]
+  },
+  "viewpoint": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/3339976701",
+     "name": "Former swimming area",
+     "lat": 53.37001,
+     "lon": -6.26179
+    }
+   ]
+  },
+  "restaurant": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/567740010",
+     "name": "Al Vesuvio",
+     "lat": 53.34487,
+     "lon": -6.26513,
+     "website": "https://www.alvesuviopizzeria.com/",
+     "openingHours": "Mo-Th 16:00-22:00; Fr 13:00-17:00; Su 13:00-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/6568359164",
+     "name": "Aleena",
+     "lat": 53.34462,
+     "lon": -6.26437,
+     "address": "Temple Lane South 3",
+     "website": "https://www.aleenarestaurant.ie/",
+     "openingHours": "Th-Su 17:00-04:30",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/11834909469",
+     "name": "Andhra Bhavan",
+     "lat": 53.35055,
+     "lon": -6.25853,
+     "address": "Marlborough Street 85",
+     "website": "https://andhrabhavan.ie/",
+     "openingHours": "Tu-Fr 12:00-23:00; Sa-Su 11:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/4854013874",
+     "name": "Aperitivo",
+     "lat": 53.34445,
+     "lon": -6.26718,
+     "address": "Parliament Street 6",
+     "website": "https://www.aperitivo.ie/",
+     "openingHours": "Mo-Th 08:00-22:00; Fr-Sa 08:00-23:30; Su 12:00-20:00",
+     "cuisine": "pizza, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/1423559522",
+     "name": "Bad Ass Cafe",
+     "lat": 53.34531,
+     "lon": -6.26293,
+     "address": "Crown Alley 9-11",
+     "website": "https://badasstemplebar.ie/",
+     "openingHours": "Mo-We 12:00-24:00; Th 12:00-01:00; Fr 12:00-01:30; Sa 09:00-01:30; Su 09:00-24:00",
+     "cuisine": "burger, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2997549698",
+     "name": "Boss Stop",
+     "lat": 53.3423,
+     "lon": -6.26441,
+     "address": "George's Street Great South 24",
+     "website": "https://www.bossstop.ie/",
+     "openingHours": "Su-We 12:00-21:30; Th-Sa 12:00-22:00",
+     "cuisine": "asian",
+     "detailed": true
+    },
+    {
+     "id": "node/8423521717",
+     "name": "Bullet Duck & Dumplings",
+     "lat": 53.34827,
+     "lon": -6.26927,
+     "address": "Mary Street Little 27",
+     "website": "https://bulletrestaurantco.ie/",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/3490848628",
+     "name": "Bunsen",
+     "lat": 53.34558,
+     "lon": -6.26432,
+     "address": "Essex Street East 22",
+     "website": "https://www.bunsen.ie/",
+     "openingHours": "Mo 12:00-23:00, Tu,We,Su 12:00-21:30, Th-Sa 12:00-22:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/6052834703",
+     "name": "Bunsen",
+     "lat": 53.34124,
+     "lon": -6.25999,
+     "address": "Anne Street South 3",
+     "website": "https://www.bunsen.ie/",
+     "openingHours": "Mo-We 12:00-21:30,Th-Sa 12:00-22:30,Su 13:00-21:30",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
+     "id": "node/2337204153",
+     "name": "Camile",
+     "lat": 53.32563,
+     "lon": -6.26527,
+     "address": "Rathmines Road Lower 133",
+     "website": "https://www.camile.ie/locations/rathmines",
+     "openingHours": "Mo-Su 12:30-23:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/4046019696",
+     "name": "Camile",
+     "lat": 53.34428,
+     "lon": -6.24939,
+     "address": "Pearse Street 43",
+     "website": "https://www.camile.ie/",
+     "openingHours": "Mo-Su 12:00-23:00",
+     "cuisine": "thai",
+     "detailed": true
+    },
+    {
+     "id": "node/7593633416",
+     "name": "Chai Yo",
+     "lat": 53.33577,
+     "lon": -6.24778,
+     "address": "Lower Baggot Street 100",
+     "website": "https://www.chaiyo.ie/",
+     "openingHours": "Mo-We 17:30-23:00; Th-Fr 12:30-15:00, 17:30-00:00; Sa 15:00-00:30; Su 15:30-22:00",
+     "cuisine": "japanese, thai",
+     "detailed": true
+    },
+    {
+     "id": "node/2860088689",
+     "name": "Cornucopia",
+     "lat": 53.3431,
+     "lon": -6.26143,
+     "address": "Wicklow Street 19-20",
+     "website": "https://www.cornucopia.ie/",
+     "openingHours": "Mo-Sa 08:30-22:00; Su 12:00-22:00",
+     "cuisine": "soup, salad, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/6064664248",
+     "name": "Dosa Dosa",
+     "lat": 53.33702,
+     "lon": -6.29891,
+     "address": "South Circular Road 562",
+     "website": "https://www.dosadosa.ie/",
+     "openingHours": "Tu-Fr 17:00-22:00; Sa-Su 12:00-22:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/5043380121",
+     "name": "Dublin Pizza Company",
+     "lat": 53.339,
+     "lon": -6.26583,
+     "address": "Aungier Street 32",
+     "website": "https://www.dublinpizzacompany.ie/",
+     "openingHours": "Mo-Su 17:00-24:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/681428076",
+     "name": "Dunne & Crescenzi",
+     "lat": 53.34228,
+     "lon": -6.25665,
+     "address": "South Frederick Street 14-16",
+     "website": "https://www.dunneandcrescenzi.com/",
+     "openingHours": "Mo-Sa 08:00-23:00; Su 09:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/2317007276",
+     "name": "Eatokyo",
+     "lat": 53.34602,
+     "lon": -6.26262,
+     "address": "Wellington Quay 51",
+     "website": "https://eatokyo.ie/",
+     "openingHours": "Mo-Th, Su 12:00-22:00; Fr, Sa 12:00-23:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/2242977447",
+     "name": "F.X. Buckley",
+     "lat": 53.34459,
+     "lon": -6.26393,
+     "address": "Crow Street 2",
+     "website": "https://www.thebuckleycollection.ie/crow-street",
+     "openingHours": "Mo-Su 17:00-23:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/5219702777",
+     "name": "Flanagans Restaurant",
+     "lat": 53.35031,
+     "lon": -6.26096,
+     "address": "O'Connell Street Upper 61",
+     "website": "https://www.flanagansrestaurant.ie/",
+     "openingHours": "Mo-Sa 09:00-23:00; Su 09:00-22:30",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/2211035750",
+     "name": "FXB Butcher",
+     "lat": 53.33732,
+     "lon": -6.25185,
+     "address": "Pembroke Street 1A",
+     "website": "https://www.fxbuckleybutchers.ie/",
+     "openingHours": "Tu-Sa 10:00-19:00; Su 11:00-16:00",
+     "cuisine": "steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/5590627025",
+     "name": "Grain & Grill Restaurant",
+     "lat": 53.34346,
+     "lon": -6.24365,
+     "address": "Pearse Street",
+     "website": "https://www.maldronhotels.com/dining/grain-and-grill-restaurants/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "cuisine": "regional, pizza, burger, seasonal, irish, steak, pasta",
+     "detailed": true
+    },
+    {
+     "id": "node/3126144735",
+     "name": "Hellfire",
+     "lat": 53.34572,
+     "lon": -6.25948,
+     "address": "Westmoreland Street 7",
+     "website": "https://www.hellfire.ie/",
+     "openingHours": "Mo-Th 12:00-16:00,17:00-22:30; Fr-Sa 12:00-16:00,17:00-23:00; Su 14:00-16:00,17:00-22:30",
+     "cuisine": "woodfired food",
+     "detailed": true
+    },
+    {
+     "id": "node/8974054247",
+     "name": "Kopitiam",
+     "lat": 53.3492,
+     "lon": -6.26892,
+     "address": "Capel Street 53",
+     "website": "https://www.kopitiam.ie/",
+     "openingHours": "Th-Tu 12:00-21:00",
+     "cuisine": "malaysian",
+     "detailed": true
+    },
+    {
+     "id": "node/446782704",
+     "name": "L'Gueuleton",
+     "lat": 53.34193,
+     "lon": -6.26434,
+     "address": "Fade Street 1",
+     "website": "https://www.lgueuleton.com/",
+     "openingHours": "Mo-Sa 12:30-15:30,17:30-10:00, Su 12:00-15:30,17:30-09:00",
+     "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/2996988358",
+     "name": "Lucky Tortoise Dumpling Company",
+     "lat": 53.34091,
+     "lon": -6.26539,
+     "address": "Aungier Street 8",
+     "website": "https://www.luckytortoise.co/",
+     "openingHours": "Mo-Sa 12:00-22:00, Su 12:00-20:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/1357754366",
+     "name": "Luigi Malones",
+     "lat": 53.34514,
+     "lon": -6.26351,
+     "address": "Cecilia Street",
+     "website": "https://luigimalonesdublin.com/",
+     "openingHours": "Mo-Sa 12:00-23:00+; Su 13:00-23:00+",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4201954497",
+     "name": "Milano",
+     "lat": 53.34429,
+     "lon": -6.23704,
+     "address": "Hanover Quay 1",
+     "website": "https://www.milano.ie/dublin-grand-canal",
+     "openingHours": "Su-Th 11:30-21:30; Fr,Sa 11:30-22:00",
+     "cuisine": "pizza, italian",
+     "detailed": true
+    },
+    {
+     "id": "node/6296814794",
+     "name": "Milano",
+     "lat": 53.34792,
+     "lon": -6.24391,
+     "address": "Excise Walk",
+     "website": "https://www.milano.ie/dublin-clarion-quay",
+     "openingHours": "Mo-Sa 11:30-22:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/10608083899",
+     "name": "Mister S",
+     "lat": 53.33462,
+     "lon": -6.265,
+     "address": "Camden Street Lower 32",
+     "website": "https://www.misters.ie/",
+     "openingHours": "Tu-Th 17:00-21:00, Fr 12:00-21:30, Sa 13:00-21:30",
+     "cuisine": "steak house, grill",
+     "detailed": true
+    },
+    {
+     "id": "node/5347880533",
+     "name": "Morelands Grill",
+     "lat": 53.34571,
+     "lon": -6.25889,
+     "address": "Westmoreland Street",
+     "website": "https://www.morelandsgrill.com/",
+     "openingHours": "Mo-Fr 12:00-15:00, 17:45-21:45; Sa-Su 12:30-15:30, 17:45-21:45",
+     "cuisine": "steak house",
+     "detailed": true
+    }
+   ]
+  },
+  "cafe": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/4172567189",
+     "name": "Ada Coffee & Bagels",
+     "lat": 53.34293,
+     "lon": -6.2808,
+     "address": "Thomas Street 29",
+     "website": "https://adacoffeeandbagels.ie/",
+     "openingHours": "Mo-Sa 09:30-15:30, Su 09:30-15:00",
+     "cuisine": "bagel",
+     "detailed": true
+    },
+    {
+     "id": "node/3180491611",
+     "name": "Áras an Phiarsaigh Coffee Area",
+     "lat": 53.34482,
+     "lon": -6.25516,
+     "website": "https://www.tcd.ie/accommodation/college-catering/",
+     "openingHours": "Mo-Th 08:30-16:30, Fr 08:30-15:30",
+     "cuisine": "coffee",
+     "detailed": true
+    },
+    {
+     "id": "node/5358821193",
+     "name": "Bear Mrkt",
+     "lat": 53.3425,
+     "lon": -6.25005,
+     "address": "Westland Row 39",
+     "website": "https://www.bearmarket.ie/",
+     "openingHours": "Mo-Fr 07:30-16:00; Sa 08:00-17:00; Su 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1226168802",
+     "name": "Bite of Life",
+     "lat": 53.34074,
+     "lon": -6.2721,
+     "address": "Patrick Street",
+     "website": "http://biteoflife.com/",
+     "openingHours": "Mo-Fr 07:30-16:00, Sa-Su 09:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3126994442",
+     "name": "Brother Hubbard South",
+     "lat": 53.33276,
+     "lon": -6.26553,
+     "address": "Harrington Street 46",
+     "website": "https://brotherhubbard.ie/",
+     "openingHours": "Mo-Fr 07:45-16:00, Sa,Su 09:00-16:30",
+     "cuisine": "mediterranean",
+     "detailed": true
+    },
+    {
+     "id": "node/911182460",
+     "name": "Butlers Chocolate Café",
+     "lat": 53.34008,
+     "lon": -6.26055,
+     "address": "Grafton Street",
+     "website": "https://www.butlerschocolates.com/en/chocolate-cafes/locator/117-grafton-street",
+     "openingHours": "Mo-We 07:15-19:30, Th 07:15-21:00, Fr 07:15-19:30, Sa 08:00-19:30, Su 09:00-19:30",
+     "cuisine": "chocolate",
+     "detailed": true
+    },
+    {
+     "id": "node/12093934899",
+     "name": "Butlers Chocolate Café",
+     "lat": 53.3408,
+     "lon": -6.26155,
+     "address": "Chatham Street 6",
+     "website": "https://butlerschocolates.com/pages/butlers-chocolate-cafe-chatham-street",
+     "openingHours": "Mo-Fr 07:30-18:00; Sa 08:00-18:00; Su 09:30-18:00",
+     "cuisine": "chocolate, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/8391194495",
+     "name": "Cafe Sora",
+     "lat": 53.3455,
+     "lon": -6.23328,
+     "address": "Sir John Rogerson's Quay 77",
+     "website": "https://cafesora.com/",
+     "openingHours": "Mo-Sa 07:30-15:00",
+     "cuisine": "sandwich, coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/480606969",
+     "name": "Caffe Cagliostro",
+     "lat": 53.34671,
+     "lon": -6.26507,
+     "address": "Millennium Walkway",
+     "website": "https://www.wallacewinebars.ie/caffe-cagliostro/",
+     "openingHours": "Mo-Th 08:00-18:00, Sa 09:00-19:30, Su 10:00-17:30",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/6681330785",
+     "name": "Caffè Nero",
+     "lat": 53.34269,
+     "lon": -6.23899,
+     "address": "Grand Canal Square",
+     "website": "https://caffenero.com/ie/",
+     "openingHours": "Mo-Sa 07:00-19:00; Su 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/9890027177",
+     "name": "Cloud Picker Coffee",
+     "lat": 53.34439,
+     "lon": -6.24992,
+     "address": "Pearse Street 42",
+     "website": "https://cloudpickercoffee.ie/",
+     "openingHours": "Mo-Sa 08:00-15:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5373683616",
+     "name": "Coffee Angel",
+     "lat": 53.34397,
+     "lon": -6.26214,
+     "address": "Trinity Street 3",
+     "website": "https://coffeeangel.com/pages/hq",
+     "openingHours": "Mo-Fr 07:30-17:00, Sa 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5373683617",
+     "name": "Coffee Angel",
+     "lat": 53.34196,
+     "lon": -6.25406,
+     "address": "Leinster Street South 15",
+     "website": "https://coffeeangel.com/pages/tcd",
+     "openingHours": "Mo-Fr 07:30-17:00, Sa 09:00-18:00, Su 10:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5373684225",
+     "name": "Coffee Angel",
+     "lat": 53.33679,
+     "lon": -6.2519,
+     "address": "Pembroke Street Lower 27",
+     "website": "https://coffeeangel.com/",
+     "openingHours": "Mo-Fr 07:30-17:00, Sa 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3088074384",
+     "name": "First Chapter",
+     "lat": 53.34202,
+     "lon": -6.2639,
+     "address": "Fade Street 16",
+     "website": "https://www.instagram.com/firstchaptercafe",
+     "openingHours": "Mo-Fr 08:00-16:00, Sa-Su 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/9999855456",
+     "name": "Fogg Cafe",
+     "lat": 53.3377,
+     "lon": -6.28429,
+     "address": "Cork Street 35-38",
+     "website": "https://www.foggcafe.ie/",
+     "openingHours": "Mo-Fr 07:00-17:00; Sa-Su 08:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/725063158",
+     "name": "Insomnia",
+     "lat": 53.34945,
+     "lon": -6.24483,
+     "address": "Mayor Street Lower",
+     "website": "https://insomnia.ie/",
+     "openingHours": "Mo-Fr 07:00-17:00; Sa 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1784833728",
+     "name": "Insomnia",
+     "lat": 53.34875,
+     "lon": -6.24781,
+     "address": "Custom House Quay",
+     "website": "https://insomnia.ie/",
+     "openingHours": "Mo-Fr 07:00-17:00, Sa 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/5044570324",
+     "name": "Irish Potato Cake Company",
+     "lat": 53.34706,
+     "lon": -6.2618,
+     "address": "Bachelors Walk 16",
+     "website": "https://irishpotatocakecompany.com/",
+     "openingHours": "09:00-16:00",
+     "cuisine": "irish",
+     "detailed": true
+    },
+    {
+     "id": "node/10303290499",
+     "name": "Junior Common Room",
+     "lat": 53.34324,
+     "lon": -6.25077,
+     "address": "Parade Ground",
+     "website": "https://tcdsensemap.ie/space/hamilton-jcr",
+     "openingHours": "Mo-Fr 08:00-21:30; Sa-Su,PH off",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/2692373399",
+     "name": "KC Peaches",
+     "lat": 53.34428,
+     "lon": -6.26433,
+     "address": "Dame Street 54",
+     "website": "https://www.kcpeaches.com/dame-street",
+     "openingHours": "Mo-Fr 08:00-20:00; Sa 09:00-19:00; Su 09:00-18:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4396342596",
+     "name": "KC Peaches Cafe and Catering",
+     "lat": 53.34263,
+     "lon": -6.25728,
+     "address": "Nassau Street 27-29",
+     "website": "https://www.kcpeaches.com/nassau-street",
+     "openingHours": "Mo-Fr 07:30-18:00; Sa 09:00-19:00; Su 09:00-18:00",
+     "cuisine": "cafe",
+     "detailed": true
+    },
+    {
+     "id": "node/5196473121",
+     "name": "Kilkenny Cafe and Restaurant",
+     "lat": 53.34222,
+     "lon": -6.25543,
+     "address": "Nassau Street",
+     "website": "https://www.kilkennyshop.com/restaurant-homepage-dublin",
+     "openingHours": "Mo-Sa 08:30-17:30; Su 10:00-17:00",
+     "cuisine": "cafe, irish, european, coffee shop, seafood, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/3082426422",
+     "name": "La Pausa Caffè",
+     "lat": 53.35627,
+     "lon": -6.26551,
+     "address": "Blessington Street 1b",
+     "website": "https://lapausacaffe.ie/",
+     "openingHours": "Mo-Fr 07:30-18:00; Sa-Su 09:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/849784678",
+     "name": "Little Bird - Café",
+     "lat": 53.33235,
+     "lon": -6.27366,
+     "address": "South Circular Road 82",
+     "website": "https://little-bird.ie/",
+     "openingHours": "Mo-Fr 10:00-21:00, Sa 10:00-14:00, Su 10:00-14:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/13724230917",
+     "name": "Nana's Tea",
+     "lat": 53.33726,
+     "lon": -6.26553,
+     "address": "Wexford Street 6",
+     "website": "https://www.nanastea.ie/",
+     "openingHours": "Mo-We 11:00-20:00; Th-Su 11:00-20:30",
+     "cuisine": "bubble tea",
+     "detailed": true
+    },
+    {
+     "id": "node/3544698340",
+     "name": "Nelly's",
+     "lat": 53.36344,
+     "lon": -6.25831,
+     "address": "Drumcondra Road Lower 40",
+     "website": "https://nellysdublin.com/",
+     "openingHours": "Mo 08:30-16:00; Tu-Fr 08:30-17:00; Sa 09:00-16:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/824210295",
+     "name": "Noshington",
+     "lat": 53.33149,
+     "lon": -6.27974,
+     "address": "South Circular Road 186",
+     "website": "https://noshington.ie/",
+     "openingHours": "Mo-Su 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11826840760",
+     "name": "Old Town Cafe",
+     "lat": 53.34158,
+     "lon": -6.26883,
+     "address": "Le Pole Square, Ship Street Great 1",
+     "website": "https://oldtowncafe.ie/",
+     "openingHours": "Mo-Fr 07:00-17:00; Sa,Su 09:00-17:00",
+     "cuisine": "coffee shop, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/3051154792",
+     "name": "Póg",
+     "lat": 53.34753,
+     "lon": -6.26005,
+     "address": "Bachelors Walk 32",
+     "website": "https://pog.ie/",
+     "openingHours": "Mo-Fr 08:00-16:00; Sa-Su 09:00-16:00",
+     "cuisine": "juice, coffee shop",
+     "detailed": true
+    }
+   ]
+  },
+  "cocktail": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": []
+  },
+  "pub": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/1423559556",
+     "name": "Bad Bob's",
+     "lat": 53.34503,
+     "lon": -6.26599,
+     "address": "Essex Street East 35-37",
+     "website": "https://www.badbobs.ie/",
+     "openingHours": "Mo-Su,PH 00:00-02:00,10:00-24:00",
+     "cuisine": "burger, sandwich",
+     "detailed": true
+    },
+    {
+     "id": "node/768520263",
+     "name": "Bonobo",
+     "lat": 53.35035,
+     "lon": -6.2747,
+     "address": "Church Street Upper 119-121",
+     "website": "https://www.bonobodublin.com/",
+     "openingHours": "Mo-Th 16:00-24:00, Fr 16:00-01:00, Sa 13:00-01:00, Su 13:00-24:00",
+     "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/10016178636",
+     "name": "Kennedy's",
+     "lat": 53.34215,
+     "lon": -6.25075,
+     "address": "Westland Row 30-32",
+     "website": "https://kennedyspub.ie/",
+     "openingHours": "Mo-Th 10:30-23:30; Fr-Sa 10:30-00:30; Su 12:00-23:00",
+     "cuisine": "irish, burger",
+     "detailed": true
+    },
+    {
+     "id": "way/681866902",
+     "name": "The Back Page",
+     "lat": 53.35852,
+     "lon": -6.27296,
+     "address": "Phibsborough Road 199",
+     "website": "https://the-back-page.com/",
+     "openingHours": "Mo-Fr 12:00-01:00; Sa,Su 10:00-00:00; PH off",
+     "cuisine": "pizza, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/10013398691",
+     "name": "The Brazen Head",
+     "lat": 53.34494,
+     "lon": -6.27631,
+     "address": "Bridge Street Lower 19-20",
+     "website": "https://brazenhead.com/",
+     "openingHours": "Mo-Th 10:30-23:30; Fr-Sa 10:30-00:30; Su 12:30-23:30",
+     "cuisine": "irish, fish and chips",
+     "detailed": true
+    },
+    {
+     "id": "way/264741791",
+     "name": "The Hairy Lemon",
+     "lat": 53.34128,
+     "lon": -6.26382,
+     "address": "Stephen Street Lower 41-42",
+     "website": "https://thehairylemon.ie/",
+     "openingHours": "Mo-Th 10:00-23:30; Fr-Sa 10:00-01:30; Su 10:00-23:00",
+     "cuisine": "burger, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/14040039662",
+     "name": "Tucker Reilly's",
+     "lat": 53.33514,
+     "lon": -6.26544,
+     "address": "Camden Street Lower 72-73",
+     "website": "https://tuckerreillys.ie/",
+     "openingHours": "Mo-We 15:30-24:00; Th,Su 12:00-24:00; Fr-Sa 12:00-02:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/311099928",
+     "name": "Woolshed Baa & Grill",
+     "lat": 53.35027,
+     "lon": -6.26747,
+     "address": "Parnell Street",
+     "website": "https://www.woolshedbaa.com/dublin",
+     "openingHours": "Mo-Tu 12:00-23:30; We 12:00-02:30; Th 12:00-02:00; Fr-Sa 12:00-01:00; Su 12:00-23:00",
+     "cuisine": "grill",
+     "detailed": true
+    },
+    {
+     "id": "node/768231200",
+     "name": "Bartley’s Bar",
+     "lat": 53.3411,
+     "lon": -6.26412,
+     "address": "Stephen Street Lower 31-32",
+     "website": "https://www.the-grafton-hotel.com/bartleys.html",
+     "openingHours": "Mo-We off; Th 17:00-11:30; Fr 17:00-01:00; Sa 12:00-01:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/2997549697",
+     "name": "Chelsea Drugstore",
+     "lat": 53.34225,
+     "lon": -6.26443,
+     "address": "South Great George's Street 25",
+     "website": "https://thechelseadrugstore.ie/",
+     "openingHours": "Mo-We 16:00-24:00, Th-Su 16:00+",
+     "detailed": true
+    },
+    {
+     "id": "way/268843105",
+     "name": "Dawson Lounge",
+     "lat": 53.33976,
+     "lon": -6.25887,
+     "address": "Dawson Street 25",
+     "website": "https://dawsonlounge.ie/",
+     "openingHours": "Mo-Th 16:00-23:30; Fr-Sa 12:00-01:00; Su 12:30-23:00",
+     "detailed": true
+    },
+    {
+     "id": "way/362954595",
+     "name": "Drop Dead Twice",
+     "lat": 53.34245,
+     "lon": -6.27536,
+     "address": "Francis Street 18/19",
+     "website": "https://www.dropdeadtwice.com/",
+     "openingHours": "Mo-Su 17:00- 23:30",
+     "detailed": true
+    },
+    {
+     "id": "node/5590642309",
+     "name": "Grain & Grill Bar",
+     "lat": 53.34353,
+     "lon": -6.24362,
+     "address": "Pearse Street",
+     "website": "https://www.maldronhotels.com/dining/grain-and-grill-restaurants/",
+     "openingHours": "Mo-Su 12:00-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/629750018",
+     "name": "Gravity Bar",
+     "lat": 53.3419,
+     "lon": -6.28649,
+     "website": "https://www.guinness-storehouse.com/",
+     "openingHours": "Mo-Su 09:30-17:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4249403390",
+     "name": "House Dublin",
+     "lat": 53.334,
+     "lon": -6.25516,
+     "address": "Leeson Street Lower 27",
+     "website": "https://www.housedublin.ie/",
+     "openingHours": "Mo-We 10:00-24:00, Th-Fr 10:00-03:00, Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/9238631400",
+     "name": "IdleWild",
+     "lat": 53.34208,
+     "lon": -6.26414,
+     "address": "Fade Street 14",
+     "website": "https://idlewilddublin.com/",
+     "openingHours": "Mo-Th 17:00-24:00+; Fr 14:00-24:00+; Sa,Su 12:00-24:00+",
+     "detailed": true
+    },
+    {
+     "id": "node/3466369334",
+     "name": "J.T. Pims",
+     "lat": 53.34372,
+     "lon": -6.26426,
+     "address": "George's Street Great South 4",
+     "website": "https://www.jtpims.ie/",
+     "openingHours": "Mo-Th 12:00-23:30, Fr-Sa 12:00-01:00, Su 12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "way/665875663",
+     "name": "Jackie’s",
+     "lat": 53.34129,
+     "lon": -6.27448,
+     "address": "Francis Street 40",
+     "website": "https://www.jackies.ie/",
+     "openingHours": "Mo-Th 14:00-23:30; Fr-Su 12:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/10078115749",
+     "name": "Keavan's Port",
+     "lat": 53.33347,
+     "lon": -6.26518,
+     "address": "Camden Street Upper 1",
+     "website": "https://www.jdwetherspoon.com/pubs/all-pubs/republic-of-ireland/county-dublin/keavans-port",
+     "openingHours": "Mo,Tu,We,Th 07:00-24:00; Fr,Sa 07:00-25:00; Su 07:00-23:30",
+     "detailed": true
+    },
+    {
+     "id": "way/230613179",
+     "name": "Kehoe’s Pub",
+     "lat": 53.34124,
+     "lon": -6.25944,
+     "address": "Anne Street South 9",
+     "website": "https://kehoesdublin.ie/",
+     "openingHours": "10:00-23:00; Fr,Sa 10:00-01:00",
+     "detailed": true
+    },
+    {
+     "id": "node/739778204",
+     "name": "Krystle",
+     "lat": 53.33584,
+     "lon": -6.26356,
+     "address": "Harcourt Street 21-25",
+     "website": "https://www.krystlenightclub.com/",
+     "openingHours": "Fr-Sa 23:00+",
+     "detailed": true
+    },
+    {
+     "id": "way/230101445",
+     "name": "Lundy Foot’s",
+     "lat": 53.34494,
+     "lon": -6.26793,
+     "address": "Essex Gate 13",
+     "website": "https://www.lundyfoots.ie/",
+     "cuisine": "irish, burger",
+     "detailed": true
+    },
+    {
+     "id": "node/636958169",
+     "name": "Madigan's Bar & Grill",
+     "lat": 53.35141,
+     "lon": -6.24979,
+     "address": "Amiens Street",
+     "website": "https://www.madigansconnollystation.com/",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "way/252812519",
+     "name": "Mema’s",
+     "lat": 53.35322,
+     "lon": -6.26044,
+     "address": "Parnell Street 155",
+     "website": "https://memas.ie/",
+     "openingHours": "Mo-Th 15:00-23:30; Fr-Su 12:30-23:30",
+     "detailed": true
+    },
+    {
+     "id": "way/230566047",
+     "name": "Neary’s Bar & Lounge",
+     "lat": 53.34069,
+     "lon": -6.26114,
+     "address": "Chatham Street 1",
+     "website": "https://www.nearys.ie/",
+     "openingHours": "Mo 11:30-22:30, Tu-Th 11:30-23:30, Fr,Sa 11:30-00:30, Su 12:30-22:00",
+     "detailed": true
+    },
+    {
+     "id": "node/12170327422",
+     "name": "No. 27 Bar & Lounge",
+     "lat": 53.33902,
+     "lon": -6.25623,
+     "address": "St. Stephen's Green",
+     "website": "https://theshelbourne.com/dine-and-drink-at-the-shelbourne/no-27-the-shelbourne-bar/",
+     "openingHours": "Mo-Th 10:30-23:30; Fr 10:30-00:30; Sa 12:00-00:30; Su 12:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14183862401",
+     "name": "O'Regan's",
+     "lat": 53.34216,
+     "lon": -6.26446,
+     "address": "Fade Street",
+     "website": "https://www.oregansdublin.com/",
+     "openingHours": "Mo-We 10:30-23:30; Th 10:30-01:00; Fr-Sa 10:30-02:30; Su 10:30-00:30",
+     "detailed": true
+    },
+    {
+     "id": "way/228762044",
+     "name": "Panti Bar",
+     "lat": 53.34661,
+     "lon": -6.26779,
+     "address": "Capel Street 7-8",
+     "website": "https://www.pantibar.com/",
+     "openingHours": "Mo-Th 16:00-23:30; Fr-Sa 16:00-00:30; Su 16:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/583257143",
+     "name": "Peadar Browns",
+     "lat": 53.33623,
+     "lon": -6.27345,
+     "address": "Clanbrassil Street Lower 1",
+     "website": "https://peadarbrowns.com/",
+     "openingHours": "Mo-Th 10:30-11:30, Fr-Sa 10:30-12:30, Su 12:30-11:00",
+     "detailed": true
+    },
+    {
+     "id": "way/517560263",
+     "name": "Piper’s Corner",
+     "lat": 53.34905,
+     "lon": -6.25795,
+     "address": "Marlborough Street 105-106",
+     "website": "https://piperscorner.ie/",
+     "openingHours": "Su-Th 16:00-23:30; Fr-Sa 16:00-00:30",
+     "detailed": true
+    }
+   ]
+  },
+  "club": {
+   "status": "ok",
+   "wikipediaCountsAvailable": true,
+   "places": [
+    {
+     "id": "node/278857890",
+     "name": "Club M",
+     "lat": 53.34481,
+     "lon": -6.26233,
+     "address": "Cope Street",
+     "website": "https://clubm.ie/",
+     "openingHours": "Mo-Th off; Fr-Sa 23:00-03:00; Su off",
+     "detailed": true
+    },
+    {
+     "id": "node/4209884820",
+     "name": "House Dublin",
+     "lat": 53.33401,
+     "lon": -6.25516,
+     "address": "Leeson Street Lower 27",
+     "website": "https://www.housedublin.ie/",
+     "openingHours": "Mo-We 10:00-24:00, Th-Fr 10:00-03:00, Sa 16:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13432368201",
+     "name": "Index Dublin",
+     "lat": 53.34799,
+     "lon": -6.26185,
+     "address": "Middle Abbey Street 57",
+     "website": "https://www.indexdublin.com/",
+     "openingHours": "Fr-Sa 23:00-02:30",
+     "detailed": true
+    },
+    {
+     "id": "node/2885169530",
+     "name": "Soho",
+     "lat": 53.34645,
+     "lon": -6.25787,
+     "address": "D'Olier Street 21",
+     "website": "https://www.sohodublin.ie/",
+     "openingHours": "Mo-Su 22:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13432378601",
+     "name": "Yamamori Tengu",
+     "lat": 53.34701,
+     "lon": -6.26391,
+     "address": "Great Strand Street 37",
+     "website": "https://www.yamamori.ie/night-life",
+     "openingHours": "Th-Su 23:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/775415426",
+     "name": "D-Two",
+     "lat": 53.33445,
+     "lon": -6.26284,
+     "address": "Harcourt Street 60",
+     "website": "https://www.dtwonightclub.com/"
+    },
+    {
+     "id": "node/6257799735",
+     "name": "Fitzsimons",
+     "lat": 53.34561,
+     "lon": -6.26518,
+     "address": "Wellington Quay 21-22",
+     "website": "https://www.fitzsimonsbar.ie/nightclub/"
+    },
+    {
+     "id": "node/778699198",
+     "name": "Rain",
+     "lat": 53.3304,
+     "lon": -6.26411,
+     "address": "Richmond Street South 33",
+     "website": "http://www.portobellohotel.ie/Dublin-Nightclub/"
+    },
+    {
+     "id": "node/11787346348",
+     "name": "Angel's",
+     "lat": 53.33344,
+     "lon": -6.25447
+    },
+    {
+     "id": "node/13457855285",
+     "name": "Block",
+     "lat": 53.33667,
+     "lon": -6.26634,
+     "address": "Libery Lane 13-14"
+    },
+    {
+     "id": "node/739778199",
+     "name": "Copper Face Jacks",
+     "lat": 53.33544,
+     "lon": -6.26351,
+     "address": "Harcourt Street"
+    },
+    {
+     "id": "node/3771358965",
+     "name": "Everleigh Garden",
+     "lat": 53.33516,
+     "lon": -6.26349,
+     "address": "Harcourt Street 33"
+    },
+    {
+     "id": "node/3161957210",
+     "name": "The Avenue",
+     "lat": 53.35427,
+     "lon": -6.26292,
+     "address": "Parnell Square East 12"
+    },
+    {
+     "id": "node/5495191224",
+     "name": "Vanilla",
+     "lat": 53.32587,
+     "lon": -6.24293,
+     "address": "Morehampton Road 19-29"
+    }
+   ]
+  }
+ }
+}
