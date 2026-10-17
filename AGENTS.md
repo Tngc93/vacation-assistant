@@ -19,14 +19,14 @@ Node 22 gerekir (`.nvmrc`). Önce `npm ci`.
 | `npm start` | Derlenmiş uygulamayı çalıştırır |
 | `npm run lint` | ESLint (uyarı da hata sayılır) |
 | `npm run typecheck` | Next.js route tiplerini üretir, ardından `tsc --noEmit` (strict) |
-| `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`) |
+| `npm test` | Vitest + Testing Library, tek seferlik (izleme modu: `npm run test:watch`). `TZ=Asia/Tokyo` ve `VA_TEST_NOW=2026-10-18T00:01:00+03:00` ile başka saat diliminde ve sabit saatte çalıştırılabilir |
 | `npm run check:bundle` | Build sonrası: sunucuya özel verinin (mekân dosyaları) istemci paketine sızmadığını kontrol eder |
 | `npm run test:e2e` | Playwright: üretim build'ine karşı uçtan uca testler (önce `npm run build`; ilk seferde `npx playwright install chromium`) |
 | `npm run data:places` | 68 şehir için mekân verisini (OSM/Overpass, Wikidata, Commons) sırayla çekip `src/data/places/<KOD>.json`'a yazar (ağ ister; ~1 saat). Uygulama bu dosyaları yalnızca sunucuda okur |
 | `npm run data:visa` | Vize verisini indirir, yalnızca TR pasaportunu `src/data/visa-tr.json`'a yazar (ağ ister; JSON commit'lenir, build ve CI vize verisi için internete çıkmaz) |
 | `npm run verify:destinations` | `src/data/destinations.ts`'i Wikidata'ya karşı yeniden doğrular (ağ ister, CI'da çalışmaz) |
 
-CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, test, build ve ardından e2e çalıştırır; Playwright tarayıcısı önbelleğe alınır.
+CI (`.github/workflows/ci.yml`) her push ve PR'da iki iş çalıştırır: birim testleri beş saat dilimi/saat birleşiminde (UTC, Asia/Tokyo; Los Angeles, Tokyo ve İstanbul'da sabit İstanbul saati 23:59, 00:01, 03:20) ve `npm ci`, lint, typecheck, build, `check:bundle`, e2e. Playwright tarayıcısı önbelleğe alınır.
 
 ## Kod düzeni
 
@@ -52,4 +52,5 @@ CI (`.github/workflows/ci.yml`) her push ve PR'da `npm ci`, lint, typecheck, tes
 - **Dürüst veri:** Her fiyat ve tahmin kaynağını ve "tahmini" etiketini gösterir. Uydurma veri yok. Bir kaynak cevap vermezse bunu açıkça göster.
 - **Dil:** Arayüz metinleri Türkçe; kod, yorumlar ve commit mesajları İngilizce.
 - **Tasarım:** Görsel kararlar DESIGN.md'ye uyar. Ham hex renk yok, yalnızca token'lar.
+- **Zaman:** Zamana bağlı her fonksiyon `now` parametresi alır; istemci bileşenleri zamanı `useMinuteNow()`'dan okur. Testler sabit saatle çalışır (`vi.setSystemTime` / `vi.useFakeTimers`); gerçek saate, makinenin saat dilimine ya da animasyon karesine bağlı test yok. Zaman aşımları `timeoutSignal` ile kurulur ki sahte saatle sınansın.
 - **Kalite kapısı:** Bir adımı bitirmeden önce lint, typecheck ve test geçmeli.

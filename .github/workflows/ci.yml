@@ -12,6 +12,36 @@ permissions:
   contents: read
 
 jobs:
+  # Unit tests in several time zones and at pinned times of day (Istanbul
+  # 23:59, 00:01 and 03:20), so no test can depend on the machine's zone or clock.
+  test:
+    name: test (${{ matrix.tz }}${{ matrix.now && format(' @ {0}', matrix.now) || '' }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - tz: UTC
+          - tz: Asia/Tokyo
+          - tz: America/Los_Angeles
+            now: "2026-10-17T23:59:00+03:00"
+          - tz: Asia/Tokyo
+            now: "2026-10-18T00:01:00+03:00"
+          - tz: Europe/Istanbul
+            now: "2026-10-17T03:20:00+03:00"
+    env:
+      TZ: ${{ matrix.tz }}
+      VA_TEST_NOW: ${{ matrix.now }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -24,7 +54,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
-      - run: npm test
       - run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
