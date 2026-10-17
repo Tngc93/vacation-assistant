@@ -1,20 +1,28 @@
 import { Caption, SkeletonTicket } from "@/components/ui";
-import type { Destination } from "@/data/destinations";
-import type { Origin } from "@/data/origins";
 import { AIRPORT_NAMES } from "@/lib/flights/display";
 import { FLIGHTS_ERROR_MESSAGES } from "@/lib/flights/errors";
-import { searchFlights, type AirportGroup, type FlightsResult } from "@/lib/flights/search";
-import { todayInIstanbul } from "@/lib/search/dates";
+import { loadFlights } from "@/lib/flights/load";
+import type { AirportGroup, FlightsResult } from "@/lib/flights/search";
+import { choiceRef, chooseFlight } from "@/lib/flights/select";
 import { DirectChip } from "./DirectChip";
 import { FlightsLinks } from "./FlightsLinks";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
 
-type Props = { origin: Origin; destination: Destination; depart: string; return: string; pax: number; direct: boolean };
+type Props = {
+  from: string;
+  to: string;
+  depart: string;
+  return: string;
+  pax: number;
+  direct: boolean;
+  /** `?flight=`: the ticket in the budget. */
+  flight: string | null;
+};
 
 /** Cached Travelpayouts prices for every origin airport (server-side; the token never reaches the browser). */
-export async function FlightsSection(props: Props) {
-  const result = await searchFlights({ ...props, today: todayInIstanbul(new Date()) });
-  return <FlightsView result={result} />;
+export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight }: Props) {
+  const result = await loadFlights(from, to, depart, ret, pax, direct);
+  return <FlightsView result={result} budgetRef={choiceRef(chooseFlight(result, flight))} />;
 }
 
 const SOURCE_LINE = "KAYNAK: TRAVELPAYOUTS (AVIASALES) · SON 48 SAATTEKİ ARAMALARA DAYALI ÖNBELLEK · TAHMİNİ";
@@ -35,7 +43,7 @@ function groupMessage(group: AirportGroup, direct: boolean): string | null {
 }
 
 /** Pure view of a search result, so tests can render every state without the network. */
-export function FlightsView({ result }: { result: FlightsResult }) {
+export function FlightsView({ result, budgetRef = null }: { result: FlightsResult; budgetRef?: string | null }) {
   if (result.status === "unavailable") {
     return (
       <div className="rounded-md border border-dashed border-rule px-5 py-6 md:px-8">
@@ -77,7 +85,7 @@ export function FlightsView({ result }: { result: FlightsResult }) {
                   {group.tickets.map((ticket, i) => {
                     const mark: CheapestMark =
                       ticket.id === result.cheapestId ? "overall" : i > 0 ? null : group.outcome === "nearby" ? "nearby" : "airport";
-                    return <FlightTicketCard key={ticket.id} ticket={ticket} mark={mark} />;
+                    return <FlightTicketCard key={ticket.id} ticket={ticket} mark={mark} budgetRef={budgetRef} />;
                   })}
                 </div>
               ) : null}

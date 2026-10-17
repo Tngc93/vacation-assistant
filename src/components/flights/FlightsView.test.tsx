@@ -150,6 +150,22 @@ describe("FlightsView", () => {
     expect(screen.getAllByText(/^ZZ ·/)[0].textContent).toMatch(/^ZZ · ZZ \d+$/);
   });
 
+  it("puts a ticket in the budget through the URL and marks the one in use", async () => {
+    const user = userEvent.setup();
+    const result = await resultFor(istanbul, { "IST-2026-11-14": ist.data, "SAW-2026-11-14": saw.data });
+    if (result.status !== "ok") throw new Error(result.status);
+    const cheapest = result.groups.flatMap((g) => g.tickets).find((t) => t.id === result.cheapestId)!;
+    render(<FlightsView result={result} budgetRef={cheapest.ref} />);
+    expect(screen.getAllByRole("button", { name: "Bütçede" })).toHaveLength(1);
+    expect(screen.getByRole("button", { name: "Bütçede" }).closest("article")).toHaveAccessibleName(/4\.380 ₺/);
+    const tk = screen.getByRole("article", { name: /7\.480 ₺/ });
+    await user.click(within(tk).getByRole("button", { name: "Bütçeye ekle" }));
+    expect(replace).toHaveBeenCalledWith(
+      "/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2&flight=IST-TK1853-202611140735-202611181310",
+      { scroll: false },
+    );
+  });
+
   it("explains each failure in its own words", async () => {
     for (const [reason, text] of [
       ["unauthorized", /401/],

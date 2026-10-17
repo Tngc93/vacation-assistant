@@ -20,6 +20,8 @@ export type Leg = {
 /** A ticket ready to render; plain data so it can cross to client components. */
 export type FlightTicket = {
   id: string;
+  /** Short, URL-safe identity for `?flight=`: "IST-LH1301-202611141905-202611180955" (local times). */
+  ref: string;
   originAirport: string;
   destinationAirport: string;
   airline: string;
@@ -106,7 +108,9 @@ export function toFlightTicket(api: ApiTicket, ctx: TicketContext): FlightTicket
     ? leg(api.destination_airport, api.origin_airport, api.return_at, api.duration_back, api.return_transfers ?? 0, ctx.destinationTimeZone, ctx.originTimeZone)
     : null;
   const returnDate = back?.departDate ?? null;
+  const stamp = (l: Leg | null) => (l ? `${l.departDate.replaceAll("-", "")}${l.departTime.replace(":", "")}` : "");
   return {
+    ref: `${api.origin_airport}-${api.airline}${api.flight_number}-${stamp(out)}-${stamp(back)}`,
     id: `${api.origin_airport}-${api.airline}${api.flight_number}-${api.departure_at}-${api.return_at ?? ""}`,
     originAirport: api.origin_airport,
     destinationAirport: api.destination_airport,

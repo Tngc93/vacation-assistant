@@ -9,6 +9,7 @@ import { Caption, Skeleton, SkeletonTicket } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
 import { todayInIstanbul } from "@/lib/search/dates";
 import { describeSearch } from "@/lib/search/describe";
+import { parseBudgetParams } from "@/lib/budget/params";
 import { parseDirect } from "@/lib/flights/display";
 import { parseCategories } from "@/lib/places/cats";
 import { parseSearch } from "@/lib/search/params";
@@ -69,7 +70,12 @@ async function PlanContent({ searchParams }: Props) {
       <div className="mt-10">
         <PlanSummary search={result.value} />
       </div>
-      <PlanSections search={result.value} categories={parseCategories(params.cats)} direct={parseDirect(params.direct)} />
+      <PlanSections
+        search={result.value}
+        categories={parseCategories(params.cats)}
+        direct={parseDirect(params.direct)}
+        budget={parseBudgetParams(params, destination.currency)}
+      />
     </>
   );
 }
