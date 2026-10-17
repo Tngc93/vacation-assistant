@@ -1,8 +1,12 @@
 import { addDays } from "@/lib/search/dates";
 
 export const PRICES_URL = "https://api.travelpayouts.com/aviasales/v3/prices_for_dates";
-/** How many tickets one exact-date request asks for. */
-export const EXACT_LIMIT = 30;
+/**
+ * How many tickets one exact-date request asks for. Real data (2026-10-17):
+ * an IST query also returns SAW tickets (15 of 34 for IST→BCN), so 30 rows
+ * were not enough to cover both airports.
+ */
+export const EXACT_LIMIT = 100;
 /** Month-wide requests for the ±3 day fallback need more rows to cover the window. */
 export const MONTH_LIMIT = 200;
 /** The fallback looks this many days either side of the chosen dates. */

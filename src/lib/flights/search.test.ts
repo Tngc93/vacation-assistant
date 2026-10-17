@@ -28,7 +28,8 @@ function routes(map: Record<string, unknown[] | number>) {
     return Response.json({ success: true, data, error: null, currency: "try" });
   });
 }
-const deps = (fetcher: Fetcher) => ({ fetcher, token: "t", marker: null, fixture: false });
+const NO_PARTNER = { marker: null, trs: null };
+const deps = (fetcher: Fetcher) => ({ fetcher, token: "t", partner: NO_PARTNER, fixture: false });
 const origins = (fetcher: ReturnType<typeof routes>) => fetcher.mock.calls.map(([url]) => new URL(url).searchParams.get("origin"));
 
 describe("searchFlights", () => {
@@ -42,8 +43,35 @@ describe("searchFlights", () => {
       ["IST", "exact", 4],
       ["SAW", "exact", 3],
     ]);
-    // The SAW ticket inside the IST answer stays out of the IST group.
+    // The SAW ticket inside the IST answer stays out of the IST group (and appears once under SAW).
     expect(result.groups[0].tickets.every((t) => t.originAirport === "IST")).toBe(true);
+    expect(result.groups[1].tickets.filter((t) => t.flightNumber === "1203")).toHaveLength(1);
+  });
+
+  it("puts SAW tickets that only the IST answer has into the SAW group", async () => {
+    // Real data: the IST query returned SAW tickets the SAW query did not.
+    const onlyInIst = { ...saw.data[0], flight_number: "9999", price: 4100 };
+    const result = await searchFlights(istanbul, deps(routes({ "IST-2026-11-14": [...ist.data, onlyInIst], "SAW-2026-11-14": saw.data })));
+    if (result.status !== "ok") throw new Error(result.status);
+    expect(result.groups[1].tickets[0]).toMatchObject({ originAirport: "SAW", flightNumber: "9999", pricePerAdult: 4100 });
+    expect(result.cheapestId).toBe(result.groups[1].tickets[0].id);
+  });
+
+  it("asks for 100 rows, enough for both airports in one IST answer", async () => {
+    const fetcher = routes({ "IST-2026-11-14": ist.data });
+    await searchFlights(istanbul, deps(fetcher));
+    expect(fetcher.mock.calls.map(([url]) => new URL(url).searchParams.get("limit"))).toEqual(["100", "100"]);
+  });
+
+  it("wraps booking links in the partner link when marker and project are set", async () => {
+    const result = await searchFlights(istanbul, { ...deps(routes({ "IST-2026-11-14": ist.data })), partner: { marker: "4242", trs: "777" } });
+    if (result.status !== "ok") throw new Error(result.status);
+    for (const url of [result.links.aviasales, result.groups[0].tickets[0].bookingUrl]) {
+      const link = new URL(url);
+      expect(link.origin + link.pathname).toBe("https://tp.media/r");
+      expect(link.searchParams.get("marker")).toBe("4242");
+      expect(link.searchParams.get("trs")).toBe("777");
+    }
   });
 
   it("marks the cheapest overall and keeps each group cheapest first", async () => {
@@ -85,7 +113,7 @@ describe("searchFlights", () => {
 
   it("does not call the API without a token, and still offers links", async () => {
     const fetcher = routes({});
-    const result = await searchFlights(istanbul, { fetcher, token: null, marker: "4242", fixture: false });
+    const result = await searchFlights(istanbul, { fetcher, token: null, partner: { marker: "4242", trs: null }, fixture: false });
     expect(fetcher).not.toHaveBeenCalled();
     expect(result).toEqual({
       status: "unavailable",
@@ -111,13 +139,13 @@ describe("searchFlights", () => {
 
   it("serves labelled sample data in fixture mode without a token, for any trip dates", async () => {
     const march = { depart: "2027-03-14", return: "2027-03-18" };
-    const result = await searchFlights({ ...istanbul, ...march }, { token: null, marker: null, fixture: true });
+    const result = await searchFlights({ ...istanbul, ...march }, { token: null, partner: NO_PARTNER, fixture: true });
     if (result.status !== "ok") throw new Error(result.status);
     expect(result.fixture).toBe(true);
     expect(result.groups.map((g) => g.outcome)).toEqual(["exact", "exact"]);
     expect(result.groups[0].tickets[0].out.departDate).toBe("2027-03-14");
 
-    const nearby = await searchFlights({ ...ankara, ...march }, { token: null, marker: null, fixture: true });
+    const nearby = await searchFlights({ ...ankara, ...march }, { token: null, partner: NO_PARTNER, fixture: true });
     if (nearby.status !== "ok") throw new Error(nearby.status);
     expect(nearby.groups[0].outcome).toBe("nearby");
     expect(nearby.groups[0].tickets.map((t) => t.out.departDate)).toEqual(["2027-03-12", "2027-03-13", "2027-03-15"]);

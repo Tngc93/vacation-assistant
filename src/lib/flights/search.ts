@@ -4,9 +4,9 @@ import type { Origin } from "@/data/origins";
 import { fetchPrices, flightsConfig, type Fetcher, type FetchOutcome } from "./client";
 import type { FlightsErrorReason } from "./errors";
 import { fixtureFetcher, fixturesEnabled } from "./fixtures";
-import { aviasalesSearchUrl, googleFlightsUrl } from "./links";
+import { aviasalesSearchUrl, googleFlightsUrl, type Partner } from "./links";
 import { EXACT_LIMIT, MONTH_LIMIT, NEARBY_DAYS, nearbyMonthPairs, type PricesQuery } from "./params";
-import { byPrice, cheapest, isDirect, isNearby, toFlightTicket, uniqueTickets, type FlightTicket } from "./tickets";
+import { byPrice, cheapest, isDirect, isNearby, toFlightTicket, uniqueTickets, type FlightTicket, type TicketContext } from "./tickets";
 
 /** Tickets shown per airport. */
 export const TICKETS_PER_AIRPORT = 5;
@@ -38,85 +38,87 @@ export type FlightsResult =
   | { status: "ok"; groups: AirportGroup[]; cheapestId: string | null; direct: boolean; fixture: boolean; links: FlightsLinks }
   | { status: "unavailable"; reason: FlightsErrorReason; links: FlightsLinks };
 
-export type SearchDeps = { fetcher?: Fetcher; token?: string | null; marker?: string | null; fixture?: boolean };
+export type SearchDeps = { fetcher?: Fetcher; token?: string | null; partner?: Partner; fixture?: boolean };
 
 /** Links to the whole search (origin city, all airports), for when cards cannot be shown or as an extra. */
-export function searchLinks(search: Omit<FlightsSearch, "today" | "direct">, marker: string | null): FlightsLinks {
+export function searchLinks(search: Omit<FlightsSearch, "today" | "direct">, partner?: Partner): FlightsLinks {
   const route = { origin: search.origin.code, destination: search.destination.cityCode, depart: search.depart, return: search.return };
-  return { aviasales: aviasalesSearchUrl({ ...route, pax: search.pax }, marker ?? undefined), googleFlights: googleFlightsUrl(route) };
+  return { aviasales: aviasalesSearchUrl({ ...route, pax: search.pax }, partner), googleFlights: googleFlightsUrl(route) };
 }
 
-async function searchAirport(
-  airport: string,
-  search: FlightsSearch,
-  load: (query: PricesQuery) => Promise<FetchOutcome>,
-  marker: string | null,
-): Promise<AirportGroup> {
-  const ctx = {
+/**
+ * Cached prices for every origin airport, grouped by airport. IST and SAW are
+ * queried separately (ESB for Ankara). Real responses mix airports: IST is also
+ * Istanbul's city code, and an IST query returns SAW tickets that the SAW
+ * query itself may not (2026-10-17: 15 against 10 for IST→BCN). So the
+ * tickets of all queries are pooled, deduplicated and grouped by the airport
+ * each one actually leaves from.
+ *
+ * Never throws: without a token, or when every airport fails, the result says
+ * why and carries links to live prices.
+ */
+export async function searchFlights(search: FlightsSearch, deps: SearchDeps = {}): Promise<FlightsResult> {
+  const config = flightsConfig();
+  const fixture = deps.fixture ?? fixturesEnabled();
+  const token = deps.token !== undefined ? deps.token : config.token;
+  const partner = deps.partner ?? config.partner;
+  const links = searchLinks(search, partner);
+
+  const fetcher = deps.fetcher ?? (fixture ? fixtureFetcher : undefined);
+  if (!token && !fixture) return { status: "unavailable", reason: "no-token", links };
+  const load = (query: PricesQuery) => fetchPrices(query, { token: token ?? "fixture", fetcher });
+
+  const airports: readonly string[] = search.origin.airports;
+  const ctx: TicketContext = {
     originTimeZone: ORIGIN_TIME_ZONE,
     destinationTimeZone: search.destination.timeZone,
     destinationCity: search.destination.cityCode,
     depart: search.depart,
     return: search.return,
     pax: search.pax,
-    marker: marker ?? undefined,
+    partner,
   };
-  // An airport query can also return the city's other airport (IST is also Istanbul's city code): keep only this one.
-  const usable = (outcome: Extract<FetchOutcome, { ok: true }>) =>
-    outcome.tickets
-      .map((t) => toFlightTicket(t, ctx))
-      .filter((t) => t.originAirport === airport && t.back !== null && (!search.direct || isDirect(t)));
-
-  const exact = await load({
-    origin: airport,
+  const query = (origin: string, departureAt: string, returnAt: string, limit: number): PricesQuery => ({
+    origin,
     destination: search.destination.cityCode,
-    departureAt: search.depart,
-    returnAt: search.return,
+    departureAt,
+    returnAt,
     direct: search.direct,
-    limit: EXACT_LIMIT,
+    limit,
   });
-  if (!exact.ok) return { airport, outcome: "error", reason: exact.reason, tickets: [] };
-  const onDates = uniqueTickets(usable(exact).filter((t) => !t.differentDates)).sort(byPrice);
-  if (onDates.length) return { airport, outcome: "exact", tickets: onDates.slice(0, TICKETS_PER_AIRPORT) };
+  const usable = (outcomes: FetchOutcome[]) =>
+    uniqueTickets(
+      outcomes
+        .flatMap((o) => (o.ok ? o.tickets : []))
+        .map((t) => toFlightTicket(t, ctx))
+        .filter((t) => airports.includes(t.originAirport) && t.back !== null && (!search.direct || isDirect(t))),
+    );
 
-  // Nothing on the chosen dates: look ±3 days with month-wide requests, then keep only that window.
-  const months = await Promise.all(
-    nearbyMonthPairs(search.depart, search.return).map(({ departMonth, returnMonth }) =>
-      load({
-        origin: airport,
-        destination: search.destination.cityCode,
-        departureAt: departMonth,
-        returnAt: returnMonth,
-        direct: search.direct,
-        limit: MONTH_LIMIT,
-      }),
-    ),
+  const exact = await Promise.all(airports.map((airport) => load(query(airport, search.depart, search.return, EXACT_LIMIT))));
+  const onDates = usable(exact).filter((t) => !t.differentDates);
+
+  const groups = await Promise.all(
+    airports.map(async (airport, i): Promise<AirportGroup> => {
+      const own = onDates.filter((t) => t.originAirport === airport).sort(byPrice);
+      if (own.length) return { airport, outcome: "exact", tickets: own.slice(0, TICKETS_PER_AIRPORT) };
+      const result = exact[i];
+      if (!result.ok) return { airport, outcome: "error", reason: result.reason, tickets: [] };
+
+      // Nothing on the chosen dates: look ±3 days with month-wide requests, then keep only that window.
+      const months = await Promise.all(
+        nearbyMonthPairs(search.depart, search.return).map(({ departMonth, returnMonth }) =>
+          load(query(airport, departMonth, returnMonth, MONTH_LIMIT)),
+        ),
+      );
+      const nearby = usable(months)
+        .filter((t) => t.originAirport === airport && t.differentDates && isNearby(t, search.depart, search.return, search.today, NEARBY_DAYS))
+        .sort(byPrice);
+      return nearby.length
+        ? { airport, outcome: "nearby", tickets: nearby.slice(0, TICKETS_PER_AIRPORT) }
+        : { airport, outcome: "none", tickets: [] };
+    }),
   );
-  const nearby = uniqueTickets(
-    months.flatMap((m) => (m.ok ? usable(m) : [])).filter((t) => t.differentDates && isNearby(t, search.depart, search.return, search.today, NEARBY_DAYS)),
-  ).sort(byPrice);
-  return nearby.length
-    ? { airport, outcome: "nearby", tickets: nearby.slice(0, TICKETS_PER_AIRPORT) }
-    : { airport, outcome: "none", tickets: [] };
-}
 
-/**
- * Cached prices for every origin airport (IST and SAW separately, or ESB),
- * grouped by airport. Never throws: without a token, or when every airport
- * fails, the result says why and carries links to live prices.
- */
-export async function searchFlights(search: FlightsSearch, deps: SearchDeps = {}): Promise<FlightsResult> {
-  const config = flightsConfig();
-  const fixture = deps.fixture ?? fixturesEnabled();
-  const token = deps.token !== undefined ? deps.token : config.token;
-  const marker = deps.marker !== undefined ? deps.marker : config.marker;
-  const links = searchLinks(search, marker);
-
-  const fetcher = deps.fetcher ?? (fixture ? fixtureFetcher : undefined);
-  if (!token && !fixture) return { status: "unavailable", reason: "no-token", links };
-  const load = (query: PricesQuery) => fetchPrices(query, { token: token ?? "fixture", fetcher });
-
-  const groups = await Promise.all(search.origin.airports.map((airport) => searchAirport(airport, search, load, marker)));
   const errors = groups.filter((g) => g.outcome === "error");
   if (errors.length === groups.length) return { status: "unavailable", reason: errors[0].reason, links };
 
