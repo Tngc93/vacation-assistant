@@ -1,4 +1,4 @@
-// A small synthetic city for tests: three areas about 2 km apart, six sights each, evening places near each.
+// A synthetic city for tests: three areas about 2 km apart, ten sights each, evening places near each.
 import type { PlanPlace } from "./plan";
 
 const AREAS = [
@@ -6,14 +6,14 @@ const AREAS = [
   { lat: 41.408, lon: 2.17 },
   { lat: 41.39, lon: 2.194 },
 ];
-const CATS = ["see", "museum", "viewpoint", "see", "museum", "see"] as const;
+const CATS = ["see", "museum", "viewpoint", "see", "museum", "see", "viewpoint", "see", "museum", "see"] as const;
 
 export const SIGHTS: PlanPlace[] = AREAS.flatMap((area, a) =>
   CATS.map((category, i) => ({
     id: `node/${(a + 1) * 100 + i}`,
     name: `Sight ${a}-${i}`,
-    lat: area.lat + i * 0.0008,
-    lon: area.lon + i * 0.0006,
+    lat: area.lat + (i % 5) * 0.0008,
+    lon: area.lon + Math.floor(i / 5) * 0.0012 + (i % 5) * 0.0004,
     category,
     // Area 0 holds the most important sight; counts never tie.
     wikipediaCount: 90 - a * 10 - i,

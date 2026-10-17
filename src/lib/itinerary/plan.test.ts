@@ -3,7 +3,7 @@ import { distanceKm } from "@/lib/geo";
 import { ITINERARY } from "./config";
 import { shortId } from "./ids";
 import { sameNameOnce } from "@/lib/places/twins";
-import { buildItinerary, chooseAnchors, type ItineraryInput, type PlanPlace } from "./plan";
+import { buildItinerary, chooseAnchors, freeTimeBlock, type ItineraryInput, type PlanPlace } from "./plan";
 import { EVENING, SIGHTS } from "./testCity";
 import { toMinutes } from "./time";
 
@@ -74,7 +74,7 @@ describe("buildItinerary", () => {
     expect(allStops(buildItinerary({ ...base, daytime: [...twins, ...SIGHTS] })).filter((s) => s.name === "La Rambla").map((s) => s.id)).toEqual(expected);
   });
 
-  it("has days = nights + 1, at most 4 daytime stops and 1 evening place, in order and inside the day", () => {
+  it("has days = nights + 1 and fills each day by time: at most 6 daytime stops until 18:00, then 1 evening place", () => {
     const plan = buildItinerary(base);
     expect(plan.days.map((d) => d.date)).toEqual(["2026-11-14", "2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18"]);
     for (const day of plan.days) {
@@ -88,28 +88,62 @@ describe("buildItinerary", () => {
       }
       for (const s of daytime) expect(toMinutes(s.end)).toBeLessThanOrEqual(ITINERARY.daytimeEnd);
     }
-    // Full days get the most.
-    expect(plan.days[1].stops.map((s) => s.kind)).toEqual(["daytime", "daytime", "daytime", "daytime", "evening"]);
-    expect(plan.days[1].tags).toEqual(["TAM GÜN"]);
+    const full = plan.days[1];
+    expect(full.tags).toEqual(["TAM GÜN"]);
+    expect(full.window).toEqual({ start: "09:00", end: "21:30" });
+    // More than the old fixed four: the day is filled by time.
+    expect(full.stops.filter((s) => s.kind === "daytime").length).toBeGreaterThan(4);
+    expect(full.stops.at(-1)).toMatchObject({ kind: "evening", start: "19:30", end: "21:30" });
   });
 
+  it("never puts more than 6 daytime stops in a day, even when more would fit", () => {
+    // 20 viewpoints of 30 minutes, side by side: time for far more than six.
+    const views: PlanPlace[] = Array.from({ length: 20 }, (_, i) => ({
+      id: `node/${5000 + i}`,
+      name: `View ${i}`,
+      lat: 41.39 + i * 0.0002,
+      lon: 2.17,
+      category: "viewpoint",
+      wikipediaCount: 100 - i,
+    }));
+    const plan = buildItinerary({ ...base, daytime: views, evening: [] });
+    const full = plan.days[1].stops;
+    expect(full).toHaveLength(6);
+    expect(toMinutes(full.at(-1)!.end)).toBeLessThan(ITINERARY.daytimeEnd - 120);
+  });
+
+  it("shows free time before the evening place only when the gap is longer than 90 minutes", () => {
+    expect(freeTimeBlock(toMinutes("17:55"), toMinutes("19:25"))).toBeNull(); // exactly 90
+    expect(freeTimeBlock(toMinutes("17:50"), toMinutes("19:25"))).toEqual({ start: "17:50", end: "19:25" });
+    // One short sight on a full day: the afternoon is free, not filled with made-up stops.
+    const plan = buildItinerary({ ...base, daytime: [SIGHTS[2]] });
+    const day = plan.days.find((d) => d.stops.some((s) => s.kind === "daytime"))!;
+    expect(day.stops.map((s) => s.kind)).toEqual(["daytime", "evening"]);
+    expect(day.free?.start).toBe(day.stops[0].end);
+    expect(toMinutes(day.free!.end)).toBe(toMinutes(day.stops[1].start) - day.stops[1].travel!.scheduledMin);
+    // A full day that ends near 18:00 has no free block.
+    const busy = buildItinerary(base).days.find((d) => {
+      const last = d.stops.filter((s) => s.kind === "daytime").at(-1);
+      return last && toMinutes(last.end) >= toMinutes("17:45");
+    });
+    if (busy) expect(busy.free).toBeNull();
+  });
   it("makes the first and last day half days when no flight is chosen, and says it is an assumption", () => {
     const plan = buildItinerary(base);
     expect(plan.basis).toBe("assumed");
     const [first, last] = [plan.days[0], plan.days.at(-1)!];
     expect(first.tags).toEqual(["VARIŞ GÜNÜ", "YARIM GÜN"]);
-    expect(first.window?.start).toBe("13:00");
-    expect(first.stops.every((s) => s.start >= "13:00")).toBe(true);
-    // 13:00–18:30 is 330 of 570 daytime minutes → 2 stops (proportional, rounded down), plus the evening.
-    expect(first.stops.filter((s) => s.kind === "daytime")).toHaveLength(2);
+    expect(first.window).toEqual({ start: "13:00", end: "21:30" });
+    const firstDaytime = first.stops.filter((s) => s.kind === "daytime");
+    expect(firstDaytime.length).toBeGreaterThan(0);
+    expect(firstDaytime.every((s) => s.start >= "13:00" && s.end <= "18:00")).toBe(true);
     expect(first.stops.at(-1)?.kind).toBe("evening");
     expect(last.tags).toEqual(["DÖNÜŞ GÜNÜ", "YARIM GÜN"]);
-    expect(last.window?.end).toBe("13:00");
+    expect(last.window).toEqual({ start: "09:00", end: "13:00" });
+    expect(last.stops.length).toBeGreaterThan(0);
     expect(last.stops.every((s) => s.end <= "13:00" && s.kind === "daytime")).toBe(true);
-    // 09:00–13:00 is 240 of 570 → 1 stop.
-    expect(last.stops).toHaveLength(1);
+    expect([first.flightNote, last.flightNote]).toEqual([false, false]);
   });
-
   it("starts 2 hours after landing and ends 3.5 hours before the return flight", () => {
     const plan = buildItinerary({
       ...base,
@@ -119,22 +153,46 @@ describe("buildItinerary", () => {
     expect(plan.days[0].window?.start).toBe("12:45");
     expect(plan.days.at(-1)?.window?.end).toBe("14:30");
     expect(plan.days.at(-1)?.stops.every((s) => s.end <= "14:30")).toBe(true);
-    // A late landing leaves no time on the first day; an early flight none on the last.
-    const tight = buildItinerary({
-      ...base,
-      flight: { arrive: { date: "2026-11-14", time: "23:10" }, leave: { date: "2026-11-18", time: "06:55" }, label: "X" },
-    });
-    expect(tight.days[0]).toMatchObject({ stops: [], window: null, note: "Varıştan sonra plan için zaman kalmıyor." });
-    expect(tight.days.at(-1)).toMatchObject({ stops: [], window: null, note: "Dönüş uçuşundan önce plan için zaman kalmıyor." });
     // A landing after midnight counts on the next local date.
-    const nextDay = buildItinerary({
-      ...base,
-      flight: { arrive: { date: "2026-11-15", time: "01:30" }, leave: null, label: "Y" },
-    });
+    const nextDay = buildItinerary({ ...base, flight: { arrive: { date: "2026-11-15", time: "01:30" }, leave: null, label: "Y" } });
     expect(nextDay.days[0].stops).toEqual([]);
     expect(nextDay.days[1].window?.start).toBe("09:00");
   });
 
+  it("explains a first or last day the flight leaves without daytime stops, and still has dinner when there is time", () => {
+    // Lands 19:30: settle in, dinner at 21:30 (the latest evening start) where a place is open that late.
+    const lateKitchens = EVENING.map((p) => ({ ...p, openingHours: "Mo-Su 12:00-01:00" }));
+    const evening = buildItinerary({
+      ...base,
+      evening: lateKitchens,
+      flight: { arrive: { date: "2026-11-14", time: "19:30" }, leave: { date: "2026-11-18", time: "06:55" }, label: "PC 438" },
+    });
+    expect(evening.days[0]).toMatchObject({
+      note: "Bu uçuşla varış 19:30'da; ilk gün yalnızca yerleşme ve akşam yemeği.",
+      flightNote: true,
+      window: { start: "21:30", end: "23:30" },
+    });
+    expect(evening.days[0].stops.map((s) => [s.kind, s.start])).toEqual([["evening", "21:30"]]);
+    expect(evening.days.at(-1)).toMatchObject({
+      note: "Bu uçuşla dönüş kalkışı 06:55'te; son gün havalimanına geçiş için.",
+      flightNote: true,
+      stops: [],
+      window: null,
+    });
+    // Kitchens closing at 23:00 cannot host a 21:30–23:30 dinner: the plan says settling in only.
+    const early = buildItinerary({
+      ...base,
+      flight: { arrive: { date: "2026-11-14", time: "19:30" }, leave: { date: "2026-11-18", time: "06:55" }, label: "PC 438" },
+    });
+    expect(early.days[0]).toMatchObject({ note: "Bu uçuşla varış 19:30'da; ilk gün yalnızca yerleşme.", stops: [] });
+    // Lands 23:10: no time for dinner either.
+    const late = buildItinerary({
+      ...base,
+      flight: { arrive: { date: "2026-11-14", time: "23:10" }, leave: { date: "2026-11-18", time: "18:00" }, label: "X" },
+    });
+    expect(late.days[0]).toMatchObject({ note: "Bu uçuşla varış 23:10'da; ilk gün yalnızca yerleşme.", flightNote: true, stops: [], window: null });
+    expect(late.days.at(-1)?.flightNote).toBe(false);
+  });
   it("starts each full day in a different area, with its most important place", () => {
     const plan = buildItinerary(base);
     const firsts = plan.days.filter((d) => d.tags.includes("TAM GÜN")).map((d) => d.stops[0]);
@@ -199,7 +257,8 @@ describe("buildItinerary", () => {
     const skip = [removed.shortId];
     const next = buildItinerary({ ...base, skip });
     expect(allStops(next).some((s) => s.id === removed.id)).toBe(false);
-    expect(next.days[1].stops.filter((s) => s.kind === "daytime")).toHaveLength(4);
+    const daytimeCount = (p: typeof plan) => p.days[1].stops.filter((s) => s.kind === "daytime").length;
+    expect(daytimeCount(next)).toBe(daytimeCount(plan));
     expect(next.skipped).toEqual(skip);
     expect(buildItinerary({ ...base, skip })).toEqual(next);
     // Unknown ids are ignored.
@@ -210,7 +269,6 @@ describe("buildItinerary", () => {
     expect(swapped.days[1].stops.at(-1)).toMatchObject({ kind: "evening" });
     expect(swapped.days[1].stops.at(-1)?.id).not.toBe(evening.id);
   });
-
   it("has no evening place when the evening list is empty, and fewer stops when the city has few", () => {
     const plan = buildItinerary({ ...base, daytime: SIGHTS.slice(0, 3), evening: [] });
     expect(allStops(plan)).toHaveLength(3);

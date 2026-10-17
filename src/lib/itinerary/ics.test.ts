@@ -62,8 +62,9 @@ describe("buildIcs", () => {
     const first = plan.days.find((d) => d.stops.length)!;
     expect(lines).toContain(`DTSTART;TZID=Europe/Madrid:${first.date.replaceAll("-", "")}T${first.stops[0].start.replace(":", "")}00`);
     expect(lines).toContain("TZOFFSETTO:+0100");
-    expect(events[0].DESCRIPTION).toContain("OpenStreetMap: https://www.openstreetmap.org/node/");
-    expect(events[0].DESCRIPTION).toContain("Adres: Street");
+    const sight = events.find((e) => e.SUMMARY?.startsWith("Sight"))!;
+    expect(sight.DESCRIPTION).toContain("OpenStreetMap: https://www.openstreetmap.org/node/");
+    expect(sight.DESCRIPTION).toContain("Adres: Street");
     expect(events[0].DTSTAMP).toBe("20261017T090000Z");
   });
 

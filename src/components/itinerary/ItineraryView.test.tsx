@@ -31,7 +31,8 @@ describe("ItineraryView", () => {
     expect(within(day(1)).getByText("14 KAS CMT")).toBeInTheDocument();
     expect(within(day(1)).getByText(/VARIŞ GÜNÜ · YARIM GÜN · 13:00–21:30/)).toBeInTheDocument();
     expect(within(day(2)).getByText(/TAM GÜN · 09:00–21:30/)).toBeInTheDocument();
-    expect(within(day(2)).getAllByRole("listitem").filter((li) => li.querySelector("button[aria-label$='çıkar']"))).toHaveLength(5);
+    // A full day: more than the old four daytime stops, plus the evening place.
+    expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length).toBeGreaterThan(5);
   });
 
   it("shows times, category, duration, the walk between stops and 'check the hours'", () => {
@@ -48,15 +49,38 @@ describe("ItineraryView", () => {
     const user = userEvent.setup();
     renderView();
     const removed = "Sight 0-0";
+    const before = within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length;
     await user.click(screen.getByRole("button", { name: `${removed} durağını plandan çıkar` }));
     expect(screen.queryByText(removed)).not.toBeInTheDocument();
     expect(window.location.search).toBe(`?${SEARCH}&skip=n100`);
     expect(window.location.hash).toBe("#gun-gun-plan");
-    expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ })).toHaveLength(5);
+    expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ })).toHaveLength(before);
     await user.click(screen.getByRole("button", { name: "Planı sıfırla (1)" }));
     expect(screen.getByText(removed)).toBeInTheDocument();
     expect(window.location.search).toBe(`?${SEARCH}`);
     expect(screen.queryByRole("button", { name: /Planı sıfırla/ })).not.toBeInTheDocument();
+  });
+
+  it("shows free time and links a flight-limited day to the flights section", () => {
+    render(
+      <ItineraryView
+        input={{
+          ...input,
+          daytime: SIGHTS.slice(0, 1),
+          evening: EVENING.map((p) => ({ ...p, openingHours: "Mo-Su 12:00-01:00" })),
+          flight: { arrive: { date: "2026-11-14", time: "19:30" }, leave: { date: "2026-11-18", time: "06:55" }, label: "Pegasus · PC 438" },
+        }}
+        initialSkip={[]}
+        cityName="Barselona"
+        center={{ lat: 41.39, lon: 2.17 }}
+      />,
+    );
+    expect(within(day(1)).getByText("Bu uçuşla varış 19:30'da; ilk gün yalnızca yerleşme ve akşam yemeği.")).toBeInTheDocument();
+    expect(within(day(1)).getByRole("link", { name: "Daha uygun saatli uçuşlara bak" })).toHaveAttribute("href", "#ucuslar");
+    expect(within(day(5)).getByText("Bu uçuşla dönüş kalkışı 06:55'te; son gün havalimanına geçiş için.")).toBeInTheDocument();
+    const withSight = screen.getByText("Sight 0-0").closest("section")!;
+    expect(within(withSight).getByText(/^SERBEST ZAMAN · \d{2}:\d{2}–\d{2}:\d{2}$/)).toBeInTheDocument();
+    expect(within(day(3)).queryByRole("link", { name: "Daha uygun saatli uçuşlara bak" })).not.toBeInTheDocument();
   });
 
   it("opens a shared link with the same removals", () => {
