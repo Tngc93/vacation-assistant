@@ -80,9 +80,12 @@ const listed = (list: CityOverrides["include"], qid: string | undefined) => Bool
 export function isSight(place: RulePlace, category: CategoryId, overrides: CityOverrides = {}): boolean {
   if (listed(overrides.exclude, place.wikidataId)) return false;
   if (listed(overrides.include, place.wikidataId)) return true;
-  if (hasAny(place, NEVER)) return false;
-  if (hasAny(place, DISTRICT) && !hasAny(place, BUILT)) return false;
-  if (place.id.startsWith("wikidata/") && !hasAny(place, ALWAYS)) {
+  // Countries and districts are judged only when Wikidata alone suggests the place: Wikidata's class tree also
+  // files the Brandenburg Gate, the Kremlin and Christiania under them, and OSM's own tag says they are sights.
+  const wikidataOnly = place.id.startsWith("wikidata/");
+  if (wikidataOnly && hasAny(place, NEVER)) return false;
+  if (wikidataOnly && hasAny(place, DISTRICT) && !hasAny(place, BUILT)) return false;
+  if (wikidataOnly && !hasAny(place, ALWAYS)) {
     if (hasAny(place, NOT_SIGHTS)) return false;
     if (hasAny(place, NOT_SIGHTS_UNLISTED) && !hasAny(place, [HERITAGE_TAG])) return false;
   }

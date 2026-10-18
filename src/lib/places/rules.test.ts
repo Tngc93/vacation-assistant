@@ -46,11 +46,15 @@ describe("sight rules", () => {
     expect(isSight(sight("Q2", ["office"]), "see")).toBe(false);
     expect(isSight(sight("Q3", ["heritage", "office", "station"]), "see")).toBe(false);
     expect(isSight(sight("Q237", ["country", "unesco"]), "see")).toBe(false);
-    expect(isSight(sight("Q10", ["adminArea"], false), "see")).toBe(false);
+    // OSM tags these as sights; Wikidata files them under districts or countries too (Brandenburg Gate, Christiania).
+    expect(isSight(sight("Q82425", ["adminArea", "attraction", "heritage", "notPlace", "office"], false), "see")).toBe(true);
+    expect(isSight(sight("Q202206", ["adminArea", "country", "organization"], false), "see")).toBe(true);
+    expect(isSight(sight("Q10", ["adminArea"]), "see")).toBe(false);
     // Wikidata files the Eiffel Tower and the Château de Vincennes under districts too: buildings stay.
     expect(isSight(sight("Q243", ["adminArea", "attraction", "heritage", "tower"], false), "see")).toBe(true);
     expect(isSight(sight("Q11", ["adminArea", "castle", "heritage"]), "see")).toBe(true);
     expect(isSight(sight("Q12", ["adminArea", "road", "street"]), "see")).toBe(false);
+    expect(isSight(sight("Q237", ["adminArea", "country", "unesco"]), "see")).toBe(false);
   });
 
   it("lets the overrides include and exclude, before any rule", () => {
