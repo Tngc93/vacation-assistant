@@ -13,7 +13,8 @@
  *
  * Must-see places come from the Wikidata Query Service too (two small SPARQL
  * queries per city, see landmarks.ts) and are merged into sights and museums.
- * One more query stores each sight's Wikidata kinds (kinds.ts); which places
+ * One more query stores each sight's Wikidata kinds (kinds.ts) and whether an
+ * OSM object's item has a coordinate near it (refresh.ts); which places
  * count as sights is decided when the files are read (rules.ts), so a rule
  * change needs no refetch.
  */
@@ -26,6 +27,7 @@ import { CATEGORY_IDS, type CategoryId } from "../src/lib/places/categories";
 import { PLACE_OVERRIDES } from "../src/data/place-overrides";
 import type { KindTag } from "../src/lib/places/kinds";
 import { fetchKinds, fetchLandmarks } from "../src/lib/places/landmarks";
+import { refreshKinds } from "../src/lib/places/refresh";
 import { isSight } from "../src/lib/places/rules";
 import { toPlace } from "../src/lib/places/place";
 import { ODBL, PLACES_FILE_VERSION, placesFileSchema, SOURCES, type PlacesFile } from "../src/lib/places/file";
@@ -153,7 +155,7 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
     photo = null;
   }
 
-  return placesFileSchema.parse({
+  const built = placesFileSchema.parse({
     version: PLACES_FILE_VERSION,
     cityCode: city.cityCode,
     fetchedAt: new Date().toISOString(),
@@ -163,6 +165,10 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
     photo,
     categories,
   });
+  // Relink overrides and link tags (an item without a coordinate near the OSM object), as `npm run data:kinds` does.
+  const refreshed = await withBackoff(`${city.cityCode} refresh`, () => refreshKinds(built, overrides, { kinds }));
+  if (refreshed.missing.length) log(`  ${city.cityCode}: relink not found for ${refreshed.missing.join(" ")}`);
+  return placesFileSchema.parse(refreshed.file);
 }
 
 /** True when the city's file was written by this file version within the last 24 hours. */

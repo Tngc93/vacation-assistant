@@ -19,8 +19,14 @@ export type RankedPlace = Place & {
 const collator = new Intl.Collator("tr");
 
 /** How many of website, opening hours and cuisine the OSM record has. */
-export function detailScore(place: Place): number {
+export function detailScore(place: Pick<Place, "website" | "openingHours" | "cuisine">): number {
   return [place.website, place.openingHours, place.cuisine].filter(Boolean).length;
+}
+
+/** Wikipedia language count, then record detail, then the name (Turkish order): a total, stable order. */
+type Rankable = Pick<Place, "name" | "website" | "openingHours" | "cuisine"> & { wikipediaCount?: number };
+export function compareRanked(a: Rankable, b: Rankable): number {
+  return (b.wikipediaCount ?? 0) - (a.wikipediaCount ?? 0) || detailScore(b) - detailScore(a) || collator.compare(a.name, b.name);
 }
 
 /**
@@ -54,12 +60,7 @@ export function rankPlaces(
     };
   });
 
-  ranked.sort(
-    (a, b) =>
-      (b.wikipediaCount ?? 0) - (a.wikipediaCount ?? 0) ||
-      detailScore(b) - detailScore(a) ||
-      collator.compare(a.name, b.name),
-  );
+  ranked.sort(compareRanked);
   const once = CATEGORIES[category].ranking === "wikipedia" ? sameNameOnce(ranked) : ranked;
   const kept: RankedPlace[] = [];
   let counted = 0;

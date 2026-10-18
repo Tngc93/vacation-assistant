@@ -169,3 +169,16 @@ describe("Wikidata kinds of sights", () => {
     expect(kinds).toEqual(new Map([["Q810700", ["musicVenue"]], ["Q550", ["street"]]]));
   });
 });
+
+describe("link tags", () => {
+  it("marks an OSM object whose item has no coordinate, or none within 2 km, and never a Wikidata place", async () => {
+    const { linkTags } = await import("./kinds");
+    const { distanceKm } = await import("@/lib/geo");
+    const osm = { id: "node/1", lat: 25.29, lon: 51.53 };
+    expect(linkTags(osm, [], distanceKm)).toEqual(["noCoordinate"]);
+    expect(linkTags(osm, [{ lat: 25.3, lon: 51.53 }], distanceKm)).toEqual([]);
+    expect(linkTags(osm, [{ lat: 30.5, lon: 47.8 }, { lat: 25.4, lon: 51.53 }], distanceKm)).toEqual(["farFromItem"]);
+    expect(linkTags(osm, undefined, distanceKm)).toEqual([]);
+    expect(linkTags({ ...osm, id: "wikidata/Q1" }, [], distanceKm)).toEqual([]);
+  });
+});

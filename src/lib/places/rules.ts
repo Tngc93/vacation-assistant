@@ -1,8 +1,8 @@
 import { PLACE_OVERRIDES, type CityOverrides } from "@/data/place-overrides";
 import { CATEGORIES, type CategoryId } from "./categories";
 import type { PlacesFile, StoredPlace } from "./file";
-import { HERITAGE_TAG, UNESCO_TAG, type KindTag } from "./kinds";
-import { categoryCap } from "./rank";
+import { FAR_FROM_ITEM_TAG, HERITAGE_TAG, NO_COORDINATE_TAG, UNESCO_TAG, type KindTag } from "./kinds";
+import { categoryCap, compareRanked } from "./rank";
 
 /**
  * Which stored places count as sights, applied when the files are read (the
@@ -48,6 +48,29 @@ const WALK: readonly KindTag[] = ["street", "square", "bridge", "promenade"];
 /** …but not the Roman Forum (a square, and ruins) or a palace on a square. */
 const WALK_EXEMPT: readonly KindTag[] = ["ruins", "palace", "castle", "museum", "religious"];
 
+/** Kinds that make an item a place we show, whatever else it is (the Louvre is an organization too). */
+const SIGHT_KINDS: readonly KindTag[] = [
+  "museum",
+  "ruins",
+  "attraction",
+  "palace",
+  "castle",
+  "religious",
+  "tower",
+  "street",
+  "square",
+  "bridge",
+  "promenade",
+  "opera",
+  "concertHall",
+  "musicVenue",
+  "theatre",
+  "performingArts",
+];
+/** Official residences and seats of government are kept out of the plan, unless they are also a museum or ruins. */
+const RESIDENCE: readonly KindTag[] = ["residence"];
+const RESIDENCE_OK: readonly KindTag[] = ["museum", "ruins"];
+
 type RulePlace = Pick<StoredPlace, "id" | "wikidataId" | "kinds">;
 
 const hasAny = (place: RulePlace, tags: readonly KindTag[]) => (place.kinds ?? []).some((k) => tags.includes(k as KindTag));
@@ -70,6 +93,27 @@ export function isSight(place: RulePlace, category: CategoryId, overrides: CityO
   return true;
 }
 
+/**
+ * Rule 1: an OSM object tagged with a Wikidata item that is not the place, so the item's Wikipedia count says
+ * nothing about it: an item more than 2 km away; an event, person or idea without a coordinate (the Foucault
+ * pendulum, Chaliapin); an organization without one, unless OSM calls the object a museum (a museum's own
+ * item often has no coordinate); or a university (the Sorbonne's gallery). A relink override settles it.
+ */
+export function hasWrongLink(place: RulePlace, category: CategoryId, overrides: CityOverrides = {}): boolean {
+  if (place.id.startsWith("wikidata/") || !place.wikidataId) return false;
+  if (overrides.relink?.some((r) => r.osmId === place.id)) return false;
+  if (hasAny(place, [FAR_FROM_ITEM_TAG])) return true;
+  const noCoordinate = hasAny(place, [NO_COORDINATE_TAG]);
+  if (noCoordinate && hasAny(place, ["notPlace"])) return true;
+  if (noCoordinate && hasAny(place, ["organization"]) && category !== "museum") return true;
+  return hasAny(place, ["university"]) && !hasAny(place, SIGHT_KINDS);
+}
+
+/** Rule 2: an official residence or seat of government (the Élysée, 10 Downing Street): not a plan stop. */
+export function isResidence(place: RulePlace): boolean {
+  return hasAny(place, RESIDENCE) && !hasAny(place, RESIDENCE_OK);
+}
+
 /** Streets, squares, bridges and promenades: a short visit in the plan. */
 export function isWalkThrough(place: RulePlace): boolean {
   return hasAny(place, WALK) && !hasAny(place, WALK_EXEMPT);
@@ -80,6 +124,10 @@ export type ShownPlace = Omit<StoredPlace, "kinds"> & {
   walkThrough?: true;
   /** Visit length set by an override (place-overrides.ts). */
   visitMin?: number;
+  /** A residence closed to visitors: shown in the guide, never a plan stop. */
+  noVisit?: true;
+  /** Seen from outside only (place-overrides.ts), except in `openMonths`. */
+  exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
 };
 export type ShownCategory =
   | { status: "ok"; wikipediaCountsAvailable: boolean; places: ShownPlace[] }
@@ -88,8 +136,32 @@ export type ShownPlacesFile = Omit<PlacesFile, "categories"> & { categories: Rec
 
 function toShown(place: StoredPlace, overrides: CityOverrides): ShownPlace {
   const { kinds: _kinds, ...rest } = place;
-  const visitMin = overrides.include?.find((o) => o.qid === place.wikidataId)?.visitMin;
-  return { ...rest, ...(isWalkThrough(place) ? { walkThrough: true } : {}), ...(visitMin ? { visitMin } : {}) };
+  const qid = place.wikidataId;
+  const visitMin = overrides.include?.find((o) => o.qid === qid)?.visitMin;
+  const exterior = qid ? overrides.exteriorOnly?.find((o) => o.qid === qid) : undefined;
+  const open = Boolean(qid && overrides.open?.some((o) => o.qid === qid));
+  return {
+    ...rest,
+    ...(isWalkThrough(place) ? { walkThrough: true } : {}),
+    ...(visitMin ? { visitMin } : {}),
+    ...(exterior
+      ? {
+          exterior: {
+            ...(exterior.visitMin ? { visitMin: exterior.visitMin } : {}),
+            ...(exterior.openMonths ? { openMonths: exterior.openMonths } : {}),
+            ...(exterior.note ? { note: exterior.note } : {}),
+          },
+        }
+      : isResidence(place) && !open
+        ? { noVisit: true }
+        : {}),
+  };
+}
+
+/** Drops the item a wrong link points at: its Wikipedia count, id and kinds belong to something else. */
+function unlinked(place: StoredPlace): StoredPlace {
+  const { wikidataId: _qid, wikipediaCount: _count, kinds: _kinds, ...rest } = place;
+  return rest;
 }
 
 /** Applies the sight rules and the city's overrides, then the per-category limit (40 sights or museums, 30 others). */
@@ -100,7 +172,13 @@ export function applyPlaceRules(file: PlacesFile, overrides: CityOverrides = PLA
       categories[id] = entry;
       continue;
     }
-    const kept = CATEGORIES[id].ranking === "wikipedia" ? entry.places.filter((p) => isSight(p, id, overrides)) : entry.places;
+    let kept = entry.places;
+    if (CATEGORIES[id].ranking === "wikipedia") {
+      const wrong = new Set(kept.filter((p) => hasWrongLink(p, id, overrides)).map((p) => p.id));
+      kept = kept.map((p) => (wrong.has(p.id) ? unlinked(p) : p)).filter((p) => isSight(p, id, overrides));
+      // A place that lost a wrong link's count moves down; otherwise the stored order stands.
+      if (wrong.size) kept = [...kept].sort(compareRanked);
+    }
     categories[id] = { ...entry, places: kept.slice(0, categoryCap(id)).map((p) => toShown(p, overrides)) };
   }
   return { ...file, categories };
