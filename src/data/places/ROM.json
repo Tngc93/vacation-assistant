@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "ROM",
- "fetchedAt": "2026-10-16T23:15:21.311Z",
+ "fetchedAt": "2026-10-18T18:42:43.434Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,22 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q237",
+     "name": "Vatikan",
+     "localName": "Vatican City",
+     "lat": 41.904,
+     "lon": 12.453,
+     "wikipediaCount": 275,
+     "wikidataId": "Q237",
+     "country": "VA",
+     "kinds": [
+      "adminArea",
+      "country",
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
      "id": "relation/1834818",
      "name": "Kolezyum",
      "localName": "Colosseo",
@@ -51,7 +67,16 @@
      "address": "Piazza del Colosseo",
      "website": "https://colosseo.it/",
      "openingHours": "Mar 29-Sep 30 08:30-19:15; Oct 01-Oct 24 08:30-18:30; Oct 25-Feb 28 08:30-16:30; Jan 01 off; Dec 25 off",
-     "wikipediaCount": 143
+     "wikipediaCount": 143,
+     "wikidataId": "Q10285",
+     "kinds": [
+      "heritage",
+      "museum",
+      "performingArts",
+      "ruins",
+      "sportsVenue",
+      "theatre"
+     ]
     },
     {
      "id": "way/244159210",
@@ -61,7 +86,14 @@
      "address": "Piazza San Pietro",
      "website": "https://www.basilicasanpietro.va/it/",
      "openingHours": "Mo-Su 07:00-20:00",
-     "wikipediaCount": 129
+     "wikipediaCount": 129,
+     "wikidataId": "Q12512",
+     "country": "VA",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/215289671",
@@ -70,7 +102,12 @@
      "lon": 12.4544,
      "website": "https://m.museivaticani.va/content/museivaticani-mobile/it/collezioni/musei/cappella-sistina/storia-cappella-sistina.html",
      "openingHours": "Mo-Sa 08:00-20:00",
-     "wikipediaCount": 87
+     "wikipediaCount": 87,
+     "wikidataId": "Q2943",
+     "country": "VA",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "relation/3374342",
@@ -80,35 +117,58 @@
      "address": "Piazza della Rotonda",
      "website": "https://pantheonroma.org/",
      "openingHours": "Mo-Sa 08:30-19:15; Su 09:00-17:45",
-     "wikipediaCount": 79
+     "wikipediaCount": 79,
+     "wikidataId": "Q99309",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q159884",
+     "name": "Stadio Olimpico",
+     "lat": 41.93389,
+     "lon": 12.45472,
+     "wikipediaCount": 73,
+     "wikidataId": "Q159884",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/1841080",
      "name": "Forum Romanum",
      "lat": 41.89168,
      "lon": 12.48708,
-     "wikipediaCount": 68
-    },
-    {
-     "id": "relation/1849832",
-     "name": "Piazza del Foro",
-     "lat": 41.89236,
-     "lon": 12.48515,
-     "wikipediaCount": 68
+     "wikipediaCount": 68,
+     "wikidataId": "Q180212",
+     "kinds": [
+      "heritage",
+      "ruins",
+      "square"
+     ]
     },
     {
      "id": "relation/13448560",
      "name": "Fontana di Trevi",
      "lat": 41.90096,
      "lon": 12.48328,
-     "wikipediaCount": 66
+     "wikipediaCount": 66,
+     "wikidataId": "Q185382"
     },
     {
      "id": "relation/10044166",
      "name": "Piazza San Pietro",
      "lat": 41.90223,
      "lon": 12.45736,
-     "wikipediaCount": 63
+     "wikipediaCount": 63,
+     "wikidataId": "Q83425",
+     "country": "VA",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/36444",
@@ -118,7 +178,13 @@
      "address": "Piazza di San Giovanni in Laterano",
      "website": "https://www.basilicasangiovanni.va/",
      "openingHours": "Mo-Su 07:00-18:30",
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q84090",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/365475871",
@@ -126,14 +192,26 @@
      "lat": 41.88931,
      "lon": 12.48711,
      "openingHours": "Jan 02-Feb 15,Oct 28-Dec 31 08:30-16:30; Jan 16-Mar 15 08:30-17:00; Mar 16-24 08:30-17:30; Mar 25-Aug 31 08:30-19:15; Sep 01-30 08:30-19:00",
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q200642",
+     "kinds": [
+      "museum",
+      "ruins"
+     ]
     },
     {
      "id": "relation/49690",
      "name": "Palatium Apostolicum",
      "lat": 41.90325,
      "lon": 12.45531,
-     "wikipediaCount": 59
+     "wikipediaCount": 59,
+     "wikidataId": "Q145093",
+     "country": "VA",
+     "kinds": [
+      "office",
+      "palace",
+      "religious"
+     ]
     },
     {
      "id": "way/8035487",
@@ -142,7 +220,29 @@
      "lat": 41.90308,
      "lon": 12.46633,
      "openingHours": "Mo-Su 09:00-19:30",
-     "wikipediaCount": 56
+     "wikipediaCount": 56,
+     "wikidataId": "Q486382",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "museum",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q231699",
+     "name": "San Paolo fuori le mura Bazilikası",
+     "localName": "Basilica of Saint Paul outside the Walls",
+     "lat": 41.85861,
+     "lon": 12.47722,
+     "wikipediaCount": 55,
+     "wikidataId": "Q231699",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/131564482",
@@ -153,14 +253,24 @@
      "address": "Piazza di Santa Maria Maggiore",
      "website": "https://www.basilicasantamariamaggiore.va/",
      "openingHours": "Mo-Su 07:00-19:00",
-     "wikipediaCount": 54
+     "wikipediaCount": 54,
+     "wikidataId": "Q186282",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/3376015",
      "name": "Colonna di Traiano",
      "lat": 41.89581,
      "lon": 12.48427,
-     "wikipediaCount": 54
+     "wikipediaCount": 54,
+     "wikidataId": "Q192784",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "relation/2707110",
@@ -170,28 +280,61 @@
      "address": "Piazza del Quirinale",
      "website": "https://palazzo.quirinale.it/",
      "openingHours": "Tu-We, Fr-Su 09:30-14:30",
-     "wikipediaCount": 51
+     "wikipediaCount": 51,
+     "wikidataId": "Q223079",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/11384819",
      "name": "Circo Massimo",
      "lat": 41.886,
      "lon": 12.4857,
-     "wikipediaCount": 51
+     "wikipediaCount": 51,
+     "wikidataId": "Q207808",
+     "kinds": [
+      "ruins",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/23590989",
      "name": "Arco di Costantino",
      "lat": 41.88976,
      "lon": 12.49067,
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q5786",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q625149",
+     "name": "Aurelianus Surları",
+     "localName": "Aurelian Walls",
+     "lat": 41.87329,
+     "lon": 12.49896,
+     "wikipediaCount": 46,
+     "wikidataId": "Q625149",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/4247138",
      "name": "Piazza Navona",
      "lat": 41.89893,
      "lon": 12.4731,
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q463400",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/1754380",
@@ -200,21 +343,36 @@
      "lon": 12.48517,
      "website": "https://www.mercatiditraiano.it/",
      "openingHours": "09:30-19:30",
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q211295",
+     "kinds": [
+      "heritage",
+      "ruins",
+      "square"
+     ]
     },
     {
      "id": "relation/1849830",
      "name": "Altare della Patria",
      "lat": 41.8947,
      "lon": 12.48318,
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q506234",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/23913953",
      "name": "Arco di Tito",
      "lat": 41.89067,
      "lon": 12.48858,
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q723887",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/201882369",
@@ -224,7 +382,12 @@
      "address": "Piazza di San Pietro in Vincoli 4/a",
      "website": "http://www.lateranensi.org/sanpietroinvincoli/",
      "openingHours": "08:00-12:30,15:00-18:00; Mar Su[-1]-Oct Su[-1] -1 day 08:00-12:30,15:00-19:00",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q542070",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/13476232",
@@ -233,14 +396,52 @@
      "lon": 12.49239,
      "website": "https://www.coopculture.it/heritage.cfm?id=6",
      "openingHours": "Tu-Su 10:00-19:15",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q502098",
+     "kinds": [
+      "heritage",
+      "museum",
+      "ruins"
+     ]
     },
     {
      "id": "way/201291264",
      "name": "Ara Pacis Augustae",
      "lat": 41.90615,
      "lon": 12.4755,
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q623612",
+     "kinds": [
+      "museum",
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q719794",
+     "name": "Gesù Kilisesi",
+     "localName": "Church of the Gesù",
+     "lat": 41.89583,
+     "lon": 12.47972,
+     "wikipediaCount": 39,
+     "wikidataId": "Q719794",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q467025",
+     "name": "Gregoriana Papalık Üniversitesi",
+     "localName": "Pontifical Gregorian University",
+     "lat": 41.89889,
+     "lon": 12.48472,
+     "wikipediaCount": 39,
+     "wikidataId": "Q467025",
+     "kinds": [
+      "business",
+      "university"
+     ]
     },
     {
      "id": "way/134400816",
@@ -248,7 +449,8 @@
      "localName": "Scalinata della Trinità dei Monti",
      "lat": 41.90607,
      "lon": 12.48281,
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q848072"
     },
     {
      "id": "relation/2752093",
@@ -256,35 +458,154 @@
      "lat": 41.88656,
      "lon": 12.50574,
      "website": "https://www.palazzolateranense.com/",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q848394",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q770847",
+     "name": "Augustus Anıt Mezarı",
+     "localName": "Mausoleum of Augustus",
+     "lat": 41.90611,
+     "lon": 12.47639,
+     "wikipediaCount": 38,
+     "wikidataId": "Q770847",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "relation/13474926",
      "name": "Piazza di Spagna",
      "lat": 41.90567,
      "lon": 12.48228,
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q15124814",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q824997",
+     "name": "Popolo Meydanı",
+     "localName": "piazza del Popolo",
+     "lat": 41.91071,
+     "lon": 12.47632,
+     "wikipediaCount": 38,
+     "wikidataId": "Q824997",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/1842062",
      "name": "Tempio di Vesta",
      "lat": 41.89169,
      "lon": 12.4862,
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q753791",
+     "kinds": [
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "way/49824161",
      "name": "Arco di Settimio Severo",
      "lat": 41.89283,
      "lon": 12.48474,
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q162353",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/201735339",
      "name": "Colonna di Marco Aurelio",
      "lat": 41.90085,
      "lon": 12.47999,
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q265384"
+    },
+    {
+     "id": "way/105281826",
+     "name": "Mura Serviane",
+     "lat": 41.89793,
+     "lon": 12.50228,
+     "wikipediaCount": 37,
+     "wikidataId": "Q281330",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q874832",
+     "name": "Venezia Meydanı",
+     "localName": "piazza Venezia",
+     "lat": 41.89639,
+     "lon": 12.4825,
+     "wikipediaCount": 37,
+     "wikidataId": "Q874832",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "relation/22289",
+     "name": "Palazzo Farnese",
+     "lat": 41.89465,
+     "lon": 12.47068,
+     "website": "https://www.farnese-rome.it/",
+     "wikipediaCount": 36,
+     "wikidataId": "Q848386",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "way/134399943",
+     "name": "Ponte Sant'Angelo",
+     "lat": 41.90189,
+     "lon": 12.46643,
+     "wikipediaCount": 36,
+     "wikidataId": "Q870476",
+     "kinds": [
+      "bridge",
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "node/13119048948",
+     "name": "Domus Aurea",
+     "lat": 41.89126,
+     "lon": 12.49511,
+     "website": "https://colosseo.it/area/domus-aurea/",
+     "wikipediaCount": 35,
+     "wikidataId": "Q622438",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q28303",
+     "name": "Campo de' Fiori Meydanı",
+     "localName": "Campo de' Fiori",
+     "lat": 41.89566,
+     "lon": 12.47205,
+     "wikipediaCount": 35,
+     "wikidataId": "Q28303",
+     "kinds": [
+      "square"
+     ]
     }
    ]
   },
@@ -299,7 +620,12 @@
      "lon": 12.45274,
      "website": "https://www.museivaticani.va/",
      "openingHours": "Mo-Sa 09:00-18:00; Su 09:00-14:00",
-     "wikipediaCount": 64
+     "wikipediaCount": 64,
+     "wikidataId": "Q182955",
+     "country": "VA",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1440405490",
@@ -309,7 +635,12 @@
      "address": "Piazzale Scipione Borghese 5",
      "website": "https://galleriaborghese.beniculturali.it/",
      "openingHours": "Tu-Su 09:00-19:00",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q841506",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/9909127",
@@ -318,7 +649,12 @@
      "lon": 12.48276,
      "website": "https://www.museicapitolini.org/",
      "openingHours": "Mo-Su 09:30-19:30; Dec 24,31 09:30-14:00; Jan 01 off; May 01 off; Dec 25 off",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q333906",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/10774102107",
@@ -326,7 +662,20 @@
      "lat": 41.9033,
      "lon": 12.45454,
      "website": "https://www.museivaticani.va/content/museivaticani/es/collezioni/musei/stanze-di-raffaello.html",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q249449"
+    },
+    {
+     "id": "wikidata/Q1135392",
+     "name": "Ulusal Roma Müzesi",
+     "localName": "Museo Nazionale Romano",
+     "lat": 41.90343,
+     "lon": 12.49902,
+     "wikipediaCount": 34,
+     "wikidataId": "Q1135392",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2122709063",
@@ -336,7 +685,12 @@
      "address": "Via delle Quattro Fontane 13",
      "website": "https://www.barberinicorsini.org/",
      "openingHours": "Tu-Su 08:30-19:00; Mo off; Jan 1 off; Dec 25 off",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q2266081",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/2980622",
@@ -346,7 +700,13 @@
      "address": "Viale delle Belle Arti 131",
      "website": "https://lagallerianazionale.com/",
      "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 01 off; Dec 25 off",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1492387",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/706793341",
@@ -356,7 +716,12 @@
      "address": "Via del Corso 305",
      "website": "https://www.dopart.it/",
      "openingHours": "Mo-Th 09:00-19:00; Fr-Su 10:00-20:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1203458",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/1849827",
@@ -364,7 +729,40 @@
      "lat": 41.89314,
      "lon": 12.48458,
      "openingHours": "09:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1035634",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "node/7012887885",
+     "name": "Accademia di San Luca",
+     "lat": 41.90162,
+     "lon": 12.48368,
+     "address": "Piazza dell'Accademia di San Luca 77",
+     "openingHours": "Mo-Sa 09:00-18:00",
+     "wikipediaCount": 22,
+     "wikidataId": "Q338523",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum",
+      "school"
+     ]
+    },
+    {
+     "id": "node/11204178550",
+     "name": "Museo del Tesoro Lateranense",
+     "lat": 41.88599,
+     "lon": 12.50494,
+     "website": "https://www.basilicasangiovanni.va/it/san-giovanni-in-laterano/basilica/il-museo.html",
+     "wikipediaCount": 22,
+     "wikidataId": "Q468405",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/13460785710",
@@ -375,7 +773,12 @@
      "address": "Piazzale di Villa Giulia 9",
      "website": "https://www.museoetru.it/",
      "openingHours": "Tu-Su 09:00-20:00; Mo off; Jan 01 off; Dec 25 off; easter +1 day open",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q15055388",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4891858022",
@@ -383,7 +786,11 @@
      "lat": 41.90827,
      "lon": 12.48272,
      "website": "https://www.villamedici.it/",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q337494",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/1649776329",
@@ -393,7 +800,12 @@
      "address": "Via della Pilotta 17",
      "website": "https://www.galleriacolonna.it/",
      "openingHours": "Sa 09:00-13:15",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1971299",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2296913458",
@@ -403,21 +815,47 @@
      "address": "Via di Tor Sanguigna 3",
      "website": "https://stadiodomiziano.com/",
      "openingHours": "Mo-Fr 10:00-19:00, Su 10:00-19:00; Sa 10:00-20:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q963671",
+     "kinds": [
+      "ruins",
+      "sportsVenue"
+     ]
     },
     {
      "id": "node/3612947728",
      "name": "San Giovanni",
      "lat": 41.88532,
      "lon": 12.50993,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1227431",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q498557",
+     "name": "Borgia Apartment",
+     "lat": 41.90333,
+     "lon": 12.455,
+     "wikipediaCount": 16,
+     "wikidataId": "Q498557",
+     "country": "VA",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/132581385",
      "name": "Casa di Augusto",
      "lat": 41.88857,
      "lon": 12.48533,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1590891",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "relation/1391821",
@@ -427,7 +865,12 @@
      "address": "Via Nizza 138",
      "website": "https://www.museomacro.it/",
      "openingHours": "Tu,We,Th,Fr,Su 12:00-19:00; Sa 10:00-19:00; Mo off",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2669644",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/51930840",
@@ -436,7 +879,11 @@
      "lon": 12.49009,
      "address": "Via Nazionale 194",
      "website": "https://www.palazzoesposizioni.it/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q2579612",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/656532697",
@@ -446,7 +893,12 @@
      "address": "Piazza Capo di Ferro 13",
      "website": "https://galleriaspada.beniculturali.it/index.php?it/1/home",
      "openingHours": "We-Mo 08:30-19:30; Tu off; May 1 off; Dec 25 off",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q3757699",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/35027800",
@@ -454,7 +906,24 @@
      "lat": 41.90576,
      "lon": 12.45279,
      "openingHours": "Mo-Sa 08:00-17:00+",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q774940",
+     "country": "VA",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q2034945",
+     "name": "Collection of Modern Religious Art, Vatican Museums",
+     "lat": 41.90333,
+     "lon": 12.455,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2034945",
+     "country": "VA",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10074889581",
@@ -463,14 +932,23 @@
      "lon": 12.47259,
      "website": "https://www.museobarracco.it/",
      "openingHours": "Oct-May: Tu-Su 10:00-16:00; Dec 24,31 09:00-14:00; Jun-Sep: Tu-Su 13:00-19:00, Mo off; Mo off; Jan 01 off; May 01 off; Dec 25 off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q2729588",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/10774102205",
      "name": "Galleria delle Carte Geografiche",
      "lat": 41.90451,
      "lon": 12.45421,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q634691",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6718428617",
@@ -478,7 +956,11 @@
      "lat": 41.90655,
      "lon": 12.45458,
      "website": "https://www.museivaticani.va/content/museivaticani/it/collezioni/musei/museo-pio-clementino.html",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1439912",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/13475193",
@@ -488,7 +970,11 @@
      "address": "Via Bartolomeo Bossi 7",
      "website": "https://www.astralspa.it/",
      "openingHours": "Mo,We 10:00-14:00, Fr 14:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1311837",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4470099910",
@@ -497,7 +983,12 @@
      "lon": 12.47799,
      "address": "Largo Stefano Gaj Tachè",
      "openingHours": "Apr 18-20 off; Apr 25-26 off; Aug 15 off; Aug 09 off; Fr 09:00-13:15; Jan 01 off; Jun 08-09 off; Mar 20 off; May 10 off; Oct 13-14 off; Oct 19-21 off; Oct 07-08 off; Sa off; Sep 29-30 off; Su-Tu 10:00-16:15",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6756984",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/1857985",
@@ -505,7 +996,12 @@
      "lat": 41.88829,
      "lon": 12.48661,
      "openingHours": "08:30-(sunset-01:00)",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3330361",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2408805739",
@@ -514,7 +1010,12 @@
      "lon": 12.50635,
      "address": "Via Tasso 145",
      "website": "http://www.viatasso.eu/",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3868477",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3456447054",
@@ -524,7 +1025,12 @@
      "address": "Via Boncompagni 18",
      "website": "https://direzionemuseiroma.cultura.gov.it/museo-boncompagni-ludovisi/",
      "openingHours": "Tu-Su 09:00-18:00; Mo off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3867580",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/656829698",
@@ -534,7 +1040,13 @@
      "address": "Piazza di San Pantaleo 10",
      "website": "https://www.museodiroma.it/",
      "openingHours": "Tu-Su 10:00-19:00; Jan 01 11:00-19:30; Dec 24,31 10:00-14:00; Jan 01 off; Mo off; May 01 off; Dec 25 off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3868175",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/4376017562",
@@ -544,7 +1056,12 @@
      "address": "Piazza Venezia 1",
      "website": "https://vive.cultura.gov.it/it/palazzo-venezia",
      "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1954305",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2244843070",
@@ -553,7 +1070,92 @@
      "lon": 12.47717,
      "address": "Via del Corso 18",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q959650",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/202110420",
+     "name": "Keats-Shelley Memorial House",
+     "lat": 41.90575,
+     "lon": 12.48258,
+     "website": "http://www.keats-shelley-house.org/",
+     "wikipediaCount": 7,
+     "wikidataId": "Q1133966",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4292016589",
+     "name": "Real Academia de España",
+     "lat": 41.8889,
+     "lon": 12.46661,
+     "address": "Piazza di San Pietro in Montorio 3",
+     "wikipediaCount": 7,
+     "wikidataId": "Q531779",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "way/130039228",
+     "name": "Centrale Montemartini",
+     "lat": 41.86662,
+     "lon": 12.47803,
+     "address": "Via Ostiense 106",
+     "website": "https://www.centralemontemartini.org/",
+     "openingHours": "Tu-Su 09:00-19:00; Dec 24,31 09:00-14:00; Mo off; Jan 01 off; May 01 off; Dec 25 off",
+     "wikipediaCount": 6,
+     "wikidataId": "Q1054090",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6718428602",
+     "name": "Museo Chiaramonti",
+     "lat": 41.90604,
+     "lon": 12.45507,
+     "website": "https://m.museivaticani.va/content/museivaticani-mobile/en/collezioni/musei/museo-chiaramonti/Museo-Chiaramonti.html",
+     "openingHours": "Mo-Fr 09:00-18:00",
+     "wikipediaCount": 6,
+     "wikidataId": "Q1452723",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/201293294",
+     "name": "Museo dell'Ara Pacis",
+     "lat": 41.9061,
+     "lon": 12.47547,
+     "address": "Lungotevere in Augusta",
+     "website": "https://www.arapacis.it/",
+     "openingHours": "Mo-Su 09:30-19:30; Dec 24,31 09:30-14:00; Jan 01 off; May 01 off, Dec 25 off",
+     "wikipediaCount": 6,
+     "wikidataId": "Q3867996",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6718428616",
+     "name": "Museo Gregoriano Etrusco",
+     "lat": 41.90663,
+     "lon": 12.45484,
+     "openingHours": "Mo-Sa 09:00-18:00",
+     "wikipediaCount": 6,
+     "wikidataId": "Q1452738",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -562,13 +1164,26 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/4978038129",
+     "name": "Punto panoramico di Ponte Umberto I",
+     "lat": 41.90235,
+     "lon": 12.47141,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2785646",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
      "id": "node/5108555139",
      "name": "Cupola di San Pietro",
      "lat": 41.90217,
      "lon": 12.45346,
      "website": "https://www.vatican.va/various/basiliche/san_pietro/it/cupola/orari.htm",
      "openingHours": "Mo-Su 07:30-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3699559"
     },
     {
      "id": "node/649529694",
@@ -635,12 +1250,6 @@
      "name": "Piazza del Quirinale",
      "lat": 41.89938,
      "lon": 12.48627
-    },
-    {
-     "id": "node/4978038129",
-     "name": "Punto panoramico di Ponte Umberto I",
-     "lat": 41.90235,
-     "lon": 12.47141
     },
     {
      "id": "node/1272283718",
@@ -804,6 +1413,7 @@
      "website": "https://cenciolaparolaccia.it/",
      "openingHours": "Mo-Sa 20:00-24:00; Su off",
      "cuisine": "italian",
+     "wikidataId": "Q3664378",
      "detailed": true
     },
     {
@@ -1723,6 +2333,12 @@
      "lat": 41.87546,
      "lon": 12.47652,
      "address": "Via di Monte Testaccio 69"
+    },
+    {
+     "id": "node/14293879435",
+     "name": "Clara",
+     "lat": 41.89714,
+     "lon": 12.47462
     },
     {
      "id": "node/6167913786",

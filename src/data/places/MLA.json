@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "MLA",
- "fetchedAt": "2026-10-16T23:52:46.869Z",
+ "fetchedAt": "2026-10-18T16:45:25.272Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,20 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q755514",
+     "name": "Ħal-Saflieni Katakompu",
+     "localName": "Hypogeum of Ħal Saflieni",
+     "lat": 35.86956,
+     "lon": 14.50688,
+     "wikipediaCount": 46,
+     "wikidataId": "Q755514",
+     "kinds": [
+      "heritage",
+      "ruins",
+      "unesco"
+     ]
+    },
+    {
      "id": "way/23352829",
      "name": "Kon-Katidral ta' San Ġwann",
      "lat": 35.8977,
@@ -50,7 +64,12 @@
      "address": "Triq San Ġwann",
      "website": "https://stjohnscocathedral.com/",
      "openingHours": "Mo-Fr 09:30-16:30; Sa 09:30-12:30; Su,PH off",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q613619",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/4434917",
@@ -58,14 +77,22 @@
      "lat": 35.8986,
      "lon": 14.51411,
      "website": "https://www.heritagemalta.org/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q1368885",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "relation/7905228",
      "name": "City Gate",
      "lat": 35.89623,
      "lon": 14.50907,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q2044535",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "relation/5760252",
@@ -73,7 +100,12 @@
      "lat": 35.8959,
      "lon": 14.51136,
      "address": "Pjazza Kastilja",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q2499012",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/54896162",
@@ -81,133 +113,383 @@
      "lat": 35.89182,
      "lon": 14.51821,
      "website": "https://heritagemalta.mt/explore/fort-st-angelo/",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q2207146",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "relation/7893491",
      "name": "Forti Sant'Iermu",
      "lat": 35.90198,
      "lon": 14.51863,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1438745",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1280925",
+     "name": "Our Lady of Victory Kilisesi (Valletta)",
+     "localName": "Our Lady of Victory Church",
+     "lat": 35.89601,
+     "lon": 14.51069,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1280925",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q576808",
+     "name": "Kraliyet Opera Binası, Valetta",
+     "localName": "Royal Opera House",
+     "lat": 35.89644,
+     "lon": 14.51034,
+     "wikipediaCount": 20,
+     "wikidataId": "Q576808",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q19882533",
+     "name": "Parlamento Binası (Malta)",
+     "localName": "Parliament House",
+     "lat": 35.89611,
+     "lon": 14.50972,
+     "wikipediaCount": 20,
+     "wikidataId": "Q19882533",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/691542011",
      "name": "Forti Rikażli",
      "lat": 35.89675,
      "lon": 14.52693,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1431801",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q1734062",
+     "name": "Basilica of Our Lady of Mount Carmel",
+     "lat": 35.90027,
+     "lon": 14.51227,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1734062",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q10300613",
+     "name": "İskenderiyeli Azize Katerina Kilisesi, Valletta",
+     "localName": "Church of St Catherine of Italy, Valletta",
+     "lat": 35.8962,
+     "lon": 14.511,
+     "wikipediaCount": 17,
+     "wikidataId": "Q10300613",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1280848",
+     "name": "St Paul's Pro-Cathedral",
+     "lat": 35.90033,
+     "lon": 14.51153,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1280848",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q20949683",
+     "name": "Ferreria Sarayı",
+     "localName": "Palazzo Ferreria",
+     "lat": 35.89683,
+     "lon": 14.51,
+     "wikipediaCount": 15,
+     "wikidataId": "Q20949683",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q576800",
+     "name": "Manoel Theatre",
+     "lat": 35.89983,
+     "lon": 14.51282,
+     "wikipediaCount": 15,
+     "wikidataId": "Q576800",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/15684588",
      "name": "Dar il-Mediterran għall-Konferenzi",
      "lat": 35.8991,
      "lon": 14.51801,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q16894983",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/33506206",
      "name": "Auberge d'Italie",
      "lat": 35.89648,
      "lon": 14.51139,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q16863312",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/551701982",
      "name": "Fort Manoel",
      "lat": 35.90293,
      "lon": 14.50516,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1366489",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q4505301",
+     "name": "Church of the Jesuits",
+     "lat": 35.89958,
+     "lon": 14.51664,
+     "wikipediaCount": 11,
+     "wikidataId": "Q4505301",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1997378",
+     "name": "Fort Saint Michael",
+     "lat": 35.88469,
+     "lon": 14.51905,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1997378",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q495405",
+     "name": "HMS Maori",
+     "lat": 35.90472,
+     "lon": 14.51889,
+     "wikipediaCount": 11,
+     "wikidataId": "Q495405",
+     "kinds": [
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q7231541",
+     "name": "Portes des Bombes",
+     "localName": "Porte des Bombes",
+     "lat": 35.89056,
+     "lon": 14.50222,
+     "wikipediaCount": 11,
+     "wikidataId": "Q7231541",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1127061",
+     "name": "Tony Bezzina Stadium",
+     "lat": 35.88286,
+     "lon": 14.51303,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1127061",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q7898477",
+     "name": "Upper Barrakka Gardens",
+     "lat": 35.89498,
+     "lon": 14.51202,
+     "wikipediaCount": 11,
+     "wikidataId": "Q7898477"
+    },
+    {
+     "id": "wikidata/Q20949752",
+     "name": "Villa Guardamangia",
+     "lat": 35.89225,
+     "lon": 14.49506,
+     "wikipediaCount": 11,
+     "wikidataId": "Q20949752"
     },
     {
      "id": "way/400118202",
      "name": "Victoria Gate",
      "lat": 35.89598,
      "lon": 14.51364,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q21986844"
     },
     {
      "id": "way/141054675",
      "name": "Il-Qrati ta' Malta",
      "lat": 35.89826,
      "lon": 14.51201,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q26233269",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/33506481",
      "name": "Il-Berġa ta' Bavjera",
      "lat": 35.90153,
      "lon": 14.51418,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q16863316",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/2381143255",
      "name": "Malta Memorial",
      "lat": 35.89456,
      "lon": 14.50782,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2900880"
     },
     {
      "id": "way/352179825",
      "name": "Cambridge Battery",
      "lat": 35.90902,
      "lon": 14.50967,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1028285",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/339457756",
      "name": "Garden Battery",
      "lat": 35.90829,
      "lon": 14.51084,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1356945",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/153030272",
      "name": "Il-Batterija tas-Sliema",
      "lat": 35.91411,
      "lon": 14.50712,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2294164",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "node/2489082272",
      "name": "Il-Lift tal-Barrakka",
      "lat": 35.89432,
      "lon": 14.51198,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q20503060"
     },
     {
      "id": "node/1535809746",
      "name": "Il-Monument ta' Spencer",
      "lat": 35.88745,
      "lon": 14.49765,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7576135"
     },
     {
      "id": "node/5590784922",
      "name": "Auberge d’Auvergne et de Provence",
      "lat": 35.88846,
      "lon": 14.52258,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16252175",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/5590796821",
      "name": "Auberge de Castille et Portugal",
      "lat": 35.8884,
      "lon": 14.52346,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16252180",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/400118196",
      "name": "Il-Monument ta' Sir Alexander Ball",
      "lat": 35.89749,
      "lon": 14.51755,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q42795499"
     },
     {
      "id": "relation/3968465",
      "name": "Archbishop's Palace",
      "lat": 35.90073,
      "lon": 14.51314,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q114269861",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/404197034",
@@ -245,6 +527,42 @@
      "name": "Eks Forti Rinella",
      "lat": 35.89431,
      "lon": 14.53234
+    },
+    {
+     "id": "way/339459510",
+     "name": "Fort Tigné",
+     "lat": 35.90663,
+     "lon": 14.5133
+    },
+    {
+     "id": "node/4344571449",
+     "name": "Id-Daħla l-Qadima tal-Gżira",
+     "lat": 35.90134,
+     "lon": 14.49093
+    },
+    {
+     "id": "relation/19656097",
+     "name": "Il-Barrakka ta Fuq",
+     "lat": 35.89493,
+     "lon": 14.51194
+    },
+    {
+     "id": "node/4367809098",
+     "name": "Il-Fdalijiet tal-Lazzarett",
+     "lat": 35.90155,
+     "lon": 14.50399
+    },
+    {
+     "id": "node/6089030601",
+     "name": "Joe Sciberras",
+     "lat": 35.89538,
+     "lon": 14.49263
+    },
+    {
+     "id": "node/13245531475",
+     "name": "Kripta tal-Kunvent",
+     "lat": 35.88912,
+     "lon": 14.50477
     }
    ]
   },
@@ -258,7 +576,11 @@
      "lat": 35.8986,
      "lon": 14.51411,
      "website": "https://www.heritagemalta.org/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q1368885",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/54896162",
@@ -266,7 +588,12 @@
      "lat": 35.89182,
      "lon": 14.51821,
      "website": "https://heritagemalta.mt/explore/fort-st-angelo/",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q2207146",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/31233115",
@@ -274,7 +601,11 @@
      "lat": 35.89751,
      "lon": 14.51116,
      "website": "https://www.heritagemalta.org/",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2898298",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/30382084",
@@ -284,7 +615,13 @@
      "address": "Pjazza Kastilja",
      "website": "https://stjamescavalier.com/",
      "openingHours": "Tu-Su 09:00-21:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q7401400",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage"
+     ]
     },
     {
      "id": "relation/5760253",
@@ -292,7 +629,12 @@
      "lat": 35.89829,
      "lon": 14.50922,
      "website": "https://www.heritagemalta.org/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q6974470",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/240871554",
@@ -301,7 +643,11 @@
      "lon": 14.52081,
      "website": "https://www.heritagemalta.org/museums/maritime/maritimeinfo.html",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3013993",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/33506558",
@@ -311,7 +657,12 @@
      "address": "Triq ir-Repubblika 74",
      "website": "https://www.casaroccapiccola.com/",
      "openingHours": "Mo-Sa 10:00-16:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2044132",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/2269130526",
@@ -320,7 +671,12 @@
      "lon": 14.53147,
      "website": "https://www.fortrinella.com/",
      "openingHours": "Th-Sa 10:00-17:00; PH off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1562413",
+     "kinds": [
+      "adminArea",
+      "museum"
+     ]
     },
     {
      "id": "node/293534848",
@@ -330,7 +686,13 @@
      "address": "Main Gate Street",
      "website": "https://heritagemalta.org/the-inquisitors-palace/",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3361044",
+     "kinds": [
+      "business",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/2269127527",
@@ -339,7 +701,11 @@
      "lon": 14.51255,
      "website": "https://www.salutingbattery.com/",
      "openingHours": "Mo-Sa 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q19508900",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/2269128025",
@@ -347,7 +713,11 @@
      "lat": 35.89488,
      "lon": 14.51278,
      "website": "https://www.lascariswarrooms.com/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1648164",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/2269132352",
@@ -356,7 +726,12 @@
      "lon": 14.52238,
      "address": "Triq Couvre Porte",
      "website": "https://www.maltaatwarmuseum.com/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q22082174",
+     "kinds": [
+      "adminArea",
+      "museum"
+     ]
     },
     {
      "id": "way/372943057",
@@ -364,14 +739,23 @@
      "lat": 35.89955,
      "lon": 14.50906,
      "website": "https://thefortressbuilders.weebly.com/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q24037293",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3257012705",
      "name": "Armerija tal-Palazz",
      "lat": 35.89851,
      "lon": 14.51434,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7126151",
+     "kinds": [
+      "adminArea",
+      "museum"
+     ]
     },
     {
      "id": "node/4508807392",
@@ -448,7 +832,11 @@
      "name": "Bir Mula Heritage",
      "lat": 35.883,
      "lon": 14.52367,
-     "website": "https://www.birmula.com/"
+     "website": "https://www.birmula.com/",
+     "wikidataId": "Q111854077",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/27577949",
@@ -456,7 +844,11 @@
      "lat": 35.89733,
      "lon": 14.51278,
      "address": "Triq il-Merkanti",
-     "website": "https://stjohnscocathedral.com/"
+     "website": "https://stjohnscocathedral.com/",
+     "wikidataId": "Q111994210",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12664527917",
@@ -503,6 +895,45 @@
      "lon": 14.51266,
      "address": "Triq il-Merkanti",
      "website": "https://heritagemalta.mt/explore/underground-valletta/"
+    },
+    {
+     "id": "node/7442975758",
+     "name": "111 Art Gallery",
+     "lat": 35.90169,
+     "lon": 14.49441,
+     "address": "Triq il-Gnien 38/40"
+    },
+    {
+     "id": "node/3257012710",
+     "name": "Kmamar tal-Istat",
+     "lat": 35.89865,
+     "lon": 14.51401,
+     "address": "Triq ir-Repubblika"
+    },
+    {
+     "id": "node/13037926848",
+     "name": "Malta Society of Arts",
+     "lat": 35.90016,
+     "lon": 14.5155,
+     "address": "Triq ir-Repubblika 219"
+    },
+    {
+     "id": "node/301537797",
+     "name": "Mużew tal-Ġugarelli",
+     "lat": 35.90004,
+     "lon": 14.51519,
+     "address": "Triq ir-Repubblika 222",
+     "wikidataId": "Q111993932",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/13021162352",
+     "name": "R Gallery",
+     "lat": 35.90852,
+     "lon": 14.50858,
+     "address": "Triq Robert Arrigo 26"
     }
    ]
   },

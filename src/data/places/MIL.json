@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "MIL",
- "fetchedAt": "2026-10-16T23:16:05.168Z",
+ "fetchedAt": "2026-10-18T15:59:08.419Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,13 +43,31 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q133566",
+     "name": "San Siro",
+     "localName": "Giuseppe Meazza Stadium",
+     "lat": 45.47806,
+     "lon": 9.12389,
+     "wikipediaCount": 79,
+     "wikidataId": "Q133566",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "relation/18017026",
      "name": "Duomo di Milano",
      "lat": 45.46418,
      "lon": 9.19161,
      "website": "https://www.duomomilano.it/",
      "openingHours": "Mo-Su 08:00-19:00",
-     "wikipediaCount": 75
+     "wikipediaCount": 75,
+     "wikidataId": "Q18068",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/6552704",
@@ -57,7 +75,15 @@
      "lat": 45.46759,
      "lon": 9.18913,
      "website": "https://www.teatroallascala.org/",
-     "wikipediaCount": 70
+     "wikipediaCount": 70,
+     "wikidataId": "Q5471",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/19382652",
@@ -66,7 +92,13 @@
      "lon": 9.17118,
      "website": "https://legraziemilano.it/",
      "openingHours": "Mo-Sa 09:00-12:20, 15:00-17:50; Su,PH 15:00-17:50",
-     "wikipediaCount": 54
+     "wikipediaCount": 54,
+     "wikidataId": "Q244952",
+     "kinds": [
+      "heritage",
+      "religious",
+      "unesco"
+     ]
     },
     {
      "id": "relation/1918",
@@ -74,21 +106,70 @@
      "lat": 45.47029,
      "lon": 9.17956,
      "website": "https://www.milanocastello.it/",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q23354",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/163757278",
      "name": "Galleria Vittorio Emanuele Secondo",
      "lat": 45.46472,
      "lon": 9.19003,
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q51112",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/13185691618",
      "name": "Lanciatore Vega",
      "lat": 45.46153,
      "lon": 9.17174,
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q262629"
+    },
+    {
+     "id": "wikidata/Q801193",
+     "name": "Milano Merkez Tren İstasyonu",
+     "localName": "Milano Centrale railway station",
+     "lat": 45.48566,
+     "lon": 9.20399,
+     "wikipediaCount": 35,
+     "wikidataId": "Q801193",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q525297",
+     "name": "Loreto Meydanı",
+     "localName": "Piazzale Loreto",
+     "lat": 45.48623,
+     "lon": 9.21677,
+     "wikipediaCount": 25,
+     "wikidataId": "Q525297",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q920809",
+     "name": "Pirelli Kulesi",
+     "localName": "Pirelli Tower",
+     "lat": 45.4848,
+     "lon": 9.20117,
+     "wikipediaCount": 25,
+     "wikidataId": "Q920809",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
     },
     {
      "id": "relation/37717",
@@ -97,14 +178,54 @@
      "lon": 9.17568,
      "website": "https://www.basilicasantambrogio.it/",
      "openingHours": "Mo-Sa 10:00-12:00, 14:30-18:00; Su 15:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1071570",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q729978",
+     "name": "Mediolanum",
+     "lat": 45.46291,
+     "lon": 9.18532,
+     "wikipediaCount": 24,
+     "wikidataId": "Q729978",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
     },
     {
      "id": "node/11155707089",
      "name": "Bosco Verticale",
      "lat": 45.48561,
      "lon": 9.1904,
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q2501413"
+    },
+    {
+     "id": "wikidata/Q51108",
+     "name": "piazza del Duomo",
+     "lat": 45.46417,
+     "lon": 9.19,
+     "wikipediaCount": 23,
+     "wikidataId": "Q51108",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q963111",
+     "name": "UniCredit Tower",
+     "lat": 45.48384,
+     "lon": 9.18988,
+     "wikipediaCount": 21,
+     "wikidataId": "Q963111",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "relation/19371855",
@@ -113,14 +234,43 @@
      "lon": 9.18209,
      "website": "http://www.sanlorenzomaggiore.com/",
      "openingHours": "Mo-Sa 08:00-18:30; Su 09:00-19:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 20,
+     "wikidataId": "Q810080",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/45671470",
      "name": "Chiesa di Santa Maria presso San Satiro",
      "lat": 45.4627,
      "lon": 9.18777,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q589462",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q801187",
+     "name": "Milano Porta Garibaldi railway station",
+     "lat": 45.4846,
+     "lon": 9.1876,
+     "wikipediaCount": 16,
+     "wikidataId": "Q801187",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q133963",
+     "name": "Parco Sempione",
+     "lat": 45.47333,
+     "lon": 9.17528,
+     "wikipediaCount": 16,
+     "wikidataId": "Q133963"
     },
     {
      "id": "way/4915384",
@@ -130,14 +280,38 @@
      "address": "Piazzale Cimitero Monumentale",
      "website": "https://monumentale.comune.milano.it/",
      "openingHours": "Tu-Su 08:00-18:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q608405",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/178303",
      "name": "Palazzo di Brera",
      "lat": 45.47188,
      "lon": 9.18861,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q21748501",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1156274",
+     "name": "Velasca Kulesi",
+     "localName": "Torre Velasca",
+     "lat": 45.46,
+     "lon": 9.19056,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1156274",
+     "kinds": [
+      "heritage",
+      "office",
+      "skyscraper",
+      "tower"
+     ]
     },
     {
      "id": "way/165882138",
@@ -145,49 +319,171 @@
      "lat": 45.45397,
      "lon": 9.1815,
      "website": "https://www.santeustorgio.it/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q672082",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3995200",
+     "name": "Allianz Tower",
+     "lat": 45.47761,
+     "lon": 9.15729,
+     "wikipediaCount": 14,
+     "wikidataId": "Q3995200",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "way/24971631",
      "name": "Basilica San Nazaro in Brolo",
      "lat": 45.45876,
      "lon": 9.19271,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1255904",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/39349468",
      "name": "Chiesa di San Bernardino alle Ossa",
      "lat": 45.4626,
      "lon": 9.19556,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q734371",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/2570199",
      "name": "Palazzo Lombardia",
      "lat": 45.48676,
      "lon": 9.1958,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q616863",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1088761",
+     "name": "Arena Civica",
+     "lat": 45.47546,
+     "lon": 9.17854,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1088761",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/44601409",
      "name": "Basilica di San Carlo al Corso",
      "lat": 45.46629,
      "lon": 9.19618,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q731479",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/38000599",
      "name": "Basilica di San Simpliciano",
      "lat": 45.47399,
      "lon": 9.18469,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q509104",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q384032",
+     "name": "Basilica di Santo Stefano Maggiore",
+     "lat": 45.46221,
+     "lon": 9.19595,
+     "wikipediaCount": 13,
+     "wikidataId": "Q384032",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q734515",
+     "name": "Santa Maria presso San Celso Church",
+     "lat": 45.4544,
+     "lon": 9.18767,
+     "wikipediaCount": 13,
+     "wikidataId": "Q734515",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1049376",
+     "name": "Teatro dal Verme",
+     "lat": 45.46712,
+     "lon": 9.18147,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1049376",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q2362714",
+     "name": "via Monte Napoleone",
+     "lat": 45.46826,
+     "lon": 9.1952,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2362714",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/164070432",
      "name": "Chiesa di Santa Maria della Passione",
      "lat": 45.46526,
      "lon": 9.20378,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1256328",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q901491",
+     "name": "Sant'Alessandro in Zebedia Church",
+     "lat": 45.46095,
+     "lon": 9.18687,
+     "wikipediaCount": 12,
+     "wikidataId": "Q901491",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/46103655",
@@ -196,42 +492,157 @@
      "lon": 9.17895,
      "website": "https://www.museoarcheologicomilano.it/oltre-il-museo/la-chiesa-s.-maurizio-al-monastero-maggiore",
      "openingHours": "Tu-Su 10:00-17:30",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1255890",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/23227442",
      "name": "Chiesa di San Fedele",
      "lat": 45.46675,
      "lon": 9.19157,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q902210",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/27596084",
      "name": "Chiesa di San Pietro in Gessate",
      "lat": 45.4631,
      "lon": 9.2015,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q901469",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/42106021",
      "name": "Chiesa parrocchiale di San Marco",
      "lat": 45.47332,
      "lon": 9.18896,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q839168",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q169090",
+     "name": "Giardini Pubblici Indro Montanelli",
+     "lat": 45.47444,
+     "lon": 9.2,
+     "wikipediaCount": 11,
+     "wikidataId": "Q169090",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q112134535",
+     "name": "Milan Olympic Village",
+     "lat": 45.44447,
+     "lon": 9.19989,
+     "wikipediaCount": 11,
+     "wikidataId": "Q112134535"
     },
     {
      "id": "relation/2747454",
      "name": "Palazzo Belgioioso",
      "lat": 45.46767,
      "lon": 9.19269,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q730981",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/2357934",
      "name": "Palazzo Castiglioni",
      "lat": 45.47116,
      "lon": 9.20115,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1228184",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1648312",
+     "name": "Palazzo della Ragione",
+     "lat": 45.46481,
+     "lon": 9.18778,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1648312",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "relation/2783859",
+     "name": "Palazzo Litta",
+     "lat": 45.46604,
+     "lon": 9.17838,
+     "wikipediaCount": 11,
+     "wikidataId": "Q732658",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q731222",
+     "name": "San Vittore al Corpo",
+     "lat": 45.46249,
+     "lon": 9.1699,
+     "wikipediaCount": 11,
+     "wikidataId": "Q731222",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "way/740215877",
+     "name": "Colonne di San Lorenzo",
+     "lat": 45.45823,
+     "lon": 9.18105,
+     "openingHours": "24/7",
+     "wikipediaCount": 10,
+     "wikidataId": "Q1053483"
+    },
+    {
+     "id": "relation/18237414",
+     "name": "Arco della Pace",
+     "lat": 45.47569,
+     "lon": 9.17243,
+     "wikipediaCount": 10,
+     "wikidataId": "Q776576"
+    },
+    {
+     "id": "way/207101070",
+     "name": "Casa degli Omenoni",
+     "lat": 45.46736,
+     "lon": 9.1919,
+     "wikipediaCount": 10,
+     "wikidataId": "Q259339",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     }
    ]
   },
@@ -247,7 +658,13 @@
      "address": "Via Brera 28",
      "website": "https://pinacotecabrera.org/",
      "openingHours": "Tu-Su 09:30-18:30; Mo, Jan 1, May 1, Dec 25 off",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q150066",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2400614071",
@@ -257,7 +674,13 @@
      "address": "Via Alessandro Manzoni 12",
      "website": "https://www.museopoldipezzoli.it/",
      "openingHours": "We-Mo 10:00-18:00; Tu, easter, Jan 01, Apr 25, May 01, Aug 15, Nov 01, Dec 25 off",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1190657",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "relation/36488",
@@ -266,7 +689,13 @@
      "lon": 9.19122,
      "website": "https://www.palazzorealemilano.it/",
      "openingHours": "Tu-We, Fr-Su 10:00-19:30; Th 10:00-22:30; Mo off",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q51105",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/3910270284",
@@ -276,7 +705,8 @@
      "address": "Piazza Castello",
      "website": "https://rondanini.milanocastello.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off, Jan 01 off , May 01 off , Dec 25 off",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1878666"
     },
     {
      "id": "node/9551885699",
@@ -286,7 +716,13 @@
      "address": "Corso Venezia 55",
      "website": "https://museodistorianaturalemilano.it/",
      "openingHours": "Tu-Su 10:00-17:30; Jan 01, Dec 25, May 01 off",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1533416",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/2153388340",
@@ -296,7 +732,12 @@
      "address": "Via Brera 28",
      "website": "http://museoastronomico.brera.inaf.it/",
      "openingHours": "Tu, Th 10:00-15:00; Fr 14:00-18:00; Sa, Su 10:00-18:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1580885",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1223091032",
@@ -306,7 +747,24 @@
      "address": "Via Guglielmo Marconi 1",
      "website": "https://www.museodelnovecento.org/it/",
      "openingHours": "Tu-We,Fr-Su 09:30-19:30; Th 09:30-22:30; Mo off",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q261233",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q2705493",
+     "name": "Triennale di Milano",
+     "lat": 45.47181,
+     "lon": 9.17371,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2705493",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2324825968",
@@ -316,7 +774,12 @@
      "address": "Piazza della Scala 6",
      "website": "https://www.gallerieditalia.com/it/milano/",
      "openingHours": "Tu,We,Fr,Sa,Su 09:30-19:30; Th 09:30-22:30; Mo off",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2054135",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/9560216692",
@@ -326,7 +789,12 @@
      "address": "Corso Magenta 15",
      "website": "https://www.museoarcheologicomilano.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q604908",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/6424667157",
@@ -336,7 +804,12 @@
      "address": "Via Palestro 16",
      "website": "https://www.gam-milano.com/it/home/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 01 off; May 01 off; Dec 25 off",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q3757721",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1828890767",
@@ -346,7 +819,12 @@
      "address": "Largo Antonio Ghiringhelli 1",
      "website": "https://www.museoscala.org/",
      "openingHours": "Mo-Su 09:30-17:30; Jan 01,May 01,Aug 15,Dec 07,25,26 off",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q51099",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2537169197",
@@ -356,7 +834,11 @@
      "address": "Piazza Castello",
      "website": "https://pinacoteca.milanocastello.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo, Jan 01, May 01, Dec 25 off",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q3905124",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2531365878",
@@ -366,7 +848,13 @@
      "address": "Via Gesù 5",
      "website": "https://museobagattivalsecchi.org/",
      "openingHours": "Th-Fr 13:00-17:45; Sa-Su 10:00-17:45; We 13:00-20:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q838986",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/420005515",
@@ -376,7 +864,12 @@
      "address": "Via San Vittore 21",
      "website": "https://www.museoscienza.org/it",
      "openingHours": "Tu-Fr 09:30-17:30; Sa,Su,PH 09:30-18:30; Mo off; Jan 01 off; Dec 24 off; Dec 25 off",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q947082",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2531406270",
@@ -386,7 +879,11 @@
      "address": "Piazza Castello",
      "website": "https://strumentimusicali.milanocastello.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off, Jan 01 off, May 01, Dec 25 off",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3867896",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4305608681",
@@ -396,7 +893,13 @@
      "address": "Via Borgonuovo 23",
      "website": "http://www.museodelrisorgimento.mi.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off, Jan 1, May 1, Aug 15, Dec 25-26 off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q3867927",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/2535087543",
@@ -406,7 +909,12 @@
      "address": "Piazza Pio Undicesimo 2",
      "website": "https://www.ambrosiana.it/",
      "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 10:00-18:00, Mo off, Jan 01, easter, May 01, Dec 25 off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1085811",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2535106339",
@@ -416,7 +924,11 @@
      "address": "Piazza Castello",
      "website": "https://arteantica.milanocastello.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo, Jan 01, May 01, Dec 25 off",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3867848",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2529645009",
@@ -426,7 +938,11 @@
      "address": "Piazza Castello",
      "website": "https://museoegizio.milanocastello.it/",
      "openingHours": "Tu-Su 09:30-17:30",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3868354",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/252422994",
@@ -435,7 +951,13 @@
      "lon": 9.1991,
      "website": "http://www.pacmilano.it/",
      "openingHours": "Tu-We 10:00-19:30; Th 10:00-22:30; Fr-Su 10:00-19:30; Mo off",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3888740",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/9560211533",
@@ -445,7 +967,13 @@
      "address": "Via Gerolamo Morone 1",
      "website": "https://www.casadelmanzoni.it/",
      "openingHours": "Tu-Fr 10:00-18:00; Sa 14:00-18:00; Su-Mo off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3661123",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/138750066",
@@ -454,7 +982,12 @@
      "lon": 9.20182,
      "website": "https://fondoambiente.it/luoghi/villa-necchi-campiglio",
      "openingHours": "We-Su 10:00-18:00; Mo-Tu off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q2525507",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/8765487736",
@@ -464,7 +997,11 @@
      "address": "Piazza Compasso d’Oro 1",
      "website": "https://www.adidesignmuseum.org/",
      "openingHours": "Sa-Th 10:30-20:00; Fr off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q85859030",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/341447523",
@@ -473,7 +1010,12 @@
      "lon": 9.16469,
      "website": "https://www.armanisilos.com/it/",
      "openingHours": "We-Su 11:00-19:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q20008149",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1898336420",
@@ -483,7 +1025,12 @@
      "address": "Piazza Sant'Eustorgio 3",
      "website": "https://chiostrisanteustorgio.it/",
      "openingHours": "Tu-Su 10:00-18:00; Mo off , Jan 01,May 01,Dec 25,26 off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1846306",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/425004880",
@@ -492,7 +1039,11 @@
      "lon": 9.20432,
      "website": "https://www.fondazioneprada.org/",
      "openingHours": "Mo 10:00-19:00; Tu off; We-Su 10:00-19:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3747208",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2531342458",
@@ -502,7 +1053,11 @@
      "address": "Piazza Edmond Jacob Safra 1",
      "website": "https://www.memorialeshoah.it/",
      "openingHours": "Mo-Su 10:00-16:00; Fr off; Fr[-1] 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3854475",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2531420511",
@@ -512,7 +1067,11 @@
      "address": "Piazza Castello",
      "website": "https://museodeimobili.milanocastello.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo, Jan 01, May 01, Dec 25 off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3701582",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9560662874",
@@ -522,7 +1081,12 @@
      "address": "Piazza Castello",
      "website": "https://artidecorative.milanocastello.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3678765",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2531211706",
@@ -532,7 +1096,134 @@
      "address": "Via Giorgio Jan 15",
      "website": "https://www.fondazioneboschidistefano.it/",
      "openingHours": "Tu-Su 10:00-17:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3661033",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9571069016",
+     "name": "Museo della Permanente",
+     "lat": 45.47659,
+     "lon": 9.19551,
+     "address": "Via Filippo Turati 34",
+     "website": "https://www.lapermanente.it/",
+     "openingHours": "Mo-Su 10:00-13:00, 14:30-18:30",
+     "wikipediaCount": 4,
+     "wikidataId": "Q3963841"
+    },
+    {
+     "id": "node/2531219644",
+     "name": "Civica raccolta delle stampe Achille Bertarelli",
+     "lat": 45.46953,
+     "lon": 9.17986,
+     "address": "Piazza Castello",
+     "website": "http://www.bertarelli.org/ita/index.html",
+     "wikipediaCount": 4,
+     "wikidataId": "Q3678764",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/204721782",
+     "name": "Grande Museo del Duomo di Milano",
+     "lat": 45.46344,
+     "lon": 9.19175,
+     "website": "https://www.duomomilano.it/cultura-e-arte/museo-del-duomo/",
+     "openingHours": "Mo-Su 10:00-19:00; We off",
+     "wikipediaCount": 3,
+     "wikidataId": "Q16337697",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4010994767",
+     "name": "Mudec",
+     "lat": 45.45205,
+     "lon": 9.16132,
+     "address": "Via Tortona 56",
+     "website": "https://www.mudec.it/",
+     "openingHours": "Mo 14:30-19:30; Tu,We,Fr,Su 09:30-19:30; Th,Sa 09:30-22:30",
+     "wikipediaCount": 3,
+     "wikidataId": "Q22811468",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9560235279",
+     "name": "Museo d'arte e scienza",
+     "lat": 45.47027,
+     "lon": 9.18246,
+     "address": "Via Quintino Sella 4",
+     "website": "https://museoartescienza.com/",
+     "openingHours": "Mo, We, Fr 10:00-18:00; Tu,Th 14:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3328415",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9571016844",
+     "name": "Museo Martinitt e Stelline",
+     "lat": 45.46565,
+     "lon": 9.17347,
+     "address": "Corso Magenta 57",
+     "website": "https://www.museomartinittestelline.it/",
+     "openingHours": "Tu-Sa 10:30-18:30; Su[1] 10:30-18:30; Jan 01,Apr 25,May 01,Aug,Nov 01,Dec 25,26",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3972975",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/12912850856",
+     "name": "Palazzo Citterio - Grande Brera",
+     "lat": 45.47044,
+     "lon": 9.1879,
+     "website": "https://palazzocitterio.org/",
+     "openingHours": "Th-Su 14:00-19:00, Mo-We, Dec 25, May 01 off",
+     "wikipediaCount": 3,
+     "wikidataId": "Q112138733",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "node/2391622707",
+     "name": "Palazzo Morando - Costume Moda Immagine",
+     "lat": 45.46859,
+     "lon": 9.19626,
+     "address": "Via Sant'Andrea 6",
+     "website": "http://www.costumemodaimmagine.mi.it/",
+     "openingHours": "Tu-Su 10:00-17:30; Mo off",
+     "wikipediaCount": 3,
+     "wikidataId": "Q20008384"
+    },
+    {
+     "id": "node/9560479844",
+     "name": "Triennale Design Museum",
+     "lat": 45.47216,
+     "lon": 9.1735,
+     "address": "Viale Emilio Alemagna 6",
+     "website": "https://triennale.org/",
+     "openingHours": "Tu-Su 10:30-20:00; Mo off",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3361355",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     }
    ]
   },
@@ -547,7 +1238,12 @@
      "lon": 9.17288,
      "website": "https://www.museobranca.it/torre-branca/",
      "openingHours": "We 10:30-12:30,16:00-18:30; Sa 10:30-13:00,15:00-18:30,20:30-24:00; Su 10:30-14:00,14:30-19:00; May 15-Sep 15 Tu,Th,Fr 15:00-19:00,20:30-24:00; May 15-Sep 15 We 10:30-12:30,15:00-19:00,20:30-24:00; May 15-Sep 15 Sa,Su 10:30-14:00,14:30-19:30,20:30-24:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2444521",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "node/4714788078",
@@ -1366,6 +2062,7 @@
      "address": "Viale Ibsen 4",
      "website": "https://www.barbiancomilano.com/",
      "openingHours": "Mo-Su 09:00-22:00",
+     "wikidataId": "Q18222706",
      "detailed": true
     },
     {
@@ -1475,6 +2172,7 @@
      "address": "Via Laghetto 9/11",
      "website": "https://www.colibrimilano.it/",
      "openingHours": "Mo 09:00-22:00; Tu-Fr 09:00-24:00; Sa 16:00-24:00; Su off",
+     "wikidataId": "Q112138858",
      "detailed": true
     },
     {

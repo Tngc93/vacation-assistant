@@ -27,6 +27,8 @@ export type PlaceCardProps = {
 };
 
 /** One place: name, category, address, optional website and hours, and honest ranking captions. */
+const regionNames = new Intl.DisplayNames(["tr"], { type: "region" });
+
 export function PlaceCard({ place, category, timeZone, active, ref, onActivate, onShowOnMap }: PlaceCardProps) {
   return (
     <article
@@ -49,7 +51,10 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
           <h4 className="text-body font-medium text-ink">{place.name}</h4>
           {place.localName ? <p className="text-caption text-ink-muted">{place.localName}</p> : null}
         </div>
-        <Caption className="shrink-0">{CATEGORIES[category].label}</Caption>
+        <Caption className="shrink-0">
+          {place.country ? `${(regionNames.of(place.country) ?? place.country).toLocaleUpperCase("tr")} · ` : ""}
+          {CATEGORIES[category].label}
+        </Caption>
       </div>
 
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}

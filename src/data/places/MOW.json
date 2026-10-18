@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "MOW",
- "fetchedAt": "2026-10-16T23:58:10.007Z",
+ "fetchedAt": "2026-10-18T16:52:32.733Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,14 +48,26 @@
      "localName": "Красная площадь",
      "lat": 55.75361,
      "lon": 37.62061,
-     "wikipediaCount": 98
+     "wikipediaCount": 98,
+     "wikidataId": "Q41116",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "relation/1360641",
      "name": "Московский Кремль",
      "lat": 55.75162,
      "lon": 37.61782,
-     "wikipediaCount": 91
+     "wikipediaCount": 91,
+     "wikidataId": "Q133274",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "relation/3030568",
@@ -65,7 +77,41 @@
      "address": "Красная площадь 2",
      "website": "https://www.shm.ru/",
      "openingHours": "Mo-Su 11:00-17:00",
-     "wikipediaCount": 76
+     "wikipediaCount": 76,
+     "wikidataId": "Q129846",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q138908",
+     "name": "Bolşoy Tiyatrosu",
+     "localName": "Bolshoi Theatre",
+     "lat": 55.76028,
+     "lon": 37.61861,
+     "wikipediaCount": 73,
+     "wikidataId": "Q138908",
+     "kinds": [
+      "business",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q202163",
+     "name": "Lujniki Stadyumu",
+     "localName": "Luzhniki Stadium",
+     "lat": 55.71583,
+     "lon": 37.55361,
+     "wikipediaCount": 65,
+     "wikidataId": "Q202163",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/3272726",
@@ -75,14 +121,89 @@
      "address": "Красная площадь",
      "website": "http://www.fso.gov.ru/info/p12.html",
      "openingHours": "Tu-Su 10:00-13:00; Fr off",
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q191414",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1048694",
+     "name": "Rusya Devlet Kütüphanesi",
+     "localName": "Russian State Library",
+     "lat": 55.75173,
+     "lon": 37.609,
+     "wikipediaCount": 59,
+     "wikidataId": "Q1048694",
+     "kinds": [
+      "attraction",
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q181324",
+     "name": "Ostankino Kulesi",
+     "localName": "Ostankino Tower",
+     "lat": 55.81972,
+     "lon": 37.61167,
+     "wikipediaCount": 58,
+     "wikidataId": "Q181324",
+     "kinds": [
+      "attraction",
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q211560",
+     "name": "Moskova Uluslararası İş Merkezi",
+     "localName": "Moscow International Business Center",
+     "lat": 55.74667,
+     "lon": 37.53694,
+     "wikipediaCount": 57,
+     "wikidataId": "Q211560",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "relation/9938302",
      "name": "Мемориальная усадьба Ф. И. Шаляпина",
      "lat": 55.75675,
      "lon": 37.58294,
-     "wikipediaCount": 52
+     "wikipediaCount": 52,
+     "wikidataId": "Q189164"
+    },
+    {
+     "id": "wikidata/Q215539",
+     "name": "Moskova Konservatuvarı",
+     "localName": "Moscow Conservatory",
+     "lat": 55.75607,
+     "lon": 37.60433,
+     "wikipediaCount": 51,
+     "wikidataId": "Q215539",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q208175",
+     "name": "Novodevichy Mezarlığı",
+     "localName": "Novodevichy Cemetery",
+     "lat": 55.72472,
+     "lon": 37.55417,
+     "wikipediaCount": 45,
+     "wikidataId": "Q208175",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/311999396",
@@ -90,14 +211,31 @@
      "localName": "Царь-пушка",
      "lat": 55.75147,
      "lon": 37.61792,
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q147881",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/311999397",
      "name": "Царь-колокол",
      "lat": 55.75077,
      "lon": 37.61844,
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q147875",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q94193",
+     "name": "Federasyon Kulesi",
+     "localName": "Federation Tower",
+     "lat": 55.74947,
+     "lon": 37.53724,
+     "wikipediaCount": 41,
+     "wikidataId": "Q94193"
     },
     {
      "id": "relation/3028585",
@@ -105,7 +243,13 @@
      "localName": "Собор Успения Пресвятой Богородицы",
      "lat": 55.75092,
      "lon": 37.61706,
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q748910",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/3330565",
@@ -115,21 +259,142 @@
      "address": "Красная площадь 3",
      "website": "https://www.gum.ru/",
      "openingHours": "Mo-Su 10:00-22:00",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q549498",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q646334",
+     "name": "Lubyanka Binası",
+     "localName": "Lubyanka Building",
+     "lat": 55.76022,
+     "lon": 37.62859,
+     "wikipediaCount": 38,
+     "wikidataId": "Q646334",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q613676",
+     "name": "Moskova Hayvanat Bahçesi",
+     "localName": "Moscow Zoo",
+     "lat": 55.76194,
+     "lon": 37.57722,
+     "wikipediaCount": 38,
+     "wikidataId": "Q613676",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q844124",
+     "name": "Beyaz Saray, Moskova",
+     "localName": "White House",
+     "lat": 55.75467,
+     "lon": 37.57297,
+     "wikipediaCount": 37,
+     "wikidataId": "Q844124",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1130019",
+     "name": "Kremlin Duvarı Mezarlığı",
+     "localName": "Kremlin Wall Necropolis",
+     "lat": 55.75378,
+     "lon": 37.61931,
+     "wikipediaCount": 37,
+     "wikidataId": "Q1130019",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3679864",
+     "name": "Moskova Ulu Camii",
+     "localName": "Moscow Cathedral Mosque",
+     "lat": 55.77917,
+     "lon": 37.62694,
+     "wikipediaCount": 34,
+     "wikidataId": "Q3679864",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1200275",
+     "name": "Komsomolskaya",
+     "lat": 55.77649,
+     "lon": 37.65617,
+     "wikipediaCount": 33,
+     "wikidataId": "Q1200275",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "relation/225033",
      "name": "Большой Кремлёвский дворец",
      "lat": 55.75019,
      "lon": 37.61562,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q1370087",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/1359243",
      "name": "Собор Михаила Архангела",
      "lat": 55.75017,
      "lon": 37.6178,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q917830",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q126877",
+     "name": "Gorki Parkı",
+     "localName": "Gorky Park",
+     "lat": 55.73135,
+     "lon": 37.60464,
+     "wikipediaCount": 31,
+     "wikidataId": "Q126877",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1200389",
+     "name": "Novoslobodskaya",
+     "lat": 55.77952,
+     "lon": 37.60117,
+     "wikipediaCount": 31,
+     "wikidataId": "Q1200389",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "relation/1736667",
@@ -137,28 +402,134 @@
      "lat": 55.77676,
      "lon": 37.65502,
      "address": "Комсомольская площадь 3",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q1344454",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1140402",
+     "name": "Kazan Katedrali (Moskova)",
+     "localName": "Kazan Cathedral",
+     "lat": 55.75541,
+     "lon": 37.61925,
+     "wikipediaCount": 30,
+     "wikidataId": "Q1140402",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1369676",
+     "name": "Mali Tiyatrosu",
+     "localName": "Maly Theatre",
+     "lat": 55.75969,
+     "lon": 37.62061,
+     "wikipediaCount": 30,
+     "wikidataId": "Q1369676",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "relation/1359251",
      "name": "Благовещенский собор",
      "lat": 55.75,
      "lon": 37.6169,
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q1160154",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q32960",
+     "name": "Olimpiyskiy",
+     "localName": "Olympiysky Sports Complex",
+     "lat": 55.78104,
+     "lon": 37.62642,
+     "wikipediaCount": 29,
+     "wikidataId": "Q32960",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/1360656",
      "name": "Спасская башня",
      "lat": 55.75253,
      "lon": 37.62138,
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q2416732",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "relation/1453198",
      "name": "Шуховская башня",
      "lat": 55.71732,
      "lon": 37.61159,
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q662367",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q957441",
+     "name": "Büyük İvan Çan Kulesi",
+     "localName": "Ivan the Great Bell Tower",
+     "lat": 55.75083,
+     "lon": 37.61806,
+     "wikipediaCount": 28,
+     "wikidataId": "Q957441",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q2721257",
+     "name": "Ploshchad Revolyutsii",
+     "lat": 55.75639,
+     "lon": 37.62139,
+     "wikipediaCount": 28,
+     "wikidataId": "Q2721257",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q657306",
+     "name": "Günahsız Gebelik Katedrali (Moskova)",
+     "localName": "Cathedral of the Immaculate Conception",
+     "lat": 55.76722,
+     "lon": 37.57111,
+     "wikipediaCount": 27,
+     "wikidataId": "Q657306",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/2261797",
@@ -166,14 +537,63 @@
      "lat": 55.74312,
      "lon": 37.56547,
      "address": "площадь Киевского Вокзала 1",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q666886",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "relation/16492515",
      "name": "Могила Неизвестного Солдата",
      "lat": 55.75484,
      "lon": 37.61605,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q2075146",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1472498",
+     "name": "Alexander Bahçesi",
+     "localName": "Alexander Garden",
+     "lat": 55.75239,
+     "lon": 37.61385,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1472498",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2604365",
+     "name": "Arbatskaya",
+     "lat": 55.75222,
+     "lon": 37.60611,
+     "wikipediaCount": 26,
+     "wikidataId": "Q2604365",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1367269",
+     "name": "Belarus Garı",
+     "localName": "Moscow Belorussky railway station",
+     "lat": 55.77638,
+     "lon": 37.58176,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1367269",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "relation/1359233",
@@ -181,99 +601,28 @@
      "localName": "Сенатский дворец",
      "lat": 55.75324,
      "lon": 37.61878,
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q930376",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
-     "id": "relation/1309225",
-     "name": "Казанский вокзал",
-     "lat": 55.77353,
-     "lon": 37.65648,
-     "address": "Комсомольская площадь 2",
-     "website": "http://kazansky.dzvr.ru/",
-     "wikipediaCount": 25
-    },
-    {
-     "id": "relation/7253185",
-     "name": "Павелецкий вокзал",
-     "lat": 55.72975,
-     "lon": 37.63937,
-     "address": "Павелецкая площадь 1А",
-     "openingHours": "24/7",
-     "wikipediaCount": 24
-    },
-    {
-     "id": "node/2368886164",
-     "name": "Теремной дворец",
-     "lat": 55.75058,
-     "lon": 37.61563,
-     "wikipediaCount": 24
-    },
-    {
-     "id": "relation/51497",
-     "name": "Арсенал",
-     "lat": 55.75374,
-     "lon": 37.6162,
-     "wikipediaCount": 20
-    },
-    {
-     "id": "relation/3062892",
-     "name": "Манеж",
-     "lat": 55.75346,
-     "lon": 37.61233,
-     "address": "Манежная площадь 1",
-     "website": "http://moscowmanege.ru/",
-     "wikipediaCount": 17
-    },
-    {
-     "id": "way/191679568",
-     "name": "В ознаменование 300-летия российского флота",
-     "lat": 55.73862,
-     "lon": 37.6083,
-     "wikipediaCount": 16
-    },
-    {
-     "id": "node/266720662",
-     "name": "Жилой дом на Котельнической набережной",
-     "lat": 55.74708,
-     "lon": 37.64265,
-     "wikipediaCount": 16
-    },
-    {
-     "id": "relation/1360627",
-     "name": "Троицкая башня",
-     "lat": 55.75228,
-     "lon": 37.61453,
-     "wikipediaCount": 16
-    },
-    {
-     "id": "relation/7295268",
-     "name": "Новоспасский монастырь",
-     "lat": 55.73175,
-     "lon": 37.65661,
-     "website": "http://www.novospasskiymon.ru/",
-     "wikipediaCount": 15
-    },
-    {
-     "id": "relation/7064791",
-     "name": "Андроников монастырь",
-     "lat": 55.74903,
-     "lon": 37.67084,
-     "openingHours": "Mo-Su 09:00-21:00",
-     "wikipediaCount": 14
-    },
-    {
-     "id": "relation/19819961",
-     "name": "Стена скорби",
-     "lat": 55.77022,
-     "lon": 37.64244,
-     "wikipediaCount": 14
-    },
-    {
-     "id": "way/534095533",
-     "name": "Чудов монастырь",
-     "lat": 55.75166,
-     "lon": 37.61892,
-     "wikipediaCount": 14
+     "id": "wikidata/Q2570624",
+     "name": "Ukrayna Oteli",
+     "localName": "Radisson Collection Hotel Moscow",
+     "lat": 55.75158,
+     "lon": 37.5642,
+     "wikipediaCount": 26,
+     "wikidataId": "Q2570624",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage",
+      "hotel"
+     ]
     }
    ]
   },
@@ -289,7 +638,8 @@
      "address": "площадь Революции 2/3",
      "website": "https://shm.ru/museum/mov",
      "openingHours": "Su-Th 10:00-18:00; Fr-Sa 10:00-21:00",
-     "wikipediaCount": 76
+     "wikipediaCount": 76,
+     "wikidataId": "Q179250"
     },
     {
      "id": "relation/1907261",
@@ -299,7 +649,13 @@
      "address": "Лаврушинский переулок 10",
      "website": "https://www.tretyakovgallery.ru/for-visitors/museums/tretyakovskaya-galereya/",
      "openingHours": "Tu-Su 10:00-18:00; Th-Sa 10:00-21:00",
-     "wikipediaCount": 58
+     "wikipediaCount": 58,
+     "wikidataId": "Q183334",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/2421978",
@@ -307,7 +663,13 @@
      "lat": 55.74727,
      "lon": 37.60518,
      "address": "улица Волхонка 12 с1",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q4872",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/5963922",
@@ -316,7 +678,14 @@
      "lon": 37.61772,
      "address": "Красная площадь 1",
      "website": "https://www.shm.ru/",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q1140429",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/1359335",
@@ -324,21 +693,37 @@
      "lat": 55.74959,
      "lon": 37.61342,
      "address": "Кремлёвская набережная 1 с3",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q1304121",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/2792560",
      "name": "Музей Вооружённых сил",
      "lat": 55.78486,
      "lon": 37.61811,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q190689",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/7679578",
      "name": "Грановитая палата",
      "lat": 55.75051,
      "lon": 37.61666,
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q2307647",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/4988219028",
@@ -348,7 +733,11 @@
      "address": "Манежная улица",
      "website": "http://www.gokhran.ru/",
      "openingHours": "Fr-We 10:00-13:00,14:00-17:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2628618",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2613597034",
@@ -357,14 +746,24 @@
      "lon": 37.59989,
      "website": "https://www.orientmuseum.ru/",
      "openingHours": "Tu 11:00-19:30; Fr-Su 11:00-19:30; We-Th 12:00-20:30",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1056108",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/1359337",
      "name": "Потешный дворец",
      "lat": 55.75123,
      "lon": 37.6144,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1877773",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/48503927",
@@ -374,7 +773,12 @@
      "address": "улица Крымский Вал 9 с32",
      "website": "http://garageccc.com/",
      "openingHours": "Mo-Su 11:00-22:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q4504054",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/1733057309",
@@ -383,7 +787,12 @@
      "lon": 37.64911,
      "address": "5-й Котельнический переулок 11",
      "website": "http://www.bunker42.com/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1009559",
+     "kinds": [
+      "adminArea",
+      "museum"
+     ]
     },
     {
      "id": "way/31482160",
@@ -393,7 +802,13 @@
      "address": "Большая Никитская улица 6",
      "website": "http://zmmu.msu.ru/",
      "openingHours": "Tu-We 10:00-17:00; Th 13:00-20:00; Fr-Su 10:00-17:00; Tu[-1] off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1974813",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/193498236",
@@ -403,7 +818,11 @@
      "address": "улица Остоженка 16",
      "website": "http://www.mamm-mdf.ru/",
      "openingHours": "Tu-Su 12:00-21:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q4306979",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/32693733",
@@ -413,7 +832,11 @@
      "address": "Староваганьковский переулок 25",
      "website": "http://muar.ru/",
      "openingHours": "We,Fr-Su 11:00-20:00; Tu,Th 13:00-21:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q714163",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/132469316",
@@ -423,7 +846,11 @@
      "address": "Кожевническая улица 2",
      "website": "https://mzd.rzd.ru/ru/11452",
      "openingHours": "Mo-Tu off; We-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3330571",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/79561160",
@@ -432,7 +859,11 @@
      "lon": 37.61362,
      "address": "1-й Самотёчный переулок 9 с1",
      "website": "https://gmig.ru/",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q4306293",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/224146643",
@@ -440,7 +871,13 @@
      "lat": 55.74803,
      "lon": 37.58947,
      "address": "Кривоарбатский переулок 10",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q4165336",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2161495261",
@@ -449,7 +886,11 @@
      "lon": 37.59278,
      "website": "https://www.fmm.ru/",
      "openingHours": "We-Su 11:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4294140",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3361538621",
@@ -458,7 +899,12 @@
      "lon": 37.59394,
      "website": "http://bulgakovmuseum.ru/",
      "openingHours": "Mo off; Tu-We,Fr-Su 12:00-19:00; Th 14:00-21:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4146884",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/7887532120",
@@ -467,7 +913,11 @@
      "lon": 37.62376,
      "website": "http://www.15kop.ru/",
      "openingHours": "Mo-Su 11:00-21:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q16895567",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/3224482",
@@ -477,7 +927,11 @@
      "address": "Крымский вал 2",
      "website": "https://www.park-gorkogo.ru/muzeon",
      "openingHours": "24/7",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q2897273",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3848611737",
@@ -485,7 +939,11 @@
      "lat": 55.73439,
      "lon": 37.60438,
      "website": "http://www.cha.ru/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3345170",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/16685841",
@@ -495,7 +953,12 @@
      "address": "Тверская улица 21",
      "website": "http://sovrhistory.ru/",
      "openingHours": "Tu,Th-Su 11:00-19:00; We 12:00-21:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4146999",
+     "kinds": [
+      "attraction",
+      "museum"
+     ]
     },
     {
      "id": "node/4692951498",
@@ -504,7 +967,11 @@
      "lon": 37.5963,
      "website": "http://www.museum.ru/M402",
      "openingHours": "We-Su 11:00-17:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q16678355",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5527925431",
@@ -513,7 +980,11 @@
      "lon": 37.60298,
      "website": "http://www.art4.ru/",
      "openingHours": "Mo-Fr 11:00-19:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4306210",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/222865578",
@@ -523,7 +994,11 @@
      "address": "Зоологическая улица 13 с2",
      "website": "http://www.ncca.ru/",
      "openingHours": "Tu-We,Sa-Su 12:00-20:00; Th-Fr 12:00-21:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q367690",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3437732377",
@@ -532,7 +1007,11 @@
      "lon": 37.65668,
      "website": "https://www.mosvodokanal.ru/about/museum.php",
      "openingHours": "Mo-Th 10:00-17:00; Fr 10:00-16:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4306234",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/176331572",
@@ -542,7 +1021,11 @@
      "address": "Андроньевская площадь 10 с8",
      "website": "http://www.rublev-museum.ru/",
      "openingHours": "Mo-Su 13:00-18:00; Tu,Th 14:00-21:00; We off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4504313",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/300426887",
@@ -552,7 +1035,156 @@
      "address": "улица Малая Молчановка 2",
      "website": "http://goslitmuz.ru/ru/lervontov-museum",
      "openingHours": "Tu-Su 10:00-18:00; Th 14:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q19908773",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/151077489",
+     "name": "Музей русской иконы",
+     "lat": 55.74632,
+     "lon": 37.64544,
+     "address": "Гончарная улица 3 с3",
+     "website": "http://www.russikona.ru/",
+     "openingHours": "Mo-Tu,Sa-Su 11:00-19:00; Th-Fr 11:00-21:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q4507714",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/11741417323",
+     "name": "Нехорошая квартира",
+     "lat": 55.76705,
+     "lon": 37.59391,
+     "wikipediaCount": 4,
+     "wikidataId": "Q4318199",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "relation/10048315",
+     "name": "Галерея Ильи Глазунова",
+     "lat": 55.74638,
+     "lon": 37.60673,
+     "address": "улица Волхонка 13",
+     "website": "https://glazunov-gallery.ru/",
+     "openingHours": "Tu-We,Fr-Su 11:00-19:00; Th 11:00-21:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q4303892",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/273355916",
+     "name": "Государственный музей А.С.Пушкина",
+     "lat": 55.74407,
+     "lon": 37.5969,
+     "address": "улица Пречистенка 12/2",
+     "website": "http://www.pushkinmuseum.ru/",
+     "openingHours": "Tu-We,Fr-Su 10:00-18:00; Th 13:00-21:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q4146877",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2798179186",
+     "name": "Государственный музей Л.Н. Толстого",
+     "lat": 55.74281,
+     "lon": 37.59697,
+     "website": "http://tolstoymuseum.ru/museums/museum_branchs/prechistenka",
+     "openingHours": "Tu-Su 10:00-18:00; Th 12:00-20:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q19911795",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/45627008",
+     "name": "Дом-музей В.М. Васнецова",
+     "lat": 55.77673,
+     "lon": 37.62609,
+     "address": "переулок Васнецова 13",
+     "website": "https://www.tretyakovgallery.ru/for-visitors/museums/dom-muzey-v-vasnetsova/",
+     "openingHours": "Mo,Tu off; We-Sa 10:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q4016509",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/51545026",
+     "name": "Дом-музей П. Д. Корина",
+     "lat": 55.72884,
+     "lon": 37.5668,
+     "address": "Малая Пироговская улица 14 с5",
+     "website": "http://www.tretyakovgallery.ru/ru/museum/branch/museum_flat_korin/",
+     "openingHours": "off \"закрыт на ремонт и реставрацию\"",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1770914",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/164210810",
+     "name": "Музей В.А. Тропинина и московских художников его времени",
+     "lat": 55.7338,
+     "lon": 37.62279,
+     "address": "Щетининский переулок 10 с1",
+     "website": "https://www.museum-tropinina.ru/",
+     "openingHours": "Th 13:00-21:00; Tu-We,Fr-Su 10:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q12130531",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "relation/5371132",
+     "name": "Музей Н. В. Гоголя",
+     "lat": 55.75414,
+     "lon": 37.59981,
+     "address": "Никитский бульвар 7А",
+     "website": "http://www.domgogolya.ru/",
+     "openingHours": "Tu,We,Fr 12:00-19:00; Th 14:00-21:00; Sa-Su 12:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q55652567",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/204855051",
+     "name": "Огни Москвы",
+     "lat": 55.76086,
+     "lon": 37.63548,
+     "address": "Армянский переулок 3",
+     "website": "http://ognimos.ru/",
+     "openingHours": "Su-We 10:00-18:00; Th, Sa 12:00-20:00; Fr 12:00-22:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q4306082",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -1497,6 +2129,7 @@
      "address": "улица Пресненский Вал 6 с1",
      "website": "http://www.16tons.ru/",
      "openingHours": "Mo-Su 11:00-06:00",
+     "wikidataId": "Q4523392",
      "detailed": true
     },
     {

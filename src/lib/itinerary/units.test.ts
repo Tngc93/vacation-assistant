@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { eveningCategoriesFor } from "./config";
 import { osmIdFromShort, parseSkip, serializeSkip, shortId } from "./ids";
-import { openDuring, openVerdict } from "./openCheck";
+import { openCheck, openDuring, openVerdict } from "./openCheck";
 import { hhmm, roundUp, toMinutes, weekdayOf } from "./time";
 import { travelBetween } from "./travel";
 
@@ -15,6 +15,10 @@ describe("itinerary helpers", () => {
     expect(parseSkip("w45,n123,bad,n123")).toEqual(["n123", "w45"]);
     expect(parseSkip(undefined)).toEqual([]);
     expect(serializeSkip(["w45", "n123", "w45"])).toBe("n123,w45");
+    // Must-see places from Wikidata that OSM lacks.
+    expect(shortId("wikidata/Q207870")).toBe("q207870");
+    expect(osmIdFromShort("q207870")).toBe("wikidata/Q207870");
+    expect(parseSkip("q207870,n1")).toEqual(["n1", "q207870"]);
   });
 
   it("knows weekdays and minutes", () => {
@@ -35,6 +39,8 @@ describe("itinerary helpers", () => {
     expect(openVerdict(undefined, 0, 600, 720)).toBe("unknown");
     expect(openVerdict("Mo-Fr 09:00-18:00; PH off", 0, 600, 720)).toBe("unknown");
     expect(openDuring(Array.from({ length: 7 }, () => [{ start: 0, end: 1440 }]), 3, 1380, 1500)).toBe(true); // 24/7
+    expect(openCheck("Mo-Fr 10:00-18:00", 0, 900, 1020)).toEqual({ verdict: "open", closesAt: 1080 });
+    expect(openCheck(undefined, 0, 900, 1020)).toEqual({ verdict: "unknown", closesAt: null });
   });
 
   it("estimates walks as straight line × 1.3 at 4.5 km/h, rounded up to 5 minutes", () => {

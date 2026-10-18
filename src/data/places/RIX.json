@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "RIX",
- "fetchedAt": "2026-10-16T23:53:08.449Z",
+ "fetchedAt": "2026-10-18T16:46:39.302Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,14 +49,22 @@
      "lon": 24.10482,
      "address": "Herdera laukums 6",
      "website": "https://doms.lv/",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q1133059",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/87182656",
      "name": "Brīvības piemineklis",
      "lat": 56.9515,
      "lon": 24.11334,
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q337179",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/1393926",
@@ -64,7 +72,13 @@
      "lat": 56.95104,
      "lon": 24.10067,
      "address": "Pils laukums 3",
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q322183",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/45069779",
@@ -74,7 +88,12 @@
      "address": "Reformācijas laukums 1",
      "website": "https://svpetera.lv/",
      "openingHours": "Mo-Th, Su 10:00-18:00; Fr, Sa 10:00-22:00",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q727809",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/87495471",
@@ -84,14 +103,143 @@
      "address": "Rātslaukums 7",
      "website": "https://www.melngalvjunams.lv/",
      "openingHours": "Su-Th 10:00-17:00; Fr-Sa 10:00-16:00",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q74736"
+    },
+    {
+     "id": "wikidata/Q1026415",
+     "name": "Vecrīga",
+     "lat": 56.9485,
+     "lon": 24.1082,
+     "wikipediaCount": 35,
+     "wikidataId": "Q1026415",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q1474452",
+     "name": "Skonto Stadium",
+     "lat": 56.96137,
+     "lon": 24.11641,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1474452",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q654904",
+     "name": "St.James Katedrali, Riga",
+     "localName": "St. James's Cathedral",
+     "lat": 56.95083,
+     "lon": 24.10472,
+     "wikipediaCount": 26,
+     "wikidataId": "Q654904",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q698342",
+     "name": "Riga gettosu",
+     "localName": "Riga Ghetto",
+     "lat": 56.95,
+     "lon": 24.1,
+     "wikipediaCount": 21,
+     "wikidataId": "Q698342"
     },
     {
      "id": "way/348059067",
      "name": "Trīs brāļi",
      "lat": 56.95032,
      "lon": 24.10427,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q282196",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1550015",
+     "name": "Nativity Cathedral, Riga",
+     "lat": 56.95391,
+     "lon": 24.11555,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1550015",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q32969",
+     "name": "Skonto Spor Salonu",
+     "localName": "Skonto Hall",
+     "lat": 56.96194,
+     "lon": 24.11444,
+     "wikipediaCount": 20,
+     "wikidataId": "Q32969",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q190670",
+     "name": "Riga Central Market",
+     "lat": 56.944,
+     "lon": 24.116,
+     "wikipediaCount": 19,
+     "wikidataId": "Q190670"
+    },
+    {
+     "id": "wikidata/Q186097",
+     "name": "Powder Tower",
+     "lat": 56.95125,
+     "lon": 24.10867,
+     "wikipediaCount": 18,
+     "wikidataId": "Q186097",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q317508",
+     "name": "Vanšu Bridge",
+     "lat": 56.95111,
+     "lon": 24.09528,
+     "wikipediaCount": 18,
+     "wikidataId": "Q317508",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q3018073",
+     "name": "Freeport of Riga",
+     "lat": 56.95694,
+     "lon": 24.10389,
+     "wikipediaCount": 17,
+     "wikidataId": "Q3018073",
+     "kinds": [
+      "port",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q16355736",
+     "name": "House of the Livonian Noble Corporation",
+     "lat": 56.9511,
+     "lon": 24.1044,
+     "wikipediaCount": 17,
+     "wikidataId": "Q16355736",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "relation/1307300",
@@ -99,28 +247,150 @@
      "lat": 56.95018,
      "lon": 24.10875,
      "address": "Meistaru iela 10",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2533242"
+    },
+    {
+     "id": "wikidata/Q2568547",
+     "name": "St. John's Church",
+     "lat": 56.9475,
+     "lon": 24.1108,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2568547",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2668017",
+     "name": "St. Alexander Nevsky Church",
+     "lat": 56.95612,
+     "lon": 24.12136,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2668017",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q6541959",
+     "name": "Zunda Towers",
+     "lat": 56.9473,
+     "lon": 24.08007,
+     "wikipediaCount": 13,
+     "wikidataId": "Q6541959",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q458599",
+     "name": "Building of Latvian Academy of Sciences",
+     "lat": 56.94328,
+     "lon": 24.12181,
+     "wikipediaCount": 12,
+     "wikidataId": "Q458599",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/92054276",
      "name": "Rīgas Horālā sinagoga",
      "lat": 56.9424,
      "lon": 24.12632,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1846204",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2660396",
+     "name": "Swedish Gate",
+     "lat": 56.9514,
+     "lon": 24.1064,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2660396"
+    },
+    {
+     "id": "wikidata/Q2041341",
+     "name": "Akmens tilts",
+     "lat": 56.94472,
+     "lon": 24.10139,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2041341",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q2687278",
+     "name": "Albert Street",
+     "lat": 56.95904,
+     "lon": 24.10971,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2687278",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2672158",
+     "name": "Our Lady of Sorrows Church",
+     "lat": 56.95031,
+     "lon": 24.10166,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2672158",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3409330",
+     "name": "St. George's Church",
+     "lat": 56.9481,
+     "lon": 24.1095,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3409330",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1854781",
+     "name": "Vērmanes Garden",
+     "lat": 56.95142,
+     "lon": 24.11892,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1854781",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1691772900",
      "name": "Laimas pulkstenis",
      "lat": 56.95044,
      "lon": 24.11198,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4507748"
     },
     {
      "id": "way/105514216",
      "name": "Aleksandra vārti",
      "lat": 56.96265,
      "lon": 24.09942,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4061427",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1349588176",
@@ -178,6 +448,17 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1586390",
+     "name": "Museum of the Occupation of Latvia",
+     "lat": 56.94694,
+     "lon": 24.10639,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1586390",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
      "id": "node/12287802354",
      "name": "Latvijas Nacionālais vēstures muzejs",
      "lat": 56.95059,
@@ -185,7 +466,11 @@
      "address": "Pils laukums 3",
      "website": "https://lnvm.lv/",
      "openingHours": "Mo-Tu off; We-Th 10:00-18:00; Fr 10:00-20:00; Sa-Su 10:00-17:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1781530",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13721805929",
@@ -195,7 +480,11 @@
      "address": "Palasta iela 4",
      "website": "https://www.rigamuz.lv/",
      "openingHours": "May-Sep: 10:00-17:00; Oct-Apr: We-Su 11:00-17:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2478651",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4246679918",
@@ -205,7 +494,11 @@
      "address": "Skolas iela 6",
      "website": "https://www.jewishmuseum.lv/",
      "openingHours": "Su-Th 11:00-17:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q15978608",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3744135928",
@@ -215,7 +508,11 @@
      "address": "Mazā Pils iela 19",
      "website": "http://www.archmuseum.lv/",
      "openingHours": "Mo 09:00-18:00; Tu-Th 09:00-17:00; Fr 09:00-16:00; Sa,Su off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q4254893",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12465076866",
@@ -225,7 +522,11 @@
      "address": "Kronvalda bulvāris 4",
      "website": "https://www.rigamuz.lv/lfm/",
      "openingHours": "We,Fr-Su 10:00-17:00; Th 12:00-19:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2047244",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/470042272",
@@ -235,7 +536,11 @@
      "address": "Krišjāņa Barona iela 4",
      "website": "https://www.dabasmuzejs.gov.lv/",
      "openingHours": "Mo-Tu closed; We-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6497382",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4813948103",
@@ -245,7 +550,11 @@
      "address": "Skārņu iela 10",
      "website": "https://www.lnmm.lv/dekorativas-makslas-un-dizaina-muzejs",
      "openingHours": "Tu,Th-Su 11:00-17:00; We 11:00-19:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6497376",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1907311602",
@@ -255,7 +564,11 @@
      "address": "Riharda Vāgnera iela 13",
      "website": "https://www.farmacijasmuzejs.lv/",
      "openingHours": "Tu-Sa 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3013764",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3733396425",
@@ -265,7 +578,11 @@
      "address": "Brīvības iela 61",
      "website": "http://sturamaja.lv/",
      "openingHours": "Mo-Su 10:30-17:30",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4468975",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1474841777",
@@ -274,7 +591,11 @@
      "lon": 24.11761,
      "website": "http://www.rgm.lv/",
      "openingHours": "Su-Fr 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4306181",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/45817525",
@@ -284,7 +605,11 @@
      "address": "Torņa iela 1",
      "website": "https://www.lnmm.lv/",
      "openingHours": "closed",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4796493",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/157820969",
@@ -294,7 +619,11 @@
      "address": "Grēcinieku iela 18",
      "website": "https://www.rigamuz.lv/mn/",
      "openingHours": "We-Su 11:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q15219362",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1190742833",
@@ -304,7 +633,11 @@
      "address": "Ukrainas neatkarības iela 1",
      "website": "https://mvm.lv/",
      "openingHours": "Tu-We, Fr-Sa 11:00-17:00; Th 11:00-19:00; Su 11:00-16:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4306334",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12239492855",
@@ -313,7 +646,11 @@
      "lon": 24.11907,
      "address": "Elizabetes iela 57A",
      "website": "https://lnmm.gov.lv/romana-sutas-un-aleksandras-belcovas-muzejs",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4306184",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/457061944",
@@ -323,7 +660,11 @@
      "address": "Hanzas iela 5",
      "website": "https://muzejs.vugd.gov.lv/",
      "openingHours": "Tu-Sa 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4306427",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6176103786",
@@ -333,7 +674,11 @@
      "address": "Kalēju iela 9/11",
      "website": "https://porcelanamuzejs.riga.lv/",
      "openingHours": "Tu-Su 09:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7333341",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1160803251",
@@ -343,7 +688,11 @@
      "address": "Alberta iela 12",
      "website": "https://jugendstils.riga.lv/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q51032428",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5954279709",
@@ -353,7 +702,11 @@
      "address": "Krišjāņa Barona iela 3",
      "website": "https://memorialiemuzeji.lv/museums/krisjana-barona-muzejs/",
      "openingHours": "Mo-Tu closed; We 13:00-19:00; Th-Su 11:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6438644",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/382382211",
@@ -363,7 +716,11 @@
      "address": "Krāmu iela 3",
      "website": "http://barikades.lv/",
      "openingHours": "Mo-Sa 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q59504500",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10955741530",
@@ -463,6 +820,95 @@
      "address": "Vīlandes iela 16",
      "website": "https://pacificarts.eu/",
      "openingHours": "We, Fr 17:00-19:00"
+    },
+    {
+     "id": "node/10729625605",
+     "name": "Pilot",
+     "lat": 56.94901,
+     "lon": 24.11007,
+     "address": "Riharda Vāgnera iela 3",
+     "website": "https://www.lma.lv/akademija/pilot",
+     "openingHours": "Tu-Sa 12:00-18:00"
+    },
+    {
+     "id": "node/4429199820",
+     "name": "Rīgas mākslas telpa",
+     "lat": 56.94765,
+     "lon": 24.10731,
+     "address": "Kungu iela 3",
+     "website": "http://makslastelpa.lv/",
+     "openingHours": "Tu-Su 11:00-18:00"
+    },
+    {
+     "id": "node/8402599405",
+     "name": "RSU Anatomijas muzejs",
+     "lat": 56.95779,
+     "lon": 24.09969,
+     "address": "Kronvalda bulvāris 9",
+     "website": "https://am.rsu.lv/",
+     "openingHours": "Tu-We, Fr-Sa 11:00-18:00; Th 13:00-20:00"
+    },
+    {
+     "id": "node/12595159686",
+     "name": "Video Game Museum",
+     "lat": 56.95522,
+     "lon": 24.12891,
+     "address": "Krišjāņa Barona iela 41/43",
+     "website": "https://vgm.lv/",
+     "openingHours": "Mo-Sa 10:00-20:00; Su 11:00-17:00"
+    },
+    {
+     "id": "way/165792285",
+     "name": "Žaņa Lipkes memoriāls",
+     "lat": 56.95402,
+     "lon": 24.08464,
+     "address": "Mazais Balasta dambis 9",
+     "website": "https://lipke.lv/",
+     "openingHours": "Tu-We 12:00-18:00; Th 12:00-20:00; Fr-Sa 12:00-18:00"
+    },
+    {
+     "id": "node/6043727182",
+     "name": "Aleksandra Čaka memoriālais dzīvoklis - muzejs",
+     "lat": 56.95243,
+     "lon": 24.1287,
+     "address": "Aleksandra Čaka iela 37",
+     "website": "https://www.cakamuzejs.lv/",
+     "wikidataId": "Q59504515",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6815988866",
+     "name": "Cepures pasaule",
+     "lat": 56.96026,
+     "lon": 24.10132,
+     "address": "Vīlandes iela 7",
+     "website": "http://worldhat.net/",
+     "wikidataId": "Q72793426",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/87410111",
+     "name": "Latvijas dzelzceļa vēstures muzejs",
+     "lat": 56.94093,
+     "lon": 24.09454,
+     "address": "Uzvaras bulvāris 2A",
+     "openingHours": "Tu-We,Fr-Sa 10:00-17:00; Th 10:00-20:00"
+    },
+    {
+     "id": "way/87493995",
+     "name": "Latvijas kara muzejs",
+     "lat": 56.95118,
+     "lon": 24.10835,
+     "address": "Smilšu iela 20",
+     "openingHours": "We-Su 10:00-18:00",
+     "wikidataId": "Q140421091",
+     "kinds": [
+      "heritage"
+     ]
     }
    ]
   },

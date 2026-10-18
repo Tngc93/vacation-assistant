@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "MUC",
- "fetchedAt": "2026-10-16T23:25:36.433Z",
+ "fetchedAt": "2026-10-18T16:15:21.157Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,7 +48,21 @@
      "lat": 48.13142,
      "lon": 11.54933,
      "website": "https://www.oktoberfest.de/",
-     "wikipediaCount": 76
+     "wikipediaCount": 76,
+     "wikidataId": "Q102400"
+    },
+    {
+     "id": "wikidata/Q131610",
+     "name": "Münih Olimpiyat Stadyumu",
+     "localName": "Munich Olympic Stadium",
+     "lat": 48.17306,
+     "lon": 11.54667,
+     "wikipediaCount": 55,
+     "wikidataId": "Q131610",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/225698612",
@@ -57,7 +71,36 @@
      "lon": 11.5736,
      "address": "Frauenplatz 1",
      "website": "https://www.muenchner-dom.de/",
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q167193",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q260223",
+     "name": "Englischer Garten",
+     "lat": 48.15278,
+     "lon": 11.59194,
+     "wikipediaCount": 42,
+     "wikidataId": "Q260223",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q252648",
+     "name": "Marienplatz",
+     "lat": 48.13722,
+     "lon": 11.57528,
+     "wikipediaCount": 39,
+     "wikidataId": "Q252648",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
     },
     {
      "id": "relation/147095",
@@ -66,7 +109,24 @@
      "lon": 11.57598,
      "address": "Marienplatz 8",
      "openingHours": "Oct-Apr Mo-Fr 10:00-17:00; May-Sep 10:00-19:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q152979",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q254647",
+     "name": "Münih Merkez Garı",
+     "localName": "Munich Central Station",
+     "lat": 48.14083,
+     "lon": 11.555,
+     "wikipediaCount": 30,
+     "wikidataId": "Q254647",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "relation/7456359",
@@ -74,7 +134,12 @@
      "lat": 48.14117,
      "lon": 11.57931,
      "website": "https://www.residenz-muenchen.de/",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q686548",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/25514390",
@@ -84,7 +149,23 @@
      "address": "Theatinerstraße 22",
      "website": "https://www.theatinerkirche.de/",
      "openingHours": "Mo-Su 06:30-20:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q259799",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q700887",
+     "name": "Theresienwiese",
+     "lat": 48.1333,
+     "lon": 11.55,
+     "wikipediaCount": 25,
+     "wikidataId": "Q700887",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/96753009",
@@ -92,7 +173,22 @@
      "lat": 48.13069,
      "lon": 11.54594,
      "openingHours": "Apr 01-Oct 15: Mo-Su,PH 09:00-18:00; 09:00-20:00 \"während Oktoberfest\"",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q707669",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q254903",
+     "name": "Grünwalder Stadion",
+     "lat": 48.11083,
+     "lon": 11.57444,
+     "wikipediaCount": 22,
+     "wikidataId": "Q254903",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/25505402",
@@ -101,7 +197,11 @@
      "lon": 11.57732,
      "address": "Odeonsplatz",
      "website": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/mu_feldh.htm",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q251712",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/47515468",
@@ -110,7 +210,12 @@
      "lon": 11.56952,
      "address": "Sendlinger Straße 32",
      "openingHours": "Mo-Th, Sa, Su 09:00-19:00; Fr 13:00-19:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q152973",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/36943165",
@@ -119,7 +224,12 @@
      "lon": 11.57041,
      "address": "Neuhauser Straße 6",
      "website": "https://www.st-michael-muenchen.de/",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q265745",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/228534603",
@@ -128,7 +238,12 @@
      "lon": 11.57603,
      "address": "Petersplatz 1",
      "website": "https://alterpeter.de/",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q707645",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/22727580",
@@ -137,7 +252,49 @@
      "lon": 11.58214,
      "address": "Leopoldstraße 2",
      "website": "https://www.muenchen.de/sehenswuerdigkeiten/siegestor",
-     "wikipediaCount": 19
+     "wikipediaCount": 20,
+     "wikidataId": "Q254294",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q259839",
+     "name": "Odeonsplatz",
+     "lat": 48.14222,
+     "lon": 11.5775,
+     "wikipediaCount": 20,
+     "wikidataId": "Q259839",
+     "kinds": [
+      "heritage",
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q707673",
+     "name": "Hofgarten (München)",
+     "lat": 48.14278,
+     "lon": 11.58,
+     "wikipediaCount": 19,
+     "wikidataId": "Q707673",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q686629",
+     "name": "Viktualienmarkt",
+     "lat": 48.1353,
+     "lon": 11.5761,
+     "wikipediaCount": 19,
+     "wikidataId": "Q686629",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
     },
     {
      "id": "way/4054817",
@@ -146,7 +303,12 @@
      "lon": 11.57706,
      "address": "Marienplatz 15",
      "openingHours": "Su-Fr 09:00-21:30",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q439458",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/23458583",
@@ -155,7 +317,52 @@
      "lon": 11.57951,
      "address": "Max-Joseph-Platz 2",
      "website": "https://www.staatsoper.de/",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q707679",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q260660",
+     "name": "Isartor",
+     "lat": 48.1351,
+     "lon": 11.5817,
+     "wikipediaCount": 18,
+     "wikidataId": "Q260660",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "node/1383175737",
+     "name": "Platzl",
+     "lat": 48.13802,
+     "lon": 11.58014,
+     "address": "Platzl",
+     "wikipediaCount": 18,
+     "wikidataId": "Q152971",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q592281",
+     "name": "Bürgerbräukeller",
+     "lat": 48.13,
+     "lon": 11.5925,
+     "wikipediaCount": 17,
+     "wikidataId": "Q592281",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/325929848",
@@ -163,7 +370,51 @@
      "lat": 48.13641,
      "lon": 11.59453,
      "address": "Max-Planck-Straße 1",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q266759",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q561084",
+     "name": "Königsplatz",
+     "lat": 48.14556,
+     "lon": 11.56528,
+     "wikipediaCount": 16,
+     "wikidataId": "Q561084",
+     "kinds": [
+      "heritage",
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q254394",
+     "name": "Sendlinger Tor",
+     "lat": 48.134,
+     "lon": 11.5676,
+     "wikipediaCount": 15,
+     "wikidataId": "Q254394",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q321485",
+     "name": "St. Lukas",
+     "lat": 48.1352,
+     "lon": 11.5874,
+     "wikipediaCount": 15,
+     "wikidataId": "Q321485",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/400345387",
@@ -173,35 +424,182 @@
      "address": "Theresienhöhe 16",
      "website": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/mu_ruhm.htm",
      "openingHours": "Apr 01-Oct 15: Mo-Su,PH 09:00-18:00; 09:00-20:00 \"während Oktoberfest\"",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q538348",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/2618685230",
      "name": "Friedensengel",
      "lat": 48.14134,
      "lon": 11.597,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q504642",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/14471471",
      "name": "Karlsplatz (Stachus)",
      "lat": 48.13924,
      "lon": 11.56606,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q152974",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
     },
     {
      "id": "way/52103816",
      "name": "Karlstor",
      "lat": 48.13901,
      "lon": 11.56676,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q567400",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q251948",
+     "name": "Bürgersaalkirche",
+     "lat": 48.13902,
+     "lon": 11.56826,
+     "wikipediaCount": 12,
+     "wikidataId": "Q251948",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q571767",
+     "name": "Führerbau",
+     "lat": 48.1461,
+     "lon": 11.5678,
+     "wikipediaCount": 12,
+     "wikidataId": "Q571767",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q251087",
+     "name": "Heilig-Geist-Kirche",
+     "lat": 48.13627,
+     "lon": 11.57734,
+     "wikipediaCount": 12,
+     "wikidataId": "Q251087",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q250951",
+     "name": "Ludwigskirche",
+     "lat": 48.14884,
+     "lon": 11.58133,
+     "wikipediaCount": 12,
+     "wikidataId": "Q250951",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q686997",
+     "name": "Palais Holnstein",
+     "lat": 48.14091,
+     "lon": 11.57505,
+     "wikipediaCount": 12,
+     "wikidataId": "Q686997",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q247638",
+     "name": "St. Paul's Church, Munich",
+     "lat": 48.1364,
+     "lon": 11.5522,
+     "wikipediaCount": 12,
+     "wikidataId": "Q247638",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q438199",
+     "name": "Alter Südfriedhof",
+     "lat": 48.12727,
+     "lon": 11.56488,
+     "wikipediaCount": 11,
+     "wikidataId": "Q438199",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q532191",
+     "name": "Cuvilliés Theatre",
+     "lat": 48.1409,
+     "lon": 11.58002,
+     "wikipediaCount": 11,
+     "wikidataId": "Q532191",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q130609",
+     "name": "Justizpalast",
+     "lat": 48.1406,
+     "lon": 11.5647,
+     "wikipediaCount": 11,
+     "wikidataId": "Q130609",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "node/340004718",
      "name": "Mariensäule",
      "lat": 48.13723,
      "lon": 11.57551,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q824403",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q456586",
+     "name": "Prinzregententheater",
+     "lat": 48.139,
+     "lon": 11.6056,
+     "wikipediaCount": 11,
+     "wikidataId": "Q456586",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/244969498",
@@ -209,7 +607,36 @@
      "lat": 48.14607,
      "lon": 11.56426,
      "address": "Königsplatz 2",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q822301",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q328794",
+     "name": "Sendling Camii",
+     "localName": "Mosque in Sendling",
+     "lat": 48.11806,
+     "lon": 11.55139,
+     "wikipediaCount": 11,
+     "wikidataId": "Q328794",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q279303",
+     "name": "St. Boniface’s Abbey",
+     "lat": 48.14389,
+     "lon": 11.56417,
+     "wikipediaCount": 11,
+     "wikidataId": "Q279303",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/5418220511",
@@ -217,7 +644,13 @@
      "lat": 48.1382,
      "lon": 11.57801,
      "address": "Alter Hof 3",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q315084",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/124911353",
@@ -226,64 +659,8 @@
      "lon": 11.58275,
      "address": "Franz-Josef-Strauß-Ring 1",
      "website": "https://www.bayern.de/staatskanzlei/staatskanzlei/",
-     "wikipediaCount": 8
-    },
-    {
-     "id": "relation/5412847",
-     "name": "Müllersches Volksbad",
-     "lat": 48.13223,
-     "lon": 11.58832,
-     "address": "Rosenheimer Straße 1",
-     "website": "https://www.swm.de/baeder/muellersches-volksbad",
-     "openingHours": "We-Su,PH 07:30-23:00; Mo 07:30-23:00 open \"Große Halle Montags nur bis 17 Uhr geöffnet\"; Tu 07:30-23:00 open \"15:00-20Uhr Frauenbadetag in der kleinen Halle\"",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/150797475",
-     "name": "Dianatempel",
-     "lat": 48.14294,
-     "lon": 11.58001,
-     "openingHours": "24/7",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/340004719",
-     "name": "Glockenspiel",
-     "lat": 48.13747,
-     "lon": 11.57549,
-     "openingHours": "Mar-Oct: Mo-Su 11:00-11:05,12:00-12:05,17:00-17:05; Nov-Feb: Mo-Su 11:00-11:05",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/5418190337",
-     "name": "Palais Leuchtenberg",
-     "lat": 48.1441,
-     "lon": 11.57722,
-     "address": "Odeonsplatz 4",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/27910913",
-     "name": "Sankt-Anna-Klosterkirche",
-     "lat": 48.14023,
-     "lon": 11.58587,
-     "address": "Sankt-Anna-Straße 21",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/5418179579",
-     "name": "Leopoldstraße",
-     "lat": 48.15523,
-     "lon": 11.58371,
-     "wikipediaCount": 6
-    },
-    {
-     "id": "way/16129581",
-     "name": "Staatstheater am Gärtnerplatz",
-     "lat": 48.13097,
-     "lon": 11.57535,
-     "address": "Gärtnerplatz 3",
-     "wikipediaCount": 6
+     "wikipediaCount": 8,
+     "wikidataId": "Q812286"
     }
    ]
   },
@@ -299,7 +676,26 @@
      "address": "Museumsinsel 1",
      "website": "https://www.deutsches-museum.de/",
      "openingHours": "Mo-Su 09:00-17:00; May 1 off; Nov 1 off; Dec 24,25,31 off; Jan 1 off",
-     "wikipediaCount": 53
+     "wikipediaCount": 53,
+     "wikidataId": "Q131617",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q131631",
+     "name": "Nymphenburg Sarayı",
+     "localName": "Nymphenburg Palace",
+     "lat": 48.15806,
+     "lon": 11.50361,
+     "wikipediaCount": 51,
+     "wikidataId": "Q131631",
+     "kinds": [
+      "heritage",
+      "museum",
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/4647135",
@@ -309,7 +705,12 @@
      "address": "Barer Straße 27",
      "website": "https://www.pinakothek.de/de/alte-pinakothek",
      "openingHours": "Tu,We 10:00-20:30; Th-Su 10:00-18:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q154568",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/532621",
@@ -319,7 +720,13 @@
      "address": "Königsplatz 3",
      "website": "https://www.antike-am-koenigsplatz.mwn.de/glyptothek/",
      "openingHours": "Mo off; Tu-We 10:00-17:00; Th 10:00-20:00; Fr-Su 10:00-17:00",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q162077",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/1644123",
@@ -328,7 +735,12 @@
      "lon": 11.57098,
      "address": "Barer Straße 29",
      "website": "https://www.pinakothek.de/de/neue-pinakothek",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q170152",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/305581866",
@@ -338,7 +750,11 @@
      "address": "Prinzregentenstraße 3",
      "website": "https://www.bayerisches-nationalmuseum.de/",
      "openingHours": "Tu-Su 10:00-17:00; Th 10:00-20:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q631056",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/150797531",
@@ -347,7 +763,12 @@
      "lon": 11.58596,
      "website": "https://www.hausderkunst.de/",
      "openingHours": "Mo-Su 10:00-20:00; Th 10:00-22:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q697782",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/10053440",
@@ -357,7 +778,12 @@
      "address": "Barer Straße 40",
      "website": "https://www.pinakothek-der-moderne.de/",
      "openingHours": "Tu-We, Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q250195",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/237426208",
@@ -367,7 +793,12 @@
      "address": "Luisenstraße 33",
      "website": "https://www.lenbachhaus.de/",
      "openingHours": "Mo off, Tu-Su,PH 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q262234",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/11099726845",
@@ -377,7 +808,22 @@
      "address": "Theresienstraße 35a",
      "website": "https://www.museum-brandhorst.de/",
      "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q258597",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q707981",
+     "name": "Staatliche Antikensammlungen",
+     "lat": 48.14519,
+     "lon": 11.56493,
+     "wikipediaCount": 17,
+     "wikidataId": "Q707981",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/85213217",
@@ -387,7 +833,12 @@
      "address": "Prinzregentenstraße 60",
      "website": "https://www.villastuck.de/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q264573",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/280336045",
@@ -397,7 +848,11 @@
      "address": "Max-Mannheimer-Platz 1",
      "website": "https://www.nsdoku.de/",
      "openingHours": "Tu-Su 10:00-19:00; PH 10:00-19:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1961427",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/27959434",
@@ -407,7 +862,11 @@
      "address": "Prinzregentenstraße 9",
      "website": "https://www.pinakothek.de/de/sammlung-schack",
      "openingHours": "We-Su 10:00-18:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q523652",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5223300524",
@@ -417,7 +876,11 @@
      "address": "Gabelsbergerstraße 35",
      "website": "https://smaek.de/",
      "openingHours": "Tu 10:00-20:00; We-Su 10:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q464872",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/24164434",
@@ -427,7 +890,11 @@
      "address": "Sankt-Jakobs-Platz 16",
      "website": "https://www.juedisches-museum-muenchen.de/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q320903",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11933309402",
@@ -437,7 +904,12 @@
      "address": "Sankt-Jakobs-Platz 1",
      "website": "https://www.muenchner-stadtmuseum.de/",
      "openingHours": "\"closed: see description\"",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q452685",
+     "kinds": [
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "relation/4192267",
@@ -447,7 +919,11 @@
      "address": "Lerchenfeldstraße 2",
      "website": "https://www.archaeologie.bayern/",
      "openingHours": "Tu,We,Fr,Sa 10:00-17:00; Th,Su 10:00-19:00; Mo off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q636743",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/656253064",
@@ -457,7 +933,11 @@
      "address": "Sterneckerstraße 2",
      "website": "https://www.bier-und-oktoberfestmuseum.de/",
      "openingHours": "Mo-Sa 11:00-19:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q857725",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25695553",
@@ -467,7 +947,11 @@
      "address": "Maximilianstraße 42",
      "website": "https://www.museum-fuenf-kontinente.de/",
      "openingHours": "Tu-Su 09:30-17:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q454217",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2866790927",
@@ -476,7 +960,11 @@
      "lon": 11.56638,
      "website": "https://www.sgsm.eu/",
      "openingHours": "Mo 14:00-17:00; Tu-Th 10:00-13:00, 14:00-17:00; Fr 10:00-13:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q464404",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/28026044",
@@ -485,7 +973,12 @@
      "lon": 11.56362,
      "address": "Richard-Wagner-Straße 10",
      "openingHours": "Mo-Th 08:00-16:00; Fr 08:00-14:00; Su[1] 10:00-16:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q473832",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/307738674",
@@ -495,7 +988,11 @@
      "address": "Neuhauser Straße 2",
      "website": "https://www.jagd-fischerei-museum.de/",
      "openingHours": "Mo-Su 09:30-17:00; Th 09:30-21:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q152966",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/18956760",
@@ -505,7 +1002,11 @@
      "address": "Praterinsel 5",
      "website": "https://www.alpenverein.de/museum",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q520455",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11935589855",
@@ -514,7 +1015,11 @@
      "lon": 11.57182,
      "website": "https://www.die-neue-sammlung.de/",
      "openingHours": "Tu-We,Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q286549",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2497837304",
@@ -524,7 +1029,11 @@
      "address": "Katharina-von-Bora-Straße 10",
      "website": "https://www.abgussmuseum.de/",
      "openingHours": "Mo,We,Fr 10:00-18:00; Tu,Th 10:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q323280",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/953031130",
@@ -533,7 +1042,11 @@
      "lon": 11.60584,
      "website": "https://ottoeckart.de/kartoffelmuseum/",
      "openingHours": "closed",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q832438",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/261030708",
@@ -543,7 +1056,11 @@
      "address": "Max-Joseph-Platz 3",
      "website": "https://www.residenz-muenchen.de/",
      "openingHours": "Apr 01-Oct 15: 09:00-18:00; Oct 16-Mar 31: 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2145673",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/471620092",
@@ -553,7 +1070,11 @@
      "address": "Am Bavariapark 5",
      "website": "https://www.deutsches-museum.de/verkehrszentrum",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1372880",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/307734040",
@@ -563,7 +1084,11 @@
      "address": "Luisenstraße 37",
      "website": "https://bspg.snsb.de/geologisches-museum-muenchen/",
      "openingHours": "Mo-Th 08:00-16:00; Fr 08:00-14:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1503250",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3754434962",
@@ -572,7 +1097,8 @@
      "lon": 11.58028,
      "website": "https://www.kunstverein-muenchen.de/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1304064"
     },
     {
      "id": "node/5951675866",
@@ -582,7 +1108,114 @@
      "address": "Hotterstraße 12",
      "website": "https://www.muca.eu/",
      "openingHours": "We, Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q29464448",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/249814994",
+     "name": "Museum Mineralogia München",
+     "lat": 48.14811,
+     "lon": 11.57236,
+     "address": "Theresienstraße 41",
+     "website": "https://msm.snsb.de/",
+     "openingHours": "Tu-Su,PH 13:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1792764",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/307729970",
+     "name": "Deutsches Theatermuseum",
+     "lat": 48.14367,
+     "lon": 11.58054,
+     "address": "Galeriestraße 4a",
+     "website": "https://www.deutschestheatermuseum.de/",
+     "openingHours": "Tu-Su 11:00-17:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q1206066",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2205792764",
+     "name": "Kunsthalle der Hypo-Kulturstiftung",
+     "lat": 48.13997,
+     "lon": 11.57588,
+     "address": "Theatinerstraße 8",
+     "website": "https://www.kunsthalle-muc.de/",
+     "openingHours": "Mo-Su 10:00-20:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q1367890",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/344494568",
+     "name": "Valentin-Karlstadt-Musäum",
+     "lat": 48.13495,
+     "lon": 11.58165,
+     "address": "Tal 50",
+     "website": "https://www.valentin-karlstadt-musaeum.de/",
+     "openingHours": "Mo,Tu,Th,Fr,Sa 11:00-18:00 open; Su 10:00-18:00 open, We closed",
+     "wikipediaCount": 2,
+     "wikidataId": "Q264209",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6258911966",
+     "name": "AkademieGalerie",
+     "lat": 48.15099,
+     "lon": 11.58167,
+     "wikipediaCount": 2,
+     "wikidataId": "Q414486"
+    },
+    {
+     "id": "way/34102628",
+     "name": "Amerikahaus",
+     "lat": 48.14436,
+     "lon": 11.5679,
+     "address": "Karolinenplatz 3",
+     "website": "https://www.amerikahaus.de/",
+     "openingHours": "Mo-Fr 10:00-17:00; We 10:00-20:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q467956",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/4217510193",
+     "name": "Ausstellung Münchner Kaiserburg",
+     "lat": 48.13798,
+     "lon": 11.57815,
+     "address": "Alter Hof 1",
+     "website": "https://museen-in-bayern.de/infopoint/muencher-kaiserburg",
+     "openingHours": "Mo-Sa 10:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q25389131",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/704397712",
+     "name": "DenkStätte Weiße Rose",
+     "lat": 48.15094,
+     "lon": 11.57984,
+     "address": "Geschwister-Scholl-Platz 1",
+     "website": "https://www.weisse-rose-stiftung.de/denkstaette-weisse-rose-am-lichthof-der-lmu-muenchen/",
+     "openingHours": "Mo-Fr 10:30-16:30; Sa 11:30-16:00; PH off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q55521383"
     }
    ]
   },
@@ -597,7 +1230,11 @@
      "lon": 11.54594,
      "website": "https://www.schloesser.bayern.de/deutsch/schloss/objekte/mu_ruhm.htm",
      "openingHours": "Apr 01-Oct 15: Mo-Su,PH 09:00-18:00; 09:00-20:00 \"während Oktoberfest\"",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q707669",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/12867058771",
@@ -750,6 +1387,7 @@
      "website": "https://atzinger-restaurant.de/",
      "openingHours": "Mo-Th 11:30-23:00, Fr,Sa 11:30-24:00, Su,PH 11:30-22:00",
      "cuisine": "bavarian",
+     "wikidataId": "Q116785116",
      "detailed": true
     },
     {
@@ -794,6 +1432,7 @@
      "website": "https://www.augustiner-restaurant.com/",
      "openingHours": "Mo-Sa 11:00-23:59; Su 10:00-15:00",
      "cuisine": "bavarian",
+     "wikidataId": "Q41175885",
      "detailed": true
     },
     {
@@ -1142,6 +1781,17 @@
      "detailed": true
     },
     {
+     "id": "node/6617193978",
+     "name": "café regenbogen",
+     "lat": 48.12991,
+     "lon": 11.55957,
+     "address": "Lindwurmstraße 71",
+     "website": "https://www.muenchner-aidshilfe.de/home-rgb.html",
+     "openingHours": "Mo-Fr 11:30-14:00, 17:00-22:00",
+     "cuisine": "german, regional",
+     "detailed": true
+    },
+    {
      "id": "node/3027984919",
      "name": "Caffé Da Me",
      "lat": 48.13157,
@@ -1249,6 +1899,7 @@
      "website": "https://kreutzkamm.de/unsere-cafes/cafe-maffeistrasse-muenchen/",
      "openingHours": "Mo-Fr 08:00-18:00; Sa 10:00-18:00",
      "cuisine": "coffee shop, cake, pastry, tea, ice cream",
+     "wikidataId": "Q130285248",
      "detailed": true
     },
     {
@@ -1260,6 +1911,7 @@
      "website": "https://kreutzkamm.de/unsere-cafes/cafe-pacellistrasse-muenchen/",
      "openingHours": "Mo-Fr 08:00-18:00; Sa 10:00-18:00",
      "cuisine": "coffee shop, cake, pastry, tea, ice cream, sandwich, german",
+     "wikidataId": "Q130285248",
      "detailed": true
     },
     {
@@ -1282,17 +1934,6 @@
      "website": "https://www.dasmaria.de/",
      "openingHours": "Mo-Su 09:00-23:00",
      "cuisine": "regional",
-     "detailed": true
-    },
-    {
-     "id": "node/3240816897",
-     "name": "Die Kuchenwerkstatt",
-     "lat": 48.16291,
-     "lon": 11.57227,
-     "address": "Herzogstraße 84",
-     "website": "https://madame-boulos.de/",
-     "openingHours": "Tu-Sa 12:00-20:00; Su,Mo,PH off",
-     "cuisine": "coffee, cake, confectionery",
      "detailed": true
     }
    ]
@@ -1569,6 +2210,7 @@
      "name": "Bahalo",
      "lat": 48.13654,
      "lon": 11.55339,
+     "address": "Landwehrstraße 72",
      "openingHours": "Mo-Sa 12:00-01:00",
      "cuisine": "greek",
      "detailed": true
@@ -1845,7 +2487,8 @@
      "lat": 48.14218,
      "lon": 11.57014,
      "address": "Maximiliansplatz 5",
-     "website": "https://www.rote-sonne.com/"
+     "website": "https://www.rote-sonne.com/",
+     "wikidataId": "Q2168249"
     },
     {
      "id": "node/1135836178",

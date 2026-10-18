@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SEL",
- "fetchedAt": "2026-10-17T00:08:33.024Z",
+ "fetchedAt": "2026-10-18T17:02:54.626Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,14 +49,21 @@
      "lon": 126.99093,
      "address": "율곡로 99",
      "website": "https://www.cdg.go.kr/",
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q477157",
+     "kinds": [
+      "heritage",
+      "palace",
+      "unesco"
+     ]
     },
     {
      "id": "node/3841809478",
      "name": "혼천의",
      "lat": 37.57264,
      "lon": 126.97691,
-     "wikipediaCount": 48
+     "wikipediaCount": 48,
+     "wikidataId": "Q328720"
     },
     {
      "id": "relation/5501517",
@@ -65,21 +72,61 @@
      "lon": 126.9769,
      "website": "http://www.royalpalace.go.kr/",
      "openingHours": "Jan-Feb,Nov-Dec 09:00-17:00; Mar-May,Sep-Oct 09:00-18:00; Jun-Aug 09:00-18:30",
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q482485",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/19286505",
      "name": "종묘",
      "lat": 37.57476,
      "lon": 126.99407,
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q490497",
+     "kinds": [
+      "heritage",
+      "religious",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q494577",
+     "name": "Mavi Saray",
+     "localName": "Blue House",
+     "lat": 37.58669,
+     "lon": 126.97486,
+     "wikipediaCount": 42,
+     "wikidataId": "Q494577",
+     "kinds": [
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q465345",
+     "name": "Namdaemun",
+     "lat": 37.55997,
+     "lon": 126.97531,
+     "wikipediaCount": 38,
+     "wikidataId": "Q465345",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "relation/19175488",
      "name": "청계천공원",
      "lat": 37.56895,
      "lon": 126.99338,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q495437",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/26658458",
@@ -88,7 +135,12 @@
      "lon": 126.97505,
      "address": "세종대로 99",
      "website": "http://www.deoksugung.go.kr/",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q482631",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/16474080",
@@ -98,7 +150,40 @@
      "address": "남산공원길 105",
      "website": "https://www.seoultower.co.kr/",
      "openingHours": "10:00-23:00; Sa 10:00-00:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q69134",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q41114",
+     "name": "Ewha Kadın Üniversitesi",
+     "localName": "Ewha Womans University",
+     "lat": 37.5625,
+     "lon": 126.945,
+     "wikipediaCount": 28,
+     "wikidataId": "Q41114",
+     "kinds": [
+      "business",
+      "heritage",
+      "school",
+      "university"
+     ]
+    },
+    {
+     "id": "wikidata/Q20415",
+     "name": "Seul İstasyonu",
+     "localName": "Seoul Station",
+     "lat": 37.55472,
+     "lon": 126.97083,
+     "wikipediaCount": 26,
+     "wikidataId": "Q20415",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "way/380863257",
@@ -108,7 +193,12 @@
      "address": "창경궁로 185",
      "website": "https://cgg.cha.go.kr/agapp/main/index.do?siteCd=CGG",
      "openingHours": "Mo-Su 09:30-16:30",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q482852",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/14255571755",
@@ -117,7 +207,20 @@
      "lon": 126.96862,
      "address": "새문안로 45",
      "website": "https://royal.khs.go.kr/ROYAL/contents/R110000000.do",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q483291",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q485034",
+     "name": "Gwanghwamun",
+     "lat": 37.57604,
+     "lon": 126.97702,
+     "wikipediaCount": 20,
+     "wikidataId": "Q485034"
     },
     {
      "id": "way/353023147",
@@ -125,28 +228,146 @@
      "lat": 37.53345,
      "lon": 126.99752,
      "address": "우사단로 732-21",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q496515",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q482721",
+     "name": "Heunginjimun",
+     "lat": 37.57115,
+     "lon": 127.00964,
+     "wikipediaCount": 19,
+     "wikidataId": "Q482721",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "relation/17548771",
      "name": "서울한양도성",
      "lat": 37.57306,
      "lon": 126.9843,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q5472741",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q487036",
+     "name": "Myeongdong Katedrali",
+     "localName": "Myeongdong Cathedral",
+     "lat": 37.56333,
+     "lon": 126.98722,
+     "wikipediaCount": 17,
+     "wikidataId": "Q487036",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q497066",
+     "name": "Bağımsızlık Kapısı",
+     "localName": "Independence Gate",
+     "lat": 37.57241,
+     "lon": 126.95953,
+     "wikipediaCount": 14,
+     "wikidataId": "Q497066",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q5295847",
+     "name": "Dongdaemun Design Plaza",
+     "localName": "Dongdaemun Design Plaza & Park",
+     "lat": 37.5669,
+     "lon": 127.0094,
+     "wikipediaCount": 14,
+     "wikidataId": "Q5295847"
+    },
+    {
+     "id": "wikidata/Q137143",
+     "name": "Namyeong Station",
+     "lat": 37.54056,
+     "lon": 126.97139,
+     "wikipediaCount": 14,
+     "wikidataId": "Q137143",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "relation/5672803",
      "name": "광화문광장",
      "lat": 37.57274,
      "lon": 126.97674,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q5623300",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q488824",
+     "name": "Jogyesa",
+     "lat": 37.57391,
+     "lon": 126.9819,
+     "wikipediaCount": 11,
+     "wikidataId": "Q488824",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q34696",
+     "name": "Oksu Station",
+     "lat": 37.54061,
+     "lon": 127.01888,
+     "wikipediaCount": 11,
+     "wikidataId": "Q34696",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q623908",
+     "name": "Seoul City Hall",
+     "lat": 37.56641,
+     "lon": 126.97782,
+     "wikipediaCount": 11,
+     "wikidataId": "Q623908",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q625836",
+     "name": "Wongaksa Pagoda",
+     "lat": 37.5717,
+     "lon": 126.988,
+     "wikipediaCount": 11,
+     "wikidataId": "Q625836",
+     "kinds": [
+      "heritage",
+      "religious",
+      "tower"
+     ]
     },
     {
      "id": "node/2669684119",
      "name": "북촌한옥마을 ДЕРЕВНЯ",
      "lat": 37.58239,
      "lon": 126.98586,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q490981"
     },
     {
      "id": "way/78503350",
@@ -154,7 +375,8 @@
      "lat": 37.55935,
      "lon": 126.97744,
      "website": "http://www.namdaemunmarket.co.kr/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q494687"
     },
     {
      "id": "relation/11504980",
@@ -163,14 +385,24 @@
      "lon": 126.98827,
      "address": "종로 99",
      "website": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?VdkVgwKey=13,03540000,11&pageNo=5_2_1_0",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q483357",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/771236312",
      "name": "운현궁",
      "lat": 37.57618,
      "lon": 126.98712,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q490392",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/4665630597",
@@ -179,14 +411,19 @@
      "lon": 126.99448,
      "address": "퇴계로34길 28",
      "website": "https://www.hanokmaeul.or.kr/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q496420"
     },
     {
      "id": "node/7174513259",
      "name": "환구단",
      "lat": 37.56501,
      "lon": 126.97965,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q495655",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/608947587",
@@ -195,28 +432,36 @@
      "lon": 126.9651,
      "address": "송월1길 38",
      "website": "https://www.cha.go.kr/korea/heritage/search/Culresult_Db_View.jsp?mc=NS_04_03_01&VdkVgwKey=79,00900000,11",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q624321"
     },
     {
      "id": "node/3841809480",
      "name": "측우기",
      "lat": 37.57268,
      "lon": 126.97691,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q5094226"
     },
     {
      "id": "node/10689687870",
      "name": "사직단 전사청",
      "lat": 37.57575,
      "lon": 126.9669,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q491000",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/229891122",
      "name": "형제의 상",
      "lat": 37.53507,
      "lon": 126.97618,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q491940"
     },
     {
      "id": "way/463189325",
@@ -225,7 +470,11 @@
      "lon": 126.96802,
      "address": "새문안로 29",
      "website": "https://korean.visitkorea.or.kr/kor/bz15/where/where_tour.jsp?cid=945824",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12583523",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1456682034",
@@ -234,7 +483,12 @@
      "lon": 126.96744,
      "address": "청파로 447-1",
      "website": "https://www.yakhyeon.or.kr/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16093905",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/768500162",
@@ -243,21 +497,24 @@
      "lon": 126.99446,
      "address": "퇴계로36길 10",
      "website": "https://www.koreahouse.or.kr/en/main",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6615779"
     },
     {
      "id": "node/3841809481",
      "name": "앙부일구",
      "lat": 37.57271,
      "lon": 126.97691,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q31179914"
     },
     {
      "id": "node/6341282326",
      "name": "이재명의사의거터",
      "lat": 37.56423,
      "lon": 126.98648,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12612467"
     },
     {
      "id": "way/223434844",
@@ -265,7 +522,11 @@
      "lat": 37.57822,
      "lon": 127.00638,
      "address": "이화장1길 32",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12613243",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/611143901",
@@ -274,7 +535,11 @@
      "lon": 126.98382,
      "address": "북촌로11가길 49",
      "website": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?VdkVgwKey=31,00020000,11&pageNo=5_2_1_0",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18230786",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/646147127",
@@ -283,7 +548,40 @@
      "lon": 126.97255,
      "address": "정동길 41-11",
      "website": "https://www.deoksugung.go.kr/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16095015",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/611541494",
+     "name": "가회동백인제가옥",
+     "lat": 37.58071,
+     "lon": 126.98417,
+     "address": "북촌로7길 16",
+     "wikipediaCount": 1,
+     "wikidataId": "Q19657151",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/7293780360",
+     "name": "박태준 박사 찬송비",
+     "lat": 37.55543,
+     "lon": 126.97486,
+     "wikipediaCount": 1,
+     "wikidataId": "Q16176301"
+    },
+    {
+     "id": "way/369965841",
+     "name": "서울천년타임캡슐광장",
+     "lat": 37.55729,
+     "lon": 126.99391,
+     "address": "퇴계로34길 28",
+     "wikipediaCount": 1,
+     "wikidataId": "Q12601074"
     }
    ]
   },
@@ -296,7 +594,8 @@
      "name": "조선일보미술관",
      "lat": 37.5679,
      "lon": 126.97528,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q483924"
     },
     {
      "id": "relation/5501518",
@@ -304,7 +603,23 @@
      "lat": 37.58093,
      "lon": 126.97898,
      "website": "https://www.nfm.go.kr/",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q486449",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q484054",
+     "name": "Ulusal Modern ve Çağdaş Sanat Müzesi",
+     "localName": "National Museum of Modern and Contemporary Art, South Korea",
+     "lat": 37.5785,
+     "lon": 126.98,
+     "wikipediaCount": 19,
+     "wikidataId": "Q484054",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368871454",
@@ -314,7 +629,12 @@
      "address": "통일로 251",
      "website": "http://www.sscmc.or.kr/newhistory/index_culture.asp",
      "openingHours": "Tu-Su 09:00-18:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q488571",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/229891123",
@@ -324,7 +644,11 @@
      "address": "이태원로 29",
      "website": "https://www.warmemo.or.kr/",
      "openingHours": "Tu-Su 09:00-18:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q489764",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2270998",
@@ -333,7 +657,11 @@
      "lon": 126.97498,
      "address": "효자로 12",
      "website": "https://www.gogung.go.kr/main.do",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q335998",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/355665717",
@@ -343,7 +671,11 @@
      "address": "인사동길 35-4",
      "website": "https://www.kimchikan.com/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q625781",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/8448914",
@@ -352,7 +684,11 @@
      "lon": 126.97028,
      "address": "새문안로 55",
      "website": "http://www.museum.seoul.kr/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q484862",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/141779172",
@@ -362,7 +698,11 @@
      "address": "세종대로 152",
      "website": "https://ilmin.org/",
      "openingHours": "Tu-Su 11:00-19:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6000822",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/350284406",
@@ -370,22 +710,31 @@
      "lat": 37.53833,
      "lon": 126.99902,
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q487498",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/348489095",
      "name": "한국은행 화폐박물관",
-     "lat": 37.56204,
-     "lon": 126.98034,
+     "lat": 37.56206,
+     "lon": 126.98047,
      "website": "http://museum.bok.or.kr/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q128325"
     },
     {
      "id": "node/368735822",
      "name": "떡 박물관",
      "lat": 37.57491,
      "lon": 126.99058,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q625749",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/432721317",
@@ -393,7 +742,11 @@
      "lat": 37.58032,
      "lon": 126.98473,
      "address": "북촌로 39",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4986824",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/402093782",
@@ -403,7 +756,11 @@
      "address": "임정로 26",
      "website": "https://www.kimkoomuseum.org/main",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q483503",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368733960",
@@ -412,7 +769,11 @@
      "lon": 126.98524,
      "address": "북촌로 52",
      "website": "https://www.gahoemuseum.org/new",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5516945",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/301282717",
@@ -421,7 +782,11 @@
      "lon": 126.98328,
      "address": "북촌로5길 48",
      "website": "https://www.edumuseum.seoul.kr/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7451652",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/626112515",
@@ -430,7 +795,12 @@
      "lon": 126.97381,
      "address": "덕수궁길 61",
      "website": "https://sema.seoul.go.kr/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7451676",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/141957171",
@@ -440,7 +810,11 @@
      "address": "세종대로 198",
      "website": "https://www.much.go.kr/",
      "openingHours": "Mo-Su 10:00-18:00; We 10:00-21:00; Sa 10:00-21:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12592360",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/610146665",
@@ -450,7 +824,11 @@
      "address": "율곡로3길 87",
      "website": "https://artsonje.org/",
      "openingHours": "Tu-Su 00:00-19:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4801558",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/10718798",
@@ -459,7 +837,11 @@
      "lon": 126.97376,
      "address": "세종대로 99",
      "website": "https://www.mmca.go.kr/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q27207690",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/517933820",
@@ -469,7 +851,11 @@
      "address": "삼청로 18",
      "website": "https://kumhomuseum.com/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6443836",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/221429318",
@@ -478,7 +864,11 @@
      "lon": 126.97337,
      "address": "자하문로4길 21",
      "website": "https://daelimmuseum.org/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q55728978",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368735177",
@@ -487,7 +877,11 @@
      "lon": 126.9835,
      "address": "인사동11길 20",
      "website": "https://www.mokinmuseum.com/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11240953",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368725477",
@@ -496,7 +890,11 @@
      "lon": 126.98459,
      "address": "율곡로 49-4",
      "website": "http://www.savinamuseum.com/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7428260",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/313923592",
@@ -505,7 +903,11 @@
      "lon": 126.98183,
      "address": "북촌로5나길 2",
      "website": "https://www.wjmuseum.com/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q8035876",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3546635153",
@@ -514,21 +916,33 @@
      "lon": 127.00857,
      "address": "율곡로 283",
      "website": "https://www.museum.seoul.kr/scwm/NR_index.do",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q21060745",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/420335666",
      "name": "종이나라박물관",
      "lat": 37.5596,
      "lon": 127.00613,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7132596",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368735857",
      "name": "짚풀생활사박물관",
      "lat": 37.58493,
      "lon": 126.99962,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6940908",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/706804638",
@@ -536,7 +950,11 @@
      "lat": 37.54578,
      "lon": 126.96684,
      "website": "https://historymuseum.or.kr/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q60987108",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368734273",
@@ -544,7 +962,11 @@
      "lat": 37.55814,
      "lon": 126.98416,
      "website": "http://www.jculture.co.kr/museum/index1.htm",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q5104180",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/196065376",
@@ -552,7 +974,96 @@
      "lat": 37.57606,
      "lon": 126.95438,
      "address": "통일로 279-24",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q55729081",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/368632876",
+     "name": "국립서울과학관",
+     "lat": 37.58219,
+     "lon": 126.99736,
+     "wikipediaCount": 2,
+     "wikidataId": "Q10855565",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/979717526",
+     "name": "경찰박물관",
+     "lat": 37.57207,
+     "lon": 126.96222,
+     "address": "송월길 162",
+     "website": "https://www.policemuseum.go.kr/",
+     "openingHours": "Tu-Su 09:30-17:30",
+     "wikipediaCount": 1,
+     "wikidataId": "Q16094840",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/421742876",
+     "name": "국립현대미술관 서울관",
+     "lat": 37.57902,
+     "lon": 126.98071,
+     "address": "삼청로 30",
+     "website": "https://www.mmca.go.kr/",
+     "openingHours": "Th,Fr,Su-Tu 10:00-18:00; We,Sa 10:00-21:00"
+    },
+    {
+     "id": "node/921242698",
+     "name": "농업박물관",
+     "lat": 37.56669,
+     "lon": 126.96825,
+     "website": "http://www.agrimuseum.or.kr/",
+     "openingHours": "Tu-Su 09:30-17:30"
+    },
+    {
+     "id": "node/3547231812",
+     "name": "동대문운동장기념관",
+     "lat": 37.56767,
+     "lon": 127.01126,
+     "address": "을지로 281",
+     "website": "http://www.ddp.or.kr/page/171/detail?menuId=46",
+     "openingHours": "Mo-Su 10:00-19:00"
+    },
+    {
+     "id": "way/313913039",
+     "name": "바라캇서울",
+     "lat": 37.58091,
+     "lon": 126.98067,
+     "address": "삼청로 58-4",
+     "website": "https://www.barakat.kr/",
+     "openingHours": "Tu-Fr 10:00-18:00"
+    },
+    {
+     "id": "node/4809609624",
+     "name": "불교중앙박물관",
+     "lat": 37.5744,
+     "lon": 126.98212,
+     "address": "우정국로 55",
+     "website": "https://museum.buddhism.or.kr/",
+     "openingHours": "Tu-Su 10:00-18:00"
+    },
+    {
+     "id": "way/1054807928",
+     "name": "서울메트로미술관",
+     "lat": 37.57577,
+     "lon": 126.97384,
+     "website": "https://www.gwanghwasidae.kr/",
+     "openingHours": "Mo-Su 07:00-22:00"
+    },
+    {
+     "id": "way/223296622",
+     "name": "손기정기념관",
+     "lat": 37.55582,
+     "lon": 126.96466,
+     "website": "http://www.sonkeechung.com/",
+     "openingHours": "Tu-Su 10:00-18:00"
     }
    ]
   },
@@ -706,6 +1217,12 @@
      "lon": 127.01554
     },
     {
+     "id": "node/14292563866",
+     "name": "서울시내 조망점",
+     "lat": 37.59228,
+     "lon": 126.97109
+    },
+    {
      "id": "node/14145971182",
      "name": "서울의 밤풍경 성북동 조망점",
      "lat": 37.59157,
@@ -782,6 +1299,7 @@
      "website": "https://www.shilla.net/seoul/dining/viewDining.do?contId=KRN#ad-image-0",
      "openingHours": "Mo-Su 12:00-22:00",
      "cuisine": "korean",
+     "wikidataId": "Q84954881",
      "detailed": true
     },
     {

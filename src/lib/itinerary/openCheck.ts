@@ -9,6 +9,11 @@ export type OpenVerdict = "open" | "closed" | "unknown";
  * the day before count, and a visit may run into the next day.
  */
 export function openDuring(week: WeekSchedule, weekday: number, start: number, end: number): boolean {
+  return openSpan(week, weekday, start, end) !== null;
+}
+
+/** The opening span (minutes, relative to `weekday`'s midnight) that covers the whole visit, or null. */
+export function openSpan(week: WeekSchedule, weekday: number, start: number, end: number): { start: number; end: number } | null {
   const spans: Array<{ start: number; end: number }> = [];
   // The day before (spans past midnight), the day itself, and the next day (visits past midnight).
   for (const offset of [-1, 0, 1]) {
@@ -23,11 +28,22 @@ export function openDuring(week: WeekSchedule, weekday: number, start: number, e
     if (last && s.start <= last.end) last.end = Math.max(last.end, s.end);
     else merged.push({ ...s });
   }
-  return merged.some((s) => s.start <= start && end <= s.end);
+  return merged.find((s) => s.start <= start && end <= s.end) ?? null;
 }
 
 export function openVerdict(openingHours: string | undefined, weekday: number, start: number, end: number): OpenVerdict {
+  return openCheck(openingHours, weekday, start, end).verdict;
+}
+
+/** The verdict, and when the place closes after a visit it is surely open for. */
+export function openCheck(
+  openingHours: string | undefined,
+  weekday: number,
+  start: number,
+  end: number,
+): { verdict: OpenVerdict; closesAt: number | null } {
   const week = parseOpeningHours(openingHours);
-  if (!week) return "unknown";
-  return openDuring(week, weekday, start, end) ? "open" : "closed";
+  if (!week) return { verdict: "unknown", closesAt: null };
+  const span = openSpan(week, weekday, start, end);
+  return span ? { verdict: "open", closesAt: span.end } : { verdict: "closed", closesAt: null };
 }

@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "TAS",
- "fetchedAt": "2026-10-16T23:59:42.588Z",
+ "fetchedAt": "2026-10-18T16:54:02.540Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,60 +43,167 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q860952",
+     "name": "Taşkent Uluslararası Havalimanı",
+     "localName": "Tashkent International Airport",
+     "lat": 41.25786,
+     "lon": 69.28119,
+     "wikipediaCount": 42,
+     "wikidataId": "Q860952",
+     "kinds": [
+      "airport",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1421131",
+     "name": "Pakhtakor Markaziy Stadium",
+     "lat": 41.31552,
+     "lon": 69.26024,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1421131",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q3354568",
+     "name": "Nevaî Tiyatrosu",
+     "localName": "Navoi Theater",
+     "lat": 41.30917,
+     "lon": 69.27167,
+     "wikipediaCount": 17,
+     "wikidataId": "Q3354568",
+     "kinds": [
+      "business",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q3390317",
+     "name": "Mustaqillik Maydoni",
+     "lat": 41.3164,
+     "lon": 69.2668,
+     "wikipediaCount": 15,
+     "wikidataId": "Q3390317",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q569986",
+     "name": "Holy Assumption Cathedral Church",
+     "lat": 41.2908,
+     "lon": 69.27883,
+     "wikipediaCount": 12,
+     "wikidataId": "Q569986",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2942916",
+     "name": "Sacred Heart Cathedral",
+     "lat": 41.30556,
+     "lon": 69.29583,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2942916",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
      "id": "node/2128118534",
      "name": "Дизельная",
      "lat": 41.30548,
      "lon": 69.28042,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q403332"
     },
     {
      "id": "way/141175715",
      "name": "Knyaz Nikolay Romanov saroyi",
      "lat": 41.31435,
      "lon": 69.27057,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3361191",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/1141921741",
      "name": "Монумент \"Мужество\"",
      "lat": 41.3237,
      "lon": 69.27245,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q28934106",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/107285057",
      "name": "мавзолей Юнусх Хана",
      "lat": 41.32309,
      "lon": 69.25739,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1707676",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1925067760",
      "name": "Тарас Шевченко",
      "lat": 41.30341,
      "lon": 69.27545,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4343375",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/377979982",
      "name": "Amir Temur",
      "lat": 41.31118,
      "lon": 69.27976,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q21661009",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/107285056",
      "name": "мавзолей Колдергоч бея",
      "lat": 41.32322,
      "lon": 69.25892,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q2121368",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/107285055",
      "name": "Мавзолей Шейха Ховенди ат Тахура (Шейхантаура)",
      "lat": 41.32288,
      "lon": 69.25897,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q18604489",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/102781576",
@@ -104,7 +211,12 @@
      "lat": 41.30751,
      "lon": 69.31456,
      "address": "Botkin ko'chasi 106",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4500681",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/83581462",
@@ -113,14 +225,16 @@
      "lat": 41.3096,
      "lon": 69.27985,
      "address": "Amir Temur shoh ko'chasi",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q4058830"
     },
     {
      "id": "way/977086249",
      "name": "Архитектурно-скульптурный комплекс «Мужество»",
      "lat": 41.32387,
      "lon": 69.27239,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q97188910"
     },
     {
      "id": "way/32014598",
@@ -171,6 +285,12 @@
      "name": "TOKYO ТОКИО",
      "lat": 41.31821,
      "lon": 69.28664
+    },
+    {
+     "id": "node/14292033201",
+     "name": "Tut daraxti +350 yosh",
+     "lat": 41.30861,
+     "lon": 69.26803
     },
     {
      "id": "node/13521119640",
@@ -237,6 +357,18 @@
      "name": "Профессор М.Ф. Мирочник",
      "lat": 41.30924,
      "lon": 69.30046
+    },
+    {
+     "id": "node/8221337120",
+     "name": "Табличка Якубу Коласу",
+     "lat": 41.31959,
+     "lon": 69.29963
+    },
+    {
+     "id": "way/204051942",
+     "name": "Урда мост",
+     "lat": 41.31989,
+     "lon": 69.2673
     }
    ]
   },
@@ -250,7 +382,13 @@
      "lat": 41.31368,
      "lon": 69.27899,
      "address": "Amir Temur shoh ko'chasi 1",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q4120971",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/471761355",
@@ -260,7 +398,11 @@
      "address": "Amir Temur shoh ko'chasi 16",
      "website": "http://www.stateartmuseum.uz/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q4146885",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/31974956",
@@ -270,7 +412,11 @@
      "address": "Sharof Rashidov ko'chasi 3",
      "website": "https://www.history-museum.uz/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1835285",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/734882527",
@@ -279,14 +425,22 @@
      "lon": 69.25959,
      "address": "Rakatboshi ko'chasi 15/a",
      "openingHours": "Mo-Su 09:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3330166",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2012720166",
      "name": "Olimpiya shon-shuhrati muzeyi",
      "lat": 41.32468,
      "lon": 69.27112,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q12829077",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/44864779",
@@ -295,7 +449,11 @@
      "lon": 69.25986,
      "address": "Afrosiyob ko'chasi",
      "openingHours": "8:30-21:00; Mo off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12829268",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/135401603",
@@ -303,7 +461,11 @@
      "lat": 41.29592,
      "lon": 69.29117,
      "openingHours": "09:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1283029",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6520828985",
@@ -311,14 +473,24 @@
      "lat": 41.32004,
      "lon": 69.298,
      "openingHours": "Mo-Fr 09:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q21661032",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1249961409",
      "name": "Дом-музей Тамары Ханум",
      "lat": 41.31945,
      "lon": 69.30145,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q21663575",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4149393593",
@@ -328,7 +500,11 @@
      "address": "Amir Temur shoh ko'chasi 13",
      "website": "https://politomuseum.uz/",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q24089737",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/128164594",
@@ -337,21 +513,32 @@
      "lon": 69.27126,
      "address": "Buyuk Turon ko'chasi 2",
      "openingHours": "Tu-Sa 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q25527827"
     },
     {
      "id": "node/10740639385",
      "name": "G`afur G`ulom nomli uy-muzeyi",
      "lat": 41.30666,
      "lon": 69.24844,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q19615120",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1780600187",
      "name": "Muxtor Ashrafiy uy-muzeyi",
      "lat": 41.31425,
      "lon": 69.29047,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12818661",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5012624322",
@@ -467,6 +654,18 @@
      "name": "РКБ (Республиканская клиническая больница) N 1",
      "lat": 41.30206,
      "lon": 69.28341
+    },
+    {
+     "id": "relation/3412518",
+     "name": "Центр современного искусства",
+     "lat": 41.30536,
+     "lon": 69.28048
+    },
+    {
+     "id": "node/4789828981",
+     "name": "Юнуса Раджаби музей",
+     "lat": 41.3048,
+     "lon": 69.26079
     }
    ]
   },
@@ -595,6 +794,7 @@
      "website": "http://www.golubiekupola.com/",
      "openingHours": "Mo-Su 11:00-23:00",
      "cuisine": "fine dining",
+     "wikidataId": "Q122676623",
      "detailed": true
     },
     {

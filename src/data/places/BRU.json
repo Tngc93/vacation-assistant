@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BRU",
- "fetchedAt": "2026-10-16T23:22:25.913Z",
+ "fetchedAt": "2026-10-18T16:13:04.917Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -47,7 +47,24 @@
      "name": "Manneken Pis",
      "lat": 50.84499,
      "lon": 4.34999,
-     "wikipediaCount": 63
+     "wikipediaCount": 63,
+     "wikidataId": "Q152072",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q215429",
+     "name": "Grand-Place",
+     "lat": 50.84671,
+     "lon": 4.35254,
+     "wikipediaCount": 55,
+     "wikidataId": "Q215429",
+     "kinds": [
+      "heritage",
+      "square",
+      "unesco"
+     ]
     },
     {
      "id": "way/13431536",
@@ -56,7 +73,12 @@
      "lon": 4.36005,
      "website": "https://www.cathedralisbruxellensis.be/",
      "openingHours": "Mo-Fr 07:30-18:00; Sa 07:30-15:30; Su 14:00-18:00",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q269654",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/3299902",
@@ -64,14 +86,24 @@
      "lat": 50.84193,
      "lon": 4.36245,
      "website": "https://www.monarchie.be/en/heritage/royal-palace-of-brussels",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q635307",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/1126164595",
      "name": "Hôtel de Ville de Bruxelles - Stadhuis van Brussel",
      "lat": 50.8465,
      "lon": 4.35177,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1255327",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/169173072",
@@ -79,7 +111,71 @@
      "lat": 50.83667,
      "lon": 4.35162,
      "openingHours": "Mo-Fr 08:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q850537",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q800587",
+     "name": "Brüksel Güney Garı",
+     "localName": "Brussels-South railway station",
+     "lat": 50.83528,
+     "lon": 4.33583,
+     "wikipediaCount": 24,
+     "wikidataId": "Q800587",
+     "kinds": [
+      "office",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q551479",
+     "name": "Royal Theatre of La Monnaie",
+     "lat": 50.84959,
+     "lon": 4.35425,
+     "wikipediaCount": 22,
+     "wikidataId": "Q551479",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q763565",
+     "name": "Chapel of the Resurrection, Brussels",
+     "lat": 50.84139,
+     "lon": 4.37861,
+     "wikipediaCount": 19,
+     "wikidataId": "Q763565",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2447775",
+     "name": "Great Synagogue of Europe",
+     "lat": 50.83889,
+     "lon": 4.355,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2447775",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q421992",
+     "name": "Espace Léopold",
+     "lat": 50.83861,
+     "lon": 4.37528,
+     "wikipediaCount": 16,
+     "wikidataId": "Q421992"
     },
     {
      "id": "way/22407928",
@@ -87,21 +183,110 @@
      "lat": 50.84033,
      "lon": 4.35624,
      "openingHours": "Mo-Fr 09:00-18:30; Sa,Su 10:00-19:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2002492",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1491935",
+     "name": "Royal Saint-Hubert Galleries",
+     "lat": 50.84778,
+     "lon": 4.355,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1491935",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1816400",
+     "name": "South Tower",
+     "lat": 50.83806,
+     "lon": 4.33778,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1816400",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1865794",
+     "name": "Mont des Arts - Kunstberg",
+     "lat": 50.84421,
+     "lon": 4.35761,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1865794",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q726984",
+     "name": "Church of Our Lady of the Chapel",
+     "lat": 50.84153,
+     "lon": 4.35111,
+     "wikipediaCount": 12,
+     "wikidataId": "Q726984",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/475214141",
      "name": "Colonne du Congrès - Congreskolom",
      "lat": 50.85011,
      "lon": 4.36345,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q600633"
+    },
+    {
+     "id": "wikidata/Q1391752",
+     "name": "UCLouvain Saint-Louis – Bruxelles",
+     "lat": 50.85361,
+     "lon": 4.36111,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1391752",
+     "kinds": [
+      "business",
+      "university"
+     ]
+    },
+    {
+     "id": "wikidata/Q2285837",
+     "name": "Centre for Fine Arts",
+     "lat": 50.84371,
+     "lon": 4.35977,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2285837",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2636175",
+     "name": "Madou Plaza Tower",
+     "lat": 50.84944,
+     "lon": 4.37,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2636175",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "way/13494623",
      "name": "Bourse - Beurs",
      "lat": 50.84795,
      "lon": 4.35043,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q28485845",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/3502984",
@@ -109,70 +294,112 @@
      "lat": 50.83879,
      "lon": 4.35748,
      "website": "https://ccegmont.be/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2429651",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/243559501",
      "name": "Église Saint-Jean-Baptiste-au-Béguinage - Sint-Jan Baptist ten Begijnhofkerk",
      "lat": 50.85273,
      "lon": 4.35046,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q535244",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/28302044",
      "name": "Église Sainte-Catherine - Sint-Katelijnekerk",
      "lat": 50.85081,
      "lon": 4.34861,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1903443",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/225779391",
      "name": "Palais des Académies - Academiënpaleis",
      "lat": 50.84215,
      "lon": 4.36556,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2616099",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/399754753",
      "name": "Monument à l'Infanterie Belge - Monument voor de Belgische Infanterie",
      "lat": 50.83789,
      "lon": 4.35227,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6029097",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1019259724",
      "name": "Palais de Charles de Lorraine - Paleis van Karel van Lotharingen",
      "lat": 50.84299,
      "lon": 4.35706,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2628206",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/3502982",
      "name": "Palais du Comte de Flandre - Paleis van de Graaf van Vlaanderen",
      "lat": 50.84128,
      "lon": 4.35881,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q15939973",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/244850905",
      "name": "Tour Noire - Zwarte Toren",
      "lat": 50.8508,
      "lon": 4.34982,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3533138",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/129463929",
      "name": "Ascenseurs Poelaert - Poelaertliften",
      "lat": 50.838,
      "lon": 4.35106,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q85646747"
     },
     {
      "id": "way/33739415",
      "name": "Pro Patria",
      "lat": 50.85171,
      "lon": 4.35634,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3323275"
     },
     {
      "id": "way/1078069094",
@@ -180,56 +407,81 @@
      "lat": 50.85126,
      "lon": 4.34612,
      "website": "https://www.bellone.be/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3206642",
+     "kinds": [
+      "heritage",
+      "performingArts"
+     ]
     },
     {
      "id": "way/306856681",
      "name": "Galerie de la Reine - Koninginnegalerij",
      "lat": 50.8473,
      "lon": 4.35462,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2285205"
     },
     {
      "id": "way/306856680",
      "name": "Galerie du Roi - Koningsgalerij",
      "lat": 50.84819,
      "lon": 4.35536,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3094673"
     },
     {
      "id": "way/244064794",
      "name": "Palais de l'Industrie Nationale - Paleis voor de Nationale Nijverheid",
      "lat": 50.8424,
      "lon": 4.35692,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q110465791",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/138696691",
      "name": "Palais du marquis d'Assche - Paleis van de Markies van Assche",
      "lat": 50.84323,
      "lon": 4.37237,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q18286471",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/119630814",
      "name": "Frédéric de Mérode",
      "lat": 50.85146,
      "lon": 4.3561,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3323252"
     },
     {
      "id": "way/257712474",
      "name": "Hôtel de Roest d'Alkemade",
      "lat": 50.84527,
      "lon": 4.34936,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42416686",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/119630808",
      "name": "Jenneval",
      "lat": 50.85196,
      "lon": 4.35658,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3323413",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/227681451",
@@ -255,6 +507,12 @@
      "name": "Hôtel Belle-Vue",
      "lat": 50.84262,
      "lon": 4.36039
+    },
+    {
+     "id": "node/6942666188",
+     "name": "I♥SJTN",
+     "lat": 50.8493,
+     "lon": 4.36951
     }
    ]
   },
@@ -263,13 +521,28 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q377500",
+     "name": "Royal Museums of Fine Arts of Belgium",
+     "lat": 50.84168,
+     "lon": 4.35824,
+     "wikipediaCount": 32,
+     "wikidataId": "Q377500",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
      "id": "way/87493075",
      "name": "Centre Belge de la Bande Dessinée - Belgisch Stripcentrum",
      "lat": 50.85123,
      "lon": 4.36013,
      "website": "https://www.comicscenter.net/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q815542",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/31500439",
@@ -278,7 +551,11 @@
      "lon": 4.35909,
      "website": "https://www.mim.be/",
      "openingHours": "Tu-Fr 09:30-17:00; PH,Sa,Su 10:00-17:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1131318",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9026522736",
@@ -287,7 +564,11 @@
      "lon": 4.3588,
      "website": "https://www.musee-magritte-museum.be/",
      "openingHours": "Tu-Fr 10:00-17:00; Sa,Su 11:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q943581",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9385524853",
@@ -296,7 +577,11 @@
      "lon": 4.34492,
      "website": "https://www.hallegatemuseum.be/",
      "openingHours": "Mo-Fr 09:30-17:00; Sa,Su 10:00-17:00; PH off",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2988142",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9704161376",
@@ -305,7 +590,23 @@
      "lon": 4.35278,
      "website": "https://www.brusselscitymuseum.brussels/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q968055",
+     "kinds": [
+      "museum",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1165167",
+     "name": "Jewish Museum of Belgium",
+     "lat": 50.8408,
+     "lon": 4.3532,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1165167",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2514258897",
@@ -314,7 +615,11 @@
      "lon": 4.36069,
      "website": "https://belvue.be/",
      "openingHours": "Mo off; Tu-Fr 09:00-17:00; Sa-Su 10:00-18:00; Jul-Aug Tu-Fr 10:00-18:00; Jan 01 off; Dec 24 09:00-16:00; Dec 25 off; Dec 31 09:00-16:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q728437",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2583649779",
@@ -323,7 +628,12 @@
      "lon": 4.36993,
      "website": "http://www.charliermuseum.be/",
      "openingHours": "Mo-Th 12:00-17:00; Fr 10:00-13:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q256200",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1078916006",
@@ -332,7 +642,11 @@
      "lon": 4.34997,
      "website": "https://choco-story-brussels.be/",
      "openingHours": "Mo-Su,PH 10:00-16:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q11775274",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1755861324",
@@ -341,7 +655,8 @@
      "lon": 4.37433,
      "website": "https://visiting.europarl.europa.eu/en/visitor-offer/brussels/parlamentarium",
      "openingHours": "Mo 13:00-18:00; Tu-Fr 09:00-18:00; Sa,Su 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q8062880"
     },
     {
      "id": "node/9026522738",
@@ -349,7 +664,12 @@
      "lat": 50.84289,
      "lon": 4.35976,
      "website": "https://www.coudenberg.com/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1131821",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/3860518453",
@@ -358,7 +678,12 @@
      "lon": 4.36014,
      "website": "https://cinematek.be/",
      "openingHours": "Mo,Tu,We,Fr 17:30-21:30+; Th,Su 14:30-21:30+; Sa 16:30-21:30+; PH Mo,Tu,We,Fr 17:30-21:30+; PH Th,Su 14:30-21:30+; PH Sa 16:30-21:30+",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2419294",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/3506769937",
@@ -367,7 +692,11 @@
      "lon": 4.3572,
      "website": "https://www.nbbmuseum.be/",
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q19974092",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/236193520",
@@ -376,7 +705,12 @@
      "lon": 4.37571,
      "website": "https://www.fine-arts-museum.be/en/museums/musee-wiertz-museum",
      "openingHours": "off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q488688",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/9315005837",
@@ -385,7 +719,11 @@
      "lon": 4.35045,
      "website": "https://www.brusselsmuseums.be/en/museums/bruxella-1238",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1937507",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/1054279810",
@@ -394,7 +732,11 @@
      "lon": 4.33538,
      "website": "https://www.lafonderie.be/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q20706201",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1035986134",
@@ -403,7 +745,11 @@
      "lon": 4.34376,
      "website": "https://mmm.brussels/",
      "openingHours": "Tu-Th 10:00-17:00; Fr 10:00-19:00; Sa,Su 12:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q84737703",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3859789657",
@@ -412,7 +758,11 @@
      "lon": 4.35799,
      "website": "https://www.fine-arts-museum.be/en/museums/musee-fin-de-siecle-museum",
      "openingHours": "off \"Closed for renovation\"",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q17354571",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1009171340",
@@ -421,7 +771,11 @@
      "lon": 4.35189,
      "website": "https://www.fashionandlacemuseum.brussels/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2193737",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12448693822",
@@ -430,7 +784,11 @@
      "lon": 4.32792,
      "website": "http://www.museumresistance.be/",
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6974517",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3859789659",
@@ -439,7 +797,11 @@
      "lon": 4.35776,
      "website": "https://www.fine-arts-museum.be/en/museums/musee-oldmasters-museum",
      "openingHours": "Tu-Fr 10:00-17:00; Sa,Su 11:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3330782",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3862188901",
@@ -447,7 +809,11 @@
      "lat": 50.85085,
      "lon": 4.36001,
      "website": "https://www.marcsleen.be/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1846894",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2514192428",
@@ -456,7 +822,11 @@
      "lon": 4.35534,
      "website": "http://www.aml-cfwb.be/",
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q96998633",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3860512418",
@@ -465,7 +835,11 @@
      "lon": 4.34643,
      "website": "https://www.artetmarges.be/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q23893732",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3859757967",
@@ -474,7 +848,11 @@
      "lon": 4.35604,
      "website": "https://www.brussels-comics-figurines-museum.be/",
      "openingHours": "Th-Mo 10:30-18:00; Jul-Aug Mo-Su 10:30-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3328436",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2509496179",
@@ -483,7 +861,11 @@
      "lon": 4.35154,
      "website": "http://mbfm.be/",
      "openingHours": "Tu-Sa 13:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16665619",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6222623824",
@@ -492,7 +874,11 @@
      "lon": 4.35559,
      "website": "https://www.m-e-m.be/",
      "openingHours": "Mo,Th,Fr 14:00-19:00; Sa,Su 11:00-17:30",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16665628",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3862380057",
@@ -501,7 +887,11 @@
      "lon": 4.33884,
      "website": "https://www.sewermuseum.brussels/",
      "openingHours": "Tu-Su 10:00-17:00; Jan 01,May 01,Nov 01,Nov 11,Dec 25 off; Dec 24 10:00-16:00; Dec 31 10:00-16:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q23893729",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2506176872",
@@ -510,7 +900,11 @@
      "lon": 4.34901,
      "website": "https://www.amvb.be/",
      "openingHours": "Mo-Fr 09:00-16:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2860524",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11174383235",
@@ -519,7 +913,11 @@
      "lon": 4.35067,
      "website": "https://www.belgianbeerworld.be/",
      "openingHours": "Mo-Su 09:30-18:00; Jan 1 off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q112161617",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/8391808859",
@@ -528,7 +926,107 @@
      "lon": 4.35639,
      "website": "https://www.kbr.be/museum/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q99521191",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/789296064",
+     "name": "Musée Bruxellois de la Gueuze - Brussels Museum van de Geuze",
+     "lat": 50.84155,
+     "lon": 4.3358,
+     "website": "https://www.cantillon.be/",
+     "openingHours": "Mo-Sa 10:00-17:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q2776372",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/227676676",
+     "name": "Musée d’Art Spontané - Museum voor Spontane Kunst",
+     "lat": 50.86037,
+     "lon": 4.37,
+     "website": "https://artsetpublics.be/musees/musee-art-spontane",
+     "wikipediaCount": 2,
+     "wikidataId": "Q3329651",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2659563272",
+     "name": "Musée du CPAS de Bruxelles - Museum van het OCMW van Brussel",
+     "lat": 50.83534,
+     "lon": 4.34725,
+     "website": "https://cpas-ocmwmuseum.be/",
+     "wikipediaCount": 2,
+     "wikidataId": "Q23893733",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9930114873",
+     "name": "Musée des Arbalétriers",
+     "lat": 50.8418,
+     "lon": 4.36053,
+     "website": "https://www.arbaletriers-saintgeorges.be/le-musee",
+     "openingHours": "Tu 13:00-17:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q83811593"
+    },
+    {
+     "id": "node/3860862304",
+     "name": "Musée des Brasseurs belges - Museum van de Belgische Brouwers",
+     "lat": 50.84625,
+     "lon": 4.35253,
+     "website": "https://beermuseum.be/",
+     "openingHours": "Mo-Tu off; We-Th 13:00-17:00; Fr 11:00-17:00; Sa 12:00-17:00; Su off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q29534172",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3862253611",
+     "name": "Imprimarium",
+     "lat": 50.84362,
+     "lon": 4.35527,
+     "website": "https://www.kbr.be/fr/musee-de-limprimerie/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q23893731",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/5055592837",
+     "name": "MoMuse",
+     "lat": 50.85781,
+     "lon": 4.33798,
+     "website": "https://www.momuse.be/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q29957439",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/257573031",
+     "name": "Musée de l'Église orthodoxe - Museum van de orthodoxe Kerk",
+     "lat": 50.84159,
+     "lon": 4.34472,
+     "website": "http://www.orthodoxia.be/FRbisdom/09museum.html",
+     "wikipediaCount": 1,
+     "wikidataId": "Q23893734",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -746,6 +1244,7 @@
      "website": "https://brasseriehorta.be/",
      "openingHours": "Tu-Su 10:00-18:00",
      "cuisine": "belgian",
+     "wikidataId": "Q134271694",
      "detailed": true
     },
     {
@@ -1183,6 +1682,7 @@
      "website": "https://www.alabecasse.com/",
      "openingHours": "Mo-Su 11:00-24:00",
      "cuisine": "regional",
+     "wikidataId": "Q112623936",
      "detailed": true
     },
     {
@@ -1193,6 +1693,7 @@
      "website": "https://www.billie.brussels/",
      "openingHours": "Mo-We 11:00-01:00; Th 11:00-02:00; Fr-Sa 11:00-03:00; Su 11:00-01:00",
      "cuisine": "spaghetti bolognese",
+     "wikidataId": "Q42418063",
      "detailed": true
     },
     {
@@ -1223,6 +1724,7 @@
      "website": "https://www.legrandcafe.be/",
      "openingHours": "Mo-Su 10:00-00:00",
      "cuisine": "belgian",
+     "wikidataId": "Q16507178",
      "detailed": true
     },
     {
@@ -1272,6 +1774,7 @@
      "lon": 4.35627,
      "website": "https://www.alamortsubite.com/en",
      "openingHours": "Mo-Sa 11:00-01:00; Su 12:00-24:00",
+     "wikidataId": "Q27643042",
      "detailed": true
     },
     {
@@ -1380,6 +1883,7 @@
      "lon": 4.34198,
      "website": "https://walviscafe.com/",
      "openingHours": "Mo-Fr 09:00-24:00; Sa 10:00-24:00; Su 10:00-18:00",
+     "wikidataId": "Q130753245",
      "detailed": true
     },
     {
@@ -1476,6 +1980,7 @@
      "lon": 4.34897,
      "website": "https://www.madamemoustache.be/",
      "openingHours": "Mo off; Tu-Sa 20:00-04:00; Su off",
+     "wikidataId": "Q42416762",
      "detailed": true
     },
     {
@@ -1506,14 +2011,16 @@
      "name": "C12",
      "lat": 50.84608,
      "lon": 4.3561,
-     "website": "https://c12space.com/"
+     "website": "https://c12space.com/",
+     "wikidataId": "Q121298080"
     },
     {
      "id": "node/12140099647",
      "name": "Fuse",
      "lat": 50.83536,
      "lon": 4.34476,
-     "website": "https://fuse.be/"
+     "website": "https://fuse.be/",
+     "wikidataId": "Q3091103"
     },
     {
      "id": "node/6254463049",
@@ -1527,7 +2034,8 @@
      "name": "Mirano Brussels",
      "lat": 50.84934,
      "lon": 4.37143,
-     "website": "https://www.miranobrussels.com/"
+     "website": "https://www.miranobrussels.com/",
+     "wikidataId": "Q3224581"
     },
     {
      "id": "node/12551469672",
@@ -1541,7 +2049,8 @@
      "name": "UMI",
      "lat": 50.84593,
      "lon": 4.35313,
-     "website": "https://umibrussels.art/"
+     "website": "https://umibrussels.art/",
+     "wikidataId": "Q123256011"
     },
     {
      "id": "node/11734945055",

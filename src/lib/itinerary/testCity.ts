@@ -15,8 +15,9 @@ export const SIGHTS: PlanPlace[] = AREAS.flatMap((area, a) =>
     lat: area.lat + (i % 5) * 0.0008,
     lon: area.lon + Math.floor(i / 5) * 0.0012 + (i % 5) * 0.0004,
     category,
-    // Area 0 holds the most important sight; counts never tie.
-    wikipediaCount: 90 - a * 10 - i,
+    // Well-known places in every area (area 0 holds the best known); counts never tie and stay under the 60 of a long
+    // landmark visit.
+    wikipediaCount: 50 - i * 3 - a,
     address: `Street ${a}-${i}`,
   })),
 );

@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "LIS",
- "fetchedAt": "2026-10-16T23:20:17.343Z",
+ "fetchedAt": "2026-10-18T16:08:30.914Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,12 +43,44 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q272781",
+     "name": "Jerónimos Manastırı",
+     "localName": "Jerónimos Monastery",
+     "lat": 38.69785,
+     "lon": -9.2056,
+     "wikipediaCount": 52,
+     "wikidataId": "Q272781",
+     "kinds": [
+      "heritage",
+      "religious",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q432290",
+     "name": "Lizbon Katedrali",
+     "localName": "Lisbon Cathedral",
+     "lat": 38.70985,
+     "lon": -9.13298,
+     "wikipediaCount": 31,
+     "wikidataId": "Q432290",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
      "id": "way/677181958",
      "name": "Ticaret Meydanı",
      "localName": "Praça do Comércio",
      "lat": 38.70761,
      "lon": -9.13655,
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q999002",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "way/1382432568",
@@ -58,7 +90,25 @@
      "address": "Rua de Santa Cruz do Castelo",
      "website": "https://www.castelodesaojorge.pt/",
      "openingHours": "Mo-Su 09:00-21:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q636780",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q804032",
+     "name": "Baixa Pombalina",
+     "localName": "Lisbon Baixa",
+     "lat": 38.71341,
+     "lon": -9.13876,
+     "wikipediaCount": 26,
+     "wikidataId": "Q804032",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/98656587",
@@ -68,14 +118,34 @@
      "address": "Rua das Janelas Verdes 59",
      "website": "http://museudearteantiga.pt/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q212459",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/115238861",
      "name": "Elevador de Santa Justa",
      "lat": 38.71212,
      "lon": -9.13938,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q168001",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q99636",
+     "name": "Ascensor da Glória",
+     "lat": 38.71611,
+     "lon": -9.1425,
+     "wikipediaCount": 23,
+     "wikidataId": "Q99636",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/9253917",
@@ -85,7 +155,27 @@
      "address": "Campo de Santa Clara",
      "website": "https://panteaonacional.gov.pt/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1601019",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1464499",
+     "name": "São Bento Sarayı",
+     "localName": "São Bento Palace",
+     "lat": 38.7125,
+     "lon": -9.15361,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1464499",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace",
+      "religious"
+     ]
     },
     {
      "id": "relation/3310877",
@@ -93,14 +183,39 @@
      "lat": 38.71473,
      "lon": -9.12748,
      "address": "Largo de São Vicente",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1776168",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/1317749306",
      "name": "Praça Dom Pedro IV",
      "lat": 38.71377,
      "lon": -9.13934,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1549270",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1146936",
+     "name": "Teatro Nacional de São Carlos",
+     "lat": 38.70944,
+     "lon": -9.14167,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1146936",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/96359439",
@@ -109,28 +224,192 @@
      "lon": -9.16055,
      "address": "Praça da Estrela, 12",
      "openingHours": "Mo-Su 09:00-11:30, 15:00-16:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2657972",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/41683195",
      "name": "Arco do Triunfo da Rua Augusta",
      "lat": 38.70844,
      "lon": -9.13682,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q637590",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q790492",
+     "name": "Avenida da Liberdade",
+     "lat": 38.71957,
+     "lon": -9.14531,
+     "wikipediaCount": 17,
+     "wikidataId": "Q790492",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1470414",
+     "name": "Carmo Rahibe Manastırı",
+     "localName": "Carmo Convent",
+     "lat": 38.71222,
+     "lon": -9.14,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1470414",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q431458",
+     "name": "Rossio railway station",
+     "lat": 38.71472,
+     "lon": -9.14222,
+     "wikipediaCount": 17,
+     "wikidataId": "Q431458",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1078864",
+     "name": "São Roque Kilisesi",
+     "localName": "Igreja de São Roque",
+     "lat": 38.71363,
+     "lon": -9.14349,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1078864",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q959567",
+     "name": "Praça dos Restauradores",
+     "localName": "Restauradores Square",
+     "lat": 38.71583,
+     "lon": -9.14167,
+     "wikipediaCount": 15,
+     "wikidataId": "Q959567",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1939953",
+     "name": "Ribeira Palace",
+     "lat": 38.70684,
+     "lon": -9.13704,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1939953",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2034183",
+     "name": "Edward VII Park",
+     "lat": 38.72825,
+     "lon": -9.15283,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2034183"
+    },
+    {
+     "id": "wikidata/Q1305091",
+     "name": "Praça da Figueira",
+     "lat": 38.71374,
+     "lon": -9.13787,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1305091",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q601430",
+     "name": "Chiado",
+     "lat": 38.71056,
+     "lon": -9.14222,
+     "wikipediaCount": 13,
+     "wikidataId": "Q601430"
     },
     {
      "id": "way/1378977865",
      "name": "Elevador da Bica",
      "lat": 38.70977,
      "lon": -9.14625,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q99630",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3113484",
+     "name": "Lisbon Synagogue",
+     "lat": 38.7203,
+     "lon": -9.1532,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3113484",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1807096",
+     "name": "Marquess of Pombal Square",
+     "lat": 38.72528,
+     "lon": -9.15,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1807096",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q116125",
+     "name": "Teatro Nacional D. Maria II",
+     "lat": 38.71481,
+     "lon": -9.13979,
+     "wikipediaCount": 13,
+     "wikidataId": "Q116125",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1638625",
+     "name": "Braganza Hanedanı Kralıyet Panteonu",
+     "localName": "Pantheon of the House of Braganza",
+     "lat": 38.71478,
+     "lon": -9.12694,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1638625"
     },
     {
      "id": "way/1378960265",
      "name": "Elevador do Lavra",
      "lat": 38.71824,
      "lon": -9.14099,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q99642",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/96319696",
@@ -139,14 +418,20 @@
      "lon": -9.13366,
      "address": "Largo da Sé",
      "openingHours": "Mo-Su 08:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2976487",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/5470684978",
      "name": "Tipuana",
      "lat": 38.7069,
      "lon": -9.15456,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q732394"
     },
     {
      "id": "way/96628628",
@@ -154,7 +439,11 @@
      "lat": 38.70913,
      "lon": -9.13265,
      "address": "Rua dos Bacalhoeiros 10-10F",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2700618",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/96758903",
@@ -162,7 +451,12 @@
      "lat": 38.71188,
      "lon": -9.13031,
      "address": "Largo de Santa Luzia",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q5994160",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/19438496",
@@ -170,7 +464,12 @@
      "lat": 38.72346,
      "lon": -9.13829,
      "address": "Paço da Rainha 33",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q4885138",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/12988834",
@@ -178,7 +477,13 @@
      "lat": 38.707,
      "lon": -9.17036,
      "address": "Largo das Necessidades",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q11336481",
+     "kinds": [
+      "heritage",
+      "palace",
+      "religious"
+     ]
     },
     {
      "id": "way/150216146",
@@ -187,7 +492,11 @@
      "lon": -9.15207,
      "address": "Rua da Escola Politécnica 137",
      "website": "https://www.incm.pt/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q592584",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/155449351",
@@ -196,7 +505,11 @@
      "lon": -9.14616,
      "website": "https://ccm.marinha.pt/pt/dfernando",
      "openingHours": "Mo-Su 09:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5289729",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1413022125",
@@ -205,7 +518,13 @@
      "lon": -9.1486,
      "address": "Rua Barata Salgueiro 39",
      "website": "https://www.cinemateca.pt/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1092464",
+     "kinds": [
+      "business",
+      "cinema",
+      "museum"
+     ]
     },
     {
      "id": "relation/3324508",
@@ -213,7 +532,12 @@
      "lat": 38.71714,
      "lon": -9.13086,
      "address": "Largo da Graça",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q17117463",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/1402729",
@@ -221,7 +545,11 @@
      "lat": 38.71932,
      "lon": -9.14569,
      "address": "Rua do Salitre 1",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q959578",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/96359446",
@@ -231,7 +559,12 @@
      "address": "Largo do Chiado 16",
      "website": "https://www.igrejadoloreto.pt/",
      "openingHours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-21:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1657876",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/11699003",
@@ -241,7 +574,15 @@
      "address": "Rua de São Mamede 3A",
      "website": "https://museudelisboa.pt/pt/about/venues/teatro-romano/",
      "openingHours": "Tu-Su 10:00-18:00; Jan 01 off; May 01 off; Dec 25 off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q11780",
+     "kinds": [
+      "heritage",
+      "museum",
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     }
    ]
   },
@@ -257,7 +598,12 @@
      "address": "Rua das Janelas Verdes 59",
      "website": "http://museudearteantiga.pt/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q212459",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1451054092",
@@ -267,7 +613,11 @@
      "address": "Rua da Madre de Deus 4",
      "website": "https://museunacionaldoazulejo.gov.pt/",
      "openingHours": "closed",
-     "wikipediaCount": 15
+     "wikipediaCount": 16,
+     "wikidataId": "Q2313815",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/96321716",
@@ -277,7 +627,11 @@
      "address": "Rua Serpa Pinto 4",
      "website": "https://www.museuartecontemporanea.pt/",
      "openingHours": "Tu-Su 10:00-18:00; Jan 01,May 01,Jun 13,Dec 25 off; easter off",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2745620",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1101604733",
@@ -287,7 +641,11 @@
      "address": "Largo do Chafariz de Dentro 1",
      "website": "https://www.museudofado.pt/",
      "openingHours": "Tu-Su 10:00-18:00; Jan 01,May 01,Dec 25 off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1954395",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/237926937",
@@ -297,7 +655,11 @@
      "address": "Rua do Alviela 12",
      "website": "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua",
      "openingHours": "Tu-Su 10:00-18:00; PH off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q6940623",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4419041593",
@@ -307,7 +669,11 @@
      "address": "Rua Augusto Rosa",
      "website": "http://www.museudoaljube.pt/",
      "openingHours": "Tu-Su 10:00-19:00; Jan 01,May 01,Dec 25 off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q17389986",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/5068486965",
@@ -317,7 +683,11 @@
      "address": "Largo do Carmo",
      "website": "https://www.museuarqueologicodocarmo.pt/",
      "openingHours": "Oct-May: Tu-Su 10:00-18:00; Jun-Sep: Tu-Su 10:00-19:00; Jan 01,May 01,Dec 25 off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1146790",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5089643622",
@@ -327,7 +697,12 @@
      "address": "Rua Marechal Saldanha 1",
      "website": "https://www.museudafarmacia.pt/",
      "openingHours": "Mo-Fr 10:00-19:00; Sa 14:00-19:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q9299839",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/11699003",
@@ -337,7 +712,15 @@
      "address": "Rua de São Mamede 3A",
      "website": "https://museudelisboa.pt/pt/about/venues/teatro-romano/",
      "openingHours": "Tu-Su 10:00-18:00; Jan 01 off; May 01 off; Dec 25 off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q11780",
+     "kinds": [
+      "heritage",
+      "museum",
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     },
     {
      "id": "way/272545758",
@@ -347,7 +730,11 @@
      "address": "Rua do Vale 7",
      "website": "https://www.ateliermuseujuliopomar.pt/",
      "openingHours": "Tu-Su 10:00-13:00,14:00-18:00; Jan 01,May 01,Dec 24-25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16495045",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5088757633",
@@ -357,7 +744,11 @@
      "address": "Campo de Ourique 16",
      "website": "http://casafernandopessoa.cm-lisboa.pt/",
      "openingHours": "Mo-Sa 10:00-18:00; Jan 01,May 01,Dec 25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q5047821",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/1396217",
@@ -367,7 +758,12 @@
      "address": "Rua Augusta 24",
      "website": "https://www.mude.pt/",
      "openingHours": "Tu-Su 10:00-18:00; Dec 24, Dec 31 10:00-14:00; Jan 01,May 01,Dec 25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1954392",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3128158245",
@@ -377,7 +773,11 @@
      "address": "Rua da Esperança 146",
      "website": "https://museudamarioneta.pt/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q10333706",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5090471910",
@@ -387,7 +787,11 @@
      "address": "Rua Rosa Araújo 41",
      "website": "https://www.museumedeirosealmeida.pt/",
      "openingHours": "Mo-Fr 13:00-17:30; Sa 10:00-17:30; Jan 01,May 01,Dec 24-25 off; easter off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q10333395",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/96497160",
@@ -397,7 +801,12 @@
      "address": "Largo do Museu de Artilharia",
      "website": "http://www.exercito.pt/pt/quem-somos/organizacao/ceme/vceme/dhcm/lisboa",
      "openingHours": "Tu-Su 10:00-17:00; easter off; Jan 01,May 01,Dec 25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q10333544",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/95408856",
@@ -407,7 +816,12 @@
      "address": "Rua das Amoreiras",
      "website": "http://museudaagua.epal.pt/",
      "openingHours": "10:00-12:30; 13:30-17:30",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q10359790",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1321540227",
@@ -416,7 +830,12 @@
      "lon": -9.14631,
      "address": "Avenida Cinco de Outubro 6;8",
      "website": "http://blogdacmag.blogspot.pt/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q5047773",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/1396247",
@@ -425,7 +844,11 @@
      "lon": -9.15064,
      "address": "Rua da Escola Politécnica 56;58",
      "website": "https://www.museus.ulisboa.pt/museu-nacional-de-historia-natural-e-da-ciencia",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q10333586",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5089643629",
@@ -435,7 +858,11 @@
      "address": "Rua do Instituto Industrial 16",
      "website": "https://www.fpc.pt/pt/museu/",
      "openingHours": "Tu-Fr 10:00-18:00; Sa 14:00-18:00; PH off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6940621",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1623055925",
@@ -445,7 +872,11 @@
      "address": "Rua da Academia das Ciências 19",
      "website": "http://www.lneg.pt/museugeologico/",
      "openingHours": "Mo-Sa 10:00-18:00; PH off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q10333493",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2503411074",
@@ -454,7 +885,11 @@
      "lon": -9.13529,
      "address": "Praça do Comércio 78 - 81",
      "website": "https://lisboastorycentre.pt/en/content/reduced-mobility",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1827867",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/160122854",
@@ -463,7 +898,11 @@
      "lon": -9.14872,
      "address": "Praça do Príncipe Real",
      "website": "https://www.visitlisboa.com/pt-pt/locais/museu-da-agua-reservatorio-da-patriarcal",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2145587",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/96188746",
@@ -471,7 +910,12 @@
      "lat": 38.71579,
      "lon": -9.14256,
      "address": "Praça dos Restauradores 25",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q66814282",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/96322171",
@@ -481,7 +925,11 @@
      "address": "Largo de Santo António da Sé 22",
      "website": "https://museudelisboa.pt/pt/about/venues/santo-antonio/",
      "openingHours": "Tu-Su 10:00-18:00; Jan 01 off; May 01 off; Dec 25 off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333388",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13174527080",
@@ -491,7 +939,11 @@
      "address": "Largo Trindade Coelho",
      "website": "https://museusaoroque.scml.pt/",
      "openingHours": "Oct-Mar Mo 14:00-18:00; Oct-Mar Tu-Su 10:00-18:00; Apr-Sep Mo 14:00-19:00; Apr-Sep Tu-Su 10:00-19:00; Apr-Sep Th 10:00-20:00; Jan 01,May 01,Dec 25 off; easter off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333867",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4693994869",
@@ -501,7 +953,11 @@
      "address": "Avenida Pedro Álvares Cabral 69",
      "website": "https://www.joaodeus.com/museu/museu.asp",
      "openingHours": "Mo-Fr 09:30-17:00; PH off; Jun 13,Dec 24-26 off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q136460298",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4822780021",
@@ -511,7 +967,11 @@
      "address": "Rua do Grémio Lusitano 25",
      "website": "http://www.gremiolusitano.pt/museum",
      "openingHours": "Mo-Fr 14:30-17:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333537",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5089643625",
@@ -520,7 +980,11 @@
      "lon": -9.14956,
      "website": "https://www.acad-ciencias.pt/museu/apresentacao-museu/",
      "openingHours": "Mo,We 10:00-18:00; PH off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333535",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/97708551",
@@ -529,7 +993,12 @@
      "lon": -9.1421,
      "website": "https://aparteoutsider.org/?page_id=74",
      "openingHours": "We 11:30-13:00; Sa 14:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q9871495",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/5068486966",
@@ -539,7 +1008,121 @@
      "address": "Praça dos Restauradores 25-45",
      "website": "https://www.ipdj.pt/museu.html",
      "openingHours": "Tu-Su 10:00-17:00; Jan 01,May 01,Dec 24-25 off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q17167656",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4853563821",
+     "name": "Museu da Sociedade de Geografia de Lisboa",
+     "lat": 38.71663,
+     "lon": -9.14076,
+     "address": "Rua das Portas de Santo Antão 100",
+     "website": "https://www.socgeografialisboa.pt/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333716",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/13096661171",
+     "name": "Casa Ásia – Coleção Francisco Capelo",
+     "lat": 38.71318,
+     "lon": -9.14376,
+     "address": "Largo Trindade Coelho 22",
+     "website": "https://scml.pt/cultura/casa-asia-cfc/",
+     "openingHours": "Tu-Su 10:00-18:00; Jan 01 off; easter off; May 01 off; Dec 25 off",
+     "wikidataId": "Q132182031",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1802199762",
+     "name": "Casa da Achada",
+     "lat": 38.71343,
+     "lon": -9.13526,
+     "address": "Rua da Achada 11",
+     "website": "http://www.centromariodionisio.org/",
+     "openingHours": "Mo,Fr 15:00-20:00; Sa-Su 11:00-18:00"
+    },
+    {
+     "id": "way/178227720",
+     "name": "Casa-Museu Amália Rodrigues",
+     "lat": 38.7154,
+     "lon": -9.1546,
+     "address": "Rua de São Bento 193",
+     "website": "https://www.amaliarodrigues.pt/artigo-casa-museu-2",
+     "openingHours": "Tu-Su 10:00-13:00,14:00-18:00",
+     "wikidataId": "Q106592864",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/8809108805",
+     "name": "Centro Tejo",
+     "lat": 38.70671,
+     "lon": -9.13374,
+     "address": "Terreiro do Paço",
+     "website": "https://www.visitlisboa.com/pt-pt/locais/ask-me-lisboa-centro-tejo",
+     "openingHours": "Mo-Su 10:00-13:00,14:00-19:00"
+    },
+    {
+     "id": "node/9729578705",
+     "name": "MOVART",
+     "lat": 38.72244,
+     "lon": -9.15497,
+     "address": "Travessa da Fábrica das Sedas 14A",
+     "website": "https://movart.org/",
+     "openingHours": "Tu-Fr 14:00-18:30; Sa 10:00-14:00"
+    },
+    {
+     "id": "node/4688777792",
+     "name": "Museu Arpad Szenes - Vieira da Silva",
+     "lat": 38.72224,
+     "lon": -9.15577,
+     "address": "Praça das Amoreiras 56",
+     "website": "https://fasvs.pt/",
+     "openingHours": "Tu-Su 10:00-18:00; PH off",
+     "wikidataId": "Q90314709",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9749140958",
+     "name": "Museu da Água",
+     "lat": 38.7214,
+     "lon": -9.1558,
+     "website": "https://www.epal.pt/EPAL/menu/museu-da-%C3%A1gua",
+     "openingHours": "Tu-Su 10:00-13:30"
+    },
+    {
+     "id": "node/9652264909",
+     "name": "Museu da Casa de Goa",
+     "lat": 38.70643,
+     "lon": -9.17229,
+     "website": "https://casadegoa.org/",
+     "cuisine": "indian"
+    },
+    {
+     "id": "node/5073093222",
+     "name": "Museu da Guarda Nacional Republicana",
+     "lat": 38.71227,
+     "lon": -9.14071,
+     "address": "Largo do Carmo",
+     "website": "http://www.arquivomuseugnr.pt/",
+     "openingHours": "Mo-Sa 10:00-18:00",
+     "wikidataId": "Q96583150",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -554,7 +1137,11 @@
      "lon": -9.13013,
      "address": "Largo de Santa Luzia",
      "website": "https://www.visitlisboa.com/pt-pt/locais/miradouro-de-santa-luzia",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6837314",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/419313189",
@@ -562,7 +1149,11 @@
      "lat": 38.71546,
      "lon": -9.14404,
      "address": "Rua de São Pedro de Alcântara",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q6672039",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "relation/19112367",
@@ -570,7 +1161,11 @@
      "lat": 38.71637,
      "lon": -9.13146,
      "website": "https://revelar.lisboa.pt/explorar/toponimia/detalhe?tx_toponimia_pi1%5Baction%5D=show&tx_toponimia_pi1%5Bcontroller%5D=Toponimia&tx_toponimia_pi1%5Btopid%5D=4186",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2744066",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/4771391278",
@@ -578,7 +1173,8 @@
      "lat": 38.71874,
      "lon": -9.14141,
      "address": "Travessa do Torel",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q10306349"
     },
     {
      "id": "way/727424336",
@@ -738,6 +1334,19 @@
      "name": "Miradouro dos Barros",
      "lat": 38.71812,
      "lon": -9.13136
+    },
+    {
+     "id": "way/526129020",
+     "name": "Miradouro Nossa Senhora do Monte",
+     "lat": 38.71915,
+     "lon": -9.13277,
+     "address": "Largo do Monte"
+    },
+    {
+     "id": "node/970768059",
+     "name": "Torre de São Lourenço",
+     "lat": 38.7146,
+     "lon": -9.13426
     }
    ]
   },
@@ -1315,6 +1924,7 @@
      "address": "Rua Garrett 120/122",
      "openingHours": "Mo-Su 08:00-02:00",
      "cuisine": "portuguese, coffee shop",
+     "wikidataId": "Q2547006",
      "detailed": true
     },
     {
@@ -1540,6 +2150,7 @@
      "address": "Largo da Graça 79,80",
      "website": "https://botequim.net/",
      "openingHours": "PH,Th-Tu 11:00-02:00",
+     "wikidataId": "Q894692",
      "detailed": true
     },
     {
@@ -1766,7 +2377,8 @@
      "name": "Hot Club Portugal",
      "lat": 38.71815,
      "lon": -9.14565,
-     "website": "https://www.hcp.pt/"
+     "website": "https://www.hcp.pt/",
+     "wikidataId": "Q1343207"
     },
     {
      "id": "way/96497162",

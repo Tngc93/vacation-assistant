@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "KUL",
- "fetchedAt": "2026-10-17T00:10:35.520Z",
+ "fetchedAt": "2026-10-18T17:06:29.412Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,7 +48,11 @@
      "localName": "Menara Berkembar Petronas",
      "lat": 3.15797,
      "lon": 101.71176,
-     "wikipediaCount": 88
+     "wikipediaCount": 88,
+     "wikidataId": "Q83063",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "node/5839389988",
@@ -58,7 +62,34 @@
      "address": "Jalan Puncak 2",
      "website": "https://www.menarakl.com.my/",
      "openingHours": "Mo-Su 09:00-22:00",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q745016",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q7969454",
+     "name": "Merdeka 118",
+     "lat": 3.14167,
+     "lon": 101.70072,
+     "wikipediaCount": 39,
+     "wikidataId": "Q7969454",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "node/11832151818",
+     "name": "National Mosque of Malaysia",
+     "lat": 3.14192,
+     "lon": 101.6921,
+     "wikipediaCount": 35,
+     "wikidataId": "Q1356818",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/480717734",
@@ -66,7 +97,12 @@
      "lat": 3.14884,
      "lon": 101.6958,
      "address": "Jalan Tun Perak",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q1143296",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/23069513",
@@ -74,7 +110,69 @@
      "lat": 3.14864,
      "lon": 101.69365,
      "website": "http://www.visitkl.gov.my/visitklv2/index.php?r=column/cthree&id=55&place_id=979",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q3043065",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2414557",
+     "name": "Stadium Merdeka",
+     "lat": 3.13909,
+     "lon": 101.70058,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2414557",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q820738",
+     "name": "Berjaya Times Square",
+     "lat": 3.14218,
+     "lon": 101.71061,
+     "wikipediaCount": 19,
+     "wikidataId": "Q820738",
+     "kinds": [
+      "business",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q27670200",
+     "name": "The Exchange 106",
+     "lat": 3.1419,
+     "lon": 101.71875,
+     "wikipediaCount": 19,
+     "wikidataId": "Q27670200",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q2660049",
+     "name": "Kuala Lumpur Bird Park",
+     "lat": 3.14243,
+     "lon": 101.68847,
+     "wikipediaCount": 18,
+     "wikidataId": "Q2660049",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q615958",
+     "name": "Sultan Abdul Samad Building",
+     "lat": 3.14861,
+     "lon": 101.69444,
+     "wikipediaCount": 18,
+     "wikidataId": "Q615958",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/446256442",
@@ -82,14 +180,127 @@
      "lat": 3.14387,
      "lon": 101.69762,
      "openingHours": "11:00-24:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q3239125",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q29168",
+     "name": "Aquaria KLCC",
+     "lat": 3.15339,
+     "lon": 101.71308,
+     "wikipediaCount": 16,
+     "wikidataId": "Q29168",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q1306924",
+     "name": "Suria KLCC",
+     "lat": 3.15672,
+     "lon": 101.712,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1306924"
+    },
+    {
+     "id": "wikidata/Q801042",
+     "name": "Kuala Lumpur Sentral station",
+     "lat": 3.134,
+     "lon": 101.686,
+     "wikipediaCount": 15,
+     "wikidataId": "Q801042",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q2745033",
+     "name": "Tun Perak Tower",
+     "lat": 3.1472,
+     "lon": 101.6997,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2745033",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q3396984",
+     "name": "Eş-Şakirin Camii",
+     "localName": "As Syakirin Mosque",
+     "lat": 3.15722,
+     "lon": 101.71611,
+     "wikipediaCount": 14,
+     "wikidataId": "Q3396984",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q6816462",
+     "name": "Petronas Tower 3",
+     "lat": 3.15667,
+     "lon": 101.71111,
+     "wikipediaCount": 13,
+     "wikidataId": "Q6816462",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q262312",
+     "name": "SMART Tunnel",
+     "lat": 3.13333,
+     "lon": 101.7,
+     "wikipediaCount": 13,
+     "wikidataId": "Q262312"
     },
     {
      "id": "way/1212049483",
      "name": "Tugu Negara",
      "lat": 3.14887,
      "lon": 101.68379,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q724745"
+    },
+    {
+     "id": "wikidata/Q1041262",
+     "name": "Central Market",
+     "lat": 3.14583,
+     "lon": 101.69556,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1041262"
+    },
+    {
+     "id": "wikidata/Q5268050",
+     "name": "Petronas Philharmonic Hall",
+     "lat": 3.15803,
+     "lon": 101.71168,
+     "wikipediaCount": 12,
+     "wikidataId": "Q5268050",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q1146435",
+     "name": "National Defence University of Malaysia",
+     "lat": 3.13559,
+     "lon": 101.68786,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1146435",
+     "kinds": [
+      "adminArea",
+      "business",
+      "school",
+      "sportsVenue",
+      "university"
+     ]
     },
     {
      "id": "way/169403450",
@@ -99,14 +310,30 @@
      "address": "Jalan Istana",
      "website": "https://www.jmm.gov.my/ms/muzium/muzium-diraja",
      "openingHours": "Mo-Sa 09:00-17:00; Su off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1674837",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q12061078",
+     "name": "Perdana Botanical Gardens",
+     "lat": 3.143,
+     "lon": 101.685,
+     "wikipediaCount": 9,
+     "wikidataId": "Q12061078",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/28287741",
      "name": "Taman Eko Rimba Kuala Lumpur",
      "lat": 3.15294,
      "lon": 101.70264,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q31322"
     },
     {
      "id": "way/24577285",
@@ -114,7 +341,11 @@
      "lat": 3.14565,
      "lon": 101.69639,
      "address": "Lebuh Pudu 14A",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2494864",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/776280279",
@@ -122,7 +353,8 @@
      "lat": 3.14396,
      "lon": 101.68759,
      "openingHours": "Mo-Su 09:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q5926987"
     },
     {
      "id": "way/801320516",
@@ -131,7 +363,12 @@
      "lon": 101.69768,
      "website": "https://www.kwaichaihong.com/",
      "openingHours": "Mo-Su 09:00-24:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q93494466",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/471992046",
@@ -139,7 +376,12 @@
      "lat": 3.14569,
      "lon": 101.70867,
      "openingHours": "Mo-Su 16:00-02:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18651495",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "node/1919710738",
@@ -251,6 +493,19 @@
      "name": "Istana Hinggap Perak",
      "lat": 3.13623,
      "lon": 101.68149
+    },
+    {
+     "id": "way/323762224",
+     "name": "Istana Hinggap Selangor",
+     "lat": 3.15737,
+     "lon": 101.68356
+    },
+    {
+     "id": "way/1141071370",
+     "name": "Istana Nurul Jannah",
+     "lat": 3.16318,
+     "lon": 101.67738,
+     "address": "Changkat Tunku"
     }
    ]
   },
@@ -266,7 +521,12 @@
      "address": "Jalan Damansara",
      "website": "https://www.muziumnegara.gov.my/",
      "openingHours": "09:00-17:00",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q917630",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/659878360",
@@ -276,7 +536,11 @@
      "address": "Jalan Lembah",
      "website": "https://www.iamm.org.my/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q3330187",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7221496859",
@@ -286,7 +550,8 @@
      "address": "Jalan Perdana 53",
      "website": "https://www.planetariumnegara.gov.my/",
      "openingHours": "09:00-16:30; Mo off",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q924297"
     },
     {
      "id": "way/169403450",
@@ -296,7 +561,11 @@
      "address": "Jalan Istana",
      "website": "https://www.jmm.gov.my/ms/muzium/muzium-diraja",
      "openingHours": "Mo-Sa 09:00-17:00; Su off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1674837",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/23766164",
@@ -305,7 +574,11 @@
      "lon": 101.69928,
      "address": "Jalan Gereja 98",
      "openingHours": "Mo-Su 9:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q7393613",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11261866685",
@@ -315,7 +588,11 @@
      "address": "Jalan Sultan Hishamuddin 26",
      "website": "http://www.muziumtekstilnegara.gov.my/",
      "openingHours": "09:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q19117247",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4329258589",
@@ -324,7 +601,11 @@
      "lon": 101.68891,
      "address": "Jalan Perdana 5",
      "openingHours": "Tu-Su 10:00-18:00; Fr 12:30-14:30 off \"Friday's prayer\"",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3015254",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1086403294",
@@ -333,7 +614,11 @@
      "lon": 101.68688,
      "address": "Jalan Perdana",
      "openingHours": "Tu-Fr 09:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q12697599",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4770727112",
@@ -342,7 +627,12 @@
      "lon": 101.69143,
      "address": "Jalan Scott 8",
      "website": "https://weiling-gallery.com/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q18394769",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/4770741269",
@@ -350,7 +640,11 @@
      "lat": 3.15795,
      "lon": 101.71203,
      "website": "http://www.galeripetronas.com.my/Pages/Current.aspx",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q5337739",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/4283481889",
@@ -359,7 +653,11 @@
      "lon": 101.69337,
      "website": "http://www.klcitygallery.com.my/",
      "openingHours": "09:00-18:30; Tu off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q66041057",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10682643094",
@@ -368,7 +666,11 @@
      "lon": 101.69071,
      "website": "https://museum.bnm.gov.my/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7393413",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13598068743",
@@ -377,7 +679,11 @@
      "lon": 101.67418,
      "website": "https://www.arkib.gov.my/en/web/guest/galeria-sri-perdana",
      "openingHours": "10:00-17:30; Fr 10:00-12:00,15:00-17:30; Mo off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q105197399",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/386523816",
@@ -386,7 +692,11 @@
      "lon": 101.68844,
      "website": "https://www.jmm.gov.my/ms/muzium-etnologi-dunia-melayu",
      "openingHours": "09:00-17:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q20454718",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13527820228",
@@ -512,6 +822,69 @@
      "lat": 3.14562,
      "lon": 101.69655,
      "website": "https://www.facebook.com/p/%E5%90%89%E9%9A%86%E5%9D%A1%E5%B8%88%E7%88%B7%E5%BA%99%E6%8B%93%E8%8D%92%E5%8D%9A%E7%89%A9%E9%A6%86-Sin-Sze-Si-Ya-Temple-Pioneers-of-Kuala-Lumpur-Museum-100090781340904/"
+    },
+    {
+     "id": "way/375635986",
+     "name": "Rumah Penghulu Abu Seman",
+     "lat": 3.15027,
+     "lon": 101.71646,
+     "openingHours": "Tu-Sa 11:00-17:00"
+    },
+    {
+     "id": "node/13689085164",
+     "name": "马来西亚陈嘉庚纪念馆",
+     "lat": 3.13917,
+     "lon": 101.69797,
+     "website": "https://mytkkf.com.my/cn/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E9%99%88%E5%98%89%E5%BA%9A%E7%BA%AA%E5%BF%B5%E9%A6%86/"
+    },
+    {
+     "id": "relation/21406734",
+     "name": "Bird Gallery",
+     "lat": 3.14501,
+     "lon": 101.68847
+    },
+    {
+     "id": "relation/21406736",
+     "name": "Bird School",
+     "lat": 3.14542,
+     "lon": 101.68797
+    },
+    {
+     "id": "relation/21406735",
+     "name": "Education Station",
+     "lat": 3.14522,
+     "lon": 101.68822
+    },
+    {
+     "id": "node/9903396583",
+     "name": "Galeri Budi",
+     "lat": 3.15554,
+     "lon": 101.69634
+    },
+    {
+     "id": "node/9839016996",
+     "name": "Historical Museum of Traditional Chinese Medicine in Malaysia",
+     "lat": 3.1433,
+     "lon": 101.70001,
+     "address": "Jalan Hang Jebat 2"
+    },
+    {
+     "id": "way/386523813",
+     "name": "Istana 1",
+     "lat": 3.13769,
+     "lon": 101.68809
+    },
+    {
+     "id": "node/6367206585",
+     "name": "Malaysia Cartoon & Comic House",
+     "lat": 3.14681,
+     "lon": 101.68668
+    },
+    {
+     "id": "node/11766259873",
+     "name": "Muzium Bioperubatan",
+     "lat": 3.16834,
+     "lon": 101.69881
     }
    ]
   },

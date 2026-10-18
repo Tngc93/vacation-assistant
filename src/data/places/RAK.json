@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "RAK",
- "fetchedAt": "2026-10-17T00:06:10.146Z",
+ "fetchedAt": "2026-10-18T17:00:10.407Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,12 +43,30 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1137533",
+     "name": "Kutubiye Camii",
+     "localName": "Koutoubia Mosque",
+     "lat": 31.62412,
+     "lon": -7.99354,
+     "wikipediaCount": 41,
+     "wikidataId": "Q1137533",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
      "id": "way/1132585098",
      "name": "ⵊⴰⵎⵄ ⵍⴼⵏⴰ جامع الفناء",
      "lat": 31.62582,
      "lon": -7.98924,
      "openingHours": "24/7",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q258348",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "relation/1770461",
@@ -57,7 +75,13 @@
      "lon": -7.98625,
      "website": "https://www.medersabenyoussef.ma/",
      "openingHours": "09:00-18:00; PH closed \"religous holidays\"",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1560540",
+     "kinds": [
+      "business",
+      "heritage",
+      "school"
+     ]
     },
     {
      "id": "relation/3241554",
@@ -66,21 +90,73 @@
      "lon": -7.98537,
      "website": "https://badipalace.com/",
      "openingHours": "09:00-17:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1277747",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/374299688",
      "name": "باب أكناو",
      "lat": 31.61754,
      "lon": -7.99068,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q4837210",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/614070192",
      "name": "Almoravid Koubba القبة المرابطية",
      "lat": 31.63146,
      "lon": -7.98716,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q3412514",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2465115",
+     "name": "Bahia Palace",
+     "lat": 31.62159,
+     "lon": -7.98223,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2465115",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q4886745",
+     "name": "Bin Yusuf Camii",
+     "localName": "Ibn Yusuf Mosque",
+     "lat": 31.63192,
+     "lon": -7.98716,
+     "wikipediaCount": 15,
+     "wikidataId": "Q4886745",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1948938",
+     "name": "Al-Mansour Mosque",
+     "lat": 31.61768,
+     "lon": -7.98895,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1948938",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/102739972",
@@ -88,7 +164,12 @@
      "lat": 31.62974,
      "lon": -7.99266,
      "website": "https://darbacha.com/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q59956159",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/448190360",
@@ -230,7 +311,12 @@
      "lon": -7.98607,
      "website": "https://marrakechmuseum.com/",
      "openingHours": "09:00-18:30",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q3090631",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/15662474",
@@ -239,14 +325,23 @@
      "lon": -7.98853,
      "address": "Rue de la Kasbah",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2152745",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/5365982121",
      "name": "Synagogue Laazama",
      "lat": 31.62007,
      "lon": -7.9823,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3508008",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/4595271890",
@@ -256,7 +351,11 @@
      "address": "Derb Hammam 5",
      "website": "https://museedelamusique.ma/",
      "openingHours": "Mo-Su 10:00-19:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q96394004",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5744334021",
@@ -265,7 +364,12 @@
      "lon": -7.99235,
      "website": "https://darbacha.com/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q59956159",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/4595267208",
@@ -274,7 +378,11 @@
      "lon": -7.98656,
      "address": "Derb Zaouia Lahdar",
      "website": "https://www.darbellarj-fondation.com/",
-     "openingHours": "Mo-Sa 09:00-17:30"
+     "openingHours": "Mo-Sa 09:00-17:30",
+     "wikidataId": "Q123262808",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4838054203",
@@ -593,6 +701,16 @@
      "detailed": true
     },
     {
+     "id": "node/12469280218",
+     "name": "Dabachi Chez Cherif",
+     "lat": 31.62734,
+     "lon": -7.98517,
+     "address": "Derb Dabachi",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
      "id": "node/1446424854",
      "name": "Dar Moha",
      "lat": 31.63137,
@@ -679,16 +797,6 @@
      "website": "https://www.terrassedesepices.com/",
      "openingHours": "12:00-23:00",
      "detailed": true
-    },
-    {
-     "id": "node/5639855511",
-     "name": "Le Comptoir du Pacha",
-     "lat": 31.6315,
-     "lon": -7.9943,
-     "address": "Arset Aouzal 218",
-     "website": "http://www.lecomptoirdupacha.com/",
-     "cuisine": "french, mediterranean, moroccan",
-     "detailed": true
     }
    ]
   },
@@ -704,6 +812,17 @@
      "website": "https://www.cafe-france-marrakech.com/",
      "openingHours": "Mo-Su 07:00-23:00",
      "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "way/491675486",
+     "name": "Café des épices",
+     "lat": 31.62905,
+     "lon": -7.98732,
+     "address": "Derb Rahba Lakdima 75",
+     "website": "https://cafedesepices.ma/",
+     "openingHours": "Mo-Su 09:00-23:00",
+     "cuisine": "international, moroccan",
      "detailed": true
     },
     {
@@ -754,6 +873,16 @@
      "address": "75 Rahba Lakdima 75",
      "website": "https://cafedesepices.ma/",
      "openingHours": "Mo-Su 09:00-23:00",
+     "detailed": true
+    },
+    {
+     "id": "node/6372550515",
+     "name": "Fine Mama",
+     "lat": 31.62306,
+     "lon": -7.98972,
+     "address": "Pass. Prince Moulay Rachid 89",
+     "openingHours": "Mo-Su 09:00-00:00",
+     "cuisine": "international, moroccan",
      "detailed": true
     },
     {
@@ -915,18 +1044,6 @@
      "name": "Bazaar Cafe",
      "lat": 31.62891,
      "lon": -7.9911
-    },
-    {
-     "id": "node/4549915511",
-     "name": "Bistro Laksour",
-     "lat": 31.62711,
-     "lon": -7.99329
-    },
-    {
-     "id": "node/660578134",
-     "name": "Bougainvillea",
-     "lat": 31.62984,
-     "lon": -7.98993
     }
    ]
   },

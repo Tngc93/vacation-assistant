@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "STO",
- "fetchedAt": "2026-10-16T23:38:09.551Z",
+ "fetchedAt": "2026-10-18T16:28:05.553Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,20 +43,105 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q191583",
+     "name": "İsveç Kraliyet Bilimler Akademisi",
+     "localName": "Royal Swedish Academy of Sciences",
+     "lat": 59.36639,
+     "lon": 18.05167,
+     "wikipediaCount": 62,
+     "wikidataId": "Q191583",
+     "kinds": [
+      "business",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q32926",
+     "name": "Ericsson Globe",
+     "localName": "Avicii Arena",
+     "lat": 59.29361,
+     "lon": 18.08333,
+     "wikipediaCount": 49,
+     "wikidataId": "Q32926",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q953058",
+     "name": "İsveç Ulusal Kütüphanesi",
+     "localName": "National Library of Sweden",
+     "lat": 59.33806,
+     "lon": 18.07215,
+     "wikipediaCount": 45,
+     "wikidataId": "Q953058",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
      "id": "relation/34394",
      "name": "Stockholms slott",
      "lat": 59.32694,
      "lon": 18.07163,
      "address": "Slottsbacken 1",
      "website": "https://www.kungligaslotten.se/",
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q750444",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/29775128",
      "name": "Gamla stan",
      "lat": 59.32495,
      "lon": 18.07064,
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q579854",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q727078",
+     "name": "Stockholm Olimpiyat Stadyumu",
+     "localName": "Stockholm Olympic Stadium",
+     "lat": 59.34528,
+     "lon": 18.07889,
+     "wikipediaCount": 40,
+     "wikidataId": "Q727078",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q725108",
+     "name": "Skansen Açıkhava Müzesi",
+     "localName": "Skansen",
+     "lat": 59.32445,
+     "lon": 18.101,
+     "wikipediaCount": 38,
+     "wikidataId": "Q725108",
+     "kinds": [
+      "attraction",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q648483",
+     "name": "Stockholm City Hall",
+     "lat": 59.3275,
+     "lon": 18.05472,
+     "wikipediaCount": 38,
+     "wikidataId": "Q648483",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/8049504",
@@ -64,7 +149,12 @@
      "lat": 59.32577,
      "lon": 18.07041,
      "website": "https://www.svenskakyrkan.se/stockholmsdomkyrkoforsamling/visitors",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q1133075",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/23841420",
@@ -72,7 +162,109 @@
      "lat": 59.32468,
      "lon": 18.06458,
      "website": "https://www.kungahuset.se/",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q657118",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q54315",
+     "name": "Stockholm Garı",
+     "localName": "Stockholm Central Station",
+     "lat": 59.33,
+     "lon": 18.05611,
+     "wikipediaCount": 24,
+     "wikidataId": "Q54315",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1246991",
+     "name": "Stockholm Public Library",
+     "lat": 59.34333,
+     "lon": 18.05472,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1246991",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1101073",
+     "name": "Parlamento Binası",
+     "localName": "Parliament House of Sweden (Riksdagshuset)",
+     "lat": 59.3275,
+     "lon": 18.0675,
+     "wikipediaCount": 23,
+     "wikidataId": "Q1101073",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q849086",
+     "name": "Skeppsholmen",
+     "lat": 59.32583,
+     "lon": 18.08417,
+     "wikipediaCount": 23,
+     "wikidataId": "Q849086",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1540683",
+     "name": "Klara Kilisesi",
+     "localName": "Klara Church",
+     "lat": 59.33111,
+     "lon": 18.06167,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1540683",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q904462",
+     "name": "Riddarholmen",
+     "lat": 59.325,
+     "lon": 18.06306,
+     "wikipediaCount": 22,
+     "wikidataId": "Q904462",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q844426",
+     "name": "Sergels torg",
+     "lat": 59.3325,
+     "lon": 18.06444,
+     "wikipediaCount": 21,
+     "wikidataId": "Q844426",
+     "kinds": [
+      "road",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q653773",
+     "name": "Stockholm Konser Salonu",
+     "localName": "Stockholm Concert Hall",
+     "lat": 59.335,
+     "lon": 18.06333,
+     "wikipediaCount": 21,
+     "wikidataId": "Q653773",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "way/8049509",
@@ -80,7 +272,79 @@
      "lat": 59.32414,
      "lon": 18.0717,
      "openingHours": "10:30-16:30",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q2164087",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q260304",
+     "name": "Gröna Lund",
+     "lat": 59.32306,
+     "lon": 18.09611,
+     "wikipediaCount": 20,
+     "wikidataId": "Q260304",
+     "kinds": [
+      "attraction",
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q926316",
+     "name": "Kungsträdgården",
+     "lat": 59.33194,
+     "lon": 18.07111,
+     "wikipediaCount": 20,
+     "wikidataId": "Q926316"
+    },
+    {
+     "id": "wikidata/Q3048023",
+     "name": "Stortorget",
+     "lat": 59.325,
+     "lon": 18.07083,
+     "wikipediaCount": 20,
+     "wikidataId": "Q3048023",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1208392",
+     "name": "Gamla stan metro istasyonu",
+     "localName": "Gamla stan metro station",
+     "lat": 59.32332,
+     "lon": 18.06698,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1208392",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q15042147",
+     "name": "St.Eric Katedrali, Stockholm",
+     "localName": "St. Eric's Cathedral, Stockholm",
+     "lat": 59.31381,
+     "lon": 18.0725,
+     "wikipediaCount": 19,
+     "wikidataId": "Q15042147",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q619484",
+     "name": "Stockholm Synagogue",
+     "lat": 59.33189,
+     "lon": 18.07421,
+     "wikipediaCount": 19,
+     "wikidataId": "Q619484",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/145662484",
@@ -88,14 +352,58 @@
      "lat": 59.32891,
      "lon": 18.11733,
      "website": "https://www.kungligaslotten.se/vara-besoksmal/rosendals-slott.html",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q59482",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q404416",
+     "name": "Stockholm Borsa Binası",
+     "localName": "Stockholm Stock Exchange Building",
+     "lat": 59.32528,
+     "lon": 18.07083,
+     "wikipediaCount": 18,
+     "wikidataId": "Q404416"
+    },
+    {
+     "id": "wikidata/Q1193675",
+     "name": "Stockholm Camii",
+     "localName": "Stockholm Mosque",
+     "lat": 59.31579,
+     "lon": 18.07474,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1193675",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q744615",
+     "name": "Rosenbad",
+     "lat": 59.32847,
+     "lon": 18.06583,
+     "wikipediaCount": 17,
+     "wikidataId": "Q744615",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/141844590",
      "name": "Sagerska huset",
      "lat": 59.32876,
      "lon": 18.06728,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1886105",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/8049544",
@@ -103,14 +411,35 @@
      "lat": 59.32593,
      "lon": 18.06572,
      "website": "https://www.riddarhuset.se/",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1547268",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2066219",
+     "name": "Drottninggatan",
+     "lat": 59.33194,
+     "lon": 18.06333,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2066219",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/37079169",
      "name": "Katarina kyrka",
      "lat": 59.31706,
      "lon": 18.07813,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1736102",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/2440883",
@@ -120,7 +449,13 @@
      "address": "Hamngatan 4",
      "website": "https://hallwylskamuseet.se/",
      "openingHours": "Tu, Th-Fr 12:00-16:00; We 12:00-19:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q4346239",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/2441872774",
@@ -128,142 +463,249 @@
      "lat": 59.32947,
      "lon": 18.08909,
      "website": "https://www.junibacken.se/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1713506",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1608760",
+     "name": "Hötorget",
+     "lat": 59.33486,
+     "lon": 18.06217,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1608760",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/40859302",
      "name": "Kulturhuset",
      "lat": 59.33205,
      "lon": 18.06493,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q204298"
+    },
+    {
+     "id": "wikidata/Q867717",
+     "name": "Stockholm City Line",
+     "lat": 59.325,
+     "lon": 18.06667,
+     "wikipediaCount": 14,
+     "wikidataId": "Q867717"
+    },
+    {
+     "id": "wikidata/Q791762",
+     "name": "Beckholmen",
+     "lat": 59.32083,
+     "lon": 18.1,
+     "wikipediaCount": 13,
+     "wikidataId": "Q791762",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/16095343",
      "name": "Bondeska palatset",
      "lat": 59.32626,
      "lon": 18.06644,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q892231",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1750652",
+     "name": "Norrmalmstorg",
+     "lat": 59.33333,
+     "lon": 18.07278,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1750652",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/41079299",
      "name": "Tessinska palatset",
      "lat": 59.32563,
      "lon": 18.07298,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q783848",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2036739",
+     "name": "Hedvig Eleonora Kilisesi",
+     "localName": "Hedvig Eleonora Church",
+     "lat": 59.33528,
+     "lon": 18.08056,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2036739",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/49744847",
      "name": "Kastellet",
      "lat": 59.3226,
      "lon": 18.09015,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q4176816"
+    },
+    {
+     "id": "wikidata/Q1788276",
+     "name": "Sveavägen",
+     "lat": 59.33651,
+     "lon": 18.0626,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1788276",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q580518",
+     "name": "Västerbron",
+     "lat": 59.32444,
+     "lon": 18.02722,
+     "wikipediaCount": 12,
+     "wikidataId": "Q580518",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/34590009",
      "name": "Wrangelska palatset",
      "lat": 59.32511,
      "lon": 18.06296,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q772914",
+     "kinds": [
+      "attraction",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q360572",
+     "name": "Adolf Fredrik Church",
+     "lat": 59.33778,
+     "lon": 18.06028,
+     "wikipediaCount": 11,
+     "wikidataId": "Q360572",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1232277",
+     "name": "Djurgårdsbron",
+     "lat": 59.33111,
+     "lon": 18.09389,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1232277",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1221513",
+     "name": "Grand Hôtel",
+     "lat": 59.32961,
+     "lon": 18.07544,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1221513",
+     "kinds": [
+      "business",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q2854887",
+     "name": "Gustav Adolfs torg",
+     "lat": 59.32917,
+     "lon": 18.06833,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2854887",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q3439887",
+     "name": "Oscarsteatern",
+     "lat": 59.33333,
+     "lon": 18.05611,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3439887",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1967885",
+     "name": "Sofia Church",
+     "lat": 59.31222,
+     "lon": 18.08833,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1967885",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/27742012",
      "name": "Af Chapman",
      "lat": 59.32529,
      "lon": 18.08023,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q382006",
+     "kinds": [
+      "business",
+      "hotel"
+     ]
     },
     {
      "id": "relation/279567",
      "name": "Arvfurstens palats",
      "lat": 59.32903,
      "lon": 18.06756,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q717105",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
     },
     {
      "id": "relation/11144024",
      "name": "Karlbergs slott",
      "lat": 59.34112,
      "lon": 18.02203,
-     "wikipediaCount": 9
-    },
-    {
-     "id": "way/170363224",
-     "name": "Axel Oxenstiernas palats",
-     "lat": 59.32593,
-     "lon": 18.06962,
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/23841414",
-     "name": "Stenbockska palatset",
-     "lat": 59.32541,
-     "lon": 18.06374,
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/11005807868",
-     "name": "Finngrundet",
-     "lat": 59.32736,
-     "lon": 18.0903,
-     "wikipediaCount": 6
-    },
-    {
-     "id": "node/11005807867",
-     "name": "S/S Sankt Erik",
-     "lat": 59.32712,
-     "lon": 18.09088,
-     "wikipediaCount": 6
-    },
-    {
-     "id": "way/24210274",
-     "name": "Åhléns",
-     "lat": 59.33234,
-     "lon": 18.0615,
-     "website": "https://www.ahlens.se/varuhus/stockholm-city",
-     "openingHours": "Mo-Fr 10:00-20:00; Sa 10:00-19:00; Su 11:00-19:00",
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/23841408",
-     "name": "Hessensteinska palatset",
-     "lat": 59.32528,
-     "lon": 18.06457,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "node/11005807869",
-     "name": "HMS Spica",
-     "lat": 59.32699,
-     "lon": 18.09038,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "node/300162703",
-     "name": "Obelisken",
-     "lat": 59.32587,
-     "lon": 18.07151,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/108507585",
-     "name": "Sparreska palatset",
-     "lat": 59.32445,
-     "lon": 18.06364,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "relation/21288970",
-     "name": "Schering Rosenhanes palats",
-     "lat": 59.32571,
-     "lon": 18.06261,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/2988582414",
-     "name": "Twister",
-     "lat": 59.3226,
-     "lon": 18.09523,
-     "wikipediaCount": 4
+     "wikipediaCount": 9,
+     "wikidataId": "Q335491",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     }
    ]
   },
@@ -278,7 +720,12 @@
      "lon": 18.0782,
      "website": "https://www.nationalmuseum.se/",
      "openingHours": "Mo off; Tu-We,Fr-Su 11:00-17:00; Th 11:00-20:00",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q842858",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/27288534",
@@ -287,7 +734,11 @@
      "lon": 18.09139,
      "website": "https://vasamuseet.se/",
      "openingHours": "Mo-Su 08:30-18:00",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q901371",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304603727",
@@ -296,7 +747,11 @@
      "lon": 18.07083,
      "website": "https://www.nobelprizemuseum.se/",
      "openingHours": "Sep-Mar Tu-Th 11:00-17:00; Fr 11:00-21:00; Sa-Su 11:00-17:00; Mo off; Apr-May Tu-Th 11:00-17:00; Fr 11:00-21:00; Sa-Su 10:00-18:00; Mo off; Jun-Aug Mo-Th,Sa-Su 10:00-19:00; Fr 10:00-21:00; PH off",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q1968711",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/348345482",
@@ -305,7 +760,11 @@
      "lon": 18.09387,
      "website": "https://nordiskamuseet.se/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q1142142",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/29898032",
@@ -314,7 +773,13 @@
      "lon": 18.084,
      "website": "https://www.modernamuseet.se/",
      "openingHours": "Mo off; Tu,Fr 10:00-20:00; We-Th,Sa-Su 10:00-18:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q1274511",
+     "kinds": [
+      "business",
+      "cinema",
+      "museum"
+     ]
     },
     {
      "id": "relation/93398",
@@ -323,7 +788,11 @@
      "lon": 18.09015,
      "website": "https://www.historiska.se/",
      "openingHours": "Tu, Th-Su 11:00-17:00; We 11:00-20:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1726607",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/33275424",
@@ -333,7 +802,11 @@
      "address": "Djurgårdsvägen 68",
      "website": "https://abbathemuseum.com/",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q2743819",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304606190",
@@ -342,7 +815,11 @@
      "lon": 18.07308,
      "website": "https://livrustkammaren.se/",
      "openingHours": "Jan-Apr Tu-Su 11:00-17:00, Th 11:00-20:00; May-Jun Tu-Su 11:00-17:00; Jul-Aug Tu-Su 10:00-18:00; Sep-Dec Tu-Su 11:00-17:00, Th 11:00-20:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1636176",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1476007025",
@@ -351,7 +828,23 @@
      "lon": 18.08167,
      "website": "https://www.ostasiatiskamuseet.se/",
      "openingHours": "Tu 11:00-20:00; We-Su 11:00-17:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q298289",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1146587",
+     "name": "Swedish Film Institute",
+     "lat": 59.34,
+     "lon": 18.10333,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1146587",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/289851448",
@@ -360,7 +853,24 @@
      "lon": 18.08026,
      "website": "https://www.armemuseum.se/",
      "openingHours": "We-Su 11:00-17:00; Tu 11:00-19:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q690002",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q681497",
+     "name": "Stockholm Gözlemevi",
+     "localName": "Stockholm Observatory",
+     "lat": 59.34167,
+     "lon": 18.05472,
+     "wikipediaCount": 18,
+     "wikidataId": "Q681497",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1241136436",
@@ -369,7 +879,11 @@
      "lon": 18.11884,
      "website": "https://www.tekniskamuseet.se/",
      "openingHours": "Mo-Su 09:00-21:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q177550",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4581111990",
@@ -378,7 +892,11 @@
      "lon": 18.11455,
      "website": "https://www.waldemarsudde.se/",
      "openingHours": "Mo off; Tu-We,Fr-Su 11:00-17:00; Th 11:00-20:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q537",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/10502251",
@@ -387,7 +905,23 @@
      "lon": 18.11581,
      "website": "https://www.sjohistoriska.se/",
      "openingHours": "Mo off; Tu,Th-Su 10:00-17:00; We 10:00-20:00; Jan 01,May 29,Jun 19-20,Dec 23-25,Dec 31 off",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1647895",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1750428",
+     "name": "Economy Museum – Royal Coin Cabinet",
+     "lat": 59.33472,
+     "lon": 18.09028,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1750428",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/10502303",
@@ -396,7 +930,11 @@
      "lon": 18.12071,
      "website": "https://www.etnografiskamuseet.se/",
      "openingHours": "Mo closed; Tu 11:00-17:00; We 11:00-20:00; Th-Su 11:00-17:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1371375",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2440883",
@@ -406,7 +944,13 @@
      "address": "Hamngatan 4",
      "website": "https://hallwylskamuseet.se/",
      "openingHours": "Tu, Th-Fr 12:00-16:00; We 12:00-19:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q4346239",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/33114705",
@@ -415,7 +959,11 @@
      "lon": 18.09608,
      "website": "https://www.liljevalchs.se/",
      "openingHours": "We, Fr-Mo 11:00-17:00; Tu, Th 11:00-20:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1640397",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304602016",
@@ -424,7 +972,24 @@
      "lon": 18.07126,
      "website": "https://stadsmuseet.stockholm/",
      "openingHours": "Mo-Tu, Th-Su 11:00-17:00; We 11:00-20:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1933896",
+     "kinds": [
+      "museum",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1632115",
+     "name": "Stockholm Ortaçağ Müzesi",
+     "localName": "Museum of Medieval Stockholm",
+     "lat": 59.32833,
+     "lon": 18.07028,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1632115",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/868261113",
@@ -434,7 +999,11 @@
      "address": "Stadsgårdshamnen 22",
      "website": "https://www.fotografiska.com/sto/",
      "openingHours": "Mo-Su 10:00-23:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1439649",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304609719",
@@ -443,7 +1012,11 @@
      "lon": 18.0673,
      "website": "https://www.medelhavsmuseet.se/",
      "openingHours": "Mo off; Tu-Su 11:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1331646",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1092471973",
@@ -452,7 +1025,12 @@
      "lon": 18.08465,
      "website": "https://arkdes.se/",
      "openingHours": "Tu 10:00-22:00; We-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q4356728",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/33114307",
@@ -460,7 +1038,11 @@
      "lat": 59.32712,
      "lon": 18.0977,
      "openingHours": "off \"closed for renovations\"",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q864536",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304578099",
@@ -469,7 +1051,11 @@
      "lon": 18.05661,
      "website": "https://www.strindbergsmuseet.se/",
      "openingHours": "Mo off; Tu-Su 12:00-16:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1890584",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304624735",
@@ -479,7 +1065,11 @@
      "address": "Sibyllegatan 2",
      "website": "https://scenkonstmuseet.se/",
      "openingHours": "Tu-Su 11:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q18448716",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304610243",
@@ -487,7 +1077,11 @@
      "lat": 59.32974,
      "lon": 18.06534,
      "website": "https://dansmuseet.se/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1749479",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304577359",
@@ -496,7 +1090,11 @@
      "lon": 18.07302,
      "website": "https://judiskamuseet.se/",
      "openingHours": "Mo off; Tu-We 11:00-17:00; Th 11:00-20:00; Fr 11:00-16:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q684827",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/304603696",
@@ -505,7 +1103,11 @@
      "lon": 18.068,
      "website": "https://www.postmuseum.se/",
      "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 10:00-16:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q712309",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/137165681",
@@ -514,7 +1116,11 @@
      "lon": 18.04391,
      "website": "https://www.sven-harrys.se/",
      "openingHours": "Mo off; Tu-We,Fr 10:00-18:00; Th 10:00-20:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q10684670",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1815123227",
@@ -523,14 +1129,23 @@
      "lon": 18.07205,
      "website": "http://www.kungahuset.se/besokkungligaslotten/kungligaslottet/gustaviiisantikmuseum",
      "openingHours": "\"By reservation\"",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q9282793",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/141463240",
      "name": "Baltic Sea Science Center",
      "lat": 59.32461,
      "lon": 18.10447,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q66459086",
+     "kinds": [
+      "attraction",
+      "museum"
+     ]
     },
     {
      "id": "way/35205940",
@@ -539,7 +1154,88 @@
      "lon": 18.04262,
      "website": "https://www.bonnierskonsthall.se/",
      "openingHours": "Mo-Tu off; We 12:00-20:00; Th-Su 12:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q10432932",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2328267047",
+     "name": "Spritmuseum",
+     "lat": 59.32703,
+     "lon": 18.0938,
+     "website": "https://spritmuseum.se/",
+     "openingHours": "Mo 10:00-17:00; Tu 10:00-20:00; We-Su 10:00-17:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q10676610",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2988628220",
+     "name": "Vikingaliv",
+     "lat": 59.32658,
+     "lon": 18.09493,
+     "website": "https://thevikingmuseum.com/",
+     "openingHours": "Mo-Su 10:00-19:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q31871457",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/810035234",
+     "name": "Polismuseet",
+     "lat": 59.33312,
+     "lon": 18.11847,
+     "website": "https://www.polismuseet.se/",
+     "openingHours": "Tu-Fr 12:00-17:00; Sa-Su 11:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q10636139",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/124255734",
+     "name": "H M Konungens Hovstall",
+     "lat": 59.33296,
+     "lon": 18.07878,
+     "website": "https://www.kungahuset.se/",
+     "wikipediaCount": 3,
+     "wikidataId": "Q10298650",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/8860280280",
+     "name": "Wetterling",
+     "lat": 59.33145,
+     "lon": 18.07026,
+     "openingHours": "Tu-Fr 11:00-17:30; Sa 13:00-16:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q10719785",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/248913932",
+     "name": "Carl Eldhs Ateljémuseum",
+     "lat": 59.35287,
+     "lon": 18.05162,
+     "website": "https://www.eldhsatelje.se/",
+     "openingHours": "Apr,Oct Sa,Su 12:00-16:00; May,Sep Th-Su 12:00-16:00; Jun-Aug Tu-Su 12:00-16:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q10443031",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     }
    ]
   },
@@ -552,21 +1248,30 @@
      "name": "Katarinahissen",
      "lat": 59.31992,
      "lon": 18.07317,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q615365",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "node/1706341734",
      "name": "Fåfängan",
      "lat": 59.31504,
      "lon": 18.10123,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q10500908",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/1531271091",
      "name": "Åsöberget",
      "lat": 59.31446,
      "lon": 18.09583,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q10726955"
     },
     {
      "id": "node/255862094",
@@ -890,6 +1595,7 @@
      "website": "https://www.cassi.se/",
      "openingHours": "Mo-Fr 10:45-20:00;Sa off;Su 13:00-20:00",
      "cuisine": "french",
+     "wikidataId": "Q96737393",
      "detailed": true
     }
    ]
@@ -1434,6 +2140,7 @@
      "website": "http://tudorarms.se/",
      "openingHours": "Mo-Tu 16:00-22:00; We-Th 16:00-23:00, Fr-Sa 15:00-23:00; Su 15:00-20:00",
      "cuisine": "british",
+     "wikidataId": "Q10706003",
      "detailed": true
     },
     {
@@ -1549,6 +2256,7 @@
      "lon": 18.07108,
      "website": "https://www.cafeopera.se/",
      "openingHours": "Mo-Tu off; We-Su 22:00-03:00",
+     "wikidataId": "Q1025651",
      "detailed": true
     },
     {
@@ -1604,6 +2312,7 @@
      "lon": 18.07214,
      "website": "https://www.stureplansgruppen.se/the-spy-bar-1.aspx",
      "openingHours": "We-Sa 22:00-05:00",
+     "wikidataId": "Q10676675",
      "detailed": true
     },
     {
@@ -1613,6 +2322,7 @@
      "lon": 18.07346,
      "website": "https://www.sturecompagniet.se/",
      "openingHours": "Th-Sa 22:00-03:00",
+     "wikidataId": "Q10682450",
      "detailed": true
     },
     {
@@ -1627,7 +2337,8 @@
      "name": "Berns",
      "lat": 59.33218,
      "lon": 18.0739,
-     "website": "https://www.berns.se/"
+     "website": "https://www.berns.se/",
+     "wikidataId": "Q826740"
     },
     {
      "id": "node/6863422794",
@@ -1641,7 +2352,8 @@
      "name": "Fasching",
      "lat": 59.3334,
      "lon": 18.05576,
-     "website": "https://www.fasching.se/"
+     "website": "https://www.fasching.se/",
+     "wikidataId": "Q10494245"
     },
     {
      "id": "node/1937145796",

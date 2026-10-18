@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "HAM",
- "fetchedAt": "2026-10-16T23:27:14.028Z",
+ "fetchedAt": "2026-10-18T11:56:11.771Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,14 +49,26 @@
      "lon": 9.98411,
      "address": "Platz der Deutschen Einheit 1",
      "website": "https://www.elbphilharmonie.de/de/",
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q673223",
+     "kinds": [
+      "business",
+      "concertHall",
+      "hotel",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "node/4417808181",
      "name": "Speicherstadt",
      "lat": 53.54401,
      "lon": 9.98698,
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q661881",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/5894237785",
@@ -65,7 +77,37 @@
      "lon": 10.00185,
      "address": "Fischertwiete 2",
      "website": "https://www.chilehaus.de/de/Auf-einen-Blick.html",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q542783",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q3964",
+     "name": "Hamburg Limanı",
+     "localName": "Port of Hamburg",
+     "lat": 53.54,
+     "lon": 9.98278,
+     "wikipediaCount": 34,
+     "wikidataId": "Q3964",
+     "kinds": [
+      "port",
+      "station"
+     ]
+    },
+    {
+     "id": "node/4417819561",
+     "name": "Reeperbahn",
+     "lat": 53.54949,
+     "lon": 9.96078,
+     "wikipediaCount": 30,
+     "wikidataId": "Q3976",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "node/10946039386",
@@ -75,7 +117,22 @@
      "address": "Kehrwieder 2-4",
      "website": "https://www.miniatur-wunderland.de/",
      "openingHours": "Mo-Su 07:00-01:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q685524",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q339572",
+     "name": "Millerntor-Stadion",
+     "lat": 53.55444,
+     "lon": 9.96778,
+     "wikipediaCount": 28,
+     "wikidataId": "Q339572",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/22731336",
@@ -84,7 +141,41 @@
      "lon": 9.9789,
      "address": "Englische Planke 1A",
      "website": "https://www.st-michaelis.de/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q674472",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1561",
+     "name": "HafenCity",
+     "lat": 53.54167,
+     "lon": 9.99333,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1561",
+     "kinds": [
+      "adminArea",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q705453",
+     "name": "Hamburg State Opera",
+     "lat": 53.55667,
+     "lon": 9.98889,
+     "wikipediaCount": 24,
+     "wikidataId": "Q705453",
+     "kinds": [
+      "business",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/142944431",
@@ -94,7 +185,49 @@
      "address": "Rathausmarkt 1",
      "website": "https://www.hamburg.de/rathaus/",
      "openingHours": "Mo-Th 10:00-15:15; Fr-Su 10:00-13:15",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q3987",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q668264",
+     "name": "Hamburg İslam Merkezi",
+     "localName": "Islamic Centre Hamburg",
+     "lat": 53.57457,
+     "lon": 10.00842,
+     "wikipediaCount": 20,
+     "wikidataId": "Q668264",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1783238",
+     "name": "Kontorhaus",
+     "localName": "Kontorhaus District",
+     "lat": 53.54889,
+     "lon": 10.00167,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1783238",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q616790",
+     "name": "St. Catherine's Church, Hamburg",
+     "lat": 53.546,
+     "lon": 9.99437,
+     "wikipediaCount": 18,
+     "wikidataId": "Q616790",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/8103463",
@@ -102,14 +235,95 @@
      "lat": 53.55687,
      "lon": 9.97998,
      "website": "https://plantenunblomen.hamburg.de/",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q494440"
+    },
+    {
+     "id": "wikidata/Q535443",
+     "name": "St. Peter’s Church",
+     "lat": 53.55028,
+     "lon": 9.99639,
+     "wikipediaCount": 17,
+     "wikidataId": "Q535443",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3238460",
+     "name": "Binnenalster",
+     "lat": 53.55471,
+     "lon": 9.99511,
+     "wikipediaCount": 15,
+     "wikidataId": "Q3238460"
+    },
+    {
+     "id": "wikidata/Q573491",
+     "name": "Domkirche St. Marien",
+     "lat": 53.55766,
+     "lon": 10.01367,
+     "wikipediaCount": 15,
+     "wikidataId": "Q573491",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1551",
+     "name": "Hamburg-Altstadt",
+     "lat": 53.55,
+     "lon": 10,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1551",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q684932",
+     "name": "Rote Flora",
+     "lat": 53.56199,
+     "lon": 9.9615,
+     "wikipediaCount": 15,
+     "wikidataId": "Q684932",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q634142",
+     "name": "Hamburg Dammtor",
+     "localName": "Hamburg Dammtor station",
+     "lat": 53.56083,
+     "lon": 9.98944,
+     "wikipediaCount": 14,
+     "wikidataId": "Q634142",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q3392985",
+     "name": "Außenalster",
+     "lat": 53.565,
+     "lon": 10.01,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3392985"
     },
     {
      "id": "way/45017024",
      "name": "Bismarck-Denkmal",
      "lat": 53.54869,
      "lon": 9.97205,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q540460",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/48361392",
@@ -119,14 +333,82 @@
      "address": "Bei den St. Pauli-Landungsbrücken",
      "website": "https://www.hamburg.de/alter-elbtunnel/",
      "openingHours": "24/7",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q460264",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3398930",
+     "name": "Am Rothenbaum",
+     "lat": 53.5737,
+     "lon": 9.99167,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3398930",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q51912",
+     "name": "El-Kudüs Camii",
+     "localName": "Al-Quds Mosque Hamburg",
+     "lat": 53.55694,
+     "lon": 10.01944,
+     "wikipediaCount": 11,
+     "wikidataId": "Q51912",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q6451",
+     "name": "Jungfernstieg",
+     "lat": 53.55306,
+     "lon": 9.9925,
+     "wikipediaCount": 11,
+     "wikidataId": "Q6451",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q458970",
+     "name": "St. Pauli Landing Stages",
+     "lat": 53.54611,
+     "lon": 9.96667,
+     "wikipediaCount": 11,
+     "wikidataId": "Q458970",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q456499",
+     "name": "Thalia Theater",
+     "lat": 53.55197,
+     "lon": 9.99828,
+     "wikipediaCount": 11,
+     "wikidataId": "Q456499",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "node/2720636699",
      "name": "Heinrich-Hertz-Turm",
      "lat": 53.56313,
      "lon": 9.97581,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q648375",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/137224834",
@@ -134,7 +416,12 @@
      "lat": 53.54458,
      "lon": 9.97295,
      "website": "https://www.rickmer-rickmers.de/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q479965",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/845145391",
@@ -142,7 +429,8 @@
      "lat": 53.52646,
      "lon": 10.00062,
      "website": "https://peking-freunde.de/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q249918"
     },
     {
      "id": "node/268476108",
@@ -152,7 +440,11 @@
      "address": "Kehrwieder 2",
      "website": "https://www.the-dungeons.de/",
      "openingHours": "Su-Th 10:00-17:00; Fr 11:00-19:00; Sa 10:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q882600",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/979332538",
@@ -161,7 +453,8 @@
      "lon": 9.97011,
      "website": "https://www.hamburg.de/dom",
      "openingHours": "2026 Mar 20-2026 Apr 19 Mo-Th 15:00-23:00; 2026 Mar 20-2026 Apr 19 Fr-Sa 15:00-24:00; 2026 Mar 20-2026 Apr 19 Su 14:00-23:00; 2026 Apr 03 off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q896467"
     },
     {
      "id": "node/443383971",
@@ -170,14 +463,23 @@
      "lon": 9.96655,
      "address": "Spielbudenplatz 3",
      "website": "https://www.panoptikum.de/de/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1773801",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/142944250",
      "name": "Deichstraße",
      "lat": 53.54663,
      "lon": 9.98794,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1183151",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/973035313",
@@ -187,21 +489,32 @@
      "address": "Spielbudenplatz 31",
      "website": "https://polizei.hamburg/",
      "openingHours": "24/7",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1177761",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "node/128398939",
      "name": "Krameramtsstuben",
      "lat": 53.54802,
      "lon": 9.98029,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q877252",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/432980656",
      "name": "BLEICHEN",
      "lat": 53.52937,
      "lon": 9.99869,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q883560"
     },
     {
      "id": "node/568490944",
@@ -209,42 +522,58 @@
      "lat": 53.55507,
      "lon": 9.99578,
      "website": "http://alsterfontaene.de/typisch-hamburg/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2651496"
     },
     {
      "id": "way/31053577",
      "name": "Alter Botanischer Garten",
      "lat": 53.55948,
      "lon": 9.98604,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11679872",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/617018037",
      "name": "Bischofsturm",
      "lat": 53.55001,
      "lon": 9.9979,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q866205",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/849896397",
      "name": "Schilleroper",
      "lat": 53.55801,
      "lon": 9.96175,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2235765"
     },
     {
      "id": "node/442010897",
      "name": "Park Fiction",
      "lat": 53.54619,
      "lon": 9.95708,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q2052509"
     },
     {
      "id": "way/997127889",
      "name": "Vierländerin-Brunnen",
      "lat": 53.54766,
      "lon": 9.99018,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18632417",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/268807434",
@@ -291,7 +620,12 @@
      "address": "Glockengießerwall 5",
      "website": "https://www.hamburger-kunsthalle.de/",
      "openingHours": "Tu-We 10:00-18:00; Th 10:00-21:00; Fr-Su 10:00-18:00",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q169542",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/6695848618",
@@ -301,7 +635,25 @@
      "address": "Willy-Brandt-Straße 60",
      "website": "https://www.mahnmal-st-nikolai.de/",
      "openingHours": "Mo-Su 10:00-21:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q425622",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "node/2714950847",
+     "name": "Museum für Hamburgische Geschichte",
+     "lat": 53.55043,
+     "lon": 9.97136,
+     "website": "http://www.millerntorwache.org/",
+     "openingHours": "24/7 \"Nur von außen zu besichtigen\"",
+     "wikipediaCount": 16,
+     "wikidataId": "Q665171",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/42864381",
@@ -311,7 +663,12 @@
      "address": "Steintorplatz 1",
      "website": "https://www.mkg-hamburg.de/",
      "openingHours": "Tu,We,Fr-Su 10:00-18:00; Mo off; Th 10:00-21:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q896052",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/25337154",
@@ -321,7 +678,11 @@
      "address": "Koreastraße 1",
      "website": "https://www.imm-hamburg.de/",
      "openingHours": "Mo-Su,PH 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q937608",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/137318607",
@@ -331,7 +692,11 @@
      "address": "Überseebrücke",
      "website": "https://www.capsandiego.de/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q858079",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/23191265",
@@ -341,7 +706,12 @@
      "address": "Deichtorstraße 1",
      "website": "https://www.deichtorhallen.de/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1183156",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/265761266",
@@ -351,7 +721,11 @@
      "address": "Alter Wandrahm 4",
      "website": "https://dialog-in-hamburg.de/",
      "openingHours": "Tu-Th 10:00-17:00; Fr-Sa 10:00-17:45; Su, PH 11:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q457196",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13041286663",
@@ -361,7 +735,11 @@
      "address": "Peterstraße 29-39",
      "website": "https://www.komponistenquartier.de/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q30526281",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/706970884",
@@ -371,7 +749,11 @@
      "address": "Peterstraße 39",
      "website": "https://brahms-hamburg.de/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q28745374",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3912562937",
@@ -380,7 +762,11 @@
      "lon": 9.99674,
      "website": "https://kaffeemuseum-burg.de/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q28478545",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5892735585",
@@ -389,7 +775,11 @@
      "lon": 9.96162,
      "address": "Bernhard-Nocht-Straße 79",
      "website": "https://erotic-art-museum.com/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q475236",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/861287892",
@@ -399,7 +789,12 @@
      "address": "Australiastraße",
      "website": "https://shmh.de/de/deutsches-hafenmuseum",
      "openingHours": "Nov-Mar: off; Mo-Fr 10:00-17:00; Tu off; Sa,Su 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1408998",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1650071826",
@@ -409,7 +804,12 @@
      "address": "Shanghaiallee 7",
      "website": "https://www.prototyp-hamburg.de/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16886704",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1643193207",
@@ -418,7 +818,11 @@
      "lon": 9.97715,
      "website": "http://www.telemann-hamburg.de/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q2401758",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/27443629",
@@ -428,7 +832,11 @@
      "address": "Bundesstraße 52",
      "website": "https://www.cenak.uni-hamburg.de/ausstellungen/museum-zoologie.html",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q220267",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/277296724",
@@ -438,7 +846,11 @@
      "address": "Alter Wandrahm 15-16",
      "website": "https://www.museum.zoll.de/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1206138",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/302710293",
@@ -448,7 +860,11 @@
      "address": "Am Sandtorkai 36",
      "website": "https://www.shmh.de/speicherstadtmuseum/",
      "openingHours": "Mar-Nov Mo-Fr 10:00-17:00, Mar-Nov Sa,Su 10:00-18:00; Dec-Feb Th-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2308634",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4960538797",
@@ -456,7 +872,11 @@
      "lat": 53.55125,
      "lon": 9.97713,
      "website": "http://www.komponistenquartier.de/die-museen/carl-philipp-emanuel-bach-museum",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q56640733",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1636614093",
@@ -464,7 +884,8 @@
      "lat": 53.54853,
      "lon": 10.00671,
      "website": "https://www.akademie-der-kuenste.de/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1453918"
     },
     {
      "id": "node/4960538796",
@@ -472,7 +893,11 @@
      "lat": 53.55121,
      "lon": 9.97711,
      "website": "http://www.komponistenquartier.de/die-museen/johann-adolf-hasse-museum",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q56640840",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/946081680",
@@ -482,7 +907,11 @@
      "address": "Auf der Brandshofer Schleuse 4",
      "website": "https://www.zusatzstoffmuseum.de/",
      "openingHours": "We,Fr-Su 11:00-17:00; Th 14:00-20:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1206139",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5460118667",
@@ -491,7 +920,11 @@
      "lon": 9.96905,
      "website": "https://www.fcstpauli-museum.de/",
      "openingHours": "We,Fr 15:00-19:00; Th 15:00-22:00; Sa 11:00-19:00; Su 10:00-18:00; PH off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q56877977",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/28207271",
@@ -501,7 +934,11 @@
      "address": "Bundesstraße",
      "website": "https://www.uni-hamburg.de/geol_pal/",
      "openingHours": "Mo-Fr 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1503225",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3168353161",
@@ -510,7 +947,11 @@
      "lon": 10.01208,
      "website": "https://www.kaufmann-stiftung.de/Genossenschaftsmuseum.html",
      "openingHours": "Tu-Th 14:00 -17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q19963918",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2712372730",
@@ -519,7 +960,12 @@
      "lon": 9.96337,
      "website": "http://www.hamburger-schulmuseum.de/",
      "openingHours": "Mo-Fr 10:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1573125",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/23191264",
@@ -529,7 +975,8 @@
      "address": "Deichtorstraße 2",
      "website": "https://www.deichtorhallen.de/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q134571475"
     },
     {
      "id": "way/34544690",
@@ -539,7 +986,11 @@
      "address": "Grindelallee 46",
      "website": "http://www.museen.uni-hamburg.de/mineralogie/de/start/index.html",
      "openingHours": "We 10:00-18:00, Su 10:00-17:00; PH closed",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1936597",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/301998423",
@@ -549,7 +1000,11 @@
      "address": "Am Sandtorkai 34",
      "website": "https://www.spicys.de/",
      "openingHours": "Nov-Jun Tu-Su 10:00-17:00;Jul-Oct Mo-Su 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1521070",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11242020637",
@@ -558,7 +1013,11 @@
      "lon": 10.01147,
      "website": "https://hamburger-zaubermuseum.com/",
      "openingHours": "Th-Fr 11:00-17:00; Sa-Su 11:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q115775596",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3664674297",
@@ -568,6 +1027,86 @@
      "address": "Paul-Roosen-Straße 43",
      "website": "https://affenfaustgalerie.de/",
      "openingHours": "We,Th,Sa 14:00-18:00"
+    },
+    {
+     "id": "node/12179084415",
+     "name": "Botschaft der Wildtiere",
+     "lat": 53.5382,
+     "lon": 10.0181,
+     "address": "Lucy-Borchardt-Straße 2",
+     "website": "https://www.botschaftderwildtiere.de/",
+     "openingHours": "Tu-Su 10:00-18:00"
+    },
+    {
+     "id": "node/3714346724",
+     "name": "Chocoversum",
+     "lat": 53.54795,
+     "lon": 10.00254,
+     "address": "Meßberg 1",
+     "website": "https://www.chocoversum.de/",
+     "openingHours": "We-Su 10:00-06:00"
+    },
+    {
+     "id": "node/3384691262",
+     "name": "Galerie Hafenliebe",
+     "lat": 53.54166,
+     "lon": 9.99595,
+     "address": "Am Dalmannkai 4",
+     "website": "https://www.galerie-hafenliebe.de/",
+     "openingHours": "Fr-Su 12:00-18:00"
+    },
+    {
+     "id": "node/13015984599",
+     "name": "Galerie Herold",
+     "lat": 53.55521,
+     "lon": 9.9905,
+     "address": "Colonnaden 5",
+     "website": "https://galerie-herold.de/",
+     "openingHours": "Tu-Fr 11:00-18:00; Sa \"Nach Absprache\""
+    },
+    {
+     "id": "node/4912277543",
+     "name": "Galerie Mathias Güntner",
+     "lat": 53.54881,
+     "lon": 9.98442,
+     "address": "Admiralitätstraße 71",
+     "website": "https://www.mathiasguentner.com/",
+     "openingHours": "Tu-Fr 12:00-18:00; Sa 12:00-15:00; PH,Su off"
+    },
+    {
+     "id": "node/9036284683",
+     "name": "Gallerie Kammer Rieck",
+     "lat": 53.56721,
+     "lon": 9.96511,
+     "website": "https://kammerrieck.gallery/",
+     "openingHours": "\"& by appointment\", Sa 12:00-16:00"
+    },
+    {
+     "id": "node/3550810789",
+     "name": "Greenpeace Ausstellung",
+     "lat": 53.54179,
+     "lon": 10.00121,
+     "address": "Hongkongstraße 10",
+     "website": "https://www.greenpeace.de/ausstellung-veranstaltungen",
+     "openingHours": "Tu-Fr 10:00-17:00"
+    },
+    {
+     "id": "node/12224128441",
+     "name": "Hamburg Werkstatt Fotografie",
+     "lat": 53.54661,
+     "lon": 9.9585,
+     "address": "Bernhard-Nocht-Straße 8",
+     "website": "https://www.hamburgwerkstattfotografie.com/",
+     "openingHours": "Sa 13:00-18:00"
+    },
+    {
+     "id": "way/582530178",
+     "name": "Info-Pavillon Hannoverscher Bahnhof",
+     "lat": 53.54358,
+     "lon": 10.00468,
+     "address": "Lohseplatz",
+     "website": "https://hannoverscher-bahnhof.hamburg.de/13857986/infopavillon/",
+     "openingHours": "Apr-Oct Mo-Su 12:00-18:00"
     }
    ]
   },
@@ -651,7 +1190,13 @@
      "id": "way/464787241",
      "name": "View Point",
      "lat": 53.53855,
-     "lon": 10.0081
+     "lon": 10.0081,
+     "wikidataId": "Q85007854",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ]
     }
    ]
   },
@@ -1194,6 +1739,7 @@
      "website": "https://www.bahn.de/service/zug/db-lounge#hamburg",
      "openingHours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:30-20:30",
      "cuisine": "drinks, snacks",
+     "wikidataId": "Q1152059",
      "detailed": true
     },
     {
@@ -1766,6 +2312,7 @@
      "lon": 9.97219,
      "website": "https://www.gruenspan.de/",
      "openingHours": "\"abhängig vom Programm\"",
+     "wikidataId": "Q1550320",
      "detailed": true
     },
     {
@@ -1776,6 +2323,7 @@
      "address": "Große Freiheit 58",
      "website": "https://www.gruenspan.de/",
      "openingHours": "\"wegen Sanierung geschlossen\"",
+     "wikidataId": "Q1550320",
      "detailed": true
     },
     {
@@ -1854,6 +2402,7 @@
      "address": "Reeperbahn 1",
      "website": "https://www.mojo.de/program",
      "openingHours": "\"Nur bei Veranstaltungen geöffnet.\"",
+     "wikidataId": "Q383118",
      "detailed": true
     },
     {
@@ -1873,6 +2422,7 @@
      "address": "St. Pauli Fischmarkt 27",
      "website": "https://pudel.com/",
      "openingHours": "We-Mo 20:00+; Tu off",
+     "wikidataId": "Q1535030",
      "detailed": true
     },
     {
@@ -1903,6 +2453,7 @@
      "address": "Feldstraße 66",
      "website": "https://www.uebelundgefaehrlich.com/",
      "openingHours": "\"Abhängig vom Veranstaltungsbeginn\"",
+     "wikidataId": "Q2473531",
      "detailed": true
     },
     {
@@ -1943,7 +2494,8 @@
      "lat": 53.54921,
      "lon": 9.96458,
      "address": "Spielbudenplatz 19",
-     "website": "https://www.docks.de/"
+     "website": "https://www.docks.de/",
+     "wikidataId": "Q1233759"
     },
     {
      "id": "node/4469658923",

@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "FLR",
- "fetchedAt": "2026-10-16T23:16:59.993Z",
+ "fetchedAt": "2026-10-18T16:02:02.369Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,14 +49,26 @@
      "lon": 11.25657,
      "website": "https://operaduomo.firenze.it/",
      "openingHours": "Mo-Sa 10:15-16:45; Su,PH closed",
-     "wikipediaCount": 69
+     "wikipediaCount": 69,
+     "wikidataId": "Q191739",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "relation/5342094",
      "name": "Ponte Vecchio",
      "lat": 43.76802,
      "lon": 11.25315,
-     "wikipediaCount": 48
+     "wikipediaCount": 48,
+     "wikidataId": "Q208633",
+     "kinds": [
+      "bridge",
+      "heritage",
+      "unesco"
+     ]
     },
     {
      "id": "way/777563049",
@@ -64,14 +76,27 @@
      "lat": 43.76836,
      "lon": 11.26289,
      "address": "Piazza Santa Croce 16",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q51177",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "relation/1461712",
      "name": "Palazzo Vecchio",
      "lat": 43.76915,
      "lon": 11.25669,
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q271928",
+     "kinds": [
+      "heritage",
+      "museum",
+      "office",
+      "palace"
+     ]
     },
     {
      "id": "way/166821303",
@@ -79,7 +104,23 @@
      "lat": 43.77315,
      "lon": 11.25503,
      "openingHours": "Mo-Su 09:00-19:45",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q732511",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q270474",
+     "name": "Stadio Artemio Franchi",
+     "lat": 43.78082,
+     "lon": 11.28226,
+     "wikipediaCount": 41,
+     "wikidataId": "Q270474",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/449369047",
@@ -88,7 +129,13 @@
      "lon": 11.24942,
      "address": "Piazza di Santa Maria Novella 18",
      "website": "http://www.chiesasantamarianovella.it/",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q51175",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/599900778",
@@ -97,21 +144,60 @@
      "lat": 43.77496,
      "lon": 11.25404,
      "openingHours": "Mo-Sa 10:00-17:00",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q573881",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
+    },
+    {
+     "id": "relation/20351217",
+     "name": "Piazza della Signoria",
+     "lat": 43.76958,
+     "lon": 11.25595,
+     "wikipediaCount": 34,
+     "wikidataId": "Q849846",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q911047",
+     "name": "Medici Riccardi Sarayı",
+     "localName": "Palazzo Medici Riccardi",
+     "lat": 43.77529,
+     "lon": 11.25599,
+     "wikipediaCount": 29,
+     "wikidataId": "Q911047",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/184781037",
      "name": "Basilica di San Miniato al Monte",
      "lat": 43.75945,
      "lon": 11.26511,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q844337",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/43284457",
      "name": "Loggia dei Lanzi",
      "lat": 43.7692,
      "lon": 11.25556,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q839746",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/251650632",
@@ -119,42 +205,289 @@
      "lat": 43.77285,
      "lon": 11.2557,
      "openingHours": "Mo-Su 08:15-19:45",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q1140023",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/442508011",
      "name": "Chiesa di Orsanmichele",
      "lat": 43.77071,
      "lon": 11.25502,
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q860816",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1519975",
+     "name": "Santo Spirito Bazilikası",
+     "localName": "Santo Spirito",
+     "lat": 43.76722,
+     "lon": 11.24778,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1519975",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q923702",
+     "name": "Rucellai Sarayı",
+     "localName": "Palazzo Rucellai",
+     "lat": 43.77128,
+     "lon": 11.2496,
+     "wikipediaCount": 23,
+     "wikidataId": "Q923702",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1042634",
+     "name": "Santa Maria del Carmine Bazilikası",
+     "localName": "Santa Maria del Carmine",
+     "lat": 43.76778,
+     "lon": 11.24361,
+     "wikipediaCount": 23,
+     "wikidataId": "Q1042634",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2287001",
+     "name": "Santissima Annunziata Bazilikası",
+     "localName": "Santissima Annunziata",
+     "lat": 43.7769,
+     "lon": 11.26128,
+     "wikipediaCount": 23,
+     "wikidataId": "Q2287001",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/7085758",
      "name": "Spedale degli Innocenti",
      "lat": 43.77601,
      "lon": 11.26139,
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q1257947"
+    },
+    {
+     "id": "wikidata/Q1062114",
+     "name": "Santa Trinita Bazilikası",
+     "localName": "Basilica of the Holy Trinity",
+     "lat": 43.77015,
+     "lon": 11.25072,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1062114",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2707802",
+     "name": "Floransa'nın Tarihi Merkezi",
+     "localName": "Historic Centre of Florence",
+     "lat": 43.77306,
+     "lon": 11.25611,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2707802",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q2778991",
+     "name": "Ognissanti Kilisesi",
+     "localName": "Ognissanti Church",
+     "lat": 43.77251,
+     "lon": 11.24598,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2778991",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/233265215",
      "name": "Piazzale Michelangiolo",
      "lat": 43.76279,
      "lon": 11.26497,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1348158",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2280593",
+     "name": "Tomb of Antipope John XXIII",
+     "lat": 43.7732,
+     "lon": 11.2546,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2280593",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1548456",
+     "name": "Floransa Büyük Sinagogu",
+     "localName": "Great Synagogue of Florence",
+     "lat": 43.77273,
+     "lon": 11.26633,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1548456",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2480856",
+     "name": "Gates of Paradise",
+     "lat": 43.7731,
+     "lon": 11.2552,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2480856"
+    },
+    {
+     "id": "wikidata/Q645374",
+     "name": "Neptün Çeşmesi",
+     "localName": "Fountain of Neptune",
+     "lat": 43.76956,
+     "lon": 11.25606,
+     "wikipediaCount": 14,
+     "wikidataId": "Q645374"
+    },
+    {
+     "id": "wikidata/Q2593098",
+     "name": "Tornabuoni Şapeli",
+     "localName": "Tornabuoni Chapel",
+     "lat": 43.77513,
+     "lon": 11.24943,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2593098",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2252810",
+     "name": "Duomo Meydanı",
+     "localName": "Piazza del Duomo",
+     "lat": 43.77287,
+     "lon": 11.25656,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2252810",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1283790",
+     "name": "Repubblica Meydanı",
+     "localName": "Piazza della Repubblica",
+     "lat": 43.77139,
+     "lon": 11.25389,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1283790",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/27590454",
      "name": "Mercato del Porcellino",
      "lat": 43.77002,
      "lon": 11.25424,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q917483"
+    },
+    {
+     "id": "wikidata/Q526637",
+     "name": "Sassetti Şapeli",
+     "localName": "Sassetti Chapel",
+     "lat": 43.77028,
+     "lon": 11.25083,
+     "wikipediaCount": 12,
+     "wikidataId": "Q526637",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q281532",
+     "name": "Spini Feroni Sarayı",
+     "localName": "Palazzo Spini Feroni",
+     "lat": 43.76959,
+     "lon": 11.25099,
+     "wikipediaCount": 12,
+     "wikidataId": "Q281532",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q3889546",
+     "name": "Antinori Sarayı",
+     "localName": "Palazzo Antinori",
+     "lat": 43.77282,
+     "lon": 11.25113,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3889546",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "node/4701406592",
      "name": "Cappella dei Magi",
      "lat": 43.77512,
      "lon": 11.25586,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q737232",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q660876",
+     "name": "New Sacristy",
+     "lat": 43.77516,
+     "lon": 11.25381,
+     "wikipediaCount": 11,
+     "wikidataId": "Q660876",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1261970",
+     "name": "Pergola Tiyatrosu",
+     "localName": "Teatro della Pergola",
+     "lat": 43.77328,
+     "lon": 11.26108,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1261970",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/24879633",
@@ -162,14 +495,21 @@
      "lat": 43.76308,
      "lon": 11.25375,
      "website": "http://museicivicifiorentini.comune.fi.it/fortebelvedere/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q72786",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/72905104",
      "name": "Arco di Trionfo",
      "lat": 43.78415,
      "lon": 11.26204,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3621797"
     },
     {
      "id": "way/480015428",
@@ -178,7 +518,8 @@
      "lon": 11.2532,
      "website": "https://www.mercatocentrale.it/firenze/",
      "openingHours": "Mo-Su 09:00-24:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3854843"
     },
     {
      "id": "way/397848200",
@@ -186,7 +527,12 @@
      "lat": 43.77312,
      "lon": 11.25695,
      "openingHours": "Mo-Fr 08:15-19:30; Sa 08:15-17:15; Su,PH 12:45-17:15",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3699556",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/946019247",
@@ -194,78 +540,36 @@
      "lat": 43.77109,
      "lon": 11.25392,
      "address": "Piazza della Repubblica 13r",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1025547",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/167972690",
      "name": "Porta Romana",
      "lat": 43.76074,
      "lon": 11.2419,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3398708",
+     "kinds": [
+      "adminArea",
+      "attraction"
+     ]
     },
     {
      "id": "way/272379110",
      "name": "Ex anfiteatro romano di Firenze",
      "lat": 43.76909,
      "lon": 11.26,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/946018387",
-     "name": "Caffè Concerto Paszkowski",
-     "lat": 43.77195,
-     "lon": 11.2537,
-     "address": "Piazza della Repubblica 35 R",
-     "cuisine": "pastry, coffee, sandwich",
-     "wikipediaCount": 3
-    },
-    {
-     "id": "way/111797401",
-     "name": "Generale Manfredo Fanti",
-     "lat": 43.77784,
-     "lon": 11.25876,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "relation/1631844",
-     "name": "Piazza di Santo Spirito",
-     "lat": 43.76673,
-     "lon": 11.24769,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "node/4129833608",
-     "name": "Porta della Mandorla",
-     "lat": 43.77333,
-     "lon": 11.25657,
-     "address": "Piazza del Duomo 5",
-     "wikipediaCount": 2
-    },
-    {
-     "id": "node/1713288174",
-     "name": "Monumento a Garibaldi",
-     "lat": 43.77369,
-     "lon": 11.24096,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "node/3740621395",
-     "name": "I Mosaici di Lastrucci",
-     "lat": 43.76872,
-     "lon": 11.26486,
-     "website": "http://www.imosaicidilastrucci.it/"
-    },
-    {
-     "id": "node/11246751095",
-     "name": "Altare della Rimembranza",
-     "lat": 43.75801,
-     "lon": 11.2625
-    },
-    {
-     "id": "node/8037518285",
-     "name": "Bizzarri Spezie",
-     "lat": 43.77026,
-     "lon": 11.25649
+     "wikipediaCount": 4,
+     "wikidataId": "Q519184",
+     "kinds": [
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     }
    ]
   },
@@ -281,7 +585,28 @@
      "lon": 11.25547,
      "website": "https://www.uffizi.it/",
      "openingHours": "Tu-Su 08:15-18:30; Mo off; Jan 1 off; Dec 25 off",
-     "wikipediaCount": 71
+     "wikipediaCount": 71,
+     "wikidataId": "Q51252",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "node/4162393290",
+     "name": "Pitti sarayı",
+     "localName": "Palazzo Pitti",
+     "lat": 43.76506,
+     "lon": 11.24982,
+     "address": "Piazza de' Pitti 1",
+     "website": "https://www.uffizi.it/palazzo-pitti",
+     "openingHours": "Mo-Su 08:15-18:50",
+     "wikipediaCount": 57,
+     "wikidataId": "Q29286",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/43837065",
@@ -290,7 +615,25 @@
      "lon": 11.25825,
      "website": "https://bargellomusei.it/",
      "openingHours": "2022 Jan 2-9: Mo-Fr 08:45-13:30, Sa 08:45-18:30, Su 08:45-13:30; Tu [1,3], Jan 1 off",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q388448",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q888825",
+     "name": "Boboli Bahçeleri",
+     "localName": "Boboli Gardens",
+     "lat": 43.7618,
+     "lon": 11.24661,
+     "wikipediaCount": 32,
+     "wikidataId": "Q888825",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/560308250",
@@ -300,28 +643,47 @@
      "address": "Via Ricasoli 58/60",
      "website": "https://www.galleriaaccademiafirenze.it/",
      "openingHours": "Tu-Su 08:15-18:50; Mo off; Jan 01 off; Dec 25 off",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q10855544",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3063152182",
      "name": "Palazzo Strozzi",
      "lat": 43.77128,
      "lon": 11.25177,
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q521619",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/1344547176",
      "name": "Corridoio Vasariano",
      "lat": 43.76746,
      "lon": 11.25362,
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q913058",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/307539790",
      "name": "Cappella de' Pazzi",
      "lat": 43.76798,
      "lon": 11.26285,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q600355",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/1701709658",
@@ -329,7 +691,8 @@
      "lat": 43.7761,
      "lon": 11.26066,
      "openingHours": "Th-Tu 08:30-14:00",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q1257947"
     },
     {
      "id": "node/1701709642",
@@ -339,7 +702,12 @@
      "address": "Piazza della Santissima Annunziata 9b",
      "website": "https://cultura.gov.it/luogo/maf-museo-archeologico-nazionale-di-firenze",
      "openingHours": "Tu-Fr 08:30-19:00; Mo,Sa,Su[1,3],PH 08:30-14:00; Su[2,4-5] off; Jan 01 off; Dec 25 off",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q637237",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5705862422",
@@ -348,7 +716,13 @@
      "lon": 11.25337,
      "website": "https://bargellomusei.it/musei/cappelle-medicee/",
      "openingHours": "Tu-Su 08:15-18:15",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1357573",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/2361645427",
@@ -358,7 +732,13 @@
      "address": "Piazza San Marco 3",
      "website": "https://www.polomusealetoscana.beniculturali.it/index.php?it/190/museo-di-san-marco-firenze",
      "openingHours": "Mo-Sa 08:15-13:50; Su [2], Su [4] 08:15-13:50; Mo [1], Mo [3] 08:15-13:50; Jan 1 off; Dec 25 off",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q13453137",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/3518187675",
@@ -368,7 +748,13 @@
      "address": "Piazza dei Giudici 1",
      "website": "https://www.museogalileo.it//",
      "openingHours": "Mo,We-Su 09:30-18:00; Tu 09:30-13:00; Jan 01,06,easter,May 01,Jun 24,Aug 15,Nov 01,Dec 08,25-26 off",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1668196",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/456578419",
@@ -376,7 +762,12 @@
      "lat": 43.77334,
      "lon": 11.25807,
      "openingHours": "Mo-Su 08:30-19:30; Tu[1] off",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1200696",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/204144329",
@@ -384,14 +775,25 @@
      "lat": 43.76992,
      "lon": 11.26364,
      "openingHours": "We-Mo 10:00-16:30",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q2418618",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4653668717",
      "name": "Cappella Brancacci",
      "lat": 43.76775,
      "lon": 11.24366,
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1996075",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/307153268",
@@ -399,7 +801,13 @@
      "lat": 43.77004,
      "lon": 11.2529,
      "website": "http://www.bargellomusei.beniculturali.it/musei/4/davanzati/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q657629",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/1135808773",
@@ -409,7 +817,12 @@
      "address": "Piazza dei Pitti 1",
      "website": "https://www.uffizi.it/palazzo-pitti/galleria-palatina",
      "openingHours": "Tu-Su 08:15-18:30; Mo off; Jan 1 off; Dec 25 off",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q866498",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5041557941",
@@ -417,7 +830,13 @@
      "lat": 43.773,
      "lon": 11.25605,
      "openingHours": "Mo-Sa 10:15-16:45; Su,PH closed",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q684119",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/307106623",
@@ -425,7 +844,12 @@
      "lat": 43.76753,
      "lon": 11.25951,
      "openingHours": "Mo-Sa 09:00-13:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q531218",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1393272390",
@@ -434,7 +858,11 @@
      "lon": 11.26168,
      "website": "https://www.sma.unifi.it/vp-244-orto-botanico.html",
      "openingHours": "Nov-Mar Tu-Su 10:00-16:00; Apr-May Tu-Su 10:00-18:00; Jun-Aug Tu-Su 10:00-19:00; Sep-Oct Tu-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1875558",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5883143685",
@@ -442,7 +870,13 @@
      "lat": 43.77414,
      "lon": 11.24778,
      "openingHours": "10:00-20:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2517185",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/12000993432",
@@ -452,7 +886,12 @@
      "address": "Via Romana 17",
      "website": "https://www.sma.unifi.it/p245.html",
      "openingHours": "Tu-Su 09:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1799158",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4274486896",
@@ -462,7 +901,12 @@
      "address": "Piazza di Santa Trinita 5 R",
      "website": "https://www.ferragamo.com/museo",
      "openingHours": "Mo-Su 10:00-19:30",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q7406653",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4277839535",
@@ -472,7 +916,12 @@
      "address": "Via Ventisette Aprile 1",
      "website": "https://www.polomusealetoscana.beniculturali.it/index.php?it/179/cenacolo-di-santapollonia-firenze",
      "openingHours": "Mo-Su 08:30-13:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2786038",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/306252410",
@@ -482,7 +931,13 @@
      "address": "Via Camillo Cavour 69",
      "website": "https://www.polomusealetoscana.beniculturali.it/index.php?it/183/chiostro-dello-scalzo-firenze",
      "openingHours": "Tu-Sa 08:15-14:00; Mo [1] 08:15-14:00; Mo [3] 08:15-14:00; Su [2] 08:15-14:00; Su [4] 08:15-14:00; Jun 08-Jul 16 off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2979780",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/2934171474",
@@ -490,21 +945,35 @@
      "lat": 43.77109,
      "lon": 11.25705,
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3661285",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/253942619",
      "name": "Chiesa di Santo Stefano al Ponte",
      "lat": 43.76863,
      "lon": 11.25431,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3674332",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/3213287243",
      "name": "Museo delle porcellane",
      "lat": 43.7619,
      "lon": 11.2524,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3868160",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/6403553785",
@@ -513,14 +982,24 @@
      "lon": 11.266,
      "website": "https://www.jewishtuscany.it/",
      "openingHours": "Su-Fr 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q55373910",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/120136060",
      "name": "Galleria Rinaldo Carnielo",
      "lat": 43.78129,
      "lon": 11.2665,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3757693",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4652436365",
@@ -530,7 +1009,112 @@
      "address": "Piazza de' Pitti 1",
      "website": "https://www.uffizi.it/palazzo-pitti/museo-della-moda-e-del-costume",
      "openingHours": "Tu-Su 08:15-18:30; Mo off; Jan 1 off; Dec 25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3757738",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/10016831037",
+     "name": "Museo Annigoni",
+     "lat": 43.76401,
+     "lon": 11.25623,
+     "website": "https://www.villabardini.it/museo-annigoni/",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1224820",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3519960102",
+     "name": "Museo diocesano di Santo Stefano al Ponte",
+     "lat": 43.76864,
+     "lon": 11.25405,
+     "openingHours": "Mo-Fr 10:00-19:00; PH,Sa,Su 10:00-20:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3330318",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/5313778547",
+     "name": "Museo Nazionale Alinari della Fotografia",
+     "lat": 43.77304,
+     "lon": 11.24884,
+     "address": "Piazza Santa Maria Novella 10",
+     "website": "https://www.museonovecento.it/",
+     "wikipediaCount": 3,
+     "wikidataId": "Q38901928",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/949722969",
+     "name": "Museo Stefano Bardini",
+     "lat": 43.76497,
+     "lon": 11.2584,
+     "address": "Via dei Renai 37",
+     "openingHours": "Mo,Fr-Su 11:00-17:00; Tu-Th off",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3867573",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1536508344",
+     "name": "Vecchio sarayı",
+     "localName": "Gabinetto dei Disegni e delle Stampe degli Uffizi",
+     "lat": 43.76877,
+     "lon": 11.25617,
+     "address": "Via della Ninna 5",
+     "website": "https://www.uffizi.it/gli-uffizi/disegni-e-stampe",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3756440",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/7319882309",
+     "name": "Casa Giorgio Vasari",
+     "lat": 43.76801,
+     "lon": 11.26073,
+     "wikipediaCount": 3,
+     "wikidataId": "Q55673999"
+    },
+    {
+     "id": "node/3112668431",
+     "name": "Casa Guidi",
+     "lat": 43.76525,
+     "lon": 11.24797,
+     "wikipediaCount": 3,
+     "wikidataId": "Q3661112",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3120274425",
+     "name": "Museo nazionale di antropologia ed etnologia",
+     "lat": 43.77172,
+     "lon": 11.25807,
+     "wikipediaCount": 3,
+     "wikidataId": "Q3330682",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     }
    ]
   },
@@ -713,6 +1297,7 @@
      "website": "http://www.enotecapinchiorri.com/",
      "openingHours": "Tu-Sa 19:30-22:00",
      "cuisine": "fine dining",
+     "wikidataId": "Q1405579",
      "detailed": true
     },
     {
@@ -1051,6 +1636,7 @@
      "address": "Via Roma 1r",
      "website": "https://www.caffegilli.com/",
      "cuisine": "coffee shop, dessert",
+     "wikidataId": "Q2932914",
      "detailed": true
     },
     {

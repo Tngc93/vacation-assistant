@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "NAP",
- "fetchedAt": "2026-10-16T23:17:54.299Z",
+ "fetchedAt": "2026-10-18T16:02:49.633Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,15 @@
      "lon": 14.2498,
      "address": "Via San Carlo 98",
      "website": "https://www.teatrosancarlo.it/",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q628491",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/15009683",
@@ -58,7 +66,13 @@
      "lon": 14.25329,
      "website": "https://www.comune.napoli.it/vivere-il-comune/luoghi/castel-nuovo-maschio-angioino/",
      "openingHours": "Mo-Su 09:00-19:00",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q781219",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "relation/62237",
@@ -68,7 +82,13 @@
      "address": "Piazza del Plebiscito",
      "website": "https://palazzorealedinapoli.org/",
      "openingHours": "Th-Tu 09:00-20:00; We off",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q426339",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/338168783",
@@ -76,7 +96,26 @@
      "lat": 40.82775,
      "lon": 14.24805,
      "openingHours": "Mo-Sa 09:00-18:30; Su 09:00-14:00",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q645041",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q859732",
+     "name": "Certosa di San Martino",
+     "lat": 40.84341,
+     "lon": 14.24113,
+     "wikipediaCount": 22,
+     "wikidataId": "Q859732",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/29403971",
@@ -86,7 +125,25 @@
      "address": "Via Tito Angelini 22",
      "website": "http://www.polomusealecampania.beniculturali.it/index.php/il-castello",
      "openingHours": "Mo-Su 08:30-18:30",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1048627",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q241410",
+     "name": "San Francesco di Paola",
+     "lat": 40.8353,
+     "lon": 14.2475,
+     "wikipediaCount": 20,
+     "wikidataId": "Q241410",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/242286729",
@@ -94,14 +151,221 @@
      "lat": 40.83851,
      "lon": 14.24935,
      "openingHours": "24/7",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1007726"
+    },
+    {
+     "id": "way/150562144",
+     "name": "Campanile di Santa Chiara",
+     "lat": 40.84751,
+     "lon": 14.25299,
+     "wikipediaCount": 18,
+     "wikidataId": "Q810104",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/27182911",
      "name": "Piazza del Plebiscito",
      "lat": 40.83588,
      "lon": 14.24865,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1047594",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q897603",
+     "name": "Basilica of St. Dominic",
+     "lat": 40.84873,
+     "lon": 14.25441,
+     "wikipediaCount": 16,
+     "wikidataId": "Q897603",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1084608",
+     "name": "San Lorenzo Maggiore",
+     "lat": 40.85093,
+     "lon": 14.25812,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1084608",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2256644",
+     "name": "Biblioteca nazionale Vittorio Emanuele III",
+     "lat": 40.83619,
+     "lon": 14.24956,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2256644",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q718774",
+     "name": "Gesù Nuovo",
+     "lat": 40.84762,
+     "lon": 14.2518,
+     "wikipediaCount": 14,
+     "wikidataId": "Q718774",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q693174",
+     "name": "San Paolo Maggiore",
+     "lat": 40.85144,
+     "lon": 14.25683,
+     "wikipediaCount": 14,
+     "wikidataId": "Q693174",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q926401",
+     "name": "piazza Dante",
+     "lat": 40.84902,
+     "lon": 14.25007,
+     "wikipediaCount": 13,
+     "wikidataId": "Q926401",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q3398528",
+     "name": "Port of Naples",
+     "lat": 40.84216,
+     "lon": 14.25736,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3398528",
+     "kinds": [
+      "port",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q955081",
+     "name": "San Giacomo degli Spagnoli",
+     "lat": 40.84065,
+     "lon": 14.24992,
+     "wikipediaCount": 13,
+     "wikidataId": "Q955081",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q281957",
+     "name": "San Giorgio Maggiore",
+     "localName": "San Giorgio Maggiore, Naples",
+     "lat": 40.84971,
+     "lon": 14.26075,
+     "wikipediaCount": 13,
+     "wikidataId": "Q281957",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q368820",
+     "name": "San Pietro a Majella Conservatory of Music",
+     "lat": 40.84944,
+     "lon": 14.2525,
+     "wikipediaCount": 13,
+     "wikidataId": "Q368820",
+     "kinds": [
+      "business",
+      "palace",
+      "school",
+      "university"
+     ]
+    },
+    {
+     "id": "wikidata/Q1255667",
+     "name": "Church of San Ferdinando, Naples",
+     "lat": 40.8376,
+     "lon": 14.2487,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1255667",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q289414",
+     "name": "Girolamini",
+     "lat": 40.85193,
+     "lon": 14.25848,
+     "wikipediaCount": 12,
+     "wikidataId": "Q289414",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2932919",
+     "name": "Caffè Gambrinus, Naples",
+     "lat": 40.83672,
+     "lon": 14.24844,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2932919",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1239540",
+     "name": "Port'Alba, Naples",
+     "lat": 40.8494,
+     "lon": 14.2518,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1239540",
+     "kinds": [
+      "adminArea",
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q220221",
+     "name": "Stazione Zoologica Anton Dohrn",
+     "lat": 40.8327,
+     "lon": 14.23577,
+     "wikipediaCount": 11,
+     "wikidataId": "Q220221",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q1015161",
+     "name": "via Toledo",
+     "lat": 40.8456,
+     "lon": 14.2492,
+     "wikipediaCount": 10,
+     "wikidataId": "Q1015161",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "node/5126351599",
@@ -111,28 +375,34 @@
      "address": "Piazza San Gaetano 69",
      "website": "https://www.napolisotterranea.org/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 09:30-18:00",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/9695986979",
-     "name": "Napoli Sotterana",
-     "lat": 40.85114,
-     "lon": 14.2568,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q721189",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/261256738",
      "name": "Guglia dell'Immacolata",
      "lat": 40.84701,
      "lon": 14.25161,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1297358",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/11846926045",
      "name": "Villa di Licinio Lucullo",
      "lat": 40.83114,
      "lon": 14.24795,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4012739",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/1122261408",
@@ -140,70 +410,95 @@
      "lat": 40.83876,
      "lon": 14.23282,
      "address": "Corso Vittorio Emanuele 165",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q604040",
+     "kinds": [
+      "adminArea",
+      "castle"
+     ]
     },
     {
      "id": "node/2762632324",
      "name": "Teatro romano di Neapolis",
      "lat": 40.85231,
      "lon": 14.25652,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2202658",
+     "kinds": [
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     },
     {
      "id": "node/5370523028",
      "name": "Fontana dei Papiri",
      "lat": 40.83493,
      "lon": 14.25164,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1534326"
     },
     {
      "id": "node/9069159717",
      "name": "Obelisco - Meridiana",
      "lat": 40.83282,
      "lon": 14.2289,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q56323322"
     },
     {
      "id": "way/1112311694",
      "name": "Chiesa del Carminiello ai Mannesi",
      "lat": 40.85122,
      "lon": 14.2602,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3668522",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/5370523008",
      "name": "Fontana dei Leoni",
      "lat": 40.83536,
      "lon": 14.25062,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1002731"
     },
     {
      "id": "way/339324910",
      "name": "Monumento ai Caduti del Mare",
      "lat": 40.83146,
      "lon": 14.24125,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q56323312"
     },
     {
      "id": "node/5157946200",
      "name": "Fontana delle Conchiglie",
      "lat": 40.83586,
      "lon": 14.25187,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3747401"
     },
     {
      "id": "way/1169442497",
      "name": "Ponte romano",
      "lat": 40.85123,
      "lon": 14.23678,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3908181",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "node/13176976115",
      "name": "Resti del Complesso di San Gaudioso",
      "lat": 40.85252,
      "lon": 14.25375,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3685209"
     },
     {
      "id": "node/4207806285",
@@ -246,24 +541,6 @@
      "lat": 40.83181,
      "lon": 14.25007,
      "address": "Via Generale Giordano Orsini 40"
-    },
-    {
-     "id": "way/150562144",
-     "name": "Campanile di Santa Chiara",
-     "lat": 40.84751,
-     "lon": 14.25299
-    },
-    {
-     "id": "node/12949786601",
-     "name": "Cavallo carafa",
-     "lat": 40.84861,
-     "lon": 14.25698
-    },
-    {
-     "id": "way/269909735",
-     "name": "Dante Alighieri",
-     "lat": 40.84895,
-     "lon": 14.25011
     }
    ]
   },
@@ -279,7 +556,12 @@
      "address": "Piazza Museo Nazionale 19",
      "website": "https://www.museoarcheologiconapoli.it/",
      "openingHours": "We-Mo 09:00-19:30; Tu off",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q637248",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/123977918",
@@ -289,7 +571,25 @@
      "address": "Via Francesco de Sanctis 19;21",
      "website": "https://www.museosansevero.it/",
      "openingHours": "We-Mo 09:00-19:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q897839",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3523",
+     "name": "Gizli Müze, Napoli",
+     "localName": "Secret Museum",
+     "lat": 40.85338,
+     "lon": 14.25049,
+     "wikipediaCount": 16,
+     "wikidataId": "Q3523",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4258447333",
@@ -298,7 +598,12 @@
      "lon": 14.24965,
      "address": "Galleria Umberto I 19",
      "website": "https://www.ascione.it/mobi/it/passione/museo.html",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q729943",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3683555296",
@@ -308,14 +613,23 @@
      "address": "Via dei Mille 60",
      "website": "http://www.palazzoartinapoli.net/",
      "openingHours": "Mo-Fr 09:30-20:30; Sa-Su 09:30-21:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1228306",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/13810374911",
      "name": "Museo nazionale di San Martino",
      "lat": 40.8436,
      "lon": 14.24102,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3329345",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4194078289",
@@ -324,7 +638,11 @@
      "lon": 14.24628,
      "address": "Vico del Grottone 4",
      "website": "https://www.galleriaborbonica.com/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4000489",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "node/3733540789",
@@ -334,14 +652,24 @@
      "address": "Via Domenico Cimarosa 77",
      "website": "http://www.polomusealecampania.beniculturali.it/index.php/il-museo",
      "openingHours": "We-Su 08:30-16:15; Tu off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3868424",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3515649877",
      "name": "Museo civico Gaetano Filangieri",
      "lat": 40.84901,
      "lon": 14.26074,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3867775",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/13789076946",
@@ -351,7 +679,12 @@
      "address": "Via Vittorio Emanuele III snc",
      "website": "https://cultura.gov.it/luogo/museo-civico-castelnuovo",
      "openingHours": "Mo-Su 09:00-19:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3867811",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5280124543",
@@ -359,14 +692,23 @@
      "lat": 40.85157,
      "lon": 14.25095,
      "openingHours": "Tu-Fr 09:30-15:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3757741",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/270701756",
      "name": "Chiesa di Santa Luciella a San Biagio dei Librai",
      "lat": 40.8493,
      "lon": 14.25711,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q667605",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/3466005069",
@@ -376,7 +718,8 @@
      "address": "Via Toledo 179;180;181;182;183;184;185;186;187",
      "website": "https://www.gallerieditalia.com/it/napoli/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 10:00-20:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3757772"
     },
     {
      "id": "way/267077343",
@@ -385,7 +728,11 @@
      "lon": 14.25837,
      "website": "https://www.museiscienzenaturaliefisiche.it/it/musei/museo-di-paleontologia.html",
      "openingHours": "Tu,We,Fr 09:00-13:30; Mo,Th 09:00-13:30, 14:15-16:30",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3868220",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/79299088",
@@ -393,21 +740,33 @@
      "lat": 40.84597,
      "lon": 14.25319,
      "openingHours": "Mo-Sa 09:30-17:30+; Su 10:00-14:30+",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q21192700",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/13915431230",
      "name": "Museo artistico industriale Filippo Palizzi",
      "lat": 40.83423,
      "lon": 14.24836,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3867742",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13789755439",
      "name": "Museo delle Carrozze",
      "lat": 40.8355,
      "lon": 14.233,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q22814838",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/18383415",
@@ -416,17 +775,8 @@
      "lon": 14.25756,
      "website": "https://www.museiscienzenaturaliefisiche.it/",
      "openingHours": "Tu,We,Fr 09:00-13:30; Mo,Th 09:00-13:30, 14:15-16:30",
-     "wikipediaCount": 1
-    },
-    {
-     "id": "node/13287788568",
-     "name": "Musei Universitari di Mineralogia, Zoologia ed Antropologia",
-     "lat": 40.84667,
-     "lon": 14.25651,
-     "address": "Via Mezzocannone",
-     "website": "https://www.museiscienzenaturaliefisiche.it/",
-     "openingHours": "Tu,We,Fr 09:00-13:30; Mo,Th 09:00-13:30, 14:15-16:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3664864"
     },
     {
      "id": "node/13810374912",
@@ -436,7 +786,11 @@
      "address": "Via Tito Angelini 22",
      "website": "http://www.polomusealecampania.beniculturali.it/index.php/museo-del-900",
      "openingHours": "We-Mo 09:30-16:15; Tu off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3867626",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11813405712",
@@ -446,7 +800,12 @@
      "address": "Via Mezzocannone 8",
      "website": "https://www.museiscienzenaturaliefisiche.it/it/musei/museo-di-fisica.html",
      "openingHours": "Tu,We,Fr 09:00-13:30; Mo,Th 09:00-13:30, 14:15-16:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3868211",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3515649876",
@@ -456,7 +815,12 @@
      "address": "Piazza Trieste e Trento 48",
      "website": "https://www.fondazionecircoloartistico.it/",
      "openingHours": "Tu-Sa 10:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3867608",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/13813622751",
@@ -466,7 +830,11 @@
      "address": "Via Partenope 10a",
      "website": "http://museorientale.unior.it/",
      "openingHours": "Mo-Su closed; PH closed",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16580532",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4394926693",
@@ -475,7 +843,11 @@
      "lon": 14.25868,
      "website": "https://ospedaledellebambole.it/",
      "openingHours": "Mo-Fr 14:30-18:30; Tu,Th 10:00-14:30; Sa 10:00-12:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q86664226",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13789450948",
@@ -483,14 +855,23 @@
      "lat": 40.85085,
      "lon": 14.25553,
      "openingHours": "Mo,Tu 09:30-12:30; Th 14:30-17:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3868001",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13790859343",
      "name": "Museo dell'Opera di Santa Chiara",
      "lat": 40.84609,
      "lon": 14.25387,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q3868004",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5223459922",
@@ -525,7 +906,12 @@
      "lon": 14.24812,
      "address": "Vico Lungo Pontecorvo 29d",
      "website": "https://www.museonitsch.org/it/",
-     "openingHours": "Mo-Fr 10:00-19:00, Sa-Su 10:00-16:00"
+     "openingHours": "Mo-Fr 10:00-19:00, Sa-Su 10:00-16:00",
+     "wikidataId": "Q21552047",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/13810369364",
@@ -534,7 +920,98 @@
      "lon": 14.23354,
      "address": "Largo Principessa Rosina Pignatelli 201",
      "website": "https://palazzorealedinapoli.org/sedi/villa-pignatelli/",
-     "openingHours": "We-Su 09:30-16:00; Tu off"
+     "openingHours": "We-Su 09:30-16:00; Tu off",
+     "wikidataId": "Q55685956",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/12206971413",
+     "name": "Complesso Museale dell'Augustissima Arciconfraternita dei Pellegrini",
+     "lat": 40.84733,
+     "lon": 14.24771,
+     "website": "https://museodeipellegrini.it/",
+     "wikidataId": "Q21551964",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/8866314829",
+     "name": "LAPIS Museum - Museo dell'Acqua Napoli",
+     "lat": 40.8503,
+     "lon": 14.2546,
+     "website": "https://www.lapismuseum.com/"
+    },
+    {
+     "id": "node/13197324775",
+     "name": "Llabbasc",
+     "lat": 40.85004,
+     "lon": 14.25257,
+     "address": "Vico San Pietro a Majella 6",
+     "website": "https://www.llabbasc.it/"
+    },
+    {
+     "id": "node/8498056621",
+     "name": "Museo del Mare Darwin-Dohrn",
+     "lat": 40.83282,
+     "lon": 14.23373,
+     "address": "Viale Anton Dohrn",
+     "website": "https://fondazionedohrn.it/home/dadom/"
+    },
+    {
+     "id": "node/4281257105",
+     "name": "Museo Fondazione PLART - Plastiche e Arte",
+     "lat": 40.83621,
+     "lon": 14.23233,
+     "address": "Via Giuseppe Martucci 48",
+     "website": "https://www.fondazioneplart.it/"
+    },
+    {
+     "id": "node/12548707833",
+     "name": "Museo San Giuseppe dei Nudi",
+     "lat": 40.85294,
+     "lon": 14.24794,
+     "address": "Via Giuseppe Mancinelli 19",
+     "website": "https://www.sangiuseppedeinudi.org/",
+     "wikidataId": "Q140291914",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/7045296374",
+     "name": "Museodivino",
+     "lat": 40.84773,
+     "lon": 14.25405,
+     "address": "Via San Giovanni Maggiore Pignatelli 1b",
+     "website": "https://www.museodivinonapoli.it/"
+    },
+    {
+     "id": "node/13175207115",
+     "name": "Tipografia Museo",
+     "lat": 40.85236,
+     "lon": 14.25587,
+     "openingHours": "\"chiedere alla tipografia strada dell'anticaglia tutti i giorni tranne domenica\""
+    },
+    {
+     "id": "node/2685752767",
+     "name": "ARCA - Arte Religiosa Contemporanea",
+     "lat": 40.84397,
+     "lon": 14.25294,
+     "wikidataId": "Q21551893",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "relation/3622561",
+     "name": "Convento di San Domenico Maggiore",
+     "lat": 40.84911,
+     "lon": 14.2535
     }
    ]
   },
@@ -618,6 +1095,7 @@
      "website": "https://www.anticapizzeriaportalba.com/",
      "openingHours": "We-Mo 12:00-24:00",
      "cuisine": "pizza",
+     "wikidataId": "Q2853150",
      "detailed": true
     },
     {
@@ -910,6 +1388,10 @@
      "website": "https://grancaffegambrinus.com/",
      "openingHours": "Mo-Su 08:00-23:00; PH closed",
      "cuisine": "italian, sandwich",
+     "wikidataId": "Q2932919",
+     "kinds": [
+      "business"
+     ],
      "detailed": true
     },
     {

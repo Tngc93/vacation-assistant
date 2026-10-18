@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Place } from "./place";
-import { detailScore, MAX_PLACES_PER_CATEGORY, rankPlaces } from "./rank";
+import { categoryCap, detailScore, MAX_PLACES_PER_CATEGORY, MAX_SIGHTS_PER_CATEGORY, rankPlaces } from "./rank";
 
 const place = (id: string, extra: Partial<Place> = {}): Place => ({
   id,
@@ -59,7 +59,7 @@ describe("rankPlaces", () => {
 
   it("breaks ties by Turkish alphabetical order, removes duplicates and keeps at most 30", () => {
     const many = Array.from({ length: 45 }, (_, i) => place(`P${String(i).padStart(2, "0")}`));
-    expect(rankPlaces([...many, many[0]], "museum")).toHaveLength(MAX_PLACES_PER_CATEGORY);
+    expect(rankPlaces([...many, many[0]], "museum")).toHaveLength(MAX_SIGHTS_PER_CATEGORY);
     expect(rankPlaces([place("Zeytin"), place("Çınar"), place("Cam")], "museum").map((p) => p.name)).toEqual([
       "Cam",
       "Çınar",
@@ -73,12 +73,13 @@ describe("rankPlaces", () => {
       place("way/2", { name: "La Rambla", lat: 41.3841, lon: 2.1706 }),
       place("way/1", { name: "La Rambla", lat: 41.3809, lon: 2.1735, wikidataId: "Q1" }),
     ];
-    const many = Array.from({ length: 40 }, (_, i) => place(`P${String(i).padStart(2, "0")}`));
+    const many = Array.from({ length: 50 }, (_, i) => place(`P${String(i).padStart(2, "0")}`));
     const ranked = rankPlaces([...twins, ...many], "museum", counts);
-    expect(ranked).toHaveLength(MAX_PLACES_PER_CATEGORY);
+    expect(ranked).toHaveLength(categoryCap("museum"));
     expect(ranked[0]).toMatchObject({ id: "way/1", wikipediaCount: 80 });
     expect(ranked.filter((p) => p.name === "La Rambla")).toHaveLength(1);
-    expect(ranked.at(-1)?.name).toBe("P28");
+    // The twin takes no slot: 39 other places fit after it.
+    expect(ranked.at(-1)?.name).toBe("P38");
   });
 
   it("keeps chain branches with the same name apart in food and drink", () => {
@@ -87,6 +88,16 @@ describe("rankPlaces", () => {
       place("node/2", { category: "cafe", name: "Starbucks", lat: 41.3871, lon: 2.1701 }),
     ];
     expect(rankPlaces(branches, "cafe")).toHaveLength(2);
+  });
+
+  it("keeps 40 sights and museums (the must-see list) and 30 of everything else", () => {
+    expect([categoryCap("see"), categoryCap("museum"), categoryCap("viewpoint"), categoryCap("restaurant")]).toEqual([
+      MAX_SIGHTS_PER_CATEGORY,
+      MAX_SIGHTS_PER_CATEGORY,
+      MAX_PLACES_PER_CATEGORY,
+      MAX_PLACES_PER_CATEGORY,
+    ]);
+    expect(MAX_SIGHTS_PER_CATEGORY).toBe(40);
   });
 
   it("scores detail from website, opening hours and cuisine", () => {

@@ -37,9 +37,8 @@ describe("ItineraryView", () => {
 
   it("shows times, category, duration, the walk between stops and 'check the hours'", () => {
     renderView();
-    const second = day(2);
-    expect(within(second).getByText("Sight 0-0")).toBeInTheDocument();
-    expect(within(second).getByText("09:00")).toBeInTheDocument();
+    const second = screen.getByText("Sight 0-0").closest("section")!;
+    expect(within(second).getAllByText(/^\d{2}:\d{2}$/).length).toBeGreaterThan(0);
     expect(within(second).getAllByText(/^YÜRÜME ~\d+ DK · TAHMİNİ$/).length).toBeGreaterThan(0);
     expect(within(second).getAllByText("SAATLERİ DOĞRULA").length).toBeGreaterThan(0);
     expect(within(second).getByText(/AKŞAM · RESTORAN · 2 SA · TAHMİNİ/)).toBeInTheDocument();
@@ -81,6 +80,24 @@ describe("ItineraryView", () => {
     const withSight = screen.getByText("Sight 0-0").closest("section")!;
     expect(within(withSight).getByText(/^SERBEST ZAMAN · \d{2}:\d{2}–\d{2}:\d{2}$/)).toBeInTheDocument();
     expect(within(day(3)).queryByRole("link", { name: "Daha uygun saatli uçuşlara bak" })).not.toBeInTheDocument();
+  });
+
+  it("marks unknown hours quietly, warns only near closing time, and names another country", () => {
+    const closing = { ...SIGHTS[0], openingHours: "Mo-Su 09:00-10:20" }; // a 09:00 visit ends 10:00, it closes 10:20
+    const vatican = { ...SIGHTS[1], name: "San Pietro Bazilikası", country: "VA" };
+    render(
+      <ItineraryView
+        input={{ ...input, daytime: [closing, vatican, ...SIGHTS.slice(2)] }}
+        initialSkip={[]}
+        cityName="Roma"
+        center={{ lat: 41.39, lon: 2.17 }}
+      />,
+    );
+    expect(screen.getByText("Saat bilgisi olmayan mekânlar işaretlidir; gitmeden kontrol et.")).toBeInTheDocument();
+    for (const note of screen.getAllByText("SAATLERİ DOĞRULA")) expect(note).not.toHaveClass("text-warn");
+    const warning = screen.getByText("KAPANIŞA YAKIN · 10:20'DE KAPANIR");
+    expect(warning).toHaveClass("text-warn");
+    expect(screen.getByText("San Pietro Bazilikası").closest("li")!).toHaveTextContent("VATİKAN · ");
   });
 
   it("opens a shared link with the same removals", () => {

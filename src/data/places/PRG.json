@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "PRG",
- "fetchedAt": "2026-10-16T23:33:53.886Z",
+ "fetchedAt": "2026-10-18T16:23:50.023Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,14 +48,27 @@
      "lat": 50.09081,
      "lon": 14.40165,
      "website": "https://www.hrad.cz/",
-     "wikipediaCount": 65
+     "wikipediaCount": 65,
+     "wikidataId": "Q193369",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/4053134",
      "name": "Karlův most",
      "lat": 50.08647,
      "lon": 14.41137,
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q204871",
+     "kinds": [
+      "bridge",
+      "heritage",
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/1568419039",
@@ -64,7 +77,12 @@
      "lon": 14.40055,
      "website": "https://www.katedralasvatehovita.cz/",
      "openingHours": "Nov-Mar Mo-Sa 09:00-16:00; Nov-Mar Su 12:00-16:00; Apr-Oct Mo-Sa 09:00-17:00; Apr-Oct Su 12:00-17:00",
-     "wikipediaCount": 59
+     "wikipediaCount": 59,
+     "wikidataId": "Q5949",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/4748580936",
@@ -73,14 +91,49 @@
      "lat": 50.08698,
      "lon": 14.42071,
      "openingHours": "Mo 11:00-22:00; Tu-Su 09:00-22:00",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q729370",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q421678",
+     "name": "Eski Kent Meydanı",
+     "localName": "Old Town Square",
+     "lat": 50.0875,
+     "lon": 14.42139,
+     "wikipediaCount": 40,
+     "wikidataId": "Q421678",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q847613",
+     "name": "Vaclav Meydanı",
+     "localName": "Wenceslas Square",
+     "lat": 50.08231,
+     "lon": 14.42614,
+     "wikipediaCount": 40,
+     "wikidataId": "Q847613",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/8001448",
      "name": "Vyšehrad",
      "lat": 50.06421,
      "lon": 14.41977,
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q616334",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/379512802",
@@ -90,7 +143,12 @@
      "address": "Staroměstské náměstí 110",
      "website": "http://www.tyn.cz/",
      "openingHours": "Mo off; Tu-Sa 10:00-13:00, 15:00-17:00; Su 10:30-12:00",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q1453427",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/6268801",
@@ -98,7 +156,25 @@
      "lat": 50.08626,
      "lon": 14.38971,
      "website": "https://www.strahovskyklaster.cz/",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q969482",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q443107",
+     "name": "Eski Yeni Sinagog",
+     "localName": "Old New Synagogue",
+     "lat": 50.09,
+     "lon": 14.41861,
+     "wikipediaCount": 32,
+     "wikidataId": "Q443107",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/27376003",
@@ -107,7 +183,11 @@
      "lon": 14.41728,
      "website": "https://www.jewishmuseum.cz/",
      "openingHours": "Jan 01 11:00-16:30; Jan 02-Mar 31,Oct 19-Dec 31 09:00-16:30; Apr 01-30,Sep 01-Oct 18 09:00-18:00; May 01-Aug 31 09:00-19:00; Dec 24 09:00-14:00; JH off",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q438026",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/457404360",
@@ -115,7 +195,13 @@
      "lat": 50.08102,
      "lon": 14.45106,
      "address": "Mahlerovy sady 1",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1413217",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ]
     },
     {
      "id": "relation/3366616",
@@ -124,14 +210,49 @@
      "lon": 14.41591,
      "website": "https://www.klementinum.com/",
      "openingHours": "Mar 15-Nov 30: Mo-Su 10:00-18:00; Dec 01-Dec 15: Su-Th 10:00-17:30; Fr,Sa 10:00-18:00; Dec 16-Jan 10: Mo-Su 10:00-18:00; Jan 11-Mar 14: Su-Th 10:00-17:30; Fr,Sa 10:00-18:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1100429",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q60103",
+     "name": "Generali Arena",
+     "localName": "Letná Stadium",
+     "lat": 50.09972,
+     "lon": 14.41612,
+     "wikipediaCount": 27,
+     "wikidataId": "Q60103",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "node/4172786092",
      "name": "Zlatá ulička",
      "lat": 50.09206,
      "lon": 14.40427,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1535529",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1437065",
+     "name": "St. George Bazilikası, Prag",
+     "localName": "St. George's Basilica",
+     "lat": 50.09111,
+     "lon": 14.40222,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1437065",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/629201841",
@@ -139,7 +260,8 @@
      "lat": 50.08624,
      "lon": 14.40682,
      "openingHours": "24/7",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1630131"
     },
     {
      "id": "way/7645355",
@@ -148,14 +270,87 @@
      "lon": 14.4032,
      "address": "Malostranské náměstí",
      "openingHours": "Mar-Oct 09:00-17:00; Nov-Jan 09:00-16:00; Feb Mo-Th 09:00-16:00; Feb Fr-Su 09:00-17:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q2420392",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1353687",
+     "name": "Great Strahov Stadium",
+     "lat": 50.08034,
+     "lon": 14.38786,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1353687",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1130137",
+     "name": "Rudolfinum",
+     "lat": 50.09,
+     "lon": 14.4156,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1130137",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q521155",
+     "name": "Estates Theatre",
+     "lat": 50.08611,
+     "lon": 14.42389,
+     "wikipediaCount": 24,
+     "wikidataId": "Q521155",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/73471",
      "name": "Valdštejnský palác",
      "lat": 50.09002,
      "lon": 14.40571,
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q569877",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q956163",
+     "name": "Aziz Kiril ve Methodios Katedrali",
+     "localName": "Ss. Cyril and Methodius Cathedral",
+     "lat": 50.0759,
+     "lon": 14.417,
+     "wikipediaCount": 23,
+     "wikidataId": "Q956163",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q603573",
+     "name": "Infant Jesus of Prague",
+     "lat": 50.08556,
+     "lon": 14.40333,
+     "wikipediaCount": 23,
+     "wikidataId": "Q603573"
     },
     {
      "id": "way/255771323",
@@ -163,49 +358,258 @@
      "lat": 50.08698,
      "lon": 14.42028,
      "openingHours": "Mo 11:00-22:00; Tu-Su 09:00-22:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q2332231",
+     "kinds": [
+      "heritage",
+      "museum",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q2595999",
+     "name": "Aziz Nicholas Kilisesi",
+     "localName": "Church of Saint Nicholas",
+     "lat": 50.08778,
+     "lon": 14.41986,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2595999",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2916171",
+     "name": "Aziz Peter ve Aziz Paul Bazilikası",
+     "localName": "Basilica of St Peter and St Paul",
+     "lat": 50.06438,
+     "lon": 14.41784,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2916171",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/127987",
      "name": "palác Kinských",
      "lat": 50.08809,
      "lon": 14.42202,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q27017",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2334312",
+     "name": "Belediye Konser Salonu",
+     "localName": "Municipal House",
+     "lat": 50.08762,
+     "lon": 14.42824,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2334312",
+     "kinds": [
+      "business",
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q632057",
+     "name": "Azize Ludmila Kilisesi",
+     "localName": "Basilica of St. Ludmila",
+     "lat": 50.07528,
+     "lon": 14.43722,
+     "wikipediaCount": 19,
+     "wikidataId": "Q632057",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1000684",
+     "name": "Emmaus Manastırı",
+     "localName": "Emmaus Monastery",
+     "lat": 50.07222,
+     "lon": 14.4175,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1000684",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "node/3408716566",
+     "name": "Loretánská zvonohra",
+     "lat": 50.08925,
+     "lon": 14.39151,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1064659",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q517766",
+     "name": "Maisel Sinagogu",
+     "localName": "Maisel Synagogue",
+     "lat": 50.08878,
+     "lon": 14.41866,
+     "wikipediaCount": 19,
+     "wikidataId": "Q517766",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1706629",
+     "name": "Stalin Anıtı (Prag)",
+     "localName": "Stalin Monument",
+     "lat": 50.09472,
+     "lon": 14.41599,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1706629"
+    },
+    {
+     "id": "wikidata/Q1886083",
+     "name": "State Opera Prague",
+     "lat": 50.08028,
+     "lon": 14.43278,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1886083",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q414009",
+     "name": "Academy of Fine Arts, Prague",
+     "lat": 50.10271,
+     "lon": 14.42401,
+     "wikipediaCount": 18,
+     "wikidataId": "Q414009",
+     "kinds": [
+      "business",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q942102",
+     "name": "Jübile Sinagogu",
+     "localName": "Jubilee Synagogue",
+     "lat": 50.08472,
+     "lon": 14.43167,
+     "wikipediaCount": 18,
+     "wikidataId": "Q942102",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1503199",
+     "name": "Marie Vítězné Kilisesi",
+     "localName": "Church of Our Lady of Victories",
+     "lat": 50.0857,
+     "lon": 14.4036,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1503199",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1116389",
+     "name": "Memorial to the Victims of Communism",
+     "lat": 50.08117,
+     "lon": 14.40427,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1116389"
+    },
+    {
+     "id": "wikidata/Q1742720",
+     "name": "Marie Sněžné Kilisesi",
+     "localName": "Church of Our Lady of the Snow in Prague",
+     "lat": 50.08306,
+     "lon": 14.42361,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1742720",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1502676",
+     "name": "Petřín funicular",
+     "lat": 50.08243,
+     "lon": 14.40032,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1502676"
+    },
+    {
+     "id": "wikidata/Q1164329",
+     "name": "Rabbimizin En Kutsal Kalbi Kilisesi",
+     "localName": "Church of the Most Sacred Heart of Our Lord",
+     "lat": 50.07803,
+     "lon": 14.45075,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1164329",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1940904",
+     "name": "Stadion Evžena Rošického",
+     "lat": 50.08043,
+     "lon": 14.3837,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1940904",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/2403951",
      "name": "Černínský palác",
      "lat": 50.08875,
      "lon": 14.38988,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2034292",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
     },
     {
-     "id": "relation/6311645",
-     "name": "Starý královský palác",
-     "lat": 50.09058,
-     "lon": 14.40166,
-     "wikipediaCount": 16
-    },
-    {
-     "id": "way/4643624",
-     "name": "Celetná",
-     "lat": 50.08722,
-     "lon": 14.42396,
-     "wikipediaCount": 14
-    },
-    {
-     "id": "relation/15317893",
-     "name": "Schwarzenberský palác",
-     "lat": 50.08903,
-     "lon": 14.39677,
-     "wikipediaCount": 11
-    },
-    {
-     "id": "relation/75838",
-     "name": "Thunovský palác",
-     "lat": 50.08953,
-     "lon": 14.40427,
-     "wikipediaCount": 11
+     "id": "wikidata/Q1514053",
+     "name": "Charles Square",
+     "lat": 50.07583,
+     "lon": 14.42083,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1514053",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     }
    ]
   },
@@ -221,7 +625,12 @@
      "address": "Václavské náměstí 68",
      "website": "http://www.nm.cz/",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q188112",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/3926969670",
@@ -231,53 +640,11 @@
      "address": "U Milosrdných 17",
      "website": "https://www.ngprague.cz/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 37
-    },
-    {
-     "id": "node/3927206906",
-     "name": "Národní galerie v Praze - Schwarzenberský palác",
-     "lat": 50.08911,
-     "lon": 14.39687,
-     "address": "Hradčanské náměstí 185/2",
-     "website": "https://www.ngprague.cz/",
-     "openingHours": "Tu 10:00-18:00; We 10:00-20:00; Th-Su 10:00-18:00",
-     "wikipediaCount": 37
-    },
-    {
-     "id": "node/3927206907",
-     "name": "Národní galerie v Praze - Šternberský palác",
-     "lat": 50.09029,
-     "lon": 14.3967,
-     "address": "Hradčanské náměstí 57/15",
-     "website": "https://www.ngprague.cz/",
-     "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 37
-    },
-    {
-     "id": "node/993541537",
-     "name": "Národní galerie v Praze - Veletržní palác",
-     "lat": 50.10152,
-     "lon": 14.43233,
-     "address": "Dukelských hrdinů 530/47",
-     "website": "https://www.ngprague.cz/",
-     "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 37
-    },
-    {
-     "id": "node/3292370900",
-     "name": "Národní galerie v Praze - Palác Kinských",
-     "lat": 50.08796,
-     "lon": 14.42171,
-     "website": "https://www.ngprague.cz/",
-     "wikipediaCount": 37
-    },
-    {
-     "id": "node/3927206905",
-     "name": "Národní galerie v Praze - Salmovský palác",
-     "lat": 50.08933,
-     "lon": 14.39744,
-     "website": "https://www.ngprague.cz/",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q1419555",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/28517451",
@@ -287,7 +654,25 @@
      "address": "Vězeňská 1",
      "website": "https://www.jewishmuseum.cz/",
      "openingHours": "Jan 01 11:00-16:30; Jan 02-Mar 31,Oct 19-Dec 31 09:00-16:30; Apr 01-30,Sep 01-Oct 18 09:00-18:00; May 01-Aug 31 09:00-19:00; Dec 24 09:00-14:00; \"Jewish holidays\" off",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q990003",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2424070",
+     "name": "Queen Anne's Summer Palace",
+     "lat": 50.09361,
+     "lon": 14.40542,
+     "wikipediaCount": 19,
+     "wikidataId": "Q2424070",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/443297509",
@@ -298,7 +683,22 @@
      "address": "Cihelná 2b",
      "website": "https://kafkamuseum.cz/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q4306202",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q96482839",
+     "name": "National Technical Museum",
+     "lat": 50.0975,
+     "lon": 14.42483,
+     "wikipediaCount": 15,
+     "wikidataId": "Q96482839",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1269502274",
@@ -307,7 +707,12 @@
      "lon": 14.4211,
      "address": "U staré školy 141/1",
      "website": "https://www.jewishmuseum.cz/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q707850",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/179183380",
@@ -317,7 +722,12 @@
      "address": "U Staré Školy 141/1",
      "website": "https://www.jewishmuseum.cz/",
      "openingHours": "Jan 01 11:00-16:30; Jan 02-Mar 31,Oct 19-Dec 31 09:00-16:30; Apr 01-30,Sep 01-Oct 18 09:00-18:00; May 01-Aug 31 09:00-19:00; Dec 24 09:00-14:00; \"Jewish holidays\" off",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q599211",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/5389879",
@@ -325,7 +735,11 @@
      "lat": 50.08853,
      "lon": 14.45018,
      "openingHours": "We-Su 10:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q3333173",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1201707824",
@@ -334,7 +748,11 @@
      "lon": 14.41292,
      "website": "https://www.nm.cz/navstivte-nas/objekty/muzeum-bedricha-smetany",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q813969",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2517682988",
@@ -344,7 +762,11 @@
      "address": "Melantrichova 18",
      "website": "https://www.sexmachinesmuseum.com/",
      "openingHours": "Mo-Su 10:00-23:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q3480881",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/365967543",
@@ -352,7 +774,11 @@
      "lat": 50.07051,
      "lon": 14.39509,
      "website": "https://www.bertramka.eu/",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q549551",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/3217484773",
@@ -362,7 +788,11 @@
      "address": "Ke Karlovu 462/20",
      "website": "https://www.nm.cz/",
      "openingHours": "Tu-Su 10:00-13:30, 14:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q608318",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4986978223",
@@ -372,7 +802,11 @@
      "address": "V Celnici 1031/4",
      "website": "https://muzeumkomunismu.cz/",
      "openingHours": "Mo-Su, PH 09:00-20:00; Dec 24 off",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2571867",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/30825119",
@@ -381,7 +815,11 @@
      "lon": 14.41643,
      "website": "https://www.upm.cz/",
      "openingHours": "Tu 10:00-20:00; We-Su 10:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1349747",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4720384283",
@@ -390,7 +828,11 @@
      "lon": 14.40487,
      "website": "https://www.lobkowicz.com/en/collections/lobkowicz-palace/museum/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q2047086",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/295285613",
@@ -398,7 +840,12 @@
      "lat": 50.09004,
      "lon": 14.41702,
      "website": "https://www.jewishmuseum.cz/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q474468",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3270484912",
@@ -408,7 +855,11 @@
      "address": "Panská 890/7",
      "website": "https://www.mucha.cz/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q959038",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1083723494",
@@ -418,7 +869,11 @@
      "address": "U Sovových mlýnů 503/2",
      "website": "https://www.museumkampa.cz/",
      "openingHours": "Mo off; Tu-Su 10:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2139553",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/344975004",
@@ -427,7 +882,11 @@
      "lon": 14.41597,
      "address": "Betlémské náměstí 269/1",
      "website": "https://www.nm.cz/",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q631349",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5614223550",
@@ -436,16 +895,12 @@
      "lon": 14.42306,
      "website": "https://www.muzeumprahy.cz/",
      "openingHours": "Tu-Su 09:00-20:00",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/28552866",
-     "name": "Muzeum Prahy",
-     "lat": 50.08997,
-     "lon": 14.4385,
-     "website": "https://www.muzeumprahy.cz/",
-     "openingHours": "Tu-Su 09:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q12039018",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/3303681505",
@@ -455,7 +910,11 @@
      "address": "Nové mlýny 1239/2",
      "website": "https://www.postovnimuzeum.cz/",
      "openingHours": "Tu-Su 09:00-12:00, 13:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q11787128",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11925998365",
@@ -465,7 +924,11 @@
      "address": "Nekázanka 2",
      "website": "https://www.ceskyhokej.cz/sin-slavy",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q139661",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4360610699",
@@ -475,7 +938,11 @@
      "address": "Patočkova",
      "website": "https://www.dpp.cz/muzeum-mhd/",
      "openingHours": "Sa-Su, PH 09:00-17:00; Jun-Aug We, Sa-Su, PH 09:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q747287",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/22634016",
@@ -485,7 +952,11 @@
      "address": "Královská obora 233",
      "website": "https://www.planetum.cz/",
      "openingHours": "Tu-Su 10:30-20:30",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q18198103",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/4016973329",
@@ -494,7 +965,197 @@
      "lon": 14.42089,
      "address": "U staré školy 153/3",
      "website": "https://www.jewishmuseum.cz/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3094615",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/14101344575",
+     "name": "Mucha Foundation Art Museum",
+     "lat": 50.0848,
+     "lon": 14.42489,
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 5,
+     "wikidataId": "Q133407895",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/28921026",
+     "name": "České muzeum hudby",
+     "lat": 50.08474,
+     "lon": 14.40474,
+     "address": "Karmelitská 2",
+     "website": "https://www.nm.cz/ceske-muzeum-hudby/",
+     "openingHours": "We-Mo 10:00-18:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q2700680",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2197547437",
+     "name": "Muzeum Policie ČR",
+     "lat": 50.0689,
+     "lon": 14.4281,
+     "address": "Ke Karlovu 453/1",
+     "website": "https://www.muzeumpolicie.cz/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q21534356",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/9113427",
+     "name": "Lapidárium Národního muzea",
+     "lat": 50.10552,
+     "lon": 14.43147,
+     "address": "U Výstaviště 422",
+     "website": "https://www.nm.cz/",
+     "wikipediaCount": 4,
+     "wikidataId": "Q12032748",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3235823267",
+     "name": "Obrazárna Pražského hradu",
+     "lat": 50.09068,
+     "lon": 14.39854,
+     "address": "Praha 1",
+     "website": "http://www.kulturanahrade.cz/",
+     "wikipediaCount": 4,
+     "wikidataId": "Q11094328",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/41779392",
+     "name": "Stará čistírna odpadních vod;Stará čistírna odpadních vod v Bubeneči",
+     "lat": 50.11011,
+     "lon": 14.40217,
+     "website": "http://stara-cistirna.cz/",
+     "wikipediaCount": 4,
+     "wikidataId": "Q7458134",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/4437594389",
+     "name": "Choco-Story Muzeum čokolády",
+     "lat": 50.08697,
+     "lon": 14.42305,
+     "website": "https://www.choco-story-praha.cz/",
+     "openingHours": "Mo-Su 10:00-19:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q16579848",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1302407411",
+     "name": "Galerie Rudolfinum",
+     "lat": 50.09016,
+     "lon": 14.41528,
+     "website": "https://www.galerierudolfinum.cz/",
+     "openingHours": "Tu-We,Fr-Su 10:00-18:00; Th 10:00-20:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3500594",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1302217408",
+     "name": "Galerie Václava Špály",
+     "lat": 50.08241,
+     "lon": 14.42033,
+     "address": "Národní 30",
+     "website": "https://www.galerievaclavaspaly.cz/",
+     "openingHours": "Mo-Su 11:00-19:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q12018046",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3393564844",
+     "name": "Muzeum hraček",
+     "lat": 50.09195,
+     "lon": 14.40448,
+     "address": "Jiřská 11/4",
+     "website": "https://narodnimuzeumhracek.cz/",
+     "openingHours": "Mo-Su 09:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q18544843",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/296693693",
+     "name": "Vojenský historický ústav Praha",
+     "lat": 50.08766,
+     "lon": 14.44516,
+     "address": "U Památníku 1600/2",
+     "website": "https://www.vhu.cz/",
+     "wikipediaCount": 3,
+     "wikidataId": "Q11863304"
+    },
+    {
+     "id": "node/3278327071",
+     "name": "Galerie Josefa Sudka",
+     "lat": 50.08827,
+     "lon": 14.39468,
+     "address": "Úvoz 160/24",
+     "wikipediaCount": 3,
+     "wikidataId": "Q6280203",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/30475391",
+     "name": "Ateliér Josefa Sudka",
+     "lat": 50.08244,
+     "lon": 14.40522,
+     "address": "Újezd",
+     "website": "https://www.atelierjosefasudka.cz/",
+     "openingHours": "Tu-Su 12:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q10858945",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/13398440625",
+     "name": "Signal Space",
+     "lat": 50.08426,
+     "lon": 14.42162,
+     "address": "Rytířská 10",
+     "website": "https://www.signalspace.com/",
+     "openingHours": "Mo-Fr 10:00-20:00; Sa-Su 09:00-20:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q140462494",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -503,13 +1164,31 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/6485098585",
+     "name": "Dancing House viewpoint",
+     "lat": 50.0755,
+     "lon": 14.41407,
+     "wikipediaCount": 48,
+     "wikidataId": "Q244816",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
      "id": "way/27124370",
      "name": "Prašná brána",
      "lat": 50.08724,
      "lon": 14.42776,
      "website": "https://www.prague.eu/en/object/places/102/powder-gate-tower-prasna-brana?back=1",
      "openingHours": "Nov-Feb 10:00-18:00; Mar,Oct 10:00-20:00; Apr-Sep 10:00-22:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1488700",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "museum",
+      "tower"
+     ]
     },
     {
      "id": "way/391354925",
@@ -517,7 +1196,13 @@
      "lat": 50.08705,
      "lon": 14.42067,
      "openingHours": "Mo 11:00-22:00; Tu-Su 09:00-22:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q2332231",
+     "kinds": [
+      "heritage",
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "way/7645353",
@@ -526,7 +1211,14 @@
      "lon": 14.3951,
      "website": "https://praguecitytourism.cz/",
      "openingHours": "Nov-Mar 10:00-18:00; Apr-Aug 09:00-19:00; Sep-Oct 09:00-18:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q12256",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/839278890",
@@ -535,7 +1227,13 @@
      "lon": 14.41361,
      "website": "https://www.prague.eu/cs/objekt/mista/197/staromestska-mostecka-vez",
      "openingHours": "Nov-Feb 10:00-18:00; Mar 01-31,Oct 01-31 10:00-20:00; Apr-Sep 10:00-22:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q445762",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/839278891",
@@ -543,21 +1241,32 @@
      "lat": 50.08731,
      "lon": 14.40685,
      "website": "https://www.muzeumprahy.cz/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1509185",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "node/288743366",
      "name": "Masarykova vyhlídka",
      "lat": 50.09159,
      "lon": 14.39512,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q111630477",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/3198557322",
      "name": "vyhlídka Alexeje Navalného",
      "lat": 50.1046,
      "lon": 14.41473,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q122801569"
     },
     {
      "id": "way/1559946260",
@@ -579,12 +1288,6 @@
      "lat": 50.08784,
      "lon": 14.40363,
      "website": "https://www.muzeumprahy.cz/"
-    },
-    {
-     "id": "node/6485098585",
-     "name": "Dancing House viewpoint",
-     "lat": 50.0755,
-     "lon": 14.41407
     },
     {
      "id": "node/11762212169",
@@ -829,6 +1532,7 @@
      "website": "https://www.deminka.com/",
      "openingHours": "Mo-Fr 11:00-23:00; Sa,Su 12:00-23:00",
      "cuisine": "regional",
+     "wikidataId": "Q20755448",
      "detailed": true
     },
     {
@@ -1258,6 +1962,7 @@
      "website": "https://www.grandcafeorient.cz/",
      "openingHours": "Mo-Fr 09:00-22:00;Sa-Su 10:00-22:00",
      "cuisine": "coffee shop",
+     "wikidataId": "Q123240113",
      "detailed": true
     },
     {
@@ -1670,6 +2375,7 @@
      "address": "Plynární 1096/23",
      "website": "http://www.crossclub.cz/",
      "openingHours": "Mo-Su 00:00-05:00, 18:00-24:00; Fr, Sa 00:00-07:00, 18:00-24:00",
+     "wikidataId": "Q19902165",
      "detailed": true
     },
     {
@@ -1897,7 +2603,8 @@
      "lat": 50.09862,
      "lon": 14.44292,
      "address": "Argentinská 1",
-     "openingHours": "Fr 22:00-04:00, Sa 21:00-05:00"
+     "openingHours": "Fr 22:00-04:00, Sa 21:00-05:00",
+     "wikidataId": "Q22074725"
     },
     {
      "id": "node/4997465840",

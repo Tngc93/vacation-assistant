@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "LON",
- "fetchedAt": "2026-10-16T23:13:31.686Z",
+ "fetchedAt": "2026-10-18T15:56:34.348Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -50,7 +50,13 @@
      "lon": -0.14266,
      "website": "https://www.royalcollection.org.uk/visit/the-state-rooms-buckingham-palace",
      "openingHours": "Mo-Su 10:00-17:30",
-     "wikipediaCount": 93
+     "wikipediaCount": 93,
+     "wikidataId": "Q42182",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/1802652184",
@@ -58,14 +64,21 @@
      "lat": 51.5007,
      "lon": -0.12457,
      "address": "Bridge Street",
-     "wikipediaCount": 87
+     "wikipediaCount": 87,
+     "wikidataId": "Q37733713"
     },
     {
      "id": "way/123557148",
      "name": "Elizabeth Tower",
      "lat": 51.5007,
      "lon": -0.12457,
-     "wikipediaCount": 87
+     "wikipediaCount": 87,
+     "wikidataId": "Q41225",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ]
     },
     {
      "id": "way/364313092",
@@ -75,7 +88,12 @@
      "address": "Dean's Yard 20",
      "website": "https://www.westminster-abbey.org/",
      "openingHours": "Mo-Sa 09:30-16:00",
-     "wikipediaCount": 86
+     "wikipediaCount": 86,
+     "wikidataId": "Q5933",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/370870741",
@@ -85,7 +103,16 @@
      "lon": -0.07629,
      "address": "Tower Hill",
      "website": "https://www.hrp.org.uk/toweroflondon",
-     "wikipediaCount": 86
+     "wikipediaCount": 86,
+     "wikidataId": "Q62378",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "museum",
+      "ruins",
+      "unesco"
+     ]
     },
     {
      "id": "node/2079674503",
@@ -93,7 +120,12 @@
      "lat": 51.50552,
      "lon": -0.07537,
      "website": "https://www.towerbridge.org.uk/",
-     "wikipediaCount": 85
+     "wikipediaCount": 85,
+     "wikidataId": "Q83125",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "relation/1567699",
@@ -102,7 +134,12 @@
      "lon": -0.12457,
      "address": "Westminster",
      "website": "https://www.parliament.uk/",
-     "wikipediaCount": 84
+     "wikipediaCount": 84,
+     "wikidataId": "Q62408",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/204068874",
@@ -112,14 +149,22 @@
      "address": "Westminster Bridge Road",
      "website": "https://www.londoneye.com/",
      "openingHours": "Mo-Su 11:00-18:00",
-     "wikipediaCount": 77
+     "wikipediaCount": 77,
+     "wikidataId": "Q160659",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "way/378493707",
      "name": "London Bridge",
      "lat": 51.50802,
      "lon": -0.08768,
-     "wikipediaCount": 77
+     "wikipediaCount": 77,
+     "wikidataId": "Q130206",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/4680891",
@@ -129,7 +174,35 @@
      "address": "Euston Road 96",
      "website": "https://www.bl.uk/",
      "openingHours": "Mo-Th 09:30-20:00; Sa 09:30-17:00; Su 11:00-17:00; Fr 09:30-18:00",
-     "wikipediaCount": 76
+     "wikipediaCount": 76,
+     "wikidataId": "Q23308",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q163995",
+     "name": "Emirates Stadyumu",
+     "localName": "Emirates Stadium",
+     "lat": 51.555,
+     "lon": -0.10833,
+     "wikipediaCount": 75,
+     "wikidataId": "Q163995",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q171458",
+     "name": "Stamford Bridge",
+     "lat": 51.48167,
+     "lon": -0.19111,
+     "wikipediaCount": 74,
+     "wikidataId": "Q171458",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/553472",
@@ -138,7 +211,11 @@
      "lon": -0.08856,
      "address": "Threadneedle Street 8AH",
      "website": "https://www.bankofengland.co.uk/",
-     "wikipediaCount": 73
+     "wikipediaCount": 73,
+     "wikidataId": "Q183231",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/369161987",
@@ -148,7 +225,13 @@
      "address": "St Paul's Churchyard",
      "website": "https://www.stpauls.co.uk/",
      "openingHours": "Mo-Sa 08:30-16:00",
-     "wikipediaCount": 72
+     "wikipediaCount": 72,
+     "wikidataId": "Q173882",
+     "kinds": [
+      "business",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/3962877",
@@ -156,7 +239,12 @@
      "localName": "Trafalgar Square",
      "lat": 51.50817,
      "lon": -0.12827,
-     "wikipediaCount": 72
+     "wikipediaCount": 72,
+     "wikidataId": "Q129143",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "relation/1879842",
@@ -165,14 +253,34 @@
      "lon": -0.12755,
      "address": "Downing Street 10",
      "website": "https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street",
-     "wikipediaCount": 64
+     "wikipediaCount": 64,
+     "wikidataId": "Q169101",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q189022",
+     "name": "Imperial College London",
+     "lat": 51.49831,
+     "lon": -0.17688,
+     "wikipediaCount": 63,
+     "wikidataId": "Q189022",
+     "kinds": [
+      "business",
+      "university"
+     ]
     },
     {
      "id": "way/372975520",
      "name": "Hyde Park",
      "lat": 51.50741,
      "lon": -0.16305,
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q123738",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/31110737",
@@ -181,7 +289,12 @@
      "lon": -0.08648,
      "address": "London Bridge Street 32",
      "website": "https://www.the-shard.com/",
-     "wikipediaCount": 59
+     "wikipediaCount": 59,
+     "wikidataId": "Q18536",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
     },
     {
      "id": "way/33721672",
@@ -190,14 +303,48 @@
      "lon": -0.1225,
      "address": "Bow Street",
      "website": "https://www.rbo.org.uk/",
-     "wikipediaCount": 55
+     "wikipediaCount": 55,
+     "wikidataId": "Q55018",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q207385",
+     "name": "Kensington Sarayı",
+     "localName": "Kensington Palace",
+     "lat": 51.50528,
+     "lon": -0.18833,
+     "wikipediaCount": 53,
+     "wikidataId": "Q207385",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "node/1937435160",
+     "name": "New Scotland Yard",
+     "lat": 51.50297,
+     "lon": -0.12396,
+     "wikipediaCount": 53,
+     "wikidataId": "Q184619",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "relation/8250949",
      "name": "Piccadilly Circus",
      "lat": 51.5099,
      "lon": -0.13438,
-     "wikipediaCount": 53
+     "wikipediaCount": 53,
+     "wikidataId": "Q215255"
     },
     {
      "id": "way/372860405",
@@ -206,21 +353,87 @@
      "lon": -0.17741,
      "address": "Kensington Gore 4",
      "website": "http://www.royalalberthall.com/",
-     "wikipediaCount": 50
+     "wikipediaCount": 50,
+     "wikidataId": "Q193639",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/545040",
      "name": "Saint James's Palace",
      "lat": 51.50455,
      "lon": -0.13797,
-     "wikipediaCount": 50
+     "wikipediaCount": 50,
+     "wikidataId": "Q272162",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q192687",
+     "name": "Downing Sokağı",
+     "localName": "Downing Street",
+     "lat": 51.50333,
+     "lon": -0.1275,
+     "wikipediaCount": 49,
+     "wikidataId": "Q192687",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q191161",
+     "name": "30 St Mary Axe",
+     "lat": 51.51444,
+     "lon": -0.08028,
+     "wikipediaCount": 48,
+     "wikidataId": "Q191161",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "way/216998718",
      "name": "Westminster Bridge",
      "lat": 51.50083,
      "lon": -0.12099,
-     "wikipediaCount": 48
+     "wikipediaCount": 48,
+     "wikidataId": "Q456960",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q927198",
+     "name": "Londinium",
+     "lat": 51.51422,
+     "lon": -0.08846,
+     "wikipediaCount": 47,
+     "wikidataId": "Q927198",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q44057",
+     "name": "Millennium Köprüsü",
+     "localName": "Millennium Bridge",
+     "lat": 51.51017,
+     "lon": -0.09844,
+     "wikipediaCount": 47,
+     "wikidataId": "Q44057",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/25739565",
@@ -230,7 +443,25 @@
      "address": "Brompton Road 87-135",
      "website": "https://www.harrods.com/",
      "openingHours": "Mo-Sa 10:00-21:00; Su 11:30-18:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q332474",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q219867",
+     "name": "King's Cross Tren İstasyonu",
+     "localName": "London King's Cross railway station",
+     "lat": 51.53097,
+     "lon": -0.12333,
+     "wikipediaCount": 46,
+     "wikidataId": "Q219867",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "way/10810446",
@@ -240,28 +471,250 @@
      "address": "Francis Street",
      "website": "https://westminstercathedral.org.uk/",
      "openingHours": "Mo-Fr 09:30-17:00; Sa-Su 09:00-18:00",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q739364",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/1948210427",
      "name": "Site of the original Globe Theatre",
      "lat": 51.50684,
      "lon": -0.09474,
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q272434",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q214820",
+     "name": "Whitehall",
+     "lat": 51.50417,
+     "lon": -0.12639,
+     "wikipediaCount": 45,
+     "wikidataId": "Q214820",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q216185",
+     "name": "Charing Cross",
+     "lat": 51.5073,
+     "lon": -0.12755,
+     "wikipediaCount": 44,
+     "wikidataId": "Q216185",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q318043",
+     "name": "Craven Cottage",
+     "lat": 51.475,
+     "lon": -0.22167,
+     "wikipediaCount": 44,
+     "wikidataId": "Q318043",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "node/11899012453",
      "name": "Former Whitehall Palace Steps",
      "lat": 51.50456,
      "lon": -0.12403,
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q391620",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q270263",
+     "name": "Londra Hayvanat Bahçesi",
+     "localName": "London Zoo",
+     "lat": 51.53556,
+     "lon": -0.15583,
+     "wikipediaCount": 44,
+     "wikidataId": "Q270263",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q214788",
+     "name": "Londra Paddington Tren İstasyonu",
+     "localName": "London Paddington station",
+     "lat": 51.51667,
+     "lon": -0.17722,
+     "wikipediaCount": 44,
+     "wikidataId": "Q214788",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q209714",
+     "name": "Oxford Street",
+     "lat": 51.51528,
+     "lon": -0.14194,
+     "wikipediaCount": 44,
+     "wikidataId": "Q209714",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q216914",
+     "name": "St. James's Park",
+     "localName": "St James's Park",
+     "lat": 51.5025,
+     "lon": -0.135,
+     "wikipediaCount": 43,
+     "wikidataId": "Q216914",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q207699",
+     "name": "Waterloo & City Hattı",
+     "localName": "Waterloo & City line",
+     "lat": 51.51306,
+     "lon": -0.08806,
+     "wikipediaCount": 43,
+     "wikidataId": "Q207699"
+    },
+    {
+     "id": "wikidata/Q331613",
+     "name": "Lord's Cricket Ground",
+     "lat": 51.5294,
+     "lon": -0.1727,
+     "wikipediaCount": 42,
+     "wikidataId": "Q331613",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q739341",
+     "name": "Regent's Park",
+     "lat": 51.53222,
+     "lon": -0.15667,
+     "wikipediaCount": 41,
+     "wikidataId": "Q739341",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q720102",
+     "name": "St Pancras Uluslararası Tren İstasyonu",
+     "localName": "St Pancras railway station",
+     "lat": 51.53,
+     "lon": -0.12528,
+     "wikipediaCount": 41,
+     "wikidataId": "Q720102",
+     "kinds": [
+      "heritage",
+      "office",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q823412",
+     "name": "Azize Margaret Kilisesi",
+     "localName": "St Margaret's Church, Westminster",
+     "lat": 51.49988,
+     "lon": -0.12673,
+     "wikipediaCount": 40,
+     "wikidataId": "Q823412",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q501003",
+     "name": "Waterloo Köprüsü",
+     "localName": "Waterloo Bridge",
+     "lat": 51.50861,
+     "lon": -0.11694,
+     "wikipediaCount": 40,
+     "wikidataId": "Q501003",
+     "kinds": [
+      "bridge",
+      "heritage",
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q119892",
+     "name": "Green Park",
+     "lat": 51.50417,
+     "lon": -0.14361,
+     "wikipediaCount": 39,
+     "wikidataId": "Q119892",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1124023",
+     "name": "Piccadilly",
+     "lat": 51.50698,
+     "lon": -0.14235,
+     "wikipediaCount": 39,
+     "wikidataId": "Q1124023",
+     "kinds": [
+      "road"
+     ]
     },
     {
      "id": "way/150920358",
      "name": "Nelson's Column",
      "lat": 51.50776,
      "lon": -0.12793,
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q842089",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q804402",
+     "name": "Baker Sokağı",
+     "localName": "Baker Street",
+     "lat": 51.52,
+     "lon": -0.1566,
+     "wikipediaCount": 37,
+     "wikidataId": "Q804402",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q846686",
+     "name": "Fleet Sokağı",
+     "localName": "Fleet Street",
+     "lat": 51.51378,
+     "lon": -0.11153,
+     "wikipediaCount": 37,
+     "wikidataId": "Q846686",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/30734422",
@@ -270,7 +723,61 @@
      "lon": -0.12668,
      "address": "St Martin's Place 5",
      "website": "https://www.stmartin-in-the-fields.org/",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q1335201",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q756819",
+     "name": "Strand",
+     "lat": 51.5114,
+     "lon": -0.119,
+     "wikipediaCount": 36,
+     "wikidataId": "Q756819",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "node/4800377221",
+     "name": "The Mall",
+     "lat": 51.50427,
+     "lon": -0.13473,
+     "wikipediaCount": 36,
+     "wikidataId": "Q842930",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "way/54478457",
+     "name": "Clarence House",
+     "lat": 51.50398,
+     "lon": -0.13844,
+     "website": "https://www.rct.uk/visit/clarence-house",
+     "openingHours": "Aug",
+     "wikipediaCount": 35,
+     "wikidataId": "Q565521",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "way/4082589",
+     "name": "Leicester Square",
+     "lat": 51.51044,
+     "lon": -0.13013,
+     "openingHours": "sunrise-sunset",
+     "wikipediaCount": 35,
+     "wikidataId": "Q848912",
+     "kinds": [
+      "square"
+     ]
     }
    ]
   },
@@ -286,7 +793,12 @@
      "address": "Great Russell Street",
      "website": "https://www.britishmuseum.org/",
      "openingHours": "Sa-Th 10:00-17:00; Fr 10:00-20:30",
-     "wikipediaCount": 107
+     "wikipediaCount": 107,
+     "wikidataId": "Q6373",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/4372002",
@@ -295,7 +807,12 @@
      "lon": -0.12875,
      "website": "https://www.nationalgallery.org.uk/",
      "openingHours": "Sa-Th 10:00-18:00; Fr 10:00-21:00",
-     "wikipediaCount": 70
+     "wikipediaCount": 70,
+     "wikidataId": "Q180788",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/684695074",
@@ -305,7 +822,11 @@
      "address": "Marylebone Road 8-10",
      "website": "https://www.madametussauds.com/london/en/plan-your-visit/which-entrance/",
      "openingHours": "Mo-Fr 09:30-17:30; Sa-Su 09:00-18:00",
-     "wikipediaCount": 67
+     "wikipediaCount": 67,
+     "wikidataId": "Q186309",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/29795",
@@ -315,7 +836,11 @@
      "address": "Cromwell Road",
      "website": "https://www.vam.ac.uk/",
      "openingHours": "Sa-Th 10:00-17:45; Fr 10:00-22:00; Dec 24-26 off",
-     "wikipediaCount": 60
+     "wikipediaCount": 60,
+     "wikidataId": "Q213322",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/24642569",
@@ -325,7 +850,11 @@
      "address": "Bankside",
      "website": "https://www.tate.org.uk/visit/tate-modern",
      "openingHours": "Su-Th 10:00-18:00; Fr-Sa 10:00-21:00",
-     "wikipediaCount": 59
+     "wikipediaCount": 59,
+     "wikidataId": "Q193375",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/24436446",
@@ -336,7 +865,12 @@
      "address": "Cromwell Road",
      "website": "https://www.nhm.ac.uk/",
      "openingHours": "10:00-17:30",
-     "wikipediaCount": 53
+     "wikipediaCount": 53,
+     "wikidataId": "Q309388",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/59161723",
@@ -345,7 +879,12 @@
      "lon": -0.12821,
      "website": "https://www.npg.org.uk/",
      "openingHours": "Su-Th 10:30-18:00; Fr-Sa 10:30-21:00",
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q238587",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/27765411",
@@ -354,7 +893,12 @@
      "lon": -0.17623,
      "website": "https://www.sciencemuseum.org.uk/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q674773",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/31510288",
@@ -363,7 +907,14 @@
      "lon": -0.1397,
      "address": "Piccadilly",
      "website": "https://www.royalacademy.org.uk/",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q270920",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum",
+      "school"
+     ]
     },
     {
      "id": "way/8614496",
@@ -373,7 +924,24 @@
      "address": "Lambeth Road",
      "website": "https://www.iwm.org.uk/visits/iwm-london",
      "openingHours": "10:00-18:00; Dec 24-26 off",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q749808",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q917820",
+     "name": "Londra Müzesi",
+     "localName": "London Museum",
+     "lat": 51.5179,
+     "lon": -0.1048,
+     "wikipediaCount": 36,
+     "wikidataId": "Q917820",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/24553580",
@@ -383,7 +951,28 @@
      "address": "Millbank",
      "website": "https://www.tate.org.uk/visit/tate-britain",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q195436",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q653858",
+     "name": "Barbican Centre",
+     "lat": 51.5202,
+     "lon": -0.095,
+     "wikipediaCount": 35,
+     "wikidataId": "Q653858",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "museum",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/110753809",
@@ -393,7 +982,8 @@
      "address": "Portland Place 66-68",
      "website": "https://www.architecture.com/",
      "openingHours": "Mo 08:00-17:30; Tu 08:00-20:00; We-Fr 08:00-17:45; Sa 10:00-17:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1067943"
     },
     {
      "id": "node/3916613190",
@@ -403,7 +993,11 @@
      "address": "Baker Street 221B",
      "website": "https://www.sherlock-holmes.co.uk/",
      "openingHours": "Mo-Su 09:30-18:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1990172",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/83488820",
@@ -412,7 +1006,22 @@
      "lon": -0.15304,
      "address": "Manchester Square",
      "openingHours": "Mo-Su 10:00-17:00; Fr,Sa 10:00-23:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1327919",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1459037",
+     "name": "Royal Collection",
+     "lat": 51.501,
+     "lon": -0.142,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1459037",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/120316250",
@@ -422,7 +1031,12 @@
      "address": "Piccadilly 149",
      "website": "https://www.wellingtoncollection.co.uk/",
      "openingHours": "We-Su 11:00-17:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q622206",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/27703085",
@@ -432,7 +1046,11 @@
      "address": "Malet Place",
      "website": "http://www.ucl.ac.uk/museums/petrie",
      "openingHours": "Tu-Sa 13:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q2002512",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/61453261",
@@ -442,7 +1060,24 @@
      "address": "Lincoln's Inn Fields 13",
      "website": "https://www.soane.org/",
      "openingHours": "Tu-Sa 10:00-16:30",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q2060860",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q591086",
+     "name": "Serpentine Galleries",
+     "lat": 51.5047,
+     "lon": -0.17505,
+     "wikipediaCount": 23,
+     "wikidataId": "Q591086",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/5317958",
@@ -452,7 +1087,25 @@
      "address": "King's Road",
      "website": "http://www.saatchigallery.com/",
      "openingHours": "Mo-Su 11:00-18:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1311497",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1786933",
+     "name": "Mansion House (Londra)",
+     "localName": "Mansion House",
+     "lat": 51.51325,
+     "lon": -0.08936,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1786933",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/44599803",
@@ -462,7 +1115,22 @@
      "address": "Covent Garden Piazza",
      "website": "https://www.ltmuseum.co.uk/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1541098",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1417172",
+     "name": "Royal Asiatic Society of Great Britain and Ireland",
+     "lat": 51.52653,
+     "lon": -0.13533,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1417172",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/197206542",
@@ -471,7 +1139,12 @@
      "lon": -0.12925,
      "address": "King Charles Street",
      "website": "https://www.iwm.org.uk/visits/churchill-war-rooms",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1024854",
+     "kinds": [
+      "adminArea",
+      "museum"
+     ]
     },
     {
      "id": "node/2647639741",
@@ -481,7 +1154,11 @@
      "address": "Strand",
      "website": "https://courtauld.ac.uk/gallery/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q12110695",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/334631276",
@@ -491,7 +1168,12 @@
      "address": "Doughty Street 48-49",
      "website": "https://dickensmuseum.com/",
      "openingHours": "We-Su 10:00-16:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2723633",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/25913653",
@@ -501,7 +1183,33 @@
      "address": "Belvedere Road",
      "website": "https://www.southbankcentre.co.uk/venues/hayward-gallery",
      "openingHours": "Mo off; Tu-Fr,Su 10:00-18:00; Sa 10:00-20:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q779736",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1415097",
+     "name": "London Post Office Railway",
+     "lat": 51.524,
+     "lon": -0.1126,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1415097",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1283541",
+     "name": "Royal Armouries",
+     "lat": 51.50854,
+     "lon": -0.07631,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1283541",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1493424622",
@@ -510,7 +1218,12 @@
      "lon": -0.14588,
      "address": "Brook Street 25",
      "website": "https://handelhendrix.org/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2920095",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1289223308",
@@ -518,7 +1231,23 @@
      "lat": 51.49983,
      "lon": -0.14255,
      "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1434767",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1464767",
+     "name": "Royal United Services Institute",
+     "lat": 51.5043,
+     "lon": -0.1258,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1464767",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5741257603",
@@ -528,7 +1257,11 @@
      "address": "Lambeth Palace Road 2",
      "website": "https://www.florence-nightingale.co.uk/",
      "openingHours": "Tu-Su 10:00-17:00; \"Last Th of month close at 20:00\"",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q5460739",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/10807015",
@@ -536,7 +1269,11 @@
      "lat": 51.48624,
      "lon": -0.16029,
      "website": "https://www.nam.ac.uk/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q731616",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4513341393",
@@ -545,7 +1282,11 @@
      "lon": -0.08768,
      "website": "https://www.bankofengland.co.uk/museum",
      "openingHours": "Mo-Fr 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1893754",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5247197725",
@@ -554,7 +1295,12 @@
      "lon": -0.09978,
      "website": "https://thecharterhouse.org/",
      "openingHours": "Tu-Su 11:00-16:45",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6670230",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2617821322",
@@ -564,7 +1310,26 @@
      "address": "Euston Road 183",
      "website": "http://www.wellcomecollection.org/",
      "openingHours": "Tu-We,Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q7981191",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/28269975",
+     "name": "Foundling Museum",
+     "lat": 51.52521,
+     "lon": -0.12167,
+     "address": "Brunswick Square 40",
+     "website": "https://foundlingmuseum.org.uk/",
+     "wikipediaCount": 8,
+     "wikidataId": "Q5474645",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     }
    ]
   },
@@ -886,6 +1651,7 @@
      "website": "https://www.indianymca.org/our-restaurant/",
      "openingHours": "Mo-Fr 07:30-09:15, 12:00-15:00; Sa-Su 07:30-09:15, 12:00-14:00",
      "cuisine": "indian",
+     "wikidataId": "Q6021671",
      "detailed": true
     },
     {
@@ -952,6 +1718,7 @@
      "website": "https://www.limalondongroup.com/fitzrovia",
      "openingHours": "Mo-Sa 12:00-14:30,17:30-22:30; Su off",
      "cuisine": "peruvian",
+     "wikidataId": "Q15242357",
      "detailed": true
     },
     {
@@ -1523,7 +2290,8 @@
      "lat": 51.51461,
      "lon": -0.13106,
      "address": "Greek Street 7",
-     "openingHours": "Mo-Th 15:00-23:30; Fr-Sa 15:00-24:00; Su 15:00-22:30"
+     "openingHours": "Mo-Th 15:00-23:30; Fr-Sa 15:00-24:00; Su 15:00-22:30",
+     "wikidataId": "Q4578879"
     },
     {
      "id": "way/314760755",
@@ -1602,6 +2370,7 @@
      "website": "https://www.nicholsonspubs.co.uk/restaurants/london/thegreenman",
      "openingHours": "Mo-We 11:00-23:30; Th-Sa 10:00-01:00; Su 10:00-22:30",
      "cuisine": "fish and chips",
+     "wikidataId": "Q27083993",
      "detailed": true
     },
     {
@@ -1613,6 +2382,7 @@
      "website": "https://www.nicholsonspubs.co.uk/restaurants/london/thehoopandgrapesaldgatelondon",
      "openingHours": "Su-Fr 12:00-23:30; Sa 11:00-18:00",
      "cuisine": "local",
+     "wikidataId": "Q16707742",
      "detailed": true
     },
     {
@@ -1657,6 +2427,7 @@
      "website": "https://www.jdwetherspoon.com/pubs/the-barrel-vault-camden/",
      "openingHours": "Mo-Th 06:30-00:00; Fr, Sa 06:30-01:00; Su 07:30-23:00",
      "cuisine": "burger, italian pizza, curry, pasta, salad, breakfast",
+     "wikidataId": "Q88965895",
      "detailed": true
     },
     {
@@ -1668,6 +2439,7 @@
      "website": "https://theblackdogvauxhall.co.uk/",
      "openingHours": "Mo-Sa 12:00-23:30; Su 12:00-21:30",
      "cuisine": "spanish, british",
+     "wikidataId": "Q125558739",
      "detailed": true
     },
     {
@@ -1733,6 +2505,7 @@
      "website": "https://www.jdwetherspoon.com/pubs/all-pubs/england/london/wetherspoons-victoria-station-concourse",
      "openingHours": "Mo-Sa 06:00-00:00; Su 08:00-23:00",
      "cuisine": "breakfast, burger, coffee shop",
+     "wikidataId": "Q88967136",
      "detailed": true
     },
     {
@@ -1947,6 +2720,7 @@
      "address": "Rathbone Place 3-5",
      "website": "https://theroxy.co.uk/",
      "openingHours": "Mo-Th 17:00-03:00; Fr 17:00-03:30; Sa 18:30-22:30; Su off",
+     "wikidataId": "Q7761650",
      "detailed": true
     },
     {
@@ -1955,7 +2729,8 @@
      "lat": 51.51611,
      "lon": -0.13536,
      "address": "Oxford Street 100",
-     "website": "https://www.the100club.co.uk/"
+     "website": "https://www.the100club.co.uk/",
+     "wikidataId": "Q8535"
     },
     {
      "id": "node/11876483273",
@@ -2018,7 +2793,8 @@
      "lat": 51.49349,
      "lon": -0.09877,
      "address": "Elephant Road 4/5",
-     "website": "https://www.corsicastudios.com/"
+     "website": "https://www.corsicastudios.com/",
+     "wikidataId": "Q115651239"
     },
     {
      "id": "node/7904778383",
@@ -2034,7 +2810,8 @@
      "lat": 51.54183,
      "lon": -0.12479,
      "address": "York Way 200",
-     "website": "https://www.egglondon.co.uk/"
+     "website": "https://www.egglondon.co.uk/",
+     "wikidataId": "Q47508589"
     },
     {
      "id": "node/14206898628",
@@ -2042,7 +2819,8 @@
      "lat": 51.53969,
      "lon": -0.14304,
      "address": "Camden High Street 184",
-     "website": "https://electricballroom.co.uk/"
+     "website": "https://electricballroom.co.uk/",
+     "wikidataId": "Q5357303"
     },
     {
      "id": "way/331438863",
@@ -2066,7 +2844,8 @@
      "lat": 51.50787,
      "lon": -0.12456,
      "address": "Villiers Street 10A",
-     "website": "http://www.heavennightclub-london.com/"
+     "website": "http://www.heavennightclub-london.com/",
+     "wikidataId": "Q5694616"
     },
     {
      "id": "node/5683818786",
@@ -2082,7 +2861,8 @@
      "lat": 51.53474,
      "lon": -0.13817,
      "address": "Camden High Street 1A",
-     "website": "https://www.koko.co.uk/"
+     "website": "https://www.koko.co.uk/",
+     "wikidataId": "Q1028419"
     },
     {
      "id": "node/9697951364",
@@ -2106,7 +2886,8 @@
      "lat": 51.50775,
      "lon": -0.14128,
      "address": "Dover Street 1",
-     "website": "https://mahiki.com/"
+     "website": "https://mahiki.com/",
+     "wikidataId": "Q6733984"
     },
     {
      "id": "node/14178896068",
@@ -2114,7 +2895,8 @@
      "lat": 51.5137,
      "lon": -0.13654,
      "address": "Poland Street 61",
-     "website": "https://www.mlkhny.com/"
+     "website": "https://www.mlkhny.com/",
+     "wikidataId": "Q6857969"
     },
     {
      "id": "way/380605745",
@@ -2122,7 +2904,8 @@
      "lat": 51.49777,
      "lon": -0.0995,
      "address": "Gaunt Street 103",
-     "website": "http://www.ministryofsound.com/"
+     "website": "http://www.ministryofsound.com/",
+     "wikidataId": "Q23087"
     },
     {
      "id": "node/5643033215",
@@ -2138,7 +2921,8 @@
      "lat": 51.53457,
      "lon": -0.1057,
      "address": "Parkfield Street 16",
-     "website": "https://www.academymusicgroup.com/o2academyislington/"
+     "website": "https://www.academymusicgroup.com/o2academyislington/",
+     "wikidataId": "Q638511"
     }
    ]
   }

@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "VCE",
- "fetchedAt": "2026-10-16T23:16:15.035Z",
+ "fetchedAt": "2026-10-18T16:00:12.599Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,12 @@
      "lon": 12.33984,
      "website": "https://www.basilicasanmarco.it/",
      "openingHours": "Oct 29-Apr 15,Apr 16-Oct 27 Mo-Sa 09:30-17:00; Oct 29-Apr 15 Su 14:00-16:30; Apr 16-Oct 27 Su 14:00-17:00",
-     "wikipediaCount": 62
+     "wikipediaCount": 62,
+     "wikidataId": "Q172988",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/138803915",
@@ -57,35 +62,67 @@
      "lat": 45.43421,
      "lon": 12.34034,
      "openingHours": "Apr 01-Oct 31 08:30-19:00; Nov 01-Mar 31 08:30-17:30",
-     "wikipediaCount": 59
+     "wikipediaCount": 59,
+     "wikidataId": "Q189883",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
-     "id": "way/199258374",
+     "id": "relation/2289364",
      "name": "Ponte di Rialto",
      "lat": 45.43804,
      "lon": 12.33593,
-     "wikipediaCount": 51
+     "wikipediaCount": 51,
+     "wikidataId": "Q52505",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q309243",
+     "name": "Büyük Kanal",
+     "localName": "Grand Canal",
+     "lat": 45.44222,
+     "lon": 12.32639,
+     "wikipediaCount": 50,
+     "wikidataId": "Q309243"
     },
     {
      "id": "way/172349507",
      "name": "Piazza San Marco",
      "lat": 45.43426,
      "lon": 12.33851,
-     "wikipediaCount": 50
+     "wikipediaCount": 50,
+     "wikidataId": "Q217527",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/138803225",
      "name": "Ponte dei Sospiri",
      "lat": 45.43406,
      "lon": 12.34086,
-     "wikipediaCount": 50
+     "wikipediaCount": 50,
+     "wikidataId": "Q52517",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/138801509",
      "name": "Santa Maria della Salute",
      "lat": 45.43057,
      "lon": 12.33472,
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q52531",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/251501878",
@@ -94,7 +131,14 @@
      "lon": 12.33386,
      "address": "Campo San Fantin 1965",
      "website": "https://www.teatrolafenice.it/",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q223942",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/206333242",
@@ -103,7 +147,12 @@
      "lon": 12.33923,
      "website": "https://marciana.venezia.sbn.it/",
      "openingHours": "Mo-Fr 08:00-19:00; Sa 08:00-13:30; Su off",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q578460",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "way/252637693",
@@ -111,7 +160,11 @@
      "localName": "Campanile di San Marco",
      "lat": 45.43404,
      "lon": 12.33904,
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q754194",
+     "kinds": [
+      "tower"
+     ]
     },
     {
      "id": "node/2189685759",
@@ -119,7 +172,14 @@
      "lat": 45.43543,
      "lon": 12.35334,
      "website": "https://arsenale.comune.venezia.it/",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q1262248",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "port",
+      "station"
+     ]
     },
     {
      "id": "way/138841819",
@@ -128,14 +188,23 @@
      "lon": 12.32636,
      "website": "https://www.basilicadeifrari.it/",
      "openingHours": "Mo-Sa 09:00-18:00; Su 13:00-18:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q224961",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/154856677",
      "name": "Chiesa del Redentore",
      "lat": 45.42495,
      "lon": 12.33238,
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q830807",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/138804537",
@@ -143,7 +212,36 @@
      "lat": 45.42937,
      "lon": 12.34331,
      "openingHours": "Mo-Su 07:00-18:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q713558",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q52509",
+     "name": "Accademia Köprüsü",
+     "localName": "Ponte dell'Accademia",
+     "lat": 45.43166,
+     "lon": 12.32899,
+     "wikipediaCount": 27,
+     "wikidataId": "Q52509",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q957551",
+     "name": "Palazzo Foscari",
+     "localName": "Ca' Foscari",
+     "lat": 45.43446,
+     "lon": 12.3266,
+     "wikipediaCount": 27,
+     "wikidataId": "Q957551",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/153483298",
@@ -151,7 +249,12 @@
      "lat": 45.43925,
      "lon": 12.3422,
      "openingHours": "Mo-Sa 09:00-18:00; Su 12:00-18:00",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q155225",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/162035005",
@@ -159,7 +262,11 @@
      "lat": 45.43471,
      "lon": 12.3436,
      "openingHours": "Mo-Sa 10:00-12:00, 16:00-18:00; Su 16:00-18:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q794876",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/13195470201",
@@ -167,7 +274,19 @@
      "lat": 45.44536,
      "lon": 12.32684,
      "website": "https://www.ghettovenezia.com/",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q649030"
+    },
+    {
+     "id": "wikidata/Q52501",
+     "name": "ponte della Costituzione",
+     "lat": 45.43889,
+     "lon": 12.31944,
+     "wikipediaCount": 24,
+     "wikidataId": "Q52501",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/138800840",
@@ -175,14 +294,167 @@
      "lat": 45.4395,
      "lon": 12.33924,
      "openingHours": "Mo-Sa 10:30-16:30",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q533680",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1052167",
+     "name": "Ca' da Mosto",
+     "lat": 45.43965,
+     "lon": 12.33584,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1052167"
+    },
+    {
+     "id": "wikidata/Q960610",
+     "name": "Caffè Florian",
+     "lat": 45.43368,
+     "lon": 12.33821,
+     "wikipediaCount": 21,
+     "wikidataId": "Q960610",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/410344943",
      "name": "Torre dell'orologio",
      "lat": 45.43474,
      "lon": 12.33893,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q966625",
+     "kinds": [
+      "heritage",
+      "museum",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q182708",
+     "name": "Türk Hanı",
+     "localName": "Fondaco dei Turchi",
+     "lat": 45.442,
+     "lon": 12.32868,
+     "wikipediaCount": 21,
+     "wikidataId": "Q182708",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1259067",
+     "name": "Fondaco dei Tedeschi",
+     "lat": 45.43824,
+     "lon": 12.33673,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1259067"
+    },
+    {
+     "id": "wikidata/Q1265593",
+     "name": "Ca' Vendramin Calergi",
+     "lat": 45.44222,
+     "lon": 12.32972,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1265593",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q861436",
+     "name": "Madonna dell'Orto",
+     "lat": 45.44634,
+     "lon": 12.33247,
+     "wikipediaCount": 19,
+     "wikidataId": "Q861436",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q922677",
+     "name": "San Giacomo di Rialto",
+     "lat": 45.43847,
+     "lon": 12.33547,
+     "wikipediaCount": 19,
+     "wikidataId": "Q922677",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1028202",
+     "name": "San Salvador",
+     "lat": 45.4366,
+     "lon": 12.3365,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1028202",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1816328",
+     "name": "Ospedale della Pietà",
+     "lat": 45.43411,
+     "lon": 12.34461,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1816328",
+     "kinds": [
+      "business",
+      "religious",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q946542",
+     "name": "San Francesco della Vigna",
+     "lat": 45.4381,
+     "lon": 12.3486,
+     "wikipediaCount": 18,
+     "wikidataId": "Q946542",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q748689",
+     "name": "Santa Maria degli Scalzi",
+     "lat": 45.44128,
+     "lon": 12.32221,
+     "wikipediaCount": 18,
+     "wikidataId": "Q748689",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q974832",
+     "name": "Santo Stefano di Venezia",
+     "localName": "Santo Stefano, Venice",
+     "lat": 45.43373,
+     "lon": 12.33087,
+     "wikipediaCount": 18,
+     "wikidataId": "Q974832",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q52508",
+     "name": "Yalınayak Köprüsü",
+     "localName": "Ponte degli Scalzi",
+     "lat": 45.44104,
+     "lon": 12.32278,
+     "wikipediaCount": 18,
+     "wikidataId": "Q52508",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/118714648",
@@ -191,78 +463,89 @@
      "lon": 12.32733,
      "website": "https://www.chorusvenezia.org/chiesa-di-santa-maria-del-rosario-gesuati",
      "openingHours": "Mo-Sa 10:30-16:30",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1093909",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/138804072",
      "name": "Chiesa di San Moisè",
      "lat": 45.43309,
      "lon": 12.33615,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1068131",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2936058",
+     "name": "Giudecca Canal",
+     "lat": 45.42731,
+     "lon": 12.32898,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2936058"
+    },
+    {
+     "id": "wikidata/Q1586965",
+     "name": "Harry's Bar",
+     "lat": 45.4325,
+     "lon": 12.33722,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1586965",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1784082",
+     "name": "San Giorgio dei Greci",
+     "lat": 45.4354,
+     "lon": 12.3448,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1784082",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q473237",
+     "name": "Statue of Bartolomeo Colleoni",
+     "lat": 45.4392,
+     "lon": 12.3414,
+     "wikipediaCount": 17,
+     "wikidataId": "Q473237"
     },
     {
      "id": "way/138804512",
      "name": "Chiesa di Santa Maria Formosa",
      "lat": 45.43703,
      "lon": 12.34101,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1813687",
+     "kinds": [
+      "religious"
+     ]
     },
     {
-     "id": "relation/2766982",
-     "name": "Palazzo Contarini del Bovolo",
-     "lat": 45.43486,
-     "lon": 12.33437,
-     "wikipediaCount": 15
+     "id": "wikidata/Q169575",
+     "name": "Zecca di Venezia",
+     "localName": "Zecca of Venice",
+     "lat": 45.43333,
+     "lon": 12.33917,
+     "wikipediaCount": 16,
+     "wikidataId": "Q169575"
     },
     {
-     "id": "way/138843642",
-     "name": "Chiesa di San Rocco",
-     "lat": 45.43695,
-     "lon": 12.32523,
-     "website": "https://www.scuolagrandesanrocco.org/home/edifici/chiesa-2/",
-     "wikipediaCount": 14
-    },
-    {
-     "id": "way/138802202",
-     "name": "Scuola Grande San Marco",
-     "lat": 45.43979,
-     "lon": 12.34151,
-     "wikipediaCount": 14
-    },
-    {
-     "id": "way/410344923",
-     "name": "Procuratie Vecchie",
-     "lat": 45.4344,
-     "lon": 12.33789,
-     "wikipediaCount": 13
-    },
-    {
-     "id": "way/313876763",
-     "name": "Palazzo Barbarigo",
-     "lat": 45.4309,
-     "lon": 12.33052,
-     "wikipediaCount": 11
-    },
-    {
-     "id": "way/104686433",
-     "name": "Chiesa di San Trovaso",
-     "lat": 45.43079,
-     "lon": 12.32601,
-     "wikipediaCount": 10
-    },
-    {
-     "id": "way/312111367",
-     "name": "Palazzo Bembo",
-     "lat": 45.43694,
-     "lon": 12.33518,
-     "wikipediaCount": 10
-    },
-    {
-     "id": "way/431003750",
-     "name": "Colonna di San Teodoro",
-     "lat": 45.43328,
-     "lon": 12.33966,
-     "wikipediaCount": 8
+     "id": "wikidata/Q934025",
+     "name": "Cavalli-Franchetti Sarayı",
+     "localName": "Palazzo Cavalli-Franchetti",
+     "lat": 45.43172,
+     "lon": 12.32961,
+     "wikipediaCount": 15,
+     "wikidataId": "Q934025"
     }
    ]
   },
@@ -277,8 +560,13 @@
      "lon": 12.32809,
      "address": "Campo de la Carità 1050",
      "website": "https://www.gallerieaccademia.it/en",
-     "openingHours": "Tu-Su 08:15-19:15; Mo 8:15-14:00",
-     "wikipediaCount": 41
+     "openingHours": "Tu-Su 08:15-19:15; Mo 08:15-14:00",
+     "wikipediaCount": 41,
+     "wikidataId": "Q338330",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/162227289",
@@ -287,14 +575,25 @@
      "lon": 12.33391,
      "website": "https://polomusealeveneto.beniculturali.it/musei/galleria-giorgio-franchetti-alla-ca-doro",
      "openingHours": "Mo 09:00-14:00; Tu-Su 09:00-19:00; Jan 01 off; Dec 25 off",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q820872",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "relation/2382783",
      "name": "Ca' Pesaro",
      "lat": 45.44097,
      "lon": 12.33152,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q756807",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "relation/1927025",
@@ -304,26 +603,27 @@
      "address": "Fondamenta Rezzonico 3136",
      "website": "https://carezzonico.visitmuve.it/",
      "openingHours": "Apr-Oct 10:00-18:00; Apr-Oct Tu off; Nov-Mar We-Mo 10:00-17:00",
-     "wikipediaCount": 26
-    },
-    {
-     "id": "node/3199171089",
-     "name": "Collezione Peggy Guggenheim",
-     "lat": 45.4308,
-     "lon": 12.33169,
-     "website": "https://www.guggenheim-venice.it/",
-     "openingHours": "We-Mo 10:00-18:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 26,
+     "wikidataId": "Q1052171",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/5366368715",
-     "name": "Peggy Guggenheim Collection",
+     "name": "Collezione Peggy Guggenheim",
      "lat": 45.4308,
      "lon": 12.33154,
      "address": "Corte Venier dai Leoni",
      "website": "https://www.guggenheim-venice.it/",
-     "openingHours": "We-Mo 10:00-18:00",
-     "wikipediaCount": 24
+     "openingHours": "We-Mo 10:00-18:00, Tu off,Dec 25 off",
+     "wikipediaCount": 24,
+     "wikidataId": "Q1049033",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/173619525",
@@ -331,7 +631,12 @@
      "lat": 45.43377,
      "lon": 12.32794,
      "website": "http://www.palazzograssi.it/",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q907964",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/4121738102",
@@ -339,7 +644,12 @@
      "lat": 45.4336,
      "lon": 12.33718,
      "openingHours": "10:00-19:00; Nov-Mar 10:00-17:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1470912",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/138843143",
@@ -348,7 +658,11 @@
      "lon": 12.3253,
      "website": "http://www.scuolagrandesanrocco.it/",
      "openingHours": "Mo-Sa 09:30-17:30",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1270723",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2317795",
@@ -356,14 +670,22 @@
      "lat": 45.43072,
      "lon": 12.33627,
      "website": "http://www.palazzograssi.it/fr/about/les-lieux/punta-della-dogana/",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q2931413",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/314636453",
      "name": "Scuola di San Giorgio degli Schiavoni",
      "lat": 45.43621,
      "lon": 12.34594,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1290662",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3158707594",
@@ -371,8 +693,13 @@
      "lat": 45.44167,
      "lon": 12.32854,
      "website": "https://msn.visitmuve.it/",
-     "openingHours": "Oct-May: Tu-Su 09.00–17.00 \"last entry 16.00\"; Jun-Sep: Tu-Th,Su 10.00–18.00 \"last entry 17.00\"; Fr-Sa 10:00-20:00 \"last entry 19:00\"",
-     "wikipediaCount": 9
+     "openingHours": "Oct-May: Tu-Su 09:00-17:00 \"last entry 16.00\"; Jun-Sep: Tu-Th,Su 10:00-18:00 \"last entry 17.00\"; Fr-Sa 10:00-20:00 \"last entry 19:00\"",
+     "wikipediaCount": 9,
+     "wikidataId": "Q3867834",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/138802715",
@@ -380,7 +707,11 @@
      "lat": 45.43273,
      "lon": 12.3502,
      "openingHours": "Mo,We-Su 11:00-17:00; Tu closed; PH closed",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1954326",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2317696",
@@ -390,16 +721,26 @@
      "address": "Ramo Grimani 4858",
      "website": "https://polomusealeveneto.beniculturali.it/musei/museo-di-palazzo-grimani",
      "openingHours": "Tu-Su 10:00-18:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2898082",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/4330799289",
      "name": "Casa di Carlo Goldoni",
-     "lat": 45.43615,
-     "lon": 12.32826,
+     "lat": 45.4362,
+     "lon": 12.32829,
      "website": "https://carlogoldoni.visitmuve.it/",
      "openingHours": "Th-Su 12:00-16:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q856400",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4121738103",
@@ -408,7 +749,8 @@
      "lon": 12.33889,
      "website": "https://archeologicovenezia.cultura.gov.it/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q16580545"
     },
     {
      "id": "node/5366863424",
@@ -417,7 +759,13 @@
      "lon": 12.34103,
      "website": "https://www.querinistampalia.org/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3747209",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4479285990",
@@ -425,8 +773,14 @@
      "lat": 45.4407,
      "lon": 12.32983,
      "website": "https://mocenigo.visitmuve.it/en/home/",
-     "openingHours": "Tu-Su 10:00-15:30",
-     "wikipediaCount": 5
+     "openingHours": "Mo off; Apr-Oct: Tu-Su 10:00-18:00 \"last admission 17:00\"; Nov-Mar: Tu-Su 10:00-17:00 \"last admission 16:00\"; May-Sep: Fr,Sa 10:00-20:00 \"last admission 19:00\"",
+     "wikipediaCount": 5,
+     "wikidataId": "Q3890502",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/138842976",
@@ -434,7 +788,11 @@
      "lat": 45.43087,
      "lon": 12.3299,
      "website": "https://www.palazzocini.it/en",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q16586218",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "node/2205844954",
@@ -442,7 +800,11 @@
      "lat": 45.43467,
      "lon": 12.34081,
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2579358",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/250421435",
@@ -450,7 +812,11 @@
      "lat": 45.44513,
      "lon": 12.32718,
      "openingHours": "Su-Fr 10:00-17:30",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q17347510",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/316454133",
@@ -458,14 +824,20 @@
      "lat": 45.44312,
      "lon": 12.3383,
      "openingHours": "Fr-Su 10:00-13:00, 14:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3884410",
+     "kinds": [
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/4237129800",
      "name": "Istituto Veneto di Scienze Lettere ed Arti",
      "lat": 45.43195,
      "lon": 12.32963,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1674868"
     },
     {
      "id": "node/4372320704",
@@ -475,7 +847,26 @@
      "address": "Sestriere Santa Croce 2076",
      "website": "https://orientalevenezia.beniculturali.it/en/",
      "openingHours": "Apr 1- Oct 31: Tu-Su 10:00-17:00; Nov 1-Mar 31: 10:00-16:00; Mo off; Jan 1 off; Dec 25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1403370",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/10572768074",
+     "name": "Museo di icone",
+     "lat": 45.4356,
+     "lon": 12.34459,
+     "address": "Fondamenta dei Greci",
+     "website": "https://istitutoellenico.org/museum/",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q63331707",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4493365870",
@@ -485,23 +876,19 @@
      "address": "Piazza San Marco 101",
      "website": "https://fondoambiente.it/luoghi/negozio-olivetti",
      "openingHours": "Tu-Su 10:00-18:30",
-     "wikipediaCount": 3
-    },
-    {
-     "id": "node/10572768074",
-     "name": "Museo di icone",
-     "lat": 45.4356,
-     "lon": 12.34459,
-     "address": "Fondamenta dei Greci",
-     "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3874260"
     },
     {
      "id": "way/138802191",
      "name": "Magazzini del Sale",
      "lat": 45.42894,
      "lon": 12.33341,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3843086",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "node/11952442769",
@@ -527,6 +914,94 @@
      "lon": 12.33181,
      "website": "https://capesaro.visitmuve.it/it/il-museo/la-sede-e-la-storia/il-museo-e-la-sua-collezione/",
      "openingHours": "Tu-Su 10:00-17:00 \"ultimo ingresso alle 16\""
+    },
+    {
+     "id": "node/13850141442",
+     "name": "Giberto Venezia",
+     "lat": 45.43821,
+     "lon": 12.33576,
+     "website": "https://www.giberto.it/it/pages/negozio",
+     "openingHours": "09:00-13:00,14:00-19:00"
+    },
+    {
+     "id": "node/6721050985",
+     "name": "Le Stanze della Fotografia",
+     "lat": 45.42911,
+     "lon": 12.34572,
+     "website": "https://www.lestanzedellafotografia.it/",
+     "openingHours": "Th-Tu 11:00-19:00"
+    },
+    {
+     "id": "node/4475042527",
+     "name": "Leonardo da Vinci",
+     "lat": 45.43687,
+     "lon": 12.32559,
+     "website": "https://www.davincimuseum.it/",
+     "openingHours": "Mo-Su 10:30-18:00"
+    },
+    {
+     "id": "node/4163471511",
+     "name": "Museo della Musica",
+     "lat": 45.43303,
+     "lon": 12.33154,
+     "website": "https://www.museodellamusica.com/",
+     "openingHours": "Tu-Su 10:00-17:00; Mo closed; PH closed"
+    },
+    {
+     "id": "node/14269922401",
+     "name": "Museo Fortuny",
+     "lat": 45.43542,
+     "lon": 12.33226,
+     "address": "Campo San Beneto San Marco 3958",
+     "website": "https://fortuny.visitmuve.it/",
+     "openingHours": "Nov-Mar We-Mo 10:00-17:00;Apr-Oct We-Mo 10:00-18:00"
+    },
+    {
+     "id": "node/11966413569",
+     "name": "Palazzo Diedo",
+     "lat": 45.4435,
+     "lon": 12.33208,
+     "address": "Fondamenta Diedo 2386",
+     "website": "https://berggruenarts.org/it/",
+     "openingHours": "Th-Su 10:00-19:00"
+    },
+    {
+     "id": "node/14014343095",
+     "name": "Aquaria",
+     "lat": 45.44069,
+     "lon": 12.32924,
+     "website": "https://aquariart.com/"
+    },
+    {
+     "id": "node/9444261291",
+     "name": "Arsenale Institute for Politics of Representation",
+     "lat": 45.43109,
+     "lon": 12.3533,
+     "address": "Riva dei Sette Martiri 1430a",
+     "website": "http://www.arsenale.com/"
+    },
+    {
+     "id": "node/7017317440",
+     "name": "Casanova Museum",
+     "lat": 45.43269,
+     "lon": 12.3319,
+     "address": "San Marco 2668",
+     "website": "https://www.casanovaofficialmuseum.com/"
+    },
+    {
+     "id": "way/834663604",
+     "name": "Fondaco Marcello",
+     "lat": 45.43511,
+     "lon": 12.32953,
+     "website": "https://www.facebook.com/fondacomarcello",
+     "wikidataId": "Q66721955"
+    },
+    {
+     "id": "node/10568329920",
+     "name": "Human Safety Net",
+     "lat": 45.43433,
+     "lon": 12.33759,
+     "openingHours": "Mo-Su 09:00-19:00; PH closed"
     }
    ]
   },
@@ -539,7 +1014,11 @@
      "name": "Campanile di San Marco",
      "lat": 45.43404,
      "lon": 12.33905,
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q754194",
+     "kinds": [
+      "tower"
+     ]
     },
     {
      "id": "node/7599930588",
@@ -548,13 +1027,11 @@
      "lon": 12.34381,
      "website": "https://www.abbaziasangiorgio.it/",
      "openingHours": "Summer: 09:30-19:00",
-     "wikipediaCount": 2
-    },
-    {
-     "id": "node/6334395102",
-     "name": "Fondaco dei Tedeschi (Roof top terrace)",
-     "lat": 45.43829,
-     "lon": 12.33644
+     "wikipediaCount": 2,
+     "wikidataId": "Q15162612",
+     "kinds": [
+      "tower"
+     ]
     },
     {
      "id": "node/6603976551",
@@ -577,6 +1054,16 @@
      "website": "https://www.aciugheta.com/",
      "openingHours": "Mo-Su 12:00-23:00",
      "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/4446340777",
+     "name": "Ai Pie del Ponte",
+     "lat": 45.43849,
+     "lon": 12.34171,
+     "website": "https://www.aipiedelponte.it/",
+     "openingHours": "Summer: Fr-Tu 13:00-15:00,19:30-01:00",
+     "cuisine": "italian",
      "detailed": true
     },
     {
@@ -614,8 +1101,7 @@
      "id": "node/5564732241",
      "name": "Antico Pizzo",
      "lat": 45.43876,
-     "lon": 12.33359,
-     "address": "Calle San Matteo o del Marangon 814",
+     "lon": 12.33355,
      "website": "https://anticopizzo.com/",
      "openingHours": "Mo-Su 11:00-15:00, 19:00-23:00",
      "cuisine": "italian, italian pizza",
@@ -646,9 +1132,8 @@
     {
      "id": "node/5315184822",
      "name": "Brunch cafe",
-     "lat": 45.43722,
-     "lon": 12.33113,
-     "address": "Calle de la Madoneta 30125",
+     "lat": 45.43723,
+     "lon": 12.3311,
      "website": "https://brunchcafevenezia.com/",
      "openingHours": "Mo-Su 07:30-18:30",
      "cuisine": "coffee shop",
@@ -657,9 +1142,8 @@
     {
      "id": "node/4431132539",
      "name": "Cantina Do Spade",
-     "lat": 45.43915,
-     "lon": 12.33342,
-     "address": "Calle de le Do Spade 859",
+     "lat": 45.43918,
+     "lon": 12.33339,
      "website": "https://cantinadospade.com/",
      "openingHours": "Mo-Su 10:00-15:00,18:00-22:00; Tu 18:00-22:00",
      "cuisine": "italian",
@@ -690,12 +1174,11 @@
     {
      "id": "node/4546955607",
      "name": "Frary's",
-     "lat": 45.43739,
-     "lon": 12.32723,
-     "address": "Fondamenta dei Frari 2558",
+     "lat": 45.4375,
+     "lon": 12.32716,
      "website": "http://www.frarys.it/",
      "openingHours": "Mo-Su 11:30-15:00, 18:00-23:00",
-     "cuisine": "african, arab, ethiopian, greek, lebanese, mediterranean, moroccan",
+     "cuisine": "arab, greek, lebanese, mediterranean, moroccan",
      "detailed": true
     },
     {
@@ -726,6 +1209,16 @@
      "lon": 12.3213,
      "website": "https://www.osottoosopra.com/",
      "openingHours": "Mo,Tu,Th 18:00-23:00; Fr,Sa,Su 12:00-15:00,18:00-23:00",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
+     "id": "node/4764747574",
+     "name": "Il Due Colonne",
+     "lat": 45.43856,
+     "lon": 12.32848,
+     "website": "https://www.ristorantepizzeriaduecolonne.com/",
+     "openingHours": "Mo-Su 12:00-22:30",
      "cuisine": "italian",
      "detailed": true
     },
@@ -773,6 +1266,16 @@
      "detailed": true
     },
     {
+     "id": "node/6835726786",
+     "name": "Ostaria al Garanghelo",
+     "lat": 45.43935,
+     "lon": 12.33269,
+     "website": "https://www.algaranghelo.it/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
      "id": "node/4234614139",
      "name": "Ostaria Al Vecio Pozzo",
      "lat": 45.43921,
@@ -817,8 +1320,8 @@
     {
      "id": "node/3116780944",
      "name": "Osteria Pan e Ogio",
-     "lat": 45.445,
-     "lon": 12.32302,
+     "lat": 45.44502,
+     "lon": 12.323,
      "address": "Fondamenta De Cannaregio 1037",
      "website": "https://www.ogio-ve.it/",
      "openingHours": "We-Fr 10:00-18:00; Sa-Th 11:00-18:00",
@@ -854,38 +1357,6 @@
      "openingHours": "12:00-23:00; PH open",
      "cuisine": "italian",
      "detailed": true
-    },
-    {
-     "id": "node/6658581286",
-     "name": "Ristorante Noemi",
-     "lat": 45.4348,
-     "lon": 12.33728,
-     "address": "Calle dei Fabbri 912",
-     "website": "http://www.ristorantenoemi.com/",
-     "openingHours": "Mo-Su 11:30-00:00",
-     "cuisine": "italian",
-     "detailed": true
-    },
-    {
-     "id": "node/4975547322",
-     "name": "Ristorante Pizzeria Al Gobbo di Rialto",
-     "lat": 45.43826,
-     "lon": 12.33411,
-     "address": "Calle Dogana da Terra 649",
-     "website": "https://www.facebook.com/ristorantealgobbodirialto/",
-     "openingHours": "Mo-Su 11:00-23:00",
-     "cuisine": "italian, italian pizza",
-     "detailed": true
-    },
-    {
-     "id": "node/4238219504",
-     "name": "Ristorante Pizzeria Da Alvise",
-     "lat": 45.44265,
-     "lon": 12.34121,
-     "website": "https://www.ristorantedaalvise.it/",
-     "openingHours": "Tu-Su 12:00-14:00, Mo-Su 19:00-22:00; Mo off",
-     "cuisine": "italian, pizza",
-     "detailed": true
     }
    ]
   },
@@ -893,6 +1364,17 @@
    "status": "ok",
    "wikipediaCountsAvailable": true,
    "places": [
+    {
+     "id": "node/14232270101",
+     "name": "Caffè Cannaregio",
+     "lat": 45.44571,
+     "lon": 12.32786,
+     "address": "Fondamenta degli Ormesini 2804",
+     "website": "https://caffecannaregio.com/",
+     "openingHours": "Th-Sa 08:00-15:30, Su 09:00-16:30, Mo 08:00-15:30",
+     "cuisine": "breakfast, coffee shop, tea",
+     "detailed": true
+    },
     {
      "id": "node/12453807859",
      "name": "Caffè Florian",
@@ -902,6 +1384,10 @@
      "website": "https://www.caffeflorian.com/",
      "openingHours": "Mo-Su 09:00-23:00",
      "cuisine": "coffee shop, ice cream, italian, sandwich",
+     "wikidataId": "Q960610",
+     "kinds": [
+      "business"
+     ],
      "detailed": true
     },
     {
@@ -927,8 +1413,8 @@
     {
      "id": "node/5010909621",
      "name": "Boresso",
-     "lat": 45.44049,
-     "lon": 12.32961,
+     "lat": 45.44048,
+     "lon": 12.32962,
      "openingHours": "Mo-Su 07:00-15:30",
      "cuisine": "coffee shop",
      "detailed": true
@@ -936,11 +1422,20 @@
     {
      "id": "node/5149222821",
      "name": "Café del Doge Caffetteria Rialto",
-     "lat": 45.43836,
-     "lon": 12.33425,
-     "address": "Calle dei Cinque 609",
+     "lat": 45.4383,
+     "lon": 12.33423,
      "website": "https://www.caffedeldoge.com/",
      "openingHours": "Mo-Su 07:00-19:00",
+     "detailed": true
+    },
+    {
+     "id": "node/5341614921",
+     "name": "Caffé Bistrot",
+     "lat": 45.44399,
+     "lon": 12.32836,
+     "address": "Rio Tera' San Leonardo 1409",
+     "openingHours": "Tu-Su 08:00-21:30",
+     "cuisine": "coffee shop, cake",
      "detailed": true
     },
     {
@@ -950,14 +1445,14 @@
      "lon": 12.33844,
      "website": "https://www.caffelavena.it/",
      "openingHours": "09:30-24:00",
+     "wikidataId": "Q5017189",
      "detailed": true
     },
     {
      "id": "node/5149219332",
      "name": "Goppion Cafe",
-     "lat": 45.43842,
+     "lat": 45.43844,
      "lon": 12.33401,
-     "address": "Calle del Volto o Ruga Vecchia 776",
      "website": "https://www.goppioncaffe.it/",
      "openingHours": "Mo-Su 06:30-19:00",
      "detailed": true
@@ -975,21 +1470,20 @@
     {
      "id": "node/7416615860",
      "name": "Il Buongusto",
-     "lat": 45.43976,
-     "lon": 12.33794,
+     "lat": 45.43978,
+     "lon": 12.33795,
      "address": "Salizada San Canzian 5555a",
      "website": "https://il-buongusto.business.site/",
      "openingHours": "Mo-Sa 10:00-13:30; Su off",
      "detailed": true
     },
     {
-     "id": "node/5217494723",
+     "id": "node/4366618291",
      "name": "Il Mercante",
-     "lat": 45.43725,
-     "lon": 12.32733,
-     "address": "Fondamenta dei Frari 2564",
+     "lat": 45.43731,
+     "lon": 12.32729,
      "website": "http://www.ilmercantevenezia.com/",
-     "openingHours": "Su, We-Th 18:00-01:00; Fr-Sa 18:00-02:00",
+     "openingHours": "Mo-Fr 18:00-01:00; Sa-Su 10:30-16:30,18:00-01:00",
      "detailed": true
     },
     {
@@ -1021,16 +1515,6 @@
      "detailed": true
     },
     {
-     "id": "node/5438300221",
-     "name": "Self Service Rialto",
-     "lat": 45.4367,
-     "lon": 12.33444,
-     "address": "Riva del Carbon 4175",
-     "openingHours": "Mo-Su 11:30-14:30",
-     "cuisine": "italian pizza, italian, mediterranean",
-     "detailed": true
-    },
-    {
      "id": "node/5937822785",
      "name": "Snack Bar Castello",
      "lat": 45.43214,
@@ -1050,17 +1534,10 @@
      "detailed": true
     },
     {
-     "id": "node/5938408385",
-     "name": "12 Oz Coffee Joint",
-     "lat": 45.44106,
-     "lon": 12.33437,
-     "openingHours": "Mo-Th 08:00-18:00; Fr,Sa 08:00-19:00; Su 08:00-18:00"
-    },
-    {
      "id": "node/5554511821",
      "name": "Adagio Caffe & Wine Bar",
-     "lat": 45.43638,
-     "lon": 12.32634,
+     "lat": 45.43639,
+     "lon": 12.32635,
      "openingHours": "Mo-Sa 07:30-23:00"
     },
     {
@@ -1078,9 +1555,16 @@
      "openingHours": "Tu-Su 11:00-21:00"
     },
     {
+     "id": "node/2482210452",
+     "name": "Bar Ai Scalzi",
+     "lat": 45.44141,
+     "lon": 12.32241,
+     "website": "https://www.ristoranteaiscalzi.it/"
+    },
+    {
      "id": "node/4187989723",
-     "name": "Bar de Maravegie",
-     "lat": 45.43164,
+     "name": "Bar de Maravegie;Bar ae Maraveje",
+     "lat": 45.4317,
      "lon": 12.32669,
      "cuisine": "italian, pizza, italian pizza, cake, local, coffee shop"
     },
@@ -1127,26 +1611,20 @@
      "openingHours": "08:30-22:30"
     },
     {
-     "id": "node/5341614921",
-     "name": "Caffé Bistrot",
-     "lat": 45.44399,
-     "lon": 12.32836,
-     "address": "Rio Tera' San Leonardo 1409",
-     "cuisine": "coffee shop, cake"
-    },
-    {
      "id": "node/6603965500",
      "name": "Caffè Brasilia",
      "lat": 45.43465,
      "lon": 12.33308,
+     "address": "San Marco",
      "openingHours": "Mo-Su,PH 07:00-02:00"
     },
     {
-     "id": "node/7384875313",
-     "name": "Caffè Girani Antica torrefazione veneziana",
-     "lat": 45.43451,
-     "lon": 12.34636,
-     "website": "https://caffegirani.it/"
+     "id": "node/5744461818",
+     "name": "Caffe Cannaregio",
+     "lat": 45.44571,
+     "lon": 12.32786,
+     "address": "Fondamenta degli Ormesini 2804",
+     "openingHours": "Mo,Th-Sa 08:00-15:30; Su 09:00-16:30"
     }
    ]
   },
@@ -1172,9 +1650,8 @@
     {
      "id": "node/13197663201",
      "name": "Alla Fonda",
-     "lat": 45.43892,
-     "lon": 12.33432,
-     "address": "Calle de la Galeazza 405",
+     "lat": 45.43895,
+     "lon": 12.33425,
      "openingHours": "Mo-Su 09:00-19:30",
      "cuisine": "italian",
      "detailed": true
@@ -1238,6 +1715,15 @@
      "detailed": true
     },
     {
+     "id": "node/13912498108",
+     "name": "H2NO",
+     "lat": 45.4439,
+     "lon": 12.32864,
+     "website": "https://www.h2novenezia.it/",
+     "openingHours": "Mo-Fr 11:00-22:00; Sa 11:00-23:00; Su off",
+     "detailed": true
+    },
+    {
      "id": "node/2250066811",
      "name": "Il Santo Bevitore",
      "lat": 45.4434,
@@ -1253,6 +1739,16 @@
      "lon": 12.32463,
      "website": "https://www.irishpubsantalucia.it/",
      "openingHours": "Mo-Su 00:00-02:00,07:00-24:00",
+     "detailed": true
+    },
+    {
+     "id": "node/13972539101",
+     "name": "Osteria Ae Forcoe",
+     "lat": 45.43964,
+     "lon": 12.33745,
+     "address": "Cannaregio 5905",
+     "openingHours": "Mo-Su 11:00-00:00",
+     "cuisine": "italian",
      "detailed": true
     },
     {
@@ -1276,9 +1772,9 @@
     },
     {
      "id": "node/2188208741",
-     "name": "Vineria all'Amarone",
+     "name": "Vineria All’Amarone Wine Bar",
      "lat": 45.4376,
-     "lon": 12.33265,
+     "lon": 12.33267,
      "website": "https://www.allamarone.com/",
      "openingHours": "Su,Mo off; Tu-Sa 12:00-22:30",
      "detailed": true
@@ -1306,13 +1802,13 @@
      "lat": 45.44065,
      "lon": 12.33631,
      "address": "Calle de l'Oca 4430",
-     "cuisine": "italian pizza"
+     "cuisine": "pizza"
     },
     {
-     "id": "node/13881645201",
+     "id": "node/13869222839",
      "name": "Al Cervi",
-     "lat": 45.44101,
-     "lon": 12.33479,
+     "lat": 45.44103,
+     "lon": 12.33477,
      "address": "Strada Nova 4186",
      "cuisine": "breakfast"
     },
@@ -1323,14 +1819,6 @@
      "lon": 12.32844,
      "address": "Fondamenta degli Ormesini 2754",
      "openingHours": "We-Mo 16:00-01:00; Tu off"
-    },
-    {
-     "id": "node/2964496690",
-     "name": "Alla Bragora",
-     "lat": 45.435,
-     "lon": 12.34684,
-     "address": "Salizada Sant'Antonin 3604",
-     "openingHours": "Mo-Su 07:00-20:00; PH closed"
     },
     {
      "id": "node/5041847021",
@@ -1359,7 +1847,6 @@
      "name": "Bar ai Nomboli",
      "lat": 45.43639,
      "lon": 12.32846,
-     "address": "Calle dei Nomboli 2717c",
      "cuisine": "local"
     },
     {
@@ -1380,8 +1867,8 @@
     {
      "id": "node/4449378072",
      "name": "Bar Cupido Bistrot",
-     "lat": 45.44288,
-     "lon": 12.3408,
+     "lat": 45.44286,
+     "lon": 12.34078,
      "address": "Fondamente Nove 5043",
      "openingHours": "Mo-Su 05:30-22:00"
     },
@@ -1406,13 +1893,6 @@
      "lon": 12.3552,
      "address": "Via Giuseppe Garibaldi 1820",
      "openingHours": "Tu, Sa 12:00-22:00; Su, We-Fr 11:30-22:00"
-    },
-    {
-     "id": "node/6900129185",
-     "name": "Bar Snack Bar Nostro",
-     "lat": 45.43778,
-     "lon": 12.33698,
-     "openingHours": "Mo-Su 07:00-00:00"
     }
    ]
   },

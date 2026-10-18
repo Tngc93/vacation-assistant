@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "AMS",
- "fetchedAt": "2026-10-16T23:21:49.197Z",
+ "fetchedAt": "2026-10-18T16:12:06.046Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -35,6 +35,36 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q855003",
+     "name": "Stelling van Amsterdam",
+     "localName": "Defence Line of Amsterdam",
+     "lat": 52.37444,
+     "lon": 4.89306,
+     "wikipediaCount": 38,
+     "wikidataId": "Q855003",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "landscape",
+      "waterline"
+     ]
+    },
+    {
+     "id": "wikidata/Q849957",
+     "name": "Concertgebouw",
+     "lat": 52.35631,
+     "lon": 4.87908,
+     "wikipediaCount": 37,
+     "wikidataId": "Q849957",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
      "id": "relation/3580875",
      "name": "Koninklijk Paleis",
      "lat": 52.37314,
@@ -42,14 +72,35 @@
      "address": "Nieuwezijds Voorburgwal 147",
      "website": "https://www.paleisamsterdam.nl/",
      "openingHours": "10:00-17:00",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q1056152",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q50719",
+     "name": "Amsterdam Garı",
+     "localName": "Amsterdam Central station",
+     "lat": 52.37895,
+     "lon": 4.90016,
+     "wikipediaCount": 35,
+     "wikidataId": "Q50719",
+     "kinds": [
+      "heritage",
+      "office",
+      "station"
+     ]
     },
     {
      "id": "way/266949472",
      "name": "de Wallen",
      "lat": 52.37346,
      "lon": 4.89819,
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q447664"
     },
     {
      "id": "way/94756489",
@@ -57,7 +108,23 @@
      "localName": "Dam",
      "lat": 52.37312,
      "lon": 4.89261,
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q839050",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q713124",
+     "name": "Natura Artis Magistra",
+     "lat": 52.36611,
+     "lon": 4.91667,
+     "wikipediaCount": 29,
+     "wikidataId": "Q713124",
+     "kinds": [
+      "attraction",
+      "museum"
+     ]
     },
     {
      "id": "way/99205257",
@@ -66,28 +133,80 @@
      "lon": 4.88392,
      "website": "https://www.westerkerk.nl/",
      "openingHours": "Mo-Fr 11:00-15:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1130722",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1419691",
+     "name": "Vondelpark",
+     "lat": 52.35694,
+     "lon": 4.86639,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1419691",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q51411",
+     "name": "Homomonument",
+     "lat": 52.37444,
+     "lon": 4.88472,
+     "wikipediaCount": 22,
+     "wikidataId": "Q51411"
+    },
+    {
+     "id": "wikidata/Q639321",
+     "name": "Museumplein",
+     "lat": 52.35761,
+     "lon": 4.88162,
+     "wikipediaCount": 22,
+     "wikidataId": "Q639321",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/601096321",
      "name": "Magere Brug",
      "lat": 52.36358,
      "lon": 4.90236,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1344400",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "way/57862728",
      "name": "Munttoren",
      "lat": 52.36706,
      "lon": 4.89322,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1429748",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/57861363",
      "name": "Portugese Synagoge",
      "lat": 52.36754,
      "lon": 4.90534,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1853707",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/31527079",
@@ -97,7 +216,11 @@
      "address": "Plantage Middenlaan 2a",
      "website": "https://www.dehortus.nl/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1576733",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/145953534",
@@ -105,7 +228,87 @@
      "lat": 52.36695,
      "lon": 4.8914,
      "openingHours": "Mo-Sa 09:00-17:30; Su 11:30-17:30",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q643079"
+    },
+    {
+     "id": "wikidata/Q4271952",
+     "name": "Amsterdam Ordnance Datum",
+     "lat": 52.37306,
+     "lon": 4.89278,
+     "wikipediaCount": 16,
+     "wikidataId": "Q4271952"
+    },
+    {
+     "id": "wikidata/Q2637994",
+     "name": "Muziekgebouw aan 't IJ",
+     "lat": 52.37833,
+     "lon": 4.91306,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2637994",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q1350750",
+     "name": "Church of St Nicholas",
+     "lat": 52.37653,
+     "lon": 4.90111,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1350750",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1568693",
+     "name": "Nieuwmarkt",
+     "lat": 52.37257,
+     "lon": 4.9005,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1568693",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1579642",
+     "name": "Rembrandtplein",
+     "lat": 52.36602,
+     "lon": 4.89664,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1579642",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q893046",
+     "name": "Singel",
+     "lat": 52.3737,
+     "lon": 4.889,
+     "wikipediaCount": 15,
+     "wikidataId": "Q893046",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q901461",
+     "name": "Damrak",
+     "lat": 52.37607,
+     "lon": 4.89711,
+     "wikipediaCount": 14,
+     "wikidataId": "Q901461",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "relation/7112728",
@@ -115,21 +318,90 @@
      "address": "Albert Cuypstraat 1073",
      "website": "https://albertcuyp-markt.amsterdam/",
      "openingHours": "Mo-Sa 09:00-17:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q2342892"
     },
     {
      "id": "way/1231991755",
      "name": "Leidseplein",
      "lat": 52.36397,
      "lon": 4.88233,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1409805",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q683180",
+     "name": "Muntplein",
+     "lat": 52.36694,
+     "lon": 4.89333,
+     "wikipediaCount": 13,
+     "wikidataId": "Q683180",
+     "kinds": [
+      "bridge",
+      "square"
+     ]
     },
     {
      "id": "way/168680619",
      "name": "Nationaal Monument",
      "lat": 52.37282,
      "lon": 4.89369,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q473851",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q613854",
+     "name": "Noorderkerk",
+     "lat": 52.37954,
+     "lon": 4.8863,
+     "wikipediaCount": 13,
+     "wikidataId": "Q613854",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "node/1611202846",
+     "name": "Waterloopleinmarkt",
+     "lat": 52.36862,
+     "lon": 4.90119,
+     "openingHours": "Mo-Sa 09:30-18:00",
+     "wikipediaCount": 12,
+     "wikidataId": "Q2301532",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1180056",
+     "name": "De Krijtberg",
+     "lat": 52.36778,
+     "lon": 4.88806,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1180056",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q673399",
+     "name": "Rokin",
+     "lat": 52.36889,
+     "lon": 4.89222,
+     "wikipediaCount": 12,
+     "wikidataId": "Q673399",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/57857390",
@@ -137,14 +409,24 @@
      "lat": 52.37277,
      "lon": 4.90032,
      "address": "Nieuwmarkt 4",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2466999",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/114120359",
      "name": "Zuiderkerk",
      "lat": 52.37029,
      "lon": 4.89975,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q228629",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/57858502",
@@ -153,7 +435,41 @@
      "lon": 4.89628,
      "address": "Damrak 243",
      "website": "https://www.beursvanberlage.com/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q851200",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q478198",
+     "name": "Amstel Hotel",
+     "localName": "InterContinental Amstel Amsterdam",
+     "lat": 52.36001,
+     "lon": 4.90516,
+     "wikipediaCount": 11,
+     "wikidataId": "Q478198",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q748443",
+     "name": "Kalverstraat",
+     "lat": 52.36972,
+     "lon": 4.89111,
+     "wikipediaCount": 11,
+     "wikidataId": "Q748443",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/57864086",
@@ -161,7 +477,70 @@
      "lat": 52.37204,
      "lon": 4.90566,
      "address": "Oudeschans 2",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1946061",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q2915920",
+     "name": "Noordermarkt",
+     "lat": 52.37953,
+     "lon": 4.88675,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2915920",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1535378",
+     "name": "Paradiso",
+     "lat": 52.36216,
+     "lon": 4.88391,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1535378",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "religious",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1138851",
+     "name": "Stopera",
+     "lat": 52.36727,
+     "lon": 4.90153,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1138851",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "office",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q599272",
+     "name": "Tuschinski Theatre",
+     "lat": 52.36611,
+     "lon": 4.89444,
+     "wikipediaCount": 11,
+     "wikidataId": "Q599272",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage"
+     ]
     },
     {
      "id": "way/26658363",
@@ -169,14 +548,23 @@
      "lat": 52.36944,
      "lon": 4.89007,
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1629214",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "node/4734528821",
      "name": "Oost-Indisch Huis",
      "lat": 52.371,
      "lon": 4.89803,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2223310",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/57859248",
@@ -184,35 +572,56 @@
      "lat": 52.37636,
      "lon": 4.90224,
      "address": "Prins Hendrikkade 94",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q610402",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/26341034",
      "name": "Spui",
      "lat": 52.36879,
      "lon": 4.88985,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q281703",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
     },
     {
      "id": "way/266604553",
      "name": "Het Huis met den Hoofden",
      "lat": 52.37638,
      "lon": 4.88746,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q961901",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/4952719221",
      "name": "Ruiterstandbeeld van Koningin Wilhelmina",
      "lat": 52.36918,
      "lon": 4.89231,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1993531"
     },
     {
      "id": "way/57863677",
      "name": "Scheepvaarthuis",
      "lat": 52.37432,
      "lon": 4.90413,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2078885",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "node/251528292",
@@ -222,14 +631,23 @@
      "address": "Rokin 78",
      "website": "https://www.thedungeons.com/amsterdam/en/",
      "openingHours": "Su-Th 11:00-18:00; Fr-Sa 11:00-19:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2134254",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/7371675",
      "name": "Warmoesstraat",
      "lat": 52.37407,
      "lon": 4.8963,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q389909",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/23108728",
@@ -238,24 +656,12 @@
      "lon": 4.87187,
      "address": "Vondelstraat 140",
      "website": "https://dehollandschemanege.nl/",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "way/585781666",
-     "name": "Chinatown",
-     "lat": 52.37328,
-     "lon": 4.9006,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/2721942970",
-     "name": "Felix Meritis",
-     "lat": 52.36999,
-     "lon": 4.88425,
-     "address": "Keizersgracht 324",
-     "website": "https://felixmeritis.nl/",
-     "openingHours": "\"depends on the even\"",
-     "wikipediaCount": 3
+     "wikipediaCount": 4,
+     "wikidataId": "Q2191087",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
     }
    ]
   },
@@ -270,7 +676,12 @@
      "lon": 4.885,
      "website": "https://www.rijksmuseum.nl/",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 68
+     "wikipediaCount": 68,
+     "wikidataId": "Q190804",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "relation/6577680",
@@ -280,7 +691,23 @@
      "address": "Paulus Potterstraat 7",
      "website": "https://www.vangoghmuseum.nl/",
      "openingHours": "Sa-Th 09:00-18:00; Fr 09:00-22:00",
-     "wikipediaCount": 60
+     "wikipediaCount": 60,
+     "wikidataId": "Q224124",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q924335",
+     "name": "Stedelijk Müzesi",
+     "localName": "Stedelijk Museum Amsterdam",
+     "lat": 52.35801,
+     "lon": 4.87976,
+     "wikipediaCount": 38,
+     "wikidataId": "Q924335",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/601081859",
@@ -290,7 +717,11 @@
      "address": "Prinsengracht 267",
      "website": "https://www.annefrank.org/",
      "openingHours": "Mo-Su,PH 09:00-22:00 open \"Online tickets only\"; Jan 01 12:00-22:00; Apr 27 09:00-17:00; May 04 09:00-17:00; 2026 Sep 20 09:00-17:00; 2026 Sep 21 off; 2026 Nov 07 09:00-18:30; Dec 25 09:00-17:00; Dec 31 09:00-17:00",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q165366",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/26611707",
@@ -300,7 +731,11 @@
      "address": "Linnaeusstraat 2",
      "website": "https://amsterdam.wereldmuseum.nl/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1131589",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/250624673",
@@ -310,7 +745,12 @@
      "address": "Jodenbreestraat 4",
      "website": "https://www.rembrandthuis.nl/",
      "openingHours": "Mo-Su 10:00-18:00; Nov 02-Dec 18 10:00-17:00; Dec 24, Dec 31 10:00-17:00; Dec 25 off; Jan 04-Feb 12 10:00-17:00; Jan 07, Apr 27 off",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q277316",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4672250949",
@@ -320,7 +760,13 @@
      "address": "Dam 12",
      "website": "https://www.nieuwekerk.nl/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1419675",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/2741083161",
@@ -330,7 +776,11 @@
      "address": "Oosterdok 2",
      "website": "https://www.nemosciencemuseum.nl/",
      "openingHours": "Tu-Su 10:00-17:30",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q1422000",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/57857592",
@@ -340,7 +790,13 @@
      "address": "Oudekerksplein 23",
      "website": "https://www.oudekerk.nl/",
      "openingHours": "Mo-Sa 10:00-18:00; Su 13:00-17:30",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q623558",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/34050790",
@@ -350,7 +806,11 @@
      "address": "Kalverstraat 92",
      "website": "https://www.amsterdammuseum.nl/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1820897",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2742811299",
@@ -360,7 +820,23 @@
      "address": "Amstel 51",
      "website": "https://hartmuseum.nl/",
      "openingHours": "Mo-Su 10:00-17:00; Dec 25,Jan 1 12:00-17:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1350009",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q130736773",
+     "name": "Allard Pierson",
+     "lat": 52.36883,
+     "lon": 4.89306,
+     "wikipediaCount": 17,
+     "wikidataId": "Q130736773",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/1287492683",
@@ -370,7 +846,11 @@
      "address": "Kattenburgerplein 1",
      "website": "https://www.hetscheepvaartmuseum.nl/",
      "openingHours": "Tu-Su 10:00-17:00; SH Mo-Su 10:00-17:00; Jan 01,Apr 27,Dec 25 off",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1616123",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/57857987",
@@ -380,7 +860,11 @@
      "address": "Nieuwe Amstelstraat 1",
      "website": "https://www.jhm.nl/",
      "openingHours": "Mo-Su 11:00-17:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q702726",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12837827701",
@@ -390,7 +874,13 @@
      "address": "Oudezijds Voorburgwal 38",
      "website": "https://www.opsolder.nl/",
      "openingHours": "Mo-Sa 10:00-17:00; Su 13:00-17:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q493160",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "node/12662916563",
@@ -400,7 +890,13 @@
      "address": "IJpromenade 1",
      "website": "https://www.eyefilm.nl/",
      "openingHours": "Mo-Su 10:00-19:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1538389",
+     "kinds": [
+      "business",
+      "cinema",
+      "museum"
+     ]
     },
     {
      "id": "node/251147170",
@@ -410,7 +906,11 @@
      "address": "Damrak 18",
      "website": "https://sexmuseumamsterdam.nl/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q3329876",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1310974825",
@@ -420,7 +920,11 @@
      "address": "Oudezijds Achterburgwal 148",
      "website": "https://hashmuseum.com/amsterdam",
      "openingHours": "10:00-22:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q3783595",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2725914421",
@@ -430,7 +934,12 @@
      "address": "Herengracht 497",
      "website": "https://www.kattenkabinet.nl/",
      "openingHours": "Sa,Su 12:00-17:00; Mo-Fr 10:00-17:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2916386",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2817515795",
@@ -440,7 +949,11 @@
      "address": "Stadhouderskade 78",
      "website": "https://heineken.com/Heineken-Experience",
      "openingHours": "Mo-Th 10:30-19:30; Fr-Su 10:30-21:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2087161",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4383681597",
@@ -450,7 +963,11 @@
      "address": "Plantage Kerklaan 38-40",
      "website": "https://www.micropia.nl/",
      "openingHours": "Mo-We 09:00-18:00; Th-Sa 09:00-20:00; Su 09:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q18169481",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/34050744",
@@ -460,7 +977,11 @@
      "address": "Herengracht 605",
      "website": "https://www.willetholthuysen.nl/",
      "openingHours": "Mo-Fr 10:00-17:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1886176",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/441327444",
@@ -470,7 +991,11 @@
      "address": "Oostzaanstraat 45",
      "website": "https://www.hetschip.nl/",
      "openingHours": "Tu-Su 11:00-17:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1616115",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/440419242",
@@ -480,7 +1005,11 @@
      "address": "Plantage Kerklaan 61",
      "website": "https://www.verzetsmuseum.org/",
      "openingHours": "Mo-Fr 10:00-17:00; Sa,Su 11:00-17:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q828307",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/34050759",
@@ -490,7 +1019,12 @@
      "address": "Keizersgracht 672",
      "website": "https://www.museumvanloon.nl/",
      "openingHours": "Mo-Su 10:00-17:00; Dec 24,31 10:00-15:00; Apr 27,Dec 25,Jan 1 off",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2191110",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/432506873",
@@ -500,7 +1034,14 @@
      "address": "Plantage Middenlaan 24",
      "website": "https://www.hollandscheschouwburg.nl/en",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2206529",
+     "kinds": [
+      "heritage",
+      "museum",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "node/2816504554",
@@ -510,7 +1051,11 @@
      "address": "Honthorststraat 20",
      "website": "https://mocomuseum.com/",
      "openingHours": "Mo-Th, Su 09:00-19:00; Fr, Sa 09:00-20:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q26832671",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2742884279",
@@ -520,7 +1065,11 @@
      "address": "Plantage Middenlaan 27",
      "website": "https://jck.nl/locatie/nationaal-holocaustmuseum",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q26822174",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2720969403",
@@ -530,7 +1079,11 @@
      "address": "Prinsengracht 116",
      "website": "https://amsterdamtulipmuseum.com/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2020907",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11964914826",
@@ -540,7 +1093,11 @@
      "address": "Dam 20",
      "website": "https://www.madametussauds.com/amsterdam",
      "openingHours": "Mo-Su 09:30-19:30",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3275333",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2737805178",
@@ -550,7 +1107,11 @@
      "address": "Amstel 218",
      "website": "https://collectiesix.nl/",
      "openingHours": "\"only after reservation\"",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2370540",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/250624672",
@@ -560,7 +1121,121 @@
      "address": "Keizersgracht 609",
      "website": "https://www.foam.org/",
      "openingHours": "Sa-We 10:00-18:00; Th-Fr 10:00-21:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5422840",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1237228907",
+     "name": "Huis Marseille",
+     "lat": 52.36764,
+     "lon": 4.88484,
+     "address": "Keizersgracht 401",
+     "website": "https://www.huismarseille.nl/",
+     "openingHours": "Fr-We 10:00-18:00, Th 10:00-09:00; PH off",
+     "wikipediaCount": 4,
+     "wikidataId": "Q2141968",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/8335928712",
+     "name": "Pijpenkabinet",
+     "lat": 52.36412,
+     "lon": 4.88534,
+     "address": "Prinsengracht 488",
+     "website": "https://www.pipemuseum.nl/",
+     "openingHours": "Mo-Sa 12:00-18:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q2218690",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2741083668",
+     "name": "Arcam",
+     "lat": 52.37151,
+     "lon": 4.91247,
+     "address": "Prins Hendrikkade 600",
+     "website": "https://www.arcam.nl/",
+     "openingHours": "Tu-Su 13:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q2098441",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/174193863",
+     "name": "Huis Bartolotti",
+     "lat": 52.37407,
+     "lon": 4.88672,
+     "website": "https://www.museumhuizen.nl/nl/huis-bartolotti",
+     "openingHours": "Th-Sa 10:00-16:00; Su 12:00-16:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q2205055",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/1135509041",
+     "name": "Torture Museum",
+     "lat": 52.36729,
+     "lon": 4.89067,
+     "address": "Singel 449",
+     "website": "https://www.torturemuseum.org/",
+     "openingHours": "10:00-23:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q17146713",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2724283878",
+     "name": "W139",
+     "lat": 52.37375,
+     "lon": 4.89599,
+     "address": "Warmoesstraat 139",
+     "website": "https://w139.nl/",
+     "wikipediaCount": 3,
+     "wikidataId": "Q2429597",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/7800877214",
+     "name": "Embassy of the Free Mind",
+     "lat": 52.37634,
+     "lon": 4.88745,
+     "address": "Keizersgracht 123",
+     "website": "https://embassyofthefreemind.com/",
+     "openingHours": "We-Su 10:00-17:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q56452182",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1727571380",
+     "name": "Houseboat Museum",
+     "lat": 52.37015,
+     "lon": 4.8826,
+     "address": "Prinsengracht 296K",
+     "website": "https://www.houseboatmuseum.nl/",
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q14544962",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -573,7 +1248,12 @@
      "name": "Blauwbrug",
      "lat": 52.36636,
      "lon": 4.90088,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q883126",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "node/4382053996",
@@ -1457,6 +2137,7 @@
      "address": "Zeedijk 63",
      "website": "https://www.cafetmandje.nl/",
      "openingHours": "Mo-Th 17:00+; Fr-Su 14:00+",
+     "wikidataId": "Q5017290",
      "detailed": true
     },
     {

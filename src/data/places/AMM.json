@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "AMM",
- "fetchedAt": "2026-10-17T00:04:21.935Z",
+ "fetchedAt": "2026-10-18T16:58:35.085Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,39 +43,101 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1574587",
+     "name": "Kral I. Abdullah Camii",
+     "localName": "King Abdullah I Mosque",
+     "lat": 31.96158,
+     "lon": 35.91312,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1574587",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
      "id": "way/35200952",
      "name": "تل القلعة",
      "lat": 31.95492,
      "lon": 35.93487,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q3157009",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/608094627",
      "name": "Roman Theatre",
      "lat": 31.95162,
      "lon": 35.93932,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2634316",
+     "kinds": [
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     },
     {
      "id": "way/245144085",
      "name": "معبد هيراكليس",
      "lat": 31.95375,
      "lon": 35.93486,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q20423672",
+     "kinds": [
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q12192959",
+     "name": "Al Husseini Mosque",
+     "lat": 31.94972,
+     "lon": 35.93472,
+     "wikipediaCount": 11,
+     "wikidataId": "Q12192959",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q20422619",
+     "name": "Amman Odeonu",
+     "localName": "Odeon of Amman",
+     "lat": 31.95233,
+     "lon": 35.93989,
+     "wikipediaCount": 11,
+     "wikidataId": "Q20422619",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "node/2807835007",
      "name": "Nymphaeum",
      "lat": 31.95015,
      "lon": 35.93618,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q22948574",
+     "kinds": [
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "way/757688579",
      "name": "قصر الأمويين",
      "lat": 31.95589,
      "lon": 35.93368,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q21188319",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "node/4788766570",
@@ -224,14 +286,34 @@
      "address": "شارع علي بن أبي طالب",
      "website": "https://jordanmuseum.jo/",
      "openingHours": "Sa-Mo,We,Th 09:00-17:00; Fr 14:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q24521524",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/381723554",
      "name": "متحف القلعة",
      "lat": 31.95412,
      "lon": 35.93429,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1444552",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/178988234",
+     "name": "Jordan National Gallery of Fine Arts, Building 1",
+     "lat": 31.95886,
+     "lon": 35.91556,
+     "address": "Hosni Fareez 6",
+     "wikipediaCount": 11,
+     "wikidataId": "Q14753682",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/370887424",
@@ -286,13 +368,6 @@
      "name": "Islamic Museum",
      "lat": 31.96086,
      "lon": 35.9135
-    },
-    {
-     "id": "way/178988234",
-     "name": "Jordan National Gallery of Fine Arts, Building 1",
-     "lat": 31.95886,
-     "lon": 35.91556,
-     "address": "Hosni Fareez 6"
     },
     {
      "id": "way/232958482",

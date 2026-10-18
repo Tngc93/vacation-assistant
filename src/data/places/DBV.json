@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "DBV",
- "fetchedAt": "2026-10-16T23:51:53.928Z",
+ "fetchedAt": "2026-10-18T16:44:35.987Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -47,7 +47,12 @@
      "name": "Dubrovačke gradske zidine",
      "lat": 42.64096,
      "lon": 18.10873,
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q931733",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "relation/5861269",
@@ -55,35 +60,142 @@
      "lat": 42.64034,
      "lon": 18.11074,
      "openingHours": "Mo-Su 09:00-18:00",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q2497590",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q584428",
+     "name": "Dubrovnik Cathedral",
+     "lat": 42.6399,
+     "lon": 18.1104,
+     "wikipediaCount": 25,
+     "wikidataId": "Q584428",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3509032",
+     "name": "Franciscan Church and Monastery",
+     "lat": 42.6418,
+     "lon": 18.1078,
+     "wikipediaCount": 20,
+     "wikidataId": "Q3509032",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2986276",
+     "name": "Sponza Palace",
+     "lat": 42.64111,
+     "lon": 18.11056,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2986276",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/165354386",
      "name": "Lovrijenac",
      "lat": 42.64076,
      "lon": 18.1043,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q3396134",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3434033",
+     "name": "St. Saviour Church",
+     "lat": 42.6417,
+     "lon": 18.1069,
+     "wikipediaCount": 18,
+     "wikidataId": "Q3434033",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2750095",
+     "name": "Dubrovnik Synagogue",
+     "lat": 42.65056,
+     "lon": 18.09139,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2750095",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2986286",
+     "name": "St Blaise's Church",
+     "lat": 42.64056,
+     "lon": 18.11028,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2986286",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2624621",
+     "name": "Onofrio fountain",
+     "lat": 42.64153,
+     "lon": 18.10722,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2624621"
+    },
+    {
+     "id": "wikidata/Q3509014",
+     "name": "Clock tower",
+     "lat": 42.64099,
+     "lon": 18.1107,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3509014",
+     "kinds": [
+      "tower"
+     ]
     },
     {
      "id": "way/792938105",
      "name": "Tvrđava Imperial",
      "lat": 42.64993,
      "lon": 18.11068,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12644250",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/821764626",
      "name": "Križ na Srđu",
      "lat": 42.64878,
      "lon": 18.11217,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q17147057"
     },
     {
      "id": "way/171795142",
      "name": "Utvrda Royal",
      "lat": 42.62997,
      "lon": 18.11674,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q111304707",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/1297393778",
@@ -158,7 +270,11 @@
      "lat": 42.63985,
      "lon": 18.11238,
      "openingHours": "Mo-Tu,Th-Su 09:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q12640048",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5298313629",
@@ -166,7 +282,11 @@
      "lat": 42.64994,
      "lon": 18.11061,
      "openingHours": "08:00-22:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12637458",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5813516443",
@@ -397,6 +517,7 @@
      "lon": 18.11149,
      "website": "https://www.360dubrovnik.com/",
      "openingHours": "Tu-Su 18:00-24:30",
+     "wikidataId": "Q88301254",
      "detailed": true
     },
     {

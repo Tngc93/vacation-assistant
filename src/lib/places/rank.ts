@@ -3,6 +3,10 @@ import type { Place } from "./place";
 import { sameNameOnce } from "./twins";
 
 export const MAX_PLACES_PER_CATEGORY = 30;
+/** Sights and museums hold more: they feed the trip's must-see list. */
+export const MAX_SIGHTS_PER_CATEGORY = 40;
+export const categoryCap = (category: CategoryId) =>
+  category === "see" || category === "museum" ? MAX_SIGHTS_PER_CATEGORY : MAX_PLACES_PER_CATEGORY;
 
 /** A place as shown, with the honest reason for its position. */
 export type RankedPlace = Place & {
@@ -32,6 +36,11 @@ export function rankPlaces(
   places: readonly Place[],
   category: CategoryId,
   wikipediaCounts?: ReadonlyMap<string, number>,
+  /**
+   * The data script keeps places until this many pass the sight rules (rules.ts), so the files also hold
+   * the candidates the rules leave out today: up to MAX_STORED_PER_CATEGORY in all.
+   */
+  { counts = () => true, maxStored = categoryCap(category) }: { counts?: (place: RankedPlace) => boolean; maxStored?: number } = {},
 ): RankedPlace[] {
   const seen = new Set<string>();
   const unique = places.filter((p) => !seen.has(p.id) && seen.add(p.id));
@@ -52,5 +61,12 @@ export function rankPlaces(
       collator.compare(a.name, b.name),
   );
   const once = CATEGORIES[category].ranking === "wikipedia" ? sameNameOnce(ranked) : ranked;
-  return once.slice(0, MAX_PLACES_PER_CATEGORY);
+  const kept: RankedPlace[] = [];
+  let counted = 0;
+  for (const place of once) {
+    if (counted >= categoryCap(category) || kept.length >= maxStored) break;
+    kept.push(place);
+    if (counts(place)) counted++;
+  }
+  return kept;
 }

@@ -3,7 +3,7 @@ import { distanceKm } from "@/lib/geo";
 import { ITINERARY } from "./config";
 import { shortId } from "./ids";
 import { sameNameOnce } from "@/lib/places/twins";
-import { buildItinerary, chooseAnchors, freeTimeBlock, type ItineraryInput, type PlanPlace } from "./plan";
+import { buildItinerary, chooseAnchors, chooseMustSees, freeTimeBlock, isGenericName, type ItineraryInput, type PlanPlace } from "./plan";
 import { EVENING, SIGHTS } from "./testCity";
 import { toMinutes } from "./time";
 
@@ -97,14 +97,16 @@ describe("buildItinerary", () => {
   });
 
   it("never puts more than 6 daytime stops in a day, even when more would fit", () => {
-    // 20 viewpoints of 30 minutes, side by side: time for far more than six.
-    const views: PlanPlace[] = Array.from({ length: 20 }, (_, i) => ({
+    // 60 viewpoints of 30 minutes on a grid: time for far more than six a day, whatever the areas.
+    const views: PlanPlace[] = Array.from({ length: 60 }, (_, i) => ({
       id: `node/${5000 + i}`,
       name: `View ${i}`,
-      lat: 41.39 + i * 0.0002,
-      lon: 2.17,
+      // 110 m apart: separate visits (closer than 80 m would count as one spot).
+      lat: 41.39 + (i % 10) * 0.001,
+      lon: 2.17 + Math.floor(i / 10) * 0.0013,
       category: "viewpoint",
       wikipediaCount: 100 - i,
+      wikidataId: `Q${9000 + i}`,
     }));
     const plan = buildItinerary({ ...base, daytime: views, evening: [] });
     const full = plan.days[1].stops;
@@ -121,12 +123,14 @@ describe("buildItinerary", () => {
     expect(day.stops.map((s) => s.kind)).toEqual(["daytime", "evening"]);
     expect(day.free?.start).toBe(day.stops[0].end);
     expect(toMinutes(day.free!.end)).toBe(toMinutes(day.stops[1].start) - day.stops[1].travel!.scheduledMin);
-    // A full day that ends near 18:00 has no free block.
-    const busy = buildItinerary(base).days.find((d) => {
+    // Every day's block is exactly what the rule gives for its last daytime stop and the walk to dinner.
+    for (const d of buildItinerary(base).days) {
       const last = d.stops.filter((s) => s.kind === "daytime").at(-1);
-      return last && toMinutes(last.end) >= toMinutes("17:45");
-    });
-    if (busy) expect(busy.free).toBeNull();
+      const dinner = d.stops.find((s) => s.kind === "evening");
+      if (!last || !dinner) continue;
+      const expected = freeTimeBlock(toMinutes(last.end), Math.floor((toMinutes(dinner.start) - (dinner.travel?.scheduledMin ?? 0)) / 5) * 5);
+      expect(d.free).toEqual(expected);
+    }
   });
   it("makes the first and last day half days when no flight is chosen, and says it is an assumption", () => {
     const plan = buildItinerary(base);
@@ -196,7 +200,9 @@ describe("buildItinerary", () => {
   it("starts each full day in a different area, with its most important place", () => {
     const plan = buildItinerary(base);
     const firsts = plan.days.filter((d) => d.tags.includes("TAM GÜN")).map((d) => d.stops[0]);
-    expect(firsts.map((s) => s.name)).toEqual(["Sight 0-0", "Sight 1-0", "Sight 2-0"]);
+    // Full days start in different areas (in any order), and the best-known place opens one of them.
+    expect(new Set(firsts.map((s) => s.name.slice(6, 7))).size).toBe(firsts.length);
+    expect(firsts.map((s) => s.name)).toContain("Sight 0-0");
     for (let i = 0; i < firsts.length; i++)
       for (let j = i + 1; j < firsts.length; j++)
         expect(distanceKm(firsts[i].lat, firsts[i].lon, firsts[j].lat, firsts[j].lon)).toBeGreaterThanOrEqual(ITINERARY.anchorMinKm);
@@ -279,7 +285,107 @@ describe("buildItinerary", () => {
   it("links each stop to OpenStreetMap with a short id", () => {
     const stop = allStops(buildItinerary(base))[0];
     expect(stop.shortId).toBe(shortId(stop.id));
-    expect(stop.osmUrl).toBe(`https://www.openstreetmap.org/${stop.id}`);
+    expect(stop.sourceUrl).toBe(`https://www.openstreetmap.org/${stop.id}`);
+    expect(stop.source).toBe("OpenStreetMap");
+  });
+});
+
+describe("the trip's must-see list", () => {
+  const plan = (input: Partial<ItineraryInput> = {}) => buildItinerary({ ...base, ...input });
+  const ids = (p: ReturnType<typeof buildItinerary>) => new Set(allStops(p).map((s) => s.id));
+  const topFive = (places: PlanPlace[]) => [...places].sort((a, b) => (b.wikipediaCount ?? 0) - (a.wikipediaCount ?? 0)).slice(0, 5);
+
+  it("puts the five best-known places in the plan", () => {
+    const inPlan = ids(plan());
+    for (const p of topFive(SIGHTS)) expect(inPlan.has(p.id), p.name).toBe(true);
+  });
+
+  it("moves a top-five place closed on its area's day to a day it is open, and leaves it out only when it is closed all trip", () => {
+    const best = topFive(SIGHTS)[0];
+    // Open only on Tuesday 17 Nov.
+    const tuesdayOnly = buildItinerary({ ...base, daytime: SIGHTS.map((p) => (p.id === best.id ? { ...p, openingHours: "Tu 09:00-18:00" } : p)) });
+    const day = tuesdayOnly.days.find((d) => d.stops.some((s) => s.id === best.id));
+    expect(day?.date).toBe("2026-11-17");
+    // Closed every day of the trip (Thursday only): the one allowed reason to leave it out.
+    const never = buildItinerary({ ...base, daytime: SIGHTS.map((p) => (p.id === best.id ? { ...p, openingHours: "Th 09:00-18:00" } : p)) });
+    expect(ids(never).has(best.id)).toBe(false);
+  });
+
+  it("lets a short trip hold fewer must-sees: capacity is the only other reason to leave one out", () => {
+    const short = buildItinerary({ ...base, return: "2026-11-15" });
+    const kept = topFive(SIGHTS).filter((p) => ids(short).has(p.id));
+    // Two half days (13:00–18:00 and 09:00–13:00) cannot hold five well-known places, but take the best first.
+    expect(kept.length).toBeGreaterThan(0);
+    expect(kept[0].id).toBe(topFive(SIGHTS)[0].id);
+  });
+
+  it("never lets a name that only says what it is, or an unnamed viewpoint, go before a must-see", () => {
+    const generic: PlanPlace[] = [
+      { id: "node/8001", name: "Torre de l'església", lat: SIGHTS[0].lat + 0.0005, lon: SIGHTS[0].lon, category: "see" },
+      { id: "node/8002", name: "Mirador", lat: SIGHTS[10].lat + 0.0005, lon: SIGHTS[10].lon, category: "viewpoint" },
+    ];
+    const views: PlanPlace[] = Array.from({ length: 12 }, (_, i) => ({
+      id: `node/${8100 + i}`,
+      name: `Mirador Torre ${i}`,
+      lat: SIGHTS[(i * 3) % 30].lat + 0.0009,
+      lon: SIGHTS[(i * 3) % 30].lon + 0.0009,
+      category: "viewpoint",
+    }));
+    const p = buildItinerary({ ...base, daytime: [...generic, ...views, ...SIGHTS] });
+    const fillers = new Set([...generic, ...views].map((g) => g.id));
+    for (const day of p.days) {
+      const daytime = day.stops.filter((s) => s.kind === "daytime");
+      const firstFiller = daytime.findIndex((s) => fillers.has(s.id));
+      // Fillers come after every well-known stop of the day.
+      const lastKnown = Math.max(-1, ...daytime.map((s, i) => (fillers.has(s.id) ? -1 : i)));
+      if (firstFiller >= 0) expect(firstFiller).toBeGreaterThan(lastKnown);
+      // At most one viewpoint without a Wikidata item a day.
+      expect(daytime.filter((s) => s.category === "viewpoint" && fillers.has(s.id)).length).toBeLessThanOrEqual(1);
+    }
+    for (const t of topFive(SIGHTS)) expect(ids(p).has(t.id)).toBe(true);
+  });
+
+  it("gives very well-known sights a longer visit", () => {
+    const landmark = { ...SIGHTS[0], wikipediaCount: 103 };
+    const p = buildItinerary({ ...base, daytime: [landmark, ...SIGHTS.slice(1)] });
+    expect(allStops(p).find((s) => s.id === landmark.id)?.durationMin).toBe(ITINERARY.landmarkVisitMin);
+    expect(allStops(p).find((s) => s.id === SIGHTS[3].id)?.durationMin).toBe(ITINERARY.visitMin.see);
+  });
+
+  it("keeps walk-through places (streets, squares, bridges) short however well known", () => {
+    const avenue = { ...SIGHTS[0], name: "Champs-Élysées", wikipediaCount: 89, walkThrough: true as const };
+    const p = buildItinerary({ ...base, daytime: [avenue, ...SIGHTS.slice(1)] });
+    expect(ITINERARY.walkThroughMaxMin).toBe(45);
+    expect(allStops(p).find((s) => s.id === avenue.id)?.durationMin).toBe(ITINERARY.walkThroughMaxMin);
+  });
+
+  it("uses an override's visit length (the Moulin Rouge, seen from outside)", () => {
+    const facade = { ...SIGHTS[0], name: "Moulin Rouge", wikipediaCount: 53, visitMin: 30 };
+    const p = buildItinerary({ ...base, daytime: [facade, ...SIGHTS.slice(1)] });
+    expect(allStops(p).find((s) => s.id === facade.id)?.durationMin).toBe(30);
+  });
+
+  it("keeps museums to 40% of the must-see list and counts one spot once", () => {
+    const museums = Array.from({ length: 20 }, (_, i) => ({ ...SIGHTS[i], id: `node/${9100 + i}`, category: "museum" as const, wikipediaCount: 90 - i }));
+    const list = chooseMustSees([...museums, ...SIGHTS], 10);
+    expect(list.filter((p) => p.category === "museum")).toHaveLength(4);
+    // The Louvre, its pyramid and its palace stand on one spot: one visit.
+    const louvre = { id: "node/1", name: "Louvre", lat: 48.8611, lon: 2.3358, category: "museum" as const, wikipediaCount: 159 };
+    const pyramid = { id: "node/2", name: "Pyramide du Louvre", lat: 48.861, lon: 2.3358, category: "see" as const, wikipediaCount: 43 };
+    expect(chooseMustSees([louvre, pyramid], 5).map((p) => p.id)).toEqual(["node/1"]);
+    const p = buildItinerary({ ...base, daytime: [louvre, pyramid], evening: [] });
+    expect(allStops(p).map((s) => s.id)).toEqual(["node/1"]);
+  });
+});
+
+describe("isGenericName", () => {
+  it("knows names that only say what a place is", () => {
+    expect(isGenericName({ name: "Torre de l'església" })).toBe(true);
+    expect(isGenericName({ name: "Mirador" })).toBe(true);
+    expect(isGenericName({ name: "Church of St Mary" })).toBe(false);
+    expect(isGenericName({ name: "Mirador Torre Glòries" })).toBe(false);
+    // A well-known place keeps its plain name: Torre Glòries, Big Ben's tower…
+    expect(isGenericName({ name: "Torre", wikipediaCount: 40 })).toBe(false);
   });
 });
 

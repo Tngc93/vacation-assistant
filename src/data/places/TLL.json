@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "TLL",
- "fetchedAt": "2026-10-16T23:54:37.241Z",
+ "fetchedAt": "2026-10-18T16:47:20.265Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,12 +43,95 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q630524",
+     "name": "Lennart Meri Tallinn Havalimanı",
+     "localName": "Tallinn Airport",
+     "lat": 59.41639,
+     "lon": 24.79917,
+     "wikipediaCount": 49,
+     "wikidataId": "Q630524",
+     "kinds": [
+      "airport",
+      "station"
+     ]
+    },
+    {
      "id": "relation/3502552",
      "name": "Toompea loss",
      "lat": 59.43575,
      "lon": 24.73739,
      "address": "Lossi plats 1a",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q859010",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q278923",
+     "name": "A. Le Coq Arena",
+     "lat": 59.42129,
+     "lon": 24.73205,
+     "wikipediaCount": 41,
+     "wikidataId": "Q278923",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q568214",
+     "name": "Aleksandr Nevski Katedrali (Tallinn)",
+     "localName": "Alexander Nevsky Cathedral",
+     "lat": 59.43583,
+     "lon": 24.73944,
+     "wikipediaCount": 40,
+     "wikidataId": "Q568214",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q834511",
+     "name": "Aziz Olaf Kilisesi",
+     "localName": "St. Olaf's Church",
+     "lat": 59.44139,
+     "lon": 24.74778,
+     "wikipediaCount": 34,
+     "wikidataId": "Q834511",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q937320",
+     "name": "Tallinn Katedrali",
+     "localName": "St. Mary's Cathedral",
+     "lat": 59.43702,
+     "lon": 24.73887,
+     "wikipediaCount": 32,
+     "wikidataId": "Q937320",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q726803",
+     "name": "Tallinn Tarihi Kent Merkezi",
+     "localName": "Tallinn Old Town",
+     "lat": 59.43722,
+     "lon": 24.74528,
+     "wikipediaCount": 30,
+     "wikidataId": "Q726803",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "unesco"
+     ]
     },
     {
      "id": "way/28264569",
@@ -57,7 +140,63 @@
      "lon": 24.74026,
      "address": "Rahukohtu 3",
      "website": "https://valitsus.ee/et",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q2045993",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2072409",
+     "name": "Özgürlük Meydanı (Tallinn)",
+     "localName": "Freedom Square",
+     "lat": 59.43376,
+     "lon": 24.74413,
+     "wikipediaCount": 28,
+     "wikidataId": "Q2072409",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q904057",
+     "name": "Tallinn Belediye Binası",
+     "localName": "Tallinn Town Hall",
+     "lat": 59.437,
+     "lon": 24.74531,
+     "wikipediaCount": 28,
+     "wikidataId": "Q904057",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1420569",
+     "name": "Uzun Hermann",
+     "localName": "Pikk Hermann",
+     "lat": 59.43519,
+     "lon": 24.73694,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1420569",
+     "kinds": [
+      "adminArea",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q805683",
+     "name": "Tallinn Baltık Garı",
+     "localName": "Tallinn Baltic Station",
+     "lat": 59.44027,
+     "lon": 24.73692,
+     "wikipediaCount": 26,
+     "wikidataId": "Q805683",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "relation/3518935",
@@ -67,35 +206,254 @@
      "address": "Komandandi tee 2",
      "website": "https://linnamuuseum.ee/kiek-de-kok/",
      "openingHours": "May-Sep Mo-Su 11:00-18:00; Oct-Apr Tu-Su 11:00-18:00; PH off",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q914562",
+     "kinds": [
+      "adminArea",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q1810907",
+     "name": "Linnahall",
+     "lat": 59.44667,
+     "lon": 24.75278,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1810907",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q2529281",
+     "name": "Bağımsızlık Savaşı Zafer Sütunu",
+     "localName": "War of Independence Victory Column",
+     "lat": 59.43404,
+     "lon": 24.74306,
+     "wikipediaCount": 23,
+     "wikidataId": "Q2529281"
+    },
+    {
+     "id": "wikidata/Q2322737",
+     "name": "Aziz Petrus ve Pavlus Katedrali (Tallinn)",
+     "localName": "St. Peter's and St. Paul's Cathedral",
+     "lat": 59.43806,
+     "lon": 24.74861,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2322737",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2089605",
+     "name": "Tallinn Duvarları",
+     "localName": "Walls of Tallinn",
+     "lat": 59.4351,
+     "lon": 24.741,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2089605",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q282994",
+     "name": "Şişman Margaret",
+     "localName": "Fat Margaret",
+     "lat": 59.44258,
+     "lon": 24.74954,
+     "wikipediaCount": 21,
+     "wikidataId": "Q282994",
+     "kinds": [
+      "adminArea",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q2304576",
+     "name": "Tallinn Sinagogu",
+     "localName": "Tallinn Synagogue",
+     "lat": 59.43861,
+     "lon": 24.76667,
+     "wikipediaCount": 21,
+     "wikidataId": "Q2304576",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q11883539",
+     "name": "Karabaşlar Evi (Tallinn)",
+     "localName": "House of the Blackheads",
+     "lat": 59.43876,
+     "lon": 24.74667,
+     "wikipediaCount": 20,
+     "wikidataId": "Q11883539",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q777726",
+     "name": "Kutsal Ruh Kilisesi (Tallinn)",
+     "localName": "Church of the Holy Spirit",
+     "lat": 59.43806,
+     "lon": 24.74583,
+     "wikipediaCount": 20,
+     "wikidataId": "Q777726",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1070298",
+     "name": "Belediye Binası Meydanı (Tallinn)",
+     "localName": "Town Hall Square",
+     "lat": 59.43722,
+     "lon": 24.74528,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1070298",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q11133776",
+     "name": "Tallinn Yolcu Limanı",
+     "localName": "Old City Harbour",
+     "lat": 59.44444,
+     "lon": 24.76667,
+     "wikipediaCount": 18,
+     "wikidataId": "Q11133776",
+     "kinds": [
+      "port",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1722201",
+     "name": "Kalevi Merkez Stadyumu",
+     "localName": "Kalev Central Stadium",
+     "lat": 59.42583,
+     "lon": 24.76477,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1722201",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q3860574",
+     "name": "Saint Catherine's Monastery",
+     "lat": 59.4375,
+     "lon": 24.74778,
+     "wikipediaCount": 14,
+     "wikidataId": "Q3860574",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1733946",
+     "name": "Charles' Church",
+     "lat": 59.43194,
+     "lon": 24.73917,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1733946",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/13588245127",
      "name": "EML Lembit",
      "lat": 59.45177,
      "lon": 24.73844,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q845200",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3136517",
+     "name": "St. John's Church in Tallinn",
+     "lat": 59.43375,
+     "lon": 24.74537,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3136517",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q11704264",
+     "name": "Estonia Theatre",
+     "lat": 59.43472,
+     "lon": 24.75083,
+     "wikipediaCount": 12,
+     "wikidataId": "Q11704264",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q3739625",
+     "name": "Swedish Saint Michael's Church",
+     "lat": 59.43472,
+     "lon": 24.74222,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3739625",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/308215003",
      "name": "Suur Tõll",
      "lat": 59.45308,
      "lon": 24.73867,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q720876",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/6522415",
      "name": "Viru värav",
      "lat": 59.43654,
      "lon": 24.75027,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q12378759",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/308214997",
      "name": "Kalev (M414)",
      "lat": 59.45281,
      "lon": 24.73559,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q753194"
     },
     {
      "id": "relation/3519093",
@@ -105,42 +463,58 @@
      "address": "Müürivahe 48",
      "website": "http://www.tower.ee/",
      "openingHours": "Th-Mo 11:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q15434302",
+     "kinds": [
+      "adminArea",
+      "tower"
+     ]
     },
     {
      "id": "way/308215000",
      "name": "Grif (P401)",
      "lat": 59.45271,
      "lon": 24.73734,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q12363088",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/308214998",
      "name": "PVL 105 Torm",
      "lat": 59.45279,
      "lon": 24.73624,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q2044838",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7169795009",
      "name": "PVL 109 Valvas",
      "lat": 59.45315,
      "lon": 24.73589,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7866013"
     },
     {
      "id": "way/308214999",
      "name": "Suurop (P421)",
      "lat": 59.45275,
      "lon": 24.73683,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1275222"
     },
     {
      "id": "way/985850354",
      "name": "Mare",
      "lat": 59.45267,
      "lon": 24.73764,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12369651"
     },
     {
      "id": "way/26898836",
@@ -148,7 +522,11 @@
      "lat": 59.4344,
      "lon": 24.77965,
      "address": "Jaan Poska 8",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42406890",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/5216929766",
@@ -214,7 +592,12 @@
      "address": "Niguliste 3",
      "website": "https://nigulistemuuseum.ekm.ee/en/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q613788",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/687057482",
@@ -224,7 +607,11 @@
      "address": "Pikk 70",
      "website": "https://meremuuseum.ee/paksmargareeta",
      "openingHours": "May-Sep Mo-Su 10:00-19:00; Oct-Apr Tu-Su 10:00-18:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q223373",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057489",
@@ -233,7 +620,8 @@
      "lon": 24.76609,
      "address": "Karu 16",
      "openingHours": "Mo-Th 11:00-17:00; Su 11:00-15:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1516798"
     },
     {
      "id": "node/600228722",
@@ -242,7 +630,11 @@
      "lon": 24.74594,
      "website": "https://www.raeapteek.ee/",
      "openingHours": "Mo-Sa 10:00-18:00; Su off",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1841234",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/687057487",
@@ -251,7 +643,11 @@
      "lon": 24.75625,
      "website": "https://www.arhitektuurimuuseum.ee/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 11:00-18:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q16409050",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057447",
@@ -261,7 +657,11 @@
      "address": "Pikk 17",
      "website": "https://ajaloomuuseum.ee/suurgildi-hoone",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2064821",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057382",
@@ -271,7 +671,11 @@
      "address": "Toompea 8",
      "website": "https://vabamu.ee/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q625590",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057023",
@@ -280,7 +684,11 @@
      "lon": 24.74523,
      "website": "https://loodusmuuseum.ee/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q12361299",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057397",
@@ -290,7 +698,11 @@
      "address": "Müürivahe 12",
      "website": "https://www.tmm.ee/",
      "openingHours": "Oct-Mar: We-Su 10:00-18:00; Apr-Sep: Tu-Su 10:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q16413289",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057448",
@@ -300,7 +712,12 @@
      "address": "Vene 17",
      "website": "https://linnamuuseum.ee/linnaelumuuseum/",
      "openingHours": "11:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q18625832",
+     "kinds": [
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "node/10180264018",
@@ -310,7 +727,11 @@
      "address": "Munga Munga 2",
      "website": "https://bannedbooksmuseum.com/",
      "openingHours": "We-Fr 14:00-18:00; Sa,Su 11:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q117054151",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/679898565",
@@ -320,7 +741,11 @@
      "address": "Lydia Koidula 12a",
      "website": "https://kirjanduskeskus.ee/tammsaare-muuseum/",
      "openingHours": "We-Mo 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12357985",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/687057445",
@@ -330,7 +755,11 @@
      "address": "Lühike jalg 3",
      "website": "https://adamson-eric.ekm.ee/en/",
      "openingHours": "Mo off; Tu-Su 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12358234",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6685135686",
@@ -340,7 +769,11 @@
      "address": "Telliskivi 60a/8",
      "website": "https://tallinn.fotografiska.com/",
      "openingHours": "Mo,Tu 10:00-21:00; We-Sa 10:00-22:00; Su 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q73396972",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6772830291",
@@ -350,7 +783,11 @@
      "address": "Peetri 10",
      "website": "https://www.prototehas.ee/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q73408616",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/47007745",
@@ -358,7 +795,11 @@
      "lat": 59.44205,
      "lon": 24.74732,
      "address": "Lai 47",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12376219",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/687057400",
@@ -367,7 +808,11 @@
      "lon": 24.7498,
      "website": "https://www.eestipank.ee/muuseum",
      "openingHours": "We-Fr 12:00-17:00; Sa 11:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12361396",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6171164356",
@@ -377,7 +822,11 @@
      "address": "Telliskivi 60a/5",
      "website": "https://dokfoto.ee/",
      "openingHours": "We-Su 12:00-19:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q122459845",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/26881759",
@@ -387,7 +836,11 @@
      "address": "Vesilennuki 6",
      "website": "https://www.lennusadam.eu/",
      "openingHours": "May-Sep: Mo-Su 10:00-19:00; Oct-Apr: Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12376251",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/7264857801",
@@ -486,6 +939,95 @@
      "address": "Peetri 12",
      "website": "https://kai.center/",
      "openingHours": "Tu-Su 12:00-20:00"
+    },
+    {
+     "id": "node/687057367",
+     "name": "Kaitseliidu Muuseum",
+     "lat": 59.43314,
+     "lon": 24.73927,
+     "website": "https://www.kaitseliit.ee/index.php?op=body&cat_id=279",
+     "openingHours": "Mo-Th 9:00-17:00; Fr 9:00-14:00"
+    },
+    {
+     "id": "node/687057446",
+     "name": "Kalevi Martsipanituba",
+     "lat": 59.43829,
+     "lon": 24.74562,
+     "address": "Pikk 16",
+     "website": "https://kohvikmaiasmokk.ee/martsipanituba/",
+     "openingHours": "Mo-Su 10:00-17:00"
+    },
+    {
+     "id": "node/4805497396",
+     "name": "Keskaegsete piinariistade muuseum",
+     "lat": 59.43675,
+     "lon": 24.74709,
+     "address": "Viru 3",
+     "website": "https://www.facebook.com/pages/Museum-Of-Medieval-Torture/212350015547535",
+     "openingHours": "11:00-19:00"
+    },
+    {
+     "id": "node/4187742714",
+     "name": "KGB Museum",
+     "lat": 59.43659,
+     "lon": 24.75468,
+     "address": "Viru väljak 4",
+     "website": "https://www.visitestonia.com/en/hotel-viru-and-kgb-museum",
+     "openingHours": "Mo-Su,PH 10:00-15:30"
+    },
+    {
+     "id": "node/599655454",
+     "name": "KGB vangikongid",
+     "lat": 59.44053,
+     "lon": 24.74758,
+     "address": "Pikk 59",
+     "website": "https://www.vabamu.ee/kgb",
+     "openingHours": "Mo-Su 10:00-18:00"
+    },
+    {
+     "id": "node/732727033",
+     "name": "Kullo Lastegalerii",
+     "lat": 59.43648,
+     "lon": 24.74509,
+     "address": "Kuninga 6",
+     "website": "https://www.kullo.ee/",
+     "openingHours": "Mo-Fr 10:00-18:00"
+    },
+    {
+     "id": "node/4766449656",
+     "name": "Lühikese Jala Galerii",
+     "lat": 59.43636,
+     "lon": 24.7414,
+     "address": "Lühike jalg 6",
+     "website": "https://lyhikesejalagalerii.com/",
+     "openingHours": "Mo-Fr 11:00-18:00; Sa 11:00-17:00; Su 11:00-16:00"
+    },
+    {
+     "id": "node/9079373758",
+     "name": "LVLup! interaktiivne videomängude muuseum",
+     "lat": 59.4376,
+     "lon": 24.76395,
+     "address": "Narva mnt 11",
+     "website": "https://www.rara.ee/en/events/interactive-video-game-museum-lvlup/",
+     "openingHours": "Mo-Sa 12:00-18:00"
+    },
+    {
+     "id": "node/4766432379",
+     "name": "Navitrolla GALERII",
+     "lat": 59.43631,
+     "lon": 24.74217,
+     "address": "Lühike jalg 1",
+     "website": "https://www.navitrolla.ee/",
+     "openingHours": "Mo-Fr 11:00-18:00; Sa 11:00-16:00; Su off"
+    },
+    {
+     "id": "node/5012642621",
+     "name": "Neitsitorni muuseumkohvik",
+     "lat": 59.43523,
+     "lon": 24.7409,
+     "address": "Lühike jalg 9a",
+     "website": "https://linnamuuseum.ee/neitsitorn/",
+     "openingHours": "Mo-Su 09:00-18:00"
     }
    ]
   },

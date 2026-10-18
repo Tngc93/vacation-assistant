@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "DOH",
- "fetchedAt": "2026-10-17T00:03:03.329Z",
+ "fetchedAt": "2026-10-18T16:58:03.250Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,11 +43,61 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1134439",
+     "name": "Stadyum 974",
+     "localName": "Stadium 974",
+     "lat": 25.2887,
+     "lon": 51.56647,
+     "wikipediaCount": 48,
+     "wikidataId": "Q1134439",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q39049425",
+     "name": "Es-Sümame Stadyumu",
+     "localName": "Al Thumama Stadium",
+     "lat": 25.23505,
+     "lon": 51.53211,
+     "wikipediaCount": 44,
+     "wikidataId": "Q39049425",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "way/43688092",
      "name": "سوق واقف",
      "lat": 25.28829,
      "lon": 51.53322,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q4117959"
+    },
+    {
+     "id": "wikidata/Q3057368",
+     "name": "Abdulla Bin Zaid Al Mahmoud Islamic Cultural Center",
+     "lat": 25.28898,
+     "lon": 51.53563,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3057368",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1234812",
+     "name": "Doha Kornişi",
+     "localName": "Doha Corniche",
+     "lat": 25.29139,
+     "lon": 51.53722,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1234812",
+     "kinds": [
+      "promenade",
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/25991879",
@@ -55,14 +105,23 @@
      "lat": 25.29122,
      "lon": 51.52705,
      "address": "شارع الكورنيش",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q19406958",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/156199789",
      "name": "ميناء الدوحة",
      "lat": 25.30029,
      "lon": 51.55266,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12246908",
+     "kinds": [
+      "port",
+      "station"
+     ]
     },
     {
      "id": "node/5996041085",
@@ -152,7 +211,11 @@
      "lon": 51.5394,
      "website": "https://mia.org.qa/",
      "openingHours": "Sa-Tu 09:00-19:00; Fr 13:30-19:00; Th 09:00-21:00",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q1148353",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/680315530",
@@ -161,7 +224,19 @@
      "lon": 51.5492,
      "website": "https://nmoq.org.qa/",
      "openingHours": "Fr 13:30-19:00; We, Sa-Mo 09:00-19:00; Th 09:00-21:00",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q22079715"
+    },
+    {
+     "id": "wikidata/Q3084218",
+     "name": "National Museum of Qatar",
+     "lat": 25.28847,
+     "lon": 51.54926,
+     "wikipediaCount": 23,
+     "wikidataId": "Q3084218",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/524170026",

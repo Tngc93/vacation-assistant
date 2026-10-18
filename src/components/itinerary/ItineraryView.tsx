@@ -10,6 +10,7 @@ import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import { buildItinerary, type DayTag, type ItineraryInput, type PlanDay, type PlanStop } from "@/lib/itinerary/plan";
 import { CATEGORIES } from "@/lib/places/categories";
+import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
 
 const ItineraryMap = dynamic(() => import("./ItineraryMap"), {
@@ -29,6 +30,10 @@ function subscribeWide(callback: () => void) {
   query.addEventListener("change", callback);
   return () => query.removeEventListener("change", callback);
 }
+
+const regionNames = new Intl.DisplayNames(["tr"], { type: "region" });
+/** "VATİKAN" for VA. */
+const countryName = (code: string) => (regionNames.of(code) ?? code).toLocaleUpperCase("tr");
 
 /** "14 KAS CMT" */
 const dayLabel = (iso: string) => formatDay(isoToDate(iso)).toLocaleUpperCase("tr");
@@ -81,17 +86,24 @@ function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRe
           {stop.localName && stop.localName !== stop.name ? <span className="font-normal text-ink-muted"> · {stop.localName}</span> : null}
         </p>
         <Caption as="p" className="mt-0.5">
+          {stop.country ? `${countryName(stop.country)} · ` : ""}
           {stop.kind === "evening" ? "AKŞAM · " : ""}
           {CATEGORIES[stop.category].label.toLocaleUpperCase("tr")} · {durationText(stop.durationMin).toLocaleUpperCase("tr")} · TAHMİNİ
         </Caption>
-        {stop.hours === "unknown" ? (
+        {stop.closesSoon ? (
           <Caption as="p" tone="warn" className="mt-0.5">
+            KAPANIŞA YAKIN · {withLocative(stop.closesSoon).toLocaleUpperCase("tr")} KAPANIR
+          </Caption>
+        ) : null}
+        {/* Unknown hours are common; a quiet note, not a warning (the plan's intro explains it). */}
+        {stop.hours === "unknown" ? (
+          <Caption as="p" className="mt-0.5">
             SAATLERİ DOĞRULA
           </Caption>
         ) : null}
         <p className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-caption print:hidden">
-          <a href={stop.osmUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
-            OpenStreetMap
+          <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+            {stop.source}
           </a>
           <button
             type="button"
@@ -248,6 +260,7 @@ export function ItineraryView({ input, initialSkip, cityName, center }: Props) {
           <p className="mt-2 text-caption text-ink-muted">
             Duraklar Vikipedi&apos;deki dil sayısına ve yakınlığa göre seçildi; süreler ve yürüme tahminidir. Yapay zekâ kullanılmadı.
           </p>
+          <p className="mt-1 text-caption text-ink-muted">Saat bilgisi olmayan mekânlar işaretlidir; gitmeden kontrol et.</p>
         </div>
         <div className="flex flex-wrap gap-2 print:hidden">
           <Button variant="secondary" onClick={download}>

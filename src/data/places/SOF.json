@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SOF",
- "fetchedAt": "2026-10-16T23:48:31.797Z",
+ "fetchedAt": "2026-10-18T16:41:11.342Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,12 @@
      "lon": 23.3328,
      "address": "пл. Св. Александър Невски",
      "openingHours": "Mo-Su 07:00-19:00",
-     "wikipediaCount": 51
+     "wikipediaCount": 51,
+     "wikidataId": "Q43282",
+     "kinds": [
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/1457152034",
@@ -58,7 +63,20 @@
      "lon": 23.33281,
      "website": "https://www.parliament.bg/",
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q639704"
+    },
+    {
+     "id": "wikidata/Q1327903",
+     "name": "Vasil Levski Ulusal Stadyumu",
+     "localName": "Vasil Levski National Stadium",
+     "lat": 42.68758,
+     "lon": 23.33544,
+     "wikipediaCount": 33,
+     "wikidataId": "Q1327903",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/96640830",
@@ -66,7 +84,120 @@
      "lat": 42.69951,
      "lon": 23.32256,
      "address": "бул. Княгиня Мария Луиза",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q790052",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q602853",
+     "name": "Ayasofya Camii",
+     "localName": "Saint Sophia Church",
+     "lat": 42.69651,
+     "lon": 23.33152,
+     "wikipediaCount": 24,
+     "wikidataId": "Q602853",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q520753",
+     "name": "Sveti Nedelya Katedrali",
+     "localName": "Saint Nedelya Church",
+     "lat": 42.69678,
+     "lon": 23.32155,
+     "wikipediaCount": 23,
+     "wikidataId": "Q520753",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1858012",
+     "name": "Ivan Vazov Ulusal Tiyatro Binası",
+     "localName": "Ivan Vazov National Theatre",
+     "lat": 42.69417,
+     "lon": 23.32656,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1858012",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q804933",
+     "name": "Bulgaristan Ordu Stadyumu",
+     "localName": "Balgarska Armia Stadium",
+     "lat": 42.68426,
+     "lon": 23.33977,
+     "wikipediaCount": 21,
+     "wikidataId": "Q804933",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q942127",
+     "name": "Sofya Sinagogu",
+     "localName": "Central Synagogue of Sofia",
+     "lat": 42.70028,
+     "lon": 23.32101,
+     "wikipediaCount": 21,
+     "wikidataId": "Q942127",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2598073",
+     "name": "Sveti Georgi Kilisesi",
+     "localName": "Saint George Rotunda Church",
+     "lat": 42.69686,
+     "lon": 23.32286,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2598073",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2095010",
+     "name": "Sofya Garı",
+     "localName": "Sofia",
+     "lat": 42.71213,
+     "lon": 23.32112,
+     "wikipediaCount": 19,
+     "wikidataId": "Q2095010",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1138538",
+     "name": "Aslanlar Köprüsü",
+     "localName": "Lions' Bridge",
+     "lat": 42.705,
+     "lon": 23.32389,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1138538",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q3269914",
+     "name": "National Palace of Culture",
+     "lat": 42.68472,
+     "lon": 23.31889,
+     "wikipediaCount": 16,
+     "wikidataId": "Q3269914",
+     "kinds": [
+      "performingArts"
+     ]
     },
     {
      "id": "way/162791009",
@@ -74,28 +205,120 @@
      "lat": 42.6957,
      "lon": 23.32894,
      "address": "бул. Цар Освободител 3",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q873892",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q598811",
+     "name": "Cathedral of St Joseph, Sofia",
+     "lat": 42.69861,
+     "lon": 23.31972,
+     "wikipediaCount": 15,
+     "wikidataId": "Q598811",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q358267",
+     "name": "Eagles' Bridge",
+     "lat": 42.69056,
+     "lon": 23.3375,
+     "wikipediaCount": 15,
+     "wikidataId": "Q358267",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q2989415",
+     "name": "Kara Camii",
+     "localName": "Seven Saints Church",
+     "lat": 42.6897,
+     "lon": 23.3278,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2989415",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/310482763",
      "name": "Цар Освободител",
      "lat": 42.69374,
      "lon": 23.33232,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2037523"
+    },
+    {
+     "id": "wikidata/Q190435",
+     "name": "Sofya Merkez Mineral Kaplıcası",
+     "localName": "Sofia Public Mineral Baths",
+     "lat": 42.69937,
+     "lon": 23.32368,
+     "wikipediaCount": 13,
+     "wikidataId": "Q190435"
+    },
+    {
+     "id": "wikidata/Q1766560",
+     "name": "Saint Petka of the Saddlemakers Church",
+     "lat": 42.69783,
+     "lon": 23.32214,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1766560",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q6489272",
+     "name": "Sofya Bağımsızlık Meydanı",
+     "localName": "Largo",
+     "lat": 42.69778,
+     "lon": 23.32306,
+     "wikipediaCount": 12,
+     "wikidataId": "Q6489272",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q18543007",
+     "name": "Bulgaria National Assembly Building",
+     "lat": 42.69444,
+     "lon": 23.33278,
+     "wikipediaCount": 11,
+     "wikidataId": "Q18543007"
+    },
+    {
+     "id": "wikidata/Q585900",
+     "name": "Monument to the Unknown Soldier",
+     "lat": 42.69633,
+     "lon": 23.33146,
+     "wikipediaCount": 11,
+     "wikidataId": "Q585900"
     },
     {
      "id": "way/456857607",
      "name": "Княз Александър I Батенберг",
      "lat": 42.69151,
      "lon": 23.33246,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3137068",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/251683273",
      "name": "Руски паметник",
      "lat": 42.69225,
      "lon": 23.31042,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2042926"
     },
     {
      "id": "node/3514109025",
@@ -103,21 +326,21 @@
      "lat": 42.69747,
      "lon": 23.32822,
      "openingHours": "Tu-Su 10:00-16:00",
-     "wikipediaCount": 6
-    },
-    {
-     "id": "way/1458623950",
-     "name": "Античен амфитеатър на Сердика",
-     "lat": 42.69745,
-     "lon": 23.32745,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q980970",
+     "kinds": [
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     },
     {
      "id": "node/212950297",
      "name": "Васил Левски",
      "lat": 42.69667,
      "lon": 23.33533,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1703313"
     },
     {
      "id": "relation/3315833",
@@ -126,14 +349,16 @@
      "lon": 23.3312,
      "address": "Оборище 4",
      "website": "https://bg-patriarshia.bg/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q65105128"
     },
     {
      "id": "way/867938756",
      "name": "Братска могила",
      "lat": 42.68343,
      "lon": 23.3449,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q899761"
     },
     {
      "id": "way/287104635",
@@ -141,28 +366,46 @@
      "lat": 42.69867,
      "lon": 23.32211,
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q25484833",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/347744279",
      "name": "Основната астрономическа точка на държавната триангулация на България",
      "lat": 42.69566,
      "lon": 23.33032,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q74730159",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "node/3527080400",
      "name": "Петко и Пенчо Славейкови",
      "lat": 42.69239,
      "lon": 23.32383,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q131360828",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/3070963771",
      "name": "Римска стена",
      "lat": 42.68391,
      "lon": 23.3301,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q123950134",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/166213184",
@@ -195,13 +438,15 @@
      "id": "node/13631181008",
      "name": "Военен паметник",
      "lat": 42.70057,
-     "lon": 23.35248
+     "lon": 23.35248,
+     "wikidataId": "Q141109663"
     },
     {
      "id": "node/5584615197",
      "name": "Георги С. Раковски",
      "lat": 42.6915,
-     "lon": 23.34863
+     "lon": 23.34863,
+     "wikidataId": "Q141110126"
     },
     {
      "id": "node/4246901183",
@@ -238,18 +483,6 @@
      "name": "Коне",
      "lat": 42.68549,
      "lon": 23.33432
-    },
-    {
-     "id": "way/332375134",
-     "name": "Крепостната стена на древна Сердика",
-     "lat": 42.70031,
-     "lon": 23.32359
-    },
-    {
-     "id": "way/1448720854",
-     "name": "Лама",
-     "lat": 42.68571,
-     "lon": 23.33416
     }
    ]
   },
@@ -265,7 +498,11 @@
      "address": "Съборна 2",
      "website": "https://www.naim.bg/",
      "openingHours": "May-Oct Mo-Su 10:00-18:00; Nov-Apr Tu-Su 10:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1497827",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2289469994",
@@ -274,7 +511,11 @@
      "lon": 23.32712,
      "website": "https://www.nationalartgallerybg.org/;https://nationalgallery.bg/bg/visiting/the-palace/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q2991178",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/112227049",
@@ -284,7 +525,11 @@
      "address": "Черковна 92",
      "website": "https://militarymuseum.bg/",
      "openingHours": "We-Su 10:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1066518",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2109132",
@@ -293,7 +538,11 @@
      "lon": 23.3287,
      "address": "бул. Цар Освободител 1",
      "website": "https://www.nmnhs.com/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q6974486",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2087604",
@@ -302,7 +551,11 @@
      "lon": 23.33446,
      "website": "https://nationalgallery.bg/bg/visiting/kvadrat-500/",
      "openingHours": "Tu-Su 10:00-17:30+ \"Касата работи до 17:30, галерията работи до 18:00\"",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q3622570",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/157691260",
@@ -312,7 +565,11 @@
      "address": "бул. Черни връх 4",
      "website": "https://www.earthandman.org/",
      "openingHours": "Mo-Su,PH 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q5327147",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/166216234",
@@ -322,7 +579,11 @@
      "address": "Опълченска 66",
      "website": "https://polytechnic-museum.com/",
      "openingHours": "Mo-Sa 09:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6974996",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/166213221",
@@ -332,7 +593,11 @@
      "address": "Ген. Йосиф В. Гурко 1",
      "website": "https://sghg.bg/",
      "openingHours": "Tu-Sa 10:00-19:00; Su 11:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12294210",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4514492471",
@@ -341,7 +606,11 @@
      "lon": 23.32756,
      "website": "http://www.slovo.bg/vazovmuseum/",
      "openingHours": "Mo-Sa 10:00-17:30",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q61412859",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/166213259",
@@ -350,7 +619,12 @@
      "lon": 23.32756,
      "address": "бул. Васил Левски 56",
      "openingHours": "\"Музеят е затворен. Отворени врати 16-20.07, 20-24.08, 17-21.09, 15-19.10, 19-23.11, 17-21.12\"",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q61411520",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/288712091",
@@ -360,7 +634,11 @@
      "address": "Галичица",
      "website": "https://plus359gallery.com/",
      "openingHours": "May-Oct Th-Sa 15:00-20:00; Nov-Apr Th-Sa 14:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q107557796",
+     "kinds": [
+      "tower"
+     ]
     },
     {
      "id": "node/4225072600",
@@ -369,7 +647,11 @@
      "lon": 23.32365,
      "website": "https://www.sofiahistorymuseum.bg/",
      "openingHours": "May-Oct Mo-Su 10:00-18:00; Nov-Apr Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q20497601",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2289469997",
@@ -378,7 +660,11 @@
      "lat": 42.69619,
      "lon": 23.32739,
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12279993",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/287104635",
@@ -386,7 +672,11 @@
      "lat": 42.69867,
      "lon": 23.32211,
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q25484833",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3021083248",
@@ -394,7 +684,8 @@
      "lat": 42.69587,
      "lon": 23.32152,
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q140323497"
     },
     {
      "id": "node/4548587221",
@@ -402,7 +693,11 @@
      "lat": 42.6895,
      "lon": 23.32311,
      "website": "https://nlmuseum.bg/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q61411527",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6465639463",
@@ -469,7 +764,11 @@
      "lat": 42.68765,
      "lon": 23.33213,
      "website": "https://nationalgallery.bg/visiting/%D0%BA%D1%8A%D1%89%D0%B8-%D0%BC%D1%83%D0%B7%D0%B5%D0%B8/nikola-tanev/",
-     "openingHours": "\"след предварително заявка / by appointment\""
+     "openingHours": "\"след предварително заявка / by appointment\"",
+     "wikidataId": "Q61411517",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/302157496",
@@ -522,6 +821,82 @@
      "address": "пл. Св. Александър Невски",
      "website": "https://nationalgallery.bg/bg/visiting/museum-of-christian-art/",
      "openingHours": "Tu-Su 10:00-18:00"
+    },
+    {
+     "id": "node/13083733778",
+     "name": "Музей по минералогия, петрология и полезни изкопаеми",
+     "lat": 42.69307,
+     "lon": 23.33503,
+     "website": "https://mpeg.gea.uni-sofia.bg/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%B0-%D0%B8-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B0/%D0%BC%D1%83%D0%B7%D0%B5%D0%B9/",
+     "openingHours": "Mo-Fr 10:00-12:00, 13:00-16:00"
+    },
+    {
+     "id": "node/11765651278",
+     "name": "Музей по палеонтология и исторична геология",
+     "lat": 42.69425,
+     "lon": 23.33491,
+     "website": "https://gpff.gea.uni-sofia.bg/bg/%D0%B1%D0%B0%D0%B7%D0%B0/%D0%BC%D1%83%D0%B7%D0%B5%D0%B9/",
+     "openingHours": "Mo-Fr 10:00-12:00, 13:00-16:00"
+    },
+    {
+     "id": "node/2911345201",
+     "name": "Париж",
+     "lat": 42.69408,
+     "lon": 23.31677,
+     "address": "Цар Самуил 47",
+     "website": "https://www.gallery-paris.com/",
+     "openingHours": "Mo-Fr 11:30-18:30; Sa 11:30-14:00; Su off"
+    },
+    {
+     "id": "node/12542093834",
+     "name": "Триъгълна кула на Сердика",
+     "lat": 42.7005,
+     "lon": 23.32274,
+     "website": "https://www.sofiahistorymuseum.bg/bg/obekti/triagalna-kula-na-serdica",
+     "openingHours": "Mo-Su 10:00-18:00"
+    },
+    {
+     "id": "node/11041683059",
+     "name": "Червеният апартамент",
+     "lat": 42.69392,
+     "lon": 23.31959,
+     "website": "https://redflatsofia.com/",
+     "openingHours": "Mo-Su , PH 10:30-19:30 \"Last entry by 18:00\""
+    },
+    {
+     "id": "node/12118132676",
+     "name": "Absinthe",
+     "lat": 42.69292,
+     "lon": 23.31637,
+     "openingHours": "Mo-Fr 11:00-19:00; Sa,Su 11:00-18:00"
+    },
+    {
+     "id": "node/2911322064",
+     "name": "Adriana",
+     "lat": 42.69487,
+     "lon": 23.31789,
+     "openingHours": "Mo-Fr 10:00-18:30; Sa 10:00-14:00"
+    },
+    {
+     "id": "node/2912535532",
+     "name": "ArtVibes",
+     "lat": 42.69307,
+     "lon": 23.3184,
+     "openingHours": "Tu-Sa 12:00-15:00,15:30-18:30"
+    },
+    {
+     "id": "node/4519657496",
+     "name": "B61",
+     "lat": 42.69259,
+     "lon": 23.31749,
+     "openingHours": "Mo-Sa 11:00-19:30"
+    },
+    {
+     "id": "node/12238433893",
+     "name": "Charta",
+     "lat": 42.69744,
+     "lon": 23.33173,
+     "openingHours": "Th,Fr 15:00-19:00"
     }
    ]
   },

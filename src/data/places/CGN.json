@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "CGN",
- "fetchedAt": "2026-10-16T23:28:57.143Z",
+ "fetchedAt": "2026-10-18T16:20:45.146Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,19 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q365",
+     "name": "Köln",
+     "localName": "Cologne",
+     "lat": 50.94222,
+     "lon": 6.95778,
+     "wikipediaCount": 158,
+     "wikidataId": "Q365",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
+    },
+    {
      "id": "way/4532022",
      "name": "Kölner Dom",
      "lat": 50.94131,
@@ -50,7 +63,64 @@
      "address": "Domkloster 4",
      "website": "https://www.koelner-dom.de/",
      "openingHours": "06:00-20:00",
-     "wikipediaCount": 84
+     "wikipediaCount": 84,
+     "wikidataId": "Q4176",
+     "kinds": [
+      "heritage",
+      "religious",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q310525",
+     "name": "Lanxess Arena",
+     "lat": 50.93843,
+     "lon": 6.9829,
+     "wikipediaCount": 30,
+     "wikidataId": "Q310525",
+     "kinds": [
+      "musicVenue",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1954",
+     "name": "Köln Merkez Garı",
+     "localName": "Cologne Central Station",
+     "lat": 50.9425,
+     "lon": 6.95806,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1954",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q696762",
+     "name": "Hohenzollern Köprüsü",
+     "localName": "Hohenzollern Bridge",
+     "lat": 50.94139,
+     "lon": 6.96556,
+     "wikipediaCount": 26,
+     "wikidataId": "Q696762",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q544285",
+     "name": "Köln Sinagogu",
+     "localName": "Roonstrasse Synagogue",
+     "lat": 50.93212,
+     "lon": 6.93668,
+     "wikipediaCount": 16,
+     "wikidataId": "Q544285",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/38246033",
@@ -60,28 +130,173 @@
      "lon": 6.94591,
      "address": "Gereonshof 4",
      "website": "https://www.stgereon.de/",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q682188",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q266866",
+     "name": "Basilica of St. Ursula, Cologne",
+     "lat": 50.94567,
+     "lon": 6.95421,
+     "wikipediaCount": 14,
+     "wikidataId": "Q266866",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q23048",
+     "name": "Colonia Claudia Ara Agrippinensium",
+     "lat": 50.93806,
+     "lon": 6.95694,
+     "wikipediaCount": 14,
+     "wikidataId": "Q23048",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q153646",
+     "name": "Colonius",
+     "lat": 50.94722,
+     "lon": 6.93194,
+     "wikipediaCount": 14,
+     "wikidataId": "Q153646",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q565187",
+     "name": "St. Pantaleon's Church",
+     "lat": 50.92861,
+     "lon": 6.94806,
+     "wikipediaCount": 14,
+     "wikidataId": "Q565187",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q526047",
+     "name": "Basilica of the Holy Apostles",
+     "lat": 50.93652,
+     "lon": 6.94523,
+     "wikipediaCount": 13,
+     "wikidataId": "Q526047",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q598352",
+     "name": "St. Maria im Kapitol",
+     "lat": 50.93464,
+     "lon": 6.95861,
+     "wikipediaCount": 13,
+     "wikidataId": "Q598352",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q564520",
+     "name": "Great St. Martin Church",
+     "lat": 50.93849,
+     "lon": 6.96184,
+     "wikipediaCount": 12,
+     "wikidataId": "Q564520",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q555142",
+     "name": "Cologne Tower",
+     "lat": 50.9481,
+     "lon": 6.9431,
+     "wikipediaCount": 11,
+     "wikidataId": "Q555142",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q564898",
+     "name": "St. Andreas Church",
+     "lat": 50.94187,
+     "lon": 6.95491,
+     "wikipediaCount": 11,
+     "wikidataId": "Q564898",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1389",
+     "name": "St. Cecilia's Church",
+     "lat": 50.93464,
+     "lon": 6.95174,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1389",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q457665",
+     "name": "St. Kunibert's Church",
+     "lat": 50.94668,
+     "lon": 6.96272,
+     "wikipediaCount": 11,
+     "wikidataId": "Q457665",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/267352592",
      "name": "St. Maria ad Gradus",
      "lat": 50.94143,
      "lon": 6.95923,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q80786",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/622638987",
      "name": "Tünnes und Schäl",
      "lat": 50.93822,
      "lon": 6.96076,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q151639"
     },
     {
      "id": "node/1679641146",
      "name": "Kronleuchtersaal",
      "lat": 50.95067,
      "lon": 6.96344,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1399679",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/34309348",
@@ -89,7 +304,12 @@
      "lat": 50.9379,
      "lon": 6.95862,
      "website": "https://www.museenkoeln.de/archaeologische-zone/default.asp",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q636746",
+     "kinds": [
+      "museum",
+      "ruins"
+     ]
     },
     {
      "id": "way/51570458",
@@ -97,7 +317,12 @@
      "lat": 50.94931,
      "lon": 6.95687,
      "website": "https://www.eigelsteintorburg.de/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q153131",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/1220332213",
@@ -106,7 +331,11 @@
      "lon": 6.9592,
      "website": "https://roemisch-germanisches-museum.de/Ubiermonument",
      "openingHours": "Th[1] 14:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q23005613",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/285715949",
@@ -114,7 +343,11 @@
      "lat": 50.95358,
      "lon": 6.97705,
      "website": "https://www.koelner-seilbahn.de/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1685314",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/25048555",
@@ -122,21 +355,35 @@
      "lat": 50.93693,
      "lon": 6.95825,
      "address": "Quatermarkt 4",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q433272",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/1246244105",
      "name": "Dionysosmosaik",
      "lat": 50.94074,
      "lon": 6.95866,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2071177",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/122628380",
      "name": "Römerturm",
      "lat": 50.94093,
      "lon": 6.94662,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2179667",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "node/529807675",
@@ -145,7 +392,8 @@
      "lon": 6.95895,
      "website": "https://www.museenkoeln.de/archaeologische-zone/default.asp?s=2979",
      "openingHours": "Mo-Su off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q111511952"
     },
     {
      "id": "way/132405287",
@@ -154,14 +402,20 @@
      "lon": 6.97366,
      "address": "Tempelstraße 31",
      "website": "http://evangelisch-deutzpoll.de/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1409316",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/60358008",
      "name": "Pegel Köln",
      "lat": 50.93695,
      "lon": 6.96329,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q2067319"
     },
     {
      "id": "node/4426148123",
@@ -222,7 +476,8 @@
      "id": "way/773859973",
      "name": "Ball of fame",
      "lat": 50.93827,
-     "lon": 6.98115
+     "lon": 6.98115,
+     "wikidataId": "Q110916798"
     },
     {
      "id": "way/1358521219",
@@ -247,18 +502,6 @@
      "name": "CCAA Roemische Stadtmauer",
      "lat": 50.93612,
      "lon": 6.95262
-    },
-    {
-     "id": "way/114979719",
-     "name": "Domfontäne",
-     "lat": 50.94079,
-     "lon": 6.95749
-    },
-    {
-     "id": "way/330042827",
-     "name": "Drehscheibe des Bahnhofs Schiffbrücke",
-     "lat": 50.93787,
-     "lon": 6.96879
     }
    ]
   },
@@ -274,7 +517,11 @@
      "address": "Obenmarspforten 40",
      "website": "https://www.wallraf.museum/",
      "openingHours": "off",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q700959",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/633480736",
@@ -284,7 +531,11 @@
      "address": "Heinrich-Böll-Platz",
      "website": "https://www.museum-ludwig.de/",
      "openingHours": "Tu-Su 10:00-18:00; Mo off",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q703640",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/965473",
@@ -294,7 +545,11 @@
      "address": "Roncalliplatz 4",
      "website": "http://www.roemisch-germanisches-museum.de/",
      "openingHours": "Mo-Su off",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q707955",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/334606061",
@@ -304,7 +559,11 @@
      "address": "Am Schokoladenmuseum 1a",
      "website": "https://www.schokoladenmuseum.de/",
      "openingHours": "Mo-Su 10:00-18:00; Jan-Mar Mo off; Nov Mo off",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q55399",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/48359832",
@@ -314,7 +573,11 @@
      "address": "Obenmarspforten 21",
      "website": "https://farina.org/",
      "openingHours": "Mo-Sa 10:00-19:00; Su 11:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q694490",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5739097722",
@@ -324,7 +587,11 @@
      "address": "Kolumbastraße 4",
      "website": "https://www.kolumba.de/",
      "openingHours": "Mo,We-Su,PH 12:00-17:00; Tu off; Aug 15-Sep 14,Dec 24-25,Dec 31-Jan 01 off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1621165",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/78605265",
@@ -333,7 +600,11 @@
      "lon": 6.95024,
      "website": "https://nsdok.de/Start",
      "openingHours": "Tu-Fr 10:00-18:00,Sa-Su 11:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q560033",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/386349068",
@@ -343,7 +614,11 @@
      "address": "Cäcilienstraße 29-33",
      "website": "https://www.museum-schnuetgen.de/",
      "openingHours": "Mo off; Tu-We,Fr-Su,PH 10:00-18:00; Th 10:00-20:00; Th[1] 10:00-22:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q950",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/4595998",
@@ -353,7 +628,11 @@
      "address": "An der Rechtschule 7",
      "website": "https://makk.de/",
      "openingHours": "Mo off; Tu-Su,PH 10:00-18:00; Th[1] 10:00-22:00 \"Kölntag\"; Dec 24,25,31,Jan 01 off || \"Karneval (Weiberfastnacht bis Karnevalsdienstag) geschlossen\"",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q877567",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/618164720",
@@ -362,7 +641,12 @@
      "lon": 6.95427,
      "website": "https://www.koelnisches-stadtmuseum.de/",
      "openingHours": "Mo off; Tu,We,Fr,Sa,Su,PH 10:00-17:00; Th[1] 10:00-22:00; Th[2-5] 10:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q881214",
+     "kinds": [
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "node/3364570531",
@@ -372,7 +656,11 @@
      "address": "Neumarkt 24",
      "website": "https://www.kollwitz.de/",
      "openingHours": "Mo off; Tu-Fr 10:00-18:00; Sa,Su,PH 11:00-18:00; Dec 24-26,31,Jan 01 off; \"Während der Karnevalstage ist das Museum geschlossen\"",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q319255",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/643068699",
@@ -381,7 +669,8 @@
      "lon": 6.94395,
      "website": "https://www.koelnischerkunstverein.de/",
      "openingHours": "Tu-Su 11:00-18:00; PH unknown; closed \"In den Ausstellungspausen\"",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1559479"
     },
     {
      "id": "node/3396039255",
@@ -391,14 +680,23 @@
      "address": "Leonhard-Tietz-Straße 10",
      "website": "https://rautenstrauch-joest-museum.de/Startseite",
      "openingHours": "Mo off; Tu-We 10:00-18:00; Th 10:00-20:00; Fr-Su,PH 10:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q2133582",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1966869734",
      "name": "Jawne",
      "lat": 50.93988,
      "lon": 6.94469,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q873517",
+     "kinds": [
+      "business",
+      "school"
+     ]
     },
     {
      "id": "way/23482434",
@@ -408,7 +706,12 @@
      "address": "Im Zollhafen 1",
      "website": "https://www.sportmuseum.de/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q55396",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2865852452",
@@ -417,7 +720,11 @@
      "lon": 6.94339,
      "website": "https://www.deutsches-tanzarchiv.de/",
      "openingHours": "Mo-Tu 14:00-19:00; Th-Su 14:00-19:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q17623395",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/38578888",
@@ -426,7 +733,11 @@
      "lon": 6.95853,
      "website": "https://www.dombau-koeln.de/index.php?id=11",
      "openingHours": "Mo-Su,PH 10:00-18:00; Jan 01 off; Nov 11 off; Dec 24-25 off; Dec 31 off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1238676",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4085306199",
@@ -434,7 +745,11 @@
      "lat": 50.93975,
      "lon": 6.95931,
      "website": "https://museenkoeln.de/artothek/seite.aspx?s=542",
-     "openingHours": "Tu-Fr 13:00-19:00; Sa 13:00-16:00"
+     "openingHours": "Tu-Fr 13:00-19:00; Sa 13:00-16:00",
+     "wikidataId": "Q76634814",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5492264456",
@@ -518,7 +833,11 @@
      "lat": 50.93795,
      "lon": 6.96186,
      "website": "https://medizinmuseum.cologne/",
-     "openingHours": "Mo10:00-13:00; Tu off;We-Su 13:00-18:00"
+     "openingHours": "Mo10:00-13:00; Tu off;We-Su 13:00-18:00",
+     "wikidataId": "Q111746060",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/448300897",
@@ -536,6 +855,83 @@
      "address": "Alter Markt 36-42",
      "website": "https://www.timeride.de/koeln",
      "openingHours": "Mo-Sa 10:00-20:00"
+    },
+    {
+     "id": "node/6447272685",
+     "name": "100 Kubik - Raum für Spanische Kunst",
+     "lat": 50.942,
+     "lon": 6.94751,
+     "address": "Gregorius-Maurus-Straße 21",
+     "openingHours": "Mo-Su 12:00-16:00"
+    },
+    {
+     "id": "node/5493368822",
+     "name": "Delmes & Zander",
+     "lat": 50.93423,
+     "lon": 6.93707,
+     "address": "Lindenstraße 22-24",
+     "openingHours": "Tu-Fr 12:00-18:00; Sa 11:00-16:00"
+    },
+    {
+     "id": "node/1432011911",
+     "name": "Galerie Minrath",
+     "lat": 50.93678,
+     "lon": 6.94218,
+     "website": "https://galerie-minrath.com/pages/kunstgalerie-koeln"
+    },
+    {
+     "id": "node/13695474254",
+     "name": "Galerie Parrotta Contemporary Art",
+     "lat": 50.93455,
+     "lon": 6.93429,
+     "address": "Brüsseler Straße 21",
+     "openingHours": "Tu-Fr 11:00-18:00; Sa 11:00-16:00"
+    },
+    {
+     "id": "node/7685019863",
+     "name": "Galerie Ulf Larsson",
+     "lat": 50.93518,
+     "lon": 6.94178,
+     "openingHours": "We-Fr 14:00-18:00; Sa 12:00-16:00"
+    },
+    {
+     "id": "node/1967036080",
+     "name": "Galerie Wasser",
+     "lat": 50.93914,
+     "lon": 6.94518,
+     "website": "https://galerie-wasser.de/"
+    },
+    {
+     "id": "way/230322117",
+     "name": "Im Malerwinkel",
+     "lat": 50.94777,
+     "lon": 6.97672,
+     "address": "Auenweg 16",
+     "website": "https://www.koelner-maler-kreis.de/malerwinkel"
+    },
+    {
+     "id": "node/643076863",
+     "name": "JUBG",
+     "lat": 50.93602,
+     "lon": 6.94289,
+     "address": "Hahnenstraße 8",
+     "website": "https://jubg.space/"
+    },
+    {
+     "id": "node/7183789719",
+     "name": "Kölsche Lebensart",
+     "lat": 50.93769,
+     "lon": 6.96206,
+     "address": "Salzgasse 15",
+     "openingHours": "Mo-Sa 11:00-19:00"
+    },
+    {
+     "id": "node/13144789239",
+     "name": "Matjö - Raum für Kunst",
+     "lat": 50.93295,
+     "lon": 6.95914,
+     "address": "Mathiasstraße 15",
+     "website": "https://www.matjoe.de/matjoe/"
     }
    ]
   },
@@ -742,6 +1138,7 @@
      "website": "https://www.bier-esel.com/",
      "openingHours": "Mo 16:00-21:30, Tu-Th 12:00-21:30, Fr-Sa 12:00-22:00, Su off",
      "cuisine": "regional",
+     "wikidataId": "Q857712",
      "detailed": true
     },
     {
@@ -1274,6 +1671,7 @@
      "website": "https://www.muehlenkoelsch.de/",
      "openingHours": "Mo-Su,PH 12:00-18:00+",
      "cuisine": "german",
+     "wikidataId": "Q900427",
      "detailed": true
     },
     {
@@ -1611,7 +2009,8 @@
      "lat": 50.9517,
      "lon": 6.98195,
      "address": "Auenweg 173",
-     "website": "https://bootshaus.tv/"
+     "website": "https://bootshaus.tv/",
+     "wikidataId": "Q19835620"
     },
     {
      "id": "node/1948954386",

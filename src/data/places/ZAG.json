@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "ZAG",
- "fetchedAt": "2026-10-16T23:49:59.654Z",
+ "fetchedAt": "2026-10-18T16:43:24.393Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,18 +43,255 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q723603",
+     "name": "Stadion Maksimir",
+     "lat": 45.81886,
+     "lon": 16.01808,
+     "wikipediaCount": 45,
+     "wikidataId": "Q723603",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q312220",
+     "name": "Zagreb Katedrali",
+     "localName": "Zagreb Cathedral",
+     "lat": 45.81444,
+     "lon": 15.97972,
+     "wikipediaCount": 40,
+     "wikidataId": "Q312220",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q268151",
+     "name": "Zagreb Ulusal Hırvatistan Tiyatrosu",
+     "localName": "Croatian National Theatre in Zagreb",
+     "lat": 45.8095,
+     "lon": 15.97,
+     "wikipediaCount": 31,
+     "wikidataId": "Q268151",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1637186",
+     "name": "St. Mark's Church in Zagreb",
+     "lat": 45.81611,
+     "lon": 15.97389,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1637186",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q377002",
+     "name": "Ban Jelačić Square",
+     "lat": 45.81306,
+     "lon": 15.97722,
+     "wikipediaCount": 25,
+     "wikidataId": "Q377002",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
      "id": "way/897965996",
      "name": "Zagrebačka uspinjača",
      "lat": 45.81422,
      "lon": 15.97309,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q583140"
+    },
+    {
+     "id": "wikidata/Q2501733",
+     "name": "St. Mark's Square",
+     "lat": 45.81639,
+     "lon": 15.97389,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2501733",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q806072",
+     "name": "Banski dvori",
+     "lat": 45.81628,
+     "lon": 15.97304,
+     "wikipediaCount": 15,
+     "wikidataId": "Q806072",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q18889320",
+     "name": "İsa'nın Kalbi Bazilikası, Zagreb",
+     "localName": "Basilica of the Heart of Jesus, Zagreb",
+     "lat": 45.80889,
+     "lon": 15.98241,
+     "wikipediaCount": 15,
+     "wikidataId": "Q18889320",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1267773",
+     "name": "Vatroslav Lisinski Concert Hall",
+     "lat": 45.80111,
+     "lon": 15.98028,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1267773",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q894661",
+     "name": "Zagreb Botanical Garden",
+     "lat": 45.80486,
+     "lon": 15.97178,
+     "wikipediaCount": 15,
+     "wikidataId": "Q894661"
+    },
+    {
+     "id": "wikidata/Q1275381",
+     "name": "Zagreb Orthodox Cathedral",
+     "lat": 45.81265,
+     "lon": 15.9739,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1275381",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2986837",
+     "name": "Lotrščak Kule",
+     "localName": "Lotrščak Tower",
+     "lat": 45.81463,
+     "lon": 15.97325,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2986837",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q169331",
+     "name": "St. Catherine's Church, Zagreb",
+     "lat": 45.8147,
+     "lon": 15.9742,
+     "wikipediaCount": 14,
+     "wikidataId": "Q169331",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q17277934",
+     "name": "Greek Catholic Co-Cathedral of Saints Cyril and Methodius",
+     "lat": 45.8152,
+     "lon": 15.97331,
+     "wikipediaCount": 13,
+     "wikidataId": "Q17277934",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q28048263",
+     "name": "Grič Tunnel",
+     "lat": 45.81472,
+     "lon": 15.97306,
+     "wikipediaCount": 13,
+     "wikidataId": "Q28048263"
+    },
+    {
+     "id": "wikidata/Q612619",
+     "name": "Nikola Šubić Zrinski Square",
+     "lat": 45.81028,
+     "lon": 15.97806,
+     "wikipediaCount": 13,
+     "wikidataId": "Q612619",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2073587",
+     "name": "Cibona Tower",
+     "lat": 45.80306,
+     "lon": 15.96389,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2073587"
+    },
+    {
+     "id": "wikidata/Q549238",
+     "name": "Dražen Petrović Basketball Hall",
+     "lat": 45.80256,
+     "lon": 15.96327,
+     "wikipediaCount": 12,
+     "wikidataId": "Q549238"
+    },
+    {
+     "id": "wikidata/Q2251720",
+     "name": "Eurotower",
+     "lat": 45.79889,
+     "lon": 15.96996,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2251720"
+    },
+    {
+     "id": "wikidata/Q640620",
+     "name": "Zagreb Observatory",
+     "lat": 45.819,
+     "lon": 15.9749,
+     "wikipediaCount": 12,
+     "wikidataId": "Q640620"
+    },
+    {
+     "id": "wikidata/Q1557929",
+     "name": "Republic of Croatia Square",
+     "lat": 45.80944,
+     "lon": 15.97,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1557929",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/1395348",
      "name": "Saborska palača",
      "lat": 45.81625,
      "lon": 15.97437,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q10620480",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/296011545",
@@ -62,21 +299,31 @@
      "lat": 45.81457,
      "lon": 15.97359,
      "address": "Trg Katarine Zrinske 6",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12639210",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/101185039",
      "name": "Nadbiskupski dvor",
      "lat": 45.81427,
      "lon": 15.97993,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q83297472",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/882702343",
      "name": "Spomenik domovini",
      "lat": 45.80087,
      "lon": 15.97896,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q121636560"
     },
     {
      "id": "way/70255230",
@@ -100,7 +347,11 @@
      "id": "way/581658851",
      "name": "Nikola Tesla 1856-1943",
      "lat": 45.81124,
-     "lon": 15.97413
+     "lon": 15.97413,
+     "wikidataId": "Q125996555",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/3853040",
@@ -176,59 +427,6 @@
      "lat": 45.81738,
      "lon": 15.97246,
      "address": "Demetrova ulica 3"
-    },
-    {
-     "id": "way/289908945",
-     "name": "Palača Oršić",
-     "lat": 45.81759,
-     "lon": 15.97506,
-     "address": "Opatička ulica 14"
-    },
-    {
-     "id": "way/290024712",
-     "name": "Palača Pongratz",
-     "lat": 45.81577,
-     "lon": 15.97083,
-     "address": "Visoka ulica 22"
-    },
-    {
-     "id": "way/97088757",
-     "name": "Palača Rauch",
-     "lat": 45.81647,
-     "lon": 15.97511
-    },
-    {
-     "id": "way/295998492",
-     "name": "Palača Škrlec-Balbi",
-     "lat": 45.81806,
-     "lon": 15.97365,
-     "address": "Demetrova ulica 11"
-    },
-    {
-     "id": "relation/3960164",
-     "name": "Palača Zakmardi-Domin",
-     "lat": 45.8154,
-     "lon": 15.97494,
-     "address": "Ulica Jurja Habdelića 2"
-    },
-    {
-     "id": "node/14209482693",
-     "name": "Small statue of Jupiter",
-     "lat": 45.80939,
-     "lon": 15.99909
-    },
-    {
-     "id": "node/13015796926",
-     "name": "Spomenik Juditi",
-     "lat": 45.80657,
-     "lon": 15.97015
-    },
-    {
-     "id": "way/296513123",
-     "name": "Vila Rastić-Turković",
-     "lat": 45.81621,
-     "lon": 15.97098,
-     "address": "Visoka ulica 18"
     }
    ]
   },
@@ -244,7 +442,11 @@
      "address": "Ulica sv. Ćirila i Metoda 2",
      "website": "https://brokenships.com/",
      "openingHours": "Jun-Sep Mo-Su 09:00-22:00; Oct-May Mo-Su 09:00-21:00; PH off",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1954595",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4202221914",
@@ -254,7 +456,11 @@
      "address": "Ulica sv. Ćirila i Metoda 3",
      "website": "https://hmnu.hr/",
      "openingHours": "Mo-Fr 09:00-17:00; Sa 10:00-14:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q5187140",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/618782388",
@@ -263,7 +469,11 @@
      "lon": 15.96684,
      "website": "https://www.mimara.hr/",
      "openingHours": "off \"Muzej je zatvoren za javnost do završetka obnove zbog oštećenja zgrade u potresu 22. ožujka 2020. godine.\"",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1936046",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/419207577",
@@ -273,7 +483,12 @@
      "address": "Trg Nikole Zrinskog 19",
      "website": "https://www.amz.hr/",
      "openingHours": "Tu-We,Fr-Sa 10:00-18:00; Th 10:00-20:00; Su 10:00-13:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2986831",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/392439336",
@@ -283,7 +498,12 @@
      "address": "Trg kralja Tomislava 22",
      "website": "https://www.umjetnicki-paviljon.hr/",
      "openingHours": "Tu-Th,Sa-Su 11:00-20:00; Fr 11:00-21:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q391613",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/325705511",
@@ -293,7 +513,11 @@
      "address": "Demetrova ulica 1",
      "website": "http://www.hpm.hr/",
      "openingHours": "Tu-We,Fr 10:00-17:00; Th 10:00-20:00; Sa 10:00-19:00; Su 10:00-13:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q8366704",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/248806370",
@@ -303,7 +527,12 @@
      "address": "Trg Ivana, Antuna i Vladimira Mažuranića 14",
      "website": "https://emz.hr/",
      "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 10:00-13:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q502157",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1711410842",
@@ -313,7 +542,11 @@
      "address": "Ulica Antuna Gustava Matoša 9",
      "website": "https://www.hismus.hr/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 10:00-13:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2353812",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10228334563",
@@ -323,7 +556,11 @@
      "address": "Opatička ulica 20",
      "website": "https://mgz.hr/",
      "openingHours": "Tu-Sa 10:00-18:00; Su 10:00-14:00; PH off",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2618426",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/29233452",
@@ -332,7 +569,12 @@
      "lon": 15.96433,
      "address": "Savska cesta 18",
      "website": "https://tmnt.hr/hr-hr/",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2618661",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2884714406",
@@ -342,7 +584,11 @@
      "address": "Ulica Andrije Hebranga 1",
      "website": "https://www.moderna-galerija.hr/",
      "openingHours": "Tu-Fr 11:00-19:00; Sa-Su 11:00-14:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2350879",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/587748701",
@@ -350,7 +596,13 @@
      "lat": 45.80995,
      "lon": 15.98718,
      "address": "Trg žrtava fašizma 16",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q12061727",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/29354977",
@@ -360,7 +612,12 @@
      "address": "Trg Republike Hrvatske 10",
      "website": "https://www.muo.hr/",
      "openingHours": "Tu-Sa 11:00-20:00; Su 10:00-14:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q406652",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1711410885",
@@ -370,7 +627,12 @@
      "address": "Jezuitski trg 4",
      "website": "https://gkd.hr/",
      "openingHours": "Tu-Su 11:00-19:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q6421422",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2750011731",
@@ -380,7 +642,11 @@
      "address": "Trg Republike Hrvatske 4",
      "website": "https://www.hsmuzej.hr/index.asp",
      "openingHours": "Tu-We,Fr 10:00-17:00; Th 10:00-20:00; Sa 09:00-14:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1567326",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/272805462",
@@ -390,7 +656,12 @@
      "address": "Mletačka ulica 8",
      "website": "https://www.mdc.hr/mestrovic/atelijer/index-en.htm",
      "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 10:00-14:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q15242282",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/11194041178",
@@ -515,6 +786,96 @@
      "address": "Strossmayerovo šetalište 9",
      "website": "https://gkd.hr/kula-lotrscak/",
      "openingHours": "Mo-Fr 09:00-21:00; Sa,Su 10:00-21:00"
+    },
+    {
+     "id": "node/12409895026",
+     "name": "Laudato",
+     "lat": 45.81334,
+     "lon": 15.98488,
+     "address": "Trg Drage Iblera 10",
+     "website": "https://galerije.laudato.hr/zagreb",
+     "openingHours": "Mo-Fr 12:00-19:00; Sa 09:00-14:00; Su off"
+    },
+    {
+     "id": "node/987835234",
+     "name": "Lovački muzej",
+     "lat": 45.82127,
+     "lon": 15.96794,
+     "address": "Ulica Vladimira Nazora 63",
+     "website": "https://hls.com.hr/",
+     "openingHours": "We, Fr-Sa 08:00-13:00; Tu, Th 12:00-17:00"
+    },
+    {
+     "id": "node/10969814883",
+     "name": "Medijateka Francuskog instituta",
+     "lat": 45.81135,
+     "lon": 15.97441,
+     "address": "Preradovićeva ulica 5",
+     "website": "https://institutfrancais.hr/",
+     "openingHours": "Tu-Fr 12:00-19:00, Sa 10:00-14:00"
+    },
+    {
+     "id": "node/3979869457",
+     "name": "Memorijalna zbirka Joze Kljakovića",
+     "lat": 45.81523,
+     "lon": 15.96738,
+     "address": "Rokov perivoj 4",
+     "website": "https://www.czlogz.hr/",
+     "openingHours": "Tu-Fr 14:00-19:00"
+    },
+    {
+     "id": "node/9051637927",
+     "name": "Muzej Čokolade",
+     "lat": 45.80961,
+     "lon": 15.97197,
+     "address": "Gundulićeva ulica 26",
+     "website": "https://muzejcokolade.hr/",
+     "openingHours": "Tu-Sa 11:00-20:00; Su 10:00-19:00; Mo 14:00-20:00"
+    },
+    {
+     "id": "node/3617997605",
+     "name": "Muzej Iluzija",
+     "lat": 45.81311,
+     "lon": 15.96649,
+     "website": "https://muzejiluzija.com/",
+     "openingHours": "Mo-Su 09:00-22:00"
+    },
+    {
+     "id": "node/9288095968",
+     "name": "Muzej Mamurluka",
+     "lat": 45.81394,
+     "lon": 15.98398,
+     "address": "Vlaška ulica 55",
+     "website": "https://www.muzejmamurluka.com/",
+     "openingHours": "10:00-22:00",
+     "wikidataId": "Q136191741"
+    },
+    {
+     "id": "node/13019212455",
+     "name": "Muzej povijesti videoigara",
+     "lat": 45.81297,
+     "lon": 15.98325,
+     "address": "Draškovićeva ulica 10",
+     "website": "https://vghm.hr/",
+     "openingHours": "Mo off; Tu-Su 10:00-22:00"
+    },
+    {
+     "id": "node/7057619585",
+     "name": "Muzej vlakića Backo mini express",
+     "lat": 45.8127,
+     "lon": 15.97168,
+     "address": "Gundulićeva ulica 4",
+     "website": "https://www.backo.hr/",
+     "openingHours": "Tu-Sa 10:00-18:00"
+    },
+    {
+     "id": "node/13165320501",
+     "name": "Muzej zaboravljenih priča",
+     "lat": 45.81331,
+     "lon": 15.97244,
+     "address": "Ilica 26",
+     "website": "https://www.muzejprica.com/",
+     "openingHours": "Mo-Su 09:00-22:00"
     }
    ]
   },

@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "KRK",
- "fetchedAt": "2026-10-16T23:36:32.070Z",
+ "fetchedAt": "2026-10-18T16:26:13.934Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,13 @@
      "lon": 19.93548,
      "website": "https://katedra-wawelska.pl/",
      "openingHours": "Mo-Sa 06:30-17:00; Su 07:00-17:30; Apr-Oct Mo-Sa 06:30-18:00; Apr-Oct Su 07:00-18:30",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q638519",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/26195267",
@@ -59,7 +65,26 @@
      "address": "Plac Mariacki 5",
      "website": "https://mariacki.com/",
      "openingHours": "Mo-Sa 11:30-18:00; Su 14:00-18:00",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q1143171",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "node/7999694336",
+     "name": "Kości „Smoka Wawelskiego”",
+     "lat": 50.0546,
+     "lon": 19.93503,
+     "openingHours": "24/7",
+     "wikipediaCount": 34,
+     "wikidataId": "Q743704",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "relation/2270819",
@@ -67,14 +92,13 @@
      "lat": 50.05441,
      "lon": 19.93656,
      "website": "https://wawel.krakow.pl/",
-     "wikipediaCount": 31
-    },
-    {
-     "id": "way/785550415",
-     "name": "Zamek Wawel",
-     "lat": 50.05394,
-     "lon": 19.9356,
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q18820",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/201133718",
@@ -82,7 +106,11 @@
      "localName": "Rynek Główny",
      "lat": 50.0615,
      "lon": 19.93735,
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q770631",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/23256528",
@@ -90,7 +118,51 @@
      "lat": 50.0617,
      "lon": 19.93736,
      "address": "Rynek Główny 3",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1072350",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q652634",
+     "name": "Eski Şehir",
+     "localName": "Kraków Old Town",
+     "lat": 50.06209,
+     "lon": 19.93688,
+     "wikipediaCount": 23,
+     "wikidataId": "Q652634",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q1195738",
+     "name": "St. Andrew's Church",
+     "lat": 50.05661,
+     "lon": 19.9384,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1195738",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q727590",
+     "name": "Miejski Stadyumu",
+     "localName": "Henryk Reyman Municipal Stadium",
+     "lat": 50.06361,
+     "lon": 19.91194,
+     "wikipediaCount": 19,
+     "wikidataId": "Q727590",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/39357538",
@@ -98,14 +170,21 @@
      "lat": 50.06486,
      "lon": 19.94135,
      "openingHours": "24/7",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1363724",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "node/10829813177",
      "name": "Ołtarz Wita Stwosza",
      "lat": 50.06164,
      "lon": 19.94,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q963460"
     },
     {
      "id": "way/29271113",
@@ -114,7 +193,13 @@
      "lon": 19.93774,
      "website": "http://www.kosciolwojciecha.pl/",
      "openingHours": "Mo-Sa 09:00-17:00; Su 13:30-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q898260",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/33291029",
@@ -123,21 +208,259 @@
      "lon": 19.94498,
      "address": "Bożego Ciała 26",
      "website": "https://bozecialo.net/",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2084317",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q338657",
+     "name": "Aziz Peter ve Paul Kilisesi",
+     "localName": "Saints Peter and Paul Church",
+     "lat": 50.05694,
+     "lon": 19.93889,
+     "wikipediaCount": 16,
+     "wikidataId": "Q338657",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/214263",
      "name": "Collegium Maius",
      "lat": 50.06165,
      "lon": 19.9337,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q919596",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q143915",
+     "name": "Kraków Sigismund Şapeli",
+     "localName": "Sigismund's Chapel",
+     "lat": 50.05448,
+     "lon": 19.93559,
+     "wikipediaCount": 16,
+     "wikidataId": "Q143915",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1945780",
+     "name": "Planty Park",
+     "lat": 50.06556,
+     "lon": 19.94,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1945780",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1457419",
+     "name": "Rakowicki Cemetery",
+     "lat": 50.07556,
+     "lon": 19.95389,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1457419",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3394795",
+     "name": "St. Florian's Church",
+     "lat": 50.06756,
+     "lon": 19.94333,
+     "wikipediaCount": 16,
+     "wikidataId": "Q3394795",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3527492",
+     "name": "Juliusz Słowacki Tiyatrosu",
+     "localName": "Juliusz Słowacki Theatre",
+     "lat": 50.06389,
+     "lon": 19.94306,
+     "wikipediaCount": 15,
+     "wikidataId": "Q3527492",
+     "kinds": [
+      "business",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1328725",
+     "name": "Kraków Francesco d'Assisi Kilisesi",
+     "localName": "Church of St. Francis of Assisi",
+     "lat": 50.05913,
+     "lon": 19.93573,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1328725",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q738643",
+     "name": "Marshal Józef Piłsudski Stadyumu",
+     "localName": "Marshal Józef Piłsudski Stadium",
+     "lat": 50.05806,
+     "lon": 19.91972,
+     "wikipediaCount": 15,
+     "wikidataId": "Q738643",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1420580",
+     "name": "Skałka",
+     "lat": 50.04833,
+     "lon": 19.93778,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1420580",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1126134",
+     "name": "Church of St. Anne",
+     "lat": 50.06209,
+     "lon": 19.93377,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1126134",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1237964",
+     "name": "Kraków Kutsal Üçleme Bazilikası",
+     "localName": "Basilica of the Holy Trinity, Kraków",
+     "lat": 50.0593,
+     "lon": 19.93955,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1237964",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q325685",
+     "name": "Montelupich Prison",
+     "lat": 50.07419,
+     "lon": 19.93986,
+     "wikipediaCount": 13,
+     "wikidataId": "Q325685"
+    },
+    {
+     "id": "wikidata/Q3354482",
+     "name": "Tempel Synagogue",
+     "lat": 50.05292,
+     "lon": 19.94444,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3354482",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q598951",
+     "name": "High Synagogue, Kraków",
+     "lat": 50.05139,
+     "lon": 19.94739,
+     "wikipediaCount": 12,
+     "wikidataId": "Q598951",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3109262",
+     "name": "Izaak Synagogue",
+     "lat": 50.05167,
+     "lon": 19.94667,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3109262",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3618",
+     "name": "Remuh Synagogue",
+     "lat": 50.05267,
+     "lon": 19.94726,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3618",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q7589531",
+     "name": "St. Leonard's Crypt",
+     "lat": 50.05467,
+     "lon": 19.93574,
+     "wikipediaCount": 12,
+     "wikidataId": "Q7589531"
+    },
+    {
+     "id": "wikidata/Q2619332",
+     "name": "Botanic Garden of the Jagiellonian University",
+     "lat": 50.06292,
+     "lon": 19.95792,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2619332",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/3989492",
      "name": "Floriańska",
      "lat": 50.06342,
-     "lon": 19.94026,
-     "wikipediaCount": 11
+     "lon": 19.94027,
+     "wikipediaCount": 11,
+     "wikidataId": "Q9365137",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/263169972",
@@ -145,7 +468,13 @@
      "lat": 50.05984,
      "lon": 19.93518,
      "address": "Franciszkańska 3",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q616675",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/25113592",
@@ -153,7 +482,11 @@
      "lat": 50.05972,
      "lon": 19.91208,
      "openingHours": "24/7",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2358590",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/138365337",
@@ -162,35 +495,65 @@
      "lon": 19.93984,
      "address": "Mały Rynek 9",
      "website": "http://www.swbarbara.jezuici.pl/",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q606281",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/85151348",
      "name": "Baszta Senatorska",
      "lat": 50.05396,
      "lon": 19.93675,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1297252",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/25516318",
      "name": "Baszta Sandomierska",
      "lat": 50.05282,
      "lon": 19.93508,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q9166824",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "relation/5992609",
      "name": "Ogrody Królewskie",
      "lat": 50.05445,
      "lon": 19.93745,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7080252",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/8027535",
      "name": "Pałac Wielopolskich",
      "lat": 50.05853,
      "lon": 19.93691,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q11814878",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/242682567",
@@ -198,14 +561,24 @@
      "lat": 50.04656,
      "lon": 19.9475,
      "website": "https://kob.allbridges.eu/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q11752074",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "relation/5574945",
      "name": "Mury miejskie Krakowa",
      "lat": 50.06486,
      "lon": 19.94144,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q11786728",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "way/231922142",
@@ -214,42 +587,40 @@
      "lon": 19.91233,
      "address": "Świętej Bronisławy",
      "website": "http://www.parafiasalwator.pl/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11745326",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/200499484",
      "name": "Arsenał Miejski",
      "lat": 50.06512,
      "lon": 19.94034,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q9160342",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/85151345",
      "name": "Baszta Kobieca",
      "lat": 50.05332,
      "lon": 19.93547,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "way/85151343",
-     "name": "Baszta Szlachecka",
-     "lat": 50.05347,
-     "lon": 19.93568,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "relation/2702585",
-     "name": "Pałac Zbaraskich",
-     "lat": 50.0607,
-     "lon": 19.93665,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "way/200499485",
-     "name": "Baszta Ciesielska",
-     "lat": 50.06519,
-     "lon": 19.94002,
-     "wikipediaCount": 2
+     "wikipediaCount": 3,
+     "wikidataId": "Q9166786",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     }
    ]
   },
@@ -264,7 +635,13 @@
      "lon": 19.94023,
      "website": "https://mnk.pl/oddzial/mnk-muzeum-czartoryskich",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q1450630",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1284375894",
@@ -273,7 +650,11 @@
      "lon": 19.92361,
      "address": "Aleja 3 Maja 1",
      "openingHours": "Tu,Fr,Sa 10:00-19:00; Mo off; We,Th,Su 10:00-18:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q195311",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/13562708",
@@ -282,7 +663,12 @@
      "lon": 19.94163,
      "website": "https://muzeumkrakowa.pl/oddzialy/barbakan",
      "openingHours": "Mo-Su 10:30-18:00; Nov-Mar off",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q807309",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "way/152104775",
@@ -291,7 +677,13 @@
      "lon": 19.94861,
      "website": "https://muzeumkrakowa.pl/oddzialy/stara-synagoga",
      "openingHours": "Mo 10:00-14:00; Tu-Su 10:00-17:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q3502453",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/25122842",
@@ -301,7 +693,13 @@
      "address": "Rynek Główny 1",
      "website": "https://muzeumkrakowa.pl/oddzialy/wieza-ratuszowa",
      "openingHours": "Mo 11:00-15:00; Tu-Su 11:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1786361",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "relation/1863002",
@@ -310,7 +708,11 @@
      "lon": 19.93625,
      "website": "https://ma.krakow.pl/",
      "openingHours": "Mo-Su 10:00-16:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q3329434",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/472147202",
@@ -320,7 +722,11 @@
      "address": "Plac Wolnica 1",
      "website": "https://etnomuzeum.eu/",
      "openingHours": "Tu-Su 10:00-19:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q194616",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/233371578",
@@ -329,7 +735,11 @@
      "lon": 19.93166,
      "address": "Marii Konopnickiej 26",
      "website": "https://manggha.pl/",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q572206",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1025803982",
@@ -339,15 +749,11 @@
      "address": "Rakowicka 22A",
      "website": "https://www.mufo.krakow.pl/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 11:00-19:00",
-     "wikipediaCount": 10
-    },
-    {
-     "id": "relation/16816031",
-     "name": "Muzeum Fotografii w Krakowie",
-     "lat": 50.0704,
-     "lon": 19.93893,
-     "website": "https://www.mufo.krakow.pl/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q9047022",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4031826801",
@@ -357,7 +763,11 @@
      "address": "Rynek Główny 3",
      "website": "https://mnk.pl/oddzial/galeria-sztuki-polskiej/o-oddziale",
      "openingHours": "Su 10:00-16:00; Th 10:00-20:00; Tu, We, Fr, Sa 10:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q7635861",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4443337491",
@@ -366,7 +776,11 @@
      "lon": 19.92493,
      "website": "https://muzeumkrakowa.pl/oddzialy/ulica-pomorska",
      "openingHours": "Apr-Oct: Mo-Su 10:00-17:30; Nov-Mar: Mo-Tu off; We-Su 10:00-17:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q5101500",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/472147189",
@@ -376,7 +790,11 @@
      "address": "Dajwór 18",
      "website": "https://galiciajewishmuseum.org/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q326670",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/153158172",
@@ -384,7 +802,11 @@
      "lat": 50.06384,
      "lon": 19.94102,
      "address": "Floriańska 41",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q998674",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/1765210",
@@ -394,7 +816,11 @@
      "address": "Wita Stwosza 12",
      "website": "https://www.muzeum-ak.pl/",
      "openingHours": "Tu-Su 11:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4793410",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/929760911",
@@ -404,7 +830,11 @@
      "address": "Marszałka Józefa Piłsudskiego",
      "website": "https://mnk.pl/oddzial/muzeum-im-emeryka-hutten-czapskiego",
      "openingHours": "Tu-Sa 10:00-18:00; Su 10:00-16:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1338606",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1332080339",
@@ -414,7 +844,11 @@
      "address": "Rynek Główny 1",
      "website": "https://muzeumkrakowa.pl/oddzialy/rynek-podziemny",
      "openingHours": "Mo-Su 10:00-20:00; Tu 10:00-16:00; Nov-Mar: Mo,We,Th 10:00-19:00; Nov-Mar: Tu 10:00-14:00; Nov-Mar: Fr-Su 10:00-20:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q5420576",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/39357526",
@@ -423,7 +857,13 @@
      "lon": 19.9349,
      "address": "Plac Szczepański 4",
      "openingHours": "Mo-Fr 08:15-18:00; Sa-Su 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q11814864",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/638349014",
@@ -433,7 +873,11 @@
      "address": "Świętego Wawrzyńca 15",
      "website": "https://www.mit.krakow.pl/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6944417",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3988103830",
@@ -442,7 +886,11 @@
      "lon": 19.9345,
      "website": "https://diecezja.pl/muzea-archidiecezji/muzeum-katedralne-na-wawelu/",
      "openingHours": "Nov-Mar Mo-Sa 09:00-16:00; Apr-Oct Mo-Sa 09:00-17:00; PH off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6944418",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4817320821",
@@ -451,7 +899,11 @@
      "lon": 19.9257,
      "website": "http://muzeumwitrazu.pl/",
      "openingHours": "Tu-Sa 11:30-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6944430",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/39393947",
@@ -461,7 +913,12 @@
      "address": "Krupnicza 26",
      "website": "https://mnk.pl/oddzialy/mehoffer/",
      "openingHours": "Tu-Fr 09:00-16:00; Sa 10:00-18:00; Su 10:00-16:00; Mo off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1715072",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "node/475387282",
@@ -471,7 +928,11 @@
      "address": "Plac Szczepański 3a",
      "website": "https://bunkier.art.pl/",
      "openingHours": "Tu-Su 11:00-19:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11699302",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/471557535",
@@ -481,7 +942,11 @@
      "address": "Floriańska 25",
      "website": "http://muzeum.farmacja.uj.edu.pl/",
      "openingHours": "We-Sa 09:30-15:00; Tu 12:00-18:30",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11786965",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12642845285",
@@ -490,7 +955,11 @@
      "lon": 19.93668,
      "website": "https://www.ing.pan.pl/muzeum/muzeum-geologiczne-ing-pan",
      "openingHours": "Th-Fr 10:00-15:00; Sa 10:00-14:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6944411",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/471557583",
@@ -499,7 +968,11 @@
      "lon": 19.93374,
      "website": "https://maius.uj.edu.pl/",
      "openingHours": "Mo-Fr 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11787234",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6732338597",
@@ -507,7 +980,8 @@
      "lat": 50.04729,
      "lon": 19.9513,
      "website": "https://www.cricoteka.pl/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11691646"
     },
     {
      "id": "way/233092298",
@@ -515,7 +989,13 @@
      "lat": 50.05849,
      "lon": 19.92395,
      "address": "Aleja Marszałka Ferdinanda Focha 1",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11710137",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
     },
     {
      "id": "way/30807865",
@@ -525,7 +1005,13 @@
      "address": "Lubicz 16",
      "website": "https://muzeumkrakowa.pl/oddzialy/celestat",
      "openingHours": "We-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q9185653",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/472032760",
@@ -535,7 +1021,144 @@
      "address": "Świętego Sebastiana 9",
      "website": "https://isez.pan.krakow.pl/muzeum.html",
      "openingHours": "Tu-Fr 09:00-15:00; Sa, Su 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q16580065",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/5751039807",
+     "name": "Muzeum Anatomii",
+     "lat": 50.0618,
+     "lon": 19.94595,
+     "website": "http://katedra-anatomii.cm-uj.krakow.pl/o-katedrze/muzeum-katedry/",
+     "wikipediaCount": 2,
+     "wikidataId": "Q11787260",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/152137708",
+     "name": "Muzeum Etnograficzne (Dom Esterki)",
+     "lat": 50.04776,
+     "lon": 19.94383,
+     "website": "https://etnomuzeum.eu/lokalizacje/dom-esterki",
+     "wikipediaCount": 2,
+     "wikidataId": "Q9209287",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/9845902947",
+     "name": "Skarbiec Koronny",
+     "lat": 50.05482,
+     "lon": 19.93693,
+     "website": "https://wawel.krakow.pl/wystawa-stala/skarbiec-koronny",
+     "wikipediaCount": 2,
+     "wikidataId": "Q9337658"
+    },
+    {
+     "id": "node/9015266574",
+     "name": "Wawel Zaginiony",
+     "lat": 50.05409,
+     "lon": 19.9363,
+     "website": "https://wawel.krakow.pl/wystawa-stala/wawel-zaginiony-1",
+     "wikipediaCount": 2,
+     "wikidataId": "Q9371575",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4281228578",
+     "name": "Muzeum i Archiwum Marii Angeli Truszkowskiej",
+     "lat": 50.06137,
+     "lon": 19.94171,
+     "address": "Mikołajska 18",
+     "website": "http://www.muzeum-mat.cssf.opoka.org.pl/",
+     "openingHours": "Tu 14:00-17:00; We-Fr 10:00-14:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11787298",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2319751946",
+     "name": "Muzeum Ogrodu Botanicznego UJ",
+     "lat": 50.0636,
+     "lon": 19.95597,
+     "website": "https://ogrod.uj.edu.pl/ogrod/ekspozycja-muzealna",
+     "openingHours": "Th,Fr 10:00-14:00; Su 11:00-15:00; Oct 15-Apr 15 off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11787105",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6958500807",
+     "name": "Muzeum AGH",
+     "lat": 50.06603,
+     "lon": 19.9222,
+     "address": "Aleja Adama Mickiewicza 30",
+     "website": "https://historia.agh.edu.pl/wiki/Muzeum_AGH",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11786993",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4002989037",
+     "name": "Muzeum Geologiczne WGGiOŚ AGH",
+     "lat": 50.06414,
+     "lon": 19.92314,
+     "address": "Aleja Adama Mickiewicza 30",
+     "website": "http://www.geol.agh.edu.pl/~muzeum/index.php",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11786979",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3545259938",
+     "name": "Muzeum Paleobotaniczne UJ",
+     "lat": 50.0644,
+     "lon": 19.95739,
+     "website": "https://ib.uj.edu.pl/instytut/muzeum",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11787114",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/87527975",
+     "name": "Muzeum Politechniki Krakowskiej",
+     "lat": 50.07269,
+     "lon": 19.94342,
+     "wikipediaCount": 1,
+     "wikidataId": "Q16580041",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/12003544906",
+     "name": "Artemis",
+     "lat": 50.058,
+     "lon": 19.93868,
+     "address": "Poselska 15",
+     "website": "https://www.artemis.art.pl/",
+     "openingHours": "Tu-Fri 11:00-18:00; Sa 11:00-14:00"
     }
    ]
   },

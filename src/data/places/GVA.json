@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "GVA",
- "fetchedAt": "2026-10-16T23:32:51.248Z",
+ "fetchedAt": "2026-10-18T16:22:46.969Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,7 +48,11 @@
      "lat": 46.20738,
      "lon": 6.15589,
      "address": "Jetée du Jet-d'eau",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q684661",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/397737238",
@@ -56,14 +60,89 @@
      "lat": 46.2011,
      "lon": 6.1485,
      "address": "Cour de Saint-Pierre 8",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q666516",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q800819",
+     "name": "Cenevre-Cornavin Garı",
+     "localName": "Genève-Cornavin railway station",
+     "lat": 46.21022,
+     "lon": 6.14245,
+     "wikipediaCount": 21,
+     "wikidataId": "Q800819",
+     "kinds": [
+      "heritage",
+      "office",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q371872",
+     "name": "Reform Anıtı",
+     "localName": "Reformation Wall",
+     "lat": 46.20028,
+     "lon": 6.14556,
+     "wikipediaCount": 20,
+     "wikidataId": "Q371872"
+    },
+    {
+     "id": "wikidata/Q1200920",
+     "name": "Conservatoire de Musique",
+     "lat": 46.2009,
+     "lon": 6.1425,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1200920",
+     "kinds": [
+      "business",
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q555398",
+     "name": "Büyük Tiyatro, Cenevre",
+     "localName": "Grand Théâtre de Genève",
+     "lat": 46.20167,
+     "lon": 6.14278,
+     "wikipediaCount": 12,
+     "wikidataId": "Q555398",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q663110",
+     "name": "Immeuble Clarté",
+     "lat": 46.2,
+     "lon": 6.15667,
+     "wikipediaCount": 12,
+     "wikidataId": "Q663110",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/666867576",
      "name": "Monument Brunswick",
      "lat": 46.20846,
      "lon": 6.14896,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1094083",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1895035255",
@@ -71,14 +150,16 @@
      "lat": 46.20055,
      "lon": 6.14638,
      "website": "https://www.geneve.ch/fr/marronnier-treille",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3294866"
     },
     {
      "id": "node/6228932679",
      "name": "Horloge fleurie",
      "lat": 46.20418,
      "lon": 6.15098,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q926691"
     },
     {
      "id": "node/12467398443",
@@ -118,7 +199,11 @@
      "id": "way/206261038",
      "name": "Chapelle des Maccabées",
      "lat": 46.20106,
-     "lon": 6.14815
+     "lon": 6.14815,
+     "wikidataId": "Q63530582",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/13703620514",
@@ -136,7 +221,11 @@
      "id": "way/79211037",
      "name": "Église du Sacré-Coeur",
      "lat": 46.20054,
-     "lon": 6.14156
+     "lon": 6.14156,
+     "wikidataId": "Q55382092",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/5734016022",
@@ -204,7 +293,11 @@
      "id": "way/118832299",
      "name": "Tour de l'Ile",
      "lat": 46.20498,
-     "lon": 6.14324
+     "lon": 6.14324,
+     "wikidataId": "Q29701352",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1495935656",
@@ -233,7 +326,24 @@
      "address": "Rue Charles-Galland 2",
      "website": "https://mahmah.ch/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q679075",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q663025",
+     "name": "Natural History Museum of Geneva",
+     "lat": 46.1989,
+     "lon": 6.1583,
+     "wikipediaCount": 14,
+     "wikidataId": "Q663025",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/13592046657",
@@ -243,7 +353,12 @@
      "address": "Boulevard Carl-Vogt 67",
      "website": "https://www.meg.ch/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1955752",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/15256715",
@@ -253,7 +368,12 @@
      "address": "Place de Neuve",
      "website": "https://mahmah.ch/",
      "openingHours": "We-Fr 14:00-19:00; Sa-Su 11:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q673396",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/79393933",
@@ -263,7 +383,12 @@
      "address": "Rue des Délices 25",
      "website": "https://www.bge-geneve.ch/voltaire",
      "openingHours": "\"sur rendez-vous\"",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3152229",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "way/79211035",
@@ -272,7 +397,12 @@
      "lon": 6.14834,
      "website": "https://www.musee-reforme.ch/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q584164",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4681396472",
@@ -282,7 +412,12 @@
      "address": "Rue Jean-Calvin 10",
      "website": "https://www.barbier-mueller.ch/",
      "openingHours": "11:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3329082",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3436729151",
@@ -292,7 +427,11 @@
      "address": "Rue des Vieux-Grenadiers 7",
      "website": "https://www.patek.com/en/museum/the-patek-philippe-museum",
      "openingHours": "Tu-Fr 14:00-18:00; Sa 10:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3329302",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13603192608",
@@ -301,7 +440,12 @@
      "lon": 6.15338,
      "website": "https://fondation-baur.ch/",
      "openingHours": "Tu-Su 14:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q27481219",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/11599172628",
@@ -479,6 +623,50 @@
      "name": "Cité du Temps",
      "lat": 46.20554,
      "lon": 6.14483
+    },
+    {
+     "id": "node/13543175601",
+     "name": "Gallery Brulhart",
+     "lat": 46.20474,
+     "lon": 6.16105
+    },
+    {
+     "id": "node/13197176078",
+     "name": "Genève Enchères",
+     "lat": 46.21093,
+     "lon": 6.14758
+    },
+    {
+     "id": "node/2415293356",
+     "name": "Le balcon",
+     "lat": 46.20032,
+     "lon": 6.13944,
+     "address": "Rue du Vieux-Billard 2"
+    },
+    {
+     "id": "node/12033313504",
+     "name": "SEP",
+     "lat": 46.184,
+     "lon": 6.14215
+    },
+    {
+     "id": "node/12033250761",
+     "name": "Strategies Obliques",
+     "lat": 46.18588,
+     "lon": 6.14082
+    },
+    {
+     "id": "node/12771744810",
+     "name": "ViiVa",
+     "lat": 46.21193,
+     "lon": 6.1418
+    },
+    {
+     "id": "node/977660891",
+     "name": "Yellow corner",
+     "lat": 46.20121,
+     "lon": 6.14957,
+     "address": "Rue de la Fontaine 45"
     }
    ]
   },
@@ -869,6 +1057,7 @@
      "website": "https://www.cafecalico.ch/",
      "openingHours": "Mo-Fr 07:30-18:00; Sa 09:00-18:00; Su 09:00-16:00",
      "cuisine": "coffee shop, coffee",
+     "wikidataId": "Q141214700",
      "detailed": true
     },
     {
@@ -1488,7 +1677,8 @@
      "lat": 46.20397,
      "lon": 6.136,
      "address": "Place des Volontaires 4",
-     "website": "https://usine.ch/"
+     "website": "https://usine.ch/",
+     "wikidataId": "Q3204847"
     },
     {
      "id": "node/12264663401",

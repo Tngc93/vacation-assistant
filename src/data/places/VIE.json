@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "VIE",
- "fetchedAt": "2026-10-16T23:29:44.108Z",
+ "fetchedAt": "2026-10-18T16:21:57.466Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,12 +43,29 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q131330",
+     "name": "Schönbrunn Sarayı",
+     "localName": "Schönbrunn Palace",
+     "lat": 48.18479,
+     "lon": 16.31227,
+     "wikipediaCount": 63,
+     "wikidataId": "Q131330",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
      "id": "way/546340540",
      "name": "Belvedere",
      "lat": 48.19328,
      "lon": 16.38051,
      "website": "https://www.belvedere.at/",
-     "wikipediaCount": 60
+     "wikipediaCount": 60,
+     "wikidataId": "Q211818",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/212496461",
@@ -59,7 +76,12 @@
      "address": "Stephansplatz 3",
      "website": "https://www.stephanskirche.at/",
      "openingHours": "Mo-Sa 06:00-22:00; Su 07:00-22:00",
-     "wikipediaCount": 59
+     "wikipediaCount": 59,
+     "wikidataId": "Q5943",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/37675404",
@@ -68,14 +90,14 @@
      "lon": 16.36556,
      "website": "https://www.geschichtewiki.wien.gv.at/Schweizertor",
      "openingHours": "24/7",
-     "wikipediaCount": 54
-    },
-    {
-     "id": "relation/3898175",
-     "name": "Hofburg",
-     "lat": 48.20633,
-     "lon": 16.3658,
-     "wikipediaCount": 54
+     "wikipediaCount": 54,
+     "wikidataId": "Q46242",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/8097595",
@@ -84,7 +106,54 @@
      "lon": 16.36921,
      "address": "Opernring 2",
      "website": "https://www.wiener-staatsoper.at/",
-     "wikipediaCount": 53
+     "wikipediaCount": 53,
+     "wikidataId": "Q209937",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q185741",
+     "name": "Ernst Happel Stadyumu",
+     "localName": "Ernst-Happel-Stadion",
+     "lat": 48.20722,
+     "lon": 16.42083,
+     "wikipediaCount": 51,
+     "wikidataId": "Q185741",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q46232",
+     "name": "Vienna Ring Road",
+     "lat": 48.2046,
+     "lon": 16.3627,
+     "wikipediaCount": 44,
+     "wikidataId": "Q46232",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q308720",
+     "name": "Viyana Ulusal Tiyatrosu",
+     "localName": "Burgtheater",
+     "lat": 48.21028,
+     "lon": 16.36139,
+     "wikipediaCount": 42,
+     "wikidataId": "Q308720",
+     "kinds": [
+      "business",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/8097149",
@@ -93,7 +162,12 @@
      "lon": 16.3718,
      "address": "Karlsplatz 10",
      "website": "https://karlskirche.at/",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q408847",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/11101",
@@ -102,7 +176,12 @@
      "lon": 16.35732,
      "address": "Rathausplatz 1",
      "website": "https://www.wien.gv.at/verwaltung/rathaus",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q686468",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "node/76469807",
@@ -110,7 +189,31 @@
      "lat": 48.20738,
      "lon": 16.39394,
      "address": "Kegelgasse 36-38",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q493126",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q697300",
+     "name": "Viyana Merkez Tren İstasyonu",
+     "localName": "Wien Hauptbahnhof",
+     "lat": 48.185,
+     "lon": 16.37778,
+     "wikipediaCount": 35,
+     "wikidataId": "Q697300",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q264752",
+     "name": "Prater",
+     "lat": 48.21611,
+     "lon": 16.39556,
+     "wikipediaCount": 34,
+     "wikidataId": "Q264752"
     },
     {
      "id": "way/25577405",
@@ -119,7 +222,14 @@
      "lon": 16.37276,
      "address": "Musikvereinsplatz 1",
      "website": "https://www.musikverein.at/",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q686720",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "node/250063134",
@@ -128,7 +238,8 @@
      "lon": 16.37017,
      "website": "https://www.kapuzinergruft.com/",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q662652"
     },
     {
      "id": "way/9858714",
@@ -138,7 +249,37 @@
      "address": "Rooseveltplatz",
      "website": "https://www.votivkirche.at/",
      "openingHours": "Tu-Fr 10:00-16:00; Sa 11:00-19:00; Su 09:00-13:00",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q254476",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q374336",
+     "name": "Theater an der Wien",
+     "lat": 48.19968,
+     "lon": 16.36393,
+     "wikipediaCount": 32,
+     "wikidataId": "Q374336",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q871525",
+     "name": "Vindobona",
+     "lat": 48.21083,
+     "lon": 16.37028,
+     "wikipediaCount": 32,
+     "wikidataId": "Q871525",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
     },
     {
      "id": "node/62626088",
@@ -147,7 +288,13 @@
      "lon": 16.36671,
      "address": "Michaelerplatz 1",
      "website": "https://www.srs.at/",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q269273",
+     "kinds": [
+      "business",
+      "school",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/335982323",
@@ -155,7 +302,51 @@
      "lat": 48.20319,
      "lon": 16.3586,
      "website": "https://www.mqw.at/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q699943",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q694747",
+     "name": "Volksoper",
+     "localName": "Vienna Volksoper",
+     "lat": 48.2245,
+     "lon": 16.3504,
+     "wikipediaCount": 26,
+     "wikidataId": "Q694747",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q279260",
+     "name": "Hotel Sacher",
+     "localName": "Hotel Sacher Vienna",
+     "lat": 48.20389,
+     "lon": 16.36944,
+     "wikipediaCount": 25,
+     "wikidataId": "Q279260",
+     "kinds": [
+      "business",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q253663",
+     "name": "Stadttempel",
+     "lat": 48.21165,
+     "lon": 16.37483,
+     "wikipediaCount": 25,
+     "wikidataId": "Q253663",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/319734659",
@@ -166,14 +357,23 @@
      "website": "https://cafecentral.wien/",
      "openingHours": "Mo-Sa 08:00-21:00; PH,Su 10:00-21:00",
      "cuisine": "german",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q694757",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/276645373",
      "name": "Heldenplatz",
      "lat": 48.20609,
      "lon": 16.36401,
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q700128",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "relation/54286",
@@ -182,7 +382,23 @@
      "lon": 16.35845,
      "address": "Dr.-Karl-Renner-Ring 3",
      "website": "https://www.parlament.gv.at/",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q702121",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q700753",
+     "name": "Karlsplatz",
+     "lat": 48.1992,
+     "lon": 16.37,
+     "wikipediaCount": 23,
+     "wikidataId": "Q700753",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/97979331",
@@ -190,14 +406,46 @@
      "lat": 48.21665,
      "lon": 16.39589,
      "website": "https://www.wienerriesenrad.com/",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q697578",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "way/107803504",
      "name": "Pestsäule",
      "lat": 48.20871,
      "lon": 16.36979,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q688614",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q698145",
+     "name": "Vienna West railway station",
+     "lat": 48.19667,
+     "lon": 16.33778,
+     "wikipediaCount": 21,
+     "wikidataId": "Q698145",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q701662",
+     "name": "Stephansplatz",
+     "lat": 48.2084,
+     "lon": 16.3725,
+     "wikipediaCount": 20,
+     "wikidataId": "Q701662",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/9703218",
@@ -205,7 +453,14 @@
      "lat": 48.21155,
      "lon": 16.38377,
      "address": "Uraniastraße 1",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q259553",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage",
+      "school"
+     ]
     },
     {
      "id": "way/23329490",
@@ -214,14 +469,64 @@
      "lon": 16.36998,
      "address": "Petersplatz 6",
      "website": "http://www.peterskirche.at/st-peter/",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q693884",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q700199",
+     "name": "Aziz Mikâil Kilisesi",
+     "localName": "St. Michael's Church",
+     "lat": 48.208,
+     "lon": 16.367,
+     "wikipediaCount": 19,
+     "wikidataId": "Q700199",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q699947",
+     "name": "Kärntner Straße",
+     "lat": 48.20784,
+     "lon": 16.37183,
+     "wikipediaCount": 18,
+     "wikidataId": "Q699947",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/30322134",
      "name": "Graben",
      "lat": 48.20851,
      "lon": 16.37026,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q699937",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q695126",
+     "name": "Konzerthaus",
+     "lat": 48.20088,
+     "lon": 16.37738,
+     "wikipediaCount": 17,
+     "wikidataId": "Q695126",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "way/29320733",
@@ -229,7 +534,73 @@
      "lat": 48.19835,
      "lon": 16.36258,
      "website": "https://www.wien.gv.at/freizeit/einkaufen/maerkte/lebensmittel/naschmarkt/index.html",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q417645",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q38956584",
+     "name": "Gürtel",
+     "localName": "Gürtel, Vienna",
+     "lat": 48.19917,
+     "lon": 16.33869,
+     "wikipediaCount": 16,
+     "wikidataId": "Q38956584",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q167619",
+     "name": "Theater in der Josefstadt",
+     "lat": 48.20953,
+     "lon": 16.35108,
+     "wikipediaCount": 16,
+     "wikidataId": "Q167619",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q180080",
+     "name": "Vienna General Hospital",
+     "lat": 48.22,
+     "lon": 16.3475,
+     "wikipediaCount": 16,
+     "wikidataId": "Q180080",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q877570",
+     "name": "Avusturya Posta Tasarruf Bankası",
+     "localName": "Austrian Postal Savings Bank",
+     "lat": 48.21,
+     "lon": 16.3803,
+     "wikipediaCount": 15,
+     "wikidataId": "Q877570",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q699952",
+     "name": "Maria-Theresien-Platz",
+     "lat": 48.2046,
+     "lon": 16.3605,
+     "wikipediaCount": 15,
+     "wikidataId": "Q699952",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "relation/5541555",
@@ -237,7 +608,25 @@
      "lat": 48.1969,
      "lon": 16.37693,
      "address": "Rennweg 2",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q651030",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q688555",
+     "name": "Volkstheater",
+     "lat": 48.20517,
+     "lon": 16.357,
+     "wikipediaCount": 15,
+     "wikidataId": "Q688555",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/23329567",
@@ -245,53 +634,71 @@
      "lat": 48.22232,
      "lon": 16.37999,
      "address": "Obere Augartenstraße 1",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q873332",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q693869",
+     "name": "Augustinian Church",
+     "lat": 48.20567,
+     "lon": 16.3677,
+     "wikipediaCount": 14,
+     "wikidataId": "Q693869",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q877699",
+     "name": "Carltheater",
+     "lat": 48.215,
+     "lon": 16.3844,
+     "wikipediaCount": 14,
+     "wikidataId": "Q877699",
+     "kinds": [
+      "business",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q254425",
+     "name": "Demel",
+     "lat": 48.20861,
+     "lon": 16.36722,
+     "wikipediaCount": 14,
+     "wikidataId": "Q254425",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/110548902",
      "name": "Haas-Haus",
      "lat": 48.20836,
      "lon": 16.37153,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q697572",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
-     "id": "way/107222887",
-     "name": "Looshaus",
-     "lat": 48.20846,
-     "lon": 16.36669,
-     "wikipediaCount": 13
-    },
-    {
-     "id": "relation/151292",
-     "name": "Imperial",
-     "lat": 48.20108,
-     "lon": 16.37306,
-     "address": "Kärntner Ring 16",
-     "website": "https://www.marriott.com/de/hotels/vieil-hotel-imperial-a-luxury-collection-hotel-vienna/overview/",
-     "wikipediaCount": 12
-    },
-    {
-     "id": "way/158249818",
-     "name": "Palais Liechtenstein (Gartenpalais)",
-     "lat": 48.22263,
-     "lon": 16.3596,
-     "website": "https://www.palaisliechtenstein.com/",
-     "wikipediaCount": 12
-    },
-    {
-     "id": "way/106609620",
-     "name": "Haus Wittgenstein",
-     "lat": 48.20345,
-     "lon": 16.39427,
-     "website": "http://www.haus-wittgenstein.at/",
-     "wikipediaCount": 11
-    },
-    {
-     "id": "way/121542619",
-     "name": "Palais Coburg",
-     "lat": 48.20592,
-     "lon": 16.37659,
-     "wikipediaCount": 11
+     "id": "wikidata/Q688472",
+     "name": "Jesuit Church",
+     "lat": 48.20905,
+     "lon": 16.37762,
+     "wikipediaCount": 14,
+     "wikidataId": "Q688472",
+     "kinds": [
+      "religious"
+     ]
     }
    ]
   },
@@ -307,17 +714,12 @@
      "address": "Heldenplatz",
      "website": "https://www.hofjagd-ruestkammer.at/",
      "openingHours": "Th,Sa-Tu 10:00-18:00, Fr 10:00-21:00",
-     "wikipediaCount": 51
-    },
-    {
-     "id": "relation/20165",
-     "name": "Kunsthistorisches Museum",
-     "lat": 48.20374,
-     "lon": 16.36178,
-     "address": "Burgring 5",
-     "website": "https://www.khm.at/",
-     "openingHours": "Tu-We, Fr-Su 10:00-18:00; Th 10:00-21:00",
-     "wikipediaCount": 51
+     "wikipediaCount": 51,
+     "wikidataId": "Q95569",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/60438337",
@@ -327,7 +729,11 @@
      "address": "Albertinaplatz 1",
      "website": "https://www.albertina.at/",
      "openingHours": "PH,Th,Sa-Tu 10:00-18:00; We,Fr 10:00-21:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q371908",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1334741420",
@@ -336,7 +742,12 @@
      "lon": 16.36669,
      "website": "https://www.onb.ac.at/",
      "openingHours": "Tu-Su 10:00 - 18:00; Th 10:00 - 21:00",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q304037",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "relation/11187",
@@ -346,7 +757,40 @@
      "address": "Burgring 7",
      "website": "https://www.nhm-wien.ac.at/",
      "openingHours": "Th-Mo 09:00-18:30; We 09:00-21:00",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q688704",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q414219",
+     "name": "Viyana Güzel Sanatlar Akademisi",
+     "localName": "Academy of Fine Arts Vienna",
+     "lat": 48.20139,
+     "lon": 16.36528,
+     "wikipediaCount": 37,
+     "wikidataId": "Q414219",
+     "kinds": [
+      "business",
+      "museum",
+      "school",
+      "university"
+     ]
+    },
+    {
+     "id": "wikidata/Q303139",
+     "name": "Avusturya Belverede Galerisi",
+     "localName": "Belvedere",
+     "lat": 48.19139,
+     "lon": 16.38083,
+     "wikipediaCount": 30,
+     "wikidataId": "Q303139",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/4465113",
@@ -356,7 +800,11 @@
      "address": "Arsenal 3",
      "website": "https://www.hgm.at/",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q700751",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25371168",
@@ -366,7 +814,12 @@
      "address": "Friedrichstraße 12",
      "website": "https://www.secession.at/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q265129",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/328630899",
@@ -375,7 +828,12 @@
      "lon": 16.3818,
      "address": "Stubenring 5",
      "website": "https://www.mak.at/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q478455",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/20411606",
@@ -385,7 +843,11 @@
      "address": "Museumsplatz 1",
      "website": "https://www.leopoldmuseum.org/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q59435",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/327119607",
@@ -395,7 +857,12 @@
      "address": "Herrengasse 9",
      "website": "https://www.onb.ac.at/museen/esperantomuseum/",
      "openingHours": "Jun-Sep Fr-We 10:00-18:00; Jun-Sep Th 10:00-21:00; Oct-May Tu,We,Fr-Su 10:00-18:00; Oct-May Th 10:00-21:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q686443",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/169186435",
@@ -405,7 +872,12 @@
      "address": "Domgasse 5",
      "website": "https://www.mozarthausvienna.at/",
      "openingHours": "Mo-Su 10:00-19:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q387667",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/8097556",
@@ -415,7 +887,11 @@
      "address": "Museumsplatz 1",
      "website": "https://www.mumok.at/",
      "openingHours": "Tu-Su 10:00-18:00; Mo off",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q689951",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/928953625",
@@ -425,7 +901,11 @@
      "address": "Berggasse 19",
      "website": "https://www.freud-museum.at/",
      "openingHours": "We-Mo,PH 10:00-18:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q694810",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/316524224",
@@ -435,7 +915,11 @@
      "address": "Museumsplatz 1",
      "website": "https://www.azw.at/",
      "openingHours": "Mo-Su 10:00-19:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q635399",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/441696312",
@@ -444,7 +928,35 @@
      "lon": 16.36585,
      "website": "https://www.kaiserliche-schatzkammer.at/",
      "openingHours": "We-Mo,PH 09:00-17:30",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q317701",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/12042381527",
+     "name": "Atelier Maria am Gestade",
+     "lat": 48.21252,
+     "lon": 16.36966,
+     "wikipediaCount": 14,
+     "wikidataId": "Q701837",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1824069",
+     "name": "Lihtenştayn Sarayı",
+     "localName": "Liechtenstein Museum",
+     "lat": 48.2225,
+     "lon": 16.3594,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1824069",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/7771899",
@@ -454,7 +966,11 @@
      "address": "Heldenplatz",
      "website": "https://www.weltmuseumwien.at/",
      "openingHours": "PH,Th-Mo 10:00-18:00; Tu 10:00-21:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q686488",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/8097153",
@@ -464,7 +980,12 @@
      "address": "Karlsplatz 8",
      "website": "https://www.wienmuseum.at/",
      "openingHours": "Sa,Su 10:00-18:00; Tu,We,Fr 09:00-18:00; Th 09:00-21:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q505873",
+     "kinds": [
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "way/327119600",
@@ -473,7 +994,11 @@
      "lon": 16.36554,
      "website": "https://www.onb.ac.at/museen/globenmuseum",
      "openingHours": "Jun-Sep Fr-We 10:00-18:00; Jun-Sep Th 10:00-21:00; Oct-May Tu,We,Fr-Su 10:00-18:00; Oct-May Th 10:00-21:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q666713",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25577419",
@@ -483,7 +1008,12 @@
      "address": "Karlsplatz 5",
      "website": "https://www.k-haus.at/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q284902",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/2509778",
@@ -493,7 +1023,13 @@
      "address": "Himmelpfortgasse 8",
      "website": "https://www.belvedere.at/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q874905",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "node/10138397168",
@@ -503,7 +1039,11 @@
      "address": "Seilerstätte 30",
      "website": "https://www.hausdermusik.com/",
      "openingHours": "Mo-Su 10:00-22:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q351228",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4185985589",
@@ -512,7 +1052,13 @@
      "lon": 16.35631,
      "address": "Währinger Straße 25",
      "website": "https://www.josephinum.ac.at/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1466545",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/277816743",
@@ -522,17 +1068,11 @@
      "address": "Museumsplatz 1",
      "website": "https://kunsthallewien.at/",
      "openingHours": "Tu-We, Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 8
-    },
-    {
-     "id": "way/388754282",
-     "name": "Kunsthalle Wien Karlsplatz",
-     "lat": 48.20026,
-     "lon": 16.36767,
-     "address": "Treitlstraße 2",
-     "website": "https://kunsthallewien.at/",
-     "openingHours": "Tu-Su 10:00-18:00, Th 10:00-20:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q677548",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/165759321",
@@ -542,7 +1082,12 @@
      "address": "Arsenalstraße 1",
      "website": "https://www.belvedere.at/besuch/belvedere-21",
      "openingHours": "Th-Su 11:00-18:00; We 11:00-21:00; PH 11:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q214022",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/324725228",
@@ -551,7 +1096,11 @@
      "lon": 16.36511,
      "website": "https://www.khm.at/besuchen/sammlungen/ephesos-museum/",
      "openingHours": "Tu-Su 10:00-18:00, Th 10:00-21:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q672373",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11357982388",
@@ -560,17 +1109,11 @@
      "lon": 16.36922,
      "website": "https://www.jmw.at/",
      "openingHours": "Mo-Th,Su 10:00-18:00; Fr 10:00-17:00",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/319734181",
-     "name": "Jüdisches Museum Wien",
-     "lat": 48.20713,
-     "lon": 16.36929,
-     "address": "Dorotheergasse 11",
-     "website": "https://www.jmw.at/",
-     "openingHours": "Mo-Fr, Su 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1716827",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1970749517",
@@ -580,7 +1123,150 @@
      "address": "Nußdorfer Straße 54",
      "website": "https://www.wienmuseum.at/schubert_geburtshaus",
      "openingHours": "Tu-Su 10:00-13:00,14:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q28653671",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/9245795",
+     "name": "Theseustempel",
+     "lat": 48.20841,
+     "lon": 16.36169,
+     "website": "https://www.geschichtewiki.wien.gv.at/Theseustempel",
+     "openingHours": "PH,Mo-Su 11:00-18:00",
+     "wikipediaCount": 5,
+     "wikidataId": "Q1491188",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "node/666750600",
+     "name": "Volkskundemuseum",
+     "lat": 48.21315,
+     "lon": 16.35055,
+     "address": "Laudongasse 17",
+     "website": "https://www.volkskundemuseum.at/",
+     "openingHours": "24/7 closed \"until renovation complete in June 2026\"",
+     "wikipediaCount": 5,
+     "wikidataId": "Q306678",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4102220512",
+     "name": "Museum der Johann Strauss Dynastie",
+     "lat": 48.22002,
+     "lon": 16.36282,
+     "address": "Müllnergasse 3",
+     "website": "https://www.strauss-museum.at/",
+     "wikipediaCount": 5,
+     "wikidataId": "Q19829543",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/5146842774",
+     "name": "Papyrusmuseum",
+     "lat": 48.20531,
+     "lon": 16.36504,
+     "address": "Heldenplatz 25",
+     "website": "https://www.onb.ac.at/museen/papyrusmuseum/",
+     "wikipediaCount": 5,
+     "wikidataId": "Q2051125",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/600721260",
+     "name": "Österreichisches Gesellschafts- und Wirtschaftsmuseum",
+     "lat": 48.18393,
+     "lon": 16.35691,
+     "address": "Vogelsanggasse 36",
+     "website": "https://www.gwm.museum/",
+     "openingHours": "Mo-Tu, Th-Fr 09:00-14:00; We 09:00-20:00",
+     "wikipediaCount": 4,
+     "wikidataId": "Q306628",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/412510725",
+     "name": "Arnold Schönberg Center",
+     "lat": 48.19911,
+     "lon": 16.37765,
+     "address": "Schwarzenbergplatz 6",
+     "website": "https://www.schoenberg.at/",
+     "wikipediaCount": 4,
+     "wikidataId": "Q696262",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9983513676",
+     "name": "Albertina modern",
+     "lat": 48.20065,
+     "lon": 16.37161,
+     "website": "https://www.albertina.at/en/albertina-modern/",
+     "openingHours": "Mo-Su 10:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q83423523",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3332991286",
+     "name": "Beethoven Pasqualatihaus",
+     "lat": 48.21239,
+     "lon": 16.36226,
+     "address": "Mölker Bastei 8",
+     "website": "https://www.wienmuseum.at/de/standorte/beethoven-pasqualatihaus",
+     "openingHours": "Tu-Su,PH 10:00-13:00,14:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1434092",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "relation/1606455",
+     "name": "Möbelmuseum Wien",
+     "lat": 48.19871,
+     "lon": 16.34692,
+     "address": "Andreasgasse 7",
+     "website": "https://www.moebelmuseumwien.at/",
+     "openingHours": "Tu-Sa 10:00-23:00; Su 10:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1623194",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1868804009",
+     "name": "Museum für Verhütung und Schwangerschaftsabbruch",
+     "lat": 48.19488,
+     "lon": 16.339,
+     "address": "Mariahilfer Gürtel 37",
+     "website": "https://www.muvs.org/",
+     "openingHours": "We-Su 14:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1954684",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -1024,6 +1710,16 @@
      "detailed": true
     },
     {
+     "id": "node/344481901",
+     "name": "Aida",
+     "lat": 48.22511,
+     "lon": 16.3619,
+     "website": "https://aida.at/",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/367817578",
      "name": "Aida",
      "lat": 48.21744,
@@ -1249,6 +1945,7 @@
      "website": "http://www.braeunerhof.at/",
      "openingHours": "Mo-Fr 08:00-19:00; Sa 08:00-18:00; Su,PH 10:00-18:00",
      "cuisine": "regional",
+     "wikidataId": "Q5017228",
      "detailed": true
     },
     {
@@ -1271,6 +1968,10 @@
      "website": "https://cafecentral.wien/",
      "openingHours": "Mo-Sa 08:00-21:00; PH,Su 10:00-21:00",
      "cuisine": "german",
+     "wikidataId": "Q694757",
+     "kinds": [
+      "business"
+     ],
      "detailed": true
     },
     {
@@ -1282,17 +1983,6 @@
      "website": "https://www.cafederprovinz.at/",
      "openingHours": "Mo-Su 08:00-23:00",
      "cuisine": "breakfast, crepe",
-     "detailed": true
-    },
-    {
-     "id": "node/373550671",
-     "name": "Cafe Drechsler",
-     "lat": 48.19847,
-     "lon": 16.36242,
-     "address": "Linke Wienzeile 22",
-     "website": "http://www.cafedrechsler.at/",
-     "openingHours": "Mo-Fr 08:00-16:00; Sa,Su 09:00-17:00",
-     "cuisine": "austrian",
      "detailed": true
     }
    ]
@@ -1738,6 +2428,7 @@
      "address": "Liliengasse 2",
      "website": "https://www.edenbar.at/",
      "openingHours": "We-Sa 20:00+",
+     "wikidataId": "Q1283530",
      "detailed": true
     },
     {
@@ -1748,6 +2439,7 @@
      "address": "Augartenbrücke 1",
      "website": "https://flex.at/",
      "openingHours": "Th-Sa 23:00-06:00",
+     "wikidataId": "Q1288474",
      "detailed": true
     },
     {
@@ -1758,6 +2450,7 @@
      "address": "Praterstern 5",
      "website": "https://flucc.at/",
      "openingHours": "Mo-Su 20:00-06:00",
+     "wikidataId": "Q27829539",
      "detailed": true
     },
     {
