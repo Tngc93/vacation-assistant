@@ -6,6 +6,7 @@ import { linkTags, type KindTag } from "./kinds";
 import { fetchCoordinates, fetchKinds } from "./landmarks";
 import type { Fetcher } from "./overpass";
 import { compareRanked } from "./rank";
+import { sameNameOnce } from "./twins";
 import { fetchWikipediaCounts } from "./wikidata";
 
 /**
@@ -65,6 +66,8 @@ export async function refreshKinds(
         return tags.length ? { ...rest, kinds: tags as KindTag[] } : rest;
       })
       .sort(compareRanked);
+    // A relink can make two objects the same item (Big Ben and Elizabeth Tower): keep it once, at its best rank.
+    entry.places = sameNameOnce(entry.places);
   }
   return { file: { ...file, categories }, relinked, missing };
 }

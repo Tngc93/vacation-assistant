@@ -102,4 +102,11 @@ describe("wrong links, residences and seasonal places (rules.ts, place-overrides
     const august = await stop("2026-08-14", "2026-08-18");
     expect(august).toMatchObject({ durationMin: 120, exterior: null });
   });
+
+  it("plans Big Ben once, from outside, for 30 minutes", async () => {
+    const { plan } = await planFor("LON");
+    const stops = plan.days.flatMap((d) => d.stops).filter((s) => /Big Ben|Elizabeth Tower/.test(s.name));
+    expect(stops).toHaveLength(1);
+    expect(stops[0]).toMatchObject({ durationMin: 30, exterior: { note: null } });
+  });
 });

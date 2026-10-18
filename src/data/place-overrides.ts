@@ -65,7 +65,22 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
   },
   LON: {
     exclude: [{ qid: "Q184619", name: "New Scotland Yard", reason: "Police headquarters; its languages come from the institution." }],
+    relink: [
+      {
+        osmId: "node/1802652184",
+        from: "Q37733713",
+        qid: "Q41225",
+        name: "Big Ben → Elizabeth Tower",
+        reason: "OSM's item is a redirect to Elizabeth Tower (Q41225), which OSM also maps as its own object: one place.",
+      },
+    ],
     exteriorOnly: [
+      {
+        qid: "Q41225",
+        name: "Big Ben (Elizabeth Tower)",
+        reason: "Tours inside are in practice open only to UK residents.",
+        visitMin: 30,
+      },
       {
         qid: "Q42182",
         name: "Buckingham Palace",
