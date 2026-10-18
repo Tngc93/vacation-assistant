@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { PlacesFile, StoredPlace } from "./file";
 import type { KindTag } from "./kinds";
-import { applyPlaceRules, isSight, isWalkThrough } from "./rules";
+import { applyPlaceRules, hasWrongLink, isResidence, isSight, isWalkThrough } from "./rules";
 
 const sight = (qid: string, kinds: KindTag[] = [], wikidataOnly = true): StoredPlace => ({
   id: wikidataOnly ? `wikidata/${qid}` : `way/${qid.slice(1)}`,
@@ -70,6 +70,36 @@ describe("sight rules", () => {
   });
 });
 
+describe("wrong links (rule 1) and residences (rule 2)", () => {
+  it("drops links to items far away, to events, people and ideas without a coordinate, and to universities", () => {
+    expect(hasWrongLink(sight("Q12246908", ["farFromItem"], false), "see")).toBe(true);
+    expect(hasWrongLink(sight("Q178841", ["noCoordinate", "notPlace"], false), "see")).toBe(true);
+    expect(hasWrongLink(sight("Q183231", ["noCoordinate", "organization"], false), "see")).toBe(true);
+    expect(hasWrongLink(sight("Q214654", ["heritage", "organization", "university"], false), "museum")).toBe(true);
+  });
+
+  it("keeps a museum's own organization item, organizations at the place, sights that are also universities, and Wikidata places", () => {
+    expect(hasWrongLink(sight("Q223373", ["noCoordinate", "organization"], false), "museum")).toBe(false);
+    expect(hasWrongLink(sight("Q23308", ["organization"], false), "see")).toBe(false);
+    expect(hasWrongLink(sight("Q1", ["concertHall", "university"], false), "see")).toBe(false);
+    // Trevi Fountain: Wikidata files it under "concept" too, but it has a coordinate.
+    expect(hasWrongLink(sight("Q185382", ["notPlace"], false), "see")).toBe(false);
+    expect(hasWrongLink(sight("Q2", ["noCoordinate", "notPlace"]), "see")).toBe(false);
+  });
+
+  it("lets a relink override settle a link", () => {
+    const relinked = { ...sight("Q856559", ["noCoordinate", "organization"], false), id: "node/429638456" };
+    const relink = [{ osmId: "node/429638456", from: "Q204221", qid: "Q856559", name: "Book of Kells", reason: "test" }];
+    expect(hasWrongLink(relinked, "see", { relink })).toBe(false);
+  });
+
+  it("finds official residences and seats of government, unless also a museum or ruins", () => {
+    expect(isResidence(sight("Q188190", ["heritage", "palace", "residence"]))).toBe(true);
+    expect(isResidence(sight("Q42182", ["museum", "palace", "residence"]))).toBe(false);
+    expect(isResidence(sight("Q62408", ["heritage", "office"]))).toBe(false);
+  });
+});
+
 describe("applyPlaceRules", () => {
   const file = (see: StoredPlace[]): PlacesFile =>
     ({
@@ -98,11 +128,45 @@ describe("applyPlaceRules", () => {
     expect(see.places[0]).toEqual({ id: "way/550", name: "Q550", lat: 48.86, lon: 2.35, wikidataId: "Q550", walkThrough: true });
     expect(see.places.some((p) => "kinds" in p)).toBe(false);
     expect(shown.categories.museum.status).toBe("missing");
+    // A wrong link loses its count and moves down; a residence is shown but marked as no visit.
+    const ranked = applyPlaceRules(
+      file([
+        { ...sight("Q178841", ["noCoordinate", "notPlace"], false), wikipediaCount: 65 },
+        { ...sight("Q188190", ["palace", "residence"]), wikipediaCount: 64 },
+        { ...sight("Q10", [], false), wikipediaCount: 20 },
+      ]),
+    );
+    if (ranked.categories.see.status !== "ok") throw new Error("see");
+    expect(ranked.categories.see.places.map((p) => [p.name, p.wikipediaCount, p.wikidataId, p.noVisit])).toEqual([
+      ["Q188190", 64, "Q188190", true],
+      ["Q10", 20, "Q10", undefined],
+      ["Q178841", undefined, undefined, undefined],
+    ]);
     // An included place can carry its own visit length.
     const moulin = applyPlaceRules(file([sight("Q151030", ["business", "musicVenue"])]));
     expect(moulin.categories.see.status === "ok" && moulin.categories.see.places[0]).toMatchObject({ wikidataId: "Q151030", visitMin: 30 });
     // Food and drink are not sights: the rules leave them alone.
     const food = shown.categories.restaurant;
     expect(food.status === "ok" && food.places).toHaveLength(1);
+  });
+});
+
+describe("overrides on read", () => {
+  const one = (place: StoredPlace, code: string) =>
+    ({
+      version: 3,
+      cityCode: code,
+      categories: { see: { status: "ok", wikipediaCountsAvailable: true, places: [place] } },
+    }) as unknown as PlacesFile;
+  const first = (f: ReturnType<typeof applyPlaceRules>) => (f.categories.see.status === "ok" ? f.categories.see.places[0] : undefined);
+
+  it("opens a residence visitors can enter, and marks exterior-only places with their months and note", () => {
+    expect(first(applyPlaceRules(one(sight("Q505950", ["palace", "residence"]), "EDI")))?.noVisit).toBeUndefined();
+    expect(first(applyPlaceRules(one(sight("Q936633", ["office", "palace"], false), "PAR")))?.exterior).toEqual({});
+    expect(first(applyPlaceRules(one(sight("Q42182", ["museum", "palace", "residence"]), "LON")))?.exterior).toEqual({
+      visitMin: 30,
+      openMonths: [7, 8, 9],
+      note: "Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma",
+    });
   });
 });

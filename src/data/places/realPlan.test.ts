@@ -10,7 +10,7 @@ import { sameNameOnce } from "@/lib/places/twins";
  * The plan on the real stored data, read the way the plan page reads it (rules and overrides applied):
  * a 4-night trip without a chosen flight (half days at both ends).
  */
-async function planFor(code: string) {
+async function planFor(code: string, depart = "2026-11-14", ret = "2026-11-18") {
   const destination = findDestination(code)!;
   const file = (await loadPlacesFile(code))!;
   const take = (ids: readonly CategoryId[]): PlanPlace[] =>
@@ -19,8 +19,8 @@ async function planFor(code: string) {
       return entry.status === "ok" ? entry.places.map((p) => ({ ...p, category })) : [];
     });
   const input: ItineraryInput = {
-    depart: "2026-11-14",
-    return: "2026-11-18",
+    depart,
+    return: ret,
     timeZone: destination.timeZone,
     flight: null,
     daytime: take(DAYTIME_CATEGORIES),
@@ -62,5 +62,44 @@ describe("the Bataclan and the Moulin Rouge (place-overrides.ts)", () => {
     expect(stops.some((s) => /bataclan/i.test(s.name))).toBe(false);
     const moulin = stops.find((s) => s.id === "wikidata/Q151030");
     if (moulin) expect(moulin.durationMin).toBe(30);
+  });
+});
+
+describe("wrong links, residences and seasonal places (rules.ts, place-overrides.ts)", () => {
+  const guide = async (code: string) =>
+    Object.values((await loadPlacesFile(code))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+
+  it("drops the Wikipedia count of wrong links, and relinks 9/11 Memorial and Book of Kells", async () => {
+    const paris = await guide("PAR");
+    for (const name of ["Espace Sorbonne 4", "Pendule de Foucault"]) {
+      expect(paris.find((p) => p.name === name)?.wikipediaCount, name).toBeUndefined();
+    }
+    expect((await guide("NYC")).find((p) => p.id === "way/278033604")).toMatchObject({ wikidataId: "Q1136137" });
+    expect((await guide("NYC")).find((p) => p.id === "way/278033604")?.wikipediaCount).toBeGreaterThanOrEqual(30);
+    expect((await guide("DUB")).find((p) => p.id === "node/429638456")).toMatchObject({ wikidataId: "Q856559" });
+  });
+
+  it("never plans the Élysée, the Apostolic Palace or 10 Downing Street, but keeps them in the guide", async () => {
+    for (const [code, qid] of [
+      ["PAR", "Q188190"],
+      ["ROM", "Q145093"],
+      ["LON", "Q169101"],
+    ] as const) {
+      const place = (await guide(code)).find((p) => p.wikidataId === qid);
+      expect(place?.noVisit, `${code} ${qid}`).toBe(true);
+      const { plan } = await planFor(code);
+      expect(plan.days.flatMap((d) => d.stops).some((s) => s.id === place!.id)).toBe(false);
+    }
+  });
+
+  it("visits Buckingham Palace inside in August, and from outside for 30 minutes in November", async () => {
+    const stop = async (depart: string, ret: string) => {
+      const { plan } = await planFor("LON", depart, ret);
+      return plan.days.flatMap((d) => d.stops).find((s) => s.id === "relation/5208404");
+    };
+    const november = await stop("2026-11-14", "2026-11-18");
+    expect(november).toMatchObject({ durationMin: 30, exterior: { note: "Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma" } });
+    const august = await stop("2026-08-14", "2026-08-18");
+    expect(august).toMatchObject({ durationMin: 120, exterior: null });
   });
 });

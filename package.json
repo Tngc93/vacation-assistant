@@ -15,9 +15,11 @@
     "data:visa": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/fetch-visa.mjs",
     "test:e2e": "playwright test",
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
+    "data:kinds": "tsx scripts/refresh-kinds.mts",
     "data:places": "tsx scripts/fetch-places.mts",
     "check:bundle": "node scripts/check-client-bundle.mjs",
-    "verify:partner-links": "tsx scripts/verify-partner-links.mts"
+    "verify:partner-links": "tsx scripts/verify-partner-links.mts",
+    "verify:place-links": "tsx scripts/verify-place-links.mts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.2",

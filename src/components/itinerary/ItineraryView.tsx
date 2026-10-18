@@ -90,6 +90,12 @@ function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRe
           {stop.kind === "evening" ? "AKŞAM · " : ""}
           {CATEGORIES[stop.category].label.toLocaleUpperCase("tr")} · {durationText(stop.durationMin).toLocaleUpperCase("tr")} · TAHMİNİ
         </Caption>
+        {stop.exterior ? (
+          <Caption as="p" tone="sea" className="mt-0.5">
+            YALNIZCA DIŞARIDAN
+          </Caption>
+        ) : null}
+        {stop.exterior?.note ? <p className="mt-0.5 text-caption text-ink-muted">{stop.exterior.note}</p> : null}
         {stop.closesSoon ? (
           <Caption as="p" tone="warn" className="mt-0.5">
             KAPANIŞA YAKIN · {withLocative(stop.closesSoon).toLocaleUpperCase("tr")} KAPANIR

@@ -43,20 +43,6 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/429638456",
-     "name": "Book of Kells",
-     "lat": 53.3439,
-     "lon": -6.25649,
-     "address": "College Street",
-     "website": "https://www.visittrinity.ie/book-of-kells-experience/",
-     "openingHours": "Mo-Sa 08:30-17:00; Su 09:00-17:00",
-     "wikipediaCount": 52,
-     "wikidataId": "Q204221",
-     "kinds": [
-      "heritage"
-     ]
-    },
-    {
      "id": "wikidata/Q244402",
      "name": "Aviva Stadyumu",
      "localName": "Aviva Stadium",
@@ -106,6 +92,7 @@
      "wikipediaCount": 33,
      "wikidataId": "Q846365",
      "kinds": [
+      "organization",
       "religious"
      ]
     },
@@ -121,7 +108,8 @@
      "wikidataId": "Q1672830",
      "kinds": [
       "business",
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -130,7 +118,10 @@
      "lat": 53.3498,
      "lon": -6.26025,
      "wikipediaCount": 31,
-     "wikidataId": "Q1134365"
+     "wikidataId": "Q1134365",
+     "kinds": [
+      "notPlace"
+     ]
     },
     {
      "id": "wikidata/Q247595",
@@ -159,6 +150,21 @@
      ]
     },
     {
+     "id": "node/429638456",
+     "name": "Book of Kells",
+     "lat": 53.3439,
+     "lon": -6.25649,
+     "address": "College Street",
+     "website": "https://www.visittrinity.ie/book-of-kells-experience/",
+     "openingHours": "Mo-Sa 08:30-17:00; Su 09:00-17:00",
+     "wikipediaCount": 27,
+     "wikidataId": "Q856559",
+     "kinds": [
+      "business",
+      "organization"
+     ]
+    },
+    {
      "id": "wikidata/Q1432605",
      "name": "Saint Stephen's Green",
      "lat": 53.33806,
@@ -173,7 +179,11 @@
      "lat": 53.33333,
      "lon": -6.27722,
      "wikipediaCount": 25,
-     "wikidataId": "Q2482"
+     "wikidataId": "Q2482",
+     "kinds": [
+      "notPlace",
+      "organization"
+     ]
     },
     {
      "id": "wikidata/Q1193916",
@@ -194,7 +204,10 @@
      "address": "O'Connell Street Lower",
      "openingHours": "Mo-Sa 08:30-18:00",
      "wikipediaCount": 22,
-     "wikidataId": "Q1339254"
+     "wikidataId": "Q1339254",
+     "kinds": [
+      "organization"
+     ]
     },
     {
      "id": "wikidata/Q1439960",
@@ -212,7 +225,8 @@
      "wikipediaCount": 21,
      "wikidataId": "Q920229",
      "kinds": [
-      "adminArea"
+      "adminArea",
+      "organization"
      ]
     },
     {
@@ -246,7 +260,8 @@
      "wikipediaCount": 19,
      "wikidataId": "Q220027",
      "kinds": [
-      "attraction"
+      "attraction",
+      "organization"
      ]
     },
     {
@@ -283,7 +298,9 @@
      "wikidataId": "Q110587",
      "kinds": [
       "business",
-      "school"
+      "organization",
+      "school",
+      "university"
      ]
     },
     {
@@ -360,6 +377,7 @@
      "wikipediaCount": 14,
      "wikidataId": "Q924750",
      "kinds": [
+      "organization",
       "religious"
      ]
     },
@@ -396,7 +414,8 @@
      "wikipediaCount": 12,
      "wikidataId": "Q261012",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -459,7 +478,10 @@
      "lat": 53.34028,
      "lon": -6.25778,
      "wikipediaCount": 11,
-     "wikidataId": "Q383752"
+     "wikidataId": "Q383752",
+     "kinds": [
+      "residence"
+     ]
     },
     {
      "id": "wikidata/Q917842",
@@ -467,7 +489,10 @@
      "lat": 53.36167,
      "lon": -6.2675,
      "wikipediaCount": 11,
-     "wikidataId": "Q917842"
+     "wikidataId": "Q917842",
+     "kinds": [
+      "organization"
+     ]
     },
     {
      "id": "wikidata/Q7493317",
@@ -478,7 +503,8 @@
      "wikidataId": "Q7493317",
      "kinds": [
       "business",
-      "hotel"
+      "hotel",
+      "organization"
      ]
     },
     {
@@ -500,7 +526,8 @@
      "wikipediaCount": 9,
      "wikidataId": "Q1238147",
      "kinds": [
-      "business"
+      "business",
+      "organization"
      ]
     },
     {
@@ -525,7 +552,10 @@
      "website": "https://botanicgardens.ie/",
      "openingHours": "Mo-Su 10:00-17:00",
      "wikipediaCount": 7,
-     "wikidataId": "Q841037"
+     "wikidataId": "Q841037",
+     "kinds": [
+      "organization"
+     ]
     },
     {
      "id": "way/40498842",
@@ -533,7 +563,10 @@
      "lat": 53.34904,
      "lon": -6.30312,
      "wikipediaCount": 7,
-     "wikidataId": "Q3308144"
+     "wikidataId": "Q3308144",
+     "kinds": [
+      "notPlace"
+     ]
     },
     {
      "id": "node/9873301517",
@@ -546,7 +579,8 @@
      "wikipediaCount": 6,
      "wikidataId": "Q2811931",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -561,7 +595,8 @@
      "wikipediaCount": 5,
      "wikidataId": "Q17006015",
      "kinds": [
-      "business"
+      "business",
+      "organization"
      ]
     },
     {
@@ -572,7 +607,10 @@
      "address": "Military Road",
      "website": "https://rhk.ie/",
      "wikipediaCount": 5,
-     "wikidataId": "Q12859559"
+     "wikidataId": "Q12859559",
+     "kinds": [
+      "organization"
+     ]
     },
     {
      "id": "relation/18631966",
@@ -590,7 +628,10 @@
      "address": "Newmarket 13-17",
      "website": "https://teelingwhiskey.com/",
      "wikipediaCount": 3,
-     "wikidataId": "Q28408323"
+     "wikidataId": "Q28408323",
+     "kinds": [
+      "organization"
+     ]
     },
     {
      "id": "node/906593798",
@@ -626,7 +667,8 @@
      "wikipediaCount": 1,
      "wikidataId": "Q91453292",
      "kinds": [
-      "adminArea"
+      "adminArea",
+      "notPlace"
      ]
     },
     {
@@ -664,7 +706,8 @@
      "wikipediaCount": 29,
      "wikidataId": "Q2018379",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -679,7 +722,8 @@
      "wikidataId": "Q391976",
      "kinds": [
       "business",
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -693,7 +737,8 @@
      "wikipediaCount": 25,
      "wikidataId": "Q1672840",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -708,7 +753,8 @@
      "wikidataId": "Q1538285",
      "kinds": [
       "business",
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -735,7 +781,8 @@
      "wikidataId": "Q496040",
      "kinds": [
       "business",
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -749,7 +796,8 @@
      "wikipediaCount": 9,
      "wikidataId": "Q5311029",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -764,7 +812,9 @@
      "kinds": [
       "business",
       "museum",
-      "school"
+      "organization",
+      "school",
+      "university"
      ]
     },
     {
@@ -778,7 +828,8 @@
      "wikipediaCount": 8,
      "wikidataId": "Q29831711",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -791,7 +842,8 @@
      "wikipediaCount": 7,
      "wikidataId": "Q3040529",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -805,7 +857,8 @@
      "wikipediaCount": 6,
      "wikidataId": "Q85787148",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -830,7 +883,8 @@
      "wikipediaCount": 5,
      "wikidataId": "Q6033599",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -844,7 +898,8 @@
      "wikipediaCount": 5,
      "wikidataId": "Q6137026",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -856,7 +911,8 @@
      "wikipediaCount": 5,
      "wikidataId": "Q5804730",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -869,7 +925,8 @@
      "wikipediaCount": 4,
      "wikidataId": "Q6974474",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -883,7 +940,8 @@
      "wikidataId": "Q7730763",
      "kinds": [
       "business",
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -897,7 +955,8 @@
      "wikipediaCount": 3,
      "wikidataId": "Q7747675",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -910,7 +969,8 @@
      "wikipediaCount": 3,
      "wikidataId": "Q6070876",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -923,7 +983,9 @@
      "wikipediaCount": 2,
      "wikidataId": "Q17104224",
      "kinds": [
-      "museum"
+      "museum",
+      "notPlace",
+      "organization"
      ]
     },
     {
@@ -936,7 +998,8 @@
      "wikipediaCount": 2,
      "wikidataId": "Q60747125",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -950,7 +1013,8 @@
      "wikipediaCount": 1,
      "wikidataId": "Q48743302",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -964,7 +1028,8 @@
      "wikipediaCount": 1,
      "wikidataId": "Q15228799",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {
@@ -976,7 +1041,8 @@
      "openingHours": "Tu-Sa 11:00-18:00; Su 13:00-18:00",
      "wikidataId": "Q113635945",
      "kinds": [
-      "museum"
+      "museum",
+      "organization"
      ]
     },
     {

@@ -118,6 +118,28 @@ export async function fetchKinds(
   return kinds;
 }
 
+/** All coordinates (P625) of these items, in batches; an item without one maps to []. Throws if any batch fails. */
+export async function fetchCoordinates(
+  qids: readonly string[],
+  { fetcher = externalFetch }: { fetcher?: Fetcher } = {},
+): Promise<Map<string, Array<{ lat: number; lon: number }>>> {
+  const unique = [...new Set(qids)].filter((q) => /^Q[1-9]\d*$/.test(q)).sort();
+  const coords = new Map<string, Array<{ lat: number; lon: number }>>(unique.map((q) => [q, []]));
+  for (let i = 0; i < unique.length; i += KINDS_BATCH) {
+    const query = `SELECT ?item ?coord WHERE {
+  VALUES ?item { ${unique.slice(i, i + KINDS_BATCH).map((q) => `wd:${q}`).join(" ")} }
+  ?item wdt:P625 ?coord .
+}`;
+    const rows = (await sparql(query, fetcher)) as { results?: { bindings?: Binding[] } };
+    for (const b of rows.results?.bindings ?? []) {
+      const at = point(b.coord?.value);
+      const item = qidOf(b.item?.value);
+      if (at && item) coords.get(item)?.push(at);
+    }
+  }
+  return coords;
+}
+
 export type Landmark = {
   qid: string;
   /** Turkish label, else English. */
