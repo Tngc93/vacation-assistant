@@ -48,10 +48,28 @@ export type CityOverrides = {
 };
 
 export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
+  ATH: {
+    exclude: [
+      { qid: "Q2070605", name: "Athena Parthenos", reason: "A lost statue: nothing stands there to see." },
+      { qid: "Q755221", name: "Athena Promachos", reason: "A lost statue: nothing stands there to see." },
+      { qid: "Q844930", name: "Αθήνα (ancient city)", reason: "The ancient city as a whole, not a place to visit; its sites are listed one by one." },
+    ],
+  },
+  BCN: {
+    exteriorOnly: [{ qid: "Q631075", name: "Arc de Triomf", reason: "A triumphal arch, seen from outside.", visitMin: 15 }],
+  },
   BER: {
-    exteriorOnly: [{ qid: "Q317027", name: "Bundeskanzleramt", reason: "The chancellery: no visits inside." }],
+    exteriorOnly: [
+      { qid: "Q317027", name: "Bundeskanzleramt", reason: "The chancellery: no visits inside." },
+      { qid: "Q82425", name: "Brandenburg Gate", reason: "A city gate, seen from outside.", visitMin: 20 },
+    ],
+  },
+  BRU: {
+    include: [{ qid: "Q180901", name: "Atomium", reason: "The symbol of Brussels, 5 km from the centre.", remote: true }],
+    exteriorOnly: [{ qid: "Q152072", name: "Manneken Pis", reason: "A small statue, seen in minutes.", visitMin: 15 }],
   },
   DUB: {
+    exteriorOnly: [{ qid: "Q1134365", name: "Spire of Dublin", reason: "A monument, seen from outside.", visitMin: 15 }],
     relink: [
       {
         osmId: "node/429638456",
@@ -66,8 +84,20 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
   EDI: {
     open: [{ qid: "Q505950", name: "Palace of Holyroodhouse", reason: "A royal residence, open to visitors most of the year." }],
   },
+  GVA: {
+    exteriorOnly: [{ qid: "Q684661", name: "Jet d'eau", reason: "A fountain, seen from the shore.", visitMin: 20 }],
+  },
   HAM: {
     include: [{ qid: "Q673223", name: "Elbphilharmonie", reason: "Concert hall without a heritage listing, but the city's landmark." }],
+  },
+  HEL: {
+    exteriorOnly: [{ qid: "Q523268", name: "Havis Amanda", reason: "A fountain statue, seen from outside.", visitMin: 15 }],
+  },
+  LED: {
+    exteriorOnly: [
+      { qid: "Q672444", name: "Bronze Horseman", reason: "A statue, seen from outside.", visitMin: 20 },
+      { qid: "Q907366", name: "Alexander Column", reason: "A column, seen from outside.", visitMin: 15 },
+    ],
   },
   LON: {
     exclude: [{ qid: "Q184619", name: "New Scotland Yard", reason: "Police headquarters; its languages come from the institution." }],
@@ -95,10 +125,25 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
         openMonths: [7, 8, 9],
         note: "Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma",
       },
+      { qid: "Q842089", name: "Nelson's Column", reason: "A column, seen from outside.", visitMin: 15 },
     ],
   },
   MOW: {
-    exteriorOnly: [{ qid: "Q844124", name: "White House (Moscow)", reason: "Seat of the government: no visits inside." }],
+    open: [
+      {
+        qid: "Q133274",
+        name: "Moscow Kremlin",
+        reason: "Also a residence, but its cathedrals, museums and the Armoury are open to visitors.",
+        visitMin: 180,
+      },
+    ],
+    exteriorOnly: [
+      { qid: "Q844124", name: "White House (Moscow)", reason: "Seat of the government: no visits inside." },
+      { qid: "Q147881", name: "Tsar Cannon", reason: "A cannon on show, seen in minutes.", visitMin: 15 },
+      { qid: "Q147875", name: "Tsar Bell", reason: "A bell on show, seen in minutes.", visitMin: 15 },
+      { qid: "Q2075146", name: "Tomb of the Unknown Soldier", reason: "A memorial, seen from outside.", visitMin: 15 },
+    ],
+    visit: [{ qid: "Q191414", name: "Lenin's Mausoleum", reason: "The visit inside is short, queue included.", visitMin: 30 }],
   },
   MUC: {
     exclude: [{ qid: "Q102400", name: "Oktoberfest", reason: "An event in late September and October, not a place to visit." }],
@@ -131,9 +176,28 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
       },
       { qid: "Q193582", name: "Assemblée nationale", reason: "The parliament as an institution; its building is Palais Bourbon." },
     ],
-    exteriorOnly: [{ qid: "Q936633", name: "Palais Bourbon", reason: "Visits only on a deputy's invitation." }],
+    exteriorOnly: [
+      { qid: "Q936633", name: "Palais Bourbon", reason: "Visits only on a deputy's invitation." },
+      { qid: "Q631104", name: "Arc de Triomphe du Carrousel", reason: "A triumphal arch, seen from outside.", visitMin: 15 },
+    ],
+  },
+  PRG: {
+    exteriorOnly: [{ qid: "Q1630131", name: "Lennon Wall", reason: "A wall, seen from outside.", visitMin: 20 }],
+  },
+  RIX: {
+    exteriorOnly: [{ qid: "Q337179", name: "Freedom Monument", reason: "A monument, seen from outside.", visitMin: 15 }],
+  },
+  ROM: {
+    exteriorOnly: [
+      { qid: "Q185382", name: "Trevi Fountain", reason: "A fountain, seen from the square.", visitMin: 30 },
+      { qid: "Q848072", name: "Spanish Steps", reason: "A staircase, seen and climbed in half an hour.", visitMin: 30 },
+      { qid: "Q265384", name: "Column of Marcus Aurelius", reason: "A column, seen from outside.", visitMin: 15 },
+    ],
   },
   SOF: {
     exteriorOnly: [{ qid: "Q639704", name: "National Assembly of Bulgaria", reason: "The parliament: no regular visits inside." }],
+  },
+  WAW: {
+    exteriorOnly: [{ qid: "Q958585", name: "Sigismund's Column", reason: "A column, seen from outside.", visitMin: 15 }],
   },
 };

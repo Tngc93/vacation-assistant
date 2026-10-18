@@ -110,3 +110,24 @@ describe("wrong links, residences and seasonal places (rules.ts, place-overrides
     expect(stops[0]).toMatchObject({ durationMin: 30, exterior: { note: null } });
   });
 });
+
+describe("outside-only landmarks and the Atomium (place-overrides.ts)", () => {
+  const stopsIn = async (code: string) => (await planFor(code)).plan.days.flatMap((d) => d.stops);
+
+  it("keeps fountains, statues and gates short, and the Kremlin long", async () => {
+    expect((await stopsIn("ROM")).find((s) => s.name === "Fontana di Trevi")).toMatchObject({ durationMin: 30, exterior: { note: null } });
+    expect((await stopsIn("BER")).find((s) => s.name === "Brandenburg Kapısı")).toMatchObject({ durationMin: 20 });
+    const moscow = await stopsIn("MOW");
+    expect(moscow.find((s) => s.id === "relation/1360641")).toMatchObject({ durationMin: 180, exterior: null });
+    const lenin = moscow.find((s) => s.id === "relation/3272726");
+    if (lenin) expect(lenin.durationMin).toBe(30);
+  });
+
+  it("plans the Atomium as an area of its own, with a transport note, and drops lost statues in Athens", async () => {
+    const brussels = (await planFor("BRU")).plan.days;
+    const day = brussels.find((d) => d.stops.some((s) => s.id === "wikidata/Q180901"))!;
+    expect(day.stops[0]).toMatchObject({ id: "wikidata/Q180901", remote: true });
+    const athens = await stopsIn("ATH");
+    expect(athens.some((s) => ["Athena Parthenos", "Αθήνα"].includes(s.name) || s.name.includes("Προμάχου"))).toBe(false);
+  });
+});
