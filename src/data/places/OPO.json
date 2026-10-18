@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "OPO",
- "fetchedAt": "2026-10-16T23:21:01.770Z",
+ "fetchedAt": "2026-10-18T16:09:36.319Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,31 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q271454",
+     "name": "Estádio do Dragão",
+     "lat": 41.16176,
+     "lon": -8.58393,
+     "wikipediaCount": 43,
+     "wikidataId": "Q271454",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1322447",
+     "name": "I. Luis Köprüsü",
+     "localName": "Luiz I Bridge",
+     "lat": 41.13972,
+     "lon": -8.60944,
+     "wikipediaCount": 29,
+     "wikidataId": "Q1322447",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
      "id": "way/603359226",
      "name": "Casa da Música",
      "lat": 41.15888,
@@ -50,7 +75,15 @@
      "address": "Avenida da Boavista 604-610",
      "website": "https://www.casadamusica.com/",
      "openingHours": "Mo-Su 09:30-18:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q917274",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/210461448",
@@ -58,7 +91,24 @@
      "lat": 41.1428,
      "lon": -8.61121,
      "openingHours": "Apr-Oct 09:00-18:30; Nov-Mar 09:00-17:30",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1441255",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1550899",
+     "name": "Ponte de D. Maria Pia",
+     "lat": 41.13982,
+     "lon": -8.59702,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1550899",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "relation/5424595",
@@ -67,7 +117,13 @@
      "lon": -8.61586,
      "address": "Rua da Alegria",
      "website": "https://cciporto.com/",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1371109",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
     },
     {
      "id": "way/1159533444",
@@ -76,7 +132,12 @@
      "lon": -8.60952,
      "website": "https://www.cp.pt/passageiros/pt/consultar-horarios/estacoes/porto-sao-bento",
      "openingHours": "Mo-Fr 00:00-00:45,04:15-24:00; Sa,Su 00:00-00:45,05:20-24:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q579250",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "node/12514092225",
@@ -85,14 +146,55 @@
      "lon": -8.61485,
      "website": "https://www.livrarialello.pt/",
      "openingHours": "Mo-Su 09:30-19:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q3408689",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2781524",
+     "name": "Church of Saint Ildefonso",
+     "lat": 41.14629,
+     "lon": -8.60648,
+     "wikipediaCount": 18,
+     "wikidataId": "Q2781524",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1549939",
+     "name": "Church of São Francisco",
+     "lat": 41.141,
+     "lon": -8.616,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1549939",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q18642",
+     "name": "Clérigos Church",
+     "lat": 41.14587,
+     "lon": -8.61401,
+     "wikipediaCount": 16,
+     "wikidataId": "Q18642",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "node/3398944840",
      "name": "Barcos Rabelo",
      "lat": 41.13826,
      "lon": -8.61238,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q446387"
     },
     {
      "id": "relation/3012085",
@@ -102,7 +204,12 @@
      "address": "Rua do Clube dos Fenianos",
      "website": "https://www.cm-porto.pt/",
      "openingHours": "Mo-Sa 09:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q10262921",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/238893532",
@@ -112,7 +219,12 @@
      "address": "Largo Primeiro de Dezembro 155",
      "website": "https://santaclaraporto.pt/",
      "openingHours": "Mo-Su 09:00-13:00,14:00-18:00; PH off",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3819477",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/4673533",
@@ -122,14 +234,20 @@
      "address": "Largo de Avis",
      "website": "https://culturanorte.gov.pt/patrimonio/mosteiro-da-serra-do-pilar/",
      "openingHours": "Nov-Mar Tu-Su 10:00-17:30; Apr-Oct Tu-Su 10:00-18:30; PH off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q10332614",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/31573133",
      "name": "Funicular dos Guindais",
      "lat": 41.14096,
      "lon": -8.60951,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2228562"
     },
     {
      "id": "node/12453652303",
@@ -138,7 +256,12 @@
      "lon": -8.60664,
      "website": "https://www.cafemajestic.com/",
      "openingHours": "Mo-Sa 09:00-23:30",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3208239",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "way/247168260",
@@ -147,14 +270,23 @@
      "lon": -8.61463,
      "website": "https://www.torredosclerigos.pt/",
      "openingHours": "Mo-Su 09:00-19:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q20986654",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/185005666",
      "name": "Feitoria Britânica",
      "lat": 41.14159,
      "lon": -8.61374,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1402131",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/2880744",
@@ -164,7 +296,15 @@
      "address": "Terreiro da Sé",
      "website": "http://www.diocese-porto.pt/index.php?option=com_content&view=article&id=3812:visitas-paco-episcopal&catid=76:noticias",
      "openingHours": "Mo-Su 09:00-13:00,14:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1107442",
+     "kinds": [
+      "heritage",
+      "museum",
+      "office",
+      "palace",
+      "religious"
+     ]
     },
     {
      "id": "way/210757796",
@@ -173,7 +313,17 @@
      "lon": -8.60754,
      "address": "Praça da Batalha",
      "website": "https://www.tnsj.pt/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1109226",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/244599647",
@@ -183,7 +333,11 @@
      "address": "Rua de Dom Manuel II",
      "website": "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal",
      "openingHours": "Oct-Mar: Mo-Su 08:00-19:00; Apr-Sep: Mo-Su 08:00-21:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q10306385",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/107436948",
@@ -192,7 +346,8 @@
      "lon": -8.61291,
      "website": "https://gaiacablecar.com/",
      "openingHours": "Apr 26-Sep 24 10:00-20:00; Mar 24-Apr 25 10:00-19:00; Sep 25-Oct 24 10:00-19:00; Oct 25-Mar 23 10:00-18:00; Dec 25 off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q10379193"
     },
     {
      "id": "way/365610859",
@@ -200,7 +355,12 @@
      "lat": 41.14983,
      "lon": -8.60555,
      "openingHours": "Tu 03:00-05:15",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q9695712",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/241300113",
@@ -208,14 +368,23 @@
      "lat": 41.14465,
      "lon": -8.61896,
      "address": "Calçada das Virtudes s/n",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1058768",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/286005374",
      "name": "Igreja da Santíssima Trindade",
      "lat": 41.15107,
      "lon": -8.61029,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q10300304",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/395125611",
@@ -225,7 +394,12 @@
      "address": "Rua de Sá da Bandeira 11",
      "website": "http://www.igrejacongregados.com/",
      "openingHours": "Mo-Su 07:15-18:30",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q10300949",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/3046626",
@@ -234,7 +408,11 @@
      "lon": -8.60712,
      "website": "https://mercadobolhao.pt/",
      "openingHours": "Mo-Sa 08:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q10328805",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/224769221",
@@ -244,7 +422,15 @@
      "address": "Praça de Dom João I",
      "website": "https://www.teatromunicipaldoporto.pt/",
      "openingHours": "Tu-Sa 11:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3826131",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/216425163",
@@ -252,14 +438,179 @@
      "lat": 41.14372,
      "lon": -8.62161,
      "address": "Rua de Miragaia s/n",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5066766",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/211297740",
      "name": "Palácio de São João Novo",
      "lat": 41.14251,
      "lon": -8.61773,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7128888",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/211737428",
+     "name": "Capela dos Alfaiates",
+     "lat": 41.14324,
+     "lon": -8.60744,
+     "openingHours": "Mo-Sa 14:00-17:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3818151",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "way/211015151",
+     "name": "Palacete de Belomonte",
+     "lat": 41.14251,
+     "lon": -8.61621,
+     "address": "Rua de Belomonte",
+     "wikipediaCount": 3,
+     "wikidataId": "Q7126291",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/210470750",
+     "name": "Torre Medieval",
+     "lat": 41.14275,
+     "lon": -8.61222,
+     "wikipediaCount": 3,
+     "wikidataId": "Q7826968",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "node/6540216049",
+     "name": "Arqueossítio da Rua de Dom Hugo",
+     "lat": 41.14294,
+     "lon": -8.61059,
+     "address": "Rua de Dom Hugo 5",
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/arqueossitio-da-rua-de-dom-hugo",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 2,
+     "wikidataId": "Q4795783",
+     "kinds": [
+      "museum",
+      "ruins"
+     ]
+    },
+    {
+     "id": "relation/2880925",
+     "name": "Museu Municipal Casa do Infante",
+     "lat": 41.14072,
+     "lon": -8.61425,
+     "address": "Rua da Alfândega 10",
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/casa-do-infante",
+     "openingHours": "Tu-Su 10:00-17:30; PH off",
+     "wikipediaCount": 2,
+     "wikidataId": "Q5047957",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/229317992",
+     "name": "Palacete dos Viscondes de Balsemão",
+     "lat": 41.14901,
+     "lon": -8.61548,
+     "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/palacete-dos-viscondes-de-balsemao",
+     "wikipediaCount": 2,
+     "wikidataId": "Q7126293",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "way/548346478",
+     "name": "Casa e Jardim do Campo Pequeno",
+     "lat": 41.15149,
+     "lon": -8.62282,
+     "address": "Rua da Maternidade 11",
+     "wikipediaCount": 2,
+     "wikidataId": "Q20986719",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/255998376",
+     "name": "Casa Tait",
+     "lat": 41.14778,
+     "lon": -8.62855,
+     "wikipediaCount": 2,
+     "wikidataId": "Q5047889",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/210580232",
+     "name": "Hard Club",
+     "lat": 41.14201,
+     "lon": -8.61491,
+     "wikipediaCount": 2,
+     "wikidataId": "Q10328761",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/546354460",
+     "name": "Junta de Freguesia do Bonfim",
+     "lat": 41.14796,
+     "lon": -8.59832,
+     "address": "Campo 24 de Agosto 294",
+     "website": "https://jfbonfim.pt/",
+     "openingHours": "Mo-Fr 09:00-12:30,13:30-17:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q18481414",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "way/255778741",
+     "name": "Museu do Romântico",
+     "lat": 41.14762,
+     "lon": -8.62845,
+     "address": "Rua de Entre-Quintas 220",
+     "website": "https://museudoporto.pt/estacao/museu-romantico/",
+     "openingHours": "Tu-Sa 10:00-17:30; PH off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333620",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/5292435759",
+     "name": "Antigo Local do Castelo de Gaia",
+     "lat": 41.13964,
+     "lon": -8.62441,
+     "wikipediaCount": 1,
+     "wikidataId": "Q9705209",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     }
    ]
   },
@@ -276,7 +627,13 @@
      "address": "Rua de Ferreira Borges",
      "website": "http://www.palaciodabolsa.com/",
      "openingHours": "Nov-Mar: Mo-Su 09:00-12:30,14:00-17:30; Apr-Oct: Mo-Su 09:00-18:30; Dec 25 off; Jan 1 off",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1371109",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
     },
     {
      "id": "way/261265893",
@@ -286,14 +643,24 @@
      "address": "Rua de Dom Manuel II 44",
      "website": "https://museusoaresdosreis.gov.pt/",
      "openingHours": "Tu 14:00-18:00; We-Su 10:00-18:00; Jan 1 off; May 1 off; Dec 1 off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1141468",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2883918",
      "name": "Antiga Cadeia e Tribunal da Relação do Porto",
      "lat": 41.14462,
      "lon": -8.61596,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q9672205",
+     "kinds": [
+      "heritage",
+      "museum",
+      "unesco"
+     ]
     },
     {
      "id": "way/332479849",
@@ -303,7 +670,12 @@
      "address": "Alameda Basílio Teles 51",
      "website": "https://www.museudocarroelectrico.pt/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q908989",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4586091689",
@@ -313,7 +685,11 @@
      "address": "Largo Amor de Perdição",
      "website": "https://cpf.pt/",
      "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 15:00-19:00; Jan 01 off; easter off; May 01 off; Dec 25 off; PH 15:00-19:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q18484034",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/210571326",
@@ -323,7 +699,12 @@
      "address": "Rua da Reboleira 33;35;37",
      "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/museu-do-vinho-do-porto",
      "openingHours": "Tu-Su 10:00-17:30; PH off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q81792536",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/210461454",
@@ -333,7 +714,11 @@
      "address": "Rua de Dom Hugo 32",
      "website": "https://museudoporto.pt/estacao/museu-guerra-junqueiro/",
      "openingHours": "Tu-Su 10:00-17:30; PH off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5047775",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/2892472764",
@@ -343,7 +728,11 @@
      "address": "Praça de Carlos Alberto 71",
      "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/gabinete-de-numismatica_3",
      "openingHours": "Tu-Su 10:00-17:30; PH off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q10287828",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1652873556",
@@ -353,7 +742,11 @@
      "address": "Rua de Nossa Senhora de Fátima 291",
      "website": "https://museudoporto.pt/estacao/casa-marta-ortigao-sampaio/",
      "openingHours": "Tu-Su 10:00-17:30; PH off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q9698020",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/167487345",
@@ -361,7 +754,13 @@
      "lat": 41.14304,
      "lon": -8.61164,
      "website": "https://museudoporto.pt/estacao/antiga-casa-da-camara/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4774734",
+     "kinds": [
+      "heritage",
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "way/544594862",
@@ -371,7 +770,11 @@
      "address": "Rua de António Carneiro 363",
      "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/casa-oficina-antonio-carneiro",
      "openingHours": "Tu-Su 10:00-17:30; PH off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q9698031",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/216272583",
@@ -380,7 +783,11 @@
      "lon": -8.62101,
      "website": "https://www.amtc.pt/",
      "openingHours": "Tu-Fr 10:00-13:00, 14:00-18:00; Sa-Su 15:00-19:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q10333960",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2880925",
@@ -390,7 +797,11 @@
      "address": "Rua da Alfândega 10",
      "website": "https://www.cm-porto.pt/cultura/museus-e-arquivos/casa-do-infante",
      "openingHours": "Tu-Su 10:00-17:30; PH off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q5047957",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/449722702",
@@ -399,14 +810,24 @@
      "lon": -8.59498,
      "address": "Rua do Heroísmo 329",
      "website": "https://www.exercito.pt/pt/quem-somos/organizacao/ceme/vceme/dhcm/porto",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6940603",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/255998376",
      "name": "Casa Tait",
      "lat": 41.14778,
      "lon": -8.62855,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q5047889",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/12505592144",
@@ -416,7 +837,11 @@
      "address": "Rua de Belomonte 61",
      "website": "https://marionetasdoporto.pt/museu-das-marionetas-do-porto/",
      "openingHours": "We-Fr 14:00-18:00; Sa-Su 11:00-13:00,14:00-18:00; Jan 01 off; May 01 off; Jun 24 off; Dec 24-25 off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333848",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/255778741",
@@ -426,7 +851,11 @@
      "address": "Rua de Entre-Quintas 220",
      "website": "https://museudoporto.pt/estacao/museu-romantico/",
      "openingHours": "Tu-Sa 10:00-17:30; PH off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10333620",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/266663736",
@@ -436,7 +865,11 @@
      "address": "Rua das Flores 15",
      "website": "https://www.mmipo.pt/",
      "openingHours": "Mo-Su 10:00-17:30; Apr 01-Sep 30 10:00-17:30; Jan 01 off; Dec 24-25 off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q25419284",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6540216045",
@@ -535,6 +968,104 @@
      "lon": -8.61604,
      "website": "https://mhnc.up.pt/laboratorio-ferreira-da-silva/",
      "openingHours": "Tu-Su 10:00-13:00,14:00-18:00"
+    },
+    {
+     "id": "node/2243032374",
+     "name": "Leica Gallery Porto",
+     "lat": 41.14649,
+     "lon": -8.60973,
+     "address": "Rua de Sá da Bandeira 48",
+     "website": "https://pt.leica-camera.com/leica-gallery/",
+     "openingHours": "Mo-Fr 10:00-18:30; Sa 10:00-13:00,14:00-18:30"
+    },
+    {
+     "id": "node/6680293304",
+     "name": "Liga dos Combatentes - Núcleo Museológico do Porto",
+     "lat": 41.14763,
+     "lon": -8.60426,
+     "address": "Rua Formosa 121",
+     "website": "https://www.ligacombatentes.org/museu-do-nucleo-do-porto/",
+     "openingHours": "Mo-Fr 09:00-17:00; Jan 01 off; May 01 off; Dec 25 off"
+    },
+    {
+     "id": "node/11367589672",
+     "name": "Museu da 1ª Demarcação",
+     "lat": 41.13666,
+     "lon": -8.61854,
+     "address": "Alameda da Rua de Serpa Pinto 44B",
+     "website": "https://museurealcompanhiavelha.pt/",
+     "openingHours": "Tu-Fr 10:30-18:30; Sa,Su 11:00-13:00,14:00-18:30"
+    },
+    {
+     "id": "node/9429130947",
+     "name": "Museu da Faculdade de Belas Artes da Universidade do Porto",
+     "lat": 41.14534,
+     "lon": -8.60022,
+     "address": "Avenida de Rodrigues de Freitas 265",
+     "website": "https://visitporto.travel/pt-PT/poi/5cd04b52f979e000011cf7d4/",
+     "openingHours": "Mo-Fr 09:30-13:00,14:00-18:00"
+    },
+    {
+     "id": "node/6549945405",
+     "name": "Museu da Fundação Maria Isabel Guerra Junqueiro e Luís Mesquita de Carvalho",
+     "lat": 41.14228,
+     "lon": -8.61057,
+     "address": "Rua de Dom Hugo 15",
+     "website": "https://visitporto.travel/pt-PT/poi/5cd04b44f979e00001d9a7a6",
+     "openingHours": "Tu-Sa 14:30-17:30"
+    },
+    {
+     "id": "node/6661619777",
+     "name": "Museu de Anatomia Professor Nuno Grande",
+     "lat": 41.14744,
+     "lon": -8.62435,
+     "address": "Rua Jorge Viterbo Ferreira 228",
+     "website": "https://sigarra.up.pt/icbas/pt/uni_geral.unidade_view?pv_unidade=140",
+     "openingHours": "Mo-Fr 09:00-17:00"
+    },
+    {
+     "id": "node/2206214891",
+     "name": "Museu de Arte Sacra e Arqueologia",
+     "lat": 41.14223,
+     "lon": -8.61257,
+     "address": "Largo do Colégio",
+     "website": "https://www.diocese-porto.pt/pt/museu-de-arte-sacra-e-arqueologia/",
+     "openingHours": "Sa 10:00-13:00, 14:00-18:00; PH off; Mo 10:00-17:00; Tu-Fr 09:00-17:00"
+    },
+    {
+     "id": "node/2729914235",
+     "name": "Museu de História Natural e da Ciência da Universidade do Porto - Polo Central",
+     "lat": 41.14617,
+     "lon": -8.61584,
+     "address": "Campo dos Mártires da Pátria 81",
+     "website": "https://mhnc.up.pt/polo-central/",
+     "openingHours": "Tu-Su 10:00-13:00,14:00-18:00"
+    },
+    {
+     "id": "node/4553102628",
+     "name": "Museu do Centro Hospitalar do Porto",
+     "lat": 41.14679,
+     "lon": -8.61818,
+     "address": "Rua Professor Vicente José de Carvalho 3",
+     "website": "http://museu.chporto.pt/",
+     "openingHours": "Mo-Fr 09:00-17:00; PH off"
+    },
+    {
+     "id": "node/12982962850",
+     "name": "Museu do Conflito",
+     "lat": 41.14505,
+     "lon": -8.61781,
+     "address": "Campo dos Mártires da Pátria",
+     "website": "https://www.museuconflito.org/",
+     "openingHours": "Th,Fr 14:00-17:00"
+    },
+    {
+     "id": "node/11423692437",
+     "name": "Museu do Sexo",
+     "lat": 41.15133,
+     "lon": -8.61835,
+     "website": "https://sexmuseumportugal.com/",
+     "openingHours": "10:00-18:00"
     }
    ]
   },
@@ -1646,7 +2177,8 @@
      "lat": 41.14182,
      "lon": -8.61489,
      "address": "Mercado Ferreira Borges",
-     "website": "https://www.hard-club.com/"
+     "website": "https://www.hard-club.com/",
+     "wikidataId": "Q604296"
     },
     {
      "id": "node/2616002805",

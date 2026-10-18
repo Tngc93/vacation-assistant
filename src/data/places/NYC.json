@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "NYC",
- "fetchedAt": "2026-10-17T00:12:22.357Z",
+ "fetchedAt": "2026-10-18T17:08:35.149Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,7 +48,24 @@
      "lat": 40.70569,
      "lon": -73.99636,
      "website": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml",
-     "wikipediaCount": 83
+     "wikipediaCount": 83,
+     "wikidataId": "Q125006",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q11690",
+     "name": "Wall Street",
+     "lat": 40.70618,
+     "lon": -74.00911,
+     "wikipediaCount": 80,
+     "wikidataId": "Q11690",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/713565776",
@@ -57,7 +74,98 @@
      "lon": -74.01319,
      "address": "Fulton Street 285",
      "website": "https://www.wtc.com/",
-     "wikipediaCount": 73
+     "wikipediaCount": 73,
+     "wikidataId": "Q11245",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q11274",
+     "name": "Chrysler Binası",
+     "localName": "Chrysler Building",
+     "lat": 40.75143,
+     "lon": -73.97572,
+     "wikipediaCount": 72,
+     "wikidataId": "Q11274",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q11259",
+     "name": "Times Square",
+     "lat": 40.7575,
+     "lon": -73.98583,
+     "wikipediaCount": 70,
+     "wikidataId": "Q11259",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q11260",
+     "name": "Broadway",
+     "lat": 40.77014,
+     "lon": -73.98207,
+     "wikipediaCount": 60,
+     "wikidataId": "Q11260",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q186125",
+     "name": "Madison Square Garden",
+     "lat": 40.7505,
+     "lon": -73.99345,
+     "wikipediaCount": 56,
+     "wikidataId": "Q186125",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q319821",
+     "name": "Liberty Adası",
+     "localName": "Liberty Island",
+     "lat": 40.69,
+     "lon": -74.045,
+     "wikipediaCount": 55,
+     "wikidataId": "Q319821",
+     "kinds": [
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q11290",
+     "name": "Grand Central Terminali",
+     "localName": "Grand Central Terminal",
+     "lat": 40.75278,
+     "lon": -73.97722,
+     "wikipediaCount": 51,
+     "wikidataId": "Q11290",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q109858",
+     "name": "Beşinci Cadde",
+     "localName": "Fifth Avenue",
+     "lat": 40.77408,
+     "lon": -73.96586,
+     "wikipediaCount": 50,
+     "wikidataId": "Q109858",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/264768896",
@@ -65,21 +173,107 @@
      "lat": 40.74103,
      "lon": -73.98969,
      "address": "5th Avenue 175",
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q220728",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q200959",
+     "name": "Carnegie Hall",
+     "lat": 40.765,
+     "lon": -73.98,
+     "wikipediaCount": 48,
+     "wikidataId": "Q200959",
+     "kinds": [
+      "heritage",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q11277",
+     "name": "Rockefeller Center",
+     "lat": 40.75861,
+     "lon": -73.97919,
+     "wikipediaCount": 48,
+     "wikidataId": "Q11277",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/4470028591",
      "name": "Greenwich Village",
      "lat": 40.73358,
      "lon": -74.00282,
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q205380",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q868772",
+     "name": "Trump Tower",
+     "lat": 40.7625,
+     "lon": -73.97417,
+     "wikipediaCount": 46,
+     "wikidataId": "Q868772",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q270066",
+     "name": "7 Dünya Ticaret Merkezi",
+     "localName": "7 World Trade Center",
+     "lat": 40.7133,
+     "lon": -74.012,
+     "wikipediaCount": 45,
+     "wikidataId": "Q270066",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q223308",
+     "name": "Nieuw Amsterdam",
+     "localName": "New Amsterdam",
+     "lat": 40.70365,
+     "lon": -74.01241,
+     "wikipediaCount": 45,
+     "wikidataId": "Q223308",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q192680",
+     "name": "New York Times Binası",
+     "localName": "New York Times Building",
+     "lat": 40.75611,
+     "lon": -73.99,
+     "wikipediaCount": 44,
+     "wikidataId": "Q192680",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
     },
     {
      "id": "way/75363809",
      "name": "Woolworth Building",
      "lat": 40.71245,
      "lon": -74.00833,
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q217652",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
     },
     {
      "id": "relation/17233746",
@@ -87,14 +281,122 @@
      "lat": 40.70708,
      "lon": -73.99051,
      "website": "https://www.nyc.gov/html/dot/html/infrastructure/manhattan-bridge.shtml",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q125050",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q624556",
+     "name": "Aziz Patrik Katedrali, New York",
+     "localName": "St. Patrick's Cathedral",
+     "lat": 40.75861,
+     "lon": -73.97639,
+     "wikipediaCount": 41,
+     "wikidataId": "Q624556",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q328505",
+     "name": "Bank of America Kulesi",
+     "localName": "Bank of America Tower",
+     "lat": 40.75528,
+     "lon": -73.98417,
+     "wikipediaCount": 41,
+     "wikidataId": "Q328505",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q218305",
+     "name": "40 Wall Street",
+     "lat": 40.70694,
+     "lon": -74.00972,
+     "wikipediaCount": 38,
+     "wikidataId": "Q218305",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q262041",
+     "name": "70 Pine Street",
+     "lat": 40.70639,
+     "lon": -74.0075,
+     "wikipediaCount": 35,
+     "wikidataId": "Q262041",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q941908",
+     "name": "3 Dünya Ticaret Merkezi",
+     "localName": "3 World Trade Center",
+     "lat": 40.71092,
+     "lon": -74.01161,
+     "wikipediaCount": 34,
+     "wikidataId": "Q941908",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q652452",
+     "name": "Metropolitan Life Insurance Company Tower",
+     "lat": 40.74111,
+     "lon": -73.9875,
+     "wikipediaCount": 34,
+     "wikidataId": "Q652452",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1136137",
+     "name": "National September 11 Memorial & Museum",
+     "lat": 40.71139,
+     "lon": -74.01361,
+     "wikipediaCount": 34,
+     "wikidataId": "Q1136137",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q125068",
+     "name": "Williamsburg Bridge",
+     "lat": 40.713,
+     "lon": -73.97,
+     "wikipediaCount": 34,
+     "wikidataId": "Q125068",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "node/158809984",
      "name": "SoHo",
      "lat": 40.72288,
      "lon": -73.99875,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q461572",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/368043598",
@@ -104,7 +406,81 @@
      "address": "Christopher Street 53",
      "website": "https://thestonewallinnnyc.com/",
      "openingHours": "Mo-Su 14:00-04:00",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q1261362",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q125753",
+     "name": "Holland Tüneli",
+     "localName": "Holland Tunnel",
+     "lat": 40.7275,
+     "lon": -74.02139,
+     "wikipediaCount": 31,
+     "wikidataId": "Q125753",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q13689",
+     "name": "The Battery",
+     "lat": 40.70361,
+     "lon": -74.01611,
+     "wikipediaCount": 31,
+     "wikidataId": "Q13689"
+    },
+    {
+     "id": "wikidata/Q1127212",
+     "name": "2 Dünya Ticaret Merkezi",
+     "localName": "2 World Trade Center",
+     "lat": 40.71222,
+     "lon": -74.01111,
+     "wikipediaCount": 30,
+     "wikidataId": "Q1127212",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1351208",
+     "name": "4 Dünya Ticaret Merkezi",
+     "localName": "4 World Trade Center",
+     "lat": 40.7104,
+     "lon": -74.0119,
+     "wikipediaCount": 30,
+     "wikidataId": "Q1351208",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q110000",
+     "name": "Madison Meydanı",
+     "localName": "Madison Square and Madison Square Park",
+     "lat": 40.74222,
+     "lon": -73.98806,
+     "wikipediaCount": 30,
+     "wikidataId": "Q110000",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q866896",
+     "name": "Trinity Church",
+     "lat": 40.70801,
+     "lon": -74.01221,
+     "wikipediaCount": 30,
+     "wikidataId": "Q866896",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/7141751",
@@ -113,14 +489,426 @@
      "lon": -74.00395,
      "website": "https://www.thehighline.org/",
      "openingHours": "Mo-Su 07:00-19:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q843869"
+    },
+    {
+     "id": "wikidata/Q858689",
+     "name": "Federal Hall",
+     "lat": 40.7072,
+     "lon": -74.0103,
+     "wikipediaCount": 29,
+     "wikidataId": "Q858689",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q240711",
+     "name": "Hotel Chelsea",
+     "lat": 40.74444,
+     "lon": -73.99694,
+     "wikipediaCount": 28,
+     "wikidataId": "Q240711",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q110007",
+     "name": "Union Square",
+     "lat": 40.73556,
+     "lon": -73.99056,
+     "wikipediaCount": 27,
+     "wikidataId": "Q110007",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q909592",
+     "name": "Washington Square Park",
+     "lat": 40.73083,
+     "lon": -73.99778,
+     "wikipediaCount": 27,
+     "wikidataId": "Q909592"
+    },
+    {
+     "id": "wikidata/Q1050074",
+     "name": "28 Liberty Street",
+     "lat": 40.70778,
+     "lon": -74.00889,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1050074",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q109873",
+     "name": "Altıncı Cadde",
+     "localName": "Sixth Avenue",
+     "lat": 40.74278,
+     "lon": -73.99278,
+     "wikipediaCount": 26,
+     "wikidataId": "Q109873",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1065206",
+     "name": "New York Belediye Binası",
+     "localName": "New York City Hall",
+     "lat": 40.71278,
+     "lon": -74.00611,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1065206",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q274916",
+     "name": "8 Spruce Street",
+     "lat": 40.71092,
+     "lon": -74.00569,
+     "wikipediaCount": 25,
+     "wikidataId": "Q274916",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q20861677",
+     "name": "World Trade Center",
+     "lat": 40.71167,
+     "lon": -74.0125,
+     "wikipediaCount": 25,
+     "wikidataId": "Q20861677"
+    },
+    {
+     "id": "wikidata/Q212831",
+     "name": "20 Exchange Place",
+     "lat": 40.70556,
+     "lon": -74.00972,
+     "wikipediaCount": 24,
+     "wikidataId": "Q212831",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q8006299",
+     "name": "Brookfield Place",
+     "lat": 40.71278,
+     "lon": -74.01528,
+     "wikipediaCount": 23,
+     "wikidataId": "Q8006299"
+    },
+    {
+     "id": "wikidata/Q2074091",
+     "name": "200 Vesey Street",
+     "lat": 40.71361,
+     "lon": -74.01472,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2074091",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q115860",
+     "name": "New York Federal Rezerv Bankası",
+     "localName": "Federal Reserve Bank of New York",
+     "lat": 40.70861,
+     "lon": -74.00889,
+     "wikipediaCount": 22,
+     "wikidataId": "Q115860",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1144187",
+     "name": "One Liberty Plaza",
+     "lat": 40.70972,
+     "lon": -74.01083,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1144187",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1066662",
+     "name": "Park Row Building",
+     "lat": 40.71117,
+     "lon": -74.00777,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1066662",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1032558",
+     "name": "Canal Street",
+     "lat": 40.7187,
+     "lon": -74.001,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1032558",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q1049423",
+     "name": "Castle Clinton",
+     "lat": 40.70361,
+     "lon": -74.01667,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1049423",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "business",
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q4635219",
+     "name": "33 Thomas Street",
+     "lat": 40.71654,
+     "lon": -74.00592,
+     "wikipediaCount": 19,
+     "wikidataId": "Q4635219",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q247887",
+     "name": "60 Wall Street",
+     "lat": 40.70626,
+     "lon": -74.0085,
+     "wikipediaCount": 19,
+     "wikidataId": "Q247887",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q2275601",
+     "name": "Goldman Sachs Tower",
+     "localName": "30 Hudson Street",
+     "lat": 40.713,
+     "lon": -74.0338,
+     "wikipediaCount": 19,
+     "wikidataId": "Q2275601",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q209017",
+     "name": "1 Wall Street",
+     "lat": 40.70722,
+     "lon": -74.01167,
+     "wikipediaCount": 18,
+     "wikidataId": "Q209017",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q264439",
+     "name": "225 Liberty Street",
+     "lat": 40.7125,
+     "lon": -74.01528,
+     "wikipediaCount": 18,
+     "wikidataId": "Q264439",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1325913",
+     "name": "Electric Lady Studios",
+     "lat": 40.73306,
+     "lon": -73.99889,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1325913"
+    },
+    {
+     "id": "wikidata/Q1156778",
+     "name": "Manhattan Municipal Building",
+     "lat": 40.71292,
+     "lon": -74.00354,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1156778",
+     "kinds": [
+      "heritage",
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q18157",
+     "name": "St. Nicholas Greek Orthodox Church",
+     "lat": 40.71013,
+     "lon": -74.01322,
+     "wikipediaCount": 18,
+     "wikidataId": "Q18157",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q244358",
+     "name": "56 Leonard Street",
+     "lat": 40.7177,
+     "lon": -74.0064,
+     "wikipediaCount": 17,
+     "wikidataId": "Q244358",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1499859",
+     "name": "New York Life Building",
+     "lat": 40.74278,
+     "lon": -73.98556,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1499859",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q224126",
+     "name": "30 Park Place",
+     "lat": 40.71278,
+     "lon": -74.00917,
+     "wikipediaCount": 16,
+     "wikidataId": "Q224126",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1347892",
+     "name": "Equitable Building",
+     "lat": 40.70822,
+     "lon": -74.01052,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1347892",
+     "kinds": [
+      "heritage",
+      "office",
+      "skyscraper"
+     ]
     },
     {
      "id": "node/2517056822",
      "name": "Flatiron District",
      "lat": 40.74107,
      "lon": -73.98965,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1427377"
+    },
+    {
+     "id": "wikidata/Q124973",
+     "name": "Franklin D. Roosevelt East River Drive",
+     "lat": 40.72896,
+     "lon": -73.97185,
+     "wikipediaCount": 16,
+     "wikidataId": "Q124973",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q118599",
+     "name": "23rd Street",
+     "lat": 40.74156,
+     "lon": -73.98957,
+     "wikipediaCount": 15,
+     "wikidataId": "Q118599",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "node/7058463050",
+     "name": "Bowling Green Fence",
+     "lat": 40.70471,
+     "lon": -74.01374,
+     "wikipediaCount": 15,
+     "wikidataId": "Q895455",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q22329554",
+     "name": "Brooklyn Tower",
+     "lat": 40.69056,
+     "lon": -73.98222,
+     "wikipediaCount": 15,
+     "wikidataId": "Q22329554",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q125635",
+     "name": "Brooklyn–Battery Tunnel",
+     "lat": 40.69583,
+     "lon": -74.01361,
+     "wikipediaCount": 15,
+     "wikidataId": "Q125635",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q2568224",
+     "name": "Liberty Street",
+     "lat": 40.70972,
+     "lon": -74.01167,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2568224",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q227659",
+     "name": "Zuccotti Park",
+     "lat": 40.70917,
+     "lon": -74.01111,
+     "wikipediaCount": 15,
+     "wikidataId": "Q227659",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/1308390918",
@@ -128,147 +916,64 @@
      "lat": 40.7335,
      "lon": -74.00306,
      "website": "https://www.atlasobscura.com/places/hess-triangle",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q18148743"
     },
     {
-     "id": "node/320948228",
-     "name": "South Street Seaport",
-     "lat": 40.70575,
-     "lon": -74.00291,
-     "wikipediaCount": 13
+     "id": "wikidata/Q2687492",
+     "name": "1 New York Plaza",
+     "lat": 40.70211,
+     "lon": -74.01201,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2687492",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
-     "id": "way/833335529",
-     "name": "Little Island",
-     "lat": 40.742,
-     "lon": -74.01061,
-     "website": "https://littleisland.org/",
-     "openingHours": "Mo-Su 06:00-23:00",
-     "wikipediaCount": 12
+     "id": "wikidata/Q2536635",
+     "name": "200 Liberty Street",
+     "lat": 40.71056,
+     "lon": -74.01556,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2536635",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
-     "id": "way/277904752",
-     "name": "Saint Paul's Chapel",
-     "lat": 40.71132,
-     "lon": -74.0092,
-     "address": "Broadway 209",
-     "website": "https://www.trinitywallstreet.org/congregation/spc/",
-     "wikipediaCount": 12
+     "id": "wikidata/Q116002",
+     "name": "200 West Street",
+     "lat": 40.7147,
+     "lon": -74.0144,
+     "wikipediaCount": 14,
+     "wikidataId": "Q116002",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
     },
     {
-     "id": "way/248166269",
-     "name": "Washington Square Arch",
-     "lat": 40.73123,
-     "lon": -73.9971,
-     "website": "https://www.nycgovparks.org/parks/washington-square-park/monuments/1657",
-     "wikipediaCount": 11
+     "id": "wikidata/Q1192749",
+     "name": "250 Vesey Street",
+     "lat": 40.71417,
+     "lon": -74.01611,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1192749",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
-     "id": "node/5919381986",
-     "name": "Bloody Angle",
-     "lat": 40.71441,
-     "lon": -73.99815,
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/278053530",
-     "name": "New York Stock Exchange",
-     "lat": 40.70702,
-     "lon": -74.01121,
-     "address": "Wall Street 11",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/2525734185",
-     "name": "Colgate Clock",
-     "lat": 40.71202,
-     "lon": -74.03391,
-     "wikipediaCount": 6
-    },
-    {
-     "id": "way/5672001",
-     "name": "Gay Street",
-     "lat": 40.73361,
-     "lon": -74.00052,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/170207014",
-     "name": "Wavertree",
-     "lat": 40.70525,
-     "lon": -74.00302,
-     "website": "https://southstreetseaportmuseum.org/wavertree/",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/5039268173",
-     "name": "Brooklyn Heights Promenade",
-     "lat": 40.69563,
-     "lon": -73.99832,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "way/250052723",
-     "name": "FDNY Ladder 8",
-     "lat": 40.71956,
-     "lon": -74.00662,
-     "address": "North Moore Street 14",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "way/1388461669",
-     "name": "Fort Jay",
-     "lat": 40.69142,
-     "lon": -74.016,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "way/170207015",
-     "name": "Ambrose",
-     "lat": 40.70532,
-     "lon": -74.00245,
-     "website": "https://southstreetseaportmuseum.org/lightship-ambrose/",
-     "wikipediaCount": 3
-    },
-    {
-     "id": "node/5927576885",
-     "name": "Hangman's Elm",
-     "lat": 40.73197,
-     "lon": -73.99861,
-     "website": "https://www.nycgovparks.org/facilities/great-trees?id=33",
-     "wikipediaCount": 3
-    },
-    {
-     "id": "way/296157576",
-     "name": "Prison Ship Martyrs Monument",
-     "lat": 40.69179,
-     "lon": -73.97553,
-     "website": "https://www.nycgovparks.org/parks/fort-greene-park/monuments/1222",
-     "wikipediaCount": 3
-    },
-    {
-     "id": "node/4672280505",
-     "name": "Gay Liberation Monument",
-     "lat": 40.73361,
-     "lon": -74.0024,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "way/223183095",
-     "name": "Jane's Carousel",
-     "lat": 40.70443,
-     "lon": -73.99238,
-     "address": "Main Street 45",
-     "website": "https://janescarousel.com/",
-     "openingHours": "We-Mo 11:00-19:00",
-     "wikipediaCount": 2
-    },
-    {
-     "id": "node/4319650089",
-     "name": "Colonnade row",
-     "lat": 40.72928,
-     "lon": -73.99245,
-     "wikipediaCount": 2
+     "id": "wikidata/Q244114",
+     "name": "55 Water Street",
+     "lat": 40.70306,
+     "lon": -74.00925,
+     "wikipediaCount": 14,
+     "wikidataId": "Q244114",
+     "kinds": [
+      "skyscraper"
+     ]
     }
    ]
   },
@@ -284,7 +989,33 @@
      "address": "Greenwich Street 180",
      "website": "https://www.911memorial.org/",
      "openingHours": "Mo-Th 09:00-20:00, Fr-Sa 09:00-21:00, Su 09:00-20:00",
-     "wikipediaCount": 151
+     "wikipediaCount": 151,
+     "wikidataId": "Q10806"
+    },
+    {
+     "id": "wikidata/Q188740",
+     "name": "Museum of Modern Art",
+     "lat": 40.76144,
+     "lon": -73.97761,
+     "wikipediaCount": 67,
+     "wikidataId": "Q188740",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q632682",
+     "name": "Brooklyn Müzesi",
+     "localName": "Brooklyn Museum",
+     "lat": 40.67121,
+     "lon": -73.96363,
+     "wikipediaCount": 47,
+     "wikidataId": "Q632682",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/288749896",
@@ -294,7 +1025,24 @@
      "address": "Gansevoort Street 99",
      "website": "https://www.whitney.org/",
      "openingHours": "Mo-Su 10:30-18:00; Tu off; Fr 10:30-22:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q639791",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q502218",
+     "name": "National Academy of Design",
+     "lat": 40.73769,
+     "lon": -73.98675,
+     "wikipediaCount": 20,
+     "wikidataId": "Q502218",
+     "kinds": [
+      "business",
+      "museum",
+      "school"
+     ]
     },
     {
      "id": "node/13732385972",
@@ -304,7 +1052,26 @@
      "address": "Bowery 235",
      "website": "https://www.newmuseum.org/",
      "openingHours": "Tu,We,Fr-Su 11:00-18:00; Th 11:00-21:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1156823",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9371206934",
+     "name": "International Center of Photography",
+     "lat": 40.7182,
+     "lon": -73.98919,
+     "address": "Ludlow Street 84",
+     "website": "https://www.icp.org/",
+     "wikipediaCount": 16,
+     "wikidataId": "Q636942",
+     "kinds": [
+      "business",
+      "museum",
+      "school"
+     ]
     },
     {
      "id": "way/250267911",
@@ -314,7 +1081,12 @@
      "address": "Eldridge Street 12",
      "website": "https://www.eldridgestreet.org/",
      "openingHours": "Mo-Su 10:00-17:00; Sa off; Dec 31-Jan 01 off; Nov Th[4] off; Nov Fr[4] off",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1113721",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/368061648",
@@ -324,7 +1096,11 @@
      "address": "Schermerhorn Street 99",
      "website": "https://www.nytransitmuseum.org/",
      "openingHours": "Th-Su 10:00-16:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1503777",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4224363289",
@@ -334,7 +1110,23 @@
      "address": "5th Avenue 233",
      "website": "https://www.museumofsex.com/locations/new-york-city/",
      "openingHours": "Mo-Th,Su 13:00-22:00; Fr 13:00-00:00; Sa 12:00-00:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1322466",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/14201860801",
+     "name": "African Burial Ground National Monument Visitor Center",
+     "lat": 40.71485,
+     "lon": -74.00543,
+     "address": "Broadway 290",
+     "wikipediaCount": 11,
+     "wikidataId": "Q383996",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1810241472",
@@ -344,7 +1136,11 @@
      "address": "West 17th Street 150",
      "website": "https://rubinmuseum.org/",
      "openingHours": "Th-Su 11:00-17:00; Fr 11:00-22:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q63751",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2808241058",
@@ -354,7 +1150,11 @@
      "address": "Battery Place 39",
      "website": "https://skyscraper.org/",
      "openingHours": "We-Sa 12:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q2915494",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10873196741",
@@ -364,7 +1164,11 @@
      "address": "West 21st Street 522",
      "website": "https://gagosian.com/",
      "openingHours": "Tu-Sa 10:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2748031",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "relation/7281773",
@@ -373,7 +1177,11 @@
      "lon": -74.0186,
      "website": "https://mjhnyc.org/",
      "openingHours": "We-Su 10:00-17:00; Th 10:00-20:00; Sa off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q839985",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4252536496",
@@ -383,7 +1191,11 @@
      "address": "5th Avenue 225",
      "website": "https://momath.org/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6940939",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10861543611",
@@ -393,7 +1205,11 @@
      "address": "West 22nd Street 542",
      "website": "https://www.hauserwirth.com/locations/10073-hauser-wirth-new-york-22nd-street/",
      "openingHours": "Tu-Sa 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1591119",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/9136326361",
@@ -403,7 +1219,11 @@
      "address": "Wooster Street 26",
      "website": "https://www.leslielohman.org/",
      "openingHours": "We 12:00-17:00; Th-Su 12:00-18:00; Jan 01 off; Jun 19 off; Jun Su[-1] off; Jul 04 off; Nov 11 off; Nov Th[4] off; Dec 24-25 off; Dec 31 off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6530976",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368061660",
@@ -413,7 +1233,12 @@
      "address": "Orchard Street 103",
      "website": "https://www.tenement.org/",
      "openingHours": "Mo-Su 10:00-17:30; Fr,Sa 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q901533",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/241833272",
@@ -423,7 +1248,11 @@
      "address": "East 6th Street 222",
      "website": "https://www.theukrainianmuseum.org/",
      "openingHours": "We-Su 12:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4470591",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/247838607",
@@ -433,7 +1262,12 @@
      "address": "East 4th Street 29",
      "website": "https://merchantshouse.org/",
      "openingHours": "Sep-May Th-Su 13:00-17:00; Jun-Aug We-Su 13:00-17:00; PH off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3306353",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1233699772",
@@ -443,7 +1277,11 @@
      "address": "Centre Street 215",
      "website": "https://www.mocanyc.org/",
      "openingHours": "Tu, We, Fr-Su 11:00-18:00; Th 11:00-21:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1278593",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/249664614",
@@ -453,7 +1291,11 @@
      "address": "Spring Street 278",
      "website": "https://www.nycfiremuseum.org/",
      "openingHours": "24/7 off \"Temporarily closed until further notice\"",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q510422",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/404322369",
@@ -462,7 +1304,11 @@
      "lon": -74.03704,
      "address": "Grand Street 80",
      "website": "https://moramuseum.org/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4044655",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368061337",
@@ -472,14 +1318,22 @@
      "address": "Bowling Green 1",
      "website": "https://americanindian.si.edu/",
      "openingHours": "Mo-Su 10:00-17:00; Dec 25 off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5539979",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4319632990",
      "name": "Salmagundi Club",
      "lat": 40.7343,
      "lon": -73.99455,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7405383",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/10861543610",
@@ -489,7 +1343,8 @@
      "address": "West 22nd Street 537",
      "website": "https://diaart.org/visit/visit-our-locations-sites/dia-chelsea-new-york-united-states",
      "openingHours": "We-Sa 12:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1207930"
     },
     {
      "id": "way/241833034",
@@ -498,7 +1353,12 @@
      "lon": -73.99241,
      "address": "Pierrepont Street 128",
      "openingHours": "Mo-Fr 10:00-18:00; Sa 10:00-16:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4974851",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/278396320",
@@ -506,7 +1366,11 @@
      "lat": 40.69034,
      "lon": -74.01315,
      "address": "Barry Road 1",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4683626",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/249664327",
@@ -516,7 +1380,11 @@
      "address": "Wooster Street 35",
      "website": "https://drawingcenter.org/",
      "openingHours": "We-Su 12:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3039170",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/368061605",
@@ -524,7 +1392,11 @@
      "lat": 40.73798,
      "lon": -73.99383,
      "website": "https://www.yumuseum.org/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q8052851",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10861543614",
@@ -532,7 +1404,11 @@
      "lat": 40.74745,
      "lon": -74.00594,
      "address": "West 22nd Street 526",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6790924",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/10859974168",
@@ -542,7 +1418,11 @@
      "address": "West 24th Street 508",
      "website": "https://www.lissongallery.com/",
      "openingHours": "Tu-Sa 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6559193",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/5640186350",
@@ -552,7 +1432,90 @@
      "address": "Cortlandt Alley 4",
      "website": "https://www.mmuseumm.com/",
      "openingHours": "Sa-Su 12:00-18:00 open \"Museum\" || 00:00-24:00 open \"Viewing windows\"",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q22329588"
+    },
+    {
+     "id": "node/10873196739",
+     "name": "Paula Cooper Gallery",
+     "lat": 40.747,
+     "lon": -74.00683,
+     "address": "West 21st Street 534",
+     "website": "https://www.paulacoopergallery.com/",
+     "openingHours": "Tu-Sa 10:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q2063533",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/5039012197",
+     "name": "Pilecki Institute",
+     "lat": 40.70794,
+     "lon": -74.01376,
+     "address": "Greenwich Street 92",
+     "website": "https://www.pileckiusa.com/",
+     "openingHours": "Mo-Fr 12:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q17984748",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/368042980",
+     "name": "Storefront for Art and Architecture",
+     "lat": 40.72148,
+     "lon": -73.9971,
+     "address": "Kenmare Street 97",
+     "website": "https://storefront.nyc/",
+     "openingHours": "We-Sa 12:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q7619980",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/6596032786",
+     "name": "David Zwirner",
+     "lat": 40.74581,
+     "lon": -74.00703,
+     "address": "West 19th Street 525",
+     "website": "https://www.davidzwirner.com/",
+     "wikipediaCount": 2,
+     "wikidataId": "Q1950826",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/10873196752",
+     "name": "Kurimanzutto Gallery",
+     "lat": 40.74627,
+     "lon": -74.00694,
+     "address": "West 20th Street 520",
+     "openingHours": "Tu-Sa 10:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q27894560",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/8062794938",
+     "name": "303 Gallery",
+     "lat": 40.74754,
+     "lon": -74.00754,
+     "address": "West 21st Street 555",
+     "website": "https://www.303gallery.com/",
+     "openingHours": "Tu-Sa 11:00-17:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q60742541",
+     "kinds": [
+      "business"
+     ]
     }
    ]
   },
@@ -565,7 +1528,12 @@
      "name": "One World Observatory",
      "lat": 40.71295,
      "lon": -74.01304,
-     "wikipediaCount": 73
+     "wikipediaCount": 73,
+     "wikidataId": "Q11245",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
     },
     {
      "id": "node/5213998223",
@@ -937,6 +1905,7 @@
      "website": "http://www.delmonicosny.com/",
      "openingHours": "Mo-Fr 11:30-22:00; Sa 17:00-22:00",
      "cuisine": "steak house",
+     "wikidataId": "Q1184537",
      "detailed": true
     },
     {
@@ -1860,6 +2829,16 @@
      "detailed": true
     },
     {
+     "id": "node/4828711722",
+     "name": "Love Thy Neighbor",
+     "lat": 40.73378,
+     "lon": -74.00223,
+     "website": "https://lovethyneighbornyc.com/",
+     "openingHours": "Mo-Th 17:00-24:00, Fr-Sa 17:00-02:00, Su 17:00-24:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
      "id": "node/4305052000",
      "name": "Maya Mezcal",
      "lat": 40.72714,
@@ -1935,6 +2914,17 @@
      "detailed": true
     },
     {
+     "id": "node/5243570841",
+     "name": "Sip & Guzzle",
+     "lat": 40.73139,
+     "lon": -74.00243,
+     "address": "Cornelia Street 29",
+     "website": "https://www.sipandguzzlenyc.com/",
+     "openingHours": "Su-Tu 16:00-01:00; We-Sa 16:00-02:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
      "id": "node/582292401",
      "name": "Swift Hibernian Lounge",
      "lat": 40.72731,
@@ -1953,28 +2943,6 @@
      "website": "https://www.taleabeer.com/location/talea-cobble-hill/",
      "openingHours": "Mo-Th 12:00-23:00; Fr-Sa 12:00-24:00; Su 12:00-23:00",
      "cuisine": "snack",
-     "detailed": true
-    },
-    {
-     "id": "node/5209387823",
-     "name": "Ten Bells",
-     "lat": 40.71791,
-     "lon": -73.98983,
-     "address": "Broome Street 247",
-     "website": "https://tenbellsnyc.com/",
-     "openingHours": "Mo-Fr 17:00-02:00, Sa-Su 15:00-02:00",
-     "cuisine": "tapas",
-     "detailed": true
-    },
-    {
-     "id": "node/2129755928",
-     "name": "The Churchill Tavern",
-     "lat": 40.7436,
-     "lon": -73.98445,
-     "address": "East 28th Street 45",
-     "website": "https://thechurchillny.com/",
-     "openingHours": "Mo-Su 11:30-04:00",
-     "cuisine": "pub",
      "detailed": true
     }
    ]
@@ -2031,6 +2999,7 @@
      "address": "East Houston Street 217",
      "website": "https://www.mercuryloungenyc.com/",
      "openingHours": "Mo-Sa 17:30-04:00",
+     "wikidataId": "Q772529",
      "detailed": true
     },
     {
@@ -2040,6 +3009,7 @@
      "lon": -74.00273,
      "website": "https://www.smallslive.com/",
      "openingHours": "Mo-Th 19:00-03:00; Fr-Su 14:00-03:00",
+     "wikidataId": "Q2294913",
      "detailed": true
     },
     {
@@ -2060,6 +3030,13 @@
      "address": "7th Avenue South 178",
      "website": "https://www.villagevanguard.com/",
      "openingHours": "Mo-Su 19:00-00:00",
+     "wikidataId": "Q670623",
+     "kinds": [
+      "business",
+      "musicVenue",
+      "nightclub",
+      "performingArts"
+     ],
      "detailed": true
     },
     {
@@ -2070,6 +3047,7 @@
      "address": "East 11th Street 125",
      "website": "https://www.websterhall.com/",
      "openingHours": "\"According to schedule\"",
+     "wikidataId": "Q7978928",
      "detailed": true
     },
     {
@@ -2096,7 +3074,8 @@
      "lat": 40.72044,
      "lon": -73.99334,
      "address": "Delancey Street 6",
-     "website": "https://mercuryeastpresents.com/boweryballroom/"
+     "website": "https://mercuryeastpresents.com/boweryballroom/",
+     "wikidataId": "Q895431"
     },
     {
      "id": "node/6145702591",

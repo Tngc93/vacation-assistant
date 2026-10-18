@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "WAW",
- "fetchedAt": "2026-10-16T23:35:34.286Z",
+ "fetchedAt": "2026-10-18T16:25:09.405Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,13 +43,41 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q154607",
+     "name": "Varşova Gettosu",
+     "localName": "Warsaw Ghetto",
+     "lat": 52.22967,
+     "lon": 21.01222,
+     "wikipediaCount": 54,
+     "wikidataId": "Q154607"
+    },
+    {
+     "id": "wikidata/Q179693",
+     "name": "Ulusal Stadyum",
+     "localName": "Kazimierz Górski National Stadium",
+     "lat": 52.23944,
+     "lon": 21.04556,
+     "wikipediaCount": 51,
+     "wikidataId": "Q179693",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "relation/1319250",
      "name": "Pałac Kultury i Nauki",
      "lat": 52.23177,
      "lon": 21.00618,
      "address": "Plac Defilad 1",
      "website": "https://www.pkin.pl/",
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q167566",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace",
+      "skyscraper"
+     ]
     },
     {
      "id": "relation/64436",
@@ -57,14 +85,81 @@
      "lat": 52.24789,
      "lon": 21.01516,
      "address": "Plac Zamkowy 4",
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q756098",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "castle",
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1139084",
+     "name": "Varşova Eski Şehir",
+     "localName": "Warsaw Old Town",
+     "lat": 52.24972,
+     "lon": 21.01222,
+     "wikipediaCount": 36,
+     "wikidataId": "Q1139084",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q376169",
+     "name": "Grand Theatre",
+     "lat": 52.243,
+     "lon": 21.011,
+     "wikipediaCount": 30,
+     "wikidataId": "Q376169",
+     "kinds": [
+      "attraction",
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q648754",
+     "name": "St. John Katedrali",
+     "localName": "St. John's Archcathedral",
+     "lat": 52.24889,
+     "lon": 21.01361,
+     "wikipediaCount": 30,
+     "wikidataId": "Q648754",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/238615551",
      "name": "Kolumna Zygmunta",
      "lat": 52.24725,
      "lon": 21.01338,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q958585",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q345279",
+     "name": "Łazienki Park",
+     "lat": 52.21278,
+     "lon": 21.03278,
+     "wikipediaCount": 26,
+     "wikidataId": "Q345279",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1325609735",
@@ -74,7 +169,34 @@
      "address": "Agrykola 1",
      "website": "https://www.lazienki-krolewskie.pl/",
      "openingHours": "Mo off; Tu-We 09:00-16:00; Th-Sa 10:00-18:00; Su 10:00-16:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q345276",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q928642",
+     "name": "Polonya Ordusu Stadyumu",
+     "localName": "Polish Army Stadium",
+     "lat": 52.22046,
+     "lon": 21.04063,
+     "wikipediaCount": 25,
+     "wikidataId": "Q928642",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q28320872",
+     "name": "Varso",
+     "lat": 52.22863,
+     "lon": 20.99918,
+     "wikipediaCount": 24,
+     "wikidataId": "Q28320872"
     },
     {
      "id": "way/855256739",
@@ -83,7 +205,13 @@
      "lon": 21.01596,
      "address": "Krakowskie Przedmieście 46/48",
      "openingHours": "Mo-Fr 09:00-15:00",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q608932",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/25748432",
@@ -92,7 +220,46 @@
      "lon": 21.02742,
      "address": "Belwederska 56",
      "website": "https://www.prezydent.pl/kancelaria/rezydencje-kprp/rezydencja-prezydenta-rp-belweder",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q645474",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q692676",
+     "name": "Varşova toplama kampı",
+     "localName": "Warsaw concentration camp",
+     "lat": 52.24292,
+     "lon": 20.99303,
+     "wikipediaCount": 22,
+     "wikidataId": "Q692676"
+    },
+    {
+     "id": "wikidata/Q1049868",
+     "name": "Warsaw Trade Tower",
+     "lat": 52.23556,
+     "lon": 20.98306,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1049868",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1440735",
+     "name": "Holy Cross Church",
+     "lat": 52.23861,
+     "lon": 21.01667,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1440735",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/133637274",
@@ -100,21 +267,55 @@
      "lat": 52.24787,
      "lon": 21.01387,
      "openingHours": "24/7",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1092468",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/231919035",
      "name": "Pomnik Bohaterów Getta",
      "lat": 52.24974,
      "lon": 20.99422,
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q429007"
     },
     {
      "id": "relation/6458642",
      "name": "Rynek Starego Miasta",
      "lat": 52.24979,
      "lon": 21.01219,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q2712497",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q156555",
+     "name": "Staszic Palace",
+     "lat": 52.2375,
+     "lon": 21.01806,
+     "wikipediaCount": 19,
+     "wikidataId": "Q156555",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1357866",
+     "name": "Warsaw Spire",
+     "lat": 52.23306,
+     "lon": 20.98472,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1357866",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "way/28363553",
@@ -122,7 +323,14 @@
      "lat": 52.21951,
      "lon": 21.03074,
      "address": "Jazdów 2",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1756534",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/72833763",
@@ -130,7 +338,12 @@
      "localName": "Grób Nieznanego Żołnierza",
      "lat": 52.24095,
      "lon": 21.0113,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1540926",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "way/24881927",
@@ -138,15 +351,167 @@
      "lat": 52.24066,
      "lon": 21.0203,
      "address": "Krakowskie Przedmieście 26/28",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1095476",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2304363",
+     "name": "Saxon Garden",
+     "lat": 52.24056,
+     "lon": 21.00861,
+     "wikipediaCount": 18,
+     "wikidataId": "Q2304363",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1760658",
+     "name": "Krasiński Sarayı",
+     "localName": "Krasiński Palace",
+     "lat": 52.24917,
+     "lon": 21.00389,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1760658",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2691064",
+     "name": "National Theatre of Warsaw",
+     "lat": 52.2433,
+     "lon": 21.0094,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2691064",
+     "kinds": [
+      "business",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q633284",
+     "name": "Umschlagplatz",
+     "localName": "Umschlagplatz in Warsaw ghetto",
+     "lat": 52.25231,
+     "lon": 20.98908,
+     "wikipediaCount": 17,
+     "wikidataId": "Q633284",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q249053",
+     "name": "Złota 44",
+     "lat": 52.23111,
+     "lon": 21.0025,
+     "wikipediaCount": 17,
+     "wikidataId": "Q249053",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q249065",
+     "name": "Złote Tarasy",
+     "lat": 52.23014,
+     "lon": 21.00264,
+     "wikipediaCount": 17,
+     "wikidataId": "Q249065",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q3354467",
+     "name": "Aziz Aleksandr Kilisesi",
+     "localName": "St. Alexander's Church",
+     "lat": 52.22889,
+     "lon": 21.02222,
+     "wikipediaCount": 16,
+     "wikidataId": "Q3354467",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1665800",
+     "name": "InterContinental Warsaw",
+     "lat": 52.23231,
+     "lon": 21.00254,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1665800",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1786375",
+     "name": "Krakowskie Przedmieście w Warszawie",
+     "localName": "Krakowskie Przedmieście Street",
+     "lat": 52.24167,
+     "lon": 21.01556,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1786375",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q693346",
+     "name": "Rondo 1",
+     "lat": 52.2331,
+     "lon": 20.9997,
+     "wikipediaCount": 16,
+     "wikidataId": "Q693346"
+    },
+    {
+     "id": "wikidata/Q450966",
+     "name": "Warsaw Uprising Monument",
+     "lat": 52.24944,
+     "lon": 21.00583,
+     "wikipediaCount": 16,
+     "wikidataId": "Q450966"
     },
     {
      "id": "way/249395313",
      "name": "Barbakan",
      "lat": 52.25059,
      "lon": 21.01018,
-     "address": "Nowomiejska 15/17",
-     "wikipediaCount": 15
+     "address": "Nowomiejska",
+     "wikipediaCount": 15,
+     "wikidataId": "Q1108269",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1630149",
+     "name": "Jabłonowski Palace",
+     "lat": 52.24472,
+     "lon": 21.00972,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1630149",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/24881924",
@@ -154,14 +519,82 @@
      "lat": 52.23941,
      "lon": 21.01505,
      "address": "Krakowskie Przedmieście 5",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1149220",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2340139",
+     "name": "Poniatowski Bridge",
+     "lat": 52.23601,
+     "lon": 21.04141,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2340139",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1798910",
+     "name": "St. Anne's Church",
+     "lat": 52.24619,
+     "lon": 21.01422,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1798910",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q587106",
+     "name": "Frederic Chopin Monument in Warsaw",
+     "lat": 52.21472,
+     "lon": 21.02806,
+     "wikipediaCount": 14,
+     "wikidataId": "Q587106"
+    },
+    {
+     "id": "wikidata/Q4569133",
+     "name": "Karmelit Kilisesi",
+     "localName": "Carmelite Church",
+     "lat": 52.24333,
+     "lon": 21.01556,
+     "wikipediaCount": 14,
+     "wikidataId": "Q4569133",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/448025917",
      "name": "Mały Powstaniec",
      "lat": 52.24927,
      "lon": 21.00962,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q555792"
+    },
+    {
+     "id": "wikidata/Q1109610",
+     "name": "Nowy Świat w Warszawie",
+     "localName": "Nowy Świat Street",
+     "lat": 52.23333,
+     "lon": 21.01944,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1109610",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/32792753",
@@ -169,7 +602,12 @@
      "lat": 52.23606,
      "lon": 21.00108,
      "address": "Twarda 6",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2915221",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/369781007",
@@ -177,7 +615,68 @@
      "lat": 52.23775,
      "lon": 20.98916,
      "website": "http://www.kerethouse.com/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q38985"
+    },
+    {
+     "id": "wikidata/Q2118294",
+     "name": "Aleje Jerozolimskie",
+     "lat": 52.23,
+     "lon": 21.01167,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2118294",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q769503",
+     "name": "Centrum LIM",
+     "lat": 52.22733,
+     "lon": 21.00461,
+     "wikipediaCount": 13,
+     "wikidataId": "Q769503",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1801296",
+     "name": "Church of the Visitation of the Blessed Virgin Mary",
+     "lat": 52.25417,
+     "lon": 21.00917,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1801296",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1798918",
+     "name": "Jesuit Church",
+     "lat": 52.24889,
+     "lon": 21.01306,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1798918",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3671990",
+     "name": "Nicolaus Copernicus Monument in Warsaw",
+     "lat": 52.23817,
+     "lon": 21.01799,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3671990",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/374167283",
@@ -185,91 +684,13 @@
      "lat": 52.25449,
      "lon": 21.00652,
      "address": "Zakroczymska 6",
-     "wikipediaCount": 13
-    },
-    {
-     "id": "way/188250947",
-     "name": "Zamek Ostrogskich",
-     "lat": 52.23648,
-     "lon": 21.02297,
-     "address": "Okólnik 1",
-     "wikipediaCount": 13
-    },
-    {
-     "id": "way/1567703393",
-     "name": "Pałac Pod Blachą",
-     "lat": 52.24723,
-     "lon": 21.01588,
-     "address": "Plac Zamkowy 2",
-     "wikipediaCount": 12
-    },
-    {
-     "id": "way/135779066",
-     "name": "Pałac Branickich",
-     "lat": 52.24694,
-     "lon": 21.01157,
-     "wikipediaCount": 11
-    },
-    {
-     "id": "node/343601014",
-     "name": "Geodezja Europejska",
-     "lat": 52.24397,
-     "lon": 21.00918,
-     "wikipediaCount": 10
-    },
-    {
-     "id": "way/28906706",
-     "name": "Pałac Potockich",
-     "lat": 52.24255,
-     "lon": 21.01417,
-     "address": "Krakowskie Przedmieście 15",
-     "wikipediaCount": 10
-    },
-    {
-     "id": "way/1031367952",
-     "name": "Replika samochodu pancernego \"Kubuś\"",
-     "lat": 52.23219,
-     "lon": 20.98168,
-     "wikipediaCount": 10
-    },
-    {
-     "id": "way/25748436",
-     "name": "Pałac Myślewicki",
-     "lat": 52.21551,
-     "lon": 21.03827,
-     "website": "https://www.lazienki-krolewskie.pl/pl/architektura/palac-myslewicki",
-     "wikipediaCount": 9
-    },
-    {
-     "id": "node/1417376022",
-     "name": "Mur Getta Warszawskiego",
-     "lat": 52.23079,
-     "lon": 20.99885,
-     "wikipediaCount": 8
-    },
-    {
-     "id": "way/84866914",
-     "name": "Pałac Blanka",
-     "lat": 52.24494,
-     "lon": 21.01024,
-     "address": "Senatorska 14",
-     "wikipediaCount": 8
-    },
-    {
-     "id": "way/32820932",
-     "name": "Pałac Prymasowski",
-     "lat": 52.24547,
-     "lon": 21.01206,
-     "address": "Senatorska 13/15",
-     "wikipediaCount": 8
-    },
-    {
-     "id": "way/35008146",
-     "name": "Pałac Teppera-Dückerta",
-     "lat": 52.24705,
-     "lon": 21.00423,
-     "address": "Długa 38/40",
-     "wikipediaCount": 8
+     "wikipediaCount": 13,
+     "wikidataId": "Q962070",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     }
    ]
   },
@@ -285,7 +706,11 @@
      "lon": 21.02477,
      "website": "https://www.mnw.art.pl/",
      "openingHours": "Tu-Th 10:00-18:00; Fr 10:00-20:00; Sa-Su 10:00-18:00",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q153306",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/186141946",
@@ -295,7 +720,11 @@
      "address": "Mordechaja Anielewicza 6",
      "website": "http://www.polin.pl/",
      "openingHours": "Mo, We-Fr, Su 10:00-18:00; Sa 10:00-20:00; Tu off",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q429069",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1325609735",
@@ -305,7 +734,14 @@
      "address": "Agrykola 1",
      "website": "https://www.lazienki-krolewskie.pl/",
      "openingHours": "Mo off; Tu-We 09:00-16:00; Th-Sa 10:00-18:00; Su 10:00-16:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q345276",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/167109428",
@@ -315,7 +751,11 @@
      "address": "Grzybowska 79",
      "website": "https://1944.pl/",
      "openingHours": "Mo,We-Fr 08:00-18:00; Tu off; Sa-Su 10:00-18:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q574328",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/116698622",
@@ -323,7 +763,19 @@
      "lat": 52.24646,
      "lon": 20.9908,
      "website": "https://pawiak.muzn.pl/",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q116366"
+    },
+    {
+     "id": "wikidata/Q3692546",
+     "name": "Fryderyk Chopin Museum",
+     "lat": 52.23665,
+     "lon": 21.02296,
+     "wikipediaCount": 18,
+     "wikidataId": "Q3692546",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/504034835",
@@ -333,7 +785,11 @@
      "address": "Wybrzeże Kościuszkowskie 20",
      "website": "https://www.kopernik.org.pl/",
      "openingHours": "Tu-Su 10:00-20:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1138064",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/944207076",
@@ -343,7 +799,11 @@
      "address": "Marszałkowska 103",
      "website": "https://artmuseum.pl/",
      "openingHours": "Tu-Th, Sa 11:00-19:00; Fr 11:00-20:00; Su 11:00-18:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1956218",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/981721461",
@@ -353,7 +813,13 @@
      "address": "Okólnik 1",
      "website": "http://www.chopin.museum/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1478810",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/338509175",
@@ -363,7 +829,11 @@
      "address": "Freta 16",
      "website": "https://www.mmsc.waw.pl/",
      "openingHours": "Tu-Sa 12:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3559646",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/8952329575",
@@ -373,7 +843,11 @@
      "address": "Długa 52",
      "website": "https://www.pma.pl/",
      "openingHours": "off",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q637086",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/28894938",
@@ -383,7 +857,11 @@
      "address": "Plac Stanisława Małachowskiego 3",
      "website": "https://zacheta.art.pl/",
      "openingHours": "Tu-Su 12:00-20:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q450241",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/29735394",
@@ -392,7 +870,11 @@
      "lon": 21.00426,
      "address": "Aleja „Solidarności” 62",
      "openingHours": "We-Su 12:00-17:00; Nov 11: 11:00-16:00; Nov 10: 12:00-16:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1582462",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/338509152",
@@ -400,7 +882,8 @@
      "lat": 52.24433,
      "lon": 21.00277,
      "website": "https://www.jhi.pl/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1574347"
     },
     {
      "id": "node/312892952",
@@ -410,7 +893,11 @@
      "address": "Kredytowa 1",
      "website": "https://ethnomuseum.pl/",
      "openingHours": "Tu-We,Fr 10:00-19:00; Th 11:00-17:00; Sa-Su 12:00-18:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q961766",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/338509179",
@@ -420,7 +907,11 @@
      "address": "Rynek Starego Miasta 42",
      "website": "https://muzeumwarszawy.pl/",
      "openingHours": "Su, Tu-We, Fr 10:00-18:00; Th 10:00-20:00; Sa 10:00-19:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q202277",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/343292162",
@@ -429,7 +920,11 @@
      "lon": 21.02365,
      "website": "http://muzeum-niepodleglosci.pl/",
      "openingHours": "We-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q444092",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9422636567",
@@ -438,7 +933,11 @@
      "lon": 20.99766,
      "website": "https://1943.pl/",
      "openingHours": "closed",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q55337700",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/338509181",
@@ -448,7 +947,11 @@
      "address": "Rynek Starego Miasta 20",
      "website": "https://muzeumliteratury.pl/",
      "openingHours": "Tu-We,Fr-Su 10:00-17:00; Th 12:00-20:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4679497",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13043098814",
@@ -457,7 +960,11 @@
      "lon": 21.00611,
      "website": "https://www.neonmuzeum.org/",
      "openingHours": "Su-Th 11:00-18:00; Fr-Sa 11:00-19:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q11790623",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9984141578",
@@ -465,7 +972,11 @@
      "lat": 52.23221,
      "lon": 21.00593,
      "website": "https://muzeumewolucji.pl/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6940852",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11196230956",
@@ -475,7 +986,11 @@
      "address": "Solec 24",
      "website": "http://www.muzeumazji.pl/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3893223",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/588708759",
@@ -485,7 +1000,11 @@
      "address": "Plac Defilad 1",
      "website": "https://nmt.waw.pl/",
      "openingHours": "Tu-Su 09:00-18:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q6941029",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/587282867",
@@ -494,7 +1013,12 @@
      "lon": 21.00864,
      "website": "https://fotoplastikonwarszawski.pl/",
      "openingHours": "We-Mo 10:00-18:00; Tu off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q9261973",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "node/457281528",
@@ -503,7 +1027,13 @@
      "lon": 21.01145,
      "website": "https://muzeumfarmacji.muzeumwarszawy.pl/",
      "openingHours": "We-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1956210",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/139378330",
@@ -513,7 +1043,11 @@
      "address": "Kozia 11",
      "website": "https://muzeumkarykatury.pl/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6940789",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2980111364",
@@ -523,7 +1057,11 @@
      "address": "Łazienkowska 3",
      "website": "https://legia.com/muzeum-legii",
      "openingHours": "closed",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q15709891",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4141608192",
@@ -531,7 +1069,11 @@
      "lat": 52.21353,
      "lon": 21.03905,
      "website": "https://www.lazienki-krolewskie.pl/pl/muzeum-lowiectwa-i-jezdziectwa",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1513142",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2340571315",
@@ -541,7 +1083,8 @@
      "address": "Karowa 20",
      "website": "https://dsh.waw.pl/",
      "openingHours": "Tu-Fr 10:00-20:00; Sa-Su 12:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5774745"
     },
     {
      "id": "node/2975991309",
@@ -551,7 +1094,11 @@
      "address": "Marii Konopnickiej 6",
      "website": "https://muzeumharcerstwa.pl/",
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6941021",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/8572848509",
@@ -560,7 +1107,128 @@
      "lon": 20.97541,
      "website": "https://ochota.um.warszawa.pl/-/muzeum-ikon-w-warszawie",
      "openingHours": "Mo off; Tu-Sa: 12:00-17:00; Su 13:00-15:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q11787016",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/369549823",
+     "name": "Muzeum Nurkowania",
+     "lat": 52.23339,
+     "lon": 20.98111,
+     "address": "Grzybowska 88",
+     "website": "http://www.muzeumnurkowania.pl/",
+     "openingHours": "Tu 11:00-17:00; We-Mo \"at phone/e-mail request\"",
+     "wikipediaCount": 4,
+     "wikidataId": "Q11787098",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4230807997",
+     "name": "Muzeum Archidiecezji Warszawskiej",
+     "lat": 52.24872,
+     "lon": 21.01398,
+     "address": "Dziekania 1",
+     "website": "http://www.maw.waw.pl/",
+     "wikipediaCount": 4,
+     "wikidataId": "Q11786914",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/11137285958",
+     "name": "Centrum Sztuki Współczesnej",
+     "lat": 52.2197,
+     "lon": 21.03074,
+     "website": "https://u-jazdowski.pl/",
+     "openingHours": "Tu,We,Fr-Su 11:00-19:00; Th 11:00-20:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q9186483"
+    },
+    {
+     "id": "node/338509200",
+     "name": "Muzeum Teatralne",
+     "lat": 52.24326,
+     "lon": 21.00937,
+     "address": "Plac Teatralny 1",
+     "website": "https://teatrwielki.pl/muzeum-teatralne/",
+     "openingHours": "Mo-Fr 11:00-19:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q11787224",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2980139744",
+     "name": "Muzeum Uniwersytetu Warszawskiego",
+     "lat": 52.24037,
+     "lon": 21.01689,
+     "website": "https://www.muzeum.uw.edu.pl/",
+     "openingHours": "Mo-Fr 09:00-16:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q11787236",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/8987522556",
+     "name": "Muzeum Wódki",
+     "lat": 52.2434,
+     "lon": 21.00761,
+     "address": "Wierzbowa 11",
+     "website": "https://muzeumwodki.pl/",
+     "openingHours": "Tu-Th,Su 13:00-19:00; Fr-Sa 13:00-20:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q62745331",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3137240335",
+     "name": "Muzeum Woli",
+     "lat": 52.22788,
+     "lon": 20.98974,
+     "address": "Srebrna 12",
+     "website": "https://muzeumwoli.muzeumwarszawy.pl/",
+     "openingHours": "Th 10:00-20:00; Fr-Su 10:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q1029069",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9984033034",
+     "name": "Przystanek Historia",
+     "lat": 52.2173,
+     "lon": 21.01917,
+     "address": "Marszałkowska 21/25",
+     "website": "https://przystanekhistoria.pl/pa2/",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q109279956"
+    },
+    {
+     "id": "node/12862698273",
+     "name": "Cele Bezpieki",
+     "lat": 52.22062,
+     "lon": 21.02396,
+     "address": "Aleje Ujazdowskie 11",
+     "website": "https://www.1944.pl/celebezpieki.html",
+     "openingHours": "Mo-Fr 09:00-17:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q116051557",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -573,7 +1241,11 @@
      "name": "Gnojna Góra",
      "lat": 52.24998,
      "lon": 21.01412,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11703035",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/13135172937",
@@ -625,6 +1297,12 @@
      "name": "Widok na Zamek Ujazdowski",
      "lat": 52.21909,
      "lon": 21.04495
+    },
+    {
+     "id": "node/6695923385",
+     "name": "Wieża Marszałkowska",
+     "lat": 52.2511,
+     "lon": 21.01137
     }
    ]
   },
@@ -1726,7 +2404,8 @@
      "lat": 52.23274,
      "lon": 21.01163,
      "address": "Złota 9",
-     "website": "https://hybrydy.com.pl/"
+     "website": "https://hybrydy.com.pl/",
+     "wikidataId": "Q11740222"
     },
     {
      "id": "node/1102851556",
@@ -1806,7 +2485,8 @@
      "lat": 52.2126,
      "lon": 20.9872,
      "address": "Żwirki i Wigury 99A",
-     "website": "https://klubproxima.com.pl/"
+     "website": "https://klubproxima.com.pl/",
+     "wikidataId": "Q11740254"
     },
     {
      "id": "node/254337367",
@@ -1854,7 +2534,8 @@
      "lat": 52.21157,
      "lon": 21.01023,
      "address": "Stefana Batorego 10",
-     "website": "https://stodola.pl/"
+     "website": "https://stodola.pl/",
+     "wikidataId": "Q11740269"
     },
     {
      "id": "node/3567530858",

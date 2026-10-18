@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "TYO",
- "fetchedAt": "2026-10-17T00:07:38.812Z",
+ "fetchedAt": "2026-10-18T17:02:01.111Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,19 +43,487 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1030463",
+     "name": "Mode Gakuen Cocoon Tower",
+     "lat": 35.69167,
+     "lon": 139.69694,
+     "wikipediaCount": 82,
+     "wikidataId": "Q1030463",
+     "kinds": [
+      "skyscraper",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q183536",
+     "name": "Tokyo Kulesi",
+     "localName": "Tokyo Tower",
+     "lat": 35.65861,
+     "lon": 139.74556,
+     "wikipediaCount": 69,
+     "wikidataId": "Q183536",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q477675",
+     "name": "Japonya Millet Meclisi Kütüphanesi",
+     "localName": "National Diet Library",
+     "lat": 35.67833,
+     "lon": 139.74417,
+     "wikipediaCount": 68,
+     "wikidataId": "Q477675",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q242803",
+     "name": "Yasukuni Tapınağı",
+     "localName": "Yasukuni Shrine",
+     "lat": 35.69396,
+     "lon": 139.74269,
+     "wikipediaCount": 48,
+     "wikidataId": "Q242803",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q418096",
+     "name": "Akihabara",
+     "lat": 35.69833,
+     "lon": 139.77306,
+     "wikipediaCount": 46,
+     "wikidataId": "Q418096",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q500681",
+     "name": "Tokyo İmparatorluk Sarayı",
+     "localName": "Tokyo Imperial Palace",
+     "lat": 35.6825,
+     "lon": 139.7521,
+     "wikipediaCount": 43,
+     "wikidataId": "Q500681",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q14862239",
+     "name": "Yeni Ulusal Stadyum (Tokyo)",
+     "localName": "Japan National Stadium",
+     "lat": 35.6778,
+     "lon": 139.7145,
+     "wikipediaCount": 40,
+     "wikidataId": "Q14862239",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q287165",
+     "name": "Meiji Tapınağı",
+     "localName": "Meiji Jingū",
+     "lat": 35.67611,
+     "lon": 139.69917,
+     "wikipediaCount": 34,
+     "wikidataId": "Q287165",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q111973",
+     "name": "Tokyo Government Binası",
+     "localName": "Tokyo Metropolitan Government Building",
+     "lat": 35.68951,
+     "lon": 139.69171,
+     "wikipediaCount": 29,
+     "wikidataId": "Q111973",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1710283",
+     "name": "Tokyo Camii",
+     "localName": "Tokyo Mosque",
+     "lat": 35.66814,
+     "lon": 139.6765,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1710283",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1069457",
+     "name": "Yoyogi Ulusal Spor Salonu",
+     "localName": "Yoyogi National Gymnasium",
+     "lat": 35.6675,
+     "lon": 139.70028,
+     "wikipediaCount": 27,
+     "wikidataId": "Q1069457",
+     "kinds": [
+      "musicVenue",
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "relation/6109212",
      "name": "迎賓館",
      "lat": 35.68031,
      "lon": 139.72877,
      "address": "元赤坂二丁目",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q555255",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1066903",
+     "name": "Tokyo Metropolitan Gymnasium",
+     "lat": 35.67972,
+     "lon": 139.7125,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1066903",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1204253",
+     "name": "Yoyogi Parkı",
+     "localName": "Yoyogi Park",
+     "lat": 35.67198,
+     "lon": 139.69769,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1204253"
+    },
+    {
+     "id": "wikidata/Q776863",
+     "name": "Shinjuku Gyoen",
+     "lat": 35.68717,
+     "lon": 139.71064,
+     "wikipediaCount": 22,
+     "wikidataId": "Q776863"
+    },
+    {
+     "id": "wikidata/Q21083961",
+     "name": "Shibuya scramble crossing",
+     "lat": 35.6595,
+     "lon": 139.70054,
+     "wikipediaCount": 21,
+     "wikidataId": "Q21083961"
+    },
+    {
+     "id": "wikidata/Q2090752",
+     "name": "NTT Docomo Yoyogi Building",
+     "lat": 35.68436,
+     "lon": 139.70325,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2090752",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q1205090",
+     "name": "Omotesandō",
+     "lat": 35.66513,
+     "lon": 139.71248,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1205090",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q590162",
+     "name": "Yoyogi İstasyonu",
+     "localName": "Yoyogi Station",
+     "lat": 35.68383,
+     "lon": 139.70232,
+     "wikipediaCount": 17,
+     "wikidataId": "Q590162",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q685328",
+     "name": "109 (alışveriş merkezi)",
+     "localName": "109",
+     "lat": 35.65954,
+     "lon": 139.69901,
+     "wikipediaCount": 16,
+     "wikidataId": "Q685328"
+    },
+    {
+     "id": "wikidata/Q631237",
+     "name": "Chichibunomiya Ragbi Stadyumu",
+     "localName": "Chichibunomiya Rugby Stadium",
+     "lat": 35.6726,
+     "lon": 139.71817,
+     "wikipediaCount": 16,
+     "wikidataId": "Q631237",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1348023",
+     "name": "Shinjuku Park Kulesi",
+     "localName": "Shinjuku Park Tower",
+     "lat": 35.68564,
+     "lon": 139.69095,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1348023",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1201889",
+     "name": "Tokyo Opera City Kulesi",
+     "localName": "Tokyo Opera City Tower",
+     "lat": 35.68309,
+     "lon": 139.68707,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1201889",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q801234",
+     "name": "Nakano İstasyonu",
+     "localName": "Nakano Station",
+     "lat": 35.70583,
+     "lon": 139.66556,
+     "wikipediaCount": 15,
+     "wikidataId": "Q801234",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q801654",
+     "name": "Yotsuya İstasyonu",
+     "localName": "Yotsuya Station",
+     "lat": 35.68611,
+     "lon": 139.73056,
+     "wikipediaCount": 15,
+     "wikidataId": "Q801654",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1131825",
+     "name": "Yoyogi-Uehara İstasyonu",
+     "localName": "Yoyogi-Uehara Station",
+     "lat": 35.66903,
+     "lon": 139.67972,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1131825",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q800947",
+     "name": "Ichigaya İstasyonu",
+     "localName": "Ichigaya Station",
+     "lat": 35.691,
+     "lon": 139.73558,
+     "wikipediaCount": 14,
+     "wikidataId": "Q800947",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1056064",
+     "name": "Tokyo Yeni Ulusal Tiyatrosu",
+     "localName": "New National Theatre Tokyo",
+     "lat": 35.6825,
+     "lon": 139.68556,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1056064",
+     "kinds": [
+      "business",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1036028",
+     "name": "Aoyama Mezarlığı",
+     "localName": "Aoyama Cemetery",
+     "lat": 35.66667,
+     "lon": 139.72222,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1036028"
+    },
+    {
+     "id": "wikidata/Q702605",
+     "name": "Army War College",
+     "lat": 35.67433,
+     "lon": 139.72221,
+     "wikipediaCount": 13,
+     "wikidataId": "Q702605",
+     "kinds": [
+      "adminArea",
+      "business",
+      "school",
+      "sportsVenue",
+      "university"
+     ]
+    },
+    {
+     "id": "wikidata/Q800921",
+     "name": "Higashi-Nakano İstasyonu",
+     "localName": "Higashi-Nakano Station",
+     "lat": 35.706,
+     "lon": 139.686,
+     "wikipediaCount": 13,
+     "wikidataId": "Q800921",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q116259",
+     "name": "Ōkubo İstasyonu",
+     "localName": "Ōkubo Station",
+     "lat": 35.7007,
+     "lon": 139.697,
+     "wikipediaCount": 13,
+     "wikidataId": "Q116259",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q801428",
+     "name": "Sendagaya İstasyonu",
+     "localName": "Sendagaya Station",
+     "lat": 35.68111,
+     "lon": 139.71139,
+     "wikipediaCount": 13,
+     "wikidataId": "Q801428",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q335677",
+     "name": "Shinanomachi İstasyonu",
+     "localName": "Shinanomachi Station",
+     "lat": 35.68,
+     "lon": 139.72028,
+     "wikipediaCount": 13,
+     "wikidataId": "Q335677",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q944559",
+     "name": "Meiji Jingu Stadium",
+     "lat": 35.67457,
+     "lon": 139.71714,
+     "wikipediaCount": 12,
+     "wikidataId": "Q944559",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1134395",
+     "name": "Shinjuku Center Building",
+     "lat": 35.69167,
+     "lon": 139.69556,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1134395",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q2413330",
+     "name": "Shinjuku Mitsui Binası",
+     "localName": "Shinjuku Mitsui Building",
+     "lat": 35.6919,
+     "lon": 139.6939,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2413330",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q4154095",
+     "name": "Daitabashi İstasyonu",
+     "localName": "Daitabashi Station",
+     "lat": 35.67097,
+     "lon": 139.65878,
+     "wikipediaCount": 11,
+     "wikidataId": "Q4154095",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q841861",
+     "name": "Sasazuka İstasyonu",
+     "localName": "Sasazuka Station",
+     "lat": 35.67367,
+     "lon": 139.66722,
+     "wikipediaCount": 11,
+     "wikidataId": "Q841861",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1138457",
+     "name": "Ulusal Nō Tiyatrosu",
+     "localName": "National Noh Theatre",
+     "lat": 35.68028,
+     "lon": 139.70814,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1138457",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/97234607",
      "name": "東宮御所",
      "lat": 35.67809,
      "lon": 139.72509,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1036008"
     },
     {
      "id": "relation/16562139",
@@ -63,21 +531,24 @@
      "lat": 35.69406,
      "lon": 139.70469,
      "website": "http://goldengai.jp/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q5363705"
     },
     {
      "id": "way/863163760",
      "name": "大隈庭園",
      "lat": 35.70957,
      "lon": 139.72205,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3594031"
     },
     {
      "id": "way/558850354",
      "name": "赤坂御用地",
      "lat": 35.67675,
      "lon": 139.72697,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q11635414"
     },
     {
      "id": "way/94117018",
@@ -86,14 +557,23 @@
      "lon": 139.72158,
      "address": "新宿区",
      "website": "https://www.waseda.jp/culture/facility/auditorium/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2870807",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/553522499",
      "name": "神宮橋",
      "lat": 35.66972,
      "lon": 139.70241,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11589493",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "node/10849593505",
@@ -102,7 +582,8 @@
      "lon": 139.7008,
      "website": "https://shinjuku.xspace.tokyo/",
      "openingHours": "Mo-Su 07:00-25:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q109702546"
     },
     {
      "id": "node/4154282189",
@@ -110,7 +591,12 @@
      "lat": 35.69307,
      "lon": 139.6995,
      "address": "1丁目",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11501868",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "node/10794948205",
@@ -231,12 +717,6 @@
      "name": "バードサンクチュアリ",
      "lat": 35.67113,
      "lon": 139.69828
-    },
-    {
-     "id": "relation/1964562",
-     "name": "三笠宮東邸(旧寬仁親王邸)",
-     "lat": 35.67528,
-     "lon": 139.73002
     }
    ]
   },
@@ -252,7 +732,11 @@
      "address": "神宮前一丁目",
      "website": "https://www.ukiyoe-ota-muse.jp/",
      "openingHours": "Tu-Su 10:30-17:30",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q3815442",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/139972313",
@@ -262,7 +746,11 @@
      "address": "6",
      "website": "http://www.nezu-muse.or.jp/",
      "openingHours": "Mo off; Tu-Su 10:00-17:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1047097",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/572498043",
@@ -272,7 +760,11 @@
      "address": "1丁目",
      "website": "https://sompo-museum.org/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1614504",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/94104811",
@@ -281,7 +773,12 @@
      "lon": 139.7176,
      "website": "https://www.meijijingugaien.jp/art-culture/seitoku-gallery/",
      "openingHours": "Mo-Su 09:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q5153794",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/133340564",
@@ -291,7 +788,12 @@
      "address": "駒場四丁目",
      "website": "https://mingeikan.or.jp/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3789149",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/372572644",
@@ -300,7 +802,12 @@
      "lon": 139.72336,
      "website": "https://www.eiseibunko.com/",
      "openingHours": "Tu-Su,PH 10:00-16:30",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q728781",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/139712014",
@@ -310,7 +817,11 @@
      "address": "神宮前三丁目",
      "website": "http://www.watarium.co.jp/",
      "openingHours": "Tu, Th-Su 11:00-19:00; We 11:00-21:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3915469",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5165879121",
@@ -320,7 +831,11 @@
      "address": "弁天町",
      "website": "https://yayoikusamamuseum.jp/",
      "openingHours": "Mo-We off; Th-Su,PH 11:00-17:30",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q65941212",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10289966935",
@@ -329,7 +844,11 @@
      "lon": 139.70057,
      "address": "渋谷",
      "openingHours": "Mo-Su 11:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6128676",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420767889",
@@ -339,7 +858,11 @@
      "address": "1丁目",
      "website": "https://kitte-museum.jp/",
      "openingHours": "Tu-Su 10:30-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11396206",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/28144849",
@@ -349,7 +872,11 @@
      "address": "駒場四丁目",
      "website": "https://www.bungakukan.or.jp/",
      "openingHours": "Tu-Sa 09:30-16:30; Su-Mo off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1954709",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/94117009",
@@ -359,7 +886,11 @@
      "address": "新宿区",
      "website": "https://enpaku.w.waseda.jp/",
      "openingHours": "We-Th, Sa-Mo 10:00-17:00; Tu, Fr 10:00-19:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3951945",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13569363447",
@@ -367,7 +898,11 @@
      "lat": 35.70792,
      "lon": 139.71625,
      "address": "2丁目",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11446206",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420780494",
@@ -377,7 +912,11 @@
      "address": "松濤一丁目",
      "website": "https://www.toguri-museum.or.jp/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11496415",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420784678",
@@ -386,7 +925,11 @@
      "lon": 139.71994,
      "website": "https://www.tfd.metro.tokyo.lg.jp/taiken/hkkan/index.html",
      "openingHours": "Tu-Su 09:30-17:00; Mo off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11559505",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1966249089",
@@ -395,7 +938,11 @@
      "lon": 139.71553,
      "address": "南青山6丁目",
      "website": "https://taro-okamoto.or.jp/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11473108",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/883253737",
@@ -403,7 +950,11 @@
      "lat": 35.72427,
      "lon": 139.68608,
      "website": "https://tokiwasomm.jp/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q96707302",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/208656517",
@@ -411,14 +962,22 @@
      "lat": 35.7195,
      "lon": 139.70941,
      "website": "https://www.museum.univ.gakushuin.ac.jp/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11448881",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420779754",
      "name": "平和祈念展示資料館",
      "lat": 35.69126,
      "lon": 139.69251,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q56025796",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/755423586",
@@ -428,7 +987,11 @@
      "address": "中落合二丁目",
      "website": "https://www.regasu-shinjuku.or.jp/rekihaku/saeki/",
      "openingHours": "May-Sep Tu-Su 10:00-16:30; Oct-Apr Tu-Su 10:00-16:00; Mo off; Dec 29-Jan 03 off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11382880",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420766948",
@@ -438,7 +1001,11 @@
      "address": "大京町",
      "website": "https://sato-museum.la.coocan.jp/",
      "openingHours": "Tu-Th, Sa-Su 10:00-17:00; Fr 10:00-19:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11384365",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420781298",
@@ -448,7 +1015,12 @@
      "address": "西早稲田一丁目",
      "website": "https://www.waseda.jp/culture/aizu-museum/",
      "openingHours": "Th-Tu,PH 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q30938116",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1420787066",
@@ -458,7 +1030,11 @@
      "address": "信濃町",
      "website": "https://museum.min-on.or.jp/",
      "openingHours": "Tu-Sa 11:00-16:00; Su 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q65272034",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/95633646",
@@ -468,7 +1044,11 @@
      "address": "松濤2丁目",
      "website": "https://shoto-museum.jp/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11561694",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420780821",
@@ -477,7 +1057,11 @@
      "lon": 139.72563,
      "address": "三栄町",
      "openingHours": "Tu-Su 09:30-17:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11501857",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7125341600",
@@ -485,7 +1069,11 @@
      "lat": 35.67495,
      "lon": 139.71516,
      "website": "https://japan-olympicmuseum.jp/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q140042196",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1189531504",
@@ -493,7 +1081,11 @@
      "lat": 35.69609,
      "lon": 139.73173,
      "website": "https://ichigaya-letterpress.jp/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q140025038",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1420782618",
@@ -502,7 +1094,11 @@
      "lon": 139.68676,
      "address": "西新宿三丁目",
      "openingHours": "Su, Tu-Th 11:00-19:00; Fr-Sa 11:00-20:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11524090",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2179766912",
@@ -510,7 +1106,11 @@
      "lat": 35.71585,
      "lon": 139.68427,
      "openingHours": "Tu-Su 10:00-16:30",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11533289",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/168230264",
@@ -518,7 +1118,98 @@
      "lat": 35.70394,
      "lon": 139.72545,
      "website": "https://soseki-museum.jp/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q24862403",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3243954081",
+     "name": "新宿眼科画廊",
+     "lat": 35.69473,
+     "lon": 139.70631,
+     "wikipediaCount": 1,
+     "wikidataId": "Q11501861",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/13524208446",
+     "name": "GALLERY X BY PARCO",
+     "lat": 35.66188,
+     "lon": 139.69912,
+     "address": "宇田川町",
+     "website": "https://art.parco.jp/",
+     "openingHours": "Mo-Su 11:00-21:00"
+    },
+    {
+     "id": "node/13524208445",
+     "name": "Parco Museum Tokyo",
+     "lat": 35.66184,
+     "lon": 139.69901,
+     "address": "宇田川町",
+     "website": "https://art.parco.jp/",
+     "openingHours": "Mo-Su 11:00-20:30"
+    },
+    {
+     "id": "node/1420767888",
+     "name": "刀剣博物館",
+     "lat": 35.68149,
+     "lon": 139.69067,
+     "address": "代々木四丁目",
+     "website": "https://www.touken.or.jp/",
+     "openingHours": "Tu-Su 10:00-16:30"
+    },
+    {
+     "id": "node/1420771079",
+     "name": "古賀政男音楽博物館",
+     "lat": 35.66777,
+     "lon": 139.68009,
+     "address": "上原三丁目",
+     "website": "https://www.koga.or.jp/",
+     "openingHours": "Tu-Su 10:00-17:00"
+    },
+    {
+     "id": "node/1420780738",
+     "name": "文化学園服飾博物館",
+     "lat": 35.68632,
+     "lon": 139.69501,
+     "website": "https://museum.bunka.ac.jp/",
+     "openingHours": "Tu-Su 10:00-16:30"
+    },
+    {
+     "id": "way/375676164",
+     "name": "新宿区立中村彝アトリエ記念館",
+     "lat": 35.72085,
+     "lon": 139.7012,
+     "website": "https://www.regasu-shinjuku.or.jp/rekihaku/tsune/40357/",
+     "openingHours": "Tu-Su 10:00-16:30; Mo,PH off; Dec 29-Jan 03 off"
+    },
+    {
+     "id": "way/28145214",
+     "name": "旧前田家本邸和館",
+     "lat": 35.66231,
+     "lon": 139.68073,
+     "website": "https://www.city.meguro.tokyo.jp/douro/shigoto/kouen/komaba.html",
+     "openingHours": "Tu-Su 09:00-16:00; Mo off; Dec 28-Jan 04 off"
+    },
+    {
+     "id": "way/28144706",
+     "name": "旧前田家本邸洋館",
+     "lat": 35.66222,
+     "lon": 139.68012,
+     "website": "https://www.syougai.metro.tokyo.jp/sesaku/maedatei.html",
+     "openingHours": "We-Su 09:00-16:00; Mo-Tu off"
+    },
+    {
+     "id": "node/10933634354",
+     "name": "早稲田スポーツミュージアム",
+     "lat": 35.70619,
+     "lon": 139.71698,
+     "website": "https://www.waseda.jp/culture/spomu/",
+     "openingHours": "10:00-17:00"
     }
    ]
   },
@@ -533,7 +1224,11 @@
      "lon": 139.70226,
      "website": "https://www.shibuya-scramble-square.com/sky/",
      "openingHours": "10:00-20:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 2,
+     "wikidataId": "Q116281743",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/12417634001",
@@ -1578,14 +2273,6 @@
      "website": "http://www.dug.co.jp/"
     },
     {
-     "id": "node/2214619702",
-     "name": "duo MUSIC EXCHANGE",
-     "lat": 35.65872,
-     "lon": 139.69553,
-     "address": "道玄坂2丁目",
-     "website": "https://www.duomusicexchange.com/index.html"
-    },
-    {
      "id": "node/13108533376",
      "name": "Enter",
      "lat": 35.6637,
@@ -1704,6 +2391,14 @@
      "lon": 139.68398,
      "address": "新宿区",
      "website": "https://ochiaisoup.com/"
+    },
+    {
+     "id": "node/13996076382",
+     "name": "Spotify O-EAST",
+     "lat": 35.65865,
+     "lon": 139.69552,
+     "address": "道玄坂2丁目",
+     "website": "https://shibuya-o.com/"
     }
    ]
   }

@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "PAR",
- "fetchedAt": "2026-10-16T23:14:23.526Z",
+ "fetchedAt": "2026-10-18T12:03:34.886Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,21 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q243",
+     "name": "Eyfel Kulesi",
+     "localName": "Eiffel Tower",
+     "lat": 48.8583,
+     "lon": 2.29448,
+     "wikipediaCount": 177,
+     "wikidataId": "Q243",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
      "id": "way/201611261",
      "name": "Notre Dame Katedrali",
      "localName": "Cathédrale Notre-Dame de Paris",
@@ -51,7 +66,12 @@
      "address": "Parvis Notre-Dame - Place Jean-Paul II 6",
      "website": "https://www.notredamedeparis.fr/",
      "openingHours": "Mo,Tu,We,Fr 07:50-19:00; Th 07:50-22:00; Sa,Su 08:15-19:30",
-     "wikipediaCount": 116
+     "wikipediaCount": 116,
+     "wikidataId": "Q2981",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/4533627787",
@@ -59,14 +79,60 @@
      "lat": 48.87076,
      "lon": 2.30533,
      "website": "https://en.parisinfo.com/transport/73130/Avenue-des-Champs-Elysees",
-     "wikipediaCount": 89
+     "wikipediaCount": 89,
+     "wikidataId": "Q550",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q64436",
+     "name": "Zafer Takı",
+     "localName": "Arc de Triomphe",
+     "lat": 48.87378,
+     "lon": 2.29504,
+     "wikipediaCount": 85,
+     "wikidataId": "Q64436",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/13411401985",
      "name": "Ruines de la Bastille",
      "lat": 48.8527,
      "lon": 2.36878,
-     "wikipediaCount": 84
+     "wikipediaCount": 84,
+     "wikidataId": "Q1865480",
+     "kinds": [
+      "adminArea",
+      "castle"
+     ]
+    },
+    {
+     "id": "wikidata/Q13205",
+     "name": "Fransa Stadyumu",
+     "localName": "Stade de France",
+     "lat": 48.92444,
+     "lon": 2.36,
+     "wikipediaCount": 70,
+     "wikidataId": "Q13205",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q193431",
+     "name": "Parc des Princes",
+     "lat": 48.84145,
+     "lon": 2.25305,
+     "wikipediaCount": 69,
+     "wikidataId": "Q193431",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/13859706",
@@ -77,14 +143,19 @@
      "address": "Boulevard de Ménilmontant 8",
      "website": "https://www.paris.fr/equipements/cimetiere-du-pere-lachaise-4080",
      "openingHours": "Mo-Fr 08:00-17:30; Sa 08:30-17:30; Su 09:00-17:30",
-     "wikipediaCount": 67
+     "wikipediaCount": 67,
+     "wikidataId": "Q311",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/10844713782",
      "name": "Pendule de Foucault",
      "lat": 48.84619,
      "lon": 2.34614,
-     "wikipediaCount": 65
+     "wikipediaCount": 65,
+     "wikidataId": "Q178841"
     },
     {
      "id": "relation/1060803",
@@ -92,7 +163,12 @@
      "lat": 48.87038,
      "lon": 2.31661,
      "website": "https://www.elysee.fr/",
-     "wikipediaCount": 64
+     "wikipediaCount": 64,
+     "wikidataId": "Q188190",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/54667456",
@@ -101,7 +177,15 @@
      "lon": 2.33173,
      "website": "https://www.operadeparis.fr/",
      "openingHours": "10:00-17:00",
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q187840",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/16407465",
@@ -111,14 +195,24 @@
      "address": "Place du Panthéon",
      "website": "https://www.paris-pantheon.fr/",
      "openingHours": "Mo-Su 10:00-18:00; Apr 1-Sep 30: Mo-Su 10:00-18:30; Jan 1,May 1,Dec 25: off",
-     "wikipediaCount": 60
+     "wikipediaCount": 60,
+     "wikidataId": "Q188856",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/432819047",
      "name": "Place de la Concorde",
      "lat": 48.86549,
      "lon": 2.32119,
-     "wikipediaCount": 60
+     "wikipediaCount": 60,
+     "wikidataId": "Q189503",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "way/23762981",
@@ -128,7 +222,12 @@
      "lon": 2.34303,
      "website": "https://www.sacre-coeur-montmartre.com/",
      "openingHours": "06:00-22:30",
-     "wikipediaCount": 58
+     "wikipediaCount": 58,
+     "wikidataId": "Q28785",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/175448742",
@@ -136,7 +235,8 @@
      "lat": 48.86175,
      "lon": 2.31796,
      "website": "https://www.assemblee-nationale.fr/",
-     "wikipediaCount": 58
+     "wikipediaCount": 58,
+     "wikidataId": "Q193582"
     },
     {
      "id": "relation/3344870",
@@ -146,7 +246,12 @@
      "address": "Boulevard du Palais 8",
      "website": "http://sainte-chapelle.monuments-nationaux.fr/",
      "openingHours": "Jan-Mar 09:00-17:00; Apr-Sep 09:00-19:00; Oct-Dec 09:00-17:00",
-     "wikipediaCount": 57
+     "wikipediaCount": 57,
+     "wikidataId": "Q193193",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/4208595",
@@ -155,7 +260,11 @@
      "lon": 2.29783,
      "website": "https://www.paris.fr/lieux/parc-du-champ-de-mars-1807",
      "openingHours": "24/7",
-     "wikipediaCount": 56
+     "wikipediaCount": 56,
+     "wikidataId": "Q217925",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/1463538",
@@ -164,7 +273,11 @@
      "lon": 2.31255,
      "address": "Rue de Grenelle 129",
      "website": "https://parisjetaime.com/culture/hotel-national-des-invalides-p1014",
-     "wikipediaCount": 56
+     "wikipediaCount": 56,
+     "wikidataId": "Q188977",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/4433289",
@@ -173,14 +286,36 @@
      "lon": 2.34361,
      "address": "Rue de la Sorbonne 17",
      "website": "https://www.pantheonsorbonne.fr/",
-     "wikipediaCount": 55
+     "wikipediaCount": 55,
+     "wikidataId": "Q999763",
+     "kinds": [
+      "business",
+      "university"
+     ]
+    },
+    {
+     "id": "wikidata/Q151030",
+     "name": "Moulin Rouge",
+     "lat": 48.88417,
+     "lon": 2.33222,
+     "wikipediaCount": 53,
+     "wikidataId": "Q151030",
+     "kinds": [
+      "business",
+      "musicVenue"
+     ]
     },
     {
      "id": "relation/975955",
      "name": "Palais du Luxembourg",
      "lat": 48.84855,
      "lon": 2.33714,
-     "wikipediaCount": 52
+     "wikipediaCount": 52,
+     "wikidataId": "Q329852",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/128206209",
@@ -189,7 +324,28 @@
      "lon": 2.33636,
      "website": "https://www.senat.fr/visite/jardin/",
      "openingHours": "open \"check website https://www.senat.fr/visite/jardin/horaires.html\"; (sunset-00:30)-(sunrise-00:15) closed; Mar01-Sep30 (sunset-00:30)-07:30 closed",
-     "wikipediaCount": 50
+     "wikipediaCount": 50,
+     "wikidataId": "Q309458"
+    },
+    {
+     "id": "wikidata/Q457318",
+     "name": "Grand Palais",
+     "lat": 48.86611,
+     "lon": 2.3125,
+     "wikipediaCount": 50,
+     "wikidataId": "Q457318",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q209626",
+     "name": "Boulogne Ormanı",
+     "localName": "bois de Boulogne",
+     "lat": 48.86472,
+     "lon": 2.25083,
+     "wikipediaCount": 49,
+     "wikidataId": "Q209626"
     },
     {
      "id": "way/16406633",
@@ -197,14 +353,36 @@
      "lat": 48.84211,
      "lon": 2.32198,
      "openingHours": "Mo-Su 09:30-23:30",
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q323767",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
     },
     {
      "id": "relation/3300400",
      "name": "Palais Royal",
      "lat": 48.86352,
      "lon": 2.33692,
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q329948",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q818517",
+     "name": "Tuileries Bahçesi",
+     "localName": "Tuileries Garden",
+     "lat": 48.86389,
+     "lon": 2.32611,
+     "wikipediaCount": 47,
+     "wikidataId": "Q818517",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/437812893",
@@ -214,7 +392,12 @@
      "address": "Place du Puits de l'Ermite 2 bis",
      "website": "https://www.mosqueedeparis.net/",
      "openingHours": "Sa-Th 09:00-18:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q392564",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/54180046",
@@ -223,7 +406,47 @@
      "lon": 2.32447,
      "address": "Place de la Madeleine",
      "openingHours": "Mo-Su 09:30-19:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q330564",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q745942",
+     "name": "Kuzey Garı",
+     "localName": "Gare du Nord",
+     "lat": 48.88111,
+     "lon": 2.35528,
+     "wikipediaCount": 46,
+     "wikidataId": "Q745942",
+     "kinds": [
+      "heritage",
+      "office",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q271639",
+     "name": "Vincennes Ormanı",
+     "localName": "Bois de Vincennes",
+     "lat": 48.82806,
+     "lon": 2.43306,
+     "wikipediaCount": 46,
+     "wikidataId": "Q271639"
+    },
+    {
+     "id": "wikidata/Q270273",
+     "name": "Lutetia",
+     "lat": 48.85472,
+     "lon": 2.3475,
+     "wikipediaCount": 44,
+     "wikidataId": "Q270273",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
     },
     {
      "id": "node/910390736",
@@ -233,35 +456,121 @@
      "address": "Boulevard du Palais 2",
      "website": "https://www.paris-conciergerie.fr/",
      "openingHours": "Mo-Su 09:30-18:00",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q138101",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/53574149",
      "name": "Pont Neuf",
      "lat": 48.85652,
      "lon": 2.34081,
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q335277",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "way/375076234",
      "name": "Pyramide du Louvre",
      "lat": 48.86101,
      "lon": 2.33585,
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q13397"
+    },
+    {
+     "id": "wikidata/Q810700",
+     "name": "Bataclan",
+     "lat": 48.86306,
+     "lon": 2.37083,
+     "wikipediaCount": 42,
+     "wikidataId": "Q810700",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q390243",
+     "name": "Charles-de-Gaulle Meydanı",
+     "localName": "place Charles-de-Gaulle",
+     "lat": 48.87389,
+     "lon": 2.29472,
+     "wikipediaCount": 42,
+     "wikidataId": "Q390243",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q778784",
+     "name": "Bastille Meydanı",
+     "localName": "Place de la Bastille",
+     "lat": 48.85314,
+     "lon": 2.36911,
+     "wikipediaCount": 41,
+     "wikidataId": "Q778784",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q638423",
+     "name": "Bastille Opera Binası",
+     "localName": "Opéra Bastille",
+     "lat": 48.85194,
+     "lon": 2.37056,
+     "wikipediaCount": 41,
+     "wikidataId": "Q638423",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/1019368",
      "name": "Palais Bourbon",
      "lat": 48.86161,
      "lon": 2.31825,
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q936633",
+     "kinds": [
+      "office",
+      "palace"
+     ]
     },
     {
      "id": "way/54175774",
      "name": "Place Vendôme",
      "lat": 48.86747,
      "lon": 2.32944,
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q643520",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q663673",
+     "name": "Château de Vincennes",
+     "lat": 48.84278,
+     "lon": 2.43583,
+     "wikipediaCount": 40,
+     "wikidataId": "Q663673",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "relation/3262297",
@@ -269,24 +578,108 @@
      "lat": 48.86148,
      "lon": 2.33517,
      "website": "https://www.louvre.fr/",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q1075988",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/227483542",
      "name": "Arc de Triomphe du Carrousel",
      "lat": 48.86173,
      "lon": 2.33291,
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q631104"
     },
     {
-     "id": "relation/284089",
-     "name": "Hôtel de ville",
-     "lat": 48.85643,
-     "lon": 2.35253,
-     "address": "Place de l’Hotel de Ville",
-     "website": "https://www.paris.fr/",
-     "openingHours": "Mo-Sa 10:00-19:00",
-     "wikipediaCount": 36
+     "id": "wikidata/Q747541",
+     "name": "Lyon Garı",
+     "localName": "Paris-Gare-de-Lyon",
+     "lat": 48.84472,
+     "lon": 2.37361,
+     "wikipediaCount": 39,
+     "wikidataId": "Q747541",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q898629",
+     "name": "Vosges Meydanı",
+     "localName": "place des Vosges",
+     "lat": 48.85556,
+     "lon": 2.36556,
+     "wikipediaCount": 39,
+     "wikidataId": "Q898629",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q330375",
+     "name": "Folies Bergère",
+     "lat": 48.87417,
+     "lon": 2.345,
+     "wikipediaCount": 38,
+     "wikidataId": "Q330375",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q631114",
+     "name": "Montparnasse Garı",
+     "localName": "Gare Montparnasse",
+     "lat": 48.83933,
+     "lon": 2.31829,
+     "wikipediaCount": 38,
+     "wikidataId": "Q631114",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q860172",
+     "name": "Saint-Martin Kanalı",
+     "localName": "Canal Saint-Martin",
+     "lat": 48.84722,
+     "lon": 2.36667,
+     "wikipediaCount": 38,
+     "wikidataId": "Q860172",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q838691",
+     "name": "Ulusal Doğa Tarihi Müzesi (Paris)",
+     "localName": "Muséum national d'histoire naturelle",
+     "lat": 48.84222,
+     "lon": 2.35611,
+     "wikipediaCount": 38,
+     "wikidataId": "Q838691",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q334186",
+     "name": "Saint-Germain-des-Prés Manastırı",
+     "localName": "Royal abbey of Saint-Germain-des-Prés",
+     "lat": 48.85389,
+     "lon": 2.33444,
+     "wikipediaCount": 37,
+     "wikidataId": "Q334186",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     }
    ]
   },
@@ -295,6 +688,54 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q19675",
+     "name": "Louvre Müzesi",
+     "localName": "Louvre Museum",
+     "lat": 48.86111,
+     "lon": 2.33583,
+     "wikipediaCount": 159,
+     "wikidataId": "Q19675",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q23402",
+     "name": "Musée d'Orsay",
+     "lat": 48.85997,
+     "lon": 2.32653,
+     "wikipediaCount": 120,
+     "wikidataId": "Q23402",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q178065",
+     "name": "Pompidou Merkezi",
+     "localName": "Centre Georges Pompidou",
+     "lat": 48.86064,
+     "lon": 2.35224,
+     "wikipediaCount": 62,
+     "wikidataId": "Q178065",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/10027825204",
+     "name": "Espace Sorbonne 4",
+     "lat": 48.84978,
+     "lon": 2.3434,
+     "wikipediaCount": 58,
+     "wikidataId": "Q214654",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
      "id": "node/247618453",
      "name": "Musée des Arts et Métiers",
      "lat": 48.8661,
@@ -302,7 +743,23 @@
      "address": "Rue Réaumur 60",
      "website": "https://www.arts-et-metiers.net/",
      "openingHours": "Tu-Th 10:00-18:00; Fr 10:00-21:00; Sa-Su 10:00-18:00",
-     "wikipediaCount": 53
+     "wikipediaCount": 53,
+     "wikidataId": "Q1538826",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q820892",
+     "name": "Petit Palais",
+     "lat": 48.86603,
+     "lon": 2.31456,
+     "wikipediaCount": 47,
+     "wikidataId": "Q820892",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/493870538",
@@ -312,7 +769,12 @@
      "address": "Avenue du Colonel Henri Rol Tanguy 1",
      "website": "https://www.catacombes.paris.fr/",
      "openingHours": "Tu-Su 09:45-20:30",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q28924",
+     "kinds": [
+      "museum",
+      "ruins"
+     ]
     },
     {
      "id": "node/910390736",
@@ -322,7 +784,120 @@
      "address": "Boulevard du Palais 2",
      "website": "https://www.paris-conciergerie.fr/",
      "openingHours": "Mo-Su 09:30-18:00",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q138101",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q273593",
+     "name": "École des Beaux-Arts",
+     "localName": "Beaux-Arts de Paris",
+     "lat": 48.85681,
+     "lon": 2.33328,
+     "wikipediaCount": 41,
+     "wikidataId": "Q273593",
+     "kinds": [
+      "business",
+      "museum",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q857276",
+     "name": "Musée d'Art Moderne de Paris",
+     "localName": "Musée d'art moderne de Paris",
+     "lat": 48.8643,
+     "lon": 2.2978,
+     "wikipediaCount": 40,
+     "wikidataId": "Q857276",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1895953",
+     "name": "Musée National d'Art Moderne",
+     "lat": 48.86064,
+     "lon": 2.35228,
+     "wikipediaCount": 38,
+     "wikidataId": "Q1895953",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q743206",
+     "name": "Musée Picasso",
+     "lat": 48.85973,
+     "lon": 2.36244,
+     "wikipediaCount": 38,
+     "wikidataId": "Q743206",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q650519",
+     "name": "Rodin Müzesi",
+     "localName": "Musée Rodin",
+     "lat": 48.85536,
+     "lon": 2.31582,
+     "wikipediaCount": 38,
+     "wikidataId": "Q650519",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q726781",
+     "name": "Musée de l'Orangerie",
+     "lat": 48.86385,
+     "lon": 2.32254,
+     "wikipediaCount": 35,
+     "wikidataId": "Q726781",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q640447",
+     "name": "Carnavalet Müzesi",
+     "localName": "Musée Carnavalet",
+     "lat": 48.85737,
+     "lon": 2.36274,
+     "wikipediaCount": 31,
+     "wikidataId": "Q640447",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1124095",
+     "name": "Cluny Müzesi",
+     "localName": "Musée de Cluny",
+     "lat": 48.85056,
+     "lon": 2.34333,
+     "wikipediaCount": 31,
+     "wikidataId": "Q1124095",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q860166",
+     "name": "Arap Dünyası Enstitüsü",
+     "localName": "Arab World Institute",
+     "lat": 48.8489,
+     "lon": 2.35704,
+     "wikipediaCount": 30,
+     "wikidataId": "Q860166",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/130102845",
@@ -332,7 +907,11 @@
      "address": "Rue de Grenelle 129",
      "website": "http://www.musee-armee.fr/",
      "openingHours": "Nov-Mar: Mo-Su 10:00-17:00; Apr-Oct: Mo-Su 10:00-18:00; Apr-Sep: Tu 21:00+; Jan 1 off; May 1 off; Dec 25 off",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1996069",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/251851363",
@@ -342,7 +921,59 @@
      "address": "Boulevard Montmartre 10",
      "website": "https://www.grevin.com/",
      "openingHours": "Mo-Fr 09:30-18:30; Sa,Su 09:30-19:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1265070",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1165526",
+     "name": "Musée Jacquemart-André",
+     "lat": 48.87543,
+     "lon": 2.31051,
+     "wikipediaCount": 27,
+     "wikidataId": "Q1165526",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q174274",
+     "name": "Cinémathèque Française",
+     "lat": 48.83694,
+     "lon": 2.3825,
+     "wikipediaCount": 26,
+     "wikidataId": "Q174274",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q656296",
+     "name": "Galerie nationale du Jeu de Paume",
+     "lat": 48.86583,
+     "lon": 2.32389,
+     "wikipediaCount": 25,
+     "wikidataId": "Q656296",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1411180",
+     "name": "Luxembourg Müzesi",
+     "localName": "Luxembourg Museum",
+     "lat": 48.84861,
+     "lon": 2.33403,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1411180",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1426215340",
@@ -351,7 +982,22 @@
      "lon": 2.3249,
      "address": "Rue de Grenelle 59-61",
      "website": "https://www.museemaillol.com/",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q946883",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q977732",
+     "name": "Musée d'Art et d'Histoire du Judaïsme",
+     "lat": 48.86111,
+     "lon": 2.35528,
+     "wikipediaCount": 22,
+     "wikidataId": "Q977732",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/247584452",
@@ -360,7 +1006,35 @@
      "lon": 2.33295,
      "address": "Rue de Rivoli 107",
      "website": "https://madparis.fr/musee-des-arts-decoratifs",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1319378",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q549143",
+     "name": "BnF Museum",
+     "lat": 48.8678,
+     "lon": 2.3384,
+     "wikipediaCount": 19,
+     "wikidataId": "Q549143",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1782606",
+     "name": "Musée national Eugène-Delacroix",
+     "localName": "Eugène-Delacroix National Museum",
+     "lat": 48.8546,
+     "lon": 2.3354,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1782606",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/251318666",
@@ -369,7 +1043,46 @@
      "lon": 2.33455,
      "address": "Rue Catherine de La Rochefoucauld 14",
      "website": "https://musee-moreau.fr/",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2296362",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9780876697",
+     "name": "Galerie Saint-Séverin",
+     "lat": 48.8522,
+     "lon": 2.34517,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1710376",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2715373",
+     "name": "Musée Bourdelle",
+     "lat": 48.84306,
+     "lon": 2.31833,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2715373",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q2919066",
+     "name": "Musée de Montmartre",
+     "lat": 48.8877,
+     "lon": 2.3406,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2919066",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/252970813",
@@ -379,7 +1092,11 @@
      "address": "Rue Poulbot 11",
      "website": "https://www.daliparis.com/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q973216",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/254033221",
@@ -389,7 +1106,56 @@
      "address": "Place des Vosges 6",
      "website": "https://www.maisonsvictorhugo.paris.fr/paris",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2599177",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1572452",
+     "name": "Musée Cognacq-Jay",
+     "lat": 48.85819,
+     "lon": 2.36139,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1572452",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q2714932",
+     "name": "Musée de la Vie romantique",
+     "lat": 48.88112,
+     "lon": 2.33352,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2714932",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1954498",
+     "name": "Musée Nissim-de-Camondo",
+     "localName": "Musée Nissim de Camondo",
+     "lat": 48.87889,
+     "lon": 2.31278,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1954498",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q614450",
+     "name": "Palais de la Découverte",
+     "lat": 48.86611,
+     "lon": 2.31083,
+     "wikipediaCount": 15,
+     "wikidataId": "Q614450",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1336873192",
@@ -399,7 +1165,11 @@
      "address": "Rue Cadet 16",
      "website": "http://www.museefm.org/",
      "openingHours": "Tu-Fr 10:00-12:30,14:00-18:00; Sa 10:00-13:00,14:00-19:00; Su 10:00-12:30,14:00-18:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2597719",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11148144370",
@@ -409,179 +1179,11 @@
      "address": "Esplanade Habib Bourguiba",
      "website": "https://musee-egouts.paris.fr/",
      "openingHours": "Tu-Su 10:00-17:00; Dec 25,Jan 01-Jan 15 closed",
-     "wikipediaCount": 13
-    },
-    {
-     "id": "node/993828548",
-     "name": "Musée de la Poste",
-     "lat": 48.84146,
-     "lon": 2.31722,
-     "address": "Boulevard de Vaugirard 34",
-     "website": "https://www.museedelaposte.fr/",
-     "openingHours": "Mo-Sa 10:00-18:00",
-     "wikipediaCount": 12
-    },
-    {
-     "id": "node/323911913",
-     "name": "Maison européenne de la Photographie",
-     "lat": 48.85512,
-     "lon": 2.35896,
-     "address": "Rue de Fourcy 5-7",
-     "website": "https://www.mep-fr.org/",
-     "openingHours": "We-Su 11:00-20:00",
-     "wikipediaCount": 11
-    },
-    {
-     "id": "node/11259580512",
-     "name": "Musée Curie",
-     "lat": 48.84424,
-     "lon": 2.34479,
-     "website": "https://musee.curie.fr/",
-     "openingHours": "We-Sa 13:00-17:00",
-     "wikipediaCount": 11
-    },
-    {
-     "id": "node/3303412974",
-     "name": "Musée des Plans-Reliefs",
-     "lat": 48.85646,
-     "lon": 2.31324,
-     "address": "Rue de Grenelle 129",
-     "website": "https://www.museedesplansreliefs.culture.fr/",
-     "openingHours": "Oct-Mar: Mo-Su 10:00-17:00; Apr-Sep: Mo-Su 10:00-18:00; Mo[1] off; Jan 1 off; May 1 off; Nov 1 off; Dec 25 off",
-     "wikipediaCount": 10
-    },
-    {
-     "id": "node/252211317",
-     "name": "Musée Edith Piaf",
-     "lat": 48.86624,
-     "lon": 2.38174,
-     "address": "Rue Camille Crespin du Gast 5",
-     "website": "https://www.parisinfo.com/musee-monument-paris/71402/Musee-Edith-Piaf",
-     "openingHours": "Mo-We 13:00-18:00; Th 10:00-12:00 \"mandatory reservation by phone\"",
-     "wikipediaCount": 9
-    },
-    {
-     "id": "node/4664509356",
-     "name": "Musée des Archives nationales",
-     "lat": 48.86045,
-     "lon": 2.35781,
-     "address": "Rue des Francs Bourgeois 60",
-     "website": "https://www.archives-nationales.culture.gouv.fr/le-musee-des-archives-nationales",
-     "openingHours": "Mo,We-Fr 10:00-17:30, Sa,Su 14:00-17:30",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/4745608521",
-     "name": "Fondation Custodia",
-     "lat": 48.86136,
-     "lon": 2.31977,
-     "address": "Rue de Lille 121",
-     "website": "https://www.fondationcustodia.fr/",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/7552537853",
-     "name": "Musée de la Magie",
-     "lat": 48.85312,
-     "lon": 2.36117,
-     "address": "Rue Saint-Paul 11",
-     "website": "https://www.museedelamagie.com/",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "node/1426016793",
-     "name": "Musée Adam Mickiewicz",
-     "lat": 48.85135,
-     "lon": 2.35559,
-     "address": "Quai d'Orléans 6",
-     "website": "https://www.ibpp.eu/",
-     "openingHours": "Tu-Fr 10:00-13:00, 14:00-18:00; Sa 10:00-18:00",
-     "wikipediaCount": 6
-    },
-    {
-     "id": "node/3303412973",
-     "name": "Musée de l'Ordre de la Libération",
-     "lat": 48.85569,
-     "lon": 2.31133,
-     "address": "Rue de Grenelle 129",
-     "website": "https://www.ordredelaliberation.fr/fr_doc/musee.html",
-     "openingHours": "Apr 01-Oct 31: Mo-Su 10:00-18:00; Nov 01,Mar 31: Mo-Su 10:00-17:00",
-     "wikipediaCount": 6
-    },
-    {
-     "id": "node/1419519631",
-     "name": "Pavillons de Bercy",
-     "lat": 48.83277,
-     "lon": 2.38934,
-     "address": "Avenue des Terroirs de France 53",
-     "website": "https://arts-forains.com/",
-     "wikipediaCount": 6
-    },
-    {
-     "id": "node/1426281644",
-     "name": "Bibliothèque-Musée de l'Opéra",
-     "lat": 48.87188,
-     "lon": 2.33121,
-     "address": "Rue Scribe 8",
-     "website": "https://www.bnf.fr/",
-     "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 5
-    },
-    {
-     "id": "node/1426176059",
-     "name": "Musée d'Histoire de la Médecine",
-     "lat": 48.85132,
-     "lon": 2.3409,
-     "address": "Rue de l'École de Médecine 12",
-     "website": "https://u-paris.fr/musee-de-lhistoire-de-la-medecine",
-     "openingHours": "Mo-We,Fr,Sa 14:00-17:30",
-     "wikipediaCount": 5
-    },
-    {
-     "id": "node/3209234481",
-     "name": "Galerie Perrotin",
-     "lat": 48.86052,
-     "lon": 2.36537,
-     "website": "https://www.perrotin.com/",
-     "wikipediaCount": 5
-    },
-    {
-     "id": "node/6860970815",
-     "name": "Le Musée du Fumeur",
-     "lat": 48.85865,
-     "lon": 2.38222,
-     "website": "https://www.museedufumeur.net/",
-     "openingHours": "Mo-Sa 12:30-19:30",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/1426245245",
-     "name": "Musée de Minéralogie",
-     "lat": 48.84539,
-     "lon": 2.33946,
-     "address": "Boulevard Saint-Michel 60",
-     "website": "https://www.musee.minesparis.psl.eu/",
-     "openingHours": "Tu-Fr 13:30-18:00; Sa 10:00-12:30,14:00-17:00",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/11209951498",
-     "name": "Musée social",
-     "lat": 48.85786,
-     "lon": 2.32181,
-     "address": "Rue Las Cases 5",
-     "website": "https://www.cedias.org/",
-     "openingHours": "Mo-Th 09:00-12:00, 14:00-18:00; Fr 09:00-12:00, 14:00-17:00",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/4512162051",
-     "name": "Fondation Dosne-Thiers",
-     "lat": 48.87843,
-     "lon": 2.33708,
-     "address": "Place Saint-Georges 27",
-     "website": "https://www.fondation-dosne-thiers.fr/",
-     "wikipediaCount": 4
+     "wikipediaCount": 14,
+     "wikidataId": "Q2654419",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -589,6 +1191,60 @@
    "status": "ok",
    "wikipediaCountsAvailable": true,
    "places": [
+    {
+     "id": "node/5164114322",
+     "name": "Pont Alexandre III",
+     "lat": 48.86373,
+     "lon": 2.31356,
+     "wikipediaCount": 44,
+     "wikidataId": "Q390418",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/4551075167",
+     "name": "Pont des Arts",
+     "lat": 48.8586,
+     "lon": 2.3377,
+     "wikipediaCount": 35,
+     "wikidataId": "Q1329141",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/1697195692",
+     "name": "Montmartre",
+     "lat": 48.88611,
+     "lon": 2.34312,
+     "wikipediaCount": 24,
+     "wikidataId": "Q99562"
+    },
+    {
+     "id": "node/5163691221",
+     "name": "Pont Saint-Louis",
+     "lat": 48.85277,
+     "lon": 2.35276,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1140060",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "node/7883928585",
+     "name": "Notre Dame",
+     "lat": 48.85324,
+     "lon": 2.34705,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2720522",
+     "kinds": [
+      "square"
+     ]
+    },
     {
      "id": "way/339023638",
      "name": "La Terrasse des Galeries Lafayette",
@@ -621,40 +1277,10 @@
      "lon": 2.38548
     },
     {
-     "id": "node/1697195692",
-     "name": "Montmartre",
-     "lat": 48.88611,
-     "lon": 2.34312
-    },
-    {
-     "id": "node/7883928585",
-     "name": "Notre Dame",
-     "lat": 48.85324,
-     "lon": 2.34705
-    },
-    {
      "id": "node/3462104314",
      "name": "Palais Garnier",
      "lat": 48.87143,
      "lon": 2.33197
-    },
-    {
-     "id": "node/5164114322",
-     "name": "Pont Alexandre III",
-     "lat": 48.86373,
-     "lon": 2.31356
-    },
-    {
-     "id": "node/4551075167",
-     "name": "Pont des Arts",
-     "lat": 48.8586,
-     "lon": 2.3377
-    },
-    {
-     "id": "node/5163691221",
-     "name": "Pont Saint-Louis",
-     "lat": 48.85277,
-     "lon": 2.35276
     },
     {
      "id": "node/4893981921",
@@ -761,6 +1387,7 @@
      "website": "https://www.auchienquifume.com/",
      "openingHours": "Mo-Su 08:00-01:00",
      "cuisine": "french",
+     "wikidataId": "Q17303726",
      "detailed": true
     },
     {
@@ -854,6 +1481,7 @@
      "website": "https://bistrotpaulbert.fr/",
      "openingHours": "Mo-Th 12:00-14:00,19:30-22:45; Fr,Sa 12:00-14:30,19:30-23:00",
      "cuisine": "french",
+     "wikidataId": "Q130388074",
      "detailed": true
     },
     {
@@ -905,6 +1533,7 @@
      "website": "https://www.bouillon-julien.com/",
      "openingHours": "Mo-Su 11:45-24:00",
      "cuisine": "coffee shop",
+     "wikidataId": "Q3427906",
      "detailed": true
     },
     {
@@ -915,6 +1544,11 @@
      "website": "https://www.bofingerparis.com/",
      "openingHours": "Mo-Sa 12:00-15:00, 18:30-00:00; Su 12:00-15:00, 18:30-23:00",
      "cuisine": "french",
+     "wikidataId": "Q22921405",
+     "kinds": [
+      "business",
+      "heritage"
+     ],
      "detailed": true
     },
     {
@@ -1819,6 +2453,7 @@
      "lon": 2.37925,
      "website": "https://www.lebateauphare.co/",
      "openingHours": "Mo,Tu 18:00-24:00, We 18:00-01:00, Th,Fr 18:00-02:00, Sa 13:00-02:00, Su 13:00-24:00",
+     "wikidataId": "Q2365441",
      "detailed": true
     },
     {
@@ -1829,6 +2464,7 @@
      "address": "Rue au Maire 13",
      "website": "https://tangoparis.com/",
      "openingHours": "Fr-Sa 22:30-05:00; Su 18:00-23:00",
+     "wikidataId": "Q3227521",
      "detailed": true
     },
     {
@@ -1925,7 +2561,8 @@
      "lat": 48.85204,
      "lon": 2.33462,
      "address": "Rue Princesse 15",
-     "website": "https://castel.paris/"
+     "website": "https://castel.paris/",
+     "wikidataId": "Q2963161"
     },
     {
      "id": "node/1108414671",
@@ -1933,7 +2570,8 @@
      "lat": 48.85279,
      "lon": 2.3463,
      "address": "Rue de la Huchette 5",
-     "website": "http://www.caveaudelahuchette.fr/"
+     "website": "http://www.caveaudelahuchette.fr/",
+     "wikidataId": "Q517995"
     },
     {
      "id": "node/12312129878",
@@ -1964,7 +2602,8 @@
      "lat": 48.87131,
      "lon": 2.37362,
      "address": "Rue du Faubourg du Temple 150",
-     "website": "http://www.la-java.fr/"
+     "website": "http://www.la-java.fr/",
+     "wikidataId": "Q3209830"
     },
     {
      "id": "node/8459561473",
@@ -1979,7 +2618,8 @@
      "lat": 48.85402,
      "lon": 2.37216,
      "address": "Rue de Lappe 9",
-     "website": "https://www.balajo.fr/"
+     "website": "https://www.balajo.fr/",
+     "wikidataId": "Q16626681"
     },
     {
      "id": "node/3846860861",

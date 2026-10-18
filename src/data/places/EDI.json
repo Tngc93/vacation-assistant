@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "EDI",
- "fetchedAt": "2026-10-16T23:41:47.968Z",
+ "fetchedAt": "2026-10-18T16:33:57.668Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -51,7 +51,15 @@
      "address": "Castlehill",
      "website": "https://www.edinburghcastle.scot/",
      "openingHours": "Apr 01-Sep 30 09:30-18:00; Oct 01-Dec 23,Dec 27-31,Jan 02-Mar 31 09:30-17:00; Dec 24 09:30-16:00; Jan 01 11:00-17:00; Dec 25-26 off",
-     "wikipediaCount": 57
+     "wikipediaCount": 57,
+     "wikidataId": "Q212065",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "museum",
+      "ruins"
+     ]
     },
     {
      "id": "relation/4599",
@@ -59,7 +67,8 @@
      "lat": 55.95188,
      "lon": -3.17523,
      "website": "https://www.parliament.scot/",
-     "wikipediaCount": 54
+     "wikipediaCount": 54,
+     "wikidataId": "Q206171"
     },
     {
      "id": "relation/16769442",
@@ -69,7 +78,12 @@
      "address": "Canongate",
      "website": "https://www.royalcollection.org.uk/visit/palace-of-holyroodhouse",
      "openingHours": "Nov 01-Mar 29 09:30-16:30; Mar 31-Oct 31 09:30-18:00",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q505950",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/42407060",
@@ -79,14 +93,83 @@
      "address": "Royal Mile",
      "website": "https://www.stgilescathedral.org.uk/",
      "openingHours": "Apr-Oct Mo-Fr 10:00-18:00; Apr-Oct Sa 09:00-17:00; Apr-Oct,Nov-Mar Su 13:00-17:00; Nov-Mar Mo-Sa 09:00-17:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q1547466",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q591133",
+     "name": "Old Town",
+     "lat": 55.94757,
+     "lon": -3.19163,
+     "wikipediaCount": 25,
+     "wikidataId": "Q591133",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q1278116",
+     "name": "Easter Road",
+     "lat": 55.96167,
+     "lon": -3.16556,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1278116",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/41893742",
      "name": "Holyrood Abbey",
      "lat": 55.95314,
      "lon": -3.17163,
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q966862",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q852908",
+     "name": "Royal Mile",
+     "lat": 55.95056,
+     "lon": -3.18556,
+     "wikipediaCount": 24,
+     "wikidataId": "Q852908",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1548664",
+     "name": "Princes Street",
+     "lat": 55.95131,
+     "lon": -3.20088,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1548664",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1807521",
+     "name": "Royal Botanic Garden Edinburgh",
+     "lat": 55.96507,
+     "lon": -3.20853,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1807521",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "node/505014478",
@@ -94,7 +177,8 @@
      "lat": 55.94879,
      "lon": -3.20016,
      "website": "https://www.edinburghcastle.scot/see-and-do/highlights/mons-meg",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q952412"
     },
     {
      "id": "way/39044819",
@@ -104,7 +188,34 @@
      "address": "East Princes Street Gardens",
      "website": "https://www.edinburghmuseums.org.uk/venue/scott-monument",
      "openingHours": "Mo-Su 10:00-21:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2502213",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2746031",
+     "name": "Scottish Parliament Building",
+     "lat": 55.95222,
+     "lon": -3.17472,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2746031",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1144643",
+     "name": "Edinburgh Merkez Camii",
+     "localName": "Edinburgh Central Mosque",
+     "lat": 55.945,
+     "lon": -3.18611,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1144643",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/225470834",
@@ -113,14 +224,140 @@
      "lon": -3.21628,
      "address": "Palmerston Place 23",
      "website": "https://www.cathedral.net/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2324015",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q980646",
+     "name": "Princes Street Gardens",
+     "lat": 55.95005,
+     "lon": -3.20299,
+     "wikipediaCount": 14,
+     "wikidataId": "Q980646"
+    },
+    {
+     "id": "wikidata/Q519072",
+     "name": "St.Mary Katedrali",
+     "localName": "St Mary's Cathedral",
+     "lat": 55.9562,
+     "lon": -3.18786,
+     "wikipediaCount": 14,
+     "wikidataId": "Q519072",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q940770",
+     "name": "Edinburgh and Glasgow Union Canal",
+     "lat": 55.94265,
+     "lon": -3.20812,
+     "wikipediaCount": 13,
+     "wikidataId": "Q940770"
+    },
+    {
+     "id": "wikidata/Q1636910",
+     "name": "Usher Hall",
+     "lat": 55.94727,
+     "lon": -3.20502,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1636910",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q2928830",
+     "name": "Bute House",
+     "lat": 55.9526,
+     "lon": -3.20806,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2928830",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/22412844",
      "name": "National Monument of Scotland",
      "lat": 55.95475,
      "lon": -3.18177,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q6974379",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2033510",
+     "name": "The Mound",
+     "lat": 55.95008,
+     "lon": -3.19559,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2033510",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "node/6585283285",
+     "name": "The Real Mary King's Close",
+     "lat": 55.94996,
+     "lon": -3.19045,
+     "address": "Warriston’s Close 2",
+     "website": "https://www.realmarykingsclose.com/",
+     "openingHours": "Mo-Su 09:00-17:45",
+     "wikipediaCount": 11,
+     "wikidataId": "Q1084992",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q3700280",
+     "name": "Balmoral Hotel",
+     "lat": 55.9527,
+     "lon": -3.18961,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3700280",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
+    },
+    {
+     "id": "node/2265831236",
+     "name": "Grassmarket 500th Anniversary Stone",
+     "lat": 55.94726,
+     "lon": -3.19716,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1543570",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2061784",
+     "name": "St Margaret's",
+     "lat": 55.94872,
+     "lon": -3.20011,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2061784",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/287130390",
@@ -129,14 +366,24 @@
      "lon": -3.19228,
      "address": "Greyfriars Place",
      "website": "https://greyfriarskirk.com/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2113456",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/62066717",
      "name": "Ross Fountain",
      "lat": 55.95006,
      "lon": -3.20304,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q7369346",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/33710",
@@ -146,7 +393,11 @@
      "address": "South Bridge",
      "website": "https://www.ed.ac.uk/",
      "openingHours": "Mo-Su 08:00-21:30",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4283940",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/268408103",
@@ -156,7 +407,12 @@
      "address": "Castlehill 549",
      "website": "https://www.camera-obscura.co.uk/",
      "openingHours": "08:00-22:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4211494",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/465938528",
@@ -165,7 +421,11 @@
      "lon": -3.18258,
      "website": "https://cultureedinburgh.com/our-venues/nelson-monument",
      "openingHours": "10:00-15:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q11838983",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/2914760336",
@@ -174,7 +434,11 @@
      "lon": -3.19587,
      "address": "Castlehill 354",
      "website": "https://www.scotchwhiskyexperience.co.uk/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4526278",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/293890858",
@@ -183,21 +447,33 @@
      "lon": -3.18508,
      "address": "High Street 45",
      "website": "https://www.scottishstorytellingcentre.com/john-knox-house/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6243358",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/320974678",
      "name": "Dugald Stewart Monument",
      "lat": 55.95452,
      "lon": -3.18443,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5312471",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/239888879",
      "name": "Political Martyrs' Monument",
      "lat": 55.95337,
      "lon": -3.18579,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7210212",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/4618730691",
@@ -206,7 +482,11 @@
      "lon": -3.19368,
      "address": "Lawnmarket 477B",
      "website": "https://www.nts.org.uk/visit/places/gladstones-land",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5566312",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/62061248",
@@ -215,7 +495,12 @@
      "lon": -3.20648,
      "address": "Princes Street",
      "website": "https://www.stjohns-edinburgh.org.uk/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q5117460",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/465223757",
@@ -224,7 +509,12 @@
      "lon": -3.2035,
      "address": "St Stephen Street 105",
      "website": "http://saintstephensstockbridge.com/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7595476",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/62061368",
@@ -233,14 +523,23 @@
      "lon": -3.20512,
      "address": "Lothian Road 5",
      "website": "https://www.st-cuthberts.net/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7756122",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/12223010635",
      "name": "Melville's Monument",
      "lat": 55.95422,
      "lon": -3.19315,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q17570686",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/41558984",
@@ -250,7 +549,8 @@
      "address": "St Leonard's Lane 19",
      "website": "https://www.holyrooddistillery.co.uk/",
      "openingHours": "Mo-Su 11:30+",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q120108000"
     },
     {
      "id": "node/2853530751",
@@ -259,7 +559,11 @@
      "lon": -3.20821,
      "address": "Charlotte Square 7",
      "website": "https://www.nts.org.uk/Property/Georgian-House/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7736202",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/81243762",
@@ -268,7 +572,12 @@
      "lon": -3.19587,
      "address": "George Street 15-17",
      "website": "https://www.edinburghnewtownchurch.org.uk/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7592411",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/2973367148",
@@ -277,21 +586,41 @@
      "lon": -3.19088,
      "address": "Market Street 31",
      "website": "https://www.thedungeons.com/edinburgh/en/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q55076772",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "way/164545444",
      "name": "Mercat Cross",
      "lat": 55.94965,
      "lon": -3.19018,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6818041",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/442615638",
      "name": "Brassfounders Column",
      "lat": 55.94602,
      "lon": -3.1854,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q17812523",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/8043028",
+     "name": "Dunbar's Close Garden",
+     "lat": 55.95215,
+     "lon": -3.17894,
+     "wikipediaCount": 1,
+     "wikidataId": "Q13889055"
     }
    ]
   },
@@ -306,7 +635,13 @@
      "lon": -3.19562,
      "website": "https://www.nationalgalleries.org/",
      "openingHours": "Mo-Su 10:00-17:00; Th 10:00-19:00",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q942713",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/467226683",
@@ -316,7 +651,11 @@
      "address": "Chambers Street",
      "website": "https://www.nms.ac.uk/national-museum-of-scotland",
      "openingHours": "Mo-Su 10:00-17:00; Jan 01 12:00-17:00; Dec 25 off; Dec 26 12:00-17:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q1633842",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/73090302",
@@ -326,7 +665,12 @@
      "address": "Queen Street 1",
      "website": "https://www.nationalgalleries.org/visit/scottish-national-portrait-gallery",
      "openingHours": "Mo-Su 10:00-17:00; Th 10:00-19:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q2441562",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4618730690",
@@ -336,7 +680,11 @@
      "address": "Lady Stair's Close",
      "website": "https://www.edinburghmuseums.org.uk/venue/writers-museum",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q8038444",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/259067386",
@@ -346,7 +694,11 @@
      "address": "Canongate 142-146",
      "website": "https://www.edinburghmuseums.org.uk/venue/museum-edinburgh",
      "openingHours": "Mo-Sa 10:00-17:00; Aug: Su 12:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q11838982",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25946269",
@@ -354,7 +706,11 @@
      "lat": 55.95053,
      "lon": -3.17441,
      "website": "https://www.dynamicearth.org.uk/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3358350",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2955931322",
@@ -364,7 +720,11 @@
      "address": "High Street 42",
      "website": "https://www.edinburghmuseums.org.uk/venue/museum-childhood",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q15122172",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4618730716",
@@ -374,7 +734,11 @@
      "address": "The Mound",
      "website": "https://www.museumonthemound.com/",
      "openingHours": "Mo,Su off; Tu-Fr 10:00-17:00; Sa,PH 13:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6941127",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/5182745",
@@ -383,14 +747,24 @@
      "lon": -3.19627,
      "address": "The Mound",
      "website": "https://www.royalscottishacademy.org/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7374813",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/41893740",
      "name": "The King's Gallery",
      "lat": 55.95259,
      "lon": -3.17388,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7269994",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/70826506",
@@ -400,7 +774,8 @@
      "address": "Market Street 45",
      "website": "https://www.fruitmarket.co.uk/",
      "openingHours": "11:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4402028"
     },
     {
      "id": "way/41299975",
@@ -409,7 +784,12 @@
      "lon": -3.20166,
      "website": "https://www.nms.ac.uk/national-war-museum/",
      "openingHours": "Apr-Sep: Mo-Su 09:45-17:45; Oct-Mar: Mo-Su 09:45-16:45",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6979345",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/291214494",
@@ -419,7 +799,11 @@
      "address": "South Bridge",
      "website": "https://www.trg.ed.ac.uk/",
      "openingHours": "Tu-Sa 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7679039",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/70954995",
@@ -429,7 +813,11 @@
      "address": "Canongate 163",
      "website": "https://www.edinburghmuseums.org.uk/Venues/The-People-s-Story",
      "openingHours": "Mo-Sa 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4306389",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/70955023",
@@ -437,7 +825,11 @@
      "lat": 55.95096,
      "lon": -3.18568,
      "openingHours": "\"on appointment\"",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7842704",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/42261848",
@@ -445,7 +837,15 @@
      "lat": 55.94899,
      "lon": -3.1864,
      "website": "https://www.stcecilias.ed.ac.uk/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7592777",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "museum",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "node/9422760984",
@@ -455,7 +855,11 @@
      "address": "Dryden Terrace 1A",
      "website": "https://museumofscottishfireheritage.org/",
      "openingHours": "Tu-Sa 10:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q113370442",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/57709519",
@@ -463,7 +867,11 @@
      "lat": 55.965,
      "lon": -3.21015,
      "website": "http://www.rbge.org.uk/the-gardens/edinburgh/inverleith-house",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16931444",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6715804556",
@@ -471,7 +879,11 @@
      "lat": 55.94809,
      "lon": -3.20088,
      "website": "https://www.scotsdgmuseum.com/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q47486844",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/446654897",
@@ -479,7 +891,11 @@
      "lat": 55.94824,
      "lon": -3.20038,
      "website": "https://www.theroyalscots.co.uk/museum/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q50810299",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5025640452",
@@ -487,7 +903,11 @@
      "lat": 55.94485,
      "lon": -3.1901,
      "website": "https://www.ed.ac.uk/biomedical-sciences/anatomy/anatomical-museum",
-     "openingHours": "Sa[-1] 10:00-16:00; Jun-Jul off"
+     "openingHours": "Sa[-1] 10:00-16:00; Jun-Jul off",
+     "wikidataId": "Q26986300",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11503362946",
@@ -569,6 +989,92 @@
      "address": "Nicolson Street",
      "website": "https://museum.rcsed.ac.uk/",
      "openingHours": "Mo-Su 10:00-17:00"
+    },
+    {
+     "id": "node/2131101051",
+     "name": "The Atelier Gallery",
+     "lat": 55.9629,
+     "lon": -3.2004,
+     "address": "Howard Street 5",
+     "website": "https://www.theateliergallery.co.uk/",
+     "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 11:00-15:00"
+    },
+    {
+     "id": "node/3103808183",
+     "name": "Watson Gallery",
+     "lat": 55.95422,
+     "lon": -3.20147,
+     "address": "Queen Street 39",
+     "website": "https://www.watsongallery.co.uk/",
+     "openingHours": "Mo-Sa 11:00-18:00;Su 12:00-17:00"
+    },
+    {
+     "id": "node/11665348379",
+     "name": "A Home for Photography",
+     "lat": 55.94953,
+     "lon": -3.21167,
+     "address": "William Street 6",
+     "openingHours": "Tu-Sa 12:00-18:00"
+    },
+    {
+     "id": "way/70836441",
+     "name": "City Art Centre",
+     "lat": 55.95102,
+     "lon": -3.18919,
+     "address": "Market Street 2",
+     "website": "https://www.edinburghmuseums.org.uk/venue/city-art-centre",
+     "wikidataId": "Q17569430",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/659876969",
+     "name": "Edinburgh Printmakers",
+     "lat": 55.94198,
+     "lon": -3.21281,
+     "address": "Gilmore Park 2",
+     "website": "https://edinburghprintmakers.co.uk/"
+    },
+    {
+     "id": "node/2977624480",
+     "name": "Museum of Magic, Fortune-Telling and Witchcraft",
+     "lat": 55.95067,
+     "lon": -3.18583,
+     "website": "https://www.museummfw.com/"
+    },
+    {
+     "id": "node/11251068260",
+     "name": "The Scottish Gallery",
+     "lat": 55.95649,
+     "lon": -3.1992,
+     "address": "Dundas Street 16",
+     "website": "https://scottish-gallery.co.uk/"
+    },
+    {
+     "id": "node/10537342908",
+     "name": "Trevor Jones Art",
+     "lat": 55.96466,
+     "lon": -3.17434,
+     "address": "Dalmeny Street 32 - 36",
+     "website": "https://www.trevorjonesart.com/"
+    },
+    {
+     "id": "node/12207082837",
+     "name": "Unlimited Corporation",
+     "lat": 55.96022,
+     "lon": -3.17981,
+     "address": "Brunswick Street 77",
+     "website": "https://unlimitedcorporation.org/"
+    },
+    {
+     "id": "node/12085784974",
+     "name": "White Space",
+     "lat": 55.94396,
+     "lon": -3.18193,
+     "address": "East Crosscauseway 76",
+     "website": "https://whitespace76.com/"
     }
    ]
   },
@@ -891,17 +1397,6 @@
      "detailed": true
     },
     {
-     "id": "node/3397807661",
-     "name": "Holyrood",
-     "lat": 55.9492,
-     "lon": -3.18212,
-     "address": "Holyrood Road 20",
-     "website": "https://www.pibroch-scottish-restaurant.co.uk/",
-     "openingHours": "Mo-Su 12:00-22:00",
-     "cuisine": "chinese",
-     "detailed": true
-    },
-    {
      "id": "node/2103111403",
      "name": "Indaba",
      "lat": 55.94298,
@@ -930,6 +1425,17 @@
      "lon": -3.18503,
      "website": "https://kahanirestaurant.co.uk/",
      "openingHours": "Mo-Su 12:00+",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/504203387",
+     "name": "Kalpna",
+     "lat": 55.94347,
+     "lon": -3.18311,
+     "address": "St Patrick Square 2-3",
+     "website": "https://www.kalpnarestaurant.com/",
+     "openingHours": "12:00-14:30,17:30-22:30",
      "cuisine": "indian",
      "detailed": true
     }
@@ -1325,6 +1831,17 @@
      "detailed": true
     },
     {
+     "id": "node/2338734297",
+     "name": "Greyfriars Bobby",
+     "lat": 55.94682,
+     "lon": -3.19151,
+     "address": "Candlemaker Row 34",
+     "website": "https://www.nicholsonspubs.co.uk/restaurants/scotlandandnorthernireland/greyfriarsbobbysbarcandlemakerrowedinburgh",
+     "openingHours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:30-23:00",
+     "cuisine": "british",
+     "detailed": true
+    },
+    {
      "id": "node/2323807241",
      "name": "The Advocate",
      "lat": 55.94952,
@@ -1541,16 +2058,6 @@
      "address": "Rutland Place 6",
      "website": "https://ghillie-dhu.co.uk/",
      "openingHours": "Mo-Fr 11:00-03:00; Sa-Su 10:00-03:00",
-     "detailed": true
-    },
-    {
-     "id": "node/2338734297",
-     "name": "Greyfriars Bobby",
-     "lat": 55.94682,
-     "lon": -3.19151,
-     "address": "Candlemaker Row 34",
-     "website": "https://www.nicholsonspubs.co.uk/restaurants/scotlandandnorthernireland/greyfriarsbobbysbarcandlemakerrowedinburgh",
-     "openingHours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00; Su 12:30-23:00",
      "detailed": true
     },
     {

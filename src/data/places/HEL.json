@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "HEL",
- "fetchedAt": "2026-10-16T23:39:39.315Z",
+ "fetchedAt": "2026-10-18T16:31:54.009Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,19 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1292442",
+     "name": "Suomenlinna",
+     "lat": 60.14361,
+     "lon": 24.98444,
+     "wikipediaCount": 52,
+     "wikidataId": "Q1292442",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
      "id": "way/1542850662",
      "name": "Helsingin tuomiokirkko",
      "lat": 60.17038,
@@ -50,16 +63,66 @@
      "address": "Unioninkatu 29",
      "website": "https://helsingintuomiokirkko.fi/",
      "openingHours": "Jun-Aug: Su-Sa 09:00-24:00; Sep-May: Su-Sa 09:00-18:00",
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q738015",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
-     "id": "node/4371604494",
-     "name": "Tuomiokirkon krypta",
-     "lat": 60.17068,
-     "lon": 24.95211,
-     "address": "Kirkkokatu 18",
-     "website": "https://helsingintuomiokirkko.fi/index/cafekrypta.html",
-     "wikipediaCount": 49
+     "id": "wikidata/Q332219",
+     "name": "Helsinki Olimpiyat Stadyumu",
+     "localName": "Helsinki Olympic Stadium",
+     "lat": 60.18689,
+     "lon": 24.92606,
+     "wikipediaCount": 42,
+     "wikidataId": "Q332219",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1044613",
+     "name": "Helsinki Garı",
+     "localName": "Helsinki Central Railway Station",
+     "lat": 60.17105,
+     "lon": 24.94145,
+     "wikipediaCount": 34,
+     "wikidataId": "Q1044613",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1142522",
+     "name": "Finlandia Salonu",
+     "localName": "Finlandia Hall",
+     "lat": 60.17606,
+     "lon": 24.93346,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1142522",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q1329554",
+     "name": "Senato Meydanı",
+     "localName": "Senate Square",
+     "lat": 60.16947,
+     "lon": 24.95228,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1329554",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/124143121",
@@ -69,7 +132,20 @@
      "address": "Lutherinkatu 3",
      "website": "https://www.temppeliaukionkirkko.fi/",
      "openingHours": "Mo,We-Fr 09:00-17:00; Tu,Su 12:00-17:00; Sa 09:00-11:45,12:45-13:15,14:15-14:45,15:45-17:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1132809",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q523268",
+     "name": "Havis Amanda",
+     "lat": 60.16758,
+     "lon": 24.9515,
+     "wikipediaCount": 27,
+     "wikidataId": "Q523268"
     },
     {
      "id": "way/15242921",
@@ -79,7 +155,12 @@
      "address": "Kanavakatu 1",
      "website": "http://hos.fi/fi/uspenskin-katedraali",
      "openingHours": "Tu-Fr 09:30-16:00; Sa 10:00-15:00; Su 12:00-15:00",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q1355001",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/25290864",
@@ -87,7 +168,21 @@
      "lat": 60.18203,
      "lon": 24.91342,
      "website": "https://www.hamhelsinki.fi/veistos/sibelius-monumentti/",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q2584017"
+    },
+    {
+     "id": "wikidata/Q31204",
+     "name": "Aziz Henry Katedrali",
+     "localName": "Pyhän Henrikin katedraali",
+     "lat": 60.15919,
+     "lon": 24.95432,
+     "wikipediaCount": 22,
+     "wikidataId": "Q31204",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/2123871",
@@ -95,14 +190,62 @@
      "lat": 60.16843,
      "lon": 24.95631,
      "address": "Pohjoisesplanadi 1",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q608346",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1635596",
+     "name": "Linnanmäki",
+     "lat": 60.18833,
+     "lon": 24.94028,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1635596",
+     "kinds": [
+      "attraction",
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q18659999",
+     "name": "Helsinki Merkez Kütüphanesi Oodi",
+     "localName": "Helsinki Central Library Oodi",
+     "lat": 60.17382,
+     "lon": 24.93806,
+     "wikipediaCount": 20,
+     "wikidataId": "Q18659999",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1368319",
+     "name": "Esplanadi Parkı",
+     "localName": "Esplanadi park",
+     "lat": 60.1675,
+     "lon": 24.94778,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1368319",
+     "kinds": [
+      "promenade",
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/457948795",
      "name": "Kauppatori",
      "lat": 60.16719,
      "lon": 24.95433,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q541933",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/89533459",
@@ -111,7 +254,232 @@
      "lon": 24.93294,
      "address": "Mannerheimintie 30",
      "website": "https://www.eduskunta.fi/FI/tietoaeduskunnasta/eduskunnan_talot_ja_taide/Sivut/default.aspx",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q2744984",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1386673",
+     "name": "Mannerheimintie",
+     "lat": 60.16889,
+     "lon": 24.94,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1386673",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2981697",
+     "name": "Kallio Kilisesi",
+     "localName": "Kallio Church",
+     "lat": 60.18423,
+     "lon": 24.94933,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2981697",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1402724",
+     "name": "Aleksanterinkatu",
+     "lat": 60.16898,
+     "lon": 24.94877,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1402724",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2511913",
+     "name": "Mareşal Mannerheim atlı heykel",
+     "localName": "Equestrian statue of Marshal Mannerheim",
+     "lat": 60.17155,
+     "lon": 24.9364,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2511913"
+    },
+    {
+     "id": "wikidata/Q926046",
+     "name": "Svenska Teatern",
+     "lat": 60.16738,
+     "lon": 24.9437,
+     "wikipediaCount": 16,
+     "wikidataId": "Q926046",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1698940",
+     "name": "Saint John's Church",
+     "lat": 60.16181,
+     "lon": 24.94472,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1698940",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1530985",
+     "name": "Alexander Theatre",
+     "lat": 60.16343,
+     "lon": 24.93334,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1530985",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q322921",
+     "name": "Kamppi Chapel",
+     "lat": 60.16944,
+     "lon": 24.93593,
+     "wikipediaCount": 14,
+     "wikidataId": "Q322921",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3129969",
+     "name": "Government Palace",
+     "lat": 60.16958,
+     "lon": 24.95378,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3129969",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q2614280",
+     "name": "Helsinki Synagogue",
+     "lat": 60.16759,
+     "lon": 24.92857,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2614280",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q435712",
+     "name": "Helsinki Old Church",
+     "lat": 60.16641,
+     "lon": 24.9393,
+     "wikipediaCount": 12,
+     "wikidataId": "Q435712",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3068506",
+     "name": "Mikael Agricola church",
+     "lat": 60.15845,
+     "lon": 24.93884,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3068506",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q644390",
+     "name": "Stockmann",
+     "lat": 60.16831,
+     "lon": 24.94211,
+     "wikipediaCount": 12,
+     "wikidataId": "Q644390",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1393988",
+     "name": "Helsinki City Hall",
+     "lat": 60.16831,
+     "lon": 24.95285,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1393988",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1888459",
+     "name": "Helsinki Music Centre",
+     "lat": 60.17361,
+     "lon": 24.935,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1888459",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q1127749",
+     "name": "Hotel Kämp",
+     "lat": 60.1684,
+     "lon": 24.947,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1127749",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q10549299",
+     "name": "Kristuskyrkan",
+     "lat": 60.176,
+     "lon": 24.92725,
+     "wikipediaCount": 11,
+     "wikidataId": "Q10549299",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3130332",
+     "name": "Rautatientori meydanı",
+     "localName": "Helsinki Railway Square",
+     "lat": 60.17111,
+     "lon": 24.94403,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3130332",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "way/123814071",
@@ -121,7 +489,8 @@
      "address": "Eteläranta 9",
      "website": "https://vanhakauppahalli.fi/",
      "openingHours": "Mo-Sa 08:00-18:00; Su 10:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3557940"
     },
     {
      "id": "way/127286563",
@@ -131,14 +500,19 @@
      "address": "Hammarskjöldintie 1A",
      "website": "https://www.hel.fi/fi/kulttuuri-ja-vapaa-aika/ulkoilu-puistot-ja-luontokohteet/puistot/talvipuutarha",
      "openingHours": "Mo-Th 10:00-16:00; Sa-Su 10:00-16:00; Fr off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3162448"
     },
     {
      "id": "node/287564778",
      "name": "Kirnu",
      "lat": 60.18826,
      "lon": 24.93999,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q826735",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "way/139499388",
@@ -148,7 +522,11 @@
      "address": "Hämeentie 1 a",
      "website": "https://www.hakaniemenkauppahalli.fi/",
      "openingHours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3126107",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/122954081",
@@ -158,7 +536,11 @@
      "address": "Lönnrotinkatu 34",
      "website": "https://www.hietalahdenkauppahalli.fi/",
      "openingHours": "Mo-Tu 08:00-18:00; We-Th 08:00-20:00; Fr-Sa 08:00-21:00; Su off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3135324",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/122869882",
@@ -168,21 +550,33 @@
      "address": "Kaisaniemenranta 2",
      "website": "https://www.luomus.fi/fi/kaisaniemen-kasvitieteellinen-puutarha",
      "openingHours": "Mo-Su 09:00-20:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3075676",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6807298155",
      "name": "Taiga",
      "lat": 60.18833,
      "lon": 24.93918,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q56401819",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/287563234",
      "name": "Tulireki",
      "lat": 60.18776,
      "lon": 24.93842,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1501063",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/5240070521",
@@ -190,14 +584,19 @@
      "lat": 60.165,
      "lon": 24.94897,
      "website": "https://www.hamhelsinki.fi/veistos/talvisodan-kansallinen-muistomerkki/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q48075469"
     },
     {
      "id": "node/287561405",
      "name": "Salama",
      "lat": 60.18724,
      "lon": 24.93948,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7403532",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "node/60242198",
@@ -205,90 +604,32 @@
      "lat": 60.15409,
      "lon": 24.93843,
      "website": "https://www.hamhelsinki.fi/veistos/merenkulkijoiden-ja-mereen-menehtyneiden-muistomerkki/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11882089"
     },
     {
      "id": "way/988146106",
      "name": "Panoraama",
      "lat": 60.18759,
      "lon": 24.9411,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q7131483",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ]
     },
     {
      "id": "node/287563015",
      "name": "Pikajuna",
      "lat": 60.18755,
      "lon": 24.93841,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "node/287560868",
-     "name": "Rinkeli",
-     "lat": 60.18791,
-     "lon": 24.93924,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "node/287570877",
-     "name": "Swingi",
-     "lat": 60.18812,
-     "lon": 24.94115,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "node/25238963",
-     "name": "Lapinlahden Lähde",
-     "lat": 60.16759,
-     "lon": 24.91319,
-     "address": "Lapinlahdenpolku 8",
-     "website": "https://lapinlahdenlahde.fi/",
-     "openingHours": "Mo-Fr 09:00-18:00"
-    },
-    {
-     "id": "way/457949936",
-     "name": "SkyWheel Helsinki",
-     "lat": 60.16673,
-     "lon": 24.95945,
-     "address": "Katajanokanlaituri 2",
-     "website": "https://www.skywheel.fi/",
-     "openingHours": "Mo-Th 10:00-21:00; Sa 10:00-23:00; Su 10:00-20:00; Fr 10:00-22:00"
-    },
-    {
-     "id": "node/6238798912",
-     "name": "Uusi Sauna",
-     "lat": 60.15936,
-     "lon": 24.91812,
-     "address": "Välimerenkatu 10",
-     "website": "https://uusisauna.fi/",
-     "openingHours": "We-Su 16:00-22:00"
-    },
-    {
-     "id": "node/790308340",
-     "name": "Hypytin",
-     "lat": 60.18839,
-     "lon": 24.94277,
-     "website": "https://www.linnanmaki.fi/"
-    },
-    {
-     "id": "node/10586906992",
-     "name": "Lapinlahti hospital Mental Museum",
-     "lat": 60.16761,
-     "lon": 24.91282,
-     "website": "https://lapinlahdenlahde.fi/mental-museum/"
-    },
-    {
-     "id": "node/826771962",
-     "name": "Rekkaralli",
-     "lat": 60.18756,
-     "lon": 24.93887,
-     "website": "https://www.linnanmaki.fi/en/rides/rekkaralli"
-    },
-    {
-     "id": "node/8985351078",
-     "name": "Suomen korkein benji",
-     "lat": 60.15314,
-     "lon": 24.93167,
-     "website": "https://www.skybreakers.com/suomenkorkein.htm"
+     "wikipediaCount": 1,
+     "wikidataId": "Q110469156",
+     "kinds": [
+      "attraction"
+     ]
     }
    ]
   },
@@ -304,7 +645,12 @@
      "address": "Kaivokatu 2",
      "website": "https://ateneum.fi/",
      "openingHours": "Tu 10:00-18:00; We-Th 10:00-20:00; Fr 10:00-18:00; Sa-Su 10:00-17:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q754507",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/6635",
@@ -314,7 +660,48 @@
      "address": "Mannerheimintie 34",
      "website": "https://www.kansallismuseo.fi/",
      "openingHours": "off \"Closed until 2027\"",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q1418136",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1633361",
+     "name": "Kiasma",
+     "lat": 60.17167,
+     "lon": 24.93694,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1633361",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q2983474",
+     "name": "Finlandiya Ulusal Galerisi",
+     "localName": "Finnish National Gallery",
+     "lat": 60.17167,
+     "lon": 24.93694,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2983474",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1418116",
+     "name": "Fin Mimarisi Müzesi",
+     "localName": "Museum of Finnish Architecture",
+     "lat": 60.16313,
+     "lon": 24.94775,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1418116",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/495923233",
@@ -325,7 +712,25 @@
      "website": "https://www.sinebrychoffintaidemuseo.fi/",
      "openingHours": "Mo off; Tu,Th-Fr 11:00-18:00; We 10:00-20:00; Sa-Su 10:00-17:00",
      "cuisine": "regional",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1393952",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q3330350",
+     "name": "Tasarım Müzesi (Helsinki)",
+     "localName": "Architecture & Design Museum",
+     "lat": 60.16312,
+     "lon": 24.94641,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3330350",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4723948808",
@@ -335,7 +740,12 @@
      "address": "Aleksanterinkatu 16",
      "website": "http://www.helsinginkaupunginmuseo.fi/",
      "openingHours": "Mo-Fr 11:00-19:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2031357",
+     "kinds": [
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "way/22562853",
@@ -345,7 +755,11 @@
      "address": "Kalliolinnantie 14",
      "website": "https://www.mannerheim-museo.fi/",
      "openingHours": "Fr-Su 11:00-17:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3741344",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5887336141",
@@ -355,7 +769,11 @@
      "address": "Mannerheimintie 22-24",
      "website": "https://amosrex.fi/",
      "openingHours": "Mo,We-Fr 11:00-20:00; Tu off; Sa-Su 11:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q22662489",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1381017855",
@@ -365,7 +783,11 @@
      "address": "Eteläinen Rautatiekatu 8",
      "website": "https://hamhelsinki.fi/",
      "openingHours": "Tu-Su 11:00-19:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q5710459",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1381017823",
@@ -375,7 +797,11 @@
      "address": "Pohjoinen Rautatiekatu 13",
      "website": "https://www.luomus.fi/",
      "openingHours": "Su 10:00-16:00; Sa 10:00-18:00; Tu-Fr 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3330830",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/606949808",
@@ -384,7 +810,11 @@
      "lon": 24.94955,
      "website": "https://www.helsinki.fi/fi/tiedemuseo-liekki/tiedemuseo-liekin-nayttelykeskus",
      "openingHours": "Mo,Su off; Tu-We,Fr-Sa 12:00-16:00; Th 12:00-20:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3329065",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/23233917",
@@ -394,7 +824,12 @@
      "address": "Töölönkatu 51 A",
      "website": "https://trammuseum.fi/",
      "openingHours": "Mo-Su 11:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q11890140",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/124697240",
@@ -404,7 +839,12 @@
      "address": "Mannerheimintie 13 B",
      "website": "https://hakasalmivilla.fi/",
      "openingHours": "Tu 11:00-19:00; We-Su 11:00-17:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q10715474",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/34937117",
@@ -414,7 +854,12 @@
      "address": "Kristianinkatu 12",
      "website": "https://ruiskumestarintalo.fi/",
      "openingHours": "Nov 26-Dec 21 We-Fr 13:00-18:00; Nov 26-Dec 21 Sa,Su 11:00-17:00; Dec 22-Jan 08 We-Fr 11:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q15280777",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4777841321",
@@ -424,7 +869,11 @@
      "address": "Paavo Nurmen tie 1",
      "website": "https://tahto.com/",
      "openingHours": "Mo, We, Fr 09:00-16:00; Tu, Th 09:00-19:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11894947",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/22500092",
@@ -434,7 +883,11 @@
      "address": "Korkeavuorenkatu 23",
      "website": "https://www.admuseo.fi/",
      "openingHours": "11:00-18:00; PH off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q78724098",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1221210297",
@@ -444,17 +897,11 @@
      "address": "Ludviginkatu 2-4",
      "website": "http://www.merkkiin.fi/",
      "openingHours": "Mo-Su 11:00-17:00",
-     "wikipediaCount": 2
-    },
-    {
-     "id": "way/8042215",
-     "name": "Kiasma",
-     "lat": 60.17204,
-     "lon": 24.93658,
-     "address": "Mannerheiminaukio 2",
-     "website": "https://kiasma.fi/",
-     "openingHours": "Tu 10:00-17:00; We-Fr 10:00-20:30; Sa-Su 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 2,
+     "wikidataId": "Q5402351",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/606949807",
@@ -464,7 +911,12 @@
      "address": "Snellmaninkatu 2",
      "website": "https://www.rahamuseo.fi/",
      "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 11:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q55026761",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1375995144",
@@ -474,7 +926,11 @@
      "address": "Siltavuorenranta 14",
      "website": "https://hvssy.fi/vaestonsuojelumuseo/",
      "openingHours": "Sep-May: Sa 10:00-14:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42904286",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2026095895",
@@ -483,7 +939,8 @@
      "lon": 24.96731,
      "address": "Kauppiaankatu 11",
      "website": "https://pss-saatio.fi/kotimuseo/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q17383985"
     },
     {
      "id": "node/1037603239",
@@ -584,6 +1041,67 @@
      "address": "Humalistonkatu 1",
      "website": "https://akvart.fi/",
      "openingHours": "Mo off; Tu,Th-Fr 11:00-17:00; We 11:00-18:00; Sa-Su 12:00-18:00"
+    },
+    {
+     "id": "node/7631477458",
+     "name": "Galleria B5",
+     "lat": 60.16505,
+     "lon": 24.93868,
+     "address": "Bulevardi 5",
+     "website": "https://www.galleriab5.fi/",
+     "openingHours": "Mo-Tu,Sa-Su off; We-Fr 12:00-17:00"
+    },
+    {
+     "id": "node/12177363279",
+     "name": "Galleria Dromig",
+     "lat": 60.16808,
+     "lon": 24.96306,
+     "address": "Satamakatu 7",
+     "website": "https://dromig.fi/",
+     "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/4747221564",
+     "name": "Galleria Halmetoja",
+     "lat": 60.16665,
+     "lon": 24.93636,
+     "address": "Kalevankatu 16",
+     "website": "https://galleryhalmetoja.com/",
+     "openingHours": "Mo off; Tu-Fr 11:00-18:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/12000592144",
+     "name": "Galleria Katariina",
+     "lat": 60.16619,
+     "lon": 24.94689,
+     "address": "Rikhardinkatu 1",
+     "website": "https://www.helsingintaiteilijaseura.fi/nayttelytoiminta/galleria-katariina/",
+     "openingHours": "Mo off; Tu-Fr 11:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/6001450503",
+     "name": "Galleria Kuja",
+     "lat": 60.16775,
+     "lon": 24.91298,
+     "website": "https://tilajakamo.fi/",
+     "openingHours": "Mo-Su 09:00-18:00"
+    },
+    {
+     "id": "node/5464807611",
+     "name": "Galleria Kuvitus",
+     "lat": 60.18315,
+     "lon": 24.95774,
+     "address": "Hämeentie 28",
+     "website": "https://kuvittajat.fi/galleriakuvitus/",
+     "openingHours": "Mo-We off; Th-Fr 12:00-17:00; Sa-Su 12:00-16:00"
+    },
+    {
+     "id": "node/7139084496",
+     "name": "Galleria Sculptor",
+     "lat": 60.16586,
+     "lon": 24.95227,
+     "website": "https://sculptors.fi/",
+     "openingHours": "Mo off; Tu-Fr 12:00-17:00; Sa-Su 12:00-16:00"
     }
    ]
   },
@@ -1036,6 +1554,7 @@
      "website": "http://caferegatta.fi/",
      "openingHours": "09:00-22:00",
      "cuisine": "regional",
+     "wikidataId": "Q18913085",
      "detailed": true
     },
     {
@@ -1680,6 +2199,7 @@
      "address": "Kasarmikatu 40",
      "website": "http://www.kaarle.com/",
      "openingHours": "Th-Sa 21:00-04:00",
+     "wikidataId": "Q123416919",
      "detailed": true
     },
     {
@@ -1720,6 +2240,7 @@
      "address": "Urho Kekkosen katu 4-6",
      "website": "https://tavastiaklubi.fi/",
      "openingHours": "Su-Th 20:00-01:00, Fr 20:00-03:00, Sa 20:00-04:00",
+     "wikidataId": "Q3290475",
      "detailed": true
     },
     {

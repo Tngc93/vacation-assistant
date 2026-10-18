@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SKG",
- "fetchedAt": "2026-10-16T23:43:14.975Z",
+ "fetchedAt": "2026-10-18T16:35:40.009Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,13 +43,59 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q730019",
+     "name": "Kasımiye Camii",
+     "localName": "Basilica of Agios Dimitrios, Thessaloniki",
+     "lat": 40.63882,
+     "lon": 22.94786,
+     "wikipediaCount": 35,
+     "wikidataId": "Q730019",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
      "id": "way/730026417",
      "name": "Λευκός Πύργος",
      "lat": 40.62633,
      "lon": 22.94838,
      "website": "https://www.mbp.gr/en/",
      "openingHours": "Nov-Mar: Mo-Su 08:30-15:30; Apr-Oct: Mo-Su 08:00-21:00",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q550576",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "museum",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q732708",
+     "name": "Selanik'in Erken Hristiyan ve Bizans Anıtları",
+     "localName": "Paleochristian and Byzantine monuments of Thessaloniki",
+     "lat": 40.6386,
+     "lon": 22.9478,
+     "wikipediaCount": 30,
+     "wikidataId": "Q732708",
+     "kinds": [
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q1568660",
+     "name": "Ayasofya Camii",
+     "localName": "Hagia Sophia",
+     "lat": 40.63284,
+     "lon": 22.94709,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1568660",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/135678907",
@@ -57,63 +103,287 @@
      "localName": "Αψίδα Γαλερίου (Καμάρα)",
      "lat": 40.6322,
      "lon": 22.9518,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1258082",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q1584774",
+     "name": "Eskicuma Camii",
+     "localName": "Church of the Acheiropoietos",
+     "lat": 40.63497,
+     "lon": 22.94786,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1584774",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q667472",
+     "name": "Aristotelous Meydanı",
+     "localName": "Aristotelous Square",
+     "lat": 40.63246,
+     "lon": 22.94119,
+     "wikipediaCount": 18,
+     "wikidataId": "Q667472",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1504317",
+     "name": "Aziz Nikolaos Orphanos Kilisesi",
+     "localName": "Church of Saint Nicholas Orphanos",
+     "lat": 40.63776,
+     "lon": 22.95599,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1504317",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1650229",
+     "name": "Panaya Halkeon Kilisesi",
+     "localName": "Church of Panagia Chalkeon",
+     "lat": 40.63679,
+     "lon": 22.94366,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1650229",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q962846",
+     "name": "Vlatadon Manastırı",
+     "localName": "Vlatadon Monastery",
+     "lat": 40.64183,
+     "lon": 22.95447,
+     "wikipediaCount": 17,
+     "wikidataId": "Q962846",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/2903111",
      "name": "Βυζαντινά Τείχη Θεσσαλονίκης",
      "lat": 40.63557,
      "lon": 22.94784,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q7963249",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q12297917",
+     "name": "Hamza Bey Camii",
+     "localName": "Hamza Bey Mosque",
+     "lat": 40.63746,
+     "lon": 22.94169,
+     "wikipediaCount": 16,
+     "wikidataId": "Q12297917",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1163620",
+     "name": "Latomos Manastırı",
+     "localName": "Church of Hosios David",
+     "lat": 40.64181,
+     "lon": 22.95228,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1163620",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q7231282",
+     "name": "Selânik Limanı",
+     "localName": "Port of Thessaloniki",
+     "lat": 40.636,
+     "lon": 22.922,
+     "wikipediaCount": 16,
+     "wikidataId": "Q7231282",
+     "kinds": [
+      "port",
+      "station"
+     ]
     },
     {
      "id": "way/420484163",
      "name": "Βυζαντινό Λουτρό",
      "lat": 40.63964,
      "lon": 22.95277,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1018764",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q1742795",
+     "name": "Aya Apostoli Kilisesi (Selanik)",
+     "localName": "Church of the Holy Twelve Apostles",
+     "lat": 40.64284,
+     "lon": 22.93755,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1742795",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1504607",
+     "name": "Aya Panteleymon Kilisesi (Selanik)",
+     "localName": "Church of Saint Panteleimon",
+     "lat": 40.63311,
+     "lon": 22.95121,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1504607",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1742784",
+     "name": "Aya Katerini Kilisesi (Selanik)",
+     "localName": "Church of Saint Catherine, Thessaloniki",
+     "lat": 40.64315,
+     "lon": 22.9443,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1742784",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1147957",
+     "name": "İlyas Peygamber Kilisesi",
+     "localName": "Church of Prophet Elijah",
+     "lat": 40.64092,
+     "lon": 22.94858,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1147957",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1728464",
+     "name": "Kurtarıcı İsa Kilisesi, Selanik",
+     "localName": "Church of the Saviour",
+     "lat": 40.63211,
+     "lon": 22.95089,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1728464",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q15116556",
+     "name": "Selanik Garı",
+     "localName": "Thessaloniki railway station",
+     "lat": 40.64447,
+     "lon": 22.92914,
+     "wikipediaCount": 12,
+     "wikidataId": "Q15116556",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "way/59559434",
      "name": "Ροτόντα",
      "lat": 40.63331,
      "lon": 22.95291,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1584841",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/32339051",
      "name": "Μπέη Χαμάμ",
      "lat": 40.63574,
      "lon": 22.94521,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q852960",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/14788669",
      "name": "Ρωμαϊκή Αγορά",
      "lat": 40.6377,
      "lon": 22.94587,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q16932289",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/26653800",
      "name": "Αψιδική αίθουσα",
      "lat": 40.63111,
      "lon": 22.9508,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3891634",
+     "kinds": [
+      "heritage",
+      "palace",
+      "ruins"
+     ]
     },
     {
      "id": "way/23190012",
      "name": "Γιαχουντί Χαμάμ",
      "lat": 40.63465,
      "lon": 22.94076,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q12299817",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/556445767",
      "name": "Πασά Χαμάμ",
      "lat": 40.64174,
      "lon": 22.93716,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12290081",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/9634839927",
@@ -121,21 +391,27 @@
      "localName": "Στήλη των Όφεων",
      "lat": 40.64183,
      "lon": 22.94102,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q31284671"
     },
     {
      "id": "node/11185044731",
      "name": "Βυζαντινή κρήνη",
      "lat": 40.64645,
      "lon": 22.93133,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q65964060"
     },
     {
      "id": "node/11461804034",
      "name": "Παλαιοχριστιανική Βασιλική Ξηροκρήνης",
      "lat": 40.64604,
      "lon": 22.92948,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q43546128",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/110163670",
@@ -144,35 +420,50 @@
      "lon": 22.94256,
      "website": "https://kapani.gr/",
      "openingHours": "Mo,We,Sa 08:00-16:00; Tu,Th-Fr 08:00-21:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16329958"
     },
     {
      "id": "node/10236731097",
      "name": "Ναός της Αφροδίτης",
      "lat": 40.64032,
      "lon": 22.94067,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q110215764"
     },
     {
      "id": "node/9562371629",
      "name": "Οθωμανική Κρήνη",
      "lat": 40.64308,
      "lon": 22.94927,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q65956789",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6893513887",
      "name": "Οθωμανική Κρήνη ή Σαρκοφάγος ή Νέκυια",
      "lat": 40.64059,
      "lon": 22.95023,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q65957486"
     },
     {
      "id": "way/881572597",
      "name": "Ωδείο",
      "lat": 40.63757,
      "lon": 22.94642,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q111668952",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
     },
     {
      "id": "way/1418770359",
@@ -204,7 +495,8 @@
      "id": "node/292160693",
      "name": "Άγαλμα Αριστοτέλη",
      "lat": 40.63224,
-     "lon": 22.94108
+     "lon": 22.94108,
+     "wikidataId": "Q115105725"
     },
     {
      "id": "node/5089276109",
@@ -222,31 +514,11 @@
      "id": "way/26637019",
      "name": "Αρχαιολογικός χώρος Πλατείας Διοικητηρίου",
      "lat": 40.63993,
-     "lon": 22.94374
-    },
-    {
-     "id": "node/1258982282",
-     "name": "Βυζαντινά Τείχη",
-     "lat": 40.63555,
-     "lon": 22.95565
-    },
-    {
-     "id": "node/140160188",
-     "name": "Βυζαντινά Τείχη Θεσσαλονίκης",
-     "lat": 40.64162,
-     "lon": 22.95787
-    },
-    {
-     "id": "node/13701556962",
-     "name": "ΓΕΦΥΡΑ ΑΝΑΣΤΕΝΑΓΜΩΝ",
-     "lat": 40.64904,
-     "lon": 22.9379
-    },
-    {
-     "id": "node/1409480582",
-     "name": "Ειρήνη",
-     "lat": 40.64733,
-     "lon": 22.94671
+     "lon": 22.94374,
+     "wikidataId": "Q116854531",
+     "kinds": [
+      "ruins"
+     ]
     }
    ]
   },
@@ -259,7 +531,37 @@
      "name": "Αλατζά Ιμαρέτ τζαμί",
      "lat": 40.63921,
      "lon": 22.94965,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q12271333",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q753756",
+     "name": "Atatürk Evi Müzesi",
+     "localName": "Atatürk Museum",
+     "lat": 40.63575,
+     "lon": 22.95431,
+     "wikipediaCount": 16,
+     "wikidataId": "Q753756",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q643773",
+     "name": "Selanik Yahudi Müzesi",
+     "localName": "Jewish Museum of Thessaloniki",
+     "lat": 40.63527,
+     "lon": 22.9398,
+     "wikipediaCount": 15,
+     "wikidataId": "Q643773",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3746008996",
@@ -267,7 +569,11 @@
      "lat": 40.63281,
      "lon": 22.93539,
      "website": "https://www.thmphoto.gr/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q2331186",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/14788383",
@@ -275,7 +581,12 @@
      "lat": 40.63322,
      "lon": 22.95292,
      "openingHours": "We-Mo 08:30-15:30",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1584841",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/377007405",
@@ -286,21 +597,34 @@
      "address": "Προξένου Κορομηλά 23",
      "website": "https://www.imma.edu.gr/",
      "openingHours": "Mo-Fr 09:00-14:00; We 09:00-20:00; Sa 10:00-14:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1954602",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/32339051",
      "name": "Μπέη Χαμάμ",
      "lat": 40.63574,
      "lon": 22.94521,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q852960",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/28464187",
      "name": "Μουσείο Κινηματογράφου Θεσσαλονίκης",
      "lat": 40.63294,
      "lon": 22.93558,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2613530",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1234888517",
@@ -308,14 +632,22 @@
      "lat": 40.64181,
      "lon": 22.9134,
      "address": "26ης Οκτωβρίου",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4306233",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1260045542",
      "name": "Κέντρο Ιστορίας Θεσσαλονίκης",
      "lat": 40.62913,
      "lon": 22.94996,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7783469",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1723432700",
@@ -323,7 +655,8 @@
      "lat": 40.64315,
      "lon": 22.94948,
      "address": "Δημητρίου Πολιορκητού 37",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6974229"
     },
     {
      "id": "way/973432209",
@@ -331,7 +664,11 @@
      "lat": 40.65495,
      "lon": 22.93416,
      "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q20652987",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11514355236",
@@ -339,14 +676,22 @@
      "lat": 40.6306,
      "lon": 22.94434,
      "address": "Βογατσικού 7",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q47296825",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/162093132",
      "name": "Φρούριο του Βαρδαρίου",
      "lat": 40.63858,
      "lon": 22.93316,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q108664934",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/975579297",
@@ -355,7 +700,11 @@
      "lon": 22.94561,
      "website": "http://odysseus.culture.gr/h/1/gh151.jsp?obj_id=19243",
      "openingHours": "Mo,We-Sa 08:00-15:30; Tu off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q111671242",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/23190028",
@@ -364,7 +713,8 @@
      "lon": 22.95023,
      "address": "Εγνατία 109",
      "openingHours": "Mo-Fr 09:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q104529518"
     },
     {
      "id": "relation/17763437",
@@ -373,7 +723,11 @@
      "lon": 22.93967,
      "address": "Αγίου Μηνά 11",
      "website": "http://www.jmth.gr/",
-     "openingHours": "Mo-Tu 09:00-14:00; We 09:00-14:00, 17:00-20:00; Th-Fr 09:00-14:00; Su 10:00-14:00; Sa off"
+     "openingHours": "Mo-Tu 09:00-14:00; We 09:00-14:00, 17:00-20:00; Th-Fr 09:00-14:00; Su 10:00-14:00; Sa off",
+     "wikidataId": "Q124354154",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/10291061609",
@@ -524,6 +878,7 @@
      "website": "https://modiglianikapani.business.site/",
      "openingHours": "Mo-Fr 08:00-00:00; Su 08:00-20:00",
      "cuisine": "greek",
+     "wikidataId": "Q95969377",
      "detailed": true
     },
     {

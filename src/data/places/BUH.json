@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BUH",
- "fetchedAt": "2026-10-16T23:49:18.389Z",
+ "fetchedAt": "2026-10-18T16:42:53.163Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -51,15 +51,72 @@
      "address": "Strada Izvor 2-4",
      "website": "http://cic.cdep.ro/",
      "openingHours": "Mar-Oct 09:00-17:00; Nov-Feb 10:00-16:00",
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q164150",
+     "kinds": [
+      "office",
+      "palace",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q338602",
+     "name": "Stadionul Naţional",
+     "localName": "National Arena",
+     "lat": 44.4372,
+     "lon": 26.1525,
+     "wikipediaCount": 44,
+     "wikidataId": "Q338602",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1428093",
+     "name": "National Cathedral",
+     "lat": 44.42591,
+     "lon": 26.08226,
+     "wikipediaCount": 31,
+     "wikidataId": "Q1428093",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1514860",
+     "name": "Romanian Patriarchal Cathedral",
+     "lat": 44.42457,
+     "lon": 26.09782,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1514860",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/658220894",
      "name": "Palatul Voievodal Curtea Veche",
-     "lat": 44.43011,
-     "lon": 26.10131,
+     "lat": 44.43012,
+     "lon": 26.10133,
      "openingHours": "Mo-Su 10:00-22:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1855757",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q5010221",
+     "name": "CEC Palace",
+     "lat": 44.432,
+     "lon": 26.0965,
+     "wikipediaCount": 16,
+     "wikidataId": "Q5010221",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/672149975",
@@ -67,7 +124,12 @@
      "lat": 44.4318,
      "lon": 26.09871,
      "address": "Strada Poștei 6",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q3119683",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/237750835",
@@ -75,7 +137,36 @@
      "localName": "Piața Universității",
      "lat": 44.43498,
      "lon": 26.1009,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1850614",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q3390456",
+     "name": "Devrim Meydanı",
+     "localName": "Revolution Square, Bucharest",
+     "lat": 44.43856,
+     "lon": 26.0975,
+     "wikipediaCount": 15,
+     "wikidataId": "Q3390456",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1138828",
+     "name": "National Theatre Bucharest \"Ion Luca Caragiale\"",
+     "lat": 44.43664,
+     "lon": 26.10357,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1138828",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/19896250",
@@ -84,7 +175,60 @@
      "lon": 26.09766,
      "address": "Piața Revoluției",
      "openingHours": "Mo-Fr 08:30-20:00; Sa 08:30-16:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q622015",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q959632",
+     "name": "Çeşmeci Parkı",
+     "localName": "Cișmigiu Gardens",
+     "lat": 44.437,
+     "lon": 26.09073,
+     "wikipediaCount": 13,
+     "wikidataId": "Q959632",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3394199",
+     "name": "Kretzulescu Church",
+     "lat": 44.43809,
+     "lon": 26.09664,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3394199",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2052075",
+     "name": "Carol Parkı",
+     "localName": "Carol Park",
+     "lat": 44.414,
+     "lon": 26.096,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2052075",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q950735",
+     "name": "Piața Unirii",
+     "lat": 44.428,
+     "lon": 26.10217,
+     "wikipediaCount": 12,
+     "wikidataId": "Q950735",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     },
     {
      "id": "way/232472401",
@@ -93,7 +237,35 @@
      "lat": 44.43949,
      "lon": 26.09586,
      "openingHours": "Tu 10:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3361220",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q631967",
+     "name": "Bulevardul Unirii",
+     "lat": 44.42631,
+     "lon": 26.1129,
+     "wikipediaCount": 11,
+     "wikidataId": "Q631967",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2916042",
+     "name": "Great Synagogue",
+     "lat": 44.42952,
+     "lon": 26.10861,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2916042",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/1130933459",
@@ -101,7 +273,12 @@
      "lat": 44.43102,
      "lon": 26.10669,
      "address": "Strada Sfânta Vineri",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2778310",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/39313897",
@@ -109,7 +286,12 @@
      "lat": 44.43953,
      "lon": 26.08872,
      "address": "Strada Știrbei Vodă 39",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q2684173",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/14059159",
@@ -117,14 +299,22 @@
      "lat": 44.42411,
      "lon": 26.09808,
      "address": "Aleea Dealul Mitropoliei 25",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q3333397",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/219710325",
      "name": "Piața Constituției",
      "lat": 44.4273,
      "lon": 26.0917,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q3382271",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/2230393",
@@ -132,14 +322,25 @@
      "lat": 44.4351,
      "lon": 26.09709,
      "address": "Strada Constantin Mille 1",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1670223",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/19803024",
      "name": "Hanul Manuc",
      "lat": 44.4295,
      "lon": 26.10218,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1159652",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "station"
+     ]
     },
     {
      "id": "way/232472620",
@@ -148,7 +349,14 @@
      "lon": 26.0951,
      "address": "Strada Ion Câmpineanu 28",
      "website": "https://salapalatului.ro/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q7403332",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "way/1448388407",
@@ -156,49 +364,80 @@
      "lat": 44.43133,
      "lon": 26.10412,
      "address": "Strada Bărăției 27",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3409440",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/1393030628",
      "name": "Memorialul Renașterii",
      "lat": 44.43889,
      "lon": 26.09745,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6815562",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/19932218",
      "name": "Hanul Gabroveni",
      "lat": 44.43146,
      "lon": 26.10264,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5516134",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
     },
     {
      "id": "way/129316970",
      "name": "Palatul Suțu",
      "lat": 44.43475,
      "lon": 26.10221,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12404278",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/105889107",
      "name": "Memorialul Eroilor Neamului",
      "lat": 44.41124,
      "lon": 26.09686,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3301859"
     },
     {
      "id": "way/1456390102",
      "name": "Palatul Băncii Marmorosch Blank",
      "lat": 44.43363,
      "lon": 26.09891,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12737402",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/32335381",
      "name": "Palatul Bursei de Valori",
      "lat": 44.43357,
      "lon": 26.10069,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q18545113",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/164369116",
@@ -207,7 +446,13 @@
      "lon": 26.09816,
      "address": "Calea Victoriei 56",
      "website": "https://grand-hotel-continental-bucuresti.continentalhotels.ro/en",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42772296",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
     },
     {
      "id": "way/80192188",
@@ -216,28 +461,47 @@
      "lon": 26.08712,
      "address": "Calea Rahovei 147-153",
      "website": "https://www.palatulbragadiru.ro/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18545110",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/1456412455",
      "name": "Blocul Adriatica-Trieste",
      "lat": 44.43024,
      "lon": 26.09709,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q26257275",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/1151081671",
      "name": "Monumentul Eroilor Sanitari",
      "lat": 44.43456,
      "lon": 26.07709,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12735912",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/14317768",
      "name": "Palatul Generala",
      "lat": 44.43428,
      "lon": 26.1009,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q26257202",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/420527738",
@@ -245,7 +509,11 @@
      "lat": 44.43562,
      "lon": 26.10788,
      "address": "Strada Sfinților 7",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42771286",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/19919941",
@@ -253,14 +521,24 @@
      "lat": 44.43132,
      "lon": 26.09777,
      "address": "Calea Victoriei 12",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12737426",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/3166516",
      "name": "Reședința Patriarhului",
      "lat": 44.42438,
      "lon": 26.09715,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12737424",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/473428600",
@@ -268,7 +546,11 @@
      "lat": 44.43676,
      "lon": 26.08916,
      "address": "Bulevardul Schitu Măgureanu 37",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12739609",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6164079125",
@@ -279,6 +561,21 @@
      "website": "https://cafeneauaveche9.ro/",
      "openingHours": "Mo-Su 11:00-22:00",
      "cuisine": "regional, coffee shop, pizza"
+    },
+    {
+     "id": "way/1473257051",
+     "name": "Palatul Societății Creditul Rural",
+     "lat": 44.4334,
+     "lon": 26.10282,
+     "address": "Bulevardul Ion Constantin Brătianu 10",
+     "website": "http://paul-smarandescu.blogspot.com/2014/09/42-palatul-societatea-creditul-rural.html"
+    },
+    {
+     "id": "relation/13411665",
+     "name": "Palatul Societății de Asigurări „Naționala”",
+     "lat": 44.43289,
+     "lon": 26.10075,
+     "website": "http://reptilianul.ro/2020/03/26/hilton-garden-inn/"
     }
    ]
   },
@@ -294,7 +591,11 @@
      "address": "Calea Victoriei 49-53",
      "website": "http://www.mnar.arts.ro/",
      "openingHours": "Apr-Sep 11:00-19:00; Oct-Mar 10:00-18:00; Mo,Tu closed",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1319192",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12601324233",
@@ -304,7 +605,11 @@
      "address": "Calea Victoriei 12",
      "website": "https://www.mnir.ro/",
      "openingHours": "Apr-Sep 10:00-18:00; Oct-Mar 09:00-17:00; Mo,Tu closed",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q179283",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2634652838",
@@ -314,7 +619,11 @@
      "address": "Strada Izvor 2-4",
      "website": "https://www.mnac.ro/",
      "openingHours": "We-Su 11:00-18:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q6963033",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/220667665",
@@ -322,7 +631,11 @@
      "lat": 44.41701,
      "lon": 26.09655,
      "website": "https://www.mnt-leonida.ro/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3080132",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2634652136",
@@ -332,7 +645,12 @@
      "address": "Strada C. A. Rosetti 8",
      "website": "http://museum.ici.ro/mbucur/romanian/theodoraman.htm",
      "openingHours": "closed",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12736101",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4505417867",
@@ -342,14 +660,24 @@
      "address": "Bulevardul Ion Constantin Brătianu 2",
      "website": "https://muzeulbucurestiului.ro/",
      "openingHours": "10:00-18:00; Mo closed; Tu \"free admission\"",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12404278",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/215350961",
      "name": "Muzeul Tudor Arghezi",
      "lat": 44.39835,
      "lon": 26.11847,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q20430064",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2634652661",
@@ -359,7 +687,11 @@
      "address": "Strada Lipscani 25",
      "website": "https://www.bnro.ro/Muzeu-707.aspx",
      "openingHours": "10:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18542176",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2634651973",
@@ -369,7 +701,11 @@
      "address": "Bulevardul Nicolae Bălcescu 2-4",
      "website": "https://muzeultnb.ro/",
      "openingHours": "10:00-13:00;Mo 10:00-13:00 || \"during performances closed\"",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18542292",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2634651903",
@@ -378,7 +714,11 @@
      "lon": 26.07409,
      "address": "Strada Doctor Jean Clunet 14",
      "openingHours": "closed",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18542262",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2634652846",
@@ -386,7 +726,11 @@
      "lat": 44.4363,
      "lon": 26.07958,
      "address": "Bulevardul Mihail Kogălniceanu 70-72",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18542281",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10778202975",
@@ -434,6 +778,15 @@
      "openingHours": "Mo-Fr 10:30-18:30; Sa 10:30-17:00"
     },
     {
+     "id": "node/2634652537",
+     "name": "Muzeul Costumelor Populare din Romania",
+     "lat": 44.4283,
+     "lon": 26.08826,
+     "address": "Palatul Parlamentului, Str. Izvor 2 - 4, corpurile A3 - F, sector 5",
+     "website": "https://www.panoramax.ro/panorame-virtuale/galerie.php?id=109",
+     "openingHours": "10:00-17:00"
+    },
+    {
      "id": "node/2634651874",
      "name": "Muzeul de Istorie a Evreilor din România \"sef rabin Dr. Moses Rosen\"",
      "lat": 44.42839,
@@ -473,7 +826,12 @@
      "lat": 44.43579,
      "lon": 26.08393,
      "address": "Strada Vasile Pârvan 12",
-     "openingHours": "unknown"
+     "openingHours": "unknown",
+     "wikidataId": "Q42769113",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2634652183",
@@ -546,6 +904,70 @@
      "lon": 26.10841,
      "address": "Strada Vasile Adamache 11",
      "openingHours": "9:00-13:00, mo closed"
+    },
+    {
+     "id": "node/2634651951",
+     "name": "Muzeul Memorial \"Gh. M. Tattarescu\"",
+     "lat": 44.43372,
+     "lon": 26.09518,
+     "openingHours": "closed"
+    },
+    {
+     "id": "node/10775973110",
+     "name": "Pinacoteca Vernissage",
+     "lat": 44.43136,
+     "lon": 26.09988,
+     "address": "Strada Smârdan 27",
+     "openingHours": "Mo-Su 10:30-00:00"
+    },
+    {
+     "id": "node/10753053205",
+     "name": "Somn",
+     "lat": 44.4289,
+     "lon": 26.07443,
+     "address": "Strada Doctor Joseph Lister 55",
+     "website": "https://somnspace.substack.com/"
+    },
+    {
+     "id": "way/912686503",
+     "name": "Casa Memorială Anton Pann",
+     "lat": 44.42917,
+     "lon": 26.11303
+    },
+    {
+     "id": "node/9412806036",
+     "name": "Elite Art Gallery",
+     "lat": 44.42917,
+     "lon": 26.09609,
+     "address": "Piața Națiunile Unite 3-5"
+    },
+    {
+     "id": "node/9250389007",
+     "name": "Galeria Artelor",
+     "lat": 44.43495,
+     "lon": 26.09725,
+     "address": "Strada Constantin Mille 1"
+    },
+    {
+     "id": "node/2634652031",
+     "name": "Muzeul \"Mitropolit Antim Ivireanul\"",
+     "lat": 44.4261,
+     "lon": 26.09386,
+     "address": "Strada Mitropolitul Antim Ivireanu 29"
+    },
+    {
+     "id": "node/13824624844",
+     "name": "Muzeul Recordurilor Românești",
+     "lat": 44.4286,
+     "lon": 26.11705,
+     "address": "Strada Parfumului 25"
+    },
+    {
+     "id": "node/2634652680",
+     "name": "Muzeul Universității București",
+     "lat": 44.43551,
+     "lon": 26.08205,
+     "address": "Bulevardul Mihail Kogălniceanu 34-46"
     }
    ]
   },
@@ -700,6 +1122,7 @@
      "website": "https://www.carucubere.ro/",
      "openingHours": "Mo-Su 10:00-24:00",
      "cuisine": "balkan, grill, regional, steak house",
+     "wikidataId": "Q17169956",
      "detailed": true
     },
     {
@@ -863,6 +1286,13 @@
      "website": "https://hanumanucrestaurant.ro/",
      "openingHours": "Mo-Th,Su 10:00-00:00; Fr-Sa 10:00-02:00",
      "cuisine": "romanian",
+     "wikidataId": "Q1159652",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "station"
+     ],
      "detailed": true
     },
     {
@@ -872,7 +1302,7 @@
      "lon": 26.09329,
      "address": "Bulevardul Unirii 2",
      "website": "https://www.hautepepper.ro/",
-     "openingHours": "Mo-Su 12:00-23:00",
+     "openingHours": "Mo-Su 12-23",
      "cuisine": "coffee shop, burger, regional",
      "detailed": true
     },

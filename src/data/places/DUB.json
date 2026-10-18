@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "DUB",
- "fetchedAt": "2026-10-16T23:40:25.404Z",
+ "fetchedAt": "2026-10-18T16:33:02.053Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -50,7 +50,23 @@
      "address": "College Street",
      "website": "https://www.visittrinity.ie/book-of-kells-experience/",
      "openingHours": "Mo-Sa 08:30-17:00; Su 09:00-17:00",
-     "wikipediaCount": 52
+     "wikipediaCount": 52,
+     "wikidataId": "Q204221",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q244402",
+     "name": "Aviva Stadyumu",
+     "localName": "Aviva Stadium",
+     "lat": 53.33496,
+     "lon": -6.22825,
+     "wikipediaCount": 45,
+     "wikidataId": "Q244402",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/350242806",
@@ -61,7 +77,23 @@
      "address": "Castle Street",
      "website": "https://www.dublincastle.ie/",
      "openingHours": "Mo-Sa 09:45-16:45; Su 12:00-16:45",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q742767",
+     "kinds": [
+      "adminArea",
+      "castle"
+     ]
+    },
+    {
+     "id": "wikidata/Q478225",
+     "name": "Croke Park",
+     "lat": 53.36083,
+     "lon": -6.25111,
+     "wikipediaCount": 38,
+     "wikidataId": "Q478225",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/43981182",
@@ -71,7 +103,11 @@
      "address": "Patrick Street",
      "website": "https://www.stpatrickscathedral.ie/",
      "openingHours": "Mo-Fr 09:30-17:00; Sa 09:00-17:00; Su 09:00-10:30,13:00-14:30",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q846365",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/231082840",
@@ -81,14 +117,32 @@
      "address": "Kildare Street 7/8",
      "website": "https://www.nli.ie/",
      "openingHours": "Mo-We 09:30-19:45; Th-Fr 09:30-16:45; Sa 09:30-12:45",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q1672830",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/96578181",
      "name": "Spire of Dublin",
      "lat": 53.3498,
      "lon": -6.26025,
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q1134365"
+    },
+    {
+     "id": "wikidata/Q247595",
+     "name": "Leinster House",
+     "lat": 53.34055,
+     "lon": -6.25402,
+     "wikipediaCount": 30,
+     "wikidataId": "Q247595",
+     "kinds": [
+      "office",
+      "palace"
+     ]
     },
     {
      "id": "way/27291101",
@@ -98,7 +152,39 @@
      "address": "Christchurch Place 6",
      "website": "https://christchurchcathedral.ie/",
      "openingHours": "Mo-Sa 09:30-18:00; Mar-Oct Su 12:30-14:30,16:30-18:00; Apr-Sep Mo-Sa 09:30-19:00; Apr-Sep,Nov-Feb Su 12:30-14:30,16:30-19:00; Nov-Feb Mo-Sa 09:30-17:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q1067803",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1432605",
+     "name": "Saint Stephen's Green",
+     "lat": 53.33806,
+     "lon": -6.25917,
+     "wikipediaCount": 27,
+     "wikidataId": "Q1432605"
+    },
+    {
+     "id": "wikidata/Q2482",
+     "name": "Jameson Irish Whiskey",
+     "localName": "Jameson",
+     "lat": 53.33333,
+     "lon": -6.27722,
+     "wikipediaCount": 25,
+     "wikidataId": "Q2482"
+    },
+    {
+     "id": "wikidata/Q1193916",
+     "name": "Samuel Beckett Bridge",
+     "lat": 53.34694,
+     "lon": -6.24111,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1193916",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "relation/289528",
@@ -107,14 +193,27 @@
      "lon": -6.26121,
      "address": "O'Connell Street Lower",
      "openingHours": "Mo-Sa 08:30-18:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1339254"
+    },
+    {
+     "id": "wikidata/Q1439960",
+     "name": "Four Courts",
+     "lat": 53.34594,
+     "lon": -6.27354,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1439960"
     },
     {
      "id": "node/2986012929",
      "name": "Temple Bar",
      "lat": 53.3455,
      "lon": -6.26311,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q920229",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/399007550",
@@ -122,7 +221,56 @@
      "lat": 53.34633,
      "lon": -6.26309,
      "openingHours": "24/7",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1034624",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1158113",
+     "name": "Dalymount Park",
+     "lat": 53.36167,
+     "lon": -6.275,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1158113",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q220027",
+     "name": "Dublin Zoo",
+     "lat": 53.35389,
+     "lon": -6.30389,
+     "wikipediaCount": 19,
+     "wikidataId": "Q220027",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q1190487",
+     "name": "O'Connell Street",
+     "lat": 53.34944,
+     "lon": -6.26028,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1190487",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q2543742",
+     "name": "Dublin Connolly railway station",
+     "lat": 53.35139,
+     "lon": -6.24972,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2543742",
+     "kinds": [
+      "office",
+      "station"
+     ]
     },
     {
      "id": "way/269121322",
@@ -131,7 +279,111 @@
      "lon": -6.25783,
      "address": "Dawson Street 19",
      "website": "https://www.ria.ie/",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q110587",
+     "kinds": [
+      "business",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q2658249",
+     "name": "Dublin Pearse railway station",
+     "lat": 53.34333,
+     "lon": -6.24846,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2658249",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q135501",
+     "name": "Grafton Street",
+     "lat": 53.34139,
+     "lon": -6.26028,
+     "wikipediaCount": 16,
+     "wikidataId": "Q135501",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q945154",
+     "name": "James Joyce Bridge",
+     "lat": 53.34663,
+     "lon": -6.28261,
+     "wikipediaCount": 16,
+     "wikidataId": "Q945154",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1899515",
+     "name": "Point Theatre",
+     "localName": "3Arena",
+     "lat": 53.3475,
+     "lon": -6.22861,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1899515"
+    },
+    {
+     "id": "wikidata/Q1798235",
+     "name": "St Mary’s Pro-Katedrali",
+     "localName": "St Mary's Cathedral",
+     "lat": 53.35083,
+     "lon": -6.25917,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1798235",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2377845",
+     "name": "Dublin Heuston railway station",
+     "lat": 53.34645,
+     "lon": -6.29266,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2377845",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q924750",
+     "name": "Dublin Camii",
+     "localName": "Dublin Mosque",
+     "lat": 53.33139,
+     "lon": -6.2825,
+     "wikipediaCount": 14,
+     "wikidataId": "Q924750",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q630780",
+     "name": "Merrion Square",
+     "lat": 53.33972,
+     "lon": -6.24917,
+     "wikipediaCount": 14,
+     "wikidataId": "Q630780",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1766409",
+     "name": "O'Connell Bridge",
+     "lat": 53.34727,
+     "lon": -6.2591,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1766409",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/44597908",
@@ -141,7 +393,42 @@
      "address": "Market Street South",
      "website": "https://www.guinness-storehouse.com/",
      "openingHours": "Mo-Su 09:30-17:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q261012",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q585698",
+     "name": "Gaiety Theatre",
+     "lat": 53.34031,
+     "lon": -6.2616,
+     "wikipediaCount": 12,
+     "wikidataId": "Q585698",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q2662776",
+     "name": "Irish Houses of Parliament",
+     "lat": 53.34472,
+     "lon": -6.26,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2662776"
+    },
+    {
+     "id": "wikidata/Q2421553",
+     "name": "Tolka Park",
+     "lat": 53.36751,
+     "lon": -6.25198,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2421553",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/60270053",
@@ -151,14 +438,56 @@
      "address": "North Wall Quay 1",
      "website": "https://www.theccd.ie/",
      "openingHours": "Mo-Th 08:30-17:00; Fr 08:30-16:30",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3916709"
+    },
+    {
+     "id": "wikidata/Q728893",
+     "name": "Gate Theatre",
+     "lat": 53.35306,
+     "lon": -6.26222,
+     "wikipediaCount": 11,
+     "wikidataId": "Q728893",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q383752",
+     "name": "Mansion House",
+     "lat": 53.34028,
+     "lon": -6.25778,
+     "wikipediaCount": 11,
+     "wikidataId": "Q383752"
+    },
+    {
+     "id": "wikidata/Q917842",
+     "name": "Mountjoy Prison",
+     "lat": 53.36167,
+     "lon": -6.2675,
+     "wikipediaCount": 11,
+     "wikidataId": "Q917842"
+    },
+    {
+     "id": "wikidata/Q7493317",
+     "name": "Shelbourne Hotel",
+     "lat": 53.33893,
+     "lon": -6.25609,
+     "wikipediaCount": 11,
+     "wikidataId": "Q7493317",
+     "kinds": [
+      "business",
+      "hotel"
+     ]
     },
     {
      "id": "node/5968488535",
      "name": "Hungry Tree",
      "lat": 53.35213,
      "lon": -6.27305,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q56867887"
     },
     {
      "id": "way/229658261",
@@ -168,7 +497,11 @@
      "address": "St. Patrick's Close",
      "website": "https://www.marshlibrary.ie/",
      "openingHours": "Mo 09:30-13:00, 14:00-17:00; We-Fr 09:30-13:00, 14:00-17:00; Sa 10:00-17:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1238147",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/25631284",
@@ -177,7 +510,11 @@
      "lon": -6.26716,
      "address": "Cork Hill",
      "website": "https://www.dublincity.ie/residential/arts-and-events/city-hall",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1101808",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/16141015",
@@ -187,14 +524,16 @@
      "address": "Botanic Road",
      "website": "https://botanicgardens.ie/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q841037"
     },
     {
      "id": "way/40498842",
      "name": "Wellington Monument",
      "lat": 53.34904,
      "lon": -6.30312,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3308144"
     },
     {
      "id": "node/9873301517",
@@ -204,7 +543,11 @@
      "address": "Mary's Abbey 2-3",
      "website": "https://www.leprechaunmuseum.ie/",
      "openingHours": "Mo-Su 10:00-18:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2811931",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10013398691",
@@ -215,7 +558,11 @@
      "website": "https://brazenhead.com/",
      "openingHours": "Mo-Th 10:30-23:30; Fr-Sa 10:30-00:30; Su 12:30-23:30",
      "cuisine": "irish, fish and chips",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q17006015",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/41685963",
@@ -224,14 +571,16 @@
      "lon": -6.30255,
      "address": "Military Road",
      "website": "https://rhk.ie/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q12859559"
     },
     {
      "id": "relation/18631966",
      "name": "Fusiliers' Arch",
      "lat": 53.33966,
      "lon": -6.26051,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5510051"
     },
     {
      "id": "way/228705547",
@@ -240,7 +589,8 @@
      "lon": -6.2771,
      "address": "Newmarket 13-17",
      "website": "https://teelingwhiskey.com/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q28408323"
     },
     {
      "id": "node/906593798",
@@ -248,7 +598,8 @@
      "lat": 53.35259,
      "lon": -6.26148,
      "website": "https://www.buildingsofireland.ie/buildings-search/building/50010557/charles-stewart-parnell-monument-oconnell-street-upper-parnell-street-dublin-dublin",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q33123187"
     },
     {
      "id": "node/603833917",
@@ -256,21 +607,27 @@
      "lat": 53.34771,
      "lon": -6.25934,
      "website": "https://www.buildingsofireland.ie/buildings-search/building/50010320/oconnell-monument-oconnell-street-lower-dublin-1-dublin",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q33123185"
     },
     {
      "id": "way/310207793",
      "name": "Jameson Chimney",
      "lat": 53.34849,
      "lon": -6.27784,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q4778173"
     },
     {
      "id": "node/635060745",
      "name": "Saint Audoen's Gate",
      "lat": 53.34395,
      "lon": -6.27402,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q91453292",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/9994239510",
@@ -289,15 +646,6 @@
      "address": "James's Street 121/122",
      "website": "https://www.pearselyonsdistillery.com/",
      "openingHours": "Mo-Sa 09:30-18:00; Su 11:30-18:00; PH 11:30-18:00"
-    },
-    {
-     "id": "way/231250679",
-     "name": "Sweny's Pharmacy",
-     "lat": 53.34188,
-     "lon": -6.25055,
-     "address": "Lincoln Place 1",
-     "website": "https://www.sweny.ie/",
-     "openingHours": "Mo-Sa 11:00-17:00; Su off"
     }
    ]
   },
@@ -313,7 +661,11 @@
      "address": "Merrion Square West 89",
      "website": "https://www.nationalgallery.ie/",
      "openingHours": "Su,Mo 11:00-17:30; Tu,We,Fr,Sa 09:15-17:30; Th 09:15-20:30",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q2018379",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10020524598",
@@ -323,7 +675,26 @@
      "address": "Dublin Castle",
      "website": "https://chesterbeatty.ie/",
      "openingHours": "Mo-Fr 10:00-17:00; Sa 11:00-17:00; Su 13:00-17:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q391976",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/1029441205",
+     "name": "National Museum of Ireland, Archaeology",
+     "lat": 53.34023,
+     "lon": -6.25497,
+     "address": "Kildare Street",
+     "website": "https://www.museum.ie/en-IE/Museums/Archaeology",
+     "openingHours": "Tu-Sa 10:00-17:00; Su,Mo 13:00-17:00",
+     "wikipediaCount": 25,
+     "wikidataId": "Q1672840",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/21749",
@@ -333,7 +704,25 @@
      "address": "Military Road",
      "website": "https://imma.ie/",
      "openingHours": "Tu-Fr 11:30-17:30; Sa 10:00-17:30; Su 12:00-17:30; PH 12:00-17:30",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1538285",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "relation/4547344",
+     "name": "Custom House",
+     "lat": 53.34845,
+     "lon": -6.25317,
+     "website": "https://heritageireland.ie/customs-house-visitor-centre",
+     "openingHours": "10:00-16:45",
+     "wikipediaCount": 17,
+     "wikidataId": "Q2300561",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "way/357707494",
@@ -342,7 +731,12 @@
      "lon": -6.26488,
      "address": "Parnell Square North 22",
      "website": "https://www.hughlane.ie/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q496040",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/3585952597",
@@ -352,7 +746,11 @@
      "address": "Saint Michael's Hill",
      "website": "https://www.dublinia.ie/",
      "openingHours": "Mo-Su 10:00-18:30",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q5311029",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/47638298",
@@ -361,7 +759,13 @@
      "lon": -6.25492,
      "address": "Ely Place Upper 15",
      "website": "http://www.royalhibernianacademy.ie/",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q5291784",
+     "kinds": [
+      "business",
+      "museum",
+      "school"
+     ]
     },
     {
      "id": "node/4427119837",
@@ -371,7 +775,11 @@
      "address": "Custom House Quay",
      "website": "https://epicchq.com/",
      "openingHours": "10:00-18:45",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q29831711",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/281253912",
@@ -380,17 +788,11 @@
      "lon": -6.26403,
      "address": "Parnell Square North 18",
      "website": "http://www.writersmuseum.com/",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/590878259",
-     "name": "Jeanie Johnston",
-     "lat": 53.34762,
-     "lon": -6.24674,
-     "address": "Custom House Quay",
-     "website": "https://jeaniejohnston.ie/",
-     "openingHours": "Mo-Su 11:00-16:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 7,
+     "wikidataId": "Q3040529",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6788214010",
@@ -400,7 +802,22 @@
      "address": "St. Stephen's Green 86",
      "website": "https://moli.ie/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 6,
+     "wikidataId": "Q85787148",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/590878259",
+     "name": "Jeanie Johnston",
+     "lat": 53.34762,
+     "lon": -6.24674,
+     "address": "Custom House Quay",
+     "website": "https://jeaniejohnston.ie/",
+     "openingHours": "Mo-Su 11:00-16:00",
+     "wikipediaCount": 5,
+     "wikidataId": "Q3175892"
     },
     {
      "id": "way/231082847",
@@ -410,7 +827,11 @@
      "address": "Merrion Square West 49",
      "website": "https://www.museum.ie/en-IE/Museums/Natural-History",
      "openingHours": "off \"Closed temporarily\"",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6033599",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/252807597",
@@ -420,7 +841,11 @@
      "address": "North Great George's Street 35",
      "website": "https://jamesjoyce.ie/",
      "openingHours": "Tu-Sa 10:30-16:30",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6137026",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/57371552",
@@ -428,7 +853,11 @@
      "lat": 53.3352,
      "lon": -6.2354,
      "website": "https://www.nationalprintmuseum.ie/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5804730",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/48806099",
@@ -437,14 +866,11 @@
      "lon": -6.28573,
      "website": "https://www.museum.ie/en-IE/Museums/Decorative-Arts-History",
      "openingHours": "Tu-Sa 10:00-17:00; Su,Mo 13:00-17:00",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "relation/5982000",
-     "name": "National Museum of Ireland, Decorative Arts & History",
-     "lat": 53.34887,
-     "lon": -6.28872,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6974474",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/878517402",
@@ -453,7 +879,12 @@
      "lon": -6.25771,
      "website": "https://www.douglashydegallery.com/",
      "openingHours": "Mo-Fr 11:00-18:00;Th 11:00-19:00;Sa 11:00-16:45",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7730763",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/2357100885",
@@ -463,7 +894,11 @@
      "address": "St. Stephen's Green 15",
      "website": "https://www.littlemuseum.ie/",
      "openingHours": "Mo-We 09:30-17:00, Th 09:30-20:00, Fr-Su 09:30-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7747675",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/755734351",
@@ -472,7 +907,11 @@
      "lon": -6.26937,
      "address": "Walworth Road 3",
      "website": "http://www.jewishireland.org/museum.html",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6070876",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/470326898",
@@ -481,7 +920,11 @@
      "lon": -6.27708,
      "website": "http://www.tours.jamesonwhiskey.com/Home/The-Old-Jameson-Distillery-Dublin.aspx",
      "openingHours": "Mo-Su 09:00-17:30",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q17104224",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/281028379",
@@ -490,7 +933,11 @@
      "lon": -6.27015,
      "address": "Henrietta Street 14",
      "website": "https://14henriettastreet.ie/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q60747125",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3560461559",
@@ -500,7 +947,11 @@
      "address": "Dublin Castle",
      "website": "https://www.garda.ie/en/about-us/our-history/the-garda-museum-at-dublin-castle/",
      "openingHours": "Mo-Fr 10:00-14:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q48743302",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/231140810",
@@ -510,15 +961,11 @@
      "address": "Merrion Square East 44-45",
      "website": "https://iarc.ie/",
      "openingHours": "Tu-Fr 10:00-17:00",
-     "wikipediaCount": 1
-    },
-    {
-     "id": "relation/4547344",
-     "name": "Custom House",
-     "lat": 53.34845,
-     "lon": -6.25317,
-     "website": "https://heritageireland.ie/customs-house-visitor-centre",
-     "openingHours": "10:00-16:45"
+     "wikipediaCount": 1,
+     "wikidataId": "Q15228799",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/316377240",
@@ -526,7 +973,11 @@
      "lat": 53.34483,
      "lon": -6.26533,
      "website": "https://photomuseumireland.ie/",
-     "openingHours": "Tu-Sa 11:00-18:00; Su 13:00-18:00"
+     "openingHours": "Tu-Sa 11:00-18:00; Su 13:00-18:00",
+     "wikidataId": "Q113635945",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13372467623",
@@ -574,13 +1025,94 @@
      "openingHours": "Tu-Su 10:30-16:00"
     },
     {
-     "id": "way/1029441205",
-     "name": "National Museum of Ireland, Archaeology",
-     "lat": 53.34023,
-     "lon": -6.25497,
-     "address": "Kildare Street",
-     "website": "https://www.museum.ie/en-IE/Museums/Archaeology",
-     "openingHours": "Tu-Sa 10:00-17:00; Su,Mo 13:00-17:00"
+     "id": "node/626129705",
+     "name": "Temple Bar Gallery",
+     "lat": 53.34563,
+     "lon": -6.26361,
+     "address": "Temple Bar",
+     "website": "https://www.templebargallery.com/",
+     "openingHours": "Tu-Fr 11:00-18:00; Sa,Su 12:00-16:00"
+    },
+    {
+     "id": "node/5444032067",
+     "name": "The Gerard Byrne Studio",
+     "lat": 53.32569,
+     "lon": -6.2518,
+     "address": "Chelmsford Road 15",
+     "website": "https://gerardbyrneartist.com/",
+     "openingHours": "We,Th 12:00-18:00; Fr-Su 12:00-19:00"
+    },
+    {
+     "id": "node/5154409163",
+     "name": "The National Wax Museum Plus",
+     "lat": 53.34648,
+     "lon": -6.25891,
+     "address": "Westmoreland Street 22-25",
+     "website": "https://www.waxmuseumplus.ie/",
+     "openingHours": "Mo-Su 10:00-20:00"
+    },
+    {
+     "id": "node/12109840012",
+     "name": "Civic Museum",
+     "lat": 53.34206,
+     "lon": -6.26246,
+     "address": "William Street South",
+     "website": "https://www.cityassemblyhouse.ie/"
+    },
+    {
+     "id": "node/1740224383",
+     "name": "Gaelic Athletic Association Museum",
+     "lat": 53.36,
+     "lon": -6.25013,
+     "address": "Saint Josephs Avenue",
+     "website": "https://crokepark.ie/gaamuseum"
+    },
+    {
+     "id": "node/3601044189",
+     "name": "Illusion Museum Dublin",
+     "lat": 53.34413,
+     "lon": -6.26195,
+     "address": "College Green 16-17",
+     "website": "https://illusionmuseumdublin.ie/"
+    },
+    {
+     "id": "node/5110142635",
+     "name": "Jorgensen Fine Art Gallery",
+     "lat": 53.34102,
+     "lon": -6.25693,
+     "address": "Molesworth Street 35",
+     "website": "https://www.jorgensenfineart.com/"
+    },
+    {
+     "id": "node/140706284",
+     "name": "National Museum of Ireland, Collins Barracks",
+     "lat": 53.34881,
+     "lon": -6.28596,
+     "openingHours": "Tu-Sa 10:00-17:00; Su-Mo 13:00-17:00"
+    },
+    {
+     "id": "node/4454180040",
+     "name": "Pallas Studios",
+     "lat": 53.33903,
+     "lon": -6.27456,
+     "address": "The Coombe 115-117",
+     "website": "https://www.pallasprojects.org/"
+    },
+    {
+     "id": "node/3560461556",
+     "name": "Revenue Museum",
+     "lat": 53.34303,
+     "lon": -6.26632,
+     "address": "Dublin Castle",
+     "website": "https://www.revenue.ie/en/corporate/information-about-revenue/revenue-museum/index.aspx"
+    },
+    {
+     "id": "node/6772160811",
+     "name": "Seamus Heaney: Listen Now Again",
+     "lat": 53.34506,
+     "lon": -6.25948,
+     "address": "Westmoreland Street",
+     "website": "https://www.nli.ie/exhibitions-events/exhibition-seamus-heaney-listen-now-again"
     }
    ]
   },
@@ -1328,6 +1860,10 @@
      "website": "https://brazenhead.com/",
      "openingHours": "Mo-Th 10:30-23:30; Fr-Sa 10:30-00:30; Su 12:30-23:30",
      "cuisine": "irish, fish and chips",
+     "wikidataId": "Q17006015",
+     "kinds": [
+      "business"
+     ],
      "detailed": true
     },
     {
@@ -1339,6 +1875,7 @@
      "website": "https://thehairylemon.ie/",
      "openingHours": "Mo-Th 10:00-23:30; Fr-Sa 10:00-01:30; Su 10:00-23:00",
      "cuisine": "burger, regional",
+     "wikidataId": "Q65330199",
      "detailed": true
     },
     {
@@ -1680,7 +2217,8 @@
      "name": "Copper Face Jacks",
      "lat": 53.33544,
      "lon": -6.26351,
-     "address": "Harcourt Street"
+     "address": "Harcourt Street",
+     "wikidataId": "Q65329914"
     },
     {
      "id": "node/3771358965",

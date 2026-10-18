@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SIN",
- "fetchedAt": "2026-10-17T00:09:49.115Z",
+ "fetchedAt": "2026-10-18T17:05:29.340Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,13 +43,83 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q3046409",
+     "name": "Singapur Botanik Bahçeleri",
+     "localName": "Singapore Botanic Gardens",
+     "lat": 1.3151,
+     "lon": 103.8162,
+     "wikipediaCount": 43,
+     "wikidataId": "Q3046409",
+     "kinds": [
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q3272345",
+     "name": "Commonwealth MRT station",
+     "lat": 1.3025,
+     "lon": 103.79819,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3272345",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q3272303",
+     "name": "Dover MRT station",
+     "lat": 1.31139,
+     "lon": 103.77861,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3272303",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q3272270",
+     "name": "Queenstown MRT station",
+     "lat": 1.29444,
+     "lon": 103.80611,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3272270",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1055296",
+     "name": "Redhill MRT station",
+     "lat": 1.28972,
+     "lon": 103.81667,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1055296",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q647955",
+     "name": "Kent Ridge Park",
+     "lat": 1.28639,
+     "lon": 103.79,
+     "wikipediaCount": 10,
+     "wikidataId": "Q647955"
+    },
+    {
      "id": "way/54519182",
      "name": "Haw Par Villa",
      "lat": 1.28418,
      "lon": 103.78247,
      "address": "Pasir Panjang Road 262",
      "openingHours": "09:00-19:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1018484",
+     "kinds": [
+      "attraction",
+      "business"
+     ]
     },
     {
      "id": "node/9043819288",
@@ -228,6 +298,42 @@
      "name": "Tanglin Hill Brunei Hostel",
      "lat": 1.30234,
      "lon": 103.81403
+    },
+    {
+     "id": "node/6813590943",
+     "name": "The Bunker",
+     "lat": 1.32008,
+     "lon": 103.81785
+    },
+    {
+     "id": "way/1148718861",
+     "name": "The Lost Ark",
+     "lat": 1.28829,
+     "lon": 103.79771
+    },
+    {
+     "id": "node/11762046209",
+     "name": "Tiger Car",
+     "lat": 1.2841,
+     "lon": 103.78178
+    },
+    {
+     "id": "node/1844016099",
+     "name": "Vanda Miss Joaquim",
+     "lat": 1.31061,
+     "lon": 103.816
+    },
+    {
+     "id": "node/11862049582",
+     "name": "VIP Orchid Garden",
+     "lat": 1.31248,
+     "lon": 103.81369
+    },
+    {
+     "id": "node/13439388801",
+     "name": "Wetlands",
+     "lat": 1.31018,
+     "lon": 103.81387
     }
    ]
   },
@@ -242,7 +348,11 @@
      "lon": 103.77362,
      "address": "Conservatory Drive 2",
      "website": "https://lkcnhm.nus.edu.sg/nus/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q19840336",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5829461647",
@@ -251,7 +361,11 @@
      "lon": 103.79408,
      "website": "https://www.nhb.gov.sg/bukitchandu",
      "openingHours": "09:30-17:00; Mo off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7307287",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11391788425",

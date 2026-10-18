@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "OSL",
- "fetchedAt": "2026-10-16T23:38:52.256Z",
+ "fetchedAt": "2026-10-18T16:30:16.122Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,7 +48,16 @@
      "lat": 59.90748,
      "lon": 10.75268,
      "website": "https://operaen.no/",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q43280",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/13931023",
@@ -57,7 +66,15 @@
      "lon": 10.73611,
      "website": "https://kultur.forsvaret.no/museer/akershus-slott",
      "openingHours": "Mo-Sa 10:00-16:00; Su 12:00-17:00",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q644464",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "relation/12267199",
@@ -65,7 +82,35 @@
      "lat": 59.91719,
      "lon": 10.72724,
      "website": "https://www.kongehuset.no/",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q863932",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1063209",
+     "name": "Oslo Cathedral",
+     "lat": 59.91232,
+     "lon": 10.74696,
+     "wikipediaCount": 33,
+     "wikidataId": "Q1063209",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q866409",
+     "name": "Bislett Stadion",
+     "lat": 59.92472,
+     "lon": 10.73333,
+     "wikipediaCount": 30,
+     "wikidataId": "Q866409",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/24900009",
@@ -74,49 +119,215 @@
      "lon": 10.73369,
      "website": "https://www.oslo.kommune.no/politikk-og-administrasjon/radhuset/",
      "openingHours": "Mo-Su 09:00-16:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q373850",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q565382",
+     "name": "National Theatre Oslo",
+     "lat": 59.9143,
+     "lon": 10.73425,
+     "wikipediaCount": 28,
+     "wikidataId": "Q565382",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1490775",
+     "name": "Karl Johans gate",
+     "lat": 59.91306,
+     "lon": 10.74083,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1490775",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q6515317",
+     "name": "Parliament of Norway Building",
+     "lat": 59.91306,
+     "lon": 10.74,
+     "wikipediaCount": 18,
+     "wikidataId": "Q6515317",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1552134",
+     "name": "St.Olav Katedrali",
+     "localName": "St. Olav's Cathedral",
+     "lat": 59.91816,
+     "lon": 10.74413,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1552134",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1508325",
+     "name": "Oslo Spektrum",
+     "lat": 59.913,
+     "lon": 10.75471,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1508325",
+     "kinds": [
+      "concertHall",
+      "musicVenue",
+      "performingArts",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q745748",
+     "name": "Oslo Synagogue",
+     "lat": 59.92581,
+     "lon": 10.74329,
+     "wikipediaCount": 13,
+     "wikidataId": "Q745748",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1260032",
+     "name": "Old Aker Church",
+     "lat": 59.92369,
+     "lon": 10.74703,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1260032",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3499753",
+     "name": "Oslo Plaza",
+     "lat": 59.91225,
+     "lon": 10.75525,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3499753",
+     "kinds": [
+      "business",
+      "hotel",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1782787",
+     "name": "Christiania Theatre",
+     "lat": 59.90848,
+     "lon": 10.74122,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1782787",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1807481",
+     "name": "Oslo Tunnel",
+     "lat": 59.91476,
+     "lon": 10.73315,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1807481"
+    },
+    {
+     "id": "wikidata/Q2512114",
+     "name": "Regjeringskvartalet",
+     "lat": 59.915,
+     "lon": 10.74583,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2512114"
+    },
+    {
+     "id": "wikidata/Q2842096",
+     "name": "Trinity Church",
+     "lat": 59.91667,
+     "lon": 10.74528,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2842096",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/457724681",
      "name": "Hovedøya kloster",
      "lat": 59.89633,
      "lon": 10.72838,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1477794",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/89545556",
      "name": "Slottsparken",
      "lat": 59.9177,
      "lon": 10.72847,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4583462"
     },
     {
      "id": "way/262320927",
      "name": "Korskirken",
      "lat": 59.90703,
      "lon": 10.76952,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q11981865",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/257875433",
      "name": "Mariakirken",
      "lat": 59.90349,
      "lon": 10.7622,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1133099",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/111548139",
      "name": "Clemenskirken",
      "lat": 59.90432,
      "lon": 10.76573,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7587620",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/1664967162",
      "name": "Niels Henrik Abel",
      "lat": 59.91556,
      "lon": 10.73122,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q23868718"
     },
     {
      "id": "way/1039892466",
@@ -124,21 +335,29 @@
      "lat": 59.90701,
      "lon": 10.72062,
      "website": "https://www.visitoslo.com/no/produkt/?TLp=691112",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12006505",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ]
     },
     {
      "id": "node/5392213996",
      "name": "Nasjonalmonumentet for krigens ofre 1940-45",
      "lat": 59.90609,
      "lon": 10.73873,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q25425430"
     },
     {
      "id": "way/559020119",
      "name": "Retterstedet på Akershus festning",
      "lat": 59.90768,
      "lon": 10.73612,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q10859746"
     },
     {
      "id": "node/6216331185",
@@ -206,6 +425,30 @@
      "name": "Orlogsgast",
      "lat": 59.9048,
      "lon": 10.73768
+    },
+    {
+     "id": "node/7222675428",
+     "name": "Pilegrimsleden ⌘ 639 km til Nidaros",
+     "lat": 59.92337,
+     "lon": 10.74662
+    },
+    {
+     "id": "node/6593517793",
+     "name": "The Salmon Vitensenter",
+     "lat": 59.90798,
+     "lon": 10.72319
+    },
+    {
+     "id": "node/270312302",
+     "name": "Tordenskiold",
+     "lat": 59.91057,
+     "lon": 10.73434
+    },
+    {
+     "id": "node/4185468590",
+     "name": "Vestbredden",
+     "lat": 59.91933,
+     "lon": 10.75179
     }
    ]
   },
@@ -220,7 +463,22 @@
      "lon": 10.75525,
      "website": "https://www.munchmuseet.no/",
      "openingHours": "Mo-Tu,Su 10:00-18:00; We-Sa 10:00-21:00",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q844926",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1132918",
+     "name": "National Museum of Art, Architecture and Design",
+     "lat": 59.91167,
+     "lon": 10.72917,
+     "wikipediaCount": 27,
+     "wikidataId": "Q1132918",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/8046314379",
@@ -229,7 +487,11 @@
      "lon": 10.7304,
      "website": "https://www.nobelpeacecenter.org/",
      "openingHours": "Jan 1 off; Jan 2‑6 Mo off; Jan 2‑6 Tu‑Su 11:00‑17:00; Jan 7‑May 31 Mo off; Jan 7‑May 31 Tu 11:00‑17:00; Jan 7‑May 31 We 11:00‑20:00; Jan 7‑May 31 Th‑Su 11:00‑17:00; May 1 11:00‑17:00; May 20 11:00‑13:00; Jun 1‑Aug 31 Mo‑Su 10:00‑18:00; May 17 off; Dec 9 o",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q941120",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/111867428",
@@ -237,7 +499,23 @@
      "lat": 59.91704,
      "lon": 10.73457,
      "website": "https://www.khm.uio.no/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q3356148",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q6514373",
+     "name": "Norwegian Film Institute",
+     "lat": 59.90944,
+     "lon": 10.74583,
+     "wikipediaCount": 13,
+     "wikidataId": "Q6514373",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/1931359713",
@@ -246,7 +524,12 @@
      "lon": 10.72194,
      "website": "http://afmuseet.no/",
      "openingHours": "Tu-We 12:00-17:00; Th 12:00-19:00; Fr 12:00-17:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q761048",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/4045303",
@@ -254,7 +537,8 @@
      "lat": 59.91837,
      "lon": 10.76975,
      "website": "https://www.nhm.uio.no/utstillinger/botanisk-hage/index.html",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q3116396"
     },
     {
      "id": "node/5412354900",
@@ -263,7 +547,11 @@
      "lon": 10.77171,
      "website": "https://www.nhm.uio.no/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1840963",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/270315261",
@@ -272,7 +560,11 @@
      "lon": 10.73576,
      "website": "https://kultur.forsvaret.no/museer/norges-hjemmefrontmuseum",
      "openingHours": "Sep-Apr: Mo-Su 10:00-16:00; May-Aug: Mo-Su 10:00-17:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1781522",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/116409744",
@@ -280,7 +572,12 @@
      "lat": 59.91957,
      "lon": 10.73083,
      "openingHours": "Tu,We,Fr-Su 11:00-17:00; Th 11:00-19:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1772519",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/54830211",
@@ -289,7 +586,11 @@
      "lon": 10.74089,
      "website": "https://www.forsvarsbygg.no/festningene/Festningene/Akershus-festning/Museer-og-utstillinger/Forsvarsmuseet/",
      "openingHours": "May-Aug: Mo-Su 10:00-17:00; Sep-Apr: Mo-Su 10:00-16:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q4793001",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/90768996",
@@ -297,14 +598,22 @@
      "lat": 59.91503,
      "lon": 10.72705,
      "website": "https://ibsenmt.no/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1519078",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/112401084",
      "name": "Jødisk museum",
      "lat": 59.91634,
      "lon": 10.75542,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6189888",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/31106820",
@@ -313,7 +622,12 @@
      "lon": 10.73554,
      "website": "https://www.khm.uio.no/",
      "openingHours": "Tu-We, Fr-Su 11:00-16:00; Th 11:00-20:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1405469",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2785549850",
@@ -321,7 +635,11 @@
      "lat": 59.91525,
      "lon": 10.74465,
      "openingHours": "Th-Su 11:00-16:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q20669453",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6780418993",
@@ -330,7 +648,11 @@
      "lon": 10.74094,
      "website": "https://nobimu.no/",
      "openingHours": "Fr-Su 11:00-16:00; Tu-We 12:00-17:00; Th 11:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q65234215",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/132766114",
@@ -338,7 +660,11 @@
      "lat": 59.91617,
      "lon": 10.72345,
      "website": "https://www.kongehuset.no/artikkel.html?tid=153246&sek=79786",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q42023914",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/772265973",
@@ -346,7 +672,8 @@
      "lat": 59.90907,
      "lon": 10.73432,
      "website": "https://m314alta.org/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4353317"
     },
     {
      "id": "node/3650497118",
@@ -355,7 +682,11 @@
      "lon": 10.76325,
      "website": "https://www.oslomuseum.no/interkulturelt-museum/",
      "openingHours": "Tu-Su 11:00-16:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q18663554",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/27011866",
@@ -364,14 +695,24 @@
      "lon": 10.77232,
      "website": "https://www.nhm.uio.no/utstillinger/geologiske/index.html",
      "openingHours": "Apr-Sep: Mo-Su,PH 10:00-17:00; Oct-Mar: Tu-Su 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11971813",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/111546665",
      "name": "Ladegården",
      "lat": 59.90619,
      "lon": 10.76763,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3526084",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/27011865",
@@ -380,7 +721,11 @@
      "lon": 10.77109,
      "website": "https://www.nhm.uio.no/utstillinger/zoologiske/index.html",
      "openingHours": "Jun-Aug: Mo-Su 11:00-16:00, Sep-May: Tu-Su 11:00-16:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12011265",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6593517792",
@@ -389,7 +734,11 @@
      "lon": 10.767,
      "website": "http://brannmuseet.no/",
      "openingHours": "We 11:00-14:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16178871",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6593517800",
@@ -398,7 +747,11 @@
      "lon": 10.7434,
      "website": "https://www.minibottlegallery.com/?kategori=museum",
      "openingHours": "Sa,Su 12:00-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12001586",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6593517802",
@@ -406,14 +759,22 @@
      "lat": 59.91829,
      "lon": 10.74991,
      "website": "https://skolemuseum.osloskolen.no/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q113997590",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6593517801",
      "name": "Norsk tryllemuseum",
      "lat": 59.9112,
      "lon": 10.71995,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11992414",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7009891162",
@@ -437,7 +798,8 @@
      "lat": 59.91161,
      "lon": 10.72882,
      "website": "https://www.nasjonalmuseet.no/",
-     "openingHours": "Tu-We 10:00-20:00; Th-Su 10:00-17:00"
+     "openingHours": "Tu-We 10:00-20:00; Th-Su 10:00-17:00",
+     "wikidataId": "Q112339532"
     },
     {
      "id": "node/855363455",
@@ -462,6 +824,67 @@
      "lon": 10.73922,
      "website": "https://www.paradoxmuseumoslo.com/",
      "openingHours": "Mo-Tu, Th-Fr 11:00-19:00; Sa-Su 10:00-19:00"
+    },
+    {
+     "id": "node/1728456802",
+     "name": "Popsenteret",
+     "lat": 59.91978,
+     "lon": 10.76103,
+     "website": "https://www.popsenteret.no/",
+     "openingHours": "closed"
+    },
+    {
+     "id": "node/12357910401",
+     "name": "TBS Gallery",
+     "lat": 59.92214,
+     "lon": 10.72573,
+     "website": "https://tbsgallery.no/",
+     "openingHours": "Tu-Sa 10:00-16:00; Su 12:00-16:00"
+    },
+    {
+     "id": "node/6593517795",
+     "name": "The Viking Planet",
+     "lat": 59.91328,
+     "lon": 10.73405,
+     "website": "https://www.thevikingplanet.com/",
+     "openingHours": "Mo-Fr 10:00-17:00; Sa,Su 10:00-18:00"
+    },
+    {
+     "id": "way/33208940",
+     "name": "Viktoriahuset",
+     "lat": 59.9175,
+     "lon": 10.77148,
+     "website": "https://www.nhm.uio.no/utstillinger/botanisk-hage/avdelinger/victoriahuset/index.html",
+     "openingHours": "Apr-Sep Mo-Su 10:00-21:00; Oct-Mar Mo-Su 10:00-17:00"
+    },
+    {
+     "id": "way/1381696499",
+     "name": "Wehrmacht bunkeren",
+     "lat": 59.9138,
+     "lon": 10.72021,
+     "website": "https://ohgbunkeren.osloskolen.no/",
+     "openingHours": "\"by appointment\""
+    },
+    {
+     "id": "node/11556022918",
+     "name": "FLOP museum",
+     "lat": 59.90818,
+     "lon": 10.76116,
+     "website": "https://flop.museum/"
+    },
+    {
+     "id": "node/14287408501",
+     "name": "Fotogalleriet",
+     "lat": 59.91748,
+     "lon": 10.75014,
+     "website": "https://fotogalleriet.no/"
+    },
+    {
+     "id": "node/11104977342",
+     "name": "Fotografihuset",
+     "lat": 59.9051,
+     "lon": 10.753,
+     "openingHours": "24/7"
     }
    ]
   },
@@ -549,6 +972,7 @@
      "website": "https://www.asylet.no/",
      "openingHours": "Mo-Tu 11:00-22:00; We-Fr 11:00-24:00; Sa 12:00-24:00; Su 12:00-22:00",
      "cuisine": "regional",
+     "wikidataId": "Q4812018",
      "detailed": true
     },
     {
@@ -1423,7 +1847,8 @@
      "name": "Blå",
      "lat": 59.92016,
      "lon": 10.75284,
-     "website": "https://blaaoslo.no/"
+     "website": "https://blaaoslo.no/",
+     "wikidataId": "Q2907430"
     },
     {
      "id": "node/9557812431",

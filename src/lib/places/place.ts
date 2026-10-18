@@ -1,4 +1,5 @@
 import { classify, isCocktailBar, type CategoryId } from "./categories";
+import type { KindTag } from "./kinds";
 import type { OverpassElement } from "./overpass";
 
 export type Place = {
@@ -17,6 +18,10 @@ export type Place = {
   openingHours?: string;
   cuisine?: string;
   wikidataId?: string;
+  /** ISO country code when the place is not in the destination's country (the Vatican from Rome). */
+  country?: string;
+  /** Wikidata kinds (kinds.ts), filled in by the data script for sights, museums and viewpoints. */
+  kinds?: KindTag[];
 };
 
 function safeUrl(value: string | undefined): string | undefined {

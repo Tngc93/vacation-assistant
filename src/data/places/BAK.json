@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BAK",
- "fetchedAt": "2026-10-16T23:57:17.008Z",
+ "fetchedAt": "2026-10-18T16:49:40.988Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,11 @@
      "lon": 49.83315,
      "website": "https://guide.icherisheher.az/ru",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q338889",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/299418016",
@@ -58,7 +62,60 @@
      "lat": 40.36615,
      "lon": 49.83727,
      "website": "https://www.chitalnya.ru/503287/",
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q842822",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q4076080",
+     "name": "Bakü Garı",
+     "localName": "Baku railway station",
+     "lat": 40.3802,
+     "lon": 49.85039,
+     "wikipediaCount": 47,
+     "wikidataId": "Q4076080",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q344569",
+     "name": "İçeri Şehir",
+     "localName": "Old City of Baku",
+     "lat": 40.36503,
+     "lon": 49.836,
+     "wikipediaCount": 47,
+     "wikidataId": "Q344569",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q618714",
+     "name": "Baku Crystal Hall",
+     "lat": 40.34412,
+     "lon": 49.85034,
+     "wikipediaCount": 39,
+     "wikidataId": "Q618714",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q17004958",
+     "name": "Bakü Şehir Pisti",
+     "localName": "Baku City Circuit",
+     "lat": 40.3725,
+     "lon": 49.8533,
+     "wikipediaCount": 39,
+     "wikidataId": "Q17004958",
+     "kinds": [
+      "racetrack",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/1375055417",
@@ -67,174 +124,532 @@
      "lat": 40.35156,
      "lon": 49.82337,
      "address": "Abbasqulu Abbaszadə küçəsi 2",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q1407274",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q48623",
+     "name": "Azerbaycan Devlet Akademik Opera ve Bale Tiyatrosu",
+     "localName": "Azerbaijan State Academic Opera and Ballet Theater",
+     "lat": 40.3747,
+     "lon": 49.8454,
+     "wikipediaCount": 38,
+     "wikidataId": "Q48623",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/340060268",
      "name": "Flame Towers",
      "lat": 40.35998,
      "lon": 49.82625,
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q80499",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q2096562",
+     "name": "Taze Pir Camii",
+     "localName": "Taza Pir Mosque",
+     "lat": 40.3721,
+     "lon": 49.82867,
+     "wikipediaCount": 26,
+     "wikidataId": "Q2096562",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/152301644",
      "name": "Dövlət Bayrağı Meydanı",
      "lat": 40.34443,
      "lon": 49.84506,
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q621107",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1535049",
+     "name": "Muhammad Camii",
+     "localName": "Muhammad Mosque",
+     "lat": 40.36541,
+     "lon": 49.8347,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1535049",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2664885",
+     "name": "Şehitler Hiyabanı",
+     "localName": "Martyrs' Lane",
+     "lat": 40.35792,
+     "lon": 49.82708,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2664885",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q597749",
+     "name": "Azerbaycan Devlet Kukla Tiyatrosu",
+     "localName": "Baku Puppet Theatre",
+     "lat": 40.3672,
+     "lon": 49.8392,
+     "wikipediaCount": 21,
+     "wikidataId": "Q597749",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q4160569",
+     "name": "Bakü Ulu Camii",
+     "localName": "Juma Mosque in Baku",
+     "lat": 40.36561,
+     "lon": 49.83575,
+     "wikipediaCount": 21,
+     "wikidataId": "Q4160569",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2584583",
+     "name": "Azerbaycan Devlet Akademik Millî Dram Tiyatrosu",
+     "localName": "Azerbaijan State Academic National Drama Theatre",
+     "lat": 40.37529,
+     "lon": 49.83122,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2584583",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q2665945",
+     "name": "Bakü Bulvarı",
+     "localName": "Baku Boulevard",
+     "lat": 40.36,
+     "lon": 49.8371,
+     "wikipediaCount": 19,
+     "wikidataId": "Q2665945",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1521003",
+     "name": "Şah Mescidi",
+     "localName": "Palatial mosque in Baku",
+     "lat": 40.36607,
+     "lon": 49.83304,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1521003",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2347389",
+     "name": "Hükûmet Evi",
+     "localName": "Government House",
+     "lat": 40.37389,
+     "lon": 49.8525,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2347389",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q58823",
+     "name": "Azerbaycan Devlet Filarmonisi",
+     "localName": "Azerbaijan State Philharmonic Hall",
+     "lat": 40.36409,
+     "lon": 49.83164,
+     "wikipediaCount": 16,
+     "wikidataId": "Q58823",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q4075930",
+     "name": "Bakü füniküleri",
+     "localName": "Baku Funicular",
+     "lat": 40.35849,
+     "lon": 49.8285,
+     "wikipediaCount": 16,
+     "wikidataId": "Q4075930",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q5474853",
+     "name": "Çeşmeler Meydanı",
+     "localName": "Fountains Square, Baku",
+     "lat": 40.37083,
+     "lon": 49.83667,
+     "wikipediaCount": 16,
+     "wikidataId": "Q5474853",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q16415387",
+     "name": "Ajdarbey Camii",
+     "localName": "Ajdarbey Mosque",
+     "lat": 40.38591,
+     "lon": 49.8378,
+     "wikipediaCount": 15,
+     "wikidataId": "Q16415387",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q6538185",
+     "name": "Aşur Mescidi",
+     "localName": "Lezgi Mosque",
+     "lat": 40.36558,
+     "lon": 49.83617,
+     "wikipediaCount": 15,
+     "wikidataId": "Q6538185",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2496140",
+     "name": "Azerbaycan Devlet Akademik Rus Dram Tiyatrosu",
+     "localName": "Azerbaijan State Russian Drama Theater",
+     "lat": 40.37242,
+     "lon": 49.84075,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2496140",
+     "kinds": [
+      "business",
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q12838048",
+     "name": "Beyler Camii",
+     "localName": "Beyler Mosque",
+     "lat": 40.36613,
+     "lon": 49.83447,
+     "wikipediaCount": 15,
+     "wikidataId": "Q12838048",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12848542",
+     "name": "Çin Camii",
+     "localName": "Chin Mosque",
+     "lat": 40.366,
+     "lon": 49.8325,
+     "wikipediaCount": 15,
+     "wikidataId": "Q12848542",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q4189918",
+     "name": "İsmailiye Sarayı",
+     "localName": "Ismailiyya building",
+     "lat": 40.36857,
+     "lon": 49.83368,
+     "wikipediaCount": 15,
+     "wikidataId": "Q4189918",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q20573552",
+     "name": "Baba Kuhi Bakuvi Mescidi",
+     "localName": "Baba Kuhi Bakuvi mosque",
+     "lat": 40.3661,
+     "lon": 49.83701,
+     "wikipediaCount": 14,
+     "wikidataId": "Q20573552",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12849537",
+     "name": "Şeyh İbrahim Mescidi",
+     "localName": "Sheikh Ibrahim Mosque",
+     "lat": 40.36468,
+     "lon": 49.83454,
+     "wikipediaCount": 14,
+     "wikidataId": "Q12849537",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/4540883889",
      "name": "Azad Qadın heykəli",
      "lat": 40.37888,
      "lon": 49.83126,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q12836308",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3232906",
+     "name": "Azadlık Meydanı",
+     "localName": "Azadliq Square",
+     "lat": 40.3725,
+     "lon": 49.85333,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3232906",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2671722",
+     "name": "Azerbaycan Devlet Genç Seyirciler Tiyatrosu",
+     "localName": "Azerbaijan State Theatre of Young Spectators",
+     "lat": 40.37399,
+     "lon": 49.84512,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2671722",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q12840111",
+     "name": "Hacı Bani Camii",
+     "localName": "Hajji Bani mosque",
+     "lat": 40.36694,
+     "lon": 49.83361,
+     "wikipediaCount": 13,
+     "wikidataId": "Q12840111",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q21012753",
+     "name": "Hacı Heybet Mescidi",
+     "localName": "Hajji Heybat mosque",
+     "lat": 40.36722,
+     "lon": 49.83333,
+     "wikipediaCount": 13,
+     "wikidataId": "Q21012753",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2634267",
+     "name": "Haydar Aliyev Spor ve Fuar Kompleksi",
+     "localName": "Heydar Aliyev Sports and Exhibition Complex",
+     "lat": 40.39167,
+     "lon": 49.825,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2634267",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q12847654",
+     "name": "Hıdır Mescidi",
+     "localName": "Khidir Mosque",
+     "lat": 40.365,
+     "lon": 49.83389,
+     "wikipediaCount": 13,
+     "wikidataId": "Q12847654",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12841258",
+     "name": "Keykubad Camii",
+     "localName": "Keygubad Mosque",
+     "lat": 40.36617,
+     "lon": 49.83347,
+     "wikipediaCount": 13,
+     "wikidataId": "Q12841258",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12842223",
+     "name": "Molla Ahmed Camii",
+     "localName": "Molla Ahmad Mosque",
+     "lat": 40.36759,
+     "lon": 49.83559,
+     "wikipediaCount": 13,
+     "wikidataId": "Q12842223",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/299450010",
      "name": "Multani Karvansaray",
      "lat": 40.36691,
      "lon": 49.83733,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q12842275",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "station"
+     ]
     },
     {
      "id": "node/3812557465",
      "name": "Müqəddəs Mürdaşıyan Zənənlər Başkilsəsi",
      "lat": 40.38973,
      "lon": 49.82106,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q2511638",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
-     "id": "relation/3980140",
-     "name": "Bukhara Caravanserai",
-     "lat": 40.36675,
-     "lon": 49.83701,
-     "wikipediaCount": 11
+     "id": "wikidata/Q4155891",
+     "name": "Saadet Sarayı",
+     "localName": "Palace of Happiness",
+     "lat": 40.36855,
+     "lon": 49.83166,
+     "wikipediaCount": 13,
+     "wikidataId": "Q4155891",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
-     "id": "node/2779930608",
-     "name": "Müqəddəs Qriqori kilsəsi",
-     "lat": 40.37166,
-     "lon": 49.83644,
-     "wikipediaCount": 11
+     "id": "wikidata/Q16415094",
+     "name": "Cin Camii",
+     "localName": "Jinn Mosque",
+     "lat": 40.36583,
+     "lon": 49.8325,
+     "wikipediaCount": 12,
+     "wikidataId": "Q16415094",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
-     "id": "node/4692446892",
-     "name": "Nikola Tesla",
-     "lat": 40.38097,
-     "lon": 49.84746,
-     "wikipediaCount": 11
+     "id": "wikidata/Q20570921",
+     "name": "İmam Hüseyin Camii (Bakü)",
+     "localName": "Imam Hussein Mosque",
+     "lat": 40.36941,
+     "lon": 49.82631,
+     "wikipediaCount": 12,
+     "wikidataId": "Q20570921",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
-     "id": "way/95198493",
-     "name": "Bakı Dövlət Sirki",
-     "lat": 40.38307,
-     "lon": 49.83956,
-     "wikipediaCount": 5
+     "id": "wikidata/Q13668719",
+     "name": "Mosque of the Martyrs",
+     "lat": 40.3586,
+     "lon": 49.82787,
+     "wikipediaCount": 12,
+     "wikidataId": "Q13668719",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
-     "id": "node/9919992462",
-     "name": "Bakü Türk Şehitliği ve Anıtı",
-     "localName": "Bakı Türk Şəhidliyi",
-     "lat": 40.35789,
-     "lon": 49.828,
-     "wikipediaCount": 5
+     "id": "wikidata/Q2790637",
+     "name": "Nizami Gencevi Anıtı (Bakü)",
+     "localName": "Monument to Nizami Ganjavi in Baku",
+     "lat": 40.36959,
+     "lon": 49.8352,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2790637"
     },
     {
-     "id": "node/4827120023",
-     "name": "Qoşa Qala Qapısı Bakı",
-     "lat": 40.36876,
-     "lon": 49.83629,
-     "wikipediaCount": 5
+     "id": "wikidata/Q19799928",
+     "name": "Tekiye (İçerişehir)",
+     "localName": "Takiya (Ichery Sheher)",
+     "lat": 40.36655,
+     "lon": 49.8364,
+     "wikipediaCount": 12,
+     "wikidataId": "Q19799928",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
-     "id": "node/4720927490",
-     "name": "Paraşüt Qülləsi",
-     "lat": 40.36857,
-     "lon": 49.844,
-     "address": "Neftçilər prospekti",
-     "openingHours": "24/7",
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/3648179395",
-     "name": "Bəhram Gur",
-     "lat": 40.36044,
-     "lon": 49.83366,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/1908775935",
-     "name": "Cəfər Cabbarlı heykəli",
-     "lat": 40.37933,
-     "lon": 49.84793,
-     "wikipediaCount": 4
-    },
-    {
-     "id": "node/11004303807",
-     "name": "16 mərtəbə",
-     "lat": 40.34208,
-     "lon": 49.83897
-    },
-    {
-     "id": "way/1311487147",
-     "name": "Açar Qubad məscidinin qalıqları",
-     "lat": 40.36593,
-     "lon": 49.83354
-    },
-    {
-     "id": "node/12965484683",
-     "name": "Azim Azimzade Monument",
-     "lat": 40.36739,
-     "lon": 49.83746
-    },
-    {
-     "id": "node/9813036370",
-     "name": "Azneft Meydanı",
-     "lat": 40.36255,
-     "lon": 49.83548
-    },
-    {
-     "id": "way/272994705",
-     "name": "Badamdar dairəsi",
-     "lat": 40.35658,
-     "lon": 49.8105
-    },
-    {
-     "id": "way/1411050899",
-     "name": "Baku Khans Palace Complex",
-     "lat": 40.36823,
-     "lon": 49.83688
-    },
-    {
-     "id": "node/9925349670",
-     "name": "Bayıl Qəsri (XIII əsr)",
-     "lat": 40.3533,
-     "lon": 49.84083
-    },
-    {
-     "id": "node/13782740475",
-     "name": "Beşmərtəbə 5 Mərtəbə Bakı",
-     "lat": 40.37599,
-     "lon": 49.83261
-    },
-    {
-     "id": "way/360221018",
-     "name": "Carousel",
-     "lat": 40.36775,
-     "lon": 49.84083
-    },
-    {
-     "id": "node/13830623338",
-     "name": "Çəmbərəkənd Parkı",
-     "lat": 40.36349,
-     "lon": 49.82602
-    },
-    {
-     "id": "node/7880455285",
-     "name": "Farah",
-     "lat": 40.37897,
-     "lon": 49.83978
+     "id": "wikidata/Q2559447",
+     "name": "Uluslararası Muğam Merkezi",
+     "localName": "International Mugam Center of Azerbaijan",
+     "lat": 40.36083,
+     "lon": 49.835,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2559447"
     }
    ]
   },
@@ -249,14 +664,23 @@
      "lon": 49.83315,
      "website": "https://guide.icherisheher.az/ru",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q338889",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "node/3031326886",
      "name": "Azərbaycan Milli İncəsənət Müzeyi",
      "lat": 40.36327,
      "lon": 49.83184,
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q2559128",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4618962458",
@@ -266,7 +690,11 @@
      "address": "Zeynalabdin Tağıyev küçəsi 4",
      "website": "https://azhistorymuseum.gov.az/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q2664428",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/253082269",
@@ -275,7 +703,11 @@
      "lon": 49.83557,
      "address": "Neftçilər pr. 28",
      "openingHours": "Tu-Fr 10:00-18:00; Sa-Su 10:00-20:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q1136822",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/195589273",
@@ -285,14 +717,22 @@
      "address": "28 May Meydanı",
      "website": "https://muzey.ady.az/",
      "openingHours": "Mo-Sa 10:00-18:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q123753947",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4356471292",
      "name": "Museum of Modern Art",
      "lat": 40.37809,
      "lon": 49.86461,
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1678321",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4427698089",
@@ -300,56 +740,153 @@
      "lat": 40.36637,
      "lon": 49.83261,
      "openingHours": "Tu-We, Fr-Su 11:00-17:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2559058",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4452302341",
      "name": "Nizami Gəncəvi adına Milli Azərbaycan Ədəbiyyatı muzeyi",
      "lat": 40.36989,
      "lon": 49.83635,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2500152",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q16416097",
+     "name": "Arkeoloji ve Etnografya Müzesi (Bakü)",
+     "localName": "Museum of Archaeology and Ethnography",
+     "lat": 40.36778,
+     "lon": 49.83667,
+     "wikipediaCount": 12,
+     "wikidataId": "Q16416097",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q4306396",
+     "name": "Azerbaycan Bağımsızlık Müzesi",
+     "localName": "Independence Museum of Azerbaijan",
+     "lat": 40.36827,
+     "lon": 49.83309,
+     "wikipediaCount": 12,
+     "wikidataId": "Q4306396",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q12836447",
+     "name": "Azerbaycan Jeoloji Müzesi",
+     "localName": "Azerbaijan Museum of Geology",
+     "lat": 40.373,
+     "lon": 49.82018,
+     "wikipediaCount": 12,
+     "wikidataId": "Q12836447",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q4058262",
+     "name": "Azerbaycan Müzik Kültürü Devlet Müzesi",
+     "localName": "Azerbaijan State Museum of Musical Culture",
+     "lat": 40.36961,
+     "lon": 49.84251,
+     "wikipediaCount": 12,
+     "wikidataId": "Q4058262",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q12838332",
+     "name": "Celil Memmedguluzade Evi Müzesi (Bakü)",
+     "localName": "House-Museum of Jalil Mammadguluzadeh (Baku)",
+     "lat": 40.37064,
+     "lon": 49.82933,
+     "wikipediaCount": 11,
+     "wikidataId": "Q12838332",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5268555852",
      "name": "Üzeyir Hacıbəylinin ev-muzeyi",
      "lat": 40.37755,
      "lon": 49.83002,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q31301023",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4428061589",
      "name": "Tahir Salahovun ev muzeyi",
      "lat": 40.3666,
      "lon": 49.83472,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q30119475",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25359715",
      "name": "Muzey Mərkəzi",
      "lat": 40.36974,
      "lon": 49.84256,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q14942756",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/694786373",
      "name": "Underground Bath of Baku",
      "lat": 40.36866,
      "lon": 49.83673,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q65275361",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/3031326885",
      "name": "Xalq Təhsili Muzeyi",
      "lat": 40.36349,
      "lon": 49.83127,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q41504433",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1889750062",
      "name": "Niyazinin ev-muzeyi",
      "lat": 40.37485,
      "lon": 49.84304,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q38993391",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4618962459",
@@ -453,6 +990,12 @@
      "name": "Siyasi Repressiya Qurbanları Muzeyi",
      "lat": 40.37106,
      "lon": 49.84754
+    },
+    {
+     "id": "node/9791242002",
+     "name": "Xalça və Xalq Tətbiqi Sənəti Məktəb Muzeyi",
+     "lat": 40.38692,
+     "lon": 49.81407
     }
    ]
   },

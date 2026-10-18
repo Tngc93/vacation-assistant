@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "TIA",
- "fetchedAt": "2026-10-16T23:46:17.105Z",
+ "fetchedAt": "2026-10-18T16:38:58.581Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,12 +43,53 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q24895377",
+     "name": "Arena Kombëtare",
+     "localName": "Air Albania Stadium",
+     "lat": 41.31831,
+     "lon": 19.82408,
+     "wikipediaCount": 31,
+     "wikidataId": "Q24895377",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "way/175108083",
      "name": "Xhamia e Et'hem Beut",
      "lat": 41.3278,
      "lon": 19.81933,
      "openingHours": "Mo-Th,Sa-Su 09:00-12:00,13:30-16:00,17:30-19:00; Fr 09:00-11:00,14:00-16:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q798610",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q609528",
+     "name": "İskender Bey Meydanı",
+     "localName": "Skanderbeg Square",
+     "lat": 41.32791,
+     "lon": 19.81846,
+     "wikipediaCount": 29,
+     "wikidataId": "Q609528",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q18715177",
+     "name": "Namazgâh Câmiî",
+     "localName": "Great Mosque of Tirana",
+     "lat": 41.3256,
+     "lon": 19.8242,
+     "wikipediaCount": 22,
+     "wikidataId": "Q18715177",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/174510408",
@@ -56,35 +97,125 @@
      "lat": 41.32304,
      "lon": 19.82154,
      "website": "https://piramida.edu.al/",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q177335"
     },
     {
      "id": "way/233519333",
      "name": "Kulla e Sahatit",
      "lat": 41.3277,
      "lon": 19.81968,
-     "wikipediaCount": 17
+     "wikipediaCount": 18,
+     "wikidataId": "Q2474224",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q1736146",
+     "name": "Diriliş Katedrali (Tiran)",
+     "localName": "Resurrection of Christ Orthodox Cathedral",
+     "lat": 41.32647,
+     "lon": 19.81737,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1736146",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/627129048",
      "name": "Ura e Tabakëve",
      "lat": 41.32642,
      "lon": 19.82605,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1630016",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1580877",
+     "name": "Kültür Sarayı (Tiran)",
+     "localName": "Palace of Culture of Tirana",
+     "lat": 41.32878,
+     "lon": 19.81931,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1580877",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/248349387",
      "name": "Monumenti i Skënderbeut",
      "lat": 41.32774,
      "lon": 19.81857,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q609021"
+    },
+    {
+     "id": "wikidata/Q600175",
+     "name": "Aziz Paul Katedrali",
+     "localName": "St Paul's Archcathedral",
+     "lat": 41.32472,
+     "lon": 19.82139,
+     "wikipediaCount": 15,
+     "wikidataId": "Q600175",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1968108",
+     "name": "Ulusal Sanat Galerisi",
+     "localName": "National Art Gallery of Albania",
+     "lat": 41.32546,
+     "lon": 19.82021,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1968108",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1783346",
+     "name": "Selman Stërmasi Stadyumu",
+     "localName": "Selman Stërmasi Stadium",
+     "lat": 41.31898,
+     "lon": 19.81138,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1783346",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q6366870",
+     "name": "Kaplan Paşa Türbesi",
+     "localName": "Kapllan Pasha Tomb",
+     "lat": 41.32778,
+     "lon": 19.82167,
+     "wikipediaCount": 12,
+     "wikidataId": "Q6366870",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1292145197",
      "name": "Sheshi Nënë Tereza",
      "lat": 41.31786,
      "lon": 19.82131,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q3372379",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "node/3845187200",
@@ -92,7 +223,13 @@
      "lat": 41.32655,
      "lon": 19.82257,
      "address": "Shëtitorja Murat Toptani",
-     "wikipediaCount": 8
+     "wikipediaCount": 9,
+     "wikidataId": "Q1106373",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/471372812",
@@ -100,7 +237,11 @@
      "lat": 41.33008,
      "lon": 19.80425,
      "website": "https://tirana.al/en/points-of-interest/attractions-and-sights/the-tirana-mosaic",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7809116",
+     "kinds": [
+      "ruins"
+     ]
     },
     {
      "id": "way/405351517",
@@ -108,7 +249,11 @@
      "lat": 41.32707,
      "lon": 19.82129,
      "address": "Rruga Abdi Toptani",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q37311789",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/9124938933",
@@ -218,7 +363,12 @@
      "address": "Sheshi Skënderbej 7",
      "website": "https://www.mhk.gov.al/",
      "openingHours": "Tu-Sa 09:00-16:00; Su 10:00-15:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1581154",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/418943098",
@@ -228,7 +378,11 @@
      "address": "Rruga Dëshmorët e 4 Shkurtit",
      "website": "https://muzeugjethi.gov.al/",
      "openingHours": "Mo-Su 09:00-19:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q37858697",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10010944519",
@@ -237,7 +391,11 @@
      "lon": 19.82189,
      "website": "http://asa.edu.al/site/ma/",
      "openingHours": "09:00-14:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q637170",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/382263661",
@@ -247,7 +405,11 @@
      "address": "Rruga Petro Nini Luarasi 76",
      "website": "https://tirana.al/pika-interesi/muzeu-i-shkencave-te-natyres",
      "openingHours": "Mo-Fr 09:00-15:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6980610",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4512200081",
@@ -257,7 +419,11 @@
      "address": "Rruga Abdi Toptani",
      "website": "https://bunkart.al/2/home",
      "openingHours": "Mo-Th, Su 09:30-18:00; Fr, Sa 09:30-20:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q31666886",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11177666566",

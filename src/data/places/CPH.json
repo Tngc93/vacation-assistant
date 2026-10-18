@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "CPH",
- "fetchedAt": "2026-10-16T23:37:27.070Z",
+ "fetchedAt": "2026-10-18T16:26:52.513Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,20 +43,42 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q33003",
+     "name": "Parken Stadyumu",
+     "localName": "Parken Stadium",
+     "lat": 55.70247,
+     "lon": 12.5722,
+     "wikipediaCount": 51,
+     "wikidataId": "Q33003",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "way/250989045",
      "name": "Hristiyanya",
      "localName": "Christiania",
      "lat": 55.67721,
      "lon": 12.60533,
      "website": "https://www.christiania.org/",
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q202206",
+     "kinds": [
+      "adminArea",
+      "country"
+     ]
     },
     {
      "id": "way/378106484",
      "name": "Amalienborg",
      "lat": 55.68398,
      "lon": 12.59314,
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q211053",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/25992657",
@@ -64,7 +86,25 @@
      "lat": 55.67565,
      "lon": 12.57906,
      "website": "https://denkongeligesamling.dk/christiansborg-slot/",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q940733",
+     "kinds": [
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q110289",
+     "name": "Tivoli Bahçeleri",
+     "localName": "Tivoli Gardens",
+     "lat": 55.67361,
+     "lon": 12.56833,
+     "wikipediaCount": 39,
+     "wikidataId": "Q110289",
+     "kinds": [
+      "attraction",
+      "business"
+     ]
     },
     {
      "id": "way/25524592",
@@ -73,14 +113,25 @@
      "lon": 12.57743,
      "website": "https://www.kongernessamling.dk/rosenborg/",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q206101",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/25466204",
      "name": "Børsen",
      "lat": 55.67552,
      "lon": 12.58403,
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q326528",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/1088494374",
@@ -88,14 +139,26 @@
      "lat": 55.68199,
      "lon": 12.60074,
      "website": "https://kglteater.dk/",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q838297",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/6476337",
      "name": "Nyhavn",
      "lat": 55.67974,
      "lon": 12.59091,
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q943946",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/1011492033",
@@ -104,7 +167,15 @@
      "lon": 12.57579,
      "website": "https://www.rundetaarn.dk/",
      "openingHours": "May 01-Sep 30; Mo-Su 10:00-20:00; Oct 01-Apr 30; Mo,Th-Su 10:00-18:00; Tu,We 10:00-21:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1140534",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "museum",
+      "tower"
+     ]
     },
     {
      "id": "way/25524833",
@@ -113,7 +184,24 @@
      "lon": 12.58957,
      "website": "https://marmorkirken.dk/",
      "openingHours": "Mo-Th 10:00-17:00; Fr 12:00-17:00; Sa 10:00-17:00; Su 13:00-17:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1321231",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1495052",
+     "name": "Kopenhag Garı",
+     "localName": "Copenhagen Central Station",
+     "lat": 55.67278,
+     "lon": 12.56444,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1495052",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "way/25607908",
@@ -122,7 +210,11 @@
      "lon": 12.59425,
      "website": "http://vorfrelserskirke.dk/",
      "openingHours": "Mo-Su 11:00-15:30",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q29157",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/25451190",
@@ -131,7 +223,11 @@
      "lon": 12.57273,
      "website": "https://www.domkirken.dk/",
      "openingHours": "Mo-Sa 08:00-17:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1451811",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/25466133",
@@ -139,7 +235,14 @@
      "lat": 55.67906,
      "lon": 12.58645,
      "website": "https://www.kgl-teater.dk/",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q607681",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/52142",
@@ -147,7 +250,23 @@
      "localName": "Københavns Rådhus",
      "lat": 55.67527,
      "lon": 12.57032,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q2010247",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1440151",
+     "name": "Royal Copenhagen",
+     "lat": 55.681,
+     "lon": 12.57626,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1440151",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/175208408",
@@ -155,21 +274,32 @@
      "lat": 55.6914,
      "lon": 12.59426,
      "openingHours": "Mo-Su 06:00-22:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q221812",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "relation/55955",
      "name": "Frederiksberg Slot",
      "lat": 55.67183,
      "lon": 12.52527,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q665954",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/1629331",
      "name": "Strøget",
      "lat": 55.67835,
      "lon": 12.57716,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1347634"
     },
     {
      "id": "way/3098803",
@@ -178,42 +308,264 @@
      "lon": 12.574,
      "website": "https://snm.dk/en/botanical-garden",
      "openingHours": "Apr-Sep: 08:30-18:00, Oct-Mar: 08:30-16:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q892711",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q952817",
+     "name": "Gefion Çeşmesi",
+     "localName": "Gefion Fountain",
+     "lat": 55.68931,
+     "lon": 12.59763,
+     "wikipediaCount": 17,
+     "wikidataId": "Q952817"
     },
     {
      "id": "way/304697944",
      "name": "Kongens Nytorv",
      "lat": 55.68043,
      "lon": 12.58627,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1589941",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q849232",
+     "name": "Ungdomshuset",
+     "lat": 55.6938,
+     "lon": 12.548,
+     "wikipediaCount": 17,
+     "wikidataId": "Q849232"
+    },
+    {
+     "id": "wikidata/Q800650",
+     "name": "DR Byen Station",
+     "lat": 55.65583,
+     "lon": 12.58906,
+     "wikipediaCount": 16,
+     "wikidataId": "Q800650",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1238512",
+     "name": "St.Ansgar Katedrali",
+     "localName": "St. Ansgar's Cathedral",
+     "lat": 55.68611,
+     "lon": 12.5925,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1238512",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2504988",
+     "name": "Yellow Palace",
+     "lat": 55.68301,
+     "lon": 12.59272,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2504988",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/264362254",
      "name": "Holmens Kirke",
      "lat": 55.67662,
      "lon": 12.58351,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q284914",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1783715",
+     "name": "Koncerthuset",
+     "lat": 55.65795,
+     "lon": 12.58898,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1783715",
+     "kinds": [
+      "musicVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q635929",
+     "name": "Østerport Station",
+     "lat": 55.69222,
+     "lon": 12.5875,
+     "wikipediaCount": 15,
+     "wikidataId": "Q635929",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "way/549543686",
      "name": "Rådhuspladsen",
      "lat": 55.67604,
      "lon": 12.56883,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2178686",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1280223",
+     "name": "Charlottenborg Palace",
+     "lat": 55.68028,
+     "lon": 12.5875,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1280223",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/26363619",
      "name": "Synagogen",
      "lat": 55.68113,
      "lon": 12.57352,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q4346882",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q11963844",
+     "name": "Circle Bridge",
+     "lat": 55.67243,
+     "lon": 12.5838,
+     "wikipediaCount": 13,
+     "wikidataId": "Q11963844",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q2879779",
+     "name": "Forum Kopenhag",
+     "localName": "Forum Copenhagen",
+     "lat": 55.68109,
+     "lon": 12.55296,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2879779",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/133104582",
      "name": "Helligåndskirken",
      "lat": 55.67904,
      "lon": 12.57697,
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1602873",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q844957",
+     "name": "Østervold Observatory",
+     "lat": 55.68688,
+     "lon": 12.57592,
+     "wikipediaCount": 13,
+     "wikidataId": "Q844957"
+    },
+    {
+     "id": "wikidata/Q1698446",
+     "name": "Radisson Collection Royal Hotel",
+     "lat": 55.67506,
+     "lon": 12.56338,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1698446",
+     "kinds": [
+      "business",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q3357360",
+     "name": "Rigshospitalet",
+     "lat": 55.696,
+     "lon": 12.5664,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3357360",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1898947",
+     "name": "Rosenborg Castle Gardens",
+     "lat": 55.685,
+     "lon": 12.579,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1898947"
+    },
+    {
+     "id": "wikidata/Q2136395",
+     "name": "H.C. Andersens Boulevard",
+     "localName": "H. C. Andersens Boulevard",
+     "lat": 55.67463,
+     "lon": 12.57003,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2136395",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2277684",
+     "name": "Søerne",
+     "localName": "The Lakes, Copenhagen",
+     "lat": 55.68889,
+     "lon": 12.56694,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2277684"
+    },
+    {
+     "id": "wikidata/Q3580820",
+     "name": "St. Alban's Church",
+     "lat": 55.68917,
+     "lon": 12.59696,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3580820",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1033809",
+     "name": "Trinitatis Kilisesi",
+     "localName": "Trinitatis Church",
+     "lat": 55.68156,
+     "lon": 12.57606,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1033809",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/40106991",
@@ -221,7 +573,11 @@
      "lat": 55.67234,
      "lon": 12.58715,
      "website": "http://www.christianskirke.com/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1082978",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/26436022",
@@ -229,7 +585,43 @@
      "lat": 55.68002,
      "lon": 12.57083,
      "website": "http://www.sankt-petri.dk/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1433264",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2562959",
+     "name": "Det Ny Theater",
+     "lat": 55.67333,
+     "lon": 12.55528,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2562959",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1155571",
+     "name": "DR Byen",
+     "lat": 55.65798,
+     "lon": 12.59098,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1155571"
+    },
+    {
+     "id": "wikidata/Q944453",
+     "name": "Langebro",
+     "lat": 55.67028,
+     "lon": 12.5788,
+     "wikipediaCount": 11,
+     "wikidataId": "Q944453",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "way/25701472",
@@ -237,28 +629,42 @@
      "lat": 55.68007,
      "lon": 12.5947,
      "website": "https://kglteater.dk/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q4568402",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "node/12961134226",
      "name": "Jens Olsens Verdensur",
      "lat": 55.67554,
      "lon": 12.56947,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q3071851"
     },
     {
      "id": "way/24721845",
      "name": "Amagertorv",
      "lat": 55.67879,
      "lon": 12.57828,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q4572749",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/29416223",
      "name": "HDMS Peder Skram",
      "lat": 55.68853,
      "lon": 12.60483,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3378551",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/27226058",
@@ -266,15 +672,11 @@
      "lat": 55.6742,
      "lon": 12.56329,
      "website": "http://www.kulturarv.dk/1001fortaellinger/da_DK/frihedsstoetten-vesterbrogade-koebenhavn",
-     "wikipediaCount": 7
-    },
-    {
-     "id": "way/26950604",
-     "name": "Københavns Universitetsbibliotek Fiolstræde",
-     "lat": 55.68033,
-     "lon": 12.57292,
-     "openingHours": "Tu,We,Fr,Sa 10:00-17:00; Th 10:00-16:30",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3441954",
+     "kinds": [
+      "heritage"
+     ]
     }
    ]
   },
@@ -290,7 +692,11 @@
      "lon": 12.5748,
      "website": "https://www.nationalmuseet.dk/",
      "openingHours": "Apr-Oct Mo-Su,PH 10:00-17:00; Nov-Mar Mo closed, Tu-Su,PH 10:00-17:00; Dec 24,25,31 off",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q648166",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25451395",
@@ -299,7 +705,12 @@
      "lon": 12.57837,
      "website": "https://www.smk.dk/",
      "openingHours": "Tu, Th-Su 10:00-18:00; We 10:00-20:00",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q671384",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "relation/1322262",
@@ -308,7 +719,12 @@
      "lon": 12.57193,
      "website": "https://www.glyptoteket.dk/",
      "openingHours": "Tu-We, Fr-Su 10:00-17:00; Th 10:00-21:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q1140507",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/2351676",
@@ -317,7 +733,12 @@
      "lon": 12.5784,
      "website": "https://www.thorvaldsensmuseum.dk/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1992413",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/25451373",
@@ -325,7 +746,12 @@
      "lat": 55.68991,
      "lon": 12.57748,
      "website": "https://hirschsprung.dk/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2982867",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/5693118",
@@ -334,7 +760,24 @@
      "lon": 12.59354,
      "website": "https://designmuseum.dk/",
      "openingHours": "Tu-We, Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q834603",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q1201043",
+     "name": "Danish Film Institute",
+     "lat": 55.6832,
+     "lon": 12.5785,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1201043",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/148223101",
@@ -343,7 +786,13 @@
      "lon": 12.57248,
      "website": "https://cphmuseum.kk.dk/",
      "openingHours": "Mo-We,Fr 10:00-17:00; Th 10:00-20:00; Sa-Su 11:00-17:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2398527",
+     "kinds": [
+      "heritage",
+      "museum",
+      "office"
+     ]
     },
     {
      "id": "node/1291394245",
@@ -352,7 +801,11 @@
      "lon": 12.58238,
      "website": "https://www.davidmus.dk/",
      "openingHours": "Mo off; Tu,Th-Su 10:00-17:00; We 10:00-21:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q536499",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/862967576",
@@ -361,7 +814,11 @@
      "lon": 12.57699,
      "website": "https://snm.ku.dk/",
      "openingHours": "Mo-Tu 10:00-17:00, We 10:00-21:00, Th-Su 10:00-17:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q978464",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25451113",
@@ -370,7 +827,12 @@
      "lon": 12.5803,
      "website": "https://krigsmuseet.dk/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q653100",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/45894028",
@@ -379,7 +841,11 @@
      "lon": 12.57032,
      "website": "https://www.arbejdermuseet.dk/",
      "openingHours": "Mo-We 10:00-17:00; Th 10:00-20:00; Fr-Su 10:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3365660",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/738986844",
@@ -388,7 +854,11 @@
      "lon": 12.5823,
      "website": "https://jewmus.dk/",
      "openingHours": "We-Su 11:00-17:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q872947",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/113974090",
@@ -397,7 +867,8 @@
      "lon": 12.58723,
      "website": "https://denfrie.dk/da/",
      "openingHours": "Mo-Tu off; We,Fr 12:00-18:00; Th 12:00-21:00; Sa-Su 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3022270"
     },
     {
      "id": "node/283581117",
@@ -405,7 +876,14 @@
      "lat": 55.67478,
      "lon": 12.57863,
      "website": "https://www.teatermuseet.dk/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3072878",
+     "kinds": [
+      "heritage",
+      "museum",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "way/166353794",
@@ -414,7 +892,11 @@
      "lon": 12.52419,
      "website": "https://frederiksbergmuseerne.dk/da/cisternerne/",
      "openingHours": "Mo 11:00-18:00; Tu 11:00-18:00; We-Th 11:00-20:00; Fr-Su 11:00-18:00; Oct-Nov Mo off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3432620",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4331285861",
@@ -423,7 +905,11 @@
      "lon": 12.59667,
      "website": "https://www.nordatlantens.dk/",
      "openingHours": "Mo-Fr 10:00-17:00; Sa-Su 12:00-17:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q841018",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/150092019",
@@ -432,7 +918,11 @@
      "lon": 12.53196,
      "website": "https://frederiksbergmuseerne.dk/da/bakkehuset/",
      "openingHours": "11:00-18:00; Sa-Su 11:00-17:00; Mo off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3434260",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5936280185",
@@ -441,7 +931,11 @@
      "lon": 12.57906,
      "website": "https://www.dac.dk/",
      "openingHours": "Mo,Th,Fr 10:00-21:00; Tu,We,Sa,Su 10:00-18:00; Dec 24-25 off; Dec 31 off; Jan 1 off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3434214",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/184070826",
@@ -450,7 +944,11 @@
      "lon": 12.55523,
      "website": "https://www.dieselhouse.dk/",
      "openingHours": "Tu-Fr 10:00-16:00; Su 10:00-13:30; PH,Su off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5275006",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/894315602",
@@ -459,7 +957,12 @@
      "lon": 12.5919,
      "website": "https://www.museion.ku.dk/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6806387",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/104564097",
@@ -467,7 +970,11 @@
      "lat": 55.6715,
      "lon": 12.59629,
      "website": "https://xn--lillemlle-q8a.dk/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12061168",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/783475006",
@@ -476,7 +983,11 @@
      "lon": 12.5958,
      "website": "https://natmus.dk/museer-og-slotte/frihedsmuseet/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3432853",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4315966262",
@@ -485,7 +996,11 @@
      "lon": 12.57974,
      "website": "http://www.kongerneslapidarium.dk/",
      "openingHours": "May 17-Aug 31 Tu-Su 12:00-16:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q17166231",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1517820296",
@@ -494,7 +1009,11 @@
      "lon": 12.56085,
      "website": "https://politi.dk/politimuseet",
      "openingHours": "Mo,We,Fr,Sa off; Tu,Th,Su 11:00-16:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11995980",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9747492611",
@@ -502,7 +1021,11 @@
      "lat": 55.6861,
      "lon": 12.5974,
      "website": "https://www.smk.dk/article/den-kgl-afstoebningssamling/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11965101",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/33196806",
@@ -510,7 +1033,11 @@
      "lat": 55.67837,
      "lon": 12.52776,
      "website": "https://www.moestingshus.dk/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12328148",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/176714013",
@@ -519,7 +1046,11 @@
      "lon": 12.57451,
      "website": "https://www.enigma.dk/",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q28226147",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3858601945",
@@ -528,7 +1059,11 @@
      "lon": 12.59245,
      "website": "https://denkongeligesamling.dk/amalienborgmuseet/",
      "openingHours": "Tu-Su 10:00-16:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11957657",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4329579150",
@@ -537,7 +1072,11 @@
      "lon": 12.58401,
      "website": "https://magasinmuseum.dk/",
      "openingHours": "Th-Fr 13:00-15:00, Sa-Su 11:00-17:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q26225437",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2473702013",
@@ -546,7 +1085,98 @@
      "lon": 12.5902,
      "website": "https://overgaden.org/",
      "openingHours": "Tu-Su 13:00-17:00; Th 13:00-20:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12330704"
+    },
+    {
+     "id": "node/3867388207",
+     "name": "Kongernes Samling Rosenborg",
+     "lat": 55.68576,
+     "lon": 12.57732,
+     "website": "https://denkongeligesamling.dk/rosenborg-slot/",
+     "wikipediaCount": 2,
+     "wikidataId": "Q11964882"
+    },
+    {
+     "id": "way/104486877",
+     "name": "OXA",
+     "lat": 55.68778,
+     "lon": 12.6074,
+     "website": "https://www.oxa.dk/",
+     "wikipediaCount": 2,
+     "wikidataId": "Q11993007"
+    },
+    {
+     "id": "way/141759800",
+     "name": "STORM",
+     "lat": 55.67442,
+     "lon": 12.53197,
+     "openingHours": "Tu-Fr 11:00-18:00; Sa 11:00-17:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q110104338",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/25524570",
+     "name": "Botanisk Museum",
+     "lat": 55.68515,
+     "lon": 12.57277,
+     "wikipediaCount": 2,
+     "wikidataId": "Q5168497",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4886228802",
+     "name": "Galerie Birch",
+     "lat": 55.68139,
+     "lon": 12.58807,
+     "wikipediaCount": 2,
+     "wikidataId": "Q12313434",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6372863355",
+     "name": "Edition Copenhagen",
+     "lat": 55.67622,
+     "lon": 12.59415,
+     "website": "https://www.editioncopenhagen.com/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q12309356",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/3404320834",
+     "name": "Jónshús",
+     "lat": 55.68921,
+     "lon": 12.58231,
+     "website": "https://www.jonshus.dk/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q16429794"
+    },
+    {
+     "id": "way/134655236",
+     "name": "Studio Oliver Gustav",
+     "lat": 55.69622,
+     "lon": 12.58433,
+     "website": "https://studio.olivergustav.com/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q12327939"
+    },
+    {
+     "id": "node/5071042620",
+     "name": "Arkæologisk Værksted",
+     "lat": 55.6739,
+     "lon": 12.57225,
+     "website": "https://cphmuseum.kk.dk/besoeg-os/aktuelle-udstillinger/arkaeologisk-vaerksted",
+     "openingHours": "Sa-Su 12:00-16:00; Mo-Fr off"
     }
    ]
   },
@@ -559,7 +1189,13 @@
      "name": "Zootårnet",
      "lat": 55.672,
      "lon": 12.52351,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42401290",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ]
     },
     {
      "id": "node/6772144886",
@@ -804,6 +1440,7 @@
      "website": "https://cafegammeltorv.dk/",
      "openingHours": "11:30-17:00",
      "cuisine": "smørrebrød",
+     "wikidataId": "Q63436622",
      "detailed": true
     },
     {
@@ -824,6 +1461,7 @@
      "website": "https://www.cafe-petersborg.dk/",
      "openingHours": "Mo-Sa 11:45-16:00,17:00-21:00",
      "cuisine": "danish",
+     "wikidataId": "Q63457102",
      "detailed": true
     },
     {
@@ -940,6 +1578,7 @@
      "website": "https://www.bevars.dk/",
      "openingHours": "Mo 10:00-23:00, Tu-We 10:00-24:00, Th 10:00-01:00, Fr 10:00-02:30, Sa 10:00-02:30, Su 10:00-22:00",
      "cuisine": "regional",
+     "wikidataId": "Q61418337",
      "detailed": true
     },
     {
@@ -950,6 +1589,16 @@
      "website": "https://www.bistrococorico.dk/",
      "openingHours": "11:00-21:00; Mo off",
      "cuisine": "french",
+     "detailed": true
+    },
+    {
+     "id": "node/9067467688",
+     "name": "Bistronomi",
+     "lat": 55.66324,
+     "lon": 12.60439,
+     "website": "https://www.bistronomi.dk/",
+     "openingHours": "Fr-Sa 10:00-22:00; Su-Th 10:00-21:00",
+     "cuisine": "french, italian, nordic",
      "detailed": true
     },
     {
@@ -990,6 +1639,7 @@
      "website": "https://www.cafe22.dk/",
      "openingHours": "Mo-We 10:30-23:00, Th 10:30-23:30, Fr 10:30-24:00, Sa 09:30-24:00, Su 09:30-23:00",
      "cuisine": "regional",
+     "wikidataId": "Q21756895",
      "detailed": true
     },
     {
@@ -1030,6 +1680,7 @@
      "website": "https://katz.dk/",
      "openingHours": "10:00-24:00, Fr-Sa 10:00-02:00",
      "cuisine": "burger, pasta",
+     "wikidataId": "Q26912693",
      "detailed": true
     },
     {
@@ -1070,6 +1721,7 @@
      "website": "https://www.paludanbogcafe.com/",
      "openingHours": "Mo-Th 09:00-22:00; Sa 10:00-23:00; Fr 09:00-23:00; Su 10:00-22:00",
      "cuisine": "regional, coffee shop",
+     "wikidataId": "Q63168650",
      "detailed": true
     },
     {
@@ -1090,6 +1742,7 @@
      "website": "https://www.cafesorgenfri.dk/",
      "openingHours": "Mo-Sa 11:00-23:00; Su 12:00-18:00",
      "cuisine": "smørrebrød",
+     "wikidataId": "Q63436767",
      "detailed": true
     },
     {
@@ -1180,16 +1833,6 @@
      "website": "https://denlillecafe.dk/",
      "openingHours": "07:00-17:00; Sa-Su 10:00-16:00",
      "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/4554558854",
-     "name": "Ello Food Cafe",
-     "lat": 55.65554,
-     "lon": 12.54692,
-     "website": "https://www.supermarco.dk/da/",
-     "openingHours": "Mo-Fr 08:30-19:00; Sa 08:30-16:00",
-     "cuisine": "italian",
      "detailed": true
     }
    ]
@@ -1320,6 +1963,7 @@
      "website": "https://www.vedstranden10.dk/",
      "openingHours": "Mo-Fr 15:00-22:00; Sa 12:00-22:00; Su off",
      "cuisine": "winebar",
+     "wikidataId": "Q28225883",
      "detailed": true
     },
     {
@@ -1563,6 +2207,7 @@
      "lon": 12.53212,
      "website": "http://www.cafeintime.dk/",
      "openingHours": "Mo-Su 16:00 - 02:00",
+     "wikidataId": "Q12305023",
      "detailed": true
     }
    ]
@@ -1686,6 +2331,7 @@
      "lon": 12.55925,
      "website": "https://rust.dk/",
      "openingHours": "Fr,Sa 23:00-04:00",
+     "wikidataId": "Q11998701",
      "detailed": true
     },
     {
@@ -1721,14 +2367,16 @@
      "name": "Jazzhus Montmartre",
      "lat": 55.682,
      "lon": 12.58246,
-     "website": "https://www.jazzhusmontmartre.dk/"
+     "website": "https://www.jazzhusmontmartre.dk/",
+     "wikidataId": "Q1684536"
     },
     {
      "id": "node/567867798",
      "name": "Loppen",
      "lat": 55.67402,
      "lon": 12.59732,
-     "website": "https://www.loppen.dk/"
+     "website": "https://www.loppen.dk/",
+     "wikidataId": "Q12324876"
     },
     {
      "id": "node/11410423431",
@@ -1783,7 +2431,8 @@
      "id": "node/1608830245",
      "name": "Karel van Mander",
      "lat": 55.67954,
-     "lon": 12.58332
+     "lon": 12.58332,
+     "wikidataId": "Q12321297"
     },
     {
      "id": "way/36881682",

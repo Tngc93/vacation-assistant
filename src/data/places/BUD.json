@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BUD",
- "fetchedAt": "2026-10-16T23:34:42.845Z",
+ "fetchedAt": "2026-10-18T16:24:35.919Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -51,14 +51,26 @@
      "address": "Kossuth Lajos tér 1-3",
      "website": "https://latogatokozpont.parlament.hu/",
      "openingHours": "Mo-Fr 08:00-18:00; Sa-Su 08:00-16:00",
-     "wikipediaCount": 56
+     "wikipediaCount": 56,
+     "wikidataId": "Q11819",
+     "kinds": [
+      "office"
+     ]
     },
     {
      "id": "relation/6486918",
      "name": "Budavári Palota",
      "lat": 47.49599,
      "lon": 19.03956,
-     "wikipediaCount": 46
+     "wikipediaCount": 47,
+     "wikidataId": "Q46313",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "palace",
+      "unesco"
+     ]
     },
     {
      "id": "way/197110386",
@@ -66,7 +78,12 @@
      "lat": 47.49899,
      "lon": 19.04369,
      "openingHours": "24/7",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q465534",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "relation/20593057",
@@ -76,7 +93,11 @@
      "address": "Szent István tér 1",
      "website": "https://www.bazilika.biz/",
      "openingHours": "Mo-Fr 09:00-17:00; Sa 09:00-13:00; Su 13:00-17:00",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q338665",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/24000390",
@@ -85,7 +106,14 @@
      "lon": 19.05817,
      "address": "Andrássy út 22",
      "website": "https://www.opera.hu/",
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q36833",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/11772",
@@ -94,7 +122,12 @@
      "lon": 19.04644,
      "address": "Széchenyi István tér 9",
      "website": "https://mta.hu/",
-     "wikipediaCount": 39
+     "wikipediaCount": 39,
+     "wikidataId": "Q265058",
+     "kinds": [
+      "business",
+      "school"
+     ]
     },
     {
      "id": "way/37135081",
@@ -104,7 +137,11 @@
      "address": "Szentháromság tér 2",
      "website": "https://plebania.matyas-templom.hu/",
      "openingHours": "Mo-Sa 09:00-17:00; Su 13:00-17:00",
-     "wikipediaCount": 38
+     "wikipediaCount": 38,
+     "wikidataId": "Q493133",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "relation/17948384",
@@ -113,7 +150,11 @@
      "lon": 19.03481,
      "website": "https://www.fishermansbastion.com/",
      "openingHours": "Mo-Su 09:00-23:00",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q493117",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/223530620",
@@ -123,7 +164,11 @@
      "address": "Dohány utca 2",
      "website": "https://www.dohany-zsinagoga.hu/",
      "openingHours": "Mar-Sep Su-Th 10:00-20:00;\nMar-Oct Fr 10:00-16:00;\nNov-Feb Su-Th 10:00-16:00;\nNov-Feb Fr 10:00-14:00;\nMar-Apr Su-Th 10:00-16:00;\nOct Su-Th 10:00-16:00;\nJan 01-04,Mar 01-Apr 27,Oct 01-26 10:00-17:30;",
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q754397",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "relation/11844",
@@ -132,14 +177,47 @@
      "lon": 19.05203,
      "address": "Szabadság tér 9",
      "website": "https://www.mnb.hu/",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q774636",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q915195",
+     "name": "Özgürlük Köprüsü (Budapeşte)",
+     "localName": "Liberty Bridge",
+     "lat": 47.48556,
+     "lon": 19.055,
+     "wikipediaCount": 33,
+     "wikidataId": "Q915195",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1063819",
+     "name": "Ulusal Széchényi Kütüphanesi",
+     "localName": "National Széchényi Library",
+     "lat": 47.49521,
+     "lon": 19.03935,
+     "wikipediaCount": 33,
+     "wikidataId": "Q1063819",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "relation/156392",
      "name": "Liszt Ferenc Zeneművészeti Egyetem",
      "lat": 47.50331,
      "lon": 19.06461,
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q847099",
+     "kinds": [
+      "business",
+      "university"
+     ]
     },
     {
      "id": "relation/165910",
@@ -147,14 +225,56 @@
      "lat": 47.49797,
      "lon": 19.03805,
      "address": "Szent György tér 1-2",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q927806",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q699098",
+     "name": "Erzsébet Köprüsü",
+     "localName": "Elisabeth Bridge",
+     "lat": 47.49083,
+     "lon": 19.04917,
+     "wikipediaCount": 28,
+     "wikidataId": "Q699098",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q916120",
+     "name": "Margit Köprüsü",
+     "localName": "Margaret Bridge",
+     "lat": 47.51472,
+     "lon": 19.04361,
+     "wikipediaCount": 26,
+     "wikidataId": "Q916120",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "node/1488974596",
      "name": "Szabadság-szobor",
      "lat": 47.48674,
      "lon": 19.04803,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q933182"
+    },
+    {
+     "id": "wikidata/Q950534",
+     "name": "Váci Sokağı",
+     "localName": "Váci Street",
+     "lat": 47.49417,
+     "lon": 19.0525,
+     "wikipediaCount": 25,
+     "wikidataId": "Q950534",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/24323859",
@@ -164,7 +284,69 @@
      "address": "Vámház körút 1-3",
      "website": "https://piaconline.hu/en/central-market-hall/",
      "openingHours": "Mo-Fr 06:00-18:00; Sa 06:00-16:00; Su 10:00-16:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q195344"
+    },
+    {
+     "id": "wikidata/Q781659",
+     "name": "Petőfi Köprüsü",
+     "localName": "Petőfi Bridge",
+     "lat": 47.47889,
+     "lon": 19.06333,
+     "wikipediaCount": 23,
+     "wikidataId": "Q781659",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q473811",
+     "name": "Tuna kıyısındaki ayakkabılar",
+     "localName": "Shoes on the Danube Bank",
+     "lat": 47.5039,
+     "lon": 19.04478,
+     "wikipediaCount": 23,
+     "wikidataId": "Q473811"
+    },
+    {
+     "id": "wikidata/Q570848",
+     "name": "Vörösmarty tér",
+     "lat": 47.49664,
+     "lon": 19.05062,
+     "wikipediaCount": 23,
+     "wikidataId": "Q570848",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q731939",
+     "name": "Budapeşte Kale Tepesi Füniküleri",
+     "localName": "Budapest Castle Hill Funicular",
+     "lat": 47.49778,
+     "lon": 19.03917,
+     "wikipediaCount": 22,
+     "wikidataId": "Q731939"
+    },
+    {
+     "id": "wikidata/Q206170",
+     "name": "Citadella",
+     "lat": 47.48694,
+     "lon": 19.04639,
+     "wikipediaCount": 21,
+     "wikidataId": "Q206170",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q2605415",
+     "name": "Budapeşte Gettosu",
+     "localName": "Budapest Ghetto",
+     "lat": 47.49889,
+     "lon": 19.06444,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2605415"
     },
     {
      "id": "relation/11847",
@@ -172,7 +354,13 @@
      "lat": 47.4998,
      "lon": 19.04804,
      "address": "Széchenyi István tér 5-6",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q854317",
+     "kinds": [
+      "business",
+      "hotel",
+      "palace"
+     ]
     },
     {
      "id": "way/46769969",
@@ -181,7 +369,11 @@
      "lon": 19.051,
      "address": "Kelenhegyi út 4",
      "website": "https://www.gellertfurdo.hu/",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q646140",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/9114091196",
@@ -191,7 +383,58 @@
      "address": "Szent Gellért rakpart 1",
      "website": "https://sziklatemplom.hu/",
      "openingHours": "Mo-Sa 09:30-19:30",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q839142",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q904825",
+     "name": "Deák Ferenc tér",
+     "lat": 47.4975,
+     "lon": 19.055,
+     "wikipediaCount": 17,
+     "wikidataId": "Q904825",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1799636",
+     "name": "Gellért Oteli",
+     "localName": "Hotel Gellért",
+     "lat": 47.48387,
+     "lon": 19.05221,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1799636",
+     "kinds": [
+      "business",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q920826",
+     "name": "Kossuth Meydanı",
+     "localName": "Kossuth Square",
+     "lat": 47.50694,
+     "lon": 19.04722,
+     "wikipediaCount": 16,
+     "wikidataId": "Q920826",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q299975",
+     "name": "Szabadság tér",
+     "lat": 47.50472,
+     "lon": 19.05028,
+     "wikipediaCount": 16,
+     "wikidataId": "Q299975",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/24038230",
@@ -201,7 +444,8 @@
      "address": "Vigadó tér 2",
      "website": "https://vigado.hu/",
      "openingHours": "Mo-Su 10:00-19:00; PH off",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q674032"
     },
     {
      "id": "way/24256098",
@@ -211,7 +455,35 @@
      "address": "Döbrentei tér 9",
      "website": "https://www.rudasfurdo.hu/",
      "openingHours": "Su-Th 06:00-20:00, Fr,Sa 06:00-03:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q897824",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q791408",
+     "name": "Batthyány Meydanı",
+     "localName": "Batthyány Square",
+     "lat": 47.50622,
+     "lon": 19.03861,
+     "wikipediaCount": 14,
+     "wikidataId": "Q791408",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q934011",
+     "name": "Kálvin tér",
+     "lat": 47.48969,
+     "lon": 19.06182,
+     "wikipediaCount": 14,
+     "wikidataId": "Q934011",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/37126204",
@@ -222,7 +494,39 @@
      "address": "Mecset utca 14",
      "website": "https://gulbabaalapitvany.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q692020",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q103062",
+     "name": "Büyük Bulvar",
+     "localName": "Grand Boulevard",
+     "lat": 47.49969,
+     "lon": 19.06943,
+     "wikipediaCount": 13,
+     "wikidataId": "Q103062",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q727749",
+     "name": "Erkel Tiyatrosu",
+     "localName": "Erkel Theatre",
+     "lat": 47.49694,
+     "lon": 19.07667,
+     "wikipediaCount": 13,
+     "wikidataId": "Q727749",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/3363212",
@@ -230,7 +534,11 @@
      "lat": 47.49056,
      "lon": 19.04344,
      "address": "Hadnagy utca 8-10",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q538548",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/481583657",
@@ -240,21 +548,65 @@
      "address": "Fő utca 84",
      "website": "https://www.kiralyfurdo.hu/",
      "openingHours": "off",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q195545",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q897802",
+     "name": "Budapeşte Komedi Tiyatrosu",
+     "localName": "Comedy Theatre of Budapest",
+     "lat": 47.5125,
+     "lon": 19.05139,
+     "wikipediaCount": 12,
+     "wikidataId": "Q897802",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q767163",
+     "name": "Széll Kálmán tér",
+     "lat": 47.50708,
+     "lon": 19.02419,
+     "wikipediaCount": 12,
+     "wikidataId": "Q767163",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/243689215",
      "name": "Szent Anna-templom",
      "lat": 47.50558,
      "lon": 19.03839,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q999637",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/249932064",
      "name": "Szilágyi Dezső téri református templom",
      "lat": 47.50381,
      "lon": 19.03895,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q16522996",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q161181",
+     "name": "Zero Kilometre Stone",
+     "lat": 47.49806,
+     "lon": 19.04,
+     "wikipediaCount": 11,
+     "wikidataId": "Q161181"
     },
     {
      "id": "way/24321885",
@@ -263,51 +615,11 @@
      "lon": 19.05229,
      "website": "https://www.belvarosiplebania.hu/",
      "openingHours": "Mo-Sa 10:00-18:00; Su 08:30-19:00",
-     "wikipediaCount": 10
-    },
-    {
-     "id": "way/259555819",
-     "name": "Rumbach utcai zsinagóga",
-     "lat": 47.4979,
-     "lon": 19.05891,
-     "address": "Rumbach Sebestyén utca 11-13",
-     "website": "https://rumbachzsinagoga.hu/",
-     "openingHours": "Mo-Su 10:00-18:00; Fr 10:00-16:00; Sa off",
-     "wikipediaCount": 10
-    },
-    {
-     "id": "relation/165810",
-     "name": "Szent Lukács Gyógyfürdő és Uszoda",
-     "lat": 47.51801,
-     "lon": 19.03689,
-     "address": "Frankel Leó út 25-29",
-     "website": "https://www.lukacsfurdo.hu/",
-     "openingHours": "07:00-19:00; Tu 07:00-22:00",
-     "wikipediaCount": 10
-    },
-    {
-     "id": "relation/2786100",
-     "name": "Vár",
-     "lat": 47.4997,
-     "lon": 19.03412,
-     "wikipediaCount": 9
-    },
-    {
-     "id": "way/1234562712",
-     "name": "Mária Magdolna-templom",
-     "lat": 47.50392,
-     "lon": 19.02906,
-     "address": "Kapisztrán tér 6",
-     "wikipediaCount": 8
-    },
-    {
-     "id": "way/24324325",
-     "name": "Belvárosi Ferences templom",
-     "lat": 47.4932,
-     "lon": 19.05647,
-     "address": "Ferenciek tere 9",
-     "website": "http://pestiferences.ofm.hu/",
-     "wikipediaCount": 7
+     "wikipediaCount": 10,
+     "wikidataId": "Q792586",
+     "kinds": [
+      "religious"
+     ]
     }
    ]
   },
@@ -323,7 +635,11 @@
      "address": "Múzeum körút 14-16",
      "website": "http://mnm.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q914141",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/2203495",
@@ -333,7 +649,11 @@
      "address": "Andrássy út 60",
      "website": "https://www.terrorhaza.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q372376",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/735186601",
@@ -343,7 +663,11 @@
      "address": "Szent György tér 2",
      "website": "https://mng.hu/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q252071",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/240902171",
@@ -353,7 +677,12 @@
      "address": "Üllői út 33-37",
      "website": "http://imm.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1088467",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/3470782",
@@ -363,7 +692,12 @@
      "address": "Andrássy út 69-71",
      "website": "https://mke.hu/",
      "openingHours": "Mo-Su 10:00-18:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q844153",
+     "kinds": [
+      "business",
+      "university"
+     ]
     },
     {
      "id": "node/11648509882",
@@ -372,7 +706,11 @@
      "lon": 19.0583,
      "website": "https://pim.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1234343",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/106079286",
@@ -382,7 +720,11 @@
      "address": "Páva utca 39",
      "website": "https://hdke.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1625053",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/735191228",
@@ -392,7 +734,12 @@
      "address": "Szent György tér 2",
      "website": "https://www.varmuzeum.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q776086",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/4817975711",
@@ -402,7 +749,11 @@
      "address": "Vadász utca 29",
      "website": "https://www.uveghaz.org/?categoryId=36512",
      "openingHours": "13:00-16:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q5567049",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/737630261",
@@ -412,7 +763,12 @@
      "address": "Lovas út 4/C",
      "website": "https://www.sziklakorhaz.eu/",
      "openingHours": "10:00-19:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1298262",
+     "kinds": [
+      "adminArea",
+      "museum"
+     ]
     },
     {
      "id": "node/276951329",
@@ -421,7 +777,11 @@
      "lon": 19.05489,
      "website": "https://www.bkv.hu/hu/muzeumok/foldalatti_vasuti_muzeum_budapest",
      "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1005927",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/250256596",
@@ -431,7 +791,11 @@
      "address": "Apród utca 1-3",
      "website": "https://semmelweismuseum.hu/",
      "openingHours": "Mar 01-Oct 30 Tu-Fr 10:00-18:00; Nov 01-Feb 29 Tu-Fr 10:00-16:00; Sa-Su 10:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1434400",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/165909",
@@ -441,7 +805,12 @@
      "address": "Színház utca 5-9",
      "website": "http://szabadkarmelita.hu/",
      "openingHours": "Sa-Su 10:00-22:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q109933478",
+     "kinds": [
+      "office",
+      "religious"
+     ]
     },
     {
      "id": "way/25291179",
@@ -451,7 +820,11 @@
      "address": "Andrássy út 103",
      "website": "https://hoppmuseum.hu/",
      "openingHours": "We-Su 10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1055054",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4119286412",
@@ -461,7 +834,11 @@
      "address": "Táncsics Mihály utca 5",
      "website": "https://www.kollergaleria.hu/",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1115292",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/275495799",
@@ -471,7 +848,11 @@
      "address": "Vörösmarty utca 35",
      "website": "https://www.lisztmuseum.hu/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa 09:00-17:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q28732523",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/3482601",
@@ -481,7 +862,8 @@
      "address": "Nagymező utca 8",
      "website": "https://capacenter.hu/",
      "openingHours": "11:00-19:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q21499507"
     },
     {
      "id": "node/276836017",
@@ -491,7 +873,11 @@
      "address": "Andrássy út 87-89",
      "website": "https://kodaly.hu/kodaly_muzeum/kodaly-zoltan-emlekmuzeum-es-archivum-107360",
      "openingHours": "We,Th,Fr 10:00-12:00,14:00-16:30; Sa 11:00-14:00 || \"by appointment\"",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1114880",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/144657695",
@@ -501,7 +887,8 @@
      "address": "Bródy Sándor utca 8",
      "website": "https://iicbudapest.esteri.it/",
      "openingHours": "Mo-Th 10:00-18:00; Fr 10:00-15:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q851197"
     },
     {
      "id": "node/945682477",
@@ -511,7 +898,11 @@
      "address": "Bem József utca 20",
      "website": "https://kozlekedesimuzeum.hu/hu/tagintezmenyek?tid=1",
      "openingHours": "closed",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1472193",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/527016465",
@@ -521,7 +912,11 @@
      "address": "Tárnok utca 18",
      "website": "https://semmelweismuseum.hu/arany-sas-patikamuzeum/",
      "openingHours": "Mar 01-Oct 30 Tu-Fr 10:00-18:00; Nov 01-Feb 29 Tu-Fr 10:00-16:00; Sa-Su 10:00-18:00; PH off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q775117",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/871115864",
@@ -531,7 +926,11 @@
      "address": "Stromfeld Aurél út 16",
      "website": "https://szinhaziintezet.hu/index.php?option=com_content&view=article&id=153",
      "openingHours": "We-Su 14:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q788774",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/189100092",
@@ -541,7 +940,8 @@
      "address": "Városmajor utca 44",
      "website": "https://barabasvilla.hu/",
      "openingHours": "Mo-Th 09:00-18:00; Su 09:00-13:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q65217849"
     },
     {
      "id": "node/276965238",
@@ -551,7 +951,11 @@
      "address": "Hársfa utca 47",
      "website": "https://www.belyegmuzeum.hu/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q854446",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/25291140",
@@ -561,7 +965,8 @@
      "address": "Kmety György utca 26-28",
      "website": "https://mke.hu/",
      "openingHours": "Mo-Fr 10:00-18:00; Sa 10:00-13:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q5383928"
     },
     {
      "id": "way/25291231",
@@ -571,7 +976,11 @@
      "address": "Városligeti fasor 12",
      "website": "http://www.imm.hu/hu/contents/262,R%C3%A1th+Gy%C3%B6rgy-villa",
      "openingHours": "Tu-Su 10:00-18:00; Mo off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1252636",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3487749567",
@@ -581,7 +990,11 @@
      "address": "Keleti Károly utca 5",
      "website": "http://konyvtar.ksh.hu/",
      "openingHours": "Mo-Th 09:00-17:00; Fr 08:00-16:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1125962",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/385832061",
@@ -591,7 +1004,11 @@
      "address": "Dohány utca 2",
      "website": "https://www.milev.hu/",
      "openingHours": "Mar-Oct Sa-Th 10:00-20:00; Mar-Oct Fr 10:00-16:30; Feb-Nov Sa-Th 10:00-16:00; Mar-Oct Fr 10:00-14:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q18758814",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/276949914",
@@ -601,7 +1018,11 @@
      "address": "Veres Pálné utca 4-6",
      "website": "https://pim.hu/hu/filiale/ady-emlekmuzeum",
      "openingHours": "We-Su 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q506458",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/3251841",
@@ -611,7 +1032,144 @@
      "address": "Arany János utca 10",
      "website": "https://aranytiz.hu/",
      "openingHours": "Mo-Fr 09:00-19:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q776017",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/4120659398",
+     "name": "Kieselback Galéria",
+     "lat": 47.51255,
+     "lon": 19.04899,
+     "address": "Szent István körút 5",
+     "website": "https://www.kieselbach.hu/",
+     "openingHours": "Mo-Fr 10:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q56390949",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "way/25366511",
+     "name": "Kossuth Lajos Múzeumhajó",
+     "lat": 47.49755,
+     "lon": 19.0465,
+     "website": "https://venhajo-etterem.hu/kossuth-muzeumhajo/",
+     "openingHours": "11:00-23:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q107240644",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/10014380774",
+     "name": "Light Art Museum",
+     "lat": 47.50481,
+     "lon": 19.05281,
+     "address": "Hold utca 13",
+     "website": "https://lam.xyz/",
+     "openingHours": "Mo-Th 10:00-20:00; Fr-Su 10:00-21:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q129167221",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4356516859",
+     "name": "Magyar Mesemúzeum",
+     "lat": 47.49226,
+     "lon": 19.04437,
+     "address": "Döbrentei utca 15",
+     "website": "https://mesemuzeum.hu/",
+     "openingHours": "Th 10:00-18:00, Sa 10:00-17:00, Sa 10:00-13:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q22956599",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/9458805135",
+     "name": "Magyar Pénzmúzeum és Látogatóközpont",
+     "lat": 47.50647,
+     "lon": 19.02346,
+     "address": "Krisztina körút 6",
+     "website": "https://www.penzmuzeum.hu/",
+     "openingHours": "Mo,We,Fr 09:00-17:00; Th 09:00-19:00; Sa,Su 10:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q113219949",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4356428027",
+     "name": "Országgyűlési Múzeum",
+     "lat": 47.5085,
+     "lon": 19.04593,
+     "address": "Kossuth Lajos tér 1-3",
+     "website": "https://www.parlament.hu/web/orszaggyulesi-muzeum",
+     "openingHours": "Tu-Su 09:00-17:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q65215150",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2473537582",
+     "name": "Országos Színháztörténeti Múzeum és Intézet",
+     "lat": 47.49769,
+     "lon": 19.0298,
+     "address": "Krisztina körút 57",
+     "website": "https://oszmi.hu/",
+     "openingHours": "Mo,Th 09:00-16:00; Fr 09:00-14:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q1226166",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/2126973730",
+     "name": "Postamúzeum",
+     "lat": 47.5109,
+     "lon": 19.07514,
+     "address": "Benczúr utca 27",
+     "website": "https://postamuzeum.hu/hu/muzeumok/1/postamuzeum-budapest",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q1239676"
+    },
+    {
+     "id": "way/139794534",
+     "name": "Radnóti Miklós Művelődési Központ",
+     "lat": 47.52304,
+     "lon": 19.05655,
+     "address": "Kárpát utca 23",
+     "website": "https://kult13.hu/szinterek/ram-radnoti-miklos-muvelodesi-kozpont/",
+     "openingHours": "09:00-21:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q1244979"
+    },
+    {
+     "id": "node/4792183534",
+     "name": "Vigadó Galéria",
+     "lat": 47.49576,
+     "lon": 19.04953,
+     "address": "Vigadó tér 2",
+     "website": "https://vigado.hu/",
+     "openingHours": "Mo-Su 10:00-19:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q1426265",
+     "kinds": [
+      "business"
+     ]
     }
    ]
   },
@@ -624,42 +1182,54 @@
      "name": "Erdélyi bástya",
      "lat": 47.50472,
      "lon": 19.03326,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q990349",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/5243949464",
      "name": "Esztergomi bástya",
      "lat": 47.50438,
      "lon": 19.02677,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q991843"
     },
     {
      "id": "node/5866142101",
      "name": "Murad pasa bástyája",
      "lat": 47.50537,
      "lon": 19.02972,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1179969"
     },
     {
      "id": "node/5243949465",
      "name": "Savanyúleves bástya",
      "lat": 47.50098,
      "lon": 19.03102,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1285782",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/12829236051",
      "name": "Sziavus pasa tornya",
      "lat": 47.50515,
      "lon": 19.02814,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1297995"
     },
     {
      "id": "node/4280390057",
      "name": "Veli bej tornya",
      "lat": 47.50225,
      "lon": 19.02903,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1420771"
     },
     {
      "id": "node/4795379801",
@@ -833,6 +1403,7 @@
      "website": "http://www.ulloibecsiszelet.hu/",
      "openingHours": "Mo-Sa 11:30-23:00; Su 11:30-22:00",
      "cuisine": "regional",
+     "wikidataId": "Q116851482",
      "detailed": true
     },
     {
@@ -888,6 +1459,7 @@
      "website": "https://borkonyha.hu/",
      "openingHours": "Mo-Fr 18:00-24:00, Sa 12:00-24:00",
      "cuisine": "fine dining",
+     "wikidataId": "Q88590520",
      "detailed": true
     },
     {
@@ -946,17 +1518,6 @@
      "detailed": true
     },
     {
-     "id": "node/1930400913",
-     "name": "Café Dumas",
-     "lat": 47.50117,
-     "lon": 19.03987,
-     "address": "Fő utca 17",
-     "website": "http://cafedumas.hu/",
-     "openingHours": "Mo-We 09:00-20:00; Th,Fr 09:00-22:00; Sa 10:00-22:00",
-     "cuisine": "french",
-     "detailed": true
-    },
-    {
      "id": "node/1217565779",
      "name": "Centrál Grand Cafe & Bar 1887",
      "lat": 47.49201,
@@ -987,6 +1548,7 @@
      "website": "http://www.costes.hu/",
      "openingHours": "Fr-Mo 18:30-23:00",
      "cuisine": "fine dining",
+     "wikidataId": "Q869348",
      "detailed": true
     },
     {
@@ -1075,6 +1637,17 @@
      "website": "https://europabisztro.hu/",
      "openingHours": "Mo-Su 12:00-24:00",
      "cuisine": "pizza, italian, italian pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2306149066",
+     "name": "Fatál",
+     "lat": 47.4891,
+     "lon": 19.05592,
+     "address": "Váci utca 67",
+     "website": "http://www.fatalrestaurant.com/",
+     "openingHours": "We-Su 12:00-22:00",
+     "cuisine": "regional",
      "detailed": true
     }
    ]
@@ -1753,6 +2326,7 @@
      "lon": 19.06295,
      "website": "https://www.a38.hu/",
      "openingHours": "08:00-22:00",
+     "wikidataId": "Q429618",
      "detailed": true
     },
     {

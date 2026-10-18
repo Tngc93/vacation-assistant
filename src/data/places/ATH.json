@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "ATH",
- "fetchedAt": "2026-10-16T23:42:32.684Z",
+ "fetchedAt": "2026-10-18T16:34:55.037Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,12 +43,32 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1524",
+     "name": "Atina",
+     "localName": "Athens",
+     "lat": 37.98417,
+     "lon": 23.72806,
+     "wikipediaCount": 239,
+     "wikidataId": "Q1524",
+     "kinds": [
+      "adminArea",
+      "country",
+      "ruins"
+     ]
+    },
+    {
      "id": "way/910010406",
      "name": "Partenon",
      "localName": "Παρθενών",
      "lat": 37.9715,
      "lon": 23.72662,
-     "wikipediaCount": 133
+     "wikipediaCount": 133,
+     "wikidataId": "Q10288",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "relation/11268149",
@@ -56,35 +76,54 @@
      "lat": 37.97091,
      "lon": 23.72727,
      "openingHours": "Mo-Su 08:00-20:00",
-     "wikipediaCount": 93
-    },
-    {
-     "id": "relation/4423249",
-     "name": "Ακρόπολη",
-     "lat": 37.9717,
-     "lon": 23.72643,
-     "wikipediaCount": 93
+     "wikipediaCount": 93,
+     "wikidataId": "Q131013",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "ruins",
+      "unesco"
+     ]
     },
     {
      "id": "node/3343545896",
      "name": "Αρχαιολογικός Χώρος Ακαδημίας Πλάτωνος",
      "lat": 37.99137,
      "lon": 23.70838,
-     "wikipediaCount": 67
+     "wikipediaCount": 67,
+     "wikidataId": "Q193093",
+     "kinds": [
+      "business",
+      "heritage",
+      "ruins",
+      "school"
+     ]
     },
     {
      "id": "relation/5688115",
      "name": "Αθήνα",
      "lat": 37.9696,
      "lon": 23.72454,
-     "wikipediaCount": 53
+     "wikipediaCount": 53,
+     "wikidataId": "Q844930",
+     "kinds": [
+      "adminArea",
+      "country",
+      "ruins"
+     ]
     },
     {
      "id": "way/910010334",
      "name": "Ερέχθειο",
      "lat": 37.9721,
      "lon": 23.72645,
-     "wikipediaCount": 49
+     "wikipediaCount": 49,
+     "wikidataId": "Q242741",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "relation/19023844",
@@ -93,21 +132,40 @@
      "lon": 23.74096,
      "website": "http://www.panathenaicstadium.gr/Default.aspx?tabid=84&language=en-US",
      "openingHours": "Mar-Oct: 08:00-19:00, Nov-Feb: 08:00-17:00",
-     "wikipediaCount": 46
+     "wikipediaCount": 46,
+     "wikidataId": "Q208811",
+     "kinds": [
+      "heritage",
+      "ruins",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/82150737",
      "name": "Λύκειο Αριστοτέλη",
      "lat": 37.97403,
      "lon": 23.7434,
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q1160664",
+     "kinds": [
+      "business",
+      "ruins",
+      "school",
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/12352554",
      "name": "Ναός Αθηνάς Νίκης",
      "lat": 37.97153,
      "lon": 23.72489,
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q384813",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "way/63765671",
@@ -115,21 +173,38 @@
      "lat": 37.96937,
      "lon": 23.73309,
      "openingHours": "Mo-Su 08:00-18:30",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q1123019",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "way/27917370",
      "name": "Ναός Ηφαίστου",
      "lat": 37.9756,
      "lon": 23.72141,
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q756824",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "relation/11199493",
      "name": "Αέρηδες",
      "lat": 37.9742,
      "lon": 23.72703,
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q372717",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "relation/13139942",
@@ -137,14 +212,23 @@
      "lat": 37.97471,
      "lon": 23.7228,
      "openingHours": "Mo-Su 08:00-20:00",
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q395367",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "relation/16363966",
      "name": "Πλατεία Συντάγματος",
      "lat": 37.97553,
      "lon": 23.73486,
-     "wikipediaCount": 34
+     "wikipediaCount": 34,
+     "wikidataId": "Q1137997",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/10973697",
@@ -152,21 +236,58 @@
      "lat": 37.97059,
      "lon": 23.72772,
      "openingHours": "Mo-Su 08:00-19:00",
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q1227044",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q147478",
+     "name": "Zappion",
+     "localName": "Zappeion",
+     "lat": 37.97139,
+     "lon": 23.73639,
+     "wikipediaCount": 33,
+     "wikidataId": "Q147478",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/13249184",
      "name": "Ωδείο Ηρώδου Αττικού",
      "lat": 37.97082,
      "lon": 23.72454,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q1328165",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts",
+      "ruins",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q2070605",
+     "name": "Athena Parthenos",
+     "lat": 37.97151,
+     "lon": 23.72694,
+     "wikipediaCount": 30,
+     "wikidataId": "Q2070605"
     },
     {
      "id": "way/145662894",
      "name": "Νέον Βουλευτήριον",
      "lat": 37.97514,
      "lon": 23.72182,
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q751024"
     },
     {
      "id": "relation/2903266",
@@ -174,91 +295,280 @@
      "lat": 37.97862,
      "lon": 23.71818,
      "website": "http://odysseus.culture.gr/h/3/eh352.jsp?obj_id=2392",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q630974",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/145662891",
      "name": "Ηλιαία",
      "lat": 37.97425,
      "lon": 23.72245,
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q1129527"
     },
     {
      "id": "way/729674865",
      "name": "Βιβλιοθήκη του Αδριανού",
      "lat": 37.9754,
      "lon": 23.72655,
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1455447",
+     "kinds": [
+      "business",
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/317915132",
      "name": "Πνύκα",
      "lat": 37.97147,
      "lon": 23.71945,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1125096",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q1263335",
+     "name": "Attalos Stoası",
+     "localName": "Stoa of Attalos",
+     "lat": 37.97513,
+     "lon": 23.72421,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1263335",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1584057565",
      "name": "Άγαλμα Αθηνάς Προμάχου",
      "lat": 37.97182,
      "lon": 23.72566,
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q755221"
     },
     {
      "id": "way/713354220",
      "name": "Μητροπολιτικός Ναός Αθηνών",
      "lat": 37.97531,
      "lon": 23.73007,
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q981372",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/157180174",
      "name": "Μνημείο Λυσικράτους",
      "lat": 37.97108,
      "lon": 23.72994,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1160691",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q1235440",
+     "name": "Manastıraki",
+     "localName": "Monastiraki",
+     "lat": 37.97639,
+     "lon": 23.72361,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1235440",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q582203",
+     "name": "Atina Konser Salonu",
+     "localName": "Athens Concert Hall",
+     "lat": 37.98111,
+     "lon": 23.75416,
+     "wikipediaCount": 22,
+     "wikidataId": "Q582203",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q646284",
+     "name": "Ulusal Bahçe",
+     "localName": "National Garden of Athens",
+     "lat": 37.97417,
+     "lon": 23.73833,
+     "wikipediaCount": 22,
+     "wikidataId": "Q646284"
     },
     {
      "id": "way/442128059",
      "name": "Μνημείο Φιλοπάππου",
      "lat": 37.96736,
      "lon": 23.72137,
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1760491",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "node/8262155401",
      "name": "Ποικίλη Στοά",
      "lat": 37.97641,
      "lon": 23.72262,
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q936234"
+    },
+    {
+     "id": "wikidata/Q620473",
+     "name": "Apostolos Nikolaidis Stadyumu",
+     "localName": "Apostolos Nikolaidis Stadium",
+     "lat": 37.98717,
+     "lon": 23.75419,
+     "wikipediaCount": 21,
+     "wikidataId": "Q620473",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/2150086",
      "name": "Βουλή των Ελλήνων",
      "lat": 37.97527,
      "lon": 23.73699,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q7084890",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q425754",
+     "name": "Omonia Meydanı",
+     "localName": "Omonoia Square",
+     "lat": 37.98408,
+     "lon": 23.72834,
+     "wikipediaCount": 20,
+     "wikidataId": "Q425754",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/12352555",
      "name": "Προπύλαια",
      "lat": 37.97174,
      "lon": 23.7251,
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q3407649",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/175107932",
      "name": "Πύλη του Αδριανού",
      "lat": 37.97019,
      "lon": 23.73201,
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1567576",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/729674900",
      "name": "Τζαμί Τζισταράκη",
      "lat": 37.97597,
      "lon": 23.72602,
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q15958739",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2629065",
+     "name": "Cumhurbaşkanlığı Sarayı",
+     "localName": "Presidential Mansion",
+     "lat": 37.97262,
+     "lon": 23.74083,
+     "wikipediaCount": 19,
+     "wikidataId": "Q2629065",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q1035075",
+     "name": "Hekatompedon",
+     "localName": "Hekatompedon temple",
+     "lat": 37.9715,
+     "lon": 23.7267,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1035075",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "relation/11197557",
+     "name": "Ρωμαϊκή Αγορά Αθηνών",
+     "lat": 37.9743,
+     "lon": 23.72635,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1435551",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2614287",
+     "name": "Atina Kuleleri",
+     "localName": "Athens Tower 1",
+     "lat": 37.98459,
+     "lon": 23.76087,
+     "wikipediaCount": 18,
+     "wikidataId": "Q2614287"
+    },
+    {
+     "id": "wikidata/Q902329",
+     "name": "Brauroneion",
+     "lat": 37.97147,
+     "lon": 23.72538,
+     "wikipediaCount": 18,
+     "wikidataId": "Q902329",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     }
    ]
   },
@@ -274,7 +584,11 @@
      "address": "Πατησίων 44",
      "website": "https://namuseum.gr/",
      "openingHours": "Nov 01-Mar 31 08:30-15:30; Nov 01-Mar 31,Apr 01-May 13,May 14-Oct 31 Tu 13:00-20:00; Apr 01-May 13 09:00-16:00; May 14-Oct 31 08:00-20:00; Jan 01 off; Mar 25 off; May 01 off; Dec 25-26 off \"Orthodox Easter off\"",
-     "wikipediaCount": 41
+     "wikipediaCount": 41,
+     "wikidataId": "Q637187",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/983921252",
@@ -285,7 +599,11 @@
      "address": "Διονυσίου Αρεοπαγίτου 15",
      "website": "https://www.theacropolismuseum.gr/",
      "openingHours": "Mo 08:00-16:00; Tu-Th, Sa-Su 08:00-20:00; Fr 08:00-22:00",
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q421084",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/23183030",
@@ -295,17 +613,12 @@
      "address": "Κουμπάρη 1",
      "website": "http://www.benaki.gr/",
      "openingHours": "Tu off; Mo,We,Fr,Sa 10:00-18:00; Th 10:00-24:00; Su 10:00-16:00",
-     "wikipediaCount": 27
-    },
-    {
-     "id": "relation/2429041",
-     "name": "Μουσείο Μπενάκη (Κτήριο Οδού Πειραιώς)",
-     "lat": 37.97447,
-     "lon": 23.70828,
-     "address": "Πειραιώς 138",
-     "website": "https://www.benaki.gr/",
-     "openingHours": "Su, Th 10:00-18:00; Fr-Sa 10:00-22:00; Mo-We off",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q816669",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/220890927",
@@ -315,7 +628,11 @@
      "address": "Νεοφύτου Δούκα 4",
      "website": "http://www.cycladic.gr/",
      "openingHours": "Mo,We,Fr,Sa 10:00-17:00; Th 10:00-20:00; Su 11:00-17:00; Tu off",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q1230253",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/318587297",
@@ -325,7 +642,11 @@
      "address": "Λεωφόρος Βασιλίσσης Σοφίας 22",
      "website": "http://www.byzantinemuseum.gr/",
      "openingHours": "Mo,We-Su 09:00-16:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1018775",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3844131091",
@@ -334,7 +655,22 @@
      "lon": 23.73539,
      "address": "Πανεπιστημίου 12",
      "openingHours": "Tu-Su 09:00-16:00; Mo off; PH off",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q658339",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q822101",
+     "name": "National Historical Museum",
+     "lat": 37.9775,
+     "lon": 23.73278,
+     "wikipediaCount": 19,
+     "wikidataId": "Q822101",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/318587299",
@@ -344,7 +680,12 @@
      "address": "Ριζάρη 2",
      "website": "http://www.warmuseum.gr/",
      "openingHours": "Nov-Mar Mo-Sa 09:00-17:00; Apr-Oct Mo-Sa 09:00-19:00; Su 09:00-15:00; PH 09:00-15:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1788831",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "way/217268333",
@@ -353,7 +694,11 @@
      "lon": 23.71677,
      "address": "Ερμού 148",
      "openingHours": "Nov-Mar Mo, Th-Su 08:00-17:00; Nov-Mar Tu 10:00-17:00; Apr-Oct Mo, Th-Su 08:00-20:00; Apr-Oct Tu 10:00-20:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2574469",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10655452393",
@@ -362,7 +707,11 @@
      "lon": 23.72419,
      "address": "Αδριανού 24",
      "openingHours": "Nov-Mar Mo, Th-Su 08:00-17:00; Nov-Mar Tu 10:00-17:00; Apr-Oct Mo, Th-Su 08:00-20:00; Apr-Oct Tu 10:00-20:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q2383284",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/195162372",
@@ -372,7 +721,11 @@
      "address": "Νίκης 39",
      "website": "https://www.jewishmuseum.gr/",
      "openingHours": "Mo-Fr 09:00-16:00; Su 10:00-16:00; Sa,PH off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q930891",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/19040143",
@@ -382,7 +735,12 @@
      "address": "Κολοκοτρώνη 13",
      "website": "http://www.nhmuseum.gr/",
      "openingHours": "Tu-Su 08:30-14:30",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q19363322",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "node/3005463590",
@@ -392,7 +750,11 @@
      "address": "Τοσίτσα 1",
      "website": "http://odysseus.culture.gr/h/1/eh151.jsp?obj_id=3348",
      "openingHours": "We-Mo 08:30-15:30",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2732854",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/285129067",
@@ -401,7 +763,11 @@
      "lon": 23.73157,
      "address": "Παπαρηγοπούλου 7",
      "openingHours": "Mo-Fr 09:00-16:00; Tu off; Sa,Su 10:00-15:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q6941076",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/400456875",
@@ -411,7 +777,11 @@
      "address": "Ερατοσθένους 13",
      "website": "https://goulandris.gr/",
      "openingHours": "We-Th, Sa-Mo 10:00-18:00; Fr 10:00-20:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q33119180",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/220926060",
@@ -421,7 +791,11 @@
      "address": "Βασιλίσσης Σοφίας 9",
      "website": "http://thf.gr/",
      "openingHours": "Fr-We 10:00-18:00, Th 10:00-20:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q104527429",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/851609464",
@@ -431,7 +805,11 @@
      "address": "Θόλου 5",
      "website": "http://history-museum.uoa.gr/",
      "openingHours": "Mo-Fr 09:30-14:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3555557",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/223175510",
@@ -440,14 +818,22 @@
      "lon": 23.72755,
      "address": "Διογένους 1-3",
      "openingHours": "We-Mo 08:30-15:30",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4306254",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10992115218",
      "name": "Μουσείο Μελέτης Ελληνικού Θεάτρου",
      "lat": 37.98137,
      "lon": 23.73531,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1584857",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/316768543",
@@ -457,7 +843,11 @@
      "address": "Ιουλιανού 33-35",
      "website": "http://www.hellenicmotormuseum.gr/",
      "openingHours": "Mo-Fr 10:00-17:00, Sa,Su 11:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1163632",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11486548887",
@@ -466,7 +856,11 @@
      "lon": 23.73079,
      "address": "Μητροπόλεως 44",
      "website": "https://mariacallasmuseum.gr/en/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q123193468",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/219472242",
@@ -475,15 +869,11 @@
      "lon": 23.7214,
      "address": "Παναγή Τσαλδάρη (Πειραιώς) 51",
      "openingHours": "\"Λειτουργεί μόνον όταν υπάρχει έκθεση\"",
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/321376940",
-     "name": "Πινακοθήκη Δήμου Αθηναίων",
-     "lat": 37.98298,
-     "lon": 23.71936,
-     "address": "Λεωνίδου",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1576793",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/267551016",
@@ -493,7 +883,11 @@
      "address": "Καλλισπέρη 12",
      "website": "https://www.lalaounis-jewelrymuseum.gr/",
      "openingHours": "Tu-Fr 09:00-15:00; We,Sa 10:00-18:00; PH off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q15051919",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/177282540",
@@ -502,7 +896,11 @@
      "lon": 23.73257,
      "address": "Μονής Αστερίου 7",
      "website": "https://frissirasmuseum.gr/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5504730",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/223018298",
@@ -510,7 +908,12 @@
      "lat": 37.97391,
      "lon": 23.72776,
      "address": "Κυρρήστου 8",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q38284122",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "way/914492222",
@@ -519,7 +922,13 @@
      "lon": 23.72905,
      "address": "Αδριανού 96",
      "website": "https://archontiko-mpenizelon.gr/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12874094",
+     "kinds": [
+      "heritage",
+      "museum",
+      "ruins"
+     ]
     },
     {
      "id": "way/383407579",
@@ -528,7 +937,13 @@
      "lon": 23.71267,
      "address": "Ιερά Οδός 48",
      "website": "http://www.tainiothiki.gr/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q2973241",
+     "kinds": [
+      "business",
+      "cinema",
+      "museum"
+     ]
     },
     {
      "id": "way/449650393",
@@ -536,7 +951,156 @@
      "lat": 37.97774,
      "lon": 23.72159,
      "address": "Πλατεία Αγίων Ασωμάτων 5",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q78033066",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/13556107171",
+     "name": "Κέντρο Μελετών Ακροπόλεως",
+     "lat": 37.96887,
+     "lon": 23.72869,
+     "wikipediaCount": 3,
+     "wikidataId": "Q15260388",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/220890939",
+     "name": "Μέγαρο Σταθάτου",
+     "lat": 37.97567,
+     "lon": 23.74278,
+     "address": "Βασιλίσσης Σοφίας 31",
+     "wikipediaCount": 3,
+     "wikidataId": "Q3195477",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/321114256",
+     "name": "Μουσείο Μπενάκη Ισλαμικής Τέχνης",
+     "lat": 37.97923,
+     "lon": 23.72034,
+     "address": "Αγίων Ασωμάτων 22",
+     "website": "https://www.benaki.gr/",
+     "openingHours": "Th-Su 10:00-18:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q59165188",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4840589548",
+     "name": "Ψηφιακό Μουσείο της Ακαδημίας Πλάτωνος",
+     "lat": 37.99445,
+     "lon": 23.70729,
+     "website": "https://www.plato-academy.gr/museum",
+     "openingHours": "Tu-Su 09:00-16:00; PH off",
+     "wikipediaCount": 2,
+     "wikidataId": "Q25535844",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/223874917",
+     "name": "Μουσείο Ιστορίας της Ελληνικής Ενδυμασίας",
+     "lat": 37.9788,
+     "lon": 23.73752,
+     "address": "Δημοκρίτου 7",
+     "openingHours": "Jan 1 off; Jan Mo-Fr 10:00-14:00; Aug off; Mar 25 off; Jan 1 off; Jan 6 off; Dec 25-26 off; May 1 off; Oct 25 off; PH off",
+     "wikipediaCount": 2,
+     "wikidataId": "Q6941089",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/132639902",
+     "name": "Μουσείο \"Ελευθέριος Βενιζέλος\"",
+     "lat": 37.9807,
+     "lon": 23.75186,
+     "wikipediaCount": 2,
+     "wikidataId": "Q5358633",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3912027436",
+     "name": "Βιομηχανικό Μουσείο Φωταερίου",
+     "lat": 37.97824,
+     "lon": 23.71363,
+     "address": "Πειραιώς 100",
+     "website": "http://www.technopolis-athens.com/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q116246225",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/175877498",
+     "name": "Μουσείο Ηρακλειδών",
+     "lat": 37.97527,
+     "lon": 23.71863,
+     "address": "Ηρακλειδών 16",
+     "website": "https://herakleidon.org/",
+     "openingHours": "We-Su 10:00-17:15; Jan 1 off; Easter off; Aug 15 off; Dec 25-26 off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q16252571",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/219467101",
+     "name": "Μουσείο Νεώτερης Κεραμεικής",
+     "lat": 37.97851,
+     "lon": 23.72018,
+     "address": "Μελιδώνη 4-6",
+     "website": "http://www.potterymuseum.gr/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q5062634",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/834539464",
+     "name": "Μουσείο Λαϊκής Τέχνης και Παράδοσης",
+     "lat": 37.97265,
+     "lon": 23.73119,
+     "address": "Αγγελικής Χατζημιχάλη 6",
+     "wikipediaCount": 1,
+     "wikidataId": "Q12882149",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4777483721",
+     "name": "Bernier Eliades",
+     "lat": 37.97694,
+     "lon": 23.71784,
+     "website": "https://bernier-eliades.com/",
+     "openingHours": "Tu-Fr 10:30-18:30; Sa 12:00-16:00"
+    },
+    {
+     "id": "node/7899630085",
+     "name": "Blank Wall Gallery",
+     "lat": 38.00193,
+     "lon": 23.73978,
+     "address": "Φωκίωνος Νέγρη 55",
+     "website": "https://www.blankwallgallery.com/",
+     "openingHours": "Mo-Fr 18:00-21:30"
     }
    ]
   },

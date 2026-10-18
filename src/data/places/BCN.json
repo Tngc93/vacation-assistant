@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BCN",
- "fetchedAt": "2026-10-16T23:18:26.244Z",
+ "fetchedAt": "2026-10-18T16:04:31.698Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,60 @@
      "lon": 2.17428,
      "website": "https://sagradafamilia.org/",
      "openingHours": "Nov-Feb: Mo-Sa 09:00-18:00, Su 10:30-18:00; Mar-Oct: Mo-Fr 09:00-19:00, Sa 09:00-18:00, Su 10:30-19:00; Apr-Sep: Mo-Fr 09:00-20:00, Sa 09:00-18:00, Su 10:30-20:00; Dec 25,Dec 26,Jan 01,Jan 06 09:00-14:00; PH off",
-     "wikipediaCount": 103
+     "wikipediaCount": 103,
+     "wikidataId": "Q48435",
+     "kinds": [
+      "heritage",
+      "religious",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q159848",
+     "name": "Camp Nou",
+     "lat": 41.38083,
+     "lon": 2.12278,
+     "wikipediaCount": 88,
+     "wikidataId": "Q159848",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q212867",
+     "name": "Güell Parkı",
+     "localName": "Park Güell",
+     "lat": 41.41361,
+     "lon": 2.15278,
+     "wikipediaCount": 52,
+     "wikidataId": "Q212867",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q461371",
+     "name": "Casa Batlló",
+     "lat": 41.39158,
+     "lon": 2.16492,
+     "wikipediaCount": 49,
+     "wikidataId": "Q461371",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q207870",
+     "name": "Casa Milà",
+     "lat": 41.39528,
+     "lon": 2.16167,
+     "wikipediaCount": 49,
+     "wikidataId": "Q207870",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/377216661",
@@ -59,7 +112,14 @@
      "address": "Carrer del Palau de la Música 4-6",
      "website": "https://www.palaumusica.cat/",
      "openingHours": "Mo-Su 09:00-15:30",
-     "wikipediaCount": 43
+     "wikipediaCount": 43,
+     "wikidataId": "Q327940",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "performingArts"
+     ]
     },
     {
      "id": "relation/3298476",
@@ -68,14 +128,51 @@
      "lon": 2.17635,
      "website": "https://www.catedralbcn.org/",
      "openingHours": "Mo-Fr 09:30-18:30; Sa 09:30-17:15; Su,PH 14:00-17:00",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q17155",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q275715",
+     "name": "Estadi Olímpic Lluís Companys",
+     "localName": "Lluís Companys Olympic Stadium",
+     "lat": 41.36472,
+     "lon": 2.15556,
+     "wikipediaCount": 40,
+     "wikidataId": "Q275715",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/126336685",
      "name": "La Rambla",
      "lat": 41.3791,
      "lon": 2.17508,
-     "wikipediaCount": 37
+     "wikipediaCount": 37,
+     "wikidataId": "Q850593",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q822881",
+     "name": "Catalunya Meydanı",
+     "localName": "Plaça de Catalunya",
+     "lat": 41.38703,
+     "lon": 2.17008,
+     "wikipediaCount": 35,
+     "wikidataId": "Q822881",
+     "kinds": [
+      "square",
+      "station"
+     ]
     },
     {
      "id": "way/166565579",
@@ -84,7 +181,37 @@
      "lon": 2.17423,
      "website": "https://inici.palauguell.cat/",
      "openingHours": "Apr-Oct: 10:00-20:00; Nov-Mar: 10:00-17:30",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q597051",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q630630",
+     "name": "Sant Jordi Sarayı",
+     "localName": "Palau Sant Jordi",
+     "lat": 41.36339,
+     "lon": 2.15256,
+     "wikipediaCount": 31,
+     "wikidataId": "Q630630",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q941385",
+     "name": "Ciutat Vella",
+     "lat": 41.38083,
+     "lon": 2.17306,
+     "wikipediaCount": 30,
+     "wikidataId": "Q941385",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/51260215",
@@ -93,7 +220,12 @@
      "lon": 2.182,
      "website": "https://www.santamariadelmarbarcelona.org/",
      "openingHours": "Mo-Su 10:00-20:30",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q908802",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/67917935",
@@ -103,14 +235,22 @@
      "address": "Avinguda de Francesc Ferrer i Guàrdia 7",
      "website": "https://miesbcn.com/ca/el-pavello/",
      "openingHours": "Mar-Oct 10:00-20:00; Nov-Feb 10:00-18:00; Dec 25 off",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q807915",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/377875377",
      "name": "Arc de Triomf",
      "lat": 41.39104,
      "lon": 2.18064,
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q631075",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/10426929",
@@ -118,7 +258,15 @@
      "lat": 41.38013,
      "lon": 2.17341,
      "website": "http://www.liceubarcelona.cat/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q1130050",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "relation/6288735",
@@ -128,7 +276,11 @@
      "address": "La Rambla 91",
      "website": "https://www.boqueria.barcelona/",
      "openingHours": "Mo-Sa 08:00-20:30",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1334899",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/35816134",
@@ -136,7 +288,23 @@
      "lat": 41.37116,
      "lon": 2.15174,
      "openingHours": "Apr 01-May 31: Fr,Sa 21:00-22:00; Jun 01-Sep 30: We-Su 21:30-22:30; Oct 01-31: Th-Sa 21:00-22:00; Nov 01-Jan 06,Mar 01-31: Th-Sa 20:00-21:00; PH off",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1414600",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q301135",
+     "name": "Ciutadella Parkı",
+     "localName": "Parc de la Ciutadella",
+     "lat": 41.38811,
+     "lon": 2.18752,
+     "wikipediaCount": 24,
+     "wikidataId": "Q301135",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/126451774",
@@ -144,14 +312,174 @@
      "lat": 41.3758,
      "lon": 2.17777,
      "website": "https://thisisbarcelona.com/ca/tickets/monumento-mirador-colom",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q2288815",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q220013",
+     "name": "Barcelona Zoo",
+     "lat": 41.38788,
+     "lon": 2.19119,
+     "wikipediaCount": 23,
+     "wikidataId": "Q220013",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q172892",
+     "name": "Montjuïc circuit",
+     "lat": 41.36611,
+     "lon": 2.15194,
+     "wikipediaCount": 23,
+     "wikidataId": "Q172892",
+     "kinds": [
+      "racetrack",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q2013874",
+     "name": "Espanya Meydanı",
+     "localName": "Plaça d'Espanya",
+     "lat": 41.37504,
+     "lon": 2.14911,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2013874",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1333395",
+     "name": "Els Quatre Gats",
+     "lat": 41.38578,
+     "lon": 2.17367,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1333395",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1200948",
+     "name": "Aquarium Barcelona",
+     "lat": 41.37667,
+     "lon": 2.18417,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1200948",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q506814",
+     "name": "Casa Amatller",
+     "lat": 41.39145,
+     "lon": 2.16501,
+     "wikipediaCount": 20,
+     "wikidataId": "Q506814",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q791045",
+     "name": "Diagonal Caddesi",
+     "localName": "Avinguda Diagonal",
+     "lat": 41.39639,
+     "lon": 2.15806,
+     "wikipediaCount": 20,
+     "wikidataId": "Q791045",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1425790",
+     "name": "Hotel Arts",
+     "lat": 41.38667,
+     "lon": 2.19611,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1425790",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1046405",
+     "name": "Casa Calvet",
+     "lat": 41.39083,
+     "lon": 2.17306,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1046405",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q800449",
+     "name": "Fransa Tren Garı, Barselona",
+     "localName": "Barcelona Estació de França",
+     "lat": 41.384,
+     "lon": 2.186,
+     "wikipediaCount": 19,
+     "wikidataId": "Q800449",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q388195",
+     "name": "Funicular de Montjuïc",
+     "lat": 41.375,
+     "lon": 2.1686,
+     "wikipediaCount": 19,
+     "wikidataId": "Q388195"
+    },
+    {
+     "id": "wikidata/Q1419892",
+     "name": "passeig de Gràcia",
+     "localName": "Passeig de Gràcia",
+     "lat": 41.39304,
+     "lon": 2.16379,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1419892",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/163393541",
      "name": "Torre de Comunicacions de Montjuïc",
      "lat": 41.36428,
      "lon": 2.15061,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q202530",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q1030045",
+     "name": "Camp de la Indústria",
+     "localName": "Camp del Carrer Indústria",
+     "lat": 41.3903,
+     "lon": 2.1483,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1030045",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/19658818",
@@ -160,7 +488,14 @@
      "lon": 2.16478,
      "website": "https://ajuntament.barcelona.cat/castelldemontjuic/ca",
      "openingHours": "Nov 01-Feb 28 10:00-18:00; Mar 01-Oct 31 10:00-20:00; Dec 25,Jan 01 off; PH off",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2500125",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/625295824",
@@ -169,7 +504,24 @@
      "lon": 2.17392,
      "website": "https://www.basilicadelpi.cat/",
      "openingHours": "Mo-Th 18:00-20:00; Fr,Sa 09:30-11:00, 18:00-20:00; Su,PH 11:00-13:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2293331",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q263293",
+     "name": "Gran Via de les Corts Catalanes",
+     "lat": 41.38064,
+     "lon": 2.15658,
+     "wikipediaCount": 17,
+     "wikidataId": "Q263293",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/679019157",
@@ -177,49 +529,199 @@
      "lat": 41.39112,
      "lon": 2.16523,
      "website": "http://www.casalleomorera.com/en/",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2330791",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/541071062",
      "name": "Plaça Reial",
      "lat": 41.38009,
      "lon": 2.17527,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1519964",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q568353",
+     "name": "Torre Mapfre",
+     "lat": 41.38778,
+     "lon": 2.1975,
+     "wikipediaCount": 16,
+     "wikidataId": "Q568353"
+    },
+    {
+     "id": "wikidata/Q337522",
+     "name": "Barselona Monumental Arenası",
+     "localName": "La Monumental",
+     "lat": 41.4,
+     "lon": 2.18111,
+     "wikipediaCount": 15,
+     "wikidataId": "Q337522",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "sportsVenue",
+      "square",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1048705",
+     "name": "Castell dels Tres Dragons",
+     "localName": "Castle of the Three Dragons",
+     "lat": 41.38807,
+     "lon": 2.18339,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1048705",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2313145",
+     "name": "Paral·lel",
+     "lat": 41.37614,
+     "lon": 2.16878,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2313145",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "relation/18708616",
      "name": "Plaça del Rei",
      "lat": 41.38413,
      "lon": 2.17741,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2067174",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2082605",
+     "name": "Sant Jaume Meydanı",
+     "localName": "Plaça Sant Jaume",
+     "lat": 41.3825,
+     "lon": 2.17694,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2082605",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2723971",
+     "name": "Canaletes Çeşmesi (El Raval)",
+     "localName": "Font de Canaletes",
+     "lat": 41.38528,
+     "lon": 2.17014,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2723971",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1091176334",
      "name": "Drassanes Reials de Barcelona",
      "lat": 41.37531,
      "lon": 2.17586,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q263924",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1426190",
+     "name": "Glòries Catalanes Meydanı",
+     "localName": "plaça de les Glòries Catalanes",
+     "lat": 41.40333,
+     "lon": 2.18694,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1426190",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "relation/2874767",
      "name": "Palau de la Generalitat de Catalunya",
      "lat": 41.38311,
      "lon": 2.17632,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q599118",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1114612",
+     "name": "Port Vell de Barcelona",
+     "lat": 41.37675,
+     "lon": 2.18464,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1114612",
+     "kinds": [
+      "port",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q2037732",
+     "name": "Basilica of Our Lady of Mercy",
+     "lat": 41.37952,
+     "lon": 2.17958,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2037732",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2561516",
+     "name": "Casa de les Punxes",
+     "lat": 41.39798,
+     "lon": 2.16378,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2561516",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/1819559",
      "name": "Les Quatre Columnes",
      "lat": 41.37065,
      "lon": 2.15208,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1518215",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
-     "id": "way/1533889825",
-     "name": "Palau Reial Major",
-     "lat": 41.38416,
-     "lon": 2.17741,
-     "wikipediaCount": 10
+     "id": "wikidata/Q2749521",
+     "name": "Fossar de les Moreres",
+     "lat": 41.38368,
+     "lon": 2.18243,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2749521",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
     }
    ]
   },
@@ -234,7 +736,12 @@
      "lon": 2.15346,
      "website": "https://www.museunacional.cat/",
      "openingHours": "Tu-Sa 10:00-18:00; Su 10:00-15:00; May-Sep: Tu-Sa 10:00-20:00; PH off",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q861252",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/188938001",
@@ -243,7 +750,23 @@
      "lon": 2.18124,
      "website": "https://museupicassobcn.cat/",
      "openingHours": "Jan 1, May 1, Jun 24, Dec 25 off; Tu, We, Su 09:00-20:00; Th-Sa 09:00-21:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q1050032",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q867072",
+     "name": "Joan Miró Vakıf Müzesi",
+     "localName": "Fundació Joan Miró",
+     "lat": 41.36861,
+     "lon": 2.16,
+     "wikipediaCount": 30,
+     "wikidataId": "Q867072",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/36930946",
@@ -252,7 +775,13 @@
      "lon": 2.16675,
      "website": "https://www.macba.cat/",
      "openingHours": "Mo,We-Fr 11:00-19:30; Sa 10:00-20:00; Su,PH 10:00-15:00",
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q1067140",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1643199193",
@@ -262,7 +791,11 @@
      "address": "Carrer del Veguer 4",
      "website": "https://www.barcelona.cat/museuhistoria/",
      "openingHours": "Mo-Sa 10:00-19:00; Su 10:00-20:00",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q3571337",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/40547571",
@@ -271,7 +804,11 @@
      "lon": 2.1485,
      "website": "https://poble-espanyol.com/",
      "openingHours": "Mo 10:00-20:00; Tu-Su,PH 10:00-24:00; Jan 07-Feb 05 Tu-Th 10:00-20:00; Dec 25 10:00-14:00; Dec 26 10:00-24:00; Jan 01 13:00-24:00; Jan 06 10:00-20:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1062480",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/167056918",
@@ -280,7 +817,11 @@
      "lon": 2.18173,
      "website": "http://www.museuxocolata.cat/",
      "openingHours": "Mo-Sa 10:00-19:00; Su 10:00-15:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2890127",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/14080861534",
@@ -289,14 +830,24 @@
      "lon": 2.17643,
      "website": "https://www.mmb.cat/",
      "openingHours": "Mo-Su,PH 10:00-20:00; Dec 24,Dec 31 10:00-15:00; Dec 25,Dec 26,Jan 01,Jan 06 off",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1286354",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/132533806",
      "name": "Palau de la Virreina",
      "lat": 41.38235,
      "lon": 2.17153,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1798216",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/217475661",
@@ -305,7 +856,11 @@
      "lon": 2.14936,
      "website": "https://caixaforum.es/barcelona",
      "openingHours": "Mo-Su 10:00-20:00; Jul-Aug: We 10:00-23:00; Dec 24,Dec 31,Jan 05: 10:00-18:00; Dec 25,Jan 01,Jan 06: off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q960115",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2136227451",
@@ -314,7 +869,12 @@
      "lon": 2.18012,
      "address": "Carrer Ample 35",
      "website": "http://hempmuseumgallery.com/",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q11682430",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1962723905",
@@ -324,7 +884,12 @@
      "address": "Carrer d'Aragó 255",
      "website": "https://museutapies.org/",
      "openingHours": "Tu-Sa 10:00-19:00; Su 10:00-15:00; Jan 1 off; Jan 6 off; Dec 25 off; Dec 26 off",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2447148",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/2873579",
@@ -333,7 +898,11 @@
      "lon": 2.16658,
      "website": "https://www.cccb.org/",
      "openingHours": "Tu-Su,PH 10:00-20:00; Dec 24,Dec 26,Dec 31,Jan 05,Jan 06: 10:00-15:00; Jan 01,Dec 25 off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2945260",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6742154244",
@@ -342,7 +911,11 @@
      "lon": 2.18587,
      "website": "https://mhcat.cat/",
      "openingHours": "Tu,Th-Sa 10:00-19:00; We 10:00-20:00; Su,PH 10:00-14:30; Jan 01,Jan 06,May 01,Jun 06,Dec 25,Dec 26 off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1753029",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/454488169",
@@ -352,7 +925,12 @@
      "address": "Plaça de Sant Iu 5",
      "website": "http://www.museumares.bcn.cat/",
      "openingHours": "Tu-Sa 10:00-19:00; Su 11:00-20:00; Jan 01,May 01,Dec 25-26, PH off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1630272",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/2456223233",
@@ -362,7 +940,13 @@
      "address": "Carrer del Paradís 10",
      "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/temple-daugust",
      "openingHours": "Mo 10:00-14:00; Tu-Sa 10:00-19:00; Su 10:00-20:00; Jan 01,May 01,Jun 24,Dec 25 off; PH off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3819019",
+     "kinds": [
+      "heritage",
+      "religious",
+      "ruins"
+     ]
     },
     {
      "id": "relation/9589229",
@@ -371,7 +955,11 @@
      "lon": 2.15766,
      "website": "https://www.mac.cat/ca/Visita-ns-Portada/Barcelona-Portada-Seu",
      "openingHours": "Tu-Sa 09:30-19:00; Su,PH 10:00-14:30; Dec 24,Dec 31: 10:00-15:00; Dec 25,Dec 26,Jan 01,Jan 06 off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3366823",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/166566543",
@@ -379,7 +967,11 @@
      "lat": 41.37742,
      "lon": 2.17728,
      "website": "https://www.museocerabcn.com/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q876794",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/192944873",
@@ -388,7 +980,11 @@
      "lon": 2.19498,
      "website": "https://www.fundaciovilacasas.com/ca/museu/museu-can-framis-barcelona",
      "openingHours": "Tu-Sa 11:00-18:00; Jan 05,Mar 29: Su 11:00-14:00; PH closed",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q15623912",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/673264230",
@@ -398,7 +994,11 @@
      "address": "Carrer de Lepant 150",
      "website": "https://www.bcn.cat/museumusica/",
      "openingHours": "Tu-We,Fr 10:00-18:00; Th 10:00-23:15; Sa,Su 10:00-19:00; Dec 24; Dec 31; Jan 05 10:00-15:00; PH,Mo off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q5016197",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3647299861",
@@ -408,7 +1008,11 @@
      "address": "Carrer Barra de Ferro 5",
      "website": "https://www.meam.es/ca/",
      "openingHours": "Tu-Th,Su 11:00-19:00; Fr,Sa 11:00-20:00; Dec 25 off; Dec 26 off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1872977",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/214435557",
@@ -417,7 +1021,11 @@
      "lon": 2.15771,
      "website": "https://www.museuolimpicbcn.cat/ca/",
      "openingHours": "Tu-Sa 10:00-18:00; Su,PH 10:00-14:30; Apr-Sep Tu-Sa 10:00-19:00; Jan 01 off; May 01 off; Dec 25 off; Dec 26 off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3820447",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/8731194994",
@@ -427,7 +1035,12 @@
      "address": "Plaça de Margarida Xirgu",
      "website": "https://www.cdmae.cat/",
      "openingHours": "Mo-Fr 09:30-18:30",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q634421",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/6357834157",
@@ -437,7 +1050,11 @@
      "address": "Carrer de València 284",
      "website": "https://www.museuegipci.com/",
      "openingHours": "Mo-Fr 10:00-14:00,16:00-19:30; Sa 10:00-15:00,16:00-19:30; Su 10:00-14:00; PH off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q11694517",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4724329201",
@@ -445,7 +1062,11 @@
      "lat": 41.38224,
      "lon": 2.17257,
      "website": "http://www.erotica-museum.com/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3329871",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4724895518",
@@ -453,7 +1074,12 @@
      "lat": 41.39309,
      "lon": 2.14819,
      "website": "https://esport.gencat.cat/ca/secretaria_general_de_lesport/museu-i-centre-destudis-de-lesport-melcior-colet/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3064861",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "node/1962720907",
@@ -463,14 +1089,23 @@
      "address": "Carrer de Balmes 48",
      "website": "https://www.mmbcn.cat/",
      "openingHours": "Mo-Fr 10:30-14:00,16:00-19:00; Sa 10:30-14:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q15735772",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/7363116",
      "name": "Saló del Tinell",
      "lat": 41.38431,
      "lon": 2.17711,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q9073184",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/6982850087",
@@ -480,7 +1115,11 @@
      "address": "Plaça de Pons i Cierch 2 2on.",
      "website": "https://ajuntament.barcelona.cat/arxiumunicipal/arxiufotografic/ca",
      "openingHours": "Mo-Fr 10:00-19:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q11906811",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/14022328893",
@@ -490,7 +1129,11 @@
      "address": "Plaça Comercial 12",
      "website": "https://www.barcelona.cat/museuhistoria/ca/patrimonis-i-recerca/els-espais-del-museu/el-born",
      "openingHours": "Mar-Oct Tu-Su 10:00-20:00; Nov-Feb Tu-Sa 10:00-19:00, Su 10:00-20:00; Dec 26 10:00-14:30; Jan 01,May 01,Jun 24,Dec 25 off; PH off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q18695772",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13977557087",
@@ -500,7 +1143,144 @@
      "address": "Pla de la Seu 7",
      "website": "https://museudiocesa.esglesia.barcelona/",
      "openingHours": "Mo-Su,PH 09:30-20:00; Jan 01,Dec 25 off",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q9046805",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/33570473",
+     "name": "Centre Martorell d'Exposicions",
+     "lat": 41.38713,
+     "lon": 2.18437,
+     "website": "http://museuciencies.cat/visitans/em-museu-martorell",
+     "wikipediaCount": 3,
+     "wikidataId": "Q11938056",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/4316268495",
+     "name": "Museu del Perfum",
+     "lat": 41.39137,
+     "lon": 2.16532,
+     "address": "Passeig de Gràcia 39",
+     "website": "http://www.museudelperfum.com/",
+     "wikipediaCount": 3,
+     "wikidataId": "Q30095026",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/118709755",
+     "name": "Museu Etnològic",
+     "lat": 41.36877,
+     "lon": 2.15633,
+     "website": "https://www.barcelona.cat/museu-etnologic-culturesmon",
+     "openingHours": "Tu-Sa 10:00-19:00; PH,Su 10:00-20:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q9046827",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "way/217460151",
+     "name": "Museu Fran Daurel",
+     "lat": 41.36855,
+     "lon": 2.14828,
+     "website": "https://www.fundaciofrandaurel.com/barcelona/",
+     "openingHours": "Mo-Su,PH 10:00-19:00",
+     "wikipediaCount": 2,
+     "wikidataId": "Q20949793",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3797211477",
+     "name": "Refugi 307",
+     "lat": 41.37144,
+     "lon": 2.16663,
+     "website": "https://ajuntament.barcelona.cat/museuhistoria/muhba-refugi-307",
+     "wikipediaCount": 2,
+     "wikidataId": "Q6103595",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "relation/6056831",
+     "name": "Disseny Hub Barcelona (DHUB)",
+     "lat": 41.40257,
+     "lon": 2.18801,
+     "address": "Plaça de les Glòries Catalanes 37",
+     "website": "https://www.dissenyhub.barcelona/ca",
+     "openingHours": "Mo 15:30-21:00; Tu-Su 09:00-21:00; Aug Mo off; Jan 01 off; May 01 off; Jun 24 off; Dec 25 off; PH off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q46230324",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "relation/3347844",
+     "name": "Fundació Joan Miró",
+     "lat": 41.36865,
+     "lon": 2.15985,
+     "address": "Parc de Montjuïc",
+     "website": "https://www.fmirobcn.org/",
+     "openingHours": "Tu-Su 10:00-19:00; Apr-Oct Tu-Sa 10:00-20:00; PH off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q45275033",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/5661441924",
+     "name": "Museu de Cultures del Món",
+     "lat": 41.3848,
+     "lon": 2.181,
+     "address": "Carrer de Montcada 12",
+     "website": "https://www.barcelona.cat/museu-etnologic-culturesmon/",
+     "openingHours": "Tu-Sa 10:00-19:00; PH,Su 10:00-21:45; Dec 25,Jan 01,May 01,Jun 24 closed",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11938072",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/1654108403",
+     "name": "Museu de la Moto",
+     "lat": 41.38334,
+     "lon": 2.17453,
+     "address": "Carrer de la Palla 10",
+     "website": "http://www.museumoto.com/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q17043328",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/5198083737",
+     "name": "Laboratori de Natura",
+     "lat": 41.38812,
+     "lon": 2.18367,
+     "address": "Passeig de Picasso",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11931058",
+     "kinds": [
+      "museum"
+     ]
     }
    ]
   },
@@ -508,6 +1288,29 @@
    "status": "ok",
    "wikipediaCountsAvailable": true,
    "places": [
+    {
+     "id": "node/9714435350",
+     "name": "Mirador Torre Glòries",
+     "lat": 41.40352,
+     "lon": 2.18952,
+     "wikipediaCount": 40,
+     "wikidataId": "Q336246",
+     "kinds": [
+      "heritage",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "node/12155870101",
+     "name": "Mirador del Palau Nacional",
+     "lat": 41.36902,
+     "lon": 2.15319,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2341107",
+     "kinds": [
+      "heritage"
+     ]
+    },
     {
      "id": "node/2509826686",
      "name": "Mirador de l'Alcalde",
@@ -540,12 +1343,6 @@
      "lon": 2.17237
     },
     {
-     "id": "node/12155870101",
-     "name": "Mirador del Palau Nacional",
-     "lat": 41.36902,
-     "lon": 2.15319
-    },
-    {
      "id": "node/7603117271",
      "name": "Mirador del Passeig del Trencaones",
      "lat": 41.36358,
@@ -562,12 +1359,6 @@
      "name": "Mirador Maria Aurèlia Capmany",
      "lat": 41.38168,
      "lon": 2.17768
-    },
-    {
-     "id": "node/9714435350",
-     "name": "Mirador Torre Glòries",
-     "lat": 41.40352,
-     "lon": 2.18952
     },
     {
      "id": "node/9864584405",
@@ -606,6 +1397,7 @@
      "website": "https://7portes.com/catala/index2.php",
      "openingHours": "Mo-Su 13:00-01:00",
      "cuisine": "spanish",
+     "wikidataId": "Q8179723",
      "detailed": true
     },
     {
@@ -682,6 +1474,7 @@
      "website": "https://www.culleretes.com/",
      "openingHours": "Tu-We,Su 13:00-15:45; Th-Sa13:00-15:45,20:00-22:30; PH Mo 13:00-15:45",
      "cuisine": "spanish",
+     "wikidataId": "Q98636645",
      "detailed": true
     },
     {
@@ -714,6 +1507,7 @@
      "website": "https://www.elnouramonet.com/",
      "openingHours": "Mo-Su 13:00-24:00",
      "cuisine": "regional, fish, seafood, mediterranean",
+     "wikidataId": "Q47171072",
      "detailed": true
     },
     {
@@ -769,6 +1563,7 @@
      "website": "https://www.bancodeboquerones.com/restaurante/casa-leopoldo/",
      "openingHours": "Tu-Fr 13:30-15:30,20:30-23:00; Sa 13:30-16:00,20:30-23:00; Su 13:30-16:00",
      "cuisine": "regional",
+     "wikidataId": "Q56294505",
      "detailed": true
     },
     {
@@ -911,6 +1706,7 @@
      "website": "https://hotfrankfurt.com/",
      "openingHours": "Mo-We 12:00-01:00; Th 12:00-02:00; Fr-Sa 12:00-03:00; Su 12:00-01:00",
      "cuisine": "hot dog, sausage",
+     "wikidataId": "Q139579933",
      "detailed": true
     }
    ]
@@ -928,6 +1724,7 @@
      "website": "https://www.alsurcafe.com/lluria.html",
      "openingHours": "Mo-Su 08:30-23:00",
      "cuisine": "brunch",
+     "wikidataId": "Q53673342",
      "detailed": true
     },
     {
@@ -1191,6 +1988,7 @@
      "website": "https://www.starbucks.co.uk/store-locator/40416-90706/rambla-cataluna",
      "openingHours": "Fr-Sa 07:30-23:00; Su-Th 07:30-22:00",
      "cuisine": "coffee shop",
+     "wikidataId": "Q85693528",
      "detailed": true
     },
     {
@@ -1398,6 +2196,11 @@
      "address": "Carrer de Montsió 3",
      "website": "https://www.4gats.com/",
      "openingHours": "Tu 11:00-17:00; We-Fr 11:00-24:00; Sa 12:00-00:00; Su 12:00-17:00",
+     "wikidataId": "Q1333395",
+     "kinds": [
+      "business",
+      "heritage"
+     ],
      "detailed": true
     },
     {
@@ -1721,6 +2524,7 @@
      "address": "Carrer dels Almogàvers 122",
      "website": "https://www.salarazzmatazz.com/",
      "openingHours": "\"Depending on the concert\"",
+     "wikidataId": "Q249462",
      "detailed": true
     },
     {
@@ -1857,7 +2661,8 @@
      "name": "Sala Apolo",
      "lat": 41.37439,
      "lon": 2.16956,
-     "website": "https://www.sala-apolo.com/"
+     "website": "https://www.sala-apolo.com/",
+     "wikidataId": "Q20103353"
     },
     {
      "id": "node/2522915521",

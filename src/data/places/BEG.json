@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BEG",
- "fetchedAt": "2026-10-16T23:44:44.842Z",
+ "fetchedAt": "2026-10-18T16:37:26.656Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,11 +43,52 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q330385",
+     "name": "Aziz Sava Katedrali",
+     "localName": "Church of Saint Sava",
+     "lat": 44.79808,
+     "lon": 20.46855,
+     "wikipediaCount": 46,
+     "wikidataId": "Q330385",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q478000",
+     "name": "Kızılyıldız Stadı",
+     "localName": "Rajko Mitić Stadium",
+     "lat": 44.78333,
+     "lon": 20.46472,
+     "wikipediaCount": 45,
+     "wikidataId": "Q478000",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q33277",
+     "name": "Belgrad Arena",
+     "localName": "Belgrade Arena",
+     "lat": 44.81415,
+     "lon": 20.42136,
+     "wikipediaCount": 37,
+     "wikidataId": "Q33277",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "way/166818792",
      "name": "Рушевине Народне библиотеке из нацистичког бомбардовања 1941.",
      "lat": 44.81628,
      "lon": 20.4517,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q945496",
+     "kinds": [
+      "business",
+      "heritage"
+     ]
     },
     {
      "id": "way/450824126",
@@ -55,14 +96,86 @@
      "lat": 44.82351,
      "lon": 20.44994,
      "website": "https://www.beogradskatvrdjava.co.rs/",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q1409017",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q804208",
+     "name": "Bayraklı Cami",
+     "localName": "Bajrakli Mosque",
+     "lat": 44.8222,
+     "lon": 20.4575,
+     "wikipediaCount": 29,
+     "wikidataId": "Q804208",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q599868",
+     "name": "Kalemegdan",
+     "localName": "Kalemegdan Park",
+     "lat": 44.82442,
+     "lon": 20.45046,
+     "wikipediaCount": 29,
+     "wikidataId": "Q599868"
+    },
+    {
+     "id": "wikidata/Q1254795",
+     "name": "Aziz Mark Kilisesi",
+     "localName": "St. Mark's Church",
+     "lat": 44.81028,
+     "lon": 20.46889,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1254795",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1847119",
+     "name": "Belgrad Ulusal Tiyatrosu",
+     "localName": "National Theatre in Belgrade",
+     "lat": 44.81667,
+     "lon": 20.46056,
+     "wikipediaCount": 25,
+     "wikidataId": "Q1847119",
+     "kinds": [
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
     },
     {
      "id": "node/6400528147",
      "name": "Сабирни логор Сајмиште",
      "lat": 44.81303,
      "lon": 20.44221,
-     "wikipediaCount": 25
+     "wikipediaCount": 25,
+     "wikidataId": "Q701910",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1265998",
+     "name": "St. Michael Katedrali",
+     "localName": "St. Michael's Cathedral",
+     "lat": 44.81806,
+     "lon": 20.45214,
+     "wikipediaCount": 23,
+     "wikidataId": "Q1265998",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/11330628651",
@@ -70,7 +183,413 @@
      "lat": 44.81629,
      "lon": 20.46016,
      "website": "https://nasledje.gov.rs/index.cfm/spomenici/pregled_spomenika?spomenik_id=108845",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1309687",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q1287997",
+     "name": "Pobednik",
+     "lat": 44.82303,
+     "lon": 20.44769,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1287997",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1262622",
+     "name": "Ušće Kulesi",
+     "localName": "Ušće Tower",
+     "lat": 44.81611,
+     "lon": 20.43694,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1262622",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q2633804",
+     "name": "Cumhuriyet Meydanı",
+     "localName": "Republic Square",
+     "lat": 44.81644,
+     "lon": 20.46011,
+     "wikipediaCount": 21,
+     "wikidataId": "Q2633804",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q367802",
+     "name": "Aleksandar Nikolić Salonu",
+     "localName": "Aleksandar Nikolić Hall",
+     "lat": 44.81552,
+     "lon": 20.48511,
+     "wikipediaCount": 20,
+     "wikidataId": "Q367802",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1420986",
+     "name": "Knez Mihailova Caddesi",
+     "localName": "Knez Mihailova Street",
+     "lat": 44.81778,
+     "lon": 20.45694,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1420986",
+     "kinds": [
+      "heritage",
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1590792",
+     "name": "Sırbistan Ulusal Meclisi Binası",
+     "localName": "House of the National Assembly",
+     "lat": 44.81167,
+     "lon": 20.46583,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1590792",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q736135",
+     "name": "Belgrade Synagogue",
+     "lat": 44.81528,
+     "lon": 20.45722,
+     "wikipediaCount": 18,
+     "wikidataId": "Q736135",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1264635",
+     "name": "Skadarlija",
+     "lat": 44.8178,
+     "lon": 20.4643,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1264635",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q585938",
+     "name": "Slavija Meydanı",
+     "localName": "Slavija Square",
+     "lat": 44.8025,
+     "lon": 20.4664,
+     "wikipediaCount": 18,
+     "wikidataId": "Q585938",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q818589",
+     "name": "Beograđanka",
+     "lat": 44.80736,
+     "lon": 20.46338,
+     "wikipediaCount": 17,
+     "wikidataId": "Q818589",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q898731",
+     "name": "Branko Köprüsü",
+     "localName": "Branko's Bridge",
+     "lat": 44.81472,
+     "lon": 20.44833,
+     "wikipediaCount": 17,
+     "wikidataId": "Q898731",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1289617",
+     "name": "Gazela Köprüsü",
+     "localName": "Gazela Bridge",
+     "lat": 44.80278,
+     "lon": 20.44083,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1289617",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q3145608",
+     "name": "Hotel Moskva",
+     "lat": 44.81359,
+     "lon": 20.45995,
+     "wikipediaCount": 17,
+     "wikidataId": "Q3145608",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q948346",
+     "name": "Terazije",
+     "lat": 44.815,
+     "lon": 20.46,
+     "wikipediaCount": 17,
+     "wikidataId": "Q948346",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q115753",
+     "name": "Belgrad Merkez Garı",
+     "localName": "Belgrade Centre railway station",
+     "lat": 44.7936,
+     "lon": 20.4539,
+     "wikipediaCount": 16,
+     "wikidataId": "Q115753",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1286851",
+     "name": "Pančevo Köprüsü",
+     "localName": "Pančevo Bridge",
+     "lat": 44.828,
+     "lon": 20.492,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1286851",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q2062450",
+     "name": "Taşmeydan Parkı",
+     "localName": "Tašmajdan Park",
+     "lat": 44.80917,
+     "lon": 20.47083,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2062450"
+    },
+    {
+     "id": "wikidata/Q2290818",
+     "name": "Belgrad Limanı",
+     "localName": "Port of Belgrade",
+     "lat": 44.82528,
+     "lon": 20.47806,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2290818",
+     "kinds": [
+      "port",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q625610",
+     "name": "Belgrade Zoo",
+     "lat": 44.82583,
+     "lon": 20.45333,
+     "wikipediaCount": 15,
+     "wikidataId": "Q625610",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q2288132",
+     "name": "Eski Saray",
+     "localName": "Stari Dvor",
+     "lat": 44.8109,
+     "lon": 20.4625,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2288132",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3048853",
+     "name": "?",
+     "lat": 44.8177,
+     "lon": 20.4525,
+     "wikipediaCount": 14,
+     "wikidataId": "Q3048853",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
+    },
+    {
+     "id": "wikidata/Q167017",
+     "name": "Alexander Nevsky Katedrali, Belgrad",
+     "localName": "Alexander Nevsky Cathedral, Belgrade",
+     "lat": 44.82056,
+     "lon": 20.46611,
+     "wikipediaCount": 14,
+     "wikidataId": "Q167017",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q894648",
+     "name": "Jevremovac botanic garden",
+     "lat": 44.81528,
+     "lon": 20.47389,
+     "wikipediaCount": 14,
+     "wikidataId": "Q894648",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q383098",
+     "name": "Ružica Church",
+     "lat": 44.82556,
+     "lon": 20.45111,
+     "wikipediaCount": 14,
+     "wikidataId": "Q383098",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1289610",
+     "name": "New Railroad Bridge",
+     "lat": 44.79944,
+     "lon": 20.43611,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1289610",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1453036",
+     "name": "Nikola Pašić Meydanı",
+     "localName": "Nikola Pašić Square",
+     "lat": 44.81269,
+     "lon": 20.46294,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1453036",
+     "kinds": [
+      "road",
+      "square",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2749462",
+     "name": "Omladinski Stadion",
+     "localName": "Omladinski stadion",
+     "lat": 44.81546,
+     "lon": 20.49405,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2749462",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q2413641",
+     "name": "Captain Miša's Mansion",
+     "lat": 44.81944,
+     "lon": 20.45722,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2413641",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q85790521",
+     "name": "Old Post Office (Belgrade)",
+     "lat": 44.8073,
+     "lon": 20.455,
+     "wikipediaCount": 12,
+     "wikidataId": "Q85790521"
+    },
+    {
+     "id": "wikidata/Q1278216",
+     "name": "Sava Centar",
+     "lat": 44.8085,
+     "lon": 20.4303,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1278216",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1034261",
+     "name": "Belgrade Cooperative",
+     "lat": 44.81333,
+     "lon": 20.45194,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1034261",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q18810542",
+     "name": "Novi dvor",
+     "lat": 44.80986,
+     "lon": 20.46312,
+     "wikipediaCount": 11,
+     "wikidataId": "Q18810542",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1277048",
+     "name": "Atelje 212",
+     "lat": 44.81417,
+     "lon": 20.46806,
+     "wikipediaCount": 10,
+     "wikidataId": "Q1277048",
+     "kinds": [
+      "business",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q3685981",
+     "name": "Co-cathedral of Christ the King in Belgrade",
+     "lat": 44.807,
+     "lon": 20.467,
+     "wikipediaCount": 10,
+     "wikidataId": "Q3685981",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/147080656",
@@ -78,7 +597,8 @@
      "localName": "Дамад Али-пашино турбе",
      "lat": 44.82335,
      "lon": 20.44972,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q25464753"
     },
     {
      "id": "way/40298723",
@@ -86,14 +606,16 @@
      "lat": 44.82526,
      "lon": 20.44967,
      "address": "Калемегдан доњи град 3",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4882647"
     },
     {
      "id": "node/6956995899",
      "name": "Спомен-костурница бранилаца Београда 1914—1918.",
      "lat": 44.8074,
      "lon": 20.49114,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q25464861"
     },
     {
      "id": "way/500558777",
@@ -102,149 +624,54 @@
      "lat": 44.82017,
      "lon": 20.45818,
      "address": "Вишњићева 1",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3542246",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6604670015",
      "name": "Платан на Врачару",
      "lat": 44.79891,
      "lon": 20.47293,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q89414778"
     },
     {
      "id": "node/513007181",
      "name": "Делијска чесма",
      "lat": 44.81774,
      "lon": 20.45707,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12750768"
     },
     {
      "id": "way/762232854",
      "name": "Касарна са југоисточне стране Горњег града",
      "lat": 44.8235,
      "lon": 20.45068,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "way/762232855",
-     "name": "Касарна са североисточне стране Горњег града",
-     "lat": 44.8245,
-     "lon": 20.45102,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q97329021"
     },
     {
      "id": "node/1782503081",
      "name": "Обелиск подигнут у спомен прве конференције Покрета несврстаних земаља 1961. у Београду",
      "lat": 44.81543,
      "lon": 20.45183,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q85997326"
     },
     {
      "id": "node/625723393",
      "name": "Остаци замка деспота Стефана Лазаревића",
      "lat": 44.82403,
      "lon": 20.44897,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "way/50989875",
-     "name": "Остаци Митрополитског двора",
-     "lat": 44.8246,
-     "lon": 20.44915,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "way/762232853",
-     "name": "Остаци џамије султана Махмуда I и зграде Главне страже",
-     "lat": 44.82404,
-     "lon": 20.45052,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "way/1188130895",
-     "name": "Себиљ чесма",
-     "lat": 44.81885,
-     "lon": 20.46641,
-     "wikipediaCount": 1
-    },
-    {
-     "id": "way/24030541",
-     "name": "Шпанска кућа",
-     "lat": 44.81453,
-     "lon": 20.45033,
-     "address": "Браће Крсмановић 2",
-     "wikipediaCount": 1
-    },
-    {
-     "id": "node/11891547762",
-     "name": "Зоран Обешва",
-     "lat": 44.81914,
-     "lon": 20.45407,
-     "openingHours": "Mo-Fr 08:00-18:00; Sa 08:00-14:00"
-    },
-    {
-     "id": "way/50989818",
-     "name": "Мали барутни магацин",
-     "lat": 44.82392,
-     "lon": 20.45173,
-     "website": "https://www.beogradskatvrdjava.co.rs/%D0%B1%D0%B0%D1%80%D1%83%D1%82%D0%BD%D0%B8-%D0%BC%D0%B0%D0%B3%D0%B0%D1%86%D0%B8%D0%BD-%D1%83-%D0%B3%D0%BE%D1%80%D1%9A%D0%B5%D0%BC-%D0%B3%D1%80%D0%B0%D0%B4%D1%83/"
-    },
-    {
-     "id": "node/6726970632",
-     "name": "Црвена звезда",
-     "lat": 44.81311,
-     "lon": 20.45279,
-     "address": "Карађорђева 61a",
-     "openingHours": "Mo-Su 06:00-14:00"
-    },
-    {
-     "id": "node/1970813731",
-     "name": "99.4-084",
-     "lat": 44.80585,
-     "lon": 20.45789
-    },
-    {
-     "id": "relation/17699435",
-     "name": "Антички лапидаријум",
-     "lat": 44.82244,
-     "lon": 20.44898
-    },
-    {
-     "id": "way/1293378286",
-     "name": "Аутићи на сударање",
-     "lat": 44.82456,
-     "lon": 20.45491
-    },
-    {
-     "id": "way/1293378285",
-     "name": "Вртешка",
-     "lat": 44.82467,
-     "lon": 20.4548
-    },
-    {
-     "id": "way/1337961116",
-     "name": "Деведесетка",
-     "lat": 44.81903,
-     "lon": 20.43988
-    },
-    {
-     "id": "way/1373134270",
-     "name": "Жртве пале за отаџбину 1912-1919",
-     "lat": 44.81106,
-     "lon": 20.48633
-    },
-    {
-     "id": "way/536686287",
-     "name": "Источна капија Доњег града",
-     "lat": 44.82561,
-     "lon": 20.45002
-    },
-    {
-     "id": "way/434000153",
-     "name": "Италијански павиљон",
-     "lat": 44.8136,
-     "lon": 20.44161,
-     "address": "Сајмиште 28"
+     "wikipediaCount": 1,
+     "wikidataId": "Q126519889",
+     "kinds": [
+      "ruins"
+     ]
     }
    ]
   },
@@ -261,7 +688,11 @@
      "address": "Трг републике 1a",
      "website": "http://www.narodnimuzej.rs/",
      "openingHours": "Mo off, Tu,We,Fr,Su 10:00-18:00; Th,Sa 12:00-20:00",
-     "wikipediaCount": 31
+     "wikipediaCount": 31,
+     "wikidataId": "Q1277393",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12845103007",
@@ -271,7 +702,12 @@
      "lon": 20.4707,
      "website": "https://tesla-museum.org/",
      "openingHours": "Mo 10:00-18:00; Tu-Su 10:00-20:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q613201",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/36005092",
@@ -282,7 +718,12 @@
      "address": "Ушће 10",
      "website": "http://cir.msub.org.rs/",
      "openingHours": "Mo 10:00-18:00; Tu off; We-Su 10:00-18:00",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1290510",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "relation/9466610",
@@ -292,7 +733,11 @@
      "lon": 20.45008,
      "address": "Калемегдан горњи град 9",
      "website": "http://www.muzej.mod.gov.rs/",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1281959",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/38575527",
@@ -302,7 +747,12 @@
      "lon": 20.45627,
      "website": "https://etnografskimuzej.rs/",
      "openingHours": "Th-Tu 10:00-20:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1291533",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/38575518",
@@ -313,7 +763,11 @@
      "address": "Кнеза Симе Марковића 8",
      "website": "http://www.mgb.org.rs/posetite/konak-kneginje-ljubice",
      "openingHours": "Mo off; Tu-Th 10:00-17:00; Fr 10:00-18:00; Sa 10:00-17:00; Su 10:00-14:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q2338245",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/12733039095",
@@ -321,14 +775,20 @@
      "lat": 44.82103,
      "lon": 20.45877,
      "website": "https://www.narodnimuzej.rs/posetite-nas/muzej-vuka-dositeja/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1775086",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1068349390",
      "name": "Речни монитор „Сава”",
      "lat": 44.81575,
      "lon": 20.44936,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q4048811"
     },
     {
      "id": "node/1970813761",
@@ -339,7 +799,11 @@
      "address": "Немањина",
      "website": "https://www.zeleznicesrbije.com/zeleznicki-muzej/",
      "openingHours": "Mo-Fr 09:00-15:00; Sa-Su off",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q304972",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/295106065",
@@ -347,7 +811,11 @@
      "lat": 44.80436,
      "lon": 20.46098,
      "address": "Ресавска 40b",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2403321",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9282405523",
@@ -357,14 +825,23 @@
      "address": "Вука Караџића 18",
      "website": "https://www.mpu.rs/",
      "openingHours": "Mo-Sa 11:00-19:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2338260",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/148731081",
      "name": "Манакова кућа",
      "lat": 44.81375,
      "lon": 20.45438,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3279458",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/3964096674",
@@ -375,7 +852,11 @@
      "address": "Андрићев венац 8",
      "website": "http://www.mgb.org.rs/visit/details/7",
      "openingHours": "Tu-Th,Sa 10:00-17:00; Fr 10:00-18:00; Su 10:00-14:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q4306134",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/156517275",
@@ -384,7 +865,11 @@
      "lon": 20.46022,
      "address": "Адмирала Гепрата 14",
      "openingHours": "off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q2879923",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/644483218",
@@ -392,7 +877,12 @@
      "lat": 44.81454,
      "lon": 20.47882,
      "address": "Љубомира Стојановића 25",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q15621551",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/951239732",
@@ -400,7 +890,11 @@
      "lat": 44.82098,
      "lon": 20.45481,
      "address": "Узун Миркова 14",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1566001",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/8553774910",
@@ -409,7 +903,12 @@
      "lon": 20.45862,
      "address": "Господар Јевремова 19",
      "website": "https://mpus.org.rs/",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q2338274",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/238589774",
@@ -419,7 +918,11 @@
      "address": "Светогорска 17",
      "website": "https://www.domjevremagrujica.com/",
      "openingHours": "Th-Fr 15:00-20:00; Sa-Su 11:00-16:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q16086766",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6641661388",
@@ -429,7 +932,11 @@
      "address": "Краља Петра 71a",
      "website": "https://www.jimbeograd.org/",
      "openingHours": "Mo-Fr 08:30-15:30; Sa-Su off",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3330608",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5118266792",
@@ -439,7 +946,11 @@
      "address": "Мајке Јевросиме 13",
      "website": "http://www.pttmuzej.rs/default.asp",
      "openingHours": "Mo off; Tu-We,Fr,Su 10:00-18:00; Th,Sa 12:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q16084958",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/635725488",
@@ -449,7 +960,11 @@
      "lon": 20.46377,
      "address": "Трг Николе Пашића 11",
      "openingHours": "Tu-Su 12:00-20:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12752424",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3964539357",
@@ -457,7 +972,11 @@
      "lat": 44.80749,
      "lon": 20.46432,
      "address": "Краља Милана 21",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q60748718",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/393169188",
@@ -468,7 +987,11 @@
      "address": "Нушићева 11",
      "website": "https://www.muzejiluzija.rs/",
      "openingHours": "Mo-Su 09:00-21:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q97200870",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12856427759",
@@ -477,7 +1000,11 @@
      "lon": 20.46859,
      "website": "http://www.mgb.org.rs/posetite/muzej-jovana-cvijica",
      "openingHours": "Mo off; Tu-Th 10:00-17:00; Fr 10:00-18:00; Sa 10:00-17:00; Su 10:00-14:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12755136",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/117826481",
@@ -486,7 +1013,11 @@
      "lon": 20.46512,
      "website": "https://www.muzejnt.rs/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q11156422",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7227511386",
@@ -496,7 +1027,11 @@
      "address": "Пјарона де Мондезира 18",
      "website": "https://muzejcokoladebeograd.rs/",
      "openingHours": "Mo off; Tu-Su 10:00-22:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q97202663",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4984279821",
@@ -505,7 +1040,11 @@
      "lat": 44.81856,
      "lon": 20.45594,
      "website": "https://zeptermuseum.rs/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q55339447",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/400120133",
@@ -514,7 +1053,12 @@
      "lon": 20.44267,
      "address": "Љубе Јовановића 3",
      "website": "https://beogradskonasledje.rs/kd/zavod/savski_venac/muzej_tome_rosandica",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q3329370",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/394705986",
@@ -523,14 +1067,169 @@
      "lat": 44.8174,
      "lon": 20.45144,
      "address": "Краља Петра 5",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q13668609",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/51547051",
      "name": "Барутана",
      "lat": 44.82358,
      "lon": 20.44755,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12956321",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "node/6060747673",
+     "name": "Музеј Југословенске кинотеке",
+     "lat": 44.81396,
+     "lon": 20.46402,
+     "address": "Косовска 11",
+     "wikipediaCount": 2,
+     "wikidataId": "Q12755795",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "way/40298269",
+     "name": "Doğal Tarih Müzesi Galerisi",
+     "localName": "Галерија Природњачког музеја",
+     "lat": 44.82216,
+     "lon": 20.45156,
+     "address": "Калемегдан горњи град 5",
+     "website": "https://www.nhmbeo.rs/",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q133540416",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/486262441",
+     "name": "Галерија САНУ",
+     "lat": 44.81795,
+     "lon": 20.45641,
+     "address": "Кнеза Михаила 35",
+     "website": "https://www.sanu.ac.rs/jedinice/galerija-sanu/",
+     "openingHours": "Tu,We 10:00-21:00; Th 10:00-16:00; Fr-Su 10:00-21:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q24628200",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "way/392648762",
+     "name": "Галерија фресака",
+     "lat": 44.82172,
+     "lon": 20.45656,
+     "address": "Цара Уроша 20",
+     "website": "http://www.narodnimuzej.rs/about-museum/locations-of-the-national-museum/gallery-of-frescoes/?lang=en",
+     "openingHours": "off",
+     "wikipediaCount": 1,
+     "wikidataId": "Q135436433",
+     "kinds": [
+      "business",
+      "museum"
+     ]
+    },
+    {
+     "id": "node/8231580066",
+     "name": "Малаколошки музеј",
+     "lat": 44.80396,
+     "lon": 20.47705,
+     "address": "Хаџи-Ђерина 23",
+     "website": "https://malakoloskimuzej.rs/",
+     "openingHours": "Mo-Fr 11:00-15:00, 18:00-20:00; Sa-Su 17:00-20:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q97194425",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6432984189",
+     "name": "Музеј Српског лекарског друштва",
+     "lat": 44.81633,
+     "lon": 20.4702,
+     "address": "Џорџа Вашингтона 19",
+     "website": "http://www.sld.org.rs/sr/o-nama/muzej/",
+     "openingHours": "Mo off; Tu-Su 10:00-20:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q28922537",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/12854321413",
+     "name": "Artget",
+     "lat": 44.81552,
+     "lon": 20.45981,
+     "website": "https://www.kcb.org.rs/premises/galerija-artget/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q116200976",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "way/1151245384",
+     "name": "Museum of Selfie & Illusions",
+     "lat": 44.80428,
+     "lon": 20.44674,
+     "website": "https://selfiemuseum.rs/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q110049949",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/12854321463",
+     "name": "Галерија науке и технике САНУ",
+     "lat": 44.81757,
+     "lon": 20.45653,
+     "website": "https://www.sanu.ac.rs/jedinice/galerija-nauke-i-tehnike-sanu/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q28731178",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "node/4290466289",
+     "name": "Галерија Петра Добровића",
+     "lat": 44.82016,
+     "lon": 20.45575,
+     "openingHours": "Mo-Fr 11:00-18:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q110048525",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/6740303785",
+     "name": "Галерија РТС-а",
+     "lat": 44.81181,
+     "lon": 20.46981,
+     "address": "Таковска 10",
+     "website": "https://www.rts.rs/page/rts/ci/galerija-rts/news/2060/galerija-rts.html",
+     "wikipediaCount": 1,
+     "wikidataId": "Q25463469",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     }
    ]
   },
@@ -666,7 +1365,7 @@
      "lat": 44.81947,
      "lon": 20.45481,
      "address": "Краља Петра 20a",
-     "website": "https://www.cookiebeacon.com/menu-serbia",
+     "website": "https://www.cookiebeacon.com/stores/belgrade/stari-grad",
      "openingHours": "Mo-Su 09:00-18:00",
      "cuisine": "breakfast",
      "detailed": true
@@ -1559,7 +2258,8 @@
      "lat": 44.80596,
      "lon": 20.47548,
      "address": "Булевар краља Александра 73",
-     "website": "https://www.kst.org.rs/"
+     "website": "https://www.kst.org.rs/",
+     "wikidataId": "Q12752834"
     },
     {
      "id": "node/13111157561",
@@ -1695,7 +2395,8 @@
      "name": "Електропионир",
      "lat": 44.81805,
      "lon": 20.46554,
-     "address": "Цетињска 15"
+     "address": "Цетињска 15",
+     "wikidataId": "Q65198753"
     },
     {
      "id": "node/5284374321",

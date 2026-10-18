@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "LJU",
- "fetchedAt": "2026-10-16T23:50:54.085Z",
+ "fetchedAt": "2026-10-18T16:44:07.009Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -49,7 +49,25 @@
      "lon": 14.50857,
      "website": "https://www.ljubljanskigrad.si/",
      "openingHours": "Jan-Apr,Oct-Dec 09:00-19:00; May-Sep 09:00-22:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q2075156",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1236564",
+     "name": "Ljubljana Cathedral",
+     "lat": 46.05071,
+     "lon": 14.50824,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1236564",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/867533647",
@@ -57,35 +75,262 @@
      "lat": 46.05195,
      "lon": 14.51041,
      "website": "https://www.visitljubljana.com/sl/obiskovalci/aktivnosti/znamenitosti/zmajski-most/",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q660029",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q64494878",
+     "name": "Jože Plečnik'in Ljubljana'daki eserleri - İnsan Merkezli Kentsel Tasarım",
+     "localName": "The works of Jože Plečnik in Ljubljana – Human Centred Urban Design",
+     "lat": 46.04333,
+     "lon": 14.50222,
+     "wikipediaCount": 23,
+     "wikidataId": "Q64494878",
+     "kinds": [
+      "heritage",
+      "unesco"
+     ]
     },
     {
      "id": "relation/6583849",
      "name": "Tromostovje",
      "lat": 46.0511,
      "lon": 14.50621,
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q676315",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "relation/15464136",
      "name": "Emona",
      "lat": 46.04527,
      "lon": 14.50167,
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q148327",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
     },
     {
      "id": "relation/9375924",
      "name": "Prešernov trg",
      "lat": 46.05137,
      "lon": 14.50602,
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1889515",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q1817806",
+     "name": "Ljubljana railway station",
+     "lat": 46.05889,
+     "lon": 14.51306,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1817806",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q1785618",
+     "name": "Franciscan Church of the Annunciation",
+     "lat": 46.05186,
+     "lon": 14.50606,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1785618",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12034073",
+     "name": "Ljubljana Merkez Çarşısı",
+     "localName": "Arch. Plečnik's Marketplace",
+     "lat": 46.05143,
+     "lon": 14.50857,
+     "wikipediaCount": 19,
+     "wikidataId": "Q12034073",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2428528",
+     "name": "Tivoli City Park",
+     "lat": 46.0539,
+     "lon": 14.4967,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2428528",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q4178650",
+     "name": "Nebotičnik",
+     "lat": 46.05319,
+     "lon": 14.50361,
+     "wikipediaCount": 16,
+     "wikidataId": "Q4178650",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1032830",
+     "name": "Tivoli Hall",
+     "lat": 46.06029,
+     "lon": 14.49528,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1032830"
+    },
+    {
+     "id": "wikidata/Q5160826",
+     "name": "Kongre Meydanı",
+     "localName": "Congress Square",
+     "lat": 46.05007,
+     "lon": 14.50369,
+     "wikipediaCount": 15,
+     "wikidataId": "Q5160826",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q3444329",
+     "name": "Ljubljana Town Hall",
+     "lat": 46.04972,
+     "lon": 14.50712,
+     "wikipediaCount": 15,
+     "wikidataId": "Q3444329",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q2477997",
+     "name": "Bežigrad Stadium",
+     "lat": 46.06913,
+     "lon": 14.5086,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2477997",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q3034795",
+     "name": "Ljubljana Botanical Garden",
+     "lat": 46.04017,
+     "lon": 14.51443,
+     "wikipediaCount": 14,
+     "wikidataId": "Q3034795",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q7541826",
+     "name": "Opera Ljubljana",
+     "lat": 46.05259,
+     "lon": 14.50065,
+     "wikipediaCount": 13,
+     "wikidataId": "Q7541826",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q7314417",
+     "name": "Republic Square, Ljubljana",
+     "lat": 46.05025,
+     "lon": 14.50011,
+     "wikipediaCount": 12,
+     "wikidataId": "Q7314417",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q7844773",
+     "name": "Trnovo Köprüsü",
+     "localName": "Trnovo Bridge",
+     "lat": 46.04333,
+     "lon": 14.50216,
+     "wikipediaCount": 12,
+     "wikidataId": "Q7844773",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q5589129",
+     "name": "Government and Presidential Palace, Ljubljana",
+     "lat": 46.04926,
+     "lon": 14.49811,
+     "wikipediaCount": 11,
+     "wikidataId": "Q5589129",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q6660940",
+     "name": "Ljubljana Camii",
+     "localName": "Ljubljana Mosque",
+     "lat": 46.06007,
+     "lon": 14.50289,
+     "wikipediaCount": 11,
+     "wikidataId": "Q6660940",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1262088",
+     "name": "Sts. Cyril and Methodius Church",
+     "lat": 46.05387,
+     "lon": 14.49935,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1262088",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/1762140246",
      "name": "Navje",
      "lat": 46.06076,
      "lon": 14.51186,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q11184115",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/5803213",
@@ -93,21 +338,34 @@
      "lat": 46.05463,
      "lon": 14.49293,
      "address": "Pod turnom 3",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3402462",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1223766264",
      "name": "Prešernov spomenik",
      "lat": 46.05138,
      "lon": 14.50631,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q7242492",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/1091291542",
      "name": "Gruberjeva palača",
      "lat": 46.04543,
      "lon": 14.50703,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5611887",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/225654437",
@@ -116,7 +374,8 @@
      "lon": 14.52781,
      "address": "Pot na Golovec 25",
      "website": "https://astro.ago.fmf.uni-lj.si/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4071780"
     },
     {
      "id": "way/187081080",
@@ -124,7 +383,11 @@
      "lat": 46.05025,
      "lon": 14.53097,
      "address": "Ulica Carla Benza 20",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12790232",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/189773881",
@@ -132,7 +395,13 @@
      "lat": 46.06158,
      "lon": 14.49469,
      "address": "Pod gozdom 12",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18562628",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel"
+     ]
     },
     {
      "id": "way/180491812",
@@ -140,7 +409,11 @@
      "lat": 46.05293,
      "lon": 14.48636,
      "address": "Cesta 27. aprila 47",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q30505504",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/180491822",
@@ -148,7 +421,11 @@
      "lat": 46.05093,
      "lon": 14.49049,
      "address": "Ažbetova ulica 4",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18552422",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/5752690821",
@@ -213,30 +490,6 @@
      "name": "šance",
      "lat": 46.05625,
      "lon": 14.48995
-    },
-    {
-     "id": "node/12444454396",
-     "name": "Spomenik Ć",
-     "lat": 46.05204,
-     "lon": 14.51542
-    },
-    {
-     "id": "node/7539127206",
-     "name": "spomenik Gabrijelu Gruberju in osuševanju Barja",
-     "lat": 46.04204,
-     "lon": 14.51388
-    },
-    {
-     "id": "node/3958644057",
-     "name": "Spomenik ilegalcu",
-     "lat": 46.05358,
-     "lon": 14.5032
-    },
-    {
-     "id": "node/3958429276",
-     "name": "Spomenik padlim vojakom prve svetovne vojne",
-     "lat": 46.05242,
-     "lon": 14.51862
     }
    ]
   },
@@ -252,7 +505,11 @@
      "address": "Puharjeva ulica 9",
      "website": "https://www.ng-slo.si/si/",
      "openingHours": "Tu-We,Fr-Su 10:00-18:00; Th 10:00-20:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1953536",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/15308063",
@@ -262,7 +519,11 @@
      "address": "Prešernova cesta 20",
      "website": "http://www.nms.si/",
      "openingHours": "Mo-Su 10:00-18:00; Th 10:00-20:00; Jan 1, May 1, Nov 1, Dec 25 off",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q2033282",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/15308087",
@@ -271,7 +532,12 @@
      "lon": 14.49876,
      "address": "Tomšičeva ulica 14",
      "website": "https://www.mg-lj.si/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q11234584",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/5879664298",
@@ -281,7 +547,11 @@
      "address": "Pod turnom 4",
      "website": "https://mglc.si/en/",
      "openingHours": "Tu-Su, PH 10:00-18:00; Dec 24, Dec 31 10:00-14:00; Dec 25, Jan 1 off",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q23090920",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1502918208",
@@ -291,7 +561,11 @@
      "address": "Gosposka ulica 15",
      "website": "https://mgml.si/mestni-muzej-ljubljana/",
      "openingHours": "Mo off; Tu-Su 10:00-18:00; Dec 25, Dec 26, Jan 1 off",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q15645583",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/186332660",
@@ -300,7 +574,11 @@
      "lon": 14.51702,
      "address": "Maistrova ulica 3",
      "website": "https://www.mg-lj.si/",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q19935447",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/169541195",
@@ -310,7 +588,11 @@
      "address": "Parmova ulica 35",
      "website": "https://www.zelezniskimuzej.si/",
      "openingHours": "Tu-Su 10:00-18:00; Mo off; Dec 24, Dec 31 10:00-14:00; Jan 1, Jan 2, May 1, Nov 1, Dec 25, Dec 26 off",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1311779",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/186332697",
@@ -320,7 +602,11 @@
      "address": "Metelkova ulica 2",
      "website": "https://www.etno-muzej.si/en",
      "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-20:00; Mo off",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q12802993",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/8119565",
@@ -329,7 +615,11 @@
      "lon": 14.49524,
      "address": "Celovška cesta 23",
      "website": "https://www.muzej-nz.si/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12797158",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/260566308",
@@ -337,7 +627,11 @@
      "lat": 46.047,
      "lon": 14.50665,
      "address": "Stari trg 21",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12789566",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/178573747",
@@ -347,7 +641,11 @@
      "address": "Karunova ulica 4-6",
      "website": "https://mgml.si/sl/plecnikova-hisa/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q28788742",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/10047334026",
@@ -357,7 +655,11 @@
      "address": "Čopova ulica 3",
      "website": "https://nlb-muza.si/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q137512537",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12337484948",
@@ -505,6 +807,72 @@
      "lon": 14.50248,
      "address": "Plečnikov trg 1",
      "website": "https://solskimuzej.si/"
+    },
+    {
+     "id": "node/10227913786",
+     "name": "Upravna hiša",
+     "lat": 46.0554,
+     "lon": 14.51563,
+     "address": "Metelkova ulica 2",
+     "openingHours": "Mo-Fr 09:00-17:00"
+    },
+    {
+     "id": "node/4982506195",
+     "name": "Villa ART",
+     "lat": 46.04718,
+     "lon": 14.50516,
+     "website": "https://villa-art.si/"
+    },
+    {
+     "id": "way/320014266",
+     "name": "Bežigrajska galerija 2",
+     "lat": 46.06611,
+     "lon": 14.50865,
+     "address": "Vodovodna cesta 3"
+    },
+    {
+     "id": "node/12104792514",
+     "name": "DobraVaga",
+     "lat": 46.0515,
+     "lon": 14.50867
+    },
+    {
+     "id": "node/4982505109",
+     "name": "Galerija 22",
+     "lat": 46.04793,
+     "lon": 14.50503,
+     "address": "Novi trg 6"
+    },
+    {
+     "id": "node/7448534429",
+     "name": "Ianbo Art Gallery",
+     "lat": 46.05242,
+     "lon": 14.51229
+    },
+    {
+     "id": "node/9996951903",
+     "name": "Mikado",
+     "lat": 46.04764,
+     "lon": 14.50144
+    },
+    {
+     "id": "relation/15308062",
+     "name": "Rimski lapidarij",
+     "lat": 46.05239,
+     "lon": 14.49954
+    },
+    {
+     "id": "node/14207796739",
+     "name": "Rupa",
+     "lat": 46.04969,
+     "lon": 14.49703,
+     "address": "Erjavčeva cesta 23"
+    },
+    {
+     "id": "node/9996991898",
+     "name": "Zala",
+     "lat": 46.04845,
+     "lon": 14.50447
     }
    ]
   },
@@ -1200,6 +1568,7 @@
      "address": "Slovenska cesta 34",
      "website": "http://www.hotelslon.com/",
      "openingHours": "24/7",
+     "wikidataId": "Q111413412",
      "detailed": true
     },
     {
@@ -1449,6 +1818,14 @@
      "openingHours": "Fr,Sa 23:00-05:00"
     },
     {
+     "id": "way/115607583",
+     "name": "K4",
+     "lat": 46.05568,
+     "lon": 14.50402,
+     "address": "Kersnikova ulica 4",
+     "website": "https://www.klub-k4.si/"
+    },
+    {
      "id": "way/115614165",
      "name": "Menza pri koritu",
      "lat": 46.05648,
@@ -1474,13 +1851,6 @@
      "lat": 46.05678,
      "lon": 14.5169,
      "address": "Metelkova ulica 6"
-    },
-    {
-     "id": "way/115607583",
-     "name": "K4",
-     "lat": 46.05568,
-     "lon": 14.50402,
-     "address": "Kersnikova ulica 4"
     },
     {
      "id": "way/115614163",

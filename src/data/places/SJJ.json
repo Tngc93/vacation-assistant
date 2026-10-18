@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SJJ",
- "fetchedAt": "2026-10-16T23:45:33.573Z",
+ "fetchedAt": "2026-10-18T12:05:41.637Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,56 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q903860",
+     "name": "Asim Ferhatović Hase Stadyumu",
+     "localName": "Asim Ferhatović Hase Stadium",
+     "lat": 43.87389,
+     "lon": 18.40861,
+     "wikipediaCount": 33,
+     "wikidataId": "Q903860",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q790278",
+     "name": "Avaz Twist Tower",
+     "lat": 43.86056,
+     "lon": 18.4025,
+     "wikipediaCount": 30,
+     "wikidataId": "Q790278",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1255835",
+     "name": "Gazi Hüsrev Bey Camii",
+     "localName": "Gazi Husrev-beg Mosque",
+     "lat": 43.85917,
+     "lon": 18.42903,
+     "wikipediaCount": 30,
+     "wikidataId": "Q1255835",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1277685",
+     "name": "Latin Köprüsü",
+     "localName": "Latin Bridge",
+     "lat": 43.85765,
+     "lon": 18.42901,
+     "wikipediaCount": 29,
+     "wikidataId": "Q1277685",
+     "kinds": [
+      "attraction",
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
      "id": "way/474428386",
      "name": "Kutsal Kalp Katedrali",
      "localName": "Katedrala Srca Isusova",
@@ -50,7 +100,38 @@
      "lon": 18.42536,
      "address": "Trg fra Grge Martića",
      "website": "https://katedrala-sarajevo.com/",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q1267112",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1628496",
+     "name": "Hünkar Camii",
+     "localName": "Emperor's Mosque",
+     "lat": 43.85735,
+     "lon": 18.43072,
+     "wikipediaCount": 27,
+     "wikidataId": "Q1628496",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1271286",
+     "name": "Saraybosna Sırp Ortodoks Katedrali",
+     "localName": "Serbian Orthodox Cathedral in Sarajevo",
+     "lat": 43.85823,
+     "lon": 18.42491,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1271286",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/23723663",
@@ -58,7 +139,13 @@
      "lat": 43.85917,
      "lon": 18.43338,
      "address": "Brodac 1",
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q16831150",
+     "kinds": [
+      "business",
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/190122879",
@@ -68,7 +155,211 @@
      "lon": 18.42508,
      "address": "Hamdije Kreševljakovića",
      "openingHours": "Mo-Fr 10:00-14:00",
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q1268899",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1246674",
+     "name": "Ali Paşa Camii, Saraybosna",
+     "localName": "Ali Pasha's Mosque",
+     "lat": 43.85792,
+     "lon": 18.41279,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1246674",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q629641",
+     "name": "Başçarşı",
+     "localName": "Baščaršija",
+     "lat": 43.85972,
+     "lon": 18.43112,
+     "wikipediaCount": 22,
+     "wikidataId": "Q629641",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1568852",
+     "name": "Eski Yahudi Mezarlığı, Saraybosna",
+     "localName": "Old Jewish Cemetery, Sarajevo",
+     "lat": 43.8509,
+     "lon": 18.4074,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1568852",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q597948",
+     "name": "Saraybosna Ulusal Tiyatrosu",
+     "localName": "Sarajevo National Theatre",
+     "lat": 43.85705,
+     "lon": 18.42071,
+     "wikipediaCount": 22,
+     "wikidataId": "Q597948",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1268862",
+     "name": "Zetra Olimpik Spor Salonu",
+     "localName": "Zetra Olympic Hall",
+     "lat": 43.87181,
+     "lon": 18.40956,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1268862",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q3045471",
+     "name": "Keskin Nişancı Caddesi",
+     "localName": "Sniper Alley",
+     "lat": 43.856,
+     "lon": 18.413,
+     "wikipediaCount": 18,
+     "wikidataId": "Q3045471",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1280411",
+     "name": "Skenderija",
+     "lat": 43.85456,
+     "lon": 18.41408,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1280411",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1261159",
+     "name": "Ferhad Paşa Camii, Saraybosna",
+     "localName": "Ferhadija Mosque",
+     "lat": 43.8589,
+     "lon": 18.42713,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1261159",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1566083",
+     "name": "Gazi Hüsrev Bey Medresesi",
+     "localName": "Gazi Husrev-begova medresa",
+     "lat": 43.8595,
+     "lon": 18.4289,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1566083",
+     "kinds": [
+      "business",
+      "heritage",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q12960739",
+     "name": "Çoban Camii",
+     "localName": "Čobanija Mosque",
+     "lat": 43.85527,
+     "lon": 18.42094,
+     "wikipediaCount": 15,
+     "wikidataId": "Q12960739",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1062192",
+     "name": "Sebil",
+     "localName": "Sebilj",
+     "lat": 43.85972,
+     "lon": 18.43126,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1062192",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1257016",
+     "name": "Bosna-Hersek Cumhurbaşkanlığı Binası",
+     "localName": "Building of the Presidency of Bosnia and Herzegovina",
+     "lat": 43.85845,
+     "lon": 18.41388,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1257016",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q3437287",
+     "name": "Greece–Bosnia and Herzegovina Friendship Building",
+     "lat": 43.85504,
+     "lon": 18.40517,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3437287",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q1283757",
+     "name": "Kutsal Başmelekler Mikail ve Cebrail Kilisesi (Saraybosna)",
+     "localName": "Sarajevo Old Orthodox Church",
+     "lat": 43.86028,
+     "lon": 18.43,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1283757",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2118712",
+     "name": "Festina lente",
+     "lat": 43.85629,
+     "lon": 18.41761,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2118712",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q12630328",
+     "name": "Muslihuddin Çekrekçi Camii",
+     "localName": "Muslihudin Čekrekčija Mosque",
+     "lat": 43.85988,
+     "lon": 18.43192,
+     "wikipediaCount": 11,
+     "wikidataId": "Q12630328",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/191284860",
@@ -76,7 +367,12 @@
      "localName": "Sarajevska sahat-kula",
      "lat": 43.85921,
      "lon": 18.42856,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1257048",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "node/1588411957",
@@ -84,7 +380,33 @@
      "localName": "Vječna vatra",
      "lat": 43.85881,
      "lon": 18.42182,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3490665"
+    },
+    {
+     "id": "wikidata/Q1266711",
+     "name": "Suada and Olga bridge",
+     "lat": 43.85331,
+     "lon": 18.4065,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1266711",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q13091077",
+     "name": "Şehir Kahyası Köprüsü",
+     "localName": "Šeher-Ćehaja Bridge",
+     "lat": 43.8587,
+     "lon": 18.43404,
+     "wikipediaCount": 11,
+     "wikidataId": "Q13091077",
+     "kinds": [
+      "attraction",
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "way/203591656",
@@ -92,14 +414,23 @@
      "localName": "Tašlihan",
      "lat": 43.85861,
      "lon": 18.42788,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q13090746",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "node/704412254",
      "name": "Konak",
      "lat": 43.85633,
      "lon": 18.43074,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q613667",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/191388836",
@@ -109,21 +440,34 @@
      "lon": 18.43425,
      "address": "Veliki Alifakovac 1",
      "cuisine": "regional, balkan",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1257066",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/203591655",
      "name": "At mejdan",
      "lat": 43.85668,
      "lon": 18.42723,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q43954247",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/593770347",
      "name": "Kuća Alije Đerzeleza",
      "lat": 43.86443,
      "lon": 18.4296,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q43957396",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/6898388409",
@@ -153,7 +497,11 @@
      "id": "way/191991975",
      "name": "Gazi Husrev-begova (Kuršumli) medresa",
      "lat": 43.85973,
-     "lon": 18.42882
+     "lon": 18.42882,
+     "wikidataId": "Q43955926",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/191991966",
@@ -203,18 +551,6 @@
      "lat": 43.85873,
      "lon": 18.41382,
      "address": "Maršala Tita"
-    },
-    {
-     "id": "way/1222067331",
-     "name": "Stećak of Zgošća replica",
-     "lat": 43.85551,
-     "lon": 18.40633
-    },
-    {
-     "id": "way/284388178",
-     "name": "Zlatište",
-     "lat": 43.84369,
-     "lon": 18.41352
     }
    ]
   },
@@ -230,7 +566,11 @@
      "address": "Zmaja od Bosne 3",
      "website": "https://www.zemaljskimuzej.ba/",
      "openingHours": "Tu-Fr 10:00-19:00; Sa-Su 10:00-14:00",
-     "wikipediaCount": 28
+     "wikipediaCount": 28,
+     "wikidataId": "Q568938",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/203591409",
@@ -241,7 +581,11 @@
      "address": "Logavina 32",
      "website": "http://warchildhood.org/museum",
      "openingHours": "Mo-Su 11:00-19:00",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q28654544",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/23724296",
@@ -252,7 +596,12 @@
      "address": "Zmaja od Bosne 5",
      "website": "https://muzej.ba/",
      "openingHours": "Mo-Su 09:00-19:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q1621007",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/190229481",
@@ -260,7 +609,13 @@
      "lat": 43.85763,
      "lon": 18.42737,
      "openingHours": "Mo-Fr 10:00-18:00; Sa 10:00-15:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1272929",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/190229535",
@@ -270,15 +625,11 @@
      "lon": 18.42899,
      "address": "Zelenih beretki 1",
      "website": "https://muzejsarajeva.ba/",
-     "wikipediaCount": 12
-    },
-    {
-     "id": "way/203251029",
-     "name": "Museum of Sarajevo",
-     "lat": 43.86087,
-     "lon": 18.42758,
-     "address": "Josipa Štadlera 32",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q700606",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5776566121",
@@ -287,7 +638,13 @@
      "lat": 43.85978,
      "lon": 18.42781,
      "openingHours": "Apr 15-Sep 15: Mo-Fr 10:00-18:00; Sa off; Su 10:00-13:00; Sep 15-Apr 15: Mo-Fr 10:00-16:00; Sa off; Su 10:00-13:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1257060",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/203586371",
@@ -297,29 +654,35 @@
      "lon": 18.42932,
      "address": "Glođina 8",
      "openingHours": "Mo-Fr 10:00-16:00; Sa 10:00-15:00; Su off",
-     "wikipediaCount": 9
-    },
-    {
-     "id": "way/191280498",
-     "name": "Museum of the Jews of Bosnia and Herzegovina",
-     "lat": 43.85984,
-     "lon": 18.4278,
-     "address": "Velika avlija - Mula Mustafe Bašeskije bb",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1397958",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/480938269",
      "name": "Zgrada željezničke stanice Bistrik",
      "lat": 43.85273,
      "lon": 18.43278,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q20581091",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "way/169760856",
      "name": "Brusa Bezistan",
      "lat": 43.8588,
      "lon": 18.43039,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q1564450",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/131846402",
@@ -327,7 +690,11 @@
      "lat": 43.8578,
      "lon": 18.42446,
      "address": "Zelenih beretki 8",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q13090849",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5776566122",
@@ -336,7 +703,12 @@
      "lon": 18.42759,
      "website": "http://newtemple.com.ba/",
      "openingHours": "Mo-Fr 14:00-19:00; Su 10:00-14:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q61362668",
+     "kinds": [
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/191303897",
@@ -344,14 +716,19 @@
      "lat": 43.85778,
      "lon": 18.42662,
      "address": "Sime Milutinovića 7",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q110291619",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/889239595",
      "name": "Saburina kuća",
      "lat": 43.86381,
      "lon": 18.43581,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q61362467"
     },
     {
      "id": "node/10819840605",
@@ -388,7 +765,11 @@
      "lon": 18.43494,
      "address": "Franjevačka 38",
      "website": "https://warmuseumsarajevo1992.com/",
-     "openingHours": "Mo-Su 09:00-20:00"
+     "openingHours": "Mo-Su 09:00-20:00",
+     "wikidataId": "Q113234344",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5016408125",
@@ -461,6 +842,36 @@
      "name": "Merhemića vila",
      "lat": 43.86194,
      "lon": 18.39977
+    },
+    {
+     "id": "node/9944207870",
+     "name": "Muzej Optičkih iluzija",
+     "lat": 43.85474,
+     "lon": 18.41871
+    },
+    {
+     "id": "node/13798167403",
+     "name": "Muzej Sarajevske Pivare",
+     "lat": 43.85619,
+     "lon": 18.43231
+    },
+    {
+     "id": "way/23710725",
+     "name": "Odjeljenje za etnografiju",
+     "lat": 43.85462,
+     "lon": 18.40341
+    },
+    {
+     "id": "way/23710726",
+     "name": "Odjeljenje za prirodne nauke",
+     "lat": 43.85419,
+     "lon": 18.40271
+    },
+    {
+     "id": "node/12394721564",
+     "name": "Tito Sarajevo - Yugoslavia",
+     "lat": 43.85885,
+     "lon": 18.42428
     }
    ]
   },

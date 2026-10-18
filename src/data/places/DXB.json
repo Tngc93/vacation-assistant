@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "DXB",
- "fetchedAt": "2026-10-17T00:01:12.200Z",
+ "fetchedAt": "2026-10-18T16:56:00.058Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,32 +43,102 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q193439",
+     "name": "Dubai Uluslararası Havalimanı",
+     "localName": "Dubai International Airport",
+     "lat": 25.25278,
+     "lon": 55.36444,
+     "wikipediaCount": 71,
+     "wikidataId": "Q193439",
+     "kinds": [
+      "adminArea",
+      "airport",
+      "station"
+     ]
+    },
+    {
+     "id": "node/5448804122",
+     "name": "madhu suparmarke bur dubai",
+     "lat": 25.26187,
+     "lon": 55.29625,
+     "wikipediaCount": 23,
+     "wikidataId": "Q140673",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q3119433",
+     "name": "Al-Maktoum Stadium",
+     "lat": 25.24,
+     "lon": 55.31306,
+     "wikipediaCount": 19,
+     "wikidataId": "Q3119433",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q5594813",
+     "name": "Grand Mosque",
+     "lat": 25.26444,
+     "lon": 55.29667,
+     "wikipediaCount": 15,
+     "wikidataId": "Q5594813",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q910485",
+     "name": "Dubai City Tower",
+     "lat": 25.26667,
+     "lon": 55.33333,
+     "wikipediaCount": 13,
+     "wikidataId": "Q910485",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
      "id": "way/542042595",
      "name": "حي الفهيدي التاريخي",
      "lat": 25.26418,
      "lon": 55.3002,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q2094764",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "relation/16842105",
      "name": "Deira Gold Souk",
      "lat": 25.27005,
      "lon": 55.29808,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q5310547"
     },
     {
      "id": "way/542042596",
      "name": "سوق التوابل",
      "lat": 25.26756,
      "lon": 55.29725,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q5310610"
     },
     {
      "id": "node/260810847",
      "name": "Deira Clocktower",
      "lat": 25.25865,
      "lon": 55.32645,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q4346630",
+     "kinds": [
+      "road",
+      "tower"
+     ]
     },
     {
      "id": "way/23978061",
@@ -76,7 +146,8 @@
      "lat": 25.26453,
      "lon": 55.31173,
      "openingHours": "24/7",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q20011908"
     },
     {
      "id": "node/2488004018",
@@ -84,14 +155,16 @@
      "lat": 25.26482,
      "lon": 55.29683,
      "address": "شارع علي بن أبي طالب",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q5766383"
     },
     {
      "id": "node/5109606422",
      "name": "سوق دبي للمنسوجات",
      "lat": 25.26414,
      "lon": 55.29621,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q21523365"
     },
     {
      "id": "node/5400471722",
@@ -196,12 +269,6 @@
      "lon": 55.31866
     },
     {
-     "id": "node/5448804122",
-     "name": "madhu suparmarke bur dubai",
-     "lat": 25.26187,
-     "lon": 55.29625
-    },
-    {
      "id": "node/4175867883",
      "name": "Monument",
      "lat": 25.26225,
@@ -238,6 +305,61 @@
      "name": "Souk Al Seef",
      "lat": 25.26373,
      "lon": 55.30532
+    },
+    {
+     "id": "node/13383845101",
+     "name": "The Souk Tower",
+     "lat": 25.26332,
+     "lon": 55.2955
+    },
+    {
+     "id": "node/4466949490",
+     "name": "Traditional Souq",
+     "lat": 25.27427,
+     "lon": 55.31048
+    },
+    {
+     "id": "node/7516655189",
+     "name": "الخور",
+     "lat": 25.26741,
+     "lon": 55.29735
+    },
+    {
+     "id": "way/585358310",
+     "name": "الملكة إليزابيث 2",
+     "lat": 25.26226,
+     "lon": 55.28094,
+     "address": "Mina Rashid"
+    },
+    {
+     "id": "node/6355366885",
+     "name": "باص نايف",
+     "lat": 25.27384,
+     "lon": 55.30659
+    },
+    {
+     "id": "node/4401270408",
+     "name": "دوار السمك",
+     "lat": 25.27006,
+     "lon": 55.31644
+    },
+    {
+     "id": "node/7516655294",
+     "name": "رمادا",
+     "lat": 25.27031,
+     "lon": 55.32173
+    },
+    {
+     "id": "node/7516655188",
+     "name": "سوق الذهب",
+     "lat": 25.27095,
+     "lon": 55.29815
+    },
+    {
+     "id": "node/4751797223",
+     "name": "محل شاحن متنقل ب 30 درهم دبي",
+     "lat": 25.27239,
+     "lon": 55.30455
     }
    ]
   },
@@ -246,13 +368,26 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q2125281",
+     "name": "Dubai Müzesi",
+     "localName": "Dubai Museum",
+     "lat": 25.26306,
+     "lon": 55.29722,
+     "wikipediaCount": 25,
+     "wikidataId": "Q2125281",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
      "id": "way/386649647",
      "name": "برواز دبي",
      "lat": 25.23546,
      "lon": 55.30037,
      "website": "https://www.thedubaiframe.com/",
      "openingHours": "Mo-Su 10:00-19:00",
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q20386392"
     },
     {
      "id": "relation/5755009",
@@ -261,7 +396,8 @@
      "lon": 55.29007,
      "address": "Al Khaleej street 14/1",
      "openingHours": "Sa-Th 8:00-20:30, Fr 15:30-21:30, Sa-Th 09:00-17:00 \"Ramadan\", Fr 14:00-17:00 \"Ramadan\"",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4272517"
     },
     {
      "id": "relation/5467412",
@@ -269,21 +405,30 @@
      "lat": 25.26858,
      "lon": 55.29054,
      "website": "https://www.al-siraaj.com/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q7492956"
     },
     {
      "id": "node/5334433325",
      "name": "Coffee Museum",
      "lat": 25.26371,
      "lon": 55.3001,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q117599013",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/12486010908",
      "name": "Coins Museum",
      "lat": 25.26458,
      "lon": 55.29979,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q120357129",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/437617706",
@@ -292,7 +437,11 @@
      "lon": 55.29783,
      "address": "Old Baladiya Street",
      "openingHours": "Su-Th 09:00-15:00; Fr-Sa off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q125496568",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11927748577",
@@ -343,7 +492,11 @@
      "lat": 25.27182,
      "lon": 55.2987,
      "address": "28 Street",
-     "website": "http://www.womenmuseumuae.com/"
+     "website": "http://www.womenmuseumuae.com/",
+     "wikidataId": "Q122643730",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3717446089",

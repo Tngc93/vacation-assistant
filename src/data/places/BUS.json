@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BUS",
- "fetchedAt": "2026-10-16T23:56:30.835Z",
+ "fetchedAt": "2026-10-18T16:48:41.037Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -48,7 +48,37 @@
      "lat": 41.65596,
      "lon": 41.63935,
      "address": "თენგიზ აბულაძის ქუჩა 4",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q18822753",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q3906385",
+     "name": "Batum Camii",
+     "localName": "Batumi Mosque",
+     "lat": 41.64866,
+     "lon": 41.64389,
+     "wikipediaCount": 18,
+     "wikidataId": "Q3906385",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q4873357",
+     "name": "Batum Sinagogu",
+     "localName": "Batumi Synagogue",
+     "lat": 41.64735,
+     "lon": 41.63448,
+     "wikipediaCount": 14,
+     "wikidataId": "Q4873357",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/96042368",
@@ -58,28 +88,51 @@
      "lon": 41.63858,
      "address": "დემეტრე თავდადებულის ქუჩა 51",
      "openingHours": "Mo-Su 08:30-19:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q4873351",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1916045",
+     "name": "Midia heykeli",
+     "localName": "Medea statue",
+     "lat": 41.65111,
+     "lon": 41.63689,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1916045"
     },
     {
      "id": "way/294880812",
      "name": "პიაცა მოედანი",
      "lat": 41.64959,
      "lon": 41.6411,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q65090860"
     },
     {
      "id": "way/423943865",
      "name": "ფანტაზია",
      "lat": 41.6501,
      "lon": 41.62528,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q18808434",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/1306367386",
      "name": "ბათუმის შუქურა",
      "lat": 41.6559,
      "lon": 41.64107,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q32947730",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/322849586",
@@ -130,7 +183,11 @@
      "lon": 41.63326,
      "address": "ხარიტონ ახვლედიანის ქუჩა 4",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4683148",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/96037255",
@@ -139,7 +196,11 @@
      "lon": 41.63386,
      "address": "ზურაბ გორგილაძის ქუჩა 8",
      "openingHours": "10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q7603037",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1744041858",

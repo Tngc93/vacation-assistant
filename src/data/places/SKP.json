@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SKP",
- "fetchedAt": "2026-10-16T23:47:53.747Z",
+ "fetchedAt": "2026-10-18T16:39:46.707Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,13 +43,56 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1164804",
+     "name": "Toše Proeski Arena",
+     "localName": "Arena ”Philip II. of Macedonia / Toše Proeski / Todor”",
+     "lat": 42.00573,
+     "lon": 21.42559,
+     "wikipediaCount": 39,
+     "wikidataId": "Q1164804",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "way/474873958",
      "name": "Üsküp Kalesi",
      "localName": "Скопско кале",
      "lat": 42.00081,
      "lon": 21.43352,
      "openingHours": "07:00-18:00",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1262367",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q1780883",
+     "name": "Taşköprü",
+     "localName": "Stone Bridge in Skopje",
+     "lat": 41.99699,
+     "lon": 21.43307,
+     "wikipediaCount": 27,
+     "wikidataId": "Q1780883",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q387",
+     "name": "Türk Çarşısı, Üsküp",
+     "localName": "Old Bazaar",
+     "lat": 42.00076,
+     "lon": 21.43696,
+     "wikipediaCount": 26,
+     "wikidataId": "Q387",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/172178304",
@@ -57,7 +100,27 @@
      "localName": "Мустафа паша џамија",
      "lat": 42.00203,
      "lon": 21.43541,
-     "wikipediaCount": 21
+     "wikipediaCount": 21,
+     "wikidataId": "Q1267418",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1273251",
+     "name": "Kurşunlu Han",
+     "localName": "Kuršumli An",
+     "lat": 42.00306,
+     "lon": 21.43694,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1273251",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "station"
+     ]
     },
     {
      "id": "way/239422349",
@@ -66,7 +129,49 @@
      "lat": 41.99445,
      "lon": 21.43244,
      "address": "11 Октомври 4А",
-     "wikipediaCount": 20
+     "wikipediaCount": 20,
+     "wikidataId": "Q3078453",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q3070972",
+     "name": "Makedonya Meydanı",
+     "localName": "Macedonia Square",
+     "lat": 41.99612,
+     "lon": 21.4317,
+     "wikipediaCount": 18,
+     "wikidataId": "Q3070972",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2121610",
+     "name": "Sultan Murad Camii, Üsküp",
+     "localName": "Sultan Murad Mosque",
+     "lat": 42.00155,
+     "lon": 21.44144,
+     "wikipediaCount": 18,
+     "wikidataId": "Q2121610",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3097759",
+     "name": "Üsküp Ulaşım Merkezi",
+     "localName": "Skopje Train Station",
+     "lat": 41.9912,
+     "lon": 21.4459,
+     "wikipediaCount": 16,
+     "wikidataId": "Q3097759",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "way/175265123",
@@ -74,7 +179,34 @@
      "lat": 41.99853,
      "lon": 21.42641,
      "address": "Булевар Партизански одреди 17",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q1758749",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12470062",
+     "name": "Art Bridge",
+     "lat": 41.9958,
+     "lon": 21.4359,
+     "wikipediaCount": 15,
+     "wikidataId": "Q12470062",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q3133681",
+     "name": "Üsküp Hayvanat Bahçesi",
+     "localName": "Skopje Zoo",
+     "lat": 42.00708,
+     "lon": 21.41687,
+     "wikipediaCount": 14,
+     "wikidataId": "Q3133681",
+     "kinds": [
+      "attraction"
+     ]
     },
     {
      "id": "relation/5360060",
@@ -82,7 +214,71 @@
      "localName": "Капан ан",
      "lat": 42.00011,
      "lon": 21.43679,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1283741",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "station"
+     ]
+    },
+    {
+     "id": "wikidata/Q2045516",
+     "name": "MRT Center",
+     "lat": 41.99722,
+     "lon": 21.44472,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2045516"
+    },
+    {
+     "id": "wikidata/Q3406650",
+     "name": "Ristik Sarayı",
+     "localName": "Ristiḱ Palace",
+     "lat": 41.99561,
+     "lon": 21.43102,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3406650",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1009860",
+     "name": "Alaca İshak Bey Camii",
+     "localName": "Ishak Bey Mosque",
+     "lat": 42.00465,
+     "lon": 21.43974,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1009860",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q11737299",
+     "name": "Cathedral of the Sacred Heart of Jesus",
+     "lat": 41.99472,
+     "lon": 21.41778,
+     "wikipediaCount": 11,
+     "wikidataId": "Q11737299",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1283775",
+     "name": "İsa'nın Yükselişi Kilisesi, Üsküp",
+     "localName": "Church of the Ascension of Jesus, Skopje",
+     "lat": 42.00083,
+     "lon": 21.43583,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1283775",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/21405466",
@@ -91,7 +287,14 @@
      "lat": 42.00167,
      "lon": 21.43776,
      "address": "Битпазарска",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3085319",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "station"
+     ]
     },
     {
      "id": "way/44038503",
@@ -99,21 +302,34 @@
      "localName": "Саат кула",
      "lat": 42.00202,
      "lon": 21.44132,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1131501",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "way/44038732",
      "name": "Иса-бегова џамија",
      "lat": 42.00323,
      "lon": 21.44176,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1509599",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/908273421",
      "name": "Воин на коњ (Александар Македонски)",
      "lat": 41.99593,
      "lon": 21.43148,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3497603"
     },
     {
      "id": "way/1559869013",
@@ -121,21 +337,27 @@
      "localName": "Шенѓул амам",
      "lat": 42.00307,
      "lon": 21.43666,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q12904470",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/32885596",
      "name": "Француски воени гробишта",
      "lat": 42.00836,
      "lon": 21.42984,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q83365913"
     },
     {
      "id": "node/6602681335",
      "name": "Сила, Слава и Победа",
      "lat": 42.00044,
      "lon": 21.43233,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12910338"
     },
     {
      "id": "way/176160189",
@@ -161,7 +383,7 @@
      "name": "Prometheus",
      "localName": "Прометеј",
      "lat": 41.9933,
-     "lon": 21.43372
+     "lon": 21.43374
     },
     {
      "id": "way/44039295",
@@ -216,8 +438,8 @@
     {
      "id": "node/4386764089",
      "name": "Никола Карев",
-     "lat": 41.99302,
-     "lon": 21.4332
+     "lat": 41.99305,
+     "lon": 21.43315
     },
     {
      "id": "node/8433354043",
@@ -242,12 +464,6 @@
      "name": "Споменик на Јуриј Гагарин",
      "lat": 41.99493,
      "lon": 21.41087
-    },
-    {
-     "id": "node/4242928035",
-     "name": "Тодор Александров",
-     "lat": 41.98343,
-     "lon": 21.43911
     }
    ]
   },
@@ -262,7 +478,12 @@
      "lon": 21.42901,
      "address": "Св. Кирил и Методиј",
      "website": "https://museumskopje.mk/",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q922143",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/176051871",
@@ -273,7 +494,12 @@
      "address": "Македонија 9",
      "website": "https://memorialhouseofmotherteresa.com/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q587617",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/32812963",
@@ -284,7 +510,12 @@
      "address": "Јосиф Михајловиќ 7",
      "website": "https://www.museum.org.mk/",
      "openingHours": "Tu-Fr 09:00-17:00; Sa 09:00-15:00; Su 09:00-13:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q3133557",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/32887087",
@@ -294,7 +525,12 @@
      "address": "Самоилова",
      "website": "https://msu.mk/home/",
      "openingHours": "Tu-Sa 10:00-17:00; Su 09:00-13:00",
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q3329592",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/172180530",
@@ -305,7 +541,12 @@
      "address": "Иљо Војвода 1",
      "website": "https://mmb.org.mk/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q986531",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/172171547",
@@ -315,7 +556,12 @@
      "lon": 21.43572,
      "website": "https://nationalgallery.mk/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1283985",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/172186249",
@@ -325,7 +571,11 @@
      "lon": 21.43338,
      "address": "Иљо Војвода 2",
      "website": "https://www.holocaustfund.org.mk/",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q3333150",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/180363121",
@@ -335,7 +585,12 @@
      "lon": 21.43728,
      "website": "https://nationalgallery.mk/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1271865",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/229930502",
@@ -346,7 +601,11 @@
      "address": "Кеј Димитар Влахов",
      "website": "https://amm.org.mk/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q65295584",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/172348137",
@@ -355,14 +614,23 @@
      "lat": 42.00571,
      "lon": 21.41744,
      "openingHours": "Tu-Su 09:00-16:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q20567394",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/474882772",
      "name": "Спомен-куќа на Лазар Личеновски",
      "lat": 42.00015,
      "lon": 21.43122,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q98538795",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/1213925475",

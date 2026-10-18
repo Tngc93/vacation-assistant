@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "TUN",
- "fetchedAt": "2026-10-17T00:06:58.536Z",
+ "fetchedAt": "2026-10-18T17:00:53.147Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,46 +43,191 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q1291779",
+     "name": "Tunus Ulu Camii",
+     "localName": "Al-Zaytunah Mosque",
+     "lat": 36.79722,
+     "lon": 10.17111,
+     "wikipediaCount": 22,
+     "wikidataId": "Q1291779",
+     "kinds": [
+      "business",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
      "id": "way/95197171",
      "name": "مدينة تونس العتيقة",
      "lat": 36.7986,
      "lon": 10.17106,
-     "wikipediaCount": 22
+     "wikipediaCount": 22,
+     "wikidataId": "Q3106527",
+     "kinds": [
+      "heritage",
+      "unesco"
+     ]
+    },
+    {
+     "id": "wikidata/Q2296514",
+     "name": "Aziz Vincent de Paul Katedrali",
+     "localName": "Cathedral of St. Vincent de Paul",
+     "lat": 36.8,
+     "lon": 10.17889,
+     "wikipediaCount": 20,
+     "wikidataId": "Q2296514",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q606065",
+     "name": "Tunus Ulusal Kütüphanesi",
+     "localName": "National Library of Tunisia",
+     "lat": 36.79996,
+     "lon": 10.16403,
+     "wikipediaCount": 18,
+     "wikidataId": "Q606065",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "wikidata/Q1584879",
+     "name": "Hammude Paşa Camii",
+     "localName": "Hammouda Pacha Mosque",
+     "lat": 36.79833,
+     "lon": 10.17083,
+     "wikipediaCount": 17,
+     "wikidataId": "Q1584879",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3030270",
+     "name": "Sidi Mahrez Camii",
+     "localName": "Sidi Mahrez Mosque",
+     "lat": 36.80417,
+     "lon": 10.16833,
+     "wikipediaCount": 13,
+     "wikidataId": "Q3030270",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3033800",
+     "name": "Babü'l-Bahr",
+     "localName": "Bab El Bhar",
+     "lat": 36.79917,
+     "lon": 10.17562,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3033800",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q4837216",
+     "name": "Babü'l-Cezire Camii",
+     "localName": "Bab Jazira Mosque",
+     "lat": 36.79197,
+     "lon": 10.17652,
+     "wikipediaCount": 11,
+     "wikidataId": "Q4837216",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q5351455",
+     "name": "El-Cedid Camii (Tunus)",
+     "localName": "El Jedid Mosque",
+     "lat": 36.79475,
+     "lon": 10.17376,
+     "wikipediaCount": 11,
+     "wikidataId": "Q5351455",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q27978301",
+     "name": "Laz Camii",
+     "localName": "Mosque of Laz",
+     "lat": 36.79947,
+     "lon": 10.16844,
+     "wikipediaCount": 11,
+     "wikidataId": "Q27978301",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/109942104",
      "name": "باب الجديد",
      "lat": 36.79245,
      "lon": 10.17113,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q16530779",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "node/3682664995",
      "name": "المعهد الوطني للتراث بتونس",
      "lat": 36.79567,
      "lon": 10.17057,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3015945",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/95197173",
      "name": "تربة الباي",
      "lat": 36.79366,
      "lon": 10.17312,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q3533905",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/5668859929",
      "name": "قصر صاحب الطابع",
      "lat": 36.8078,
      "lon": 10.16739,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q24699188",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/4962438745",
      "name": "الرشيدية",
      "lat": 36.7984,
      "lon": 10.16968,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q28496377",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/1465965",
@@ -90,7 +235,12 @@
      "lat": 36.79757,
      "lon": 10.16922,
      "address": "نهج القصبة",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3015932",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/379587676",
@@ -98,21 +248,36 @@
      "lat": 36.79621,
      "lon": 10.17344,
      "address": "Rue Bach Hamba 9",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3015914",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/1552763",
      "name": "دار بن عبد الله",
      "lat": 36.794,
      "lon": 10.17381,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3015922",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/95197159",
      "name": "دار عثمان",
      "lat": 36.79495,
      "lon": 10.17428,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3015950",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/3881987",
@@ -120,63 +285,109 @@
      "lat": 36.80208,
      "lon": 10.16817,
      "address": "Rue du Tribunal 20",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q3015946",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/1103582388",
      "name": "قصر خزندار",
      "lat": 36.80872,
      "lon": 10.16769,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q23769259",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/380570838",
      "name": "قصر خير الدين باشا",
      "lat": 36.80168,
      "lon": 10.16847,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q26251976",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/5668791876",
      "name": "Dâr Bou Hachem",
      "lat": 36.79862,
      "lon": 10.17193,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q25389899",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/5668454330",
      "name": "دار الجزيري",
      "lat": 36.80226,
      "lon": 10.16825,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3015904",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/5668725790",
      "name": "دار الحداد",
      "lat": 36.79553,
      "lon": 10.16997,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3015933",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/5668536175",
      "name": "دار بن عاشور",
      "lat": 36.80144,
      "lon": 10.16711,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3015921",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/5669215310",
      "name": "زاوية سيدي إبراهيم الرياحي",
      "lat": 36.80268,
      "lon": 10.16801,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q28657348",
+     "kinds": [
+      "business",
+      "heritage",
+      "school"
+     ]
     },
     {
      "id": "relation/1557521",
      "name": "Centre National d'Art de la Calligraphie Arabe",
      "lat": 36.80742,
      "lon": 10.16628,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3301815",
+     "kinds": [
+      "business",
+      "school"
+     ]
     },
     {
      "id": "node/5668791873",
@@ -243,6 +454,30 @@
      "name": "Dâr el-Jnoun",
      "lat": 36.79899,
      "lon": 10.1724
+    },
+    {
+     "id": "node/5668628551",
+     "name": "Dâr El-Mbaza'a",
+     "lat": 36.79529,
+     "lon": 10.17451
+    },
+    {
+     "id": "node/5668754530",
+     "name": "Dâr El-Mrâbet",
+     "lat": 36.79888,
+     "lon": 10.16946
+    },
+    {
+     "id": "node/5668754527",
+     "name": "Dar Ibn Arafa",
+     "lat": 36.80026,
+     "lon": 10.16954
+    },
+    {
+     "id": "node/5668791883",
+     "name": "Dâr Kastâili",
+     "lat": 36.79843,
+     "lon": 10.17204
     }
    ]
   },
@@ -255,28 +490,45 @@
      "name": "دار بن عبد الله",
      "lat": 36.794,
      "lon": 10.17381,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q3015922",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/1036946012",
      "name": "متحف العملة",
      "lat": 36.80466,
      "lon": 10.18506,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3330043",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1263965887",
      "name": "متحف المالية",
      "lat": 36.80112,
      "lon": 10.17831,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2754197",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5089226022",
      "name": "متحف السينما",
      "lat": 36.79643,
      "lon": 10.1656,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q54888242",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9148150382",

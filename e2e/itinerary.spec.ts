@@ -19,7 +19,8 @@ test("Barcelona: a 5-day plan that follows the budget's flight, with remove, res
   const label = (await remove.getAttribute("aria-label"))!;
   const name = label.replace(/ durağını plandan çıkar$/, "");
   await remove.click();
-  await expect(page).toHaveURL(/skip=[nwr]\d+/);
+  // Short ids: n/w/r for OSM objects, q for Wikidata items (Park Güell).
+  await expect(page).toHaveURL(/skip=[nwrq]\d+/);
   await expect(plan.getByRole("button", { name: label })).toHaveCount(0);
   await expect(plan.getByRole("button", { name: "Planı sıfırla (1)" })).toBeVisible();
 

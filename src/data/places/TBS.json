@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "TBS",
- "fetchedAt": "2026-10-16T23:55:17.354Z",
+ "fetchedAt": "2026-10-18T16:48:03.610Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,11 +43,118 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q290801",
+     "name": "Boris Paiçadze Dinamo Arena",
+     "localName": "Dinamo Arena",
+     "lat": 41.723,
+     "lon": 44.78975,
+     "wikipediaCount": 37,
+     "wikidataId": "Q290801",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q1860439",
+     "name": "Rustaveli Tiyatrosu",
+     "localName": "Rustaveli Theatre",
+     "lat": 41.6998,
+     "lon": 44.7979,
+     "wikipediaCount": 34,
+     "wikidataId": "Q1860439",
+     "kinds": [
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q2596393",
+     "name": "Gürcistan Ulusal Opera Tiyatrosu",
+     "localName": "Tbilisi Opera and Ballet Theatre",
+     "lat": 41.70108,
+     "lon": 44.79628,
+     "wikipediaCount": 31,
+     "wikidataId": "Q2596393",
+     "kinds": [
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q1754726",
+     "name": "Rustaveli Bulvarı",
+     "localName": "Shota Rustaveli Avenue",
+     "lat": 41.69846,
+     "lon": 44.79826,
+     "wikipediaCount": 24,
+     "wikidataId": "Q1754726",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q1734896",
+     "name": "Kaşveti Kilisesi",
+     "localName": "Kashveti Church",
+     "lat": 41.69795,
+     "lon": 44.79932,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1734896",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1341835",
+     "name": "Tiflis Garı",
+     "localName": "Tbilisi Central Station",
+     "lat": 41.72333,
+     "lon": 44.79778,
+     "wikipediaCount": 19,
+     "wikidataId": "Q1341835",
+     "kinds": [
+      "station"
+     ]
+    },
+    {
      "id": "relation/9841336",
      "name": "მთაწმინდის პანთეონი",
      "lat": 41.69588,
      "lon": 44.78895,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1195746",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q4453139",
+     "name": "Tiflis Hayvanat Bahçesi",
+     "localName": "Tbilisi Zoo",
+     "lat": 41.713,
+     "lon": 44.777,
+     "wikipediaCount": 16,
+     "wikidataId": "Q4453139",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q2919558",
+     "name": "Tiflis Spor Sarayı",
+     "localName": "Tbilisi Sports Palace",
+     "lat": 41.72,
+     "lon": 44.78,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2919558",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "relation/1020718",
@@ -56,7 +163,38 @@
      "lon": 44.79794,
      "address": "რუსთაველის გამზირი 8",
      "website": "https://parliament.ge/",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q42650745",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q2097127",
+     "name": "Aleksandr Nevski Katedrali (Tiflis)",
+     "localName": "Alexander Nevsky Cathedral",
+     "lat": 41.69667,
+     "lon": 44.79806,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2097127",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q3652403",
+     "name": "Rustaveli Sineması",
+     "localName": "Rustaveli Cinema",
+     "lat": 41.69677,
+     "lon": 44.79982,
+     "wikipediaCount": 11,
+     "wikidataId": "Q3652403",
+     "kinds": [
+      "business",
+      "cinema",
+      "heritage"
+     ]
     },
     {
      "id": "way/1236448832",
@@ -64,21 +202,35 @@
      "lat": 41.73574,
      "lon": 44.77078,
      "address": "იური გაგარინის ქუჩა 29ა",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q1544120",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
     },
     {
      "id": "way/1056991782",
      "name": "პირველი რესპუბლიკის მოედანი",
      "lat": 41.70389,
      "lon": 44.79209,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q4365746",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/1150481713",
      "name": "მშრალი ხიდი",
      "lat": 41.70047,
      "lon": 44.80256,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q12867285",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
     },
     {
      "id": "way/1234716193",
@@ -86,14 +238,19 @@
      "lat": 41.71434,
      "lon": 44.78523,
      "address": "მარი ბროსეს ქუჩა 1",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q19358447"
     },
     {
      "id": "way/690861173",
      "name": "გალაკტიონ ტაბიძის ხიდი",
      "lat": 41.70776,
      "lon": 44.79268,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q12862964",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "relation/14069191",
@@ -101,7 +258,12 @@
      "lat": 41.69603,
      "lon": 44.79895,
      "address": "შოთა რუსთაველის გამზირი 6",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q16374230",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/1105505029",
@@ -109,7 +271,11 @@
      "lat": 41.70257,
      "lon": 44.7905,
      "address": "შოთა რუსთაველის გამზირი 54",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q42628721",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/462898536",
@@ -117,21 +283,32 @@
      "lat": 41.71545,
      "lon": 44.79351,
      "address": "დავით აღმაშენებლის გამზირი 135",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12861783",
+     "kinds": [
+      "business",
+      "cinema"
+     ]
     },
     {
      "id": "way/337269648",
      "name": "მთაწმინდის მამადავითის სახელობის ეკლესია",
      "lat": 41.69583,
      "lon": 44.78887,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q12866896",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/1066637619",
      "name": "შოთა რუსთაველი",
      "lat": 41.70389,
      "lon": 44.78993,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q21283731"
     },
     {
      "id": "way/1185163208",
@@ -139,14 +316,19 @@
      "lat": 41.7036,
      "lon": 44.79136,
      "address": "შოთა რუსთაველის გამზირი 37",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q42650552",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/34747066",
      "name": "მზიურის პარკი",
      "lat": 41.71168,
      "lon": 44.77162,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16372431"
     },
     {
      "id": "way/1278771525",
@@ -154,7 +336,11 @@
      "lat": 41.70989,
      "lon": 44.78533,
      "address": "მერაბ კოსტავას ქუჩა 47",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12868712",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "way/196887176",
@@ -173,7 +359,11 @@
      "id": "way/65254634",
      "name": "არშაკუნის სასახლე",
      "lat": 41.70142,
-     "lon": 44.79277
+     "lon": 44.79277,
+     "wikidataId": "Q42630542",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/285012750",
@@ -219,19 +409,52 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q2028327",
+     "name": "Gürcistan Sanat Müzesi",
+     "localName": "Art Museum of Georgia",
+     "lat": 41.69702,
+     "lon": 44.80072,
+     "wikipediaCount": 22,
+     "wikidataId": "Q2028327",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "wikidata/Q2920711",
+     "name": "Gürcistan Millî El Yazmaları Merkezi",
+     "localName": "Georgian National Centre of Manuscripts",
+     "lat": 41.71761,
+     "lon": 44.78333,
+     "wikipediaCount": 17,
+     "wikidataId": "Q2920711",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
      "id": "way/56677915",
      "name": "ცისფერი გალერეა",
      "lat": 41.69831,
      "lon": 44.79881,
      "address": "შოთა რუსთაველის გამზირი 11",
-     "wikipediaCount": 13
+     "wikipediaCount": 13,
+     "wikidataId": "Q42650192",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/1561059942",
      "name": "გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი",
      "lat": 41.69939,
      "lon": 44.79918,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q5563436",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/57038408",
@@ -239,7 +462,11 @@
      "lat": 41.71587,
      "lon": 44.79429,
      "address": "ია კარგარეთელის ქუჩა 6",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q5548057",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6162064485",
@@ -248,7 +475,11 @@
      "lon": 44.79955,
      "website": "http://www.finearts.ge/",
      "openingHours": "Tu-Su 10:00-19:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q60550826",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/135869289",
@@ -258,14 +489,22 @@
      "address": "გიორგი ცაბაძის ქუჩა 6",
      "website": "http://www.silkmuseum.ge/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q20570861",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11051825158",
      "name": "ჯალილ მამედყულიზადეს სახლ-მუზეუმი",
      "lat": 41.6968,
      "lon": 44.79438,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q108454766",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11008994146",
@@ -273,7 +512,11 @@
      "lat": 41.70553,
      "lon": 44.78579,
      "website": "https://tbilisimuseumsunion.ge/en/museums/zakaria-faliashvilis-sakhl-muzeumi/",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q138296418",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/142657226",
@@ -282,7 +525,11 @@
      "lon": 44.79516,
      "address": "შოთა რუსთაველის გამზირი 27",
      "openingHours": "Mo,We-Su 11:00-18:00; Tu off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q117123340",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9890728875",
@@ -291,7 +538,11 @@
      "lon": 44.78213,
      "address": "როდენის ქუჩა 8",
      "openingHours": "Tu-Su 11:00-18:00; Mo off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16370308",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1551655810",
@@ -299,14 +550,22 @@
      "lat": 41.71867,
      "lon": 44.80033,
      "openingHours": "Mo off; Tu-Su 10:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q120706199",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13562481469",
      "name": "მერაბ კოსტავას სახლ-მუზეუმი",
      "lat": 41.70403,
      "lon": 44.7891,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q108504324",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5430976851",
@@ -354,7 +613,11 @@
      "name": "ილია ჭავჭავაძის ლიტერატურულ-მემორიალური მუზეუმი",
      "lat": 41.70401,
      "lon": 44.80609,
-     "openingHours": "Mo-Fr 11:00-17:00"
+     "openingHours": "Mo-Fr 11:00-17:00",
+     "wikidataId": "Q129172230",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/13725084187",
@@ -430,7 +693,11 @@
      "id": "node/2891332680",
      "name": "ელენე ახვლედიანის სახლ-მუსეუმი",
      "lat": 41.70579,
-     "lon": 44.7906
+     "lon": 44.7906,
+     "wikidataId": "Q131151969",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10291487511",
@@ -438,6 +705,55 @@
      "lat": 41.70517,
      "lon": 44.78247,
      "address": "ივანე თარხნიშვილის ქუჩა 25"
+    },
+    {
+     "id": "node/11584155943",
+     "name": "მედიცინის მუზეუმი",
+     "lat": 41.70641,
+     "lon": 44.79719
+    },
+    {
+     "id": "node/11260341975",
+     "name": "მოსე თოიძის სახლ-მუზეუმი",
+     "lat": 41.69994,
+     "lon": 44.79576
+    },
+    {
+     "id": "node/11405360673",
+     "name": "ნოვო",
+     "lat": 41.70643,
+     "lon": 44.7815
+    },
+    {
+     "id": "node/14155455282",
+     "name": "საოჯახო სამხატვრო გალერეა",
+     "lat": 41.69932,
+     "lon": 44.80342
+    },
+    {
+     "id": "node/12279214300",
+     "name": "სოლიკო ვირსალაძის მემორიალური ბინა",
+     "lat": 41.70081,
+     "lon": 44.8004
+    },
+    {
+     "id": "node/13265043301",
+     "name": "სტუდიოარტ გალერეა",
+     "lat": 41.70289,
+     "lon": 44.78306,
+     "address": "улица Якова Гогебашвили 30"
+    },
+    {
+     "id": "node/11584155960",
+     "name": "ფერტა",
+     "lat": 41.70688,
+     "lon": 44.79668
+    },
+    {
+     "id": "node/10291487527",
+     "name": "ქროსთი",
+     "lat": 41.70866,
+     "lon": 44.78067
     }
    ]
   },
@@ -625,16 +941,6 @@
      "detailed": true
     },
     {
-     "id": "node/9549814382",
-     "name": "ნინიას ბაღი",
-     "lat": 41.71153,
-     "lon": 44.79328,
-     "website": "https://javshani.com/restaurant/ninias-garden/reserve/tables",
-     "openingHours": "Mo-Su 13:00-02:00",
-     "cuisine": "georgian",
-     "detailed": true
-    },
-    {
      "id": "node/13244313065",
      "name": "სანჯა ჭულა",
      "lat": 41.71683,
@@ -754,6 +1060,15 @@
      "lon": 44.78992,
      "openingHours": "Mo-Th,Su 18:00-24:00; Fr-Sa 18:00-01:00",
      "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/6653160546",
+     "name": "Lolita",
+     "lat": 41.70576,
+     "lon": 44.78703,
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "italian",
      "detailed": true
     }
    ]
@@ -1365,7 +1680,8 @@
      "name": "Success Bar",
      "lat": 41.70612,
      "lon": 44.78869,
-     "openingHours": "PH,Tu-Su 22:00-04:00+"
+     "openingHours": "PH,Tu-Su 22:00-04:00+",
+     "wikidataId": "Q122746076"
     },
     {
      "id": "node/10056346257",
@@ -1380,7 +1696,8 @@
      "lat": 41.72277,
      "lon": 44.79082,
      "address": "აკაკი წერეთლის გამზირი",
-     "website": "https://bassiani.com//"
+     "website": "https://bassiani.com//",
+     "wikidataId": "Q30591492"
     },
     {
      "id": "node/11302789876",

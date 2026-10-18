@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "CAI",
- "fetchedAt": "2026-10-17T00:05:22.021Z",
+ "fetchedAt": "2026-10-18T16:59:36.364Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,11 +43,67 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q85",
+     "name": "Kahire",
+     "localName": "Cairo",
+     "lat": 30.04444,
+     "lon": 31.23583,
+     "wikipediaCount": 230,
+     "wikidataId": "Q85",
+     "kinds": [
+      "adminArea",
+      "ruins"
+     ]
+    },
+    {
+     "id": "wikidata/Q12061",
+     "name": "Tahrir Meydanı",
+     "localName": "Tahrir Square",
+     "lat": 30.04444,
+     "lon": 31.23583,
+     "wikipediaCount": 50,
+     "wikidataId": "Q12061",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q915413",
+     "name": "Tolunoğulları Camii",
+     "localName": "Mosque of Ibn Tulun",
+     "lat": 30.02882,
+     "lon": 31.24952,
+     "wikipediaCount": 45,
+     "wikidataId": "Q915413",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
      "id": "way/24749059",
      "name": "الجامع الأزهر",
      "lat": 30.04573,
      "lon": 31.26268,
-     "wikipediaCount": 40
+     "wikipediaCount": 40,
+     "wikidataId": "Q312342",
+     "kinds": [
+      "business",
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q683511",
+     "name": "Amr b. As Camii",
+     "localName": "Mosque of Amr ibn al-As",
+     "lat": 30.01014,
+     "lon": 31.23316,
+     "wikipediaCount": 35,
+     "wikidataId": "Q683511",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/24908286",
@@ -55,7 +111,36 @@
      "localName": "قلعة صلاح الدين",
      "lat": 30.02933,
      "lon": 31.26212,
-     "wikipediaCount": 35
+     "wikipediaCount": 35,
+     "wikidataId": "Q1988240",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q652046",
+     "name": "Mehmet Ali Paşa Camii",
+     "localName": "Muhammad Ali Mosque",
+     "lat": 30.02861,
+     "lon": 31.25972,
+     "wikipediaCount": 34,
+     "wikidataId": "Q652046",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1430119",
+     "name": "Sultan Hasan Medresesi",
+     "localName": "Mosque-Madrassa of Sultan Hassan",
+     "lat": 30.0319,
+     "lon": 31.2567,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1430119",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/767933342",
@@ -63,42 +148,399 @@
      "lat": 30.04603,
      "lon": 31.22431,
      "address": "البرج",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q614684",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q775838",
+     "name": "Hakim Camii",
+     "localName": "Al-Hakim Mosque",
+     "lat": 30.05444,
+     "lon": 31.26389,
+     "wikipediaCount": 25,
+     "wikidataId": "Q775838",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2279688",
+     "name": "İmam Hüseyin Camii",
+     "localName": "Al-Hussein Mosque",
+     "lat": 30.0478,
+     "lon": 31.2631,
+     "wikipediaCount": 24,
+     "wikidataId": "Q2279688",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/24942979",
      "name": "قصر عابدين",
      "lat": 30.04276,
      "lon": 31.24746,
-     "wikipediaCount": 23
+     "wikipediaCount": 23,
+     "wikidataId": "Q307747",
+     "kinds": [
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q622784",
+     "name": "Aksungur Camii",
+     "localName": "Aqsunqur Mosque",
+     "lat": 30.03611,
+     "lon": 31.26028,
+     "wikipediaCount": 21,
+     "wikidataId": "Q622784",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q597617",
+     "name": "Cairo Opera House",
+     "lat": 30.04245,
+     "lon": 31.22353,
+     "wikipediaCount": 21,
+     "wikidataId": "Q597617",
+     "kinds": [
+      "performingArts"
+     ]
+    },
+    {
+     "id": "wikidata/Q311441",
+     "name": "El Rıfai Camii",
+     "localName": "Al-Rifa'i Mosque",
+     "lat": 30.03278,
+     "lon": 31.25667,
+     "wikipediaCount": 20,
+     "wikidataId": "Q311441",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q996111",
+     "name": "6th October Bridge",
+     "lat": 30.04915,
+     "lon": 31.22857,
+     "wikipediaCount": 19,
+     "wikidataId": "Q996111",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1707580",
+     "name": "Sultan el-Nasır Muhammed Camii",
+     "localName": "Al-Nasir Muhammad Mosque",
+     "lat": 30.0292,
+     "lon": 31.2609,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1707580",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q633754",
+     "name": "Ramses Tren İstasyonu",
+     "localName": "Ramses Station",
+     "lat": 30.06361,
+     "lon": 31.24722,
+     "wikipediaCount": 16,
+     "wikidataId": "Q633754",
+     "kinds": [
+      "station"
+     ]
     },
     {
      "id": "way/775853319",
      "name": "باب زويلة",
      "lat": 30.04279,
      "lon": 31.25778,
-     "wikipediaCount": 16
+     "wikipediaCount": 16,
+     "wikidataId": "Q2041270",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q287283",
+     "name": "Akmer Camii",
+     "localName": "Al-Aqmar Mosque",
+     "lat": 30.0517,
+     "lon": 31.2619,
+     "wikipediaCount": 14,
+     "wikidataId": "Q287283",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q286446",
+     "name": "Al-Azhar Park",
+     "lat": 30.0405,
+     "lon": 31.2646,
+     "wikipediaCount": 14,
+     "wikidataId": "Q286446"
+    },
+    {
+     "id": "wikidata/Q1237010",
+     "name": "Kalavun Camii",
+     "localName": "Al-Mansour Qalawun Complex (Madrassa, Tomb and Hospital)",
+     "lat": 30.0495,
+     "lon": 31.261,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1237010"
+    },
+    {
+     "id": "wikidata/Q838360",
+     "name": "Müeyyed Şeyh Camii",
+     "localName": "Sultan Al-Muayyad Mosque",
+     "lat": 30.0431,
+     "lon": 31.2575,
+     "wikipediaCount": 14,
+     "wikidataId": "Q838360",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1277350",
+     "name": "Nasır Muhammed Medresesi",
+     "localName": "Madrassa of Al-Nasir Muhammad",
+     "lat": 30.04975,
+     "lon": 31.26106,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1277350",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/4764007325",
      "name": "كوبري قصر النيل",
      "lat": 30.04369,
      "lon": 31.22983,
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q1973889",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q12241714",
+     "name": "Berkuk Camii",
+     "localName": "Mosque-Madrassa of Sultan Barquq",
+     "lat": 30.05017,
+     "lon": 31.26125,
+     "wikipediaCount": 13,
+     "wikidataId": "Q12241714",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1507197",
+     "name": "Cape to Cairo Road",
+     "lat": 30.03333,
+     "lon": 31.23333,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1507197",
+     "kinds": [
+      "road"
+     ]
+    },
+    {
+     "id": "wikidata/Q4119402",
+     "name": "Muizz Street",
+     "lat": 30.0467,
+     "lon": 31.26,
+     "wikipediaCount": 13,
+     "wikidataId": "Q4119402",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q12242770",
+     "name": "Al-Fath Mosque",
+     "lat": 30.05985,
+     "lon": 31.24606,
+     "wikipediaCount": 12,
+     "wikidataId": "Q12242770",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q4164858",
+     "name": "Bab al-Futuh",
+     "lat": 30.0555,
+     "lon": 31.2634,
+     "wikipediaCount": 12,
+     "wikidataId": "Q4164858",
+     "kinds": [
+      "adminArea",
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q4119350",
+     "name": "Bab al-Nasr",
+     "lat": 30.0542,
+     "lon": 31.265,
+     "wikipediaCount": 12,
+     "wikidataId": "Q4119350",
+     "kinds": [
+      "adminArea"
+     ]
+    },
+    {
+     "id": "wikidata/Q2509245",
+     "name": "Giza Zoo",
+     "lat": 30.02453,
+     "lon": 31.2139,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2509245",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q11936598",
+     "name": "Hadım Süleyman Paşa Camii",
+     "localName": "Sulayman Pasha Mosque",
+     "lat": 30.03106,
+     "lon": 31.26438,
+     "wikipediaCount": 12,
+     "wikidataId": "Q11936598",
+     "kinds": [
+      "business",
+      "religious",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q2699278",
+     "name": "Mokhtar El-Tetsh Stadium",
+     "lat": 30.04528,
+     "lon": 31.22333,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2699278",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q12241647",
+     "name": "Sultan Barsbay Camii",
+     "localName": "Al-Ashraf Mosque",
+     "lat": 30.04746,
+     "lon": 31.26006,
+     "wikipediaCount": 12,
+     "wikidataId": "Q12241647",
+     "kinds": [
+      "business",
+      "religious",
+      "school"
+     ]
+    },
+    {
+     "id": "wikidata/Q12242839",
+     "name": "Kayıtbay Külliyesi",
+     "localName": "Sultan Qaytbay Complex",
+     "lat": 30.04402,
+     "lon": 31.27499,
+     "wikipediaCount": 11,
+     "wikidataId": "Q12242839",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1288138",
+     "name": "Mogamma Binası",
+     "localName": "The Mogamma",
+     "lat": 30.0431,
+     "lon": 31.235,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1288138",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q23975608",
+     "name": "Mosque of Aslam al-Silahdar",
+     "lat": 30.04056,
+     "lon": 31.26205,
+     "wikipediaCount": 11,
+     "wikidataId": "Q23975608",
+     "kinds": [
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12204253",
+     "name": "Seyyide Nefise Camii",
+     "localName": "Al-Sayeda Nafeesah Mosque",
+     "lat": 30.02237,
+     "lon": 31.25241,
+     "wikipediaCount": 11,
+     "wikidataId": "Q12204253",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q12243214",
+     "name": "Seyyide Zeynep Camii",
+     "localName": "Al-Sayeda Zainab Mosque",
+     "lat": 30.03172,
+     "lon": 31.24208,
+     "wikipediaCount": 11,
+     "wikidataId": "Q12243214",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "relation/16886994",
      "name": "قصر الجوهرة",
      "lat": 30.02761,
      "lon": 31.26025,
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q4116059",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/310068764",
      "name": "مسجد الجيوشى",
      "lat": 30.02211,
      "lon": 31.26837,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q4022325",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/35090927",
@@ -106,14 +548,19 @@
      "lat": 30.06586,
      "lon": 31.26624,
      "address": "ميدان السكاكيني",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q10981930",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/379083886",
      "name": "قبة شجر الدر",
      "lat": 30.02592,
      "lon": 31.25215,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q23975588"
     },
     {
      "id": "relation/16794597",
@@ -163,80 +610,6 @@
      "name": "Sharia al Muizz Li Din Allah",
      "lat": 30.04673,
      "lon": 31.26007
-    },
-    {
-     "id": "way/751954220",
-     "name": "Side Gate",
-     "lat": 30.02877,
-     "lon": 31.22995
-    },
-    {
-     "id": "way/751954232",
-     "name": "Throne Hall",
-     "lat": 30.02669,
-     "lon": 31.23004
-    },
-    {
-     "id": "node/7170099233",
-     "name": "Zamalek tree",
-     "lat": 30.04665,
-     "lon": 31.22505
-    },
-    {
-     "id": "node/4598707493",
-     "name": "القبيصي",
-     "lat": 30.04655,
-     "lon": 31.26036,
-     "address": "١١٨شارع الازهر"
-    },
-    {
-     "id": "node/5112028121",
-     "name": "تمثال قصر النيل",
-     "lat": 30.04397,
-     "lon": 31.23162
-    },
-    {
-     "id": "way/34204980",
-     "name": "خان الخليلي",
-     "lat": 30.04777,
-     "lon": 31.26099
-    },
-    {
-     "id": "way/767656893",
-     "name": "شارع شقة الزاهرة",
-     "lat": 30.052,
-     "lon": 31.24105,
-     "address": "شارع طلعت حرب 42"
-    },
-    {
-     "id": "node/2247052536",
-     "name": "عروض الذكر الصوفى",
-     "lat": 30.04579,
-     "lon": 31.26093
-    },
-    {
-     "id": "way/380799318",
-     "name": "قبة أحمد باشا حسنين",
-     "lat": 30.04487,
-     "lon": 31.27113
-    },
-    {
-     "id": "way/379083884",
-     "name": "قبة أم الصالح",
-     "lat": 30.02436,
-     "lon": 31.25218
-    },
-    {
-     "id": "way/379077235",
-     "name": "قبة وضريح السلطان الأشرف خليل ابن قلاوون",
-     "lat": 30.02397,
-     "lon": 31.25211
-    },
-    {
-     "id": "way/1234924074",
-     "name": "قصر الأبلق",
-     "lat": 30.02934,
-     "lon": 31.25911
     }
    ]
   },
@@ -252,21 +625,33 @@
      "lon": 31.2336,
      "website": "https://egyptianmuseumcairo.eg/emc/ar/",
      "openingHours": "Mo-Sa 09:00-21:00; Su 09:00-16:00",
-     "wikipediaCount": 61
+     "wikipediaCount": 61,
+     "wikidataId": "Q201219",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/46579853",
      "name": "متحف الفنون الأسلامية",
      "lat": 30.04465,
      "lon": 31.25272,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q3330629",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/328965969",
      "name": "متحف جاير أندرسون",
      "lat": 30.02838,
      "lon": 31.25073,
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q2190649",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/201188348",
@@ -274,42 +659,67 @@
      "lat": 30.03556,
      "lon": 31.21958,
      "address": "شارع النيل 80",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q4115728",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/28829955",
      "name": "المتحف الزراعي",
      "lat": 30.04669,
      "lon": 31.20917,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q2420309",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1316037821",
      "name": "قصر الأمير بشتاك",
      "lat": 30.05044,
      "lon": 31.26166,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q4896257",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/30065918",
      "name": "متحف أحمد شوقي",
      "lat": 30.02145,
      "lon": 31.2176,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q372088",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1230328824",
      "name": "متحف المركبات الملكية",
      "lat": 30.02942,
      "lon": 31.26351,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5046116",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/30065591",
      "name": "متحف محمود مختار",
      "lat": 30.04064,
      "lon": 31.22294,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q6933506",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/197961520",
@@ -317,7 +727,11 @@
      "lat": 30.05649,
      "lon": 31.2231,
      "website": "http://www.icm.gov.eg/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6940902",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2668434195",
@@ -428,6 +842,24 @@
      "name": "متحف المركبات الملكية",
      "lat": 30.05546,
      "lon": 31.23107
+    },
+    {
+     "id": "node/13442278363",
+     "name": "متحف قصر عابدين",
+     "lat": 30.04341,
+     "lon": 31.24783
+    },
+    {
+     "id": "way/751954217",
+     "name": "متحف قصر محمد علي",
+     "lat": 30.02652,
+     "lon": 31.22948
+    },
+    {
+     "id": "way/29974285",
+     "name": "متحف مصطفى كامل",
+     "lat": 30.02969,
+     "lon": 31.25724
     }
    ]
   },
@@ -790,6 +1222,7 @@
      "website": "https://www.groppi-eg.com/",
      "openingHours": "Mo-Su 07:00-01:00",
      "cuisine": "dessert, coffee shop",
+     "wikidataId": "Q6757577",
      "detailed": true
     },
     {

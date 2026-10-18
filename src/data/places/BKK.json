@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "BKK",
- "fetchedAt": "2026-10-17T00:09:20.820Z",
+ "fetchedAt": "2026-10-18T17:03:54.215Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -50,7 +50,14 @@
      "lon": 100.49179,
      "website": "https://www.royalgrandpalace.th/en/home",
      "openingHours": "Mo-Su 08:30-15:30",
-     "wikipediaCount": 47
+     "wikipediaCount": 47,
+     "wikidataId": "Q873769",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace",
+      "ruins"
+     ]
     },
     {
      "id": "way/230010054",
@@ -61,7 +68,11 @@
      "address": "Na Phra Lan Road",
      "website": "https://www.palaces.thai.net/",
      "openingHours": "08:30-15:30; Mo-Su 08:30-16:30",
-     "wikipediaCount": 44
+     "wikipediaCount": 44,
+     "wikidataId": "Q1045876",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "way/23481741",
@@ -71,17 +82,36 @@
      "address": "Thanon Wang Doem 158",
      "website": "https://www.bangkok.com/attraction-temple/wat-arun.htm",
      "openingHours": "Mo-Su 08:30-18:00",
-     "wikipediaCount": 42
+     "wikipediaCount": 42,
+     "wikidataId": "Q724970",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q804055",
+     "name": "Baiyoke Kulesi II",
+     "localName": "Baiyoke Tower II",
+     "lat": 13.7541,
+     "lon": 100.54096,
+     "wikipediaCount": 30,
+     "wikidataId": "Q804055"
     },
     {
      "id": "relation/11169995",
      "name": "Pho Tapınağı",
      "localName": "วัดพระเชตุพนวิมลมังคลารามราชวรมหาวิหาร",
-     "lat": 13.74591,
-     "lon": 100.49276,
+     "lat": 13.74579,
+     "lon": 100.49278,
      "website": "https://www.watpho.com/",
      "openingHours": "08:00-18:30",
-     "wikipediaCount": 27
+     "wikipediaCount": 27,
+     "wikidataId": "Q1059910",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/31987718",
@@ -90,7 +120,39 @@
      "lon": 100.51371,
      "address": "ถนนพระรามที่ 5 69",
      "website": "https://www.facebook.com/watbencham/",
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q2165719",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1640197",
+     "name": "King Power Mahanakhon",
+     "lat": 13.72361,
+     "lon": 100.52833,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1640197"
+    },
+    {
+     "id": "wikidata/Q977437",
+     "name": "Lumphini Park",
+     "lat": 13.73111,
+     "lon": 100.54167,
+     "wikipediaCount": 21,
+     "wikidataId": "Q977437",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q972334",
+     "name": "Siam Paragon",
+     "lat": 13.74639,
+     "lon": 100.535,
+     "wikipediaCount": 20,
+     "wikidataId": "Q972334"
     },
     {
      "id": "way/178329973",
@@ -98,21 +160,44 @@
      "localName": "อนุสาวรีย์ประชาธิปไตย",
      "lat": 13.75669,
      "lon": 100.50184,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1186076",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/1872413363",
      "name": "สะพานพระราม 8",
      "lat": 13.76965,
      "lon": 100.49586,
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q1092231",
+     "kinds": [
+      "bridge"
+     ]
+    },
+    {
+     "id": "wikidata/Q1235886",
+     "name": "Erawan Shrine",
+     "lat": 13.74436,
+     "lon": 100.54044,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1235886",
+     "kinds": [
+      "religious"
+     ]
     },
     {
      "id": "relation/12822616",
      "name": "พระราชวังดุสิต",
      "lat": 13.77264,
      "lon": 100.51188,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q2089016",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/32011053",
@@ -121,7 +206,12 @@
      "lat": 13.75012,
      "lon": 100.50096,
      "openingHours": "Mo-Su 08:30-21:00",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q2166761",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/23610119",
@@ -129,35 +219,190 @@
      "localName": "ถนนข้าวสาร",
      "lat": 13.7589,
      "lon": 100.49732,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1203550",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/31987914",
      "name": "พระที่นั่งวิมานเมฆ",
      "lat": 13.77422,
      "lon": 100.51241,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q1479428",
+     "kinds": [
+      "heritage",
+      "museum",
+      "palace"
+     ]
+    },
+    {
+     "id": "wikidata/Q767544",
+     "name": "Sanam Luang",
+     "lat": 13.755,
+     "lon": 100.49306,
+     "wikipediaCount": 16,
+     "wikidataId": "Q767544",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2063818",
+     "name": "Wat Saket",
+     "lat": 13.75383,
+     "lon": 100.50679,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2063818",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q2495658",
+     "name": "Assumption Cathedral",
+     "lat": 13.7231,
+     "lon": 100.5152,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2495658",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1972305",
+     "name": "Sukhumvit Road",
+     "lat": 13.74278,
+     "lon": 100.55039,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1972305",
+     "kinds": [
+      "road",
+      "street"
+     ]
+    },
+    {
+     "id": "wikidata/Q2057014",
+     "name": "Thanon Patpong",
+     "lat": 13.72833,
+     "lon": 100.53333,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2057014",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/462532630",
      "name": "ถนนเยาวราช",
      "lat": 13.73869,
      "lon": 100.51225,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q1518029",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/23630366",
      "name": "พระตำหนักจิตรลดารโหฐาน",
      "lat": 13.76833,
      "lon": 100.52061,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q61053357",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/158185227",
      "name": "อนุสาวรีย์ชัยสมรภูมิ",
      "lat": 13.76493,
      "lon": 100.53829,
-     "wikipediaCount": 15
+     "wikipediaCount": 15,
+     "wikidataId": "Q2063737",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q1267646",
+     "name": "Dusit Zoo",
+     "lat": 13.7725,
+     "lon": 100.51639,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1267646",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q1477699",
+     "name": "Wat Bowonniwet Vihara",
+     "lat": 13.76035,
+     "lon": 100.49985,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1477699",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q4116948",
+     "name": "Government House of Thailand",
+     "lat": 13.76298,
+     "lon": 100.51201,
+     "wikipediaCount": 13,
+     "wikidataId": "Q4116948",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q1926372",
+     "name": "MBK Center",
+     "lat": 13.74556,
+     "lon": 100.53,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1926372"
+    },
+    {
+     "id": "wikidata/Q2297614",
+     "name": "State Tower",
+     "lat": 13.72111,
+     "lon": 100.5175,
+     "wikipediaCount": 13,
+     "wikidataId": "Q2297614"
+    },
+    {
+     "id": "wikidata/Q122834533",
+     "name": "Suphachalasai Stadium",
+     "lat": 13.74556,
+     "lon": 100.52556,
+     "wikipediaCount": 13,
+     "wikidataId": "Q122834533",
+     "kinds": [
+      "heritage",
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q3270302",
+     "name": "CentralWorld",
+     "lat": 13.74694,
+     "lon": 100.53972,
+     "wikipediaCount": 12,
+     "wikidataId": "Q3270302"
     },
     {
      "id": "way/178353988",
@@ -165,7 +410,12 @@
      "localName": "เสาชิงช้า",
      "lat": 13.75181,
      "lon": 100.50128,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1279344",
+     "kinds": [
+      "attraction",
+      "heritage"
+     ]
     },
     {
      "id": "way/178329987",
@@ -173,7 +423,63 @@
      "localName": "วัดมหาธาตุยุวราชรังสฤษฎิ์ราชวรมหาวิหาร",
      "lat": 13.75477,
      "lon": 100.4908,
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1477677",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q219047",
+     "name": "National Stadium",
+     "lat": 13.74556,
+     "lon": 100.52556,
+     "wikipediaCount": 12,
+     "wikidataId": "Q219047"
+    },
+    {
+     "id": "wikidata/Q2631915",
+     "name": "Rajadamnern Stadium",
+     "lat": 13.76111,
+     "lon": 100.50889,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2631915",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
+     "id": "wikidata/Q4385323",
+     "name": "Siriraj Hospital",
+     "lat": 13.75793,
+     "lon": 100.48585,
+     "wikipediaCount": 12,
+     "wikidataId": "Q4385323"
+    },
+    {
+     "id": "wikidata/Q1545430",
+     "name": "Wat Intharawihan",
+     "lat": 13.76687,
+     "lon": 100.50286,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1545430",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1111480",
+     "name": "Wat Yan Nawa",
+     "lat": 13.71733,
+     "lon": 100.51356,
+     "wikipediaCount": 12,
+     "wikidataId": "Q1111480",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/138947464",
@@ -181,14 +487,58 @@
      "lat": 13.74906,
      "lon": 100.49718,
      "openingHours": "Mo-Su 06:00-18:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1513232",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q1519969",
+     "name": "Memorial Bridge",
+     "lat": 13.73911,
+     "lon": 100.49819,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1519969",
+     "kinds": [
+      "bridge",
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q783806",
+     "name": "Robot Building",
+     "lat": 13.72045,
+     "lon": 100.52731,
+     "wikipediaCount": 11,
+     "wikidataId": "Q783806",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q6761807",
+     "name": "Sri Maha Mariamman Temple, Bangkok",
+     "lat": 13.7242,
+     "lon": 100.5229,
+     "wikipediaCount": 11,
+     "wikidataId": "Q6761807",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/31987148",
      "name": "พระที่นั่งอนันตสมาคม",
      "lat": 13.77171,
      "lon": 100.5131,
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q485954",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/103022363",
@@ -198,7 +548,12 @@
      "lon": 100.50425,
      "address": "ถนนมหาไชย 2",
      "openingHours": "Mo-Su 08:00-17:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q1554856",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/1410385850",
@@ -206,36 +561,12 @@
      "lat": 13.75683,
      "lon": 100.5371,
      "website": "http://www.suanpakkad.com/",
-     "wikipediaCount": 9
-    },
-    {
-     "id": "way/321722223",
-     "name": "Sathorn Unique Tower",
-     "lat": 13.71732,
-     "lon": 100.51522,
-     "address": "สาทร",
-     "wikipediaCount": 9
-    },
-    {
-     "id": "way/205707903",
-     "name": "พระที่นั่งอภิเศกดุสิต",
-     "lat": 13.77338,
-     "lon": 100.51323,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/863463383",
-     "name": "พระราชวังพญาไท",
-     "lat": 13.76882,
-     "lon": 100.533,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/342337807",
-     "name": "วัดราชประดิษฐสถิตมหาสีมารามราชวรวิหาร",
-     "lat": 13.74954,
-     "lon": 100.49562,
-     "wikipediaCount": 5
+     "wikipediaCount": 9,
+     "wikidataId": "Q493505",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     }
    ]
   },
@@ -250,7 +581,11 @@
      "lat": 13.75815,
      "lon": 100.49153,
      "openingHours": "We-Su 09:00-16:00; PH off",
-     "wikipediaCount": 24
+     "wikipediaCount": 24,
+     "wikidataId": "Q1255815",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/48966995",
@@ -260,7 +595,12 @@
      "address": "ถนนพระราม 1 939",
      "website": "https://www.bacc.or.th/",
      "openingHours": "Tu-Su 10:00-20:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q1130188",
+     "kinds": [
+      "business",
+      "museum"
+     ]
     },
     {
      "id": "relation/20710624",
@@ -268,7 +608,11 @@
      "lat": 13.75918,
      "lon": 100.49407,
      "address": "พระนคร",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q1968373",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/341577338",
@@ -278,7 +622,11 @@
      "address": "Soi Kasemsan 2, Rama 1 Road 6",
      "website": "https://www.jimthompsonhouse.com/",
      "openingHours": "Mo-Su 09:00-18:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q2916351",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/230891857",
@@ -287,7 +635,12 @@
      "lon": 100.53718,
      "website": "http://www.suanpakkad.com/",
      "openingHours": "Mo-Su 09:00-16:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q493505",
+     "kinds": [
+      "museum",
+      "palace"
+     ]
     },
     {
      "id": "way/349609932",
@@ -297,7 +650,11 @@
      "lon": 100.49385,
      "website": "https://www.museumsiam.org/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q6584164",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3542061032",
@@ -306,7 +663,11 @@
      "lon": 100.49954,
      "website": "https://www.botlc.or.th/museum",
      "openingHours": "Sat-Sun 09:30-16:30",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4856189",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2447283108",
@@ -314,14 +675,11 @@
      "localName": "พิพิธภัณฑ์การแพทย์ศิริราช",
      "lat": 13.75871,
      "lon": 100.4855,
-     "wikipediaCount": 5
-    },
-    {
-     "id": "way/863463383",
-     "name": "พระราชวังพญาไท",
-     "lat": 13.76882,
-     "lon": 100.533,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7530338",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/205637198",
@@ -329,7 +687,11 @@
      "lat": 13.75655,
      "lon": 100.50513,
      "address": "พระนคร",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q4921882",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/82542417",
@@ -337,16 +699,23 @@
      "lat": 13.75203,
      "lon": 100.49072,
      "address": "พระนคร",
-     "website": "https://www.qsmtthailand.org/",
      "openingHours": "Mo-Su 09:00-16:30",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q110517188",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/202235947",
      "name": "พิพิธภัณฑสถานแห่งชาติ เรือพระราชพิธี",
      "lat": 13.76197,
      "lon": 100.48457,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q4924562",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/210306786",
@@ -354,28 +723,44 @@
      "lat": 13.72811,
      "lon": 100.51811,
      "openingHours": "Tu-Su,PH 09:00-16:00; Mo closed",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q4855203",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3096836185",
      "name": "พิพิธภัณฑ์ท้องถิ่นกรุงเทพมหานคร เขตสัมพันธวงศ์",
      "lat": 13.73672,
      "lon": 100.5111,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q7410108",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2411920280",
      "name": "พิพิธภัณฑ์เทคโนโลยีทางภาพ",
      "lat": 13.73712,
      "lon": 100.52985,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6583138",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1467232352",
      "name": "พิพิธภัณฑ์บ้านกุฎีจีน",
      "lat": 13.73941,
      "lon": 100.49305,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q73545513",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/229966092",
@@ -383,36 +768,46 @@
      "lat": 13.75607,
      "lon": 100.50649,
      "address": "ป้อมปราบศัตรูพ่าย",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6411961",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/320273828",
      "name": "พิพิธภัณฑ์ศิริราชพิมุขสถาน",
      "lat": 13.75976,
      "lon": 100.48679,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q130198",
+     "kinds": [
+      "heritage",
+      "station"
+     ]
     },
     {
      "id": "node/373098282",
      "name": "พิพิธภัณฑสถานธรรมชาติวิทยา",
      "lat": 13.73748,
      "lon": 100.53008,
-     "wikipediaCount": 3
-    },
-    {
-     "id": "way/351091872",
-     "name": "หอศิลป์มหาวิทยาลัยศิลปากร",
-     "lat": 13.75292,
-     "lon": 100.48997,
-     "address": "พระนคร",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q13018177",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/241865727",
      "name": "บ้าน ม.ร.ว.คึกฤทธิ์ ปราโมช",
      "lat": 13.71984,
      "lon": 100.53369,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6579813",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/539017238",
@@ -420,7 +815,11 @@
      "lat": 13.74626,
      "lon": 100.54718,
      "address": "ปทุมวัน",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q129811661",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2962489061",
@@ -428,22 +827,34 @@
      "lat": 13.75304,
      "lon": 100.54976,
      "address": "Ratchathewi Road",
-     "wikipediaCount": 2
-    },
-    {
-     "id": "way/82078207",
-     "name": "ศาลาเครื่องราชอิสริยยศ เครื่องราชอิสริยาภรณ์ และเหรียญกษาปณ์",
-     "lat": 13.75101,
-     "lon": 100.49173,
-     "address": "พระนคร",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q7709126",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5764199061",
      "name": "100 tonson gallery",
      "lat": 13.73905,
      "lon": 100.54449,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q11185055",
+     "kinds": [
+      "business"
+     ]
+    },
+    {
+     "id": "way/1231343547",
+     "name": "บ้านอับดุลราฮิม",
+     "lat": 13.72782,
+     "lon": 100.5394,
+     "address": "ถนนพระรามที่ 4 960",
+     "wikipediaCount": 1,
+     "wikidataId": "Q13016480",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/200670984",
@@ -451,14 +862,18 @@
      "lat": 13.7396,
      "lon": 100.53237,
      "address": "ปทุมวัน",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q29343840",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10693793825",
      "name": "Art4C",
      "lat": 13.73366,
      "lon": 100.52721,
-     "website": "http://www.faa.chula.ac.th/art4c/",
+     "website": "http://www.faa.chula.ac.th/art4c/?fbclid=IwAR1VSVSTmeytGFZZxSS54rYTeNJ7FRBmIza5yZnqDN1HL0RLPePqSJtiI2g",
      "openingHours": "Mo-Sa 09:00-18:00"
     },
     {
@@ -486,6 +901,104 @@
      "address": "ถนนมหาไชย 357-359",
      "website": "https://www.joymangallery.com/",
      "openingHours": "Tu-Su 11:00-18:00"
+    },
+    {
+     "id": "way/562209094",
+     "name": "บ้านแสนแสบ",
+     "lat": 13.74901,
+     "lon": 100.52973,
+     "address": "ซอยเกษมสันต์ 1 20/2",
+     "website": "https://www.yelohouse.com/",
+     "openingHours": "We-Mo 11:00-20:00"
+    },
+    {
+     "id": "way/1147659014",
+     "name": "หอศิลป์บ้านจิมทอมป์สัน",
+     "lat": 13.74874,
+     "lon": 100.52841,
+     "address": "ปทุมวัน",
+     "website": "http://www.jimthompsonartcenter.org/",
+     "openingHours": "Mo-Su 10:00-18:00"
+    },
+    {
+     "id": "node/11063201970",
+     "name": "โอเวอร์ ดิอินฟลูเอนซ์",
+     "lat": 13.73717,
+     "lon": 100.51269,
+     "website": "https://overtheinfluence.com/",
+     "openingHours": "We-Su 11:00-20:00"
+    },
+    {
+     "id": "node/5342565921",
+     "name": "1PROJECTS",
+     "lat": 13.73026,
+     "lon": 100.51501,
+     "address": "ซอยเจริญกรุง 26 672/63",
+     "website": "https://www.1projects.org/"
+    },
+    {
+     "id": "way/341577340",
+     "name": "Jim Thompson House Museum",
+     "lat": 13.74933,
+     "lon": 100.52818,
+     "address": "ปทุมวัน",
+     "openingHours": "Mo-Su 09:00-17:00"
+    },
+    {
+     "id": "node/2397987931",
+     "name": "Kathmandu Photo Gallery",
+     "lat": 13.72393,
+     "lon": 100.52329,
+     "openingHours": "Tu-Su 11:00-18:00"
+    },
+    {
+     "id": "node/5887764787",
+     "name": "Speedy Grandma",
+     "lat": 13.73069,
+     "lon": 100.51502,
+     "address": "ถนนเจริญกรุง",
+     "openingHours": "We-Su 13:00-18:00"
+    },
+    {
+     "id": "node/11463141290",
+     "name": "Supples",
+     "lat": 13.73151,
+     "lon": 100.51482,
+     "address": "ซอยเจริญกรุง 24 11/1",
+     "website": "https://www.supples.co/"
+    },
+    {
+     "id": "way/1434802191",
+     "name": "นิทรรศน์รัตนโกสินทร์",
+     "lat": 13.75589,
+     "lon": 100.50383,
+     "website": "https://www.nitasrattanakosin.com/"
+    },
+    {
+     "id": "way/1294703709",
+     "name": "พิพิธบางลำพู",
+     "lat": 13.76376,
+     "lon": 100.49639,
+     "website": "http://banglamphumuseum.treasury.go.th/"
+    },
+    {
+     "id": "way/539268957",
+     "name": "พิพิธภัณฑ์พระอาจารย์มั่น ภูริทตฺโต วัดปทุมวนาราม",
+     "lat": 13.74626,
+     "lon": 100.53741,
+     "address": "ปทุมวัน",
+     "openingHours": "We-Su 08:00-17:00",
+     "wikidataId": "Q137947024",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/11301593402",
+     "name": "พิพิธภัณฑ์พืชมีชีวิต",
+     "lat": 13.73554,
+     "lon": 100.53052,
+     "website": "https://www.chula.ac.th/clipping/134394/"
     }
    ]
   },
@@ -529,6 +1042,12 @@
      "name": "สวนลอยฟ้าเจ้าพระยา",
      "lat": 13.7391,
      "lon": 100.49859
+    },
+    {
+     "id": "node/8081921495",
+     "name": "สะพานมัฆวานรังสรรค์",
+     "lat": 13.76366,
+     "lon": 100.50941
     }
    ]
   },
@@ -576,17 +1095,6 @@
      "website": "http://www.facebook.com/Emperor.Yakiniku.Buffet",
      "openingHours": "11:00-22:00",
      "cuisine": "japanese",
-     "detailed": true
-    },
-    {
-     "id": "node/2081842900",
-     "name": "Le Normandie",
-     "lat": 13.72359,
-     "lon": 100.51425,
-     "address": "Oriental Avenue 48",
-     "website": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/anne-sophie-pic-at-le-normandie",
-     "openingHours": "We-Su 08:00-15:30,18:30-23:30",
-     "cuisine": "french",
      "detailed": true
     },
     {
@@ -650,6 +1158,7 @@
      "website": "https://www.lebua.com/sirocco",
      "openingHours": "18:00-01:00",
      "cuisine": "mediterranean",
+     "wikidataId": "Q4923611",
      "detailed": true
     },
     {
@@ -836,6 +1345,15 @@
      "openingHours": "Mo-Su 10:30-21:30",
      "cuisine": "asian",
      "detailed": true
+    },
+    {
+     "id": "node/4155913409",
+     "name": "Nara Thai Cuisine",
+     "lat": 13.744,
+     "lon": 100.54665,
+     "website": "https://www.naracuisine.com/index.php",
+     "cuisine": "thai",
+     "detailed": true
     }
    ]
   },
@@ -934,7 +1452,7 @@
      "lat": 13.76052,
      "lon": 100.49658,
      "address": "ถนนจักรพงษ์ 124",
-     "website": "https://www.facebook.com/profile.php?id=100088703807863",
+     "website": "https://www.facebook.com/profile.php?id=100088703807863&mibextid=ZbWKwL",
      "openingHours": "Mo-Su 10:00-22:00",
      "cuisine": "coffee shop, bubble tea, juice",
      "detailed": true
@@ -947,16 +1465,6 @@
      "website": "https://www.renohotel.co.th/restaurant",
      "openingHours": "07:00-21:00",
      "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/7177878885",
-     "name": "Sarnies Sourdough",
-     "lat": 13.72119,
-     "lon": 100.51563,
-     "website": "https://linktr.ee/sarnies.sourdough",
-     "openingHours": "Mo-Su 08:00-22:00",
-     "cuisine": "pizza, pasta, salad, juice, sandwich, coffee shop, tea, dessert",
      "detailed": true
     },
     {
@@ -1021,10 +1529,21 @@
      "detailed": true
     },
     {
+     "id": "node/7192252385",
+     "name": "โกลด์เด้น เพลส สาขาท่าช้าง",
+     "lat": 13.75255,
+     "lon": 100.4893,
+     "address": "ถนนมหาราช 196-198",
+     "website": "https://goldenplace.co.th/",
+     "openingHours": "Mo-Su 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/5277054815",
      "name": "คาเฟ่ อเมซอน",
-     "lat": 13.77029,
-     "lon": 100.50452,
+     "lat": 13.77034,
+     "lon": 100.50448,
      "website": "http://www.cafe-amazon.com/",
      "openingHours": "Mo-Su 06:00-19:00",
      "cuisine": "coffee shop",
@@ -1157,17 +1676,6 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/14135618602",
-     "name": "Balcony Lounge and Humidor Cigar Bar",
-     "lat": 13.7449,
-     "lon": 100.54142,
-     "address": "ถนนเพลินจิต 973",
-     "website": "https://bangkok.intercontinental.com/dining/balcony-lounge",
-     "openingHours": "Mo-Su 08:00-00:00",
-     "cuisine": "cake, coffee shop, tea",
-     "detailed": true
-    },
-    {
      "id": "node/4346775770",
      "name": "Snooze Coffee House",
      "lat": 13.76576,
@@ -1206,25 +1714,6 @@
      "website": "https://www.wineloft.com/",
      "openingHours": "11:00-24:00",
      "cuisine": "steak, pasta, spagetti",
-     "detailed": true
-    },
-    {
-     "id": "node/14069656101",
-     "name": "AQUA Bar",
-     "lat": 13.74117,
-     "lon": 100.54043,
-     "address": "ถนนราชดำริ 155",
-     "website": "https://aquabangkok.com/",
-     "openingHours": "Mo-Su 12:00-00:30",
-     "detailed": true
-    },
-    {
-     "id": "node/14069607501",
-     "name": "Bar Sathorn",
-     "lat": 13.72211,
-     "lon": 100.52892,
-     "website": "https://barsathorn.com/",
-     "openingHours": "Mo-Su 14:30-01:00",
      "detailed": true
     },
     {
@@ -1267,15 +1756,6 @@
      "detailed": true
     },
     {
-     "id": "node/14069651001",
-     "name": "G.O.D (Genius in Drugs)",
-     "lat": 13.7398,
-     "lon": 100.51437,
-     "website": "https://nightify.co/book/god",
-     "openingHours": "Mo-Su 19:00-01:00",
-     "detailed": true
-    },
-    {
      "id": "node/13997018402",
      "name": "La Casa del Habano Sindhorn Kempinski",
      "lat": 13.73659,
@@ -1283,25 +1763,6 @@
      "address": "ถนนสารสิน 68/3",
      "website": "https://pacificcigar.com/our-locations/",
      "openingHours": "Mo-Su 12:00-00:00",
-     "detailed": true
-    },
-    {
-     "id": "node/14069601501",
-     "name": "Lennon's",
-     "lat": 13.74347,
-     "lon": 100.54899,
-     "address": "ถนนเพลินจิต 1037/1",
-     "website": "https://rosewoodhotels.com/en/bangkok/dining/lennons",
-     "openingHours": "Mo-Su 18:00-00:00",
-     "detailed": true
-    },
-    {
-     "id": "node/14069642101",
-     "name": "Opium Bar",
-     "lat": 13.73921,
-     "lon": 100.50848,
-     "website": "https://opiumbarbangkok.com/",
-     "openingHours": "Th-Tu 16:00-01:00",
      "detailed": true
     },
     {
@@ -1381,14 +1842,6 @@
      "website": "https://bangkok.grand.hyatt.com/hyatt/hotels-bangkok-grand/entertainment/dining_detail.jsp?itemDesc=fboutlet&itemId=1000112"
     },
     {
-     "id": "node/4665596791",
-     "name": "BarBar Fetish Club",
-     "lat": 13.72826,
-     "lon": 100.53258,
-     "address": "Patpong Soi 2",
-     "website": "https://www.barbarfetish.com/"
-    },
-    {
      "id": "node/776037982",
      "name": "Bully's Bankok",
      "lat": 13.7421,
@@ -1433,6 +1886,62 @@
      "lon": 100.49813,
      "address": "ถนนข้าวสาร",
      "cuisine": "local, regional, thai"
+    },
+    {
+     "id": "node/4939488208",
+     "name": "Jools Bar",
+     "lat": 13.76521,
+     "lon": 100.50013,
+     "address": "ถนนสามเสน 160",
+     "openingHours": "Mo-Su 10:00-23:59"
+    },
+    {
+     "id": "way/234374859",
+     "name": "Madame Musur",
+     "lat": 13.76216,
+     "lon": 100.49494,
+     "address": "พระนคร",
+     "cuisine": "thai"
+    },
+    {
+     "id": "node/3676274854",
+     "name": "Maggie Choo",
+     "lat": 13.723,
+     "lon": 100.51846,
+     "address": "ถนนสีลม 320",
+     "openingHours": "Tu-Su 19:30-02:00"
+    },
+    {
+     "id": "node/7695372191",
+     "name": "Nineteens Up",
+     "lat": 13.72313,
+     "lon": 100.52094,
+     "address": "โครงการบ้านสีลม",
+     "openingHours": "Mo-Su 11:00-00:00"
+    },
+    {
+     "id": "node/12298356783",
+     "name": "Old Other Office Bar",
+     "lat": 13.72948,
+     "lon": 100.53213,
+     "address": "ถนนพัฒน์พงศ์ 2 37/9",
+     "openingHours": "Tu-Su 16:00-2:00"
+    },
+    {
+     "id": "node/11235379062",
+     "name": "Pakalolo Cannabis Bar & Dispensary - Khaosan",
+     "lat": 13.76202,
+     "lon": 100.50153,
+     "address": "Phra Sumen Rd. 53",
+     "openingHours": "Mo-Su 09:00-01:00"
+    },
+    {
+     "id": "node/11235345795",
+     "name": "Pakalolo Cannabis Bar & Dispensary - Tha Maharaj",
+     "lat": 13.75508,
+     "lon": 100.48874,
+     "address": "ถนนมหาราช Unit E1-06, Tha Maharaj",
+     "openingHours": "Mo-Su 10:00-21:00"
     }
    ]
   },

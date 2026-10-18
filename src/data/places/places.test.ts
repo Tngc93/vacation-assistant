@@ -3,7 +3,9 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { DESTINATIONS } from "@/data/destinations";
 import { CATEGORY_IDS } from "@/lib/places/categories";
-import { MAX_STORED_PER_CATEGORY, ODBL, placesFileSchema } from "@/lib/places/file";
+import { ODBL, placesFileSchema } from "@/lib/places/file";
+import { categoryCap } from "@/lib/places/rank";
+import { applyPlaceRules } from "@/lib/places/rules";
 
 const DIR = __dirname;
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));
@@ -41,11 +43,11 @@ describe("src/data/places", () => {
       }
     });
 
-    it(`has every category with at most ${MAX_STORED_PER_CATEGORY} places`, () => {
+    it("has every category and shows at most 40 sights or museums and 30 of the rest", () => {
       if (!parsed.success) return;
       expect(Object.keys(parsed.data.categories).sort()).toEqual([...CATEGORY_IDS].sort());
-      for (const entry of Object.values(parsed.data.categories)) {
-        if (entry.status === "ok") expect(entry.places.length).toBeLessThanOrEqual(MAX_STORED_PER_CATEGORY);
+      for (const [category, entry] of Object.entries(applyPlaceRules(parsed.data).categories)) {
+        if (entry.status === "ok") expect(entry.places.length).toBeLessThanOrEqual(categoryCap(category as (typeof CATEGORY_IDS)[number]));
       }
     });
   });

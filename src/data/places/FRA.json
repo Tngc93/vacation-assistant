@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "FRA",
- "fetchedAt": "2026-10-16T23:26:27.285Z",
+ "fetchedAt": "2026-10-18T16:18:16.961Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,19 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q151765",
+     "name": "Commerzbank Kulesi",
+     "localName": "Commerzbank Tower",
+     "lat": 50.11116,
+     "lon": 8.67437,
+     "wikipediaCount": 42,
+     "wikidataId": "Q151765",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
      "id": "way/11526375",
      "name": "Paulskirche",
      "lat": 50.11118,
@@ -50,7 +63,13 @@
      "address": "Paulsplatz 11",
      "website": "https://frankfurt.de/frankfurt-entdecken-und-erleben/sehenswuerdigkeiten/fuer-historisch-interessierte/paulskirche",
      "openingHours": "Mo-Su 10:00-17:00",
-     "wikipediaCount": 30
+     "wikipediaCount": 30,
+     "wikidataId": "Q198106",
+     "kinds": [
+      "heritage",
+      "office",
+      "religious"
+     ]
     },
     {
      "id": "way/11018815",
@@ -60,7 +79,47 @@
      "address": "Domplatz 1",
      "website": "https://www.dom-frankfurt.de/dom/",
      "openingHours": "Mo-Su 09:00-20:00",
-     "wikipediaCount": 29
+     "wikipediaCount": 29,
+     "wikidataId": "Q57341",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q701538",
+     "name": "Deutsche Bank ikiz kuleleri",
+     "localName": "Deutsche Bank Twin Towers",
+     "lat": 50.11361,
+     "lon": 8.66806,
+     "wikipediaCount": 26,
+     "wikidataId": "Q701538",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q708060",
+     "name": "Tower 185",
+     "lat": 50.11056,
+     "lon": 8.65639,
+     "wikipediaCount": 23,
+     "wikidataId": "Q708060",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q657979",
+     "name": "Westendstrasse 1",
+     "lat": 50.11056,
+     "lon": 8.6625,
+     "wikipediaCount": 21,
+     "wikidataId": "Q657979",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "node/34223060",
@@ -68,7 +127,46 @@
      "lat": 50.11047,
      "lon": 8.68166,
      "openingHours": "Mo-Su 10:30-12:30",
-     "wikipediaCount": 19
+     "wikipediaCount": 19,
+     "wikidataId": "Q195146",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q198046",
+     "name": "Eurotower",
+     "lat": 50.10972,
+     "lon": 8.67417,
+     "wikipediaCount": 19,
+     "wikidataId": "Q198046",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q321040",
+     "name": "Seat of the European Central Bank",
+     "lat": 50.10944,
+     "lon": 8.7025,
+     "wikipediaCount": 19,
+     "wikidataId": "Q321040",
+     "kinds": [
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q195166",
+     "name": "Trianon",
+     "lat": 50.1125,
+     "lon": 8.66667,
+     "wikipediaCount": 19,
+     "wikidataId": "Q195166",
+     "kinds": [
+      "skyscraper"
+     ]
     },
     {
      "id": "way/384153099",
@@ -77,7 +175,78 @@
      "lon": 8.67199,
      "address": "Opernplatz 1",
      "website": "https://www.alteoper.de/",
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q436079",
+     "kinds": [
+      "concertHall",
+      "heritage",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q568931",
+     "name": "Oper Frankfurt",
+     "lat": 50.1081,
+     "lon": 8.67417,
+     "wikipediaCount": 16,
+     "wikidataId": "Q568931",
+     "kinds": [
+      "business",
+      "musicVenue",
+      "opera",
+      "performingArts",
+      "theatre"
+     ]
+    },
+    {
+     "id": "wikidata/Q247531",
+     "name": "Silberturm",
+     "lat": 50.10972,
+     "lon": 8.66944,
+     "wikipediaCount": 16,
+     "wikidataId": "Q247531",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q663140",
+     "name": "IG Farben Building",
+     "lat": 50.12556,
+     "lon": 8.6675,
+     "wikipediaCount": 15,
+     "wikidataId": "Q663140",
+     "kinds": [
+      "heritage",
+      "office"
+     ]
+    },
+    {
+     "id": "wikidata/Q195141",
+     "name": "Römerberg",
+     "lat": 50.11028,
+     "lon": 8.68222,
+     "wikipediaCount": 15,
+     "wikidataId": "Q195141",
+     "kinds": [
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q177120",
+     "name": "Zeil",
+     "lat": 50.11444,
+     "lon": 8.68361,
+     "wikipediaCount": 15,
+     "wikidataId": "Q177120",
+     "kinds": [
+      "road",
+      "street"
+     ]
     },
     {
      "id": "way/174501393",
@@ -86,7 +255,12 @@
      "lon": 8.67756,
      "address": "Großer Hirschgraben 23-25",
      "website": "https://www.goethehaus-frankfurt.de/",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q896039",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/28426081",
@@ -95,7 +269,62 @@
      "lon": 8.67941,
      "address": "Zeil 131",
      "openingHours": "Mo-Sa 10:00-18:00",
-     "wikipediaCount": 14
+     "wikipediaCount": 14,
+     "wikidataId": "Q195176",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q220036",
+     "name": "Frankfurt Zoological Garden",
+     "lat": 50.1156,
+     "lon": 8.70314,
+     "wikipediaCount": 14,
+     "wikidataId": "Q220036",
+     "kinds": [
+      "attraction"
+     ]
+    },
+    {
+     "id": "wikidata/Q686644",
+     "name": "OpernTurm",
+     "lat": 50.11583,
+     "lon": 8.67,
+     "wikipediaCount": 14,
+     "wikidataId": "Q686644",
+     "kinds": [
+      "office",
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q195138",
+     "name": "City-Haus",
+     "lat": 50.11028,
+     "lon": 8.66,
+     "wikipediaCount": 13,
+     "wikidataId": "Q195138",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
+     "id": "wikidata/Q166893",
+     "name": "Skyper",
+     "lat": 50.11,
+     "lon": 8.66917,
+     "wikipediaCount": 13,
+     "wikidataId": "Q166893"
+    },
+    {
+     "id": "wikidata/Q553189",
+     "name": "Frankfurter Engel",
+     "lat": 50.1168,
+     "lon": 8.68525,
+     "wikipediaCount": 12,
+     "wikidataId": "Q553189"
     },
     {
      "id": "way/27769650",
@@ -103,28 +332,43 @@
      "lat": 50.11349,
      "lon": 8.67873,
      "address": "An der Hauptwache 15",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q195116"
+    },
+    {
+     "id": "wikidata/Q449266",
+     "name": "Altstadt",
+     "lat": 50.11348,
+     "lon": 8.68431,
+     "wikipediaCount": 11,
+     "wikidataId": "Q449266",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/27769415",
      "name": "Alte Nikolaikirche",
      "lat": 50.10998,
      "lon": 8.68236,
-     "wikipediaCount": 8
-    },
-    {
-     "id": "way/174637354",
-     "name": "Glockenturm der Alten Nikolaikirche",
-     "lat": 50.11004,
-     "lon": 8.68247,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q436054",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/53671623",
      "name": "Eschenheimer Turm",
      "lat": 50.11695,
      "lon": 8.6797,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q883643",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "relation/1688621",
@@ -132,7 +376,11 @@
      "lat": 50.11517,
      "lon": 8.67994,
      "address": "Thurn-und-Taxis-Platz 1",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q282656",
+     "kinds": [
+      "palace"
+     ]
     },
     {
      "id": "way/49842069",
@@ -140,7 +388,12 @@
      "lat": 50.11305,
      "lon": 8.68144,
      "website": "https://liebfrauen.net/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1423050",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/53567953",
@@ -150,7 +403,12 @@
      "address": "Am Leonhardstor 25",
      "website": "https://www.dom-frankfurt.de/dompfarrei/kirchorte/st-leonhard/kirche",
      "openingHours": "Mo-Fr 15:00-19:00; Sa-Su 11:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1151086",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/156298612",
@@ -158,14 +416,24 @@
      "lat": 50.10723,
      "lon": 8.68504,
      "website": "https://dreikoenigsgemeinde.ekhn.de/startseite.html",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1185719",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/174825000",
      "name": "Staufenmauer",
      "lat": 50.11354,
      "lon": 8.68675,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q895613",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ]
     },
     {
      "id": "way/72471247",
@@ -173,7 +441,11 @@
      "lat": 50.11077,
      "lon": 8.68279,
      "address": "Markt 44",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1667329",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/34378270",
@@ -182,14 +454,23 @@
      "lon": 8.6843,
      "website": "https://www.archaeologisches-museum-frankfurt.de/besucherinformationen/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q187163",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "way/53798956",
      "name": "Gerechtigkeitsbrunnen",
      "lat": 50.11042,
      "lon": 8.68214,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q195201",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/71324413",
@@ -198,14 +479,23 @@
      "lon": 8.6881,
      "address": "Brückenstraße 7",
      "website": "http://pfarrei-deutschorden.de/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1206439",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "way/968095863",
      "name": "Holbeinsteg",
      "lat": 50.10411,
      "lon": 8.67172,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1624281",
+     "kinds": [
+      "bridge"
+     ]
     },
     {
      "id": "way/11651042",
@@ -213,7 +503,11 @@
      "lat": 50.12618,
      "lon": 8.67917,
      "address": "Justinianstraße 5",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2719403",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/42254763",
@@ -221,14 +515,22 @@
      "lat": 50.11009,
      "lon": 8.68524,
      "address": "Weckmarkt 17",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1665617",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/174500421",
      "name": "Saalhof",
      "lat": 50.10954,
      "lon": 8.68295,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q1439172",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/449377753",
@@ -238,7 +540,11 @@
      "address": "Hasengasse 5-7",
      "website": "https://kleinmarkthalle.de/",
      "openingHours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00; PH off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1746954",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/35428742",
@@ -246,7 +552,11 @@
      "lat": 50.10474,
      "lon": 8.69003,
      "address": "Affentorplatz 1",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q382401",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/174931826",
@@ -254,7 +564,11 @@
      "lat": 50.10946,
      "lon": 8.69309,
      "address": "Schöne Aussicht 2",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q436249",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/174500420",
@@ -262,7 +576,11 @@
      "lat": 50.10946,
      "lon": 8.68192,
      "address": "Fahrtor 1",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q47502504",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "relation/1126033",
@@ -270,14 +588,101 @@
      "lat": 50.10913,
      "lon": 8.67813,
      "address": "Karmelitergasse 1",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1734064",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/68970488",
      "name": "Kuhhirtenturm (Elefant)",
      "lat": 50.10669,
      "lon": 8.68971,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1791199",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "way/148834018",
+     "name": "Rententurm",
+     "lat": 50.10922,
+     "lon": 8.68229,
+     "wikipediaCount": 1,
+     "wikidataId": "Q997990",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "node/4425363796",
+     "name": "City tours velotaxi Gabriel",
+     "lat": 50.11384,
+     "lon": 8.67947,
+     "address": "An der Hauptwache 1",
+     "openingHours": "Mo-Su 11:00-20:00"
+    },
+    {
+     "id": "node/12059348539",
+     "name": "Kandelaber",
+     "lat": 50.11542,
+     "lon": 8.67231,
+     "website": "https://www.kunst-im-oeffentlichen-raum-frankfurt.de/de/page205.html?id=75&stadtteil=9"
+    },
+    {
+     "id": "way/292558811",
+     "name": "Liebfrauenbrunnen",
+     "lat": 50.11268,
+     "lon": 8.68144,
+     "website": "https://www.kunst-im-oeffentlichen-raum-frankfurt.de/de/page205.html?id=65&stadtteil=9",
+     "wikidataId": "Q110909169",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/174503727",
+     "name": "Pfarrturm",
+     "lat": 50.11063,
+     "lon": 8.68492,
+     "address": "Domplatz 1",
+     "website": "https://www.dom-frankfurt.de/dom"
+    },
+    {
+     "id": "way/15951155",
+     "name": "Börse",
+     "lat": 50.1153,
+     "lon": 8.67775,
+     "wikidataId": "Q116515155",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "way/174487228",
+     "name": "Historischer Treppenturm",
+     "lat": 50.11034,
+     "lon": 8.68112
+    },
+    {
+     "id": "node/3883130557",
+     "name": "Nizzagärten",
+     "lat": 50.10658,
+     "lon": 8.67464,
+     "address": "Untermainkai"
+    },
+    {
+     "id": "node/1851644039",
+     "name": "Römerhöfchen",
+     "lat": 50.11038,
+     "lon": 8.68121
     }
    ]
   },
@@ -293,7 +698,12 @@
      "address": "Schaumainkai 63",
      "website": "https://www.staedelmuseum.de/de",
      "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-21:00; Mo off",
-     "wikipediaCount": 32
+     "wikipediaCount": 32,
+     "wikidataId": "Q163804",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/35216115",
@@ -303,7 +713,11 @@
      "address": "Domstraße 10",
      "website": "https://www.mmk.art/",
      "openingHours": "Tu,Th-Su 11:00-18:00; We 11:00-19:00",
-     "wikipediaCount": 12
+     "wikipediaCount": 12,
+     "wikidataId": "Q456994",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/385171326",
@@ -313,7 +727,8 @@
      "address": "Schaumainkai 43",
      "website": "https://dam-online.de/",
      "openingHours": "Tu,Th-Su 11:00-18:00; We 11:00-20:00",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q885179"
     },
     {
      "id": "way/689507214",
@@ -323,7 +738,11 @@
      "address": "Saalgasse 20",
      "website": "https://www.schirn.de/",
      "openingHours": "closed \"Wegen Sanierung vorübergehender Umzug in die Dondorf Druckerei in Bockenheim.\"",
-     "wikipediaCount": 11
+     "wikipediaCount": 11,
+     "wikidataId": "Q176293",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/2547104680",
@@ -333,7 +752,11 @@
      "address": "Fahrtor 2",
      "website": "https://www.historisches-museum-frankfurt.de/",
      "openingHours": "Tu-We, Fr-Su 11:00-18:00; Th 11:00-21:00",
-     "wikipediaCount": 10
+     "wikipediaCount": 10,
+     "wikidataId": "Q198347",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/144343388",
@@ -343,7 +766,11 @@
      "address": "Schaumainkai 17",
      "website": "http://www.museumangewandtekunst.de/",
      "openingHours": "Tu,Th-Su 10:00-18:00; We 10:00-20:00",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q198418",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/265793228",
@@ -353,7 +780,11 @@
      "address": "Bertha-Pappenheim-Platz 1",
      "website": "https://www.juedischesmuseum.de/",
      "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q278571",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/144349808",
@@ -363,7 +794,12 @@
      "address": "Schaumainkai 71",
      "website": "https://www.liebieghaus.de/de",
      "openingHours": "Tu,We 12:00-18:00; Th 10:00-21:00; Fr-Su 10:00-18:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1823966",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/4292738515",
@@ -372,7 +808,12 @@
      "lon": 8.67587,
      "website": "https://www.mfk-frankfurt.de/",
      "openingHours": "Tu,Th-Su,PH 10:00-18:00; We 10:00-20:00",
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q1954640",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "node/12245796003",
@@ -382,7 +823,11 @@
      "address": "Karmelitergasse 1",
      "website": "https://www.archaeologisches-museum.frankfurt.de/",
      "openingHours": "Tu, Th-Su 10:00-18:00; We 10:00-20:00; Mo off",
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q636924",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/385171325",
@@ -392,7 +837,11 @@
      "address": "Schaumainkai 41",
      "website": "https://www.dff.film/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q1205629",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1851762708",
@@ -402,7 +851,11 @@
      "address": "Weckmarkt 17",
      "website": "https://www.caricatura-museum.de/",
      "openingHours": "Mo off; PH,Tu-Su 11:00-19:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1525564",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/898239357",
@@ -412,7 +865,11 @@
      "address": "Großer Hirschgraben 17-21",
      "website": "https://deutsches-romantik-museum.de/",
      "openingHours": "Fr-We,PH 10:00-18:00; Th 10:00-21:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q17321191",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7427950218",
@@ -422,7 +879,11 @@
      "address": "Schaumainkai 83",
      "website": "https://www.mggu.de/",
      "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-20:00; PH 10:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1954440",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/300928576",
@@ -432,7 +893,11 @@
      "address": "Schaumainkai 29-37",
      "website": "https://www.weltkulturenmuseum.de/",
      "openingHours": "We 11:00-20:00; Th-Su 11:00-18:00",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q1954571",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/1851804853",
@@ -441,7 +906,11 @@
      "lon": 8.68299,
      "website": "https://www.fkv.de/",
      "openingHours": "Tu-Su 11:00-19:00; Th 11:00-21:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q1444994",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/6882184609",
@@ -450,7 +919,11 @@
      "lon": 8.688,
      "website": "http://www.ikonenmuseumfrankfurt.de/",
      "openingHours": "We 12:00-20:00; Fr-Su 10:00-17:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q16831924",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/39383376",
@@ -460,7 +933,11 @@
      "address": "Alte Brücke 2",
      "website": "https://www.portikus.de/",
      "openingHours": "Tu-Su 11:00-18:00; We 11:00-20:00",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2105106",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/3891320264",
@@ -470,7 +947,11 @@
      "address": "Holzgraben 4",
      "website": "https://www.tafelkultur.com/",
      "openingHours": "Su 15:00-17:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q26791742",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/7448608926",
@@ -480,7 +961,11 @@
      "address": "Domplatz 1",
      "website": "https://dommuseum-frankfurt.de/",
      "openingHours": "Tu-Fr 10:00-17:00; Sa,Su 11:00-17:00; Mo off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1238556",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/5308338523",
@@ -489,7 +974,11 @@
      "lon": 8.68255,
      "website": "https://www.fffrankfurt.org/",
      "openingHours": "Tu, Th-Su 11:00-18:00; We 11:00-20:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q61781086",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/10587495568",
@@ -499,7 +988,11 @@
      "address": "Niddastraße 84",
      "website": "http://www.kaimiddendorff.com/",
      "openingHours": "We-Fr 14:00-18:30; Sa 11:30-16:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q31840959",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/715551908",
@@ -509,7 +1002,11 @@
      "address": "Hinter dem Lämmchen 2-4",
      "website": "https://www.struwwelpeter-museum.de/",
      "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q76633777",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/55456112",
@@ -517,7 +1014,11 @@
      "lat": 50.11752,
      "lon": 8.67644,
      "openingHours": "We-Su 12:00-18:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q1973187",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/843464889",
@@ -544,7 +1045,11 @@
      "lon": 8.68165,
      "address": "Metzlerstraße 19",
      "website": "https://www.bibelhaus-frankfurt.de/",
-     "openingHours": "Tu-Sa 10:00-17:00; Su 14:00-18:00"
+     "openingHours": "Tu-Sa 10:00-17:00; Su 14:00-18:00",
+     "wikidataId": "Q76633730",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/11206320821",
@@ -562,6 +1067,108 @@
      "lon": 8.67869,
      "website": "https://dialogmuseum.de/",
      "openingHours": "Tu 09:00-13:00; We-Fr 09:00-17:30; Sa 10:00-18:00"
+    },
+    {
+     "id": "node/1591630307",
+     "name": "Ehemaliges Polizeigefängnis Klapperfeld",
+     "lat": 50.11543,
+     "lon": 8.68971,
+     "address": "Klapperfeldstraße 5",
+     "website": "https://www.klapperfeld.de/",
+     "openingHours": "Sa 15:00-18:00"
+    },
+    {
+     "id": "node/5352590793",
+     "name": "Galerie Rundgaenger",
+     "lat": 50.10907,
+     "lon": 8.66302,
+     "address": "Niddastraße 63",
+     "website": "https://www.rundgaenger.de/",
+     "openingHours": "We,Fr 15:00-18:00; Th 15:00-18:00,19:00-21:00"
+    },
+    {
+     "id": "node/7435791753",
+     "name": "Hindemith Kabinett im Kuhhirtenturm",
+     "lat": 50.10669,
+     "lon": 8.68972,
+     "address": "Große Rittergasse 118",
+     "website": "https://www.hindemith.info/de/kabinett/",
+     "openingHours": "Su 11:00-18:00"
+    },
+    {
+     "id": "node/7367769766",
+     "name": "Hochbunker an der Friedberger Anlage",
+     "lat": 50.11456,
+     "lon": 8.69552,
+     "address": "Friedberger Anlage 5-6",
+     "website": "https://www.initiative-neunter-november.de/",
+     "openingHours": "May-Nov: We 17:00-19:00; May-Nov: Su 11:00-14:00"
+    },
+    {
+     "id": "node/2953703710",
+     "name": "Institut für Stadtgeschichte",
+     "lat": 50.10941,
+     "lon": 8.67815,
+     "address": "Münzgasse 9",
+     "website": "https://www.stadtgeschichte-ffm.de/",
+     "openingHours": "Mo-Su 11:00-18:00"
+    },
+    {
+     "id": "node/11516654953",
+     "name": "Junges Museum Frankfurt",
+     "lat": 50.10976,
+     "lon": 8.68264,
+     "address": "Saalhof 1",
+     "website": "https://junges-museum-frankfurt.de/",
+     "openingHours": "Tu-Su 11:00-18:00"
+    },
+    {
+     "id": "node/6278291631",
+     "name": "McKiev",
+     "lat": 50.12107,
+     "lon": 8.6994,
+     "address": "Sandweg 113",
+     "website": "https://www.mckiev.de/",
+     "openingHours": "16:00-20:00"
+    },
+    {
+     "id": "node/1853549297",
+     "name": "Museum Judengasse",
+     "lat": 50.11234,
+     "lon": 8.68856,
+     "address": "Battonnstraße 47",
+     "website": "https://www.juedischesmuseum.de/besuch/standort-museum-judengasse",
+     "openingHours": "Tu-Su 10:00-18:00",
+     "wikidataId": "Q21251780",
+     "kinds": [
+      "museum"
+     ]
+    },
+    {
+     "id": "node/3884481957",
+     "name": "Museum Of Modern Electronic Music",
+     "lat": 50.1136,
+     "lon": 8.67875,
+     "address": "An der Hauptwache 15",
+     "website": "https://momem.org/",
+     "openingHours": "Tu-Su 13:00-19:00"
+    },
+    {
+     "id": "node/6284198784",
+     "name": "Rahmen-Studio Kunsthandel",
+     "lat": 50.11925,
+     "lon": 8.69806,
+     "website": "https://artgroup-frankfurt.com/",
+     "openingHours": "Sa 11:00-14:00, Tu-Th 10:30-13:00,14:00-18:30, Fr 10:00-13:00,14:00-17:00; PH off"
+    },
+    {
+     "id": "node/6268173592",
+     "name": "Stoltze-Museum",
+     "lat": 50.11074,
+     "lon": 8.68432,
+     "address": "Markt 7",
+     "website": "https://www.frankfurter-sparkasse.de/stoltze",
+     "openingHours": "Mo-Su 10:00-18:00"
     }
    ]
   },
@@ -570,20 +1177,25 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/1745231328",
+     "name": "Main Tower",
+     "lat": 50.11241,
+     "lon": 8.67217,
+     "website": "https://www.maintower.de/",
+     "openingHours": "Mar Su[-1] - Oct Su[-1] - 1 day: Mo-Th,Su,PH 10:00-21:00; Fr,Sa 10:00-23:00; Oct Su[-1] - Mar Su[-1] - 1 day: Mo-Th,Su,PH 10:00-19:00; Fr,Sa 10:00-21:00",
+     "wikipediaCount": 26,
+     "wikidataId": "Q321291",
+     "kinds": [
+      "skyscraper"
+     ]
+    },
+    {
      "id": "node/1719597181",
      "name": "Domturm",
      "lat": 50.11067,
      "lon": 8.68486,
      "website": "https://www.dom-frankfurt.de/dom/dommuseum",
      "openingHours": "Apr-Oct: 09:00-18:00; Nov-Mar: 11:00-17:00; Nov 01-Mar 06: Tu,We off"
-    },
-    {
-     "id": "node/1745231328",
-     "name": "Main Tower",
-     "lat": 50.11241,
-     "lon": 8.67217,
-     "website": "https://www.maintower.de/",
-     "openingHours": "Mar Su[-1] - Oct Su[-1] - 1 day: Mo-Th,Su,PH 10:00-21:00; Fr,Sa 10:00-23:00; Oct Su[-1] - Mar Su[-1] - 1 day: Mo-Th,Su,PH 10:00-19:00; Fr,Sa 10:00-21:00"
     },
     {
      "id": "node/13955651601",
@@ -648,6 +1260,7 @@
      "website": "http://www.fichtekraenzi.de/",
      "openingHours": "Mo-Su,PH 17:00-18:00+",
      "cuisine": "regional",
+     "wikidataId": "Q108799067",
      "detailed": true
     },
     {
@@ -983,6 +1596,7 @@
      "website": "http://cafelaumer.de/",
      "openingHours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
      "cuisine": "breakfast, cake, german, ice cream",
+     "wikidataId": "Q1025630",
      "detailed": true
     },
     {
@@ -1079,6 +1693,7 @@
      "website": "https://www.bahn.de/service/zug/db-lounge",
      "openingHours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:00-22:00",
      "cuisine": "coffee shop",
+     "wikidataId": "Q57292643",
      "detailed": true
     },
     {
@@ -1586,6 +2201,7 @@
      "address": "Zeil 85-93",
      "website": "https://www.gibson-club.de/",
      "openingHours": "Th 21:00-04:00,Fr 23:00-05:00,Sa 23:00-05:00, PH -1 day 23:00-05:00, Mo-Fr 10:00-17:00 \"office\"",
+     "wikidataId": "Q98057069",
      "detailed": true
     },
     {
@@ -1596,6 +2212,7 @@
      "address": "Kleine Bockenheimer Straße 18a",
      "website": "https://jazzkeller.de/",
      "openingHours": "\"Geöffnet nur bei Veranstaltungen, Mittwoch Jam Session, Freitag: Swingin'-Latin-Funky DanceNite 22:00 - 03:00 Konzertbeginn: Wochentags, einschl. Samstag um 21:00 Uhr, Sonntags 20:00 Uhr, öffnen 1 Std. v. Konzertbeginn (Freitags: 22:00)\"",
+     "wikidataId": "Q249295",
      "detailed": true
     },
     {

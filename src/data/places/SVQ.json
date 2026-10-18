@@ -1,7 +1,7 @@
 {
- "version": 1,
+ "version": 3,
  "cityCode": "SVQ",
- "fetchedAt": "2026-10-16T23:19:34.672Z",
+ "fetchedAt": "2026-10-18T16:06:03.631Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,7 +19,7 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
   },
   {
    "name": "Wikimedia Commons",
@@ -43,6 +43,31 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "wikidata/Q231606",
+     "name": "Sevilla Katedrali",
+     "localName": "Seville Cathedral",
+     "lat": 37.38574,
+     "lon": -5.9931,
+     "wikipediaCount": 61,
+     "wikidataId": "Q231606",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
+    },
+    {
+     "id": "wikidata/Q275429",
+     "name": "Estadio Ramón Sánchez Pizjuán",
+     "localName": "Ramón Sánchez Pizjuán Stadium",
+     "lat": 37.38388,
+     "lon": -5.97047,
+     "wikipediaCount": 49,
+     "wikidataId": "Q275429",
+     "kinds": [
+      "sportsVenue"
+     ]
+    },
+    {
      "id": "way/22747187",
      "name": "Real Alcázar de Sevilla",
      "lat": 37.38325,
@@ -50,147 +75,306 @@
      "address": "Patio de Banderas",
      "website": "https://www.alcazarsevilla.org/",
      "openingHours": "Oct-Mar: 09:30-17:00; Apr-Sep: 09:30-19:00",
-     "wikipediaCount": 45
+     "wikipediaCount": 45,
+     "wikidataId": "Q498261",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "palace"
+     ]
+    },
+    {
+     "id": "node/4893960422",
+     "name": "La Giralda",
+     "lat": 37.38619,
+     "lon": -5.99252,
+     "website": "https://es.wikipedia.org/wiki/Giralda",
+     "wikipediaCount": 43,
+     "wikidataId": "Q834479",
+     "kinds": [
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q368737",
+     "name": "Sevilla Olimpiyat Stadyumu",
+     "localName": "Estadio de La Cartuja",
+     "lat": 37.41724,
+     "lon": -6.00456,
+     "wikipediaCount": 41,
+     "wikidataId": "Q368737",
+     "kinds": [
+      "sportsVenue"
+     ]
     },
     {
      "id": "way/40670357",
      "name": "Plaza de España",
      "lat": 37.37657,
      "lon": -5.9863,
-     "wikipediaCount": 26
+     "wikipediaCount": 26,
+     "wikidataId": "Q956018",
+     "kinds": [
+      "heritage",
+      "square"
+     ]
+    },
+    {
+     "id": "wikidata/Q2274061",
+     "name": "Sevilla Boğa Güreşi Alanı",
+     "localName": "Plaza de toros de la Maestranza",
+     "lat": 37.38596,
+     "lon": -5.99841,
+     "wikipediaCount": 21,
+     "wikidataId": "Q2274061",
+     "kinds": [
+      "heritage",
+      "performingArts",
+      "sportsVenue",
+      "square",
+      "theatre"
+     ]
     },
     {
      "id": "way/441795089",
      "name": "Palacio de San Telmo",
      "lat": 37.38019,
      "lon": -5.99342,
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q2665595",
+     "kinds": [
+      "business",
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "way/138602581",
      "name": "Setas de Sevilla",
      "lat": 37.39313,
      "lon": -5.99181,
-     "wikipediaCount": 17
+     "wikipediaCount": 17,
+     "wikidataId": "Q3087671"
+    },
+    {
+     "id": "wikidata/Q2627907",
+     "name": "Maria Luisa Parkı",
+     "localName": "Parque de María Luisa",
+     "lat": 37.37574,
+     "lon": -5.98889,
+     "wikipediaCount": 16,
+     "wikidataId": "Q2627907",
+     "kinds": [
+      "heritage"
+     ]
+    },
+    {
+     "id": "wikidata/Q2746748",
+     "name": "Cajasol Tower",
+     "lat": 37.39194,
+     "lon": -6.00972,
+     "wikipediaCount": 14,
+     "wikidataId": "Q2746748"
+    },
+    {
+     "id": "wikidata/Q2606632",
+     "name": "Torre de la Plata",
+     "lat": 37.3832,
+     "lon": -5.99543,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2606632",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
+    },
+    {
+     "id": "wikidata/Q2542555",
+     "name": "Kraliyet Tütün Fabrikası, Sevilla",
+     "localName": "Royal Tobacco Factory of Seville",
+     "lat": 37.38069,
+     "lon": -5.99083,
+     "wikipediaCount": 11,
+     "wikidataId": "Q2542555",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "way/119569195",
      "name": "Palacio Arzobispal",
      "lat": 37.38688,
      "lon": -5.99193,
-     "wikipediaCount": 7
+     "wikipediaCount": 7,
+     "wikidataId": "Q3360949",
+     "kinds": [
+      "heritage",
+      "office",
+      "palace",
+      "religious"
+     ]
     },
     {
      "id": "way/160083336",
      "name": "Muralla-Acueducto",
      "lat": 37.3851,
      "lon": -5.98792,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5759632"
     },
     {
      "id": "node/844175401",
      "name": "Castillo de San Jorge",
      "lat": 37.38572,
      "lon": -6.00317,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5757560",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "way/28370223",
      "name": "Murallas de Sevilla",
      "lat": 37.40155,
      "lon": -5.98722,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3831846"
     },
     {
      "id": "node/4956732021",
      "name": "Plaza del Triunfo",
      "lat": 37.38503,
      "lon": -5.99234,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q3906571",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "node/4888559522",
      "name": "Arco del Postigo",
      "lat": 37.38531,
      "lon": -5.9951,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6083476",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ]
     },
     {
      "id": "node/7369644585",
      "name": "Puerta de Córdoba",
      "lat": 37.40017,
      "lon": -5.9852,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q19951231",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "node/13031348846",
      "name": "puerta Real",
      "lat": 37.39317,
      "lon": -6.00353,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6091734",
+     "kinds": [
+      "adminArea"
+     ]
     },
     {
      "id": "way/225683933",
      "name": "Torre Abd el Aziz",
      "lat": 37.38402,
      "lon": -5.99356,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6149996",
+     "kinds": [
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "node/4893960522",
      "name": "Tumba de Cristóbal Colón",
      "lat": 37.38547,
      "lon": -5.99305,
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q6153784"
     },
     {
      "id": "relation/6054646",
      "name": "Conservatorio Profesional de Danza",
      "lat": 37.3728,
      "lon": -5.99066,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6055649"
     },
     {
      "id": "relation/9178847",
      "name": "Plaza del Cabildo",
      "lat": 37.38561,
      "lon": -5.99473,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6080400",
+     "kinds": [
+      "square"
+     ]
     },
     {
      "id": "way/411078907",
      "name": "Andalucía de los Niños",
      "lat": 37.40637,
      "lon": -5.9975,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q5820936",
+     "kinds": [
+      "attraction",
+      "business"
+     ]
     },
     {
      "id": "way/660053023",
      "name": "Fernando el Santo",
      "lat": 37.38861,
      "lon": -5.99558,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q5800278"
     },
     {
      "id": "node/4893960621",
      "name": "Foro de la Biodiversidad",
      "lat": 37.38527,
      "lon": -5.99122,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q2888526",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/1528556994",
      "name": "Monumento a Fray Bartolomé de las Casas",
      "lat": 37.38712,
      "lon": -6.00239,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q16608881"
     },
     {
      "id": "way/660053486",
      "name": "Monumento a Martínez Montañés",
      "lat": 37.39012,
      "lon": -5.99306,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q6023072"
     },
     {
      "id": "node/7265892390",
@@ -215,13 +399,6 @@
      "lat": 37.38483,
      "lon": -5.98863,
      "website": "https://visitasevilla.es/sabias-que-el-balcon-de-la-rosina-en-sevilla-inspiro-una-de-las-operas-mas-famosas-del-mundo/"
-    },
-    {
-     "id": "node/4893960422",
-     "name": "La Giralda",
-     "lat": 37.38619,
-     "lon": -5.99252,
-     "website": "https://es.wikipedia.org/wiki/Giralda"
     },
     {
      "id": "node/5221244022",
@@ -249,6 +426,54 @@
      "name": "Agustinas Convento de la Encarnacion",
      "lat": 37.38565,
      "lon": -5.99129
+    },
+    {
+     "id": "node/4199199117",
+     "name": "Almeda de Hércules",
+     "lat": 37.40024,
+     "lon": -5.99359
+    },
+    {
+     "id": "node/3547514885",
+     "name": "Antepecho Puente de Triana",
+     "lat": 37.38595,
+     "lon": -6.00312
+    },
+    {
+     "id": "way/518504028",
+     "name": "Arquillo de la O",
+     "lat": 37.38688,
+     "lon": -6.00506
+    },
+    {
+     "id": "node/4383576392",
+     "name": "Barrio Santa cruz",
+     "lat": 37.38623,
+     "lon": -5.99163
+    },
+    {
+     "id": "way/35783389",
+     "name": "Basílica de la Inmaculada Milagrosa",
+     "lat": 37.38152,
+     "lon": -5.97854
+    },
+    {
+     "id": "node/4888559523",
+     "name": "Cabildo Catedral",
+     "lat": 37.38524,
+     "lon": -5.99339
+    },
+    {
+     "id": "way/294549128",
+     "name": "Calesitas del Tardón",
+     "lat": 37.38057,
+     "lon": -6.00955
+    },
+    {
+     "id": "way/545916297",
+     "name": "Carrusel Mágico",
+     "lat": 37.40566,
+     "lon": -6.00018
     }
    ]
   },
@@ -263,14 +488,25 @@
      "lon": -5.99304,
      "address": "Avenida de la Constitución 3",
      "openingHours": "Mo-Sa 09:30-17:00; Su 10:00-14:00",
-     "wikipediaCount": 36
+     "wikipediaCount": 36,
+     "wikidataId": "Q477051",
+     "kinds": [
+      "heritage",
+      "unesco"
+     ]
     },
     {
      "id": "way/28112279",
      "name": "Torre del Oro",
      "lat": 37.3824,
      "lon": -5.99632,
-     "wikipediaCount": 33
+     "wikipediaCount": 33,
+     "wikidataId": "Q943873",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "relation/2912100",
@@ -280,7 +516,12 @@
      "address": "Plaza de Pilatos 1",
      "website": "https://www.fundacionmedinaceli.org/monumentos/pilatos",
      "openingHours": "09:00-18:00",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q1046529",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/6252947",
@@ -290,7 +531,13 @@
      "address": "Plaza del Museo 9",
      "website": "https://www.museosdeandalucia.es//",
      "openingHours": "Tu-Sa 09:00-21:00; Su 09:00-15:00; Aug: Tu-Su 09:00-15:00; Jan01-06,May 01,Dec 24,Dec 25,Dec 31: off",
-     "wikipediaCount": 18
+     "wikipediaCount": 18,
+     "wikidataId": "Q2163496",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/37532394",
@@ -300,14 +547,24 @@
      "address": "Calle Dueñas 5",
      "website": "https://www.lasduenas.es/",
      "openingHours": "10:00-18:00; Jan 01,Jan 06,Dec 25: off; Jan 05,Dec 31,Dec 24: 10:00-14:15",
-     "wikipediaCount": 9
+     "wikipediaCount": 9,
+     "wikidataId": "Q7126325",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/1650454",
      "name": "Monasterio de Santa María de las Cuevas",
      "lat": 37.39838,
      "lon": -6.00743,
-     "wikipediaCount": 8
+     "wikipediaCount": 8,
+     "wikidataId": "Q97641872",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "relation/6378993",
@@ -317,7 +574,12 @@
      "address": "Calle Cuna 8",
      "website": "https://palaciodelebrija.com/",
      "openingHours": "Sep-Jun Mo-Su 10:00-18:00; Jul-Aug 10:00-15:00",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q1064212",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "relation/2884360",
@@ -326,14 +588,24 @@
      "lon": -5.99522,
      "address": "Calle Temprado 3",
      "website": "https://www.santa-caridad.es/es/la-caridad-hoy/",
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q858907",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/4647829792",
      "name": "Casa de Murillo",
      "lat": 37.38572,
      "lon": -5.98908,
-     "wikipediaCount": 6
+     "wikipediaCount": 6,
+     "wikidataId": "Q5047920",
+     "kinds": [
+      "heritage",
+      "museum"
+     ]
     },
     {
      "id": "way/376304232",
@@ -341,14 +613,24 @@
      "lat": 37.37757,
      "lon": -5.99117,
      "openingHours": "Mo off; Tu-Su 10:00-20:00",
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q7433493",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/119583600",
      "name": "Reales Atarazanas",
      "lat": 37.38471,
      "lon": -5.99546,
-     "wikipediaCount": 5
+     "wikipediaCount": 5,
+     "wikidataId": "Q5710444",
+     "kinds": [
+      "adminArea",
+      "heritage",
+      "tower"
+     ]
     },
     {
      "id": "relation/1650453",
@@ -358,7 +640,11 @@
      "address": "Camino de los Descubrimientos",
      "website": "https://caac.es/",
      "openingHours": "Tu-Sa 11:00-21:00; Su 10:00-15:30",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q8343569",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/119568946",
@@ -366,14 +652,24 @@
      "lat": 37.38769,
      "lon": -5.99121,
      "website": "https://www.palaciopinello.com/",
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q6406146",
+     "kinds": [
+      "heritage"
+     ]
     },
     {
      "id": "node/844175401",
      "name": "Castillo de San Jorge",
      "lat": 37.38572,
      "lon": -6.00317,
-     "wikipediaCount": 4
+     "wikipediaCount": 4,
+     "wikidataId": "Q5757560",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage"
+     ]
     },
     {
      "id": "node/2478249154",
@@ -381,7 +677,11 @@
      "lat": 37.38895,
      "lon": -5.99113,
      "website": "https://www.museoflamenco.com/",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q2486431",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4161820389",
@@ -389,21 +689,27 @@
      "lat": 37.37828,
      "lon": -5.98745,
      "openingHours": "Mo-Fr 09:30-14:00; Sa 10:00-14:00; PH off; Aug off",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q2880514",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "way/555756486",
      "name": "CaixaForum Sevilla",
      "lat": 37.39363,
      "lon": -6.00927,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q16540074"
     },
     {
      "id": "relation/2933402",
      "name": "Centro de Arte Contemporáneo",
      "lat": 37.37642,
      "lon": -5.99166,
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6055668"
     },
     {
      "id": "way/120294260",
@@ -412,7 +718,11 @@
      "lon": -6.00779,
      "website": "https://www.pabellondelanavegacion.com/",
      "openingHours": "Tu-Sa 10:00-19:30; Su 10:00-15:00",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q12198135",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/4878565237",
@@ -421,7 +731,11 @@
      "lon": -6.00465,
      "address": "Called Antillano Campos 14",
      "openingHours": "Tu-Sa 11:00-17:30; Su 10:00-14:30; Mo off",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q18224363",
+     "kinds": [
+      "museum"
+     ]
     },
     {
      "id": "node/9651532317",
@@ -429,21 +743,33 @@
      "lat": 37.3872,
      "lon": -5.98928,
      "address": "Calle Fabiola 5",
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q45028661"
     },
     {
      "id": "way/70813714",
      "name": "Museo de Carruajes",
      "lat": 37.37928,
      "lon": -5.99682,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q9046999",
+     "kinds": [
+      "heritage",
+      "museum",
+      "religious"
+     ]
     },
     {
      "id": "way/119575878",
      "name": "Sala San Hermenegildo",
      "lat": 37.39411,
      "lon": -5.99616,
-     "wikipediaCount": 1
+     "wikipediaCount": 1,
+     "wikidataId": "Q5675110",
+     "kinds": [
+      "heritage",
+      "religious"
+     ]
     },
     {
      "id": "node/1308942334",
@@ -486,14 +812,23 @@
      "lat": 37.39346,
      "lon": -5.99985,
      "address": "Calle Alfonso XII 48",
-     "openingHours": "Mo 11:00-13:00"
+     "openingHours": "Mo 11:00-13:00",
+     "wikidataId": "Q97639966",
+     "kinds": [
+      "heritage",
+      "palace"
+     ]
     },
     {
      "id": "node/11090958231",
      "name": "Centro de Documentación de las Artes Escénicas de Andalucía",
      "lat": 37.39762,
      "lon": -5.98325,
-     "website": "http://www.juntadeandalucia.es/culturaydeporte/cdaea/"
+     "website": "http://www.juntadeandalucia.es/culturaydeporte/cdaea/",
+     "wikidataId": "Q85685897",
+     "kinds": [
+      "business"
+     ]
     },
     {
      "id": "node/4095977530",
@@ -502,6 +837,68 @@
      "lon": -5.99125,
      "address": "Calle Feria 40",
      "website": "https://diwapimagen.com/"
+    },
+    {
+     "id": "node/13704729302",
+     "name": "Alianza Art Gallery",
+     "lat": 37.38568,
+     "lon": -5.99129,
+     "address": "Plaza de la Alianza 3"
+    },
+    {
+     "id": "relation/1642987",
+     "name": "Convento de Santa María de los Reyes. (s. XVI)",
+     "lat": 37.39159,
+     "lon": -5.98585
+    },
+    {
+     "id": "node/13306514890",
+     "name": "Escrivá Studio",
+     "lat": 37.38653,
+     "lon": -5.99974
+    },
+    {
+     "id": "node/6621504086",
+     "name": "Galeria Alarcón",
+     "lat": 37.38491,
+     "lon": -5.99778
+    },
+    {
+     "id": "node/6621504186",
+     "name": "Galeria Birimbao",
+     "lat": 37.39367,
+     "lon": -5.99098
+    },
+    {
+     "id": "node/3149527769",
+     "name": "José Manuel Chamorro",
+     "lat": 37.39533,
+     "lon": -5.99931
+    },
+    {
+     "id": "way/706222286",
+     "name": "Mueseo Hdad. Esperanza de Triana (Tesoro Devocional Esperanza de Triana)",
+     "lat": 37.38396,
+     "lon": -6.00094
+    },
+    {
+     "id": "node/6179980756",
+     "name": "Museo Catedralicio",
+     "lat": 37.38602,
+     "lon": -5.99358
+    },
+    {
+     "id": "way/35781525",
+     "name": "Museo de Artes y Costumbres Populares",
+     "lat": 37.37217,
+     "lon": -5.98787
+    },
+    {
+     "id": "node/3923539712",
+     "name": "Museo Naval Torre del Oro",
+     "lat": 37.38243,
+     "lon": -5.99626,
+     "address": "Paseo de Cristóbal Colón 41001"
     }
    ]
   },
@@ -515,7 +912,8 @@
      "lat": 37.39341,
      "lon": -6.00706,
      "openingHours": "Tu-Sa 10:30-13:00, 16:30-18:30; Su 10:30-14:00",
-     "wikipediaCount": 3
+     "wikipediaCount": 3,
+     "wikidataId": "Q3533183"
     },
     {
      "id": "way/49398691",
@@ -523,7 +921,11 @@
      "lat": 37.40367,
      "lon": -5.99296,
      "website": "https://www.camaraoscuraworld.com/torre-de-los-perdigones-sevilla/",
-     "wikipediaCount": 2
+     "wikipediaCount": 2,
+     "wikidataId": "Q6150604",
+     "kinds": [
+      "tower"
+     ]
     },
     {
      "id": "node/4345258294",
