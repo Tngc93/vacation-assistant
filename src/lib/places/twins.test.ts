@@ -22,6 +22,12 @@ describe("sameNameOnce", () => {
     expect(sameNameOnce(places)).toEqual(places);
   });
 
+  it("treats two OSM objects pointing to one Wikidata item as one place", () => {
+    const forum = { ...at("way/1", "Forum Romanum", 41.8925, 12.4853), wikidataId: "Q180212" };
+    const square = { ...at("way/2", "Piazza del Foro", 41.8931, 12.486), wikidataId: "Q180212" };
+    expect(sameNameOnce([forum, square, at("node/3", "Pantheon", 41.8986, 12.4769)]).map((p) => p.id)).toEqual(["way/1", "node/3"]);
+  });
+
   it("keeps the given order and drops repeated ids", () => {
     const places = [at("node/3", "C", 0, 0), at("node/1", "A", 0, 0), at("node/3", "C", 0, 0), at("node/2", "B", 0, 0)];
     expect(sameNameOnce(places).map((p) => p.name)).toEqual(["C", "A", "B"]);
