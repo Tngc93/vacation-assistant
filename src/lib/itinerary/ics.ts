@@ -107,6 +107,7 @@ function description(stop: PlanStop): string {
   return [
     `${CATEGORIES[stop.category].label} · ${stop.durationMin} dk (tahmini)`,
     stop.address ? `Adres: ${stop.address}` : null,
+    stop.exterior ? `Yalnızca dışarıdan görülür.${stop.exterior.note ? ` ${stop.exterior.note}.` : ""}` : null,
     stop.hours === "unknown" ? "Açılış saatlerini doğrula." : null,
     stop.closesSoon ? `Kapanış: ${stop.closesSoon}` : null,
     `${stop.source}: ${stop.sourceUrl}`,

@@ -28,6 +28,10 @@ export type PlanPlace = {
   walkThrough?: true;
   /** Visit length set by a hand-kept override (the Moulin Rouge, seen from outside). */
   visitMin?: number;
+  /** A residence closed to visitors (the Élysée): never a plan stop. */
+  noVisit?: true;
+  /** Seen from outside only, except in `openMonths` (Buckingham Palace's State Rooms open July–September). */
+  exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
   category: CategoryId;
 };
 
@@ -70,6 +74,8 @@ export type PlanStop = {
   country?: string;
   /** From the previous stop of the day; null for the first. */
   travel: Travel | null;
+  /** Seen from outside only on this day; `note` says why or what to see. */
+  exterior: { note: string | null } | null;
   /** OpenStreetMap, or Wikidata for a must-see place OSM does not have. */
   sourceUrl: string;
   source: "OpenStreetMap" | "Wikidata";
@@ -102,8 +108,13 @@ export type Itinerary = {
 };
 
 
-function visitMinutes(p: PlanPlace, kind: "daytime" | "evening"): number {
+/** Seen from outside on `date` (YYYY-MM-DD): an exterior-only place outside its open months. */
+const seenFromOutside = (p: PlanPlace, date: string) =>
+  Boolean(p.exterior && !p.exterior.openMonths?.includes(Number(date.slice(5, 7))));
+
+function visitMinutes(p: PlanPlace, kind: "daytime" | "evening", date: string): number {
   if (kind === "evening") return ITINERARY.visitMin.evening;
+  if (seenFromOutside(p, date)) return p.exterior?.visitMin ?? ITINERARY.exteriorOnlyMin;
   if (p.visitMin) return p.visitMin;
   const base =
     p.category === "see" && (p.wikipediaCount ?? 0) >= ITINERARY.landmarkMinWikipedias
@@ -255,12 +266,14 @@ function flightDayNote(first: boolean, flight: NonNullable<ItineraryInput["fligh
 function toStop(
   p: PlanPlace,
   kind: "daytime" | "evening",
+  date: string,
   start: number,
   travel: Travel | null,
   hours: "open" | "unknown",
   closesAt: number | null = null,
 ): PlanStop {
-  const durationMin = visitMinutes(p, kind);
+  const durationMin = visitMinutes(p, kind, date);
+  const outside = kind === "daytime" && seenFromOutside(p, date);
   const wikidataOnly = p.id.startsWith("wikidata/");
   const closesSoon = closesAt !== null && closesAt - (start + durationMin) <= ITINERARY.closingSoonMin ? hhmm(closesAt) : null;
   return {
@@ -280,6 +293,7 @@ function toStop(
     closesSoon,
     ...(p.country ? { country: p.country } : {}),
     travel,
+    exterior: outside ? { note: p.exterior?.note ?? null } : null,
     sourceUrl: wikidataOnly ? `https://www.wikidata.org/wiki/${p.wikidataId ?? p.id.slice(9)}` : `https://www.openstreetmap.org/${p.id}`,
     source: wikidataOnly ? "Wikidata" : "OpenStreetMap",
   };
@@ -310,7 +324,8 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const allIds = new Set([...input.daytime, ...input.evening].map((p) => shortId(p.id)));
   // Sights mapped as several OSM objects count once (the shared rule in places/twins.ts). Twins are removed
   // before skipping, so removing a place never brings back its twin.
-  const daytime = sameNameOnce(importanceOrder(input.daytime)).filter((p) => !skip.has(shortId(p.id)));
+  // Residences closed to visitors are not plan stops (they stay in the guide).
+  const daytime = sameNameOnce(importanceOrder(input.daytime)).filter((p) => !p.noVisit && !skip.has(shortId(p.id)));
   // Food and drink are not merged (the same name nearby is usually another branch of a chain); instead each
   // name is suggested as an evening place at most once in the plan.
   const seenEvening = new Set<string>();
@@ -400,11 +415,11 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     const window = b.day.daytime!;
     const base = (b.day.number - 1) * 1440;
     const travel: Travel | null = b.at ? travelBetween(b.at, p) : null;
-    const visit = visitMinutes(p, "daytime");
+    const visit = visitMinutes(p, "daytime", b.day.date);
     for (let start = roundUp(b.clock + (travel?.scheduledMin ?? 0)); start + visit <= window.end; start += WAIT_STEP_MIN) {
       const { verdict, closesAt } = openCheck(p.openingHours, weekdayOf(b.day.date), start - base, start + visit - base);
       if (verdict !== "closed") {
-        b.stops.push(toStop(p, "daytime", start - base, travel, verdict, closesAt));
+        b.stops.push(toStop(p, "daytime", b.day.date, start - base, travel, verdict, closesAt));
         used.add(p.id);
         b.at = p;
         b.clock = start + visit;
@@ -481,7 +496,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     used.add(pick.p.id);
     eveningNames.add(nameKey(pick.p));
     const travel = lastStop ? travelBetween(lastStop, pick.p) : null;
-    stops.push(toStop(pick.p, "evening", start, travel, pick.verdict === "open" ? "open" : "unknown", pick.closesAt));
+    stops.push(toStop(pick.p, "evening", day.date, start, travel, pick.verdict === "open" ? "open" : "unknown", pick.closesAt));
   }
 
   const lastIndex = days.length - 1;

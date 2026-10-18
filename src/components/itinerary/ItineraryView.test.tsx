@@ -100,6 +100,15 @@ describe("ItineraryView", () => {
     expect(screen.getByText("San Pietro Bazilikası").closest("li")!).toHaveTextContent("VATİKAN · ");
   });
 
+  it("says when a stop is seen from outside only, with its note", () => {
+    const palace = { ...SIGHTS[0], name: "Buckingham Palace", exterior: { visitMin: 30, openMonths: [7, 8, 9], note: "Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma" } };
+    render(<ItineraryView input={{ ...input, daytime: [palace, ...SIGHTS.slice(1)] }} initialSkip={[]} cityName="Londra" center={{ lat: 41.39, lon: 2.17 }} />);
+    const stop = screen.getByText("Buckingham Palace").closest("li")!;
+    expect(within(stop).getByText("YALNIZCA DIŞARIDAN")).toHaveClass("text-sea");
+    expect(stop).toHaveTextContent("Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma");
+    expect(stop).toHaveTextContent("30 DK");
+  });
+
   it("opens a shared link with the same removals", () => {
     renderView(["n100", "w10"]);
     expect(screen.queryByText("Sight 0-0")).not.toBeInTheDocument();

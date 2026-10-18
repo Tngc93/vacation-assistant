@@ -372,6 +372,34 @@ describe("the trip's must-see list", () => {
     expect(allStops(p).find((s) => s.id === avenue.id)?.durationMin).toBe(ITINERARY.walkThroughMaxMin);
   });
 
+  it("never plans a residence closed to visitors (the Élysée)", () => {
+    const elysee = { ...SIGHTS[0], name: "Palais de l'Élysée", wikipediaCount: 64, noVisit: true as const };
+    const p = buildItinerary({ ...base, daytime: [elysee, ...SIGHTS.slice(1)] });
+    expect(allStops(p).some((s) => s.id === elysee.id)).toBe(false);
+  });
+
+  it("plans an exterior-only place as a short stop, seen from outside", () => {
+    const bourbon = { ...SIGHTS[0], name: "Palais Bourbon", exterior: {} };
+    const stop = allStops(buildItinerary({ ...base, daytime: [bourbon, ...SIGHTS.slice(1)] })).find((s) => s.id === bourbon.id)!;
+    expect(ITINERARY.exteriorOnlyMin).toBe(20);
+    expect(stop).toMatchObject({ durationMin: 20, exterior: { note: null } });
+  });
+
+  it("follows the trip's month for a seasonal place (Buckingham Palace: inside July–September)", () => {
+    const palace = {
+      ...SIGHTS[0],
+      name: "Buckingham Palace",
+      wikipediaCount: 93,
+      exterior: { visitMin: 30, openMonths: [7, 8, 9], note: "Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma" },
+    };
+    const stopOn = (depart: string, ret: string) =>
+      allStops(buildItinerary({ ...base, depart, return: ret, daytime: [palace, ...SIGHTS.slice(1)] })).find((s) => s.id === palace.id)!;
+    expect(stopOn("2026-11-14", "2026-11-18")).toMatchObject({ durationMin: 30, exterior: { note: palace.exterior.note } });
+    expect(stopOn("2026-08-14", "2026-08-18")).toMatchObject({ durationMin: ITINERARY.landmarkVisitMin, exterior: null });
+    // A trip across the season's end follows each day's own month.
+    expect(stopOn("2026-09-28", "2026-10-02").durationMin).toBeGreaterThan(0);
+  });
+
   it("uses an override's visit length (the Moulin Rouge, seen from outside)", () => {
     const facade = { ...SIGHTS[0], name: "Moulin Rouge", wikipediaCount: 53, visitMin: 30 };
     const p = buildItinerary({ ...base, daytime: [facade, ...SIGHTS.slice(1)] });

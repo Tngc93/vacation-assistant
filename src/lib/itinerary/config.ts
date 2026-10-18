@@ -33,6 +33,8 @@ export const ITINERARY = {
   landmarkVisitMin: 120,
   /** Streets, squares, bridges and promenades are walked through: at most this long, however well known (the Champs-Élysées). */
   walkThroughMaxMin: 45,
+  /** A place seen from outside only (place-overrides.ts `exteriorOnly`), unless its entry sets a length. */
+  exteriorOnlyMin: 20,
 
   /**
    * The trip's must-see list: as many of the best-known places as the days can hold, estimated at one
