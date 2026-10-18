@@ -208,6 +208,19 @@ describe("buildItinerary", () => {
         expect(distanceKm(firsts[i].lat, firsts[i].lon, firsts[j].lat, firsts[j].lon)).toBeGreaterThanOrEqual(ITINERARY.anchorMinKm);
   });
 
+  it("puts the best-known place on the first full day, even in a thinner area (Sagrada Família on day 2, not day 4)", () => {
+    // Area 2 has fewer known places (a lighter area) but holds the trip's best-known sight.
+    const daytime = SIGHTS.map((p) =>
+      p.name === "Sight 2-0" ? { ...p, wikipediaCount: 150 } : p.name.startsWith("Sight 2-") ? { ...p, wikipediaCount: undefined } : p,
+    );
+    const plan = buildItinerary({ ...base, daytime });
+    const firstFull = plan.days.find((d) => d.tags.includes("TAM GÜN"))!;
+    expect(firstFull.stops.map((s) => s.name)).toContain("Sight 2-0");
+    // Without the fix the lighter area got the last full day.
+    const lastFull = plan.days.filter((d) => d.tags.includes("TAM GÜN")).at(-1)!;
+    expect(lastFull.stops.map((s) => s.name)).not.toContain("Sight 2-0");
+  });
+
   it("orders a day by nearest neighbour and estimates the walk", () => {
     const day = buildItinerary(base).days[1];
     const [a, b] = day.stops;

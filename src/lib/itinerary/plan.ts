@@ -338,10 +338,26 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const nearestAnchor = (p: PlanPlace) =>
     chosenAnchors.reduce((best, a, i) => (dist(p, a) < dist(p, chosenAnchors[best]) - 1e-9 ? i : best), 0);
   const weight = chosenAnchors.map((_, i) => mustSees.filter((p) => nearestAnchor(p) === i).length);
-  const anchors = chosenAnchors
+  const byWeight = chosenAnchors
     .map((a, i) => ({ a, i }))
     .sort((x, y) => weight[y.i] - weight[x.i] || x.i - y.i)
     .map(({ a }) => a);
+  // The area of the trip's best-known must-see takes the first long day, however thin it is (Sagrada Família on
+  // day 2, not on the way home); among days of the same length, areas follow their best-known must-see.
+  const topArea = mustSees.length ? byWeight.indexOf(chosenAnchors[nearestAnchor(mustSees[0])]) : -1;
+  if (topArea > 0) byWeight.unshift(...byWeight.splice(topArea, 1));
+  const bestRankOf = (i: number) => {
+    const rank = mustSees.findIndex((p) => byWeight.reduce((best, a, j) => (dist(p, a) < dist(p, byWeight[best]) - 1e-9 ? j : best), 0) === i);
+    return rank === -1 ? Infinity : rank;
+  };
+  const anchors: PlanPlace[] = [];
+  for (let start = 0; start < byWeight.length; ) {
+    let end = start + 1;
+    while (end < byWeight.length && end < order.length && start < order.length && length(order[end]) === length(order[start])) end++;
+    const group = Array.from({ length: end - start }, (_, k) => start + k).sort((x, y) => bestRankOf(x) - bestRankOf(y) || x - y);
+    anchors.push(...group.map((i) => byWeight[i]));
+    start = end;
+  }
   const areaOf = new Map<string, number>();
   for (const p of daytime) {
     let best = 0;
