@@ -4,7 +4,7 @@ import { nameKey, sameNameOnce } from "@/lib/places/twins";
 import { addDays, daysBetween } from "@/lib/search/dates";
 import { DAYTIME_CATEGORIES, ITINERARY, type DaytimeCategory } from "./config";
 import { shortId } from "./ids";
-import { openVerdict } from "./openCheck";
+import { openCheck } from "./openCheck";
 import { withLocative } from "@/lib/places/hours";
 import { hhmm, roundDown, roundUp, toMinutes, weekdayOf } from "./time";
 import { travelBetween, type Travel } from "./travel";
@@ -20,6 +20,14 @@ export type PlanPlace = {
   openingHours?: string;
   wikipediaCount?: number;
   detailed?: true;
+  /** Wikidata item, when the place has one (viewpoints without one are fillers only). */
+  wikidataId?: string;
+  /** ISO code when the place is in another country (the Vatican from Rome). */
+  country?: string;
+  /** Streets, squares, bridges: walked through, so never a long visit. */
+  walkThrough?: true;
+  /** Visit length set by a hand-kept override (the Moulin Rouge, seen from outside). */
+  visitMin?: number;
   category: CategoryId;
 };
 
@@ -56,9 +64,15 @@ export type PlanStop = {
   durationMin: number;
   /** "unknown": no readable opening hours, so the card says to check them. */
   hours: "open" | "unknown";
+  /** Closing time when it is within 30 minutes of the visit's end: a real warning. */
+  closesSoon: string | null;
+  /** ISO code when the place is in another country (the Vatican from Rome). */
+  country?: string;
   /** From the previous stop of the day; null for the first. */
   travel: Travel | null;
-  osmUrl: string;
+  /** OpenStreetMap, or Wikidata for a must-see place OSM does not have. */
+  sourceUrl: string;
+  source: "OpenStreetMap" | "Wikidata";
 };
 
 export type DayTag = "VARIŞ GÜNÜ" | "DÖNÜŞ GÜNÜ" | "YARIM GÜN" | "TAM GÜN";
@@ -90,7 +104,56 @@ export type Itinerary = {
 
 function visitMinutes(p: PlanPlace, kind: "daytime" | "evening"): number {
   if (kind === "evening") return ITINERARY.visitMin.evening;
-  return ITINERARY.visitMin[p.category as DaytimeCategory] ?? ITINERARY.visitMin.see;
+  if (p.visitMin) return p.visitMin;
+  const base =
+    p.category === "see" && (p.wikipediaCount ?? 0) >= ITINERARY.landmarkMinWikipedias
+      ? ITINERARY.landmarkVisitMin
+      : (ITINERARY.visitMin[p.category as DaytimeCategory] ?? ITINERARY.visitMin.see);
+  return p.walkThrough ? Math.min(base, ITINERARY.walkThroughMaxMin) : base;
+}
+
+// Words that name a kind of place; a name made only of these (and small words) says little: "Torre de l'església".
+const TYPE_WORDS = new Set(
+  (
+    "torre tower tour turm mirador viewpoint belvedere aussichtspunkt vista esglesia iglesia igreja chiesa church eglise kirche kerk kilise " +
+    "capella chapel chapelle kapelle cappella font fuente fontana fountain brunnen statue estatua monument monumento placa plaza piazza " +
+    "square place platz parc park parque jardi garden puerta porta gate tor pont puente ponte bridge brucke cami mosque cami"
+  ).split(" "),
+);
+const SMALL_WORDS = new Set("de del la l el les los the of di du des der die das da do dos sur on e i y and et st saint san sant santa".split(" "));
+
+/** "Torre de l'església", "Mirador": a type of place, not a name (unless the place is well known). */
+export function isGenericName(p: { name: string; wikipediaCount?: number }): boolean {
+  if ((p.wikipediaCount ?? 0) >= ITINERARY.mustSeeMinWikipedias) return false;
+  const words = looseWords(p.name).filter((w) => !SMALL_WORDS.has(w));
+  return words.length > 0 && words.length <= 2 && words.every((w) => TYPE_WORDS.has(w));
+}
+const looseWords = (name: string) =>
+  name.toLocaleLowerCase("tr").normalize("NFD").replace(/\p{M}/gu, "").split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+
+/** A viewpoint without a Wikidata item: at most one a day, and only to fill a gap. */
+const unnamedViewpoint = (p: PlanPlace) => p.category === "viewpoint" && !p.wikidataId && !p.wikipediaCount;
+const onMustSeeList = (p: PlanPlace) =>
+  (p.wikipediaCount ?? 0) >= ITINERARY.mustSeeMinWikipedias && !isGenericName(p) && !unnamedViewpoint(p);
+
+/**
+ * The trip's must-see list: the best-known places, as many as `capacity`,
+ * museums at most 40% of it, and one visit per spot (places within 80 m of
+ * a better-known one are the same visit).
+ */
+export function chooseMustSees(ordered: readonly PlanPlace[], capacity: number): PlanPlace[] {
+  const museumCap = Math.max(1, Math.round(capacity * ITINERARY.mustSeeMuseumShare));
+  const chosen: PlanPlace[] = [];
+  let museums = 0;
+  for (const p of ordered) {
+    if (chosen.length >= capacity) break;
+    if (!onMustSeeList(p)) continue;
+    if (p.category === "museum" && museums >= museumCap) continue;
+    if (chosen.some((c) => dist(c, p) <= ITINERARY.sameSpotKm)) continue;
+    chosen.push(p);
+    if (p.category === "museum") museums++;
+  }
+  return chosen;
 }
 
 /** Total order: Wikipedia language count, then category, then stored rank, then id. */
@@ -144,6 +207,8 @@ type DayFrame = {
   evening: number | null;
 };
 
+/** With `wait`, a later start is tried in steps of this many minutes. */
+const WAIT_STEP_MIN = 15;
 const SHORTEST_VISIT = Math.min(ITINERARY.visitMin.see, ITINERARY.visitMin.museum, ITINERARY.visitMin.viewpoint);
 
 function frames(input: ItineraryInput): DayFrame[] {
@@ -187,8 +252,17 @@ function flightDayNote(first: boolean, flight: NonNullable<ItineraryInput["fligh
   return null;
 }
 
-function toStop(p: PlanPlace, kind: "daytime" | "evening", start: number, travel: Travel | null, hours: "open" | "unknown"): PlanStop {
+function toStop(
+  p: PlanPlace,
+  kind: "daytime" | "evening",
+  start: number,
+  travel: Travel | null,
+  hours: "open" | "unknown",
+  closesAt: number | null = null,
+): PlanStop {
   const durationMin = visitMinutes(p, kind);
+  const wikidataOnly = p.id.startsWith("wikidata/");
+  const closesSoon = closesAt !== null && closesAt - (start + durationMin) <= ITINERARY.closingSoonMin ? hhmm(closesAt) : null;
   return {
     id: p.id,
     shortId: shortId(p.id),
@@ -203,8 +277,11 @@ function toStop(p: PlanPlace, kind: "daytime" | "evening", start: number, travel
     end: hhmm(start + durationMin),
     durationMin,
     hours,
+    closesSoon,
+    ...(p.country ? { country: p.country } : {}),
     travel,
-    osmUrl: `https://www.openstreetmap.org/${p.id}`,
+    sourceUrl: wikidataOnly ? `https://www.wikidata.org/wiki/${p.wikidataId ?? p.id.slice(9)}` : `https://www.openstreetmap.org/${p.id}`,
+    source: wikidataOnly ? "Wikidata" : "OpenStreetMap",
   };
 }
 
@@ -248,7 +325,23 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   // Days with the most daytime come first, then by date: they get the most important anchors.
   const length = (d: DayFrame) => (d.daytime ? d.daytime.end - d.daytime.start : 0);
   const order = days.filter((d) => d.daytime).sort((a, b) => length(b) - length(a) || a.number - b.number);
-  const anchors = chooseAnchors(daytime, order.length);
+
+  // 1. The trip's must-see list, sized to the whole trip's daytime.
+  const capacity = order.reduce((sum, d) => sum + Math.min(ITINERARY.maxDaytimeStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin)), 0);
+  const mustSees = chooseMustSees(daytime, capacity);
+  const isMust = new Set(mustSees.map((p) => p.id));
+  const topFive = new Set(mustSees.slice(0, 5).map((p) => p.id));
+
+  // 2. Areas: one anchor per day among the must-sees. The area with the most must-sees gets the longest day, so a
+  //    dense old town is not squeezed into an arrival afternoon.
+  const chosenAnchors = chooseAnchors(mustSees.length ? mustSees : daytime, order.length);
+  const nearestAnchor = (p: PlanPlace) =>
+    chosenAnchors.reduce((best, a, i) => (dist(p, a) < dist(p, chosenAnchors[best]) - 1e-9 ? i : best), 0);
+  const weight = chosenAnchors.map((_, i) => mustSees.filter((p) => nearestAnchor(p) === i).length);
+  const anchors = chosenAnchors
+    .map((a, i) => ({ a, i }))
+    .sort((x, y) => weight[y.i] - weight[x.i] || x.i - y.i)
+    .map(({ a }) => a);
   const areaOf = new Map<string, number>();
   for (const p of daytime) {
     let best = 0;
@@ -258,45 +351,96 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     areaOf.set(p.id, best);
   }
 
-  order.forEach((day, i) => {
-    const window = day.daytime!;
-    const weekday = weekdayOf(day.date);
-    const base = (day.number - 1) * 1440;
-    const anchor = anchors[i];
-    const stops: PlanStop[] = [];
-    let at: PlanPlace | null = null;
-    let clock = window.start;
+  // Must-sees go to days by area, but each day only takes what it can hold: in importance order, a place goes to
+  // the day with the nearest anchor that still has room, so neighbourhoods stay together and none is crowded out.
+  const dayCapacity = (d: DayFrame) => Math.min(ITINERARY.maxDaytimeStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin));
+  const room = order.map(dayCapacity);
+  const mustDay = new Map<string, number>();
+  for (const p of mustSees) {
+    const byAnchor = anchors.map((a, i) => i).sort((i, j) => dist(p, anchors[i]) - dist(p, anchors[j]) || i - j);
+    const target = byAnchor.find((i) => i < room.length && room[i] > 0);
+    if (target === undefined) continue;
+    mustDay.set(p.id, target);
+    room[target]--;
+  }
 
-    // Fill the daytime window by time; never more than six stops.
-    while (stops.length < ITINERARY.maxDaytimeStops) {
-      const unused = daytime.filter((p) => !used.has(p.id));
-      const own = unused.filter((p) => anchor && areaOf.get(p.id) === i);
-      const others = unused.filter((p) => !anchor || areaOf.get(p.id) !== i);
-      const from: PlanPlace | null = at ?? anchor ?? null;
-      const near = (list: PlanPlace[]) =>
-        from ? [...list].sort((a, b) => dist(from, a) - dist(from, b) || byId(a, b)) : list;
-      // The first stop is the area's most important open place; then nearest neighbour.
-      const candidates: PlanPlace[] = at === null ? [...own, ...near(others)] : [...near(own), ...near(others)];
+  // A day being built: its stops so far, where it is and when.
+  type Build = { day: DayFrame; area: number; stops: PlanStop[]; at: PlanPlace | null; clock: number; viewpoints: number };
+  const builds: Build[] = order.map((day, area) => ({ day, area, stops: [], at: null, clock: day.daytime!.start, viewpoints: 0 }));
+  const byPlace = new Map(daytime.map((p) => [p.id, p]));
+  /** Another record of a place already in the plan (within 80 m): the same visit. */
+  const sameSpotTaken = (p: PlanPlace) =>
+    [...used].some((id) => {
+      const q = byPlace.get(id);
+      return q ? dist(q, p) <= ITINERARY.sameSpotKm : false;
+    });
 
-      let chosen: PlanStop | null = null;
-      for (const p of candidates) {
-        const travel: Travel | null = at ? travelBetween(at, p) : null;
-        const start = roundUp(clock + (travel?.scheduledMin ?? 0));
-        const end = start + visitMinutes(p, "daytime");
-        if (end > window.end) continue;
-        const verdict = openVerdict(p.openingHours, weekday, start - base, end - base);
-        if (verdict === "closed") continue;
-        chosen = toStop(p, "daytime", start - base, travel, verdict);
+  /**
+   * Appends `p` to the day if it fits before the day ends and is not surely closed then. With `wait`, a place
+   * that is closed at the next free moment may start later that day, when it opens (for the top five).
+   */
+  const tryAppend = (b: Build, p: PlanPlace, wait = false): boolean => {
+    if (b.stops.length >= ITINERARY.maxDaytimeStops || used.has(p.id) || sameSpotTaken(p)) return false;
+    const window = b.day.daytime!;
+    const base = (b.day.number - 1) * 1440;
+    const travel: Travel | null = b.at ? travelBetween(b.at, p) : null;
+    const visit = visitMinutes(p, "daytime");
+    for (let start = roundUp(b.clock + (travel?.scheduledMin ?? 0)); start + visit <= window.end; start += WAIT_STEP_MIN) {
+      const { verdict, closesAt } = openCheck(p.openingHours, weekdayOf(b.day.date), start - base, start + visit - base);
+      if (verdict !== "closed") {
+        b.stops.push(toStop(p, "daytime", start - base, travel, verdict, closesAt));
         used.add(p.id);
-        at = p;
-        clock = end;
-        break;
+        b.at = p;
+        b.clock = start + visit;
+        if (unnamedViewpoint(p)) b.viewpoints++;
+        return true;
       }
-      if (!chosen) break;
-      stops.push(chosen);
+      if (!wait) return false;
     }
-    planned.set(day.number, stops);
-  });
+    return false;
+  };
+  const nearFirst = (from: PlanPlace | null, list: PlanPlace[]) =>
+    from ? [...list].sort((a, b) => dist(from, a) - dist(from, b) || byId(a, b)) : list;
+  /** Keeps appending the nearest candidate that fits; stops when none does. */
+  const fill = (b: Build, pool: () => PlanPlace[]) => {
+    for (;;) {
+      const next = nearFirst(b.at, pool()).find((p) => tryAppend(b, p));
+      if (!next) return;
+    }
+  };
+
+  // 3. The five best-known places first, before anything can fill their days: each on its area's day, or else the
+  //    first day it is open, waiting for its opening time if needed. Only capacity or being closed all trip keeps
+  //    one out.
+  for (const p of mustSees.filter((q) => topFive.has(q.id))) {
+    const own = builds.filter((b) => b.area === mustDay.get(p.id));
+    const others = builds.filter((b) => b.area !== mustDay.get(p.id)).sort((a, b) => a.day.number - b.day.number);
+    [...own, ...others].find((b) => tryAppend(b, p, true));
+  }
+  // 4. Each day takes the rest of its must-sees, starting with the most important, then nearest neighbour.
+  for (const b of builds) {
+    const own = mustSees.filter((p) => mustDay.get(p.id) === b.area);
+    if (b.at === null) own.find((p) => tryAppend(b, p));
+    fill(b, () => own.filter((p) => !used.has(p.id)));
+  }
+  // 5. Must-sees that did not fit their area's day (time, or closed that day) go to another day with room, nearest first.
+  for (const p of mustSees.filter((q) => !used.has(q.id))) {
+    const byDistance = [...builds].sort(
+      (a, b) => (a.at ? dist(a.at, p) : Infinity) - (b.at ? dist(b.at, p) : Infinity) || a.day.number - b.day.number,
+    );
+    byDistance.find((b) => tryAppend(b, p));
+  }
+  // 6. Fill the remaining time: other known places, then little-known ones, then names that only say what they are,
+  //    and at most one viewpoint without a Wikidata item a day.
+  for (const b of builds) {
+    const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id));
+    const ownFirst = (list: PlanPlace[]) => [...list.filter((p) => areaOf.get(p.id) === b.area), ...list.filter((p) => areaOf.get(p.id) !== b.area)];
+    fill(b, () => ownFirst(rest().filter(onMustSeeList)));
+    fill(b, () => ownFirst(rest().filter((p) => !onMustSeeList(p) && !isGenericName(p) && !unnamedViewpoint(p))));
+    fill(b, () => ownFirst(rest().filter((p) => isGenericName(p) && !unnamedViewpoint(p))));
+    if (b.viewpoints < 1) nearFirst(b.at, rest().filter(unnamedViewpoint)).find((p) => tryAppend(b, p));
+    planned.set(b.day.number, b.stops);
+  }
 
   // Evening places, in date order, near each day's last stop (or the day's anchor, or the city's first sight).
   for (const day of days) {
@@ -311,7 +455,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     const end = start + ITINERARY.visitMin.evening;
     const open = evening
       .filter((p) => !used.has(p.id) && !eveningNames.has(nameKey(p)))
-      .map((p) => ({ p, verdict: openVerdict(p.openingHours, weekday, start, end), km: dist(ref, p) }))
+      .map((p) => ({ p, ...openCheck(p.openingHours, weekday, start, end), km: dist(ref, p) }))
       .filter((c) => c.verdict !== "closed");
     const close = open.filter((c) => c.km <= ITINERARY.eveningRadiusKm);
     const pick = (close.length
@@ -321,7 +465,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     used.add(pick.p.id);
     eveningNames.add(nameKey(pick.p));
     const travel = lastStop ? travelBetween(lastStop, pick.p) : null;
-    stops.push(toStop(pick.p, "evening", start, travel, pick.verdict === "open" ? "open" : "unknown"));
+    stops.push(toStop(pick.p, "evening", start, travel, pick.verdict === "open" ? "open" : "unknown", pick.closesAt));
   }
 
   const lastIndex = days.length - 1;

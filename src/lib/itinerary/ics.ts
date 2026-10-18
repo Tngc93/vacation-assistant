@@ -108,7 +108,8 @@ function description(stop: PlanStop): string {
     `${CATEGORIES[stop.category].label} · ${stop.durationMin} dk (tahmini)`,
     stop.address ? `Adres: ${stop.address}` : null,
     stop.hours === "unknown" ? "Açılış saatlerini doğrula." : null,
-    `OpenStreetMap: ${stop.osmUrl}`,
+    stop.closesSoon ? `Kapanış: ${stop.closesSoon}` : null,
+    `${stop.source}: ${stop.sourceUrl}`,
   ]
     .filter(Boolean)
     .join("\n");
@@ -137,7 +138,7 @@ export function buildIcs(plan: Itinerary, { cityName, now }: { cityName: string;
       `LOCATION:${escapeText(stop.address ?? stop.name)}`,
       `GEO:${stop.lat.toFixed(6)};${stop.lon.toFixed(6)}`,
       `DESCRIPTION:${escapeText(description(stop))}`,
-      `URL:${stop.osmUrl}`,
+      `URL:${stop.sourceUrl}`,
       "END:VEVENT",
     );
   }

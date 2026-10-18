@@ -28,6 +28,25 @@ export const ITINERARY = {
 
   /** Visit length per category. */
   visitMin: { museum: 120, see: 60, viewpoint: 30, evening: 120 } satisfies Record<"museum" | "see" | "viewpoint" | "evening", number>,
+  /** Sights this well known (Wikipedia languages) get a longer visit: Sagrada Família, the Colosseum. */
+  landmarkMinWikipedias: 60,
+  landmarkVisitMin: 120,
+  /** Streets, squares, bridges and promenades are walked through: at most this long, however well known (the Champs-Élysées). */
+  walkThroughMaxMin: 45,
+
+  /**
+   * The trip's must-see list: as many of the best-known places as the days can hold, estimated at one
+   * stop per this many minutes of daytime (a visit plus the walk), at most 6 a day.
+   */
+  mustSeeStopMin: 105,
+  /** A place needs at least this many Wikipedia languages to be on the must-see list. */
+  mustSeeMinWikipedias: 5,
+  /** Museums take at most this share of the must-see list, so a trip is not only museums. */
+  mustSeeMuseumShare: 0.4,
+  /** A visit ending this close to closing time gets a warning ("KAPANIŞA YAKIN"). */
+  closingSoonMin: 30,
+  /** Places this close together are one visit (the Louvre, its pyramid and its palace). */
+  sameSpotKm: 0.08,
 
   /** Walking estimate: straight-line distance × detour factor at walking speed. */
   walkDetour: 1.3,
