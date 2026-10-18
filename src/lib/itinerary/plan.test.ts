@@ -400,6 +400,19 @@ describe("the trip's must-see list", () => {
     expect(stopOn("2026-09-28", "2026-10-02").durationMin).toBeGreaterThan(0);
   });
 
+  it("treats a remote must-see as an area of its own, and never as a filler", () => {
+    // 5 km east of the test city: well known (a must-see) and remote.
+    const atomium = { ...SIGHTS[0], id: "wikidata/Q180901", name: "Atomium", lat: 41.39, lon: 2.23, wikipediaCount: 52, remote: true as const };
+    const plan = buildItinerary({ ...base, daytime: [...SIGHTS, atomium] });
+    const day = plan.days.find((d) => d.stops.some((s) => s.id === atomium.id))!;
+    expect(day.stops.find((s) => s.id === atomium.id)?.remote).toBe(true);
+    // It opens its day (its own area) rather than being squeezed between central stops.
+    expect(day.stops[0].id).toBe(atomium.id);
+    // A remote place that is not a must-see is not used to fill a day.
+    const obscure = { ...atomium, wikipediaCount: undefined };
+    expect(allStops(buildItinerary({ ...base, daytime: [...SIGHTS, obscure] })).some((s) => s.id === atomium.id)).toBe(false);
+  });
+
   it("uses an override's visit length (the Moulin Rouge, seen from outside)", () => {
     const facade = { ...SIGHTS[0], name: "Moulin Rouge", wikipediaCount: 53, visitMin: 30 };
     const p = buildItinerary({ ...base, daytime: [facade, ...SIGHTS.slice(1)] });

@@ -167,7 +167,7 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
   });
   // Relink overrides and link tags (an item without a coordinate near the OSM object), as `npm run data:kinds` does.
   const refreshed = await withBackoff(`${city.cityCode} refresh`, () => refreshKinds(built, overrides, { kinds }));
-  if (refreshed.missing.length) log(`  ${city.cityCode}: relink not found for ${refreshed.missing.join(" ")}`);
+  if (refreshed.missing.length) log(`  ${city.cityCode}: override not found for ${refreshed.missing.join(" ")}`);
   return placesFileSchema.parse(refreshed.file);
 }
 

@@ -32,7 +32,11 @@ for (const name of files) {
     continue;
   }
   writeFileSync(path.join(DIR, name), `${JSON.stringify(placesFileSchema.parse(result.file), null, 1)}\n`);
-  const note = [result.relinked.length ? `relinked ${result.relinked.join(" ")}` : "", result.missing.length ? `RELINK NOT FOUND ${result.missing.join(" ")}` : ""];
+  const note = [
+    result.relinked.length ? `relinked ${result.relinked.join(" ")}` : "",
+    result.added.length ? `added ${result.added.join(" ")}` : "",
+    result.missing.length ? `NOT FOUND ${result.missing.join(" ")}` : "",
+  ];
   log(`${file.cityCode} done ${note.filter(Boolean).join(", ")}`);
   await sleep(1_000);
 }

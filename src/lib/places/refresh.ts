@@ -7,18 +7,19 @@ import { fetchCoordinates, fetchKinds } from "./landmarks";
 import type { Fetcher } from "./overpass";
 import { compareRanked } from "./rank";
 import { sameNameOnce } from "./twins";
-import { fetchWikipediaCounts } from "./wikidata";
+import { fetchEntitySummaries, fetchWikipediaCounts } from "./wikidata";
 
 /**
  * Brings a stored file's Wikidata facts up to date without Overpass (data script only): applies the relink
  * overrides (the right item's Wikipedia count; a Wikidata-only copy of that item goes, the OSM object is it),
- * then stores every sight's kinds and, for OSM objects, whether their item has a coordinate near them.
+ * adds included places the file does not have (the Atomium, beyond the city radius) from Wikidata, then
+ * stores every sight's kinds and, for OSM objects, whether their item has a coordinate near them.
  */
 export async function refreshKinds(
   file: PlacesFile,
   overrides: CityOverrides,
   { fetcher, kinds: known }: { fetcher?: Fetcher; kinds?: ReadonlyMap<string, readonly KindTag[]> } = {},
-): Promise<{ file: PlacesFile; relinked: string[]; missing: string[] }> {
+): Promise<{ file: PlacesFile; relinked: string[]; added: string[]; missing: string[] }> {
   const ids = (Object.keys(file.categories) as CategoryId[]).filter((c) => CATEGORIES[c].ranking === "wikipedia");
   const categories = structuredClone(file.categories);
   const placesOf = (c: CategoryId) => {
@@ -48,6 +49,35 @@ export async function refreshKinds(
     }
   }
 
+  // 1b. Included places the file does not have, as Wikidata places among the sights.
+  const added: string[] = [];
+  const have = new Set(ids.flatMap(placesOf).flatMap((p) => p.wikidataId ?? []));
+  const absent = (overrides.include ?? []).map((o) => o.qid).filter((q) => !have.has(q));
+  const see = categories.see;
+  if (absent.length && see.status === "ok") {
+    const summaries = await fetchEntitySummaries(absent, { fetcher });
+    const at = await fetchCoordinates(absent, { fetcher });
+    for (const qid of absent) {
+      const info = summaries.get(qid);
+      const point = at.get(qid)?.[0];
+      const name = info?.tr ?? info?.en;
+      if (!info || !point || !name) {
+        missing.push(qid);
+        continue;
+      }
+      see.places.push({
+        id: `wikidata/${qid}`,
+        name,
+        ...(info.en && info.en !== name ? { localName: info.en } : {}),
+        lat: Number(point.lat.toFixed(5)),
+        lon: Number(point.lon.toFixed(5)),
+        ...(info.wikipedias ? { wikipediaCount: info.wikipedias } : {}),
+        wikidataId: qid,
+      });
+      added.push(qid);
+    }
+  }
+
   // 2. Kinds and link tags.
   const qids = ids.flatMap(placesOf).flatMap((p) => p.wikidataId ?? []);
   // Kinds the caller already has are reused; the rest (all of them, or a relink's new item) are asked for.
@@ -69,5 +99,5 @@ export async function refreshKinds(
     // A relink can make two objects the same item (Big Ben and Elizabeth Tower): keep it once, at its best rank.
     entry.places = sameNameOnce(entry.places);
   }
-  return { file: { ...file, categories }, relinked, missing };
+  return { file: { ...file, categories }, relinked, added, missing };
 }

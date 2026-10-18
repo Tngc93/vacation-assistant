@@ -2,7 +2,10 @@
  * Hand-kept exceptions to the sight rules (src/lib/places/rules.ts), per city. Each entry names its Wikidata
  * item and says why in one line; src/data/place-overrides.test.ts checks every item against the city's data.
  *
- * - `include`: show a place the rules would leave out (a concert hall without a heritage listing).
+ * - `include`: show a place the rules would leave out (a concert hall without a heritage listing); one the data
+ *   does not have at all (beyond the city radius) is added by `npm run data:kinds`. `remote` marks it far from the
+ *   centre: "MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR", and the plan treats it as an area of its own.
+ * - `visit`: only a visit length (Lenin's Mausoleum: a short visit, queue included).
  * - `exclude`: hide a place the rules would show.
  * - `open`: a residence the rules keep out of the plan, but which visitors can enter.
  * - `exteriorOnly`: a plan stop seen from outside only (20 min unless `visitMin`); with `openMonths`, a normal
@@ -16,6 +19,8 @@ export type PlaceOverride = {
   reason: string;
   /** Visit length in the plan, in minutes, when the usual one does not fit (a facade seen from outside). */
   visitMin?: number;
+  /** `include` only: far from the centre (Atomium, 5 km), reached by public transport. */
+  remote?: true;
 };
 export type ExteriorOverride = PlaceOverride & {
   /** Months (1–12) when the inside is open and the visit is a normal one. */
@@ -38,6 +43,7 @@ export type CityOverrides = {
   exclude?: readonly PlaceOverride[];
   open?: readonly PlaceOverride[];
   exteriorOnly?: readonly ExteriorOverride[];
+  visit?: readonly (PlaceOverride & { visitMin: number })[];
   relink?: readonly RelinkOverride[];
 };
 
