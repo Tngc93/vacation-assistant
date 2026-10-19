@@ -1,14 +1,18 @@
 "use client";
 
-import { CalendarPlus, Map as MapIcon, RotateCcw, X } from "lucide-react";
+import { CalendarPlus, Map as MapIcon, RotateCcw, Sparkles, X } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { AiPanel } from "@/components/ai/AiPanel";
 import { Button, buttonClasses, Caption, Skeleton } from "@/components/ui";
+import type { AiPlan } from "@/lib/ai/assistant";
+import { applyEdits, diffPlans, encodeEdits, encodePinned, pinnedFromPlan, type EditBatch } from "@/lib/ai/edits";
 import { cn } from "@/lib/cn";
 import { formatDay } from "@/lib/format";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
-import { buildItinerary, type DayTag, type ItineraryInput, type PlanDay, type PlanStop } from "@/lib/itinerary/plan";
+import type { EveningCategory } from "@/lib/itinerary/config";
+import { buildItinerary, type DayTag, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop } from "@/lib/itinerary/plan";
 import { CATEGORIES } from "@/lib/places/categories";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
@@ -19,10 +23,20 @@ const ItineraryMap = dynamic(() => import("./ItineraryMap"), {
 });
 
 type Props = {
+  /** `evening` is ignored: evening places come from `eveningPool` by the chosen categories. */
   input: Omit<ItineraryInput, "skip">;
   initialSkip: string[];
   cityName: string;
   center: { lat: number; lon: number };
+  /** Evening places of every evening category, so a chat edit can switch to cocktail bars without a reload. */
+  eveningPool?: Partial<Record<EveningCategory, PlanPlace[]>>;
+  initialEvening?: EveningCategory[];
+  /** `?ai=`: an AI plan's daytime stops per day (full place ids). */
+  initialAi?: string[][] | null;
+  /** `?edit=`: chat edits, one batch per message. */
+  initialEdits?: EditBatch[];
+  /** Tests inject a mock provider; the browser calls the provider directly otherwise. */
+  aiFetch?: typeof fetch;
 };
 
 function subscribeWide(callback: () => void) {
@@ -44,11 +58,16 @@ function durationText(minutes: number) {
   return h && m ? `${h} sa ${m} dk` : h ? `${h} sa` : `${m} dk`;
 }
 
-/** Keeps `?skip=` in step with the plan without a server round trip, so the link reopens the same plan. */
-function writeSkip(skip: string[]) {
+/**
+ * Keeps `?skip=`, `?ai=` and `?edit=` in step with the plan without a server round trip, so the link reopens the
+ * same plan. The AI key is never part of it.
+ */
+function writeParams(values: { skip: string[]; ai: string[][] | null; edits: EditBatch[] }) {
   const params = new URLSearchParams(window.location.search);
-  if (skip.length) params.set("skip", serializeSkip(skip));
-  else params.delete("skip");
+  const set = (name: string, value: string) => (value ? params.set(name, value) : params.delete(name));
+  set("skip", serializeSkip(values.skip));
+  set("ai", values.ai ? encodePinned(values.ai) : "");
+  set("edit", encodeEdits(values.edits));
   window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}${window.location.hash}`);
 }
 
@@ -64,7 +83,7 @@ function TravelLine({ stop }: { stop: PlanStop }) {
   );
 }
 
-function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRemove: (shortId: string) => void }) {
+function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRemove: (stop: PlanStop) => void }) {
   return (
     <li className="relative grid grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]">
       <p className="pt-0.5 font-mono text-caption tabular text-ink">
@@ -118,7 +137,7 @@ function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRe
           </a>
           <button
             type="button"
-            onClick={() => onRemove(stop.shortId)}
+            onClick={() => onRemove(stop)}
             className="inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
             aria-label={`${stop.name} durağını plandan çıkar`}
           >
@@ -157,11 +176,14 @@ function Day({
   selected,
   onSelect,
   onRemove,
+  reason,
 }: {
   day: PlanDay;
   selected: boolean;
   onSelect: () => void;
-  onRemove: (shortId: string) => void;
+  onRemove: (stop: PlanStop) => void;
+  /** The model's one or two sentences for the day (plain text). */
+  reason?: string;
 }) {
   return (
     <section aria-label={`${day.number}. gün · ${dayLabel(day.date)}`} className="break-inside-avoid border-t border-rule pt-6 first:border-t-0 first:pt-0">
@@ -192,6 +214,14 @@ function Day({
           </button>
         ) : null}
       </div>
+      {reason ? (
+        <div className="mt-4 border-l-2 border-sea pl-3">
+          <Caption as="p" tone="sea">
+            YAPAY ZEKÂ GEREKÇESİ
+          </Caption>
+          <p className="mt-1 whitespace-pre-line text-caption text-ink">{reason}</p>
+        </div>
+      ) : null}
       {day.note ? (
         <div className="mt-4">
           <p className="text-body text-ink-muted">{day.note}</p>
@@ -216,9 +246,49 @@ function Day({
 }
 
 /** DESIGN.md "Itinerary": a huge Fraunces numeral per day, a vertical timeline, and the selected day on the map. */
-export function ItineraryView({ input, initialSkip, cityName, center }: Props) {
+export function ItineraryView({
+  input,
+  initialSkip,
+  cityName,
+  center,
+  eveningPool,
+  initialEvening = [],
+  initialAi = null,
+  initialEdits = [],
+  aiFetch,
+}: Props) {
   const [skip, setSkip] = useState(initialSkip);
-  const plan = useMemo(() => buildItinerary({ ...input, skip }), [input, skip]);
+  const [ai, setAi] = useState<{ pinned: string[][]; reasons: Record<number, string>; source: string | null } | null>(
+    initialAi ? { pinned: initialAi, reasons: {}, source: null } : null,
+  );
+  const [edits, setEdits] = useState<EditBatch[]>(initialEdits);
+  const [reply, setReply] = useState<string | null>(null);
+  const eveningFor = useMemo(
+    () => (categories: readonly EveningCategory[]) =>
+      eveningPool ? categories.flatMap((c) => eveningPool[c] ?? []) : input.evening,
+    [eveningPool, input.evening],
+  );
+  const known = useMemo(() => new Set(input.daytime.map((p) => p.id)), [input.daytime]);
+  /** The deterministic plan, then the AI plan and the chat edits on top of it (each batch undoable). */
+  const build = useMemo(
+    () => (batches: readonly EditBatch[]) => {
+      const base = buildItinerary({ ...input, evening: eveningFor(initialEvening), skip });
+      if (!ai && !batches.length) return { plan: base, pace: "normal" as const, evening: initialEvening };
+      const state = applyEdits({ pinned: ai?.pinned ?? pinnedFromPlan(base), pace: "normal", evening: initialEvening }, batches, known);
+      return {
+        plan: buildItinerary({ ...input, evening: eveningFor(state.evening), skip, pinned: state.pinned, pace: state.pace }),
+        pace: state.pace,
+        evening: state.evening,
+      };
+    },
+    [input, eveningFor, initialEvening, skip, ai, known],
+  );
+  const current = useMemo(() => build(edits), [build, edits]);
+  const plan = current.plan;
+  const lastChange = useMemo(
+    () => (edits.length && reply !== null ? { diff: diffPlans(build(edits.slice(0, -1)).plan, plan), reply } : null),
+    [build, edits, plan, reply],
+  );
   const firstWithStops = plan.days.find((d) => d.stops.length)?.number ?? 1;
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const day = plan.days.find((d) => d.number === (selectedDay ?? firstWithStops)) ?? plan.days[0];
@@ -238,11 +308,38 @@ export function ItineraryView({ input, initialSkip, cityName, center }: Props) {
     }
   };
 
-  const update = (next: string[]) => {
-    setSkip(next);
-    writeSkip(next);
+  const save = (next: { skip?: string[]; ai?: typeof ai; edits?: EditBatch[] }) => {
+    const values = { skip: next.skip ?? skip, ai: next.ai === undefined ? ai : next.ai, edits: next.edits ?? edits };
+    if (next.skip) setSkip(next.skip);
+    if (next.ai !== undefined) setAi(next.ai);
+    if (next.edits) setEdits(next.edits);
+    writeParams({ skip: values.skip, ai: values.ai?.pinned ?? null, edits: values.edits });
   };
-  const remove = (shortId: string) => update([...new Set([...skip, shortId])]);
+  const edited = ai !== null || edits.length > 0;
+  // On an AI or edited plan, removing is an edit too (undoable); on the deterministic plan it is `?skip=`.
+  const remove = (stop: PlanStop) => {
+    if (edited && stop.kind === "daytime") {
+      setReply(null);
+      save({ edits: [...edits, [{ op: "remove", id: stop.id }]] });
+    } else save({ skip: [...new Set([...skip, stop.shortId])] });
+  };
+  const reset = () => {
+    setReply(null);
+    save({ skip: [], ai: null, edits: [] });
+  };
+  const onAiPlan = (next: AiPlan, source: string) => {
+    setReply(null);
+    save({ ai: { ...next, source }, edits: [] });
+  };
+  const onEdit = (batch: EditBatch, text: string) => {
+    setReply(text);
+    save({ edits: [...edits, batch] });
+  };
+  const undo = () => {
+    setReply(null);
+    save({ edits: edits.slice(0, -1) });
+  };
+  const changes = skip.length + edits.length + (ai ? 1 : 0);
   const download = () => {
     const ics = buildIcs(plan, { cityName, now: new Date() });
     const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
@@ -268,9 +365,21 @@ export function ItineraryView({ input, initialSkip, cityName, center }: Props) {
               UÇUŞ SEÇİLMEDİ · VARSAYIM: İLK GÜN 13:00 SONRASI, SON GÜN 13:00 ÖNCESİ · SAATLER {cityName.toLocaleUpperCase("tr")} SAATİYLE
             </Caption>
           )}
-          <p className="mt-2 text-caption text-ink-muted">
-            Duraklar Vikipedi&apos;deki dil sayısına ve yakınlığa göre seçildi; süreler ve yürüme tahminidir. Yapay zekâ kullanılmadı.
-          </p>
+          {ai ? (
+            <p className="mt-2 flex items-start gap-1.5 text-caption text-ink-muted">
+              <Sparkles aria-hidden="true" size={14} strokeWidth={1.5} className="mt-0.5 shrink-0" />
+              <span>
+                Duraklar yapay zekâ{ai.source ? ` (${ai.source})` : ""} tarafından bu şehrin listesinden seçildi ve sıralandı; saatler, açılış
+                kontrolü ve yürüme tahminini uygulama hesapladı.
+                {ai.source ? "" : " Gerekçeler yalnızca planı kuran tarayıcıda görünür."}
+              </span>
+            </p>
+          ) : (
+            <p className="mt-2 text-caption text-ink-muted">
+              Duraklar Vikipedi&apos;deki dil sayısına ve yakınlığa göre seçildi; süreler ve yürüme tahminidir.
+              {edits.length ? " Sohbetle düzenlendi." : " Yapay zekâ kullanılmadı."}
+            </p>
+          )}
           <p className="mt-1 text-caption text-ink-muted">Saat bilgisi olmayan mekânlar işaretlidir; gitmeden kontrol et.</p>
         </div>
         <div className="flex flex-wrap gap-2 print:hidden">
@@ -278,19 +387,46 @@ export function ItineraryView({ input, initialSkip, cityName, center }: Props) {
             <CalendarPlus aria-hidden="true" size={16} strokeWidth={1.5} />
             Takvime ekle (.ics)
           </Button>
-          {skip.length ? (
-            <Button variant="ghost" onClick={() => update([])}>
+          {changes ? (
+            <Button variant="ghost" onClick={reset}>
               <RotateCcw aria-hidden="true" size={16} strokeWidth={1.5} />
-              Planı sıfırla ({skip.length})
+              Planı sıfırla ({changes})
             </Button>
           ) : null}
         </div>
       </div>
 
+      <AiPanel
+        plan={plan}
+        daytime={input.daytime}
+        skip={skip}
+        cityName={cityName}
+        pace={current.pace}
+        evening={current.evening}
+        onPlan={onAiPlan}
+        onEdit={onEdit}
+        onUndo={undo}
+        canUndo={edits.length > 0}
+        lastChange={lastChange}
+        fetcher={aiFetch}
+      />
+      {plan.dropped.length ? (
+        <p className="mt-4 text-caption text-ink-muted">
+          Önerilen {plan.dropped.length} yer saat, açılış ya da günün süresi yüzünden plana sığmadı ve dışarıda kaldı.
+        </p>
+      ) : null}
+
       <div className="mt-8 grid gap-10 md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] md:items-start print:block">
         <div className="grid min-w-0 gap-8">
           {plan.days.map((d) => (
-            <Day key={d.number} day={d} selected={d.number === day.number} onSelect={() => selectDay(d.number)} onRemove={remove} />
+            <Day
+              key={d.number}
+              day={d}
+              selected={d.number === day.number}
+              onSelect={() => selectDay(d.number)}
+              onRemove={remove}
+              reason={ai?.reasons[d.number]}
+            />
           ))}
         </div>
         <div ref={mapRef} className="min-w-0 scroll-mt-6 print:hidden md:sticky md:top-6">
