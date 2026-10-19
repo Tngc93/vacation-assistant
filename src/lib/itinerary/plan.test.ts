@@ -413,6 +413,27 @@ describe("the trip's must-see list", () => {
     expect(allStops(buildItinerary({ ...base, daytime: [...SIGHTS, obscure] })).some((s) => s.id === atomium.id)).toBe(false);
   });
 
+  it("times a chosen plan in the given order, adds nothing, and lists what does not fit", () => {
+    const closedSunday = { ...SIGHTS[2], openingHours: "Mo-Sa 09:00-18:00" }; // 15 Nov 2026 is a Sunday
+    const daytime = [SIGHTS[0], SIGHTS[1], closedSunday, ...SIGHTS.slice(3)];
+    const pinned = [[], [SIGHTS[1].id, SIGHTS[0].id, closedSunday.id, "node/424242"], [SIGHTS[10].id], [], []];
+    const plan = buildItinerary({ ...base, daytime, pinned });
+    const daytimeOf = (n: number) => plan.days[n - 1].stops.filter((s) => s.kind === "daytime").map((s) => s.id);
+    expect(daytimeOf(2)).toEqual([SIGHTS[1].id, SIGHTS[0].id]);
+    expect(daytimeOf(3)).toEqual([SIGHTS[10].id]);
+    expect(daytimeOf(4)).toEqual([]);
+    expect(plan.dropped).toEqual([closedSunday.id, "node/424242"]);
+    // Evening places are still chosen by the engine.
+    expect(plan.days[1].stops.at(-1)?.kind).toBe("evening");
+  });
+
+  it("keeps a relaxed pace to four daytime stops a day", () => {
+    const plan = buildItinerary({ ...base, pace: "relaxed" });
+    expect(ITINERARY.relaxedMaxDaytimeStops).toBe(4);
+    for (const d of plan.days) expect(d.stops.filter((s) => s.kind === "daytime").length).toBeLessThanOrEqual(4);
+    expect(plan.days.some((d) => d.stops.filter((s) => s.kind === "daytime").length === 4)).toBe(true);
+  });
+
   it("uses an override's visit length (the Moulin Rouge, seen from outside)", () => {
     const facade = { ...SIGHTS[0], name: "Moulin Rouge", wikipediaCount: 53, visitMin: 30 };
     const p = buildItinerary({ ...base, daytime: [facade, ...SIGHTS.slice(1)] });
