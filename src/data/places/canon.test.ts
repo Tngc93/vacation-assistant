@@ -108,3 +108,11 @@ describe("the Vatican, seen from Rome", () => {
     expect(rome.find((p) => p.wikidataId === "Q10285")?.country).toBeUndefined();
   });
 });
+
+describe("sights Wikidata also files as districts or countries", () => {
+  it("keeps the Brandenburg Gate, the Kremlin and Christiania, which OSM tags as sights", () => {
+    expect(sightsOf("BER").some((p) => p.wikidataId === "Q82425")).toBe(true);
+    expect(sightsOf("MOW").some((p) => p.wikidataId === "Q133274")).toBe(true);
+    expect(sightsOf("CPH").some((p) => p.wikidataId === "Q202206")).toBe(true);
+  });
+});

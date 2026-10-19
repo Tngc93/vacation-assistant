@@ -7,6 +7,7 @@ import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import { describeCuisine } from "@/lib/places/cuisine";
 import type { StoredPlace } from "@/lib/places/file";
+import type { ShownPlace } from "@/lib/places/rules";
 import { OpeningHours } from "./OpeningHours";
 
 export function googleMapsUrl(place: Pick<StoredPlace, "lat" | "lon">): string {
@@ -16,7 +17,7 @@ export function googleMapsUrl(place: Pick<StoredPlace, "lat" | "lon">): string {
 const wikipediaCount = new Intl.NumberFormat("tr-TR");
 
 export type PlaceCardProps = {
-  place: StoredPlace;
+  place: StoredPlace & Pick<ShownPlace, "remote">;
   category: CategoryId;
   /** The city's IANA time zone. */
   timeZone: string;
@@ -58,6 +59,11 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
       </div>
 
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}
+      {place.remote ? (
+        <Caption as="p" tone="sea" className="mt-2">
+          MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR
+        </Caption>
+      ) : null}
       {place.cuisine ? <p className="mt-1 text-caption text-ink-muted">Mutfak: {describeCuisine(place.cuisine)}</p> : null}
       {place.openingHours ? <OpeningHours value={place.openingHours} timeZone={timeZone} /> : null}
 

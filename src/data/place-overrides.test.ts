@@ -16,21 +16,55 @@ const storedQids = (code: string) => new Set(storedPlaces(code).flatMap((p) => p
 
 describe("place overrides", () => {
   it("holds the agreed exceptions", () => {
-    expect(PLACE_OVERRIDES.HAM?.include?.map((o) => o.qid)).toEqual(["Q673223"]);
-    expect(PLACE_OVERRIDES.PAR?.exclude?.map((o) => o.qid)).toEqual(["Q810700", "Q193582"]);
-    expect(PLACE_OVERRIDES.EDI?.open?.map((o) => o.qid)).toEqual(["Q505950"]);
-    expect(PLACE_OVERRIDES.LON?.exclude?.map((o) => o.qid)).toEqual(["Q184619"]);
-    expect(PLACE_OVERRIDES.MUC?.exclude?.map((o) => o.qid)).toEqual(["Q102400"]);
-    const exterior = Object.entries(PLACE_OVERRIDES).flatMap(([code, o]) => (o.exteriorOnly ?? []).map((e) => `${code}:${e.qid}`));
-    expect(exterior.sort()).toEqual(["BER:Q317027", "LON:Q42182", "MOW:Q844124", "PAR:Q936633", "SOF:Q639704"]);
-    expect(PLACE_OVERRIDES.LON?.exteriorOnly?.[0]).toMatchObject({ visitMin: 30, openMonths: [7, 8, 9] });
-    expect(PLACE_OVERRIDES.NYC?.relink?.map((r) => [r.from, r.qid])).toEqual([["Q10806", "Q1136137"]]);
-    expect(PLACE_OVERRIDES.DUB?.relink?.map((r) => [r.from, r.qid])).toEqual([["Q204221", "Q856559"]]);
-    expect(PLACE_OVERRIDES.PAR?.include?.map((o) => [o.qid, o.visitMin])).toEqual([["Q151030", 30]]);
+    const list = (kind: "include" | "exclude" | "open" | "exteriorOnly" | "visit") =>
+      Object.entries(PLACE_OVERRIDES)
+        .flatMap(([code, o]) => (o[kind] ?? []).map((e) => `${code}:${e.qid}${e.visitMin ? `:${e.visitMin}` : ""}`))
+        .sort();
+    expect(list("include")).toEqual(["BRU:Q180901", "HAM:Q673223", "PAR:Q151030:30"]);
+    expect(list("exclude")).toEqual(["ATH:Q2070605", "ATH:Q755221", "ATH:Q844930", "LON:Q184619", "MUC:Q102400", "PAR:Q193582", "PAR:Q810700"]);
+    expect(list("open")).toEqual(["EDI:Q505950", "MOW:Q133274:180"]);
+    expect(list("visit")).toEqual(["MOW:Q191414:30"]);
+    expect(list("exteriorOnly")).toEqual([
+      "BCN:Q631075:15",
+      "BER:Q317027",
+      "BER:Q82425:20",
+      "BRU:Q152072:15",
+      "DUB:Q1134365:15",
+      "GVA:Q684661:20",
+      "HEL:Q523268:15",
+      "LED:Q672444:20",
+      "LED:Q907366:15",
+      "LON:Q41225:30",
+      "LON:Q42182:30",
+      "LON:Q842089:15",
+      "MOW:Q147875:15",
+      "MOW:Q147881:15",
+      "MOW:Q2075146:15",
+      "MOW:Q844124",
+      "PAR:Q631104:15",
+      "PAR:Q936633",
+      "PRG:Q1630131:20",
+      "RIX:Q337179:15",
+      "ROM:Q185382:30",
+      "ROM:Q265384:15",
+      "ROM:Q848072:30",
+      "SOF:Q639704",
+      "WAW:Q958585:15",
+    ]);
+    expect(PLACE_OVERRIDES.BRU?.include?.[0]).toMatchObject({ remote: true });
+    expect(PLACE_OVERRIDES.LON?.exteriorOnly?.find((e) => e.qid === "Q42182")).toMatchObject({ openMonths: [7, 8, 9] });
+    const relinks = Object.entries(PLACE_OVERRIDES).flatMap(([code, o]) => (o.relink ?? []).map((r) => `${code}:${r.from}>${r.qid}`));
+    expect(relinks.sort()).toEqual(["DUB:Q204221>Q856559", "LON:Q37733713>Q41225", "NYC:Q10806>Q1136137"]);
   });
 
   describe.each(Object.entries(PLACE_OVERRIDES))("%s", (code, overrides) => {
-    const entries = [...(overrides.include ?? []), ...(overrides.exclude ?? []), ...(overrides.open ?? []), ...(overrides.exteriorOnly ?? [])];
+    const entries = [
+      ...(overrides.include ?? []),
+      ...(overrides.exclude ?? []),
+      ...(overrides.open ?? []),
+      ...(overrides.exteriorOnly ?? []),
+      ...(overrides.visit ?? []),
+    ];
     const relinks = overrides.relink ?? [];
 
     it("is a destination, and each entry has a Wikidata item and a one-line reason", () => {

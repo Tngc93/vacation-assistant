@@ -80,9 +80,12 @@ const listed = (list: CityOverrides["include"], qid: string | undefined) => Bool
 export function isSight(place: RulePlace, category: CategoryId, overrides: CityOverrides = {}): boolean {
   if (listed(overrides.exclude, place.wikidataId)) return false;
   if (listed(overrides.include, place.wikidataId)) return true;
-  if (hasAny(place, NEVER)) return false;
-  if (hasAny(place, DISTRICT) && !hasAny(place, BUILT)) return false;
-  if (place.id.startsWith("wikidata/") && !hasAny(place, ALWAYS)) {
+  // Countries and districts are judged only when Wikidata alone suggests the place: Wikidata's class tree also
+  // files the Brandenburg Gate, the Kremlin and Christiania under them, and OSM's own tag says they are sights.
+  const wikidataOnly = place.id.startsWith("wikidata/");
+  if (wikidataOnly && hasAny(place, NEVER)) return false;
+  if (wikidataOnly && hasAny(place, DISTRICT) && !hasAny(place, BUILT)) return false;
+  if (wikidataOnly && !hasAny(place, ALWAYS)) {
     if (hasAny(place, NOT_SIGHTS)) return false;
     if (hasAny(place, NOT_SIGHTS_UNLISTED) && !hasAny(place, [HERITAGE_TAG])) return false;
   }
@@ -128,6 +131,8 @@ export type ShownPlace = Omit<StoredPlace, "kinds"> & {
   noVisit?: true;
   /** Seen from outside only (place-overrides.ts), except in `openMonths`. */
   exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
+  /** Far from the centre (an included place like the Atomium): reached by public transport, an area of its own. */
+  remote?: true;
 };
 export type ShownCategory =
   | { status: "ok"; wikipediaCountsAvailable: boolean; places: ShownPlace[] }
@@ -137,13 +142,17 @@ export type ShownPlacesFile = Omit<PlacesFile, "categories"> & { categories: Rec
 function toShown(place: StoredPlace, overrides: CityOverrides): ShownPlace {
   const { kinds: _kinds, ...rest } = place;
   const qid = place.wikidataId;
-  const visitMin = overrides.include?.find((o) => o.qid === qid)?.visitMin;
+  const included = qid ? overrides.include?.find((o) => o.qid === qid) : undefined;
+  const visitMin = [included, ...[overrides.open, overrides.visit].map((list) => (qid ? list?.find((o) => o.qid === qid) : undefined))].find(
+    (o) => o?.visitMin,
+  )?.visitMin;
   const exterior = qid ? overrides.exteriorOnly?.find((o) => o.qid === qid) : undefined;
   const open = Boolean(qid && overrides.open?.some((o) => o.qid === qid));
   return {
     ...rest,
     ...(isWalkThrough(place) ? { walkThrough: true } : {}),
     ...(visitMin ? { visitMin } : {}),
+    ...(included?.remote ? { remote: true } : {}),
     ...(exterior
       ? {
           exterior: {

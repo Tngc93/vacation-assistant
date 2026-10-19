@@ -32,6 +32,8 @@ export type PlanPlace = {
   noVisit?: true;
   /** Seen from outside only, except in `openMonths` (Buckingham Palace's State Rooms open July–September). */
   exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
+  /** Far from the centre (the Atomium): an area of its own, never a filler. */
+  remote?: true;
   category: CategoryId;
 };
 
@@ -76,6 +78,8 @@ export type PlanStop = {
   travel: Travel | null;
   /** Seen from outside only on this day; `note` says why or what to see. */
   exterior: { note: string | null } | null;
+  /** Far from the centre: the card suggests public transport. */
+  remote: boolean;
   /** OpenStreetMap, or Wikidata for a must-see place OSM does not have. */
   sourceUrl: string;
   source: "OpenStreetMap" | "Wikidata";
@@ -294,6 +298,7 @@ function toStop(
     ...(p.country ? { country: p.country } : {}),
     travel,
     exterior: outside ? { note: p.exterior?.note ?? null } : null,
+    remote: Boolean(p.remote),
     sourceUrl: wikidataOnly ? `https://www.wikidata.org/wiki/${p.wikidataId ?? p.id.slice(9)}` : `https://www.openstreetmap.org/${p.id}`,
     source: wikidataOnly ? "Wikidata" : "OpenStreetMap",
   };
@@ -349,7 +354,9 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
 
   // 2. Areas: one anchor per day among the must-sees. The area with the most must-sees gets the longest day, so a
   //    dense old town is not squeezed into an arrival afternoon.
-  const chosenAnchors = chooseAnchors(mustSees.length ? mustSees : daytime, order.length);
+  // A remote must-see (the Atomium, 5 km out) is an area of its own when the trip has days enough.
+  const remoteFirst = order.length >= 3 ? [...mustSees.filter((p) => p.remote), ...mustSees.filter((p) => !p.remote)] : mustSees;
+  const chosenAnchors = chooseAnchors(mustSees.length ? remoteFirst : daytime, order.length);
   const nearestAnchor = (p: PlanPlace) =>
     chosenAnchors.reduce((best, a, i) => (dist(p, a) < dist(p, chosenAnchors[best]) - 1e-9 ? i : best), 0);
   const weight = chosenAnchors.map((_, i) => mustSees.filter((p) => nearestAnchor(p) === i).length);
@@ -459,12 +466,13 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     const byDistance = [...builds].sort(
       (a, b) => (a.at ? dist(a.at, p) : Infinity) - (b.at ? dist(b.at, p) : Infinity) || a.day.number - b.day.number,
     );
-    byDistance.find((b) => tryAppend(b, p));
+    // A remote place stays in its own area: it is not carried into another area's day.
+    byDistance.filter((b) => !p.remote || b.area === mustDay.get(p.id)).find((b) => tryAppend(b, p));
   }
   // 6. Fill the remaining time: other known places, then little-known ones, then names that only say what they are,
   //    and at most one viewpoint without a Wikidata item a day.
   for (const b of builds) {
-    const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id));
+    const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id) && !p.remote);
     const ownFirst = (list: PlanPlace[]) => [...list.filter((p) => areaOf.get(p.id) === b.area), ...list.filter((p) => areaOf.get(p.id) !== b.area)];
     fill(b, () => ownFirst(rest().filter(onMustSeeList)));
     fill(b, () => ownFirst(rest().filter((p) => !onMustSeeList(p) && !isGenericName(p) && !unnamedViewpoint(p))));

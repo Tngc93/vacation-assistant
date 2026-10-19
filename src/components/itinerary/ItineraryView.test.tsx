@@ -109,6 +109,12 @@ describe("ItineraryView", () => {
     expect(stop).toHaveTextContent("30 DK");
   });
 
+  it("suggests public transport for a remote stop", () => {
+    const atomium = { ...SIGHTS[0], name: "Atomium", lat: 41.39, lon: 2.23, wikipediaCount: 52, remote: true as const };
+    render(<ItineraryView input={{ ...input, daytime: [...SIGHTS.slice(1), atomium] }} initialSkip={[]} cityName="Brüksel" center={{ lat: 41.39, lon: 2.17 }} />);
+    expect(screen.getByText("Atomium").closest("li")!).toHaveTextContent("MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR");
+  });
+
   it("opens a shared link with the same removals", () => {
     renderView(["n100", "w10"]);
     expect(screen.queryByText("Sight 0-0")).not.toBeInTheDocument();

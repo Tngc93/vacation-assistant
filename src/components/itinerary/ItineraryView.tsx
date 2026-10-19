@@ -90,6 +90,11 @@ function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRe
           {stop.kind === "evening" ? "AKŞAM · " : ""}
           {CATEGORIES[stop.category].label.toLocaleUpperCase("tr")} · {durationText(stop.durationMin).toLocaleUpperCase("tr")} · TAHMİNİ
         </Caption>
+        {stop.remote ? (
+          <Caption as="p" tone="sea" className="mt-0.5">
+            MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR
+          </Caption>
+        ) : null}
         {stop.exterior ? (
           <Caption as="p" tone="sea" className="mt-0.5">
             YALNIZCA DIŞARIDAN

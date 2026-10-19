@@ -46,11 +46,15 @@ describe("sight rules", () => {
     expect(isSight(sight("Q2", ["office"]), "see")).toBe(false);
     expect(isSight(sight("Q3", ["heritage", "office", "station"]), "see")).toBe(false);
     expect(isSight(sight("Q237", ["country", "unesco"]), "see")).toBe(false);
-    expect(isSight(sight("Q10", ["adminArea"], false), "see")).toBe(false);
+    // OSM tags these as sights; Wikidata files them under districts or countries too (Brandenburg Gate, Christiania).
+    expect(isSight(sight("Q82425", ["adminArea", "attraction", "heritage", "notPlace", "office"], false), "see")).toBe(true);
+    expect(isSight(sight("Q202206", ["adminArea", "country", "organization"], false), "see")).toBe(true);
+    expect(isSight(sight("Q10", ["adminArea"]), "see")).toBe(false);
     // Wikidata files the Eiffel Tower and the Château de Vincennes under districts too: buildings stay.
     expect(isSight(sight("Q243", ["adminArea", "attraction", "heritage", "tower"], false), "see")).toBe(true);
     expect(isSight(sight("Q11", ["adminArea", "castle", "heritage"]), "see")).toBe(true);
     expect(isSight(sight("Q12", ["adminArea", "road", "street"]), "see")).toBe(false);
+    expect(isSight(sight("Q237", ["adminArea", "country", "unesco"]), "see")).toBe(false);
   });
 
   it("lets the overrides include and exclude, before any rule", () => {
@@ -159,6 +163,17 @@ describe("overrides on read", () => {
       categories: { see: { status: "ok", wikipediaCountsAvailable: true, places: [place] } },
     }) as unknown as PlacesFile;
   const first = (f: ReturnType<typeof applyPlaceRules>) => (f.categories.see.status === "ok" ? f.categories.see.places[0] : undefined);
+
+  it("sets visit lengths from open and visit entries, and marks a remote included place", () => {
+    const kremlin = sight("Q133274", ["adminArea", "attraction", "residence"], false);
+    const open = { open: [{ qid: "Q133274", name: "Kremlin", reason: "test", visitMin: 180 }] };
+    expect(first(applyPlaceRules(one(kremlin, "XXX"), open))).toMatchObject({ visitMin: 180 });
+    expect(first(applyPlaceRules(one(kremlin, "XXX"), open))?.noVisit).toBeUndefined();
+    const visit = { visit: [{ qid: "Q191414", name: "Lenin's Mausoleum", reason: "test", visitMin: 30 }] };
+    expect(first(applyPlaceRules(one(sight("Q191414", ["attraction"], false), "XXX"), visit))).toMatchObject({ visitMin: 30 });
+    const include = { include: [{ qid: "Q180901", name: "Atomium", reason: "test", remote: true as const }] };
+    expect(first(applyPlaceRules(one(sight("Q180901", ["attraction"]), "XXX"), include))).toMatchObject({ remote: true });
+  });
 
   it("opens a residence visitors can enter, and marks exterior-only places with their months and note", () => {
     expect(first(applyPlaceRules(one(sight("Q505950", ["palace", "residence"]), "EDI")))?.noVisit).toBeUndefined();
