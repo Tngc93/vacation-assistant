@@ -12,5 +12,6 @@ One step = one branch = one PR. Ask Berk before opening each PR. PRD numbers ref
 | 5 | `feat/flights` | Travelpayouts server route, results grouped by airport, direct-only filter, prefilled deep links; a clear message when the token is missing | 4–7 |
 | 6 | `feat/budget-and-stays` | Budget receipt in TL with editable daily spend; stay card with Booking and Google Hotels deep links | 9–10, 13, 15 |
 | 7 | `feat/itinerary` | Deterministic day-by-day plan by proximity (max 4 stops + 1 evening place per day) | 20 |
-| 8 | `feat/ai-connect` | Provider-agnostic AI layer (Anthropic, OpenAI, Gemini) with JSON-schema validation and a mock provider; connect screen with the key kept in the browser; AI itinerary limited to fetched places; chat edits; "Search the web" for flights and stay prices | 8, 21–26 |
+| 8a | `feat/ai-connect` | Provider-agnostic AI layer (Anthropic, OpenAI, Gemini) called from the browser, with zod validation, one retry and a mock provider; connect screen with the key kept in the browser; AI itinerary limited to fetched places; chat edits as commands (URL, diff, undo); Content-Security-Policy | 21–26 |
+| 8b | `feat/ai-web-search` | "Search the web" for flight and hotel prices; neighbourhood suggestions for the stay | 8, 9 |
 | 9 | `chore/launch` | Vercel deploy guide, README with screenshots, live link, Lighthouse and accessibility pass | — |
