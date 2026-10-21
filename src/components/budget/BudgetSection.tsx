@@ -63,10 +63,13 @@ export async function BudgetSection({ search, destination, direct, budget }: Pro
       : { ok: false, currency: rateResult.currency }
     : null;
   const nights = daysBetween(search.depart, search.return);
+  const flight: FlightLine = budget.webFlight
+    ? { kind: "web", host: budget.webFlight.host, perAdult: budget.webFlight.perAdult }
+    : flightLineFor(chooseFlight(result, budget.flight), result);
   return (
     <BudgetReceipt
       initial={budget}
-      flight={flightLineFor(chooseFlight(result, budget.flight), result)}
+      flight={flight}
       rate={rate}
       localCurrency={destination.currency}
       nights={nights}

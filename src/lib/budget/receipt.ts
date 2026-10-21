@@ -14,6 +14,13 @@ export type FlightLine =
       /** Shown under the row, e.g. that the chosen ticket left the cache and the cheapest is used. */
       note: string | null;
     }
+  | {
+      kind: "web";
+      /** The site the price came from, e.g. "example.com". */
+      host: string;
+      /** Kuruş per adult. */
+      perAdult: number;
+    }
   | { kind: "missing"; reason: string };
 
 /** A TRY rate for the destination currency (serialisable for client components). */
@@ -124,7 +131,17 @@ export function buildReceipt(input: ReceiptInput): Receipt {
           ],
           note: input.flight.note,
         }
-      : { id: "flight", label: "Uçuş", detail: null, amount: null, missing: "uçuş fiyatı yok", captions: [input.flight.reason] };
+      : input.flight.kind === "web"
+        ? {
+            id: "flight",
+            label: "Uçuş",
+            detail: `${input.pax} yolcu × ${formatMinor(input.flight.perAdult, "TRY")} · web: ${input.flight.host}`,
+            amount: roundToLira(input.flight.perAdult * input.pax),
+            missing: null,
+            captions: ["YAPAY ZEKÂ WEB'DEN BULDU · TAHMİNİ", "SATIN ALMADAN ÖNCE DOĞRULA"],
+            note: null,
+          }
+        : { id: "flight", label: "Uçuş", detail: null, amount: null, missing: "uçuş fiyatı yok", captions: [input.flight.reason] };
 
   const rows = [
     flight,

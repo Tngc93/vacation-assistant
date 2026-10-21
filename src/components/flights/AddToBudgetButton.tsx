@@ -12,7 +12,7 @@ export function AddToBudgetButton({ flightRef, inBudget, className }: { flightRe
   const [pending, startTransition] = useTransition();
   const add = () => {
     if (inBudget) return;
-    const params = writeBudgetParams(new URLSearchParams(window.location.search), { flight: flightRef });
+    const params = writeBudgetParams(new URLSearchParams(window.location.search), { flight: flightRef, webFlight: null });
     startTransition(() => router.replace(`/plan?${params.toString()}${window.location.hash}`, { scroll: false }));
   };
   return (

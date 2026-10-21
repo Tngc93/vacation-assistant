@@ -18,7 +18,8 @@ export default defineConfig({
     timeout: 120_000,
     // External sources (rates, Overpass, Wikidata, Commons) fail fast, so pages
     // render their "not available" states deterministically and without network.
-    // Flights use the labelled sample responses (no token, no network).
-    env: { VA_OFFLINE: "1", VA_FLIGHTS_FIXTURES: "1" },
+    // Flights use the labelled sample responses (no token, no network); the AI web search uses the keyless
+    // demo's sample answers (VA_AI_MOCK).
+    env: { VA_OFFLINE: "1", VA_FLIGHTS_FIXTURES: "1", VA_AI_MOCK: "1" },
   },
 });

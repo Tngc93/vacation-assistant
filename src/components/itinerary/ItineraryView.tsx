@@ -37,6 +37,8 @@ type Props = {
   initialEdits?: EditBatch[];
   /** Tests inject a mock provider; the browser calls the provider directly otherwise. */
   aiFetch?: typeof fetch;
+  /** The budget's flight is a web-search price: there are no flight times, so the default windows are used. */
+  flightTimesUnknown?: boolean;
 };
 
 function subscribeWide(callback: () => void) {
@@ -256,6 +258,7 @@ export function ItineraryView({
   initialAi = null,
   initialEdits = [],
   aiFetch,
+  flightTimesUnknown = false,
 }: Props) {
   const [skip, setSkip] = useState(initialSkip);
   const [ai, setAi] = useState<{ pinned: string[][]; reasons: Record<number, string>; source: string | null } | null>(
@@ -355,7 +358,11 @@ export function ItineraryView({
     <div>
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="max-w-2xl">
-          {plan.basis === "flight" && flight ? (
+          {flightTimesUnknown ? (
+            <Caption as="p" tone="warn">
+              UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER
+            </Caption>
+          ) : plan.basis === "flight" && flight ? (
             <Caption as="p" tone="ink">
               UÇUŞ: {flight.label.toLocaleUpperCase("tr")} · VARIŞ {flight.arrive?.time} · DÖNÜŞ KALKIŞI {flight.leave?.time} · SAATLER{" "}
               {cityName.toLocaleUpperCase("tr")} SAATİYLE

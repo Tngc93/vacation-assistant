@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { AiError, aiErrorCaption } from "./errors";
+import helpOnly429 from "./__fixtures__/gemini-429-help-only.json";
 import { mockProvider } from "./mockProvider";
 import { complete, listModels, PROVIDERS, suggestModel } from "./providers";
 
@@ -125,7 +126,7 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
     await vi.advanceTimersByTimeAsync(10_000);
     const error = await pending;
     expect(error).toMatchObject({ kind: "overloaded", status: 503, message: expect.stringContaining("Bu model şu an çok yoğun.") });
-    expect(aiErrorCaption(error)).toBe("HTTP 503 · gemini-3.5-flash");
+    expect(aiErrorCaption(error)).toBe("HTTP 503 · GEMINI-3.5-FLASH");
     expect(posts(mock)).toBe(3);
   });
 
@@ -160,6 +161,28 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
     const error = await ask(mock.fetcher);
     expect(error).toMatchObject({ kind: "rate", message: "Sağlayıcı şu an çok fazla istek aldığını söylüyor. Yaklaşık 25 saniye sonra yeniden dene." });
     expect(posts(mock)).toBe(1);
+  });
+
+  it("does not take a Gemini 429 that names no quota and no wait for a per-minute limit, and never retries it", async () => {
+    vi.useFakeTimers();
+    const mock = mockProvider("gemini", [{ status: 429, body: helpOnly429 }, "never asked"]);
+    const pending = ask(mock.fetcher);
+    await vi.advanceTimersByTimeAsync(10_000);
+    const error = (await pending) as AiError;
+    expect(error).toMatchObject({
+      kind: "quotaUnknown",
+      status: 429,
+      retryAfterMs: undefined,
+      message:
+        "Google kota sınırına takıldığını söylüyor ama hangi sınır olduğunu belirtmedi. Bir dakika bekleyip yeniden dene; tekrarlarsa ai.dev/rate-limit sayfasından kullanımına bak.",
+    });
+    expect(error.message).not.toContain("exceeded");
+    expect(posts(mock)).toBe(1);
+  });
+
+  it("upper-cases the caption without Turkish rules: GEMINI, not GEMİNİ", () => {
+    expect(aiErrorCaption(new AiError("quotaUnknown", { status: 429, model: "gemini-3.6-flash" }))).toBe("HTTP 429 · GEMINI-3.6-FLASH");
+    expect(aiErrorCaption(new AiError("invalid", { model: "gemini-2.5-flash" }))).toBe("GEMINI-2.5-FLASH");
   });
 
   it("calls a per-day limit a quota and asks only once", async () => {
@@ -200,7 +223,7 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
       status: 400,
       message: "Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.",
     });
-    expect(aiErrorCaption(error)).toBe("HTTP 400 · gemini-3.5-flash");
+    expect(aiErrorCaption(error)).toBe("HTTP 400 · GEMINI-3.5-FLASH");
     expect(posts(bad)).toBe(1);
     // A 400 that says the key is wrong is still about the key.
     const wrongKey = mockProvider("gemini", [{ status: 400, body: { error: { code: 400, status: "INVALID_ARGUMENT", details: [{ reason: "API_KEY_INVALID" }] } } }]);
@@ -240,7 +263,7 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
     const pending = ask(mock.fetcher);
     await vi.advanceTimersByTimeAsync(10_000);
     const error = (await pending) as AiError;
-    expect(aiErrorCaption(error)).toBe("HTTP 503 · gemini-3.5-flash");
+    expect(aiErrorCaption(error)).toBe("HTTP 503 · GEMINI-3.5-FLASH");
     expect(JSON.stringify({ ...error, message: error.message, caption: aiErrorCaption(error) })).not.toContain(KEY);
     expect(error.message).not.toContain("overloaded");
   });

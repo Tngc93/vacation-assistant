@@ -61,6 +61,11 @@ export function toKurus(localMinor: number, tryPerUnit: number): number {
   return Number(divRound(BigInt(localMinor) * rateToMicros(tryPerUnit), MICROS));
 }
 
+/** kuruş → minor units of a currency at the given TRY-per-unit rate, rounded half up. */
+export function fromKurus(kurus: number, tryPerUnit: number): number {
+  return Number(divRound(BigInt(kurus) * MICROS, rateToMicros(tryPerUnit)));
+}
+
 /** Whole lira, half up, in kuruş (12345 → 12300, 12350 → 12400). */
 export function roundToLira(kurus: number): number {
   return Number(divRound(BigInt(kurus), HUNDRED)) * 100;

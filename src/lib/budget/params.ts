@@ -3,10 +3,21 @@ import { amountFromParam, amountToParam } from "./money";
 /** `?flight=` value: origin airport, airline + flight number, local departure of each leg. */
 export const FLIGHT_REF = /^[A-Z]{3}-[A-Z0-9]{2}\d{1,5}-\d{12}-\d{12}$/;
 
-/** The budget part of the plan URL: &flight=…&stay=…&daily=…&cur=… */
+/** Window event with `{ minor }`: a nightly price written into the budget from outside it (web search). */
+export const BUDGET_STAY_EVENT = "va:budget-stay";
+
+/** `?wfs=`: the site a web-search price came from (a bare host name, nothing the model wrote). */
+export const WEB_HOST = /^(?=.{3,100}$)[a-z0-9-]+(\.[a-z0-9-]+)+$/;
+
+/** A flight price the model found on the web, chosen for the budget (`?wf=` per adult in lira, `?wfs=` site). */
+export type WebFlightChoice = { perAdult: number; host: string };
+
+/** The budget part of the plan URL: &flight=…&wf=…&wfs=…&stay=…&daily=…&cur=… */
 export type BudgetParams = {
   /** Chosen ticket; null means "the cheapest on the chosen dates". */
   flight: string | null;
+  /** A web-search price instead of a cached ticket (kuruş per adult); `flight` is then null. */
+  webFlight: WebFlightChoice | null;
   /** Nightly accommodation for all rooms, in minor units of `cur`. */
   stay: number | null;
   /** Daily spend per person, in minor units of `cur`. */
@@ -25,8 +36,12 @@ const first = (raw: Raw, key: string) => {
 export function parseBudgetParams(raw: Raw, localCurrency: string): BudgetParams {
   const flight = first(raw, "flight");
   const cur = first(raw, "cur")?.toUpperCase();
+  const webPrice = amountFromParam(first(raw, "wf"));
+  const webHost = first(raw, "wfs")?.toLowerCase() ?? "";
+  const webFlight = webPrice && WEB_HOST.test(webHost) ? { perAdult: webPrice, host: webHost } : null;
   return {
-    flight: flight && FLIGHT_REF.test(flight) ? flight : null,
+    flight: !webFlight && flight && FLIGHT_REF.test(flight) ? flight : null,
+    webFlight,
     stay: amountFromParam(first(raw, "stay")),
     daily: amountFromParam(first(raw, "daily")),
     cur: cur === localCurrency ? localCurrency : "TRY",
@@ -38,6 +53,10 @@ export function writeBudgetParams(params: URLSearchParams, budget: Partial<Budge
   const next = new URLSearchParams(params);
   const set = (key: string, value: string | null) => (value ? next.set(key, value) : next.delete(key));
   if ("flight" in budget) set("flight", budget.flight ?? null);
+  if ("webFlight" in budget) {
+    set("wf", budget.webFlight ? amountToParam(budget.webFlight.perAdult) : null);
+    set("wfs", budget.webFlight?.host ?? null);
+  }
   if ("stay" in budget) set("stay", budget.stay ? amountToParam(budget.stay) : null);
   if ("daily" in budget) set("daily", budget.daily ? amountToParam(budget.daily) : null);
   if ("cur" in budget) set("cur", budget.cur && budget.cur !== "TRY" ? budget.cur : null);

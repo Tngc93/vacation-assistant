@@ -120,7 +120,7 @@ describe("AI connection, plan and chat edits", () => {
     const before = within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length;
     await user.click(screen.getByRole("button", { name: "Yapay zekâyla planla" }));
     await screen.findByText(/iki denemede de yalnızca listedeki yerlerle geçerli bir plan veremedi; mevcut plan kaldı/);
-    expect(screen.getByText("gemini-2.5-flash")).toBeInTheDocument(); // the caption names the model; no HTTP status here
+    expect(screen.getByText("GEMINI-2.5-FLASH")).toBeInTheDocument(); // the caption names the model; no HTTP status here
     expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ })).toHaveLength(before);
     expect(window.location.search).not.toContain("ai=");
     expect(mock.requests.filter((r) => r.method === "POST")).toHaveLength(2);
@@ -156,7 +156,7 @@ describe("AI connection, plan and chat edits", () => {
 
     release();
     await screen.findByText("Hesabındaki kota ya da kredi bitmiş görünüyor. Sağlayıcının panelinden kontrol edebilirsin.");
-    expect(screen.getByText("HTTP 429 · gemini-2.5-flash")).toBeInTheDocument();
+    expect(screen.getByText("HTTP 429 · GEMINI-2.5-FLASH")).toBeInTheDocument();
     expect(screen.getByLabelText("Planı sohbetle değiştir")).toHaveValue("2. günü müzesiz yap");
     expect(screen.getByRole("button", { name: "Uygula" })).toBeEnabled();
     expect(document.body.textContent).not.toContain(KEY);

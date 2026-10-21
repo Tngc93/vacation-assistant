@@ -22,7 +22,7 @@ import { complete, type ChatMessage, type Connection } from "./providers";
 
 const shortIdSchema = z.string().regex(/^[nwrq]\d{1,12}$/);
 /** Model text shown to people: plain, short, no markup (React escapes it; this keeps it tidy). */
-const plainText = (max: number) =>
+export const plainText = (max: number) =>
   z
     .string()
     .trim()

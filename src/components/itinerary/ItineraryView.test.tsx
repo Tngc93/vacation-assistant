@@ -35,6 +35,13 @@ describe("ItineraryView", () => {
     expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length).toBeGreaterThan(5);
   });
 
+  it("with a web-search flight price in the budget, uses the default windows and says the flight times are unknown", () => {
+    render(<ItineraryView input={input} initialSkip={[]} cityName="Barselona" center={{ lat: 41.39, lon: 2.17 }} flightTimesUnknown />);
+    expect(screen.getByText("UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER")).toBeInTheDocument();
+    expect(screen.queryByText(/^UÇUŞ: /)).toBeNull();
+    expect(within(day(1)).getByText(/VARIŞ GÜNÜ · YARIM GÜN · 13:00–21:30/)).toBeInTheDocument();
+  });
+
   it("shows times, category, duration, the walk between stops and 'check the hours'", () => {
     renderView();
     const second = screen.getByText("Sight 0-0").closest("section")!;

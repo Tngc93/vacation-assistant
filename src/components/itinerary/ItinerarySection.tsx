@@ -20,6 +20,8 @@ type Props = {
   direct: boolean;
   /** `?flight=`: the budget's ticket. */
   flight: string | null;
+  /** `?wf=`: the budget's flight is a web-search price, which has no times; no other ticket's times are used. */
+  webFlight: boolean;
   skip: string[];
   /** `?ai=`: an AI plan's daytime stops per day. */
   aiPlan: string[][] | null;
@@ -38,13 +40,13 @@ export function flightMoments(ticket: FlightTicket | null): ItineraryInput["flig
 }
 
 /** Day-by-day plan (PRD 20–22): built from the pre-fetched places, deterministically; AI and chat edits are optional. */
-export async function ItinerarySection({ search, destination, categories, direct, flight, skip, aiPlan, edits }: Props) {
+export async function ItinerarySection({ search, destination, categories, direct, flight, webFlight, skip, aiPlan, edits }: Props) {
   const [file, flights] = await Promise.all([
     loadPlacesFile(destination.cityCode),
     loadFlights(search.from, search.to, search.depart, search.return, search.pax, direct),
   ]);
   const choice = chooseFlight(flights, flight);
-  const ticket = choice.status === "none" ? null : choice.ticket;
+  const ticket = webFlight || choice.status === "none" ? null : choice.ticket;
   const take = (ids: readonly CategoryId[]): PlanPlace[] =>
     ids.flatMap((category) => {
       const entry = file?.categories[category];
@@ -74,6 +76,7 @@ export async function ItinerarySection({ search, destination, categories, direct
       initialEdits={edits}
       cityName={destination.nameTr}
       center={{ lat: destination.lat, lon: destination.lon }}
+      flightTimesUnknown={webFlight}
     />
   );
 }

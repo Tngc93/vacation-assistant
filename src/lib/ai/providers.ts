@@ -93,7 +93,7 @@ const jitter = (ms: number) => Math.round(ms * (0.75 + Math.random() * 0.5));
  * one more after a short rate-limit wait the provider names. A timeout ends the call: the deadline covers every
  * try and wait. Errors name the HTTP status and the model for the caption, never the key or the provider's text.
  */
-async function call(
+export async function call(
   provider: ProviderId,
   url: string,
   init: RequestInit,
