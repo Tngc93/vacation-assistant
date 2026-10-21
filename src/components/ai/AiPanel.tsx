@@ -1,12 +1,12 @@
 "use client";
 
 import { KeyRound, MessageSquare, Sparkles, Trash2, Undo2 } from "lucide-react";
-import { useId, useMemo, useState, useSyncExternalStore, type FormEvent } from "react";
+import { useId, useMemo, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { Button, Caption, Chip } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { requestAiEdit, requestAiPlan, type AiPlan } from "@/lib/ai/assistant";
 import type { EditBatch, PlanDiff } from "@/lib/ai/edits";
-import { AiError } from "@/lib/ai/errors";
+import { AiError, aiErrorCaption } from "@/lib/ai/errors";
 import { clearConnection, connectionSnapshot, loadConnection, saveConnection, subscribeConnection } from "@/lib/ai/keyStore";
 import { candidatesFor, dayWindows, type PlanSummaryDay } from "@/lib/ai/prompts";
 import { listModels, PROVIDER_IDS, PROVIDERS, suggestModel, type ModelInfo, type ProviderId } from "@/lib/ai/providers";
@@ -34,8 +34,20 @@ const serverSnapshot = () => null;
 
 const EXAMPLES = ["2. günü müzesiz yap", "Daha az yürüyelim", "Akşamları kokteyl bar"];
 
-function errorText(error: unknown): string {
-  return error instanceof AiError ? error.message : new AiError("network").message;
+type Notice = { tone: "ink" | "warn"; text: string; detail?: string | null };
+
+/** The calm message and, under it, only the HTTP status and model name. */
+function errorNotice(error: unknown): Notice {
+  return { tone: "warn", text: error instanceof AiError ? error.message : new AiError("network").message, detail: aiErrorCaption(error) };
+}
+
+function NoticeText({ notice, alert }: { notice: Notice; alert?: boolean }) {
+  return (
+    <div role={alert ? "alert" : undefined} className="grid gap-1">
+      <p className={cn("text-caption", notice.tone === "warn" ? "text-warn" : "text-ink")}>{notice.text}</p>
+      {notice.detail ? <Caption>{notice.detail}</Caption> : null}
+    </div>
+  );
 }
 
 /** PRD 21–26: connect your own provider, let the model plan from the fetched list, edit by chatting. */
@@ -89,7 +101,7 @@ function ConnectForm({
   const [models, setModels] = useState<ModelInfo[] | null>(null);
   const [model, setModel] = useState(initial?.model ?? "");
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<Notice | null>(null);
 
   const connect = async (event: FormEvent) => {
     event.preventDefault();
@@ -103,10 +115,10 @@ function ConnectForm({
       setModels(list);
       setModel(suggested);
       if (!saveConnection({ provider, key: key.trim(), model: suggested }, remember)) {
-        setError("Tarayıcın bu sitenin depolama alanını engelliyor; anahtar saklanamadı.");
+        setError({ tone: "warn", text: "Tarayıcın bu sitenin depolama alanını engelliyor; anahtar saklanamadı." });
       }
     } catch (e) {
-      setError(errorText(e));
+      setError(errorNotice(e));
     } finally {
       setBusy(false);
     }
@@ -198,11 +210,7 @@ function ConnectForm({
           ) : null}
         </div>
       </form>
-      {error ? (
-        <p role="alert" className="text-caption text-warn">
-          {error}
-        </p>
-      ) : null}
+      {error ? <NoticeText notice={error} alert /> : null}
       {models ? (
         <div>
           <label htmlFor={`${id}-model`} className="text-caption font-medium text-ink">
@@ -246,13 +254,18 @@ function Assistant({
 }: Props & { connection: NonNullable<ReturnType<typeof loadConnection>> }) {
   const id = useId();
   const [busy, setBusy] = useState<"plan" | "edit" | null>(null);
-  const [status, setStatus] = useState<{ tone: "ink" | "warn"; text: string } | null>(null);
+  const [status, setStatus] = useState<Notice | null>(null);
+  // State updates land after a render; the ref stops a fast second click from sending a second request
+  // (and spending the per-minute limit) before the buttons show as locked.
+  const inFlight = useRef(false);
   const [request, setRequest] = useState("");
   const days = useMemo(() => dayWindows(plan), [plan]);
   const candidates = useMemo(() => candidatesFor(daytime, days, new Set(skip)), [daytime, days, skip]);
   const source = `${PROVIDERS[connection.provider].label} · ${connection.model}`;
 
   const makePlan = async () => {
+    if (inFlight.current) return;
+    inFlight.current = true;
     setBusy("plan");
     setStatus(null);
     try {
@@ -265,8 +278,9 @@ function Assistant({
         setStatus({ tone: "warn", text: "Model iki denemede de yalnızca listedeki yerlerle geçerli bir plan veremedi; mevcut plan kaldı." });
       }
     } catch (e) {
-      setStatus({ tone: "warn", text: errorText(e) });
+      setStatus(errorNotice(e));
     } finally {
+      inFlight.current = false;
       setBusy(null);
     }
   };
@@ -274,7 +288,8 @@ function Assistant({
   const edit = async (event: FormEvent) => {
     event.preventDefault();
     const text = request.trim();
-    if (!text) return;
+    if (!text || inFlight.current) return;
+    inFlight.current = true;
     setBusy("edit");
     setStatus(null);
     try {
@@ -298,8 +313,9 @@ function Assistant({
         setStatus({ tone: "warn", text: "Model bu isteği geçerli düzenlemelere çeviremedi; plan değişmedi." });
       }
     } catch (e) {
-      setStatus({ tone: "warn", text: errorText(e) });
+      setStatus(errorNotice(e));
     } finally {
+      inFlight.current = false;
       setBusy(null);
     }
   };
@@ -343,7 +359,7 @@ function Assistant({
       </form>
 
       <div aria-live="polite" className="grid gap-2">
-        {status ? <p className={cn("text-caption", status.tone === "warn" ? "text-warn" : "text-ink")}>{status.text}</p> : null}
+        {status ? <NoticeText notice={status} /> : null}
         {lastChange ? <ChangeSummary change={lastChange} onUndo={onUndo} canUndo={canUndo} /> : null}
       </div>
     </div>

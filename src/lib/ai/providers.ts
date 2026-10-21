@@ -63,18 +63,77 @@ const anthropicHeaders = (key: string): Record<string, string> => ({
   "anthropic-dangerous-direct-browser-access": "true",
 });
 
-async function call(provider: ProviderId, url: string, init: RequestInit, fetcher: Fetch, timeoutMs: number): Promise<unknown> {
-  let res: Response;
-  try {
-    res = await fetcher(url, { ...init, signal: timeoutSignal(timeoutMs) });
-  } catch (error) {
-    throw aiErrorFromThrown(error);
-  }
-  if (!res.ok) throw await aiErrorFromResponse(provider, res);
-  try {
-    return await res.json();
-  } catch {
-    throw new AiError("server");
+/** Statuses worth another try: a passing server fault or an overloaded model. Other 4xx never change on retry. */
+const RETRY_STATUSES = new Set([500, 502, 503, 504, 529]);
+/** Waits before the 2nd and 3rd try (each ±25 % so many browsers do not retry in step). */
+export const RETRY_DELAYS_MS = [1_000, 3_000];
+/** A rate limit is waited out once, automatically, only when the provider asks for less than this. */
+export const MAX_RATE_WAIT_MS = 10_000;
+
+/** setTimeout-based (fake clocks drive it); rejects with the signal's reason as soon as it aborts. */
+function sleep(ms: number, signal: AbortSignal): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if (signal.aborted) return reject(signal.reason);
+    const onAbort = () => {
+      clearTimeout(timer);
+      reject(signal.reason);
+    };
+    const timer = setTimeout(() => {
+      signal.removeEventListener("abort", onAbort);
+      resolve();
+    }, ms);
+    signal.addEventListener("abort", onAbort, { once: true });
+  });
+}
+
+const jitter = (ms: number) => Math.round(ms * (0.75 + Math.random() * 0.5));
+
+/**
+ * One API call with retries: up to two more tries on a passing server fault or a network error (~1 s, ~3 s),
+ * one more after a short rate-limit wait the provider names. A timeout ends the call: the deadline covers every
+ * try and wait. Errors name the HTTP status and the model for the caption, never the key or the provider's text.
+ */
+async function call(
+  provider: ProviderId,
+  url: string,
+  init: RequestInit,
+  fetcher: Fetch,
+  timeoutMs: number,
+  model?: string,
+): Promise<unknown> {
+  const signal = timeoutSignal(timeoutMs);
+  const named = (error: AiError) => (model ? error.withModel(model) : error);
+  let retries = 0;
+  let rateWaited = false;
+  for (;;) {
+    let error: AiError;
+    try {
+      const res = await fetcher(url, { ...init, signal });
+      if (res.ok) {
+        try {
+          return await res.json();
+        } catch {
+          throw named(new AiError("server", { status: res.status }));
+        }
+      }
+      error = named(await aiErrorFromResponse(provider, res));
+    } catch (thrown) {
+      if (thrown instanceof AiError) throw thrown;
+      error = named(aiErrorFromThrown(thrown));
+    }
+    let wait: number | null = null;
+    if (error.kind === "network" || (error.status !== undefined && RETRY_STATUSES.has(error.status))) {
+      if (retries < RETRY_DELAYS_MS.length) wait = jitter(RETRY_DELAYS_MS[retries++]);
+    } else if (error.kind === "rate" && !rateWaited && error.retryAfterMs !== undefined && error.retryAfterMs < MAX_RATE_WAIT_MS) {
+      rateWaited = true;
+      wait = error.retryAfterMs;
+    }
+    if (wait === null || signal.aborted) throw error;
+    try {
+      await sleep(wait, signal);
+    } catch (thrown) {
+      throw named(aiErrorFromThrown(thrown));
+    }
   }
 }
 
@@ -106,15 +165,18 @@ export async function listModels(provider: ProviderId, key: string, fetcher: Fet
     .filter((m) => m.supportedGenerationMethods?.includes("generateContent") && /gemini/.test(m.name))
     .filter((m) => !/(image|tts|embedding|live|audio)/.test(m.name))
     .map((m) => ({ id: m.name.replace(/^models\//, ""), label: m.displayName ?? m.name, created: 0 }))
-    .sort((a, b) => (a.id < b.id ? 1 : a.id > b.id ? -1 : 0));
+    .sort((a, b) => Number(GEMINI_UNSTABLE.test(a.id)) - Number(GEMINI_UNSTABLE.test(b.id)) || (a.id < b.id ? 1 : a.id > b.id ? -1 : 0));
 }
+
+/** Previews, experiments and "omni" models: listed last, never suggested (often not in the free tier, or busy). */
+const GEMINI_UNSTABLE = /(omni|preview|exp|thinking)/;
 
 const sortNewest = (models: ModelInfo[]) =>
   [...models].sort((a, b) => b.created - a.created || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 
 /**
  * A fast, inexpensive model to suggest, by family name rather than a fixed id: the newest Haiku, the newest
- * "mini" GPT, the newest stable Gemini Flash. The user can pick any other model.
+ * "mini" GPT, the newest plain Gemini Flash (else Flash-Lite). The user can pick any other model.
  */
 export function suggestModel(provider: ProviderId, models: readonly ModelInfo[]): string | null {
   const pick = (test: (id: string) => boolean) => models.find((m) => test(m.id))?.id;
@@ -123,7 +185,9 @@ export function suggestModel(provider: ProviderId, models: readonly ModelInfo[])
       ? pick((id) => /haiku/.test(id))
       : provider === "openai"
         ? pick((id) => /^gpt-.*-mini$/.test(id)) ?? pick((id) => /mini/.test(id))
-        : pick((id) => /flash/.test(id) && !/(lite|preview|exp|thinking)/.test(id)) ?? pick((id) => /flash/.test(id));
+        : pick((id) => /flash/.test(id) && !/lite/.test(id) && !GEMINI_UNSTABLE.test(id)) ??
+          pick((id) => /flash/.test(id) && !GEMINI_UNSTABLE.test(id)) ??
+          pick((id) => /flash/.test(id));
   return choice ?? models[0]?.id ?? null;
 }
 
@@ -151,8 +215,9 @@ export async function complete(
       },
       fetcher,
       COMPLETE_TIMEOUT_MS,
+      model,
     )) as { content?: Array<{ type: string; text?: string }>; stop_reason?: string };
-    if (json.stop_reason === "refusal") throw new AiError("refusal");
+    if (json.stop_reason === "refusal") throw new AiError("refusal", { model });
     return (json.content ?? []).flatMap((b) => (b.type === "text" && b.text ? [b.text] : [])).join("");
   }
   if (provider === "openai") {
@@ -170,9 +235,10 @@ export async function complete(
       },
       fetcher,
       COMPLETE_TIMEOUT_MS,
+      model,
     )) as { choices?: Array<{ message?: { content?: string | null; refusal?: string | null } }> };
     const message = json.choices?.[0]?.message;
-    if (message?.refusal) throw new AiError("refusal");
+    if (message?.refusal) throw new AiError("refusal", { model });
     return message?.content ?? "";
   }
   const json = (await call(
@@ -189,7 +255,8 @@ export async function complete(
     },
     fetcher,
     COMPLETE_TIMEOUT_MS,
+    model,
   )) as { candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>; promptFeedback?: { blockReason?: string } };
-  if (json.promptFeedback?.blockReason) throw new AiError("refusal");
+  if (json.promptFeedback?.blockReason) throw new AiError("refusal", { model });
   return (json.candidates?.[0]?.content?.parts ?? []).map((p) => p.text ?? "").join("");
 }

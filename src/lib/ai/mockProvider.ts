@@ -7,7 +7,7 @@ import type { ProviderId } from "./providers";
 
 export type RecordedRequest = { url: string; method: string; headers: Record<string, string>; body: string };
 
-export function mockProvider(provider: ProviderId, answers: Array<string | { status: number; body: unknown }>, models: string[] = []) {
+export function mockProvider(provider: ProviderId, answers: Array<string | { status: number; body: unknown; headers?: Record<string, string> }>, models: string[] = []) {
   const requests: RecordedRequest[] = [];
   const queue = [...answers];
   const fetcher: typeof fetch = async (input, init) => {
@@ -17,7 +17,7 @@ export function mockProvider(provider: ProviderId, answers: Array<string | { sta
     if (!url.startsWith(AI_ORIGINS[provider])) return Response.json({ error: "not this provider" }, { status: 599 });
     if ((init?.method ?? "GET") === "GET") return Response.json(modelList(provider, models));
     const next = queue.shift() ?? "";
-    if (typeof next !== "string") return Response.json(next.body, { status: next.status });
+    if (typeof next !== "string") return Response.json(next.body, { status: next.status, headers: next.headers });
     return Response.json(chatAnswer(provider, next));
   };
   return { fetcher, requests };

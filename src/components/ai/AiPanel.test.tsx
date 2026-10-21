@@ -125,6 +125,42 @@ describe("AI connection, plan and chat edits", () => {
     expect(mock.requests.filter((r) => r.method === "POST")).toHaveLength(2);
   });
 
+  it("locks Uygula while a request runs, then shows the error with its caption and keeps the text", async () => {
+    const user = userEvent.setup();
+    const mock = mockProvider("gemini", [], ["gemini-2.5-flash"]);
+    let release: () => void = () => {};
+    let posts = 0;
+    const perDay = {
+      error: {
+        code: 429,
+        status: "RESOURCE_EXHAUSTED",
+        details: [{ "@type": "type.googleapis.com/google.rpc.QuotaFailure", violations: [{ quotaId: "GenerateRequestsPerDayPerProjectPerModel-FreeTier" }] }],
+      },
+    };
+    const fetcher: typeof fetch = async (input, init) => {
+      if ((init?.method ?? "GET") === "GET") return mock.fetcher(input, init);
+      posts++;
+      await new Promise<void>((resolve) => (release = resolve));
+      return Response.json(perDay, { status: 429 });
+    };
+    renderView(fetcher);
+    await connect(user);
+    await user.click(screen.getByRole("button", { name: "Bağlandı, devam et" }));
+    await user.type(screen.getByLabelText("Planı sohbetle değiştir"), "2. günü müzesiz yap");
+    const apply = screen.getByRole("button", { name: "Uygula" });
+    await user.dblClick(apply);
+    expect(await screen.findByRole("button", { name: "Düzenleniyor…" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "Yapay zekâyla planla" })).toBeDisabled();
+    expect(posts).toBe(1);
+
+    release();
+    await screen.findByText("Hesabındaki kota ya da kredi bitmiş görünüyor. Sağlayıcının panelinden kontrol edebilirsin.");
+    expect(screen.getByText("HTTP 429 · gemini-2.5-flash")).toBeInTheDocument();
+    expect(screen.getByLabelText("Planı sohbetle değiştir")).toHaveValue("2. günü müzesiz yap");
+    expect(screen.getByRole("button", { name: "Uygula" })).toBeEnabled();
+    expect(document.body.textContent).not.toContain(KEY);
+  });
+
   it("deletes the key on request", async () => {
     const user = userEvent.setup();
     renderView(mockProvider("gemini", [], ["gemini-2.5-flash"]).fetcher);
