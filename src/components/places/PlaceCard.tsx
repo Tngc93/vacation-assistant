@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, MapPin } from "lucide-react";
+import { ExternalLink, MapPin, X } from "lucide-react";
 import type { Ref } from "react";
 import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
@@ -24,13 +24,17 @@ export type PlaceCardProps = {
   active: boolean;
   ref?: Ref<HTMLElement>;
   onActivate: (id: string | null) => void;
-  onShowOnMap: (id: string) => void;
+  /** Shown as "Haritada göster" when the map is elsewhere on the page. */
+  onShowOnMap?: (id: string) => void;
+  /** Shown as a close button when the card is a detail panel. */
+  onClose?: () => void;
+  className?: string;
 };
 
 /** One place: name, category, address, optional website and hours, and honest ranking captions. */
 const regionNames = new Intl.DisplayNames(["tr"], { type: "region" });
 
-export function PlaceCard({ place, category, timeZone, active, ref, onActivate, onShowOnMap }: PlaceCardProps) {
+export function PlaceCard({ place, category, timeZone, active, ref, onActivate, onShowOnMap, onClose, className }: PlaceCardProps) {
   return (
     <article
       ref={ref}
@@ -45,6 +49,7 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
       className={cn(
         "scroll-mt-24 rounded-md border bg-paper-raised p-4 transition-colors duration-150 ease-out md:p-5",
         active ? "border-accent" : "border-rule",
+        className,
       )}
     >
       <div className="flex items-start justify-between gap-3">
@@ -52,10 +57,17 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
           <h4 className="text-body font-medium text-ink">{place.name}</h4>
           {place.localName ? <p className="text-caption text-ink-muted">{place.localName}</p> : null}
         </div>
-        <Caption className="shrink-0">
-          {place.country ? `${(regionNames.of(place.country) ?? place.country).toLocaleUpperCase("tr")} · ` : ""}
-          {CATEGORIES[category].label}
-        </Caption>
+        <div className="flex shrink-0 items-start gap-2">
+          <Caption>
+            {place.country ? `${(regionNames.of(place.country) ?? place.country).toLocaleUpperCase("tr")} · ` : ""}
+            {CATEGORIES[category].label}
+          </Caption>
+          {onClose ? (
+            <button type="button" onClick={onClose} aria-label="Ayrıntıyı kapat" className="-mr-1 -mt-1 rounded-sm p-1 text-ink-muted hover:text-ink">
+              <X aria-hidden="true" size={16} strokeWidth={1.5} />
+            </button>
+          ) : null}
+        </div>
       </div>
 
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}
@@ -79,14 +91,16 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
       ) : null}
 
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-caption">
-        <button
-          type="button"
-          onClick={() => onShowOnMap(place.id)}
-          className="inline-flex items-center gap-1 font-medium text-ink underline underline-offset-4"
-        >
-          <MapPin aria-hidden="true" size={14} strokeWidth={1.5} />
-          Haritada göster
-        </button>
+        {onShowOnMap ? (
+          <button
+            type="button"
+            onClick={() => onShowOnMap(place.id)}
+            className="inline-flex items-center gap-1 font-medium text-ink underline underline-offset-4"
+          >
+            <MapPin aria-hidden="true" size={14} strokeWidth={1.5} />
+            Haritada göster
+          </button>
+        ) : null}
         <a
           href={googleMapsUrl(place)}
           target="_blank"

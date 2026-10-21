@@ -179,3 +179,13 @@ export function describeWeek(week: WeekSchedule): string[] {
   }
   return lines;
 }
+
+/** "BUGÜN AÇIK · 09:00–20:00", "BUGÜN KAPALI": today's hours in the city's time zone; null outside the format. */
+export function todayStatus(week: WeekSchedule, now: Date, timeZone: string): { open: boolean; text: string } | null {
+  const { day } = localWeekMinute(now, timeZone);
+  if (day < 0) return null;
+  const intervals = week[day] ?? [];
+  if (intervals.length === 0) return { open: false, text: "BUGÜN KAPALI" };
+  const hours = intervals.map((i) => (i.end - i.start >= 1440 ? "TÜM GÜN" : `${clock(i.start)}–${clock(i.end)}`)).join(", ");
+  return { open: true, text: `BUGÜN AÇIK · ${hours}` };
+}
