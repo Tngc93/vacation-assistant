@@ -191,7 +191,11 @@ describe("Gemini: the grounded answer as it came", () => {
     saveConnection({ provider: "gemini", key: KEY, model: "gemini-2.5-flash" }, false);
     const mock = mockProvider("gemini", [grounded]);
     const view = renderSearch(mock.fetcher);
-    expect(screen.getByText(/Ücretsiz katmanda günlük arama sınırı var\./)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Gemini'nin ücretsiz katmanında web araması yalnızca 2.5 modellerinde var ve Google bu modelleri yeni hesaplara kapattı. Ücretli katmanda ayda 5.000 arama ücretsiz.",
+      ),
+    ).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Web'de ara" }));
     const text = await screen.findByTestId("grounded-text");
     expect(text.textContent).toBe(GROUNDED_TEXT);
@@ -306,5 +310,58 @@ describe("Gemini: a 429 that says neither which quota nor how long to wait", () 
     expect(screen.queryByRole("button", { name: "Gemini 2.5 Flash ile ara" })).toBeNull();
     expect(mock.requests.filter((r) => r.method === "POST")).toHaveLength(1);
     expect(mock.requests.filter((r) => r.method === "GET")).toHaveLength(0);
+  });
+});
+
+describe("Gemini 2.5 answering 404: Google keeps 2.5 for accounts that used it before", () => {
+  const notFound = { status: 404, body: { error: { code: 404, status: "NOT_FOUND", message: "models/gemini-2.5-flash is not found" } } };
+  const bare = { status: 429, body: helpOnly429 };
+  const NO_25 =
+    "Google 2.5 modellerini yalnızca bunları daha önce kullanmış hesaplara açıyor. Yeni hesaplarda Gemini ile web araması için ücretli katman gerekiyor; ya da başka bir sağlayıcı bağlayabilirsin.";
+  beforeEach(() => window.history.replaceState(null, "", "/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2"));
+  afterEach(() => {
+    window.sessionStorage.clear();
+    window.localStorage.clear();
+  });
+
+  it("says so when a chosen 2.5 model answers 404, with the caption", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "gemini", key: KEY, model: "gemini-2.5-flash" }, false);
+    renderSearch(mockProvider("gemini", [notFound]).fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    const alert = await screen.findByRole("alert");
+    expect(alert).toHaveTextContent(NO_25);
+    expect(alert).toHaveTextContent("HTTP 404 · GEMINI-2.5-FLASH");
+    expect(alert).not.toHaveTextContent("is not found");
+  });
+
+  it("after the 2.5 Flash button gets a 404, hides the button for the rest of this tab", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "gemini", key: KEY, model: "gemini-3.6-flash" }, false);
+    const mock = mockProvider("gemini", [bare, notFound, bare], ["gemini-3.6-flash", "gemini-2.5-flash"]);
+    const view = renderSearch(mock.fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    await user.click(await screen.findByRole("button", { name: "Gemini 2.5 Flash ile ara" }));
+    expect(await screen.findByText(NO_25)).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Gemini 2.5 Flash ile ara" })).toBeNull();
+
+    // Searching again with Gemini 3 in the same tab: the message, but no 2.5 button (and no model list asked).
+    view.unmount();
+    renderSearch(mock.fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    expect(await screen.findByRole("alert")).toHaveTextContent("Gemini 3 modelleri ücretsiz katmanda web araması yapamıyor.");
+    await waitFor(() => expect(screen.getByRole("button", { name: "Web'de ara" })).toBeEnabled());
+    expect(screen.queryByRole("button", { name: "Gemini 2.5 Flash ile ara" })).toBeNull();
+    expect(mock.requests.filter((r) => r.method === "GET")).toHaveLength(1);
+  });
+
+  it("keeps the usual model message for a 404 from a model outside the 2.5 family", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "gemini", key: KEY, model: "gemini-3.6-flash" }, false);
+    renderSearch(mockProvider("gemini", [notFound]).fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    const alert = await screen.findByRole("alert");
+    expect(alert).toHaveTextContent("Seçilen model bu anahtarla kullanılamıyor. Listeden başka bir model seç.");
+    expect(alert).not.toHaveTextContent("2.5 modellerini");
   });
 });

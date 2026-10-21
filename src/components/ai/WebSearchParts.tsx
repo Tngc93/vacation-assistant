@@ -134,8 +134,8 @@ export function CostNote({ provider, demo }: { provider: ProviderId; demo: boole
   if (provider === "gemini") {
     return (
       <p className="text-caption text-ink-muted">
-        Ücretsiz katmanda günlük arama sınırı var. Gemini 2.5 Flash ve Flash-Lite için ikisine ortak günde 500 istek; Gemini 3 modelleri
-        ücretsiz katmanda web araması yapmıyor.
+        Gemini&apos;nin ücretsiz katmanında web araması yalnızca 2.5 modellerinde var ve Google bu modelleri yeni hesaplara kapattı. Ücretli
+        katmanda ayda 5.000 arama ücretsiz.
       </p>
     );
   }
@@ -237,10 +237,15 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
         setResult(await run(model ? { ...conn, model } : conn));
       } catch (e) {
         const used = model ?? conn.model;
+        const gemini = e instanceof AiError && conn.provider === "gemini";
+        // A 2.5 model this key may not use: Google keeps 2.5 for accounts that used it before.
+        const no25 = gemini && e.kind === "model" && e.status === 404 && GEMINI_25.test(used);
+        if (no25) markNo25();
         // A bare quota error on a search with a model outside the 2.5 family: Gemini 3 has no free-tier search.
-        const noFreeSearch = e instanceof AiError && conn.provider === "gemini" && (e.kind === "freeTier" || (e.kind === "quotaUnknown" && !GEMINI_25.test(used)));
-        setError(noFreeSearch && e.kind === "quotaUnknown" ? { ...errorNotice(e), text: NO_FREE_SEARCH } : errorNotice(e));
-        if (noFreeSearch) {
+        const noFreeSearch = gemini && (e.kind === "freeTier" || (e.kind === "quotaUnknown" && !GEMINI_25.test(used)));
+        const notice = errorNotice(e);
+        setError(no25 ? { ...notice, text: NO_25_ACCESS } : noFreeSearch && e.kind === "quotaUnknown" ? { ...notice, text: NO_FREE_SEARCH } : notice);
+        if (noFreeSearch && !no25Before()) {
           const models = await listModels("gemini", conn.key, fetcher).catch(() => []);
           setFallback(freeTierSearchModel(models, used));
         }
@@ -257,6 +262,30 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
 /** Gemini 2.5 family (the free tier's only models with Google Search, pricing page 2026-10-19). */
 const GEMINI_25 = /^gemini-2\.5-/;
 const NO_FREE_SEARCH = "Google bu aramaya kota sınırı uyguladı. Gemini 3 modelleri ücretsiz katmanda web araması yapamıyor.";
+/**
+ * Gemini 2.5 answering 404 to a key: "we are limiting access to the 2.5 models to users who have actively used
+ * them in the past" (ai.google.dev/gemini-api/docs/deprecations, checked 2026-10-21). New accounts have no
+ * free-tier web search at all: Gemini 3 has none (ai.google.dev/gemini-api/docs/pricing, checked 2026-10-21).
+ */
+const NO_25_ACCESS =
+  "Google 2.5 modellerini yalnızca bunları daha önce kullanmış hesaplara açıyor. Yeni hesaplarda Gemini ile web araması için ücretli katman gerekiyor; ya da başka bir sağlayıcı bağlayabilirsin.";
+
+/** Once 2.5 has answered 404 in this tab, the 2.5 Flash button is not offered again (sessionStorage, tab-scoped). */
+const NO_25_KEY = "va.gemini25.unavailable";
+function markNo25() {
+  try {
+    window.sessionStorage.setItem(NO_25_KEY, "1");
+  } catch {
+    // Storage blocked: the button may come back; pressing it again only shows the same message.
+  }
+}
+function no25Before(): boolean {
+  try {
+    return window.sessionStorage.getItem(NO_25_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
 
 /** A Gemini 2.5 Flash (not Lite, not a preview) from the key's list, other than the model that just failed. */
 export function freeTierSearchModel(models: readonly ModelInfo[], failed: string): string | null {
