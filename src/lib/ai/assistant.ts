@@ -97,7 +97,10 @@ export function checkEdits(edit: z.infer<typeof aiEditSchema>, known: ReadonlySe
 }
 
 type Fetch = typeof fetch;
-export type Attempted<T> = { ok: true; value: T; attempts: number } | { ok: false; errors: string[]; attempts: number };
+export type Attempted<T> =
+  | { ok: true; value: T; attempts: number }
+  /** `error` is "invalid" when the model's answers failed the schema or rules; absent when there was nothing to ask. */
+  | { ok: false; errors: string[]; attempts: number; error?: AiError };
 
 /**
  * Asks, validates, and on a mistake asks once more with the errors. Provider failures (key, quota, network) throw
@@ -132,7 +135,7 @@ async function askChecked<S extends z.ZodType, T>(
       { role: "user", text: `Your answer broke these rules:\n- ${errors.join("\n- ")}\nAnswer again with corrected JSON only.` },
     );
   }
-  return { ok: false, errors, attempts: 2 };
+  return { ok: false, errors, attempts: 2, error: new AiError("invalid", { model: conn.model }) };
 }
 
 export async function requestAiPlan(
@@ -140,7 +143,7 @@ export async function requestAiPlan(
   trip: { city: string; days: readonly DayWindow[]; candidates: readonly Candidate[]; maxStops: number },
   fetcher: Fetch = fetch,
 ): Promise<Attempted<AiPlan>> {
-  if (!trip.candidates.length) throw new AiError("invalid");
+  if (!trip.candidates.length) return { ok: false, errors: ["no candidates"], attempts: 0 };
   return askChecked(
     conn,
     planSystemPrompt(trip.maxStops),

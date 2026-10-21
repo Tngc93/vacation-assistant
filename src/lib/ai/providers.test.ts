@@ -194,8 +194,18 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
 
   it("never retries a 400 or an aborted request", async () => {
     const bad = mockProvider("gemini", [{ status: 400, body: { error: { code: 400, status: "INVALID_ARGUMENT" } } }, "plan"]);
-    expect(await ask(bad.fetcher)).toMatchObject({ kind: "invalid", status: 400 });
+    const error = await ask(bad.fetcher);
+    expect(error).toMatchObject({
+      kind: "request",
+      status: 400,
+      message: "Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.",
+    });
+    expect(aiErrorCaption(error)).toBe("HTTP 400 · gemini-3.5-flash");
     expect(posts(bad)).toBe(1);
+    // A 400 that says the key is wrong is still about the key.
+    const wrongKey = mockProvider("gemini", [{ status: 400, body: { error: { code: 400, status: "INVALID_ARGUMENT", details: [{ reason: "API_KEY_INVALID" }] } } }]);
+    expect(await ask(wrongKey.fetcher)).toMatchObject({ kind: "auth", status: 400 });
+    expect(posts(wrongKey)).toBe(1);
     let tries = 0;
     const aborted: typeof fetch = async () => {
       tries++;

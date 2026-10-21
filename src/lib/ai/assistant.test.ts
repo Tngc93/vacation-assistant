@@ -53,7 +53,20 @@ describe("AI plan", () => {
     const result = await requestAiPlan(conn("gemini"), trip, mock.fetcher);
     expect(result.ok).toBe(false);
     expect(result.attempts).toBe(2);
-    if (!result.ok) expect(result.errors.join(" ")).toMatch(/days\.0\.stops\.0/);
+    if (!result.ok) {
+      expect(result.errors.join(" ")).toMatch(/days\.0\.stops\.0/);
+      // A schema failure is "invalid", the only place that kind is used; it names the model, not an HTTP status.
+      expect(result.error).toMatchObject({ kind: "invalid", model: "test-model", status: undefined });
+      expect(result.error?.message).toBe("Modelin cevabı kurallarımıza uymadı; plan değişmedi.");
+    }
+  });
+
+  it("asks nothing when no place is left to choose from", async () => {
+    const mock = mockProvider("gemini", [answer({})]);
+    const result = await requestAiPlan(conn("gemini"), { ...trip, candidates: [] }, mock.fetcher);
+    expect(result).toMatchObject({ ok: false, attempts: 0 });
+    expect(!result.ok && result.error).toBeUndefined();
+    expect(mock.requests).toHaveLength(0);
   });
 
   it("refuses stops on a day without a window, duplicates, and too many stops", async () => {

@@ -274,8 +274,14 @@ function Assistant({
       if (result.ok) {
         onPlan(result.value, source);
         setStatus({ tone: "ink", text: "Plan yapay zekânın seçimiyle güncellendi; saatleri ve yürüme sürelerini uygulama hesapladı." });
+      } else if (result.attempts === 0) {
+        setStatus({ tone: "warn", text: "Listede seçilecek yer kalmadı; mevcut plan kaldı." });
       } else {
-        setStatus({ tone: "warn", text: "Model iki denemede de yalnızca listedeki yerlerle geçerli bir plan veremedi; mevcut plan kaldı." });
+        setStatus({
+          tone: "warn",
+          text: "Model iki denemede de yalnızca listedeki yerlerle geçerli bir plan veremedi; mevcut plan kaldı.",
+          detail: aiErrorCaption(result.error),
+        });
       }
     } catch (e) {
       setStatus(errorNotice(e));
@@ -310,7 +316,7 @@ function Assistant({
           setStatus({ tone: "ink", text: result.value.reply });
         }
       } else {
-        setStatus({ tone: "warn", text: "Model bu isteği geçerli düzenlemelere çeviremedi; plan değişmedi." });
+        setStatus({ tone: "warn", text: "Model bu isteği geçerli düzenlemelere çeviremedi; plan değişmedi.", detail: aiErrorCaption(result.error) });
       }
     } catch (e) {
       setStatus(errorNotice(e));

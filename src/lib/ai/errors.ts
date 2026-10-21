@@ -11,6 +11,7 @@ export type AiErrorKind =
   | "overloaded"
   | "server"
   | "refusal"
+  | "request"
   | "invalid";
 
 /** Calm, Turkish, and says what to do next. Never echoes the key or the provider's raw text. */
@@ -25,6 +26,9 @@ export const AI_ERROR_MESSAGES: Record<AiErrorKind, string> = {
   overloaded: "Bu model şu an çok yoğun. Biraz sonra yeniden dene ya da Bağlantı ayarları'ndan başka bir model seç.",
   server: "Sağlayıcı tarafında geçici bir sorun var. Biraz sonra yeniden dene.",
   refusal: "Model bu isteği yanıtlamadı. İsteği farklı sözcüklerle yeniden dene.",
+  /** HTTP 400 and other 4xx the provider gives no better reason for. */
+  request: "Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.",
+  /** Only for a model answer that fails our schema or rules (never an HTTP error). */
   invalid: "Modelin cevabı kurallarımıza uymadı; plan değişmedi.",
 };
 
@@ -137,7 +141,7 @@ export async function aiErrorFromResponse(provider: ProviderId, res: Response, n
   if (status === 404 || code === "model_not_found" || type === "not_found_error") return new AiError("model", { status });
   if (status === 503 || status === 529 || type === "overloaded_error") return new AiError("overloaded", { status });
   if (status >= 500) return new AiError("server", { status });
-  return new AiError("invalid", { status });
+  return new AiError("request", { status });
 }
 
 export function aiErrorFromThrown(error: unknown): AiError {

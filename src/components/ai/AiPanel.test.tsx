@@ -120,6 +120,7 @@ describe("AI connection, plan and chat edits", () => {
     const before = within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length;
     await user.click(screen.getByRole("button", { name: "Yapay zekâyla planla" }));
     await screen.findByText(/iki denemede de yalnızca listedeki yerlerle geçerli bir plan veremedi; mevcut plan kaldı/);
+    expect(screen.getByText("gemini-2.5-flash")).toBeInTheDocument(); // the caption names the model; no HTTP status here
     expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ })).toHaveLength(before);
     expect(window.location.search).not.toContain("ai=");
     expect(mock.requests.filter((r) => r.method === "POST")).toHaveLength(2);
