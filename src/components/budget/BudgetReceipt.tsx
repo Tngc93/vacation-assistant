@@ -1,10 +1,10 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { Caption, Chip } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { amountToInput, formatMinor, parseAmountInput } from "@/lib/budget/money";
-import { writeBudgetParams, type BudgetParams } from "@/lib/budget/params";
+import { BUDGET_STAY_EVENT, writeBudgetParams, type BudgetParams } from "@/lib/budget/params";
 import { buildReceipt, type FlightLine, type RateInfo, type ReceiptRow } from "@/lib/budget/receipt";
 
 type Props = {
@@ -103,6 +103,16 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
   const [cur, setCur] = useState(initial.cur);
   const [stayText, setStayText] = useState(initial.stay ? amountToInput(initial.stay) : "");
   const [dailyText, setDailyText] = useState(initial.daily ? amountToInput(initial.daily) : "");
+
+  // The stay card's "Bütçeye yaz" (web search) fills the nightly field; it has already updated the URL.
+  useEffect(() => {
+    const onStay = (event: Event) => {
+      const minor = (event as CustomEvent<{ minor?: unknown }>).detail?.minor;
+      if (typeof minor === "number" && Number.isInteger(minor) && minor > 0) setStayText(amountToInput(minor));
+    };
+    window.addEventListener(BUDGET_STAY_EVENT, onStay);
+    return () => window.removeEventListener(BUDGET_STAY_EVENT, onStay);
+  }, []);
 
   const read = (text: string) => (text.trim() ? parseAmountInput(text) : null);
   const stay = read(stayText);

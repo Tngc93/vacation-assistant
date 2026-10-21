@@ -7,7 +7,7 @@ import { BudgetReceipt } from "./BudgetReceipt";
 const SEARCH = "from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2";
 const flight: FlightLine = { kind: "ticket", label: "Wizz Air · W6 4402 · SAW → BCN", pricePerAdult: 4380, differentDates: false, sample: false, note: null };
 const rate: RateInfo = { ok: true, currency: "EUR", tryPerUnit: 55.618, sourceId: "tcmb", sourceName: "TCMB", date: "2026-10-16" };
-const empty = { flight: null, stay: null, daily: null, cur: "TRY" };
+const empty = { flight: null, webFlight: null, stay: null, daily: null, cur: "TRY" };
 
 function renderReceipt(props: Partial<Parameters<typeof BudgetReceipt>[0]> = {}) {
   return render(<BudgetReceipt initial={empty} flight={flight} rate={rate} localCurrency="EUR" nights={4} days={5} pax={2} {...props} />);
@@ -61,7 +61,7 @@ describe("BudgetReceipt", () => {
   });
 
   it("opens a shared link with the same budget", () => {
-    renderReceipt({ initial: { flight: null, stay: 12000, daily: 6000, cur: "EUR" } });
+    renderReceipt({ initial: { flight: null, webFlight: null, stay: 12000, daily: 6000, cur: "EUR" } });
     expect(screen.getByLabelText("Gecelik konaklama (tüm odalar)")).toHaveValue("120");
     expect(screen.getByLabelText("Kişi başı günlük harcama")).toHaveValue("60");
     expect(screen.getByRole("button", { name: "EUR" })).toHaveAttribute("aria-pressed", "true");

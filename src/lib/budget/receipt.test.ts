@@ -18,6 +18,15 @@ describe("buildReceipt", () => {
     expect(r).toMatchObject({ total: 2910800, partial: true, perPerson: 1455400 });
   });
 
+  it("shows a web-search flight price as the model's estimate, with its site, to verify before buying", () => {
+    const r = buildReceipt({ ...base, flight: { kind: "web", host: "flypgs.com", perAdult: 820000 } });
+    expect(r.rows[0]).toMatchObject({
+      amount: 1640000,
+      detail: "2 yolcu × 8.200 ₺ · web: flypgs.com",
+      captions: ["YAPAY ZEKÂ WEB'DEN BULDU · TAHMİNİ", "SATIN ALMADAN ÖNCE DOĞRULA"],
+    });
+  });
+
   it("multiplies nights and days × people by what the user entered, in lira", () => {
     const r = buildReceipt({ ...base, stay: 300000, daily: 150000 });
     expect(r.rows[1]).toMatchObject({ detail: "4 gece × 3.000 ₺", amount: 1200000, captions: ["SENİN GİRDİĞİN · TAHMİNİ"] });
