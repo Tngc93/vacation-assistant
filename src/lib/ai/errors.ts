@@ -29,7 +29,7 @@ export const AI_ERROR_MESSAGES: Record<AiErrorKind, string> = {
   /** HTTP 400 and other 4xx the provider gives no better reason for. */
   request: "Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.",
   /** Only for a model answer that fails our schema or rules (never an HTTP error). */
-  invalid: "Modelin cevabı kurallarımıza uymadı; plan değişmedi.",
+  invalid: "Modelin cevabı kurallarımıza uymadı; hiçbir şey değişmedi.",
 };
 
 /** What the caption under an error may show: the HTTP status and the model name, nothing else. */
