@@ -56,8 +56,8 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ### Vize
 
-11. Türk pasaportu için vize durumu ve vizesiz kalış süresi, açık kaynak passport-index-dataset verisinden build sırasında okunur.
-12. Kartta verinin son güncelleme tarihi ve "resmî bilgi için" Dışişleri Bakanlığı linki bulunur.
+11. Türk pasaportu için vize durumu ve vizesiz kalış süresi, açık kaynak passport-index-dataset verisinden build sırasında okunur. *Faz 1 arayüzünden kaldırıldı (2026-10-21, Berk'in kararı); veri ve bileşen kodda duruyor.*
+12. Kartta verinin son güncelleme tarihi ve "resmî bilgi için" Dışişleri Bakanlığı linki bulunur. *Faz 1 arayüzünden kaldırıldı (2026-10-21, Berk'in kararı); veri ve bileşen kodda duruyor.*
 
 ### Bütçe
 
