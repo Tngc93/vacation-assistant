@@ -9,12 +9,16 @@ import { StayCard } from "@/components/stays/StayCard";
 import type { BudgetParams } from "@/lib/budget/params";
 import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
 import type { CategoryId } from "@/lib/places/categories";
+import type { EditBatch } from "@/lib/ai/edits";
 import { VisaCard } from "./VisaCard";
 
 /** `print: false` leaves a section out of the printed plan. */
 type Section = { id: string; title: string; status?: string; body: ReactNode; print?: false };
 
-function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams, skip: string[]): Section[] {
+/** The plan's own URL state: `?skip=`, `?ai=` and `?edit=`. */
+export type PlanEdits = { skip: string[]; ai: string[][] | null; edits: EditBatch[] };
+
+function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams, planEdits: PlanEdits): Section[] {
   const destination = findDestination(search.to)!;
   return [
     {
@@ -71,7 +75,9 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
             categories={categories}
             direct={direct}
             flight={budget.flight}
-            skip={skip}
+            skip={planEdits.skip}
+            aiPlan={planEdits.ai}
+            edits={planEdits.edits}
           />
         </Suspense>
       ),
@@ -85,18 +91,18 @@ export function PlanSections({
   categories,
   direct,
   budget,
-  skip,
+  planEdits,
 }: {
   search: SearchState;
   categories: CategoryId[];
   direct: boolean;
   budget: BudgetParams;
-  /** `?skip=`: stops removed from the day-by-day plan. */
-  skip: string[];
+  /** `?skip=`, `?ai=`, `?edit=`: the day-by-day plan's removals, AI plan and chat edits. */
+  planEdits: PlanEdits;
 }) {
   return (
     <div className="mt-16 grid gap-12 md:mt-20 md:gap-16">
-      {sectionsFor(search, categories, direct, budget, skip).map((section) => (
+      {sectionsFor(search, categories, direct, budget, planEdits).map((section) => (
         <section
           key={section.id}
           id={section.id}

@@ -22,6 +22,8 @@ export const ITINERARY = {
 
   /** At most this many daytime stops, even when more would fit; and one evening place. */
   maxDaytimeStops: 6,
+  /** "Daha az yürüyelim" (a relaxed pace, set by a chat edit): at most this many daytime stops. */
+  relaxedMaxDaytimeStops: 4,
   maxEveningStops: 1,
   /** A gap longer than this between the last daytime stop and the evening place shows as free time. */
   freeTimeMin: 90,

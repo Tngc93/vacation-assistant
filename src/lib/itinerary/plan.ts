@@ -53,6 +53,14 @@ export type ItineraryInput = {
   evening: PlanPlace[];
   /** Short ids the user removed. */
   skip: readonly string[];
+  /**
+   * Chosen daytime stops per day (index 0 = day 1), in visiting order: an AI plan or an edited plan. The engine
+   * only times them (opening hours, walking, the day's window); a stop that does not fit is left out and listed in
+   * `dropped`. No other place is added.
+   */
+  pinned?: readonly (readonly string[])[];
+  /** "relaxed": fewer stops a day (`ITINERARY.relaxedMaxDaytimeStops`). */
+  pace?: "relaxed" | "normal";
 };
 
 export type PlanStop = {
@@ -93,6 +101,8 @@ export type PlanDay = {
   tags: DayTag[];
   /** When the day's plan may start and must end (local), null when no time is left that day. */
   window: { start: string; end: string } | null;
+  /** The daytime part of the window (sightseeing), null when there is none. */
+  daytime: { start: string; end: string } | null;
   stops: PlanStop[];
   /** Unplanned time between the last daytime stop and the evening place, when longer than 90 minutes. */
   free: { start: string; end: string } | null;
@@ -109,6 +119,8 @@ export type Itinerary = {
   timeZone: string;
   /** Short ids actually skipped (present in the data). */
   skipped: string[];
+  /** Pinned places that could not be timed (closed, no time left, or not in the data). */
+  dropped: string[];
 };
 
 
@@ -339,6 +351,8 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const eveningRank = new Map(evening.map((p, i) => [p.id, (p.detailed ? 0 : 1) * 100_000 + i]));
 
   const days = frames(input);
+  const maxStops = input.pace === "relaxed" ? ITINERARY.relaxedMaxDaytimeStops : ITINERARY.maxDaytimeStops;
+  const dropped: string[] = [];
   const used = new Set<string>();
   const planned = new Map<number, PlanStop[]>(days.map((d) => [d.number, []]));
 
@@ -347,7 +361,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const order = days.filter((d) => d.daytime).sort((a, b) => length(b) - length(a) || a.number - b.number);
 
   // 1. The trip's must-see list, sized to the whole trip's daytime.
-  const capacity = order.reduce((sum, d) => sum + Math.min(ITINERARY.maxDaytimeStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin)), 0);
+  const capacity = order.reduce((sum, d) => sum + Math.min(maxStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin)), 0);
   const mustSees = chooseMustSees(daytime, capacity);
   const isMust = new Set(mustSees.map((p) => p.id));
   const topFive = new Set(mustSees.slice(0, 5).map((p) => p.id));
@@ -391,7 +405,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
 
   // Must-sees go to days by area, but each day only takes what it can hold: in importance order, a place goes to
   // the day with the nearest anchor that still has room, so neighbourhoods stay together and none is crowded out.
-  const dayCapacity = (d: DayFrame) => Math.min(ITINERARY.maxDaytimeStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin));
+  const dayCapacity = (d: DayFrame) => Math.min(maxStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin));
   const room = order.map(dayCapacity);
   const mustDay = new Map<string, number>();
   for (const p of mustSees) {
@@ -418,7 +432,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
    * that is closed at the next free moment may start later that day, when it opens (for the top five).
    */
   const tryAppend = (b: Build, p: PlanPlace, wait = false): boolean => {
-    if (b.stops.length >= ITINERARY.maxDaytimeStops || used.has(p.id) || sameSpotTaken(p)) return false;
+    if (b.stops.length >= maxStops || used.has(p.id) || sameSpotTaken(p)) return false;
     const window = b.day.daytime!;
     const base = (b.day.number - 1) * 1440;
     const travel: Travel | null = b.at ? travelBetween(b.at, p) : null;
@@ -447,38 +461,52 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
     }
   };
 
-  // 3. The five best-known places first, before anything can fill their days: each on its area's day, or else the
-  //    first day it is open, waiting for its opening time if needed. Only capacity or being closed all trip keeps
-  //    one out.
-  for (const p of mustSees.filter((q) => topFive.has(q.id))) {
-    const own = builds.filter((b) => b.area === mustDay.get(p.id));
-    const others = builds.filter((b) => b.area !== mustDay.get(p.id)).sort((a, b) => a.day.number - b.day.number);
-    [...own, ...others].find((b) => tryAppend(b, p, true));
-  }
-  // 4. Each day takes the rest of its must-sees, starting with the most important, then nearest neighbour.
-  for (const b of builds) {
-    const own = mustSees.filter((p) => mustDay.get(p.id) === b.area);
-    if (b.at === null) own.find((p) => tryAppend(b, p));
-    fill(b, () => own.filter((p) => !used.has(p.id)));
-  }
-  // 5. Must-sees that did not fit their area's day (time, or closed that day) go to another day with room, nearest first.
-  for (const p of mustSees.filter((q) => !used.has(q.id))) {
-    const byDistance = [...builds].sort(
-      (a, b) => (a.at ? dist(a.at, p) : Infinity) - (b.at ? dist(b.at, p) : Infinity) || a.day.number - b.day.number,
-    );
-    // A remote place stays in its own area: it is not carried into another area's day.
-    byDistance.filter((b) => !p.remote || b.area === mustDay.get(p.id)).find((b) => tryAppend(b, p));
-  }
-  // 6. Fill the remaining time: other known places, then little-known ones, then names that only say what they are,
-  //    and at most one viewpoint without a Wikidata item a day.
-  for (const b of builds) {
-    const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id) && !p.remote);
-    const ownFirst = (list: PlanPlace[]) => [...list.filter((p) => areaOf.get(p.id) === b.area), ...list.filter((p) => areaOf.get(p.id) !== b.area)];
-    fill(b, () => ownFirst(rest().filter(onMustSeeList)));
-    fill(b, () => ownFirst(rest().filter((p) => !onMustSeeList(p) && !isGenericName(p) && !unnamedViewpoint(p))));
-    fill(b, () => ownFirst(rest().filter((p) => isGenericName(p) && !unnamedViewpoint(p))));
-    if (b.viewpoints < 1) nearFirst(b.at, rest().filter(unnamedViewpoint)).find((p) => tryAppend(b, p));
-    planned.set(b.day.number, b.stops);
+  if (input.pinned) {
+    // A chosen plan: each day's stops in the given order, timed by the same rules; nothing else is added.
+    for (const b of builds) {
+      for (const id of input.pinned[b.day.number - 1] ?? []) {
+        const p = byPlace.get(id);
+        if (!p || !tryAppend(b, p, true)) dropped.push(id);
+      }
+      planned.set(b.day.number, b.stops);
+    }
+    for (const [i, ids] of input.pinned.entries()) {
+      if (!builds.some((b) => b.day.number === i + 1)) dropped.push(...ids);
+    }
+  } else {
+    // 3. The five best-known places first, before anything can fill their days: each on its area's day, or else the
+    //    first day it is open, waiting for its opening time if needed. Only capacity or being closed all trip keeps
+    //    one out.
+    for (const p of mustSees.filter((q) => topFive.has(q.id))) {
+      const own = builds.filter((b) => b.area === mustDay.get(p.id));
+      const others = builds.filter((b) => b.area !== mustDay.get(p.id)).sort((a, b) => a.day.number - b.day.number);
+      [...own, ...others].find((b) => tryAppend(b, p, true));
+    }
+    // 4. Each day takes the rest of its must-sees, starting with the most important, then nearest neighbour.
+    for (const b of builds) {
+      const own = mustSees.filter((p) => mustDay.get(p.id) === b.area);
+      if (b.at === null) own.find((p) => tryAppend(b, p));
+      fill(b, () => own.filter((p) => !used.has(p.id)));
+    }
+    // 5. Must-sees that did not fit their area's day (time, or closed that day) go to another day with room, nearest first.
+    for (const p of mustSees.filter((q) => !used.has(q.id))) {
+      const byDistance = [...builds].sort(
+        (a, b) => (a.at ? dist(a.at, p) : Infinity) - (b.at ? dist(b.at, p) : Infinity) || a.day.number - b.day.number,
+      );
+      // A remote place stays in its own area: it is not carried into another area's day.
+      byDistance.filter((b) => !p.remote || b.area === mustDay.get(p.id)).find((b) => tryAppend(b, p));
+    }
+    // 6. Fill the remaining time: other known places, then little-known ones, then names that only say what they are,
+    //    and at most one viewpoint without a Wikidata item a day.
+    for (const b of builds) {
+      const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id) && !p.remote);
+      const ownFirst = (list: PlanPlace[]) => [...list.filter((p) => areaOf.get(p.id) === b.area), ...list.filter((p) => areaOf.get(p.id) !== b.area)];
+      fill(b, () => ownFirst(rest().filter(onMustSeeList)));
+      fill(b, () => ownFirst(rest().filter((p) => !onMustSeeList(p) && !isGenericName(p) && !unnamedViewpoint(p))));
+      fill(b, () => ownFirst(rest().filter((p) => isGenericName(p) && !unnamedViewpoint(p))));
+      if (b.viewpoints < 1) nearFirst(b.at, rest().filter(unnamedViewpoint)).find((p) => tryAppend(b, p));
+      planned.set(b.day.number, b.stops);
+    }
   }
 
   // Evening places, in date order, near each day's last stop (or the day's anchor, or the city's first sight).
@@ -536,10 +564,12 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
           : stops.length === 0
             ? "Bu zaman aralığına uyan açık bir mekân bulunamadı."
             : null);
-      return { number: d.number, date: d.date, tags: d.tags, window, stops, free, note, flightNote: flightNote !== null };
+      const daytime = d.daytime ? { start: hhmm(d.daytime.start - base), end: hhmm(d.daytime.end - base) } : null;
+      return { number: d.number, date: d.date, tags: d.tags, window, daytime, stops, free, note, flightNote: flightNote !== null };
     }),
     basis: input.flight?.arrive && input.flight?.leave ? "flight" : "assumed",
     timeZone: input.timeZone,
     skipped: input.skip.filter((s) => allIds.has(s)),
+    dropped,
   };
 }

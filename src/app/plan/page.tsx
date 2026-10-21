@@ -11,6 +11,7 @@ import { todayInIstanbul } from "@/lib/search/dates";
 import { describeSearch } from "@/lib/search/describe";
 import { parseBudgetParams } from "@/lib/budget/params";
 import { parseDirect } from "@/lib/flights/display";
+import { parseEdits, parsePinned } from "@/lib/ai/edits";
 import { parseSkip } from "@/lib/itinerary/ids";
 import { parseCategories } from "@/lib/places/cats";
 import { parseSearch } from "@/lib/search/params";
@@ -76,7 +77,7 @@ async function PlanContent({ searchParams }: Props) {
         categories={parseCategories(params.cats)}
         direct={parseDirect(params.direct)}
         budget={parseBudgetParams(params, destination.currency)}
-        skip={parseSkip(params.skip)}
+        planEdits={{ skip: parseSkip(params.skip), ai: parsePinned(params.ai), edits: parseEdits(params.edit) }}
       />
     </>
   );

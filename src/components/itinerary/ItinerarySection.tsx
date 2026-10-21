@@ -1,7 +1,8 @@
 import { Skeleton } from "@/components/ui";
 import type { Destination } from "@/data/destinations";
 import { airlineName } from "@/data/airlines";
-import { DAYTIME_CATEGORIES, eveningCategoriesFor } from "@/lib/itinerary/config";
+import type { EditBatch } from "@/lib/ai/edits";
+import { DAYTIME_CATEGORIES, EVENING_CATEGORIES, eveningCategoriesFor, type EveningCategory } from "@/lib/itinerary/config";
 import type { ItineraryInput, PlanPlace } from "@/lib/itinerary/plan";
 import type { CategoryId } from "@/lib/places/categories";
 import { loadFlights } from "@/lib/flights/load";
@@ -20,6 +21,10 @@ type Props = {
   /** `?flight=`: the budget's ticket. */
   flight: string | null;
   skip: string[];
+  /** `?ai=`: an AI plan's daytime stops per day. */
+  aiPlan: string[][] | null;
+  /** `?edit=`: chat edits. */
+  edits: EditBatch[];
 };
 
 /** The budget's flight in destination local time (the API's legs are already local to each airport). */
@@ -32,8 +37,8 @@ export function flightMoments(ticket: FlightTicket | null): ItineraryInput["flig
   };
 }
 
-/** Day-by-day plan (PRD 20): built from the pre-fetched places, deterministically, without AI. */
-export async function ItinerarySection({ search, destination, categories, direct, flight, skip }: Props) {
+/** Day-by-day plan (PRD 20–22): built from the pre-fetched places, deterministically; AI and chat edits are optional. */
+export async function ItinerarySection({ search, destination, categories, direct, flight, skip, aiPlan, edits }: Props) {
   const [file, flights] = await Promise.all([
     loadPlacesFile(destination.cityCode),
     loadFlights(search.from, search.to, search.depart, search.return, search.pax, direct),
@@ -57,10 +62,16 @@ export async function ItinerarySection({ search, destination, categories, direct
     daytime: take(DAYTIME_CATEGORIES),
     evening: take(eveningCategoriesFor(categories)),
   };
+  // Every evening category, so a chat edit ("akşamları kokteyl bar") can switch without a reload.
+  const eveningPool = Object.fromEntries(EVENING_CATEGORIES.map((c) => [c, take([c])])) as Record<EveningCategory, PlanPlace[]>;
   return (
     <ItineraryView
       input={input}
       initialSkip={skip}
+      eveningPool={eveningPool}
+      initialEvening={eveningCategoriesFor(categories)}
+      initialAi={aiPlan}
+      initialEdits={edits}
       cityName={destination.nameTr}
       center={{ lat: destination.lat, lon: destination.lon }}
     />
