@@ -4,6 +4,7 @@ export type AiErrorKind =
   | "auth"
   | "quota"
   | "freeTier"
+  | "quotaUnknown"
   | "rate"
   | "model"
   | "network"
@@ -19,6 +20,9 @@ export const AI_ERROR_MESSAGES: Record<AiErrorKind, string> = {
   auth: "Anahtar geçersiz ya da bu sağlayıcıya ait değil. Anahtarı kontrol edip yeniden bağlan.",
   quota: "Hesabındaki kota ya da kredi bitmiş görünüyor. Sağlayıcının panelinden kontrol edebilirsin.",
   freeTier: "Bu model ücretsiz katmanda kullanılamıyor. Bağlantı ayarları'ndan başka bir model seç.",
+  /** Gemini's 429 with no QuotaFailure or RetryInfo: which limit is not said, so it is not taken for a per-minute one. */
+  quotaUnknown:
+    "Google kota sınırına takıldığını söylüyor ama hangi sınır olduğunu belirtmedi. Bir dakika bekleyip yeniden dene; tekrarlarsa ai.dev/rate-limit sayfasından kullanımına bak.",
   rate: "Sağlayıcı şu an çok fazla istek aldığını söylüyor. Biraz bekleyip yeniden dene.",
   model: "Seçilen model bu anahtarla kullanılamıyor. Listeden başka bir model seç.",
   network: "Sağlayıcıya ulaşılamadı. İnternet bağlantını kontrol edip yeniden dene.",
@@ -71,11 +75,15 @@ export class AiError extends Error {
   }
 }
 
-/** "HTTP 503 · gemini-3.5-flash": the honest diagnosis under an error message. Never the key, body or raw text. */
+/**
+ * "HTTP 503 · GEMINI-3.5-FLASH": the honest diagnosis under an error message. Never the key, body or raw text.
+ * Upper-cased here without a locale: the caption's CSS uppercase would follow the page's Turkish rules
+ * ("GEMİNİ"), and upper-case text stays as it is.
+ */
 export function aiErrorCaption(error: unknown): string | null {
   if (!(error instanceof AiError)) return null;
   const parts = [error.status ? `HTTP ${error.status}` : null, error.model ?? null].filter((p): p is string => !!p);
-  return parts.length ? parts.join(" · ") : null;
+  return parts.length ? parts.join(" · ").toUpperCase() : null;
 }
 
 type ErrorDetail = {
@@ -110,6 +118,8 @@ function geminiRateLimit(details: ErrorDetail[]): { kind: AiErrorKind; retryAfte
   const limit = (v: (typeof violations)[number]) => v.quotaValue ?? v.limit;
   if (violations.some((v) => limit(v) !== undefined && Number(limit(v)) === 0)) return { kind: "freeTier" };
   if (violations.some((v) => /PerDay/.test(v.quotaId ?? ""))) return { kind: "quota" };
+  // Neither which quota nor how long to wait (seen with Gemini 3 web search on the free tier, 2026-10-21).
+  if (!violations.length && retryAfterMs === undefined) return { kind: "quotaUnknown" };
   return { kind: "rate", retryAfterMs };
 }
 
@@ -134,7 +144,7 @@ export async function aiErrorFromResponse(provider: ProviderId, res: Response, n
     const headerDelay = parseRetryAfter(res.headers.get("retry-after"), now);
     if (provider === "gemini" && body.error?.status === "RESOURCE_EXHAUSTED") {
       const limit = geminiRateLimit(details);
-      return new AiError(limit.kind, { status, retryAfterMs: limit.retryAfterMs ?? headerDelay });
+      return new AiError(limit.kind, { status, retryAfterMs: limit.kind === "rate" ? (limit.retryAfterMs ?? headerDelay) : undefined });
     }
     return new AiError("rate", { status, retryAfterMs: headerDelay });
   }

@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { saveConnection } from "@/lib/ai/keyStore";
 import { mockProvider } from "@/lib/ai/mockProvider";
 import type { RateTable } from "@/lib/ai/webPrices";
+import helpOnly429 from "@/lib/ai/__fixtures__/gemini-429-help-only.json";
 import { WebFlightSearch } from "./WebFlightSearch";
 
 const replace = vi.fn();
@@ -102,7 +103,10 @@ describe("flight prices from the model's web search", () => {
     expect(link).toHaveAttribute("target", "_blank");
     expect(link).toHaveAttribute("rel", "noopener noreferrer nofollow");
     expect(screen.getByText(/Kaynağı aramada bulunan sayfalar arasında olmayan 1 sonuç gösterilmedi/)).toBeInTheDocument();
-    expect(screen.getByText(/YAPAY ZEKÂ WEB'DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · OpenAI · gpt-5-mini · /)).toBeInTheDocument();
+    // Provider and model names are upper-cased by English rules (CSS uppercase follows lang).
+    const source = screen.getByText("OpenAI · gpt-5-mini");
+    expect(source).toHaveAttribute("lang", "en");
+    expect(source.parentElement).toHaveTextContent(/^YAPAY ZEKÂ WEB'DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · OpenAI · gpt-5-mini · /);
 
     // The same search again (page reopened in this tab) comes from sessionStorage: no new request.
     view.unmount();
@@ -147,7 +151,7 @@ describe("flight prices from the model's web search", () => {
     expect(posts).toBe(1);
     release();
     expect(await screen.findByRole("alert")).toHaveTextContent("Sağlayıcı bu isteği kabul etmedi.");
-    expect(screen.getByText("HTTP 400 · claude-haiku-5-5")).toBeInTheDocument();
+    expect(screen.getByText("HTTP 400 · CLAUDE-HAIKU-5-5")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Web'de ara" })).toBeEnabled();
     expect(document.body.textContent).not.toContain(KEY);
     // Nothing about the call is logged, least of all the key.
@@ -237,7 +241,7 @@ describe("Gemini: the grounded answer as it came", () => {
       "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent",
       "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
     ]);
-    expect(screen.getByText(/Google Gemini · gemini-2\.5-flash · /)).toBeInTheDocument();
+    expect(screen.getByText("Google Gemini · gemini-2.5-flash")).toHaveAttribute("lang", "en");
     expect(JSON.parse(window.sessionStorage.getItem("va.ai.connection")!).model).toBe("gemini-3.6-flash");
   });
 
@@ -252,5 +256,55 @@ describe("Gemini: the grounded answer as it came", () => {
     await waitFor(() => expect(mock.requests.filter((r) => r.method === "GET")).toHaveLength(1));
     await waitFor(() => expect(screen.getByRole("button", { name: "Web'de ara" })).toBeEnabled());
     expect(screen.queryByRole("button", { name: "Gemini 2.5 Flash ile ara" })).toBeNull();
+  });
+});
+
+describe("Gemini: a 429 that says neither which quota nor how long to wait", () => {
+  const bare = { status: 429, body: helpOnly429 };
+  beforeEach(() => window.history.replaceState(null, "", "/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2"));
+  afterEach(() => {
+    window.sessionStorage.clear();
+    window.localStorage.clear();
+  });
+
+  it("on a Gemini 3 search, says Gemini 3 has no free-tier search and offers 2.5 Flash from the list", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "gemini", key: KEY, model: "gemini-3.6-flash" }, false);
+    const mock = mockProvider("gemini", [bare, grounded], ["gemini-3.6-flash", "gemini-2.5-flash"]);
+    renderSearch(mock.fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    const alert = await screen.findByRole("alert");
+    expect(alert).toHaveTextContent("Google bu aramaya kota sınırı uyguladı. Gemini 3 modelleri ücretsiz katmanda web araması yapamıyor.");
+    expect(alert).toHaveTextContent("HTTP 429 · GEMINI-3.6-FLASH");
+    expect(alert).not.toHaveTextContent(/exceeded|quota, please/);
+    await user.click(await screen.findByRole("button", { name: "Gemini 2.5 Flash ile ara" }));
+    expect((await screen.findByTestId("grounded-text")).textContent).toBe(GROUNDED_TEXT);
+    expect(mock.requests.filter((r) => r.method === "POST")).toHaveLength(2); // no automatic retry
+  });
+
+  it("keeps the same message without a button when the list has no 2.5 Flash", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "gemini", key: KEY, model: "gemini-3.6-flash" }, false);
+    const mock = mockProvider("gemini", [bare], ["gemini-3.6-flash", "gemini-2.5-pro"]);
+    renderSearch(mock.fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    expect(await screen.findByRole("alert")).toHaveTextContent("Gemini 3 modelleri ücretsiz katmanda web araması yapamıyor.");
+    await waitFor(() => expect(mock.requests.filter((r) => r.method === "GET")).toHaveLength(1));
+    await waitFor(() => expect(screen.getByRole("button", { name: "Web'de ara" })).toBeEnabled());
+    expect(screen.queryByRole("button", { name: "Gemini 2.5 Flash ile ara" })).toBeNull();
+  });
+
+  it("on a search already with a 2.5 model, says the limit was not named, with no button and no retry", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "gemini", key: KEY, model: "gemini-2.5-flash" }, false);
+    const mock = mockProvider("gemini", [bare, grounded], ["gemini-2.5-flash"]);
+    renderSearch(mock.fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    expect(await screen.findByRole("alert")).toHaveTextContent(
+      "Google kota sınırına takıldığını söylüyor ama hangi sınır olduğunu belirtmedi. Bir dakika bekleyip yeniden dene; tekrarlarsa ai.dev/rate-limit sayfasından kullanımına bak.",
+    );
+    expect(screen.queryByRole("button", { name: "Gemini 2.5 Flash ile ara" })).toBeNull();
+    expect(mock.requests.filter((r) => r.method === "POST")).toHaveLength(1);
+    expect(mock.requests.filter((r) => r.method === "GET")).toHaveLength(0);
   });
 });

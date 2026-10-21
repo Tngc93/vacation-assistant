@@ -71,7 +71,8 @@ const searchedAtFormat = new Intl.DateTimeFormat("tr-TR", {
 export function WebSourceCaption({ result }: { result: Pick<WebPrices<unknown>, "source" | "searchedAt"> }) {
   return (
     <Caption as="p">
-      YAPAY ZEKÂ WEB&apos;DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · {result.source} · {searchedAtFormat.format(result.searchedAt)}
+      YAPAY ZEKÂ WEB&apos;DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · {/* Names and model ids: uppercased by English rules (GEMINI, not GEMİNİ). */}
+      <span lang="en">{result.source}</span> · {searchedAtFormat.format(result.searchedAt)}
     </Caption>
   );
 }
@@ -235,10 +236,13 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
       try {
         setResult(await run(model ? { ...conn, model } : conn));
       } catch (e) {
-        setError(errorNotice(e));
-        if (e instanceof AiError && e.kind === "freeTier" && conn.provider === "gemini") {
+        const used = model ?? conn.model;
+        // A bare quota error on a search with a model outside the 2.5 family: Gemini 3 has no free-tier search.
+        const noFreeSearch = e instanceof AiError && conn.provider === "gemini" && (e.kind === "freeTier" || (e.kind === "quotaUnknown" && !GEMINI_25.test(used)));
+        setError(noFreeSearch && e.kind === "quotaUnknown" ? { ...errorNotice(e), text: NO_FREE_SEARCH } : errorNotice(e));
+        if (noFreeSearch) {
           const models = await listModels("gemini", conn.key, fetcher).catch(() => []);
-          setFallback(freeTierSearchModel(models, model ?? conn.model));
+          setFallback(freeTierSearchModel(models, used));
         }
       } finally {
         inFlight.current = false;
@@ -249,6 +253,10 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
   );
   return { result, busy, error, fallback, search };
 }
+
+/** Gemini 2.5 family (the free tier's only models with Google Search, pricing page 2026-10-19). */
+const GEMINI_25 = /^gemini-2\.5-/;
+const NO_FREE_SEARCH = "Google bu aramaya kota sınırı uyguladı. Gemini 3 modelleri ücretsiz katmanda web araması yapamıyor.";
 
 /** A Gemini 2.5 Flash (not Lite, not a preview) from the key's list, other than the model that just failed. */
 export function freeTierSearchModel(models: readonly ModelInfo[], failed: string): string | null {
