@@ -1,6 +1,6 @@
 "use client";
 
-import { PencilLine } from "lucide-react";
+import { ChevronDown, PencilLine } from "lucide-react";
 import { useCallback, useState } from "react";
 import { Caption } from "@/components/ui";
 import {
@@ -31,15 +31,27 @@ type Props = {
 export function WebStaySearch({ query, rates, demo, fetcher }: Props) {
   const search = useSearchConnection(demo);
   if (!search) return null;
-  if (search.conn.provider === "gemini") return <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />;
-  return <Connected query={query} rates={rates} demo={demo} conn={search.conn} fetcher={search.fetcher ?? fetcher} />;
+  return (
+    // Folded away until asked for, like the full flight list.
+    <details className="group mt-5 border-t border-rule pt-4">
+      <summary className="flex cursor-pointer list-none items-center gap-1.5 text-caption font-medium text-ink [&::-webkit-details-marker]:hidden">
+        <ChevronDown aria-hidden="true" size={16} strokeWidth={1.5} className="transition-transform duration-200 group-open:rotate-180" />
+        Web&apos;de ara
+      </summary>
+      {search.conn.provider === "gemini" ? (
+        <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
+      ) : (
+        <Connected query={query} rates={rates} demo={demo} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
+      )}
+    </details>
+  );
 }
 
 /** Gemini: the grounded answer shown as it came (no ranges read out, no lira, no cache, no "Bütçeye yaz"). */
 function Grounded({ query, conn, fetcher }: { query: StayQuery; conn: Connection; fetcher?: typeof fetch }) {
   const run = useCallback((c: Connection) => searchGrounded(c, "stays", query, { fetcher, now: Date.now() }), [query, fetcher]);
   return (
-    <div className="mt-6 border-t border-dashed border-rule pt-5">
+    <div className="mt-4">
       <GroundedSearch label="Semte göre fiyat aralığını web'de ara" conn={conn} run={run} fetcher={fetcher} rows={3} />
     </div>
   );
@@ -66,7 +78,7 @@ function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<Re
   };
 
   return (
-    <div className="mt-6 grid gap-4 border-t border-dashed border-rule pt-5">
+    <div className="mt-4 grid gap-4">
       <SearchButton label="Semte göre fiyat aralığını web'de ara" busy={busy} done={!!result} onSearch={search} provider={conn.provider} demo={demo} />
       {error ? <NoticeText notice={error} alert /> : null}
       {busy ? (

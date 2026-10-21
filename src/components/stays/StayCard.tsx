@@ -29,7 +29,7 @@ export function StayCard({ destination, checkIn, checkOut, adults, children }: P
       </Caption>
       <p className="mt-3 max-w-2xl text-body">
         Ücretsiz bir otel fiyat kaynağı olmadığı için burada fiyat göstermiyoruz. {destination.nameTr} için tarihlerin dolu
-        aramayı açıp gecelik fiyatı aşağıdaki bütçeye yazabilirsin.
+        aramayı açıp gecelik fiyatı Bütçe bölümüne yazabilirsin.
       </p>
       <div className="mt-5 flex flex-wrap gap-3">
         <a href={bookingUrl(search)} target="_blank" rel="noopener noreferrer" className={buttonClasses({ variant: "secondary", wrap: true, className: STAY_BUTTON })}>

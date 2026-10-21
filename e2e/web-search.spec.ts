@@ -18,6 +18,9 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   const receipt = page.locator("#butce").getByRole("region", { name: "Bütçe fişi" });
   const totalBefore = await receipt.locator("[aria-live]").innerText();
 
+  // The web search sits with the full list, behind "Tüm uçuşları gör".
+  await expect(web).toBeHidden();
+  await flights.getByText("Tüm uçuşları gör").click();
   // Nothing is searched until the button is pressed.
   await expect(web.getByRole("button", { name: "Web'de ara" })).toBeVisible();
   await expect(web.getByRole("article")).toHaveCount(0);
@@ -45,6 +48,7 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
 
   // Stays: ranges by neighbourhood, the middle written into the nightly field.
   const stays = page.locator("#konaklama");
+  await stays.getByText("Web'de ara", { exact: true }).click();
   await stays.getByRole("button", { name: "Semte göre fiyat aralığını web'de ara" }).click();
   await expect(stays.getByText("ÖRNEK VERİ · ÖRNEK SAĞLAYICI · GERÇEK FİYAT DEĞİL")).toBeVisible();
   await expect(stays.getByRole("listitem")).toHaveCount(3);
@@ -57,6 +61,7 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   // The same search in this tab comes back from sessionStorage, with no request to any provider (the demo
   // never uses the network at all), and the sample sites are never requested by the app.
   await page.reload();
+  await page.locator("#ucuslar").getByText("Tüm uçuşları gör").click();
   await expect(page.locator("#ucuslar").getByRole("region", { name: "Web'de ara" }).getByRole("article")).toHaveCount(2);
   await expect(page.locator("#ucuslar").getByRole("button", { name: "Yeniden ara" })).toBeVisible();
   for (const r of requests) expect(new URL(r.url()).hostname).not.toMatch(/example\.(com|org)$|googleapis|anthropic|openai/);
