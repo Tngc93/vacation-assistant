@@ -83,6 +83,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
             categories={categories}
             direct={direct}
             flight={budget.flight}
+            webFlight={budget.webFlight !== null}
             skip={planEdits.skip}
             aiPlan={planEdits.ai}
             edits={planEdits.edits}
