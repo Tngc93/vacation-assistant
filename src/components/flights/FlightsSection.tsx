@@ -1,5 +1,10 @@
 import { Caption, SkeletonTicket } from "@/components/ui";
 import { airlineName } from "@/data/airlines";
+import { findDestination } from "@/data/destinations";
+import { findOrigin } from "@/data/origins";
+import { aiDemoEnabled } from "@/lib/ai/demo";
+import type { WebFlightChoice } from "@/lib/budget/params";
+import { loadRateTable } from "@/lib/rates/table";
 import { AIRPORT_NAMES, cacheCaption, formatStops, formatTicketDay } from "@/lib/flights/display";
 import { formatTRY } from "@/lib/format";
 import { FLIGHTS_ERROR_MESSAGES } from "@/lib/flights/errors";
@@ -10,6 +15,7 @@ import type { FlightTicket, Leg } from "@/lib/flights/tickets";
 import { DirectChip } from "./DirectChip";
 import { FlightsLinks } from "./FlightsLinks";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
+import { WebFlightSearch } from "./WebFlightSearch";
 
 type Props = {
   from: string;
@@ -20,16 +26,28 @@ type Props = {
   direct: boolean;
   /** `?flight=`: the ticket in the budget. */
   flight: string | null;
+  /** `?wf=`/`?wfs=`: a web-search price in the budget instead of a ticket. */
+  webFlight: WebFlightChoice | null;
 };
 
 /** Cached Travelpayouts prices for every origin airport (server-side; the token never reaches the browser). */
-export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight }: Props) {
-  const result = await loadFlights(from, to, depart, ret, pax, direct);
+export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
+  const destination = findDestination(to)!;
+  const [result, rates] = await Promise.all([loadFlights(from, to, depart, ret, pax, direct), loadRateTable(destination.currency)]);
   const choice = chooseFlight(result, flight);
+  const query = {
+    fromAirports: findOrigin(from)?.airports ?? [from],
+    toCity: destination.nameEn,
+    toAirports: destination.airports,
+    depart,
+    return: ret,
+    adults: pax,
+  };
   return (
     <>
       <div className="print:hidden">
-        <FlightsView result={result} budgetRef={choiceRef(choice)} />
+        <FlightsView result={result} budgetRef={webFlight ? null : choiceRef(choice)} />
+        <WebFlightSearch query={query} rates={rates} demo={aiDemoEnabled()} inBudget={webFlight} />
       </div>
       <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
     </>

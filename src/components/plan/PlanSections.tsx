@@ -6,6 +6,7 @@ import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection
 import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
 import { ItinerarySection, ItinerarySkeleton } from "@/components/itinerary/ItinerarySection";
 import { StayCard } from "@/components/stays/StayCard";
+import { WebStaySection } from "@/components/stays/WebStaySection";
 import type { BudgetParams } from "@/lib/budget/params";
 import { CityGuide, CityGuideSkeleton } from "@/components/places/CityGuide";
 import type { CategoryId } from "@/lib/places/categories";
@@ -34,6 +35,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
             pax={search.pax}
             direct={direct}
             flight={budget.flight}
+            webFlight={budget.webFlight}
           />
         </Suspense>
       ),
@@ -43,7 +45,13 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
       id: "konaklama",
       title: "Konaklama",
       print: false,
-      body: <StayCard destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax} />,
+      body: (
+        <StayCard destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax}>
+          <Suspense fallback={null}>
+            <WebStaySection destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax} />
+          </Suspense>
+        </StayCard>
+      ),
     },
     {
       id: "butce",

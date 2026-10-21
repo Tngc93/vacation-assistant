@@ -1,13 +1,14 @@
 "use client";
 
 import { KeyRound, MessageSquare, Sparkles, Trash2, Undo2 } from "lucide-react";
-import { useId, useMemo, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+import { useId, useMemo, useRef, useState, type FormEvent } from "react";
 import { Button, Caption, Chip } from "@/components/ui";
-import { cn } from "@/lib/cn";
 import { requestAiEdit, requestAiPlan, type AiPlan } from "@/lib/ai/assistant";
 import type { EditBatch, PlanDiff } from "@/lib/ai/edits";
 import { AiError, aiErrorCaption } from "@/lib/ai/errors";
-import { clearConnection, connectionSnapshot, loadConnection, saveConnection, subscribeConnection } from "@/lib/ai/keyStore";
+import { errorNotice, NoticeText, type Notice } from "./notice";
+import { useAiConnection } from "./useAiConnection";
+import { clearConnection, saveConnection, type loadConnection } from "@/lib/ai/keyStore";
 import { candidatesFor, dayWindows, type PlanSummaryDay } from "@/lib/ai/prompts";
 import { listModels, PROVIDER_IDS, PROVIDERS, suggestModel, type ModelInfo, type ProviderId } from "@/lib/ai/providers";
 import { ITINERARY } from "@/lib/itinerary/config";
@@ -30,35 +31,15 @@ type Props = {
   fetcher?: typeof fetch;
 };
 
-const serverSnapshot = () => null;
-
 const EXAMPLES = ["2. günü müzesiz yap", "Daha az yürüyelim", "Akşamları kokteyl bar"];
-
-type Notice = { tone: "ink" | "warn"; text: string; detail?: string | null };
-
-/** The calm message and, under it, only the HTTP status and model name. */
-function errorNotice(error: unknown): Notice {
-  return { tone: "warn", text: error instanceof AiError ? error.message : new AiError("network").message, detail: aiErrorCaption(error) };
-}
-
-function NoticeText({ notice, alert }: { notice: Notice; alert?: boolean }) {
-  return (
-    <div role={alert ? "alert" : undefined} className="grid gap-1">
-      <p className={cn("text-caption", notice.tone === "warn" ? "text-warn" : "text-ink")}>{notice.text}</p>
-      {notice.detail ? <Caption>{notice.detail}</Caption> : null}
-    </div>
-  );
-}
 
 /** PRD 21–26: connect your own provider, let the model plan from the fetched list, edit by chatting. */
 export function AiPanel(props: Props) {
-  // Re-read the saved connection whenever storage changes (this tab or another).
-  const snapshot = useSyncExternalStore(subscribeConnection, connectionSnapshot, serverSnapshot);
-  const connection = useMemo(() => (snapshot ? loadConnection() : null), [snapshot]);
+  const connection = useAiConnection();
   const [settings, setSettings] = useState(false);
 
   return (
-    <section aria-labelledby="ai-title" className="mt-6 rounded-md border border-rule bg-paper-raised p-4 md:p-5 print:hidden">
+    <section id="yapay-zeka" aria-labelledby="ai-title" className="mt-6 scroll-mt-6 rounded-md border border-rule bg-paper-raised p-4 md:p-5 print:hidden">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} />

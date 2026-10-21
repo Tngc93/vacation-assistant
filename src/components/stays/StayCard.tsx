@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import type { ReactNode } from "react";
 import { buttonClasses, Caption } from "@/components/ui";
 import type { Destination } from "@/data/destinations";
 import { formatTicketDay } from "@/lib/flights/display";
@@ -8,10 +9,17 @@ import { bookingUrl, GOOGLE_HOTELS_DEFAULT_GUESTS, googleHotelsUrl } from "@/lib
 // Full width on phones and allowed to wrap, so a long label never widens the page.
 const STAY_BUTTON = "w-full sm:w-auto";
 
-type Props = { destination: Destination; checkIn: string; checkOut: string; adults: number };
+type Props = {
+  destination: Destination;
+  checkIn: string;
+  checkOut: string;
+  adults: number;
+  /** The web search by neighbourhood (only with AI connected). */
+  children?: ReactNode;
+};
 
 /** Stay card (PRD 9–10): no price of our own, only prefilled searches on Booking and Google Hotels. */
-export function StayCard({ destination, checkIn, checkOut, adults }: Props) {
+export function StayCard({ destination, checkIn, checkOut, adults, children }: Props) {
   const search = { city: destination.nameEn, checkIn, checkOut, adults };
   const nights = daysBetween(checkIn, checkOut);
   return (
@@ -38,6 +46,7 @@ export function StayCard({ destination, checkIn, checkOut, adults }: Props) {
           Google Hotels kişi sayısını linkten almıyor; {adults} kişi için orada seçmen gerekiyor.
         </p>
       ) : null}
+      {children}
     </div>
   );
 }
