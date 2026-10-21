@@ -1,17 +1,18 @@
 "use client";
 
 import { ArrowUpRight, RotateCw, Search } from "lucide-react";
-import { useCallback, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { buttonClasses, Caption, Skeleton } from "@/components/ui";
-import type { Connection, ProviderId } from "@/lib/ai/providers";
+import { AiError } from "@/lib/ai/errors";
+import { listModels, type Connection, type ModelInfo, type ProviderId } from "@/lib/ai/providers";
 import { parseWebCache, readWebCacheRaw, subscribeWebCache, writeWebCache, type WebKind } from "@/lib/ai/webCache";
-import type { FlightOffer, StayArea, WebLink, WebPrices } from "@/lib/ai/webPrices";
+import { httpsUrl, type FlightOffer, type GroundedAnswer, type StayArea, type WebLink, type WebPrices } from "@/lib/ai/webPrices";
 import { demoWebSearchFetcher } from "@/lib/ai/mockProvider";
 import { errorNotice, NoticeText, type Notice } from "./notice";
 import { useAiConnection } from "./useAiConnection";
 
 /** The keyless demo's connection: no key, the mock provider answers (never the network). */
-const DEMO_CONNECTION: Connection = { provider: "gemini", key: "", model: "örnek" };
+const DEMO_CONNECTION: Connection = { provider: "openai", key: "", model: "örnek" };
 
 /** The connection to search with, the demo's when the demo is on, or null (not connected). */
 export function useSearchConnection(demo: boolean): { conn: Connection; fetcher?: typeof fetch } | null {
@@ -67,7 +68,7 @@ const searchedAtFormat = new Intl.DateTimeFormat("tr-TR", {
 });
 
 /** "YAPAY ZEKÂ WEB'DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · Google Gemini · gemini-2.5-flash · 21 Eki 21:40" */
-export function WebSourceCaption({ result }: { result: WebPrices<unknown> }) {
+export function WebSourceCaption({ result }: { result: Pick<WebPrices<unknown>, "source" | "searchedAt"> }) {
   return (
     <Caption as="p">
       YAPAY ZEKÂ WEB&apos;DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · {result.source} · {searchedAtFormat.format(result.searchedAt)}
@@ -93,33 +94,37 @@ export function SourceLink({ link, children }: { link: WebLink; children?: React
   );
 }
 
-/**
- * Gemini's Search Suggestions, shown unmodified with the grounded result as the Gemini API terms require
- * (ai.google.dev/gemini-api/terms, "Grounding with Google Search"; checked 2026-10-21). Google's HTML and CSS
- * render in a sandboxed frame: no scripts, its styles stay inside, and its links open Google Search in a new tab.
- */
-export function SearchSuggestions({ html }: { html: string }) {
-  const frame = useRef<HTMLIFrameElement>(null);
-  const [height, setHeight] = useState(64);
-  const fit = () => {
-    const doc = frame.current?.contentDocument;
-    if (doc?.documentElement) setHeight(Math.min(240, Math.max(40, doc.documentElement.scrollHeight)));
-  };
-  return (
-    <div className="grid gap-1">
-      <Caption as="p">GOOGLE ARAMA ÖNERİLERİ</Caption>
-      <iframe
-        ref={frame}
-        title="Google arama önerileri"
-        // allow-same-origin without allow-scripts: we can measure the height, the frame can run nothing.
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin"
-        srcDoc={`<!doctype html><html><head><meta charset="utf-8"><base target="_blank"><style>body{margin:0}</style></head><body>${html}</body></html>`}
-        onLoad={fit}
-        style={{ height }}
-        className="w-full border-0"
-      />
-    </div>
+/** Anything that could run or navigate on its own; Google's Search Suggestions are only HTML and CSS. */
+function activeContent(doc: Document): boolean {
+  if (doc.querySelector("script, iframe, frame, object, embed, form, base, meta, link")) return true;
+  return [...doc.querySelectorAll("*")].some((el) =>
+    [...el.attributes].some((a) => /^on/i.test(a.name) || (/^(href|src|xlink:href|action)$/i.test(a.name) && !/^(https:|#|data:image\/)/i.test(a.value.trim()))),
   );
+}
+
+/**
+ * Gemini's Search Suggestions (`searchEntryPoint.renderedContent`), shown as Google gave them. The terms
+ * (https://ai.google.dev/gemini-api/terms#grounding-with-google-search) forbid modifying or framing them, and
+ * Google's guide (docs.cloud.google.com/vertex-ai/generative-ai/docs/grounding/grounding-search-suggestions,
+ * checked 2026-10-21) asks for them exactly as provided (colours, fonts), as wide as the grounded answer, a tap
+ * going straight to the Search results page. So the HTML and CSS go unchanged into a shadow root: no frame, our
+ * styles cannot reach them and theirs cannot leak out. Its inline <style> is allowed by our CSP (style-src
+ * 'unsafe-inline'). The content is checked first, without changing it: if it ever held scripts, event handlers or
+ * non-https links, it is not inserted and the search queries are shown as plain text instead.
+ */
+export function SearchSuggestions({ html, queries }: { html: string; queries: readonly string[] }) {
+  const host = useRef<HTMLDivElement>(null);
+  const safe = useMemo(() => typeof DOMParser !== "undefined" && !activeContent(new DOMParser().parseFromString(html, "text/html")), [html]);
+  useEffect(() => {
+    const el = host.current;
+    if (!el || !safe) return;
+    const root = el.shadowRoot ?? el.attachShadow({ mode: "open" });
+    root.innerHTML = html;
+  }, [html, safe]);
+  if (!safe) {
+    return queries.length ? <p className="text-caption text-ink-muted">Google araması: {queries.join(" · ")}</p> : null;
+  }
+  return <div ref={host} data-testid="search-suggestions" className="w-full" />;
 }
 
 /** What a search may cost, from each provider's docs (checked 2026-10-21). */
@@ -202,9 +207,121 @@ export function ResultFrame({ result, children }: { result: WebPrices<unknown>; 
           Kaynağı aramada bulunan sayfalar arasında olmayan {result.dropped} sonuç gösterilmedi.
         </p>
       ) : null}
-      {result.suggestionsHtml ? <SearchSuggestions html={result.suggestionsHtml} /> : null}
     </div>
   );
 }
 
 export { NoticeText };
+
+/**
+ * Gemini's grounded search: in memory only (no storage, a reload loses it), the request locked while it runs.
+ * When the chosen model has no Google Search on the free tier, finds a Gemini 2.5 Flash in the key's own model
+ * list (by family, not a fixed id) so this one search can be run with it; the connection keeps its model.
+ */
+export function useGroundedSearch(conn: Connection, run: (conn: Connection) => Promise<GroundedAnswer>, fetcher?: typeof fetch) {
+  const [result, setResult] = useState<GroundedAnswer | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<Notice | null>(null);
+  const [fallback, setFallback] = useState<string | null>(null);
+  const inFlight = useRef(false);
+
+  const search = useCallback(
+    async (model?: string) => {
+      if (inFlight.current) return;
+      inFlight.current = true;
+      setBusy(true);
+      setError(null);
+      setFallback(null);
+      try {
+        setResult(await run(model ? { ...conn, model } : conn));
+      } catch (e) {
+        setError(errorNotice(e));
+        if (e instanceof AiError && e.kind === "freeTier" && conn.provider === "gemini") {
+          const models = await listModels("gemini", conn.key, fetcher).catch(() => []);
+          setFallback(freeTierSearchModel(models, model ?? conn.model));
+        }
+      } finally {
+        inFlight.current = false;
+        setBusy(false);
+      }
+    },
+    [conn, run, fetcher],
+  );
+  return { result, busy, error, fallback, search };
+}
+
+/** A Gemini 2.5 Flash (not Lite, not a preview) from the key's list, other than the model that just failed. */
+export function freeTierSearchModel(models: readonly ModelInfo[], failed: string): string | null {
+  return models.find((m) => /^gemini-2\.5-flash(-\d{3})?$/.test(m.id) && m.id !== failed)?.id ?? null;
+}
+
+/**
+ * Gemini's answer as it came: the text unchanged (plain text, line breaks kept), the grounding links as Google
+ * gave them, and the Search Suggestions, all the same width. Our caption sits above and our note below, outside it.
+ */
+export function GroundedResult({ result }: { result: GroundedAnswer }) {
+  return (
+    <div className="grid gap-3">
+      <WebSourceCaption result={result} />
+      <div data-testid="grounded-result" className="grid gap-3 rounded-md border border-dashed border-rule bg-paper p-4">
+        <p data-testid="grounded-text" className="whitespace-pre-wrap break-words text-body">
+          {result.text}
+        </p>
+        {result.links.length ? (
+          <ul className="flex flex-wrap gap-x-4 gap-y-1">
+            {result.links.map((link, i) => (
+              <li key={`${link.url}-${i}`}>
+                {httpsUrl(link.url) ? (
+                  <a href={link.url} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 text-caption underline underline-offset-4">
+                    {link.title || link.url}
+                    <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
+                  </a>
+                ) : (
+                  <span className="text-caption">{link.title || link.url}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+        {result.suggestionsHtml ? <SearchSuggestions html={result.suggestionsHtml} queries={result.queries} /> : null}
+      </div>
+      <p className="text-caption text-ink-muted">Fiyatı doğruladıktan sonra bütçeye kendin yazabilirsin.</p>
+    </div>
+  );
+}
+
+/** The Gemini search block shared by flights and stays. */
+export function GroundedSearch({
+  label,
+  conn,
+  run,
+  fetcher,
+  rows,
+}: {
+  label: string;
+  conn: Connection;
+  run: (conn: Connection) => Promise<GroundedAnswer>;
+  fetcher?: typeof fetch;
+  rows: number;
+}) {
+  const { result, busy, error, fallback, search } = useGroundedSearch(conn, run, fetcher);
+  return (
+    <div className="grid gap-4">
+      <SearchButton label={label} busy={busy} done={!!result} onSearch={() => search()} provider={conn.provider} demo={false} />
+      {error ? (
+        <div className="grid gap-2">
+          <NoticeText notice={error} alert />
+          {fallback ? (
+            <div>
+              <button type="button" onClick={() => search(fallback)} disabled={busy} className={buttonClasses({ variant: "secondary", wrap: true })}>
+                <Search aria-hidden="true" size={16} strokeWidth={1.5} />
+                Gemini 2.5 Flash ile ara
+              </button>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+      {busy ? <SearchSkeleton rows={rows} /> : result ? <GroundedResult result={result} /> : null}
+    </div>
+  );
+}

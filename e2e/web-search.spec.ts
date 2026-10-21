@@ -38,6 +38,8 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   await expect(web.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
   // The cached Travelpayouts tickets no longer say they are in the budget.
   await expect(flights.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
+  // The plan uses no other ticket's times for a web price.
+  await expect(page.locator("#gun-gun-plan").getByText("UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER")).toBeVisible();
   const totalWithWeb = await receipt.locator("[aria-live]").innerText();
   expect(totalWithWeb).not.toBe(totalBefore);
 

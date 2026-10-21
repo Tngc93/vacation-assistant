@@ -130,8 +130,11 @@ const DEMO_STAYS = {
   ],
 };
 
-/** The keyless demo (VA_AI_MOCK=1, never on Vercel): fixed sample answers, flights or stays by the request. */
+/**
+ * The keyless demo (VA_AI_MOCK=1, never on Vercel): fixed sample answers, flights or stays by the request, in the
+ * OpenAI shape (the structured path with prices, lira estimates and budget buttons).
+ */
 export const demoWebSearchFetcher: typeof fetch = async (_input, init) => {
   const body = typeof init?.body === "string" ? init.body : "";
-  return Response.json(searchAnswer("gemini", body.includes("hotel prices") ? DEMO_STAYS : DEMO_FLIGHTS));
+  return Response.json(searchAnswer("openai", body.includes("hotel prices") ? DEMO_STAYS : DEMO_FLIGHTS));
 };

@@ -4,12 +4,22 @@ import { Check, Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useTransition } from "react";
 import { Caption, Ticket } from "@/components/ui";
-import { NoticeText, ResultFrame, SearchButton, SearchSkeleton, SourceLink, useSearchConnection, useWebSearch } from "@/components/ai/WebSearchParts";
+import {
+  GroundedSearch,
+  NoticeText,
+  ResultFrame,
+  SearchButton,
+  SearchSkeleton,
+  SourceLink,
+  useSearchConnection,
+  useWebSearch,
+} from "@/components/ai/WebSearchParts";
+import type { Connection } from "@/lib/ai/providers";
 import { formatMinor } from "@/lib/budget/money";
 import { writeBudgetParams, type WebFlightChoice } from "@/lib/budget/params";
 import { cn } from "@/lib/cn";
 import { webCacheKey } from "@/lib/ai/webCache";
-import { searchFlightPrices, type FlightOffer, type FlightQuery, type RateTable } from "@/lib/ai/webPrices";
+import { searchFlightPrices, searchGrounded, type FlightOffer, type FlightQuery, type RateTable } from "@/lib/ai/webPrices";
 
 type Props = {
   query: FlightQuery;
@@ -33,7 +43,9 @@ export function WebFlightSearch({ query, rates, demo, inBudget, fetcher }: Props
         </h3>
         <Caption>YAPAY ZEKÂ · TRAVELPAYOUTS&apos;TAN AYRI</Caption>
       </div>
-      {search ? (
+      {search?.conn.provider === "gemini" ? (
+        <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
+      ) : search ? (
         <Connected query={query} rates={rates} demo={demo} inBudget={inBudget} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
       ) : (
         <p className="text-body text-ink-muted">
@@ -44,6 +56,20 @@ export function WebFlightSearch({ query, rates, demo, inBudget, fetcher }: Props
         </p>
       )}
     </section>
+  );
+}
+
+/** Gemini: the grounded answer shown as it came (no prices read out, no lira, no cache, no budget button). */
+function Grounded({ query, conn, fetcher }: { query: FlightQuery; conn: Connection; fetcher?: typeof fetch }) {
+  const run = useCallback((c: Connection) => searchGrounded(c, "flights", query, { fetcher, now: Date.now() }), [query, fetcher]);
+  return (
+    <div className="grid gap-4">
+      <p className="max-w-2xl text-body text-ink-muted">
+        {query.fromAirports.join(" / ")} → {query.toAirports.join(" / ")} · {query.adults} yetişkin. Gemini Google&apos;da arar; cevabı ve
+        kaynaklarını olduğu gibi gösteririz. Satın alma o sitede.
+      </p>
+      <GroundedSearch label="Web'de ara" conn={conn} run={run} fetcher={fetcher} rows={2} />
+    </div>
   );
 }
 

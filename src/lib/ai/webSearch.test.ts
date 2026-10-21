@@ -49,6 +49,7 @@ describe("reading each provider's pages from a web search answer", () => {
       text: "part 1 part 2",
       sources: [{ url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbC", title: "pegasus.com" }],
       suggestionsHtml: "<div class=\"chip\">ist bcn</div>",
+      queries: ["ist bcn flights"],
     });
   });
 });

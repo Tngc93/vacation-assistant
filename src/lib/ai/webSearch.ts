@@ -15,13 +15,16 @@
  *   `sources` of each `web_search_call`. $10 per 1,000 calls plus search content tokens.
  * - Gemini: `generateContent` (still fully supported next to the Interactions API) with
  *   `tools: [{ google_search: {} }]`; pages are `groundingMetadata.groundingChunks[].web` (`uri`, `title`), where
- *   `uri` is a Google redirect (vertexaisearch.cloud.google.com) and `title` the site's domain. The terms require
- *   showing the Search Suggestions (`searchEntryPoint.renderedContent`) with the grounded result, unmodified.
+ *   `uri` is a Google redirect (vertexaisearch.cloud.google.com) and `title` the site's domain. The terms
+ *   (https://ai.google.dev/gemini-api/terms#grounding-with-google-search) require showing the grounded result
+ *   unmodified with its Search Suggestions (`searchEntryPoint.renderedContent`), so Gemini answers are not parsed
+ *   for prices (see `searchGrounded` in webPrices.ts).
  *   Free tier: Gemini 2.5 Flash and Flash-Lite, 500 grounded requests a day (shared); not available on the free
  *   tier for Gemini 3 models (pricing page, last updated 2026-10-19).
- * - JSON together with the search tool: Gemini allows structured output with Google Search only on Gemini 3
- *   models (not on the free tier's 2.5 models); the Anthropic and OpenAI web search pages do not document it. So
- *   every provider answers in text and we take the JSON block out of it (`extractJson`) and check it with zod.
+ * - JSON together with the search tool: the Anthropic and OpenAI web search pages do not document it, so they
+ *   answer in text and we take the JSON block out of it (`extractJson`) and check it with zod.
+ * - Showing results: Anthropic requires citations to the original source when showing outputs to end users;
+ *   OpenAI requires citations to be "clearly visible and clickable". Every result keeps its source link visible.
  * - CORS: preflights for /v1/messages, /v1/responses and :generateContent answer from any origin (2026-10-21).
  *   The origins are the same as the chat calls, so the Content-Security-Policy needs no new entry.
  */
@@ -38,6 +41,8 @@ export type WebSearchAnswer = {
   sources: WebSource[];
   /** Gemini's Search Suggestions (HTML from Google), shown unmodified with the result as the terms require. */
   suggestionsHtml: string | null;
+  /** Gemini's webSearchQueries. */
+  queries: string[];
 };
 
 export const WEB_SEARCH_TIMEOUT_MS = 150_000;
@@ -115,6 +120,7 @@ type GeminiCandidate = {
   groundingMetadata?: {
     groundingChunks?: Array<{ web?: { uri?: string; title?: string } }>;
     searchEntryPoint?: { renderedContent?: string };
+    webSearchQueries?: string[];
   };
 };
 
@@ -124,6 +130,7 @@ export function readGemini(candidate: GeminiCandidate | undefined): WebSearchAns
     text: (candidate?.content?.parts ?? []).map((p) => p.text ?? "").join(""),
     sources: uniqueSources((meta?.groundingChunks ?? []).flatMap((c) => (c.web?.uri ? [{ url: c.web.uri, title: c.web.title ?? "" }] : []))),
     suggestionsHtml: meta?.searchEntryPoint?.renderedContent || null,
+    queries: (meta?.webSearchQueries ?? []).filter((q): q is string => typeof q === "string").slice(0, 10),
   };
 }
 
@@ -168,7 +175,7 @@ export async function webSearch(conn: Connection, request: { system: string; pro
     }
     const read = readAnthropic(blocks);
     if (read.errorCode) throw anthropicSearchError(read.errorCode, model);
-    return { text: read.text, sources: read.sources, suggestionsHtml: null };
+    return { text: read.text, sources: read.sources, suggestionsHtml: null, queries: [] };
   }
   if (provider === "openai") {
     const json = (await call(
@@ -189,7 +196,7 @@ export async function webSearch(conn: Connection, request: { system: string; pro
       WEB_SEARCH_TIMEOUT_MS,
       model,
     )) as { output?: OpenAiItem[] };
-    return { ...readOpenAi(json.output ?? []), suggestionsHtml: null };
+    return { ...readOpenAi(json.output ?? []), suggestionsHtml: null, queries: [] };
   }
   const json = (await call(
     provider,

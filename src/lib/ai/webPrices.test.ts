@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { mockProvider } from "./mockProvider";
 import type { Connection } from "./providers";
-import { httpsUrl, matchSource, searchFlightPrices, searchStayPrices, stayMidpoint, toTryMinor, type RateTable } from "./webPrices";
+import { httpsUrl, matchSource, searchFlightPrices, searchGrounded, searchStayPrices, stayMidpoint, toTryMinor, type RateTable } from "./webPrices";
 
 const KEY = "test-key-not-real";
 const NOW = Date.UTC(2026, 9, 21, 18, 40);
@@ -44,17 +44,9 @@ describe("only links the provider listed, only https", () => {
     expect(matchSource("https://example.com/other", sources)).toBeNull();
   });
 
-  it("Gemini: the page must be on a domain Google listed; the link shown is Google's redirect", () => {
-    const sources = [{ url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AbC", title: "flypgs.com" }];
-    expect(matchSource("https://www.flypgs.com/en/cheap-flights", sources)).toEqual({ url: sources[0].url, host: "flypgs.com" });
-    expect(matchSource("https://book.flypgs.com/x", sources)?.host).toBe("flypgs.com");
-    expect(matchSource("https://flypgs.com.evil.example/x", sources)).toBeNull();
-    expect(matchSource("https://another-site.com/x", sources)).toBeNull();
-  });
-
   it("says so when nothing could be linked", async () => {
-    const result = await flights("gemini", fenced({ results: [flight("https://example.com/a")] }), []);
-    expect(result).toMatchObject({ items: [], dropped: 1, source: "Google Gemini · m", searchedAt: NOW, sample: false });
+    const result = await flights("openai", fenced({ results: [flight("https://example.com/a")] }), []);
+    expect(result).toMatchObject({ items: [], dropped: 1, source: "OpenAI · m", searchedAt: NOW, sample: false });
   });
 });
 
@@ -107,5 +99,21 @@ describe("lira estimates", () => {
     ]);
     const result = await searchStayPrices({ provider: "openai", key: KEY, model: "m" }, stayQuery, rates, { fetcher: mock.fetcher, now: NOW });
     expect(result).toMatchObject({ items: [], dropped: 1 });
+  });
+});
+
+describe("Gemini grounded answers (shown as they came)", () => {
+  it("keeps the text, the grounding links and the Search Suggestions exactly as Gemini gave them; reads no prices", async () => {
+    const text = "Pegasus · IST → BCN: kişi başı 8.450 TL\nVueling · SAW → BCN: iki kişi 410 EUR\n**kalın değil, düz metin**";
+    const links = [
+      { url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/A", title: "flypgs.com" },
+      { url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/B", title: "vueling.com" },
+    ];
+    const mock = mockProvider("gemini", [{ search: { text, sources: links, suggestionsHtml: "<div>öneriler</div>" } }]);
+    const answer = await searchGrounded({ provider: "gemini", key: KEY, model: "gemini-2.5-flash" }, "flights", query, { fetcher: mock.fetcher, now: NOW });
+    expect(answer).toEqual({ text, links, suggestionsHtml: "<div>öneriler</div>", queries: ["prices"], source: "Google Gemini · gemini-2.5-flash", searchedAt: NOW });
+    const body = JSON.parse(mock.requests[0].body);
+    expect(body.systemInstruction.parts[0].text).toContain("no tables, no JSON, no Markdown");
+    expect(body.tools).toEqual([{ google_search: {} }]);
   });
 });

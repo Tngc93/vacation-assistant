@@ -3,11 +3,21 @@
 import { PencilLine } from "lucide-react";
 import { useCallback, useState } from "react";
 import { Caption } from "@/components/ui";
-import { NoticeText, ResultFrame, SearchButton, SearchSkeleton, SourceLink, useSearchConnection, useWebSearch } from "@/components/ai/WebSearchParts";
+import {
+  GroundedSearch,
+  NoticeText,
+  ResultFrame,
+  SearchButton,
+  SearchSkeleton,
+  SourceLink,
+  useSearchConnection,
+  useWebSearch,
+} from "@/components/ai/WebSearchParts";
+import type { Connection } from "@/lib/ai/providers";
 import { formatMinor } from "@/lib/budget/money";
 import { BUDGET_STAY_EVENT, writeBudgetParams } from "@/lib/budget/params";
 import { webCacheKey } from "@/lib/ai/webCache";
-import { searchStayPrices, stayMidpoint, type RateTable, type StayArea, type StayQuery } from "@/lib/ai/webPrices";
+import { searchGrounded, searchStayPrices, stayMidpoint, type RateTable, type StayArea, type StayQuery } from "@/lib/ai/webPrices";
 
 type Props = {
   query: StayQuery;
@@ -21,7 +31,18 @@ type Props = {
 export function WebStaySearch({ query, rates, demo, fetcher }: Props) {
   const search = useSearchConnection(demo);
   if (!search) return null;
+  if (search.conn.provider === "gemini") return <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />;
   return <Connected query={query} rates={rates} demo={demo} conn={search.conn} fetcher={search.fetcher ?? fetcher} />;
+}
+
+/** Gemini: the grounded answer shown as it came (no ranges read out, no lira, no cache, no "Bütçeye yaz"). */
+function Grounded({ query, conn, fetcher }: { query: StayQuery; conn: Connection; fetcher?: typeof fetch }) {
+  const run = useCallback((c: Connection) => searchGrounded(c, "stays", query, { fetcher, now: Date.now() }), [query, fetcher]);
+  return (
+    <div className="mt-6 border-t border-dashed border-rule pt-5">
+      <GroundedSearch label="Semte göre fiyat aralığını web'de ara" conn={conn} run={run} fetcher={fetcher} rows={3} />
+    </div>
+  );
 }
 
 function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<ReturnType<typeof useSearchConnection>>) {
