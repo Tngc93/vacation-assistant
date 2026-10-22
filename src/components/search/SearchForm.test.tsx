@@ -51,14 +51,14 @@ describe("SearchForm", () => {
     expect(push).toHaveBeenCalledWith("/plan?to=BCN&depart=2026-11-14&return=2026-11-18");
   });
 
-  it("a popular city chip picks the city and opens the calendar", async () => {
+  it("a discover city chip picks the city and opens the calendar", async () => {
     const user = userEvent.setup();
     render(<SearchForm today={TODAY} />);
-    const popular = screen.getByRole("list", { name: "Popüler:" });
-    expect(within(popular).getAllByRole("button")).toHaveLength(6);
-    await user.click(within(popular).getByRole("button", { name: "Roma" }));
+    const discover = screen.getByRole("list", { name: "Keşfet:" });
+    expect(within(discover).getAllByRole("button")).toHaveLength(6);
+    await user.click(within(discover).getByRole("button", { name: "Roma" }));
     expect(screen.getByRole("combobox", { name: "Varış şehri" })).toHaveValue("Roma");
-    expect(within(popular).getByRole("button", { name: "Roma" })).toHaveAttribute("aria-pressed", "true");
+    expect(within(discover).getByRole("button", { name: "Roma" })).toHaveAttribute("aria-pressed", "true");
     expect(screen.getByRole("dialog", { name: "Gidiş tarihini seç" })).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /20 Ekim 2026/ }));

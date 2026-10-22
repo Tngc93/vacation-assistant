@@ -38,11 +38,11 @@ test("the home page asks only where and when: no origin, no passengers", async (
   await expect(page.getByText("Biniş kartı")).toHaveCount(0);
 });
 
-test("a popular city chip picks the city and opens the calendar; 'Planla' opens /plan with the city and dates only", async ({ page }) => {
+test("a discover city chip picks the city and opens the calendar; 'Planla' opens /plan with the city and dates only", async ({ page }) => {
   await page.goto("/");
-  const popular = page.getByRole("list", { name: "Popüler:" });
-  await expect(popular.getByRole("button")).toHaveCount(6);
-  await popular.getByRole("button", { name: "Barselona" }).click();
+  const discover = page.getByRole("list", { name: "Keşfet:" });
+  await expect(discover.getByRole("button")).toHaveCount(6);
+  await discover.getByRole("button", { name: "Barselona" }).click();
   await expect(page.getByRole("combobox", { name: "Varış şehri" })).toHaveValue("Barselona");
   const calendar = page.getByRole("dialog", { name: "Gidiş tarihini seç" });
   await expect(calendar).toBeVisible();
