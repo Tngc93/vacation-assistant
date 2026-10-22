@@ -17,13 +17,13 @@ import { DirectChip } from "./DirectChip";
 import { FlightsLinks } from "./FlightsLinks";
 import { AddToBudgetButton } from "./AddToBudgetButton";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
-import { StayCard } from "@/components/stays/StayCard";
-import { WebStaySearch } from "@/components/stays/WebStaySearch";
-import { TicketsAndStays } from "./TicketsAndStays";
+import { OriginControl, PeopleControl } from "@/components/plan/TripControls";
+import type { OriginCode } from "@/data/origins";
+import { FlightsPanel } from "./FlightsPanel";
 import { WebFlightSearch } from "./WebFlightSearch";
 
 type Props = {
-  from: string;
+  from: OriginCode;
   to: string;
   depart: string;
   return: string;
@@ -36,11 +36,11 @@ type Props = {
 };
 
 /**
- * "Bilet ve konaklama": cached Travelpayouts prices for every origin airport (server-side; the token never
- * reaches the browser) and the stay links. The flight card holds each airport's cheapest ticket; the full list
- * with its filter and the web search, and the stay web search, open under both cards at full width.
+ * "Uçuşlar": the origin and the number of people on top, then cached Travelpayouts prices for every origin
+ * airport (server-side; the token never reaches the browser): each airport's cheapest ticket, and under "Tüm
+ * uçuşları gör" the full list with its filter and the web search, at full width.
  */
-export async function TicketsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
+export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
   const destination = findDestination(to)!;
   const [result, rates] = await Promise.all([loadFlights(from, to, depart, ret, pax, direct), loadRateTable(destination.currency)]);
   const choice = chooseFlight(result, flight);
@@ -53,11 +53,15 @@ export async function TicketsSection({ from, to, depart, return: ret, pax, direc
     adults: pax,
   };
   const budgetRef = webFlight ? null : choiceRef(choice);
-  const demo = aiDemoEnabled();
   return (
-    <TicketsAndStays
-      demo={demo}
-      flights={
+    <FlightsPanel
+      controls={
+        <>
+          <OriginControl value={from} />
+          <PeopleControl value={pax} />
+        </>
+      }
+      cheapest={
         <>
           <div className="print:hidden">
             <CheapestByAirport result={result} budgetRef={budgetRef} />
@@ -65,19 +69,11 @@ export async function TicketsSection({ from, to, depart, return: ret, pax, direc
           <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
         </>
       }
-      allFlights={
+      all={
         <>
           <FlightsView result={result} budgetRef={budgetRef} />
-          <WebFlightSearch query={query} rates={rates} demo={demo} inBudget={webFlight} />
+          <WebFlightSearch query={query} rates={rates} demo={aiDemoEnabled()} inBudget={webFlight} />
         </>
-      }
-      stay={<StayCard destination={destination} checkIn={depart} checkOut={ret} adults={pax} />}
-      stayWeb={
-        <WebStaySearch
-          query={{ city: destination.nameEn, country: destination.countryCode, checkIn: depart, checkOut: ret, adults: pax }}
-          rates={rates}
-          demo={demo}
-        />
       }
     />
   );
@@ -102,11 +98,14 @@ export function CheapestByAirport({ result, budgetRef }: { result: FlightsResult
         </Caption>
       ) : null}
       {rows.length === 0 ? <p className="text-body text-ink-muted">Bu tarihler ve ±3 gün için önbellekte fiyat yok.</p> : null}
-      <ul className="grid divide-y divide-dashed divide-rule">
+      <ul aria-label="Havalimanı başına en ucuz bilet" className="grid gap-4 md:grid-cols-2">
         {rows.map(({ group, ticket }) => {
           const cheapest = ticket.id === result.cheapestId;
           return (
-            <li key={group.airport} className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 py-3 first:pt-0 last:pb-0">
+            <li
+              key={group.airport}
+              className="flex flex-wrap items-end justify-between gap-x-4 gap-y-3 rounded-md border border-rule bg-paper-raised px-5 py-5 md:px-6"
+            >
               <div className="min-w-0">
                 <Caption as="p">
                   {group.airport} · {AIRPORT_NAMES[group.airport] ?? group.airport}

@@ -17,3 +17,7 @@ Yapılması kararlaştırılmış ama henüz bir branch'e alınmamış işler. B
 ## Mekân verisi
 
 4. **Kokteyl bar verisi zayıf:** Kokteyl bar verisi zayıf (Barselona'da 6 mekân; Paradiso, Boadas yok): OSM'de cocktails etiketi seyrek. 'Mutlaka görülmeli'deki gibi Wikidata takviyesi değerlendirilecek.
+
+## Şehir rehberi (yeni kategori)
+
+5. **Etkinlikler (konser, festival, sergi) kategorisi:** ücretsiz, kredi kartı istemeyen, kazıma gerektirmeyen bir kaynak araştırılacak (ör. resmi API'si olan servisler); PRD'ye uygunluğu Berk'e sorulacak.

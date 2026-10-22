@@ -1,7 +1,7 @@
 "use client";
 
 import { CalendarDays, ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useId, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
+import { useEffect, useId, useImperativeHandle, useRef, useState, useSyncExternalStore, type ReactNode, type Ref } from "react";
 import { DayPicker, type ChevronProps, type Matcher } from "react-day-picker";
 import { tr } from "react-day-picker/locale";
 import { cn } from "@/lib/cn";
@@ -10,7 +10,11 @@ import { addDays, daysBetween, isoToDate, latestTripDate, MAX_NIGHTS, todayInIst
 
 export type DateRange = { depart?: string; return?: string };
 
+/** Lets a parent open the calendar (the home page's popular-city chips). */
+export type DateRangeFieldHandle = { open: () => void };
+
 export type DateRangeFieldProps = {
+  ref?: Ref<DateRangeFieldHandle>;
   value: DateRange;
   onChange: (value: DateRange) => void;
   departError?: string;
@@ -58,7 +62,7 @@ const dayButton =
  * Monday). The first pick is the departure, the second the return; picking a
  * day on or before the departure starts again.
  */
-export function DateRangeField({ value, onChange, departError, returnError, today: todayOverride }: DateRangeFieldProps) {
+export function DateRangeField({ ref, value, onChange, departError, returnError, today: todayOverride }: DateRangeFieldProps) {
   const id = useId();
   const dialogId = `${id}-calendar`;
   const [open, setOpen] = useState(false);
@@ -73,6 +77,8 @@ export function DateRangeField({ value, onChange, departError, returnError, toda
     setToday(todayOverride ?? todayInIstanbul(new Date()));
     setOpen(true);
   };
+
+  useImperativeHandle(ref, () => ({ open: openCalendar }));
 
   const closeCalendar = (focus?: "depart" | "return") => {
     setOpen(false);

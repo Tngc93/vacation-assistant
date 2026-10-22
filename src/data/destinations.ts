@@ -1009,3 +1009,9 @@ const BY_CITY_CODE = new Map(DESTINATIONS.map((d) => [d.cityCode, d]));
 export function findDestination(cityCode: string): Destination | undefined {
   return BY_CITY_CODE.get(cityCode.toUpperCase());
 }
+
+/**
+ * The home page's "Popüler" row: six of the cities above, an editorial pick across Europe for a first trip.
+ * Every code must be in DESTINATIONS (tested).
+ */
+export const POPULAR_CITY_CODES = ["PAR", "ROM", "BCN", "AMS", "PRG", "LON"] as const;

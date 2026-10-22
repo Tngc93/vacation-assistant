@@ -14,7 +14,7 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   page.on("request", (r) => requests.push(r));
   await page.goto(plan);
   const flights = page.locator("#ucuslar");
-  // The full list and the web search open under the two cards, at full width.
+  // The full list and the web search open under each airport's cheapest ticket, at full width.
   const all = page.locator("#tum-ucuslar");
   const web = all.getByRole("region", { name: "Web'de ara" });
   const receipt = page.locator("#butce").getByRole("region", { name: "Bütçe fişi" });
@@ -42,7 +42,7 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   await expect(receipt.getByText("YAPAY ZEKÂ WEB'DEN BULDU · TAHMİNİ")).toBeVisible();
   await expect(web.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
   // The cached Travelpayouts tickets no longer say they are in the budget.
-  await expect(flights.getByRole("button", { name: "Bütçede" })).toHaveCount(0);
+  await expect(flights.getByRole("list", { name: "Havalimanı başına en ucuz bilet" }).getByRole("button", { name: "Bütçede" })).toHaveCount(0);
   await expect(all.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
   // The plan uses no other ticket's times for a web price.
   await expect(page.locator("#gun-gun-plan").getByText("UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER")).toBeVisible();

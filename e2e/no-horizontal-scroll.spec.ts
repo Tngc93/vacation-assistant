@@ -19,6 +19,11 @@ const PAGES = [
     path: `/plan?from=ESB&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=1&cats=see,museum,viewpoint,restaurant,cafe,cocktail,pub,club`,
   },
   {
+    // A link from the home page: no origin, no group (İstanbul, one person).
+    name: "plan (city and dates only)",
+    path: `/plan?to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}`,
+  },
+  {
     // Flight ticket cards (sample prices: the e2e server runs with VA_FLIGHTS_FIXTURES=1).
     name: "plan (flight tickets)",
     path: `/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`,

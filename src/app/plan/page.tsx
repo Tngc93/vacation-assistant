@@ -17,7 +17,7 @@ import { parseDirect } from "@/lib/flights/display";
 import { parseEdits, parsePinned } from "@/lib/ai/edits";
 import { parseSkip } from "@/lib/itinerary/ids";
 import { parseCategories } from "@/lib/places/cats";
-import { parseSearch } from "@/lib/search/params";
+import { hasRouteParams, parseSearch } from "@/lib/search/params";
 
 type Props = Pick<PageProps<"/plan">, "searchParams">;
 
@@ -31,7 +31,7 @@ async function readSearch(searchParams: Props["searchParams"]) {
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const { result } = await readSearch(searchParams);
   if (!result.ok) {
-    return { title: "Plan", description: "Rotanı seç: kalkış, varış, tarihler ve yolcu sayısı.", robots: { index: false } };
+    return { title: "Plan", description: "Planı açmak için varış şehrini ve tarihleri seç.", robots: { index: false } };
   }
   const { title, description } = describeSearch(result.value);
   return {
@@ -58,7 +58,8 @@ async function PlanContent({ searchParams }: Props) {
   const { params, result } = await readSearch(searchParams);
 
   if (!result.ok) {
-    const hasAnyParam = Object.values(params).some((v) => v !== undefined && v !== "");
+    // Only the destination and the dates make a link "incomplete"; the origin and the group have defaults.
+    const hasAnyParam = hasRouteParams(params);
     return (
       <div className="pt-10 md:pt-16">
         <Caption as="p">Plan</Caption>
@@ -68,7 +69,7 @@ async function PlanContent({ searchParams }: Props) {
         <p className="mb-8 mt-4 max-w-xl text-body text-ink-muted">
           {hasAnyParam
             ? "Eksik ya da geçersiz bilgileri düzelt; geçerli olanları senin için doldurduk."
-            : "Kalkış, varış, tarihler ve yolcu sayısını seçtiğinde plan burada açılır."}
+            : "Varış şehrini ve tarihleri seçtiğinde plan burada açılır."}
         </p>
         <SearchForm initial={result.draft} initialIssues={hasAnyParam ? result.issues : []} />
       </div>
