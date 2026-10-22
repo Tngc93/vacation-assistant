@@ -6,6 +6,9 @@ export const FLIGHT_REF = /^[A-Z]{3}-[A-Z0-9]{2}\d{1,5}-\d{12}-\d{12}$/;
 /** Window event with `{ minor }`: a nightly price written into the budget from outside it (web search). */
 export const BUDGET_STAY_EVENT = "va:budget-stay";
 
+/** Window event: a new origin took the chosen flight out of the budget (`writeTripParams`); the budget says so. */
+export const BUDGET_FLIGHT_DROPPED_EVENT = "va:budget-flight-dropped";
+
 /** `?wfs=`: the site a web-search price came from (a bare host name, nothing the model wrote). */
 export const WEB_HOST = /^(?=.{3,100}$)[a-z0-9-]+(\.[a-z0-9-]+)+$/;
 

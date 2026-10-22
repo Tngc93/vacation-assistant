@@ -1,7 +1,8 @@
-import { render, screen, within } from "@testing-library/react";
+import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it } from "vitest";
 import type { FlightLine, RateInfo } from "@/lib/budget/receipt";
+import { BUDGET_FLIGHT_DROPPED_EVENT } from "@/lib/budget/params";
 import { BudgetReceipt } from "./BudgetReceipt";
 
 const SEARCH = "from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2";
@@ -103,5 +104,19 @@ describe("BudgetReceipt", () => {
   it("offers only lira for a lira destination", () => {
     renderReceipt({ localCurrency: "TRY", rate: null });
     expect(screen.queryByRole("group")).not.toBeInTheDocument();
+  });
+
+  it("says once, calmly, that a new origin took the chosen flight out, until another flight is chosen", () => {
+    const view = renderReceipt();
+    expect(screen.queryByText("Kalkış değişti; seçili uçuş bütçeden çıkarıldı.")).not.toBeInTheDocument();
+    act(() => {
+      window.dispatchEvent(new Event(BUDGET_FLIGHT_DROPPED_EVENT));
+    });
+    expect(within(receipt()).getByRole("status")).toHaveTextContent("Kalkış değişti; seçili uçuş bütçeden çıkarıldı.");
+    // A ticket chosen again (`?flight=` back in the link): the note goes.
+    view.rerender(
+      <BudgetReceipt initial={{ ...empty, flight: "ESB-PC1234-202611140705-202611181010" }} flight={flight} rate={rate} localCurrency="EUR" nights={4} days={5} pax={2} />,
+    );
+    expect(screen.queryByText("Kalkış değişti; seçili uçuş bütçeden çıkarıldı.")).not.toBeInTheDocument();
   });
 });
