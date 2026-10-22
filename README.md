@@ -1,6 +1,6 @@
-# Vacation Assistant
+# Vacationist
 
-Türkiye'den yola çıkanlar için tatil asistanı: en ucuz uçuş, TL bütçe ve gün gün şehir planı tek ekranda.
+Kısa şehir kaçamakları için planlayıcı: Türkiye'den en ucuz uçuş, TL bütçe ve gün gün şehir planı tek ekranda. (Repo ve paket adı `vacation-assistant` olarak kalır.)
 
 > 🚧 Yapım aşamasında. Henüz kullanıma hazır değil.
 

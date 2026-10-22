@@ -7,6 +7,7 @@ import { PlanNav } from "@/components/plan/PlanNav";
 import { SearchForm } from "@/components/search/SearchForm";
 import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
+import { BRAND_NAME } from "@/lib/brand";
 import { formatDay } from "@/lib/format";
 import { isoToDate } from "@/lib/search/dates";
 import { todayInIstanbul } from "@/lib/search/dates";
@@ -33,7 +34,14 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     return { title: "Plan", description: "Rotanı seç: kalkış, varış, tarihler ve yolcu sayısı.", robots: { index: false } };
   }
   const { title, description } = describeSearch(result.value);
-  return { title, description, openGraph: { title, description }, robots: { index: false } };
+  return {
+    title,
+    description,
+    // Child metadata replaces these objects whole, so the site name is repeated here.
+    openGraph: { type: "website", locale: "tr_TR", siteName: BRAND_NAME, title, description },
+    twitter: { card: "summary", title, description },
+    robots: { index: false },
+  };
 }
 
 export default function PlanPage({ searchParams }: Props) {

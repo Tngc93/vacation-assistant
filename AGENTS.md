@@ -1,6 +1,6 @@
-# AGENTS.md — Vacation Assistant
+# AGENTS.md — Vacationist
 
-Vacation Assistant, Türkiye'den (İstanbul ya da Ankara) yurt dışına kısa şehir tatili planlayan gezginler için açık kaynak bir web uygulamasıdır. Tek ekranda en ucuz uçuşu (IST / SAW / ESB), TL cinsinden toplam bütçeyi ve gün gün şehir planını gösterir (Türk pasaportu için vize verisi kodda duruyor, faz 1 arayüzünde gösterilmiyor). Uygulama yapay zekâ olmadan tam çalışır; kullanıcı isterse kendi yapay zekâ anahtarını tarayıcıda bağlayıp planı sohbetle değiştirebilir. Tamamen ücretsiz servislerle çalışır ve Vercel'de yayınlanır.
+Vacationist (repo ve paket adı `vacation-assistant`), Türkiye'den (İstanbul ya da Ankara) yurt dışına kısa şehir tatili planlayan gezginler için açık kaynak bir web uygulamasıdır; alt başlığı "Kısa şehir kaçamakları için planlayıcı". Marka adı ve alt başlık yalnızca `src/lib/brand.ts`'te durur (site başlığı, metadata, `src/app/manifest.ts`). Tek ekranda en ucuz uçuşu (IST / SAW / ESB), TL cinsinden toplam bütçeyi ve gün gün şehir planını gösterir (Türk pasaportu için vize verisi kodda duruyor, faz 1 arayüzünde gösterilmiyor). Uygulama yapay zekâ olmadan tam çalışır; kullanıcı isterse kendi yapay zekâ anahtarını tarayıcıda bağlayıp planı sohbetle değiştirebilir. Tamamen ücretsiz servislerle çalışır ve Vercel'de yayınlanır.
 
 ## Kaynak belgeler
 
