@@ -37,9 +37,9 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ### Arama ekranı
 
-1. Kullanıcı çıkış şehrini seçer: İstanbul ya da Ankara. İstanbul seçildiğinde IST ve SAW birlikte, Ankara seçildiğinde ESB aranır.
-2. Kullanıcı varış ülkesini ve şehrini, gidiş ve dönüş tarihlerini ve kişi sayısını (1–9) seçer.
-3. Arama durumu URL'de tutulur. Link paylaşıldığında aynı plan açılır (kayıt gerekmeden paylaşım).
+1. Kullanıcı çıkış şehrini seçer: İstanbul ya da Ankara. İstanbul seçildiğinde IST ve SAW birlikte, Ankara seçildiğinde ESB aranır. *Ana sayfadan plan sayfasının Uçuşlar bölümüne taşındı (2026-10-22, Berk'in kararı); varsayılan İstanbul (IST + SAW).*
+2. Kullanıcı varış ülkesini ve şehrini, gidiş ve dönüş tarihlerini ve kişi sayısını (1–9) seçer. *Ana sayfa yalnızca varış şehrini ve tarihleri sorar; kişi sayısı plan sayfasının Konaklama ve Uçuşlar bölümlerine taşındı, varsayılan 1 (2026-10-22, Berk'in kararı).*
+3. Arama durumu URL'de tutulur. Link paylaşıldığında aynı plan açılır (kayıt gerekmeden paylaşım). *`from` ve `pax` isteğe bağlı (varsayılanlar URL'ye yazılmaz); bunları içeren eski linkler aynı planı açar (2026-10-22).*
 
 ### Uçuşlar
 
