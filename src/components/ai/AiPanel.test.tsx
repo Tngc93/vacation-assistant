@@ -1,6 +1,7 @@
-import { render, screen, waitFor, within } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { AiDrawerProvider, AiTabButton } from "@/components/ai/AiDrawer";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { mockProvider } from "@/lib/ai/mockProvider";
 import { EVENING, SIGHTS } from "@/lib/itinerary/testCity";
@@ -29,18 +30,24 @@ const edit = JSON.stringify({
   reply: "2. günden bir müzeyi çıkardım, akşamları kokteyl bar önerdim.",
 });
 
+/** The plan with its AI tab, the panel opened (a desktop screen here: the side panel stays open after a change). */
 function renderView(fetcher: typeof fetch) {
-  return render(
-    <ItineraryView
-      input={input}
-      initialSkip={[]}
-      cityName="Barselona"
-      center={{ lat: 41.39, lon: 2.17 }}
-      eveningPool={{ restaurant: EVENING, cocktail: cocktails }}
-      initialEvening={["restaurant"]}
-      aiFetch={fetcher}
-    />,
+  const view = render(
+    <AiDrawerProvider>
+      <AiTabButton />
+      <ItineraryView
+        input={input}
+        initialSkip={[]}
+        cityName="Barselona"
+        center={{ lat: 41.39, lon: 2.17 }}
+        eveningPool={{ restaurant: EVENING, cocktail: cocktails }}
+        initialEvening={["restaurant"]}
+        aiFetch={fetcher}
+      />
+    </AiDrawerProvider>,
   );
+  fireEvent.click(screen.getByRole("button", { name: "Yapay zekâ ile planla" }));
+  return view;
 }
 const day = (n: number) => screen.getByRole("region", { name: new RegExp(`^${n}\\. gün · `) });
 
@@ -51,9 +58,15 @@ async function connect(user: ReturnType<typeof userEvent.setup>) {
   await screen.findByLabelText(/^Model/);
 }
 
+const narrow = window.matchMedia;
+
 describe("AI connection, plan and chat edits", () => {
-  beforeEach(() => window.history.replaceState(null, "", `/plan?${SEARCH}#gun-gun-plan`));
+  beforeEach(() => {
+    window.history.replaceState(null, "", `/plan?${SEARCH}#gun-gun-plan`);
+    window.matchMedia = (query: string) => ({ ...narrow(query), matches: true });
+  });
   afterEach(() => {
+    window.matchMedia = narrow;
     window.localStorage.clear();
     window.sessionStorage.clear();
   });

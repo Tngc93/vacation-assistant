@@ -3,16 +3,17 @@
 import { CalendarPlus, Map as MapIcon, RotateCcw, Sparkles, X } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { AI_PANEL_ID, useAiDrawer, useIsDesktop } from "@/components/ai/AiDrawer";
 import { AiPanel } from "@/components/ai/AiPanel";
 import { Button, buttonClasses, Caption, Skeleton } from "@/components/ui";
 import type { AiPlan } from "@/lib/ai/assistant";
-import { applyEdits, diffPlans, encodeEdits, encodePinned, pinnedFromPlan, type EditBatch } from "@/lib/ai/edits";
+import { applyEdits, diffPlans, encodeEdits, encodePinned, pinnedFromPlan, type EditBatch, type PlanDiff } from "@/lib/ai/edits";
 import { cn } from "@/lib/cn";
 import { formatDay } from "@/lib/format";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
-import { buildItinerary, type DayTag, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop } from "@/lib/itinerary/plan";
+import { buildItinerary, type DayTag, type Itinerary, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop } from "@/lib/itinerary/plan";
 import { CATEGORIES } from "@/lib/places/categories";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
@@ -59,6 +60,25 @@ function durationText(minutes: number) {
   const h = Math.floor(minutes / 60);
   const m = minutes % 60;
   return h && m ? `${h} sa ${m} dk` : h ? `${h} sa` : `${m} dk`;
+}
+
+/** How long a day stays marked after the panel changed it (the sheet has closed over it on a phone). */
+const FLASH_MS = 2400;
+
+/** The days a chat edit touched. */
+function daysInDiff(diff: PlanDiff): number[] {
+  return [...diff.added.map((a) => a.day), ...diff.removed.map((r) => r.day), ...diff.moved.flatMap((m) => [m.from, m.to]), ...diff.evening.map((e) => e.day)];
+}
+
+/** The days whose daytime stops an AI plan replaces. */
+function daysChangedBy(plan: Itinerary, pinned: string[][]): number[] {
+  return plan.days
+    .filter((d, i) => {
+      const before = d.stops.filter((s) => s.kind === "daytime").map((s) => s.id);
+      const after = pinned[i] ?? [];
+      return before.length !== after.length || before.some((id, j) => id !== after[j]);
+    })
+    .map((d) => d.number);
 }
 
 /**
@@ -180,16 +200,26 @@ function Day({
   onSelect,
   onRemove,
   reason,
+  flash = false,
 }: {
   day: PlanDay;
   selected: boolean;
+  /** Just changed by the AI panel: marked for a moment. */
+  flash?: boolean;
   onSelect: () => void;
   onRemove: (stop: PlanStop) => void;
   /** The model's one or two sentences for the day (plain text). */
   reason?: string;
 }) {
   return (
-    <section aria-label={`${day.number}. gün · ${dayLabel(day.date)}`} className="break-inside-avoid border-t border-rule pt-6 first:border-t-0 first:pt-0">
+    <section
+      aria-label={`${day.number}. gün · ${dayLabel(day.date)}`}
+      data-changed={flash || undefined}
+      className={cn(
+        "-mx-3 break-inside-avoid rounded-md border-t border-rule px-3 pt-6 transition-colors duration-700 ease-out first:border-t-0 first:pt-0",
+        flash ? "bg-paper-raised ring-1 ring-accent" : "ring-0 ring-transparent",
+      )}
+    >
       <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
         <h3 id={`gun-${day.number}`} className="flex items-end gap-4">
           <span aria-hidden="true" className="font-display text-display leading-none">
@@ -313,6 +343,41 @@ export function ItineraryView({
     }
   };
 
+  const drawer = useAiDrawer();
+  const isDesktop = useIsDesktop();
+  const panelRef = useRef<HTMLDivElement>(null);
+  const [flash, setFlash] = useState<number[]>([]);
+  const flashTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    if (drawer.open) panelRef.current?.focus({ preventScroll: true });
+  }, [drawer.open]);
+  useEffect(() => () => {
+    if (flashTimer.current) clearTimeout(flashTimer.current);
+  }, []);
+  // The sheet covers the page on a phone: the page underneath does not scroll while it is open.
+  const sheetOpen = drawer.open && !isDesktop;
+  useEffect(() => {
+    if (!sheetOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [sheetOpen]);
+  /** After the panel changed the plan: mark the days; on a phone close the sheet and bring the first one into view. */
+  const showChange = (days: number[]) => {
+    drawer.setChanged(true);
+    const unique = [...new Set(days)].sort((a, b) => a - b);
+    setFlash(unique);
+    if (flashTimer.current) clearTimeout(flashTimer.current);
+    flashTimer.current = setTimeout(() => setFlash([]), FLASH_MS);
+    if (!isDesktop) {
+      drawer.close();
+      const first = unique[0];
+      if (first) requestAnimationFrame(() => document.getElementById(`gun-${first}`)?.scrollIntoView({ block: "start" }));
+    }
+  };
+
   const save = (next: { skip?: string[]; ai?: typeof ai; edits?: EditBatch[] }) => {
     const values = { skip: next.skip ?? skip, ai: next.ai === undefined ? ai : next.ai, edits: next.edits ?? edits };
     if (next.skip) setSkip(next.skip);
@@ -330,18 +395,23 @@ export function ItineraryView({
   };
   const reset = () => {
     setReply(null);
+    drawer.setChanged(false);
     save({ skip: [], ai: null, edits: [] });
   };
   const onAiPlan = (next: AiPlan, source: string) => {
     setReply(null);
     save({ ai: { ...next, source }, edits: [] });
+    showChange(daysChangedBy(plan, next.pinned));
   };
   const onEdit = (batch: EditBatch, text: string) => {
+    const nextEdits = [...edits, batch];
     setReply(text);
-    save({ edits: [...edits, batch] });
+    save({ edits: nextEdits });
+    showChange(daysInDiff(diffPlans(plan, build(nextEdits).plan)));
   };
   const undo = () => {
     setReply(null);
+    drawer.setChanged(ai?.source != null);
     save({ edits: edits.slice(0, -1) });
   };
   const changes = skip.length + edits.length + (ai ? 1 : 0);
@@ -356,111 +426,144 @@ export function ItineraryView({
   };
   const flight = input.flight;
 
+  const sidePanel = drawer.open && isDesktop;
+
   return (
-    <div>
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div className="max-w-2xl">
-          {flightTimesUnknown ? (
-            <Caption as="p" tone="warn">
-              UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER
-            </Caption>
-          ) : plan.basis === "flight" && flight ? (
-            <Caption as="p" tone="ink">
-              UÇUŞ: {flight.label.toLocaleUpperCase("tr")} · VARIŞ {flight.arrive?.time} · DÖNÜŞ KALKIŞI {flight.leave?.time} · SAATLER{" "}
-              {cityName.toLocaleUpperCase("tr")} SAATİYLE
-            </Caption>
-          ) : (
-            <Caption as="p" tone="warn">
-              UÇUŞ SEÇİLMEDİ · VARSAYIM: İLK GÜN 13:00 SONRASI, SON GÜN 13:00 ÖNCESİ · SAATLER {cityName.toLocaleUpperCase("tr")} SAATİYLE
-            </Caption>
-          )}
-          {ai ? (
-            <p className="mt-2 flex items-start gap-1.5 text-caption text-ink-muted">
-              <Sparkles aria-hidden="true" size={14} strokeWidth={1.5} className="mt-0.5 shrink-0" />
-              <span>
-                Duraklar yapay zekâ{ai.source ? ` (${ai.source})` : ""} tarafından bu şehrin listesinden seçildi ve sıralandı; saatler, açılış
-                kontrolü ve yürüme tahminini uygulama hesapladı.
-                {ai.source ? "" : " Gerekçeler yalnızca planı kuran tarayıcıda görünür."}
-              </span>
-            </p>
-          ) : (
-            <p className="mt-2 text-caption text-ink-muted">
-              Duraklar Vikipedi&apos;deki dil sayısına ve yakınlığa göre seçildi; süreler ve yürüme tahminidir.
-              {edits.length ? " Sohbetle düzenlendi." : " Yapay zekâ kullanılmadı."}
-            </p>
-          )}
-          <p className="mt-1 text-caption text-ink-muted">Saat bilgisi olmayan mekânlar işaretlidir; gitmeden kontrol et.</p>
-        </div>
-        <div className="flex flex-wrap gap-2 print:hidden">
-          <Button variant="secondary" onClick={download}>
-            <CalendarPlus aria-hidden="true" size={16} strokeWidth={1.5} />
-            Takvime ekle (.ics)
-          </Button>
-          {changes ? (
-            <Button variant="ghost" onClick={reset}>
-              <RotateCcw aria-hidden="true" size={16} strokeWidth={1.5} />
-              Planı sıfırla ({changes})
+    <div className={cn(sidePanel && "grid grid-cols-[minmax(0,1fr)_26.25rem] items-start gap-8")}>
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="max-w-2xl">
+            {flightTimesUnknown ? (
+              <Caption as="p" tone="warn">
+                UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER
+              </Caption>
+            ) : plan.basis === "flight" && flight ? (
+              <Caption as="p" tone="ink">
+                UÇUŞ: {flight.label.toLocaleUpperCase("tr")} · VARIŞ {flight.arrive?.time} · DÖNÜŞ KALKIŞI {flight.leave?.time} · SAATLER{" "}
+                {cityName.toLocaleUpperCase("tr")} SAATİYLE
+              </Caption>
+            ) : (
+              <Caption as="p" tone="warn">
+                UÇUŞ SEÇİLMEDİ · VARSAYIM: İLK GÜN 13:00 SONRASI, SON GÜN 13:00 ÖNCESİ · SAATLER {cityName.toLocaleUpperCase("tr")} SAATİYLE
+              </Caption>
+            )}
+            {ai ? (
+              <p className="mt-2 flex items-start gap-1.5 text-caption text-ink-muted">
+                <Sparkles aria-hidden="true" size={14} strokeWidth={1.5} className="mt-0.5 shrink-0" />
+                <span>
+                  Duraklar yapay zekâ{ai.source ? ` (${ai.source})` : ""} tarafından bu şehrin listesinden seçildi ve sıralandı; saatler, açılış
+                  kontrolü ve yürüme tahminini uygulama hesapladı.
+                  {ai.source ? "" : " Gerekçeler yalnızca planı kuran tarayıcıda görünür."}
+                </span>
+              </p>
+            ) : (
+              <p className="mt-2 text-caption text-ink-muted">
+                Duraklar Vikipedi&apos;deki dil sayısına ve yakınlığa göre seçildi; süreler ve yürüme tahminidir.
+                {edits.length ? " Sohbetle düzenlendi." : " Yapay zekâ kullanılmadı."}
+              </p>
+            )}
+            <p className="mt-1 text-caption text-ink-muted">Saat bilgisi olmayan mekânlar işaretlidir; gitmeden kontrol et.</p>
+          </div>
+          <div className="flex flex-wrap gap-2 print:hidden">
+            <Button variant="secondary" onClick={download}>
+              <CalendarPlus aria-hidden="true" size={16} strokeWidth={1.5} />
+              Takvime ekle (.ics)
             </Button>
-          ) : null}
+            {changes ? (
+              <Button variant="ghost" onClick={reset}>
+                <RotateCcw aria-hidden="true" size={16} strokeWidth={1.5} />
+                Planı sıfırla ({changes})
+              </Button>
+            ) : null}
+          </div>
+        </div>
+
+        {plan.dropped.length ? (
+          <p className="mt-4 text-caption text-ink-muted">
+            Önerilen {plan.dropped.length} yer saat, açılış ya da günün süresi yüzünden plana sığmadı ve dışarıda kaldı.
+          </p>
+        ) : null}
+
+        {/* With the side panel open the days keep the left, narrower: the map moves under them. */}
+        <div className={cn("mt-8 grid gap-10 print:block", !sidePanel && "md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] md:items-start")}>
+          <div className="grid min-w-0 gap-8">
+            {plan.days.map((d) => (
+              <Day
+                key={d.number}
+                day={d}
+                selected={d.number === day.number}
+                onSelect={() => selectDay(d.number)}
+                onRemove={remove}
+                reason={ai?.reasons[d.number]}
+                flash={flash.includes(d.number)}
+              />
+            ))}
+          </div>
+          <div ref={mapRef} className={cn("min-w-0 scroll-mt-6 print:hidden", !sidePanel && "md:sticky md:top-6")}>
+            {/* Always rendered, so the in-view check has an element from the first render on. */}
+            <div ref={mapBox}>
+              {isWide || mapOnPhone ? (
+                <>
+                  <Caption as="p" className="mb-2">
+                    {String(day.number).padStart(2, "0")}. GÜN · {dayLabel(day.date)} · {day.stops.length} DURAK
+                  </Caption>
+                  {/* MapLibre starts when the map comes into view, not with the page. */}
+                  {mapNear || mapOnPhone ? (
+                    <ItineraryMap stops={day.stops} center={center} />
+                  ) : (
+                    <Skeleton className="h-80 w-full rounded-md md:h-[28rem]" />
+                  )}
+                </>
+              ) : (
+                <button type="button" className={buttonClasses({ variant: "secondary", className: "w-full" })} onClick={() => setMapOnPhone(true)}>
+                  <MapIcon aria-hidden="true" size={16} strokeWidth={1.5} />
+                  Günün haritasını göster
+                </button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
-      <AiPanel
-        plan={plan}
-        daytime={input.daytime}
-        skip={skip}
-        cityName={cityName}
-        pace={current.pace}
-        evening={current.evening}
-        onPlan={onAiPlan}
-        onEdit={onEdit}
-        onUndo={undo}
-        canUndo={edits.length > 0}
-        lastChange={lastChange}
-        fetcher={aiFetch}
-      />
-      {plan.dropped.length ? (
-        <p className="mt-4 text-caption text-ink-muted">
-          Önerilen {plan.dropped.length} yer saat, açılış ya da günün süresi yüzünden plana sığmadı ve dışarıda kaldı.
-        </p>
-      ) : null}
-
-      <div className="mt-8 grid gap-10 md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] md:items-start print:block">
-        <div className="grid min-w-0 gap-8">
-          {plan.days.map((d) => (
-            <Day
-              key={d.number}
-              day={d}
-              selected={d.number === day.number}
-              onSelect={() => selectDay(d.number)}
-              onRemove={remove}
-              reason={ai?.reasons[d.number]}
-            />
-          ))}
-        </div>
-        <div ref={mapRef} className="min-w-0 scroll-mt-6 print:hidden md:sticky md:top-6">
-          {/* Always rendered, so the in-view check has an element from the first render on. */}
-          <div ref={mapBox}>
-            {isWide || mapOnPhone ? (
-              <>
-                <Caption as="p" className="mb-2">
-                  {String(day.number).padStart(2, "0")}. GÜN · {dayLabel(day.date)} · {day.stops.length} DURAK
-                </Caption>
-                {/* MapLibre starts when the map comes into view, not with the page. */}
-                {mapNear || mapOnPhone ? (
-                  <ItineraryMap stops={day.stops} center={center} />
-                ) : (
-                  <Skeleton className="h-80 w-full rounded-md md:h-[28rem]" />
-                )}
-              </>
-            ) : (
-              <button type="button" className={buttonClasses({ variant: "secondary", className: "w-full" })} onClick={() => setMapOnPhone(true)}>
-                <MapIcon aria-hidden="true" size={16} strokeWidth={1.5} />
-                Günün haritasını göster
-              </button>
-            )}
-          </div>
-        </div>
+      {/*
+        After the days in the page order. Closed, it stays mounted (hidden), so a typed request or a status survives.
+        Desktop: a side column, not modal; phones: a full-screen sheet from the bottom.
+      */}
+      <div
+        id={AI_PANEL_ID}
+        ref={panelRef}
+        tabIndex={-1}
+        hidden={!drawer.open}
+        role={sheetOpen ? "dialog" : undefined}
+        aria-modal={sheetOpen ? true : undefined}
+        aria-labelledby={sheetOpen ? "ai-title" : undefined}
+        onKeyDown={(event) => {
+          if (event.key === "Escape" && !event.defaultPrevented) {
+            event.preventDefault();
+            drawer.close();
+          }
+        }}
+        className={cn(
+          "outline-none print:hidden",
+          sidePanel && "sticky top-14 max-h-[calc(100svh-4.5rem)] overflow-y-auto motion-safe:animate-panel-in",
+          sheetOpen && "fixed inset-0 z-50 overflow-y-auto bg-paper p-4 motion-safe:animate-sheet-in",
+        )}
+      >
+        <AiPanel
+          plan={plan}
+          daytime={input.daytime}
+          skip={skip}
+          cityName={cityName}
+          pace={current.pace}
+          evening={current.evening}
+          onPlan={onAiPlan}
+          onEdit={onEdit}
+          onUndo={undo}
+          canUndo={edits.length > 0}
+          lastChange={lastChange}
+          fetcher={aiFetch}
+          onClose={drawer.close}
+        />
       </div>
     </div>
   );

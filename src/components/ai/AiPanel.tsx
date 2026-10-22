@@ -1,6 +1,6 @@
 "use client";
 
-import { KeyRound, MessageSquare, Sparkles, Trash2, Undo2 } from "lucide-react";
+import { KeyRound, MessageSquare, Sparkles, Trash2, Undo2, X } from "lucide-react";
 import { useId, useMemo, useRef, useState, type FormEvent } from "react";
 import { Button, Caption, Chip } from "@/components/ui";
 import { requestAiEdit, requestAiPlan, type AiPlan } from "@/lib/ai/assistant";
@@ -29,6 +29,8 @@ type Props = {
   lastChange: { diff: PlanDiff; reply: string } | null;
   /** Injected in tests; the browser's fetch otherwise. Calls go straight to the provider, never to our server. */
   fetcher?: typeof fetch;
+  /** In the side panel or the sheet: the close button. */
+  onClose?: () => void;
 };
 
 const EXAMPLES = ["2. günü müzesiz yap", "Daha az yürüyelim", "Akşamları kokteyl bar"];
@@ -39,21 +41,31 @@ export function AiPanel(props: Props) {
   const [settings, setSettings] = useState(false);
 
   return (
-    <section id="yapay-zeka" aria-labelledby="ai-title" className="mt-6 scroll-mt-6 rounded-md border border-rule bg-paper-raised p-4 md:p-5 print:hidden">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-2">
-          <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} />
-          <h3 id="ai-title" className="text-body font-medium">
+    <section id="yapay-zeka" aria-labelledby="ai-title" className="scroll-mt-6 rounded-md border border-rule bg-paper-raised p-4 md:p-5 print:hidden">
+      <div className="flex items-start gap-3">
+        <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-2 gap-y-1 pt-2">
+          <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} className="shrink-0" />
+          <h3 id="ai-title" className="whitespace-nowrap text-body font-medium">
             Yapay zekâ ile planla
           </h3>
           <Caption>İSTEĞE BAĞLI</Caption>
         </div>
-        {connection && !settings ? (
-          <button type="button" onClick={() => setSettings(true)} className="text-caption text-ink-muted underline underline-offset-4 hover:text-ink">
-            {PROVIDERS[connection.provider].label} · {connection.model} · Bağlantı ayarları
+        {props.onClose ? (
+          <button
+            type="button"
+            onClick={props.onClose}
+            aria-label="Yapay zekâ panelini kapat"
+            className="inline-flex size-9 shrink-0 items-center justify-center rounded-sm border border-rule text-ink transition-colors duration-150 ease-out hover:border-ink"
+          >
+            <X aria-hidden="true" size={16} strokeWidth={1.5} />
           </button>
         ) : null}
       </div>
+      {connection && !settings ? (
+        <button type="button" onClick={() => setSettings(true)} className="mt-2 text-left text-caption text-ink-muted underline underline-offset-4 hover:text-ink">
+          {PROVIDERS[connection.provider].label} · {connection.model} · Bağlantı ayarları
+        </button>
+      ) : null}
       {!connection || settings ? (
         // Opening the settings keeps the form up while connecting, so the model list shows before the assistant does.
         <ConnectForm initial={connection} fetcher={props.fetcher} onStart={() => setSettings(true)} onDone={() => setSettings(false)} />
