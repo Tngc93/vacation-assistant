@@ -1,16 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BRAND_DESCRIPTION, BRAND_NAME } from "@/lib/brand";
 import { cn } from "@/lib/cn";
 import { themeInitScript } from "@/lib/theme";
 import { fraunces, geist, geistMono } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  applicationName: BRAND_NAME,
   title: {
-    default: "Vacation Assistant",
-    template: "%s · Vacation Assistant",
+    default: BRAND_NAME,
+    template: `%s · ${BRAND_NAME}`,
   },
-  description: "Türkiye'den yola çıkanlar için tatil asistanı: en ucuz uçuş, TL bütçe ve gün gün şehir planı.",
+  description: BRAND_DESCRIPTION,
+  openGraph: { type: "website", locale: "tr_TR", siteName: BRAND_NAME, title: BRAND_NAME, description: BRAND_DESCRIPTION },
+  twitter: { card: "summary", title: BRAND_NAME, description: BRAND_DESCRIPTION },
 };
 
 export const viewport: Viewport = {

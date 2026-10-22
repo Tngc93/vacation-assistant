@@ -121,7 +121,7 @@ const utcStamp = (date: Date) => `${date.toISOString().replace(/[-:]/g, "").slic
 /** The whole plan as an iCalendar file. `now` sets DTSTAMP (passed in so the output is reproducible). */
 export function buildIcs(plan: Itinerary, { cityName, now }: { cityName: string; now: Date }): string {
   const stops = plan.days.flatMap((d) => d.stops.map((s) => ({ day: d, stop: s })));
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Vacation Assistant//Gün gün plan//TR", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Vacationist//Gün gün plan//TR", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
   lines.push(`X-WR-CALNAME:${escapeText(`${cityName} gezisi`)}`, `X-WR-TIMEZONE:${plan.timeZone}`);
   if (stops.length) {
     const firstDay = plan.days[0].date;
