@@ -156,6 +156,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
       <div className={cn("flex min-h-0 min-w-0 flex-col transition-opacity duration-200 md:col-span-7 md:col-start-1 md:row-start-3", pending && "opacity-60")} aria-busy={pending}>
         {empty ?? (
           <PlacesCarousel
+            key={categories.join(",")}
             items={items}
             center={center}
             timeZone={timeZone}

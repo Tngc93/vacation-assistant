@@ -120,6 +120,57 @@ describe("HeroExplorer", () => {
     expect(screen.getByText("01 / 05")).toBeInTheDocument();
   });
 
+  it("puts the Commons photo on the card, credited in its label and in the details, lazy after the third card", async () => {
+    const user = userEvent.setup();
+    const photo = {
+      src: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/SF.jpg/500px-SF.jpg",
+      width: 500,
+      height: 333,
+      fullWidth: 2588,
+      author: "Canaan",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+      fileUrl: "https://commons.wikimedia.org/wiki/File:SF.jpg",
+    };
+    const withPhotos = sights.map((p) => ({ ...p, photo }));
+    renderExplorer({ categories: ["see"], results: [{ category: "see", status: "ok", places: withPhotos, wikipediaCountsAvailable: true }] });
+    const first = screen.getByRole("button", { name: /^01\. Sight 1, Görülecek yer\. Fotoğraf: Canaan · CC BY-SA 4\.0 · Wikimedia Commons$/ });
+    const img = first.querySelector("img")!;
+    expect(img).toHaveAttribute("src", photo.src);
+    expect(img.getAttribute("srcset")).toContain("500px-SF.jpg 500w");
+    expect(img).toHaveAttribute("alt", "");
+    expect(img.closest(".duotone")).not.toBeNull();
+    expect(img).toHaveAttribute("loading", "eager");
+    expect(card("Sight 4").querySelector("img")).toHaveAttribute("loading", "lazy");
+    // No credit text on the card itself, only in its label…
+    expect(first).not.toHaveTextContent("Canaan");
+    // …and in the details, with links to the file and the licence.
+    await user.click(first);
+    expect(within(detail()).getByRole("link", { name: "Canaan" })).toHaveAttribute("href", photo.fileUrl);
+    expect(within(detail()).getByRole("link", { name: "CC BY-SA 4.0" })).toHaveAttribute("href", photo.licenseUrl);
+  });
+
+  it("gives a card without a photo a large icon and the Wikidata description, else the address", () => {
+    renderExplorer({
+      categories: ["see"],
+      results: [
+        {
+          category: "see",
+          status: "ok",
+          wikipediaCountsAvailable: true,
+          places: [
+            { ...sights[0], description: "Barselona'da bazilika" },
+            { ...sights[1], address: "Carrer de Montcada 15" },
+          ],
+        },
+      ],
+    });
+    expect(card("Sight 1").querySelector("img")).toBeNull();
+    expect(card("Sight 1").querySelector("svg.lucide")).not.toBeNull();
+    expect(card("Sight 1")).toHaveTextContent("Barselona'da bazilika");
+    expect(card("Sight 2")).toHaveTextContent("Carrer de Montcada 15");
+  });
+
   it("says today's hours on the card, in the city's time zone", () => {
     // Saturday 17 Oct 2026, 23:30 in Barcelona (CEST, UTC+2).
     vi.setSystemTime(new Date("2026-10-17T21:30:00Z"));

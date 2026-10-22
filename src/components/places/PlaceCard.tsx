@@ -70,6 +70,7 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
         </div>
       </div>
 
+      {place.description ? <p className="mt-2 text-caption text-ink">{place.description}</p> : null}
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}
       {place.remote ? (
         <Caption as="p" tone="sea" className="mt-2">
@@ -90,6 +91,20 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
         </Caption>
       ) : null}
 
+      {place.photo ? (
+        // The card shows the photo in duotone: CC BY asks us to say it was changed.
+        <p className="mt-3 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
+          Fotoğraf:{" "}
+          <a href={place.photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
+            {place.photo.author}
+          </a>{" "}
+          ·{" "}
+          <a href={place.photo.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline">
+            {place.photo.license}
+          </a>{" "}
+          · Wikimedia Commons · renkleri düzenlendi
+        </p>
+      ) : null}
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-caption">
         {onShowOnMap ? (
           <button

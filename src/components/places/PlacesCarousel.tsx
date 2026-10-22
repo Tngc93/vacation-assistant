@@ -8,6 +8,7 @@ import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import type { StoredPlace } from "@/lib/places/file";
 import { parseOpeningHours, todayStatus } from "@/lib/places/hours";
 import type { ShownPlace } from "@/lib/places/rules";
+import { cardPhotoSrcSet } from "@/lib/places/photos";
 import { walkToCentre } from "@/lib/places/walk";
 import { useMinuteNow } from "@/lib/time/clock";
 import { CATEGORY_ICONS } from "./categoryIcons";
@@ -152,9 +153,16 @@ function TodayHours({ value, timeZone }: { value: string | undefined; timeZone: 
   ) : null;
 }
 
+/** "Fotoğraf: Canaan · CC BY-SA 4.0 · Wikimedia Commons" (the card's aria-label; the details link both). */
+export function photoCredit(photo: { author: string; license: string }): string {
+  return `Fotoğraf: ${photo.author} · ${photo.license} · Wikimedia Commons`;
+}
+
 /**
- * A typographic card (the place files hold no photos): the rank as a large Fraunces numeral, the category icon,
- * the name, the walk to the centre and today's hours. The whole card is one button that selects the place.
+ * A place card: the Commons photo (duotone, like the city photo) over the top ~60%, or, without one, a large
+ * category icon with the Wikidata description (else the address); below, "MUTLAKA GÖR · NN" for sights, the
+ * name, the category, the walk to the centre and today's hours. Every card has the same height. The whole card
+ * is one button that selects the place; the photo credit is in its label and in the details, not on the card.
  */
 function PlaceTile({
   item,
@@ -178,39 +186,60 @@ function PlaceTile({
   const { place, category, rank } = item;
   const Icon = CATEGORY_ICONS[category];
   const mustSee = category === "see";
+  const about = place.description ?? place.address;
   return (
     <button
       type="button"
       aria-pressed={selected}
-      aria-label={`${pad(position)}. ${place.name}, ${CATEGORIES[category].label}`}
+      aria-label={`${pad(position)}. ${place.name}, ${CATEGORIES[category].label}${place.photo ? `. ${photoCredit(place.photo)}` : ""}`}
       onClick={() => onSelect(place.id)}
       onMouseEnter={() => onActivate(place.id)}
       onMouseLeave={() => onActivate(null)}
       onFocus={() => onActivate(place.id)}
       onBlur={() => onActivate(null)}
       className={cn(
-        "flex h-full min-h-52 w-full flex-col rounded-md border bg-paper-raised p-4 text-left transition-colors duration-150 ease-out md:min-h-0 md:p-5",
+        "flex h-[22rem] w-full flex-col overflow-hidden rounded-md border bg-paper-raised text-left transition-colors duration-150 ease-out md:h-full",
         highlighted ? "border-accent" : "border-rule hover:border-ink",
       )}
     >
-      <span className="flex items-start justify-between gap-3">
-        <span aria-hidden="true" className="font-display text-title leading-none tabular text-ink-muted">
+      <span className="relative block h-[58%] min-h-32 shrink-0 overflow-hidden border-b border-rule">
+        {place.photo ? (
+          <span className="duotone block h-full">
+            {/* Commons serves sized thumbnails itself; next/image optimisation would add nothing. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={place.photo.src}
+              srcSet={cardPhotoSrcSet(place.photo) || undefined}
+              sizes="(min-width: 768px) 14rem, 85vw"
+              width={place.photo.width}
+              height={place.photo.height}
+              alt=""
+              loading={position <= 3 ? "eager" : "lazy"}
+              // On phones the first card's photo is the largest paint; the second and third wait their turn.
+              fetchPriority={position === 1 ? "auto" : "low"}
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
+          </span>
+        ) : (
+          <span className="flex h-full flex-col justify-between gap-2 bg-paper px-4 pb-3 pt-10">
+            <Icon aria-hidden="true" size={40} strokeWidth={1.5} className="text-ink-muted" />
+            {about ? <span className="line-clamp-3 block text-caption text-ink-muted">{about}</span> : null}
+          </span>
+        )}
+        <span aria-hidden="true" className="absolute left-3 top-3 rounded-sm bg-paper-raised px-1.5 py-0.5 font-mono text-micro tabular text-ink">
           {pad(rank)}
         </span>
-        <Icon aria-hidden="true" size={18} strokeWidth={1.5} className="mt-1 shrink-0 text-ink-muted" />
       </span>
-      <span className="mt-auto block pt-4">
+      <span className="flex min-h-0 flex-1 flex-col p-4">
         {mustSee ? (
           <Caption as="span" tone="ink" className="block">
             MUTLAKA GÖR · {pad(rank)}
           </Caption>
         ) : null}
-        <span className="mt-1 line-clamp-2 block font-display text-heading text-ink">{place.name}</span>
-        <Caption as="span" className="mt-1 block">
-          {CATEGORIES[category].label}
-        </Caption>
-        <Caption as="span" tone={place.remote ? "sea" : "muted"} className="mt-1 block">
-          {place.remote ? "MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR" : walkToCentre(place, center)}
+        <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{place.name}</span>
+        <Caption as="span" className="mt-auto block pt-2">
+          {CATEGORIES[category].label} · {place.remote ? "MERKEZE UZAK" : walkToCentre(place, center)}
         </Caption>
         <TodayHours value={place.openingHours} timeZone={timeZone} />
       </span>
