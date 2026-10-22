@@ -132,15 +132,57 @@ test("the plan page has no visa section; the sections follow the hero in order w
   expect(Math.round(top!.y)).toBe(0);
 });
 
-test("'Tüm uçuşları gör' is closed by default and opens the list and its filter", async ({ page }) => {
+test("'Tüm uçuşları gör' is closed by default and opens the list and its filter under both cards, at full width", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto(plan);
-  const flights = page.locator("#ucuslar");
-  const toggle = flights.getByText("Tüm uçuşları gör");
-  await expect(flights.locator("details").first()).not.toHaveAttribute("open", "");
-  await expect(flights.getByRole("button", { name: "Aktarmasız" })).toBeHidden();
+  const toggle = page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" });
+  const all = page.locator("#tum-ucuslar");
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(all).toBeHidden();
   await toggle.click();
-  await expect(flights.getByRole("button", { name: "Aktarmasız" })).toBeVisible();
-  await expect(flights.getByRole("article").first()).toBeVisible();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(all.getByRole("button", { name: "Aktarmasız" })).toBeVisible();
+  await expect(all.getByRole("article").first()).toBeVisible();
+
+  // Under both cards, as wide as the section.
+  const section = await page.locator("#bilet-ve-konaklama").boundingBox();
+  const list = await all.boundingBox();
+  const cards = await page.locator("#konaklama").boundingBox();
+  expect(Math.abs(list!.width - section!.width)).toBeLessThanOrEqual(1);
+  expect(list!.y).toBeGreaterThan(cards!.y + cards!.height);
+});
+
+for (const width of [1280, 1440]) {
+  test(`at ${width}px no time or duration on the flight tickets wraps`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(plan);
+    await page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" }).click();
+    const tickets = page.locator("#tum-ucuslar article");
+    await expect(tickets.first()).toBeVisible();
+    // Each leg's time line and its stops/duration caption sit on one line.
+    const wrapped = await tickets.evaluateAll((articles) =>
+      articles.flatMap((article) =>
+        [...article.querySelectorAll("p.font-mono, p.uppercase")]
+          .filter((p) => /\d{2}:\d{2}|SA \d|DK/.test(p.textContent ?? ""))
+          .filter((p) => p.getBoundingClientRect().height > parseFloat(getComputedStyle(p).lineHeight) * 1.5)
+          .map((p) => p.textContent),
+      ),
+    );
+    expect(wrapped).toEqual([]);
+  });
+}
+
+test("at 375px the chips are one row that scrolls on its own, and the first card's top half is on the first screen", async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto(plan);
+  const chips = page.getByRole("group", { name: "Mekân kategorileri" }).getByRole("button");
+  const tops = await chips.evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().top)));
+  expect(new Set(tops).size).toBe(1);
+  const row = page.getByRole("group", { name: "Mekân kategorileri" });
+  expect(await row.evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(375);
+  const first = await cards(page).first().boundingBox();
+  expect(first!.y + first!.height / 2).toBeLessThanOrEqual(812);
 });
 
 test("printing leaves out the hero, the carousel and the map, and keeps the plan and the budget", async ({ page }) => {

@@ -1,4 +1,4 @@
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Caption, SkeletonTicket } from "@/components/ui";
 import { airlineName } from "@/data/airlines";
 import { findDestination } from "@/data/destinations";
@@ -17,6 +17,9 @@ import { DirectChip } from "./DirectChip";
 import { FlightsLinks } from "./FlightsLinks";
 import { AddToBudgetButton } from "./AddToBudgetButton";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
+import { StayCard } from "@/components/stays/StayCard";
+import { WebStaySearch } from "@/components/stays/WebStaySearch";
+import { TicketsAndStays } from "./TicketsAndStays";
 import { WebFlightSearch } from "./WebFlightSearch";
 
 type Props = {
@@ -32,8 +35,12 @@ type Props = {
   webFlight: WebFlightChoice | null;
 };
 
-/** Cached Travelpayouts prices for every origin airport (server-side; the token never reaches the browser). */
-export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
+/**
+ * "Bilet ve konaklama": cached Travelpayouts prices for every origin airport (server-side; the token never
+ * reaches the browser) and the stay links. The flight card holds each airport's cheapest ticket; the full list
+ * with its filter and the web search, and the stay web search, open under both cards at full width.
+ */
+export async function TicketsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
   const destination = findDestination(to)!;
   const [result, rates] = await Promise.all([loadFlights(from, to, depart, ret, pax, direct), loadRateTable(destination.currency)]);
   const choice = chooseFlight(result, flight);
@@ -46,24 +53,33 @@ export async function FlightsSection({ from, to, depart, return: ret, pax, direc
     adults: pax,
   };
   const budgetRef = webFlight ? null : choiceRef(choice);
+  const demo = aiDemoEnabled();
   return (
-    <>
-      <div className="print:hidden">
-        <CheapestByAirport result={result} budgetRef={budgetRef} />
-        {/* The full list, its filter and the web search stay folded away until asked for. */}
-        <details className="group mt-5 border-t border-rule pt-4">
-          <summary className="flex cursor-pointer list-none items-center gap-1.5 text-caption font-medium text-ink [&::-webkit-details-marker]:hidden">
-            <ChevronDown aria-hidden="true" size={16} strokeWidth={1.5} className="transition-transform duration-200 group-open:rotate-180" />
-            Tüm uçuşları gör
-          </summary>
-          <div className="mt-6">
-            <FlightsView result={result} budgetRef={budgetRef} />
-            <WebFlightSearch query={query} rates={rates} demo={aiDemoEnabled()} inBudget={webFlight} />
+    <TicketsAndStays
+      demo={demo}
+      flights={
+        <>
+          <div className="print:hidden">
+            <CheapestByAirport result={result} budgetRef={budgetRef} />
           </div>
-        </details>
-      </div>
-      <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
-    </>
+          <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
+        </>
+      }
+      allFlights={
+        <>
+          <FlightsView result={result} budgetRef={budgetRef} />
+          <WebFlightSearch query={query} rates={rates} demo={demo} inBudget={webFlight} />
+        </>
+      }
+      stay={<StayCard destination={destination} checkIn={depart} checkOut={ret} adults={pax} />}
+      stayWeb={
+        <WebStaySearch
+          query={{ city: destination.nameEn, country: destination.countryCode, checkIn: depart, checkOut: ret, adults: pax }}
+          rates={rates}
+          demo={demo}
+        />
+      }
+    />
   );
 }
 

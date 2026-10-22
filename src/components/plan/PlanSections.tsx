@@ -3,10 +3,8 @@ import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
 import type { SearchState } from "@/lib/search/params";
 import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection";
-import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
+import { FlightsSkeleton, TicketsSection } from "@/components/flights/FlightsSection";
 import { ItinerarySection, ItinerarySkeleton } from "@/components/itinerary/ItinerarySection";
-import { StayCard } from "@/components/stays/StayCard";
-import { WebStaySection } from "@/components/stays/WebStaySection";
 import type { BudgetParams } from "@/lib/budget/params";
 import type { CategoryId } from "@/lib/places/categories";
 import type { EditBatch } from "@/lib/ai/edits";
@@ -61,30 +59,18 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
       title: "Bilet ve konaklama",
       lead: "İstersen buradan da bakabilirsin.",
       body: (
-        <div className="grid gap-6 md:grid-cols-2 md:items-start">
-          <div id="ucuslar" className="min-w-0 scroll-mt-20 rounded-md border border-rule bg-paper-raised px-5 py-6 md:px-6 print:border-0 print:p-0">
-            <h3 className="mb-4 font-display text-heading print:hidden">Uçuş</h3>
-            <Suspense fallback={<FlightsSkeleton />}>
-              <FlightsSection
-                from={search.from}
-                to={search.to}
-                depart={search.depart}
-                return={search.return}
-                pax={search.pax}
-                direct={direct}
-                flight={budget.flight}
-                webFlight={budget.webFlight}
-              />
-            </Suspense>
-          </div>
-          <div id="konaklama" className="min-w-0 scroll-mt-20 print:hidden">
-            <StayCard destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax}>
-              <Suspense fallback={null}>
-                <WebStaySection destination={destination} checkIn={search.depart} checkOut={search.return} adults={search.pax} />
-              </Suspense>
-            </StayCard>
-          </div>
-        </div>
+        <Suspense fallback={<FlightsSkeleton />}>
+          <TicketsSection
+            from={search.from}
+            to={search.to}
+            depart={search.depart}
+            return={search.return}
+            pax={search.pax}
+            direct={direct}
+            flight={budget.flight}
+            webFlight={budget.webFlight}
+          />
+        </Suspense>
       ),
     },
   ];

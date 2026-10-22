@@ -14,7 +14,7 @@ type Props = {
   checkIn: string;
   checkOut: string;
   adults: number;
-  /** The web search by neighbourhood (only with AI connected). */
+  /** Shown under the links (the "Web'de ara" toggle). */
   children?: ReactNode;
 };
 
@@ -23,7 +23,7 @@ export function StayCard({ destination, checkIn, checkOut, adults, children }: P
   const search = { city: destination.nameEn, checkIn, checkOut, adults };
   const nights = daysBetween(checkIn, checkOut);
   return (
-    <div className="rounded-md border border-rule bg-paper-raised px-5 py-6 md:px-8">
+    <div>
       <Caption as="p">
         {nights} GECE · {formatTicketDay(checkIn).toLocaleUpperCase("tr")} → {formatTicketDay(checkOut).toLocaleUpperCase("tr")} · {adults} KİŞİ
       </Caption>

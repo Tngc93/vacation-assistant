@@ -13,10 +13,10 @@ function tripDates(): { depart: string; ret: string } {
 
 const { depart, ret } = tripDates();
 
-/** The full list sits behind "Tüm uçuşları gör", closed by default; returns the opened list. */
+/** The full list opens under the cards from "Tüm uçuşları gör" (closed by default); returns the opened list. */
 async function openAllFlights(page: Page) {
-  await page.locator("#ucuslar").getByText("Tüm uçuşları gör").click();
-  return page.locator("#ucuslar details").first();
+  await page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" }).click();
+  return page.locator("#tum-ucuslar");
 }
 
 test("Istanbul flights are grouped by IST and SAW, with a non-stop filter in the URL", async ({ page }) => {
@@ -26,8 +26,8 @@ test("Istanbul flights are grouped by IST and SAW, with a non-stop filter in the
   await expect(summary.getByText(/ÖRNEK VERİ/).first()).toBeVisible();
   await expect(summary.getByText("EN UCUZ · 1 YETİŞKİN")).toHaveCount(1);
   await expect(summary.getByRole("link", { name: /Güncel fiyatı gör/ })).toHaveCount(2);
-  await expect(summary.getByRole("heading", { name: "İstanbul Havalimanı" })).toBeHidden();
-  await expect(summary.getByRole("button", { name: "Aktarmasız" })).toBeHidden();
+  await expect(page.getByRole("heading", { name: "İstanbul Havalimanı" })).toBeHidden();
+  await expect(page.getByRole("button", { name: "Aktarmasız" })).toBeHidden();
 
   const flights = await openAllFlights(page);
   await expect(flights.getByRole("heading", { name: "İstanbul Havalimanı" })).toBeVisible();

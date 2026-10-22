@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, PencilLine } from "lucide-react";
+import { PencilLine } from "lucide-react";
 import { useCallback, useState } from "react";
 import { Caption } from "@/components/ui";
 import {
@@ -31,19 +31,10 @@ type Props = {
 export function WebStaySearch({ query, rates, demo, fetcher }: Props) {
   const search = useSearchConnection(demo);
   if (!search) return null;
-  return (
-    // Folded away until asked for, like the full flight list.
-    <details className="group mt-5 border-t border-rule pt-4">
-      <summary className="flex cursor-pointer list-none items-center gap-1.5 text-caption font-medium text-ink [&::-webkit-details-marker]:hidden">
-        <ChevronDown aria-hidden="true" size={16} strokeWidth={1.5} className="transition-transform duration-200 group-open:rotate-180" />
-        Web&apos;de ara
-      </summary>
-      {search.conn.provider === "gemini" ? (
-        <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
-      ) : (
-        <Connected query={query} rates={rates} demo={demo} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
-      )}
-    </details>
+  return search.conn.provider === "gemini" ? (
+    <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
+  ) : (
+    <Connected query={query} rates={rates} demo={demo} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
   );
 }
 
