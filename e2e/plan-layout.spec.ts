@@ -10,7 +10,7 @@ const plan = `/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDay
 const cards = (page: Page) => page.getByRole("list", { name: "Görülecek yerler" }).getByRole("button");
 const map = (page: Page) => page.getByRole("region", { name: "Mekân haritası" });
 const chips = (page: Page) => page.getByRole("group", { name: "Mekân kategorileri" }).getByRole("button");
-const SECTIONS = ["yerler", "gun-gun-plan", "butce", "bilet-ve-konaklama"] as const;
+const SECTIONS = ["yerler", "gun-gun-plan", "konaklama", "ucuslar", "butce"] as const;
 
 /*
  * The plan streams: React reveals each finished Suspense boundary in batches (about every 300 ms), so right
@@ -143,6 +143,8 @@ test("at 375px there is no sideways page scroll, and the map strip opens full sc
 });
 
 test("the plan page has no visa section; the sections follow the hero in order with a sticky menu", async ({ page }) => {
+  // A tall screen: the budget, the last and short section, cannot scroll up to the menu's band and is still marked.
+  await page.setViewportSize({ width: 1280, height: 1200 });
   await page.goto(plan);
   // Every section in place first: "no visa" only means something once the page has fully arrived.
   await sectionsReady(page);
@@ -153,17 +155,20 @@ test("the plan page has no visa section; the sections follow the hero in order w
     .locator("main section[id]")
     .evaluateAll((els, wanted) => els.map((e) => e.id).filter((id) => wanted.includes(id)), [...SECTIONS] as string[]);
   expect(order).toEqual([...SECTIONS]);
-  await expect(page.getByText("İstersen buradan da bakabilirsin.")).toBeVisible();
+  const titles = page.locator(SECTIONS.slice(1).map((id) => `h2#${id}-title`).join(", "));
+  await expect(titles).toHaveText(["Gün gün plan", "Konaklama", "Uçuşlar", "Bütçe"]);
+  // The combined "Bilet ve konaklama" section is gone.
+  await expect(page.locator("#bilet-ve-konaklama")).toHaveCount(0);
 
   const nav = page.getByRole("navigation", { name: "Plan bölümleri" });
-  await expect(nav.getByRole("link")).toHaveText(["Yerler", "Plan", "Bütçe", "Bilet ve konaklama"]);
+  await expect(nav.getByRole("link")).toHaveText(["Yerler", "Plan", "Konaklama", "Uçuşlar", "Bütçe"]);
   await nav.getByRole("link", { name: "Bütçe" }).click();
   await expect(nav.getByRole("link", { name: "Bütçe" })).toHaveAttribute("aria-current", "location");
   // Stuck to the top once scrolled there (polled: the jump to #butce may still be settling).
   await expect.poll(async () => Math.round((await nav.boundingBox())!.y)).toBe(0);
 });
 
-test("'Tüm uçuşları gör' is closed by default and opens the list and its filter under both cards, at full width", async ({ page }) => {
+test("'Tüm uçuşları gör' is closed by default and opens the list and its filter under the cheapest tickets, at full width", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto(plan);
   const toggle = page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" });
@@ -174,12 +179,13 @@ test("'Tüm uçuşları gör' is closed by default and opens the list and its fi
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await expect(all.getByRole("button", { name: "Aktarmasız" })).toBeVisible();
   await expect(all.getByRole("article").first()).toBeVisible();
-  await expect(page.locator("#konaklama")).toBeVisible();
+  const cheapest = page.locator("#ucuslar").getByRole("list", { name: "Havalimanı başına en ucuz bilet" });
+  await expect(cheapest).toBeVisible();
 
-  // Under both cards, as wide as the section.
-  const section = await page.locator("#bilet-ve-konaklama").boundingBox();
+  // Under the cheapest tickets, as wide as the section.
+  const section = await page.locator("#ucuslar").boundingBox();
   const list = await all.boundingBox();
-  const cards = await page.locator("#konaklama").boundingBox();
+  const cards = await cheapest.boundingBox();
   expect(Math.abs(list!.width - section!.width)).toBeLessThanOrEqual(1);
   expect(list!.y).toBeGreaterThan(cards!.y + cards!.height);
 });

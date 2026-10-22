@@ -32,7 +32,7 @@ export async function PlanHero({ search, destination, categories }: Props) {
       <h1 className="mt-2 break-words font-display text-headline">{destination.nameTr}</h1>
       <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-micro uppercase tracking-[0.08em] text-ink-muted">
         <span className="tabular">
-          {day(search.depart)} → {day(search.return)} · {nights} GECE · {search.pax} KİŞİ
+          {day(search.depart)} → {day(search.return)} · {nights} GECE
         </span>
         <span aria-hidden="true">·</span>
         <LocalTime timeZone={destination.timeZone} />

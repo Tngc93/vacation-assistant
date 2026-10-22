@@ -3,8 +3,9 @@ import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
 import type { SearchState } from "@/lib/search/params";
 import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection";
-import { FlightsSkeleton, TicketsSection } from "@/components/flights/FlightsSection";
+import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
 import { ItinerarySection, ItinerarySkeleton } from "@/components/itinerary/ItinerarySection";
+import { StaysSection, StaysSkeleton } from "@/components/stays/StaysSection";
 import type { BudgetParams } from "@/lib/budget/params";
 import type { CategoryId } from "@/lib/places/categories";
 import type { EditBatch } from "@/lib/ai/edits";
@@ -46,21 +47,21 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     },
     ...(SHOW_VISA ? [{ id: "vize", title: "Vize", body: <VisaCard destination={destination} /> }] : []),
     {
-      id: "butce",
-      title: "Bütçe",
+      id: "konaklama",
+      title: "Konaklama",
+      print: false,
       body: (
-        <Suspense fallback={<BudgetSkeleton />}>
-          <BudgetSection search={search} destination={destination} direct={direct} budget={budget} />
+        <Suspense fallback={<StaysSkeleton />}>
+          <StaysSection search={search} destination={destination} />
         </Suspense>
       ),
     },
     {
-      id: "bilet-ve-konaklama",
-      title: "Bilet ve konaklama",
-      lead: "İstersen buradan da bakabilirsin.",
+      id: "ucuslar",
+      title: "Uçuşlar",
       body: (
         <Suspense fallback={<FlightsSkeleton />}>
-          <TicketsSection
+          <FlightsSection
             from={search.from}
             to={search.to}
             depart={search.depart}
@@ -70,6 +71,16 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
             flight={budget.flight}
             webFlight={budget.webFlight}
           />
+        </Suspense>
+      ),
+    },
+    {
+      id: "butce",
+      title: "Bütçe",
+      lead: "Seçtiğin uçuş, konaklama ve günlük harcamanın toplamı.",
+      body: (
+        <Suspense fallback={<BudgetSkeleton />}>
+          <BudgetSection search={search} destination={destination} direct={direct} budget={budget} />
         </Suspense>
       ),
     },

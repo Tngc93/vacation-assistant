@@ -15,16 +15,17 @@ const stepButton =
   "inline-flex size-9 items-center justify-center rounded-sm border border-rule text-ink " +
   "transition-colors duration-150 ease-out hover:border-ink disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-rule";
 
+/** The number of people (1–9): passengers on the flight and guests at the stay. */
 export function PassengerStepper({ value, onChange, className }: PassengerStepperProps) {
   const labelId = useId();
   return (
     <div role="group" aria-labelledby={labelId} className={cn("flex items-center gap-2", className)}>
       <span id={labelId} className="sr-only">
-        Yolcu sayısı
+        Kişi sayısı
       </span>
       <button
         type="button"
-        aria-label="Yolcu azalt"
+        aria-label="Kişi azalt"
         disabled={value <= MIN_PASSENGERS}
         onClick={() => onChange(Math.max(MIN_PASSENGERS, value - 1))}
         className={stepButton}
@@ -36,7 +37,7 @@ export function PassengerStepper({ value, onChange, className }: PassengerSteppe
       </output>
       <button
         type="button"
-        aria-label="Yolcu artır"
+        aria-label="Kişi artır"
         disabled={value >= MAX_PASSENGERS}
         onClick={() => onChange(Math.min(MAX_PASSENGERS, value + 1))}
         className={stepButton}
