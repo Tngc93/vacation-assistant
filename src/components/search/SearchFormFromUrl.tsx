@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { todayInIstanbul } from "@/lib/search/dates";
-import { parseSearch } from "@/lib/search/params";
+import { hasRouteParams, parseSearch } from "@/lib/search/params";
 import { SearchForm } from "./SearchForm";
 
 /**
@@ -11,8 +11,7 @@ import { SearchForm } from "./SearchForm";
  */
 export function SearchFormFromUrl() {
   const params = useSearchParams();
-  const hasSearch = ["to", "depart", "return", "pax", "from"].some((key) => params.has(key));
-  if (!hasSearch) return <SearchForm />;
+  if (!hasRouteParams(params) && !params.has("from") && !params.has("pax")) return <SearchForm />;
 
   const result = parseSearch(params, todayInIstanbul(new Date()));
   const initial = result.ok ? result.value : result.draft;

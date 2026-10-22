@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { DESTINATIONS, findDestination } from "./destinations";
+import { DESTINATIONS, findDestination, POPULAR_CITY_CODES } from "./destinations";
 import { ORIGINS } from "./origins";
 
 const IATA = /^[A-Z]{3}$/;
@@ -60,5 +60,13 @@ describe("destinations data", () => {
     expect(findDestination("bcn")?.nameTr).toBe("Barselona");
     expect(findDestination("LON")?.airports).toContain("LHR");
     expect(findDestination("XXX")).toBeUndefined();
+  });
+});
+
+describe("popular cities", () => {
+  it("are six distinct cities from the list", () => {
+    expect(POPULAR_CITY_CODES).toHaveLength(6);
+    expect(new Set(POPULAR_CITY_CODES).size).toBe(6);
+    for (const code of POPULAR_CITY_CODES) expect(findDestination(code), code).toBeDefined();
   });
 });

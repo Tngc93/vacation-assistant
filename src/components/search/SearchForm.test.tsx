@@ -11,28 +11,25 @@ const TODAY = "2026-10-16";
 describe("SearchForm", () => {
   beforeEach(() => push.mockReset());
 
-  it("defaults to Istanbul and shows its airports on the ticket", () => {
+  it("asks only where and when: no origin or passenger controls", () => {
     render(<SearchForm today={TODAY} />);
-    expect(screen.getByRole("radio", { name: /İstanbul/ })).toBeChecked();
-    expect(screen.getByText("IST · SAW")).toBeInTheDocument();
+    expect(screen.getByRole("combobox", { name: "Varış şehri" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /^Gidiş/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /^Dönüş/ })).toBeInTheDocument();
+    expect(screen.queryByRole("radio")).not.toBeInTheDocument();
+    expect(screen.queryByRole("group", { name: /Nereden|Yolcu|Kişi/ })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /artır|azalt/ })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Planla" })).toHaveClass("bg-accent");
   });
 
-  it("is fillable end to end with the keyboard and sends the user to /plan", async () => {
+  it("is fillable end to end with the keyboard and 'Planla' opens /plan with the city and dates only", async () => {
     const user = userEvent.setup();
     render(<SearchForm today={TODAY} />);
 
-    // Origin: arrow keys move within the native radio group.
-    await user.click(screen.getByRole("radio", { name: /İstanbul/ }));
-    await user.keyboard("{ArrowRight}");
-    expect(screen.getByRole("radio", { name: /Ankara/ })).toBeChecked();
-    expect(screen.getByText("ESB", { selector: "p" })).toBeInTheDocument();
-    await user.keyboard("{ArrowLeft}");
-
     // Destination.
-    await user.tab();
-    expect(screen.getByRole("combobox", { name: "Varış şehri" })).toHaveFocus();
+    await user.click(screen.getByRole("combobox", { name: "Varış şehri" }));
     await user.keyboard("barse{Enter}");
-    expect(screen.getByText("BCN", { selector: "p" })).toBeInTheDocument();
+    expect(screen.getByRole("combobox", { name: "Varış şehri" })).toHaveValue("Barselona");
 
     // Dates: the calendar opens on Enter and takes focus.
     await user.tab();
@@ -50,12 +47,31 @@ describe("SearchForm", () => {
     expect(screen.getByRole("button", { name: "Gidiş: 14 Kas Cmt" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Dönüş: 18 Kas Çar" })).toBeInTheDocument();
 
-    // Passengers.
-    await user.click(screen.getByRole("button", { name: "Yolcu artır" }));
-    expect(screen.getAllByText("2 kişi", { exact: false }).length).toBeGreaterThan(0);
+    await user.click(screen.getByRole("button", { name: "Planla" }));
+    expect(push).toHaveBeenCalledWith("/plan?to=BCN&depart=2026-11-14&return=2026-11-18");
+  });
 
-    await user.click(screen.getByRole("button", { name: "Planı çıkar" }));
-    expect(push).toHaveBeenCalledWith("/plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2");
+  it("a popular city chip picks the city and opens the calendar", async () => {
+    const user = userEvent.setup();
+    render(<SearchForm today={TODAY} />);
+    const popular = screen.getByRole("list", { name: "Popüler:" });
+    expect(within(popular).getAllByRole("button")).toHaveLength(6);
+    await user.click(within(popular).getByRole("button", { name: "Roma" }));
+    expect(screen.getByRole("combobox", { name: "Varış şehri" })).toHaveValue("Roma");
+    expect(within(popular).getByRole("button", { name: "Roma" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByRole("dialog", { name: "Gidiş tarihini seç" })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /20 Ekim 2026/ }));
+    await user.click(screen.getByRole("button", { name: /23 Ekim 2026/ }));
+    await user.click(screen.getByRole("button", { name: "Planla" }));
+    expect(push).toHaveBeenCalledWith("/plan?to=ROM&depart=2026-10-20&return=2026-10-23");
+  });
+
+  it("keeps a link's origin and group when the city or dates are edited", async () => {
+    const user = userEvent.setup();
+    render(<SearchForm today={TODAY} initial={{ from: "ESB", pax: 3, to: "BCN", depart: "2026-11-14", return: "2026-11-18" }} />);
+    await user.click(screen.getByRole("button", { name: "Planla" }));
+    expect(push).toHaveBeenCalledWith("/plan?from=ESB&to=BCN&depart=2026-11-14&return=2026-11-18&pax=3");
   });
 
   it("disables past days and days beyond 30 nights", async () => {
@@ -72,20 +88,12 @@ describe("SearchForm", () => {
   it("shows what is missing instead of navigating", async () => {
     const user = userEvent.setup();
     render(<SearchForm today={TODAY} />);
-    await user.click(screen.getByRole("button", { name: "Planı çıkar" }));
+    await user.click(screen.getByRole("button", { name: "Planla" }));
     expect(push).not.toHaveBeenCalled();
     const alert = screen.getByRole("alert");
     expect(alert).toHaveTextContent("Bir varış şehri seç.");
     expect(alert).toHaveTextContent("Gidiş tarihini seç.");
     expect(alert).toHaveTextContent("Dönüş tarihini seç.");
     expect(screen.getByRole("combobox", { name: "Varış şehri" })).toHaveAttribute("aria-invalid", "true");
-  });
-
-  it("keeps passengers between 1 and 9", async () => {
-    const user = userEvent.setup();
-    render(<SearchForm today={TODAY} initial={{ pax: 9 }} />);
-    expect(screen.getByRole("button", { name: "Yolcu artır" })).toBeDisabled();
-    await user.click(screen.getByRole("button", { name: "Yolcu azalt" }));
-    expect(screen.getByRole("button", { name: "Yolcu artır" })).toBeEnabled();
   });
 });

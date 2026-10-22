@@ -5,11 +5,16 @@ import { checkTripDates, isIsoDate } from "./dates";
 
 /**
  * The single place where search state is read from and written to the URL:
- * /plan?from=IST&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2
+ * /plan?to=BCN&depart=2026-11-14&return=2026-11-18 (plus &from=ESB and &pax=2 when they differ from the defaults).
+ *
+ * The home page asks only where and when; the origin (İstanbul, IST + SAW) and the number of people (1) are
+ * defaults the plan page changes in its stay and flight sections (2026-10-22). Links that carry them still open
+ * the same plan.
  */
 
 export const MIN_PASSENGERS = 1;
 export const MAX_PASSENGERS = 9;
+export const DEFAULT_PASSENGERS = 1;
 
 export type SearchState = {
   from: OriginCode;
@@ -19,10 +24,11 @@ export type SearchState = {
   pax: number;
 };
 
-/** A possibly incomplete search, e.g. a form being filled or a broken link. */
-export type SearchDraft = { from: OriginCode } & Partial<Omit<SearchState, "from">>;
+/** A possibly incomplete search, e.g. a form being filled or a broken link: the route may be missing, never the defaults. */
+export type SearchDraft = Pick<SearchState, "from" | "pax"> & Partial<Pick<SearchState, "to" | "depart" | "return">>;
 
-export type SearchField = keyof SearchState;
+/** The fields a person chooses on the home page; only these can make a link incomplete. */
+export type SearchField = "to" | "depart" | "return";
 export type SearchIssue = { field: SearchField; message: string };
 
 export type ParseResult =
@@ -32,26 +38,26 @@ export type ParseResult =
 const ORIGIN_CODES = ORIGINS.map((o) => o.code) as [OriginCode, ...OriginCode[]];
 const isoDate = z.string().refine(isIsoDate);
 
+const originField = z.preprocess((v) => (typeof v === "string" ? v.toUpperCase() : v), z.enum(ORIGIN_CODES));
+const paxField = z.coerce.number().int().min(MIN_PASSENGERS).max(MAX_PASSENGERS);
+
 const fields = {
-  from: z.preprocess((v) => (typeof v === "string" ? v.toUpperCase() : v), z.enum(ORIGIN_CODES)),
   to: z
     .string()
     .transform((v) => v.toUpperCase())
     .refine((v) => findDestination(v) !== undefined),
   depart: isoDate,
   return: isoDate,
-  pax: z.coerce.number().int().min(MIN_PASSENGERS).max(MAX_PASSENGERS),
 } satisfies Record<SearchField, z.ZodType>;
 
 const MESSAGES: Record<SearchField, { missing: string; invalid: string }> = {
-  from: { missing: "Kalkış şehrini seç.", invalid: "Kalkış yalnızca İstanbul ya da Ankara olabilir." },
   to: { missing: "Bir varış şehri seç.", invalid: "Bu varış şehrini tanımıyoruz; listeden bir şehir seç." },
   depart: { missing: "Gidiş tarihini seç.", invalid: "Gidiş tarihi okunamadı." },
   return: { missing: "Dönüş tarihini seç.", invalid: "Dönüş tarihi okunamadı." },
-  pax: { missing: "Yolcu sayısını seç.", invalid: `Yolcu sayısı ${MIN_PASSENGERS}–${MAX_PASSENGERS} arasında olmalı.` },
 };
 
-const FIELD_ORDER: readonly SearchField[] = ["from", "to", "depart", "return", "pax"];
+/** The route fields, in URL order. */
+export const SEARCH_FIELDS: readonly SearchField[] = ["to", "depart", "return"];
 
 type Input = URLSearchParams | Record<string, string | string[] | undefined>;
 
@@ -62,19 +68,32 @@ function read(input: Input, key: string): string | undefined {
   return trimmed ? trimmed : undefined;
 }
 
+/** `?from=`, or İstanbul when it is missing or unknown (it is no longer chosen before the plan). */
+export function parseOrigin(input: Input): OriginCode {
+  const result = originField.safeParse(read(input, "from"));
+  return result.success ? result.data : DEFAULT_ORIGIN;
+}
+
+/** `?pax=`, or 1 when it is missing or out of range. */
+export function parsePassengers(input: Input): number {
+  const raw = read(input, "pax");
+  const result = paxField.safeParse(raw);
+  return raw !== undefined && result.success ? result.data : DEFAULT_PASSENGERS;
+}
+
 /**
- * Parses and validates search params. Never throws: anything missing or
- * invalid is reported as an issue and left out of the draft, so the form can
- * be shown again with whatever was valid.
+ * Parses and validates search params. Never throws: a missing or invalid destination or date is reported as an
+ * issue and left out of the draft, so the form can be shown again with whatever was valid. The origin and the
+ * number of people fall back to their defaults without an issue.
  */
 export function parseSearch(input: Input, today: string): ParseResult {
-  const draft: SearchDraft = { from: DEFAULT_ORIGIN };
+  const draft: SearchDraft = { from: parseOrigin(input), pax: parsePassengers(input) };
   const issues: SearchIssue[] = [];
 
-  for (const field of FIELD_ORDER) {
+  for (const field of SEARCH_FIELDS) {
     const raw = read(input, field);
     if (raw === undefined) {
-      if (field !== "from") issues.push({ field, message: MESSAGES[field].missing });
+      issues.push({ field, message: MESSAGES[field].missing });
       continue;
     }
     const result = fields[field].safeParse(raw);
@@ -98,28 +117,59 @@ export function parseSearch(input: Input, today: string): ParseResult {
     }
   }
 
-  if (issues.length === 0 && draft.to && draft.depart && draft.return && draft.pax) {
+  if (issues.length === 0 && draft.to && draft.depart && draft.return) {
     return { ok: true, value: { from: draft.from, to: draft.to, depart: draft.depart, return: draft.return, pax: draft.pax } };
   }
   return { ok: false, draft, issues };
 }
 
-/** Writes a full or partial search in a stable key order. */
-export function serializeSearch(state: SearchDraft): string {
+/** True when the link names any part of the route (the plan page then says what is missing in it). */
+export function hasRouteParams(input: Input): boolean {
+  return SEARCH_FIELDS.some((field) => read(input, field) !== undefined);
+}
+
+/**
+ * Writes a full or partial search: the origin, the route, then the number of people. The origin and the number
+ * of people are left out when they are the defaults, so a plan from the home page is /plan?to=…&depart=…&return=….
+ */
+export function serializeSearch(state: Partial<SearchState>): string {
   const params = new URLSearchParams();
-  for (const field of FIELD_ORDER) {
+  if (state.from && state.from !== DEFAULT_ORIGIN) params.set("from", state.from);
+  for (const field of SEARCH_FIELDS) {
     const value = state[field];
-    if (value !== undefined && value !== "") params.set(field, String(value));
+    if (value !== undefined && value !== "") params.set(field, value);
   }
+  if (state.pax !== undefined && state.pax !== DEFAULT_PASSENGERS) params.set("pax", String(state.pax));
   return params.toString();
+}
+
+/**
+ * The plan URL after the origin or the number of people changes on the plan page. Every other param stays
+ * (`cats`, `skip`, `ai`, `edit`, the budget); a new origin drops the flight in the budget (`flight`, `wf`, `wfs`),
+ * which was a ticket or a web price from the other city's airports.
+ */
+export function writeTripParams(params: URLSearchParams, change: { from?: OriginCode; pax?: number }): URLSearchParams {
+  const next = new URLSearchParams(params);
+  if (change.from !== undefined && change.from !== parseOrigin(params)) {
+    for (const key of ["flight", "wf", "wfs"]) next.delete(key);
+  }
+  if (change.from !== undefined) {
+    if (change.from === DEFAULT_ORIGIN) next.delete("from");
+    else next.set("from", change.from);
+  }
+  if (change.pax !== undefined) {
+    if (change.pax === DEFAULT_PASSENGERS) next.delete("pax");
+    else next.set("pax", String(change.pax));
+  }
+  return next;
 }
 
 export function planHref(state: SearchState): string {
   return `/plan?${serializeSearch(state)}`;
 }
 
-/** Link back to the home form with the search filled in. */
-export function editHref(state: SearchDraft): string {
+/** Link back to the home form with the city and the dates filled in (and a non-default origin or group, kept for the next plan). */
+export function editHref(state: Partial<SearchState>): string {
   const query = serializeSearch(state);
   return query ? `/?${query}#arama` : "/#arama";
 }
