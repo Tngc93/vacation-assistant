@@ -16,7 +16,9 @@
  * One more query stores each sight's Wikidata kinds (kinds.ts) and whether an
  * OSM object's item has a coordinate near it (refresh.ts); which places
  * count as sights is decided when the files are read (rules.ts), so a rule
- * change needs no refetch.
+ * change needs no refetch. Places with a Wikidata item get a card photo
+ * (P18, licence-filtered like the city photo) and a short description
+ * (photos.ts).
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -27,6 +29,7 @@ import { CATEGORY_IDS, type CategoryId } from "../src/lib/places/categories";
 import { PLACE_OVERRIDES } from "../src/data/place-overrides";
 import type { KindTag } from "../src/lib/places/kinds";
 import { fetchKinds, fetchLandmarks } from "../src/lib/places/landmarks";
+import { addPhotosAndDescriptions } from "../src/lib/places/photos";
 import { refreshKinds } from "../src/lib/places/refresh";
 import { isSight } from "../src/lib/places/rules";
 import { toPlace } from "../src/lib/places/place";
@@ -168,7 +171,13 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
   // Relink overrides and link tags (an item without a coordinate near the OSM object), as `npm run data:kinds` does.
   const refreshed = await withBackoff(`${city.cityCode} refresh`, () => refreshKinds(built, overrides, { kinds }));
   if (refreshed.missing.length) log(`  ${city.cityCode}: override not found for ${refreshed.missing.join(" ")}`);
-  return placesFileSchema.parse(refreshed.file);
+  // Card photos and descriptions: nice to have, so a failure leaves the city without them rather than unwritten.
+  try {
+    return placesFileSchema.parse(await withBackoff(`${city.cityCode} photos`, () => addPhotosAndDescriptions(refreshed.file)));
+  } catch (error) {
+    log(`  ${city.cityCode}: photos and descriptions failed, written without them`, (error as Error).message.slice(0, 120));
+    return placesFileSchema.parse(refreshed.file);
+  }
 }
 
 /** True when the city's file was written by this file version within the last 24 hours. */
@@ -212,7 +221,8 @@ for (const [index, city] of cities.entries()) {
     if (entry.status === "missing") missing++;
     return `${c}:${entry.status === "ok" ? entry.places.length : "–"}`;
   }).join(" ");
-  log(`  wrote ${city.cityCode}.json ${summary} photo:${file.photo ? "yes" : "no"}`);
+  const stored = CATEGORY_IDS.flatMap((c) => (file.categories[c].status === "ok" ? (file.categories[c] as { places: { photo?: unknown }[] }).places : []));
+  log(`  wrote ${city.cityCode}.json ${summary} photo:${file.photo ? "yes" : "no"} card photos:${stored.filter((p) => p.photo).length}/${stored.length}`);
   if (index < cities.length - 1) await sleep(PAUSE_BETWEEN_CITIES_MS);
 }
 const added = [...addedFromWikidata.values()].reduce((a, b) => a + b, 0);

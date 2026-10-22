@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BKK",
- "fetchedAt": "2026-10-18T17:03:54.215Z",
+ "fetchedAt": "2026-10-22T06:38:18.667Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -58,7 +58,18 @@
       "organization",
       "palace",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Grand_Palace_Bangkok%2C_Thailand.jpg/500px-Grand_Palace_Bangkok%2C_Thailand.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Andy Marchand",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grand_Palace_Bangkok,_Thailand.jpg",
+      "fullWidth": 6158
+     },
+     "description": "official residence of the King of Thailand since 1782"
     },
     {
      "id": "way/230010054",
@@ -73,7 +84,18 @@
      "wikidataId": "Q1045876",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_-_Wat_Phra_Kaew%2C_Temple_of_Emerald_Buddha%2C_Bangkok%2C_Thailand.jpg/500px-thumbnail.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_-_Wat_Phra_Kaew,_Temple_of_Emerald_Buddha,_Bangkok,_Thailand.jpg",
+      "fullWidth": 4156
+     },
+     "description": "Royal temple complex in Bangkok, Thailand"
     },
     {
      "id": "way/23481741",
@@ -88,7 +110,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Wat_Arun_from_Chao_Phraya_River.jpg/500px-Wat_Arun_from_Chao_Phraya_River.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Diliff",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wat_Arun_from_Chao_Phraya_River.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Buddhist temple in central Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q804055",
@@ -97,14 +130,25 @@
      "lat": 13.7541,
      "lon": 100.54096,
      "wikipediaCount": 30,
-     "wikidataId": "Q804055"
+     "wikidataId": "Q804055",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/The_Baiyoke_Tower_II_closeup_in_Bangkok%2C_Thaliand.jpg/500px-The_Baiyoke_Tower_II_closeup_in_Bangkok%2C_Thaliand.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Paolobon140",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Baiyoke_Tower_II_closeup_in_Bangkok,_Thaliand.jpg",
+      "fullWidth": 667
+     },
+     "description": "tower block"
     },
     {
      "id": "relation/11169995",
      "name": "Pho Tapınağı",
      "localName": "วัดพระเชตุพนวิมลมังคลารามราชวรมหาวิหาร",
-     "lat": 13.74579,
-     "lon": 100.49278,
+     "lat": 13.74591,
+     "lon": 100.49276,
      "website": "https://www.watpho.com/",
      "openingHours": "08:00-18:30",
      "wikipediaCount": 27,
@@ -112,7 +156,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Altar_at_Wat_Pho.jpg/500px-Altar_at_Wat_Pho.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Muhammad Fridho Damora Harahap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Altar_at_Wat_Pho.jpg",
+      "fullWidth": 3024
+     },
+     "description": "Buddhist temple in central Bangkok, Thailand"
     },
     {
      "id": "way/31987718",
@@ -126,7 +181,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Wat_Benchamabophit_face.jpg/500px-Wat_Benchamabophit_face.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "The original uploader was NamKhaeng at French Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wat_Benchamabophit_face.jpg",
+      "fullWidth": 593
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q1640197",
@@ -134,7 +200,18 @@
      "lat": 13.72361,
      "lon": 100.52833,
      "wikipediaCount": 26,
-     "wikidataId": "Q1640197"
+     "wikidataId": "Q1640197",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Bangkok_-_King_Power_Mahanakhon_%E0%B8%84%E0%B8%B4%E0%B8%87_%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_2021_May.jpg/500px-Bangkok_-_King_Power_Mahanakhon_%E0%B8%84%E0%B8%B4%E0%B8%87_%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_2021_May.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok_-_King_Power_Mahanakhon_%E0%B8%84%E0%B8%B4%E0%B8%87_%E0%B9%80%E0%B8%9E%E0%B8%B2%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_2021_May.jpg",
+      "fullWidth": 2110
+     },
+     "description": "mixed-use skyscraper in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q977437",
@@ -145,7 +222,18 @@
      "wikidataId": "Q977437",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Lpnp_11.JPG/500px-Lpnp_11.JPG",
+      "width": 500,
+      "height": 370,
+      "author": "hkgalbert",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lpnp_11.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lpnp_11.JPG",
+      "fullWidth": 2304
+     },
+     "description": "public park in Bangkok"
     },
     {
      "id": "wikidata/Q972334",
@@ -156,7 +244,18 @@
      "wikidataId": "Q972334",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Siam_Paragon_06.23.jpg/500px-Siam_Paragon_06.23.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "This Photo was taken by Supanut Arunoprayote . Feel free to use any of my images, but please mention me as the author and may send me a message. (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง ข้อความบอกกล่าวด้วย ) Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Siam_Paragon_06.23.jpg",
+      "fullWidth": 6360
+     },
+     "description": "shopping mall"
     },
     {
      "id": "way/178329973",
@@ -168,7 +267,18 @@
      "wikidataId": "Q1186076",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/010-Democracy_Monument.jpg/500px-010-Democracy_Monument.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Nawit science",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:010-Democracy_Monument.jpg",
+      "fullWidth": 5099
+     },
+     "description": "monument in Bangkok, Thailand"
     },
     {
      "id": "node/1872413363",
@@ -179,7 +289,18 @@
      "wikidataId": "Q1092231",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Rama_VIII_Bridge_at_night.jpg/500px-Rama_VIII_Bridge_at_night.jpg",
+      "width": 500,
+      "height": 381,
+      "author": "Stygiangloom on Flickr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rama_VIII_Bridge_at_night.jpg",
+      "fullWidth": 1004
+     },
+     "description": "bridge in Thailand"
     },
     {
      "id": "wikidata/Q1235886",
@@ -190,7 +311,18 @@
      "wikidataId": "Q1235886",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bangkok_ErawanShrine2.jpg/500px-Bangkok_ErawanShrine2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mr.Peerapong Prasutr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok_ErawanShrine2.jpg",
+      "fullWidth": 2472
+     },
+     "description": "shrine Dedicated to Brahma in Bangkok"
     },
     {
      "id": "relation/12822616",
@@ -201,7 +333,18 @@
      "wikidataId": "Q2089016",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Vimanmek_Palace_stage.jpg/500px-Vimanmek_Palace_stage.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ahoerstemeier",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vimanmek_Palace_stage.jpg",
+      "fullWidth": 1200
+     },
+     "description": "Thai royal residence compound"
     },
     {
      "id": "way/32011053",
@@ -215,7 +358,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/2016_Bangkok%2C_Dystrykt_Phra_Nakhon%2C_Wat_Suthat_%2834%29.jpg/500px-2016_Bangkok%2C_Dystrykt_Phra_Nakhon%2C_Wat_Suthat_%2834%29.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2016_Bangkok,_Dystrykt_Phra_Nakhon,_Wat_Suthat_(34).jpg",
+      "fullWidth": 4478
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "way/23610119",
@@ -228,7 +382,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Kohsan_Road_Bangkok.JPG/500px-Kohsan_Road_Bangkok.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Mr Bullitt",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kohsan_Road_Bangkok.JPG",
+      "fullWidth": 1600
+     },
+     "description": "road in Bangkok, Thailand"
     },
     {
      "id": "way/31987914",
@@ -242,7 +407,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Vimanmek_Mansion.JPG/500px-Vimanmek_Mansion.JPG",
+      "width": 500,
+      "height": 304,
+      "author": "Gisling",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vimanmek_Mansion.JPG",
+      "fullWidth": 3000
+     },
+     "description": "royal villa in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q767544",
@@ -254,7 +430,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sanam_Luang_Bangkok.jpg/500px-Sanam_Luang_Bangkok.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Adbar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sanam_Luang_Bangkok.jpg",
+      "fullWidth": 3872
+     },
+     "description": "square in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q2063818",
@@ -266,7 +453,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Golden_Mount3.jpg/500px-Golden_Mount3.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Kriengsak Jirasirirojanakorn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Golden_Mount3.jpg",
+      "fullWidth": 811
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q2495658",
@@ -278,7 +476,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Assumption_Cathedral_Bangkok_2023-10_%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B8%8D.jpg/500px-Assumption_Cathedral_Bangkok_2023-10_%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B8%8D.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Assumption_Cathedral_Bangkok_2023-10_%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B8%8D.jpg",
+      "fullWidth": 3024
+     },
+     "description": "principal Roman Catholic church of Thailand"
     },
     {
      "id": "wikidata/Q1972305",
@@ -290,7 +499,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sukhumvit.png",
+      "width": 500,
+      "height": 261,
+      "author": "No machine-readable author provided. Waerth assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sukhumvit.png",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sukhumvit.png",
+      "fullWidth": 448
+     },
+     "description": "major road in Thailand"
     },
     {
      "id": "wikidata/Q2057014",
@@ -302,7 +522,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_%282026_Jul%29_-_IMG_02.jpg/500px-Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_%282026_Jul%29_-_IMG_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_(2026_Jul)_-_IMG_02.jpg",
+      "fullWidth": 5712
+     },
+     "description": "street in Bangkok, Thailand"
     },
     {
      "id": "way/462532630",
@@ -314,7 +545,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Ulica_Yaowarat_%2805%29.jpg/500px-2016_Bangkok%2C_Dystrykt_Samphanthawong%2C_Ulica_Yaowarat_%2805%29.jpg",
+      "width": 500,
+      "height": 279,
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2016_Bangkok,_Dystrykt_Samphanthawong,_Ulica_Yaowarat_(05).jpg",
+      "fullWidth": 5097
+     },
+     "description": "road in Bangkok"
     },
     {
      "id": "way/23630366",
@@ -325,7 +567,18 @@
      "wikidataId": "Q61053357",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Palace-1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Rickbrown9 ( talk )",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palace-1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palace-1.jpg",
+      "fullWidth": 432
+     },
+     "description": "royal residence in Bangkok, Thailand"
     },
     {
      "id": "way/158185227",
@@ -336,7 +589,18 @@
      "wikidataId": "Q2063737",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/VictoryMonumentBKK.JPG/500px-VictoryMonumentBKK.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "KungDekZa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:VictoryMonumentBKK.JPG",
+      "fullWidth": 1024
+     },
+     "description": "monument in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q1267646",
@@ -347,7 +611,18 @@
      "wikidataId": "Q1267646",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Dusit_Zoo_bear_statue.jpg/500px-Dusit_Zoo_bear_statue.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Ahoerstemeier",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dusit_Zoo_bear_statue.jpg",
+      "fullWidth": 1296
+     },
+     "description": "former zoo in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q1477699",
@@ -359,7 +634,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Bkkwatboworn05a.jpg/500px-Bkkwatboworn05a.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Fotograf / Photographer: Heinrich Damm ( User:Hdamm , Hdamm at de.wikipedia.org )",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bkkwatboworn05a.jpg",
+      "fullWidth": 1136
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q4116948",
@@ -371,7 +657,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Government_House_of_Thailand.JPG/500px-Government_House_of_Thailand.JPG",
+      "width": 500,
+      "height": 305,
+      "author": "Sodacan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Government_House_of_Thailand.JPG",
+      "fullWidth": 4000
+     },
+     "description": "offices of the Prime Minister of Thailand and appointed cabinet ministers"
     },
     {
      "id": "wikidata/Q1926372",
@@ -382,7 +679,18 @@
      "wikidataId": "Q1926372",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/MBK_Bangkok_1.jpg/500px-MBK_Bangkok_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Christian Henrich",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MBK_Bangkok_1.jpg",
+      "fullWidth": 2272
+     },
+     "description": "large shopping mall in Bangkok geocn.00010, Thailand"
     },
     {
      "id": "wikidata/Q2297614",
@@ -390,7 +698,18 @@
      "lat": 13.72111,
      "lon": 100.5175,
      "wikipediaCount": 13,
-     "wikidataId": "Q2297614"
+     "wikidataId": "Q2297614",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/State_Tower_07.23.jpg/500px-State_Tower_07.23.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "This Photo was taken by Supanut Arunoprayote . Feel free to use any of my images, but please mention me as the author and may send me a message. (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง ข้อความบอกกล่าวด้วย ) Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:State_Tower_07.23.jpg",
+      "fullWidth": 4073
+     },
+     "description": "Skyscrapers in Bangkok"
     },
     {
      "id": "wikidata/Q122834533",
@@ -402,7 +721,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Hotel_Holiday_Inn_Bangkok_Siam_6.jpg/500px-Hotel_Holiday_Inn_Bangkok_Siam_6.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Rangan Datta Wiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Holiday_Inn_Bangkok_Siam_6.jpg",
+      "fullWidth": 4000
+     },
+     "description": "stadium in Bangkok"
     },
     {
      "id": "wikidata/Q3270302",
@@ -413,7 +743,18 @@
      "wikidataId": "Q3270302",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/CentralWorld-2015.jpg/500px-CentralWorld-2015.jpg",
+      "width": 500,
+      "height": 159,
+      "author": "Imtaiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CentralWorld-2015.jpg",
+      "fullWidth": 7864
+     },
+     "description": "Mixed-use development in Bangkok"
     },
     {
      "id": "way/178353988",
@@ -427,7 +768,18 @@
       "attraction",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%8A%E0%B9%89%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF.JPG/500px-%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%8A%E0%B9%89%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF.JPG",
+      "width": 500,
+      "height": 828,
+      "author": "Yakuzakorat",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%8A%E0%B9%89%E0%B8%B2_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF.JPG",
+      "fullWidth": 2668
+     },
+     "description": "landmark in Phra Nakhon district, Bangkok, Thailand"
     },
     {
      "id": "way/178329987",
@@ -440,7 +792,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Wat_mahathat_bkk_05.jpg/500px-Wat_mahathat_bkk_05.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Heinrich Damm ( User:Hdamm , Hdamm at de.wikipedia.org )",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wat_mahathat_bkk_05.jpg",
+      "fullWidth": 852
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q219047",
@@ -448,7 +811,18 @@
      "lat": 13.74556,
      "lon": 100.52556,
      "wikipediaCount": 12,
-     "wikidataId": "Q219047"
+     "wikidataId": "Q219047",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Hotel_Holiday_Inn_Bangkok_Siam_1.jpg/500px-Hotel_Holiday_Inn_Bangkok_Siam_1.jpg",
+      "width": 500,
+      "height": 241,
+      "author": "Rangan Datta Wiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Holiday_Inn_Bangkok_Siam_1.jpg",
+      "fullWidth": 10070
+     },
+     "description": "sports complex in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q2631915",
@@ -459,7 +833,18 @@
      "wikidataId": "Q2631915",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/RajInfront.jpg/500px-RajInfront.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Mynameisfootlong",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RajInfront.jpg",
+      "fullWidth": 7947
+     },
+     "description": "Sport arena"
     },
     {
      "id": "wikidata/Q4385323",
@@ -470,7 +855,18 @@
      "wikidataId": "Q4385323",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Siriraj_Hospital.jpg/500px-Siriraj_Hospital.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Wonton2ton",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Siriraj_Hospital.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Siriraj_Hospital.jpg",
+      "fullWidth": 1024
+     },
+     "description": "hospital in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q1545430",
@@ -482,7 +878,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Wat_Intharawihan_-_Temple_2.jpg/500px-Wat_Intharawihan_-_Temple_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jason7825",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wat_Intharawihan_-_Temple_2.jpg",
+      "fullWidth": 3504
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q1111480",
@@ -494,7 +901,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Wat_Yannawa_-_001_Concrete_Chinese_Junk_%2812130458466%29.jpg/500px-Wat_Yannawa_-_001_Concrete_Chinese_Junk_%2812130458466%29.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "Photo Dharma from Penang, Malaysia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wat_Yannawa_-_001_Concrete_Chinese_Junk_(12130458466).jpg",
+      "fullWidth": 4174
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "way/138947464",
@@ -507,7 +925,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Bangkok-_Wat_Ratcha_Bophit_from_a_third_floor_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%82%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%98_%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87_%282025%29_-_img_04.jpg/500px-Bangkok-_Wat_Ratcha_Bophit_from_a_third_floor_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%82%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%98_%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87_%282025%29_-_img_04.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok-_Wat_Ratcha_Bophit_from_a_third_floor_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%82%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%98_%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87_(2025)_-_img_04.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Buddhist temple in Phra Nakhon district, Bangkok, Thailand"
     },
     {
      "id": "wikidata/Q1519969",
@@ -519,7 +948,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Bkksaphanphut0609.jpg/500px-Bkksaphanphut0609.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "Heinrich Damm ( User:Hdamm , Hdamm at de.wikipedia.org )",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bkksaphanphut0609.jpg",
+      "fullWidth": 1136
+     },
+     "description": "bridge crossing Chao Phraya River, Thailand"
     },
     {
      "id": "wikidata/Q783806",
@@ -530,7 +970,18 @@
      "wikidataId": "Q783806",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Robot_Building_%28UOB_Bank%2C_Bangkok%29_2022_Dec.jpg/500px-Robot_Building_%28UOB_Bank%2C_Bangkok%29_2022_Dec.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Robot_Building_(UOB_Bank,_Bangkok)_2022_Dec.jpg",
+      "fullWidth": 3024
+     },
+     "description": "office building"
     },
     {
      "id": "wikidata/Q6761807",
@@ -542,7 +993,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Sri_Maha_Mariamman_Koyil_Bangkok_%28Wat_Khaek_Silom%29_2019_03.jpg/500px-Sri_Maha_Mariamman_Koyil_Bangkok_%28Wat_Khaek_Silom%29_2019_03.jpg",
+      "width": 500,
+      "height": 800,
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sri_Maha_Mariamman_Koyil_Bangkok_(Wat_Khaek_Silom)_2019_03.jpg",
+      "fullWidth": 2521
+     },
+     "description": "Amman Temple in Bangkok, Thailand"
     },
     {
      "id": "way/31987148",
@@ -553,7 +1015,18 @@
      "wikidataId": "Q485954",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Ananta_Samakhom_Throne_Hall_P1120854.JPG/500px-Ananta_Samakhom_Throne_Hall_P1120854.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "deror_avi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ananta_Samakhom_Throne_Hall_P1120854.JPG",
+      "fullWidth": 4000
+     },
+     "description": "architectural structure in Bangkok, Thailand"
     },
     {
      "id": "way/103022363",
@@ -568,7 +1041,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Loha_Prasat.jpg/500px-Loha_Prasat.jpg",
+      "width": 500,
+      "height": 647,
+      "author": "Ahoerstemeier",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Loha_Prasat.jpg",
+      "fullWidth": 1104
+     },
+     "description": "Buddhist temple in Bangkok, Thailand"
     },
     {
      "id": "way/1410385850",
@@ -582,7 +1066,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bkkwangsuanpakkardlp03.jpg/500px-Bkkwangsuanpakkardlp03.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Heinrich Damm ( User:Hdamm , Hdamm at de.wikipedia.org )",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bkkwangsuanpakkardlp03.jpg",
+      "fullWidth": 2272
+     },
+     "description": "museum in Bangkok, Thailand"
     }
    ]
   },
@@ -602,7 +1097,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Bangkok_National_Museum.jpg/500px-Bangkok_National_Museum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "This Photo was taken by Supanut Arunoprayote . Feel free to use any of my images, but please mention me as the author and may send me a message. (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง ข้อความบอกกล่าวด้วย ) Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok_National_Museum.jpg",
+      "fullWidth": 5616
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/48966995",
@@ -618,7 +1124,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Bangkok_Art_and_Culture_Centre_building.jpg/500px-Bangkok_Art_and_Culture_Centre_building.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Cush2k",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok_Art_and_Culture_Centre_building.jpg",
+      "fullWidth": 800
+     },
+     "description": "art museum and cultural center in Bangkok"
     },
     {
      "id": "relation/20710624",
@@ -631,7 +1148,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Bangkok_NationalGallery1.jpg/500px-Bangkok_NationalGallery1.jpg",
+      "width": 500,
+      "height": 190,
+      "author": "Mr.Sayompoo Setabhrahmana",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok_NationalGallery1.jpg",
+      "fullWidth": 4694
+     },
+     "description": "art gallery in Bangkok, Thailand"
     },
     {
      "id": "way/341577338",
@@ -646,7 +1174,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Jim_Thompson_House_spirit_house.JPG/500px-Jim_Thompson_House_spirit_house.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "BrokenSphere",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jim_Thompson_House_spirit_house.JPG",
+      "fullWidth": 1704
+     },
+     "description": "museum in Bangkok"
     },
     {
      "id": "way/230891857",
@@ -661,7 +1200,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bkkwangsuanpakkardlp03.jpg/500px-Bkkwangsuanpakkardlp03.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Heinrich Damm ( User:Hdamm , Hdamm at de.wikipedia.org )",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bkkwangsuanpakkardlp03.jpg",
+      "fullWidth": 2272
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/349609932",
@@ -676,7 +1226,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1_%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89_3.jpg/500px-%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1_%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89_3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Yakuzakorat",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%A2%E0%B8%B2%E0%B8%A1_%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89_3.jpg",
+      "fullWidth": 4007
+     },
+     "description": "discovery museum in Phra Nakhon District, Bangkok"
     },
     {
      "id": "node/3542061032",
@@ -690,7 +1251,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%8D.jpg/500px-%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%8D.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bntofficial",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%97%E0%B9%8C%E0%B9%80%E0%B8%AB%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%8D.jpg",
+      "fullWidth": 5616
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "node/2447283108",
@@ -703,7 +1275,41 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Forensic_Science_Museum_in_Bangkok.jpg/500px-The_Forensic_Science_Museum_in_Bangkok.jpg",
+      "width": 500,
+      "height": 643,
+      "author": "Bobby from London, L'Angleterre",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Forensic_Science_Museum_in_Bangkok.jpg",
+      "fullWidth": 739
+     },
+     "description": "Medical museum in Bangkok, Thailand"
+    },
+    {
+     "id": "way/863463383",
+     "name": "พระราชวังพญาไท",
+     "lat": 13.76882,
+     "lon": 100.533,
+     "wikipediaCount": 5,
+     "wikidataId": "Q2548250",
+     "kinds": [
+      "heritage",
+      "palace"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Payathai_palace.jpg/500px-Payathai_palace.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Berry",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Payathai_palace.jpg",
+      "fullWidth": 7360
+     },
+     "description": "former royal residence in Bangkok"
     },
     {
      "id": "way/205637198",
@@ -716,7 +1322,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Art museum in Bangkok, Thailand"
     },
     {
      "id": "way/82542417",
@@ -724,13 +1331,25 @@
      "lat": 13.75203,
      "lon": 100.49072,
      "address": "พระนคร",
+     "website": "https://www.qsmtthailand.org/",
      "openingHours": "Mo-Su 09:00-16:30",
      "wikipediaCount": 4,
      "wikidataId": "Q110517188",
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Queen_Sirikit_Museum_of_Textiles_2.jpg/500px-Queen_Sirikit_Museum_of_Textiles_2.jpg",
+      "width": 500,
+      "height": 242,
+      "author": "Vano111ru",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Queen_Sirikit_Museum_of_Textiles_2.jpg",
+      "fullWidth": 3573
+     },
+     "description": "history museum, Textile museum in Grand Palace, Bangkok"
     },
     {
      "id": "way/202235947",
@@ -742,7 +1361,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bangkok_National_Museum_of_Royal_Barges_2018-12-26_%2801%29.jpg/500px-Bangkok_National_Museum_of_Royal_Barges_2018-12-26_%2801%29.jpg",
+      "width": 500,
+      "height": 275,
+      "author": "Index Librorum Permissorum",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok_National_Museum_of_Royal_Barges_2018-12-26_(01).jpg",
+      "fullWidth": 3992
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/210306786",
@@ -755,7 +1385,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Bangkokian_Museum_%282026%29_01.jpg/500px-Bangkokian_Museum_%282026%29_01.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "Medelam",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkokian_Museum_(2026)_01.jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "node/3096836185",
@@ -767,7 +1408,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "node/2411920280",
@@ -779,7 +1421,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Imaging_Technology_Museum.jpg/500px-Imaging_Technology_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "ScorpianPK",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Imaging_Technology_Museum.jpg",
+      "fullWidth": 3264
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/1467232352",
@@ -791,7 +1444,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Baan_Kudichin_Museum_%282026%29_01.jpg/500px-Baan_Kudichin_Museum_%282026%29_01.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Medelam",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baan_Kudichin_Museum_(2026)_01.jpg",
+      "fullWidth": 3000
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/229966092",
@@ -804,7 +1468,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/King_Prajadhipok_Museum.jpg/500px-King_Prajadhipok_Museum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Lerdsuwa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:King_Prajadhipok_Museum.jpg",
+      "fullWidth": 1800
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/320273828",
@@ -816,7 +1491,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Siriraj_-_Old_Thonburi_Railway_Station.jpg/500px-Siriraj_-_Old_Thonburi_Railway_Station.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Supanut Arunoprayote",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Siriraj_-_Old_Thonburi_Railway_Station.jpg",
+      "fullWidth": 5823
+     },
+     "description": "former railway station in Bangkok, Thailand"
     },
     {
      "id": "node/373098282",
@@ -828,7 +1514,32 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "natural history museum in Thailand"
+    },
+    {
+     "id": "way/351091872",
+     "name": "หอศิลป์มหาวิทยาลัยศิลปากร",
+     "lat": 13.75292,
+     "lon": 100.48997,
+     "address": "พระนคร",
+     "wikipediaCount": 3,
+     "wikidataId": "Q1792381",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Bkksilpakorn0306a.jpg/500px-Bkksilpakorn0306a.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Hdamm",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bkksilpakorn0306a.jpg",
+      "fullWidth": 1500
+     },
+     "description": "art gallery and museum in Bangkok, Thailand"
     },
     {
      "id": "way/241865727",
@@ -841,7 +1552,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/M.R._Kukrit%E2%80%99s_Heritage_Home_%286980958709%29.jpg/500px-M.R._Kukrit%E2%80%99s_Heritage_Home_%286980958709%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Johan Fantenberg from Melbourne, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M.R._Kukrit%E2%80%99s_Heritage_Home_(6980958709).jpg",
+      "fullWidth": 5182
+     },
+     "description": "museum in Bangkok, Thailand"
     },
     {
      "id": "way/539017238",
@@ -854,7 +1576,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "historic house museum in Bangkok, Thailand"
     },
     {
      "id": "node/2962489061",
@@ -870,6 +1593,20 @@
      ]
     },
     {
+     "id": "way/82078207",
+     "name": "ศาลาเครื่องราชอิสริยยศ เครื่องราชอิสริยาภรณ์ และเหรียญกษาปณ์",
+     "lat": 13.75101,
+     "lon": 100.49173,
+     "address": "พระนคร",
+     "wikipediaCount": 2,
+     "wikidataId": "Q7155885",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "description": "Museum in Bangkok, Thailand"
+    },
+    {
      "id": "node/5764199061",
      "name": "100 tonson gallery",
      "lat": 13.73905,
@@ -879,18 +1616,6 @@
      "kinds": [
       "business",
       "organization"
-     ]
-    },
-    {
-     "id": "way/1231343547",
-     "name": "บ้านอับดุลราฮิม",
-     "lat": 13.72782,
-     "lon": 100.5394,
-     "address": "ถนนพระรามที่ 4 960",
-     "wikipediaCount": 1,
-     "wikidataId": "Q13016480",
-     "kinds": [
-      "heritage"
      ]
     },
     {
@@ -905,14 +1630,48 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/CUMuseumFrontout.jpg/500px-CUMuseumFrontout.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "BunBn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CUMuseumFrontout.jpg",
+      "fullWidth": 3264
+     },
+     "description": "Interactive museum in Chulalongkorn University"
+    },
+    {
+     "id": "way/1466799252",
+     "name": "พิพิธภัณฑ์สุนทรภู่",
+     "lat": 13.75361,
+     "lon": 100.50389,
+     "wikipediaCount": 1,
+     "wikidataId": "Q123290809",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%88_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg/500px-%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%88_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mastertongapollo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%88_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.jpg",
+      "fullWidth": 8192
+     },
+     "description": "museum of Thai best-known poet in Bangkok"
     },
     {
      "id": "node/10693793825",
      "name": "Art4C",
      "lat": 13.73366,
      "lon": 100.52721,
-     "website": "http://www.faa.chula.ac.th/art4c/?fbclid=IwAR1VSVSTmeytGFZZxSS54rYTeNJ7FRBmIza5yZnqDN1HL0RLPePqSJtiI2g",
+     "website": "http://www.faa.chula.ac.th/art4c/",
      "openingHours": "Mo-Sa 09:00-18:00"
     },
     {
@@ -1007,38 +1766,12 @@
      "website": "https://www.supples.co/"
     },
     {
-     "id": "way/1434802191",
-     "name": "นิทรรศน์รัตนโกสินทร์",
-     "lat": 13.75589,
-     "lon": 100.50383,
-     "website": "https://www.nitasrattanakosin.com/"
-    },
-    {
-     "id": "way/1294703709",
-     "name": "พิพิธบางลำพู",
-     "lat": 13.76376,
-     "lon": 100.49639,
-     "website": "http://banglamphumuseum.treasury.go.th/"
-    },
-    {
-     "id": "way/539268957",
-     "name": "พิพิธภัณฑ์พระอาจารย์มั่น ภูริทตฺโต วัดปทุมวนาราม",
-     "lat": 13.74626,
-     "lon": 100.53741,
-     "address": "ปทุมวัน",
-     "openingHours": "We-Su 08:00-17:00",
-     "wikidataId": "Q137947024",
-     "kinds": [
-      "museum",
-      "organization"
-     ]
-    },
-    {
-     "id": "node/11301593402",
-     "name": "พิพิธภัณฑ์พืชมีชีวิต",
-     "lat": 13.73554,
-     "lon": 100.53052,
-     "website": "https://www.chula.ac.th/clipping/134394/"
+     "id": "node/14257969134",
+     "name": "ท่าพิพิธภัณฑ์",
+     "lat": 13.75275,
+     "lon": 100.48919,
+     "address": "ถนนมหาราช 166",
+     "website": "https://www.museumpier.com/"
     }
    ]
   },
@@ -1082,12 +1815,6 @@
      "name": "สวนลอยฟ้าเจ้าพระยา",
      "lat": 13.7391,
      "lon": 100.49859
-    },
-    {
-     "id": "node/8081921495",
-     "name": "สะพานมัฆวานรังสรรค์",
-     "lat": 13.76366,
-     "lon": 100.50941
     }
    ]
   },
@@ -1136,6 +1863,19 @@
      "openingHours": "11:00-22:00",
      "cuisine": "japanese",
      "detailed": true
+    },
+    {
+     "id": "node/2081842900",
+     "name": "Le Normandie",
+     "lat": 13.72359,
+     "lon": 100.51425,
+     "address": "Oriental Avenue 48",
+     "website": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/anne-sophie-pic-at-le-normandie",
+     "openingHours": "We-Su 08:00-15:30,18:30-23:30",
+     "cuisine": "french",
+     "wikidataId": "Q95494621",
+     "detailed": true,
+     "description": "restaurant in Thailand"
     },
     {
      "id": "node/2075731960",
@@ -1199,7 +1939,8 @@
      "openingHours": "18:00-01:00",
      "cuisine": "mediterranean",
      "wikidataId": "Q4923611",
-     "detailed": true
+     "detailed": true,
+     "description": "restaurant in Bangkok, Thailand"
     },
     {
      "id": "node/3471419765",
@@ -1385,15 +2126,6 @@
      "openingHours": "Mo-Su 10:30-21:30",
      "cuisine": "asian",
      "detailed": true
-    },
-    {
-     "id": "node/4155913409",
-     "name": "Nara Thai Cuisine",
-     "lat": 13.744,
-     "lon": 100.54665,
-     "website": "https://www.naracuisine.com/index.php",
-     "cuisine": "thai",
-     "detailed": true
     }
    ]
   },
@@ -1492,7 +2224,7 @@
      "lat": 13.76052,
      "lon": 100.49658,
      "address": "ถนนจักรพงษ์ 124",
-     "website": "https://www.facebook.com/profile.php?id=100088703807863&mibextid=ZbWKwL",
+     "website": "https://www.facebook.com/profile.php?id=100088703807863",
      "openingHours": "Mo-Su 10:00-22:00",
      "cuisine": "coffee shop, bubble tea, juice",
      "detailed": true
@@ -1505,6 +2237,16 @@
      "website": "https://www.renohotel.co.th/restaurant",
      "openingHours": "07:00-21:00",
      "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/7177878885",
+     "name": "Sarnies Sourdough",
+     "lat": 13.72119,
+     "lon": 100.51563,
+     "website": "https://linktr.ee/sarnies.sourdough",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "cuisine": "pizza, pasta, salad, juice, sandwich, coffee shop, tea, dessert",
      "detailed": true
     },
     {
@@ -1569,21 +2311,10 @@
      "detailed": true
     },
     {
-     "id": "node/7192252385",
-     "name": "โกลด์เด้น เพลส สาขาท่าช้าง",
-     "lat": 13.75255,
-     "lon": 100.4893,
-     "address": "ถนนมหาราช 196-198",
-     "website": "https://goldenplace.co.th/",
-     "openingHours": "Mo-Su 07:00-19:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
      "id": "node/5277054815",
      "name": "คาเฟ่ อเมซอน",
-     "lat": 13.77034,
-     "lon": 100.50448,
+     "lat": 13.77029,
+     "lon": 100.50452,
      "website": "http://www.cafe-amazon.com/",
      "openingHours": "Mo-Su 06:00-19:00",
      "cuisine": "coffee shop",
@@ -1716,6 +2447,17 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/14135618602",
+     "name": "Balcony Lounge and Humidor Cigar Bar",
+     "lat": 13.7449,
+     "lon": 100.54142,
+     "address": "ถนนเพลินจิต 973",
+     "website": "https://bangkok.intercontinental.com/dining/balcony-lounge",
+     "openingHours": "Mo-Su 08:00-00:00",
+     "cuisine": "cake, coffee shop, tea",
+     "detailed": true
+    },
+    {
      "id": "node/4346775770",
      "name": "Snooze Coffee House",
      "lat": 13.76576,
@@ -1754,6 +2496,25 @@
      "website": "https://www.wineloft.com/",
      "openingHours": "11:00-24:00",
      "cuisine": "steak, pasta, spagetti",
+     "detailed": true
+    },
+    {
+     "id": "node/14069656101",
+     "name": "AQUA Bar",
+     "lat": 13.74117,
+     "lon": 100.54043,
+     "address": "ถนนราชดำริ 155",
+     "website": "https://aquabangkok.com/",
+     "openingHours": "Mo-Su 12:00-00:30",
+     "detailed": true
+    },
+    {
+     "id": "node/14069607501",
+     "name": "Bar Sathorn",
+     "lat": 13.72211,
+     "lon": 100.52892,
+     "website": "https://barsathorn.com/",
+     "openingHours": "Mo-Su 14:30-01:00",
      "detailed": true
     },
     {
@@ -1796,6 +2557,15 @@
      "detailed": true
     },
     {
+     "id": "node/14069651001",
+     "name": "G.O.D (Genius in Drugs)",
+     "lat": 13.7398,
+     "lon": 100.51437,
+     "website": "https://nightify.co/book/god",
+     "openingHours": "Mo-Su 19:00-01:00",
+     "detailed": true
+    },
+    {
      "id": "node/13997018402",
      "name": "La Casa del Habano Sindhorn Kempinski",
      "lat": 13.73659,
@@ -1803,6 +2573,25 @@
      "address": "ถนนสารสิน 68/3",
      "website": "https://pacificcigar.com/our-locations/",
      "openingHours": "Mo-Su 12:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14069601501",
+     "name": "Lennon's",
+     "lat": 13.74347,
+     "lon": 100.54899,
+     "address": "ถนนเพลินจิต 1037/1",
+     "website": "https://rosewoodhotels.com/en/bangkok/dining/lennons",
+     "openingHours": "Mo-Su 18:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14069642101",
+     "name": "Opium Bar",
+     "lat": 13.73921,
+     "lon": 100.50848,
+     "website": "https://opiumbarbangkok.com/",
+     "openingHours": "Th-Tu 16:00-01:00",
      "detailed": true
     },
     {
@@ -1882,6 +2671,14 @@
      "website": "https://bangkok.grand.hyatt.com/hyatt/hotels-bangkok-grand/entertainment/dining_detail.jsp?itemDesc=fboutlet&itemId=1000112"
     },
     {
+     "id": "node/4665596791",
+     "name": "BarBar Fetish Club",
+     "lat": 13.72826,
+     "lon": 100.53258,
+     "address": "Patpong Soi 2",
+     "website": "https://www.barbarfetish.com/"
+    },
+    {
      "id": "node/776037982",
      "name": "Bully's Bankok",
      "lat": 13.7421,
@@ -1926,62 +2723,6 @@
      "lon": 100.49813,
      "address": "ถนนข้าวสาร",
      "cuisine": "local, regional, thai"
-    },
-    {
-     "id": "node/4939488208",
-     "name": "Jools Bar",
-     "lat": 13.76521,
-     "lon": 100.50013,
-     "address": "ถนนสามเสน 160",
-     "openingHours": "Mo-Su 10:00-23:59"
-    },
-    {
-     "id": "way/234374859",
-     "name": "Madame Musur",
-     "lat": 13.76216,
-     "lon": 100.49494,
-     "address": "พระนคร",
-     "cuisine": "thai"
-    },
-    {
-     "id": "node/3676274854",
-     "name": "Maggie Choo",
-     "lat": 13.723,
-     "lon": 100.51846,
-     "address": "ถนนสีลม 320",
-     "openingHours": "Tu-Su 19:30-02:00"
-    },
-    {
-     "id": "node/7695372191",
-     "name": "Nineteens Up",
-     "lat": 13.72313,
-     "lon": 100.52094,
-     "address": "โครงการบ้านสีลม",
-     "openingHours": "Mo-Su 11:00-00:00"
-    },
-    {
-     "id": "node/12298356783",
-     "name": "Old Other Office Bar",
-     "lat": 13.72948,
-     "lon": 100.53213,
-     "address": "ถนนพัฒน์พงศ์ 2 37/9",
-     "openingHours": "Tu-Su 16:00-2:00"
-    },
-    {
-     "id": "node/11235379062",
-     "name": "Pakalolo Cannabis Bar & Dispensary - Khaosan",
-     "lat": 13.76202,
-     "lon": 100.50153,
-     "address": "Phra Sumen Rd. 53",
-     "openingHours": "Mo-Su 09:00-01:00"
-    },
-    {
-     "id": "node/11235345795",
-     "name": "Pakalolo Cannabis Bar & Dispensary - Tha Maharaj",
-     "lat": 13.75508,
-     "lon": 100.48874,
-     "address": "ถนนมหาราช Unit E1-06, Tha Maharaj",
-     "openingHours": "Mo-Su 10:00-21:00"
     }
    ]
   },

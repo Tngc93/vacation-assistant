@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 const WIDTHS = [320, 375, 768] as const;
 
@@ -37,8 +37,10 @@ for (const width of WIDTHS) {
     test(`${name} has no horizontal scroll at ${width}px`, async ({ page }) => {
       await page.setViewportSize({ width, height: 800 });
       await page.goto(path);
-      // Let streamed sections (rates) arrive before measuring.
+      // Let streamed sections (rates) arrive before measuring, and React reveal them: every loading
+      // skeleton (aria-busy) is gone once the page is final.
       await page.waitForLoadState("networkidle");
+      await expect(page.locator('[aria-busy="true"]')).toHaveCount(0);
 
       const result = await page.evaluate(() => {
         const root = document.documentElement;

@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 // e2e server: VA_FLIGHTS_FIXTURES=1 (labelled sample flights), pre-fetched place files, no network.
 function isoDaysFromNow(days: number): string {

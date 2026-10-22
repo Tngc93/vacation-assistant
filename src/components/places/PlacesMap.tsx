@@ -10,6 +10,7 @@ import {
   type StyleSpecification,
 } from "maplibre-gl";
 import { useEffect, useRef } from "react";
+import { cn } from "@/lib/cn";
 import type { StoredPlace } from "@/lib/places/file";
 import {
   applyPatches,
@@ -27,6 +28,8 @@ export type PlacesMapProps = {
   selectedId: string | null;
   onActivate: (id: string | null) => void;
   onSelect: (id: string) => void;
+  /** Size of the map box; it follows its container (a hero column, a strip, full screen). */
+  className?: string;
 };
 
 const DOTS = "places-dots";
@@ -60,7 +63,7 @@ function loadBaseStyle() {
 }
 
 /** MapLibre + OpenFreeMap, recoloured from the design tokens and kept in step with the list. */
-export default function PlacesMap({ places, center, activeId, selectedId, onActivate, onSelect }: PlacesMapProps) {
+export default function PlacesMap({ places, center, activeId, selectedId, onActivate, onSelect, className }: PlacesMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const readyRef = useRef(false);
@@ -168,6 +171,15 @@ export default function PlacesMap({ places, center, activeId, selectedId, onActi
     // The map is created once per city; later changes are applied below.
   }, [center.lat, center.lon]);
 
+  // The box changes size (strip ↔ full screen, window resize): redraw at the new size.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver(() => mapRef.current?.resize());
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   // Recolour when the theme changes (manual switch or system setting).
   useEffect(() => {
     const repaint = () => {
@@ -232,7 +244,11 @@ export default function PlacesMap({ places, center, activeId, selectedId, onActi
       ref={containerRef}
       role="region"
       aria-label="Mekân haritası"
-      className="group relative h-80 w-full overflow-hidden rounded-md border border-rule bg-paper-raised md:h-[32rem]"
+      // What the map shows, readable without WebGL (end-to-end tests): how many places, the lit and the picked one.
+      data-places={places.length}
+      data-active={activeId ?? ""}
+      data-selected={selectedId ?? ""}
+      className={cn("group relative w-full overflow-hidden rounded-md border border-rule bg-paper-raised", className ?? "h-80 md:h-[32rem]")}
     >
       <p className="absolute inset-0 hidden items-center justify-center p-6 text-center text-caption text-ink-muted group-data-[failed=true]:flex">
         Harita şu an yüklenemedi; liste kullanılabilir.

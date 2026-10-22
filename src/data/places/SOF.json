@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "SOF",
- "fetchedAt": "2026-10-18T16:41:11.342Z",
+ "fetchedAt": "2026-10-22T06:02:12.705Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/AlexanderNevskyCathedral-Sofia-6.jpg/500px-AlexanderNevskyCathedral-Sofia-6.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Plamen Agov ( user:MrPanyGoff )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AlexanderNevskyCathedral-Sofia-6.jpg",
+      "fullWidth": 3127
+     },
+     "description": "Bulgarian Orthodox cathedral in Sofia, Bulgaria"
     },
     {
      "id": "way/1457152034",
@@ -68,7 +79,18 @@
      "wikidataId": "Q639704",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/National_Assembly_of_Bulgaria.jpg/500px-National_Assembly_of_Bulgaria.jpg",
+      "width": 500,
+      "height": 243,
+      "author": "Plamen Agov",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:National_Assembly_of_Bulgaria.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Assembly_of_Bulgaria.jpg",
+      "fullWidth": 3298
+     },
+     "description": "parliament of Bulgaria"
     },
     {
      "id": "wikidata/Q1327903",
@@ -80,7 +102,18 @@
      "wikidataId": "Q1327903",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Vasil_Levski_National_Stadium_2022.jpg/500px-Vasil_Levski_National_Stadium_2022.jpg",
+      "width": 500,
+      "height": 238,
+      "author": "JukoFF",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vasil_Levski_National_Stadium_2022.jpg",
+      "fullWidth": 6668
+     },
+     "description": "football stadium in Sofia, Bulgaria"
     },
     {
      "id": "way/96640830",
@@ -93,7 +126,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/05158-Banyaba%C5%9F%C4%B1_Mosque%2C_Sofia_%288269331286%29.jpg/500px-05158-Banyaba%C5%9F%C4%B1_Mosque%2C_Sofia_%288269331286%29.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "xiquinhosilva from Cacau",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:05158-Banyaba%C5%9F%C4%B1_Mosque,_Sofia_(8269331286).jpg",
+      "fullWidth": 3872
+     },
+     "description": "Bulgaristan'ın Sofya kentinde cami"
     },
     {
      "id": "wikidata/Q602853",
@@ -105,7 +149,18 @@
      "wikidataId": "Q602853",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Basilica_of_Hagia_Sofia%2C_Bulgaria.jpg/500px-Basilica_of_Hagia_Sofia%2C_Bulgaria.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Klearchos Kapoutsis from Paleo Faliro, Greece",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_of_Hagia_Sofia,_Bulgaria.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Bulgaristan'ın Sofya şehrinde bir kilise"
     },
     {
      "id": "wikidata/Q520753",
@@ -117,7 +172,18 @@
      "wikidataId": "Q520753",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/P7120041.JPG/500px-P7120041.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Radi SADEK",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:P7120041.JPG",
+      "fullWidth": 2816
+     },
+     "description": "Metropolitan Cathedral Church in Sofia"
     },
     {
      "id": "wikidata/Q1858012",
@@ -130,7 +196,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/National-theatre-Bulgaria_2022.jpg/500px-National-theatre-Bulgaria_2022.jpg",
+      "width": 500,
+      "height": 625,
+      "author": "JukoFF",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National-theatre-Bulgaria_2022.jpg",
+      "fullWidth": 1440
+     },
+     "description": "theatre in Sofia, Bulgaria"
     },
     {
      "id": "wikidata/Q804933",
@@ -142,7 +219,18 @@
      "wikidataId": "Q804933",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Balgarska_Armija_2017.jpg/500px-Balgarska_Armija_2017.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Wiöldcard",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Balgarska_Armija_2017.jpg",
+      "fullWidth": 3264
+     },
+     "description": "football stadium"
     },
     {
      "id": "wikidata/Q942127",
@@ -154,7 +242,18 @@
      "wikidataId": "Q942127",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Sofia_Synagogue_11c.jpg/500px-Sofia_Synagogue_11c.jpg",
+      "width": 500,
+      "height": 377,
+      "author": "Plamen Agov (Пламен Агов)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia_Synagogue_11c.jpg",
+      "fullWidth": 2363
+     },
+     "description": "Sephardic Jewish congregation and synagogue in Sofia"
     },
     {
      "id": "wikidata/Q2598073",
@@ -167,7 +266,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/StGeorgeRotundaSofia.JPG/500px-StGeorgeRotundaSofia.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "No machine-readable author provided. Preslav~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:StGeorgeRotundaSofia.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StGeorgeRotundaSofia.JPG",
+      "fullWidth": 1600
+     },
+     "description": "Early Christian red brick rotunda that is considered the oldest church building in Sofia, Bulgaria"
     },
     {
      "id": "wikidata/Q2095010",
@@ -179,7 +289,18 @@
      "wikidataId": "Q2095010",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Sofia_Railway_Station_2026_3.jpg/500px-Sofia_Railway_Station_2026_3.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Rfeijor0930932dcn",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia_Railway_Station_2026_3.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Sofya, Sofya Başkent Belediyesi, Sofya Şehri İli, Bulgaristan'da bir tren istasyonu"
     },
     {
      "id": "wikidata/Q1138538",
@@ -191,7 +312,18 @@
      "wikidataId": "Q1138538",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Lion%27s_Bridge%2C_Sofia_1.jpg/500px-Lion%27s_Bridge%2C_Sofia_1.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "Stolichanin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lion%27s_Bridge,_Sofia_1.jpg",
+      "fullWidth": 3648
+     },
+     "description": "bridge"
     },
     {
      "id": "wikidata/Q3269914",
@@ -202,7 +334,18 @@
      "wikidataId": "Q3269914",
      "kinds": [
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/National_Palace_of_Culture_%2823997858848%29.jpg/500px-National_Palace_of_Culture_%2823997858848%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Deensel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Palace_of_Culture_(23997858848).jpg",
+      "fullWidth": 2992
+     },
+     "description": "Congress and cultural venue in Sofia, Bulgaria"
     },
     {
      "id": "way/162791009",
@@ -214,7 +357,18 @@
      "wikidataId": "Q873892",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Russian_Church_in_Sofia.jpg/500px-The_Russian_Church_in_Sofia.jpg",
+      "width": 500,
+      "height": 761,
+      "author": "Dudva",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Russian_Church_in_Sofia.jpg",
+      "fullWidth": 1843
+     },
+     "description": "church in Sofia, Bulgaria"
     },
     {
      "id": "wikidata/Q598811",
@@ -225,7 +379,18 @@
      "wikidataId": "Q598811",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Cathedral_of_St_Joseph%2C_Sofia_1.jpg/500px-Cathedral_of_St_Joseph%2C_Sofia_1.jpg",
+      "width": 500,
+      "height": 243,
+      "author": "Isip2 westboro",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_of_St_Joseph,_Sofia_1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_of_St_Joseph,_Sofia_1.jpg",
+      "fullWidth": 4032
+     },
+     "description": "cathedral"
     },
     {
      "id": "wikidata/Q358267",
@@ -236,7 +401,18 @@
      "wikidataId": "Q358267",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Downtown_Sofia_Boby_Dimitrov_1.jpg/500px-Downtown_Sofia_Boby_Dimitrov_1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Boby Dimitrov from Sofia, Bulgaria",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Sofia_Boby_Dimitrov_1.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Bridge in Sofia, Bulgaria"
     },
     {
      "id": "wikidata/Q2989415",
@@ -249,7 +425,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/SvetiSedmochislenitsiChurch-Sofia-3.jpg/500px-SvetiSedmochislenitsiChurch-Sofia-3.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "Plamen Agov (Пламен Агов)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SvetiSedmochislenitsiChurch-Sofia-3.jpg",
+      "fullWidth": 2939
+     },
+     "description": "church building in Sofia, Bulgaria"
     },
     {
      "id": "way/310482763",
@@ -260,7 +447,18 @@
      "wikidataId": "Q2037523",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Tsar-liberator-imagesfrombulgaria.jpg/500px-Tsar-liberator-imagesfrombulgaria.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Nenko Lazarov",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tsar-liberator-imagesfrombulgaria.jpg",
+      "fullWidth": 1920
+     },
+     "description": "equestrian monument of Alexander II in the centre of Sofia, the capital of Bulgaria"
     },
     {
      "id": "wikidata/Q190435",
@@ -269,7 +467,18 @@
      "lat": 42.69937,
      "lon": 23.32368,
      "wikipediaCount": 13,
-     "wikidataId": "Q190435"
+     "wikidataId": "Q190435",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Sofia_bathroom.jpg/500px-Sofia_bathroom.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Miroslav.Nikolov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia_bathroom.jpg",
+      "fullWidth": 3000
+     },
+     "description": "architectural structure"
     },
     {
      "id": "wikidata/Q1766560",
@@ -280,7 +489,18 @@
      "wikidataId": "Q1766560",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/%C3%89glise_Sveta_Petka_Samardjiiska_4.JPG/500px-%C3%89glise_Sveta_Petka_Samardjiiska_4.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Manastirile",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%89glise_Sveta_Petka_Samardjiiska_4.JPG",
+      "fullWidth": 5472
+     },
+     "description": "medieval Bulgarian Orthodox church in Sofia"
     },
     {
      "id": "wikidata/Q6489272",
@@ -292,7 +512,18 @@
      "wikidataId": "Q6489272",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Independence_square%2C_Sofia_at_night_PD_2012_3.JPG/500px-Independence_square%2C_Sofia_at_night_PD_2012_3.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Bin im Garten",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Independence_square,_Sofia_at_night_PD_2012_3.JPG",
+      "fullWidth": 5616
+     },
+     "description": "architectural ensemble of three Socialist Classicism edifices in central Sofia"
     },
     {
      "id": "wikidata/Q18543007",
@@ -300,7 +531,18 @@
      "lat": 42.69444,
      "lon": 23.33278,
      "wikipediaCount": 11,
-     "wikidataId": "Q18543007"
+     "wikidataId": "Q18543007",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%D0%A1%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B0_%D0%BD%D0%B0_%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE_%D1%81%D1%8A%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5.jpg/500px-%D0%A1%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B0_%D0%BD%D0%B0_%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE_%D1%81%D1%8A%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Miroslav.Nikolov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B0_%D0%BD%D0%B0_%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE_%D1%81%D1%8A%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5.jpg",
+      "fullWidth": 4000
+     },
+     "description": "building in Bulgaria"
     },
     {
      "id": "wikidata/Q585900",
@@ -311,7 +553,18 @@
      "wikidataId": "Q585900",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Unknown-soldier-monument.jpg/500px-Unknown-soldier-monument.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Svik at Bulgarian Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Unknown-soldier-monument.jpg",
+      "fullWidth": 2272
+     },
+     "description": "Monument in Sofia, Bulgaria"
     },
     {
      "id": "way/456857607",
@@ -322,7 +575,18 @@
      "wikidataId": "Q3137068",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Battenberg_Mausoleum_Sofia_7.jpg/500px-Battenberg_Mausoleum_Sofia_7.jpg",
+      "width": 500,
+      "height": 444,
+      "author": "Plamen Agov ( user:MrPanyGoff )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Battenberg_Mausoleum_Sofia_7.jpg",
+      "fullWidth": 2364
+     },
+     "description": "memorial tomb in Sofia, Bulgaria"
     },
     {
      "id": "way/251683273",
@@ -330,7 +594,18 @@
      "lat": 42.69225,
      "lon": 23.31042,
      "wikipediaCount": 8,
-     "wikidataId": "Q2042926"
+     "wikidataId": "Q2042926",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Sofia-Russian-monument-west.jpg/500px-Sofia-Russian-monument-west.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Vassia Atanassova - Spiritia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sofia-Russian-monument-west.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia-Russian-monument-west.jpg",
+      "fullWidth": 1360
+     },
+     "description": "monument in Sofia, Bulgaria"
     },
     {
      "id": "node/3514109025",
@@ -344,7 +619,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Amphitheatre_of_Serdica_-_General_view.jpg/500px-Amphitheatre_of_Serdica_-_General_view.jpg",
+      "width": 500,
+      "height": 347,
+      "author": "Epaunov72",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amphitheatre_of_Serdica_-_General_view.jpg",
+      "fullWidth": 1185
+     },
+     "description": "Roman amphitheatre in Sofia, Bulgaria"
     },
     {
      "id": "node/212950297",
@@ -352,7 +638,18 @@
      "lat": 42.69667,
      "lon": 23.33533,
      "wikipediaCount": 4,
-     "wikidataId": "Q1703313"
+     "wikidataId": "Q1703313",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/20140617_Sofia_04.jpg/500px-20140617_Sofia_04.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mark Ahsmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20140617_Sofia_04.jpg",
+      "fullWidth": 3264
+     },
+     "description": "monument in Sofia, Bulgaria"
     },
     {
      "id": "relation/3315833",
@@ -362,7 +659,18 @@
      "address": "Оборище 4",
      "website": "https://bg-patriarshia.bg/",
      "wikipediaCount": 3,
-     "wikidataId": "Q65105128"
+     "wikidataId": "Q65105128",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Holy_Synod_Palace_-_Sofia.jpg/500px-Holy_Synod_Palace_-_Sofia.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "Plamen Agov (Пламен Агов)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Holy_Synod_Palace_-_Sofia.jpg",
+      "fullWidth": 2374
+     },
+     "description": "building in Bulgaria"
     },
     {
      "id": "way/867938756",
@@ -370,7 +678,18 @@
      "lat": 42.68343,
      "lon": 23.3449,
      "wikipediaCount": 2,
-     "wikidataId": "Q899761"
+     "wikidataId": "Q899761",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20140615_Sofia_116.jpg/500px-20140615_Sofia_116.jpg",
+      "width": 500,
+      "height": 666,
+      "author": "Mark Ahsmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20140615_Sofia_116.jpg",
+      "fullWidth": 2623
+     },
+     "description": "monument in Sofia Capital Municipality, Bulgaria"
     },
     {
      "id": "way/287104635",
@@ -383,7 +702,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Bulgaria"
     },
     {
      "id": "way/347744279",
@@ -395,7 +715,17 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Main_Astronomical_Point_of_Bulgaria_2019_02.jpg/500px-Main_Astronomical_Point_of_Bulgaria_2019_02.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Spasimir Pilev (Спасимир Пилев)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Main_Astronomical_Point_of_Bulgaria_2019_02.jpg",
+      "fullWidth": 2448
+     }
     },
     {
      "id": "node/3527080400",
@@ -406,7 +736,17 @@
      "wikidataId": "Q131360828",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Sofia_Slaveykov_square_Monument_Petko_and_his_son_Pencho_Slaveykov_2012_PD_2.jpg/500px-Sofia_Slaveykov_square_Monument_Petko_and_his_son_Pencho_Slaveykov_2012_PD_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bin im Garten",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia_Slaveykov_square_Monument_Petko_and_his_son_Pencho_Slaveykov_2012_PD_2.jpg",
+      "fullWidth": 5616
+     }
     },
     {
      "id": "node/3070963771",
@@ -419,7 +759,18 @@
       "noCoordinate",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Sofia-Rimskata-stena-2.jpg/500px-Sofia-Rimskata-stena-2.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Vassia Atanassova - Spiritia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia-Rimskata-stena-2.jpg",
+      "fullWidth": 1728
+     },
+     "description": "street in Lozenets dist. Sofia (Bulgaria)"
     },
     {
      "id": "way/166213184",
@@ -453,14 +804,16 @@
      "name": "Военен паметник",
      "lat": 42.70057,
      "lon": 23.35248,
-     "wikidataId": "Q141109663"
+     "wikidataId": "Q141109663",
+     "description": "memorial in Sofia"
     },
     {
      "id": "node/5584615197",
      "name": "Георги С. Раковски",
      "lat": 42.6915,
      "lon": 23.34863,
-     "wikidataId": "Q141110126"
+     "wikidataId": "Q141110126",
+     "description": "memorial in Sofia"
     },
     {
      "id": "node/4246901183",
@@ -517,7 +870,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20140618_Sofia_07.jpg/500px-20140618_Sofia_07.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mark Ahsmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20140618_Sofia_07.jpg",
+      "fullWidth": 3968
+     },
+     "description": "archaeological museum in Sofia, Bulgaria"
     },
     {
      "id": "node/2289469994",
@@ -531,7 +895,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/National_Art_Gallery_of_Bulgaria_E6.jpg/500px-National_Art_Gallery_of_Bulgaria_E6.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Elena Chochkova",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Art_Gallery_of_Bulgaria_E6.jpg",
+      "fullWidth": 2048
+     },
+     "description": "art museum in Sofia, Bulgaria"
     },
     {
      "id": "way/112227049",
@@ -546,7 +921,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/National_Museum_of_Military_History%2C_Bulgaria%2C_Sofia_2012_PD_039.jpg/500px-National_Museum_of_Military_History%2C_Bulgaria%2C_Sofia_2012_PD_039.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Bin im Garten",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Military_History,_Bulgaria,_Sofia_2012_PD_039.jpg",
+      "fullWidth": 4163
+     },
+     "description": "museum in Sofia, Bulgaria"
     },
     {
      "id": "relation/2109132",
@@ -560,7 +946,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/National_Museum_of_Natural_History%2C_Bulgaria_2009_20090405_002.JPG/500px-National_Museum_of_Natural_History%2C_Bulgaria_2009_20090405_002.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Apostoloff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Natural_History,_Bulgaria_2009_20090405_002.JPG",
+      "fullWidth": 4272
+     },
+     "description": "national museum of natural history in Bulgaria"
     },
     {
      "id": "relation/2087604",
@@ -574,7 +971,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Gallery_for_Foreign_Art_TodorBozhinov_041009.jpg/500px-Gallery_for_Foreign_Art_TodorBozhinov_041009.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Todor Bozhinov / Тодор Божинов / Martyr",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gallery_for_Foreign_Art_TodorBozhinov_041009.jpg",
+      "fullWidth": 1564
+     },
+     "description": "Bulgarian gallery located on St. Alexander Nevsky Square in Sofia"
     },
     {
      "id": "way/157691260",
@@ -589,7 +997,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Earth_and_Man_Museum_Sofia_4.jpg/500px-Earth_and_Man_Museum_Sofia_4.jpg",
+      "width": 500,
+      "height": 311,
+      "author": "MrPanyGoff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Earth_and_Man_Museum_Sofia_4.jpg",
+      "fullWidth": 3380
+     },
+     "description": "Mineralogical museum in Sofia, Bulgaria"
     },
     {
      "id": "way/166216234",
@@ -604,14 +1023,25 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Politechnical-museum-interior.jpg/500px-Politechnical-museum-interior.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Edal Anton Lefterov",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Politechnical-museum-interior.jpg",
+      "fullWidth": 3000
+     },
+     "description": "museum in Bulgaria"
     },
     {
      "id": "way/166213221",
      "name": "Софийска градска художествена галерия",
      "lat": 42.69443,
      "lon": 23.32436,
-     "address": "Ген. Йосиф В. Гурко 1",
+     "address": "Ген. Гурко 1",
      "website": "https://sghg.bg/",
      "openingHours": "Tu-Sa 10:00-19:00; Su 11:00-18:00",
      "wikipediaCount": 3,
@@ -619,7 +1049,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/%D0%A1%D0%93%D0%A5%D0%93%2C_%D0%A1%D0%BE%D1%84%D0%B8%D1%8F.JPG/500px-%D0%A1%D0%93%D0%A5%D0%93%2C_%D0%A1%D0%BE%D1%84%D0%B8%D1%8F.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Marcian",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%93%D0%A5%D0%93,_%D0%A1%D0%BE%D1%84%D0%B8%D1%8F.JPG",
+      "fullWidth": 3072
+     },
+     "description": "Art Gallery in Sofia, Bulgaria"
     },
     {
      "id": "node/4514492471",
@@ -633,7 +1074,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Vazov_Sofia_Home.JPG/500px-Vazov_Sofia_Home.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Svik at Bulgarian Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vazov_Sofia_Home.JPG",
+      "fullWidth": 2272
+     },
+     "description": "museum in Sofia"
     },
     {
      "id": "way/166213259",
@@ -648,7 +1100,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Ivan_Lazarov%27_House_Museum.jpg/500px-Ivan_Lazarov%27_House_Museum.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Vassto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ivan_Lazarov%27_House_Museum.jpg",
+      "fullWidth": 960
+     },
+     "description": "museum in Bulgaria"
     },
     {
      "id": "way/288712091",
@@ -677,7 +1140,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Sofia_Public_Mineral_Baths.jpg/500px-Sofia_Public_Mineral_Baths.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Михал Орела",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia_Public_Mineral_Baths.jpg",
+      "fullWidth": 3648
+     },
+     "description": "museum in Bulgaria"
     },
     {
      "id": "node/2289469997",
@@ -691,7 +1165,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/National_Art_Gallery%2C_Bulgaria_%28by_Pudelek%29.JPG/500px-National_Art_Gallery%2C_Bulgaria_%28by_Pudelek%29.JPG",
+      "width": 500,
+      "height": 343,
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Art_Gallery,_Bulgaria_(by_Pudelek).JPG",
+      "fullWidth": 2713
+     },
+     "description": "museum and institute in Sofia, Bulgaria"
     },
     {
      "id": "way/287104635",
@@ -704,7 +1189,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Bulgaria"
     },
     {
      "id": "node/3021083248",
@@ -713,7 +1199,8 @@
      "lon": 23.32152,
      "openingHours": "Mo-Fr 09:00-17:00",
      "wikipediaCount": 1,
-     "wikidataId": "Q140323497"
+     "wikidataId": "Q140323497",
+     "description": "Museum in Sofia, Bulgaria"
     },
     {
      "id": "node/4548587221",
@@ -726,7 +1213,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Literary Museum in Sofia"
     },
     {
      "id": "node/6465639463",
@@ -798,7 +1286,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Bulgaria"
     },
     {
      "id": "way/302157496",
@@ -1351,7 +1840,6 @@
      "name": "Starbucks",
      "lat": 42.68987,
      "lon": 23.33134,
-     "address": "Ген. Йосиф В. Гурко 62",
      "website": "https://www.starbucks.bg/",
      "openingHours": "Mo-Fr 07:00-21:30; Sa,Su 08:00-21:30",
      "cuisine": "coffee shop",

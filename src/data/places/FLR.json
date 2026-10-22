@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "FLR",
- "fetchedAt": "2026-10-18T16:02:02.369Z",
+ "fetchedAt": "2026-10-22T05:12:18.210Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -56,20 +56,42 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Florence_Duomo_from_Michelangelo_hill.jpg/500px-Florence_Duomo_from_Michelangelo_hill.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg",
+      "fullWidth": 3308
+     },
+     "description": "13th-century cathedral in Florence, Italy"
     },
     {
      "id": "relation/5342094",
      "name": "Ponte Vecchio",
      "lat": 43.76802,
      "lon": 11.25315,
-     "wikipediaCount": 48,
+     "wikipediaCount": 49,
      "wikidataId": "Q208633",
      "kinds": [
       "bridge",
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Ponte_Vecchio_sobre_el_r%C3%ADo_Arno%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_02.jpg/500px-Ponte_Vecchio_sobre_el_r%C3%ADo_Arno%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_02.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_sobre_el_r%C3%ADo_Arno,_Florencia,_Italia,_2022-09-19,_DD_02.jpg",
+      "fullWidth": 8032
+     },
+     "description": "bridge in Florence, Italy"
     },
     {
      "id": "way/777563049",
@@ -84,7 +106,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/ITA_Firenze_Basilica_di_Santa_Croce_2.jpg/500px-ITA_Firenze_Basilica_di_Santa_Croce_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Grueslayer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ITA_Firenze_Basilica_di_Santa_Croce_2.jpg",
+      "fullWidth": 4320
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "relation/1461712",
@@ -99,7 +132,18 @@
       "office",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Piazza_della_signoria%2C_palazzo_vecchio%2C_veduta_01.jpg/500px-Piazza_della_signoria%2C_palazzo_vecchio%2C_veduta_01.jpg",
+      "width": 500,
+      "height": 539,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_della_signoria,_palazzo_vecchio,_veduta_01.jpg",
+      "fullWidth": 4040
+     },
+     "description": "Floransa'da saray"
     },
     {
      "id": "way/166821303",
@@ -112,7 +156,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Firenze_Battistero_di_San_Giovanni_Esterno_04.jpg/500px-Firenze_Battistero_di_San_Giovanni_Esterno_04.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze_Battistero_di_San_Giovanni_Esterno_04.jpg",
+      "fullWidth": 5048
+     },
+     "description": "baptistery in Florence, Italy"
     },
     {
      "id": "wikidata/Q270474",
@@ -123,7 +178,18 @@
      "wikidataId": "Q270474",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Firenze%2C_stadio_artemio_franchi%2C_campo_da_gioco%2C_10%2C0.jpg/500px-Firenze%2C_stadio_artemio_franchi%2C_campo_da_gioco%2C_10%2C0.jpg",
+      "width": 500,
+      "height": 270,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze,_stadio_artemio_franchi,_campo_da_gioco,_10,0.jpg",
+      "fullWidth": 5990
+     },
+     "description": "İtalya'da bir stad"
     },
     {
      "id": "way/449369047",
@@ -139,7 +205,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Santa_Maria_Novella_%28Florence%29.jpg/500px-Santa_Maria_Novella_%28Florence%29.jpg",
+      "width": 500,
+      "height": 342,
+      "author": "Commonists",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_Novella_(Florence).jpg",
+      "fullWidth": 9088
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "way/599900778",
@@ -155,7 +232,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Florencia%2C_Italia_-_panoramio_%282%29.jpg/500px-Florencia%2C_Italia_-_panoramio_%282%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nelson Pérez",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florencia,_Italia_-_panoramio_(2).jpg",
+      "fullWidth": 5184
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "relation/20351217",
@@ -166,7 +254,18 @@
      "wikidataId": "Q849846",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Piazza_della_Signoria.jpg/500px-Piazza_della_Signoria.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Samuli Lintula",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_della_Signoria.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Floransa'da meydan"
     },
     {
      "id": "wikidata/Q911047",
@@ -181,7 +280,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Palazzo_Medici_Riccardi.JPG/500px-Palazzo_Medici_Riccardi.JPG",
+      "width": 500,
+      "height": 478,
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Medici_Riccardi.JPG",
+      "fullWidth": 1153
+     },
+     "description": "Floransa'da saray"
     },
     {
      "id": "way/184781037",
@@ -192,7 +302,18 @@
      "wikidataId": "Q844337",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Sanminiato.jpg/500px-Sanminiato.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sanminiato.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sanminiato.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "way/43284457",
@@ -203,7 +324,18 @@
      "wikidataId": "Q839746",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Firenze%2C_loggia_dei_lanzi_%282020%29_01.jpg/500px-Firenze%2C_loggia_dei_lanzi_%282020%29_01.jpg",
+      "width": 500,
+      "height": 354,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze,_loggia_dei_lanzi_(2020)_01.jpg",
+      "fullWidth": 4920
+     },
+     "description": "Floransa'da bina"
     },
     {
      "id": "way/251650632",
@@ -216,7 +348,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Catedral%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_95.jpg/500px-Catedral%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_95.jpg",
+      "width": 500,
+      "height": 1477,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Catedral,_Florencia,_Italia,_2022-09-19,_DD_95.jpg",
+      "fullWidth": 2647
+     },
+     "description": "Floransa'da kule"
     },
     {
      "id": "way/442508011",
@@ -227,7 +370,18 @@
      "wikidataId": "Q860816",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/La_chiesa_di_Orsanmichele%2C_detta_anticamente_anche_chiesa_di_San_Michele_in_Orto.jpg/500px-La_chiesa_di_Orsanmichele%2C_detta_anticamente_anche_chiesa_di_San_Michele_in_Orto.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Guido Castelli66",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_chiesa_di_Orsanmichele,_detta_anticamente_anche_chiesa_di_San_Michele_in_Orto.jpg",
+      "fullWidth": 3024
+     },
+     "description": "Floransa'da kilise"
     },
     {
      "id": "wikidata/Q1519975",
@@ -240,7 +394,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Chiesa_Santo_Spirito%2C_Firenze.jpg/500px-Chiesa_Santo_Spirito%2C_Firenze.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Lucarelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_Santo_Spirito,_Firenze.jpg",
+      "fullWidth": 2484
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "wikidata/Q923702",
@@ -252,7 +417,18 @@
      "wikidataId": "Q923702",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Via_della_Vigna_Nuova_18%2C_palazzo_rucellai%2C_02%2C0.jpg/500px-Via_della_Vigna_Nuova_18%2C_palazzo_rucellai%2C_02%2C0.jpg",
+      "width": 500,
+      "height": 537,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Via_della_Vigna_Nuova_18,_palazzo_rucellai,_02,0.jpg",
+      "fullWidth": 4153
+     },
+     "description": "Floransa'da saray"
     },
     {
      "id": "wikidata/Q1042634",
@@ -265,7 +441,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Piazza_del_Carmine%2C_veduta_sulla_chiesa_del_carmine.jpg/500px-Piazza_del_Carmine%2C_veduta_sulla_chiesa_del_carmine.jpg",
+      "width": 500,
+      "height": 414,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_del_Carmine,_veduta_sulla_chiesa_del_carmine.jpg",
+      "fullWidth": 3594
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "wikidata/Q2287001",
@@ -278,7 +465,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Palazzo_budini_gattai%2C_vista_verso_piazza_santissima_annunziata%2C_basilica_04.jpg/500px-Palazzo_budini_gattai%2C_vista_verso_piazza_santissima_annunziata%2C_basilica_04.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_budini_gattai,_vista_verso_piazza_santissima_annunziata,_basilica_04.jpg",
+      "fullWidth": 6720
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "relation/7085758",
@@ -286,7 +484,18 @@
      "lat": 43.77601,
      "lon": 11.26139,
      "wikipediaCount": 23,
-     "wikidataId": "Q1257947"
+     "wikidataId": "Q1257947",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Spedale_innocenti%2C_veduta_01.JPG/500px-Spedale_innocenti%2C_veduta_01.JPG",
+      "width": 500,
+      "height": 205,
+      "author": "sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spedale_innocenti,_veduta_01.JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum and historic building in Florence, Italy"
     },
     {
      "id": "wikidata/Q1062114",
@@ -299,7 +508,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Basilica_di_Santa_Trinita%2C_Florence.jpg/500px-Basilica_di_Santa_Trinita%2C_Florence.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "LivornoDP",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_Santa_Trinita,_Florence.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Floransa'da bazilika"
     },
     {
      "id": "wikidata/Q2707802",
@@ -313,7 +533,18 @@
       "adminArea",
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Ponte_Vecchio_001.jpg/500px-Ponte_Vecchio_001.jpg",
+      "width": 500,
+      "height": 328,
+      "author": "Amada44",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_001.jpg",
+      "fullWidth": 2983
+     },
+     "description": "quarter in Borough 1 - Historical Center of Florence"
     },
     {
      "id": "wikidata/Q2778991",
@@ -328,7 +559,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Chiesa_di_Ognissanti%2C_Firenze%2C_facciata.jpg/500px-Chiesa_di_Ognissanti%2C_Firenze%2C_facciata.jpg",
+      "width": 500,
+      "height": 738,
+      "author": "Lucarelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_Ognissanti,_Firenze,_facciata.jpg",
+      "fullWidth": 3348
+     },
+     "description": "Floransa'da kilise"
     },
     {
      "id": "way/233265215",
@@ -339,7 +581,18 @@
      "wikidataId": "Q1348158",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Blick_auf_und_vom_Piazzale_Michelangelo_%28LM28908%29.jpg/500px-Blick_auf_und_vom_Piazzale_Michelangelo_%28LM28908%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Michael Wittwer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Blick_auf_und_vom_Piazzale_Michelangelo_(LM28908).jpg",
+      "fullWidth": 3035
+     },
+     "description": "Floransa'da meydan"
     },
     {
      "id": "wikidata/Q2280593",
@@ -350,7 +603,18 @@
      "wikidataId": "Q2280593",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Grabmaljohannes13.jpg/500px-Grabmaljohannes13.jpg",
+      "width": 500,
+      "height": 995,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grabmaljohannes13.jpg",
+      "fullWidth": 1217
+     },
+     "description": "tomb monument of Baldassare Cossa created by Donatello and Michelozzo in the Baptistery, Florence, Italy"
     },
     {
      "id": "wikidata/Q1548456",
@@ -362,7 +626,18 @@
      "wikidataId": "Q1548456",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Firenze_synagoga_2009.JPG/500px-Firenze_synagoga_2009.JPG",
+      "width": 500,
+      "height": 628,
+      "author": "דני",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze_synagoga_2009.JPG",
+      "fullWidth": 1142
+     },
+     "description": "İtalya'nın Floransa kentinde bulunan bir sinagog"
     },
     {
      "id": "wikidata/Q2480856",
@@ -373,7 +648,18 @@
      "wikidataId": "Q2480856",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Firenze%2C_battistero_di_san_giovanni%2C_porta_del_paradiso_02.jpg/500px-Firenze%2C_battistero_di_san_giovanni%2C_porta_del_paradiso_02.jpg",
+      "width": 500,
+      "height": 768,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze,_battistero_di_san_giovanni,_porta_del_paradiso_02.jpg",
+      "fullWidth": 3330
+     },
+     "description": "church portal by Lorenzo Ghiberti"
     },
     {
      "id": "wikidata/Q645374",
@@ -382,7 +668,18 @@
      "lat": 43.76956,
      "lon": 11.25606,
      "wikipediaCount": 14,
-     "wikidataId": "Q645374"
+     "wikidataId": "Q645374",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%22Urspr%C3%BCnglich_Symbol_f%C3%BCr_die_Macht_der_Medici-Familie%22_07.jpg/500px-%22Urspr%C3%BCnglich_Symbol_f%C3%BCr_die_Macht_der_Medici-Familie%22_07.jpg",
+      "width": 500,
+      "height": 328,
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%22Urspr%C3%BCnglich_Symbol_f%C3%BCr_die_Macht_der_Medici-Familie%22_07.jpg",
+      "fullWidth": 5906
+     },
+     "description": "fountain in Florence"
     },
     {
      "id": "wikidata/Q2593098",
@@ -394,7 +691,18 @@
      "wikidataId": "Q2593098",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Domenico_Ghirlandaio_und_Werkstatt%2C_Tornabuoni-Kapelle%2C_1486%E2%80%931490%2C_Freskenzyklus%2C_Santa_Maria_Novella%2C_Florenz.jpg/500px-Domenico_Ghirlandaio_und_Werkstatt%2C_Tornabuoni-Kapelle%2C_1486%E2%80%931490%2C_Freskenzyklus%2C_Santa_Maria_Novella%2C_Florenz.jpg",
+      "width": 500,
+      "height": 658,
+      "author": "Karatecoop",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Domenico_Ghirlandaio_und_Werkstatt,_Tornabuoni-Kapelle,_1486%E2%80%931490,_Freskenzyklus,_Santa_Maria_Novella,_Florenz.jpg",
+      "fullWidth": 3168
+     },
+     "description": "Floransa'da şapel"
     },
     {
      "id": "wikidata/Q2252810",
@@ -406,7 +714,18 @@
      "wikidataId": "Q2252810",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Florence_Baptistery_and_Florence_Cathedral_360_panorama_small.jpg/500px-Florence_Baptistery_and_Florence_Cathedral_360_panorama_small.jpg",
+      "width": 500,
+      "height": 168,
+      "author": "User:MatthiasKabel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence_Baptistery_and_Florence_Cathedral_360_panorama_small.jpg",
+      "fullWidth": 8904
+     },
+     "description": "Floransa'da meydan"
     },
     {
      "id": "wikidata/Q1283790",
@@ -418,7 +737,18 @@
      "wikidataId": "Q1283790",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/%D0%A4%D0%BB%D0%BE%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F._-_panoramio_%2817%29.jpg/500px-%D0%A4%D0%BB%D0%BE%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F._-_panoramio_%2817%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Дмитрий Мозжухин",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%BB%D0%BE%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F._-_panoramio_(17).jpg",
+      "fullWidth": 1486
+     },
+     "description": "Floransa'da meydan"
     },
     {
      "id": "way/27590454",
@@ -426,7 +756,18 @@
      "lat": 43.77002,
      "lon": 11.25424,
      "wikipediaCount": 12,
-     "wikidataId": "Q917483"
+     "wikidataId": "Q917483",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Firenze-mercato.jpg/500px-Firenze-mercato.jpg",
+      "width": 500,
+      "height": 366,
+      "author": "Dan Kamminga",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze-mercato.jpg",
+      "fullWidth": 1024
+     },
+     "description": "building in Florence, Italy"
     },
     {
      "id": "wikidata/Q526637",
@@ -439,7 +780,18 @@
      "kinds": [
       "notPlace",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/Santa_Trinita_6_Sassetti.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Baldiri",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Trinita_6_Sassetti.jpg",
+      "fullWidth": 399
+     },
+     "description": "Floransa'da şapel"
     },
     {
      "id": "wikidata/Q281532",
@@ -451,7 +803,18 @@
      "wikidataId": "Q281532",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Palazzo_Spiniferoni_Florenz.jpg/500px-Palazzo_Spiniferoni_Florenz.jpg",
+      "width": 500,
+      "height": 512,
+      "author": "Ricardalovesmonuments",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Spiniferoni_Florenz.jpg",
+      "fullWidth": 7584
+     },
+     "description": "Floransa'da saray"
     },
     {
      "id": "wikidata/Q3889546",
@@ -463,7 +826,18 @@
      "wikidataId": "Q3889546",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Palazzo_Antinori.JPG/500px-Palazzo_Antinori.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Antinori.JPG",
+      "fullWidth": 1200
+     },
+     "description": "Floransa'da saray"
     },
     {
      "id": "node/4701406592",
@@ -474,7 +848,18 @@
      "wikidataId": "Q737232",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Altar_wall%2C_Chapel_of_the_Magi%2C_Florence..jpg/500px-Altar_wall%2C_Chapel_of_the_Magi%2C_Florence..jpg",
+      "width": 500,
+      "height": 669,
+      "author": "http://www.museobenozzogozzoli.it/",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Altar_wall,_Chapel_of_the_Magi,_Florence..jpg",
+      "fullWidth": 800
+     },
+     "description": "chapel in the Palazzo Medici Riccardi, Florence"
     },
     {
      "id": "wikidata/Q660876",
@@ -485,7 +870,18 @@
      "wikidataId": "Q660876",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Fotografi_di_San_Lorenzo_-_Hallwylska_museet_-_107390.tif/lossy-page1-500px-Fotografi_di_San_Lorenzo_-_Hallwylska_museet_-_107390.tif.jpg",
+      "width": 500,
+      "height": 405,
+      "author": "Giacomo Brogi",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Fotografi_di_San_Lorenzo_-_Hallwylska_museet_-_107390.tif",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fotografi_di_San_Lorenzo_-_Hallwylska_museet_-_107390.tif",
+      "fullWidth": 4575
+     },
+     "description": "building by Michelangelo in the church of San Lorenzo, Florence"
     },
     {
      "id": "wikidata/Q1261970",
@@ -498,7 +894,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Agriculture_Secretary_Vilsack_at_the_G-20_Florence%2C_Italy_2021_%2820210916-OSEC-UNC-0001%29.jpg/500px-Agriculture_Secretary_Vilsack_at_the_G-20_Florence%2C_Italy_2021_%2820210916-OSEC-UNC-0001%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "USDAgov",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Agriculture_Secretary_Vilsack_at_the_G-20_Florence,_Italy_2021_(20210916-OSEC-UNC-0001).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Agriculture_Secretary_Vilsack_at_the_G-20_Florence,_Italy_2021_(20210916-OSEC-UNC-0001).jpg",
+      "fullWidth": 1200
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "way/24879633",
@@ -513,7 +920,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Forte_belvedere%2C_edificio_principale_02.JPG/500px-Forte_belvedere%2C_edificio_principale_02.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Forte_belvedere,_edificio_principale_02.JPG",
+      "fullWidth": 3648
+     },
+     "description": "fortification in Florence, Italy"
     },
     {
      "id": "way/72905104",
@@ -521,7 +939,18 @@
      "lat": 43.78415,
      "lon": 11.26204,
      "wikipediaCount": 8,
-     "wikidataId": "Q3621797"
+     "wikidataId": "Q3621797",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Firenze%2C_arco_lorenese%2C_lato_nord_02.jpg/500px-Firenze%2C_arco_lorenese%2C_lato_nord_02.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze,_arco_lorenese,_lato_nord_02.jpg",
+      "fullWidth": 4932
+     },
+     "description": "monument welcoming the Habsburg-Lorraine dynasty to Italy"
     },
     {
      "id": "way/480015428",
@@ -531,7 +960,18 @@
      "website": "https://www.mercatocentrale.it/firenze/",
      "openingHours": "Mo-Su 09:00-24:00",
      "wikipediaCount": 7,
-     "wikidataId": "Q3854843"
+     "wikidataId": "Q3854843",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Mercato_centrale_di_san_lorenzo_02.jpg/500px-Mercato_centrale_di_san_lorenzo_02.jpg",
+      "width": 500,
+      "height": 260,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mercato_centrale_di_san_lorenzo_02.jpg",
+      "fullWidth": 4397
+     },
+     "description": "building in Florence, Italy"
     },
     {
      "id": "way/397848200",
@@ -545,7 +985,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Cupola_di_santa_maria_del_fiore_dal_campanile_di_giotto%2C_01.JPG/500px-Cupola_di_santa_maria_del_fiore_dal_campanile_di_giotto%2C_01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cupola_di_santa_maria_del_fiore_dal_campanile_di_giotto,_01.JPG",
+      "fullWidth": 1200
+     },
+     "description": "architectural work by Brunelleschi, Cathedral of Florence"
     },
     {
      "id": "node/946019247",
@@ -558,7 +1009,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Caff%C3%A9_giubbe_rosse.JPG/500px-Caff%C3%A9_giubbe_rosse.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caff%C3%A9_giubbe_rosse.JPG",
+      "fullWidth": 1600
+     },
+     "description": "building in Florence, Italy"
     },
     {
      "id": "way/167972690",
@@ -571,20 +1033,18 @@
       "adminArea",
       "attraction",
       "notPlace"
-     ]
-    },
-    {
-     "id": "way/272379110",
-     "name": "Ex anfiteatro romano di Firenze",
-     "lat": 43.76909,
-     "lon": 11.26,
-     "wikipediaCount": 4,
-     "wikidataId": "Q519184",
-     "kinds": [
-      "performingArts",
-      "ruins",
-      "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Porta_Romana_Florenz-6.jpg/500px-Porta_Romana_Florenz-6.jpg",
+      "width": 500,
+      "height": 304,
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porta_Romana_Florenz-6.jpg",
+      "fullWidth": 5360
+     },
+     "description": "city gate in Florence (Italy)"
     }
    ]
   },
@@ -606,7 +1066,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Florence%2C_Italy_-_panoramio_%28125%29.jpg/500px-Florence%2C_Italy_-_panoramio_%28125%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Arek N.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence,_Italy_-_panoramio_(125).jpg",
+      "fullWidth": 3456
+     },
+     "description": "palace and art museum in Florence, Italy"
     },
     {
      "id": "node/4162393290",
@@ -623,7 +1094,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Palazzo_Pitti_nel_tardo_pomeriggio.jpg/500px-Palazzo_Pitti_nel_tardo_pomeriggio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Almaak",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg",
+      "fullWidth": 3479
+     },
+     "description": "İtalya'da saray"
     },
     {
      "id": "way/43837065",
@@ -638,7 +1120,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Palazzo_del_bargello_visto_da_piazza_san_firenze.JPG/500px-Palazzo_del_bargello_visto_da_piazza_san_firenze.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_del_bargello_visto_da_piazza_san_firenze.JPG",
+      "fullWidth": 2304
+     },
+     "description": "art museum in Florence, Italy"
     },
     {
      "id": "wikidata/Q888825",
@@ -652,7 +1145,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Jard%C3%ADn_de_B%C3%B3boli%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_12.jpg/500px-Jard%C3%ADn_de_B%C3%B3boli%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_12.jpg",
+      "width": 500,
+      "height": 284,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_de_B%C3%B3boli,_Florencia,_Italia,_2022-09-19,_DD_12.jpg",
+      "fullWidth": 8580
+     },
+     "description": "park in Florence, Italy"
     },
     {
      "id": "node/560308250",
@@ -668,7 +1172,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Florence_13_09_07_817000.jpeg/500px-Florence_13_09_07_817000.jpeg",
+      "width": 500,
+      "height": 375,
+      "author": "Robot8A",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence_13_09_07_817000.jpeg",
+      "fullWidth": 4032
+     },
+     "description": "art museum in Florence, Italy"
     },
     {
      "id": "node/3063152182",
@@ -680,20 +1195,42 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Palais_Strozzi_-_Florence_%28IT52%29_-_2022-08-31_-_1.jpg/500px-Palais_Strozzi_-_Florence_%28IT52%29_-_2022-08-31_-_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Strozzi_-_Florence_(IT52)_-_2022-08-31_-_1.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Floransa'da saray"
     },
     {
-     "id": "way/1344547176",
+     "id": "relation/21744598",
      "name": "Corridoio Vasariano",
-     "lat": 43.76746,
-     "lon": 11.25362,
+     "lat": 43.76798,
+     "lon": 11.25321,
      "wikipediaCount": 26,
      "wikidataId": "Q913058",
      "kinds": [
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Corridoio_Vasariano%2C_curva.JPG/500px-Corridoio_Vasariano%2C_curva.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Corridoio_Vasariano,_curva.JPG",
+      "fullWidth": 2592
+     },
+     "description": "elevated enclosed passageway in Florence, Italy"
     },
     {
      "id": "way/307539790",
@@ -704,7 +1241,18 @@
      "wikidataId": "Q600355",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Pazzi_Chapel_Santa_Croce_Apr_2008_P.JPG/500px-Pazzi_Chapel_Santa_Croce_Apr_2008_P.JPG",
+      "width": 500,
+      "height": 491,
+      "author": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pazzi_Chapel_Santa_Croce_Apr_2008_P.JPG",
+      "fullWidth": 1758
+     },
+     "description": "Floransa'da şapel"
     },
     {
      "id": "node/1701709658",
@@ -713,7 +1261,18 @@
      "lon": 11.26066,
      "openingHours": "Th-Tu 08:30-14:00",
      "wikipediaCount": 23,
-     "wikidataId": "Q1257947"
+     "wikidataId": "Q1257947",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Spedale_innocenti%2C_veduta_01.JPG/500px-Spedale_innocenti%2C_veduta_01.JPG",
+      "width": 500,
+      "height": 205,
+      "author": "sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spedale_innocenti,_veduta_01.JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum and historic building in Florence, Italy"
     },
     {
      "id": "node/1701709642",
@@ -729,7 +1288,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Museo_archeologico_nazionale%2C_ingresso_01.JPG/500px-Museo_archeologico_nazionale%2C_ingresso_01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_archeologico_nazionale,_ingresso_01.JPG",
+      "fullWidth": 2736
+     },
+     "description": "İtalya'da ulusal arkeoloji müzesi"
     },
     {
      "id": "node/5705862422",
@@ -745,7 +1315,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Medicibib.jpg/500px-Medicibib.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "No machine-readable author provided. Richardfabi~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Medicibib.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Medicibib.jpg",
+      "fullWidth": 2592
+     },
+     "description": "structures at the Basilica of San Lorenzo, Florence, Italy"
     },
     {
      "id": "node/2361645427",
@@ -762,7 +1343,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Firenze%2C_chiesa_e_convento_di_san_marco%2C_facciata_01.jpg/500px-Firenze%2C_chiesa_e_convento_di_san_marco%2C_facciata_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sailko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Firenze,_chiesa_e_convento_di_san_marco,_facciata_01.jpg",
+      "fullWidth": 4464
+     },
+     "description": "Floransa'da manastır"
     },
     {
      "id": "node/3518187675",
@@ -779,7 +1371,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Palazzo_Castellani_esterno.jpg/500px-Palazzo_Castellani_esterno.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ebonaiuti",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Castellani_esterno.jpg",
+      "fullWidth": 1168
+     },
+     "description": "Italian museum for the history of science"
     },
     {
      "id": "way/456578419",
@@ -793,7 +1396,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Museum_Facade_Opera_del_Duomo_2015.jpg/500px-Museum_Facade_Opera_del_Duomo_2015.jpg",
+      "width": 500,
+      "height": 629,
+      "author": "Giovanni Serafini",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_Facade_Opera_del_Duomo_2015.jpg",
+      "fullWidth": 4173
+     },
+     "description": "art museum in Florence, Italy"
     },
     {
      "id": "way/204144329",
@@ -807,7 +1421,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Floransa'da konak"
     },
     {
      "id": "node/4653668717",
@@ -821,7 +1436,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Brancacci_color.jpg/500px-Brancacci_color.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "User:Oursana",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Brancacci_color.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brancacci_color.jpg",
+      "fullWidth": 2352
+     },
+     "description": "Floransa'da şapel"
     },
     {
      "id": "way/307153268",
@@ -836,7 +1462,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Palazzo_davanzati_12.JPG/500px-Palazzo_davanzati_12.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_davanzati_12.JPG",
+      "fullWidth": 1536
+     },
+     "description": "Floransa'da saray"
     },
     {
      "id": "node/1135808773",
@@ -852,7 +1489,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Palazzo_Pitti_nel_tardo_pomeriggio.jpg/500px-Palazzo_Pitti_nel_tardo_pomeriggio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Almaak",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg",
+      "fullWidth": 3479
+     },
+     "description": "gallery in Palazzo Pitti, Florence"
     },
     {
      "id": "node/5041557941",
@@ -867,7 +1515,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Scavi_di_santa_reparata_sotto_il_duomo_di_firenze%2C_06_absidi_e_altare.JPG/500px-Scavi_di_santa_reparata_sotto_il_duomo_di_firenze%2C_06_absidi_e_altare.JPG",
+      "width": 500,
+      "height": 295,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Scavi_di_santa_reparata_sotto_il_duomo_di_firenze,_06_absidi_e_altare.JPG",
+      "fullWidth": 3456
+     },
+     "description": "Floransa'da kilise"
     },
     {
      "id": "way/307106623",
@@ -881,7 +1540,43 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Palazzo_corsi-horne_02.JPG/500px-Palazzo_corsi-horne_02.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_corsi-horne_02.JPG",
+      "fullWidth": 1200
+     },
+     "description": "museum in Florence"
+    },
+    {
+     "id": "node/7319882300",
+     "name": "Galleria dell'Accademia - Collezione degli Strumenti Musicali del Conservatorio Luigi Cherubini",
+     "lat": 43.77652,
+     "lon": 11.25851,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1760178",
+     "kinds": [
+      "business",
+      "organization",
+      "school",
+      "university"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Palazzo_dell%27arte_dei_beccai_01.JPG/500px-Palazzo_dell%27arte_dei_beccai_01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_dell%27arte_dei_beccai_01.JPG",
+      "fullWidth": 1200
+     },
+     "description": "academy of artists in Florence, Italy"
     },
     {
      "id": "way/1393272390",
@@ -895,7 +1590,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Orto_botanico_Firenze_autunno_2022.jpg/500px-Orto_botanico_Firenze_autunno_2022.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Orto_botanico_Firenze_autunno_2022.jpg",
+      "fullWidth": 3782
+     },
+     "description": "botanical garden in Italy"
     },
     {
      "id": "node/5883143685",
@@ -910,7 +1616,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Farmacia_di_smn%2C_museo_01.JPG/500px-Farmacia_di_smn%2C_museo_01.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Farmacia_di_smn,_museo_01.JPG",
+      "fullWidth": 2592
+     },
+     "description": "historic pharmacy of Florence"
     },
     {
      "id": "node/12000993432",
@@ -926,7 +1643,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Museo_della_specola%2C_felidi.JPG/500px-Museo_della_specola%2C_felidi.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_della_specola,_felidi.JPG",
+      "fullWidth": 2048
+     },
+     "description": "zoological museum in Florence"
     },
     {
      "id": "node/4274486896",
@@ -942,7 +1670,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Museo_Salvatore_Ferragamo.jpg/500px-Museo_Salvatore_Ferragamo.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "User:Mattes",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museo_Salvatore_Ferragamo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Salvatore_Ferragamo.jpg",
+      "fullWidth": 2304
+     },
+     "description": "Fashion Museum in Italy"
     },
     {
      "id": "node/4277839535",
@@ -958,7 +1697,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Andrea_del_castagno%2C_sant%27apollonia_00.jpg/500px-Andrea_del_castagno%2C_sant%27apollonia_00.jpg",
+      "width": 500,
+      "height": 454,
+      "author": "Andrea del Castagno",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Andrea_del_castagno,_sant%27apollonia_00.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Andrea_del_castagno,_sant%27apollonia_00.jpg",
+      "fullWidth": 981
+     },
+     "description": "Floransa'da manastır"
     },
     {
      "id": "way/306252410",
@@ -975,7 +1725,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Chiostro_dello_Scalzo.JPG/500px-Chiostro_dello_Scalzo.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "No machine-readable author provided. Sailko assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiostro_dello_Scalzo.JPG",
+      "fullWidth": 1200
+     },
+     "description": "cloister in Florence, Italy, known for its cycle of frescos"
     },
     {
      "id": "node/2934171474",
@@ -989,7 +1750,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Casa_di_Dante_%28firenze%29.JPG/500px-Casa_di_Dante_%28firenze%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Draupnir3",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_di_Dante_(firenze).JPG",
+      "fullWidth": 1260
+     },
+     "description": "museum in Florence, Italy"
     },
     {
      "id": "way/253942619",
@@ -1000,7 +1772,18 @@
      "wikidataId": "Q3674332",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Santo_stefano_al_ponte_vecchio%2C_facciata_01.JPG/500px-Santo_stefano_al_ponte_vecchio%2C_facciata_01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santo_stefano_al_ponte_vecchio,_facciata_01.JPG",
+      "fullWidth": 1536
+     },
+     "description": "Floransa'da kilise"
     },
     {
      "id": "node/3213287243",
@@ -1013,7 +1796,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Jard%C3%ADn_de_B%C3%B3boli%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_15.jpg/500px-Jard%C3%ADn_de_B%C3%B3boli%2C_Florencia%2C_Italia%2C_2022-09-19%2C_DD_15.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_de_B%C3%B3boli,_Florencia,_Italia,_2022-09-19,_DD_15.jpg",
+      "fullWidth": 8578
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/6403553785",
@@ -1028,7 +1822,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Florence-Synagogue-Firenze-jessewaugh.com-22.jpg/500px-Florence-Synagogue-Firenze-jessewaugh.com-22.jpg",
+      "width": 500,
+      "height": 407,
+      "author": "Virum Mundi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence-Synagogue-Firenze-jessewaugh.com-22.jpg",
+      "fullWidth": 847
+     },
+     "description": "History museum in Italy"
     },
     {
      "id": "way/120136060",
@@ -1041,7 +1846,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Edificio_della_galleria_rinaldo_carnielo%2C_dopo_il_restauro%2C_02.jpg/500px-Edificio_della_galleria_rinaldo_carnielo%2C_dopo_il_restauro%2C_02.jpg",
+      "width": 500,
+      "height": 287,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificio_della_galleria_rinaldo_carnielo,_dopo_il_restauro,_02.jpg",
+      "fullWidth": 4256
+     },
+     "description": "Art Museum"
     },
     {
      "id": "node/4652436365",
@@ -1057,7 +1873,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Palazzo_Pitti_Nebenfl%C3%BCgel.jpg/500px-Palazzo_Pitti_Nebenfl%C3%BCgel.jpg",
+      "width": 500,
+      "height": 162,
+      "author": "Ricardalovesmonuments",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_Nebenfl%C3%BCgel.jpg",
+      "fullWidth": 12000
+     },
+     "description": "fashion museum at the Pitti Palace, Florence, Italy"
     },
     {
      "id": "node/10016831037",
@@ -1071,7 +1898,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/2022-09-06_Museo_Annigoni_by_Benoit_Soubeyran_02.jpg/500px-2022-09-06_Museo_Annigoni_by_Benoit_Soubeyran_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Benoit Soubeyran",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2022-09-06_Museo_Annigoni_by_Benoit_Soubeyran_02.jpg",
+      "fullWidth": 4128
+     },
+     "description": "Floransa'da müze"
     },
     {
      "id": "node/3519960102",
@@ -1085,7 +1923,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Santo_stefano_al_ponte_vecchio%2C_entrata_canonica_%28museo%29.JPG/500px-Santo_stefano_al_ponte_vecchio%2C_entrata_canonica_%28museo%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santo_stefano_al_ponte_vecchio,_entrata_canonica_(museo).JPG",
+      "fullWidth": 1536
+     },
+     "description": "art museum in Florence, Italy"
     },
     {
      "id": "node/5313778547",
@@ -1099,7 +1948,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Florence_servitiu.jpg/500px-Florence_servitiu.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Eugenio Hansen, OFS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence_servitiu.jpg",
+      "fullWidth": 5152
+     },
+     "description": "art museum in Florence"
     },
     {
      "id": "node/949722969",
@@ -1114,7 +1974,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Museum_Bardini_Florenz.jpg/500px-Museum_Bardini_Florenz.jpg",
+      "width": 500,
+      "height": 479,
+      "author": "Ricardalovesmonuments",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_Bardini_Florenz.jpg",
+      "fullWidth": 8464
+     },
+     "description": "museum in Florence"
     },
     {
      "id": "node/1536508344",
@@ -1130,7 +2001,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Gdsu%2C_nuova_sala_di_consultazione%2C_04.jpg/500px-Gdsu%2C_nuova_sala_di_consultazione%2C_04.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gdsu,_nuova_sala_di_consultazione,_04.jpg",
+      "fullWidth": 2304
+     },
+     "description": "prints and drawings department of the Uffizi, Florence"
     },
     {
      "id": "node/7319882309",
@@ -1138,10 +2020,24 @@
      "lat": 43.76801,
      "lon": 11.26073,
      "wikipediaCount": 3,
-     "wikidataId": "Q55673999",
+     "wikidataId": "Q3661178",
      "kinds": [
-      "noCoordinate"
-     ]
+      "heritage",
+      "museum",
+      "organization",
+      "palace"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Borgo_santa_croce_8%2C_Casa_Vasari%2C_01.jpg/500px-Borgo_santa_croce_8%2C_Casa_Vasari%2C_01.jpg",
+      "width": 500,
+      "height": 1059,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Borgo_santa_croce_8,_Casa_Vasari,_01.jpg",
+      "fullWidth": 2448
+     },
+     "description": "Floransa'da konak"
     },
     {
      "id": "node/3112668431",
@@ -1154,20 +2050,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
-    },
-    {
-     "id": "node/3120274425",
-     "name": "Museo nazionale di antropologia ed etnologia",
-     "lat": 43.77172,
-     "lon": 11.25807,
-     "wikipediaCount": 3,
-     "wikidataId": "Q3330682",
-     "kinds": [
-      "heritage",
-      "museum",
-      "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Piazza_San_Felice_8_angolo_via_Mazzetta_e_via_Maggio%2C_palazzo_guidi%2C_doppio_corpo_01.jpg/500px-Piazza_San_Felice_8_angolo_via_Mazzetta_e_via_Maggio%2C_palazzo_guidi%2C_doppio_corpo_01.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_San_Felice_8_angolo_via_Mazzetta_e_via_Maggio,_palazzo_guidi,_doppio_corpo_01.jpg",
+      "fullWidth": 5912
+     },
+     "description": "Floransa'da konak"
     }
    ]
   },
@@ -1351,7 +2245,8 @@
      "openingHours": "Tu-Sa 19:30-22:00",
      "cuisine": "fine dining",
      "wikidataId": "Q1405579",
-     "detailed": true
+     "detailed": true,
+     "description": "Floransa'da restoran"
     },
     {
      "id": "node/5435977822",
@@ -1426,7 +2321,7 @@
      "lon": 11.26129,
      "address": "Via San Miniato 2/1",
      "website": "https://www.pizzacchiere.com/",
-     "openingHours": "Tu-Sa 12:15-14:30, 18:00-22:30",
+     "openingHours": "Mo-Su 12:00-22:30",
      "cuisine": "italian pizza",
      "detailed": true
     },
@@ -1690,7 +2585,17 @@
      "website": "https://www.caffegilli.com/",
      "cuisine": "coffee shop, dessert",
      "wikidataId": "Q2932914",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Gilli_%28Florence%29_Piazza_della_Repubblica.jpg/500px-Gilli_%28Florence%29_Piazza_della_Repubblica.jpg",
+      "width": 500,
+      "height": 368,
+      "author": "Freepenguin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gilli_(Florence)_Piazza_della_Repubblica.jpg",
+      "fullWidth": 2601
+     }
     },
     {
      "id": "node/11556296696",

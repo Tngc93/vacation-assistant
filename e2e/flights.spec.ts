@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "./fixtures";
 
 // The e2e server runs with VA_FLIGHTS_FIXTURES=1: labelled sample prices, no token, no network.
 // Trips start on the 14th of a month at least ten days ahead, so the samples' nearby dates are in the future.
@@ -13,10 +13,23 @@ function tripDates(): { depart: string; ret: string } {
 
 const { depart, ret } = tripDates();
 
+/** The full list opens under the cards from "Tüm uçuşları gör" (closed by default); returns the opened list. */
+async function openAllFlights(page: Page) {
+  await page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" }).click();
+  return page.locator("#tum-ucuslar");
+}
+
 test("Istanbul flights are grouped by IST and SAW, with a non-stop filter in the URL", async ({ page }) => {
   await page.goto(`/plan?from=IST&to=BCN&depart=${depart}&return=${ret}&pax=2`);
-  const flights = page.locator("#ucuslar");
-  await expect(flights.getByText(/ÖRNEK VERİ/)).toBeVisible();
+  // The summary: each airport's cheapest ticket, the overall cheapest marked; the list is closed.
+  const summary = page.locator("#ucuslar");
+  await expect(summary.getByText(/ÖRNEK VERİ/).first()).toBeVisible();
+  await expect(summary.getByText("EN UCUZ · 1 YETİŞKİN")).toHaveCount(1);
+  await expect(summary.getByRole("link", { name: /Güncel fiyatı gör/ })).toHaveCount(2);
+  await expect(page.getByRole("heading", { name: "İstanbul Havalimanı" })).toBeHidden();
+  await expect(page.getByRole("button", { name: "Aktarmasız" })).toBeHidden();
+
+  const flights = await openAllFlights(page);
   await expect(flights.getByRole("heading", { name: "İstanbul Havalimanı" })).toBeVisible();
   await expect(flights.getByRole("heading", { name: "Sabiha Gökçen" })).toBeVisible();
   await expect(flights.getByText("EN UCUZ", { exact: true })).toHaveCount(1);
@@ -30,7 +43,7 @@ test("Istanbul flights are grouped by IST and SAW, with a non-stop filter in the
 
 test("Ankara flights fall back to nearby dates, each labelled as a different date", async ({ page }) => {
   await page.goto(`/plan?from=ESB&to=AMS&depart=${depart}&return=${ret}&pax=1`);
-  const flights = page.locator("#ucuslar");
+  const flights = await openAllFlights(page);
   await expect(flights.getByText(/Seçtiğin tarihler için önbellekte fiyat yok/)).toBeVisible();
   const cards = flights.getByRole("article");
   await expect(cards).toHaveCount(3);
@@ -40,7 +53,7 @@ test("Ankara flights fall back to nearby dates, each labelled as a different dat
 
 test("the loading placeholder is gone once the cards arrive, and other returns open", async ({ page }) => {
   await page.goto(`/plan?from=IST&to=BCN&depart=${depart}&return=${ret}&pax=2`);
-  const flights = page.locator("#ucuslar");
+  const flights = await openAllFlights(page);
   await expect(flights.getByRole("article").first()).toBeVisible();
   // The Suspense fallback ("Uçuşlar yükleniyor") is replaced, not left on screen or in the accessibility tree.
   await expect(flights.getByRole("status")).toHaveCount(0);

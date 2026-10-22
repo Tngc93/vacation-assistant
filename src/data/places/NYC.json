@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "NYC",
- "fetchedAt": "2026-10-18T17:08:35.149Z",
+ "fetchedAt": "2026-10-22T06:45:47.091Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach%2C_New_York.jpg/500px-Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach%2C_New_York.jpg",
+      "width": 500,
+      "height": 167,
+      "author": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach,_New_York.jpg",
+      "fullWidth": 26508
+     },
+     "description": "New York'ta köprü"
     },
     {
      "id": "wikidata/Q11690",
@@ -65,7 +76,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Photos_NewYork1_032.jpg/500px-Photos_NewYork1_032.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Photos_NewYork1_032.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Ünlü cadde"
     },
     {
      "id": "way/713565776",
@@ -79,7 +101,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/One_World_Trade_Center%2C_New_York_%2833224081040%29.jpg/500px-One_World_Trade_Center%2C_New_York_%2833224081040%29.jpg",
+      "width": 500,
+      "height": 861,
+      "author": "Pedro Szekely from Los Angeles, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:One_World_Trade_Center,_New_York_(33224081040).jpg",
+      "fullWidth": 1600
+     },
+     "description": "Manhattan, New York'ta yeniden inşa edilen Dünya Ticaret Merkezi'nin ana binası"
     },
     {
      "id": "wikidata/Q11274",
@@ -92,7 +125,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Chrysler_Building_by_David_Shankbone_Retouched.jpg/500px-Chrysler_Building_by_David_Shankbone_Retouched.jpg",
+      "width": 500,
+      "height": 1474,
+      "author": "w:User:Overand derivative work: Overand ( talk )",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_by_David_Shankbone_Retouched.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_by_David_Shankbone_Retouched.jpg",
+      "fullWidth": 1036
+     },
+     "description": "building in New York City"
     },
     {
      "id": "wikidata/Q11259",
@@ -103,7 +147,18 @@
      "wikidataId": "Q11259",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/500px-New_york_times_square-terabass.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Terabass",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_york_times_square-terabass.jpg",
+      "fullWidth": 3904
+     },
+     "description": "neighborhood and square in Manhattan, New York City, United States"
     },
     {
      "id": "wikidata/Q11260",
@@ -115,7 +170,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Broadway_38th_Street_at_dus.jpg/500px-Broadway_38th_Street_at_dus.jpg",
+      "width": 500,
+      "height": 849,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Broadway_38th_Street_at_dus.jpg",
+      "fullWidth": 1772
+     },
+     "description": "road in New York City and Westchester County, New York, United States"
     },
     {
      "id": "wikidata/Q186125",
@@ -126,7 +192,18 @@
      "wikidataId": "Q186125",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Madison_Square_Garden_%28MSG%29_-_Full_%2848124330357%29.jpg/500px-Madison_Square_Garden_%28MSG%29_-_Full_%2848124330357%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Ajay Suresh from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madison_Square_Garden_(MSG)_-_Full_(48124330357).jpg",
+      "fullWidth": 5411
+     },
+     "description": "multi-purpose indoor arena in New York City, located in Midtown Manhattan between 7th and 8th Avenues from 31st to 33rd Streets"
     },
     {
      "id": "wikidata/Q319821",
@@ -139,7 +216,18 @@
      "kinds": [
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Liberty_Island_photo_Don_Ramey_Logan.jpg/500px-Liberty_Island_photo_Don_Ramey_Logan.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Don Ramey Logan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Liberty_Island_photo_Don_Ramey_Logan.jpg",
+      "fullWidth": 4800
+     },
+     "description": "island in the Upper New York Bay, United States"
     },
     {
      "id": "wikidata/Q11290",
@@ -152,7 +240,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Image-Grand_central_Station_Outside_Night_2.jpg/500px-Image-Grand_central_Station_Outside_Night_2.jpg",
+      "width": 500,
+      "height": 403,
+      "author": "Fcb981 ; Eric Baetscher (attribution required)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Image-Grand_central_Station_Outside_Night_2.jpg",
+      "fullWidth": 4726
+     },
+     "description": "railway terminal in New York City"
     },
     {
      "id": "wikidata/Q109858",
@@ -165,7 +264,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Photograph_of_Fifth_Avenue_from_the_Metropolitan%E2%80%94New_York_City.jpg/500px-Photograph_of_Fifth_Avenue_from_the_Metropolitan%E2%80%94New_York_City.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "A. Balet",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Photograph_of_Fifth_Avenue_from_the_Metropolitan%E2%80%94New_York_City.jpg",
+      "fullWidth": 3008
+     },
+     "description": "north-south avenue in Manhattan, New York"
     },
     {
      "id": "way/264768896",
@@ -178,7 +288,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Edificio_Fuller_%28Flatiron%29_en_2010_desde_el_Empire_State_crop_boxin.jpg/500px-Edificio_Fuller_%28Flatiron%29_en_2010_desde_el_Empire_State_crop_boxin.jpg",
+      "width": 500,
+      "height": 946,
+      "author": "Imelenchon (original work)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Edificio_Fuller_(Flatiron)_en_2010_desde_el_Empire_State_crop_boxin.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificio_Fuller_(Flatiron)_en_2010_desde_el_Empire_State_crop_boxin.jpg",
+      "fullWidth": 1489
+     },
+     "description": "New York, Manhattan'daki tarihi üçgensel iş merkezi gökdeleni"
     },
     {
      "id": "wikidata/Q200959",
@@ -190,7 +311,18 @@
      "kinds": [
       "heritage",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Carnegie_Hall_-_Full_%2848155558466%29.jpg/500px-Carnegie_Hall_-_Full_%2848155558466%29.jpg",
+      "width": 500,
+      "height": 490,
+      "author": "Ajay Suresh from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carnegie_Hall_-_Full_(48155558466).jpg",
+      "fullWidth": 3978
+     },
+     "description": "Konser salonu"
     },
     {
      "id": "wikidata/Q11277",
@@ -203,7 +335,18 @@
       "heritage",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/GE_Building_by_David_Shankbone.JPG/500px-GE_Building_by_David_Shankbone.JPG",
+      "width": 500,
+      "height": 673,
+      "author": "David Shankbone",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:GE_Building_by_David_Shankbone.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GE_Building_by_David_Shankbone.JPG",
+      "fullWidth": 2380
+     },
+     "description": "Manhattan, New York'ta bir iş merkezi kompleksi"
     },
     {
      "id": "node/4470028591",
@@ -215,7 +358,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/NYC_-_Greenwich_Village_-_Gay_Street.JPG/500px-NYC_-_Greenwich_Village_-_Gay_Street.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NYC_-_Greenwich_Village_-_Gay_Street.JPG",
+      "fullWidth": 4000
+     },
+     "description": "New York'un bölgesi Manhattan'da semt"
     },
     {
      "id": "wikidata/Q868772",
@@ -226,7 +380,18 @@
      "wikidataId": "Q868772",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Trump-Tower-3.jpg/500px-Trump-Tower-3.jpg",
+      "width": 500,
+      "height": 1149,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trump-Tower-3.jpg",
+      "fullWidth": 1306
+     },
+     "description": "skyscraper in Manhattan, New York"
     },
     {
      "id": "wikidata/Q270066",
@@ -238,7 +403,18 @@
      "wikidataId": "Q270066",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/7_World_Trade_Center.jpg/500px-7_World_Trade_Center.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Sweeneyr",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:7_World_Trade_Center.jpg",
+      "fullWidth": 1920
+     },
+     "description": "Aşağı Manhattan, New York'ta bir ofis binası"
     },
     {
      "id": "wikidata/Q223308",
@@ -250,7 +426,18 @@
      "wikidataId": "Q223308",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/View_of_New_Amsterdam_from_the_harbor.jpg/500px-View_of_New_Amsterdam_from_the_harbor.jpg",
+      "width": 500,
+      "height": 106,
+      "author": "Nicolaes Visscher II",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:View_of_New_Amsterdam_from_the_harbor.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_New_Amsterdam_from_the_harbor.jpg",
+      "fullWidth": 3630
+     },
+     "description": "1624 yılında kurulmuş Hollanda sömürgesindeki eski yerleşim birimi"
     },
     {
      "id": "wikidata/Q192680",
@@ -263,7 +450,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/The_New_York_Times_Building_at_sunset%2C_2021-09-30.jpg/500px-The_New_York_Times_Building_at_sunset%2C_2021-09-30.jpg",
+      "width": 500,
+      "height": 625,
+      "author": "Jdforrester",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_New_York_Times_Building_at_sunset,_2021-09-30.jpg",
+      "fullWidth": 3024
+     },
+     "description": "New York şehrinin Manhattan bölgesinin Midtown bölgesinde yer alan bir gökdelen"
     },
     {
      "id": "way/75363809",
@@ -275,7 +473,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Woolworth_bldg_nov2005c.jpg/500px-Woolworth_bldg_nov2005c.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "No machine-readable author provided. Aude assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Woolworth_bldg_nov2005c.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Woolworth_bldg_nov2005c.jpg",
+      "fullWidth": 1704
+     },
+     "description": "Manhattan, New York'ta gökdelen"
     },
     {
      "id": "relation/17233746",
@@ -288,7 +497,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Manhattan_Bridge_2007.jpg/500px-Manhattan_Bridge_2007.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Original uploader was Dav5nyc at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Manhattan_Bridge_2007.jpg",
+      "fullWidth": 1080
+     },
+     "description": "bridge in New York City"
     },
     {
      "id": "wikidata/Q624556",
@@ -301,7 +521,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/StPatCathExt1.jpg",
+      "width": 500,
+      "height": 734,
+      "author": "MoTabChoir01",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:StPatCathExt1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StPatCathExt1.jpg",
+      "fullWidth": 443
+     },
+     "description": "cathedral of the Catholic Archdiocese of New York"
     },
     {
      "id": "wikidata/Q328505",
@@ -313,7 +544,18 @@
      "wikidataId": "Q328505",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/OBP_-_Ext_-_42nd_East.jpg/500px-OBP_-_Ext_-_42nd_East.jpg",
+      "width": 500,
+      "height": 833,
+      "author": "Ryan Browne, Cook+Fox Architects",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:OBP_-_Ext_-_42nd_East.jpg",
+      "fullWidth": 2622
+     },
+     "description": "skyscraper in Midtown Manhattan, New York City, United States"
     },
     {
      "id": "wikidata/Q218305",
@@ -325,7 +567,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/40_Wall_Street.jpg/500px-40_Wall_Street.jpg",
+      "width": 500,
+      "height": 742,
+      "author": "ChrisRuvolo",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:40_Wall_Street.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:40_Wall_Street.jpg",
+      "fullWidth": 1677
+     },
+     "description": "Office skyscraper in Manhattan, New York"
     },
     {
      "id": "wikidata/Q262041",
@@ -337,7 +590,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/American_International_Building3.JPG/500px-American_International_Building3.JPG",
+      "width": 500,
+      "height": 624,
+      "author": "Clément Bardot",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:American_International_Building3.JPG",
+      "fullWidth": 1755
+     },
+     "description": "Gökdelen"
     },
     {
      "id": "wikidata/Q941908",
@@ -349,7 +613,18 @@
      "wikidataId": "Q941908",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Looking_up_at_3_and_4_World_Trade_Center_%28straightened%2C_cropped%2C_3%29.jpg/500px-Looking_up_at_3_and_4_World_Trade_Center_%28straightened%2C_cropped%2C_3%29.jpg",
+      "width": 500,
+      "height": 1834,
+      "author": "dconvertini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Looking_up_at_3_and_4_World_Trade_Center_(straightened,_cropped,_3).jpg",
+      "fullWidth": 1458
+     },
+     "description": "Aşağı Manhattan, New York'ta bir gökdelen"
     },
     {
      "id": "wikidata/Q652452",
@@ -365,7 +640,18 @@
       "office",
       "organization",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Metropolitan_Life_Insurance_Tower%2C_2024.jpg/500px-Metropolitan_Life_Insurance_Tower%2C_2024.jpg",
+      "width": 500,
+      "height": 685,
+      "author": "Ryan Schwark",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Metropolitan_Life_Insurance_Tower,_2024.jpg",
+      "fullWidth": 1752
+     },
+     "description": "New York'ta otel"
     },
     {
      "id": "wikidata/Q125068",
@@ -377,7 +663,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/LGBWilliamsburgBridge.jpg/500px-LGBWilliamsburgBridge.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:LGBWilliamsburgBridge.jpg",
+      "fullWidth": 512
+     },
+     "description": "bridge in New York City"
     },
     {
      "id": "node/158809984",
@@ -388,7 +685,18 @@
      "wikidataId": "Q461572",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Broadway_and_Houston_St_intersection_in_Noho%2C_New_York_City.jpg/500px-Broadway_and_Houston_St_intersection_in_Noho%2C_New_York_City.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Broadway_and_Houston_St_intersection_in_Noho,_New_York_City.jpg",
+      "fullWidth": 960
+     },
+     "description": "New York'un bölgesi Manhattan'da semt"
     },
     {
      "id": "node/368043598",
@@ -404,7 +712,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Stonewall_Inn%2C_April_2019.jpg/500px-Stonewall_Inn%2C_April_2019.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Antigng",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stonewall_Inn,_April_2019.jpg",
+      "fullWidth": 4032
+     },
+     "description": "1969'da Amerika Birleşik Devletleri'ndeki gey kurtuluş hareketinin başlangıcını işaret eden Stonewall ayaklanmaları'nın yer aldığı eski kuruluş"
     },
     {
      "id": "wikidata/Q125753",
@@ -416,7 +735,18 @@
      "wikidataId": "Q125753",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Holland_tunnel.jpg/500px-Holland_tunnel.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Aude",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Holland_tunnel.jpg",
+      "fullWidth": 2114
+     },
+     "description": "New Jersey ve New York arasındaki tünel"
     },
     {
      "id": "wikidata/Q13689",
@@ -424,7 +754,18 @@
      "lat": 40.70361,
      "lon": -74.01611,
      "wikipediaCount": 31,
-     "wikidataId": "Q13689"
+     "wikidataId": "Q13689",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Battery_Park.JPG/500px-Battery_Park.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Battery_Park.JPG",
+      "fullWidth": 2906
+     },
+     "description": "New York kentinin Manhattan semtinin güneyinde bulunan bir park"
     },
     {
      "id": "wikidata/Q1127212",
@@ -436,7 +777,18 @@
      "wikidataId": "Q1127212",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Two_World_Trade_Center_photomontage%2C_Memorial_view_2.jpg/500px-Two_World_Trade_Center_photomontage%2C_Memorial_view_2.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "CrossingLights",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Two_World_Trade_Center_photomontage,_Memorial_view_2.jpg",
+      "fullWidth": 2160
+     },
+     "description": "Manhattan, New York'ta beklemede olan bir gökdelen"
     },
     {
      "id": "wikidata/Q1351208",
@@ -449,7 +801,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Looking_up_at_3_and_4_World_Trade_Center_%28straightened%2C_cropped%2C_4%29.jpg/500px-Looking_up_at_3_and_4_World_Trade_Center_%28straightened%2C_cropped%2C_4%29.jpg",
+      "width": 500,
+      "height": 1697,
+      "author": "dconvertini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Looking_up_at_3_and_4_World_Trade_Center_(straightened,_cropped,_4).jpg",
+      "fullWidth": 1236
+     },
+     "description": "Aşağı Manhattan, New York'ta bir gökdelen"
     },
     {
      "id": "wikidata/Q110000",
@@ -461,7 +824,18 @@
      "wikidataId": "Q110000",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Madison_Square_Park_from_Above_at_Night_New_York_City.jpg/500px-Madison_Square_Park_from_Above_at_Night_New_York_City.jpg",
+      "width": 500,
+      "height": 345,
+      "author": "alq666",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madison_Square_Park_from_Above_at_Night_New_York_City.jpg",
+      "fullWidth": 1018
+     },
+     "description": "square and park in Manhattan, New York City"
     },
     {
      "id": "wikidata/Q866896",
@@ -474,7 +848,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Trinity_Church_NYC_004b.JPG/500px-Trinity_Church_NYC_004b.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Gryffindor",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Trinity_Church_NYC_004b.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trinity_Church_NYC_004b.JPG",
+      "fullWidth": 1872
+     },
+     "description": "Episcopal parish church in Manhattan, New York, United States"
     },
     {
      "id": "relation/7141751",
@@ -484,7 +869,18 @@
      "website": "https://www.thehighline.org/",
      "openingHours": "Mo-Su 07:00-19:00",
      "wikipediaCount": 29,
-     "wikidataId": "Q843869"
+     "wikidataId": "Q843869",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Highline_02.jpg/500px-Highline_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Wil Fyfordy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Highline_02.jpg",
+      "fullWidth": 4032
+     },
+     "description": "urban park on an elevated section of a disused railroad in Manhattan, New York"
     },
     {
      "id": "wikidata/Q858689",
@@ -497,7 +893,18 @@
       "heritage",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Federal_Hall_%2848126566178%29.jpg/500px-Federal_Hall_%2848126566178%29.jpg",
+      "width": 500,
+      "height": 343,
+      "author": "Ajay Suresh from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Federal_Hall_(48126566178).jpg",
+      "fullWidth": 6071
+     },
+     "description": "building and historic site in New York City"
     },
     {
      "id": "wikidata/Q240711",
@@ -511,7 +918,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Chelsea_Manhattan_Aug_2025_102.jpg/500px-Chelsea_Manhattan_Aug_2025_102.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Epicgenius",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chelsea_Manhattan_Aug_2025_102.jpg",
+      "fullWidth": 2703
+     },
+     "description": "New York'ta otel"
     },
     {
      "id": "wikidata/Q110007",
@@ -523,7 +941,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Union_square_August_2009.jpg/500px-Union_square_August_2009.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Jan Ainali",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Union_square_August_2009.jpg",
+      "fullWidth": 3872
+     },
+     "description": "New York'un bölgesi Manhattan'da semt"
     },
     {
      "id": "wikidata/Q909592",
@@ -531,7 +960,18 @@
      "lat": 40.73083,
      "lon": -73.99778,
      "wikipediaCount": 27,
-     "wikidataId": "Q909592"
+     "wikidataId": "Q909592",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Washington_Square_Arch-Isabella.jpg/500px-Washington_Square_Arch-Isabella.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Isabella Ruffalo-Burgat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Washington_Square_Arch-Isabella.jpg",
+      "fullWidth": 3264
+     },
+     "description": "park in the Greenwich Village neighborhood of Lower Manhattan, New York City"
     },
     {
      "id": "wikidata/Q1050074",
@@ -543,7 +983,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/One_Chase_Manhattan_Plaza_1.jpg/500px-One_Chase_Manhattan_Plaza_1.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Wally Gobetz",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:One_Chase_Manhattan_Plaza_1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:One_Chase_Manhattan_Plaza_1.jpg",
+      "fullWidth": 1360
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q109873",
@@ -556,7 +1007,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Sixth_Avenue_looking_north.jpg/500px-Sixth_Avenue_looking_north.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "The original uploader was Leifern at English Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sixth_Avenue_looking_north.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Newyork, Manhattan'da bir cadde"
     },
     {
      "id": "wikidata/Q1065206",
@@ -569,7 +1031,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/New_York_City_Hall.jpg/500px-New_York_City_Hall.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Momos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_York_City_Hall.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Lower Manhattan'a bağlı Civic center'da Bir New York kentinin Yönetim Binası"
     },
     {
      "id": "wikidata/Q274916",
@@ -580,7 +1053,18 @@
      "wikidataId": "Q274916",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/8_Spruce_Street_%2801030p%29.jpg/500px-8_Spruce_Street_%2801030p%29.jpg",
+      "width": 500,
+      "height": 1293,
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:8_Spruce_Street_(01030p).jpg",
+      "fullWidth": 4161
+     },
+     "description": "Residential skyscraper in Manhattan, New York"
     },
     {
      "id": "wikidata/Q20861677",
@@ -588,7 +1072,18 @@
      "lat": 40.71167,
      "lon": -74.0125,
      "wikipediaCount": 25,
-     "wikidataId": "Q20861677"
+     "wikidataId": "Q20861677",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Lower_Manhattan_from_Jersey_City_September_2020_HDR_panorama_%28cropped%29.jpg/500px-Lower_Manhattan_from_Jersey_City_September_2020_HDR_panorama_%28cropped%29.jpg",
+      "width": 500,
+      "height": 717,
+      "author": "King of Hearts",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_September_2020_HDR_panorama_(cropped).jpg",
+      "fullWidth": 1499
+     },
+     "description": "building complex in Lower Manhattan, New York City"
     },
     {
      "id": "wikidata/Q212831",
@@ -600,7 +1095,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/20_Exchange_Place_Tower_111.JPG/500px-20_Exchange_Place_Tower_111.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "ButtonwoodTree at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:20_Exchange_Place_Tower_111.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20_Exchange_Place_Tower_111.JPG",
+      "fullWidth": 1944
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q8006299",
@@ -608,7 +1114,18 @@
      "lat": 40.71278,
      "lon": -74.01528,
      "wikipediaCount": 23,
-     "wikidataId": "Q8006299"
+     "wikidataId": "Q8006299",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/NYC-WorldFinancialCenter.jpg/500px-NYC-WorldFinancialCenter.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "The original uploader was Legalizeit at English Wikipedia .",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NYC-WorldFinancialCenter.jpg",
+      "fullWidth": 1166
+     },
+     "description": "office complex in New York City"
     },
     {
      "id": "wikidata/Q2074091",
@@ -619,7 +1136,18 @@
      "wikidataId": "Q2074091",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/3_World_Financial_Center.jpg/500px-3_World_Financial_Center.jpg",
+      "width": 500,
+      "height": 1155,
+      "author": "Aude",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:3_World_Financial_Center.jpg",
+      "fullWidth": 652
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q115860",
@@ -632,7 +1160,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Federal-reserve-33-liberty.jpg/500px-Federal-reserve-33-liberty.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dmadeo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Federal-reserve-33-liberty.jpg",
+      "fullWidth": 750
+     },
+     "description": "American bank"
     },
     {
      "id": "wikidata/Q1144187",
@@ -643,7 +1182,18 @@
      "wikidataId": "Q1144187",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/0013TIARA_P1000433.JPG/500px-0013TIARA_P1000433.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "This photo was taken by participant/team team_tiara as part of the Commons:Wikis Take Manhattan project on October 4, 2008. This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0 Creative Commons Attribution-Share Alike 3.0 true true",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0013TIARA_P1000433.JPG",
+      "fullWidth": 2448
+     },
+     "description": "skyscraper in Lower Manhattan, New York City, USA"
     },
     {
      "id": "wikidata/Q1066662",
@@ -655,7 +1205,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/15_Park_Row_3.JPG/500px-15_Park_Row_3.JPG",
+      "width": 500,
+      "height": 726,
+      "author": "Nyjockboy2 ( talk )Nyjockboy2",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:15_Park_Row_3.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:15_Park_Row_3.JPG",
+      "fullWidth": 2247
+     },
+     "description": "residential tower in Manhattan, New York"
     },
     {
      "id": "wikidata/Q1032558",
@@ -666,7 +1227,18 @@
      "wikidataId": "Q1032558",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Canal_St-Baxter_St.JPG/500px-Canal_St-Baxter_St.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "Pacific Coast Highway",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Canal_St-Baxter_St.JPG",
+      "fullWidth": 4912
+     },
+     "description": "street in Manhattan"
     },
     {
      "id": "wikidata/Q1049423",
@@ -683,7 +1255,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Castle_Clinton_aerial_view.jpg/500px-Castle_Clinton_aerial_view.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "National Park Service's staff. Cropped by Blackcat",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Castle_Clinton_aerial_view.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castle_Clinton_aerial_view.jpg",
+      "fullWidth": 2700
+     },
+     "description": "former fortress in New York City"
     },
     {
      "id": "wikidata/Q4635219",
@@ -694,7 +1277,18 @@
      "wikidataId": "Q4635219",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/33_thomas_st.jpg/500px-33_thomas_st.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "Marcin Wichary from San Francisco, U.S.A.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:33_thomas_st.jpg",
+      "fullWidth": 2588
+     },
+     "description": "building in New York City, notable for having no windows"
     },
     {
      "id": "wikidata/Q247887",
@@ -706,7 +1300,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/60_Wall_Street_building.jpg/500px-60_Wall_Street_building.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Mike Roberts from New York City, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:60_Wall_Street_building.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Office skyscraper in Manhattan, New York"
     },
     {
      "id": "wikidata/Q2275601",
@@ -718,7 +1323,18 @@
      "wikidataId": "Q2275601",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Goldman_Sachs_Tower_%282011-04-09%29.jpg/500px-Goldman_Sachs_Tower_%282011-04-09%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Paulm27",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Goldman_Sachs_Tower_(2011-04-09).jpg",
+      "fullWidth": 3456
+     },
+     "description": "Skyscraper in Jersey City, New Jersey"
     },
     {
      "id": "wikidata/Q209017",
@@ -730,7 +1346,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/1_Wall_Street_panoramic.jpg/500px-1_Wall_Street_panoramic.jpg",
+      "width": 500,
+      "height": 693,
+      "author": "1_Wall_Street_001.JPG : Gryffindor 1_Wall_Street_002.JPG : Gryffindor derivative work: Justass ( talk )",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:1_Wall_Street_panoramic.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:1_Wall_Street_panoramic.jpg",
+      "fullWidth": 2963
+     },
+     "description": "New York,Manhattan'da bir konut gökdeleni"
     },
     {
      "id": "wikidata/Q264439",
@@ -741,7 +1368,18 @@
      "wikidataId": "Q264439",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Two_World_Financial_Center.jpg/500px-Two_World_Financial_Center.jpg",
+      "width": 500,
+      "height": 898,
+      "author": "Aude",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Two_World_Financial_Center.jpg",
+      "fullWidth": 727
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q1325913",
@@ -752,7 +1390,18 @@
      "wikidataId": "Q1325913",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Electric_Lady_Studios_2013.jpg/500px-Electric_Lady_Studios_2013.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Jhsounds",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Electric_Lady_Studios_2013.jpg",
+      "fullWidth": 3055
+     },
+     "description": "US a recording studio in Greenwich Village, New York City"
     },
     {
      "id": "wikidata/Q1156778",
@@ -765,7 +1414,18 @@
       "heritage",
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Municipal_Building_-_New_York_City.jpg/500px-Municipal_Building_-_New_York_City.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Momos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Municipal_Building_-_New_York_City.jpg",
+      "fullWidth": 1200
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q18157",
@@ -776,7 +1436,18 @@
      "wikidataId": "Q18157",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/St._Nicholas_Greek_Orthodox_Church_-_195245115.jpg/500px-St._Nicholas_Greek_Orthodox_Church_-_195245115.jpg",
+      "width": 500,
+      "height": 422,
+      "author": "DutchTreat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Nicholas_Greek_Orthodox_Church_-_195245115.jpg",
+      "fullWidth": 3369
+     },
+     "description": "church in New York City"
     },
     {
      "id": "wikidata/Q244358",
@@ -787,7 +1458,18 @@
      "wikidataId": "Q244358",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/56_Leonard_St_New_York_28-02-2016_11-28-31.JPG/500px-56_Leonard_St_New_York_28-02-2016_11-28-31.JPG",
+      "width": 500,
+      "height": 555,
+      "author": "Paul Hermans",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:56_Leonard_St_New_York_28-02-2016_11-28-31.JPG",
+      "fullWidth": 4123
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q1499859",
@@ -799,7 +1481,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Ny-life-bldg.jpg/500px-Ny-life-bldg.jpg",
+      "width": 500,
+      "height": 666,
+      "author": "Dmadeo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ny-life-bldg.jpg",
+      "fullWidth": 563
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q224126",
@@ -810,7 +1503,18 @@
      "wikidataId": "Q224126",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/30_Park_Place.jpg/500px-30_Park_Place.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Fletcher",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:30_Park_Place.jpg",
+      "fullWidth": 3944
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q1347892",
@@ -823,7 +1527,18 @@
       "heritage",
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Equitable_Building_%28Manhattan%29.jpg/500px-Equitable_Building_%28Manhattan%29.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Fletcher6",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Equitable_Building_(Manhattan).jpg",
+      "fullWidth": 851
+     },
+     "description": "Office skyscraper in Manhattan, New York"
     },
     {
      "id": "node/2517056822",
@@ -831,7 +1546,18 @@
      "lat": 40.74107,
      "lon": -73.98965,
      "wikipediaCount": 16,
-     "wikidataId": "Q1427377"
+     "wikidataId": "Q1427377",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Flatiron_Building%2C_NYC_%2816631516116%29.jpg/500px-Flatiron_Building%2C_NYC_%2816631516116%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Henning Klokkeråsen from Oslo, Norway",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Flatiron_Building,_NYC_(16631516116).jpg",
+      "fullWidth": 3008
+     },
+     "description": "New York'un bölgesi Manhattan'da semt"
     },
     {
      "id": "wikidata/Q124973",
@@ -842,7 +1568,18 @@
      "wikidataId": "Q124973",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Franklin_D._Roosevelt_East_River_Drive.jpg/500px-Franklin_D._Roosevelt_East_River_Drive.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bob Jagendorf from Manalapan, NJ, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Franklin_D._Roosevelt_East_River_Drive.jpg",
+      "fullWidth": 1600
+     },
+     "description": "highway in Manhattan"
     },
     {
      "id": "wikidata/Q118599",
@@ -854,7 +1591,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/West_23rd_Street%2C_Manhattan%2C_from_the_High_Line.jpg/500px-West_23rd_Street%2C_Manhattan%2C_from_the_High_Line.jpg",
+      "width": 500,
+      "height": 713,
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:West_23rd_Street,_Manhattan,_from_the_High_Line.jpg",
+      "fullWidth": 3006
+     },
+     "description": "street in Manhattan"
     },
     {
      "id": "node/7058463050",
@@ -865,7 +1613,18 @@
      "wikidataId": "Q895455",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/New_York_Bowling_Green_anagoria.jpg/500px-New_York_Bowling_Green_anagoria.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Anagoria",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_York_Bowling_Green_anagoria.jpg",
+      "fullWidth": 3648
+     },
+     "description": "park in Manhattan"
     },
     {
      "id": "wikidata/Q22329554",
@@ -876,7 +1635,18 @@
      "wikidataId": "Q22329554",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/The_Brooklyn_Tower_010.jpg/500px-The_Brooklyn_Tower_010.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Brooklyn_Tower_010.jpg",
+      "fullWidth": 1536
+     },
+     "description": "skyscraper in Brooklyn, New York"
     },
     {
      "id": "wikidata/Q125635",
@@ -887,7 +1657,18 @@
      "wikidataId": "Q125635",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Brookbattunmanjeh.JPG/500px-Brookbattunmanjeh.JPG",
+      "width": 500,
+      "height": 376,
+      "author": "Jim.henderson",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Brookbattunmanjeh.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brookbattunmanjeh.JPG",
+      "fullWidth": 2988
+     },
+     "description": "tunnel in New York City"
     },
     {
      "id": "wikidata/Q2568224",
@@ -899,7 +1680,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/33_Liberty_Street_IMG_9062.JPG/500px-33_Liberty_Street_IMG_9062.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:33_Liberty_Street_IMG_9062.JPG",
+      "fullWidth": 3648
+     },
+     "description": "street in New York City"
     },
     {
      "id": "wikidata/Q227659",
@@ -910,7 +1702,18 @@
      "wikidataId": "Q227659",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Zuccotti_Park_with_christmas_lights.JPG/500px-Zuccotti_Park_with_christmas_lights.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "MusikAnimal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Zuccotti_Park_with_christmas_lights.JPG",
+      "fullWidth": 3456
+     },
+     "description": "public park and square in New York City"
     },
     {
      "id": "way/1308390918",
@@ -922,7 +1725,18 @@
      "wikidataId": "Q18148743",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Hess_triangle.jpg/500px-Hess_triangle.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Chris Hamby",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hess_triangle.jpg",
+      "fullWidth": 612
+     },
+     "description": "small plot of land in New York City"
     },
     {
      "id": "wikidata/Q2687492",
@@ -933,7 +1747,18 @@
      "wikidataId": "Q2687492",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/1_New_York_Plaza_%2824280p%29.jpg/500px-1_New_York_Plaza_%2824280p%29.jpg",
+      "width": 500,
+      "height": 949,
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:1_New_York_Plaza_(24280p).jpg",
+      "fullWidth": 3307
+     },
+     "description": "office building in New York City"
     },
     {
      "id": "wikidata/Q2536635",
@@ -944,7 +1769,18 @@
      "wikidataId": "Q2536635",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/One_World_Financial_Center_in_2014.jpg/500px-One_World_Financial_Center_in_2014.jpg",
+      "width": 500,
+      "height": 770,
+      "author": "Don Ramey Logan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:One_World_Financial_Center_in_2014.jpg",
+      "fullWidth": 883
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q116002",
@@ -956,7 +1792,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/200_West_Street_-_Lower_Manhattan.jpg/500px-200_West_Street_-_Lower_Manhattan.jpg",
+      "width": 500,
+      "height": 714,
+      "author": "Potro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:200_West_Street_-_Lower_Manhattan.jpg",
+      "fullWidth": 3500
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q1192749",
@@ -967,7 +1814,18 @@
      "wikidataId": "Q1192749",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Four_World_Financial_Center.jpg",
+      "width": 500,
+      "height": 897,
+      "author": "WiNG",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Four_World_Financial_Center.jpg",
+      "fullWidth": 305
+     },
+     "description": "skyscraper in New York City"
     },
     {
      "id": "wikidata/Q244114",
@@ -978,7 +1836,18 @@
      "wikidataId": "Q244114",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/55_Water_Street_and_north_wing.jpg/500px-55_Water_Street_and_north_wing.jpg",
+      "width": 500,
+      "height": 694,
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:55_Water_Street_and_north_wing.jpg",
+      "fullWidth": 1600
+     },
+     "description": "skyscraper in New York City"
     }
    ]
   },
@@ -997,7 +1866,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/500px-MoMa_NY_USA_1.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "hibino",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MoMa_NY_USA_1.jpg",
+      "fullWidth": 1536
+     },
+     "description": "Manhattan, New York'taki sanat müzesi"
     },
     {
      "id": "wikidata/Q632682",
@@ -1011,7 +1891,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Brooklyn_Museum_June_2008_sunset_jeh.JPG/500px-Brooklyn_Museum_June_2008_sunset_jeh.JPG",
+      "width": 500,
+      "height": 304,
+      "author": "Jim.henderson",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_June_2008_sunset_jeh.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_June_2008_sunset_jeh.JPG",
+      "fullWidth": 3072
+     },
+     "description": "art museum in Brooklyn, New York"
     },
     {
      "id": "way/278033604",
@@ -1026,7 +1917,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/9-11_Memorial_and_Museum_%2828815276064%29.jpg/500px-9-11_Memorial_and_Museum_%2828815276064%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paul Sableman",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:9-11_Memorial_and_Museum_(28815276064).jpg",
+      "fullWidth": 4896
+     },
+     "description": "memorial & museum in New York City commemorating the September 11, 2001 attacks"
     },
     {
      "id": "way/288749896",
@@ -1041,7 +1943,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Whitney_Museum_from_west.jpg/500px-Whitney_Museum_from_west.jpg",
+      "width": 500,
+      "height": 440,
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Whitney_Museum_from_west.jpg",
+      "fullWidth": 3930
+     },
+     "description": "art museum in New York City"
     },
     {
      "id": "wikidata/Q502218",
@@ -1057,7 +1970,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/National_Academy.jpg/500px-National_Academy.jpg",
+      "width": 500,
+      "height": 1115,
+      "author": "You may select the license of your choice.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Academy.jpg",
+      "fullWidth": 1174
+     },
+     "description": "ABD'de güzel sanatları desteklemek amacıyla kurulmuş sanat okulu"
     },
     {
      "id": "node/13732385972",
@@ -1072,7 +1996,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/New_Museum%2C_New_York.jpg/500px-New_Museum%2C_New_York.jpg",
+      "width": 500,
+      "height": 807,
+      "author": "Moritz Schmaltz from St.Gallen, Switzerland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_Museum,_New_York.jpg",
+      "fullWidth": 1747
+     },
+     "description": "contemporary art museum in New York City"
     },
     {
      "id": "node/9371206934",
@@ -1089,7 +2024,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Intnl_Cenf_Photog_43_jeh.JPG/500px-Intnl_Cenf_Photog_43_jeh.JPG",
+      "width": 500,
+      "height": 367,
+      "author": "Jim.henderson",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Intnl_Cenf_Photog_43_jeh.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Intnl_Cenf_Photog_43_jeh.JPG",
+      "fullWidth": 4092
+     },
+     "description": "photography museum, school and research center in Manhattan, New York City"
     },
     {
      "id": "way/250267911",
@@ -1105,7 +2051,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Eldridge_Street_Synagogue_Front.JPG/500px-Eldridge_Street_Synagogue_Front.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Alexisrael",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eldridge_Street_Synagogue_Front.JPG",
+      "fullWidth": 4608
+     },
+     "description": "United States historic place in Manhattan, New York"
     },
     {
      "id": "node/368061648",
@@ -1120,7 +2077,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/The_Squirrels_0043.jpg/500px-The_Squirrels_0043.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "This photo was taken by participant/team The Squirrels as part of the Commons:Wikis Take Manhattan project on October 4, 2008. This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0 Creative Commons Attribution-Share Alike 3.0 true true",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Squirrels_0043.jpg",
+      "fullWidth": 3008
+     },
+     "description": "museum in New York City, USA"
     },
     {
      "id": "node/4224363289",
@@ -1135,7 +2103,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Museum_of_Sex%2C_New_York_City%2C_USA.jpg/500px-Museum_of_Sex%2C_New_York_City%2C_USA.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "No machine-readable author provided. Bill william compton assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Sex,_New_York_City,_USA.jpg",
+      "fullWidth": 2015
+     },
+     "description": "museum in New York City"
     },
     {
      "id": "node/14201860801",
@@ -1148,7 +2127,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/African_National_Monument-1.jpg/500px-African_National_Monument-1.jpg",
+      "width": 500,
+      "height": 420,
+      "author": "Rodney Leon",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:African_National_Monument-1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:African_National_Monument-1.jpg",
+      "fullWidth": 987
+     },
+     "description": "national monument in New York City"
     },
     {
      "id": "node/1810241472",
@@ -1163,7 +2153,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Rubin_museum_of_art_new_york_2006.jpg/500px-Rubin_museum_of_art_new_york_2006.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Rolf Müller ( User:Rolfmueller )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rubin_museum_of_art_new_york_2006.jpg",
+      "fullWidth": 1152
+     },
+     "description": "museum in New York, New York"
     },
     {
      "id": "node/2808241058",
@@ -1178,7 +2179,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wtc_model_at_skyscraper_museum.jpg/500px-Wtc_model_at_skyscraper_museum.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Aude",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wtc_model_at_skyscraper_museum.jpg",
+      "fullWidth": 1704
+     },
+     "description": "architecture museum in Manhattan, New York"
     },
     {
      "id": "node/10873196741",
@@ -1194,7 +2206,18 @@
       "business",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/The_West_24th_Street_Gallery%2C_Gagosian_Gallery_Nov_26%2C_2019.jpg/500px-The_West_24th_Street_Gallery%2C_Gagosian_Gallery_Nov_26%2C_2019.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kazuhisa OTSUBO",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_West_24th_Street_Gallery,_Gagosian_Gallery_Nov_26,_2019.jpg",
+      "fullWidth": 640
+     },
+     "description": "Contemporary and modern art gallery with multiple locations"
     },
     {
      "id": "relation/7281773",
@@ -1208,7 +2231,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Museum_of_Jewish_Heritage_005.JPG/500px-Museum_of_Jewish_Heritage_005.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Jewish_Heritage_005.JPG",
+      "fullWidth": 1051
+     },
+     "description": "museum in Battery Park City in Manhattan, New York City, USA"
     },
     {
      "id": "node/4252536496",
@@ -1223,7 +2257,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/National_Museum_of_Mathematics_11_East_26th_Street_entrance.jpg/500px-National_Museum_of_Mathematics_11_East_26th_Street_entrance.jpg",
+      "width": 500,
+      "height": 366,
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Mathematics_11_East_26th_Street_entrance.jpg",
+      "fullWidth": 3024
+     },
+     "description": "mathematics museum in New York City"
     },
     {
      "id": "node/10861543611",
@@ -1239,7 +2284,18 @@
       "business",
       "farFromItem",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/HWSO_grounds.jpg/500px-HWSO_grounds.jpg",
+      "width": 500,
+      "height": 396,
+      "author": "EmmaPalmer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HWSO_grounds.jpg",
+      "fullWidth": 2611
+     },
+     "description": "art gallery"
     },
     {
      "id": "node/9136326361",
@@ -1254,7 +2310,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Leslie-Lohman_Museum_of_Gay_and_Lesbian_Art_-_NYC_%2848129032106%29.jpg/500px-Leslie-Lohman_Museum_of_Gay_and_Lesbian_Art_-_NYC_%2848129032106%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Ajay Suresh from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Leslie-Lohman_Museum_of_Gay_and_Lesbian_Art_-_NYC_(48129032106).jpg",
+      "fullWidth": 4608
+     },
+     "description": "museum"
     },
     {
      "id": "node/368061660",
@@ -1270,7 +2337,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/The_Tenement_Museum_%2851624759160%29.jpg/500px-The_Tenement_Museum_%2851624759160%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "ajay_suresh",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Tenement_Museum_(51624759160).jpg",
+      "fullWidth": 4608
+     },
+     "description": "museum in Manhattan, New York City"
     },
     {
      "id": "way/241833272",
@@ -1285,7 +2363,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Ukrainian_Museum_sunny_morn_jeh.jpg/500px-Ukrainian_Museum_sunny_morn_jeh.jpg",
+      "width": 500,
+      "height": 539,
+      "author": "Jim.henderson",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ukrainian_Museum_sunny_morn_jeh.jpg",
+      "fullWidth": 3159
+     },
+     "description": "museum in New York City"
     },
     {
      "id": "way/247838607",
@@ -1301,7 +2390,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Merchant%27s_House_Museum_%2848072654706%29.jpg/500px-Merchant%27s_House_Museum_%2848072654706%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Ajay Suresh from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Merchant%27s_House_Museum_(48072654706).jpg",
+      "fullWidth": 2725
+     },
+     "description": "Museum in New York City"
     },
     {
      "id": "way/1233699772",
@@ -1316,7 +2416,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/MOCA_car-free_jeh.jpg/500px-MOCA_car-free_jeh.jpg",
+      "width": 500,
+      "height": 465,
+      "author": "Jim.henderson",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MOCA_car-free_jeh.jpg",
+      "fullWidth": 1708
+     },
+     "description": "museum in New York City"
     },
     {
      "id": "way/249664614",
@@ -1331,7 +2442,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/New_York_City_Fire_Museum_002_%28cropped%29.jpg/500px-New_York_City_Fire_Museum_002_%28cropped%29.jpg",
+      "width": 500,
+      "height": 533,
+      "author": "Leonard J. DeFrancisci",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_York_City_Fire_Museum_002_(cropped).jpg",
+      "fullWidth": 2466
+     },
+     "description": "museum in New York City"
     },
     {
      "id": "way/404322369",
@@ -1345,7 +2467,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Museum_of_Russian_Art_%28MoRA%29.jpg/500px-Museum_of_Russian_Art_%28MoRA%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Hudconja",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Russian_Art_(MoRA).jpg",
+      "fullWidth": 3216
+     },
+     "description": "art museum in Jersey City, New Jersey"
     },
     {
      "id": "node/368061337",
@@ -1360,7 +2493,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/The_National_Museum_of_the_American_Indian%E2%80%93New_York_%28George_Gustav_Heye_Center%29_%2851522244534%29.jpg/500px-The_National_Museum_of_the_American_Indian%E2%80%93New_York_%28George_Gustav_Heye_Center%29_%2851522244534%29.jpg",
+      "width": 500,
+      "height": 312,
+      "author": "ajay_suresh",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_National_Museum_of_the_American_Indian%E2%80%93New_York_(George_Gustav_Heye_Center)_(51522244534).jpg",
+      "fullWidth": 4653
+     },
+     "description": "museum in New York, N.Y."
     },
     {
      "id": "node/4319632990",
@@ -1372,7 +2516,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Salmagundi-club-47-5th-avenue.JPG/500px-Salmagundi-club-47-5th-avenue.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Dmadeo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Salmagundi-club-47-5th-avenue.JPG",
+      "fullWidth": 3000
+     },
+     "description": "Manhattan art club"
     },
     {
      "id": "node/10861543610",
@@ -1386,7 +2541,18 @@
      "wikidataId": "Q1207930",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Diabeacon_2006.jpg/500px-Diabeacon_2006.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Rolf Müller ( User:Rolfmueller )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Diabeacon_2006.jpg",
+      "fullWidth": 1728
+     },
+     "description": "foundation"
     },
     {
      "id": "way/241833034",
@@ -1401,7 +2567,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Brooklyn_Historical_Society.jpg/500px-Brooklyn_Historical_Society.jpg",
+      "width": 500,
+      "height": 508,
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brooklyn_Historical_Society.jpg",
+      "fullWidth": 2448
+     },
+     "description": "museum, library, and educational center dedicated to history of Brooklyn, New York"
     },
     {
      "id": "way/278396320",
@@ -1413,7 +2590,18 @@
      "wikidataId": "Q4683626",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Admirals-house-governors-island.JPG/500px-Admirals-house-governors-island.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Dmadeo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Admirals-house-governors-island.JPG",
+      "fullWidth": 4000
+     },
+     "description": "United States historic place on Governors Island, New York"
     },
     {
      "id": "way/249664327",
@@ -1428,7 +2616,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/WTM_sheila_0027.jpg/500px-WTM_sheila_0027.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "This photo was taken by participant/team Sheila as part of the Commons:Wikipedia Takes Manhattan project on April 4, 2008. This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0 Creative Commons Attribution-Share Alike 3.0 true true",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:WTM_sheila_0027.jpg",
+      "fullWidth": 640
+     },
+     "description": "non-profit organization in New York City"
     },
     {
      "id": "node/368061605",
@@ -1441,7 +2640,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Center_for_Jewish_History_NYC.jpg/500px-Center_for_Jewish_History_NYC.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Gryffindor",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Center_for_Jewish_History_NYC.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Center_for_Jewish_History_NYC.jpg",
+      "fullWidth": 2201
+     },
+     "description": "Jewish cultural institution in New York"
     },
     {
      "id": "node/10861543614",
@@ -1454,7 +2664,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "art gallery in New York City"
     },
     {
      "id": "node/10859974168",
@@ -1470,7 +2681,18 @@
       "business",
       "farFromItem",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Lisson_Gallery%2C_Marylebone%2C_NW1_%286947100960%29.jpg/500px-Lisson_Gallery%2C_Marylebone%2C_NW1_%286947100960%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Ewan Munro from London, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisson_Gallery,_Marylebone,_NW1_(6947100960).jpg",
+      "fullWidth": 3522
+     },
+     "description": "Contemporary art gallery"
     },
     {
      "id": "node/5640186350",
@@ -1481,7 +2703,18 @@
      "website": "https://www.mmuseumm.com/",
      "openingHours": "Sa-Su 12:00-18:00 open \"Museum\" || 00:00-24:00 open \"Viewing windows\"",
      "wikipediaCount": 2,
-     "wikidataId": "Q22329588"
+     "wikidataId": "Q22329588",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Mmuseumm_1.png/500px-Mmuseumm_1.png",
+      "width": 500,
+      "height": 349,
+      "author": "Alexkalman",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mmuseumm_1.png",
+      "fullWidth": 1862
+     },
+     "description": "museum"
     },
     {
      "id": "node/10873196739",
@@ -1496,7 +2729,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "art gallery in New York"
     },
     {
      "id": "node/5039012197",
@@ -1511,7 +2745,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/9.11_Tribute_Museum.jpg/500px-9.11_Tribute_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kidfly182",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:9.11_Tribute_Museum.jpg",
+      "fullWidth": 3264
+     },
+     "description": "a project which brings together those who want to learn about 9/11 with those who experienced it."
     },
     {
      "id": "node/368042980",
@@ -1526,7 +2771,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Storefront_for_Art_and_Architecture_exterior.jpg/500px-Storefront_for_Art_and_Architecture_exterior.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Dogears",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Storefront_for_Art_and_Architecture_exterior.jpg",
+      "fullWidth": 1380
+     },
+     "description": "American non-profit organization"
     },
     {
      "id": "node/6596032786",
@@ -1540,7 +2796,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/WTM3_NYU_FC_2_0088.jpg/500px-WTM3_NYU_FC_2_0088.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "NYU FC 2 (Wikis Take Manhattan 2009 participant)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:WTM3_NYU_FC_2_0088.jpg",
+      "fullWidth": 4288
+     },
+     "description": "contemporary art gallery in New York and London"
     },
     {
      "id": "node/10873196752",
@@ -1555,7 +2822,18 @@
       "farFromItem",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Galer%C3%ADa_Kurimanzutto%2C_2024_02.jpg/500px-Galer%C3%ADa_Kurimanzutto%2C_2024_02.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "TSolange",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Kurimanzutto,_2024_02.jpg",
+      "fullWidth": 960
+     },
+     "description": "Art gallery"
     },
     {
      "id": "node/8062794938",
@@ -1571,7 +2849,8 @@
       "business",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "art gallery in New York City"
     }
    ]
   },
@@ -1589,7 +2868,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/One_World_Trade_Center%2C_New_York_%2833224081040%29.jpg/500px-One_World_Trade_Center%2C_New_York_%2833224081040%29.jpg",
+      "width": 500,
+      "height": 861,
+      "author": "Pedro Szekely from Los Angeles, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:One_World_Trade_Center,_New_York_(33224081040).jpg",
+      "fullWidth": 1600
+     },
+     "description": "Manhattan, New York'ta yeniden inşa edilen Dünya Ticaret Merkezi'nin ana binası"
     },
     {
      "id": "node/5213998223",
@@ -1962,7 +3252,18 @@
      "openingHours": "Mo-Fr 11:30-22:00; Sa 17:00-22:00",
      "cuisine": "steak house",
      "wikidataId": "Q1184537",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Delmonicos_NYC.jpg/500px-Delmonicos_NYC.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "ChrisRuvolo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Delmonicos_NYC.jpg",
+      "fullWidth": 768
+     },
+     "description": "restaurant in New York"
     },
     {
      "id": "node/2572981704",
@@ -3056,7 +4357,18 @@
      "website": "https://www.mercuryloungenyc.com/",
      "openingHours": "Mo-Sa 17:30-04:00",
      "wikidataId": "Q772529",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/WSTM_Team_Dustizeff_0082.jpg/500px-WSTM_Team_Dustizeff_0082.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "This photo was taken by participant/team Team Dustizeff as part of the Commons:Wikis Take Manhattan project on October 4, 2008. This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0 Creative Commons Attribution-Share Alike 3.0 true true",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:WSTM_Team_Dustizeff_0082.jpg",
+      "fullWidth": 2048
+     },
+     "description": "music venue in New York City"
     },
     {
      "id": "node/4483787091",
@@ -3066,7 +4378,18 @@
      "website": "https://www.smallslive.com/",
      "openingHours": "Mo-Th 19:00-03:00; Fr-Su 14:00-03:00",
      "wikidataId": "Q2294913",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/NonDisclosure.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "http://picasaweb.google.com/jimhofman1000",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NonDisclosure.JPG",
+      "fullWidth": 350
+     },
+     "description": "jazz club located in New York City"
     },
     {
      "id": "node/12998364101",
@@ -3091,9 +4414,21 @@
       "business",
       "musicVenue",
       "nightclub",
+      "organization",
       "performingArts"
      ],
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Villagevanguard4.JPG/500px-Villagevanguard4.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Freimut Bahlo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villagevanguard4.JPG",
+      "fullWidth": 2592
+     },
+     "description": "jazz club in New York City"
     },
     {
      "id": "way/247857140",
@@ -3104,7 +4439,18 @@
      "website": "https://www.websterhall.com/",
      "openingHours": "\"According to schedule\"",
      "wikidataId": "Q7978928",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Webster_Hall_October_2010.jpg/500px-Webster_Hall_October_2010.jpg",
+      "width": 500,
+      "height": 524,
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Webster_Hall_October_2010.jpg",
+      "fullWidth": 1556
+     },
+     "description": "nightclub, concert venue and recording studio in East Village, Manhattan, New York City, USA"
     },
     {
      "id": "node/10874836805",
@@ -3131,7 +4477,18 @@
      "lon": -73.99334,
      "address": "Delancey Street 6",
      "website": "https://mercuryeastpresents.com/boweryballroom/",
-     "wikidataId": "Q895431"
+     "wikidataId": "Q895431",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/WTM_tony_0084.jpg/500px-WTM_tony_0084.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "This photo was taken by participant/team Tony as part of the Commons:Wikipedia Takes Manhattan project on April 4, 2008. This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0 Creative Commons Attribution-Share Alike 3.0 true true",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:WTM_tony_0084.jpg",
+      "fullWidth": 3888
+     },
+     "description": "Music venue in Manhattan, New York City"
     },
     {
      "id": "node/6145702591",

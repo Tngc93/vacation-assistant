@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Vacation Assistant",
     template: "%s · Vacation Assistant",
   },
-  description: "Türkiye'den yola çıkanlar için tatil asistanı: en ucuz uçuş, vize, TL bütçe ve gün gün şehir planı.",
+  description: "Türkiye'den yola çıkanlar için tatil asistanı: en ucuz uçuş, TL bütçe ve gün gün şehir planı.",
 };
 
 export const viewport: Viewport = {

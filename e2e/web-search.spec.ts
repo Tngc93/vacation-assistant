@@ -1,4 +1,4 @@
-import { expect, test, type Request } from "@playwright/test";
+import { expect, test, type Request } from "./fixtures";
 
 // e2e server: VA_AI_MOCK=1 (the keyless demo: the mock provider answers web searches, labelled ÖRNEK VERİ),
 // VA_FLIGHTS_FIXTURES=1 and VA_OFFLINE=1 (no exchange rates, so only lira prices have a lira amount).
@@ -14,10 +14,15 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   page.on("request", (r) => requests.push(r));
   await page.goto(plan);
   const flights = page.locator("#ucuslar");
-  const web = flights.getByRole("region", { name: "Web'de ara" });
+  // The full list and the web search open under the two cards, at full width.
+  const all = page.locator("#tum-ucuslar");
+  const web = all.getByRole("region", { name: "Web'de ara" });
   const receipt = page.locator("#butce").getByRole("region", { name: "Bütçe fişi" });
   const totalBefore = await receipt.locator("[aria-live]").innerText();
 
+  // The web search sits with the full list, behind "Tüm uçuşları gör".
+  await expect(web).toBeHidden();
+  await flights.getByRole("button", { name: "Tüm uçuşları gör" }).click();
   // Nothing is searched until the button is pressed.
   await expect(web.getByRole("button", { name: "Web'de ara" })).toBeVisible();
   await expect(web.getByRole("article")).toHaveCount(0);
@@ -37,14 +42,16 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   await expect(receipt.getByText("YAPAY ZEKÂ WEB'DEN BULDU · TAHMİNİ")).toBeVisible();
   await expect(web.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
   // The cached Travelpayouts tickets no longer say they are in the budget.
-  await expect(flights.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
+  await expect(flights.getByRole("button", { name: "Bütçede" })).toHaveCount(0);
+  await expect(all.getByRole("button", { name: "Bütçede" })).toHaveCount(1);
   // The plan uses no other ticket's times for a web price.
   await expect(page.locator("#gun-gun-plan").getByText("UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER")).toBeVisible();
   const totalWithWeb = await receipt.locator("[aria-live]").innerText();
   expect(totalWithWeb).not.toBe(totalBefore);
 
   // Stays: ranges by neighbourhood, the middle written into the nightly field.
-  const stays = page.locator("#konaklama");
+  await page.locator("#konaklama").getByRole("button", { name: "Web'de ara" }).click();
+  const stays = page.locator("#konaklama-web");
   await stays.getByRole("button", { name: "Semte göre fiyat aralığını web'de ara" }).click();
   await expect(stays.getByText("ÖRNEK VERİ · ÖRNEK SAĞLAYICI · GERÇEK FİYAT DEĞİL")).toBeVisible();
   await expect(stays.getByRole("listitem")).toHaveCount(3);
@@ -57,7 +64,8 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   // The same search in this tab comes back from sessionStorage, with no request to any provider (the demo
   // never uses the network at all), and the sample sites are never requested by the app.
   await page.reload();
-  await expect(page.locator("#ucuslar").getByRole("region", { name: "Web'de ara" }).getByRole("article")).toHaveCount(2);
-  await expect(page.locator("#ucuslar").getByRole("button", { name: "Yeniden ara" })).toBeVisible();
+  await page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" }).click();
+  await expect(page.locator("#tum-ucuslar").getByRole("region", { name: "Web'de ara" }).getByRole("article")).toHaveCount(2);
+  await expect(page.locator("#tum-ucuslar").getByRole("button", { name: "Yeniden ara" })).toBeVisible();
   for (const r of requests) expect(new URL(r.url()).hostname).not.toMatch(/example\.(com|org)$|googleapis|anthropic|openai/);
 });

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "ATH",
- "fetchedAt": "2026-10-18T16:34:55.037Z",
+ "fetchedAt": "2026-10-22T05:48:28.659Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
       "country",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Akropolis_2015.jpg/500px-Akropolis_2015.jpg",
+      "width": 500,
+      "height": 290,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Akropolis_2015.jpg",
+      "fullWidth": 9648
+     },
+     "description": "Yunanistan'ın başkenti ve en büyük şehri"
     },
     {
      "id": "way/910010406",
@@ -70,7 +81,18 @@
       "notPlace",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/500px-The_Parthenon_in_Athens.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "Steve Swayne",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
+      "fullWidth": 1144
+     },
+     "description": "Atina Akropolisi'ndeki eski Athena tapınağı"
     },
     {
      "id": "relation/11268149",
@@ -85,7 +107,18 @@
       "heritage",
       "ruins",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/500px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "fullWidth": 5000
+     },
+     "description": "Atina'da yüksek bir kayalık üzerindeki birçok antik yapı kalıntılarını içeren eski bir hisar"
     },
     {
      "id": "node/3343545896",
@@ -101,7 +134,18 @@
       "ruins",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Plato%27s_Academy_mosaic_from_Pompeii.jpg/500px-Plato%27s_Academy_mosaic_from_Pompeii.jpg",
+      "width": 500,
+      "height": 512,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Plato%27s_Academy_mosaic_from_Pompeii.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plato%27s_Academy_mosaic_from_Pompeii.jpg",
+      "fullWidth": 1614
+     },
+     "description": "Dünyadaki ilk yükseköğretim kurumu"
     },
     {
      "id": "relation/5688115",
@@ -115,7 +159,18 @@
       "country",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/View_of_the_Acropolis_Athens_%28pixinn.net%29.jpg/500px-View_of_the_Acropolis_Athens_%28pixinn.net%29.jpg",
+      "width": 500,
+      "height": 239,
+      "author": "Christophe Meneboeuf",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Acropolis_Athens_(pixinn.net).jpg",
+      "fullWidth": 1661
+     },
+     "description": "Yunan anakarasında yer alan antik kent"
     },
     {
      "id": "way/910010334",
@@ -129,7 +184,18 @@
       "notPlace",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Erechtheion_Acropolis_Athens.jpg/500px-Erechtheion_Acropolis_Athens.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Chepry 💬 ( Andrzej Barabasz ) 📷 🇵🇱",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Erechtheion_Acropolis_Athens.jpg",
+      "fullWidth": 6000
+     },
+     "description": "ancient Greek temple on the north side of the Acropolis of Athens"
     },
     {
      "id": "relation/19023844",
@@ -144,7 +210,18 @@
       "heritage",
       "ruins",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/GR-athen-panathinaiko-stadion.jpg/500px-GR-athen-panathinaiko-stadion.jpg",
+      "width": 500,
+      "height": 145,
+      "author": "Bgabel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GR-athen-panathinaiko-stadion.jpg",
+      "fullWidth": 2259
+     },
+     "description": "stadium in Athens, Greece"
     },
     {
      "id": "way/82150737",
@@ -159,7 +236,18 @@
       "ruins",
       "school",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Athens_Lyceum_Archaeological_Site_2.jpg/500px-Athens_Lyceum_Archaeological_Site_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Tomisti",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens_Lyceum_Archaeological_Site_2.jpg",
+      "fullWidth": 2272
+     },
+     "description": "public meeting place in Classical Athens"
     },
     {
      "id": "relation/12352554",
@@ -172,7 +260,18 @@
       "heritage",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Temple_of_Athena_Nik%C3%A8_from_Propylaea%2C_Acropolis%2C_Athens%2C_Greece.jpg/500px-Temple_of_Athena_Nik%C3%A8_from_Propylaea%2C_Acropolis%2C_Athens%2C_Greece.jpg",
+      "width": 500,
+      "height": 348,
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Athena_Nik%C3%A8_from_Propylaea,_Acropolis,_Athens,_Greece.jpg",
+      "fullWidth": 5988
+     },
+     "description": "ancient Greek temple built in the fifth century CE on the Acropolis of Athens in honor of Athena as the goddess of victory, located in Athens Municipality, Greece"
     },
     {
      "id": "way/63765671",
@@ -187,7 +286,18 @@
       "notPlace",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Temple_of_Olympian_Zeus_Athens_Greece_1.jpg/500px-Temple_of_Olympian_Zeus_Athens_Greece_1.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Ava Βabili",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Olympian_Zeus_Athens_Greece_1.jpg",
+      "fullWidth": 4288
+     },
+     "description": "ancient Greek temple in Athens"
     },
     {
      "id": "way/27917370",
@@ -200,7 +310,18 @@
       "heritage",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Greece-0176_%282215880732%29.jpg/500px-Greece-0176_%282215880732%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dennis G. Jarvis",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Greece-0176_(2215880732).jpg",
+      "fullWidth": 3264
+     },
+     "description": "ancient Greek temple in Athens"
     },
     {
      "id": "relation/11199493",
@@ -213,7 +334,18 @@
       "heritage",
       "organization",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/%CE%A4%CE%BF_%CE%A9%CF%81%CE%BF%CE%BB%CF%8C%CE%B3%CE%B9%CE%BF%CE%BD_%CF%84%CE%BF%CF%85_%CE%91%CE%BD%CE%B4%CF%81%CE%BF%CE%BD%CE%AF%CE%BA%CE%BF%CF%85_%CE%9A%CF%85%CF%81%CF%81%CE%AE%CF%83%CF%84%CE%BF%CF%85_%CF%83%CF%84%CE%B9%CF%82_16_%CE%A3%CE%B5%CF%80%CF%84%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85_2019.jpg/500px-%CE%A4%CE%BF_%CE%A9%CF%81%CE%BF%CE%BB%CF%8C%CE%B3%CE%B9%CE%BF%CE%BD_%CF%84%CE%BF%CF%85_%CE%91%CE%BD%CE%B4%CF%81%CE%BF%CE%BD%CE%AF%CE%BA%CE%BF%CF%85_%CE%9A%CF%85%CF%81%CF%81%CE%AE%CF%83%CF%84%CE%BF%CF%85_%CF%83%CF%84%CE%B9%CF%82_16_%CE%A3%CE%B5%CF%80%CF%84%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85_2019.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "George E. Koronaios",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A4%CE%BF_%CE%A9%CF%81%CE%BF%CE%BB%CF%8C%CE%B3%CE%B9%CE%BF%CE%BD_%CF%84%CE%BF%CF%85_%CE%91%CE%BD%CE%B4%CF%81%CE%BF%CE%BD%CE%AF%CE%BA%CE%BF%CF%85_%CE%9A%CF%85%CF%81%CF%81%CE%AE%CF%83%CF%84%CE%BF%CF%85_%CF%83%CF%84%CE%B9%CF%82_16_%CE%A3%CE%B5%CF%80%CF%84%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85_2019.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Atina, Roma Agorası'nda bulunan sekizgen mermer kule"
     },
     {
      "id": "relation/13139942",
@@ -226,7 +358,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/AncientAgoraofAthensColour.jpg/500px-AncientAgoraofAthensColour.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "https://www.flickr.com/people/jonezes/",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AncientAgoraofAthensColour.jpg",
+      "fullWidth": 800
+     },
+     "description": "Antik Atina'da siyaset, ticaret, hukuk ve sosyal hayatın merkezi olan tarihi meydan"
     },
     {
      "id": "relation/16363966",
@@ -237,7 +380,18 @@
      "wikidataId": "Q1137997",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%A3%CF%85%CE%BD%CF%84%CE%AC%CE%B3%CE%BC%CE%B1%CF%84%CE%BF%CF%82_6386.jpg/500px-%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%A3%CF%85%CE%BD%CF%84%CE%AC%CE%B3%CE%BC%CE%B1%CF%84%CE%BF%CF%82_6386.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%A3%CF%85%CE%BD%CF%84%CE%AC%CE%B3%CE%BC%CE%B1%CF%84%CE%BF%CF%82_6386.jpg",
+      "fullWidth": 4632
+     },
+     "description": "square in Athens, Greece"
     },
     {
      "id": "way/10973697",
@@ -252,7 +406,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/DionysiusTheater.jpg/500px-DionysiusTheater.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "From the German 1891 encyclopedia Joseph Kürschner (editor): “ Pierers Konversationslexikon ”. Pierers Konversationslexikon. Siebente Auflage. Mit Universal-Sprachen-Lexikon nach Prof. Joseph Kürschners System. Union. (published by) Deutsche Verlagsgesellschaft in Stuttgart, 1891. herausgegeben von (edited by) Joseph Kürschner.",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:DionysiusTheater.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DionysiusTheater.jpg",
+      "fullWidth": 754
+     },
+     "description": "antik Yunan tiyatrosu"
     },
     {
      "id": "wikidata/Q147478",
@@ -264,7 +429,18 @@
      "wikidataId": "Q147478",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Attica_06-13_Athens_27_Zappeion.jpg/500px-Attica_06-13_Athens_27_Zappeion.jpg",
+      "width": 500,
+      "height": 232,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_27_Zappeion.jpg",
+      "fullWidth": 4359
+     },
+     "description": "building in Athens, Greece"
     },
     {
      "id": "relation/13249184",
@@ -280,7 +456,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Wall_Theatre_Herodes_Atticus_Acropolis_Athens_Greece.jpg/500px-Wall_Theatre_Herodes_Atticus_Acropolis_Athens_Greece.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wall_Theatre_Herodes_Atticus_Acropolis_Athens_Greece.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Atina Akropolü'nün güneybatısında yer alan antik taş tiyatro"
     },
     {
      "id": "wikidata/Q2070605",
@@ -291,7 +478,18 @@
      "wikidataId": "Q2070605",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/NashvilleParthenon9.jpg/500px-NashvilleParthenon9.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Cdv1014",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NashvilleParthenon9.jpg",
+      "fullWidth": 3456
+     },
+     "description": "Phidias yapımı heykeltıraş"
     },
     {
      "id": "way/145662894",
@@ -302,7 +500,18 @@
      "wikidataId": "Q751024",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/1999-Kienzle-Dia_%28711%29.jpg/500px-1999-Kienzle-Dia_%28711%29.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Helmut Kienzle",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:1999-Kienzle-Dia_(711).jpg",
+      "fullWidth": 1388
+     },
+     "description": "Antik Yunan mimarlığında meclis binaları gibi resmi yapılara verilen isim"
     },
     {
      "id": "relation/2903266",
@@ -315,7 +524,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Kerameikos_Cemetery_from_Melidone_Street_on_June_19%2C_2020.jpg/500px-Kerameikos_Cemetery_from_Melidone_Street_on_June_19%2C_2020.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "George E. Koronaios",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kerameikos_Cemetery_from_Melidone_Street_on_June_19,_2020.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Yunanistan'ın başkenti Atina'nın semti"
     },
     {
      "id": "way/145662891",
@@ -340,7 +560,18 @@
       "heritage",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/%CE%92%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B8%CE%AE%CE%BA%CE%B7_%CE%91%CE%B4%CF%81%CE%B9%CE%B1%CE%BD%CE%BF%CF%8D_4165.jpg/500px-%CE%92%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B8%CE%AE%CE%BA%CE%B7_%CE%91%CE%B4%CF%81%CE%B9%CE%B1%CE%BD%CE%BF%CF%8D_4165.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%92%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B8%CE%AE%CE%BA%CE%B7_%CE%91%CE%B4%CF%81%CE%B9%CE%B1%CE%BD%CE%BF%CF%8D_4165.jpg",
+      "fullWidth": 4345
+     },
+     "description": "İmparator Hadrian tarafından Atina'da yaptırılan antik kütüphane"
     },
     {
      "id": "way/317915132",
@@ -352,7 +583,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Pnyx-berg2.png/500px-Pnyx-berg2.png",
+      "width": 500,
+      "height": 369,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pnyx-berg2.png",
+      "fullWidth": 1024
+     },
+     "description": "hill and archaeological site in Athens"
     },
     {
      "id": "wikidata/Q1263335",
@@ -364,7 +606,18 @@
      "wikidataId": "Q1263335",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Stoa_of_Attalos_at_the_Ancient_Agora_of_Athens_2.jpg/500px-Stoa_of_Attalos_at_the_Ancient_Agora_of_Athens_2.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "DerHexer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stoa_of_Attalos_at_the_Ancient_Agora_of_Athens_2.jpg",
+      "fullWidth": 1488
+     },
+     "description": "Bergama Kralı II. Attalos tarafından MÖ 2. yüzyılda inşa edilen antik revak"
     },
     {
      "id": "node/1584057565",
@@ -375,7 +628,18 @@
      "wikidataId": "Q755221",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Atena_Promacos.jpg/500px-Atena_Promacos.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Unknown artist Unknown artist",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Atena_Promacos.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Atena_Promacos.jpg",
+      "fullWidth": 612
+     },
+     "description": "ancient sculpture of Phidias in Athens Acropolis"
     },
     {
      "id": "way/713354220",
@@ -387,7 +651,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/%CE%9C%CE%B7%CF%84%CF%81%CF%8C%CF%80%CE%BF%CE%BB%CE%B7_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_3321.jpg/500px-%CE%9C%CE%B7%CF%84%CF%81%CF%8C%CF%80%CE%BF%CE%BB%CE%B7_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_3321.jpg",
+      "width": 500,
+      "height": 455,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%B7%CF%84%CF%81%CF%8C%CF%80%CE%BF%CE%BB%CE%B7_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_3321.jpg",
+      "fullWidth": 3808
+     },
+     "description": "church building in Athens, Attica Region, Greece"
     },
     {
      "id": "way/157180174",
@@ -399,7 +674,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Choragic_Monument_of_Lysicrates.jpg/500px-Choragic_Monument_of_Lysicrates.jpg",
+      "width": 500,
+      "height": 705,
+      "author": "User:Greenshed",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Choragic_Monument_of_Lysicrates.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Choragic_Monument_of_Lysicrates.jpg",
+      "fullWidth": 1932
+     },
+     "description": "Atina'da MÖ 334'de Lisikrat'ın Dionysos Tiyatrosu'ndaki ödülünü kutlamak amacıyla inşa edilmiş anıt"
     },
     {
      "id": "wikidata/Q1235440",
@@ -411,7 +697,18 @@
      "wikidataId": "Q1235440",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9C%CE%BF%CE%BD%CE%B1%CF%83%CF%84%CE%B7%CF%81%CE%B1%CE%BA%CE%AF%CE%BF%CF%85_3645.jpg/500px-%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9C%CE%BF%CE%BD%CE%B1%CF%83%CF%84%CE%B7%CF%81%CE%B1%CE%BA%CE%AF%CE%BF%CF%85_3645.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9C%CE%BF%CE%BD%CE%B1%CF%83%CF%84%CE%B7%CF%81%CE%B1%CE%BA%CE%AF%CE%BF%CF%85_3645.jpg",
+      "fullWidth": 4608
+     },
+     "description": "square and neighborhood in Athens, Greece"
     },
     {
      "id": "wikidata/Q582203",
@@ -428,7 +725,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Christmas_Concert_of_the_Athens_State_Orchestra_%2818-12-2021%29_%2803%29.jpg/500px-Christmas_Concert_of_the_Athens_State_Orchestra_%2818-12-2021%29_%2803%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "StrangeTraveler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christmas_Concert_of_the_Athens_State_Orchestra_(18-12-2021)_(03).jpg",
+      "fullWidth": 4000
+     },
+     "description": "Atina'da konser salonu, opera binası, tiyatro ve konferans merkezi"
     },
     {
      "id": "wikidata/Q646284",
@@ -440,7 +748,18 @@
      "wikidataId": "Q646284",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/20140410_60_Athens_National_Gardens_%2813824726745%29.jpg/500px-20140410_60_Athens_National_Gardens_%2813824726745%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sjaak Kempe from Groningen, The Netherlands",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20140410_60_Athens_National_Gardens_(13824726745).jpg",
+      "fullWidth": 3648
+     },
+     "description": "public park in Athens, Greece"
     },
     {
      "id": "way/442128059",
@@ -452,7 +771,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Monument_de_Philopappos_crop.jpg/500px-Monument_de_Philopappos_crop.jpg",
+      "width": 500,
+      "height": 360,
+      "author": "Eusebius",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monument_de_Philopappos_crop.jpg",
+      "fullWidth": 2120
+     },
+     "description": "Mouseion Tepesi'nde yer alan MS 119 yapımı anıt"
     },
     {
      "id": "node/8262155401",
@@ -460,7 +790,18 @@
      "lat": 37.97641,
      "lon": 23.72262,
      "wikipediaCount": 22,
-     "wikidataId": "Q936234"
+     "wikidataId": "Q936234",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Stoa_Poikile_1.jpg/500px-Stoa_Poikile_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Tomisti",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stoa_Poikile_1.jpg",
+      "fullWidth": 4000
+     },
+     "description": "Atina Agorası'nda yer alan ve Stoacılık felsefesine adını veren antik sütunlu galeri"
     },
     {
      "id": "wikidata/Q620473",
@@ -472,7 +813,18 @@
      "wikidataId": "Q620473",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Leoforos1.JPG/500px-Leoforos1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Sportingn",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Leoforos1.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Leoforos1.JPG",
+      "fullWidth": 3072
+     },
+     "description": "Atina, Yunanistan'da bir futbol stadyumu"
     },
     {
      "id": "relation/2150086",
@@ -485,7 +837,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Attica_06-13_Athens_09_Parliament.jpg/500px-Attica_06-13_Athens_09_Parliament.jpg",
+      "width": 500,
+      "height": 316,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_09_Parliament.jpg",
+      "fullWidth": 4870
+     },
+     "description": "building of the Hellenic Parliament, formerly a royal palace"
     },
     {
      "id": "wikidata/Q425754",
@@ -497,7 +860,18 @@
      "wikidataId": "Q425754",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9F%CE%BC%CE%BF%CE%BD%CE%BF%CE%AF%CE%B1%CF%82_%28Omonia_Square%29.jpg/500px-%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9F%CE%BC%CE%BF%CE%BD%CE%BF%CE%AF%CE%B1%CF%82_%28Omonia_Square%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9F%CE%BC%CE%BF%CE%BD%CE%BF%CE%AF%CE%B1%CF%82_(Omonia_Square).jpg",
+      "fullWidth": 3000
+     },
+     "description": "square in Athens, Greece"
     },
     {
      "id": "relation/12352555",
@@ -510,7 +884,18 @@
       "heritage",
       "notPlace",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Propylaea-athens.jpg/500px-Propylaea-athens.jpg",
+      "width": 500,
+      "height": 223,
+      "author": "Ricardo André Frantz ( User:Tetraktys )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Propylaea-athens.jpg",
+      "fullWidth": 1000
+     },
+     "description": "the gate of the Acropolis of Athens"
     },
     {
      "id": "way/175107932",
@@ -522,7 +907,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Attica_06-13_Athens_24_Arch_of_Hadrian.jpg/500px-Attica_06-13_Athens_24_Arch_of_Hadrian.jpg",
+      "width": 500,
+      "height": 587,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_24_Arch_of_Hadrian.jpg",
+      "fullWidth": 3373
+     },
+     "description": "Antik Roma Kemeri"
     },
     {
      "id": "way/729674900",
@@ -536,7 +932,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Tzistarakis_Mosque_on_March_7%2C_2020.jpg/500px-Tzistarakis_Mosque_on_March_7%2C_2020.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "George E. Koronaios",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tzistarakis_Mosque_on_March_7,_2020.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Atina, Yunanistan'daki bir müze"
     },
     {
      "id": "wikidata/Q2629065",
@@ -549,7 +956,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Presidential_Mansion_in_Athens.jpg/500px-Presidential_Mansion_in_Athens.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Άργος",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Mansion_in_Athens.jpg",
+      "fullWidth": 2592
+     },
+     "description": "building in Athens and official residence of the president of Greece"
     },
     {
      "id": "wikidata/Q1035075",
@@ -561,7 +979,18 @@
      "wikidataId": "Q1035075",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Aufri%C3%9F_des_Hekatompedon_mit_Andeutung_der_spateren_Erweiterung.jpg/500px-Aufri%C3%9F_des_Hekatompedon_mit_Andeutung_der_spateren_Erweiterung.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "Hermann Luckenbach",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Aufri%C3%9F_des_Hekatompedon_mit_Andeutung_der_spateren_Erweiterung.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aufri%C3%9F_des_Hekatompedon_mit_Andeutung_der_spateren_Erweiterung.jpg",
+      "fullWidth": 3707
+     },
+     "description": "ancient temple in Athens Acropolis"
     },
     {
      "id": "relation/11197557",
@@ -573,7 +1002,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Athens_Roman_Agora.jpg/500px-Athens_Roman_Agora.jpg",
+      "width": 500,
+      "height": 198,
+      "author": "Andreas Trepte",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens_Roman_Agora.jpg",
+      "fullWidth": 10188
+     },
+     "description": "Atina'da bulunan bir agora"
     },
     {
      "id": "wikidata/Q2614287",
@@ -582,7 +1022,18 @@
      "lat": 37.98459,
      "lon": 23.76087,
      "wikipediaCount": 18,
-     "wikidataId": "Q2614287"
+     "wikidataId": "Q2614287",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Athens_view_from_Kifissias_Avenue.JPG/500px-Athens_view_from_Kifissias_Avenue.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lemur12",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens_view_from_Kifissias_Avenue.JPG",
+      "fullWidth": 3264
+     },
+     "description": "building in Ampelokipoi, Attica Region, Greece"
     },
     {
      "id": "wikidata/Q902329",
@@ -595,7 +1046,66 @@
       "heritage",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/SanctuaryofArtemisBrauronia3D.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "CyberMonk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SanctuaryofArtemisBrauronia3D.jpg",
+      "fullWidth": 460
+     },
+     "description": "ancient temple in the Acropolis of Athens"
+    },
+    {
+     "id": "wikidata/Q2615369",
+     "name": "Kutsal Havariler Kilisesi, Atina",
+     "localName": "Church of the Holy Apostles",
+     "lat": 37.97408,
+     "lon": 23.72392,
+     "wikipediaCount": 18,
+     "wikidataId": "Q2615369",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Attica_06-13_Athens_21_View_from_Acropolis_Hill_-_Agia_Apostoli.jpg/500px-Attica_06-13_Athens_21_View_from_Acropolis_Hill_-_Agia_Apostoli.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_21_View_from_Acropolis_Hill_-_Agia_Apostoli.jpg",
+      "fullWidth": 4862
+     },
+     "description": "restored medieval church in Agora excavations, Athens"
+    },
+    {
+     "id": "way/208068229",
+     "name": "Φετιχιέ Τζαμί",
+     "lat": 37.9745,
+     "lon": 23.72657,
+     "wikipediaCount": 18,
+     "wikidataId": "Q5445954",
+     "kinds": [
+      "heritage",
+      "organization",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/%CE%A6%CE%B5%CF%84%CE%B9%CF%87%CE%B9%CE%AD_%CE%A4%CE%B6%CE%B1%CE%BC%CE%AF%2C_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1_4250.jpg/500px-%CE%A6%CE%B5%CF%84%CE%B9%CF%87%CE%B9%CE%AD_%CE%A4%CE%B6%CE%B1%CE%BC%CE%AF%2C_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1_4250.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A6%CE%B5%CF%84%CE%B9%CF%87%CE%B9%CE%AD_%CE%A4%CE%B6%CE%B1%CE%BC%CE%AF,_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1_4250.jpg",
+      "fullWidth": 4632
+     },
+     "description": "Yunanistan'ın Atina kentinde tarihi cami"
     }
    ]
   },
@@ -616,7 +1126,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg/500px-Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg",
+      "width": 500,
+      "height": 264,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg",
+      "fullWidth": 11560
+     },
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "way/983921252",
@@ -632,7 +1153,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg/500px-View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg",
+      "width": 500,
+      "height": 237,
+      "author": "Yair-haklai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "way/23183030",
@@ -648,7 +1180,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Benaki_Museum_Athens.JPG/500px-Benaki_Museum_Athens.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Dimboukas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Benaki_Museum_Athens.JPG",
+      "fullWidth": 4000
+     },
+     "description": "museum in Kolonaki, Athens, Greece"
     },
     {
      "id": "way/220890927",
@@ -663,7 +1206,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Cycladic_female_figurine_2.jpg/500px-Cycladic_female_figurine_2.jpg",
+      "width": 500,
+      "height": 1046,
+      "author": "User:Mountain",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cycladic_female_figurine_2.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cycladic_female_figurine_2.jpg",
+      "fullWidth": 527
+     },
+     "description": "museum in Athens"
     },
     {
      "id": "way/318587297",
@@ -678,7 +1232,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/BCMA_Villa_Ilissia.jpg/500px-BCMA_Villa_Ilissia.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Marsyas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BCMA_Villa_Ilissia.jpg",
+      "fullWidth": 3264
+     },
+     "description": "Yunanistan'daki bir sanat müzesi"
     },
     {
      "id": "node/3844131091",
@@ -692,7 +1257,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%CE%99%CE%BB%CE%AF%CE%BF%CF%85_%CE%9C%CE%AD%CE%BB%CE%B1%CE%B8%CF%81%CE%BF%CE%BD_6649.jpg/500px-%CE%99%CE%BB%CE%AF%CE%BF%CF%85_%CE%9C%CE%AD%CE%BB%CE%B1%CE%B8%CF%81%CE%BF%CE%BD_6649.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%99%CE%BB%CE%AF%CE%BF%CF%85_%CE%9C%CE%AD%CE%BB%CE%B1%CE%B8%CF%81%CE%BF%CE%BD_6649.jpg",
+      "fullWidth": 4562
+     },
+     "description": "museum"
     },
     {
      "id": "wikidata/Q822101",
@@ -704,7 +1280,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Balanos_Vasilopoulos_-_National_Historical_Museum%2C_Athens.jpg/500px-Balanos_Vasilopoulos_-_National_Historical_Museum%2C_Athens.jpg",
+      "width": 500,
+      "height": 505,
+      "author": "Archaeaoris",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Balanos_Vasilopoulos_-_National_Historical_Museum,_Athens.jpg",
+      "fullWidth": 5596
+     },
+     "description": "museum in Athens"
     },
     {
      "id": "way/318587299",
@@ -720,7 +1307,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Artillery_Officer_pouch_%281852-1868%29_-_Athens_War_Museum.jpg/500px-Artillery_Officer_pouch_%281852-1868%29_-_Athens_War_Museum.jpg",
+      "width": 500,
+      "height": 423,
+      "author": "Archaeaoris",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Artillery_Officer_pouch_(1852-1868)_-_Athens_War_Museum.jpg",
+      "fullWidth": 2173
+     },
+     "description": "Atina'da bulunan bir savaş müzesi"
     },
     {
      "id": "way/217268333",
@@ -734,7 +1332,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/KAMA_Fa%C3%A7ade_mus%C3%A9e.jpg/500px-KAMA_Fa%C3%A7ade_mus%C3%A9e.jpg",
+      "width": 500,
+      "height": 308,
+      "author": "Marsyas",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KAMA_Fa%C3%A7ade_mus%C3%A9e.jpg",
+      "fullWidth": 800
+     },
+     "description": "museum in Athens"
     },
     {
      "id": "node/10655452393",
@@ -748,7 +1357,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "way/195162372",
@@ -763,7 +1373,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/The_Jewish_Museum_of_Greece.jpg/500px-The_Jewish_Museum_of_Greece.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Dafniotis",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Jewish_Museum_of_Greece.jpg",
+      "fullWidth": 1872
+     },
+     "description": "museum in Athens"
     },
     {
      "id": "relation/19040143",
@@ -778,7 +1399,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/%CE%9C%CE%AD%CE%B3%CE%B1%CF%81%CE%BF_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CE%AC%CF%82_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg/500px-%CE%9C%CE%AD%CE%B3%CE%B1%CF%81%CE%BF_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CE%AC%CF%82_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Sylva-ae",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%AD%CE%B3%CE%B1%CF%81%CE%BF_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CE%AC%CF%82_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg",
+      "fullWidth": 5944
+     },
+     "description": "neoclassical building in Athens, Greece"
     },
     {
      "id": "node/3005463590",
@@ -793,7 +1425,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Epigraphical_Museum_of_Athens.jpg/500px-Epigraphical_Museum_of_Athens.jpg",
+      "width": 500,
+      "height": 368,
+      "author": "Hoverfish",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Epigraphical_Museum_of_Athens.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Epigraphical_Museum_of_Athens.jpg",
+      "fullWidth": 968
+     },
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "way/285129067",
@@ -807,7 +1450,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Museum_of_the_City_of_Athens.jpg/500px-Museum_of_the_City_of_Athens.jpg",
+      "width": 500,
+      "height": 425,
+      "author": "Hoverfish",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_the_City_of_Athens.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_the_City_of_Athens.jpg",
+      "fullWidth": 837
+     },
+     "description": "museum in Greece"
     },
     {
      "id": "way/400456875",
@@ -822,7 +1476,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Building_of_the_Basil_%26_Elise_Goulandris_Foundation_%28cropped%29.jpg/500px-Building_of_the_Basil_%26_Elise_Goulandris_Foundation_%28cropped%29.jpg",
+      "width": 500,
+      "height": 391,
+      "author": "Rlbberlin",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Building_of_the_Basil_%26_Elise_Goulandris_Foundation_(cropped).jpg",
+      "fullWidth": 3481
+     },
+     "description": "museum in Pangrati, Athens, Greece"
     },
     {
      "id": "way/220926060",
@@ -837,7 +1502,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Building_during_the_day_%28B._%26_M._Theocharakis_Foundation_for_the_Fine_Arts_and_Music%29.jpg/500px-Building_during_the_day_%28B._%26_M._Theocharakis_Foundation_for_the_Fine_Arts_and_Music%29.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "B & M Theocharakis Foundation for the Fine Arts and Music.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Building_during_the_day_(B._%26_M._Theocharakis_Foundation_for_the_Fine_Arts_and_Music).jpg",
+      "fullWidth": 3024
+     },
+     "description": "foundation and art gallery in Athens"
     },
     {
      "id": "way/851609464",
@@ -852,7 +1528,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%99%CF%83%CF%84%CE%BF%CF%81%CE%AF%CE%B1%CF%82_%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%B7%CE%BC%CE%AF%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_4257.jpg/500px-%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%99%CF%83%CF%84%CE%BF%CF%81%CE%AF%CE%B1%CF%82_%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%B7%CE%BC%CE%AF%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_4257.jpg",
+      "width": 500,
+      "height": 394,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%99%CF%83%CF%84%CE%BF%CF%81%CE%AF%CE%B1%CF%82_%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%B7%CE%BC%CE%AF%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_4257.jpg",
+      "fullWidth": 4032
+     },
+     "description": "university museum in Athens, Greece"
     },
     {
      "id": "way/223175510",
@@ -866,7 +1553,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8E%CE%BD_%CE%9B%CE%B1%CF%8A%CE%BA%CF%8E%CE%BD_%CE%9F%CF%81%CE%B3%CE%AC%CE%BD%CF%89%CE%BD_1549.jpg/500px-%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8E%CE%BD_%CE%9B%CE%B1%CF%8A%CE%BA%CF%8E%CE%BD_%CE%9F%CF%81%CE%B3%CE%AC%CE%BD%CF%89%CE%BD_1549.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8E%CE%BD_%CE%9B%CE%B1%CF%8A%CE%BA%CF%8E%CE%BD_%CE%9F%CF%81%CE%B3%CE%AC%CE%BD%CF%89%CE%BD_1549.jpg",
+      "fullWidth": 3283
+     },
+     "description": "musical instrument museum in Athens, Greece"
     },
     {
      "id": "node/10992115218",
@@ -878,7 +1576,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/%CE%A0%CE%BD%CE%B5%CF%85%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C_%CE%9A%CE%AD%CE%BD%CF%84%CF%81%CE%BF_%CF%84%CE%BF%CF%85_%CE%94%CE%AE%CE%BC%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CE%B1%CE%AF%CF%89%CE%BD_6645.jpg/500px-%CE%A0%CE%BD%CE%B5%CF%85%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C_%CE%9A%CE%AD%CE%BD%CF%84%CF%81%CE%BF_%CF%84%CE%BF%CF%85_%CE%94%CE%AE%CE%BC%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CE%B1%CE%AF%CF%89%CE%BD_6645.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BD%CE%B5%CF%85%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C_%CE%9A%CE%AD%CE%BD%CF%84%CF%81%CE%BF_%CF%84%CE%BF%CF%85_%CE%94%CE%AE%CE%BC%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CE%B1%CE%AF%CF%89%CE%BD_6645.jpg",
+      "fullWidth": 4512
+     },
+     "description": "museum in Greece"
     },
     {
      "id": "way/316768543",
@@ -893,7 +1602,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "car museum in Athens"
     },
     {
      "id": "node/11486548887",
@@ -907,7 +1617,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Maria_Callas_Museum.jpg/500px-Maria_Callas_Museum.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Michael Bednarek",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maria_Callas_Museum.jpg",
+      "fullWidth": 1718
+     },
+     "description": "museum in Athens, Greece dedicated to the renowned Greek soprano Maria Callas"
     },
     {
      "id": "way/219472242",
@@ -921,7 +1642,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Municipal_Gallery_of_Athens_002.jpg/500px-Municipal_Gallery_of_Athens_002.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "KathyB111",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Municipal_Gallery_of_Athens_002.jpg",
+      "fullWidth": 2309
+     },
+     "description": "art museum"
     },
     {
      "id": "way/267551016",
@@ -936,7 +1668,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Ilias_Lalaounis_Jewelry_Museum.jpg/500px-Ilias_Lalaounis_Jewelry_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Hoverfish",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ilias_Lalaounis_Jewelry_Museum.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ilias_Lalaounis_Jewelry_Museum.jpg",
+      "fullWidth": 840
+     },
+     "description": "nonprofit museum specializing in the decorative arts and the art of jewelry"
     },
     {
      "id": "way/177282540",
@@ -950,7 +1693,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Frissiras_Museum.jpg/500px-Frissiras_Museum.jpg",
+      "width": 500,
+      "height": 700,
+      "author": "Hoverfish",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Frissiras_Museum.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frissiras_Museum.jpg",
+      "fullWidth": 600
+     },
+     "description": "contemporary art museum in Greece"
     },
     {
      "id": "way/223018298",
@@ -964,7 +1718,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/%CE%9B%CE%BF%CF%85%CF%84%CF%81%CF%8C_%CF%84%CF%89%CE%BD_%CE%91%CE%AD%CF%81%CE%B7%CE%B4%CF%89%CE%BD.jpg/500px-%CE%9B%CE%BF%CF%85%CF%84%CF%81%CF%8C_%CF%84%CF%89%CE%BD_%CE%91%CE%AD%CF%81%CE%B7%CE%B4%CF%89%CE%BD.jpg",
+      "width": 500,
+      "height": 812,
+      "author": "Postscriptum123",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9B%CE%BF%CF%85%CF%84%CF%81%CF%8C_%CF%84%CF%89%CE%BD_%CE%91%CE%AD%CF%81%CE%B7%CE%B4%CF%89%CE%BD.jpg",
+      "fullWidth": 3576
+     },
+     "description": "Ottoman bath in Athens"
     },
     {
      "id": "way/914492222",
@@ -980,7 +1745,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/%CE%91%CF%81%CF%87%CE%BF%CE%BD%CF%84%CE%B9%CE%BA%CF%8C_%CE%9C%CF%80%CE%B5%CE%BD%CE%B9%CE%B6%CE%AD%CE%BB%CE%BF%CF%85_6545.jpg/500px-%CE%91%CF%81%CF%87%CE%BF%CE%BD%CF%84%CE%B9%CE%BA%CF%8C_%CE%9C%CF%80%CE%B5%CE%BD%CE%B9%CE%B6%CE%AD%CE%BB%CE%BF%CF%85_6545.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%91%CF%81%CF%87%CE%BF%CE%BD%CF%84%CE%B9%CE%BA%CF%8C_%CE%9C%CF%80%CE%B5%CE%BD%CE%B9%CE%B6%CE%AD%CE%BB%CE%BF%CF%85_6545.jpg",
+      "fullWidth": 4632
+     },
+     "description": "Ottoman-era house in Athens"
     },
     {
      "id": "way/383407579",
@@ -996,7 +1772,8 @@
       "cinema",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "film archive, museum and cinema in Athens, Greece"
     },
     {
      "id": "way/449650393",
@@ -1009,7 +1786,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Athens Greece"
     },
     {
      "id": "node/13556107171",
@@ -1021,7 +1799,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Athens%2C_Greece_-_panoramio_%28214%29.jpg/500px-Athens%2C_Greece_-_panoramio_%28214%29.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "Jan M",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens,_Greece_-_panoramio_(214).jpg",
+      "fullWidth": 3552
+     },
+     "description": "archaeological museum in Athens, Greece"
     },
     {
      "id": "way/220890939",
@@ -1033,7 +1822,18 @@
      "wikidataId": "Q3195477",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Stathatos_Mansion_side.jpg/500px-Stathatos_Mansion_side.jpg",
+      "width": 500,
+      "height": 356,
+      "author": "Badseed",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stathatos_Mansion_side.jpg",
+      "fullWidth": 2888
+     },
+     "description": "building in Attica Region, Attica Region, Greece"
     },
     {
      "id": "way/321114256",
@@ -1048,7 +1848,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Thiseio, Athens"
     },
     {
      "id": "node/4840589548",
@@ -1062,7 +1863,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "small museum in Athens with digital displays on Plato and his academy"
     },
     {
      "id": "way/223874917",
@@ -1076,7 +1878,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "way/132639902",
@@ -1088,7 +1891,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "node/3912027436",
@@ -1103,7 +1907,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Athens, Greece"
     },
     {
      "id": "way/175877498",
@@ -1118,7 +1923,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Greece"
     },
     {
      "id": "way/219467101",
@@ -1132,7 +1938,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Museum_of_traditional_pottery.jpg/500px-Museum_of_traditional_pottery.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Hoverfish",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_traditional_pottery.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_traditional_pottery.jpg",
+      "fullWidth": 999
+     },
+     "description": "folk art museum in Athens, Greece"
     },
     {
      "id": "way/834539464",
@@ -1146,7 +1963,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Hatzimichali_house_in_Plaka%2C_Athens.jpg/500px-Hatzimichali_house_in_Plaka%2C_Athens.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "DIMSFIKAS",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hatzimichali_house_in_Plaka,_Athens.jpg",
+      "fullWidth": 1944
+     },
+     "description": "museum in Greece"
     },
     {
      "id": "node/4777483721",

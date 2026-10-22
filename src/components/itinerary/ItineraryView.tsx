@@ -16,6 +16,7 @@ import { buildItinerary, type DayTag, type ItineraryInput, type PlanDay, type Pl
 import { CATEGORIES } from "@/lib/places/categories";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
+import { useNearViewport } from "@/lib/useNearViewport";
 
 const ItineraryMap = dynamic(() => import("./ItineraryMap"), {
   ssr: false,
@@ -296,6 +297,7 @@ export function ItineraryView({
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const day = plan.days.find((d) => d.number === (selectedDay ?? firstWithStops)) ?? plan.days[0];
   const isWide = useSyncExternalStore(subscribeWide, () => window.matchMedia("(min-width: 48rem)").matches, () => false);
+  const [mapBox, mapNear] = useNearViewport<HTMLDivElement>("200px");
   const [mapOnPhone, setMapOnPhone] = useState(false);
   const mapRef = useRef<HTMLDivElement>(null);
   // Bumped when a day is chosen on a phone, where the map sits below all days; the effect scrolls to it after render.
@@ -437,19 +439,27 @@ export function ItineraryView({
           ))}
         </div>
         <div ref={mapRef} className="min-w-0 scroll-mt-6 print:hidden md:sticky md:top-6">
-          {isWide || mapOnPhone ? (
-            <>
-              <Caption as="p" className="mb-2">
-                {String(day.number).padStart(2, "0")}. GÜN · {dayLabel(day.date)} · {day.stops.length} DURAK
-              </Caption>
-              <ItineraryMap stops={day.stops} center={center} />
-            </>
-          ) : (
-            <button type="button" className={buttonClasses({ variant: "secondary", className: "w-full" })} onClick={() => setMapOnPhone(true)}>
-              <MapIcon aria-hidden="true" size={16} strokeWidth={1.5} />
-              Günün haritasını göster
-            </button>
-          )}
+          {/* Always rendered, so the in-view check has an element from the first render on. */}
+          <div ref={mapBox}>
+            {isWide || mapOnPhone ? (
+              <>
+                <Caption as="p" className="mb-2">
+                  {String(day.number).padStart(2, "0")}. GÜN · {dayLabel(day.date)} · {day.stops.length} DURAK
+                </Caption>
+                {/* MapLibre starts when the map comes into view, not with the page. */}
+                {mapNear || mapOnPhone ? (
+                  <ItineraryMap stops={day.stops} center={center} />
+                ) : (
+                  <Skeleton className="h-80 w-full rounded-md md:h-[28rem]" />
+                )}
+              </>
+            ) : (
+              <button type="button" className={buttonClasses({ variant: "secondary", className: "w-full" })} onClick={() => setMapOnPhone(true)}>
+                <MapIcon aria-hidden="true" size={16} strokeWidth={1.5} />
+                Günün haritasını göster
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

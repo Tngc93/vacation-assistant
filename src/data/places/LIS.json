@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "LIS",
- "fetchedAt": "2026-10-18T16:08:30.914Z",
+ "fetchedAt": "2026-10-22T05:17:01.617Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
       "heritage",
       "religious",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/1502_legte_K%C3%B6nig_Manuel_I._den_Grundstein_f%C3%BCr_das_Hieronymus_Kloster_in_Lissabon._06.jpg/500px-1502_legte_K%C3%B6nig_Manuel_I._den_Grundstein_f%C3%BCr_das_Hieronymus_Kloster_in_Lissabon._06.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:1502_legte_K%C3%B6nig_Manuel_I._den_Grundstein_f%C3%BCr_das_Hieronymus_Kloster_in_Lissabon._06.jpg",
+      "fullWidth": 5769
+     },
+     "description": "building in Santa Maria de Belém, Lisbon District, Portugal"
     },
     {
      "id": "wikidata/Q432290",
@@ -67,7 +78,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Lisboa_May_2013-1.jpg/500px-Lisboa_May_2013-1.jpg",
+      "width": 500,
+      "height": 599,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_May_2013-1.jpg",
+      "fullWidth": 4897
+     },
+     "description": "Roman Catholic Cathedral located in Lisbon, Portugal"
     },
     {
      "id": "way/677181958",
@@ -80,7 +102,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Plaza_del_Comercio%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_01-03_PAN.jpg/500px-Plaza_del_Comercio%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_01-03_PAN.jpg",
+      "width": 500,
+      "height": 84,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plaza_del_Comercio,_Lisboa,_Portugal,_2012-05-12,_DD_01-03_PAN.jpg",
+      "fullWidth": 11313
+     },
+     "description": "square in Lisbon, Portugal"
     },
     {
      "id": "way/1382432568",
@@ -96,7 +129,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/Castelo_Sao_Jorge_Lisboa_1.JPG",
+      "width": 500,
+      "height": 666,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castelo_Sao_Jorge_Lisboa_1.JPG",
+      "fullWidth": 394
+     },
+     "description": "Moorish castle in Lisbon, Portugal"
     },
     {
      "id": "wikidata/Q804032",
@@ -108,7 +152,18 @@
      "wikidataId": "Q804032",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/View_from_the_Santa_Justa_Lift.jpg/500px-View_from_the_Santa_Justa_Lift.jpg",
+      "width": 500,
+      "height": 119,
+      "author": "Ana from Monmouth County, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_from_the_Santa_Justa_Lift.jpg",
+      "fullWidth": 3807
+     },
+     "description": "Portekiz'de bir bölge"
     },
     {
      "id": "way/98656587",
@@ -124,7 +179,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/MNAA.jpg/500px-MNAA.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Fulviusbsas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MNAA.jpg",
+      "fullWidth": 1040
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/115238861",
@@ -135,7 +201,18 @@
      "wikidataId": "Q168001",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Elevador_de_Santa_Justa%2C_Lisboa%2C_Portugal%2C_2022-07-24%2C_DD_07.jpg/500px-Elevador_de_Santa_Justa%2C_Lisboa%2C_Portugal%2C_2022-07-24%2C_DD_07.jpg",
+      "width": 500,
+      "height": 1756,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Elevador_de_Santa_Justa,_Lisboa,_Portugal,_2022-07-24,_DD_07.jpg",
+      "fullWidth": 1205
+     },
+     "description": "cultural heritage monument in Lisboa, Portugal"
     },
     {
      "id": "wikidata/Q99636",
@@ -147,7 +224,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Double_%2843063912952%29.jpg/500px-Double_%2843063912952%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "rippchenmitkraut66 from Rodgau, Deutschland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Double_(43063912952).jpg",
+      "fullWidth": 1922
+     },
+     "description": "funicular in Lisbon, Portugal"
     },
     {
      "id": "way/9253917",
@@ -162,7 +250,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Exterior_of_Igreja_de_Santa_Engr%C3%A1cia_70.jpg/500px-Exterior_of_Igreja_de_Santa_Engr%C3%A1cia_70.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Kent Wang",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exterior_of_Igreja_de_Santa_Engr%C3%A1cia_70.jpg",
+      "fullWidth": 5424
+     },
+     "description": "church in Lisbon"
     },
     {
      "id": "wikidata/Q1464499",
@@ -177,7 +276,18 @@
       "office",
       "palace",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Parlamento_April_2009-1a.jpg/500px-Parlamento_April_2009-1a.jpg",
+      "width": 500,
+      "height": 160,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parlamento_April_2009-1a.jpg",
+      "fullWidth": 5051
+     },
+     "description": "building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "relation/3310877",
@@ -192,7 +302,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Igreja_e_Mosteiro_de_S%C3%A3o_Vicente_de_Fora.jpg/500px-Igreja_e_Mosteiro_de_S%C3%A3o_Vicente_de_Fora.jpg",
+      "width": 500,
+      "height": 280,
+      "author": "Deensel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_e_Mosteiro_de_S%C3%A3o_Vicente_de_Fora.jpg",
+      "fullWidth": 1413
+     },
+     "description": "church and monastery in Lisbon"
     },
     {
      "id": "way/1317749306",
@@ -203,7 +324,18 @@
      "wikidataId": "Q1549270",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Pra%C3%A7a_Don_Pedro_IV_%28Rossio%29.jpg/500px-Pra%C3%A7a_Don_Pedro_IV_%28Rossio%29.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Bznein",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_Don_Pedro_IV_(Rossio).jpg",
+      "fullWidth": 2080
+     },
+     "description": "Lizbon, Portekiz'de meydan"
     },
     {
      "id": "wikidata/Q1146936",
@@ -218,7 +350,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Teatro_Nacional_de_S%C3%A3o_Carlos_2021-04-20.png/500px-Teatro_Nacional_de_S%C3%A3o_Carlos_2021-04-20.png",
+      "width": 500,
+      "height": 389,
+      "author": "RickMorais",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Nacional_de_S%C3%A3o_Carlos_2021-04-20.png",
+      "fullWidth": 3856
+     },
+     "description": "opera house in Lisbon, Portugal"
     },
     {
      "id": "way/96359439",
@@ -232,7 +375,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Main_facade_of_Bas%C3%ADlica_da_Estrela_57.jpg/500px-Main_facade_of_Bas%C3%ADlica_da_Estrela_57.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Kent Wang",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Main_facade_of_Bas%C3%ADlica_da_Estrela_57.jpg",
+      "fullWidth": 4196
+     },
+     "description": "church building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "way/41683195",
@@ -243,7 +397,18 @@
      "wikidataId": "Q637590",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-03_13-33-44_s.jpg/500px-Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-03_13-33-44_s.jpg",
+      "width": 500,
+      "height": 670,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-03_13-33-44_s.jpg",
+      "fullWidth": 4724
+     },
+     "description": "triumphal arch"
     },
     {
      "id": "wikidata/Q790492",
@@ -256,7 +421,18 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Avenida_da_Liberdade_%2822344060581%29_%28cropped%29.jpg/500px-Avenida_da_Liberdade_%2822344060581%29_%28cropped%29.jpg",
+      "width": 500,
+      "height": 600,
+      "author": "Alexander Svensson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Avenida_da_Liberdade_(22344060581)_(cropped).jpg",
+      "fullWidth": 2612
+     },
+     "description": "cultural heritage monument in Lisboa, Portugal"
     },
     {
      "id": "wikidata/Q1470414",
@@ -272,7 +448,18 @@
       "organization",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Lissabon_-_Convento_do_Carmo_from_Castle.jpg/500px-Lissabon_-_Convento_do_Carmo_from_Castle.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lissabon_-_Convento_do_Carmo_from_Castle.jpg",
+      "fullWidth": 6000
+     },
+     "description": "former monastery of the Carmelite Order in Lisbon"
     },
     {
      "id": "wikidata/Q431458",
@@ -285,7 +472,18 @@
       "heritage",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Lisboa_Esta%C3%A7%C3%A3o_do_Rossio_%2853820098461%29.jpg/500px-Lisboa_Esta%C3%A7%C3%A3o_do_Rossio_%2853820098461%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_Esta%C3%A7%C3%A3o_do_Rossio_(53820098461).jpg",
+      "fullWidth": 5828
+     },
+     "description": "railway station in Portugal"
     },
     {
      "id": "wikidata/Q1078864",
@@ -299,7 +497,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Igreja_de_Sao_Roque_-_panoramio.jpg/500px-Igreja_de_Sao_Roque_-_panoramio.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mister No",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_de_Sao_Roque_-_panoramio.jpg",
+      "fullWidth": 3600
+     },
+     "description": "Lizbon'da kilise"
     },
     {
      "id": "wikidata/Q959567",
@@ -311,7 +520,18 @@
      "wikidataId": "Q959567",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Lisboa_-_Pra%C3%A7a_dos_Restauradores_%2853868860069%29.jpg/500px-Lisboa_-_Pra%C3%A7a_dos_Restauradores_%2853868860069%29.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Pra%C3%A7a_dos_Restauradores_(53868860069).jpg",
+      "fullWidth": 5914
+     },
+     "description": "Portekiz'in başkenti Lizbon'da bulunan ünlü bir meydan"
     },
     {
      "id": "wikidata/Q1939953",
@@ -322,7 +542,18 @@
      "wikidataId": "Q1939953",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Ribeira-Braun-1598.jpg/500px-Ribeira-Braun-1598.jpg",
+      "width": 500,
+      "height": 410,
+      "author": "Georg Braun and Franz Hogenberg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ribeira-Braun-1598.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ribeira-Braun-1598.jpg",
+      "fullWidth": 608
+     },
+     "description": "building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "wikidata/Q2034183",
@@ -330,7 +561,18 @@
      "lat": 38.72825,
      "lon": -9.15283,
      "wikipediaCount": 14,
-     "wikidataId": "Q2034183"
+     "wikidataId": "Q2034183",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Parque_Eduardo_Setimo.JPG/500px-Parque_Eduardo_Setimo.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parque_Eduardo_Setimo.JPG",
+      "fullWidth": 640
+     },
+     "description": "park in Lisbon, Portugal"
     },
     {
      "id": "wikidata/Q1305091",
@@ -341,7 +583,18 @@
      "wikidataId": "Q1305091",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Lisbon_With_Langon_-_120_%283467138688%29.jpg/500px-Lisbon_With_Langon_-_120_%283467138688%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Kyle Taylor from London, 84 Countries",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisbon_With_Langon_-_120_(3467138688).jpg",
+      "fullWidth": 4272
+     },
+     "description": "square in Lisbon"
     },
     {
      "id": "wikidata/Q601430",
@@ -349,7 +602,18 @@
      "lat": 38.71056,
      "lon": -9.14222,
      "wikipediaCount": 13,
-     "wikidataId": "Q601430"
+     "wikidataId": "Q601430",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/LisbonChiado1-CCBYSA.jpg/500px-LisbonChiado1-CCBYSA.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Scalleja [2]",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:LisbonChiado1-CCBYSA.jpg",
+      "fullWidth": 1536
+     },
+     "description": "square in Lisbon, Portugal"
     },
     {
      "id": "way/1378977865",
@@ -361,7 +625,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Ascensor_da_Bica_01.JPG/500px-Ascensor_da_Bica_01.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "BKP",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ascensor_da_Bica_01.JPG",
+      "fullWidth": 3456
+     },
+     "description": "funicular in Lisbon, Portugal"
     },
     {
      "id": "wikidata/Q3113484",
@@ -373,7 +648,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Fachada_da_sinagoga_Shaare_Tikva%2C_em_Lisboa.jpg/500px-Fachada_da_sinagoga_Shaare_Tikva%2C_em_Lisboa.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Boaz Gabriel Canhoto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_da_sinagoga_Shaare_Tikva,_em_Lisboa.jpg",
+      "fullWidth": 900
+     },
+     "description": "building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "wikidata/Q1807096",
@@ -384,7 +670,18 @@
      "wikidataId": "Q1807096",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Lisbon_Portugal_February_2015_13.jpg/500px-Lisbon_Portugal_February_2015_13.jpg",
+      "width": 500,
+      "height": 190,
+      "author": "Bengt Nyman",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisbon_Portugal_February_2015_13.jpg",
+      "fullWidth": 7283
+     },
+     "description": "square in Lisbon, Portugal"
     },
     {
      "id": "wikidata/Q116125",
@@ -397,7 +694,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Lisboa_DSC00338_%2836409369424%29.jpg/500px-Lisboa_DSC00338_%2836409369424%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "nborges from Portugal",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_DSC00338_(36409369424).jpg",
+      "fullWidth": 5472
+     },
+     "description": "dramatic theatre in Lisbon, Portugal"
     },
     {
      "id": "wikidata/Q1638625",
@@ -406,7 +714,18 @@
      "lat": 38.71478,
      "lon": -9.12694,
      "wikipediaCount": 12,
-     "wikidataId": "Q1638625"
+     "wikidataId": "Q1638625",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Mosteiro_de_S%C3%A3o_Vicente_de_Fora_007.jpg/500px-Mosteiro_de_S%C3%A3o_Vicente_de_Fora_007.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Alegna13",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mosteiro_de_S%C3%A3o_Vicente_de_Fora_007.jpg",
+      "fullWidth": 3456
+     },
+     "description": "building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "way/1378960265",
@@ -418,7 +737,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Lavra%27s_Lift.jpg/500px-Lavra%27s_Lift.jpg",
+      "width": 500,
+      "height": 803,
+      "author": "Pedro Simões",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lavra%27s_Lift.jpg",
+      "fullWidth": 1894
+     },
+     "description": "funicular in Lisbon, Portugal"
     },
     {
      "id": "way/96319696",
@@ -432,7 +762,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Igreja-Antonio1.jpg/500px-Igreja-Antonio1.jpg",
+      "width": 500,
+      "height": 577,
+      "author": "SchiDD",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja-Antonio1.jpg",
+      "fullWidth": 1446
+     },
+     "description": "Lizbon'da kilise"
     },
     {
      "id": "node/5470684978",
@@ -443,7 +784,18 @@
      "wikidataId": "Q732394",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tipuana_tipu.jpg/500px-Tipuana_tipu.jpg",
+      "width": 500,
+      "height": 643,
+      "author": "Felagund",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tipuana_tipu.jpg",
+      "fullWidth": 2618
+     },
+     "description": "bitki cinsi"
     },
     {
      "id": "way/96628628",
@@ -455,7 +807,18 @@
      "wikidataId": "Q2700618",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Lisboa_May_2013-12.jpg/500px-Lisboa_May_2013-12.jpg",
+      "width": 500,
+      "height": 434,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_May_2013-12.jpg",
+      "fullWidth": 6237
+     },
+     "description": "building in Lisbon"
     },
     {
      "id": "way/96758903",
@@ -468,7 +831,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Exterior_of_Igreja_de_Santa_Luzia_%28Lisbon%29_44.jpg/500px-Exterior_of_Igreja_de_Santa_Luzia_%28Lisbon%29_44.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kent Wang",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exterior_of_Igreja_de_Santa_Luzia_(Lisbon)_44.jpg",
+      "fullWidth": 5705
+     },
+     "description": "Lizbon'da kilise"
     },
     {
      "id": "relation/19438496",
@@ -481,7 +855,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Pal%C3%A1cio_da_Bemposta%2C_Arroios%2C_Lisboa_02.jpg/500px-Pal%C3%A1cio_da_Bemposta%2C_Arroios%2C_Lisboa_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "GualdimG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_da_Bemposta,_Arroios,_Lisboa_02.jpg",
+      "fullWidth": 1210
+     },
+     "description": "palace in Lisbon"
     },
     {
      "id": "relation/12988834",
@@ -496,7 +881,18 @@
       "organization",
       "palace",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Exterior_of_Pal%C3%A1cio_das_Necessidades_%28Lisbon%29_47.jpg/500px-Exterior_of_Pal%C3%A1cio_das_Necessidades_%28Lisbon%29_47.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kent Wang",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exterior_of_Pal%C3%A1cio_das_Necessidades_(Lisbon)_47.jpg",
+      "fullWidth": 6341
+     },
+     "description": "building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "way/150216146",
@@ -511,7 +907,18 @@
       "business",
       "farFromItem",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Casa_da_Moeda_Jorge_Segurado_6704.jpg/500px-Casa_da_Moeda_Jorge_Segurado_6704.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Manuelvbotelho",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_da_Moeda_Jorge_Segurado_6704.jpg",
+      "fullWidth": 1000
+     },
+     "description": "mint in Portugal"
     },
     {
      "id": "way/155449351",
@@ -525,7 +932,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Fragata_D._Fernando_II_e_Gl%C3%B3ria_em_Lisboa_-_Portugal_%28124390122%29.jpg/500px-Fragata_D._Fernando_II_e_Gl%C3%B3ria_em_Lisboa_-_Portugal_%28124390122%29.jpg",
+      "width": 500,
+      "height": 736,
+      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fragata_D._Fernando_II_e_Gl%C3%B3ria_em_Lisboa_-_Portugal_(124390122).jpg",
+      "fullWidth": 869
+     },
+     "description": "sailing frigate of the Portuguese Navy (1843-1940)"
     },
     {
      "id": "way/1413022125",
@@ -541,7 +959,18 @@
       "cinema",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Cinemateca_de_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2853664180193%29_%28cropped%29.jpg/500px-Cinemateca_de_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2853664180193%29_%28cropped%29.jpg",
+      "width": 500,
+      "height": 381,
+      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cinemateca_de_Lisboa_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(53664180193)_(cropped).jpg",
+      "fullWidth": 1588
+     },
+     "description": "film archive in Lisbon, Portugal"
     },
     {
      "id": "relation/3324508",
@@ -555,7 +984,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Igreja_da_Graca_-_panoramio.jpg/500px-Igreja_da_Graca_-_panoramio.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "Mister No",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_da_Graca_-_panoramio.jpg",
+      "fullWidth": 3600
+     },
+     "description": "Catholic building in Lisbon"
     },
     {
      "id": "relation/1402729",
@@ -567,7 +1007,18 @@
      "wikidataId": "Q959578",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/PalacioMayer.JPG/500px-PalacioMayer.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "CorreiaPM",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:PalacioMayer.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PalacioMayer.JPG",
+      "fullWidth": 4320
+     },
+     "description": "Lizbon'da saray"
     },
     {
      "id": "way/96359446",
@@ -582,7 +1033,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Igreja_do_Loreto_no_Exterior.jpg/500px-Igreja_do_Loreto_no_Exterior.jpg",
+      "width": 500,
+      "height": 466,
+      "author": "Igreja do Loreto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_do_Loreto_no_Exterior.jpg",
+      "fullWidth": 2232
+     },
+     "description": "Lizbon'da kilise"
     },
     {
      "id": "relation/11699003",
@@ -601,7 +1063,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Lisboa_-_Ru%C3%ADnas_do_Teatro_Romano.jpg/500px-Lisboa_-_Ru%C3%ADnas_do_Teatro_Romano.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Concierge.2C",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Ru%C3%ADnas_do_Teatro_Romano.jpg",
+      "fullWidth": 3872
+     },
+     "description": "Roman theater in Lisbon, Portugal"
     }
    ]
   },
@@ -623,7 +1096,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/MNAA.jpg/500px-MNAA.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Fulviusbsas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MNAA.jpg",
+      "fullWidth": 1040
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/1451054092",
@@ -638,7 +1122,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_%2846913633574%29.jpg/500px-Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_%2846913633574%29.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_(46913633574).jpg",
+      "fullWidth": 3663
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/96321716",
@@ -653,7 +1148,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Lisbonne_Mus%C3%A9e_du_Chiado.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Sergio Calleja (Life is a trip) from Barcelona, Spain",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisbonne_Mus%C3%A9e_du_Chiado.jpg",
+      "fullWidth": 375
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/1101604733",
@@ -668,7 +1174,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Museu_do_Fado_Lisbon_Portugal_01.png",
+      "width": 500,
+      "height": 667,
+      "author": "pt:Usuário:nemracc",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_do_Fado_Lisbon_Portugal_01.png",
+      "fullWidth": 480
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/237926937",
@@ -683,7 +1200,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Museu_da_%C3%81gua.JPG/500px-Museu_da_%C3%81gua.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_da_%C3%81gua.JPG",
+      "fullWidth": 3264
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/4419041593",
@@ -698,7 +1226,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/AljubeSecXX.jpg",
+      "width": 500,
+      "height": 682,
+      "author": "Arquivo Fotográfico Municipal",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:AljubeSecXX.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AljubeSecXX.jpg",
+      "fullWidth": 500
+     },
+     "description": "building in Lisbon, Lisbon District, Portugal"
     },
     {
      "id": "node/5068486965",
@@ -713,7 +1252,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Lisbonne_-_Couvent_des_Carles_-_Vue_g%C3%A9n%C3%A9rale.jpg/500px-Lisbonne_-_Couvent_des_Carles_-_Vue_g%C3%A9n%C3%A9rale.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisbonne_-_Couvent_des_Carles_-_Vue_g%C3%A9n%C3%A9rale.jpg",
+      "fullWidth": 5545
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/5089643622",
@@ -729,7 +1279,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/ANF1975.jpg/500px-ANF1975.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "João Carvalho",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ANF1975.jpg",
+      "fullWidth": 2608
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "relation/11699003",
@@ -748,7 +1309,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Lisboa_-_Ru%C3%ADnas_do_Teatro_Romano.jpg/500px-Lisboa_-_Ru%C3%ADnas_do_Teatro_Romano.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Concierge.2C",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Ru%C3%ADnas_do_Teatro_Romano.jpg",
+      "fullWidth": 3872
+     },
+     "description": "Roman theater in Lisbon, Portugal"
     },
     {
      "id": "way/272545758",
@@ -763,7 +1335,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Atelier-Museu_J%C3%BAlio_Pomar.jpg/500px-Atelier-Museu_J%C3%BAlio_Pomar.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "GualdimG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Atelier-Museu_J%C3%BAlio_Pomar.jpg",
+      "fullWidth": 3840
+     },
+     "description": "art museum in Lisbon"
     },
     {
      "id": "node/5088757633",
@@ -778,7 +1361,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Casa_Fernando_Pessoa.jpg/500px-Casa_Fernando_Pessoa.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lijealso",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Fernando_Pessoa.jpg",
+      "fullWidth": 3648
+     },
+     "description": "cultural center in Lisbon, Portugal"
     },
     {
      "id": "relation/1396217",
@@ -794,7 +1388,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/MUDE_03.jpg/500px-MUDE_03.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "DiogoBaptista",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MUDE_03.jpg",
+      "fullWidth": 3813
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/3128158245",
@@ -809,7 +1414,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Museu_da_Marioneta.jpg/500px-Museu_da_Marioneta.jpg",
+      "width": 500,
+      "height": 627,
+      "author": "Hipersyl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_da_Marioneta.jpg",
+      "fullWidth": 2439
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/5090471910",
@@ -824,7 +1440,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Casa_Museu_Ant%C3%B3nio_Medeiros_e_Almeida.jpg/500px-Casa_Museu_Ant%C3%B3nio_Medeiros_e_Almeida.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Redpill 87",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Museu_Ant%C3%B3nio_Medeiros_e_Almeida.jpg",
+      "fullWidth": 4706
+     },
+     "description": "museum in Lisbon, Portugal"
     },
     {
      "id": "way/96497160",
@@ -840,7 +1467,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/M_militar_lisboa.jpg/500px-M_militar_lisboa.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Carlos Luis M C da Cruz",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:M_militar_lisboa.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M_militar_lisboa.jpg",
+      "fullWidth": 3264
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/95408856",
@@ -856,7 +1494,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Museu_da_%C3%81gua.JPG/500px-Museu_da_%C3%81gua.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_da_%C3%81gua.JPG",
+      "fullWidth": 3264
+     },
+     "description": "historic reservoir in Lisbon, Portugal"
     },
     {
      "id": "way/1321540227",
@@ -871,7 +1520,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Casa-Museu_Dr._Anast%C3%A1cio_Gon%C3%A7alves_-_Casa_de_Malhoa.JPG/500px-Casa-Museu_Dr._Anast%C3%A1cio_Gon%C3%A7alves_-_Casa_de_Malhoa.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Juntas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa-Museu_Dr._Anast%C3%A1cio_Gon%C3%A7alves_-_Casa_de_Malhoa.JPG",
+      "fullWidth": 1572
+     },
+     "description": "house-museum located in Lisbon"
     },
     {
      "id": "relation/1396247",
@@ -885,7 +1545,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Escola_Polit%C3%A9cnica_de_Lisboa.jpg/500px-Escola_Polit%C3%A9cnica_de_Lisboa.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jsobral",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Escola_Polit%C3%A9cnica_de_Lisboa.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/5089643629",
@@ -901,7 +1572,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Museu_das_Comunica%C3%A7%C3%B5es_Lisboa.jpg/500px-Museu_das_Comunica%C3%A7%C3%B5es_Lisboa.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Hipersyl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_das_Comunica%C3%A7%C3%B5es_Lisboa.jpg",
+      "fullWidth": 4128
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/1623055925",
@@ -916,7 +1598,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Academia_das_Ci%C3%AAncias_de_Lisboa.jpg/500px-Academia_das_Ci%C3%AAncias_de_Lisboa.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "GualdimG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Academia_das_Ci%C3%AAncias_de_Lisboa.jpg",
+      "fullWidth": 3840
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/2503411074",
@@ -930,7 +1623,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Lisbon%2C_view_from_Arco_Triunfal_to_the_Lisboa_Story_Centre.JPG/500px-Lisbon%2C_view_from_Arco_Triunfal_to_the_Lisboa_Story_Centre.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Dguendel",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lisbon,_view_from_Arco_Triunfal_to_the_Lisboa_Story_Centre.JPG",
+      "fullWidth": 2657
+     }
     },
     {
      "id": "way/160122854",
@@ -943,7 +1646,17 @@
      "wikidataId": "Q2145587",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Patriarcal_Reservoir_05.jpg/500px-Patriarcal_Reservoir_05.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nicola",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Patriarcal_Reservoir_05.jpg",
+      "fullWidth": 4320
+     }
     },
     {
      "id": "way/96188746",
@@ -956,7 +1669,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Lissabon-Praca_dos_Restauradores-06-Palacio_da_Foz-2011-gje_%28cropped%29.jpg/500px-Lissabon-Praca_dos_Restauradores-06-Palacio_da_Foz-2011-gje_%28cropped%29.jpg",
+      "width": 500,
+      "height": 308,
+      "author": "Gerd Eichmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lissabon-Praca_dos_Restauradores-06-Palacio_da_Foz-2011-gje_(cropped).jpg",
+      "fullWidth": 4939
+     },
+     "description": "Lizbon'da saray"
     },
     {
      "id": "way/96322171",
@@ -971,7 +1695,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Largo_de_Santo_Ant%C3%B3nio_da_S%C3%A9%2C_Lisbon%2C_May_2017_%2802%29.JPG/500px-Largo_de_Santo_Ant%C3%B3nio_da_S%C3%A9%2C_Lisbon%2C_May_2017_%2802%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Ardfern",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Largo_de_Santo_Ant%C3%B3nio_da_S%C3%A9,_Lisbon,_May_2017_(02).JPG",
+      "fullWidth": 4896
+     }
     },
     {
      "id": "node/13174527080",
@@ -986,7 +1720,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Museu_de_S._Roque.jpg/500px-Museu_de_S._Roque.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "José Goulão from Lisbon, Portugal",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_de_S._Roque.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/4693994869",
@@ -1001,7 +1746,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Fachada_do_Museu_e_Jardim-Escola_Jo%C3%A3o_de_Deus.jpg/500px-Fachada_do_Museu_e_Jardim-Escola_Jo%C3%A3o_de_Deus.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Camilla Morselli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_do_Museu_e_Jardim-Escola_Jo%C3%A3o_de_Deus.jpg",
+      "fullWidth": 6720
+     }
     },
     {
      "id": "node/4822780021",
@@ -1016,7 +1771,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Grande_Oriente_Lusitano_entrada.JPG/500px-Grande_Oriente_Lusitano_entrada.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Fotografado por Lightwarrior2",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Grande_Oriente_Lusitano_entrada.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grande_Oriente_Lusitano_entrada.JPG",
+      "fullWidth": 2432
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/5089643625",
@@ -1030,7 +1796,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Museu_Maynense%2C_Academia_das_Ci%C3%AAncias_de_Lisboa_01.jpg/500px-Museu_Maynense%2C_Academia_das_Ci%C3%AAncias_de_Lisboa_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "GualdimG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Maynense,_Academia_das_Ci%C3%AAncias_de_Lisboa_01.jpg",
+      "fullWidth": 2197
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "way/97708551",
@@ -1045,7 +1822,17 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Hospital_Miguel_Bombarda.jpg/500px-Hospital_Miguel_Bombarda.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Lijealso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hospital_Miguel_Bombarda.jpg",
+      "fullWidth": 2048
+     }
     },
     {
      "id": "node/5068486966",
@@ -1061,7 +1848,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Pal%C3%A1cio_Foz_-_Museu_Nacional_do_Desporto.JPG/500px-Pal%C3%A1cio_Foz_-_Museu_Nacional_do_Desporto.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Hipersyl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_Foz_-_Museu_Nacional_do_Desporto.JPG",
+      "fullWidth": 4608
+     },
+     "description": "Lizbon'da müze"
     },
     {
      "id": "node/4853563821",
@@ -1075,7 +1873,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Lisbon, Portugal"
     },
     {
      "id": "node/13096661171",
@@ -1089,7 +1888,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Asian art museum in Lisbon, Portugal"
     },
     {
      "id": "node/1802199762",
@@ -1113,7 +1913,17 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Casa_de_Am%C3%A1lia_Rodrigue_na_Rua_de_S%C3%A3o_Bento%2C_Lisboa_-_Am%C3%A1lia_Rodrigues%27_house_on_Rua_de_S%C3%A3o_Bento%2C_Lisbon_%2851003544688%29.jpg/500px-Casa_de_Am%C3%A1lia_Rodrigue_na_Rua_de_S%C3%A3o_Bento%2C_Lisboa_-_Am%C3%A1lia_Rodrigues%27_house_on_Rua_de_S%C3%A3o_Bento%2C_Lisbon_%2851003544688%29.jpg",
+      "width": 500,
+      "height": 644,
+      "author": "Jens Cederskjold from København S, Danmark",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_de_Am%C3%A1lia_Rodrigue_na_Rua_de_S%C3%A3o_Bento,_Lisboa_-_Am%C3%A1lia_Rodrigues%27_house_on_Rua_de_S%C3%A3o_Bento,_Lisbon_(51003544688).jpg",
+      "fullWidth": 3881
+     }
     },
     {
      "id": "node/8809108805",
@@ -1146,7 +1956,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/F%C3%A1brica_de_Tecidos_de_Seda_%2819247380456%29.jpg/500px-F%C3%A1brica_de_Tecidos_de_Seda_%2819247380456%29.jpg",
+      "width": 500,
+      "height": 744,
+      "author": "Pedro Ribeiro Simões from Lisboa, Portugal",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:F%C3%A1brica_de_Tecidos_de_Seda_(19247380456).jpg",
+      "fullWidth": 2944
+     },
+     "description": "building and former mill in Lisbon, Portugal"
     },
     {
      "id": "node/9749140958",
@@ -1176,7 +1997,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Portuguese_National_Republican_Guard_%28GNR%29_headquarters%2C_Lisbon%2C_Portugal.jpg/500px-Portuguese_National_Republican_Guard_%28GNR%29_headquarters%2C_Lisbon%2C_Portugal.jpg",
+      "width": 500,
+      "height": 679,
+      "author": "Jose Manuel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Portuguese_National_Republican_Guard_(GNR)_headquarters,_Lisbon,_Portugal.jpg",
+      "fullWidth": 2565
+     },
+     "description": "Lizbon'da müze"
     }
    ]
   },
@@ -1195,7 +2027,18 @@
      "wikidataId": "Q6837314",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/MiradouroSantaLuzia.JPG/500px-MiradouroSantaLuzia.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:MiradouroSantaLuzia.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MiradouroSantaLuzia.JPG",
+      "fullWidth": 1600
+     },
+     "description": "viewpoint in Alfama, Lisbon, Portugal"
     },
     {
      "id": "node/419313189",
@@ -1207,7 +2050,18 @@
      "wikidataId": "Q6672039",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/JardimSPedroAlcantara.JPG/500px-JardimSPedroAlcantara.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "CorreiaPM",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:JardimSPedroAlcantara.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:JardimSPedroAlcantara.JPG",
+      "fullWidth": 1600
+     },
+     "description": "park in Portugal"
     },
     {
      "id": "relation/19112367",
@@ -1219,7 +2073,17 @@
      "wikidataId": "Q2744066",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Miradouro_da_Gra%C3%A7a.jpg/500px-Miradouro_da_Gra%C3%A7a.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Filipe Rocha,user:sacavem (pt) http://pt.wikipedia.org/wiki/Usu%C3%A1rio:Sacavem",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Miradouro_da_Gra%C3%A7a.jpg",
+      "fullWidth": 2576
+     }
     },
     {
      "id": "node/4771391278",
@@ -1228,7 +2092,18 @@
      "lon": -9.14141,
      "address": "Travessa do Torel",
      "wikipediaCount": 2,
-     "wikidataId": "Q10306349"
+     "wikidataId": "Q10306349",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Jardim_do_Torel_Lisboa_10.jpg/500px-Jardim_do_Torel_Lisboa_10.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "GualdimG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jardim_do_Torel_Lisboa_10.jpg",
+      "fullWidth": 1565
+     },
+     "description": "garden in Santo António (Lisbon), Portugal"
     },
     {
      "id": "way/727424336",
@@ -1979,7 +2854,18 @@
      "openingHours": "Mo-Su 08:00-02:00",
      "cuisine": "portuguese, coffee shop",
      "wikidataId": "Q2547006",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/A_BRASILEIRA_DO_CHIADO.jpg/500px-A_BRASILEIRA_DO_CHIADO.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "VDT2021",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A_BRASILEIRA_DO_CHIADO.jpg",
+      "fullWidth": 1024
+     },
+     "description": "café in Lisbon, situated in Largo do Chiado"
     },
     {
      "id": "node/4133726068",
@@ -2432,7 +3318,18 @@
      "lat": 38.71815,
      "lon": -9.14565,
      "website": "https://www.hcp.pt/",
-     "wikidataId": "Q1343207"
+     "wikidataId": "Q1343207",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Hot_clube4.jpg/500px-Hot_clube4.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "self",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hot_clube4.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hot_clube4.jpg",
+      "fullWidth": 591
+     },
+     "description": "historic Portuguese jazz club & jazz school"
     },
     {
      "id": "way/96497162",

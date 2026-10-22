@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "DOH",
- "fetchedAt": "2026-10-18T16:58:03.250Z",
+ "fetchedAt": "2026-10-22T06:28:35.135Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,8 @@
      "kinds": [
       "notPlace",
       "sportsVenue"
-     ]
+     ],
+     "description": "football stadium in Doha"
     },
     {
      "id": "wikidata/Q39049425",
@@ -65,7 +66,18 @@
      "wikidataId": "Q39049425",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/2022_FIFA_World_Cup_at_Al_Thumama_Stadium.jpg/500px-2022_FIFA_World_Cup_at_Al_Thumama_Stadium.jpg",
+      "width": 500,
+      "height": 225,
+      "author": "Adnen1985",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2022_FIFA_World_Cup_at_Al_Thumama_Stadium.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Stadium in Doha, Qatar"
     },
     {
      "id": "way/43688092",
@@ -76,7 +88,18 @@
      "wikidataId": "Q4117959",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Souq_Waqif%2C_Doha%2C_Catar%2C_2013-08-05%2C_DD_09.JPG/500px-Souq_Waqif%2C_Doha%2C_Catar%2C_2013-08-05%2C_DD_09.JPG",
+      "width": 500,
+      "height": 363,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Souq_Waqif,_Doha,_Catar,_2013-08-05,_DD_09.JPG",
+      "fullWidth": 4812
+     },
+     "description": "souq (market) in Doha, in the state of Qatar"
     },
     {
      "id": "wikidata/Q3057368",
@@ -88,7 +111,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Doha%2C_centro_islamico_culturale_Abdullah_Bin_Zaid_Al_Mahmoud_01.jpg/500px-Doha%2C_centro_islamico_culturale_Abdullah_Bin_Zaid_Al_Mahmoud_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Doha,_centro_islamico_culturale_Abdullah_Bin_Zaid_Al_Mahmoud_01.jpg",
+      "fullWidth": 5306
+     },
+     "description": "Qatari mosque"
     },
     {
      "id": "wikidata/Q1234812",
@@ -102,7 +136,18 @@
       "promenade",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Doha_Chorniche%2C_Qatar_-_panoramio.jpg/500px-Doha_Chorniche%2C_Qatar_-_panoramio.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "Jaseem Hamza",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Doha_Chorniche,_Qatar_-_panoramio.jpg",
+      "fullWidth": 1505
+     },
+     "description": "waterfront promenade in Doha, Qatar"
     },
     {
      "id": "way/25991879",
@@ -115,7 +160,18 @@
      "kinds": [
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Doha_Palace.jpg/500px-Doha_Palace.jpg",
+      "width": 500,
+      "height": 382,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Doha_Palace.jpg",
+      "fullWidth": 1112
+     },
+     "description": "building in Doha, Qatar"
     },
     {
      "id": "way/156199789",
@@ -128,7 +184,8 @@
       "farFromItem",
       "port",
       "station"
-     ]
+     ],
+     "description": "Port / District in Capital Governorate, Kuwait"
     },
     {
      "id": "node/5996041085",
@@ -223,7 +280,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/IslamicArtMuseumDohaSkyline.jpg/500px-IslamicArtMuseumDohaSkyline.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "Mohamod Fasil",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:IslamicArtMuseumDohaSkyline.jpg",
+      "fullWidth": 1000
+     },
+     "description": "art museum in Doha, Qatar"
     },
     {
      "id": "way/680315530",
@@ -248,7 +316,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Doha, Qatar"
     },
     {
      "id": "way/524170026",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "MOW",
- "fetchedAt": "2026-10-18T16:52:32.733Z",
+ "fetchedAt": "2026-10-22T06:20:59.008Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Kremlin_and_Red_Square.1.jpg/500px-Kremlin_and_Red_Square.1.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "mos.ru",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kremlin_and_Red_Square.1.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Rusya, Moskova'da yer alan meydan"
     },
     {
      "id": "relation/1360641",
@@ -68,7 +79,18 @@
       "heritage",
       "office",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Moscow_05-2012_Kremlin_22.jpg/500px-Moscow_05-2012_Kremlin_22.jpg",
+      "width": 500,
+      "height": 316,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_05-2012_Kremlin_22.jpg",
+      "fullWidth": 4338
+     },
+     "description": "Moskova, Rusya'da müstahkem kompleks"
     },
     {
      "id": "relation/3030568",
@@ -84,7 +106,18 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/00_0568_Saint_Basil%27s_Cathedral_-_Moscow.jpg/500px-00_0568_Saint_Basil%27s_Cathedral_-_Moscow.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_0568_Saint_Basil%27s_Cathedral_-_Moscow.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Moskova'da bulunan bir katedral"
     },
     {
      "id": "wikidata/Q138908",
@@ -99,7 +132,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Moscow_-_2025_-_Facade_of_Big_Theatre_%281%29.jpg/500px-Moscow_-_2025_-_Facade_of_Big_Theatre_%281%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Юрий Д.К.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_-_2025_-_Facade_of_Big_Theatre_(1).jpg",
+      "fullWidth": 8256
+     },
+     "description": "Moskova'da bulunan tarihi bir tiyatro"
     },
     {
      "id": "wikidata/Q202163",
@@ -113,7 +157,18 @@
       "attraction",
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/LuzhnikiStadium.jpg/500px-LuzhnikiStadium.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "Government of Moscow Press centre",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:LuzhnikiStadium.jpg",
+      "fullWidth": 1600
+     },
+     "description": "football stadium in Moscow, Russia"
     },
     {
      "id": "relation/3272726",
@@ -128,7 +183,18 @@
      "kinds": [
       "attraction",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/0_234_Roter_Platz_%28Lenin-Mausoleum.jpg/500px-0_234_Roter_Platz_%28Lenin-Mausoleum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0_234_Roter_Platz_(Lenin-Mausoleum.jpg",
+      "fullWidth": 2490
+     },
+     "description": "architectural structure in Red Square, Moscow, Russia"
     },
     {
      "id": "wikidata/Q1048694",
@@ -142,7 +208,18 @@
       "attraction",
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/RIAN_archive_169374_Moscow%27s_Russian_State_Library.jpg/500px-RIAN_archive_169374_Moscow%27s_Russian_State_Library.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Valeriy Shustov / Валерий Шустов",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_169374_Moscow%27s_Russian_State_Library.jpg",
+      "fullWidth": 1024
+     },
+     "description": "national public library in Moscow, Russia"
     },
     {
      "id": "wikidata/Q181324",
@@ -159,7 +236,18 @@
       "musicVenue",
       "performingArts",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D0%BE%D0%BC.jpg/500px-%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D0%BE%D0%BC.jpg",
+      "width": 500,
+      "height": 1023,
+      "author": "Klodklodklod77",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D0%BE%D0%BC.jpg",
+      "fullWidth": 6443
+     },
+     "description": "Moskova'da bir radyo televizyon kulesi"
     },
     {
      "id": "wikidata/Q211560",
@@ -172,7 +260,18 @@
      "kinds": [
       "adminArea",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/MIBC_in_November_23.jpg_%28cropped%29.jpg/500px-MIBC_in_November_23.jpg_%28cropped%29.jpg",
+      "width": 500,
+      "height": 383,
+      "author": "Igorkhait (cropped by Siktira )",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MIBC_in_November_23.jpg_(cropped).jpg",
+      "fullWidth": 1080
+     },
+     "description": "commercial district in central Moscow, Russia"
     },
     {
      "id": "relation/9938302",
@@ -184,7 +283,18 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Feodor_Chaliapin_signed.jpg/500px-Feodor_Chaliapin_signed.jpg",
+      "width": 500,
+      "height": 669,
+      "author": "Unknown (Bibliothèque nationale et universitaire de Strasbourg, France)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Feodor_Chaliapin_signed.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Feodor_Chaliapin_signed.jpg",
+      "fullWidth": 987
+     },
+     "description": "Russian opera singer and actor (1873-1938)"
     },
     {
      "id": "wikidata/Q215539",
@@ -201,7 +311,8 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "description": "Moskova'da yüksek müzik eğitim kurumu"
     },
     {
      "id": "wikidata/Q208175",
@@ -214,7 +325,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Novodevichy_cemetery.jpg/500px-Novodevichy_cemetery.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Novodevichy_cemetery.jpg",
+      "fullWidth": 1280
+     },
+     "description": "Moskova, Rusya'da bir mezarlık"
     },
     {
      "id": "node/311999396",
@@ -226,7 +348,18 @@
      "wikidataId": "Q147881",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Moscow_July_2011-10a.jpg/500px-Moscow_July_2011-10a.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_July_2011-10a.jpg",
+      "fullWidth": 3559
+     },
+     "description": "large artillery piece from 1586"
     },
     {
      "id": "node/311999397",
@@ -237,7 +370,18 @@
      "wikidataId": "Q147875",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/00_4841_Tsar_Bell_-_Moscow_Kremlin.jpg/500px-00_4841_Tsar_Bell_-_Moscow_Kremlin.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_4841_Tsar_Bell_-_Moscow_Kremlin.jpg",
+      "fullWidth": 1867
+     },
+     "description": "Bell on display in Moscow Kremlin"
     },
     {
      "id": "wikidata/Q94193",
@@ -246,7 +390,18 @@
      "lat": 55.74947,
      "lon": 37.53724,
      "wikipediaCount": 41,
-     "wikidataId": "Q94193"
+     "wikidataId": "Q94193",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Federation_Tower_in_July_2016.jpg/500px-Federation_Tower_in_July_2016.jpg",
+      "width": 500,
+      "height": 882,
+      "author": "Igor3188",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Federation_Tower_in_July_2016.jpg",
+      "fullWidth": 597
+     },
+     "description": "complex of skyscrapers"
     },
     {
      "id": "relation/3028585",
@@ -260,7 +415,18 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Dormition_%28Kremlin%29.JPG/500px-Dormition_%28Kremlin%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "User:Smack",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Dormition_(Kremlin).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dormition_(Kremlin).JPG",
+      "fullWidth": 1536
+     },
+     "description": "Moskova'da bir kilise"
     },
     {
      "id": "relation/3330565",
@@ -277,7 +443,42 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D0%93%D0%A3%D0%9C_%281%29.jpg/500px-%D0%93%D0%A3%D0%9C_%281%29.jpg",
+      "width": 500,
+      "height": 176,
+      "author": "Skif-Kerch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%A3%D0%9C_(1).jpg",
+      "fullWidth": 6612
+     },
+     "description": "Alışveriş Merkezi"
+    },
+    {
+     "id": "wikidata/Q1130019",
+     "name": "Kremlin Duvarı Mezarlığı",
+     "localName": "Kremlin Wall Necropolis",
+     "lat": 55.75378,
+     "lon": 37.61931,
+     "wikipediaCount": 38,
+     "wikidataId": "Q1130019",
+     "kinds": [
+      "heritage",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Kremlin_Wall_Necropolis_04.JPG/500px-Kremlin_Wall_Necropolis_04.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Tothkaroj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kremlin_Wall_Necropolis_04.JPG",
+      "fullWidth": 2048
+     },
+     "description": "cemetery"
     },
     {
      "id": "wikidata/Q646334",
@@ -291,7 +492,18 @@
       "attraction",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Lubyanka_CDM_view_from_Panoramic_view_point_05-2015_img03.jpg/500px-Lubyanka_CDM_view_from_Panoramic_view_point_05-2015_img03.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lubyanka_CDM_view_from_Panoramic_view_point_05-2015_img03.jpg",
+      "fullWidth": 4834
+     },
+     "description": "popular name for the headquarters of the KGB and affiliated prison on Lubyanka Square in Moscow, Russia"
     },
     {
      "id": "wikidata/Q613676",
@@ -303,7 +515,8 @@
      "wikidataId": "Q613676",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "description": "zoo in Moscow, Russia"
     },
     {
      "id": "wikidata/Q844124",
@@ -317,20 +530,18 @@
       "attraction",
       "heritage",
       "office"
-     ]
-    },
-    {
-     "id": "wikidata/Q1130019",
-     "name": "Kremlin Duvarı Mezarlığı",
-     "localName": "Kremlin Wall Necropolis",
-     "lat": 55.75378,
-     "lon": 37.61931,
-     "wikipediaCount": 37,
-     "wikidataId": "Q1130019",
-     "kinds": [
-      "heritage",
-      "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/%D0%94%D0%BE%D0%BC_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4.jpg/500px-%D0%94%D0%BE%D0%BC_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Крылов Иван",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BC_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0_%D0%A0%D0%A4.jpg",
+      "fullWidth": 5616
+     },
+     "description": "government building in Moscow"
     },
     {
      "id": "wikidata/Q3679864",
@@ -343,7 +554,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Moscow_Cathedral_Mosque_%2822079109675%29.jpg/500px-Moscow_Cathedral_Mosque_%2822079109675%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Gennady Grachev from Moscow, Russia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_Cathedral_Mosque_(22079109675).jpg",
+      "fullWidth": 2882
+     },
+     "description": "mosque in Moscow"
     },
     {
      "id": "wikidata/Q1200275",
@@ -356,7 +578,8 @@
       "attraction",
       "heritage",
       "station"
-     ]
+     ],
+     "description": "Moscow Metro station on the Koltsevaya Line"
     },
     {
      "id": "relation/225033",
@@ -369,7 +592,18 @@
       "attraction",
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Moscow_09-13_img20_Grand_Kremlin_Palace.jpg/500px-Moscow_09-13_img20_Grand_Kremlin_Palace.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_09-13_img20_Grand_Kremlin_Palace.jpg",
+      "fullWidth": 5023
+     },
+     "description": "Rusya cumhurbaşkanının resmi çalışma konutu olarak hizmet veren saray"
     },
     {
      "id": "relation/1359243",
@@ -382,7 +616,18 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg/500px-Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg",
+      "width": 500,
+      "height": 626,
+      "author": "shakko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg",
+      "fullWidth": 1432
+     },
+     "description": "church in Moscow, Russia"
     },
     {
      "id": "wikidata/Q126877",
@@ -397,7 +642,8 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "description": "Moskova'da bir park"
     },
     {
      "id": "wikidata/Q1200389",
@@ -410,7 +656,18 @@
       "attraction",
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Metro_MSK_Line5_Novoslobodskaya.jpg/500px-Metro_MSK_Line5_Novoslobodskaya.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Florstein ( Telegram: WikiPhoto.Space )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Metro_MSK_Line5_Novoslobodskaya.jpg",
+      "fullWidth": 3200
+     },
+     "description": "Moscow Metro station"
     },
     {
      "id": "relation/1736667",
@@ -423,7 +680,18 @@
      "kinds": [
       "attraction",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/2026-05-22_%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D0%B0_7284-01.png/500px-2026-05-22_%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D0%B0_7284-01.png",
+      "width": 500,
+      "height": 333,
+      "author": "Ппресс-служба Градостроительного комплекса Москвы",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2026-05-22_%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D0%B0_7284-01.png",
+      "fullWidth": 1600
+     },
+     "description": "Moskova'da bir gar"
     },
     {
      "id": "wikidata/Q1140402",
@@ -437,7 +705,18 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/00l_2010_Moskau%2C_Kathedrale_der_Maria_von_Kasan.jpg/500px-00l_2010_Moskau%2C_Kathedrale_der_Maria_von_Kasan.jpg",
+      "width": 500,
+      "height": 422,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00l_2010_Moskau,_Kathedrale_der_Maria_von_Kasan.jpg",
+      "fullWidth": 2609
+     },
+     "description": "church in Moscow, Russia"
     },
     {
      "id": "wikidata/Q1369676",
@@ -452,7 +731,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Maly_Theatr.jpg/500px-Maly_Theatr.jpg",
+      "width": 500,
+      "height": 262,
+      "author": "Kopchiowski O.P.",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maly_Theatr.jpg",
+      "fullWidth": 2128
+     },
+     "description": "theatre company in Moscow, Russia"
     },
     {
      "id": "relation/1359251",
@@ -465,7 +755,18 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/The_Cathedral_of_the_Annunciation.jpg/500px-The_Cathedral_of_the_Annunciation.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger Zscheyge",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Cathedral_of_the_Annunciation.jpg",
+      "fullWidth": 1600
+     },
+     "description": "church in Moscow, Russia"
     },
     {
      "id": "wikidata/Q32960",
@@ -477,7 +778,8 @@
      "wikidataId": "Q32960",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "description": "indoor arena located in Moscow, Russia"
     },
     {
      "id": "relation/1360656",
@@ -492,7 +794,18 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Spasskaya_Tower_-_Red_Square_-_Moscow4.jpg/500px-Spasskaya_Tower_-_Red_Square_-_Moscow4.jpg",
+      "width": 500,
+      "height": 880,
+      "author": "Юрий Д.К.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spasskaya_Tower_-_Red_Square_-_Moscow4.jpg",
+      "fullWidth": 2196
+     },
+     "description": "tower of the Moscow Kremlin"
     },
     {
      "id": "relation/1453198",
@@ -505,7 +818,18 @@
       "attraction",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE-%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%A8%D1%83%D1%85%D0%BE%D0%B2%D0%B0_%D0%BD%D0%B0_%D0%A8%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B5_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_2024.png/500px-%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE-%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%A8%D1%83%D1%85%D0%BE%D0%B2%D0%B0_%D0%BD%D0%B0_%D0%A8%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B5_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_2024.png",
+      "width": 500,
+      "height": 755,
+      "author": "Никонико962",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE-%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%A8%D1%83%D1%85%D0%BE%D0%B2%D0%B0_%D0%BD%D0%B0_%D0%A8%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B5_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_2024.png",
+      "fullWidth": 3264
+     },
+     "description": "a broadcasting tower in Moscow designed by Vladimir Shukhov"
     },
     {
      "id": "wikidata/Q957441",
@@ -520,7 +844,18 @@
       "heritage",
       "religious",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Ivan_the_Great_Bell_Tower_Kremlin.ru.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Presidential Press and Information Office",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ivan_the_Great_Bell_Tower_Kremlin.ru.jpg",
+      "fullWidth": 500
+     },
+     "description": "church building in Moscow"
     },
     {
      "id": "wikidata/Q2721257",
@@ -533,7 +868,18 @@
       "attraction",
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Ploshchad_revolyutsii_Metro_2010.jpg/500px-Ploshchad_revolyutsii_Metro_2010.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ploshchad_revolyutsii_Metro_2010.jpg",
+      "fullWidth": 3456
+     },
+     "description": "Moscow Metro station"
     },
     {
      "id": "wikidata/Q657306",
@@ -547,7 +893,8 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Roman Catholic Cathedral of the Immaculate Conception of the Holy Virgin Mary"
     },
     {
      "id": "relation/2261797",
@@ -561,7 +908,18 @@
       "heritage",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5_%D0%B4%D0%BD%D0%B5%D0%BC.jpg/500px-%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5_%D0%B4%D0%BD%D0%B5%D0%BC.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Sachkv",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%B2_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5_%D0%B4%D0%BD%D0%B5%D0%BC.jpg",
+      "fullWidth": 5352
+     },
+     "description": "railway station"
     },
     {
      "id": "relation/16492515",
@@ -572,7 +930,18 @@
      "wikidataId": "Q2075146",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/2014_Moscow_Tomb_of_the_Unknown_Soldier_2.JPG/500px-2014_Moscow_Tomb_of_the_Unknown_Soldier_2.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Moscowjob.net",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2014_Moscow_Tomb_of_the_Unknown_Soldier_2.JPG",
+      "fullWidth": 4752
+     },
+     "description": "war memorial in Moscow, Russia"
     },
     {
      "id": "wikidata/Q1472498",
@@ -585,7 +954,18 @@
      "kinds": [
       "attraction",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Alexander_Garden_Gates.JPG/500px-Alexander_Garden_Gates.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Минеева Ю. (Julmin)",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alexander_Garden_Gates.JPG",
+      "fullWidth": 2592
+     },
+     "description": "urban public park in Moscow, Russia"
     },
     {
      "id": "wikidata/Q2604365",
@@ -598,7 +978,18 @@
       "attraction",
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Metro_MSK_Line3_Arbatskaya_%28img1%29.jpg/500px-Metro_MSK_Line3_Arbatskaya_%28img1%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Florstein ( Telegram: WikiPhoto.Space )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Metro_MSK_Line3_Arbatskaya_(img1).jpg",
+      "fullWidth": 4800
+     },
+     "description": "Moscow Metro station on the Arbatsko-Pokrovskaya Line"
     },
     {
      "id": "wikidata/Q1367269",
@@ -612,7 +1003,18 @@
       "attraction",
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Vokzal_BLR.jpg/500px-Vokzal_BLR.jpg",
+      "width": 500,
+      "height": 250,
+      "author": "Правительство Москвы",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vokzal_BLR.jpg",
+      "fullWidth": 1600
+     },
+     "description": "railway station in Moscow"
     },
     {
      "id": "relation/1359233",
@@ -626,23 +1028,18 @@
       "attraction",
       "heritage",
       "palace"
-     ]
-    },
-    {
-     "id": "wikidata/Q2570624",
-     "name": "Ukrayna Oteli",
-     "localName": "Radisson Collection Hotel Moscow",
-     "lat": 55.75158,
-     "lon": 37.5642,
-     "wikipediaCount": 26,
-     "wikidataId": "Q2570624",
-     "kinds": [
-      "attraction",
-      "business",
-      "heritage",
-      "hotel",
-      "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Kremlin_Senate-1.jpg/500px-Kremlin_Senate-1.jpg",
+      "width": 500,
+      "height": 380,
+      "author": "Presidential Press and Information Office",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kremlin_Senate-1.jpg",
+      "fullWidth": 1024
+     },
+     "description": "palace"
     }
    ]
   },
@@ -663,7 +1060,18 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/French_invasion_of_Russia_collage.jpg/500px-French_invasion_of_Russia_collage.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Blaue Max",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:French_invasion_of_Russia_collage.jpg",
+      "fullWidth": 1024
+     },
+     "description": "6.koalisyon savaşını tetiklemiştir"
     },
     {
      "id": "relation/1907261",
@@ -680,7 +1088,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Moscow_05-2012_TretyakovGallery.jpg/500px-Moscow_05-2012_TretyakovGallery.jpg",
+      "width": 500,
+      "height": 257,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_05-2012_TretyakovGallery.jpg",
+      "fullWidth": 4433
+     },
+     "description": "art museum in Moscow, Russia"
     },
     {
      "id": "relation/2421978",
@@ -695,7 +1114,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Gmii.jpg/500px-Gmii.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "user:Ghirlandajo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gmii.jpg",
+      "fullWidth": 640
+     },
+     "description": "museum of European art in Moscow"
     },
     {
      "id": "relation/5963922",
@@ -713,7 +1143,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Moscow_July_2011-1a.jpg/500px-Moscow_July_2011-1a.jpg",
+      "width": 500,
+      "height": 397,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_July_2011-1a.jpg",
+      "fullWidth": 6255
+     },
+     "description": "national history museum in Moscow, Russia"
     },
     {
      "id": "relation/1359335",
@@ -728,7 +1169,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Armoury-flickr.jpg/500px-Armoury-flickr.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jean & Nathalie",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Armoury-flickr.jpg",
+      "fullWidth": 2534
+     },
+     "description": "museum and cultural heritage site in Russia"
     },
     {
      "id": "relation/2792560",
@@ -740,7 +1192,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Moscow_Armed_Forces_Museum.jpg/500px-Moscow_Armed_Forces_Museum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_Armed_Forces_Museum.jpg",
+      "fullWidth": 3456
+     },
+     "description": "military museum"
     },
     {
      "id": "relation/7679578",
@@ -753,7 +1216,18 @@
       "attraction",
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Palais_%C3%A0_facettes.jpg/500px-Palais_%C3%A0_facettes.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_%C3%A0_facettes.jpg",
+      "fullWidth": 2048
+     },
+     "description": "architectural monument in the Moscow Kremlin"
     },
     {
      "id": "node/4988219028",
@@ -768,7 +1242,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Diamond_Fund_in_Kremlin_01_by_shakko.jpg/500px-Diamond_Fund_in_Kremlin_01_by_shakko.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Shakko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Diamond_Fund_in_Kremlin_01_by_shakko.jpg",
+      "fullWidth": 4608
+     },
+     "description": "state owned diamond collection"
     },
     {
      "id": "node/2613597034",
@@ -782,7 +1267,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/East_nations_art_museum_in_Moscow_shot_01.jpg/500px-East_nations_art_museum_in_Moscow_shot_01.jpg",
+      "width": 500,
+      "height": 272,
+      "author": "Panther",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:East_nations_art_museum_in_Moscow_shot_01.jpg",
+      "fullWidth": 3828
+     },
+     "description": "art museum in Moscow, Russia"
     },
     {
      "id": "relation/1359337",
@@ -795,7 +1291,18 @@
       "attraction",
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Moscou_Kremlin_%D0%9F%D0%BE%D1%82%D0%B5%D1%88%D0%BD%D1%8B%D0%B9_%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86.jpg",
+      "width": 500,
+      "height": 660,
+      "author": "Service photographique du Kremlin",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscou_Kremlin_%D0%9F%D0%BE%D1%82%D0%B5%D1%88%D0%BD%D1%8B%D0%B9_%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86.jpg",
+      "fullWidth": 500
+     },
+     "description": "palace in Tverskoy District, Russia"
     },
     {
      "id": "way/48503927",
@@ -811,7 +1318,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0_%C2%AB%D0%93%D0%B0%D1%80%D0%B0%D0%B6%C2%BB.jpg/500px-%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0_%C2%AB%D0%93%D0%B0%D1%80%D0%B0%D0%B6%C2%BB.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Garage Museum of Contemporary Art",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0_%C2%AB%D0%93%D0%B0%D1%80%D0%B0%D0%B6%C2%BB.jpg",
+      "fullWidth": 3876
+     },
+     "description": "art Museum in Moscow, Russia"
     },
     {
      "id": "node/1733057309",
@@ -826,7 +1344,18 @@
       "adminArea",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Cold_War_Museum%2C_Moscow%2C_model.JPG/500px-Cold_War_Museum%2C_Moscow%2C_model.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Fastboy",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cold_War_Museum,_Moscow,_model.JPG",
+      "fullWidth": 2448
+     },
+     "description": "military museum"
     },
     {
      "id": "way/31482160",
@@ -843,7 +1372,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Moscow, Russia"
     },
     {
      "id": "way/193498236",
@@ -858,7 +1388,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Multimedia_Art_Museum%2C_Moscow_2022_May.jpg/500px-Multimedia_Art_Museum%2C_Moscow_2022_May.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "JukoFF",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Multimedia_Art_Museum,_Moscow_2022_May.jpg",
+      "fullWidth": 3024
+     },
+     "description": "art museum in Moscow"
     },
     {
      "id": "way/32693733",
@@ -873,7 +1414,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Moscow_ArchitectureMuseum_0922.jpg/500px-Moscow_ArchitectureMuseum_0922.jpg",
+      "width": 500,
+      "height": 559,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_ArchitectureMuseum_0922.jpg",
+      "fullWidth": 3667
+     },
+     "description": "museum in Moscow"
     },
     {
      "id": "way/132469316",
@@ -888,7 +1440,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Pavelesky_5.JPG/500px-Pavelesky_5.JPG",
+      "width": 500,
+      "height": 334,
+      "author": "Harveyqs",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pavelesky_5.JPG",
+      "fullWidth": 4000
+     },
+     "description": "museum next to Paveletsky Rail Terminal in Moscow"
     },
     {
      "id": "way/79561160",
@@ -902,7 +1465,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%93%D0%A3%D0%9B%D0%90%D0%93%D0%B0.jpeg/500px-%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%93%D0%A3%D0%9B%D0%90%D0%93%D0%B0.jpeg",
+      "width": 500,
+      "height": 334,
+      "author": "Annarapeyko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%93%D0%A3%D0%9B%D0%90%D0%93%D0%B0.jpeg",
+      "fullWidth": 3543
+     },
+     "description": "museum in Moscow, Russia"
     },
     {
      "id": "way/224146643",
@@ -917,7 +1491,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Melnikov_House%2C_May_2021.jpg/500px-Melnikov_House%2C_May_2021.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Paulkuz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Melnikov_House,_May_2021.jpg",
+      "fullWidth": 2662
+     },
+     "description": "architecturally significant building in Russia"
     },
     {
      "id": "node/2161495261",
@@ -931,7 +1516,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Fersman_Mineralogical_Museum.JPG/500px-Fersman_Mineralogical_Museum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Антон Черный",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Fersman_Mineralogical_Museum.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fersman_Mineralogical_Museum.JPG",
+      "fullWidth": 1600
+     },
+     "description": "museum in Moscow, Russia"
     },
     {
      "id": "node/3361538621",
@@ -946,7 +1542,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Moscow%2C_Bolshaya_Sadovaya_10_May_2009_02.jpg/500px-Moscow%2C_Bolshaya_Sadovaya_10_May_2009_02.jpg",
+      "width": 500,
+      "height": 306,
+      "author": "NVO",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow,_Bolshaya_Sadovaya_10_May_2009_02.jpg",
+      "fullWidth": 2000
+     },
+     "description": "museum dedicated to Russian writer Mikhail Bulgakov, Moscow, Russia"
     },
     {
      "id": "node/7887532120",
@@ -961,7 +1568,18 @@
       "farFromItem",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Arcademuseum-moscow.jpg/500px-Arcademuseum-moscow.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Hanno Böck",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arcademuseum-moscow.jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in Russia"
     },
     {
      "id": "relation/3224482",
@@ -977,7 +1595,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Muzeon_Park_03.JPG/500px-Muzeon_Park_03.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzeon_Park_03.JPG",
+      "fullWidth": 2816
+     },
+     "description": "park and open-air museum of sculptures in Moscow"
     },
     {
      "id": "node/3848611737",
@@ -990,7 +1619,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/TsDH1.jpg/500px-TsDH1.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Анна Астахова",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:TsDH1.jpg",
+      "fullWidth": 2592
+     },
+     "description": "gallery in Moscow"
     },
     {
      "id": "relation/16685841",
@@ -1006,7 +1646,8 @@
       "attraction",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum"
     },
     {
      "id": "node/4692951498",
@@ -1020,7 +1661,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Ryabushinsky_House_02_by_shakko.jpg/500px-Ryabushinsky_House_02_by_shakko.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "shakko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ryabushinsky_House_02_by_shakko.jpg",
+      "fullWidth": 3072
+     },
+     "description": "museum in Moscow, Russia"
     },
     {
      "id": "node/5527925431",
@@ -1034,7 +1686,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Museum_Art4_Ru.jpg/500px-Museum_Art4_Ru.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "А. И. Астахова",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_Art4_Ru.jpg",
+      "fullWidth": 1296
+     },
+     "description": "museum in Moscow, Russia"
     },
     {
      "id": "way/222865578",
@@ -1050,7 +1713,18 @@
       "farFromItem",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%86%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0_%28%D0%93%D0%A6%D0%A1%D0%98%29_-_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.JPG/500px-%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%86%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0_%28%D0%93%D0%A6%D0%A1%D0%98%29_-_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.JPG",
+      "width": 500,
+      "height": 500,
+      "author": "Louinelle",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%86%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B0_(%D0%93%D0%A6%D0%A1%D0%98)_-_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0.JPG",
+      "fullWidth": 2340
+     },
+     "description": "museum in Russia"
     },
     {
      "id": "node/3437732377",
@@ -1064,7 +1738,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Moscow%2C_Krutitskaya_13C5_Aug_2010_06.JPG/500px-Moscow%2C_Krutitskaya_13C5_Aug_2010_06.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Architect: Max Hoeppener. Photo: NVO",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow,_Krutitskaya_13C5_Aug_2010_06.JPG",
+      "fullWidth": 1600
+     },
+     "description": "local museum in former water plant building in Moscow"
     },
     {
      "id": "way/176331572",
@@ -1079,7 +1764,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B0%2C_%D0%A1%D0%BF%D0%B0%D1%81%D0%BE-%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2_%D0%BC%D0%BE%D0%BD-%D1%80%D1%8C.JPG/500px-%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B0%2C_%D0%A1%D0%BF%D0%B0%D1%81%D0%BE-%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2_%D0%BC%D0%BE%D0%BD-%D1%80%D1%8C.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Guldfisken",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B0,_%D0%A1%D0%BF%D0%B0%D1%81%D0%BE-%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2_%D0%BC%D0%BE%D0%BD-%D1%80%D1%8C.JPG",
+      "fullWidth": 2272
+     },
+     "description": "art and culture museum in Moscow"
     },
     {
      "id": "way/300426887",
@@ -1095,7 +1791,17 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Lermontov_House_Museum_in_Moscow.JPG/500px-Lermontov_House_Museum_in_Moscow.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Alma Pater",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lermontov_House_Museum_in_Moscow.JPG",
+      "fullWidth": 3072
+     }
     },
     {
      "id": "way/151077489",
@@ -1110,7 +1816,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%98%D0%BA%D0%BE%D0%BD%D1%8B.JPG/500px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%98%D0%BA%D0%BE%D0%BD%D1%8B.JPG",
+      "width": 500,
+      "height": 338,
+      "author": "Николай Аввакумов",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%98%D0%BA%D0%BE%D0%BD%D1%8B.JPG",
+      "fullWidth": 1704
+     },
+     "description": "art museum in Moscow, Goncharnaya street"
     },
     {
      "id": "node/11741417323",
@@ -1122,7 +1839,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Bulgakov_Museum_11.JPG/500px-Bulgakov_Museum_11.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Tothkaroj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bulgakov_Museum_11.JPG",
+      "fullWidth": 3648
+     },
+     "description": "apartment № 50 on Bolshaya Sadovaia 10, here lived famous Russian writer M.Bulgakov; the apartment also depicted in Bulgakov's novel \"Master and Margarita\"; currently part of Bulgakov's museum"
     },
     {
      "id": "relation/10048315",
@@ -1137,7 +1865,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Moscow_05-2012_Volkhonka_01.jpg/500px-Moscow_05-2012_Volkhonka_01.jpg",
+      "width": 500,
+      "height": 293,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_05-2012_Volkhonka_01.jpg",
+      "fullWidth": 3746
+     },
+     "description": "museum in Moscow, Russia"
     },
     {
      "id": "node/273355916",
@@ -1152,7 +1891,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Prechistenka_pushkin_museum_corner.jpg/500px-Prechistenka_pushkin_museum_corner.jpg",
+      "width": 500,
+      "height": 277,
+      "author": "NVO",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Prechistenka_pushkin_museum_corner.jpg",
+      "fullWidth": 1157
+     },
+     "description": "Alexander Pushkin literary museum in Moscow, Russia"
     },
     {
      "id": "node/2798179186",
@@ -1168,7 +1918,17 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Moscow_05-2012_Prechistenka_04.jpg/500px-Moscow_05-2012_Prechistenka_04.jpg",
+      "width": 500,
+      "height": 249,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscow_05-2012_Prechistenka_04.jpg",
+      "fullWidth": 4576
+     }
     },
     {
      "id": "way/45627008",
@@ -1184,7 +1944,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Moscowm%2C_Vasnetsov_House_01.jpg/500px-Moscowm%2C_Vasnetsov_House_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "NVO",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscowm,_Vasnetsov_House_01.jpg",
+      "fullWidth": 1000
+     },
+     "description": "historic house museum of Viktor Vasnetsov in the Meshchansky District of Moscow, Russia"
     },
     {
      "id": "way/51545026",
@@ -1200,7 +1971,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Pavel_Korin%27s_museum_%282022%29_01_by_shakko.jpg/500px-Pavel_Korin%27s_museum_%282022%29_01_by_shakko.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Shakko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pavel_Korin%27s_museum_(2022)_01_by_shakko.jpg",
+      "fullWidth": 4624
+     },
+     "description": "building of Pavel Korin's house-museum, Russia"
     },
     {
      "id": "way/164210810",
@@ -1217,7 +1999,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%A2%D1%80%D0%BE%D0%BF%D0%B8%D0%BD%D0%B8%D0%BD%D0%B0.jpg/500px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%A2%D1%80%D0%BE%D0%BF%D0%B8%D0%BD%D0%B8%D0%BD%D0%B0.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Andrei Raikin / Андрей Райкин, Alexei Sidelnikov / Алексей Сидельников, Andrei Lobanov / Андрей Лобанов (фото)",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%A2%D1%80%D0%BE%D0%BF%D0%B8%D0%BD%D0%B8%D0%BD%D0%B0.jpg",
+      "fullWidth": 1772
+     },
+     "description": "museum in Russia"
     },
     {
      "id": "relation/5371132",
@@ -1234,7 +2027,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Dom_Gogolya%2C_Nikitskiy_blv%2C_back_view_%28winter%2C_2013%29_by_shakko_01.jpg/500px-Dom_Gogolya%2C_Nikitskiy_blv%2C_back_view_%28winter%2C_2013%29_by_shakko_01.jpg",
+      "width": 500,
+      "height": 291,
+      "author": "Shakko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dom_Gogolya,_Nikitskiy_blv,_back_view_(winter,_2013)_by_shakko_01.jpg",
+      "fullWidth": 4063
+     },
+     "description": "Moscow"
     },
     {
      "id": "way/204855051",
@@ -1249,7 +2053,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%22%D0%9E%D0%B3%D0%BD%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B%22.jpg/500px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%22%D0%9E%D0%B3%D0%BD%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B%22.jpg",
+      "width": 500,
+      "height": 345,
+      "author": "Николай Аввакумов",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%22%D0%9E%D0%B3%D0%BD%D0%B8_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B%22.jpg",
+      "fullWidth": 3336
+     }
     }
    ]
   },
@@ -2195,7 +3009,18 @@
      "website": "http://www.16tons.ru/",
      "openingHours": "Mo-Su 11:00-06:00",
      "wikidataId": "Q4523392",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/16_Tons_Club.jpg",
+      "width": 500,
+      "height": 687,
+      "author": "Pavel Kamakin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:16_Tons_Club.jpg",
+      "fullWidth": 500
+     },
+     "description": "Moscow club, pub, restaurant with a concert venue"
     },
     {
      "id": "node/9603558824",

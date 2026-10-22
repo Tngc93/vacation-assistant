@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "AMS",
- "fetchedAt": "2026-10-18T16:12:06.046Z",
+ "fetchedAt": "2026-10-22T05:18:58.623Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": null,
@@ -49,7 +49,18 @@
       "notPlace",
       "organization",
       "waterline"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Fort_bij_Spijkerboor_bovenzijde_geschutskoepel.JPG/500px-Fort_bij_Spijkerboor_bovenzijde_geschutskoepel.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "HenkvD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fort_bij_Spijkerboor_bovenzijde_geschutskoepel.JPG",
+      "fullWidth": 3648
+     },
+     "description": "fortification line in the Netherlands"
     },
     {
      "id": "wikidata/Q849957",
@@ -64,7 +75,18 @@
       "musicVenue",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Concertgebouw_in_Amsterdam_April_2015.jpg/500px-Concertgebouw_in_Amsterdam_April_2015.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "yisris",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Concertgebouw_in_Amsterdam_April_2015.jpg",
+      "fullWidth": 5472
+     },
+     "description": "concert hall in Amsterdam, Netherlands"
     },
     {
      "id": "relation/3580875",
@@ -80,7 +102,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Palacio_Real%2C_%C3%81msterdam%2C_Pa%C3%ADses_Bajos%2C_2016-05-30%2C_DD_07-09_HDR.jpg/500px-Palacio_Real%2C_%C3%81msterdam%2C_Pa%C3%ADses_Bajos%2C_2016-05-30%2C_DD_07-09_HDR.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Real,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_07-09_HDR.jpg",
+      "fullWidth": 7846
+     },
+     "description": "former city hall (1652-1800), made a palace and public museum by Ludwig Napoleon, on Dam Square in the centre of Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q50719",
@@ -95,7 +128,18 @@
       "notPlace",
       "office",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Amsterdam_centraal_side.jpg/500px-Amsterdam_centraal_side.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "S Sepp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_centraal_side.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Amsterdam'ın merkezi tren yolu istasyonu"
     },
     {
      "id": "way/266949472",
@@ -103,7 +147,18 @@
      "lat": 52.37346,
      "lon": 4.89819,
      "wikipediaCount": 35,
-     "wikidataId": "Q447664"
+     "wikidataId": "Q447664",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/De_Wallen.JPG/500px-De_Wallen.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Rungbachduong",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:De_Wallen.JPG",
+      "fullWidth": 2048
+     },
+     "description": "largest and best known red-light district in Amsterdam"
     },
     {
      "id": "way/94756489",
@@ -115,7 +170,18 @@
      "wikidataId": "Q839050",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Amsterdam_-_Dak_van_de_Stad_%2814%29.jpg/500px-Amsterdam_-_Dak_van_de_Stad_%2814%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sneeuwvlakte",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Dak_van_de_Stad_(14).jpg",
+      "fullWidth": 4272
+     },
+     "description": "central square in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q713124",
@@ -128,7 +194,18 @@
       "attraction",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/NL-Artis-ingang.jpg/500px-NL-Artis-ingang.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "Dejonkheer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NL-Artis-ingang.jpg",
+      "fullWidth": 700
+     },
+     "description": "zoo in Amsterdam, the Netherlands"
     },
     {
      "id": "way/99205257",
@@ -142,7 +219,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Westerkerk_interieur_2021.jpg/500px-Westerkerk_interieur_2021.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Mark de Nijs",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Westerkerk_interieur_2021.jpg",
+      "fullWidth": 3024
+     },
+     "description": "church in Amsterdam"
     },
     {
      "id": "wikidata/Q1419691",
@@ -153,7 +241,18 @@
      "wikidataId": "Q1419691",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg/500px-Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Dguendel",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam,_Vondelpark,_at_the_pond-2.jpg",
+      "fullWidth": 2551
+     },
+     "description": "Hollanda'nın Amsterdam şehrindeki bir park"
     },
     {
      "id": "wikidata/Q51411",
@@ -161,7 +260,18 @@
      "lat": 52.37444,
      "lon": 4.88472,
      "wikipediaCount": 22,
-     "wikidataId": "Q51411"
+     "wikidataId": "Q51411",
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Homomonument-overview2.jpg",
+      "width": 500,
+      "height": 286,
+      "author": "BoBink",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Homomonument-overview2.jpg",
+      "fullWidth": 493
+     },
+     "description": "memorial in Amsterdam"
     },
     {
      "id": "wikidata/Q639321",
@@ -172,7 +282,18 @@
      "wikidataId": "Q639321",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Dsc_0200_1_Jpg_%28151469793%29.jpeg/500px-Dsc_0200_1_Jpg_%28151469793%29.jpeg",
+      "width": 500,
+      "height": 331,
+      "author": "Kati Tuomaala",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dsc_0200_1_Jpg_(151469793).jpeg",
+      "fullWidth": 2048
+     },
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "way/601096321",
@@ -184,7 +305,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Magere_Brug.jpg/500px-Magere_Brug.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "S Sepp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Magere_Brug.jpg",
+      "fullWidth": 2676
+     },
+     "description": "bridge in Amsterdam, Netherlands"
     },
     {
      "id": "way/57862728",
@@ -198,7 +330,18 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Munttoren_%28Amsterdam%29.JPG/500px-Munttoren_%28Amsterdam%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "The original uploader was P.H. Louw at Dutch Wikipedia .",
+      "license": "CC BY 2.5 nl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/nl/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Munttoren_(Amsterdam).JPG",
+      "fullWidth": 1536
+     },
+     "description": "tower in Amsterdam, the Netherlands"
     },
     {
      "id": "way/57861363",
@@ -212,7 +355,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/EsnogaAmsterdam.jpg/500px-EsnogaAmsterdam.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EsnogaAmsterdam.jpg",
+      "fullWidth": 3456
+     },
+     "description": "Amsterdam, Hollanda'da bir sinagog"
     },
     {
      "id": "way/31527079",
@@ -227,7 +381,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hortus_Botanicus_%2817527952245%29.jpg/500px-Hortus_Botanicus_%2817527952245%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Shadowgate from Novara, ITALY",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hortus_Botanicus_(17527952245).jpg",
+      "fullWidth": 4272
+     },
+     "description": "botanical garden in Amsterdam"
     },
     {
      "id": "way/145953534",
@@ -239,7 +404,18 @@
      "wikidataId": "Q643079",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/SingelBloemenmarkt.jpg/500px-SingelBloemenmarkt.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SingelBloemenmarkt.jpg",
+      "fullWidth": 3456
+     },
+     "description": "market in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q4271952",
@@ -250,7 +426,8 @@
      "wikidataId": "Q4271952",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "description": "vertical datum in use in large parts of Western Europe, originally created for use in the Netherlands"
     },
     {
      "id": "wikidata/Q2637994",
@@ -263,7 +440,18 @@
       "concertHall",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Muziekgebouw_aan_%27t_IJ.jpg/500px-Muziekgebouw_aan_%27t_IJ.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Building by 3XN ; photo by Flickr user Metro Centric",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muziekgebouw_aan_%27t_IJ.jpg",
+      "fullWidth": 1280
+     },
+     "description": "concert hall in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q1350750",
@@ -275,7 +463,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Amsterdam_St_Nicolaaskerk_1900.jpg/500px-Amsterdam_St_Nicolaaskerk_1900.jpg",
+      "width": 500,
+      "height": 358,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_St_Nicolaaskerk_1900.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_St_Nicolaaskerk_1900.jpg",
+      "fullWidth": 3196
+     },
+     "description": "church in Amsterdam"
     },
     {
      "id": "wikidata/Q1568693",
@@ -286,7 +485,18 @@
      "wikidataId": "Q1568693",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Amsterdam%28iget%29_%2815872111880%29.jpg/500px-Amsterdam%28iget%29_%2815872111880%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Shadowgate from Novara, ITALY",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam(iget)_(15872111880).jpg",
+      "fullWidth": 4272
+     },
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q1579642",
@@ -297,7 +507,18 @@
      "wikidataId": "Q1579642",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/NieuwRembrandtplein.JPG/500px-NieuwRembrandtplein.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Marion Golsteijn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NieuwRembrandtplein.JPG",
+      "fullWidth": 2592
+     },
+     "description": "square in Amsterdam, the Netherlands"
     },
     {
      "id": "wikidata/Q893046",
@@ -309,7 +530,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/SingelBloemenmarkt.jpg/500px-SingelBloemenmarkt.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SingelBloemenmarkt.jpg",
+      "fullWidth": 3456
+     },
+     "description": "street and canal in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q901461",
@@ -321,7 +553,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Damrak.jpg/500px-Damrak.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "M.Minderhoud",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Damrak.jpg",
+      "fullWidth": 2048
+     },
+     "description": "street in Amsterdam, Netherlands"
     },
     {
      "id": "relation/7112728",
@@ -335,7 +578,18 @@
      "wikidataId": "Q2342892",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Albert_Cuypmarkt.jpg/500px-Albert_Cuypmarkt.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Michiel1972 at Dutch Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Albert_Cuypmarkt.jpg",
+      "fullWidth": 1024
+     },
+     "description": "street market in Amsterdam"
     },
     {
      "id": "way/1231991755",
@@ -346,7 +600,18 @@
      "wikidataId": "Q1409805",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Leidseplein_Amsterdam3.jpg/500px-Leidseplein_Amsterdam3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Yozza",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Leidseplein_Amsterdam3.jpg",
+      "fullWidth": 1600
+     },
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q683180",
@@ -358,7 +623,18 @@
      "kinds": [
       "bridge",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Munttoren_%28Amsterdam%29.JPG/500px-Munttoren_%28Amsterdam%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "The original uploader was P.H. Louw at Dutch Wikipedia .",
+      "license": "CC BY 2.5 nl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/nl/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Munttoren_(Amsterdam).JPG",
+      "fullWidth": 1536
+     },
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "way/168680619",
@@ -369,7 +645,18 @@
      "wikidataId": "Q473851",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Overzicht_voorzijde_-_Amsterdam_-_20357041_-_RCE.jpg/500px-Overzicht_voorzijde_-_Amsterdam_-_20357041_-_RCE.jpg",
+      "width": 500,
+      "height": 507,
+      "author": "A. J. van der Wal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Overzicht_voorzijde_-_Amsterdam_-_20357041_-_RCE.jpg",
+      "fullWidth": 3038
+     },
+     "description": "monument on the Dam in Amsterdam to commemorate war casualities of the Netherlands"
     },
     {
      "id": "wikidata/Q613854",
@@ -381,7 +668,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Noorderkerk.jpg/500px-Noorderkerk.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Marcel mulder",
+      "license": "CC BY-SA 3.0 nl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Noorderkerk.jpg",
+      "fullWidth": 2948
+     },
+     "description": "church in Amsterdam"
     },
     {
      "id": "node/1611202846",
@@ -393,7 +691,18 @@
      "wikidataId": "Q2301532",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Amsterdam_-_Waterlooplein_-_Waterlooplein_Market.jpg/500px-Amsterdam_-_Waterlooplein_-_Waterlooplein_Market.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Txllxt TxllxT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Waterlooplein_-_Waterlooplein_Market.jpg",
+      "fullWidth": 4006
+     },
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q1180056",
@@ -405,7 +714,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/DeKrijtberg_1.JPG/500px-DeKrijtberg_1.JPG",
+      "width": 500,
+      "height": 731,
+      "author": "Fabre",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DeKrijtberg_1.JPG",
+      "fullWidth": 1765
+     },
+     "description": "church building in Amsterdam, the Netherlands"
     },
     {
      "id": "wikidata/Q673399",
@@ -417,7 +737,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Rokin2005.jpg/500px-Rokin2005.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Michiel1972 at Dutch Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rokin2005.jpg",
+      "fullWidth": 1024
+     },
+     "description": "street in Amsterdam, Netherlands"
     },
     {
      "id": "way/57857390",
@@ -431,7 +762,8 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "description": "15th-century weigh house in Amsterdam"
     },
     {
      "id": "way/114120359",
@@ -443,7 +775,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "church in Amsterdam"
     },
     {
      "id": "way/57858502",
@@ -460,7 +793,18 @@
       "musicVenue",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Overzicht_klokkentoren_met_uurwerk%2C_aan_de_Beurspleinzijde_de_hoofdingang_met_bordestrap_-_Amsterdam_-_20408819_-_RCE.jpg/500px-Overzicht_klokkentoren_met_uurwerk%2C_aan_de_Beurspleinzijde_de_hoofdingang_met_bordestrap_-_Amsterdam_-_20408819_-_RCE.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Sergé Technau",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Overzicht_klokkentoren_met_uurwerk,_aan_de_Beurspleinzijde_de_hoofdingang_met_bordestrap_-_Amsterdam_-_20408819_-_RCE.jpg",
+      "fullWidth": 3060
+     },
+     "description": "building in Amsterdam"
     },
     {
      "id": "wikidata/Q478198",
@@ -475,7 +819,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Amstel_Hotel_2034.jpg/500px-Amstel_Hotel_2034.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amstel_Hotel_2034.jpg",
+      "fullWidth": 4362
+     },
+     "description": "hotel in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q748443",
@@ -487,7 +842,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Kalverstraat_van_boven.jpg/500px-Kalverstraat_van_boven.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Arthena",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kalverstraat_van_boven.jpg",
+      "fullWidth": 2304
+     },
+     "description": "street in Amsterdam, the Netherlands"
     },
     {
      "id": "way/57864086",
@@ -500,7 +866,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Montelbaanstoren_commons.jpg/500px-Montelbaanstoren_commons.jpg",
+      "width": 500,
+      "height": 1555,
+      "author": "S Sepp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Montelbaanstoren_commons.jpg",
+      "fullWidth": 944
+     },
+     "description": "tower in Amsterdam"
     },
     {
      "id": "wikidata/Q2915920",
@@ -513,7 +890,8 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q1535378",
@@ -529,7 +907,18 @@
       "performingArts",
       "religious",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Amsterdam_Paradiso.jpg/500px-Amsterdam_Paradiso.jpg",
+      "width": 500,
+      "height": 382,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_Paradiso.jpg",
+      "fullWidth": 2744
+     },
+     "description": "Dutch music venue and cultural centre located in Amsterdam"
     },
     {
      "id": "wikidata/Q1138851",
@@ -545,7 +934,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Stopera_2063.jpg/500px-Stopera_2063.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stopera_2063.jpg",
+      "fullWidth": 4632
+     },
+     "description": "complex with city hall and opera in Amsterdam"
     },
     {
      "id": "wikidata/Q599272",
@@ -559,7 +959,18 @@
       "cinema",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Tuschinski_front.jpg/500px-Tuschinski_front.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "User:DirkvdM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tuschinski_front.jpg",
+      "fullWidth": 1944
+     },
+     "description": "cinema in Amsterdam"
     },
     {
      "id": "way/26658363",
@@ -573,7 +984,18 @@
       "notPlace",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Begijnhof_Amsterdam_P1020930.JPG/500px-Begijnhof_Amsterdam_P1020930.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "G.Lanting",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Begijnhof_Amsterdam_P1020930.JPG",
+      "fullWidth": 3264
+     },
+     "description": "inner court in Amsterdam, Netherlands"
     },
     {
      "id": "node/4734528821",
@@ -584,7 +1006,8 @@
      "wikidataId": "Q2223310",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "former headquarters of the Dutch East India Company in Amsterdam"
     },
     {
      "id": "way/57859248",
@@ -597,7 +1020,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Schreierstoren2.jpg/500px-Schreierstoren2.jpg",
+      "width": 500,
+      "height": 696,
+      "author": "S Sepp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schreierstoren2.jpg",
+      "fullWidth": 2024
+     },
+     "description": "tower in Amsterdam, the Netherlands"
     },
     {
      "id": "way/26341034",
@@ -610,7 +1044,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Spui_3.jpg/500px-Spui_3.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jvhertum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Spui_3.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spui_3.jpg",
+      "fullWidth": 2000
+     },
+     "description": "square in Amsterdam, Netherlands"
     },
     {
      "id": "way/266604553",
@@ -621,7 +1066,8 @@
      "wikidataId": "Q961901",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "canal house in Amsterdam, Netherlands"
     },
     {
      "id": "node/4952719221",
@@ -632,7 +1078,18 @@
      "wikidataId": "Q1993531",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Close-up_van_ruiterstandbeeld_van_koningin_Wilhelmina_-_Amsterdam_-_20362368_-_RCE.jpg/500px-Close-up_van_ruiterstandbeeld_van_koningin_Wilhelmina_-_Amsterdam_-_20362368_-_RCE.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Loek Tangel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Close-up_van_ruiterstandbeeld_van_koningin_Wilhelmina_-_Amsterdam_-_20362368_-_RCE.jpg",
+      "fullWidth": 3060
+     },
+     "description": "statue in Amsterdam, Netherlands"
     },
     {
      "id": "way/57863677",
@@ -644,7 +1101,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Amsterdam_Scheepvaarthuis_002.JPG/500px-Amsterdam_Scheepvaarthuis_002.JPG",
+      "width": 500,
+      "height": 350,
+      "author": "Janericloebe",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_Scheepvaarthuis_002.JPG",
+      "fullWidth": 3033
+     },
+     "description": "former corporate headquarters, now hotel, in Amsterdam (Netherlands)"
     },
     {
      "id": "node/251528292",
@@ -659,7 +1127,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "a part of the Dungeon brand by Merlin Entertainment"
     },
     {
      "id": "way/7371675",
@@ -671,21 +1140,18 @@
      "kinds": [
       "road",
       "street"
-     ]
-    },
-    {
-     "id": "way/23108728",
-     "name": "Hollandsche Manege",
-     "lat": 52.36128,
-     "lon": 4.87187,
-     "address": "Vondelstraat 140",
-     "website": "https://dehollandschemanege.nl/",
-     "wikipediaCount": 4,
-     "wikidataId": "Q2191087",
-     "kinds": [
-      "heritage",
-      "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Amsterdam_little_street%2C_Warmoesstraat%2C_3_January_2003.jpg/500px-Amsterdam_little_street%2C_Warmoesstraat%2C_3_January_2003.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "No machine-readable author provided. Cainebogdan assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_little_street,_Warmoesstraat,_3_January_2003.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_little_street,_Warmoesstraat,_3_January_2003.jpg",
+      "fullWidth": 1280
+     },
+     "description": "street in Amsterdam, the Netherlands"
     }
    ]
   },
@@ -707,7 +1173,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Rijksmuseum_in_Amsterdam.jpg/500px-Rijksmuseum_in_Amsterdam.jpg",
+      "width": 500,
+      "height": 310,
+      "author": "Marco Almbauer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rijksmuseum_in_Amsterdam.jpg",
+      "fullWidth": 3872
+     },
+     "description": "museum in Amsterdam, Netherlands"
     },
     {
      "id": "relation/6577680",
@@ -722,7 +1199,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Van_Gogh_Museum.jpg/500px-Van_Gogh_Museum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Warrox",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_Museum.jpg",
+      "fullWidth": 2052
+     },
+     "description": "Amsterdam, Hollanda'da bulunan ve ressam Vincent van Gogh'un resimlerinin sergilendiği müze"
     },
     {
      "id": "wikidata/Q924335",
@@ -735,7 +1223,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg/500px-De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg",
+      "width": 500,
+      "height": 279,
+      "author": "John Lewis Marshall",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg",
+      "fullWidth": 3000
+     },
+     "description": "art museum in Amsterdam, Netherlands"
     },
     {
      "id": "way/601081859",
@@ -750,7 +1249,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Amsterdam_%28Paises_Bajos%29_%2815316045410%29.jpg/500px-Amsterdam_%28Paises_Bajos%29_%2815316045410%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jose A.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_(Paises_Bajos)_(15316045410).jpg",
+      "fullWidth": 3968
+     },
+     "description": "museum in Amsterdam, Netherlands, dedicated to Jewish wartime diarist Anne Frank"
     },
     {
      "id": "node/26611707",
@@ -765,7 +1275,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Wereldmuseum_Amsterdam_%282025%29.jpg/500px-Wereldmuseum_Amsterdam_%282025%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sneeuwvlakte",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wereldmuseum_Amsterdam_(2025).jpg",
+      "fullWidth": 4272
+     },
+     "description": "anthropological museum located in Amsterdam, the Netherlands"
     },
     {
      "id": "node/250624673",
@@ -781,7 +1302,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Rembrandshuis.jpg/500px-Rembrandshuis.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "14:43, 17 October 2006",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rembrandshuis.jpg",
+      "fullWidth": 1600
+     },
+     "description": "historic house and art museum in Amsterdam in the Netherlands"
     },
     {
      "id": "node/4672250949",
@@ -798,7 +1330,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Iglesia_Nueva%2C_%C3%81msterdam%2C_Pa%C3%ADses_Bajos%2C_2016-05-30%2C_DD_10-12_HDR.jpg/500px-Iglesia_Nueva%2C_%C3%81msterdam%2C_Pa%C3%ADses_Bajos%2C_2016-05-30%2C_DD_10-12_HDR.jpg",
+      "width": 500,
+      "height": 303,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_Nueva,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_10-12_HDR.jpg",
+      "fullWidth": 7366
+     },
+     "description": "church in Amsterdam, Netherlands"
     },
     {
      "id": "node/2741083161",
@@ -813,7 +1356,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/NEMO_%28Amsterdam%29.jpg/500px-NEMO_%28Amsterdam%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gamekeeper at Dutch Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NEMO_(Amsterdam).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NEMO_(Amsterdam).jpg",
+      "fullWidth": 2048
+     },
+     "description": "museum and science center in Amsterdam, Netherlands"
     },
     {
      "id": "way/57857592",
@@ -830,7 +1384,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Amsterdam-508-Oude_Kerk-2010-gje.jpg/500px-Amsterdam-508-Oude_Kerk-2010-gje.jpg",
+      "width": 500,
+      "height": 385,
+      "author": "Gerd Eichmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam-508-Oude_Kerk-2010-gje.jpg",
+      "fullWidth": 2694
+     },
+     "description": "Amsterdam’s oldest building and oldest parish church"
     },
     {
      "id": "node/34050790",
@@ -845,7 +1410,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Amsterdams_Historisch_Museum.jpg/500px-Amsterdams_Historisch_Museum.jpg",
+      "width": 500,
+      "height": 881,
+      "author": "Marion Golsteijn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdams_Historisch_Museum.jpg",
+      "fullWidth": 981
+     },
+     "description": "municipal museum in Amsterdam, Netherlands"
     },
     {
      "id": "node/2742811299",
@@ -860,7 +1436,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Hermitage_Amsterdam_-_Ingang.JPG/500px-Hermitage_Amsterdam_-_Ingang.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Fentener van Vlissingen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hermitage_Amsterdam_-_Ingang.JPG",
+      "fullWidth": 3264
+     },
+     "description": "art museum in Amsterdam, Netherlands"
     },
     {
      "id": "wikidata/Q130736773",
@@ -873,7 +1460,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Allard_Pierson_Museum_ambient_light_01.jpg/500px-Allard_Pierson_Museum_ambient_light_01.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Hnapel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Allard_Pierson_Museum_ambient_light_01.jpg",
+      "fullWidth": 7187
+     },
+     "description": "archive, library, and museum at the University of Amsterdam (2019-)"
     },
     {
      "id": "way/1287492683",
@@ -888,7 +1486,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Nederlands_Scheepvaartmuseum_2024.jpg/500px-Nederlands_Scheepvaartmuseum_2024.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nederlands_Scheepvaartmuseum_2024.jpg",
+      "fullWidth": 6000
+     },
+     "description": "maritime museum in Amsterdam, Netherlands"
     },
     {
      "id": "way/57857987",
@@ -903,7 +1512,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Jewish history, culture, and religion museum in Amsterdam, Netherlands"
     },
     {
      "id": "node/12837827701",
@@ -920,7 +1530,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Amsterdam_-_Museum_Ons%27_Lieve_Heer_op_Solder_-_hidden_church.JPG/500px-Amsterdam_-_Museum_Ons%27_Lieve_Heer_op_Solder_-_hidden_church.JPG",
+      "width": 500,
+      "height": 689,
+      "author": "Remi Mathis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Museum_Ons%27_Lieve_Heer_op_Solder_-_hidden_church.JPG",
+      "fullWidth": 2312
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/12662916563",
@@ -937,7 +1558,18 @@
       "cinema",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/EYE_Filmmuseum.jpg/500px-EYE_Filmmuseum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jvhertum",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EYE_Filmmuseum.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Dutch archive and museum for cinema"
     },
     {
      "id": "node/251147170",
@@ -952,7 +1584,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Sexmuseum_Amsterdam_01.jpg/500px-Sexmuseum_Amsterdam_01.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Hanno Lans",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sexmuseum_Amsterdam_01.jpg",
+      "fullWidth": 3024
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/1310974825",
@@ -967,7 +1610,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Hash_museum_amsterdam.JPG/500px-Hash_museum_amsterdam.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "asdfmvoie",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hash_museum_amsterdam.JPG",
+      "fullWidth": 2304
+     },
+     "description": "museum in Amsterdam"
     },
     {
      "id": "node/2725914421",
@@ -983,7 +1637,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Amsterdam_-_Herengracht_497.JPG/500px-Amsterdam_-_Herengracht_497.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Rudolphous",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Herengracht_497.JPG",
+      "fullWidth": 2736
+     },
+     "description": "Art museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/2817515795",
@@ -998,7 +1663,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Former_Heineken_Brewery_in_Amsterdam.jpg/500px-Former_Heineken_Brewery_in_Amsterdam.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "User:Mtcv",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Former_Heineken_Brewery_in_Amsterdam.jpg",
+      "fullWidth": 2272
+     },
+     "description": "industrial museum in Amsterdam, Netherlands"
     },
     {
      "id": "node/4383681597",
@@ -1013,7 +1689,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Mikroorganismen_in_Micropia.jpg/500px-Mikroorganismen_in_Micropia.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nadine Ranger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mikroorganismen_in_Micropia.jpg",
+      "fullWidth": 2949
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/34050744",
@@ -1028,7 +1715,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Willet-holthuysen-front.jpg/500px-Willet-holthuysen-front.jpg",
+      "width": 500,
+      "height": 377,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Willet-holthuysen-front.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Willet-holthuysen-front.jpg",
+      "fullWidth": 1632
+     },
+     "description": "museum in Amsterdam"
     },
     {
      "id": "node/441327444",
@@ -1042,7 +1740,18 @@
      "wikidataId": "Q1616115",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Amsterdam_Het_Schip_006.JPG/500px-Amsterdam_Het_Schip_006.JPG",
+      "width": 500,
+      "height": 350,
+      "author": "Janericloebe",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_Het_Schip_006.JPG",
+      "fullWidth": 2344
+     },
+     "description": "residential complex in Amsterdam, the Netherlands"
     },
     {
      "id": "node/440419242",
@@ -1057,7 +1766,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Gebouw_Plancius.jpg/500px-Gebouw_Plancius.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jvhertum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gebouw_Plancius.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gebouw_Plancius.jpg",
+      "fullWidth": 2000
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/34050759",
@@ -1073,7 +1793,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Amsterdam_-_Museum_Van_Loon_-_Gardens.jpg/500px-Amsterdam_-_Museum_Van_Loon_-_Gardens.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Museum_Van_Loon_-_Gardens.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Amsterdam museum on Keizersgracht 672, residence of members of the Van Loon family"
     },
     {
      "id": "node/432506873",
@@ -1092,7 +1823,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Hollandse_Schouwburg_%28Amsterdam%29.JPG/500px-Hollandse_Schouwburg_%28Amsterdam%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "P.H. Louw",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hollandse_Schouwburg_(Amsterdam).JPG",
+      "fullWidth": 2048
+     },
+     "description": "memorial and former theater building in Amsterdam, the Netherlands"
     },
     {
      "id": "node/2816504554",
@@ -1107,7 +1849,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Moco_Museum_Amsterdam_2159.jpg/500px-Moco_Museum_Amsterdam_2159.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moco_Museum_Amsterdam_2159.jpg",
+      "fullWidth": 4022
+     },
+     "description": "museum for modern and contemporary art in Amsterdam, Barcelona and London"
     },
     {
      "id": "node/2742884279",
@@ -1122,7 +1875,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/2024_NHM%2C_Plantage_Middenlaan_27%2C_Asd_%283%29.jpg/500px-2024_NHM%2C_Plantage_Middenlaan_27%2C_Asd_%283%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Ceescamel",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2024_NHM,_Plantage_Middenlaan_27,_Asd_(3).jpg",
+      "fullWidth": 3468
+     },
+     "description": "museum in Amsterdam"
     },
     {
      "id": "node/2720969403",
@@ -1137,7 +1901,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Tulpenuseum_Prinsegracht_112.JPG/500px-Tulpenuseum_Prinsegracht_112.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Pvt pauline",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tulpenuseum_Prinsegracht_112.JPG",
+      "fullWidth": 2555
+     },
+     "description": "museum in Amsterdam"
     },
     {
      "id": "node/11964914826",
@@ -1152,7 +1927,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Madam_Tussaud.jpg/500px-Madam_Tussaud.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "M.Minderhoud",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madam_Tussaud.jpg",
+      "fullWidth": 1024
+     },
+     "description": "wax museum in Amsterdam, Netherlands"
     },
     {
      "id": "node/2737805178",
@@ -1167,7 +1953,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Middenpartij_-_Amsterdam_-_20015678_-_RCE.jpg/500px-Middenpartij_-_Amsterdam_-_20015678_-_RCE.jpg",
+      "width": 500,
+      "height": 621,
+      "author": "G.Th. Delemarre",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Middenpartij_-_Amsterdam_-_20015678_-_RCE.jpg",
+      "fullWidth": 3218
+     },
+     "description": "private art collection in Amsterdam, Netherlands"
     },
     {
      "id": "node/250624672",
@@ -1182,7 +1979,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Keizersgracht_609%2C_Amsterdam.JPG/500px-Keizersgracht_609%2C_Amsterdam.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Dqfn13",
+      "license": "CC BY-SA 3.0 nl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Keizersgracht_609,_Amsterdam.JPG",
+      "fullWidth": 960
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/1237228907",
@@ -1197,7 +2005,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Huismarseille.jpg/500px-Huismarseille.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "J.M. Luijt",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Huismarseille.jpg",
+      "fullWidth": 800
+     },
+     "description": "photography museum in Amsterdam"
     },
     {
      "id": "node/8335928712",
@@ -1212,7 +2031,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Entrance-pijpenkabinet-1998.jpg/500px-Entrance-pijpenkabinet-1998.jpg",
+      "width": 500,
+      "height": 775,
+      "author": "Pijpenkabinet, Amsterdam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrance-pijpenkabinet-1998.jpg",
+      "fullWidth": 3504
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/2741083668",
@@ -1227,7 +2057,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Amsterdam_082.jpg/500px-Amsterdam_082.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Panhard",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_082.jpg",
+      "fullWidth": 3648
+     },
+     "description": "architecture museum in Amsterdam, Netherlands"
     },
     {
      "id": "way/174193863",
@@ -1240,7 +2081,18 @@
      "wikidataId": "Q2205055",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Huis_Bartolotti.jpg/500px-Huis_Bartolotti.jpg",
+      "width": 500,
+      "height": 743,
+      "author": "Marcel mulder",
+      "license": "CC BY-SA 3.0 nl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Huis_Bartolotti.jpg",
+      "fullWidth": 1392
+     },
+     "description": "canal mansion in Amsterdam, the Netherlands"
     },
     {
      "id": "node/1135509041",
@@ -1255,7 +2107,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Amsterdam_Torture_Museum_2013.jpg/500px-Amsterdam_Torture_Museum_2013.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "PersianDutchNetwork",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_Torture_Museum_2013.jpg",
+      "fullWidth": 4128
+     },
+     "description": "Museum in Amsterdan, Netherlands"
     },
     {
      "id": "node/2724283878",
@@ -1270,7 +2133,18 @@
       "business",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/W139.jpg/500px-W139.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Piecesofuk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:W139.jpg",
+      "fullWidth": 1536
+     },
+     "description": "art gallery in Amsterdam, Niederlande"
     },
     {
      "id": "node/7800877214",
@@ -1285,7 +2159,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Huis_met_de_hoofden.jpg/500px-Huis_met_de_hoofden.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Sander Petrus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Huis_met_de_hoofden.jpg",
+      "fullWidth": 3779
+     },
+     "description": "museum in Amsterdam, the Netherlands"
     },
     {
      "id": "node/1727571380",
@@ -1300,7 +2185,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum about and in a house boat in Amsterdam, the Netherlands"
     }
    ]
   },
@@ -1318,7 +2204,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Blauwbrug.jpg/500px-Blauwbrug.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "M.Minderhoud",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Blauwbrug.jpg",
+      "fullWidth": 1024
+     },
+     "description": "bridge in Amsterdam, Netherlands"
     },
     {
      "id": "node/4382053996",
@@ -2203,7 +3100,18 @@
      "website": "https://www.cafetmandje.nl/",
      "openingHours": "Mo-Th 17:00+; Fr-Su 14:00+",
      "wikidataId": "Q5017290",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Caf%C3%A9_%E2%80%98t_Mandje.jpg/500px-Caf%C3%A9_%E2%80%98t_Mandje.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "FaceMePLS from The Hague, The Netherlands",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_%E2%80%98t_Mandje.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Bar in Amsterdam"
     },
     {
      "id": "node/1447362298",

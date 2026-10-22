@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "HEL",
- "fetchedAt": "2026-10-18T16:31:54.009Z",
+ "fetchedAt": "2026-10-22T05:45:48.955Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
       "adminArea",
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Suomenlinna.jpg/500px-Suomenlinna.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Michal Pise, Michal.Pise",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Suomenlinna.jpg",
+      "fullWidth": 1810
+     },
+     "description": "Finlandiya'da ada"
     },
     {
      "id": "way/1542850662",
@@ -68,7 +79,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Lutheran_Cathedral_Helsinki.jpg/500px-Lutheran_Cathedral_Helsinki.jpg",
+      "width": 500,
+      "height": 557,
+      "author": "Hans Hillewaert",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lutheran_Cathedral_Helsinki.jpg",
+      "fullWidth": 5786
+     },
+     "description": "cathedral in Helsinki, Church of Finland"
     },
     {
      "id": "wikidata/Q332219",
@@ -81,7 +103,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Olympiastadion_2_2020-08-12.jpg/500px-Olympiastadion_2_2020-08-12.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Joneikifi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Olympiastadion_2_2020-08-12.jpg",
+      "fullWidth": 2395
+     },
+     "description": "stadium in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1044613",
@@ -95,7 +128,18 @@
       "attraction",
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Helsinki_Central_railway_station_in_Finland%2C_2021_July.jpg/500px-Helsinki_Central_railway_station_in_Finland%2C_2021_July.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Anne Pietarinen",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_Central_railway_station_in_Finland,_2021_July.jpg",
+      "fullWidth": 4032
+     },
+     "description": "railway station in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1142522",
@@ -110,7 +154,18 @@
       "heritage",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Finlandia_Wiki.jpg/500px-Finlandia_Wiki.jpg",
+      "width": 500,
+      "height": 439,
+      "author": "Thermos",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Finlandia_Wiki.jpg",
+      "fullWidth": 2171
+     },
+     "description": "concert house in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1329554",
@@ -122,7 +177,18 @@
      "wikidataId": "Q1329554",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Helsinki_1820.jpg/500px-Helsinki_1820.jpg",
+      "width": 500,
+      "height": 345,
+      "author": "Drawn by Carl Ludvig Engel",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_1820.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_1820.jpg",
+      "fullWidth": 815
+     },
+     "description": "Finlandiya'nın başkenti Helsinki'de bulunan bir meydan"
     },
     {
      "id": "way/124143121",
@@ -137,7 +203,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Osa_lehteria_ja_urut.jpg/500px-Osa_lehteria_ja_urut.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Arttu Suomalainen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Osa_lehteria_ja_urut.jpg",
+      "fullWidth": 700
+     },
+     "description": "church building in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q523268",
@@ -148,7 +225,18 @@
      "wikidataId": "Q523268",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/%22Havis_Amanda%22%2C_la_statue_de_la_fontaine_de_Vallgren_%28Helsinki%29_%282744386193%29.jpg/500px-%22Havis_Amanda%22%2C_la_statue_de_la_fontaine_de_Vallgren_%28Helsinki%29_%282744386193%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Jean-Pierre Dalbéra from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%22Havis_Amanda%22,_la_statue_de_la_fontaine_de_Vallgren_(Helsinki)_(2744386193).jpg",
+      "fullWidth": 576
+     },
+     "description": "bronze sculpture in Helsinki, created 1906 by Ville Vallgren"
     },
     {
      "id": "way/15242921",
@@ -163,7 +251,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "orthodox cathedral church of Helsinki, Finland"
     },
     {
      "id": "node/25290864",
@@ -175,7 +264,18 @@
      "wikidataId": "Q2584017",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Sibelius-monumentin-paljastus.jpg/500px-Sibelius-monumentin-paljastus.jpg",
+      "width": 500,
+      "height": 507,
+      "author": "Aarne Tynnilä / Pietinen Mainosvalokuvaamo",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sibelius-monumentin-paljastus.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sibelius-monumentin-paljastus.jpg",
+      "fullWidth": 1500
+     },
+     "description": "sculpture and memorial in Helsinki, created 1967 by Eila Hiltunen"
     },
     {
      "id": "wikidata/Q31204",
@@ -188,7 +288,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Saint_Henry%27s_Cathedral_Helsinki_2.jpg/500px-Saint_Henry%27s_Cathedral_Helsinki_2.jpg",
+      "width": 500,
+      "height": 432,
+      "author": "Saint_Henry's_Cathedral_Helsinki.jpg : Tomisti derivative work: Rabanus Flavus ( talk )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saint_Henry%27s_Cathedral_Helsinki_2.jpg",
+      "fullWidth": 1919
+     },
+     "description": "catholic cathedral in Helsinki, Finland"
     },
     {
      "id": "relation/2123871",
@@ -203,7 +314,18 @@
       "office",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Helsinki_Presidential_Palace_02.jpg/500px-Helsinki_Presidential_Palace_02.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Ad Meskens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_Presidential_Palace_02.jpg",
+      "fullWidth": 4076
+     },
+     "description": "administrative building in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1635596",
@@ -216,7 +338,18 @@
       "attraction",
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Linnanm%C3%A4ki_ilmasta_27.5.2017.jpg/500px-Linnanm%C3%A4ki_ilmasta_27.5.2017.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Simbe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Linnanm%C3%A4ki_ilmasta_27.5.2017.jpg",
+      "fullWidth": 5472
+     },
+     "description": "amusement park in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q18659999",
@@ -229,7 +362,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Helsingin_keskustakirjasto_Oodi_2022-09-16_08.jpg/500px-Helsingin_keskustakirjasto_Oodi_2022-09-16_08.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Leonhard Lenz",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsingin_keskustakirjasto_Oodi_2022-09-16_08.jpg",
+      "fullWidth": 8368
+     },
+     "description": "municipal library in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1368319",
@@ -243,7 +387,18 @@
       "promenade",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Statue_of_Johan_Ludvig_Runeberg_in_Helsinki_-_DSC03903.JPG/500px-Statue_of_Johan_Ludvig_Runeberg_in_Helsinki_-_DSC03903.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_Johan_Ludvig_Runeberg_in_Helsinki_-_DSC03903.JPG",
+      "fullWidth": 4320
+     },
+     "description": "park in Helsinki, Finland"
     },
     {
      "id": "way/457948795",
@@ -254,7 +409,18 @@
      "wikidataId": "Q541933",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Market_Square_in_Helsinki%2C_Finland%2C_2024_May.jpg/500px-Market_Square_in_Helsinki%2C_Finland%2C_2024_May.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Tuula Sipilä",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Market_Square_in_Helsinki,_Finland,_2024_May.jpg",
+      "fullWidth": 5098
+     },
+     "description": "square in Helsinki, Finland"
     },
     {
      "id": "way/89533459",
@@ -268,7 +434,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Helsinki_July_2013-21.jpg/500px-Helsinki_July_2013-21.jpg",
+      "width": 500,
+      "height": 314,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_July_2013-21.jpg",
+      "fullWidth": 4996
+     },
+     "description": "house of parliament for Finland"
     },
     {
      "id": "wikidata/Q1386673",
@@ -280,7 +457,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Mannerheimintien_alkup%C3%A4%C3%A4t%C3%A4_Erottajan_paloaseman_tornista.jpg/500px-Mannerheimintien_alkup%C3%A4%C3%A4t%C3%A4_Erottajan_paloaseman_tornista.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Otso Kivekäs ; retouched & uploaded (with permission) to Wikimedia Commons by Jonik .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mannerheimintien_alkup%C3%A4%C3%A4t%C3%A4_Erottajan_paloaseman_tornista.jpg",
+      "fullWidth": 1941
+     },
+     "description": "street in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q2981697",
@@ -293,7 +481,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Kallio_church%2C_Helsinki_2004-06.jpg/500px-Kallio_church%2C_Helsinki_2004-06.jpg",
+      "width": 500,
+      "height": 712,
+      "author": "Jonik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kallio_church,_Helsinki_2004-06.jpg",
+      "fullWidth": 549
+     },
+     "description": "church in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1402724",
@@ -306,7 +505,18 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Aleksanterinkatu_Helsinki_2022-09-18_05.jpg/500px-Aleksanterinkatu_Helsinki_2022-09-18_05.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Leonhard Lenz",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aleksanterinkatu_Helsinki_2022-09-18_05.jpg",
+      "fullWidth": 8368
+     },
+     "description": "street in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q2511913",
@@ -318,7 +528,18 @@
      "wikidataId": "Q2511913",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Finland_2010-01-09_%284494649174%29.jpg/500px-Finland_2010-01-09_%284494649174%29.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "Guillaume Baviere from Copenhagen, Denmark",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Finland_2010-01-09_(4494649174).jpg",
+      "fullWidth": 4752
+     },
+     "description": "Equestrian statue in Helsinki of Marshal Mannerheim, created 1960 by Aimo Tukiainen"
     },
     {
      "id": "wikidata/Q926046",
@@ -331,7 +552,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Svenska_Teatern.jpg/500px-Svenska_Teatern.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "JIP at English Wikipedia",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Svenska_Teatern.jpg",
+      "fullWidth": 2816
+     },
+     "description": "Swedish speaking theater in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1698940",
@@ -343,7 +575,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Johanneksen_kirkko_Johannes_church_crop.jpg/500px-Johanneksen_kirkko_Johannes_church_crop.jpg",
+      "width": 500,
+      "height": 738,
+      "author": "Jisis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Johanneksen_kirkko_Johannes_church_crop.jpg",
+      "fullWidth": 1953
+     },
+     "description": "church in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1530985",
@@ -358,7 +601,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Alexandersteatern%2C_Helsingfors.jpg/500px-Alexandersteatern%2C_Helsingfors.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "I99pema",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alexandersteatern,_Helsingfors.jpg",
+      "fullWidth": 4278
+     },
+     "description": "opera house and theater in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q322921",
@@ -369,7 +623,18 @@
      "wikidataId": "Q322921",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Kamppi_Chapel_2020.jpg/500px-Kamppi_Chapel_2020.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Vadelmavene",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kamppi_Chapel_2020.jpg",
+      "fullWidth": 4032
+     },
+     "description": "chapel in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q3129969",
@@ -382,7 +647,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Valtioneuvoston_linna.jpg/500px-Valtioneuvoston_linna.jpg",
+      "width": 500,
+      "height": 232,
+      "author": "Óðinn",
+      "license": "CC BY-SA 2.5 ca",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Valtioneuvoston_linna.jpg",
+      "fullWidth": 5500
+     },
+     "description": "administrative building in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q2614280",
@@ -394,7 +670,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Helsingin_synagoga_-_G39087_-_hkm.HKMS000005-km0000p68w.jpg/500px-Helsingin_synagoga_-_G39087_-_hkm.HKMS000005-km0000p68w.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Matti Similä",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsingin_synagoga_-_G39087_-_hkm.HKMS000005-km0000p68w.jpg",
+      "fullWidth": 7360
+     },
+     "description": "synagogue in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q435712",
@@ -406,7 +693,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "church in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q3068506",
@@ -418,7 +706,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Helsinki_Mikael_Agricola_church.jpg/500px-Helsinki_Mikael_Agricola_church.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Tomisti",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_Mikael_Agricola_church.jpg",
+      "fullWidth": 1704
+     },
+     "description": "church in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q644390",
@@ -429,7 +728,18 @@
      "wikidataId": "Q644390",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Stockmann_department_store_in_Helsinki_at_dawn_in_December_2004.jpg/500px-Stockmann_department_store_in_Helsinki_at_dawn_in_December_2004.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jonik",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockmann_department_store_in_Helsinki_at_dawn_in_December_2004.jpg",
+      "fullWidth": 800
+     },
+     "description": "department store in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1393988",
@@ -441,7 +751,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Helsingin_kaupungintalo_satamasta.jpg/500px-Helsingin_kaupungintalo_satamasta.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "kallerna",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsingin_kaupungintalo_satamasta.jpg",
+      "fullWidth": 3300
+     },
+     "description": "city hall in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1888459",
@@ -454,7 +775,18 @@
       "concertHall",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Centro_Musical_de_Helsinki%2C_Finlandia%2C_2012-08-14%2C_DD_01.JPG/500px-Centro_Musical_de_Helsinki%2C_Finlandia%2C_2012-08-14%2C_DD_01.JPG",
+      "width": 500,
+      "height": 198,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centro_Musical_de_Helsinki,_Finlandia,_2012-08-14,_DD_01.JPG",
+      "fullWidth": 5126
+     },
+     "description": "concert hall and a music center in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1127749",
@@ -468,7 +800,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Pohjoisesplanadi_29.jpg/500px-Pohjoisesplanadi_29.jpg",
+      "width": 500,
+      "height": 384,
+      "author": "MyName ( Mahlum )",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pohjoisesplanadi_29.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pohjoisesplanadi_29.jpg",
+      "fullWidth": 1200
+     },
+     "description": "hotel in Kluuvi, Helsinki, Finland"
     },
     {
      "id": "wikidata/Q10549299",
@@ -479,7 +822,18 @@
      "wikidataId": "Q10549299",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/KristusKyrkanHelsinki.jpg/500px-KristusKyrkanHelsinki.jpg",
+      "width": 500,
+      "height": 969,
+      "author": "Thermos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KristusKyrkanHelsinki.jpg",
+      "fullWidth": 1740
+     },
+     "description": "church in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q3130332",
@@ -492,7 +846,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Helsinki_July_2013-25a.jpg/500px-Helsinki_July_2013-25a.jpg",
+      "width": 500,
+      "height": 219,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_July_2013-25a.jpg",
+      "fullWidth": 13287
+     },
+     "description": "square in Helsinki, Finland"
     },
     {
      "id": "way/123814071",
@@ -503,7 +868,18 @@
      "website": "https://vanhakauppahalli.fi/",
      "openingHours": "Mo-Sa 08:00-18:00; Su 10:00-17:00",
      "wikipediaCount": 6,
-     "wikidataId": "Q3557940"
+     "wikidataId": "Q3557940",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Antiguo_Mercado_de_Helsinki%2C_Finlandia%2C_2012-08-14%2C_DD_01.JPG/500px-Antiguo_Mercado_de_Helsinki%2C_Finlandia%2C_2012-08-14%2C_DD_01.JPG",
+      "width": 500,
+      "height": 221,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Antiguo_Mercado_de_Helsinki,_Finlandia,_2012-08-14,_DD_01.JPG",
+      "fullWidth": 5338
+     },
+     "description": "market hall in Helsinki, Finland"
     },
     {
      "id": "way/127286563",
@@ -517,7 +893,18 @@
      "wikidataId": "Q3162448",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Jardind%27hiverd%27Helsinki.jpg/500px-Jardind%27hiverd%27Helsinki.jpg",
+      "width": 500,
+      "height": 242,
+      "author": "Paasikivi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jardind%27hiverd%27Helsinki.jpg",
+      "fullWidth": 1280
+     },
+     "description": "garden in Helsinki, Finland"
     },
     {
      "id": "node/287564778",
@@ -528,7 +915,18 @@
      "wikidataId": "Q826735",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Kirnu_linnanm%C3%A4ki.jpg/500px-Kirnu_linnanm%C3%A4ki.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Matias Laine",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kirnu_linnanm%C3%A4ki.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kirnu_linnanm%C3%A4ki.jpg",
+      "fullWidth": 800
+     },
+     "description": "roller coaster in Linnanmäki, Helsinki, Finland"
     },
     {
      "id": "way/139499388",
@@ -542,7 +940,18 @@
      "wikidataId": "Q3126107",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Hakaniemen_kauppahallin_dokumentointi_-_G27893_-_hkm.HKMS000005-km0000ofat.jpg/500px-Hakaniemen_kauppahallin_dokumentointi_-_G27893_-_hkm.HKMS000005-km0000ofat.jpg",
+      "width": 500,
+      "height": 289,
+      "author": "Juho Nurmi",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hakaniemen_kauppahallin_dokumentointi_-_G27893_-_hkm.HKMS000005-km0000ofat.jpg",
+      "fullWidth": 4286
+     },
+     "description": "building in Helsinki, Finland"
     },
     {
      "id": "way/122954081",
@@ -556,7 +965,18 @@
      "wikidataId": "Q3135324",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Hietalahdenhalli2008a.jpg/500px-Hietalahdenhalli2008a.jpg",
+      "width": 500,
+      "height": 312,
+      "author": "-- Jisis ( talk ) 13:13, 8 September 2008 (UTC)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hietalahdenhalli2008a.jpg",
+      "fullWidth": 2048
+     },
+     "description": "market hall in Helsinki, Finland"
     },
     {
      "id": "way/122869882",
@@ -571,7 +991,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/HelsinkiGateUniversityGardens.jpg/500px-HelsinkiGateUniversityGardens.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Thermos",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HelsinkiGateUniversityGardens.jpg",
+      "fullWidth": 2345
+     },
+     "description": "botanical garden in Helsinki, Finland"
     },
     {
      "id": "node/6807298155",
@@ -582,7 +1013,18 @@
      "wikidataId": "Q56401819",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Taiga_Linnanm%C3%A4ki_%2820190629%29_1.jpg/500px-Taiga_Linnanm%C3%A4ki_%2820190629%29_1.jpg",
+      "width": 500,
+      "height": 310,
+      "author": "Puppe100",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Taiga_Linnanm%C3%A4ki_(20190629)_1.jpg",
+      "fullWidth": 3657
+     },
+     "description": "roller coaster in Linnanmäki, Helsinki, Finland"
     },
     {
      "id": "node/287563234",
@@ -593,7 +1035,18 @@
      "wikidataId": "Q1501063",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tulireki.JPG/500px-Tulireki.JPG",
+      "width": 500,
+      "height": 347,
+      "author": "kallerna",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tulireki.JPG",
+      "fullWidth": 3810
+     },
+     "description": "roller coaster in Linnanmäki, Helsinki, Finland"
     },
     {
      "id": "node/5240070521",
@@ -605,7 +1058,8 @@
      "wikidataId": "Q48075469",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "description": "monument in Helsinki, Finland"
     },
     {
      "id": "node/287561405",
@@ -616,7 +1070,18 @@
      "wikidataId": "Q7403532",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Helsinki%2C_Finland_-_panoramio_%2895%29.jpg/500px-Helsinki%2C_Finland_-_panoramio_%2895%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jyri Moisio",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki,_Finland_-_panoramio_(95).jpg",
+      "fullWidth": 3219
+     },
+     "description": "roller coaster in Linnanmäki, Helsinki, Finland"
     },
     {
      "id": "node/60242198",
@@ -638,7 +1103,18 @@
       "adminArea",
       "attraction",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Panorama_Linnanm%C3%A4ki_Helsinki.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Skorpion87",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Panorama_Linnanm%C3%A4ki_Helsinki.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Panorama_Linnanm%C3%A4ki_Helsinki.JPG",
+      "fullWidth": 480
+     },
+     "description": "gyro tower at the Linnanmäki amusement park in Helsinki, Finland"
     },
     {
      "id": "node/287563015",
@@ -649,7 +1125,18 @@
      "wikidataId": "Q110469156",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Pikajuna.JPG/500px-Pikajuna.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Linnanmäki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pikajuna.JPG",
+      "fullWidth": 5184
+     },
+     "description": "roller coaster at Linnanmäki"
     }
    ]
   },
@@ -671,7 +1158,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Art_museum_Ateneum_in_Kluuvi%2C_Helsinki%2C_Finland%2C_2014.jpg/500px-Art_museum_Ateneum_in_Kluuvi%2C_Helsinki%2C_Finland%2C_2014.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Finnish National Gallery",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Art_museum_Ateneum_in_Kluuvi,_Helsinki,_Finland,_2014.jpg",
+      "fullWidth": 2362
+     },
+     "description": "art museum in Helsinki, Finland"
     },
     {
      "id": "relation/6635",
@@ -687,7 +1185,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/FinlandNationalMuseum.jpg/500px-FinlandNationalMuseum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "No machine-readable author provided. Thermos assumed (based on copyright claims).",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:FinlandNationalMuseum.jpg",
+      "fullWidth": 3272
+     },
+     "description": "museum in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q1633361",
@@ -699,7 +1208,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Kiasmamodernartmuseum.JPG/500px-Kiasmamodernartmuseum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Paasikivi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kiasmamodernartmuseum.JPG",
+      "fullWidth": 3968
+     },
+     "description": "Helsinki'de bulunan bir çağdaş sanat müzesi"
     },
     {
      "id": "wikidata/Q2983474",
@@ -712,7 +1232,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Art_museum_Ateneum_in_Kluuvi%2C_Helsinki%2C_Finland%2C_2014.jpg/500px-Art_museum_Ateneum_in_Kluuvi%2C_Helsinki%2C_Finland%2C_2014.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Finnish National Gallery",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Art_museum_Ateneum_in_Kluuvi,_Helsinki,_Finland,_2014.jpg",
+      "fullWidth": 2362
+     },
+     "description": "organization of three museums that make up the largest art museum institution of Finland"
     },
     {
      "id": "wikidata/Q1418116",
@@ -726,7 +1257,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Arkkitehtuurimuseo_Helsinki_2022-09-18_01.jpg/500px-Arkkitehtuurimuseo_Helsinki_2022-09-18_01.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Leonhard Lenz",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arkkitehtuurimuseo_Helsinki_2022-09-18_01.jpg",
+      "fullWidth": 8368
+     },
+     "description": "museum in Helsinki, Finland"
     },
     {
      "id": "way/495923233",
@@ -743,7 +1285,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Sinebrychoffin_taidemuseo.jpg/500px-Sinebrychoffin_taidemuseo.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Samuli Lintula",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sinebrychoffin_taidemuseo.jpg",
+      "fullWidth": 2592
+     },
+     "description": "art museum in Helsinki, Finland"
     },
     {
      "id": "wikidata/Q3330350",
@@ -757,7 +1310,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Designmuseo_2019.jpg/500px-Designmuseo_2019.jpg",
+      "width": 500,
+      "height": 420,
+      "author": "Vadelmavene",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Designmuseo_2019.jpg",
+      "fullWidth": 3600
+     },
+     "description": "museum building in Helsinki, Finland"
     },
     {
      "id": "node/4723948808",
@@ -773,7 +1337,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Kaupunginmuseo2.jpg/500px-Kaupunginmuseo2.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "Laurakakkonen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kaupunginmuseo2.jpg",
+      "fullWidth": 2500
+     },
+     "description": "museum in Helsinki, Finland"
     },
     {
      "id": "way/22562853",
@@ -788,7 +1363,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Mannerheim-museo.jpg/500px-Mannerheim-museo.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Arkkipuudeli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mannerheim-museo.jpg",
+      "fullWidth": 4752
+     },
+     "description": "Biographical museum in Helsinki, Finland"
     },
     {
      "id": "node/5887336141",
@@ -803,7 +1389,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Lasipalatsi.jpg/500px-Lasipalatsi.jpg",
+      "width": 500,
+      "height": 213,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lasipalatsi.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lasipalatsi.jpg",
+      "fullWidth": 1200
+     },
+     "description": "art Museum in Lasipalatsi, Helsinki"
     },
     {
      "id": "node/1381017855",
@@ -818,7 +1415,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Tennispalatsi_Helsinki.jpg/500px-Tennispalatsi_Helsinki.jpg",
+      "width": 500,
+      "height": 326,
+      "author": "Arkkipuudeli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tennispalatsi_Helsinki.jpg",
+      "fullWidth": 4212
+     },
+     "description": "art museum in Helsinki, Finland"
     },
     {
      "id": "node/1381017823",
@@ -833,7 +1441,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Luonnontieteellinen_museo_2020.jpg/500px-Luonnontieteellinen_museo_2020.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Vadelmavene",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Luonnontieteellinen_museo_2020.jpg",
+      "fullWidth": 4032
+     },
+     "description": "natural history museum in Helsinki"
     },
     {
      "id": "node/606949808",
@@ -847,7 +1466,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Helsinki_University_Museum.jpg/500px-Helsinki_University_Museum.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Welshentag",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_University_Museum.jpg",
+      "fullWidth": 2304
+     },
+     "description": "museum in Helsinki, Finland"
     },
     {
      "id": "way/23233917",
@@ -863,7 +1493,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ratikkamuseo_2025-9-Marit_Henriksson.jpg/500px-Ratikkamuseo_2025-9-Marit_Henriksson.jpg",
+      "width": 500,
+      "height": 431,
+      "author": "Marit Henriksson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ratikkamuseo_2025-9-Marit_Henriksson.jpg",
+      "fullWidth": 3484
+     },
+     "description": "museum in Helsinki, Finland"
     },
     {
      "id": "way/124697240",
@@ -879,7 +1520,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Hakasalmen_huvila-Marit_Henriksson.jpg/500px-Hakasalmen_huvila-Marit_Henriksson.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Marit Henriksson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hakasalmen_huvila-Marit_Henriksson.jpg",
+      "fullWidth": 4616
+     },
+     "description": "villa in Helsinki, Finland"
     },
     {
      "id": "way/34937117",
@@ -895,7 +1547,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Ruiskumestarin_talo_-_Marit_Henriksson.jpg/500px-Ruiskumestarin_talo_-_Marit_Henriksson.jpg",
+      "width": 500,
+      "height": 382,
+      "author": "Marit Henriksson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ruiskumestarin_talo_-_Marit_Henriksson.jpg",
+      "fullWidth": 3892
+     },
+     "description": "House museum in Helsinki, Finland"
     },
     {
      "id": "node/4777841321",
@@ -910,7 +1573,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Sports_Museum_of_Finland.jpg/500px-Sports_Museum_of_Finland.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Thermos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sports_Museum_of_Finland.jpg",
+      "fullWidth": 2706
+     },
+     "description": "museum in Helsinki, Finland"
     },
     {
      "id": "way/22500092",
@@ -926,7 +1600,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Konstmuseet_Sinebrychoff_01.JPG/500px-Konstmuseet_Sinebrychoff_01.JPG",
+      "width": 500,
+      "height": 331,
+      "author": "Bengt Oberger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Konstmuseet_Sinebrychoff_01.JPG",
+      "fullWidth": 4928
+     },
+     "description": "planned museum in Helsinki, Finland"
     },
     {
      "id": "node/1221210297",
@@ -941,7 +1626,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "specialised museum in Helsinki, Finland"
     },
     {
      "id": "node/606949807",
@@ -957,7 +1643,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "specialised museum, former post office in Helsinki, Finland"
     },
     {
      "id": "node/1375995144",
@@ -972,7 +1659,41 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Helsingin_v%C3%A4est%C3%B6nsuojelumuseo.tif/lossy-page1-500px-Helsingin_v%C3%A4est%C3%B6nsuojelumuseo.tif.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sakari Kiuru",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helsingin_v%C3%A4est%C3%B6nsuojelumuseo.tif",
+      "fullWidth": 3727
+     }
+    },
+    {
+     "id": "node/14297294406",
+     "name": "Kallion tietokonemuseo",
+     "lat": 60.18561,
+     "lon": 24.94656,
+     "website": "https://www.kalliontietokonemuseo.fi/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q135682645",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Kallion_tietokonemuseo.jpg/500px-Kallion_tietokonemuseo.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Koskiniva",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kallion_tietokonemuseo.jpg",
+      "fullWidth": 1280
+     },
+     "description": "computer museum in Helsinki, Finland"
     },
     {
      "id": "node/2026095895",
@@ -986,7 +1707,8 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "description": "Finnish judge (1907-2000)"
     },
     {
      "id": "node/1037603239",
@@ -1140,14 +1862,6 @@
      "address": "Hämeentie 28",
      "website": "https://kuvittajat.fi/galleriakuvitus/",
      "openingHours": "Mo-We off; Th-Fr 12:00-17:00; Sa-Su 12:00-16:00"
-    },
-    {
-     "id": "node/7139084496",
-     "name": "Galleria Sculptor",
-     "lat": 60.16586,
-     "lon": 24.95227,
-     "website": "https://sculptors.fi/",
-     "openingHours": "Mo off; Tu-Fr 12:00-17:00; Sa-Su 12:00-16:00"
     }
    ]
   },
@@ -1601,7 +2315,18 @@
      "openingHours": "09:00-22:00",
      "cuisine": "regional",
      "wikidataId": "Q18913085",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cafe_Regatta_in_Helsinki.jpg/500px-Cafe_Regatta_in_Helsinki.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Alicia Fagerving",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Regatta_in_Helsinki.jpg",
+      "fullWidth": 4608
+     },
+     "description": "café in Helsinki, Finland"
     },
     {
      "id": "node/9554548117",
@@ -2246,7 +2971,8 @@
      "website": "http://www.kaarle.com/",
      "openingHours": "Th-Sa 21:00-04:00",
      "wikidataId": "Q123416919",
-     "detailed": true
+     "detailed": true,
+     "description": "Nightclub in Helsinki"
     },
     {
      "id": "node/648525100",
@@ -2287,7 +3013,18 @@
      "website": "https://tavastiaklubi.fi/",
      "openingHours": "Su-Th 20:00-01:00, Fr 20:00-03:00, Sa 20:00-04:00",
      "wikidataId": "Q3290475",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Nightclub_Tavastia.jpg/500px-Nightclub_Tavastia.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "en:User:JIP",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nightclub_Tavastia.jpg",
+      "fullWidth": 2816
+     },
+     "description": "rock club in Helsinki, Finland"
     },
     {
      "id": "node/13443826824",

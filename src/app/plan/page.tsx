@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { PlanSections } from "@/components/plan/PlanSections";
-import { CityMasthead } from "@/components/city/CityMasthead";
-import { PlanSummary } from "@/components/plan/PlanSummary";
+import { PlanHero, PlanHeroSkeleton } from "@/components/plan/PlanHero";
+import { PlanNav } from "@/components/plan/PlanNav";
 import { SearchForm } from "@/components/search/SearchForm";
-import { Caption, Skeleton, SkeletonTicket } from "@/components/ui";
+import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
+import { formatDay } from "@/lib/format";
+import { isoToDate } from "@/lib/search/dates";
 import { todayInIstanbul } from "@/lib/search/dates";
 import { describeSearch } from "@/lib/search/describe";
 import { parseBudgetParams } from "@/lib/budget/params";
@@ -36,7 +38,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 
 export default function PlanPage({ searchParams }: Props) {
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 pb-24 pt-10 md:px-8 md:pt-16">
+    <div className="mx-auto w-full max-w-6xl px-4 pb-24 md:px-8">
       <Suspense fallback={<PlanFallback />}>
         <PlanContent searchParams={searchParams} />
       </Suspense>
@@ -50,7 +52,7 @@ async function PlanContent({ searchParams }: Props) {
   if (!result.ok) {
     const hasAnyParam = Object.values(params).some((v) => v !== undefined && v !== "");
     return (
-      <>
+      <div className="pt-10 md:pt-16">
         <Caption as="p">Plan</Caption>
         <h1 className="mt-3 font-display text-headline">
           {hasAnyParam ? "Bu bağlantıdaki rota tamamlanmamış." : "Önce bir rota seç."}
@@ -61,20 +63,29 @@ async function PlanContent({ searchParams }: Props) {
             : "Kalkış, varış, tarihler ve yolcu sayısını seçtiğinde plan burada açılır."}
         </p>
         <SearchForm initial={result.draft} initialIssues={hasAnyParam ? result.issues : []} />
-      </>
+      </div>
     );
   }
 
   const destination = findDestination(result.value.to)!;
+  const categories = parseCategories(params.cats);
   return (
     <>
-      <CityMasthead destination={destination} />
-      <div className="mt-10">
-        <PlanSummary search={result.value} />
-      </div>
+      {/* Printed instead of the hero: the city and the dates above the plan and the budget. */}
+      <header className="hidden print:block">
+        <Caption as="p">Plan · {destination.countryTr}</Caption>
+        <h1 className="mt-2 font-display text-headline">{destination.nameTr}</h1>
+        <p className="mt-2 font-mono text-caption tabular">
+          {formatDay(isoToDate(result.value.depart))} → {formatDay(isoToDate(result.value.return))} · {result.value.pax} kişi
+        </p>
+      </header>
+      <Suspense fallback={<PlanHeroSkeleton />}>
+        <PlanHero search={result.value} destination={destination} categories={categories} />
+      </Suspense>
+      <PlanNav />
       <PlanSections
         search={result.value}
-        categories={parseCategories(params.cats)}
+        categories={categories}
         direct={parseDirect(params.direct)}
         budget={parseBudgetParams(params, destination.currency)}
         planEdits={{ skip: parseSkip(params.skip), ai: parsePinned(params.ai), edits: parseEdits(params.edit) }}
@@ -84,11 +95,5 @@ async function PlanContent({ searchParams }: Props) {
 }
 
 function PlanFallback() {
-  return (
-    <div aria-busy="true">
-      <Skeleton className="h-3 w-24" />
-      <Skeleton className="mb-8 mt-4 h-12 w-64 md:h-16" />
-      <SkeletonTicket label="Plan yükleniyor" />
-    </div>
-  );
+  return <PlanHeroSkeleton />;
 }

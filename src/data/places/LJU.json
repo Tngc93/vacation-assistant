@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "LJU",
- "fetchedAt": "2026-10-18T16:44:07.009Z",
+ "fetchedAt": "2026-10-22T06:08:04.689Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Ljubljanski_grad_in_Grajski_gri%C4%8D.jpg/500px-Ljubljanski_grad_in_Grajski_gri%C4%8D.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "LjGrad",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ljubljanski_grad_in_Grajski_gri%C4%8D.jpg",
+      "fullWidth": 1200
+     },
+     "description": "castle in Slovenia"
     },
     {
      "id": "wikidata/Q1236564",
@@ -67,7 +78,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/StNicholas-Ljubljana.JPG/500px-StNicholas-Ljubljana.JPG",
+      "width": 500,
+      "height": 412,
+      "author": "Žiga",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:StNicholas-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StNicholas-Ljubljana.JPG",
+      "fullWidth": 924
+     },
+     "description": "cathedral"
     },
     {
      "id": "way/867533647",
@@ -80,7 +102,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Laibach_-_Jubil%C3%A4umsbr%C3%BCcke.jpg/500px-Laibach_-_Jubil%C3%A4umsbr%C3%BCcke.jpg",
+      "width": 500,
+      "height": 311,
+      "author": "Anonymous Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Laibach_-_Jubil%C3%A4umsbr%C3%BCcke.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Laibach_-_Jubil%C3%A4umsbr%C3%BCcke.jpg",
+      "fullWidth": 1100
+     },
+     "description": "arch bridge in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q64494878",
@@ -93,7 +126,18 @@
      "kinds": [
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ljubljana_%2835814711775%29.jpg/500px-Ljubljana_%2835814711775%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "biosynthesis24",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ljubljana_(35814711775).jpg",
+      "fullWidth": 5184
+     },
+     "description": "World Heritage site in Slovenia"
     },
     {
      "id": "relation/6583849",
@@ -105,7 +149,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/COVID-19_pandemic_in_Slovenia_%28Ljubljana_downtown%2C_center%29.jpg/500px-COVID-19_pandemic_in_Slovenia_%28Ljubljana_downtown%2C_center%29.jpg",
+      "width": 500,
+      "height": 256,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:COVID-19_pandemic_in_Slovenia_(Ljubljana_downtown,_center).jpg",
+      "fullWidth": 7440
+     },
+     "description": "Slovenya, Ljubljana'da bir köprü"
     },
     {
      "id": "relation/15464136",
@@ -117,7 +172,18 @@
      "kinds": [
       "adminArea",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Emona_in_ljubljana_osm.jpg/500px-Emona_in_ljubljana_osm.jpg",
+      "width": 500,
+      "height": 503,
+      "author": "U5K0",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Emona_in_ljubljana_osm.jpg",
+      "fullWidth": 781
+     },
+     "description": "ancient city in Roman Italia, now Ljubljana"
     },
     {
      "id": "relation/9375924",
@@ -129,7 +195,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tromostovje_in_Pre%C5%A1ernov_trg_%28Tromostovje_and_Pre%C5%A1eren_Square%29.jpg/500px-Tromostovje_in_Pre%C5%A1ernov_trg_%28Tromostovje_and_Pre%C5%A1eren_Square%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tromostovje_in_Pre%C5%A1ernov_trg_(Tromostovje_and_Pre%C5%A1eren_Square).jpg",
+      "fullWidth": 5280
+     },
+     "description": "central square in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q1817806",
@@ -141,7 +218,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ljubljana_railway_station%2C_Slovenia.jpg/500px-Ljubljana_railway_station%2C_Slovenia.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Viktar Palstsiuk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ljubljana_railway_station,_Slovenia.jpg",
+      "fullWidth": 4000
+     },
+     "description": "railway station in Slovenia"
     },
     {
      "id": "wikidata/Q1785618",
@@ -153,7 +241,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Ljubljana_-_Annunciation_Church_2.jpg/500px-Ljubljana_-_Annunciation_Church_2.jpg",
+      "width": 500,
+      "height": 381,
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ljubljana_-_Annunciation_Church_2.jpg",
+      "fullWidth": 3968
+     },
+     "description": "Franciscan parish church at Prešeren Square in Ljubljana, the capital of Slovenia"
     },
     {
      "id": "wikidata/Q12034073",
@@ -167,7 +266,18 @@
       "heritage",
       "notPlace",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ljubljana_-_Central_Market.jpg/500px-Ljubljana_-_Central_Market.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ljubljana_-_Central_Market.jpg",
+      "fullWidth": 3712
+     },
+     "description": "marketplace at Ljubljana"
     },
     {
      "id": "wikidata/Q2428528",
@@ -178,7 +288,18 @@
      "wikidataId": "Q2428528",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Liubliana_16.jpg/500px-Liubliana_16.jpg",
+      "width": 500,
+      "height": 311,
+      "author": "LBM1948",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Liubliana_16.jpg",
+      "fullWidth": 4288
+     },
+     "description": "park in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q4178650",
@@ -189,7 +310,18 @@
      "wikidataId": "Q4178650",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Neboticnik_Tower_2.jpg/500px-Neboticnik_Tower_2.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Neboticnik_Tower_2.jpg",
+      "fullWidth": 3473
+     },
+     "description": "skyscraper in Ljubljana"
     },
     {
      "id": "wikidata/Q1032830",
@@ -197,7 +329,18 @@
      "lat": 46.06029,
      "lon": 14.49528,
      "wikipediaCount": 16,
-     "wikidataId": "Q1032830"
+     "wikidataId": "Q1032830",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/HalaTivoli-Ljubljana.JPG/500px-HalaTivoli-Ljubljana.JPG",
+      "width": 500,
+      "height": 347,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:HalaTivoli-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HalaTivoli-Ljubljana.JPG",
+      "fullWidth": 1054
+     },
+     "description": "sports complex"
     },
     {
      "id": "wikidata/Q5160826",
@@ -210,7 +353,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/La_place_du_Congr%C3%A8s_%28Ljubljana%29_%289374292864%29.jpg/500px-La_place_du_Congr%C3%A8s_%28Ljubljana%29_%289374292864%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "dalbera from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_place_du_Congr%C3%A8s_(Ljubljana)_(9374292864).jpg",
+      "fullWidth": 1365
+     },
+     "description": "square in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q3444329",
@@ -222,7 +376,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ljubljana_BW_2014-10-09_11-34-41.jpg/500px-Ljubljana_BW_2014-10-09_11-34-41.jpg",
+      "width": 500,
+      "height": 839,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ljubljana_BW_2014-10-09_11-34-41.jpg",
+      "fullWidth": 1790
+     },
+     "description": "town hall in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q2477997",
@@ -234,7 +399,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Gradnja_Be%C5%BEigrajskega_stadiona_leta_1935.jpg/500px-Gradnja_Be%C5%BEigrajskega_stadiona_leta_1935.jpg",
+      "width": 500,
+      "height": 301,
+      "author": "Peter Naglič",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gradnja_Be%C5%BEigrajskega_stadiona_leta_1935.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gradnja_Be%C5%BEigrajskega_stadiona_leta_1935.jpg",
+      "fullWidth": 1018
+     },
+     "description": "sports venue in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q3034795",
@@ -246,7 +422,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Botani%C4%8Dni_vrt_Ljubljana_%28I%C5%BEanska%2C_2025%29.jpg/500px-Botani%C4%8Dni_vrt_Ljubljana_%28I%C5%BEanska%2C_2025%29.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Botani%C4%8Dni_vrt_Ljubljana_(I%C5%BEanska,_2025).jpg",
+      "fullWidth": 7695
+     },
+     "description": "botanical garden in Slovenia"
     },
     {
      "id": "wikidata/Q7541826",
@@ -261,7 +448,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Slovensko_narodno_gledali%C5%A1%C4%8De_Opera_in_balet_Ljubljana_%28Ljubljana_Opera_and_Ballet%2C_Slovenia%29.jpg/500px-Slovensko_narodno_gledali%C5%A1%C4%8De_Opera_in_balet_Ljubljana_%28Ljubljana_Opera_and_Ballet%2C_Slovenia%29.jpg",
+      "width": 500,
+      "height": 414,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Slovensko_narodno_gledali%C5%A1%C4%8De_Opera_in_balet_Ljubljana_(Ljubljana_Opera_and_Ballet,_Slovenia).jpg",
+      "fullWidth": 3888
+     },
+     "description": "theatre in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q7314417",
@@ -273,7 +471,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Trg_republike_v_gradnji.JPG/500px-Trg_republike_v_gradnji.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "MZaplotnik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trg_republike_v_gradnji.JPG",
+      "fullWidth": 4320
+     },
+     "description": "the square between the Parliament and the Cankar Cultural Centre in Ljubljana; the venue of nationally important events; formerly called Revolution Square"
     },
     {
      "id": "wikidata/Q7844773",
@@ -286,7 +495,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Le_pont_et_l%27%C3%A9glise_de_Trnovo_%28Ljubljana%29_%289397818425%29.jpg/500px-Le_pont_et_l%27%C3%A9glise_de_Trnovo_%28Ljubljana%29_%289397818425%29.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Jean-Pierre Dalbéra from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_pont_et_l%27%C3%A9glise_de_Trnovo_(Ljubljana)_(9397818425).jpg",
+      "fullWidth": 1337
+     },
+     "description": "bridge in Trnovo, Ljubljana"
     },
     {
      "id": "wikidata/Q5589129",
@@ -298,7 +518,18 @@
      "kinds": [
       "heritage",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Presidential_Palace._Ljubljana.jpg/500px-Presidential_Palace._Ljubljana.jpg",
+      "width": 500,
+      "height": 295,
+      "author": "Oliver-Bonjoch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Palace._Ljubljana.jpg",
+      "fullWidth": 900
+     },
+     "description": "government office building in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q6660940",
@@ -311,7 +542,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/D%C5%BEamija_Ljubljana_3.jpg/500px-D%C5%BEamija_Ljubljana_3.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Andrej Jakobčič",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C5%BEamija_Ljubljana_3.jpg",
+      "fullWidth": 4128
+     },
+     "description": "mosque in Ljubljana, Slovenia"
     },
     {
      "id": "wikidata/Q1262088",
@@ -323,7 +565,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sts._Cyril_and_Methodius_Church_2.jpg/500px-Sts._Cyril_and_Methodius_Church_2.jpg",
+      "width": 500,
+      "height": 506,
+      "author": "Viktar Palstsiuk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sts._Cyril_and_Methodius_Church_2.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Eastern Orthodox church in Ljubljana, Slovenia"
     },
     {
      "id": "node/1762140246",
@@ -334,7 +587,18 @@
      "wikidataId": "Q11184115",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Navje-Ljubljana.JPG/500px-Navje-Ljubljana.JPG",
+      "width": 500,
+      "height": 373,
+      "author": "Žiga",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Navje-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Navje-Ljubljana.JPG",
+      "fullWidth": 1124
+     },
+     "description": "memorial park in Slovenia"
     },
     {
      "id": "way/5803213",
@@ -346,7 +610,18 @@
      "wikidataId": "Q3402462",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Grad_Tivoli-Ljubljana.JPG/500px-Grad_Tivoli-Ljubljana.JPG",
+      "width": 500,
+      "height": 372,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Grad_Tivoli-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grad_Tivoli-Ljubljana.JPG",
+      "fullWidth": 1102
+     },
+     "description": "originally named Podturn Manor, Ljubljana"
     },
     {
      "id": "way/1223766264",
@@ -357,7 +632,18 @@
      "wikidataId": "Q7242492",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Pre%C5%A1eren_Monument_%28Ljubljana%29.jpg/500px-Pre%C5%A1eren_Monument_%28Ljubljana%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Андрей Романенко",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pre%C5%A1eren_Monument_(Ljubljana).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pre%C5%A1eren_Monument_(Ljubljana).jpg",
+      "fullWidth": 1944
+     },
+     "description": "sculpture by Ivan Zajec"
     },
     {
      "id": "way/1091291542",
@@ -369,7 +655,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/GruberjevaPalaca-Ljubljana.JPG/500px-GruberjevaPalaca-Ljubljana.JPG",
+      "width": 500,
+      "height": 371,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:GruberjevaPalaca-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GruberjevaPalaca-Ljubljana.JPG",
+      "fullWidth": 1083
+     },
+     "description": "building in Ljubljana, the capital of Slovenia"
     },
     {
      "id": "way/225654437",
@@ -382,7 +679,8 @@
      "wikidataId": "Q4071780",
      "kinds": [
       "organization"
-     ]
+     ],
+     "description": "observatory in Slovenia"
     },
     {
      "id": "way/187081080",
@@ -394,7 +692,17 @@
      "wikidataId": "Q12790232",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/GradKodeljevo-Ljubljana.JPG/500px-GradKodeljevo-Ljubljana.JPG",
+      "width": 500,
+      "height": 396,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:GradKodeljevo-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GradKodeljevo-Ljubljana.JPG",
+      "fullWidth": 986
+     }
     },
     {
      "id": "way/189773881",
@@ -409,7 +717,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Razglednica_Zaj%C4%8Deve_restavracije_in_kavarne_Bellevue.jpg/500px-Razglednica_Zaj%C4%8Deve_restavracije_in_kavarne_Bellevue.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Razglednica_Zaj%C4%8Deve_restavracije_in_kavarne_Bellevue.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Razglednica_Zaj%C4%8Deve_restavracije_in_kavarne_Bellevue.jpg",
+      "fullWidth": 1075
+     },
+     "description": "building in Slovenia"
     },
     {
      "id": "way/180491812",
@@ -421,7 +740,8 @@
      "wikidataId": "Q30505504",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "villa in Ljubljana, Slovenia"
     },
     {
      "id": "way/180491822",
@@ -433,7 +753,8 @@
      "wikidataId": "Q18552422",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "villa in Ljubljana City Municipality, Slovenia"
     },
     {
      "id": "node/5752690821",
@@ -518,7 +839,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Lubla%C5%88%2C_N%C3%A1rodn%C3%AD_galerie_1.jpg/500px-Lubla%C5%88%2C_N%C3%A1rodn%C3%AD_galerie_1.jpg",
+      "width": 500,
+      "height": 339,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lubla%C5%88,_N%C3%A1rodn%C3%AD_galerie_1.jpg",
+      "fullWidth": 3149
+     },
+     "description": "art museum in Ljubljana"
     },
     {
      "id": "relation/15308063",
@@ -533,7 +865,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/NarodniMuzej-ljubljana.JPG/500px-NarodniMuzej-ljubljana.JPG",
+      "width": 500,
+      "height": 309,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NarodniMuzej-ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NarodniMuzej-ljubljana.JPG",
+      "fullWidth": 1119
+     },
+     "description": "Slovenian museum"
     },
     {
      "id": "relation/15308087",
@@ -548,7 +891,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Razstava_v_Moderni_galeriji_ob_dvajseti_obletnici_vstaje_slovenskega_naroda_1961.jpg/500px-Razstava_v_Moderni_galeriji_ob_dvajseti_obletnici_vstaje_slovenskega_naroda_1961.jpg",
+      "width": 500,
+      "height": 322,
+      "author": "Jože Gal",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Razstava_v_Moderni_galeriji_ob_dvajseti_obletnici_vstaje_slovenskega_naroda_1961.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Razstava_v_Moderni_galeriji_ob_dvajseti_obletnici_vstaje_slovenskega_naroda_1961.jpg",
+      "fullWidth": 2965
+     },
+     "description": "art gallery in Ljubljana, Slovenia"
     },
     {
      "id": "node/5879664298",
@@ -563,7 +917,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Ljubljana, Slovenia"
     },
     {
      "id": "node/1502918208",
@@ -578,7 +933,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/AuerspergovaPalaca-Ljubljana.JPG/500px-AuerspergovaPalaca-Ljubljana.JPG",
+      "width": 500,
+      "height": 418,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:AuerspergovaPalaca-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AuerspergovaPalaca-Ljubljana.JPG",
+      "fullWidth": 1017
+     },
+     "description": "museum in Slovenia"
     },
     {
      "id": "way/186332660",
@@ -593,7 +959,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Place_in_front_of_Muzej_sodobne_umetnosti_Metelkova_%28Museum_of_Contemporary_Art_Metelkova%29_Ljubljana_%2838459409985%29.jpg/500px-Place_in_front_of_Muzej_sodobne_umetnosti_Metelkova_%28Museum_of_Contemporary_Art_Metelkova%29_Ljubljana_%2838459409985%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Marcel Haring from Tirol, Austria",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Place_in_front_of_Muzej_sodobne_umetnosti_Metelkova_(Museum_of_Contemporary_Art_Metelkova)_Ljubljana_(38459409985).jpg",
+      "fullWidth": 4288
+     },
+     "description": "art gallery in Ljubljana, Slovenia"
     },
     {
      "id": "way/169541195",
@@ -608,7 +985,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/%C5%BDelezni%C5%A1ki_muzej_Slovenije1.jpg/500px-%C5%BDelezni%C5%A1ki_muzej_Slovenije1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Shabicht",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%BDelezni%C5%A1ki_muzej_Slovenije1.jpg",
+      "fullWidth": 3648
+     },
+     "description": "railway museum in Ljubljana (Slovenia)"
     },
     {
      "id": "way/186332697",
@@ -623,7 +1011,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Slovenia_Ethnographic_Museum%2C_Ljubljana.jpg/500px-Slovenia_Ethnographic_Museum%2C_Ljubljana.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mark Iverson",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Slovenia_Ethnographic_Museum,_Ljubljana.jpg",
+      "fullWidth": 2592
+     },
+     "description": "museum in Ljubljana, Slovenia"
     },
     {
      "id": "way/8119565",
@@ -637,7 +1036,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/CekinovGrad-Ljubljana.JPG/500px-CekinovGrad-Ljubljana.JPG",
+      "width": 500,
+      "height": 376,
+      "author": "No machine-readable author provided. Žiga assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:CekinovGrad-Ljubljana.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CekinovGrad-Ljubljana.JPG",
+      "fullWidth": 1129
+     }
     },
     {
      "id": "node/260566308",
@@ -650,7 +1059,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "gallery from Slovenia"
     },
     {
      "id": "way/178573747",
@@ -664,7 +1074,18 @@
      "wikidataId": "Q28788742",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/La_maison_de_Jo%C5%BEe_Ple%C4%8Dnik_%28Ljubljana%29_%289375937247%29.jpg/500px-La_maison_de_Jo%C5%BEe_Ple%C4%8Dnik_%28Ljubljana%29_%289375937247%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "dalbera from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_maison_de_Jo%C5%BEe_Ple%C4%8Dnik_(Ljubljana)_(9375937247).jpg",
+      "fullWidth": 1531
+     },
+     "description": "house in Ljubljana, Slovenia"
     },
     {
      "id": "node/10047334026",
@@ -1589,7 +2010,8 @@
      "website": "http://www.hotelslon.com/",
      "openingHours": "24/7",
      "wikidataId": "Q111413412",
-     "detailed": true
+     "detailed": true,
+     "description": "hotel in Ljubljana, Slovenia"
     },
     {
      "id": "node/60927346",

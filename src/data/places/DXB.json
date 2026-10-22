@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "DXB",
- "fetchedAt": "2026-10-18T16:56:00.058Z",
+ "fetchedAt": "2026-10-22T06:26:46.960Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
       "adminArea",
       "airport",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Dubai_Airport.jpg/500px-Dubai_Airport.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mhp1255",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubai_Airport.jpg",
+      "fullWidth": 1984
+     },
+     "description": "international airport in Dubai, United Arab Emirates"
     },
     {
      "id": "node/5448804122",
@@ -66,7 +77,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Bur_dubai_waterfront.jpg/500px-Bur_dubai_waterfront.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "No machine-readable author provided. Tournesol assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bur_dubai_waterfront.jpg",
+      "fullWidth": 3072
+     },
+     "description": "historic district in Dubai, United Arab Emirates"
     },
     {
      "id": "wikidata/Q3119433",
@@ -77,7 +99,18 @@
      "wikidataId": "Q3119433",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Iran_%26_Iraq_match_by_Amir_Ostovari%2C_2019_AFC_Asian_Cup_1.jpg/500px-Iran_%26_Iraq_match_by_Amir_Ostovari%2C_2019_AFC_Asian_Cup_1.jpg",
+      "width": 500,
+      "height": 227,
+      "author": "Amir Ostovari",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iran_%26_Iraq_match_by_Amir_Ostovari,_2019_AFC_Asian_Cup_1.jpg",
+      "fullWidth": 1280
+     },
+     "description": "multi-purpose stadium in Dubai, United Arab Emirates"
     },
     {
      "id": "wikidata/Q5594813",
@@ -89,7 +122,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Grand_Mosque_of_Bur_Dubai.jpg/500px-Grand_Mosque_of_Bur_Dubai.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "ZI Jony",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grand_Mosque_of_Bur_Dubai.jpg",
+      "fullWidth": 4080
+     },
+     "description": "mosque in Dubai"
     },
     {
      "id": "wikidata/Q910485",
@@ -100,7 +144,18 @@
      "wikidataId": "Q910485",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Dubai_City_Tower.png",
+      "width": 500,
+      "height": 1000,
+      "author": "Rantsadan",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubai_City_Tower.png",
+      "fullWidth": 500
+     },
+     "description": "Dubai Gradski Toranj"
     },
     {
      "id": "way/542042595",
@@ -112,7 +167,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Al_Bastakiya_Dubai.jpg/500px-Al_Bastakiya_Dubai.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "jensimon7",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Al_Bastakiya_Dubai.jpg",
+      "fullWidth": 1024
+     },
+     "description": "neighborhood in Dubai, UAE"
     },
     {
      "id": "relation/16842105",
@@ -123,7 +189,18 @@
      "wikidataId": "Q5310547",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Dubai_Gold_Souk_on_31_May_2007_Pict_1.jpg/500px-Dubai_Gold_Souk_on_31_May_2007_Pict_1.jpg",
+      "width": 500,
+      "height": 307,
+      "author": "Imre Solt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubai_Gold_Souk_on_31_May_2007_Pict_1.jpg",
+      "fullWidth": 1210
+     },
+     "description": "Marketplace in Dubai specifically for gold"
     },
     {
      "id": "way/542042596",
@@ -131,7 +208,8 @@
      "lat": 25.26756,
      "lon": 55.29725,
      "wikipediaCount": 9,
-     "wikidataId": "Q5310610"
+     "wikidataId": "Q5310610",
+     "description": "traditional market in Dubai, United Arab Emirates"
     },
     {
      "id": "node/260810847",
@@ -143,7 +221,18 @@
      "kinds": [
       "road",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Deira_Clocktower.jpg/500px-Deira_Clocktower.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Iwona Rege",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deira_Clocktower.jpg",
+      "fullWidth": 4272
+     },
+     "description": "Roundabout in Dubai, UAE"
     },
     {
      "id": "way/23978061",
@@ -156,7 +245,8 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "government of Dubai municipal body"
     },
     {
      "id": "node/2488004018",
@@ -165,7 +255,8 @@
      "lon": 55.29683,
      "address": "شارع علي بن أبي طالب",
      "wikipediaCount": 7,
-     "wikidataId": "Q5766383"
+     "wikidataId": "Q5766383",
+     "description": "temple in Dubai, UAE"
     },
     {
      "id": "node/5109606422",
@@ -176,7 +267,18 @@
      "wikidataId": "Q21523365",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/One_of_the_shops_on_the_Textile_Souk_in_Bur_Dubai.jpg/500px-One_of_the_shops_on_the_Textile_Souk_in_Bur_Dubai.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Iwona Rege",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:One_of_the_shops_on_the_Textile_Souk_in_Bur_Dubai.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Textile Souq of Dubai"
     },
     {
      "id": "node/5400471722",
@@ -390,7 +492,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "main museum of Dubai"
     },
     {
      "id": "way/386649647",
@@ -400,7 +503,18 @@
      "website": "https://www.thedubaiframe.com/",
      "openingHours": "Mo-Su 10:00-19:00",
      "wikipediaCount": 21,
-     "wikidataId": "Q20386392"
+     "wikidataId": "Q20386392",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/DONIS_Dubai_Frame_Nighttime.jpg/500px-DONIS_Dubai_Frame_Nighttime.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sachimo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DONIS_Dubai_Frame_Nighttime.jpg",
+      "fullWidth": 1240
+     },
+     "description": "architectural landmark in Dubai"
     },
     {
      "id": "relation/5755009",
@@ -410,7 +524,18 @@
      "address": "Al Khaleej street 14/1",
      "openingHours": "Sa-Th 8:00-20:30, Fr 15:30-21:30, Sa-Th 09:00-17:00 \"Ramadan\", Fr 14:00-17:00 \"Ramadan\"",
      "wikipediaCount": 5,
-     "wikidataId": "Q4272517"
+     "wikidataId": "Q4272517",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Saeed_Al_Maktoum_House.jpg/500px-Saeed_Al_Maktoum_House.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "hiroo",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saeed_Al_Maktoum_House.jpg",
+      "fullWidth": 1024
+     },
+     "description": "building in United Arab Emirates"
     },
     {
      "id": "relation/5467412",
@@ -419,7 +544,8 @@
      "lon": 55.29054,
      "website": "https://www.al-siraaj.com/",
      "wikipediaCount": 4,
-     "wikidataId": "Q7492956"
+     "wikidataId": "Q7492956",
+     "description": "building in Dubai, United Arab Emirates"
     },
     {
      "id": "node/5334433325",
@@ -431,7 +557,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Dubai_Coffee_Museum1.jpg/500px-Dubai_Coffee_Museum1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Clemens Schmillen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubai_Coffee_Museum1.jpg",
+      "fullWidth": 1024
+     },
+     "description": "museum in Dubai, United Arab Emirates"
     },
     {
      "id": "node/12486010908",
@@ -443,7 +580,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Coins_Museum%2CDubai.jpg/500px-Coins_Museum%2CDubai.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Nagsdear",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Coins_Museum,Dubai.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Dubai"
     },
     {
      "id": "way/437617706",
@@ -457,7 +605,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Site located in the Emirate of Dubai"
     },
     {
      "id": "node/11927748577",
@@ -513,7 +662,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Entrance_to_Women%E2%80%99s_Museum_of_Duba%C3%AF.jpg/500px-Entrance_to_Women%E2%80%99s_Museum_of_Duba%C3%AF.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Lxs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_Women%E2%80%99s_Museum_of_Duba%C3%AF.jpg",
+      "fullWidth": 720
+     },
+     "description": "Museum in Dubai, UAE"
     },
     {
      "id": "node/3717446089",

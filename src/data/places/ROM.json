@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "ROM",
- "fetchedAt": "2026-10-18T18:42:43.434Z",
+ "fetchedAt": "2026-10-22T05:09:05.095Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -58,7 +58,18 @@
       "notPlace",
       "organization",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/0_Basilique_Saint-Pierre_-_Rome_%281%29.JPG/500px-0_Basilique_Saint-Pierre_-_Rome_%281%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Jean-Pol GRANDMONT",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0_Basilique_Saint-Pierre_-_Rome_(1).JPG",
+      "fullWidth": 3833
+     },
+     "description": "İtalya'nın Roma kentiyle çevrili bir şehir devleti"
     },
     {
      "id": "relation/1834818",
@@ -80,7 +91,18 @@
       "ruins",
       "sportsVenue",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/500px-Colosseo_2020.jpg",
+      "width": 500,
+      "height": 350,
+      "author": "FeaturedPics",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+      "fullWidth": 12051
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "way/244159210",
@@ -97,7 +119,18 @@
       "attraction",
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/500px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+      "width": 500,
+      "height": 261,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+      "fullWidth": 13066
+     },
+     "description": "Roma'da bazilika"
     },
     {
      "id": "way/215289671",
@@ -111,7 +144,18 @@
      "country": "VA",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Sistina-interno.jpg/500px-Sistina-interno.jpg",
+      "width": 500,
+      "height": 679,
+      "author": "The original uploader was Snowdog at Italian Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sistina-interno.jpg",
+      "fullWidth": 782
+     },
+     "description": "Roma'da şapel"
     },
     {
      "id": "relation/3374342",
@@ -129,7 +173,18 @@
       "organization",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/500px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg",
+      "width": 500,
+      "height": 403,
+      "author": "NikonZ7II",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Right_side_and_front.jpg",
+      "fullWidth": 7512
+     },
+     "description": "Roma'da bir tapınak"
     },
     {
      "id": "wikidata/Q159884",
@@ -140,7 +195,18 @@
      "wikidataId": "Q159884",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Stadio_Olimpico_2024.jpg/500px-Stadio_Olimpico_2024.jpg",
+      "width": 500,
+      "height": 253,
+      "author": "Messapi , cropped by Blackcat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadio_Olimpico_2024.jpg",
+      "fullWidth": 3384
+     },
+     "description": "İtalya'nın Roma şehrinde bulunan bir stat"
     },
     {
      "id": "relation/1841080",
@@ -154,7 +220,18 @@
       "notPlace",
       "ruins",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/500px-Foro_Romano_Musei_Capitolini_Roma.jpg",
+      "width": 500,
+      "height": 205,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Foro_Romano_Musei_Capitolini_Roma.jpg",
+      "fullWidth": 17000
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "relation/13448560",
@@ -165,7 +242,18 @@
      "wikidataId": "Q185382",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/500px-Trevi_Fountain_-_Roma.jpg",
+      "width": 500,
+      "height": 271,
+      "author": "NikonZ7II",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trevi_Fountain_-_Roma.jpg",
+      "fullWidth": 8734
+     },
+     "description": "Roma'da çeşme"
     },
     {
      "id": "relation/10044166",
@@ -177,7 +265,18 @@
      "country": "VA",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/500px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Peter%27s_Square,_Vatican_City_-_April_2007.jpg",
+      "fullWidth": 4200
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "relation/36444",
@@ -194,7 +293,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/San_Giovanni_in_Laterano_2021.jpg/500px-San_Giovanni_in_Laterano_2021.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "NikonZ7II",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giovanni_in_Laterano_2021.jpg",
+      "fullWidth": 8874
+     },
+     "description": "Roma'da bazilika"
     },
     {
      "id": "node/365475871",
@@ -208,7 +318,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Palatine_Hill.Pavement.jpg/500px-Palatine_Hill.Pavement.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Vitold Muratov",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palatine_Hill.Pavement.jpg",
+      "fullWidth": 2736
+     },
+     "description": "Roma'nın yedi tepesinden en merkezde olanı ve Roma kentinin tarihî kalıntılar açısından en zengin bölgesi"
     },
     {
      "id": "relation/49690",
@@ -223,7 +344,18 @@
       "palace",
       "religious",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2018-03-18_Apostolischer_Palast.jpg/500px-2018-03-18_Apostolischer_Palast.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018-03-18_Apostolischer_Palast.jpg",
+      "fullWidth": 5472
+     },
+     "description": "official residence of the Pope in Vatican City"
     },
     {
      "id": "way/8035487",
@@ -241,7 +373,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Castel_Sant%27Angelo_at_Night.jpg/500px-Castel_Sant%27Angelo_at_Night.jpg",
+      "width": 500,
+      "height": 448,
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castel_Sant%27Angelo_at_Night.jpg",
+      "fullWidth": 4301
+     },
+     "description": "castle and museum in Rome, formerly the imperial mausoleum of the emperor Hadrian and subsequent Roman emperors"
     },
     {
      "id": "wikidata/Q231699",
@@ -256,7 +399,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/StPaul.jpg/500px-StPaul.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "StPaul.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StPaul.jpg",
+      "fullWidth": 8272
+     },
+     "description": "Roma'da bazilika"
     },
     {
      "id": "way/131564482",
@@ -274,7 +428,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/500px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
+      "width": 500,
+      "height": 388,
+      "author": "NikonZ7II",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
+      "fullWidth": 6906
+     },
+     "description": "Roma'da bazilika"
     },
     {
      "id": "relation/3376015",
@@ -286,7 +451,18 @@
      "kinds": [
       "notPlace",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Trajan_column_%28Rome%29_September_2015-2.jpg/500px-Trajan_column_%28Rome%29_September_2015-2.jpg",
+      "width": 500,
+      "height": 709,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trajan_column_(Rome)_September_2015-2.jpg",
+      "fullWidth": 5695
+     },
+     "description": "ancient Roman victory column, a landmark of Rome, Italy"
     },
     {
      "id": "relation/2707110",
@@ -302,7 +478,18 @@
       "heritage",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Quirinale_palazzo_e_obelisco_con_dioscuri_Roma.jpg/500px-Quirinale_palazzo_e_obelisco_con_dioscuri_Roma.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Quirinale_palazzo_e_obelisco_con_dioscuri_Roma.jpg",
+      "fullWidth": 6965
+     },
+     "description": "historic building in Rome, Italy; official residence of the President of the Italian Republic"
     },
     {
      "id": "relation/11384819",
@@ -314,7 +501,18 @@
      "kinds": [
       "ruins",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Circus_Maximus_2025.jpg/500px-Circus_Maximus_2025.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "Rione Colonna",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Circus_Maximus_2025.jpg",
+      "fullWidth": 8981
+     },
+     "description": "Ancient Roman circus in Rome"
     },
     {
      "id": "way/23590989",
@@ -326,7 +524,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Arch_of_Constantine_%28Rome%29_-_South_side%2C_from_Via_triumphalis.jpg/500px-Arch_of_Constantine_%28Rome%29_-_South_side%2C_from_Via_triumphalis.jpg",
+      "width": 500,
+      "height": 422,
+      "author": "NikonZ7II (Paris Orlando)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_(Rome)_-_South_side,_from_Via_triumphalis.jpg",
+      "fullWidth": 6272
+     },
+     "description": "triumphal arch in Rome"
     },
     {
      "id": "wikidata/Q625149",
@@ -340,7 +549,18 @@
       "adminArea",
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Celio_-_le_mura_tra_porta_san_Sebastiano_e_porta_Ardeatina_1974.JPG/500px-Celio_-_le_mura_tra_porta_san_Sebastiano_e_porta_Ardeatina_1974.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "user:Lalupa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Celio_-_le_mura_tra_porta_san_Sebastiano_e_porta_Ardeatina_1974.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Celio_-_le_mura_tra_porta_san_Sebastiano_e_porta_Ardeatina_1974.JPG",
+      "fullWidth": 2272
+     },
+     "description": "historic line of walls built around the city of Rome, Italy"
     },
     {
      "id": "way/4247138",
@@ -351,13 +571,24 @@
      "wikidataId": "Q463400",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Paolo_Monti_-_Servizio_fotografico_%28Roma%2C_1966%29_-_BEIC_6329173.jpg/500px-Paolo_Monti_-_Servizio_fotografico_%28Roma%2C_1966%29_-_BEIC_6329173.jpg",
+      "width": 500,
+      "height": 784,
+      "author": "Paolo Monti",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Servizio_fotografico_(Roma,_1966)_-_BEIC_6329173.jpg",
+      "fullWidth": 816
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "relation/1754380",
      "name": "Foro di Traiano",
      "lat": 41.89516,
-     "lon": 12.48517,
+     "lon": 12.48515,
      "website": "https://www.mercatiditraiano.it/",
      "openingHours": "09:30-19:30",
      "wikipediaCount": 44,
@@ -366,7 +597,18 @@
       "heritage",
       "ruins",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/IT-Rom-kaiserforen.jpg/500px-IT-Rom-kaiserforen.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Bgabel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:IT-Rom-kaiserforen.jpg",
+      "fullWidth": 1215
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "relation/1849830",
@@ -379,7 +621,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Altare_della_Patria_%28Roma%29.jpg/500px-Altare_della_Patria_%28Roma%29.jpg",
+      "width": 500,
+      "height": 315,
+      "author": "ThePhotografer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Altare_della_Patria_(Roma).jpg",
+      "fullWidth": 8314
+     },
+     "description": "monument built in honour of Victor Emmanuel II of Italy"
     },
     {
      "id": "way/23913953",
@@ -390,7 +643,18 @@
      "wikidataId": "Q723887",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Arch_Titus%2C_Forum_Romanum%2C_Rome%2C_Italy.jpg/500px-Arch_Titus%2C_Forum_Romanum%2C_Rome%2C_Italy.jpg",
+      "width": 500,
+      "height": 464,
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch_Titus,_Forum_Romanum,_Rome,_Italy.jpg",
+      "fullWidth": 3315
+     },
+     "description": "triumphal arch in Rome (constructed c. 81 AD)"
     },
     {
      "id": "way/201882369",
@@ -405,7 +669,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/San_Pietro_in_Vincoli_-_Roma%2C_facciata.jpg/500px-San_Pietro_in_Vincoli_-_Roma%2C_facciata.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Luciano Tronati",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Pietro_in_Vincoli_-_Roma,_facciata.jpg",
+      "fullWidth": 5226
+     },
+     "description": "Roma'da bazilika"
     },
     {
      "id": "relation/13476232",
@@ -421,7 +696,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Apodyterium_at_Baths_of_Caracalla.jpg/500px-Apodyterium_at_Baths_of_Caracalla.jpg",
+      "width": 500,
+      "height": 132,
+      "author": "Ethan Doyle White",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Apodyterium_at_Baths_of_Caracalla.jpg",
+      "fullWidth": 4420
+     },
+     "description": "public baths in ancient Rome"
     },
     {
      "id": "way/201291264",
@@ -435,7 +721,18 @@
       "organization",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Ara_Pacis_%28SW%29.jpg/500px-Ara_Pacis_%28SW%29.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Rabax63",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ara_Pacis_(SW).jpg",
+      "fullWidth": 5417
+     },
+     "description": "Roma'da bina"
     },
     {
      "id": "wikidata/Q719794",
@@ -449,7 +746,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Jesus_Church.jpg/500px-Jesus_Church.jpg",
+      "width": 500,
+      "height": 561,
+      "author": "Rione Colonna",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jesus_Church.jpg",
+      "fullWidth": 4485
+     },
+     "description": "Roma'da kilise"
     },
     {
      "id": "wikidata/Q467025",
@@ -463,7 +771,18 @@
       "business",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/832RomaUnivGregoriana.JPG/500px-832RomaUnivGregoriana.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Geobia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:832RomaUnivGregoriana.JPG",
+      "fullWidth": 800
+     },
+     "description": "Roma'da üniversite"
     },
     {
      "id": "way/134400816",
@@ -472,7 +791,18 @@
      "lat": 41.90607,
      "lon": 12.48281,
      "wikipediaCount": 39,
-     "wikidataId": "Q848072"
+     "wikidataId": "Q848072",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Scalinata_della_Trinit%C3%A0_dei_Monti.jpg/500px-Scalinata_della_Trinit%C3%A0_dei_Monti.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Hugo DK",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Scalinata_della_Trinit%C3%A0_dei_Monti.jpg",
+      "fullWidth": 4833
+     },
+     "description": "stairs in Rome, Italy"
     },
     {
      "id": "relation/2752093",
@@ -485,7 +815,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Western_facade_Palazzo_del_Laterano_2006-09-07.jpg/500px-Western_facade_Palazzo_del_Laterano_2006-09-07.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jastrow",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Western_facade_Palazzo_del_Laterano_2006-09-07.jpg",
+      "fullWidth": 2700
+     },
+     "description": "ancient palace in Rome"
     },
     {
      "id": "wikidata/Q770847",
@@ -497,7 +838,18 @@
      "wikidataId": "Q770847",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Photographs_of_the_Mausoleum_of_Augustus_14_%28cropped%29.jpg/500px-Photographs_of_the_Mausoleum_of_Augustus_14_%28cropped%29.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "MumblerJamie",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Photographs_of_the_Mausoleum_of_Augustus_14_(cropped).jpg",
+      "fullWidth": 3176
+     },
+     "description": "Roma'da Augustus'a ait mezar kalıntıları"
     },
     {
      "id": "relation/13474926",
@@ -508,7 +860,18 @@
      "wikidataId": "Q15124814",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Scalinata_della_Trinit%C3%A0_dei_Monti.jpg/500px-Scalinata_della_Trinit%C3%A0_dei_Monti.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Hugo DK",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Scalinata_della_Trinit%C3%A0_dei_Monti.jpg",
+      "fullWidth": 4833
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "wikidata/Q824997",
@@ -520,7 +883,18 @@
      "wikidataId": "Q824997",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/PIAZZA_DEL_POPOLO_VISTA_AEREA.jpg/500px-PIAZZA_DEL_POPOLO_VISTA_AEREA.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "DellaGherardesca",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PIAZZA_DEL_POPOLO_VISTA_AEREA.jpg",
+      "fullWidth": 4253
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "relation/1842062",
@@ -532,7 +906,18 @@
      "kinds": [
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Temple_of_Vesta_3D.jpg/500px-Temple_of_Vesta_3D.jpg",
+      "width": 500,
+      "height": 569,
+      "author": "L.VII.C",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Vesta_3D.jpg",
+      "fullWidth": 795
+     },
+     "description": "Roma'da tapınak"
     },
     {
      "id": "way/49824161",
@@ -544,7 +929,18 @@
      "kinds": [
       "notPlace",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Arch_of_Septimius_Severus.jpg/500px-Arch_of_Septimius_Severus.jpg",
+      "width": 500,
+      "height": 431,
+      "author": "Ramon Wijnands",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch_of_Septimius_Severus.jpg",
+      "fullWidth": 1594
+     },
+     "description": "Roma Forumu'nun kuzeydoğusundaki, 194/195 ve 197-199 yıllarında Partlara karşı kazanılmış zaferi simgeleyen kemer"
     },
     {
      "id": "way/201735339",
@@ -555,7 +951,18 @@
      "wikidataId": "Q265384",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Colonna_di_Marco_aurelio_-_Frontale.jpg/500px-Colonna_di_Marco_aurelio_-_Frontale.jpg",
+      "width": 500,
+      "height": 1128,
+      "author": "WikiRomaWiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Colonna_di_Marco_aurelio_-_Frontale.jpg",
+      "fullWidth": 3799
+     },
+     "description": "Roman victory column (completed 193)"
     },
     {
      "id": "way/105281826",
@@ -567,7 +974,18 @@
      "kinds": [
       "adminArea",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Ripa_-_le_mura_a_via_di_sant_anselmo_051211-06.JPG/500px-Ripa_-_le_mura_a_via_di_sant_anselmo_051211-06.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lalupa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ripa_-_le_mura_a_via_di_sant_anselmo_051211-06.JPG",
+      "fullWidth": 2272
+     },
+     "description": "sur"
     },
     {
      "id": "wikidata/Q874832",
@@ -579,7 +997,18 @@
      "wikidataId": "Q874832",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Piazza_Venezia_a_Roma.jpg/500px-Piazza_Venezia_a_Roma.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Zavijavah",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_Venezia_a_Roma.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Roma'da meydan"
     },
     {
      "id": "relation/22289",
@@ -591,7 +1020,18 @@
      "wikidataId": "Q848386",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Palais_Farnese.jpg/500px-Palais_Farnese.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Farnese.jpg",
+      "fullWidth": 3263
+     },
+     "description": "Roma'da saray"
     },
     {
      "id": "way/134399943",
@@ -604,7 +1044,18 @@
       "bridge",
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Roma_-_Ponte_s._Angelo.jpg/500px-Roma_-_Ponte_s._Angelo.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Blackcat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma_-_Ponte_s._Angelo.jpg",
+      "fullWidth": 4608
+     },
+     "description": "Roma'da köprü"
     },
     {
      "id": "node/13119048948",
@@ -621,7 +1072,18 @@
       "organization",
       "palace",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Domus_Aurea_NEUTRA.png/500px-Domus_Aurea_NEUTRA.png",
+      "width": 500,
+      "height": 346,
+      "author": "Cristiano64",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Domus_Aurea_NEUTRA.png",
+      "fullWidth": 2601
+     },
+     "description": "domus, palace of Roman emperor Nero, \"Golden house\""
     },
     {
      "id": "wikidata/Q28303",
@@ -633,7 +1095,18 @@
      "wikidataId": "Q28303",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Il_Valle_delle_Rose_....JPG/500px-Il_Valle_delle_Rose_....JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Carlat82",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Il_Valle_delle_Rose_....JPG",
+      "fullWidth": 4608
+     },
+     "description": "Roma'da meydan"
     }
    ]
   },
@@ -654,7 +1127,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Mura_vaticane_-_ingresso_ai_Musei_00410.JPG/500px-Mura_vaticane_-_ingresso_ai_Musei_00410.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "user:Lalupa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mura_vaticane_-_ingresso_ai_Musei_00410.JPG",
+      "fullWidth": 1536
+     },
+     "description": "museums of the Vatican City"
     },
     {
      "id": "node/1440405490",
@@ -670,7 +1154,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Roma_Museo_Borghese.jpg/500px-Roma_Museo_Borghese.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Blackcat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma_Museo_Borghese.jpg",
+      "fullWidth": 2304
+     },
+     "description": "Roma'da müze"
     },
     {
      "id": "relation/9909127",
@@ -685,7 +1180,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Palazzo_dei_Conservatori_in_Rome_%282%29.jpg/500px-Palazzo_dei_Conservatori_in_Rome_%282%29.jpg",
+      "width": 500,
+      "height": 299,
+      "author": "Tournasol7",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_dei_Conservatori_in_Rome_(2).jpg",
+      "fullWidth": 5617
+     },
+     "description": "Arkeoloji, Sanat Müzesi, Roma'da tarihi bir alan, İtalya"
     },
     {
      "id": "node/10774102107",
@@ -697,7 +1203,18 @@
      "wikidataId": "Q249449",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Raffael_Stanza_della_Segnatura.jpg/500px-Raffael_Stanza_della_Segnatura.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Lure",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Raffael_Stanza_della_Segnatura.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Raffael_Stanza_della_Segnatura.jpg",
+      "fullWidth": 1200
+     },
+     "description": "suite of reception rooms in the Palace of the Vatican painted by Raphael and his workshop between 1509 and 1524"
     },
     {
      "id": "wikidata/Q1135392",
@@ -710,7 +1227,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Therme-vum-Diokletian.jpg/500px-Therme-vum-Diokletian.jpg",
+      "width": 500,
+      "height": 328,
+      "author": "Briséis~commonswiki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Therme-vum-Diokletian.jpg",
+      "fullWidth": 800
+     },
+     "description": "Roma'daki bir müze"
     },
     {
      "id": "node/2122709063",
@@ -726,7 +1254,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Palazzo_corsini_alla_lungara%2C_facciata_lato_giardino_01.JPG/500px-Palazzo_corsini_alla_lungara%2C_facciata_lato_giardino_01.JPG",
+      "width": 500,
+      "height": 360,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_corsini_alla_lungara,_facciata_lato_giardino_01.JPG",
+      "fullWidth": 3052
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "relation/2980622",
@@ -743,7 +1282,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Galleria_nazionale_d%27arte_moderna_-_Rome%2C_Italy_-_DSC05142.jpg/500px-Galleria_nazionale_d%27arte_moderna_-_Rome%2C_Italy_-_DSC05142.jpg",
+      "width": 500,
+      "height": 232,
+      "author": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galleria_nazionale_d%27arte_moderna_-_Rome,_Italy_-_DSC05142.jpg",
+      "fullWidth": 5419
+     },
+     "description": "Roma'da müze"
     },
     {
      "id": "node/706793341",
@@ -759,7 +1309,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Roma-palazzodoriapamphili.jpg/500px-Roma-palazzodoriapamphili.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "antmoose",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma-palazzodoriapamphili.jpg",
+      "fullWidth": 2272
+     },
+     "description": "Roma'da müze"
     },
     {
      "id": "relation/1849827",
@@ -773,7 +1334,18 @@
       "heritage",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/San_Giuseppe_dei_Falegnami_%28Roma%29_-_Facciata_%28Mamertinum%29.jpg/500px-San_Giuseppe_dei_Falegnami_%28Roma%29_-_Facciata_%28Mamertinum%29.jpg",
+      "width": 500,
+      "height": 735,
+      "author": "ThePhotografer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giuseppe_dei_Falegnami_(Roma)_-_Facciata_(Mamertinum).jpg",
+      "fullWidth": 5306
+     },
+     "description": "prison"
     },
     {
      "id": "node/7012887885",
@@ -791,7 +1363,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Acc.San_Luca_Rop.jpg/500px-Acc.San_Luca_Rop.jpg",
+      "width": 500,
+      "height": 544,
+      "author": "Warburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Acc.San_Luca_Rop.jpg",
+      "fullWidth": 2587
+     },
+     "description": "Italian association of artists in Rome"
     },
     {
      "id": "node/11204178550",
@@ -803,7 +1386,18 @@
      "wikidataId": "Q468405",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Archbasilica_of_St._John_Lateran_HD.jpg/500px-Archbasilica_of_St._John_Lateran_HD.jpg",
+      "width": 500,
+      "height": 453,
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archbasilica_of_St._John_Lateran_HD.jpg",
+      "fullWidth": 7507
+     },
+     "description": "building complex in Rome"
     },
     {
      "id": "node/13460785710",
@@ -820,7 +1414,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Villa_Giulia_modified.jpg/500px-Villa_Giulia_modified.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Self-photographed",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Giulia_modified.jpg",
+      "fullWidth": 2848
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/4891858022",
@@ -833,7 +1438,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Villa_Medici_-_fronte.jpg/500px-Villa_Medici_-_fronte.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "SonyGM",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Medici_-_fronte.jpg",
+      "fullWidth": 6409
+     },
+     "description": "art school in Rome, Italy"
     },
     {
      "id": "node/1649776329",
@@ -849,7 +1465,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Trevi_-_palazzo_colonna_e_basilica_santi_apostoli_01.JPG/500px-Trevi_-_palazzo_colonna_e_basilica_santi_apostoli_01.JPG",
+      "width": 500,
+      "height": 426,
+      "author": "user:Lalupa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Trevi_-_palazzo_colonna_e_basilica_santi_apostoli_01.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trevi_-_palazzo_colonna_e_basilica_santi_apostoli_01.JPG",
+      "fullWidth": 2002
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/2296913458",
@@ -864,7 +1491,18 @@
      "kinds": [
       "ruins",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Piazza_navona_-_stadio_di_Domiziano_2152-7st.JPG/500px-Piazza_navona_-_stadio_di_Domiziano_2152-7st.JPG",
+      "width": 500,
+      "height": 456,
+      "author": "user:Lalupa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Piazza_navona_-_stadio_di_Domiziano_2152-7st.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_navona_-_stadio_di_Domiziano_2152-7st.JPG",
+      "fullWidth": 1644
+     },
+     "description": "ancient Roman circus"
     },
     {
      "id": "node/3612947728",
@@ -875,7 +1513,18 @@
      "wikidataId": "Q1227431",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/San_Giovanni_%28line_C_platform%29.jpg/500px-San_Giovanni_%28line_C_platform%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Guybrush Threepwood",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giovanni_(line_C_platform).jpg",
+      "fullWidth": 1024
+     },
+     "description": "Rome Metro station"
     },
     {
      "id": "wikidata/Q498557",
@@ -888,7 +1537,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Appartamento_borgia%2C_05.JPG/500px-Appartamento_borgia%2C_05.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Appartamento_borgia,_05.JPG",
+      "fullWidth": 2592
+     },
+     "description": "suite of rooms in the Apostolic Palace in Vatican City"
     },
     {
      "id": "way/132581385",
@@ -900,7 +1560,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Augustus-Maskenraum01b.jpg/500px-Augustus-Maskenraum01b.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Augustus-Maskenraum01b.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Augustus-Maskenraum01b.jpg",
+      "fullWidth": 800
+     },
+     "description": "domus"
     },
     {
      "id": "relation/1391821",
@@ -916,7 +1587,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Macro_Rome2.jpg/500px-Macro_Rome2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "LPLT",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Macro_Rome2.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "way/51930840",
@@ -930,7 +1612,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Palazzo_delle_Esposizioni_%282034877959%29.jpg/500px-Palazzo_delle_Esposizioni_%282034877959%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Emanuele from Roma",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_delle_Esposizioni_(2034877959).jpg",
+      "fullWidth": 1024
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/656532697",
@@ -946,7 +1639,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Galleria_spada%2C_sala_3%2C_01.jpg/500px-Galleria_spada%2C_sala_3%2C_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galleria_spada,_sala_3,_01.jpg",
+      "fullWidth": 3456
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "way/35027800",
@@ -960,7 +1664,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Pinacoteca_vaticana_vista_dai_giardini_01.JPG/500px-Pinacoteca_vaticana_vista_dai_giardini_01.JPG",
+      "width": 500,
+      "height": 316,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pinacoteca_vaticana_vista_dai_giardini_01.JPG",
+      "fullWidth": 2612
+     },
+     "description": "branch of the Vatican Museums"
     },
     {
      "id": "wikidata/Q2034945",
@@ -973,7 +1688,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Sculptures_above_the_entrance_of_Vatican_Museums.jpg/500px-Sculptures_above_the_entrance_of_Vatican_Museums.jpg",
+      "width": 500,
+      "height": 430,
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sculptures_above_the_entrance_of_Vatican_Museums.jpg",
+      "fullWidth": 3570
+     },
+     "description": "branch of the Vatican Museums"
     },
     {
      "id": "node/10074889581",
@@ -988,7 +1714,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Palazzetto_Le_Roy_Rome.jpg/500px-Palazzetto_Le_Roy_Rome.jpg",
+      "width": 500,
+      "height": 405,
+      "author": "Jensens",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palazzetto_Le_Roy_Rome.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzetto_Le_Roy_Rome.jpg",
+      "fullWidth": 2200
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/10774102205",
@@ -1000,7 +1737,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Museos_Vaticanos%2C_Ciudad_del_Vaticano%2C_2022-09-14%2C_DD_56-58_HDR.jpg/500px-Museos_Vaticanos%2C_Ciudad_del_Vaticano%2C_2022-09-14%2C_DD_56-58_HDR.jpg",
+      "width": 500,
+      "height": 897,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museos_Vaticanos,_Ciudad_del_Vaticano,_2022-09-14,_DD_56-58_HDR.jpg",
+      "fullWidth": 3970
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/6718428617",
@@ -1013,7 +1761,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Museo_Pio-Clementino_cortile_ottagono.JPG/500px-Museo_Pio-Clementino_cortile_ottagono.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Natyss med",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museo_Pio-Clementino_cortile_ottagono.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Pio-Clementino_cortile_ottagono.JPG",
+      "fullWidth": 1600
+     },
+     "description": "branch of the Vatican Museums"
     },
     {
      "id": "relation/13475193",
@@ -1028,7 +1787,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Roma%2C_Museo_p.ta_San_Paolo_VL01.JPG/500px-Roma%2C_Museo_p.ta_San_Paolo_VL01.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Van Loon",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma,_Museo_p.ta_San_Paolo_VL01.JPG",
+      "fullWidth": 2432
+     },
+     "description": "Roma'da bir demiryolu müzesi"
     },
     {
      "id": "node/4470099910",
@@ -1043,7 +1813,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Great_Synagogue_of_Rome.jpg/500px-Great_Synagogue_of_Rome.jpg",
+      "width": 500,
+      "height": 601,
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Great_Synagogue_of_Rome.jpg",
+      "fullWidth": 3187
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "relation/1857985",
@@ -1057,7 +1838,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Museo_Palatino_Roma.jpg/500px-Museo_Palatino_Roma.jpg",
+      "width": 500,
+      "height": 248,
+      "author": "Jensens",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museo_Palatino_Roma.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Palatino_Roma.jpg",
+      "fullWidth": 1200
+     },
+     "description": "museum in Rome, Italy"
     },
     {
      "id": "node/2408805739",
@@ -1072,7 +1864,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Museo_di_Via_Tasso_-_first_floor_hall.jpg/500px-Museo_di_Via_Tasso_-_first_floor_hall.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Anthony M. from Rome, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_di_Via_Tasso_-_first_floor_hall.jpg",
+      "fullWidth": 2272
+     },
+     "description": "Roman museum"
     },
     {
      "id": "node/3456447054",
@@ -1088,7 +1891,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Sallustiano_-_v_Boncompagni_villino_Boncompagni_Ludovisi_e_Museo_1280048.JPG/500px-Sallustiano_-_v_Boncompagni_villino_Boncompagni_Ludovisi_e_Museo_1280048.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lalupa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sallustiano_-_v_Boncompagni_villino_Boncompagni_Ludovisi_e_Museo_1280048.JPG",
+      "fullWidth": 2816
+     },
+     "description": "Roma'da müze"
     },
     {
      "id": "node/656829698",
@@ -1105,7 +1919,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Palais_Braschi_-_Rome_%28IT62%29_-_2021-08-29_-_3.jpg/500px-Palais_Braschi_-_Rome_%28IT62%29_-_2021-08-29_-_3.jpg",
+      "width": 500,
+      "height": 491,
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Braschi_-_Rome_(IT62)_-_2021-08-29_-_3.jpg",
+      "fullWidth": 3805
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/4376017562",
@@ -1121,7 +1946,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Palazzo_Venezia_%28Rome%29_-_Exterior.jpg/500px-Palazzo_Venezia_%28Rome%29_-_Exterior.jpg",
+      "width": 500,
+      "height": 354,
+      "author": "ThePhotografer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Venezia_(Rome)_-_Exterior.jpg",
+      "fullWidth": 8388
+     },
+     "description": "Roma'da sanat müzesi"
     },
     {
      "id": "node/2244843070",
@@ -1136,7 +1972,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Casa_di_goethe_fassade.JPG/500px-Casa_di_goethe_fassade.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Tom86",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_di_goethe_fassade.JPG",
+      "fullWidth": 4176
+     },
+     "description": "museum in Rome"
     },
     {
      "id": "way/202110420",
@@ -1150,7 +1997,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Keats-Shelley_House.jpg/500px-Keats-Shelley_House.jpg",
+      "width": 500,
+      "height": 624,
+      "author": "Keats1795",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Keats-Shelley_House.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Keats-Shelley_House.jpg",
+      "fullWidth": 1019
+     },
+     "description": "Italian museum about John Keats and Percy Bysshe Shelley"
     },
     {
      "id": "node/4292016589",
@@ -1164,7 +2022,18 @@
       "business",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/%22Real_Academia_de_Espa%C3%B1a_en_Roma%22._Italia.jpg/500px-%22Real_Academia_de_Espa%C3%B1a_en_Roma%22._Italia.jpg",
+      "width": 500,
+      "height": 424,
+      "author": "CARLOS TEIXIDOR CADENAS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%22Real_Academia_de_Espa%C3%B1a_en_Roma%22._Italia.jpg",
+      "fullWidth": 5806
+     },
+     "description": "organization"
     },
     {
      "id": "way/130039228",
@@ -1180,7 +2049,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg/500px-Le_mus%C3%A9e_de_la_centrale_Montemartini_%28Rome%29_%2834321364485%29.jpg",
+      "width": 500,
+      "height": 393,
+      "author": "Jean-Pierre Dalbéra from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_mus%C3%A9e_de_la_centrale_Montemartini_(Rome)_(34321364485).jpg",
+      "fullWidth": 1525
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/6718428602",
@@ -1194,7 +2074,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/500px-Statue-Augustus.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Till Niermann",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg",
+      "fullWidth": 1500
+     },
+     "description": "Roma'da müze"
     },
     {
      "id": "way/201293294",
@@ -1210,7 +2101,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Roma'da arkeoloji müzesi"
     },
     {
      "id": "node/6718428616",
@@ -1223,7 +2115,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/11897_-_Vatican_-_Etruscan_Museum_%283481840831%29.jpg/500px-11897_-_Vatican_-_Etruscan_Museum_%283481840831%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:11897_-_Vatican_-_Etruscan_Museum_(3481840831).jpg",
+      "fullWidth": 1200
+     },
+     "description": "branch of the Vatican Museums"
     }
    ]
   },
@@ -1241,7 +2144,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Ponte_Umberto_a_Roma_102_2054.jpg/500px-Ponte_Umberto_a_Roma_102_2054.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "Zavijavah",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_Umberto_a_Roma_102_2054.jpg",
+      "fullWidth": 778
+     },
+     "description": "Roma'da köprü"
     },
     {
      "id": "node/5108555139",
@@ -1251,7 +2165,18 @@
      "website": "https://www.vatican.va/various/basiliche/san_pietro/it/cupola/orari.htm",
      "openingHours": "Mo-Su 07:30-17:00",
      "wikipediaCount": 3,
-     "wikidataId": "Q3699559"
+     "wikidataId": "Q3699559",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Dome_of_Saint_Peter%27s_Basilica_%28exterior%29.jpg/500px-Dome_of_Saint_Peter%27s_Basilica_%28exterior%29.jpg",
+      "width": 500,
+      "height": 690,
+      "author": "Staselnik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dome_of_Saint_Peter%27s_Basilica_(exterior).jpg",
+      "fullWidth": 3504
+     },
+     "description": "dome of St. Peter's Basilica in Vatican City"
     },
     {
      "id": "node/649529694",
@@ -1482,7 +2407,18 @@
      "openingHours": "Mo-Sa 20:00-24:00; Su off",
      "cuisine": "italian",
      "wikidataId": "Q3664378",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Cencio_la_Parolaccia.jpeg/500px-Cencio_la_Parolaccia.jpeg",
+      "width": 500,
+      "height": 666,
+      "author": "Utente:Topolgnussy",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cencio_la_Parolaccia.jpeg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cencio_la_Parolaccia.jpeg",
+      "fullWidth": 538
+     },
+     "description": "restaurant in Rome"
     },
     {
      "id": "node/3693023670",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BUD",
- "fetchedAt": "2026-10-18T16:24:35.919Z",
+ "fetchedAt": "2026-10-22T05:39:23.920Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
      "wikidataId": "Q11819",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Budapest-Parliament-0001.jpg/500px-Budapest-Parliament-0001.jpg",
+      "width": 500,
+      "height": 370,
+      "author": "Source: User:Godot13 Derivative: User:MathKnight",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest-Parliament-0001.jpg",
+      "fullWidth": 6291
+     },
+     "description": "Budapeşte'de bina"
     },
     {
      "id": "relation/6486918",
@@ -70,7 +81,18 @@
       "heritage",
       "palace",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg/500px-20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg",
+      "fullWidth": 4120
+     },
+     "description": "castle and palace complex of the Hungarian kings in Budapest"
     },
     {
      "id": "way/197110386",
@@ -83,7 +105,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Budapest_-_Chain_Bridge_-_panoramio.jpg/500px-Budapest_-_Chain_Bridge_-_panoramio.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Alireza Javaheri",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_-_Chain_Bridge_-_panoramio.jpg",
+      "fullWidth": 4850
+     },
+     "description": "Budapeşte'de köprü"
     },
     {
      "id": "relation/20593057",
@@ -97,7 +130,8 @@
      "wikidataId": "Q338665",
      "kinds": [
       "religious"
-     ]
+     ],
+     "description": "Roman Catholic basilica in Budapest, Hungary"
     },
     {
      "id": "way/24000390",
@@ -113,7 +147,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Hungarian_State_Opera_House_in_Budapest.jpg/500px-Hungarian_State_Opera_House_in_Budapest.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jeremy Oakley",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hungarian_State_Opera_House_in_Budapest.jpg",
+      "fullWidth": 4608
+     },
+     "description": "Budapeşte'de konak"
     },
     {
      "id": "relation/11772",
@@ -129,7 +174,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Budapest%2C_Magyar_Tudom%C3%A1nyos_Akad%C3%A9mia_24.jpeg/500px-Budapest%2C_Magyar_Tudom%C3%A1nyos_Akad%C3%A9mia_24.jpeg",
+      "width": 500,
+      "height": 314,
+      "author": "Aisano",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_Magyar_Tudom%C3%A1nyos_Akad%C3%A9mia_24.jpeg",
+      "fullWidth": 2048
+     },
+     "description": "learned society of Hungary"
     },
     {
      "id": "way/37135081",
@@ -143,7 +199,18 @@
      "wikidataId": "Q493133",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Matthias_Church%2C_Budapest%2C_2017.jpg/500px-Matthias_Church%2C_Budapest%2C_2017.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Stefan Schäfer, Lich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Matthias_Church,_Budapest,_2017.jpg",
+      "fullWidth": 3027
+     },
+     "description": "Roman Catholic church in Budapest, Hungary"
     },
     {
      "id": "relation/17948384",
@@ -156,7 +223,18 @@
      "wikidataId": "Q493117",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Hal%C3%A1szb%C3%A1stya_%C3%A9p%C3%BClete_d%C3%ADszl%C3%A9pcs%C5%91vel_%28103._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_28.jpg/500px-Hal%C3%A1szb%C3%A1stya_%C3%A9p%C3%BClete_d%C3%ADszl%C3%A9pcs%C5%91vel_%28103._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_28.jpg",
+      "width": 500,
+      "height": 691,
+      "author": "TUX",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hal%C3%A1szb%C3%A1stya_%C3%A9p%C3%BClete_d%C3%ADszl%C3%A9pcs%C5%91vel_(103._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k)_28.jpg",
+      "fullWidth": 1157
+     },
+     "description": "Budapeşte'de bina"
     },
     {
      "id": "way/223530620",
@@ -170,7 +248,18 @@
      "wikidataId": "Q754397",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Synagogue-Budapest.jpg/500px-Synagogue-Budapest.jpg",
+      "width": 500,
+      "height": 452,
+      "author": "The original uploader was OsvátA at Hungarian Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Synagogue-Budapest.jpg",
+      "fullWidth": 857
+     },
+     "description": "Budapeşte'de sinagog"
     },
     {
      "id": "relation/11844",
@@ -185,7 +274,18 @@
       "business",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Magyar_Nemzeti_Bank_%C3%A9p%C3%BClete%2C_Szabads%C3%A1g_t%C3%A9r_%C3%A9s_Hold_utca_sarok._-_2005%2C_Budapest.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Magyar_Nemzeti_Bank_%C3%A9p%C3%BClete,_Szabads%C3%A1g_t%C3%A9r_%C3%A9s_Hold_utca_sarok._-_2005,_Budapest.jpg",
+      "fullWidth": 450
+     },
+     "description": "Macaristan'ın merkez bankası"
     },
     {
      "id": "wikidata/Q915195",
@@ -197,7 +297,18 @@
      "wikidataId": "Q915195",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Budapesti_Szabads%C3%A1g_h%C3%ADd_Pestr%C5%91l_2014.JPG/500px-Budapesti_Szabads%C3%A1g_h%C3%ADd_Pestr%C5%91l_2014.JPG",
+      "width": 500,
+      "height": 282,
+      "author": "KovácsD",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapesti_Szabads%C3%A1g_h%C3%ADd_Pestr%C5%91l_2014.JPG",
+      "fullWidth": 4105
+     },
+     "description": "bridge over the Danube in Budapest"
     },
     {
      "id": "wikidata/Q1063819",
@@ -210,7 +321,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Orsz%C3%A1gos_Sz%C3%A9ch%C3%A9nyi_K%C3%B6nyvt%C3%A1r.jpg/500px-Orsz%C3%A1gos_Sz%C3%A9ch%C3%A9nyi_K%C3%B6nyvt%C3%A1r.jpg",
+      "width": 500,
+      "height": 250,
+      "author": "Gothika",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Orsz%C3%A1gos_Sz%C3%A9ch%C3%A9nyi_K%C3%B6nyvt%C3%A1r.jpg",
+      "fullWidth": 3302
+     },
+     "description": "Hungarian national library"
     },
     {
      "id": "relation/156392",
@@ -223,7 +345,18 @@
       "business",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Liszt_Ferenc_Zenem%C5%B1v%C3%A9szeti_Egyetem_2013-ban_fel%C3%BAj%C3%ADtott_homlokzata.JPG/500px-Liszt_Ferenc_Zenem%C5%B1v%C3%A9szeti_Egyetem_2013-ban_fel%C3%BAj%C3%ADtott_homlokzata.JPG",
+      "width": 500,
+      "height": 393,
+      "author": "Thaler",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Liszt_Ferenc_Zenem%C5%B1v%C3%A9szeti_Egyetem_2013-ban_fel%C3%BAj%C3%ADtott_homlokzata.JPG",
+      "fullWidth": 2736
+     },
+     "description": "concert hall and music conservatory in Budapest, Hungary"
     },
     {
      "id": "relation/165910",
@@ -236,7 +369,18 @@
      "kinds": [
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/S%C3%A1ndor-palota_naps%C3%BCt%C3%A9sben.jpg/500px-S%C3%A1ndor-palota_naps%C3%BCt%C3%A9sben.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Kontár Csaba Attila",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:S%C3%A1ndor-palota_naps%C3%BCt%C3%A9sben.jpg",
+      "fullWidth": 4448
+     },
+     "description": "Budapeşte'de saray"
     },
     {
      "id": "wikidata/Q699098",
@@ -248,7 +392,18 @@
      "wikidataId": "Q699098",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/View_from_Citadella_on_Budapest_2005_154.jpg/500px-View_from_Citadella_on_Budapest_2005_154.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Norbert Aepli, Switzerland ( User:Noebu )",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_from_Citadella_on_Budapest_2005_154.jpg",
+      "fullWidth": 2592
+     },
+     "description": "bridge over Danube in Budapest"
     },
     {
      "id": "wikidata/Q916120",
@@ -260,7 +415,18 @@
      "wikidataId": "Q916120",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/A_steel_arch_bridge_over_calm_water_%28Unsplash%29.jpg/500px-A_steel_arch_bridge_over_calm_water_%28Unsplash%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Daniel Olah danesduet10",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A_steel_arch_bridge_over_calm_water_(Unsplash).jpg",
+      "fullWidth": 6981
+     },
+     "description": "bridge in Budapest"
     },
     {
      "id": "node/1488974596",
@@ -271,7 +437,18 @@
      "wikidataId": "Q933182",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Budapest_Gell%C3%A9rt_socha_svobody_1.jpg/500px-Budapest_Gell%C3%A9rt_socha_svobody_1.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Karelj",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Gell%C3%A9rt_socha_svobody_1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Gell%C3%A9rt_socha_svobody_1.jpg",
+      "fullWidth": 1600
+     },
+     "description": "sculpture in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q950534",
@@ -284,7 +461,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Budapest_Vaci_utca.jpg/500px-Budapest_Vaci_utca.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Vaci_utca.jpg",
+      "fullWidth": 2304
+     },
+     "description": "Budapeşte'de sokak"
     },
     {
      "id": "way/24323859",
@@ -295,7 +483,18 @@
      "website": "https://piaconline.hu/en/central-market-hall/",
      "openingHours": "Mo-Fr 06:00-18:00; Sa 06:00-16:00; Su 10:00-16:00",
      "wikipediaCount": 24,
-     "wikidataId": "Q195344"
+     "wikidataId": "Q195344",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Budapest_-_K%C3%B6zponti_V%C3%A1s%C3%A1rcsarnok_%282%29.jpg/500px-Budapest_-_K%C3%B6zponti_V%C3%A1s%C3%A1rcsarnok_%282%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fred Romero from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_-_K%C3%B6zponti_V%C3%A1s%C3%A1rcsarnok_(2).jpg",
+      "fullWidth": 5184
+     },
+     "description": "market hall in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q781659",
@@ -307,7 +506,18 @@
      "wikidataId": "Q781659",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Budapest_Petofi_Bridge.jpg/500px-Budapest_Petofi_Bridge.jpg",
+      "width": 500,
+      "height": 261,
+      "author": "User:OsvátA",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Petofi_Bridge.jpg",
+      "fullWidth": 1685
+     },
+     "description": "bridge in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q473811",
@@ -319,7 +529,18 @@
      "wikidataId": "Q473811",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Shoes_Danube_Promenade_IMGP1297.jpg/500px-Shoes_Danube_Promenade_IMGP1297.jpg",
+      "width": 500,
+      "height": 723,
+      "author": "Nikodem Nijaki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shoes_Danube_Promenade_IMGP1297.jpg",
+      "fullWidth": 2360
+     },
+     "description": "Memorial in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q570848",
@@ -330,7 +551,18 @@
      "wikidataId": "Q570848",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Voeresmartyter-gerbeaud-budapest.jpg/500px-Voeresmartyter-gerbeaud-budapest.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Andreas Poeschek , fotografikus.hu",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Voeresmartyter-gerbeaud-budapest.jpg",
+      "fullWidth": 600
+     },
+     "description": "Budapeşte'de bulunan meydan"
     },
     {
      "id": "wikidata/Q731939",
@@ -342,7 +574,18 @@
      "wikidataId": "Q731939",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Budapest_Funicular_R01.jpg/500px-Budapest_Funicular_R01.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Marc Ryckaert ( MJJR )",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Funicular_R01.jpg",
+      "fullWidth": 2136
+     },
+     "description": "Budapeşte'de füniküler"
     },
     {
      "id": "wikidata/Q206170",
@@ -353,7 +596,18 @@
      "wikidataId": "Q206170",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bastion_of_Hungarian_Freedom_2026.jpg/500px-Bastion_of_Hungarian_Freedom_2026.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Elekes Andor",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bastion_of_Hungarian_Freedom_2026.jpg",
+      "fullWidth": 4096
+     },
+     "description": "Citadel in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q2605415",
@@ -365,7 +619,18 @@
      "wikidataId": "Q2605415",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/BudapestGhettowall.jpg/500px-BudapestGhettowall.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "w:en:User:Zello",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BudapestGhettowall.jpg",
+      "fullWidth": 1536
+     },
+     "description": "Budapeşte'de II. Dünya Savaşı sırasında Yahudilerin yaşamak zorunda olduğu bölge"
     },
     {
      "id": "relation/11847",
@@ -380,7 +645,18 @@
       "hotel",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Gresham_palota.jpg/500px-Gresham_palota.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "michael clarke stuff",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gresham_palota.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Budapeşte'de saray"
     },
     {
      "id": "way/46769969",
@@ -394,7 +670,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Budapest_Gell%C3%A9rtbad_1.JPG/500px-Budapest_Gell%C3%A9rtbad_1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Zairon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Gell%C3%A9rtbad_1.JPG",
+      "fullWidth": 3444
+     },
+     "description": "Budapeşte'de kaplıca"
     },
     {
      "id": "node/9114091196",
@@ -408,7 +695,18 @@
      "wikidataId": "Q839142",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Rockchapel.JPG/500px-Rockchapel.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "No machine-readable author provided. Ramirez HUN assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rockchapel.JPG",
+      "fullWidth": 1308
+     },
+     "description": "church"
     },
     {
      "id": "wikidata/Q904825",
@@ -419,7 +717,18 @@
      "wikidataId": "Q904825",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Hungary%2C_Budapest%2C_Downtown-_Deak_square_02.jpg/500px-Hungary%2C_Budapest%2C_Downtown-_Deak_square_02.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Takkk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hungary,_Budapest,_Downtown-_Deak_square_02.jpg",
+      "fullWidth": 3456
+     },
+     "description": "Budapeşte'de bulunan meydan"
     },
     {
      "id": "wikidata/Q1799636",
@@ -433,7 +742,18 @@
       "business",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/HotelGellert.JPG/500px-HotelGellert.JPG",
+      "width": 500,
+      "height": 303,
+      "author": "WikiTamasB",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HotelGellert.JPG",
+      "fullWidth": 1600
+     },
+     "description": "Budapeşte'de bir otel"
     },
     {
      "id": "wikidata/Q920826",
@@ -445,7 +765,18 @@
      "wikidataId": "Q920826",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Orsz%C3%A1gh%C3%A1z_a_R%C3%A1k%C3%B3czi_szoborral_2014.jpg/500px-Orsz%C3%A1gh%C3%A1z_a_R%C3%A1k%C3%B3czi_szoborral_2014.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "KovácsD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Orsz%C3%A1gh%C3%A1z_a_R%C3%A1k%C3%B3czi_szoborral_2014.jpg",
+      "fullWidth": 4288
+     },
+     "description": "Budapeşte'de meydan"
     },
     {
      "id": "wikidata/Q299975",
@@ -456,7 +787,18 @@
      "wikidataId": "Q299975",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Budapest%2C_Szabads%C3%A1g_t%C3%A9r_l%C3%A9gifot%C3%B3.jpg",
+      "width": 500,
+      "height": 349,
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_Szabads%C3%A1g_t%C3%A9r_l%C3%A9gifot%C3%B3.jpg",
+      "fullWidth": 480
+     },
+     "description": "Budapeşte'de meydan"
     },
     {
      "id": "way/24038230",
@@ -467,7 +809,18 @@
      "website": "https://vigado.hu/",
      "openingHours": "Mo-Su 10:00-19:00; PH off",
      "wikipediaCount": 14,
-     "wikidataId": "Q674032"
+     "wikidataId": "Q674032",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Pesti_Vigado_P8130129.jpg/500px-Pesti_Vigado_P8130129.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Original uploader was Misibacsi at hu.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pesti_Vigado_P8130129.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pesti_Vigado_P8130129.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Budapeşte'de bina"
     },
     {
      "id": "way/24256098",
@@ -483,7 +836,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Rudas_F%C3%BCrd%C5%91.jpg/500px-Rudas_F%C3%BCrd%C5%91.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Elekes Andor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rudas_F%C3%BCrd%C5%91.jpg",
+      "fullWidth": 4000
+     },
+     "description": "Budapeşte'de hamam"
     },
     {
      "id": "wikidata/Q791408",
@@ -495,7 +859,18 @@
      "wikidataId": "Q791408",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Market_hall_in_Budapest%2C_I._district.JPG/500px-Market_hall_in_Budapest%2C_I._district.JPG",
+      "width": 500,
+      "height": 500,
+      "author": "Szilas",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Market_hall_in_Budapest,_I._district.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Market_hall_in_Budapest,_I._district.JPG",
+      "fullWidth": 2336
+     },
+     "description": "Budapeşte'de meydan"
     },
     {
      "id": "wikidata/Q934011",
@@ -506,7 +881,18 @@
      "wikidataId": "Q934011",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Tram_line_48_by_K%C3%A1lvin_t%C3%A9r_stop.jpg/500px-Tram_line_48_by_K%C3%A1lvin_t%C3%A9r_stop.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Smiley.toerist",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tram_line_48_by_K%C3%A1lvin_t%C3%A9r_stop.jpg",
+      "fullWidth": 4288
+     },
+     "description": "Budapeşte'de meydan"
     },
     {
      "id": "way/37126204",
@@ -521,7 +907,18 @@
      "wikidataId": "Q692020",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/2022-03_Budapest_-_Tomb_of_G%C3%BCl_Baba_%281%29.jpg/500px-2022-03_Budapest_-_Tomb_of_G%C3%BCl_Baba_%281%29.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Marek Mróz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2022-03_Budapest_-_Tomb_of_G%C3%BCl_Baba_(1).jpg",
+      "fullWidth": 2592
+     },
+     "description": "Macaristan'ın Budapeşte kentinde tarihi türbe"
     },
     {
      "id": "wikidata/Q103062",
@@ -534,7 +931,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Erzsebet_korut_01.jpg/500px-Erzsebet_korut_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Attila Terbócs",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Erzsebet_korut_01.jpg",
+      "fullWidth": 800
+     },
+     "description": "Budapeşte'de sokak"
     },
     {
      "id": "wikidata/Q727749",
@@ -549,7 +957,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/ErkelFotoThalerTamas.jpg/500px-ErkelFotoThalerTamas.jpg",
+      "width": 500,
+      "height": 268,
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ErkelFotoThalerTamas.jpg",
+      "fullWidth": 3642
+     },
+     "description": "theatre in Budapest, Hungary"
     },
     {
      "id": "relation/3363212",
@@ -562,7 +981,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Budapest_R%C3%A1cz_F%C3%BCrd%C5%91_IMG_0750-1000.jpg/500px-Budapest_R%C3%A1cz_F%C3%BCrd%C5%91_IMG_0750-1000.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "hu:User:misibacsi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_R%C3%A1cz_F%C3%BCrd%C5%91_IMG_0750-1000.jpg",
+      "fullWidth": 1000
+     },
+     "description": "thermal bath in Budapest"
     },
     {
      "id": "way/481583657",
@@ -577,7 +1007,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Torok_furdo_Budapest_Ganz_utca_PB010341-lev-1000.jpg/500px-Torok_furdo_Budapest_Ganz_utca_PB010341-lev-1000.jpg",
+      "width": 500,
+      "height": 342,
+      "author": "Misibacsi",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Torok_furdo_Budapest_Ganz_utca_PB010341-lev-1000.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torok_furdo_Budapest_Ganz_utca_PB010341-lev-1000.jpg",
+      "fullWidth": 1000
+     },
+     "description": "thermal bath in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q897802",
@@ -590,7 +1031,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Budape%C5%A1%C5%A5_1357.jpg/500px-Budape%C5%A1%C5%A5_1357.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dezidor",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budape%C5%A1%C5%A5_1357.jpg",
+      "fullWidth": 2816
+     },
+     "description": "theatre in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q767163",
@@ -601,7 +1053,18 @@
      "wikidataId": "Q767163",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Sz%C3%A9ll_K%C3%A1lm%C3%A1n_t%C3%A9r_az_%C3%A1t%C3%A9p%C3%ADt%C3%A9s_ut%C3%A1n_%28l%C3%A1tk%C3%A9p%29.jpg/500px-Sz%C3%A9ll_K%C3%A1lm%C3%A1n_t%C3%A9r_az_%C3%A1t%C3%A9p%C3%ADt%C3%A9s_ut%C3%A1n_%28l%C3%A1tk%C3%A9p%29.jpg",
+      "width": 500,
+      "height": 275,
+      "author": "Kispados at Hungarian Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9ll_K%C3%A1lm%C3%A1n_t%C3%A9r_az_%C3%A1t%C3%A9p%C3%ADt%C3%A9s_ut%C3%A1n_(l%C3%A1tk%C3%A9p).jpg",
+      "fullWidth": 5158
+     },
+     "description": "Budapeşte'de meydan"
     },
     {
      "id": "way/243689215",
@@ -612,7 +1075,18 @@
      "wikidataId": "Q999637",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Budapest%2C_fels%C5%91v%C3%ADziv%C3%A1rosi_r%C3%B3mai_katolikus_templom_2021_01.jpg/500px-Budapest%2C_fels%C5%91v%C3%ADziv%C3%A1rosi_r%C3%B3mai_katolikus_templom_2021_01.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_fels%C5%91v%C3%ADziv%C3%A1rosi_r%C3%B3mai_katolikus_templom_2021_01.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Roman Catholic Church at Batthyány Square, Budapest, Hungary"
     },
     {
      "id": "way/249932064",
@@ -623,7 +1097,18 @@
      "wikidataId": "Q16522996",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/SzilagyiRefFotoThalerTamas1.jpg/500px-SzilagyiRefFotoThalerTamas1.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SzilagyiRefFotoThalerTamas1.jpg",
+      "fullWidth": 2296
+     },
+     "description": "church building in Budapest, Hungary"
     },
     {
      "id": "wikidata/Q161181",
@@ -634,20 +1119,18 @@
      "wikidataId": "Q161181",
      "kinds": [
       "notPlace"
-     ]
-    },
-    {
-     "id": "way/24321885",
-     "name": "Belvárosi Nagyboldogasszony-templom",
-     "lat": 47.49223,
-     "lon": 19.05229,
-     "website": "https://www.belvarosiplebania.hu/",
-     "openingHours": "Mo-Sa 10:00-18:00; Su 08:30-19:00",
-     "wikipediaCount": 10,
-     "wikidataId": "Q792586",
-     "kinds": [
-      "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/0_km_monument_Budapest.JPG/500px-0_km_monument_Budapest.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Qqriq",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0_km_monument_Budapest.JPG",
+      "fullWidth": 2048
+     },
+     "description": "monument in Budapest, from which distances are measured"
     }
    ]
   },
@@ -668,7 +1151,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Magyar_Nemzeti_M%C3%BAzeum.jpg/500px-Magyar_Nemzeti_M%C3%BAzeum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "hu:user:Pasztilla",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Magyar_Nemzeti_M%C3%BAzeum.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Magyar_Nemzeti_M%C3%BAzeum.jpg",
+      "fullWidth": 640
+     },
+     "description": "national museum for the history, art and archaeology of Hungary"
     },
     {
      "id": "relation/2203495",
@@ -683,7 +1177,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Peace_March_for_Hungary_-_2013.10.23_%2870%29.JPG/500px-Peace_March_for_Hungary_-_2013.10.23_%2870%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Derzsi Elekes Andor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Peace_March_for_Hungary_-_2013.10.23_(70).JPG",
+      "fullWidth": 4320
+     },
+     "description": "museum about about terror regimes in Budapest, Hungary"
     },
     {
      "id": "node/735186601",
@@ -698,7 +1203,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Budapest%2C_Royal_Palace_Complex%2C_Hungarian_National_Gallery_%22B%22_Wing_from_the_Hunyadi_Courtyard_and_the_Horse_Wrangler_Statue.jpg/500px-Budapest%2C_Royal_Palace_Complex%2C_Hungarian_National_Gallery_%22B%22_Wing_from_the_Hunyadi_Courtyard_and_the_Horse_Wrangler_Statue.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Yoav Dothan",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_Royal_Palace_Complex,_Hungarian_National_Gallery_%22B%22_Wing_from_the_Hunyadi_Courtyard_and_the_Horse_Wrangler_Statue.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_Royal_Palace_Complex,_Hungarian_National_Gallery_%22B%22_Wing_from_the_Hunyadi_Courtyard_and_the_Horse_Wrangler_Statue.jpg",
+      "fullWidth": 3648
+     },
+     "description": "national art museum in Hungary"
     },
     {
      "id": "way/240902171",
@@ -714,7 +1230,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Museum_of_Applied_Arts._Main_facade_from_south._BudapestDSCN3639.jpg/500px-Museum_of_Applied_Arts._Main_facade_from_south._BudapestDSCN3639.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Yoav Dothan",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Applied_Arts._Main_facade_from_south._BudapestDSCN3639.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Applied_Arts._Main_facade_from_south._BudapestDSCN3639.jpg",
+      "fullWidth": 3648
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "relation/3470782",
@@ -731,7 +1258,18 @@
       "noCoordinate",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Budapest%2C_Magyar_K%C3%A9pz%C5%91m%C5%B1v%C3%A9szeti_Egyetem_2022_02.jpg/500px-Budapest%2C_Magyar_K%C3%A9pz%C5%91m%C5%B1v%C3%A9szeti_Egyetem_2022_02.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_Magyar_K%C3%A9pz%C5%91m%C5%B1v%C3%A9szeti_Egyetem_2022_02.jpg",
+      "fullWidth": 2400
+     },
+     "description": "Budapest university, Hungary"
     },
     {
      "id": "node/11648509882",
@@ -745,7 +1283,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/K%C3%A1rolyi_Mansion%2C_corner_of_K%C3%A1rolyi_Mih%C3%A1ly_and_Ferenczy_Istv%C3%A1n_Sts.%2C_2011_Budape%C5%A1%C5%A5_1224.jpg/500px-K%C3%A1rolyi_Mansion%2C_corner_of_K%C3%A1rolyi_Mih%C3%A1ly_and_Ferenczy_Istv%C3%A1n_Sts.%2C_2011_Budape%C5%A1%C5%A5_1224.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dezidor",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%A1rolyi_Mansion,_corner_of_K%C3%A1rolyi_Mih%C3%A1ly_and_Ferenczy_Istv%C3%A1n_Sts.,_2011_Budape%C5%A1%C5%A5_1224.jpg",
+      "fullWidth": 2816
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "way/106079286",
@@ -760,7 +1309,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Holocaust_Museum%2C_Budapest_02.JPG/500px-Holocaust_Museum%2C_Budapest_02.JPG",
+      "width": 500,
+      "height": 753,
+      "author": "VinceB",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Holocaust_Museum,_Budapest_02.JPG",
+      "fullWidth": 797
+     },
+     "description": "museum in Budapest"
     },
     {
      "id": "node/735191228",
@@ -776,7 +1336,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/BTM1.jpg/500px-BTM1.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "Vadaro",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:BTM1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BTM1.jpg",
+      "fullWidth": 1200
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "node/4817975711",
@@ -791,7 +1362,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Lak%C3%B3-_%C3%A9s_irodah%C3%A1z%2C_az_%C3%BAn._%22%C3%9Cvegh%C3%A1z%22_%2812313._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg/500px-Lak%C3%B3-_%C3%A9s_irodah%C3%A1z%2C_az_%C3%BAn._%22%C3%9Cvegh%C3%A1z%22_%2812313._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "redoctober",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lak%C3%B3-_%C3%A9s_irodah%C3%A1z,_az_%C3%BAn._%22%C3%9Cvegh%C3%A1z%22_(12313._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k).jpg",
+      "fullWidth": 1200
+     },
+     "description": "Hungarian museum; building in Budapest used by the Swiss diplomat Carl Lutz to help Jews in Budapest during the Holocaust"
     },
     {
      "id": "node/737630261",
@@ -807,7 +1389,18 @@
       "adminArea",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/A_M%C3%BAzeum_bej%C3%A1rata.jpg/500px-A_M%C3%BAzeum_bej%C3%A1rata.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Hospital in the Rock Marketing",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A_M%C3%BAzeum_bej%C3%A1rata.jpg",
+      "fullWidth": 4240
+     },
+     "description": "museum"
     },
     {
      "id": "node/276951329",
@@ -821,7 +1414,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Budapest_metro_museum_1.JPG/500px-Budapest_metro_museum_1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Christo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest_metro_museum_1.JPG",
+      "fullWidth": 2016
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "way/250256596",
@@ -836,7 +1440,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Semmelweis_Orvost%C3%B6rt%C3%A9neti_M%C3%BAzeum.jpg/500px-Semmelweis_Orvost%C3%B6rt%C3%A9neti_M%C3%BAzeum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "KovacsDaniel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Semmelweis_Orvost%C3%B6rt%C3%A9neti_M%C3%BAzeum.jpg",
+      "fullWidth": 4272
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "relation/165909",
@@ -851,7 +1466,18 @@
      "kinds": [
       "office",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/SzinhazUtcaFotoThalerTamas4.jpg/500px-SzinhazUtcaFotoThalerTamas4.jpg",
+      "width": 500,
+      "height": 494,
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SzinhazUtcaFotoThalerTamas4.jpg",
+      "fullWidth": 2409
+     },
+     "description": "former seat of the Prime Minister of Hungary"
     },
     {
      "id": "way/25291179",
@@ -866,7 +1492,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Knorr-villa_%28majd_Hopp-villa%29_%2812547._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_3.jpg/500px-Knorr-villa_%28majd_Hopp-villa%29_%2812547._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_3.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "ato",
+      "license": "CC BY 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/hu/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Knorr-villa_(majd_Hopp-villa)_(12547._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k)_3.jpg",
+      "fullWidth": 2896
+     },
+     "description": "museum in Budapest, Hungary"
     },
     {
      "id": "node/4119286412",
@@ -881,7 +1518,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Galerie_Koller%2C_Ausstellungsraum.jpg/500px-Galerie_Koller%2C_Ausstellungsraum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Befejezetlen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galerie_Koller,_Ausstellungsraum.jpg",
+      "fullWidth": 640
+     },
+     "description": "Budapeşte'de sanat müzesi"
     },
     {
      "id": "node/275495799",
@@ -896,7 +1544,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/FranzLisztPiano.jpg/500px-FranzLisztPiano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tamcgath",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:FranzLisztPiano.jpg",
+      "fullWidth": 3888
+     },
+     "description": "Memorial Museum and Research Center in Budapest"
     },
     {
      "id": "relation/3482601",
@@ -907,7 +1566,18 @@
      "website": "https://capacenter.hu/",
      "openingHours": "11:00-19:00",
      "wikipediaCount": 4,
-     "wikidataId": "Q21499507"
+     "wikidataId": "Q21499507",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Robert_Capa_Contemporary_Photography_Center_03.jpg/500px-Robert_Capa_Contemporary_Photography_Center_03.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "Derbrauni",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Robert_Capa_Contemporary_Photography_Center_03.jpg",
+      "fullWidth": 4000
+     },
+     "description": "photography museum"
     },
     {
      "id": "node/276836017",
@@ -922,7 +1592,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Andr%C3%A1ssy_87_sz%C3%A1m_%281%29.jpg/500px-Andr%C3%A1ssy_87_sz%C3%A1m_%281%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Elekes Andor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Andr%C3%A1ssy_87_sz%C3%A1m_(1).jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum on Zoltán Kodály in Budapest"
     },
     {
      "id": "way/144657695",
@@ -936,7 +1617,18 @@
      "wikidataId": "Q851197",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Original_Hungarian_Parliament.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Phishphace27",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Original_Hungarian_Parliament.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Original_Hungarian_Parliament.jpg",
+      "fullWidth": 288
+     },
+     "description": "Budapeşte'de bina"
     },
     {
      "id": "node/945682477",
@@ -951,7 +1643,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Foundry_Museum%2C_Budapest.jpg/500px-Foundry_Museum%2C_Budapest.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Szilas",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Foundry_Museum,_Budapest.jpg",
+      "fullWidth": 4566
+     },
+     "description": "museum"
     },
     {
      "id": "node/527016465",
@@ -966,7 +1669,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Arany_Sas_Patika_c%C3%A9g%C3%A9r.JPG/500px-Arany_Sas_Patika_c%C3%A9g%C3%A9r.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Einstein2",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arany_Sas_Patika_c%C3%A9g%C3%A9r.JPG",
+      "fullWidth": 3456
+     },
+     "description": "chemist's shop"
     },
     {
      "id": "node/871115864",
@@ -981,7 +1695,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Bajor_Gizi_Sz%C3%ADn%C3%A9szm%C3%BAzeum.JPG/500px-Bajor_Gizi_Sz%C3%ADn%C3%A9szm%C3%BAzeum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Kispados at Hungarian Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bajor_Gizi_Sz%C3%ADn%C3%A9szm%C3%BAzeum.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bajor_Gizi_Sz%C3%ADn%C3%A9szm%C3%BAzeum.JPG",
+      "fullWidth": 3488
+     },
+     "description": "museum in Budapest, Hungary"
     },
     {
      "id": "way/189100092",
@@ -992,7 +1717,17 @@
      "website": "https://barabasvilla.hu/",
      "openingHours": "Mo-Th 09:00-18:00; Su 09:00-13:00",
      "wikipediaCount": 2,
-     "wikidataId": "Q65217849"
+     "wikidataId": "Q65217849",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/BarabasVillaFotoThalerTamas.jpg/500px-BarabasVillaFotoThalerTamas.jpg",
+      "width": 500,
+      "height": 268,
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BarabasVillaFotoThalerTamas.jpg",
+      "fullWidth": 3253
+     }
     },
     {
      "id": "node/276965238",
@@ -1007,7 +1742,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Budapest%2C_Belyegmuzeum_IMG_20170924_171940-2000.jpg/500px-Budapest%2C_Belyegmuzeum_IMG_20170924_171940-2000.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Misibacsi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_Belyegmuzeum_IMG_20170924_171940-2000.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Philatelic museum in Budapest, Hungary"
     },
     {
      "id": "way/25291140",
@@ -1036,7 +1782,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Rath_Gyorgy_muzeum_P3160509-lev-1000.jpg/500px-Rath_Gyorgy_muzeum_P3160509-lev-1000.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Misibacsi ( talk · contribs )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rath_Gyorgy_muzeum_P3160509-lev-1000.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "node/3487749567",
@@ -1051,7 +1808,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/KSH_Konyvtar_magyar_nyelv%C5%B1_szakolvas%C3%B3_2.jpg/500px-KSH_Konyvtar_magyar_nyelv%C5%B1_szakolvas%C3%B3_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Weisz Tamás",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KSH_Konyvtar_magyar_nyelv%C5%B1_szakolvas%C3%B3_2.jpg",
+      "fullWidth": 4000
+     },
+     "description": "library"
     },
     {
      "id": "way/385832061",
@@ -1066,7 +1834,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Budape%C5%A1%C5%A5%2C_Erzsebetv%C3%A1ros%2C_synagoga_III.JPG/500px-Budape%C5%A1%C5%A5%2C_Erzsebetv%C3%A1ros%2C_synagoga_III.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "I would appreciate being notified if you use my work outside Wikimedia. More of my work can be found in my personal gallery .",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budape%C5%A1%C5%A5,_Erzsebetv%C3%A1ros,_synagoga_III.JPG",
+      "fullWidth": 2848
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "node/276949914",
@@ -1081,7 +1860,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/AdyEndre_VeresP%C3%A1ln%C3%A94.jpg/500px-AdyEndre_VeresP%C3%A1ln%C3%A94.jpg",
+      "width": 500,
+      "height": 480,
+      "author": "Csurla",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AdyEndre_VeresP%C3%A1ln%C3%A94.jpg",
+      "fullWidth": 2275
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "relation/3251841",
@@ -1096,7 +1886,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Aranytiz_Theater_Budapest_IMG_20171224_110718.jpg/500px-Aranytiz_Theater_Budapest_IMG_20171224_110718.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Misibacsi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aranytiz_Theater_Budapest_IMG_20171224_110718.jpg",
+      "fullWidth": 2560
+     },
+     "description": "cultural center in Budapest (district V)"
     },
     {
      "id": "node/4120659398",
@@ -1111,7 +1912,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "art gallery in Budapest"
     },
     {
      "id": "way/25366511",
@@ -1125,7 +1927,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Duna-part%2C_Le%C3%A1nyfalu_g%C5%91zhaj%C3%B3._Fortepan_22176.jpg/500px-Duna-part%2C_Le%C3%A1nyfalu_g%C5%91zhaj%C3%B3._Fortepan_22176.jpg",
+      "width": 500,
+      "height": 306,
+      "author": "FOTO:Fortepan — ID 22176 : Adományozó/Donor: Storymap.hu.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Duna-part,_Le%C3%A1nyfalu_g%C5%91zhaj%C3%B3._Fortepan_22176.jpg",
+      "fullWidth": 2433
+     }
     },
     {
      "id": "node/10014380774",
@@ -1141,7 +1953,8 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "description": "exhibition of art experiments involving light and sound in Budapest"
     },
     {
      "id": "node/4356516859",
@@ -1156,7 +1969,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Fairy_Tale_Museum%2C_Budapest.JPG/500px-Fairy_Tale_Museum%2C_Budapest.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fairy_Tale_Museum,_Budapest.JPG",
+      "fullWidth": 4608
+     },
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "node/9458805135",
@@ -1171,7 +1995,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Money_Museum%2C_Budapest_01.jpg/500px-Money_Museum%2C_Budapest_01.jpg",
+      "width": 500,
+      "height": 450,
+      "author": "Szilas",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Money_Museum,_Budapest_01.jpg",
+      "fullWidth": 2976
+     }
     },
     {
      "id": "node/4356428027",
@@ -1186,7 +2020,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Budapeşte'de müze"
     },
     {
      "id": "node/2473537582",
@@ -1201,7 +2036,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/OSZMI-1.jpg/500px-OSZMI-1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Vadaro",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:OSZMI-1.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum in Budapest, Hungary"
     },
     {
      "id": "node/2126973730",
@@ -1216,7 +2062,8 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "description": "Wikimedia disambiguation page"
     },
     {
      "id": "way/139794534",
@@ -1227,7 +2074,18 @@
      "website": "https://kult13.hu/szinterek/ram-radnoti-miklos-muvelodesi-kozpont/",
      "openingHours": "09:00-21:00",
      "wikipediaCount": 1,
-     "wikidataId": "Q1244979"
+     "wikidataId": "Q1244979",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/%C3%9Ajlip%C3%B3tv%C3%A1rosi_K%C3%B6z%C3%B6ss%C3%A9gi_H%C3%A1z_%C3%A9p%C3%ADtkez%C3%A9s_07-21.JPG/500px-%C3%9Ajlip%C3%B3tv%C3%A1rosi_K%C3%B6z%C3%B6ss%C3%A9gi_H%C3%A1z_%C3%A9p%C3%ADtkez%C3%A9s_07-21.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Kmiki87",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:%C3%9Ajlip%C3%B3tv%C3%A1rosi_K%C3%B6z%C3%B6ss%C3%A9gi_H%C3%A1z_%C3%A9p%C3%ADtkez%C3%A9s_07-21.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%9Ajlip%C3%B3tv%C3%A1rosi_K%C3%B6z%C3%B6ss%C3%A9gi_H%C3%A1z_%C3%A9p%C3%ADtkez%C3%A9s_07-21.JPG",
+      "fullWidth": 1200
+     },
+     "description": "building"
     },
     {
      "id": "node/4792183534",
@@ -1260,7 +2118,18 @@
      "wikidataId": "Q990349",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/The_former_Erd%C3%A9ly_bastion._Buda_Castle._Babits_Promenade%2C_Budapest.JPG/500px-The_former_Erd%C3%A9ly_bastion._Buda_Castle._Babits_Promenade%2C_Budapest.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_former_Erd%C3%A9ly_bastion._Buda_Castle._Babits_Promenade,_Budapest.JPG",
+      "fullWidth": 2272
+     },
+     "description": "Budapeşte'de bina"
     },
     {
      "id": "node/5243949464",
@@ -1268,7 +2137,18 @@
      "lat": 47.50438,
      "lon": 19.02677,
      "wikipediaCount": 1,
-     "wikidataId": "Q991843"
+     "wikidataId": "Q991843",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Budapest._Buda_Castle._Esztergom_bastion_formerly_known_as_Earth%27s_Bastion._Part_of_Anjou_bastion._-_Stairs_to_the_Gate_of_the_Military_History_Museum..JPG/500px-Budapest._Buda_Castle._Esztergom_bastion_formerly_known_as_Earth%27s_Bastion._Part_of_Anjou_bastion._-_Stairs_to_the_Gate_of_the_Military_History_Museum..JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Budapest._Buda_Castle._Esztergom_bastion_formerly_known_as_Earth%27s_Bastion._Part_of_Anjou_bastion._-_Stairs_to_the_Gate_of_the_Military_History_Museum..JPG",
+      "fullWidth": 2272
+     },
+     "description": "roundel in the Buda Castle, Budapest, Hungary"
     },
     {
      "id": "node/5866142101",
@@ -1276,7 +2156,17 @@
      "lat": 47.50537,
      "lon": 19.02972,
      "wikipediaCount": 1,
-     "wikidataId": "Q1179969"
+     "wikidataId": "Q1179969",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Murad_Pasha_tower._Part_of_the_Buda_Castle._-_Budapest.JPG/500px-Murad_Pasha_tower._Part_of_the_Buda_Castle._-_Budapest.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Murad_Pasha_tower._Part_of_the_Buda_Castle._-_Budapest.JPG",
+      "fullWidth": 2272
+     }
     },
     {
      "id": "node/5243949465",
@@ -1287,7 +2177,8 @@
      "wikidataId": "Q1285782",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "description": "bastion"
     },
     {
      "id": "node/12829236051",
@@ -1534,7 +2425,8 @@
      "openingHours": "Mo-Fr 18:00-24:00, Sa 12:00-24:00",
      "cuisine": "fine dining",
      "wikidataId": "Q88590520",
-     "detailed": true
+     "detailed": true,
+     "description": "Budapeşte'de restoran"
     },
     {
      "id": "node/930168453",
@@ -1623,7 +2515,18 @@
      "openingHours": "Fr-Mo 18:30-23:00",
      "cuisine": "fine dining",
      "wikidataId": "Q869348",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Costes_Restaurant%2C_Budapest_01.JPG/500px-Costes_Restaurant%2C_Budapest_01.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Antissimo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Costes_Restaurant,_Budapest_01.JPG",
+      "fullWidth": 2560
+     },
+     "description": "Budapeşte'de restoran"
     },
     {
      "id": "node/1567041156",
@@ -2401,7 +3304,18 @@
      "website": "https://www.a38.hu/",
      "openingHours": "08:00-22:00",
      "wikidataId": "Q429618",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/A38_1.jpg/500px-A38_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Texaner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A38_1.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Budapeşte'de gemi restoranı"
     },
     {
      "id": "node/4014750895",

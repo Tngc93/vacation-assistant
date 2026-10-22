@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "AMM",
- "fetchedAt": "2026-10-18T16:58:35.085Z",
+ "fetchedAt": "2026-10-22T06:31:50.968Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Amman_BW_29.JPG/500px-Amman_BW_29.JPG",
+      "width": 500,
+      "height": 309,
+      "author": "Berthold Werner",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amman_BW_29.JPG",
+      "fullWidth": 3084
+     },
+     "description": "Ürdün'de bir cami"
     },
     {
      "id": "way/35200952",
@@ -64,7 +75,18 @@
      "wikidataId": "Q3157009",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Amman_Citadel.jpg/500px-Amman_Citadel.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "David Bjorgen",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amman_Citadel.jpg",
+      "fullWidth": 1800
+     },
+     "description": "archaeological site in Amman"
     },
     {
      "id": "way/608094627",
@@ -77,7 +99,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Roman_theater_of_Amman_01.jpg/500px-Roman_theater_of_Amman_01.jpg",
+      "width": 500,
+      "height": 348,
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roman_theater_of_Amman_01.jpg",
+      "fullWidth": 3366
+     },
+     "description": "ancient Roman theatre in Amman, Jordan"
     },
     {
      "id": "way/245144085",
@@ -90,7 +123,18 @@
       "notPlace",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Temple_of_Hercules_on_the_Citadel_Mountain_in_Amman_01.jpg/500px-Temple_of_Hercules_on_the_Citadel_Mountain_in_Amman_01.jpg",
+      "width": 500,
+      "height": 421,
+      "author": "Dudva",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Hercules_on_the_Citadel_Mountain_in_Amman_01.jpg",
+      "fullWidth": 3045
+     },
+     "description": "historic site in Amman, Jordan"
     },
     {
      "id": "wikidata/Q12192959",
@@ -102,7 +146,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Husseini_Mosque_Down_Town_Amman.jpg/500px-Husseini_Mosque_Down_Town_Amman.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Freedom's Falcon at Arabic Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Husseini_Mosque_Down_Town_Amman.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Husseini_Mosque_Down_Town_Amman.jpg",
+      "fullWidth": 2448
+     },
+     "description": "Oldest mosque in Amman, situated in the downtown area on Talal Street"
     },
     {
      "id": "wikidata/Q20422619",
@@ -117,7 +172,18 @@
       "musicVenue",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Amman-Odeon%28js%29.jpg/500px-Amman-Odeon%28js%29.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Jerzy Strzelecki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amman-Odeon(js).jpg",
+      "fullWidth": 1920
+     },
+     "description": "Ancient Roman odeon in Amman, Jordan"
     },
     {
      "id": "node/2807835007",
@@ -129,7 +195,18 @@
      "kinds": [
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Roman_Nymphaeum_at_Philadelphia.jpg/500px-Roman_Nymphaeum_at_Philadelphia.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Ken and Nyetta",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roman_Nymphaeum_at_Philadelphia.jpg",
+      "fullWidth": 4288
+     },
+     "description": "roman nymphaeum in Amman"
     },
     {
      "id": "way/757688579",
@@ -140,7 +217,18 @@
      "wikidataId": "Q21188319",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Amman_Citadel_49.jpg/500px-Amman_Citadel_49.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Jean Housen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amman_Citadel_49.jpg",
+      "fullWidth": 3872
+     },
+     "description": "palace complex in Amman, Jordan"
     },
     {
      "id": "node/4788766570",
@@ -294,7 +382,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Jordan_Museum.JPG/500px-Jordan_Museum.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Freedom's Falcon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jordan_Museum.JPG",
+      "fullWidth": 3888
+     },
+     "description": "art museum, archaeological museum in Amman, Jordan"
     },
     {
      "id": "way/381723554",
@@ -306,7 +405,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/20100923_amman21.JPG/500px-20100923_amman21.JPG",
+      "width": 500,
+      "height": 335,
+      "author": "Jean Housen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20100923_amman21.JPG",
+      "fullWidth": 3872
+     },
+     "description": "art museum, design/textile museum, historic site in Amman, Jordan"
     },
     {
      "id": "way/178988234",
@@ -319,7 +429,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jordan_National_Gallery_of_Fine_Arts_4.jpeg/500px-Jordan_National_Gallery_of_Fine_Arts_4.jpeg",
+      "width": 500,
+      "height": 375,
+      "author": "Rami Tarawneh",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jordan_National_Gallery_of_Fine_Arts_4.jpeg",
+      "fullWidth": 4896
+     },
+     "description": "art museum in Amman, Jordan"
     },
     {
      "id": "way/370887424",

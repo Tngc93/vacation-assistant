@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "SEL",
- "fetchedAt": "2026-10-18T17:02:54.626Z",
+ "fetchedAt": "2026-10-22T06:37:20.427Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,8 @@
       "heritage",
       "palace",
       "unesco"
-     ]
+     ],
+     "description": "palace in Seoul, South Korea"
     },
     {
      "id": "node/3841809478",
@@ -66,7 +67,18 @@
      "wikidataId": "Q328720",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/View_of_an_armillary_sphere_on_a_table%2C_1683.jpg/500px-View_of_an_armillary_sphere_on_a_table%2C_1683.jpg",
+      "width": 500,
+      "height": 660,
+      "author": "Alain Manesson Mallet, Paris",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:View_of_an_armillary_sphere_on_a_table,_1683.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_an_armillary_sphere_on_a_table,_1683.jpg",
+      "fullWidth": 530
+     },
+     "description": "model of objects in the sky"
     },
     {
      "id": "relation/5501517",
@@ -80,7 +92,8 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "description": "Korede bir saray"
     },
     {
      "id": "relation/19286505",
@@ -93,7 +106,18 @@
       "heritage",
       "religious",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Jongmyo-Jeongjeon.jpg/500px-Jongmyo-Jeongjeon.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "João Trindade",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jongmyo-Jeongjeon.jpg",
+      "fullWidth": 3648
+     },
+     "description": "royal Confucian shrine in Seoul, South Korea"
     },
     {
      "id": "wikidata/Q494577",
@@ -107,7 +131,18 @@
       "office",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Blue_House_Seoul_3.jpg/500px-Blue_House_Seoul_3.jpg",
+      "width": 500,
+      "height": 168,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Blue_House_Seoul_3.jpg",
+      "fullWidth": 8000
+     },
+     "description": "Güney Kore devlet başkanının resmî konutu ve çalışma yeri"
     },
     {
      "id": "wikidata/Q465345",
@@ -120,7 +155,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sungnyemun_Gate%2C_front%2C_2013.jpg/500px-Sungnyemun_Gate%2C_front%2C_2013.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "DoulosCore",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sungnyemun_Gate,_front,_2013.jpg",
+      "fullWidth": 3604
+     },
+     "description": "main gate of Seoul fortress; one of The Four Great Gates (cardinal) as one of The Eight Gates of Seoul as part of the Fortress Wall of Seoul, South Korea"
     },
     {
      "id": "relation/19175488",
@@ -131,7 +177,18 @@
      "wikidataId": "Q495437",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Cheonggyecheon_evening_2.jpg/500px-Cheonggyecheon_evening_2.jpg",
+      "width": 500,
+      "height": 340,
+      "author": "kallerna This photo was taken with Fujifilm X-T30",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cheonggyecheon_evening_2.jpg",
+      "fullWidth": 5200
+     },
+     "description": "Seul'de 10.9 km uzunluğunda modern bir dinlenme merkezi"
     },
     {
      "id": "way/26658458",
@@ -145,7 +202,8 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "description": "palace"
     },
     {
      "id": "relation/16474080",
@@ -161,7 +219,8 @@
       "attraction",
       "heritage",
       "tower"
-     ]
+     ],
+     "description": "communications tower in Seoul, South Korea"
     },
     {
      "id": "wikidata/Q41114",
@@ -177,7 +236,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%EA%B0%95%EB%8B%B9.jpg/500px-%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%EA%B0%95%EB%8B%B9.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Iamin22",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%EA%B0%95%EB%8B%B9.jpg",
+      "fullWidth": 1280
+     },
+     "description": "private women's university in central Seoul, South Korea"
     },
     {
      "id": "wikidata/Q20415",
@@ -189,7 +259,18 @@
      "wikidataId": "Q20415",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Seoul-station-20181122-072342.jpg/500px-Seoul-station-20181122-072342.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "LERK",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul-station-20181122-072342.jpg",
+      "fullWidth": 3984
+     },
+     "description": "Seul'de bir tren istasyonu"
     },
     {
      "id": "way/380863257",
@@ -204,7 +285,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Korea-Seoul-Changgyeonggung-Myeongjeongjeon-01.jpg/500px-Korea-Seoul-Changgyeonggung-Myeongjeongjeon-01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "d'n'c (a flickr user)",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Changgyeonggung-Myeongjeongjeon-01.jpg",
+      "fullWidth": 800
+     },
+     "description": "palace"
     },
     {
      "id": "node/14255571755",
@@ -218,7 +310,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Korea-Gyeonghuigung-01.jpg/500px-Korea-Gyeonghuigung-01.jpg",
+      "width": 500,
+      "height": 323,
+      "author": "Jtm71 at the Korean Wikipedia",
+      "license": "CC BY 2.0 kr",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/kr/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Korea-Gyeonghuigung-01.jpg",
+      "fullWidth": 974
+     },
+     "description": "Gyeonghui Palace (in Korean: Gyeonghuigung, literally Palace of Serene Harmony) was a palace located in Seoul, South Korea. It was one of the \"Five Grand Palaces\" built by the Joseon Dynasty."
     },
     {
      "id": "wikidata/Q485034",
@@ -229,7 +332,18 @@
      "wikidataId": "Q485034",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Gwanghwamun_20240413.jpg/500px-Gwanghwamun_20240413.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "*Youngjin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_20240413.jpg",
+      "fullWidth": 2866
+     },
+     "description": "main gate of Geongbokgung Palace (also known as Kyŏngbokkung Palace)"
     },
     {
      "id": "way/353023147",
@@ -242,7 +356,8 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "description": "Güney Kore'de camii"
     },
     {
      "id": "wikidata/Q482721",
@@ -255,7 +370,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Korea-Seoul-Dongdaemun_gate.jpg/500px-Korea-Seoul-Dongdaemun_gate.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Karl Baron",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Dongdaemun_gate.jpg",
+      "fullWidth": 2592
+     },
+     "description": "one of The Four Great Gates (cardinal) as one of The Eight Gates of Seoul as part of the Fortress Wall of Seoul, South Korea"
     },
     {
      "id": "relation/17548771",
@@ -268,7 +394,18 @@
       "adminArea",
       "farFromItem",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Downtown_Seoul_and_Seoul_City_Wall.jpg/500px-Downtown_Seoul_and_Seoul_City_Wall.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "서울연구원",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Seoul_and_Seoul_City_Wall.jpg",
+      "fullWidth": 1600
+     },
+     "description": "invasion barrier wall(s) surrounding downtown area of Seoul, South Korea built 1396-1398"
     },
     {
      "id": "wikidata/Q487036",
@@ -281,7 +418,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Myeongdong_Cathedral_6.jpg/500px-Myeongdong_Cathedral_6.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Myeongdong_Cathedral_6.jpg",
+      "fullWidth": 6000
+     },
+     "description": "cathedral in Myeongdong, Jung-gu, Seoul, South Korea"
     },
     {
      "id": "wikidata/Q497066",
@@ -294,7 +442,8 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "description": "memorial gate in Seoul celebrating independence from Qing China"
     },
     {
      "id": "wikidata/Q5295847",
@@ -303,7 +452,18 @@
      "lat": 37.5669,
      "lon": 127.0094,
      "wikipediaCount": 14,
-     "wikidataId": "Q5295847"
+     "wikidataId": "Q5295847",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg/500px-Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg",
+      "width": 500,
+      "height": 167,
+      "author": "Eugene Lim",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dongdaemun_Design_Plaza_at_night,_Seoul,_Korea.jpg",
+      "fullWidth": 3600
+     },
+     "description": "building in Seoul, South Korea"
     },
     {
      "id": "wikidata/Q137143",
@@ -314,7 +474,18 @@
      "wikidataId": "Q137143",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Korail-134-Namyeong-station-platform-20191022-145110.jpg/500px-Korail-134-Namyeong-station-platform-20191022-145110.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "LERK",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Korail-134-Namyeong-station-platform-20191022-145110.jpg",
+      "fullWidth": 4000
+     },
+     "description": "train station in South Korea"
     },
     {
      "id": "relation/5672803",
@@ -325,7 +496,8 @@
      "wikidataId": "Q5623300",
      "kinds": [
       "square"
-     ]
+     ],
+     "description": "public open space in Downtown Seoul"
     },
     {
      "id": "wikidata/Q488824",
@@ -337,7 +509,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Jogyesa_Temple_%281509839597%29.jpg/500px-Jogyesa_Temple_%281509839597%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Francisco Anzola",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jogyesa_Temple_(1509839597).jpg",
+      "fullWidth": 2048
+     },
+     "description": "Buddhist temple in Seoul, South Korea"
     },
     {
      "id": "wikidata/Q34696",
@@ -348,7 +531,18 @@
      "wikidataId": "Q34696",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Oksu01.jpg/500px-Oksu01.jpg",
+      "width": 500,
+      "height": 403,
+      "author": "Marcopolis at en.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Oksu01.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oksu01.jpg",
+      "fullWidth": 561
+     },
+     "description": "train station in South Korea"
     },
     {
      "id": "wikidata/Q623908",
@@ -360,7 +554,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Seoul_City_Hall_20190608_005.jpg/500px-Seoul_City_Hall_20190608_005.jpg",
+      "width": 500,
+      "height": 350,
+      "author": "Mobius6",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul_City_Hall_20190608_005.jpg",
+      "fullWidth": 2294
+     },
+     "description": "city hall"
     },
     {
      "id": "wikidata/Q625836",
@@ -373,7 +578,18 @@
       "heritage",
       "religious",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Wongaksa01.jpg/500px-Wongaksa01.jpg",
+      "width": 500,
+      "height": 554,
+      "author": "朝鮮總督府",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Wongaksa01.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wongaksa01.jpg",
+      "fullWidth": 560
+     },
+     "description": "Stone pagoda in Seoul, South Korea"
     },
     {
      "id": "node/2669684119",
@@ -381,7 +597,18 @@
      "lat": 37.58239,
      "lon": 126.98586,
      "wikipediaCount": 11,
-     "wikidataId": "Q490981"
+     "wikidataId": "Q490981",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bukchon_Village_Seoul.jpg/500px-Bukchon_Village_Seoul.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bukchon_Village_Seoul.jpg",
+      "fullWidth": 4000
+     },
+     "description": "neighborhood in Downtown Seoul"
     },
     {
      "id": "way/78503350",
@@ -393,7 +620,8 @@
      "wikidataId": "Q494687",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "description": "Market in Seoul, South Korea"
     },
     {
      "id": "relation/11504980",
@@ -406,7 +634,18 @@
      "wikidataId": "Q483357",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Tapgol_park_main.jpg/500px-Tapgol_park_main.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Integral",
+      "license": "CC BY-SA 2.0 kr",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tapgol_park_main.jpg",
+      "fullWidth": 2288
+     },
+     "description": "park in Seoul, South Korea"
     },
     {
      "id": "way/771236312",
@@ -420,7 +659,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Iro-dang%2C_Unhyeongung_-_Seoul%2C_Korea.JPG/500px-Iro-dang%2C_Unhyeongung_-_Seoul%2C_Korea.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Daderot.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iro-dang,_Unhyeongung_-_Seoul,_Korea.JPG",
+      "fullWidth": 2560
+     },
+     "description": "Palace of Joseon and Korean Empire"
     },
     {
      "id": "node/4665630597",
@@ -430,7 +680,8 @@
      "address": "퇴계로34길 28",
      "website": "https://www.hanokmaeul.or.kr/",
      "wikipediaCount": 7,
-     "wikidataId": "Q496420"
+     "wikidataId": "Q496420",
+     "description": "village in Seoul, South Korea"
     },
     {
      "id": "node/7174513259",
@@ -441,7 +692,18 @@
      "wikidataId": "Q495655",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Temple_of_Heaven_Seoul2.jpg/500px-Temple_of_Heaven_Seoul2.jpg",
+      "width": 500,
+      "height": 659,
+      "author": "Burton Holmes from Ewing Galloway, New York",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_Seoul2.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven_Seoul2.jpg",
+      "fullWidth": 2798
+     },
+     "description": "Royal shrine in Seoul, South Korea"
     },
     {
      "id": "way/608947587",
@@ -455,7 +717,18 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Hong_Nan-pa_photograph_%28cropped%29.jpg",
+      "width": 500,
+      "height": 620,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hong_Nan-pa_photograph_(cropped).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hong_Nan-pa_photograph_(cropped).jpg",
+      "fullWidth": 389
+     },
+     "description": "Korean composer, conductor, violinist (1897-1941)"
     },
     {
      "id": "node/3841809480",
@@ -466,7 +739,18 @@
      "wikidataId": "Q5094226",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Jang_Yeong-sil_Science_Garden-Rain_Gauges_13-11789_Busan%2C_South_Korea_03.JPG/500px-Jang_Yeong-sil_Science_Garden-Rain_Gauges_13-11789_Busan%2C_South_Korea_03.JPG",
+      "width": 500,
+      "height": 889,
+      "author": "Steve46814",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jang_Yeong-sil_Science_Garden-Rain_Gauges_13-11789_Busan,_South_Korea_03.JPG",
+      "fullWidth": 1080
+     },
+     "description": "rain gauge invented and used during the Joseon dynasty of Korea"
     },
     {
      "id": "node/10689687870",
@@ -478,7 +762,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Sajikdan_Shrine_in_Seoul%2C_Korea_02.jpg/500px-Sajikdan_Shrine_in_Seoul%2C_Korea_02.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Eggmoon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sajikdan_Shrine_in_Seoul,_Korea_02.jpg",
+      "fullWidth": 4290
+     },
+     "description": "historic neo-Confucian altar in Seoul, South Korea"
     },
     {
      "id": "way/229891122",
@@ -489,7 +784,8 @@
      "wikidataId": "Q491940",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "description": "War memorial in Seoul, South Korea"
     },
     {
      "id": "way/463189325",
@@ -502,7 +798,18 @@
      "wikidataId": "Q12583523",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/%EA%B2%BD%EA%B5%90%EC%9E%A5.jpg/500px-%EA%B2%BD%EA%B5%90%EC%9E%A5.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "S. W. Moon",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%EA%B2%BD%EA%B5%90%EC%9E%A5.jpg",
+      "fullWidth": 1024
+     },
+     "description": "historic building in Jongno District, Seoul, South Korea"
     },
     {
      "id": "way/1456682034",
@@ -516,7 +823,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/Yakhyeon_Catholic_Church_01.png",
+      "width": 500,
+      "height": 666,
+      "author": "Liturgy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Yakhyeon_Catholic_Church_01.png",
+      "fullWidth": 460
+     },
+     "description": "church in Seoul, South Korea"
     },
     {
      "id": "way/768500162",
@@ -529,7 +847,18 @@
      "wikidataId": "Q6615779",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/The_Korea_House_in_Seoul_01.JPG/500px-The_Korea_House_in_Seoul_01.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "User:Piotrus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Korea_House_in_Seoul_01.JPG",
+      "fullWidth": 3264
+     },
+     "description": "building in South Korea"
     },
     {
      "id": "node/3841809481",
@@ -541,7 +870,17 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Seoul-Gyeongbokgung-Sundial-02.jpg/500px-Seoul-Gyeongbokgung-Sundial-02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "by Bernat",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul-Gyeongbokgung-Sundial-02.jpg",
+      "fullWidth": 2272
+     }
     },
     {
      "id": "node/6341282326",
@@ -553,7 +892,8 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "description": "Korean independence activist (1887 -1910)"
     },
     {
      "id": "way/223434844",
@@ -565,7 +905,18 @@
      "wikidataId": "Q12613243",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ihwa.jpg/500px-Ihwa.jpg",
+      "width": 500,
+      "height": 1110,
+      "author": "Isra Rulowsinsky",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ihwa.jpg",
+      "fullWidth": 1816
+     },
+     "description": "Rhee Syng-man's house in Ihwa-dong"
     },
     {
      "id": "way/611143901",
@@ -579,7 +930,8 @@
      "kinds": [
       "heritage",
       "noCoordinate"
-     ]
+     ],
+     "description": "Korean cultural heritage item"
     },
     {
      "id": "way/646147127",
@@ -593,7 +945,18 @@
      "kinds": [
       "heritage",
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Joongmyungjeon.jpg/500px-Joongmyungjeon.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Black207",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Joongmyungjeon.jpg",
+      "fullWidth": 3773
+     },
+     "description": "Western style building in Deoksugung Palace"
     },
     {
      "id": "way/611541494",
@@ -605,7 +968,18 @@
      "wikidataId": "Q19657151",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/%EB%B0%B1%EC%9D%B8%EC%A0%9C_%EA%B0%80%EC%98%A5%EC%9D%98_%EC%86%9F%EC%9D%84%EB%8C%80%EB%AC%B8.jpg/500px-%EB%B0%B1%EC%9D%B8%EC%A0%9C_%EA%B0%80%EC%98%A5%EC%9D%98_%EC%86%9F%EC%9D%84%EB%8C%80%EB%AC%B8.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jjw",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%EB%B0%B1%EC%9D%B8%EC%A0%9C_%EA%B0%80%EC%98%A5%EC%9D%98_%EC%86%9F%EC%9D%84%EB%8C%80%EB%AC%B8.jpg",
+      "fullWidth": 6000
+     },
+     "description": "building in Jongno District, South Korea"
     },
     {
      "id": "node/7293780360",
@@ -617,18 +991,6 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
-    },
-    {
-     "id": "way/369965841",
-     "name": "서울천년타임캡슐광장",
-     "lat": 37.55729,
-     "lon": 126.99391,
-     "address": "퇴계로34길 28",
-     "wikipediaCount": 1,
-     "wikidataId": "Q12601074",
-     "kinds": [
-      "noCoordinate"
      ]
     }
    ]
@@ -647,7 +1009,18 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/ChosunIlbo_%28January1-1940%29.jpg/500px-ChosunIlbo_%28January1-1940%29.jpg",
+      "width": 500,
+      "height": 681,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:ChosunIlbo_(January1-1940).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ChosunIlbo_(January1-1940).jpg",
+      "fullWidth": 3582
+     },
+     "description": "newspaper in Korea"
     },
     {
      "id": "relation/5501518",
@@ -660,7 +1033,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Folk_Museum_of_Korea.jpg/500px-Folk_Museum_of_Korea.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Julian Fong",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Folk_Museum_of_Korea.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Ulusal müze"
     },
     {
      "id": "wikidata/Q484054",
@@ -673,7 +1057,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/National_Museum_of_Modern_and_Contemporary_Art%2C_South_Korea.jpg/500px-National_Museum_of_Modern_and_Contemporary_Art%2C_South_Korea.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Vanbasten 23",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Modern_and_Contemporary_Art,_South_Korea.jpg",
+      "fullWidth": 4000
+     },
+     "description": "Müze"
     },
     {
      "id": "node/368871454",
@@ -689,7 +1084,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Overview_of_the_Old_Seodaemun_Prison_%28%EA%B5%AC%EC%84%9C%EB%8C%80%EB%AC%B8%ED%98%95%EB%AC%B4%EC%86%8C%29.jpg/500px-Overview_of_the_Old_Seodaemun_Prison_%28%EA%B5%AC%EC%84%9C%EB%8C%80%EB%AC%B8%ED%98%95%EB%AC%B4%EC%86%8C%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Noh Mun Duek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Overview_of_the_Old_Seodaemun_Prison_(%EA%B5%AC%EC%84%9C%EB%8C%80%EB%AC%B8%ED%98%95%EB%AC%B4%EC%86%8C).jpg",
+      "fullWidth": 5184
+     },
+     "description": "prison museum in Seoul"
     },
     {
      "id": "way/229891123",
@@ -704,7 +1110,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Korea-Seoul-War_Memorial_of_Korea-01.jpg/500px-Korea-Seoul-War_Memorial_of_Korea-01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "d. FUKA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-War_Memorial_of_Korea-01.jpg",
+      "fullWidth": 800
+     },
+     "description": "military museum"
     },
     {
      "id": "relation/2270998",
@@ -718,7 +1135,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/National_Palace_Museum_of_Korea_20240409_004.jpg/500px-National_Palace_Museum_of_Korea_20240409_004.jpg",
+      "width": 500,
+      "height": 299,
+      "author": "Mobius6",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Palace_Museum_of_Korea_20240409_004.jpg",
+      "fullWidth": 4946
+     },
+     "description": "national museum"
     },
     {
      "id": "way/355665717",
@@ -734,7 +1162,18 @@
       "farFromItem",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Korea-Seoul-Kimchi_Field_Museum-01.jpg/500px-Korea-Seoul-Kimchi_Field_Museum-01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "karendotcom127",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Kimchi_Field_Museum-01.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum"
     },
     {
      "id": "relation/8448914",
@@ -748,7 +1187,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/%EC%84%9C%EC%9A%B8%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80.jpg/500px-%EC%84%9C%EC%9A%B8%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "서울연구원",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8%EC%97%AD%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80.jpg",
+      "fullWidth": 1600
+     },
+     "description": "history museum in Seoul, South Korea"
     },
     {
      "id": "way/141779172",
@@ -763,7 +1213,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Ilmin_Museum_of_Art.jpg/500px-Ilmin_Museum_of_Art.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lawinc82",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ilmin_Museum_of_Art.jpg",
+      "fullWidth": 2272
+     },
+     "description": "art museum in Seoul, South Korea"
     },
     {
      "id": "way/350284406",
@@ -776,7 +1237,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Leeum%2C_Samsung_Museum_of_Art.jpg/500px-Leeum%2C_Samsung_Museum_of_Art.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "takato marui",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Leeum,_Samsung_Museum_of_Art.jpg",
+      "fullWidth": 3008
+     },
+     "description": "art museum"
     },
     {
      "id": "way/348489095",
@@ -788,7 +1260,18 @@
      "wikidataId": "Q128325",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/BankofKoreaMuseum.jpg/500px-BankofKoreaMuseum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Moody 75 from Phoenix, AZ (currently), Emeraldnabi",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BankofKoreaMuseum.jpg",
+      "fullWidth": 1000
+     },
+     "description": "economics museum in South Korea"
     },
     {
      "id": "node/368735822",
@@ -800,7 +1283,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Tteok_Museum.jpg/500px-Tteok_Museum.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "LittleT889",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tteok_Museum.jpg",
+      "fullWidth": 3024
+     },
+     "description": "museum specializing in Korean cutlery and tteok rice pastry"
     },
     {
      "id": "way/432721317",
@@ -813,7 +1307,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bukchon_Art_Museum.jpg/500px-Bukchon_Art_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "markheseltine",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bukchon_Art_Museum.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Art museum in Seoul, South Korea"
     },
     {
      "id": "way/402093782",
@@ -828,7 +1333,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Kim_Koo_Museum.jpg/500px-Kim_Koo_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "DerPaul",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kim_Koo_Museum.jpg",
+      "fullWidth": 3212
+     },
+     "description": "Museum in Seoul, South Korea"
     },
     {
      "id": "node/368733960",
@@ -842,7 +1358,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "History museum in Seoul, South Korea"
     },
     {
      "id": "way/301282717",
@@ -856,7 +1373,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Seoul_Education_Museum_in_2025.jpg/500px-Seoul_Education_Museum_in_2025.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "EllalineSeoul",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul_Education_Museum_in_2025.jpg",
+      "fullWidth": 12072
+     },
+     "description": "education museum of Seoul, South Korea"
     },
     {
      "id": "way/626112515",
@@ -871,7 +1399,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Seoul_Museum_of_Art_%282014%29.jpg/500px-Seoul_Museum_of_Art_%282014%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Seoul Institute",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul_Museum_of_Art_(2014).jpg",
+      "fullWidth": 1600
+     },
+     "description": "art museum in Seoul, South Korea"
     },
     {
      "id": "way/141957171",
@@ -886,7 +1425,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/National_Museum_of_Korean_Contemporary_History.jpg/500px-National_Museum_of_Korean_Contemporary_History.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "National Museum of Korean Contemporary History",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Korean_Contemporary_History.jpg",
+      "fullWidth": 4744
+     },
+     "description": "history museum in Seoul, South Korea"
     },
     {
      "id": "way/610146665",
@@ -901,7 +1451,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/ArtSonje_Center_November_2015.jpg/500px-ArtSonje_Center_November_2015.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Bonnielou2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ArtSonje_Center_November_2015.jpg",
+      "fullWidth": 5312
+     },
+     "description": "art museum in Seoul, South Korea"
     },
     {
      "id": "relation/10718798",
@@ -915,7 +1476,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/MMCA_Seoul_2016.jpg/500px-MMCA_Seoul_2016.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "jens kuu",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MMCA_Seoul_2016.jpg",
+      "fullWidth": 4272
+     },
+     "description": "art museum in South Korea"
     },
     {
      "id": "way/517933820",
@@ -930,7 +1502,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Kumho_Museum_of_Art.jpg/500px-Kumho_Museum_of_Art.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "myself ( User:Piotrus )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kumho_Museum_of_Art.jpg",
+      "fullWidth": 2448
+     },
+     "description": "art museum in Seoul, South Korea"
     },
     {
      "id": "way/221429318",
@@ -944,7 +1527,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Daelim_Museum.jpg/500px-Daelim_Museum.jpg",
+      "width": 500,
+      "height": 295,
+      "author": "cezzie901",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Daelim_Museum.jpg",
+      "fullWidth": 5066
+     },
+     "description": "Museum in Seoul"
     },
     {
      "id": "node/368735177",
@@ -958,7 +1552,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Seoul, South Korea"
     },
     {
      "id": "node/368725477",
@@ -972,7 +1567,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum in Seoul, South Korea"
     },
     {
      "id": "way/313923592",
@@ -986,7 +1582,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/World_jewellery_museum.jpg/500px-World_jewellery_museum.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Integral",
+      "license": "CC BY-SA 2.0 kr",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:World_jewellery_museum.jpg",
+      "fullWidth": 2288
+     },
+     "description": "jewellery museum in Seoul, South Korea"
     },
     {
      "id": "node/3546635153",
@@ -1000,7 +1607,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Seoul_City_Wall_Museum.jpg/500px-Seoul_City_Wall_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "오모군",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul_City_Wall_Museum.jpg",
+      "fullWidth": 4608
+     },
+     "description": "museum in Seoul, South Korea"
     },
     {
      "id": "way/420335666",
@@ -1024,7 +1642,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Jongno-gu, Seoul, South Korea"
     },
     {
      "id": "way/706804638",
@@ -1037,7 +1656,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Museum_of_Japanese_Colonial_History_in_Korea.jpg/500px-Museum_of_Japanese_Colonial_History_in_Korea.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Toobigtokale",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Japanese_Colonial_History_in_Korea.jpg",
+      "fullWidth": 4032
+     },
+     "description": "History museum in Seoul, South Korea"
     },
     {
      "id": "node/368734273",
@@ -1050,7 +1680,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "textiles museum in Seoul, South Korea"
     },
     {
      "id": "way/196065376",
@@ -1063,7 +1694,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/National_Memorial_of_the_Korean_Provisional_Government_%28cropped%29.jpg/500px-National_Memorial_of_the_Korean_Provisional_Government_%28cropped%29.jpg",
+      "width": 500,
+      "height": 240,
+      "author": "MonasteryInwang",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Memorial_of_the_Korean_Provisional_Government_(cropped).jpg",
+      "fullWidth": 1467
+     },
+     "description": "Memorial museum in Seoul"
     },
     {
      "id": "node/368632876",
@@ -1075,7 +1717,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Seoul_National_Science_Museum_Oct_2014.JPG/500px-Seoul_National_Science_Museum_Oct_2014.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "User:Piotrus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seoul_National_Science_Museum_Oct_2014.JPG",
+      "fullWidth": 3264
+     },
+     "description": "museum in Seoul, South Korea"
     },
     {
      "id": "way/979717526",
@@ -1090,7 +1743,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "police museum in Seoul, South Korea"
     },
     {
      "id": "way/421742876",
@@ -1387,7 +2041,18 @@
      "openingHours": "Mo-Su 12:00-22:00",
      "cuisine": "korean",
      "wikidataId": "Q84954881",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/The_Shilla_Seoul_-_panoramio.jpg/500px-The_Shilla_Seoul_-_panoramio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Maris Teteris",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Shilla_Seoul_-_panoramio.jpg",
+      "fullWidth": 3504
+     },
+     "description": "restaurant in South Korea"
     },
     {
      "id": "node/3611957673",

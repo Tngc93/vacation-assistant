@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "OPO",
- "fetchedAt": "2026-10-18T16:09:36.319Z",
+ "fetchedAt": "2026-10-22T05:17:53.316Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Est%C3%A1dio_do_Drag%C3%A3o_%288468978586%29.jpg/500px-Est%C3%A1dio_do_Drag%C3%A3o_%288468978586%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Edgar Jiménez from Porto, Portugal",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_do_Drag%C3%A3o_(8468978586).jpg",
+      "fullWidth": 2560
+     },
+     "description": "Stadyum"
     },
     {
      "id": "wikidata/Q1322447",
@@ -66,7 +77,18 @@
       "bridge",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Puente_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_13.JPG/500px-Puente_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_13.JPG",
+      "width": 500,
+      "height": 308,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Puente_Don_Luis_I,_Oporto,_Portugal,_2012-05-09,_DD_13.JPG",
+      "fullWidth": 5292
+     },
+     "description": "bridge in Porto, Portugal"
     },
     {
      "id": "way/603359226",
@@ -85,7 +107,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/86724-Porto_%2849052540207%29.jpg/500px-86724-Porto_%2849052540207%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "xiquinhosilva from Cacau",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:86724-Porto_(49052540207).jpg",
+      "fullWidth": 3000
+     },
+     "description": "concert hall"
     },
     {
      "id": "way/210461448",
@@ -98,7 +131,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Porto.Cathedral01.jpg/500px-Porto.Cathedral01.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Georges Jansoone",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto.Cathedral01.jpg",
+      "fullWidth": 960
+     },
+     "description": "cathedral"
     },
     {
      "id": "wikidata/Q1550899",
@@ -111,7 +155,18 @@
       "bridge",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Ponte_D._Maria_Pia-Porto.JPG/500px-Ponte_D._Maria_Pia-Porto.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "Joseolgon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_D._Maria_Pia-Porto.JPG",
+      "fullWidth": 4288
+     },
+     "description": "bridge in Porto, Portugal"
     },
     {
      "id": "relation/5424595",
@@ -126,7 +181,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Palacio_da_Bolsa_%28Porto%29.JPG/500px-Palacio_da_Bolsa_%28Porto%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Manuel de Sousa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palacio_da_Bolsa_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_da_Bolsa_(Porto).JPG",
+      "fullWidth": 1024
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/1159533444",
@@ -141,7 +207,18 @@
       "heritage",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Esta%C3%A7%C3%A3o_S%C3%A3o_Bento_Porto.JPG/500px-Esta%C3%A7%C3%A3o_S%C3%A3o_Bento_Porto.JPG",
+      "width": 500,
+      "height": 448,
+      "author": "Jose Goncalves / Joseolgon at Portuguese Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_S%C3%A3o_Bento_Porto.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_S%C3%A3o_Bento_Porto.JPG",
+      "fullWidth": 800
+     },
+     "description": "railway station in Portugal"
     },
     {
      "id": "node/12514092225",
@@ -156,7 +233,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Livraria_Lello%2C_Porto.jpg/500px-Livraria_Lello%2C_Porto.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Bene Riobó",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Livraria_Lello,_Porto.jpg",
+      "fullWidth": 3200
+     },
+     "description": "Portuguese publisher"
     },
     {
      "id": "wikidata/Q2781524",
@@ -168,7 +256,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Iglesia_de_San_Ildefonso%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG/500px-Iglesia_de_San_Ildefonso%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG",
+      "width": 500,
+      "height": 734,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Ildefonso,_Oporto,_Portugal,_2012-05-09,_DD_01.JPG",
+      "fullWidth": 3196
+     },
+     "description": "18th-century church in Oporto"
     },
     {
      "id": "wikidata/Q1549939",
@@ -181,7 +280,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Porto_-_Igreja_da_Ordem_de_S%C3%A3o_Francisco1536.jpg/500px-Porto_-_Igreja_da_Ordem_de_S%C3%A3o_Francisco1536.jpg",
+      "width": 500,
+      "height": 668,
+      "author": "João Carvalho",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto_-_Igreja_da_Ordem_de_S%C3%A3o_Francisco1536.jpg",
+      "fullWidth": 1952
+     },
+     "description": "church in Porto, Portugal"
     },
     {
      "id": "wikidata/Q18642",
@@ -192,7 +302,18 @@
      "wikidataId": "Q18642",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Igreja_dos_Clerigos_in_Porto_%281%29.jpg/500px-Igreja_dos_Clerigos_in_Porto_%281%29.jpg",
+      "width": 500,
+      "height": 868,
+      "author": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_dos_Clerigos_in_Porto_(1).jpg",
+      "fullWidth": 2687
+     },
+     "description": "Baroque church in Portugal"
     },
     {
      "id": "node/3398944840",
@@ -203,7 +324,18 @@
      "wikidataId": "Q446387",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Pinh%C3%A3o_Douro_-_Alfredo_Keil.png/500px-Pinh%C3%A3o_Douro_-_Alfredo_Keil.png",
+      "width": 500,
+      "height": 343,
+      "author": "Alfredo Keil",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pinh%C3%A3o_Douro_-_Alfredo_Keil.png",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pinh%C3%A3o_Douro_-_Alfredo_Keil.png",
+      "fullWidth": 1200
+     },
+     "description": "wooden Portuguese vessels that carried the wine casks from the quintas (wine estates) where it is produced to the mouth of Douro river"
     },
     {
      "id": "relation/3012085",
@@ -218,7 +350,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Ayuntamiento_de_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_02.JPG/500px-Ayuntamiento_de_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_02.JPG",
+      "width": 500,
+      "height": 675,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ayuntamiento_de_Oporto,_Portugal,_2012-05-09,_DD_02.JPG",
+      "fullWidth": 2750
+     },
+     "description": "seat of local government in Porto"
     },
     {
      "id": "way/238893532",
@@ -233,7 +376,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Igreja_Sta_Clara_%28Porto%29.jpg/500px-Igreja_Sta_Clara_%28Porto%29.jpg",
+      "width": 500,
+      "height": 625,
+      "author": "Manuel de Sousa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_Sta_Clara_(Porto).jpg",
+      "fullWidth": 1536
+     },
+     "description": "church in Porto, Portugal"
     },
     {
      "id": "relation/4673533",
@@ -249,7 +403,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Igreja_da_Serra_do_Pilar_por_Rodrigo_Tetsuo_Argenton_%2802%29.jpg/500px-Igreja_da_Serra_do_Pilar_por_Rodrigo_Tetsuo_Argenton_%2802%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Rodrigo Tetsuo Argenton",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Igreja_da_Serra_do_Pilar_por_Rodrigo_Tetsuo_Argenton_(02).jpg",
+      "fullWidth": 5557
+     },
+     "description": "building in Vila Nova de Gaia, Porto District, Portugal"
     },
     {
      "id": "way/31573133",
@@ -260,7 +425,18 @@
      "wikidataId": "Q2228562",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Oporto_-_Funicular_dos_Guindais_-_20110425_132242.jpg/500px-Oporto_-_Funicular_dos_Guindais_-_20110425_132242.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oporto_-_Funicular_dos_Guindais_-_20110425_132242.jpg",
+      "fullWidth": 3168
+     },
+     "description": "funicular in Porto, Portugal"
     },
     {
      "id": "node/12453652303",
@@ -275,7 +451,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Porto_Cafe_Majestic.JPG/500px-Porto_Cafe_Majestic.JPG",
+      "width": 500,
+      "height": 413,
+      "author": "AntoniusJ",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Porto_Cafe_Majestic.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto_Cafe_Majestic.JPG",
+      "fullWidth": 2544
+     },
+     "description": "café in Porto, Portugal"
     },
     {
      "id": "way/247168260",
@@ -289,7 +476,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Torre_de_los_Cl%C3%A9rigos%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG/500px-Torre_de_los_Cl%C3%A9rigos%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG",
+      "width": 500,
+      "height": 980,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_de_los_Cl%C3%A9rigos,_Oporto,_Portugal,_2012-05-09,_DD_01.JPG",
+      "fullWidth": 2398
+     },
+     "description": "Baroque tower in Portugal"
     },
     {
      "id": "way/185005666",
@@ -300,7 +498,18 @@
      "wikidataId": "Q1402131",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Feitoria_Inglesa_%28Porto%29.JPG/500px-Feitoria_Inglesa_%28Porto%29.JPG",
+      "width": 500,
+      "height": 405,
+      "author": "Manuel de Sousa",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Feitoria_Inglesa_(Porto).JPG",
+      "fullWidth": 949
+     },
+     "description": "buildings in Porto, Portugal"
     },
     {
      "id": "relation/2880744",
@@ -320,7 +529,18 @@
       "palace",
       "religious",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Episcopal_Palace_in_Porto_%281%29.jpg/500px-Episcopal_Palace_in_Porto_%281%29.jpg",
+      "width": 500,
+      "height": 275,
+      "author": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Episcopal_Palace_in_Porto_(1).jpg",
+      "fullWidth": 5335
+     },
+     "description": "episcopal palace"
     },
     {
      "id": "way/210757796",
@@ -340,7 +560,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Teatro_Nacional_Sao_Joao_in_Porto_%284%29.jpg/500px-Teatro_Nacional_Sao_Joao_in_Porto_%284%29.jpg",
+      "width": 500,
+      "height": 366,
+      "author": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Nacional_Sao_Joao_in_Porto_(4).jpg",
+      "fullWidth": 4859
+     },
+     "description": "theatre in Porto, Portugal"
     },
     {
      "id": "way/244599647",
@@ -354,7 +585,18 @@
      "wikidataId": "Q10306385",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Porto%2C_Jardins_do_Palacio_do_Cristal_%2805%29.jpg/500px-Porto%2C_Jardins_do_Palacio_do_Cristal_%2805%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "JP Bennett from Yamato, Japan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto,_Jardins_do_Palacio_do_Cristal_(05).jpg",
+      "fullWidth": 5760
+     },
+     "description": "garden in Porto, Portugal"
     },
     {
      "id": "way/107436948",
@@ -367,7 +609,18 @@
      "wikidataId": "Q10379193",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Oporto_-_Telef%C3%A9rico_de_Gaia_-_20110425_130745.jpg/500px-Oporto_-_Telef%C3%A9rico_de_Gaia_-_20110425_130745.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oporto_-_Telef%C3%A9rico_de_Gaia_-_20110425_130745.jpg",
+      "fullWidth": 2813
+     },
+     "description": "gondola lift in Vila Nova de Gaia, Porto, Portugal"
     },
     {
      "id": "way/365610859",
@@ -380,7 +633,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Capela_das_Alma_por_Rodrigo_Tetsuo_Argenton.jpg/500px-Capela_das_Alma_por_Rodrigo_Tetsuo_Argenton.jpg",
+      "width": 500,
+      "height": 403,
+      "author": "Rodrigo Tetsuo Argenton",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Capela_das_Alma_por_Rodrigo_Tetsuo_Argenton.jpg",
+      "fullWidth": 5971
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/241300113",
@@ -392,7 +656,18 @@
      "wikidataId": "Q1058768",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Chafariz_Virtudes_%28Porto%29.JPG/500px-Chafariz_Virtudes_%28Porto%29.JPG",
+      "width": 500,
+      "height": 624,
+      "author": "Manuel de Sousa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chafariz_Virtudes_(Porto).JPG",
+      "fullWidth": 768
+     },
+     "description": "water well"
     },
     {
      "id": "way/286005374",
@@ -404,7 +679,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Iglesia_de_la_Trinidad%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG/500px-Iglesia_de_la_Trinidad%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG",
+      "width": 500,
+      "height": 820,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_la_Trinidad,_Oporto,_Portugal,_2012-05-09,_DD_01.JPG",
+      "fullWidth": 2985
+     },
+     "description": "church in Porto, Portugal"
     },
     {
      "id": "way/395125611",
@@ -419,7 +705,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Iglesia_de_los_Congregados%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG/500px-Iglesia_de_los_Congregados%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG",
+      "width": 500,
+      "height": 799,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_los_Congregados,_Oporto,_Portugal,_2012-05-09,_DD_01.JPG",
+      "fullWidth": 2782
+     },
+     "description": "church in Porto, Portugal"
     },
     {
      "id": "relation/3046626",
@@ -432,7 +729,18 @@
      "wikidataId": "Q10328805",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Bolh%C3%A3o2023.jpg/500px-Bolh%C3%A3o2023.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "Petnog",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bolh%C3%A3o2023.jpg",
+      "fullWidth": 1024
+     },
+     "description": "cultural heritage monument in Porto, Portugal"
     },
     {
      "id": "way/224769221",
@@ -451,7 +759,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Porto_Teatro_Rivoli_4.JPG/500px-Porto_Teatro_Rivoli_4.JPG",
+      "width": 500,
+      "height": 376,
+      "author": "( AntoniusJ )",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Porto_Teatro_Rivoli_4.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto_Teatro_Rivoli_4.JPG",
+      "fullWidth": 2832
+     },
+     "description": "theatre and cinema in Porto, Portugal"
     },
     {
      "id": "way/216425163",
@@ -463,7 +782,18 @@
      "wikidataId": "Q5066766",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Miragaia-Fonte_da_Colher-W.jpg/500px-Miragaia-Fonte_da_Colher-W.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "António Amen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Miragaia-Fonte_da_Colher-W.jpg",
+      "fullWidth": 2362
+     },
+     "description": "fountain in Porto, Portugal"
     },
     {
      "id": "way/211297740",
@@ -474,7 +804,18 @@
      "wikidataId": "Q7128888",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Palacio_S_Joao_Novo_%28Porto%29.JPG/500px-Palacio_S_Joao_Novo_%28Porto%29.JPG",
+      "width": 500,
+      "height": 334,
+      "author": "Manuel de Sousa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palacio_S_Joao_Novo_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_S_Joao_Novo_(Porto).JPG",
+      "fullWidth": 1024
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/211737428",
@@ -487,7 +828,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Capela_Alfaiates_%28Porto%29.jpg/500px-Capela_Alfaiates_%28Porto%29.jpg",
+      "width": 500,
+      "height": 700,
+      "author": "Manuel de Sousa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Capela_Alfaiates_(Porto).jpg",
+      "fullWidth": 1355
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/211015151",
@@ -499,7 +851,18 @@
      "wikidataId": "Q7126291",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Palacete_Belomonte_%28Porto%29.JPG/500px-Palacete_Belomonte_%28Porto%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palacete_Belomonte_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacete_Belomonte_(Porto).JPG",
+      "fullWidth": 1024
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/210470750",
@@ -511,7 +874,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Torre_Medieval_da_cidade_do_Porto_%282%29.jpg/500px-Torre_Medieval_da_cidade_do_Porto_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Béria Lima de Rodríguez",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_Medieval_da_cidade_do_Porto_(2).jpg",
+      "fullWidth": 3072
+     },
+     "description": "Medieval fortification in Porto"
     },
     {
      "id": "node/6540216049",
@@ -527,7 +901,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Muralha_Primitiva_%28Porto%29.JPG/500px-Muralha_Primitiva_%28Porto%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Manuel de Sousa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Muralha_Primitiva_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muralha_Primitiva_(Porto).JPG",
+      "fullWidth": 1024
+     },
+     "description": "residence in São Nicolau e Vitória, Portugal"
     },
     {
      "id": "relation/2880925",
@@ -542,7 +927,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Casa_do_Infante_%28Porto%29.JPG/500px-Casa_do_Infante_%28Porto%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Manuel de Sousa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Casa_do_Infante_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_do_Infante_(Porto).JPG",
+      "fullWidth": 768
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/229317992",
@@ -556,7 +952,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Oporto_-_Palacete_dos_Viscondes_de_Balsem%C3%A3o_-_20110424_163409.jpg/500px-Oporto_-_Palacete_dos_Viscondes_de_Balsem%C3%A3o_-_20110424_163409.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oporto_-_Palacete_dos_Viscondes_de_Balsem%C3%A3o_-_20110424_163409.jpg",
+      "fullWidth": 3648
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/548346478",
@@ -568,7 +975,18 @@
      "wikidataId": "Q20986719",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Palacete_Pinto_Leite%2C_Porto.jpg/500px-Palacete_Pinto_Leite%2C_Porto.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "dorfun from Ferrol, Galiza",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacete_Pinto_Leite,_Porto.jpg",
+      "fullWidth": 3872
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/255998376",
@@ -581,7 +999,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Casa_Tait_%2840956349741%29.jpg/500px-Casa_Tait_%2840956349741%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Francisco Restivo from Porto, Portugal",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Tait_(40956349741).jpg",
+      "fullWidth": 2048
+     },
+     "description": "residence in Lordelo do Ouro e Massarelos, Portugal"
     },
     {
      "id": "way/210580232",
@@ -592,7 +1021,18 @@
      "wikidataId": "Q10328761",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/S%C3%A3o_Nicolau-Mercado_Ferreira_Borges.jpg/500px-S%C3%A3o_Nicolau-Mercado_Ferreira_Borges.jpg",
+      "width": 500,
+      "height": 266,
+      "author": "António Amen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:S%C3%A3o_Nicolau-Mercado_Ferreira_Borges.jpg",
+      "fullWidth": 3543
+     },
+     "description": "cultural heritage monument in Porto, Portugal"
     },
     {
      "id": "way/546354460",
@@ -607,7 +1047,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Junta_de_Freguesia_do_Bonfim.jpg/500px-Junta_de_Freguesia_do_Bonfim.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Threeohsix",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Junta_de_Freguesia_do_Bonfim.jpg",
+      "fullWidth": 4160
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/255778741",
@@ -621,7 +1072,18 @@
      "wikidataId": "Q10333620",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Museu_Rom%C3%A2ntico_da_Quinta_da_Macieirinha.jpg/500px-Museu_Rom%C3%A2ntico_da_Quinta_da_Macieirinha.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Torradaemeiadeleite",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Rom%C3%A2ntico_da_Quinta_da_Macieirinha.jpg",
+      "fullWidth": 3056
+     },
+     "description": "museum in Porto, Portugal"
     },
     {
      "id": "node/5292435759",
@@ -634,7 +1096,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Porto_%2852686172808%29.jpg/500px-Porto_%2852686172808%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Erik Cooper from Chicago, United Stats",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto_(52686172808).jpg",
+      "fullWidth": 5408
+     },
+     "description": "building in Vila Nova de Gaia, Porto District, Portugal"
     }
    ]
   },
@@ -657,7 +1130,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Palacio_da_Bolsa_%28Porto%29.JPG/500px-Palacio_da_Bolsa_%28Porto%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Manuel de Sousa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palacio_da_Bolsa_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_da_Bolsa_(Porto).JPG",
+      "fullWidth": 1024
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/261265893",
@@ -672,7 +1156,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Carrancas_Porto.jpg/500px-Carrancas_Porto.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jose Goncalves",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Carrancas_Porto.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carrancas_Porto.jpg",
+      "fullWidth": 800
+     },
+     "description": "art museum in Porto, Portugal"
     },
     {
      "id": "relation/2883918",
@@ -686,7 +1181,18 @@
       "museum",
       "organization",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Centro_Portugu%C3%A9s_de_Fotograf%C3%ADa%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG/500px-Centro_Portugu%C3%A9s_de_Fotograf%C3%ADa%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG",
+      "width": 500,
+      "height": 342,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centro_Portugu%C3%A9s_de_Fotograf%C3%ADa,_Oporto,_Portugal,_2012-05-09,_DD_01.JPG",
+      "fullWidth": 4739
+     },
+     "description": "building in Porto"
     },
     {
      "id": "way/332479849",
@@ -702,7 +1208,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Porto_tram_No._288_at_Museu_do_Carro_El%C3%A9ctrico_01.jpg/500px-Porto_tram_No._288_at_Museu_do_Carro_El%C3%A9ctrico_01.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Novoklimov",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porto_tram_No._288_at_Museu_do_Carro_El%C3%A9ctrico_01.jpg",
+      "fullWidth": 4592
+     },
+     "description": "tram museum in Portugal"
     },
     {
      "id": "node/4586091689",
@@ -717,7 +1234,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Version_2_%2838287223755%29.jpg/500px-Version_2_%2838287223755%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dennis Morhardt",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Version_2_(38287223755).jpg",
+      "fullWidth": 3264
+     },
+     "description": "archival institution in Portugal"
     },
     {
      "id": "way/210571326",
@@ -733,7 +1261,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/CRAT_1_%28Porto%29.JPG/500px-CRAT_1_%28Porto%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:CRAT_1_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CRAT_1_(Porto).JPG",
+      "fullWidth": 768
+     },
+     "description": "museum in Porto, Portugal"
     },
     {
      "id": "way/210461454",
@@ -747,7 +1286,18 @@
      "wikidataId": "Q5047775",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Casa-Museu_Guerra_Junqueiro_88.JPG/500px-Casa-Museu_Guerra_Junqueiro_88.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "MariaCartas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa-Museu_Guerra_Junqueiro_88.JPG",
+      "fullWidth": 2048
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "node/2892472764",
@@ -762,7 +1312,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Palacete_Viscondes_Balsemao_%28Porto%29.jpg/500px-Palacete_Viscondes_Balsemao_%28Porto%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Manuel de Sousa",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacete_Viscondes_Balsemao_(Porto).jpg",
+      "fullWidth": 1024
+     },
+     "description": "museum in Portugal"
     },
     {
      "id": "node/1652873556",
@@ -777,7 +1338,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Porto, Portugal"
     },
     {
      "id": "way/167487345",
@@ -792,7 +1354,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Antiga_Casa_Camara_%28Porto%29.JPG/500px-Antiga_Casa_Camara_%28Porto%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Antiga_Casa_Camara_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Antiga_Casa_Camara_(Porto).JPG",
+      "fullWidth": 768
+     },
+     "description": "former seat of local government in Porto"
     },
     {
      "id": "way/544594862",
@@ -807,7 +1380,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Casa_Museu_Antonio_Carneiro_by_Henrique_Matos_02.jpg/500px-Casa_Museu_Antonio_Carneiro_by_Henrique_Matos_02.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Henrique Matos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Museu_Antonio_Carneiro_by_Henrique_Matos_02.jpg",
+      "fullWidth": 1506
+     },
+     "description": "house in Porto, Portugal"
     },
     {
      "id": "way/216272583",
@@ -822,7 +1406,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Painel_%22Ribeira_Negra%22.jpg",
+      "width": 500,
+      "height": 444,
+      "author": "Rita Brito",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Painel_%22Ribeira_Negra%22.jpg",
+      "fullWidth": 450
+     },
+     "description": "museum in Porto, Portugal"
     },
     {
      "id": "relation/2880925",
@@ -837,7 +1432,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Casa_do_Infante_%28Porto%29.JPG/500px-Casa_do_Infante_%28Porto%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Manuel de Sousa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Casa_do_Infante_(Porto).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_do_Infante_(Porto).JPG",
+      "fullWidth": 768
+     },
+     "description": "building in Porto, Porto District, Portugal"
     },
     {
      "id": "way/449722702",
@@ -852,7 +1458,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Museu_Militar_Porto.jpg/500px-Museu_Militar_Porto.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "JotaCartas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Militar_Porto.jpg",
+      "fullWidth": 4000
+     },
+     "description": "military museum in Porto, Portugal"
     },
     {
      "id": "way/255998376",
@@ -865,7 +1482,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Casa_Tait_%2840956349741%29.jpg/500px-Casa_Tait_%2840956349741%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Francisco Restivo from Porto, Portugal",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Tait_(40956349741).jpg",
+      "fullWidth": 2048
+     },
+     "description": "residence in Lordelo do Ouro e Massarelos, Portugal"
     },
     {
      "id": "node/12505592144",
@@ -880,7 +1508,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Museu_de_Marionetas_do_Porto_02.JPG/500px-Museu_de_Marionetas_do_Porto_02.JPG",
+      "width": 500,
+      "height": 889,
+      "author": "69joehawkins",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_de_Marionetas_do_Porto_02.JPG",
+      "fullWidth": 2592
+     }
     },
     {
      "id": "way/255778741",
@@ -894,7 +1532,18 @@
      "wikidataId": "Q10333620",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Museu_Rom%C3%A2ntico_da_Quinta_da_Macieirinha.jpg/500px-Museu_Rom%C3%A2ntico_da_Quinta_da_Macieirinha.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Torradaemeiadeleite",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Rom%C3%A2ntico_da_Quinta_da_Macieirinha.jpg",
+      "fullWidth": 3056
+     },
+     "description": "museum in Porto, Portugal"
     },
     {
      "id": "way/266663736",
@@ -909,7 +1558,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Museu_da_Miseric%C3%B3rdia_do_Porto_02.JPG/500px-Museu_da_Miseric%C3%B3rdia_do_Porto_02.JPG",
+      "width": 500,
+      "height": 281,
+      "author": "69joehawkins",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_da_Miseric%C3%B3rdia_do_Porto_02.JPG",
+      "fullWidth": 4608
+     }
     },
     {
      "id": "node/6540216045",
@@ -2218,7 +2877,18 @@
      "lon": -8.61489,
      "address": "Mercado Ferreira Borges",
      "website": "https://www.hard-club.com/",
-     "wikidataId": "Q604296"
+     "wikidataId": "Q604296",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Mercado_Ferreira_Borges_%285416670853%29.jpg/500px-Mercado_Ferreira_Borges_%285416670853%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Francisco Restivo from Porto, Portugal",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mercado_Ferreira_Borges_(5416670853).jpg",
+      "fullWidth": 1368
+     },
+     "description": "music club in Porto, Portugal"
     },
     {
      "id": "node/2616002805",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "MLA",
- "fetchedAt": "2026-10-18T16:45:25.272Z",
+ "fetchedAt": "2026-10-22T06:10:38.249Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
       "heritage",
       "ruins",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Malta_Hypogeum_Modell.jpg/500px-Malta_Hypogeum_Modell.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Hypogeum_Modell.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Neolithic subterranean structure in Malta"
     },
     {
      "id": "way/23352829",
@@ -69,7 +80,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Concatedral_de_San_Juan%2C_La_Valeta%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_246-248_HDR.jpg/500px-Concatedral_de_San_Juan%2C_La_Valeta%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_246-248_HDR.jpg",
+      "width": 500,
+      "height": 503,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Concatedral_de_San_Juan,_La_Valeta,_isla_de_Malta,_Malta,_2021-08-25,_DD_246-248_HDR.jpg",
+      "fullWidth": 5187
+     },
+     "description": "cathedral in Valletta, Malta"
     },
     {
      "id": "relation/4434917",
@@ -81,7 +103,18 @@
      "wikidataId": "Q1368885",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Valletta_St_Johns_square_Malta_2014_3.jpg/500px-Valletta_St_Johns_square_Malta_2014_3.jpg",
+      "width": 500,
+      "height": 337,
+      "author": "Karelj",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Valletta_St_Johns_square_Malta_2014_3.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Valletta_St_Johns_square_Malta_2014_3.jpg",
+      "fullWidth": 2400
+     },
+     "description": "palace"
     },
     {
      "id": "relation/7905228",
@@ -93,7 +126,18 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/City_Gate%2C_Valletta_002.jpg/500px-City_Gate%2C_Valletta_002.jpg",
+      "width": 500,
+      "height": 309,
+      "author": "Matthew Axiak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:City_Gate,_Valletta_002.jpg",
+      "fullWidth": 4064
+     },
+     "description": "construction in Malta"
     },
     {
      "id": "relation/5760252",
@@ -101,12 +145,23 @@
      "lat": 35.8959,
      "lon": 14.51136,
      "address": "Pjazza Kastilja",
-     "wikipediaCount": 24,
+     "wikipediaCount": 25,
      "wikidataId": "Q2499012",
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Auberge_de_Castille%2C_Valletta_001.jpg/500px-Auberge_de_Castille%2C_Valletta_001.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "Matthew Axiak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Auberge_de_Castille,_Valletta_001.jpg",
+      "fullWidth": 3949
+     },
+     "description": "auberge in Valletta, Malta"
     },
     {
      "id": "way/54896162",
@@ -119,7 +174,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Fuerte_de_San_%C3%81ngel%2C_Birgu%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_193.jpg/500px-Fuerte_de_San_%C3%81ngel%2C_Birgu%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_193.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fuerte_de_San_%C3%81ngel,_Birgu,_isla_de_Malta,_Malta,_2021-08-25,_DD_193.jpg",
+      "fullWidth": 8589
+     },
+     "description": "fortification on Malta"
     },
     {
      "id": "relation/7893491",
@@ -133,7 +199,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Fort_St._Elmo%3B_Valletta%2C_Malta.jpg/500px-Fort_St._Elmo%3B_Valletta%2C_Malta.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "John Haslam",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fort_St._Elmo;_Valletta,_Malta.jpg",
+      "fullWidth": 3456
+     },
+     "description": "fortification in Malta"
     },
     {
      "id": "wikidata/Q1280925",
@@ -146,7 +223,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Victoria_Church%2C_Valletta.jpg/500px-Victoria_Church%2C_Valletta.jpg",
+      "width": 500,
+      "height": 439,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Victoria_Church,_Valletta.jpg",
+      "fullWidth": 1904
+     },
+     "description": "church in Valletta, Malta"
     },
     {
      "id": "wikidata/Q576808",
@@ -162,7 +250,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Malta_Opera_House.jpg/500px-Malta_Opera_House.jpg",
+      "width": 500,
+      "height": 409,
+      "author": "D.G. Elliot and Carl Akeley",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Malta_Opera_House.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Opera_House.jpg",
+      "fullWidth": 900
+     },
+     "description": "former opera house in Valletta, Malta"
     },
     {
      "id": "wikidata/Q19882533",
@@ -174,7 +273,18 @@
      "wikidataId": "Q19882533",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Parlimentmalta34.jpg/500px-Parlimentmalta34.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parlimentmalta34.jpg",
+      "fullWidth": 2592
+     },
+     "description": "meeting place of the Parliament of Malta"
     },
     {
      "id": "way/691542011",
@@ -186,7 +296,18 @@
      "kinds": [
       "adminArea",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Fuerte_Ricasoli%2C_Kalkara%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_200.jpg/500px-Fuerte_Ricasoli%2C_Kalkara%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_200.jpg",
+      "width": 500,
+      "height": 168,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fuerte_Ricasoli,_Kalkara,_isla_de_Malta,_Malta,_2021-08-25,_DD_200.jpg",
+      "fullWidth": 8375
+     },
+     "description": "fort in Malta"
     },
     {
      "id": "wikidata/Q1734062",
@@ -198,7 +319,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Basilica_Our_Lady_of_Mount_Carmel_%28Valletta%29.jpg/500px-Basilica_Our_Lady_of_Mount_Carmel_%28Valletta%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "This photo was taken by Anton Zelenov . Please credit this with : Photo : Anton Zelenov in the immediate vicinity of the image. If you use one of my photos, please email me (account needed) or leave me a short message on my discussion page . It would be greatly appreciated. Do not copy this image illegally by ignoring the terms of the license below, as it is not in the public domain. If you would like special permission to use, license, or purchase the image please contact me to negotiate terms.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_Our_Lady_of_Mount_Carmel_(Valletta).jpg",
+      "fullWidth": 1360
+     },
+     "description": "church in Valletta, Malta"
     },
     {
      "id": "wikidata/Q10300613",
@@ -211,7 +343,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Church_of_St_Catherine_of_Italy%2C_Valletta.jpeg/500px-Church_of_St_Catherine_of_Italy%2C_Valletta.jpeg",
+      "width": 500,
+      "height": 495,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Church_of_St_Catherine_of_Italy,_Valletta.jpeg",
+      "fullWidth": 1308
+     },
+     "description": "church building in Valletta, Malta"
     },
     {
      "id": "wikidata/Q1280848",
@@ -223,7 +366,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Malta_250915_Triq_Marsamxett_02.jpg/500px-Malta_250915_Triq_Marsamxett_02.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Oren Rozen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_250915_Triq_Marsamxett_02.jpg",
+      "fullWidth": 1600
+     },
+     "description": "cathedral"
     },
     {
      "id": "wikidata/Q20949683",
@@ -235,7 +389,18 @@
      "wikidataId": "Q20949683",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Palacio_Ferreria%2C_La_Valeta%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_231-233_HDR.jpg/500px-Palacio_Ferreria%2C_La_Valeta%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_231-233_HDR.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Ferreria,_La_Valeta,_isla_de_Malta,_Malta,_2021-08-25,_DD_231-233_HDR.jpg",
+      "fullWidth": 7009
+     },
+     "description": "palace in Valletta, Malta"
     },
     {
      "id": "wikidata/Q576800",
@@ -253,7 +418,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Manoel_theatre_%2812843882153%29.jpg/500px-Manoel_theatre_%2812843882153%29.jpg",
+      "width": 500,
+      "height": 689,
+      "author": "R Muscat",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Manoel_theatre_(12843882153).jpg",
+      "fullWidth": 724
+     },
+     "description": "theatre in Valletta, Malta"
     },
     {
      "id": "way/15684588",
@@ -265,7 +441,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Malta_-_Valletta_-_Triq_il-Mediterran-Triq_it-Tramuntana_-_Mediterranean_Conference_Centre_01_ies.jpg/500px-Malta_-_Valletta_-_Triq_il-Mediterran-Triq_it-Tramuntana_-_Mediterranean_Conference_Centre_01_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Valletta_-_Triq_il-Mediterran-Triq_it-Tramuntana_-_Mediterranean_Conference_Centre_01_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "convention center in Malta"
     },
     {
      "id": "way/33506206",
@@ -277,7 +464,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Auberge_d%27Italie%2C_Valletta_003.jpg/500px-Auberge_d%27Italie%2C_Valletta_003.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Matthew Axiak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Auberge_d%27Italie,_Valletta_003.jpg",
+      "fullWidth": 2268
+     },
+     "description": "Auberge in Valletta, Malta"
     },
     {
      "id": "way/551701982",
@@ -289,7 +487,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Gzira_Fort_Manoel_20090321.jpg/500px-Gzira_Fort_Manoel_20090321.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Helmut Seger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gzira_Fort_Manoel_20090321.jpg",
+      "fullWidth": 2400
+     },
+     "description": "Star fort in Gzira, Malta"
     },
     {
      "id": "wikidata/Q4505301",
@@ -302,7 +511,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Malta_-_Valletta_-_Triq_il-Merkanti_07_ies.jpg/500px-Malta_-_Valletta_-_Triq_il-Merkanti_07_ies.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Valletta_-_Triq_il-Merkanti_07_ies.jpg",
+      "fullWidth": 3744
+     },
+     "description": "church in Valletta, Malta"
     },
     {
      "id": "wikidata/Q1997378",
@@ -314,7 +534,40 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Senglea_Land_Front_1725.jpg/500px-Senglea_Land_Front_1725.jpg",
+      "width": 500,
+      "height": 303,
+      "author": "M-A. Benoist, after J. Goupy",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Senglea_Land_Front_1725.jpg",
+      "fullWidth": 1004
+     },
+     "description": "Hospitaller fort in Senglea, Malta"
+    },
+    {
+     "id": "wikidata/Q1564943",
+     "name": "HMS Jersey",
+     "lat": 35.9,
+     "lon": 14.52333,
+     "wikipediaCount": 11,
+     "wikidataId": "Q1564943",
+     "kinds": [
+      "ruins"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/HMS_Jersey.JPG/500px-HMS_Jersey.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Arthur Conry (digitised and edited by Wiki-Ed )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HMS_Jersey.JPG",
+      "fullWidth": 2048
+     },
+     "description": "1938 K and N-class destroyer"
     },
     {
      "id": "wikidata/Q495405",
@@ -325,7 +578,18 @@
      "wikidataId": "Q495405",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/HMS_Maori_%28F24%29.jpg/500px-HMS_Maori_%28F24%29.jpg",
+      "width": 500,
+      "height": 266,
+      "author": "Royal Navy official photographer",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:HMS_Maori_(F24).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HMS_Maori_(F24).jpg",
+      "fullWidth": 792
+     },
+     "description": "1937 Tribal-class destroyer"
     },
     {
      "id": "wikidata/Q7231541",
@@ -338,7 +602,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Malta_-_Floriana_-_Triq_Nazzjonali_-_Porte_des_Bombes_%28N%29_02_ies.jpg/500px-Malta_-_Floriana_-_Triq_Nazzjonali_-_Porte_des_Bombes_%28N%29_02_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Floriana_-_Triq_Nazzjonali_-_Porte_des_Bombes_(N)_02_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "gate in Floriana, Malta"
     },
     {
      "id": "wikidata/Q1127061",
@@ -349,7 +624,18 @@
      "wikidataId": "Q1127061",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Hibernians_Ground.jpg/500px-Hibernians_Ground.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Chivista",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hibernians_Ground.jpg",
+      "fullWidth": 3175
+     },
+     "description": "stadium in Paola, Malta"
     },
     {
      "id": "wikidata/Q7898477",
@@ -357,7 +643,18 @@
      "lat": 35.89498,
      "lon": 14.51202,
      "wikipediaCount": 11,
-     "wikidataId": "Q7898477"
+     "wikidataId": "Q7898477",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Upper_barrakka_gardens-IMG_1669.jpg/500px-Upper_barrakka_gardens-IMG_1669.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "C T Johansson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Upper_barrakka_gardens-IMG_1669.jpg",
+      "fullWidth": 3570
+     },
+     "description": "garden in Valletta, Malta"
     },
     {
      "id": "wikidata/Q20949752",
@@ -365,7 +662,18 @@
      "lat": 35.89225,
      "lon": 14.49506,
      "wikipediaCount": 11,
-     "wikidataId": "Q20949752"
+     "wikidataId": "Q20949752",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Villa_Guardamangia.jpeg/500px-Villa_Guardamangia.jpeg",
+      "width": 500,
+      "height": 669,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Guardamangia.jpeg",
+      "fullWidth": 1936
+     },
+     "description": "villa in Pietà, Malta"
     },
     {
      "id": "way/400118202",
@@ -376,7 +684,18 @@
      "wikidataId": "Q21986844",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Victoria_Gate%2C_Valletta.jpg/500px-Victoria_Gate%2C_Valletta.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Simon Reinhardt",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Victoria_Gate,_Valletta.jpg",
+      "fullWidth": 4928
+     },
+     "description": "City gate in Valletta, Malta"
     },
     {
      "id": "way/141054675",
@@ -387,7 +706,18 @@
      "wikidataId": "Q26233269",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Malta_Valletta_BW_2011-10-07_10-41-05.JPG/500px-Malta_Valletta_BW_2011-10-07_10-41-05.JPG",
+      "width": 500,
+      "height": 374,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Valletta_BW_2011-10-07_10-41-05.JPG",
+      "fullWidth": 3431
+     },
+     "description": "courthouse in Valletta, Malta"
     },
     {
      "id": "way/33506481",
@@ -400,7 +730,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Malta_-_Valletta_-_Triq_San_Bastjan_-_Auberge_de_Baviere_02_ies.jpg/500px-Malta_-_Valletta_-_Triq_San_Bastjan_-_Auberge_de_Baviere_02_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Valletta_-_Triq_San_Bastjan_-_Auberge_de_Baviere_02_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "palace in Valletta, Malta"
     },
     {
      "id": "node/2381143255",
@@ -408,7 +749,18 @@
      "lat": 35.89456,
      "lon": 14.50782,
      "wikipediaCount": 5,
-     "wikidataId": "Q2900880"
+     "wikidataId": "Q2900880",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Floriana_War_Memorial.jpg/500px-Floriana_War_Memorial.jpg",
+      "width": 500,
+      "height": 772,
+      "author": "Colin Cameron from Edinburgh, Scotland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Floriana_War_Memorial.jpg",
+      "fullWidth": 1449
+     },
+     "description": "World War II memorial in Malta commemorating British Commonwealth aircrews"
     },
     {
      "id": "way/352179825",
@@ -419,7 +771,18 @@
      "wikidataId": "Q1028285",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Cambridge_Battery_10.jpg/500px-Cambridge_Battery_10.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cambridge_Battery_10.jpg",
+      "fullWidth": 1620
+     },
+     "description": "military base"
     },
     {
      "id": "way/339457756",
@@ -430,7 +793,18 @@
      "wikidataId": "Q1356945",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Malta_-_Sliema_-_Tign%C3%A9_Point_-_outer_trail_04_ies.jpg/500px-Malta_-_Sliema_-_Tign%C3%A9_Point_-_outer_trail_04_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Sliema_-_Tign%C3%A9_Point_-_outer_trail_04_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "1889 artillery battery in Malta"
     },
     {
      "id": "way/153030272",
@@ -442,7 +816,17 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Il-Fortizza%2C_Sliema%2C_isla_de_Malta%2C_Malta%2C_2021-08-24%2C_DD_09.jpg/500px-Il-Fortizza%2C_Sliema%2C_isla_de_Malta%2C_Malta%2C_2021-08-24%2C_DD_09.jpg",
+      "width": 500,
+      "height": 237,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Il-Fortizza,_Sliema,_isla_de_Malta,_Malta,_2021-08-24,_DD_09.jpg",
+      "fullWidth": 7165
+     }
     },
     {
      "id": "node/2489082272",
@@ -450,7 +834,18 @@
      "lat": 35.89432,
      "lon": 14.51198,
      "wikipediaCount": 4,
-     "wikidataId": "Q20503060"
+     "wikidataId": "Q20503060",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Malta_-_Valletta_-_Pjazza_Kastilja_-_Upper_Barrakka_Gardens_%2B_Barrakka_Lift_01_ies.jpg/500px-Malta_-_Valletta_-_Pjazza_Kastilja_-_Upper_Barrakka_Gardens_%2B_Barrakka_Lift_01_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Valletta_-_Pjazza_Kastilja_-_Upper_Barrakka_Gardens_%2B_Barrakka_Lift_01_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "Elevator in Valleta, Malta"
     },
     {
      "id": "node/1535809746",
@@ -458,7 +853,18 @@
      "lat": 35.88745,
      "lon": 14.49765,
      "wikipediaCount": 4,
-     "wikidataId": "Q7576135"
+     "wikidataId": "Q7576135",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Ponsonby_Obelisk.jpeg/500px-Ponsonby_Obelisk.jpeg",
+      "width": 500,
+      "height": 500,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponsonby_Obelisk.jpeg",
+      "fullWidth": 1936
+     },
+     "description": "monument in Ħamrun, Malta"
     },
     {
      "id": "node/5590784922",
@@ -470,7 +876,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Auberge_d%27_Auvergne_et_Provence%2C_Birgu_01.jpg/500px-Auberge_d%27_Auvergne_et_Provence%2C_Birgu_01.jpg",
+      "width": 500,
+      "height": 669,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Auberge_d%27_Auvergne_et_Provence,_Birgu_01.jpg",
+      "fullWidth": 1936
+     },
+     "description": "auberge in Birgu"
     },
     {
      "id": "node/5590796821",
@@ -482,7 +899,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Il-Birgu._Triq_Hilda_Tabone_7.jpg/500px-Il-Birgu._Triq_Hilda_Tabone_7.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Enrique Íñiguez Rodríguez ( Qoan ) Credit information This work was created by Enrique Íñiguez ( Qoan ). You are free to use it for any purpose as long as you credit me properly (e.g. © Enrique Íñiguez (CC-BY-SA) ; other variants are acceptable, let me know if in doubt ). .mw-parser-output .div-col{margin-top:.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:thin solid var(--border-color-base)}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column} Reuse: If you use this image outside of Wikimedia projects, I would be happy to hear from you . If you use this image in a printed publication, I would love to get a copy for my archives. Contact me: If you're unsure about how you can use this picture. If you have any questions about attribution or other topics related to my files.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Il-Birgu._Triq_Hilda_Tabone_7.jpg",
+      "fullWidth": 4000
+     },
+     "description": "auberge in Birgu"
     },
     {
      "id": "way/400118196",
@@ -490,7 +918,18 @@
      "lat": 35.89749,
      "lon": 14.51755,
      "wikipediaCount": 3,
-     "wikidataId": "Q42795499"
+     "wikidataId": "Q42795499",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Alexander_Ball_Monument_in_the_Lower_Barrakka_Gardens_-_panoramio.jpg/500px-Alexander_Ball_Monument_in_the_Lower_Barrakka_Gardens_-_panoramio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Björn S.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alexander_Ball_Monument_in_the_Lower_Barrakka_Gardens_-_panoramio.jpg",
+      "fullWidth": 5184
+     },
+     "description": "neoclassical building in Malta"
     },
     {
      "id": "relation/3968465",
@@ -501,7 +940,18 @@
      "wikidataId": "Q114269861",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Archbishop%27s_Palace%2C_Valletta_001.jpg/500px-Archbishop%27s_Palace%2C_Valletta_001.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Matthew Axiak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archbishop%27s_Palace,_Valletta_001.jpg",
+      "fullWidth": 2268
+     },
+     "description": "palace in Valletta, Malta"
     },
     {
      "id": "way/404197034",
@@ -527,54 +977,6 @@
      "name": "Couvre de Porte",
      "lat": 35.88546,
      "lon": 14.52254
-    },
-    {
-     "id": "node/3363877120",
-     "name": "Dom Mintoff",
-     "lat": 35.88228,
-     "lon": 14.52087
-    },
-    {
-     "id": "node/5316661546",
-     "name": "Eks Forti Rinella",
-     "lat": 35.89431,
-     "lon": 14.53234
-    },
-    {
-     "id": "way/339459510",
-     "name": "Fort Tigné",
-     "lat": 35.90663,
-     "lon": 14.5133
-    },
-    {
-     "id": "node/4344571449",
-     "name": "Id-Daħla l-Qadima tal-Gżira",
-     "lat": 35.90134,
-     "lon": 14.49093
-    },
-    {
-     "id": "relation/19656097",
-     "name": "Il-Barrakka ta Fuq",
-     "lat": 35.89493,
-     "lon": 14.51194
-    },
-    {
-     "id": "node/4367809098",
-     "name": "Il-Fdalijiet tal-Lazzarett",
-     "lat": 35.90155,
-     "lon": 14.50399
-    },
-    {
-     "id": "node/6089030601",
-     "name": "Joe Sciberras",
-     "lat": 35.89538,
-     "lon": 14.49263
-    },
-    {
-     "id": "node/13245531475",
-     "name": "Kripta tal-Kunvent",
-     "lat": 35.88912,
-     "lon": 14.50477
     }
    ]
   },
@@ -592,7 +994,18 @@
      "wikidataId": "Q1368885",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Valletta_St_Johns_square_Malta_2014_3.jpg/500px-Valletta_St_Johns_square_Malta_2014_3.jpg",
+      "width": 500,
+      "height": 337,
+      "author": "Karelj",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Valletta_St_Johns_square_Malta_2014_3.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Valletta_St_Johns_square_Malta_2014_3.jpg",
+      "fullWidth": 2400
+     },
+     "description": "palace"
     },
     {
      "id": "way/54896162",
@@ -605,7 +1018,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Fuerte_de_San_%C3%81ngel%2C_Birgu%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_193.jpg/500px-Fuerte_de_San_%C3%81ngel%2C_Birgu%2C_isla_de_Malta%2C_Malta%2C_2021-08-25%2C_DD_193.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fuerte_de_San_%C3%81ngel,_Birgu,_isla_de_Malta,_Malta,_2021-08-25,_DD_193.jpg",
+      "fullWidth": 8589
+     },
+     "description": "fortification on Malta"
     },
     {
      "id": "way/31233115",
@@ -619,7 +1043,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Malta_-_Valletta_-_Triq_ir-Repubblika_%2B_Auberge_de_Provence_01_ies.jpg/500px-Malta_-_Valletta_-_Triq_ir-Repubblika_%2B_Auberge_de_Provence_01_ies.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Valletta_-_Triq_ir-Repubblika_%2B_Auberge_de_Provence_01_ies.jpg",
+      "fullWidth": 3744
+     },
+     "description": "archaeology museum in Valletta, Malta"
     },
     {
      "id": "way/30382084",
@@ -636,7 +1071,18 @@
       "cinema",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Saint_James_Cavalier%2C_Valletta.jpeg/500px-Saint_James_Cavalier%2C_Valletta.jpeg",
+      "width": 500,
+      "height": 275,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saint_James_Cavalier,_Valletta.jpeg",
+      "fullWidth": 2518
+     },
+     "description": "16th century fortification in Valletta"
     },
     {
      "id": "relation/5760253",
@@ -650,7 +1096,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Auberge_d%27Italie%2C_Valletta_002.jpg/500px-Auberge_d%27Italie%2C_Valletta_002.jpg",
+      "width": 500,
+      "height": 877,
+      "author": "Matthew Axiak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Auberge_d%27Italie,_Valletta_002.jpg",
+      "fullWidth": 2268
+     },
+     "description": "art museum in Valletta, Malta"
     },
     {
      "id": "way/240871554",
@@ -664,7 +1121,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Malta_Maritime_Museum_from_Senglea.jpg/500px-Malta_Maritime_Museum_from_Senglea.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Marie-Lan Nguyen",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Maritime_Museum_from_Senglea.jpg",
+      "fullWidth": 3392
+     },
+     "description": "museum in Birgu, Malta"
     },
     {
      "id": "way/33506558",
@@ -680,7 +1148,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Casa_Rocca_Piccola.jpeg/500px-Casa_Rocca_Piccola.jpeg",
+      "width": 500,
+      "height": 373,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Rocca_Piccola.jpeg",
+      "fullWidth": 2592
+     },
+     "description": "museum palace"
     },
     {
      "id": "node/2269130526",
@@ -695,7 +1174,18 @@
       "adminArea",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Malta_-_Kalkara_-_Fort_Rinella_10_ies.jpg/500px-Malta_-_Kalkara_-_Fort_Rinella_10_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_-_Kalkara_-_Fort_Rinella_10_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "Victorian battery in Kalkara, Malta"
     },
     {
      "id": "node/293534848",
@@ -712,7 +1202,18 @@
       "heritage",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Malta_Vittoriosa_BW_2011-10-06_11-37-03.jpg/500px-Malta_Vittoriosa_BW_2011-10-06_11-37-03.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Vittoriosa_BW_2011-10-06_11-37-03.jpg",
+      "fullWidth": 3520
+     },
+     "description": "Palace in Birgu, Malta"
     },
     {
      "id": "node/2269127527",
@@ -725,7 +1226,18 @@
      "wikidataId": "Q19508900",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Malta_270915_Valletta_06.jpg/500px-Malta_270915_Valletta_06.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Oren Rozen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_270915_Valletta_06.jpg",
+      "fullWidth": 2400
+     },
+     "description": "artillery battery in Valletta, Malta"
     },
     {
      "id": "node/2269128025",
@@ -737,7 +1249,18 @@
      "wikidataId": "Q1648164",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Lascaris_War_Room_Entrance.jpg/500px-Lascaris_War_Room_Entrance.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Pi3.124",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lascaris_War_Room_Entrance.jpg",
+      "fullWidth": 2988
+     },
+     "description": "WWII bunkers in Valletta, Malta"
     },
     {
      "id": "node/2269132352",
@@ -752,7 +1275,18 @@
       "adminArea",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sudika_Birgu_Couvre_Porte_bastion.jpg/500px-Sudika_Birgu_Couvre_Porte_bastion.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sudika",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sudika_Birgu_Couvre_Porte_bastion.jpg",
+      "fullWidth": 3248
+     },
+     "description": "war museum in Birgu, Malta"
     },
     {
      "id": "way/372943057",
@@ -765,7 +1299,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Malta_Fortification_Centre.jpeg/500px-Malta_Fortification_Centre.jpeg",
+      "width": 500,
+      "height": 588,
+      "author": "Continentaleurope",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Fortification_Centre.jpeg",
+      "fullWidth": 1936
+     }
     },
     {
      "id": "node/3257012705",
@@ -778,7 +1322,18 @@
       "adminArea",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Malta_Valletta_BW_2011-10-07_14-03-30.jpg/500px-Malta_Valletta_BW_2011-10-07_14-03-30.jpg",
+      "width": 500,
+      "height": 407,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Valletta_BW_2011-10-07_14-03-30.jpg",
+      "fullWidth": 3036
+     },
+     "description": "museum in Malta"
     },
     {
      "id": "node/4508807392",
@@ -860,7 +1415,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Cospicua, Malta"
     },
     {
      "id": "way/27577949",
@@ -873,7 +1429,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Malta"
     },
     {
      "id": "node/12664527917",
@@ -952,7 +1509,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Malta"
     },
     {
      "id": "node/13021162352",

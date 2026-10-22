@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BAK",
- "fetchedAt": "2026-10-18T16:49:40.988Z",
+ "fetchedAt": "2026-10-22T06:19:43.140Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "wikidataId": "Q338889",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Azerbaigian-baku3.jpg/500px-Azerbaigian-baku3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bruno Girin",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Azerbaigian-baku3.jpg",
+      "fullWidth": 1280
+     },
+     "description": "Azerbaycan'ın Bakü kentinde tarihi saray"
     },
     {
      "id": "way/299418016",
@@ -66,7 +77,18 @@
      "wikidataId": "Q842822",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Baku_Maiden_Tower_004_7736.jpg/500px-Baku_Maiden_Tower_004_7736.jpg",
+      "width": 500,
+      "height": 492,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baku_Maiden_Tower_004_7736.jpg",
+      "fullWidth": 5938
+     },
+     "description": "Azerbaycan'da anıt"
     },
     {
      "id": "wikidata/Q4076080",
@@ -79,7 +101,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/%D0%91%D0%B0%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9D%D0%BE%D1%8F%D0%B1%D1%80%D1%8C_2024.jpg/500px-%D0%91%D0%B0%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9D%D0%BE%D1%8F%D0%B1%D1%80%D1%8C_2024.jpg",
+      "width": 500,
+      "height": 304,
+      "author": "Press Service of the President of the Republic of Azerbaijan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9D%D0%BE%D1%8F%D0%B1%D1%80%D1%8C_2024.jpg",
+      "fullWidth": 1960
+     },
+     "description": "Bakü, Azerbaycan'daki ana tren istasyonu"
     },
     {
      "id": "wikidata/Q344569",
@@ -91,7 +124,18 @@
      "wikidataId": "Q344569",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Walled_City_of_Baku.jpg/500px-Walled_City_of_Baku.jpg",
+      "width": 500,
+      "height": 460,
+      "author": "Interfase",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Walled_City_of_Baku.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Walled_City_of_Baku.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Bakü'nün tarihî çekirdeği"
     },
     {
      "id": "wikidata/Q618714",
@@ -102,7 +146,18 @@
      "wikidataId": "Q618714",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Baku_bolvard_and_flag_square_1.JPG/500px-Baku_bolvard_and_flag_square_1.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Urek Meniashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baku_bolvard_and_flag_square_1.JPG",
+      "fullWidth": 4752
+     },
+     "description": "Bakü'de bulunan çok fonksiyonlu arena"
     },
     {
      "id": "wikidata/Q17004958",
@@ -115,7 +170,18 @@
      "kinds": [
       "racetrack",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Aerial_View_of_Baku%2C_May_2012.jpg/500px-Aerial_View_of_Baku%2C_May_2012.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Khortan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Baku,_May_2012.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Azerbaycan'daki motor sporları pisti"
     },
     {
      "id": "way/1375055417",
@@ -128,7 +194,18 @@
      "wikidataId": "Q1407274",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Baku_Botanical_Garden_60_%28cropped%29.jpg/500px-Baku_Botanical_Garden_60_%28cropped%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Interfase",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baku_Botanical_Garden_60_(cropped).jpg",
+      "fullWidth": 1024
+     },
+     "description": "a free standing concrete telecommunications tower in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q48623",
@@ -144,7 +221,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Azerbaijan_State_Academic_Opera_and_Ballet_Theatre_main_fa%C3%A7ade%2C_2015.jpg/500px-Azerbaijan_State_Academic_Opera_and_Ballet_Theatre_main_fa%C3%A7ade%2C_2015.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Azerbaijan_State_Academic_Opera_and_Ballet_Theatre_main_fa%C3%A7ade,_2015.jpg",
+      "fullWidth": 3132
+     },
+     "description": "opera house in Baku, Azerbaijan"
     },
     {
      "id": "way/340060268",
@@ -155,7 +243,18 @@
      "wikidataId": "Q80499",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/View_From_Maidens_Tower_%28221090097%29.jpeg/500px-View_From_Maidens_Tower_%28221090097%29.jpeg",
+      "width": 500,
+      "height": 333,
+      "author": "Francisco Anzola",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_From_Maidens_Tower_(221090097).jpeg",
+      "fullWidth": 2048
+     },
+     "description": "gökdelen"
     },
     {
      "id": "wikidata/Q2096562",
@@ -169,7 +268,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/T%C9%99z%C9%99pir_m%C9%99scidinin_M%C9%99rk%C9%99zi_parkdan_g%C3%B6r%C3%BCn%C3%BC%C5%9F%C3%BC.jpg/500px-T%C9%99z%C9%99pir_m%C9%99scidinin_M%C9%99rk%C9%99zi_parkdan_g%C3%B6r%C3%BCn%C3%BC%C5%9F%C3%BC.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:T%C9%99z%C9%99pir_m%C9%99scidinin_M%C9%99rk%C9%99zi_parkdan_g%C3%B6r%C3%BCn%C3%BC%C5%9F%C3%BC.jpg",
+      "fullWidth": 5184
+     },
+     "description": "mosque in Baku, Azerbaijan"
     },
     {
      "id": "way/152301644",
@@ -180,7 +290,18 @@
      "wikidataId": "Q621107",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/New_Baku_Flagpole_Sept_2024.jpg/500px-New_Baku_Flagpole_Sept_2024.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "ZahidKerim747",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_Baku_Flagpole_Sept_2024.jpg",
+      "fullWidth": 4032
+     },
+     "description": "square in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q1535049",
@@ -193,7 +314,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/M%C9%99h%C9%99mm%C9%99d_m%C9%99scidi.JPG/500px-M%C9%99h%C9%99mm%C9%99d_m%C9%99scidi.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Urek Meniashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C9%99h%C9%99mm%C9%99d_m%C9%99scidi.JPG",
+      "fullWidth": 3168
+     },
+     "description": "mosque in Azerbaijan"
     },
     {
      "id": "wikidata/Q2664885",
@@ -207,7 +339,18 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Martyrs%27_Lane_common_view.JPG/500px-Martyrs%27_Lane_common_view.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Urek Meniashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Martyrs%27_Lane_common_view.JPG",
+      "fullWidth": 4752
+     },
+     "description": "Azerbaycan'da mezarlık"
     },
     {
      "id": "wikidata/Q597749",
@@ -220,7 +363,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Abdulla_%C5%9Eaiq_ad%C4%B1na_D%C3%B6vl%C9%99t_Kukla_Teatr%C4%B1_%282%29.jpg/500px-Abdulla_%C5%9Eaiq_ad%C4%B1na_D%C3%B6vl%C9%99t_Kukla_Teatr%C4%B1_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Abdulla_%C5%9Eaiq_ad%C4%B1na_D%C3%B6vl%C9%99t_Kukla_Teatr%C4%B1_(2).jpg",
+      "fullWidth": 4608
+     },
+     "description": "State puppet theatre in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q4160569",
@@ -234,7 +388,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Baku_JumaMosque_004_7609.jpg/500px-Baku_JumaMosque_004_7609.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baku_JumaMosque_004_7609.jpg",
+      "fullWidth": 7054
+     },
+     "description": "a 12th century mosque in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q2584583",
@@ -249,7 +414,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/%D0%90%D0%B7%D0%B5%D1%80%D0%B1%D0%B0%D0%B9%D0%B4%D0%B6%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80.jpg/500px-%D0%90%D0%B7%D0%B5%D1%80%D0%B1%D0%B0%D0%B9%D0%B4%D0%B6%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Gulustan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B7%D0%B5%D1%80%D0%B1%D0%B0%D0%B9%D0%B4%D0%B6%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80.jpg",
+      "fullWidth": 1426
+     },
+     "description": "theatre in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q2665945",
@@ -263,7 +439,18 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Vista_de_Baku%2C_Azerbaiy%C3%A1n%2C_2016-09-26%2C_DD_120-124_PAN.jpg/500px-Vista_de_Baku%2C_Azerbaiy%C3%A1n%2C_2016-09-26%2C_DD_120-124_PAN.jpg",
+      "width": 500,
+      "height": 115,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vista_de_Baku,_Azerbaiy%C3%A1n,_2016-09-26,_DD_120-124_PAN.jpg",
+      "fullWidth": 22506
+     },
+     "description": "street in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q1521003",
@@ -276,7 +463,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/%C5%9Eah_m%C9%99scidi_interyer.jpg/500px-%C5%9Eah_m%C9%99scidi_interyer.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Samir Rəsulov",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:%C5%9Eah_m%C9%99scidi_interyer.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%9Eah_m%C9%99scidi_interyer.jpg",
+      "fullWidth": 5184
+     },
+     "description": "mosque"
     },
     {
      "id": "wikidata/Q2347389",
@@ -289,7 +487,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Stamps_of_Azerbaijan%2C_2012-1030.jpg/500px-Stamps_of_Azerbaijan%2C_2012-1030.jpg",
+      "width": 500,
+      "height": 702,
+      "author": "Post of Azerbaijan/Azermarka",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Stamps_of_Azerbaijan,_2012-1030.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stamps_of_Azerbaijan,_2012-1030.jpg",
+      "fullWidth": 878
+     },
+     "description": "Azerbaijani government building in Baku"
     },
     {
      "id": "wikidata/Q58823",
@@ -305,7 +514,18 @@
       "musicVenue",
       "organization",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/FilarmonaSide.JPG/500px-FilarmonaSide.JPG",
+      "width": 500,
+      "height": 354,
+      "author": "Shmuliko",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:FilarmonaSide.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:FilarmonaSide.JPG",
+      "fullWidth": 2447
+     },
+     "description": "concert hall in Baku"
     },
     {
      "id": "wikidata/Q4075930",
@@ -318,7 +538,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Baku_Funicular.jpg/500px-Baku_Funicular.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "AlixSaz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baku_Funicular.jpg",
+      "fullWidth": 2534
+     },
+     "description": "funicular system in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q5474853",
@@ -330,7 +561,18 @@
      "wikidataId": "Q5474853",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Fountains_Square5%2C_August_2010.JPG/500px-Fountains_Square5%2C_August_2010.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Frokor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fountains_Square5,_August_2010.JPG",
+      "fullWidth": 4272
+     },
+     "description": "Bakü'de bulunan bir meydan"
     },
     {
      "id": "wikidata/Q16415387",
@@ -344,7 +586,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Ajdarbey_Mosque_Baku.jpg/500px-Ajdarbey_Mosque_Baku.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ajdarbey_Mosque_Baku.jpg",
+      "fullWidth": 2736
+     },
+     "description": "Bakü'de bulunan bir cami"
     },
     {
      "id": "wikidata/Q6538185",
@@ -358,7 +611,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/A%C5%9Fur_m%C9%99scidi.JPG/500px-A%C5%9Fur_m%C9%99scidi.JPG",
+      "width": 500,
+      "height": 661,
+      "author": "Urmen19",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A%C5%9Fur_m%C9%99scidi.JPG",
+      "fullWidth": 3162
+     },
+     "description": "Bakü, İçerişehir'de mescit"
     },
     {
      "id": "wikidata/Q2496140",
@@ -374,7 +638,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Az%C9%99rbaycan_D%C3%B6vl%C9%99t_Akademik_Rus_Dram_Teatr%C4%B1_%282008%29.jpg/500px-Az%C9%99rbaycan_D%C3%B6vl%C9%99t_Akademik_Rus_Dram_Teatr%C4%B1_%282008%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "لاله171",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Az%C9%99rbaycan_D%C3%B6vl%C9%99t_Akademik_Rus_Dram_Teatr%C4%B1_(2008).jpg",
+      "fullWidth": 800
+     },
+     "description": "Bakü, Azerbaycan'da tiyatro"
     },
     {
      "id": "wikidata/Q12838048",
@@ -388,7 +663,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/B%C9%99yl%C9%99r_m%C9%99scidi_%28aprel_2016%29-1.jpg/500px-B%C9%99yl%C9%99r_m%C9%99scidi_%28aprel_2016%29-1.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:B%C9%99yl%C9%99r_m%C9%99scidi_(aprel_2016)-1.jpg",
+      "fullWidth": 1536
+     },
+     "description": "Azerbaycan'ın Bakü şehrinde bulunan bir cami ve tarihî mimari eser."
     },
     {
      "id": "wikidata/Q12848542",
@@ -402,7 +688,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Interior_of_China_mosque.JPG/500px-Interior_of_China_mosque.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Urek Meniashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Interior_of_China_mosque.JPG",
+      "fullWidth": 4752
+     },
+     "description": "A mosque and historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "wikidata/Q4189918",
@@ -414,7 +711,18 @@
      "wikidataId": "Q4189918",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ismailiyye_palace_main_fa%C3%A7ade%2C_Baku%2C_2015.jpg/500px-Ismailiyye_palace_main_fa%C3%A7ade%2C_Baku%2C_2015.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ismailiyye_palace_main_fa%C3%A7ade,_Baku,_2015.jpg",
+      "fullWidth": 2475
+     },
+     "description": "Presidium of the Academy of Sciences of Azerbaijan, situated in the capital of Baku"
     },
     {
      "id": "wikidata/Q20573552",
@@ -428,7 +736,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Archeological_site_near_Maiden_Towers_of_Baku6.jpg/500px-Archeological_site_near_Maiden_Towers_of_Baku6.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Interfase",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archeological_site_near_Maiden_Towers_of_Baku6.jpg",
+      "fullWidth": 3264
+     },
+     "description": "mosque in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q12849537",
@@ -442,7 +761,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%C5%9Eeyx_%C4%B0brahim_M%C9%99scidi_2024_%281%29.jpg/500px-%C5%9Eeyx_%C4%B0brahim_M%C9%99scidi_2024_%281%29.jpg",
+      "width": 500,
+      "height": 263,
+      "author": "Rəcəb Yaxşı",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%9Eeyx_%C4%B0brahim_M%C9%99scidi_2024_(1).jpg",
+      "fullWidth": 3315
+     },
+     "description": "A mosque and historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "node/4540883889",
@@ -454,7 +784,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Good_People_-_panoramio.jpg/500px-Good_People_-_panoramio.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "M. PINARCI",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Good_People_-_panoramio.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Bakü'de bir heykel, Azerbaycan"
     },
     {
      "id": "wikidata/Q3232906",
@@ -466,7 +807,18 @@
      "wikidataId": "Q3232906",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Azadl%C4%B1q_meydan%C4%B1_-_panoramio.jpg/500px-Azadl%C4%B1q_meydan%C4%B1_-_panoramio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Stomatoloq Fərid Zey…",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Azadl%C4%B1q_meydan%C4%B1_-_panoramio.jpg",
+      "fullWidth": 3456
+     },
+     "description": "square in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q2671722",
@@ -480,7 +832,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Azerbaijan_State_Theatre_of_Young_Spectators_6.jpg/500px-Azerbaijan_State_Theatre_of_Young_Spectators_6.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "لاله171",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Azerbaijan_State_Theatre_of_Young_Spectators_6.jpg",
+      "fullWidth": 2853
+     },
+     "description": "theater in Baku"
     },
     {
      "id": "wikidata/Q12840111",
@@ -494,7 +857,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Hac%C4%B1_Bani_m%C9%99scidi_2016.jpg/500px-Hac%C4%B1_Bani_m%C9%99scidi_2016.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hac%C4%B1_Bani_m%C9%99scidi_2016.jpg",
+      "fullWidth": 5184
+     },
+     "description": "A mosque and historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "wikidata/Q21012753",
@@ -508,7 +882,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Hac%C4%B1_Heyb%C9%99t_m%C9%99scidinin_giri%C5%9F_qap%C4%B1s%C4%B1.JPG/500px-Hac%C4%B1_Heyb%C9%99t_m%C9%99scidinin_giri%C5%9F_qap%C4%B1s%C4%B1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hac%C4%B1_Heyb%C9%99t_m%C9%99scidinin_giri%C5%9F_qap%C4%B1s%C4%B1.JPG",
+      "fullWidth": 4608
+     },
+     "description": "Bakü'de mescit"
     },
     {
      "id": "wikidata/Q2634267",
@@ -521,7 +906,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Heydar_Aliyev_Sports_and_Exhibition_Complex_1.jpg/500px-Heydar_Aliyev_Sports_and_Exhibition_Complex_1.jpg",
+      "width": 500,
+      "height": 323,
+      "author": "Presidential Press and Information Office",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Heydar_Aliyev_Sports_and_Exhibition_Complex_1.jpg",
+      "fullWidth": 2362
+     },
+     "description": "sports venue"
     },
     {
      "id": "wikidata/Q12847654",
@@ -535,7 +931,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/X%C4%B1d%C4%B1r_m%C9%99scidi_%28iyul_2016%29.jpg/500px-X%C4%B1d%C4%B1r_m%C9%99scidi_%28iyul_2016%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:X%C4%B1d%C4%B1r_m%C9%99scidi_(iyul_2016).jpg",
+      "fullWidth": 2048
+     },
+     "description": "Bakü, İçerişehir'de tarihi cami"
     },
     {
      "id": "wikidata/Q12841258",
@@ -548,7 +955,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Palacio_de_los_Shirvanshah%2C_Baku%2C_Azerbaiy%C3%A1n%2C_2016-09-28%2C_DD_24.jpg/500px-Palacio_de_los_Shirvanshah%2C_Baku%2C_Azerbaiy%C3%A1n%2C_2016-09-28%2C_DD_24.jpg",
+      "width": 500,
+      "height": 342,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_los_Shirvanshah,_Baku,_Azerbaiy%C3%A1n,_2016-09-28,_DD_24.jpg",
+      "fullWidth": 8199
+     },
+     "description": "Bakü'deki Şirvanşahlar Sarayı avlusundaki tarihi cami"
     },
     {
      "id": "wikidata/Q12842223",
@@ -562,7 +980,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Molla_Ahmed_Mosque_%28Ichery_Sheher%29.JPG/500px-Molla_Ahmed_Mosque_%28Ichery_Sheher%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Interfase",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Molla_Ahmed_Mosque_(Ichery_Sheher).JPG",
+      "fullWidth": 3456
+     },
+     "description": "A mosque and historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "way/299450010",
@@ -577,7 +1006,18 @@
       "hotel",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Multani_Caravanserai_and_Bukhara_Caravanserai.JPG/500px-Multani_Caravanserai_and_Bukhara_Caravanserai.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Interfase",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Multani_Caravanserai_and_Bukhara_Caravanserai.JPG",
+      "fullWidth": 3456
+     },
+     "description": "A caravanserai and historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "node/3812557465",
@@ -589,7 +1029,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/M%C3%BCq%C9%99dd%C9%99s_M%C3%BCrda%C5%9F%C4%B1yan_Z%C9%99n%C9%99nl%C9%99r_Kafedral%C4%B1.jpg/500px-M%C3%BCq%C9%99dd%C9%99s_M%C3%BCrda%C5%9F%C4%B1yan_Z%C9%99n%C9%99nl%C9%99r_Kafedral%C4%B1.jpg",
+      "width": 500,
+      "height": 563,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCq%C9%99dd%C9%99s_M%C3%BCrda%C5%9F%C4%B1yan_Z%C9%99n%C9%99nl%C9%99r_Kafedral%C4%B1.jpg",
+      "fullWidth": 3191
+     },
+     "description": "church in Azerbaijan"
     },
     {
      "id": "wikidata/Q4155891",
@@ -601,7 +1052,18 @@
      "wikidataId": "Q4155891",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Palace_of_Happiness.JPG/500px-Palace_of_Happiness.JPG",
+      "width": 500,
+      "height": 637,
+      "author": "Urek Meniashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palace_of_Happiness.JPG",
+      "fullWidth": 3159
+     },
+     "description": "building in Istiglaliyyat St. , Azerbaijan"
     },
     {
      "id": "wikidata/Q16415094",
@@ -615,7 +1077,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Cin_m%C9%99scidinin_daxili_%281%29.JPG/500px-Cin_m%C9%99scidinin_daxili_%281%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cin_m%C9%99scidinin_daxili_(1).JPG",
+      "fullWidth": 4608
+     },
+     "description": "A mosque and historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "wikidata/Q20570921",
@@ -629,7 +1102,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/%22%C4%B0mam_H%C3%BCseyn%22_m%C9%99scidi_%282024%29_1.jpg/500px-%22%C4%B0mam_H%C3%BCseyn%22_m%C9%99scidi_%282024%29_1.jpg",
+      "width": 500,
+      "height": 812,
+      "author": "Rəcəb Yaxşı",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%22%C4%B0mam_H%C3%BCseyn%22_m%C9%99scidi_(2024)_1.jpg",
+      "fullWidth": 1908
+     },
+     "description": "mosque in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q13668719",
@@ -642,7 +1126,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Martyrs%27_Mosque_in_Baku_01.jpg/500px-Martyrs%27_Mosque_in_Baku_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bernard Gagnon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Martyrs%27_Mosque_in_Baku_01.jpg",
+      "fullWidth": 5094
+     },
+     "description": "Bakü'de bir camii"
     },
     {
      "id": "wikidata/Q2790637",
@@ -654,7 +1149,18 @@
      "wikidataId": "Q2790637",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Nizami_G%C9%99nc%C9%99vinin_Bak%C4%B1dak%C4%B1_heyk%C9%99li.JPG/500px-Nizami_G%C9%99nc%C9%99vinin_Bak%C4%B1dak%C4%B1_heyk%C9%99li.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nizami_G%C9%99nc%C9%99vinin_Bak%C4%B1dak%C4%B1_heyk%C9%99li.JPG",
+      "fullWidth": 3456
+     },
+     "description": "monument in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q19799928",
@@ -667,7 +1173,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/%C4%B0%C3%A7%C9%99ri%C5%9F%C9%99h%C9%99rd%C9%99_t%C9%99ky%C9%99.JPG/500px-%C4%B0%C3%A7%C9%99ri%C5%9F%C9%99h%C9%99rd%C9%99_t%C9%99ky%C9%99.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Urmen19",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C4%B0%C3%A7%C9%99ri%C5%9F%C9%99h%C9%99rd%C9%99_t%C9%99ky%C9%99.JPG",
+      "fullWidth": 4752
+     },
+     "description": "A historical architectural monument located in Baku, Azerbaijan."
     },
     {
      "id": "wikidata/Q2559447",
@@ -676,7 +1193,8 @@
      "lat": 40.36083,
      "lon": 49.835,
      "wikipediaCount": 12,
-     "wikidataId": "Q2559447"
+     "wikidataId": "Q2559447",
+     "description": "Music center aiming to preserve mugham genre"
     }
    ]
   },
@@ -695,7 +1213,18 @@
      "wikidataId": "Q338889",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Azerbaigian-baku3.jpg/500px-Azerbaigian-baku3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bruno Girin",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Azerbaigian-baku3.jpg",
+      "fullWidth": 1280
+     },
+     "description": "Azerbaycan'ın Bakü kentinde tarihi saray"
     },
     {
      "id": "node/3031326886",
@@ -708,7 +1237,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Palace_of_De_Bur.JPG/500px-Palace_of_De_Bur.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Urek Meniashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palace_of_De_Bur.JPG",
+      "fullWidth": 4752
+     },
+     "description": "аrt museum in Baku"
     },
     {
      "id": "node/4618962458",
@@ -723,7 +1263,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ta%C4%9F%C4%B1yevin_saray%C4%B1_2020.jpg/500px-Ta%C4%9F%C4%B1yevin_saray%C4%B1_2020.jpg",
+      "width": 500,
+      "height": 414,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ta%C4%9F%C4%B1yevin_saray%C4%B1_2020.jpg",
+      "fullWidth": 2910
+     },
+     "description": "museum in Baku, Azerbaijan"
     },
     {
      "id": "way/253082269",
@@ -737,7 +1288,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Az%C9%99rbaycan_xal%C3%A7a_muzeyi.jpg/500px-Az%C9%99rbaycan_xal%C3%A7a_muzeyi.jpg",
+      "width": 500,
+      "height": 289,
+      "author": "Presidential Press and Information Office",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Az%C9%99rbaycan_xal%C3%A7a_muzeyi.jpg",
+      "fullWidth": 2362
+     },
+     "description": "art museum"
     },
     {
      "id": "way/195589273",
@@ -752,7 +1314,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Railway_Museum_in_Baku.jpg/500px-Railway_Museum_in_Baku.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Simplellali",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Railway_Museum_in_Baku.jpg",
+      "fullWidth": 6720
+     },
+     "description": "Bakü'de demiryolu müzesi"
     },
     {
      "id": "node/4356471292",
@@ -764,7 +1337,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Outside_-_panoramio.jpg/500px-Outside_-_panoramio.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "M. PINARCI",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Outside_-_panoramio.jpg",
+      "fullWidth": 2592
+     },
+     "description": "modern or contemporary art museum in Baku, Azerbaijan"
     },
     {
      "id": "node/4427698089",
@@ -777,7 +1361,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Outside_the_museum_of_miniature_books.jpg/500px-Outside_the_museum_of_miniature_books.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "shankar s.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Outside_the_museum_of_miniature_books.jpg",
+      "fullWidth": 4608
+     },
+     "description": "book Museum in Baku, Azerbaijan"
     },
     {
      "id": "node/4452302341",
@@ -790,7 +1385,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Nizami_G%C9%99nc%C9%99vi_ad%C4%B1na_Az%C9%99rbaycan_%C6%8Fd%C9%99biyyat_Muzeyi_2015.jpg/500px-Nizami_G%C9%99nc%C9%99vi_ad%C4%B1na_Az%C9%99rbaycan_%C6%8Fd%C9%99biyyat_Muzeyi_2015.jpg",
+      "width": 500,
+      "height": 256,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nizami_G%C9%99nc%C9%99vi_ad%C4%B1na_Az%C9%99rbaycan_%C6%8Fd%C9%99biyyat_Muzeyi_2015.jpg",
+      "fullWidth": 3876
+     },
+     "description": "museum in Baku"
     },
     {
      "id": "wikidata/Q16416097",
@@ -803,7 +1409,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Ya%C5%9Fay%C4%B1%C5%9F_evi%2C_B%C3%B6y%C3%BCk_Qala_k%C3%BC%C3%A7._42.jpg/500px-Ya%C5%9Fay%C4%B1%C5%9F_evi%2C_B%C3%B6y%C3%BCk_Qala_k%C3%BC%C3%A7._42.jpg",
+      "width": 500,
+      "height": 434,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ya%C5%9Fay%C4%B1%C5%9F_evi,_B%C3%B6y%C3%BCk_Qala_k%C3%BC%C3%A7._42.jpg",
+      "fullWidth": 3982
+     },
+     "description": "museum in Azerbaijan"
     },
     {
      "id": "wikidata/Q4306396",
@@ -816,7 +1433,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Az%C9%99rbaycan_%C4%B0stiqlal_Muzeyi.jpg/500px-Az%C9%99rbaycan_%C4%B0stiqlal_Muzeyi.jpg",
+      "width": 500,
+      "height": 269,
+      "author": "Tərxan Paşazadə",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Az%C9%99rbaycan_%C4%B0stiqlal_Muzeyi.jpg",
+      "fullWidth": 2692
+     },
+     "description": "museum in Baku, Azerbaijan"
     },
     {
      "id": "wikidata/Q12836447",
@@ -829,7 +1457,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Azerbaijan"
     },
     {
      "id": "wikidata/Q4058262",
@@ -842,7 +1471,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Az%C9%99rbaycan_Musiqi_M%C9%99d%C9%99niyy%C9%99ti_D%C3%B6vl%C9%99t_Muzeyi.jpg/500px-Az%C9%99rbaycan_Musiqi_M%C9%99d%C9%99niyy%C9%99ti_D%C3%B6vl%C9%99t_Muzeyi.jpg",
+      "width": 500,
+      "height": 240,
+      "author": "Tərxan Paşazadə",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Az%C9%99rbaycan_Musiqi_M%C9%99d%C9%99niyy%C9%99ti_D%C3%B6vl%C9%99t_Muzeyi.jpg",
+      "fullWidth": 2491
+     },
+     "description": "state museum in Azerbaijan"
     },
     {
      "id": "wikidata/Q12838332",
@@ -856,7 +1496,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/C%C9%99lil_M%C9%99mm%C9%99dquluzad%C9%99nin_Ev_Muzeyi_-_2.jpg/500px-C%C9%99lil_M%C9%99mm%C9%99dquluzad%C9%99nin_Ev_Muzeyi_-_2.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Tərxan Paşazadə",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:C%C9%99lil_M%C9%99mm%C9%99dquluzad%C9%99nin_Ev_Muzeyi_-_2.jpg",
+      "fullWidth": 3328
+     },
+     "description": "museum in Azerbaijan"
     },
     {
      "id": "node/5268555852",
@@ -869,7 +1520,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/House-museum_of_Uzeyir_Hajibeyov.jpg/500px-House-museum_of_Uzeyir_Hajibeyov.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Interfase",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:House-museum_of_Uzeyir_Hajibeyov.jpg",
+      "fullWidth": 3264
+     },
+     "description": "Bakü'de müze"
     },
     {
      "id": "node/4428061589",
@@ -881,7 +1543,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/3-c%C3%BC_%C6%8Ff%C9%99ndiyev_1_%281%29.JPG/500px-3-c%C3%BC_%C6%8Ff%C9%99ndiyev_1_%281%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Samral",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:3-c%C3%BC_%C6%8Ff%C9%99ndiyev_1_(1).JPG",
+      "fullWidth": 3456
+     }
     },
     {
      "id": "way/25359715",
@@ -894,7 +1566,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Sabayil%2C_Baku%2C_Azerbaijan_-_panoramio_%28131%29.jpg/500px-Sabayil%2C_Baku%2C_Azerbaijan_-_panoramio_%28131%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Marco Monelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sabayil,_Baku,_Azerbaijan_-_panoramio_(131).jpg",
+      "fullWidth": 4160
+     },
+     "description": "museum centre in Baku, Azerbaijan"
     },
     {
      "id": "way/694786373",
@@ -905,7 +1588,18 @@
      "wikidataId": "Q65275361",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/%C4%B0%C3%A7%C9%99ri%C5%9F%C9%99h%C9%99rd%C9%99ki_Yeralt%C4%B1_hamam_b%C9%99rpa_v%C9%99_konservasiya_i%C5%9Fl%C9%99rind%C9%99n_sonra.jpg/500px-%C4%B0%C3%A7%C9%99ri%C5%9F%C9%99h%C9%99rd%C9%99ki_Yeralt%C4%B1_hamam_b%C9%99rpa_v%C9%99_konservasiya_i%C5%9Fl%C9%99rind%C9%99n_sonra.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sefer azeri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C4%B0%C3%A7%C9%99ri%C5%9F%C9%99h%C9%99rd%C9%99ki_Yeralt%C4%B1_hamam_b%C9%99rpa_v%C9%99_konservasiya_i%C5%9Fl%C9%99rind%C9%99n_sonra.jpg",
+      "fullWidth": 5184
+     },
+     "description": "hammam in Baku, Azerbaijan"
     },
     {
      "id": "node/3031326885",
@@ -930,7 +1624,17 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Maestro_Niyazinin_ev_muzeyi_%284%29.jpg/500px-Maestro_Niyazinin_ev_muzeyi_%284%29.jpg",
+      "width": 500,
+      "height": 271,
+      "author": "Rəcəb Yaxşı",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maestro_Niyazinin_ev_muzeyi_(4).jpg",
+      "fullWidth": 3383
+     }
     },
     {
      "id": "node/4618962459",

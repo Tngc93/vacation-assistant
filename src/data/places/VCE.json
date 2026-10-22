@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "VCE",
- "fetchedAt": "2026-10-18T16:00:12.599Z",
+ "fetchedAt": "2026-10-22T05:11:22.693Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Venice_-_St._Marc%27s_Basilica_01.jpg/500px-Venice_-_St._Marc%27s_Basilica_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nino Barbieri",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Venice_-_St._Marc%27s_Basilica_01.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Bazilika"
     },
     {
      "id": "way/138803915",
@@ -69,7 +80,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/%28Venice%29_Doge%27s_Palace_facing_the_sea.jpg/500px-%28Venice%29_Doge%27s_Palace_facing_the_sea.jpg",
+      "width": 500,
+      "height": 306,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:(Venice)_Doge%27s_Palace_facing_the_sea.jpg",
+      "fullWidth": 8280
+     },
+     "description": "İtalya'da saray"
     },
     {
      "id": "relation/2289364",
@@ -80,7 +102,18 @@
      "wikidataId": "Q52505",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Rialto_2025_4.jpg/500px-Rialto_2025_4.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rialto_2025_4.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Venedik, İtalya'da bulunan bir taş köprü"
     },
     {
      "id": "wikidata/Q309243",
@@ -89,7 +122,18 @@
      "lat": 45.44222,
      "lon": 12.32639,
      "wikipediaCount": 50,
-     "wikidataId": "Q309243"
+     "wikidataId": "Q309243",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Panorama_of_Canal_Grande_and_Ponte_di_Rialto%2C_Venice_-_September_2017.jpg/500px-Panorama_of_Canal_Grande_and_Ponte_di_Rialto%2C_Venice_-_September_2017.jpg",
+      "width": 500,
+      "height": 222,
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg",
+      "fullWidth": 5387
+     },
+     "description": "canal and major water-traffic corridor in Venice, Italy"
     },
     {
      "id": "way/172349507",
@@ -100,7 +144,18 @@
      "wikidataId": "Q217527",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg/500px-Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg",
+      "width": 500,
+      "height": 360,
+      "author": "Matthias Süßen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_San_Marco_(Venice)_at_night-msu-2021-6449-.jpg",
+      "fullWidth": 4984
+     },
+     "description": "square in Venice, Italy"
     },
     {
      "id": "way/138803225",
@@ -111,7 +166,18 @@
      "wikidataId": "Q52517",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Antonio_Contin_-_Ponte_dei_sospiri_%28Venice%29.jpg/500px-Antonio_Contin_-_Ponte_dei_sospiri_%28Venice%29.jpg",
+      "width": 500,
+      "height": 319,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Antonio_Contin_-_Ponte_dei_sospiri_(Venice).jpg",
+      "fullWidth": 5958
+     },
+     "description": "Venedik'te 1603 yılında yapılmış bir köprü"
     },
     {
      "id": "way/138801509",
@@ -123,7 +189,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Santa_Maria_della_Salute_from_Hotel_Monaco.jpg/500px-Santa_Maria_della_Salute_from_Hotel_Monaco.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_della_Salute_from_Hotel_Monaco.jpg",
+      "fullWidth": 3973
+     },
+     "description": "church in Venice, Italy"
     },
     {
      "id": "node/251501878",
@@ -139,7 +216,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Teatro_La_Fenice_%28Venice%29_-_Facade.jpg/500px-Teatro_La_Fenice_%28Venice%29_-_Facade.jpg",
+      "width": 500,
+      "height": 475,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_La_Fenice_(Venice)_-_Facade.jpg",
+      "fullWidth": 6556
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "way/206333242",
@@ -154,7 +242,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Libreria_Marciana_Venezia_sera.jpg/500px-Libreria_Marciana_Venezia_sera.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Libreria_Marciana_Venezia_sera.jpg",
+      "fullWidth": 6500
+     },
+     "description": "library in Venice, Italy"
     },
     {
      "id": "way/252637693",
@@ -166,7 +265,18 @@
      "wikidataId": "Q754194",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg/500px-Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg",
+      "width": 500,
+      "height": 779,
+      "author": "Orlando Paride",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg",
+      "fullWidth": 5889
+     },
+     "description": "bell tower of St Mark's Basilica in Venice, Italy"
     },
     {
      "id": "node/2189685759",
@@ -183,7 +293,18 @@
       "organization",
       "port",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Arsenal_-_Venice%2C_Italy_-_panoramio.jpg/500px-Arsenal_-_Venice%2C_Italy_-_panoramio.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "Sergey Ashmarin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arsenal_-_Venice,_Italy_-_panoramio.jpg",
+      "fullWidth": 2599
+     },
+     "description": "complex of former shipyards and armories in Venice, Italy"
     },
     {
      "id": "way/138841819",
@@ -197,7 +318,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Facade_of_Santa_Maria_Gloriosa_dei_Frari_%28Venice%29.jpg/500px-Facade_of_Santa_Maria_Gloriosa_dei_Frari_%28Venice%29.jpg",
+      "width": 500,
+      "height": 458,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Facade_of_Santa_Maria_Gloriosa_dei_Frari_(Venice).jpg",
+      "fullWidth": 5386
+     },
+     "description": "church in Venice"
     },
     {
      "id": "way/154856677",
@@ -208,7 +340,18 @@
      "wikidataId": "Q830807",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Chiesa_del_Redentore_%28Venice%29.jpg/500px-Chiesa_del_Redentore_%28Venice%29.jpg",
+      "width": 500,
+      "height": 388,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_del_Redentore_(Venice).jpg",
+      "fullWidth": 4246
+     },
+     "description": "Roman Catholic church in Venice, Italy"
     },
     {
      "id": "way/138804537",
@@ -221,7 +364,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Basilica_di_San_Giorgio_Maggiore_%28Venice%29.jpg/500px-Basilica_di_San_Giorgio_Maggiore_%28Venice%29.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Giorgio_Maggiore_(Venice).jpg",
+      "fullWidth": 2587
+     },
+     "description": "basilica on the Island of San Giorgio Maggiore in Venice"
     },
     {
      "id": "wikidata/Q52509",
@@ -233,7 +387,18 @@
      "wikidataId": "Q52509",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Ponte_dell%27Accademia_Venezia.jpg/500px-Ponte_dell%27Accademia_Venezia.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_dell%27Accademia_Venezia.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Venedik'te bir köprü"
     },
     {
      "id": "wikidata/Q957551",
@@ -245,7 +410,18 @@
      "wikidataId": "Q957551",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/%28Venice%29_Ca%27_Foscari.jpg/500px-%28Venice%29_Ca%27_Foscari.jpg",
+      "width": 500,
+      "height": 493,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:(Venice)_Ca%27_Foscari.jpg",
+      "fullWidth": 9824
+     },
+     "description": "palace in Venice"
     },
     {
      "id": "way/153483298",
@@ -258,7 +434,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Basilica_dei_Santi_Giovanni_e_Paolo.jpg/500px-Basilica_dei_Santi_Giovanni_e_Paolo.jpg",
+      "width": 500,
+      "height": 384,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_dei_Santi_Giovanni_e_Paolo.jpg",
+      "fullWidth": 5116
+     },
+     "description": "church in Venice, Italy"
     },
     {
      "id": "way/162035005",
@@ -270,7 +457,18 @@
      "wikidataId": "Q794876",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Chiesa_di_San_Zaccaria_Venezia.jpg/500px-Chiesa_di_San_Zaccaria_Venezia.jpg",
+      "width": 500,
+      "height": 794,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Zaccaria_Venezia.jpg",
+      "fullWidth": 3446
+     },
+     "description": "church in Venice"
     },
     {
      "id": "node/13195470201",
@@ -279,7 +477,18 @@
      "lon": 12.32684,
      "website": "https://www.ghettovenezia.com/",
      "wikipediaCount": 24,
-     "wikidataId": "Q649030"
+     "wikidataId": "Q649030",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Venetian_Ghetto_from_above.jpg/500px-Venetian_Ghetto_from_above.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "San Marco Venice",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Venetian_Ghetto_from_above.jpg",
+      "fullWidth": 1280
+     },
+     "description": "İtalya'da ada"
     },
     {
      "id": "wikidata/Q52501",
@@ -290,7 +499,18 @@
      "wikidataId": "Q52501",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Ponte_della_Costituzione.JPG/500px-Ponte_della_Costituzione.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Christoph Radtke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_della_Costituzione.JPG",
+      "fullWidth": 2048
+     },
+     "description": "bridge in Venice, Italy"
     },
     {
      "id": "way/138800840",
@@ -302,7 +522,18 @@
      "wikidataId": "Q533680",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Santa_Maria_dei_Miracoli_%28facciata%29.jpg/500px-Santa_Maria_dei_Miracoli_%28facciata%29.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_dei_Miracoli_(facciata).jpg",
+      "fullWidth": 3056
+     },
+     "description": "church in Cannaregio, Venice"
     },
     {
      "id": "wikidata/Q1052167",
@@ -310,7 +541,18 @@
      "lat": 45.43965,
      "lon": 12.33584,
      "wikipediaCount": 21,
-     "wikidataId": "Q1052167"
+     "wikidataId": "Q1052167",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Ca%27da_Mosto_e_gondola_sul_Canal_Grande_Venezia.jpg/500px-Ca%27da_Mosto_e_gondola_sul_Canal_Grande_Venezia.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27da_Mosto_e_gondola_sul_Canal_Grande_Venezia.jpg",
+      "fullWidth": 4912
+     },
+     "description": "palace in Venice, Italy"
     },
     {
      "id": "wikidata/Q960610",
@@ -322,7 +564,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "coffeehouse in San Marco, Italy"
     },
     {
      "id": "way/410344943",
@@ -336,7 +579,18 @@
       "museum",
       "organization",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/St_Mark%27s_Clocktower_2.jpg/500px-St_Mark%27s_Clocktower_2.jpg",
+      "width": 500,
+      "height": 548,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Mark%27s_Clocktower_2.jpg",
+      "fullWidth": 4600
+     },
+     "description": "clock tower on piazza San Marco, Venice, Italy"
     },
     {
      "id": "wikidata/Q182708",
@@ -350,7 +604,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Fondaco_dei_Turchi.jpg/500px-Fondaco_dei_Turchi.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fondaco_dei_Turchi.jpg",
+      "fullWidth": 5876
+     },
+     "description": "historical building in Venice"
     },
     {
      "id": "wikidata/Q1259067",
@@ -358,7 +623,18 @@
      "lat": 45.43824,
      "lon": 12.33673,
      "wikipediaCount": 20,
-     "wikidataId": "Q1259067"
+     "wikidataId": "Q1259067",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Fontego_dei_Tedeschi_Venedig.jpg/500px-Fontego_dei_Tedeschi_Venedig.jpg",
+      "width": 500,
+      "height": 352,
+      "author": "Freddo213",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fontego_dei_Tedeschi_Venedig.jpg",
+      "fullWidth": 4024
+     },
+     "description": "palace in Venice"
     },
     {
      "id": "wikidata/Q1265593",
@@ -369,7 +645,18 @@
      "wikidataId": "Q1265593",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Ca%27_Vendramin_Calergi.jpg/500px-Ca%27_Vendramin_Calergi.jpg",
+      "width": 500,
+      "height": 413,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27_Vendramin_Calergi.jpg",
+      "fullWidth": 6048
+     },
+     "description": "15th-century Venetian palace"
     },
     {
      "id": "wikidata/Q861436",
@@ -380,7 +667,18 @@
      "wikidataId": "Q861436",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Madonna_dell%27Orto.jpg/500px-Madonna_dell%27Orto.jpg",
+      "width": 500,
+      "height": 609,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madonna_dell%27Orto.jpg",
+      "fullWidth": 3740
+     },
+     "description": "church in Venice, Italy"
     },
     {
      "id": "wikidata/Q922677",
@@ -391,7 +689,18 @@
      "wikidataId": "Q922677",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/San_Giacomo_di_Rialto_%28Facade%29.jpg/500px-San_Giacomo_di_Rialto_%28Facade%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giacomo_di_Rialto_(Facade).jpg",
+      "fullWidth": 4592
+     },
+     "description": "church in Venice, Italy"
     },
     {
      "id": "wikidata/Q1028202",
@@ -402,7 +711,18 @@
      "wikidataId": "Q1028202",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Chiesa_di_San_Salvador.jpg/500px-Chiesa_di_San_Salvador.jpg",
+      "width": 500,
+      "height": 680,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Salvador.jpg",
+      "fullWidth": 4024
+     },
+     "description": "church in San Marco, Venice"
     },
     {
      "id": "wikidata/Q1816328",
@@ -417,7 +737,18 @@
       "religious",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Ospedale_della_Piet%C3%A0.jpg",
+      "width": 500,
+      "height": 609,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ospedale_della_Piet%C3%A0.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ospedale_della_Piet%C3%A0.jpg",
+      "fullWidth": 375
+     },
+     "description": "convent, orphanage, and music school in Venice"
     },
     {
      "id": "wikidata/Q946542",
@@ -428,7 +759,18 @@
      "wikidataId": "Q946542",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/San_Francesco_della_vigna.jpg/500px-San_Francesco_della_vigna.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Francesco_della_vigna.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Roman Catholic church in the Sestiere of Castello in Venice, Italy"
     },
     {
      "id": "wikidata/Q748689",
@@ -439,7 +781,18 @@
      "wikidataId": "Q748689",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Chiesa_degli_Scalzi_1_%287227498868%29-edit.jpg/500px-Chiesa_degli_Scalzi_1_%287227498868%29-edit.jpg",
+      "width": 500,
+      "height": 579,
+      "author": "Tony Hisgett , edited by MenkinAlRire (upright, centered, col.aberration, sharpness, brightness)",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_degli_Scalzi_1_(7227498868)-edit.jpg",
+      "fullWidth": 2992
+     },
+     "description": "church in Venice"
     },
     {
      "id": "wikidata/Q974832",
@@ -452,7 +805,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Campo_Santo_Stefano_%28Venice%29.jpg/500px-Campo_Santo_Stefano_%28Venice%29.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Campo_Santo_Stefano_(Venice).jpg",
+      "fullWidth": 7020
+     },
+     "description": "church in venice"
     },
     {
      "id": "wikidata/Q52508",
@@ -464,7 +828,18 @@
      "wikidataId": "Q52508",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ponte_degli_Scalzi_%28Venice%29.jpg/500px-Ponte_degli_Scalzi_%28Venice%29.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_degli_Scalzi_(Venice).jpg",
+      "fullWidth": 7277
+     },
+     "description": "bridge in Venice"
     },
     {
      "id": "way/118714648",
@@ -477,7 +852,18 @@
      "wikidataId": "Q1093909",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Venezia_Gesuati_R01.jpg/500px-Venezia_Gesuati_R01.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "Marc Ryckaert ( MJJR )",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Venezia_Gesuati_R01.jpg",
+      "fullWidth": 4835
+     },
+     "description": "Venetian church"
     },
     {
      "id": "way/138804072",
@@ -488,7 +874,18 @@
      "wikidataId": "Q1068131",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/San_Moise_%28Venice%29.jpg/500px-San_Moise_%28Venice%29.jpg",
+      "width": 500,
+      "height": 466,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Moise_(Venice).jpg",
+      "fullWidth": 6829
+     },
+     "description": "church in Venice"
     },
     {
      "id": "wikidata/Q2936058",
@@ -496,7 +893,18 @@
      "lat": 45.42731,
      "lon": 12.32898,
      "wikipediaCount": 17,
-     "wikidataId": "Q2936058"
+     "wikidataId": "Q2936058",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/0_Venise%2C_le_Canal_de_la_Guidecca_vu_du_campanile_de_San_Giorgio_Maggiore.JPG/500px-0_Venise%2C_le_Canal_de_la_Guidecca_vu_du_campanile_de_San_Giorgio_Maggiore.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Jean-Pol GRANDMONT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0_Venise,_le_Canal_de_la_Guidecca_vu_du_campanile_de_San_Giorgio_Maggiore.JPG",
+      "fullWidth": 4776
+     },
+     "description": "canal in Venice, Italy"
     },
     {
      "id": "wikidata/Q1586965",
@@ -508,7 +916,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Venice%2C_Harry%27s_Bar%2C_San_Marco.jpg/500px-Italy_-_Venice%2C_Harry%27s_Bar%2C_San_Marco.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Felix Haslimeier from Edinburgh, Scotland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Italy_-_Venice,_Harry%27s_Bar,_San_Marco.jpg",
+      "fullWidth": 3264
+     },
+     "description": "restaurant in Venice, Italy"
     },
     {
      "id": "wikidata/Q1784082",
@@ -519,7 +938,18 @@
      "wikidataId": "Q1784082",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Chiesa_di_S.Giorgio_dei_Greci.jpg/500px-Chiesa_di_S.Giorgio_dei_Greci.jpg",
+      "width": 500,
+      "height": 686,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_S.Giorgio_dei_Greci.jpg",
+      "fullWidth": 4032
+     },
+     "description": "church in Venice"
     },
     {
      "id": "wikidata/Q473237",
@@ -530,7 +960,18 @@
      "wikidataId": "Q473237",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg/500px-Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg",
+      "width": 500,
+      "height": 448,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg",
+      "fullWidth": 4468
+     },
+     "description": "sculpture by Andrea del Verrocchio in Venice, Italy"
     },
     {
      "id": "way/138804512",
@@ -541,7 +982,18 @@
      "wikidataId": "Q1813687",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Santa_Maria_Formosa_Facciata_e_campanile.jpg/500px-Santa_Maria_Formosa_Facciata_e_campanile.jpg",
+      "width": 500,
+      "height": 428,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_Formosa_Facciata_e_campanile.jpg",
+      "fullWidth": 4707
+     },
+     "description": "church in Venice, Italy"
     },
     {
      "id": "wikidata/Q169575",
@@ -553,16 +1005,18 @@
      "wikidataId": "Q169575",
      "kinds": [
       "organization"
-     ]
-    },
-    {
-     "id": "wikidata/Q934025",
-     "name": "Cavalli-Franchetti Sarayı",
-     "localName": "Palazzo Cavalli-Franchetti",
-     "lat": 45.43172,
-     "lon": 12.32961,
-     "wikipediaCount": 15,
-     "wikidataId": "Q934025"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/La_Zecca_Venice.jpg/500px-La_Zecca_Venice.jpg",
+      "width": 500,
+      "height": 437,
+      "author": "Abxbay",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Zecca_Venice.jpg",
+      "fullWidth": 4204
+     },
+     "description": "16th century building in Venice"
     }
    ]
   },
@@ -584,7 +1038,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Accademia_%28Venice%29.jpg/500px-Accademia_%28Venice%29.jpg",
+      "width": 500,
+      "height": 452,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Accademia_(Venice).jpg",
+      "fullWidth": 3171
+     },
+     "description": "Art museum in Venice, Italy"
     },
     {
      "id": "way/162227289",
@@ -599,7 +1064,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Ca%27_d%27Oro_facciata.jpg/500px-Ca%27_d%27Oro_facciata.jpg",
+      "width": 500,
+      "height": 439,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27_d%27Oro_facciata.jpg",
+      "fullWidth": 4272
+     },
+     "description": "palace and art gallery in Venice, Italy"
     },
     {
      "id": "relation/2382783",
@@ -613,7 +1089,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg/500px-Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg",
+      "width": 500,
+      "height": 370,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg",
+      "fullWidth": 6632
+     },
+     "description": "palace and museum in Venice, Italy"
     },
     {
      "id": "relation/1927025",
@@ -630,7 +1117,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Ca%27_Rezzonico_%28Venice%29.jpg/500px-Ca%27_Rezzonico_%28Venice%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_(Venice).jpg",
+      "fullWidth": 5904
+     },
+     "description": "palazzo and art museum in Venice, Italy"
     },
     {
      "id": "node/5366368715",
@@ -645,7 +1143,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Pal_Venier_dei_Leone.jpg/500px-Pal_Venier_dei_Leone.jpg",
+      "width": 500,
+      "height": 329,
+      "author": "Abxbay",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pal_Venier_dei_Leone.jpg",
+      "fullWidth": 3767
+     },
+     "description": "modern art museum on the Grand Canal in Venice"
     },
     {
      "id": "way/173619525",
@@ -659,7 +1168,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Palais_Grassi.jpg/500px-Palais_Grassi.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Grassi.jpg",
+      "fullWidth": 9120
+     },
+     "description": "palace and museum of arts on the Grand Canal, Venice"
     },
     {
      "id": "node/4121738102",
@@ -673,7 +1193,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum"
     },
     {
      "id": "way/138843143",
@@ -687,7 +1208,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Scuola_Grande_di_San_Rocco_%28Venice%29.jpg/500px-Scuola_Grande_di_San_Rocco_%28Venice%29.jpg",
+      "width": 500,
+      "height": 405,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Scuola_Grande_di_San_Rocco_(Venice).jpg",
+      "fullWidth": 7360
+     },
+     "description": "building in Venice, northern Italy"
     },
     {
      "id": "relation/2317795",
@@ -700,7 +1232,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/0_Venise%2C_Canal_della_Giudecca%2C_Dogana%2C_Santa._Maria_della_Salute_et_Canal_Grande.JPG/500px-0_Venise%2C_Canal_della_Giudecca%2C_Dogana%2C_Santa._Maria_della_Salute_et_Canal_Grande.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "Jean-Pol GRANDMONT",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0_Venise,_Canal_della_Giudecca,_Dogana,_Santa._Maria_della_Salute_et_Canal_Grande.JPG",
+      "fullWidth": 5166
+     },
+     "description": "the triangular point where the Grand Canal meets the Giudecca Canal, its buildings, and the art gallery at the triangle's tip"
     },
     {
      "id": "way/314636453",
@@ -712,7 +1255,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Chiesa_di_San_Giorgio_degli_Schiavoni.jpg/500px-Chiesa_di_San_Giorgio_degli_Schiavoni.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Giorgio_degli_Schiavoni.jpg",
+      "fullWidth": 2124
+     },
+     "description": "historical scuola (confraternity house), now art gallery, in Venice, Italy"
     },
     {
      "id": "node/3158707594",
@@ -727,7 +1281,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Fondaco_dei_Turchi.jpg/500px-Fondaco_dei_Turchi.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fondaco_dei_Turchi.jpg",
+      "fullWidth": 5876
+     },
+     "description": "Italian museum"
     },
     {
      "id": "way/138802715",
@@ -740,7 +1305,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/6224_-_Venezia_-_Museo_navale_-_Foto_Giovanni_Dall%27Orto_3-Aug-2007.jpg/500px-6224_-_Venezia_-_Museo_navale_-_Foto_Giovanni_Dall%27Orto_3-Aug-2007.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "G.dallorto",
+      "license": "CC BY-SA 2.5 it",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/it/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:6224_-_Venezia_-_Museo_navale_-_Foto_Giovanni_Dall%27Orto_3-Aug-2007.jpg",
+      "fullWidth": 2048
+     },
+     "description": "maritime museum in Venice, Italy"
     },
     {
      "id": "relation/2317696",
@@ -757,7 +1333,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Palazzo_grimani_di_s.m._formosa%2C_ingresso_attr._al_sanmichelio_con_tre_busti_romani.jpg/500px-Palazzo_grimani_di_s.m._formosa%2C_ingresso_attr._al_sanmichelio_con_tre_busti_romani.jpg",
+      "width": 500,
+      "height": 799,
+      "author": "Sailko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_grimani_di_s.m._formosa,_ingresso_attr._al_sanmichelio_con_tre_busti_romani.jpg",
+      "fullWidth": 2712
+     },
+     "description": "İtalya'da saray"
     },
     {
      "id": "node/4330799289",
@@ -771,7 +1358,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Casa_goldoni%2C_01.jpg/500px-Casa_goldoni%2C_01.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_goldoni,_01.jpg",
+      "fullWidth": 2304
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/4121738103",
@@ -800,7 +1398,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Palazzo_Querini_Stampalia_%28Venice%29.jpg/500px-Palazzo_Querini_Stampalia_%28Venice%29.jpg",
+      "width": 500,
+      "height": 418,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Querini_Stampalia_(Venice).jpg",
+      "fullWidth": 6800
+     },
+     "description": "cultural institution in Venice"
     },
     {
      "id": "node/4479285990",
@@ -816,7 +1425,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/%28Venice%29_Mocenigo_Palace-Museum_seen_from_Ca%27_Pesaro.jpg/500px-%28Venice%29_Mocenigo_Palace-Museum_seen_from_Ca%27_Pesaro.jpg",
+      "width": 500,
+      "height": 249,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:(Venice)_Mocenigo_Palace-Museum_seen_from_Ca%27_Pesaro.jpg",
+      "fullWidth": 7898
+     },
+     "description": "palazzo in the sestiere of Santa Croce in Venice, Italy; it is now a museum of fabrics and costumes"
     },
     {
      "id": "way/138842976",
@@ -828,7 +1448,18 @@
      "wikidataId": "Q16586218",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/CANAL_GRANDE_-_palazzo_loredan_cini.jpg/500px-CANAL_GRANDE_-_palazzo_loredan_cini.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Abxbay",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CANAL_GRANDE_-_palazzo_loredan_cini.jpg",
+      "fullWidth": 3672
+     },
+     "description": "palace along the Canal Grande, Venice"
     },
     {
      "id": "node/2205844954",
@@ -841,7 +1472,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/VeniceSantApolloniaCloister.jpg/500px-VeniceSantApolloniaCloister.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Andreas Tille",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:VeniceSantApolloniaCloister.jpg",
+      "fullWidth": 3031
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/250421435",
@@ -854,7 +1496,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Museoebraicove.baldari.museo_entrata_.jpg/500px-Museoebraicove.baldari.museo_entrata_.jpg",
+      "width": 500,
+      "height": 755,
+      "author": "Roberta Favia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museoebraicove.baldari.museo_entrata_.jpg",
+      "fullWidth": 3264
+     },
+     "description": "museum of the Jewish community in Venice"
     },
     {
      "id": "way/316454133",
@@ -868,7 +1521,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Campo_dei_gesuiti_-_Oratorio_dei_Crociferi%2C_Venice.jpg/500px-Campo_dei_gesuiti_-_Oratorio_dei_Crociferi%2C_Venice.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Campo_dei_gesuiti_-_Oratorio_dei_Crociferi,_Venice.jpg",
+      "fullWidth": 5327
+     },
+     "description": "art museum in former charity hospital in Venice, Italy"
     },
     {
      "id": "node/4237129800",
@@ -879,7 +1543,18 @@
      "wikidataId": "Q1674868",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Palazzo_Loredan_in_Campo_Santo_Stefano_%28Venice%29.jpg/500px-Palazzo_Loredan_in_Campo_Santo_Stefano_%28Venice%29.jpg",
+      "width": 500,
+      "height": 307,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Loredan_in_Campo_Santo_Stefano_(Venice).jpg",
+      "fullWidth": 7168
+     },
+     "description": "academy of sciences in Venice"
     },
     {
      "id": "node/4372320704",
@@ -895,7 +1570,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg/500px-Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg",
+      "width": 500,
+      "height": 370,
+      "author": "This Photo was taken by Wolfgang Moroder . Feel free to use my photos, but please mention me as the author and send me a message . This image is not in the public domain . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media , if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg",
+      "fullWidth": 6632
+     },
+     "description": "art museum in Venice, Italy"
     },
     {
      "id": "node/10572768074",
@@ -910,7 +1596,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Hellenic_Institute_for_Byzantine_and_Post-Byzantine_Studies_%28Istituto_Ellenico_di_Studi_Bizantini_e_Postbizantini_di_Venezia%29%2C_Venice_%2831290497375%29.jpg/500px-Hellenic_Institute_for_Byzantine_and_Post-Byzantine_Studies_%28Istituto_Ellenico_di_Studi_Bizantini_e_Postbizantini_di_Venezia%29%2C_Venice_%2831290497375%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dimitris Kamaras from Athens, Greece",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hellenic_Institute_for_Byzantine_and_Post-Byzantine_Studies_(Istituto_Ellenico_di_Studi_Bizantini_e_Postbizantini_di_Venezia),_Venice_(31290497375).jpg",
+      "fullWidth": 4608
+     },
+     "description": "museum in Venice"
     },
     {
      "id": "node/4493365870",
@@ -921,7 +1618,18 @@
      "website": "https://fondoambiente.it/luoghi/negozio-olivetti",
      "openingHours": "Tu-Su 10:00-18:30",
      "wikipediaCount": 3,
-     "wikidataId": "Q3874260"
+     "wikidataId": "Q3874260",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Le_magasin_Olivetti_de_Carlo_Scarpa_%28Venise%29_%288068024216%29.jpg/500px-Le_magasin_Olivetti_de_Carlo_Scarpa_%28Venise%29_%288068024216%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Jean-Pierre Dalbéra from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_magasin_Olivetti_de_Carlo_Scarpa_(Venise)_(8068024216).jpg",
+      "fullWidth": 683
+     },
+     "description": "Olivetti store located in Venice"
     },
     {
      "id": "way/138802191",
@@ -932,7 +1640,18 @@
      "wikidataId": "Q3843086",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Venezia_-_Magazzini_del_Sale_-_Foto_di_Paolo_Steffan.jpg/500px-Venezia_-_Magazzini_del_Sale_-_Foto_di_Paolo_Steffan.jpg",
+      "width": 500,
+      "height": 315,
+      "author": "Vaghestelledellorsa , Paolo Steffan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Venezia_-_Magazzini_del_Sale_-_Foto_di_Paolo_Steffan.jpg",
+      "fullWidth": 668
+     },
+     "description": "historical building in Venice, Italy"
     },
     {
      "id": "node/11952442769",
@@ -1038,7 +1757,18 @@
      "lat": 45.43511,
      "lon": 12.32953,
      "website": "https://www.facebook.com/fondacomarcello",
-     "wikidataId": "Q66721955"
+     "wikidataId": "Q66721955",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Venezia-Murano-Burano%2C_Venezia%2C_Italy_-_panoramio_%28688%29.jpg/500px-Venezia-Murano-Burano%2C_Venezia%2C_Italy_-_panoramio_%28688%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lothar John",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Venezia-Murano-Burano,_Venezia,_Italy_-_panoramio_(688).jpg",
+      "fullWidth": 3264
+     },
+     "description": "building in Venice, Italy"
     },
     {
      "id": "node/10568329920",
@@ -1062,7 +1792,18 @@
      "wikidataId": "Q754194",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg/500px-Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg",
+      "width": 500,
+      "height": 779,
+      "author": "Orlando Paride",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg",
+      "fullWidth": 5889
+     },
+     "description": "bell tower of St Mark's Basilica in Venice, Italy"
     },
     {
      "id": "node/7599930588",
@@ -1075,7 +1816,17 @@
      "wikidataId": "Q15162612",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Basilica_di_San_Giorgio_Maggiore_%28Venice%29.jpg/500px-Basilica_di_San_Giorgio_Maggiore_%28Venice%29.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Giorgio_Maggiore_(Venice).jpg",
+      "fullWidth": 2587
+     }
     },
     {
      "id": "node/6603976551",
@@ -1430,9 +2181,11 @@
      "cuisine": "coffee shop, ice cream, italian, sandwich",
      "wikidataId": "Q960610",
      "kinds": [
-      "business"
+      "business",
+      "organization"
      ],
-     "detailed": true
+     "detailed": true,
+     "description": "coffeehouse in San Marco, Italy"
     },
     {
      "id": "node/10009205442",
@@ -1490,7 +2243,18 @@
      "website": "https://www.caffelavena.it/",
      "openingHours": "09:30-24:00",
      "wikidataId": "Q5017189",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Piazza_San_Marco%2C_Venezia_-_panoramio_%286%29.jpg/500px-Piazza_San_Marco%2C_Venezia_-_panoramio_%286%29.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "qwesy qwesy",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_San_Marco,_Venezia_-_panoramio_(6).jpg",
+      "fullWidth": 2556
+     },
+     "description": "coffeehouse in Venice, Italy"
     },
     {
      "id": "node/5149219332",

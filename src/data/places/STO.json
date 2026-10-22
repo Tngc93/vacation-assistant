@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "STO",
- "fetchedAt": "2026-10-18T16:28:05.553Z",
+ "fetchedAt": "2026-10-22T05:43:57.016Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Main_building_of_the_Royal_Swedish_Academy_of_Sciences_%28Kungliga_Vetenskapsakademien%29%2C_Frescati%2C_Norra_Djurg%C3%A5rden%2C_Stockholm.jpg/500px-Main_building_of_the_Royal_Swedish_Academy_of_Sciences_%28Kungliga_Vetenskapsakademien%29%2C_Frescati%2C_Norra_Djurg%C3%A5rden%2C_Stockholm.jpg",
+      "width": 500,
+      "height": 279,
+      "author": "Hackspett",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Main_building_of_the_Royal_Swedish_Academy_of_Sciences_(Kungliga_Vetenskapsakademien),_Frescati,_Norra_Djurg%C3%A5rden,_Stockholm.jpg",
+      "fullWidth": 2303
+     },
+     "description": "İsveç'in ulusal bilimler akademisi"
     },
     {
      "id": "wikidata/Q32926",
@@ -67,7 +78,18 @@
      "wikidataId": "Q32926",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Globen_fr%C3%A5n_Hammarbybacken%2C_2016.jpg/500px-Globen_fr%C3%A5n_Hammarbybacken%2C_2016.jpg",
+      "width": 500,
+      "height": 355,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Globen_fr%C3%A5n_Hammarbybacken,_2016.jpg",
+      "fullWidth": 4850
+     },
+     "description": "indoor ice hockey venue in Stockholm"
     },
     {
      "id": "wikidata/Q953058",
@@ -81,7 +103,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Kungliga_biblioteket_Stockholm_facade.jpg/500px-Kungliga_biblioteket_Stockholm_facade.jpg",
+      "width": 500,
+      "height": 343,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kungliga_biblioteket_Stockholm_facade.jpg",
+      "fullWidth": 5400
+     },
+     "description": "Sweden's national library"
     },
     {
      "id": "relation/34394",
@@ -97,7 +130,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Stockholms_slott_%28Stockholm_Palace%29_%2824831039126%29.jpg/500px-Stockholms_slott_%28Stockholm_Palace%29_%2824831039126%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jorge Láscar from Melbourne, Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_slott_(Stockholm_Palace)_(24831039126).jpg",
+      "fullWidth": 5520
+     },
+     "description": "official residence of the Swedish monarch"
     },
     {
      "id": "node/29775128",
@@ -108,7 +152,18 @@
      "wikidataId": "Q579854",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Gamla_stan_February_2013_01.jpg/500px-Gamla_stan_February_2013_01.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gamla_stan_February_2013_01.jpg",
+      "fullWidth": 5544
+     },
+     "description": "Stockholm'da semt"
     },
     {
      "id": "wikidata/Q727078",
@@ -121,7 +176,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Stockholms_Olympiastadion%2C_070310.JPG/500px-Stockholms_Olympiastadion%2C_070310.JPG",
+      "width": 500,
+      "height": 320,
+      "author": "Johannes Scherman",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_Olympiastadion,_070310.JPG",
+      "fullWidth": 2505
+     },
+     "description": "stadium at Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q725108",
@@ -135,7 +201,18 @@
       "attraction",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Skansen_Entr%C3%A9_2015a.jpg/500px-Skansen_Entr%C3%A9_2015a.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skansen_Entr%C3%A9_2015a.jpg",
+      "fullWidth": 4164
+     },
+     "description": "Stockholm'da açık hava müzesi"
     },
     {
      "id": "wikidata/Q648483",
@@ -146,7 +223,18 @@
      "wikidataId": "Q648483",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Stockholms_stadshus_september_2011.jpg/500px-Stockholms_stadshus_september_2011.jpg",
+      "width": 500,
+      "height": 532,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_stadshus_september_2011.jpg",
+      "fullWidth": 2513
+     },
+     "description": "building of the Municipal Council for the City of Stockholm with the luxury restaurant Stadshuskällaren inside, wherein is the venue of the Nobel Prize banquet"
     },
     {
      "id": "way/8049504",
@@ -159,7 +247,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Storkyrkan_2025_01.jpg/500px-Storkyrkan_2025_01.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "ArildV",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Storkyrkan_2025_01.jpg",
+      "fullWidth": 4404
+     },
+     "description": "Lutheran cathedral in Stockholm"
     },
     {
      "id": "way/23841420",
@@ -171,7 +270,18 @@
      "wikidataId": "Q657118",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Riddarholmskyrkan_juni_2005.jpg/500px-Riddarholmskyrkan_juni_2005.jpg",
+      "width": 500,
+      "height": 610,
+      "author": "Nordelch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riddarholmskyrkan_juni_2005.jpg",
+      "fullWidth": 2491
+     },
+     "description": "Stockholm'da kilise binası"
     },
     {
      "id": "wikidata/Q54315",
@@ -184,7 +294,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/The_facade_of_Stockholms_Centralstation%2C_seen_from_Centralplan%2C_Photo_2.jpg/500px-The_facade_of_Stockholms_Centralstation%2C_seen_from_Centralplan%2C_Photo_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Liberaler Humanist",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_facade_of_Stockholms_Centralstation,_seen_from_Centralplan,_Photo_2.jpg",
+      "fullWidth": 5580
+     },
+     "description": "railway station in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q1246991",
@@ -196,7 +317,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/AsplundGunnarBibliotheque.jpg/500px-AsplundGunnarBibliotheque.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "En Dum En",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AsplundGunnarBibliotheque.jpg",
+      "fullWidth": 2200
+     },
+     "description": "public library"
     },
     {
      "id": "wikidata/Q1101073",
@@ -208,7 +340,18 @@
      "wikidataId": "Q1101073",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Parliament_House_of_Sweden_%28Riksdagshuset%29.jpg/500px-Parliament_House_of_Sweden_%28Riksdagshuset%29.jpg",
+      "width": 500,
+      "height": 319,
+      "author": "Lee Vilenski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parliament_House_of_Sweden_(Riksdagshuset).jpg",
+      "fullWidth": 1078
+     },
+     "description": "Stockholm'da bina"
     },
     {
      "id": "wikidata/Q849086",
@@ -219,7 +362,18 @@
      "wikidataId": "Q849086",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Skeppsholmen_2.JPG/500px-Skeppsholmen_2.JPG",
+      "width": 500,
+      "height": 302,
+      "author": "Jan Ainali",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skeppsholmen_2.JPG",
+      "fullWidth": 3453
+     },
+     "description": "island of Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q1540683",
@@ -232,7 +386,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Klara_kyrka_february_2013_01.jpg/500px-Klara_kyrka_february_2013_01.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Klara_kyrka_february_2013_01.jpg",
+      "fullWidth": 2428
+     },
+     "description": "Stockholm'da kilise binası"
     },
     {
      "id": "wikidata/Q904462",
@@ -244,7 +409,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Riddarholmen_from_Stockholm_City_Hall_tower.jpg/500px-Riddarholmen_from_Stockholm_City_Hall_tower.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Benoît Derrier from Stockholm, Sweden",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riddarholmen_from_Stockholm_City_Hall_tower.jpg",
+      "fullWidth": 4288
+     },
+     "description": "island and urban district in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q844426",
@@ -256,7 +432,18 @@
      "kinds": [
       "road",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Sergels_torg_mot_v%C3%A4st_2009.jpg/500px-Sergels_torg_mot_v%C3%A4st_2009.jpg",
+      "width": 500,
+      "height": 356,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sergels_torg_mot_v%C3%A4st_2009.jpg",
+      "fullWidth": 3004
+     },
+     "description": "square in central Stockholm"
     },
     {
      "id": "wikidata/Q653773",
@@ -270,7 +457,18 @@
       "concertHall",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Stockholm_Konserthuset_2002.jpg/500px-Stockholm_Konserthuset_2002.jpg",
+      "width": 500,
+      "height": 702,
+      "author": "wishes to remain anonymous",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholm_Konserthuset_2002.jpg",
+      "fullWidth": 831
+     },
+     "description": "Stockholm'da konser salonu"
     },
     {
      "id": "way/8049509",
@@ -283,7 +481,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Tyska_kyrkan_stadsbild_2012.jpg/500px-Tyska_kyrkan_stadsbild_2012.jpg",
+      "width": 500,
+      "height": 498,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tyska_kyrkan_stadsbild_2012.jpg",
+      "fullWidth": 2895
+     },
+     "description": "church building in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q260304",
@@ -296,7 +505,18 @@
       "attraction",
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/2020-04-26_%E2%80%94_Gr%C3%B6na_Lund.jpg/500px-2020-04-26_%E2%80%94_Gr%C3%B6na_Lund.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Guillaume Baviere",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2020-04-26_%E2%80%94_Gr%C3%B6na_Lund.jpg",
+      "fullWidth": 5916
+     },
+     "description": "amusement park in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q926316",
@@ -304,7 +524,18 @@
      "lat": 59.33194,
      "lon": 18.07111,
      "wikipediaCount": 20,
-     "wikidataId": "Q926316"
+     "wikidataId": "Q926316",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Kungstradgarden_2008.jpg/500px-Kungstradgarden_2008.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kungstradgarden_2008.jpg",
+      "fullWidth": 1627
+     },
+     "description": "Stockholm'da park"
     },
     {
      "id": "wikidata/Q3048023",
@@ -315,7 +546,18 @@
      "wikidataId": "Q3048023",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Stortorget_i_Gamla_Stan_i_Stockholm-2.JPG/500px-Stortorget_i_Gamla_Stan_i_Stockholm-2.JPG",
+      "width": 500,
+      "height": 335,
+      "author": "Øyvind Holmstad",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stortorget_i_Gamla_Stan_i_Stockholm-2.JPG",
+      "fullWidth": 4945
+     },
+     "description": "Stockholm'da meydan"
     },
     {
      "id": "wikidata/Q1208392",
@@ -327,7 +569,18 @@
      "wikidataId": "Q1208392",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Gamla_stan_northbound_platform.jpg/500px-Gamla_stan_northbound_platform.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "HartOve",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gamla_stan_northbound_platform.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Stockholm'da metro istasyonu"
     },
     {
      "id": "wikidata/Q15042147",
@@ -339,7 +592,18 @@
      "wikidataId": "Q15042147",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Stockholms_katolska_domkyrka_03.jpg/500px-Stockholms_katolska_domkyrka_03.jpg",
+      "width": 500,
+      "height": 418,
+      "author": "I99pema",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_katolska_domkyrka_03.jpg",
+      "fullWidth": 3616
+     },
+     "description": "Roman Catholic cathedral in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q619484",
@@ -351,7 +615,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Stora_Synagogan%2C_2012_a_08.JPG/500px-Stora_Synagogan%2C_2012_a_08.JPG",
+      "width": 500,
+      "height": 370,
+      "author": "I99pema",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stora_Synagogan,_2012_a_08.JPG",
+      "fullWidth": 3250
+     },
+     "description": "synagogue in Stockholm, Sweden"
     },
     {
      "id": "way/145662484",
@@ -366,7 +641,41 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Rosendals_palace_May_2012.jpg/500px-Rosendals_palace_May_2012.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rosendals_palace_May_2012.jpg",
+      "fullWidth": 4216
+     },
+     "description": "was built as pleasure palace in the 1820s for the King Charles XIV John of Sweden"
+    },
+    {
+     "id": "way/141844590",
+     "name": "Sagerska huset",
+     "lat": 59.32876,
+     "lon": 18.06728,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1886105",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Sagerska_huset_2012_-_h_%28crop%29.jpg/500px-Sagerska_huset_2012_-_h_%28crop%29.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Sagerska huset 2012 - h.jpg : I99pema derivative work: ArildV",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sagerska_huset_2012_-_h_(crop).jpg",
+      "fullWidth": 3156
+     },
+     "description": "building in central Stockholm"
     },
     {
      "id": "wikidata/Q404416",
@@ -375,7 +684,18 @@
      "lat": 59.32528,
      "lon": 18.07083,
      "wikipediaCount": 18,
-     "wikidataId": "Q404416"
+     "wikidataId": "Q404416",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/B%C3%B6rshuset%2C_Stockholm%2C_2019_%2801%29.jpg/500px-B%C3%B6rshuset%2C_Stockholm%2C_2019_%2801%29.jpg",
+      "width": 500,
+      "height": 350,
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:B%C3%B6rshuset,_Stockholm,_2019_(01).jpg",
+      "fullWidth": 5372
+     },
+     "description": "Stockholm'da bina"
     },
     {
      "id": "wikidata/Q1193675",
@@ -388,7 +708,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Stockholms_moske_okt_2012a.jpg/500px-Stockholms_moske_okt_2012a.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_moske_okt_2012a.jpg",
+      "fullWidth": 3928
+     },
+     "description": "İsveç'te cami"
     },
     {
      "id": "wikidata/Q744615",
@@ -400,19 +731,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
-    },
-    {
-     "id": "way/141844590",
-     "name": "Sagerska huset",
-     "lat": 59.32876,
-     "lon": 18.06728,
-     "wikipediaCount": 17,
-     "wikidataId": "Q1886105",
-     "kinds": [
-      "adminArea",
-      "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Rosenbad_2006.jpg/500px-Rosenbad_2006.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rosenbad_2006.jpg",
+      "fullWidth": 2560
+     },
+     "description": "building used for the Swedish Government Offices, Stockholm, Sweden"
     },
     {
      "id": "way/8049544",
@@ -424,7 +754,18 @@
      "wikidataId": "Q1547268",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Riddarhuspalatset%2C_2019_%2804%29.jpg/500px-Riddarhuspalatset%2C_2019_%2804%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riddarhuspalatset,_2019_(04).jpg",
+      "fullWidth": 5523
+     },
+     "description": "palace built in 1641–1674, which is owned and managed by Sweden's knights and nobility."
     },
     {
      "id": "wikidata/Q2066219",
@@ -436,7 +777,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Drottninggatan_sommaren_2006.jpg/500px-Drottninggatan_sommaren_2006.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "No machine-readable author provided. Svante björkum assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Drottninggatan_sommaren_2006.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Drottninggatan_sommaren_2006.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Stockholm'da sokak"
     },
     {
      "id": "way/37079169",
@@ -448,7 +800,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Katarina_kyrka_January_2013_02.jpg/500px-Katarina_kyrka_January_2013_02.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Katarina_kyrka_January_2013_02.jpg",
+      "fullWidth": 3297
+     },
+     "description": "church building on Södermalm in Stockholm, Sweden"
     },
     {
      "id": "relation/2440883",
@@ -465,7 +828,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Hallwylska_palatset_November_2011.jpg/500px-Hallwylska_palatset_November_2011.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "ArildV",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hallwylska_palatset_November_2011.jpg",
+      "fullWidth": 2592
+     },
+     "description": "historic house museum in Stockholm, Sweden"
     },
     {
      "id": "node/2441872774",
@@ -478,7 +852,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Junibacken_2007.jpg/500px-Junibacken_2007.jpg",
+      "width": 500,
+      "height": 356,
+      "author": "Holger Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Junibacken_2007.jpg",
+      "fullWidth": 1954
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q1608760",
@@ -489,7 +874,18 @@
      "wikidataId": "Q1608760",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Hoetorget_Stockholm_2007.jpg/500px-Hoetorget_Stockholm_2007.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "Holger Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hoetorget_Stockholm_2007.jpg",
+      "fullWidth": 2440
+     },
+     "description": "Stockholm'da meydan"
     },
     {
      "id": "way/40859302",
@@ -497,7 +893,18 @@
      "lat": 59.33205,
      "lon": 18.06493,
      "wikipediaCount": 14,
-     "wikidataId": "Q204298"
+     "wikidataId": "Q204298",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Kulturhuset_2009.jpg/500px-Kulturhuset_2009.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kulturhuset_2009.jpg",
+      "fullWidth": 3063
+     },
+     "description": "culture center in central Stockholm, Sweden (1974)"
     },
     {
      "id": "wikidata/Q867717",
@@ -505,7 +912,18 @@
      "lat": 59.325,
      "lon": 18.06667,
      "wikipediaCount": 14,
-     "wikidataId": "Q867717"
+     "wikidataId": "Q867717",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Odenplan_station_July_2017_06.jpg/500px-Odenplan_station_July_2017_06.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Odenplan_station_July_2017_06.jpg",
+      "fullWidth": 6016
+     },
+     "description": "railway tunnel in Stockholm"
     },
     {
      "id": "wikidata/Q791762",
@@ -516,7 +934,18 @@
      "wikidataId": "Q791762",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Beckholmen.JPG/500px-Beckholmen.JPG",
+      "width": 500,
+      "height": 311,
+      "author": "Jan Ainali",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beckholmen.JPG",
+      "fullWidth": 3292
+     },
+     "description": "islet"
     },
     {
      "id": "way/16095343",
@@ -529,7 +958,18 @@
       "attraction",
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Bondeska_palatset_norr_2011.jpg/500px-Bondeska_palatset_norr_2011.jpg",
+      "width": 500,
+      "height": 292,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bondeska_palatset_norr_2011.jpg",
+      "fullWidth": 2196
+     },
+     "description": "palace in central Stockholm, Sweden, designed by Nicodemus Tessin the Elder and Jean De la Vallée as the private residence of Gustaf Bonde (1620–1667), currently used by the Swedish Supreme Court"
     },
     {
      "id": "wikidata/Q1750652",
@@ -540,7 +980,18 @@
      "wikidataId": "Q1750652",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Norrmalmstorg_mot_%C3%B6st_2012.jpg/500px-Norrmalmstorg_mot_%C3%B6st_2012.jpg",
+      "width": 500,
+      "height": 303,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Norrmalmstorg_mot_%C3%B6st_2012.jpg",
+      "fullWidth": 4060
+     },
+     "description": "Stockholm'da meydan"
     },
     {
      "id": "way/41079299",
@@ -552,7 +1003,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tessinska_palatset_Stockholm.jpg/500px-Tessinska_palatset_Stockholm.jpg",
+      "width": 500,
+      "height": 506,
+      "author": "FriskoKry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tessinska_palatset_Stockholm.jpg",
+      "fullWidth": 1449
+     },
+     "description": "palace"
     },
     {
      "id": "wikidata/Q2036739",
@@ -565,7 +1027,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Hedvig_Eleonora_kyrka_December_2012_%28perspective%29.jpg/500px-Hedvig_Eleonora_kyrka_December_2012_%28perspective%29.jpg",
+      "width": 500,
+      "height": 420,
+      "author": "Hedvig_Eleonora_kyrka_December_2012.jpg : Arild Vågen derivative work: ArildV",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hedvig_Eleonora_kyrka_December_2012_(perspective).jpg",
+      "fullWidth": 2916
+     },
+     "description": "Stockholm'da kilise binası"
     },
     {
      "id": "way/49744847",
@@ -573,7 +1046,18 @@
      "lat": 59.3226,
      "lon": 18.09015,
      "wikipediaCount": 12,
-     "wikidataId": "Q4176816"
+     "wikidataId": "Q4176816",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Kastellholmen_Stockholm.jpg/500px-Kastellholmen_Stockholm.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Markus Bernet",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kastellholmen_Stockholm.jpg",
+      "fullWidth": 1920
+     },
+     "description": "Stockholm'da bina"
     },
     {
      "id": "wikidata/Q1788276",
@@ -585,7 +1069,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Sveav_2008.jpg/500px-Sveav_2008.jpg",
+      "width": 500,
+      "height": 329,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sveav_2008.jpg",
+      "fullWidth": 2397
+     },
+     "description": "Stockholm'da sokak"
     },
     {
      "id": "wikidata/Q580518",
@@ -596,7 +1091,18 @@
      "wikidataId": "Q580518",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Vasterbron_2008a.jpg/500px-Vasterbron_2008a.jpg",
+      "width": 500,
+      "height": 134,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vasterbron_2008a.jpg",
+      "fullWidth": 2534
+     },
+     "description": "Stockholm'da köprü"
     },
     {
      "id": "way/34590009",
@@ -608,7 +1114,18 @@
      "kinds": [
       "attraction",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Stockholm_-_Riddarholmen%2C_Wrangelska_Palatset.jpg/500px-Stockholm_-_Riddarholmen%2C_Wrangelska_Palatset.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Olof Senestam",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholm_-_Riddarholmen,_Wrangelska_Palatset.jpg",
+      "fullWidth": 1280
+     },
+     "description": "Stockholm'da saray"
     },
     {
      "id": "wikidata/Q360572",
@@ -620,7 +1137,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Adolf_Fredriks_kyrka_2011.JPG/500px-Adolf_Fredriks_kyrka_2011.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "I99pema",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Adolf_Fredriks_kyrka_2011.JPG",
+      "fullWidth": 4288
+     },
+     "description": "church building in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q1232277",
@@ -631,7 +1159,18 @@
      "wikidataId": "Q1232277",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Djurg%C3%A5rdsbron.jpg/500px-Djurg%C3%A5rdsbron.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "No machine-readable author provided. Kalle1~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Djurg%C3%A5rdsbron.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Djurg%C3%A5rdsbron.jpg",
+      "fullWidth": 2079
+     },
+     "description": "Stockholm'da köprü"
     },
     {
      "id": "wikidata/Q1221513",
@@ -644,7 +1183,18 @@
       "business",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/02_Stockholm_-_Schweden.jpg/500px-02_Stockholm_-_Schweden.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:02_Stockholm_-_Schweden.jpg",
+      "fullWidth": 2490
+     },
+     "description": "Stockholm'da otel"
     },
     {
      "id": "wikidata/Q2854887",
@@ -655,7 +1205,18 @@
      "wikidataId": "Q2854887",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Stockholm-Gustav-Adolfs-Torg-Summer-2010.jpg/500px-Stockholm-Gustav-Adolfs-Torg-Summer-2010.jpg",
+      "width": 500,
+      "height": 312,
+      "author": "Koyos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Stockholm-Gustav-Adolfs-Torg-Summer-2010.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stockholm-Gustav-Adolfs-Torg-Summer-2010.jpg",
+      "fullWidth": 2628
+     },
+     "description": "Stockholm'da meydan"
     },
     {
      "id": "wikidata/Q3439887",
@@ -668,7 +1229,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Oscarsteatern.jpg/500px-Oscarsteatern.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "No machine-readable author provided. Kalle1~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Oscarsteatern.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oscarsteatern.jpg",
+      "fullWidth": 1908
+     },
+     "description": "building in Stockholm Municipality, Stockholm County, Sweden"
     },
     {
      "id": "wikidata/Q1967885",
@@ -680,7 +1252,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Sofia_Church.jpg/500px-Sofia_Church.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Lee Vilenski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sofia_Church.jpg",
+      "fullWidth": 1078
+     },
+     "description": "church building in Stockholm, Sweden"
     },
     {
      "id": "way/27742012",
@@ -693,32 +1276,18 @@
       "business",
       "hotel",
       "organization"
-     ]
-    },
-    {
-     "id": "relation/279567",
-     "name": "Arvfurstens palats",
-     "lat": 59.32903,
-     "lon": 18.06756,
-     "wikipediaCount": 10,
-     "wikidataId": "Q717105",
-     "kinds": [
-      "heritage",
-      "office",
-      "palace"
-     ]
-    },
-    {
-     "id": "relation/11144024",
-     "name": "Karlbergs slott",
-     "lat": 59.34112,
-     "lon": 18.02203,
-     "wikipediaCount": 9,
-     "wikidataId": "Q335491",
-     "kinds": [
-      "heritage",
-      "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Af_Chapman_at_Skeppsholmen_in_Stockholm_City.jpg/500px-Af_Chapman_at_Skeppsholmen_in_Stockholm_City.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Brorsson",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Af_Chapman_at_Skeppsholmen_in_Stockholm_City.jpg",
+      "fullWidth": 3456
+     },
+     "description": "full-rigged steel ship"
     }
    ]
   },
@@ -739,7 +1308,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Nationalmuseum_September_2014_01.jpg/500px-Nationalmuseum_September_2014_01.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nationalmuseum_September_2014_01.jpg",
+      "fullWidth": 4515
+     },
+     "description": "art museum in Stockholm, Sweden"
     },
     {
      "id": "way/27288534",
@@ -753,7 +1333,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Vasa_Museum_building_view_from_the_sea_%283%29.jpg/500px-Vasa_Museum_building_view_from_the_sea_%283%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Hanay",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vasa_Museum_building_view_from_the_sea_(3).jpg",
+      "fullWidth": 4608
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304603727",
@@ -767,7 +1358,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Nobel_Prize_Museum_Entrance_Stockholm_20240611.JPG/500px-Nobel_Prize_Museum_Entrance_Stockholm_20240611.JPG",
+      "width": 500,
+      "height": 500,
+      "author": "Hajotthu",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nobel_Prize_Museum_Entrance_Stockholm_20240611.JPG",
+      "fullWidth": 3449
+     },
+     "description": "museum about Alfred Nobel and the Nobel Prize"
     },
     {
      "id": "way/348345482",
@@ -781,7 +1383,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Nordiska_museet_sett_fr%C3%A5n_Skansen_2005-07-29.jpg/500px-Nordiska_museet_sett_fr%C3%A5n_Skansen_2005-07-29.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Jordgubbe",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nordiska_museet_sett_fr%C3%A5n_Skansen_2005-07-29.jpg",
+      "fullWidth": 2288
+     },
+     "description": "cultural history and ethnography museum in Sweden"
     },
     {
      "id": "node/29898032",
@@ -797,7 +1410,18 @@
       "cinema",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Moderna_museet%2C_2006.jpg/500px-Moderna_museet%2C_2006.jpg",
+      "width": 500,
+      "height": 268,
+      "author": "No machine-readable author provided. Kalle1~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Moderna_museet,_2006.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moderna_museet,_2006.jpg",
+      "fullWidth": 2038
+     },
+     "description": "modern and contemporary art museum in Stockholm, Sweden"
     },
     {
      "id": "relation/93398",
@@ -811,7 +1435,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Statens_historiska_museum_2010.JPG/500px-Statens_historiska_museum_2010.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Mr Bullitt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Statens_historiska_museum_2010.JPG",
+      "fullWidth": 2048
+     },
+     "description": "Stockholm'da tarih müzesi"
     },
     {
      "id": "way/33275424",
@@ -826,7 +1461,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/ABBA_the_Museum%2C_winter_2014_01.JPG/500px-ABBA_the_Museum%2C_winter_2014_01.JPG",
+      "width": 500,
+      "height": 343,
+      "author": "I99pema",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ABBA_the_Museum,_winter_2014_01.JPG",
+      "fullWidth": 3984
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304606190",
@@ -840,7 +1486,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Livrustkammaren_2011b.jpg/500px-Livrustkammaren_2011b.jpg",
+      "width": 500,
+      "height": 355,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Livrustkammaren_2011b.jpg",
+      "fullWidth": 3189
+     },
+     "description": "Swedish state historical museum with exhibits of Swedish military history"
     },
     {
      "id": "node/1476007025",
@@ -854,7 +1511,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/%C3%96stasiatiska_museet_2009.jpg/500px-%C3%96stasiatiska_museet_2009.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%96stasiatiska_museet_2009.jpg",
+      "fullWidth": 3032
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q1146587",
@@ -867,7 +1535,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Svenska_Filminstitutet_-_Filmhuset_-_Borgv%C3%A4gen_1.jpg/500px-Svenska_Filminstitutet_-_Filmhuset_-_Borgv%C3%A4gen_1.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "Vargklo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Svenska_Filminstitutet_-_Filmhuset_-_Borgv%C3%A4gen_1.jpg",
+      "fullWidth": 911
+     },
+     "description": "Swedish foundation"
     },
     {
      "id": "node/289851448",
@@ -881,7 +1560,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Arm%C3%A9museum_2014_01.JPG/500px-Arm%C3%A9museum_2014_01.JPG",
+      "width": 500,
+      "height": 345,
+      "author": "I99pema",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arm%C3%A9museum_2014_01.JPG",
+      "fullWidth": 4045
+     },
+     "description": "military history of Sweden in Stockholm"
     },
     {
      "id": "wikidata/Q681497",
@@ -895,7 +1585,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Observatoriet_2011.JPG/500px-Observatoriet_2011.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "I99pema",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Observatoriet_2011.JPG",
+      "fullWidth": 4288
+     },
+     "description": "astronomical observatory"
     },
     {
      "id": "node/1241136436",
@@ -909,7 +1610,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Swedish_national_museum_of_science_and_technology_20061026_001.jpg/500px-Swedish_national_museum_of_science_and_technology_20061026_001.jpg",
+      "width": 500,
+      "height": 343,
+      "author": "Jonas Bergsten",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Swedish_national_museum_of_science_and_technology_20061026_001.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Swedish_national_museum_of_science_and_technology_20061026_001.jpg",
+      "fullWidth": 3258
+     },
+     "description": "museum of technology with Science center, in Stockholm, Sweden"
     },
     {
      "id": "node/4581111990",
@@ -923,7 +1635,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Waldemarsudde_April_2006.JPG/500px-Waldemarsudde_April_2006.JPG",
+      "width": 500,
+      "height": 362,
+      "author": "Udo Schröter",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Waldemarsudde_April_2006.JPG",
+      "fullWidth": 1760
+     },
+     "description": "art museum in Stockholm, Sweden"
     },
     {
      "id": "way/10502251",
@@ -938,7 +1661,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Sj%C3%B6historiska_museet_2008.jpg/500px-Sj%C3%B6historiska_museet_2008.jpg",
+      "width": 500,
+      "height": 259,
+      "author": "Anneli Karlsson, SMM",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sj%C3%B6historiska_museet_2008.jpg",
+      "fullWidth": 2457
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "wikidata/Q1750428",
@@ -950,7 +1684,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Swedish_Financial_Museum.jpg/500px-Swedish_Financial_Museum.jpg",
+      "width": 500,
+      "height": 430,
+      "author": "Statens historiska museer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Swedish_Financial_Museum.jpg",
+      "fullWidth": 675
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "way/10502303",
@@ -964,7 +1709,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Etnografiska_museet_2007.jpg/500px-Etnografiska_museet_2007.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Holger Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Etnografiska_museet_2007.jpg",
+      "fullWidth": 1870
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "relation/2440883",
@@ -981,7 +1737,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Hallwylska_palatset_November_2011.jpg/500px-Hallwylska_palatset_November_2011.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "ArildV",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hallwylska_palatset_November_2011.jpg",
+      "fullWidth": 2592
+     },
+     "description": "historic house museum in Stockholm, Sweden"
     },
     {
      "id": "way/33114705",
@@ -995,7 +1762,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Liljevalchs_konsthall_2007_4.jpg/500px-Liljevalchs_konsthall_2007_4.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Holger Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Liljevalchs_konsthall_2007_4.jpg",
+      "fullWidth": 2463
+     },
+     "description": "Stockholm'da sanat müzesi"
     },
     {
      "id": "node/304602016",
@@ -1010,7 +1788,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Ryssg%C3%A5rden_Stockholm_From_Above_2005-06-06.jpg/500px-Ryssg%C3%A5rden_Stockholm_From_Above_2005-06-06.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Jordgubbe",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ryssg%C3%A5rden_Stockholm_From_Above_2005-06-06.jpg",
+      "fullWidth": 572
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "wikidata/Q1632115",
@@ -1023,7 +1812,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Medeltidsmuseet_2010.jpg/500px-Medeltidsmuseet_2010.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "User:Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Medeltidsmuseet_2010.jpg",
+      "fullWidth": 3230
+     },
+     "description": "Stockholm'da tarih müzesi"
     },
     {
      "id": "node/868261113",
@@ -1039,7 +1839,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Fotografiska_museet_Stockholm_2016_01.jpg/500px-Fotografiska_museet_Stockholm_2016_01.jpg",
+      "width": 500,
+      "height": 352,
+      "author": "Julian Herzog ( Website )",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fotografiska_museet_Stockholm_2016_01.jpg",
+      "fullWidth": 4096
+     },
+     "description": "photographic art gallery in Stockholm, Sweden"
     },
     {
      "id": "node/304609719",
@@ -1053,7 +1864,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Medelhavsmuseet_2007.jpg/500px-Medelhavsmuseet_2007.jpg",
+      "width": 500,
+      "height": 662,
+      "author": "Holger Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Medelhavsmuseet_2007.jpg",
+      "fullWidth": 1780
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "node/1092471973",
@@ -1068,7 +1890,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/ArkDes%2C_entr%C3%A9%2C_2018.jpg/500px-ArkDes%2C_entr%C3%A9%2C_2018.jpg",
+      "width": 500,
+      "height": 355,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ArkDes,_entr%C3%A9,_2018.jpg",
+      "fullWidth": 4450
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "way/33114307",
@@ -1081,7 +1914,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Biologiska_museet_January_2013.jpg/500px-Biologiska_museet_January_2013.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Arild Vågen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Biologiska_museet_January_2013.jpg",
+      "fullWidth": 4895
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304578099",
@@ -1095,7 +1939,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Bl%C3%A5_tornet_02.jpg/500px-Bl%C3%A5_tornet_02.jpg",
+      "width": 500,
+      "height": 639,
+      "author": "I99pema",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bl%C3%A5_tornet_02.jpg",
+      "fullWidth": 2679
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304624735",
@@ -1110,7 +1965,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Kronobageriet_Stockholm_Sibylle_Riddar_20060524.jpg/500px-Kronobageriet_Stockholm_Sibylle_Riddar_20060524.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "FriskoKry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kronobageriet_Stockholm_Sibylle_Riddar_20060524.jpg",
+      "fullWidth": 2136
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304610243",
@@ -1123,7 +1989,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Sundsvalls_Handelsbank%2C_Drottninggatan_17%2C_aug_2020c.jpg/500px-Sundsvalls_Handelsbank%2C_Drottninggatan_17%2C_aug_2020c.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sundsvalls_Handelsbank,_Drottninggatan_17,_aug_2020c.jpg",
+      "fullWidth": 4375
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304577359",
@@ -1137,7 +2014,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Sj%C3%A4lag%C3%A5rdsgatan_19_mars_2007.JPG/500px-Sj%C3%A4lag%C3%A5rdsgatan_19_mars_2007.JPG",
+      "width": 500,
+      "height": 625,
+      "author": "Mats Halldin 15:22, 28 March 2007 (UTC)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sj%C3%A4lag%C3%A5rdsgatan_19_mars_2007.JPG",
+      "fullWidth": 1024
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/304603696",
@@ -1151,7 +2039,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Postmuseum_november_2021.jpg/500px-Postmuseum_november_2021.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Alexandra Koch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Postmuseum_november_2021.jpg",
+      "fullWidth": 3024
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "way/137165681",
@@ -1165,7 +2064,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Sven_Harrys_konstmuseum_2011a.jpg/500px-Sven_Harrys_konstmuseum_2011a.jpg",
+      "width": 500,
+      "height": 369,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sven_Harrys_konstmuseum_2011a.jpg",
+      "fullWidth": 3144
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/1815123227",
@@ -1179,7 +2089,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Gustaf_III_antikmuseum_2010.jpg/500px-Gustaf_III_antikmuseum_2010.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gustaf_III_antikmuseum_2010.jpg",
+      "fullWidth": 3264
+     },
+     "description": "is Sweden's oldest public art museum, and one of the oldest in Europe was opened in 1794"
     },
     {
      "id": "way/141463240",
@@ -1192,7 +2113,18 @@
       "attraction",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Baltic_Sea_Science_Center_in_Skansen_Stockholm_Sweden.jpg/500px-Baltic_Sea_Science_Center_in_Skansen_Stockholm_Sweden.jpg",
+      "width": 500,
+      "height": 321,
+      "author": "VisbyStar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Baltic_Sea_Science_Center_in_Skansen_Stockholm_Sweden.jpg",
+      "fullWidth": 3498
+     },
+     "description": "marine aquarium and education center in Stockholm, Sweden"
     },
     {
      "id": "way/35205940",
@@ -1206,7 +2138,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bonniers_konsthall.JPG/500px-Bonniers_konsthall.JPG",
+      "width": 500,
+      "height": 373,
+      "author": "Lennart Kjellman",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bonniers_konsthall.JPG",
+      "fullWidth": 2439
+     },
+     "description": "Stockholm'da sanat müzesi"
     },
     {
      "id": "node/2328267047",
@@ -1220,7 +2163,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Spritmuseum_2012.jpg/500px-Spritmuseum_2012.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spritmuseum_2012.jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in Stockholm, Sweden"
     },
     {
      "id": "node/2988628220",
@@ -1234,7 +2188,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/The_Viking_Museum_Vikingaliv_-_Djurgarden_Stockholm_01.jpg/500px-The_Viking_Museum_Vikingaliv_-_Djurgarden_Stockholm_01.jpg",
+      "width": 500,
+      "height": 369,
+      "author": "Sinikka Halme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Viking_Museum_Vikingaliv_-_Djurgarden_Stockholm_01.jpg",
+      "fullWidth": 3129
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "node/810035234",
@@ -1248,7 +2213,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Polismuseet_2012.jpg/500px-Polismuseet_2012.jpg",
+      "width": 500,
+      "height": 337,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Polismuseet_2012.jpg",
+      "fullWidth": 4315
+     },
+     "description": "Stockholm'da müze"
     },
     {
      "id": "way/124255734",
@@ -1260,7 +2236,18 @@
      "wikidataId": "Q10298650",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Hovstallet.jpg/500px-Hovstallet.jpg",
+      "width": 500,
+      "height": 506,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hovstallet.jpg",
+      "fullWidth": 2097
+     },
+     "description": "building in Stockholm Municipality, Stockholm County, Sweden"
     },
     {
      "id": "node/8860280280",
@@ -1273,7 +2260,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Wetterling_Gallery_May_2011.jpg/500px-Wetterling_Gallery_May_2011.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ankara",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wetterling_Gallery_May_2011.jpg",
+      "fullWidth": 3782
+     },
+     "description": "Stockholm'da sanat galerisi"
     },
     {
      "id": "node/248913932",
@@ -1288,7 +2286,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Carl_Eldh_2006a.jpg/500px-Carl_Eldh_2006a.jpg",
+      "width": 500,
+      "height": 356,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carl_Eldh_2006a.jpg",
+      "fullWidth": 2504
+     },
+     "description": "working life museum in Stockholm Municipality, Sweden"
     }
    ]
   },
@@ -1305,7 +2314,18 @@
      "wikidataId": "Q615365",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Katarinahissen_from_Katarinav%C3%A4gen_2005-08-09.JPG/500px-Katarinahissen_from_Katarinav%C3%A4gen_2005-08-09.JPG",
+      "width": 500,
+      "height": 565,
+      "author": "Jordgubbe",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Katarinahissen_from_Katarinav%C3%A4gen_2005-08-09.JPG",
+      "fullWidth": 1593
+     },
+     "description": "elevator in Stockholm, Sweden"
     },
     {
      "id": "node/1706341734",
@@ -1316,7 +2336,18 @@
      "wikidataId": "Q10500908",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/F%C3%A5f%C3%A4ngan_2009a.jpg/500px-F%C3%A5f%C3%A4ngan_2009a.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:F%C3%A5f%C3%A4ngan_2009a.jpg",
+      "fullWidth": 2625
+     },
+     "description": "visitor attraction in Stockholm municipality, Sweden"
     },
     {
      "id": "node/1531271091",
@@ -1324,7 +2355,17 @@
      "lat": 59.31446,
      "lon": 18.09583,
      "wikipediaCount": 2,
-     "wikidataId": "Q10726955"
+     "wikidataId": "Q10726955",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/S%C3%A5gargatan_11_S%C3%B6dermalm_Stockholm_2005-06-13.JPG/500px-S%C3%A5gargatan_11_S%C3%B6dermalm_Stockholm_2005-06-13.JPG",
+      "width": 500,
+      "height": 234,
+      "author": "Jordgubbe",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:S%C3%A5gargatan_11_S%C3%B6dermalm_Stockholm_2005-06-13.JPG",
+      "fullWidth": 1706
+     }
     },
     {
      "id": "node/255862094",
@@ -1649,7 +2690,18 @@
      "openingHours": "Mo-Fr 10:45-20:00;Sa off;Su 13:00-20:00",
      "cuisine": "french",
      "wikidataId": "Q96737393",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cassi%2C_Stockholm.jpg/500px-Cassi%2C_Stockholm.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "I99pema",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cassi,_Stockholm.jpg",
+      "fullWidth": 3968
+     },
+     "description": "Stockholm'da restoran"
     }
    ]
   },
@@ -1715,6 +2767,16 @@
      "website": "https://brodsalt.se/",
      "openingHours": "Mo-Fr 05:30-23:00; Sa,Su 06:30-23:00",
      "cuisine": "pizza, coffee shop, sandwich, cake, pancake, salad",
+     "detailed": true
+    },
+    {
+     "id": "node/11887345512",
+     "name": "Bröd & Salt",
+     "lat": 59.31694,
+     "lon": 18.07179,
+     "website": "https://brodsalt.se/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-18:00",
+     "cuisine": "pizza, salad",
      "detailed": true
     },
     {
@@ -1944,16 +3006,6 @@
      "lon": 18.0626,
      "website": "https://www.espressohouse.se/",
      "openingHours": "Mo-Fr 07:30-21:00; Sa 09:00-21:00; Su 09:00-21:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/3758991516",
-     "name": "Espresso House",
-     "lat": 59.31816,
-     "lon": 18.07147,
-     "website": "https://www.espressohouse.se/",
-     "openingHours": "Mo-Th 06:30-22:00, Fr 06:30-24:00, Sa 08:00-24:00, Su 08:00-22:00",
      "cuisine": "coffee shop",
      "detailed": true
     }
@@ -2194,7 +3246,17 @@
      "openingHours": "Mo-Tu 16:00-22:00; We-Th 16:00-23:00, Fr-Sa 15:00-23:00; Su 15:00-20:00",
      "cuisine": "british",
      "wikidataId": "Q10706003",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Tudor_arms.jpg/500px-Tudor_arms.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Ankara",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tudor_arms.jpg",
+      "fullWidth": 3872
+     }
     },
     {
      "id": "node/1451010622",
@@ -2310,7 +3372,18 @@
      "website": "https://www.cafeopera.se/",
      "openingHours": "Mo-Tu off; We-Su 22:00-03:00",
      "wikidataId": "Q1025651",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Cafe_Opera_entre.jpg/500px-Cafe_Opera_entre.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Opera_entre.jpg",
+      "fullWidth": 3264
+     },
+     "description": "nightclub"
     },
     {
      "id": "node/449884326",
@@ -2366,7 +3439,17 @@
      "website": "https://www.stureplansgruppen.se/the-spy-bar-1.aspx",
      "openingHours": "We-Sa 22:00-05:00",
      "wikidataId": "Q10676675",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Spy_bar.JPG/500px-Spy_bar.JPG",
+      "width": 500,
+      "height": 731,
+      "author": "I99pema",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spy_bar.JPG",
+      "fullWidth": 2848
+     }
     },
     {
      "id": "node/1393925985",
@@ -2376,7 +3459,18 @@
      "website": "https://www.sturecompagniet.se/",
      "openingHours": "Th-Sa 22:00-03:00",
      "wikidataId": "Q10682450",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Stureplanmord%2C_2.jpg/500px-Stureplanmord%2C_2.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "Holger.Ellgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stureplanmord,_2.jpg",
+      "fullWidth": 2973
+     },
+     "description": "Nightclub in Stockholm, Sweden"
     },
     {
      "id": "node/1422123882",
@@ -2391,7 +3485,18 @@
      "lat": 59.33218,
      "lon": 18.0739,
      "website": "https://www.berns.se/",
-     "wikidataId": "Q826740"
+     "wikidataId": "Q826740",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Berns_slonger_1880.jpg/500px-Berns_slonger_1880.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Berns_slonger_1880.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berns_slonger_1880.jpg",
+      "fullWidth": 866
+     },
+     "description": "restaurant in Stockholm, Sweden"
     },
     {
      "id": "node/6863422794",
@@ -2406,7 +3511,18 @@
      "lat": 59.3334,
      "lon": 18.05576,
      "website": "https://www.fasching.se/",
-     "wikidataId": "Q10494245"
+     "wikidataId": "Q10494245",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Fasching%2C_Stockholm.jpg/500px-Fasching%2C_Stockholm.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Esquilo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fasching,_Stockholm.jpg",
+      "fullWidth": 2400
+     },
+     "description": "jazz club in Stockholm, Sweden"
     },
     {
      "id": "node/1937145796",

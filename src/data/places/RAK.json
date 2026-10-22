@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "RAK",
- "fetchedAt": "2026-10-18T17:00:10.407Z",
+ "fetchedAt": "2026-10-22T06:33:48.193Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg/500px-Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Baca12",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg",
+      "fullWidth": 3648
+     },
+     "description": "Fas'ın Merakeş kentinde tarihi cami"
     },
     {
      "id": "way/1132585098",
@@ -68,7 +79,18 @@
       "heritage",
       "notPlace",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/MoroccoMarrakech_DjemaaElFna..jpg/500px-MoroccoMarrakech_DjemaaElFna..jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dániel Csörföly",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MoroccoMarrakech_DjemaaElFna..jpg",
+      "fullWidth": 1200
+     },
+     "description": "urban square and market in Marrakech and Moroccan cultural heritage site"
     },
     {
      "id": "relation/1770461",
@@ -84,7 +106,18 @@
       "heritage",
       "organization",
       "school"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Medersa-Ben-Youssef-01.jpg/500px-Medersa-Ben-Youssef-01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lundeux",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Medersa-Ben-Youssef-01.jpg",
+      "fullWidth": 2048
+     },
+     "description": "historic monument in Marrakesh, Morocco"
     },
     {
      "id": "relation/3241554",
@@ -98,7 +131,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Badi%2C_pal%C3%A1c%2C_Marr%C3%A1ke%C5%A1%2C_2025_%2810%29.jpg/500px-Badi%2C_pal%C3%A1c%2C_Marr%C3%A1ke%C5%A1%2C_2025_%2810%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Draceane",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Badi,_pal%C3%A1c,_Marr%C3%A1ke%C5%A1,_2025_(10).jpg",
+      "fullWidth": 6960
+     },
+     "description": "Moroccan cultural heritage site"
     },
     {
      "id": "node/374299688",
@@ -111,7 +155,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Bab_Agnaou.jpg/500px-Bab_Agnaou.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "John Doyle doyler79",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bab_Agnaou.jpg",
+      "fullWidth": 2429
+     },
+     "description": "city gate of Marrakesh, Morocco"
     },
     {
      "id": "way/614070192",
@@ -122,7 +177,18 @@
      "wikidataId": "Q3412514",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Koubba_Ba%27Adiyn.JPG",
+      "width": 500,
+      "height": 753,
+      "author": "Josep Renalias",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Koubba_Ba%27Adiyn.JPG",
+      "fullWidth": 332
+     },
+     "description": "old water fountain in Marrakesh"
     },
     {
      "id": "wikidata/Q2465115",
@@ -136,7 +202,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bahia_Palace_large_court.jpg/500px-Bahia_Palace_large_court.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Val Traveler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_large_court.jpg",
+      "fullWidth": 4873
+     },
+     "description": "palace and museum in Marrakesh, Morocco"
     },
     {
      "id": "wikidata/Q4886745",
@@ -150,7 +227,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Ben_Youssef_Mosque_PC264008_%282145401693%29.jpg/500px-Ben_Youssef_Mosque_PC264008_%282145401693%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Philip Sheldrake from London, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ben_Youssef_Mosque_PC264008_(2145401693).jpg",
+      "fullWidth": 1920
+     },
+     "description": "Mosque in Marrakesh, Morocco"
     },
     {
      "id": "wikidata/Q1948938",
@@ -163,7 +251,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Marrakesh_Kasbah_Mosque_view_from_roof_level.jpg/500px-Marrakesh_Kasbah_Mosque_view_from_roof_level.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Casual Builder",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Marrakesh_Kasbah_Mosque_view_from_roof_level.jpg",
+      "fullWidth": 1600
+     },
+     "description": "mosque in Marrakesh, Morocco"
     },
     {
      "id": "way/102739972",
@@ -177,7 +276,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Dar_El_Bacha.jpg/500px-Dar_El_Bacha.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "YassirZek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dar_El_Bacha.jpg",
+      "fullWidth": 5184
+     },
+     "description": "historic house museum in Marrakech, Morocco"
     },
     {
      "id": "way/448190360",
@@ -325,7 +435,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/MuseeDeMarrakech.jpg/500px-MuseeDeMarrakech.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "User:China_Crisis",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MuseeDeMarrakech.jpg",
+      "fullWidth": 2004
+     },
+     "description": "art museum in Marrakesh, Morocco"
     },
     {
      "id": "relation/15662474",
@@ -338,7 +459,18 @@
      "wikidataId": "Q2152745",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Saadian_Tombs_1044-HDR.jpg/500px-Saadian_Tombs_1044-HDR.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saadian_Tombs_1044-HDR.jpg",
+      "fullWidth": 3431
+     },
+     "description": "Moroccan cultural heritage site"
     },
     {
      "id": "node/5365982121",
@@ -350,7 +482,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Lazama_Jewish_Synagogue_-_Mellah_-_Hay_Essalam_-_Marrakech%2C_Morocco_%288138997209%29.jpg/500px-Lazama_Jewish_Synagogue_-_Mellah_-_Hay_Essalam_-_Marrakech%2C_Morocco_%288138997209%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "David Berkowitz from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lazama_Jewish_Synagogue_-_Mellah_-_Hay_Essalam_-_Marrakech,_Morocco_(8138997209).jpg",
+      "fullWidth": 4320
+     },
+     "description": "Synagogue in Marrakesh, Morocco"
     },
     {
      "id": "node/4595271890",
@@ -365,7 +508,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mouassine_douiria_DSCF8927.jpg/500px-Mouassine_douiria_DSCF8927.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Robert Prazeres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mouassine_douiria_DSCF8927.jpg",
+      "fullWidth": 3000
+     },
+     "description": "museum and historic house in Marrakesh, Morocco"
     },
     {
      "id": "node/5744334021",
@@ -380,7 +534,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Dar_El_Bacha.jpg/500px-Dar_El_Bacha.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "YassirZek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dar_El_Bacha.jpg",
+      "fullWidth": 5184
+     },
+     "description": "historic house museum in Marrakech, Morocco"
     },
     {
      "id": "node/4595267208",
@@ -394,7 +559,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Dar_Bellarj_2016-01-07_11-00-54_ILCE-6000_DSC01735_%2845791545494%29.jpg/500px-Dar_Bellarj_2016-01-07_11-00-54_ILCE-6000_DSC01735_%2845791545494%29.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Miguel Discart",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dar_Bellarj_2016-01-07_11-00-54_ILCE-6000_DSC01735_(45791545494).jpg",
+      "fullWidth": 3376
+     },
+     "description": "museum in Marrakech"
     },
     {
      "id": "node/4838054203",
@@ -781,6 +957,16 @@
      "detailed": true
     },
     {
+     "id": "node/13056096101",
+     "name": "Kech Badi",
+     "lat": 31.61978,
+     "lon": -7.98505,
+     "address": "Rue de Berrima 1",
+     "openingHours": "Mo-Su 09:00-22:00",
+     "cuisine": "moroccan",
+     "detailed": true
+    },
+    {
      "id": "node/4851287123",
      "name": "Kui-Zin",
      "lat": 31.63244,
@@ -798,16 +984,6 @@
      "address": "131 Rue Mouassine",
      "website": "https://lafontainedesepices.com/",
      "openingHours": "Mo-Su 10:00-00:00",
-     "detailed": true
-    },
-    {
-     "id": "node/2278835023",
-     "name": "La Terrasse Des Epices",
-     "lat": 31.63107,
-     "lon": -7.98888,
-     "address": "Souk Cherifia 15",
-     "website": "https://www.terrassedesepices.com/",
-     "openingHours": "12:00-23:00",
      "detailed": true
     }
    ]

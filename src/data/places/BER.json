@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BER",
- "fetchedAt": "2026-10-18T16:14:23.768Z",
+ "fetchedAt": "2026-10-22T05:21:10.594Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -58,7 +58,18 @@
       "heritage",
       "notPlace",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Brandenburger_Tor_morgens.jpg/500px-Brandenburger_Tor_morgens.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
+      "fullWidth": 5009
+     },
+     "description": "Almanya'nın Berlin şehrinin ana sembollerinden biri"
     },
     {
      "id": "relation/2201742",
@@ -72,7 +83,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Reichstagsgeb%C3%A4ude_von_Westen.jpg/500px-Reichstagsgeb%C3%A4ude_von_Westen.jpg",
+      "width": 500,
+      "height": 295,
+      "author": "Jörg Braukmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Reichstagsgeb%C3%A4ude_von_Westen.jpg",
+      "fullWidth": 8483
+     },
+     "description": "Alman Federal Meclisi'nin ve 1945'ten önce Weimar Cumhuriyeti'nin kendi adını taşıyan parlamentosunun merkezi"
     },
     {
      "id": "way/556435241",
@@ -89,7 +111,18 @@
       "heritage",
       "organization",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Tv-turm_-_panoramio.jpg/500px-Tv-turm_-_panoramio.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "L-BBE",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tv-turm_-_panoramio.jpg",
+      "fullWidth": 1447
+     },
+     "description": "television tower in Berlin"
     },
     {
      "id": "way/330840129",
@@ -102,7 +135,18 @@
      "kinds": [
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Berlin_Museumsinsel_Fernsehturm.jpg/500px-Berlin_Museumsinsel_Fernsehturm.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg",
+      "fullWidth": 5454
+     },
+     "description": "İnteraktif olarak faaliyet gösteren Almanya'da yer alan tarihi ve sanat müzesi"
     },
     {
      "id": "way/313670734",
@@ -117,7 +161,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Berliner_Dom_von_Humboldt-Box.jpg/500px-Berliner_Dom_von_Humboldt-Box.jpg",
+      "width": 500,
+      "height": 468,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berliner_Dom_von_Humboldt-Box.jpg",
+      "fullWidth": 17932
+     },
+     "description": "Berlin'de bulunan Protestan kilisesi"
     },
     {
      "id": "node/417346627",
@@ -131,7 +186,18 @@
      "wikidataId": "Q68689",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/06_Friedrichstrasse%2C_Berlin_-_Flickr_-_The_Central_Intelligence_Agency.jpg/500px-06_Friedrichstrasse%2C_Berlin_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "The Central Intelligence Agency",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:06_Friedrichstrasse,_Berlin_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:06_Friedrichstrasse,_Berlin_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
+      "fullWidth": 689
+     },
+     "description": "border checkpoint between East Berlin and West Berlin"
     },
     {
      "id": "wikidata/Q154828",
@@ -145,7 +211,18 @@
       "attraction",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Giraffe-berlin-zoo.jpg/500px-Giraffe-berlin-zoo.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Adamantios",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Giraffe-berlin-zoo.jpg",
+      "fullWidth": 2263
+     },
+     "description": "zoo in Germany"
     },
     {
      "id": "relation/3200536",
@@ -156,7 +233,18 @@
      "wikidataId": "Q152252",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PotsdamerPlatz_Vogelperspektive_2004_1.jpg/500px-PotsdamerPlatz_Vogelperspektive_2004_1.jpg",
+      "width": 500,
+      "height": 366,
+      "author": "Michael J. Zirbes",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:PotsdamerPlatz_Vogelperspektive_2004_1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PotsdamerPlatz_Vogelperspektive_2004_1.jpg",
+      "fullWidth": 997
+     },
+     "description": "square in Berlin, Germany"
     },
     {
      "id": "wikidata/Q160899",
@@ -168,7 +256,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Unter_den_Linden_von_oben.jpg/500px-Unter_den_Linden_von_oben.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Nath el Biya/Niels",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Unter_den_Linden_von_oben.jpg",
+      "fullWidth": 1920
+     },
+     "description": "street in Berlin, Germany"
     },
     {
      "id": "wikidata/Q152783",
@@ -179,7 +278,8 @@
      "wikidataId": "Q152783",
      "kinds": [
       "square"
-     ]
+     ],
+     "description": "square in Berlin, Germany"
     },
     {
      "id": "relation/910651",
@@ -192,7 +292,18 @@
      "wikidataId": "Q1097",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Berl%C3%ADn_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD.jpg/500px-Berl%C3%ADn_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "Ondřej Žváček",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berl%C3%ADn_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD.jpg",
+      "fullWidth": 4720
+     },
+     "description": "Almanya'da tren istasyonu"
     },
     {
      "id": "relation/3007958",
@@ -206,7 +317,18 @@
      "kinds": [
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg/500px-Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg",
+      "width": 500,
+      "height": 510,
+      "author": "Königlich Preußische Messbildanstalt",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg",
+      "fullWidth": 3078
+     },
+     "description": "Almanya, Berlin'da saray"
     },
     {
      "id": "way/718035022",
@@ -219,7 +341,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Siegessaeule_Berlin09072023.png/500px-Siegessaeule_Berlin09072023.png",
+      "width": 500,
+      "height": 750,
+      "author": "Zonk43",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Siegessaeule_Berlin09072023.png",
+      "fullWidth": 3428
+     },
+     "description": "Almanya, Berlin'de bir anıt sütunu"
     },
     {
      "id": "way/172234733",
@@ -231,7 +364,18 @@
      "website": "https://www.stiftung-denkmal.de/",
      "openingHours": "24/7",
      "wikipediaCount": 41,
-     "wikidataId": "Q160700"
+     "wikidataId": "Q160700",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg/500px-Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "NoRud",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg",
+      "fullWidth": 4454
+     },
+     "description": "Memorial in Berlin for the Jews murdered under the National Socialist regime"
     },
     {
      "id": "relation/4211905",
@@ -246,7 +390,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Rotes_Rathaus%2C_2024_%2801%29.jpg/500px-Rotes_Rathaus%2C_2024_%2801%29.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rotes_Rathaus,_2024_(01).jpg",
+      "fullWidth": 2647
+     },
+     "description": "Berlin belediye binası"
     },
     {
      "id": "wikidata/Q162684",
@@ -260,7 +415,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2016_Charite_Hospital.jpg/500px-2016_Charite_Hospital.jpg",
+      "width": 500,
+      "height": 286,
+      "author": "INTERRAILS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2016_Charite_Hospital.jpg",
+      "fullWidth": 930
+     },
+     "description": "university hospital in Berlin, Germany"
     },
     {
      "id": "way/1034456118",
@@ -276,7 +442,18 @@
       "heritage",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/0_3494_Berlin_-_Schloss_Bellevue.jpg/500px-0_3494_Berlin_-_Schloss_Bellevue.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:0_3494_Berlin_-_Schloss_Bellevue.jpg",
+      "fullWidth": 2490
+     },
+     "description": "Almanya cumhurbaşkanının resmî konutu ve çalışma yeri"
     },
     {
      "id": "wikidata/Q158058",
@@ -285,7 +462,18 @@
      "lat": 52.52111,
      "lon": 13.39694,
      "wikipediaCount": 36,
-     "wikidataId": "Q158058"
+     "wikidataId": "Q158058",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Berlin_-_Pergamonmuseum_-_Altar_02.jpg/500px-Berlin_-_Pergamonmuseum_-_Altar_02.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Lestat (Jan Mehlich)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_-_Pergamonmuseum_-_Altar_02.jpg",
+      "fullWidth": 2556
+     },
+     "description": "ancient Greek building from Pergamon, today in the Antikensammlung Berlin"
     },
     {
      "id": "wikidata/Q312576",
@@ -301,7 +489,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Berlin_-_Staatsoper_Unter_den_Linden.jpg/500px-Berlin_-_Staatsoper_Unter_den_Linden.jpg",
+      "width": 500,
+      "height": 349,
+      "author": "Marek Śliwecki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_-_Staatsoper_Unter_den_Linden.jpg",
+      "fullWidth": 5368
+     },
+     "description": "German opera house in Berlin"
     },
     {
      "id": "way/58608090",
@@ -316,7 +515,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Roman Catholic cathedral in Berlin, Germany"
     },
     {
      "id": "wikidata/Q694020",
@@ -327,7 +527,18 @@
      "wikidataId": "Q694020",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bln_Tiergtn8.jpg/500px-Bln_Tiergtn8.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bln_Tiergtn8.jpg",
+      "fullWidth": 2272
+     },
+     "description": "park in Berlin, Germany"
     },
     {
      "id": "wikidata/Q156716",
@@ -339,7 +550,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pariser_Platz_%28Berlin-Mitte%29_msu-1602-.jpg/500px-Pariser_Platz_%28Berlin-Mitte%29_msu-1602-.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Matthias Süßen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pariser_Platz_(Berlin-Mitte)_msu-1602-.jpg",
+      "fullWidth": 6224
+     },
+     "description": "town square in Berlin, Germany"
     },
     {
      "id": "way/24054915",
@@ -355,7 +577,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Neue_Synagoge%2C_Berlin-Mitte%2C_160328%2C_ako.jpg/500px-Neue_Synagoge%2C_Berlin-Mitte%2C_160328%2C_ako.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Ansgar Koreng",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Neue_Synagoge,_Berlin-Mitte,_160328,_ako.jpg",
+      "fullWidth": 2882
+     },
+     "description": "synagoge in Berlin"
     },
     {
      "id": "way/474111581",
@@ -370,7 +603,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/2018-08-09_DE_Berlin-Mitte%2C_Marienkirche_%2849912530273%29.jpg/500px-2018-08-09_DE_Berlin-Mitte%2C_Marienkirche_%2849912530273%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Paul Korecky",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018-08-09_DE_Berlin-Mitte,_Marienkirche_(49912530273).jpg",
+      "fullWidth": 5671
+     },
+     "description": "Bezirk Mitte von Berlin, Almanya'da kilise"
     },
     {
      "id": "way/844740667",
@@ -382,7 +626,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Gendarmenmarkt_2010_11_01.jpg/500px-Gendarmenmarkt_2010_11_01.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Christoph Matthias Siebenborn",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gendarmenmarkt_2010_11_01.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Berlin'de bir meydan"
     },
     {
      "id": "way/157390075",
@@ -396,7 +651,18 @@
      "wikidataId": "Q317027",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/07.08.21.Bundeskanzleramt.jpg/500px-07.08.21.Bundeskanzleramt.jpg",
+      "width": 500,
+      "height": 172,
+      "author": "Martin Künzel, Berlin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:07.08.21.Bundeskanzleramt.jpg",
+      "fullWidth": 6028
+     },
+     "description": "Office of the Federal Chancellor of Germany"
     },
     {
      "id": "way/28248283",
@@ -410,7 +676,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Berlin%2C_Franz%C3%B6sischer_Dom_--_2013_--_4581.jpg/500px-Berlin%2C_Franz%C3%B6sischer_Dom_--_2013_--_4581.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Franz%C3%B6sischer_Dom_--_2013_--_4581.jpg",
+      "fullWidth": 3345
+     },
+     "description": "Berlin, Fransız Katedrali"
     },
     {
      "id": "way/217512230",
@@ -426,7 +703,18 @@
       "heritage",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/150418_Konzerthaus_Berlin.jpg/500px-150418_Konzerthaus_Berlin.jpg",
+      "width": 500,
+      "height": 269,
+      "author": "Ansgar Koreng",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:150418_Konzerthaus_Berlin.jpg",
+      "fullWidth": 4936
+     },
+     "description": "concert hall and former theatre in Berlin, Germany"
     },
     {
      "id": "wikidata/Q698950",
@@ -438,7 +726,18 @@
      "wikidataId": "Q698950",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Sternwarte_Berlin_Schinkel.jpg/500px-Sternwarte_Berlin_Schinkel.jpg",
+      "width": 500,
+      "height": 398,
+      "author": "Carl Daniel Freydanck",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sternwarte_Berlin_Schinkel.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sternwarte_Berlin_Schinkel.jpg",
+      "fullWidth": 529
+     },
+     "description": "astronomik gözlemevi"
     },
     {
      "id": "relation/3626485",
@@ -455,7 +754,8 @@
       "musicVenue",
       "organization",
       "performingArts"
-     ]
+     ],
+     "description": "concert hall in Berlin, Germany"
     },
     {
      "id": "wikidata/Q699504",
@@ -467,7 +767,8 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "description": "square in Berlin, Germany"
     },
     {
      "id": "way/43347270",
@@ -482,7 +783,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Berlin%2C_Mitte%2C_Gendarmenmarkt%2C_Deutscher_Dom_02.jpg/500px-Berlin%2C_Mitte%2C_Gendarmenmarkt%2C_Deutscher_Dom_02.jpg",
+      "width": 500,
+      "height": 414,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Gendarmenmarkt,_Deutscher_Dom_02.jpg",
+      "fullWidth": 2768
+     },
+     "description": "Bezirk Mitte von Berlin, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q702512",
@@ -494,7 +806,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Altes_Museum_%26_Lustgarten.jpg/500px-Altes_Museum_%26_Lustgarten.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "CruiseTommy",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Altes_Museum_%26_Lustgarten.jpg",
+      "fullWidth": 1139
+     },
+     "description": "square in Berlin"
     },
     {
      "id": "way/24240381",
@@ -507,7 +830,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/150214_Neue_Wache_Berlin.jpg/500px-150214_Neue_Wache_Berlin.jpg",
+      "width": 500,
+      "height": 328,
+      "author": "Ansgar Koreng",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:150214_Neue_Wache_Berlin.jpg",
+      "fullWidth": 4563
+     },
+     "description": "historical building in Berlin, Germany"
     },
     {
      "id": "wikidata/Q687694",
@@ -523,7 +857,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Berlin%2C_Mitte%2C_Behrenstra%C3%9Fe%2C_Komische_Oper_02.jpg/500px-Berlin%2C_Mitte%2C_Behrenstra%C3%9Fe%2C_Komische_Oper_02.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Behrenstra%C3%9Fe,_Komische_Oper_02.jpg",
+      "fullWidth": 2680
+     },
+     "description": "opera house"
     },
     {
      "id": "wikidata/Q317094",
@@ -534,7 +879,18 @@
      "wikidataId": "Q317094",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Siegess%C3%A4ule_View4.JPG/500px-Siegess%C3%A4ule_View4.JPG",
+      "width": 500,
+      "height": 374,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Siegess%C3%A4ule_View4.JPG",
+      "fullWidth": 2288
+     },
+     "description": "thoroughfare in Berlin, Germany"
     },
     {
      "id": "wikidata/Q698497",
@@ -547,7 +903,8 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "description": "Almanya'da tren istasyonu"
     },
     {
      "id": "wikidata/Q702402",
@@ -561,7 +918,8 @@
       "heritage",
       "office",
       "station"
-     ]
+     ],
+     "description": "Berlin'de tren istasyonu"
     },
     {
      "id": "wikidata/Q269622",
@@ -572,7 +930,8 @@
      "wikidataId": "Q269622",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "description": "human settlement in Germany"
     },
     {
      "id": "wikidata/Q316893",
@@ -584,7 +943,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Berlin_Downtown_Friedrichstra%C3%9Fe.jpg/500px-Berlin_Downtown_Friedrichstra%C3%9Fe.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dl.mooz",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Downtown_Friedrichstra%C3%9Fe.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Downtown_Friedrichstra%C3%9Fe.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Berlin'de bir cadde"
     },
     {
      "id": "way/183272253",
@@ -593,7 +963,18 @@
      "lon": 13.37352,
      "website": "https://www.das-center-am-potsdamer-platz.de/",
      "wikipediaCount": 22,
-     "wikidataId": "Q641108"
+     "wikidataId": "Q641108",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Sony_Center_Berlin_Innenansicht_72dpi_01.jpg/500px-Sony_Center_Berlin_Innenansicht_72dpi_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fabian Sandner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sony_Center_Berlin_Innenansicht_72dpi_01.jpg",
+      "fullWidth": 1224
+     },
+     "description": "ensemble of buildings in Berlin, Germany"
     },
     {
      "id": "wikidata/Q565670",
@@ -606,7 +987,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Friedrichstadtpalast-BLN.jpg/500px-Friedrichstadtpalast-BLN.jpg",
+      "width": 500,
+      "height": 290,
+      "author": "Arbalete",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Friedrichstadtpalast-BLN.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Friedrichstadtpalast-BLN.jpg",
+      "fullWidth": 1024
+     },
+     "description": "revue theatre in Berlin"
     },
     {
      "id": "way/41368167",
@@ -619,7 +1011,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Berlin_%28DE%29%2C_Sowjetisches_Ehrenmal_--_2021_--_9317.jpg/500px-Berlin_%28DE%29%2C_Sowjetisches_Ehrenmal_--_2021_--_9317.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Anil Öztas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_(DE),_Sowjetisches_Ehrenmal_--_2021_--_9317.jpg",
+      "fullWidth": 3704
+     },
+     "description": "Almanya'da mezarlık"
     },
     {
      "id": "way/23813204",
@@ -630,7 +1033,8 @@
      "wikidataId": "Q650657",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "fountain in Berlin, Germany"
     },
     {
      "id": "way/312391532",
@@ -643,7 +1047,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Nikolaivrtl_1a.jpg/500px-Nikolaivrtl_1a.jpg",
+      "width": 500,
+      "height": 291,
+      "author": "User:Manfred Brückels",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nikolaivrtl_1a.jpg",
+      "fullWidth": 1420
+     },
+     "description": "old quarter of the German capital of Berlin"
     },
     {
      "id": "wikidata/Q30447692",
@@ -656,7 +1071,8 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "description": "mosque in Germany"
     },
     {
      "id": "way/43723722",
@@ -667,44 +1083,8 @@
      "wikidataId": "Q386482",
      "kinds": [
       "heritage"
-     ]
-    },
-    {
-     "id": "wikidata/Q671428",
-     "name": "Landwehrkanal",
-     "localName": "Landwehr Canal",
-     "lat": 52.4978,
-     "lon": 13.3925,
-     "wikipediaCount": 20,
-     "wikidataId": "Q671428",
-     "kinds": [
-      "heritage"
-     ]
-    },
-    {
-     "id": "way/27695497",
-     "name": "Portikus des zerstörten Anhalter Bahnhofs",
-     "lat": 52.50368,
-     "lon": 13.38252,
-     "address": "Askanischer Platz 6",
-     "wikipediaCount": 20,
-     "wikidataId": "Q695244",
-     "kinds": [
-      "heritage",
-      "station"
-     ]
-    },
-    {
-     "id": "wikidata/Q196970",
-     "name": "Zeughaus",
-     "lat": 52.5178,
-     "lon": 13.3969,
-     "wikipediaCount": 20,
-     "wikidataId": "Q196970",
-     "kinds": [
-      "heritage",
-      "organization"
-     ]
+     ],
+     "description": "collection of cultural buildings in Berlin, Germany"
     }
    ]
   },
@@ -726,7 +1106,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Pergamonmuseum_Front.jpg/500px-Pergamonmuseum_Front.jpg",
+      "width": 500,
+      "height": 298,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pergamonmuseum_Front.jpg",
+      "fullWidth": 1024
+     },
+     "description": "museum building in Berlin, part of the Museumsinsel, presents the Vorderasiatisches Museum, the Museum für Islamische Kunst and parts of the Antikensammlung"
     },
     {
      "id": "wikidata/Q154996",
@@ -740,7 +1131,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Schloss_Charlottenburg_2025.jpg/500px-Schloss_Charlottenburg_2025.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "abbilder",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Charlottenburg_2025.jpg",
+      "fullWidth": 7728
+     },
+     "description": "Berlin'in en büyük sarayı ve Hohenzollern Hanedanı'nın Berlin'deki tek mirası"
     },
     {
      "id": "way/18578139",
@@ -756,7 +1158,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Neues_Museum_-_Joy_of_Museums.jpg/500px-Neues_Museum_-_Joy_of_Museums.jpg",
+      "width": 500,
+      "height": 264,
+      "author": "Joyofmuseums",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Neues_Museum_-_Joy_of_Museums.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Name of one of the museum buildings on the Museum Island in Berlin, Germany"
     },
     {
      "id": "relation/3619",
@@ -773,7 +1186,18 @@
       "museum",
       "organization",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg/500px-Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg",
+      "width": 500,
+      "height": 314,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg",
+      "fullWidth": 2000
+     },
+     "description": "antiquities museum in Berlin, Germany"
     },
     {
      "id": "relation/4211594",
@@ -789,7 +1213,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Berlin_Museumsinsel_Fernsehturm.jpg/500px-Berlin_Museumsinsel_Fernsehturm.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg",
+      "fullWidth": 5454
+     },
+     "description": "art museum in Berlin"
     },
     {
      "id": "wikidata/Q254156",
@@ -802,7 +1237,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Neues_Museum_-_Joy_of_Museums.jpg/500px-Neues_Museum_-_Joy_of_Museums.jpg",
+      "width": 500,
+      "height": 264,
+      "author": "Joyofmuseums",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Neues_Museum_-_Joy_of_Museums.jpg",
+      "fullWidth": 6000
+     },
+     "description": "part of the Neues Museum, collection of Ancient Egyptian artifacts"
     },
     {
      "id": "relation/3626233",
@@ -816,7 +1262,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Kulturforum.Berlin.Portal.jpg/500px-Kulturforum.Berlin.Portal.jpg",
+      "width": 500,
+      "height": 200,
+      "author": "Membeth",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kulturforum.Berlin.Portal.jpg",
+      "fullWidth": 10368
+     },
+     "description": "art museum in Berlin, Germany"
     },
     {
      "id": "way/313670733",
@@ -832,7 +1289,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/AlteNationalgalerie_1a.jpg/500px-AlteNationalgalerie_1a.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Manfred Brückels",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg",
+      "fullWidth": 2272
+     },
+     "description": "art museum in Berlin, Germany"
     },
     {
      "id": "way/302942554",
@@ -847,7 +1315,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Berlin_J%C3%BCdisches_Museum_und_der_Libeskind-Bau_%28cropped%29.jpg/500px-Berlin_J%C3%BCdisches_Museum_und_der_Libeskind-Bau_%28cropped%29.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "Marek Śliwecki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_J%C3%BCdisches_Museum_und_der_Libeskind-Bau_(cropped).jpg",
+      "fullWidth": 9267
+     },
+     "description": "museum in Berlin"
     },
     {
      "id": "node/538692583",
@@ -863,7 +1342,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Berlin%2C_Mitte%2C_Invalidenstrasse_43%2C_Museum_f%C3%BCr_Naturkunde.jpg/500px-Berlin%2C_Mitte%2C_Invalidenstrasse_43%2C_Museum_f%C3%BCr_Naturkunde.jpg",
+      "width": 500,
+      "height": 326,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Invalidenstrasse_43,_Museum_f%C3%BCr_Naturkunde.jpg",
+      "fullWidth": 2247
+     },
+     "description": "natural history museum in Berlin, Germany"
     },
     {
      "id": "node/3203167561",
@@ -878,7 +1368,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Berlin%2C_Mitte%2C_Unter_den_Linden%2C_Zeughaus_09.jpg/500px-Berlin%2C_Mitte%2C_Unter_den_Linden%2C_Zeughaus_09.jpg",
+      "width": 500,
+      "height": 350,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Unter_den_Linden,_Zeughaus_09.jpg",
+      "fullWidth": 2839
+     },
+     "description": "museum of German history in Berlin"
     },
     {
      "id": "way/31622818",
@@ -893,7 +1394,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Deutsches_Technikmuseum_Berlin-49410.jpg/500px-Deutsches_Technikmuseum_Berlin-49410.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin-49410.jpg",
+      "fullWidth": 5060
+     },
+     "description": "museum in Berlin, Germany"
     },
     {
      "id": "way/23813200",
@@ -908,7 +1420,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/View_Berlin_TV_Tower_Jan2015_img4.jpg/500px-View_Berlin_TV_Tower_Jan2015_img4.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_Berlin_TV_Tower_Jan2015_img4.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Bezirk Mitte von Berlin, Almanya'da kilise"
     },
     {
      "id": "node/8413352835",
@@ -923,7 +1446,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/At_Berlin_2024_241.jpg/500px-At_Berlin_2024_241.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:At_Berlin_2024_241.jpg",
+      "fullWidth": 6960
+     },
+     "description": "museum in Berlin, Germany"
     },
     {
      "id": "way/25652321",
@@ -938,7 +1472,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum in Berlin, Germany"
     },
     {
      "id": "wikidata/Q414110",
@@ -954,7 +1489,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Akademie_der_k%C3%BCnste_berlin.JPG/500px-Akademie_der_k%C3%BCnste_berlin.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "De-okin ( talk ) 05:44, 31 July 2008 (UTC)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Akademie_der_k%C3%BCnste_berlin.JPG",
+      "fullWidth": 3072
+     },
+     "description": "national German academic institution for the advancement of the arts; created in 1993 through the merger of the West and East German academies"
     },
     {
      "id": "wikidata/Q700216",
@@ -967,7 +1513,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Institut_f%C3%BCr_Museumsforschung.jpg/500px-Institut_f%C3%BCr_Museumsforschung.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "DerHisto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Institut_f%C3%BCr_Museumsforschung.jpg",
+      "fullWidth": 4000
+     },
+     "description": "group of institutions in Berlin, Germany"
     },
     {
      "id": "node/1860480265",
@@ -982,7 +1539,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Hamburger_Bahnhof%2C_Berlin%2C_Eingangsbereich-49290.jpg/500px-Hamburger_Bahnhof%2C_Berlin%2C_Eingangsbereich-49290.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburger_Bahnhof,_Berlin,_Eingangsbereich-49290.jpg",
+      "fullWidth": 3606
+     },
+     "description": "museum of contemporary art located in a former railway station in Berlin-Moabit"
     },
     {
      "id": "node/2818117012",
@@ -998,7 +1566,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Schwules_Museum_Berlin%2C_Bibliothek.jpg/500px-Schwules_Museum_Berlin%2C_Bibliothek.jpg",
+      "width": 500,
+      "height": 190,
+      "author": "Simon Cobb",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schwules_Museum_Berlin,_Bibliothek.jpg",
+      "fullWidth": 3199
+     },
+     "description": "museum of LGBTQ history in Berlin, Germany"
     },
     {
      "id": "way/24368681",
@@ -1013,7 +1592,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Topographie_des_Terrors_Neubau.jpg/500px-Topographie_des_Terrors_Neubau.jpg",
+      "width": 500,
+      "height": 666,
+      "author": "Stiftung Topographie des Terrors",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Topographie_des_Terrors_Neubau.jpg",
+      "fullWidth": 1995
+     },
+     "description": "military museum"
     },
     {
      "id": "way/1065864180",
@@ -1034,7 +1624,18 @@
       "performingArts",
       "sportsVenue",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Berlin_Kongresshalle_BW_3.jpg/500px-Berlin_Kongresshalle_BW_3.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Kongresshalle_BW_3.jpg",
+      "fullWidth": 3375
+     },
+     "description": "exhibition space and events venue in Berlin"
     },
     {
      "id": "way/33743630",
@@ -1049,7 +1650,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Berlinische_Galerie_aussen.JPG/500px-Berlinische_Galerie_aussen.JPG",
+      "width": 500,
+      "height": 500,
+      "author": "Foto Christoph Rehbach",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlinische_Galerie_aussen.JPG",
+      "fullWidth": 2138
+     },
+     "description": "Berlin'de bir müze"
     },
     {
      "id": "wikidata/Q811389",
@@ -1064,7 +1676,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bauhaus_archiv_berlijn.JPG/500px-Bauhaus_archiv_berlijn.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Max Hermus at Dutch Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus_archiv_berlijn.JPG",
+      "fullWidth": 2048
+     },
+     "description": "museum and archive in Berlin"
     },
     {
      "id": "wikidata/Q688353",
@@ -1077,7 +1700,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Humboldt_Forum-9148.jpg/500px-Humboldt_Forum-9148.jpg",
+      "width": 500,
+      "height": 307,
+      "author": "GodeNehler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Humboldt_Forum-9148.jpg",
+      "fullWidth": 5472
+     },
+     "description": "museum in Berlin (part of Berlin State Museums)"
     },
     {
      "id": "way/175149971",
@@ -1092,7 +1726,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Spree_-_panoramio_%283%29.jpg/500px-Spree_-_panoramio_%283%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Romāns Kolduns",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spree_-_panoramio_(3).jpg",
+      "fullWidth": 1920
+     },
+     "description": "Berlin museum showing everyday life in East Germany"
     },
     {
      "id": "node/2401869345",
@@ -1107,7 +1752,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Berlin-Mauermuseum_am_Checkpoint_Charlie.jpg/500px-Berlin-Mauermuseum_am_Checkpoint_Charlie.jpg",
+      "width": 500,
+      "height": 435,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin-Mauermuseum_am_Checkpoint_Charlie.jpg",
+      "fullWidth": 1500
+     },
+     "description": "museum in Berlin, Germany"
     },
     {
      "id": "relation/28134",
@@ -1121,7 +1777,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Kulturforum_2007_5.jpg/500px-Kulturforum_2007_5.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Manfred Brueckels",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kulturforum_2007_5.jpg",
+      "fullWidth": 1136
+     },
+     "description": "museum of Decorative Arts in Berlin"
     },
     {
      "id": "way/22990151",
@@ -1137,7 +1804,18 @@
       "museum",
       "musicVenue",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Berlin_Musikinstrumentenmuseum_01.jpg/500px-Berlin_Musikinstrumentenmuseum_01.jpg",
+      "width": 500,
+      "height": 258,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Musikinstrumentenmuseum_01.jpg",
+      "fullWidth": 3264
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "wikidata/Q1954632",
@@ -1150,7 +1828,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mschatta-Fassade_%28Pergamonmuseum%29.jpg/500px-Mschatta-Fassade_%28Pergamonmuseum%29.jpg",
+      "width": 500,
+      "height": 367,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mschatta-Fassade_(Pergamonmuseum).jpg",
+      "fullWidth": 2450
+     },
+     "description": "museum in Berlin, Germany"
     },
     {
      "id": "relation/11516702",
@@ -1168,7 +1857,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Martin-Gropius-Bau_Berlin_cropped.jpg/500px-Martin-Gropius-Bau_Berlin_cropped.jpg",
+      "width": 500,
+      "height": 310,
+      "author": "Jensens",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Martin-Gropius-Bau_Berlin_cropped.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Martin-Gropius-Bau_Berlin_cropped.jpg",
+      "fullWidth": 2350
+     },
+     "description": "museum in Berlin-Kreuzberg, Germany"
     },
     {
      "id": "wikidata/Q162610",
@@ -1180,7 +1880,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/AlteNationalgalerie_1a.jpg/500px-AlteNationalgalerie_1a.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Manfred Brückels",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg",
+      "fullWidth": 2272
+     },
+     "description": "national gallery of Germany at Berlin"
     },
     {
      "id": "wikidata/Q542084",
@@ -1192,7 +1903,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Pergamonmuseum_Babylon_Ischtar-Tor.jpg/500px-Pergamonmuseum_Babylon_Ischtar-Tor.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pergamonmuseum_Babylon_Ischtar-Tor.jpg",
+      "fullWidth": 1800
+     },
+     "description": "archaeological museum in Berlin"
     },
     {
      "id": "way/194422265",
@@ -1206,7 +1928,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "visitor center and art museum in Berlin"
     },
     {
      "id": "way/22990276",
@@ -1220,7 +1943,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Berlin_Kulturforum_Kunstbibliothek_und_Kupferstichkabinett.jpg/500px-Berlin_Kulturforum_Kunstbibliothek_und_Kupferstichkabinett.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Kulturforum_Kunstbibliothek_und_Kupferstichkabinett.jpg",
+      "fullWidth": 3264
+     },
+     "description": "prints museum in Berlin, Germany"
     },
     {
      "id": "relation/1652105",
@@ -1229,14 +1963,25 @@
      "lon": 13.4147,
      "address": "Am Köllnischen Park 5",
      "website": "http://www.stadtmuseum.de/maerkisches-museum",
-     "openingHours": "Tu-Su 10:00-18:00; We 12:00-20:00",
+     "openingHours": "closed",
      "wikipediaCount": 13,
      "wikidataId": "Q573672",
      "kinds": [
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/M%C3%A4rkisches_Museum_Berlin.jpg/500px-M%C3%A4rkisches_Museum_Berlin.jpg",
+      "width": 500,
+      "height": 342,
+      "author": "Axel Mauruszat",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%A4rkisches_Museum_Berlin.jpg",
+      "fullWidth": 2702
+     },
+     "description": "museum of the city of Berlin and the region around Berlin in Berlin"
     },
     {
      "id": "wikidata/Q370045",
@@ -1248,7 +1993,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Humboldt_Forum-9148.jpg/500px-Humboldt_Forum-9148.jpg",
+      "width": 500,
+      "height": 307,
+      "author": "GodeNehler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Humboldt_Forum-9148.jpg",
+      "fullWidth": 5472
+     },
+     "description": "museum in Berlin, Germany"
     },
     {
      "id": "node/2164030082",
@@ -1263,7 +2019,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Anne-frank-zentrum.jpg/500px-Anne-frank-zentrum.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "SPKrautkrämer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Anne-frank-zentrum.jpg",
+      "fullWidth": 2448
+     },
+     "description": "museum"
     },
     {
      "id": "node/73696610",
@@ -1279,7 +2046,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Bendlerblock.jpg/500px-Bendlerblock.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Adam Carr at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bendlerblock.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bendlerblock.jpg",
+      "fullWidth": 1600
+     },
+     "description": "memorial and museum in Berlin, Germany"
     },
     {
      "id": "node/3749451170",
@@ -1294,7 +2072,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Berlin"
     },
     {
      "id": "way/285972948",
@@ -1311,7 +2090,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Berlin%2C_Mitte%2C_Nikolaiviertel%2C_Palais_Ephraim.jpg/500px-Berlin%2C_Mitte%2C_Nikolaiviertel%2C_Palais_Ephraim.jpg",
+      "width": 500,
+      "height": 367,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Nikolaiviertel,_Palais_Ephraim.jpg",
+      "fullWidth": 1678
+     },
+     "description": "Rokoko building in Berlin. Location for special exhibitions by the Stadtmuseum Berlin on wide-ranging themes related to the history and culture of Berlin."
     }
    ]
   },
@@ -1328,7 +2118,18 @@
      "website": "https://www.bundestag.de/besuche/architektur/reichstag/kuppel",
      "openingHours": "08:00-21:45; Dec 24 off; Dec 31 08:00-13:00",
      "wikipediaCount": 6,
-     "wikidataId": "Q4809837"
+     "wikidataId": "Q4809837",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Reichstag_Luft_2004.jpg/500px-Reichstag_Luft_2004.jpg",
+      "width": 500,
+      "height": 389,
+      "author": "Michael J. Zirbes",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Reichstag_Luft_2004.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Reichstag_Luft_2004.jpg",
+      "fullWidth": 900
+     },
+     "description": "addition to the Reichstag by Norman Foster 1995–1999"
     },
     {
      "id": "node/773640801",
@@ -1781,7 +2582,18 @@
      "openingHours": "Mo-Su 07:00-22:00",
      "cuisine": "international",
      "wikidataId": "Q1025595",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Caf%C3%A9_Einstein_Unter_den_Linden_Berlin.jpg/500px-Caf%C3%A9_Einstein_Unter_den_Linden_Berlin.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "No machine-readable author provided. Gryffindor assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_Einstein_Unter_den_Linden_Berlin.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_Einstein_Unter_den_Linden_Berlin.jpg",
+      "fullWidth": 640
+     },
+     "description": "café"
     },
     {
      "id": "node/336139006",
@@ -2120,7 +2932,18 @@
      "openingHours": "Tu-Th 19:00-02:00, Fr-Sa 19:00-03:00",
      "cuisine": "juice, coffee shop",
      "wikidataId": "Q105762302",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Schokoladen_ackerstr_2017-05-09.png/500px-Schokoladen_ackerstr_2017-05-09.png",
+      "width": 500,
+      "height": 652,
+      "author": "Babewyn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schokoladen_ackerstr_2017-05-09.png",
+      "fullWidth": 2727
+     },
+     "description": "chocolate factory turned music venue"
     },
     {
      "id": "node/322178039",
@@ -2377,7 +3200,18 @@
      "website": "http://b-flat-berlin.de/",
      "openingHours": "Mo-Su 20:00-01:00",
      "wikidataId": "Q795132",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Berlin%2C_Mitte%2C_Dircksenstrasse_40%2C_Mietshaus.jpg/500px-Berlin%2C_Mitte%2C_Dircksenstrasse_40%2C_Mietshaus.jpg",
+      "width": 500,
+      "height": 527,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Dircksenstrasse_40,_Mietshaus.jpg",
+      "fullWidth": 1453
+     },
+     "description": "jazz club in Berlin"
     },
     {
      "id": "node/910429971",
@@ -2398,7 +3232,18 @@
      "website": "https://www.claerchensball.haus/",
      "openingHours": "Tu-Fr 17:00-23:00; Sa-Su 14:00-23:00",
      "wikidataId": "Q1103846",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Berlin%2C_Mitte%2C_Auguststrasse_24-25%2C_Claerchens_Ballhaus.jpg/500px-Berlin%2C_Mitte%2C_Auguststrasse_24-25%2C_Claerchens_Ballhaus.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "Jörg Zägel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Auguststrasse_24-25,_Claerchens_Ballhaus.jpg",
+      "fullWidth": 1775
+     },
+     "description": "Ballroom in Berlin, Germany"
     },
     {
      "id": "way/36908987",
@@ -2429,7 +3274,8 @@
      "website": "https://metropol-berlin.de/",
      "openingHours": "\"zu Veranstaltungen\"",
      "wikidataId": "Q1724204",
-     "detailed": true
+     "detailed": true,
+     "description": "event location, a former theatre with concert hall, later cinema and discotheque, in Schöneberg, Berlin, Germany"
     },
     {
      "id": "node/7230925407",
@@ -2459,7 +3305,18 @@
      "website": "https://club.ritterbutzke.com/",
      "openingHours": "\"siehe Website\"",
      "wikidataId": "Q21036533",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Berlin_Ritterstra%C3%9Fe_Aqua_Carr%C3%A9_Haus_D.jpg/500px-Berlin_Ritterstra%C3%9Fe_Aqua_Carr%C3%A9_Haus_D.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Ritterstra%C3%9Fe_Aqua_Carr%C3%A9_Haus_D.jpg",
+      "fullWidth": 2448
+     },
+     "description": "techno club in Berlin"
     },
     {
      "id": "node/3830239588",
@@ -2551,7 +3408,8 @@
      "lat": 52.51598,
      "lon": 13.41693,
      "website": "https://www.goldengate-berlin.de/",
-     "wikidataId": "Q21036515"
+     "wikidataId": "Q21036515",
+     "description": "club in Berlin"
     },
     {
      "id": "way/136852556",
@@ -2576,7 +3434,8 @@
      "lon": 13.42533,
      "address": "Holzmarktstraße 25",
      "website": "http://www.katerblau.de/",
-     "wikidataId": "Q2658747"
+     "wikidataId": "Q2658747",
+     "description": "techno club in Berlin"
     },
     {
      "id": "node/729294555",
@@ -2585,7 +3444,18 @@
      "lon": 13.41692,
      "address": "Köpenicker Straße 76",
      "website": "http://www.kitkatclub.org/",
-     "wikidataId": "Q322135"
+     "wikidataId": "Q322135",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kit-Kat_Club_6454.jpg/500px-Kit-Kat_Club_6454.jpg",
+      "width": 500,
+      "height": 319,
+      "author": "GodeNehler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kit-Kat_Club_6454.jpg",
+      "fullWidth": 7107
+     },
+     "description": "Berlin nightclub"
     },
     {
      "id": "node/12137704154",

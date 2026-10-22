@@ -26,6 +26,6 @@ export function describeSearch(state: SearchState): { title: string; description
     title: `${origin.nameTr} → ${destination.nameTr} · ${range} · ${state.pax} kişi`,
     description:
       `${origin.nameTr} (${origin.airports.join(", ")}) çıkışlı ${destination.nameTr}, ${destination.countryTr} planı: ` +
-      `${range}, ${nights} gece, ${state.pax} kişi. Uçuş, vize, TL bütçe ve gün gün şehir rehberi.`,
+      `${range}, ${nights} gece, ${state.pax} kişi. Uçuş, TL bütçe, görülecek yerler ve gün gün plan.`,
   };
 }

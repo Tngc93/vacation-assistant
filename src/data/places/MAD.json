@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "MAD",
- "fetchedAt": "2026-10-18T16:05:12.519Z",
+ "fetchedAt": "2026-10-22T05:15:09.339Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q164027",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg/500px-Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Zoser",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg",
+      "fullWidth": 1920
+     },
+     "description": "Real Madrid'in stadyumu"
     },
     {
      "id": "relation/30399",
@@ -70,7 +81,18 @@
       "organization",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Palacio_Real_de_Madrid_Julio_2016_%28cropped%29.jpg/500px-Palacio_Real_de_Madrid_Julio_2016_%28cropped%29.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Tim Adams",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Real_de_Madrid_Julio_2016_(cropped).jpg",
+      "fullWidth": 2784
+     },
+     "description": "Madrid Kraliyet Sarayı"
     },
     {
      "id": "wikidata/Q849711",
@@ -82,7 +104,18 @@
      "wikidataId": "Q849711",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Almudena_2022_-_overview.jpg/500px-Almudena_2022_-_overview.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Almudena_2022_-_overview.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Roman Catholic cathedral in Madrid, Spain"
     },
     {
      "id": "relation/16657232",
@@ -94,7 +127,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Madrid%2C_Plaza_Mayor%2C_2016%2C_%2802%29.jpg/500px-Madrid%2C_Plaza_Mayor%2C_2016%2C_%2802%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Draceane",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madrid,_Plaza_Mayor,_2016,_(02).jpg",
+      "fullWidth": 4272
+     },
+     "description": "square in Madrid, Spain"
     },
     {
      "id": "wikidata/Q1131807",
@@ -107,7 +151,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/June_Parc_Retiro_Madrid_-_Mythos_Spain_Photography_2014_-_panoramio_%288%29.jpg/500px-June_Parc_Retiro_Madrid_-_Mythos_Spain_Photography_2014_-_panoramio_%288%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "pictures Jettcom",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:June_Parc_Retiro_Madrid_-_Mythos_Spain_Photography_2014_-_panoramio_(8).jpg",
+      "fullWidth": 4016
+     },
+     "description": "urban park in Madrid, Spain"
     },
     {
      "id": "relation/7424032",
@@ -118,7 +173,18 @@
      "wikidataId": "Q427163",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Puerta_del_Sol_%28Madrid%29_03.jpg/500px-Puerta_del_Sol_%28Madrid%29_03.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "tnarik from Spain",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol_(Madrid)_03.jpg",
+      "fullWidth": 1280
+     },
+     "description": "square in Madrid, Spain"
     },
     {
      "id": "relation/7148326",
@@ -129,7 +195,18 @@
      "wikidataId": "Q23093",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Estaci%C3%B3n_de_Atocha_%28Madrid%29_06.jpg/500px-Estaci%C3%B3n_de_Atocha_%28Madrid%29_06.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Roxanna Salceda from United States",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_de_Atocha_(Madrid)_06.jpg",
+      "fullWidth": 3008
+     },
+     "description": "Madrid İspanya'da bir tren istasyonu"
     },
     {
      "id": "wikidata/Q211250",
@@ -144,7 +221,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Teatro_Real_de_Madrid_2025.jpg/500px-Teatro_Real_de_Madrid_2025.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Real_de_Madrid_2025.jpg",
+      "fullWidth": 4761
+     },
+     "description": "opera house in Madrid, Spain"
     },
     {
      "id": "wikidata/Q1324163",
@@ -157,7 +245,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Gran_V%C3%ADa_%28Madrid%29_1.jpg/500px-Gran_V%C3%ADa_%28Madrid%29_1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Felipe Gabaldón",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gran_V%C3%ADa_(Madrid)_1.jpg",
+      "fullWidth": 4310
+     },
+     "description": "İspanya'nın Madrid şehrindeki bir ana yol"
     },
     {
      "id": "wikidata/Q1326261",
@@ -169,7 +268,18 @@
      "wikidataId": "Q1326261",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Plaza_de_Espa%C3%B1a_de_Madrid_-_02.jpg/500px-Plaza_de_Espa%C3%B1a_de_Madrid_-_02.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plaza_de_Espa%C3%B1a_de_Madrid_-_02.jpg",
+      "fullWidth": 3752
+     },
+     "description": "square in Madrid, Spain"
     },
     {
      "id": "wikidata/Q539019",
@@ -181,7 +291,18 @@
      "wikidataId": "Q539019",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Palacio_de_Deportes_%28Madrid%29_16.jpg/500px-Palacio_de_Deportes_%28Madrid%29_16.jpg",
+      "width": 500,
+      "height": 317,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Deportes_(Madrid)_16.jpg",
+      "fullWidth": 3538
+     },
+     "description": "multipurpose venue in Madrid, Spain"
     },
     {
      "id": "wikidata/Q2079615",
@@ -195,7 +316,18 @@
       "promenade",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Paseo_del_Prado_%28Madrid%29_01.jpg/500px-Paseo_del_Prado_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Martin Snopek from Prague ( Czech Republic )",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paseo_del_Prado_(Madrid)_01.jpg",
+      "fullWidth": 1280
+     },
+     "description": "cultural property in Madrid Distritos: Centro y Retiro, Spain"
     },
     {
      "id": "wikidata/Q833213",
@@ -204,7 +336,18 @@
      "lat": 40.41194,
      "lon": -3.68694,
      "wikipediaCount": 24,
-     "wikidataId": "Q833213"
+     "wikidataId": "Q833213",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/20060320_-_Bosque_de_los_Ausentes_%28Madrid%29_08.jpg/500px-20060320_-_Bosque_de_los_Ausentes_%28Madrid%29_08.jpg",
+      "width": 500,
+      "height": 328,
+      "author": "Mr. Tickle",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20060320_-_Bosque_de_los_Ausentes_(Madrid)_08.jpg",
+      "fullWidth": 2287
+     },
+     "description": "Remembrance of the 2004 Madrid train bombing"
     },
     {
      "id": "wikidata/Q1537446",
@@ -216,7 +359,18 @@
      "wikidataId": "Q1537446",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Cibeles_desde_el_Ayuntamiento_%28Madrid%29_%2814203354114%29.jpg/500px-Cibeles_desde_el_Ayuntamiento_%28Madrid%29_%2814203354114%29.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Miguel Diaz from Boadilla del Monte, España-Spain",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cibeles_desde_el_Ayuntamiento_(Madrid)_(14203354114).jpg",
+      "fullWidth": 6433
+     },
+     "description": "Madrid, İspanya'da bir meydan"
     },
     {
      "id": "way/174805987",
@@ -230,7 +384,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Puerta_de_Alcal%C3%A1_2025.jpg/500px-Puerta_de_Alcal%C3%A1_2025.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fernando Pascullo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Puerta_de_Alcal%C3%A1_2025.jpg",
+      "fullWidth": 4246
+     },
+     "description": "cultural property in Madrid Distritos: Retiro y Salamanca, Spain"
     },
     {
      "id": "way/15244804",
@@ -246,7 +411,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/RealJardinBotanico_Puerta_del_Rey.jpg/500px-RealJardinBotanico_Puerta_del_Rey.jpg",
+      "width": 500,
+      "height": 543,
+      "author": "Håkan Svensson (Xauxa)",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RealJardinBotanico_Puerta_del_Rey.jpg",
+      "fullWidth": 1770
+     },
+     "description": "botanical garden and research centre in Madrid, Spain"
     },
     {
      "id": "wikidata/Q649426",
@@ -257,7 +433,18 @@
      "wikidataId": "Q649426",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Edificio_Espa%C3%B1a_2025.jpg/500px-Edificio_Espa%C3%B1a_2025.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificio_Espa%C3%B1a_2025.jpg",
+      "fullWidth": 3648
+     },
+     "description": "building in Madrid, Spain"
     },
     {
      "id": "wikidata/Q1423431",
@@ -271,7 +458,18 @@
       "musicVenue",
       "performingArts",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Madrid_Arena.jpg/500px-Madrid_Arena.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "Elpalacio",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madrid_Arena.jpg",
+      "fullWidth": 2362
+     },
+     "description": "tennis venue in Madrid, Spain"
     },
     {
      "id": "wikidata/Q970525",
@@ -283,7 +481,18 @@
      "wikidataId": "Q970525",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Plaza_de_Col%C3%B3n_%28Madrid%29_06.jpg/500px-Plaza_de_Col%C3%B3n_%28Madrid%29_06.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Enrique Dans from Madrid ( Spain ).",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plaza_de_Col%C3%B3n_(Madrid)_06.jpg",
+      "fullWidth": 2816
+     },
+     "description": "Madrid'de (İspanya) Kent Meydanı"
     },
     {
      "id": "wikidata/Q1063195",
@@ -294,7 +503,18 @@
      "wikidataId": "Q1063195",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Torre_de_Madrid_2025.jpg/500px-Torre_de_Madrid_2025.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_de_Madrid_2025.jpg",
+      "fullWidth": 3191
+     },
+     "description": "Torre Madrid"
     },
     {
      "id": "wikidata/Q1687025",
@@ -308,7 +528,18 @@
       "heritage",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/ICADE_%28Alberto_Aguilera_23%2C_Madrid%29_01.jpg/500px-ICADE_%28Alberto_Aguilera_23%2C_Madrid%29_01.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ICADE_(Alberto_Aguilera_23,_Madrid)_01.jpg",
+      "fullWidth": 3670
+     },
+     "description": "university located in Madrid, Spain"
     },
     {
      "id": "wikidata/Q2263744",
@@ -321,7 +552,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Casa_Bot%C3%ADn_2.JPG/500px-Casa_Bot%C3%ADn_2.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Esetena",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Casa_Bot%C3%ADn_2.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Bot%C3%ADn_2.JPG",
+      "fullWidth": 2816
+     },
+     "description": "İspanya'nın Madrid şehrinde bulunan ve 1725 yılından beri hizmet veren restoran"
     },
     {
      "id": "relation/4726588",
@@ -338,7 +580,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Monasterio_de_las_Descalzas_Reales_%28Madrid%29_07.jpg/500px-Monasterio_de_las_Descalzas_Reales_%28Madrid%29_07.jpg",
+      "width": 500,
+      "height": 368,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monasterio_de_las_Descalzas_Reales_(Madrid)_07.jpg",
+      "fullWidth": 3027
+     },
+     "description": "monastery in Madrid, Spain"
     },
     {
      "id": "relation/6345116",
@@ -349,7 +602,18 @@
      "wikidataId": "Q2736564",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Fuente_de_Cibeles_-_Dec_2024.jpg/500px-Fuente_de_Cibeles_-_Dec_2024.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fuente_de_Cibeles_-_Dec_2024.jpg",
+      "fullWidth": 5730
+     },
+     "description": "monumental fountain in Madrid"
     },
     {
      "id": "node/8928518873",
@@ -362,7 +626,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Palacio_de_Comunicaciones_-_47.jpg/500px-Palacio_de_Comunicaciones_-_47.jpg",
+      "width": 500,
+      "height": 250,
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Comunicaciones_-_47.jpg",
+      "fullWidth": 4128
+     },
+     "description": "Palace, Headquarters of the Municipality of Madrid and cultural property, Spain"
     },
     {
      "id": "way/335232793",
@@ -375,7 +650,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Puerta_de_Toledo.jpg/500px-Puerta_de_Toledo.jpg",
+      "width": 500,
+      "height": 599,
+      "author": "Edescas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Puerta_de_Toledo.jpg",
+      "fullWidth": 1480
+     },
+     "description": "cultural property in Madrid Distritos: Centro y Arganzuela, Spain"
     },
     {
      "id": "wikidata/Q733486",
@@ -386,7 +672,18 @@
      "wikidataId": "Q733486",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/FNMT_%28Madrid%29_06.jpg/500px-FNMT_%28Madrid%29_06.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:FNMT_(Madrid)_06.jpg",
+      "fullWidth": 4272
+     },
+     "description": "national mint (currency manufacturer) of Spain"
     },
     {
      "id": "wikidata/Q663849",
@@ -397,7 +694,18 @@
      "wikidataId": "Q663849",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/EstadioO%27donnell_1912.jpg/500px-EstadioO%27donnell_1912.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "Author unknown [1]",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:EstadioO%27donnell_1912.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EstadioO%27donnell_1912.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Madrid, İspanya'da çok amaçlı stadyum"
     },
     {
      "id": "wikidata/Q2628455",
@@ -411,7 +719,18 @@
       "heritage",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Palacio_de_Linares%2C_Plaza_de_Cibeles%2C_Madrid.jpg/500px-Palacio_de_Linares%2C_Plaza_de_Cibeles%2C_Madrid.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "No machine-readable author provided. Gryffindor assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Linares,_Plaza_de_Cibeles,_Madrid.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Linares,_Plaza_de_Cibeles,_Madrid.jpg",
+      "fullWidth": 925
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "relation/4545711",
@@ -423,7 +742,18 @@
      "kinds": [
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Congreso_de_los_Diputados_%28Espa%C3%B1a%29_17.jpg/500px-Congreso_de_los_Diputados_%28Espa%C3%B1a%29_17.jpg",
+      "width": 500,
+      "height": 254,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Congreso_de_los_Diputados_(Espa%C3%B1a)_17.jpg",
+      "fullWidth": 3672
+     },
+     "description": "home of the Congress of Deputies of Spain"
     },
     {
      "id": "wikidata/Q2550870",
@@ -436,7 +766,18 @@
       "promenade",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Palacio_de_Comunicaciones_view_3.jpg/500px-Palacio_de_Comunicaciones_view_3.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Comunicaciones_view_3.jpg",
+      "fullWidth": 5390
+     },
+     "description": "Boulevard in central Madrid, Spain"
     },
     {
      "id": "wikidata/Q2193218",
@@ -448,7 +789,18 @@
      "wikidataId": "Q2193218",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Madrid_-_Royal_Palace_of_Madrid_-_20171027160239.jpg/500px-Madrid_-_Royal_Palace_of_Madrid_-_20171027160239.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Oliver Gargan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madrid_-_Royal_Palace_of_Madrid_-_20171027160239.jpg",
+      "fullWidth": 5884
+     },
+     "description": "square in Madrid, Spain"
     },
     {
      "id": "wikidata/Q2527066",
@@ -459,7 +811,18 @@
      "wikidataId": "Q2527066",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Estaci%C3%B3n_de_Pr%C3%ADncipe_P%C3%ADo_%28Madrid%29_01.jpg/500px-Estaci%C3%B3n_de_Pr%C3%ADncipe_P%C3%ADo_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_de_Pr%C3%ADncipe_P%C3%ADo_(Madrid)_01.jpg",
+      "fullWidth": 4105
+     },
+     "description": "railway station in Spain"
     },
     {
      "id": "wikidata/Q2344241",
@@ -467,7 +830,18 @@
      "lat": 40.41147,
      "lon": -3.72599,
      "wikipediaCount": 15,
-     "wikidataId": "Q2344241"
+     "wikidataId": "Q2344241",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Grabado_Quinta_del_Sordo.jpg/500px-Grabado_Quinta_del_Sordo.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Charles Yriarte / Jules Férat",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Grabado_Quinta_del_Sordo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grabado_Quinta_del_Sordo.jpg",
+      "fullWidth": 1596
+     },
+     "description": "country house outside Madrid, Spain"
     },
     {
      "id": "wikidata/Q3321632",
@@ -480,7 +854,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Teatro_de_la_Zarzuela_%28Madrid%29_02.jpg/500px-Teatro_de_la_Zarzuela_%28Madrid%29_02.jpg",
+      "width": 500,
+      "height": 292,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_de_la_Zarzuela_(Madrid)_02.jpg",
+      "fullWidth": 4209
+     },
+     "description": "Spanish theater and arts center"
     },
     {
      "id": "way/28702618",
@@ -496,7 +881,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bas%C3%ADlica_de_San_Francisco_el_Grande-2009.jpg/500px-Bas%C3%ADlica_de_San_Francisco_el_Grande-2009.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tamorlan",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_San_Francisco_el_Grande-2009.jpg",
+      "fullWidth": 3888
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "way/193326001",
@@ -504,7 +900,18 @@
      "lat": 40.43591,
      "lon": -3.7202,
      "wikipediaCount": 14,
-     "wikidataId": "Q2859883"
+     "wikidataId": "Q2859883",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Madrid_Arco_de_la_Victoria01.jpg/500px-Madrid_Arco_de_la_Victoria01.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Xauxa Håkan Svensson",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madrid_Arco_de_la_Victoria01.jpg",
+      "fullWidth": 1791
+     },
+     "description": "triumphal arch built in the Moncloa district of Madrid, Spain"
     },
     {
      "id": "wikidata/Q962117",
@@ -515,7 +922,18 @@
      "wikidataId": "Q962117",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Palacio_Buen_Retiro_Leonardo.jpg/500px-Palacio_Buen_Retiro_Leonardo.jpg",
+      "width": 500,
+      "height": 221,
+      "author": "Attributed to Jusepe Leonardo",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Buen_Retiro_Leonardo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Buen_Retiro_Leonardo.jpg",
+      "fullWidth": 2770
+     },
+     "description": "palace in Madrid, Spain"
     },
     {
      "id": "way/23596451",
@@ -526,7 +944,18 @@
      "wikidataId": "Q2420025",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Palacio_de_Cristal%2C_Retiro%2C_Madrid.jpg/500px-Palacio_de_Cristal%2C_Retiro%2C_Madrid.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "vpogarcia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Cristal,_Retiro,_Madrid.jpg",
+      "fullWidth": 5472
+     },
+     "description": "building in Madrid, Spain"
     },
     {
      "id": "wikidata/Q2369398",
@@ -534,7 +963,18 @@
      "lat": 40.42833,
      "lon": -3.72417,
      "wikipediaCount": 14,
-     "wikidataId": "Q2369398"
+     "wikidataId": "Q2369398",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Madrid_-_parque_del_Oeste.jpg/500px-Madrid_-_parque_del_Oeste.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Manuel Martín Vicente",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madrid_-_parque_del_Oeste.jpg",
+      "fullWidth": 4000
+     },
+     "description": "public park in Madrid, Spain"
     },
     {
      "id": "wikidata/Q2099125",
@@ -545,7 +985,18 @@
      "wikidataId": "Q2099125",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Raining_Day_at_plaza_del_Callao%2C_Madrid.jpg/500px-Raining_Day_at_plaza_del_Callao%2C_Madrid.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Alfredo Sánchez Romero from Madrid, España",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Raining_Day_at_plaza_del_Callao,_Madrid.jpg",
+      "fullWidth": 2765
+     },
+     "description": "square in Madrid"
     },
     {
      "id": "wikidata/Q2711992",
@@ -556,7 +1007,18 @@
      "wikidataId": "Q2711992",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG/500px-2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Anagoria",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG",
+      "fullWidth": 4752
+     },
+     "description": "public square in Madrid"
     },
     {
      "id": "wikidata/Q2982559",
@@ -569,7 +1031,18 @@
       "heritage",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Palacio_de_Santa_Cruz6.jpg/500px-Palacio_de_Santa_Cruz6.jpg",
+      "width": 500,
+      "height": 423,
+      "author": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Santa_Cruz6.jpg",
+      "fullWidth": 1936
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "relation/2336078",
@@ -585,7 +1058,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Real_Monasterio_de_la_Encarnaci%C3%B3n_%28Madrid%29_01.jpg/500px-Real_Monasterio_de_la_Encarnaci%C3%B3n_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Real_Monasterio_de_la_Encarnaci%C3%B3n_(Madrid)_01.jpg",
+      "fullWidth": 1595
+     },
+     "description": "İspanya'nın Madrid şehrinde bir manastır"
     },
     {
      "id": "wikidata/Q3178007",
@@ -596,7 +1080,18 @@
      "wikidataId": "Q3178007",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Synagogue_de_Madrid.JPG/500px-Synagogue_de_Madrid.JPG",
+      "width": 500,
+      "height": 695,
+      "author": "24 Mars 2006",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Synagogue_de_Madrid.JPG",
+      "fullWidth": 1701
+     },
+     "description": "main synagogue in Madrid, Spain"
     },
     {
      "id": "way/1002779501",
@@ -610,7 +1105,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/San_Antonio_de_la_Florida.jpg/500px-San_Antonio_de_la_Florida.jpg",
+      "width": 500,
+      "height": 367,
+      "author": "J.L. de Diego",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:San_Antonio_de_la_Florida.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Antonio_de_la_Florida.jpg",
+      "fullWidth": 615
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "way/380275213",
@@ -622,7 +1128,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Puente_de_Segovia_%28Madrid%29_08.jpg/500px-Puente_de_Segovia_%28Madrid%29_08.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Puente_de_Segovia_(Madrid)_08.jpg",
+      "fullWidth": 4320
+     },
+     "description": "bridge over river Manzanares in Madrid"
     },
     {
      "id": "wikidata/Q1450424",
@@ -634,7 +1151,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Residencia_de_Estudiantes%E2%80%94Fachada.jpg/500px-Residencia_de_Estudiantes%E2%80%94Fachada.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Ketamino",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Residencia_de_Estudiantes%E2%80%94Fachada.jpg",
+      "fullWidth": 2048
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "way/86627568",
@@ -647,7 +1175,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Main_facade_of_the_Colegiata_de_San_Isidro_2022.jpg/500px-Main_facade_of_the_Colegiata_de_San_Isidro_2022.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Main_facade_of_the_Colegiata_de_San_Isidro_2022.jpg",
+      "fullWidth": 8677
+     },
+     "description": "building in Madrid"
     },
     {
      "id": "way/553098274",
@@ -658,7 +1197,18 @@
      "wikidataId": "Q1472798",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Fuente_de_Neptuno_en_Madrid.jpg/500px-Fuente_de_Neptuno_en_Madrid.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dirección General de Turismo. Consejería de Economía e Innovación Tecnológica. Comunidad de Madrid.",
+      "license": "CC BY 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fuente_de_Neptuno_en_Madrid.jpg",
+      "fullWidth": 1856
+     },
+     "description": "fountain in Madrid"
     },
     {
      "id": "relation/4008847",
@@ -670,33 +1220,18 @@
      "kinds": [
       "office",
       "palace"
-     ]
-    },
-    {
-     "id": "way/263295118",
-     "name": "Puente de Toledo",
-     "lat": 40.39912,
-     "lon": -3.71515,
-     "wikipediaCount": 11,
-     "wikidataId": "Q3845616",
-     "kinds": [
-      "bridge",
-      "heritage"
-     ]
-    },
-    {
-     "id": "wikidata/Q5117018",
-     "name": "Sacramento Kilisesi",
-     "localName": "Church of Sacramento",
-     "lat": 40.41477,
-     "lon": -3.71231,
-     "wikipediaCount": 11,
-     "wikidataId": "Q5117018",
-     "kinds": [
-      "adminArea",
-      "heritage",
-      "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Senado_fachada_Madrid.jpg/500px-Senado_fachada_Madrid.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Esetena",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Senado_fachada_Madrid.jpg",
+      "fullWidth": 2816
+     },
+     "description": "16th-century building housing the Senate of Spain"
     }
    ]
   },
@@ -718,7 +1253,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/500px-Museo_del_Prado_2016_%2825185969599%29.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "Emilio J. Rodríguez Posada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_2016_(25185969599).jpg",
+      "fullWidth": 4045
+     },
+     "description": "Spanish national art museum in Madrid, Spain"
     },
     {
      "id": "way/991444051",
@@ -734,7 +1280,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/MNCARS_05.jpg/500px-MNCARS_05.jpg",
+      "width": 500,
+      "height": 366,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MNCARS_05.jpg",
+      "fullWidth": 4320
+     },
+     "description": "Madrid’de yer alan 20. yüzyıl sanat eserlerinin sergilendiği bir sanat müzesi"
     },
     {
      "id": "node/4451986389",
@@ -752,7 +1309,18 @@
       "organization",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Palacio_Real_de_Madrid_Julio_2016_%28cropped%29.jpg/500px-Palacio_Real_de_Madrid_Julio_2016_%28cropped%29.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Tim Adams",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Real_de_Madrid_Julio_2016_(cropped).jpg",
+      "fullWidth": 2784
+     },
+     "description": "Madrid Kraliyet Sarayı"
     },
     {
      "id": "wikidata/Q11993457",
@@ -768,7 +1336,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Fachada_de_la_Real_Academia_Espa%C3%B1ola.jpg/500px-Fachada_de_la_Real_Academia_Espa%C3%B1ola.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Real Academia Española",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_de_la_Real_Academia_Espa%C3%B1ola.jpg",
+      "fullWidth": 3264
+     },
+     "description": "official regulator for the Spanish language"
     },
     {
      "id": "relation/1869336",
@@ -783,7 +1362,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Site_of_the_Retiro_and_the_Prado_in_Madrid_49_%2829684554308%29.jpg/500px-Site_of_the_Retiro_and_the_Prado_in_Madrid_49_%2829684554308%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kyle Magnuson from Los Angeles, United States",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Site_of_the_Retiro_and_the_Prado_in_Madrid_49_(29684554308).jpg",
+      "fullWidth": 5184
+     },
+     "description": "art museum in Madrid, Spain"
     },
     {
      "id": "node/255288522",
@@ -799,7 +1389,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Museo_Arqueol%C3%B3gico_Nacional_%2835039235760%29.jpg/500px-Museo_Arqueol%C3%B3gico_Nacional_%2835039235760%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Emilio J. Rodríguez Posada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_(35039235760).jpg",
+      "fullWidth": 4608
+     },
+     "description": "archaeological museum in Madrid, Spain"
     },
     {
      "id": "way/549109296",
@@ -814,7 +1415,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Templo_de_Debod_Madrid.JPG/500px-Templo_de_Debod_Madrid.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Templo_de_Debod_Madrid.JPG",
+      "fullWidth": 525
+     },
+     "description": "Egyptian temple in Madrid, Spain"
     },
     {
      "id": "wikidata/Q1322403",
@@ -830,7 +1442,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Palacio_de_Goyeneche_-_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg/500px-Palacio_de_Goyeneche_-_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Goyeneche_-_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Spanish art school, museum and gallery in Madrid, Spain"
     },
     {
      "id": "node/1719813601",
@@ -846,7 +1469,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Museo_Sorolla_%28Madrid%29_07.jpg/500px-Museo_Sorolla_%28Madrid%29_07.jpg",
+      "width": 500,
+      "height": 377,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Sorolla_(Madrid)_07.jpg",
+      "fullWidth": 3492
+     },
+     "description": "Madrid'de bulunan kamuya açık müze"
     },
     {
      "id": "relation/1621002",
@@ -861,7 +1495,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Museo_de_Am%C3%A9rica_de_Madrid_-_01.jpg/500px-Museo_de_Am%C3%A9rica_de_Madrid_-_01.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_Am%C3%A9rica_de_Madrid_-_01.jpg",
+      "fullWidth": 2250
+     },
+     "description": "museum in Madrid, Spain"
     },
     {
      "id": "wikidata/Q427318",
@@ -876,7 +1521,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Real_Academia_de_Ciencias_%28Espa%C3%B1a%29_01.jpg/500px-Real_Academia_de_Ciencias_%28Espa%C3%B1a%29_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Real_Academia_de_Ciencias_(Espa%C3%B1a)_01.jpg",
+      "fullWidth": 4320
+     },
+     "description": "academy of sciences of Spain"
     },
     {
      "id": "node/12921081474",
@@ -892,7 +1548,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Museo_de_Historia_de_Madrid_%28Espa%C3%B1a%29_03.jpg/500px-Museo_de_Historia_de_Madrid_%28Espa%C3%B1a%29_03.jpg",
+      "width": 500,
+      "height": 286,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_Historia_de_Madrid_(Espa%C3%B1a)_03.jpg",
+      "fullWidth": 4253
+     },
+     "description": "museum in Madrid, Spain"
     },
     {
      "id": "relation/4525000",
@@ -907,7 +1574,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Museo_Nacional_de_Antropolog%C3%ADa_%28Espa%C3%B1a%29_01.jpg/500px-Museo_Nacional_de_Antropolog%C3%ADa_%28Espa%C3%B1a%29_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Antropolog%C3%ADa_(Espa%C3%B1a)_01.jpg",
+      "fullWidth": 2976
+     },
+     "description": "anthropoloy museum in Madrid, Spain"
     },
     {
      "id": "way/30763731",
@@ -924,7 +1602,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Palacio_de_Liria_%28Madrid%29_02.jpg/500px-Palacio_de_Liria_%28Madrid%29_02.jpg",
+      "width": 500,
+      "height": 347,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Liria_(Madrid)_02.jpg",
+      "fullWidth": 2945
+     },
+     "description": "palace in Madrid, Spain"
     },
     {
      "id": "way/135087935",
@@ -938,7 +1627,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Museo_L%C3%A1zaro_Galdiano_%28Madrid%29_05.jpg/500px-Museo_L%C3%A1zaro_Galdiano_%28Madrid%29_05.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_L%C3%A1zaro_Galdiano_(Madrid)_05.jpg",
+      "fullWidth": 4272
+     },
+     "description": "art museum in Madrid, Spain"
     },
     {
      "id": "relation/6785520",
@@ -953,7 +1653,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Palacio_de_las_Artes_e_Industrias_%28Madrid%29_01.jpg/500px-Palacio_de_las_Artes_e_Industrias_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 232,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_las_Artes_e_Industrias_(Madrid)_01.jpg",
+      "fullWidth": 2688
+     },
+     "description": "Museum of Natural History of Spain, in Madrid"
     },
     {
      "id": "way/292649859",
@@ -967,7 +1678,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Museo_Naval_Madrid_2024.jpg/500px-Museo_Naval_Madrid_2024.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Naval_Madrid_2024.jpg",
+      "fullWidth": 5652
+     },
+     "description": "Madrid'de bir müze"
     },
     {
      "id": "relation/4544509",
@@ -982,7 +1704,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Palacio_del_Marqu%C3%A9s_de_Cerralbo_%28Madrid%29_01.jpg/500px-Palacio_del_Marqu%C3%A9s_de_Cerralbo_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 345,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_del_Marqu%C3%A9s_de_Cerralbo_(Madrid)_01.jpg",
+      "fullWidth": 3056
+     },
+     "description": "İspanya, Madrid'de bir müze"
     },
     {
      "id": "way/286816147",
@@ -997,7 +1730,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Caixaforum_Madrid_2024.jpg/500px-Caixaforum_Madrid_2024.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caixaforum_Madrid_2024.jpg",
+      "fullWidth": 4804
+     },
+     "description": "Museum in Madrid, Spain"
     },
     {
      "id": "relation/19258933",
@@ -1012,7 +1756,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Museo_del_Romanticismo_-_Fachada_-_Fachada_del_Museo_del_Romanticismo.jpg/500px-Museo_del_Romanticismo_-_Fachada_-_Fachada_del_Museo_del_Romanticismo.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "Pablo Linés (photo)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_del_Romanticismo_-_Fachada_-_Fachada_del_Museo_del_Romanticismo.jpg",
+      "fullWidth": 600
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "way/85817355",
@@ -1027,7 +1782,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Cas%C3%B3n_del_Buen_Retiro_-_Este.jpg/500px-Cas%C3%B3n_del_Buen_Retiro_-_Este.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cas%C3%B3n_del_Buen_Retiro_-_Este.jpg",
+      "fullWidth": 4753
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "way/30759780",
@@ -1042,7 +1808,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Real_Fabrica_de_Tapices_de_Madrid.jpg/500px-Real_Fabrica_de_Tapices_de_Madrid.jpg",
+      "width": 500,
+      "height": 398,
+      "author": "Jalcaire",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Real_Fabrica_de_Tapices_de_Madrid.jpg",
+      "fullWidth": 2277
+     },
+     "description": "factory in Madrid, Spain"
     },
     {
      "id": "relation/8278843",
@@ -1056,7 +1833,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Museo_Nacional_de_Artes_Decorativas_%28Madrid%29_01.jpg/500px-Museo_Nacional_de_Artes_Decorativas_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 558,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Artes_Decorativas_(Madrid)_01.jpg",
+      "fullWidth": 2292
+     },
+     "description": "Decorative arts museum in Madrid, Spain"
     },
     {
      "id": "relation/13493465",
@@ -1067,7 +1855,18 @@
      "wikidataId": "Q7131757",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Patio_interior_del_Pante%C3%B3n_de_Hombres_Ilustres.jpg/500px-Patio_interior_del_Pante%C3%B3n_de_Hombres_Ilustres.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Edescas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Patio_interior_del_Pante%C3%B3n_de_Hombres_Ilustres.jpg",
+      "fullWidth": 2272
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "relation/16781461",
@@ -1081,7 +1880,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Fachada_Galer%C3%ADa_Colecciones_Reales_Cuesta_de_la_Vega.jpg/500px-Fachada_Galer%C3%ADa_Colecciones_Reales_Cuesta_de_la_Vega.jpg",
+      "width": 500,
+      "height": 342,
+      "author": "Esmailizi",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_Galer%C3%ADa_Colecciones_Reales_Cuesta_de_la_Vega.jpg",
+      "fullWidth": 1080
+     },
+     "description": "Spanish royal art museum in Madrid"
     },
     {
      "id": "way/319609029",
@@ -1096,7 +1906,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Casa-Museo_de_Lope_de_Vega_%28Madrid%29_01.jpg/500px-Casa-Museo_de_Lope_de_Vega_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Luis García from Madrid ( Spain ).",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa-Museo_de_Lope_de_Vega_(Madrid)_01.jpg",
+      "fullWidth": 768
+     },
+     "description": "museum"
     },
     {
      "id": "node/317911511",
@@ -1110,7 +1931,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Delicias_fachada.JPG",
+      "width": 500,
+      "height": 347,
+      "author": "Pilarcita",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Delicias_fachada.JPG",
+      "fullWidth": 308
+     },
+     "description": "museum in Madrid, Spain"
     },
     {
      "id": "way/331008210",
@@ -1125,7 +1957,18 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Instituto_Geol%C3%B3gico_y_Minero_de_Espa%C3%B1a_%28Madrid%29_02.jpg/500px-Instituto_Geol%C3%B3gico_y_Minero_de_Espa%C3%B1a_%28Madrid%29_02.jpg",
+      "width": 500,
+      "height": 479,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Instituto_Geol%C3%B3gico_y_Minero_de_Espa%C3%B1a_(Madrid)_02.jpg",
+      "fullWidth": 2406
+     },
+     "description": "geological survey of Spain"
     },
     {
      "id": "node/4173744335",
@@ -1141,7 +1984,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Cuartel_del_Conde-Duque_%28Madrid%29_05.jpg/500px-Cuartel_del_Conde-Duque_%28Madrid%29_05.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cuartel_del_Conde-Duque_(Madrid)_05.jpg",
+      "fullWidth": 4320
+     },
+     "description": "art museum in Madrid, Spain"
     },
     {
      "id": "node/4213142633",
@@ -1156,7 +2010,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Entrada_al_Museo_de_Cera_%284300311860%29_%28cropped%29.jpg/500px-Entrada_al_Museo_de_Cera_%284300311860%29_%28cropped%29.jpg",
+      "width": 500,
+      "height": 501,
+      "author": "M.Peinado from Alcalá de Henares, España",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrada_al_Museo_de_Cera_(4300311860)_(cropped).jpg",
+      "fullWidth": 1469
+     },
+     "description": "wax museum in Madrid, Spain"
     },
     {
      "id": "node/158849464",
@@ -1171,7 +2036,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Museo_Casa_de_la_Moneda.jpg/500px-Museo_Casa_de_la_Moneda.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "Martinevans123",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Casa_de_la_Moneda.jpg",
+      "fullWidth": 3124
+     },
+     "description": "museum in Madrid, Spain"
     },
     {
      "id": "way/48761444",
@@ -1186,7 +2062,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Casa_Encendida%2C_patio_interior%2C_Madrid%2C_2018_01.jpg/500px-Casa_Encendida%2C_patio_interior%2C_Madrid%2C_2018_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Benjamín Núñez González",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Encendida,_patio_interior,_Madrid,_2018_01.jpg",
+      "fullWidth": 4032
+     },
+     "description": "institution in Madrid"
     },
     {
      "id": "node/2669198766",
@@ -1201,7 +2088,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Museo_ABC_%28Madrid%29_02.jpg/500px-Museo_ABC_%28Madrid%29_02.jpg",
+      "width": 500,
+      "height": 386,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_ABC_(Madrid)_02.jpg",
+      "fullWidth": 3690
+     },
+     "description": "museum in Madrid"
     },
     {
      "id": "way/445318307",
@@ -1215,7 +2113,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Museo_de_San_Isidro.jpg/500px-Museo_de_San_Isidro.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "J.L. de Diego",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_San_Isidro.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_San_Isidro.jpg",
+      "fullWidth": 638
+     },
+     "description": "museum in Spain"
     },
     {
      "id": "node/4404280736",
@@ -1230,7 +2139,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Real_Monasterio_de_Santa_Isabel_%28Madrid%29_02.jpg/500px-Real_Monasterio_de_Santa_Isabel_%28Madrid%29_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Real_Monasterio_de_Santa_Isabel_(Madrid)_02.jpg",
+      "fullWidth": 4320
+     },
+     "description": "cultural property in Madrid, Spain"
     },
     {
      "id": "way/223452728",
@@ -1244,7 +2164,18 @@
      "wikidataId": "Q16610970",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Oficinas_metro_Pac%C3%ADfico.jpg/500px-Oficinas_metro_Pac%C3%ADfico.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "J.L. de Diego",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Oficinas_metro_Pac%C3%ADfico.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oficinas_metro_Pac%C3%ADfico.jpg",
+      "fullWidth": 640
+     },
+     "description": "former power plant in Madrid"
     },
     {
      "id": "node/5774110605",
@@ -1254,7 +2185,18 @@
      "address": "Calle Cervantes 2",
      "openingHours": "Mo-Fr 10:30-17:30; Sa 12:00-17:00",
      "wikipediaCount": 2,
-     "wikidataId": "Q5754774"
+     "wikidataId": "Q5754774",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Casa_de_Cervantes_%28Madrid%29_01.jpg/500px-Casa_de_Cervantes_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 714,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_de_Cervantes_(Madrid)_01.jpg",
+      "fullWidth": 2674
+     },
+     "description": "building in Madrid, Spain"
     },
     {
      "id": "node/6945347196",
@@ -1268,7 +2210,18 @@
       "adminArea",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/ArmeriaPalacioRealMadrid.JPG/500px-ArmeriaPalacioRealMadrid.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ArmeriaPalacioRealMadrid.JPG",
+      "fullWidth": 525
+     },
+     "description": "museum in Madrid, Spain"
     },
     {
      "id": "relation/4742249",
@@ -1280,7 +2233,17 @@
      "wikidataId": "Q9054589",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Palacio_de_la_Duquesa_de_Medina_de_las_Torres_%28Madrid%29_01.jpg/500px-Palacio_de_la_Duquesa_de_Medina_de_las_Torres_%28Madrid%29_01.jpg",
+      "width": 500,
+      "height": 394,
+      "author": "Luis García ( Zaqarbal )",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_la_Duquesa_de_Medina_de_las_Torres_(Madrid)_01.jpg",
+      "fullWidth": 3495
+     }
     },
     {
      "id": "way/23596468",
@@ -1294,7 +2257,17 @@
      "wikidataId": "Q108328073",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Buen_Retiro_Casa_de_Vacas.jpg/500px-Buen_Retiro_Casa_de_Vacas.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Håkan Svensson (Xauxa)",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Buen_Retiro_Casa_de_Vacas.jpg",
+      "fullWidth": 2560
+     }
     }
    ]
   },
@@ -1311,7 +2284,18 @@
      "wikidataId": "Q3862645",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Monumento_a_Alfonso_XII_de_Espa%C3%B1a_en_los_Jardines_del_Retiro_-_04.jpg/500px-Monumento_a_Alfonso_XII_de_Espa%C3%B1a_en_los_Jardines_del_Retiro_-_04.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monumento_a_Alfonso_XII_de_Espa%C3%B1a_en_los_Jardines_del_Retiro_-_04.jpg",
+      "fullWidth": 4732
+     },
+     "description": "monument by José Grases Riera in Madrid, Spain"
     },
     {
      "id": "node/6481335785",
@@ -1546,6 +2530,17 @@
      "detailed": true
     },
     {
+     "id": "node/170992698",
+     "name": "Mama Teresa Burger",
+     "lat": 40.40387,
+     "lon": -3.69641,
+     "address": "Paseo de Santa María de la Cabeza 35",
+     "website": "https://mamateresahotdog.com/",
+     "openingHours": "Tu-Th 17:00-23:30; Fr-Su 13:00-24:00",
+     "cuisine": "burger",
+     "detailed": true
+    },
+    {
      "id": "node/2523695130",
      "name": "Museo del Jamón",
      "lat": 40.41538,
@@ -1700,16 +2695,6 @@
      "website": "https://baanpadthai.es/",
      "cuisine": "thai",
      "detailed": true
-    },
-    {
-     "id": "node/2523695124",
-     "name": "Bar Andalú La Torre del Oro",
-     "lat": 40.41579,
-     "lon": -3.70765,
-     "address": "Plaza Mayor 26",
-     "website": "http://www.torredeloro.wellsoc.org/",
-     "cuisine": "regional",
-     "detailed": true
     }
    ]
   },
@@ -1792,7 +2777,18 @@
      "openingHours": "Mo-Su 08:00-23:30",
      "cuisine": "coffee shop",
      "wikidataId": "Q5103675",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/At_San_Gines_again._One_of_the_oldest_chocolate_con_churros_in_Madrid_%2818761909709%29.jpg/500px-At_San_Gines_again._One_of_the_oldest_chocolate_con_churros_in_Madrid_%2818761909709%29.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Ash Chuan from London, United Kingdom",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:At_San_Gines_again._One_of_the_oldest_chocolate_con_churros_in_Madrid_(18761909709).jpg",
+      "fullWidth": 640
+     },
+     "description": "cafe in Central Madrid"
     },
     {
      "id": "node/4163107359",
@@ -2120,7 +3116,17 @@
      "website": "http://www.laardosa.es/",
      "openingHours": "Mo-Fr 08:30-02:00; Sa-Su 11:45-02:30",
      "wikidataId": "Q30070624",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Bodega_de_La_Ardosa_%28Sta_Engracia_70%2C_Madrid%29_01.jpg/500px-Bodega_de_La_Ardosa_%28Sta_Engracia_70%2C_Madrid%29_01.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Alfonso Romero Mesa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bodega_de_La_Ardosa_(Sta_Engracia_70,_Madrid)_01.jpg",
+      "fullWidth": 3569
+     }
     },
     {
      "id": "node/2072687163",
@@ -2351,6 +3357,16 @@
      "detailed": true
     },
     {
+     "id": "node/3559803783",
+     "name": "Changó Club",
+     "lat": 40.43168,
+     "lon": -3.69819,
+     "address": "Calle de Covarrubias 42",
+     "website": "https://changomadrid.com/",
+     "openingHours": "Th 23:00-06:00; Sa 00:00-06:00; Su 00:00-03:30",
+     "detailed": true
+    },
+    {
      "id": "node/4821323921",
      "name": "DLRO Live",
      "lat": 40.42489,
@@ -2381,16 +3397,6 @@
      "detailed": true
     },
     {
-     "id": "node/3559803783",
-     "name": "Eventos Changó Club",
-     "lat": 40.43168,
-     "lon": -3.69819,
-     "address": "Calle de Covarrubias 42",
-     "website": "https://changomadrid.com/",
-     "openingHours": "Th 23:00-06:00; Sa 00:00-06:00; Su 00:00-03:30",
-     "detailed": true
-    },
-    {
      "id": "node/1621005283",
      "name": "Fitz Club",
      "lat": 40.42472,
@@ -2409,7 +3415,18 @@
      "website": "https://salariviera.com/",
      "openingHours": "\"Depende de la programación\"",
      "wikidataId": "Q10315093",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Sala_La_Riviera%2C_Madrid_-_M83_%40_La_Riviera_%287008297183%29.jpg/500px-Sala_La_Riviera%2C_Madrid_-_M83_%40_La_Riviera_%287008297183%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Rubén Vique",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sala_La_Riviera,_Madrid_-_M83_@_La_Riviera_(7008297183).jpg",
+      "fullWidth": 3000
+     },
+     "description": "Concert and events room."
     },
     {
      "id": "node/8911480318",

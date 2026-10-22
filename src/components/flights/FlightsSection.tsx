@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { Caption, SkeletonTicket } from "@/components/ui";
 import { airlineName } from "@/data/airlines";
 import { findDestination } from "@/data/destinations";
@@ -14,7 +15,11 @@ import { choiceRef, chooseFlight } from "@/lib/flights/select";
 import type { FlightTicket, Leg } from "@/lib/flights/tickets";
 import { DirectChip } from "./DirectChip";
 import { FlightsLinks } from "./FlightsLinks";
+import { AddToBudgetButton } from "./AddToBudgetButton";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
+import { StayCard } from "@/components/stays/StayCard";
+import { WebStaySearch } from "@/components/stays/WebStaySearch";
+import { TicketsAndStays } from "./TicketsAndStays";
 import { WebFlightSearch } from "./WebFlightSearch";
 
 type Props = {
@@ -30,8 +35,12 @@ type Props = {
   webFlight: WebFlightChoice | null;
 };
 
-/** Cached Travelpayouts prices for every origin airport (server-side; the token never reaches the browser). */
-export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
+/**
+ * "Bilet ve konaklama": cached Travelpayouts prices for every origin airport (server-side; the token never
+ * reaches the browser) and the stay links. The flight card holds each airport's cheapest ticket; the full list
+ * with its filter and the web search, and the stay web search, open under both cards at full width.
+ */
+export async function TicketsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
   const destination = findDestination(to)!;
   const [result, rates] = await Promise.all([loadFlights(from, to, depart, ret, pax, direct), loadRateTable(destination.currency)]);
   const choice = chooseFlight(result, flight);
@@ -43,14 +52,93 @@ export async function FlightsSection({ from, to, depart, return: ret, pax, direc
     return: ret,
     adults: pax,
   };
+  const budgetRef = webFlight ? null : choiceRef(choice);
+  const demo = aiDemoEnabled();
   return (
-    <>
-      <div className="print:hidden">
-        <FlightsView result={result} budgetRef={webFlight ? null : choiceRef(choice)} />
-        <WebFlightSearch query={query} rates={rates} demo={aiDemoEnabled()} inBudget={webFlight} />
+    <TicketsAndStays
+      demo={demo}
+      flights={
+        <>
+          <div className="print:hidden">
+            <CheapestByAirport result={result} budgetRef={budgetRef} />
+          </div>
+          <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
+        </>
+      }
+      allFlights={
+        <>
+          <FlightsView result={result} budgetRef={budgetRef} />
+          <WebFlightSearch query={query} rates={rates} demo={demo} inBudget={webFlight} />
+        </>
+      }
+      stay={<StayCard destination={destination} checkIn={depart} checkOut={ret} adults={pax} />}
+      stayWeb={
+        <WebStaySearch
+          query={{ city: destination.nameEn, country: destination.countryCode, checkIn: depart, checkOut: ret, adults: pax }}
+          rates={rates}
+          demo={demo}
+        />
+      }
+    />
+  );
+}
+
+/** The calm summary: each airport's cheapest ticket with its link; "EN UCUZ" in accent on the overall cheapest. */
+export function CheapestByAirport({ result, budgetRef }: { result: FlightsResult; budgetRef: string | null }) {
+  if (result.status === "unavailable") {
+    return (
+      <div>
+        <p className="text-body text-ink-muted">{FLIGHTS_ERROR_MESSAGES[result.reason]}</p>
+        <FlightsLinks links={result.links} className="mt-4" />
       </div>
-      <FlightPrintSummary ticket={choice.status === "none" ? null : choice.ticket} />
-    </>
+    );
+  }
+  const rows = result.groups.flatMap((g) => (g.tickets[0] ? [{ group: g, ticket: g.tickets[0] }] : []));
+  return (
+    <div className="grid gap-3">
+      {result.fixture ? (
+        <Caption as="p" tone="warn" className="rounded-sm border border-warn px-3 py-2">
+          ÖRNEK VERİ · GELİŞTİRME FIXTURE&apos;I · GERÇEK FİYAT DEĞİL
+        </Caption>
+      ) : null}
+      {rows.length === 0 ? <p className="text-body text-ink-muted">Bu tarihler ve ±3 gün için önbellekte fiyat yok.</p> : null}
+      <ul className="grid divide-y divide-dashed divide-rule">
+        {rows.map(({ group, ticket }) => {
+          const cheapest = ticket.id === result.cheapestId;
+          return (
+            <li key={group.airport} className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 py-3 first:pt-0 last:pb-0">
+              <div className="min-w-0">
+                <Caption as="p">
+                  {group.airport} · {AIRPORT_NAMES[group.airport] ?? group.airport}
+                  {ticket.differentDates ? " · FARKLI TARİH" : ""}
+                </Caption>
+                <p className="mt-1 text-body">
+                  {airlineName(ticket.airline)} · <span className="font-mono tabular">{formatTicketDay(ticket.out.departDate)}</span>
+                </p>
+                <Caption as="p" className="mt-0.5">
+                  {formatStops(ticket.out.stops)}
+                  {ticket.back ? ` · DÖNÜŞ ${formatStops(ticket.back.stops)}` : ""}
+                </Caption>
+              </div>
+              <div className="text-right">
+                <p className={cheapest ? "font-mono text-heading tabular text-accent" : "font-mono text-heading tabular"}>{formatTRY(ticket.pricePerAdult)}</p>
+                <Caption as="p" tone={cheapest ? "accent" : "muted"}>
+                  {cheapest ? "EN UCUZ · 1 YETİŞKİN" : "1 YETİŞKİN"}
+                </Caption>
+                <div className="mt-1 flex flex-wrap justify-end gap-x-4 gap-y-1">
+                  <a href={ticket.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center gap-1 text-caption underline underline-offset-4">
+                    Güncel fiyatı gör
+                    <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
+                  </a>
+                  <AddToBudgetButton flightRef={ticket.ref} inBudget={ticket.ref === budgetRef} />
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+      <Caption as="p">{SOURCE_LINE}</Caption>
+    </div>
   );
 }
 

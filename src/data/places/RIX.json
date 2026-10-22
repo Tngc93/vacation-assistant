@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "RIX",
- "fetchedAt": "2026-10-18T16:46:39.302Z",
+ "fetchedAt": "2026-10-22T06:11:37.283Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "wikidataId": "Q1133059",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/2025_Riga_Cathedral_%2802%29.jpg/500px-2025_Riga_Cathedral_%2802%29.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "Chris06",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2025_Riga_Cathedral_(02).jpg",
+      "fullWidth": 3236
+     },
+     "description": "cathedral in Riga, Latvia"
     },
     {
      "id": "way/87182656",
@@ -64,7 +75,18 @@
      "wikidataId": "Q337179",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Freedom_Monument%2C_Riga_%2809.09.2022%29.01.jpg/500px-Freedom_Monument%2C_Riga_%2809.09.2022%29.01.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Nenea hartia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Freedom_Monument,_Riga_(09.09.2022).01.jpg",
+      "fullWidth": 3648
+     },
+     "description": "memorial located in Riga, Latvia"
     },
     {
      "id": "relation/1393926",
@@ -78,7 +100,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Riga_Pils_Latvia_%28cropped%29.jpg/500px-Riga_Pils_Latvia_%28cropped%29.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_Pils_Latvia_(cropped).jpg",
+      "fullWidth": 3352
+     },
+     "description": "castle in Riga, Latvia"
     },
     {
      "id": "way/45069779",
@@ -93,7 +126,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_32.JPG/500px-Iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_32.JPG",
+      "width": 500,
+      "height": 1133,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Pedro,_Riga,_Letonia,_2012-08-07,_DD_32.JPG",
+      "fullWidth": 2222
+     },
+     "description": "church in Riga"
     },
     {
      "id": "way/87495471",
@@ -104,7 +148,18 @@
      "website": "https://www.melngalvjunams.lv/",
      "openingHours": "Su-Th 10:00-17:00; Fr-Sa 10:00-16:00",
      "wikipediaCount": 36,
-     "wikidataId": "Q74736"
+     "wikidataId": "Q74736",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/House_of_Blackheads_and_St._Peter%27s_Church_Tower%2C_Riga%2C_Latvia_-_Diliff.jpg/500px-House_of_Blackheads_and_St._Peter%27s_Church_Tower%2C_Riga%2C_Latvia_-_Diliff.jpg",
+      "width": 500,
+      "height": 352,
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:House_of_Blackheads_and_St._Peter%27s_Church_Tower,_Riga,_Latvia_-_Diliff.jpg",
+      "fullWidth": 7000
+     },
+     "description": "building situated in the old town of Riga, Latvia"
     },
     {
      "id": "wikidata/Q1026415",
@@ -117,7 +172,18 @@
       "adminArea",
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Riga_%2833844464828%29.jpg/500px-Riga_%2833844464828%29.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Jorge Franganillo from Barcelona, Spain",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_(33844464828).jpg",
+      "fullWidth": 5995
+     },
+     "description": "historical center and neighbourhood of Riga, Latvia"
     },
     {
      "id": "wikidata/Q1474452",
@@ -128,7 +194,18 @@
      "wikidataId": "Q1474452",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Skonto_stadium_%2820.10.2025.%29.jpg/500px-Skonto_stadium_%2820.10.2025.%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Bendžamins",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skonto_stadium_(20.10.2025.).jpg",
+      "fullWidth": 4096
+     },
+     "description": "football stadium"
     },
     {
      "id": "wikidata/Q654904",
@@ -141,7 +218,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_21_%28cropped%29.JPG/500px-Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_21_%28cropped%29.JPG",
+      "width": 500,
+      "height": 752,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vistas_desde_la_iglesia_de_San_Pedro,_Riga,_Letonia,_2012-08-07,_DD_21_(cropped).JPG",
+      "fullWidth": 1829
+     },
+     "description": "Roman Catholic cathedral in Riga, Latvia"
     },
     {
      "id": "wikidata/Q698342",
@@ -153,7 +241,18 @@
      "wikidataId": "Q698342",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Bundesarchiv_Bild_183-N1212-326%2C_Riga%2C_Judenghetto.jpg/500px-Bundesarchiv_Bild_183-N1212-326%2C_Riga%2C_Judenghetto.jpg",
+      "width": 500,
+      "height": 340,
+      "author": "Donath, Otto",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-N1212-326,_Riga,_Judenghetto.jpg",
+      "fullWidth": 800
+     },
+     "description": "Nazi ghetto in occupied Latvia"
     },
     {
      "id": "way/348059067",
@@ -164,7 +263,18 @@
      "wikidataId": "Q282196",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/3_Brueder.jpg/500px-3_Brueder.jpg",
+      "width": 500,
+      "height": 476,
+      "author": "Martin Thirolf",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:3_Brueder.jpg",
+      "fullWidth": 1571
+     },
+     "description": "cluster of medieval houses in Riga"
     },
     {
      "id": "wikidata/Q1550015",
@@ -176,7 +286,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/20250820_Geburtskathedrale_Riga_PXL_20250820_180306343.jpg/500px-20250820_Geburtskathedrale_Riga_PXL_20250820_180306343.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Granada",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20250820_Geburtskathedrale_Riga_PXL_20250820_180306343.jpg",
+      "fullWidth": 6400
+     },
+     "description": "cathedral"
     },
     {
      "id": "wikidata/Q32969",
@@ -188,7 +309,18 @@
      "wikidataId": "Q32969",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Olimpisk%C4%81_Skonto_halle.jpg/500px-Olimpisk%C4%81_Skonto_halle.jpg",
+      "width": 500,
+      "height": 344,
+      "author": "Realismadder",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Olimpisk%C4%81_Skonto_halle.jpg",
+      "fullWidth": 800
+     },
+     "description": "Indoor arena in Riga, Latvia"
     },
     {
      "id": "wikidata/Q190670",
@@ -196,7 +328,18 @@
      "lat": 56.944,
      "lon": 24.116,
      "wikipediaCount": 19,
-     "wikidataId": "Q190670"
+     "wikidataId": "Q190670",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mercado_Central%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG/500px-Mercado_Central%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG",
+      "width": 500,
+      "height": 239,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mercado_Central,_Riga,_Letonia,_2012-08-07,_DD_01.JPG",
+      "fullWidth": 5064
+     },
+     "description": "market hall"
     },
     {
      "id": "wikidata/Q186097",
@@ -207,7 +350,18 @@
      "wikidataId": "Q186097",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Torre_del_Polvor%C3%ADn%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG/500px-Torre_del_Polvor%C3%ADn%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG",
+      "width": 500,
+      "height": 766,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_del_Polvor%C3%ADn,_Riga,_Letonia,_2012-08-07,_DD_01.JPG",
+      "fullWidth": 3189
+     },
+     "description": "tower in Riga, Latvia"
     },
     {
      "id": "wikidata/Q317508",
@@ -218,7 +372,18 @@
      "wikidataId": "Q317508",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Van%C5%A1u-Br%C3%BCcke_20220629-1.JPG/500px-Van%C5%A1u-Br%C3%BCcke_20220629-1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Hajotthu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Van%C5%A1u-Br%C3%BCcke_20220629-1.JPG",
+      "fullWidth": 4608
+     },
+     "description": "cable-stayed bridge in Riga, Latvia"
     },
     {
      "id": "wikidata/Q3018073",
@@ -230,7 +395,18 @@
      "kinds": [
       "port",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Coronado%28Valetta%29vessel-inRiga%28Latvia%29.JPG/500px-Coronado%28Valetta%29vessel-inRiga%28Latvia%29.JPG",
+      "width": 500,
+      "height": 186,
+      "author": "Julo",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Coronado(Valetta)vessel-inRiga(Latvia).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Coronado(Valetta)vessel-inRiga(Latvia).JPG",
+      "fullWidth": 3647
+     },
+     "description": "port in Riga, Latvia"
     },
     {
      "id": "wikidata/Q16355736",
@@ -242,7 +418,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Flickr_-_Saeima_-_4.maijs_Saeim%C4%81_%286%29.jpg/500px-Flickr_-_Saeima_-_4.maijs_Saeim%C4%81_%286%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Saeima",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_Saeima_-_4.maijs_Saeim%C4%81_(6).jpg",
+      "fullWidth": 3000
+     },
+     "description": "historic building in Riga, Latvia"
     },
     {
      "id": "relation/1307300",
@@ -251,7 +438,18 @@
      "lon": 24.10875,
      "address": "Meistaru iela 10",
      "wikipediaCount": 14,
-     "wikidataId": "Q2533242"
+     "wikidataId": "Q2533242",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Building_in_Riga_4.JPG/500px-Building_in_Riga_4.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Horvat",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Building_in_Riga_4.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Building_in_Riga_4.JPG",
+      "fullWidth": 1512
+     },
+     "description": "building in Riga, Latvia"
     },
     {
      "id": "wikidata/Q2568547",
@@ -263,7 +461,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Riga_johanneskirche_133731389_crop_rotate.jpg/500px-Riga_johanneskirche_133731389_crop_rotate.jpg",
+      "width": 500,
+      "height": 688,
+      "author": "Christopher Walker from Krakow, Poland. Crop and rotation by User:Sozi",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_johanneskirche_133731389_crop_rotate.jpg",
+      "fullWidth": 1224
+     },
+     "description": "Lutheran church in Riga"
     },
     {
      "id": "wikidata/Q2668017",
@@ -275,7 +484,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Alexander_Nevsky_Church.jpg/500px-Alexander_Nevsky_Church.jpg",
+      "width": 500,
+      "height": 365,
+      "author": "Persusha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alexander_Nevsky_Church.jpg",
+      "fullWidth": 1097
+     },
+     "description": "church in Riga, Latvia"
     },
     {
      "id": "wikidata/Q6541959",
@@ -286,7 +506,18 @@
      "wikidataId": "Q6541959",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Riga_Constructions_%2882409277%29.jpeg/500px-Riga_Constructions_%2882409277%29.jpeg",
+      "width": 500,
+      "height": 651,
+      "author": "Kristof Zerbe",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_Constructions_(82409277).jpeg",
+      "fullWidth": 1228
+     },
+     "description": "skyscraper in Riga, Latvia"
     },
     {
      "id": "wikidata/Q458599",
@@ -297,7 +528,18 @@
      "wikidataId": "Q458599",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/%C5%81otewska_Akademia_Nauk.jpg/500px-%C5%81otewska_Akademia_Nauk.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Xnib",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%81otewska_Akademia_Nauk.jpg",
+      "fullWidth": 3024
+     },
+     "description": "architectural structure"
     },
     {
      "id": "way/92054276",
@@ -308,7 +550,18 @@
      "wikidataId": "Q1846204",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/V10p417001_Riga.jpg/500px-V10p417001_Riga.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:V10p417001_Riga.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:V10p417001_Riga.jpg",
+      "fullWidth": 652
+     },
+     "description": "destroyed synagogue in Riga, Latvia"
     },
     {
      "id": "wikidata/Q2660396",
@@ -319,7 +572,18 @@
      "wikidataId": "Q2660396",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Svenskporten_Riga.jpg/500px-Svenskporten_Riga.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Tahbepet",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Svenskporten_Riga.jpg",
+      "fullWidth": 1600
+     },
+     "description": "gate in Riga, Latvia"
     },
     {
      "id": "wikidata/Q2041341",
@@ -330,7 +594,18 @@
      "wikidataId": "Q2041341",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Riga_akmens_tilts_stone_bridge.jpg/500px-Riga_akmens_tilts_stone_bridge.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Paul Bischoff",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Riga_akmens_tilts_stone_bridge.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_akmens_tilts_stone_bridge.jpg",
+      "fullWidth": 800
+     },
+     "description": "bridge in Riga, Latvia"
     },
     {
      "id": "wikidata/Q2687278",
@@ -342,7 +617,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Edificio_modernista_en_Alberta_iela_2a%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_02.JPG/500px-Edificio_modernista_en_Alberta_iela_2a%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_02.JPG",
+      "width": 500,
+      "height": 563,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificio_modernista_en_Alberta_iela_2a,_Riga,_Letonia,_2012-08-07,_DD_02.JPG",
+      "fullWidth": 3136
+     },
+     "description": "Letonya'da sokak"
     },
     {
      "id": "wikidata/Q2672158",
@@ -354,7 +640,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Iglesia_de_Nuestra_Se%C3%B1ora_de_las_Lamentaciones%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG/500px-Iglesia_de_Nuestra_Se%C3%B1ora_de_las_Lamentaciones%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG",
+      "width": 500,
+      "height": 766,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_Nuestra_Se%C3%B1ora_de_las_Lamentaciones,_Riga,_Letonia,_2012-08-07,_DD_01.JPG",
+      "fullWidth": 3218
+     },
+     "description": "church in Riga, Latvia"
     },
     {
      "id": "wikidata/Q3409330",
@@ -366,7 +663,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Jura_baznica.JPG/500px-Jura_baznica.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Jānis U. at Latvian Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jura_baznica.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jura_baznica.JPG",
+      "fullWidth": 1600
+     },
+     "description": "church building in Central District, Latvia"
     },
     {
      "id": "wikidata/Q1854781",
@@ -377,7 +685,18 @@
      "wikidataId": "Q1854781",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Vermanes_Garden_View.jpg/500px-Vermanes_Garden_View.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Unknown Unknown",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Vermanes_Garden_View.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vermanes_Garden_View.jpg",
+      "fullWidth": 578
+     },
+     "description": "Latvian cultural monument No. 5583"
     },
     {
      "id": "node/1691772900",
@@ -388,7 +707,18 @@
      "wikidataId": "Q4507748",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Reloj_Laima%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG/500px-Reloj_Laima%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG",
+      "width": 500,
+      "height": 821,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Reloj_Laima,_Riga,_Letonia,_2012-08-07,_DD_01.JPG",
+      "fullWidth": 2496
+     },
+     "description": "street clock in Riga"
     },
     {
      "id": "way/105514216",
@@ -399,7 +729,17 @@
      "wikidataId": "Q4061427",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Aleksandra_v%C4%81rti%2C_R%C4%ABga_2008.jpg/500px-Aleksandra_v%C4%81rti%2C_R%C4%ABga_2008.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "ScAvenger",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aleksandra_v%C4%81rti,_R%C4%ABga_2008.jpg",
+      "fullWidth": 3264
+     }
     },
     {
      "id": "way/1349588176",
@@ -466,7 +806,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Museum_of_the_Occupation_of_Latvia_%2809.09.2022%29.jpg/500px-Museum_of_the_Occupation_of_Latvia_%2809.09.2022%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nenea hartia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_the_Occupation_of_Latvia_(09.09.2022).jpg",
+      "fullWidth": 5472
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/12287802354",
@@ -482,7 +833,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Muzeju_kratuvju_komplekss_nov2022.jpg/500px-Muzeju_kratuvju_komplekss_nov2022.jpg",
+      "width": 500,
+      "height": 225,
+      "author": "Biafra",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzeju_kratuvju_komplekss_nov2022.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/13721805929",
@@ -498,7 +860,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/R%C4%ABgas_v%C4%93stures_un_ku%C4%A3niec%C4%ABbas_muzejs.jpg/500px-R%C4%ABgas_v%C4%93stures_un_ku%C4%A3niec%C4%ABbas_muzejs.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "PROP1001",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:R%C4%ABgas_v%C4%93stures_un_ku%C4%A3niec%C4%ABbas_muzejs.jpg",
+      "fullWidth": 6000
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/4246679918",
@@ -514,7 +887,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Riga_Jewish_community_and_the_museum_building.jpg/500px-Riga_Jewish_community_and_the_museum_building.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "JewsInLatvia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_Jewish_community_and_the_museum_building.jpg",
+      "fullWidth": 1024
+     },
+     "description": "museum in Centrs, Riga, Latvia"
     },
     {
      "id": "node/3744135928",
@@ -530,7 +914,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Edificios_en_Torna_iela%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG/500px-Edificios_en_Torna_iela%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_01.JPG",
+      "width": 500,
+      "height": 1164,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificios_en_Torna_iela,_Riga,_Letonia,_2012-08-07,_DD_01.JPG",
+      "fullWidth": 2051
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/12465076866",
@@ -546,7 +941,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Latvijas_Fotogr%C4%81fijas_muzejs_2.JPG/500px-Latvijas_Fotogr%C4%81fijas_muzejs_2.JPG",
+      "width": 500,
+      "height": 685,
+      "author": "Smig",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Latvijas_Fotogr%C4%81fijas_muzejs_2.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Latvijas_Fotogr%C4%81fijas_muzejs_2.JPG",
+      "fullWidth": 1243
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/470042272",
@@ -561,7 +967,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Latvijas_Dabas_muzejs.JPG/500px-Latvijas_Dabas_muzejs.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Edgars Košovojs",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Latvijas_Dabas_muzejs.JPG",
+      "fullWidth": 3968
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/4813948103",
@@ -576,7 +993,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Latvian_Museum_of_Decorative_Arts_and_Design.jpg/500px-Latvian_Museum_of_Decorative_Arts_and_Design.jpg",
+      "width": 500,
+      "height": 326,
+      "author": "M.Strīķis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Latvian_Museum_of_Decorative_Arts_and_Design.jpg",
+      "fullWidth": 2561
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/1907311602",
@@ -592,7 +1020,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Museum_of_Pharmacy_in_Riga.JPG/500px-Museum_of_Pharmacy_in_Riga.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Alma Pater",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Pharmacy_in_Riga.JPG",
+      "fullWidth": 1536
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/3733396425",
@@ -606,7 +1045,18 @@
      "wikidataId": "Q4468975",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2017-07-29-Corner_house_in_Riga-JonasR.jpg/500px-2017-07-29-Corner_house_in_Riga-JonasR.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Jonas Rogowski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2017-07-29-Corner_house_in_Riga-JonasR.jpg",
+      "fullWidth": 4250
+     },
+     "description": "former Latvian headquarters of the KGB"
     },
     {
      "id": "way/1474841777",
@@ -620,7 +1070,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Riga_Ghetto_museum_%284%29_b.jpg/500px-Riga_Ghetto_museum_%284%29_b.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Avner",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Riga_Ghetto_museum_(4)_b.jpg",
+      "fullWidth": 4608
+     }
     },
     {
      "id": "way/45817525",
@@ -634,7 +1094,18 @@
      "wikidataId": "Q4796493",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/The_old_arsenal_Riga.JPG/500px-The_old_arsenal_Riga.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "(WT-shared) Riggwelter at wts.wikivoyage",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_old_arsenal_Riga.JPG",
+      "fullWidth": 2048
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "way/157820969",
@@ -648,7 +1119,18 @@
      "wikidataId": "Q15219362",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/RigaMentzendorffhouse.JPG/500px-RigaMentzendorffhouse.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Boerkevitz at Dutch Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RigaMentzendorffhouse.JPG",
+      "fullWidth": 2272
+     },
+     "description": "building in Riga, Latvia"
     },
     {
      "id": "node/1190742833",
@@ -664,7 +1146,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "museum in Latvia"
     },
     {
      "id": "node/12239492855",
@@ -679,7 +1162,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Entrance_to_Romans_Sutas_and_Aleksandra_Be%C4%BCcovas_museum_at_Elizabetes_iela_57a_in_Riga.jpg/500px-Entrance_to_Romans_Sutas_and_Aleksandra_Be%C4%BCcovas_museum_at_Elizabetes_iela_57a_in_Riga.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sinikka Halme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_Romans_Sutas_and_Aleksandra_Be%C4%BCcovas_museum_at_Elizabetes_iela_57a_in_Riga.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/457061944",
@@ -695,7 +1189,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Fire_fighting_museum_-_panoramio.jpg/500px-Fire_fighting_museum_-_panoramio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Laima Gūtmane (simka…",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fire_fighting_museum_-_panoramio.jpg",
+      "fullWidth": 5184
+     },
+     "description": "museum in Riga, Latvia"
     },
     {
      "id": "node/6176103786",
@@ -710,7 +1215,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Riga, Latvia"
     },
     {
      "id": "node/1160803251",
@@ -725,7 +1231,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Alberta_iela_12_Riga.jpg/500px-Alberta_iela_12_Riga.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sinikka Halme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alberta_iela_12_Riga.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Latvia"
     },
     {
      "id": "node/5954279709",
@@ -741,7 +1258,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/RigaBarona3Muzejs.jpg/500px-RigaBarona3Muzejs.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Egilus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RigaBarona3Muzejs.jpg",
+      "fullWidth": 2448
+     },
+     "description": "museum in Riga, Latvia"
     },
     {
      "id": "node/382382211",
@@ -757,7 +1285,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "museum in Latvia"
     },
     {
      "id": "node/10955741530",
@@ -915,7 +1444,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "museum in Latvia"
     },
     {
      "id": "node/6815988866",
@@ -929,7 +1459,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "museum in Latvia"
     },
     {
      "id": "way/87410111",
@@ -949,7 +1480,8 @@
      "wikidataId": "Q140421091",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "museum building in Riga, Latvia"
     }
    ]
   },

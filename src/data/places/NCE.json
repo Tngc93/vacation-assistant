@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "NCE",
- "fetchedAt": "2026-10-18T16:36:32.423Z",
+ "fetchedAt": "2026-10-22T05:49:51.446Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Le_Negresco.jpg/500px-Le_Negresco.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Anna M. Stevenson",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_Negresco.jpg",
+      "fullWidth": 2972
+     },
+     "description": "hotel"
     },
     {
      "id": "wikidata/Q1084011",
@@ -67,7 +78,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cathedrale_Sainte-Reparate_Nice.jpg/500px-Cathedrale_Sainte-Reparate_Nice.jpg",
+      "width": 500,
+      "height": 661,
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cathedrale_Sainte-Reparate_Nice.jpg",
+      "fullWidth": 2484
+     },
+     "description": "cathedral located in Alpes-Maritimes, in France"
     },
     {
      "id": "wikidata/Q2886962",
@@ -78,7 +100,18 @@
      "wikidataId": "Q2886962",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Notre_Dame_%28113432119%29.jpeg/500px-Notre_Dame_%28113432119%29.jpeg",
+      "width": 500,
+      "height": 375,
+      "author": "Romain Sartorio",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Notre_Dame_(113432119).jpeg",
+      "fullWidth": 2048
+     },
+     "description": "basilica located in Alpes-Maritimes, in France"
     },
     {
      "id": "way/142993184",
@@ -93,7 +126,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Cath%C3%A9drale_ortodoxe_russe.jpg/500px-Cath%C3%A9drale_ortodoxe_russe.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Montgomery06",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_ortodoxe_russe.jpg",
+      "fullWidth": 4320
+     },
+     "description": "cathedral located in Alpes-Maritimes, in France"
     },
     {
      "id": "wikidata/Q1857046",
@@ -104,7 +148,18 @@
      "wikidataId": "Q1857046",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/NIKAIA-terraamata_musee.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Patrice Semeria",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA-terraamata_musee.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA-terraamata_musee.jpg",
+      "fullWidth": 400
+     },
+     "description": "prehistoric archaeological site in Nice, France"
     },
     {
      "id": "way/197933222",
@@ -115,7 +170,18 @@
      "wikidataId": "Q2942491",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Vestiges_de_l%27ancienne_cath%C3%A9drale_de_Nice.jpg/500px-Vestiges_de_l%27ancienne_cath%C3%A9drale_de_Nice.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CHRIS BONTEMPS from NICE, FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vestiges_de_l%27ancienne_cath%C3%A9drale_de_Nice.jpg",
+      "fullWidth": 1280
+     },
+     "description": "cathedral located in Alpes-Maritimes, in France"
     },
     {
      "id": "relation/8597240",
@@ -126,7 +192,18 @@
      "wikidataId": "Q3389982",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/NIKAIA-MassenaPlN3-2007-05-01.jpg/500px-NIKAIA-MassenaPlN3-2007-05-01.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Patrice Semeria",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA-MassenaPlN3-2007-05-01.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA-MassenaPlN3-2007-05-01.jpg",
+      "fullWidth": 1740
+     },
+     "description": "square in Nice, France"
     },
     {
      "id": "way/137418631",
@@ -139,7 +216,17 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Palais_des_rois_de_Sardaigne_02.jpg/500px-Palais_des_rois_de_Sardaigne_02.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Miniwark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_des_rois_de_Sardaigne_02.jpg",
+      "fullWidth": 4000
+     }
     },
     {
      "id": "node/2307709054",
@@ -152,7 +239,17 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Porte_Pairoli%C3%A8re_01.jpg/500px-Porte_Pairoli%C3%A8re_01.jpg",
+      "width": 500,
+      "height": 291,
+      "author": "Miniwark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porte_Pairoli%C3%A8re_01.jpg",
+      "fullWidth": 3756
+     }
     },
     {
      "id": "way/572928734",
@@ -163,7 +260,18 @@
      "wikidataId": "Q3323356",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Nike_-_Nice.jpg/500px-Nike_-_Nice.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Renzo Giusti",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nike_-_Nice.jpg",
+      "fullWidth": 768
+     },
+     "description": "Commemorative monument of the first unification of Nice to France in Nice (Alpes-Maritimes)"
     },
     {
      "id": "node/13961707682",
@@ -176,7 +284,17 @@
      "name": "Cascade",
      "lat": 43.69591,
      "lon": 7.27956,
-     "wikidataId": "Q135491345"
+     "wikidataId": "Q135491345",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/La_cascade_on_the_Colline_du_Chateau_in_Nice%2C_France_%2854479364824%29.jpg/500px-La_cascade_on_the_Colline_du_Chateau_in_Nice%2C_France_%2854479364824%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Winniepix",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_cascade_on_the_Colline_du_Chateau_in_Nice,_France_(54479364824).jpg",
+      "fullWidth": 5152
+     }
     },
     {
      "id": "way/297524409",
@@ -233,7 +351,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Villa_Thomson_03.jpg/500px-Villa_Thomson_03.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Miniwark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Thomson_03.jpg",
+      "fullWidth": 4000
+     },
+     "description": "Art museum in Nice, France"
     },
     {
      "id": "way/140067117",
@@ -249,7 +378,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Mus%C3%A9e_national_Marc_Chagall_2.jpg/500px-Mus%C3%A9e_national_Marc_Chagall_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Derbrauni",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_national_Marc_Chagall_2.jpg",
+      "fullWidth": 2560
+     },
+     "description": "art museum in Nice, France"
     },
     {
      "id": "relation/1949582",
@@ -264,7 +404,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Nice, France"
     },
     {
      "id": "node/578023554",
@@ -278,7 +419,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Lascaris2.JPG/500px-Lascaris2.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lascaris2.JPG",
+      "fullWidth": 1944
+     },
+     "description": "building in Nice, France"
     },
     {
      "id": "way/137219831",
@@ -295,7 +447,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Villa_Arson_-_ancien_batiment.jpg/500px-Villa_Arson_-_ancien_batiment.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Zil",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Arson_-_ancien_batiment.jpg",
+      "fullWidth": 4304
+     },
+     "description": "art school, artist residency and multimedia library located in Nice, France"
     },
     {
      "id": "way/19597352",
@@ -310,7 +473,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Nice_Mus%C3%A9e_Mass%C3%A9na_02.jpg/500px-Nice_Mus%C3%A9e_Mass%C3%A9na_02.jpg",
+      "width": 500,
+      "height": 260,
+      "author": "Cayambe",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nice_Mus%C3%A9e_Mass%C3%A9na_02.jpg",
+      "fullWidth": 3730
+     },
+     "description": "museum in Nice, France"
     },
     {
      "id": "node/1398474011",
@@ -324,7 +498,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/NIKAIA--_Histoire-Barla.jpg/500px-NIKAIA--_Histoire-Barla.jpg",
+      "width": 500,
+      "height": 605,
+      "author": "Patrice Semeria",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA--_Histoire-Barla.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA--_Histoire-Barla.jpg",
+      "fullWidth": 1120
+     },
+     "description": "natural-history museum in Nice, France"
     },
     {
      "id": "node/4688883802",
@@ -338,7 +523,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in France"
     },
     {
      "id": "node/10106819239",
@@ -352,7 +538,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/NIKAIA-terraamataN5.jpg/500px-NIKAIA-terraamataN5.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Patrice Semeria",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA-terraamataN5.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NIKAIA-terraamataN5.jpg",
+      "fullWidth": 800
+     },
+     "description": "museum in France"
     },
     {
      "id": "way/137195056",
@@ -366,7 +563,17 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Caserne_Lympia_01.jpg/500px-Caserne_Lympia_01.jpg",
+      "width": 500,
+      "height": 266,
+      "author": "Miniwark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caserne_Lympia_01.jpg",
+      "fullWidth": 4000
+     }
     },
     {
      "id": "node/471972916",
@@ -1162,6 +1369,15 @@
      "detailed": true
     },
     {
+     "id": "node/2623202822",
+     "name": "Comptoir Central Électrique",
+     "lat": 43.70066,
+     "lon": 7.28264,
+     "website": "https://comptoircentralelectrique.fr/fr",
+     "openingHours": "Mo-Su 09:00-24:30",
+     "detailed": true
+    },
+    {
      "id": "node/4761265018",
      "name": "Elisabeth",
      "lat": 43.69531,
@@ -1387,14 +1603,6 @@
      "lat": 43.69725,
      "lon": 7.27751,
      "openingHours": "Mo-Su 15:00-22:00"
-    },
-    {
-     "id": "node/11042765805",
-     "name": "Beer District",
-     "lat": 43.70823,
-     "lon": 7.26133,
-     "address": "Place Philippe Randon 1",
-     "openingHours": "18:00-24:30"
     }
    ]
   },

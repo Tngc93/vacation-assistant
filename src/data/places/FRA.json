@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "FRA",
- "fetchedAt": "2026-10-18T16:18:16.961Z",
+ "fetchedAt": "2026-10-22T05:27:34.512Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Commerzbank-Hochhaus_2010-09-06_01.jpg/500px-Commerzbank-Hochhaus_2010-09-06_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Commerzbank AG",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Commerzbank-Hochhaus_2010-09-06_01.jpg",
+      "fullWidth": 3900
+     },
+     "description": "Frankfurt'ta 259 metre uzunluğunda 56 katlı gökdelen"
     },
     {
      "id": "way/11526375",
@@ -69,7 +80,18 @@
       "heritage",
       "office",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Paulskirche_%28Dom%29.jpg/500px-Paulskirche_%28Dom%29.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "Jörg Braukmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paulskirche_(Dom).jpg",
+      "fullWidth": 8509
+     },
+     "description": "Frankfurt-Innenstadt I, Almanya'da kilise"
     },
     {
      "id": "way/11018815",
@@ -84,7 +106,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Frankfurter_Dom_Eiserner_Steg.jpg/500px-Frankfurter_Dom_Eiserner_Steg.jpg",
+      "width": 500,
+      "height": 478,
+      "author": "rupp.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurter_Dom_Eiserner_Steg.jpg",
+      "fullWidth": 1563
+     },
+     "description": "Frankfurt-Innenstadt I, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q701538",
@@ -96,7 +129,18 @@
      "wikidataId": "Q701538",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Deutsche_Bank_Taunusanlage.jpg/500px-Deutsche_Bank_Taunusanlage.jpg",
+      "width": 500,
+      "height": 732,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_Taunusanlage.jpg",
+      "fullWidth": 3084
+     },
+     "description": "Almanya'da bir bina"
     },
     {
      "id": "wikidata/Q708060",
@@ -108,7 +152,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tower_185.jpg/500px-Tower_185.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Thomas Wolf ( Der Wolf im Wald )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tower_185.jpg",
+      "fullWidth": 3744
+     },
+     "description": "skyscraper in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q657979",
@@ -119,7 +174,18 @@
      "wikidataId": "Q657979",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Frankfurt_Am_Main-Westend_Tower-Ansicht_vom_Maintower.jpg/500px-Frankfurt_Am_Main-Westend_Tower-Ansicht_vom_Maintower.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Westend_Tower-Ansicht_vom_Maintower.jpg",
+      "fullWidth": 2667
+     },
+     "description": "skyscraper in Frankfurt, Germany"
     },
     {
      "id": "node/34223060",
@@ -132,7 +198,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Frankfurter_R%C3%B6mer_2019.jpg/500px-Frankfurter_R%C3%B6mer_2019.jpg",
+      "width": 500,
+      "height": 388,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurter_R%C3%B6mer_2019.jpg",
+      "fullWidth": 6698
+     },
+     "description": "building in Frankfurt"
     },
     {
      "id": "wikidata/Q198046",
@@ -144,7 +221,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Eurotower_mit_Euro-Skulptur.jpg/500px-Eurotower_mit_Euro-Skulptur.jpg",
+      "width": 500,
+      "height": 851,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eurotower_mit_Euro-Skulptur.jpg",
+      "fullWidth": 4428
+     },
+     "description": "skyscraper in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q321040",
@@ -155,7 +243,18 @@
      "wikidataId": "Q321040",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Europ%C3%A4ische_Zentralbank_Frankfurt.jpg/500px-Europ%C3%A4ische_Zentralbank_Frankfurt.jpg",
+      "width": 500,
+      "height": 385,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Europ%C3%A4ische_Zentralbank_Frankfurt.jpg",
+      "fullWidth": 6844
+     },
+     "description": "headquarters of the ECB in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q195166",
@@ -166,7 +265,18 @@
      "wikidataId": "Q195166",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Frankfurt_Trianon.S%C3%BCd.20130618.jpg/500px-Frankfurt_Trianon.S%C3%BCd.20130618.jpg",
+      "width": 500,
+      "height": 659,
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Trianon.S%C3%BCd.20130618.jpg",
+      "fullWidth": 3034
+     },
+     "description": "skyscraper in Frankfurt, Germany"
     },
     {
      "id": "way/384153099",
@@ -184,7 +294,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Alte_Oper_Frankfurt_2019.jpg/500px-Alte_Oper_Frankfurt_2019.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alte_Oper_Frankfurt_2019.jpg",
+      "fullWidth": 6997
+     },
+     "description": "concert hall and former opera house in Frankfurt am Main, Germany"
     },
     {
      "id": "wikidata/Q568931",
@@ -200,7 +321,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mk_Frankfurt_Gallusanlage.jpg/500px-Mk_Frankfurt_Gallusanlage.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Michael König ( User:Magadan ) → Message .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mk_Frankfurt_Gallusanlage.jpg",
+      "fullWidth": 800
+     },
+     "description": "Opera company in Frankfurt am Main"
     },
     {
      "id": "wikidata/Q247531",
@@ -212,7 +344,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Frankfurt_Silver_Tower.20130616.jpg/500px-Frankfurt_Silver_Tower.20130616.jpg",
+      "width": 500,
+      "height": 754,
+      "author": "Epizentrum",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Silver_Tower.20130616.jpg",
+      "fullWidth": 2653
+     },
+     "description": "\"Silver Tower\", skyscraper in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q663140",
@@ -224,7 +367,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/IG-Farben-Haus.jpg/500px-IG-Farben-Haus.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sith Cookie",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:IG-Farben-Haus.jpg",
+      "fullWidth": 3504
+     },
+     "description": "building of the Goethe University Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q195141",
@@ -235,7 +389,18 @@
      "wikidataId": "Q195141",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Roemerberg-ffm-033.jpg/500px-Roemerberg-ffm-033.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roemerberg-ffm-033.jpg",
+      "fullWidth": 2848
+     },
+     "description": "square in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q177120",
@@ -247,7 +412,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Frankfurt_Am_Main-Zeil-vom_Maintower_aus_gesehen.jpg/500px-Frankfurt_Am_Main-Zeil-vom_Maintower_aus_gesehen.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Zeil-vom_Maintower_aus_gesehen.jpg",
+      "fullWidth": 3000
+     },
+     "description": "shopping street in Frankfurt, Germany"
     },
     {
      "id": "way/174501393",
@@ -262,7 +438,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Frankfurt_Am_Main-Goethe-Haus-Ansicht_am_Grossen_Hirschgraben.jpg/500px-Frankfurt_Am_Main-Goethe-Haus-Ansicht_am_Grossen_Hirschgraben.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Goethe-Haus-Ansicht_am_Grossen_Hirschgraben.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Goethe family residence in Frankfurt am Main"
     },
     {
      "id": "way/28426081",
@@ -276,7 +463,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Frankfurt am Main, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q220036",
@@ -287,7 +475,18 @@
      "wikidataId": "Q220036",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Exotarium%2C_Zoo_Frankfurt.jpg/500px-Exotarium%2C_Zoo_Frankfurt.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exotarium,_Zoo_Frankfurt.jpg",
+      "fullWidth": 2576
+     },
+     "description": "zoo in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q686644",
@@ -299,7 +498,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Opernturm-Frankfurt-2010-Ffm-b.jpg/500px-Opernturm-Frankfurt-2010-Ffm-b.jpg",
+      "width": 500,
+      "height": 812,
+      "author": "OpernturmVoll.jpg : Adornix derivative work: Dontworry",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Opernturm-Frankfurt-2010-Ffm-b.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Opernturm-Frankfurt-2010-Ffm-b.jpg",
+      "fullWidth": 2162
+     },
+     "description": "skyscraper in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q195138",
@@ -310,7 +520,18 @@
      "wikidataId": "Q195138",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/City-Haus-2008.jpg/500px-City-Haus-2008.jpg",
+      "width": 500,
+      "height": 863,
+      "author": "Dzbank-kmmo at German Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:City-Haus-2008.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:City-Haus-2008.jpg",
+      "fullWidth": 1535
+     },
+     "description": "high-rise in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q166893",
@@ -318,7 +539,18 @@
      "lat": 50.11,
      "lon": 8.66917,
      "wikipediaCount": 13,
-     "wikidataId": "Q166893"
+     "wikidataId": "Q166893",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Skyper_Frankfurt.jpg/500px-Skyper_Frankfurt.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skyper_Frankfurt.jpg",
+      "fullWidth": 960
+     },
+     "description": "building complex in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q553189",
@@ -329,7 +561,18 @@
      "wikidataId": "Q553189",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/070904_Engel_1.jpg/500px-070904_Engel_1.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Reinhard Dietrich",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:070904_Engel_1.jpg",
+      "fullWidth": 1944
+     },
+     "description": "heykel"
     },
     {
      "id": "way/27769650",
@@ -338,7 +581,18 @@
      "lon": 8.67873,
      "address": "An der Hauptwache 15",
      "wikipediaCount": 12,
-     "wikidataId": "Q195116"
+     "wikidataId": "Q195116",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Frankfurt_am_Main%2C_St._Katharinenkirche_an_der_Hauptwache.jpg/500px-Frankfurt_am_Main%2C_St._Katharinenkirche_an_der_Hauptwache.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_St._Katharinenkirche_an_der_Hauptwache.jpg",
+      "fullWidth": 6000
+     },
+     "description": "building in Frankfurt, Germany"
     },
     {
      "id": "wikidata/Q449266",
@@ -349,7 +603,18 @@
      "wikidataId": "Q449266",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Karmeliter-kloster-ffm001.jpg/500px-Karmeliter-kloster-ffm001.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Karmeliter-kloster-ffm001.jpg",
+      "fullWidth": 2834
+     },
+     "description": "quarter of Frankfurt am Main"
     },
     {
      "id": "way/27769415",
@@ -361,7 +626,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Frankfurt_Am_Main-Alte_Nikolaikirche-Ansicht_vom_Roemerberg-20081230.jpg/500px-Frankfurt_Am_Main-Alte_Nikolaikirche-Ansicht_vom_Roemerberg-20081230.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Alte_Nikolaikirche-Ansicht_vom_Roemerberg-20081230.jpg",
+      "fullWidth": 2333
+     },
+     "description": "Frankfurt-Innenstadt I, Almanya'da kilise"
     },
     {
      "id": "way/53671623",
@@ -374,7 +650,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Eschenheimer_Turm_in_the_evening_sun_from_north_west.jpg/500px-Eschenheimer_Turm_in_the_evening_sun_from_north_west.jpg",
+      "width": 500,
+      "height": 1362,
+      "author": "Jürgen Matern",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eschenheimer_Turm_in_the_evening_sun_from_north_west.jpg",
+      "fullWidth": 5700
+     },
+     "description": "landmark of Frankfurt"
     },
     {
      "id": "relation/1688621",
@@ -386,7 +673,18 @@
      "wikidataId": "Q282656",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/201702_palais_thurn_und_taxis_ffm_07.jpg/500px-201702_palais_thurn_und_taxis_ffm_07.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Ziko van Dijk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:201702_palais_thurn_und_taxis_ffm_07.jpg",
+      "fullWidth": 3000
+     },
+     "description": "building"
     },
     {
      "id": "way/49842069",
@@ -399,7 +697,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Frankfurt-Innenstadt I, Almanya'da kilise"
     },
     {
      "id": "way/53567953",
@@ -414,7 +713,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Frankfurt_Am_Main-Leonhardskirche-Ansicht_vom_Mainkai-Gegenwart.jpg/500px-Frankfurt_Am_Main-Leonhardskirche-Ansicht_vom_Mainkai-Gegenwart.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "No machine-readable author provided. Mylius assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Leonhardskirche-Ansicht_vom_Mainkai-Gegenwart.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Frankfurt-Innenstadt I, Almanya'da kilise"
     },
     {
      "id": "way/156298612",
@@ -427,7 +737,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Frankfurt am Main, Almanya'da kilise"
     },
     {
      "id": "way/174825000",
@@ -439,7 +750,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Staufenmauer.jpg/500px-Staufenmauer.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Staufenmauer.jpg",
+      "fullWidth": 1600
+     },
+     "description": "national heritage site"
     },
     {
      "id": "way/72471247",
@@ -451,7 +773,8 @@
      "wikidataId": "Q1667329",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "building in Frankfurt am Main, Germany"
     },
     {
      "id": "node/34378270",
@@ -465,7 +788,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Archaeologischer-garten-2010-ffm-052.jpg/500px-Archaeologischer-garten-2010-ffm-052.jpg",
+      "width": 500,
+      "height": 663,
+      "author": "Dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archaeologischer-garten-2010-ffm-052.jpg",
+      "fullWidth": 2990
+     },
+     "description": "archaeological site in Innenstadt, Germany"
     },
     {
      "id": "way/53798956",
@@ -476,7 +810,18 @@
      "wikidataId": "Q195201",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Gerechtigkeitsbrunnen-ffm001a.jpg/500px-Gerechtigkeitsbrunnen-ffm001a.jpg",
+      "width": 500,
+      "height": 558,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gerechtigkeitsbrunnen-ffm001a.jpg",
+      "fullWidth": 2024
+     },
+     "description": "fountain in Frankfurt am Main, Germany"
     },
     {
      "id": "way/71324413",
@@ -490,7 +835,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Deutschordenshaus-Frankfurt-2013-Ffm-Sachsenhausen-988.jpg/500px-Deutschordenshaus-Frankfurt-2013-Ffm-Sachsenhausen-988.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Simsalabimbam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutschordenshaus-Frankfurt-2013-Ffm-Sachsenhausen-988.jpg",
+      "fullWidth": 4500
+     },
+     "description": "Frankfurt-Süd, Almanya'da kilise"
     },
     {
      "id": "way/968095863",
@@ -501,7 +857,8 @@
      "wikidataId": "Q1624281",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "description": "pedestrian bridge across the Main in Frankfurt, Germany"
     },
     {
      "id": "way/11651042",
@@ -513,7 +870,8 @@
      "wikidataId": "Q2719403",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "castle in Germany"
     },
     {
      "id": "way/42254763",
@@ -525,7 +883,18 @@
      "wikidataId": "Q1665617",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Frankfurt_Am_Main-Fay_150-Das_Leinwandhaus-1871.jpg/500px-Frankfurt_Am_Main-Fay_150-Das_Leinwandhaus-1871.jpg",
+      "width": 500,
+      "height": 384,
+      "author": "Carl Friedrich Mylius",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Fay_150-Das_Leinwandhaus-1871.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Fay_150-Das_Leinwandhaus-1871.jpg",
+      "fullWidth": 1800
+     },
+     "description": "building in Frankfurt am Main, Germany"
     },
     {
      "id": "way/174500421",
@@ -537,7 +906,18 @@
      "kinds": [
       "heritage",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg/500px-Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg",
+      "fullWidth": 4500
+     },
+     "description": "building"
     },
     {
      "id": "way/449377753",
@@ -565,7 +945,8 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
+     ],
+     "description": "southernmost of the medieval city gates of Frankfurt am Main"
     },
     {
      "id": "way/174931826",
@@ -577,7 +958,8 @@
      "wikidataId": "Q436249",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "library in Frankfurt am Main, Germany"
     },
     {
      "id": "way/174500420",
@@ -589,7 +971,18 @@
      "wikidataId": "Q47502504",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Frankfurt_am_Main%2C_Haus_Wertheim_%282026%29.jpg/500px-Frankfurt_am_Main%2C_Haus_Wertheim_%282026%29.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Haus_Wertheim_(2026).jpg",
+      "fullWidth": 3887
+     },
+     "description": "residential building in Frankfurt-Innenstadt I, Germany"
     },
     {
      "id": "relation/1126033",
@@ -604,7 +997,8 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "description": "former monastery Frankfurt am Main"
     },
     {
      "id": "way/68970488",
@@ -616,7 +1010,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/FFM_Kuhhirtenturm_1.jpg/500px-FFM_Kuhhirtenturm_1.jpg",
+      "width": 500,
+      "height": 757,
+      "author": "Frank Behnsen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:FFM_Kuhhirtenturm_1.jpg",
+      "fullWidth": 1197
+     },
+     "description": "gate tower in Frankfurt am Main, now occupied by a Hindemith museum"
     },
     {
      "id": "way/148834018",
@@ -629,7 +1034,18 @@
       "adminArea",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Frankfurt_am_Main_Rententurm.JPG/500px-Frankfurt_am_Main_Rententurm.JPG",
+      "width": 500,
+      "height": 751,
+      "author": "Daviidos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_Rententurm.JPG",
+      "fullWidth": 2664
+     },
+     "description": "tower"
     },
     {
      "id": "node/4425363796",
@@ -655,7 +1071,18 @@
      "wikidataId": "Q110909169",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Frankfurt_Liebfrauenberg-Brunnen.jpg/500px-Frankfurt_Liebfrauenberg-Brunnen.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Dirk Schneider (ds-foto)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Liebfrauenberg-Brunnen.jpg",
+      "fullWidth": 2250
+     },
+     "description": "fountain in Frankfurt"
     },
     {
      "id": "way/174503727",
@@ -674,25 +1101,6 @@
      "kinds": [
       "heritage"
      ]
-    },
-    {
-     "id": "way/174487228",
-     "name": "Historischer Treppenturm",
-     "lat": 50.11034,
-     "lon": 8.68112
-    },
-    {
-     "id": "node/3883130557",
-     "name": "Nizzagärten",
-     "lat": 50.10658,
-     "lon": 8.67464,
-     "address": "Untermainkai"
-    },
-    {
-     "id": "node/1851644039",
-     "name": "Römerhöfchen",
-     "lat": 50.11038,
-     "lon": 8.68121
     }
    ]
   },
@@ -714,7 +1122,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Staedel-Frankfurt-2013-Ffm-862-867.jpg/500px-Staedel-Frankfurt-2013-Ffm-862-867.jpg",
+      "width": 500,
+      "height": 237,
+      "author": "Simsalabimbam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Staedel-Frankfurt-2013-Ffm-862-867.jpg",
+      "fullWidth": 9690
+     },
+     "description": "art museum in Frankfurt, Germany"
     },
     {
      "id": "way/35216115",
@@ -729,7 +1148,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum in Frankfurt, Germany"
     },
     {
      "id": "node/385171326",
@@ -743,7 +1163,18 @@
      "wikidataId": "Q885179",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Deutsches_Architekturmuseum%2C_Frankfurt.jpg/500px-Deutsches_Architekturmuseum%2C_Frankfurt.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Architekturmuseum,_Frankfurt.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum"
     },
     {
      "id": "way/689507214",
@@ -758,7 +1189,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Schirn1.jpg",
+      "width": 500,
+      "height": 742,
+      "author": "nfu-peng",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schirn1.jpg",
+      "fullWidth": 420
+     },
+     "description": "art museum in Frankfurt, Germany"
     },
     {
      "id": "node/2547104680",
@@ -773,7 +1215,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg/500px-Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mylius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Am_Main-Saalhof-Ansicht_vom_Eisernen_Steg.jpg",
+      "fullWidth": 4500
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/144343388",
@@ -788,7 +1241,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Frankfurt_Museum_Angewandte_Kunst_2011.jpg/500px-Frankfurt_Museum_Angewandte_Kunst_2011.jpg",
+      "width": 500,
+      "height": 339,
+      "author": "User:FA2010",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Museum_Angewandte_Kunst_2011.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_Museum_Angewandte_Kunst_2011.jpg",
+      "fullWidth": 4070
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "way/265793228",
@@ -803,7 +1267,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Frankfurt am Main, Germany dedicated to Jewish history and culture"
     },
     {
      "id": "node/144349808",
@@ -819,7 +1284,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Liebieghaus_Galeriefl%C3%BCgel_Haupteingang.jpg/500px-Liebieghaus_Galeriefl%C3%BCgel_Haupteingang.jpg",
+      "width": 500,
+      "height": 626,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Liebieghaus_Galeriefl%C3%BCgel_Haupteingang.jpg",
+      "fullWidth": 2646
+     },
+     "description": "sculpture museum in Frankfurt/Main, Germany"
     },
     {
      "id": "node/4292738515",
@@ -834,7 +1310,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Museum-fuer-kommunikation-ffm006.jpg/500px-Museum-fuer-kommunikation-ffm006.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-fuer-kommunikation-ffm006.jpg",
+      "fullWidth": 2136
+     },
+     "description": "museum in Frankfurt, Germany"
     },
     {
      "id": "node/12245796003",
@@ -849,7 +1336,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Archaeologisches_Museum_Frankfurt_Neubau.jpg/500px-Archaeologisches_Museum_Frankfurt_Neubau.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Haselburg-müller",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archaeologisches_Museum_Frankfurt_Neubau.jpg",
+      "fullWidth": 3888
+     },
+     "description": "museum of Archaeology in Hesse"
     },
     {
      "id": "node/385171325",
@@ -864,7 +1362,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Deutsches_Filmmuseum_Frankfurt.jpg/500px-Deutsches_Filmmuseum_Frankfurt.jpg",
+      "width": 500,
+      "height": 402,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Filmmuseum_Frankfurt.jpg",
+      "fullWidth": 3542
+     },
+     "description": "museum in Frankfurt, Germany"
     },
     {
      "id": "node/1851762708",
@@ -879,7 +1388,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum for comic art"
     },
     {
      "id": "way/898239357",
@@ -894,7 +1404,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Deutsches_Romantik-Museum_Frankfurt.jpg/500px-Deutsches_Romantik-Museum_Frankfurt.jpg",
+      "width": 500,
+      "height": 412,
+      "author": "Grimes2",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Romantik-Museum_Frankfurt.jpg",
+      "fullWidth": 3454
+     },
+     "description": "museum in Frankfurt am Main, Germany"
     },
     {
      "id": "node/7427950218",
@@ -909,7 +1430,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Museum-giersch-ffm001.jpg/500px-Museum-giersch-ffm001.jpg",
+      "width": 500,
+      "height": 457,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-giersch-ffm001.jpg",
+      "fullWidth": 1973
+     },
+     "description": "art museum in Frankfurt am Main, Germany"
     },
     {
      "id": "node/300928576",
@@ -924,7 +1456,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Museum-der-Weltkulturen-Frankfurt-2013-Ffm-711.jpg/500px-Museum-der-Weltkulturen-Frankfurt-2013-Ffm-711.jpg",
+      "width": 500,
+      "height": 297,
+      "author": "Simsalabimbam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-der-Weltkulturen-Frankfurt-2013-Ffm-711.jpg",
+      "fullWidth": 4344
+     },
+     "description": "ethnological museum in Frankfurt am Main, Germany"
     },
     {
      "id": "node/1851804853",
@@ -938,7 +1481,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Frankfurter_Kunstverein_2018.jpg/500px-Frankfurter_Kunstverein_2018.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Norbert Miguletz (Foto)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurter_Kunstverein_2018.jpg",
+      "fullWidth": 3543
+     },
+     "description": "voluntary association in Germany"
     },
     {
      "id": "node/6882184609",
@@ -952,7 +1506,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Deutschordenskirche-ffm001.jpg/500px-Deutschordenskirche-ffm001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutschordenskirche-ffm001.jpg",
+      "fullWidth": 2592
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "way/39383376",
@@ -967,7 +1532,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Portikus_Frankfurt.jpg/500px-Portikus_Frankfurt.jpg",
+      "width": 500,
+      "height": 418,
+      "author": "EvaK",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Portikus_Frankfurt.jpg",
+      "fullWidth": 1024
+     },
+     "description": "exhibition venue in Frankfurt am Main"
     },
     {
      "id": "node/3891320264",
@@ -982,7 +1558,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9e/DMKTLogoNeu.png",
+      "width": 500,
+      "height": 154,
+      "author": "Deutsche Tafelkultur e.V.",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:DMKTLogoNeu.png",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DMKTLogoNeu.png",
+      "fullWidth": 486
+     },
+     "description": "museum in [[:en:Frankfurt|Frankfurt]], Germany"
     },
     {
      "id": "node/7448608926",
@@ -997,7 +1584,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Eingang_im_Dommuseum_Frankfurt.jpg/500px-Eingang_im_Dommuseum_Frankfurt.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Münzenberger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eingang_im_Dommuseum_Frankfurt.jpg",
+      "fullWidth": 1200
+     },
+     "description": "museum in Frankfurt/Main, Germany"
     },
     {
      "id": "node/5308338523",
@@ -1011,7 +1609,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Germany"
     },
     {
      "id": "node/10587495568",
@@ -1026,7 +1625,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "art gallery in Frankfurt am Main, Germany"
     },
     {
      "id": "node/715551908",
@@ -1041,7 +1641,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Frankfurt_am_Main_-_Struwwelpeter-Museum_%282025%29_-_Aussen.jpg/500px-Frankfurt_am_Main_-_Struwwelpeter-Museum_%282025%29_-_Aussen.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main_-_Struwwelpeter-Museum_(2025)_-_Aussen.jpg",
+      "fullWidth": 3274
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "way/55456112",
@@ -1053,7 +1664,8 @@
      "wikidataId": "Q1973187",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "building in Frankfurt am Main, Germany"
     },
     {
      "id": "node/843464889",
@@ -1085,7 +1697,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Frankfurt_am_Main%2C_Bibelhaus_ErlebnisMuseum_-_Au%C3%9Fenansicht.jpg/500px-Frankfurt_am_Main%2C_Bibelhaus_ErlebnisMuseum_-_Au%C3%9Fenansicht.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Bibelhaus_ErlebnisMuseum_-_Au%C3%9Fenansicht.jpg",
+      "fullWidth": 6000
+     },
+     "description": "museum in [[Frankfurt]] (Germany)"
     },
     {
      "id": "node/11206320821",
@@ -1179,7 +1802,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Museum-judengasse-ffm002.jpg/500px-Museum-judengasse-ffm002.jpg",
+      "width": 500,
+      "height": 269,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-judengasse-ffm002.jpg",
+      "fullWidth": 2774
+     },
+     "description": "museum in Frankfurt am Main, Germany"
     },
     {
      "id": "node/3884481957",
@@ -1224,7 +1858,18 @@
      "wikidataId": "Q321291",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Maintower_Frankfurt.jpg/500px-Maintower_Frankfurt.jpg",
+      "width": 500,
+      "height": 962,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maintower_Frankfurt.jpg",
+      "fullWidth": 2922
+     },
+     "description": "skyscraper in Frankfurt, Germany"
     },
     {
      "id": "node/1719597181",
@@ -1298,7 +1943,8 @@
      "openingHours": "Mo-Su,PH 17:00-18:00+",
      "cuisine": "regional",
      "wikidataId": "Q108799067",
-     "detailed": true
+     "detailed": true,
+     "description": "restaurant and cider bar in Frankfurt am Main, Germany"
     },
     {
      "id": "node/504316686",
@@ -1634,7 +2280,18 @@
      "openingHours": "Mo-Fr 08:00-19:00; Sa-Su 09:00-19:00",
      "cuisine": "breakfast, cake, german, ice cream",
      "wikidataId": "Q1025630",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Frankfurt%2C_Cafe_Laumer.jpg/500px-Frankfurt%2C_Cafe_Laumer.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Karsten11",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt,_Cafe_Laumer.jpg",
+      "fullWidth": 1944
+     },
+     "description": "café"
     },
     {
      "id": "node/744783302",
@@ -1731,7 +2388,8 @@
      "openingHours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:00-22:00",
      "cuisine": "coffee shop",
      "wikidataId": "Q57292643",
-     "detailed": true
+     "detailed": true,
+     "description": "Lounge at Frankfurt Main Station for customers of DB (Deutsche Bahn) in possession of a first class ticket or other special customer status."
     },
     {
      "id": "node/9055765917",
@@ -2239,7 +2897,18 @@
      "website": "https://www.gibson-club.de/",
      "openingHours": "Th 21:00-04:00,Fr 23:00-05:00,Sa 23:00-05:00, PH -1 day 23:00-05:00, Mo-Fr 10:00-17:00 \"office\"",
      "wikidataId": "Q98057069",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Imagine_Dragons_FFM13_001.jpg/500px-Imagine_Dragons_FFM13_001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sven-Sebastian Sajak (Sven0705)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Imagine_Dragons_FFM13_001.jpg",
+      "fullWidth": 4212
+     },
+     "description": "nightclub in Frankfurt am Main, Germany"
     },
     {
      "id": "node/921136740",
@@ -2250,7 +2919,8 @@
      "website": "https://jazzkeller.de/",
      "openingHours": "\"Geöffnet nur bei Veranstaltungen, Mittwoch Jam Session, Freitag: Swingin'-Latin-Funky DanceNite 22:00 - 03:00 Konzertbeginn: Wochentags, einschl. Samstag um 21:00 Uhr, Sonntags 20:00 Uhr, öffnen 1 Std. v. Konzertbeginn (Freitags: 22:00)\"",
      "wikidataId": "Q249295",
-     "detailed": true
+     "detailed": true,
+     "description": "jazz club"
     },
     {
      "id": "node/4045825089",
