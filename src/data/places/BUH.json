@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BUH",
- "fetchedAt": "2026-10-18T16:42:53.163Z",
+ "fetchedAt": "2026-10-22T06:06:06.537Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -58,7 +58,18 @@
       "palace",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Avenida_de_la_Uni%C3%B3n%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_57.jpg/500px-Avenida_de_la_Uni%C3%B3n%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_57.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Avenida_de_la_Uni%C3%B3n,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_57.jpg",
+      "fullWidth": 8688
+     },
+     "description": "multi-purpose building in Romania"
     },
     {
      "id": "wikidata/Q338602",
@@ -70,7 +81,18 @@
      "wikidataId": "Q338602",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Arena-bukareszt.jpg/500px-Arena-bukareszt.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nowy Styl Group",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arena-bukareszt.jpg",
+      "fullWidth": 1242
+     },
+     "description": "football stadium in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q1428093",
@@ -81,7 +103,18 @@
      "wikidataId": "Q1428093",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Catedrala_M%C3%A2ntuirii_Neamului_-_Montarea_Crucii_%288-Aprilie_2025%29.jpg/500px-Catedrala_M%C3%A2ntuirii_Neamului_-_Montarea_Crucii_%288-Aprilie_2025%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MIHAIL",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Catedrala_M%C3%A2ntuirii_Neamului_-_Montarea_Crucii_(8-Aprilie_2025).jpg",
+      "fullWidth": 2300
+     },
+     "description": "cathedral in Bucharest"
     },
     {
      "id": "wikidata/Q1514860",
@@ -93,19 +126,41 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Catedrala_Patriarhal%C4%83%2C_Bucure%C8%99ti_%282023%29_-_IMG_02.jpg/500px-Catedrala_Patriarhal%C4%83%2C_Bucure%C8%99ti_%282023%29_-_IMG_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Catedrala_Patriarhal%C4%83,_Bucure%C8%99ti_(2023)_-_IMG_02.jpg",
+      "fullWidth": 4032
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/658220894",
      "name": "Palatul Voievodal Curtea Veche",
-     "lat": 44.43012,
-     "lon": 26.10133,
+     "lat": 44.43011,
+     "lon": 26.10131,
      "openingHours": "Mo-Su 10:00-22:00",
      "wikipediaCount": 17,
      "wikidataId": "Q1855757",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Bucharest_Day_1_-_Curtea_Veche_%289330338582%29.jpg/500px-Bucharest_Day_1_-_Curtea_Veche_%289330338582%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Stefan Jurca from Munich, Germany",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucharest_Day_1_-_Curtea_Veche_(9330338582).jpg",
+      "fullWidth": 4608
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q5010221",
@@ -116,7 +171,18 @@
      "wikidataId": "Q5010221",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Palacio_CEC%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_65.jpg/500px-Palacio_CEC%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_65.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_CEC,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_65.jpg",
+      "fullWidth": 6386
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "node/672149975",
@@ -129,7 +195,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/4%2C_Strada_Stavropoleos%2C_Bucharest_%28Romania%29.jpg/500px-4%2C_Strada_Stavropoleos%2C_Bucharest_%28Romania%29.jpg",
+      "width": 500,
+      "height": 299,
+      "author": "Neoclassicism Enthusiast",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:4,_Strada_Stavropoleos,_Bucharest_(Romania).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:4,_Strada_Stavropoleos,_Bucharest_(Romania).jpg",
+      "fullWidth": 3883
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/237750835",
@@ -142,7 +219,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Bucharest_%288273345834%29.jpg/500px-Bucharest_%288273345834%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Aleksandr Osipov from Ukraine",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucharest_(8273345834).jpg",
+      "fullWidth": 1280
+     },
+     "description": "public square in downtown Bucharest, Romania"
     },
     {
      "id": "wikidata/Q3390456",
@@ -154,7 +242,8 @@
      "wikidataId": "Q3390456",
      "kinds": [
       "square"
-     ]
+     ],
+     "description": "square in central Bucharest"
     },
     {
      "id": "wikidata/Q1138828",
@@ -166,7 +255,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/National_Theatre_Bucharest_%22Ion_Luca_Caragiale%22.jpg/500px-National_Theatre_Bucharest_%22Ion_Luca_Caragiale%22.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Craggyisland",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Theatre_Bucharest_%22Ion_Luca_Caragiale%22.jpg",
+      "fullWidth": 3000
+     },
+     "description": "theatre in Bucharest, Romania"
     },
     {
      "id": "relation/19896250",
@@ -181,7 +281,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Biblioteca_Central_de_la_Universidad_de_Bucarest%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_71.jpg/500px-Biblioteca_Central_de_la_Universidad_de_Bucarest%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_71.jpg",
+      "width": 500,
+      "height": 310,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Biblioteca_Central_de_la_Universidad_de_Bucarest,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_71.jpg",
+      "fullWidth": 6958
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q959632",
@@ -193,7 +304,18 @@
      "wikidataId": "Q959632",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Cismigiu-Garden-Bucharest-3.jpg/500px-Cismigiu-Garden-Bucharest-3.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mastermindsro",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cismigiu-Garden-Bucharest-3.jpg",
+      "fullWidth": 1024
+     },
+     "description": "park in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q3394199",
@@ -205,7 +327,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Iglesia_Kretzulescu%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_68.jpg/500px-Iglesia_Kretzulescu%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_68.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_Kretzulescu,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_68.jpg",
+      "fullWidth": 6861
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q2052075",
@@ -217,7 +350,18 @@
      "wikidataId": "Q2052075",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Parcul_Carol_din_Bucuresti_-_aleea_principala_vazuta_dinspre_Mausoleu.jpg/500px-Parcul_Carol_din_Bucuresti_-_aleea_principala_vazuta_dinspre_Mausoleu.jpg",
+      "width": 500,
+      "height": 222,
+      "author": "Miehs at Romanian Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Parcul_Carol_din_Bucuresti_-_aleea_principala_vazuta_dinspre_Mausoleu.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parcul_Carol_din_Bucuresti_-_aleea_principala_vazuta_dinspre_Mausoleu.jpg",
+      "fullWidth": 7672
+     },
+     "description": "park in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q950735",
@@ -229,7 +373,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Piata_Unirii_-_Bucuresti.jpg/500px-Piata_Unirii_-_Bucuresti.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "bogdan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Piata_Unirii_-_Bucuresti.jpg",
+      "fullWidth": 1024
+     },
+     "description": "square in Bucharest, Romania"
     },
     {
      "id": "way/232472401",
@@ -243,7 +398,8 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "description": "building in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q631967",
@@ -255,7 +411,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Avenida_de_la_Uni%C3%B3n%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_57.jpg/500px-Avenida_de_la_Uni%C3%B3n%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_57.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Avenida_de_la_Uni%C3%B3n,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_57.jpg",
+      "fullWidth": 8688
+     },
+     "description": "street in Bucharest, Romania"
     },
     {
      "id": "wikidata/Q2916042",
@@ -266,7 +433,18 @@
      "wikidataId": "Q2916042",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sinagoga_Mare%2C_Bucure%C5%9Fti_01.JPG/500px-Sinagoga_Mare%2C_Bucure%C5%9Fti_01.JPG",
+      "width": 500,
+      "height": 418,
+      "author": "User:DMY",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sinagoga_Mare,_Bucure%C5%9Fti_01.JPG",
+      "fullWidth": 3195
+     },
+     "description": "synagogue in Bucharest"
     },
     {
      "id": "way/1130933459",
@@ -279,7 +457,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Bucharest_-_%D7%91%D7%99%D7%AA_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%9B%D7%95%D7%A8%D7%90%D7%9C%D7%99_%D7%A9%D7%9C_%D7%91%D7%95%D7%A7%D7%A8%D7%A9%D7%98_%2828257630823%29.jpg/500px-Bucharest_-_%D7%91%D7%99%D7%AA_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%9B%D7%95%D7%A8%D7%90%D7%9C%D7%99_%D7%A9%D7%9C_%D7%91%D7%95%D7%A7%D7%A8%D7%A9%D7%98_%2828257630823%29.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Ștefan Jurcă from Munich, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucharest_-_%D7%91%D7%99%D7%AA_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%9B%D7%95%D7%A8%D7%90%D7%9C%D7%99_%D7%A9%D7%9C_%D7%91%D7%95%D7%A7%D7%A8%D7%A9%D7%98_(28257630823).jpg",
+      "fullWidth": 4426
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/39313897",
@@ -292,7 +481,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Stamps_of_Romania%2C_2014-105.jpg/500px-Stamps_of_Romania%2C_2014-105.jpg",
+      "width": 500,
+      "height": 230,
+      "author": "Post of Romania",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Stamps_of_Romania,_2014-105.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stamps_of_Romania,_2014-105.jpg",
+      "fullWidth": 1710
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "relation/14059159",
@@ -304,7 +504,18 @@
      "wikidataId": "Q3333397",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Palatul_Camerei_Deputatilor1.jpg/500px-Palatul_Camerei_Deputatilor1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Pixi at Romanian Wikipedia .",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palatul_Camerei_Deputatilor1.jpg",
+      "fullWidth": 2048
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/219710325",
@@ -315,7 +526,18 @@
      "wikidataId": "Q3382271",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Bucuresti_palatul_parlamentului_view.jpg/500px-Bucuresti_palatul_parlamentului_view.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Alessio Damato",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucuresti_palatul_parlamentului_view.jpg",
+      "fullWidth": 2592
+     },
+     "description": "square in Bucharest, Romania"
     },
     {
      "id": "relation/2230393",
@@ -327,7 +549,18 @@
      "wikidataId": "Q1670223",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Palacio_del_C%C3%ADrculo_Nacional_Militar%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_67.jpg/500px-Palacio_del_C%C3%ADrculo_Nacional_Militar%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_67.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_del_C%C3%ADrculo_Nacional_Militar,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_67.jpg",
+      "fullWidth": 7750
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "relation/19803024",
@@ -342,7 +575,18 @@
       "hotel",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/RO_B_Manuc_Inn.jpg/500px-RO_B_Manuc_Inn.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Andrei Stroe",
+      "license": "CC BY-SA 3.0 ro",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RO_B_Manuc_Inn.jpg",
+      "fullWidth": 3727
+     },
+     "description": "hotel and bar in Bucharest"
     },
     {
      "id": "way/232472620",
@@ -358,7 +602,8 @@
       "heritage",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "description": "concert hall in Bucharest, Romania"
     },
     {
      "id": "way/1448388407",
@@ -371,7 +616,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Biserica_Sf._Maria_a_Darurilor_-_B%C4%83r%C4%83%C5%A3iei.jpg/500px-Biserica_Sf._Maria_a_Darurilor_-_B%C4%83r%C4%83%C5%A3iei.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Korinna",
+      "license": "CC BY-SA 3.0 ro",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Biserica_Sf._Maria_a_Darurilor_-_B%C4%83r%C4%83%C5%A3iei.jpg",
+      "fullWidth": 2592
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "node/1393030628",
@@ -382,7 +638,8 @@
      "wikidataId": "Q6815562",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "relation/19932218",
@@ -396,7 +653,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Hanul_Gabroveni_01_-_seen_from_the_north_%28Strada_Lipscani_side%29.jpg/500px-Hanul_Gabroveni_01_-_seen_from_the_north_%28Strada_Lipscani_side%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Joe Mabel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hanul_Gabroveni_01_-_seen_from_the_north_(Strada_Lipscani_side).jpg",
+      "fullWidth": 6000
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/129316970",
@@ -408,7 +676,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mus%C3%A9e_municipal_de_Bucarest_%281%29.jpg/500px-Mus%C3%A9e_municipal_de_Bucarest_%281%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Goslime",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_municipal_de_Bucarest_(1).jpg",
+      "fullWidth": 4652
+     },
+     "description": "small palace in Bucharest, Romania, where the Bucharest Municipal Museum is housed"
     },
     {
      "id": "way/105889107",
@@ -428,7 +707,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/4%2C_Strada_Doamnei%2C_Bucharest_%28Romania%29_2.jpg/500px-4%2C_Strada_Doamnei%2C_Bucharest_%28Romania%29_2.jpg",
+      "width": 500,
+      "height": 516,
+      "author": "Neoclassicism Enthusiast",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:4,_Strada_Doamnei,_Bucharest_(Romania)_2.jpg",
+      "fullWidth": 3695
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/32335381",
@@ -440,7 +730,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/4_Strada_Ion_Ghica%2C_Bucharest_%2801%29.jpg/500px-4_Strada_Ion_Ghica%2C_Bucharest_%2801%29.jpg",
+      "width": 500,
+      "height": 551,
+      "author": "Neoclassicism Enthusiast",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:4_Strada_Ion_Ghica,_Bucharest_(01).jpg",
+      "fullWidth": 3009
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/164369116",
@@ -456,7 +757,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Bucharest_-_Grand_Hotel_Continental_%2828877800236%29.jpg/500px-Bucharest_-_Grand_Hotel_Continental_%2828877800236%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ștefan Jurcă from Munich, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucharest_-_Grand_Hotel_Continental_(28877800236).jpg",
+      "fullWidth": 4525
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "way/80192188",
@@ -470,7 +782,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/147-153%2C_Calea_Rahovei%2C_Bucharest_%28Romania%29.jpg/500px-147-153%2C_Calea_Rahovei%2C_Bucharest_%28Romania%29.jpg",
+      "width": 500,
+      "height": 372,
+      "author": "Neoclassicism Enthusiast",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:147-153,_Calea_Rahovei,_Bucharest_(Romania).jpg",
+      "fullWidth": 3789
+     },
+     "description": "Renaissance Revival palace of the Bragadiru beer factories on Calea Rahovei, in Bucharest, Romania"
     },
     {
      "id": "way/1456412455",
@@ -483,7 +806,8 @@
       "heritage",
       "noCoordinate",
       "palace"
-     ]
+     ],
+     "description": "Beaux-Arts building in Bucharest, Romania"
     },
     {
      "id": "way/1151081671",
@@ -494,7 +818,18 @@
      "wikidataId": "Q12735912",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Monumentul_Eroilor_Sanitari_din_Bucuresti.jpg/500px-Monumentul_Eroilor_Sanitari_din_Bucuresti.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Miehs",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monumentul_Eroilor_Sanitari_din_Bucuresti.jpg",
+      "fullWidth": 1536
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "relation/14317768",
@@ -506,7 +841,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Sede_de_la_Banca_Comercial_Rumana%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_76.jpg/500px-Sede_de_la_Banca_Comercial_Rumana%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_76.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sede_de_la_Banca_Comercial_Rumana,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_76.jpg",
+      "fullWidth": 6913
+     },
+     "description": "Beaux-Arts building in Bucharest, Romania"
     },
     {
      "id": "way/420527738",
@@ -518,7 +864,18 @@
      "wikidataId": "Q42771286",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Noblesse_Palace.jpg/500px-Noblesse_Palace.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Palatulnoblesse",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Noblesse_Palace.jpg",
+      "fullWidth": 4104
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "relation/19919941",
@@ -531,7 +888,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Bucharest_Romania_National_History_Museum_%282023%29.jpg/500px-Bucharest_Romania_National_History_Museum_%282023%29.jpg",
+      "width": 500,
+      "height": 238,
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucharest_Romania_National_History_Museum_(2023).jpg",
+      "fullWidth": 4476
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "relation/3166516",
@@ -544,7 +912,17 @@
       "heritage",
       "noCoordinate",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Palatul_Patriarhal_intrare.jpg/500px-Palatul_Patriarhal_intrare.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "The original uploader was Pixi at Romanian Wikipedia .",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palatul_Patriarhal_intrare.jpg",
+      "fullWidth": 1536
+     }
     },
     {
      "id": "node/473428600",
@@ -556,7 +934,18 @@
      "wikidataId": "Q12739609",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/RondulRom%C3%A2n.JPG/500px-RondulRom%C3%A2n.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Biruitorul",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:RondulRom%C3%A2n.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RondulRom%C3%A2n.JPG",
+      "fullWidth": 3264
+     },
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "node/6164079125",
@@ -602,7 +991,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "major art museum in Bucharest, Romania"
     },
     {
      "id": "node/12601324233",
@@ -617,7 +1007,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Museo_Nacional_de_Historia_de_Ruman%C3%ADa%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_63.jpg/500px-Museo_Nacional_de_Historia_de_Ruman%C3%ADa%2C_Bucarest%2C_Ruman%C3%ADa%2C_2016-05-29%2C_DD_63.jpg",
+      "width": 500,
+      "height": 311,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_de_Historia_de_Ruman%C3%ADa,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_63.jpg",
+      "fullWidth": 4612
+     },
+     "description": "national museum"
     },
     {
      "id": "node/2634652838",
@@ -632,7 +1033,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Bucarest_musee_national_art_contemporain.jpg/500px-Bucarest_musee_national_art_contemporain.jpg",
+      "width": 500,
+      "height": 394,
+      "author": "Velvet",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucarest_musee_national_art_contemporain.jpg",
+      "fullWidth": 4337
+     },
+     "description": "museum in Bucharest, Romania"
     },
     {
      "id": "way/220667665",
@@ -645,7 +1057,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/RO_B_Dimitrie_Leonida_Tech_Museum_3.jpg/500px-RO_B_Dimitrie_Leonida_Tech_Museum_3.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Andrei Stroe",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RO_B_Dimitrie_Leonida_Tech_Museum_3.jpg",
+      "fullWidth": 3872
+     },
+     "description": "mosque in Bucharest, Romania"
     },
     {
      "id": "node/2634652136",
@@ -661,7 +1084,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Muzeul_Theodor_Aman.jpg/500px-Muzeul_Theodor_Aman.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nicubunu",
+      "license": "CC BY-SA 3.0 ro",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzeul_Theodor_Aman.jpg",
+      "fullWidth": 1800
+     },
+     "description": "museum and heritage site in Bucharest, Romania"
     },
     {
      "id": "node/4505417867",
@@ -676,7 +1110,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mus%C3%A9e_municipal_de_Bucarest_%281%29.jpg/500px-Mus%C3%A9e_municipal_de_Bucarest_%281%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Goslime",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_municipal_de_Bucarest_(1).jpg",
+      "fullWidth": 4652
+     },
+     "description": "small palace in Bucharest, Romania, where the Bucharest Municipal Museum is housed"
     },
     {
      "id": "way/215350961",
@@ -689,7 +1134,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/RO_B_Arghezi_museum.JPG/500px-RO_B_Arghezi_museum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Andrei Stroe",
+      "license": "CC BY-SA 3.0 ro",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RO_B_Arghezi_museum.JPG",
+      "fullWidth": 3648
+     },
+     "description": "historic house museum in Sector 4, Romania"
     },
     {
      "id": "node/2634652661",
@@ -704,7 +1160,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bucharest_-_BNR_Palace_%28Banca_Na%C8%9Bional%C4%83_Rom%C3%A2n%C4%83%29_%2828450072642%29.jpg/500px-Bucharest_-_BNR_Palace_%28Banca_Na%C8%9Bional%C4%83_Rom%C3%A2n%C4%83%29_%2828450072642%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ștefan Jurcă from Munich, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bucharest_-_BNR_Palace_(Banca_Na%C8%9Bional%C4%83_Rom%C3%A2n%C4%83)_(28450072642).jpg",
+      "fullWidth": 4584
+     },
+     "description": "museum in Romania"
     },
     {
      "id": "node/2634651973",
@@ -719,7 +1186,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Bucharest, Romania"
     },
     {
      "id": "node/2634651903",
@@ -733,7 +1201,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum in Bucharest"
     },
     {
      "id": "node/2634652846",
@@ -746,7 +1215,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Bucharest"
     },
     {
      "id": "node/10778202975",
@@ -794,15 +1264,6 @@
      "openingHours": "Mo-Fr 10:30-18:30; Sa 10:30-17:00"
     },
     {
-     "id": "node/2634652537",
-     "name": "Muzeul Costumelor Populare din Romania",
-     "lat": 44.4283,
-     "lon": 26.08826,
-     "address": "Palatul Parlamentului, Str. Izvor 2 - 4, corpurile A3 - F, sector 5",
-     "website": "https://www.panoramax.ro/panorame-virtuale/galerie.php?id=109",
-     "openingHours": "10:00-17:00"
-    },
-    {
      "id": "node/2634651874",
      "name": "Muzeul de Istorie a Evreilor din România \"sef rabin Dr. Moses Rosen\"",
      "lat": 44.42839,
@@ -848,7 +1309,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "heritage site in Bucharest, Romania"
     },
     {
      "id": "node/2634652183",
@@ -985,6 +1447,13 @@
      "lat": 44.43551,
      "lon": 26.08205,
      "address": "Bulevardul Mihail Kogălniceanu 34-46"
+    },
+    {
+     "id": "node/10775260926",
+     "name": "Rembrandt Art Center",
+     "lat": 44.43199,
+     "lon": 26.10209,
+     "address": "Strada Blănari 5-7"
     }
    ]
   },
@@ -1140,7 +1609,18 @@
      "openingHours": "Mo-Su 10:00-24:00",
      "cuisine": "balkan, grill, regional, steak house",
      "wikidataId": "Q17169956",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Edificio_caru_%27cu_bere%2C_01.JPG/500px-Edificio_caru_%27cu_bere%2C_01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificio_caru_%27cu_bere,_01.JPG",
+      "fullWidth": 2112
+     },
+     "description": "historic bar and restaurant in Bucharest"
     },
     {
      "id": "node/10038019966",
@@ -1308,9 +1788,21 @@
       "business",
       "heritage",
       "hotel",
+      "organization",
       "station"
      ],
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/RO_B_Manuc_Inn.jpg/500px-RO_B_Manuc_Inn.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Andrei Stroe",
+      "license": "CC BY-SA 3.0 ro",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RO_B_Manuc_Inn.jpg",
+      "fullWidth": 3727
+     },
+     "description": "hotel and bar in Bucharest"
     },
     {
      "id": "node/13004627042",
@@ -1319,7 +1811,7 @@
      "lon": 26.09329,
      "address": "Bulevardul Unirii 2",
      "website": "https://www.hautepepper.ro/",
-     "openingHours": "Mo-Su 12-23",
+     "openingHours": "Mo-Su 12:00-23:00",
      "cuisine": "coffee shop, burger, regional",
      "detailed": true
     },

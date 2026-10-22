@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "MIL",
- "fetchedAt": "2026-10-18T15:59:08.419Z",
+ "fetchedAt": "2026-10-22T05:10:26.593Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Stadio_Meazza_2021_3.jpg/500px-Stadio_Meazza_2021_3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Prelvini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadio_Meazza_2021_3.jpg",
+      "fullWidth": 4728
+     },
+     "description": "multisports venue in Milan, Italy"
     },
     {
      "id": "relation/18017026",
@@ -67,7 +78,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/20110724_Milan_Cathedral_5260.jpg/500px-20110724_Milan_Cathedral_5260.jpg",
+      "width": 500,
+      "height": 434,
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20110724_Milan_Cathedral_5260.jpg",
+      "fullWidth": 3140
+     },
+     "description": "İtalya'da bulunan bir katedral"
     },
     {
      "id": "relation/6552704",
@@ -83,7 +105,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/20110725_Milano_La_Scala_5507.jpg/500px-20110725_Milano_La_Scala_5507.jpg",
+      "width": 500,
+      "height": 260,
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20110725_Milano_La_Scala_5507.jpg",
+      "fullWidth": 4097
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "relation/19382652",
@@ -98,7 +131,8 @@
       "heritage",
       "religious",
       "unesco"
-     ]
+     ],
+     "description": "church in Milan"
     },
     {
      "id": "relation/1918",
@@ -112,7 +146,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/20110725_Castello_Sforzesco_Milan_5557.jpg/500px-20110725_Castello_Sforzesco_Milan_5557.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20110725_Castello_Sforzesco_Milan_5557.jpg",
+      "fullWidth": 2705
+     },
+     "description": "castle in Milan, Italy"
     },
     {
      "id": "way/163757278",
@@ -124,7 +169,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Veduta_della_Galleria_Vittorio_Emanuele_II_da_piazza_del_Duomo%2C_Milano.jpg/500px-Veduta_della_Galleria_Vittorio_Emanuele_II_da_piazza_del_Duomo%2C_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_della_Galleria_Vittorio_Emanuele_II_da_piazza_del_Duomo,_Milano.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Milano'da bir alışveriş merkezi"
     },
     {
      "id": "node/13185691618",
@@ -135,7 +191,18 @@
      "wikidataId": "Q262629",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Vega_and_Sentinel-2_ready_and_waiting_on_the_launch_pad_%28cropped%29.jpg/500px-Vega_and_Sentinel-2_ready_and_waiting_on_the_launch_pad_%28cropped%29.jpg",
+      "width": 500,
+      "height": 498,
+      "author": "ESA_events",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vega_and_Sentinel-2_ready_and_waiting_on_the_launch_pad_(cropped).jpg",
+      "fullWidth": 925
+     },
+     "description": "Avrupa Uzay Ajansı'nın kullandığı, İtalya Uzay Ajansı ve Avrupa Uzay Ajansı'nın ortaklaşa geliştirdiği ArianeSpace tarafından kullanılan bir harcanabilir fırlatma sistemi"
     },
     {
      "id": "wikidata/Q801193",
@@ -148,7 +215,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Milan_CentralStation_016_4294.jpg/500px-Milan_CentralStation_016_4294.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milan_CentralStation_016_4294.jpg",
+      "fullWidth": 6000
+     },
+     "description": "railway station in Italy"
     },
     {
      "id": "wikidata/Q525297",
@@ -160,7 +238,18 @@
      "wikidataId": "Q525297",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Milano_-_piazzale_Loreto.jpg/500px-Milano_-_piazzale_Loreto.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "Arbalete",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_-_piazzale_Loreto.jpg",
+      "fullWidth": 1135
+     },
+     "description": "square in Milan"
     },
     {
      "id": "wikidata/Q920809",
@@ -173,7 +262,18 @@
      "kinds": [
       "heritage",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Mi-Milano-1959-Grattacielo-Pirelli.jpg/500px-Mi-Milano-1959-Grattacielo-Pirelli.jpg",
+      "width": 500,
+      "height": 737,
+      "author": "Albertomos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mi-Milano-1959-Grattacielo-Pirelli.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mi-Milano-1959-Grattacielo-Pirelli.jpg",
+      "fullWidth": 1218
+     },
+     "description": "İtalya'nın Milan kentinde 32 katlı, 124,1 m. yüksekliğinde gökdelen"
     },
     {
      "id": "relation/37717",
@@ -187,7 +287,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Milan_Sant%27Ambrogio_016_4923.jpg/500px-Milan_Sant%27Ambrogio_016_4923.jpg",
+      "width": 500,
+      "height": 428,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milan_Sant%27Ambrogio_016_4923.jpg",
+      "fullWidth": 5997
+     },
+     "description": "Romanesque church in Milan"
     },
     {
      "id": "wikidata/Q729978",
@@ -199,7 +310,18 @@
      "kinds": [
       "adminArea",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/A_model_in_wood_of_imperial_era_Mediolanum%2C_Civico_museo_archeologico_di_Milano_%288441760743%29.jpg/500px-A_model_in_wood_of_imperial_era_Mediolanum%2C_Civico_museo_archeologico_di_Milano_%288441760743%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Carole Raddato from FRANKFURT, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A_model_in_wood_of_imperial_era_Mediolanum,_Civico_museo_archeologico_di_Milano_(8441760743).jpg",
+      "fullWidth": 4288
+     },
+     "description": "ancient Milan, an Insubrian, later Roman city"
     },
     {
      "id": "node/11155707089",
@@ -207,7 +329,8 @@
      "lat": 45.48561,
      "lon": 9.1904,
      "wikipediaCount": 23,
-     "wikidataId": "Q2501413"
+     "wikidataId": "Q2501413",
+     "description": "building in Milan, Italy"
     },
     {
      "id": "wikidata/Q51108",
@@ -218,7 +341,18 @@
      "wikidataId": "Q51108",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Milano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg/500px-Milano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg",
+      "width": 500,
+      "height": 293,
+      "author": "Steffen Schmitz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano,_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II,_2016.jpg",
+      "fullWidth": 3048
+     },
+     "description": "main square of Milan, Italy"
     },
     {
      "id": "wikidata/Q963111",
@@ -229,7 +363,18 @@
      "wikidataId": "Q963111",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Milan_skyline_with_Unicredit_Tower_and_Bosco_Verticale.jpg/500px-Milan_skyline_with_Unicredit_Tower_and_Bosco_Verticale.jpg",
+      "width": 500,
+      "height": 342,
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milan_skyline_with_Unicredit_Tower_and_Bosco_Verticale.jpg",
+      "fullWidth": 5580
+     },
+     "description": "skyscraper"
     },
     {
      "id": "relation/19371855",
@@ -243,7 +388,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Milano_-_Basilica_san_Lorenzo_a_porta_Ticinese.jpg/500px-Milano_-_Basilica_san_Lorenzo_a_porta_Ticinese.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Blackcat",
+      "license": "CC BY-SA 3.0 it",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/it/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_-_Basilica_san_Lorenzo_a_porta_Ticinese.jpg",
+      "fullWidth": 4500
+     },
+     "description": "Dini yapıt"
     },
     {
      "id": "way/45671470",
@@ -255,7 +411,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Milan_Santa_Maria_presso_San_Satiro_016_4771.jpg/500px-Milan_Santa_Maria_presso_San_Satiro_016_4771.jpg",
+      "width": 500,
+      "height": 483,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milan_Santa_Maria_presso_San_Satiro_016_4771.jpg",
+      "fullWidth": 6742
+     },
+     "description": "church in Milan, Italy"
     },
     {
      "id": "wikidata/Q801187",
@@ -266,7 +433,18 @@
      "wikidataId": "Q801187",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Skyline_of_the_financial_center%2C_in_the_foreground%2C_the_Milano_Porta_Garibaldi_railway_station%2C_Milan%2C_Italy.jpg/500px-Skyline_of_the_financial_center%2C_in_the_foreground%2C_the_Milano_Porta_Garibaldi_railway_station%2C_Milan%2C_Italy.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "FlavMi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skyline_of_the_financial_center,_in_the_foreground,_the_Milano_Porta_Garibaldi_railway_station,_Milan,_Italy.jpg",
+      "fullWidth": 3968
+     },
+     "description": "railway station in Italy"
     },
     {
      "id": "wikidata/Q133963",
@@ -274,7 +452,18 @@
      "lat": 45.47333,
      "lon": 9.17528,
      "wikipediaCount": 16,
-     "wikidataId": "Q133963"
+     "wikidataId": "Q133963",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Parco_Sempione_Milano.jpg/500px-Parco_Sempione_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Alessandro Perazzoli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parco_Sempione_Milano.jpg",
+      "fullWidth": 5184
+     },
+     "description": "urban park in Milan"
     },
     {
      "id": "way/4915384",
@@ -288,7 +477,18 @@
      "wikidataId": "Q608405",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Cimitero_Monumentale_di_Milano_nella_sua_vista_esterna_frontale.jpg/500px-Cimitero_Monumentale_di_Milano_nella_sua_vista_esterna_frontale.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cimitero_Monumentale_di_Milano_nella_sua_vista_esterna_frontale.jpg",
+      "fullWidth": 4368
+     },
+     "description": "Milano, İtalya'da mezarlık"
     },
     {
      "id": "relation/178303",
@@ -300,7 +500,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Veduta_laterale_del_Palazzo_di_Brera%2C_Milano.jpg/500px-Veduta_laterale_del_Palazzo_di_Brera%2C_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_laterale_del_Palazzo_di_Brera,_Milano.jpg",
+      "fullWidth": 3000
+     },
+     "description": "palace in Milan"
     },
     {
      "id": "wikidata/Q1156274",
@@ -315,7 +526,18 @@
       "office",
       "skyscraper",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Torre_Velasca_01.jpg/500px-Torre_Velasca_01.jpg",
+      "width": 500,
+      "height": 525,
+      "author": "https://www.flickr.com/photos/davidorban/",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_Velasca_01.jpg",
+      "fullWidth": 1640
+     },
+     "description": "skyscraper in Milan, Italy"
     },
     {
      "id": "way/165882138",
@@ -329,7 +551,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/7172MilanoSEustorgio.JPG/500px-7172MilanoSEustorgio.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Geobia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:7172MilanoSEustorgio.JPG",
+      "fullWidth": 800
+     },
+     "description": "basilica in Milan"
     },
     {
      "id": "wikidata/Q3995200",
@@ -340,7 +573,18 @@
      "wikidataId": "Q3995200",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Torre_Isozaki_Milano.jpg/500px-Torre_Isozaki_Milano.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Plflcn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_Isozaki_Milano.jpg",
+      "fullWidth": 3024
+     },
+     "description": "building in Milan, Italy"
     },
     {
      "id": "way/24971631",
@@ -352,7 +596,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/La_Basilica_di_San_Nazaro_in_Brolo%2C_Milano%2C_veduta_della_Cappella_Trivulzio.jpg/500px-La_Basilica_di_San_Nazaro_in_Brolo%2C_Milano%2C_veduta_della_Cappella_Trivulzio.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Basilica_di_San_Nazaro_in_Brolo,_Milano,_veduta_della_Cappella_Trivulzio.jpg",
+      "fullWidth": 2000
+     },
+     "description": "basilica in Milan, Lombardy, Italy"
     },
     {
      "id": "way/39349468",
@@ -364,7 +619,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Veduta_della_chiesa_di_San_Bernardino_alle_Ossa%2C_Milano._A_destra_la_facciata_di_Santo_Stefano.jpg/500px-Veduta_della_chiesa_di_San_Bernardino_alle_Ossa%2C_Milano._A_destra_la_facciata_di_Santo_Stefano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_della_chiesa_di_San_Bernardino_alle_Ossa,_Milano._A_destra_la_facciata_di_Santo_Stefano.jpg",
+      "fullWidth": 3000
+     },
+     "description": "church"
     },
     {
      "id": "relation/2570199",
@@ -375,7 +641,18 @@
      "wikidataId": "Q616863",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Palazzo_Lombardia_%2817165328959%29.jpg/500px-Palazzo_Lombardia_%2817165328959%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Luca Nebuloni from Milan, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Lombardia_(17165328959).jpg",
+      "fullWidth": 3456
+     },
+     "description": "complex of buildings in Milan, Italy"
     },
     {
      "id": "wikidata/Q1088761",
@@ -387,7 +664,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2012-04-27_Milano_Arena_Civica_tribuna_principale.jpg/500px-2012-04-27_Milano_Arena_Civica_tribuna_principale.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Blackcat",
+      "license": "CC BY-SA 3.0 it",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/it/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2012-04-27_Milano_Arena_Civica_tribuna_principale.jpg",
+      "fullWidth": 2768
+     },
+     "description": "multi-purpose stadium in Milan, Italy"
     },
     {
      "id": "way/44601409",
@@ -400,7 +688,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Milano_chiesa_San_Carlo_al_Corso.JPG/500px-Milano_chiesa_San_Carlo_al_Corso.JPG",
+      "width": 500,
+      "height": 360,
+      "author": "Arbalete",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_chiesa_San_Carlo_al_Corso.JPG",
+      "fullWidth": 1003
+     },
+     "description": "church in Milan"
     },
     {
      "id": "way/38000599",
@@ -412,7 +711,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Lombardia_Milano9_tango7174.jpg/500px-Lombardia_Milano9_tango7174.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Tango7174",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lombardia_Milano9_tango7174.jpg",
+      "fullWidth": 600
+     },
+     "description": "minor basilica"
     },
     {
      "id": "wikidata/Q384032",
@@ -424,7 +734,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Milan_Basilica_di_Santo_Stefano_Maggiore_016_5156.jpg/500px-Milan_Basilica_di_Santo_Stefano_Maggiore_016_5156.jpg",
+      "width": 500,
+      "height": 572,
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milan_Basilica_di_Santo_Stefano_Maggiore_016_5156.jpg",
+      "fullWidth": 5978
+     },
+     "description": "church building in Milan, Italy"
     },
     {
      "id": "wikidata/Q734515",
@@ -436,7 +757,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Milano_Santa_Maria_dei_Miracoli_-_facciata_1.jpg/500px-Milano_Santa_Maria_dei_Miracoli_-_facciata_1.jpg",
+      "width": 500,
+      "height": 559,
+      "author": "Saggittarius A",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_Santa_Maria_dei_Miracoli_-_facciata_1.jpg",
+      "fullWidth": 2735
+     },
+     "description": "church in Milan"
     },
     {
      "id": "wikidata/Q1049376",
@@ -454,7 +786,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/5300MilanoTeatroDalVerme.JPG/500px-5300MilanoTeatroDalVerme.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "MarkusMark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:5300MilanoTeatroDalVerme.JPG",
+      "fullWidth": 800
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "wikidata/Q2362714",
@@ -466,7 +809,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Via_Monte_Napoleone%2C_Milan%2C_Italy.jpg/500px-Via_Monte_Napoleone%2C_Milan%2C_Italy.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "FlavMi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Via_Monte_Napoleone,_Milan,_Italy.jpg",
+      "fullWidth": 3968
+     },
+     "description": "street in Milan, Italy"
     },
     {
      "id": "way/164070432",
@@ -478,7 +832,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/2964MilanoSMariaPassione.jpg/500px-2964MilanoSMariaPassione.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Geobia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2964MilanoSMariaPassione.jpg",
+      "fullWidth": 800
+     },
+     "description": "church in Milan"
     },
     {
      "id": "wikidata/Q901491",
@@ -490,7 +855,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/20190826_Sant%27Alessandro_in_Zebedia%2C_facciata.jpg/500px-20190826_Sant%27Alessandro_in_Zebedia%2C_facciata.jpg",
+      "width": 500,
+      "height": 370,
+      "author": "Melancholia~itwiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20190826_Sant%27Alessandro_in_Zebedia,_facciata.jpg",
+      "fullWidth": 3985
+     },
+     "description": "church in Milan"
     },
     {
      "id": "way/46103655",
@@ -504,7 +880,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/096MilanoSMaurizio.JPG/500px-096MilanoSMaurizio.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "MarkusMark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:096MilanoSMaurizio.JPG",
+      "fullWidth": 525
+     },
+     "description": "a Roman Catholic church in Milan, northern Italy, completed in 1518"
     },
     {
      "id": "way/23227442",
@@ -516,7 +903,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/San_Fedele%2C_Milano_2373.jpg/500px-San_Fedele%2C_Milano_2373.jpg",
+      "width": 500,
+      "height": 658,
+      "author": "C messier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Fedele,_Milano_2373.jpg",
+      "fullWidth": 3408
+     },
+     "description": "church in Milan"
     },
     {
      "id": "way/27596084",
@@ -528,7 +926,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "church in Milan"
     },
     {
      "id": "way/42106021",
@@ -540,7 +939,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Chiesa_di_San_Marco_-_Milano.JPG/500px-Chiesa_di_San_Marco_-_Milano.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Stefano Stabile",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Marco_-_Milano.JPG",
+      "fullWidth": 1536
+     },
+     "description": "church in Milan"
     },
     {
      "id": "wikidata/Q169090",
@@ -551,7 +961,18 @@
      "wikidataId": "Q169090",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Milano%2C_Palazzo_Dugnani%2C_2016-06_CN-02.jpg/500px-Milano%2C_Palazzo_Dugnani%2C_2016-06_CN-02.jpg",
+      "width": 500,
+      "height": 316,
+      "author": "Steffen Schmitz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano,_Palazzo_Dugnani,_2016-06_CN-02.jpg",
+      "fullWidth": 3815
+     },
+     "description": "urban park in Milan"
     },
     {
      "id": "wikidata/Q112134535",
@@ -559,7 +980,18 @@
      "lat": 45.44447,
      "lon": 9.19989,
      "wikipediaCount": 11,
-     "wikidataId": "Q112134535"
+     "wikidataId": "Q112134535",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Edificio_degli_atleti_italiani_al_villaggio_olimpico_di_Milano_Cortina_2026.jpg/500px-Edificio_degli_atleti_italiani_al_villaggio_olimpico_di_Milano_Cortina_2026.jpg",
+      "width": 500,
+      "height": 302,
+      "author": "Marcuscalabresus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edificio_degli_atleti_italiani_al_villaggio_olimpico_di_Milano_Cortina_2026.jpg",
+      "fullWidth": 4080
+     },
+     "description": "İtalya'nın Lombardia bölgesinde, Milano ili, merkez ilçesine bağlı yerleşim yeri"
     },
     {
      "id": "relation/2747454",
@@ -571,7 +1003,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/3650MilanoPalazzoBelgioiso.JPG/500px-3650MilanoPalazzoBelgioiso.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Geobia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:3650MilanoPalazzoBelgioiso.JPG",
+      "fullWidth": 800
+     },
+     "description": "palace in Milan, located on Piazza Belgioioso"
     },
     {
      "id": "relation/2357934",
@@ -583,7 +1026,8 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "description": "house"
     },
     {
      "id": "wikidata/Q1648312",
@@ -596,7 +1040,18 @@
       "heritage",
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/878MilanoPalazzoRagione.JPG/500px-878MilanoPalazzoRagione.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "MarkusMark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:878MilanoPalazzoRagione.JPG",
+      "fullWidth": 800
+     },
+     "description": "building in Milan, Italy"
     },
     {
      "id": "relation/2783859",
@@ -608,7 +1063,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Palais_Litta_-_Milan_%28IT25%29_-_2022-09-03_-_3.jpg/500px-Palais_Litta_-_Milan_%28IT25%29_-_2022-09-03_-_3.jpg",
+      "width": 500,
+      "height": 248,
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Litta_-_Milan_(IT25)_-_2022-09-03_-_3.jpg",
+      "fullWidth": 8916
+     },
+     "description": "palace in Milan, Italy"
     },
     {
      "id": "wikidata/Q731222",
@@ -620,7 +1086,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/041MilanoSVittore.JPG/500px-041MilanoSVittore.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "MarkusMark",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:041MilanoSVittore.JPG",
+      "fullWidth": 800
+     },
+     "description": "church and monastery"
     },
     {
      "id": "way/740215877",
@@ -629,7 +1106,18 @@
      "lon": 9.18105,
      "openingHours": "24/7",
      "wikipediaCount": 10,
-     "wikidataId": "Q1053483"
+     "wikidataId": "Q1053483",
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Colonneslorenzo.jpg",
+      "width": 500,
+      "height": 541,
+      "author": "Original uploader was Bigorenzo at it.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Colonneslorenzo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Colonneslorenzo.jpg",
+      "fullWidth": 480
+     },
+     "description": "Roman ruins of sacred architecture in Milan"
     },
     {
      "id": "relation/18237414",
@@ -637,7 +1125,17 @@
      "lat": 45.47569,
      "lon": 9.17243,
      "wikipediaCount": 10,
-     "wikidataId": "Q776576"
+     "wikidataId": "Q776576",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Triumphal_arch_in_Milan_%288870285141%29.jpg/500px-Triumphal_arch_in_Milan_%288870285141%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Filip Maljković from Pancevo, Serbia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Triumphal_arch_in_Milan_(8870285141).jpg",
+      "fullWidth": 3264
+     }
     },
     {
      "id": "way/207101070",
@@ -649,7 +1147,8 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "description": "palazzo"
     }
    ]
   },
@@ -672,7 +1171,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg/500px-Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg",
+      "fullWidth": 4592
+     },
+     "description": "art museum in Milan, Italy"
     },
     {
      "id": "node/2400614071",
@@ -689,7 +1199,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Il_palazzo_che_ospita_il_Museo_Poldi-Pezzoli_in_via_Manzoni%2C_Milano.jpg/500px-Il_palazzo_che_ospita_il_Museo_Poldi-Pezzoli_in_via_Manzoni%2C_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Il_palazzo_che_ospita_il_Museo_Poldi-Pezzoli_in_via_Manzoni,_Milano.jpg",
+      "fullWidth": 3000
+     },
+     "description": "art museum in Milan"
     },
     {
      "id": "relation/36488",
@@ -705,7 +1226,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Veduta_di_tre_quarti_del_Palazzo_Reale_di_Milano.jpg/500px-Veduta_di_tre_quarti_del_Palazzo_Reale_di_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_di_tre_quarti_del_Palazzo_Reale_di_Milano.jpg",
+      "fullWidth": 3000
+     },
+     "description": "İtalya'da saray"
     },
     {
      "id": "node/3910270284",
@@ -719,7 +1251,18 @@
      "wikidataId": "Q1878666",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Michelangelo_piet%C3%A0_rondanini.jpg/500px-Michelangelo_piet%C3%A0_rondanini.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Paolo da Reggio",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Michelangelo_piet%C3%A0_rondanini.jpg",
+      "fullWidth": 1536
+     },
+     "description": "sculpture by Michelangelo, 1564"
     },
     {
      "id": "node/9551885699",
@@ -736,7 +1279,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Veduta_del_Museo_civico_di_storia_naturale_di_Milano.jpg/500px-Veduta_del_Museo_civico_di_storia_naturale_di_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_del_Museo_civico_di_storia_naturale_di_Milano.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Milan Natural History Museum, Italy"
     },
     {
      "id": "node/2153388340",
@@ -752,7 +1306,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/L%27antico_osservatorio_astronomico_di_Brera_a_Milano.jpg/500px-L%27antico_osservatorio_astronomico_di_Brera_a_Milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:L%27antico_osservatorio_astronomico_di_Brera_a_Milano.jpg",
+      "fullWidth": 4368
+     },
+     "description": "observatory"
     },
     {
      "id": "node/1223091032",
@@ -768,7 +1333,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Arengario_da_Piazzetta_Reale.jpg/500px-Arengario_da_Piazzetta_Reale.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Emanuela Terzi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arengario_da_Piazzetta_Reale.jpg",
+      "fullWidth": 4176
+     },
+     "description": "museum of twentieth-century art in Milan, Italy"
     },
     {
      "id": "wikidata/Q2705493",
@@ -781,7 +1357,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Parco_Sempione_%28Milan%29%2C_Wikimania_2016%2C_MP_003.jpg/500px-Parco_Sempione_%28Milan%29%2C_Wikimania_2016%2C_MP_003.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parco_Sempione_(Milan),_Wikimania_2016,_MP_003.jpg",
+      "fullWidth": 5184
+     },
+     "description": "cultural organization and museum in Milan, Italy"
     },
     {
      "id": "node/2324825968",
@@ -797,7 +1384,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Veduta_del_Palazzo_della_Banca_Commerciale_Italiana%2C_piazza_della_Scala%2C_Milano%2C_tre_quarti_da_sinistra.jpg/500px-Veduta_del_Palazzo_della_Banca_Commerciale_Italiana%2C_piazza_della_Scala%2C_Milano%2C_tre_quarti_da_sinistra.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_del_Palazzo_della_Banca_Commerciale_Italiana,_piazza_della_Scala,_Milano,_tre_quarti_da_sinistra.jpg",
+      "fullWidth": 3000
+     },
+     "description": "art museum in Palazzo della Banca Commerciale Italiana, Milan, Italy"
     },
     {
      "id": "node/9560216692",
@@ -813,7 +1411,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Civico_museo_archeologico_di_Milano_a01.jpg/500px-Civico_museo_archeologico_di_Milano_a01.jpg",
+      "width": 500,
+      "height": 440,
+      "author": "Alberto Panzani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Civico_museo_archeologico_di_Milano_a01.jpg",
+      "fullWidth": 4255
+     },
+     "description": "museum in Milan"
     },
     {
      "id": "node/6424667157",
@@ -829,7 +1438,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/La_Villa_Reale_di_Milano%2C_vista_generale.jpg/500px-La_Villa_Reale_di_Milano%2C_vista_generale.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Villa_Reale_di_Milano,_vista_generale.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Modern Art Museum in Milan"
     },
     {
      "id": "node/1828890767",
@@ -845,7 +1465,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Milano_-_Teatro_alla_Scala_3924.jpg/500px-Milano_-_Teatro_alla_Scala_3924.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Lucalari84",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_-_Teatro_alla_Scala_3924.jpg",
+      "fullWidth": 1920
+     },
+     "description": "museum in Milan, Italy"
     },
     {
      "id": "node/2537169197",
@@ -860,7 +1491,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Castello_Sforzesco_%28Milan%29_-_Portico_di_Galeazzo_Maria.jpg/500px-Castello_Sforzesco_%28Milan%29_-_Portico_di_Galeazzo_Maria.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Carlo Dell'Orto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castello_Sforzesco_(Milan)_-_Portico_di_Galeazzo_Maria.jpg",
+      "fullWidth": 3032
+     },
+     "description": "art museum in Milan, Italy"
     },
     {
      "id": "node/2531365878",
@@ -877,7 +1519,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/20161101_Palazzo_Bagatti_Valsecchi%2C_Facciata_via_Santo_Spirito.jpg/500px-20161101_Palazzo_Bagatti_Valsecchi%2C_Facciata_via_Santo_Spirito.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Melancholia~itwiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20161101_Palazzo_Bagatti_Valsecchi,_Facciata_via_Santo_Spirito.jpg",
+      "fullWidth": 3264
+     },
+     "description": "art museum"
     },
     {
      "id": "way/420005515",
@@ -893,7 +1546,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Chiostri_del_Museo_Nazionale_Scienza_e_Tecnologia_Leonardo_da_Vinci.jpg/500px-Chiostri_del_Museo_Nazionale_Scienza_e_Tecnologia_Leonardo_da_Vinci.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolo Soave",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiostri_del_Museo_Nazionale_Scienza_e_Tecnologia_Leonardo_da_Vinci.jpg",
+      "fullWidth": 6224
+     },
+     "description": "museum in Milan, Italy"
     },
     {
      "id": "node/2531406270",
@@ -908,7 +1572,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Image_gallery_%282%29.jpg/500px-Image_gallery_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nicoin3pido",
+      "license": "CC BY-SA 3.0 it",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/it/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Image_gallery_(2).jpg",
+      "fullWidth": 3648
+     },
+     "description": "museum in Milan, Italy"
     },
     {
      "id": "node/4305608681",
@@ -925,7 +1600,8 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "description": "museum in Italy"
     },
     {
      "id": "node/2535087543",
@@ -941,7 +1617,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Veduta_della_Biblioteca_Ambrosiana%2C_Milano%2C_di_tre_quarti.jpg/500px-Veduta_della_Biblioteca_Ambrosiana%2C_Milano%2C_di_tre_quarti.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Paolobon140",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Veduta_della_Biblioteca_Ambrosiana,_Milano,_di_tre_quarti.jpg",
+      "fullWidth": 3000
+     },
+     "description": "art museum in Milan"
     },
     {
      "id": "node/2535106339",
@@ -956,7 +1643,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Museo_d%27arte_antica%2C_sala_02.JPG/500px-Museo_d%27arte_antica%2C_sala_02.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_d%27arte_antica,_sala_02.JPG",
+      "fullWidth": 3456
+     },
+     "description": "museum in Milan, Lombardy, Italy"
     },
     {
      "id": "node/2529645009",
@@ -971,7 +1669,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Castello_museo_egizio_milano.jpg/500px-Castello_museo_egizio_milano.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Stefano Stabile",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castello_museo_egizio_milano.jpg",
+      "fullWidth": 1800
+     },
+     "description": "museum in Milan, Italy"
     },
     {
      "id": "way/252422994",
@@ -987,7 +1696,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/PAC_%28padiglione_d%27arte_contemporanea%29_-_milano.JPG/500px-PAC_%28padiglione_d%27arte_contemporanea%29_-_milano.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Stefano Stabile",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PAC_(padiglione_d%27arte_contemporanea)_-_milano.JPG",
+      "fullWidth": 1536
+     },
+     "description": "art museum in Milan, Italy"
     },
     {
      "id": "node/9560211533",
@@ -1004,7 +1724,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/20170521_Casa_Manzoni.jpg/500px-20170521_Casa_Manzoni.jpg",
+      "width": 500,
+      "height": 627,
+      "author": "Melancholia~itwiki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20170521_Casa_Manzoni.jpg",
+      "fullWidth": 1986
+     },
+     "description": "historic house museum in Milan, Italy"
     },
     {
      "id": "way/138750066",
@@ -1019,7 +1750,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Villa_Necchi%2C_Milan%2C_Italy.jpg/500px-Villa_Necchi%2C_Milan%2C_Italy.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Italy Chronicles Photos",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Necchi,_Milan,_Italy.jpg",
+      "fullWidth": 2144
+     },
+     "description": "İtalya'da müze olarak kullanılan villa"
     },
     {
      "id": "node/8765487736",
@@ -1034,7 +1776,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/ADI_Design_Museum.jpg/500px-ADI_Design_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "DeLo 99",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ADI_Design_Museum.jpg",
+      "fullWidth": 4160
+     },
+     "description": "museum in Milan"
     },
     {
      "id": "way/341447523",
@@ -1049,7 +1802,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Armani_silos.jpg/500px-Armani_silos.jpg",
+      "width": 500,
+      "height": 643,
+      "author": "Anna Bombińska",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Armani_silos.jpg",
+      "fullWidth": 2548
+     },
+     "description": "Fashion Art museum in Milan"
     },
     {
      "id": "node/1898336420",
@@ -1065,7 +1829,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Museo_Diocesano_Milano.jpg/500px-Museo_Diocesano_Milano.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Trotter Christie",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Diocesano_Milano.jpg",
+      "fullWidth": 1024
+     },
+     "description": "art museum in Milan"
     },
     {
      "id": "way/425004880",
@@ -1079,7 +1854,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Fondazione_Prada%2C_Milan.jpg/500px-Fondazione_Prada%2C_Milan.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jay Dixit",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fondazione_Prada,_Milan.jpg",
+      "fullWidth": 3000
+     },
+     "description": "art museum in Italy"
     },
     {
      "id": "node/2531342458",
@@ -1094,7 +1880,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Memoriale_della_Shoah_di_Milano.JPG/500px-Memoriale_della_Shoah_di_Milano.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Fcarbonara",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Memoriale_della_Shoah_di_Milano.JPG",
+      "fullWidth": 4608
+     },
+     "description": "holocaust memorial in Milan, Italy"
     },
     {
      "id": "node/2531420511",
@@ -1109,7 +1906,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Museo_dei_mobili_del_Castello_Sforzesco_13.jpg/500px-Museo_dei_mobili_del_Castello_Sforzesco_13.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Carlo Dell'Orto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_dei_mobili_del_Castello_Sforzesco_13.jpg",
+      "fullWidth": 4608
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/9560662874",
@@ -1125,7 +1933,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sala_delle_ceramiche_-_musei_d%27arte_applicata_del_castello_sforzesco_-_Milano.JPG/500px-Sala_delle_ceramiche_-_musei_d%27arte_applicata_del_castello_sforzesco_-_Milano.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Stefano Stabile",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sala_delle_ceramiche_-_musei_d%27arte_applicata_del_castello_sforzesco_-_Milano.JPG",
+      "fullWidth": 2560
+     },
+     "description": "museum of Decorative Arts"
     },
     {
      "id": "node/2531211706",
@@ -1141,7 +1960,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Casa_museo_Boschi-Di_Stefano_Milano.jpg/500px-Casa_museo_Boschi-Di_Stefano_Milano.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lauraderiu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_museo_Boschi-Di_Stefano_Milano.jpg",
+      "fullWidth": 1080
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/9571069016",
@@ -1155,7 +1985,18 @@
      "wikidataId": "Q3963841",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Society_for_Fine_Arts_and_Permanent_Exhibition.jpg/500px-Society_for_Fine_Arts_and_Permanent_Exhibition.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Society_for_Fine_Arts_and_Permanent_Exhibition.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Italian organization"
     },
     {
      "id": "node/2531219644",
@@ -1169,7 +2010,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Scultori_Adamo_-_Hercules_at_the_crossroads.jpg/500px-Scultori_Adamo_-_Hercules_at_the_crossroads.jpg",
+      "width": 500,
+      "height": 348,
+      "author": "Scultori Adamo (1530 ca./ 1585), incisore",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Scultori_Adamo_-_Hercules_at_the_crossroads.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Scultori_Adamo_-_Hercules_at_the_crossroads.jpg",
+      "fullWidth": 600
+     },
+     "description": "Italien museum"
     },
     {
      "id": "way/204721782",
@@ -1183,7 +2035,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Il_Grande_Museo_del_Duomo.jpg/500px-Il_Grande_Museo_del_Duomo.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "23vita",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Il_Grande_Museo_del_Duomo.jpg",
+      "fullWidth": 6144
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/4010994767",
@@ -1198,7 +2061,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Mudec_-_Museo_delle_culture%2C_primo_piano.jpg/500px-Mudec_-_Museo_delle_culture%2C_primo_piano.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "FrussiWMI",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mudec_-_Museo_delle_culture,_primo_piano.jpg",
+      "fullWidth": 3648
+     },
+     "description": "Etnographic museum in Milan, Italy"
     },
     {
      "id": "node/9560235279",
@@ -1214,7 +2088,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Museo_d%27arte_e_scienza_08.jpg/500px-Museo_d%27arte_e_scienza_08.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Iopensa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_d%27arte_e_scienza_08.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Milan"
     },
     {
      "id": "node/9571016844",
@@ -1229,7 +2114,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Museo_Martinitt_e_Stelline_-_sala_1_installazione_Come_diventare_Martinitt_e_Stelline.jpg/500px-Museo_Martinitt_e_Stelline_-_sala_1_installazione_Come_diventare_Martinitt_e_Stelline.jpg",
+      "width": 500,
+      "height": 484,
+      "author": "Museo Martinitt e Stelline",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Martinitt_e_Stelline_-_sala_1_installazione_Come_diventare_Martinitt_e_Stelline.jpg",
+      "fullWidth": 2382
+     },
+     "description": "Italian art museum in Milan"
     },
     {
      "id": "node/12912850856",
@@ -1245,7 +2141,8 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "description": "palace and art museum in Milan, Italy"
     },
     {
      "id": "node/2391622707",
@@ -1276,7 +2173,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Triennale_Palazzo_dell%27Arte.jpg/500px-Triennale_Palazzo_dell%27Arte.jpg",
+      "width": 500,
+      "height": 604,
+      "author": "Airdagno",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Triennale_Palazzo_dell%27Arte.jpg",
+      "fullWidth": 1737
+     },
+     "description": "building in Milan"
     }
    ]
   },
@@ -1296,7 +2204,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Milano_Torre_Branca.JPG/500px-Milano_Torre_Branca.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Arbalete",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_Torre_Branca.JPG",
+      "fullWidth": 768
+     },
+     "description": "Panoramic tower by Giò Ponti in Milan"
     },
     {
      "id": "node/4714788078",
@@ -2116,7 +3035,18 @@
      "website": "https://www.barbiancomilano.com/",
      "openingHours": "Mo-Su 09:00-22:00",
      "wikidataId": "Q18222706",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Milano_-_parco_Sempione_-_bar_Bianco.jpg/500px-Milano_-_parco_Sempione_-_bar_Bianco.jpg",
+      "width": 500,
+      "height": 383,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Milano_-_parco_Sempione_-_bar_Bianco.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Milano_-_parco_Sempione_-_bar_Bianco.jpg",
+      "fullWidth": 600
+     },
+     "description": "bar in Milan"
     },
     {
      "id": "node/6380520757",

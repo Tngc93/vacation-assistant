@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "DBV",
- "fetchedAt": "2026-10-18T16:44:35.987Z",
+ "fetchedAt": "2026-10-22T06:09:44.840Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Dubrovnik_Stadtmauer.jpg/500px-Dubrovnik_Stadtmauer.jpg",
+      "width": 500,
+      "height": 201,
+      "author": "JSB",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubrovnik_Stadtmauer.jpg",
+      "fullWidth": 3373
+     },
+     "description": "defensive wall"
     },
     {
      "id": "relation/5861269",
@@ -66,7 +77,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Rector%27s_palace.jpg/500px-Rector%27s_palace.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Original uploader was Ragusino at en.wikipedia",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rector%27s_palace.jpg",
+      "fullWidth": 800
+     },
+     "description": "building in Croatia"
     },
     {
      "id": "wikidata/Q584428",
@@ -77,7 +99,18 @@
      "wikidataId": "Q584428",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Cattedrale_Dubrovnik.JPG/500px-Cattedrale_Dubrovnik.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Zitumassin",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cattedrale_Dubrovnik.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cattedrale_Dubrovnik.JPG",
+      "fullWidth": 1997
+     },
+     "description": "cathedral"
     },
     {
      "id": "wikidata/Q3509032",
@@ -88,7 +121,18 @@
      "wikidataId": "Q3509032",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Dubrovnik_%2857%29.JPG/500px-Dubrovnik_%2857%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "JoJan",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubrovnik_(57).JPG",
+      "fullWidth": 1920
+     },
+     "description": "church building in Dubrovnik, Croatia"
     },
     {
      "id": "wikidata/Q2986276",
@@ -100,7 +144,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Dubrovnik%2C_Sponza%27s_palace_IMG_8147.jpg/500px-Dubrovnik%2C_Sponza%27s_palace_IMG_8147.jpg",
+      "width": 500,
+      "height": 367,
+      "author": "Hedwig Storch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dubrovnik,_Sponza%27s_palace_IMG_8147.jpg",
+      "fullWidth": 3489
+     },
+     "description": "palace in Dubrovnik, Croatia"
     },
     {
      "id": "way/165354386",
@@ -112,7 +167,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Fort_Lovrijenac%2CDubrovnik%2CCroatia.jpg/500px-Fort_Lovrijenac%2CDubrovnik%2CCroatia.jpg",
+      "width": 500,
+      "height": 405,
+      "author": "Pufacz",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Fort_Lovrijenac,Dubrovnik,Croatia.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fort_Lovrijenac,Dubrovnik,Croatia.jpg",
+      "fullWidth": 1251
+     },
+     "description": "fortress and theater in Dubrovnik, Croatia"
     },
     {
      "id": "wikidata/Q3434033",
@@ -124,7 +190,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Saint_Saviour_Church_%28Dubrovnik%29.jpg/500px-Saint_Saviour_Church_%28Dubrovnik%29.jpg",
+      "width": 500,
+      "height": 700,
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saint_Saviour_Church_(Dubrovnik).jpg",
+      "fullWidth": 2774
+     },
+     "description": "church in Dubrovnik, Croatia"
     },
     {
      "id": "wikidata/Q2750095",
@@ -135,7 +212,18 @@
      "wikidataId": "Q2750095",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Synagogue_of_Dubrovnik_interior_A.JPG/500px-Synagogue_of_Dubrovnik_interior_A.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Dr. Eliezer Papo Ben-Gurion University",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Synagogue_of_Dubrovnik_interior_A.JPG",
+      "fullWidth": 3456
+     },
+     "description": "Synagogue in Croatia"
     },
     {
      "id": "wikidata/Q2986286",
@@ -147,7 +235,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/St_Blaise_Church_Old_Town_Dubrovnik_%284058867688%29.jpg/500px-St_Blaise_Church_Old_Town_Dubrovnik_%284058867688%29.jpg",
+      "width": 500,
+      "height": 407,
+      "author": "Tony Hisgett from Birmingham, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Blaise_Church_Old_Town_Dubrovnik_(4058867688).jpg",
+      "fullWidth": 3810
+     },
+     "description": "Croatian church"
     },
     {
      "id": "wikidata/Q2624621",
@@ -155,7 +254,17 @@
      "lat": 42.64153,
      "lon": 18.10722,
      "wikipediaCount": 14,
-     "wikidataId": "Q2624621"
+     "wikidataId": "Q2624621",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Big_Onofrios_Fountain_%284059901219%29.jpg/500px-Big_Onofrios_Fountain_%284059901219%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tony Hisgett from Birmingham, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Big_Onofrios_Fountain_(4059901219).jpg",
+      "fullWidth": 4752
+     }
     },
     {
      "id": "wikidata/Q3509014",
@@ -166,7 +275,18 @@
      "wikidataId": "Q3509014",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Bell_Tower_Old_Town_Dubrovnik_%284058136417%29.jpg/500px-Bell_Tower_Old_Town_Dubrovnik_%284058136417%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Tony Hisgett from Birmingham, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bell_Tower_Old_Town_Dubrovnik_(4058136417).jpg",
+      "fullWidth": 3008
+     },
+     "description": "clock tower in Dubrovnik"
     },
     {
      "id": "way/792938105",
@@ -177,7 +297,17 @@
      "wikidataId": "Q12644250",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Fort_Imperial.JPG/500px-Fort_Imperial.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Bracodbk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fort_Imperial.JPG",
+      "fullWidth": 4272
+     }
     },
     {
      "id": "node/821764626",
@@ -185,18 +315,39 @@
      "lat": 42.64878,
      "lon": 18.11217,
      "wikipediaCount": 3,
-     "wikidataId": "Q17147057"
+     "wikidataId": "Q17147057",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Kri%C5%BE_na_Sr%C4%91u_iznad_Dubrovnika.JPG/500px-Kri%C5%BE_na_Sr%C4%91u_iznad_Dubrovnika.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Bracodbk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kri%C5%BE_na_Sr%C4%91u_iznad_Dubrovnika.JPG",
+      "fullWidth": 2848
+     }
     },
     {
      "id": "way/171795142",
-     "name": "Utvrda Royal",
+     "name": "Fort Royal",
      "lat": 42.62997,
      "lon": 18.11674,
      "wikipediaCount": 1,
      "wikidataId": "Q111304707",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/%D0%A4%D0%BE%D1%80%D1%82_%D0%9D%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0.jpg/500px-%D0%A4%D0%BE%D1%80%D1%82_%D0%9D%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Julia Missony",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%BE%D1%80%D1%82_%D0%9D%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0.jpg",
+      "fullWidth": 3900
+     },
+     "description": "fort in Lokrum"
     },
     {
      "id": "way/1297393778",
@@ -233,7 +384,7 @@
      "id": "way/409346456",
      "name": "Lazaret",
      "lat": 42.6321,
-     "lon": 18.11761
+     "lon": 18.1176
     },
     {
      "id": "node/10050988134",
@@ -276,7 +427,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Pomorski_muzej.JPG/500px-Pomorski_muzej.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "August Dominus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pomorski_muzej.JPG",
+      "fullWidth": 1024
+     },
+     "description": "museum in Dubrovnik"
     },
     {
      "id": "node/5298313629",
@@ -289,7 +451,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Museum_of_Croatian_War_of_Independence_-_Exhibition.jpg/500px-Museum_of_Croatian_War_of_Independence_-_Exhibition.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tromber",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Croatian_War_of_Independence_-_Exhibition.jpg",
+      "fullWidth": 3456
+     }
     },
     {
      "id": "node/5813516443",
@@ -307,7 +479,7 @@
      "lon": 18.11784,
      "address": "Ulica Frana Supila 23",
      "website": "https://www.ugdubrovnik.hr/",
-     "openingHours": "Tu-Su 09:00-20:00"
+     "openingHours": "Tu-Su 9:00-20:00"
     },
     {
      "id": "node/11037064724",
@@ -399,16 +571,16 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/4112568999",
+     "name": "Fort Royal",
+     "lat": 42.63012,
+     "lon": 18.1162
+    },
+    {
      "id": "node/4443270890",
      "name": "Old Town and Lokrum Viewpoint",
      "lat": 42.64471,
      "lon": 18.10812
-    },
-    {
-     "id": "node/4112568999",
-     "name": "Utvrda Royal",
-     "lat": 42.63012,
-     "lon": 18.1162
     }
    ]
   },
@@ -417,25 +589,13 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/1871515447",
-     "name": "Dubravka 1836 Restaurant & Cafe",
-     "lat": 42.64162,
-     "lon": 18.10622,
-     "address": "Brsalje 1",
-     "website": "https://www.nautikarestaurants.com/dubravka-restaurant-cafe/",
-     "openingHours": "Mo-Su 08:00-23:45",
-     "cuisine": "local, seafood, steak house",
-     "detailed": true
-    },
-    {
      "id": "node/821764743",
      "name": "Konoba Dubrava",
      "lat": 42.64301,
      "lon": 18.12888,
-     "address": "Bosanka",
      "website": "http://www.konobadubrava.com/",
      "openingHours": "Mo-Su 11:00-24:00",
-     "cuisine": "local, regional",
+     "cuisine": "regional",
      "detailed": true
     },
     {
@@ -444,30 +604,8 @@
      "lat": 42.64683,
      "lon": 18.09027,
      "website": "https://marangun-restaurant.com/",
-     "openingHours": "Mo-Su 11:00-24:00",
+     "openingHours": "Mo-Su 09:00-24:00",
      "cuisine": "croatian, mediterranean, regional",
-     "detailed": true
-    },
-    {
-     "id": "node/5009840038",
-     "name": "Posat",
-     "lat": 42.64235,
-     "lon": 18.1067,
-     "address": "Uz Posat 1",
-     "website": "https://www.posat-dubrovnik.com/",
-     "openingHours": "Mo-Su 11:00-23:00",
-     "cuisine": "local, seafood, steak house",
-     "detailed": true
-    },
-    {
-     "id": "node/821790770",
-     "name": "Sesame",
-     "lat": 42.64258,
-     "lon": 18.10302,
-     "address": "Dante Alighieria 2",
-     "website": "https://www.sesame.hr/",
-     "openingHours": "Mo-Su 09:00-00:00",
-     "cuisine": "local, seafood, steak house",
      "detailed": true
     },
     {
@@ -521,17 +659,8 @@
      "website": "https://www.360dubrovnik.com/",
      "openingHours": "Tu-Su 18:00-24:30",
      "wikidataId": "Q88301254",
-     "detailed": true
-    },
-    {
-     "id": "node/8880753017",
-     "name": "Bona Fide",
-     "lat": 42.64089,
-     "lon": 18.1076,
-     "address": "Čubranovićeva 8",
-     "openingHours": "Mo-Su 11:00-23:00",
-     "cuisine": "mexican, pasta, pizza",
-     "detailed": true
+     "detailed": true,
+     "description": "restaurant in Croatia"
     },
     {
      "id": "node/13206079811",
@@ -620,23 +749,12 @@
      "detailed": true
     },
     {
-     "id": "node/5349464660",
-     "name": "Portun",
-     "lat": 42.6416,
-     "lon": 18.1083,
-     "address": "Od Sigurate 2",
-     "openingHours": "Mo-Su 09:00-24:00",
-     "cuisine": "regional, seafood",
-     "detailed": true
-    },
-    {
-     "id": "node/9260460191",
-     "name": "Rudjer",
-     "lat": 42.63933,
-     "lon": 18.10976,
-     "address": "Poljana Ruđera Boškovića 6",
-     "website": "https://www.rudjer.restaurant/",
-     "openingHours": "Mo-Su 08:00-23:00",
+     "id": "node/821790770",
+     "name": "Sesame",
+     "lat": 42.64258,
+     "lon": 18.10302,
+     "website": "https://www.sesame.hr/",
+     "openingHours": "Mo-Su 09:00-00:00",
      "detailed": true
     },
     {
@@ -703,6 +821,43 @@
      "lon": 18.10826,
      "address": "Prijeko",
      "cuisine": "regional, seafood"
+    },
+    {
+     "id": "node/8880753017",
+     "name": "Bona Fide",
+     "lat": 42.64089,
+     "lon": 18.1076,
+     "cuisine": "mexican, pasta, pizza"
+    },
+    {
+     "id": "node/11878732513",
+     "name": "Carpaccio Konoba",
+     "lat": 42.64186,
+     "lon": 18.10849,
+     "cuisine": "mediterranean"
+    },
+    {
+     "id": "node/4832618122",
+     "name": "El Toro",
+     "lat": 42.64676,
+     "lon": 18.09071,
+     "address": "Ulica Iva Vojnovića 5",
+     "cuisine": "seafood, balkan, italian"
+    },
+    {
+     "id": "node/5009840037",
+     "name": "Forteca",
+     "lat": 42.64243,
+     "lon": 18.10652,
+     "openingHours": "Mo-Su 10:00-24:00"
+    },
+    {
+     "id": "node/8913305105",
+     "name": "Heritage of Dubrovnik",
+     "lat": 42.64194,
+     "lon": 18.10824,
+     "address": "Prijeko 32",
+     "openingHours": "Mo-Su 12:00-22:00"
     }
    ]
   },
@@ -886,6 +1041,12 @@
      "address": "Bunićeva poljana 2"
     },
     {
+     "id": "node/2344675759",
+     "name": "Karoca",
+     "lat": 42.6503,
+     "lon": 18.09047
+    },
+    {
      "id": "node/3040562771",
      "name": "Micro",
      "lat": 42.63973,
@@ -916,16 +1077,6 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/2344645036",
-     "name": "Dukah",
-     "lat": 42.64303,
-     "lon": 18.10279,
-     "website": "https://www.dukah-bar.com/",
-     "openingHours": "PH,Mo-Su 10:00-02:00",
-     "cuisine": "brazilian, coffee shop",
-     "detailed": true
-    },
-    {
      "id": "node/4882820524",
      "name": "Cafe Bar The Kop",
      "lat": 42.64159,
@@ -933,6 +1084,15 @@
      "address": "Od Tabakarije 5",
      "openingHours": "Mo-Su 08:00-02:00",
      "cuisine": "european, mediterranean, croatian",
+     "detailed": true
+    },
+    {
+     "id": "node/2344645036",
+     "name": "Dukah",
+     "lat": 42.64303,
+     "lon": 18.10279,
+     "website": "https://www.dukah-bar.com/",
+     "openingHours": "PH,Mo-Su 10:00-02:00",
      "detailed": true
     },
     {
@@ -1095,12 +1255,6 @@
      "lon": 18.11
     },
     {
-     "id": "node/14104979402",
-     "name": "Ragusinum",
-     "lat": 42.64044,
-     "lon": 18.10758
-    },
-    {
      "id": "node/12874962901",
      "name": "Tata's",
      "lat": 42.64468,
@@ -1117,6 +1271,12 @@
      "name": "The Bar",
      "lat": 42.64168,
      "lon": 18.10902
+    },
+    {
+     "id": "node/4382081289",
+     "name": "the gaffe Irish pub",
+     "lat": 42.64101,
+     "lon": 18.10925
     }
    ]
   },

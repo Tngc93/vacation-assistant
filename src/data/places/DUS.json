@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "DUS",
- "fetchedAt": "2026-10-18T16:19:03.822Z",
+ "fetchedAt": "2026-10-22T05:31:29.148Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/K%C3%B6nigsallee_D%C3%BCsseldorf_2010-08-08.jpg/500px-K%C3%B6nigsallee_D%C3%BCsseldorf_2010-08-08.jpg",
+      "width": 500,
+      "height": 352,
+      "author": "Stöhrfall ( talk ) 18:38, 8 August 2010 (UTC)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsallee_D%C3%BCsseldorf_2010-08-08.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsallee_D%C3%BCsseldorf_2010-08-08.jpg",
+      "fullWidth": 1900
+     },
+     "description": "thoroughfare and shopping street in Düsseldorf, Germany"
     },
     {
      "id": "way/23445439",
@@ -66,7 +77,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/St._Lambertus_D%C3%BCsseldorf.jpg/500px-St._Lambertus_D%C3%BCsseldorf.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Alice Wiegand",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Lambertus_D%C3%BCsseldorf.jpg",
+      "fullWidth": 2600
+     },
+     "description": "Altstadt, Almanya'da kilise"
     },
     {
      "id": "way/145667826",
@@ -78,7 +100,18 @@
      "wikidataId": "Q175400",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Schloss_Jaegerhof_in_Duesseldorf-Pempelfort%2C_von_Westen.jpg/500px-Schloss_Jaegerhof_in_Duesseldorf-Pempelfort%2C_von_Westen.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Jörg Wiegels",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Jaegerhof_in_Duesseldorf-Pempelfort,_von_Westen.jpg",
+      "fullWidth": 1600
+     },
+     "description": "historic palace, home of the Goethe Museum in Dusseldorf, Germany"
     },
     {
      "id": "way/23442766",
@@ -92,7 +125,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/St._Andreas%2C_D%C3%BCsseldorf-0729.jpg/500px-St._Andreas%2C_D%C3%BCsseldorf-0729.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Andreas,_D%C3%BCsseldorf-0729.jpg",
+      "fullWidth": 3484
+     },
+     "description": "Altstadt, Almanya'da kilise"
     },
     {
      "id": "relation/214907",
@@ -100,7 +144,18 @@
      "lat": 51.21625,
      "lon": 6.75777,
      "wikipediaCount": 7,
-     "wikidataId": "Q822071"
+     "wikidataId": "Q822071",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/NRW%2C_D%C3%BCsseldorf_-_Medienhafen%2C_Neue_Zollhof_01.jpg/500px-NRW%2C_D%C3%BCsseldorf_-_Medienhafen%2C_Neue_Zollhof_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Островский Александр, Киев",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NRW,_D%C3%BCsseldorf_-_Medienhafen,_Neue_Zollhof_01.jpg",
+      "fullWidth": 2600
+     },
+     "description": "architectural structure"
     },
     {
      "id": "way/144140062",
@@ -114,7 +169,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/D%C3%BCsseldorf_%28DerHexer%29_2010-08-13_021.jpg/500px-D%C3%BCsseldorf_%28DerHexer%29_2010-08-13_021.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "DerHexer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_(DerHexer)_2010-08-13_021.jpg",
+      "fullWidth": 2848
+     },
+     "description": "Düsseldorf, Almanya'da kilise"
     },
     {
      "id": "way/145266530",
@@ -128,7 +194,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/St._Max1.jpg/500px-St._Max1.jpg",
+      "width": 500,
+      "height": 725,
+      "author": "Velopilger",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:St._Max1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Max1.jpg",
+      "fullWidth": 1380
+     },
+     "description": "Carlstadt, Almanya'da kilise"
     },
     {
      "id": "way/331961681",
@@ -140,7 +217,17 @@
      "wikidataId": "Q439369",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/D%C3%BCsseldorf_Altes_Rathaus_2013.jpg/500px-D%C3%BCsseldorf_Altes_Rathaus_2013.jpg",
+      "width": 500,
+      "height": 319,
+      "author": "Helmlechner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_Altes_Rathaus_2013.jpg",
+      "fullWidth": 2554
+     }
     },
     {
      "id": "node/4978246321",
@@ -151,7 +238,18 @@
      "wikidataId": "Q881343",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/D%C3%BCsseldorfer_Kirmes_-_17.07.2006.jpg/500px-D%C3%BCsseldorfer_Kirmes_-_17.07.2006.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Ilion",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorfer_Kirmes_-_17.07.2006.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Volksfest in Düsseldorf, Germany"
     },
     {
      "id": "relation/10323145",
@@ -164,7 +262,18 @@
      "wikidataId": "Q1803999",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/NRW%2C_D%C3%BCsseldorf%2C_Rheinturm_-_view_to_Landtag.jpg/500px-NRW%2C_D%C3%BCsseldorf%2C_Rheinturm_-_view_to_Landtag.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Островский Александр, Киев",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NRW,_D%C3%BCsseldorf,_Rheinturm_-_view_to_Landtag.jpg",
+      "fullWidth": 3264
+     },
+     "description": "parliament building in Germany"
     },
     {
      "id": "way/23444395",
@@ -176,7 +285,18 @@
      "wikidataId": "Q2148000",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Rheinterrasse_in_Duesseldorf-Pempelfort%2C_von_Nordosten.jpg/500px-Rheinterrasse_in_Duesseldorf-Pempelfort%2C_von_Nordosten.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Wiegels",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rheinterrasse_in_Duesseldorf-Pempelfort,_von_Nordosten.jpg",
+      "fullWidth": 1600
+     },
+     "description": "building in Düsseldorf, Germany"
     },
     {
      "id": "way/45774488",
@@ -189,7 +309,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Schlossturm.jpg/500px-Schlossturm.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Thomas Mielke ThomasMielke Talk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schlossturm.jpg",
+      "fullWidth": 600
+     },
+     "description": "tower in Düsseldorf, Germany"
     },
     {
      "id": "node/679757995",
@@ -197,7 +328,17 @@
      "lat": 51.22541,
      "lon": 6.7789,
      "wikipediaCount": 2,
-     "wikidataId": "Q2454334"
+     "wikidataId": "Q2454334",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/D%C3%BCsseldorf_K%C3%B6nigsallee_Tritonbrunnen.jpg/500px-D%C3%BCsseldorf_K%C3%B6nigsallee_Tritonbrunnen.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Arnoldius",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_K%C3%B6nigsallee_Tritonbrunnen.jpg",
+      "fullWidth": 4608
+     }
     },
     {
      "id": "way/45666990",
@@ -210,7 +351,17 @@
      "wikidataId": "Q1595977",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/GER_D%C3%BCsseldorf%2C_Bolkerstra%C3%9Fe_0005.jpg/500px-GER_D%C3%BCsseldorf%2C_Bolkerstra%C3%9Fe_0005.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "-wuppertaler",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GER_D%C3%BCsseldorf,_Bolkerstra%C3%9Fe_0005.jpg",
+      "fullWidth": 2997
+     }
     },
     {
      "id": "node/6026836195",
@@ -219,7 +370,18 @@
      "lon": 6.77266,
      "website": "https://www.duesseldorf.de/schumannhaus",
      "wikipediaCount": 1,
-     "wikidataId": "Q28038644"
+     "wikidataId": "Q28038644",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Haus_Bilker_Strasse_15_in_Duesseldorf-Carlstadt%2C_von_Osten.jpg/500px-Haus_Bilker_Strasse_15_in_Duesseldorf-Carlstadt%2C_von_Osten.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Wiegels",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Haus_Bilker_Strasse_15_in_Duesseldorf-Carlstadt,_von_Osten.jpg",
+      "fullWidth": 1071
+     },
+     "description": "building in Düsseldorf, Germany"
     },
     {
      "id": "way/144147589",
@@ -231,7 +393,18 @@
      "wikidataId": "Q1590896",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Haus_des_Karnevals_in_Duesseldorf-Altstadt%2C_von_Nordosten.jpg/500px-Haus_des_Karnevals_in_Duesseldorf-Altstadt%2C_von_Nordosten.jpg",
+      "width": 500,
+      "height": 748,
+      "author": "Jörg Wiegels",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Haus_des_Karnevals_in_Duesseldorf-Altstadt,_von_Nordosten.jpg",
+      "fullWidth": 1070
+     },
+     "description": "building in Düsseldorf, Germany"
     },
     {
      "id": "node/1376306864",
@@ -242,7 +415,8 @@
      "wikidataId": "Q1681554",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "description": "statue in Düsseldorf, Germany"
     },
     {
      "id": "node/1572644191",
@@ -272,7 +446,18 @@
      "wikidataId": "Q135848530",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Persiluhr_am_Burgplatz_D%C3%BCsseldorf.jpg/500px-Persiluhr_am_Burgplatz_D%C3%BCsseldorf.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Herzfeld.gregor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Persiluhr_am_Burgplatz_D%C3%BCsseldorf.jpg",
+      "fullWidth": 2448
+     },
+     "description": "street clock at Burgplatz in Düsseldorf, Germany"
     },
     {
      "id": "node/11804866437",
@@ -306,7 +491,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/D%C3%BCsseldorf_Museum_Kunstpalast_15-08-2012_14-34-32.JPG/500px-D%C3%BCsseldorf_Museum_Kunstpalast_15-08-2012_14-34-32.JPG",
+      "width": 500,
+      "height": 284,
+      "author": "Paul Hermans",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_Museum_Kunstpalast_15-08-2012_14-34-32.JPG",
+      "fullWidth": 4288
+     },
+     "description": "art museum in Düsseldorf"
     },
     {
      "id": "node/3478983042",
@@ -317,7 +513,18 @@
      "website": "https://www.kunstsammlung.de/de/",
      "openingHours": "Mo off; Tu-Su,PH 11:00-18:00",
      "wikipediaCount": 9,
-     "wikidataId": "Q548427"
+     "wikidataId": "Q548427",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Bild_Schmela_Haus_aktuell.jpg/500px-Bild_Schmela_Haus_aktuell.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Leoni1234",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bild_Schmela_Haus_aktuell.jpg",
+      "fullWidth": 3168
+     },
+     "description": "art collection in Düsseldorf, Germany"
     },
     {
      "id": "node/1577235480",
@@ -333,7 +540,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kunsthalle_D%C3%BCsseldorf-5746.jpg/500px-Kunsthalle_D%C3%BCsseldorf-5746.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kunsthalle_D%C3%BCsseldorf-5746.jpg",
+      "fullWidth": 6228
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/3051807899",
@@ -348,7 +566,8 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "Artists club Düsseldorf"
     },
     {
      "id": "node/3432190041",
@@ -363,7 +582,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/KIT_D%C3%BCsseldorf.jpg/500px-KIT_D%C3%BCsseldorf.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Till Niermann",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KIT_D%C3%BCsseldorf.jpg",
+      "fullWidth": 3888
+     },
+     "description": "art museum in Düsseldorf, Germany"
     },
     {
      "id": "node/1560610195",
@@ -379,7 +609,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Stadtmuseum_D%C3%BCsseldorf%2C_Berger_Allee%2C_2011.jpg/500px-Stadtmuseum_D%C3%BCsseldorf%2C_Berger_Allee%2C_2011.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "BlackIceNRW",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadtmuseum_D%C3%BCsseldorf,_Berger_Allee,_2011.jpg",
+      "fullWidth": 3072
+     },
+     "description": "museum in Düsseldorf"
     },
     {
      "id": "node/1560610035",
@@ -394,7 +635,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/D%C3%BCsseldorf_-_Schulstra%C3%9Fe_-_Hetjens-Museum_01_ies.jpg/500px-D%C3%BCsseldorf_-_Schulstra%C3%9Fe_-_Hetjens-Museum_01_ies.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_-_Schulstra%C3%9Fe_-_Hetjens-Museum_01_ies.jpg",
+      "fullWidth": 5616
+     },
+     "description": "ceramics museum in Düsseldorf, Germany"
     },
     {
      "id": "node/1577235652",
@@ -424,7 +676,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/NRW-Forum_in_Duesseldorf-Pempelfort%2C_von_Suedwesten.jpg/500px-NRW-Forum_in_Duesseldorf-Pempelfort%2C_von_Suedwesten.jpg",
+      "width": 500,
+      "height": 211,
+      "author": "Wiegels",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NRW-Forum_in_Duesseldorf-Pempelfort,_von_Suedwesten.jpg",
+      "fullWidth": 1920
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/1560610032",
@@ -439,7 +702,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Eingang_Filmmuseum_und_Kino_Black_Box%2C_D%C3%BCsseldorf_2011.JPG/500px-Eingang_Filmmuseum_und_Kino_Black_Box%2C_D%C3%BCsseldorf_2011.JPG",
+      "width": 500,
+      "height": 500,
+      "author": "BlackIceNRW",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eingang_Filmmuseum_und_Kino_Black_Box,_D%C3%BCsseldorf_2011.JPG",
+      "fullWidth": 2040
+     },
+     "description": "film museum in Düsseldorf, Germany"
     },
     {
      "id": "node/307436292",
@@ -454,7 +728,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/D%C3%BCsseldorf_-_Burgplatz_-_Schlossturm_04_ies.jpg/500px-D%C3%BCsseldorf_-_Burgplatz_-_Schlossturm_04_ies.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_-_Burgplatz_-_Schlossturm_04_ies.jpg",
+      "fullWidth": 3744
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/336252050",
@@ -469,7 +754,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/D%C3%BCsseldorf_Theatermuseum.jpg/500px-D%C3%BCsseldorf_Theatermuseum.jpg",
+      "width": 500,
+      "height": 226,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_Theatermuseum.jpg",
+      "fullWidth": 3017
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/12217519501",
@@ -498,7 +794,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "library in Düsseldorf"
     },
     {
      "id": "node/8976365174",
@@ -521,7 +818,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "library in Germany"
     },
     {
      "id": "node/6284442744",
@@ -535,7 +833,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/D%C3%BCsseldorf_-_K21_St%C3%A4ndehaus%2C_Kunstsammlung_Nordrhein-Westfalen_%282%29.jpg/500px-D%C3%BCsseldorf_-_K21_St%C3%A4ndehaus%2C_Kunstsammlung_Nordrhein-Westfalen_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Fred Romero from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BCsseldorf_-_K21_St%C3%A4ndehaus,_Kunstsammlung_Nordrhein-Westfalen_(2).jpg",
+      "fullWidth": 4000
+     },
+     "description": "art museum in Düsseldorf, Germany"
     },
     {
      "id": "node/13686097002",
@@ -668,7 +977,8 @@
      "wikidataId": "Q679491",
      "kinds": [
       "tower"
-     ]
+     ],
+     "description": "TV tower in Düsseldorf, Germany"
     },
     {
      "id": "node/632232605",
@@ -1674,7 +1984,8 @@
      "website": "https://www.zumschluessel.de/",
      "openingHours": "Mo-Fr 11:00-00:00; Sa 10:00-00:00; Su 11:00-23:00",
      "wikidataId": "Q900425",
-     "detailed": true
+     "detailed": true,
+     "description": "trademark"
     },
     {
      "id": "node/11234745237",
@@ -1818,7 +2129,17 @@
      "lat": 51.2294,
      "lon": 6.77429,
      "address": "Ratinger Straße 10",
-     "wikidataId": "Q2132762"
+     "wikidataId": "Q2132762",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/1978-05-20_Duesseldorf_Ratinger_Hof.jpg/500px-1978-05-20_Duesseldorf_Ratinger_Hof.jpg",
+      "width": 500,
+      "height": 367,
+      "author": "Ralf Zeigermann",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:1978-05-20_Duesseldorf_Ratinger_Hof.jpg",
+      "fullWidth": 898
+     }
     },
     {
      "id": "node/266185247",

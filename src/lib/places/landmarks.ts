@@ -252,7 +252,7 @@ export function classify(
     .map((c) => ({ ...c, museum: has(c, { Q33506: true }) && !has(c, SIGHT_FIRST_CLASSES) }));
 }
 
-async function sparql(query: string, fetcher: Fetcher): Promise<unknown> {
+export async function sparql(query: string, fetcher: Fetcher): Promise<unknown> {
   const res = await fetcher(WDQS_URL, {
     method: "POST",
     headers: {

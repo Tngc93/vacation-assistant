@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "VIE",
- "fetchedAt": "2026-10-18T16:21:57.466Z",
+ "fetchedAt": "2026-10-22T05:35:47.421Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q131330",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/500px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
+      "width": 500,
+      "height": 342,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
+      "fullWidth": 5650
+     },
+     "description": "palace in Vienna, Austria"
     },
     {
      "id": "way/546340540",
@@ -65,7 +76,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Wien_-_Schloss_Belvedere%2C_oberes_%282%29.JPG/500px-Wien_-_Schloss_Belvedere%2C_oberes_%282%29.JPG",
+      "width": 500,
+      "height": 280,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Belvedere,_oberes_(2).JPG",
+      "fullWidth": 4252
+     },
+     "description": "building complex that includes two Baroque palaces in Vienna, Austria"
     },
     {
      "id": "way/212496461",
@@ -81,7 +103,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_-_Stephansdom_%281%29.JPG/500px-Wien_-_Stephansdom_%281%29.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Stephansdom_(1).JPG",
+      "fullWidth": 2625
+     },
+     "description": "Avusturya'da kilise"
     },
     {
      "id": "way/37675404",
@@ -99,7 +132,18 @@
       "organization",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wien_-_Neue_Hofburg.JPG/500px-Wien_-_Neue_Hofburg.JPG",
+      "width": 500,
+      "height": 220,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Neue_Hofburg.JPG",
+      "fullWidth": 5050
+     },
+     "description": "palace located in Vienna, Austria"
     },
     {
      "id": "way/8097595",
@@ -116,7 +160,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Staatsoper_Wien_DSC_5273w.jpg/500px-Staatsoper_Wien_DSC_5273w.jpg",
+      "width": 500,
+      "height": 287,
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Staatsoper_Wien_DSC_5273w.jpg",
+      "fullWidth": 4984
+     },
+     "description": "opera house in Vienna, Austria"
     },
     {
      "id": "wikidata/Q185741",
@@ -129,7 +184,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Ernst-happel-stadion_vienna.jpg/500px-Ernst-happel-stadion_vienna.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ernst-happel-stadion_vienna.jpg",
+      "fullWidth": 3918
+     },
+     "description": "stadium in Vienna"
     },
     {
      "id": "wikidata/Q46232",
@@ -141,7 +207,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Wien_01_Burgring_b.jpg/500px-Wien_01_Burgring_b.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Gugerell",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_01_Burgring_b.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Viyana'da sokak"
     },
     {
      "id": "wikidata/Q308720",
@@ -156,7 +233,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Wien_-_Burgtheater.JPG/500px-Wien_-_Burgtheater.JPG",
+      "width": 500,
+      "height": 283,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Burgtheater.JPG",
+      "fullWidth": 4600
+     },
+     "description": "state drama theatre in Vienna, Austria"
     },
     {
      "id": "way/8097149",
@@ -170,7 +258,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Wien_-_Karlskirche_%281%29.JPG/500px-Wien_-_Karlskirche_%281%29.JPG",
+      "width": 500,
+      "height": 317,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Karlskirche_(1).JPG",
+      "fullWidth": 4440
+     },
+     "description": "Avusturya'da kilise"
     },
     {
      "id": "relation/11101",
@@ -184,7 +283,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wien_Rathaus_hochaufl%C3%B6send.jpg/500px-Wien_Rathaus_hochaufl%C3%B6send.jpg",
+      "width": 500,
+      "height": 302,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Rathaus_hochaufl%C3%B6send.jpg",
+      "fullWidth": 11379
+     },
+     "description": "town hall of Vienna, Austria"
     },
     {
      "id": "node/76469807",
@@ -196,7 +306,18 @@
      "wikidataId": "Q493126",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Wien_-_Hundertwasserhaus_%2801%29.JPG/500px-Wien_-_Hundertwasserhaus_%2801%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Hundertwasserhaus_(01).JPG",
+      "fullWidth": 4180
+     },
+     "description": "Viyana'da apartman"
     },
     {
      "id": "wikidata/Q697300",
@@ -208,7 +329,18 @@
      "wikidataId": "Q697300",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Wien_-_Favoriten_-_Hauptbahnhof_-_2025_05_07-1.jpg/500px-Wien_-_Favoriten_-_Hauptbahnhof_-_2025_05_07-1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Eweht",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Favoriten_-_Hauptbahnhof_-_2025_05_07-1.jpg",
+      "fullWidth": 6507
+     },
+     "description": "Avusturya'da tren istasyonu"
     },
     {
      "id": "wikidata/Q264752",
@@ -216,7 +348,18 @@
      "lat": 48.21611,
      "lon": 16.39556,
      "wikipediaCount": 34,
-     "wikidataId": "Q264752"
+     "wikidataId": "Q264752",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/13-05-24-wien-RalfR-200.jpg/500px-13-05-24-wien-RalfR-200.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Ralf Roletschek",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:13-05-24-wien-RalfR-200.jpg",
+      "fullWidth": 4288
+     },
+     "description": "public park in Vienna"
     },
     {
      "id": "way/25577405",
@@ -232,7 +375,18 @@
       "heritage",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Wien_-_Haus_des_Wiener_Musikvereins_%281%29.JPG/500px-Wien_-_Haus_des_Wiener_Musikvereins_%281%29.JPG",
+      "width": 500,
+      "height": 345,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Haus_des_Wiener_Musikvereins_(1).JPG",
+      "fullWidth": 4500
+     },
+     "description": "concert hall in Vienna, Austria"
     },
     {
      "id": "node/250063134",
@@ -242,7 +396,18 @@
      "website": "https://www.kapuzinergruft.com/",
      "openingHours": "10:00-18:00",
      "wikipediaCount": 32,
-     "wikidataId": "Q662652"
+     "wikidataId": "Q662652",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Wien_-_Kapuzinergruft%2C_Maria-Theresia-Gruft_%281%29.JPG/500px-Wien_-_Kapuzinergruft%2C_Maria-Theresia-Gruft_%281%29.JPG",
+      "width": 500,
+      "height": 445,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Kapuzinergruft,_Maria-Theresia-Gruft_(1).JPG",
+      "fullWidth": 4134
+     },
+     "description": "burial place of the House of Habsburg"
     },
     {
      "id": "way/9858714",
@@ -257,7 +422,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Wien_-_Votivkirche_%28a%29.JPG/500px-Wien_-_Votivkirche_%28a%29.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Votivkirche_(a).JPG",
+      "fullWidth": 3450
+     },
+     "description": "Kilise"
     },
     {
      "id": "wikidata/Q374336",
@@ -270,7 +446,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/TheateranDerWienJakobAlt.jpg",
+      "width": 500,
+      "height": 402,
+      "author": "Alt, Jakob (1789 – 1872)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:TheateranDerWienJakobAlt.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:TheateranDerWienJakobAlt.jpg",
+      "fullWidth": 373
+     },
+     "description": "Historic theatre and Opera building in Vienna and Gemeindebau building located on the Left Wienzeile in the Mariahilf district."
     },
     {
      "id": "wikidata/Q871525",
@@ -282,7 +469,18 @@
      "kinds": [
       "adminArea",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Wien.Hofburg10.jpg/500px-Wien.Hofburg10.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Georges Jansoone",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien.Hofburg10.jpg",
+      "fullWidth": 1280
+     },
+     "description": "former Celtic settlement and Roman military camp on the site of Vienna"
     },
     {
      "id": "node/62626088",
@@ -298,7 +496,18 @@
       "organization",
       "school",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Spanische_Hofreitschule3%2C_Vienna.jpg/500px-Spanische_Hofreitschule3%2C_Vienna.jpg",
+      "width": 500,
+      "height": 421,
+      "author": "sparre",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Spanische_Hofreitschule3,_Vienna.jpg",
+      "fullWidth": 1671
+     },
+     "description": "traditional riding school in Vienna, Austria"
     },
     {
      "id": "way/335982323",
@@ -311,7 +520,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/MuseumsQuartier_Wien_Sept_2020_1.jpg/500px-MuseumsQuartier_Wien_Sept_2020_1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Kasa Fue",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MuseumsQuartier_Wien_Sept_2020_1.jpg",
+      "fullWidth": 5464
+     },
+     "description": "cultural area in Vienna"
     },
     {
      "id": "wikidata/Q694747",
@@ -326,7 +546,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Wien_-_Volksoper.JPG/500px-Wien_-_Volksoper.JPG",
+      "width": 500,
+      "height": 346,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Volksoper.JPG",
+      "fullWidth": 3396
+     },
+     "description": "building in Vienna, Austria"
     },
     {
      "id": "wikidata/Q279260",
@@ -340,7 +571,18 @@
       "business",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Cafe_Sacher_Wien.jpg/500px-Cafe_Sacher_Wien.jpg",
+      "width": 500,
+      "height": 427,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Sacher_Wien.jpg",
+      "fullWidth": 4923
+     },
+     "description": "Viyana'da otel"
     },
     {
      "id": "wikidata/Q253663",
@@ -352,7 +594,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Stadttempel_Vienna_September_2006_010.jpg/500px-Stadttempel_Vienna_September_2006_010.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Gryffindor",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadttempel_Vienna_September_2006_010.jpg",
+      "fullWidth": 1536
+     },
+     "description": "Viyana şehrinin ana sinagogu"
     },
     {
      "id": "node/319734659",
@@ -368,7 +621,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Palais_Ferstel_Cafe_Central.jpg/500px-Palais_Ferstel_Cafe_Central.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Ferstel_Cafe_Central.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Viyana'da café"
     },
     {
      "id": "node/276645373",
@@ -380,7 +644,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wien_-_Neue_Hofburg.JPG/500px-Wien_-_Neue_Hofburg.JPG",
+      "width": 500,
+      "height": 220,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Neue_Hofburg.JPG",
+      "fullWidth": 5050
+     },
+     "description": "square in Vienna, Austria"
     },
     {
      "id": "relation/54286",
@@ -394,7 +669,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Wien_-_Parlament%2C_Tag_der_offenen_T%C3%BCr_%2814.1.2023%29.JPG/500px-Wien_-_Parlament%2C_Tag_der_offenen_T%C3%BCr_%2814.1.2023%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Parlament,_Tag_der_offenen_T%C3%BCr_(14.1.2023).JPG",
+      "fullWidth": 6000
+     },
+     "description": "parliament building of the Austrian republic in Vienna"
     },
     {
      "id": "wikidata/Q700753",
@@ -405,7 +691,18 @@
      "wikidataId": "Q700753",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/View_from_Karlskirche%2C_Vienna_20180826.jpg/500px-View_from_Karlskirche%2C_Vienna_20180826.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:View_from_Karlskirche,_Vienna_20180826.jpg",
+      "fullWidth": 5184
+     },
+     "description": "town square in Vienna"
     },
     {
      "id": "way/97979331",
@@ -418,7 +715,18 @@
      "kinds": [
       "attraction",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Giant_Ferris_Wheel_Vienna_from_W_on_2010-09-20.jpg/500px-Giant_Ferris_Wheel_Vienna_from_W_on_2010-09-20.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Robert F. Tobler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Giant_Ferris_Wheel_Vienna_from_W_on_2010-09-20.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Ferris wheel in Vienna"
     },
     {
      "id": "way/107803504",
@@ -432,7 +740,18 @@
       "notPlace",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Wien_Graben_Pests%C3%A4ule_Ostseite.jpg/500px-Wien_Graben_Pests%C3%A4ule_Ostseite.jpg",
+      "width": 500,
+      "height": 651,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Graben_Pests%C3%A4ule_Ostseite.jpg",
+      "fullWidth": 4554
+     },
+     "description": "memorial monument in the city of Vienna, Austria"
     },
     {
      "id": "wikidata/Q698145",
@@ -443,7 +762,18 @@
      "wikidataId": "Q698145",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Westbahnhof_%2840557%29_IMG_8375.jpg/500px-Westbahnhof_%2840557%29_IMG_8375.jpg",
+      "width": 500,
+      "height": 297,
+      "author": "Tokfo",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Westbahnhof_(40557)_IMG_8375.jpg",
+      "fullWidth": 4225
+     },
+     "description": "Avusturya'da tren istasyonu"
     },
     {
      "id": "wikidata/Q701662",
@@ -454,7 +784,18 @@
      "wikidataId": "Q701662",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Stephansplatz_Wien_4.jpg/500px-Stephansplatz_Wien_4.jpg",
+      "width": 500,
+      "height": 574,
+      "author": "böhringer friedrich",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stephansplatz_Wien_4.jpg",
+      "fullWidth": 2848
+     },
+     "description": "square in Vienna, Austria"
     },
     {
      "id": "way/9703218",
@@ -470,7 +811,18 @@
       "heritage",
       "organization",
       "school"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Urania_Vienna_June_2006_295.jpg/500px-Urania_Vienna_June_2006_295.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Urania_Vienna_June_2006_295.jpg",
+      "fullWidth": 2560
+     },
+     "description": "architectural structure in Vienna"
     },
     {
      "id": "way/23329490",
@@ -484,7 +836,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Wien_-_Peterskirche_%281%29.JPG/500px-Wien_-_Peterskirche_%281%29.JPG",
+      "width": 500,
+      "height": 707,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Peterskirche_(1).JPG",
+      "fullWidth": 2763
+     },
+     "description": "Avusturya'da kilise"
     },
     {
      "id": "wikidata/Q700199",
@@ -497,7 +860,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Michaelerkirche_Vienna_Sept_2007.jpg/500px-Michaelerkirche_Vienna_Sept_2007.jpg",
+      "width": 500,
+      "height": 830,
+      "author": "Gryffindor This panoramic image was created with Autostitch (stitched images may differ from reality) .",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Michaelerkirche_Vienna_Sept_2007.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Michaelerkirche_Vienna_Sept_2007.jpg",
+      "fullWidth": 1200
+     },
+     "description": "Avusturya'da kilise"
     },
     {
      "id": "wikidata/Q699947",
@@ -509,7 +883,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Wien_Kaerntner_Strasse.jpg/500px-Wien_Kaerntner_Strasse.jpg",
+      "width": 500,
+      "height": 506,
+      "author": "reivax from Washington, DC, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Kaerntner_Strasse.jpg",
+      "fullWidth": 2216
+     },
+     "description": "Viyana'da sokak"
     },
     {
      "id": "way/30322134",
@@ -522,7 +907,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Wien_-_Graben_%283%29.JPG/500px-Wien_-_Graben_%283%29.JPG",
+      "width": 500,
+      "height": 320,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Graben_(3).JPG",
+      "fullWidth": 4250
+     },
+     "description": "Viyana'da sokak"
     },
     {
      "id": "wikidata/Q695126",
@@ -537,7 +933,18 @@
       "musicVenue",
       "organization",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Wien_-_Konzerthaus_%28a%29.JPG/500px-Wien_-_Konzerthaus_%28a%29.JPG",
+      "width": 500,
+      "height": 281,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Konzerthaus_(a).JPG",
+      "fullWidth": 6400
+     },
+     "description": "concert hall in Vienna, Austria"
     },
     {
      "id": "way/29320733",
@@ -550,7 +957,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wien_-_Naschmarkt.JPG/500px-Wien_-_Naschmarkt.JPG",
+      "width": 500,
+      "height": 206,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Naschmarkt.JPG",
+      "fullWidth": 4961
+     },
+     "description": "square and market in Vienna, Austria"
     },
     {
      "id": "wikidata/Q38956584",
@@ -563,7 +981,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Wien_2014_-_panoramio_%282%29.jpg/500px-Wien_2014_-_panoramio_%282%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nikolai Karaneschev",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_2014_-_panoramio_(2).jpg",
+      "fullWidth": 6000
+     },
+     "description": "Viyana'da sokak"
     },
     {
      "id": "wikidata/Q167619",
@@ -576,7 +1005,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Theater_in_der_Josefstadt3.jpg/500px-Theater_in_der_Josefstadt3.jpg",
+      "width": 500,
+      "height": 586,
+      "author": "Theater_in_der_Josefstadt_9958.JPG : Gryffindor Theater_in_der_Josefstadt_9957.JPG : Gryffindor derivative work: Gothika ( talk )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Theater_in_der_Josefstadt3.jpg",
+      "fullWidth": 2900
+     },
+     "description": "theater in Vienna"
     },
     {
      "id": "wikidata/Q180080",
@@ -588,7 +1028,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Alsergrund_%28Wien%29_-_AKH%2C_Haupteingang.JPG/500px-Alsergrund_%28Wien%29_-_AKH%2C_Haupteingang.JPG",
+      "width": 500,
+      "height": 324,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alsergrund_(Wien)_-_AKH,_Haupteingang.JPG",
+      "fullWidth": 4346
+     },
+     "description": "hospital in Austria"
     },
     {
      "id": "wikidata/Q877570",
@@ -600,7 +1051,18 @@
      "wikidataId": "Q877570",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Postsparkasse-Coch-Platz-DSC1238w.jpg/500px-Postsparkasse-Coch-Platz-DSC1238w.jpg",
+      "width": 500,
+      "height": 417,
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Postsparkasse-Coch-Platz-DSC1238w.jpg",
+      "fullWidth": 4950
+     },
+     "description": "architectural structure"
     },
     {
      "id": "wikidata/Q699952",
@@ -612,7 +1074,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg/500px-Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Manfred Werner - Tsui",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maria-Theresien-Platz_Kunsthistorisches_Museum_Wien_2010.jpg",
+      "fullWidth": 3888
+     },
+     "description": "square in Vienna"
     },
     {
      "id": "relation/5541555",
@@ -625,7 +1098,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Palais_Schwarzenberg.jpg/500px-Palais_Schwarzenberg.jpg",
+      "width": 500,
+      "height": 260,
+      "author": "Werckmeister",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Schwarzenberg.jpg",
+      "fullWidth": 1598
+     },
+     "description": "palace in Vienna, Austria"
     },
     {
      "id": "wikidata/Q688555",
@@ -638,7 +1122,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Wien_-_Volkstheater_%282%29.JPG/500px-Wien_-_Volkstheater_%282%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Volkstheater_(2).JPG",
+      "fullWidth": 3898
+     },
+     "description": "theatre in Vienna, Austria"
     },
     {
      "id": "way/23329567",
@@ -650,7 +1145,18 @@
      "wikidataId": "Q873332",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Wien_-_Palais_Augarten_%281%29.JPG/500px-Wien_-_Palais_Augarten_%281%29.JPG",
+      "width": 500,
+      "height": 273,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Palais_Augarten_(1).JPG",
+      "fullWidth": 4423
+     },
+     "description": "palace"
     },
     {
      "id": "wikidata/Q693869",
@@ -662,7 +1168,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Augustinian_Church_Vienna.jpg/500px-Augustinian_Church_Vienna.jpg",
+      "width": 500,
+      "height": 731,
+      "author": "Bede735c",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Augustinian_Church_Vienna.jpg",
+      "fullWidth": 2232
+     },
+     "description": "Avusturya'da kilise"
     },
     {
      "id": "wikidata/Q877699",
@@ -678,7 +1195,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Carltheater_Wien.jpg/500px-Carltheater_Wien.jpg",
+      "width": 500,
+      "height": 563,
+      "author": "Nicolas-Marie-Joseph Chapuy",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Carltheater_Wien.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carltheater_Wien.jpg",
+      "fullWidth": 618
+     },
+     "description": "former theatre in Vienna, Austria"
     },
     {
      "id": "wikidata/Q254425",
@@ -690,7 +1218,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Demel_aussen.jpg/500px-Demel_aussen.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "Johann Werfring",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Demel_aussen.jpg",
+      "fullWidth": 3595
+     },
+     "description": "Viyana'da tarihî pastane ve kahvehane"
     },
     {
      "id": "way/110548902",
@@ -702,7 +1241,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Wien_-_Haas-Haus_%282%29.JPG/500px-Wien_-_Haas-Haus_%282%29.JPG",
+      "width": 500,
+      "height": 654,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Haas-Haus_(2).JPG",
+      "fullWidth": 3161
+     },
+     "description": "building in Vienna"
     },
     {
      "id": "wikidata/Q688472",
@@ -714,7 +1264,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Wien_-_Universit%C3%A4tskirche_%282%29.JPG/500px-Wien_-_Universit%C3%A4tskirche_%282%29.JPG",
+      "width": 500,
+      "height": 770,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Universit%C3%A4tskirche_(2).JPG",
+      "fullWidth": 2913
+     },
+     "description": "Avusturya'da kilise"
     }
    ]
   },
@@ -736,7 +1297,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Wien_Kunsthistorisches_Museum.jpg/500px-Wien_Kunsthistorisches_Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Kunsthistorisches_Museum.jpg",
+      "fullWidth": 2816
+     },
+     "description": "Viyana'da sanat müzesi"
     },
     {
      "id": "node/60438337",
@@ -751,7 +1323,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Wien_-_Albertina_%28b%29.JPG/500px-Wien_-_Albertina_%28b%29.JPG",
+      "width": 500,
+      "height": 366,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Albertina_(b).JPG",
+      "fullWidth": 4200
+     },
+     "description": "Viyana'da sanat müzesi"
     },
     {
      "id": "node/1334741420",
@@ -766,7 +1349,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg/500px-State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg",
+      "width": 500,
+      "height": 760,
+      "author": "Richard Hopkins",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg",
+      "fullWidth": 3193
+     },
+     "description": "largest library in Austria"
     },
     {
      "id": "relation/11187",
@@ -783,7 +1377,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Naturhistorisches_Museum_Wien_2.jpg/500px-Naturhistorisches_Museum_Wien_2.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Stb1er (Dario Premm)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Naturhistorisches_Museum_Wien_2.jpg",
+      "fullWidth": 3888
+     },
+     "description": "Viyana'da müze"
     },
     {
      "id": "wikidata/Q414219",
@@ -799,7 +1404,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Akademie_der_bildenden_Kuenste_DSC_2400w.jpg/500px-Akademie_der_bildenden_Kuenste_DSC_2400w.jpg",
+      "width": 500,
+      "height": 308,
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Akademie_der_bildenden_Kuenste_DSC_2400w.jpg",
+      "fullWidth": 5780
+     },
+     "description": "art school in Vienna, Austria"
     },
     {
      "id": "wikidata/Q303139",
@@ -812,7 +1428,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Wien_-_Schloss_Belvedere%2C_oberes_%281%29.JPG/500px-Wien_-_Schloss_Belvedere%2C_oberes_%281%29.JPG",
+      "width": 500,
+      "height": 266,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Belvedere,_oberes_(1).JPG",
+      "fullWidth": 4488
+     },
+     "description": "museum housed in the Belvedere palace, Vienna, Austria"
     },
     {
      "id": "relation/4465113",
@@ -827,7 +1454,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Arsenal_Heeresgeschichtliches_Museum_Mittelbau-DSC_8010w.jpg/500px-Arsenal_Heeresgeschichtliches_Museum_Mittelbau-DSC_8010w.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arsenal_Heeresgeschichtliches_Museum_Mittelbau-DSC_8010w.jpg",
+      "fullWidth": 5380
+     },
+     "description": "museum for the military History of Austria in Vienna"
     },
     {
      "id": "way/25371168",
@@ -843,7 +1481,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Wien_-_Secessionsgeb%C3%A4ude.JPG/500px-Wien_-_Secessionsgeb%C3%A4ude.JPG",
+      "width": 500,
+      "height": 305,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Secessionsgeb%C3%A4ude.JPG",
+      "fullWidth": 4134
+     },
+     "description": "historic exhibition hall in Vienna, Austria"
     },
     {
      "id": "way/328630899",
@@ -858,7 +1507,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/M.A.K._Vienna_June_2006_017.jpg/500px-M.A.K._Vienna_June_2006_017.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M.A.K._Vienna_June_2006_017.jpg",
+      "fullWidth": 2560
+     },
+     "description": "museum in Vienna, Austria"
     },
     {
      "id": "way/20411606",
@@ -873,7 +1533,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Wien_07_Leopold_Museum_a.jpg/500px-Wien_07_Leopold_Museum_a.jpg",
+      "width": 500,
+      "height": 343,
+      "author": "Gugerell",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_07_Leopold_Museum_a.jpg",
+      "fullWidth": 3000
+     },
+     "description": "museum of modern Austrian art in Vienna, Austria"
     },
     {
      "id": "way/327119607",
@@ -889,7 +1560,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Esperantomuseum.jpg/500px-Esperantomuseum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Makarie",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Esperantomuseum.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Esperantomuseum.jpg",
+      "fullWidth": 3456
+     },
+     "description": "collection of planned languages in the Austrian National Library, museum, library, documentation centre and archive"
     },
     {
      "id": "way/169186435",
@@ -905,7 +1587,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Wien.Mozarthouse02.jpg/500px-Wien.Mozarthouse02.jpg",
+      "width": 500,
+      "height": 671,
+      "author": "Georges Jansoone",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien.Mozarthouse02.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum"
     },
     {
      "id": "way/8097556",
@@ -920,7 +1613,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Wien_Muzeum_Sztuki_Nowoczesnej.jpg/500px-Wien_Muzeum_Sztuki_Nowoczesnej.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Muzeum_Sztuki_Nowoczesnej.jpg",
+      "fullWidth": 5184
+     },
+     "description": "art museum in Vienna, Austria"
     },
     {
      "id": "node/928953625",
@@ -935,7 +1639,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_-_Sigmund_Freud_Museum_%28d%29.JPG/500px-Wien_-_Sigmund_Freud_Museum_%28d%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Sigmund_Freud_Museum_(d).JPG",
+      "fullWidth": 4650
+     },
+     "description": "museum in Vienna"
     },
     {
      "id": "node/316524224",
@@ -950,7 +1665,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/ArchitekturZentrum_Wien_extr.JPG/500px-ArchitekturZentrum_Wien_extr.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "MOs810",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ArchitekturZentrum_Wien_extr.JPG",
+      "fullWidth": 902
+     },
+     "description": "museum in Vienna"
     },
     {
      "id": "node/441696312",
@@ -964,7 +1690,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Weltliche_Schatzkammer_Wien_%28190%29.JPG/500px-Weltliche_Schatzkammer_Wien_%28190%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "MyName ( Gryffindor )",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Weltliche_Schatzkammer_Wien_(190).JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Weltliche_Schatzkammer_Wien_(190).JPG",
+      "fullWidth": 1735
+     },
+     "description": "museum in Austria"
     },
     {
      "id": "node/12042381527",
@@ -976,7 +1713,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Wien_-_Kirche_Maria_am_Gestade.JPG/500px-Wien_-_Kirche_Maria_am_Gestade.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Kirche_Maria_am_Gestade.JPG",
+      "fullWidth": 2466
+     },
+     "description": "Avusturya'da kilise"
     },
     {
      "id": "wikidata/Q1824069",
@@ -989,7 +1737,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Alsergrund_%28Wien%29_-_Palais_Liechtenstein_%28F%C3%BCrstengasse%29.JPG/500px-Alsergrund_%28Wien%29_-_Palais_Liechtenstein_%28F%C3%BCrstengasse%29.JPG",
+      "width": 500,
+      "height": 243,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alsergrund_(Wien)_-_Palais_Liechtenstein_(F%C3%BCrstengasse).JPG",
+      "fullWidth": 4887
+     },
+     "description": "art museum originating mostly from the collection of the Princes of Liechtenstein"
     },
     {
      "id": "relation/7771899",
@@ -1004,7 +1763,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Weltmuseum%2C_Wien_2.jpg/500px-Weltmuseum%2C_Wien_2.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Thomas Ledl",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Weltmuseum,_Wien_2.jpg",
+      "fullWidth": 7061
+     },
+     "description": "Viyana'da sanat müzesi"
     },
     {
      "id": "way/8097153",
@@ -1020,7 +1790,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Wien_Museum_Neu.jpg/500px-Wien_Museum_Neu.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Christine Koblitz",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Museum_Neu.jpg",
+      "fullWidth": 4032
+     },
+     "description": "group of museums in Vienna"
     },
     {
      "id": "way/327119600",
@@ -1034,7 +1815,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Palais_Mollard-Clary%2C_Vienna_June_2006_322.jpg/500px-Palais_Mollard-Clary%2C_Vienna_June_2006_322.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Gryffindor",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Mollard-Clary,_Vienna_June_2006_322.jpg",
+      "fullWidth": 1920
+     },
+     "description": "museum in Vienna, Austria"
     },
     {
      "id": "way/25577419",
@@ -1050,7 +1842,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_%283%29.JPG/500px-Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_%283%29.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_(3).JPG",
+      "fullWidth": 4390
+     },
+     "description": "Viyana'da sanat müzesi"
     },
     {
      "id": "relation/2509778",
@@ -1067,7 +1870,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Winterpalais_Prinz_Eugen.jpg/500px-Winterpalais_Prinz_Eugen.jpg",
+      "width": 500,
+      "height": 559,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Winterpalais_Prinz_Eugen.jpg",
+      "fullWidth": 2345
+     },
+     "description": "building in Innere Stadt, Austria"
     },
     {
      "id": "node/10138397168",
@@ -1082,7 +1896,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Vienna"
     },
     {
      "id": "node/4185985589",
@@ -1098,7 +1913,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Alsergrund_%28Wien%29_-_Josephinum.JPG/500px-Alsergrund_%28Wien%29_-_Josephinum.JPG",
+      "width": 500,
+      "height": 311,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alsergrund_(Wien)_-_Josephinum.JPG",
+      "fullWidth": 6000
+     },
+     "description": "Viyana'daki eski tıp ve cerrahi akademisi"
     },
     {
      "id": "way/277816743",
@@ -1113,7 +1939,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Kunsthalle_Vienna_June_2006.jpg/500px-Kunsthalle_Vienna_June_2006.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kunsthalle_Vienna_June_2006.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Viyana'da sanat müzesi"
     },
     {
      "id": "way/165759321",
@@ -1129,7 +1966,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Wien_-_Belvedere_21.JPG/500px-Wien_-_Belvedere_21.JPG",
+      "width": 500,
+      "height": 310,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Belvedere_21.JPG",
+      "fullWidth": 5130
+     },
+     "description": "Museum for contemporary art, film and music in Vienna"
     },
     {
      "id": "way/324725228",
@@ -1143,7 +1991,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Neue_Burg_Vienna_June_2006_271.jpg/500px-Neue_Burg_Vienna_June_2006_271.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gryffindor",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Neue_Burg_Vienna_June_2006_271.jpg",
+      "fullWidth": 2560
+     },
+     "description": "museum in Austria"
     },
     {
      "id": "node/11357982388",
@@ -1157,7 +2016,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Wien_-_Museum_Judenplatz_%282%29.JPG/500px-Wien_-_Museum_Judenplatz_%282%29.JPG",
+      "width": 500,
+      "height": 285,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Museum_Judenplatz_(2).JPG",
+      "fullWidth": 4487
+     },
+     "description": "museum in Vienna, Austria dedicated to Jewish history, culture and religion"
     },
     {
      "id": "node/1970749517",
@@ -1173,7 +2043,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Alsergrund_%28Wien%29_-_Schuberthaus_%282%29.JPG/500px-Alsergrund_%28Wien%29_-_Schuberthaus_%282%29.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alsergrund_(Wien)_-_Schuberthaus_(2).JPG",
+      "fullWidth": 4185
+     },
+     "description": "birth house and museum of Franz Schubert in Vienna"
     },
     {
      "id": "way/9245795",
@@ -1188,7 +2069,18 @@
       "heritage",
       "religious",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wien_-_Theseustempel.JPG/500px-Wien_-_Theseustempel.JPG",
+      "width": 500,
+      "height": 329,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Theseustempel.JPG",
+      "fullWidth": 4600
+     },
+     "description": "building in Vienna"
     },
     {
      "id": "node/666750600",
@@ -1203,21 +2095,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
-    },
-    {
-     "id": "node/4102220512",
-     "name": "Museum der Johann Strauss Dynastie",
-     "lat": 48.22002,
-     "lon": 16.36282,
-     "address": "Müllnergasse 3",
-     "website": "https://www.strauss-museum.at/",
-     "wikipediaCount": 5,
-     "wikidataId": "Q19829543",
-     "kinds": [
-      "museum",
-      "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/PalaisSchoenborn070909.jpg/500px-PalaisSchoenborn070909.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Extrawurst",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PalaisSchoenborn070909.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum"
     },
     {
      "id": "node/5146842774",
@@ -1231,7 +2120,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/%C3%96sterreichische_Nationalbibliothek_2.jpg/500px-%C3%96sterreichische_Nationalbibliothek_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Stemonitis at English Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%96sterreichische_Nationalbibliothek_2.jpg",
+      "fullWidth": 1600
+     },
+     "description": "collection and museum in Vienna"
     },
     {
      "id": "node/600721260",
@@ -1246,7 +2146,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Wirtschaftsmuseum_130125_in_A-1050_Wien.jpg/500px-Wirtschaftsmuseum_130125_in_A-1050_Wien.jpg",
+      "width": 500,
+      "height": 260,
+      "author": "Robert Heilinger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wirtschaftsmuseum_130125_in_A-1050_Wien.jpg",
+      "fullWidth": 9333
+     },
+     "description": "museum in Vienna"
     },
     {
      "id": "node/412510725",
@@ -1260,7 +2171,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Palais_Fanto_1.JPG/500px-Palais_Fanto_1.JPG",
+      "width": 500,
+      "height": 430,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Fanto_1.JPG",
+      "fullWidth": 3490
+     },
+     "description": "museum in Vienna, Austria"
     },
     {
      "id": "node/9983513676",
@@ -1274,7 +2196,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_%281%29.JPG/500px-Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_%281%29.JPG",
+      "width": 500,
+      "height": 284,
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_(1).JPG",
+      "fullWidth": 4740
+     },
+     "description": "museum in Austria"
     },
     {
      "id": "node/3332991286",
@@ -1290,7 +2223,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Beethoven_Pasqualatihaus_Wien1.jpg/500px-Beethoven_Pasqualatihaus_Wien1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Welleschik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beethoven_Pasqualatihaus_Wien1.jpg",
+      "fullWidth": 3264
+     },
+     "description": "former house of Ludwig van Beethoven"
     },
     {
      "id": "relation/1606455",
@@ -1305,7 +2249,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Hofmobiliendepot_3_stitched.jpg/500px-Hofmobiliendepot_3_stitched.jpg",
+      "width": 500,
+      "height": 539,
+      "author": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hofmobiliendepot_3_stitched.jpg",
+      "fullWidth": 2262
+     },
+     "description": "museum"
     },
     {
      "id": "node/1868804009",
@@ -1320,7 +2275,35 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Vienna, Austria"
+    },
+    {
+     "id": "node/567066337",
+     "name": "Theatermuseum",
+     "lat": 48.20562,
+     "lon": 16.36852,
+     "address": "Lobkowitzplatz 2",
+     "website": "https://www.theatermuseum.at/",
+     "openingHours": "Mo, We-Su 10:00-18:00",
+     "wikipediaCount": 3,
+     "wikidataId": "Q306724",
+     "kinds": [
+      "museum",
+      "noCoordinate",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Palais_Lobkowitz3.jpg/500px-Palais_Lobkowitz3.jpg",
+      "width": 500,
+      "height": 306,
+      "author": "Werckmeister",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Lobkowitz3.jpg",
+      "fullWidth": 1800
+     },
+     "description": "museum in Vienna, Austria"
     }
    ]
   },
@@ -2000,7 +2983,18 @@
      "openingHours": "Mo-Fr 08:00-19:00; Sa 08:00-18:00; Su,PH 10:00-18:00",
      "cuisine": "regional",
      "wikidataId": "Q5017228",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Wien_Caf%C3%A9_Br%C3%A4unerhof_abends.jpg/500px-Wien_Caf%C3%A9_Br%C3%A4unerhof_abends.jpg",
+      "width": 500,
+      "height": 284,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Caf%C3%A9_Br%C3%A4unerhof_abends.jpg",
+      "fullWidth": 3931
+     },
+     "description": "Viyana'da café"
     },
     {
      "id": "node/3489171246",
@@ -2024,9 +3018,21 @@
      "cuisine": "german",
      "wikidataId": "Q694757",
      "kinds": [
-      "business"
+      "business",
+      "organization"
      ],
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Palais_Ferstel_Cafe_Central.jpg/500px-Palais_Ferstel_Cafe_Central.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Ferstel_Cafe_Central.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Viyana'da café"
     },
     {
      "id": "node/1387495310",
@@ -2483,7 +3489,18 @@
      "website": "https://www.edenbar.at/",
      "openingHours": "We-Sa 20:00+",
      "wikidataId": "Q1283530",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Wien_Eden_Bar.jpg/500px-Wien_Eden_Bar.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Invisigoth67",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Eden_Bar.jpg",
+      "fullWidth": 2816
+     },
+     "description": "bar in Vienna, Austria"
     },
     {
      "id": "way/133677620",
@@ -2494,7 +3511,18 @@
      "website": "https://flex.at/",
      "openingHours": "Th-Sa 23:00-06:00",
      "wikidataId": "Q1288474",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Flex_nacht_DRI.jpg/500px-Flex_nacht_DRI.jpg",
+      "width": 500,
+      "height": 326,
+      "author": "Sven Gross-Selbeck",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Flex_nacht_DRI.jpg",
+      "fullWidth": 1000
+     },
+     "description": "nightclub in Vienna"
     },
     {
      "id": "way/178858832",
@@ -2505,7 +3533,18 @@
      "website": "https://flucc.at/",
      "openingHours": "Mo-Su 20:00-06:00",
      "wikidataId": "Q27829539",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Too_Tangled_WAVES_Vienna_2012_Fluc_01.jpg/500px-Too_Tangled_WAVES_Vienna_2012_Fluc_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Manfred Werner - Tsui",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Too_Tangled_WAVES_Vienna_2012_Fluc_01.jpg",
+      "fullWidth": 2700
+     },
+     "description": "nightclub in Vienna"
     },
     {
      "id": "node/5185694143",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "MUC",
- "fetchedAt": "2026-10-18T16:15:21.157Z",
+ "fetchedAt": "2026-10-22T05:24:28.502Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q102400",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/O%27zapft_is%21_M%C3%BCnchens_5_Jahreszeit_hat_begonnen_-_O%27zapft_is%21_Munich_5_season%2C_the_Oktoberfest_has_begun_%289855483374%29.jpg/500px-O%27zapft_is%21_M%C3%BCnchens_5_Jahreszeit_hat_begonnen_-_O%27zapft_is%21_Munich_5_season%2C_the_Oktoberfest_has_begun_%289855483374%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Heribert Pohl --- Thanks for half a million clicks! from Germering bei München, Bayern",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:O%27zapft_is!_M%C3%BCnchens_5_Jahreszeit_hat_begonnen_-_O%27zapft_is!_Munich_5_season,_the_Oktoberfest_has_begun_(9855483374).jpg",
+      "fullWidth": 4822
+     },
+     "description": "Almanya'da düzenlenen bira festivali"
     },
     {
      "id": "wikidata/Q131610",
@@ -65,7 +76,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Blick_vom_Olympiaberg_auf_das_Olympiastadion.jpg/500px-Blick_vom_Olympiaberg_auf_das_Olympiastadion.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Amrei-Marie",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Blick_vom_Olympiaberg_auf_das_Olympiastadion.jpg",
+      "fullWidth": 5472
+     },
+     "description": "stadium located in Munich, Germany"
     },
     {
      "id": "way/225698612",
@@ -79,7 +101,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg/500px-Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg",
+      "width": 500,
+      "height": 312,
+      "author": "Diliff",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich_-_View_from_Peterskirche_Tower.jpg",
+      "fullWidth": 4000
+     },
+     "description": "church in Munich, Bavaria, Germany; cathedral of the archdiocese of Munich and Freising"
     },
     {
      "id": "wikidata/Q260223",
@@ -90,7 +123,18 @@
      "wikidataId": "Q260223",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg/500px-Aerial_image_of_Englischer_Garten_in_Munich_%28view_from_the_southwest%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Englischer_Garten_in_Munich_(view_from_the_southwest).jpg",
+      "fullWidth": 5400
+     },
+     "description": "a large public park in the centre of Munich"
     },
     {
      "id": "wikidata/Q252648",
@@ -103,7 +147,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Marienplatz_und_Rathaus_M%C3%BCnchen.jpg/500px-Marienplatz_und_Rathaus_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 435,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Marienplatz_und_Rathaus_M%C3%BCnchen.jpg",
+      "fullWidth": 5100
+     },
+     "description": "square in Munich, Germany"
     },
     {
      "id": "relation/147095",
@@ -117,7 +172,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Marienplatz_und_Rathaus_M%C3%BCnchen.jpg/500px-Marienplatz_und_Rathaus_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 435,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Marienplatz_und_Rathaus_M%C3%BCnchen.jpg",
+      "fullWidth": 5100
+     },
+     "description": "a town hall at the northern part of Marienplatz in Munich, Bavaria, Germany."
     },
     {
      "id": "wikidata/Q254647",
@@ -129,7 +195,18 @@
      "wikidataId": "Q254647",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Munich_Main_Railway_Station_-_aerial_view.JPG/500px-Munich_Main_Railway_Station_-_aerial_view.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "User:Mattes",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Munich_Main_Railway_Station_-_aerial_view.JPG",
+      "fullWidth": 2816
+     },
+     "description": "Almanya'da tren istasyonu"
     },
     {
      "id": "relation/7456359",
@@ -142,7 +219,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/BAVIERA._M%C3%9ANICH._Residenz_%28fachada_occidental%29.jpg/500px-BAVIERA._M%C3%9ANICH._Residenz_%28fachada_occidental%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Tony Castle",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BAVIERA._M%C3%9ANICH._Residenz_(fachada_occidental).jpg",
+      "fullWidth": 3187
+     },
+     "description": "building in Munich, Upper Bavaria, Germany"
     },
     {
      "id": "way/25514390",
@@ -157,7 +245,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Exterior_of_Theatinerkirche%2C_Munich.jpg/500px-Exterior_of_Theatinerkirche%2C_Munich.jpg",
+      "width": 500,
+      "height": 576,
+      "author": "Wilfredor",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exterior_of_Theatinerkirche,_Munich.jpg",
+      "fullWidth": 7873
+     },
+     "description": "Catholic church in Munich, Germany"
     },
     {
      "id": "wikidata/Q700887",
@@ -168,7 +267,18 @@
      "wikidataId": "Q700887",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/005_Theresienwiese.jpg/500px-005_Theresienwiese.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Usien",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:005_Theresienwiese.jpg",
+      "fullWidth": 3888
+     },
+     "description": "square in Munich, Germany"
     },
     {
      "id": "way/96753009",
@@ -181,7 +291,44 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Bavaria_statue_in_Munich.JPG/500px-Bavaria_statue_in_Munich.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Stylianos Karavias ( Hoverfish on en.wikipedia )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bavaria_statue_in_Munich.JPG",
+      "fullWidth": 768
+     },
+     "description": "Statue of Bavaria in Munich, Germany"
+    },
+    {
+     "id": "way/47515468",
+     "name": "Sankt Johann Nepomuk",
+     "lat": 48.13521,
+     "lon": 11.56952,
+     "address": "Sendlinger Straße 32",
+     "openingHours": "Mo-Th, Sa, Su 09:00-19:00; Fr 13:00-19:00",
+     "wikipediaCount": 22,
+     "wikidataId": "Q152973",
+     "kinds": [
+      "heritage",
+      "organization",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/St._Nepomuk_retusche.jpg/500px-St._Nepomuk_retusche.jpg",
+      "width": 500,
+      "height": 401,
+      "author": "Wikiolo , derivative work Lämpel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Nepomuk_retusche.jpg",
+      "fullWidth": 3750
+     },
+     "description": "München, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q254903",
@@ -192,7 +339,18 @@
      "wikidataId": "Q254903",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/M%C3%BCnchen%2C_Stadion_a_d_Gr%C3%BCnwalder_v_O%2C_1.jpeg/500px-M%C3%BCnchen%2C_Stadion_a_d_Gr%C3%BCnwalder_v_O%2C_1.jpeg",
+      "width": 500,
+      "height": 289,
+      "author": "Renardo la vulpo",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen,_Stadion_a_d_Gr%C3%BCnwalder_v_O,_1.jpeg",
+      "fullWidth": 3600
+     },
+     "description": "football stadium in Munich, Germany"
     },
     {
      "id": "way/25505402",
@@ -205,22 +363,18 @@
      "wikidataId": "Q251712",
      "kinds": [
       "heritage"
-     ]
-    },
-    {
-     "id": "way/47515468",
-     "name": "Sankt Johann Nepomuk",
-     "lat": 48.13521,
-     "lon": 11.56952,
-     "address": "Sendlinger Straße 32",
-     "openingHours": "Mo-Th, Sa, Su 09:00-19:00; Fr 13:00-19:00",
-     "wikipediaCount": 21,
-     "wikidataId": "Q152973",
-     "kinds": [
-      "heritage",
-      "organization",
-      "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Feldherrnhalle_M%C3%BCnchen.jpg/500px-Feldherrnhalle_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 322,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Feldherrnhalle_M%C3%BCnchen.jpg",
+      "fullWidth": 5255
+     },
+     "description": "monumental loggia on the Odeonsplatz in Munich, Germany"
     },
     {
      "id": "way/36943165",
@@ -235,7 +389,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/20060416-Michaelskirche_Muenchen.jpg/500px-20060416-Michaelskirche_Muenchen.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Luidger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20060416-Michaelskirche_Muenchen.jpg",
+      "fullWidth": 960
+     },
+     "description": "church in Bavaria, Germany"
     },
     {
      "id": "way/228534603",
@@ -249,7 +414,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Alter-peter_vom-rathaus.jpg/500px-Alter-peter_vom-rathaus.jpg",
+      "width": 500,
+      "height": 675,
+      "author": "Softeis",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alter-peter_vom-rathaus.jpg",
+      "fullWidth": 1000
+     },
+     "description": "a church in Munich"
     },
     {
      "id": "way/22727580",
@@ -262,7 +438,18 @@
      "wikidataId": "Q254294",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Siegestor_bei_Nacht.JPG/500px-Siegestor_bei_Nacht.JPG",
+      "width": 500,
+      "height": 334,
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Siegestor_bei_Nacht.JPG",
+      "fullWidth": 4358
+     },
+     "description": "Münih, Almanya'daki anıtsal zafer takı"
     },
     {
      "id": "wikidata/Q259839",
@@ -276,7 +463,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Odeonsplatz%2C_M%C3%BAnich%2C_Alemania%2C_2013-02-03%2C_DD_02.JPG/500px-Odeonsplatz%2C_M%C3%BAnich%2C_Alemania%2C_2013-02-03%2C_DD_02.JPG",
+      "width": 500,
+      "height": 447,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Odeonsplatz,_M%C3%BAnich,_Alemania,_2013-02-03,_DD_02.JPG",
+      "fullWidth": 3406
+     },
+     "description": "square in Munich, Germany"
     },
     {
      "id": "wikidata/Q707673",
@@ -287,7 +485,18 @@
      "wikidataId": "Q707673",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Aerial_image_of_the_Hofgarten_M%C3%BCnchen_%28view_from_the_southeast%29.jpg/500px-Aerial_image_of_the_Hofgarten_M%C3%BCnchen_%28view_from_the_southeast%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Hofgarten_M%C3%BCnchen_(view_from_the_southeast).jpg",
+      "fullWidth": 5250
+     },
+     "description": "park in Munich, Germany"
     },
     {
      "id": "wikidata/Q686629",
@@ -300,7 +509,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Viki-Markt.Maibaum.JPG/500px-Viki-Markt.Maibaum.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "User:Mattes",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Viki-Markt.Maibaum.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Viki-Markt.Maibaum.JPG",
+      "fullWidth": 1536
+     },
+     "description": "daily food market and a square in the center of Munich, Germany"
     },
     {
      "id": "way/4054817",
@@ -314,7 +534,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Altes_Rathaus_in_M%C3%BCnchen%2C_2023.jpg/500px-Altes_Rathaus_in_M%C3%BCnchen%2C_2023.jpg",
+      "width": 500,
+      "height": 934,
+      "author": "Burkhard Mücke",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Altes_Rathaus_in_M%C3%BCnchen,_2023.jpg",
+      "fullWidth": 2729
+     },
+     "description": "city hall"
     },
     {
      "id": "way/23458583",
@@ -331,7 +562,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Nationaltheater_Munich.jpg/500px-Nationaltheater_Munich.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nationaltheater_Munich.jpg",
+      "fullWidth": 3000
+     },
+     "description": "opera house in Max-Joseph-Platz in Munich, Germany, home to the Bavarian State Opera and Ballet"
     },
     {
      "id": "wikidata/Q260660",
@@ -345,7 +587,18 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Isartor_M%C3%BCnchen%2C_ohne_Autos.jpg/500px-Isartor_M%C3%BCnchen%2C_ohne_Autos.jpg",
+      "width": 500,
+      "height": 322,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Isartor_M%C3%BCnchen,_ohne_Autos.jpg",
+      "fullWidth": 5100
+     },
+     "description": "tower"
     },
     {
      "id": "node/1383175737",
@@ -359,7 +612,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/2023-02-03_Hofbr%C3%A4uhaus_am_Platzl_07.jpg/500px-2023-02-03_Hofbr%C3%A4uhaus_am_Platzl_07.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2023-02-03_Hofbr%C3%A4uhaus_am_Platzl_07.jpg",
+      "fullWidth": 5100
+     },
+     "description": "beer hall in the city center of Munich, Bavaria, Germany."
     },
     {
      "id": "wikidata/Q592281",
@@ -371,7 +635,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Bundesarchiv_Bild_146-1978-004-12A%2C_NSDAP-Versammlung_im_B%C3%BCrgerbr%C3%A4ukeller%2C_M%C3%BCnchen.jpg/500px-Bundesarchiv_Bild_146-1978-004-12A%2C_NSDAP-Versammlung_im_B%C3%BCrgerbr%C3%A4ukeller%2C_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 358,
+      "author": "Hoffmann, Heinrich",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1978-004-12A,_NSDAP-Versammlung_im_B%C3%BCrgerbr%C3%A4ukeller,_M%C3%BCnchen.jpg",
+      "fullWidth": 800
+     },
+     "description": "beer hall in Munich, Germany, the site of the Beer Hall Putsch, demolished in 1979"
     },
     {
      "id": "way/325929848",
@@ -384,7 +659,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Westseite_des_Maximilianeum%2C_2013.jpg/500px-Westseite_des_Maximilianeum%2C_2013.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "High Contrast",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Westseite_des_Maximilianeum,_2013.jpg",
+      "fullWidth": 4215
+     },
+     "description": "palatial building in Munich, was built as the home of a gifted students' foundation and has also housed the Bavarian Landtag (state parliament) since 1949"
     },
     {
      "id": "wikidata/Q561084",
@@ -398,7 +684,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Aerial_image_of_the_K%C3%B6nigsplatz_in_Munich_%28view_from_the_southeast%29.jpg/500px-Aerial_image_of_the_K%C3%B6nigsplatz_in_Munich_%28view_from_the_southeast%29.jpg",
+      "width": 500,
+      "height": 340,
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_K%C3%B6nigsplatz_in_Munich_(view_from_the_southeast).jpg",
+      "fullWidth": 5000
+     },
+     "description": "square in Munich, Germany"
     },
     {
      "id": "wikidata/Q254394",
@@ -412,7 +709,18 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Sendlinger_Tor%2C_M%C3%BAnich%2C_Alemania12.JPG/500px-Sendlinger_Tor%2C_M%C3%BAnich%2C_Alemania12.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sendlinger_Tor,_M%C3%BAnich,_Alemania12.JPG",
+      "fullWidth": 3877
+     },
+     "description": "gate tower in Munich"
     },
     {
      "id": "wikidata/Q321485",
@@ -424,7 +732,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/2023-02-10_St._Lukaskirche_M%C3%BCnchen_01.jpg/500px-2023-02-10_St._Lukaskirche_M%C3%BCnchen_01.jpg",
+      "width": 500,
+      "height": 480,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2023-02-10_St._Lukaskirche_M%C3%BCnchen_01.jpg",
+      "fullWidth": 5100
+     },
+     "description": "München, Almanya'da kilise"
     },
     {
      "id": "way/400345387",
@@ -438,7 +757,18 @@
      "wikidataId": "Q538348",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Bavaria_2.jpg/500px-Bavaria_2.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "No machine-readable author provided. Hvezd assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bavaria_2.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bavaria_2.jpg",
+      "fullWidth": 2096
+     },
+     "description": "building in Schwanthalerhöhe, Upper Bavaria, Germany"
     },
     {
      "id": "node/2618685230",
@@ -449,7 +779,18 @@
      "wikidataId": "Q504642",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Muenchen-_Friedensenangel.JPG/500px-Muenchen-_Friedensenangel.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Sirabder87",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muenchen-_Friedensenangel.JPG",
+      "fullWidth": 1024
+     },
+     "description": "monument in the Munich suburb of Bogenhausen"
     },
     {
      "id": "relation/14471471",
@@ -462,7 +803,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Stachus_2014-08-02_pseudo-pano.jpg/500px-Stachus_2014-08-02_pseudo-pano.jpg",
+      "width": 500,
+      "height": 173,
+      "author": "Meister Eiskalt derivative work: MagentaGreen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stachus_2014-08-02_pseudo-pano.jpg",
+      "fullWidth": 5184
+     },
+     "description": "square in Munich"
     },
     {
      "id": "way/52103816",
@@ -476,7 +828,40 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Munich_-_Stachus_01_-_Karls_Tor.jpg/500px-Munich_-_Stachus_01_-_Karls_Tor.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "User:Nino Barbieri",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Munich_-_Stachus_01_-_Karls_Tor.jpg",
+      "fullWidth": 3072
+     },
+     "description": "gate tower in Munich"
+    },
+    {
+     "id": "wikidata/Q438199",
+     "name": "Alter Südfriedhof",
+     "lat": 48.12727,
+     "lon": 11.56488,
+     "wikipediaCount": 12,
+     "wikidataId": "Q438199",
+     "kinds": [
+      "heritage"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Grabdenkm%C3%A4ler_auf_dem_M%C3%BCnchner_S%C3%BCdfriedhof_70.jpg/500px-Grabdenkm%C3%A4ler_auf_dem_M%C3%BCnchner_S%C3%BCdfriedhof_70.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grabdenkm%C3%A4ler_auf_dem_M%C3%BCnchner_S%C3%BCdfriedhof_70.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Almanya'da mezarlık"
     },
     {
      "id": "wikidata/Q251948",
@@ -488,7 +873,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/B%C3%BCrgersaalkirche_M%C3%BCnchen%2C_Au%C3%9Fenansicht.jpg/500px-B%C3%BCrgersaalkirche_M%C3%BCnchen%2C_Au%C3%9Fenansicht.jpg",
+      "width": 500,
+      "height": 555,
+      "author": "Thomas Ledl",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:B%C3%BCrgersaalkirche_M%C3%BCnchen,_Au%C3%9Fenansicht.jpg",
+      "fullWidth": 3958
+     },
+     "description": "München, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q571767",
@@ -499,7 +895,18 @@
      "wikidataId": "Q571767",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Hochschule_f%C3%BCr_Musik_und_Theater_M%C3%BCnchen-7617.jpg/500px-Hochschule_f%C3%BCr_Musik_und_Theater_M%C3%BCnchen-7617.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hochschule_f%C3%BCr_Musik_und_Theater_M%C3%BCnchen-7617.jpg",
+      "fullWidth": 5681
+     },
+     "description": "Münih'te bina"
     },
     {
      "id": "wikidata/Q251087",
@@ -511,7 +918,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/M%C3%BCnchen_Heilig-Geist-Kirche_2011.jpg/500px-M%C3%BCnchen_Heilig-Geist-Kirche_2011.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Helmlechner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Heilig-Geist-Kirche_2011.jpg",
+      "fullWidth": 2048
+     },
+     "description": "München, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q250951",
@@ -523,7 +941,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Mueludwigk032025zob.jpg/500px-Mueludwigk032025zob.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Fentriss",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mueludwigk032025zob.jpg",
+      "fullWidth": 8736
+     },
+     "description": "church in Munich, Germany"
     },
     {
      "id": "wikidata/Q686997",
@@ -535,7 +964,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Palais_Holnstein_Munich.JPG/500px-Palais_Holnstein_Munich.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Christoph Filser",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Holnstein_Munich.JPG",
+      "fullWidth": 1600
+     },
+     "description": "architectural structure"
     },
     {
      "id": "wikidata/Q247638",
@@ -547,18 +987,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
-    },
-    {
-     "id": "wikidata/Q438199",
-     "name": "Alter Südfriedhof",
-     "lat": 48.12727,
-     "lon": 11.56488,
-     "wikipediaCount": 11,
-     "wikidataId": "Q438199",
-     "kinds": [
-      "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aerial_image_of_St._Paul%27s_Church_in_Munich_%28view_from_the_southeast%29.jpg/500px-Aerial_image_of_St._Paul%27s_Church_in_Munich_%28view_from_the_southeast%29.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_St._Paul%27s_Church_in_Munich_(view_from_the_southeast).jpg",
+      "fullWidth": 3500
+     },
+     "description": "church"
     },
     {
      "id": "wikidata/Q532191",
@@ -573,7 +1013,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/M%C3%BCnchen_Residenztheater.JPG/500px-M%C3%BCnchen_Residenztheater.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Maximilian Dörrbecker ( Chumwa )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Residenztheater.JPG",
+      "fullWidth": 2816
+     },
+     "description": "opera house and theatre in Munich, Germany"
     },
     {
      "id": "wikidata/Q130609",
@@ -585,7 +1036,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/GER_M%C3%BCnchen%2C_Justizpalast_0006.jpg/500px-GER_M%C3%BCnchen%2C_Justizpalast_0006.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "-wuppertaler",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GER_M%C3%BCnchen,_Justizpalast_0006.jpg",
+      "fullWidth": 3738
+     },
+     "description": "courthouse in Munich, Germany"
     },
     {
      "id": "node/340004718",
@@ -598,7 +1060,18 @@
       "heritage",
       "notPlace",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Mariens%C3%A4ule_und_T%C3%BCrme_der_M%C3%BCnchner_Frauenkirche.jpg/500px-Mariens%C3%A4ule_und_T%C3%BCrme_der_M%C3%BCnchner_Frauenkirche.jpg",
+      "width": 500,
+      "height": 891,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mariens%C3%A4ule_und_T%C3%BCrme_der_M%C3%BCnchner_Frauenkirche.jpg",
+      "fullWidth": 2862
+     },
+     "description": "Structure in Munich, Upper Bavaria, Germany"
     },
     {
      "id": "wikidata/Q456586",
@@ -611,7 +1084,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Prinzregententheater.jpg/500px-Prinzregententheater.jpg",
+      "width": 500,
+      "height": 295,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Prinzregententheater.jpg",
+      "fullWidth": 1000
+     },
+     "description": "theatre in Munich, Germany"
     },
     {
      "id": "way/244969498",
@@ -625,7 +1109,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Propyl%C3%A4en_M%C3%BCnchen.jpg/500px-Propyl%C3%A4en_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 238,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Propyl%C3%A4en_M%C3%BCnchen.jpg",
+      "fullWidth": 5100
+     },
+     "description": "city gate in Munich, Germany"
     },
     {
      "id": "wikidata/Q328794",
@@ -639,7 +1134,18 @@
       "notPlace",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/49/Schanz_gaiss300.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Uploaded by Dominik Hundhammer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schanz_gaiss300.jpg",
+      "fullWidth": 300
+     },
+     "description": "mosque"
     },
     {
      "id": "wikidata/Q279303",
@@ -652,7 +1158,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2022-08-30_Abtei_St._Bonifaz.jpg/500px-2022-08-30_Abtei_St._Bonifaz.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2022-08-30_Abtei_St._Bonifaz.jpg",
+      "fullWidth": 5100
+     },
+     "description": "abbey in Munich"
     },
     {
      "id": "node/5418220511",
@@ -666,7 +1183,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Alterhof.jpg/500px-Alterhof.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Robert Theml",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alterhof.jpg",
+      "fullWidth": 960
+     },
+     "description": "building in Old Town, Upper Bavaria, Germany"
     },
     {
      "id": "way/124911353",
@@ -679,7 +1207,18 @@
      "wikidataId": "Q812286",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Bayerische_Staatskanzlei_Munich_2014_03.jpg/500px-Bayerische_Staatskanzlei_Munich_2014_03.jpg",
+      "width": 500,
+      "height": 349,
+      "author": "Julian Herzog ( Website )",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bayerische_Staatskanzlei_Munich_2014_03.jpg",
+      "fullWidth": 3400
+     },
+     "description": "Bavarian state agency"
     }
    ]
   },
@@ -700,7 +1239,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Deutsches_Museum_Portrait_4.jpg/500px-Deutsches_Museum_Portrait_4.jpg",
+      "width": 500,
+      "height": 258,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Portrait_4.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Münih'te bilim ve teknoloji müzesi"
     },
     {
      "id": "wikidata/Q131631",
@@ -716,7 +1266,18 @@
       "organization",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Schloss_Nymphenburg%2C_Weitwinkelansicht.jpg/500px-Schloss_Nymphenburg%2C_Weitwinkelansicht.jpg",
+      "width": 500,
+      "height": 225,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Nymphenburg,_Weitwinkelansicht.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Baroque palace in Munich, Bavaria, southern Germany"
     },
     {
      "id": "way/4647135",
@@ -732,7 +1293,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Alte_Pinakothek.JPG/500px-Alte_Pinakothek.JPG",
+      "width": 500,
+      "height": 219,
+      "author": "Markus Würfel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alte_Pinakothek.JPG",
+      "fullWidth": 881
+     },
+     "description": "Münih'te sanat müzesi"
     },
     {
      "id": "relation/532621",
@@ -749,7 +1321,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Glyptothek_M%C3%BCnchen%2C_April_2023.jpg/500px-Glyptothek_M%C3%BCnchen%2C_April_2023.jpg",
+      "width": 500,
+      "height": 222,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Glyptothek_M%C3%BCnchen,_April_2023.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Münih'te sanat müzesi"
     },
     {
      "id": "relation/1644123",
@@ -764,7 +1347,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ausstellungsraum_Neue_Pinakothek.JPG/500px-Ausstellungsraum_Neue_Pinakothek.JPG",
+      "width": 500,
+      "height": 355,
+      "author": "Bärwinkel,Klaus",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ausstellungsraum_Neue_Pinakothek.JPG",
+      "fullWidth": 3883
+     },
+     "description": "art museum in Munich, Germany"
     },
     {
      "id": "node/305581866",
@@ -779,7 +1373,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mueprinzregstrbnatmus20012018c85.jpg/500px-Mueprinzregstrbnatmus20012018c85.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fentriss",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mueprinzregstrbnatmus20012018c85.jpg",
+      "fullWidth": 6048
+     },
+     "description": "Münih'te sanat müzesi"
     },
     {
      "id": "way/150797531",
@@ -794,7 +1399,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Haus_der_Kunst_-_Munich_-_2013.jpg/500px-Haus_der_Kunst_-_Munich_-_2013.jpg",
+      "width": 500,
+      "height": 212,
+      "author": "Avda",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Haus_der_Kunst_-_Munich_-_2013.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Münih'te sanat müzesi"
     },
     {
      "id": "way/10053440",
@@ -810,7 +1426,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pinakothek_der_Moderne_SO-1.jpg/500px-Pinakothek_der_Moderne_SO-1.jpg",
+      "width": 500,
+      "height": 415,
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pinakothek_der_Moderne_SO-1.jpg",
+      "fullWidth": 2040
+     },
+     "description": "art museum in Munich, Germany"
     },
     {
      "id": "way/237426208",
@@ -826,7 +1453,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Lenbachhaus%2C_2023.jpg/500px-Lenbachhaus%2C_2023.jpg",
+      "width": 500,
+      "height": 228,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lenbachhaus,_2023.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Münih'te sanat müzesi"
     },
     {
      "id": "node/11099726845",
@@ -841,7 +1479,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Museum_Brandhorst_M%C3%BCnchen%2C_s%C3%BCdwestliche_Seite-7625.jpg/500px-Museum_Brandhorst_M%C3%BCnchen%2C_s%C3%BCdwestliche_Seite-7625.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_Brandhorst_M%C3%BCnchen,_s%C3%BCdwestliche_Seite-7625.jpg",
+      "fullWidth": 5088
+     },
+     "description": "museum in Munich, Germany"
     },
     {
      "id": "wikidata/Q707981",
@@ -853,7 +1502,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Staatliche_Antikensammlungen_M%C3%BCnchen.jpg/500px-Staatliche_Antikensammlungen_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 215,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Staatliche_Antikensammlungen_M%C3%BCnchen.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Münih'te antik sanat müzesi"
     },
     {
      "id": "way/85213217",
@@ -869,7 +1529,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Villa_Stuck_%28Munich%29_Regi51.JPG/500px-Villa_Stuck_%28Munich%29_Regi51.JPG",
+      "width": 500,
+      "height": 264,
+      "author": "M(e)ister Eiskalt derivative work: User:Regi51",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Stuck_(Munich)_Regi51.JPG",
+      "fullWidth": 4119
+     },
+     "description": "Münih'te sanat müzesi"
     },
     {
      "id": "way/280336045",
@@ -884,7 +1555,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/NS-Dokumentationszentrum_M%C3%BCnchen-7619.jpg/500px-NS-Dokumentationszentrum_M%C3%BCnchen-7619.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NS-Dokumentationszentrum_M%C3%BCnchen-7619.jpg",
+      "fullWidth": 3609
+     },
+     "description": "organization"
     },
     {
      "id": "way/27959434",
@@ -899,7 +1581,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/M%C3%BCnchen_Schack-Galerie.JPG/500px-M%C3%BCnchen_Schack-Galerie.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Maximilian Dörrbecker ( Chumwa )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Schack-Galerie.JPG",
+      "fullWidth": 2112
+     },
+     "description": "Art museum and art collection in Munich"
     },
     {
      "id": "node/5223300524",
@@ -914,7 +1607,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/MUC_SM%C3%84K_2013-06.jpg/500px-MUC_SM%C3%84K_2013-06.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bbb-Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MUC_SM%C3%84K_2013-06.jpg",
+      "fullWidth": 1697
+     },
+     "description": "archaeological museum in Munich"
     },
     {
      "id": "way/24164434",
@@ -929,7 +1633,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/M%C3%BCnchen_J%C3%BCdisches_Zentrum_und_J%C3%BCdisches_Museum.jpg/500px-M%C3%BCnchen_J%C3%BCdisches_Zentrum_und_J%C3%BCdisches_Museum.jpg",
+      "width": 500,
+      "height": 245,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_J%C3%BCdisches_Zentrum_und_J%C3%BCdisches_Museum.jpg",
+      "fullWidth": 2820
+     },
+     "description": "museum in Munich, Germany dedicated to Jewish history and culture"
     },
     {
      "id": "node/11933309402",
@@ -945,7 +1660,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/M%C3%BCnchner_Stadtmuseum_2022.jpg/500px-M%C3%BCnchner_Stadtmuseum_2022.jpg",
+      "width": 500,
+      "height": 253,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchner_Stadtmuseum_2022.jpg",
+      "fullWidth": 5100
+     },
+     "description": "museum"
     },
     {
      "id": "relation/4192267",
@@ -960,7 +1686,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2024-04-15_Arch%C3%A4ologische_Staatssammlung_nach_Wiederer%C3%B6ffnung_06.jpg/500px-2024-04-15_Arch%C3%A4ologische_Staatssammlung_nach_Wiederer%C3%B6ffnung_06.jpg",
+      "width": 500,
+      "height": 286,
+      "author": "Burkhard Mücke",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2024-04-15_Arch%C3%A4ologische_Staatssammlung_nach_Wiederer%C3%B6ffnung_06.jpg",
+      "fullWidth": 5100
+     },
+     "description": "museum of prehistory in Munich, Germany"
     },
     {
      "id": "node/656253064",
@@ -975,7 +1712,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Muesterneckerstr215042017c90b.jpg/500px-Muesterneckerstr215042017c90b.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Fentriss",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muesterneckerstr215042017c90b.jpg",
+      "fullWidth": 4036
+     },
+     "description": "museum in Munich, Germany"
     },
     {
      "id": "way/25695553",
@@ -990,7 +1738,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/10-04-2023_Museum_f%C3%BCnf_Kontinente_08.jpg/500px-10-04-2023_Museum_f%C3%BCnf_Kontinente_08.jpg",
+      "width": 500,
+      "height": 235,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:10-04-2023_Museum_f%C3%BCnf_Kontinente_08.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Almanya'da etnoloji müzesi"
     },
     {
      "id": "node/2866790927",
@@ -1004,7 +1763,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_%28Geb%C3%A4uder%C3%BCckseite%29.JPG/500px-M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_%28Geb%C3%A4uder%C3%BCckseite%29.JPG",
+      "width": 500,
+      "height": 262,
+      "author": "Maximilian Dörrbecker ( Chumwa )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_(Geb%C3%A4uder%C3%BCckseite).JPG",
+      "fullWidth": 2800
+     },
+     "description": "collection of drawings, prints and engravings"
     },
     {
      "id": "way/28026044",
@@ -1019,7 +1789,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Mueriwastr1030042017c90.jpg/500px-Mueriwastr1030042017c90.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Fentriss",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mueriwastr1030042017c90.jpg",
+      "fullWidth": 6048
+     },
+     "description": "Münih'te bilim müzesi"
     },
     {
      "id": "node/307738674",
@@ -1034,7 +1815,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Jagd-_und_Fischereimuseum_in_M%C3%BCnchen%2C_Jagdwaffen.JPG/500px-Jagd-_und_Fischereimuseum_in_M%C3%BCnchen%2C_Jagdwaffen.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "High Contrast",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jagd-_und_Fischereimuseum_in_M%C3%BCnchen,_Jagdwaffen.JPG",
+      "fullWidth": 3540
+     },
+     "description": "museum in Munich, Bavaria, Germany"
     },
     {
      "id": "way/18956760",
@@ -1049,7 +1841,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Alpines_Museum_M%C3%BCnchen_neu_04.jpg/500px-Alpines_Museum_M%C3%BCnchen_neu_04.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "Burkhard Mücke",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alpines_Museum_M%C3%BCnchen_neu_04.jpg",
+      "fullWidth": 5100
+     },
+     "description": "museum in Munich"
     },
     {
      "id": "node/11935589855",
@@ -1063,7 +1866,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/GraphyArchy_-_Wikipedia_00039.jpg/500px-GraphyArchy_-_Wikipedia_00039.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "GraphyArchy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GraphyArchy_-_Wikipedia_00039.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Design Museum"
     },
     {
      "id": "node/2497837304",
@@ -1078,7 +1892,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_%28Geb%C3%A4udefassade%29.JPG/500px-M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_%28Geb%C3%A4udefassade%29.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Maximilian Dörrbecker ( Chumwa )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Museum_f%C3%BCr_Abg%C3%BCsse_klassischer_Bildwerke_(Geb%C3%A4udefassade).JPG",
+      "fullWidth": 2112
+     },
+     "description": "archaeological Museum in Munich"
     },
     {
      "id": "node/953031130",
@@ -1092,7 +1917,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Kartoffelmuseum_Muenchen-1.jpg/500px-Kartoffelmuseum_Muenchen-1.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kartoffelmuseum_Muenchen-1.jpg",
+      "fullWidth": 1200
+     },
+     "description": "museum in Munich"
     },
     {
      "id": "node/261030708",
@@ -1107,7 +1943,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Residenz_M%C3%BCnchen_K%C3%B6nigsbau.jpg/500px-Residenz_M%C3%BCnchen_K%C3%B6nigsbau.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Luidger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Residenz_M%C3%BCnchen_K%C3%B6nigsbau.jpg",
+      "fullWidth": 794
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "way/471620092",
@@ -1122,7 +1969,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Deutsches_Museum_Verkehrszentrum%2C_2021.jpg/500px-Deutsches_Museum_Verkehrszentrum%2C_2021.jpg",
+      "width": 500,
+      "height": 280,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Verkehrszentrum,_2021.jpg",
+      "fullWidth": 5500
+     },
+     "description": "Almanya'daki ulaşım müzesi"
     },
     {
      "id": "node/307734040",
@@ -1137,7 +1995,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Geologisches_Museum_M%C3%BCnchen.jpg/500px-Geologisches_Museum_M%C3%BCnchen.jpg",
+      "width": 500,
+      "height": 227,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geologisches_Museum_M%C3%BCnchen.jpg",
+      "fullWidth": 5100
+     },
+     "description": "museum"
     },
     {
      "id": "node/3754434962",
@@ -1150,7 +2019,8 @@
      "wikidataId": "Q1304064",
      "kinds": [
       "organization"
-     ]
+     ],
+     "description": "Volunteer art association"
     },
     {
      "id": "node/5951675866",
@@ -1165,7 +2035,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Museum_of_Urban_and_Contemporary_Art_Muenchen-1.jpg/500px-Museum_of_Urban_and_Contemporary_Art_Muenchen-1.jpg",
+      "width": 500,
+      "height": 347,
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Urban_and_Contemporary_Art_Muenchen-1.jpg",
+      "fullWidth": 5000
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/249814994",
@@ -1180,7 +2061,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/2023-02-12_Museum_Mineralogia_M%C3%BCnchen_01.jpg/500px-2023-02-12_Museum_Mineralogia_M%C3%BCnchen_01.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2023-02-12_Museum_Mineralogia_M%C3%BCnchen_01.jpg",
+      "fullWidth": 5100
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/307729970",
@@ -1195,7 +2087,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/M%C3%BCnchen_Theatermuseum_%28Ansicht_mit_Hofgartenarkaden%29.JPG/500px-M%C3%BCnchen_Theatermuseum_%28Ansicht_mit_Hofgartenarkaden%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Maximilian Dörrbecker ( Chumwa )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Theatermuseum_(Ansicht_mit_Hofgartenarkaden).JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum"
     },
     {
      "id": "node/2205792764",
@@ -1210,7 +2113,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kunsthalle_der_Hypo-Kulturstiftung_innen.jpg/500px-Kunsthalle_der_Hypo-Kulturstiftung_innen.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Kunsthalle der Hypo-Kulturstiftung",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kunsthalle_der_Hypo-Kulturstiftung_innen.jpg",
+      "fullWidth": 1800
+     },
+     "description": "museum"
     },
     {
      "id": "node/344494568",
@@ -1225,7 +2139,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/2021_Juli-StammtischTour_Valentin-Mus%C3%A4um_02.jpg/500px-2021_Juli-StammtischTour_Valentin-Mus%C3%A4um_02.jpg",
+      "width": 500,
+      "height": 892,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2021_Juli-StammtischTour_Valentin-Mus%C3%A4um_02.jpg",
+      "fullWidth": 2872
+     },
+     "description": "museum in Munich, Germany"
     },
     {
      "id": "node/6258911966",
@@ -1233,7 +2158,17 @@
      "lat": 48.15099,
      "lon": 11.58167,
      "wikipediaCount": 2,
-     "wikidataId": "Q414486"
+     "wikidataId": "Q414486",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/AkademieGalerie_Muenchen_Ausstellungsraum.JPG/500px-AkademieGalerie_Muenchen_Ausstellungsraum.JPG",
+      "width": 500,
+      "height": 351,
+      "author": "O DM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AkademieGalerie_Muenchen_Ausstellungsraum.JPG",
+      "fullWidth": 2550
+     }
     },
     {
      "id": "way/34102628",
@@ -1248,7 +2183,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Amerikahaus_Muenchen-1.jpg/500px-Amerikahaus_Muenchen-1.jpg",
+      "width": 500,
+      "height": 354,
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amerikahaus_Muenchen-1.jpg",
+      "fullWidth": 1400
+     },
+     "description": "Münih'te bina"
     },
     {
      "id": "node/4217510193",
@@ -1263,7 +2209,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/M%C3%BCnchen_-_Alter_Hof_-_Landesstelle_f%C3%BCr_die_nichtstaatlichen_Museen_in_Bayern_-_Au%C3%9Fenansicht.jpg/500px-M%C3%BCnchen_-_Alter_Hof_-_Landesstelle_f%C3%BCr_die_nichtstaatlichen_Museen_in_Bayern_-_Au%C3%9Fenansicht.jpg",
+      "width": 500,
+      "height": 282,
+      "author": "User:Mattes",
+      "license": "CC BY 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Alter_Hof_-_Landesstelle_f%C3%BCr_die_nichtstaatlichen_Museen_in_Bayern_-_Au%C3%9Fenansicht.jpg",
+      "fullWidth": 3648
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/704397712",
@@ -1274,7 +2231,17 @@
      "website": "https://www.weisse-rose-stiftung.de/denkstaette-weisse-rose-am-lichthof-der-lmu-muenchen/",
      "openingHours": "Mo-Fr 10:30-16:30; Sa 11:30-16:00; PH off",
      "wikipediaCount": 1,
-     "wikidataId": "Q55521383"
+     "wikidataId": "Q55521383",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Visitors_Walk_Past_White_Rose_Poster_at_Entrance_to_Main_Building_of_Ludwig-Maximilians-Universitat_-_Munich_-_Germany.jpg/500px-Visitors_Walk_Past_White_Rose_Poster_at_Entrance_to_Main_Building_of_Ludwig-Maximilians-Universitat_-_Munich_-_Germany.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Adam Jones, Ph.D.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Visitors_Walk_Past_White_Rose_Poster_at_Entrance_to_Main_Building_of_Ludwig-Maximilians-Universitat_-_Munich_-_Germany.jpg",
+      "fullWidth": 3648
+     }
     }
    ]
   },
@@ -1294,7 +2261,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Bavaria_statue_in_Munich.JPG/500px-Bavaria_statue_in_Munich.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Stylianos Karavias ( Hoverfish on en.wikipedia )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bavaria_statue_in_Munich.JPG",
+      "fullWidth": 768
+     },
+     "description": "Statue of Bavaria in Munich, Germany"
     },
     {
      "id": "node/12867058771",
@@ -1448,7 +2426,17 @@
      "openingHours": "Mo-Th 11:30-23:00, Fr,Sa 11:30-24:00, Su,PH 11:30-22:00",
      "cuisine": "bavarian",
      "wikidataId": "Q116785116",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/2023-03-03_Gasthaus_Atzinger_in_Schwabing_07.jpg/500px-2023-03-03_Gasthaus_Atzinger_in_Schwabing_07.jpg",
+      "width": 500,
+      "height": 268,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2023-03-03_Gasthaus_Atzinger_in_Schwabing_07.jpg",
+      "fullWidth": 5100
+     }
     },
     {
      "id": "node/295993624",
@@ -1493,7 +2481,18 @@
      "openingHours": "Mo-Sa 11:00-23:59; Su 10:00-15:00",
      "cuisine": "bavarian",
      "wikidataId": "Q41175885",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Neuhauser_Str._27_Augustinerbraeu_Muenchen-1.jpg/500px-Neuhauser_Str._27_Augustinerbraeu_Muenchen-1.jpg",
+      "width": 500,
+      "height": 658,
+      "author": "Rufus46",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Neuhauser_Str._27_Augustinerbraeu_Muenchen-1.jpg",
+      "fullWidth": 1900
+     },
+     "description": "building in Germany"
     },
     {
      "id": "node/656248274",
@@ -2548,7 +3547,18 @@
      "lon": 11.57014,
      "address": "Maximiliansplatz 5",
      "website": "https://www.rote-sonne.com/",
-     "wikidataId": "Q2168249"
+     "wikidataId": "Q2168249",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Rote_Sonne_Nightclub_Munich_2.jpg/500px-Rote_Sonne_Nightclub_Munich_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mahmut",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rote_Sonne_Nightclub_Munich_2.jpg",
+      "fullWidth": 1024
+     },
+     "description": "techno club in Munich"
     },
     {
      "id": "node/1135836178",

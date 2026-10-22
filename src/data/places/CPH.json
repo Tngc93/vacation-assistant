@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "CPH",
- "fetchedAt": "2026-10-18T16:26:52.513Z",
+ "fetchedAt": "2026-10-22T05:42:49.798Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q33003",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Denmark_copenhagen_parken_stadium.jpg/500px-Denmark_copenhagen_parken_stadium.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Denmark_copenhagen_parken_stadium.jpg",
+      "fullWidth": 6782
+     },
+     "description": "Danimarka'da bulunan bir stadyum"
     },
     {
      "id": "way/250989045",
@@ -67,19 +78,41 @@
       "adminArea",
       "country",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Christiania_depuis_Notre_Sauveur.jpg/500px-Christiania_depuis_Notre_Sauveur.jpg",
+      "width": 500,
+      "height": 755,
+      "author": "Bruno Jargot",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christiania_depuis_Notre_Sauveur.jpg",
+      "fullWidth": 3608
+     },
+     "description": "Kopenhag'da bulunan mikro ulus"
     },
     {
      "id": "way/378106484",
      "name": "Amalienborg",
      "lat": 55.68398,
      "lon": 12.59314,
-     "wikipediaCount": 43,
+     "wikipediaCount": 44,
      "wikidataId": "Q211053",
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Amalienborg_panorama_juli_2013.jpg/500px-Amalienborg_panorama_juli_2013.jpg",
+      "width": 500,
+      "height": 110,
+      "author": "Janeway666",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amalienborg_panorama_juli_2013.jpg",
+      "fullWidth": 4096
+     },
+     "description": "Palace and home of the Danish royal family in Copenhagen"
     },
     {
      "id": "way/25992657",
@@ -92,7 +125,18 @@
      "kinds": [
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Christiansborg_Slot.jpg/500px-Christiansborg_Slot.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "eimoberg from Changwon, South Korea",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christiansborg_Slot.jpg",
+      "fullWidth": 2272
+     },
+     "description": "Danimarka'nın Kopenhag merkezinde bir saray"
     },
     {
      "id": "wikidata/Q110289",
@@ -106,7 +150,18 @@
       "attraction",
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/CopenhagenTivoliEntrance.jpg/500px-CopenhagenTivoliEntrance.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Elgaard",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CopenhagenTivoliEntrance.jpg",
+      "fullWidth": 1600
+     },
+     "description": "amusement park in Copenhagen, Denmark"
     },
     {
      "id": "way/25524592",
@@ -122,7 +177,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Rosenborg_Castle_Copenhagen_1.jpg/500px-Rosenborg_Castle_Copenhagen_1.jpg",
+      "width": 500,
+      "height": 718,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rosenborg_Castle_Copenhagen_1.jpg",
+      "fullWidth": 3620
+     },
+     "description": "palace in Copenhagen"
     },
     {
      "id": "way/25466204",
@@ -134,7 +200,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/B%C3%B8rsen_Copenhagen_Denmark.jpg/500px-B%C3%B8rsen_Copenhagen_Denmark.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:B%C3%B8rsen_Copenhagen_Denmark.jpg",
+      "fullWidth": 5752
+     },
+     "description": "Kopenhag'daki bina"
     },
     {
      "id": "way/1088494374",
@@ -149,7 +226,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Copenhagen_Opera_House_2014_04.jpg/500px-Copenhagen_Opera_House_2014_04.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Julian Herzog ( Website )",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_Opera_House_2014_04.jpg",
+      "fullWidth": 3400
+     },
+     "description": "opera house in Copenhagen, Denmark"
     },
     {
      "id": "relation/6476337",
@@ -161,7 +249,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Nyhavn_Copenhagen_2.jpg/500px-Nyhavn_Copenhagen_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nyhavn_Copenhagen_2.jpg",
+      "fullWidth": 5400
+     },
+     "description": "street, canal and district in Copenhagen"
     },
     {
      "id": "way/1011492033",
@@ -179,7 +278,18 @@
       "museum",
       "organization",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Copenhagen_-_Rundet%C3%A5rn_-_2013.jpg/500px-Copenhagen_-_Rundet%C3%A5rn_-_2013.jpg",
+      "width": 500,
+      "height": 786,
+      "author": "Avda",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_-_Rundet%C3%A5rn_-_2013.jpg",
+      "fullWidth": 1302
+     },
+     "description": "17th-century tower located in central Copenhagen, Denmark"
     },
     {
      "id": "way/25524833",
@@ -192,7 +302,18 @@
      "wikidataId": "Q1321231",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Frederik%27s_Church%2C_Copenhagen%2C_20220617_0853_6680.jpg/500px-Frederik%27s_Church%2C_Copenhagen%2C_20220617_0853_6680.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frederik%27s_Church,_Copenhagen,_20220617_0853_6680.jpg",
+      "fullWidth": 2361
+     },
+     "description": "church in Copenhagen"
     },
     {
      "id": "wikidata/Q1495052",
@@ -205,7 +326,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/K%C3%B8benhavns_Hovedbaneg%C3%A5rd%2C_2019_%2801%29.jpg/500px-K%C3%B8benhavns_Hovedbaneg%C3%A5rd%2C_2019_%2801%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B8benhavns_Hovedbaneg%C3%A5rd,_2019_(01).jpg",
+      "fullWidth": 5382
+     },
+     "description": "Danimarka'da bir tren istasyonu"
     },
     {
      "id": "way/25607908",
@@ -218,7 +350,18 @@
      "wikidataId": "Q29157",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Copenhagen_-_Church_of_Our_Saviour_-_2013.jpg/500px-Copenhagen_-_Church_of_Our_Saviour_-_2013.jpg",
+      "width": 500,
+      "height": 778,
+      "author": "Avda",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_-_Church_of_Our_Saviour_-_2013.jpg",
+      "fullWidth": 2785
+     },
+     "description": "church in Copenhagen"
     },
     {
      "id": "way/25451190",
@@ -231,7 +374,18 @@
      "wikidataId": "Q1451811",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Rundet%C3%A5rn_view_2_new_version.jpg/500px-Rundet%C3%A5rn_view_2_new_version.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Thue",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Rundet%C3%A5rn_view_2_new_version.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rundet%C3%A5rn_view_2_new_version.jpg",
+      "fullWidth": 2272
+     },
+     "description": "cathedral of Copenhagen and the National Cathedral of Denmark"
     },
     {
      "id": "way/25466133",
@@ -247,7 +401,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Royal_Danish_Theatre%2C_Copenhagen.jpg/500px-Royal_Danish_Theatre%2C_Copenhagen.jpg",
+      "width": 500,
+      "height": 396,
+      "author": "Axel Kuhlmann",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Royal_Danish_Theatre,_Copenhagen.jpg",
+      "fullWidth": 3565
+     },
+     "description": "theater in Denmark"
     },
     {
      "id": "relation/52142",
@@ -260,7 +425,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/K%C3%B8benhavns_R%C3%A5dhus_2013_%28cropped%29.jpg/500px-K%C3%B8benhavns_R%C3%A5dhus_2013_%28cropped%29.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Jenny Andersson / News Oresund",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B8benhavns_R%C3%A5dhus_2013_(cropped).jpg",
+      "fullWidth": 3181
+     },
+     "description": "headquarters of the municipal council of Copenhagen"
     },
     {
      "id": "wikidata/Q1440151",
@@ -272,7 +448,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Porcelainsfabrik.png",
+      "width": 500,
+      "height": 486,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Porcelainsfabrik.png",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porcelainsfabrik.png",
+      "fullWidth": 440
+     },
+     "description": "Danish manufacturer of porcelain products"
     },
     {
      "id": "way/175208408",
@@ -285,7 +472,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Kastellet_aerial.jpg/500px-Kastellet_aerial.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CucombreLibre from New York, NY, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kastellet_aerial.jpg",
+      "fullWidth": 3958
+     },
+     "description": "star fort in Copenhagen"
     },
     {
      "id": "relation/55955",
@@ -297,7 +495,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Frederiksberg_Palace_in_Frederiksberg%2C_Denmark%2C_20220617_1624_6907.jpg/500px-Frederiksberg_Palace_in_Frederiksberg%2C_Denmark%2C_20220617_1624_6907.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frederiksberg_Palace_in_Frederiksberg,_Denmark,_20220617_1624_6907.jpg",
+      "fullWidth": 4361
+     },
+     "description": "former royal palace in Copenhagen"
     },
     {
      "id": "relation/1629331",
@@ -305,7 +514,18 @@
      "lat": 55.67835,
      "lon": 12.57716,
      "wikipediaCount": 19,
-     "wikidataId": "Q1347634"
+     "wikidataId": "Q1347634",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Str%C3%B8get_-_Gucci_shop_IM8165_C.JPG/500px-Str%C3%B8get_-_Gucci_shop_IM8165_C.JPG",
+      "width": 500,
+      "height": 342,
+      "author": "Anneli Salo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Str%C3%B8get_-_Gucci_shop_IM8165_C.JPG",
+      "fullWidth": 4076
+     },
+     "description": "pedestrian zone"
     },
     {
      "id": "way/3098803",
@@ -319,7 +539,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Botanisk_have_drivhus_1.jpg/500px-Botanisk_have_drivhus_1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Thue",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Botanisk_have_drivhus_1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Botanisk_have_drivhus_1.jpg",
+      "fullWidth": 5184
+     },
+     "description": "botanical garden"
     },
     {
      "id": "wikidata/Q952817",
@@ -328,7 +559,18 @@
      "lat": 55.68931,
      "lon": 12.59763,
      "wikipediaCount": 17,
-     "wikidataId": "Q952817"
+     "wikidataId": "Q952817",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Gefionspringvandet%2C_K%C3%B8benhavn_%2802%29.jpg/500px-Gefionspringvandet%2C_K%C3%B8benhavn_%2802%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jiří Komárek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gefionspringvandet,_K%C3%B8benhavn_(02).jpg",
+      "fullWidth": 4310
+     },
+     "description": "Çeşme"
     },
     {
      "id": "way/304697944",
@@ -341,7 +583,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_Circle_Line_being_built_-_Kongens_Nytorv.jpg/500px-City_Circle_Line_being_built_-_Kongens_Nytorv.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Dragør Luftfoto ( http://www.dragoerluftfoto.dk/ )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:City_Circle_Line_being_built_-_Kongens_Nytorv.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Kopenhag'da sokak"
     },
     {
      "id": "wikidata/Q849232",
@@ -349,7 +602,18 @@
      "lat": 55.6938,
      "lon": 12.548,
      "wikipediaCount": 17,
-     "wikidataId": "Q849232"
+     "wikidataId": "Q849232",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Ungdomshuset.jpg/500px-Ungdomshuset.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "EPO",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ungdomshuset.jpg",
+      "fullWidth": 1704
+     },
+     "description": "Kopenhag'da bina"
     },
     {
      "id": "wikidata/Q800650",
@@ -360,7 +624,18 @@
      "wikidataId": "Q800650",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/DR_Byen_Station_%C3%98restads_Boulevard.JPG/500px-DR_Byen_Station_%C3%98restads_Boulevard.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Froztbyte",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DR_Byen_Station_%C3%98restads_Boulevard.JPG",
+      "fullWidth": 2048
+     },
+     "description": "metro station in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q1238512",
@@ -372,7 +647,18 @@
      "wikidataId": "Q1238512",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/SanktAnsgar01.jpg/500px-SanktAnsgar01.jpg",
+      "width": 500,
+      "height": 746,
+      "author": "Jørgen Jespersen",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SanktAnsgar01.jpg",
+      "fullWidth": 1915
+     },
+     "description": "catholic cathedral in Copenhagen"
     },
     {
      "id": "wikidata/Q2504988",
@@ -383,7 +669,18 @@
      "wikidataId": "Q2504988",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Det_Gule_Palae_Copenhagen.jpg/500px-Det_Gule_Palae_Copenhagen.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Det_Gule_Palae_Copenhagen.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Det_Gule_Palae_Copenhagen.jpg",
+      "fullWidth": 2344
+     },
+     "description": "building in Copenhagen Municipality, Denmark"
     },
     {
      "id": "way/264362254",
@@ -394,7 +691,18 @@
      "wikidataId": "Q284914",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Holmens_Kirke.jpg/500px-Holmens_Kirke.jpg",
+      "width": 500,
+      "height": 448,
+      "author": "Grayswoodsurrey",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Holmens_Kirke.jpg",
+      "fullWidth": 3468
+     },
+     "description": "Church of Denmark church building in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q1783715",
@@ -405,7 +713,18 @@
      "wikidataId": "Q1783715",
      "kinds": [
       "musicVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/K%C3%B8benhavn_-_DR_Koncerthuset_%2830964385486%29.jpg/500px-K%C3%B8benhavn_-_DR_Koncerthuset_%2830964385486%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Fred Romero from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B8benhavn_-_DR_Koncerthuset_(30964385486).jpg",
+      "fullWidth": 5184
+     },
+     "description": "Kopenhag'da bina"
     },
     {
      "id": "wikidata/Q635929",
@@ -417,7 +736,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%C3%98sterport_Station_2005-01.jpg/500px-%C3%98sterport_Station_2005-01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%98sterport_Station_2005-01.jpg",
+      "fullWidth": 2272
+     },
+     "description": "railway station in Copenhagen Municipality, Denmark"
     },
     {
      "id": "way/549543686",
@@ -430,7 +760,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Copenhagen_Town_Hall_Square.jpg/500px-Copenhagen_Town_Hall_Square.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bill Ebbesen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_Town_Hall_Square.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_Town_Hall_Square.jpg",
+      "fullWidth": 4256
+     },
+     "description": "Kopenhag'da sokak"
     },
     {
      "id": "wikidata/Q1280223",
@@ -442,7 +783,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Charlottenborg_K%C3%B8benhavn.jpg/500px-Charlottenborg_K%C3%B8benhavn.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Charlottenborg_K%C3%B8benhavn.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Charlottenborg_K%C3%B8benhavn.jpg",
+      "fullWidth": 1944
+     },
+     "description": "château"
     },
     {
      "id": "way/26363619",
@@ -454,7 +806,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/THE_GREAT_SYNAGOGUE%2CCOPENHAGEN%2C_DENMARK.jpg/500px-THE_GREAT_SYNAGOGUE%2CCOPENHAGEN%2C_DENMARK.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "JERRYE & ROY KLOTZ MD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:THE_GREAT_SYNAGOGUE,COPENHAGEN,_DENMARK.jpg",
+      "fullWidth": 3000
+     },
+     "description": "main synagogue of the Jewish community in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q11963844",
@@ -465,7 +828,18 @@
      "wikidataId": "Q11963844",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Circle_Bridge%2C_Copenhagen_2017-08-16_2.jpg/500px-Circle_Bridge%2C_Copenhagen_2017-08-16_2.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Colin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Circle_Bridge,_Copenhagen_2017-08-16_2.jpg",
+      "fullWidth": 4945
+     },
+     "description": "bridge in Copenhagen"
     },
     {
      "id": "wikidata/Q2879779",
@@ -477,7 +851,18 @@
      "wikidataId": "Q2879779",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Forum_Copenhagen.jpg/500px-Forum_Copenhagen.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Forum_Copenhagen.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Forum_Copenhagen.jpg",
+      "fullWidth": 3368
+     },
+     "description": "indoor arena"
     },
     {
      "id": "way/133104582",
@@ -488,7 +873,18 @@
      "wikidataId": "Q1602873",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Helligaandskirken_Copenhagen_corrected.jpg/500px-Helligaandskirken_Copenhagen_corrected.jpg",
+      "width": 500,
+      "height": 406,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Helligaandskirken_Copenhagen_corrected.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Helligaandskirken_Copenhagen_corrected.jpg",
+      "fullWidth": 2100
+     },
+     "description": "church in Copenhagen"
     },
     {
      "id": "wikidata/Q844957",
@@ -499,7 +895,18 @@
      "wikidataId": "Q844957",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/%C3%98stervold_Observatory_and_statue.jpg/500px-%C3%98stervold_Observatory_and_statue.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Olivier Bruchez from Lausanne, Switzerland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%98stervold_Observatory_and_statue.jpg",
+      "fullWidth": 5472
+     },
+     "description": "former astronomical observatory of the University of Copenhagen in Denmark"
     },
     {
      "id": "wikidata/Q1698446",
@@ -512,7 +919,18 @@
       "business",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/SAS_Royal_Hotel%2C_Copenhagen%2C_1955-1960.jpg/500px-SAS_Royal_Hotel%2C_Copenhagen%2C_1955-1960.jpg",
+      "width": 500,
+      "height": 676,
+      "author": "seier+seier",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SAS_Royal_Hotel,_Copenhagen,_1955-1960.jpg",
+      "fullWidth": 2411
+     },
+     "description": "Kopenhag'da otel"
     },
     {
      "id": "wikidata/Q3357360",
@@ -524,7 +942,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Rigshospitalet_Copenhagen_2005-11.jpg/500px-Rigshospitalet_Copenhagen_2005-11.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "No machine-readable author provided. Heje assumed (based on copyright claims).",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rigshospitalet_Copenhagen_2005-11.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Kopenhag, Danimarka'daki hastane"
     },
     {
      "id": "wikidata/Q1898947",
@@ -532,7 +961,18 @@
      "lat": 55.685,
      "lon": 12.579,
      "wikipediaCount": 13,
-     "wikidataId": "Q1898947"
+     "wikidataId": "Q1898947",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kbh_Rosenborg_Slott_2.jpg/500px-Kbh_Rosenborg_Slott_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Christian Bickel",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kbh_Rosenborg_Slott_2.jpg",
+      "fullWidth": 3264
+     },
+     "description": "park in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q2136395",
@@ -545,7 +985,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/H._C._Andersens_Blvd._Tivoli.jpg/500px-H._C._Andersens_Blvd._Tivoli.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:H._C._Andersens_Blvd._Tivoli.jpg",
+      "fullWidth": 5140
+     },
+     "description": "boulevard in Copenhagen"
     },
     {
      "id": "wikidata/Q2277684",
@@ -554,7 +1005,18 @@
      "lat": 55.68889,
      "lon": 12.56694,
      "wikipediaCount": 12,
-     "wikidataId": "Q2277684"
+     "wikidataId": "Q2277684",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Copenhagen_Lakes_%28aerial_view%29.jpg/500px-Copenhagen_Lakes_%28aerial_view%29.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Bob Collowân",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_Lakes_(aerial_view).jpg",
+      "fullWidth": 2848
+     },
+     "description": "lake in Denmark"
     },
     {
      "id": "wikidata/Q3580820",
@@ -565,7 +1027,18 @@
      "wikidataId": "Q3580820",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/St_Albans_Church_Copenhagen_%281%29.jpg/500px-St_Albans_Church_Copenhagen_%281%29.jpg",
+      "width": 500,
+      "height": 403,
+      "author": "Chris06",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Albans_Church_Copenhagen_(1).jpg",
+      "fullWidth": 2979
+     },
+     "description": "Anglican church in Copenhagen"
     },
     {
      "id": "wikidata/Q1033809",
@@ -577,7 +1050,18 @@
      "wikidataId": "Q1033809",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Trinitatis_Kirke_Copenhagen.jpg/500px-Trinitatis_Kirke_Copenhagen.jpg",
+      "width": 500,
+      "height": 576,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Trinitatis_Kirke_Copenhagen.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trinitatis_Kirke_Copenhagen.jpg",
+      "fullWidth": 2336
+     },
+     "description": "Kopenhag'da kilise"
     },
     {
      "id": "way/40106991",
@@ -589,7 +1073,18 @@
      "wikidataId": "Q1082978",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Christians_Kirke_Copenhagen.jpg/500px-Christians_Kirke_Copenhagen.jpg",
+      "width": 500,
+      "height": 610,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Christians_Kirke_Copenhagen.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christians_Kirke_Copenhagen.jpg",
+      "fullWidth": 1950
+     },
+     "description": "church in the Christianshavn district of Copenhagen, Denmark"
     },
     {
      "id": "way/26436022",
@@ -601,7 +1096,18 @@
      "wikidataId": "Q1433264",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Sankt_Petri_Kirke_%28N%C3%B8rregade%29.jpg/500px-Sankt_Petri_Kirke_%28N%C3%B8rregade%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Orf3us",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sankt_Petri_Kirke_(N%C3%B8rregade).jpg",
+      "fullWidth": 3000
+     },
+     "description": "church in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q2562959",
@@ -613,7 +1119,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Det_Ny_Teater_-_front_%282015%29.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Det Ny Teater",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Det_Ny_Teater_-_front_(2015).jpg",
+      "fullWidth": 250
+     },
+     "description": "theatre in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q1155571",
@@ -621,7 +1138,18 @@
      "lat": 55.65798,
      "lon": 12.59098,
      "wikipediaCount": 11,
-     "wikidataId": "Q1155571"
+     "wikidataId": "Q1155571",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/DR_Byen.jpg/500px-DR_Byen.jpg",
+      "width": 500,
+      "height": 372,
+      "author": "Frank B. Daugaard",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DR_Byen.jpg",
+      "fullWidth": 993
+     },
+     "description": "building in Copenhagen, Denmark"
     },
     {
      "id": "wikidata/Q944453",
@@ -633,7 +1161,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Langebro_-RMS_Copenhagen.jpg/500px-Langebro_-RMS_Copenhagen.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sigfrid Lundberg from Lund, Sweden",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Langebro_-RMS_Copenhagen.jpg",
+      "fullWidth": 4032
+     },
+     "description": "road bridge"
     },
     {
      "id": "way/25701472",
@@ -646,7 +1185,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Royal_Danish_Playhouse_Copenhagen.jpg/500px-Royal_Danish_Playhouse_Copenhagen.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Royal_Danish_Playhouse_Copenhagen.jpg",
+      "fullWidth": 5400
+     },
+     "description": "theatre in Copenhagen"
     },
     {
      "id": "node/12961134226",
@@ -657,7 +1207,18 @@
      "wikidataId": "Q3071851",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Jens_Olsens_front.jpg/500px-Jens_Olsens_front.jpg",
+      "width": 500,
+      "height": 380,
+      "author": "No machine-readable author provided. Alphalphi~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jens_Olsens_front.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jens_Olsens_front.jpg",
+      "fullWidth": 2196
+     },
+     "description": "advanced astronomical clock"
     },
     {
      "id": "way/24721845",
@@ -668,32 +1229,18 @@
      "wikidataId": "Q4572749",
      "kinds": [
       "square"
-     ]
-    },
-    {
-     "id": "way/29416223",
-     "name": "HDMS Peder Skram",
-     "lat": 55.68853,
-     "lon": 12.60483,
-     "wikipediaCount": 8,
-     "wikidataId": "Q3378551",
-     "kinds": [
-      "museum",
-      "organization"
-     ]
-    },
-    {
-     "id": "way/27226058",
-     "name": "Frihedsstøtten",
-     "lat": 55.6742,
-     "lon": 12.56329,
-     "website": "http://www.kulturarv.dk/1001fortaellinger/da_DK/frihedsstoetten-vesterbrogade-koebenhavn",
-     "wikipediaCount": 7,
-     "wikidataId": "Q3441954",
-     "kinds": [
-      "heritage",
-      "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Amagertorv_2011-06.jpg/500px-Amagertorv_2011-06.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Tanya Dedyukhina",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amagertorv_2011-06.jpg",
+      "fullWidth": 3264
+     },
+     "description": "square in central Copenhagen, Denmark"
     }
    ]
   },
@@ -714,7 +1261,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Nationalmuseet_kbh.jpg/500px-Nationalmuseet_kbh.jpg",
+      "width": 500,
+      "height": 233,
+      "author": "No machine-readable author provided. Nico-dk assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nationalmuseet_kbh.jpg",
+      "fullWidth": 800
+     },
+     "description": "Denmark’s largest museum of cultural history"
     },
     {
      "id": "way/25451395",
@@ -729,7 +1287,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Statens_Museum_for_Kunst%2C_K%C3%B8benhavn.jpg/500px-Statens_Museum_for_Kunst%2C_K%C3%B8benhavn.jpg",
+      "width": 500,
+      "height": 250,
+      "author": "Jiří Komárek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Statens_Museum_for_Kunst,_K%C3%B8benhavn.jpg",
+      "fullWidth": 4119
+     },
+     "description": "art museum in Copenhagen, Denmark"
     },
     {
      "id": "relation/1322262",
@@ -744,7 +1313,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Main_entrance%2C_Ny_Carlsberg_Glyptotek.jpg/500px-Main_entrance%2C_Ny_Carlsberg_Glyptotek.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Main_entrance,_Ny_Carlsberg_Glyptotek.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Carl Jacobsen tarafından Kopenhag'da kurulan müze"
     },
     {
      "id": "relation/2351676",
@@ -759,7 +1339,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Thorvaldsens_Museum_back_01.jpg/500px-Thorvaldsens_Museum_back_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Leif Jørgensen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Thorvaldsens_Museum_back_01.jpg",
+      "fullWidth": 2517
+     },
+     "description": "museum in Copenhagen"
     },
     {
      "id": "way/25451373",
@@ -773,7 +1364,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Den_Hirschsprungske_Samling_-_DSC07321.JPG/500px-Den_Hirschsprungske_Samling_-_DSC07321.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Den_Hirschsprungske_Samling_-_DSC07321.JPG",
+      "fullWidth": 4320
+     },
+     "description": "art museum in Copenhagen, Denmark"
     },
     {
      "id": "relation/5693118",
@@ -788,7 +1390,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Designmuseum_Danmark.jpg/500px-Designmuseum_Danmark.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Patti Manolis",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Designmuseum_Danmark.jpg",
+      "fullWidth": 3264
+     },
+     "description": "art museum"
     },
     {
      "id": "wikidata/Q1201043",
@@ -801,7 +1414,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Cinemateket_01.jpg/500px-Cinemateket_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Leif Jørgensen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cinemateket_01.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Danish government agency supporting the film industry"
     },
     {
      "id": "way/148223101",
@@ -817,7 +1441,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Overformynderiet_%28Vester_Voldgade%29.jpg/500px-Overformynderiet_%28Vester_Voldgade%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Lauren Friedman",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Overformynderiet_(Vester_Voldgade).jpg",
+      "fullWidth": 4912
+     },
+     "description": "historical museum in Copenhagen"
     },
     {
      "id": "node/1291394245",
@@ -831,7 +1466,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Davids_Samling.JPG/500px-Davids_Samling.JPG",
+      "width": 500,
+      "height": 366,
+      "author": "Orf3us",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Davids_Samling.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Davids_Samling.JPG",
+      "fullWidth": 2527
+     },
+     "description": "art museum in Copenhagen, Denmark"
     },
     {
      "id": "way/862967576",
@@ -845,7 +1491,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Geologisk_museum.jpg/500px-Geologisk_museum.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Geologisk_museum.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geologisk_museum.jpg",
+      "fullWidth": 1024
+     },
+     "description": "museum in Copenhagen, Denmark"
     },
     {
      "id": "way/25451113",
@@ -860,7 +1517,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Arsenal_Museum_Copenhagen_backend.jpg/500px-Arsenal_Museum_Copenhagen_backend.jpg",
+      "width": 500,
+      "height": 287,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Arsenal_Museum_Copenhagen_backend.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arsenal_Museum_Copenhagen_backend.jpg",
+      "fullWidth": 3223
+     },
+     "description": "Military museum"
     },
     {
      "id": "way/45894028",
@@ -874,7 +1542,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Arbejdermuseet_Copenhagen_courtyard.jpg/500px-Arbejdermuseet_Copenhagen_courtyard.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Arbejdermuseet_Copenhagen_courtyard.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arbejdermuseet_Copenhagen_courtyard.jpg",
+      "fullWidth": 3504
+     },
+     "description": "museum in Copenhagen"
     },
     {
      "id": "node/738986844",
@@ -888,7 +1567,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Dansk_joedisk_museum.JPG/500px-Dansk_joedisk_museum.JPG",
+      "width": 500,
+      "height": 368,
+      "author": "Orfeus",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dansk_joedisk_museum.JPG",
+      "fullWidth": 1400
+     },
+     "description": "museum in Copenhagen"
     },
     {
      "id": "way/113974090",
@@ -902,7 +1592,18 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Den_frie_Udstillings_bygning_K%C3%B8benhavn.jpg/500px-Den_frie_Udstillings_bygning_K%C3%B8benhavn.jpg",
+      "width": 500,
+      "height": 288,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Den_frie_Udstillings_bygning_K%C3%B8benhavn.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Den_frie_Udstillings_bygning_K%C3%B8benhavn.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Danish artists' association"
     },
     {
      "id": "node/283581117",
@@ -918,7 +1619,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Teatermuseet_Christiansborg.jpg/500px-Teatermuseet_Christiansborg.jpg",
+      "width": 500,
+      "height": 308,
+      "author": "Nico-dk ( talk ) 09:15, 12 March 2011 (UTC)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatermuseet_Christiansborg.jpg",
+      "fullWidth": 2531
+     },
+     "description": "Museum in Copenhagen, Denmark"
     },
     {
      "id": "way/166353794",
@@ -932,7 +1644,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cisternerne_Copenhagen_entrance_frontview.jpg/500px-Cisternerne_Copenhagen_entrance_frontview.jpg",
+      "width": 500,
+      "height": 598,
+      "author": "Ib Rasmussen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cisternerne_Copenhagen_entrance_frontview.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cisternerne_Copenhagen_entrance_frontview.jpg",
+      "fullWidth": 2336
+     },
+     "description": "Contemporary art space in Copenhagen, Denmark"
     },
     {
      "id": "node/4331285861",
@@ -946,7 +1669,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Nordatlantens_Brygge_01.jpg/500px-Nordatlantens_Brygge_01.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Paul May",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nordatlantens_Brygge_01.jpg",
+      "fullWidth": 2594
+     },
+     "description": "culture centre in Copenhagen, Denmark"
     },
     {
      "id": "way/150092019",
@@ -960,7 +1694,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Bakkehuset_1.JPG/500px-Bakkehuset_1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Ramblersen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bakkehuset_1.JPG",
+      "fullWidth": 2560
+     },
+     "description": "building in Copenhagen, Denmark"
     },
     {
      "id": "node/5936280185",
@@ -974,7 +1719,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/BLOX_Copenhagen_2019_08_05.jpg/500px-BLOX_Copenhagen_2019_08_05.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Manfred Werner (Tsui)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BLOX_Copenhagen_2019_08_05.jpg",
+      "fullWidth": 4800
+     },
+     "description": "communication and development centre"
     },
     {
      "id": "way/184070826",
@@ -988,7 +1744,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/H.C._%C3%98rsted_engine.JPG/500px-H.C._%C3%98rsted_engine.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Work With Sounds",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:H.C._%C3%98rsted_engine.JPG",
+      "fullWidth": 5184
+     },
+     "description": "museum in Copenhagen"
     },
     {
      "id": "node/894315602",
@@ -1003,7 +1770,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Medicinsk_Museion.jpg/500px-Medicinsk_Museion.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Orf3us",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Medicinsk_Museion.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum and research unit in Copenhagen, Denmark"
     },
     {
      "id": "way/104564097",
@@ -1016,7 +1794,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/CphLilleMolle.jpg/500px-CphLilleMolle.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Niels Elgaard Larsen - User: (WT-shared) Elgaard at wts wikivoyage",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CphLilleMolle.jpg",
+      "fullWidth": 2848
+     },
+     "description": "museum and former windmill in Christianshavn, Copenhagen"
     },
     {
      "id": "way/783475006",
@@ -1030,7 +1819,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Frihedsmuseet_01.jpg/500px-Frihedsmuseet_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Ramblersen2",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frihedsmuseet_01.jpg",
+      "fullWidth": 5184
+     },
+     "description": "museum in Denmark"
     },
     {
      "id": "node/4315966262",
@@ -1044,7 +1844,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Lods_fra_Mandal_%28Kongernes_Lapidarium%29.jpg/500px-Lods_fra_Mandal_%28Kongernes_Lapidarium%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Orf3us",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lods_fra_Mandal_(Kongernes_Lapidarium).jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum of royal stone sculpture in Copenhagen"
     },
     {
      "id": "node/1517820296",
@@ -1058,7 +1869,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Danish_Police_Museum.JPG/500px-Danish_Police_Museum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Ramblersen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Danish_Police_Museum.JPG",
+      "fullWidth": 4000
+     },
+     "description": "Museum in Copenhagen, Denmark"
     },
     {
      "id": "node/9747492611",
@@ -1071,7 +1893,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Den_Kongelige_Afst%C3%B8bningssamling.JPG/500px-Den_Kongelige_Afst%C3%B8bningssamling.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Orf3us",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Den_Kongelige_Afst%C3%B8bningssamling.JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum in the West India Warehouse in Copenhagen"
     },
     {
      "id": "way/33196806",
@@ -1083,7 +1916,18 @@
      "wikidataId": "Q12328148",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/M%C3%B8stings_Hus_in_2018_02.jpg/500px-M%C3%B8stings_Hus_in_2018_02.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Kim Bach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%B8stings_Hus_in_2018_02.jpg",
+      "fullWidth": 5908
+     },
+     "description": "Kopenhag'da bina"
     },
     {
      "id": "way/176714013",
@@ -1097,7 +1941,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Enigma%2C_%C3%98ster_All%C3%A9_01.jpg/500px-Enigma%2C_%C3%98ster_All%C3%A9_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Leif Jørgensen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Enigma,_%C3%98ster_All%C3%A9_01.jpg",
+      "fullWidth": 2592
+     },
+     "description": "museum of communication in Copenhagen"
     },
     {
      "id": "node/3858601945",
@@ -1111,7 +1966,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Christian_VIII%27s_Pal%C3%A6.jpg/500px-Christian_VIII%27s_Pal%C3%A6.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Christian_VIII%27s_Pal%C3%A6.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christian_VIII%27s_Pal%C3%A6.jpg",
+      "fullWidth": 2048
+     }
     },
     {
      "id": "node/4329579150",
@@ -1125,7 +1990,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Magasin_du_Nord_Museum_04.jpg/500px-Magasin_du_Nord_Museum_04.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Leif Jørgensen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Magasin_du_Nord_Museum_04.jpg",
+      "fullWidth": 2560
+     }
     },
     {
      "id": "node/2473702013",
@@ -1135,7 +2010,17 @@
      "website": "https://overgaden.org/",
      "openingHours": "Tu-Su 13:00-17:00; Th 13:00-20:00",
      "wikipediaCount": 2,
-     "wikidataId": "Q12330704"
+     "wikidataId": "Q12330704",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Ovengaden_Neden_Vandet_17-19.jpg/500px-Ovengaden_Neden_Vandet_17-19.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Janus Bahs Jacquet from Copenhagen, Danmark",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ovengaden_Neden_Vandet_17-19.jpg",
+      "fullWidth": 3456
+     }
     },
     {
      "id": "node/3867388207",
@@ -1144,7 +2029,18 @@
      "lon": 12.57732,
      "website": "https://denkongeligesamling.dk/rosenborg-slot/",
      "wikipediaCount": 2,
-     "wikidataId": "Q11964882"
+     "wikidataId": "Q11964882",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Rosenborg_Castle_Copenhagen_1.jpg/500px-Rosenborg_Castle_Copenhagen_1.jpg",
+      "width": 500,
+      "height": 718,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rosenborg_Castle_Copenhagen_1.jpg",
+      "fullWidth": 3620
+     },
+     "description": "art collection"
     },
     {
      "id": "way/104486877",
@@ -1169,7 +2065,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/STORMmuseumsfront.jpg/500px-STORMmuseumsfront.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Esben Bertram",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:STORMmuseumsfront.jpg",
+      "fullWidth": 3931
+     },
+     "description": "museum in Frederiksberg, Denmark"
     },
     {
      "id": "way/25524570",
@@ -1181,7 +2088,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Botanisk_Museum.JPG/500px-Botanisk_Museum.JPG",
+      "width": 500,
+      "height": 335,
+      "author": "Helge Høifødt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Botanisk_Museum.JPG",
+      "fullWidth": 3872
+     }
     },
     {
      "id": "node/4886228802",
@@ -1193,7 +2110,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Gallery in Copenhagen, Denmark"
     },
     {
      "id": "node/6372863355",
@@ -1206,7 +2124,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "Danish printer"
     },
     {
      "id": "node/3404320834",
@@ -1215,7 +2134,17 @@
      "lon": 12.58231,
      "website": "https://www.jonshus.dk/",
      "wikipediaCount": 1,
-     "wikidataId": "Q16429794"
+     "wikidataId": "Q16429794",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kbh_Stokhusgade_1.jpg/500px-Kbh_Stokhusgade_1.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Christian Bickel",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kbh_Stokhusgade_1.jpg",
+      "fullWidth": 2448
+     }
     },
     {
      "id": "way/134655236",
@@ -1224,7 +2153,18 @@
      "lon": 12.58433,
      "website": "https://studio.olivergustav.com/",
      "wikipediaCount": 1,
-     "wikidataId": "Q12327939"
+     "wikidataId": "Q12327939",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Museumsbygningen_%28Kastelsvej%29_04.jpg/500px-Museumsbygningen_%28Kastelsvej%29_04.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Ramblersen2",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museumsbygningen_(Kastelsvej)_04.jpg",
+      "fullWidth": 4330
+     },
+     "description": "Kopenhag'da bina"
     },
     {
      "id": "node/5071042620",
@@ -1251,7 +2191,18 @@
       "adminArea",
       "attraction",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Copenhagen_Zoo_tower.jpg/500px-Copenhagen_Zoo_tower.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Lars K Jensen from Copenhagen, Denmark",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Copenhagen_Zoo_tower.jpg",
+      "fullWidth": 2403
+     },
+     "description": "observation tower of Copenhagen Zoo"
     },
     {
      "id": "node/6772144886",
@@ -1518,7 +2469,18 @@
      "openingHours": "Mo-Sa 11:45-16:00,17:00-21:00",
      "cuisine": "danish",
      "wikidataId": "Q63457102",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Cafe_Petersborg.jpg/500px-Cafe_Petersborg.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sam Wilson (taken with Sony RX100 mk.V )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Petersborg.jpg",
+      "fullWidth": 5472
+     },
+     "description": "cafe in Copenhagen"
     },
     {
      "id": "node/286533157",
@@ -1737,7 +2699,18 @@
      "openingHours": "10:00-24:00, Fr-Sa 10:00-02:00",
      "cuisine": "burger, pasta",
      "wikidataId": "Q26912693",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Caf%C3%A9_Katz%2C_2016-09-17.jpg/500px-Caf%C3%A9_Katz%2C_2016-09-17.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Finn Årup Nielsen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_Katz,_2016-09-17.jpg",
+      "fullWidth": 5184
+     },
+     "description": "cafe in Copenhagen"
     },
     {
      "id": "node/5902641228",
@@ -1799,7 +2772,17 @@
      "openingHours": "Mo-Sa 11:00-23:00; Su 12:00-18:00",
      "cuisine": "smørrebrød",
      "wikidataId": "Q63436767",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Brol%C3%A6ggerstr%C3%A6de_8_%28Copenhagen%29.jpg/500px-Brol%C3%A6ggerstr%C3%A6de_8_%28Copenhagen%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Ramblersen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brol%C3%A6ggerstr%C3%A6de_8_(Copenhagen).jpg",
+      "fullWidth": 2830
+     }
     },
     {
      "id": "node/279143826",
@@ -2020,7 +3003,18 @@
      "openingHours": "Mo-Fr 15:00-22:00; Sa 12:00-22:00; Su off",
      "cuisine": "winebar",
      "wikidataId": "Q28225883",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Ved_Stranden_10.jpg/500px-Ved_Stranden_10.jpg",
+      "width": 500,
+      "height": 436,
+      "author": "Ramblersen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ved_Stranden_10.jpg",
+      "fullWidth": 3317
+     },
+     "description": "Kopenhag'da bina"
     },
     {
      "id": "node/7785159023",
@@ -2264,7 +3258,17 @@
      "website": "http://www.cafeintime.dk/",
      "openingHours": "Mo-Su 16:00 - 02:00",
      "wikidataId": "Q12305023",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Cafe_Intime_at_Frederiksberg.jpeg/500px-Cafe_Intime_at_Frederiksberg.jpeg",
+      "width": 500,
+      "height": 375,
+      "author": "Gb0470",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Intime_at_Frederiksberg.jpeg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Intime_at_Frederiksberg.jpeg",
+      "fullWidth": 2048
+     }
     }
    ]
   },
@@ -2388,7 +3392,18 @@
      "website": "https://rust.dk/",
      "openingHours": "Fr,Sa 23:00-04:00",
      "wikidataId": "Q11998701",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Rust%2C_Guldbergsgade.jpg/500px-Rust%2C_Guldbergsgade.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Leif Jørgensen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rust,_Guldbergsgade.jpg",
+      "fullWidth": 2560
+     },
+     "description": "music venue in Copenhagen"
     },
     {
      "id": "node/9645254582",
@@ -2424,7 +3439,18 @@
      "lat": 55.682,
      "lon": 12.58246,
      "website": "https://www.jazzhusmontmartre.dk/",
-     "wikidataId": "Q1684536"
+     "wikidataId": "Q1684536",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Jazzhus_Montmartre.jpg/500px-Jazzhus_Montmartre.jpg",
+      "width": 500,
+      "height": 370,
+      "author": "Soeren.b.c",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jazzhus_Montmartre.jpg",
+      "fullWidth": 3200
+     },
+     "description": "jazz club in Copenhagen, Denmark"
     },
     {
      "id": "node/567867798",
@@ -2432,7 +3458,8 @@
      "lat": 55.67402,
      "lon": 12.59732,
      "website": "https://www.loppen.dk/",
-     "wikidataId": "Q12324876"
+     "wikidataId": "Q12324876",
+     "description": "music venue"
     },
     {
      "id": "node/11410423431",
@@ -2488,7 +3515,8 @@
      "name": "Karel van Mander",
      "lat": 55.67954,
      "lon": 12.58332,
-     "wikidataId": "Q12321297"
+     "wikidataId": "Q12321297",
+     "description": "former nightclub in Copenhagen"
     },
     {
      "id": "way/36881682",

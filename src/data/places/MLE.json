@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "MLE",
- "fetchedAt": "2026-10-18T17:07:16.049Z",
+ "fetchedAt": "2026-10-22T06:41:22.892Z",
  "radiusKm": 1,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -51,7 +51,18 @@
      "wikidataId": "Q1557921",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Galolhu_Dhandu.jpg/500px-Galolhu_Dhandu.jpg",
+      "width": 500,
+      "height": 222,
+      "author": "ZZ47",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galolhu_Dhandu.jpg",
+      "fullWidth": 1754
+     },
+     "description": "stadium"
     },
     {
      "id": "wikidata/Q4385992",
@@ -64,7 +75,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Male%27_Hukuru_Miskiy_1.jpg/500px-Male%27_Hukuru_Miskiy_1.jpg",
+      "width": 500,
+      "height": 292,
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Male%27_Hukuru_Miskiy_1.jpg",
+      "fullWidth": 4589
+     },
+     "description": "ancient decorated mosque"
     },
     {
      "id": "node/14099312593",
@@ -90,12 +112,13 @@
      "localName": "National Museum of Maldives",
      "lat": 4.17718,
      "lon": 73.51014,
-     "wikipediaCount": 12,
+     "wikipediaCount": 13,
      "wikidataId": "Q6974433",
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Maldives’ capital city: Malé."
     },
     {
      "id": "node/5135495426",
@@ -459,13 +482,6 @@
      "openingHours": "Sa-Th 07:30-24:00, Fr 14:00-24:00"
     },
     {
-     "id": "node/6165684807",
-     "name": "G-Six",
-     "lat": 4.1774,
-     "lon": 73.51409,
-     "cuisine": "regional"
-    },
-    {
      "id": "node/6292973320",
      "name": "Jelly",
      "lat": 4.1744,
@@ -569,6 +585,12 @@
      "name": "Hedonia",
      "lat": 4.17175,
      "lon": 73.51444
+    },
+    {
+     "id": "node/14107268102",
+     "name": "Moussaka",
+     "lat": 4.17174,
+     "lon": 73.5078
     }
    ]
   },

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "CAI",
- "fetchedAt": "2026-10-18T16:59:36.364Z",
+ "fetchedAt": "2026-10-22T06:32:53.739Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "adminArea",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Cairo_Skyline_%282020%29.jpg/500px-Cairo_Skyline_%282020%29.jpg",
+      "width": 500,
+      "height": 295,
+      "author": "Faris El-Gwely",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo_Skyline_(2020).jpg",
+      "fullWidth": 1150
+     },
+     "description": "Mısır'ın başkenti ve en büyük şehri"
     },
     {
      "id": "wikidata/Q12061",
@@ -65,7 +76,18 @@
      "wikidataId": "Q12061",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Babelisk_Tahrir_Square_Cairo.jpg/500px-Babelisk_Tahrir_Square_Cairo.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "Waelmansoory",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Babelisk_Tahrir_Square_Cairo.jpg",
+      "fullWidth": 4624
+     },
+     "description": "public town square in Downtown Cairo, Egypt"
     },
     {
      "id": "wikidata/Q915413",
@@ -79,7 +101,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Kairo_Ibn_Tulun_Moschee_BW_4.jpg/500px-Kairo_Ibn_Tulun_Moschee_BW_4.jpg",
+      "width": 500,
+      "height": 273,
+      "author": "User:Berthold Werner",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kairo_Ibn_Tulun_Moschee_BW_4.jpg",
+      "fullWidth": 3476
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "way/24749059",
@@ -93,7 +126,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Cairo_-_Islamic_district_-_Al_Azhar_Mosque_and_University.JPG/500px-Cairo_-_Islamic_district_-_Al_Azhar_Mosque_and_University.JPG",
+      "width": 500,
+      "height": 504,
+      "author": "Daniel Mayer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo_-_Islamic_district_-_Al_Azhar_Mosque_and_University.JPG",
+      "fullWidth": 2189
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "wikidata/Q683511",
@@ -106,7 +150,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Mosque_Amr_ibn_Al-As_Entrance.jpg/500px-Mosque_Amr_ibn_Al-As_Entrance.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Buyoof",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mosque_Amr_ibn_Al-As_Entrance.jpg",
+      "fullWidth": 2112
+     },
+     "description": "Mısır'da bir camii"
     },
     {
      "id": "way/24908286",
@@ -118,7 +173,18 @@
      "wikidataId": "Q1988240",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Flickr_-_HuTect_ShOts_-_Citadel_of_Salah_El.Din_and_Masjid_Muhammad_Ali_%D9%82%D9%84%D8%B9%D8%A9_%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A_%D9%88%D9%85%D8%B3%D8%AC%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A_-_Cairo_-_Egypt_-_17_04_2010_%284%29.jpg/500px-thumbnail.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "Ahmed Al.Badawy from Cairo, Egypt",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_HuTect_ShOts_-_Citadel_of_Salah_El.Din_and_Masjid_Muhammad_Ali_%D9%82%D9%84%D8%B9%D8%A9_%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A_%D9%88%D9%85%D8%B3%D8%AC%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A_-_Cairo_-_Egypt_-_17_04_2010_(4).jpg",
+      "fullWidth": 3896
+     },
+     "description": "medieval Islamic-era fortification in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q652046",
@@ -131,7 +197,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Mosque_of_Muhammad_Ali_nights.jpg/500px-Mosque_of_Muhammad_Ali_nights.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mohamed abdelzaher",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mosque_of_Muhammad_Ali_nights.jpg",
+      "fullWidth": 7087
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "wikidata/Q1430119",
@@ -145,7 +222,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/%D9%85%D8%B3%D8%AC%D8%AF%D9%89_%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D8%B9%D9%89_%D9%88%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9.jpg/500px-%D9%85%D8%B3%D8%AC%D8%AF%D9%89_%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D8%B9%D9%89_%D9%88%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9.jpg",
+      "width": 500,
+      "height": 377,
+      "author": "Batoul Khalifa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%AC%D8%AF%D9%89_%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D8%B9%D9%89_%D9%88%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9.jpg",
+      "fullWidth": 5369
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "way/767933342",
@@ -157,7 +245,18 @@
      "wikidataId": "Q614684",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Cairotower.jpg/500px-Cairotower.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Ahmedsantos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairotower.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Kahire'de beton kule"
     },
     {
      "id": "wikidata/Q775838",
@@ -170,7 +269,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Al-Hakim_Mosque_-_Mohamed_Abdelzaher.jpg/500px-Al-Hakim_Mosque_-_Mohamed_Abdelzaher.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mohamed abdelzaher",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Al-Hakim_Mosque_-_Mohamed_Abdelzaher.jpg",
+      "fullWidth": 8268
+     },
+     "description": "Mısır'ın Kahire kentinde Fatımi döneminde inşa edilmiş cami"
     },
     {
      "id": "wikidata/Q2279688",
@@ -183,7 +293,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Kairo_Al_Hussein_Mosque_BW_1.jpg/500px-Kairo_Al_Hussein_Mosque_BW_1.jpg",
+      "width": 500,
+      "height": 390,
+      "author": "Berthold Werner",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kairo_Al_Hussein_Mosque_BW_1.jpg",
+      "fullWidth": 2923
+     },
+     "description": "Kahire'de cami"
     },
     {
      "id": "way/24942979",
@@ -194,7 +315,18 @@
      "wikidataId": "Q307747",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/GD-EG-Caire-Abedin001.JPG/500px-GD-EG-Caire-Abedin001.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Gérard Ducher ( user:Néfermaât )",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GD-EG-Caire-Abedin001.JPG",
+      "fullWidth": 1600
+     },
+     "description": "palace of Cairo, Egypt"
     },
     {
      "id": "wikidata/Q622784",
@@ -208,7 +340,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Aqsunqur_DSCF8246.jpg/500px-Aqsunqur_DSCF8246.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aqsunqur_DSCF8246.jpg",
+      "fullWidth": 3000
+     },
+     "description": "mosque in Egypt"
     },
     {
      "id": "wikidata/Q597617",
@@ -219,7 +362,18 @@
      "wikidataId": "Q597617",
      "kinds": [
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Cairo_opera_house.jpg/500px-Cairo_opera_house.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was ThutmoseIII at English Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo_opera_house.jpg",
+      "fullWidth": 800
+     },
+     "description": "opera house and performing arts centre in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q311441",
@@ -227,12 +381,23 @@
      "localName": "Al-Rifa'i Mosque",
      "lat": 30.03278,
      "lon": 31.25667,
-     "wikipediaCount": 20,
+     "wikipediaCount": 21,
      "wikidataId": "Q311441",
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Cairo-Moskee_Sultan_Hassan_-_Moskee_ar-Rifai.jpg/500px-Cairo-Moskee_Sultan_Hassan_-_Moskee_ar-Rifai.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Original uploader was Chris Karman at nl.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo-Moskee_Sultan_Hassan_-_Moskee_ar-Rifai.jpg",
+      "fullWidth": 1041
+     },
+     "description": "mosque in Egypt"
     },
     {
      "id": "wikidata/Q996111",
@@ -243,7 +408,18 @@
      "wikidataId": "Q996111",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Cairo-Hilton-Skyline.jpg/500px-Cairo-Hilton-Skyline.jpg",
+      "width": 500,
+      "height": 209,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo-Hilton-Skyline.jpg",
+      "fullWidth": 600
+     },
+     "description": "road bridge"
     },
     {
      "id": "wikidata/Q1707580",
@@ -256,7 +432,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/QalaunMosque1.jpg/500px-QalaunMosque1.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Thebigape at English Wikipedia ( Original text: William E. Purnell en:User:Thebigape )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:QalaunMosque1.jpg",
+      "fullWidth": 2000
+     },
+     "description": "mosque in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q633754",
@@ -268,7 +455,18 @@
      "wikidataId": "Q633754",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Ramses-Station.jpg/500px-Ramses-Station.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "Osama Khalil",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ramses-Station.jpg",
+      "fullWidth": 2633
+     },
+     "description": "railway station in Egypt"
     },
     {
      "id": "way/775853319",
@@ -281,7 +479,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Bab_Zuwayla_Cairo_12_0864.jpg/500px-Bab_Zuwayla_Cairo_12_0864.jpg",
+      "width": 500,
+      "height": 625,
+      "author": "JMCC1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bab_Zuwayla_Cairo_12_0864.jpg",
+      "fullWidth": 2479
+     },
+     "description": "gate in the Old City of Cairo, Egypt"
     },
     {
      "id": "wikidata/Q287283",
@@ -294,7 +503,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Al-Aqmar_Mosque_-_entrance_and_minaret_Cairo_Egypt.jpg/500px-Al-Aqmar_Mosque_-_entrance_and_minaret_Cairo_Egypt.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Radosław Botev",
+      "license": "CC BY 3.0 pl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Al-Aqmar_Mosque_-_entrance_and_minaret_Cairo_Egypt.jpg",
+      "fullWidth": 4000
+     },
+     "description": "Mısır'ın Kahire kentinde cami"
     },
     {
      "id": "wikidata/Q286446",
@@ -302,7 +522,8 @@
      "lat": 30.0405,
      "lon": 31.2646,
      "wikipediaCount": 14,
-     "wikidataId": "Q286446"
+     "wikidataId": "Q286446",
+     "description": "public park in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q1237010",
@@ -311,7 +532,18 @@
      "lat": 30.0495,
      "lon": 31.261,
      "wikipediaCount": 14,
-     "wikidataId": "Q1237010"
+     "wikidataId": "Q1237010",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Qalawun_Complex_morning.jpg/500px-Qalawun_Complex_morning.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mohamed abdelzaher",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Qalawun_Complex_morning.jpg",
+      "fullWidth": 6240
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "wikidata/Q838360",
@@ -325,7 +557,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%85%D8%A4%D9%8A%D8%AF_%D8%B4%D9%8A%D8%AE.jpg/500px-%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%85%D8%A4%D9%8A%D8%AF_%D8%B4%D9%8A%D8%AE.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Nizar Barrak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%85%D8%A4%D9%8A%D8%AF_%D8%B4%D9%8A%D8%AE.jpg",
+      "fullWidth": 6016
+     },
+     "description": "mosque in Egypt"
     },
     {
      "id": "wikidata/Q1277350",
@@ -339,7 +582,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Madrasa_of_al-Nasir_Muhammad_overall_front_view.jpg/500px-Madrasa_of_al-Nasir_Muhammad_overall_front_view.jpg",
+      "width": 500,
+      "height": 617,
+      "author": "R Prazeres",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madrasa_of_al-Nasir_Muhammad_overall_front_view.jpg",
+      "fullWidth": 2387
+     },
+     "description": "building in Egypt"
     },
     {
      "id": "node/4764007325",
@@ -350,7 +604,18 @@
      "wikidataId": "Q1973889",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Late_evening_in_Cairo.jpg/500px-Late_evening_in_Cairo.jpg",
+      "width": 500,
+      "height": 297,
+      "author": "Frank Schulenburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Late_evening_in_Cairo.jpg",
+      "fullWidth": 4110
+     },
+     "description": "bridge in Egypt"
     },
     {
      "id": "wikidata/Q12241714",
@@ -364,7 +629,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Barqouqy_mosque_-_Moez_street.jpg/500px-Barqouqy_mosque_-_Moez_street.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Moh hakem",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Barqouqy_mosque_-_Moez_street.jpg",
+      "fullWidth": 2535
+     },
+     "description": "Kahire'de bir cami"
     },
     {
      "id": "wikidata/Q1507197",
@@ -375,7 +651,18 @@
      "wikidataId": "Q1507197",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Kenya-Ethiopia_Highway_%2811670320324%29.jpg/500px-Kenya-Ethiopia_Highway_%2811670320324%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kenya-Ethiopia_Highway_(11670320324).jpg",
+      "fullWidth": 1024
+     },
+     "description": "highway"
     },
     {
      "id": "wikidata/Q4119402",
@@ -387,7 +674,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Al-Moez_interface.jpg/500px-Al-Moez_interface.jpg",
+      "width": 500,
+      "height": 666,
+      "author": "Yasser.mahmoud",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Al-Moez_interface.jpg",
+      "fullWidth": 4502
+     },
+     "description": "street in Cairo Governorate, Egypt"
     },
     {
      "id": "wikidata/Q12242770",
@@ -399,7 +697,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%81%D8%AA%D8%AD_%D8%A8%D9%85%D9%8A%D8%AF%D8%A7%D9%86_%D8%B1%D9%85%D8%B3%D9%8A%D8%B3.jpg/500px-%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%81%D8%AA%D8%AD_%D8%A8%D9%85%D9%8A%D8%AF%D8%A7%D9%86_%D8%B1%D9%85%D8%B3%D9%8A%D8%B3.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Sara Nabih",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%81%D8%AA%D8%AD_%D8%A8%D9%85%D9%8A%D8%AF%D8%A7%D9%86_%D8%B1%D9%85%D8%B3%D9%8A%D8%B3.jpg",
+      "fullWidth": 1728
+     },
+     "description": "mosque in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q4164858",
@@ -412,7 +721,18 @@
       "adminArea",
       "attraction",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Cairo%2C_porte_settentrionali%2C_01.JPG/500px-Cairo%2C_porte_settentrionali%2C_01.JPG",
+      "width": 500,
+      "height": 346,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo,_porte_settentrionali,_01.JPG",
+      "fullWidth": 3456
+     },
+     "description": "gate in the Old City of Cairo, Egypt"
     },
     {
      "id": "wikidata/Q4119350",
@@ -424,7 +744,18 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Bab_al-Nasr_DSCF9983_%28retouched%29.jpg/500px-Bab_al-Nasr_DSCF9983_%28retouched%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bab_al-Nasr_DSCF9983_(retouched).jpg",
+      "fullWidth": 4000
+     },
+     "description": "gate in the Old City of Cairo, Egypt"
     },
     {
      "id": "wikidata/Q2509245",
@@ -435,7 +766,18 @@
      "wikidataId": "Q2509245",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Giza_Zoo_by_Hatem_Moushir_35.JPG/500px-Giza_Zoo_by_Hatem_Moushir_35.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Hatem Moushir",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Giza_Zoo_by_Hatem_Moushir_35.JPG",
+      "fullWidth": 4288
+     },
+     "description": "zoological garden in Giza, Egypt"
     },
     {
      "id": "wikidata/Q11936598",
@@ -450,7 +792,18 @@
       "organization",
       "religious",
       "school"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/Cairo_Sulayman_Pasha_1.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Baldiri",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo_Sulayman_Pasha_1.jpg",
+      "fullWidth": 399
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "wikidata/Q2699278",
@@ -461,7 +814,8 @@
      "wikidataId": "Q2699278",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "description": "building in Africa"
     },
     {
      "id": "wikidata/Q12241647",
@@ -476,7 +830,18 @@
       "organization",
       "religious",
       "school"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Cairo_-_Sultan_Ashref_Barsbey_Mosque_Exterior.jpg/500px-Cairo_-_Sultan_Ashref_Barsbey_Mosque_Exterior.jpg",
+      "width": 500,
+      "height": 745,
+      "author": "Zishansheikh",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo_-_Sultan_Ashref_Barsbey_Mosque_Exterior.jpg",
+      "fullWidth": 1944
+     },
+     "description": "school in Egypt"
     },
     {
      "id": "wikidata/Q12242839",
@@ -490,7 +855,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Qaytbay_complex.jpg/500px-Qaytbay_complex.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Robert Prazeres",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Qaytbay_complex.jpg",
+      "fullWidth": 2074
+     },
+     "description": "place of prayer for Muslims in Egypt"
     },
     {
      "id": "wikidata/Q1288138",
@@ -502,7 +878,18 @@
      "wikidataId": "Q1288138",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/The_Mogamma_at_night.jpg/500px-The_Mogamma_at_night.jpg",
+      "width": 500,
+      "height": 230,
+      "author": "Faris El-Gwely",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Mogamma_at_night.jpg",
+      "fullWidth": 1957
+     },
+     "description": "administrative building in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q23975608",
@@ -514,7 +901,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Historisches_Kairo_2016-03-28g.jpg/500px-Historisches_Kairo_2016-03-28g.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Djehouty",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Historisches_Kairo_2016-03-28g.jpg",
+      "fullWidth": 5130
+     },
+     "description": "mosque in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q12204253",
@@ -528,7 +926,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Sayeda_Nafisa_Mosque_005.jpg/500px-Sayeda_Nafisa_Mosque_005.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "لا روسا",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sayeda_Nafisa_Mosque_005.jpg",
+      "fullWidth": 2048
+     },
+     "description": "mosque in Cairo, Egypt"
     },
     {
      "id": "wikidata/Q12243214",
@@ -541,7 +950,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Mosque_of_Sayeda_Zainab%2C_Cairo.JPG/500px-Mosque_of_Sayeda_Zainab%2C_Cairo.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "لا روسا",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mosque_of_Sayeda_Zainab,_Cairo.JPG",
+      "fullWidth": 4288
+     },
+     "description": "mosque in Egypt"
     },
     {
      "id": "relation/16886994",
@@ -554,7 +974,8 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "description": "Mısır'ın Kahire kentinde tarihi yapı"
     },
     {
      "id": "way/310068764",
@@ -566,7 +987,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/CairoMoqattamGiyushi.jpg/500px-CairoMoqattamGiyushi.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Roland Unger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CairoMoqattamGiyushi.jpg",
+      "fullWidth": 800
+     },
+     "description": "Mısır'ın Kahire kentinde tarihi cami"
     },
     {
      "id": "way/35090927",
@@ -578,7 +1010,18 @@
      "wikidataId": "Q10981930",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Habib_Pasha_El-Sakakini_Palace.jpg/500px-Habib_Pasha_El-Sakakini_Palace.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mohamed abdelzaher",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Habib_Pasha_El-Sakakini_Palace.jpg",
+      "fullWidth": 4724
+     },
+     "description": "palace of Cairo, in Egypt"
     },
     {
      "id": "way/379083886",
@@ -586,7 +1029,18 @@
      "lat": 30.02592,
      "lon": 31.25215,
      "wikipediaCount": 6,
-     "wikidataId": "Q23975588"
+     "wikidataId": "Q23975588",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mausoleum_of_Shajar_al-Durr_DSCF2771.jpg/500px-Mausoleum_of_Shajar_al-Durr_DSCF2771.jpg",
+      "width": 500,
+      "height": 635,
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Shajar_al-Durr_DSCF2771.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Historic monument in Cairo, Egypt"
     },
     {
      "id": "relation/16794597",
@@ -624,18 +1078,6 @@
      "name": "Palace Gate",
      "lat": 30.02704,
      "lon": 31.22813
-    },
-    {
-     "id": "way/751954216",
-     "name": "Pavillion",
-     "lat": 30.02737,
-     "lon": 31.22984
-    },
-    {
-     "id": "node/6553526587",
-     "name": "Sharia al Muizz Li Din Allah",
-     "lat": 30.04673,
-     "lon": 31.26007
     }
    ]
   },
@@ -656,19 +1098,41 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/1897_bis_1902_wurde_das_%C3%84gyptische_Museum_in_Kairo_gebaut._04.jpg/500px-1897_bis_1902_wurde_das_%C3%84gyptische_Museum_in_Kairo_gebaut._04.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:1897_bis_1902_wurde_das_%C3%84gyptische_Museum_in_Kairo_gebaut._04.jpg",
+      "fullWidth": 5345
+     },
+     "description": "museum in Cairo"
     },
     {
      "id": "way/46579853",
      "name": "متحف الفنون الأسلامية",
      "lat": 30.04465,
      "lon": 31.25272,
-     "wikipediaCount": 17,
+     "wikipediaCount": 18,
      "wikidataId": "Q3330629",
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/CairoIslamicMuseum.jpg/500px-CairoIslamicMuseum.jpg",
+      "width": 500,
+      "height": 295,
+      "author": "Roland Unger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CairoIslamicMuseum.jpg",
+      "fullWidth": 908
+     },
+     "description": "Mısır'ın Kahire kentinde sanat müzesi"
     },
     {
      "id": "node/328965969",
@@ -680,7 +1144,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/CairoGayerCelebrationHall.jpg/500px-CairoGayerCelebrationHall.jpg",
+      "width": 500,
+      "height": 755,
+      "author": "Roland Unger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CairoGayerCelebrationHall.jpg",
+      "fullWidth": 530
+     },
+     "description": "art museum in Cairo, Egypt"
     },
     {
      "id": "way/201188348",
@@ -693,7 +1168,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/GizaMahmoudKhalilMuseum.jpg/500px-GizaMahmoudKhalilMuseum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Roland Unger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GizaMahmoudKhalilMuseum.jpg",
+      "fullWidth": 2400
+     },
+     "description": "museum in Egypt"
     },
     {
      "id": "way/28829955",
@@ -705,7 +1191,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Egyptian_Agricultural_Museum_%2835134%29.jpg/500px-Egyptian_Agricultural_Museum_%2835134%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Amr F.Nagy",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Egyptian_Agricultural_Museum_(35134).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Egyptian_Agricultural_Museum_(35134).jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in El Giza, Egypt"
     },
     {
      "id": "way/1316037821",
@@ -718,7 +1215,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Bashtak_palace_exterior.jpg/500px-Bashtak_palace_exterior.jpg",
+      "width": 500,
+      "height": 440,
+      "author": "Casual Builder",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bashtak_palace_exterior.jpg",
+      "fullWidth": 2293
+     },
+     "description": "historic palace and museum in Cairo"
     },
     {
      "id": "way/30065918",
@@ -730,7 +1238,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/GizaAhmedShawqyFacade.jpg/500px-GizaAhmedShawqyFacade.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Roland Unger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GizaAhmedShawqyFacade.jpg",
+      "fullWidth": 2400
+     },
+     "description": "museum in Giza"
     },
     {
      "id": "way/1230328824",
@@ -742,7 +1261,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%D9%85%D8%AA%D8%AD%D9%81_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D9%82%D9%84%D8%B9%D8%A9_%2894180%29.jpg/500px-%D9%85%D8%AA%D8%AD%D9%81_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D9%82%D9%84%D8%B9%D8%A9_%2894180%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Amr F.Nagy",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%AA%D8%AD%D9%81_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D9%82%D9%84%D8%B9%D8%A9_(94180).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%AA%D8%AD%D9%81_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D9%82%D9%84%D8%B9%D8%A9_(94180).jpg",
+      "fullWidth": 3000
+     },
+     "description": "museum in Cairo, Egypt"
     },
     {
      "id": "way/30065591",
@@ -754,7 +1284,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nahdet_Misr.jpg",
+      "width": 500,
+      "height": 696,
+      "author": "The original uploader was Zerida at English Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nahdet_Misr.jpg",
+      "fullWidth": 350
+     },
+     "description": "museum in Cairo, Egypt"
     },
     {
      "id": "way/197961520",
@@ -767,7 +1308,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum for ceramics in Cairo, Egypt"
     },
     {
      "id": "node/2668434195",
@@ -956,7 +1498,7 @@
      "lon": 31.22063,
      "address": "شارع الدكتور طه حسين",
      "website": "https://buffaloburger.com/",
-     "openingHours": "8:00Am - 3:00Am",
+     "openingHours": "Mo-Su 08:00-03:00",
      "cuisine": "burger, sandwich, chicken",
      "detailed": true
     },
@@ -1259,7 +1801,18 @@
      "openingHours": "Mo-Su 07:00-01:00",
      "cuisine": "dessert, coffee shop",
      "wikidataId": "Q6757577",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/J.Groppi.JPG/500px-J.Groppi.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Maher27777",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:J.Groppi.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:J.Groppi.JPG",
+      "fullWidth": 3648
+     },
+     "description": "café in Egypt"
     },
     {
      "id": "node/12301787202",

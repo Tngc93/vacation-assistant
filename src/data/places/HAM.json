@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "HAM",
- "fetchedAt": "2026-10-18T11:56:11.771Z",
+ "fetchedAt": "2026-10-22T05:30:42.351Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -58,7 +58,18 @@
       "musicVenue",
       "organization",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2019-05-10_Elbphilharmonie_Hamburg.jpg/500px-2019-05-10_Elbphilharmonie_Hamburg.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2019-05-10_Elbphilharmonie_Hamburg.jpg",
+      "fullWidth": 5309
+     },
+     "description": "concert hall"
     },
     {
      "id": "node/4417808181",
@@ -69,7 +80,18 @@
      "wikidataId": "Q661881",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Hamburg.Speicherstadtzollkanal.2010.wmt.jpg/500px-Hamburg.Speicherstadtzollkanal.2010.wmt.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "User:Wmeinhart - Wolfgang Meinhart, Hamburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg.Speicherstadtzollkanal.2010.wmt.jpg",
+      "fullWidth": 1999
+     },
+     "description": "Depo Kompleksi"
     },
     {
      "id": "node/5894237785",
@@ -83,7 +105,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Chilehaus_-_Hamburg.jpg/500px-Chilehaus_-_Hamburg.jpg",
+      "width": 500,
+      "height": 505,
+      "author": "Esther Westerveld from Haarlemmermeer, Nederland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chilehaus_-_Hamburg.jpg",
+      "fullWidth": 3300
+     },
+     "description": "Hamburg, Almanya'da bulunan ve on katlı bir ofis binası"
     },
     {
      "id": "wikidata/Q3964",
@@ -96,7 +129,18 @@
      "kinds": [
       "port",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Aerial_image_of_the_Eurogate_and_Burchardkai_container_terminals_%28view_from_the_southeast%29.jpg/500px-Aerial_image_of_the_Eurogate_and_Burchardkai_container_terminals_%28view_from_the_southeast%29.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Eurogate_and_Burchardkai_container_terminals_(view_from_the_southeast).jpg",
+      "fullWidth": 5500
+     },
+     "description": "Hamburg şehri ve Elbe nehri üzerinde bulunan bir Alman Limanı"
     },
     {
      "id": "node/4417819561",
@@ -108,7 +152,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/12893_Reeperbahn_96.JPG/500px-12893_Reeperbahn_96.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Hinnerk11",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:12893_Reeperbahn_96.JPG",
+      "fullWidth": 3456
+     },
+     "description": "street in Hamburg's St. Pauli district"
     },
     {
      "id": "node/10946039386",
@@ -124,7 +179,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/DungeonMiwula.jpg/500px-DungeonMiwula.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gulp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DungeonMiwula.jpg",
+      "fullWidth": 1280
+     },
+     "description": "Model railway and miniature airport attraction in Hamburg, Germany"
     },
     {
      "id": "wikidata/Q339572",
@@ -135,7 +201,18 @@
      "wikidataId": "Q339572",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Germany_Hamburg_millerntorstadion.jpg/500px-Germany_Hamburg_millerntorstadion.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Germany_Hamburg_millerntorstadion.jpg",
+      "fullWidth": 4194
+     },
+     "description": "football stadium"
     },
     {
      "id": "way/22731336",
@@ -149,7 +226,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Sankt-Michaelis-Kirche_Hamburg.jpg/500px-Sankt-Michaelis-Kirche_Hamburg.jpg",
+      "width": 500,
+      "height": 807,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sankt-Michaelis-Kirche_Hamburg.jpg",
+      "fullWidth": 3246
+     },
+     "description": "Hamburg-Mitte, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q1561",
@@ -162,7 +250,18 @@
       "adminArea",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Hamburg.HafenCity-modell.wmt.jpg/500px-Hamburg.HafenCity-modell.wmt.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Wolfgang Meinhart, Hamburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg.HafenCity-modell.wmt.jpg",
+      "fullWidth": 643
+     },
+     "description": "quarter in the district of Hamburg-Mitte in Hamburg, Germany"
     },
     {
      "id": "wikidata/Q705453",
@@ -179,7 +278,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2025-03-31-Hamburgische-Staatsoper.jpg/500px-2025-03-31-Hamburgische-Staatsoper.jpg",
+      "width": 500,
+      "height": 411,
+      "author": "Gunnar Klack",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2025-03-31-Hamburgische-Staatsoper.jpg",
+      "fullWidth": 4012
+     },
+     "description": "opera building in Hamburg, Germany"
     },
     {
      "id": "way/142944431",
@@ -194,7 +304,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Hamburg_Rathausmarkt_und_Rathaus.jpg/500px-Hamburg_Rathausmarkt_und_Rathaus.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Arnoldius",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_Rathausmarkt_und_Rathaus.jpg",
+      "fullWidth": 3151
+     },
+     "description": "Rathaus (city hall) of Hamburg, Germany"
     },
     {
      "id": "wikidata/Q668264",
@@ -208,7 +329,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Imam-Ali-Moschee_Hamburg.jpg/500px-Imam-Ali-Moschee_Hamburg.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Staro1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Imam-Ali-Moschee_Hamburg.jpg",
+      "fullWidth": 2592
+     },
+     "description": "mosque"
     },
     {
      "id": "wikidata/Q1783238",
@@ -220,7 +352,18 @@
      "wikidataId": "Q1783238",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hamburg.Kontorhausviertel.wmt.jpg/500px-Hamburg.Kontorhausviertel.wmt.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Wolfgang Meinhart, Hamburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg.Kontorhausviertel.wmt.jpg",
+      "fullWidth": 858
+     },
+     "description": "human settlement in Germany"
     },
     {
      "id": "wikidata/Q616790",
@@ -232,7 +375,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/00_2029_Kirchturm_der_Katharinenkirche_in_Hamburg.jpg/500px-00_2029_Kirchturm_der_Katharinenkirche_in_Hamburg.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_2029_Kirchturm_der_Katharinenkirche_in_Hamburg.jpg",
+      "fullWidth": 2533
+     },
+     "description": "church building in Hamburg, Germany"
     },
     {
      "id": "relation/8103463",
@@ -241,7 +395,18 @@
      "lon": 9.97998,
      "website": "https://plantenunblomen.hamburg.de/",
      "wikipediaCount": 17,
-     "wikidataId": "Q494440"
+     "wikidataId": "Q494440",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Sonnt%C3%A4gliche_Wiese_in_Planten_un_Blomen.jpg/500px-Sonnt%C3%A4gliche_Wiese_in_Planten_un_Blomen.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Hinnerk Haardt",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sonnt%C3%A4gliche_Wiese_in_Planten_un_Blomen.jpg",
+      "fullWidth": 1024
+     },
+     "description": "park in Hamburg, Germany"
     },
     {
      "id": "wikidata/Q535443",
@@ -253,7 +418,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Projekt_Hei%C3%9Fluftballon_-_Highflyer_-IMG-1418.jpg/500px-Projekt_Hei%C3%9Fluftballon_-_Highflyer_-IMG-1418.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Jean11",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Projekt_Hei%C3%9Fluftballon_-_Highflyer_-IMG-1418.jpg",
+      "fullWidth": 3276
+     },
+     "description": "Hamburg-Mitte, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q3238460",
@@ -261,7 +437,18 @@
      "lat": 53.55471,
      "lon": 9.99511,
      "wikipediaCount": 15,
-     "wikidataId": "Q3238460"
+     "wikidataId": "Q3238460",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Hamburg_Binnenalster.jpg/500px-Hamburg_Binnenalster.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Magnus Manske",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_Binnenalster.jpg",
+      "fullWidth": 2272
+     },
+     "description": "reservoir in Germany"
     },
     {
      "id": "wikidata/Q573491",
@@ -273,7 +460,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Dom_St._Marien_Hamburg.jpg/500px-Dom_St._Marien_Hamburg.jpg",
+      "width": 500,
+      "height": 819,
+      "author": "GeoTrinity (shifted by Rabanus Flavus )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dom_St._Marien_Hamburg.jpg",
+      "fullWidth": 2460
+     },
+     "description": "parish church"
     },
     {
      "id": "wikidata/Q1551",
@@ -284,7 +482,18 @@
      "wikidataId": "Q1551",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Nikolaifleet%2C_Hamburg.jpg/500px-Nikolaifleet%2C_Hamburg.jpg",
+      "width": 500,
+      "height": 369,
+      "author": "Oxfordian Kissuth",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nikolaifleet,_Hamburg.jpg",
+      "fullWidth": 2100
+     },
+     "description": "borough of Hamburg in the district of Hamburg-Mitte"
     },
     {
      "id": "wikidata/Q684932",
@@ -297,7 +506,18 @@
       "notPlace",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Rote_Flora_M%C3%A4rz_2021.jpg/500px-Rote_Flora_M%C3%A4rz_2021.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Hinnerk11",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rote_Flora_M%C3%A4rz_2021.jpg",
+      "fullWidth": 5184
+     },
+     "description": "social centre and squatted former theater in Hamburg, Germany"
     },
     {
      "id": "wikidata/Q634142",
@@ -310,7 +530,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Bahnhof_Hamburg-Dammtor.ajb.jpg/500px-Bahnhof_Hamburg-Dammtor.ajb.jpg",
+      "width": 500,
+      "height": 250,
+      "author": "Ajepbah",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bahnhof_Hamburg-Dammtor.ajb.jpg",
+      "fullWidth": 4156
+     },
+     "description": "Almanya'da tren istasyonu"
     },
     {
      "id": "wikidata/Q3392985",
@@ -318,7 +549,18 @@
      "lat": 53.565,
      "lon": 10.01,
      "wikipediaCount": 13,
-     "wikidataId": "Q3392985"
+     "wikidataId": "Q3392985",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Aerial_image_of_Binnenalster_and_Au%C3%9Fenalster_%28view_from_the_southwest%29.jpg/500px-Aerial_image_of_Binnenalster_and_Au%C3%9Fenalster_%28view_from_the_southwest%29.jpg",
+      "width": 500,
+      "height": 309,
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Binnenalster_and_Au%C3%9Fenalster_(view_from_the_southwest).jpg",
+      "fullWidth": 5500
+     },
+     "description": "lake and reservoir in Hamburg, Germany"
     },
     {
      "id": "way/45017024",
@@ -330,7 +572,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hamburg-Bismarck-Denkmal.jpg/500px-Hamburg-Bismarck-Denkmal.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg-Bismarck-Denkmal.jpg",
+      "fullWidth": 2112
+     },
+     "description": "Bismarck monument in Hamburg"
     },
     {
      "id": "way/48361392",
@@ -344,7 +597,18 @@
      "wikidataId": "Q460264",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Alter_Elbtunnel_%2C_Hamburg_%2C_An_den_Landungsbr%C3%BCcken.JPG/500px-Alter_Elbtunnel_%2C_Hamburg_%2C_An_den_Landungsbr%C3%BCcken.JPG",
+      "width": 500,
+      "height": 367,
+      "author": "Wolfi1946",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alter_Elbtunnel_,_Hamburg_,_An_den_Landungsbr%C3%BCcken.JPG",
+      "fullWidth": 1600
+     },
+     "description": "German road tunnel"
     },
     {
      "id": "wikidata/Q3398930",
@@ -355,7 +619,18 @@
      "wikidataId": "Q3398930",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Centre_Court_Am_Rothenbaum_%28Hamburg%29.jpg/500px-Centre_Court_Am_Rothenbaum_%28Hamburg%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "HSV23",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centre_Court_Am_Rothenbaum_(Hamburg).jpg",
+      "fullWidth": 1600
+     },
+     "description": "tennis venue"
     },
     {
      "id": "wikidata/Q51912",
@@ -368,7 +643,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Quds-panorama.JPG/500px-Quds-panorama.JPG",
+      "width": 500,
+      "height": 126,
+      "author": "GaKu",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Quds-panorama.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Quds-panorama.JPG",
+      "fullWidth": 1648
+     },
+     "description": "former mosque in Germany"
     },
     {
      "id": "wikidata/Q6451",
@@ -380,7 +666,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Jungfernstieg.wmt.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Wolfgang Meinhart",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jungfernstieg.wmt.jpg",
+      "fullWidth": 480
+     },
+     "description": "promenade in Hamburg, Germany"
     },
     {
      "id": "wikidata/Q458970",
@@ -391,7 +688,18 @@
      "wikidataId": "Q458970",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2013-06-08_Projekt_Hei%C3%9Flufftballon_DSCF7556.jpg/500px-2013-06-08_Projekt_Hei%C3%9Flufftballon_DSCF7556.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Martina Nolte",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2013-06-08_Projekt_Hei%C3%9Flufftballon_DSCF7556.jpg",
+      "fullWidth": 2500
+     },
+     "description": "bridge"
     },
     {
      "id": "wikidata/Q456499",
@@ -404,7 +712,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hh-thalia.jpg/500px-Hh-thalia.jpg",
+      "width": 500,
+      "height": 564,
+      "author": "Staro1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hh-thalia.jpg",
+      "fullWidth": 531
+     },
+     "description": "theatre in Hamburg"
     },
     {
      "id": "node/2720636699",
@@ -416,7 +735,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Fernsehturm_Hamburg.jpg/500px-Fernsehturm_Hamburg.jpg",
+      "width": 500,
+      "height": 992,
+      "author": "Thomas Wolf ( Der Wolf im Wald )",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fernsehturm_Hamburg.jpg",
+      "fullWidth": 2488
+     },
+     "description": "Radio telecommunication tower"
     },
     {
      "id": "way/137224834",
@@ -430,7 +760,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rickmer_Rickmers_HH_08-2023.jpg/500px-Rickmer_Rickmers_HH_08-2023.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Pedemann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rickmer_Rickmers_HH_08-2023.jpg",
+      "fullWidth": 2407
+     },
+     "description": "three-masted barque"
     },
     {
      "id": "way/845145391",
@@ -439,7 +780,18 @@
      "lon": 10.00062,
      "website": "https://peking-freunde.de/",
      "wikipediaCount": 6,
-     "wikidataId": "Q249918"
+     "wikidataId": "Q249918",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Peking_IMO_1163371_S_Hamburg_16-03-2022.jpg/500px-Peking_IMO_1163371_S_Hamburg_16-03-2022.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Wolfgang Fricke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Peking_IMO_1163371_S_Hamburg_16-03-2022.jpg",
+      "fullWidth": 1704
+     },
+     "description": "historic German steel-hulled four-masted barque"
     },
     {
      "id": "node/268476108",
@@ -454,7 +806,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/HamburgDungeon2.JPG/500px-HamburgDungeon2.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Benutzer:Gulp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HamburgDungeon2.JPG",
+      "fullWidth": 1280
+     },
+     "description": "tourist attraction in Hamburg, Germany"
     },
     {
      "id": "node/979332538",
@@ -467,7 +830,18 @@
      "wikidataId": "Q896467",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Hamburg_Dom_08.jpg/500px-Hamburg_Dom_08.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "Axel Hindemith",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_Dom_08.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_Dom_08.jpg",
+      "fullWidth": 796
+     },
+     "description": "fun fair in Hamburg"
     },
     {
      "id": "node/443383971",
@@ -481,7 +855,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Panoptikum%2C_April_2019.jpg/500px-Panoptikum%2C_April_2019.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "Wikiuka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Panoptikum,_April_2019.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Sergi salonu"
     },
     {
      "id": "way/142944250",
@@ -493,7 +878,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Deichstra%C3%9Fe_%28Hamburg-Altstadt%29.jpg/500px-Deichstra%C3%9Fe_%28Hamburg-Altstadt%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bernhard Diener",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deichstra%C3%9Fe_(Hamburg-Altstadt).jpg",
+      "fullWidth": 4032
+     },
+     "description": "street in Hamburg, Germany"
     },
     {
      "id": "way/973035313",
@@ -508,7 +904,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Davidwache.jpg/500px-Davidwache.jpg",
+      "width": 500,
+      "height": 696,
+      "author": "User Pavel Krok on de.wikipedia",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Davidwache.jpg",
+      "fullWidth": 1149
+     },
+     "description": "architectural structure"
     },
     {
      "id": "node/128398939",
@@ -521,7 +928,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Krameramthh040911_060.jpg/500px-Krameramthh040911_060.jpg",
+      "width": 500,
+      "height": 891,
+      "author": "Arnold Plesse",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Krameramthh040911_060.jpg",
+      "fullWidth": 2048
+     },
+     "description": "museum"
     },
     {
      "id": "way/432980656",
@@ -529,7 +947,18 @@
      "lat": 53.52937,
      "lon": 9.99869,
      "wikipediaCount": 3,
-     "wikidataId": "Q883560"
+     "wikidataId": "Q883560",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Bleichen_IMO_5046281_G_Hamburg_07-09-2020_%281%29.jpg/500px-Bleichen_IMO_5046281_G_Hamburg_07-09-2020_%281%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Wolfgang Fricke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bleichen_IMO_5046281_G_Hamburg_07-09-2020_(1).jpg",
+      "fullWidth": 2371
+     },
+     "description": "preserved watercraft built in 1958, museum ship in Hamburg"
     },
     {
      "id": "node/568490944",
@@ -538,7 +967,18 @@
      "lon": 9.99578,
      "website": "http://alsterfontaene.de/typisch-hamburg/",
      "wikipediaCount": 2,
-     "wikidataId": "Q2651496"
+     "wikidataId": "Q2651496",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Hamburg_fountain.jpg/500px-Hamburg_fountain.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "Lukas from München, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_fountain.jpg",
+      "fullWidth": 3336
+     },
+     "description": "fountain in Hamburg, Germany"
     },
     {
      "id": "way/31053577",
@@ -550,7 +990,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Planten-un-blomen-johan-van-valckenburgh-br%C3%BCcke.jpg/500px-Planten-un-blomen-johan-van-valckenburgh-br%C3%BCcke.jpg",
+      "width": 500,
+      "height": 451,
+      "author": "Bejo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Planten-un-blomen-johan-van-valckenburgh-br%C3%BCcke.jpg",
+      "fullWidth": 2304
+     },
+     "description": "garden in Germany"
     },
     {
      "id": "node/617018037",
@@ -563,7 +1014,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Bischofsturm_wall.jpg/500px-Bischofsturm_wall.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Dirtsc",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bischofsturm_wall.jpg",
+      "fullWidth": 2848
+     },
+     "description": "foundation of a circular tower of the 12th Century in the historic city center of Hamburg, Germany"
     },
     {
      "id": "way/849896397",
@@ -571,7 +1033,18 @@
      "lat": 53.55801,
      "lon": 9.96175,
      "wikipediaCount": 2,
-     "wikidataId": "Q2235765"
+     "wikidataId": "Q2235765",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Schilleroper_August_2022_%282%29.jpg/500px-Schilleroper_August_2022_%282%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Hinnerk11",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schilleroper_August_2022_(2).jpg",
+      "fullWidth": 5184
+     },
+     "description": "former theatre in Hamburg"
     },
     {
      "id": "node/442010897",
@@ -582,7 +1055,18 @@
      "wikidataId": "Q2052509",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Park_Fiction_%282%29.jpg/500px-Park_Fiction_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Pauli-Pirat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Park_Fiction_(2).jpg",
+      "fullWidth": 4504
+     },
+     "description": "Hamburg art project"
     },
     {
      "id": "way/997127889",
@@ -593,7 +1077,18 @@
      "wikidataId": "Q18632417",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Vierl%C3%A4nderin-Brunnen_auf_dem_Hopfenmarkt_in_Hamburg-Altstadt.jpg/500px-Vierl%C3%A4nderin-Brunnen_auf_dem_Hopfenmarkt_in_Hamburg-Altstadt.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Claus-Joachim Dickow",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vierl%C3%A4nderin-Brunnen_auf_dem_Hopfenmarkt_in_Hamburg-Altstadt.jpg",
+      "fullWidth": 3000
+     },
+     "description": "fountain in Hamburg, Germany"
     },
     {
      "id": "node/268807434",
@@ -617,14 +1112,6 @@
      "lat": 53.54902,
      "lon": 9.96422,
      "website": "https://www.panikcity.de/"
-    },
-    {
-     "id": "node/12709538501",
-     "name": "Paradieshof",
-     "lat": 53.55022,
-     "lon": 9.98192,
-     "address": "Alter Steinweg 11",
-     "website": "https://www.denkmalverein.de/gerettet/paradieshof"
     }
    ]
   },
@@ -646,7 +1133,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "art museum in Hamburg, Germany"
     },
     {
      "id": "node/6695848618",
@@ -660,7 +1148,18 @@
      "wikidataId": "Q425622",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/00_4131_Mahnmal_aus_dem_2._Weltkrieg_in_Hamburg.jpg/500px-00_4131_Mahnmal_aus_dem_2._Weltkrieg_in_Hamburg.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_4131_Mahnmal_aus_dem_2._Weltkrieg_in_Hamburg.jpg",
+      "fullWidth": 2333
+     },
+     "description": "kilise"
     },
     {
      "id": "node/2714950847",
@@ -675,7 +1174,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Hh-hamburgmuseum.jpg/500px-Hh-hamburgmuseum.jpg",
+      "width": 500,
+      "height": 381,
+      "author": "Staro1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hh-hamburgmuseum.jpg",
+      "fullWidth": 2360
+     },
+     "description": "History museum located in the city of Hamburg in northern Germany"
     },
     {
      "id": "way/42864381",
@@ -691,7 +1201,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Museum_f%C3%BCr_Kunst_und_Gewerbe_Hamburg%2C_Ostfassade_mit_Hauptportal.jpg/500px-Museum_f%C3%BCr_Kunst_und_Gewerbe_Hamburg%2C_Ostfassade_mit_Hauptportal.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "UweRohwedder",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_f%C3%BCr_Kunst_und_Gewerbe_Hamburg,_Ostfassade_mit_Hauptportal.jpg",
+      "fullWidth": 2604
+     },
+     "description": "museum of fine, applied and decorative arts in Hamburg, Germany"
     },
     {
      "id": "way/25337154",
@@ -706,7 +1227,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum"
     },
     {
      "id": "way/137318607",
@@ -720,7 +1242,18 @@
      "wikidataId": "Q858079",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Cap_San_Diego-DSC_0417.jpg/500px-Cap_San_Diego-DSC_0417.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "Peter Haas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cap_San_Diego-DSC_0417.jpg",
+      "fullWidth": 3104
+     },
+     "description": "1961 mixed cargo ship"
     },
     {
      "id": "way/23191265",
@@ -736,7 +1269,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/DTH_Nordhalle.jpg/500px-DTH_Nordhalle.jpg",
+      "width": 500,
+      "height": 666,
+      "author": "Deichtorhallen Hamburg GmbH",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DTH_Nordhalle.jpg",
+      "fullWidth": 1772
+     },
+     "description": "Exhibition venue for contemporary art"
     },
     {
      "id": "node/265761266",
@@ -751,7 +1295,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/PikiWiki_Israel_45993_Childrens_museum_in_Holon.JPG/500px-PikiWiki_Israel_45993_Childrens_museum_in_Holon.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Dr. Avishai Teicher",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_45993_Childrens_museum_in_Holon.JPG",
+      "fullWidth": 4608
+     },
+     "description": "social franchise business, Hamburg"
     },
     {
      "id": "node/13041286663",
@@ -766,7 +1321,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Peterstra%C3%9Fe_29_Hamburg_3_%28cropped%29.JPG/500px-Peterstra%C3%9Fe_29_Hamburg_3_%28cropped%29.JPG",
+      "width": 500,
+      "height": 506,
+      "author": "Ymnes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Peterstra%C3%9Fe_29_Hamburg_3_(cropped).JPG",
+      "fullWidth": 1667
+     },
+     "description": "Group of museum in Hamburg"
     },
     {
      "id": "node/706970884",
@@ -781,7 +1347,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Hamburg%2C_Peterstra%C3%9Fe_39%2C_39_a-c_%28fr%C3%BCher_37-40%29.jpg/500px-Hamburg%2C_Peterstra%C3%9Fe_39%2C_39_a-c_%28fr%C3%BCher_37-40%29.jpg",
+      "width": 500,
+      "height": 393,
+      "author": "Smnmmnn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg,_Peterstra%C3%9Fe_39,_39_a-c_(fr%C3%BCher_37-40).jpg",
+      "fullWidth": 5118
+     },
+     "description": "museum on Johannes Brahms in Hamburg"
     },
     {
      "id": "node/3912562937",
@@ -795,7 +1372,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Hamburg, Germany"
     },
     {
      "id": "node/5892735585",
@@ -809,7 +1387,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Hamburg_Erotic_Art_Museum.jpg/500px-Hamburg_Erotic_Art_Museum.jpg",
+      "width": 500,
+      "height": 337,
+      "author": "Staro1 at German Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_Erotic_Art_Museum.jpg",
+      "fullWidth": 2136
+     },
+     "description": "museum of erotic art in the German red-light district of Hamburg's Reeperbahn"
     },
     {
      "id": "node/861287892",
@@ -825,7 +1414,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Kaischuppen_50_%28Hamburg-Kleiner_Grasbrook%29.Kopfbau.2.13018.ajb.jpg/500px-Kaischuppen_50_%28Hamburg-Kleiner_Grasbrook%29.Kopfbau.2.13018.ajb.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Ajepbah",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kaischuppen_50_(Hamburg-Kleiner_Grasbrook).Kopfbau.2.13018.ajb.jpg",
+      "fullWidth": 4288
+     },
+     "description": "museum in Hamburg, Germany"
     },
     {
      "id": "node/1650071826",
@@ -841,7 +1441,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Automuseum_-_panoramio.jpg/500px-Automuseum_-_panoramio.jpg",
+      "width": 500,
+      "height": 459,
+      "author": "hh oldman",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Automuseum_-_panoramio.jpg",
+      "fullWidth": 4258
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/1643193207",
@@ -855,7 +1466,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Telemannmuseum_hamburg1.JPG/500px-Telemannmuseum_hamburg1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Z thomas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Telemannmuseum_hamburg1.JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum in Hamburg"
     },
     {
      "id": "way/27443629",
@@ -870,7 +1492,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Hamburg"
     },
     {
      "id": "node/277296724",
@@ -885,7 +1508,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Hamburg_Zollmuseum_Zollkreuzer_01_KMJ.jpg/500px-Hamburg_Zollmuseum_Zollkreuzer_01_KMJ.jpg",
+      "width": 500,
+      "height": 382,
+      "author": "User KMJ on de.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_Zollmuseum_Zollkreuzer_01_KMJ.jpg",
+      "fullWidth": 768
+     },
+     "description": "museum in Hamburg, Germany"
     },
     {
      "id": "node/302710293",
@@ -900,7 +1534,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Am_Sandtorkai_36_Speicherstadt-Museum.jpg/500px-Am_Sandtorkai_36_Speicherstadt-Museum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Pauli-Pirat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Am_Sandtorkai_36_Speicherstadt-Museum.jpg",
+      "fullWidth": 4608
+     },
+     "description": "local museum in Hamburg, Germany"
     },
     {
      "id": "node/4960538797",
@@ -913,7 +1558,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Peterstra%C3%9Fe_29_Hamburg_3.JPG/500px-Peterstra%C3%9Fe_29_Hamburg_3.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Ymnes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Peterstra%C3%9Fe_29_Hamburg_3.JPG",
+      "fullWidth": 3264
+     },
+     "description": "museum in Hamburg, Germany"
     },
     {
      "id": "node/1636614093",
@@ -926,7 +1582,8 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "voluntary association"
     },
     {
      "id": "node/4960538796",
@@ -939,7 +1596,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Peterstra%C3%9Fe_29_Hamburg_2.JPG/500px-Peterstra%C3%9Fe_29_Hamburg_2.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Ymnes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Peterstra%C3%9Fe_29_Hamburg_2.JPG",
+      "fullWidth": 3264
+     },
+     "description": "museum in Hamburg"
     },
     {
      "id": "node/946081680",
@@ -954,7 +1622,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Deutsches_Zusatzstoffmuseum_Hamburg.jpg/500px-Deutsches_Zusatzstoffmuseum_Hamburg.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mef.ellingen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Zusatzstoffmuseum_Hamburg.jpg",
+      "fullWidth": 3096
+     },
+     "description": "museum in Hamburg, Germany"
     },
     {
      "id": "node/5460118667",
@@ -968,7 +1647,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2018-OCT-07_Millerntorstadion_Museum.jpg/500px-2018-OCT-07_Millerntorstadion_Museum.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "San Andreas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018-OCT-07_Millerntorstadion_Museum.jpg",
+      "fullWidth": 3264
+     },
+     "description": "museum of the German football club FC St. Pauli"
     },
     {
      "id": "way/28207271",
@@ -983,7 +1673,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Hamburg%2C_Universit%C3%A4t_Hamburg%2C_Geologisch-Pal%C3%A4ontologisches_Museum_Hamburg_NIK_1830.JPG/500px-Hamburg%2C_Universit%C3%A4t_Hamburg%2C_Geologisch-Pal%C3%A4ontologisches_Museum_Hamburg_NIK_1830.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "-- Nightflyer ( talk ) 21:53, 29 June 2016 (UTC)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburg,_Universit%C3%A4t_Hamburg,_Geologisch-Pal%C3%A4ontologisches_Museum_Hamburg_NIK_1830.JPG",
+      "fullWidth": 5193
+     },
+     "description": "museum in Hamburg"
     },
     {
      "id": "node/3168353161",
@@ -997,7 +1698,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Germany"
     },
     {
      "id": "node/2712372730",
@@ -1012,7 +1714,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/12183_Seilerstrasse_42_entzerrt.JPG/500px-12183_Seilerstrasse_42_entzerrt.JPG",
+      "width": 500,
+      "height": 369,
+      "author": "Hinnerk11",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:12183_Seilerstrasse_42_entzerrt.JPG",
+      "fullWidth": 2544
+     },
+     "description": "museum in Hamburg"
     },
     {
      "id": "way/23191264",
@@ -1026,7 +1739,8 @@
      "wikidataId": "Q134571475",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "description": "photographic collection in Hamburg"
     },
     {
      "id": "way/34544690",
@@ -1041,7 +1755,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Hamburg"
     },
     {
      "id": "node/301998423",
@@ -1056,7 +1771,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Gew%C3%BCrz-Afghanisches_Museum_2.JPG/500px-Gew%C3%BCrz-Afghanisches_Museum_2.JPG",
+      "width": 500,
+      "height": 362,
+      "author": "Gulp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gew%C3%BCrz-Afghanisches_Museum_2.JPG",
+      "fullWidth": 1233
+     },
+     "description": "museum in Hamburg, Germany"
     },
     {
      "id": "node/11242020637",
@@ -1070,7 +1796,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum of magic"
     },
     {
      "id": "node/3664674297",
@@ -1242,8 +1969,8 @@
     {
      "id": "way/464787241",
      "name": "View Point",
-     "lat": 53.53855,
-     "lon": 10.0081,
+     "lat": 53.53854,
+     "lon": 10.00809,
      "wikidataId": "Q85007854",
      "kinds": [
       "adminArea",
@@ -1794,7 +2521,18 @@
      "openingHours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:30-20:30",
      "cuisine": "drinks, snacks",
      "wikidataId": "Q1152059",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Frankfurt-Flughafen_2011-08-by-RaBoe-04.jpg/500px-Frankfurt-Flughafen_2011-08-by-RaBoe-04.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "© Ra Boe / Wikipedia - Create the proper attribution for your usage by clicking on this button! This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Germany license. Attribution: Ra Boe / Wikipedia You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/3.0/de/deed.en CC BY-SA 3.0 de Creative Commons Attribution-Share Alike 3.0 de true true Internet: Titel Foto: Ra Boe / Wikipedia , Original ; Lizenz: CC by-sa 3.0 Print: Titel Foto: Ra Boe / Wikipedia, Lizenz: CC by-sa 3.0 I have published this image as author Ra Boe under the \" CC-BY-SA-3.0 \" in Wikipedia. This means that free, commercial usage outside of Wikipedia is permitted under the following licence terms: Online media: The author \" RaBoe/Wikipedia \" is named A weblink to the original image is provided: //commons.wikimedia.org/wiki/File:Frankfurt-Flughafen_2011-08-by-RaBoe-04.jpg A copy of, or the Uniform Resource Identifier ( https://creativecommons.org/licenses/by-sa/3.0/de/legalcode ) for, this License with every copy Print media: The author \" RaBoe/Wikipedia\" is named A copy of, or the Uniform Resource Identifier ( https://creativecommons.org/licenses/by-sa/3.0/de/legalcode ) for, this License with every copy Please send me a specimen copy or the URL of the website where the image is used. Please write an email to raboe001-at-web.de , if you need the image in a higher resolution need my postal address for sending a specimen copy have further questions about the terms of the licence PS: In case of refusal of the above terms the author reserves the right to take legal action. This license and the rights granted hereunder will terminate automatically upon any breach by you of the terms of this license. In this case the author reserves to demand declaration to cease and desist, and compensation (according to the MFM fee references currently in force). Any of the above conditions can be waived if you get permission from the copyright holder. Durch die Übernahme der UMTS Kosten durch den gemeinnützigen Vereins Skillshare.eu konnte dieses Bild bereitstellen werden. Skillshare e.V. ist ein eingetragener gemeinnütziger Verein zur Förderung der Bildung durch Unterstützung der Erstellung, Sammlung und Verbreitung so genannten freien Wissens. IBAN: DE16 8306 5408 0004 8850 66 BIC: GENODEF1SLR Bank: VR-Bank Altenburger Land",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt-Flughafen_2011-08-by-RaBoe-04.jpg",
+      "fullWidth": 1111
+     },
+     "description": "lounge at a bigger German train station for customers of DB (Deutsche Bahn) in possession of a first class ticket or other special customer status."
     },
     {
      "id": "node/10875226405",
@@ -2367,7 +3105,18 @@
      "website": "https://www.gruenspan.de/",
      "openingHours": "\"abhängig vom Programm\"",
      "wikidataId": "Q1550320",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hh-gruenspan.jpg/500px-Hh-gruenspan.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Staro1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hh-gruenspan.jpg",
+      "fullWidth": 1944
+     },
+     "description": "music club in Hamburg, Germany"
     },
     {
      "id": "way/66997571",
@@ -2378,7 +3127,18 @@
      "website": "https://www.gruenspan.de/",
      "openingHours": "\"wegen Sanierung geschlossen\"",
      "wikidataId": "Q1550320",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hh-gruenspan.jpg/500px-Hh-gruenspan.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Staro1",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hh-gruenspan.jpg",
+      "fullWidth": 1944
+     },
+     "description": "music club in Hamburg, Germany"
     },
     {
      "id": "node/8722058413",
@@ -2457,7 +3217,8 @@
      "website": "https://www.mojo.de/program",
      "openingHours": "\"Nur bei Veranstaltungen geöffnet.\"",
      "wikidataId": "Q383118",
-     "detailed": true
+     "detailed": true,
+     "description": "music venue in Hamburg, Germany"
     },
     {
      "id": "node/4469660003",
@@ -2477,7 +3238,17 @@
      "website": "https://pudel.com/",
      "openingHours": "We-Mo 20:00+; Tu off",
      "wikidataId": "Q1535030",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Golden_Pudel_Club%2C_Hamburg_2014.jpg/500px-Golden_Pudel_Club%2C_Hamburg_2014.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Change22",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Golden_Pudel_Club,_Hamburg_2014.jpg",
+      "fullWidth": 4000
+     }
     },
     {
      "id": "node/14029885503",
@@ -2508,7 +3279,8 @@
      "website": "https://www.uebelundgefaehrlich.com/",
      "openingHours": "\"Abhängig vom Veranstaltungsbeginn\"",
      "wikidataId": "Q2473531",
-     "detailed": true
+     "detailed": true,
+     "description": "nightclub in Hamburg, Germany"
     },
     {
      "id": "node/5204071866",
@@ -2549,7 +3321,18 @@
      "lon": 9.96458,
      "address": "Spielbudenplatz 19",
      "website": "https://www.docks.de/",
-     "wikidataId": "Q1233759"
+     "wikidataId": "Q1233759",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/MK33808_Docks_Hamburg.jpg/500px-MK33808_Docks_Hamburg.jpg",
+      "width": 500,
+      "height": 429,
+      "author": "Martin Kraft",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MK33808_Docks_Hamburg.jpg",
+      "fullWidth": 2238
+     },
+     "description": "music venue in the St. Pauli district of Hamburg, Germany"
     },
     {
      "id": "node/4469658923",

@@ -1,12 +1,14 @@
 /**
  * Refreshes the Wikidata facts of the stored place files without Overpass: applies the relink overrides
- * (src/data/place-overrides.ts) and stores every sight's kinds and link tags (src/lib/places/refresh.ts).
+ * (src/data/place-overrides.ts), stores every sight's kinds and link tags (src/lib/places/refresh.ts), and
+ * the card photos and descriptions (src/lib/places/photos.ts).
  * Run with `npm run data:kinds` (optionally `-- NYC DUB`); a few minutes for all cities, one city at a time.
  */
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { PLACE_OVERRIDES } from "../src/data/place-overrides";
 import { placesFileSchema } from "../src/lib/places/file";
+import { addPhotosAndDescriptions } from "../src/lib/places/photos";
 import { refreshKinds } from "../src/lib/places/refresh";
 
 const DIR = path.join(import.meta.dirname, "..", "src", "data", "places");
@@ -21,7 +23,8 @@ for (const name of files) {
   let result: Awaited<ReturnType<typeof refreshKinds>> | undefined;
   for (let attempt = 0; attempt < 3 && !result; attempt++) {
     try {
-      result = await refreshKinds(file, PLACE_OVERRIDES[file.cityCode] ?? {});
+      const refreshed = await refreshKinds(file, PLACE_OVERRIDES[file.cityCode] ?? {});
+      result = { ...refreshed, file: await addPhotosAndDescriptions(refreshed.file) };
     } catch (error) {
       log(`  ${file.cityCode} failed (${(error as Error).message.slice(0, 100)}), retrying in ${30 * (attempt + 1)}s`);
       await sleep(30_000 * (attempt + 1));

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "SKP",
- "fetchedAt": "2026-10-18T16:39:46.707Z",
+ "fetchedAt": "2026-10-22T06:01:04.334Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,14 +52,25 @@
      "wikidataId": "Q1164804",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/To%C5%A1e_Proeski_Arena_1.jpg/500px-To%C5%A1e_Proeski_Arena_1.jpg",
+      "width": 500,
+      "height": 291,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:To%C5%A1e_Proeski_Arena_1.jpg",
+      "fullWidth": 5100
+     },
+     "description": "Üsküp'te çok amaçlı stadyum"
     },
     {
      "id": "way/474873958",
      "name": "Üsküp Kalesi",
      "localName": "Скопско кале",
-     "lat": 42.00081,
-     "lon": 21.43352,
+     "lat": 42.0008,
+     "lon": 21.43353,
      "openingHours": "07:00-18:00",
      "wikipediaCount": 27,
      "wikidataId": "Q1262367",
@@ -67,7 +78,18 @@
       "adminArea",
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/KaleFortress-Skopje1.JPG/500px-KaleFortress-Skopje1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Yemc",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:KaleFortress-Skopje1.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KaleFortress-Skopje1.JPG",
+      "fullWidth": 3648
+     },
+     "description": "fortress, archaeological and cultural heritage site in Macedonia"
     },
     {
      "id": "wikidata/Q1780883",
@@ -80,50 +102,67 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Stone_Bridge_so_Arheolo%C5%A1kiot.jpg/500px-Stone_Bridge_so_Arheolo%C5%A1kiot.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Prince Roy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_so_Arheolo%C5%A1kiot.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Kuzey Makedonya'nın Üsküp kentinde Osmanlı köprüsü"
     },
     {
-     "id": "wikidata/Q387",
-     "name": "Türk Çarşısı, Üsküp",
-     "localName": "Old Bazaar",
-     "lat": 42.00076,
-     "lon": 21.43696,
+     "id": "way/474869860",
+     "name": "Üsküp Türk Çarşısı",
+     "localName": "Турска Чаршија",
+     "lat": 42.00111,
+     "lon": 21.43712,
      "wikipediaCount": 26,
      "wikidataId": "Q387",
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Skopje_OldBazaar.jpg/500px-Skopje_OldBazaar.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nikkyb",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Skopje_OldBazaar.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_OldBazaar.jpg",
+      "fullWidth": 3264
+     },
+     "description": "bazaar in Skopje, North Macedonia"
     },
     {
      "id": "way/172178304",
      "name": "Mustafa Paşa Camii",
-     "localName": "Мустафа паша џамија",
-     "lat": 42.00203,
-     "lon": 21.43541,
+     "localName": "Мустафа-пашина џамија",
+     "lat": 42.00204,
+     "lon": 21.43546,
      "wikipediaCount": 21,
      "wikidataId": "Q1267418",
      "kinds": [
       "heritage",
       "organization",
       "religious"
-     ]
-    },
-    {
-     "id": "wikidata/Q1273251",
-     "name": "Kurşunlu Han",
-     "localName": "Kuršumli An",
-     "lat": 42.00306,
-     "lon": 21.43694,
-     "wikipediaCount": 20,
-     "wikidataId": "Q1273251",
-     "kinds": [
-      "business",
-      "heritage",
-      "hotel",
-      "organization",
-      "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Macedonia_%285881756742%29.jpg/500px-Macedonia_%285881756742%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Antti T. Nissinen from Finland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Macedonia_(5881756742).jpg",
+      "fullWidth": 2448
+     },
+     "description": "Üsküp, Kuzey Makedonya'da cami"
     },
     {
      "id": "way/239422349",
@@ -138,7 +177,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Porta_Macedonia%2C_Skopie%2C_Macedonia_del_Norte%2C_2014-04-16%2C_DD_105.jpg/500px-Porta_Macedonia%2C_Skopie%2C_Macedonia_del_Norte%2C_2014-04-16%2C_DD_105.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Porta_Macedonia,_Skopie,_Macedonia_del_Norte,_2014-04-16,_DD_105.jpg",
+      "fullWidth": 5061
+     },
+     "description": "triumphal arch in Skopje, North Macedonia"
     },
     {
      "id": "wikidata/Q3070972",
@@ -150,7 +200,18 @@
      "wikidataId": "Q3070972",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Stone_Bridge_Skopje_4.jpg/500px-Stone_Bridge_Skopje_4.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_Skopje_4.jpg",
+      "fullWidth": 5220
+     },
+     "description": "square in Skopje, North Macedonia"
     },
     {
      "id": "wikidata/Q2121610",
@@ -164,7 +225,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Saat_kula_i_Sultan-muratova_dzamija%2C_Skopje.jpg/500px-Saat_kula_i_Sultan-muratova_dzamija%2C_Skopje.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Ilievski Vladimir",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saat_kula_i_Sultan-muratova_dzamija,_Skopje.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Üsküp, Kuzey Makedonya'da cami"
     },
     {
      "id": "wikidata/Q3097759",
@@ -176,7 +248,18 @@
      "wikidataId": "Q3097759",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Skopje_Train_Station_from_Mount_Vodno.JPG/500px-Skopje_Train_Station_from_Mount_Vodno.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Alan Grant",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_Train_Station_from_Mount_Vodno.JPG",
+      "fullWidth": 800
+     },
+     "description": "main railway station in Skopje, Macedonia"
     },
     {
      "id": "way/175265123",
@@ -188,7 +271,18 @@
      "wikidataId": "Q1758749",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/St._Clement_Church_Skopje_2.jpg/500px-St._Clement_Church_Skopje_2.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Clement_Church_Skopje_2.jpg",
+      "fullWidth": 5160
+     },
+     "description": "church building in Skopje, North Macedonia"
     },
     {
      "id": "wikidata/Q12470062",
@@ -199,7 +293,18 @@
      "wikidataId": "Q12470062",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Skopje_32321_67.jpg/500px-Skopje_32321_67.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "XeresNelro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_32321_67.jpg",
+      "fullWidth": 4000
+     },
+     "description": "pedestrian bridge in Skopje, North Macedonia"
     },
     {
      "id": "wikidata/Q3133681",
@@ -211,14 +316,25 @@
      "wikidataId": "Q3133681",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Skopje_Zoo_1.jpg/500px-Skopje_Zoo_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Smooth_O ( talk · contribs )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_Zoo_1.jpg",
+      "fullWidth": 3072
+     },
+     "description": "zoo in Skopje, North Macedonia"
     },
     {
      "id": "relation/5360060",
-     "name": "Kapan Han",
-     "localName": "Капан ан",
-     "lat": 42.00011,
+     "name": "Капан АН",
+     "lat": 42.00008,
      "lon": 21.43679,
+     "openingHours": "24/7",
      "wikipediaCount": 12,
      "wikidataId": "Q1283741",
      "kinds": [
@@ -227,7 +343,18 @@
       "hotel",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%D0%9A%D0%B0%D0%BF%D0%B0%D0%BD_%D0%B0%D0%BD_2.jpg/500px-%D0%9A%D0%B0%D0%BF%D0%B0%D0%BD_%D0%B0%D0%BD_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kiril Simeonovski",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%BF%D0%B0%D0%BD_%D0%B0%D0%BD_2.jpg",
+      "fullWidth": 2816
+     },
+     "description": "caravanserai in the Old Bazaar of Skopje, North Macedonia"
     },
     {
      "id": "wikidata/Q2045516",
@@ -235,7 +362,18 @@
      "lat": 41.99722,
      "lon": 21.44472,
      "wikipediaCount": 12,
-     "wikidataId": "Q2045516"
+     "wikidataId": "Q2045516",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/MRT_Center_2.jpg/500px-MRT_Center_2.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MRT_Center_2.jpg",
+      "fullWidth": 5100
+     },
+     "description": "building in Krnjevo neighborhood, Skopje, Macedonia."
     },
     {
      "id": "wikidata/Q3406650",
@@ -248,7 +386,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Risticpalace-night.JPG/500px-Risticpalace-night.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Yemc",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Risticpalace-night.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Risticpalace-night.JPG",
+      "fullWidth": 3648
+     },
+     "description": "building and cultural heritage site in Skopje, Macedonia"
     },
     {
      "id": "wikidata/Q1009860",
@@ -262,7 +411,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Isak_Bey_Turbe_Aladja_Mosque_Skopje.JPG/500px-Isak_Bey_Turbe_Aladja_Mosque_Skopje.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Dominik Tefert",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Isak_Bey_Turbe_Aladja_Mosque_Skopje.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Isak_Bey_Turbe_Aladja_Mosque_Skopje.JPG",
+      "fullWidth": 2560
+     },
+     "description": "Üsküp, Kuzey Makedonya'da cami"
     },
     {
      "id": "wikidata/Q11737299",
@@ -273,7 +433,18 @@
      "wikidataId": "Q11737299",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Sacred_Heart_of_Jesus_Skopje_4.jpg/500px-Sacred_Heart_of_Jesus_Skopje_4.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sacred_Heart_of_Jesus_Skopje_4.jpg",
+      "fullWidth": 5000
+     },
+     "description": "Roman Catholic cathedral in Skopje, North Macedonia"
     },
     {
      "id": "wikidata/Q1283775",
@@ -286,15 +457,25 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Skopje%2C_Kostelik_sv._Spasa%2C_Skoplje%2C_16._stol.jpg/500px-Skopje%2C_Kostelik_sv._Spasa%2C_Skoplje%2C_16._stol.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Martin Brož",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje,_Kostelik_sv._Spasa,_Skoplje,_16._stol.jpg",
+      "fullWidth": 640
+     },
+     "description": "Kuzey Makedonya'da bir kilise"
     },
     {
-     "id": "relation/21405466",
+     "id": "wikidata/Q3085319",
      "name": "Sulu Han",
-     "localName": "Сули ан",
+     "localName": "Suli An",
      "lat": 42.00167,
-     "lon": 21.43776,
-     "address": "Битпазарска",
+     "lon": 21.43778,
      "wikipediaCount": 11,
      "wikidataId": "Q3085319",
      "kinds": [
@@ -303,14 +484,25 @@
       "hotel",
       "organization",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Suli_han.JPG/500px-Suli_han.JPG",
+      "width": 500,
+      "height": 374,
+      "author": "Antidiskriminator",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Suli_han.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Suli_han.JPG",
+      "fullWidth": 2288
+     },
+     "description": "Üsküp, Kuzey Makedonya'daki tarihi bir kervansaray"
     },
     {
      "id": "way/44038503",
      "name": "Saat kulesi",
-     "localName": "Саат кула",
-     "lat": 42.00202,
-     "lon": 21.44132,
+     "localName": "Саат-кула",
+     "lat": 42.002,
+     "lon": 21.44135,
      "wikipediaCount": 10,
      "wikidataId": "Q1131501",
      "kinds": [
@@ -318,12 +510,23 @@
       "attraction",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/%D0%A1%D0%B0%D0%B0%D1%82-%D0%BA%D1%83%D0%BB%D0%B0_%D0%B2%D0%BE_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5.jpg/500px-%D0%A1%D0%B0%D0%B0%D1%82-%D0%BA%D1%83%D0%BB%D0%B0_%D0%B2%D0%BE_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Kiril Simeonovski",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%B0%D1%82-%D0%BA%D1%83%D0%BB%D0%B0_%D0%B2%D0%BE_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5.jpg",
+      "fullWidth": 2112
+     },
+     "description": "Üsküp'te yer alan 16. yy Osmanlı saat kulesi"
     },
     {
      "id": "way/44038732",
      "name": "Иса-бегова џамија",
-     "lat": 42.00323,
+     "lat": 42.0032,
      "lon": 21.44176,
      "wikipediaCount": 8,
      "wikidataId": "Q1509599",
@@ -331,31 +534,40 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Isa_bey_mosque_skopje_1.jpg/500px-Isa_bey_mosque_skopje_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Arwena",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Isa_bey_mosque_skopje_1.jpg",
+      "fullWidth": 3648
+     },
+     "description": "Kuzey Makedonya'nın Üsküp kentinde tarihi cami"
     },
     {
      "id": "node/908273421",
      "name": "Воин на коњ (Александар Македонски)",
-     "lat": 41.99593,
-     "lon": 21.43148,
+     "lat": 41.99591,
+     "lon": 21.43147,
      "wikipediaCount": 7,
      "wikidataId": "Q3497603",
      "kinds": [
       "notPlace"
-     ]
-    },
-    {
-     "id": "way/1559869013",
-     "name": "Şengül Hamam",
-     "localName": "Шенѓул амам",
-     "lat": 42.00307,
-     "lon": 21.43666,
-     "wikipediaCount": 3,
-     "wikidataId": "Q12904470",
-     "kinds": [
-      "heritage",
-      "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Skopje_-_Warrior_on_a_Horse_%289451253725%29.jpg/500px-Skopje_-_Warrior_on_a_Horse_%289451253725%29.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Andrzej Wójtowicz from Poznań, Poland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_-_Warrior_on_a_Horse_(9451253725).jpg",
+      "fullWidth": 2000
+     },
+     "description": "Monument in Skopje, North Macedonia"
     },
     {
      "id": "way/32885596",
@@ -363,21 +575,17 @@
      "lat": 42.00836,
      "lon": 21.42984,
      "wikipediaCount": 2,
-     "wikidataId": "Q83365913"
-    },
-    {
-     "id": "node/6602681335",
-     "name": "Сила, Слава и Победа",
-     "lat": 42.00044,
-     "lon": 21.43233,
-     "wikipediaCount": 1,
-     "wikidataId": "Q12910338"
-    },
-    {
-     "id": "way/176160189",
-     "name": "Alexander the Great Statue\nАлександар Македонски Споменик",
-     "lat": 41.99592,
-     "lon": 21.43148
+     "wikidataId": "Q83365913",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Cimetiere_Militaire_Franceis_%2828409355437%29.jpg/500px-Cimetiere_Militaire_Franceis_%2828409355437%29.jpg",
+      "width": 500,
+      "height": 798,
+      "author": "aiva.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cimetiere_Militaire_Franceis_(28409355437).jpg",
+      "fullWidth": 1763
+     }
     },
     {
      "id": "node/4271160712",
@@ -393,11 +601,18 @@
      "lon": 21.43355
     },
     {
+     "id": "node/4365876494",
+     "name": "Murat Paşa Camii",
+     "localName": "Мустафа-пашина џамија",
+     "lat": 42.00085,
+     "lon": 21.4375
+    },
+    {
      "id": "node/4183631289",
      "name": "Prometheus",
      "localName": "Прометеј",
      "lat": 41.9933,
-     "lon": 21.43374
+     "lon": 21.43372
     },
     {
      "id": "way/44039295",
@@ -433,7 +648,7 @@
     },
     {
      "id": "way/553070358",
-     "name": "Колонада - Независна Македонија",
+     "name": "Колонада",
      "lat": 41.99639,
      "lon": 21.43574
     },
@@ -452,8 +667,8 @@
     {
      "id": "node/4386764089",
      "name": "Никола Карев",
-     "lat": 41.99305,
-     "lon": 21.43315
+     "lat": 41.99302,
+     "lon": 21.4332
     },
     {
      "id": "node/8433354043",
@@ -478,6 +693,12 @@
      "name": "Споменик на Јуриј Гагарин",
      "lat": 41.99493,
      "lon": 21.41087
+    },
+    {
+     "id": "node/4242928035",
+     "name": "Тодор Александров",
+     "lat": 41.98343,
+     "lon": 21.43911
     }
    ]
   },
@@ -485,6 +706,32 @@
    "status": "ok",
    "wikipediaCountsAvailable": true,
    "places": [
+    {
+     "id": "relation/5360062",
+     "name": "Куршумли-ан",
+     "lat": 42.00312,
+     "lon": 21.43704,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1273251",
+     "kinds": [
+      "business",
+      "heritage",
+      "hotel",
+      "organization",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Kurshumli-An-Skopje-MK.JPG/500px-Kurshumli-An-Skopje-MK.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Македонец",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kurshumli-An-Skopje-MK.JPG",
+      "fullWidth": 3264
+     },
+     "description": "Ottoman caravanserai in Skopje, North Macedonia"
+    },
     {
      "id": "way/176040285",
      "name": "Музеј на Град Скопје",
@@ -498,7 +745,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Skopje_Old_Station.JPG/500px-Skopje_Old_Station.JPG",
+      "width": 500,
+      "height": 384,
+      "author": "Mazbln",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_Old_Station.JPG",
+      "fullWidth": 3562
+     },
+     "description": "museum in Macedonia"
     },
     {
      "id": "way/176051871",
@@ -506,33 +764,27 @@
      "localName": "Спомен куќа на Мајка Тереза",
      "lat": 41.99383,
      "lon": 21.43086,
-     "address": "Македонија 9",
-     "website": "https://memorialhouseofmotherteresa.com/",
-     "openingHours": "Tu-Su 10:00-18:00",
+     "address": "Македонија",
+     "website": "https://www.memorialhouseofmotherteresa.org/",
+     "openingHours": "Mo-Fr 09:00-20:00, Sa-Su 09:00-14:00",
      "wikipediaCount": 16,
      "wikidataId": "Q587617",
      "kinds": [
       "heritage",
       "museum",
       "organization"
-     ]
-    },
-    {
-     "id": "way/32812963",
-     "name": "Makedonya müzesi",
-     "localName": "Музеј на Македонија",
-     "lat": 42.00259,
-     "lon": 21.43621,
-     "address": "Јосиф Михајловиќ 7",
-     "website": "https://www.museum.org.mk/",
-     "openingHours": "Tu-Fr 09:00-17:00; Sa 09:00-15:00; Su 09:00-13:00",
-     "wikipediaCount": 15,
-     "wikidataId": "Q3133557",
-     "kinds": [
-      "heritage",
-      "museum",
-      "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Monument_to_Mother_Teresa_-_panoramio.jpg/500px-Monument_to_Mother_Teresa_-_panoramio.jpg",
+      "width": 500,
+      "height": 499,
+      "author": "Tim Tregenza",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monument_to_Mother_Teresa_-_panoramio.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum in Skopje, North Macedonia"
     },
     {
      "id": "way/32887087",
@@ -541,14 +793,52 @@
      "lon": 21.43282,
      "address": "Самоилова",
      "website": "https://msu.mk/home/",
-     "openingHours": "Tu-Sa 10:00-17:00; Su 09:00-13:00",
+     "openingHours": "Tu-Sa 10:00-15:00; Su 09:00-13:00",
      "wikipediaCount": 15,
      "wikidataId": "Q3329592",
      "kinds": [
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Muzej_na_sovremenata_umetnost_-_Skopje_%2859%29.jpg/500px-Muzej_na_sovremenata_umetnost_-_Skopje_%2859%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Nikolina Hristovska",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzej_na_sovremenata_umetnost_-_Skopje_(59).jpg",
+      "fullWidth": 3264
+     },
+     "description": "museum in Skopje, North Macedonia"
+    },
+    {
+     "id": "way/32812963",
+     "name": "Makedonya müzesi",
+     "localName": "Музеј на Македонија",
+     "lat": 42.00267,
+     "lon": 21.43621,
+     "address": "Прохор Пчински",
+     "openingHours": "Tu-Fr 09:00-17:00; Sa 09:00-15:00; Su 09:00-13:00",
+     "wikipediaCount": 15,
+     "wikidataId": "Q3133557",
+     "kinds": [
+      "heritage",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Museum_of_Macedonia_11.jpg/500px-Museum_of_Macedonia_11.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Oliver the Macedonian1",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Macedonia_11.jpg",
+      "fullWidth": 1024
+     },
+     "description": "museum in the Old Bazaar in Skopje, North Macedonia"
     },
     {
      "id": "way/172180530",
@@ -565,23 +855,43 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Museum_of_the_Macedonian_Struggle.jpg/500px-Museum_of_the_Macedonian_Struggle.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Тиверополник",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_the_Macedonian_Struggle.jpg",
+      "fullWidth": 4320
+     },
+     "description": "museum in Skopje"
     },
     {
-     "id": "way/172171547",
-     "name": "Davut Paşa Hamam - Ulusal Galeri",
-     "localName": "Даут пашин амам - Национална галерија",
-     "lat": 41.99872,
-     "lon": 21.43572,
-     "website": "https://nationalgallery.mk/",
-     "openingHours": "Tu-Su 10:00-18:00",
+     "id": "wikidata/Q1283985",
+     "name": "Davut Paşa Hamamı",
+     "localName": "Daout Pacha Hammam",
+     "lat": 41.99861,
+     "lon": 21.43583,
      "wikipediaCount": 12,
      "wikidataId": "Q1283985",
      "kinds": [
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Skopje-Daut_Pashin_Hamam.jpg/500px-Skopje-Daut_Pashin_Hamam.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sanja Nikolic from Macedonia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje-Daut_Pashin_Hamam.jpg",
+      "fullWidth": 900
+     },
+     "description": "Kuzey Makedonya'nın Üsküp kentinde tarihi hamam"
     },
     {
      "id": "way/172186249",
@@ -596,14 +906,25 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Skopje_X16.jpg/500px-Skopje_X16.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "This illustration was made by Rašo . An email to Rašo would be appreciated too.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skopje_X16.jpg",
+      "fullWidth": 3872
+     },
+     "description": "museum in Macedonia"
     },
     {
      "id": "way/180363121",
-     "name": "Çifte Hamam - Makedonya Ulusal Galerisi",
-     "localName": "Национална галерија на Македонија - Чифте Амам",
-     "lat": 42.00116,
-     "lon": 21.43728,
+     "name": "Çifte Hamam",
+     "localName": "Национална галерија на Македонија „Чифте-амам“",
+     "lat": 42.00113,
+     "lon": 21.43727,
      "website": "https://nationalgallery.mk/",
      "openingHours": "Tu-Su 10:00-18:00",
      "wikipediaCount": 10,
@@ -612,23 +933,43 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/National_Artgallery_of_Republic_of_Macedonia_%28Skopje%29.JPG/500px-National_Artgallery_of_Republic_of_Macedonia_%28Skopje%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Svik at Bulgarian Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Artgallery_of_Republic_of_Macedonia_(Skopje).JPG",
+      "fullWidth": 2272
+     },
+     "description": "Makedonya Üsküp'te tarihî bir hamam"
     },
     {
      "id": "way/229930502",
      "name": "Kuzey Makedonya Arkeoloji Müzesi",
      "localName": "Археолошки музеј на Македонија",
-     "lat": 41.9968,
-     "lon": 21.43445,
-     "address": "Кеј Димитар Влахов",
-     "website": "https://amm.org.mk/",
+     "lat": 41.99686,
+     "lon": 21.43449,
      "openingHours": "Tu-Su 10:00-18:00",
      "wikipediaCount": 10,
      "wikidataId": "Q65295584",
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bridge_of_Civilizations_Skopje_2.jpg/500px-Bridge_of_Civilizations_Skopje_2.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bridge_of_Civilizations_Skopje_2.jpg",
+      "fullWidth": 5250
+     },
+     "description": "Museum in Skopje, North Macedonia"
     },
     {
      "id": "node/172348137",
@@ -642,7 +983,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Macedonian_Museum_of_Natural_History_2015_04.JPG/500px-Macedonian_Museum_of_Natural_History_2015_04.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Спасимир",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Macedonian_Museum_of_Natural_History_2015_04.JPG",
+      "fullWidth": 3672
+     },
+     "description": "museum in Skopje"
     },
     {
      "id": "way/474882772",
@@ -655,7 +1007,26 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_%28Skopje%29_%2892%29_%28cropped%29.jpg/500px-%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_%28Skopje%29_%2892%29_%28cropped%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "This illustration was made by Rašo . An email to Rašo would be appreciated too.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5_(Skopje)_(92)_(cropped).jpg",
+      "fullWidth": 1936
+     },
+     "description": "memorial house and cultural heritage site in Skopje"
+    },
+    {
+     "id": "way/172171547",
+     "name": "Национална галерија „Даут-пашин амам“",
+     "lat": 41.99872,
+     "lon": 21.43572,
+     "website": "https://nationalgallery.mk/",
+     "openingHours": "Tu-Su 10:00-18:00"
     },
     {
      "id": "way/1213925475",
@@ -670,10 +1041,22 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/5292130827",
+     "name": "11 Oktomvri 46",
+     "lat": 41.9886,
+     "lon": 21.43603
+    },
+    {
      "id": "node/5292130825",
      "name": "Kratovska 15",
      "lat": 41.98228,
      "lon": 21.42802
+    },
+    {
+     "id": "node/5292131421",
+     "name": "Teodosij Gologanov 69",
+     "lat": 41.99487,
+     "lon": 21.41322
     },
     {
      "id": "node/5292130927",
@@ -704,6 +1087,12 @@
      "name": "Питу Гули 31",
      "lat": 41.98809,
      "lon": 21.41259
+    },
+    {
+     "id": "node/5292130838",
+     "name": "Рилски конгрес 100",
+     "lat": 41.97918,
+     "lon": 21.43165
     },
     {
      "id": "node/5292130922",
@@ -755,28 +1144,6 @@
      "website": "http://www.amigos.com.mk/",
      "openingHours": "Mo-Th 08:00-24:00, Fr,Sa 08:00-01:00, Su 10:00-24:00",
      "cuisine": "mexican",
-     "detailed": true
-    },
-    {
-     "id": "way/585626229",
-     "name": "Bidi Zdrav",
-     "lat": 42.00397,
-     "lon": 21.41608,
-     "address": "Орце Николов 142",
-     "website": "https://bidizdrav.com.mk/",
-     "openingHours": "Monday - Friday 08:00 - 17:00",
-     "cuisine": "healthy, sandwich, juice, chia, mediterranean, salad, smoothies",
-     "detailed": true
-    },
-    {
-     "id": "node/14078144915",
-     "name": "Dropstop",
-     "lat": 41.99622,
-     "lon": 21.42736,
-     "address": "Максим Горки 31А",
-     "website": "https://dropstop.mk/",
-     "openingHours": "Mo-Su 08:00-24:00",
-     "cuisine": "european, mediterranean, fine dining, steak house",
      "detailed": true
     },
     {
@@ -862,32 +1229,9 @@
      "name": "Кај Џино",
      "lat": 41.99438,
      "lon": 21.43404,
-     "address": "ГТЦ 205",
      "website": "http://www.restorangino.mk/",
      "openingHours": "Mo 08:00-24:00, Tu,We,Fr,Sa 09:00-24:00, Th 09:00-23:00, Su 09:00-01:00",
      "cuisine": "italian",
-     "detailed": true
-    },
-    {
-     "id": "node/5033108253",
-     "name": "Кантина",
-     "lat": 42.00061,
-     "lon": 21.41917,
-     "address": "Радњанска 4",
-     "website": "https://kantina.mk/urban-bistro/",
-     "openingHours": "Mo-Su 09:00-24:00",
-     "cuisine": "burger, coffee shop, sandwich, ice cream, pizza, pasta, dessert",
-     "detailed": true
-    },
-    {
-     "id": "node/5813417254",
-     "name": "Кафана \"Дебар Маало\"",
-     "lat": 42.00078,
-     "lon": 21.42011,
-     "address": "Живко Чинго 5",
-     "website": "https://kafanadebarmaalo.com/en",
-     "openingHours": "Mo-Th 08:00-00:00; Fr-Su 08:00-01:00",
-     "cuisine": "savory pancakes, german, chicken, diner, american, local, barbecue, tea, fine dining, cake, pasta, international, french, greek, seafood, fish and chips, pancake, sandwich, coffee shop, balkan, mediterranean, croatian, ramen, turkish, fish, kebab, grill",
      "detailed": true
     },
     {
@@ -920,17 +1264,6 @@
      "address": "Булевар Илинден",
      "website": "https://www.marger.com.mk/",
      "openingHours": "08:00-24:00, Fr-Sa 08:00-01:00",
-     "cuisine": "regional",
-     "detailed": true
-    },
-    {
-     "id": "way/176159879",
-     "name": "Стара куќа",
-     "lat": 41.99684,
-     "lon": 21.43844,
-     "address": "Пајко Маало 14",
-     "website": "https://starakuka.com.mk/",
-     "openingHours": "Mo-Fr 08:00-00:00; Sa 12:00-00:00; Su 12:00-22:00",
      "cuisine": "regional",
      "detailed": true
     },
@@ -1015,8 +1348,17 @@
      "lat": 41.99453,
      "lon": 21.42827,
      "address": "Ул, Dame Gruev бр.18, Skopje 1000, North Macedonia 18",
-     "website": "https://instagram.com/gostilnica_vezenka",
+     "website": "https://instagram.com/gostilnica_vezenka?igshid=MDM4ZDc5MmU=",
      "openingHours": "Mo-Th 08:00-00:00; Fr, Sa 08:00-00:30",
+     "detailed": true
+    },
+    {
+     "id": "node/367252434",
+     "name": "Бифе Челик",
+     "lat": 41.99369,
+     "lon": 21.41166,
+     "openingHours": "Mo-Sa 08:00-21:30",
+     "cuisine": "balkan, coffee shop, diner, grill, ice cream, regional, sandwich",
      "detailed": true
     },
     {
@@ -1039,13 +1381,53 @@
      "detailed": true
     },
     {
-     "id": "way/589207627",
-     "name": "Градска кафеана „Идадија“",
-     "lat": 42.00138,
-     "lon": 21.42107,
-     "address": "Живко Чинго 1",
-     "openingHours": "Mo-Th 08:00-17:00, Fr-Sa 08:00-01:00",
-     "cuisine": "barbecue, salad, breakfast, diner, pancake, balkan, regional, grill, chicken, wings, dessert, tea, juice, sausage, soup, fries, european, brunch",
+     "id": "way/477325816",
+     "name": "Гурмет",
+     "lat": 42.00125,
+     "lon": 21.42094,
+     "address": "Отон Жупанчич 3",
+     "openingHours": "09:00-24:00, Fr-Sa 09:00-01:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5572053321",
+     "name": "Дебар Маало",
+     "lat": 42.00133,
+     "lon": 21.42057,
+     "address": "Живко Чинго",
+     "openingHours": "Su-Th 08:00-00:30; Fr-Sa 08:00-01:00",
+     "cuisine": "chicken, diner, beef bowl, american, ice cream, local, tea, pizza, burger, cake, pasta, french, italian pizza, seafood, crepe, pancake, sandwich, coffee shop, balkan, mediterranean, croatian, fish, kebab, breakfast, grill",
+     "detailed": true
+    },
+    {
+     "id": "node/5033108253",
+     "name": "Кантина",
+     "lat": 42.00061,
+     "lon": 21.41917,
+     "address": "Радњанска 4",
+     "openingHours": "Mo-Sa 09:00-24:00",
+     "cuisine": "burger, coffee shop, sandwich, ice cream",
+     "detailed": true
+    },
+    {
+     "id": "node/5813417254",
+     "name": "Кафана \"Дебар Маало\"",
+     "lat": 42.00078,
+     "lon": 21.42011,
+     "address": "Живко Чинго",
+     "openingHours": "Mo-Th 08:00-00:00; Fr-Su 08:00-01:00",
+     "cuisine": "savory pancakes, german, chicken, diner, american, local, barbecue, tea, fine dining, cake, pasta, international, french, greek, seafood, fish and chips, pancake, sandwich, coffee shop, balkan, mediterranean, croatian, ramen, turkish, fish, kebab, grill",
+     "detailed": true
+    },
+    {
+     "id": "node/13593323782",
+     "name": "Кутлеш",
+     "lat": 41.98925,
+     "lon": 21.4486,
+     "address": "Народен Херој Кузман Јосифоски-Питу 26.3",
+     "openingHours": "Mo-Fr 09:00-23:30; Sa-Su 12:00-00:00",
+     "cuisine": "pizza",
      "detailed": true
     }
    ]
@@ -1061,7 +1443,7 @@
      "lon": 21.42631,
      "address": "Булевар Климент Охридски",
      "website": "https://vegan365kitchen.com/",
-     "openingHours": "Tu-Fr 09:00-18:30; Sa 11:00-18:30; Mo off",
+     "openingHours": "Mo-Fr 09:00-17:00",
      "cuisine": "burger, sandwich, cake, coffee shop",
      "detailed": true
     },
@@ -1251,13 +1633,6 @@
      "openingHours": "Mo-Su 09:00-21:00"
     },
     {
-     "id": "node/5284221296",
-     "name": "Laika",
-     "lat": 42.00137,
-     "lon": 21.4217,
-     "openingHours": "Mo-Th 09:00-24:00, Fr,Sa 09:00-01:00, Su 10:00-18:00"
-    },
-    {
      "id": "node/12110076863",
      "name": "Lipa Cafe",
      "lat": 42.00212,
@@ -1278,7 +1653,7 @@
      "lat": 41.99618,
      "lon": 21.41532,
      "address": "9-ti Maj 24",
-     "openingHours": "Mo-Fr 08:00-20:00; Sa-Su 10:00-20:00"
+     "openingHours": "Mo-Fr 08:00-18:00"
     },
     {
      "id": "node/6054032912",
@@ -1293,6 +1668,13 @@
      "lat": 41.99399,
      "lon": 21.43039,
      "openingHours": "Mo-Su 09:00-21:00"
+    },
+    {
+     "id": "node/6821158686",
+     "name": "Mulliri",
+     "lat": 41.99765,
+     "lon": 21.43463,
+     "openingHours": "Mo-Su 11:00-23:00"
     }
    ]
   },
@@ -1324,16 +1706,6 @@
      "address": "Булевар Климент Охридски 18A",
      "website": "https://www.facebook.com/pg/cosy.cosybar/about/?ref=page_internal",
      "openingHours": "Tu-Th 16:00-00:00, Fr-Sa 16:00-01:00; Su 16:00-00:00",
-     "detailed": true
-    },
-    {
-     "id": "node/5659318796",
-     "name": "RadioBar",
-     "lat": 42.00023,
-     "lon": 21.42345,
-     "address": "Пиринска 52",
-     "website": "https://www.radiobar.mk/",
-     "openingHours": "PH,Mo-Su 09:00-00:00, Fr,Sa 09:00-01:00",
      "detailed": true
     },
     {
@@ -1374,14 +1746,6 @@
      "openingHours": "Mo-Su 00:00-02:00,09:00-24:00",
      "cuisine": "regional",
      "detailed": true
-    },
-    {
-     "id": "node/12913221925",
-     "name": "Barback",
-     "lat": 42.00287,
-     "lon": 21.41761,
-     "address": "Orce Nikolov 139",
-     "website": "https://barback.mk/menu/"
     },
     {
      "id": "node/2695392360",
@@ -1442,6 +1806,13 @@
      "lat": 41.99556,
      "lon": 21.42618,
      "website": "https://piazzaliberta.mk/"
+    },
+    {
+     "id": "node/5659318796",
+     "name": "Radio bar",
+     "lat": 42.00023,
+     "lon": 21.42345,
+     "openingHours": "PH,Mo-Su 09:00-24:00, Fr,Sa 09:00-01:00"
     },
     {
      "id": "node/6810254485",
@@ -1538,6 +1909,12 @@
      "name": "C'est la vie",
      "lat": 41.99983,
      "lon": 21.42413
+    },
+    {
+     "id": "node/12319620301",
+     "name": "Drunken Monkeys",
+     "lat": 41.99653,
+     "lon": 21.42768
     }
    ]
   },

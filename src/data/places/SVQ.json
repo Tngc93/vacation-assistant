@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "SVQ",
- "fetchedAt": "2026-10-18T16:06:03.631Z",
+ "fetchedAt": "2026-10-22T05:15:56.375Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/CATEDRAL_DE_SEVILLA.jpg/500px-CATEDRAL_DE_SEVILLA.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "PEPE GADEIRAS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CATEDRAL_DE_SEVILLA.jpg",
+      "fullWidth": 5184
+     },
+     "description": "İspanya'da bulunan bir Roma Katolik katedrali"
     },
     {
      "id": "wikidata/Q275429",
@@ -65,7 +76,18 @@
      "wikidataId": "Q275429",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2022-10-25_1_Estadio_Ram%C3%B3n_S%C3%A1nchez_Pizju%C3%A1n_%28Sevilla_FC%29.jpg/500px-2022-10-25_1_Estadio_Ram%C3%B3n_S%C3%A1nchez_Pizju%C3%A1n_%28Sevilla_FC%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Niels98",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2022-10-25_1_Estadio_Ram%C3%B3n_S%C3%A1nchez_Pizju%C3%A1n_(Sevilla_FC).jpg",
+      "fullWidth": 4032
+     },
+     "description": "football stadium in Seville, Spain"
     },
     {
      "id": "way/22747187",
@@ -82,7 +104,18 @@
       "castle",
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Patio_de_las_doncellas.jpg/500px-Patio_de_las_doncellas.jpg",
+      "width": 500,
+      "height": 330,
+      "author": "Cat from Sevilla, Spain",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Patio_de_las_doncellas.jpg",
+      "fullWidth": 3424
+     },
+     "description": "royal palace in Seville, Spain"
     },
     {
      "id": "node/4893960422",
@@ -94,7 +127,18 @@
      "wikidataId": "Q834479",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Giralda_de_Sevilla_%283%29.jpg/500px-Giralda_de_Sevilla_%283%29.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Alberto-g-rovi",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Giralda_de_Sevilla_(3).jpg",
+      "fullWidth": 4671
+     },
+     "description": "Monument in Seville, Spain"
     },
     {
      "id": "wikidata/Q368737",
@@ -106,7 +150,18 @@
      "wikidataId": "Q368737",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Panoramio_-_V%26A_Dudush_-_Estadio_Ol%C3%ADmpico_57_619.jpg/500px-Panoramio_-_V%26A_Dudush_-_Estadio_Ol%C3%ADmpico_57_619.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "V&A Dudush",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Panoramio_-_V%26A_Dudush_-_Estadio_Ol%C3%ADmpico_57_619.jpg",
+      "fullWidth": 1300
+     },
+     "description": "football stadium"
     },
     {
      "id": "way/40670357",
@@ -118,7 +173,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Plaza_de_Espa%C3%B1a_%28Sevilla%29_-_01.jpg/500px-Plaza_de_Espa%C3%B1a_%28Sevilla%29_-_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plaza_de_Espa%C3%B1a_(Sevilla)_-_01.jpg",
+      "fullWidth": 3888
+     },
+     "description": "plaza in Seville, Spain"
     },
     {
      "id": "wikidata/Q2274061",
@@ -135,7 +201,18 @@
       "sportsVenue",
       "square",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/La_Maestranza_-_Seville.JPG/500px-La_Maestranza_-_Seville.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "José Luiz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Maestranza_-_Seville.JPG",
+      "fullWidth": 5184
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/441795089",
@@ -149,7 +226,18 @@
       "heritage",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Palacio_de_San_Telmo%2C_Sevilla%2C_Espa%C3%B1a%2C_2015-12-06%2C_DD_74.JPG/500px-Palacio_de_San_Telmo%2C_Sevilla%2C_Espa%C3%B1a%2C_2015-12-06%2C_DD_74.JPG",
+      "width": 500,
+      "height": 407,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_San_Telmo,_Sevilla,_Espa%C3%B1a,_2015-12-06,_DD_74.JPG",
+      "fullWidth": 6138
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/138602581",
@@ -157,7 +245,18 @@
      "lat": 37.39313,
      "lon": -5.99181,
      "wikipediaCount": 17,
-     "wikidataId": "Q3087671"
+     "wikidataId": "Q3087671",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Setas_2022An006.jpg/500px-Setas_2022An006.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Anual",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Setas_2022An006.jpg",
+      "fullWidth": 6000
+     },
+     "description": "large wooden structure in Seville"
     },
     {
      "id": "wikidata/Q2627907",
@@ -170,7 +269,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Parque_de_Maria_Luisa%2C_Sevilla.jpg/500px-Parque_de_Maria_Luisa%2C_Sevilla.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Roberta Morea from Madrid",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parque_de_Maria_Luisa,_Sevilla.jpg",
+      "fullWidth": 2048
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "wikidata/Q2746748",
@@ -178,7 +288,18 @@
      "lat": 37.39194,
      "lon": -6.00972,
      "wikipediaCount": 14,
-     "wikidataId": "Q2746748"
+     "wikidataId": "Q2746748",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Torre_Sevilla_abril_2015.jpg/500px-Torre_Sevilla_abril_2015.jpg",
+      "width": 500,
+      "height": 1035,
+      "author": "Gzzz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_Sevilla_abril_2015.jpg",
+      "fullWidth": 2075
+     },
+     "description": "Skyscraper in Spain"
     },
     {
      "id": "wikidata/Q2606632",
@@ -191,7 +312,18 @@
       "adminArea",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Torre_de_la_Plata_o_Torre_de_la_Victoria%2C_Sevilla.jpg/500px-Torre_de_la_Plata_o_Torre_de_la_Victoria%2C_Sevilla.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Jl FilpoC",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_de_la_Plata_o_Torre_de_la_Victoria,_Sevilla.jpg",
+      "fullWidth": 2329
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "wikidata/Q2542555",
@@ -204,7 +336,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Rectorado_universidad_de_sevilla_2024An001.jpg/500px-Rectorado_universidad_de_sevilla_2024An001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Anual",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rectorado_universidad_de_sevilla_2024An001.jpg",
+      "fullWidth": 6000
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/119569195",
@@ -219,7 +362,18 @@
       "palace",
       "religious",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Palacio_arzobispal_de_Sevilla%2C_Espa%C3%B1a.jpg/500px-Palacio_arzobispal_de_Sevilla%2C_Espa%C3%B1a.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Emilio J. Rodríguez Posada",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_arzobispal_de_Sevilla,_Espa%C3%B1a.jpg",
+      "fullWidth": 1024
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/160083336",
@@ -227,7 +381,18 @@
      "lat": 37.3851,
      "lon": -5.98792,
      "wikipediaCount": 5,
-     "wikidataId": "Q5759632"
+     "wikidataId": "Q5759632",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/CanosCarmona3.JPG/500px-CanosCarmona3.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lobillo",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:CanosCarmona3.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CanosCarmona3.JPG",
+      "fullWidth": 1280
+     },
+     "description": "building in Seville Province, Spain"
     },
     {
      "id": "node/844175401",
@@ -240,7 +405,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Castillo_de_San_Jorge_de_Sevilla.JPG/500px-Castillo_de_San_Jorge_de_Sevilla.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "CarlosVdeHabsburgo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_San_Jorge_de_Sevilla.JPG",
+      "fullWidth": 3072
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/28370223",
@@ -251,7 +427,8 @@
      "wikidataId": "Q3831846",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "description": "book that is no longer being published"
     },
     {
      "id": "node/4956732021",
@@ -262,7 +439,18 @@
      "wikidataId": "Q3906571",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Plaza_del_Triunfo_%282%29.jpg/500px-Plaza_del_Triunfo_%282%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Anual",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plaza_del_Triunfo_(2).jpg",
+      "fullWidth": 6000
+     },
+     "description": "square in Sevilla"
     },
     {
      "id": "node/4888559522",
@@ -274,7 +462,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Sevilla-Puerta_Almirantazgo-20110915.jpg/500px-Sevilla-Puerta_Almirantazgo-20110915.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Daniel VILLAFRUELA",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sevilla-Puerta_Almirantazgo-20110915.jpg",
+      "fullWidth": 2848
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "node/7369644585",
@@ -286,7 +485,18 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Carmona_-_Puerta_de_C%C3%B3rdoba_at_sunset.jpg/500px-Carmona_-_Puerta_de_C%C3%B3rdoba_at_sunset.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Benjamin Smith",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carmona_-_Puerta_de_C%C3%B3rdoba_at_sunset.jpg",
+      "fullWidth": 4408
+     },
+     "description": "ancient city gate in Carmona, Seville, Spain"
     },
     {
      "id": "node/13031348846",
@@ -298,7 +508,18 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/PuertarealJoseph_de_Vigier_%281821-1894%29%28Calotipo%29_1850.jpg/500px-PuertarealJoseph_de_Vigier_%281821-1894%29%28Calotipo%29_1850.jpg",
+      "width": 500,
+      "height": 713,
+      "author": "Joseph Vigier",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:PuertarealJoseph_de_Vigier_(1821-1894)(Calotipo)_1850.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PuertarealJoseph_de_Vigier_(1821-1894)(Calotipo)_1850.jpg",
+      "fullWidth": 982
+     },
+     "description": "former city gate of Seville, Spain"
     },
     {
      "id": "way/225683933",
@@ -310,7 +531,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Tour_d%27Abd_el_Aziz.jpg/500px-Tour_d%27Abd_el_Aziz.jpg",
+      "width": 500,
+      "height": 838,
+      "author": "Gzzz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tour_d%27Abd_el_Aziz.jpg",
+      "fullWidth": 1908
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "node/4893960522",
@@ -318,7 +550,18 @@
      "lat": 37.38547,
      "lon": -5.99305,
      "wikipediaCount": 3,
-     "wikidataId": "Q6153784"
+     "wikidataId": "Q6153784",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tumba_de_Colon-Sevilla.jpg/500px-Tumba_de_Colon-Sevilla.jpg",
+      "width": 500,
+      "height": 695,
+      "author": "Sevilla_cathedral_-_tomb_of_christopher_columbus.jpg : Pom² derivative work: Miguel Ángel \" fotógrafo \" ( talk )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tumba_de_Colon-Sevilla.jpg",
+      "fullWidth": 1627
+     },
+     "description": "Tomb of Christopher Columbus, Cathedral of Seville, Spain"
     },
     {
      "id": "relation/6054646",
@@ -329,7 +572,18 @@
      "wikidataId": "Q6055649",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/P%C3%B3rticos_del_Patio_interior_del_Pabell%C3%B3n_de_Argentina.jpg/500px-P%C3%B3rticos_del_Patio_interior_del_Pabell%C3%B3n_de_Argentina.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Rexcanis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:P%C3%B3rticos_del_Patio_interior_del_Pabell%C3%B3n_de_Argentina.jpg",
+      "fullWidth": 5184
+     },
+     "description": "building in Seville Province, Spain"
     },
     {
      "id": "relation/9178847",
@@ -341,7 +595,17 @@
      "kinds": [
       "notPlace",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/SevillaPlazaDelCabildo01.JPG/500px-SevillaPlazaDelCabildo01.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lobillo, (España)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:SevillaPlazaDelCabildo01.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SevillaPlazaDelCabildo01.JPG",
+      "fullWidth": 2304
+     }
     },
     {
      "id": "way/411078907",
@@ -354,7 +618,17 @@
       "attraction",
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/SevillaAndaNenes015.JPG/500px-SevillaAndaNenes015.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lobillo",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:SevillaAndaNenes015.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SevillaAndaNenes015.JPG",
+      "fullWidth": 1600
+     }
     },
     {
      "id": "way/660053023",
@@ -365,7 +639,18 @@
      "wikidataId": "Q5800278",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Estatua_rey_Fernando_III_de_Castilla.jpg/500px-Estatua_rey_Fernando_III_de_Castilla.jpg",
+      "width": 500,
+      "height": 563,
+      "author": "Anual",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Estatua_rey_Fernando_III_de_Castilla.jpg",
+      "fullWidth": 1804
+     },
+     "description": "monument in Seville, Spain"
     },
     {
      "id": "node/4893960621",
@@ -377,7 +662,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Fachada_Foro_de_la_Biodiversidad.jpg/500px-Fachada_Foro_de_la_Biodiversidad.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Cdlc",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_Foro_de_la_Biodiversidad.jpg",
+      "fullWidth": 787
+     },
+     "description": "museum in Spain"
     },
     {
      "id": "way/1528556994",
@@ -388,7 +684,18 @@
      "wikidataId": "Q16608881",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Monumento_a_Bartolom%C3%A9_de_las_Casas_%28Sevilla%29.JPG/500px-Monumento_a_Bartolom%C3%A9_de_las_Casas_%28Sevilla%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Hispalois",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monumento_a_Bartolom%C3%A9_de_las_Casas_(Sevilla).JPG",
+      "fullWidth": 3264
+     },
+     "description": "memorial in Seville"
     },
     {
      "id": "way/660053486",
@@ -399,7 +706,17 @@
      "wikidataId": "Q6023072",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Mart%C3%ADnez_Monta%C3%B1%C3%A9s.jpg/500px-Mart%C3%ADnez_Monta%C3%B1%C3%A9s.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Anual",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mart%C3%ADnez_Monta%C3%B1%C3%A9s.jpg",
+      "fullWidth": 2592
+     }
     },
     {
      "id": "node/7265892390",
@@ -487,18 +804,6 @@
      "name": "Cabildo Catedral",
      "lat": 37.38524,
      "lon": -5.99339
-    },
-    {
-     "id": "way/294549128",
-     "name": "Calesitas del Tardón",
-     "lat": 37.38057,
-     "lon": -6.00955
-    },
-    {
-     "id": "way/545916297",
-     "name": "Carrusel Mágico",
-     "lat": 37.40566,
-     "lon": -6.00018
     }
    ]
   },
@@ -519,7 +824,18 @@
       "heritage",
       "organization",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Sevilla_-_Archivo_General_de_Indias_K01.jpg/500px-Sevilla_-_Archivo_General_de_Indias_K01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kordas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sevilla_-_Archivo_General_de_Indias_K01.jpg",
+      "fullWidth": 2800
+     },
+     "description": "historical documentary archive located in Seville, Spain"
     },
     {
      "id": "way/28112279",
@@ -532,7 +848,18 @@
       "adminArea",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Torre_del_oro_laurels_Seville_Andalusia_Spain.jpg/500px-Torre_del_oro_laurels_Seville_Andalusia_Spain.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_del_oro_laurels_Seville_Andalusia_Spain.jpg",
+      "fullWidth": 2056
+     },
+     "description": "tower in Seville, Spain"
     },
     {
      "id": "relation/2912100",
@@ -547,7 +874,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Casa_pilatos_2018002.jpg/500px-Casa_pilatos_2018002.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Anual",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_pilatos_2018002.jpg",
+      "fullWidth": 5235
+     },
+     "description": "museum"
     },
     {
      "id": "relation/6252947",
@@ -564,7 +902,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Fachada_Museo.jpg/500px-Fachada_Museo.jpg",
+      "width": 500,
+      "height": 444,
+      "author": "Pepe Morón",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_Museo.jpg",
+      "fullWidth": 1647
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/37532394",
@@ -579,7 +928,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Entrada_al_Palacio_de_las_Due%C3%B1as%2C_Sevilla.jpg/500px-Entrada_al_Palacio_de_las_Due%C3%B1as%2C_Sevilla.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Alonso de Mendoza",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrada_al_Palacio_de_las_Due%C3%B1as,_Sevilla.jpg",
+      "fullWidth": 3024
+     },
+     "description": "Historical Monument (15th Century)"
     },
     {
      "id": "relation/1650454",
@@ -592,7 +952,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Monasterio_de_la_Cartuja%2C_Sevilla.jpg/500px-Monasterio_de_la_Cartuja%2C_Sevilla.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Asterion at English Wikipedia .",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monasterio_de_la_Cartuja,_Sevilla.jpg",
+      "fullWidth": 1600
+     },
+     "description": "monastery"
     },
     {
      "id": "relation/6378993",
@@ -607,7 +978,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/SevillaPalacioDeLebrija01.JPG/500px-SevillaPalacioDeLebrija01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:SevillaPalacioDeLebrija01.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SevillaPalacioDeLebrija01.JPG",
+      "fullWidth": 1728
+     },
+     "description": "Spanish house-museum"
     },
     {
      "id": "relation/2884360",
@@ -622,7 +1004,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Fachada_del_Hospital_de_la_Caridad.jpg/500px-Fachada_del_Hospital_de_la_Caridad.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Anual",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_del_Hospital_de_la_Caridad.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Seville, İspanya'da kilise"
     },
     {
      "id": "node/4647829792",
@@ -635,7 +1028,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Casa_de_Murillo_%28Sevilla%29.jpg/500px-Casa_de_Murillo_%28Sevilla%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CarlosVdeHabsburgo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_de_Murillo_(Sevilla).jpg",
+      "fullWidth": 4000
+     },
+     "description": "cultural property in Seville, Spain"
     },
     {
      "id": "way/376304232",
@@ -648,7 +1052,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Pavillon_du_P%C3%A9rou_%28S%C3%A9ville%29.JPG/500px-Pavillon_du_P%C3%A9rou_%28S%C3%A9ville%29.JPG",
+      "width": 500,
+      "height": 374,
+      "author": "Grez",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pavillon_du_P%C3%A9rou_(S%C3%A9ville).JPG",
+      "fullWidth": 2288
+     },
+     "description": "science museum in Seville, Spain"
     },
     {
      "id": "way/119583600",
@@ -663,7 +1078,18 @@
       "notPlace",
       "organization",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Atarazanas_de_Sevilla_03.jpg/500px-Atarazanas_de_Sevilla_03.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CarlosVdeHabsburgo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Atarazanas_de_Sevilla_03.jpg",
+      "fullWidth": 4000
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "relation/1650453",
@@ -678,7 +1104,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Monasterio_de_la_Cartuja%2C_Sevilla.jpg/500px-Monasterio_de_la_Cartuja%2C_Sevilla.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Asterion at English Wikipedia .",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monasterio_de_la_Cartuja,_Sevilla.jpg",
+      "fullWidth": 1600
+     }
     },
     {
      "id": "way/119568946",
@@ -690,7 +1126,18 @@
      "wikidataId": "Q6406146",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Nuevo_patio_renacentista.jpg/500px-Nuevo_patio_renacentista.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "José Luis Filpo Cabana",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nuevo_patio_renacentista.jpg",
+      "fullWidth": 2736
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "node/844175401",
@@ -703,7 +1150,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Castillo_de_San_Jorge_de_Sevilla.JPG/500px-Castillo_de_San_Jorge_de_Sevilla.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "CarlosVdeHabsburgo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_San_Jorge_de_Sevilla.JPG",
+      "fullWidth": 3072
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "node/2478249154",
@@ -716,7 +1174,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Museo_del_baile_flamenco%2C_sevilla.jpg/500px-Museo_del_baile_flamenco%2C_sevilla.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Anual",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_del_baile_flamenco,_sevilla.jpg",
+      "fullWidth": 2592
+     }
     },
     {
      "id": "node/4161820389",
@@ -737,7 +1205,17 @@
      "lat": 37.39363,
      "lon": -6.00927,
      "wikipediaCount": 2,
-     "wikidataId": "Q16540074"
+     "wikidataId": "Q16540074",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Sevilla_-_CaixaForum_Sevilla_16.jpg/500px-Sevilla_-_CaixaForum_Sevilla_16.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Zarateman",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sevilla_-_CaixaForum_Sevilla_16.jpg",
+      "fullWidth": 2048
+     }
     },
     {
      "id": "relation/2933402",
@@ -745,7 +1223,18 @@
      "lat": 37.37642,
      "lon": -5.99166,
      "wikipediaCount": 2,
-     "wikidataId": "Q6055668"
+     "wikidataId": "Q6055668",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Pabell%C3%B3n_de_Estados_Unidos.jpg/500px-Pabell%C3%B3n_de_Estados_Unidos.jpg",
+      "width": 500,
+      "height": 610,
+      "author": "CarlosVdeHabsburgo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pabell%C3%B3n_de_Estados_Unidos.jpg",
+      "fullWidth": 3000
+     },
+     "description": "building in Seville Province, Spain"
     },
     {
      "id": "way/120294260",
@@ -759,7 +1248,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Pabellon_navegacion_e2012003.jpg/500px-Pabellon_navegacion_e2012003.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Anual",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pabellon_navegacion_e2012003.jpg",
+      "fullWidth": 3872
+     },
+     "description": "museum in Spain"
     },
     {
      "id": "node/4878565237",
@@ -773,7 +1273,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Museo_de_la_Cer%C3%A1mica_de_Triana_3.jpg/500px-Museo_de_la_Cer%C3%A1mica_de_Triana_3.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "José Antonio Montero Fernández",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_la_Cer%C3%A1mica_de_Triana_3.jpg",
+      "fullWidth": 720
+     }
     },
     {
      "id": "node/9651532317",
@@ -782,7 +1292,18 @@
      "lon": -5.98928,
      "address": "Calle Fabiola 5",
      "wikipediaCount": 1,
-     "wikidataId": "Q45028661"
+     "wikidataId": "Q45028661",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Casa_fabiola_2017001.jpg/500px-Casa_fabiola_2017001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Anual",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_fabiola_2017001.jpg",
+      "fullWidth": 6000
+     },
+     "description": "house in Seville, Spain"
     },
     {
      "id": "way/70813714",
@@ -796,7 +1317,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Berlina_de_gala.jpg/500px-Berlina_de_gala.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CarlosVdeHabsburgo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlina_de_gala.jpg",
+      "fullWidth": 4320
+     },
+     "description": "cultural property in Sevilla, Spain"
     },
     {
      "id": "way/119575878",
@@ -809,7 +1341,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/RI-51-0001266_Iglesia_Colegio_San_Hermenegildo_06.jpg/500px-RI-51-0001266_Iglesia_Colegio_San_Hermenegildo_06.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Alfonso Pozo Ruiz",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:RI-51-0001266_Iglesia_Colegio_San_Hermenegildo_06.jpg",
+      "fullWidth": 2816
+     },
+     "description": "Seville, İspanya'da kilise"
     },
     {
      "id": "node/1308942334",
@@ -869,7 +1412,8 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "description": "library in Spain"
     },
     {
      "id": "node/4095977530",
@@ -954,7 +1498,18 @@
      "lon": -6.00706,
      "openingHours": "Tu-Sa 10:30-13:00, 16:30-18:30; Su 10:30-14:00",
      "wikipediaCount": 3,
-     "wikidataId": "Q3533183"
+     "wikidataId": "Q3533183",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Sevilla2005July_050.jpg/500px-Sevilla2005July_050.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sevilla2005July_050.jpg",
+      "fullWidth": 1200
+     },
+     "description": "building of Seville (Spain) located in the district of la Cartuja"
     },
     {
      "id": "way/49398691",
@@ -966,7 +1521,18 @@
      "wikidataId": "Q6150604",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/SevillaTorreDeLosPerdigones01.JPG/500px-SevillaTorreDeLosPerdigones01.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "No machine-readable author provided. Lobillo assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:SevillaTorreDeLosPerdigones01.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SevillaTorreDeLosPerdigones01.JPG",
+      "fullWidth": 1728
+     },
+     "description": "building in Seville Province, Spain"
     },
     {
      "id": "node/4345258294",

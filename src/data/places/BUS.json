@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BUS",
- "fetchedAt": "2026-10-18T16:48:41.037Z",
+ "fetchedAt": "2026-10-22T06:18:33.253Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q18822753",
      "kinds": [
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Batumi%2C_Georgia_-_panoramio_%2872%29.jpg/500px-Batumi%2C_Georgia_-_panoramio_%2872%29.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Андрей Бобровский",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Batumi,_Georgia_-_panoramio_(72).jpg",
+      "fullWidth": 6016
+     },
+     "description": "Batum, Gürcistan'da bir kule"
     },
     {
      "id": "wikidata/Q3906385",
@@ -66,7 +77,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Batumi_Mosque.jpg/500px-Batumi_Mosque.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "grego1402",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Batumi_Mosque.jpg",
+      "fullWidth": 640
+     },
+     "description": "Mosque in Batuni"
     },
     {
      "id": "wikidata/Q4873357",
@@ -79,7 +101,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/%E1%83%93%E1%83%95%E1%83%9A156.jpg/500px-%E1%83%93%E1%83%95%E1%83%9A156.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Ladoking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E1%83%93%E1%83%95%E1%83%9A156.jpg",
+      "fullWidth": 800
+     },
+     "description": "synagogue in Batumi, Georgia"
     },
     {
      "id": "way/96042368",
@@ -94,7 +127,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cathedral_of_the_Blessed_Virgin_Mary_in_Batumi.jpg/500px-Cathedral_of_the_Blessed_Virgin_Mary_in_Batumi.jpg",
+      "width": 500,
+      "height": 433,
+      "author": "User:Ephraim Stillberg , User:Deu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Blessed_Virgin_Mary_in_Batumi.jpg",
+      "fullWidth": 2824
+     },
+     "description": "neo-gotik gerçekleştirildiği inşaatının inşaatı 1898-1902 katolik kilisesi olarak inşa edilen yapı sovyetler birliği başka başka yerlerde ise, 2000 yılında gürcü ortodoks kilisesi'ne devredilmistir."
     },
     {
      "id": "wikidata/Q1916045",
@@ -103,7 +147,18 @@
      "lat": 41.65111,
      "lon": 41.63689,
      "wikipediaCount": 11,
-     "wikidataId": "Q1916045"
+     "wikidataId": "Q1916045",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Untitled1_-_panoramio_%28112%29.jpg/500px-Untitled1_-_panoramio_%28112%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "G.N.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Untitled1_-_panoramio_(112).jpg",
+      "fullWidth": 3216
+     },
+     "description": "monument in Batumi, Georgia"
     },
     {
      "id": "way/294880812",
@@ -111,7 +166,8 @@
      "lat": 41.64959,
      "lon": 41.6411,
      "wikipediaCount": 5,
-     "wikidataId": "Q65090860"
+     "wikidataId": "Q65090860",
+     "description": "plaza in Batumi, Georgia"
     },
     {
      "id": "way/423943865",
@@ -123,7 +179,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cafe_Fantasy_%28Batumi%29.jpg/500px-Cafe_Fantasy_%28Batumi%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Corners of Europe",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_Fantasy_(Batumi).jpg",
+      "fullWidth": 1024
+     },
+     "description": "former café in Batumi, Georgia"
     },
     {
      "id": "way/1306367386",
@@ -134,7 +201,18 @@
      "wikidataId": "Q32947730",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Lighthouse_of_Batumi_-_1883.jpg/500px-Lighthouse_of_Batumi_-_1883.jpg",
+      "width": 500,
+      "height": 764,
+      "author": "Sosotedrd",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lighthouse_of_Batumi_-_1883.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lighthouse_of_Batumi_-_1883.jpg",
+      "fullWidth": 2835
+     },
+     "description": "operational lighthouse established in 1863 and rebuilt in 1882 in Batumi, Georgia"
     },
     {
      "id": "way/322849586",
@@ -190,7 +268,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Batumi, Georgia"
     },
     {
      "id": "way/96037255",
@@ -204,7 +283,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/State_Art_Museum_of_Adjara.jpg/500px-State_Art_Museum_of_Adjara.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Yasuhiro Kojima",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:State_Art_Museum_of_Adjara.jpg",
+      "fullWidth": 5472
+     },
+     "description": "museum in Batumi, Georgia"
     },
     {
      "id": "node/1744041858",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BRU",
- "fetchedAt": "2026-10-18T16:13:04.917Z",
+ "fetchedAt": "2026-10-22T05:19:54.389Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Bruxelles_Manneken_Pis.jpg/500px-Bruxelles_Manneken_Pis.jpg",
+      "width": 500,
+      "height": 755,
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_Manneken_Pis.jpg",
+      "fullWidth": 2791
+     },
+     "description": "bronze sculpture and fountain by Jérôme Duquesnoy the Elder in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q215429",
@@ -65,7 +76,18 @@
       "heritage",
       "square",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Brusel_Grand-Place_radnice_1a.jpg/500px-Brusel_Grand-Place_radnice_1a.jpg",
+      "width": 500,
+      "height": 389,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brusel_Grand-Place_radnice_1a.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Meydan"
     },
     {
      "id": "wikidata/Q180901",
@@ -76,7 +98,18 @@
      "wikidataId": "Q180901",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Laeken_Atomium_06.jpg/500px-Laeken_Atomium_06.jpg",
+      "width": 500,
+      "height": 483,
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Laeken_Atomium_06.jpg",
+      "fullWidth": 3350
+     },
+     "description": "architectural landmark originally constructed as the centerpiece for Expo 58 in Brussels, Belgium"
     },
     {
      "id": "way/13431536",
@@ -90,7 +123,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/%28Belgium%29_St._Michael_%26_St._Gudula_Cathedral_Tower%2C_Brussels.jpg/500px-%28Belgium%29_St._Michael_%26_St._Gudula_Cathedral_Tower%2C_Brussels.jpg",
+      "width": 500,
+      "height": 502,
+      "author": "Donaldytong",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:(Belgium)_St._Michael_%26_St._Gudula_Cathedral_Tower,_Brussels.jpg",
+      "fullWidth": 2816
+     },
+     "description": "cathedral in Brussels, Belgium"
     },
     {
      "id": "relation/3299902",
@@ -103,7 +147,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Bruxels_April_2012-4.jpg/500px-Bruxels_April_2012-4.jpg",
+      "width": 500,
+      "height": 155,
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxels_April_2012-4.jpg",
+      "fullWidth": 10929
+     },
+     "description": "palace in Brussels, Belgium"
     },
     {
      "id": "way/1126164595",
@@ -115,7 +170,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Brussels%2C_townhall_oeg2043-00090_foto3_2015-06-07_08.38.jpg/500px-Brussels%2C_townhall_oeg2043-00090_foto3_2015-06-07_08.38.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Michielverbeek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brussels,_townhall_oeg2043-00090_foto3_2015-06-07_08.38.jpg",
+      "fullWidth": 2921
+     },
+     "description": "city hall in Brussels, Belgium"
     },
     {
      "id": "way/169173072",
@@ -128,7 +194,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Br%C3%BCsselJustizpalast.jpg/500px-Br%C3%BCsselJustizpalast.jpg",
+      "width": 500,
+      "height": 352,
+      "author": "Mussklprozz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Br%C3%BCsselJustizpalast.jpg",
+      "fullWidth": 832
+     },
+     "description": "courthouse in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q800587",
@@ -141,7 +218,18 @@
      "kinds": [
       "office",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Station_Brussel-Zuid_Gebouw.jpg/500px-Station_Brussel-Zuid_Gebouw.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Japplemedia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Station_Brussel-Zuid_Gebouw.jpg",
+      "fullWidth": 3716
+     },
+     "description": "international railway station in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q551479",
@@ -156,7 +244,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Th%C3%A9%C3%A2tre_de_la_Monnaie_1.JPG/500px-Th%C3%A9%C3%A2tre_de_la_Monnaie_1.JPG",
+      "width": 500,
+      "height": 379,
+      "author": "EmDee",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_de_la_Monnaie_1.JPG",
+      "fullWidth": 1318
+     },
+     "description": "opera house in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q763565",
@@ -167,7 +266,18 @@
      "wikidataId": "Q763565",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Chapelle_de_la_R%C3%A9surrection%2C_Bruxelles.jpg/500px-Chapelle_de_la_R%C3%A9surrection%2C_Bruxelles.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Fabre",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chapelle_de_la_R%C3%A9surrection,_Bruxelles.jpg",
+      "fullWidth": 1536
+     },
+     "description": "church in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q2447775",
@@ -179,7 +289,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Grande_synagogue_de_Bruxelles_en_d%C3%A9cembre_2019.jpg/500px-Grande_synagogue_de_Bruxelles_en_d%C3%A9cembre_2019.jpg",
+      "width": 500,
+      "height": 789,
+      "author": "Benoît Prieur",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grande_synagogue_de_Bruxelles_en_d%C3%A9cembre_2019.jpg",
+      "fullWidth": 1992
+     },
+     "description": "synagogue in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q421992",
@@ -187,7 +308,18 @@
      "lat": 50.83861,
      "lon": 4.37528,
      "wikipediaCount": 16,
-     "wikidataId": "Q421992"
+     "wikidataId": "Q421992",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/European_Parliament_-_group_of_buildings.JPG/500px-European_Parliament_-_group_of_buildings.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "own work",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:European_Parliament_-_group_of_buildings.JPG",
+      "fullWidth": 3888
+     },
+     "description": "seat of the European Parliament in Brussels"
     },
     {
      "id": "way/22407928",
@@ -200,7 +332,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Ko%C5%9Bci%C3%B3%C5%82_Notre-Dame_du_Sablon_w_Brukseli.jpg/500px-Ko%C5%9Bci%C3%B3%C5%82_Notre-Dame_du_Sablon_w_Brukseli.jpg",
+      "width": 500,
+      "height": 326,
+      "author": "Voyager747",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ko%C5%9Bci%C3%B3%C5%82_Notre-Dame_du_Sablon_w_Brukseli.jpg",
+      "fullWidth": 6016
+     },
+     "description": "church building in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q1491935",
@@ -212,7 +355,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Galeries_royales_Saint-Hubert%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-14%2C_DD_04-06_HDR.jpg/500px-Galeries_royales_Saint-Hubert%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-14%2C_DD_04-06_HDR.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galeries_royales_Saint-Hubert,_Bruselas,_B%C3%A9lgica,_2021-12-14,_DD_04-06_HDR.jpg",
+      "fullWidth": 7190
+     },
+     "description": "covered passageways in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q1816400",
@@ -223,7 +377,18 @@
      "wikidataId": "Q1816400",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Tour_du_midi.jpg/500px-Tour_du_midi.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Jim Linwood",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tour_du_midi.jpg",
+      "fullWidth": 3000
+     },
+     "description": "skyscraper in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q1865794",
@@ -234,7 +399,18 @@
      "wikidataId": "Q1865794",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg/500px-Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Ank Kumar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brussels_view_from_Mont_des_Arts,_Brussels,_Belgium_(cropped).jpg",
+      "fullWidth": 3788
+     },
+     "description": "square in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q726984",
@@ -246,7 +422,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bruxelles-Notre-Dame-de-la-Chapelle.jpg/500px-Bruxelles-Notre-Dame-de-la-Chapelle.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Morburre",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles-Notre-Dame-de-la-Chapelle.jpg",
+      "fullWidth": 4092
+     },
+     "description": "church in Brussels, Belgium with grave of Pieter Bruegel (I)"
     },
     {
      "id": "node/475214141",
@@ -257,7 +444,18 @@
      "wikidataId": "Q600633",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Brusel_Kongresov%C3%BD_sloup_1.jpg/500px-Brusel_Kongresov%C3%BD_sloup_1.jpg",
+      "width": 500,
+      "height": 662,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brusel_Kongresov%C3%BD_sloup_1.jpg",
+      "fullWidth": 1511
+     },
+     "description": "monumental column in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q1391752",
@@ -270,7 +468,8 @@
       "business",
       "organization",
       "university"
-     ]
+     ],
+     "description": "Research university in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q2285837",
@@ -282,7 +481,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/BOZAR_%28DSCF7462%29.jpg/500px-BOZAR_%28DSCF7462%29.jpg",
+      "width": 500,
+      "height": 421,
+      "author": "Trougnouf (Benoit Brummer)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BOZAR_(DSCF7462).jpg",
+      "fullWidth": 3907
+     },
+     "description": "arts centre in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q2636175",
@@ -293,7 +503,18 @@
      "wikidataId": "Q2636175",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Madou_Plaza.JPG/500px-Madou_Plaza.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Potro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Madou_Plaza.JPG",
+      "fullWidth": 3000
+     },
+     "description": "building in Brussels, Belgium"
     },
     {
      "id": "way/13494623",
@@ -304,7 +525,18 @@
      "wikidataId": "Q28485845",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Front_of_Brussels_Stock_Exchange_2023_cropped.jpg/500px-Front_of_Brussels_Stock_Exchange_2023_cropped.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "Guy Delsaut",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Front_of_Brussels_Stock_Exchange_2023_cropped.jpg",
+      "fullWidth": 2188
+     },
+     "description": "former exchange building in Brussels, Belgium"
     },
     {
      "id": "relation/3502984",
@@ -317,7 +549,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Bruxelles_Palais_d%27Egmont_802.jpg/500px-Bruxelles_Palais_d%27Egmont_802.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Michel wal",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_Palais_d%27Egmont_802.jpg",
+      "fullWidth": 3888
+     },
+     "description": "palace in Brussels, Belgium"
     },
     {
      "id": "way/243559501",
@@ -329,7 +572,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Sint-Jan_Baptist_ten_Begijnhofkerk_%28Brussel%29_22-09-2018_15-08-16.jpg/500px-Sint-Jan_Baptist_ten_Begijnhofkerk_%28Brussel%29_22-09-2018_15-08-16.jpg",
+      "width": 500,
+      "height": 561,
+      "author": "Paul Hermans",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sint-Jan_Baptist_ten_Begijnhofkerk_(Brussel)_22-09-2018_15-08-16.jpg",
+      "fullWidth": 7731
+     },
+     "description": "church in Brussels, Belgium"
     },
     {
      "id": "way/28302044",
@@ -341,7 +595,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/ID2043-0075-0-Brussel%2C_Sint-Katelijnekerk-PM_50734.jpg/500px-ID2043-0075-0-Brussel%2C_Sint-Katelijnekerk-PM_50734.jpg",
+      "width": 500,
+      "height": 644,
+      "author": "PMRMaeyaert",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:ID2043-0075-0-Brussel,_Sint-Katelijnekerk-PM_50734.jpg",
+      "fullWidth": 850
+     },
+     "description": "church in Brussels, Belgium"
     },
     {
      "id": "way/225779391",
@@ -353,7 +618,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/BEL_Brussels%2C_Rue_Ducale_001.jpg/500px-BEL_Brussels%2C_Rue_Ducale_001.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "-wuppertaler",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BEL_Brussels,_Rue_Ducale_001.jpg",
+      "fullWidth": 3271
+     },
+     "description": "former palace and current public establishment in Brussels, Belgium"
     },
     {
      "id": "way/399754753",
@@ -365,7 +641,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Monumento_a_la_Infanter%C3%ADa_Belga%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_66.jpg/500px-Monumento_a_la_Infanter%C3%ADa_Belga%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_66.jpg",
+      "width": 500,
+      "height": 835,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monumento_a_la_Infanter%C3%ADa_Belga,_Bruselas,_B%C3%A9lgica,_2021-12-15,_DD_66.jpg",
+      "fullWidth": 2321
+     },
+     "description": "war memorial in Brussels"
     },
     {
      "id": "way/1019259724",
@@ -377,7 +664,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Palace_of_Charles_of_Lorraine_1.jpg/500px-Palace_of_Charles_of_Lorraine_1.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "DimiTalen",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palace_of_Charles_of_Lorraine_1.jpg",
+      "fullWidth": 5937
+     },
+     "description": "palace in Brussels, Belgium"
     },
     {
      "id": "relation/3502982",
@@ -389,7 +687,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Palacio_del_Conde_de_Flandes%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_62.jpg/500px-Palacio_del_Conde_de_Flandes%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_62.jpg",
+      "width": 500,
+      "height": 390,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palacio_del_Conde_de_Flandes,_Bruselas,_B%C3%A9lgica,_2021-12-15,_DD_62.jpg",
+      "fullWidth": 4139
+     },
+     "description": "palace in Brussels, Belgium"
     },
     {
      "id": "way/244850905",
@@ -402,7 +711,18 @@
       "adminArea",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Tour_Noire_1.JPG/500px-Tour_Noire_1.JPG",
+      "width": 500,
+      "height": 872,
+      "author": "EmDee",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tour_Noire_1.JPG",
+      "fullWidth": 2059
+     },
+     "description": "fortified tower in Brussels, Belgium"
     },
     {
      "id": "way/129463929",
@@ -410,7 +730,18 @@
      "lat": 50.838,
      "lon": 4.35106,
      "wikipediaCount": 3,
-     "wikidataId": "Q85646747"
+     "wikidataId": "Q85646747",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Brussels-Public_elevator_at_Marolles_%281%29.jpg/500px-Brussels-Public_elevator_at_Marolles_%281%29.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Romaine",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brussels-Public_elevator_at_Marolles_(1).jpg",
+      "fullWidth": 2268
+     },
+     "description": "public elevator in the Marolles, Brussels, Belgium"
     },
     {
      "id": "way/33739415",
@@ -418,7 +749,18 @@
      "lat": 50.85171,
      "lon": 4.35634,
      "wikipediaCount": 3,
-     "wikidataId": "Q3323275"
+     "wikidataId": "Q3323275",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Belgique_-_Bruxelles_-_Monument_aux_martyrs_-_02.jpg/500px-Belgique_-_Bruxelles_-_Monument_aux_martyrs_-_02.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Guillaume Geefs",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Monument_aux_martyrs_-_02.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Monument_aux_martyrs_-_02.jpg",
+      "fullWidth": 2339
+     },
+     "description": "monument and crypt in Brussels, Belgium"
     },
     {
      "id": "way/1078069094",
@@ -431,7 +773,18 @@
      "kinds": [
       "heritage",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/316_-_Maison_de_la_Bellone_-_Bruxelles.jpg/500px-316_-_Maison_de_la_Bellone_-_Bruxelles.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Patrick Despoix",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:316_-_Maison_de_la_Bellone_-_Bruxelles.jpg",
+      "fullWidth": 3456
+     },
+     "description": "performing arts centre in Brussels, Belgium"
     },
     {
      "id": "way/306856681",
@@ -442,7 +795,18 @@
      "wikidataId": "Q2285205",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Brussels_Koninginnegalerij_Galerie_de_la_Reine_R02.jpg/500px-Brussels_Koninginnegalerij_Galerie_de_la_Reine_R02.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Marc Ryckaert",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brussels_Koninginnegalerij_Galerie_de_la_Reine_R02.jpg",
+      "fullWidth": 4820
+     },
+     "description": "covered passageway in Brussels, Belgium"
     },
     {
      "id": "way/306856680",
@@ -453,7 +817,18 @@
      "wikidataId": "Q3094673",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Brussels_Koningsgalerij_Galerie_du_Roi_R01.jpg/500px-Brussels_Koningsgalerij_Galerie_du_Roi_R01.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Marc Ryckaert",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brussels_Koningsgalerij_Galerie_du_Roi_R01.jpg",
+      "fullWidth": 4814
+     },
+     "description": "covered passageway in Brussels, Belgium"
     },
     {
      "id": "way/244064794",
@@ -464,7 +839,18 @@
      "wikidataId": "Q110465791",
      "kinds": [
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Palais_de_l%27Industrie%2C_Brussels%2C_1835.png/500px-Palais_de_l%27Industrie%2C_Brussels%2C_1835.png",
+      "width": 500,
+      "height": 299,
+      "author": "Faure, Eugène Gressin-Dumoulin, Benoît Valérius",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palais_de_l%27Industrie,_Brussels,_1835.png",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_de_l%27Industrie,_Brussels,_1835.png",
+      "fullWidth": 2462
+     },
+     "description": "palace in Brussels, Belgium"
     },
     {
      "id": "way/138696691",
@@ -476,7 +862,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/H%C3%B4tel_Van_Assche.JPG/500px-H%C3%B4tel_Van_Assche.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "User:Ben2",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Van_Assche.JPG",
+      "fullWidth": 2560
+     },
+     "description": "palace in Brussels"
     },
     {
      "id": "way/119630814",
@@ -487,7 +884,18 @@
      "wikidataId": "Q3323252",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Monument_au_comte_Fr%C3%A9d%C3%A9ric_de_M%C3%A9rode_01.jpg/500px-Monument_au_comte_Fr%C3%A9d%C3%A9ric_de_M%C3%A9rode_01.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "EmDee",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monument_au_comte_Fr%C3%A9d%C3%A9ric_de_M%C3%A9rode_01.jpg",
+      "fullWidth": 1128
+     },
+     "description": "Art Nouveau-style memorial by sculptor Paul Du Bois in Brussels (Belgium)"
     },
     {
      "id": "way/257712474",
@@ -498,7 +906,17 @@
      "wikidataId": "Q42416686",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Maison_traditionnelle.jpg/500px-Maison_traditionnelle.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Pere prlpz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maison_traditionnelle.jpg",
+      "fullWidth": 3096
+     }
     },
     {
      "id": "way/119630808",
@@ -510,7 +928,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Belgique_-_Bruxelles_-_Monument_%C3%A0_Jenneval_-_01.jpg/500px-Belgique_-_Bruxelles_-_Monument_%C3%A0_Jenneval_-_01.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "EmDee",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Monument_%C3%A0_Jenneval_-_01.jpg",
+      "fullWidth": 2325
+     },
+     "description": "memorial in Brussels, Belgium"
     },
     {
      "id": "way/227681451",
@@ -559,7 +988,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Royal_Museums_of_Fine_Arts_of_Belgium_20180629.jpg/500px-Royal_Museums_of_Fine_Arts_of_Belgium_20180629.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Royal_Museums_of_Fine_Arts_of_Belgium_20180629.jpg",
+      "fullWidth": 5184
+     },
+     "description": "group of art museums in Brussels, Belgium"
     },
     {
      "id": "way/87493075",
@@ -573,7 +1013,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Centre_Belge_de_la_Bande_Dessin%C3%A9e_-_30.jpg/500px-Centre_Belge_de_la_Bande_Dessin%C3%A9e_-_30.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Ramón",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centre_Belge_de_la_Bande_Dessin%C3%A9e_-_30.jpg",
+      "fullWidth": 3456
+     },
+     "description": "comics museum in the Pentagon, Brussels, Belgium"
     },
     {
      "id": "way/31500439",
@@ -587,7 +1038,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Old_England_facade%2C_Brussels_%28DSCF7544%29.jpg/500px-Old_England_facade%2C_Brussels_%28DSCF7544%29.jpg",
+      "width": 500,
+      "height": 915,
+      "author": "Trougnouf (Benoit Brummer)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_England_facade,_Brussels_(DSCF7544).jpg",
+      "fullWidth": 2449
+     },
+     "description": "musical instrument museum in Brussels, Belgium"
     },
     {
      "id": "node/9026522736",
@@ -601,7 +1063,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/BRX-mus%C3%A9e-magritte.2.JPG/500px-BRX-mus%C3%A9e-magritte.2.JPG",
+      "width": 500,
+      "height": 329,
+      "author": "Warburg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BRX-mus%C3%A9e-magritte.2.JPG",
+      "fullWidth": 3204
+     },
+     "description": "art museum in Brussels, part of the Royal Museums of Fine Arts of Belgium"
     },
     {
      "id": "node/9385524853",
@@ -615,7 +1088,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Bruxelles_Porte_de_Hal_5.jpg/500px-Bruxelles_Porte_de_Hal_5.jpg",
+      "width": 500,
+      "height": 703,
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_Porte_de_Hal_5.jpg",
+      "fullWidth": 3186
+     },
+     "description": "military museum in Brussels, Belgium"
     },
     {
      "id": "node/9704161376",
@@ -630,7 +1114,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Broodhuis_Bruxelles.jpg/500px-Broodhuis_Bruxelles.jpg",
+      "width": 500,
+      "height": 665,
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Broodhuis_Bruxelles.jpg",
+      "fullWidth": 1924
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "wikidata/Q1165167",
@@ -642,7 +1137,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Bruxelles_rue_des_Minimes_21.jpg/500px-Bruxelles_rue_des_Minimes_21.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Michel wal",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_rue_des_Minimes_21.jpg",
+      "fullWidth": 2592
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/2514258897",
@@ -656,7 +1162,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Museo_BELvue%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_57.jpg/500px-Museo_BELvue%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_57.jpg",
+      "width": 500,
+      "height": 327,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_BELvue,_Bruselas,_B%C3%A9lgica,_2021-12-15,_DD_57.jpg",
+      "fullWidth": 6953
+     },
+     "description": "history museum in Place des Palais in Brussels, Belgium"
     },
     {
      "id": "node/2583649779",
@@ -671,7 +1188,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Charlier_Museum%2C_entrance.jpg/500px-Charlier_Museum%2C_entrance.jpg",
+      "width": 500,
+      "height": 788,
+      "author": "own work",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Charlier_Museum,_entrance.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Charlier_Museum,_entrance.jpg",
+      "fullWidth": 2199
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "way/1078916006",
@@ -685,7 +1213,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Photo_Fa%C3%A7ade.jpg/500px-Photo_Fa%C3%A7ade.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Musée du Cacao et du Chocolat",
+      "license": "CC BY-SA 2.0 be",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/be/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Photo_Fa%C3%A7ade.jpg",
+      "fullWidth": 2048
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/1755861324",
@@ -695,7 +1234,18 @@
      "website": "https://visiting.europarl.europa.eu/en/visitor-offer/brussels/parlamentarium",
      "openingHours": "Mo 13:00-18:00; Tu-Fr 09:00-18:00; Sa,Su 10:00-18:00",
      "wikipediaCount": 6,
-     "wikidataId": "Q8062880"
+     "wikidataId": "Q8062880",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Parlamentarium_-_Parlement_europ%C3%A9en_-_Je_suis_Nice.jpg/500px-Parlamentarium_-_Parlement_europ%C3%A9en_-_Je_suis_Nice.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "LeJC",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parlamentarium_-_Parlement_europ%C3%A9en_-_Je_suis_Nice.jpg",
+      "fullWidth": 5312
+     },
+     "description": "visitor's center in Brussels, Belgium"
     },
     {
      "id": "node/9026522738",
@@ -708,7 +1258,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Paleis_op_de_Koudenberg.jpg/500px-Paleis_op_de_Koudenberg.jpg",
+      "width": 500,
+      "height": 300,
+      "author": "Jan Brueghel the Younger",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Paleis_op_de_Koudenberg.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paleis_op_de_Koudenberg.jpg",
+      "fullWidth": 2952
+     },
+     "description": "former palace in Brussels, Belgium"
     },
     {
      "id": "node/3860518453",
@@ -724,7 +1285,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Bruxelles_rue_Baron_Horta_9.jpg/500px-Bruxelles_rue_Baron_Horta_9.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Michel wal",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_rue_Baron_Horta_9.jpg",
+      "fullWidth": 2592
+     },
+     "description": "national cinematheque of Belgium"
     },
     {
      "id": "node/3506769937",
@@ -738,7 +1310,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Bruxelles_Banque_nationale.jpg/500px-Bruxelles_Banque_nationale.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Michel wal",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_Banque_nationale.jpg",
+      "fullWidth": 2592
+     },
+     "description": "history museum in Brussels, Belgium"
     },
     {
      "id": "way/236193520",
@@ -753,7 +1336,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Mus%C3%A9e_Wiertz%2C_Bruxelles.JPG/500px-Mus%C3%A9e_Wiertz%2C_Bruxelles.JPG",
+      "width": 500,
+      "height": 675,
+      "author": "User:Ben2",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Wiertz,_Bruxelles.JPG",
+      "fullWidth": 1827
+     },
+     "description": "house museum of Antoine Wiertz in Ixelles, Brussels, part of the Royal Museums of Fine Arts of Belgium"
     },
     {
      "id": "node/9315005837",
@@ -767,7 +1361,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bruxella_1238_10.jpg/500px-Bruxella_1238_10.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "FrDr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxella_1238_10.jpg",
+      "fullWidth": 3648
+     },
+     "description": "archaeological site and museum in Brussels, Belgium"
     },
     {
      "id": "way/1054279810",
@@ -782,7 +1387,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/La_Fonderie_%281%29.jpg/500px-La_Fonderie_%281%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bernard Lee",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Fonderie_(1).jpg",
+      "fullWidth": 4032
+     },
+     "description": "industry museum in Molenbeek-Saint-Jean, Brussels, Belgium"
     },
     {
      "id": "way/1035986134",
@@ -797,7 +1413,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "migration museum in Molenbeek, Brussels, Belgium"
     },
     {
      "id": "node/3859789657",
@@ -811,7 +1428,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Louis_Majorelle-Vitrine_biblioth%C3%A8que_n%C3%A9nuphar.jpg/500px-Louis_Majorelle-Vitrine_biblioth%C3%A8que_n%C3%A9nuphar.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Louis Majorelle",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Louis_Majorelle-Vitrine_biblioth%C3%A8que_n%C3%A9nuphar.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Louis_Majorelle-Vitrine_biblioth%C3%A8que_n%C3%A9nuphar.jpg",
+      "fullWidth": 2943
+     },
+     "description": "art museum in Brussels, part of the Royal Museums of Fine Arts of Belgium"
     },
     {
      "id": "way/1009171340",
@@ -825,7 +1453,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Museum_of_Costume_and_Lace_exterior.jpg/500px-Museum_of_Costume_and_Lace_exterior.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Mx. Granger",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Costume_and_Lace_exterior.jpg",
+      "fullWidth": 1944
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/12448693822",
@@ -839,7 +1478,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/National_Museum_of_the_Resistance3.jpg/500px-National_Museum_of_the_Resistance3.jpg",
+      "width": 500,
+      "height": 897,
+      "author": "Brigade Piron",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_the_Resistance3.jpg",
+      "fullWidth": 1662
+     },
+     "description": "military museum in Cureghem, Anderlecht, Brussels, Belgium"
     },
     {
      "id": "node/3859789659",
@@ -853,7 +1503,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Mus%C3%A9e_royal_d%27art_ancien_%C3%A0_Bruxelles.JPG/500px-Mus%C3%A9e_royal_d%27art_ancien_%C3%A0_Bruxelles.JPG",
+      "width": 500,
+      "height": 774,
+      "author": "Ben2-commonswiki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_royal_d%27art_ancien_%C3%A0_Bruxelles.JPG",
+      "fullWidth": 1618
+     },
+     "description": "art museum in Brussels, part of the Royal Museums of Fine Arts of Belgium"
     },
     {
      "id": "node/3862188901",
@@ -866,7 +1527,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Bruxelles_rue_des_Sables_33-35_1001.jpg/500px-Bruxelles_rue_des_Sables_33-35_1001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Michel wal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_rue_des_Sables_33-35_1001.jpg",
+      "fullWidth": 3888
+     },
+     "description": "former comics museum in Brussels, Belgium"
     },
     {
      "id": "node/2514192428",
@@ -880,7 +1552,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/AML-Salle-de-lecture.jpg/500px-AML-Salle-de-lecture.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Antoine Hennart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AML-Salle-de-lecture.jpg",
+      "fullWidth": 1920
+     },
+     "description": "museum and archive in Brussels"
     },
     {
      "id": "node/3860512418",
@@ -894,7 +1577,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/BSXL34.jpg/500px-BSXL34.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Karmakolle",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:BSXL34.jpg",
+      "fullWidth": 1944
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/3859757967",
@@ -909,7 +1603,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Schtroumpf_Galerie_Horta.jpg/500px-Schtroumpf_Galerie_Horta.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Pia-Magda",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schtroumpf_Galerie_Horta.jpg",
+      "fullWidth": 5184
+     },
+     "description": "comics museum in Brussels, Belgium"
     },
     {
      "id": "node/2509496179",
@@ -924,7 +1629,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Bruxelles_rue_de_Laeken_73.jpg/500px-Bruxelles_rue_de_Laeken_73.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Michel wal",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_rue_de_Laeken_73.jpg",
+      "fullWidth": 4770
+     },
+     "description": "Masonic museum in Brussels"
     },
     {
      "id": "node/6222623824",
@@ -953,7 +1669,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Octroi_porte_d%27Anderlecht_Bxl_01.jpg/500px-Octroi_porte_d%27Anderlecht_Bxl_01.jpg",
+      "width": 500,
+      "height": 382,
+      "author": "No machine-readable author provided. Ben2~commonswiki assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Octroi_porte_d%27Anderlecht_Bxl_01.jpg",
+      "fullWidth": 2480
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/2506176872",
@@ -968,7 +1695,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "pluralistic archive institution in Brussels, Belgium"
     },
     {
      "id": "node/11174383235",
@@ -982,7 +1710,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Belgian_Beer_World.jpg/500px-Belgian_Beer_World.jpg",
+      "width": 500,
+      "height": 231,
+      "author": "M0tty",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgian_Beer_World.jpg",
+      "fullWidth": 4000
+     },
+     "description": "beer museum in Brussels, Belgium"
     },
     {
      "id": "node/8391808859",
@@ -996,7 +1735,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/KBR_Museum_20.jpg/500px-KBR_Museum_20.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "FrDr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KBR_Museum_20.jpg",
+      "fullWidth": 5472
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/789296064",
@@ -1010,7 +1760,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Cantillongeuzebio.jpg/500px-Cantillongeuzebio.jpg",
+      "width": 500,
+      "height": 471,
+      "author": "Dirk Van Esbroeck",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cantillongeuzebio.jpg",
+      "fullWidth": 2125
+     }
     },
     {
      "id": "way/227676676",
@@ -1023,7 +1783,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Schaerbeek_Rue_de_la_Constitution_01.jpg/500px-Schaerbeek_Rue_de_la_Constitution_01.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Varech",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Schaerbeek_Rue_de_la_Constitution_01.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Schaerbeek_Rue_de_la_Constitution_01.jpg",
+      "fullWidth": 2608
+     }
     },
     {
      "id": "node/2659563272",
@@ -1036,7 +1806,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mus%C3%A9e_de_l%27Assistance_Publique%2C_Bruxelles_-_Conseil_general_1864.jpg/500px-Mus%C3%A9e_de_l%27Assistance_Publique%2C_Bruxelles_-_Conseil_general_1864.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_l%27Assistance_Publique,_Bruxelles_-_Conseil_general_1864.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_l%27Assistance_Publique,_Bruxelles_-_Conseil_general_1864.jpg",
+      "fullWidth": 640
+     },
+     "description": "museum in Brussels, Belgium"
     },
     {
      "id": "node/9930114873",
@@ -1050,7 +1831,8 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "guilds of arms in Brussels, Belgium"
     },
     {
      "id": "node/3860862304",
@@ -1064,7 +1846,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Brouwershuis.jpg/500px-Brouwershuis.jpg",
+      "width": 500,
+      "height": 366,
+      "author": "Paul Hermans at Dutch Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brouwershuis.jpg",
+      "fullWidth": 2503
+     },
+     "description": "museum in Brussels"
     },
     {
      "id": "node/3862253611",
@@ -1077,7 +1870,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Brussels"
     },
     {
      "id": "node/5055592837",
@@ -1090,7 +1884,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Sint-Jans-Molenbeek"
     },
     {
      "id": "way/257573031",
@@ -1322,7 +2117,8 @@
      "openingHours": "Tu-Su 10:00-18:00",
      "cuisine": "belgian",
      "wikidataId": "Q134271694",
-     "detailed": true
+     "detailed": true,
+     "description": "brasserie in Brussels, Belgium"
     },
     {
      "id": "node/3863812078",
@@ -1760,7 +2556,18 @@
      "openingHours": "Mo-Su 11:00-24:00",
      "cuisine": "regional",
      "wikidataId": "Q112623936",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/026_-_Entr%C3%A9e_du_Caf%C3%A9_La_B%C3%A9casse_-_Bruxelles.jpg/500px-026_-_Entr%C3%A9e_du_Caf%C3%A9_La_B%C3%A9casse_-_Bruxelles.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Patrick Despoix",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:026_-_Entr%C3%A9e_du_Caf%C3%A9_La_B%C3%A9casse_-_Bruxelles.jpg",
+      "fullWidth": 1920
+     },
+     "description": "café in Brussels, Belgium"
     },
     {
      "id": "way/244850884",
@@ -1771,7 +2578,18 @@
      "openingHours": "Mo-We 11:00-01:00; Th 11:00-02:00; Fr-Sa 11:00-03:00; Su 11:00-01:00",
      "cuisine": "spaghetti bolognese",
      "wikidataId": "Q42418063",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Bruxelles_Rue_Sainte-Catherine_40-42.jpg/500px-Bruxelles_Rue_Sainte-Catherine_40-42.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Michel wal",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_Rue_Sainte-Catherine_40-42.jpg",
+      "fullWidth": 2592
+     },
+     "description": "café in Brussels, Belgium"
     },
     {
      "id": "node/10870462702",
@@ -1802,7 +2620,18 @@
      "openingHours": "Mo-Su 10:00-00:00",
      "cuisine": "belgian",
      "wikidataId": "Q16507178",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Belgique_-_Bruxelles_-_Caf%C3%A9_de_la_Bourse_-_01.JPG/500px-Belgique_-_Bruxelles_-_Caf%C3%A9_de_la_Bourse_-_01.JPG",
+      "width": 500,
+      "height": 558,
+      "author": "EmDee",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Caf%C3%A9_de_la_Bourse_-_01.JPG",
+      "fullWidth": 2492
+     },
+     "description": "café in Brussels, Belgium"
     },
     {
      "id": "node/4329730610",
@@ -1852,7 +2681,18 @@
      "website": "https://www.alamortsubite.com/en",
      "openingHours": "Mo-Sa 11:00-01:00; Su 12:00-24:00",
      "wikidataId": "Q27643042",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/038_-_Caf%C3%A9_La_Mort_Subite_-_Bruxelles.jpg/500px-038_-_Caf%C3%A9_La_Mort_Subite_-_Bruxelles.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Patrick Despoix",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:038_-_Caf%C3%A9_La_Mort_Subite_-_Bruxelles.jpg",
+      "fullWidth": 2560
+     },
+     "description": "café in Brussels, Belgium"
     },
     {
      "id": "node/2506176994",
@@ -1961,7 +2801,18 @@
      "website": "https://walviscafe.com/",
      "openingHours": "Mo-Fr 09:00-24:00; Sa 10:00-24:00; Su 10:00-18:00",
      "wikidataId": "Q130753245",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Coin_Walvis%2C_rue_Antoine_Dansaert.JPG/500px-Coin_Walvis%2C_rue_Antoine_Dansaert.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Desaparecido at French Wikipedia .",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Coin_Walvis,_rue_Antoine_Dansaert.JPG",
+      "fullWidth": 640
+     },
+     "description": "café in the Pentagon, Brussels, Belgium"
     },
     {
      "id": "node/13513115404",
@@ -2058,7 +2909,18 @@
      "website": "https://www.madamemoustache.be/",
      "openingHours": "Mo off; Tu-Sa 20:00-04:00; Su off",
      "wikidataId": "Q42416762",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Koetspoort_-_BRANDHOUTKAAI_7.jpg/500px-Koetspoort_-_BRANDHOUTKAAI_7.jpg",
+      "width": 500,
+      "height": 669,
+      "author": "Rroemers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Koetspoort_-_BRANDHOUTKAAI_7.jpg",
+      "fullWidth": 1936
+     },
+     "description": "nightclub in Brussels, Belgium"
     },
     {
      "id": "node/4539678381",
@@ -2089,7 +2951,8 @@
      "lat": 50.84608,
      "lon": 4.3561,
      "website": "https://c12space.com/",
-     "wikidataId": "Q121298080"
+     "wikidataId": "Q121298080",
+     "description": "nightclub in Brussels"
     },
     {
      "id": "node/12140099647",
@@ -2097,7 +2960,18 @@
      "lat": 50.83536,
      "lon": 4.34476,
      "website": "https://fuse.be/",
-     "wikidataId": "Q3091103"
+     "wikidataId": "Q3091103",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Fuse_blaasstraat.jpg/500px-Fuse_blaasstraat.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "karmakolle",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fuse_blaasstraat.jpg",
+      "fullWidth": 4608
+     },
+     "description": "techno club and former cinema in Brussels, Belgium"
     },
     {
      "id": "node/6254463049",
@@ -2112,7 +2986,18 @@
      "lat": 50.84934,
      "lon": 4.37143,
      "website": "https://www.miranobrussels.com/",
-     "wikidataId": "Q3224581"
+     "wikidataId": "Q3224581",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Voormalige_cinema_Mirano_2.jpg/500px-Voormalige_cinema_Mirano_2.jpg",
+      "width": 500,
+      "height": 669,
+      "author": "Rroemers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Voormalige_cinema_Mirano_2.jpg",
+      "fullWidth": 1936
+     },
+     "description": "nightclub and former cinema in Brussels, Belgium"
     },
     {
      "id": "node/12551469672",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "TLL",
- "fetchedAt": "2026-10-18T16:47:20.265Z",
+ "fetchedAt": "2026-10-22T06:12:47.287Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -53,7 +53,18 @@
      "kinds": [
       "airport",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Tallinn_Airport_03_July_2006.jpg/500px-Tallinn_Airport_03_July_2006.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Pjotr Mahhonin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tallinn_Airport_03_July_2006.jpg",
+      "fullWidth": 2272
+     },
+     "description": "airport in Estonia"
     },
     {
      "id": "relation/3502552",
@@ -67,7 +78,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Toompea_linnus.jpg/500px-Toompea_linnus.jpg",
+      "width": 500,
+      "height": 223,
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 3.0 ee",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ee/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Toompea_linnus.jpg",
+      "fullWidth": 9495
+     },
+     "description": "castle in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q278923",
@@ -78,7 +100,18 @@
      "wikidataId": "Q278923",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Samba_boys_kick_off_the_match_in_Tallinn.jpg/500px-Samba_boys_kick_off_the_match_in_Tallinn.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "toivo",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Samba_boys_kick_off_the_match_in_Tallinn.jpg",
+      "fullWidth": 1877
+     },
+     "description": "Tallinn, Estonya'daki futbol stadyumu"
     },
     {
      "id": "wikidata/Q568214",
@@ -91,7 +124,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Alexander-Newski-Kathedrale_full_pc.jpg/500px-Alexander-Newski-Kathedrale_full_pc.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Georg Mittenecker , perspektivisch entzerrt von User:Ikiwaner",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alexander-Newski-Kathedrale_full_pc.jpg",
+      "fullWidth": 1764
+     },
+     "description": "Orthodox church in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q834511",
@@ -104,7 +148,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/St_Olaf%27s_church%2C_Tallinn%2C_July_2008.jpg/500px-St_Olaf%27s_church%2C_Tallinn%2C_July_2008.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Olga Itenberg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Olaf%27s_church,_Tallinn,_July_2008.jpg",
+      "fullWidth": 2304
+     },
+     "description": "church in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q937320",
@@ -117,7 +172,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Catedral_de_Santa_Mar%C3%ADa_%28Toomkirik%29%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_09.JPG/500px-Catedral_de_Santa_Mar%C3%ADa_%28Toomkirik%29%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_09.JPG",
+      "width": 500,
+      "height": 821,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Catedral_de_Santa_Mar%C3%ADa_(Toomkirik),_Tallin,_Estonia,_2012-08-05,_DD_09.JPG",
+      "fullWidth": 2657
+     },
+     "description": "church building in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q726803",
@@ -131,7 +197,18 @@
       "adminArea",
       "heritage",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Old_Town_of_Tallinn%2C_Tallinn%2C_Estonia_-_panoramio_%2858%29.jpg/500px-Old_Town_of_Tallinn%2C_Tallinn%2C_Estonia_-_panoramio_%2858%29.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Ben Bender",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_Town_of_Tallinn,_Tallinn,_Estonia_-_panoramio_(58).jpg",
+      "fullWidth": 2048
+     },
+     "description": "UNESCO World Heritage site"
     },
     {
      "id": "way/28264569",
@@ -144,7 +221,18 @@
      "wikidataId": "Q2045993",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Stenbock_House_%2828939%29.jpg/500px-Stenbock_House_%2828939%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lee Vilenski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stenbock_House_(28939).jpg",
+      "fullWidth": 4000
+     },
+     "description": "building in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q2072409",
@@ -158,7 +246,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Columna_de_la_Victoria_de_la_Guerra_de_la_Independencia%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_14.JPG/500px-Columna_de_la_Victoria_de_la_Guerra_de_la_Independencia%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_14.JPG",
+      "width": 500,
+      "height": 292,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Columna_de_la_Victoria_de_la_Guerra_de_la_Independencia,_Tallinn,_Estonia,_2012-08-05,_DD_14.JPG",
+      "fullWidth": 3863
+     },
+     "description": "square in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q904057",
@@ -171,7 +270,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Tallinna_Raekoda_11-06-2013.jpg/500px-Tallinna_Raekoda_11-06-2013.jpg",
+      "width": 500,
+      "height": 346,
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 3.0 ee",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ee/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tallinna_Raekoda_11-06-2013.jpg",
+      "fullWidth": 6491
+     },
+     "description": "municipal building in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q1420569",
@@ -184,7 +294,18 @@
      "kinds": [
       "adminArea",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Pikkhermann.jpg/500px-Pikkhermann.jpg",
+      "width": 500,
+      "height": 716,
+      "author": "Metsavend",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pikkhermann.jpg",
+      "fullWidth": 850
+     },
+     "description": "tower in Tallinn"
     },
     {
      "id": "wikidata/Q805683",
@@ -196,7 +317,18 @@
      "wikidataId": "Q805683",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Elroni_rongid_Balti_jaamas.jpg/500px-Elroni_rongid_Balti_jaamas.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tibukonn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Elroni_rongid_Balti_jaamas.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Estonya'nın başkenti Tallinn'deki ana tren istasyonu"
     },
     {
      "id": "relation/3518935",
@@ -211,7 +343,18 @@
      "kinds": [
       "adminArea",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Kiek_in_de_K%C3%B6k%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_01.JPG/500px-Kiek_in_de_K%C3%B6k%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_01.JPG",
+      "width": 500,
+      "height": 772,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kiek_in_de_K%C3%B6k,_Tallin,_Estonia,_2012-08-05,_DD_01.JPG",
+      "fullWidth": 2963
+     },
+     "description": "tower in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q1810907",
@@ -226,7 +369,18 @@
       "musicVenue",
       "performingArts",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Linnahall_2006.jpg/500px-Linnahall_2006.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Linnahall_2006.jpg",
+      "fullWidth": 3264
+     },
+     "description": "multi-purpose hall in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q2529281",
@@ -235,7 +389,18 @@
      "lat": 59.43404,
      "lon": 24.74306,
      "wikipediaCount": 23,
-     "wikidataId": "Q2529281"
+     "wikidataId": "Q2529281",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/TallinnWarMemorial2009.JPG/500px-TallinnWarMemorial2009.JPG",
+      "width": 500,
+      "height": 426,
+      "author": "Mark A. Wilson (Department of Geology, The College of Wooster) [1]",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:TallinnWarMemorial2009.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:TallinnWarMemorial2009.JPG",
+      "fullWidth": 2444
+     },
+     "description": "monument in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q2322737",
@@ -248,7 +413,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Reval-8425.jpg/500px-Reval-8425.jpg",
+      "width": 500,
+      "height": 376,
+      "author": "Hedwig Storch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Reval-8425.jpg",
+      "fullWidth": 4595
+     },
+     "description": "church building in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q2089605",
@@ -260,7 +436,18 @@
      "wikidataId": "Q2089605",
      "kinds": [
       "adminArea"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Tornide_v%C3%A4ljak_2014.jpg/500px-Tornide_v%C3%A4ljak_2014.jpg",
+      "width": 500,
+      "height": 251,
+      "author": "Abrget47j",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tornide_v%C3%A4ljak_2014.jpg",
+      "fullWidth": 6500
+     },
+     "description": "historic wall built around the city of Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q282994",
@@ -273,7 +460,18 @@
      "kinds": [
       "adminArea",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Paks_Margareeta.jpg/500px-Paks_Margareeta.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Epukas",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Paks_Margareeta.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paks_Margareeta.jpg",
+      "fullWidth": 640
+     },
+     "description": "wall tower in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q2304576",
@@ -285,7 +483,18 @@
      "wikidataId": "Q2304576",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/The_Synagogue_in_Tallin.JPG/500px-The_Synagogue_in_Tallin.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Avi1111 dr. avishai teicher",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Synagogue_in_Tallin.JPG",
+      "fullWidth": 4608
+     },
+     "description": "synagogue in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q11883539",
@@ -297,7 +506,18 @@
      "wikidataId": "Q11883539",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/At_Tallinn_2024_216.jpg/500px-At_Tallinn_2024_216.jpg",
+      "width": 500,
+      "height": 778,
+      "author": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:At_Tallinn_2024_216.jpg",
+      "fullWidth": 3919
+     },
+     "description": "building in Tallinn"
     },
     {
      "id": "wikidata/Q777726",
@@ -310,7 +530,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "church building in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q1070298",
@@ -324,7 +545,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Tallinn_Town_Hall_Square%2C_2013.jpg/500px-Tallinn_Town_Hall_Square%2C_2013.jpg",
+      "width": 500,
+      "height": 193,
+      "author": "Julie Anne Workman",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tallinn_Town_Hall_Square,_2013.jpg",
+      "fullWidth": 10682
+     },
+     "description": "square in central Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q11133776",
@@ -337,7 +569,18 @@
      "kinds": [
       "port",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Old_City_Harbour%2C_Tallinn.jpg/500px-Old_City_Harbour%2C_Tallinn.jpg",
+      "width": 500,
+      "height": 326,
+      "author": "Port of Tallinn / Tallinna Sadam",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_City_Harbour,_Tallinn.jpg",
+      "fullWidth": 2500
+     },
+     "description": "port in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q1722201",
@@ -349,7 +592,18 @@
      "wikidataId": "Q1722201",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Kalevi_Keskstaadion_16.08.2022.jpg/500px-Kalevi_Keskstaadion_16.08.2022.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "5anco5s",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kalevi_Keskstaadion_16.08.2022.jpg",
+      "fullWidth": 2710
+     },
+     "description": "stadium in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q3860574",
@@ -361,7 +615,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/P%C3%BCha_Katariina_kirik_2013-06-02.JPG/500px-P%C3%BCha_Katariina_kirik_2013-06-02.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Flying Saucer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:P%C3%BCha_Katariina_kirik_2013-06-02.JPG",
+      "fullWidth": 1280
+     },
+     "description": "former monastery in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q1733946",
@@ -373,7 +638,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "church building in Tallinn, Estonia"
     },
     {
      "id": "node/13588245127",
@@ -384,7 +650,18 @@
      "wikidataId": "Q845200",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Vesilennukite_angaar_1.jpg/500px-Vesilennukite_angaar_1.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Andrusu",
+      "license": "CC BY-SA 3.0 ee",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ee/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vesilennukite_angaar_1.jpg",
+      "fullWidth": 3872
+     },
+     "description": "1936 Kalev-class submarine"
     },
     {
      "id": "wikidata/Q3136517",
@@ -396,7 +673,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "church building in Tallinn, Estonia"
     },
     {
      "id": "wikidata/Q11704264",
@@ -411,7 +689,8 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "description": "theatre building in Tallinn, Estonia, home to the Estonian National Opera"
     },
     {
      "id": "wikidata/Q3739625",
@@ -422,7 +701,18 @@
      "wikidataId": "Q3739625",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Tallinna_Rootsi-Mihkli_kirik1.JPG/500px-Tallinna_Rootsi-Mihkli_kirik1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Alma Pater",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tallinna_Rootsi-Mihkli_kirik1.JPG",
+      "fullWidth": 3072
+     },
+     "description": "church building in Tallinn, Estonia"
     },
     {
      "id": "way/308215003",
@@ -435,7 +725,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Suur_Toll.jpg/500px-Suur_Toll.jpg",
+      "width": 500,
+      "height": 292,
+      "author": "Original uploader: et:Kasutaja:Boy (Estonian language wikipedia).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Suur_Toll.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Estonian icebreaker built in 1914"
     },
     {
      "id": "relation/6522415",
@@ -447,7 +748,8 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
+     ],
+     "description": "city gate in Tallinn"
     },
     {
      "id": "way/308214997",
@@ -455,7 +757,18 @@
      "lat": 59.45281,
      "lon": 24.73559,
      "wikipediaCount": 6,
-     "wikidataId": "Q753194"
+     "wikidataId": "Q753194",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/EML_Kalev_%28M414%29%2C_ship.JPG/500px-EML_Kalev_%28M414%29%2C_ship.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EML_Kalev_(M414),_ship.JPG",
+      "fullWidth": 2592
+     },
+     "description": "1967 ship"
     },
     {
      "id": "relation/3519093",
@@ -470,7 +783,18 @@
      "kinds": [
       "adminArea",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Hellemani_torn_2011_%282%29.jpg/500px-Hellemani_torn_2011_%282%29.jpg",
+      "width": 500,
+      "height": 890,
+      "author": "NOSSER",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hellemani_torn_2011_(2).jpg",
+      "fullWidth": 1456
+     },
+     "description": "tower in Tallinn"
     },
     {
      "id": "way/308215000",
@@ -482,7 +806,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/P401_Grif_Tallinn_Lennusadam_2015_1.jpg/500px-P401_Grif_Tallinn_Lennusadam_2015_1.jpg",
+      "width": 500,
+      "height": 302,
+      "author": "VargaA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:P401_Grif_Tallinn_Lennusadam_2015_1.jpg",
+      "fullWidth": 5814
+     },
+     "description": "1976 Estonian warship"
     },
     {
      "id": "way/308214998",
@@ -494,7 +829,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/PVL_105_Torm%2C_ship.JPG/500px-PVL_105_Torm%2C_ship.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PVL_105_Torm,_ship.JPG",
+      "fullWidth": 2200
+     },
+     "description": "1966 Estonian fast attack craft previously operated by Norway"
     },
     {
      "id": "node/7169795009",
@@ -502,7 +848,18 @@
      "lat": 59.45315,
      "lon": 24.73589,
      "wikipediaCount": 4,
-     "wikidataId": "Q7866013"
+     "wikidataId": "Q7866013",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/PVL-109_Valvas_at_Quay_A_Lennusadam_Tallinn_30_January_2015.JPG/500px-PVL-109_Valvas_at_Quay_A_Lennusadam_Tallinn_30_January_2015.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Pjotr Mahhonin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PVL-109_Valvas_at_Quay_A_Lennusadam_Tallinn_30_January_2015.JPG",
+      "fullWidth": 2560
+     },
+     "description": "1943 ship"
     },
     {
      "id": "way/308214999",
@@ -510,7 +867,18 @@
      "lat": 59.45275,
      "lon": 24.73683,
      "wikipediaCount": 4,
-     "wikidataId": "Q1275222"
+     "wikidataId": "Q1275222",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/EML_Suurop_P421%2C_ship.JPG/500px-EML_Suurop_P421%2C_ship.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EML_Suurop_P421,_ship.JPG",
+      "fullWidth": 2592
+     },
+     "description": "ship built in 1957"
     },
     {
      "id": "way/985850354",
@@ -518,7 +886,18 @@
      "lat": 59.45267,
      "lon": 24.73764,
      "wikipediaCount": 1,
-     "wikidataId": "Q12369651"
+     "wikidataId": "Q12369651",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Mare_at_Pier_A2_in_Lennusadam_Tallinn_21_August_2016.jpg/500px-Mare_at_Pier_A2_in_Lennusadam_Tallinn_21_August_2016.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Pjotr Mahhonin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mare_at_Pier_A2_in_Lennusadam_Tallinn_21_August_2016.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Estonian ship"
     },
     {
      "id": "way/26898836",
@@ -530,7 +909,8 @@
      "wikidataId": "Q42406890",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "building in Tallinn"
     },
     {
      "id": "node/5216929766",
@@ -601,7 +981,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Tallinna_Niguliste_kirik_22-03-2013.jpg/500px-Tallinna_Niguliste_kirik_22-03-2013.jpg",
+      "width": 500,
+      "height": 396,
+      "author": "Ivar Leidus",
+      "license": "CC BY-SA 3.0 ee",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ee/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tallinna_Niguliste_kirik_22-03-2013.jpg",
+      "fullWidth": 4904
+     },
+     "description": "Estonya'da bir kilise"
     },
     {
      "id": "node/687057482",
@@ -617,7 +1008,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Gran_Puerta_Costera%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_08.JPG/500px-Gran_Puerta_Costera%2C_Tallinn%2C_Estonia%2C_2012-08-05%2C_DD_08.JPG",
+      "width": 500,
+      "height": 378,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gran_Puerta_Costera,_Tallinn,_Estonia,_2012-08-05,_DD_08.JPG",
+      "fullWidth": 4700
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057489",
@@ -630,7 +1032,8 @@
      "wikidataId": "Q1516798",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "description": "aspect of history"
     },
     {
      "id": "node/600228722",
@@ -644,7 +1047,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Farmacia_del_Ayuntamiento%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_01.JPG/500px-Farmacia_del_Ayuntamiento%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_01.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Farmacia_del_Ayuntamiento,_Tallin,_Estonia,_2012-08-05,_DD_01.JPG",
+      "fullWidth": 5044
+     },
+     "description": "pharmacy in Tallinn, Estonia"
     },
     {
      "id": "node/687057487",
@@ -659,7 +1073,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057447",
@@ -675,7 +1090,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Museo_Estonio_de_Historia%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_05.JPG/500px-Museo_Estonio_de_Historia%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_05.JPG",
+      "width": 500,
+      "height": 839,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Estonio_de_Historia,_Tallin,_Estonia,_2012-08-05,_DD_05.JPG",
+      "fullWidth": 2250
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057382",
@@ -690,7 +1116,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057023",
@@ -704,7 +1131,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/N%C3%A4itus_%22M%C3%BCstiline_%C3%BCrgmeri%22.jpg/500px-N%C3%A4itus_%22M%C3%BCstiline_%C3%BCrgmeri%22.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Jüri Lõun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:N%C3%A4itus_%22M%C3%BCstiline_%C3%BCrgmeri%22.jpg",
+      "fullWidth": 4928
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057397",
@@ -720,7 +1158,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Assauwe_torn_Myyrivahe_t%C3%A4naval%2C_vaade_Harju_t%C3%A4nava_poolt%2C_8._august_2011.jpg/500px-Assauwe_torn_Myyrivahe_t%C3%A4naval%2C_vaade_Harju_t%C3%A4nava_poolt%2C_8._august_2011.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Oop",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Assauwe_torn_Myyrivahe_t%C3%A4naval,_vaade_Harju_t%C3%A4nava_poolt,_8._august_2011.jpg",
+      "fullWidth": 2448
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057448",
@@ -737,7 +1186,18 @@
       "noCoordinate",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Tallinna_Linnamuuseum_Vene_t%C3%A4naval%2C_8._august_2011.jpg/500px-Tallinna_Linnamuuseum_Vene_t%C3%A4naval%2C_8._august_2011.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Oop",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tallinna_Linnamuuseum_Vene_t%C3%A4naval,_8._august_2011.jpg",
+      "fullWidth": 3264
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/10180264018",
@@ -752,7 +1212,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Wikimedia_Hackathon_2024_-_Banned_Books_Museum_05.jpg/500px-Wikimedia_Hackathon_2024_-_Banned_Books_Museum_05.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Fuzheado",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wikimedia_Hackathon_2024_-_Banned_Books_Museum_05.jpg",
+      "fullWidth": 3840
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/679898565",
@@ -768,7 +1239,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/A.H._Tammsaare_museum_Tallinn.jpg/500px-A.H._Tammsaare_museum_Tallinn.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kukkaspoika73",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:A.H._Tammsaare_museum_Tallinn.jpg",
+      "fullWidth": 4128
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/687057445",
@@ -784,7 +1266,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Adamson-Ericu_muuseum_%28L%C3%BChike_jalg_3%29_20120929_by_Ahsoous.jpg/500px-Adamson-Ericu_muuseum_%28L%C3%BChike_jalg_3%29_20120929_by_Ahsoous.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Villem Lüüs",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Adamson-Ericu_muuseum_(L%C3%BChike_jalg_3)_20120929_by_Ahsoous.jpg",
+      "fullWidth": 3456
+     },
+     "description": "art museum in Tallinn, Estonia"
     },
     {
      "id": "node/6685135686",
@@ -800,7 +1293,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Fotografiska_tallinn_telliskivi_exterior1_-_2019.jpg/500px-Fotografiska_tallinn_telliskivi_exterior1_-_2019.jpg",
+      "width": 500,
+      "height": 370,
+      "author": "Sinikka Halme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fotografiska_tallinn_telliskivi_exterior1_-_2019.jpg",
+      "fullWidth": 3812
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/6772830291",
@@ -815,7 +1319,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Noblessner_proto_invention_factory_tallinn_interior_3_-_2019.jpg/500px-Noblessner_proto_invention_factory_tallinn_interior_3_-_2019.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sinikka Halme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Noblessner_proto_invention_factory_tallinn_interior_3_-_2019.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Tallinn"
     },
     {
      "id": "way/47007745",
@@ -827,7 +1342,18 @@
      "wikidataId": "Q12376219",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Hobuveski_%28Kenny_McFly%29.jpg/500px-Hobuveski_%28Kenny_McFly%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Kenny McFly",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hobuveski_(Kenny_McFly).jpg",
+      "fullWidth": 3888
+     },
+     "description": "mill building in Tallinn"
     },
     {
      "id": "node/687057400",
@@ -841,7 +1367,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Eesti_Pank_Museum_%28Banco_Estonio%29%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_03.JPG/500px-Eesti_Pank_Museum_%28Banco_Estonio%29%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_03.JPG",
+      "width": 500,
+      "height": 849,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eesti_Pank_Museum_(Banco_Estonio),_Tallin,_Estonia,_2012-08-05,_DD_03.JPG",
+      "fullWidth": 2900
+     },
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "node/6171164356",
@@ -857,7 +1394,8 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "museum in Tallinn, Estonia"
     },
     {
      "id": "way/26881759",
@@ -871,7 +1409,8 @@
      "wikidataId": "Q12376251",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "building in Tallinn, Estonia"
     },
     {
      "id": "node/7264857801",
@@ -2013,16 +2552,6 @@
      "detailed": true
     },
     {
-     "id": "node/1413920978",
-     "name": "Põrgu",
-     "lat": 59.43604,
-     "lon": 24.74201,
-     "address": "Rüütli 4",
-     "website": "https://www.porgu.ee/",
-     "openingHours": "Mo-Th 12:00-24:00; Fr-Sa 12:00-02:00",
-     "detailed": true
-    },
-    {
      "id": "node/10560458975",
      "name": "Pudel",
      "lat": 59.44056,
@@ -2070,6 +2599,16 @@
      "address": "Mere pst 6",
      "website": "https://www.scotlandyard.ee/",
      "openingHours": "Mo-Th 11:00-00:00; Fr-Sa 09:00-02:00; Su 09:00-00:00",
+     "detailed": true
+    },
+    {
+     "id": "node/7038275800",
+     "name": "Siesta Tapas",
+     "lat": 59.43856,
+     "lon": 24.75804,
+     "address": "Rotermanni 2",
+     "openingHours": "Mo-We 15:00-24:00, Th-Sa 15:00-02:00, Su 15:00-24:00",
+     "cuisine": "spanish, tapas",
      "detailed": true
     }
    ]

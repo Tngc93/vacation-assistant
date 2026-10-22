@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "OSL",
- "fetchedAt": "2026-10-18T16:30:16.122Z",
+ "fetchedAt": "2026-10-22T05:44:51.545Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -57,7 +57,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Full_Opera_by_night.jpg/500px-Full_Opera_by_night.jpg",
+      "width": 500,
+      "height": 156,
+      "author": "Rafał Konieczny",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Full_Opera_by_night.jpg",
+      "fullWidth": 11462
+     },
+     "description": "opera house in Oslo, Norway"
     },
     {
      "id": "relation/13931023",
@@ -75,7 +86,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OSLO-NO-02_05_ubt.jpeg/500px-OSLO-NO-02_05_ubt.jpeg",
+      "width": 500,
+      "height": 257,
+      "author": "Photo © 2005 by Tomasz Sienicki [user: tsca , mail: tomasz.sienicki at gmail.com]",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:OSLO-NO-02_05_ubt.jpeg",
+      "fullWidth": 1251
+     },
+     "description": "former medieval castle in Oslo, Norway"
     },
     {
      "id": "relation/12267199",
@@ -88,7 +110,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Slottet_i_Oslo_1.jpg/500px-Slottet_i_Oslo_1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Andreas Haldorsen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Slottet_i_Oslo_1.jpg",
+      "fullWidth": 5377
+     },
+     "description": "official residence of the monarch of Norway"
     },
     {
      "id": "wikidata/Q1063209",
@@ -100,7 +133,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/00_7720_Oslo_-_Domkirche.jpg/500px-00_7720_Oslo_-_Domkirche.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_7720_Oslo_-_Domkirche.jpg",
+      "fullWidth": 1733
+     },
+     "description": "cathedral in Oslo, Norway"
     },
     {
      "id": "wikidata/Q866409",
@@ -111,7 +155,18 @@
      "wikidataId": "Q866409",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Bislett_panorama.jpg/500px-Bislett_panorama.jpg",
+      "width": 500,
+      "height": 213,
+      "author": "Kjetil Ree",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bislett_panorama.jpg",
+      "fullWidth": 2972
+     },
+     "description": "stadium at Oslo, Norway"
     },
     {
      "id": "way/24900009",
@@ -125,7 +180,8 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "description": "Norveç'teki bir belediye binası"
     },
     {
      "id": "wikidata/Q565382",
@@ -138,7 +194,18 @@
       "heritage",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/NOR-2016-Oslo-National_Theatre.jpg/500px-NOR-2016-Oslo-National_Theatre.jpg",
+      "width": 500,
+      "height": 401,
+      "author": "Godot13",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NOR-2016-Oslo-National_Theatre.jpg",
+      "fullWidth": 5315
+     },
+     "description": "theatre in Oslo, Norway"
     },
     {
      "id": "wikidata/Q1490775",
@@ -150,7 +217,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Karl_Johans_gate.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "User:Mahlum",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Karl_Johans_gate.jpg",
+      "fullWidth": 450
+     },
+     "description": "street in Oslo, Norway"
     },
     {
      "id": "wikidata/Q6515317",
@@ -162,7 +240,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Storting_building.jpg/500px-Storting_building.jpg",
+      "width": 500,
+      "height": 232,
+      "author": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Storting_building.jpg",
+      "fullWidth": 12287
+     },
+     "description": "Seat of the Storting, the parliament of Norway"
     },
     {
      "id": "wikidata/Q1552134",
@@ -175,7 +264,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/StOlavsOsloFeb2009.jpg/500px-StOlavsOsloFeb2009.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Asgeir O. Mortensen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StOlavsOsloFeb2009.jpg",
+      "fullWidth": 1400
+     },
+     "description": "cathedral in Oslo, Norway"
     },
     {
      "id": "wikidata/Q1508325",
@@ -189,7 +289,18 @@
       "musicVenue",
       "performingArts",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Oslo_Spektrum.jpg/500px-Oslo_Spektrum.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kjetil Ree",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oslo_Spektrum.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Oslo'da çok amaçlı kapalı arena"
     },
     {
      "id": "wikidata/Q745748",
@@ -200,7 +311,18 @@
      "wikidataId": "Q745748",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Synagogue_Oslo_.JPG/500px-Synagogue_Oslo_.JPG",
+      "width": 500,
+      "height": 747,
+      "author": "ZWGallery",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Synagogue_Oslo_.JPG",
+      "fullWidth": 2592
+     },
+     "description": "Jüdisches Gotteshaus in Oslo, Norwegen"
     },
     {
      "id": "wikidata/Q1260032",
@@ -212,7 +334,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Gamle_Aker_kirke_S.jpg/500px-Gamle_Aker_kirke_S.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gamle_Aker_kirke_S.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gamle_Aker_kirke_S.jpg",
+      "fullWidth": 1345
+     },
+     "description": "church in Oslo, Norway"
     },
     {
      "id": "wikidata/Q3499753",
@@ -226,7 +359,18 @@
       "hotel",
       "organization",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Oslo_Plaza_og_Postgirobygget2_%28cropped%29.jpg/500px-Oslo_Plaza_og_Postgirobygget2_%28cropped%29.jpg",
+      "width": 500,
+      "height": 743,
+      "author": "Tommy Gildseth",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oslo_Plaza_og_Postgirobygget2_(cropped).jpg",
+      "fullWidth": 1200
+     },
+     "description": "building in Norway"
     },
     {
      "id": "wikidata/Q1782787",
@@ -238,7 +382,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Christiania_theater.jpg/500px-Christiania_theater.jpg",
+      "width": 500,
+      "height": 309,
+      "author": "Christian Grosch (1801-1865)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Christiania_theater.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christiania_theater.jpg",
+      "fullWidth": 1092
+     },
+     "description": "public theatre in Norway (1837-1899)"
     },
     {
      "id": "wikidata/Q1807481",
@@ -246,7 +401,18 @@
      "lat": 59.91476,
      "lon": 10.73315,
      "wikipediaCount": 11,
-     "wikidataId": "Q1807481"
+     "wikidataId": "Q1807481",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Oslotunnelen_Oslo_S.jpg/500px-Oslotunnelen_Oslo_S.jpg",
+      "width": 500,
+      "height": 383,
+      "author": "User:GerdM Gerd Magerhans",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oslotunnelen_Oslo_S.jpg",
+      "fullWidth": 1002
+     },
+     "description": "railway tunnel between Olav Kyrres plass and Oslo Central Station"
     },
     {
      "id": "wikidata/Q2512114",
@@ -254,7 +420,18 @@
      "lat": 59.915,
      "lon": 10.74583,
      "wikipediaCount": 11,
-     "wikidataId": "Q2512114"
+     "wikidataId": "Q2512114",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Regjeringsbygget_29_juli_2011_web.jpg/500px-Regjeringsbygget_29_juli_2011_web.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Paalso Paal Sørensen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Regjeringsbygget_29_juli_2011_web.jpg",
+      "fullWidth": 532
+     },
+     "description": "area in Oslo, Norway, housing governmental administrative offices"
     },
     {
      "id": "wikidata/Q2842096",
@@ -266,7 +443,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Trefoldighetskirken_Oslo.jpg/500px-Trefoldighetskirken_Oslo.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Bjørn Erik Pedersen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trefoldighetskirken_Oslo.jpg",
+      "fullWidth": 3888
+     },
+     "description": "church in Oslo, Norway"
     },
     {
      "id": "way/457724681",
@@ -277,7 +465,8 @@
      "wikidataId": "Q1477794",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "description": "cultural property"
     },
     {
      "id": "way/89545556",
@@ -285,7 +474,18 @@
      "lat": 59.9177,
      "lon": 10.72847,
      "wikipediaCount": 7,
-     "wikidataId": "Q4583462"
+     "wikidataId": "Q4583462",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Kongespeilet_i_Slottsparken.JPG/500px-Kongespeilet_i_Slottsparken.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Helge Høifødt",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kongespeilet_i_Slottsparken.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kongespeilet_i_Slottsparken.JPG",
+      "fullWidth": 3072
+     },
+     "description": "Public park by the Royal Palace in Oslo, Norway"
     },
     {
      "id": "way/262320927",
@@ -297,7 +497,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Ruinparken3.JPG/500px-Ruinparken3.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Helge Høifødt",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ruinparken3.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ruinparken3.JPG",
+      "fullWidth": 3072
+     },
+     "description": "church building in Oslo, Norway"
     },
     {
      "id": "way/257875433",
@@ -309,7 +520,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Ruine_of_St._Mary%27s_Church%2C_Oslo_02.jpg/500px-Ruine_of_St._Mary%27s_Church%2C_Oslo_02.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Grzegorz Wysocki",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ruine_of_St._Mary%27s_Church,_Oslo_02.jpg",
+      "fullWidth": 1369
+     },
+     "description": "church building in Oslo, Norway"
     },
     {
      "id": "way/111548139",
@@ -321,7 +543,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Clemenskirken1.JPG/500px-Clemenskirken1.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "PaulVIF",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Clemenskirken1.JPG",
+      "fullWidth": 2592
+     },
+     "description": "church building in Oslo, Norway"
     },
     {
      "id": "node/1664967162",
@@ -332,7 +565,17 @@
      "wikidataId": "Q23868718",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Abelmonumentet_1.jpg/500px-Abelmonumentet_1.jpg",
+      "width": 500,
+      "height": 1019,
+      "author": "GAD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Abelmonumentet_1.jpg",
+      "fullWidth": 1828
+     }
     },
     {
      "id": "way/1039892466",
@@ -346,7 +589,18 @@
       "adminArea",
       "attraction",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Tjuvtitten_Tjuvholmen.JPG/500px-Tjuvtitten_Tjuvholmen.JPG",
+      "width": 500,
+      "height": 747,
+      "author": "Helge Høifødt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tjuvtitten_Tjuvholmen.JPG",
+      "fullWidth": 2592
+     },
+     "description": "tower in Oslo, Norway"
     },
     {
      "id": "node/5392213996",
@@ -477,7 +731,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/MUNCH_Museum_front_%282020%29_4.jpg/500px-MUNCH_Museum_front_%282020%29_4.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Premeditated",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MUNCH_Museum_front_(2020)_4.jpg",
+      "fullWidth": 4032
+     },
+     "description": "art museum in Oslo, Norway"
     },
     {
      "id": "wikidata/Q1132918",
@@ -489,7 +754,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Nye_Nasjonalmuseet_%282022%29_%282%29.jpg/500px-Nye_Nasjonalmuseet_%282022%29_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Premeditated",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nye_Nasjonalmuseet_(2022)_(2).jpg",
+      "fullWidth": 4032
+     },
+     "description": "National Museum in Oslo"
     },
     {
      "id": "node/8046314379",
@@ -498,12 +774,23 @@
      "lon": 10.7304,
      "website": "https://www.nobelpeacecenter.org/",
      "openingHours": "Jan 1 off; Jan 2‑6 Mo off; Jan 2‑6 Tu‑Su 11:00‑17:00; Jan 7‑May 31 Mo off; Jan 7‑May 31 Tu 11:00‑17:00; Jan 7‑May 31 We 11:00‑20:00; Jan 7‑May 31 Th‑Su 11:00‑17:00; May 1 11:00‑17:00; May 20 11:00‑13:00; Jun 1‑Aug 31 Mo‑Su 10:00‑18:00; May 17 off; Dec 9 o",
-     "wikipediaCount": 25,
+     "wikipediaCount": 26,
      "wikidataId": "Q941120",
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Centro_Nobel_Paz.jpg/500px-Centro_Nobel_Paz.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Canaan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centro_Nobel_Paz.jpg",
+      "fullWidth": 4080
+     },
+     "description": "museum in Oslo, Norway"
     },
     {
      "id": "way/111867428",
@@ -516,7 +803,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Historisk_museum_oslo.jpg/500px-Historisk_museum_oslo.jpg",
+      "width": 500,
+      "height": 287,
+      "author": "Vidariv",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Historisk_museum_oslo.jpg",
+      "fullWidth": 3828
+     },
+     "description": "museum of the University of Oslo, Norway"
     },
     {
      "id": "wikidata/Q6514373",
@@ -529,7 +827,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Filmenshus_oslo.jpg/500px-Filmenshus_oslo.jpg",
+      "width": 500,
+      "height": 1232,
+      "author": "Kjetil Bjørnsrud",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Filmenshus_oslo.jpg",
+      "fullWidth": 940
+     },
+     "description": "Norwegian film institute"
     },
     {
      "id": "node/1931359713",
@@ -544,7 +853,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Astrup_Fearnley_009.JPG/500px-Astrup_Fearnley_009.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Vidar Iversen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Astrup_Fearnley_009.JPG",
+      "fullWidth": 5184
+     },
+     "description": "Art museum in Oslo, Norway"
     },
     {
      "id": "way/4045303",
@@ -556,7 +876,18 @@
      "wikidataId": "Q3116396",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Botanisk_hage_Oldemors_have.JPG/500px-Botanisk_hage_Oldemors_have.JPG",
+      "width": 500,
+      "height": 314,
+      "author": "Helge Høifødt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Botanisk_hage_Oldemors_have.JPG",
+      "fullWidth": 3803
+     },
+     "description": "University Botanical Garden in Oslo"
     },
     {
      "id": "node/5412354900",
@@ -570,7 +901,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Naturhistorisk_museum_-_Museumsinngang.jpg/500px-Naturhistorisk_museum_-_Museumsinngang.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Tommy Gildseth",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Naturhistorisk_museum_-_Museumsinngang.jpg",
+      "fullWidth": 4000
+     },
+     "description": "natural history museum in Oslo, Norway"
     },
     {
      "id": "node/270315261",
@@ -584,7 +926,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Hjemmefrontmuseet_Akershus.jpg/500px-Hjemmefrontmuseet_Akershus.jpg",
+      "width": 500,
+      "height": 247,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hjemmefrontmuseet_Akershus.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hjemmefrontmuseet_Akershus.jpg",
+      "fullWidth": 1350
+     },
+     "description": "world war ii museum in Akershus Fortress, Oslo"
     },
     {
      "id": "way/116409744",
@@ -598,7 +951,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Oslo%2C_Kunstnernes_Hus_%283%29.JPG/500px-Oslo%2C_Kunstnernes_Hus_%283%29.JPG",
+      "width": 500,
+      "height": 366,
+      "author": "Michal Klajban",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oslo,_Kunstnernes_Hus_(3).JPG",
+      "fullWidth": 2774
+     },
+     "description": "art institution and gallery in Oslo, Norway"
     },
     {
      "id": "way/54830211",
@@ -612,7 +976,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Hovedarsenalet_Akershus.jpg/500px-Hovedarsenalet_Akershus.jpg",
+      "width": 500,
+      "height": 214,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hovedarsenalet_Akershus.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hovedarsenalet_Akershus.jpg",
+      "fullWidth": 1400
+     },
+     "description": "military museum in Oslo, Norway"
     },
     {
      "id": "way/90768996",
@@ -625,7 +1000,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Arbins_gate_1_Oslo.jpg/500px-Arbins_gate_1_Oslo.jpg",
+      "width": 500,
+      "height": 461,
+      "author": "User:Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Arbins_gate_1_Oslo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arbins_gate_1_Oslo.jpg",
+      "fullWidth": 686
+     },
+     "description": "literary museum in Oslo, Norway"
     },
     {
      "id": "way/112401084",
@@ -637,7 +1023,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/J%C3%B8disk_Museum_i_Oslo_%282017-01-08_bilde01%29.jpg/500px-J%C3%B8disk_Museum_i_Oslo_%282017-01-08_bilde01%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Kjetil Ree",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:J%C3%B8disk_Museum_i_Oslo_(2017-01-08_bilde01).jpg",
+      "fullWidth": 4288
+     },
+     "description": "museum covering Jewish history in Norway"
     },
     {
      "id": "way/31106820",
@@ -652,7 +1049,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Historisk_museum_oslo.jpg/500px-Historisk_museum_oslo.jpg",
+      "width": 500,
+      "height": 287,
+      "author": "Vidariv",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Historisk_museum_oslo.jpg",
+      "fullWidth": 3828
+     },
+     "description": "museum building in Oslo"
     },
     {
      "id": "node/2785549850",
@@ -666,7 +1074,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/22._juli-senteret_i_juli_2026.jpg/500px-22._juli-senteret_i_juli_2026.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jonas Tisell",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:22._juli-senteret_i_juli_2026.jpg",
+      "fullWidth": 2680
+     },
+     "description": "in Oslo, Norway"
     },
     {
      "id": "node/6780418993",
@@ -680,7 +1099,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nedre_Slottsgate_4C.jpg/500px-Nedre_Slottsgate_4C.jpg",
+      "width": 500,
+      "height": 887,
+      "author": "Jan-Tore Egge",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nedre_Slottsgate_4C.jpg",
+      "fullWidth": 1868
+     },
+     "description": "Bible museum located in Oslo, Norway"
     },
     {
      "id": "way/132766114",
@@ -693,7 +1123,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%22Die_Hauptresidenz_der_K%C3%B6nige_von_Norwegen%22._16.jpg/500px-%22Die_Hauptresidenz_der_K%C3%B6nige_von_Norwegen%22._16.jpg",
+      "width": 500,
+      "height": 265,
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%22Die_Hauptresidenz_der_K%C3%B6nige_von_Norwegen%22._16.jpg",
+      "fullWidth": 5906
+     },
+     "description": "Art museum in Oslo, Norway"
     },
     {
      "id": "way/772265973",
@@ -705,7 +1146,18 @@
      "wikidataId": "Q4353317",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Alta_minesveiper_M314_i_Ris%C3%B8r_august_2017_%28cropped%29.jpg/500px-Alta_minesveiper_M314_i_Ris%C3%B8r_august_2017_%28cropped%29.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Peulle",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alta_minesveiper_M314_i_Ris%C3%B8r_august_2017_(cropped).jpg",
+      "fullWidth": 3455
+     },
+     "description": "1953 Sauda-class mine countermeasures vessel"
     },
     {
      "id": "node/3650497118",
@@ -719,7 +1171,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Gr%C3%B6nland_politistasjon_T%C3%B6yenbekken_1_rk_163562_IMG_8319.JPG/500px-Gr%C3%B6nland_politistasjon_T%C3%B6yenbekken_1_rk_163562_IMG_8319.JPG",
+      "width": 500,
+      "height": 458,
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 3.0 no",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/no/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gr%C3%B6nland_politistasjon_T%C3%B6yenbekken_1_rk_163562_IMG_8319.JPG",
+      "fullWidth": 1887
+     },
+     "description": "museum in Oslo"
     },
     {
      "id": "way/27011866",
@@ -734,7 +1197,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Geologisk_museum_Oslo.JPG/500px-Geologisk_museum_Oslo.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geologisk_museum_Oslo.JPG",
+      "fullWidth": 3888
+     },
+     "description": "museum in Oslo"
     },
     {
      "id": "way/111546665",
@@ -746,7 +1220,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Oslo_ladeg%C3%A5rd.jpg/500px-Oslo_ladeg%C3%A5rd.jpg",
+      "width": 500,
+      "height": 242,
+      "author": "Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Oslo_ladeg%C3%A5rd.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oslo_ladeg%C3%A5rd.jpg",
+      "fullWidth": 1800
+     },
+     "description": "building in Oslo, Norway"
     },
     {
      "id": "way/27011865",
@@ -760,7 +1245,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Zoology_Museum_Oslo%2C_Norway.JPG/500px-Zoology_Museum_Oslo%2C_Norway.JPG",
+      "width": 500,
+      "height": 281,
+      "author": "Nickrds09",
+      "license": "CC BY-SA 3.0 no",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/no/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Zoology_Museum_Oslo,_Norway.JPG",
+      "fullWidth": 4000
+     },
+     "description": "Robert Collects building is the former Zoological Museum of the University of Oslo Natural History Museum"
     },
     {
      "id": "node/6593517792",
@@ -774,7 +1270,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Brannmuseet_i_Oslo_1.jpg/500px-Brannmuseet_i_Oslo_1.jpg",
+      "width": 500,
+      "height": 286,
+      "author": "C. Hill",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brannmuseet_i_Oslo_1.jpg",
+      "fullWidth": 3072
+     },
+     "description": "museum in Oslo, Norway"
     },
     {
      "id": "node/6593517800",
@@ -788,7 +1295,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Sm%C3%A5flaskemuseet.JPG/500px-Sm%C3%A5flaskemuseet.JPG",
+      "width": 500,
+      "height": 328,
+      "author": "Anne-Sophie Ofrim",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sm%C3%A5flaskemuseet.JPG",
+      "fullWidth": 3028
+     },
+     "description": "museum in Oslo, Norway"
     },
     {
      "id": "node/6593517802",
@@ -801,7 +1319,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Oslo_Skolemuseum_2022_1.jpg/500px-Oslo_Skolemuseum_2022_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Kimsaka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Oslo_Skolemuseum_2022_1.jpg",
+      "fullWidth": 4032
+     }
     },
     {
      "id": "node/6593517801",
@@ -813,7 +1341,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Norsk_tryllemuseum_19.04.2011.JPG/500px-Norsk_tryllemuseum_19.04.2011.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Vidar Iversen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Norsk_tryllemuseum_19.04.2011.JPG",
+      "fullWidth": 3888
+     },
+     "description": "museum in Oslo, Norway"
     },
     {
      "id": "node/7009891162",
@@ -838,7 +1377,18 @@
      "lon": 10.72882,
      "website": "https://www.nasjonalmuseet.no/",
      "openingHours": "Tu-We 10:00-20:00; Th-Su 10:00-17:00",
-     "wikidataId": "Q112339532"
+     "wikidataId": "Q112339532",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Nye_Nasjonalmuseet_%282022%29_%282%29.jpg/500px-Nye_Nasjonalmuseet_%282022%29_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Premeditated",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nye_Nasjonalmuseet_(2022)_(2).jpg",
+      "fullWidth": 4032
+     },
+     "description": "building in Oslo, Norway"
     },
     {
      "id": "node/855363455",
@@ -1012,7 +1562,18 @@
      "openingHours": "Mo-Tu 11:00-22:00; We-Fr 11:00-24:00; Sa 12:00-24:00; Su 12:00-22:00",
      "cuisine": "regional",
      "wikidataId": "Q4812018",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Asylet_Groenland.jpg/500px-Asylet_Groenland.jpg",
+      "width": 500,
+      "height": 255,
+      "author": "User:Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Asylet_Groenland.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Asylet_Groenland.jpg",
+      "fullWidth": 1650
+     },
+     "description": "building in Oslo, Norway"
     },
     {
      "id": "node/315230164",
@@ -1804,6 +2365,15 @@
      "detailed": true
     },
     {
+     "id": "node/34693422",
+     "name": "Dubliner",
+     "lat": 59.90986,
+     "lon": 10.74057,
+     "website": "https://www.dubliner.no/",
+     "openingHours": "Monday: 15:00 - 00:00;Tuesday-Friday: 12:00 - 03:00;Saturday: 13:00 - 03:00;Sunday: 13:00 - 00:00",
+     "detailed": true
+    },
+    {
      "id": "node/10933877465",
      "name": "Eilefs landhandleri",
      "lat": 59.91496,
@@ -1828,15 +2398,6 @@
      "lon": 10.71483,
      "website": "https://forestandbrown.no/",
      "openingHours": "Mo-Th 11:00-01:00; Fr-Sa 11:00-02:30; Su 12:00-01:00",
-     "detailed": true
-    },
-    {
-     "id": "node/8091977096",
-     "name": "Fru Burums",
-     "lat": 59.9159,
-     "lon": 10.71619,
-     "website": "https://fruburums.no/",
-     "openingHours": "Su-Th 15:00-23:30; Fr-Sa 13:00-23:30",
      "detailed": true
     }
    ]
@@ -1887,7 +2448,18 @@
      "lat": 59.92016,
      "lon": 10.75284,
      "website": "https://blaaoslo.no/",
-     "wikidataId": "Q2907430"
+     "wikidataId": "Q2907430",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Wojtek_Mazolewski_Quintet_Bl%C3%A5_2019_%28215519%29.jpg/500px-Wojtek_Mazolewski_Quintet_Bl%C3%A5_2019_%28215519%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tore Sætre",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wojtek_Mazolewski_Quintet_Bl%C3%A5_2019_(215519).jpg",
+      "fullWidth": 900
+     },
+     "description": "jazz club in Oslo, Norway"
     },
     {
      "id": "node/9557812431",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "PAR",
- "fetchedAt": "2026-10-18T12:03:34.886Z",
+ "fetchedAt": "2026-10-22T05:07:28.040Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
       "attraction",
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/500px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "width": 500,
+      "height": 925,
+      "author": "Benh LIEU SONG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+      "fullWidth": 2900
+     },
+     "description": "Paris'in simgesi olan demir kule"
     },
     {
      "id": "way/201611261",
@@ -71,7 +82,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Notre-Dame_de_Paris_2013-07-24.jpg/500px-Notre-Dame_de_Paris_2013-07-24.jpg",
+      "width": 500,
+      "height": 675,
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg",
+      "fullWidth": 3348
+     },
+     "description": "Paris'teki katedral"
     },
     {
      "id": "node/4533627787",
@@ -84,7 +106,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Avenue_des_Champs-%C3%89lys%C3%A9es%2C_Paris_3_October_2010.jpg/500px-Avenue_des_Champs-%C3%89lys%C3%A9es%2C_Paris_3_October_2010.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "SoWhat",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Avenue_des_Champs-%C3%89lys%C3%A9es,_Paris_3_October_2010.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Paris'te cadde"
     },
     {
      "id": "wikidata/Q64436",
@@ -96,7 +129,18 @@
      "wikidataId": "Q64436",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Arc_de_Triomphe_-_Ao%C3%BBt_2026.jpg/500px-Arc_de_Triomphe_-_Ao%C3%BBt_2026.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "ZeusUpsistos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_-_Ao%C3%BBt_2026.jpg",
+      "fullWidth": 4802
+     },
+     "description": "Paris, Fransa'da bir yapı"
     },
     {
      "id": "node/13411401985",
@@ -109,7 +153,18 @@
       "adminArea",
       "castle",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Bastille_Exterior_1790_or_1791.jpg/500px-Bastille_Exterior_1790_or_1791.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "Anonymous Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bastille_Exterior_1790_or_1791.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bastille_Exterior_1790_or_1791.jpg",
+      "fullWidth": 1588
+     },
+     "description": "Fransa'da kale"
     },
     {
      "id": "wikidata/Q13205",
@@ -122,7 +177,18 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/StadeFranceNationsLeague2018.jpg/500px-StadeFranceNationsLeague2018.jpg",
+      "width": 500,
+      "height": 272,
+      "author": "Darthvadrouw",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StadeFranceNationsLeague2018.jpg",
+      "fullWidth": 7156
+     },
+     "description": "Fransa'nın millî stadyumu"
     },
     {
      "id": "wikidata/Q193431",
@@ -133,7 +199,18 @@
      "wikidataId": "Q193431",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Paris_Parc_des_Princes_1.jpg/500px-Paris_Parc_des_Princes_1.jpg",
+      "width": 500,
+      "height": 264,
+      "author": "Валерий Дед",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_Parc_des_Princes_1.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Fransa'nın başkenti Paris'te bir futbol stadyumu"
     },
     {
      "id": "way/13859706",
@@ -148,7 +225,18 @@
      "wikidataId": "Q311",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Main_gate_of_the_P%C3%A8re-Lachaise_Cemetery%2C_Paris_13_June_2014.jpg/500px-Main_gate_of_the_P%C3%A8re-Lachaise_Cemetery%2C_Paris_13_June_2014.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Connie Ma from Chicago, United States of America",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Main_gate_of_the_P%C3%A8re-Lachaise_Cemetery,_Paris_13_June_2014.jpg",
+      "fullWidth": 4272
+     },
+     "description": "Fransa'da bir mezarlık"
     },
     {
      "id": "node/10844713782",
@@ -160,7 +248,18 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Pendule_de_Foucault.jpg/500px-Pendule_de_Foucault.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Arnaud 25",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pendule_de_Foucault.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pendule_de_Foucault.jpg",
+      "fullWidth": 1024
+     },
+     "description": "simple device conceived as an experiment to demonstrate the rotation of the Earth"
     },
     {
      "id": "relation/1060803",
@@ -174,7 +273,18 @@
       "heritage",
       "palace",
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Secretary_Pompeo_Arrives_to_Meet_with_French_Foreign_Minister_Le_Drian_in_Paris_%2850610423656%29_%28cropped%29.jpg/500px-Secretary_Pompeo_Arrives_to_Meet_with_French_Foreign_Minister_Le_Drian_in_Paris_%2850610423656%29_%28cropped%29.jpg",
+      "width": 500,
+      "height": 255,
+      "author": "U.S. Department of State from United States",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Secretary_Pompeo_Arrives_to_Meet_with_French_Foreign_Minister_Le_Drian_in_Paris_(50610423656)_(cropped).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Secretary_Pompeo_Arrives_to_Meet_with_French_Foreign_Minister_Le_Drian_in_Paris_(50610423656)_(cropped).jpg",
+      "fullWidth": 8752
+     },
+     "description": "Fransa cumhurbaşkanının resmî konutu"
     },
     {
      "id": "way/54667456",
@@ -191,7 +301,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Paris_Palais_Garnier_2010-04-06_16.55.07.jpg/500px-Paris_Palais_Garnier_2010-04-06_16.55.07.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "Alexander Hoernigk",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_Palais_Garnier_2010-04-06_16.55.07.jpg",
+      "fullWidth": 4085
+     },
+     "description": "opera house in Paris, France"
     },
     {
      "id": "way/16407465",
@@ -206,7 +327,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Panth%C3%A9on%2C_Paris_25_March_2012.jpg/500px-Panth%C3%A9on%2C_Paris_25_March_2012.jpg",
+      "width": 500,
+      "height": 339,
+      "author": "Camille Gévaudan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on,_Paris_25_March_2012.jpg",
+      "fullWidth": 2800
+     },
+     "description": "Fransa'da kilise"
     },
     {
      "id": "way/432819047",
@@ -218,7 +350,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Place_de_la_Concorde_from_the_Eiffel_Tower%2C_Paris_April_2011.jpg/500px-Place_de_la_Concorde_from_the_Eiffel_Tower%2C_Paris_April_2011.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Cristian Bortes from Cluj-Napoca, Romania",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Place_de_la_Concorde_from_the_Eiffel_Tower,_Paris_April_2011.jpg",
+      "fullWidth": 4752
+     },
+     "description": "Paris'te meydan"
     },
     {
      "id": "way/23762981",
@@ -233,7 +376,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Le_sacre_coeur.jpg/500px-Le_sacre_coeur.jpg",
+      "width": 500,
+      "height": 564,
+      "author": "Tonchino",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_sacre_coeur.jpg",
+      "fullWidth": 2304
+     },
+     "description": "Fransa'da kilise"
     },
     {
      "id": "way/175448742",
@@ -245,7 +399,18 @@
      "wikidataId": "Q193582",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Paris_Assemblee_Nationale_DSC00074.jpg/500px-Paris_Assemblee_Nationale_DSC00074.jpg",
+      "width": 500,
+      "height": 230,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_Assemblee_Nationale_DSC00074.jpg",
+      "fullWidth": 2168
+     },
+     "description": "Fransız Parlamentosu'nun alt kanadı"
     },
     {
      "id": "relation/3344870",
@@ -260,7 +425,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Paris_Sainte_Chapelle_East_View_02.JPG/500px-Paris_Sainte_Chapelle_East_View_02.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Uoaei1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_Sainte_Chapelle_East_View_02.JPG",
+      "fullWidth": 3482
+     },
+     "description": "Paris'te şapel"
     },
     {
      "id": "way/4208595",
@@ -273,7 +449,18 @@
      "wikidataId": "Q217925",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/MG-Paris-Champ_de_Mars.jpg/500px-MG-Paris-Champ_de_Mars.jpg",
+      "width": 500,
+      "height": 928,
+      "author": "Mattgirling",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MG-Paris-Champ_de_Mars.jpg",
+      "fullWidth": 3777
+     },
+     "description": "large public green space in Paris, France"
     },
     {
      "id": "relation/1463538",
@@ -286,7 +473,18 @@
      "wikidataId": "Q188977",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/H%C3%B4tel_des_Invalides_-_20150801_16h09_%2810630%29.jpg/500px-H%C3%B4tel_des_Invalides_-_20150801_16h09_%2810630%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Another one of my pictures: This photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract .",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_des_Invalides_-_20150801_16h09_(10630).jpg",
+      "fullWidth": 3561
+     },
+     "description": "Paris'te bina kompleksi"
     },
     {
      "id": "way/4433289",
@@ -301,7 +499,18 @@
       "business",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chapelle_Sainte-Ursule_de_la_Sorbonne%2C_Paris_001.jpg/500px-Chapelle_Sainte-Ursule_de_la_Sorbonne%2C_Paris_001.jpg",
+      "width": 500,
+      "height": 734,
+      "author": "Moonik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chapelle_Sainte-Ursule_de_la_Sorbonne,_Paris_001.jpg",
+      "fullWidth": 2487
+     },
+     "description": "French university located at the heart of the Latin Quarter, in Paris"
     },
     {
      "id": "wikidata/Q151030",
@@ -314,7 +523,18 @@
       "business",
       "musicVenue",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Moulin_Rouge%2C_17_April_2011.jpg/500px-Moulin_Rouge%2C_17_April_2011.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Juanedc from Zaragoza, España",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moulin_Rouge,_17_April_2011.jpg",
+      "fullWidth": 3888
+     },
+     "description": "Paris'te kabare salonu"
     },
     {
      "id": "relation/975955",
@@ -326,7 +546,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2017_-_Le_palais_du_Luxembourg%2C_dans_le_jardin_du_Luxembourg%2C_Paris_-_3.jpg/500px-2017_-_Le_palais_du_Luxembourg%2C_dans_le_jardin_du_Luxembourg%2C_Paris_-_3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Luis Miguel Bugallo Sánchez (Lmbuga)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2017_-_Le_palais_du_Luxembourg,_dans_le_jardin_du_Luxembourg,_Paris_-_3.jpg",
+      "fullWidth": 4071
+     },
+     "description": "seat of the French Senate"
     },
     {
      "id": "way/128206209",
@@ -336,7 +567,18 @@
      "website": "https://www.senat.fr/visite/jardin/",
      "openingHours": "open \"check website https://www.senat.fr/visite/jardin/horaires.html\"; (sunset-00:30)-(sunrise-00:15) closed; Mar01-Sep30 (sunset-00:30)-07:30 closed",
      "wikipediaCount": 50,
-     "wikidataId": "Q309458"
+     "wikidataId": "Q309458",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Jardin_du_Luxembourg.JPG/500px-Jardin_du_Luxembourg.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Rdevany at English Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jardin_du_Luxembourg.JPG",
+      "fullWidth": 1500
+     },
+     "description": "urban park in Paris, France"
     },
     {
      "id": "wikidata/Q457318",
@@ -347,7 +589,18 @@
      "wikidataId": "Q457318",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Grand_Palais%2C_Paris_13_March_2019.jpg/500px-Grand_Palais%2C_Paris_13_March_2019.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Ștefan Jurcă from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grand_Palais,_Paris_13_March_2019.jpg",
+      "fullWidth": 4507
+     },
+     "description": "Paris'te kongre merkezi"
     },
     {
      "id": "wikidata/Q209626",
@@ -356,7 +609,18 @@
      "lat": 48.86472,
      "lon": 2.25083,
      "wikipediaCount": 49,
-     "wikidataId": "Q209626"
+     "wikidataId": "Q209626",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/La_D%C3%A9fense_and_Bois_de_Boulogne_from_the_Eiffel_Tower%2C_11_June_2017_001.jpg/500px-La_D%C3%A9fense_and_Bois_de_Boulogne_from_the_Eiffel_Tower%2C_11_June_2017_001.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Guilhem Vellut from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_D%C3%A9fense_and_Bois_de_Boulogne_from_the_Eiffel_Tower,_11_June_2017_001.jpg",
+      "fullWidth": 5472
+     },
+     "description": "large public park the western edge of Paris, France"
     },
     {
      "id": "way/16406633",
@@ -369,7 +633,18 @@
      "kinds": [
       "office",
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Remote_view_of_the_Tour_Montparnasse_%26_Eiffel_Tower_in_2005.jpg/500px-Remote_view_of_the_Tour_Montparnasse_%26_Eiffel_Tower_in_2005.jpg",
+      "width": 500,
+      "height": 266,
+      "author": "User:Thbz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Remote_view_of_the_Tour_Montparnasse_%26_Eiffel_Tower_in_2005.jpg",
+      "fullWidth": 1191
+     },
+     "description": "gökdelen Paris"
     },
     {
      "id": "relation/3300400",
@@ -381,7 +656,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Conseil_d%27Etat_Paris_WA.jpg/500px-Conseil_d%27Etat_Paris_WA.jpg",
+      "width": 500,
+      "height": 172,
+      "author": "Marie-Lan Nguyen",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Conseil_d%27Etat_Paris_WA.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Conseil_d%27Etat_Paris_WA.jpg",
+      "fullWidth": 2900
+     },
+     "description": "palace and an associated garden located in the 1st arrondissement of Paris"
     },
     {
      "id": "wikidata/Q818517",
@@ -393,7 +679,18 @@
      "wikidataId": "Q818517",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Grande_Roue_de_Paris_-_Louvre_et_Jardins_des_Tuileries.jpg/500px-Grande_Roue_de_Paris_-_Louvre_et_Jardins_des_Tuileries.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Tangopaso",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Grande_Roue_de_Paris_-_Louvre_et_Jardins_des_Tuileries.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grande_Roue_de_Paris_-_Louvre_et_Jardins_des_Tuileries.jpg",
+      "fullWidth": 3000
+     },
+     "description": "public garden in Paris, France"
     },
     {
      "id": "way/437812893",
@@ -409,7 +706,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Grande_Mosqu%C3%A9e_de_Paris.JPG/500px-Grande_Mosqu%C3%A9e_de_Paris.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "LPLT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Paris.JPG",
+      "fullWidth": 3072
+     },
+     "description": "mosque in Paris, France"
     },
     {
      "id": "way/54180046",
@@ -423,7 +731,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Eglise_de_la_Madeleine_2024.jpg/500px-Eglise_de_la_Madeleine_2024.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Callaway Kosine – de Suzannet",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Eglise_de_la_Madeleine_2024.jpg",
+      "fullWidth": 1920
+     },
+     "description": "Fransa'da kilise"
     },
     {
      "id": "wikidata/Q745942",
@@ -437,7 +756,18 @@
       "heritage",
       "office",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Gare-de-Paris-Nord-2026-06-msu--2418.jpg/500px-Gare-de-Paris-Nord-2026-06-msu--2418.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Matthias Süßen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gare-de-Paris-Nord-2026-06-msu--2418.jpg",
+      "fullWidth": 6225
+     },
+     "description": "Paris'in altı temel tren istasyonlarından biri"
     },
     {
      "id": "wikidata/Q271639",
@@ -446,7 +776,18 @@
      "lat": 48.82806,
      "lon": 2.43306,
      "wikipediaCount": 46,
-     "wikidataId": "Q271639"
+     "wikidataId": "Q271639",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Bois_de_Vincennes_DSC03761.JPG/500px-Bois_de_Vincennes_DSC03761.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bois_de_Vincennes_DSC03761.JPG",
+      "fullWidth": 2592
+     },
+     "description": "Paris'te bir park"
     },
     {
      "id": "wikidata/Q270273",
@@ -458,7 +799,18 @@
      "kinds": [
       "adminArea",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Plan_de_Paris_Lutece2_BNF07710745.png/500px-Plan_de_Paris_Lutece2_BNF07710745.png",
+      "width": 500,
+      "height": 410,
+      "author": "Nicolas de La Mare / Antoine Coquart",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Plan_de_Paris_Lutece2_BNF07710745.png",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Plan_de_Paris_Lutece2_BNF07710745.png",
+      "fullWidth": 2020
+     },
+     "description": "Roman city, predecessor of Paris"
     },
     {
      "id": "node/910390736",
@@ -473,7 +825,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Paris%2C_Conciergerie%2C_Horloge_de_Charles_V_--_2014_--_1324.jpg/500px-Paris%2C_Conciergerie%2C_Horloge_de_Charles_V_--_2014_--_1324.jpg",
+      "width": 500,
+      "height": 620,
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris,_Conciergerie,_Horloge_de_Charles_V_--_2014_--_1324.jpg",
+      "fullWidth": 3485
+     },
+     "description": "Paris'te şato"
     },
     {
      "id": "way/53574149",
@@ -485,7 +848,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/The_western_sides_of_the_%C3%8Ele_de_la_Cit%C3%A9_and_the_Pont_Neuf%2C_14_July_2008.jpg/500px-The_western_sides_of_the_%C3%8Ele_de_la_Cit%C3%A9_and_the_Pont_Neuf%2C_14_July_2008.jpg",
+      "width": 500,
+      "height": 278,
+      "author": "Rmrfstar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_western_sides_of_the_%C3%8Ele_de_la_Cit%C3%A9_and_the_Pont_Neuf,_14_July_2008.jpg",
+      "fullWidth": 4272
+     },
+     "description": "Paris'te köprü"
     },
     {
      "id": "way/375076234",
@@ -493,7 +867,18 @@
      "lat": 48.86101,
      "lon": 2.33585,
      "wikipediaCount": 43,
-     "wikidataId": "Q13397"
+     "wikidataId": "Q13397",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/500px-Louvre_Museum_Wikimedia_Commons.jpg",
+      "width": 500,
+      "height": 210,
+      "author": "Benh LIEU SONG ( Flickr )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Louvre_Museum_Wikimedia_Commons.jpg",
+      "fullWidth": 6740
+     },
+     "description": "glass and metal pyramid in the main courtyard of the Louvre Palace"
     },
     {
      "id": "wikidata/Q810700",
@@ -507,7 +892,18 @@
       "musicVenue",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Bataclan_-_Paris_%283448973995%29.jpg/500px-Bataclan_-_Paris_%283448973995%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Céline Harrand from Dublin, Ireland",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bataclan_-_Paris_(3448973995).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bataclan_-_Paris_(3448973995).jpg",
+      "fullWidth": 4288
+     },
+     "description": "theatre in Paris, France"
     },
     {
      "id": "wikidata/Q390243",
@@ -519,7 +915,18 @@
      "wikidataId": "Q390243",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Arc_de_Triomphe_de_l%C3%89toile%2C_Paris_7_June_2012.jpg/500px-Arc_de_Triomphe_de_l%C3%89toile%2C_Paris_7_June_2012.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "Guillaume Baviere from Helsingborg, Sweden",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_de_l%C3%89toile,_Paris_7_June_2012.jpg",
+      "fullWidth": 4566
+     },
+     "description": "Paris'te meydan"
     },
     {
      "id": "wikidata/Q778784",
@@ -531,7 +938,18 @@
      "wikidataId": "Q778784",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Place_de_la_Bastille_depuis_l%27Op%C3%A9ra.jpg/500px-Place_de_la_Bastille_depuis_l%27Op%C3%A9ra.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Guillaume Flament",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Place_de_la_Bastille_depuis_l%27Op%C3%A9ra.jpg",
+      "fullWidth": 6000
+     },
+     "description": "Paris'te meydan"
     },
     {
      "id": "wikidata/Q638423",
@@ -547,7 +965,8 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "description": "Fransa'da opera binası"
     },
     {
      "id": "relation/1019368",
@@ -559,7 +978,18 @@
      "kinds": [
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Fa%C3%A7ade_Palais_Bourbon_3.jpg/500px-Fa%C3%A7ade_Palais_Bourbon_3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "ZeusUpsistos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_Palais_Bourbon_3.jpg",
+      "fullWidth": 4511
+     },
+     "description": "Seat of the National Assembly in Paris, France"
     },
     {
      "id": "way/54175774",
@@ -570,7 +1000,18 @@
      "wikidataId": "Q643520",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Place_Vend%C3%B4me_vue_a%C3%A9rienne.png/500px-Place_Vend%C3%B4me_vue_a%C3%A9rienne.png",
+      "width": 500,
+      "height": 333,
+      "author": "Des Racines et des Ailes",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Place_Vend%C3%B4me_vue_a%C3%A9rienne.png",
+      "fullWidth": 1352
+     },
+     "description": "Paris'te meydan"
     },
     {
      "id": "wikidata/Q663673",
@@ -583,7 +1024,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Ch%C3%A2teau_de_Vincennes_Paris_FRA_002.jpg/500px-Ch%C3%A2teau_de_Vincennes_Paris_FRA_002.jpg",
+      "width": 500,
+      "height": 488,
+      "author": "ignis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Vincennes_Paris_FRA_002.jpg",
+      "fullWidth": 2304
+     },
+     "description": "Fransa'da kale"
     },
     {
      "id": "relation/3262297",
@@ -596,7 +1048,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Pavillon_de_Flore%2C_Louvre_Museum%2C_Paris_5_November_2019.jpg/500px-Pavillon_de_Flore%2C_Louvre_Museum%2C_Paris_5_November_2019.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ali Sabbagh",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pavillon_de_Flore,_Louvre_Museum,_Paris_5_November_2019.jpg",
+      "fullWidth": 4500
+     },
+     "description": "former royal palace, now hosting the Louvre Museum in Paris, France"
     },
     {
      "id": "way/227483542",
@@ -604,7 +1067,18 @@
      "lat": 48.86173,
      "lon": 2.33291,
      "wikipediaCount": 39,
-     "wikidataId": "Q631104"
+     "wikidataId": "Q631104",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Paris_-_Jardin_des_Tuileries_-_Arc_de_Triomphe_du_Carrousel_-_PA00085992_-_003.jpg/500px-Paris_-_Jardin_des_Tuileries_-_Arc_de_Triomphe_du_Carrousel_-_PA00085992_-_003.jpg",
+      "width": 500,
+      "height": 354,
+      "author": "Thesupermat",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_Jardin_des_Tuileries_-_Arc_de_Triomphe_du_Carrousel_-_PA00085992_-_003.jpg",
+      "fullWidth": 4238
+     },
+     "description": "triumphal arch in Paris"
     },
     {
      "id": "wikidata/Q747541",
@@ -617,7 +1091,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/P1210896_Paris_XII_gare_de_Lyon_rwk.jpg/500px-P1210896_Paris_XII_gare_de_Lyon_rwk.jpg",
+      "width": 500,
+      "height": 389,
+      "author": "Mbzt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:P1210896_Paris_XII_gare_de_Lyon_rwk.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Fransada demir yolu"
     },
     {
      "id": "wikidata/Q898629",
@@ -630,71 +1115,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
-    },
-    {
-     "id": "wikidata/Q330375",
-     "name": "Folies Bergère",
-     "lat": 48.87417,
-     "lon": 2.345,
-     "wikipediaCount": 38,
-     "wikidataId": "Q330375",
-     "kinds": [
-      "heritage",
-      "performingArts",
-      "theatre"
-     ]
-    },
-    {
-     "id": "wikidata/Q631114",
-     "name": "Montparnasse Garı",
-     "localName": "Gare Montparnasse",
-     "lat": 48.83933,
-     "lon": 2.31829,
-     "wikipediaCount": 38,
-     "wikidataId": "Q631114",
-     "kinds": [
-      "station"
-     ]
-    },
-    {
-     "id": "wikidata/Q860172",
-     "name": "Saint-Martin Kanalı",
-     "localName": "Canal Saint-Martin",
-     "lat": 48.84722,
-     "lon": 2.36667,
-     "wikipediaCount": 38,
-     "wikidataId": "Q860172",
-     "kinds": [
-      "heritage"
-     ]
-    },
-    {
-     "id": "wikidata/Q838691",
-     "name": "Ulusal Doğa Tarihi Müzesi (Paris)",
-     "localName": "Muséum national d'histoire naturelle",
-     "lat": 48.84222,
-     "lon": 2.35611,
-     "wikipediaCount": 38,
-     "wikidataId": "Q838691",
-     "kinds": [
-      "museum",
-      "organization"
-     ]
-    },
-    {
-     "id": "wikidata/Q334186",
-     "name": "Saint-Germain-des-Prés Manastırı",
-     "localName": "Royal abbey of Saint-Germain-des-Prés",
-     "lat": 48.85389,
-     "lon": 2.33444,
-     "wikipediaCount": 37,
-     "wikidataId": "Q334186",
-     "kinds": [
-      "heritage",
-      "organization",
-      "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Paris_PlaceDesVosges_NordNordEst.JPG/500px-Paris_PlaceDesVosges_NordNordEst.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "AlNo (discuter/talk/hablar/falar)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_PlaceDesVosges_NordNordEst.JPG",
+      "fullWidth": 2048
+     },
+     "description": "Paris'te meydan"
     }
    ]
   },
@@ -713,7 +1145,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cour_Napol%C3%A9on_at_night_-_Louvre.jpg/500px-Cour_Napol%C3%A9on_at_night_-_Louvre.jpg",
+      "width": 500,
+      "height": 198,
+      "author": "Benh LIEU SONG",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cour_Napol%C3%A9on_at_night_-_Louvre.jpg",
+      "fullWidth": 3048
+     },
+     "description": "Paris'te arkeoloji ve sanat müzesi"
     },
     {
      "id": "wikidata/Q23402",
@@ -725,7 +1168,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Gare_d%27Orsay_%2849570190081%29.jpg/500px-Gare_d%27Orsay_%2849570190081%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Cheng-en Cheng from Taichung City, Taiwan",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gare_d%27Orsay_(49570190081).jpg",
+      "fullWidth": 6000
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q178065",
@@ -739,7 +1193,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Paris_Montmartre_Blick_aufs_Centre_Georges-Pompidou.jpg/500px-Paris_Montmartre_Blick_aufs_Centre_Georges-Pompidou.jpg",
+      "width": 500,
+      "height": 274,
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_Montmartre_Blick_aufs_Centre_Georges-Pompidou.jpg",
+      "fullWidth": 4584
+     },
+     "description": "national cultural center of contemporary art in Paris, France"
     },
     {
      "id": "node/10027825204",
@@ -753,7 +1218,18 @@
       "heritage",
       "organization",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/P1300735_Paris_V_chapelle_La_Sorbonne_rwk.jpg/500px-P1300735_Paris_V_chapelle_La_Sorbonne_rwk.jpg",
+      "width": 500,
+      "height": 612,
+      "author": "Mbzt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:P1300735_Paris_V_chapelle_La_Sorbonne_rwk.jpg",
+      "fullWidth": 1634
+     },
+     "description": "historical university and building in Paris, France"
     },
     {
      "id": "node/247618453",
@@ -768,7 +1244,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_337.jpg/500px-Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_337.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Arnaud 25",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_337.jpg",
+      "fullWidth": 2048
+     },
+     "description": "science and technology museum located in Paris, France"
     },
     {
      "id": "wikidata/Q820892",
@@ -781,7 +1268,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Petit_Palais_Paris_2.jpg/500px-Petit_Palais_Paris_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Petit_Palais_Paris_2.jpg",
+      "fullWidth": 4800
+     },
+     "description": "Paris'in 8. bölgesinde yer alan bir sanat müzesi"
     },
     {
      "id": "node/493870538",
@@ -797,7 +1295,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Catacumbas%2C_Par%C3%ADs%2C_Francia%2C_2022-11-01%2C_DD_117-119_HDR.jpg/500px-Catacumbas%2C_Par%C3%ADs%2C_Francia%2C_2022-11-01%2C_DD_117-119_HDR.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Catacumbas,_Par%C3%ADs,_Francia,_2022-11-01,_DD_117-119_HDR.jpg",
+      "fullWidth": 5775
+     },
+     "description": "underground ossuary in Paris, France"
     },
     {
      "id": "node/910390736",
@@ -812,7 +1321,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Paris%2C_Conciergerie%2C_Horloge_de_Charles_V_--_2014_--_1324.jpg/500px-Paris%2C_Conciergerie%2C_Horloge_de_Charles_V_--_2014_--_1324.jpg",
+      "width": 500,
+      "height": 620,
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris,_Conciergerie,_Horloge_de_Charles_V_--_2014_--_1324.jpg",
+      "fullWidth": 3485
+     },
+     "description": "Paris'te şato"
     },
     {
      "id": "wikidata/Q273593",
@@ -828,7 +1348,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Paris_6_-_ENSBA_01.jpg/500px-Paris_6_-_ENSBA_01.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Selbymay",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_6_-_ENSBA_01.jpg",
+      "fullWidth": 4370
+     },
+     "description": "national school of fine arts in France"
     },
     {
      "id": "wikidata/Q857276",
@@ -841,7 +1372,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Mus%C3%A9e_d%27Art_moderne_de_la_Ville_de_Paris.jpg/500px-Mus%C3%A9e_d%27Art_moderne_de_la_Ville_de_Paris.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Maciej Zgadzaj",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_d%27Art_moderne_de_la_Ville_de_Paris.jpg",
+      "fullWidth": 2080
+     },
+     "description": "museum dedicated to modern and contemporary art of the 20th and 21st centuries, Paris"
     },
     {
      "id": "wikidata/Q1895953",
@@ -853,7 +1395,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg/500px-Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg",
+      "width": 500,
+      "height": 314,
+      "author": "Rui Ornelas",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg",
+      "fullWidth": 2288
+     },
+     "description": "national museum for modern art of France located in the Centre Pompidou in Paris"
     },
     {
      "id": "wikidata/Q743206",
@@ -865,7 +1418,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Paris_3e_H%C3%B4tel_Sal%C3%A9_640.jpg/500px-Paris_3e_H%C3%B4tel_Sal%C3%A9_640.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "GFreihalter",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_3e_H%C3%B4tel_Sal%C3%A9_640.jpg",
+      "fullWidth": 4896
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q650519",
@@ -878,7 +1442,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/L%27h%C3%B4tel_Biron_%28mus%C3%A9e_Rodin%29_%C3%A0_Paris%2C_13_juin_2021_01.jpg/500px-L%27h%C3%B4tel_Biron_%28mus%C3%A9e_Rodin%29_%C3%A0_Paris%2C_13_juin_2021_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:L%27h%C3%B4tel_Biron_(mus%C3%A9e_Rodin)_%C3%A0_Paris,_13_juin_2021_01.jpg",
+      "fullWidth": 7754
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q726781",
@@ -890,7 +1465,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2011-12-Musee_de_lorangerie.jpg/500px-2011-12-Musee_de_lorangerie.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Traktorminze",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2011-12-Musee_de_lorangerie.jpg",
+      "fullWidth": 2640
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q640447",
@@ -903,7 +1489,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Carnavalet_Par%C3%ADs_10.JPG/500px-Carnavalet_Par%C3%ADs_10.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Miguel Hermoso Cuesta",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carnavalet_Par%C3%ADs_10.JPG",
+      "fullWidth": 5184
+     },
+     "description": "museum of the history of Paris"
     },
     {
      "id": "wikidata/Q1124095",
@@ -916,7 +1513,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/H%C3%B4tel_de_Cluny%2C_Paris_24_April_2012.jpg/500px-H%C3%B4tel_de_Cluny%2C_Paris_24_April_2012.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "ctj71081",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_Cluny,_Paris_24_April_2012.jpg",
+      "fullWidth": 4000
+     },
+     "description": "Paris'te müze"
     },
     {
      "id": "wikidata/Q860166",
@@ -931,7 +1539,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Institut_du_Monde_Arabe_au_bord_de_la_Seine.jpg/500px-Institut_du_Monde_Arabe_au_bord_de_la_Seine.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Guilhem Vellut from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Institut_du_Monde_Arabe_au_bord_de_la_Seine.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Paris'te kültür merkezi"
     },
     {
      "id": "node/130102845",
@@ -946,7 +1565,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Mus%C3%A9e_de_l%27Arm%C3%A9e%2C_Paris_4_May_2019.jpg/500px-Mus%C3%A9e_de_l%27Arm%C3%A9e%2C_Paris_4_May_2019.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "xiquinhosilva from Cacau",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_l%27Arm%C3%A9e,_Paris_4_May_2019.jpg",
+      "fullWidth": 3000
+     },
+     "description": "military museum at the Invalides in Paris"
     },
     {
      "id": "node/251851363",
@@ -961,7 +1591,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Mus%C3%A9e_Gr%C3%A9vin%2C_Paris_30_July_2016.jpg/500px-Mus%C3%A9e_Gr%C3%A9vin%2C_Paris_30_July_2016.jpg",
+      "width": 500,
+      "height": 684,
+      "author": "Guilhem Vellut from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Gr%C3%A9vin,_Paris_30_July_2016.jpg",
+      "fullWidth": 3315
+     },
+     "description": "Paris'te müze"
     },
     {
      "id": "wikidata/Q1165526",
@@ -973,7 +1614,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Mus%C3%A9e_Jacquemart_Andr%C3%A9_2007_-_Recoura.jpg/500px-Mus%C3%A9e_Jacquemart_Andr%C3%A9_2007_-_Recoura.jpg",
+      "width": 500,
+      "height": 385,
+      "author": "Christophe Recoura",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Jacquemart_Andr%C3%A9_2007_-_Recoura.jpg",
+      "fullWidth": 4973
+     },
+     "description": "museum in Paris, France"
     },
     {
      "id": "wikidata/Q174274",
@@ -987,7 +1639,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "film museum and cinematheque in Paris, France"
     },
     {
      "id": "wikidata/Q656296",
@@ -1000,7 +1653,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Le_Jeu_de_Paume%2C_1_place_de_la_Concorde_%C3%A0_Paris%2C_juillet_2021.jpg/500px-Le_Jeu_de_Paume%2C_1_place_de_la_Concorde_%C3%A0_Paris%2C_juillet_2021.jpg",
+      "width": 500,
+      "height": 308,
+      "author": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_Jeu_de_Paume,_1_place_de_la_Concorde_%C3%A0_Paris,_juillet_2021.jpg",
+      "fullWidth": 7543
+     },
+     "description": "museum of contemporary art in Paris, France"
     },
     {
      "id": "wikidata/Q1411180",
@@ -1013,7 +1677,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Expo_Louis-Comfort_Tiffany.JPG/500px-Expo_Louis-Comfort_Tiffany.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "LPLT",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Expo_Louis-Comfort_Tiffany.JPG",
+      "fullWidth": 3072
+     },
+     "description": "Paris'te müze"
     },
     {
      "id": "node/1426215340",
@@ -1027,7 +1702,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Mus%C3%A9e_Maillol_Paris_7e_001.jpg/500px-Mus%C3%A9e_Maillol_Paris_7e_001.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "Moonik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Maillol_Paris_7e_001.jpg",
+      "fullWidth": 3990
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q977732",
@@ -1039,7 +1725,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Paris_-_H%C3%B4tel_de_Saint-Aignan_-_Muse%C3%A9_du_Juda%C3%AFsme.jpg/500px-Paris_-_H%C3%B4tel_de_Saint-Aignan_-_Muse%C3%A9_du_Juda%C3%AFsme.jpg",
+      "width": 500,
+      "height": 414,
+      "author": "Ecelan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_H%C3%B4tel_de_Saint-Aignan_-_Muse%C3%A9_du_Juda%C3%AFsme.jpg",
+      "fullWidth": 2848
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "node/247584452",
@@ -1053,7 +1750,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Mus%C3%A9e_des_Arts_D%C3%A9coratifs_2009_001.jpg/500px-Mus%C3%A9e_des_Arts_D%C3%A9coratifs_2009_001.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gaël Chardon from Paris, France",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_des_Arts_D%C3%A9coratifs_2009_001.jpg",
+      "fullWidth": 2849
+     },
+     "description": "museum of the decorative arts and design located in the Louvre's northwest wing, Paris"
     },
     {
      "id": "wikidata/Q549143",
@@ -1065,7 +1773,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cabinet_des_Medailles_1.jpg/500px-Cabinet_des_Medailles_1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "PHGCOM",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cabinet_des_Medailles_1.jpg",
+      "fullWidth": 1152
+     },
+     "description": "museum containing internationally important collections of coins, engraved gems, and antiquities"
     },
     {
      "id": "wikidata/Q1782606",
@@ -1079,7 +1798,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mus%C3%A9e_Delacroix%2C_Paris_29_May_2017_001.jpg/500px-Mus%C3%A9e_Delacroix%2C_Paris_29_May_2017_001.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "xiquinhosilva from Cacau",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Delacroix,_Paris_29_May_2017_001.jpg",
+      "fullWidth": 6016
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "node/251318666",
@@ -1094,7 +1824,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Paris_mus%C3%A9e_Gustave-Moreau%2C_19_mai_2013.jpg/500px-Paris_mus%C3%A9e_Gustave-Moreau%2C_19_mai_2013.jpg",
+      "width": 500,
+      "height": 718,
+      "author": "Velvet",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_mus%C3%A9e_Gustave-Moreau,_19_mai_2013.jpg",
+      "fullWidth": 1700
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "node/9780876697",
@@ -1106,7 +1847,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/%C3%89glise_Saint-S%C3%A9verin_de_Paris.jpg/500px-%C3%89glise_Saint-S%C3%A9verin_de_Paris.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Rémih",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%89glise_Saint-S%C3%A9verin_de_Paris.jpg",
+      "fullWidth": 5184
+     },
+     "description": "Fransa'da kilise"
     },
     {
      "id": "wikidata/Q2715373",
@@ -1118,7 +1870,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Paris_musee_bourdelle_maison.jpg/500px-Paris_musee_bourdelle_maison.jpg",
+      "width": 500,
+      "height": 272,
+      "author": "Velvet",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_musee_bourdelle_maison.jpg",
+      "fullWidth": 4020
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q2919066",
@@ -1130,7 +1893,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Mus%C3%A9e_de_Montmartre_-_maison_du_Bel_Air.jpg/500px-Mus%C3%A9e_de_Montmartre_-_maison_du_Bel_Air.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Musée de Montmartre",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_Montmartre_-_maison_du_Bel_Air.jpg",
+      "fullWidth": 5149
+     },
+     "description": "Paris'te müze"
     },
     {
      "id": "node/252970813",
@@ -1145,7 +1919,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Dali_Paris_entr%C3%A9e_.jpg/500px-Dali_Paris_entr%C3%A9e_.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Florian75018",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dali_Paris_entr%C3%A9e_.jpg",
+      "fullWidth": 2667
+     },
+     "description": "museum in France"
     },
     {
      "id": "node/254033221",
@@ -1160,7 +1945,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/PARIS_Place_des_Vosges%2C_Maison_de_Victor_Hugo_2.jpg/500px-PARIS_Place_des_Vosges%2C_Maison_de_Victor_Hugo_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Frédérique PANASSAC",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PARIS_Place_des_Vosges,_Maison_de_Victor_Hugo_2.jpg",
+      "fullWidth": 2688
+     },
+     "description": "museum dedicated to Victor Hugo in Paris, France"
     },
     {
      "id": "wikidata/Q1572452",
@@ -1172,7 +1968,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jardin_Lazare-Rachline%2C_Paris_9_June_2017_001.jpg/500px-Jardin_Lazare-Rachline%2C_Paris_9_June_2017_001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Guilhem Vellut from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jardin_Lazare-Rachline,_Paris_9_June_2017_001.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Paris'te müze"
     },
     {
      "id": "wikidata/Q2714932",
@@ -1184,7 +1991,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Paris_Mus%C3%A9e_vie_romantique_2012.jpg/500px-Paris_Mus%C3%A9e_vie_romantique_2012.jpg",
+      "width": 500,
+      "height": 360,
+      "author": "JLPC",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_Mus%C3%A9e_vie_romantique_2012.jpg",
+      "fullWidth": 3910
+     },
+     "description": "museum in Paris, France"
     },
     {
      "id": "wikidata/Q1954498",
@@ -1197,7 +2015,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Paris_%2875008%29_H%C3%B4tel_Mo%C3%AFse_de_Camondo_05.JPG/500px-Paris_%2875008%29_H%C3%B4tel_Mo%C3%AFse_de_Camondo_05.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "GO69",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Paris_(75008)_H%C3%B4tel_Mo%C3%AFse_de_Camondo_05.JPG",
+      "fullWidth": 2381
+     },
+     "description": "Paris'te sanat müzesi"
     },
     {
      "id": "wikidata/Q614450",
@@ -1209,7 +2038,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Palais_de_la_d%C3%A9couverte%2C_avenue_Franklin-Delano-Roosevelt%2C_Paris_8e_1.jpg/500px-Palais_de_la_d%C3%A9couverte%2C_avenue_Franklin-Delano-Roosevelt%2C_Paris_8e_1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Celette",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_de_la_d%C3%A9couverte,_avenue_Franklin-Delano-Roosevelt,_Paris_8e_1.jpg",
+      "fullWidth": 5428
+     },
+     "description": "science museum in Paris, France"
     },
     {
      "id": "node/1336873192",
@@ -1224,7 +2064,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/GODF_rue_Cadet_Paris.JPG/500px-GODF_rue_Cadet_Paris.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Declic",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:GODF_rue_Cadet_Paris.JPG",
+      "fullWidth": 3648
+     },
+     "description": "Paris'te müze"
     },
     {
      "id": "node/11148144370",
@@ -1239,7 +2090,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Exterieur_du_mus%C3%A9e_des_%C3%A9gouts.jpg/500px-Exterieur_du_mus%C3%A9e_des_%C3%A9gouts.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Romain91",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_du_mus%C3%A9e_des_%C3%A9gouts.jpg",
+      "fullWidth": 2000
+     },
+     "description": "history museum in Paris, France"
     }
    ]
   },
@@ -1257,7 +2119,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Pont_Alexandre_III_from_pont_de_la_Concorde%2C_Paris_17_May_2012.jpg/500px-Pont_Alexandre_III_from_pont_de_la_Concorde%2C_Paris_17_May_2012.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pont_Alexandre_III_from_pont_de_la_Concorde,_Paris_17_May_2012.jpg",
+      "fullWidth": 4566
+     },
+     "description": "Paris'te köprü"
     },
     {
      "id": "node/4551075167",
@@ -1269,7 +2142,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Pont_des_Arts_and_the_Palais_du_Louvre%2C_Paris_July_2013.jpg/500px-Pont_des_Arts_and_the_Palais_du_Louvre%2C_Paris_July_2013.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Joe deSousa",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pont_des_Arts_and_the_Palais_du_Louvre,_Paris_July_2013.jpg",
+      "fullWidth": 3884
+     },
+     "description": "Paris'te köprü"
     },
     {
      "id": "node/1697195692",
@@ -1277,7 +2161,18 @@
      "lat": 48.88611,
      "lon": 2.34312,
      "wikipediaCount": 24,
-     "wikidataId": "Q99562"
+     "wikidataId": "Q99562",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Funiculaire_de_Montmartre_devant_le_Sacr%C3%A9-C%C5%93ur.jpg/500px-Funiculaire_de_Montmartre_devant_le_Sacr%C3%A9-C%C5%93ur.jpg",
+      "width": 500,
+      "height": 618,
+      "author": "Peter Potrowl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Funiculaire_de_Montmartre_devant_le_Sacr%C3%A9-C%C5%93ur.jpg",
+      "fullWidth": 2048
+     },
+     "description": "funicular railway serving the Montmartre neighbourhood of Paris, France"
     },
     {
      "id": "node/5163691221",
@@ -1288,7 +2183,18 @@
      "wikidataId": "Q1140060",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Pont_Saint-Louis_Paris_FRA_001.JPG/500px-Pont_Saint-Louis_Paris_FRA_001.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "ignis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pont_Saint-Louis_Paris_FRA_001.JPG",
+      "fullWidth": 3456
+     },
+     "description": "Paris'te yaya köprüsü"
     },
     {
      "id": "node/7883928585",
@@ -1299,7 +2205,18 @@
      "wikidataId": "Q2720522",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Parvis_Notre-Dame_-_Place_Jean-Paul_II_from_Notre-Dame_de_Paris_2011.jpg/500px-Parvis_Notre-Dame_-_Place_Jean-Paul_II_from_Notre-Dame_de_Paris_2011.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Cristian Bortes from Cluj-Napoca, Romania",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parvis_Notre-Dame_-_Place_Jean-Paul_II_from_Notre-Dame_de_Paris_2011.jpg",
+      "fullWidth": 4752
+     },
+     "description": "parvise in Paris, France"
     },
     {
      "id": "way/339023638",
@@ -1444,7 +2361,18 @@
      "openingHours": "Mo-Su 08:00-01:00",
      "cuisine": "french",
      "wikidataId": "Q17303726",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Au_Chien_qui_fume%2C_19_boulevard_du_Montparnasse%2C_Paris_6e_2.jpg/500px-Au_Chien_qui_fume%2C_19_boulevard_du_Montparnasse%2C_Paris_6e_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Polymagou",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Au_Chien_qui_fume,_19_boulevard_du_Montparnasse,_Paris_6e_2.jpg",
+      "fullWidth": 5380
+     },
+     "description": "Paris'te restoran"
     },
     {
      "id": "node/534660995",
@@ -1538,7 +2466,8 @@
      "openingHours": "Mo-Th 12:00-14:00,19:30-22:45; Fr,Sa 12:00-14:30,19:30-23:00",
      "cuisine": "french",
      "wikidataId": "Q130388074",
-     "detailed": true
+     "detailed": true,
+     "description": "restaurant in Paris"
     },
     {
      "id": "node/293982723",
@@ -1590,7 +2519,18 @@
      "openingHours": "Mo-Su 11:45-24:00",
      "cuisine": "coffee shop",
      "wikidataId": "Q3427906",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Restaurant_Julien.JPG/500px-Restaurant_Julien.JPG",
+      "width": 500,
+      "height": 332,
+      "author": "Vinceloo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Restaurant_Julien.JPG",
+      "fullWidth": 4288
+     },
+     "description": "Paris'te restoran"
     },
     {
      "id": "node/968153548",
@@ -1603,9 +2543,20 @@
      "wikidataId": "Q22921405",
      "kinds": [
       "business",
-      "heritage"
+      "heritage",
+      "organization"
      ],
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Brasserie_Bofinger.JPG/500px-Brasserie_Bofinger.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Footballeuse33",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brasserie_Bofinger.JPG",
+      "fullWidth": 1920
+     }
     },
     {
      "id": "node/408952534",
@@ -2510,7 +3461,18 @@
      "website": "https://www.lebateauphare.co/",
      "openingHours": "Mo,Tu 18:00-24:00, We 18:00-01:00, Th,Fr 18:00-02:00, Sa 13:00-02:00, Su 13:00-24:00",
      "wikidataId": "Q2365441",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Batofar_-_Paris.JPG/500px-Batofar_-_Paris.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Zivax",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Batofar_-_Paris.JPG",
+      "fullWidth": 2272
+     },
+     "description": "theatre boat moored in Paris, France, originally an Irish lighthouse boat"
     },
     {
      "id": "node/4537714186",
@@ -2521,7 +3483,18 @@
      "website": "https://tangoparis.com/",
      "openingHours": "Fr-Sa 22:30-05:00; Su 18:00-23:00",
      "wikidataId": "Q3227521",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Le_Tango%2C_13_rue_au_Maire.jpg/500px-Le_Tango%2C_13_rue_au_Maire.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Celette",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_Tango,_13_rue_au_Maire.jpg",
+      "fullWidth": 2515
+     },
+     "description": "Paris'te gece klübü"
     },
     {
      "id": "node/12768471675",
@@ -2530,6 +3503,15 @@
      "lon": 2.3364,
      "website": "https://www.leschandelles.com/",
      "openingHours": "We-Mo 21:30+",
+     "detailed": true
+    },
+    {
+     "id": "node/14170212275",
+     "name": "Medellin",
+     "lat": 48.86569,
+     "lon": 2.30012,
+     "website": "https://medellinparis.fr/",
+     "openingHours": "Mo-Su 22:00-06:00",
      "detailed": true
     },
     {
@@ -2618,7 +3600,18 @@
      "lon": 2.33462,
      "address": "Rue Princesse 15",
      "website": "https://castel.paris/",
-     "wikidataId": "Q2963161"
+     "wikidataId": "Q2963161",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Chez_Castel.jpg/500px-Chez_Castel.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Arnaud 25",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Chez_Castel.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Chez_Castel.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Paris'te restoran"
     },
     {
      "id": "node/1108414671",
@@ -2627,7 +3620,18 @@
      "lon": 2.3463,
      "address": "Rue de la Huchette 5",
      "website": "http://www.caveaudelahuchette.fr/",
-     "wikidataId": "Q517995"
+     "wikidataId": "Q517995",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Caveau_de_la_Huchette%2C_5_rue_de_la_Huchette%2C_Paris_5e_2.jpg/500px-Caveau_de_la_Huchette%2C_5_rue_de_la_Huchette%2C_Paris_5e_2.jpg",
+      "width": 500,
+      "height": 561,
+      "author": "Polymagou",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Caveau_de_la_Huchette,_5_rue_de_la_Huchette,_Paris_5e_2.jpg",
+      "fullWidth": 3330
+     },
+     "description": "Paris'te caz klübü"
     },
     {
      "id": "node/12312129878",
@@ -2659,7 +3663,17 @@
      "lon": 2.37362,
      "address": "Rue du Faubourg du Temple 150",
      "website": "http://www.la-java.fr/",
-     "wikidataId": "Q3209830"
+     "wikidataId": "Q3209830",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/La_Java_%28Paris%29.jpg/500px-La_Java_%28Paris%29.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Quadrige",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Java_(Paris).jpg",
+      "fullWidth": 3000
+     }
     },
     {
      "id": "node/8459561473",
@@ -2675,14 +3689,17 @@
      "lon": 2.37216,
      "address": "Rue de Lappe 9",
      "website": "https://www.balajo.fr/",
-     "wikidataId": "Q16626681"
-    },
-    {
-     "id": "node/3846860861",
-     "name": "Le Globo",
-     "lat": 48.87007,
-     "lon": 2.35495,
-     "website": "https://www.leglobo.fr/"
+     "wikidataId": "Q16626681",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Balajo%2C_Parijs.jpg/500px-Balajo%2C_Parijs.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Willem van de Poll;",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Balajo,_Parijs.jpg",
+      "fullWidth": 1844
+     }
     }
    ]
   }

@@ -8,8 +8,11 @@ import { KIND_TAGS } from "./kinds";
  * Overpass, Wikidata or Commons at request time.
  */
 
-/** 3: Wikidata must-sees stored as raw candidates with their kinds; the sight rules run on read (rules.ts). */
-export const PLACES_FILE_VERSION = 3;
+/**
+ * 3: Wikidata must-sees stored as raw candidates with their kinds; the sight rules run on read (rules.ts).
+ * 4: card photos (Wikidata P18, Commons author and licence) and short descriptions for places with an item.
+ */
+export const PLACES_FILE_VERSION = 4;
 
 export const ODBL = {
   name: "ODbL-1.0",
@@ -41,6 +44,10 @@ export const storedPlaceSchema = z.object({
    */
   kinds: z.array(z.enum(KIND_TAGS)).min(1).optional(),
   detailed: z.literal(true).optional(),
+  /** Wikidata P18 on Commons, licence-filtered like the city photo (photos.ts). */
+  photo: z.lazy(() => cardPhotoSchema).optional(),
+  /** Wikidata description, Turkish first, then English. */
+  description: z.string().min(1).max(200).optional(),
 });
 
 /**
@@ -67,6 +74,9 @@ export const storedPhotoSchema = z.object({
   licenseUrl: z.url(),
   fileUrl: z.url(),
 });
+
+/** A card photo: a 500px Commons thumbnail; `fullWidth` (the original's) caps srcset. */
+const cardPhotoSchema = storedPhotoSchema.extend({ fullWidth: z.number().int().positive().optional() });
 
 export const placesFileSchema = z.object({
   version: z.literal(PLACES_FILE_VERSION),
@@ -97,12 +107,12 @@ export const SOURCES: PlacesFile["sources"] = [
     name: "Wikidata",
     url: "https://www.wikidata.org",
     license: "CC0-1.0",
-    usedFor: "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)",
+    usedFor: "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar",
   },
   {
     name: "Wikimedia Commons",
     url: "https://commons.wikimedia.org",
     license: "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-    usedFor: "şehir fotoğrafı ve atıf bilgisi",
+    usedFor: "şehir ve mekân fotoğrafları ve atıf bilgisi",
   },
 ];

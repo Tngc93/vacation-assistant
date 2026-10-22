@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "GVA",
- "fetchedAt": "2026-10-18T16:22:46.969Z",
+ "fetchedAt": "2026-10-22T05:37:24.408Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q684661",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Jet_d%27eau_de_Gen%C3%A8ve_%28swiss%29.jpg/500px-Jet_d%27eau_de_Gen%C3%A8ve_%28swiss%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Wikibusters",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jet_d%27eau_de_Gen%C3%A8ve_(swiss).jpg",
+      "fullWidth": 5703
+     },
+     "description": "fountain in Geneva, Switzerland"
     },
     {
      "id": "way/397737238",
@@ -65,7 +76,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Fa%C3%A7ade_de_la_cath%C3%A9drale_Saint-Pierre_de_Gen%C3%A8ve_2009-07-11.jpg/500px-Fa%C3%A7ade_de_la_cath%C3%A9drale_Saint-Pierre_de_Gen%C3%A8ve_2009-07-11.jpg",
+      "width": 500,
+      "height": 462,
+      "author": "Yann ( talk )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_de_la_cath%C3%A9drale_Saint-Pierre_de_Gen%C3%A8ve_2009-07-11.jpg",
+      "fullWidth": 3903
+     },
+     "description": "Cenevre'de katedral"
     },
     {
      "id": "wikidata/Q800819",
@@ -79,7 +101,18 @@
       "heritage",
       "office",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Gare_de_Cornavin%2C_entr%C3%A9e_principale.jpg/500px-Gare_de_Cornavin%2C_entr%C3%A9e_principale.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "mpd01605",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gare_de_Cornavin,_entr%C3%A9e_principale.jpg",
+      "fullWidth": 1600
+     },
+     "description": "railway station in Switzerland"
     },
     {
      "id": "wikidata/Q371872",
@@ -88,7 +121,18 @@
      "lat": 46.20028,
      "lon": 6.14556,
      "wikipediaCount": 20,
-     "wikidataId": "Q371872"
+     "wikidataId": "Q371872",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Geneva_monument_international_de_la_reformation.jpg/500px-Geneva_monument_international_de_la_reformation.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Julia Lukmanova",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geneva_monument_international_de_la_reformation.jpg",
+      "fullWidth": 666
+     },
+     "description": "monument in Geneva, Switzerland"
     },
     {
      "id": "wikidata/Q1200920",
@@ -106,7 +150,18 @@
       "performingArts",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Conservatoire_de_musique_de_Gen%C3%A8ve_-_JeP_2022_-_Fa%C3%A7ade_08.jpg/500px-Conservatoire_de_musique_de_Gen%C3%A8ve_-_JeP_2022_-_Fa%C3%A7ade_08.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Credits to Mourad Ben Abdallah / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Conservatoire_de_musique_de_Gen%C3%A8ve_-_JeP_2022_-_Fa%C3%A7ade_08.jpg",
+      "fullWidth": 4032
+     },
+     "description": "music school in Geneva, Switzerland"
     },
     {
      "id": "wikidata/Q555398",
@@ -122,7 +177,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Grand_Th%C3%A9%C3%A2tre_de_Gen%C3%A8ve_%2846658466335%29.jpg/500px-Grand_Th%C3%A9%C3%A2tre_de_Gen%C3%A8ve_%2846658466335%29.jpg",
+      "width": 500,
+      "height": 369,
+      "author": "Torbjorn Toby Jorgensen",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grand_Th%C3%A9%C3%A2tre_de_Gen%C3%A8ve_(46658466335).jpg",
+      "fullWidth": 5760
+     },
+     "description": "opera house in Geneva, Switzerland"
     },
     {
      "id": "wikidata/Q663110",
@@ -133,7 +199,18 @@
      "wikidataId": "Q663110",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Geneve_immeuble_Clarte_2011-08-02_13_54_44_PICT3662.JPG/500px-Geneve_immeuble_Clarte_2011-08-02_13_54_44_PICT3662.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Romano1246",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geneve_immeuble_Clarte_2011-08-02_13_54_44_PICT3662.JPG",
+      "fullWidth": 1704
+     },
+     "description": "Apartment building in Geneva designed by Le Corbusier and Pierre Jeanneret (1928-32)"
     },
     {
      "id": "way/666867576",
@@ -144,7 +221,18 @@
      "wikidataId": "Q1094083",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Brunswick_Monument_%2832688931467%29.jpg/500px-Brunswick_Monument_%2832688931467%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Torbjorn Toby Jorgensen",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brunswick_Monument_(32688931467).jpg",
+      "fullWidth": 3840
+     },
+     "description": "Mausoleum built in 1879 in Geneva, for Charles II, Duke of Brunswick"
     },
     {
      "id": "node/1895035255",
@@ -152,8 +240,19 @@
      "lat": 46.20055,
      "lon": 6.14638,
      "website": "https://www.geneve.ch/fr/marronnier-treille",
-     "wikipediaCount": 4,
-     "wikidataId": "Q3294866"
+     "wikipediaCount": 5,
+     "wikidataId": "Q3294866",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Geneve_Vieille-ville_2011-09-09_12_57_16_PICT4528.JPG/500px-Geneve_Vieille-ville_2011-09-09_12_57_16_PICT4528.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Romano1246",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geneve_Vieille-ville_2011-09-09_12_57_16_PICT4528.JPG",
+      "fullWidth": 1704
+     },
+     "description": "Monitored tree in Geneva, Switzerland"
     },
     {
      "id": "node/6228932679",
@@ -164,7 +263,18 @@
      "wikidataId": "Q926691",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Geneva_%2815626298844%29.jpg/500px-Geneva_%2815626298844%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "x70tjw",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geneva_(15626298844).jpg",
+      "fullWidth": 5184
+     },
+     "description": "outdoor flower clock in Geneva, Switzerland"
     },
     {
      "id": "node/12467398443",
@@ -208,7 +318,18 @@
      "wikidataId": "Q63530582",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Geneve_cathedrale_2011-08-25_13_31_27_PICT4100.JPG/500px-Geneve_cathedrale_2011-08-25_13_31_27_PICT4100.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Romano1246",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geneve_cathedrale_2011-08-25_13_31_27_PICT4100.JPG",
+      "fullWidth": 1704
+     },
+     "description": "chapel of the Saint-Pierre cathedral, Geneva"
     },
     {
      "id": "node/13703620514",
@@ -230,7 +351,8 @@
      "wikidataId": "Q55382092",
      "kinds": [
       "religious"
-     ]
+     ],
+     "description": "Cenevre, İsviçre'de kilise"
     },
     {
      "id": "node/5734016022",
@@ -302,7 +424,17 @@
      "wikidataId": "Q29701352",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Tour_de_l%E2%80%99%C3%8Ele.jpg/500px-Tour_de_l%E2%80%99%C3%8Ele.jpg",
+      "width": 500,
+      "height": 755,
+      "author": "Franck Schneider",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tour_de_l%E2%80%99%C3%8Ele.jpg",
+      "fullWidth": 3264
+     }
     },
     {
      "id": "way/1495935656",
@@ -337,7 +469,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Collection_du_Mus%C3%A9e_d%E2%80%99art_et_d%E2%80%99histoire_09.JPG/500px-Collection_du_Mus%C3%A9e_d%E2%80%99art_et_d%E2%80%99histoire_09.JPG",
+      "width": 500,
+      "height": 331,
+      "author": "Franck Schneider",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Collection_du_Mus%C3%A9e_d%E2%80%99art_et_d%E2%80%99histoire_09.JPG",
+      "fullWidth": 4928
+     },
+     "description": "museum in Geneva, Switzerland"
     },
     {
      "id": "wikidata/Q663025",
@@ -350,7 +493,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mus%C3%A9um_d%27histoire_naturelle_de_Gen%C3%A8ve_-_vue_a%C3%A9rienne.jpg/500px-Mus%C3%A9um_d%27histoire_naturelle_de_Gen%C3%A8ve_-_vue_a%C3%A9rienne.jpg",
+      "width": 500,
+      "height": 280,
+      "author": "Philippe Wagneur, Natural History Museum of Geneva (MHNG)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9um_d%27histoire_naturelle_de_Gen%C3%A8ve_-_vue_a%C3%A9rienne.jpg",
+      "fullWidth": 3824
+     },
+     "description": "museum in Geneva (Switzerland)"
     },
     {
      "id": "node/13592046657",
@@ -366,7 +520,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27ethnographie_de_Gen%C3%A8ve_%2832665256617%29.jpg/500px-Mus%C3%A9e_d%27ethnographie_de_Gen%C3%A8ve_%2832665256617%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Torbjorn Toby Jorgensen",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_d%27ethnographie_de_Gen%C3%A8ve_(32665256617).jpg",
+      "fullWidth": 5760
+     },
+     "description": "museum in Geneva (Switzerland)"
     },
     {
      "id": "way/15256715",
@@ -382,7 +547,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fa%C3%A7ade_principale_du_Mus%C3%A9e_Rath.JPG/500px-Fa%C3%A7ade_principale_du_Mus%C3%A9e_Rath.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Grototoro",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_principale_du_Mus%C3%A9e_Rath.JPG",
+      "fullWidth": 3888
+     },
+     "description": "museum building in the city of Geneva, Switzerland"
     },
     {
      "id": "way/79393933",
@@ -398,7 +574,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Institut_et_Mus%C3%A9e_Voltaire_02.JPG/500px-Institut_et_Mus%C3%A9e_Voltaire_02.JPG",
+      "width": 500,
+      "height": 331,
+      "author": "Franck Schneider",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Institut_et_Mus%C3%A9e_Voltaire_02.JPG",
+      "fullWidth": 4539
+     },
+     "description": "research facility and museum in the city of Geneva, Switzerland"
     },
     {
      "id": "way/79211035",
@@ -413,7 +600,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/CalvinStatue.JPG",
+      "width": 500,
+      "height": 689,
+      "author": "Serein",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:CalvinStatue.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CalvinStatue.JPG",
+      "fullWidth": 442
+     },
+     "description": "museum collection in the city of Geneva, Switzerland"
     },
     {
      "id": "node/4681396472",
@@ -429,7 +627,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Barbier-Mueller_Museum.JPG/500px-Barbier-Mueller_Museum.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Credits to Mourad Ben Abdallah / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Barbier-Mueller_Museum.JPG",
+      "fullWidth": 768
+     },
+     "description": "museum in Geneva (Switzerland)"
     },
     {
      "id": "node/3436729151",
@@ -444,7 +653,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Patek_Philippe_Museum.JPG/500px-Patek_Philippe_Museum.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Credits to Mourad Ben Abdallah / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Patek_Philippe_Museum.JPG",
+      "fullWidth": 768
+     },
+     "description": "museum in Geneva (Switzerland)"
     },
     {
      "id": "node/13603192608",
@@ -459,7 +679,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Salle_chinoise_du_mus%C3%A9e_Baur.jpg/500px-Salle_chinoise_du_mus%C3%A9e_Baur.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Leyla Caragnano",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Salle_chinoise_du_mus%C3%A9e_Baur.jpg",
+      "fullWidth": 5662
+     },
+     "description": "museum in city of Geneva, Switzerland"
     },
     {
      "id": "node/11599172628",
@@ -1692,7 +1923,18 @@
      "lon": 6.136,
      "address": "Place des Volontaires 4",
      "website": "https://usine.ch/",
-     "wikidataId": "Q3204847"
+     "wikidataId": "Q3204847",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Usine_face_hor.jpg/500px-Usine_face_hor.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Julesusine",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Usine_face_hor.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Usine_face_hor.jpg",
+      "fullWidth": 2272
+     },
+     "description": "cultural center in Geneva, Switzerland"
     },
     {
      "id": "node/12264663401",

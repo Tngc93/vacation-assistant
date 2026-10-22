@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "NAP",
- "fetchedAt": "2026-10-18T16:02:49.633Z",
+ "fetchedAt": "2026-10-22T05:13:06.428Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -58,7 +58,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Teatro_de_San_Carlos%2C_N%C3%A1poles%2C_Italia%2C_2023-03-25%2C_DD_184-186_HDR.jpg/500px-Teatro_de_San_Carlos%2C_N%C3%A1poles%2C_Italia%2C_2023-03-25%2C_DD_184-186_HDR.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_de_San_Carlos,_N%C3%A1poles,_Italia,_2023-03-25,_DD_184-186_HDR.jpg",
+      "fullWidth": 6626
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "relation/15009683",
@@ -73,7 +84,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Naples-Castel_Nuovo.jpg/500px-Naples-Castel_Nuovo.jpg",
+      "width": 500,
+      "height": 286,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Naples-Castel_Nuovo.jpg",
+      "fullWidth": 630
+     },
+     "description": "castle in Naples"
     },
     {
      "id": "relation/62237",
@@ -90,7 +112,18 @@
       "museum",
       "organization",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Palazzo_Reale_di_Napoli.jpg/500px-Palazzo_Reale_di_Napoli.jpg",
+      "width": 500,
+      "height": 212,
+      "author": "Sordelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Reale_di_Napoli.jpg",
+      "fullWidth": 4000
+     },
+     "description": "İtalya'da saray"
     },
     {
      "id": "way/338168783",
@@ -104,7 +137,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Castel_dell%27_Ovo.jpg/500px-Castel_dell%27_Ovo.jpg",
+      "width": 500,
+      "height": 311,
+      "author": "PaestumPaestum",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castel_dell%27_Ovo.jpg",
+      "fullWidth": 7614
+     },
+     "description": "castle in Naples, Italy"
     },
     {
      "id": "wikidata/Q859732",
@@ -118,7 +162,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Certosa_di_San_Martino_from_Sant%27Elmo.jpg/500px-Certosa_di_San_Martino_from_Sant%27Elmo.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Pinotto992",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Certosa_di_San_Martino_from_Sant%27Elmo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Certosa_di_San_Martino_from_Sant%27Elmo.jpg",
+      "fullWidth": 2448
+     },
+     "description": "former Carthusian monastery in Naples, Italy"
     },
     {
      "id": "way/29403971",
@@ -134,7 +189,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Napoli_s_Elmo_da_Castel_dell%27Ovo_1040688.JPG/500px-Napoli_s_Elmo_da_Castel_dell%27Ovo_1040688.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lalupa",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_s_Elmo_da_Castel_dell%27Ovo_1040688.JPG",
+      "fullWidth": 2816
+     },
+     "description": "fortification in Naples, Italy"
     },
     {
      "id": "wikidata/Q241410",
@@ -146,7 +212,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/San_Francesco_di_Paola_%28Naples%29_exterior.jpg/500px-San_Francesco_di_Paola_%28Naples%29_exterior.jpg",
+      "width": 500,
+      "height": 207,
+      "author": "PaestumPaestum",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Francesco_di_Paola_(Naples)_exterior.jpg",
+      "fullWidth": 8184
+     },
+     "description": "church building in Naples, Italy"
     },
     {
      "id": "way/242286729",
@@ -158,7 +235,18 @@
      "wikidataId": "Q1007726",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Galleria_San_Martino._01.JPG/500px-Galleria_San_Martino._01.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Miguel Hermoso Cuesta",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galleria_San_Martino._01.JPG",
+      "fullWidth": 5184
+     },
+     "description": "public shopping gallery in Naples, southern Italy"
     },
     {
      "id": "way/150562144",
@@ -170,7 +258,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Monastero_di_SantaChiaraNaples.jpg/500px-Monastero_di_SantaChiaraNaples.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "IlSistemone",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monastero_di_SantaChiaraNaples.jpg",
+      "fullWidth": 2592
+     },
+     "description": "church in Naples, Italy"
     },
     {
      "id": "way/27182911",
@@ -181,7 +280,18 @@
      "wikidataId": "Q1047594",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Basilica_reale_pontificia_di_San_Francesco_di_Paola_Piazza_del_Plebiscito_Napoli_Neapel_Italy_Foto_Wolfgang_Pehlemann_P1070687.jpg/500px-Basilica_reale_pontificia_di_San_Francesco_di_Paola_Piazza_del_Plebiscito_Napoli_Neapel_Italy_Foto_Wolfgang_Pehlemann_P1070687.jpg",
+      "width": 500,
+      "height": 207,
+      "author": "Wolfgang Pehlemann",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_reale_pontificia_di_San_Francesco_di_Paola_Piazza_del_Plebiscito_Napoli_Neapel_Italy_Foto_Wolfgang_Pehlemann_P1070687.jpg",
+      "fullWidth": 1750
+     },
+     "description": "square in Naples, Italy"
     },
     {
      "id": "wikidata/Q897603",
@@ -193,7 +303,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/SanDomenicoMaggioreNaples.jpg/500px-SanDomenicoMaggioreNaples.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "IlSistemone",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:SanDomenicoMaggioreNaples.jpg",
+      "fullWidth": 2592
+     },
+     "description": "church building in Naples, Italy"
     },
     {
      "id": "wikidata/Q1084608",
@@ -205,7 +326,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/San_Lorenzo_facciata.jpg/500px-San_Lorenzo_facciata.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "No machine-readable author provided. Inviaggiocommons assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:San_Lorenzo_facciata.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Lorenzo_facciata.jpg",
+      "fullWidth": 768
+     },
+     "description": "church in Naples, Italy"
     },
     {
      "id": "wikidata/Q2256644",
@@ -218,7 +350,18 @@
       "business",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/NapoliPalazzoReale.jpg/500px-NapoliPalazzoReale.jpg",
+      "width": 500,
+      "height": 251,
+      "author": "MM",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NapoliPalazzoReale.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NapoliPalazzoReale.jpg",
+      "fullWidth": 2048
+     },
+     "description": "national library in Naples, Italy"
     },
     {
      "id": "wikidata/Q718774",
@@ -229,7 +372,18 @@
      "wikidataId": "Q718774",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Facciata_della_chiesa_del_Ges%C3%B9_Nuovo_%28Napoli%29_-_BW_2013-05-16.jpg/500px-Facciata_della_chiesa_del_Ges%C3%B9_Nuovo_%28Napoli%29_-_BW_2013-05-16.jpg",
+      "width": 500,
+      "height": 441,
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Facciata_della_chiesa_del_Ges%C3%B9_Nuovo_(Napoli)_-_BW_2013-05-16.jpg",
+      "fullWidth": 2800
+     },
+     "description": "church in Naples"
     },
     {
      "id": "wikidata/Q693174",
@@ -241,7 +395,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Basilica_di_San_Paolo_Maggiore_%28Napoli%29%2C_facciata_01.jpg/500px-Basilica_di_San_Paolo_Maggiore_%28Napoli%29%2C_facciata_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mongolo1984",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Paolo_Maggiore_(Napoli),_facciata_01.jpg",
+      "fullWidth": 6000
+     },
+     "description": "church building in Naples, Italy"
     },
     {
      "id": "wikidata/Q926401",
@@ -252,7 +417,18 @@
      "wikidataId": "Q926401",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Monument_of_Dante_Alighieri_in_Piazza_Dante_Napoli._Campania%2C_Italy%2C_South_Europe-2.jpg/500px-Monument_of_Dante_Alighieri_in_Piazza_Dante_Napoli._Campania%2C_Italy%2C_South_Europe-2.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Mstyslav Chernov",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monument_of_Dante_Alighieri_in_Piazza_Dante_Napoli._Campania,_Italy,_South_Europe-2.jpg",
+      "fullWidth": 3500
+     },
+     "description": "square in Naples, Italy"
     },
     {
      "id": "wikidata/Q3398528",
@@ -264,7 +440,18 @@
      "kinds": [
       "port",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Napoli-porto01.jpg/500px-Napoli-porto01.jpg",
+      "width": 500,
+      "height": 256,
+      "author": "Lance Mountain",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli-porto01.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Italian seaport"
     },
     {
      "id": "wikidata/Q955081",
@@ -276,7 +463,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Portale_Spagn.jpg/500px-Portale_Spagn.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Portale_Spagn.jpg",
+      "fullWidth": 3120
+     },
+     "description": "church building in Naples, Italy"
     },
     {
      "id": "wikidata/Q281957",
@@ -289,7 +487,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Napoli_-_Chiesa_di_San_Giorgio_Maggiore.jpg/500px-Napoli_-_Chiesa_di_San_Giorgio_Maggiore.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Armando Mancini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_-_Chiesa_di_San_Giorgio_Maggiore.jpg",
+      "fullWidth": 3648
+     },
+     "description": "church"
     },
     {
      "id": "wikidata/Q368820",
@@ -304,7 +513,18 @@
       "palace",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/NapoliConservatorioSanPietroAMaiellaTarga.jpg/500px-NapoliConservatorioSanPietroAMaiellaTarga.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "MM",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:NapoliConservatorioSanPietroAMaiellaTarga.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NapoliConservatorioSanPietroAMaiellaTarga.jpg",
+      "fullWidth": 2048
+     },
+     "description": "music high school"
     },
     {
      "id": "wikidata/Q1255667",
@@ -317,7 +537,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Napoli_s_Ferdinando_1040518.JPG/500px-Napoli_s_Ferdinando_1040518.JPG",
+      "width": 500,
+      "height": 473,
+      "author": "Lalupa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_s_Ferdinando_1040518.JPG",
+      "fullWidth": 1765
+     },
+     "description": "church in Naples, Italy"
     },
     {
      "id": "wikidata/Q289414",
@@ -328,7 +559,18 @@
      "wikidataId": "Q289414",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Napoli_-_Chiesa_dei_Girolamini.jpg/500px-Napoli_-_Chiesa_dei_Girolamini.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Armando Mancini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_-_Chiesa_dei_Girolamini.jpg",
+      "fullWidth": 3542
+     },
+     "description": "The Church and Convent of the Girolamini"
     },
     {
      "id": "wikidata/Q2932919",
@@ -340,7 +582,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Napoli_-_Il_Bar_Gambrinus.jpg/500px-Napoli_-_Il_Bar_Gambrinus.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Armando Mancini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_-_Il_Bar_Gambrinus.jpg",
+      "fullWidth": 3648
+     },
+     "description": "cafè in Naples"
     },
     {
      "id": "wikidata/Q1239540",
@@ -353,7 +606,18 @@
       "adminArea",
       "attraction",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/PortAlbaNaples4.JPG/500px-PortAlbaNaples4.JPG",
+      "width": 500,
+      "height": 947,
+      "author": "IlSistemone",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:PortAlbaNaples4.JPG",
+      "fullWidth": 890
+     },
+     "description": "building in Naples, Italy"
     },
     {
      "id": "wikidata/Q220221",
@@ -365,7 +629,18 @@
      "kinds": [
       "attraction",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/StazionezoologicaAntonDohrnNapoli19-12-10_1512.jpg/500px-StazionezoologicaAntonDohrnNapoli19-12-10_1512.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "TatsuoTabei",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:StazionezoologicaAntonDohrnNapoli19-12-10_1512.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:StazionezoologicaAntonDohrnNapoli19-12-10_1512.jpg",
+      "fullWidth": 1600
+     },
+     "description": "research institute in Naples, Italy"
     },
     {
      "id": "wikidata/Q1015161",
@@ -377,7 +652,18 @@
      "kinds": [
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/Via_Toledo_%28Naples%29.jpg",
+      "width": 500,
+      "height": 669,
+      "author": "Original uploader was Johnnyrotten at it.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Via_Toledo_(Naples).jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Via_Toledo_(Naples).jpg",
+      "fullWidth": 448
+     },
+     "description": "thoroughfare in Naples, Italy"
     },
     {
      "id": "node/5126351599",
@@ -393,7 +679,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Napoli_sotterranea_%28cunicolo%29.jpg/500px-Napoli_sotterranea_%28cunicolo%29.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Armando Mancini from Napoli, Italia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_sotterranea_(cunicolo).jpg",
+      "fullWidth": 2714
+     },
+     "description": "underground museum in Chiaia, Municipality 1 of Naples, Italy"
     },
     {
      "id": "way/261256738",
@@ -404,7 +701,17 @@
      "wikidataId": "Q1297358",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Guglia_di_piazza_Gesu%27_nuovo_%E2%80%93_Napoli.jpg/500px-Guglia_di_piazza_Gesu%27_nuovo_%E2%80%93_Napoli.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "https://www.flickr.com/photos/black_friction/",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Guglia_di_piazza_Gesu%27_nuovo_%E2%80%93_Napoli.jpg",
+      "fullWidth": 2769
+     }
     },
     {
      "id": "node/11846926045",
@@ -415,7 +722,18 @@
      "wikidataId": "Q4012739",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Villa_di_Licinio_Lucullo_25_001.jpg/500px-Villa_di_Licinio_Lucullo_25_001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MentNFG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_di_Licinio_Lucullo_25_001.jpg",
+      "fullWidth": 6000
+     },
+     "description": "archaeological site in Naples, Italy"
     },
     {
      "id": "way/1122261408",
@@ -428,7 +746,18 @@
      "kinds": [
       "adminArea",
       "castle"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Castello_Aselmeyer%2C_a_private_palace_built_by_the_architect_Lamont_Young_in_the_Neo-Gothic_style.jpg",
+      "width": 500,
+      "height": 479,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castello_Aselmeyer,_a_private_palace_built_by_the_architect_Lamont_Young_in_the_Neo-Gothic_style.jpg",
+      "fullWidth": 500
+     },
+     "description": "building in Naples, Italy"
     },
     {
      "id": "node/2762632324",
@@ -441,7 +770,18 @@
       "performingArts",
       "ruins",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/CaveaAnticaglia.jpg/500px-CaveaAnticaglia.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CityClass",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CaveaAnticaglia.jpg",
+      "fullWidth": 4608
+     },
+     "description": "İtalya'da tiyatro"
     },
     {
      "id": "node/5370523028",
@@ -449,7 +789,8 @@
      "lat": 40.83493,
      "lon": 14.25164,
      "wikipediaCount": 3,
-     "wikidataId": "Q1534326"
+     "wikidataId": "Q1534326",
+     "description": "fountain"
     },
     {
      "id": "node/9069159717",
@@ -461,7 +802,17 @@
      "kinds": [
       "noCoordinate",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Obelisco_Villa_comunale.jpg/500px-Obelisco_Villa_comunale.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Baku",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Obelisco_Villa_comunale.jpg",
+      "fullWidth": 1440
+     }
     },
     {
      "id": "way/1112311694",
@@ -472,7 +823,18 @@
      "wikidataId": "Q3668522",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Carminiello_Mannesi.JPG/500px-Carminiello_Mannesi.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carminiello_Mannesi.JPG",
+      "fullWidth": 3072
+     },
+     "description": "church building in Naples, Italy"
     },
     {
      "id": "node/5370523008",
@@ -480,7 +842,18 @@
      "lat": 40.83536,
      "lon": 14.25062,
      "wikipediaCount": 2,
-     "wikidataId": "Q1002731"
+     "wikidataId": "Q1002731",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Anonima5.jpg/500px-Anonima5.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Baku",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Anonima5.jpg",
+      "fullWidth": 3120
+     },
+     "description": "fountain in Naples, Italy"
     },
     {
      "id": "way/339324910",
@@ -491,7 +864,17 @@
      "wikidataId": "Q56323312",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Napoli_-_Colonna_spezzata2.jpg/500px-Napoli_-_Colonna_spezzata2.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Armando Mancini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_-_Colonna_spezzata2.jpg",
+      "fullWidth": 2736
+     }
     },
     {
      "id": "node/5157946200",
@@ -502,7 +885,17 @@
      "wikidataId": "Q3747401",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Fontana_conciglia.JPG/500px-Fontana_conciglia.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fontana_conciglia.JPG",
+      "fullWidth": 4160
+     }
     },
     {
      "id": "way/1169442497",
@@ -513,7 +906,18 @@
      "wikidataId": "Q3908181",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ponte_romano1.jpg/500px-Ponte_romano1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_romano1.jpg",
+      "fullWidth": 1600
+     },
+     "description": "archaeological site in Naples, Italy"
     },
     {
      "id": "node/13176976115",
@@ -521,7 +925,17 @@
      "lat": 40.85252,
      "lon": 14.25375,
      "wikipediaCount": 1,
-     "wikidataId": "Q3685209"
+     "wikidataId": "Q3685209",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Arco_San_Gaudioso%2C_Cosimo_Fanzago.jpg/500px-Arco_San_Gaudioso%2C_Cosimo_Fanzago.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Pinotto992",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arco_San_Gaudioso,_Cosimo_Fanzago.jpg",
+      "fullWidth": 2934
+     }
     },
     {
      "id": "node/4207806285",
@@ -585,7 +999,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Museo_Archeologico_Nazionale_di_Napoli_-_panoramio_%281%29.jpg/500px-Museo_Archeologico_Nazionale_di_Napoli_-_panoramio_%281%29.jpg",
+      "width": 500,
+      "height": 448,
+      "author": "Mister No",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Archeologico_Nazionale_di_Napoli_-_panoramio_(1).jpg",
+      "fullWidth": 1258
+     },
+     "description": "İtalya'da ulusal arkeoloji müzesi"
     },
     {
      "id": "way/123977918",
@@ -602,7 +1027,18 @@
       "museum",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Immagine_d%27insieme_2%2C_Cappella_Sansevero.jpg/500px-Immagine_d%27insieme_2%2C_Cappella_Sansevero.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "David Sivyer",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Immagine_d%27insieme_2,_Cappella_Sansevero.jpg",
+      "fullWidth": 640
+     },
+     "description": "church"
     },
     {
      "id": "wikidata/Q3523",
@@ -615,7 +1051,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Panmosaic.jpg",
+      "width": 500,
+      "height": 480,
+      "author": "User Eloquence on en.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Panmosaic.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Panmosaic.jpg",
+      "fullWidth": 378
+     },
+     "description": "collection of sexually explicit finds from Pompeii"
     },
     {
      "id": "node/4258447333",
@@ -630,7 +1077,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum"
     },
     {
      "id": "node/3683555296",
@@ -646,7 +1094,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Palazzo_Carafa_di_Roccella_100_2893.JPG/500px-Palazzo_Carafa_di_Roccella_100_2893.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Johnnyrotten",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Carafa_di_Roccella_100_2893.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Carafa_di_Roccella_100_2893.JPG",
+      "fullWidth": 2304
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/13810374911",
@@ -658,7 +1117,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Napoli_s_Martino_QDP_1050019.JPG/500px-Napoli_s_Martino_QDP_1050019.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lalupa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_s_Martino_QDP_1050019.JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum in Naples, Italy"
     },
     {
      "id": "node/4194078289",
@@ -671,7 +1141,18 @@
      "wikidataId": "Q4000489",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Galleria_borbonica_-_War_refuge_%28Naples%29.jpg/500px-Galleria_borbonica_-_War_refuge_%28Naples%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Associazione Culturale Borbonica Sotterranea",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galleria_borbonica_-_War_refuge_(Naples).jpg",
+      "fullWidth": 1500
+     },
+     "description": "Tunnel in Naples, Italy"
     },
     {
      "id": "node/3733540789",
@@ -687,7 +1168,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Villa_floridiana02.jpg/500px-Villa_floridiana02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "http://www.everyfoto.com",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_floridiana02.jpg",
+      "fullWidth": 2048
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/3515649877",
@@ -700,7 +1192,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Museo_civico_Gaetano_Filangieri.jpg/500px-Museo_civico_Gaetano_Filangieri.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Sordelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_civico_Gaetano_Filangieri.jpg",
+      "fullWidth": 2667
+     },
+     "description": "art museum in Naples, Italy"
     },
     {
      "id": "node/13789076946",
@@ -716,7 +1219,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Napoli_Castel_Nuovo_cortile_1060655-6.JPG/500px-Napoli_Castel_Nuovo_cortile_1060655-6.JPG",
+      "width": 500,
+      "height": 256,
+      "author": "Lalupa",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_Castel_Nuovo_cortile_1060655-6.JPG",
+      "fullWidth": 1968
+     },
+     "description": "museum in Naples, Italy"
     },
     {
      "id": "node/5280124543",
@@ -730,7 +1244,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/AccademiaBelleArtiNaples2.jpg/500px-AccademiaBelleArtiNaples2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "IlSistemone",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:AccademiaBelleArtiNaples2.jpg",
+      "fullWidth": 1600
+     },
+     "description": "art museum in Naples, Italy"
     },
     {
      "id": "way/270701756",
@@ -741,7 +1266,18 @@
      "wikidataId": "Q667605",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Ingresso2_luciella.jpg/500px-Ingresso2_luciella.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ingresso2_luciella.jpg",
+      "fullWidth": 1200
+     },
+     "description": "church building in Naples, Italy"
     },
     {
      "id": "node/3466005069",
@@ -756,7 +1292,8 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "description": "art museum collection of Banca Intesa San Paolo"
     },
     {
      "id": "way/267077343",
@@ -770,7 +1307,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Complesso_Marcellino.jpg/500px-Complesso_Marcellino.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Complesso_Marcellino.jpg",
+      "fullWidth": 640
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "way/79299088",
@@ -782,7 +1330,17 @@
      "wikidataId": "Q21192700",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Naples_santa_chiara_cloitre_trav%C3%A9e_centrale.JPG/500px-Naples_santa_chiara_cloitre_trav%C3%A9e_centrale.JPG",
+      "width": 500,
+      "height": 341,
+      "author": "Velvet",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Naples_santa_chiara_cloitre_trav%C3%A9e_centrale.JPG",
+      "fullWidth": 2750
+     }
     },
     {
      "id": "node/13915431230",
@@ -794,7 +1352,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Museo_Indus.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Indus.jpg",
+      "fullWidth": 480
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/13789755439",
@@ -806,7 +1375,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/VillaPignatelliMuseoCarrozze.jpg/500px-VillaPignatelliMuseoCarrozze.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "IlSistemone",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:VillaPignatelliMuseoCarrozze.jpg",
+      "fullWidth": 4320
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "relation/18383415",
@@ -816,7 +1396,8 @@
      "website": "https://www.museiscienzenaturaliefisiche.it/",
      "openingHours": "Tu,We,Fr 09:00-13:30; Mo,Th 09:00-13:30, 14:15-16:30",
      "wikipediaCount": 1,
-     "wikidataId": "Q3664864"
+     "wikidataId": "Q3664864",
+     "description": "museum in Italy"
     },
     {
      "id": "node/13810374912",
@@ -831,7 +1412,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Castel_sant%27elmo%2C_Museo_Napoli_Novecento_01.jpg/500px-Castel_sant%27elmo%2C_Museo_Napoli_Novecento_01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castel_sant%27elmo,_Museo_Napoli_Novecento_01.jpg",
+      "fullWidth": 5472
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/11813405712",
@@ -847,7 +1439,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Centro_Musei_delle_scienze_naturali.jpg/500px-Centro_Musei_delle_scienze_naturali.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sordelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Centro_Musei_delle_scienze_naturali.jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/3515649876",
@@ -863,7 +1466,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Cardinale_Zapata.jpg/500px-Cardinale_Zapata.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Baku",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cardinale_Zapata.jpg",
+      "fullWidth": 1600
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/13813622751",
@@ -878,7 +1492,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Italy"
     },
     {
      "id": "node/4394926693",
@@ -892,7 +1507,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Naples"
     },
     {
      "id": "node/13789450948",
@@ -905,7 +1521,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Ipogeo_Purgatorio_ad_Arco.jpg/500px-Ipogeo_Purgatorio_ad_Arco.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "No machine-readable author provided. Inviaggiocommons assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ipogeo_Purgatorio_ad_Arco.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ipogeo_Purgatorio_ad_Arco.jpg",
+      "fullWidth": 768
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/13790859343",
@@ -918,7 +1545,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Napoli_s_Chiara_museo_-_Sancia_e_Roberto_d%27Angi%C3%B2_1040888.JPG/500px-Napoli_s_Chiara_museo_-_Sancia_e_Roberto_d%27Angi%C3%B2_1040888.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Lalupa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_s_Chiara_museo_-_Sancia_e_Roberto_d%27Angi%C3%B2_1040888.JPG",
+      "fullWidth": 2816
+     },
+     "description": "Naples, Italy"
     },
     {
      "id": "node/5223459922",
@@ -959,7 +1597,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Naples, Italy"
     },
     {
      "id": "node/13810369364",
@@ -974,7 +1613,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Museo_Diego_Aragona_Pignatelli_Cortes_e_Museo_delle_Carrozze.jpg/500px-Museo_Diego_Aragona_Pignatelli_Cortes_e_Museo_delle_Carrozze.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sordelli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Diego_Aragona_Pignatelli_Cortes_e_Museo_delle_Carrozze.jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in Italy"
     },
     {
      "id": "node/12206971413",
@@ -987,7 +1637,8 @@
       "farFromItem",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum complex in Naples, Italy"
     },
     {
      "id": "node/8866314829",
@@ -1058,7 +1709,8 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Italian museum"
     },
     {
      "id": "relation/3622561",
@@ -1149,7 +1801,18 @@
      "openingHours": "We-Mo 12:00-24:00",
      "cuisine": "pizza",
      "wikidataId": "Q2853150",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Pizzeria_Port_Alba.jpg",
+      "width": 500,
+      "height": 626,
+      "author": "Alexandra Hamer",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pizzeria_Port_Alba.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pizzeria_Port_Alba.jpg",
+      "fullWidth": 314
+     },
+     "description": "pizzeria in Naples, Italy"
     },
     {
      "id": "node/11801880533",
@@ -1285,11 +1948,11 @@
     },
     {
      "id": "node/4496361590",
-     "name": "La cantina di via Sapienza",
-     "lat": 40.85169,
-     "lon": 14.2538,
+     "name": "La cantina di via Sapienza",
+     "lat": 40.85168,
+     "lon": 14.25383,
      "address": "Via della Sapienza 40",
-     "website": "https://www.cantinadiviasapienza/",
+     "website": "https://www.cantinadiviasapienza.it/",
      "openingHours": "Mo-Sa 12:30-15:00",
      "cuisine": "regional",
      "detailed": true
@@ -1443,9 +2106,21 @@
      "cuisine": "italian, sandwich",
      "wikidataId": "Q2932919",
      "kinds": [
-      "business"
+      "business",
+      "organization"
      ],
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Napoli_-_Il_Bar_Gambrinus.jpg/500px-Napoli_-_Il_Bar_Gambrinus.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Armando Mancini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_-_Il_Bar_Gambrinus.jpg",
+      "fullWidth": 3648
+     },
+     "description": "cafè in Naples"
     },
     {
      "id": "node/8933550717",
@@ -1936,6 +2611,12 @@
      "address": "Via Bellini 46"
     },
     {
+     "id": "node/14297270666",
+     "name": "66 Fusion Bar",
+     "lat": 40.83504,
+     "lon": 14.24043
+    },
+    {
      "id": "node/11238828253",
      "name": "All You Need",
      "lat": 40.84266,
@@ -1953,12 +2634,6 @@
      "lat": 40.84898,
      "lon": 14.25215,
      "address": "Via San Sebastiano 64"
-    },
-    {
-     "id": "node/7099927467",
-     "name": "Angelo Carbone",
-     "lat": 40.85115,
-     "lon": 14.25985
     }
    ]
   },

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "AUH",
- "fetchedAt": "2026-10-18T16:57:17.718Z",
+ "fetchedAt": "2026-10-22T06:27:45.774Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q283849",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/IRN-YMN_20190107_Asian_Cup_4.jpg/500px-IRN-YMN_20190107_Asian_Cup_4.jpg",
+      "width": 500,
+      "height": 304,
+      "author": "Amir Ostovari",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:IRN-YMN_20190107_Asian_Cup_4.jpg",
+      "fullWidth": 800
+     },
+     "description": "stadium"
     },
     {
      "id": "wikidata/Q285692",
@@ -63,7 +74,18 @@
      "wikidataId": "Q285692",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/IRN-VIETNAM_20190112_Asian_Cup_2.jpg/500px-IRN-VIETNAM_20190112_Asian_Cup_2.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "Amir Ostovari",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:IRN-VIETNAM_20190112_Asian_Cup_2.jpg",
+      "fullWidth": 1280
+     },
+     "description": "football stadium"
     },
     {
      "id": "node/5516299322",

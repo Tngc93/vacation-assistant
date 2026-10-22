@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "BEG",
- "fetchedAt": "2026-10-18T16:37:26.656Z",
+ "fetchedAt": "2026-10-22T05:54:21.595Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q330385",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Hram_Beograd.JPG/500px-Hram_Beograd.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Orjen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hram_Beograd.JPG",
+      "fullWidth": 4032
+     },
+     "description": "church in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q478000",
@@ -64,7 +75,18 @@
      "wikidataId": "Q478000",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Beograd_7652.jpg/500px-Beograd_7652.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "User:Darwinek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beograd_7652.jpg",
+      "fullWidth": 2576
+     },
+     "description": "Belgrad, Sırbistan'da bir futbol stadyumu"
     },
     {
      "id": "wikidata/Q33277",
@@ -76,7 +98,18 @@
      "wikidataId": "Q33277",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/%C5%A0tark_Arena.jpg/500px-%C5%A0tark_Arena.jpg",
+      "width": 500,
+      "height": 290,
+      "author": "Štark arena",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%A0tark_Arena.jpg",
+      "fullWidth": 3667
+     },
+     "description": "indoor arena in Belgrade, Serbia"
     },
     {
      "id": "way/166818792",
@@ -90,7 +123,18 @@
       "farFromItem",
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Narodna_biblioteka_Srbije...jpg/500px-Narodna_biblioteka_Srbije...jpg",
+      "width": 500,
+      "height": 375,
+      "author": "A.Milenković",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Narodna_biblioteka_Srbije...jpg",
+      "fullWidth": 4288
+     },
+     "description": "Belgrat, Sırbistan'da bir kütüphane"
     },
     {
      "id": "way/450824126",
@@ -103,7 +147,18 @@
      "kinds": [
       "adminArea",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Despotova_kula6.jpg/500px-Despotova_kula6.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CrniBombarder!!!",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Despotova_kula6.jpg",
+      "fullWidth": 1200
+     },
+     "description": "Sava ve Tuna nehrinin birleştiği bölgede yer alan tarihi ve kültürel bir yapı"
     },
     {
      "id": "wikidata/Q804208",
@@ -117,7 +172,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bajrakli_d%C5%BEamija_u_Beogradu_0014.JPG/500px-Bajrakli_d%C5%BEamija_u_Beogradu_0014.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Mickey Mystique",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bajrakli_d%C5%BEamija_u_Beogradu_0014.JPG",
+      "fullWidth": 4000
+     },
+     "description": "Sırbistan'ın Belgrad kentinde cami"
     },
     {
      "id": "wikidata/Q599868",
@@ -126,7 +192,18 @@
      "lat": 44.82442,
      "lon": 20.45046,
      "wikipediaCount": 29,
-     "wikidataId": "Q599868"
+     "wikidataId": "Q599868",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Kalemegdan%2C_a04.jpg/500px-Kalemegdan%2C_a04.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mickey Mystique",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kalemegdan,_a04.jpg",
+      "fullWidth": 3968
+     },
+     "description": "park on the former glacis of the fortress of Belgrade"
     },
     {
      "id": "wikidata/Q1254795",
@@ -139,7 +216,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Crkva_svetog_Marka%2C_Beograd_%28St._Mark%27s_Church%2C_Belgrade%29.jpg/500px-Crkva_svetog_Marka%2C_Beograd_%28St._Mark%27s_Church%2C_Belgrade%29.jpg",
+      "width": 500,
+      "height": 413,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Crkva_svetog_Marka,_Beograd_(St._Mark%27s_Church,_Belgrade).jpg",
+      "fullWidth": 4780
+     },
+     "description": "Serbian Orthodox church in Belgrade"
     },
     {
      "id": "wikidata/Q1847119",
@@ -154,7 +242,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Serbia%2C_Belgrade_-_National_Theatre%2C_01.04.2011.jpg/500px-Serbia%2C_Belgrade_-_National_Theatre%2C_01.04.2011.jpg",
+      "width": 500,
+      "height": 474,
+      "author": "User:Михајло Анђелковић",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Serbia,_Belgrade_-_National_Theatre,_01.04.2011.jpg",
+      "fullWidth": 1681
+     },
+     "description": "theatre in Belgrade, Serbia"
     },
     {
      "id": "node/6400528147",
@@ -166,7 +265,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Belgrade_Old_fairground_central_tower_2024.jpg/500px-Belgrade_Old_fairground_central_tower_2024.jpg",
+      "width": 500,
+      "height": 740,
+      "author": "MareBG",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgrade_Old_fairground_central_tower_2024.jpg",
+      "fullWidth": 1080
+     },
+     "description": "Nazi concentration camp during WWII in present-day Serbia"
     },
     {
      "id": "wikidata/Q1265998",
@@ -179,7 +289,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%D0%A1%D0%B0%D0%B1%D0%BE%D1%80%D0%BD%D0%B0_%D1%86%D1%80%D0%BA%D0%B2%D0%B0_%D1%83_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83_2.jpg/500px-%D0%A1%D0%B0%D0%B1%D0%BE%D1%80%D0%BD%D0%B0_%D1%86%D1%80%D0%BA%D0%B2%D0%B0_%D1%83_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83_2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "DarkouPH",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%B1%D0%BE%D1%80%D0%BD%D0%B0_%D1%86%D1%80%D0%BA%D0%B2%D0%B0_%D1%83_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83_2.jpg",
+      "fullWidth": 3813
+     },
+     "description": "Belgrad'da kilise"
     },
     {
      "id": "node/11330628651",
@@ -192,7 +313,18 @@
      "kinds": [
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Singidunum_ostaci2.jpg/500px-Singidunum_ostaci2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "CrniBombarder!!!",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Singidunum_ostaci2.jpg",
+      "fullWidth": 1333
+     },
+     "description": "human settlement"
     },
     {
      "id": "wikidata/Q1287997",
@@ -204,7 +336,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/The_Victor_-_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA_01.jpg/500px-The_Victor_-_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA_01.jpg",
+      "width": 500,
+      "height": 740,
+      "author": "George M. Groutas",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Victor_-_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA_01.jpg",
+      "fullWidth": 3448
+     },
+     "description": "monument and immovable cultural property in the city municipality of Stari grad, Serbia"
     },
     {
      "id": "wikidata/Q1262622",
@@ -216,7 +359,18 @@
      "wikidataId": "Q1262622",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/U%C5%A1%C4%87e.JPG/500px-U%C5%A1%C4%87e.JPG",
+      "width": 500,
+      "height": 368,
+      "author": "Orlovic",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:U%C5%A1%C4%87e.JPG",
+      "fullWidth": 2015
+     },
+     "description": "skyscraper in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q2633804",
@@ -228,7 +382,18 @@
      "wikidataId": "Q2633804",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Republic_Square_%2827420599076%29.jpg/500px-Republic_Square_%2827420599076%29.jpg",
+      "width": 500,
+      "height": 297,
+      "author": "Erik Cleves Kristensen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Republic_Square_(27420599076).jpg",
+      "fullWidth": 3058
+     },
+     "description": "Belgrad'da bulunan bir meydan ve mahalle"
     },
     {
      "id": "wikidata/Q367802",
@@ -240,7 +405,18 @@
      "wikidataId": "Q367802",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Hala_Pionir_Beograd.jpg/500px-Hala_Pionir_Beograd.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "SmirnofLeary at Serbian Wikipedia",
+      "license": "CC BY-SA 3.0 rs",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hala_Pionir_Beograd.jpg",
+      "fullWidth": 2848
+     },
+     "description": "indoor arena in Serbia"
     },
     {
      "id": "wikidata/Q1420986",
@@ -254,7 +430,18 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Knez_Mihailova_Street.JPG/500px-Knez_Mihailova_Street.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "NinoBeg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Knez_Mihailova_Street.JPG",
+      "fullWidth": 3200
+     },
+     "description": "Belgrad'ın ana yaya bölgesi ve alışveriş alanı"
     },
     {
      "id": "wikidata/Q1590792",
@@ -267,7 +454,18 @@
      "kinds": [
       "heritage",
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Skupstina_srbije_posle_renoviranja.jpg/500px-Skupstina_srbije_posle_renoviranja.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Orjen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skupstina_srbije_posle_renoviranja.jpg",
+      "fullWidth": 4032
+     },
+     "description": "the building where the National Assembly of Serbia convenes"
     },
     {
      "id": "wikidata/Q736135",
@@ -279,7 +477,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Beogradska_sinagoga.jpg/500px-Beogradska_sinagoga.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Matija",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beogradska_sinagoga.jpg",
+      "fullWidth": 1224
+     },
+     "description": "synagogue in Belgrad, Serbia"
     },
     {
      "id": "wikidata/Q1264635",
@@ -290,7 +499,18 @@
      "wikidataId": "Q1264635",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Skadarlija07.jpg/500px-Skadarlija07.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Ванилица",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Skadarlija07.jpg",
+      "fullWidth": 3456
+     },
+     "description": "street in Belgrade"
     },
     {
      "id": "wikidata/Q585938",
@@ -302,7 +522,18 @@
      "wikidataId": "Q585938",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8%D1%98%D0%B5.jpg/500px-%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8%D1%98%D0%B5.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Andrija12345678",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8%D1%98%D0%B5.jpg",
+      "fullWidth": 4000
+     },
+     "description": "major commercial junction in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q818589",
@@ -313,7 +544,18 @@
      "wikidataId": "Q818589",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Beogradjanka%2C_Belgrade%2C_Serbia.jpg/500px-Beogradjanka%2C_Belgrade%2C_Serbia.jpg",
+      "width": 500,
+      "height": 668,
+      "author": "Filip Maljkovic ( Dungodung ) from Pancevo, Serbia & Montenegro",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beogradjanka,_Belgrade,_Serbia.jpg",
+      "fullWidth": 766
+     },
+     "description": "tower block"
     },
     {
      "id": "wikidata/Q898731",
@@ -325,7 +567,18 @@
      "wikidataId": "Q898731",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Brankov-most-branko-bridge-hdr-atipiks.jpg/500px-Brankov-most-branko-bridge-hdr-atipiks.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Atipiks",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brankov-most-branko-bridge-hdr-atipiks.jpg",
+      "fullWidth": 604
+     },
+     "description": "bridge in Serbia"
     },
     {
      "id": "wikidata/Q1289617",
@@ -337,7 +590,18 @@
      "wikidataId": "Q1289617",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Sava_River_and_Gazela_Bridge_%28Belgrade%29.jpg/500px-Sava_River_and_Gazela_Bridge_%28Belgrade%29.jpg",
+      "width": 500,
+      "height": 360,
+      "author": "Petar Milošević",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sava_River_and_Gazela_Bridge_(Belgrade).jpg",
+      "fullWidth": 8000
+     },
+     "description": "bridge in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q3145608",
@@ -351,7 +615,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Hotel_Moskva_%28Belgrade%29.jpg/500px-Hotel_Moskva_%28Belgrade%29.jpg",
+      "width": 500,
+      "height": 627,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Moskva_(Belgrade).jpg",
+      "fullWidth": 3354
+     },
+     "description": "hotel in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q948346",
@@ -363,7 +638,18 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Terazije6.jpg/500px-Terazije6.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "BoskoM at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Terazije6.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Terazije6.jpg",
+      "fullWidth": 650
+     },
+     "description": "square in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q115753",
@@ -375,7 +661,18 @@
      "wikidataId": "Q115753",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%B6%D0%B5%D1%99%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B5_%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%86%D0%B5_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4_%D1%86%D0%B5%D0%BD%D1%82%D0%B0%D1%807.jpg/500px-%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%B6%D0%B5%D1%99%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B5_%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%86%D0%B5_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4_%D1%86%D0%B5%D0%BD%D1%82%D0%B0%D1%807.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Andrija12345678",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%B6%D0%B5%D1%99%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B5_%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%86%D0%B5_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4_%D1%86%D0%B5%D0%BD%D1%82%D0%B0%D1%807.jpg",
+      "fullWidth": 4000
+     },
+     "description": "railway station in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q1286851",
@@ -387,7 +684,18 @@
      "wikidataId": "Q1286851",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Serbia%2C_Belgrade%2C_Pancevo_bridge%2C_07.08.2011%2C_2.jpg/500px-Serbia%2C_Belgrade%2C_Pancevo_bridge%2C_07.08.2011%2C_2.jpg",
+      "width": 500,
+      "height": 160,
+      "author": "User:Михајло Анђелковић",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Serbia,_Belgrade,_Pancevo_bridge,_07.08.2011,_2.jpg",
+      "fullWidth": 5870
+     },
+     "description": "bridge over the Danube in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q2062450",
@@ -396,7 +704,18 @@
      "lat": 44.80917,
      "lon": 20.47083,
      "wikipediaCount": 16,
-     "wikidataId": "Q2062450"
+     "wikidataId": "Q2062450",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Ta%C5%A1majdan_Park.jpg/500px-Ta%C5%A1majdan_Park.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "LukaP at en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ta%C5%A1majdan_Park.jpg",
+      "fullWidth": 664
+     },
+     "description": "public park and the surrounding urban neighborhood of Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q2290818",
@@ -409,7 +728,18 @@
      "kinds": [
       "port",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Sava_port_Belgrade.jpg/500px-Sava_port_Belgrade.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Matija",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sava_port_Belgrade.jpg",
+      "fullWidth": 2048
+     },
+     "description": "river port on Danube in Serbia"
     },
     {
      "id": "wikidata/Q625610",
@@ -420,7 +750,18 @@
      "wikidataId": "Q625610",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%BE%D0%BE%D0%BF%D0%B0%D1%80%D0%BA%2C_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D1%85%D0%BE%D0%B4.jpg/500px-%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%BE%D0%BE%D0%BF%D0%B0%D1%80%D0%BA%2C_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D1%85%D0%BE%D0%B4.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Новик А.Н.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%BE%D0%BE%D0%BF%D0%B0%D1%80%D0%BA,_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D1%85%D0%BE%D0%B4.jpg",
+      "fullWidth": 2304
+     },
+     "description": "zoological garden in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q2288132",
@@ -432,7 +773,18 @@
      "wikidataId": "Q2288132",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Beograd_-_Stari_Dvor_%2829994124437%29_%28crop%29.jpg/500px-Beograd_-_Stari_Dvor_%2829994124437%29_%28crop%29.jpg",
+      "width": 500,
+      "height": 305,
+      "author": "Fred Romero",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beograd_-_Stari_Dvor_(29994124437)_(crop).jpg",
+      "fullWidth": 2647
+     },
+     "description": "building in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q3048853",
@@ -446,7 +798,18 @@
       "heritage",
       "hotel",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Cafe_kod_znaka_pitanja.png/500px-Cafe_kod_znaka_pitanja.png",
+      "width": 500,
+      "height": 566,
+      "author": "Orjen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cafe_kod_znaka_pitanja.png",
+      "fullWidth": 2034
+     },
+     "description": "tavern in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q167017",
@@ -459,7 +822,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D1%85%D1%80%D0%B0%D0%BC%D0%B0_%D0%A1%D0%B2%D0%B5%D1%82%D0%BE%D0%B3_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3_%D1%83_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%835.jpg/500px-%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D1%85%D1%80%D0%B0%D0%BC%D0%B0_%D0%A1%D0%B2%D0%B5%D1%82%D0%BE%D0%B3_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3_%D1%83_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%835.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Andrija12345678",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D1%85%D1%80%D0%B0%D0%BC%D0%B0_%D0%A1%D0%B2%D0%B5%D1%82%D0%BE%D0%B3_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3_%D1%83_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%835.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Serbian Orthodox church in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q894648",
@@ -471,7 +845,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Jevremovac_glavni_ulaz.JPG/500px-Jevremovac_glavni_ulaz.JPG",
+      "width": 500,
+      "height": 308,
+      "author": "Original uploader was Goldfinger at sr.wikipedia",
+      "license": "CC BY-SA 3.0 rs",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jevremovac_glavni_ulaz.JPG",
+      "fullWidth": 2816
+     },
+     "description": "botanical garden in Belgrade"
     },
     {
      "id": "wikidata/Q383098",
@@ -482,7 +867,18 @@
      "wikidataId": "Q383098",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Ru%C5%BEica_church%2C_Belgrade%2C_Serbia.jpg/500px-Ru%C5%BEica_church%2C_Belgrade%2C_Serbia.jpg",
+      "width": 500,
+      "height": 378,
+      "author": "This image was made by White Writer . Please credit this with : \" White Writer , Wikipedia\" in the immediate vicinity of the image. An email to WhiteWriter would be appreciated too. If you would like special permission to use, license, or purchase the image please contact me WhiteWriter to negotiate terms.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ru%C5%BEica_church,_Belgrade,_Serbia.jpg",
+      "fullWidth": 1184
+     },
+     "description": "church"
     },
     {
      "id": "wikidata/Q1289610",
@@ -493,7 +889,18 @@
      "wikidataId": "Q1289610",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/New_Railway_Bridge_in_Belgrade_at_dusk.JPG/500px-New_Railway_Bridge_in_Belgrade_at_dusk.JPG",
+      "width": 500,
+      "height": 319,
+      "author": "Nenad Bumbić",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_Railway_Bridge_in_Belgrade_at_dusk.JPG",
+      "fullWidth": 2272
+     },
+     "description": "bridge in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q1453036",
@@ -507,7 +914,18 @@
       "road",
       "square",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Trg_Nikole_Pa%C5%A1i%C4%87a%2C_Belgrade.jpg/500px-Trg_Nikole_Pa%C5%A1i%C4%87a%2C_Belgrade.jpg",
+      "width": 500,
+      "height": 234,
+      "author": "Lošmi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trg_Nikole_Pa%C5%A1i%C4%87a,_Belgrade.jpg",
+      "fullWidth": 2560
+     },
+     "description": "square in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q2749462",
@@ -519,7 +937,18 @@
      "wikidataId": "Q2749462",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ofk_Belgrade_stadion.OFK.jpg/500px-Ofk_Belgrade_stadion.OFK.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Vlada Marinković",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ofk_Belgrade_stadion.OFK.jpg",
+      "fullWidth": 603
+     },
+     "description": "Sırbistan'da bir stadyum"
     },
     {
      "id": "wikidata/Q2413641",
@@ -530,7 +959,18 @@
      "wikidataId": "Q2413641",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Rektorat_Beogradskog_univerziteta.jpg/500px-Rektorat_Beogradskog_univerziteta.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Matija",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rektorat_Beogradskog_univerziteta.jpg",
+      "fullWidth": 2048
+     },
+     "description": "building in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q85790521",
@@ -541,7 +981,18 @@
      "wikidataId": "Q85790521",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Po%C5%A1ta_na_%C5%BDelezni%C4%8Dkoj_stanici_u_Beogradu%2C_Momir_Korunovi%C4%87.tif/lossless-page1-500px-Po%C5%A1ta_na_%C5%BDelezni%C4%8Dkoj_stanici_u_Beogradu%2C_Momir_Korunovi%C4%87.tif.png",
+      "width": 500,
+      "height": 353,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Po%C5%A1ta_na_%C5%BDelezni%C4%8Dkoj_stanici_u_Beogradu,_Momir_Korunovi%C4%87.tif",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Po%C5%A1ta_na_%C5%BDelezni%C4%8Dkoj_stanici_u_Beogradu,_Momir_Korunovi%C4%87.tif",
+      "fullWidth": 2704
+     },
+     "description": "post office in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q1278216",
@@ -554,7 +1005,18 @@
       "heritage",
       "musicVenue",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%D0%A1%D0%B0%D0%B2%D0%B0_%D1%86%D0%B5%D0%BD%D1%82%D0%B0%D1%80%2C_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4_%28Sava_centar%2C_Belgrade%2C_Serbia%29.jpg/500px-%D0%A1%D0%B0%D0%B2%D0%B0_%D1%86%D0%B5%D0%BD%D1%82%D0%B0%D1%80%2C_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4_%28Sava_centar%2C_Belgrade%2C_Serbia%29.jpg",
+      "width": 500,
+      "height": 262,
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%B2%D0%B0_%D1%86%D0%B5%D0%BD%D1%82%D0%B0%D1%80,_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4_(Sava_centar,_Belgrade,_Serbia).jpg",
+      "fullWidth": 4946
+     },
+     "description": "event facility in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q1034261",
@@ -566,7 +1028,18 @@
      "kinds": [
       "heritage",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Belgrade_Cooperative%2C_front_view.jpg/500px-Belgrade_Cooperative%2C_front_view.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Pavle Marjanović",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgrade_Cooperative,_front_view.jpg",
+      "fullWidth": 1920
+     },
+     "description": "former co-operative bank building"
     },
     {
      "id": "wikidata/Q18810542",
@@ -577,7 +1050,18 @@
      "wikidataId": "Q18810542",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Novi_dvor_-_panoramio.jpg/500px-Novi_dvor_-_panoramio.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Mister No",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Novi_dvor_-_panoramio.jpg",
+      "fullWidth": 4000
+     },
+     "description": "New Palace, former royal residence of the Karađorđević dynasty of Serbia, later Kingdom of Yugoslavia in Belgrade"
     },
     {
      "id": "wikidata/Q1277048",
@@ -591,7 +1075,18 @@
       "organization",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Atelje_212%2C_Beograd.jpg/500px-Atelje_212%2C_Beograd.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Miljan Simonović",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Atelje_212,_Beograd.jpg",
+      "fullWidth": 3968
+     },
+     "description": "theatre in Belgrade, Serbia"
     },
     {
      "id": "wikidata/Q3685981",
@@ -602,7 +1097,18 @@
      "wikidataId": "Q3685981",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/CrkvaKristaKraljaBeograd.jpg/500px-CrkvaKristaKraljaBeograd.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Lumen roma",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CrkvaKristaKraljaBeograd.jpg",
+      "fullWidth": 1200
+     },
+     "description": "church building in Belgrade, Serbia"
     },
     {
      "id": "way/147080656",
@@ -611,7 +1117,18 @@
      "lat": 44.82335,
      "lon": 20.44972,
      "wikipediaCount": 4,
-     "wikidataId": "Q25464753"
+     "wikidataId": "Q25464753",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/T%C3%BCrbe_Silahdar_Damat_Ali_pasha_Mora_Fatihi_%281%29.JPG/500px-T%C3%BCrbe_Silahdar_Damat_Ali_pasha_Mora_Fatihi_%281%29.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Derzsi Elekes Andor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCrbe_Silahdar_Damat_Ali_pasha_Mora_Fatihi_(1).JPG",
+      "fullWidth": 4320
+     },
+     "description": "ottoman mausoleum"
     },
     {
      "id": "way/40298723",
@@ -620,7 +1137,18 @@
      "lon": 20.44967,
      "address": "Калемегдан доњи град 3",
      "wikipediaCount": 4,
-     "wikidataId": "Q4882647"
+     "wikidataId": "Q4882647",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Belgrade_Planetarium_closeup.jpg/500px-Belgrade_Planetarium_closeup.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nikola Smolenski",
+      "license": "CC BY-SA 3.0 rs",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgrade_Planetarium_closeup.jpg",
+      "fullWidth": 2032
+     },
+     "description": "planetarium in Serbia"
     },
     {
      "id": "node/6956995899",
@@ -628,7 +1156,18 @@
      "lat": 44.8074,
      "lon": 20.49114,
      "wikipediaCount": 3,
-     "wikidataId": "Q25464861"
+     "wikidataId": "Q25464861",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Novo_groblje3.jpg/500px-Novo_groblje3.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "Zavod za spomenike grada Beograda",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Novo_groblje3.jpg",
+      "fullWidth": 3637
+     },
+     "description": "Memorial in Belgrade, Serbia"
     },
     {
      "id": "way/500558777",
@@ -641,7 +1180,17 @@
      "wikidataId": "Q3542246",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Turbe_%C5%A1eih_Mustafe1.jpg/500px-Turbe_%C5%A1eih_Mustafe1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Goldfinger at Serbian Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Turbe_%C5%A1eih_Mustafe1.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Turbe_%C5%A1eih_Mustafe1.jpg",
+      "fullWidth": 2048
+     }
     },
     {
      "id": "node/6604670015",
@@ -649,7 +1198,17 @@
      "lat": 44.79891,
      "lon": 20.47293,
      "wikipediaCount": 2,
-     "wikidataId": "Q89414778"
+     "wikidataId": "Q89414778",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Platan_na_Vra%C4%8Daru.jpg/500px-Platan_na_Vra%C4%8Daru.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Ljiljana Sundać",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru.jpg",
+      "fullWidth": 1836
+     }
     },
     {
      "id": "node/513007181",
@@ -657,7 +1216,18 @@
      "lat": 44.81774,
      "lon": 20.45707,
      "wikipediaCount": 1,
-     "wikidataId": "Q12750768"
+     "wikidataId": "Q12750768",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/DelijskaCesma.jpg/500px-DelijskaCesma.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lumen roma",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:DelijskaCesma.jpg",
+      "fullWidth": 1600
+     },
+     "description": "drinking fountain in Belgrade, Serbia"
     },
     {
      "id": "way/762232854",
@@ -673,22 +1243,21 @@
     {
      "id": "node/1782503081",
      "name": "Обелиск подигнут у спомен прве конференције Покрета несврстаних земаља 1961. у Београду",
-     "lat": 44.81543,
-     "lon": 20.45183,
+     "lat": 44.81541,
+     "lon": 20.45185,
      "wikipediaCount": 1,
-     "wikidataId": "Q85997326"
-    },
-    {
-     "id": "node/625723393",
-     "name": "Остаци замка деспота Стефана Лазаревића",
-     "lat": 44.82403,
-     "lon": 20.44897,
-     "wikipediaCount": 1,
-     "wikidataId": "Q126519889",
-     "kinds": [
-      "noCoordinate",
-      "ruins"
-     ]
+     "wikidataId": "Q85997326",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%BE%D0%B1%D0%B5%D0%BB%D0%B8%D1%81%D0%BA%D0%B0_%D0%BD%D0%B5%D1%81%D0%B2%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%85_%D0%B7%D0%B5%D0%BC%D0%B0%D1%99%D0%B0_%D1%83_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83.jpg/500px-%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%BE%D0%B1%D0%B5%D0%BB%D0%B8%D1%81%D0%BA%D0%B0_%D0%BD%D0%B5%D1%81%D0%B2%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%85_%D0%B7%D0%B5%D0%BC%D0%B0%D1%99%D0%B0_%D1%83_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Andrija12345678",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%98%D0%B5%D1%82%D0%BB%D0%BE%D0%BF%D0%B8%D1%81_%D0%BE%D0%B1%D0%B5%D0%BB%D0%B8%D1%81%D0%BA%D0%B0_%D0%BD%D0%B5%D1%81%D0%B2%D1%80%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%85_%D0%B7%D0%B5%D0%BC%D0%B0%D1%99%D0%B0_%D1%83_%D0%91%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83.jpg",
+      "fullWidth": 3000
+     },
+     "description": "monument in Belgrade, Serbia"
     }
    ]
   },
@@ -710,7 +1279,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/National_Museum_of_Serbia_%28DSC04612%29.jpg/500px-National_Museum_of_Serbia_%28DSC04612%29.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Simon Legner ( User:simon04 )",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Serbia_(DSC04612).jpg",
+      "fullWidth": 5789
+     },
+     "description": "museum in Belgrade, Serbia"
     },
     {
      "id": "node/12845103007",
@@ -726,7 +1306,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Museum_of_Nikola_Tesla%2C_Belgrade%2C_Serbia-cropped.JPG/500px-Museum_of_Nikola_Tesla%2C_Belgrade%2C_Serbia-cropped.JPG",
+      "width": 500,
+      "height": 460,
+      "author": "Museum_of_Nikola_Tesla,_Belgrade,_Serbia.JPG : Rburg87 derivative work: Begoon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Nikola_Tesla,_Belgrade,_Serbia-cropped.JPG",
+      "fullWidth": 2673
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "way/36005092",
@@ -743,7 +1334,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Beograd_-_Muzej_Savremene_Umetnosti_%28MoCAB%29_%28crop%29.jpg/500px-Beograd_-_Muzej_Savremene_Umetnosti_%28MoCAB%29_%28crop%29.jpg",
+      "width": 500,
+      "height": 269,
+      "author": "Fred Romero",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Beograd_-_Muzej_Savremene_Umetnosti_(MoCAB)_(crop).jpg",
+      "fullWidth": 4870
+     },
+     "description": "protected cultural monuments in Serbia"
     },
     {
      "id": "relation/9466610",
@@ -758,7 +1360,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Belgrade_Military_Museum.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bernard Cloutier",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgrade_Military_Museum.jpg",
+      "fullWidth": 450
+     },
+     "description": "military museum in Belgrade"
     },
     {
      "id": "way/38575527",
@@ -774,7 +1387,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Mus%C3%A9e_ethnographique_de_Belgrade.jpg",
+      "width": 500,
+      "height": 528,
+      "author": "Original uploader was en:User:BoskoM at en.wikipedia Own work",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_ethnographique_de_Belgrade.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_ethnographique_de_Belgrade.jpg",
+      "fullWidth": 486
+     },
+     "description": "Sırbistan'ın başkenti Belgrad'da bulunan bir müze"
     },
     {
      "id": "way/38575518",
@@ -789,7 +1413,18 @@
      "wikidataId": "Q2338245",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Konak_kneginje_Ljubice_2.jpg/500px-Konak_kneginje_Ljubice_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Djordje Stakić",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Konak_kneginje_Ljubice_2.jpg",
+      "fullWidth": 2592
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "node/12733039095",
@@ -803,7 +1438,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Museum_of_Vuk_and_Dositej%2C_Belgrade%2C_Serbia.jpg/500px-Museum_of_Vuk_and_Dositej%2C_Belgrade%2C_Serbia.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lumen roma",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Vuk_and_Dositej,_Belgrade,_Serbia.jpg",
+      "fullWidth": 1600
+     },
+     "description": "historic house museum in Belgrade, Serbia"
     },
     {
      "id": "way/1068349390",
@@ -814,7 +1460,18 @@
      "wikidataId": "Q4048811",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Monitor_Sava_-_05.jpg/500px-Monitor_Sava_-_05.jpg",
+      "width": 500,
+      "height": 318,
+      "author": "Srđan Popović",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monitor_Sava_-_05.jpg",
+      "fullWidth": 4752
+     },
+     "description": "Yugoslav (ex-Austrian) river monitor"
     },
     {
      "id": "node/1970813761",
@@ -830,7 +1487,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98.JPG/500px-%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Свифт/Svift",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98.JPG",
+      "fullWidth": 4608
+     },
+     "description": "railway museum in Belgrade, Serbia"
     },
     {
      "id": "way/295106065",
@@ -843,7 +1511,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Zgrada_biblioteka_i_muzeja_grada_Beograda_02.jpg/500px-Zgrada_biblioteka_i_muzeja_grada_Beograda_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nikolina Šepić",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Zgrada_biblioteka_i_muzeja_grada_Beograda_02.jpg",
+      "fullWidth": 2592
+     },
+     "description": "Şehir Müzesi"
     },
     {
      "id": "node/9282405523",
@@ -858,7 +1537,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%D0%9C%D1%83%D0%B7%D0%B5%D1%98_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%9A%D0%B5%D0%BD%D0%B5_%D1%83%D0%BC%D0%B5%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8.JPG/500px-%D0%9C%D1%83%D0%B7%D0%B5%D1%98_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%9A%D0%B5%D0%BD%D0%B5_%D1%83%D0%BC%D0%B5%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "PedjaNbg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D1%98_%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%9A%D0%B5%D0%BD%D0%B5_%D1%83%D0%BC%D0%B5%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8.JPG",
+      "fullWidth": 3264
+     },
+     "description": "museum in Belgrade, Serbia"
     },
     {
      "id": "way/148731081",
@@ -871,7 +1561,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/%D0%9C%D0%B0%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BA%D1%83%D1%9B%D0%B0.JPG/500px-%D0%9C%D0%B0%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BA%D1%83%D1%9B%D0%B0.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "PedjaNbg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BA%D1%83%D1%9B%D0%B0.JPG",
+      "fullWidth": 3264
+     },
+     "description": "house in Serbia"
     },
     {
      "id": "node/3964096674",
@@ -887,7 +1588,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Zgrada_Muzeja_Ive_Andri%C4%87a.jpg/500px-Zgrada_Muzeja_Ive_Andri%C4%87a.jpg",
+      "width": 500,
+      "height": 864,
+      "author": "Nanabaka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Zgrada_Muzeja_Ive_Andri%C4%87a.jpg",
+      "fullWidth": 1551
+     },
+     "description": "historic house museum in Belgrade, Serbia"
     },
     {
      "id": "way/156517275",
@@ -900,7 +1612,18 @@
      "wikidataId": "Q2879923",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Hamam_kneza_Milo%C5%A1a_u_Beogradu.jpg/500px-Hamam_kneza_Milo%C5%A1a_u_Beogradu.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Sinobador",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamam_kneza_Milo%C5%A1a_u_Beogradu.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Turkish bath or hammam (amam) is a Middle Eastern type of steam bath sauna"
     },
     {
      "id": "way/644483218",
@@ -914,7 +1637,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D1%98%D0%B0%D0%BB%D0%BD%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98_%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B5_%D0%B8_%D0%A0%D0%B0%D1%81%D1%82%D0%BA%D0%B0_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%9B%D0%B0_2012-09-02_14-50-46.jpg/500px-%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D1%98%D0%B0%D0%BB%D0%BD%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98_%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B5_%D0%B8_%D0%A0%D0%B0%D1%81%D1%82%D0%BA%D0%B0_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%9B%D0%B0_2012-09-02_14-50-46.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "vygr",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D1%98%D0%B0%D0%BB%D0%BD%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98_%D0%9D%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B5_%D0%B8_%D0%A0%D0%B0%D1%81%D1%82%D0%BA%D0%B0_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%9B%D0%B0_2012-09-02_14-50-46.jpg",
+      "fullWidth": 1936
+     },
+     "description": "museum in Belgrade, Serbia"
     },
     {
      "id": "way/951239732",
@@ -927,7 +1661,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Nekada%C5%A1nja_Realka.jpg/500px-Nekada%C5%A1nja_Realka.jpg",
+      "width": 500,
+      "height": 315,
+      "author": "Irvaas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nekada%C5%A1nja_Realka.jpg",
+      "fullWidth": 3342
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "node/8553774910",
@@ -942,7 +1687,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/%D0%91%D0%BE%D0%B6%D0%B8%D1%9B%D0%B5%D0%B2%D0%B0_%D0%BA%D1%83%D1%9B%D0%B0%2C_%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D0%B0%D1%80_%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%BE%D0%B2%D0%B0_19.JPG/500px-%D0%91%D0%BE%D0%B6%D0%B8%D1%9B%D0%B5%D0%B2%D0%B0_%D0%BA%D1%83%D1%9B%D0%B0%2C_%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D0%B0%D1%80_%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%BE%D0%B2%D0%B0_19.JPG",
+      "width": 500,
+      "height": 281,
+      "author": "Stolica",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B6%D0%B8%D1%9B%D0%B5%D0%B2%D0%B0_%D0%BA%D1%83%D1%9B%D0%B0,_%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D0%B0%D1%80_%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%BE%D0%B2%D0%B0_19.JPG",
+      "fullWidth": 1920
+     },
+     "description": "art museum in Belgrade, Serbia"
     },
     {
      "id": "way/238589774",
@@ -956,7 +1712,18 @@
      "wikidataId": "Q16086766",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/%D0%94%D0%BE%D0%BC_%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D1%80%D1%83%D1%98%D0%B8%D1%9B%D0%B0_2012-09-12_18-51-16.jpg/500px-%D0%94%D0%BE%D0%BC_%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D1%80%D1%83%D1%98%D0%B8%D1%9B%D0%B0_2012-09-12_18-51-16.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "dejandanailov",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BC_%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D1%80%D1%83%D1%98%D0%B8%D1%9B%D0%B0_2012-09-12_18-51-16.jpg",
+      "fullWidth": 2048
+     },
+     "description": "house in Serbia"
     },
     {
      "id": "node/6641661388",
@@ -971,7 +1738,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D1%98%D1%81%D0%BA%D0%B8_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%98%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98.JPG/500px-%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D1%98%D1%81%D0%BA%D0%B8_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%98%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "PedjaNbg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D1%98%D1%81%D0%BA%D0%B8_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%98%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D1%98.JPG",
+      "fullWidth": 3264
+     },
+     "description": "Jewish museum in Belgrade, Serbia"
     },
     {
      "id": "node/5118266792",
@@ -986,7 +1764,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Palmoticeva_prosvetljena-1.jpg/500px-Palmoticeva_prosvetljena-1.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jakša Vlahović",
+      "license": "CC BY-SA 3.0 rs",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Palmoticeva_prosvetljena-1.jpg",
+      "fullWidth": 7601
+     },
+     "description": "national museum in Serbia"
     },
     {
      "id": "node/635725488",
@@ -1001,7 +1790,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Historical_Museum_of_Serbia.jpg/500px-Historical_Museum_of_Serbia.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Oop",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Historical_Museum_of_Serbia.jpg",
+      "fullWidth": 3648
+     },
+     "description": "history museum in Belgrade, Serbia"
     },
     {
      "id": "node/3964539357",
@@ -1014,7 +1814,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Muzej_Paje_Jovanovi%C4%87a.jpg/500px-Muzej_Paje_Jovanovi%C4%87a.jpg",
+      "width": 500,
+      "height": 929,
+      "author": "Nanabaka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzej_Paje_Jovanovi%C4%87a.jpg",
+      "fullWidth": 1578
+     },
+     "description": "memorial museum in Belgrade, Serbia"
     },
     {
      "id": "way/393169188",
@@ -1030,7 +1841,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Museum_of_Illusions%2C_Belgrade%2C_Serbia.jpg/500px-Museum_of_Illusions%2C_Belgrade%2C_Serbia.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Gmihail at Serbian Wikipedia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Illusions,_Belgrade,_Serbia.jpg",
+      "fullWidth": 2616
+     },
+     "description": "museum in Belgrade"
     },
     {
      "id": "node/12856427759",
@@ -1044,7 +1866,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Ku%C4%87a_u_kojoj_je_%C5%BEiveo_Jovan_Cviji%C4%87.JPG/500px-Ku%C4%87a_u_kojoj_je_%C5%BEiveo_Jovan_Cviji%C4%87.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Goldfinger at Serbian Wikipedia .",
+      "license": "CC BY-SA 3.0 rs",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ku%C4%87a_u_kojoj_je_%C5%BEiveo_Jovan_Cviji%C4%87.JPG",
+      "fullWidth": 2816
+     },
+     "description": "museum in Belgrade, Serbia"
     },
     {
      "id": "way/117826481",
@@ -1058,7 +1891,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Muzej_nauke_i_tehnike_Beograd.jpg/500px-Muzej_nauke_i_tehnike_Beograd.jpg",
+      "width": 500,
+      "height": 245,
+      "author": "Nanabaka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzej_nauke_i_tehnike_Beograd.jpg",
+      "fullWidth": 3108
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "node/7227511386",
@@ -1074,7 +1918,18 @@
       "farFromItem",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Muzej_%C4%8Dokolade_u_Beogradu_01.jpg/500px-Muzej_%C4%8Dokolade_u_Beogradu_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nikolina Šepić",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzej_%C4%8Dokolade_u_Beogradu_01.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "node/4984279821",
@@ -1088,7 +1943,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Zepter_Muzej_-_Knez_Mihailova_%2813807537953%29.jpg/500px-Zepter_Muzej_-_Knez_Mihailova_%2813807537953%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Jorge Láscar from Melbourne, Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Zepter_Muzej_-_Knez_Mihailova_(13807537953).jpg",
+      "fullWidth": 4288
+     },
+     "description": "art museum in Belgrade, Serbia"
     },
     {
      "id": "way/400120133",
@@ -1104,7 +1970,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Muzej_Tome_Rosandi%C4%87a_3.jpg/500px-Muzej_Tome_Rosandi%C4%87a_3.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dungodung",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzej_Tome_Rosandi%C4%87a_3.jpg",
+      "fullWidth": 4000
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "way/394705986",
@@ -1118,7 +1995,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Muzej_Srpske_pravoslavne_crkve_01.jpg/500px-Muzej_Srpske_pravoslavne_crkve_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nikolina Šepić",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzej_Srpske_pravoslavne_crkve_01.jpg",
+      "fullWidth": 4032
+     },
+     "description": "museum in Belgrade, Serbia"
     },
     {
      "id": "way/51547051",
@@ -1131,7 +2019,17 @@
       "adminArea",
       "heritage",
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Big_Barutana_Belgrade_Fortress.IMG_3653.jpg/500px-Big_Barutana_Belgrade_Fortress.IMG_3653.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Intermedichbo - Milorad Dimic M.D.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Big_Barutana_Belgrade_Fortress.IMG_3653.jpg",
+      "fullWidth": 3264
+     }
     },
     {
      "id": "node/6060747673",
@@ -1144,7 +2042,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%D0%9C%D1%83%D0%B7%D0%B5%D1%98_%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE%D1%82%D0%B5%D0%BA%D0%B5.JPG/500px-%D0%9C%D1%83%D0%B7%D0%B5%D1%98_%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE%D1%82%D0%B5%D0%BA%D0%B5.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "PedjaNbg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D1%98_%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE%D1%82%D0%B5%D0%BA%D0%B5.JPG",
+      "fullWidth": 1200
+     },
+     "description": "museum in Serbia"
     },
     {
      "id": "way/40298269",
@@ -1160,7 +2069,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/KalemegdanGalery.JPG/500px-KalemegdanGalery.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Vladimir Alic User:Laessig",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KalemegdanGalery.JPG",
+      "fullWidth": 3072
+     },
+     "description": "gallery in Belgrade"
     },
     {
      "id": "node/486262441",
@@ -1175,7 +2095,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Serbia_Beograd_SANU_-_Feb_2006.jpg/500px-Serbia_Beograd_SANU_-_Feb_2006.jpg",
+      "width": 500,
+      "height": 468,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Serbia_Beograd_SANU_-_Feb_2006.jpg",
+      "fullWidth": 820
+     },
+     "description": "gallery in Belgrade"
     },
     {
      "id": "way/392648762",
@@ -1191,7 +2122,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Galerija_fresaka%2C_Beograd%2C_01.jpg/500px-Galerija_fresaka%2C_Beograd%2C_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mickey Mystique",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galerija_fresaka,_Beograd,_01.jpg",
+      "fullWidth": 4896
+     },
+     "description": "museum institution in Belgrade"
     },
     {
      "id": "node/8231580066",
@@ -1206,7 +2148,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Serbia"
     },
     {
      "id": "node/6432984189",
@@ -1221,7 +2164,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Belgrade"
     },
     {
      "id": "node/12854321413",
@@ -1234,7 +2178,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Galerija_Artget_02.jpg/500px-Galerija_Artget_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nikolina Šepić",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galerija_Artget_02.jpg",
+      "fullWidth": 4032
+     },
+     "description": "gallery in Belgrade"
     },
     {
      "id": "way/1151245384",
@@ -1247,7 +2202,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Belgrade"
     },
     {
      "id": "node/12854321463",
@@ -1260,7 +2216,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Gallery_of_Science_and_Technology%2C_Serbian_Academy_of_Sciences_and_Arts.IMG_5227.jpg/500px-Gallery_of_Science_and_Technology%2C_Serbian_Academy_of_Sciences_and_Arts.IMG_5227.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Intermedichbo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gallery_of_Science_and_Technology,_Serbian_Academy_of_Sciences_and_Arts.IMG_5227.jpg",
+      "fullWidth": 3264
+     },
+     "description": "gallery in Belgrade"
     },
     {
      "id": "node/4290466289",
@@ -1273,22 +2240,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
-    },
-    {
-     "id": "node/6740303785",
-     "name": "Галерија РТС-а",
-     "lat": 44.81181,
-     "lon": 20.46981,
-     "address": "Таковска 10",
-     "website": "https://www.rts.rs/page/rts/ci/galerija-rts/news/2060/galerija-rts.html",
-     "wikipediaCount": 1,
-     "wikidataId": "Q25463469",
-     "kinds": [
-      "business",
-      "museum",
-      "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Interior_-_Petar_Dobrovi%C4%87_Gallery.jpg/500px-Interior_-_Petar_Dobrovi%C4%87_Gallery.jpg",
+      "width": 500,
+      "height": 368,
+      "author": "This image was made by Sadko . Please credit this with: \"Sadko, Wikipedia\" in the immediate vicinity of the image. A message to me would be appreciated as well. If you wish to use, license, or buy the image, please contact me to discuss terms. More of my work can be found in my personal gallery .",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Interior_-_Petar_Dobrovi%C4%87_Gallery.jpg",
+      "fullWidth": 2015
+     },
+     "description": "legacy gallery in Serbia"
     }
    ]
   },
@@ -1550,6 +2513,17 @@
      "detailed": true
     },
     {
+     "id": "node/5624228821",
+     "name": "Kod Vijetnamca",
+     "lat": 44.8232,
+     "lon": 20.46317,
+     "address": "Капетан Мишина 37",
+     "website": "https://kodvijetnamca.rs/",
+     "openingHours": "Tu-Sa 10:00-22:00; Su 10:00-21:00; Mo 11:00-22:00",
+     "cuisine": "vietnamese",
+     "detailed": true
+    },
+    {
      "id": "node/12037933684",
      "name": "KP Burgers",
      "lat": 44.80783,
@@ -1610,17 +2584,6 @@
      "website": "http://www.trattoriakosava.com/",
      "openingHours": "Mo-Th 10:00-24:00, Fr,Sa 10:00-01:00",
      "cuisine": "italian",
-     "detailed": true
-    },
-    {
-     "id": "node/5624228821",
-     "name": "Marukoshi",
-     "lat": 44.8232,
-     "lon": 20.46317,
-     "address": "Капетан Мишина 37",
-     "website": "https://marukoshi.rs/",
-     "openingHours": "Tu-Su 11:00-23:00",
-     "cuisine": "japanese",
      "detailed": true
     },
     {
@@ -1735,28 +2698,6 @@
      "website": "https://junebelgrade.com/",
      "openingHours": "Mo-Su 09:00-22:00",
      "cuisine": "breakfast, lunch",
-     "detailed": true
-    },
-    {
-     "id": "node/11731527369",
-     "name": "Kofilin",
-     "lat": 44.8089,
-     "lon": 20.46439,
-     "address": "Кнеза Милоша 15",
-     "website": "https://kofilinsrbija.com/",
-     "openingHours": "Mo-Sa 08:00-21:00; Su 09:00-21:00",
-     "cuisine": "coffee shop, russian",
-     "detailed": true
-    },
-    {
-     "id": "node/12324250962",
-     "name": "Kofilin",
-     "lat": 44.79818,
-     "lon": 20.48249,
-     "address": "Цара Николаја II 77",
-     "website": "https://kofilinsrbija.com/",
-     "openingHours": "Mo-Fr 07:30-21:00; Sa 08:00-21:00; Su 09:00-21:00",
-     "cuisine": "coffee shop",
      "detailed": true
     },
     {
@@ -1955,13 +2896,35 @@
      "detailed": true
     },
     {
-     "id": "node/5296256922",
-     "name": "Мандарина",
-     "lat": 44.81748,
-     "lon": 20.4545,
-     "website": "https://mandarinacakeshop.rs/",
-     "openingHours": "Mo-Su 09:00-21:00",
-     "cuisine": "cake",
+     "id": "node/9091313074",
+     "name": "Кофилин",
+     "lat": 44.81539,
+     "lon": 20.45587,
+     "website": "https://kofilinsrbija.com/",
+     "openingHours": "Mo-Fr 07:30-21:00; Sa 08:00-21:00; Su 09:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/11731527369",
+     "name": "Кофилин",
+     "lat": 44.8089,
+     "lon": 20.46439,
+     "address": "Кнеза Милоша 15",
+     "website": "https://kofilinsrbija.com/",
+     "openingHours": "Mo-Sa 08:00-21:00; Su 09:00-21:00",
+     "cuisine": "coffee shop, russian",
+     "detailed": true
+    },
+    {
+     "id": "node/11953439881",
+     "name": "Кофилин",
+     "lat": 44.82332,
+     "lon": 20.46051,
+     "address": "Цара Душана 29",
+     "website": "https://kofilinsrbija.com/",
+     "openingHours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-22:00",
+     "cuisine": "coffee shop",
      "detailed": true
     }
    ]
@@ -2455,7 +3418,8 @@
      "lat": 44.81805,
      "lon": 20.46554,
      "address": "Цетињска 15",
-     "wikidataId": "Q65198753"
+     "wikidataId": "Q65198753",
+     "description": "Serbian music club"
     },
     {
      "id": "node/5284374321",

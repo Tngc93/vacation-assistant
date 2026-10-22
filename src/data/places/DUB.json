@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "DUB",
- "fetchedAt": "2026-10-18T16:33:02.053Z",
+ "fetchedAt": "2026-10-22T05:46:48.809Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -52,7 +52,18 @@
      "wikidataId": "Q244402",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Dublin_aviva_stadium.jpg/500px-Dublin_aviva_stadium.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_aviva_stadium.jpg",
+      "fullWidth": 5000
+     },
+     "description": "football and rugby stadium in Dublin"
     },
     {
      "id": "way/350242806",
@@ -68,7 +79,18 @@
      "kinds": [
       "adminArea",
       "castle"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Dublin_castle.JPG",
+      "width": 500,
+      "height": 345,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Dublin_castle.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_castle.JPG",
+      "fullWidth": 348
+     },
+     "description": "castle"
     },
     {
      "id": "wikidata/Q478225",
@@ -79,7 +101,18 @@
      "wikidataId": "Q478225",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Croke_Park_from_the_Hill_-_2004_All-Ireland_Football_Championship_Final.jpg/500px-Croke_Park_from_the_Hill_-_2004_All-Ireland_Football_Championship_Final.jpg",
+      "width": 500,
+      "height": 165,
+      "author": "Photograph by John H. Nolan; original uploader was Hetch at en.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Croke_Park_from_the_Hill_-_2004_All-Ireland_Football_Championship_Final.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Croke_Park_from_the_Hill_-_2004_All-Ireland_Football_Championship_Final.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Dublin, İrlanda'da spor tesisi"
     },
     {
      "id": "way/43981182",
@@ -94,7 +127,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/St_Patrick%27s_Cathedral_Exterior%2C_Dublin%2C_Ireland_-_Diliff.jpg/500px-St_Patrick%27s_Cathedral_Exterior%2C_Dublin%2C_Ireland_-_Diliff.jpg",
+      "width": 500,
+      "height": 301,
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Patrick%27s_Cathedral_Exterior,_Dublin,_Ireland_-_Diliff.jpg",
+      "fullWidth": 9000
+     },
+     "description": "cathedral in Dublin, Ireland"
     },
     {
      "id": "way/231082840",
@@ -110,7 +154,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/National_Library_of_Ireland_2011.JPG/500px-National_Library_of_Ireland_2011.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "YvonneM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Library_of_Ireland_2011.JPG",
+      "fullWidth": 4320
+     },
+     "description": "heritage institution"
     },
     {
      "id": "way/96578181",
@@ -121,7 +176,18 @@
      "wikidataId": "Q1134365",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/The_Spire.jpg/500px-The_Spire.jpg",
+      "width": 500,
+      "height": 364,
+      "author": "Almbauer",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Spire.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Spire.jpg",
+      "fullWidth": 3515
+     },
+     "description": "monument in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q247595",
@@ -133,7 +199,18 @@
      "kinds": [
       "office",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/20130810_dublin214.JPG/500px-20130810_dublin214.JPG",
+      "width": 500,
+      "height": 335,
+      "author": "Jean Housen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20130810_dublin214.JPG",
+      "fullWidth": 3872
+     },
+     "description": "building housing the parliament of Ireland"
     },
     {
      "id": "way/27291101",
@@ -147,7 +224,18 @@
      "wikidataId": "Q1067803",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Christ_Church_Cathedral_%28Dublin%29.jpg/500px-Christ_Church_Cathedral_%28Dublin%29.jpg",
+      "width": 500,
+      "height": 551,
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Christ_Church_Cathedral_(Dublin).jpg",
+      "fullWidth": 2447
+     },
+     "description": "Diocesan cathedral of Dublin and Glendalough, Church of Ireland"
     },
     {
      "id": "node/429638456",
@@ -162,7 +250,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Trinity_college_library.jpg/500px-Trinity_college_library.jpg",
+      "width": 500,
+      "height": 262,
+      "author": "Patrick Theiner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trinity_college_library.jpg",
+      "fullWidth": 3845
+     },
+     "description": "library in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q1432605",
@@ -170,7 +269,18 @@
      "lat": 53.33806,
      "lon": -6.25917,
      "wikipediaCount": 27,
-     "wikidataId": "Q1432605"
+     "wikidataId": "Q1432605",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Dublin_Stephen%27s_Green-44_edit.jpg/500px-Dublin_Stephen%27s_Green-44_edit.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Dronepicr (edited by King of Hearts ) Edit corrects CA and sharpens image",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_Stephen%27s_Green-44_edit.jpg",
+      "fullWidth": 3989
+     },
+     "description": "public park in central Dublin, Ireland"
     },
     {
      "id": "wikidata/Q2482",
@@ -183,7 +293,18 @@
      "kinds": [
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Jameson_Collection.jpg/500px-Jameson_Collection.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Iceman7840",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jameson_Collection.jpg",
+      "fullWidth": 1024
+     },
+     "description": "single distillery Irish whiskey"
     },
     {
      "id": "wikidata/Q1193916",
@@ -194,7 +315,18 @@
      "wikidataId": "Q1193916",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/The_Samuel_Beckett_Bridge.jpg/500px-The_Samuel_Beckett_Bridge.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "William Murphy",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Samuel_Beckett_Bridge.jpg",
+      "fullWidth": 2640
+     },
+     "description": "cable-stayed bridge in Dublin, Ireland"
     },
     {
      "id": "relation/289528",
@@ -207,7 +339,18 @@
      "wikidataId": "Q1339254",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/General_Post_Office_Dublin_20060803.jpg/500px-General_Post_Office_Dublin_20060803.jpg",
+      "width": 500,
+      "height": 351,
+      "author": "Copyright © 2006 Kaihsu Tai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:General_Post_Office_Dublin_20060803.jpg",
+      "fullWidth": 1444
+     },
+     "description": "building in Dublin"
     },
     {
      "id": "wikidata/Q1439960",
@@ -215,7 +358,18 @@
      "lat": 53.34594,
      "lon": -6.27354,
      "wikipediaCount": 21,
-     "wikidataId": "Q1439960"
+     "wikidataId": "Q1439960",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Fourcourtsquays.JPG/500px-Fourcourtsquays.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Jtdirl at en.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Fourcourtsquays.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fourcourtsquays.JPG",
+      "fullWidth": 512
+     },
+     "description": "Major court complex in Dublin, Ireland"
     },
     {
      "id": "node/2986012929",
@@ -227,7 +381,18 @@
      "kinds": [
       "adminArea",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/TempleBar.JPG/500px-TempleBar.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:TempleBar.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:TempleBar.JPG",
+      "fullWidth": 1200
+     },
+     "description": "neighbourhood of Dublin in Ireland"
     },
     {
      "id": "way/399007550",
@@ -239,7 +404,18 @@
      "wikidataId": "Q1034624",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/HalfPennyBridge.jpg/500px-HalfPennyBridge.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:HalfPennyBridge.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:HalfPennyBridge.jpg",
+      "fullWidth": 1600
+     },
+     "description": "footbridge over the River Liffey, Dublin, Ireland"
     },
     {
      "id": "wikidata/Q1158113",
@@ -250,7 +426,18 @@
      "wikidataId": "Q1158113",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Bohemians-Football-Club-Dalymount-Park-Entrance-2012.JPG/500px-Bohemians-Football-Club-Dalymount-Park-Entrance-2012.JPG",
+      "width": 500,
+      "height": 385,
+      "author": "Bjørn Christian Tørrissen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bohemians-Football-Club-Dalymount-Park-Entrance-2012.JPG",
+      "fullWidth": 4198
+     },
+     "description": "football stadium in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q220027",
@@ -262,7 +449,18 @@
      "kinds": [
       "attraction",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Old_Entrance_Lodge_Dublin_Zoo_-_geograph.org.uk_-_493429.jpg/500px-Old_Entrance_Lodge_Dublin_Zoo_-_geograph.org.uk_-_493429.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Harold Strong",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_Entrance_Lodge_Dublin_Zoo_-_geograph.org.uk_-_493429.jpg",
+      "fullWidth": 640
+     },
+     "description": "zoo"
     },
     {
      "id": "wikidata/Q1190487",
@@ -273,7 +471,18 @@
      "wikidataId": "Q1190487",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/O%27Connell_Street_from_Nelson%27s_Pillar_in_1964.jpg/500px-O%27Connell_Street_from_Nelson%27s_Pillar_in_1964.jpg",
+      "width": 500,
+      "height": 755,
+      "author": "Phillip Capper from Wellington, New Zealand",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:O%27Connell_Street_from_Nelson%27s_Pillar_in_1964.jpg",
+      "fullWidth": 526
+     },
+     "description": "road in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q2543742",
@@ -285,7 +494,18 @@
      "kinds": [
       "office",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Dublin_Connolly_railway_station_2006.jpg/500px-Dublin_Connolly_railway_station_2006.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Kaihsu Tai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_Connolly_railway_station_2006.jpg",
+      "fullWidth": 1760
+     },
+     "description": "Train station in Dublin City Centre"
     },
     {
      "id": "way/269121322",
@@ -301,7 +521,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Academy_House.jpg/500px-Academy_House.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "KarenRIA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Academy_House.jpg",
+      "fullWidth": 3872
+     },
+     "description": "academy of sciences"
     },
     {
      "id": "wikidata/Q2658249",
@@ -312,7 +543,18 @@
      "wikidataId": "Q2658249",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Dublin_-_Pearse_St._Station_-_110507_175228.jpg/500px-Dublin_-_Pearse_St._Station_-_110507_175228.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_-_Pearse_St._Station_-_110507_175228.jpg",
+      "fullWidth": 3617
+     },
+     "description": "railway station in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q135501",
@@ -323,7 +565,18 @@
      "wikidataId": "Q135501",
      "kinds": [
       "road"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Grafton_St%2C_Dublin.jpg/500px-Grafton_St%2C_Dublin.jpg",
+      "width": 500,
+      "height": 360,
+      "author": "Donaldytong",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grafton_St,_Dublin.jpg",
+      "fullWidth": 2238
+     },
+     "description": "road in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q945154",
@@ -334,7 +587,18 @@
      "wikidataId": "Q945154",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/James_Joyce_Bridge.jpg/500px-James_Joyce_Bridge.jpg",
+      "width": 500,
+      "height": 244,
+      "author": "self",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:James_Joyce_Bridge.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:James_Joyce_Bridge.jpg",
+      "fullWidth": 3072
+     },
+     "description": "bridge in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q1899515",
@@ -343,7 +607,18 @@
      "lat": 53.3475,
      "lon": -6.22861,
      "wikipediaCount": 16,
-     "wikidataId": "Q1899515"
+     "wikidataId": "Q1899515",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/The_O2%2C_Dublin_-_geograph.org.uk_-_1670682.jpg/500px-The_O2%2C_Dublin_-_geograph.org.uk_-_1670682.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "JP",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_O2,_Dublin_-_geograph.org.uk_-_1670682.jpg",
+      "fullWidth": 640
+     },
+     "description": "indoor amphitheater in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q1798235",
@@ -355,7 +630,18 @@
      "wikidataId": "Q1798235",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/St._Mary%E2%80%99s_Pro-Cathedral%2C_Dublin_2023_%282%29.jpg/500px-St._Mary%E2%80%99s_Pro-Cathedral%2C_Dublin_2023_%282%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "MOs810",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Mary%E2%80%99s_Pro-Cathedral,_Dublin_2023_(2).jpg",
+      "fullWidth": 4608
+     },
+     "description": "church in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q2377845",
@@ -366,7 +652,18 @@
      "wikidataId": "Q2377845",
      "kinds": [
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Dublin_Heuston_railway_station_-_2025-11-23.jpg/500px-Dublin_Heuston_railway_station_-_2025-11-23.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_Heuston_railway_station_-_2025-11-23.jpg",
+      "fullWidth": 5712
+     },
+     "description": "railway station in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q924750",
@@ -379,7 +676,18 @@
      "kinds": [
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Dublin_Mosque.jpg/500px-Dublin_Mosque.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "User:Niaz",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_Mosque.jpg",
+      "fullWidth": 2448
+     },
+     "description": "mosque in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q630780",
@@ -390,7 +698,18 @@
      "wikidataId": "Q630780",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/FAI_green_door.jpg/500px-FAI_green_door.jpg",
+      "width": 500,
+      "height": 720,
+      "author": "No machine-readable author provided. Jnestorius assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:FAI_green_door.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:FAI_green_door.jpg",
+      "fullWidth": 1608
+     },
+     "description": "Georgian garden square on the southside of Dublin city centre"
     },
     {
      "id": "wikidata/Q1766409",
@@ -401,7 +720,18 @@
      "wikidataId": "Q1766409",
      "kinds": [
       "bridge"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/OConnellBridgeDublin.jpg/500px-OConnellBridgeDublin.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Thpohl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:OConnellBridgeDublin.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:OConnellBridgeDublin.jpg",
+      "fullWidth": 2288
+     },
+     "description": "bridge in Ireland"
     },
     {
      "id": "way/44597908",
@@ -416,7 +746,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Brew_%288117292615%29.jpg/500px-Brew_%288117292615%29.jpg",
+      "width": 500,
+      "height": 361,
+      "author": "psyberartist",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brew_(8117292615).jpg",
+      "fullWidth": 2834
+     },
+     "description": "Museum and visitor attraction in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q585698",
@@ -428,7 +769,18 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gaiety_Theatre%2C_Dublin.JPG/500px-Gaiety_Theatre%2C_Dublin.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "DubhEire",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gaiety_Theatre,_Dublin.JPG",
+      "fullWidth": 3072
+     },
+     "description": "theater building in Dublin, Republic of Ireland"
     },
     {
      "id": "wikidata/Q2662776",
@@ -436,7 +788,18 @@
      "lat": 53.34472,
      "lon": -6.26,
      "wikipediaCount": 12,
-     "wikidataId": "Q2662776"
+     "wikidataId": "Q2662776",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Houses_of_Parliament-Bank_of_Ireland_1.jpg/500px-Houses_of_Parliament-Bank_of_Ireland_1.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Neeku Shamekhi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Houses_of_Parliament-Bank_of_Ireland_1.jpg",
+      "fullWidth": 4928
+     },
+     "description": "former building housing the Parliament of Ireland"
     },
     {
      "id": "wikidata/Q2421553",
@@ -447,7 +810,18 @@
      "wikidataId": "Q2421553",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Tolka_Park_Dublin.jpg",
+      "width": 500,
+      "height": 270,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tolka_Park_Dublin.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tolka_Park_Dublin.jpg",
+      "fullWidth": 450
+     },
+     "description": "football stadium in Dublin, Ireland"
     },
     {
      "id": "way/60270053",
@@ -458,7 +832,18 @@
      "website": "https://www.theccd.ie/",
      "openingHours": "Mo-Th 08:30-17:00; Fr 08:30-16:30",
      "wikipediaCount": 11,
-     "wikidataId": "Q3916709"
+     "wikidataId": "Q3916709",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/CCD_June2010.jpg/500px-CCD_June2010.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "Phedra",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CCD_June2010.jpg",
+      "fullWidth": 1772
+     },
+     "description": "national convention centre located in the Docklands of Dublin, Ireland"
     },
     {
      "id": "wikidata/Q728893",
@@ -470,7 +855,37 @@
      "kinds": [
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Dublin_Ireland_Gate_Theater_2009-09-27.JPG/500px-Dublin_Ireland_Gate_Theater_2009-09-27.JPG",
+      "width": 500,
+      "height": 326,
+      "author": "Sir James",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_Ireland_Gate_Theater_2009-09-27.JPG",
+      "fullWidth": 3628
+     },
+     "description": "theatre in Dublin, Ireland"
+    },
+    {
+     "id": "node/5968488535",
+     "name": "Hungry Tree",
+     "lat": 53.35213,
+     "lon": -6.27305,
+     "wikipediaCount": 11,
+     "wikidataId": "Q56867887",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hungry_Tree_at_King%E2%80%99s_Inns%2C_Dublin-17565181402.jpg/500px-Hungry_Tree_at_King%E2%80%99s_Inns%2C_Dublin-17565181402.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "William Murphy",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hungry_Tree_at_King%E2%80%99s_Inns,_Dublin-17565181402.jpg",
+      "fullWidth": 6000
+     },
+     "description": "tree in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q383752",
@@ -481,7 +896,18 @@
      "wikidataId": "Q383752",
      "kinds": [
       "residence"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Mansion_House_Dublin.crop.JPG/500px-Mansion_House_Dublin.crop.JPG",
+      "width": 500,
+      "height": 445,
+      "author": "YvonneM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mansion_House_Dublin.crop.JPG",
+      "fullWidth": 2996
+     },
+     "description": "building in Dublin, Ireland"
     },
     {
      "id": "wikidata/Q917842",
@@ -492,7 +918,18 @@
      "wikidataId": "Q917842",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Mountjoy_Prison.jpg/500px-Mountjoy_Prison.jpg",
+      "width": 500,
+      "height": 311,
+      "author": "HNS",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mountjoy_Prison.jpg",
+      "fullWidth": 636
+     },
+     "description": "prison in Ireland"
     },
     {
      "id": "wikidata/Q7493317",
@@ -505,15 +942,18 @@
       "business",
       "hotel",
       "organization"
-     ]
-    },
-    {
-     "id": "node/5968488535",
-     "name": "Hungry Tree",
-     "lat": 53.35213,
-     "lon": -6.27305,
-     "wikipediaCount": 10,
-     "wikidataId": "Q56867887"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shelbourne%2C-Dublin.jpg/500px-Shelbourne%2C-Dublin.jpg",
+      "width": 500,
+      "height": 473,
+      "author": "Type17",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shelbourne,-Dublin.jpg",
+      "fullWidth": 2924
+     },
+     "description": "hotel on St. Stephen's Green in Dublin, Ireland"
     },
     {
      "id": "way/229658261",
@@ -528,7 +968,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Marsh%C2%B4s_Library.jpg/500px-Marsh%C2%B4s_Library.jpg",
+      "width": 500,
+      "height": 422,
+      "author": "Sitomon",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Marsh%C2%B4s_Library.jpg",
+      "fullWidth": 2593
+     },
+     "description": "Marsh's Library, Dublin"
     },
     {
      "id": "way/25631284",
@@ -541,7 +992,18 @@
      "wikidataId": "Q1101808",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Dublincityhall.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublincityhall.jpg",
+      "fullWidth": 300
+     },
+     "description": "civic building in Dublin, Ireland"
     },
     {
      "id": "way/16141015",
@@ -555,7 +1017,18 @@
      "wikidataId": "Q841037",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/INBG_Glasnevin_37.jpg/500px-INBG_Glasnevin_37.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "William Murphy from Dublin, Ireland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:INBG_Glasnevin_37.jpg",
+      "fullWidth": 2048
+     },
+     "description": "botanical garden in Glasnevin, Ireland"
     },
     {
      "id": "way/40498842",
@@ -566,7 +1039,18 @@
      "wikidataId": "Q3308144",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Ireland_-_Dublin_-_Phoenix_Park_-_Wellington_Monument.jpg/500px-Ireland_-_Dublin_-_Phoenix_Park_-_Wellington_Monument.jpg",
+      "width": 500,
+      "height": 534,
+      "author": "C. G. P. Grey",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ireland_-_Dublin_-_Phoenix_Park_-_Wellington_Monument.jpg",
+      "fullWidth": 1197
+     },
+     "description": "obelisk in Dublin"
     },
     {
      "id": "node/9873301517",
@@ -581,7 +1065,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/National_Leprechaun_Museum.crop.JPG/500px-National_Leprechaun_Museum.crop.JPG",
+      "width": 500,
+      "height": 345,
+      "author": "YvonneM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Leprechaun_Museum.crop.JPG",
+      "fullWidth": 3000
+     },
+     "description": "folk museum in Dublin"
     },
     {
      "id": "node/10013398691",
@@ -597,7 +1092,18 @@
      "kinds": [
       "business",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/The_Brazen_Head_%28cropped%29.jpg",
+      "width": 500,
+      "height": 426,
+      "author": "Harold Strong derivative work: Nikthestunned",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Brazen_Head_(cropped).jpg",
+      "fullWidth": 448
+     },
+     "description": "18th century coaching inn in Dublin, Ireland"
     },
     {
      "id": "way/41685963",
@@ -610,7 +1116,18 @@
      "wikidataId": "Q12859559",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Royal-hospital-kilmainham-01.JPG/500px-Royal-hospital-kilmainham-01.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Deitel55",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Royal-hospital-kilmainham-01.JPG",
+      "fullWidth": 3456
+     },
+     "description": "former hospital"
     },
     {
      "id": "relation/18631966",
@@ -618,7 +1135,18 @@
      "lat": 53.33966,
      "lon": -6.26051,
      "wikipediaCount": 5,
-     "wikidataId": "Q5510051"
+     "wikidataId": "Q5510051",
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Fusilier%27s_Arch_-_geograph.org.uk_-_1779821.jpg",
+      "width": 500,
+      "height": 751,
+      "author": "Richard Croft",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fusilier%27s_Arch_-_geograph.org.uk_-_1779821.jpg",
+      "fullWidth": 426
+     },
+     "description": "monument at the entrance to St Stephen's Green park, in Dublin, Ireland"
     },
     {
      "id": "way/228705547",
@@ -631,7 +1159,18 @@
      "wikidataId": "Q28408323",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Teeling_distillery_Dublin.jpg/500px-Teeling_distillery_Dublin.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "FA Shooter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Teeling_distillery_Dublin.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Whiskey distillery in Dublin, Ireland"
     },
     {
      "id": "node/906593798",
@@ -640,7 +1179,18 @@
      "lon": -6.26148,
      "website": "https://www.buildingsofireland.ie/buildings-search/building/50010557/charles-stewart-parnell-monument-oconnell-street-upper-parnell-street-dublin-dublin",
      "wikipediaCount": 1,
-     "wikidataId": "Q33123187"
+     "wikidataId": "Q33123187",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Parnell_from_beneath.jpg/500px-Parnell_from_beneath.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Pier Paolo Lisarelli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parnell_from_beneath.jpg",
+      "fullWidth": 3072
+     },
+     "description": "monument in County Dublin, Ireland"
     },
     {
      "id": "node/603833917",
@@ -649,7 +1199,18 @@
      "lon": -6.25934,
      "website": "https://www.buildingsofireland.ie/buildings-search/building/50010320/oconnell-monument-oconnell-street-lower-dublin-1-dublin",
      "wikipediaCount": 1,
-     "wikidataId": "Q33123185"
+     "wikidataId": "Q33123185",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Daniel_O%27Connell_statue_1998-1.jpg/500px-Daniel_O%27Connell_statue_1998-1.jpg",
+      "width": 500,
+      "height": 763,
+      "author": "Rodhullandemu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Daniel_O%27Connell_statue_1998-1.jpg",
+      "fullWidth": 2406
+     },
+     "description": "monument in County Dublin, Ireland"
     },
     {
      "id": "way/310207793",
@@ -657,7 +1218,18 @@
      "lat": 53.34849,
      "lon": -6.27784,
      "wikipediaCount": 1,
-     "wikidataId": "Q4778173"
+     "wikidataId": "Q4778173",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Smithfield_Market_Dublin_Chimney_Observation_Lift_Elevator.jpg/500px-Smithfield_Market_Dublin_Chimney_Observation_Lift_Elevator.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "User:Jaqian",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Smithfield_Market_Dublin_Chimney_Observation_Lift_Elevator.jpg",
+      "fullWidth": 960
+     },
+     "description": "former brick chimney, now an observation point at the Jameson distillery, Dublin, Ireland"
     },
     {
      "id": "node/635060745",
@@ -669,25 +1241,18 @@
      "kinds": [
       "adminArea",
       "notPlace"
-     ]
-    },
-    {
-     "id": "node/9994239510",
-     "name": "Custom House Visitor Centre",
-     "lat": 53.34845,
-     "lon": -6.25317,
-     "address": "Custom House Quay",
-     "website": "https://heritageireland.ie/custom-house-visitor-centre/",
-     "openingHours": "Mo-Su 09:30-16:45"
-    },
-    {
-     "id": "way/239059341",
-     "name": "Pearse Lyons",
-     "lat": 53.34372,
-     "lon": -6.28943,
-     "address": "James's Street 121/122",
-     "website": "https://www.pearselyonsdistillery.com/",
-     "openingHours": "Mo-Sa 09:30-18:00; Su 11:30-18:00; PH 11:30-18:00"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/St._Audoen%27s_Church_Over_Dublin_City_Wall_and_Gate.JPG/500px-St._Audoen%27s_Church_Over_Dublin_City_Wall_and_Gate.JPG",
+      "width": 500,
+      "height": 750,
+      "author": "Eric Fischer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Audoen%27s_Church_Over_Dublin_City_Wall_and_Gate.JPG",
+      "fullWidth": 2048
+     },
+     "description": "only surviving gate in the Dublin city walls, Ireland"
     }
    ]
   },
@@ -708,7 +1273,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/National_Gallery_of_Ireland_2006.jpg/500px-National_Gallery_of_Ireland_2006.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Copyright © 2006 Kaihsu Tai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Gallery_of_Ireland_2006.jpg",
+      "fullWidth": 1760
+     },
+     "description": "art museum in Dublin"
     },
     {
      "id": "node/10020524598",
@@ -724,7 +1300,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Alig_Chester_Beatty_Library_en008.jpg/500px-Alig_Chester_Beatty_Library_en008.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Aligatorek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alig_Chester_Beatty_Library_en008.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Library and museum in Dublin, Ireland"
     },
     {
      "id": "way/1029441205",
@@ -739,7 +1326,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/National_Museum_of_Ireland.jpg/500px-National_Museum_of_Ireland.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Ireland.jpg",
+      "fullWidth": 2560
+     },
+     "description": "national museum in Dublin and Castlebar, Ireland"
     },
     {
      "id": "relation/21749",
@@ -755,7 +1353,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/IMMA_north_facade_wiki.jpg/500px-IMMA_north_facade_wiki.jpg",
+      "width": 500,
+      "height": 298,
+      "author": "self",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:IMMA_north_facade_wiki.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:IMMA_north_facade_wiki.jpg",
+      "fullWidth": 3072
+     },
+     "description": "art museum in Dublin"
     },
     {
      "id": "relation/4547344",
@@ -768,7 +1377,18 @@
      "wikidataId": "Q2300561",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/CustomHouseDublin.JPG/500px-CustomHouseDublin.JPG",
+      "width": 500,
+      "height": 341,
+      "author": "Elemaki",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CustomHouseDublin.JPG",
+      "fullWidth": 2200
+     },
+     "description": "government building in Dublin, Ireland"
     },
     {
      "id": "way/357707494",
@@ -783,7 +1403,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Hugh_Lane_Gallery_Dublin.jpg/500px-Hugh_Lane_Gallery_Dublin.jpg",
+      "width": 500,
+      "height": 313,
+      "author": "Rwxrwxrwx",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hugh_Lane_Gallery_Dublin.jpg",
+      "fullWidth": 3069
+     },
+     "description": "art gallery in Parnell Square North, Dublin"
     },
     {
      "id": "node/3585952597",
@@ -798,7 +1429,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Dublin_-_Dublinia_-_20180925050211.jpg/500px-Dublin_-_Dublinia_-_20180925050211.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jowaria",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_-_Dublinia_-_20180925050211.jpg",
+      "fullWidth": 2048
+     },
+     "description": "museum in Ireland"
     },
     {
      "id": "way/47638298",
@@ -815,7 +1457,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Royal_Hibernian_Academy_building_in_Ely_Place%2C_Dublin%2C_Ireland.jpg/500px-Royal_Hibernian_Academy_building_in_Ely_Place%2C_Dublin%2C_Ireland.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Hohenloh at English Wikipedia .",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Royal_Hibernian_Academy_building_in_Ely_Place,_Dublin,_Ireland.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Royal_Hibernian_Academy_building_in_Ely_Place,_Dublin,_Ireland.jpg",
+      "fullWidth": 600
+     },
+     "description": "art school, museum, and society in Dublin, Ireland"
     },
     {
      "id": "node/4427119837",
@@ -830,7 +1483,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/EPIC_The_Irish_Emigration_Museum.jpg/500px-EPIC_The_Irish_Emigration_Museum.jpg",
+      "width": 500,
+      "height": 354,
+      "author": "William Murphy",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EPIC_The_Irish_Emigration_Museum.jpg",
+      "fullWidth": 5039
+     },
+     "description": "museum in Dublin, Ireland"
     },
     {
      "id": "way/281253912",
@@ -844,7 +1508,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Dublin_September_2009_061_b_pt.jpg/500px-Dublin_September_2009_061_b_pt.jpg",
+      "width": 500,
+      "height": 886,
+      "author": "Sir James",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_September_2009_061_b_pt.jpg",
+      "fullWidth": 1896
+     },
+     "description": "private literary museum on Parnell Square, Dublin"
     },
     {
      "id": "node/6788214010",
@@ -859,7 +1534,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/03/UCDNewmanHouse.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Dilbert55 at English Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:UCDNewmanHouse.jpg",
+      "fullWidth": 300
+     },
+     "description": "Literary museum in Dublin"
     },
     {
      "id": "way/590878259",
@@ -870,7 +1556,18 @@
      "website": "https://jeaniejohnston.ie/",
      "openingHours": "Mo-Su 11:00-16:00",
      "wikipediaCount": 5,
-     "wikidataId": "Q3175892"
+     "wikidataId": "Q3175892",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Jeanie_Johnston_%28Dublin_Bay%29.jpg/500px-Jeanie_Johnston_%28Dublin_Bay%29.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "wrobell",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jeanie_Johnston_(Dublin_Bay).jpg",
+      "fullWidth": 2848
+     },
+     "description": "ship, replica of a three masted barque from 1847"
     },
     {
      "id": "way/231082847",
@@ -885,7 +1582,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Natural_History_Museum_Dublin_exterior.jpg/500px-Natural_History_Museum_Dublin_exterior.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "William Murphy",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Natural_History_Museum_Dublin_exterior.jpg",
+      "fullWidth": 7952
+     },
+     "description": "natural history museum in Ireland"
     },
     {
      "id": "way/252807597",
@@ -900,7 +1608,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/James_Joyce_Centre_at_35_Great_George%27s_Street.jpg/500px-James_Joyce_Centre_at_35_Great_George%27s_Street.jpg",
+      "width": 500,
+      "height": 752,
+      "author": "Pointillist at en.wikipedia Original uploader was Pointillist at en.wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:James_Joyce_Centre_at_35_Great_George%27s_Street.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:James_Joyce_Centre_at_35_Great_George%27s_Street.jpg",
+      "fullWidth": 532
+     },
+     "description": "museum to James Joyce"
     },
     {
      "id": "way/57371552",
@@ -913,7 +1632,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/National_Print_Museum_%286499965719%29.jpg/500px-National_Print_Museum_%286499965719%29.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Miguel Mendez from Malahide, Ireland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Print_Museum_(6499965719).jpg",
+      "fullWidth": 4288
+     },
+     "description": "Heritage institution in Dublin, Ireland"
     },
     {
      "id": "way/48806099",
@@ -927,7 +1657,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Collins_Barracks_Museum_front.JPG/500px-Collins_Barracks_Museum_front.JPG",
+      "width": 500,
+      "height": 231,
+      "author": "self",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Collins_Barracks_Museum_front.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Collins_Barracks_Museum_front.JPG",
+      "fullWidth": 3072
+     },
+     "description": "national museum in Dublin, Ireland"
     },
     {
      "id": "node/878517402",
@@ -942,7 +1683,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/The_Douglas_Hyde_Gallery.jpg/500px-The_Douglas_Hyde_Gallery.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "MB-one",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Douglas_Hyde_Gallery.jpg",
+      "fullWidth": 4128
+     },
+     "description": "contemporary art gallery in Dublin, Ireland"
     },
     {
      "id": "node/2357100885",
@@ -957,7 +1709,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/20130810_dublin096.JPG/500px-20130810_dublin096.JPG",
+      "width": 500,
+      "height": 747,
+      "author": "Jean Housen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20130810_dublin096.JPG",
+      "fullWidth": 2592
+     },
+     "description": "local history museum, urban museum in Dublin, Ireland"
     },
     {
      "id": "node/755734351",
@@ -971,7 +1734,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Wall_plaques_Irish_Jewish_museum.jpg",
+      "width": 500,
+      "height": 775,
+      "author": "RustyTheDog",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wall_plaques_Irish_Jewish_museum.jpg",
+      "fullWidth": 200
+     },
+     "description": "Jewish museum in Dublin, Ireland"
     },
     {
      "id": "node/470326898",
@@ -986,7 +1760,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Dublin_-_Old_Jameson_Distillery_-_20210918161608.jpg/500px-Dublin_-_Old_Jameson_Distillery_-_20210918161608.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Nialljpmurphy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_-_Old_Jameson_Distillery_-_20210918161608.jpg",
+      "fullWidth": 5472
+     },
+     "description": "whiskey tourist attraction in Dublin, Ireland"
     },
     {
      "id": "way/281028379",
@@ -1000,7 +1785,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/14_Henrietta_Street_-_room.jpg/500px-14_Henrietta_Street_-_room.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sheila1988",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:14_Henrietta_Street_-_room.jpg",
+      "fullWidth": 4320
+     },
+     "description": "former house and tenement, now museum in Dublin, Ireland"
     },
     {
      "id": "node/3560461559",
@@ -1015,7 +1811,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Garda_Museum%2C_Dublin.jpg/500px-Garda_Museum%2C_Dublin.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Sheila1988",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Garda_Museum,_Dublin.jpg",
+      "fullWidth": 4320
+     },
+     "description": "police museum in Dublin Castle, Dublin Ireland"
     },
     {
      "id": "way/231140810",
@@ -1030,7 +1837,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Irish_Architectural_Archive.JPG/500px-Irish_Architectural_Archive.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "DubhEire",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Irish_Architectural_Archive.JPG",
+      "fullWidth": 3072
+     },
+     "description": "archive and museum in Dublin, Ireland"
     },
     {
      "id": "way/316377240",
@@ -1043,7 +1861,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Photo_Museum_Ireland.jpg/500px-Photo_Museum_Ireland.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Arnaud.Serander",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Photo_Museum_Ireland.jpg",
+      "fullWidth": 1620
+     },
+     "description": "Free photography museum in Dublin"
     },
     {
      "id": "node/13372467623",
@@ -1928,9 +2757,21 @@
      "cuisine": "irish, fish and chips",
      "wikidataId": "Q17006015",
      "kinds": [
-      "business"
+      "business",
+      "organization"
      ],
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/The_Brazen_Head_%28cropped%29.jpg",
+      "width": 500,
+      "height": 426,
+      "author": "Harold Strong derivative work: Nikthestunned",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Brazen_Head_(cropped).jpg",
+      "fullWidth": 448
+     },
+     "description": "18th century coaching inn in Dublin, Ireland"
     },
     {
      "id": "way/264741791",
@@ -1942,7 +2783,17 @@
      "openingHours": "Mo-Th 10:00-23:30; Fr-Sa 10:00-01:30; Su 10:00-23:00",
      "cuisine": "burger, regional",
      "wikidataId": "Q65330199",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dublin_The_Hairy_Lemon_1.jpg/500px-Dublin_The_Hairy_Lemon_1.jpg",
+      "width": 500,
+      "height": 371,
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin_The_Hairy_Lemon_1.jpg",
+      "fullWidth": 4530
+     }
     },
     {
      "id": "node/14040039662",
@@ -2284,7 +3135,18 @@
      "lat": 53.33544,
      "lon": -6.26351,
      "address": "Harcourt Street",
-     "wikidataId": "Q65329914"
+     "wikidataId": "Q65329914",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Dublin%2C_Co._Dublin_-_Ireland_%285417695437%29.jpg/500px-Dublin%2C_Co._Dublin_-_Ireland_%285417695437%29.jpg",
+      "width": 500,
+      "height": 339,
+      "author": "Mic from Reading - Berkshire, United Kingdom",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dublin,_Co._Dublin_-_Ireland_(5417695437).jpg",
+      "fullWidth": 2329
+     },
+     "description": "nightclub in Dublin"
     },
     {
      "id": "node/3771358965",

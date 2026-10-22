@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "CGN",
- "fetchedAt": "2026-10-18T16:20:45.146Z",
+ "fetchedAt": "2026-10-22T05:34:35.155Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -55,7 +55,18 @@
       "notPlace",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Stadtbild_K%C3%B6ln_%2850MP%29.jpg/500px-Stadtbild_K%C3%B6ln_%2850MP%29.jpg",
+      "width": 500,
+      "height": 363,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadtbild_K%C3%B6ln_(50MP).jpg",
+      "fullWidth": 8296
+     },
+     "description": "Almanya'nın dördüncü, Kuzey Ren-Vestfalya eyaletinin en büyük şehri"
     },
     {
      "id": "way/4532022",
@@ -71,7 +82,18 @@
       "heritage",
       "religious",
       "unesco"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/K%C3%B6lner_Dom_von_Osten.jpg/500px-K%C3%B6lner_Dom_von_Osten.jpg",
+      "width": 500,
+      "height": 787,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6lner_Dom_von_Osten.jpg",
+      "fullWidth": 4589
+     },
+     "description": "Almanya, Köln'de gotik bir Katedral-Kilise"
     },
     {
      "id": "wikidata/Q310525",
@@ -83,7 +105,18 @@
      "kinds": [
       "musicVenue",
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/K%C3%B6ln_deutz_k%C3%B6lnarena.jpg/500px-K%C3%B6ln_deutz_k%C3%B6lnarena.jpg",
+      "width": 500,
+      "height": 275,
+      "author": "Hans Peter Schaefer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln_deutz_k%C3%B6lnarena.jpg",
+      "fullWidth": 783
+     },
+     "description": "music venue and hockey stadium in Cologne, Germany"
     },
     {
      "id": "wikidata/Q1954",
@@ -96,7 +129,18 @@
      "kinds": [
       "heritage",
       "station"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/00_0198_K%C3%B6ln_-_Hauptbahnhof%2C_Kirche_Sankt_Mari%C3%A4_Himmelfahrt.jpg/500px-00_0198_K%C3%B6ln_-_Hauptbahnhof%2C_Kirche_Sankt_Mari%C3%A4_Himmelfahrt.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_0198_K%C3%B6ln_-_Hauptbahnhof,_Kirche_Sankt_Mari%C3%A4_Himmelfahrt.jpg",
+      "fullWidth": 4200
+     },
+     "description": "Almanya'da tren istasyonu"
     },
     {
      "id": "wikidata/Q696762",
@@ -109,7 +153,18 @@
      "kinds": [
       "bridge",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/00_7344_K%C3%B6ln_-_Hohenzollernbr%C3%BCcke.jpg/500px-00_7344_K%C3%B6ln_-_Hohenzollernbr%C3%BCcke.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:00_7344_K%C3%B6ln_-_Hohenzollernbr%C3%BCcke.jpg",
+      "fullWidth": 3003
+     },
+     "description": "bridge in Cologne, Germany"
     },
     {
      "id": "wikidata/Q544285",
@@ -122,7 +177,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Synagoge_Roonstra%C3%9Fe%2C_K%C3%B6ln-7836.jpg/500px-Synagoge_Roonstra%C3%9Fe%2C_K%C3%B6ln-7836.jpg",
+      "width": 500,
+      "height": 288,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Synagoge_Roonstra%C3%9Fe,_K%C3%B6ln-7836.jpg",
+      "fullWidth": 6127
+     },
+     "description": "synagogue in Cologne"
     },
     {
      "id": "way/38246033",
@@ -137,7 +203,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/St._Gereon_K%C3%B6ln_-_Ostseite_%282520%29.jpg/500px-St._Gereon_K%C3%B6ln_-_Ostseite_%282520%29.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Gereon_K%C3%B6ln_-_Ostseite_(2520).jpg",
+      "fullWidth": 1600
+     },
+     "description": "Altstadt-Nord, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q266866",
@@ -148,7 +225,18 @@
      "wikidataId": "Q266866",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/St._Ursula_K%C3%B6ln_%285020-22%29.jpg/500px-St._Ursula_K%C3%B6ln_%285020-22%29.jpg",
+      "width": 500,
+      "height": 609,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Ursula_K%C3%B6ln_(5020-22).jpg",
+      "fullWidth": 2300
+     },
+     "description": "church building in Altstadt-Nord, Germany"
     },
     {
      "id": "wikidata/Q23048",
@@ -161,7 +249,18 @@
       "adminArea",
       "heritage",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Kapitol_K%C3%B6ln_front1.jpg/500px-Kapitol_K%C3%B6ln_front1.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Own work",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kapitol_K%C3%B6ln_front1.jpg",
+      "fullWidth": 4288
+     },
+     "description": "Roman colony, today Cologne in Germany"
     },
     {
      "id": "wikidata/Q153646",
@@ -173,7 +272,18 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Colonius_20050129.jpg/500px-Colonius_20050129.jpg",
+      "width": 500,
+      "height": 1102,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Colonius_20050129.jpg",
+      "fullWidth": 870
+     },
+     "description": "tower in Cologne"
     },
     {
      "id": "wikidata/Q565187",
@@ -185,7 +295,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/K%C3%B6ln_Pantaleon_von_W3.jpg/500px-K%C3%B6ln_Pantaleon_von_W3.jpg",
+      "width": 500,
+      "height": 834,
+      "author": "Beckstet at German Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln_Pantaleon_von_W3.jpg",
+      "fullWidth": 1464
+     },
+     "description": "Altstadt-Süd, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q526047",
@@ -197,7 +318,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/St._Aposteln_K%C3%B6ln_-_Ostseite_%284539%29.jpg/500px-St._Aposteln_K%C3%B6ln_-_Ostseite_%284539%29.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Aposteln_K%C3%B6ln_-_Ostseite_(4539).jpg",
+      "fullWidth": 1800
+     },
+     "description": "church in Cologne-Altstadt-Nord, Germany"
     },
     {
      "id": "wikidata/Q598352",
@@ -209,7 +341,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Mariaamkapitol_16-02-2009_15-36-21.JPG/500px-Mariaamkapitol_16-02-2009_15-36-21.JPG",
+      "width": 500,
+      "height": 336,
+      "author": "Paul Hermans",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mariaamkapitol_16-02-2009_15-36-21.JPG",
+      "fullWidth": 2896
+     },
+     "description": "Altstadt-Süd, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q564520",
@@ -221,7 +364,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Koeln_gross_st_martin_rheinseite.jpg/500px-Koeln_gross_st_martin_rheinseite.jpg",
+      "width": 500,
+      "height": 747,
+      "author": "Hans Peter Schaefer Url: http://www.reserv-a-rt.de , saturation by User:elya",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Koeln_gross_st_martin_rheinseite.jpg",
+      "fullWidth": 700
+     },
+     "description": "church in Cologne, Germany"
     },
     {
      "id": "wikidata/Q555142",
@@ -232,7 +386,18 @@
      "wikidataId": "Q555142",
      "kinds": [
       "skyscraper"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Mediapark_K%C3%B6lnTurm_%280508-10%29.jpg/500px-Mediapark_K%C3%B6lnTurm_%280508-10%29.jpg",
+      "width": 500,
+      "height": 619,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mediapark_K%C3%B6lnTurm_(0508-10).jpg",
+      "fullWidth": 2299
+     },
+     "description": "office building in Germany, designed by Jean Nouvel (1998-2001)"
     },
     {
      "id": "wikidata/Q564898",
@@ -244,7 +409,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/St._Andreas_K%C3%B6ln_von_oben.jpg/500px-St._Andreas_K%C3%B6ln_von_oben.jpg",
+      "width": 500,
+      "height": 618,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Andreas_K%C3%B6ln_von_oben.jpg",
+      "fullWidth": 1700
+     },
+     "description": "Altstadt-Nord, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q1389",
@@ -256,7 +432,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/K%C3%B6ln_st_c%C3%A4cilien.jpg/500px-K%C3%B6ln_st_c%C3%A4cilien.jpg",
+      "width": 500,
+      "height": 291,
+      "author": "Hans Peter Schaefer http://www.reserv-a-rt.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln_st_c%C3%A4cilien.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Romanesque church in Cologne, Germany"
     },
     {
      "id": "wikidata/Q457665",
@@ -268,7 +455,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/K%C3%B6ln_St_kunibert_vomrheinaus.jpg/500px-K%C3%B6ln_St_kunibert_vomrheinaus.jpg",
+      "width": 500,
+      "height": 637,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln_St_kunibert_vomrheinaus.jpg",
+      "fullWidth": 804
+     },
+     "description": "Altstadt-Nord, Almanya'da kilise"
     },
     {
      "id": "node/267352592",
@@ -279,7 +477,18 @@
      "wikidataId": "Q80786",
      "kinds": [
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Koeln_MariaGradus_v_S.JPG/500px-Koeln_MariaGradus_v_S.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Beckstet",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Koeln_MariaGradus_v_S.JPG",
+      "fullWidth": 2048
+     },
+     "description": "Altstadt-Nord, Almanya'da kilise"
     },
     {
      "id": "node/622638987",
@@ -290,7 +499,18 @@
      "wikidataId": "Q151639",
      "kinds": [
       "noCoordinate"
-     ]
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Heinz_Klein-Arendt-06.JPG",
+      "width": 500,
+      "height": 437,
+      "author": "Reinhard Klein-Arendt c/o -- Jocian ( talk ) 10:52, 16 May 2010 (UTC)",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Heinz_Klein-Arendt-06.JPG",
+      "fullWidth": 479
+     },
+     "description": "two figures from the Cologne puppet theater Hänneschen-Theater"
     },
     {
      "id": "node/1679641146",
@@ -301,7 +521,18 @@
      "wikidataId": "Q1399679",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Kronleuchtersaal06.jpg/500px-Kronleuchtersaal06.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kronleuchtersaal06.jpg",
+      "fullWidth": 2400
+     },
+     "description": "sewerage system"
     },
     {
      "id": "way/34309348",
@@ -315,7 +546,18 @@
       "museum",
       "organization",
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Arch%C3%A4ologische_Zone_K%C3%B6ln_-_%C3%9Cberblick_Juni_2014-1477-78.jpg/500px-Arch%C3%A4ologische_Zone_K%C3%B6ln_-_%C3%9Cberblick_Juni_2014-1477-78.jpg",
+      "width": 500,
+      "height": 492,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch%C3%A4ologische_Zone_K%C3%B6ln_-_%C3%9Cberblick_Juni_2014-1477-78.jpg",
+      "fullWidth": 3416
+     },
+     "description": "archaeological area and future museum zone in the center of German city of Cologne"
     },
     {
      "id": "way/51570458",
@@ -329,7 +571,17 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/K%C3%B6ln_eigelsteintorburg.jpg/500px-K%C3%B6ln_eigelsteintorburg.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln_eigelsteintorburg.jpg",
+      "fullWidth": 1024
+     }
     },
     {
      "id": "way/1220332213",
@@ -342,7 +594,17 @@
      "wikidataId": "Q23005613",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ubiermonument_3.JPG/500px-Ubiermonument_3.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "© 1971markus",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ubiermonument_3.JPG",
+      "fullWidth": 3648
+     }
     },
     {
      "id": "way/285715949",
@@ -355,7 +617,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Seilbahn_K%C3%B6ln.jpg/500px-Seilbahn_K%C3%B6ln.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "© 1971markus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Seilbahn_K%C3%B6ln.jpg",
+      "fullWidth": 4320
+     },
+     "description": "cable car in Cologne, Germany"
     },
     {
      "id": "way/25048555",
@@ -368,7 +641,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Alt_St._Alban_%288578-80%29.jpg/500px-Alt_St._Alban_%288578-80%29.jpg",
+      "width": 500,
+      "height": 609,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Alt_St._Alban_(8578-80).jpg",
+      "fullWidth": 2300
+     },
+     "description": "Altstadt-Nord, Almanya'da kilise"
     },
     {
      "id": "node/1246244105",
@@ -379,7 +663,18 @@
      "wikidataId": "Q2071177",
      "kinds": [
       "ruins"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Dionysosmosaik.JPG/500px-Dionysosmosaik.JPG",
+      "width": 500,
+      "height": 699,
+      "author": "Unknown author Unknown author",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dionysosmosaik.JPG",
+      "fullWidth": 1596
+     },
+     "description": "archaeological site in Germany"
     },
     {
      "id": "way/122628380",
@@ -391,7 +686,17 @@
      "kinds": [
       "heritage",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Roemerturm_Koeln2007.jpg/500px-Roemerturm_Koeln2007.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "VollwertBIT",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roemerturm_Koeln2007.jpg",
+      "fullWidth": 1600
+     }
     },
     {
      "id": "node/529807675",
@@ -401,7 +706,17 @@
      "website": "https://www.museenkoeln.de/archaeologische-zone/default.asp?s=2979",
      "openingHours": "Mo-Su off",
      "wikipediaCount": 1,
-     "wikidataId": "Q111511952"
+     "wikidataId": "Q111511952",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Praetorium_K%C3%B6ln-7138.jpg/500px-Praetorium_K%C3%B6ln-7138.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praetorium_K%C3%B6ln-7138.jpg",
+      "fullWidth": 6720
+     }
     },
     {
      "id": "way/132405287",
@@ -415,7 +730,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/St._Johanneskirche_%28K%C3%B6ln-Deutz%293.jpg/500px-St._Johanneskirche_%28K%C3%B6ln-Deutz%293.jpg",
+      "width": 500,
+      "height": 929,
+      "author": "Chris06",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Johanneskirche_(K%C3%B6ln-Deutz)3.jpg",
+      "fullWidth": 2008
+     },
+     "description": "Deutz, Almanya'da kilise"
     },
     {
      "id": "way/60358008",
@@ -423,7 +749,18 @@
      "lat": 50.93695,
      "lon": 6.96329,
      "wikipediaCount": 1,
-     "wikidataId": "Q2067319"
+     "wikidataId": "Q2067319",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/K%C3%B6ln%2C_Pegelturm_--_2014_--_1813.jpg/500px-K%C3%B6ln%2C_Pegelturm_--_2014_--_1813.jpg",
+      "width": 500,
+      "height": 498,
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln,_Pegelturm_--_2014_--_1813.jpg",
+      "fullWidth": 3205
+     },
+     "description": "stream gauge in Cologne's Old Town North on the left bank of the Rhine"
     },
     {
      "id": "node/4426148123",
@@ -488,7 +825,18 @@
      "wikidataId": "Q110916798",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/EHF_Ball_of_Fame%2C_Lanxess_Arena%2C_Cologne-9271.jpg/500px-EHF_Ball_of_Fame%2C_Lanxess_Arena%2C_Cologne-9271.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:EHF_Ball_of_Fame,_Lanxess_Arena,_Cologne-9271.jpg",
+      "fullWidth": 6720
+     },
+     "description": "sculpture in Cologne"
     },
     {
      "id": "way/1358521219",
@@ -507,12 +855,6 @@
      "name": "Brunnenfassung",
      "lat": 50.94032,
      "lon": 6.9592
-    },
-    {
-     "id": "relation/13262151",
-     "name": "CCAA Roemische Stadtmauer",
-     "lat": 50.93612,
-     "lon": 6.95262
     }
    ]
   },
@@ -533,7 +875,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Koeln_wallraff_richartz_mus.jpg/500px-Koeln_wallraff_richartz_mus.jpg",
+      "width": 500,
+      "height": 303,
+      "author": "Hans Peter Schaefer - http://www.reserv-a-rt.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Koeln_wallraff_richartz_mus.jpg",
+      "fullWidth": 1600
+     },
+     "description": "art museum in Cologne, Germany"
     },
     {
      "id": "node/633480736",
@@ -548,7 +901,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Museum_Ludwig_001.jpg/500px-Museum_Ludwig_001.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Thomas Robbin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_Ludwig_001.jpg",
+      "fullWidth": 1500
+     },
+     "description": "museum in Cologne, Germany"
     },
     {
      "id": "relation/965473",
@@ -563,7 +927,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/R%C3%B6misch-Germanisches_Museum_K%C3%B6ln_%282514-16%29.jpg/500px-R%C3%B6misch-Germanisches_Museum_K%C3%B6ln_%282514-16%29.jpg",
+      "width": 500,
+      "height": 270,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B6misch-Germanisches_Museum_K%C3%B6ln_(2514-16).jpg",
+      "fullWidth": 3700
+     },
+     "description": "archaeological museum of ancient roman and germanic cultures in Cologne, Germany"
     },
     {
      "id": "way/334606061",
@@ -578,7 +953,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Stollwerck-Imhoff-Schokoladenmuseum.JPG/500px-Stollwerck-Imhoff-Schokoladenmuseum.JPG",
+      "width": 500,
+      "height": 342,
+      "author": "Photo: Arminia , cropped by Elya ,",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stollwerck-Imhoff-Schokoladenmuseum.JPG",
+      "fullWidth": 1882
+     },
+     "description": "museum in Cologne, Germany"
     },
     {
      "id": "way/48359832",
@@ -593,7 +979,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Farina-Haus_K%C3%B6ln_%284213-15%29.jpg/500px-Farina-Haus_K%C3%B6ln_%284213-15%29.jpg",
+      "width": 500,
+      "height": 500,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Farina-Haus_K%C3%B6ln_(4213-15).jpg",
+      "fullWidth": 2500
+     },
+     "description": "museum in Cologne, Germany"
     },
     {
      "id": "node/5739097722",
@@ -608,7 +1005,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/St._Kolumba_K%C3%B6ln_-_Di%C3%B6zesanmuseum_-_Ausgrabungen_1.jpg/500px-St._Kolumba_K%C3%B6ln_-_Di%C3%B6zesanmuseum_-_Ausgrabungen_1.jpg",
+      "width": 500,
+      "height": 200,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Kolumba_K%C3%B6ln_-_Di%C3%B6zesanmuseum_-_Ausgrabungen_1.jpg",
+      "fullWidth": 2000
+     },
+     "description": "art museum"
     },
     {
      "id": "node/78605265",
@@ -622,7 +1030,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Cologne-EL-DE-House-UpperFloorMuseum.JPG/500px-Cologne-EL-DE-House-UpperFloorMuseum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Bryan MacKinnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cologne-EL-DE-House-UpperFloorMuseum.JPG",
+      "fullWidth": 4000
+     },
+     "description": "NS Documentation Centre - Cologne"
     },
     {
      "id": "way/386349068",
@@ -637,7 +1056,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Museum_Schn%C3%BCtgen_-_St._C%C3%A4cilien_-_innenaufnahme-4459.jpg/500px-Museum_Schn%C3%BCtgen_-_St._C%C3%A4cilien_-_innenaufnahme-4459.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_Schn%C3%BCtgen_-_St._C%C3%A4cilien_-_innenaufnahme-4459.jpg",
+      "fullWidth": 5184
+     },
+     "description": "museum of medieval Christian religious art in Cologne, Germany"
     },
     {
      "id": "relation/4595998",
@@ -652,7 +1082,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Museum_f%C3%BCr_Angewandte_Kunst_K%C3%B6ln_-_Minoritenkirche.jpg/500px-Museum_f%C3%BCr_Angewandte_Kunst_K%C3%B6ln_-_Minoritenkirche.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_f%C3%BCr_Angewandte_Kunst_K%C3%B6ln_-_Minoritenkirche.jpg",
+      "fullWidth": 2400
+     },
+     "description": "applied art museum in Cologne, Germany"
     },
     {
      "id": "node/618164720",
@@ -667,7 +1108,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/K%C3%B6lnisches_Stadtmuseum.jpg/500px-K%C3%B6lnisches_Stadtmuseum.jpg",
+      "width": 500,
+      "height": 365,
+      "author": "Thomas Wolf , www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6lnisches_Stadtmuseum.jpg",
+      "fullWidth": 9811
+     },
+     "description": "museum in Cologne"
     },
     {
      "id": "node/3364570531",
@@ -682,7 +1134,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/K%C3%A4the-Kollwitz-Museum_K%C3%B6ln.jpg/500px-K%C3%A4the-Kollwitz-Museum_K%C3%B6ln.jpg",
+      "width": 500,
+      "height": 409,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%A4the-Kollwitz-Museum_K%C3%B6ln.jpg",
+      "fullWidth": 2200
+     },
+     "description": "museum in Cologne"
     },
     {
      "id": "node/643068699",
@@ -695,7 +1158,18 @@
      "wikidataId": "Q1559479",
      "kinds": [
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/K%C3%B6lnischer_Kunstverein_-_Die_Br%C3%BCcke_%283279-81%29.jpg/500px-K%C3%B6lnischer_Kunstverein_-_Die_Br%C3%BCcke_%283279-81%29.jpg",
+      "width": 500,
+      "height": 348,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6lnischer_Kunstverein_-_Die_Br%C3%BCcke_(3279-81).jpg",
+      "fullWidth": 3300
+     },
+     "description": "Kunstverein in Cologne, Germany"
     },
     {
      "id": "node/3396039255",
@@ -710,7 +1184,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Kulturquartier_K%C3%B6ln_-_Rautenstrauch-Joest-Museum_-_Vorderseite_%286904-06%29.jpg/500px-Kulturquartier_K%C3%B6ln_-_Rautenstrauch-Joest-Museum_-_Vorderseite_%286904-06%29.jpg",
+      "width": 500,
+      "height": 283,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kulturquartier_K%C3%B6ln_-_Rautenstrauch-Joest-Museum_-_Vorderseite_(6904-06).jpg",
+      "fullWidth": 3000
+     },
+     "description": "museum in Cologne"
     },
     {
      "id": "node/1966869734",
@@ -723,7 +1208,18 @@
       "business",
       "organization",
       "school"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/K%C3%B6ln-Erich-Klibansky-Platz-034.JPG/500px-K%C3%B6ln-Erich-Klibansky-Platz-034.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "Horsch, Willy",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:K%C3%B6ln-Erich-Klibansky-Platz-034.JPG",
+      "fullWidth": 1536
+     },
+     "description": "gymnasium"
     },
     {
      "id": "way/23482434",
@@ -739,7 +1235,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Rheinauhafen_-_Sport-_und_Olympiamuseum_-_Rheinseite_%288722-24%29.jpg/500px-Rheinauhafen_-_Sport-_und_Olympiamuseum_-_Rheinseite_%288722-24%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rheinauhafen_-_Sport-_und_Olympiamuseum_-_Rheinseite_(8722-24).jpg",
+      "fullWidth": 3600
+     },
+     "description": "museum in Germany"
     },
     {
      "id": "node/2865852452",
@@ -753,7 +1260,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/MediaPark_K%C3%B6ln%2C_Haus_7_%28Komed%29-0392.jpg/500px-MediaPark_K%C3%B6ln%2C_Haus_7_%28Komed%29-0392.jpg",
+      "width": 500,
+      "height": 623,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MediaPark_K%C3%B6ln,_Haus_7_(Komed)-0392.jpg",
+      "fullWidth": 2849
+     },
+     "description": "archive, Library and Museum of present and past Art of Dancing"
     },
     {
      "id": "way/38578888",
@@ -767,7 +1285,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Koeln_domschatzkammer.jpg/500px-Koeln_domschatzkammer.jpg",
+      "width": 500,
+      "height": 733,
+      "author": "No machine-readable author provided. Elya assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Koeln_domschatzkammer.jpg",
+      "fullWidth": 819
+     },
+     "description": "museum"
     },
     {
      "id": "node/4085306199",
@@ -780,7 +1309,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Germany"
     },
     {
      "id": "node/5492264456",
@@ -869,7 +1399,17 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Medizinhistorisches_Museum_K%C3%B6ln%2C_Auf_dem_Rothenberg_11-2367.jpg/500px-Medizinhistorisches_Museum_K%C3%B6ln%2C_Auf_dem_Rothenberg_11-2367.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Medizinhistorisches_Museum_K%C3%B6ln,_Auf_dem_Rothenberg_11-2367.jpg",
+      "fullWidth": 4981
+     }
     },
     {
      "id": "node/448300897",
@@ -1000,6 +1540,17 @@
      "website": "https://www.1992restaurant.de/",
      "openingHours": "Mo-Su 11:30-22:30",
      "cuisine": "vietnamese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/409740993",
+     "name": "60 seconds to napoli",
+     "lat": 50.94858,
+     "lon": 6.94479,
+     "address": "Im Mediapark 5",
+     "website": "https://60secondstonapoli.de/standort/koeln-mediapark/",
+     "openingHours": "Mo-Su 11:30-23:00",
+     "cuisine": "pizza",
      "detailed": true
     },
     {
@@ -1171,7 +1722,18 @@
      "openingHours": "Mo 16:00-21:30, Tu-Th 12:00-21:30, Fr-Sa 12:00-22:00, Su off",
      "cuisine": "regional",
      "wikidataId": "Q857712",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Bieresel_3.jpg/500px-Bieresel_3.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Neulich im Roxy Kino",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bieresel_3.jpg",
+      "fullWidth": 2304
+     },
+     "description": "inn"
     },
     {
      "id": "node/2514943011",
@@ -1301,16 +1863,6 @@
      "website": "https://www.caruso-pastabar.de/",
      "openingHours": "Mo-Sa 18:00-24:00",
      "cuisine": "pasta",
-     "detailed": true
-    },
-    {
-     "id": "node/571787802",
-     "name": "Casa di Modica",
-     "lat": 50.94016,
-     "lon": 6.94121,
-     "website": "https://www.casa-di-modica.de/",
-     "openingHours": "Mo-Sa 12:00-15:00,18:00-22:30",
-     "cuisine": "italian",
      "detailed": true
     }
    ]
@@ -1704,7 +2256,18 @@
      "openingHours": "Mo-Su,PH 12:00-18:00+",
      "cuisine": "german",
      "wikidataId": "Q900427",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Brauerei-zur-Malzm%C3%BChle-K%C3%B6ln.jpg/500px-Brauerei-zur-Malzm%C3%BChle-K%C3%B6ln.jpg",
+      "width": 500,
+      "height": 875,
+      "author": "HOWI - Horsch, Willy",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Brauerei-zur-Malzm%C3%BChle-K%C3%B6ln.jpg",
+      "fullWidth": 2400
+     },
+     "description": "kölsch brewery in Cologne, Germany"
     },
     {
      "id": "node/4875891321",
@@ -2042,7 +2605,18 @@
      "lon": 6.98195,
      "address": "Auenweg 173",
      "website": "https://bootshaus.tv/",
-     "wikidataId": "Q19835620"
+     "wikidataId": "Q19835620",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Bootshaus_Mainfloor.jpg/500px-Bootshaus_Mainfloor.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Bootshaus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bootshaus_Mainfloor.jpg",
+      "fullWidth": 621
+     },
+     "description": "club venue in Cologne, Germany"
     },
     {
      "id": "node/1948954386",

@@ -1,7 +1,7 @@
 {
- "version": 3,
+ "version": 4,
  "cityCode": "PRG",
- "fetchedAt": "2026-10-18T16:23:50.023Z",
+ "fetchedAt": "2026-10-22T05:38:32.260Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -19,13 +19,13 @@
    "name": "Wikidata",
    "url": "https://www.wikidata.org",
    "license": "CC0-1.0",
-   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir fotoğrafı (P18)"
+   "usedFor": "önemli yerler (Wikidata Query Service), Vikipedi dil sayıları, şehir ve mekân fotoğrafları (P18), kısa açıklamalar"
   },
   {
    "name": "Wikimedia Commons",
    "url": "https://commons.wikimedia.org",
    "license": "fotoğraf başına (CC0, kamu malı, CC BY, CC BY-SA)",
-   "usedFor": "şehir fotoğrafı ve atıf bilgisi"
+   "usedFor": "şehir ve mekân fotoğrafları ve atıf bilgisi"
   }
  ],
  "photo": {
@@ -54,7 +54,18 @@
       "adminArea",
       "castle",
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Castillo_de_Praga%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_209.jpg/500px-Castillo_de_Praga%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_209.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_Praga,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_209.jpg",
+      "fullWidth": 8688
+     },
+     "description": "castle complex in Prague, Czech Republic, dating from the 9th century"
     },
     {
      "id": "way/4053134",
@@ -68,7 +79,8 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "description": "bridge in Prague, Czech Republic"
     },
     {
      "id": "way/1568419039",
@@ -82,7 +94,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Praha%2C_Katedr%C3%A1la%2C_JV_01.jpg/500px-Praha%2C_Katedr%C3%A1la%2C_JV_01.jpg",
+      "width": 500,
+      "height": 495,
+      "author": "o¬.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Katedr%C3%A1la,_JV_01.jpg",
+      "fullWidth": 6160
+     },
+     "description": "Katedral"
     },
     {
      "id": "node/4748580936",
@@ -97,7 +120,18 @@
       "heritage",
       "organization",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Astronomical_Clock_%288341899828%29.jpg/500px-Astronomical_Clock_%288341899828%29.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Steve Collis from Melbourne, Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Astronomical_Clock_(8341899828).jpg",
+      "fullWidth": 1068
+     },
+     "description": "Astronomical Clock in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q421678",
@@ -110,7 +144,8 @@
      "kinds": [
       "heritage",
       "square"
-     ]
+     ],
+     "description": "square in the Old Town quarter of Prague"
     },
     {
      "id": "wikidata/Q847613",
@@ -122,7 +157,18 @@
      "wikidataId": "Q847613",
      "kinds": [
       "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/V%C3%A1clavsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD_z_kupole_Muzea_3.jpg/500px-V%C3%A1clavsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD_z_kupole_Muzea_3.jpg",
+      "width": 500,
+      "height": 380,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:V%C3%A1clavsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD_z_kupole_Muzea_3.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Prag'ın ana meydanlarından biri"
     },
     {
      "id": "relation/8001448",
@@ -135,7 +181,18 @@
       "adminArea",
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Praha_2%2C_Pevnost_Vy%C5%A1ehrad_20170808_014.jpg/500px-Praha_2%2C_Pevnost_Vy%C5%A1ehrad_20170808_014.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Tilman2007",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_2,_Pevnost_Vy%C5%A1ehrad_20170808_014.jpg",
+      "fullWidth": 6016
+     },
+     "description": "Tarihî kale"
     },
     {
      "id": "way/379512802",
@@ -150,7 +207,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Prag'da kilise binası"
     },
     {
      "id": "relation/6268801",
@@ -164,7 +222,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Praha%2C_Hradcany_-_Strahovsky_klaster_%28pohled_z_ulice_Uvoz%29.jpg/500px-Praha%2C_Hradcany_-_Strahovsky_klaster_%28pohled_z_ulice_Uvoz%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Matěj Baťha",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Hradcany_-_Strahovsky_klaster_(pohled_z_ulice_Uvoz).jpg",
+      "fullWidth": 2400
+     },
+     "description": "church complex in Prague"
     },
     {
      "id": "wikidata/Q443107",
@@ -177,7 +246,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Old_New_Synagogue_01%28js%29.jpg/500px-Old_New_Synagogue_01%28js%29.jpg",
+      "width": 500,
+      "height": 358,
+      "author": "Jerzy Strzelecki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_New_Synagogue_01(js).jpg",
+      "fullWidth": 5524
+     },
+     "description": "synagogue in Prague, Czechia"
     },
     {
      "id": "way/27376003",
@@ -190,7 +270,18 @@
      "wikidataId": "Q438026",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Praha_Jewish_Cemetery_2003.jpg/500px-Praha_Jewish_Cemetery_2003.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Jewish_Cemetery_2003.jpg",
+      "fullWidth": 1024
+     },
+     "description": "Pragdaki Bir Mezarlık"
     },
     {
      "id": "way/457404360",
@@ -204,7 +295,18 @@
       "adminArea",
       "attraction",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/%C5%BDi%C5%BEkov_tv_tower.jpg/500px-%C5%BDi%C5%BEkov_tv_tower.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Norbert Požár ( cs:Wikipedista:Bertik )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%BDi%C5%BEkov_tv_tower.jpg",
+      "fullWidth": 1536
+     },
+     "description": "TV tower in Prague, Czech Republic"
     },
     {
      "id": "relation/3366616",
@@ -217,7 +319,18 @@
      "wikidataId": "Q1100429",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Klementinum_z_Mari%C3%A1nsk%C3%A9ho_n%C3%A1m_1.jpg/500px-Klementinum_z_Mari%C3%A1nsk%C3%A9ho_n%C3%A1m_1.jpg",
+      "width": 500,
+      "height": 356,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Klementinum_z_Mari%C3%A1nsk%C3%A9ho_n%C3%A1m_1.jpg",
+      "fullWidth": 2348
+     },
+     "description": "building complex in Prague, currently used as library"
     },
     {
      "id": "wikidata/Q60103",
@@ -229,7 +342,18 @@
      "wikidataId": "Q60103",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Praha_Sparta.jpg/500px-Praha_Sparta.jpg",
+      "width": 500,
+      "height": 260,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Sparta.jpg",
+      "fullWidth": 3456
+     },
+     "description": "football stadium in Prague, Czechia"
     },
     {
      "id": "node/4172786092",
@@ -242,7 +366,18 @@
       "heritage",
       "road",
       "street"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Callej%C3%B3n_del_oro%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_139.jpg/500px-Callej%C3%B3n_del_oro%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_139.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Callej%C3%B3n_del_oro,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_139.jpg",
+      "fullWidth": 8280
+     },
+     "description": "Prag'da sokak"
     },
     {
      "id": "wikidata/Q1437065",
@@ -255,7 +390,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Czech-03808_-_St._George%27s_Basilica_%2833020214885%29.jpg/500px-Czech-03808_-_St._George%27s_Basilica_%2833020214885%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Dennis G. Jarvis",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Czech-03808_-_St._George%27s_Basilica_(33020214885).jpg",
+      "fullWidth": 6000
+     },
+     "description": "church in Prague, Czech Republic"
     },
     {
      "id": "way/629201841",
@@ -264,7 +410,18 @@
      "lon": 14.40682,
      "openingHours": "24/7",
      "wikipediaCount": 25,
-     "wikidataId": "Q1630131"
+     "wikidataId": "Q1630131",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/JohnLennonWall.jpg/500px-JohnLennonWall.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Adam Zivner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:JohnLennonWall.jpg",
+      "fullWidth": 3872
+     },
+     "description": "a wall in Prague, Czech Republic"
     },
     {
      "id": "way/7645355",
@@ -278,7 +435,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Mal%C3%A1_Strana_kostel_sv._Mikul%C3%A1%C5%A1e_z_Pet%C5%99%C3%ADna-3.jpg/500px-Mal%C3%A1_Strana_kostel_sv._Mikul%C3%A1%C5%A1e_z_Pet%C5%99%C3%ADna-3.jpg",
+      "width": 500,
+      "height": 669,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mal%C3%A1_Strana_kostel_sv._Mikul%C3%A1%C5%A1e_z_Pet%C5%99%C3%ADna-3.jpg",
+      "fullWidth": 1365
+     },
+     "description": "Prag'ın Malá Strana adlı küçük kasabasında bulunan Barok mimarisiyle yapılmış bir kilise"
     },
     {
      "id": "wikidata/Q1353687",
@@ -290,7 +458,8 @@
      "kinds": [
       "heritage",
       "sportsVenue"
-     ]
+     ],
+     "description": "stadium in the Strahov district of Prague, Czechia"
     },
     {
      "id": "wikidata/Q1130137",
@@ -304,7 +473,42 @@
       "heritage",
       "musicVenue",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Rudolfinum_Prague.jpg/500px-Rudolfinum_Prague.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Aconcagua ( talk )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rudolfinum_Prague.jpg",
+      "fullWidth": 3872
+     },
+     "description": "Prag'da etkinlik merkezi"
+    },
+    {
+     "id": "wikidata/Q956163",
+     "name": "Aziz Kiril ve Methodios Katedrali",
+     "localName": "Ss. Cyril and Methodius Cathedral",
+     "lat": 50.0759,
+     "lon": 14.417,
+     "wikipediaCount": 24,
+     "wikidataId": "Q956163",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg/500px-Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
+      "width": 500,
+      "height": 404,
+      "author": "Ludek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
+      "fullWidth": 2292
+     },
+     "description": "church in Prague"
     },
     {
      "id": "wikidata/Q521155",
@@ -319,7 +523,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Praha_Stavovsk%C3%A9_divadlo_5.jpg/500px-Praha_Stavovsk%C3%A9_divadlo_5.jpg",
+      "width": 500,
+      "height": 310,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Stavovsk%C3%A9_divadlo_5.jpg",
+      "fullWidth": 2000
+     },
+     "description": "theatre and opera house in Prague, Czech Republic, operated by the National Theatre company"
     },
     {
      "id": "relation/73471",
@@ -332,20 +547,18 @@
       "heritage",
       "office",
       "palace"
-     ]
-    },
-    {
-     "id": "wikidata/Q956163",
-     "name": "Aziz Kiril ve Methodios Katedrali",
-     "localName": "Ss. Cyril and Methodius Cathedral",
-     "lat": 50.0759,
-     "lon": 14.417,
-     "wikipediaCount": 23,
-     "wikidataId": "Q956163",
-     "kinds": [
-      "heritage",
-      "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Valdstejnsky_Palace_Lobkowicz_wing.jpg/500px-Valdstejnsky_Palace_Lobkowicz_wing.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "V. Groulík. Original uploader was Martinect at cs.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Valdstejnsky_Palace_Lobkowicz_wing.jpg",
+      "fullWidth": 3072
+     },
+     "description": "Prag'da saray"
     },
     {
      "id": "wikidata/Q603573",
@@ -356,7 +569,18 @@
      "wikidataId": "Q603573",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Child_Jesus_of_Prague_%28original_statue%29.jpg/500px-Child_Jesus_of_Prague_%28original_statue%29.jpg",
+      "width": 500,
+      "height": 350,
+      "author": "Fotobanka ČTK, René Fluger;",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Child_Jesus_of_Prague_(original_statue).jpg",
+      "fullWidth": 978
+     },
+     "description": "wooden-wax statuette in the Church of Our Lady Victorious in Malá Strana in Prague"
     },
     {
      "id": "way/255771323",
@@ -371,7 +595,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Prag_Altstaedter_Ring_rathaus.jpg/500px-Prag_Altstaedter_Ring_rathaus.jpg",
+      "width": 500,
+      "height": 717,
+      "author": "Hans Peter Schaefer, http://www.reserv-a-rt.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Prag_Altstaedter_Ring_rathaus.jpg",
+      "fullWidth": 1116
+     },
+     "description": "historical building in the Czech Republic"
     },
     {
      "id": "wikidata/Q2595999",
@@ -384,7 +619,8 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "description": "Prag'da kilise binası"
     },
     {
      "id": "wikidata/Q2916171",
@@ -397,7 +633,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Vy%C5%A1ehrad_bazilika_1.jpg/500px-Vy%C5%A1ehrad_bazilika_1.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vy%C5%A1ehrad_bazilika_1.jpg",
+      "fullWidth": 2048
+     },
+     "description": "church in Prague"
     },
     {
      "id": "relation/127987",
@@ -409,7 +656,18 @@
      "kinds": [
       "heritage",
       "palace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Praha_-_Palac_Goltz-Kinskych.jpg/500px-Praha_-_Palac_Goltz-Kinskych.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "W.Rebel",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_-_Palac_Goltz-Kinskych.jpg",
+      "fullWidth": 2144
+     },
+     "description": "Prag, Eski Kent'te bir saray"
     },
     {
      "id": "wikidata/Q2334312",
@@ -426,7 +684,18 @@
       "musicVenue",
       "organization",
       "performingArts"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Casa_municipal%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_09.jpg/500px-Casa_municipal%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_09.jpg",
+      "width": 500,
+      "height": 292,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_municipal,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_09.jpg",
+      "fullWidth": 5693
+     },
+     "description": "Prag'da konser salonu"
     },
     {
      "id": "wikidata/Q632057",
@@ -439,7 +708,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Prague-_N%C3%A1m%C4%9Bst%C3%AD_M%C3%ADru.jpg/500px-Prague-_N%C3%A1m%C4%9Bst%C3%AD_M%C3%ADru.jpg",
+      "width": 500,
+      "height": 688,
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Prague-_N%C3%A1m%C4%9Bst%C3%AD_M%C3%ADru.jpg",
+      "fullWidth": 2600
+     },
+     "description": "Prag'da kilise binası"
     },
     {
      "id": "wikidata/Q1000684",
@@ -453,7 +733,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Emauzsk%C3%BD_kl%C3%A1%C5%A1ter_6.jpg/500px-Emauzsk%C3%BD_kl%C3%A1%C5%A1ter_6.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Emauzsk%C3%BD_kl%C3%A1%C5%A1ter_6.jpg",
+      "fullWidth": 1920
+     },
+     "description": "abbey in Prague"
     },
     {
      "id": "node/3408716566",
@@ -466,7 +757,18 @@
       "heritage",
       "organization",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Hrad%C4%8Dany_Loreta_3.jpg/500px-Hrad%C4%8Dany_Loreta_3.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hrad%C4%8Dany_Loreta_3.jpg",
+      "fullWidth": 2048
+     },
+     "description": "church"
     },
     {
      "id": "wikidata/Q517766",
@@ -479,7 +781,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Maiselova_synagoga_3.jpg/500px-Maiselova_synagoga_3.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Maiselova_synagoga_3.jpg",
+      "fullWidth": 1768
+     },
+     "description": "synagogue"
     },
     {
      "id": "wikidata/Q1706629",
@@ -491,7 +804,18 @@
      "wikidataId": "Q1706629",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Letna-park._Eur%C3%B3pa_legnagyobb%2C_30_m%C3%A9teres_Szt%C3%A1lin_szobra_volt_%28%C3%A1llt_1962-ig%29._Ma_egy_25_m%C3%A9teres%2C_m%C5%B1k%C3%B6d%C5%91_metron%C3%B3m_van_a_hely%C3%A9n._Fortepan_7365_%28cropped%29.jpg/500px-thumbnail.jpg",
+      "width": 500,
+      "height": 666,
+      "author": "FOTO:Fortepan — ID 7365 : Adományozó/Donor: Szent-tamási Mihály. archive copy at the Wayback Machine",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Letna-park._Eur%C3%B3pa_legnagyobb,_30_m%C3%A9teres_Szt%C3%A1lin_szobra_volt_(%C3%A1llt_1962-ig)._Ma_egy_25_m%C3%A9teres,_m%C5%B1k%C3%B6d%C5%91_metron%C3%B3m_van_a_hely%C3%A9n._Fortepan_7365_(cropped).jpg",
+      "fullWidth": 1386
+     },
+     "description": "sculpture in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q1886083",
@@ -506,7 +830,18 @@
       "opera",
       "performingArts",
       "theatre"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/St%C3%A1tn%C3%AD_opera_in_Prague%2C_2010.jpg/500px-St%C3%A1tn%C3%AD_opera_in_Prague%2C_2010.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "High Contrast",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St%C3%A1tn%C3%AD_opera_in_Prague,_2010.jpg",
+      "fullWidth": 2340
+     },
+     "description": "opera house in Prague, Czechia, operated by the National Theatre company"
     },
     {
      "id": "wikidata/Q414009",
@@ -520,7 +855,18 @@
       "organization",
       "school",
       "university"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Hlavn%C3%AD_budova_AVU.jpg/500px-Hlavn%C3%AD_budova_AVU.jpg",
+      "width": 500,
+      "height": 359,
+      "author": "Blanka Cermakova",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hlavn%C3%AD_budova_AVU.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hlavn%C3%AD_budova_AVU.jpg",
+      "fullWidth": 2850
+     },
+     "description": "Art college in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q942102",
@@ -533,7 +879,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Jeruzal%C3%A9msk%C3%A1_synagoga_%C4%8Delo_2.jpg/500px-Jeruzal%C3%A9msk%C3%A1_synagoga_%C4%8Delo_2.jpg",
+      "width": 500,
+      "height": 725,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jeruzal%C3%A9msk%C3%A1_synagoga_%C4%8Delo_2.jpg",
+      "fullWidth": 1413
+     },
+     "description": "synagogue"
     },
     {
      "id": "wikidata/Q1503199",
@@ -546,7 +903,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Mal%C3%A1_Strana_kostel_PM_V%C3%ADt%C4%9Bzn%C3%A9_3.jpg/500px-Mal%C3%A1_Strana_kostel_PM_V%C3%ADt%C4%9Bzn%C3%A9_3.jpg",
+      "width": 500,
+      "height": 672,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mal%C3%A1_Strana_kostel_PM_V%C3%ADt%C4%9Bzn%C3%A9_3.jpg",
+      "fullWidth": 1523
+     },
+     "description": "Prag'da kilise binası"
     },
     {
      "id": "wikidata/Q1116389",
@@ -554,7 +922,18 @@
      "lat": 50.08117,
      "lon": 14.40427,
      "wikipediaCount": 18,
-     "wikidataId": "Q1116389"
+     "wikidataId": "Q1116389",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Memorial_to_the_Victims_of_Communism%2C_Prague.jpg/500px-Memorial_to_the_Victims_of_Communism%2C_Prague.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "High Contrast",
+      "license": "CC BY 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Memorial_to_the_Victims_of_Communism,_Prague.jpg",
+      "fullWidth": 2298
+     },
+     "description": "Memorial designed by Olbram Zoubek in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q1742720",
@@ -567,7 +946,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Kostel_Panny_Marie_Sn%C4%9B%C5%BEn%C3%A9_z_Franti%C5%A1k%C3%A1nsk%C3%A9_4.JPG/500px-Kostel_Panny_Marie_Sn%C4%9B%C5%BEn%C3%A9_z_Franti%C5%A1k%C3%A1nsk%C3%A9_4.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kostel_Panny_Marie_Sn%C4%9B%C5%BEn%C3%A9_z_Franti%C5%A1k%C3%A1nsk%C3%A9_4.JPG",
+      "fullWidth": 2560
+     },
+     "description": "Prag'da kilise binası"
     },
     {
      "id": "wikidata/Q1502676",
@@ -578,7 +968,18 @@
      "wikidataId": "Q1502676",
      "kinds": [
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Petrin_Funicular_2026_2.jpg/500px-Petrin_Funicular_2026_2.jpg",
+      "width": 500,
+      "height": 353,
+      "author": "ROPID",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Petrin_Funicular_2026_2.jpg",
+      "fullWidth": 1907
+     },
+     "description": "funicular railway in the Czech capital city of Prague"
     },
     {
      "id": "wikidata/Q1164329",
@@ -591,7 +992,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Praha_kostel_NSP_bok_1.jpg/500px-Praha_kostel_NSP_bok_1.jpg",
+      "width": 500,
+      "height": 303,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_kostel_NSP_bok_1.jpg",
+      "fullWidth": 1979
+     },
+     "description": "Katolik kilisesi"
     },
     {
      "id": "wikidata/Q1940904",
@@ -602,7 +1014,18 @@
      "wikidataId": "Q1940904",
      "kinds": [
       "sportsVenue"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Stadion_Evzena_Rosickeho%2C_north_stand.jpg/500px-Stadion_Evzena_Rosickeho%2C_north_stand.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Honza Záruba",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadion_Evzena_Rosickeho,_north_stand.jpg",
+      "fullWidth": 2048
+     },
+     "description": "sports stadium in Prague, Czech Republic"
     },
     {
      "id": "relation/2403951",
@@ -615,19 +1038,18 @@
       "heritage",
       "office",
       "palace"
-     ]
-    },
-    {
-     "id": "wikidata/Q1514053",
-     "name": "Charles Square",
-     "lat": 50.07583,
-     "lon": 14.42083,
-     "wikipediaCount": 16,
-     "wikidataId": "Q1514053",
-     "kinds": [
-      "heritage",
-      "square"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/2009-04-24_in_Prague_04.jpg/500px-2009-04-24_in_Prague_04.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Szilas",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2009-04-24_in_Prague_04.jpg",
+      "fullWidth": 3888
+     },
+     "description": "palace in Prague, Czech Republic"
     }
    ]
   },
@@ -649,7 +1071,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Museo_Nacional%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_265-267_HDR.jpg/500px-Museo_Nacional%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_265-267_HDR.jpg",
+      "width": 500,
+      "height": 273,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Nacional,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_265-267_HDR.jpg",
+      "fullWidth": 7178
+     },
+     "description": "Czech museum institution"
     },
     {
      "id": "node/3926969670",
@@ -664,7 +1097,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Praha_Veletr%C5%BEn%C3%AD_pal%C3%A1c_jih.jpg/500px-Praha_Veletr%C5%BEn%C3%AD_pal%C3%A1c_jih.jpg",
+      "width": 500,
+      "height": 348,
+      "author": "Czech Wikipedia user Packa",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Veletr%C5%BEn%C3%AD_pal%C3%A1c_jih.jpg",
+      "fullWidth": 2144
+     },
+     "description": "art museum in Prague, Czechia"
     },
     {
      "id": "way/28517451",
@@ -679,7 +1123,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Sinagoga_Espa%C3%B1ola%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_29.jpg/500px-Sinagoga_Espa%C3%B1ola%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-02%2C_DD_29.jpg",
+      "width": 500,
+      "height": 538,
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sinagoga_Espa%C3%B1ola,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_29.jpg",
+      "fullWidth": 5020
+     },
+     "description": "synagogue in Prague"
     },
     {
      "id": "wikidata/Q2424070",
@@ -693,7 +1148,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Pra%C5%BEsk%C3%BD_hrad%2C_Letohr%C3%A1dek_kr%C3%A1lovny_Anny_02.jpg/500px-Pra%C5%BEsk%C3%BD_hrad%2C_Letohr%C3%A1dek_kr%C3%A1lovny_Anny_02.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Karen Blaha",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pra%C5%BEsk%C3%BD_hrad,_Letohr%C3%A1dek_kr%C3%A1lovny_Anny_02.jpg",
+      "fullWidth": 3872
+     },
+     "description": "belvedere in Prague"
     },
     {
      "id": "node/443297509",
@@ -709,7 +1175,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Kafka_Museum_-_panoramio.jpg/500px-Kafka_Museum_-_panoramio.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Mister No",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kafka_Museum_-_panoramio.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Prag'da müze"
     },
     {
      "id": "wikidata/Q96482839",
@@ -721,7 +1198,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Praha%2C_Hole%C5%A1ovice%2C_zem%C4%9Bd%C4%9Blsk%C3%A9_a_technick%C3%A9_muzeum.JPG/500px-Praha%2C_Hole%C5%A1ovice%2C_zem%C4%9Bd%C4%9Blsk%C3%A9_a_technick%C3%A9_muzeum.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "I would appreciate being notified if you use my work outside Wikimedia. More of my work can be found in my personal gallery .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Hole%C5%A1ovice,_zem%C4%9Bd%C4%9Blsk%C3%A9_a_technick%C3%A9_muzeum.JPG",
+      "fullWidth": 2160
+     },
+     "description": "Czech museum organization"
     },
     {
      "id": "node/1269502274",
@@ -736,7 +1224,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/%C5%A0pan%C4%9Blsk%C3%A1_synagoga_a_Administrativn%C3%AD_budova_muzea_cropped.jpg/500px-%C5%A0pan%C4%9Blsk%C3%A1_synagoga_a_Administrativn%C3%AD_budova_muzea_cropped.jpg",
+      "width": 500,
+      "height": 362,
+      "author": "Martina Kemrová",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%A0pan%C4%9Blsk%C3%A1_synagoga_a_Administrativn%C3%AD_budova_muzea_cropped.jpg",
+      "fullWidth": 2322
+     },
+     "description": "museum in Czechia"
     },
     {
      "id": "way/179183380",
@@ -751,7 +1250,18 @@
      "kinds": [
       "heritage",
       "religious"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Praha_Pinkasova_synagoga_1.jpg/500px-Praha_Pinkasova_synagoga_1.jpg",
+      "width": 500,
+      "height": 347,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Pinkasova_synagoga_1.jpg",
+      "fullWidth": 1795
+     },
+     "description": "synagogue in Prague, Czech Republic"
     },
     {
      "id": "relation/5389879",
@@ -764,7 +1274,18 @@
      "kinds": [
       "heritage",
       "notPlace"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Pam%C3%A1tn%C3%ADk_N%C3%A1rodn%C3%AD_pam%C3%A1tn%C3%ADk_%28%C5%BDi%C5%BEkov%29.JPG/500px-Pam%C3%A1tn%C3%ADk_N%C3%A1rodn%C3%AD_pam%C3%A1tn%C3%ADk_%28%C5%BDi%C5%BEkov%29.JPG",
+      "width": 500,
+      "height": 310,
+      "author": "Michal Kmínek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%ADk_N%C3%A1rodn%C3%AD_pam%C3%A1tn%C3%ADk_(%C5%BDi%C5%BEkov).JPG",
+      "fullWidth": 1067
+     },
+     "description": "War memorial in Prague"
     },
     {
      "id": "node/1201707824",
@@ -778,7 +1299,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Praha_L%C3%A1vka_MBS_1.jpg/500px-Praha_L%C3%A1vka_MBS_1.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_L%C3%A1vka_MBS_1.jpg",
+      "fullWidth": 2000
+     },
+     "description": "museum in Prague"
     },
     {
      "id": "node/2517682988",
@@ -793,7 +1325,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Praga_-_panoramio_%28118%29.jpg/500px-Praga_-_panoramio_%28118%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "antigerme",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praga_-_panoramio_(118).jpg",
+      "fullWidth": 2048
+     },
+     "description": "Sex museum in Prague"
     },
     {
      "id": "way/365967543",
@@ -805,7 +1348,18 @@
      "wikidataId": "Q549551",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Bertramka_Mozart_Museum.JPG/500px-Bertramka_Mozart_Museum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Hikitsurisan I hereby assert that I am the creator of this contribution and it does not violate any third party rights.",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bertramka_Mozart_Museum.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bertramka_Mozart_Museum.JPG",
+      "fullWidth": 3072
+     },
+     "description": "Prag'da etkinlik merkezi"
     },
     {
      "id": "node/3217484773",
@@ -820,7 +1374,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Vila_Amerika_deska_MAD.jpg/500px-Vila_Amerika_deska_MAD.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vila_Amerika_deska_MAD.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Prag'da müze"
     },
     {
      "id": "node/4986978223",
@@ -835,7 +1400,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Praha_Nove_Mesto_V_celnici_4_Muzeum_komunismu.jpg/500px-Praha_Nove_Mesto_V_celnici_4_Muzeum_komunismu.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "JiriMatejicek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Nove_Mesto_V_celnici_4_Muzeum_komunismu.jpg",
+      "fullWidth": 2448
+     },
+     "description": "Czech Republic"
     },
     {
      "id": "way/30825119",
@@ -849,7 +1425,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Praha_UmPrum_1.jpg/500px-Praha_UmPrum_1.jpg",
+      "width": 500,
+      "height": 325,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_UmPrum_1.jpg",
+      "fullWidth": 2048
+     },
+     "description": "art museum in Prague, Czech Republic"
     },
     {
      "id": "node/4720384283",
@@ -862,7 +1449,18 @@
      "wikidataId": "Q2047086",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Lobkovick%C3%BD_pal%C3%A1c_na_Pra%C5%BEsk%C3%A9m_hrad%C4%9B_%28pohled_ze_Starom%C4%9Bstsk%C3%A9_mosteck%C3%A9_v%C4%9B%C5%BEe%29.jpg/500px-Lobkovick%C3%BD_pal%C3%A1c_na_Pra%C5%BEsk%C3%A9m_hrad%C4%9B_%28pohled_ze_Starom%C4%9Bstsk%C3%A9_mosteck%C3%A9_v%C4%9B%C5%BEe%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Skot",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Lobkovick%C3%BD_pal%C3%A1c_na_Pra%C5%BEsk%C3%A9m_hrad%C4%9B_(pohled_ze_Starom%C4%9Bstsk%C3%A9_mosteck%C3%A9_v%C4%9B%C5%BEe).jpg",
+      "fullWidth": 4101
+     },
+     "description": "building in in Prague, Czech Republic"
     },
     {
      "id": "way/295285613",
@@ -876,7 +1474,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Jewish_Ceremonial_Hall_Prague_Czech_Rep.jpg/500px-Jewish_Ceremonial_Hall_Prague_Czech_Rep.jpg",
+      "width": 500,
+      "height": 365,
+      "author": "Jim Linwood",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jewish_Ceremonial_Hall_Prague_Czech_Rep.jpg",
+      "fullWidth": 3997
+     },
+     "description": "museum in Czech Republic"
     },
     {
      "id": "node/3270484912",
@@ -891,7 +1500,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Mucha_Museum_in_Prague.jpg/500px-Mucha_Museum_in_Prague.jpg",
+      "width": 500,
+      "height": 1430,
+      "author": "Umclidet",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mucha_Museum_in_Prague.jpg",
+      "fullWidth": 1136
+     },
+     "description": "museum in Prague"
     },
     {
      "id": "node/1083723494",
@@ -906,7 +1526,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Kampa_museum_Prague_3039.JPG/500px-Kampa_museum_Prague_3039.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Hynek Moravec",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kampa_museum_Prague_3039.JPG",
+      "fullWidth": 2272
+     },
+     "description": "museum in Prague"
     },
     {
      "id": "node/344975004",
@@ -921,7 +1552,18 @@
       "museum",
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Prague_CZ_Old_Town_Betlemske_namesti_U_Halanku.jpg/500px-Prague_CZ_Old_Town_Betlemske_namesti_U_Halanku.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Gabriel Millos from Santa Barbara, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Prague_CZ_Old_Town_Betlemske_namesti_U_Halanku.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Prag'da müze"
     },
     {
      "id": "node/5614223550",
@@ -936,7 +1578,8 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in Prague, Czechia"
     },
     {
      "id": "node/3303681505",
@@ -951,7 +1594,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Po%C5%A1tovn%C3%AD_muzeum.JPG/500px-Po%C5%A1tovn%C3%AD_muzeum.JPG",
+      "width": 500,
+      "height": 396,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Po%C5%A1tovn%C3%AD_muzeum.JPG",
+      "fullWidth": 2316
+     },
+     "description": "museum in Prague, Czech Republic"
     },
     {
      "id": "node/11925998365",
@@ -967,7 +1621,18 @@
       "museum",
       "notPlace",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/CzechHockeyHallofFame_%2801%29.jpg/500px-CzechHockeyHallofFame_%2801%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Jiří Borový - IZDoprava.cz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CzechHockeyHallofFame_(01).jpg",
+      "fullWidth": 5232
+     },
+     "description": "museum in Czech Republic"
     },
     {
      "id": "node/4360610699",
@@ -982,7 +1647,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/OEPNVMuseumPrag001.jpg/500px-OEPNVMuseumPrag001.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "User:Netopyr",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:OEPNVMuseumPrag001.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:OEPNVMuseumPrag001.jpg",
+      "fullWidth": 1296
+     },
+     "description": "museum"
     },
     {
      "id": "way/22634016",
@@ -996,7 +1672,18 @@
      "wikidataId": "Q18198103",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Planetum%2C_Praha_%282025-08-07%29.jpg/500px-Planetum%2C_Praha_%282025-08-07%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Martin Hlauka (Pescan)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Planetum,_Praha_(2025-08-07).jpg",
+      "fullWidth": 3287
+     },
+     "description": "planetarium in Prague, Czech Republic"
     },
     {
      "id": "node/4016973329",
@@ -1010,7 +1697,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Praha_Stare_Mesto_U_Stare_skoly_3_2.jpg/500px-Praha_Stare_Mesto_U_Stare_skoly_3_2.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "JiriMatejicek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Stare_Mesto_U_Stare_skoly_3_2.jpg",
+      "fullWidth": 2448
+     },
+     "description": "gallery in Prague, Czech Republic"
     },
     {
      "id": "node/14101344575",
@@ -1023,7 +1721,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Pal%C3%A1c_Savarin_pr%C5%AF%C4%8Del%C3%AD.jpg/500px-Pal%C3%A1c_Savarin_pr%C5%AF%C4%8Del%C3%AD.jpg",
+      "width": 500,
+      "height": 368,
+      "author": "Crestyl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1c_Savarin_pr%C5%AF%C4%8Del%C3%AD.jpg",
+      "fullWidth": 3095
+     },
+     "description": "Museum in Prague"
     },
     {
      "id": "way/28921026",
@@ -1038,7 +1747,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "museum in the Czech Repbublic"
     },
     {
      "id": "node/2197547437",
@@ -1053,7 +1763,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Policejni_motocykly_MPCR_00492.JPG/500px-Policejni_motocykly_MPCR_00492.JPG",
+      "width": 500,
+      "height": 333,
+      "author": "Kenyh",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Policejni_motocykly_MPCR_00492.JPG",
+      "fullWidth": 4272
+     },
+     "description": "museum in Prague, Czech Republic"
     },
     {
      "id": "way/9113427",
@@ -1068,7 +1789,18 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Hole%C5%A1ovice_v%C3%BDstavi%C5%A1t%C4%9B_Lapid%C3%A1rium_1.jpg/500px-Hole%C5%A1ovice_v%C3%BDstavi%C5%A1t%C4%9B_Lapid%C3%A1rium_1.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hole%C5%A1ovice_v%C3%BDstavi%C5%A1t%C4%9B_Lapid%C3%A1rium_1.jpg",
+      "fullWidth": 4012
+     },
+     "description": "part of the National museum"
     },
     {
      "id": "node/3235823267",
@@ -1082,7 +1814,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Obraz%C3%A1rna_PH2.jpg/500px-Obraz%C3%A1rna_PH2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Zákupák",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Obraz%C3%A1rna_PH2.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Obraz%C3%A1rna_PH2.jpg",
+      "fullWidth": 3648
+     },
+     "description": "special purpose gallery in Prague Castle"
     },
     {
      "id": "way/41779392",
@@ -1094,7 +1837,18 @@
      "wikidataId": "Q7458134",
      "kinds": [
       "heritage"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Bubene%C4%8Dsk%C3%A1_%C4%8Dist%C3%ADrna_%2807%29.jpg/500px-Bubene%C4%8Dsk%C3%A1_%C4%8Dist%C3%ADrna_%2807%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "This image is a work by Miloslav Rejha ( User:M.Rejha ). When reusing, please credit me as: Miloslav Rejha, Wikimedia Commons . I would appreciate being notified if you use my work outside Wikimedia. Do not copy this image illegally by ignoring the terms of the license below, as it is not in the public domain. If you would like special permission to use, license, or purchase the image please contact me . More of my work can be found in my photostream on Flickr .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bubene%C4%8Dsk%C3%A1_%C4%8Dist%C3%ADrna_(07).jpg",
+      "fullWidth": 4217
+     },
+     "description": "national monument in Prague, Czech Republic"
     },
     {
      "id": "node/4437594389",
@@ -1108,7 +1862,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/D%C5%AFm_U_B%C3%ADl%C3%A9ho_p%C3%A1va557-Praha2010.jpg/500px-D%C5%AFm_U_B%C3%ADl%C3%A9ho_p%C3%A1va557-Praha2010.jpg",
+      "width": 500,
+      "height": 753,
+      "author": "Ben Skála",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C5%AFm_U_B%C3%ADl%C3%A9ho_p%C3%A1va557-Praha2010.jpg",
+      "fullWidth": 2848
+     },
+     "description": "Prag'da müze"
     },
     {
      "id": "node/1302407411",
@@ -1122,7 +1887,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Crewdson.jpg/500px-Crewdson.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Galerie Rudolfinum",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Crewdson.jpg",
+      "fullWidth": 800
+     },
+     "description": "art museum in Prague"
     },
     {
      "id": "node/1302217408",
@@ -1138,7 +1914,18 @@
       "business",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/N%C3%A1rodn%C3%AD_GV%C5%A0_1.jpg/500px-N%C3%A1rodn%C3%AD_GV%C5%A0_1.jpg",
+      "width": 500,
+      "height": 380,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_GV%C5%A0_1.jpg",
+      "fullWidth": 2942
+     },
+     "description": "Prag'da müze"
     },
     {
      "id": "node/3393564844",
@@ -1153,7 +1940,18 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/2013_%D0%B3%D0%BE%D0%B4._%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_23.JPG/500px-2013_%D0%B3%D0%BE%D0%B4._%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_23.JPG",
+      "width": 500,
+      "height": 747,
+      "author": "Хомелка",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2013_%D0%B3%D0%BE%D0%B4._%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_23.JPG",
+      "fullWidth": 2592
+     },
+     "description": "toy museum"
     },
     {
      "id": "node/296693693",
@@ -1167,7 +1965,18 @@
      "kinds": [
       "noCoordinate",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/VHU4.jpg/500px-VHU4.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "FilipVetter",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:VHU4.jpg",
+      "fullWidth": 800
+     },
+     "description": "research and museum organisation in the Czech Republic"
     },
     {
      "id": "node/3278327071",
@@ -1181,7 +1990,17 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Galerie_Josefa_Sudka%2C_Praha-Hrad%C4%8Dany%2C_%C3%9Avoz_24.jpg/500px-Galerie_Josefa_Sudka%2C_Praha-Hrad%C4%8Dany%2C_%C3%9Avoz_24.jpg",
+      "width": 500,
+      "height": 365,
+      "author": "Kirgyt12",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Galerie_Josefa_Sudka,_Praha-Hrad%C4%8Dany,_%C3%9Avoz_24.jpg",
+      "fullWidth": 2500
+     }
     },
     {
      "id": "way/30475391",
@@ -1197,7 +2016,17 @@
       "heritage",
       "museum",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Atelier_Josefa_Sudka_04.jpg/500px-Atelier_Josefa_Sudka_04.jpg",
+      "width": 500,
+      "height": 345,
+      "author": "Gampe",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Atelier_Josefa_Sudka_04.jpg",
+      "fullWidth": 1600
+     }
     },
     {
      "id": "node/13398440625",
@@ -1212,7 +2041,8 @@
      "kinds": [
       "museum",
       "organization"
-     ]
+     ],
+     "description": "Digital Art gallery established in 2025"
     }
    ]
   },
@@ -1229,7 +2059,18 @@
      "wikidataId": "Q244816",
      "kinds": [
       "office"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/La_Casa_Danzante_de_Praga_1.JPG/500px-La_Casa_Danzante_de_Praga_1.JPG",
+      "width": 500,
+      "height": 753,
+      "author": "No machine-readable author provided. Chosovi assumed (based on copyright claims).",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Casa_Danzante_de_Praga_1.JPG",
+      "fullWidth": 1479
+     },
+     "description": "building in Prague, Czech Republic"
     },
     {
      "id": "way/27124370",
@@ -1247,7 +2088,8 @@
       "notPlace",
       "organization",
       "tower"
-     ]
+     ],
+     "description": "tower in Prague, Czech Republic"
     },
     {
      "id": "way/391354925",
@@ -1262,7 +2104,18 @@
       "museum",
       "office",
       "organization"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Prag_Altstaedter_Ring_rathaus.jpg/500px-Prag_Altstaedter_Ring_rathaus.jpg",
+      "width": 500,
+      "height": 717,
+      "author": "Hans Peter Schaefer, http://www.reserv-a-rt.de",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Prag_Altstaedter_Ring_rathaus.jpg",
+      "fullWidth": 1116
+     },
+     "description": "historical building in the Czech Republic"
     },
     {
      "id": "way/7645353",
@@ -1278,7 +2131,8 @@
       "attraction",
       "heritage",
       "tower"
-     ]
+     ],
+     "description": "tower in Prague"
     },
     {
      "id": "way/839278890",
@@ -1294,7 +2148,18 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Karl%C5%AFv_most_v%C4%9B%C5%BE.jpg/500px-Karl%C5%AFv_most_v%C4%9B%C5%BE.jpg",
+      "width": 500,
+      "height": 775,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Karl%C5%AFv_most_v%C4%9B%C5%BE.jpg",
+      "fullWidth": 1290
+     },
+     "description": "national monument of the Czech Republic"
     },
     {
      "id": "way/839278891",
@@ -1309,7 +2174,18 @@
       "heritage",
       "notPlace",
       "tower"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Roman_Boed_Karl%C5%AFv_most3.jpg/500px-Roman_Boed_Karl%C5%AFv_most3.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Roman Boed from The Netherlands",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roman_Boed_Karl%C5%AFv_most3.jpg",
+      "fullWidth": 5879
+     },
+     "description": "national monument of the Czech Republic"
     },
     {
      "id": "node/288743366",
@@ -1320,7 +2196,18 @@
      "wikidataId": "Q111630477",
      "kinds": [
       "attraction"
-     ]
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Jelen%C3%AD_p%C5%99%C3%ADkop_-_Masarykova_vyhl%C3%ADdka_02.jpg/500px-Jelen%C3%AD_p%C5%99%C3%ADkop_-_Masarykova_vyhl%C3%ADdka_02.jpg",
+      "width": 500,
+      "height": 225,
+      "author": "Dobroš",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jelen%C3%AD_p%C5%99%C3%ADkop_-_Masarykova_vyhl%C3%ADdka_02.jpg",
+      "fullWidth": 3280
+     },
+     "description": "place above the Jelení příkop (Dear moat) near the Prague Castle"
     },
     {
      "id": "node/3198557322",
@@ -1598,7 +2485,17 @@
      "openingHours": "Mo-Fr 11:00-23:00; Sa,Su 12:00-23:00",
      "cuisine": "regional",
      "wikidataId": "Q20755448",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Deminka-11-2018-praha.jpg/500px-Deminka-11-2018-praha.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "The photonaut",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deminka-11-2018-praha.jpg",
+      "fullWidth": 6000
+     }
     },
     {
      "id": "node/300712776",
@@ -2028,7 +2925,18 @@
      "openingHours": "Mo-Fr 09:00-22:00;Sa-Su 10:00-22:00",
      "cuisine": "coffee shop",
      "wikidataId": "Q123240113",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Grand_Cafe_Orient_Prague.JPG/500px-Grand_Cafe_Orient_Prague.JPG",
+      "width": 500,
+      "height": 398,
+      "author": "Yorkist ( talk ) ( Uploads )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Grand_Cafe_Orient_Prague.JPG",
+      "fullWidth": 1462
+     },
+     "description": "café in Prague"
     },
     {
      "id": "node/4531576138",
@@ -2441,7 +3349,18 @@
      "website": "http://www.crossclub.cz/",
      "openingHours": "Mo-Su 00:00-05:00, 18:00-24:00; Fr, Sa 00:00-07:00, 18:00-24:00",
      "wikidataId": "Q19902165",
-     "detailed": true
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cross_Club_%281%29.jpg/500px-Cross_Club_%281%29.jpg",
+      "width": 500,
+      "height": 269,
+      "author": "Malyacko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cross_Club_(1).jpg",
+      "fullWidth": 2346
+     },
+     "description": "music venue in Prague, Czech Republic"
     },
     {
      "id": "node/2459457882",
@@ -2669,7 +3588,18 @@
      "lon": 14.44292,
      "address": "Argentinská 1",
      "openingHours": "Fr 22:00-04:00, Sa 21:00-05:00",
-     "wikidataId": "Q22074725"
+     "wikidataId": "Q22074725",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Praha_Holesovice_Argentinska_1.JPG/500px-Praha_Holesovice_Argentinska_1.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "JiriMatejicek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Holesovice_Argentinska_1.JPG",
+      "fullWidth": 1704
+     },
+     "description": "tenement in Czech Republic"
     },
     {
      "id": "node/4997465840",
