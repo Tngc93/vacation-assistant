@@ -1,4 +1,4 @@
-import { expect, test, type Page, type Request } from "@playwright/test";
+import { expect, test, type Page, type Request } from "./fixtures";
 
 // The AI provider is mocked with page.route: no key, no network. The page calls the provider straight from the
 // browser, so the mock sits where api.openai.com would answer.

@@ -1,4 +1,4 @@
-import { expect, test, type Request } from "@playwright/test";
+import { expect, test, type Request } from "./fixtures";
 
 // e2e server: VA_AI_MOCK=1 (the keyless demo: the mock provider answers web searches, labelled ÖRNEK VERİ),
 // VA_FLIGHTS_FIXTURES=1 and VA_OFFLINE=1 (no exchange rates, so only lira prices have a lira amount).

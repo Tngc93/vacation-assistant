@@ -65,8 +65,8 @@ export function PlanHeroSkeleton() {
       <span className="sr-only">Plan yükleniyor</span>
       <div className="grid content-start gap-4 md:col-span-7">
         <Skeleton className="h-3 w-24" />
-        <Skeleton className="h-12 w-64" />
-        <Skeleton className="h-3 w-80" />
+        <Skeleton className="h-12 w-full max-w-64" />
+        <Skeleton className="h-3 w-full max-w-80" />
         <div className="flex flex-wrap gap-2">
           {Array.from({ length: 8 }, (_, i) => (
             <Skeleton key={i} className="h-9 w-28" />

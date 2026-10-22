@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 // e2e server: VA_FLIGHTS_FIXTURES=1 (labelled sample flights) and VA_OFFLINE=1 (no exchange rates).
 function isoDaysFromNow(days: number): string {

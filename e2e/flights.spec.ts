@@ -1,4 +1,4 @@
-import { expect, test, type Page } from "@playwright/test";
+import { expect, test, type Page } from "./fixtures";
 
 // The e2e server runs with VA_FLIGHTS_FIXTURES=1: labelled sample prices, no token, no network.
 // Trips start on the 14th of a month at least ten days ahead, so the samples' nearby dates are in the future.

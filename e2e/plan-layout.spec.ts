@@ -1,4 +1,4 @@
-import { expect, test, type Page } from "@playwright/test";
+import { expect, test, type Page } from "./fixtures";
 
 function isoDaysFromNow(days: number): string {
   const date = new Date();
@@ -9,6 +9,23 @@ const plan = `/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDay
 
 const cards = (page: Page) => page.getByRole("list", { name: "Görülecek yerler" }).getByRole("button");
 const map = (page: Page) => page.getByRole("region", { name: "Mekân haritası" });
+const chips = (page: Page) => page.getByRole("group", { name: "Mekân kategorileri" }).getByRole("button");
+const SECTIONS = ["yerler", "gun-gun-plan", "butce", "bilet-ve-konaklama"] as const;
+
+/*
+ * The plan streams: React reveals each finished Suspense boundary in batches (about every 300 ms), so right
+ * after `load` a section may still sit in a hidden holder at the end of <body>. Anything that measures
+ * (evaluate, evaluateAll, boundingBox) first waits, web-first, for what it measures to be in place.
+ */
+async function heroReady(page: Page) {
+  await expect(chips(page)).toHaveCount(8);
+  await expect(chips(page).first()).toBeVisible();
+  await expect(cards(page).first()).toBeVisible();
+}
+
+async function sectionsReady(page: Page) {
+  for (const id of SECTIONS) await expect(page.locator(`main section#${id}`)).toBeVisible();
+}
 
 async function bottomWithin(page: Page, locator: ReturnType<Page["locator"]>, height: number) {
   await expect(locator).toBeVisible();
@@ -26,6 +43,7 @@ for (const [width, height] of [
   test(`at ${width}×${height} the hero fits without scrolling: title, chips, three cards and the map`, async ({ page }) => {
     await page.setViewportSize({ width, height });
     await page.goto(plan);
+    await heroReady(page);
     const hero = page.locator("#yerler");
     await bottomWithin(page, hero.getByRole("heading", { level: 1, name: "Barselona" }), height);
     await bottomWithin(page, hero.getByRole("group", { name: "Mekân kategorileri" }), height);
@@ -43,6 +61,7 @@ for (const [width, height] of [
 test("the carousel moves with its arrows and the keyboard, and keeps count", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto(plan);
+  await heroReady(page);
   const counter = page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/);
   await expect(counter).toHaveText(/^01 \/ /);
   await expect(page.getByRole("button", { name: "Önceki yer" })).toBeDisabled();
@@ -63,9 +82,12 @@ test("the carousel moves with its arrows and the keyboard, and keeps count", asy
 test("a chip filters the carousel and the map together, in the URL", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto(plan);
+  await heroReady(page);
   await expect(map(page)).toHaveAttribute("data-places", /^\d+$/);
   const before = Number(await map(page).getAttribute("data-places"));
-  const total = (await page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/).innerText()).split(" / ")[1];
+  const counter = page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/);
+  await expect(counter).toBeVisible();
+  const total = (await counter.innerText()).split(" / ")[1];
   expect(Number(total)).toBe(before);
 
   await page.getByRole("button", { name: "Restoran", exact: true }).click();
@@ -79,6 +101,7 @@ test("a chip filters the carousel and the map together, in the URL", async ({ pa
 test("a card lights up its dot on hover, and selecting it marks it on the map with its details", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto(plan);
+  await heroReady(page);
   const first = cards(page).first();
   await first.hover();
   await expect(map(page)).not.toHaveAttribute("data-active", "");
@@ -93,6 +116,9 @@ test("a card lights up its dot on hover, and selecting it marks it on the map wi
 test("at 375px there is no sideways page scroll, and the map strip opens full screen and closes with Escape", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto(plan);
+  await heroReady(page);
+  await sectionsReady(page);
+  await expect(cards(page).nth(1)).toBeAttached();
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(375);
   // One card at a time, with the next card's edge showing.
   const first = await cards(page).first().boundingBox();
@@ -102,6 +128,7 @@ test("at 375px there is no sideways page scroll, and the map strip opens full sc
 
   const open = page.getByRole("button", { name: /Haritayı aç/ });
   await open.scrollIntoViewIfNeeded();
+  await expect(open).toBeVisible();
   const strip = await open.boundingBox();
   expect(Math.round(strip!.height)).toBe(180);
   await open.click();
@@ -117,19 +144,23 @@ test("at 375px there is no sideways page scroll, and the map strip opens full sc
 
 test("the plan page has no visa section; the sections follow the hero in order with a sticky menu", async ({ page }) => {
   await page.goto(plan);
+  // Every section in place first: "no visa" only means something once the page has fully arrived.
+  await sectionsReady(page);
   await expect(page.locator("#vize")).toHaveCount(0);
   await expect(page.getByRole("heading", { name: "Vize" })).toHaveCount(0);
   await expect(page.getByText(/VİZESİZ|VİZE GEREKLİ/)).toHaveCount(0);
-  const order = await page.locator("main section[id]").evaluateAll((els) => els.map((e) => e.id).filter((id) => ["yerler", "gun-gun-plan", "butce", "bilet-ve-konaklama"].includes(id)));
-  expect(order).toEqual(["yerler", "gun-gun-plan", "butce", "bilet-ve-konaklama"]);
+  const order = await page
+    .locator("main section[id]")
+    .evaluateAll((els, wanted) => els.map((e) => e.id).filter((id) => wanted.includes(id)), [...SECTIONS] as string[]);
+  expect(order).toEqual([...SECTIONS]);
   await expect(page.getByText("İstersen buradan da bakabilirsin.")).toBeVisible();
 
   const nav = page.getByRole("navigation", { name: "Plan bölümleri" });
   await expect(nav.getByRole("link")).toHaveText(["Yerler", "Plan", "Bütçe", "Bilet ve konaklama"]);
   await nav.getByRole("link", { name: "Bütçe" }).click();
   await expect(nav.getByRole("link", { name: "Bütçe" })).toHaveAttribute("aria-current", "location");
-  const top = await nav.boundingBox();
-  expect(Math.round(top!.y)).toBe(0);
+  // Stuck to the top once scrolled there (polled: the jump to #butce may still be settling).
+  await expect.poll(async () => Math.round((await nav.boundingBox())!.y)).toBe(0);
 });
 
 test("'Tüm uçuşları gör' is closed by default and opens the list and its filter under both cards, at full width", async ({ page }) => {
@@ -143,6 +174,7 @@ test("'Tüm uçuşları gör' is closed by default and opens the list and its fi
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await expect(all.getByRole("button", { name: "Aktarmasız" })).toBeVisible();
   await expect(all.getByRole("article").first()).toBeVisible();
+  await expect(page.locator("#konaklama")).toBeVisible();
 
   // Under both cards, as wide as the section.
   const section = await page.locator("#bilet-ve-konaklama").boundingBox();
@@ -158,7 +190,9 @@ for (const width of [1280, 1440]) {
     await page.goto(plan);
     await page.locator("#ucuslar").getByRole("button", { name: "Tüm uçuşları gör" }).click();
     const tickets = page.locator("#tum-ucuslar article");
+    // The list arrives with its toggle (one Suspense boundary); measure once the last ticket is laid out too.
     await expect(tickets.first()).toBeVisible();
+    await expect(tickets.last()).toBeVisible();
     // Each leg's time line and its stops/duration caption sit on one line.
     const wrapped = await tickets.evaluateAll((articles) =>
       articles.flatMap((article) =>
@@ -175,8 +209,10 @@ for (const width of [1280, 1440]) {
 test("at 375px the chips are one row that scrolls on its own, and the first card's top half is on the first screen", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto(plan);
-  const chips = page.getByRole("group", { name: "Mekân kategorileri" }).getByRole("button");
-  const tops = await chips.evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().top)));
+  await heroReady(page);
+  await sectionsReady(page);
+  const tops = await chips(page).evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().top)));
+  expect(tops).toHaveLength(8);
   expect(new Set(tops).size).toBe(1);
   const row = page.getByRole("group", { name: "Mekân kategorileri" });
   expect(await row.evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(true);
@@ -187,7 +223,10 @@ test("at 375px the chips are one row that scrolls on its own, and the first card
 
 test("printing leaves out the hero, the carousel and the map, and keeps the plan and the budget", async ({ page }) => {
   await page.goto(plan);
+  await heroReady(page);
+  await sectionsReady(page);
   await page.emulateMedia({ media: "print" });
+  await expect(page.locator("#yerler")).toBeAttached();
   await expect(page.locator("#yerler")).toBeHidden();
   await expect(page.getByRole("navigation", { name: "Plan bölümleri" })).toBeHidden();
   await expect(page.locator("#gun-gun-plan")).toBeVisible();
