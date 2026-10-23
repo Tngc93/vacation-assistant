@@ -12,6 +12,8 @@ Vacationist, Vercel'in ücretsiz **Hobby** planında çalışır. Sunucu tarafı
 
 `main`'e her merge üretime, her PR bir önizleme (preview) adresine gider.
 
+**Canlı adres:** <https://vacationist-app.vercel.app>. Eski adres `vacation-assistant-nine.vercel.app` bu adrese yönlenir (2026-10-23'ten beri); repoda başka yerde geçmez.
+
 > Görseller Wikimedia Commons'ın kendi küçük resimlerinden gelir; Vercel Image Optimization kullanılmaz (`unoptimized` ve düz `<img>`), bu yüzden görsel dönüştürme kotası harcanmaz.
 
 ## 2. Ortam değişkenleri
@@ -24,7 +26,7 @@ Değerler yalnızca Vercel'de (**Settings → Environment Variables**) ve yereld
 | `TRAVELPAYOUTS_MARKER` | Production, Preview | Partner kimliği (sayısal "marker"); Aviasales linklerine eklenir. |
 | `TRAVELPAYOUTS_PROJECT_ID` | Production, Preview | Travelpayouts proje kimliği ("trs"); marker ile birlikte linkler `tp.media` partner linkinden geçer. |
 
-Vercel'in kendi sistem değişkenleri ayrıca tanımlanmaz: `VERCEL_PROJECT_PRODUCTION_URL` Open Graph görsellerinin, `robots.txt` ve `sitemap.xml`'in mutlak adresini verir (yoksa canlı adres kullanılır, `src/lib/brand.ts`).
+Vercel'in kendi sistem değişkenleri ayrıca tanımlanmaz. Open Graph görsellerinin, `robots.txt` ve `sitemap.xml`'in mutlak adresi `src/lib/brand.ts`'teki `SITE_URL` sabitidir (`metadataBase` de oradan); ortam değişkeninden okunmaz, çünkü birden fazla production alan adı varken Vercel'in `VERCEL_PROJECT_PRODUCTION_URL`'i eskisini verebilir. Fork'u başka adreste yayınlayan bu sabiti değiştirir.
 
 **Vercel'de tanımlanmaz:** `VA_FLIGHTS_FIXTURES`, `VA_AI_MOCK`, `VA_OFFLINE` ve `VA_TEST_NOW` yalnızca yerel geliştirme ve testler içindir; ilk ikisi Vercel'de zaten çalışmaz.
 
@@ -68,7 +70,7 @@ Vercel Hobby planı **yalnızca kişisel, ticari olmayan kullanım** içindir ([
 - Lighthouse (production build, `npx`, projeye paket eklenmez):
 
   ```bash
-  npx lighthouse@12 https://vacation-assistant-nine.vercel.app/ --preset=desktop --view
+  npx lighthouse@12 https://vacationist-app.vercel.app/ --preset=desktop --view
   ```
 
   Hedefler: Performance masaüstü ≥90, mobil ≥80; Accessibility ≥95; Best Practices ≥95; SEO ≥90 (`noindex` sayfalar hariç). Son ölçüm aşağıda.
