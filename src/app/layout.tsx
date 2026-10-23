@@ -1,12 +1,15 @@
 import type { Metadata, Viewport } from "next";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { BRAND_DESCRIPTION, BRAND_NAME } from "@/lib/brand";
+import { BRAND_DESCRIPTION, BRAND_NAME, SITE_URL } from "@/lib/brand";
 import { cn } from "@/lib/cn";
 import { themeInitScript } from "@/lib/theme";
 import { fraunces, geist, geistMono } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  // Open Graph images and the canonical address become absolute URLs on this origin.
+  metadataBase: new URL(SITE_URL),
   applicationName: BRAND_NAME,
   title: {
     default: BRAND_NAME,
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: BRAND_DESCRIPTION,
   openGraph: { type: "website", locale: "tr_TR", siteName: BRAND_NAME, title: BRAND_NAME, description: BRAND_DESCRIPTION },
-  twitter: { card: "summary", title: BRAND_NAME, description: BRAND_DESCRIPTION },
+  twitter: { card: "summary_large_image", title: BRAND_NAME, description: BRAND_DESCRIPTION },
 };
 
 export const viewport: Viewport = {
@@ -43,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="icerik" className="flex-1">
           {children}
         </main>
+        <SiteFooter />
       </body>
     </html>
   );

@@ -46,7 +46,7 @@ function AmountField({
       </label>
       <div
         className={cn(
-          "mt-1.5 flex h-11 items-center gap-2 rounded-sm border bg-paper-raised px-3 focus-within:border-ink",
+          "mt-1.5 flex h-11 items-center gap-2 rounded-sm border bg-paper-raised px-3 focus-within:border-ink field-focus-ring",
           error ? "border-warn" : "border-rule",
         )}
       >
@@ -77,23 +77,29 @@ function AmountField({
 }
 
 function Row({ row }: { row: ReceiptRow }) {
+  const hasNotes = Boolean(row.detail || row.captions.length || row.note);
+  // A <dl> group holds only <dt> and <dd>: the dotted leader lives in the term, the notes in a second <dd>.
   return (
-    <div className="py-3">
-      <div className="flex items-baseline gap-2">
+    <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-x-2 py-3">
+      <dt className="flex min-w-0 items-baseline gap-2 text-body">
         {/* The label may wrap; the amount never does, so a narrow screen never scrolls sideways. */}
-        <dt className="min-w-0 text-body">{row.label}</dt>
+        <span className="min-w-0">{row.label}</span>
         <span aria-hidden="true" className="min-w-4 flex-1 translate-y-[-0.3em] border-b border-dotted border-ink-muted" />
-        <dd className={cn("shrink-0 font-mono text-body tabular", row.amount === null && "text-ink-muted")}>
-          {row.amount === null ? row.missing : formatMinor(row.amount, "TRY")}
+      </dt>
+      <dd className={cn("shrink-0 font-mono text-body tabular", row.amount === null && "text-ink-muted")}>
+        {row.amount === null ? row.missing : formatMinor(row.amount, "TRY")}
+      </dd>
+      {hasNotes ? (
+        <dd className="col-span-2">
+          {row.detail ? <p className="mt-1 font-mono text-caption tabular text-ink-muted">{row.detail}</p> : null}
+          {row.captions.map((caption) => (
+            <Caption key={caption} as="p" className="mt-1">
+              {caption}
+            </Caption>
+          ))}
+          {row.note ? <p className="mt-1 text-caption text-ink-muted">{row.note}</p> : null}
         </dd>
-      </div>
-      {row.detail ? <p className="mt-1 font-mono text-caption tabular text-ink-muted">{row.detail}</p> : null}
-      {row.captions.map((caption) => (
-        <Caption key={caption} as="p" className="mt-1">
-          {caption}
-        </Caption>
-      ))}
-      {row.note ? <p className="mt-1 text-caption text-ink-muted">{row.note}</p> : null}
+      ) : null}
     </div>
   );
 }

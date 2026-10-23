@@ -64,7 +64,9 @@ function renderExplorer(overrides: Partial<Parameters<typeof HeroExplorer>[0]> =
     />,
   );
 }
-const card = (name: RegExp | string) => screen.getByRole("button", { name: typeof name === "string" ? new RegExp(`^\\d\\d\\. ${name},`) : name });
+// A card's name is its visible text: "MUTLAKA GÖR · 01 " for sights, then the place's name.
+const card = (name: RegExp | string) =>
+  screen.getByRole("button", { name: typeof name === "string" ? new RegExp(`^(MUTLAKA GÖR · \\d\\d )?${name} `) : name });
 const map = () => screen.getByRole("region", { name: "Mekân haritası" });
 const detail = () => screen.getByRole("button", { name: "Ayrıntıyı kapat" }).closest("article")!;
 
@@ -134,7 +136,7 @@ describe("HeroExplorer", () => {
     };
     const withPhotos = sights.map((p) => ({ ...p, photo }));
     renderExplorer({ categories: ["see"], results: [{ category: "see", status: "ok", places: withPhotos, wikipediaCountsAvailable: true }] });
-    const first = screen.getByRole("button", { name: /^01\. Sight 1, Görülecek yer\. Fotoğraf: Canaan · CC BY-SA 4\.0 · Wikimedia Commons$/ });
+    const first = screen.getByRole("button", { name: /^MUTLAKA GÖR · 01 Sight 1 Görülecek yer · .*\. Fotoğraf: Canaan · CC BY-SA 4\.0 · Wikimedia Commons$/ });
     const img = first.querySelector("img")!;
     expect(img).toHaveAttribute("src", photo.src);
     expect(img.getAttribute("srcset")).toContain("500px-SF.jpg 500w");
@@ -142,8 +144,8 @@ describe("HeroExplorer", () => {
     expect(img.closest(".duotone")).not.toBeNull();
     expect(img).toHaveAttribute("loading", "eager");
     expect(card("Sight 4").querySelector("img")).toHaveAttribute("loading", "lazy");
-    // No credit text on the card itself, only in its label…
-    expect(first).not.toHaveTextContent("Canaan");
+    // No credit shown on the card itself, only in its (visually hidden) name…
+    expect(within(first).getByText(/Canaan/)).toHaveClass("sr-only");
     // …and in the details, with links to the file and the licence.
     await user.click(first);
     expect(within(detail()).getByRole("link", { name: "Canaan" })).toHaveAttribute("href", photo.fileUrl);

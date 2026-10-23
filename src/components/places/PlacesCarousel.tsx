@@ -41,11 +41,16 @@ function prefersReducedMotion(): boolean {
 /**
  * The places as a scroll-snap carousel: three cards at a time on wide screens, one (with the next one's edge)
  * on phones. Arrow buttons, keyboard arrows and a counter ("01 / 24"); no animation with reduced motion.
+ * One Tab stop for the whole row (a roving tabindex): Tab enters on the last card used, the arrows, Home and End
+ * move between cards, and the next Tab leaves the carousel.
  */
 export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, onActivate, onSelect, reveal }: Props) {
   const track = useRef<HTMLUListElement>(null);
   const [index, setIndex] = useState(0);
   const [atEnd, setAtEnd] = useState(items.length <= 1);
+  // The card that takes the row's Tab stop; a filtered, shorter list falls back to the first card.
+  const [current, setCurrent] = useState(0);
+  const tabbable = current < items.length ? current : 0;
 
   const cards = () => Array.from(track.current?.children ?? []) as HTMLElement[];
 
@@ -67,7 +72,15 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
     setAtEnd(el.scrollLeft + el.clientWidth >= el.scrollWidth - 2);
   };
 
-  // A place picked on the map: bring its card into view.
+  // A place picked on the map takes the Tab stop (set while rendering, not in an effect)…
+  const [revealed, setRevealed] = useState(reveal);
+  if (reveal !== revealed) {
+    setRevealed(reveal);
+    const i = reveal ? items.findIndex((item) => item.place.id === reveal.id) : -1;
+    if (i >= 0) setCurrent(i);
+  }
+
+  // …and its card comes into view.
   useEffect(() => {
     if (!reveal) return;
     const i = items.findIndex((item) => item.place.id === reveal.id);
@@ -75,12 +88,13 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
   }, [reveal, items, goTo]);
 
   const onKeyDown = (event: KeyboardEvent<HTMLUListElement>) => {
-    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
-    event.preventDefault();
     const list = cards();
     const focused = list.findIndex((card) => card.contains(document.activeElement));
     const from = focused >= 0 ? focused : index;
-    goTo(from + (event.key === "ArrowRight" ? 1 : -1), focused >= 0);
+    const target = { ArrowRight: from + 1, ArrowLeft: from - 1, Home: 0, End: list.length - 1 }[event.key];
+    if (target === undefined) return;
+    event.preventDefault();
+    goTo(target, focused >= 0);
   };
 
   return (
@@ -89,18 +103,18 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
         ref={track}
         role="list"
         aria-label="Görülecek yerler"
-        tabIndex={0}
         onScroll={onScroll}
         onKeyDown={onKeyDown}
         className="relative flex min-h-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-1 [scrollbar-width:none] motion-reduce:scroll-auto"
       >
         {items.map((item, i) => (
-          <li key={item.place.id} className="w-[85%] shrink-0 snap-start md:w-[calc((100%-2rem)/3)]">
+          <li key={item.place.id} onFocus={() => setCurrent(i)} className="w-[85%] shrink-0 snap-start md:w-[calc((100%-2rem)/3)]">
             <PlaceTile
               item={item}
               center={center}
               timeZone={timeZone}
               position={i + 1}
+              tabbable={i === tabbable}
               highlighted={activeId === item.place.id || selectedId === item.place.id}
               selected={selectedId === item.place.id}
               onActivate={onActivate}
@@ -153,7 +167,7 @@ function TodayHours({ value, timeZone }: { value: string | undefined; timeZone: 
   ) : null;
 }
 
-/** "Fotoğraf: Canaan · CC BY-SA 4.0 · Wikimedia Commons" (the card's aria-label; the details link both). */
+/** "Fotoğraf: Canaan · CC BY-SA 4.0 · Wikimedia Commons" (visually hidden in the card's name; the details link both). */
 export function photoCredit(photo: { author: string; license: string }): string {
   return `Fotoğraf: ${photo.author} · ${photo.license} · Wikimedia Commons`;
 }
@@ -162,13 +176,14 @@ export function photoCredit(photo: { author: string; license: string }): string 
  * A place card: the Commons photo (duotone, like the city photo) over the top ~60%, or, without one, a large
  * category icon with the Wikidata description (else the address); below, "MUTLAKA GÖR · NN" for sights, the
  * name, the category, the walk to the centre and today's hours. Every card has the same height. The whole card
- * is one button that selects the place; the photo credit is in its label and in the details, not on the card.
+ * is one button that selects the place; the photo credit is in its name and in the details, not shown on the card.
  */
 function PlaceTile({
   item,
   center,
   timeZone,
   position,
+  tabbable,
   highlighted,
   selected,
   onActivate,
@@ -178,6 +193,7 @@ function PlaceTile({
   center: { lat: number; lon: number };
   timeZone: string;
   position: number;
+  tabbable: boolean;
   highlighted: boolean;
   selected: boolean;
   onActivate: (id: string | null) => void;
@@ -188,10 +204,13 @@ function PlaceTile({
   const mustSee = category === "see";
   const about = place.description ?? place.address;
   return (
+    // The card's name is its visible text (WCAG 2.5.3, label in name), plus the photo credit for screen readers.
+    // The text comes first in the DOM and the photo is moved on top with `order-first`, so the name starts
+    // with what the card says rather than with the description under a missing photo.
     <button
       type="button"
       aria-pressed={selected}
-      aria-label={`${pad(position)}. ${place.name}, ${CATEGORIES[category].label}${place.photo ? `. ${photoCredit(place.photo)}` : ""}`}
+      tabIndex={tabbable ? 0 : -1}
       onClick={() => onSelect(place.id)}
       onMouseEnter={() => onActivate(place.id)}
       onMouseLeave={() => onActivate(null)}
@@ -202,7 +221,19 @@ function PlaceTile({
         highlighted ? "border-accent" : "border-rule hover:border-ink",
       )}
     >
-      <span className="relative block h-[58%] min-h-32 shrink-0 overflow-hidden border-b border-rule">
+      <span className="flex min-h-0 flex-1 flex-col p-4">
+        {mustSee ? (
+          <Caption as="span" tone="ink" className="block">
+            MUTLAKA GÖR · {pad(rank)}
+          </Caption>
+        ) : null}{" "}
+        <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{place.name}</span>{" "}
+        <Caption as="span" className="mt-auto block pt-2">
+          {CATEGORIES[category].label} · {place.remote ? "MERKEZE UZAK" : walkToCentre(place, center)}
+        </Caption>{" "}
+        <TodayHours value={place.openingHours} timeZone={timeZone} />
+      </span>{" "}
+      <span className="relative order-first block h-[58%] min-h-32 shrink-0 overflow-hidden border-b border-rule">
         {place.photo ? (
           <span className="duotone block h-full">
             {/* Commons serves sized thumbnails itself; next/image optimisation would add nothing. */}
@@ -214,6 +245,8 @@ function PlaceTile({
               width={place.photo.width}
               height={place.photo.height}
               alt=""
+              // Like the city photo: no credentials, so no Commons cookies.
+              crossOrigin="anonymous"
               loading={position <= 3 ? "eager" : "lazy"}
               // On phones the first card's photo is the largest paint; the second and third wait their turn.
               fetchPriority={position === 1 ? "auto" : "low"}
@@ -231,18 +264,7 @@ function PlaceTile({
           {pad(rank)}
         </span>
       </span>
-      <span className="flex min-h-0 flex-1 flex-col p-4">
-        {mustSee ? (
-          <Caption as="span" tone="ink" className="block">
-            MUTLAKA GÖR · {pad(rank)}
-          </Caption>
-        ) : null}
-        <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{place.name}</span>
-        <Caption as="span" className="mt-auto block pt-2">
-          {CATEGORIES[category].label} · {place.remote ? "MERKEZE UZAK" : walkToCentre(place, center)}
-        </Caption>
-        <TodayHours value={place.openingHours} timeZone={timeZone} />
-      </span>
+      {place.photo ? <span className="sr-only">. {photoCredit(place.photo)}</span> : null}
     </button>
   );
 }

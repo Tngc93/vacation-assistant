@@ -133,7 +133,7 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
       <div
         className={cn(
           "flex h-11 items-center gap-2 rounded-sm border bg-paper px-3 transition-colors duration-150 ease-out",
-          "focus-within:border-ink",
+          "focus-within:border-ink field-focus-ring",
           error ? "border-warn" : "border-rule",
         )}
       >
