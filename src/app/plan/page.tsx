@@ -11,7 +11,8 @@ import { BRAND_NAME } from "@/lib/brand";
 import { formatDay } from "@/lib/format";
 import { isoToDate } from "@/lib/search/dates";
 import { todayInIstanbul } from "@/lib/search/dates";
-import { describeSearch } from "@/lib/search/describe";
+import { describeSearch, formatDateRange } from "@/lib/search/describe";
+import { OG_SIZE } from "@/lib/og/size";
 import { parseBudgetParams } from "@/lib/budget/params";
 import { parseDirect } from "@/lib/flights/display";
 import { parseEdits, parsePinned } from "@/lib/ai/edits";
@@ -34,12 +35,20 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     return { title: "Plan", description: "Planı açmak için varış şehrini ve tarihleri seç.", robots: { index: false } };
   }
   const { title, description } = describeSearch(result.value);
+  const { to, depart, return: ret } = result.value;
+  const image = {
+    url: `/og/plan?${new URLSearchParams({ to, depart, return: ret })}`,
+    ...OG_SIZE,
+    alt: `${findDestination(to)?.nameTr ?? "Plan"} · ${formatDateRange(depart, ret)}`,
+  };
   return {
     title,
     description,
     // Child metadata replaces these objects whole, so the site name is repeated here.
-    openGraph: { type: "website", locale: "tr_TR", siteName: BRAND_NAME, title, description },
-    twitter: { card: "summary", title, description },
+    openGraph: { type: "website", locale: "tr_TR", siteName: BRAND_NAME, title, description, images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+    // Shared plans preview (Open Graph above) but are not indexed; robots.txt leaves /plan crawlable so the
+    // link-preview bots can read this.
     robots: { index: false },
   };
 }
