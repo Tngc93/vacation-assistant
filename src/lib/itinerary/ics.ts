@@ -111,6 +111,8 @@ function description(stop: PlanStop): string {
     stop.hours === "unknown" ? "Açılış saatlerini doğrula." : null,
     stop.closesSoon ? `Kapanış: ${stop.closesSoon}` : null,
     `${stop.source}: ${stop.sourceUrl}`,
+    // Places inside the stop are seen during its visit: listed here, not events of their own.
+    ...(stop.inside?.length ? [`İçinde: ${stop.inside.map((s) => s.name).join(", ")}`] : []),
   ]
     .filter(Boolean)
     .join("\n");

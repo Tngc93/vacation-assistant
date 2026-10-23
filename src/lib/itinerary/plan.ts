@@ -34,6 +34,10 @@ export type PlanPlace = {
   exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
   /** Far from the centre (the Atomium): an area of its own, never a filler. */
   remote?: true;
+  /** Wikidata item of the place it is inside (the Tsar Bell in the Kremlin): visited with that place, as a sub-stop. */
+  parentId?: string;
+  /** That place's name to show: "Moskova Kremlini". */
+  parentName?: string;
   category: CategoryId;
 };
 
@@ -91,6 +95,14 @@ export type PlanStop = {
   /** OpenStreetMap, or Wikidata for a must-see place OSM does not have. */
   sourceUrl: string;
   source: "OpenStreetMap" | "Wikidata";
+  /** Places inside this one (the Kremlin's Tsar Bell), seen during its visit: no time of their own, no walk between. */
+  inside?: PlanSubStop[];
+};
+
+/** A place inside a stop, visited with it. */
+export type PlanSubStop = Pick<PlanStop, "id" | "shortId" | "name" | "localName" | "category" | "lat" | "lon" | "hours" | "sourceUrl" | "source"> & {
+  /** The place it is in: "Moskova Kremlini" ("MOSKOVA KREMLİNİ İÇİNDE"). */
+  within: string;
 };
 
 export type DayTag = "VARIŞ GÜNÜ" | "DÖNÜŞ GÜNÜ" | "YARIM GÜN" | "TAM GÜN";
@@ -287,10 +299,10 @@ function toStop(
   travel: Travel | null,
   hours: "open" | "unknown",
   closesAt: number | null = null,
+  inside: readonly { place: PlanPlace; hours: "open" | "unknown" }[] = [],
+  durationMin = visitMinutes(p, kind, date),
 ): PlanStop {
-  const durationMin = visitMinutes(p, kind, date);
   const outside = kind === "daytime" && seenFromOutside(p, date);
-  const wikidataOnly = p.id.startsWith("wikidata/");
   const closesSoon = closesAt !== null && closesAt - (start + durationMin) <= ITINERARY.closingSoonMin ? hhmm(closesAt) : null;
   return {
     id: p.id,
@@ -311,9 +323,47 @@ function toStop(
     travel,
     exterior: outside ? { note: p.exterior?.note ?? null } : null,
     remote: Boolean(p.remote),
+    ...sourceOf(p),
+    ...(inside.length
+      ? {
+          inside: inside.map(({ place: c, hours: h }) => ({
+            id: c.id,
+            shortId: shortId(c.id),
+            name: c.name,
+            ...(c.localName ? { localName: c.localName } : {}),
+            category: c.category,
+            lat: c.lat,
+            lon: c.lon,
+            hours: h,
+            ...sourceOf(c),
+            within: c.parentName ?? p.name,
+          })),
+        }
+      : {}),
+  };
+}
+
+function sourceOf(p: PlanPlace): Pick<PlanStop, "sourceUrl" | "source"> {
+  const wikidataOnly = p.id.startsWith("wikidata/");
+  return {
     sourceUrl: wikidataOnly ? `https://www.wikidata.org/wiki/${p.wikidataId ?? p.id.slice(9)}` : `https://www.openstreetmap.org/${p.id}`,
     source: wikidataOnly ? "Wikidata" : "OpenStreetMap",
   };
+}
+
+/**
+ * Place id → the place it is inside (data: Wikidata P361/P276, places/containment.ts), among `places`. The parent
+ * must be a possible stop itself (not a residence closed to visitors) and not inside another place: one level.
+ */
+export function insideOf(places: readonly PlanPlace[]): Map<string, PlanPlace> {
+  const byQid = new Map<string, PlanPlace>();
+  for (const p of places) if (p.wikidataId && !p.noVisit && !byQid.has(p.wikidataId)) byQid.set(p.wikidataId, p);
+  const out = new Map<string, PlanPlace>();
+  for (const p of places) {
+    const parent = p.parentId ? byQid.get(p.parentId) : undefined;
+    if (parent && parent.id !== p.id && !(parent.parentId && byQid.has(parent.parentId))) out.set(p.id, parent);
+  }
+  return out;
 }
 
 /**
@@ -335,6 +385,10 @@ function toStop(
  *    never filled with made-up stops.
  * 4. The evening place is the best ranked one near the last stop; a chain's
  *    name is suggested only once in the plan.
+ *
+ * A place inside another one (the Tsar Bell in the Kremlin) is never a stop of
+ * its own while that place can be planned: it comes with it, as a sub-stop
+ * right after it, and the visit lasts as long as the longest of them.
  */
 export function buildItinerary(input: ItineraryInput): Itinerary {
   const skip = new Set(input.skip);
@@ -342,7 +396,18 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   // Sights mapped as several OSM objects count once (the shared rule in places/twins.ts). Twins are removed
   // before skipping, so removing a place never brings back its twin.
   // Residences closed to visitors are not plan stops (they stay in the guide).
-  const daytime = sameNameOnce(importanceOrder(input.daytime)).filter((p) => !p.noVisit && !skip.has(shortId(p.id)));
+  const pool = sameNameOnce(importanceOrder(input.daytime)).filter((p) => !p.noVisit);
+  const parentOf = insideOf(pool);
+  const skipped = (p: PlanPlace) => skip.has(shortId(p.id));
+  // Removing a place removes what is inside it; bringing it back brings them back.
+  const available = pool.filter((p) => !skipped(p) && !(parentOf.has(p.id) && skipped(parentOf.get(p.id)!)));
+  const childrenOf = new Map<string, PlanPlace[]>();
+  for (const p of available) {
+    const parent = parentOf.get(p.id);
+    if (parent) childrenOf.set(parent.id, [...(childrenOf.get(parent.id) ?? []), p]);
+  }
+  // The places the plan chooses from: the children ride along with their parent.
+  const daytime = available.filter((p) => !parentOf.has(p.id));
   // Food and drink are not merged (the same name nearby is usually another branch of a chain); instead each
   // name is suggested as an evening place at most once in the plan.
   const seenEvening = new Set<string>();
@@ -419,7 +484,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   // A day being built: its stops so far, where it is and when.
   type Build = { day: DayFrame; area: number; stops: PlanStop[]; at: PlanPlace | null; clock: number; viewpoints: number };
   const builds: Build[] = order.map((day, area) => ({ day, area, stops: [], at: null, clock: day.daytime!.start, viewpoints: 0 }));
-  const byPlace = new Map(daytime.map((p) => [p.id, p]));
+  const byPlace = new Map(available.map((p) => [p.id, p]));
   /** Another record of a place already in the plan (within 80 m): the same visit. */
   const sameSpotTaken = (p: PlanPlace) =>
     [...used].some((id) => {
@@ -430,20 +495,32 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   /**
    * Appends `p` to the day if it fits before the day ends and is not surely closed then. With `wait`, a place
    * that is closed at the next free moment may start later that day, when it opens (for the top five).
+   * The places inside `p` come with it (unless it is seen from outside that day, or one is surely closed then):
+   * no time of their own, but the visit lasts as long as the longest of them.
    */
   const tryAppend = (b: Build, p: PlanPlace, wait = false): boolean => {
     if (b.stops.length >= maxStops || used.has(p.id) || sameSpotTaken(p)) return false;
     const window = b.day.daytime!;
     const base = (b.day.number - 1) * 1440;
+    const weekday = weekdayOf(b.day.date);
     const travel: Travel | null = b.at ? travelBetween(b.at, p) : null;
-    const visit = visitMinutes(p, "daytime", b.day.date);
+    const own = visitMinutes(p, "daytime", b.day.date);
+    const children = seenFromOutside(p, b.day.date) ? [] : (childrenOf.get(p.id) ?? []).filter((c) => !used.has(c.id));
+    const longest = (list: readonly PlanPlace[]) => Math.max(own, ...list.map((c) => visitMinutes(c, "daytime", b.day.date)));
+    const visit = longest(children);
     for (let start = roundUp(b.clock + (travel?.scheduledMin ?? 0)); start + visit <= window.end; start += WAIT_STEP_MIN) {
-      const { verdict, closesAt } = openCheck(p.openingHours, weekdayOf(b.day.date), start - base, start + visit - base);
+      const { verdict, closesAt } = openCheck(p.openingHours, weekday, start - base, start + visit - base);
       if (verdict !== "closed") {
-        b.stops.push(toStop(p, "daytime", b.day.date, start - base, travel, verdict, closesAt));
+        const inside = children.flatMap((c) => {
+          const check = openCheck(c.openingHours, weekday, start - base, start + visit - base).verdict;
+          return check === "closed" ? [] : [{ place: c, hours: check === "open" ? ("open" as const) : ("unknown" as const) }];
+        });
+        const duration = longest(inside.map((c) => c.place));
+        b.stops.push(toStop(p, "daytime", b.day.date, start - base, travel, verdict, closesAt, inside, duration));
         used.add(p.id);
+        for (const c of inside) used.add(c.place.id);
         b.at = p;
-        b.clock = start + visit;
+        b.clock = start + duration;
         if (unnamedViewpoint(p)) b.viewpoints++;
         return true;
       }
@@ -462,9 +539,13 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   };
 
   if (input.pinned) {
-    // A chosen plan: each day's stops in the given order, timed by the same rules; nothing else is added.
+    // A chosen plan: each day's stops in the given order, timed by the same rules; nothing else is added, except
+    // the places inside a chosen one. A place inside a chosen one goes with it, whatever day it was given.
+    const chosen = new Set(input.pinned.flat());
     for (const b of builds) {
       for (const id of input.pinned[b.day.number - 1] ?? []) {
+        const parent = parentOf.get(id);
+        if (parent && byPlace.has(parent.id) && chosen.has(parent.id)) continue;
         const p = byPlace.get(id);
         if (!p || !tryAppend(b, p, true)) dropped.push(id);
       }

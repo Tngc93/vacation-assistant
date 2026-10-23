@@ -66,20 +66,49 @@ const zodErrors = (error: z.ZodError) => error.issues.slice(0, 8).map((i) => `${
 
 export type AiPlan = { pinned: string[][]; reasons: Record<number, string> };
 
+type PlanAnswer = z.infer<typeof aiPlanSchema>;
+
+/** Candidates inside another chosen candidate: they go with it, so they are neither stops nor the model's mistake. */
+function insideChosen(plan: PlanAnswer, candidates: readonly Candidate[]): Map<string, string> {
+  const chosen = new Set(plan.days.flatMap((d) => d.stops));
+  return new Map(candidates.flatMap((c) => (c.inside && chosen.has(c.id) && chosen.has(c.inside) ? [[c.id, c.inside] as const] : [])));
+}
+
+/**
+ * Puts each chosen place that is inside another chosen place right after it (and after the ones already there), on
+ * its day: a model that puts the Tsar Bell on another day than the Kremlin is corrected, not refused.
+ */
+export function keepInsideTogether(plan: PlanAnswer, candidates: readonly Candidate[]): PlanAnswer {
+  const parentOf = insideChosen(plan, candidates);
+  const days = plan.days.map((d) => ({ ...d, stops: d.stops.filter((id) => !parentOf.has(id)) }));
+  for (const id of plan.days.flatMap((d) => d.stops).filter((s) => parentOf.has(s))) {
+    const parent = parentOf.get(id)!;
+    const day = days.find((d) => d.stops.includes(parent));
+    if (!day || day.stops.includes(id)) continue;
+    let at = day.stops.indexOf(parent) + 1;
+    while (at < day.stops.length && parentOf.get(day.stops[at]) === parent) at++;
+    day.stops.splice(at, 0, id);
+  }
+  return { ...plan, days };
+}
+
 /** Errors in English for the model; empty when the plan keeps every rule. */
-export function checkPlan(plan: z.infer<typeof aiPlanSchema>, days: readonly DayWindow[], candidates: readonly Candidate[], maxStops: number): string[] {
+export function checkPlan(plan: PlanAnswer, days: readonly DayWindow[], candidates: readonly Candidate[], maxStops: number): string[] {
   const byId = new Map(candidates.map((c) => [c.id, c]));
+  const inside = insideChosen(plan, candidates);
   const errors: string[] = [];
   const seen = new Set<string>();
   for (const d of plan.days) {
     const window = days.find((w) => w.day === d.day);
     if (!window) errors.push(`day ${d.day} does not exist in DATA.days`);
-    else if (!window.window && d.stops.length) errors.push(`day ${d.day} has no window, so it must have no stops`);
-    if (d.stops.length > maxStops) errors.push(`day ${d.day} has ${d.stops.length} stops; at most ${maxStops}`);
+    else if (!window.window && d.stops.filter((id) => !inside.has(id)).length) errors.push(`day ${d.day} has no window, so it must have no stops`);
+    const stops = d.stops.filter((id) => !inside.has(id)).length;
+    if (stops > maxStops) errors.push(`day ${d.day} has ${stops} stops; at most ${maxStops}`);
     for (const id of d.stops) {
       const c = byId.get(id);
       if (!c) errors.push(`day ${d.day}: "${id}" is not in DATA.candidates`);
-      else if (c.closedDays.includes(d.day)) errors.push(`day ${d.day}: "${id}" is closed that day`);
+      // A place inside another goes to that place's day; the engine leaves it out if it is closed then.
+      else if (!inside.has(id) && c.closedDays.includes(d.day)) errors.push(`day ${d.day}: "${id}" is closed that day`);
       if (seen.has(id)) errors.push(`"${id}" appears more than once`);
       seen.add(id);
     }
@@ -150,10 +179,13 @@ export async function requestAiPlan(
     planUserMessage(trip.city, trip.days, trip.candidates),
     aiPlanSchema,
     (plan) => checkPlan(plan, trip.days, trip.candidates, trip.maxStops),
-    (plan) => ({
-      pinned: trip.days.map((w) => (plan.days.find((d) => d.day === w.day)?.stops ?? []).map((s) => osmIdFromShort(s)!)),
-      reasons: Object.fromEntries(plan.days.filter((d) => d.stops.length).map((d) => [d.day, d.reason])),
-    }),
+    (answer) => {
+      const plan = keepInsideTogether(answer, trip.candidates);
+      return {
+        pinned: trip.days.map((w) => (plan.days.find((d) => d.day === w.day)?.stops ?? []).map((s) => osmIdFromShort(s)!)),
+        reasons: Object.fromEntries(plan.days.filter((d) => d.stops.length).map((d) => [d.day, d.reason])),
+      };
+    },
     fetcher,
   );
 }

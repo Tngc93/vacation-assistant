@@ -13,7 +13,7 @@ import { formatDay } from "@/lib/format";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
-import { buildItinerary, type DayTag, type Itinerary, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop } from "@/lib/itinerary/plan";
+import { buildItinerary, type DayTag, type Itinerary, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop, type PlanSubStop } from "@/lib/itinerary/plan";
 import { CATEGORIES } from "@/lib/places/categories";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
@@ -106,7 +106,53 @@ function TravelLine({ stop }: { stop: PlanStop }) {
   );
 }
 
-function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRemove: (stop: PlanStop) => void }) {
+function SourceAndRemove({ stop, onRemove }: { stop: Pick<PlanStop, "name" | "sourceUrl" | "source">; onRemove: () => void }) {
+  return (
+    <p className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-caption print:hidden">
+      <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+        {stop.source}
+      </a>
+      <button
+        type="button"
+        onClick={onRemove}
+        className="inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
+        aria-label={`${stop.name} durağını plandan çıkar`}
+      >
+        <X aria-hidden="true" size={12} strokeWidth={1.5} />
+        Çıkar
+      </button>
+    </p>
+  );
+}
+
+/** A place inside the stop (the Tsar Bell in the Kremlin): indented under it, seen during its visit, no time of its own. */
+function SubStop({ sub, onRemove }: { sub: PlanSubStop; onRemove: (sub: PlanSubStop) => void }) {
+  return (
+    <li className="relative border-l border-rule pl-3">
+      <p className="text-body">
+        {sub.name}
+        {sub.localName && sub.localName !== sub.name ? <span className="text-ink-muted"> · {sub.localName}</span> : null}
+      </p>
+      <Caption as="p" className="mt-0.5">
+        {sub.within.toLocaleUpperCase("tr")} İÇİNDE · {CATEGORIES[sub.category].label.toLocaleUpperCase("tr")}
+        {sub.hours === "unknown" ? " · SAATLERİ DOĞRULA" : ""}
+      </Caption>
+      <SourceAndRemove stop={sub} onRemove={() => onRemove(sub)} />
+    </li>
+  );
+}
+
+function Stop({
+  stop,
+  number,
+  onRemove,
+  onRemoveInside,
+}: {
+  stop: PlanStop;
+  number: number;
+  onRemove: (stop: PlanStop) => void;
+  onRemoveInside: (sub: PlanSubStop) => void;
+}) {
   return (
     <li className="relative grid grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]">
       <p className="pt-0.5 font-mono text-caption tabular text-ink">
@@ -154,20 +200,14 @@ function Stop({ stop, number, onRemove }: { stop: PlanStop; number: number; onRe
             SAATLERİ DOĞRULA
           </Caption>
         ) : null}
-        <p className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-caption print:hidden">
-          <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
-            {stop.source}
-          </a>
-          <button
-            type="button"
-            onClick={() => onRemove(stop)}
-            className="inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
-            aria-label={`${stop.name} durağını plandan çıkar`}
-          >
-            <X aria-hidden="true" size={12} strokeWidth={1.5} />
-            Çıkar
-          </button>
-        </p>
+        <SourceAndRemove stop={stop} onRemove={() => onRemove(stop)} />
+        {stop.inside?.length ? (
+          <ul aria-label={`${stop.name} içinde`} className="mt-3 grid gap-3">
+            {stop.inside.map((sub) => (
+              <SubStop key={sub.id} sub={sub} onRemove={onRemoveInside} />
+            ))}
+          </ul>
+        ) : null}
       </div>
     </li>
   );
@@ -199,6 +239,7 @@ function Day({
   selected,
   onSelect,
   onRemove,
+  onRemoveInside,
   reason,
   flash = false,
 }: {
@@ -208,6 +249,7 @@ function Day({
   flash?: boolean;
   onSelect: () => void;
   onRemove: (stop: PlanStop) => void;
+  onRemoveInside: (sub: PlanSubStop) => void;
   /** The model's one or two sentences for the day (plain text). */
   reason?: string;
 }) {
@@ -270,7 +312,7 @@ function Day({
           {day.stops.flatMap((stop, i) => [
             ...(stop.kind === "evening" && day.free ? [<FreeTime key="free" free={day.free} />] : []),
             <TravelLine key={`${stop.id}-travel`} stop={stop} />,
-            <Stop key={stop.id} stop={stop} number={i + 1} onRemove={onRemove} />,
+            <Stop key={stop.id} stop={stop} number={i + 1} onRemove={onRemove} onRemoveInside={onRemoveInside} />,
           ])}
         </ol>
       ) : null}
@@ -393,6 +435,8 @@ export function ItineraryView({
       save({ edits: [...edits, [{ op: "remove", id: stop.id }]] });
     } else save({ skip: [...new Set([...skip, stop.shortId])] });
   };
+  // A place inside a stop is not in the chosen stops (it comes with its parent): removing it is always `?skip=`.
+  const removeInside = (sub: PlanSubStop) => save({ skip: [...new Set([...skip, sub.shortId])] });
   const reset = () => {
     setReply(null);
     drawer.setChanged(false);
@@ -494,6 +538,7 @@ export function ItineraryView({
                 selected={d.number === day.number}
                 onSelect={() => selectDay(d.number)}
                 onRemove={remove}
+                onRemoveInside={removeInside}
                 reason={ai?.reasons[d.number]}
                 flash={flash.includes(d.number)}
               />

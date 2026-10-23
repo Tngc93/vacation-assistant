@@ -93,6 +93,14 @@ describe("HeroExplorer", () => {
     expect(replace).toHaveBeenLastCalledWith(expect.stringContaining("cats=see%2Crestaurant"), { scroll: false });
   });
 
+  it("says on a card which place it is inside, by that place's Turkish name", () => {
+    const kremlin: StoredPlace = { id: "way/1", name: "Московский Кремль", lat: 55.752, lon: 37.6175, wikidataId: "Q1", wikipediaCount: 91 };
+    const bell: StoredPlace = { id: "node/2", name: "Çar Çanı", lat: 55.7511, lon: 37.6176, wikidataId: "Q2", parentId: "Q1", parentName: "Moskova Kremlini" };
+    renderExplorer({ results: [{ category: "see", status: "ok", places: [kremlin, bell], wikipediaCountsAvailable: true }] });
+    expect(card("Çar Çanı")).toHaveTextContent("MOSKOVA KREMLİNİ İÇİNDE");
+    expect(card("Московский Кремль")).not.toHaveTextContent("İÇİNDE");
+  });
+
   it("feeds the carousel and the map from the same selection, in chip order", () => {
     const { rerender } = renderExplorer();
     expect(screen.getAllByRole("listitem").map((li) => li.textContent)).toEqual([expect.stringContaining("Picasso Müzesi"), expect.stringContaining("7 Portes")]);

@@ -40,7 +40,8 @@ const topFive = (daytime: PlanPlace[]) =>
 describe.each(["BCN", "PAR", "ROM", "LON", "AMS", "SJJ"])("plan on real data: %s", (code) => {
   it("visits the trip's five best-known places and at most one unnamed viewpoint a day", async () => {
     const { input, plan } = await planFor(code);
-    const planned = new Set(plan.days.flatMap((d) => d.stops.map((s) => s.id)));
+    // A place inside another one is visited with it, as a sub-stop.
+    const planned = new Set(plan.days.flatMap((d) => d.stops.flatMap((s) => [s.id, ...(s.inside ?? []).map((c) => c.id)])));
     for (const p of topFive(input.daytime)) expect(planned.has(p.id), `${p.name} (${p.wikipediaCount})`).toBe(true);
     const byId = new Map(input.daytime.map((p) => [p.id, p]));
     for (const day of plan.days) {
@@ -103,11 +104,13 @@ describe("wrong links, residences and seasonal places (rules.ts, place-overrides
     expect(august).toMatchObject({ durationMin: 120, exterior: null });
   });
 
-  it("plans Big Ben once, from outside, for 30 minutes", async () => {
+  it("plans Big Ben once, inside the Palace of Westminster's visit (Wikidata P361)", async () => {
     const { plan } = await planFor("LON");
-    const stops = plan.days.flatMap((d) => d.stops).filter((s) => /Big Ben|Elizabeth Tower/.test(s.name));
-    expect(stops).toHaveLength(1);
-    expect(stops[0]).toMatchObject({ durationMin: 30, exterior: { note: null } });
+    const stops = plan.days.flatMap((d) => d.stops);
+    const all = stops.flatMap((s) => [s.name, ...(s.inside ?? []).map((c) => c.name)]).filter((n) => /Big Ben|Elizabeth Tower/.test(n));
+    expect(all).toHaveLength(1);
+    const palace = stops.find((s) => s.inside?.some((c) => c.name === "Big Ben"));
+    expect(palace?.inside?.[0]).toMatchObject({ within: "Westminster Sarayı" });
   });
 });
 
@@ -129,5 +132,33 @@ describe("outside-only landmarks and the Atomium (place-overrides.ts)", () => {
     expect(day.stops[0]).toMatchObject({ id: "wikidata/Q180901", remote: true });
     const athens = await stopsIn("ATH");
     expect(athens.some((s) => ["Athena Parthenos", "Αθήνα"].includes(s.name) || s.name.includes("Προμάχου"))).toBe(false);
+  });
+});
+
+describe("places inside another place on real data (containment.ts)", () => {
+  const stopsIn = async (code: string) => (await planFor(code)).plan.days.flatMap((d) => d.stops);
+
+  it("visits the Tsar Bell and the Tsar Cannon with the Kremlin, on its day, never as stops of their own", async () => {
+    const stops = await stopsIn("MOW");
+    const kremlin = stops.find((s) => s.id === "relation/1360641")!;
+    const inside = (kremlin.inside ?? []).map((c) => c.name);
+    expect(inside).toEqual(expect.arrayContaining(["Çar Topu", "Царь-колокол"]));
+    expect(stops.some((s) => s.name === "Çar Topu" || s.name === "Царь-колокол")).toBe(false);
+    expect(kremlin.durationMin).toBe(180);
+  });
+
+  it("visits the Raphael Rooms with the Vatican Museums, and the Sistine Chapel alone (its parent, the Apostolic Palace, is no stop)", async () => {
+    const stops = await stopsIn("ROM");
+    const museums = stops.find((s) => s.name === "Musei Vaticani");
+    expect(museums?.inside?.map((c) => c.name)).toContain("Stanze di Raffaello");
+    expect(stops.some((s) => s.name === "Cappella Sistina")).toBe(true);
+  });
+
+  it("never makes an old town or a road a parent", async () => {
+    for (const code of ["STO", "TUN", "FLR", "LON"]) {
+      const file = (await loadPlacesFile(code))!;
+      const names = new Set(Object.values(file.categories).flatMap((e) => (e.status === "ok" ? e.places.flatMap((p) => p.parentName ?? []) : [])));
+      for (const area of ["Gamla stan", "Tunus Medinesi", "Floransa'nın Tarihi Merkezi", "Piccadilly"]) expect(names.has(area), `${code} ${area}`).toBe(false);
+    }
   });
 });

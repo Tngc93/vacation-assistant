@@ -11,6 +11,7 @@ import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import { serializeCategories, toggleCategory } from "@/lib/places/cats";
 import type { StoredPlace } from "@/lib/places/file";
 import type { ShownPlace } from "@/lib/places/rules";
+import { spreadInside } from "@/lib/places/spread";
 import { CategoryChips } from "./CategoryChips";
 import { MapFacade, useFirstInteraction } from "./MapFacade";
 import { PlaceCard } from "./PlaceCard";
@@ -78,6 +79,8 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
     [results],
   );
   const places = useMemo(() => items.map((i) => i.place), [items]);
+  // A place inside another (the Tsar Cannon in the Kremlin) is drawn a little off its parent's dot, never under it.
+  const mapPlaces = useMemo(() => spreadInside(places), [places]);
   const selected = items.find((i) => i.place.id === selectedId) ?? null;
   const missing = results.filter((r) => r.status === "missing").map((r) => CATEGORIES[r.category].label);
   const noRanking = results.some((r) => r.status === "ok" && CATEGORIES[r.category].ranking === "wikipedia" && !r.wikipediaCountsAvailable);
@@ -196,7 +199,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
           >
             {liveMap ? (
               <PlacesMap
-                places={places}
+                places={mapPlaces}
                 center={center}
                 activeId={activeId}
                 selectedId={selectedId}
@@ -205,7 +208,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
                 className="h-full"
               />
             ) : (
-              <MapFacade places={places} activeId={activeId} selectedId={selectedId} className="h-full" />
+              <MapFacade places={mapPlaces} activeId={activeId} selectedId={selectedId} className="h-full" />
             )}
             {!isWide && !fullScreen ? (
               // On phones the strip is a preview: a tap opens the map full screen.

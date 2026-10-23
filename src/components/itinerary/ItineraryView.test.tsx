@@ -67,6 +67,37 @@ describe("ItineraryView", () => {
     expect(screen.queryByRole("button", { name: /Planı sıfırla/ })).not.toBeInTheDocument();
   });
 
+  it("shows a place inside a stop indented under it, and removes it with its parent or alone", async () => {
+    const user = userEvent.setup();
+    const parent = { ...SIGHTS[0], wikidataId: "Q900" };
+    const child = { ...SIGHTS[1], wikidataId: "Q901", parentId: "Q900", parentName: "Büyük Saray" };
+    render(
+      <ItineraryView
+        input={{ ...input, daytime: [parent, child, ...SIGHTS.slice(2)] }}
+        initialSkip={[]}
+        cityName="Barselona"
+        center={{ lat: 41.39, lon: 2.17 }}
+      />,
+    );
+    const inside = () => screen.queryByRole("list", { name: "Sight 0-0 içinde" });
+    expect(within(inside()!).getByText("Sight 0-1")).toBeInTheDocument();
+    expect(within(inside()!).getByText(/^BÜYÜK SARAY İÇİNDE · MÜZE/)).toBeInTheDocument();
+    // No time and no walk of its own.
+    expect(within(inside()!).queryByText(/^\d{2}:\d{2}$/)).toBeNull();
+    expect(within(inside()!).queryByText(/YÜRÜME/)).toBeNull();
+
+    await user.click(screen.getByRole("button", { name: "Sight 0-0 durağını plandan çıkar" }));
+    expect(screen.queryByText("Sight 0-0")).not.toBeInTheDocument();
+    expect(screen.queryByText("Sight 0-1")).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Planı sıfırla (1)" }));
+    expect(within(inside()!).getByText("Sight 0-1")).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Sight 0-1 durağını plandan çıkar" }));
+    expect(window.location.search).toBe(`?${SEARCH}&skip=n101`);
+    expect(screen.getByText("Sight 0-0")).toBeInTheDocument();
+    expect(screen.queryByText("Sight 0-1")).not.toBeInTheDocument();
+  });
+
   it("shows free time and links a flight-limited day to the flights section", () => {
     render(
       <ItineraryView
