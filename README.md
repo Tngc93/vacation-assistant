@@ -2,7 +2,7 @@
 
 **Kısa şehir kaçamakları için planlayıcı.** Türkiye'den (İstanbul ya da Ankara) yurt dışına birkaç günlük şehir tatili planlayanlar için: şehri ve günleri seç; görülecek yerler, gün gün plan, konaklama linkleri, en ucuz uçuş ve TL cinsinden bütçe tek sayfada.
 
-**Canlı:** <https://vacation-assistant-nine.vercel.app>
+**Canlı:** <https://vacationist-app.vercel.app>
 
 Açık kaynak ve tamamen ücretsiz servislerle çalışır. Repo ve paket adı `vacation-assistant` olarak kalır.
 
@@ -124,7 +124,7 @@ Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](
 
 ## English summary
 
-**Vacationist** is an open source planner for short city breaks from Turkey (Istanbul or Ankara). Pick a city and dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from IST, SAW or ESB and a budget in Turkish lira on one page. Live: <https://vacation-assistant-nine.vercel.app>
+**Vacationist** is an open source planner for short city breaks from Turkey (Istanbul or Ankara). Pick a city and dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from IST, SAW or ESB and a budget in Turkish lira on one page. Live: <https://vacationist-app.vercel.app>
 
 - Works fully without AI: the plan is deterministic, built from pre-fetched OpenStreetMap and Wikidata data.
 - Optional bring-your-own-key AI (Anthropic, OpenAI, Gemini) to edit the plan by chat; the key stays in your browser and calls go straight to the provider. Gemini's free tier covers chat, but free web search is no longer available to new Gemini accounts.
