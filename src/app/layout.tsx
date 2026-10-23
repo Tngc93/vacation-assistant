@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BRAND_DESCRIPTION, BRAND_NAME } from "@/lib/brand";
 import { cn } from "@/lib/cn";
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="icerik" className="flex-1">
           {children}
         </main>
+        <SiteFooter />
       </body>
     </html>
   );
