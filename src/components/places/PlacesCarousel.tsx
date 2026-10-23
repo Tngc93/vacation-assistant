@@ -228,6 +228,11 @@ function PlaceTile({
           </Caption>
         ) : null}{" "}
         <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{place.name}</span>{" "}
+        {place.parentName ? (
+          <Caption as="span" className="mt-1 block truncate">
+            {place.parentName.toLocaleUpperCase("tr")} İÇİNDE
+          </Caption>
+        ) : null}{" "}
         <Caption as="span" className="mt-auto block pt-2">
           {CATEGORIES[category].label} · {place.remote ? "MERKEZE UZAK" : walkToCentre(place, center)}
         </Caption>{" "}

@@ -54,7 +54,8 @@ describe("src/data/places", () => {
 
   it("stays small", () => {
     const total = files.reduce((sum, f) => sum + statSync(path.join(DIR, f)).size, 0);
-    // v4 added card photos and descriptions (about 3.6 MB → 5.7 MB for 68 cities); read only on the server.
+    // v4 added card photos and descriptions (about 3.6 MB → 5.7 MB for 68 cities), v5 the place each one is inside
+    // (+19 KB); read only on the server.
     expect(total).toBeLessThan(7 * 1024 * 1024);
   });
 });

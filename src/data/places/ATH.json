@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "ATH",
- "fetchedAt": "2026-10-22T05:48:28.659Z",
+ "fetchedAt": "2026-10-23T13:12:14.781Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -74,7 +74,7 @@
      "localName": "Παρθενών",
      "lat": 37.9715,
      "lon": 23.72662,
-     "wikipediaCount": 133,
+     "wikipediaCount": 134,
      "wikidataId": "Q10288",
      "kinds": [
       "heritage",
@@ -195,7 +195,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Erechtheion_Acropolis_Athens.jpg",
       "fullWidth": 6000
      },
-     "description": "ancient Greek temple on the north side of the Acropolis of Athens"
+     "description": "ancient Greek temple on the north side of the Acropolis of Athens",
+     "parentId": "Q131013",
+     "parentName": "Atina Akropolisi"
     },
     {
      "id": "relation/19023844",
@@ -271,7 +273,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Athena_Nik%C3%A8_from_Propylaea,_Acropolis,_Athens,_Greece.jpg",
       "fullWidth": 5988
      },
-     "description": "ancient Greek temple built in the fifth century CE on the Acropolis of Athens in honor of Athena as the goddess of victory, located in Athens Municipality, Greece"
+     "description": "ancient Greek temple built in the fifth century CE on the Acropolis of Athens in honor of Athena as the goddess of victory, located in Athens Municipality, Greece",
+     "parentId": "Q131013",
+     "parentName": "Atina Akropolisi"
     },
     {
      "id": "way/63765671",
@@ -321,7 +325,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Greece-0176_(2215880732).jpg",
       "fullWidth": 3264
      },
-     "description": "ancient Greek temple in Athens"
+     "description": "ancient Greek temple in Athens",
+     "parentId": "Q395367",
+     "parentName": "Atina Agorası"
     },
     {
      "id": "relation/11199493",
@@ -417,7 +423,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:DionysiusTheater.jpg",
       "fullWidth": 754
      },
-     "description": "antik Yunan tiyatrosu"
+     "description": "antik Yunan tiyatrosu",
+     "parentId": "Q131013",
+     "parentName": "Atina Akropolisi"
     },
     {
      "id": "wikidata/Q147478",
@@ -489,7 +497,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:NashvilleParthenon9.jpg",
       "fullWidth": 3456
      },
-     "description": "Phidias yapımı heykeltıraş"
+     "description": "Phidias yapımı heykeltıraş",
+     "parentId": "Q10288",
+     "parentName": "Partenon"
     },
     {
      "id": "way/145662894",
@@ -538,17 +548,6 @@
      "description": "Yunanistan'ın başkenti Atina'nın semti"
     },
     {
-     "id": "way/145662891",
-     "name": "Ηλιαία",
-     "lat": 37.97425,
-     "lon": 23.72245,
-     "wikipediaCount": 29,
-     "wikidataId": "Q1129527",
-     "kinds": [
-      "noCoordinate"
-     ]
-    },
-    {
      "id": "way/729674865",
      "name": "Βιβλιοθήκη του Αδριανού",
      "lat": 37.9754,
@@ -572,6 +571,17 @@
       "fullWidth": 4345
      },
      "description": "İmparator Hadrian tarafından Atina'da yaptırılan antik kütüphane"
+    },
+    {
+     "id": "way/145662891",
+     "name": "Ηλιαία",
+     "lat": 37.97425,
+     "lon": 23.72245,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1129527",
+     "kinds": [
+      "noCoordinate"
+     ]
     },
     {
      "id": "way/317915132",
@@ -617,7 +627,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Stoa_of_Attalos_at_the_Ancient_Agora_of_Athens_2.jpg",
       "fullWidth": 1488
      },
-     "description": "Bergama Kralı II. Attalos tarafından MÖ 2. yüzyılda inşa edilen antik revak"
+     "description": "Bergama Kralı II. Attalos tarafından MÖ 2. yüzyılda inşa edilen antik revak",
+     "parentId": "Q395367",
+     "parentName": "Atina Agorası"
     },
     {
      "id": "node/1584057565",
@@ -639,7 +651,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Atena_Promacos.jpg",
       "fullWidth": 612
      },
-     "description": "ancient sculpture of Phidias in Athens Acropolis"
+     "description": "ancient sculpture of Phidias in Athens Acropolis",
+     "parentId": "Q131013",
+     "parentName": "Atina Akropolisi"
     },
     {
      "id": "way/713354220",
@@ -770,6 +784,7 @@
      "wikidataId": "Q1760491",
      "kinds": [
       "heritage",
+      "notPlace",
       "ruins"
      ],
      "photo": {
@@ -801,7 +816,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Stoa_Poikile_1.jpg",
       "fullWidth": 4000
      },
-     "description": "Atina Agorası'nda yer alan ve Stoacılık felsefesine adını veren antik sütunlu galeri"
+     "description": "Atina Agorası'nda yer alan ve Stoacılık felsefesine adını veren antik sütunlu galeri",
+     "parentId": "Q395367",
+     "parentName": "Atina Agorası"
     },
     {
      "id": "wikidata/Q620473",
@@ -895,7 +912,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Propylaea-athens.jpg",
       "fullWidth": 1000
      },
-     "description": "the gate of the Acropolis of Athens"
+     "description": "the gate of the Acropolis of Athens",
+     "parentId": "Q131013",
+     "parentName": "Atina Akropolisi"
     },
     {
      "id": "way/175107932",
@@ -1057,7 +1076,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:SanctuaryofArtemisBrauronia3D.jpg",
       "fullWidth": 460
      },
-     "description": "ancient temple in the Acropolis of Athens"
+     "description": "ancient temple in the Acropolis of Athens",
+     "parentId": "Q131013",
+     "parentName": "Atina Akropolisi"
     },
     {
      "id": "wikidata/Q2615369",
@@ -1081,7 +1102,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_21_View_from_Acropolis_Hill_-_Agia_Apostoli.jpg",
       "fullWidth": 4862
      },
-     "description": "restored medieval church in Agora excavations, Athens"
+     "description": "restored medieval church in Agora excavations, Athens",
+     "parentId": "Q395367",
+     "parentName": "Atina Agorası"
     },
     {
      "id": "way/208068229",
@@ -1358,7 +1381,9 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "parentId": "Q395367",
+     "parentName": "Atina Agorası"
     },
     {
      "id": "way/195162372",
@@ -2063,17 +2088,6 @@
      "detailed": true
     },
     {
-     "id": "node/5300980582",
-     "name": "Baba Ghanoush",
-     "lat": 37.96547,
-     "lon": 23.74359,
-     "address": "Εμπεδοκλέους 25",
-     "website": "https://www.babaghanoush.gr/",
-     "openingHours": "Mo 17:00-00:00; Tu-Su 09:00-00:00",
-     "cuisine": "falafel",
-     "detailed": true
-    },
-    {
      "id": "node/4053568412",
      "name": "East Pearl",
      "lat": 37.97476,
@@ -2359,6 +2373,17 @@
      "address": "Φωκυλίδου 15",
      "website": "http://papadakisrestaurant.com/",
      "openingHours": "Mo-Sa 13:30-23:00",
+     "cuisine": "greek",
+     "detailed": true
+    },
+    {
+     "id": "node/3684553557",
+     "name": "Τα Καραμανλίδικα του Φάνη",
+     "lat": 37.98014,
+     "lon": 23.72569,
+     "address": "Σωκράτους 1",
+     "website": "https://www.karamanlidika.gr/",
+     "openingHours": "Mo-Sa 12:00-23:00; Su off",
      "cuisine": "greek",
      "detailed": true
     }

@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "TAS",
- "fetchedAt": "2026-10-22T06:25:57.039Z",
+ "fetchedAt": "2026-10-23T14:08:45.550Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -252,7 +252,8 @@
      "wikipediaCount": 4,
      "wikidataId": "Q1707676",
      "kinds": [
-      "heritage"
+      "heritage",
+      "notPlace"
      ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Portal_of_Yunuskhan_mausoleum.jpg/500px-Portal_of_Yunuskhan_mausoleum.jpg",
@@ -318,7 +319,8 @@
      "wikipediaCount": 3,
      "wikidataId": "Q2121368",
      "kinds": [
-      "heritage"
+      "heritage",
+      "notPlace"
      ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Qaldirg%CA%BBochbiy_maqbarasi_58.jpg/500px-Qaldirg%CA%BBochbiy_maqbarasi_58.jpg",
@@ -339,7 +341,8 @@
      "wikipediaCount": 3,
      "wikidataId": "Q18604489",
      "kinds": [
-      "heritage"
+      "heritage",
+      "notPlace"
      ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Mausoleum_Hovendi_15-52.JPG/500px-Mausoleum_Hovendi_15-52.JPG",
@@ -411,14 +414,6 @@
      "openingHours": "24/7"
     },
     {
-     "id": "way/132905801",
-     "name": "Кирха Евангеличеко-лютеранская церковь",
-     "lat": 41.31089,
-     "lon": 69.29241,
-     "address": "Sodiq Azimov ko'chasi 37",
-     "openingHours": "Mo-Su 9:00-13:00"
-    },
-    {
      "id": "node/10696442351",
      "name": "«Звезда Анхора» колесо обозрения",
      "lat": 41.32486,
@@ -439,8 +434,8 @@
     {
      "id": "node/882016318",
      "name": "Lal Bahodur Shastri haykali",
-     "lat": 41.31215,
-     "lon": 69.29209
+     "lat": 41.31213,
+     "lon": 69.29204
     },
     {
      "id": "node/13440927512",
@@ -460,6 +455,12 @@
      "name": "TOKYO ТОКИО",
      "lat": 41.31821,
      "lon": 69.28664
+    },
+    {
+     "id": "node/14292033201",
+     "name": "Tut daraxti +350 yosh",
+     "lat": 41.30861,
+     "lon": 69.26803
     },
     {
      "id": "node/13521119640",
@@ -660,31 +661,6 @@
       "organization"
      ],
      "description": "museum in Tashkent"
-    },
-    {
-     "id": "node/2117483202",
-     "name": "музей геологии",
-     "lat": 41.30084,
-     "lon": 69.27686,
-     "website": "https://www.uzgeolcom.uz/ru/",
-     "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 4,
-     "wikidataId": "Q19654019",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Conglomerate_from_the_riverbed_of_Isfayramsoy_river.JPG/500px-Conglomerate_from_the_riverbed_of_Isfayramsoy_river.JPG",
-      "width": 500,
-      "height": 375,
-      "author": "Carpodacus",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Conglomerate_from_the_riverbed_of_Isfayramsoy_river.JPG",
-      "fullWidth": 2048
-     },
-     "description": "museum in Tashkent, Uzbekistan"
     },
     {
      "id": "way/44864779",
@@ -906,6 +882,12 @@
      "website": "https://aloqamuzeyi.uz/"
     },
     {
+     "id": "node/6781674185",
+     "name": "Aloqa tarixi muzeyi",
+     "lat": 41.3219,
+     "lon": 69.25197
+    },
+    {
      "id": "node/10857620505",
      "name": "Hlmrdv Gallery",
      "lat": 41.29292,
@@ -966,14 +948,7 @@
   "viewpoint": {
    "status": "ok",
    "wikipediaCountsAvailable": true,
-   "places": [
-    {
-     "id": "node/3696253703",
-     "name": "Колесо обозрения",
-     "lat": 41.31225,
-     "lon": 69.29824
-    }
-   ]
+   "places": []
   },
   "restaurant": {
    "status": "ok",
@@ -1636,8 +1611,8 @@
     {
      "id": "node/4246680191",
      "name": "HAMMERSMITH",
-     "lat": 41.3197,
-     "lon": 69.26652,
+     "lat": 41.31971,
+     "lon": 69.26657,
      "address": "Navoiy shoh ko'chasi 2",
      "website": "https://t.me/hammersmith_bot",
      "openingHours": "Mo-Su 15:00-02:00",
@@ -1744,6 +1719,15 @@
      "address": "Islam Karimov Street, Floor 1 2",
      "website": "https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/dining/",
      "openingHours": "Mo-Su 12:00 - 02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/14223727301",
+     "name": "Unity",
+     "lat": 41.32867,
+     "lon": 69.2776,
+     "openingHours": "Mo-Su 10:00-04:00",
+     "cuisine": "coffee shop",
      "detailed": true
     },
     {
@@ -1874,12 +1858,6 @@
      "name": "Craft Beer Bar",
      "lat": 41.2907,
      "lon": 69.26019
-    },
-    {
-     "id": "node/4380907890",
-     "name": "History Lounge&Bar",
-     "lat": 41.3045,
-     "lon": 69.28033
     }
    ]
   },
@@ -1914,6 +1892,14 @@
      "openingHours": "24/7"
     },
     {
+     "id": "node/7473507628",
+     "name": "Sahna",
+     "lat": 41.31201,
+     "lon": 69.27313,
+     "address": "Matbuotchilar ko'chasi 17",
+     "openingHours": "Mo-Su 18:00-03:00"
+    },
+    {
      "id": "node/8289662788",
      "name": "VM bar",
      "lat": 41.30674,
@@ -1927,6 +1913,12 @@
      "lat": 41.31231,
      "lon": 69.27395,
      "openingHours": "24/7"
+    },
+    {
+     "id": "way/1054819911",
+     "name": "Bla Bla Bar",
+     "lat": 41.3121,
+     "lon": 69.28586
     },
     {
      "id": "node/4583856592",

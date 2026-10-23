@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "KRK",
- "fetchedAt": "2026-10-22T05:41:36.757Z",
+ "fetchedAt": "2026-10-23T12:59:46.331Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -310,7 +310,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Mary%27s_Church,_Krakow_2014-08-12-151.jpg",
       "fullWidth": 5760
      },
-     "description": "Kraków'da heykel"
+     "description": "Kraków'da heykel",
+     "parentId": "Q1143171",
+     "parentName": "Azize Meryem Bazilikası"
     },
     {
      "id": "way/29271113",
@@ -435,7 +437,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sigismund_Chapel,_Wawel_02.JPG",
       "fullWidth": 1318
      },
-     "description": "Kraków'da şapel"
+     "description": "Kraków'da şapel",
+     "parentId": "Q638519",
+     "parentName": "Wawel Katedrali"
     },
     {
      "id": "wikidata/Q1945780",
@@ -778,6 +782,9 @@
      "lon": 19.93574,
      "wikipediaCount": 12,
      "wikidataId": "Q7589531",
+     "kinds": [
+      "notPlace"
+     ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Wawel_St_Leonard.JPG/500px-Wawel_St_Leonard.JPG",
       "width": 500,
@@ -933,7 +940,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wie%C5%BCaSenatorska-WidokZWie%C5%BCySandomierskiej-POL,_Krak%C3%B3w.jpg",
       "fullWidth": 3456
-     }
+     },
+     "parentId": "Q743704",
+     "parentName": "Wawel"
     },
     {
      "id": "way/25516318",
@@ -958,7 +967,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Polska;_Krak%C3%B3w;_Wawel.jpg",
       "fullWidth": 4540
      },
-     "description": "historic tower in Kraków, Lesser Poland Voivodeship"
+     "description": "historic tower in Kraków, Lesser Poland Voivodeship",
+     "parentId": "Q743704",
+     "parentName": "Wawel"
     },
     {
      "id": "relation/5992609",
@@ -980,7 +991,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ogrody_Kr%C3%B3lewskie_Wawel_2006-06-20_06.jpg",
       "fullWidth": 1600
      },
-     "description": "Kraków'da bahçe"
+     "description": "Kraków'da bahçe",
+     "parentId": "Q743704",
+     "parentName": "Wawel"
     },
     {
      "id": "relation/8027535",
@@ -1469,7 +1482,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pa%C5%82acyk_Emeryka_Hutten-Czapskiego_Fotka_062.jpg",
       "fullWidth": 1948
      },
-     "description": "Kraków'da müze"
+     "description": "Kraków'da müze",
+     "parentId": "Q195311",
+     "parentName": "Kraków Ulusal Müzesi"
     },
     {
      "id": "node/1332080339",
@@ -1623,7 +1638,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:J%C3%B3zef_Mehoffer%27s_House,_26_Krupnicza_street,_Krak%C3%B3w,_Poland.jpg",
       "fullWidth": 5988
      },
-     "description": "Kraków'da ev"
+     "description": "Kraków'da ev",
+     "parentId": "Q195311",
+     "parentName": "Kraków Ulusal Müzesi"
     },
     {
      "id": "node/475387282",
@@ -1897,7 +1914,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "fileUrl": "https://commons.wikimedia.org/wiki/File:KolekcjaKufliIDzban%C3%B3wLiturgicznych-SkarbiecKoronny-ZamekKr%C3%B3lewskiNaWawelu-POL,_Krak%C3%B3w.jpg",
       "fullWidth": 6000
-     }
+     },
+     "parentId": "Q18820",
+     "parentName": "Wawel Kalesi"
     },
     {
      "id": "node/9015266574",
@@ -2765,6 +2784,17 @@
      "detailed": true
     },
     {
+     "id": "node/11237098513",
+     "name": "Dřevný Kocůr",
+     "lat": 50.063,
+     "lon": 19.93836,
+     "address": "Świętego Jana 6",
+     "website": "https://drevnykocur.pl/krakowjana/",
+     "openingHours": "Mo-Fr 12:00-23:00; Sa-Su 12:00-22:00",
+     "cuisine": "regional",
+     "detailed": true
+    },
+    {
      "id": "node/5001698507",
      "name": "Hospůdka u nás",
      "lat": 50.04825,
@@ -2965,6 +2995,15 @@
      "detailed": true
     },
     {
+     "id": "node/7816441307",
+     "name": "Free Pub",
+     "lat": 50.0633,
+     "lon": 19.93704,
+     "website": "https://freepub.pl/",
+     "openingHours": "Mo-Su 15:00-02:00",
+     "detailed": true
+    },
+    {
      "id": "node/10973790505",
      "name": "Funky Ramen Bar",
      "lat": 50.07297,
@@ -3009,26 +3048,6 @@
      "address": "Świętego Tomasza 35",
      "website": "https://www.houseofbeerkrakow.com/",
      "openingHours": "Su-We 14:00-01:00; Th-Sa 14:00-02:00",
-     "detailed": true
-    },
-    {
-     "id": "node/7110978874",
-     "name": "Kawiarnia Literacka",
-     "lat": 50.04759,
-     "lon": 19.94345,
-     "address": "Krakowska 41",
-     "website": "https://www.facebook.com/kawiarniaLITERACKAkrakowska41/",
-     "openingHours": "Mo-We 15:00-23:00; Th-Su 11:00-23:00",
-     "detailed": true
-    },
-    {
-     "id": "node/2351408882",
-     "name": "Klub Gwarek",
-     "lat": 50.06585,
-     "lon": 19.91569,
-     "address": "Władysława Reymonta 17",
-     "website": "https://www.klubgwarek.pl/",
-     "openingHours": "Mo-Fr 09:30+; Sa,Su 18:00+",
      "detailed": true
     }
    ]

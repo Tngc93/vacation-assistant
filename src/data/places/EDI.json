@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "EDI",
- "fetchedAt": "2026-10-22T05:47:45.973Z",
+ "fetchedAt": "2026-10-23T13:09:10.812Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -307,7 +307,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:MonsMeg.JPG",
       "fullWidth": 1600
      },
-     "description": "large 15th century cannon in Scotland"
+     "description": "large 15th century cannon in Scotland",
+     "parentId": "Q212065",
+     "parentName": "Edinburgh Kalesi"
     },
     {
      "id": "way/39044819",
@@ -564,7 +566,7 @@
      "name": "The Real Mary King's Close",
      "lat": 55.94996,
      "lon": -3.19045,
-     "address": "Warriston’s Close 2",
+     "address": "Warriston's Close 2",
      "website": "https://www.realmarykingsclose.com/",
      "openingHours": "Mo-Su 09:00-17:45",
      "wikipediaCount": 11,
@@ -653,7 +655,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Margarets_Chapel.JPG",
       "fullWidth": 2592
      },
-     "description": "chapel in Edinburgh Castle, Scotland"
+     "description": "chapel in Edinburgh Castle, Scotland",
+     "parentId": "Q212065",
+     "parentName": "Edinburgh Kalesi"
     },
     {
      "id": "way/287130390",
@@ -701,7 +705,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:.000_2333._Ross_Fountain_-_Edinburgh.jpg",
       "fullWidth": 1379
      },
-     "description": "fountain in Edinburgh, Scotland"
+     "description": "fountain in Edinburgh, Scotland",
+     "parentId": "Q980646",
+     "parentName": "Princes Street Gardens"
     },
     {
      "id": "relation/33710",
@@ -1602,7 +1608,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Inverleith_House_-_geograph.org.uk_-_554914.jpg",
       "fullWidth": 640
      },
-     "description": "architectural structure in City of Edinburgh, Scotland, UK"
+     "description": "architectural structure in City of Edinburgh, Scotland, UK",
+     "parentId": "Q1807521",
+     "parentName": "Royal Botanic Garden Edinburgh"
     },
     {
      "id": "node/6715804556",
@@ -1626,7 +1634,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_-_Royal_Scots_Dragoon_Guards_Museum_-_geograph.org.uk_-_2320611.jpg",
       "fullWidth": 640
      },
-     "description": "regimental museum in City of Edinburgh, Scotland, UK"
+     "description": "regimental museum in City of Edinburgh, Scotland, UK",
+     "parentId": "Q212065",
+     "parentName": "Edinburgh Kalesi"
     },
     {
      "id": "way/446654897",
@@ -1650,7 +1660,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_-_Royal_Scots_Museum_-_geograph.org.uk_-_2320614.jpg",
       "fullWidth": 640
      },
-     "description": "regimental museum in Edinburgh, Scotland, United Kingdom"
+     "description": "regimental museum in Edinburgh, Scotland, United Kingdom",
+     "parentId": "Q212065",
+     "parentName": "Edinburgh Kalesi"
     },
     {
      "id": "node/5025640452",
@@ -2035,6 +2047,17 @@
      "detailed": true
     },
     {
+     "id": "node/2908661317",
+     "name": "Cosmo",
+     "lat": 55.9566,
+     "lon": -3.18566,
+     "address": "Greenside Place 1",
+     "website": "https://www.cosmo-restaurants.co.uk/",
+     "openingHours": "Mo-Th 16:30-21:30; Fr 13:00-22:00; Sa 12:00-22:00; Su,PH 12:30-21:30",
+     "cuisine": "international",
+     "detailed": true
+    },
+    {
      "id": "node/3120543866",
      "name": "Côte Brasserie",
      "lat": 55.95382,
@@ -2204,17 +2227,6 @@
      "lon": -3.18503,
      "website": "https://kahanirestaurant.co.uk/",
      "openingHours": "Mo-Su 12:00+",
-     "cuisine": "indian",
-     "detailed": true
-    },
-    {
-     "id": "node/504203387",
-     "name": "Kalpna",
-     "lat": 55.94347,
-     "lon": -3.18311,
-     "address": "St Patrick Square 2-3",
-     "website": "https://www.kalpnarestaurant.com/",
-     "openingHours": "12:00-14:30,17:30-22:30",
      "cuisine": "indian",
      "detailed": true
     }
@@ -2429,7 +2441,7 @@
      "lon": -3.20598,
      "address": "Lothian Road 43-45",
      "website": "https://www.caffenero.com/uk/stores/edinburgh-lothian-rd",
-     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:30-19:00; Su 08:30-18:00",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:30-18:30; Su 08:30-18:00",
      "cuisine": "coffee shop",
      "detailed": true
     },

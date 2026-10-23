@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "ROM",
- "fetchedAt": "2026-10-22T05:09:05.095Z",
+ "fetchedAt": "2026-10-23T12:02:37.446Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -79,7 +79,7 @@
      "lon": 12.49237,
      "address": "Piazza del Colosseo",
      "website": "https://colosseo.it/",
-     "openingHours": "Mar 29-Sep 30 08:30-19:15; Oct 01-Oct 24 08:30-18:30; Oct 25-Feb 28 08:30-16:30; Jan 01 off; Dec 25 off",
+     "openingHours": "Mar 30-Sep 30: 08:30-19:15; Oct 01-Oct 25: 08:30-18:30; Oct 26-Feb 28: 08:30-16:30; Jan 01 off; Dec 25 off",
      "wikipediaCount": 143,
      "wikidataId": "Q10285",
      "kinds": [
@@ -110,8 +110,8 @@
      "lat": 41.90216,
      "lon": 12.45371,
      "address": "Piazza San Pietro",
-     "website": "https://www.basilicasanpietro.va/it/",
-     "openingHours": "Mo-Su 07:00-20:00",
+     "website": "https://www.basilicasanpietro.va/it",
+     "openingHours": "07:00-19:10",
      "wikipediaCount": 129,
      "wikidataId": "Q12512",
      "country": "VA",
@@ -137,8 +137,7 @@
      "name": "Cappella Sistina",
      "lat": 41.90293,
      "lon": 12.4544,
-     "website": "https://m.museivaticani.va/content/museivaticani-mobile/it/collezioni/musei/cappella-sistina/storia-cappella-sistina.html",
-     "openingHours": "Mo-Sa 08:00-20:00",
+     "openingHours": "Mo-Sa 09:00-18:00",
      "wikipediaCount": 87,
      "wikidataId": "Q2943",
      "country": "VA",
@@ -371,6 +370,7 @@
       "castle",
       "heritage",
       "museum",
+      "notPlace",
       "organization",
       "ruins"
      ],
@@ -462,7 +462,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Trajan_column_(Rome)_September_2015-2.jpg",
       "fullWidth": 5695
      },
-     "description": "ancient Roman victory column, a landmark of Rome, Italy"
+     "description": "ancient Roman victory column, a landmark of Rome, Italy",
+     "parentId": "Q211295",
+     "parentName": "Foro di Traiano"
     },
     {
      "id": "relation/2707110",
@@ -588,7 +590,7 @@
      "id": "relation/1754380",
      "name": "Foro di Traiano",
      "lat": 41.89516,
-     "lon": 12.48515,
+     "lon": 12.48517,
      "website": "https://www.mercatiditraiano.it/",
      "openingHours": "09:30-19:30",
      "wikipediaCount": 44,
@@ -654,7 +656,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch_Titus,_Forum_Romanum,_Rome,_Italy.jpg",
       "fullWidth": 3315
      },
-     "description": "triumphal arch in Rome (constructed c. 81 AD)"
+     "description": "triumphal arch in Rome (constructed c. 81 AD)",
+     "parentId": "Q180212",
+     "parentName": "Roma Forumu"
     },
     {
      "id": "way/201882369",
@@ -837,6 +841,7 @@
      "wikipediaCount": 38,
      "wikidataId": "Q770847",
      "kinds": [
+      "notPlace",
       "ruins"
      ],
      "photo": {
@@ -917,7 +922,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Vesta_3D.jpg",
       "fullWidth": 795
      },
-     "description": "Roma'da tapınak"
+     "description": "Roma'da tapınak",
+     "parentId": "Q180212",
+     "parentName": "Roma Forumu"
     },
     {
      "id": "way/49824161",
@@ -940,7 +947,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch_of_Septimius_Severus.jpg",
       "fullWidth": 1594
      },
-     "description": "Roma Forumu'nun kuzeydoğusundaki, 194/195 ve 197-199 yıllarında Partlara karşı kazanılmış zaferi simgeleyen kemer"
+     "description": "Roma Forumu'nun kuzeydoğusundaki, 194/195 ve 197-199 yıllarında Partlara karşı kazanılmış zaferi simgeleyen kemer",
+     "parentId": "Q180212",
+     "parentName": "Roma Forumu"
     },
     {
      "id": "way/201735339",
@@ -1198,7 +1207,6 @@
      "name": "Stanze di Raffaello",
      "lat": 41.9033,
      "lon": 12.45454,
-     "website": "https://www.museivaticani.va/content/museivaticani/es/collezioni/musei/stanze-di-raffaello.html",
      "wikipediaCount": 34,
      "wikidataId": "Q249449",
      "kinds": [
@@ -1214,7 +1222,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Raffael_Stanza_della_Segnatura.jpg",
       "fullWidth": 1200
      },
-     "description": "suite of reception rooms in the Palace of the Vatican painted by Raphael and his workshop between 1509 and 1524"
+     "description": "suite of reception rooms in the Palace of the Vatican painted by Raphael and his workshop between 1509 and 1524",
+     "parentId": "Q182955",
+     "parentName": "Vatikan Müzeleri"
     },
     {
      "id": "wikidata/Q1135392",
@@ -1274,7 +1284,7 @@
      "lon": 12.48232,
      "address": "Viale delle Belle Arti 131",
      "website": "https://lagallerianazionale.com/",
-     "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 01 off; Dec 25 off",
+     "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 1 off; Dec 25 off",
      "wikipediaCount": 27,
      "wikidataId": "Q1492387",
      "kinds": [
@@ -1345,7 +1355,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giuseppe_dei_Falegnami_(Roma)_-_Facciata_(Mamertinum).jpg",
       "fullWidth": 5306
      },
-     "description": "prison"
+     "description": "prison",
+     "parentId": "Q180212",
+     "parentName": "Roma Forumu"
     },
     {
      "id": "node/7012887885",
@@ -1548,7 +1560,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Appartamento_borgia,_05.JPG",
       "fullWidth": 2592
      },
-     "description": "suite of rooms in the Apostolic Palace in Vatican City"
+     "description": "suite of rooms in the Apostolic Palace in Vatican City",
+     "parentId": "Q145093",
+     "parentName": "Apostolik Sarayı"
     },
     {
      "id": "way/132581385",
@@ -1571,7 +1585,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Augustus-Maskenraum01b.jpg",
       "fullWidth": 800
      },
-     "description": "domus"
+     "description": "domus",
+     "parentId": "Q200642",
+     "parentName": "Palatino Tepesi"
     },
     {
      "id": "relation/1391821",
@@ -1675,7 +1691,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pinacoteca_vaticana_vista_dai_giardini_01.JPG",
       "fullWidth": 2612
      },
-     "description": "branch of the Vatican Museums"
+     "description": "branch of the Vatican Museums",
+     "parentId": "Q182955",
+     "parentName": "Vatikan Müzeleri"
     },
     {
      "id": "wikidata/Q2034945",
@@ -1699,7 +1717,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sculptures_above_the_entrance_of_Vatican_Museums.jpg",
       "fullWidth": 3570
      },
-     "description": "branch of the Vatican Museums"
+     "description": "branch of the Vatican Museums",
+     "parentId": "Q182955",
+     "parentName": "Vatikan Müzeleri"
     },
     {
      "id": "node/10074889581",
@@ -1755,7 +1775,6 @@
      "name": "Museo Pio Clementino",
      "lat": 41.90655,
      "lon": 12.45458,
-     "website": "https://www.museivaticani.va/content/museivaticani/it/collezioni/musei/museo-pio-clementino.html",
      "wikipediaCount": 9,
      "wikidataId": "Q1439912",
      "kinds": [
@@ -1772,7 +1791,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Pio-Clementino_cortile_ottagono.JPG",
       "fullWidth": 1600
      },
-     "description": "branch of the Vatican Museums"
+     "description": "branch of the Vatican Museums",
+     "parentId": "Q182955",
+     "parentName": "Vatikan Müzeleri"
     },
     {
      "id": "relation/13475193",
@@ -1849,7 +1870,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Palatino_Roma.jpg",
       "fullWidth": 1200
      },
-     "description": "museum in Rome, Italy"
+     "description": "museum in Rome, Italy",
+     "parentId": "Q200642",
+     "parentName": "Palatino Tepesi"
     },
     {
      "id": "node/2408805739",
@@ -1938,7 +1961,7 @@
      "lat": 41.89637,
      "lon": 12.48153,
      "address": "Piazza Venezia 1",
-     "website": "https://vive.cultura.gov.it/it/palazzo-venezia",
+     "website": "http://museopalazzovenezia.beniculturali.it/index.php?it/1/home",
      "openingHours": "Tu-Su 08:30-19:30; Mo off; Jan 1 off; May 1 off; Dec 25 off",
      "wikipediaCount": 7,
      "wikidataId": "Q1954305",
@@ -2063,31 +2086,6 @@
      "description": "museum in Italy"
     },
     {
-     "id": "node/6718428602",
-     "name": "Museo Chiaramonti",
-     "lat": 41.90604,
-     "lon": 12.45507,
-     "website": "https://m.museivaticani.va/content/museivaticani-mobile/en/collezioni/musei/museo-chiaramonti/Museo-Chiaramonti.html",
-     "openingHours": "Mo-Fr 09:00-18:00",
-     "wikipediaCount": 6,
-     "wikidataId": "Q1452723",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/500px-Statue-Augustus.jpg",
-      "width": 500,
-      "height": 750,
-      "author": "Till Niermann",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg",
-      "fullWidth": 1500
-     },
-     "description": "Roma'da müze"
-    },
-    {
      "id": "way/201293294",
      "name": "Museo dell'Ara Pacis",
      "lat": 41.9061,
@@ -2126,7 +2124,34 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:11897_-_Vatican_-_Etruscan_Museum_(3481840831).jpg",
       "fullWidth": 1200
      },
-     "description": "branch of the Vatican Museums"
+     "description": "branch of the Vatican Museums",
+     "parentId": "Q182955",
+     "parentName": "Vatikan Müzeleri"
+    },
+    {
+     "id": "node/6718428602",
+     "name": "Museo Chiaramonti",
+     "lat": 41.90604,
+     "lon": 12.45507,
+     "wikipediaCount": 6,
+     "wikidataId": "Q1452723",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/500px-Statue-Augustus.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Till Niermann",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg",
+      "fullWidth": 1500
+     },
+     "description": "Roma'da müze",
+     "parentId": "Q182955",
+     "parentName": "Vatikan Müzeleri"
     }
    ]
   },
@@ -2176,7 +2201,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Dome_of_Saint_Peter%27s_Basilica_(exterior).jpg",
       "fullWidth": 3504
      },
-     "description": "dome of St. Peter's Basilica in Vatican City"
+     "description": "dome of St. Peter's Basilica in Vatican City",
+     "parentId": "Q12512",
+     "parentName": "San Pietro Bazilikası"
     },
     {
      "id": "node/649529694",
@@ -2487,17 +2514,6 @@
      "detailed": true
     },
     {
-     "id": "node/4173975522",
-     "name": "Gainn",
-     "lat": 41.90381,
-     "lon": 12.50331,
-     "address": "Via dei Mille 18",
-     "website": "http://www.gainnrome.com/",
-     "openingHours": "Mo-Sa 12:15-15:00,18:15-21:30",
-     "cuisine": "korean",
-     "detailed": true
-    },
-    {
      "id": "node/2138746280",
      "name": "Glass Hostaria",
      "lat": 41.89051,
@@ -2638,6 +2654,17 @@
      "openingHours": "Mo-Su 18:00-3:00",
      "cuisine": "regional",
      "detailed": true
+    },
+    {
+     "id": "node/3878100134",
+     "name": "La Mela D'Oro",
+     "lat": 41.89736,
+     "lon": 12.49652,
+     "address": "Via di Santa Maria Maggiore 157",
+     "website": "https://www.ristorantelameladoro.it/",
+     "openingHours": "Mo-Su 12:00-00:00",
+     "cuisine": "pizza",
+     "detailed": true
     }
    ]
   },
@@ -2698,17 +2725,6 @@
      "website": "https://ciampini.com/",
      "openingHours": "Mo-Sa 08:00-23:00",
      "cuisine": "coffee shop, ice cream, italian",
-     "detailed": true
-    },
-    {
-     "id": "node/4664779090",
-     "name": "Marzapane",
-     "lat": 41.91405,
-     "lon": 12.47511,
-     "address": "Via Flaminia 64",
-     "website": "https://www.marzapaneroma.com/",
-     "openingHours": "Mo-Su 08:30-16:00",
-     "cuisine": "cake, coffee shop, italian",
      "detailed": true
     },
     {
@@ -2789,7 +2805,7 @@
     },
     {
      "id": "node/3217327590",
-     "name": "075 zerosettantacinque",
+     "name": "075",
      "lat": 41.88795,
      "lon": 12.48394,
      "address": "Via dei Cerchi 65",
@@ -2820,9 +2836,9 @@
     {
      "id": "node/4359128194",
      "name": "Barnum cafe",
-     "lat": 41.89673,
-     "lon": 12.47068,
-     "address": "Via del Pellegrino 63/65",
+     "lat": 41.89704,
+     "lon": 12.47002,
+     "address": "Via del Pellegrino 87",
      "website": "https://barnumroma.com/",
      "openingHours": "Mo-Su 08:00-15:30",
      "detailed": true
@@ -2956,6 +2972,16 @@
      "openingHours": "05:30-21:00",
      "cuisine": "pizza",
      "detailed": true
+    },
+    {
+     "id": "node/5557445853",
+     "name": "Jiege",
+     "lat": 41.89354,
+     "lon": 12.50829,
+     "address": "Via Principe Eugenio 67",
+     "openingHours": "Mo-Su 07:00-20:30",
+     "cuisine": "wine, chocolate, cocktail",
+     "detailed": true
     }
    ]
   },
@@ -3056,6 +3082,16 @@
      "detailed": true
     },
     {
+     "id": "node/5435192271",
+     "name": "Alembic",
+     "lat": 41.88929,
+     "lon": 12.47624,
+     "address": "Piazza in Piscinula 51",
+     "openingHours": "Fr-Su 10:30-02:00; Mo-Th 10:30-01:30",
+     "cuisine": "breakfast, coffee shop, mediterranean, tea",
+     "detailed": true
+    },
+    {
      "id": "node/5598775186",
      "name": "Almalu Trastavere",
      "lat": 41.89043,
@@ -3082,16 +3118,6 @@
      "address": "Via degli Ausoni 62",
      "openingHours": "Mo-Sa 11:00-01:30",
      "cuisine": "coffee shop, italian, local",
-     "detailed": true
-    },
-    {
-     "id": "node/257351831",
-     "name": "Bar San Calisto",
-     "lat": 41.88905,
-     "lon": 12.47074,
-     "address": "Piazza di San Calisto 3/4/5",
-     "website": "https://barsancalisto.it/",
-     "openingHours": "Mo-Su 06:30-01:30",
      "detailed": true
     },
     {
@@ -3337,12 +3363,6 @@
      "lat": 41.87546,
      "lon": 12.47652,
      "address": "Via di Monte Testaccio 69"
-    },
-    {
-     "id": "node/14293879435",
-     "name": "Clara",
-     "lat": 41.89714,
-     "lon": 12.47462
     },
     {
      "id": "node/6167913786",
