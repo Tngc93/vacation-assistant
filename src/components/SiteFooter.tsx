@@ -63,7 +63,8 @@ export function SiteFooter() {
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 border-t border-rule px-4 py-5 md:px-8">
         <Caption>
           Açık kaynak ·{" "}
-          <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className={LINK}>
+          {/* lang="en": the Turkish uppercase would print "GİTHUB". */}
+          <a href={REPO_URL} target="_blank" rel="noopener noreferrer" lang="en" className={LINK}>
             GitHub
           </a>{" "}
           ·{" "}
