@@ -245,6 +245,8 @@ function PlaceTile({
               width={place.photo.width}
               height={place.photo.height}
               alt=""
+              // Like the city photo: no credentials, so no Commons cookies.
+              crossOrigin="anonymous"
               loading={position <= 3 ? "eager" : "lazy"}
               // On phones the first card's photo is the largest paint; the second and third wait their turn.
               fetchPriority={position === 1 ? "auto" : "low"}
