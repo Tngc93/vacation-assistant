@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { DESTINATIONS, findDestination, POPULAR_CITY_CODES } from "./destinations";
+import { DESTINATIONS, findDestination, DISCOVER_CITY_CODES } from "./destinations";
 import { ORIGINS } from "./origins";
 
 const IATA = /^[A-Z]{3}$/;
@@ -63,10 +63,10 @@ describe("destinations data", () => {
   });
 });
 
-describe("popular cities", () => {
+describe("discover cities", () => {
   it("are six distinct cities from the list", () => {
-    expect(POPULAR_CITY_CODES).toHaveLength(6);
-    expect(new Set(POPULAR_CITY_CODES).size).toBe(6);
-    for (const code of POPULAR_CITY_CODES) expect(findDestination(code), code).toBeDefined();
+    expect(DISCOVER_CITY_CODES).toHaveLength(6);
+    expect(new Set(DISCOVER_CITY_CODES).size).toBe(6);
+    for (const code of DISCOVER_CITY_CODES) expect(findDestination(code), code).toBeDefined();
   });
 });

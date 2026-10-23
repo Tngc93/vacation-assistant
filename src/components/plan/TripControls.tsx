@@ -5,8 +5,11 @@ import { useOptimistic, useTransition } from "react";
 import { OriginPicker } from "@/components/search/OriginPicker";
 import { PassengerStepper } from "@/components/search/PassengerStepper";
 import type { OriginCode } from "@/data/origins";
+import { BUDGET_FLIGHT_DROPPED_EVENT } from "@/lib/budget/params";
 import { cn } from "@/lib/cn";
 import { writeTripParams } from "@/lib/search/params";
+
+const FLIGHT_KEYS = ["flight", "wf", "wfs"];
 
 /**
  * Writes `?from=` or `?pax=` in place (every other param kept, no jump to the top); the server then renders the
@@ -19,7 +22,11 @@ function useTripParam<T>(value: T, toChange: (next: T) => Parameters<typeof writ
   const change = (next: T) =>
     startTransition(() => {
       setShown(next);
-      const params = writeTripParams(new URLSearchParams(window.location.search), toChange(next));
+      const before = new URLSearchParams(window.location.search);
+      const params = writeTripParams(before, toChange(next));
+      if (FLIGHT_KEYS.some((k) => before.has(k)) && !FLIGHT_KEYS.some((k) => params.has(k))) {
+        window.dispatchEvent(new Event(BUDGET_FLIGHT_DROPPED_EVENT));
+      }
       router.replace(`/plan?${params.toString()}${window.location.hash}`, { scroll: false });
     });
   return { shown, pending, change };

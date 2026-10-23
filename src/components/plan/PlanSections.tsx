@@ -1,4 +1,5 @@
-import { Suspense, type ReactNode } from "react";
+import { Fragment, Suspense, type ReactNode } from "react";
+import { AiDrawerProvider, AiEdgeTab, AiTabButton } from "@/components/ai/AiDrawer";
 import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
 import type { SearchState } from "@/lib/search/params";
@@ -17,8 +18,11 @@ import { VisaCard } from "./VisaCard";
  */
 const SHOW_VISA = false;
 
-/** `print: false` leaves a section out of the printed plan. */
-type Section = { id: string; title: string; lead?: string; status?: string; body: ReactNode; print?: false };
+/**
+ * `print: false` leaves a section out of the printed plan; `action` sits right of the title (under it on phones);
+ * `aiDrawer` shares the AI panel's open state between the section's tabs and the plan.
+ */
+type Section = { id: string; title: string; lead?: string; status?: string; action?: ReactNode; aiDrawer?: true; body: ReactNode; print?: false };
 
 /** The plan's own URL state: `?skip=`, `?ai=` and `?edit=`. */
 export type PlanEdits = { skip: string[]; ai: string[][] | null; edits: EditBatch[] };
@@ -29,6 +33,8 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     {
       id: "gun-gun-plan",
       title: "Gün gün plan",
+      action: <AiTabButton />,
+      aiDrawer: true,
       body: (
         <Suspense fallback={<ItinerarySkeleton />}>
           <ItinerarySection
@@ -104,23 +110,29 @@ export function PlanSections({
 }) {
   return (
     <div className="mt-12 grid gap-16 md:mt-16 md:gap-20">
-      {sectionsFor(search, categories, direct, budget, planEdits).map((section) => (
-        <section
-          key={section.id}
-          id={section.id}
-          aria-labelledby={`${section.id}-title`}
-          className={section.print === false ? "scroll-mt-16 print:hidden" : "scroll-mt-16"}
-        >
-          <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
-            <h2 id={`${section.id}-title`} className="font-display text-title">
-              {section.title}
-            </h2>
-            {section.status ? <Caption tone="accent">{section.status}</Caption> : null}
-          </div>
-          {section.lead ? <p className="mt-3 text-body text-ink-muted print:hidden">{section.lead}</p> : null}
-          <div className="mt-5">{section.body}</div>
-        </section>
-      ))}
+      {sectionsFor(search, categories, direct, budget, planEdits).map((section) => {
+        const Wrap = section.aiDrawer ? AiDrawerProvider : Fragment;
+        return (
+          <Wrap key={section.id}>
+            <section
+              id={section.id}
+              aria-labelledby={`${section.id}-title`}
+              className={section.print === false ? "scroll-mt-16 print:hidden" : "scroll-mt-16"}
+            >
+              <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-3 border-b border-rule pb-3">
+                <h2 id={`${section.id}-title`} className="font-display text-title">
+                  {section.title}
+                </h2>
+                {section.status ? <Caption tone="accent">{section.status}</Caption> : null}
+                {section.action ? <div className="basis-full lg:basis-auto">{section.action}</div> : null}
+              </div>
+              {section.lead ? <p className="mt-3 text-body text-ink-muted print:hidden">{section.lead}</p> : null}
+              <div className="mt-5">{section.body}</div>
+              {section.aiDrawer ? <AiEdgeTab sectionId={section.id} /> : null}
+            </section>
+          </Wrap>
+        );
+      })}
     </div>
   );
 }

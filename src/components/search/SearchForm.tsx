@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type FormEvent } from "react";
 import { Button, Chip } from "@/components/ui";
-import { findDestination, POPULAR_CITY_CODES } from "@/data/destinations";
+import { findDestination, DISCOVER_CITY_CODES } from "@/data/destinations";
 import { DEFAULT_ORIGIN } from "@/data/origins";
 import { todayInIstanbul } from "@/lib/search/dates";
 import {
@@ -137,11 +137,11 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
       </form>
 
       <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span id={`${titleId}-popular`} className={fieldLabel}>
-          Popüler:
+        <span id={`${titleId}-discover`} className={fieldLabel}>
+          Keşfet:
         </span>
-        <ul aria-labelledby={`${titleId}-popular`} className="flex flex-wrap gap-2">
-          {POPULAR_CITY_CODES.map((code) => {
+        <ul aria-labelledby={`${titleId}-discover`} className="flex flex-wrap gap-2">
+          {DISCOVER_CITY_CODES.map((code) => {
             const city = findDestination(code)!;
             return (
               <li key={code}>

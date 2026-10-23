@@ -38,11 +38,11 @@ test("the home page asks only where and when: no origin, no passengers", async (
   await expect(page.getByText("Biniş kartı")).toHaveCount(0);
 });
 
-test("a popular city chip picks the city and opens the calendar; 'Planla' opens /plan with the city and dates only", async ({ page }) => {
+test("a discover city chip picks the city and opens the calendar; 'Planla' opens /plan with the city and dates only", async ({ page }) => {
   await page.goto("/");
-  const popular = page.getByRole("list", { name: "Popüler:" });
-  await expect(popular.getByRole("button")).toHaveCount(6);
-  await popular.getByRole("button", { name: "Barselona" }).click();
+  const discover = page.getByRole("list", { name: "Keşfet:" });
+  await expect(discover.getByRole("button")).toHaveCount(6);
+  await discover.getByRole("button", { name: "Barselona" }).click();
   await expect(page.getByRole("combobox", { name: "Varış şehri" })).toHaveValue("Barselona");
   const calendar = page.getByRole("dialog", { name: "Gidiş tarihini seç" });
   await expect(calendar).toBeVisible();
@@ -136,4 +136,27 @@ test("the number of people changes the budget total and the Booking link", async
   await expect(total).not.toHaveText(before);
   await expect(page.locator("#butce").getByText("5 gün × 2 kişi", { exact: false }).first()).toBeVisible();
   expect(new URL(page.url()).searchParams.get("daily")).toBe("100");
+});
+
+test("a new origin takes the chosen flight out of the budget and says so, until another flight is chosen", async ({ page }) => {
+  await page.goto(`/plan?${route("BCN")}`);
+  const flights = page.locator("#ucuslar");
+  const list = await cheapest(page);
+  await list.getByRole("button", { name: "Bütçeye ekle" }).first().click();
+  await expect(page).toHaveURL(/[?&]flight=/);
+  const note = page.locator("#butce").getByText("Kalkış değişti; seçili uçuş bütçeden çıkarıldı.");
+  await expect(note).toHaveCount(0);
+
+  await flights.getByText("Ankara", { exact: true }).click();
+  await expect(page).toHaveURL(/[?&]from=ESB(&|$)/);
+  await expect(page).not.toHaveURL(/[?&]flight=/);
+  await expect(note).toBeVisible();
+
+  // Back to İstanbul and a ticket chosen again: the note goes.
+  await flights.getByText("İstanbul", { exact: true }).click();
+  await expect(page).not.toHaveURL(/[?&]from=/);
+  await expect(list.getByRole("button", { name: "Bütçeye ekle" }).first()).toBeVisible();
+  await list.getByRole("button", { name: "Bütçeye ekle" }).first().click();
+  await expect(page).toHaveURL(/[?&]flight=/);
+  await expect(note).toHaveCount(0);
 });

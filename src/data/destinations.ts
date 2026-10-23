@@ -1011,7 +1011,8 @@ export function findDestination(cityCode: string): Destination | undefined {
 }
 
 /**
- * The home page's "Popüler" row: six of the cities above, an editorial pick across Europe for a first trip.
+ * The home page's "Keşfet" row: six of the cities above, picked by us across Europe for a first trip (not a
+ * measured popularity, hence not "Popüler").
  * Every code must be in DESTINATIONS (tested).
  */
-export const POPULAR_CITY_CODES = ["PAR", "ROM", "BCN", "AMS", "PRG", "LON"] as const;
+export const DISCOVER_CITY_CODES = ["PAR", "ROM", "BCN", "AMS", "PRG", "LON"] as const;

@@ -4,7 +4,7 @@ import { useEffect, useId, useState } from "react";
 import { Caption, Chip } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { amountToInput, formatMinor, parseAmountInput } from "@/lib/budget/money";
-import { BUDGET_STAY_EVENT, writeBudgetParams, type BudgetParams } from "@/lib/budget/params";
+import { BUDGET_FLIGHT_DROPPED_EVENT, BUDGET_STAY_EVENT, writeBudgetParams, type BudgetParams } from "@/lib/budget/params";
 import { buildReceipt, type FlightLine, type RateInfo, type ReceiptRow } from "@/lib/budget/receipt";
 
 type Props = {
@@ -114,6 +114,15 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
     return () => window.removeEventListener(BUDGET_STAY_EVENT, onStay);
   }, []);
 
+  // A new origin took the chosen flight out (the link no longer has it); said once, until another flight is chosen.
+  const [flightDropped, setFlightDropped] = useState(false);
+  useEffect(() => {
+    const onDropped = () => setFlightDropped(true);
+    window.addEventListener(BUDGET_FLIGHT_DROPPED_EVENT, onDropped);
+    return () => window.removeEventListener(BUDGET_FLIGHT_DROPPED_EVENT, onDropped);
+  }, []);
+  const showDropped = flightDropped && initial.flight === null && initial.webFlight === null;
+
   const read = (text: string) => (text.trim() ? parseAmountInput(text) : null);
   const stay = read(stayText);
   const daily = read(dailyText);
@@ -184,6 +193,9 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
 
       <section aria-label="Bütçe fişi" className="rounded-md border border-rule bg-paper-raised px-5 py-4 shadow-ticket md:px-8 md:py-6">
         <Caption as="p">BÜTÇE FİŞİ · TL</Caption>
+        <p role="status" className="text-caption text-ink-muted empty:hidden print:hidden">
+          {showDropped ? "Kalkış değişti; seçili uçuş bütçeden çıkarıldı." : ""}
+        </p>
         <dl className="mt-2 divide-y divide-dashed divide-rule print:hidden">
           {receipt.rows.map((row) => (
             <Row key={row.id} row={row} />

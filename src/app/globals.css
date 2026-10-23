@@ -147,6 +147,23 @@
   --shadow-ticket: 0 1px 0 var(--rule), 0 8px 24px -16px rgb(0 0 0 / 0.25);
 
   --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* The AI side panel slides in from the right on desktop, the sheet up from the bottom on phones. */
+  --animate-panel-in: panel-in 220ms var(--ease-out);
+  --animate-sheet-in: sheet-in 240ms var(--ease-out);
+
+  @keyframes panel-in {
+    from {
+      opacity: 0;
+      transform: translateX(1.5rem);
+    }
+  }
+
+  @keyframes sheet-in {
+    from {
+      transform: translateY(100%);
+    }
+  }
 }
 
 @layer base {

@@ -10,7 +10,7 @@ import { addDays, daysBetween, isoToDate, latestTripDate, MAX_NIGHTS, todayInIst
 
 export type DateRange = { depart?: string; return?: string };
 
-/** Lets a parent open the calendar (the home page's popular-city chips). */
+/** Lets a parent open the calendar (the home page's "Keşfet" city chips). */
 export type DateRangeFieldHandle = { open: () => void };
 
 export type DateRangeFieldProps = {
