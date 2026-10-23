@@ -38,6 +38,9 @@ export function SiteFooter() {
           <p className="mt-6 max-w-sm text-caption text-ink">
             Fiyatlar tahminidir; satın almadan önce sağlayıcıda doğrula.
           </p>
+          <p className="mt-2 max-w-sm text-caption text-ink-muted">
+            Ziyaretler çerezsiz ve anonim sayılır (Vercel Web Analytics); plan içeriğin ölçülmez.
+          </p>
         </div>
         <div className="md:col-span-7">
           <Caption as="h2">Veri kaynakları</Caption>

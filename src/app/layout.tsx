@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { analyticsEnabled } from "@/lib/analytics";
 import { BRAND_DESCRIPTION, BRAND_NAME, SITE_URL } from "@/lib/brand";
 import { cn } from "@/lib/cn";
 import { themeInitScript } from "@/lib/theme";
@@ -47,6 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
+        {analyticsEnabled() ? <SiteAnalytics /> : null}
       </body>
     </html>
   );

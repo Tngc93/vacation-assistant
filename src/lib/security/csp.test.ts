@@ -16,6 +16,13 @@ describe("Content-Security-Policy", () => {
     expect(directive(csp, "object-src")).toEqual(["'none'"]);
   });
 
+  it("opens no origin for Vercel Web Analytics: its script and beacon live under our own /_vercel/insights", () => {
+    const csp = contentSecurityPolicy({ dev: false });
+    expect(directive(csp, "script-src")).toEqual(["'self'", "'unsafe-inline'"]);
+    expect(directive(csp, "connect-src")).toContain("'self'");
+    expect(csp).not.toMatch(/vercel/i);
+  });
+
   it("allows eval and the reload socket only in development", () => {
     const dev = contentSecurityPolicy({ dev: true });
     expect(directive(dev, "script-src")).toContain("'unsafe-eval'");
