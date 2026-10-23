@@ -14,7 +14,8 @@ function renderReceipt(props: Partial<Parameters<typeof BudgetReceipt>[0]> = {})
   return render(<BudgetReceipt initial={empty} flight={flight} rate={rate} localCurrency="EUR" nights={4} days={5} pax={2} {...props} />);
 }
 const receipt = () => screen.getByRole("region", { name: "Bütçe fişi" });
-const row = (label: string) => within(receipt()).getByText(label).closest("div")!.parentElement!;
+// A receipt line is one <dt>/<dd> group in the <dl>.
+const row = (label: string) => within(receipt()).getByText(label).closest("dt")!.parentElement!;
 
 describe("BudgetReceipt", () => {
   beforeEach(() => window.history.replaceState(null, "", `/plan?${SEARCH}#butce`));

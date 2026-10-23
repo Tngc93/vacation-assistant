@@ -11,5 +11,5 @@ test("a sight mapped as several OSM objects is listed once", async ({ page }) =>
   await page.goto(`/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2&cats=see`);
   const places = page.getByRole("list", { name: "Görülecek yerler" });
   await expect(places.getByRole("button").first()).toBeVisible();
-  await expect(places.getByRole("button", { name: /^\d\d\. La Rambla, / })).toHaveCount(1);
+  await expect(places.getByRole("button", { name: /^(MUTLAKA GÖR · \d\d )?La Rambla / })).toHaveCount(1);
 });

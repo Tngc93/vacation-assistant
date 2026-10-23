@@ -149,7 +149,7 @@ function ConnectForm({
           <label htmlFor={`${id}-key`} className="text-caption font-medium text-ink">
             API anahtarı
           </label>
-          <div className="mt-1.5 flex h-11 items-center gap-2 rounded-sm border border-rule bg-paper px-3 focus-within:border-ink">
+          <div className="mt-1.5 flex h-11 items-center gap-2 rounded-sm border border-rule bg-paper px-3 focus-within:border-ink field-focus-ring">
             <KeyRound aria-hidden="true" size={14} strokeWidth={1.5} className="shrink-0 text-ink-muted" />
             <input
               id={`${id}-key`}
@@ -343,7 +343,7 @@ function Assistant({
             maxLength={500}
             onChange={(e) => setRequest(e.target.value)}
             placeholder={`Örn. ${EXAMPLES.join(" · ")}`}
-            className="h-11 w-full min-w-0 flex-1 rounded-sm border border-rule bg-paper px-3 text-body text-ink outline-none focus:border-ink"
+            className="h-11 w-full min-w-0 flex-1 rounded-sm border border-rule bg-paper px-3 text-body text-ink focus:border-ink"
           />
           <Button type="submit" variant="secondary" disabled={busy !== null || !request.trim()}>
             {busy === "edit" ? "Düzenleniyor…" : "Uygula"}

@@ -194,6 +194,12 @@
     outline-offset: 2px;
   }
 
+  /* A field's frame takes the ring when the borderless input inside it has focus. */
+  .field-focus-ring:has(:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
   a {
     text-underline-offset: 0.2em;
     text-decoration-thickness: 1px;
@@ -262,6 +268,14 @@
 
 .maplibregl-map .maplibregl-ctrl-group button + button {
   border-top-color: var(--rule);
+}
+
+/* The site's focus ring instead of MapLibre's blue glow. */
+.maplibregl-map .maplibregl-ctrl button:focus-visible,
+.maplibregl-map .maplibregl-ctrl-attrib-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: none;
 }
 
 :root[data-theme="dark"] .maplibregl-ctrl-icon {
