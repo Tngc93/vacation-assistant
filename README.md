@@ -1,17 +1,43 @@
 # Vacationist
 
-Kısa şehir kaçamakları için planlayıcı: Türkiye'den en ucuz uçuş, TL bütçe ve gün gün şehir planı tek ekranda. (Repo ve paket adı `vacation-assistant` olarak kalır.)
+**Kısa şehir kaçamakları için planlayıcı.** Türkiye'den (İstanbul ya da Ankara) yurt dışına birkaç günlük şehir tatili planlayanlar için: şehri ve günleri seç; görülecek yerler, gün gün plan, konaklama linkleri, en ucuz uçuş ve TL cinsinden bütçe tek sayfada.
 
-> 🚧 Yapım aşamasında. Henüz kullanıma hazır değil.
+**Canlı:** <https://vacation-assistant-nine.vercel.app>
 
-## Belgeler
+Açık kaynak ve tamamen ücretsiz servislerle çalışır. Repo ve paket adı `vacation-assistant` olarak kalır.
 
-- [Ürün gereksinimleri (PRD)](docs/PRD.md)
-- [Tasarım dili (DESIGN)](docs/DESIGN.md)
-- [Yapım planı (PLAN)](docs/PLAN.md)
-- [Ajan çalışma kuralları (AGENTS)](AGENTS.md)
+| Ana sayfa | Plan |
+| --- | --- |
+| ![Ana sayfa: "Nereye gidiyorsun?", varış şehri, tarihler ve Keşfet çipleri](docs/screenshots/home.png) | ![Plan sayfasının ilk ekranı: şehir adı, kategori çipleri, görülecek yerler karuseli, şehir fotoğrafı ve harita](docs/screenshots/plan-hero.png) |
+| **Gün gün plan** | **Uçuşlar** |
+| ![Gün gün plan: büyük gün numaraları, saatli duraklar ve gün haritası](docs/screenshots/day-by-day.png) | ![Uçuşlar: kalkış ve kişi seçimi, havalimanı başına en ucuz bilet](docs/screenshots/flights.png) |
 
-## Veri kaynakları ve atıflar
+<sub>Ekran görüntüleri yerel "örnek veri" moduyla alındı (`VA_FLIGHTS_FIXTURES=1`); uçuş fiyatları gerçek değildir.</sub>
+
+## Ne yapar
+
+- **Nereye ve ne zaman:** ana sayfa yalnızca varış şehrini ve tarihleri sorar; Avrupa'dan Körfez'e, Kuzey Afrika'dan Uzak Doğu'ya 68 şehir.
+- **Görülecek yerler:** OpenStreetMap ve Wikidata'dan önceden çekilmiş mekânlar; Vikipedi'de kaç dilde olduğuna göre "mutlaka gör" sırası, kategoriler (görülecek yer, müze, manzara, restoran, kafe, bar…), harita ve Commons fotoğrafları.
+- **Gün gün plan:** deterministik; uçuş saatlerine, açılış saatlerine ve yürüme mesafesine göre. Durak çıkarılabilir, plan `.ics` olarak takvime eklenir.
+- **Konaklama:** Booking ve Google Hotels'te tarihleri dolu arama linkleri (otel fiyatı uydurulmaz).
+- **Uçuşlar:** IST, SAW ve ESB'den en ucuz biletler (Travelpayouts önbelleği, "tahmini" etiketiyle).
+- **Bütçe:** uçuş, konaklama ve günlük harcama TL'de, kaynak ve kurla; değerler URL'de, paylaşılan link aynı planı açar.
+
+### Yapay zekâ olmadan tam çalışır
+
+Plan, sıralama ve bütçe yapay zekâya ihtiyaç duymaz; aynı girdi her zaman aynı planı verir.
+
+### İstersen kendi anahtarınla yapay zekâ (BYOK)
+
+Anthropic, OpenAI ya da Google Gemini anahtarını bağlayıp planı sohbetle değiştirebilirsin ("ikinci günü daha sakin yap", "müzeleri azalt"). Anahtar **yalnızca tarayıcında** kalır (varsayılan sekme oturumu, istersen "Bu cihazda hatırla"); çağrılar tarayıcından doğrudan sağlayıcıya gider, sunucumuza hiç uğramaz, URL'ye yazılmaz, loglanmaz. Model yalnızca çekilmiş mekân listesinden seçer; saat, açılış ve yürüme kurallarını uygulama hesaplar.
+
+**Gemini ücretsiz katman notu:** Gemini'nin ücretsiz katmanı plan sohbeti için yeterli. "Web'de ara" (uçuş fiyatı ve semte göre otel aralığı) ise ücretsiz katmanda yalnızca Gemini 2.5 modellerinde vardı ve Google bu modelleri yeni hesaplara kapattı; Gemini 3'te ücretsiz katmanda Google Search yok (2026-10-21'de kontrol edildi). Anthropic ve OpenAI'da web araması sağlayıcının kendi ücretiyle çalışır.
+
+### Dürüst veri
+
+Her fiyat, kur ve tahmin kaynağıyla ve "tahmini" etiketiyle gösterilir. Bir kaynak cevap vermezse uygulama bunu açıkça söyler; tahmini ya da sabit değer uydurmaz. Konaklama ve günlük harcama için hazır "ortalama" yoktur: yalnızca senin girdiğin değer. Uçuş, otel ya da arama siteleri kazınmaz.
+
+## Veri kaynakları ve lisanslar
 
 | Veri | Kaynak | Lisans / şart |
 | --- | --- | --- |
@@ -32,9 +58,45 @@ Kısa şehir kaçamakları için planlayıcı: Türkiye'den en ucuz uçuş, TL b
 | Şehir fotoğrafı | [Wikimedia Commons](https://commons.wikimedia.org) (Wikidata P18) | Yalnızca CC0, kamu malı, CC BY ve CC BY-SA. Fotoğrafçı, lisans linki ve "renkleri düzenlendi" notu her fotoğrafın altında. Meta veri önceden çekilir; görsel Commons CDN'inden gelir. |
 | Harita karoları | [OpenFreeMap](https://openfreemap.org) (OpenMapTiles şeması), [MapLibre GL JS](https://maplibre.org) ile | Ücretsiz, anahtarsız; "© OpenStreetMap katkıcıları · OpenFreeMap" atfı haritada. |
 
-Her fiyat, kur ve vize bilgisi kaynağıyla ve tarihiyle gösterilir; bir kaynak cevap vermezse uygulama bunu açıkça söyler, tahmini ya da sabit değer uydurmaz.
+Her fiyat, kur ve vize bilgisi kaynağıyla ve tarihiyle gösterilir; bir kaynak cevap vermezse uygulama bunu açıkça söyler, tahmini ya da sabit değer uydurmaz. Sayfa sonunda da kaynaklar ve lisansları listelenir.
 
-## Geliştirici notları
+## Yerelde çalıştırma
+
+Node 22 gerekir (`.nvmrc`).
+
+```bash
+npm ci
+npm run dev
+```
+
+Uygulama <http://localhost:3000>'de açılır. Uçuşlar için `.env.example`'ı `.env.local` olarak kopyalayıp şu değişkenleri doldur (değerler yalnızca `.env.local`'de durur, asla commit'lenmez):
+
+- `TRAVELPAYOUTS_TOKEN`
+- `TRAVELPAYOUTS_MARKER`
+- `TRAVELPAYOUTS_PROJECT_ID`
+
+Token olmadan da her şey çalışır; uçuş bölümü bilet kartları yerine Aviasales ve Google Flights linklerini gösterir.
+
+**Demo modları** (yalnızca yerelde, Vercel'de çalışmaz):
+
+- `VA_AI_MOCK=1 npm run dev` — yapay zekâ ve web aramasını anahtarsız örnek cevaplarla açar; her sonuçta "ÖRNEK VERİ" yazar.
+- `VA_FLIGHTS_FIXTURES=1 npm run dev` — token olmadan örnek uçuş verisi; sayfada "ÖRNEK VERİ · GERÇEK FİYAT DEĞİL" bandı görünür.
+
+Sık kullanılan komutlar (tam liste ve ayrıntılar [AGENTS.md](AGENTS.md)'de):
+
+| Komut | Ne yapar |
+| --- | --- |
+| `npm run lint` | ESLint (uyarı da hata sayılır) |
+| `npm run typecheck` | Route tipleri + `tsc --noEmit` |
+| `npm test` | Vitest birim testleri |
+| `npm run build` | Üretim derlemesi |
+| `npm run check:bundle` | Sunucuya özel veri ve token istemci paketine sızmamış mı |
+| `npm run test:e2e` | Playwright uçtan uca testleri, axe erişilebilirlik ve klavye turu dahil (önce `npm run build`) |
+| `npm run data:places` | Mekân verisini yeniden çeker (ağ ister, ~3 saat) |
+
+Vercel'e kurulum, ortam değişkenleri, Travelpayouts hesabı ve aylık veri yenileme: [docs/DEPLOY.md](docs/DEPLOY.md).
+
+### Geliştirici notları
 
 - Node 22 (`.nvmrc`). Komutlar için [AGENTS.md](AGENTS.md).
 - Mekân verisi `src/data/places/` altında commit'lenir; elle tazelemek için `npm run data:places` (tüm şehirler, sırayla; yaklaşık üç saat; yarıda kalırsa aynı komut son 24 saatte çekilenleri atlayıp kaldığı yerden sürer, `-- --force` hepsini yeniden çeker) ya da `npm run data:places -- BCN SJJ`. Görülecek yer kuralları okurken uygulanır (`src/lib/places/rules.ts`, istisnalar `src/data/place-overrides.ts`); kural değiştirmek yeniden çekme gerektirmez. Tür etiketlerini ve `relink` istisnalarını yalnızca Wikidata'dan tazelemek için `npm run data:kinds` (birkaç dakika); bağlantı denetimi `npm run verify:place-links`.
@@ -42,6 +104,31 @@ Her fiyat, kur ve vize bilgisi kaynağıyla ve tarihiyle gösterilir; bir kaynak
 - **Uçuşlar:** `.env.example`'ı `.env.local` olarak kopyalayıp `TRAVELPAYOUTS_TOKEN`, `TRAVELPAYOUTS_MARKER` ve `TRAVELPAYOUTS_PROJECT_ID`'yi doldur (Vercel'de ortam değişkeni olarak). Partner link biçimini `npm run verify:partner-links` Travelpayouts'un partner link API'siyle karşılaştırır (ağ ister). Token yoksa uçuş bölümü kart yerine Aviasales ve Google Flights linklerini gösterir. Token olmadan arayüzü görmek için `VA_FLIGHTS_FIXTURES=1` örnek veriyi açar; sayfa bunu "ÖRNEK VERİ · GERÇEK FİYAT DEĞİL" bandıyla belirtir ve bu mod Vercel'de çalışmaz.
 - `GITHUB_TOKEN` ile açılan PR'lar başka workflow'ları tetiklemez; tazeleme PR'ında CI'ı merge'den önce elle çalıştır (testler tazeleme workflow'unun içinde zaten koşar).
 
+## Katkı
+
+Hata bildirimi ve PR'lar memnuniyetle karşılanır.
+
+- Önce [AGENTS.md](AGENTS.md) (çalışma kuralları), [docs/DESIGN.md](docs/DESIGN.md) (görsel dil) ve [docs/PRD.md](docs/PRD.md) (ürün gereksinimleri).
+- Her iş kendi branch'inde: `feat/…`, `fix/…`, `docs/…`, `chore/…`; commit mesajları İngilizce, Conventional Commits.
+- PR'dan önce `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run check:bundle` ve `npm run test:e2e` geçmeli.
+- Kurallar: yalnızca ücretsiz servisler, kazıma yok, uydurma veri yok; arayüz metinleri Türkçe; ham renk değeri yalnızca `src/app/globals.css`'te.
+- Gizli anahtarlar asla commit'lenmez.
+
+Belgeler: [PRD](docs/PRD.md) · [DESIGN](docs/DESIGN.md) · [PLAN](docs/PLAN.md) · [DEPLOY](docs/DEPLOY.md) · [AGENTS](AGENTS.md)
+
 ## Lisans
 
-Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](src/data/places/README.md).
+Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](src/data/places/README.md). Open Graph kartlarındaki fontlar (`assets/og/`): SIL Open Font License 1.1. Her Commons fotoğrafı kendi lisansıyla, yazarı ve lisansı yanında gösterilir.
+
+---
+
+## English summary
+
+**Vacationist** is an open source planner for short city breaks from Turkey (Istanbul or Ankara). Pick a city and dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from IST, SAW or ESB and a budget in Turkish lira on one page. Live: <https://vacation-assistant-nine.vercel.app>
+
+- Works fully without AI: the plan is deterministic, built from pre-fetched OpenStreetMap and Wikidata data.
+- Optional bring-your-own-key AI (Anthropic, OpenAI, Gemini) to edit the plan by chat; the key stays in your browser and calls go straight to the provider. Gemini's free tier covers chat, but free web search is no longer available to new Gemini accounts.
+- Honest data: every price and estimate shows its source and an "estimated" label; nothing is made up and nothing is scraped.
+- Runs on free services only (Vercel Hobby, Travelpayouts, TCMB/Frankfurter/open.er-api, OpenFreeMap).
+- Run locally with Node 22: `npm ci && npm run dev`; `VA_AI_MOCK=1` and `VA_FLIGHTS_FIXTURES=1` give keyless demos. Deploy guide: [docs/DEPLOY.md](docs/DEPLOY.md).
+- Code under MIT; place data under ODbL 1.0. The interface is in Turkish.
