@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "SVQ",
- "fetchedAt": "2026-10-22T05:15:56.375Z",
+ "fetchedAt": "2026-10-23T12:16:25.932Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -103,6 +103,7 @@
       "adminArea",
       "castle",
       "heritage",
+      "notPlace",
       "palace"
      ],
      "photo": {
@@ -138,7 +139,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Giralda_de_Sevilla_(3).jpg",
       "fullWidth": 4671
      },
-     "description": "Monument in Seville, Spain"
+     "description": "Monument in Seville, Spain",
+     "parentId": "Q231606",
+     "parentName": "Sevilla Katedrali"
     },
     {
      "id": "wikidata/Q368737",
@@ -551,6 +554,9 @@
      "lon": -5.99305,
      "wikipediaCount": 3,
      "wikidataId": "Q6153784",
+     "kinds": [
+      "notPlace"
+     ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tumba_de_Colon-Sevilla.jpg/500px-Tumba_de_Colon-Sevilla.jpg",
       "width": 500,
@@ -561,7 +567,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Tumba_de_Colon-Sevilla.jpg",
       "fullWidth": 1627
      },
-     "description": "Tomb of Christopher Columbus, Cathedral of Seville, Spain"
+     "description": "Tomb of Christopher Columbus, Cathedral of Seville, Spain",
+     "parentId": "Q231606",
+     "parentName": "Sevilla Katedrali"
     },
     {
      "id": "relation/6054646",
@@ -1015,7 +1023,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fachada_del_Hospital_de_la_Caridad.jpg",
       "fullWidth": 2592
      },
-     "description": "Seville, İspanya'da kilise"
+     "description": "Seville, İspanya'da kilise",
+     "parentId": "Q5710444",
+     "parentName": "Reales Atarazanas"
     },
     {
      "id": "node/4647829792",
@@ -1114,7 +1124,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Monasterio_de_la_Cartuja,_Sevilla.jpg",
       "fullWidth": 1600
-     }
+     },
+     "parentId": "Q97641872",
+     "parentName": "Monasterio de Santa María de las Cuevas"
     },
     {
      "id": "way/119568946",

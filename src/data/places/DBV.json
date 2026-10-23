@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "DBV",
- "fetchedAt": "2026-10-22T06:09:44.840Z",
+ "fetchedAt": "2026-10-23T13:43:51.703Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -329,7 +329,7 @@
     },
     {
      "id": "way/171795142",
-     "name": "Fort Royal",
+     "name": "Utvrda Royal",
      "lat": 42.62997,
      "lon": 18.11674,
      "wikipediaCount": 1,
@@ -384,7 +384,7 @@
      "id": "way/409346456",
      "name": "Lazaret",
      "lat": 42.6321,
-     "lon": 18.1176
+     "lon": 18.11761
     },
     {
      "id": "node/10050988134",
@@ -479,7 +479,7 @@
      "lon": 18.11784,
      "address": "Ulica Frana Supila 23",
      "website": "https://www.ugdubrovnik.hr/",
-     "openingHours": "Tu-Su 9:00-20:00"
+     "openingHours": "Tu-Su 09:00-20:00"
     },
     {
      "id": "node/11037064724",
@@ -571,16 +571,16 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/4112568999",
-     "name": "Fort Royal",
-     "lat": 42.63012,
-     "lon": 18.1162
-    },
-    {
      "id": "node/4443270890",
      "name": "Old Town and Lokrum Viewpoint",
      "lat": 42.64471,
      "lon": 18.10812
+    },
+    {
+     "id": "node/4112568999",
+     "name": "Utvrda Royal",
+     "lat": 42.63012,
+     "lon": 18.1162
     }
    ]
   },
@@ -589,13 +589,25 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/1871515447",
+     "name": "Dubravka 1836 Restaurant & Cafe",
+     "lat": 42.64162,
+     "lon": 18.10622,
+     "address": "Brsalje 1",
+     "website": "https://www.nautikarestaurants.com/dubravka-restaurant-cafe/",
+     "openingHours": "Mo-Su 08:00-23:45",
+     "cuisine": "local, seafood, steak house",
+     "detailed": true
+    },
+    {
      "id": "node/821764743",
      "name": "Konoba Dubrava",
      "lat": 42.64301,
      "lon": 18.12888,
+     "address": "Bosanka",
      "website": "http://www.konobadubrava.com/",
      "openingHours": "Mo-Su 11:00-24:00",
-     "cuisine": "regional",
+     "cuisine": "local, regional",
      "detailed": true
     },
     {
@@ -604,8 +616,30 @@
      "lat": 42.64683,
      "lon": 18.09027,
      "website": "https://marangun-restaurant.com/",
-     "openingHours": "Mo-Su 09:00-24:00",
+     "openingHours": "Mo-Su 11:00-24:00",
      "cuisine": "croatian, mediterranean, regional",
+     "detailed": true
+    },
+    {
+     "id": "node/5009840038",
+     "name": "Posat",
+     "lat": 42.64235,
+     "lon": 18.1067,
+     "address": "Uz Posat 1",
+     "website": "https://www.posat-dubrovnik.com/",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "local, seafood, steak house",
+     "detailed": true
+    },
+    {
+     "id": "node/821790770",
+     "name": "Sesame",
+     "lat": 42.64258,
+     "lon": 18.10302,
+     "address": "Dante Alighieria 2",
+     "website": "https://www.sesame.hr/",
+     "openingHours": "Mo-Su 09:00-00:00",
+     "cuisine": "local, seafood, steak house",
      "detailed": true
     },
     {
@@ -661,6 +695,16 @@
      "wikidataId": "Q88301254",
      "detailed": true,
      "description": "restaurant in Croatia"
+    },
+    {
+     "id": "node/8880753017",
+     "name": "Bona Fide",
+     "lat": 42.64089,
+     "lon": 18.1076,
+     "address": "Čubranovićeva 8",
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "mexican, pasta, pizza",
+     "detailed": true
     },
     {
      "id": "node/13206079811",
@@ -749,12 +793,23 @@
      "detailed": true
     },
     {
-     "id": "node/821790770",
-     "name": "Sesame",
-     "lat": 42.64258,
-     "lon": 18.10302,
-     "website": "https://www.sesame.hr/",
-     "openingHours": "Mo-Su 09:00-00:00",
+     "id": "node/5349464660",
+     "name": "Portun",
+     "lat": 42.6416,
+     "lon": 18.1083,
+     "address": "Od Sigurate 2",
+     "openingHours": "Mo-Su 09:00-24:00",
+     "cuisine": "regional, seafood",
+     "detailed": true
+    },
+    {
+     "id": "node/9260460191",
+     "name": "Rudjer",
+     "lat": 42.63933,
+     "lon": 18.10976,
+     "address": "Poljana Ruđera Boškovića 6",
+     "website": "https://www.rudjer.restaurant/",
+     "openingHours": "Mo-Su 08:00-23:00",
      "detailed": true
     },
     {
@@ -821,43 +876,6 @@
      "lon": 18.10826,
      "address": "Prijeko",
      "cuisine": "regional, seafood"
-    },
-    {
-     "id": "node/8880753017",
-     "name": "Bona Fide",
-     "lat": 42.64089,
-     "lon": 18.1076,
-     "cuisine": "mexican, pasta, pizza"
-    },
-    {
-     "id": "node/11878732513",
-     "name": "Carpaccio Konoba",
-     "lat": 42.64186,
-     "lon": 18.10849,
-     "cuisine": "mediterranean"
-    },
-    {
-     "id": "node/4832618122",
-     "name": "El Toro",
-     "lat": 42.64676,
-     "lon": 18.09071,
-     "address": "Ulica Iva Vojnovića 5",
-     "cuisine": "seafood, balkan, italian"
-    },
-    {
-     "id": "node/5009840037",
-     "name": "Forteca",
-     "lat": 42.64243,
-     "lon": 18.10652,
-     "openingHours": "Mo-Su 10:00-24:00"
-    },
-    {
-     "id": "node/8913305105",
-     "name": "Heritage of Dubrovnik",
-     "lat": 42.64194,
-     "lon": 18.10824,
-     "address": "Prijeko 32",
-     "openingHours": "Mo-Su 12:00-22:00"
     }
    ]
   },
@@ -1041,12 +1059,6 @@
      "address": "Bunićeva poljana 2"
     },
     {
-     "id": "node/2344675759",
-     "name": "Karoca",
-     "lat": 42.6503,
-     "lon": 18.09047
-    },
-    {
      "id": "node/3040562771",
      "name": "Micro",
      "lat": 42.63973,
@@ -1077,6 +1089,16 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/2344645036",
+     "name": "Dukah",
+     "lat": 42.64303,
+     "lon": 18.10279,
+     "website": "https://www.dukah-bar.com/",
+     "openingHours": "PH,Mo-Su 10:00-02:00",
+     "cuisine": "brazilian, coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/4882820524",
      "name": "Cafe Bar The Kop",
      "lat": 42.64159,
@@ -1084,15 +1106,6 @@
      "address": "Od Tabakarije 5",
      "openingHours": "Mo-Su 08:00-02:00",
      "cuisine": "european, mediterranean, croatian",
-     "detailed": true
-    },
-    {
-     "id": "node/2344645036",
-     "name": "Dukah",
-     "lat": 42.64303,
-     "lon": 18.10279,
-     "website": "https://www.dukah-bar.com/",
-     "openingHours": "PH,Mo-Su 10:00-02:00",
      "detailed": true
     },
     {
@@ -1255,6 +1268,12 @@
      "lon": 18.11
     },
     {
+     "id": "node/14104979402",
+     "name": "Ragusinum",
+     "lat": 42.64044,
+     "lon": 18.10758
+    },
+    {
      "id": "node/12874962901",
      "name": "Tata's",
      "lat": 42.64468,
@@ -1271,12 +1290,6 @@
      "name": "The Bar",
      "lat": 42.64168,
      "lon": 18.10902
-    },
-    {
-     "id": "node/4382081289",
-     "name": "the gaffe Irish pub",
-     "lat": 42.64101,
-     "lon": 18.10925
     }
    ]
   },

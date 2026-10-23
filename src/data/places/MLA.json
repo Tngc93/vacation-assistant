@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "MLA",
- "fetchedAt": "2026-10-22T06:10:38.249Z",
+ "fetchedAt": "2026-10-23T13:44:37.626Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -52,6 +52,7 @@
      "wikidataId": "Q755514",
      "kinds": [
       "heritage",
+      "notPlace",
       "ruins",
       "unesco"
      ],
@@ -114,7 +115,7 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Valletta_St_Johns_square_Malta_2014_3.jpg",
       "fullWidth": 2400
      },
-     "description": "palace"
+     "description": "palace in Valletta, Malta"
     },
     {
      "id": "relation/7905228",
@@ -750,6 +751,9 @@
      "lon": 14.50782,
      "wikipediaCount": 5,
      "wikidataId": "Q2900880",
+     "kinds": [
+      "notPlace"
+     ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Floriana_War_Memorial.jpg/500px-Floriana_War_Memorial.jpg",
       "width": 500,
@@ -1005,7 +1009,7 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Valletta_St_Johns_square_Malta_2014_3.jpg",
       "fullWidth": 2400
      },
-     "description": "palace"
+     "description": "palace in Valletta, Malta"
     },
     {
      "id": "way/54896162",
@@ -1107,7 +1111,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Auberge_d%27Italie,_Valletta_002.jpg",
       "fullWidth": 2268
      },
-     "description": "art museum in Valletta, Malta"
+     "description": "art museum in Valletta, Malta",
+     "parentId": "Q16863312",
+     "parentName": "Auberge d'Italie"
     },
     {
      "id": "way/240871554",
@@ -1333,7 +1339,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Malta_Valletta_BW_2011-10-07_14-03-30.jpg",
       "fullWidth": 3036
      },
-     "description": "museum in Malta"
+     "description": "museum in Malta",
+     "parentId": "Q1368885",
+     "parentName": "Grand Master's Palace"
     },
     {
      "id": "node/4508807392",
@@ -1430,7 +1438,9 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Malta"
+     "description": "museum in Malta",
+     "parentId": "Q613619",
+     "parentName": "Aziz John Eş Katedrali"
     },
     {
      "id": "node/12664527917",

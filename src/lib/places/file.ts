@@ -11,8 +11,9 @@ import { KIND_TAGS } from "./kinds";
 /**
  * 3: Wikidata must-sees stored as raw candidates with their kinds; the sight rules run on read (rules.ts).
  * 4: card photos (Wikidata P18, Commons author and licence) and short descriptions for places with an item.
+ * 5: the place another place is inside (Wikidata P361/P276, containment.ts): `parentId` and `parentName`.
  */
-export const PLACES_FILE_VERSION = 4;
+export const PLACES_FILE_VERSION = 5;
 
 export const ODBL = {
   name: "ODbL-1.0",
@@ -48,6 +49,10 @@ export const storedPlaceSchema = z.object({
   photo: z.lazy(() => cardPhotoSchema).optional(),
   /** Wikidata description, Turkish first, then English. */
   description: z.string().min(1).max(200).optional(),
+  /** Wikidata item of the city's place this one is inside (the Tsar Bell in the Kremlin); one level only. */
+  parentId: z.string().regex(/^Q[1-9]\d*$/).optional(),
+  /** That place's Turkish Wikidata label, else its stored name: "Moskova Kremlini". */
+  parentName: z.string().min(1).optional(),
 });
 
 /**

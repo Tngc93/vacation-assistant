@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "BEG",
- "fetchedAt": "2026-10-22T05:54:21.595Z",
+ "fetchedAt": "2026-10-23T13:21:38.162Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -1118,6 +1118,9 @@
      "lon": 20.44972,
      "wikipediaCount": 4,
      "wikidataId": "Q25464753",
+     "kinds": [
+      "notPlace"
+     ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/T%C3%BCrbe_Silahdar_Damat_Ali_pasha_Mora_Fatihi_%281%29.JPG/500px-T%C3%BCrbe_Silahdar_Damat_Ali_pasha_Mora_Fatihi_%281%29.JPG",
       "width": 500,
@@ -1179,7 +1182,8 @@
      "wikipediaCount": 2,
      "wikidataId": "Q3542246",
      "kinds": [
-      "heritage"
+      "heritage",
+      "notPlace"
      ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Turbe_%C5%A1eih_Mustafe1.jpg/500px-Turbe_%C5%A1eih_Mustafe1.jpg",
@@ -1371,7 +1375,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Belgrade_Military_Museum.jpg",
       "fullWidth": 450
      },
-     "description": "military museum in Belgrade"
+     "description": "military museum in Belgrade",
+     "parentId": "Q599868",
+     "parentName": "Kalemegdan"
     },
     {
      "id": "way/38575527",

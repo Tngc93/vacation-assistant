@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "CAI",
- "fetchedAt": "2026-10-22T06:32:53.739Z",
+ "fetchedAt": "2026-10-23T14:19:06.453Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -384,6 +384,7 @@
      "wikipediaCount": 21,
      "wikidataId": "Q311441",
      "kinds": [
+      "notPlace",
       "organization",
       "religious"
      ],
@@ -580,6 +581,7 @@
      "wikidataId": "Q1277350",
      "kinds": [
       "heritage",
+      "notPlace",
       "organization",
       "religious"
      ],
@@ -827,6 +829,7 @@
      "wikidataId": "Q12241647",
      "kinds": [
       "business",
+      "notPlace",
       "organization",
       "religious",
       "school"
@@ -853,6 +856,7 @@
      "wikidataId": "Q12242839",
      "kinds": [
       "heritage",
+      "notPlace",
       "organization",
       "religious"
      ],
@@ -924,6 +928,7 @@
      "wikidataId": "Q12204253",
      "kinds": [
       "heritage",
+      "notPlace",
       "organization",
       "religious"
      ],
@@ -948,6 +953,7 @@
      "wikipediaCount": 11,
      "wikidataId": "Q12243214",
      "kinds": [
+      "notPlace",
       "organization",
       "religious"
      ],
@@ -1030,6 +1036,9 @@
      "lon": 31.25215,
      "wikipediaCount": 6,
      "wikidataId": "Q23975588",
+     "kinds": [
+      "notPlace"
+     ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mausoleum_of_Shajar_al-Durr_DSCF2771.jpg/500px-Mausoleum_of_Shajar_al-Durr_DSCF2771.jpg",
       "width": 500,
@@ -1229,6 +1238,29 @@
      "description": "historic palace and museum in Cairo"
     },
     {
+     "id": "way/97229402",
+     "name": "متحف الفن الحديث",
+     "lat": 30.04281,
+     "lon": 31.22308,
+     "wikipediaCount": 7,
+     "wikidataId": "Q5555085",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Cairo_ModernArts_byDanielCsorfoly.JPG/500px-Cairo_ModernArts_byDanielCsorfoly.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Daniel Csörföly",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Cairo_ModernArts_byDanielCsorfoly.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cairo_ModernArts_byDanielCsorfoly.JPG",
+      "fullWidth": 1656
+     },
+     "description": "art museum in Cairo, Egypt"
+    },
+    {
      "id": "way/30065918",
      "name": "متحف أحمد شوقي",
      "lat": 30.02145,
@@ -1275,10 +1307,10 @@
      "description": "museum in Cairo, Egypt"
     },
     {
-     "id": "way/30065591",
+     "id": "way/775152514",
      "name": "متحف محمود مختار",
-     "lat": 30.04064,
-     "lon": 31.22294,
+     "lat": 30.04043,
+     "lon": 31.22306,
      "wikipediaCount": 5,
      "wikidataId": "Q6933506",
      "kinds": [
@@ -1298,9 +1330,9 @@
      "description": "museum in Cairo, Egypt"
     },
     {
-     "id": "way/197961520",
+     "id": "node/14310894630",
      "name": "متحف الخزف الإسلامي",
-     "lat": 30.05649,
+     "lat": 30.0564,
      "lon": 31.2231,
      "website": "http://www.icm.gov.eg/",
      "wikipediaCount": 3,
@@ -1408,12 +1440,6 @@
      "name": "متحف الشرطة",
      "lat": 30.0301,
      "lon": 31.26022
-    },
-    {
-     "id": "way/97229402",
-     "name": "متحف الفن الحديث",
-     "lat": 30.04281,
-     "lon": 31.22308
     },
     {
      "id": "way/97937687",

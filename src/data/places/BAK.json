@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "BAK",
- "fetchedAt": "2026-10-22T06:19:43.140Z",
+ "fetchedAt": "2026-10-23T14:03:20.042Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -474,7 +474,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%9Eah_m%C9%99scidi_interyer.jpg",
       "fullWidth": 5184
      },
-     "description": "mosque"
+     "description": "mosque",
+     "parentId": "Q338889",
+     "parentName": "Şirvanşahlar Sarayı"
     },
     {
      "id": "wikidata/Q2347389",
@@ -1654,14 +1656,6 @@
      "openingHours": "Mo-Sa 11:00-18:00"
     },
     {
-     "id": "node/6434248082",
-     "name": "Leopold and Mstislav Rostropovich's home museum",
-     "lat": 40.36972,
-     "lon": 49.82751,
-     "address": "Leopold və Mstislav Rostropoviçlər küçəsi 31",
-     "openingHours": "Tu-Su 10:00-17:00"
-    },
-    {
      "id": "node/5986103490",
      "name": "AMEA Arxeologiya və Etnoqrafiya mueyi",
      "lat": 40.36771,
@@ -1720,6 +1714,13 @@
      "name": "Heydər Əliyev Məktəb Muzeyi",
      "lat": 40.37869,
      "lon": 49.80858
+    },
+    {
+     "id": "node/6434248082",
+     "name": "Leopold and Mstislav Rostropovich's home museum",
+     "lat": 40.36967,
+     "lon": 49.82751,
+     "address": "Leopold və Mstislav Rostropoviçlər küçəsi 33,19"
     },
     {
      "id": "node/9812774518",
@@ -1965,6 +1966,17 @@
      "detailed": true
     },
     {
+     "id": "node/11374561140",
+     "name": "Osmanlı Çərəz",
+     "lat": 40.37714,
+     "lon": 49.80503,
+     "address": "Abbas Mirzə Şərifzadə küçəsi ev 58",
+     "website": "https://www.instagram.com/osmanli_cerez/",
+     "openingHours": "Mo-Su 09:00-21:00",
+     "cuisine": "international, galleta",
+     "detailed": true
+    },
+    {
      "id": "node/4966708521",
      "name": "Otdıx",
      "lat": 40.38239,
@@ -1991,7 +2003,7 @@
      "name": "Passage 145",
      "lat": 40.372,
      "lon": 49.83868,
-     "website": "https://www.facebook.com/passage145/",
+     "website": "https://www.facebook.com/passage145/?ref=br_rs",
      "openingHours": "24/7",
      "cuisine": "regional",
      "detailed": true
@@ -2019,17 +2031,6 @@
      "detailed": true
     },
     {
-     "id": "node/11886099315",
-     "name": "Sırovarnya",
-     "lat": 40.36801,
-     "lon": 49.83877,
-     "address": "Zərifə Əliyeva küçəsi 2",
-     "website": "https://novikovgroup.ru/",
-     "openingHours": "Mo-Su 12:00-00:00",
-     "cuisine": "ukrainian",
-     "detailed": true
-    },
-    {
      "id": "node/4843511321",
      "name": "Soloha",
      "lat": 40.39076,
@@ -2045,10 +2046,20 @@
      "name": "Soloha",
      "lat": 40.36779,
      "lon": 49.83094,
-     "address": "Məmməd Əfəndiyev küçəsi",
+     "address": "Məmməd Əfəndiyev küç.",
      "website": "https://linktr.ee/soloha",
      "openingHours": "Mo-Su 12:00-23:00",
      "cuisine": "ukrainian",
+     "detailed": true
+    },
+    {
+     "id": "node/12386080102",
+     "name": "🇮🇹 Volare İtalian Cuisine",
+     "lat": 40.3679,
+     "lon": 49.83756,
+     "address": "Əziz Əliyev küçəsi 11c",
+     "openingHours": "Mo-Su 10:00-23:00",
+     "cuisine": "italian",
      "detailed": true
     },
     {
@@ -2099,16 +2110,6 @@
      "openingHours": "Mo-Sa 08:00-01:30",
      "cuisine": "regional",
      "detailed": true
-    },
-    {
-     "id": "node/4102409595",
-     "name": "Beer Hall",
-     "lat": 40.38391,
-     "lon": 49.82217,
-     "address": "Abdulla Şaiq 241",
-     "openingHours": "Mo-Su 12:00-00:00",
-     "cuisine": "russian, kebab, international, fish and chips, fish, coffee shop, bavarian, barbecue",
-     "detailed": true
     }
    ]
   },
@@ -2139,13 +2140,13 @@
      "detailed": true
     },
     {
-     "id": "node/14104762793",
+     "id": "node/11821316070",
      "name": "Baristica",
-     "lat": 40.3699,
-     "lon": 49.83275,
-     "address": "Zərgərpalan küçəsi 6A",
-     "website": "https://baristicaroastery.az/",
-     "openingHours": "Mo-Fr 09:00-18:00; Sa 10:00-14:00",
+     "lat": 40.36927,
+     "lon": 49.8409,
+     "address": "Zərifə Əliyeva küçəsi 12a",
+     "website": "https://baristica.az/menu.pdf",
+     "openingHours": "Mo-Fr 08:00-23:00; Sa-Su 09:00-23:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
@@ -2250,7 +2251,7 @@
     },
     {
      "id": "node/12270730504",
-     "name": "Moka Coffee",
+     "name": "Moka Coffee / Azərbaycan prospekti",
      "lat": 40.36986,
      "lon": 49.83466,
      "address": "Azərbaycan prospekti 4",
@@ -2373,6 +2374,16 @@
      "detailed": true
     },
     {
+     "id": "node/4996661521",
+     "name": "CoffeeBar 2",
+     "lat": 40.36843,
+     "lon": 49.83806,
+     "address": "Məhəmməd Əmin Rəsulzadə küç. 5",
+     "openingHours": "Mo-Su 09:00-01:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/11815623470",
      "name": "CoffeeBar 3",
      "lat": 40.38374,
@@ -2421,16 +2432,6 @@
      "openingHours": "Mo-Su 09:00-23:00",
      "cuisine": "coffee shop",
      "detailed": true
-    },
-    {
-     "id": "node/12043190728",
-     "name": "Costa",
-     "lat": 40.35815,
-     "lon": 49.8375,
-     "address": "Dənizkənarı küçəsi 26a",
-     "openingHours": "Mo-Su 08:00-23:00",
-     "cuisine": "coffee shop",
-     "detailed": true
     }
    ]
   },
@@ -2466,6 +2467,16 @@
      "detailed": true
     },
     {
+     "id": "node/11885034269",
+     "name": "🇨🇺Cubar",
+     "lat": 40.36779,
+     "lon": 49.83761,
+     "address": "Əziz Əliyev küç. 15",
+     "openingHours": "Su-Th 15:00-23:00, Fr-Sa 17:00-02:00",
+     "cuisine": "american, caribbean, hot dog, international, local, mexican",
+     "detailed": true
+    },
+    {
      "id": "node/5294183621",
      "name": "Babilon",
      "lat": 40.39122,
@@ -2481,16 +2492,6 @@
      "lon": 49.82217,
      "website": "https://cafecity.az/ru/restaurant/city-pub",
      "openingHours": "Mo-Su 16:00-02:00",
-     "detailed": true
-    },
-    {
-     "id": "node/11885034269",
-     "name": "Cubar",
-     "lat": 40.36779,
-     "lon": 49.83761,
-     "address": "Əziz Əliyev küç. 15",
-     "openingHours": "Su-Th 15:00-23:00, Fr-Sa 17:00-02:00",
-     "cuisine": "american, caribbean, hot dog, international, local, mexican",
      "detailed": true
     },
     {

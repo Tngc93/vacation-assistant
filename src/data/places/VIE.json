@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "VIE",
- "fetchedAt": "2026-10-22T05:35:47.421Z",
+ "fetchedAt": "2026-10-23T12:46:25.485Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -397,6 +397,9 @@
      "openingHours": "10:00-18:00",
      "wikipediaCount": 32,
      "wikidataId": "Q662652",
+     "kinds": [
+      "notPlace"
+     ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Wien_-_Kapuzinergruft%2C_Maria-Theresia-Gruft_%281%29.JPG/500px-Wien_-_Kapuzinergruft%2C_Maria-Theresia-Gruft_%281%29.JPG",
       "width": 500,
@@ -1439,7 +1442,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Belvedere,_oberes_(1).JPG",
       "fullWidth": 4488
      },
-     "description": "museum housed in the Belvedere palace, Vienna, Austria"
+     "description": "museum housed in the Belvedere palace, Vienna, Austria",
+     "parentId": "Q211818",
+     "parentName": "Belvedere Sarayı"
     },
     {
      "id": "relation/4465113",
@@ -1544,7 +1549,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_07_Leopold_Museum_a.jpg",
       "fullWidth": 3000
      },
-     "description": "museum of modern Austrian art in Vienna, Austria"
+     "description": "museum of modern Austrian art in Vienna, Austria",
+     "parentId": "Q699943",
+     "parentName": "Museumsquartier"
     },
     {
      "id": "way/327119607",
@@ -1571,7 +1578,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Esperantomuseum.jpg",
       "fullWidth": 3456
      },
-     "description": "collection of planned languages in the Austrian National Library, museum, library, documentation centre and archive"
+     "description": "collection of planned languages in the Austrian National Library, museum, library, documentation centre and archive",
+     "parentId": "Q304037",
+     "parentName": "Avusturya Millî Kütüphanesi"
     },
     {
      "id": "way/169186435",
@@ -1624,7 +1633,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_Muzeum_Sztuki_Nowoczesnej.jpg",
       "fullWidth": 5184
      },
-     "description": "art museum in Vienna, Austria"
+     "description": "art museum in Vienna, Austria",
+     "parentId": "Q699943",
+     "parentName": "Museumsquartier"
     },
     {
      "id": "node/928953625",
@@ -1826,7 +1837,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Mollard-Clary,_Vienna_June_2006_322.jpg",
       "fullWidth": 1920
      },
-     "description": "museum in Vienna, Austria"
+     "description": "museum in Vienna, Austria",
+     "parentId": "Q304037",
+     "parentName": "Avusturya Millî Kütüphanesi"
     },
     {
      "id": "way/25577419",
@@ -2002,7 +2015,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Neue_Burg_Vienna_June_2006_271.jpg",
       "fullWidth": 2560
      },
-     "description": "museum in Austria"
+     "description": "museum in Austria",
+     "parentId": "Q95569",
+     "parentName": "Kunsthistorisches Museum"
     },
     {
      "id": "node/11357982388",
@@ -2131,7 +2146,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%C3%96sterreichische_Nationalbibliothek_2.jpg",
       "fullWidth": 1600
      },
-     "description": "collection and museum in Vienna"
+     "description": "collection and museum in Vienna",
+     "parentId": "Q304037",
+     "parentName": "Avusturya Millî Kütüphanesi"
     },
     {
      "id": "node/600721260",
@@ -2207,7 +2224,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Museum_%E2%80%9EAlbertina_modern%E2%80%9C_bzw._K%C3%BCnstlerhaus_(1).JPG",
       "fullWidth": 4740
      },
-     "description": "museum in Austria"
+     "description": "museum in Austria",
+     "parentId": "Q284902",
+     "parentName": "Vienna Künstlerhaus"
     },
     {
      "id": "node/3332991286",

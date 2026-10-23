@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "GVA",
- "fetchedAt": "2026-10-22T05:37:24.408Z",
+ "fetchedAt": "2026-10-23T12:49:11.020Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -220,7 +220,8 @@
      "wikipediaCount": 11,
      "wikidataId": "Q1094083",
      "kinds": [
-      "heritage"
+      "heritage",
+      "notPlace"
      ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Brunswick_Monument_%2832688931467%29.jpg/500px-Brunswick_Monument_%2832688931467%29.jpg",
@@ -329,7 +330,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Geneve_cathedrale_2011-08-25_13_31_27_PICT4100.JPG",
       "fullWidth": 1704
      },
-     "description": "chapel of the Saint-Pierre cathedral, Geneva"
+     "description": "chapel of the Saint-Pierre cathedral, Geneva",
+     "parentId": "Q666516",
+     "parentName": "St. Pierre Katedrali"
     },
     {
      "id": "node/13703620514",
@@ -402,13 +405,6 @@
      "name": "Roman Villa ruins",
      "lat": 46.20544,
      "lon": 6.16926
-    },
-    {
-     "id": "node/4388714590",
-     "name": "Salle Communale le Palladium",
-     "lat": 46.20323,
-     "lon": 6.13481,
-     "address": "Rue du Stand 3bis"
     },
     {
      "id": "node/4881192922",

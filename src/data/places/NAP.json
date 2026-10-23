@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "NAP",
- "fetchedAt": "2026-10-22T05:13:06.428Z",
+ "fetchedAt": "2026-10-23T12:09:43.118Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -678,6 +678,7 @@
      "kinds": [
       "heritage",
       "museum",
+      "notPlace",
       "organization"
      ],
      "photo": {
@@ -1062,7 +1063,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Panmosaic.jpg",
       "fullWidth": 378
      },
-     "description": "collection of sexually explicit finds from Pompeii"
+     "description": "collection of sexually explicit finds from Pompeii",
+     "parentId": "Q637248",
+     "parentName": "Napoli Ulusal Arkeoloji Müzesi"
     },
     {
      "id": "node/4258447333",
@@ -1078,7 +1081,9 @@
       "museum",
       "organization"
      ],
-     "description": "museum"
+     "description": "museum",
+     "parentId": "Q1007726",
+     "parentName": "Galleria Umberto I"
     },
     {
      "id": "node/3683555296",
@@ -1128,7 +1133,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Napoli_s_Martino_QDP_1050019.JPG",
       "fullWidth": 2816
      },
-     "description": "museum in Naples, Italy"
+     "description": "museum in Naples, Italy",
+     "parentId": "Q859732",
+     "parentName": "Certosa di San Martino"
     },
     {
      "id": "node/4194078289",
@@ -1340,7 +1347,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Naples_santa_chiara_cloitre_trav%C3%A9e_centrale.JPG",
       "fullWidth": 2750
-     }
+     },
+     "parentId": "Q810104",
+     "parentName": "Campanile di Santa Chiara"
     },
     {
      "id": "node/13915431230",
@@ -1450,7 +1459,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Centro_Musei_delle_scienze_naturali.jpg",
       "fullWidth": 4000
      },
-     "description": "museum in Italy"
+     "description": "museum in Italy",
+     "parentId": "Q3664864",
+     "parentName": "Centro musei delle scienze naturali e fisiche"
     },
     {
      "id": "node/3515649876",
@@ -2167,7 +2178,7 @@
     },
     {
      "id": "node/11400223469",
-     "name": "Blanco pasticceria bar",
+     "name": "Blanco",
      "lat": 40.84833,
      "lon": 14.24948,
      "address": "Via Toledo 66",
