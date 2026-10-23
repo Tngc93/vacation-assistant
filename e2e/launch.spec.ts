@@ -31,10 +31,25 @@ for (const { name, path } of PAGES) {
       await expect(footer.getByRole("link", { name: source, exact: true })).toBeVisible();
     }
     await expect(footer.getByText("Fiyatlar tahminidir; satın almadan önce sağlayıcıda doğrula.")).toBeVisible();
+    await expect(
+      footer.getByText("Ziyaretler çerezsiz ve anonim sayılır (Vercel Web Analytics); plan içeriğin ölçülmez."),
+    ).toBeVisible();
     // The style guide is a tool: reachable, but not linked from the production header.
     await expect(page.getByRole("link", { name: "Stil rehberi" })).toHaveCount(0);
   });
 }
+
+test("a build outside the production deployment does not load Vercel Web Analytics", async ({ page }) => {
+  const analytics: string[] = [];
+  page.on("request", (request) => {
+    if (/\/_vercel\/insights|vercel-scripts\.com/.test(request.url())) analytics.push(request.url());
+  });
+  await page.goto(plan);
+  await expect(page.getByRole("contentinfo")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Gün gün plan", exact: true })).toBeVisible();
+  await expect(page.locator('script[src*="/_vercel/insights"]')).toHaveCount(0);
+  expect(analytics).toEqual([]);
+});
 
 test("the footer is not printed", async ({ page }) => {
   await page.goto("/");

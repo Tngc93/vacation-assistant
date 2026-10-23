@@ -91,3 +91,13 @@ Production build (`next start`, `VA_FLIGHTS_FIXTURES=1`, gerçek Commons görsel
 Düzeltilenler: bütçe fişinin `<dl>` yapısı ve karusel kartlarının erişilebilir adı (Accessibility); Wikimedia görsellerinin üçüncü taraf çerezleri (`crossorigin="anonymous"`) ve Zod'un `new Function` yoklamasının CSP ihlali (`jitless`) (Best Practices); şehir fotoğrafı srcset + yalnızca masaüstünde ön yükleme, font ön yüklemesi yalnızca latin (Performance).
 
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
+
+## 7. Ölçüm (Vercel Web Analytics)
+
+Ziyaretler [Vercel Web Analytics](https://vercel.com/docs/analytics) ile sayılır: **Project → Analytics → Enable**. Hobby'de ayda 50.000 olay ücretsiz, custom event yok, rapor penceresi 1 ay. Ayrı ortam değişkeni gerekmez.
+
+- **Ölçülen:** sayfa yolu (`/`, `/plan`, `/styleguide`…) ve Vercel'in standart alanları (başka siteden gelindiyse referrer, ülke, tarayıcı, işletim sistemi, cihaz türü). Çerez yok. PRD'deki haftalık plan sayısı = `/plan` görüntülemesi.
+- **Ölçülmeyen:** sorgu parametreleri — şehir, tarih, kalkış, kişi, bütçe, çıkarılan duraklar, yapay zekâ seçimleri ve düzenlemeleri (`?to=…&ai=…&edit=…`). `beforeSend` (`src/lib/analytics.ts`) URL'den yalnızca yolu bırakır, custom event'leri atar. Yapay zekâ anahtarı ve sohbet zaten sunucuya gelmez. Plan içindeki değişiklikler yeni görüntüleme sayılmaz (`src/components/SiteAnalytics.tsx` yalnızca yolu izler).
+- **Nerede çalışır:** yalnızca production deployment'ında (`VERCEL_ENV=production` ve production build). Önizlemede, `npm run dev`'de ve yerel `npm start`'ta betik hiç yüklenmez. Betik (`/_vercel/insights/script.js`) ve gönderim (`/_vercel/insights/view`) kendi alan adımızdan; CSP'ye yeni origin eklenmedi.
+- **Kapatmak:** panelde **Analytics → Disable** (betik 404 döner, hiçbir şey gönderilmez) ya da `src/app/layout.tsx`'ten `<SiteAnalytics />` satırını kaldır. Fork'ta Analytics açılmadıkça da hiçbir şey gönderilmez.
+- **Yayın sonrası kontrol:** canlı sitede bir plan linki aç; DevTools → Network'te `/_vercel/insights/view` isteğinin gövdesindeki `o` alanı `https://vacationist-app.vercel.app/plan` olmalı, `?` içermemeli.
