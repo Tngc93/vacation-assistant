@@ -10,12 +10,15 @@ export function SiteHeader() {
           {BRAND_NAME}
         </Link>
         <nav aria-label="Ana menü" className="flex items-center gap-4">
-          <Link
-            href="/styleguide"
-            className="hidden font-mono text-micro uppercase tracking-[0.08em] text-ink-muted hover:text-ink sm:inline"
-          >
-            Stil rehberi
-          </Link>
+          {/* A tool for us, not for travellers: the page stays reachable (noindex) but isn't linked in production. */}
+          {process.env.NODE_ENV === "development" ? (
+            <Link
+              href="/styleguide"
+              className="hidden font-mono text-micro uppercase tracking-[0.08em] text-ink-muted hover:text-ink sm:inline"
+            >
+              Stil rehberi
+            </Link>
+          ) : null}
           <ThemeToggle />
         </nav>
       </div>

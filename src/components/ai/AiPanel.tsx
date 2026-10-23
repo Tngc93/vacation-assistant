@@ -173,10 +173,11 @@ function ConnectForm({
             ))}
           </p>
         </div>
-        <label className="flex items-center gap-2 text-caption text-ink">
+        {/* The note sits under the label (not beside it), so a narrow panel doesn't split them into two columns. */}
+        <label className="grid grid-cols-[auto_1fr] items-center gap-x-2 gap-y-0.5 text-caption text-ink">
           <input type="checkbox" checked={remember} onChange={(e) => setRemember(e.target.checked)} className="size-4 accent-ink" />
-          Bu cihazda hatırla
-          <span className="text-ink-muted">(kapalıysa sekme kapanınca silinir)</span>
+          <span>Bu cihazda hatırla</span>
+          <span className="col-start-2 text-ink-muted">Kapalıysa anahtar sekme kapanınca silinir.</span>
         </label>
         <div className="flex flex-wrap gap-2">
           <Button type="submit" disabled={busy || !key.trim()}>
