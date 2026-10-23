@@ -1,3 +1,4 @@
+import { SITE_URL } from "../src/lib/brand";
 import { expect, test } from "./fixtures";
 
 function isoDaysFromNow(days: number): string {
@@ -55,7 +56,7 @@ test("robots.txt lets crawlers in and points at the sitemap", async ({ request }
   expect(body).toMatch(/^Allow: \/$/m);
   // /plan stays crawlable so link previews can read its Open Graph card; it says noindex itself.
   expect(body).not.toMatch(/Disallow/);
-  expect(body).toMatch(/^Sitemap: https:\/\/.+\/sitemap\.xml$/m);
+  expect(body.split("\n")).toContain(`Sitemap: ${SITE_URL}/sitemap.xml`);
 });
 
 test("the sitemap lists only the home page", async ({ request }) => {
@@ -63,7 +64,7 @@ test("the sitemap lists only the home page", async ({ request }) => {
   expect(response.ok()).toBe(true);
   const locs = [...(await response.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   expect(locs).toHaveLength(1);
-  expect(locs[0]).toMatch(/^https:\/\/[^/]+\/?$/);
+  expect(locs[0]).toBe(SITE_URL);
 });
 
 test("the home page is indexable, a plan is not", async ({ page }) => {
@@ -76,7 +77,7 @@ test("the home page is indexable, a plan is not", async ({ page }) => {
 test("the home page's Open Graph card is a 1200×630 PNG", async ({ page, request }) => {
   await page.goto("/");
   const image = page.locator('meta[property="og:image"]');
-  await expect(image).toHaveAttribute("content", /\/opengraph-image/);
+  await expect(image).toHaveAttribute("content", new RegExp(`^${SITE_URL}/opengraph-image`));
   await expect(page.locator('meta[property="og:image:width"]')).toHaveAttribute("content", "1200");
   await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
   const { pathname, search } = new URL((await image.getAttribute("content"))!);
