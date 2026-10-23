@@ -60,6 +60,15 @@ Her fiyat, kur ve tahmin kaynağıyla ve "tahmini" etiketiyle gösterilir. Bir k
 
 Her fiyat, kur ve vize bilgisi kaynağıyla ve tarihiyle gösterilir; bir kaynak cevap vermezse uygulama bunu açıkça söyler, tahmini ya da sabit değer uydurmaz. Sayfa sonunda da kaynaklar ve lisansları listelenir.
 
+## Ölçüm
+
+Yayındaki sitede ziyaretler [Vercel Web Analytics](https://vercel.com/docs/analytics) ile çerezsiz ve anonim sayılır.
+
+- **Ölçülen:** hangi sayfanın açıldığı, yalnızca yolu (`/`, `/plan`…), ve Vercel'in standart alanları (ülke, tarayıcı, cihaz türü, başka siteden gelindiyse referrer).
+- **Ölçülmeyen:** plan içeriğin. URL'deki şehir, tarih, kalkış, kişi, bütçe, çıkarılan duraklar, yapay zekâ seçimleri ve düzenlemeleri gönderilmeden önce atılır (`src/lib/analytics.ts`); custom event yok; yapay zekâ anahtarın ve sohbetin zaten sunucuya gelmez.
+- **Nerede:** yalnızca production deployment'ında; geliştirmede, önizlemede ve yerel build'de betik yüklenmez. Betik ve gönderim kendi alan adımızdan (`/_vercel/insights/*`).
+- **Kapatmak:** Vercel'de **Project → Analytics → Disable** ya da `src/app/layout.tsx`'ten `<SiteAnalytics />` satırını kaldır. Ayrıntı: [docs/DEPLOY.md](docs/DEPLOY.md#7-ölçüm-vercel-web-analytics).
+
 ## Yerelde çalıştırma
 
 Node 22 gerekir (`.nvmrc`).

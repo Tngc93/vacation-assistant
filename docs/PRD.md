@@ -24,6 +24,8 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 | GitHub yıldızı | 0 | 100 | 31 Mart 2027 |
 | Aylık işletme maliyeti | 0 TL | 0 TL (koruma metriği) | sürekli |
 
+**Plan sayısı nasıl ölçülür:** Vercel Web Analytics'te (Hobby, ücretsiz) `/plan` sayfa görüntülemesi. Sorgu parametreleri ölçüme gitmez, custom event yok; bu yüzden hangi şehir ya da tarih planlandığı bilinmez. Plan içindeki değişiklikler (tarih, bütçe, durak çıkarma, yapay zekâ) yeni görüntüleme sayılmaz; aynı planın yeniden açılması ve rotasız `/plan` sayılır, yani sayı üst sınırdır. Hobby'de rapor penceresi 1 ay; haftalık değer panelde son 7 gün seçilerek okunur. Ayrıntı: [DEPLOY.md](DEPLOY.md#7-ölçüm-vercel-web-analytics).
+
 ## Kapsam dışı
 
 - Kullanıcı kaydı, giriş ve kayıtlı planlar (faz 3).
