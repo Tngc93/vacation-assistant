@@ -164,44 +164,58 @@ describe("places inside another place on real data (containment.ts)", () => {
   });
 });
 
-describe("far from the centre on real data (places/far.ts: beyond the city's radius)", () => {
-  const farIn = async (code: string) => {
-    const file = (await loadPlacesFile(code))!;
-    return Object.values(file.categories)
-      .flatMap((e) => (e.status === "ok" ? e.places : []))
+describe("far from the centre on real data (places/far.ts: beyond max(radius, 5 km) from the tourist centre)", () => {
+  const shownIn = async (code: string) =>
+    Object.values((await loadPlacesFile(code))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+  const farIn = async (code: string) =>
+    (await shownIn(code))
       .filter((p) => p.farKm !== undefined)
       .map((p) => p.name)
       .sort();
-  };
 
-  it("marks Park Güell in Barcelona, the Eiffel Tower in Paris and Schönbrunn in Vienna; Versailles is not in the data", async () => {
-    // Barcelona's radius is 3 km; Park Güell is 4 km out. Montserrat and Tibidabo are beyond twice the radius: not in the data.
-    expect(await farIn("BCN")).toEqual(["Güell Parkı"]);
+  it("keeps the Eiffel Tower, the Arc de Triomphe and Park Güell near; Schönbrunn and the Atomium are far", async () => {
+    // Barcelona: Park Güell is 4 km out, within the 5 km floor. Montserrat and Tibidabo are not in the data.
+    expect(await farIn("BCN")).toEqual([]);
     const paris = await farIn("PAR");
-    expect(paris).toEqual(expect.arrayContaining(["Eyfel Kulesi", "Zafer Takı", "Vincennes Ormanı", "Boulogne Ormanı"]));
-    expect(paris).not.toContain("Louvre Müzesi");
+    expect(paris).not.toContain("Eyfel Kulesi");
+    expect(paris).not.toContain("Zafer Takı");
+    expect(paris).toEqual(expect.arrayContaining(["Boulogne Ormanı", "Vincennes Ormanı"]));
+    expect((await shownIn("PAR")).some((p) => /versailles/i.test(p.name))).toBe(false);
     expect(await farIn("VIE")).toEqual(["Schönbrunn Sarayı"]);
-    const all = Object.values((await loadPlacesFile("PAR"))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
-    expect(all.some((p) => /versailles/i.test(p.name))).toBe(false);
+    expect((await shownIn("BRU")).find((p) => p.wikidataId === "Q180901")?.farKm).toBe(5.4);
   });
 
-  it.each(["BCN", "BER", "BRU", "LIS", "LON", "MLA", "MOW", "MUC", "NYC", "PAR", "ROM", "TYO", "VIE"])(
-    "%s: never sends a day to two far areas, and every planned far stop says how far it is",
+  it("measures New York from Union Square: Times Square is near, Liberty Island far", async () => {
+    const nyc = await shownIn("NYC");
+    expect(nyc.find((p) => p.name === "Times Square")?.farKm).toBeUndefined();
+    expect(nyc.find((p) => p.name === "Liberty Adası")?.farKm).toBeGreaterThan(5);
+  });
+
+  it("fetches Tokyo around Nihonbashi: Sensō-ji, Ueno, the Skytree, the Imperial Palace, Meiji, Shibuya and Shinjuku Gyoen are in, none far", async () => {
+    const tokyo = await shownIn("TYO");
+    // Sensō-ji, Ueno Park, Tokyo Skytree, the Imperial Palace, Meiji Shrine, Shibuya Crossing, Shinjuku Gyoen, Tokyo Tower.
+    for (const qid of ["Q615183", "Q746216", "Q57965", "Q500681", "Q287165", "Q21083961", "Q776863", "Q183536"]) {
+      const place = tokyo.find((p) => p.wikidataId === qid);
+      expect(place, qid).toBeDefined();
+      expect(place?.farKm, qid).toBeUndefined();
+    }
+  });
+
+  it.each(["BER", "BRU", "LIS", "MOW", "MUC", "NYC", "PAR", "VIE"])(
+    "%s: never sends a day to two far areas, keeps a far area's planned stops on one day, and labels every far stop",
     async (code) => {
       const { input, plan } = await planFor(code);
       const area = farAreas(input.daytime);
+      const dayOfArea = new Map<number, number>();
       for (const day of plan.days) {
-        const areas = new Set(day.stops.flatMap((s) => (area.has(s.id) ? [area.get(s.id)] : [])));
+        const areas = new Set(day.stops.flatMap((s) => (area.has(s.id) ? [area.get(s.id)!] : [])));
         expect(areas.size, `day ${day.number}`).toBeLessThanOrEqual(1);
+        for (const a of areas) {
+          expect(dayOfArea.get(a) ?? day.number, `far area ${a}`).toBe(day.number);
+          dayOfArea.set(a, day.number);
+        }
         for (const s of day.stops) expect(s.farKm !== null).toBe(area.has(s.id) || input.evening.some((e) => e.id === s.id && e.farKm !== undefined));
       }
     },
   );
-
-  it("sees the Eiffel Tower and the Arc de Triomphe on the same day, one after the other", async () => {
-    const { plan } = await planFor("PAR");
-    const day = plan.days.find((d) => d.stops.some((s) => s.name === "Eyfel Kulesi"))!;
-    const names = day.stops.map((s) => s.name);
-    expect(names.indexOf("Zafer Takı") - names.indexOf("Eyfel Kulesi")).toBe(1);
-  });
 });

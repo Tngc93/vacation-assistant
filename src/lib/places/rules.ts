@@ -1,4 +1,4 @@
-import { findDestination } from "@/data/destinations";
+import { cityCentre, findDestination } from "@/data/destinations";
 import { PLACE_OVERRIDES, type CityOverrides } from "@/data/place-overrides";
 import { CATEGORIES, type CategoryId } from "./categories";
 import { farFromCentreKm } from "./far";
@@ -194,14 +194,19 @@ function farOf(kept: Iterable<StoredPlace>, centre: { lat: number; lon: number }
   );
 }
 
+function centreOf(cityCode: string) {
+  const destination = findDestination(cityCode);
+  return destination ? cityCentre(destination) : undefined;
+}
+
 /**
  * Applies the sight rules and the city's overrides, then the per-category limit (40 sights or museums, 30 others),
- * and marks the places far from the centre (far.ts; the centre is the destination's coordinate).
+ * and marks the places far from the centre (far.ts; the centre is the destination's tourist centre, `cityCentre`).
  */
 export function applyPlaceRules(
   file: PlacesFile,
   overrides: CityOverrides = PLACE_OVERRIDES[file.cityCode] ?? {},
-  centre: { lat: number; lon: number } | undefined = findDestination(file.cityCode),
+  centre: { lat: number; lon: number } | undefined = centreOf(file.cityCode),
 ): ShownPlacesFile {
   const kept = {} as Partial<Record<CategoryId, StoredPlace[]>>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {

@@ -5,7 +5,7 @@ import { LocalTime } from "@/components/city/LocalTime";
 import { HeroExplorer, type CategoryResult } from "@/components/places/HeroExplorer";
 import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
 import { Caption, Skeleton } from "@/components/ui";
-import type { Destination } from "@/data/destinations";
+import { cityCentre, type Destination } from "@/data/destinations";
 import { formatDay } from "@/lib/format";
 import type { CategoryId } from "@/lib/places/categories";
 import { loadPlacesFile } from "@/lib/places/load";
@@ -50,7 +50,7 @@ export async function PlanHero({ search, destination, categories }: Props) {
     <HeroExplorer
       title={title}
       photo={file?.photo ? <CityPhoto photo={file.photo} cityName={destination.nameTr} /> : null}
-      center={{ lat: destination.lat, lon: destination.lon }}
+      center={cityCentre(destination)}
       timeZone={destination.timeZone}
       categories={categories}
       results={results}
