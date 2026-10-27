@@ -6,6 +6,7 @@ import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import { describeCuisine } from "@/lib/places/cuisine";
+import { farCaption, TRANSIT_CAPTION, transitFromCentre } from "@/lib/places/far";
 import type { StoredPlace } from "@/lib/places/file";
 import type { ShownPlace } from "@/lib/places/rules";
 import { OpeningHours } from "./OpeningHours";
@@ -17,7 +18,7 @@ export function googleMapsUrl(place: Pick<StoredPlace, "lat" | "lon">): string {
 const wikipediaCount = new Intl.NumberFormat("tr-TR");
 
 export type PlaceCardProps = {
-  place: StoredPlace & Pick<ShownPlace, "remote">;
+  place: StoredPlace & Pick<ShownPlace, "farKm">;
   category: CategoryId;
   /** The city's IANA time zone. */
   timeZone: string;
@@ -72,10 +73,17 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
 
       {place.description ? <p className="mt-2 text-caption text-ink">{place.description}</p> : null}
       {place.address ? <p className="mt-2 text-caption text-ink-muted">{place.address}</p> : null}
-      {place.remote ? (
-        <Caption as="p" tone="sea" className="mt-2">
-          MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR
-        </Caption>
+      {place.farKm !== undefined ? (
+        <>
+          <Caption as="p" tone="sea" className="mt-2">
+            {farCaption(place.farKm)}
+          </Caption>
+          {transitFromCentre(place.farKm) ? (
+            <Caption as="p" className="mt-0.5">
+              {TRANSIT_CAPTION}
+            </Caption>
+          ) : null}
+        </>
       ) : null}
       {place.cuisine ? <p className="mt-1 text-caption text-ink-muted">Mutfak: {describeCuisine(place.cuisine)}</p> : null}
       {place.openingHours ? <OpeningHours value={place.openingHours} timeZone={timeZone} /> : null}

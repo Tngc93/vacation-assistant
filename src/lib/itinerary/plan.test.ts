@@ -3,7 +3,7 @@ import { distanceKm } from "@/lib/geo";
 import { ITINERARY } from "./config";
 import { shortId } from "./ids";
 import { sameNameOnce } from "@/lib/places/twins";
-import { buildItinerary, chooseAnchors, chooseMustSees, freeTimeBlock, isGenericName, type ItineraryInput, type PlanPlace } from "./plan";
+import { buildItinerary, chooseAnchors, chooseMustSees, farAreas, freeTimeBlock, isGenericName, type ItineraryInput, type PlanPlace } from "./plan";
 import { EVENING, SIGHTS } from "./testCity";
 import { toMinutes } from "./time";
 
@@ -400,17 +400,85 @@ describe("the trip's must-see list", () => {
     expect(stopOn("2026-09-28", "2026-10-02").durationMin).toBeGreaterThan(0);
   });
 
-  it("treats a remote must-see as an area of its own, and never as a filler", () => {
-    // 5 km east of the test city: well known (a must-see) and remote.
-    const atomium = { ...SIGHTS[0], id: "wikidata/Q180901", name: "Atomium", lat: 41.39, lon: 2.23, wikipediaCount: 52, remote: true as const };
+  it("treats a far must-see as an area of its own, and never as a filler", () => {
+    // 5 km east of the test city: well known (a must-see) and far from the centre (places/far.ts).
+    const atomium = { ...SIGHTS[0], id: "wikidata/Q180901", name: "Atomium", lat: 41.39, lon: 2.23, wikipediaCount: 52, farKm: 5 };
     const plan = buildItinerary({ ...base, daytime: [...SIGHTS, atomium] });
     const day = plan.days.find((d) => d.stops.some((s) => s.id === atomium.id))!;
-    expect(day.stops.find((s) => s.id === atomium.id)?.remote).toBe(true);
+    expect(day.stops.find((s) => s.id === atomium.id)?.farKm).toBe(5);
+    expect(allStops(plan).filter((s) => s.id !== atomium.id).every((s) => s.farKm === null)).toBe(true);
     // It opens its day (its own area) rather than being squeezed between central stops.
     expect(day.stops[0].id).toBe(atomium.id);
-    // A remote place that is not a must-see is not used to fill a day.
+    // A far place that is not a must-see is not used to fill a day.
     const obscure = { ...atomium, wikipediaCount: undefined };
     expect(allStops(buildItinerary({ ...base, daytime: [...SIGHTS, obscure] })).some((s) => s.id === atomium.id)).toBe(false);
+  });
+
+  describe("far areas (places far from the centre within walking distance of each other)", () => {
+    // East, 5 km out: two must-sees 1.5 km apart (more than the 1.2 km between anchors, so two areas if they were
+    // central; the test city's best known has 50 languages) and a little-known place near them. North, 6 km out: another must-see, with a little-known neighbour.
+    const far = (id: string, name: string, lat: number, lon: number, wikipediaCount?: number): PlanPlace => ({
+      id,
+      name,
+      lat,
+      lon,
+      category: "see",
+      farKm: 5,
+      ...(wikipediaCount ? { wikipediaCount } : {}),
+    });
+    const EAST = far("way/9001", "East A", 41.39, 2.23, 52);
+    const EAST_2 = far("way/9002", "East B", 41.39, 2.248, 49);
+    const EAST_QUIET = far("way/9003", "East quiet", 41.392, 2.24);
+    const NORTH = far("way/9004", "North", 41.445, 2.17, 51);
+    const NORTH_QUIET = far("way/9005", "North quiet", 41.447, 2.171);
+    const FAR = [EAST, EAST_2, EAST_QUIET, NORTH, NORTH_QUIET];
+    const areaOf = farAreas(FAR);
+    const dayOf = (plan: ReturnType<typeof buildItinerary>, id: string) => plan.days.find((d) => d.stops.some((s) => s.id === id))?.number;
+
+    it("groups far places within walking distance (a chain of them too), and keeps the others apart", () => {
+      expect(areaOf.get(EAST.id)).toBe(areaOf.get(EAST_2.id));
+      expect(areaOf.get(EAST_QUIET.id)).toBe(areaOf.get(EAST.id));
+      expect(areaOf.get(NORTH.id)).toBe(areaOf.get(NORTH_QUIET.id));
+      expect(areaOf.get(NORTH.id)).not.toBe(areaOf.get(EAST.id));
+      // Central places have no far area.
+      expect(farAreas(SIGHTS).size).toBe(0);
+      // A chain: each 2.5 km from the next (a walk), the ends 5 km apart, still one area.
+      const chain = [0, 1, 2].map((i) => far(`node/${i}`, `C${i}`, 41.39, 2.23 + i * 0.03));
+      expect(new Set(farAreas(chain).values()).size).toBe(1);
+    });
+
+    it("puts two far places of one area on the same day, one after the other, and never two far areas on one day", () => {
+      for (const trip of [base, { ...base, return: "2026-11-16" }, { ...base, return: "2026-11-21" }]) {
+        const plan = buildItinerary({ ...trip, daytime: [...SIGHTS, ...FAR] });
+        expect(dayOf(plan, EAST.id)).toBeDefined();
+        expect(dayOf(plan, EAST_2.id)).toBe(dayOf(plan, EAST.id));
+        const eastDay = plan.days.find((d) => d.number === dayOf(plan, EAST.id))!.stops.map((s) => s.id);
+        expect(Math.abs(eastDay.indexOf(EAST.id) - eastDay.indexOf(EAST_2.id))).toBe(1);
+        for (const day of plan.days) {
+          const areas = new Set(day.stops.flatMap((s) => (areaOf.has(s.id) ? [areaOf.get(s.id)] : [])));
+          expect(areas.size, `day ${day.number}`).toBeLessThanOrEqual(1);
+        }
+      }
+    });
+
+    it("fills a day that goes to a far area with that area's little-known places, never another day", () => {
+      const plan = buildItinerary({ ...base, return: "2026-11-21", daytime: [...SIGHTS, ...FAR] });
+      for (const [quiet, known] of [
+        [EAST_QUIET, EAST],
+        [NORTH_QUIET, NORTH],
+      ]) {
+        const day = dayOf(plan, quiet.id);
+        if (day !== undefined) expect(day).toBe(dayOf(plan, known.id));
+      }
+      // Without its area's must-see, a little-known far place is not in the plan at all.
+      const alone = buildItinerary({ ...base, daytime: [...SIGHTS, EAST_QUIET, NORTH_QUIET] });
+      expect(allStops(alone).some((s) => s.farKm !== null)).toBe(false);
+    });
+
+    it("times a chosen plan as given, even with two far areas on a day (the AI answer is checked instead)", () => {
+      const plan = buildItinerary({ ...base, daytime: [...SIGHTS, ...FAR], pinned: [[], [EAST.id, NORTH.id], [], [], []] });
+      expect(plan.days[1].stops.filter((s) => s.kind === "daytime").map((s) => s.id)).toEqual([EAST.id, NORTH.id]);
+    });
   });
 
   it("times a chosen plan in the given order, adds nothing, and lists what does not fit", () => {
@@ -471,5 +539,14 @@ describe("chooseAnchors", () => {
     expect(chooseAnchors(SIGHTS.slice(0, 6), 3)).toHaveLength(3);
     expect(chooseAnchors(SIGHTS.slice(0, 2), 5)).toHaveLength(2);
     expect(chooseAnchors(SIGHTS, 0)).toEqual([]);
+  });
+
+  it("takes at most one anchor in a far area", () => {
+    const east = { ...SIGHTS[0], id: "way/1", lat: 41.39, lon: 2.23, wikipediaCount: 90, farKm: 5 };
+    const east2 = { ...east, id: "way/2", lon: 2.248, wikipediaCount: 89 };
+    const ordered = [east, east2, ...SIGHTS];
+    expect(chooseAnchors(ordered, 3).map((p) => p.id)).toEqual(["way/1", "way/2", "node/100"]);
+    const area = farAreas(ordered);
+    expect(chooseAnchors(ordered, 3, (p) => area.get(p.id)).map((p) => p.id)).toEqual(["way/1", "node/100", "node/200"]);
   });
 });

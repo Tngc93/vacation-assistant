@@ -6,7 +6,7 @@
 import { EVENING_CATEGORIES, ITINERARY } from "@/lib/itinerary/config";
 import { shortId } from "@/lib/itinerary/ids";
 import { openCheck } from "@/lib/itinerary/openCheck";
-import { insideOf, type Itinerary, type PlanPlace } from "@/lib/itinerary/plan";
+import { farAreas, insideOf, type Itinerary, type PlanPlace } from "@/lib/itinerary/plan";
 import { toMinutes, weekdayOf } from "@/lib/itinerary/time";
 import { sameNameOnce } from "@/lib/places/twins";
 
@@ -24,7 +24,8 @@ export type Candidate = {
   /** Trip days on which it is surely closed during the day's window. */
   closedDays: number[];
   outsideOnly?: true;
-  farFromCentre?: true;
+  /** Far from the centre (places/far.ts): candidates with the same value are one far area, near each other. */
+  farArea?: string;
   /** The candidate this place is inside (the Kremlin, for the Tsar Bell): visited with it, never a stop of its own. */
   inside?: string;
 };
@@ -66,6 +67,8 @@ export function candidatesFor(daytime: readonly PlanPlace[], days: readonly DayW
   const top = ranked.filter((p) => !parentOf.has(p.id)).slice(0, MAX_CANDIDATES);
   const kept = new Set(top.map((p) => p.id));
   const inside = ranked.filter((p) => parentOf.has(p.id) && kept.has(parentOf.get(p.id)!.id));
+  // A place inside another goes with it: it carries no far area of its own.
+  const farArea = farAreas(top);
   return [...top, ...inside].map((p) => ({
     id: shortId(p.id),
     name: p.name,
@@ -75,7 +78,7 @@ export function candidatesFor(daytime: readonly PlanPlace[], days: readonly DayW
     lon: Number(p.lon.toFixed(4)),
     closedDays: days.filter((d) => closedAllDay(p.openingHours, d.date, d.window)).map((d) => d.day),
     ...(p.exterior ? { outsideOnly: true as const } : {}),
-    ...(p.remote ? { farFromCentre: true as const } : {}),
+    ...(farArea.has(p.id) ? { farArea: `far${farArea.get(p.id)! + 1}` } : {}),
     ...(parentOf.has(p.id) ? { inside: shortId(parentOf.get(p.id)!.id) } : {}),
   }));
 }
@@ -93,6 +96,7 @@ export function planSystemPrompt(maxStops: number): string {
     `- At most ${maxStops} stops a day; fewer on short windows (about one stop per ${ITINERARY.mustSeeStopMin} minutes).`,
     "- Never put a place on a day listed in its closedDays.",
     "- Keep each day's stops close together (use lat and lon) and order them as a walk.",
+    "- A candidate with `farArea` is far from the centre. Put the candidates of one farArea on the same day, and never put two different farArea values on the same day.",
     "- Put the best-known places (most languages) in the trip, on early full days.",
     "- A place appears at most once in the whole trip.",
     "- A candidate with `inside` is inside that candidate (the Tsar Bell in the Kremlin): choose it only with that place; the app visits it right after it, on the same day, and it does not count as a stop.",
@@ -125,6 +129,7 @@ export function editSystemPrompt(): string {
     '- {"op":"pace","value":"relaxed"} for less walking and fewer stops, or "normal"',
     `- {"op":"evening","categories":["cocktail"]} with categories from ${JSON.stringify(EVENING_CATEGORIES)} (restaurant, cocktail bar, bar and pub, nightclub)`,
     "Never put a place on a day listed in its closedDays. Keep days close together. Do not invent places.",
+    "Never put two different `farArea` values on the same day.",
     "A candidate with `inside` is visited with the place it is inside (its id), right after it on the same day.",
     "If the request cannot be done with these commands, return no commands and say why in `reply`.",
     "`reply`: one or two short sentences in Turkish about what changed. Plain text, no markdown, no links.",

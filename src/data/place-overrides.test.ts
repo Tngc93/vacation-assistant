@@ -51,7 +51,6 @@ describe("place overrides", () => {
       "SOF:Q639704",
       "WAW:Q958585:15",
     ]);
-    expect(PLACE_OVERRIDES.BRU?.include?.[0]).toMatchObject({ remote: true });
     expect(PLACE_OVERRIDES.LON?.exteriorOnly?.find((e) => e.qid === "Q42182")).toMatchObject({ openMonths: [7, 8, 9] });
     const relinks = Object.entries(PLACE_OVERRIDES).flatMap(([code, o]) => (o.relink ?? []).map((r) => `${code}:${r.from}>${r.qid}`));
     expect(relinks.sort()).toEqual(["DUB:Q204221>Q856559", "LON:Q37733713>Q41225", "NYC:Q10806>Q1136137"]);

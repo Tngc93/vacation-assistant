@@ -15,6 +15,7 @@ import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
 import { buildItinerary, type DayTag, type Itinerary, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop, type PlanSubStop } from "@/lib/itinerary/plan";
 import { CATEGORIES } from "@/lib/places/categories";
+import { farCaption, TRANSIT_CAPTION, transitFromCentre } from "@/lib/places/far";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
 import { useNearViewport } from "@/lib/useNearViewport";
@@ -100,7 +101,7 @@ function TravelLine({ stop }: { stop: PlanStop }) {
     <li aria-hidden={false} className="relative pb-3 pl-[4.75rem] md:pl-24">
       <Caption as="p">
         YÜRÜME ~{stop.travel.walkMin} DK · TAHMİNİ
-        {stop.travel.transit ? " · TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR" : ""}
+        {stop.travel.transit ? ` · ${TRANSIT_CAPTION}` : ""}
       </Caption>
     </li>
   );
@@ -178,9 +179,15 @@ function Stop({
           {stop.kind === "evening" ? "AKŞAM · " : ""}
           {CATEGORIES[stop.category].label.toLocaleUpperCase("tr")} · {durationText(stop.durationMin).toLocaleUpperCase("tr")} · TAHMİNİ
         </Caption>
-        {stop.remote ? (
+        {stop.farKm !== null ? (
           <Caption as="p" tone="sea" className="mt-0.5">
-            MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR
+            {farCaption(stop.farKm)}
+          </Caption>
+        ) : null}
+        {/* The day's first stop has no walking line: the way there starts at the centre. */}
+        {stop.farKm !== null && !stop.travel && transitFromCentre(stop.farKm) ? (
+          <Caption as="p" className="mt-0.5">
+            {TRANSIT_CAPTION}
           </Caption>
         ) : null}
         {stop.exterior ? (

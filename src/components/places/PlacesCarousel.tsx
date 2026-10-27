@@ -8,13 +8,14 @@ import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import type { StoredPlace } from "@/lib/places/file";
 import { parseOpeningHours, todayStatus } from "@/lib/places/hours";
 import type { ShownPlace } from "@/lib/places/rules";
+import { farCaption } from "@/lib/places/far";
 import { cardPhotoSrcSet } from "@/lib/places/photos";
 import { walkToCentre } from "@/lib/places/walk";
 import { useMinuteNow } from "@/lib/time/clock";
 import { CATEGORY_ICONS } from "./categoryIcons";
 
 export type CarouselItem = {
-  place: StoredPlace & Pick<ShownPlace, "remote">;
+  place: StoredPlace & Pick<ShownPlace, "farKm">;
   category: CategoryId;
   /** 1-based position within its category's ranked list. */
   rank: number;
@@ -234,7 +235,7 @@ function PlaceTile({
           </Caption>
         ) : null}{" "}
         <Caption as="span" className="mt-auto block pt-2">
-          {CATEGORIES[category].label} · {place.remote ? "MERKEZE UZAK" : walkToCentre(place, center)}
+          {CATEGORIES[category].label} · {place.farKm !== undefined ? farCaption(place.farKm) : walkToCentre(place, center)}
         </Caption>{" "}
         <TodayHours value={place.openingHours} timeZone={timeZone} />
       </span>{" "}

@@ -24,7 +24,7 @@ const PlacesMap = dynamic(() => import("./PlacesMap"), {
 });
 
 export type CategoryResult =
-  | { category: CategoryId; status: "ok"; places: (StoredPlace & Pick<ShownPlace, "remote">)[]; wikipediaCountsAvailable: boolean }
+  | { category: CategoryId; status: "ok"; places: (StoredPlace & Pick<ShownPlace, "farKm">)[]; wikipediaCountsAvailable: boolean }
   | { category: CategoryId; status: "missing" };
 
 export type HeroExplorerProps = {

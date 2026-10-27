@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { findDestination } from "@/data/destinations";
 import { DAYTIME_CATEGORIES } from "@/lib/itinerary/config";
-import { buildItinerary, chooseMustSees, type ItineraryInput, type PlanPlace } from "@/lib/itinerary/plan";
+import { buildItinerary, chooseMustSees, farAreas, type ItineraryInput, type PlanPlace } from "@/lib/itinerary/plan";
 import type { CategoryId } from "@/lib/places/categories";
 import { loadPlacesFile } from "@/lib/places/load";
 import { sameNameOnce } from "@/lib/places/twins";
@@ -114,7 +114,7 @@ describe("wrong links, residences and seasonal places (rules.ts, place-overrides
   });
 });
 
-describe("outside-only landmarks and the Atomium (place-overrides.ts)", () => {
+describe("outside-only landmarks (place-overrides.ts) and the Atomium", () => {
   const stopsIn = async (code: string) => (await planFor(code)).plan.days.flatMap((d) => d.stops);
 
   it("keeps fountains, statues and gates short, and the Kremlin long", async () => {
@@ -129,7 +129,8 @@ describe("outside-only landmarks and the Atomium (place-overrides.ts)", () => {
   it("plans the Atomium as an area of its own, with a transport note, and drops lost statues in Athens", async () => {
     const brussels = (await planFor("BRU")).plan.days;
     const day = brussels.find((d) => d.stops.some((s) => s.id === "wikidata/Q180901"))!;
-    expect(day.stops[0]).toMatchObject({ id: "wikidata/Q180901", remote: true });
+    // 5.4 km from the centre, beyond Brussels' 2 km radius: far by the rule (places/far.ts), with no override.
+    expect(day.stops[0]).toMatchObject({ id: "wikidata/Q180901", farKm: 5.4 });
     const athens = await stopsIn("ATH");
     expect(athens.some((s) => ["Athena Parthenos", "Αθήνα"].includes(s.name) || s.name.includes("Προμάχου"))).toBe(false);
   });
@@ -160,5 +161,47 @@ describe("places inside another place on real data (containment.ts)", () => {
       const names = new Set(Object.values(file.categories).flatMap((e) => (e.status === "ok" ? e.places.flatMap((p) => p.parentName ?? []) : [])));
       for (const area of ["Gamla stan", "Tunus Medinesi", "Floransa'nın Tarihi Merkezi", "Piccadilly"]) expect(names.has(area), `${code} ${area}`).toBe(false);
     }
+  });
+});
+
+describe("far from the centre on real data (places/far.ts: beyond the city's radius)", () => {
+  const farIn = async (code: string) => {
+    const file = (await loadPlacesFile(code))!;
+    return Object.values(file.categories)
+      .flatMap((e) => (e.status === "ok" ? e.places : []))
+      .filter((p) => p.farKm !== undefined)
+      .map((p) => p.name)
+      .sort();
+  };
+
+  it("marks Park Güell in Barcelona, the Eiffel Tower in Paris and Schönbrunn in Vienna; Versailles is not in the data", async () => {
+    // Barcelona's radius is 3 km; Park Güell is 4 km out. Montserrat and Tibidabo are beyond twice the radius: not in the data.
+    expect(await farIn("BCN")).toEqual(["Güell Parkı"]);
+    const paris = await farIn("PAR");
+    expect(paris).toEqual(expect.arrayContaining(["Eyfel Kulesi", "Zafer Takı", "Vincennes Ormanı", "Boulogne Ormanı"]));
+    expect(paris).not.toContain("Louvre Müzesi");
+    expect(await farIn("VIE")).toEqual(["Schönbrunn Sarayı"]);
+    const all = Object.values((await loadPlacesFile("PAR"))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+    expect(all.some((p) => /versailles/i.test(p.name))).toBe(false);
+  });
+
+  it.each(["BCN", "BER", "BRU", "LIS", "LON", "MLA", "MOW", "MUC", "NYC", "PAR", "ROM", "TYO", "VIE"])(
+    "%s: never sends a day to two far areas, and every planned far stop says how far it is",
+    async (code) => {
+      const { input, plan } = await planFor(code);
+      const area = farAreas(input.daytime);
+      for (const day of plan.days) {
+        const areas = new Set(day.stops.flatMap((s) => (area.has(s.id) ? [area.get(s.id)] : [])));
+        expect(areas.size, `day ${day.number}`).toBeLessThanOrEqual(1);
+        for (const s of day.stops) expect(s.farKm !== null).toBe(area.has(s.id) || input.evening.some((e) => e.id === s.id && e.farKm !== undefined));
+      }
+    },
+  );
+
+  it("sees the Eiffel Tower and the Arc de Triomphe on the same day, one after the other", async () => {
+    const { plan } = await planFor("PAR");
+    const day = plan.days.find((d) => d.stops.some((s) => s.name === "Eyfel Kulesi"))!;
+    const names = day.stops.map((s) => s.name);
+    expect(names.indexOf("Zafer Takı") - names.indexOf("Eyfel Kulesi")).toBe(1);
   });
 });

@@ -1,5 +1,7 @@
+import { findDestination } from "@/data/destinations";
 import { PLACE_OVERRIDES, type CityOverrides } from "@/data/place-overrides";
 import { CATEGORIES, type CategoryId } from "./categories";
+import { farFromCentreKm } from "./far";
 import type { PlacesFile, StoredPlace } from "./file";
 import { FAR_FROM_ITEM_TAG, HERITAGE_TAG, NO_COORDINATE_TAG, UNESCO_TAG, type KindTag } from "./kinds";
 import { categoryCap, compareRanked } from "./rank";
@@ -131,15 +133,18 @@ export type ShownPlace = Omit<StoredPlace, "kinds"> & {
   noVisit?: true;
   /** Seen from outside only (place-overrides.ts), except in `openMonths`. */
   exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
-  /** Far from the centre (an included place like the Atomium): reached by public transport, an area of its own. */
-  remote?: true;
+  /**
+   * Far from the centre (far.ts: beyond the city's data radius): the distance in km, to one decimal. A place
+   * inside another shown place (`parentId`) carries that place's value, so the two never disagree.
+   */
+  farKm?: number;
 };
 export type ShownCategory =
   | { status: "ok"; wikipediaCountsAvailable: boolean; places: ShownPlace[] }
   | Extract<PlacesFile["categories"][CategoryId], { status: "missing" }>;
 export type ShownPlacesFile = Omit<PlacesFile, "categories"> & { categories: Record<CategoryId, ShownCategory> };
 
-function toShown(place: StoredPlace, overrides: CityOverrides): ShownPlace {
+function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | null): ShownPlace {
   const { kinds: _kinds, ...rest } = place;
   const qid = place.wikidataId;
   const included = qid ? overrides.include?.find((o) => o.qid === qid) : undefined;
@@ -152,7 +157,7 @@ function toShown(place: StoredPlace, overrides: CityOverrides): ShownPlace {
     ...rest,
     ...(isWalkThrough(place) ? { walkThrough: true } : {}),
     ...(visitMin ? { visitMin } : {}),
-    ...(included?.remote ? { remote: true } : {}),
+    ...(farKm !== null ? { farKm: Math.round(farKm * 10) / 10 } : {}),
     ...(exterior
       ? {
           exterior: {
@@ -173,22 +178,48 @@ function unlinked(place: StoredPlace): StoredPlace {
   return rest;
 }
 
-/** Applies the sight rules and the city's overrides, then the per-category limit (40 sights or museums, 30 others). */
-export function applyPlaceRules(file: PlacesFile, overrides: CityOverrides = PLACE_OVERRIDES[file.cityCode] ?? {}): ShownPlacesFile {
+/**
+ * Each shown place's distance from the centre when it is far (far.ts), else null. A place inside another shown
+ * place takes that place's value: the Tsar Bell is as far as the Kremlin.
+ */
+function farOf(kept: Iterable<StoredPlace>, centre: { lat: number; lon: number } | undefined, radiusKm: number) {
+  const places = [...kept];
+  const own = (p: StoredPlace) => (centre ? farFromCentreKm(p, centre, radiusKm) : null);
+  const byQid = new Map(places.flatMap((p) => (p.wikidataId ? [[p.wikidataId, p] as const] : [])));
+  return new Map(
+    places.map((p) => {
+      const parent = p.parentId ? byQid.get(p.parentId) : undefined;
+      return [p.id, own(parent && parent.id !== p.id ? parent : p)] as const;
+    }),
+  );
+}
+
+/**
+ * Applies the sight rules and the city's overrides, then the per-category limit (40 sights or museums, 30 others),
+ * and marks the places far from the centre (far.ts; the centre is the destination's coordinate).
+ */
+export function applyPlaceRules(
+  file: PlacesFile,
+  overrides: CityOverrides = PLACE_OVERRIDES[file.cityCode] ?? {},
+  centre: { lat: number; lon: number } | undefined = findDestination(file.cityCode),
+): ShownPlacesFile {
+  const kept = {} as Partial<Record<CategoryId, StoredPlace[]>>;
+  for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
+    if (entry.status !== "ok") continue;
+    let places = entry.places;
+    if (CATEGORIES[id].ranking === "wikipedia") {
+      const wrong = new Set(places.filter((p) => hasWrongLink(p, id, overrides)).map((p) => p.id));
+      places = places.map((p) => (wrong.has(p.id) ? unlinked(p) : p)).filter((p) => isSight(p, id, overrides));
+      // A place that lost a wrong link's count moves down; otherwise the stored order stands.
+      if (wrong.size) places = [...places].sort(compareRanked);
+    }
+    kept[id] = places.slice(0, categoryCap(id));
+  }
+  const far = farOf(Object.values(kept).flat(), centre, file.radiusKm);
   const categories = {} as Record<CategoryId, ShownCategory>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
-    if (entry.status !== "ok") {
-      categories[id] = entry;
-      continue;
-    }
-    let kept = entry.places;
-    if (CATEGORIES[id].ranking === "wikipedia") {
-      const wrong = new Set(kept.filter((p) => hasWrongLink(p, id, overrides)).map((p) => p.id));
-      kept = kept.map((p) => (wrong.has(p.id) ? unlinked(p) : p)).filter((p) => isSight(p, id, overrides));
-      // A place that lost a wrong link's count moves down; otherwise the stored order stands.
-      if (wrong.size) kept = [...kept].sort(compareRanked);
-    }
-    categories[id] = { ...entry, places: kept.slice(0, categoryCap(id)).map((p) => toShown(p, overrides)) };
+    const places = kept[id];
+    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null)) } : entry;
   }
   return { ...file, categories };
 }
