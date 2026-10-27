@@ -1,6 +1,7 @@
 import type { CityOverrides } from "@/data/place-overrides";
 import { distanceKm } from "@/lib/geo";
 import { CATEGORIES, type CategoryId } from "./categories";
+import { chooseParents, fetchParents } from "./containment";
 import type { PlacesFile, StoredPlace } from "./file";
 import { linkTags, type KindTag } from "./kinds";
 import { fetchCoordinates, fetchKinds } from "./landmarks";
@@ -98,6 +99,18 @@ export async function refreshKinds(
       .sort(compareRanked);
     // A relink can make two objects the same item (Big Ben and Elizabeth Tower): keep it once, at its best rank.
     entry.places = sameNameOnce(entry.places);
+  }
+
+  // 3. The place each one is inside (P361/P276), among this city's places (containment.ts).
+  const parents = chooseParents(ids.flatMap(placesOf), await fetchParents(qids, { fetcher }));
+  for (const c of ids) {
+    const entry = categories[c];
+    if (entry.status !== "ok") continue;
+    entry.places = entry.places.map((p): StoredPlace => {
+      const { parentId: _id, parentName: _name, ...rest } = p;
+      const parent = p.wikidataId ? parents.get(p.wikidataId) : undefined;
+      return parent ? { ...rest, ...parent } : rest;
+    });
   }
   return { file: { ...file, categories }, relinked, added, missing };
 }

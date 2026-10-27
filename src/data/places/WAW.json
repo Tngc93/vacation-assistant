@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "cityCode": "WAW",
- "fetchedAt": "2026-10-22T05:40:34.458Z",
+ "fetchedAt": "2026-10-23T12:58:45.327Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -118,9 +118,10 @@
     {
      "id": "relation/64436",
      "name": "Zamek Królewski",
-     "lat": 52.24789,
+     "lat": 52.2479,
      "lon": 21.01516,
      "address": "Plac Zamkowy 4",
+     "website": "https://www.zamek-krolewski.pl/",
      "wikipediaCount": 40,
      "wikidataId": "Q756098",
      "kinds": [
@@ -342,7 +343,7 @@
      "lat": 52.24302,
      "lon": 21.01596,
      "address": "Krakowskie Przedmieście 46/48",
-     "openingHours": "Mo-Fr 09:00-15:00",
+     "openingHours": "Mo-Fr 9:00-15:00",
      "wikipediaCount": 23,
      "wikidataId": "Q608932",
      "kinds": [
@@ -460,9 +461,8 @@
     {
      "id": "way/133637274",
      "name": "Plac Zamkowy",
-     "lat": 52.24787,
-     "lon": 21.01387,
-     "openingHours": "24/7",
+     "lat": 52.24792,
+     "lon": 21.01389,
      "wikipediaCount": 20,
      "wikidataId": "Q1092468",
      "kinds": [
@@ -520,7 +520,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Warsaw_Old_Town_Market_Square_10.JPG",
       "fullWidth": 4715
      },
-     "description": "square in Warsaw"
+     "description": "square in Warsaw",
+     "parentId": "Q1139084",
+     "parentName": "Varşova Eski Şehir"
     },
     {
      "id": "wikidata/Q156555",
@@ -604,7 +606,8 @@
      "wikidataId": "Q1540926",
      "kinds": [
       "attraction",
-      "heritage"
+      "heritage",
+      "notPlace"
      ],
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Grob_Nieznanego_Zo%C5%82nierza_w_Warszawie_2010_%282%29.JPG/500px-Grob_Nieznanego_Zo%C5%82nierza_w_Warszawie_2010_%282%29.JPG",
@@ -901,9 +904,9 @@
     {
      "id": "way/249395313",
      "name": "Barbakan",
-     "lat": 52.25059,
+     "lat": 52.25061,
      "lon": 21.01018,
-     "address": "Nowomiejska",
+     "address": "Nowomiejska 15/17",
      "wikipediaCount": 15,
      "wikidataId": "Q1108269",
      "kinds": [
@@ -1037,7 +1040,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pomnik_Chopina_w_Warszawie.jpg",
       "fullWidth": 2832
      },
-     "description": "sculpture in Warsaw"
+     "description": "sculpture in Warsaw",
+     "parentId": "Q345279",
+     "parentName": "Łazienki Park"
     },
     {
      "id": "wikidata/Q4569133",
@@ -1066,7 +1071,7 @@
     {
      "id": "node/448025917",
      "name": "Mały Powstaniec",
-     "lat": 52.24927,
+     "lat": 52.24928,
      "lon": 21.00962,
      "wikipediaCount": 14,
      "wikidataId": "Q555792",
@@ -1083,7 +1088,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pomnik_Malego_Powstanca.JPG",
       "fullWidth": 1659
      },
-     "description": "Statue by Jerzy Jarnuszkiewicz in Warsaw, Poland"
+     "description": "Statue by Jerzy Jarnuszkiewicz in Warsaw, Poland",
+     "parentId": "Q1139084",
+     "parentName": "Varşova Eski Şehir"
     },
     {
      "id": "wikidata/Q1109610",
@@ -1278,6 +1285,36 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "relation/64436",
+     "name": "Zamek Królewski",
+     "lat": 52.2479,
+     "lon": 21.01516,
+     "address": "Plac Zamkowy 4",
+     "website": "https://www.zamek-krolewski.pl/",
+     "wikipediaCount": 40,
+     "wikidataId": "Q756098",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "castle",
+      "heritage",
+      "museum",
+      "organization",
+      "palace"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Warszawa-Zamek_Kr%C3%B3lewski.jpg/500px-Warszawa-Zamek_Kr%C3%B3lewski.jpg",
+      "width": 500,
+      "height": 337,
+      "author": "Marcin Białek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Warszawa-Zamek_Kr%C3%B3lewski.jpg",
+      "fullWidth": 6616
+     },
+     "description": "castle residency in Warsaw, Poland"
+    },
+    {
      "id": "node/9984134345",
      "name": "Varşova Ulusal Müzesi",
      "localName": "Muzeum Narodowe w Warszawie",
@@ -1463,7 +1500,7 @@
      "lon": 21.009,
      "address": "Marszałkowska 103",
      "website": "https://artmuseum.pl/",
-     "openingHours": "Tu-Th, Sa 11:00-19:00; Fr 11:00-20:00; Su 11:00-18:00",
+     "openingHours": "Tu-Su 12:00-20:00",
      "wikipediaCount": 14,
      "wikidataId": "Q1956218",
      "kinds": [
@@ -1668,7 +1705,7 @@
      "lon": 21.01139,
      "address": "Rynek Starego Miasta 42",
      "website": "https://muzeumwarszawy.pl/",
-     "openingHours": "Su, Tu-We, Fr 10:00-18:00; Th 10:00-20:00; Sa 10:00-19:00",
+     "openingHours": "Mo,We,Fr 09:00-17:00; Th 09:00-19:00; Sa-Su 11:00-18:00",
      "wikipediaCount": 9,
      "wikidataId": "Q202277",
      "kinds": [
@@ -1770,7 +1807,7 @@
      "lat": 52.23188,
      "lon": 21.00611,
      "website": "https://www.neonmuzeum.org/",
-     "openingHours": "Su-Th 11:00-18:00; Fr-Sa 11:00-19:00",
+     "openingHours": "Mo-Fr 10:00-18:00; Sa-Su 10:00-19:00",
      "wikipediaCount": 7,
      "wikidataId": "Q11790623",
      "kinds": [
@@ -1811,7 +1848,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Opisthocoelicaudia_Museum_of_Evolution_in_Warsaw_02.JPG",
       "fullWidth": 4859
      },
-     "description": "Museum in Warsaw, Poland"
+     "description": "Museum in Warsaw, Poland",
+     "parentId": "Q167566",
+     "parentName": "Kültür ve Bilim Sarayı"
     },
     {
      "id": "node/11196230956",
@@ -1863,7 +1902,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Narodowe_Muzeum_Techniki_w_Warszawie_2022f.jpg",
       "fullWidth": 7096
      },
-     "description": "science museum in Warsaw, Poland"
+     "description": "science museum in Warsaw, Poland",
+     "parentId": "Q167566",
+     "parentName": "Kültür ve Bilim Sarayı"
     },
     {
      "id": "node/587282867",
@@ -1967,7 +2008,9 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Muzeum_Legii_Warszawa_06.JPG",
       "fullWidth": 3170
      },
-     "description": "sports museum in Poland"
+     "description": "sports museum in Poland",
+     "parentId": "Q928642",
+     "parentName": "Polonya Ordusu Stadyumu"
     },
     {
      "id": "node/4141608192",
@@ -2237,28 +2280,6 @@
      "description": "museum in Poland"
     },
     {
-     "id": "node/9984033034",
-     "name": "Przystanek Historia",
-     "lat": 52.2173,
-     "lon": 21.01917,
-     "address": "Marszałkowska 21/25",
-     "website": "https://przystanekhistoria.pl/pa2/",
-     "openingHours": "Mo-Fr 09:00-17:00",
-     "wikipediaCount": 2,
-     "wikidataId": "Q109279956",
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Przystanek_Historia_Centrum_Edukacyjne_IPN_w_Warszawie.jpg/500px-Przystanek_Historia_Centrum_Edukacyjne_IPN_w_Warszawie.jpg",
-      "width": 500,
-      "height": 378,
-      "author": "Adrian Grycuk",
-      "license": "CC BY-SA 3.0 pl",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Przystanek_Historia_Centrum_Edukacyjne_IPN_w_Warszawie.jpg",
-      "fullWidth": 3682
-     },
-     "description": "cultural, educational and exhibition center"
-    },
-    {
      "id": "node/12862698273",
      "name": "Cele Bezpieki",
      "lat": 52.22062,
@@ -2293,8 +2314,8 @@
     {
      "id": "node/4106662489",
      "name": "Gnojna Góra",
-     "lat": 52.24998,
-     "lon": 21.01412,
+     "lat": 52.24996,
+     "lon": 21.0141,
      "wikipediaCount": 1,
      "wikidataId": "Q11703035",
      "kinds": [
@@ -2351,6 +2372,12 @@
      "lon": 21.03057
     },
     {
+     "id": "node/1421371478",
+     "name": "widok na Pałac na Wyspie",
+     "lat": 52.21296,
+     "lon": 21.03569
+    },
+    {
      "id": "node/13179062126",
      "name": "widok na Swiątynię Egipską",
      "lat": 52.21186,
@@ -2361,12 +2388,6 @@
      "name": "Widok na Zamek Ujazdowski",
      "lat": 52.21909,
      "lon": 21.04495
-    },
-    {
-     "id": "node/6695923385",
-     "name": "Wieża Marszałkowska",
-     "lat": 52.2511,
-     "lon": 21.01137
     }
    ]
   },
@@ -2419,17 +2440,6 @@
      "detailed": true
     },
     {
-     "id": "node/378232958",
-     "name": "Amanti",
-     "lat": 52.2292,
-     "lon": 21.0186,
-     "address": "Żurawia 6/12",
-     "website": "https://www.amanti.com.pl/",
-     "openingHours": "Mo-Th 09:00-23:00; Fr-Sa 09:00-01:00; Su 09:00-22:00",
-     "cuisine": "italian",
-     "detailed": true
-    },
-    {
      "id": "node/5806824055",
      "name": "Anatolia",
      "lat": 52.22168,
@@ -2470,6 +2480,17 @@
      "address": "Marszałkowska 27/35a",
      "website": "https://www.baodao.com.pl/",
      "openingHours": "Mo-Sa 11:00-22:00; Su 11:00-21:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/279035219",
+     "name": "Bao Long",
+     "lat": 52.24689,
+     "lon": 20.98501,
+     "address": "Smocza 18",
+     "website": "http://bar.baolong.pl/",
+     "openingHours": "Mo-Sa 10:00-21:00; Su 11:00-21:00",
      "cuisine": "chinese",
      "detailed": true
     },
@@ -2604,14 +2625,14 @@
      "detailed": true
     },
     {
-     "id": "node/4584290391",
-     "name": "Ceviche Bar",
-     "lat": 52.23555,
-     "lon": 21.00182,
-     "address": "Twarda 4",
-     "website": "http://cevichebar.pl/",
-     "openingHours": "Mo-Sa 12:00-23:00",
-     "cuisine": "ceviche, seafood",
+     "id": "node/2439198697",
+     "name": "Chmielarnia",
+     "lat": 52.23101,
+     "lon": 20.99551,
+     "address": "Twarda 42",
+     "website": "http://chmielarnia.waw.pl/",
+     "openingHours": "Mo-Fr 11:00-24:00; Sa 12:00-24:00; Su 12:00-22:00",
+     "cuisine": "thai, nepalese",
      "detailed": true
     },
     {
@@ -2692,14 +2713,14 @@
      "detailed": true
     },
     {
-     "id": "node/4565874844",
-     "name": "Dzień i Noc",
-     "lat": 52.23864,
-     "lon": 20.99677,
-     "address": "Plac Mirowski 1",
-     "website": "http://dzieninoc.com/",
-     "openingHours": "12:00+",
-     "cuisine": "steak house",
+     "id": "node/1496572214",
+     "name": "Dubrovnik",
+     "lat": 52.22931,
+     "lon": 21.01416,
+     "address": "Nowogrodzka 22",
+     "website": "https://dubrovnik.warszawa.pl/",
+     "openingHours": "Mo-We 13:00-24:00; Th 13:00-01:00; Fr 13:00-02:00; Sa-Su 14:00-24:00",
+     "cuisine": "balkan",
      "detailed": true
     }
    ]
@@ -2708,17 +2729,6 @@
    "status": "ok",
    "wikipediaCountsAvailable": true,
    "places": [
-    {
-     "id": "node/11026281418",
-     "name": "Batida",
-     "lat": 52.20701,
-     "lon": 21.0059,
-     "address": "Rakowiecka 43A",
-     "website": "https://batida.pl/",
-     "openingHours": "Mo-Fr 08:00-20:00; Sa-Su 09:00-20:00",
-     "cuisine": "cake, coffee shop",
-     "detailed": true
-    },
     {
      "id": "node/4936174309",
      "name": "Bubble Tea 7",
@@ -2737,7 +2747,7 @@
      "lon": 21.01334,
      "address": "Chmielna 26",
      "website": "https://bubblejoy.pl/",
-     "openingHours": "Mo-Th,Su 11:00-21:00; Fr-Sa 11:00-22:00",
+     "openingHours": "11:00-21:00",
      "cuisine": "bubble tea",
      "detailed": true
     },
@@ -2764,12 +2774,23 @@
      "detailed": true
     },
     {
+     "id": "node/8567834014",
+     "name": "Coco Bowls",
+     "lat": 52.22477,
+     "lon": 21.03122,
+     "address": "Górnośląska 16",
+     "website": "https://cocobowls.pl/",
+     "openingHours": "Mo-Su 09:00-17:00",
+     "cuisine": "breakfast, dessert",
+     "detailed": true
+    },
+    {
      "id": "node/9970104780",
      "name": "Coffeedesk",
      "lat": 52.23629,
      "lon": 21.00473,
      "website": "https://coffeedesk.pl/",
-     "openingHours": "Mo-Fr 08:00-20:00; Sa-Su 09:00-20:00",
+     "openingHours": "Mo-Fr 08:00-21:00; Sa 09:00-21:00; Su 09:00-20:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
@@ -2884,17 +2905,6 @@
      "detailed": true
     },
     {
-     "id": "node/3980723870",
-     "name": "Green Caffè Nero",
-     "lat": 52.23207,
-     "lon": 21.01266,
-     "address": "Chmielna 32",
-     "website": "https://www.greencaffenero.pl/",
-     "openingHours": "Mo-Th 07:30-22:00; Fr-Sa 07:30-23:00; Su 07:30-22:30",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
      "id": "node/4909650322",
      "name": "Green Caffè Nero",
      "lat": 52.20958,
@@ -2902,17 +2912,6 @@
      "address": "Puławska 23/25",
      "website": "https://greencaffenero.pl/",
      "openingHours": "Mo-Fr 06:30-21:00; Sa-Su 07:00-20:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/5058410458",
-     "name": "Green Caffè Nero",
-     "lat": 52.23219,
-     "lon": 21.01534,
-     "address": "Bracka 25",
-     "website": "https://www.greencaffenero.pl/",
-     "openingHours": "Mo-Th,Su 07:30-22:00; Fr-Sa 08:00-22:30",
      "cuisine": "coffee shop",
      "detailed": true
     },
@@ -2958,17 +2957,6 @@
      "website": "https://labomboniera.pl/",
      "openingHours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00",
      "cuisine": "cake, coffee shop, ice cream",
-     "detailed": true
-    },
-    {
-     "id": "node/8358960462",
-     "name": "Łoskot Cafe",
-     "lat": 52.2345,
-     "lon": 21.01187,
-     "address": "Jasna 10",
-     "website": "https://www.facebook.com/loskotcafe/",
-     "openingHours": "Mo-Fr 08:30-18:30; Sa-Su 10:30-18:30",
-     "cuisine": "coffee shop",
      "detailed": true
     },
     {
@@ -3026,6 +3014,17 @@
      "detailed": true
     },
     {
+     "id": "node/12339509203",
+     "name": "Prześniona",
+     "lat": 52.23453,
+     "lon": 21.01196,
+     "address": "Jasna 10",
+     "website": "https://www.instagram.com/przesniona/",
+     "openingHours": "Mo-Sa 08:00-18:00",
+     "cuisine": "coffee shop, sandwich, pieczywo",
+     "detailed": true
+    },
+    {
      "id": "node/11818446070",
      "name": "Rugs and More",
      "lat": 52.22652,
@@ -3033,6 +3032,28 @@
      "address": "Cecylii Śniegockiej 13/101",
      "website": "https://www.rugsandmore.pl/",
      "openingHours": "Mo-Sa 09:00-19:00, Su 10:00-16:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/599353889",
+     "name": "Starbucks",
+     "lat": 52.23604,
+     "lon": 21.01846,
+     "address": "Nowy Świat 62",
+     "website": "https://www.starbucks.co.uk/store-locator/3107-130670/warsaw,-nowy-swiat",
+     "openingHours": "Mo-Fr 06:30-22:00; Sa-Su 07:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1493565881",
+     "name": "Starbucks",
+     "lat": 52.21772,
+     "lon": 21.01577,
+     "address": "Mokotowska 1",
+     "website": "https://www.starbucks.co.uk/store-locator/6160-148987/warsaw,-zebra",
+     "openingHours": "Mo-Fr 06:30-21:00; Sa-Su 08:30-20:30",
      "cuisine": "coffee shop",
      "detailed": true
     }
@@ -3069,24 +3090,13 @@
      "detailed": true
     },
     {
-     "id": "node/4227972404",
-     "name": "Jabeerwocky",
-     "lat": 52.22966,
-     "lon": 21.0159,
-     "address": "Nowogrodzka 12",
-     "website": "https://www.jabeerwocky.com/pl/",
-     "openingHours": "Mo-Tu 14:00-24:00; We-Th 14:00-01:00; Fr-Sa 14:00-02:00; Su 15:00-24:00",
-     "cuisine": "pizza",
-     "detailed": true
-    },
-    {
      "id": "node/4375857798",
      "name": "Rausz",
      "lat": 52.22498,
      "lon": 21.01671,
      "address": "Wilcza 27",
      "website": "https://rausz.me/",
-     "openingHours": "Mo-Th 16:00-22:00; Fr-Sa 16:00-24:00",
+     "openingHours": "Mo-Th 16:00-23:00; Fr-Sa 14:00-24:00; Su 14:00-22:00",
      "cuisine": "wine",
      "detailed": true
     },
@@ -3121,7 +3131,7 @@
     },
     {
      "id": "node/2354068038",
-     "name": "Bazar",
+     "name": "Bazar Klub",
      "lat": 52.25105,
      "lon": 21.03558,
      "address": "Stefana Okrzei 26",
@@ -3136,7 +3146,7 @@
      "lon": 21.01246,
      "address": "Lwowska 17",
      "website": "http://www.beerstation.pl/",
-     "openingHours": "Mo off; Tu-Su 15:00-01:00",
+     "openingHours": "Tu-Su 15:00-01:00",
      "detailed": true
     },
     {
@@ -3199,16 +3209,6 @@
      "detailed": true
     },
     {
-     "id": "node/1437931262",
-     "name": "City Wine",
-     "lat": 52.23754,
-     "lon": 21.00317,
-     "address": "Grzybowska 2",
-     "openingHours": "Mo-Th 12:00-20:00; Fr-Sa 12:00-22:00",
-     "cuisine": "wine",
-     "detailed": true
-    },
-    {
      "id": "node/9349808652",
      "name": "Cybermachina",
      "lat": 52.23516,
@@ -3230,7 +3230,7 @@
     },
     {
      "id": "node/6100862185",
-     "name": "Fajka Bar",
+     "name": "Fajka Bar Żurawia",
      "lat": 52.22897,
      "lon": 21.01537,
      "address": "Żurawia 22",
@@ -3265,7 +3265,7 @@
      "lon": 21.0141,
      "address": "Chmielna 24",
      "website": "https://hopito-chmielna.ontap.pl/",
-     "openingHours": "Mo-Th 12:00-24:00; Fr 12:00-02:00; Sa 10:00-02:00; Su 10:00-24:00",
+     "openingHours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-02:00",
      "detailed": true
     },
     {
@@ -3276,6 +3276,16 @@
      "address": "Prosta 2/14",
      "website": "https://instytut.bar/",
      "openingHours": "Mo-Th 20:00-03:00; Fr-Sa 20:00-04:30; Su 20:00-03:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4227972404",
+     "name": "Jabeerwocky",
+     "lat": 52.22966,
+     "lon": 21.0159,
+     "address": "Nowogrodzka 12",
+     "website": "https://www.jabeerwocky.com/pl/puby/warszawa",
+     "openingHours": "Mo-Tu 14:00-24:00; We-Th 14:00-01:00; Fr-Sa 14:00-02:00; Su 15:00-24:00",
      "detailed": true
     },
     {
@@ -3294,7 +3304,7 @@
      "lat": 52.22279,
      "lon": 21.01052,
      "address": "Piękna 49",
-     "openingHours": "Mo-Th 17:00-23:00; Fr-Sa 17:00-24:00; Su off",
+     "openingHours": "Mo-Th 17:00-23:00; Fr-Sa 16:00-24:00; Su 13:00-20:00",
      "cuisine": "wine",
      "detailed": true
     },
@@ -3325,7 +3335,7 @@
      "lon": 21.01985,
      "address": "Nowy Świat 19",
      "website": "https://www.mezza.pl/",
-     "openingHours": "15:00+",
+     "openingHours": "15+",
      "detailed": true
     },
     {
@@ -3346,6 +3356,16 @@
      "address": "Krakowskie Przedmieście 41",
      "website": "https://irishpub-mollymalones.pl/",
      "openingHours": "Mo-Th 14:00-02:00; Fr 13:00-02:00; Sa,Su 12:00-02:00",
+     "detailed": true
+    },
+    {
+     "id": "node/11866819830",
+     "name": "Niewinność",
+     "lat": 52.2328,
+     "lon": 21.01329,
+     "address": "Zgoda 5",
+     "openingHours": "Mo off; Tu-Th 16:00-22:00; Fr 16:00-02:00; Sa 09:00-02:00; Su 09:00-22:00",
+     "cuisine": "wine",
      "detailed": true
     }
    ]

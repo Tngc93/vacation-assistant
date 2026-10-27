@@ -58,3 +58,19 @@ test("Sarajevo without flights: half days, marked as an assumption", async ({ pa
   const last = plan.getByRole("region", { name: /^5\. gün · / });
   await expect(last.getByText(/DÖNÜŞ GÜNÜ · YARIM GÜN · 09:00–13:00/)).toBeVisible();
 });
+
+test("Moscow: the Tsar Cannon is a sub-stop of the Kremlin, and goes with it when the Kremlin is removed", async ({ page }) => {
+  await page.goto(`/plan?to=MOW&${trip}`);
+  const plan = page.locator("#gun-gun-plan");
+  const inside = plan.getByRole("list", { name: "Московский Кремль içinde" });
+  await expect(inside.getByText(/^Çar Topu/)).toBeVisible();
+  await expect(inside.getByText(/^KREMLİNİ İÇİNDE · /).first()).toBeVisible();
+  // Never a stop of its own: no time and no walk inside the list.
+  await expect(inside.getByText(/^YÜRÜME /)).toHaveCount(0);
+
+  await plan.getByRole("button", { name: "Московский Кремль durağını plandan çıkar" }).click();
+  await expect(page).toHaveURL(/skip=r1360641/);
+  await expect(plan.getByText(/^Çar Topu/)).toHaveCount(0);
+  await plan.getByRole("button", { name: "Planı sıfırla (1)" }).click();
+  await expect(inside.getByText(/^Çar Topu/)).toBeVisible();
+});

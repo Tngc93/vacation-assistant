@@ -1,13 +1,14 @@
 /**
  * Refreshes the Wikidata facts of the stored place files without Overpass: applies the relink overrides
  * (src/data/place-overrides.ts), stores every sight's kinds and link tags (src/lib/places/refresh.ts), and
- * the card photos and descriptions (src/lib/places/photos.ts).
+ * the card photos and descriptions (src/lib/places/photos.ts), and the place each one is inside
+ * (src/lib/places/containment.ts).
  * Run with `npm run data:kinds` (optionally `-- NYC DUB`); a few minutes for all cities, one city at a time.
  */
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { PLACE_OVERRIDES } from "../src/data/place-overrides";
-import { placesFileSchema } from "../src/lib/places/file";
+import { PLACES_FILE_VERSION, placesFileSchema } from "../src/lib/places/file";
 import { addPhotosAndDescriptions } from "../src/lib/places/photos";
 import { refreshKinds } from "../src/lib/places/refresh";
 
@@ -19,7 +20,9 @@ const wanted = new Set(process.argv.slice(2).map((c) => c.toUpperCase()));
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json") && (wanted.size === 0 || wanted.has(f.slice(0, 3)))).sort();
 const failed: string[] = [];
 for (const name of files) {
-  const file = placesFileSchema.parse(JSON.parse(readFileSync(path.join(DIR, name), "utf8")));
+  // An older file version is brought up to this one: everything a version added comes from Wikidata, refreshed here.
+  const raw = JSON.parse(readFileSync(path.join(DIR, name), "utf8")) as Record<string, unknown>;
+  const file = placesFileSchema.parse({ ...raw, version: PLACES_FILE_VERSION });
   let result: Awaited<ReturnType<typeof refreshKinds>> | undefined;
   for (let attempt = 0; attempt < 3 && !result; attempt++) {
     try {
