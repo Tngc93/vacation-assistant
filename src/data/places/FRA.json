@@ -1,7 +1,7 @@
 {
  "version": 5,
  "cityCode": "FRA",
- "fetchedAt": "2026-10-23T12:37:50.404Z",
+ "fetchedAt": "2026-10-27T18:40:35.180Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -73,7 +73,6 @@
      "lon": 8.68071,
      "address": "Paulsplatz 11",
      "website": "https://frankfurt.de/frankfurt-entdecken-und-erleben/sehenswuerdigkeiten/fuer-historisch-interessierte/paulskirche",
-     "openingHours": "Mo-Su 10:00-17:00",
      "wikipediaCount": 30,
      "wikidataId": "Q198106",
      "kinds": [
@@ -100,7 +99,6 @@
      "lon": 8.68535,
      "address": "Domplatz 1",
      "website": "https://www.dom-frankfurt.de/dom/",
-     "openingHours": "Mo-Su 09:00-20:00",
      "wikipediaCount": 29,
      "wikidataId": "Q57341",
      "kinds": [
@@ -452,21 +450,6 @@
      "description": "Goethe family residence in Frankfurt am Main"
     },
     {
-     "id": "way/28426081",
-     "name": "Katharinenkirche",
-     "lat": 50.11319,
-     "lon": 8.67941,
-     "address": "Zeil 131",
-     "openingHours": "Mo-Sa 10:00-18:00",
-     "wikipediaCount": 14,
-     "wikidataId": "Q195176",
-     "kinds": [
-      "heritage",
-      "religious"
-     ],
-     "description": "Frankfurt am Main, Almanya'da kilise"
-    },
-    {
      "id": "wikidata/Q220036",
      "name": "Frankfurt Zoological Garden",
      "lat": 50.1156,
@@ -487,6 +470,20 @@
       "fullWidth": 2576
      },
      "description": "zoo in Frankfurt, Germany"
+    },
+    {
+     "id": "way/28426081",
+     "name": "Katharinenkirche",
+     "lat": 50.11319,
+     "lon": 8.67941,
+     "address": "Zeil 131",
+     "wikipediaCount": 14,
+     "wikidataId": "Q195176",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "description": "Frankfurt am Main, Almanya'da kilise"
     },
     {
      "id": "wikidata/Q686644",
@@ -777,31 +774,6 @@
      "description": "building in Frankfurt am Main, Germany"
     },
     {
-     "id": "node/34378270",
-     "name": "Kaiserpfalz franconofurd",
-     "lat": 50.11056,
-     "lon": 8.6843,
-     "website": "https://www.archaeologisches-museum-frankfurt.de/besucherinformationen/",
-     "openingHours": "Tu-Su 11:00-18:00",
-     "wikipediaCount": 3,
-     "wikidataId": "Q187163",
-     "kinds": [
-      "heritage",
-      "ruins"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Archaeologischer-garten-2010-ffm-052.jpg/500px-Archaeologischer-garten-2010-ffm-052.jpg",
-      "width": 500,
-      "height": 663,
-      "author": "Dontworry",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archaeologischer-garten-2010-ffm-052.jpg",
-      "fullWidth": 2990
-     },
-     "description": "archaeological site in Innenstadt, Germany"
-    },
-    {
      "id": "way/53798956",
      "name": "Gerechtigkeitsbrunnen",
      "lat": 50.11042,
@@ -822,6 +794,29 @@
       "fullWidth": 2024
      },
      "description": "fountain in Frankfurt am Main, Germany"
+    },
+    {
+     "id": "node/34378270",
+     "name": "Kaiserpfalz franconofurd",
+     "lat": 50.11056,
+     "lon": 8.6843,
+     "wikipediaCount": 3,
+     "wikidataId": "Q187163",
+     "kinds": [
+      "heritage",
+      "ruins"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Archaeologischer-garten-2010-ffm-052.jpg/500px-Archaeologischer-garten-2010-ffm-052.jpg",
+      "width": 500,
+      "height": 663,
+      "author": "Dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Archaeologischer-garten-2010-ffm-052.jpg",
+      "fullWidth": 2990
+     },
+     "description": "archaeological site in Innenstadt, Germany"
     },
     {
      "id": "way/71324413",
@@ -1003,8 +998,8 @@
     {
      "id": "way/68970488",
      "name": "Kuhhirtenturm (Elefant)",
-     "lat": 50.10669,
-     "lon": 8.68971,
+     "lat": 50.1067,
+     "lon": 8.68973,
      "wikipediaCount": 1,
      "wikidataId": "Q1791199",
      "kinds": [
@@ -1211,7 +1206,7 @@
      "lon": 8.68244,
      "address": "Fahrtor 2",
      "website": "https://www.historisches-museum-frankfurt.de/",
-     "openingHours": "Tu-We, Fr-Su 11:00-18:00; Th 11:00-21:00",
+     "openingHours": "Tu-Su 11:00-18:00",
      "wikipediaCount": 10,
      "wikidataId": "Q198347",
      "kinds": [
@@ -1355,11 +1350,11 @@
     },
     {
      "id": "node/385171325",
-     "name": "Deutsches Filminstitut Filmmuseum",
+     "name": "Deutsches Filmmuseum",
      "lat": 50.10506,
      "lon": 8.67769,
      "address": "Schaumainkai 41",
-     "website": "https://www.dff.film/",
+     "website": "https://deutsches-filminstitut.de/filmmuseum/",
      "openingHours": "Tu-Su 11:00-18:00",
      "wikipediaCount": 5,
      "wikidataId": "Q1205629",
@@ -1396,58 +1391,6 @@
      "description": "museum for comic art"
     },
     {
-     "id": "way/898239357",
-     "name": "Deutsches Romantik-Museum",
-     "lat": 50.11102,
-     "lon": 8.67749,
-     "address": "Großer Hirschgraben 17-21",
-     "website": "https://deutsches-romantik-museum.de/",
-     "openingHours": "Fr-We,PH 10:00-18:00; Th 10:00-21:00",
-     "wikipediaCount": 4,
-     "wikidataId": "Q17321191",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Deutsches_Romantik-Museum_Frankfurt.jpg/500px-Deutsches_Romantik-Museum_Frankfurt.jpg",
-      "width": 500,
-      "height": 412,
-      "author": "Grimes2",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Romantik-Museum_Frankfurt.jpg",
-      "fullWidth": 3454
-     },
-     "description": "museum in Frankfurt am Main, Germany"
-    },
-    {
-     "id": "node/7427950218",
-     "name": "Museum Giersch der Goethe-Universität",
-     "lat": 50.10138,
-     "lon": 8.67023,
-     "address": "Schaumainkai 83",
-     "website": "https://www.mggu.de/",
-     "openingHours": "Tu,We,Fr-Su 10:00-18:00; Th 10:00-20:00; PH 10:00-18:00",
-     "wikipediaCount": 4,
-     "wikidataId": "Q1954440",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Museum-giersch-ffm001.jpg/500px-Museum-giersch-ffm001.jpg",
-      "width": 500,
-      "height": 457,
-      "author": "dontworry",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-giersch-ffm001.jpg",
-      "fullWidth": 1973
-     },
-     "description": "art museum in Frankfurt am Main, Germany"
-    },
-    {
      "id": "node/300928576",
      "name": "Weltkulturen Museum",
      "lat": 50.10574,
@@ -1472,6 +1415,31 @@
       "fullWidth": 4344
      },
      "description": "ethnological museum in Frankfurt am Main, Germany"
+    },
+    {
+     "id": "node/7427950218",
+     "name": "Museum Giersch der Goethe-Universität",
+     "lat": 50.10138,
+     "lon": 8.67023,
+     "address": "Schaumainkai 83",
+     "website": "https://www.mggu.de/",
+     "wikipediaCount": 4,
+     "wikidataId": "Q1954440",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Museum-giersch-ffm001.jpg/500px-Museum-giersch-ffm001.jpg",
+      "width": 500,
+      "height": 457,
+      "author": "dontworry",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-giersch-ffm001.jpg",
+      "fullWidth": 1973
+     },
+     "description": "art museum in Frankfurt am Main, Germany"
     },
     {
      "id": "node/1851804853",
@@ -1752,7 +1720,7 @@
     {
      "id": "node/7435791753",
      "name": "Hindemith Kabinett im Kuhhirtenturm",
-     "lat": 50.10669,
+     "lat": 50.10667,
      "lon": 8.68972,
      "address": "Große Rittergasse 118",
      "website": "https://www.hindemith.info/de/kabinett/",
@@ -1765,7 +1733,7 @@
      "lon": 8.69552,
      "address": "Friedberger Anlage 5-6",
      "website": "https://www.initiative-neunter-november.de/",
-     "openingHours": "May-Nov: We 17:00-19:00; May-Nov: Su 11:00-14:00"
+     "openingHours": "May-Nov We 17:00-19:00; May-Nov Su 11:00-14:00"
     },
     {
      "id": "node/2953703710",
@@ -1795,31 +1763,6 @@
      "openingHours": "16:00-20:00"
     },
     {
-     "id": "node/1853549297",
-     "name": "Museum Judengasse",
-     "lat": 50.11234,
-     "lon": 8.68856,
-     "address": "Battonnstraße 47",
-     "website": "https://www.juedischesmuseum.de/besuch/standort-museum-judengasse",
-     "openingHours": "Tu-Su 10:00-18:00",
-     "wikidataId": "Q21251780",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Museum-judengasse-ffm002.jpg/500px-Museum-judengasse-ffm002.jpg",
-      "width": 500,
-      "height": 269,
-      "author": "dontworry",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum-judengasse-ffm002.jpg",
-      "fullWidth": 2774
-     },
-     "description": "museum in Frankfurt am Main, Germany"
-    },
-    {
      "id": "node/3884481957",
      "name": "Museum Of Modern Electronic Music",
      "lat": 50.1136,
@@ -1844,6 +1787,22 @@
      "address": "Markt 7",
      "website": "https://www.frankfurter-sparkasse.de/stoltze",
      "openingHours": "Mo-Su 10:00-18:00"
+    },
+    {
+     "id": "node/10971369591",
+     "name": "TimeRide - Frankfurt 1891 und VR-Stadtrundgänge",
+     "lat": 50.11177,
+     "lon": 8.68117,
+     "address": "Berliner Straße 42a",
+     "website": "https://www.timeride.de/frankfurt",
+     "openingHours": "Mo-Su 10:00-19:00"
+    },
+    {
+     "id": "node/12198696037",
+     "name": "Galerie Berghout",
+     "lat": 50.1243,
+     "lon": 8.67546,
+     "openingHours": "\"Dienstag bis Sonntag nach Vereinbarung, montags Ruhetag\""
     }
    ]
   },
@@ -1881,13 +1840,7 @@
      "lat": 50.11067,
      "lon": 8.68486,
      "website": "https://www.dom-frankfurt.de/dom/dommuseum",
-     "openingHours": "Apr-Oct: 09:00-18:00; Nov-Mar: 11:00-17:00; Nov 01-Mar 06: Tu,We off"
-    },
-    {
-     "id": "node/13955651601",
-     "name": "Great view on Frankfurt Skyline",
-     "lat": 50.10781,
-     "lon": 8.69264
+     "openingHours": "Apr-Oct: 09:00-18:00; Nov-Mar: 11:00-17:00; Nov 1-Mar 6: Tu,We off"
     }
    ]
   },
@@ -1995,10 +1948,20 @@
      "detailed": true
     },
     {
+     "id": "node/1213812357",
+     "name": "azzurro",
+     "lat": 50.11348,
+     "lon": 8.66182,
+     "website": "http://azzurro-frankfurt.de/",
+     "openingHours": "Mo-Fr 11:00-14:30,17:00-23:00; Sa 17:00-23:00; Su off",
+     "cuisine": "italian",
+     "detailed": true
+    },
+    {
      "id": "node/3133897954",
      "name": "Babam",
      "lat": 50.10806,
-     "lon": 8.67125,
+     "lon": 8.6712,
      "address": "Münchener Straße 11",
      "website": "https://babam.de/",
      "openingHours": "Mo-Fr 11:30-22:00; Sa-Su 12:00-22:00",
@@ -2013,16 +1976,6 @@
      "website": "http://www.bangkok-restaurant.com/",
      "openingHours": "Mo-Su 12:00-15:00,18:00-23:00",
      "cuisine": "thai",
-     "detailed": true
-    },
-    {
-     "id": "node/1469617564",
-     "name": "Bibis Baguettes & Burgers",
-     "lat": 50.12718,
-     "lon": 8.68508,
-     "website": "https://www.bibibabu.de/",
-     "openingHours": "Mo-Fr 11:30-21:30; Sa 12:00-21:30; Su 14:00-20:30; Tu off",
-     "cuisine": "burger",
      "detailed": true
     },
     {
@@ -2135,8 +2088,8 @@
      "name": "Central Grill",
      "lat": 50.10788,
      "lon": 8.67054,
-     "website": "https://www.centralgrill-frankfurt.de/",
-     "openingHours": "Mo-Sa 07:00-03:00; Su 07:00-01:00",
+     "website": "https://centralgrill.net/",
+     "openingHours": "Mo-Sa 07:00-24:00; Su 10:00-24:00",
      "cuisine": "turkish",
      "detailed": true
     },
@@ -2207,8 +2160,8 @@
     {
      "id": "node/282654608",
      "name": "Demera",
-     "lat": 50.12661,
-     "lon": 8.67447,
+     "lat": 50.12667,
+     "lon": 8.67468,
      "website": "http://demera-frankfurt.com/",
      "openingHours": "Sa 17:00-01:00; Mo off, Su 15:00-23:00, Tu-Fr 17:00-23:00",
      "cuisine": "ethiopian",
@@ -2243,13 +2196,13 @@
      "detailed": true
     },
     {
-     "id": "node/2672718902",
-     "name": "cà phê, ơi!",
-     "lat": 50.09996,
-     "lon": 8.68155,
-     "website": "https://www.capheoi.de/",
-     "openingHours": "Mo-Su 09:30-18:00",
-     "cuisine": "breakfast, vietnamese",
+     "id": "node/1917412655",
+     "name": "Café Bohne",
+     "lat": 50.11597,
+     "lon": 8.69751,
+     "website": "http://cafe-bohne.info/",
+     "openingHours": "Mo-Fr 08:00-18:00, Sa-Su 08:00-19:00; PH unknown \"probably open with same opening hours as Sunday, but not specified on website\"",
+     "cuisine": "german",
      "detailed": true
     },
     {
@@ -2407,24 +2360,13 @@
      "detailed": true
     },
     {
-     "id": "node/1581300013",
-     "name": "Eis Cafe Olimpio",
-     "lat": 50.12214,
-     "lon": 8.68102,
-     "address": "Oeder Weg 58",
-     "website": "https://eiscafe-olimpio.de/",
-     "openingHours": "Tu-Sa 12:00-21:30; Su,PH 12:00-21:30",
-     "cuisine": "ice cream",
-     "detailed": true
-    },
-    {
      "id": "node/1771752991",
      "name": "Eis Fontanella",
      "lat": 50.10891,
      "lon": 8.67122,
      "address": "Kaiserstraße 35",
-     "website": "https://www.eisfontanella-frankfurt.de/",
-     "openingHours": "Mo-Th 11:00-21:30; Fr-Sa 11:00-22:00; Su 12:00-21:30",
+     "website": "https://www.eisfontanellafrankfurt.de/",
+     "openingHours": "Mo-Fr 09:30-18:00; Sa 12:00-18:00; Su off",
      "cuisine": "ice cream",
      "detailed": true
     },
@@ -2437,17 +2379,6 @@
      "website": "https://www.glauburg-cafe.de/",
      "openingHours": "Mo-Su 09:00-17:00",
      "cuisine": "sandwich",
-     "detailed": true
-    },
-    {
-     "id": "node/2541357814",
-     "name": "Gudes",
-     "lat": 50.12611,
-     "lon": 8.69172,
-     "address": "Friedberger Landstraße 107",
-     "website": "http://gudes-frankfurt.de/",
-     "openingHours": "Mo-Fr 13:00-23:00; Sa 10:00-23:00; Su 10:00-22:00",
-     "cuisine": "breakfast, coffee shop, german, pizza",
      "detailed": true
     },
     {
@@ -2483,17 +2414,6 @@
      "detailed": true
     },
     {
-     "id": "node/482615656",
-     "name": "Hucks Lieblingsplatz",
-     "lat": 50.11858,
-     "lon": 8.66209,
-     "address": "Bockenheimer Landstraße 66",
-     "website": "https://www.baeckerei-huck.de/filialen",
-     "openingHours": "Mo-Su 07:00-19:00",
-     "cuisine": "cafe, bakery",
-     "detailed": true
-    },
-    {
      "id": "node/741650419",
      "name": "Iimori Pâtisserie",
      "lat": 50.11135,
@@ -2505,24 +2425,14 @@
      "detailed": true
     },
     {
-     "id": "node/9878950990",
-     "name": "Isabella - glutenfreie Pâtisserie",
-     "lat": 50.11225,
-     "lon": 8.68051,
-     "address": "Neue Kräme 29",
-     "website": "https://shop.isabella-patisserie.de/",
-     "openingHours": "Mo-Fr 09:30-18:00; Sa 10:00-18:00",
-     "cuisine": "cake, coffee shop, tea",
-     "detailed": true
-    },
-    {
-     "id": "node/1917412655",
-     "name": "Le Petit Cafe",
-     "lat": 50.11597,
-     "lon": 8.6975,
-     "website": "http://cafe-bohne.info/",
-     "openingHours": "Mo-Fr 08:00-18:00, Sa-Su 08:00-19:00; PH unknown \"probably open with same opening hours as Sunday, but not specified on website\"",
-     "cuisine": "german",
+     "id": "node/9157655436",
+     "name": "Minie's Café",
+     "lat": 50.10133,
+     "lon": 8.68183,
+     "address": "Diesterwegstraße 10",
+     "website": "https://minies-cafe-frankfurt.metro.bar/",
+     "openingHours": "Su-Th 09:00-18:00; Fr,Sa 09:00-20:00",
+     "cuisine": "coffee shop",
      "detailed": true
     },
     {
@@ -2534,6 +2444,17 @@
      "website": "https://www.nativokaffee.de/",
      "openingHours": "Mo-Fr 08:00-18:00; Sa 09:00-17:00",
      "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1581300013",
+     "name": "Olympio",
+     "lat": 50.12214,
+     "lon": 8.68102,
+     "address": "Oeder Weg 58",
+     "website": "https://eiscafe-olimpio.de/",
+     "openingHours": "Tu-Sa 12:00-21:30; Su,PH 12:00-21:30",
+     "cuisine": "ice cream",
      "detailed": true
     },
     {
@@ -2555,6 +2476,37 @@
      "address": "Weißadlergasse 9",
      "website": "http://www.roseli.net/",
      "openingHours": "Mo-Su 09:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/9149879018",
+     "name": "Schneider‘s",
+     "lat": 50.11544,
+     "lon": 8.66995,
+     "website": "https://www.schneiders-cafe.de/",
+     "openingHours": "Mo-Fr 07:00-17:30; Sa 09:00-16:00",
+     "cuisine": "deli",
+     "detailed": true
+    },
+    {
+     "id": "node/1509118485",
+     "name": "Shimas Cafébar",
+     "lat": 50.12637,
+     "lon": 8.68367,
+     "address": "Glauburgstraße 78",
+     "website": "https://www.shima-cafebar.de/",
+     "openingHours": "Mo 13:00-19:00; Tu-Su 09:30-19:00",
+     "cuisine": "coffee shop, persian",
+     "detailed": true
+    },
+    {
+     "id": "node/921135566",
+     "name": "Starbucks",
+     "lat": 50.11488,
+     "lon": 8.67378,
+     "website": "https://www.starbucks.co.uk/store-locator/53096-282086/frankfurt,-fressgass",
+     "openingHours": "Mo-Sa 07:00-21:00, Su,PH 08:30-19:30, Sa 07:30-21:00",
      "cuisine": "coffee shop",
      "detailed": true
     }
@@ -2840,6 +2792,16 @@
      "detailed": true
     },
     {
+     "id": "node/604859998",
+     "name": "Harry's New York Bar",
+     "lat": 50.10611,
+     "lon": 8.69562,
+     "address": "Walther-von-Cronberg-Platz 1",
+     "website": "https://www.lindner.de/harrys-new-york-bar.html",
+     "openingHours": "PH,Mo-Su 18:00-03:00",
+     "detailed": true
+    },
+    {
      "id": "node/5071289401",
      "name": "Hunky Dory Bar",
      "lat": 50.10387,
@@ -2856,15 +2818,6 @@
      "lon": 8.68255,
      "website": "https://www.huq-up.de/",
      "openingHours": "Mo-We 14:00-02:00; Th-Sa 14:00-04:00; Su 14:00-02:00",
-     "detailed": true
-    },
-    {
-     "id": "node/603128477",
-     "name": "Kaibo 75 Wein Bier Häppchen",
-     "lat": 50.123,
-     "lon": 8.67772,
-     "openingHours": "Mo-Fr 17:00-23:00",
-     "cuisine": "spanish, tapas",
      "detailed": true
     }
    ]
@@ -2899,7 +2852,7 @@
      "lon": 8.68221,
      "address": "Zeil 85-93",
      "website": "https://www.gibson-club.de/",
-     "openingHours": "Th 21:00-04:00,Fr 23:00-05:00,Sa 23:00-05:00, PH -1 day 23:00-05:00, Mo-Fr 10:00-17:00 \"office\"",
+     "openingHours": "Th 21:00-4:00,Fr 23:00-05:00,Sa 23:00-5:00,PH -1 day 23:00-5:00, Mo-Fr 10:00-17:00 \"office\"",
      "wikidataId": "Q98057069",
      "detailed": true,
      "photo": {
@@ -2927,16 +2880,6 @@
      "description": "jazz club"
     },
     {
-     "id": "node/4045825089",
-     "name": "Nachtleben (Club)",
-     "lat": 50.11408,
-     "lon": 8.68751,
-     "address": "Kurt-Schumacher-Straße 45",
-     "website": "https://batschkapp.tickets.de/de/customer/blogs/index/2-Nachtleben_Partys",
-     "openingHours": "Mo-Th 11:00-01:00, Fr,Sa 11:00-04:00, Su,PH 19:00-01:00",
-     "detailed": true
-    },
-    {
      "id": "node/3051044140",
      "name": "PRACHT",
      "lat": 50.10952,
@@ -2957,21 +2900,19 @@
      "detailed": true
     },
     {
-     "id": "node/11333700969",
-     "name": "TOKONOMA",
-     "lat": 50.10866,
-     "lon": 8.67073,
-     "address": "Gutleutstraße 320",
-     "website": "https://www.tokonoma.club/",
-     "openingHours": "Th-Fr 23:00-06:00",
-     "detailed": true
-    },
-    {
      "id": "node/5725284122",
      "name": "Mantis Roofgarden",
      "lat": 50.11296,
      "lon": 8.67943,
      "website": "http://www.mantis-ffm.de/"
+    },
+    {
+     "id": "node/4045825089",
+     "name": "Nachtleben (Club)",
+     "lat": 50.11408,
+     "lon": 8.68751,
+     "address": "Kurt-Schumacher-Straße 45",
+     "website": "https://batschkapp.tickets.de/de/customer/blogs/index/2-Nachtleben_Partys"
     },
     {
      "id": "node/4557966289",
@@ -3003,6 +2944,14 @@
      "lon": 8.69125,
      "address": "Heiligkreuzgasse 22",
      "website": "https://www.silbergold-club.de/"
+    },
+    {
+     "id": "node/11333700969",
+     "name": "TOKONOMA",
+     "lat": 50.10866,
+     "lon": 8.67073,
+     "address": "Kaiserstraße 39",
+     "openingHours": "Th-Fr 23:00-06:00"
     },
     {
      "id": "node/5430554423",

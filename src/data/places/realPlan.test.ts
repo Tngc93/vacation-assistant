@@ -3,7 +3,9 @@ import { findDestination } from "@/data/destinations";
 import { DAYTIME_CATEGORIES } from "@/lib/itinerary/config";
 import { buildItinerary, chooseMustSees, farAreas, type ItineraryInput, type PlanPlace } from "@/lib/itinerary/plan";
 import type { CategoryId } from "@/lib/places/categories";
+import type { PlacesFile } from "@/lib/places/file";
 import { loadPlacesFile } from "@/lib/places/load";
+import { isLatin } from "@/lib/places/names";
 import { sameNameOnce } from "@/lib/places/twins";
 
 /**
@@ -143,8 +145,8 @@ describe("places inside another place on real data (containment.ts)", () => {
     const stops = await stopsIn("MOW");
     const kremlin = stops.find((s) => s.id === "relation/1360641")!;
     const inside = (kremlin.inside ?? []).map((c) => c.name);
-    expect(inside).toEqual(expect.arrayContaining(["Çar Topu", "Царь-колокол"]));
-    expect(stops.some((s) => s.name === "Çar Topu" || s.name === "Царь-колокол")).toBe(false);
+    expect(inside).toEqual(expect.arrayContaining(["Çar Topu", "Çar Çanı"]));
+    expect(stops.some((s) => s.name === "Çar Topu" || s.name === "Çar Çanı")).toBe(false);
     expect(kremlin.durationMin).toBe(180);
   });
 
@@ -218,4 +220,38 @@ describe("far from the centre on real data (places/far.ts: beyond max(radius, 5 
       }
     },
   );
+});
+
+describe("readable names on real data (places/names.ts)", () => {
+  const shownIn = async (code: string) =>
+    Object.values((await loadPlacesFile(code))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+  const byQid = async (code: string, qid: string) => (await shownIn(code)).find((p) => p.wikidataId === qid);
+
+  it("names Tokyo's and Moscow's best-known places in Turkish or English, with the local name second", async () => {
+    expect(await byQid("TYO", "Q183536")).toMatchObject({ name: "Tokyo Kulesi", localName: "東京タワー" });
+    expect(await byQid("TYO", "Q57965")).toMatchObject({ name: "Tokyo Skytree", localName: "東京スカイツリー" });
+    expect(await byQid("TYO", "Q500681")).toMatchObject({ name: "Tokyo İmparatorluk Sarayı", localName: "皇居" });
+    expect(await byQid("TYO", "Q615183")).toMatchObject({ name: "Sensō-ji" });
+    // Wikidata's Turkish label for the Moscow Kremlin reads "Kremlini" (2026-10-27).
+    const kremlin = await byQid("MOW", "Q133274");
+    expect(kremlin?.name).toMatch(/Kremlin/);
+    expect(isLatin(kremlin!.name)).toBe(true);
+    expect(kremlin?.localName).toBe("Московский Кремль");
+    expect((await byQid("MOW", "Q147875"))?.parentName).toBe(kremlin?.name);
+  });
+
+  it("never shows a name in another script first when the stored data has a Latin one", async () => {
+    for (const code of ["TYO", "MOW", "SEL", "ATH", "LED", "TBS"]) {
+      const stored = ((await import(`./${code}.json`)) as { default: PlacesFile }).default;
+      const shown = new Map((await shownIn(code)).map((p) => [p.id, p]));
+      const raw = Object.values(stored.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+      for (const p of raw.filter((r) => shown.has(r.id) && !isLatin(r.name))) {
+        // A wrong link (rules.ts) loses its item's labels.
+        const labels = shown.get(p.id)!.wikidataId ? [p.labels?.tr, p.labels?.en] : [];
+        const alternatives = [...labels, p.osmNames?.en, p.osmNames?.latin, p.osmNames?.int];
+        const latin = alternatives.some((n) => n && isLatin(n));
+        expect(isLatin(shown.get(p.id)!.name), `${code} ${p.name}`).toBe(latin);
+      }
+    }
+  });
 });

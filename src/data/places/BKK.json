@@ -1,7 +1,7 @@
 {
  "version": 5,
  "cityCode": "BKK",
- "fetchedAt": "2026-10-23T14:36:06.470Z",
+ "fetchedAt": "2026-10-27T19:50:47.034Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -100,6 +100,13 @@
     {
      "id": "way/23481741",
      "name": "วัดอรุณ",
+     "osmNames": {
+      "en": "Wat Arun"
+     },
+     "labels": {
+      "tr": "Wat Arun",
+      "en": "Wat Arun"
+     },
      "lat": 13.74382,
      "lon": 100.48849,
      "address": "Thanon Wang Doem 158",
@@ -172,6 +179,12 @@
     {
      "id": "way/31987718",
      "name": "วัดเบญจมบพิตรดุสิตวนารามราชวรวิหาร",
+     "osmNames": {
+      "en": "Wat Benchamabophit Dusit Wanaram Ratchaworawihan"
+     },
+     "labels": {
+      "en": "Wat Benchamabophit"
+     },
      "lat": 13.76612,
      "lon": 100.51371,
      "address": "ถนนพระรามที่ 5 69",
@@ -283,6 +296,12 @@
     {
      "id": "node/1872413363",
      "name": "สะพานพระราม 8",
+     "osmNames": {
+      "en": "Rama VIII Bridge"
+     },
+     "labels": {
+      "en": "Rama VIII Bridge"
+     },
      "lat": 13.76965,
      "lon": 100.49586,
      "wikipediaCount": 19,
@@ -327,6 +346,12 @@
     {
      "id": "relation/12822616",
      "name": "พระราชวังดุสิต",
+     "osmNames": {
+      "en": "Dusit Palace"
+     },
+     "labels": {
+      "en": "Dusit Palace"
+     },
      "lat": 13.77264,
      "lon": 100.51188,
      "wikipediaCount": 18,
@@ -398,6 +423,13 @@
     {
      "id": "way/31987914",
      "name": "พระที่นั่งวิมานเมฆ",
+     "osmNames": {
+      "en": "Vimanmek Mansion",
+      "latin": "Phra Thi Nang Wimanmek"
+     },
+     "labels": {
+      "en": "Vimanmek Mansion"
+     },
      "lat": 13.77422,
      "lon": 100.51241,
      "wikipediaCount": 17,
@@ -490,6 +522,29 @@
      "description": "principal Roman Catholic church of Thailand"
     },
     {
+     "id": "wikidata/Q2057014",
+     "name": "Patpong Road",
+     "lat": 13.72833,
+     "lon": 100.53333,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2057014",
+     "kinds": [
+      "road",
+      "street"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_%282026_Jul%29_-_IMG_02.jpg/500px-Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_%282026_Jul%29_-_IMG_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_(2026_Jul)_-_IMG_02.jpg",
+      "fullWidth": 5712
+     },
+     "description": "street in Bangkok, Thailand"
+    },
+    {
      "id": "wikidata/Q1972305",
      "name": "Sukhumvit Road",
      "lat": 13.74278,
@@ -513,31 +568,14 @@
      "description": "major road in Thailand"
     },
     {
-     "id": "wikidata/Q2057014",
-     "name": "Thanon Patpong",
-     "lat": 13.72833,
-     "lon": 100.53333,
-     "wikipediaCount": 15,
-     "wikidataId": "Q2057014",
-     "kinds": [
-      "road",
-      "street"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_%282026_Jul%29_-_IMG_02.jpg/500px-Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_%282026_Jul%29_-_IMG_02.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Chainwit.",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bangkok-Bang_Rak_-_Patpong_during_midday_%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%A8%E0%B9%8C_%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99_(2026_Jul)_-_IMG_02.jpg",
-      "fullWidth": 5712
-     },
-     "description": "street in Bangkok, Thailand"
-    },
-    {
      "id": "way/462532630",
      "name": "ถนนเยาวราช",
+     "osmNames": {
+      "en": "Yaowarat Road"
+     },
+     "labels": {
+      "en": "Yaowarat Road"
+     },
      "lat": 13.73869,
      "lon": 100.51225,
      "wikipediaCount": 15,
@@ -561,6 +599,13 @@
     {
      "id": "way/23630366",
      "name": "พระตำหนักจิตรลดารโหฐาน",
+     "osmNames": {
+      "en": "Chitralada Royal Villa",
+      "latin": "Phra Tamnak Chitlada Rahothan"
+     },
+     "labels": {
+      "en": "Chitralada Royal Villa"
+     },
      "lat": 13.76833,
      "lon": 100.52061,
      "wikipediaCount": 15,
@@ -583,6 +628,12 @@
     {
      "id": "way/158185227",
      "name": "อนุสาวรีย์ชัยสมรภูมิ",
+     "osmNames": {
+      "en": "Victory Monument"
+     },
+     "labels": {
+      "en": "Victory Monument"
+     },
      "lat": 13.76493,
      "lon": 100.53829,
      "wikipediaCount": 15,
@@ -919,6 +970,12 @@
     {
      "id": "way/138947464",
      "name": "วัดราชบพิธสถิตมหาสีมารามราชวรวิหาร",
+     "osmNames": {
+      "en": "Wat Ratchabophit Sathit Maha Simaram Ratchaworawihan"
+     },
+     "labels": {
+      "en": "Wat Ratchabophit"
+     },
      "lat": 13.74906,
      "lon": 100.49718,
      "openingHours": "Mo-Su 06:00-18:00",
@@ -1011,6 +1068,13 @@
     {
      "id": "way/31987148",
      "name": "พระที่นั่งอนันตสมาคม",
+     "osmNames": {
+      "en": "Ananta Samakhom Throne Hall",
+      "latin": "Phra Thinang Anantasamakhom"
+     },
+     "labels": {
+      "en": "Ananta Samakhom Throne Hall"
+     },
      "lat": 13.77171,
      "lon": 100.5131,
      "wikipediaCount": 11,
@@ -1059,6 +1123,12 @@
     {
      "id": "way/1410385850",
      "name": "วังสวนผักกาด",
+     "osmNames": {
+      "en": "Suan Pakkad Palace"
+     },
+     "labels": {
+      "en": "Suan Pakkad Palace"
+     },
      "lat": 13.75683,
      "lon": 100.5371,
      "website": "http://www.suanpakkad.com/",
@@ -1115,6 +1185,12 @@
     {
      "id": "way/48966995",
      "name": "หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร",
+     "osmNames": {
+      "en": "Bangkok Art and Culture Centre"
+     },
+     "labels": {
+      "en": "Bangkok Art and Culture Centre"
+     },
      "lat": 13.74675,
      "lon": 100.53027,
      "address": "ถนนพระราม 1 939",
@@ -1142,6 +1218,12 @@
     {
      "id": "relation/20710624",
      "name": "พิพิธภัณฑสถานแห่งชาติ หอศิลป",
+     "osmNames": {
+      "en": "The National Gallery"
+     },
+     "labels": {
+      "en": "National Art Gallery"
+     },
      "lat": 13.75918,
      "lon": 100.49407,
      "address": "พระนคร",
@@ -1166,6 +1248,12 @@
     {
      "id": "way/341577338",
      "name": "พิพิธภัณฑ์บ้านจิม ทอมป์สัน",
+     "osmNames": {
+      "en": "Jim Thompson House"
+     },
+     "labels": {
+      "en": "Jim Thompson House"
+     },
      "lat": 13.74922,
      "lon": 100.52828,
      "address": "Soi Kasemsan 2, Rama 1 Road 6",
@@ -1192,6 +1280,12 @@
     {
      "id": "way/230891857",
      "name": "สวนผักกาด",
+     "osmNames": {
+      "en": "Wang Suan Phakkat"
+     },
+     "labels": {
+      "en": "Suan Pakkad Palace"
+     },
      "lat": 13.75668,
      "lon": 100.53718,
      "website": "http://www.suanpakkad.com/",
@@ -1244,6 +1338,12 @@
     {
      "id": "node/3542061032",
      "name": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
+     "osmNames": {
+      "en": "Bank of Thailand Museum"
+     },
+     "labels": {
+      "en": "Bank of Thailand Museum"
+     },
      "lat": 13.76828,
      "lon": 100.49954,
      "website": "https://www.botlc.or.th/museum",
@@ -1293,6 +1393,12 @@
     {
      "id": "way/863463383",
      "name": "พระราชวังพญาไท",
+     "osmNames": {
+      "en": "Phaya Thai Palace"
+     },
+     "labels": {
+      "en": "Phaya Thai Palace"
+     },
      "lat": 13.76882,
      "lon": 100.533,
      "wikipediaCount": 5,
@@ -1316,6 +1422,12 @@
     {
      "id": "way/205637198",
      "name": "หอศิลป์สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ",
+     "osmNames": {
+      "en": "The Queen's Gallery"
+     },
+     "labels": {
+      "en": "Queen Sirikit Gallery"
+     },
      "lat": 13.75655,
      "lon": 100.50513,
      "address": "พระนคร",
@@ -1330,6 +1442,12 @@
     {
      "id": "way/82542417",
      "name": "พิพิธภัณฑ์ผ้าในสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ",
+     "osmNames": {
+      "en": "Queen Sirikit Museum of Textiles"
+     },
+     "labels": {
+      "en": "Queen Sirikit Museum of Textiles"
+     },
      "lat": 13.75203,
      "lon": 100.49072,
      "address": "พระนคร",
@@ -1356,6 +1474,12 @@
     {
      "id": "way/202235947",
      "name": "พิพิธภัณฑสถานแห่งชาติ เรือพระราชพิธี",
+     "osmNames": {
+      "en": "National Museum of Royal Barges"
+     },
+     "labels": {
+      "en": "National Museum of Royal Barges"
+     },
      "lat": 13.76197,
      "lon": 100.48457,
      "wikipediaCount": 4,
@@ -1379,6 +1503,12 @@
     {
      "id": "way/210306786",
      "name": "พิพิธภัณฑ์ชาวบางกอก",
+     "osmNames": {
+      "en": "Bangkokian Museum"
+     },
+     "labels": {
+      "en": "Bangkok Folk Museum"
+     },
      "lat": 13.72811,
      "lon": 100.51811,
      "openingHours": "Tu-Su,PH 09:00-16:00; Mo closed",
@@ -1403,6 +1533,12 @@
     {
      "id": "node/3096836185",
      "name": "พิพิธภัณฑ์ท้องถิ่นกรุงเทพมหานคร เขตสัมพันธวงศ์",
+     "osmNames": {
+      "en": "Samphanthawong Museum"
+     },
+     "labels": {
+      "en": "Samphanthawong Museum"
+     },
      "lat": 13.73672,
      "lon": 100.5111,
      "wikipediaCount": 3,
@@ -1416,6 +1552,12 @@
     {
      "id": "node/2411920280",
      "name": "พิพิธภัณฑ์เทคโนโลยีทางภาพ",
+     "osmNames": {
+      "en": "Museum of Imaging Technology"
+     },
+     "labels": {
+      "en": "Museum of Imagery Technology"
+     },
      "lat": 13.73712,
      "lon": 100.52985,
      "wikipediaCount": 3,
@@ -1439,6 +1581,12 @@
     {
      "id": "way/1467232352",
      "name": "พิพิธภัณฑ์บ้านกุฎีจีน",
+     "osmNames": {
+      "en": "Baan Kudichin Museum"
+     },
+     "labels": {
+      "en": "Baan Kudichin Museum"
+     },
      "lat": 13.73941,
      "lon": 100.49305,
      "wikipediaCount": 3,
@@ -1462,6 +1610,12 @@
     {
      "id": "way/229966092",
      "name": "พิพิธภัณฑ์พระบาทสมเด็จพระปกเกล้าเจ้าอยู่หัว",
+     "osmNames": {
+      "en": "King Prajadhipok Museum"
+     },
+     "labels": {
+      "en": "King Prajadhipok Museum"
+     },
      "lat": 13.75607,
      "lon": 100.50649,
      "address": "ป้อมปราบศัตรูพ่าย",
@@ -1486,6 +1640,12 @@
     {
      "id": "way/320273828",
      "name": "พิพิธภัณฑ์ศิริราชพิมุขสถาน",
+     "osmNames": {
+      "en": "Siriraj Bimuksthan Museum"
+     },
+     "labels": {
+      "en": "Thonburi Railway Station"
+     },
      "lat": 13.75976,
      "lon": 100.48679,
      "wikipediaCount": 3,
@@ -1509,6 +1669,12 @@
     {
      "id": "node/373098282",
      "name": "พิพิธภัณฑสถานธรรมชาติวิทยา",
+     "osmNames": {
+      "en": "Museum of Natural History"
+     },
+     "labels": {
+      "en": "Chulalongkorn University Museum of Natural History"
+     },
      "lat": 13.73748,
      "lon": 100.53008,
      "wikipediaCount": 3,
@@ -1522,6 +1688,12 @@
     {
      "id": "way/351091872",
      "name": "หอศิลป์มหาวิทยาลัยศิลปากร",
+     "osmNames": {
+      "en": "Silpakorn University Art Gallery"
+     },
+     "labels": {
+      "en": "Silpakorn University Art Gallery"
+     },
      "lat": 13.75292,
      "lon": 100.48997,
      "address": "พระนคร",
@@ -1546,6 +1718,12 @@
     {
      "id": "way/241865727",
      "name": "บ้าน ม.ร.ว.คึกฤทธิ์ ปราโมช",
+     "osmNames": {
+      "en": "M.R. Kukrit's Heritage Home"
+     },
+     "labels": {
+      "en": "M.R. Kukrit's House"
+     },
      "lat": 13.71984,
      "lon": 100.53369,
      "wikipediaCount": 2,
@@ -1570,6 +1748,12 @@
     {
      "id": "way/539017238",
      "name": "บ้านปาร์คนายเลิศ",
+     "osmNames": {
+      "en": "Nai Lert Park Heritage Home"
+     },
+     "labels": {
+      "en": "Nai Lert Park Heritage Home"
+     },
      "lat": 13.74626,
      "lon": 100.54718,
      "address": "ปทุมวัน",
@@ -1584,6 +1768,12 @@
     {
      "id": "node/2962489061",
      "name": "พิพิธภัณฑ์แรงงานไทย",
+     "osmNames": {
+      "en": "Thai Labour Museum"
+     },
+     "labels": {
+      "en": "Thai Labour Museum"
+     },
      "lat": 13.75304,
      "lon": 100.54976,
      "address": "Ratchathewi Road",
@@ -1597,6 +1787,12 @@
     {
      "id": "way/82078207",
      "name": "ศาลาเครื่องราชอิสริยยศ เครื่องราชอิสริยาภรณ์ และเหรียญกษาปณ์",
+     "osmNames": {
+      "en": "Pavilion of Regalia, Royal Decorations and Coins"
+     },
+     "labels": {
+      "en": "Pavilion of Regalia, Royal Decorations and Coins"
+     },
      "lat": 13.75101,
      "lon": 100.49173,
      "address": "พระนคร",
@@ -1623,6 +1819,12 @@
     {
      "id": "way/200670984",
      "name": "พิพิธภัณฑ์มหาวิทยาลัย",
+     "osmNames": {
+      "en": "Chulalongkorn University Museum"
+     },
+     "labels": {
+      "en": "Chulalongkorn University Museum"
+     },
      "lat": 13.7396,
      "lon": 100.53237,
      "address": "ปทุมวัน",
@@ -1648,6 +1850,9 @@
     {
      "id": "way/1466799252",
      "name": "พิพิธภัณฑ์สุนทรภู่",
+     "labels": {
+      "en": "Sunthorn Phu Museum"
+     },
      "lat": 13.75361,
      "lon": 100.50389,
      "wikipediaCount": 1,
@@ -1696,6 +1901,9 @@
     {
      "id": "node/10792898504",
      "name": "จอยแมน แกลลอรี่",
+     "osmNames": {
+      "en": "Joyman Gallery"
+     },
      "lat": 13.75179,
      "lon": 100.5046,
      "address": "ถนนมหาไชย 357-359",
@@ -1714,6 +1922,9 @@
     {
      "id": "way/1147659014",
      "name": "หอศิลป์บ้านจิมทอมป์สัน",
+     "osmNames": {
+      "en": "Jim Thompson Art Center"
+     },
      "lat": 13.74874,
      "lon": 100.52841,
      "address": "ปทุมวัน",
@@ -1723,6 +1934,9 @@
     {
      "id": "node/11063201970",
      "name": "โอเวอร์ ดิอินฟลูเอนซ์",
+     "osmNames": {
+      "en": "Over the Influence"
+     },
      "lat": 13.73717,
      "lon": 100.51269,
      "website": "https://overtheinfluence.com/",
@@ -1770,6 +1984,9 @@
     {
      "id": "node/14257969134",
      "name": "ท่าพิพิธภัณฑ์",
+     "osmNames": {
+      "en": "Museum Pier"
+     },
      "lat": 13.75275,
      "lon": 100.48919,
      "address": "ถนนมหาราช 166",
@@ -1797,18 +2014,27 @@
     {
      "id": "node/11806216522",
      "name": "จุดชมวิวท่าเตียน",
+     "osmNames": {
+      "en": "Tha Tien Viewpoint"
+     },
      "lat": 13.7458,
      "lon": 100.4903
     },
     {
      "id": "node/6232721188",
      "name": "จุดชมวิวท่าวัดโพธิ์",
+     "osmNames": {
+      "en": "Wat Arun Viewpoint (Wat Pho Pier)"
+     },
      "lat": 13.7445,
      "lon": 100.49124
     },
     {
      "id": "node/8797708205",
      "name": "ตึกใบหยก 2",
+     "osmNames": {
+      "en": "Baiyoke Tower II"
+     },
      "lat": 13.75456,
      "lon": 100.5404
     },
@@ -1969,6 +2195,9 @@
     {
      "id": "node/1868781115",
      "name": "ทิพย์สมัย",
+     "osmNames": {
+      "en": "Thip Samai"
+     },
      "lat": 13.75276,
      "lon": 100.50482,
      "website": "https://www.thipsamai.com/",
@@ -1979,6 +2208,9 @@
     {
      "id": "node/4489090890",
      "name": "ลิ้มเหล่าโหงว บิสโทร",
+     "osmNames": {
+      "en": "Lim-Lao-Ngow Bistro"
+     },
      "lat": 13.7448,
      "lon": 100.53386,
      "address": "สยามสแควร์ซอย 5",
@@ -1990,6 +2222,9 @@
     {
      "id": "node/4377059090",
      "name": "สมบูรณ์โภชนา",
+     "osmNames": {
+      "en": "Somboon Seafood"
+     },
      "lat": 13.72822,
      "lon": 100.52668,
      "address": "ถนนสุรวงศ์",
@@ -2001,6 +2236,9 @@
     {
      "id": "node/3251675167",
      "name": "เสวยโภชนา",
+     "osmNames": {
+      "en": "Savoey Restaurant"
+     },
      "lat": 13.74366,
      "lon": 100.54414,
      "address": "Ploenchit Rd 540",
@@ -2315,6 +2553,9 @@
     {
      "id": "node/5277054815",
      "name": "คาเฟ่ อเมซอน",
+     "osmNames": {
+      "en": "Café Amazon"
+     },
      "lat": 13.77029,
      "lon": 100.50452,
      "website": "http://www.cafe-amazon.com/",
@@ -2325,6 +2566,9 @@
     {
      "id": "node/8602550989",
      "name": "คาเฟ่ อเมซอน",
+     "osmNames": {
+      "en": "Café Amazon"
+     },
      "lat": 13.7779,
      "lon": 100.50996,
      "website": "https://www.cafe-amazon.com/",
@@ -2335,6 +2579,9 @@
     {
      "id": "node/4411212890",
      "name": "โซวเฮงไถ่",
+     "osmNames": {
+      "en": "So Heng Thai cafe"
+     },
      "lat": 13.73363,
      "lon": 100.51198,
      "website": "https://m.facebook.com/Sohengtai/",
@@ -2345,6 +2592,9 @@
     {
      "id": "node/1800295277",
      "name": "บีเคเค เบเกิล เบเกอรี่",
+     "osmNames": {
+      "en": "BKK Bagel Bakery"
+     },
      "lat": 13.74389,
      "lon": 100.54204,
      "website": "http://www.bkkbagels.com/",
@@ -2639,6 +2889,9 @@
     {
      "id": "node/6263926889",
      "name": "ร้าน มีไวน์ ช้อป",
+     "osmNames": {
+      "en": "Me wine shop"
+     },
      "lat": 13.72885,
      "lon": 100.53573,
      "address": "ถนนศาลาแดง 12",
@@ -2649,6 +2902,9 @@
     {
      "id": "node/5230304422",
      "name": "八號",
+     "osmNames": {
+      "en": "Ba Hao"
+     },
      "lat": 13.74025,
      "lon": 100.51406,
      "address": "ซอยนานา 8",
@@ -2807,6 +3063,9 @@
     {
      "id": "node/4783766643",
      "name": "เดอะซัน ตะวันคลับ",
+     "osmNames": {
+      "en": "The Sun Tawan Club"
+     },
      "lat": 13.72909,
      "lon": 100.53003,
      "address": "ซอยทานตะวัน 7/4"
