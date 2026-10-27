@@ -17,9 +17,9 @@ export function farFromCentreKm(place: Point, centre: Point, radiusKm: number): 
   return km > Math.max(radiusKm, FAR_MIN_KM) ? km : null;
 }
 
-/** "MERKEZE UZAK · ~5 KM": the same caption on the carousel card, the place details and the plan's stop. */
+/** "MERKEZE ~5 KM": the same caption on the carousel card, the place details and the plan's stop. */
 export function farCaption(km: number): string {
-  return `MERKEZE UZAK · ~${Math.max(1, Math.round(km))} KM`;
+  return `MERKEZE ~${Math.max(1, Math.round(km))} KM`;
 }
 
 /** Shown where the plan's walking rule (travel.ts) says it is too far to walk. */

@@ -9,10 +9,10 @@ describe("PlaceCard", () => {
     const { rerender } = render(
       <PlaceCard {...props} place={{ id: "wikidata/Q180901", name: "Atomium", lat: 50.895, lon: 4.34139, wikipediaCount: 52, farKm: 5.4 }} />,
     );
-    expect(screen.getByText("MERKEZE UZAK · ~5 KM")).toBeInTheDocument();
+    expect(screen.getByText("MERKEZE ~5 KM")).toBeInTheDocument();
     expect(screen.getByText("TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR")).toBeInTheDocument();
     rerender(<PlaceCard {...props} place={{ id: "node/1", name: "Grand-Place", lat: 50.8467, lon: 4.3525 }} />);
-    expect(screen.queryByText(/MERKEZE UZAK/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/MERKEZE ~/)).not.toBeInTheDocument();
     expect(screen.queryByText("TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR")).not.toBeInTheDocument();
   });
 });

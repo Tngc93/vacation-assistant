@@ -93,7 +93,7 @@ export type PlanStop = {
   travel: Travel | null;
   /** Seen from outside only on this day; `note` says why or what to see. */
   exterior: { note: string | null } | null;
-  /** Far from the centre (places/far.ts): "MERKEZE UZAK · ~5 KM". Null when it is not; never set on a sub-stop. */
+  /** Far from the centre (places/far.ts): "MERKEZE ~5 KM". Null when it is not; never set on a sub-stop. */
   farKm: number | null;
   /** OpenStreetMap, or Wikidata for a must-see place OSM does not have. */
   sourceUrl: string;

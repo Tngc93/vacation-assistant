@@ -16,7 +16,7 @@ const CAPTION = farCaption(FAR.farKm);
 
 describe("the far-from-centre caption", () => {
   it("is the same text on the carousel card, in the place details and on the plan's stop", () => {
-    expect(CAPTION).toBe("MERKEZE UZAK · ~5 KM");
+    expect(CAPTION).toBe("MERKEZE ~5 KM");
     const noop = () => {};
     const { unmount } = render(
       <PlacesCarousel
@@ -52,7 +52,7 @@ describe("the far-from-centre caption", () => {
     render(<ItineraryView input={input} initialSkip={[]} cityName="Barselona" center={CENTRE} />);
     const sub = screen.getByText("Pavilion").closest("li")!;
     expect(sub).toHaveTextContent("ATOMİUM İÇİNDE");
-    expect(sub).not.toHaveTextContent("MERKEZE UZAK");
+    expect(sub).not.toHaveTextContent("MERKEZE ~");
     // The parent's block holds the sub-stop, and the caption appears once in it.
     expect(screen.getAllByText(CAPTION)).toHaveLength(1);
   });

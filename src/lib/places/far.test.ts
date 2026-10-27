@@ -37,10 +37,10 @@ describe("farFromCentreKm: beyond the larger of the city's data radius and 5 km"
     expect(farFromCentreKm(place, CENTRE, km - 0.01)).toBeCloseTo(km, 9);
   });
 
-  it("reads 'MERKEZE UZAK · ~X KM' in whole kilometres", () => {
-    expect(farCaption(5.42)).toBe("MERKEZE UZAK · ~5 KM");
-    expect(farCaption(5.9)).toBe("MERKEZE UZAK · ~6 KM");
-    expect(farCaption(0.4)).toBe("MERKEZE UZAK · ~1 KM");
+  it("reads 'MERKEZE ~X KM' in whole kilometres (neutral, no UZAK)", () => {
+    expect(farCaption(5.42)).toBe("MERKEZE ~5 KM");
+    expect(farCaption(5.9)).toBe("MERKEZE ~6 KM");
+    expect(farCaption(0.4)).toBe("MERKEZE ~1 KM");
   });
 
   it("suggests transport from the centre by the plan's walking rule (travel.ts)", () => {

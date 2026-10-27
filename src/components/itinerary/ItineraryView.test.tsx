@@ -151,7 +151,7 @@ describe("ItineraryView", () => {
     const atomium = { ...SIGHTS[0], name: "Atomium", lat: 41.39, lon: 2.23, wikipediaCount: 52, farKm: 5 };
     render(<ItineraryView input={{ ...input, daytime: [...SIGHTS.slice(1), atomium] }} initialSkip={[]} cityName="Brüksel" center={{ lat: 41.39, lon: 2.17 }} />);
     const stop = screen.getByText("Atomium").closest("li")!;
-    expect(within(stop).getByText("MERKEZE UZAK · ~5 KM")).toHaveClass("text-sea");
+    expect(within(stop).getByText("MERKEZE ~5 KM")).toHaveClass("text-sea");
     expect(stop).toHaveTextContent("TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR");
   });
 
