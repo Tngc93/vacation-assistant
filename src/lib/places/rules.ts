@@ -4,6 +4,7 @@ import { CATEGORIES, type CategoryId } from "./categories";
 import { farFromCentreKm } from "./far";
 import type { PlacesFile, StoredPlace } from "./file";
 import { FAR_FROM_ITEM_TAG, HERITAGE_TAG, NO_COORDINATE_TAG, UNESCO_TAG, type KindTag } from "./kinds";
+import { isLatin, readableName } from "./names";
 import { categoryCap, compareRanked } from "./rank";
 
 /**
@@ -124,8 +125,11 @@ export function isWalkThrough(place: RulePlace): boolean {
   return hasAny(place, WALK) && !hasAny(place, WALK_EXEMPT);
 }
 
-/** A place as the guide and the plan see it: no raw kinds, a walk-through flag instead. */
-export type ShownPlace = Omit<StoredPlace, "kinds"> & {
+/**
+ * A place as the guide and the plan see it: no raw kinds, a walk-through flag instead; a name in the Latin script
+ * when there is one (names.ts), the stored name in another script then the local name.
+ */
+export type ShownPlace = Omit<StoredPlace, "kinds" | "labels" | "osmNames"> & {
   walkThrough?: true;
   /** Visit length set by an override (place-overrides.ts). */
   visitMin?: number;
@@ -144,8 +148,9 @@ export type ShownCategory =
   | Extract<PlacesFile["categories"][CategoryId], { status: "missing" }>;
 export type ShownPlacesFile = Omit<PlacesFile, "categories"> & { categories: Record<CategoryId, ShownCategory> };
 
-function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | null): ShownPlace {
-  const { kinds: _kinds, ...rest } = place;
+function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | null, nameOf: ReadonlyMap<string, string>): ShownPlace {
+  const { kinds: _kinds, labels: _labels, osmNames: _osmNames, name: _name, localName: _localName, ...rest } = place;
+  const parentName = place.parentId && place.parentName && !isLatin(place.parentName) ? nameOf.get(place.parentId) : undefined;
   const qid = place.wikidataId;
   const included = qid ? overrides.include?.find((o) => o.qid === qid) : undefined;
   const visitMin = [included, ...[overrides.open, overrides.visit].map((list) => (qid ? list?.find((o) => o.qid === qid) : undefined))].find(
@@ -154,7 +159,9 @@ function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | n
   const exterior = qid ? overrides.exteriorOnly?.find((o) => o.qid === qid) : undefined;
   const open = Boolean(qid && overrides.open?.some((o) => o.qid === qid));
   return {
+    ...readableName(place),
     ...rest,
+    ...(parentName ? { parentName } : {}),
     ...(isWalkThrough(place) ? { walkThrough: true } : {}),
     ...(visitMin ? { visitMin } : {}),
     ...(farKm !== null ? { farKm: Math.round(farKm * 10) / 10 } : {}),
@@ -174,7 +181,7 @@ function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | n
 
 /** Drops the item a wrong link points at: its Wikipedia count, id and kinds belong to something else. */
 function unlinked(place: StoredPlace): StoredPlace {
-  const { wikidataId: _qid, wikipediaCount: _count, kinds: _kinds, ...rest } = place;
+  const { wikidataId: _qid, wikipediaCount: _count, kinds: _kinds, labels: _labels, ...rest } = place;
   return rest;
 }
 
@@ -221,10 +228,16 @@ export function applyPlaceRules(
     kept[id] = places.slice(0, categoryCap(id));
   }
   const far = farOf(Object.values(kept).flat(), centre, file.radiusKm);
+  // A parent's name as shown, for a stored parentName in another script.
+  const nameOf = new Map(
+    Object.values(kept)
+      .flat()
+      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, readableName(p).name] as const] : [])),
+  );
   const categories = {} as Record<CategoryId, ShownCategory>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
     const places = kept[id];
-    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null)) } : entry;
+    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf)) } : entry;
   }
   return { ...file, categories };
 }

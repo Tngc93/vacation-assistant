@@ -28,6 +28,10 @@ export const storedPlaceSchema = z.object({
   id: z.string().regex(/^((node|way|relation)\/\d+|wikidata\/Q[1-9]\d*)$/),
   name: z.string().min(1),
   localName: z.string().min(1).optional(),
+  /** OSM name:en, name:latin (or name:xx-Latn) and int_name, only when `name` is not in the Latin script (names.ts). */
+  osmNames: z.object({ en: z.string().min(1).optional(), latin: z.string().min(1).optional(), int: z.string().min(1).optional() }).optional(),
+  /** The item's Wikidata Turkish and English labels, only when `name` is not in the Latin script (names.ts). */
+  labels: z.object({ tr: z.string().min(1).optional(), en: z.string().min(1).optional() }).optional(),
   lat: coordinate(-90, 90),
   lon: coordinate(-180, 180),
   address: z.string().min(1).optional(),
