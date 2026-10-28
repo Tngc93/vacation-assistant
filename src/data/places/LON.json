@@ -1,7 +1,7 @@
 {
  "version": 5,
  "cityCode": "LON",
- "fetchedAt": "2026-10-23T11:52:55.509Z",
+ "fetchedAt": "2026-10-28T14:36:04.873Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -2921,17 +2921,6 @@
      "detailed": true
     },
     {
-     "id": "node/3306596294",
-     "name": "Blank Street Coffee",
-     "lat": 51.51061,
-     "lon": -0.08541,
-     "address": "Eastcheap 2A",
-     "website": "https://www.blankstreet.com/en-GB/locations/london/LB9VF0QD2PKPT-monument",
-     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 07:30-18:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
      "id": "node/666475916",
      "name": "Cafe Below",
      "lat": 51.51387,
@@ -3215,6 +3204,17 @@
      "openingHours": "Mo-Fr 08:00-15:00, Sa-Su 09:00-16:00",
      "cuisine": "coffee shop, sandwich, pastry",
      "detailed": true
+    },
+    {
+     "id": "node/2466428731",
+     "name": "Nero Express",
+     "lat": 51.49522,
+     "lon": -0.14424,
+     "address": "Victoria Place",
+     "website": "https://www.caffenero.com/uk/stores/victoria-central",
+     "openingHours": "Mo-We 05:30-23:00; Th-Fr 05:30-24:00; Sa 05:30-00:30; Su 05:30-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
     }
    ]
   },
@@ -3222,6 +3222,48 @@
    "status": "ok",
    "wikipediaCountsAvailable": true,
    "places": [
+    {
+     "id": "way/163827695",
+     "name": "Callooh Callay",
+     "lat": 51.5263,
+     "lon": -0.07988,
+     "address": "Rivington Street 65",
+     "website": "https://www.calloohcallaybar.com/",
+     "openingHours": "Mo-Th 18:00-24:00; Fr-Su 00:00-01:00,18:00-24:00",
+     "wikidataId": "Q5022877",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Callooh_Callay_Bar.jpg/500px-Callooh_Callay_Bar.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Callooh_Callay_Bar.jpg",
+      "fullWidth": 6000
+     },
+     "description": "cocktail bar in Shoreditch, London"
+    },
+    {
+     "id": "node/3898185143",
+     "name": "Cellar Door",
+     "lat": 51.51143,
+     "lon": -0.11942,
+     "address": "Aldwych 0",
+     "website": "http://www.cellardoor.biz/",
+     "wikidataId": "Q135068919",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Cellar_Door%2C_Covent_Garden%2C_WC2.jpg/500px-Cellar_Door%2C_Covent_Garden%2C_WC2.jpg",
+      "width": 500,
+      "height": 749,
+      "author": "Ewan Munro",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cellar_Door,_Covent_Garden,_WC2.jpg",
+      "fullWidth": 2520
+     },
+     "description": "subterranean cocktail bar in London, England, United Kingdom"
+    },
     {
      "id": "way/279088481",
      "name": "Simmons",
@@ -3243,40 +3285,24 @@
      "description": "pub in London, UK"
     },
     {
-     "id": "wikidata/Q5022877",
-     "name": "Callooh Callay Bar",
-     "lat": 51.52628,
-     "lon": -0.0799,
-     "wikidataId": "Q5022877",
+     "id": "way/279007871",
+     "name": "The Lower Third",
+     "lat": 51.51555,
+     "lon": -0.1292,
+     "address": "Denmark Street 26",
+     "website": "https://thelowerthird.co.uk/",
+     "wikidataId": "Q4548683",
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Callooh_Callay_Bar.jpg/500px-Callooh_Callay_Bar.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/12_Bar_Club.JPG/500px-12_Bar_Club.JPG",
       "width": 500,
-      "height": 281,
-      "author": "Jwslubbock",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Callooh_Callay_Bar.jpg",
-      "fullWidth": 6000
+      "height": 375,
+      "author": "The original uploader was Jpbowen at English Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:12_Bar_Club.JPG",
+      "fullWidth": 2592
      },
-     "description": "cocktail bar in Shoreditch, London"
-    },
-    {
-     "id": "wikidata/Q135068919",
-     "name": "CellarDoor",
-     "lat": 51.51143,
-     "lon": -0.11942,
-     "wikidataId": "Q135068919",
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Cellar_Door%2C_Covent_Garden%2C_WC2.jpg/500px-Cellar_Door%2C_Covent_Garden%2C_WC2.jpg",
-      "width": 500,
-      "height": 749,
-      "author": "Ewan Munro",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cellar_Door,_Covent_Garden,_WC2.jpg",
-      "fullWidth": 2520
-     },
-     "description": "subterranean cocktail bar in London, England, United Kingdom"
+     "description": "music venue in London"
     },
     {
      "id": "wikidata/Q6857969",
@@ -3287,10 +3313,10 @@
      "description": "London cocktail bar"
     },
     {
-     "id": "wikidata/Q137399838",
+     "id": "node/13970985701",
      "name": "Wagtail",
-     "lat": 51.51114,
-     "lon": -0.08646,
+     "lat": 51.51099,
+     "lon": -0.08635,
      "wikidataId": "Q137399838",
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Wagtail_%281%29.jpg/500px-Wagtail_%281%29.jpg",
@@ -3522,38 +3548,6 @@
      "lon": -0.07815,
      "address": "Widegate Street 20-21",
      "website": "https://www.simmonsbar.co.uk/venues/liverpool-street/"
-    },
-    {
-     "id": "node/1895129841",
-     "name": "Simmons Bar",
-     "lat": 51.512,
-     "lon": -0.13686,
-     "address": "Golden Square 4",
-     "website": "https://www.graphicbar.com/"
-    },
-    {
-     "id": "node/4699715433",
-     "name": "Simmons Bars",
-     "lat": 51.51279,
-     "lon": -0.11354,
-     "address": "Milford Lane 1",
-     "website": "https://www.simmonsbar.co.uk/venues/temple/"
-    },
-    {
-     "id": "node/12507179080",
-     "name": "Simmons Bars",
-     "lat": 51.51028,
-     "lon": -0.12916,
-     "address": "Leicester Square 28a",
-     "website": "https://www.simmonsbar.co.uk/venues/leicester-square/"
-    },
-    {
-     "id": "node/1684709914",
-     "name": "Slug & Lettuce",
-     "lat": 51.51632,
-     "lon": -0.09402,
-     "address": "Love Lane 2",
-     "website": "https://www.slugandlettuce.co.uk/st-pauls-london"
     }
    ]
   },

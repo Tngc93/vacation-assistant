@@ -1,7 +1,7 @@
 {
  "version": 5,
  "cityCode": "PRG",
- "fetchedAt": "2026-10-23T12:51:31.252Z",
+ "fetchedAt": "2026-10-28T14:12:59.204Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -43,11 +43,12 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "way/1568419131",
-     "name": "Pražský hrad",
-     "lat": 50.09081,
-     "lon": 14.40165,
-     "website": "https://www.hrad.cz/",
+     "id": "node/6815500185",
+     "name": "Pražský Hrad",
+     "lat": 50.09124,
+     "lon": 14.40377,
+     "website": "http://www.prazskyhrad.cz/",
+     "openingHours": "Mo-Su 06:00-21:00",
      "wikipediaCount": 65,
      "wikidataId": "Q193369",
      "kinds": [
@@ -83,7 +84,7 @@
      "description": "bridge in Prague, Czech Republic"
     },
     {
-     "id": "way/1568419039",
+     "id": "relation/15317899",
      "name": "Katedrála svatého Víta, Václava a Vojtěcha",
      "lat": 50.09086,
      "lon": 14.40055,
@@ -455,6 +456,30 @@
      "description": "Prag'ın Malá Strana adlı küçük kasabasında bulunan Barok mimarisiyle yapılmış bir kilise"
     },
     {
+     "id": "wikidata/Q956163",
+     "name": "Aziz Kiril ve Methodios Katedrali",
+     "localName": "Ss. Cyril and Methodius Cathedral",
+     "lat": 50.0759,
+     "lon": 14.417,
+     "wikipediaCount": 25,
+     "wikidataId": "Q956163",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg/500px-Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
+      "width": 500,
+      "height": 404,
+      "author": "Ludek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
+      "fullWidth": 2292
+     },
+     "description": "church in Prague"
+    },
+    {
      "id": "wikidata/Q1353687",
      "name": "Great Strahov Stadium",
      "lat": 50.08034,
@@ -491,30 +516,6 @@
       "fullWidth": 3872
      },
      "description": "Prag'da etkinlik merkezi"
-    },
-    {
-     "id": "wikidata/Q956163",
-     "name": "Aziz Kiril ve Methodios Katedrali",
-     "localName": "Ss. Cyril and Methodius Cathedral",
-     "lat": 50.0759,
-     "lon": 14.417,
-     "wikipediaCount": 24,
-     "wikidataId": "Q956163",
-     "kinds": [
-      "heritage",
-      "religious"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg/500px-Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
-      "width": 500,
-      "height": 404,
-      "author": "Ludek",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
-      "fullWidth": 2292
-     },
-     "description": "church in Prague"
     },
     {
      "id": "wikidata/Q521155",
@@ -565,6 +566,30 @@
       "fullWidth": 3072
      },
      "description": "Prag'da saray"
+    },
+    {
+     "id": "wikidata/Q2916171",
+     "name": "Aziz Peter ve Aziz Paul Bazilikası",
+     "localName": "Basilica of St Peter and St Paul",
+     "lat": 50.06438,
+     "lon": 14.41784,
+     "wikipediaCount": 23,
+     "wikidataId": "Q2916171",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Vy%C5%A1ehrad_bazilika_1.jpg/500px-Vy%C5%A1ehrad_bazilika_1.jpg",
+      "width": 500,
+      "height": 320,
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vy%C5%A1ehrad_bazilika_1.jpg",
+      "fullWidth": 2048
+     },
+     "description": "church in Prague"
     },
     {
      "id": "wikidata/Q603573",
@@ -627,30 +652,6 @@
       "religious"
      ],
      "description": "Prag'da kilise binası"
-    },
-    {
-     "id": "wikidata/Q2916171",
-     "name": "Aziz Peter ve Aziz Paul Bazilikası",
-     "localName": "Basilica of St Peter and St Paul",
-     "lat": 50.06438,
-     "lon": 14.41784,
-     "wikipediaCount": 22,
-     "wikidataId": "Q2916171",
-     "kinds": [
-      "heritage",
-      "religious"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Vy%C5%A1ehrad_bazilika_1.jpg/500px-Vy%C5%A1ehrad_bazilika_1.jpg",
-      "width": 500,
-      "height": 320,
-      "author": "VitVit",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Vy%C5%A1ehrad_bazilika_1.jpg",
-      "fullWidth": 2048
-     },
-     "description": "church in Prague"
     },
     {
      "id": "relation/127987",
@@ -1070,7 +1071,6 @@
      "lon": 14.43143,
      "address": "Václavské náměstí 68",
      "website": "http://www.nm.cz/",
-     "openingHours": "10:00-18:00",
      "wikipediaCount": 41,
      "wikidataId": "Q188112",
      "kinds": [
@@ -1620,33 +1620,6 @@
      "description": "museum in Prague, Czech Republic"
     },
     {
-     "id": "node/11925998365",
-     "name": "Síň slávy českého hokeje",
-     "lat": 50.08593,
-     "lon": 14.42667,
-     "address": "Nekázanka 2",
-     "website": "https://www.ceskyhokej.cz/sin-slavy",
-     "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 7,
-     "wikidataId": "Q139661",
-     "kinds": [
-      "museum",
-      "notPlace",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/CzechHockeyHallofFame_%2801%29.jpg/500px-CzechHockeyHallofFame_%2801%29.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "Jiří Borový - IZDoprava.cz",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:CzechHockeyHallofFame_(01).jpg",
-      "fullWidth": 5232
-     },
-     "description": "museum in Czech Republic"
-    },
-    {
      "id": "node/4360610699",
      "name": "Muzeum městské hromadné dopravy v Praze",
      "lat": 50.09395,
@@ -1671,31 +1644,6 @@
       "fullWidth": 1296
      },
      "description": "museum"
-    },
-    {
-     "id": "way/22634016",
-     "name": "Planetárium",
-     "lat": 50.10552,
-     "lon": 14.42751,
-     "address": "Královská obora 233",
-     "website": "https://www.planetum.cz/",
-     "openingHours": "Tu-Su 10:30-20:30",
-     "wikipediaCount": 5,
-     "wikidataId": "Q18198103",
-     "kinds": [
-      "heritage"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Planetum%2C_Praha_%282025-08-07%29.jpg/500px-Planetum%2C_Praha_%282025-08-07%29.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Martin Hlauka (Pescan)",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Planetum,_Praha_(2025-08-07).jpg",
-      "fullWidth": 3287
-     },
-     "description": "planetarium in Prague, Czech Republic"
     },
     {
      "id": "node/4016973329",
@@ -1723,28 +1671,28 @@
      "description": "gallery in Prague, Czech Republic"
     },
     {
-     "id": "node/14101344575",
-     "name": "Mucha Foundation Art Museum",
-     "lat": 50.0848,
-     "lon": 14.42489,
-     "openingHours": "Mo-Su 10:00-18:00",
+     "id": "way/22634016",
+     "name": "Planetárium",
+     "lat": 50.10552,
+     "lon": 14.42751,
+     "address": "Královská obora 233",
+     "website": "https://www.planetum.cz/",
      "wikipediaCount": 5,
-     "wikidataId": "Q133407895",
+     "wikidataId": "Q18198103",
      "kinds": [
-      "museum",
-      "organization"
+      "heritage"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Pal%C3%A1c_Savarin_pr%C5%AF%C4%8Del%C3%AD.jpg/500px-Pal%C3%A1c_Savarin_pr%C5%AF%C4%8Del%C3%AD.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Planetum%2C_Praha_%282025-08-07%29.jpg/500px-Planetum%2C_Praha_%282025-08-07%29.jpg",
       "width": 500,
-      "height": 368,
-      "author": "Crestyl",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1c_Savarin_pr%C5%AF%C4%8Del%C3%AD.jpg",
-      "fullWidth": 3095
+      "height": 375,
+      "author": "Martin Hlauka (Pescan)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Planetum,_Praha_(2025-08-07).jpg",
+      "fullWidth": 3287
      },
-     "description": "Museum in Prague"
+     "description": "planetarium in Prague, Czech Republic"
     },
     {
      "id": "way/28921026",
@@ -1944,32 +1892,6 @@
      "description": "Prag'da müze"
     },
     {
-     "id": "node/3393564844",
-     "name": "Muzeum hraček",
-     "lat": 50.09195,
-     "lon": 14.40448,
-     "address": "Jiřská 11/4",
-     "website": "https://narodnimuzeumhracek.cz/",
-     "openingHours": "Mo-Su 09:00-18:00",
-     "wikipediaCount": 3,
-     "wikidataId": "Q18544843",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/2013_%D0%B3%D0%BE%D0%B4._%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_23.JPG/500px-2013_%D0%B3%D0%BE%D0%B4._%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_23.JPG",
-      "width": 500,
-      "height": 747,
-      "author": "Хомелка",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:2013_%D0%B3%D0%BE%D0%B4._%D0%9F%D1%80%D0%B0%D0%B3%D0%B0_23.JPG",
-      "fullWidth": 2592
-     },
-     "description": "toy museum"
-    },
-    {
      "id": "node/296693693",
      "name": "Vojenský historický ústav Praha",
      "lat": 50.08766,
@@ -2045,20 +1967,105 @@
      }
     },
     {
-     "id": "node/13398440625",
-     "name": "Signal Space",
-     "lat": 50.08426,
-     "lon": 14.42162,
-     "address": "Rytířská 10",
-     "website": "https://www.signalspace.com/",
-     "openingHours": "Mo-Fr 10:00-20:00; Sa-Su 09:00-20:00",
+     "id": "node/292754380",
+     "name": "Gorlice",
+     "lat": 50.06524,
+     "lon": 14.42122,
+     "address": "Praha 2",
+     "website": "https://www.praha-vysehrad.cz/",
      "wikipediaCount": 2,
-     "wikidataId": "Q140462494",
+     "wikidataId": "Q12766418",
+     "kinds": [
+      "adminArea",
+      "heritage"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Praha%2C_Vy%C5%A1ehrad%2C_pevnost%2C_s%C3%A1l_Gorlice.jpg/500px-Praha%2C_Vy%C5%A1ehrad%2C_pevnost%2C_s%C3%A1l_Gorlice.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "MONUDET",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Vy%C5%A1ehrad,_pevnost,_s%C3%A1l_Gorlice.jpg",
+      "fullWidth": 2891
+     }
+    },
+    {
+     "id": "node/1058918765",
+     "name": "Památník národního písemnictví",
+     "lat": 50.08664,
+     "lon": 14.39009,
+     "address": "Strahovské nádvoří 132/1",
+     "website": "https://pamatniknarodnihopisemnictvi.cz/",
+     "wikipediaCount": 2,
+     "wikidataId": "Q5979897",
+     "kinds": [
+      "business",
+      "museum",
+      "noCoordinate",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Mal%C3%A1_vila_v_Pell%C3%A9ov%C4%9B_ulici.jpg/500px-Mal%C3%A1_vila_v_Pell%C3%A9ov%C4%9B_ulici.jpg",
+      "width": 500,
+      "height": 341,
+      "author": "Památník národního písemnictví v Praze",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mal%C3%A1_vila_v_Pell%C3%A9ov%C4%9B_ulici.jpg",
+      "fullWidth": 2599
+     },
+     "description": "literary museum in Prague, Czech Republic"
+    },
+    {
+     "id": "way/10107260",
+     "name": "Armádní muzeum Žižkov",
+     "lat": 50.08744,
+     "lon": 14.44504,
+     "address": "U Památníku 1600/2",
+     "website": "https://www.vhu.cz/",
+     "openingHours": "Mo-Su 07:00-19:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q15076006",
+     "kinds": [
+      "heritage"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/VHU4.jpg/500px-VHU4.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "FilipVetter",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:VHU4.jpg",
+      "fullWidth": 800
+     }
+    },
+    {
+     "id": "node/1268946125",
+     "name": "Chlupáčovo muzeum historie Země",
+     "lat": 50.06875,
+     "lon": 14.42428,
+     "address": "Albertov",
+     "website": "https://www.natur.cuni.cz/geologie/chlupacovo-muzeum",
+     "openingHours": "Mo-Fr 08:00-12:00",
+     "wikipediaCount": 1,
+     "wikidataId": "Q11725524",
      "kinds": [
       "museum",
       "organization"
      ],
-     "description": "Digital Art gallery established in 2025"
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Carnotaurus%2C_Chlup%C3%A1%C4%8D_Museum%2C_Prague-2.jpg/500px-Carnotaurus%2C_Chlup%C3%A1%C4%8D_Museum%2C_Prague-2.jpg",
+      "width": 500,
+      "height": 443,
+      "author": "Carnotaurus, Chlupáč Museum, Prague-2.jpg : Czech Wikipedia user Packa derivative work: Hic et nunc",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Carnotaurus,_Chlup%C3%A1%C4%8D_Museum,_Prague-2.jpg",
+      "fullWidth": 1559
+     },
+     "description": "Prag'da müze"
     }
    ]
   },
@@ -2138,8 +2145,8 @@
      "name": "Petřínská rozhledna",
      "lat": 50.08351,
      "lon": 14.3951,
-     "website": "https://praguecitytourism.cz/",
-     "openingHours": "Nov-Mar 10:00-18:00; Apr-Aug 09:00-19:00; Sep-Oct 09:00-18:00",
+     "website": "https://www.muzeumprahy.cz/",
+     "openingHours": "Nov-Feb 10:00-18:00; Mar,Oct 10:00-20:00; Apr-Sep 10:00-22:00",
      "wikipediaCount": 21,
      "wikidataId": "Q12256",
      "kinds": [
@@ -2226,24 +2233,6 @@
      "description": "place above the Jelení příkop (Dear moat) near the Prague Castle"
     },
     {
-     "id": "node/3198557322",
-     "name": "vyhlídka Alexeje Navalného",
-     "lat": 50.1046,
-     "lon": 14.41473,
-     "wikipediaCount": 1,
-     "wikidataId": "Q122801569",
-     "kinds": [
-      "noCoordinate"
-     ]
-    },
-    {
-     "id": "way/1559946260",
-     "name": "Fly Vista rooftop bar",
-     "lat": 50.08217,
-     "lon": 14.41967,
-     "openingHours": "Mo-We 07:30-01:00, Th-Fr 07:30-03:00, Sa 08:00-03:00, Su 08:00-01:00"
-    },
-    {
      "id": "node/6734411585",
      "name": "Novoměstská radnice",
      "lat": 50.07815,
@@ -2256,6 +2245,13 @@
      "lat": 50.08784,
      "lon": 14.40363,
      "website": "https://www.muzeumprahy.cz/"
+    },
+    {
+     "id": "way/1531235350",
+     "name": "Vyhlídková terasa Praha-Bubny",
+     "lat": 50.09957,
+     "lon": 14.44011,
+     "openingHours": "15:00-20:00"
     },
     {
      "id": "node/11762212169",
@@ -2272,8 +2268,8 @@
     {
      "id": "node/13928217453",
      "name": "Modulární Vyhlídka",
-     "lat": 50.06714,
-     "lon": 14.40546
+     "lat": 50.06716,
+     "lon": 14.4054
     },
     {
      "id": "node/4378267237",
@@ -2292,6 +2288,12 @@
      "name": "Novomlýnská vodárenská věž",
      "lat": 50.09231,
      "lon": 14.4283
+    },
+    {
+     "id": "node/3198557322",
+     "name": "Vyhlídka Alexeje Navalného",
+     "lat": 50.1046,
+     "lon": 14.41473
     },
     {
      "id": "node/4933812226",
@@ -2610,6 +2612,17 @@
      "detailed": true
     },
     {
+     "id": "node/449774351",
+     "name": "Garuda",
+     "lat": 50.09932,
+     "lon": 14.4314,
+     "address": "Milady Horákové 686/12",
+     "website": "http://www.garudarestaurant.cz/",
+     "openingHours": "Mo-Su 11:30-22:00",
+     "cuisine": "indonesian",
+     "detailed": true
+    },
+    {
      "id": "node/1456123956",
      "name": "Gotika",
      "lat": 50.08606,
@@ -2629,17 +2642,6 @@
      "website": "https://granfierro.cz/",
      "openingHours": "Mo-Fr 11:30-00:00; Su-Sa 12:00-00:00",
      "cuisine": "argentinian",
-     "detailed": true
-    },
-    {
-     "id": "node/351613913",
-     "name": "Green Tomato",
-     "lat": 50.0839,
-     "lon": 14.42857,
-     "address": "Jindřišská 18",
-     "website": "https://www.green-tomato.cz/",
-     "openingHours": "Mo-Fr 10:00-23:00; Sa-Su 11:00-23:00",
-     "cuisine": "pizza, pasta",
      "detailed": true
     }
    ]
@@ -2721,7 +2723,7 @@
      "lon": 14.43259,
      "address": "Škrétova 490/12",
      "website": "https://www.cafedu.cz/",
-     "openingHours": "Mo-Fr 07:30-22:00; Sa-Su 10:00-22:00",
+     "openingHours": "Mo-Fr 7:30-22:00; Sa-Su 10:00-22:00",
      "cuisine": "coffee shop, breakfast, sandwich",
      "detailed": true
     },
@@ -2737,14 +2739,14 @@
      "detailed": true
     },
     {
-     "id": "node/5004619755",
-     "name": "Čekárna",
-     "lat": 50.06682,
-     "lon": 14.41744,
-     "address": "Vratislavova 30/8",
-     "website": "http://kavarnacekarna.cz/",
-     "openingHours": "Mo-Fr 08:00-22:00; Sa-Su 10:00-20:00",
-     "cuisine": "coffee shop",
+     "id": "node/3724879366",
+     "name": "Čajovna Jedna báseň",
+     "lat": 50.06885,
+     "lon": 14.43576,
+     "address": "Pod Zvonařkou 14",
+     "website": "https://jednabasen.cz/",
+     "openingHours": "Mo-Su 13:13-22:22",
+     "cuisine": "teahouse",
      "detailed": true
     },
     {
@@ -2961,7 +2963,7 @@
      "lon": 14.44937,
      "address": "U Božích bojovníků 606",
      "website": "https://prostorhnizdo.cz/",
-     "openingHours": "Mo-We,Fr-Su 15:00-22:00; Th off",
+     "openingHours": "Mo-St 15:00-22:00, Fr-Su 15:00-22:00",
      "cuisine": "cake, sandwich, fries, coffee shop, kok",
      "detailed": true
     },
@@ -2994,10 +2996,12 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "wikidata/Q141651391",
-     "name": "Lost and Found Bar Prague",
-     "lat": 50.07763,
+     "id": "node/14087606979",
+     "name": "Lost and Found",
+     "lat": 50.07752,
      "lon": 14.4231,
+     "address": "Žitná 11",
+     "openingHours": "Su-Tu 18:00-00:00; We-Th 17:00-01:00; Fr-Sa 17:00-03:00",
      "wikidataId": "Q141651391",
      "description": "Cocktail, craft beer bar and hookah lounge in Prague, Czech Republic"
     },
@@ -3089,17 +3093,6 @@
      "website": "https://sejmor.cz/",
      "openingHours": "Mo-Sa 11:00-23:00; Su 11:00-22:00",
      "cuisine": "international, czech",
-     "detailed": true
-    },
-    {
-     "id": "node/1322837046",
-     "name": "Zlý Časy",
-     "lat": 50.0643,
-     "lon": 14.44204,
-     "address": "Čestmírova 5",
-     "website": "http://www.zlycasy.eu/",
-     "openingHours": "Mo-Fr 11:00-02:00; Sa 17:00-02:00; Su 17:00-01:00",
-     "cuisine": "regional",
      "detailed": true
     },
     {
@@ -3317,6 +3310,16 @@
      "website": "https://cashonlybar.cz/",
      "openingHours": "Mo-Su 18:00-02:00",
      "detailed": true
+    },
+    {
+     "id": "node/4451906435",
+     "name": "Chapeau Rouge",
+     "lat": 50.08807,
+     "lon": 14.42466,
+     "address": "Jakubská 647/2",
+     "website": "https://www.chapeaurouge.cz/",
+     "openingHours": "Mo-Th 00:00-03:00,12:00-24:00; Fr 00:00-04:00,12:00-24:00; Sa 00:00-04:00,16:00-24:00; Su 00:00-02:00,16:00-24:00",
+     "detailed": true
     }
    ]
   },
@@ -3398,8 +3401,8 @@
     {
      "id": "node/1316908986",
      "name": "Dogs Bollocks",
-     "lat": 50.06755,
-     "lon": 14.40719,
+     "lat": 50.06756,
+     "lon": 14.40722,
      "address": "Nádražní 42/82",
      "website": "https://www.dogsbollocks.cz/",
      "openingHours": "Fr-Sa 17:00-04:00",
@@ -3461,7 +3464,7 @@
      "lon": 14.414,
      "address": "Smetanovo nábřeží 5",
      "website": "https://www.kamennymost.cz/",
-     "openingHours": "18:00-04:00",
+     "openingHours": "18:00-4:00",
      "detailed": true
     },
     {
@@ -3570,7 +3573,7 @@
      "lon": 14.43948,
      "address": "Seifertova 3",
      "website": "http://www.updownbarprague.cz/",
-     "openingHours": "Mo-Su 21:30-02:00+",
+     "openingHours": "Mo-Th 14:00-03:00; Fr-Sa 11:00-06:00; Su 11:00-03:00",
      "detailed": true
     },
     {
@@ -3611,7 +3614,7 @@
      "lat": 50.09862,
      "lon": 14.44292,
      "address": "Argentinská 1",
-     "openingHours": "Fr 22:00-04:00, Sa 21:00-05:00",
+     "openingHours": "We-Th 21:00-01:00; Fr-Sa 21:00-05:00",
      "wikidataId": "Q22074725",
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Praha_Holesovice_Argentinska_1.JPG/500px-Praha_Holesovice_Argentinska_1.JPG",
