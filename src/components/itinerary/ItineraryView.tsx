@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarPlus, Map as MapIcon, RotateCcw, Sparkles, X } from "lucide-react";
+import { CalendarDays, CalendarPlus, Map as MapIcon, RotateCcw, Sparkles, X } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { AI_PANEL_ID, useAiDrawer, useIsDesktop } from "@/components/ai/AiDrawer";
@@ -42,6 +42,8 @@ type Props = {
   aiFetch?: typeof fetch;
   /** The budget's flight is a web-search price: there are no flight times, so the default windows are used. */
   flightTimesUnknown?: boolean;
+  /** ISO date → "Bugün şehirde: Oktoberfest · Theresienwiese" (src/lib/events/trip.ts `dayNotes`); never a stop. */
+  eventNotes?: Record<string, string[]>;
 };
 
 function subscribeWide(callback: () => void) {
@@ -248,6 +250,7 @@ function Day({
   onRemove,
   onRemoveInside,
   reason,
+  events,
   flash = false,
 }: {
   day: PlanDay;
@@ -259,6 +262,8 @@ function Day({
   onRemoveInside: (sub: PlanSubStop) => void;
   /** The model's one or two sentences for the day (plain text). */
   reason?: string;
+  /** Events in town that day (exact dates only). */
+  events?: string[];
 }) {
   return (
     <section
@@ -296,6 +301,16 @@ function Day({
           </button>
         ) : null}
       </div>
+      {events?.length ? (
+        <ul className="mt-3 grid gap-0.5">
+          {events.map((note) => (
+            <li key={note} className="flex items-baseline gap-1.5 text-caption text-ink">
+              <CalendarDays aria-hidden="true" size={13} strokeWidth={1.5} className="shrink-0 translate-y-0.5 text-ink-muted" />
+              {note}
+            </li>
+          ))}
+        </ul>
+      ) : null}
       {reason ? (
         <div className="mt-4 border-l-2 border-sea pl-3">
           <Caption as="p" tone="sea">
@@ -339,6 +354,7 @@ export function ItineraryView({
   initialEdits = [],
   aiFetch,
   flightTimesUnknown = false,
+  eventNotes,
 }: Props) {
   const [skip, setSkip] = useState(initialSkip);
   const [ai, setAi] = useState<{ pinned: string[][]; reasons: Record<number, string>; source: string | null } | null>(
@@ -547,6 +563,7 @@ export function ItineraryView({
                 onRemove={remove}
                 onRemoveInside={removeInside}
                 reason={ai?.reasons[d.number]}
+                events={eventNotes?.[d.date]}
                 flash={flash.includes(d.number)}
               />
             ))}

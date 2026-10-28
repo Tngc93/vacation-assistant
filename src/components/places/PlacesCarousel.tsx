@@ -1,9 +1,11 @@
 "use client";
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { CalendarDays, ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
+import { EVENT_TYPE_LABELS } from "@/lib/events/file";
+import { eventItemId, tripEventCaption, type TripEvent } from "@/lib/events/trip";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import type { StoredPlace } from "@/lib/places/file";
 import { parseOpeningHours, todayStatus } from "@/lib/places/hours";
@@ -14,12 +16,20 @@ import { walkToCentre } from "@/lib/places/walk";
 import { useMinuteNow } from "@/lib/time/clock";
 import { CATEGORY_ICONS } from "./categoryIcons";
 
-export type CarouselItem = {
+export type PlaceItem = {
+  kind?: "place";
   place: StoredPlace & Pick<ShownPlace, "farKm">;
   category: CategoryId;
   /** 1-based position within its category's ranked list. */
   rank: number;
 };
+
+/** An event in the trip's dates (src/lib/events/trip.ts); `rank` is its position among the events. */
+export type EventItem = { kind: "event"; trip: TripEvent; rank: number };
+
+export type CarouselItem = PlaceItem | EventItem;
+
+export const carouselItemId = (item: CarouselItem): string => (item.kind === "event" ? eventItemId(item.trip.event) : item.place.id);
 
 type Props = {
   items: readonly CarouselItem[];
@@ -77,14 +87,14 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
   const [revealed, setRevealed] = useState(reveal);
   if (reveal !== revealed) {
     setRevealed(reveal);
-    const i = reveal ? items.findIndex((item) => item.place.id === reveal.id) : -1;
+    const i = reveal ? items.findIndex((item) => carouselItemId(item) === reveal.id) : -1;
     if (i >= 0) setCurrent(i);
   }
 
   // …and its card comes into view.
   useEffect(() => {
     if (!reveal) return;
-    const i = items.findIndex((item) => item.place.id === reveal.id);
+    const i = items.findIndex((item) => carouselItemId(item) === reveal.id);
     if (i >= 0) goTo(i);
   }, [reveal, items, goTo]);
 
@@ -108,21 +118,26 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
         onKeyDown={onKeyDown}
         className="relative flex min-h-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-1 [scrollbar-width:none] motion-reduce:scroll-auto"
       >
-        {items.map((item, i) => (
-          <li key={item.place.id} onFocus={() => setCurrent(i)} className="w-[85%] shrink-0 snap-start md:w-[calc((100%-2rem)/3)]">
-            <PlaceTile
-              item={item}
-              center={center}
-              timeZone={timeZone}
-              position={i + 1}
-              tabbable={i === tabbable}
-              highlighted={activeId === item.place.id || selectedId === item.place.id}
-              selected={selectedId === item.place.id}
-              onActivate={onActivate}
-              onSelect={onSelect}
-            />
-          </li>
-        ))}
+        {items.map((item, i) => {
+          const id = carouselItemId(item);
+          const shared = {
+            position: i + 1,
+            tabbable: i === tabbable,
+            highlighted: activeId === id || selectedId === id,
+            selected: selectedId === id,
+            onActivate,
+            onSelect,
+          };
+          return (
+            <li key={id} onFocus={() => setCurrent(i)} className="w-[85%] shrink-0 snap-start md:w-[calc((100%-2rem)/3)]">
+              {item.kind === "event" ? (
+                <EventTile item={item} {...shared} />
+              ) : (
+                <PlaceTile item={item} center={center} timeZone={timeZone} {...shared} />
+              )}
+            </li>
+          );
+        })}
       </ul>
       <div className="mt-3 flex items-center justify-between gap-4">
         <Caption as="p" aria-live="polite" className="tabular">
@@ -190,7 +205,7 @@ function PlaceTile({
   onActivate,
   onSelect,
 }: {
-  item: CarouselItem;
+  item: PlaceItem;
   center: { lat: number; lon: number };
   timeZone: string;
   position: number;
@@ -271,6 +286,87 @@ function PlaceTile({
         </span>
       </span>
       {place.photo ? <span className="sr-only">. {photoCredit(place.photo)}</span> : null}
+    </button>
+  );
+}
+
+/**
+ * An event card (DESIGN.md "Event card"), in the same frame as a place: the Commons photo, or a large calendar
+ * icon with the venue; below, the dates ("14 KAS – 18 KAS", or "GENELDE KASIM · TARİHİ DOĞRULA" in the warning
+ * tone), the name and "Etkinlik · Festival · Wikidata".
+ */
+function EventTile({
+  item,
+  position,
+  tabbable,
+  highlighted,
+  selected,
+  onActivate,
+  onSelect,
+}: {
+  item: EventItem;
+  position: number;
+  tabbable: boolean;
+  highlighted: boolean;
+  selected: boolean;
+  onActivate: (id: string | null) => void;
+  onSelect: (id: string) => void;
+}) {
+  const { event } = item.trip;
+  const id = eventItemId(event);
+  return (
+    <button
+      type="button"
+      aria-pressed={selected}
+      tabIndex={tabbable ? 0 : -1}
+      onClick={() => onSelect(id)}
+      onMouseEnter={() => onActivate(id)}
+      onMouseLeave={() => onActivate(null)}
+      onFocus={() => onActivate(id)}
+      onBlur={() => onActivate(null)}
+      className={cn(
+        "flex h-[22rem] w-full flex-col overflow-hidden rounded-md border bg-paper-raised text-left transition-colors duration-150 ease-out md:h-full",
+        highlighted ? "border-accent" : "border-rule hover:border-ink",
+      )}
+    >
+      <span className="flex min-h-0 flex-1 flex-col p-4">
+        <Caption as="span" tone={item.trip.kind === "exact" ? "ink" : "warn"} className="block">
+          {tripEventCaption(item.trip)}
+        </Caption>{" "}
+        <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{event.name}</span>{" "}
+        <Caption as="span" className="mt-auto block pt-2">
+          Etkinlik · {EVENT_TYPE_LABELS[event.type]} · Wikidata
+        </Caption>
+      </span>{" "}
+      <span className="relative order-first block h-[58%] min-h-32 shrink-0 overflow-hidden border-b border-rule">
+        {event.photo ? (
+          <span className="duotone block h-full">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={event.photo.src}
+              srcSet={cardPhotoSrcSet(event.photo) || undefined}
+              sizes="(min-width: 768px) 14rem, 85vw"
+              width={event.photo.width}
+              height={event.photo.height}
+              alt=""
+              crossOrigin="anonymous"
+              loading={position <= 3 ? "eager" : "lazy"}
+              fetchPriority={position === 1 ? "auto" : "low"}
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
+          </span>
+        ) : (
+          <span className="flex h-full flex-col justify-between gap-2 bg-paper px-4 pb-3 pt-10">
+            <CalendarDays aria-hidden="true" size={40} strokeWidth={1.5} className="text-ink-muted" />
+            {event.venue ? <span className="line-clamp-3 block text-caption text-ink-muted">{event.venue.name}</span> : null}
+          </span>
+        )}
+        <span aria-hidden="true" className="absolute left-3 top-3 rounded-sm bg-paper-raised px-1.5 py-0.5 font-mono text-micro tabular text-ink">
+          {pad(item.rank)}
+        </span>
+      </span>
+      {event.photo ? <span className="sr-only">. {photoCredit(event.photo)}</span> : null}
     </button>
   );
 }

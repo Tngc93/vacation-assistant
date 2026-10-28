@@ -17,7 +17,7 @@ import { parseBudgetParams } from "@/lib/budget/params";
 import { parseDirect } from "@/lib/flights/display";
 import { parseEdits, parsePinned } from "@/lib/ai/edits";
 import { parseSkip } from "@/lib/itinerary/ids";
-import { parseCategories } from "@/lib/places/cats";
+import { parseCategories, parseShowEvents } from "@/lib/places/cats";
 import { hasRouteParams, parseSearch } from "@/lib/search/params";
 
 type Props = Pick<PageProps<"/plan">, "searchParams">;
@@ -98,7 +98,7 @@ async function PlanContent({ searchParams }: Props) {
         </p>
       </header>
       <Suspense fallback={<PlanHeroSkeleton />}>
-        <PlanHero search={result.value} destination={destination} categories={categories} />
+        <PlanHero search={result.value} destination={destination} categories={categories} showEvents={parseShowEvents(params.cats)} />
       </Suspense>
       <PlanNav />
       <PlanSections

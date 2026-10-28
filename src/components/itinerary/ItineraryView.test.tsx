@@ -35,6 +35,23 @@ describe("ItineraryView", () => {
     expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length).toBeGreaterThan(5);
   });
 
+  it("notes an exact event in the day header on its days only, and never adds it as a stop", () => {
+    const stopsBefore = (() => {
+      const { unmount } = renderView();
+      const n = screen.getAllByRole("button", { name: /durağını plandan çıkar$/ }).length;
+      unmount();
+      return n;
+    })();
+    const notes = { "2026-11-15": ["Bugün şehirde: Oktoberfest · Theresienwiese"], "2026-11-16": ["Bugün şehirde: Oktoberfest · Theresienwiese"] };
+    render(<ItineraryView input={input} initialSkip={[]} cityName="Barselona" center={{ lat: 41.39, lon: 2.17 }} eventNotes={notes} />);
+    expect(within(day(2)).getByText("Bugün şehirde: Oktoberfest · Theresienwiese")).toBeInTheDocument();
+    expect(within(day(3)).getByText("Bugün şehirde: Oktoberfest · Theresienwiese")).toBeInTheDocument();
+    expect(within(day(1)).queryByText(/Bugün şehirde/)).toBeNull();
+    expect(within(day(4)).queryByText(/Bugün şehirde/)).toBeNull();
+    expect(screen.getAllByRole("button", { name: /durağını plandan çıkar$/ })).toHaveLength(stopsBefore);
+    expect(screen.queryByRole("button", { name: /Oktoberfest durağını/ })).toBeNull();
+  });
+
   it("with a web-search flight price in the budget, uses the default windows and says the flight times are unknown", () => {
     render(<ItineraryView input={input} initialSkip={[]} cityName="Barselona" center={{ lat: 41.39, lon: 2.17 }} flightTimesUnknown />);
     expect(screen.getByText("UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER")).toBeInTheDocument();

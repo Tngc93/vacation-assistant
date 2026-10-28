@@ -9,14 +9,18 @@ import { cityCentre, type Destination } from "@/data/destinations";
 import { formatDay } from "@/lib/format";
 import type { CategoryId } from "@/lib/places/categories";
 import { loadPlacesFile } from "@/lib/places/load";
+import { loadEventsFile } from "@/lib/events/load";
+import { eventsInTrip, mastheadLine } from "@/lib/events/trip";
 import { daysBetween, isoToDate } from "@/lib/search/dates";
 import { editHref, type SearchState } from "@/lib/search/params";
 
-type Props = { search: SearchState; destination: Destination; categories: CategoryId[] };
+type Props = { search: SearchState; destination: Destination; categories: CategoryId[]; showEvents: boolean };
 
 /** The plan's first screen (DESIGN.md "Plan hero"): city, info line, chips and places carousel, photo and map. */
-export async function PlanHero({ search, destination, categories }: Props) {
-  const file = await loadPlacesFile(destination.cityCode);
+export async function PlanHero({ search, destination, categories, showEvents }: Props) {
+  const [file, eventsFile] = await Promise.all([loadPlacesFile(destination.cityCode), loadEventsFile(destination.cityCode)]);
+  const events = eventsInTrip(eventsFile?.events ?? [], search.depart, search.return);
+  const inTown = mastheadLine(events);
   const results: CategoryResult[] = categories.map((category) => {
     const entry = file?.categories[category];
     return entry?.status === "ok"
@@ -43,6 +47,7 @@ export async function PlanHero({ search, destination, categories }: Props) {
           Düzenle
         </Link>
       </div>
+      {inTown ? <p className="mt-2 font-mono text-micro uppercase tracking-[0.08em] text-ink">{inTown}</p> : null}
     </div>
   );
 
@@ -55,6 +60,8 @@ export async function PlanHero({ search, destination, categories }: Props) {
       categories={categories}
       results={results}
       fetchedAt={file?.fetchedAt ?? null}
+      events={events}
+      showEvents={showEvents}
     />
   );
 }

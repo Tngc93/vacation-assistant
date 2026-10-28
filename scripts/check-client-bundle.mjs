@@ -39,6 +39,18 @@ if (leaks.length) {
   process.exit(1);
 }
 
+// The pre-fetched events (src/data/events) are server-only too: a page gets only the ones in its dates, as props.
+const eventsDir = path.join(root, "src", "data", "events");
+const eventNames = readdirSync(eventsDir)
+  .filter((f) => f.endsWith(".json"))
+  .flatMap((f) => JSON.parse(readFileSync(path.join(eventsDir, f), "utf8")).events.map((e) => e.name))
+  .filter((name) => name.length >= 12);
+const eventLeaks = eventNames.filter((name) => bundle.includes(name));
+if (eventLeaks.length) {
+  console.error(`Server-only event data found in the client bundle: ${eventLeaks.slice(0, 5).join(", ")}`);
+  process.exit(1);
+}
+
 // The Travelpayouts token must never reach the browser. CI builds with a fake
 // "canary" token; the API client and the variable name must not appear either.
 const secretMarkers = ["api.travelpayouts.com", "X-Access-Token", "TRAVELPAYOUTS_TOKEN"];
@@ -51,4 +63,5 @@ if (secretLeaks.length) {
 }
 
 console.log(`OK: none of ${names.length} sampled place names are in the client bundle.`);
+console.log(`OK: none of ${eventNames.length} event names are in the client bundle.`);
 console.log(`OK: no Travelpayouts token, header or API address in the client bundle${canary ? " (checked against the build's token)" : ""}.`);

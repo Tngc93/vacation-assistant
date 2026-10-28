@@ -2,6 +2,8 @@ import { fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { StoredPlace } from "@/lib/places/file";
+import type { StoredEvent } from "@/lib/events/file";
+import { eventsInTrip } from "@/lib/events/trip";
 import { HeroExplorer, type CategoryResult } from "./HeroExplorer";
 
 const replace = vi.fn();
@@ -333,5 +335,57 @@ describe("HeroExplorer", () => {
   it("credits OpenStreetMap for the place data", () => {
     renderExplorer();
     expect(screen.getByRole("link", { name: "© OpenStreetMap katkıcıları" })).toHaveAttribute("href", "https://www.openstreetmap.org/copyright");
+  });
+
+  describe("events", () => {
+    const oktoberfest: StoredEvent = {
+      qid: "Q102400",
+      name: "Oktoberfest",
+      type: "festival",
+      wikipedias: 77,
+      months: [9, 10],
+      venue: { qid: "Q700887", name: "Theresienwiese", lat: 48.131, lon: 11.549 },
+      website: "https://www.oktoberfest.de/",
+    };
+    const fringe: StoredEvent = { qid: "Q368176", name: "Edinburgh Festival Fringe", type: "festival", wikipedias: 20, editions: [{ qid: "Q1", start: "2026-11-15", end: "2026-11-20" }] };
+
+    it("has no Etkinlik chip when nothing falls in the dates", () => {
+      renderExplorer({ events: eventsInTrip([oktoberfest], "2026-11-14", "2026-11-18"), showEvents: true });
+      expect(screen.queryByRole("button", { name: "Etkinlik" })).toBeNull();
+      expect(screen.queryByText(/GENELDE/)).toBeNull();
+    });
+
+    it("shows the chip and the events first, exact before approximate, off the map", () => {
+      renderExplorer({ events: eventsInTrip([oktoberfest, fringe], "2026-10-01", "2026-11-16"), showEvents: true });
+      expect(screen.getByRole("button", { name: "Etkinlik" })).toHaveAttribute("aria-pressed", "true");
+      const cards = screen.getAllByRole("listitem").map((li) => li.textContent ?? "");
+      expect(cards[0]).toContain("15 KAS – 20 KAS");
+      expect(cards[0]).toContain("Edinburgh Festival Fringe");
+      expect(cards[1]).toContain("GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA");
+      expect(cards[1]).toContain("Oktoberfest");
+      expect(cards[2]).toContain("Picasso Müzesi");
+      expect(map()).toHaveAttribute("data-places", "2");
+    });
+
+    it("opens an event's details with the source, the official site and the check-the-dates caption", async () => {
+      const user = userEvent.setup();
+      renderExplorer({ events: eventsInTrip([oktoberfest], "2026-09-20", "2026-09-24"), showEvents: true });
+      await user.click(card(/Oktoberfest/));
+      const details = within(detail());
+      expect(details.getByText("Tarihleri resmî kaynaktan doğrula")).toBeInTheDocument();
+      expect(details.getByText(/Kaynak: Wikidata/)).toBeInTheDocument();
+      expect(details.getByRole("link", { name: /Resmî site/ })).toHaveAttribute("href", "https://www.oktoberfest.de/");
+      expect(details.getByText("Yer: Theresienwiese")).toBeInTheDocument();
+    });
+
+    it("hides the events with the chip, keeping the token last in ?cats=", async () => {
+      const user = userEvent.setup();
+      const events = eventsInTrip([oktoberfest], "2026-09-20", "2026-09-24");
+      renderExplorer({ events, showEvents: false });
+      expect(screen.getByRole("button", { name: "Etkinlik" })).toHaveAttribute("aria-pressed", "false");
+      expect(screen.queryByText(/Oktoberfest/)).toBeNull();
+      await user.click(screen.getByRole("button", { name: "Etkinlik" }));
+      expect(replace).toHaveBeenLastCalledWith(expect.stringContaining("cats=see%2Cmuseum%2Crestaurant%2Cevent"), { scroll: false });
+    });
   });
 });
