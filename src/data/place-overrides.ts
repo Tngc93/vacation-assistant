@@ -12,6 +12,8 @@
  *   visit in those months (the trip day's month, 1–12) and seen from outside in the others.
  * - `relink`: an OSM object tagged with the wrong Wikidata item; `npm run data:kinds` moves it to the right one
  *   (its Wikipedia count and kinds), so this one needs that Wikidata-only pass after a change.
+ * - `rename`: the name to show (Turkish), where Wikidata's Turkish label is wrong; the stored name stays the small
+ *   local name, and a place inside it shows this name in its caption. Remove it once the label is fixed.
  */
 export type PlaceOverride = {
   qid: string;
@@ -36,6 +38,10 @@ export type RelinkOverride = {
   name: string;
   reason: string;
 };
+export type RenameOverride = PlaceOverride & {
+  /** The name shown instead of the label: "Moskova Kremlini". */
+  shownName: string;
+};
 export type CityOverrides = {
   include?: readonly PlaceOverride[];
   exclude?: readonly PlaceOverride[];
@@ -43,6 +49,7 @@ export type CityOverrides = {
   exteriorOnly?: readonly ExteriorOverride[];
   visit?: readonly (PlaceOverride & { visitMin: number })[];
   relink?: readonly RelinkOverride[];
+  rename?: readonly RenameOverride[];
 };
 
 export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
@@ -142,6 +149,14 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
       { qid: "Q2075146", name: "Tomb of the Unknown Soldier", reason: "A memorial, seen from outside.", visitMin: 15 },
     ],
     visit: [{ qid: "Q191414", name: "Lenin's Mausoleum", reason: "The visit inside is short, queue included.", visitMin: 30 }],
+    rename: [
+      {
+        qid: "Q133274",
+        name: "Moscow Kremlin",
+        shownName: "Moskova Kremlini",
+        reason: "Wikidata's Turkish label is 'Kremlini' (a possessive without its noun); remove once the label is fixed.",
+      },
+    ],
   },
   MUC: {
     exclude: [{ qid: "Q102400", name: "Oktoberfest", reason: "An event in late September and October, not a place to visit." }],

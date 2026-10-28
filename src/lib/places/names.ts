@@ -1,3 +1,5 @@
+import { romanize } from "./romanize";
+
 /**
  * Which name a Turkish reader sees. A stored name in another script (Cyrillic, Japanese, Chinese, Arabic,
  * Greek…) is never the primary name when a Latin one exists; it stays as the small local name instead, like
@@ -9,27 +11,35 @@ export type WikidataLabels = { tr?: string; en?: string };
 /** OSM name:en, name:latin (or a name:xx-Latn) and int_name, stored only when the stored name is not Latin. */
 export type OsmLatinNames = { en?: string; latin?: string; int?: string };
 
-/** True when every letter is in the Latin script; digits, spaces and punctuation do not count. */
-export const isLatin = (name: string): boolean => !/[^\P{L}\p{Script=Latin}]/u.test(name);
+/**
+ * True when every letter is in the Latin script; digits, spaces, punctuation and letters of no script (Uzbek's
+ * ʻ in "Oʻzbekiston") do not count.
+ */
+export const isLatin = (name: string): boolean => !/[^\P{L}\p{Script=Latin}\p{Script=Common}]/u.test(name);
 
 /**
  * The primary name and the local name to show under it. The order: Wikidata Turkish label, Wikidata English
  * label, OSM name:tr (already the stored name when OSM has one), name:en, name:latin, int_name, the OSM name.
- * Without a Latin alternative the local name stays primary.
+ * Without a Latin alternative, the name romanized by the official system of the city's country (romanize/:
+ * Cyrillic, Greek, Georgian, Hangul); else the local name stays primary (Japanese, Chinese, Arabic, Thai).
  */
-export function readableName(place: {
-  name: string;
-  localName?: string;
-  labels?: WikidataLabels;
-  osmNames?: OsmLatinNames;
-}): { name: string; localName?: string } {
+export function readableName(
+  place: {
+    name: string;
+    localName?: string;
+    labels?: WikidataLabels;
+    osmNames?: OsmLatinNames;
+  },
+  countryCode?: string,
+): { name: string; localName?: string } {
   const own = { name: place.name, ...(place.localName ? { localName: place.localName } : {}) };
   if (isLatin(place.name)) return own;
   const { labels, osmNames } = place;
   const latin = [labels?.tr, labels?.en, osmNames?.en, osmNames?.latin, osmNames?.int]
     .map((n) => n?.trim())
     .find((n): n is string => Boolean(n) && isLatin(n!));
-  return latin ? { name: latin, localName: place.name } : own;
+  const shown = latin ?? (countryCode ? romanize(place.name, countryCode) : undefined);
+  return shown ? { name: shown, localName: place.name } : own;
 }
 
 /** OSM's Latin-script names from an element's tags; undefined when it has none. */

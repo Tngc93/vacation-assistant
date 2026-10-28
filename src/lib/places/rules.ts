@@ -148,9 +148,27 @@ export type ShownCategory =
   | Extract<PlacesFile["categories"][CategoryId], { status: "missing" }>;
 export type ShownPlacesFile = Omit<PlacesFile, "categories"> & { categories: Record<CategoryId, ShownCategory> };
 
-function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | null, nameOf: ReadonlyMap<string, string>): ShownPlace {
+/** The name and local name shown: a `rename` override, else the name rule (names.ts) with the country's romanization. */
+function shownName(place: StoredPlace, overrides: CityOverrides, countryCode: string | undefined): { name: string; localName?: string } {
+  const renamed = place.wikidataId ? overrides.rename?.find((o) => o.qid === place.wikidataId) : undefined;
+  const readable = readableName(place, countryCode);
+  if (!renamed) return readable;
+  const localName = readable.name === place.name ? place.localName : place.name;
+  return { name: renamed.shownName, ...(localName && localName !== renamed.shownName ? { localName } : {}) };
+}
+
+function toShown(
+  place: StoredPlace,
+  overrides: CityOverrides,
+  farKm: number | null,
+  nameOf: ReadonlyMap<string, string>,
+  countryCode: string | undefined,
+): ShownPlace {
   const { kinds: _kinds, labels: _labels, osmNames: _osmNames, name: _name, localName: _localName, ...rest } = place;
-  const parentName = place.parentId && place.parentName && !isLatin(place.parentName) ? nameOf.get(place.parentId) : undefined;
+  // The parent's name as shown, for a stored parentName in another script or a renamed parent.
+  const renamedParent = place.parentId ? overrides.rename?.find((o) => o.qid === place.parentId)?.shownName : undefined;
+  const parentName =
+    renamedParent ?? (place.parentId && place.parentName && !isLatin(place.parentName) ? nameOf.get(place.parentId) : undefined);
   const qid = place.wikidataId;
   const included = qid ? overrides.include?.find((o) => o.qid === qid) : undefined;
   const visitMin = [included, ...[overrides.open, overrides.visit].map((list) => (qid ? list?.find((o) => o.qid === qid) : undefined))].find(
@@ -159,7 +177,7 @@ function toShown(place: StoredPlace, overrides: CityOverrides, farKm: number | n
   const exterior = qid ? overrides.exteriorOnly?.find((o) => o.qid === qid) : undefined;
   const open = Boolean(qid && overrides.open?.some((o) => o.qid === qid));
   return {
-    ...readableName(place),
+    ...shownName(place, overrides, countryCode),
     ...rest,
     ...(parentName ? { parentName } : {}),
     ...(isWalkThrough(place) ? { walkThrough: true } : {}),
@@ -209,11 +227,13 @@ function centreOf(cityCode: string) {
 /**
  * Applies the sight rules and the city's overrides, then the per-category limit (40 sights or museums, 30 others),
  * and marks the places far from the centre (far.ts; the centre is the destination's tourist centre, `cityCentre`).
+ * Names in another script are romanized by the official system of the destination's country (names.ts).
  */
 export function applyPlaceRules(
   file: PlacesFile,
   overrides: CityOverrides = PLACE_OVERRIDES[file.cityCode] ?? {},
   centre: { lat: number; lon: number } | undefined = centreOf(file.cityCode),
+  countryCode: string | undefined = findDestination(file.cityCode)?.countryCode,
 ): ShownPlacesFile {
   const kept = {} as Partial<Record<CategoryId, StoredPlace[]>>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
@@ -232,12 +252,12 @@ export function applyPlaceRules(
   const nameOf = new Map(
     Object.values(kept)
       .flat()
-      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, readableName(p).name] as const] : [])),
+      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, shownName(p, overrides, countryCode).name] as const] : [])),
   );
   const categories = {} as Record<CategoryId, ShownCategory>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
     const places = kept[id];
-    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf)) } : entry;
+    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf, countryCode)) } : entry;
   }
   return { ...file, categories };
 }

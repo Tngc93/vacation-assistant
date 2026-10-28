@@ -62,13 +62,14 @@ test("Sarajevo without flights: half days, marked as an assumption", async ({ pa
 test("Moscow: the Tsar Cannon is a sub-stop of the Kremlin, and goes with it when the Kremlin is removed", async ({ page }) => {
   await page.goto(`/plan?to=MOW&${trip}`);
   const plan = page.locator("#gun-gun-plan");
-  const inside = plan.getByRole("list", { name: "Kremlini içinde" });
+  // Wikidata's Turkish label is "Kremlini": a rename override shows "Moskova Kremlini" (place-overrides.ts).
+  const inside = plan.getByRole("list", { name: "Moskova Kremlini içinde" });
   await expect(inside.getByText(/^Çar Topu/)).toBeVisible();
-  await expect(inside.getByText(/^KREMLİNİ İÇİNDE · /).first()).toBeVisible();
+  await expect(inside.getByText(/^MOSKOVA KREMLİNİ İÇİNDE · /).first()).toBeVisible();
   // Never a stop of its own: no time and no walk inside the list.
   await expect(inside.getByText(/^YÜRÜME /)).toHaveCount(0);
 
-  await plan.getByRole("button", { name: "Kremlini durağını plandan çıkar" }).click();
+  await plan.getByRole("button", { name: "Moskova Kremlini durağını plandan çıkar" }).click();
   await expect(page).toHaveURL(/skip=r1360641/);
   await expect(plan.getByText(/^Çar Topu/)).toHaveCount(0);
   await plan.getByRole("button", { name: "Planı sıfırla (1)" }).click();

@@ -1,7 +1,11 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { EVENING, SIGHTS } from "@/lib/itinerary/testCity";
+import type { PlacesFile } from "@/lib/places/file";
+import { applyPlaceRules } from "@/lib/places/rules";
 import { ItineraryView } from "./ItineraryView";
 
 // MapLibre needs WebGL; the plan itself is what is under test.
@@ -113,6 +117,19 @@ describe("ItineraryView", () => {
     expect(window.location.search).toBe(`?${SEARCH}&skip=n101`);
     expect(screen.getByText("Sight 0-0")).toBeInTheDocument();
     expect(screen.queryByText("Sight 0-1")).not.toBeInTheDocument();
+  });
+
+  it("names the Moscow Kremlin as the rename override says in a sub-stop's caption", () => {
+    const moscow = applyPlaceRules(JSON.parse(readFileSync(path.join(process.cwd(), "src/data/places/MOW.json"), "utf8")) as PlacesFile);
+    const see = moscow.categories.see.status === "ok" ? moscow.categories.see.places : [];
+    const bell = see.find((p) => p.wikidataId === "Q147875")!;
+    const parent = { ...SIGHTS[0], wikidataId: "Q133274" };
+    const child = { ...SIGHTS[1], wikidataId: "Q147875", parentId: "Q133274", parentName: bell.parentName };
+    render(
+      <ItineraryView input={{ ...input, daytime: [parent, child, ...SIGHTS.slice(2)] }} initialSkip={[]} cityName="Moskova" center={{ lat: 55.75, lon: 37.62 }} />,
+    );
+    const inside = screen.getByRole("list", { name: "Sight 0-0 içinde" });
+    expect(within(inside).getByText(/^MOSKOVA KREMLİNİ İÇİNDE · /)).toBeInTheDocument();
   });
 
   it("shows free time and links a flight-limited day to the flights section", () => {
