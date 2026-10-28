@@ -5,6 +5,7 @@ import { chooseParents, fetchParents } from "./containment";
 import type { PlacesFile, StoredPlace } from "./file";
 import { linkTags, type KindTag } from "./kinds";
 import { fetchCoordinates, fetchKinds } from "./landmarks";
+import { isLatin } from "./names";
 import type { Fetcher } from "./overpass";
 import { compareRanked } from "./rank";
 import { sameNameOnce } from "./twins";
@@ -14,7 +15,8 @@ import { fetchEntitySummaries, fetchWikipediaCounts } from "./wikidata";
  * Brings a stored file's Wikidata facts up to date without Overpass (data script only): applies the relink
  * overrides (the right item's Wikipedia count; a Wikidata-only copy of that item goes, the OSM object is it),
  * adds included places the file does not have (the Atomium, beyond the city radius) from Wikidata, then
- * stores every sight's kinds and, for OSM objects, whether their item has a coordinate near them.
+ * stores every sight's kinds and, for OSM objects, whether their item has a coordinate near them. A place
+ * whose name is not in the Latin script keeps its item's Turkish and English labels (names.ts).
  */
 export async function refreshKinds(
   file: PlacesFile,
@@ -110,6 +112,20 @@ export async function refreshKinds(
       const { parentId: _id, parentName: _name, ...rest } = p;
       const parent = p.wikidataId ? parents.get(p.wikidataId) : undefined;
       return parent ? { ...rest, ...parent } : rest;
+    });
+  }
+  // 4. Latin labels for names in another script (names.ts), in every category: "東京タワー" → "Tokyo Kulesi".
+  const all = Object.keys(categories) as CategoryId[];
+  const unreadable = [...new Set(all.flatMap(placesOf).flatMap((p) => (p.wikidataId && !isLatin(p.name) ? [p.wikidataId] : [])))];
+  const labelsOf = unreadable.length ? await fetchEntitySummaries(unreadable, { fetcher }) : new Map<string, { tr?: string; en?: string }>();
+  for (const c of all) {
+    const entry = categories[c];
+    if (entry.status !== "ok") continue;
+    entry.places = entry.places.map((p): StoredPlace => {
+      const { labels: _labels, ...rest } = p;
+      const info = p.wikidataId && !isLatin(p.name) ? labelsOf.get(p.wikidataId) : undefined;
+      const labels = { ...(info?.tr ? { tr: info.tr } : {}), ...(info?.en ? { en: info.en } : {}) };
+      return Object.keys(labels).length ? { ...rest, labels } : rest;
     });
   }
   return { file: { ...file, categories }, relinked, added, missing };

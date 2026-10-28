@@ -1,8 +1,8 @@
 {
  "version": 5,
  "cityCode": "TYO",
- "fetchedAt": "2026-10-23T14:22:29.871Z",
- "radiusKm": 4,
+ "fetchedAt": "2026-10-27T19:36:52.371Z",
+ "radiusKm": 7.5,
  "license": {
   "name": "ODbL-1.0",
   "url": "https://opendatacommons.org/licenses/odbl/1-0/",
@@ -66,11 +66,56 @@
      "description": "building in Tokyo, Japan"
     },
     {
-     "id": "wikidata/Q183536",
-     "name": "Tokyo Kulesi",
-     "localName": "Tokyo Tower",
-     "lat": 35.65861,
-     "lon": 139.74556,
+     "id": "way/288269147",
+     "name": "東京スカイツリー",
+     "osmNames": {
+      "en": "Tokyo Skytree",
+      "latin": "Tōkyō Sukaitsurī",
+      "int": "Tokyo Skytree"
+     },
+     "labels": {
+      "tr": "Tokyo Skytree",
+      "en": "Tokyo Skytree"
+     },
+     "lat": 35.71005,
+     "lon": 139.81071,
+     "address": "押上一丁目",
+     "website": "https://www.tokyo-skytree.jp/",
+     "openingHours": "Mo-Su 08:00-22:00",
+     "wikipediaCount": 72,
+     "wikidataId": "Q57965",
+     "kinds": [
+      "adminArea",
+      "attraction",
+      "tower"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Skytree_2023.jpg/500px-Tokyo_Skytree_2023.jpg",
+      "width": 500,
+      "height": 889,
+      "author": "Akonnchiroll",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2023.jpg",
+      "fullWidth": 1799
+     },
+     "description": "tower in Tokyo, Japan"
+    },
+    {
+     "id": "relation/4247312",
+     "name": "東京タワー",
+     "osmNames": {
+      "en": "Tokyo Tower",
+      "latin": "Tōkyō Tawā"
+     },
+     "labels": {
+      "tr": "Tokyo Kulesi",
+      "en": "Tokyo Tower"
+     },
+     "lat": 35.65856,
+     "lon": 139.74544,
+     "website": "https://www.tokyotower.co.jp/",
+     "openingHours": "Mo-Su 09:00-23:00",
      "wikipediaCount": 69,
      "wikidataId": "Q183536",
      "kinds": [
@@ -114,6 +159,30 @@
       "fullWidth": 3300
      },
      "description": "Tokyo'da kütüphane"
+    },
+    {
+     "id": "wikidata/Q204853",
+     "name": "Tokyo Uluslararası Havalimanı",
+     "localName": "Tokyo International Airport",
+     "lat": 35.55333,
+     "lon": 139.78111,
+     "wikipediaCount": 66,
+     "wikidataId": "Q204853",
+     "kinds": [
+      "airport",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Tokyo-International-Airport_Satellite.jpg/500px-Tokyo-International-Airport_Satellite.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MaedaAkihiko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo-International-Airport_Satellite.jpg",
+      "fullWidth": 5202
+     },
+     "description": "international airport serving Tokyo, Japan"
     },
     {
      "id": "wikidata/Q242803",
@@ -163,11 +232,20 @@
      "description": "Japonya'da mahalle"
     },
     {
-     "id": "wikidata/Q500681",
-     "name": "Tokyo İmparatorluk Sarayı",
-     "localName": "Tokyo Imperial Palace",
-     "lat": 35.6825,
-     "lon": 139.7521,
+     "id": "way/534754971",
+     "name": "皇居",
+     "osmNames": {
+      "en": "Imperial Palace",
+      "latin": "Kōkyo"
+     },
+     "labels": {
+      "tr": "Tokyo İmparatorluk Sarayı",
+      "en": "Tokyo Imperial Palace"
+     },
+     "lat": 35.68386,
+     "lon": 139.75083,
+     "address": "千代田",
+     "website": "https://www.kunaicho.go.jp/about/shisetsu/kokyo/kokyo.html",
      "wikipediaCount": 43,
      "wikidataId": "Q500681",
      "kinds": [
@@ -209,6 +287,123 @@
      "description": "stadium in Kasumigaoka, Tokyo, Japan"
     },
     {
+     "id": "node/5337040199",
+     "name": "お台場",
+     "osmNames": {
+      "en": "Odaiba",
+      "latin": "Odaiba"
+     },
+     "labels": {
+      "tr": "Odaiba",
+      "en": "Odaiba"
+     },
+     "lat": 35.62753,
+     "lon": 139.77147,
+     "wikipediaCount": 39,
+     "wikidataId": "Q211861",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/2018_FCG_Headquarters_Building_2.jpg/500px-2018_FCG_Headquarters_Building_2.jpg",
+      "width": 500,
+      "height": 324,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018_FCG_Headquarters_Building_2.jpg",
+      "fullWidth": 2500
+     },
+     "description": "town located in Minato-ku, Tokyo"
+    },
+    {
+     "id": "way/176046314",
+     "name": "天守台",
+     "osmNames": {
+      "en": "Tenshudai (Donjon)",
+      "latin": "Tenshudai"
+     },
+     "labels": {
+      "tr": "Edo Kalesi",
+      "en": "Edo Castle"
+     },
+     "lat": 35.68824,
+     "lon": 139.75444,
+     "wikipediaCount": 39,
+     "wikidataId": "Q865913",
+     "kinds": [
+      "adminArea",
+      "castle",
+      "heritage",
+      "organization"
+     ],
+     "description": "1457 yılında Edo'da inşa edilen bir düz arazi kalesi"
+    },
+    {
+     "id": "wikidata/Q283196",
+     "name": "Tokyo İstasyonu",
+     "localName": "Tokyo Station",
+     "lat": 35.68083,
+     "lon": 139.76694,
+     "wikipediaCount": 38,
+     "wikidataId": "Q283196",
+     "kinds": [
+      "heritage",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/500px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MaedaAkihiko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+      "fullWidth": 5395
+     },
+     "description": "railway and metro station in Chiyoda, Tokyo, Japan. Central station of Tokyo"
+    },
+    {
+     "id": "wikidata/Q386246",
+     "name": "Nippon Budokan",
+     "localName": "Nippon Budōkan",
+     "lat": 35.69333,
+     "lon": 139.75,
+     "wikipediaCount": 37,
+     "wikidataId": "Q386246",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Nippon_Budokan_2018.jpg/500px-Nippon_Budokan_2018.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nippon_Budokan_2018.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Tokyo'da yer alan bir kapalı arena"
+    },
+    {
+     "id": "wikidata/Q746216",
+     "name": "Ueno Parkı",
+     "localName": "Ueno Imperial Grant Park",
+     "lat": 35.71222,
+     "lon": 139.77111,
+     "wikipediaCount": 36,
+     "wikidataId": "Q746216",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/UenoPark_Hanami.jpg/500px-UenoPark_Hanami.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "The original uploader was Sdalu at English Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:UenoPark_Hanami.jpg",
+      "fullWidth": 640
+     },
+     "description": "Tokyo'da park"
+    },
+    {
      "id": "wikidata/Q287165",
      "name": "Meiji Tapınağı",
      "localName": "Meiji Jingū",
@@ -234,51 +429,107 @@
      "description": "Şinto tapınağı, Tokyo, Japonya"
     },
     {
-     "id": "wikidata/Q111973",
-     "name": "Tokyo Government Binası",
-     "localName": "Tokyo Metropolitan Government Building",
-     "lat": 35.68951,
-     "lon": 139.69171,
-     "wikipediaCount": 29,
-     "wikidataId": "Q111973",
-     "kinds": [
-      "office"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Tokyo_Metropolitan_Government_Building_2024.jpg/500px-Tokyo_Metropolitan_Government_Building_2024.jpg",
-      "width": 500,
-      "height": 434,
-      "author": "Kakidai",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Government_Building_2024.jpg",
-      "fullWidth": 2500
+     "id": "way/173154847",
+     "name": "Храм Сенсодзи 金龍山 浅草寺",
+     "osmNames": {
+      "en": "Sensō-ji",
+      "latin": "Sensōji"
      },
-     "description": "Tokyo'da bina kompleksi"
-    },
-    {
-     "id": "wikidata/Q1710283",
-     "name": "Tokyo Camii",
-     "localName": "Tokyo Mosque",
-     "lat": 35.66814,
-     "lon": 139.6765,
-     "wikipediaCount": 28,
-     "wikidataId": "Q1710283",
+     "labels": {
+      "tr": "Sensō-ji",
+      "en": "Sensō-ji Temple"
+     },
+     "lat": 35.71345,
+     "lon": 139.79595,
+     "address": "浅草二丁目",
+     "website": "https://senso-ji.jp/",
+     "openingHours": "Mo-Su 06:00-17:00",
+     "wikipediaCount": 31,
+     "wikidataId": "Q615183",
      "kinds": [
       "organization",
       "religious"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Tokyo_Camii_2009.jpg/500px-Tokyo_Camii_2009.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/500px-Sensoji_2023.jpg",
       "width": 500,
-      "height": 580,
-      "author": "Wiiii",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Camii_2009.jpg",
-      "fullWidth": 2092
+      "height": 357,
+      "author": "Akonnchiroll",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg",
+      "fullWidth": 3466
      },
-     "description": "Tokyo, Japonya'da bir cami"
+     "description": "Buddhist temple in Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q860935",
+     "name": "Japonya Meteoroloji Genel Müdürlüğü",
+     "localName": "Japan Meteorological Agency",
+     "lat": 35.66583,
+     "lon": 139.74583,
+     "wikipediaCount": 31,
+     "wikidataId": "Q860935",
+     "kinds": [
+      "notPlace",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/JMA_Toranomon_office_2020-11-24.jpg/500px-JMA_Toranomon_office_2020-11-24.jpg",
+      "width": 500,
+      "height": 633,
+      "author": "Europeans1145",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:JMA_Toranomon_office_2020-11-24.jpg",
+      "fullWidth": 2229
+     },
+     "description": "Japon devlet kurumu"
+    },
+    {
+     "id": "wikidata/Q733748",
+     "name": "Tokyo Dome",
+     "lat": 35.70556,
+     "lon": 139.75194,
+     "wikipediaCount": 31,
+     "wikidataId": "Q733748",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Tokyo_dome.JPG/500px-Tokyo_dome.JPG",
+      "width": 500,
+      "height": 390,
+      "author": "Carpkazu at Japanese Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_dome.JPG",
+      "fullWidth": 1419
+     },
+     "description": "indoor stadium in Bunkyō, Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q1046736",
+     "name": "Rainbow Köprüsü",
+     "localName": "Rainbow Bridge",
+     "lat": 35.63639,
+     "lon": 139.76361,
+     "wikipediaCount": 28,
+     "wikidataId": "Q1046736",
+     "kinds": [
+      "bridge"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Rainbow-Bridge_%28%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%29_-_panoramio.jpg/500px-Rainbow-Bridge_%28%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%29_-_panoramio.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "yuukin",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Rainbow-Bridge_(%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8)_-_panoramio.jpg",
+      "fullWidth": 4000
+     },
+     "description": "suspension bridge across the Tokyo Bay, Japan"
     },
     {
      "id": "wikidata/Q1069457",
@@ -305,8 +556,127 @@
      "description": "arena in Japan"
     },
     {
+     "id": "wikidata/Q1193480",
+     "name": "Aziz Meryem Katedrali (Tokyo)",
+     "localName": "St. Mary's Cathedral",
+     "lat": 35.71417,
+     "lon": 139.72667,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1193480",
+     "kinds": [
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/St._Mary%27s_Cathedral_Tokyo_2012.JPG/500px-St._Mary%27s_Cathedral_Tokyo_2012.JPG",
+      "width": 500,
+      "height": 379,
+      "author": "Kakidai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:St._Mary%27s_Cathedral_Tokyo_2012.JPG",
+      "fullWidth": 3956
+     },
+     "description": "seat of the Roman Catholic Archdiocese of Tokyo"
+    },
+    {
+     "id": "wikidata/Q963514",
+     "name": "Tōkaidō (yol)",
+     "localName": "Tōkaidō",
+     "lat": 35.68361,
+     "lon": 139.77444,
+     "wikipediaCount": 26,
+     "wikidataId": "Q963514",
+     "kinds": [
+      "road"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tokaido1825.jpg/500px-Tokaido1825.jpg",
+      "width": 500,
+      "height": 408,
+      "author": "Felice Beato",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tokaido1825.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokaido1825.jpg",
+      "fullWidth": 1200
+     },
+     "description": "road of premodern Japan"
+    },
+    {
+     "id": "wikidata/Q162722",
+     "name": "Ueno Hayvanat Bahçesi",
+     "localName": "Ueno Zoo",
+     "lat": 35.7175,
+     "lon": 139.77139,
+     "wikipediaCount": 26,
+     "wikidataId": "Q162722",
+     "kinds": [
+      "attraction"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Ueno-zoo.jpg/500px-Ueno-zoo.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Los688",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ueno-zoo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ueno-zoo.jpg",
+      "fullWidth": 640
+     },
+     "description": "Tokyo'da hayvanat bahçesi"
+    },
+    {
+     "id": "wikidata/Q1338856",
+     "name": "Ulusal Diet Binası",
+     "localName": "National Diet Building",
+     "lat": 35.67571,
+     "lon": 139.74481,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1338856",
+     "kinds": [
+      "office"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Diet_of_Japan_Kokkai_2009.jpg/500px-Diet_of_Japan_Kokkai_2009.jpg",
+      "width": 500,
+      "height": 337,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Diet_of_Japan_Kokkai_2009.jpg",
+      "fullWidth": 2561
+     },
+     "description": "parliament building of Japan"
+    },
+    {
+     "id": "node/13983231457",
+     "name": "Yoshiwara Red Light District",
+     "lat": 35.72377,
+     "lon": 139.79536,
+     "wikipediaCount": 26,
+     "wikidataId": "Q1859550",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Yoshiwara-Postcard-1910.jpg/500px-Yoshiwara-Postcard-1910.jpg",
+      "width": 500,
+      "height": 316,
+      "author": "Unknown author Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Yoshiwara-Postcard-1910.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Yoshiwara-Postcard-1910.jpg",
+      "fullWidth": 607
+     },
+     "description": "Japonya'da bir kaç kadın"
+    },
+    {
      "id": "relation/6109212",
      "name": "迎賓館",
+     "osmNames": {
+      "en": "Akasaka Palace",
+      "latin": "Geihinkan"
+     },
+     "labels": {
+      "tr": "Akasaka Sarayı",
+      "en": "Akasaka Palace"
+     },
      "lat": 35.68031,
      "lon": 139.72877,
      "address": "元赤坂二丁目",
@@ -375,6 +745,51 @@
      "description": "Tokyo'da park"
     },
     {
+     "id": "wikidata/Q176821",
+     "name": "Ryōgoku Kokugikan",
+     "lat": 35.69694,
+     "lon": 139.79333,
+     "wikipediaCount": 24,
+     "wikidataId": "Q176821",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ryogoku_Great_Sumo_Hall.jpg/500px-Ryogoku_Great_Sumo_Hall.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Steve Cadman",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ryogoku_Great_Sumo_Hall.jpg",
+      "fullWidth": 2272
+     },
+     "description": "Tokyo'da yer alan kapalı arena"
+    },
+    {
+     "id": "wikidata/Q3299452",
+     "name": "Ariake Kolezyumu",
+     "localName": "Ariake Coliseum",
+     "lat": 35.63639,
+     "lon": 139.79028,
+     "wikipediaCount": 23,
+     "wikidataId": "Q3299452",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Ariake_Tennis_no_Mori_K%C5%8Den_1.jpg/500px-Ariake_Tennis_no_Mori_K%C5%8Den_1.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ariake_Tennis_no_Mori_K%C5%8Den_1.jpg",
+      "fullWidth": 4876
+     },
+     "description": "sporting arena"
+    },
+    {
      "id": "wikidata/Q776863",
      "name": "Shinjuku Gyoen",
      "lat": 35.68717,
@@ -416,6 +831,98 @@
      "description": "scramble crossing in Tokyo, Japan"
     },
     {
+     "id": "wikidata/Q1359892",
+     "name": "Tokyo Uluslararası Forumu",
+     "localName": "Tokyo International Forum",
+     "lat": 35.67694,
+     "lon": 139.76417,
+     "wikipediaCount": 21,
+     "wikidataId": "Q1359892",
+     "kinds": [
+      "business",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Tokyo-International-Forum_Glass-Building_Outside.jpg/500px-Tokyo-International-Forum_Glass-Building_Outside.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MaedaAkihiko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo-International-Forum_Glass-Building_Outside.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Tokyo'da fuar alanı"
+    },
+    {
+     "id": "wikidata/Q28068157",
+     "name": "Ariake Arena",
+     "lat": 35.6434,
+     "lon": 139.7943,
+     "wikipediaCount": 20,
+     "wikidataId": "Q28068157",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/%E6%9C%89%E6%98%8E%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2024%E5%B9%B412%E6%9C%8816%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202412161406_IMG_4936.jpg/500px-%E6%9C%89%E6%98%8E%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2024%E5%B9%B412%E6%9C%8816%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202412161406_IMG_4936.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "ウィ貴公子",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E6%9C%89%E6%98%8E%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2024%E5%B9%B412%E6%9C%8816%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202412161406_IMG_4936.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Venue of the 2020 Summer Olympics"
+    },
+    {
+     "id": "wikidata/Q800405",
+     "name": "Asakusa Station",
+     "lat": 35.71194,
+     "lon": 139.79833,
+     "wikipediaCount": 20,
+     "wikidataId": "Q800405",
+     "kinds": [
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Tobu-Asakusa-station-2018.jpg/500px-Tobu-Asakusa-station-2018.jpg",
+      "width": 500,
+      "height": 357,
+      "author": "Kansai-good",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tobu-Asakusa-station-2018.jpg",
+      "fullWidth": 4032
+     },
+     "description": "railway station and metro station in Taitō, Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q1165384",
+     "name": "Kōdōkan",
+     "lat": 35.708,
+     "lon": 139.75344,
+     "wikipediaCount": 20,
+     "wikidataId": "Q1165384",
+     "kinds": [
+      "business",
+      "organization",
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Kodokan_Main_Entrance.jpg/500px-Kodokan_Main_Entrance.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Henrik Probell ( Probell )",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kodokan_Main_Entrance.jpg",
+      "fullWidth": 2048
+     },
+     "description": "Judo institute"
+    },
+    {
      "id": "wikidata/Q2090752",
      "name": "NTT Docomo Yoyogi Building",
      "lat": 35.68436,
@@ -436,6 +943,163 @@
       "fullWidth": 1439
      },
      "description": "building in Shibuya, Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q602942",
+     "name": "Sunshine 60",
+     "lat": 35.72958,
+     "lon": 139.71778,
+     "wikipediaCount": 20,
+     "wikidataId": "Q602942",
+     "kinds": [
+      "skyscraper"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Sunshine_60.JPG/500px-Sunshine_60.JPG",
+      "width": 500,
+      "height": 770,
+      "author": "Kakidai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_60.JPG",
+      "fullWidth": 2465
+     },
+     "description": "Tokyo'da gökdelen"
+    },
+    {
+     "id": "wikidata/Q65038183",
+     "name": "Tokyo Su Sporları Merkezi",
+     "localName": "Tokyo Aquatics Centre",
+     "lat": 35.6511,
+     "lon": 139.8151,
+     "wikipediaCount": 19,
+     "wikidataId": "Q65038183",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Tokyo_Aquatics_Centre_200124b.jpg/500px-Tokyo_Aquatics_Centre_200124b.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Aquatics_Centre_200124b.jpg",
+      "fullWidth": 4496
+     },
+     "description": "Sports venue in Kōtō, Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q1033333",
+     "name": "Hamarikyu Bahçeleri",
+     "localName": "Hamarikyu Gardens",
+     "lat": 35.66,
+     "lon": 139.762,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1033333",
+     "kinds": [
+      "heritage",
+      "palace"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Hamarikyu_Garden_as_seen_from_Shiodome.jpg/500px-Hamarikyu_Garden_as_seen_from_Shiodome.jpg",
+      "width": 500,
+      "height": 473,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamarikyu_Garden_as_seen_from_Shiodome.jpg",
+      "fullWidth": 2467
+     },
+     "description": "park in Chuo, Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q659013",
+     "name": "Kantei",
+     "localName": "Prime Minister's Official Residence",
+     "lat": 35.673,
+     "lon": 139.743,
+     "wikipediaCount": 18,
+     "wikidataId": "Q659013",
+     "kinds": [
+      "residence"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Kantei_PM_Japan_Residence.jpg/500px-Kantei_PM_Japan_Residence.jpg",
+      "width": 500,
+      "height": 290,
+      "author": "内閣官房内閣広報室",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kantei_PM_Japan_Residence.jpg",
+      "fullWidth": 1520
+     },
+     "description": "official residence and workplace of the Prime Minister of Japan"
+    },
+    {
+     "id": "wikidata/Q1150357",
+     "name": "Midtown Kulesi",
+     "localName": "Midtown Tower",
+     "lat": 35.66639,
+     "lon": 139.73167,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1150357",
+     "kinds": [
+      "skyscraper"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Tokyo-Midtown-Tower-05.jpg/500px-Tokyo-Midtown-Tower-05.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Rs1421",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo-Midtown-Tower-05.jpg",
+      "fullWidth": 1067
+     },
+     "description": "Tokyo'da gökdelen"
+    },
+    {
+     "id": "wikidata/Q1359125",
+     "name": "Tokyo Big Sight",
+     "lat": 35.63016,
+     "lon": 139.79374,
+     "wikipediaCount": 18,
+     "wikidataId": "Q1359125",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/20030727_27_July_2003_Tokyo_International_Exhibition_Center_Big_Sight_Odaiba_Tokyo_Japan.jpg/500px-20030727_27_July_2003_Tokyo_International_Exhibition_Center_Big_Sight_Odaiba_Tokyo_Japan.jpg",
+      "width": 500,
+      "height": 374,
+      "author": "Morio",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:20030727_27_July_2003_Tokyo_International_Exhibition_Center_Big_Sight_Odaiba_Tokyo_Japan.jpg",
+      "fullWidth": 2288
+     },
+     "description": "Japonya'daki bir gösteri ve sergi merkezi"
+    },
+    {
+     "id": "wikidata/Q55532859",
+     "name": "Ariake Jimnastik Merkezi",
+     "localName": "Ariake Gymnastics Centre",
+     "lat": 35.6414,
+     "lon": 139.7917,
+     "wikipediaCount": 17,
+     "wikidataId": "Q55532859",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Olympic_Gymnastic_Centre_191128a1.jpg/500px-Olympic_Gymnastic_Centre_191128a1.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Olympic_Gymnastic_Centre_191128a1.jpg",
+      "fullWidth": 4496
+     },
+     "description": "exhibition hall in Tokyo, Japan"
     },
     {
      "id": "wikidata/Q1205090",
@@ -484,6 +1148,26 @@
      "description": "Tokyo'da metro ve tren istasyonu"
     },
     {
+     "id": "wikidata/Q11431452",
+     "name": "Yumenoshima Parkı",
+     "localName": "Yumenoshima Park",
+     "lat": 35.65075,
+     "lon": 139.82556,
+     "wikipediaCount": 17,
+     "wikidataId": "Q11431452",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Akahata_Matsuri_02.jpg/500px-Akahata_Matsuri_02.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "保守",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Akahata_Matsuri_02.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Akahata_Matsuri_02.jpg",
+      "fullWidth": 2048
+     },
+     "description": "park in Tokyo, Japan"
+    },
+    {
      "id": "wikidata/Q685328",
      "name": "109 (alışveriş merkezi)",
      "localName": "109",
@@ -530,74 +1214,239 @@
      "description": "rugby stadium in Tokyo, Japan"
     },
     {
-     "id": "wikidata/Q1348023",
-     "name": "Shinjuku Park Kulesi",
-     "localName": "Shinjuku Park Tower",
-     "lat": 35.68564,
-     "lon": 139.69095,
+     "id": "wikidata/Q800953",
+     "name": "Iidabashi İstasyonu",
+     "localName": "Iidabashi Station",
+     "lat": 35.70206,
+     "lon": 139.745,
      "wikipediaCount": 16,
-     "wikidataId": "Q1348023",
-     "kinds": [
-      "skyscraper"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Shinjuku_Park_Tower.jpg/500px-Shinjuku_Park_Tower.jpg",
-      "width": 500,
-      "height": 700,
-      "author": "Akonnchiroll",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Park_Tower.jpg",
-      "fullWidth": 1972
-     },
-     "description": "Tokyo'da gökdelen"
-    },
-    {
-     "id": "wikidata/Q1201889",
-     "name": "Tokyo Opera City Kulesi",
-     "localName": "Tokyo Opera City Tower",
-     "lat": 35.68309,
-     "lon": 139.68707,
-     "wikipediaCount": 16,
-     "wikidataId": "Q1201889",
-     "kinds": [
-      "skyscraper"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Tokyo_Opera_City-2.jpg/500px-Tokyo_Opera_City-2.jpg",
-      "width": 500,
-      "height": 667,
-      "author": "Tokyo_Opera_City.jpg : Ons derivative work: Torsodog ( talk )",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Opera_City-2.jpg",
-      "fullWidth": 1536
-     },
-     "description": "Tokyo'da gökdelen"
-    },
-    {
-     "id": "wikidata/Q801234",
-     "name": "Nakano İstasyonu",
-     "localName": "Nakano Station",
-     "lat": 35.70583,
-     "lon": 139.66556,
-     "wikipediaCount": 15,
-     "wikidataId": "Q801234",
+     "wikidataId": "Q800953",
      "kinds": [
       "notPlace",
       "station"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/JR_Chuo-Main-Line%E3%83%BBTokyo_Metro_Tozai-Line_Nakano_Station_Platform_3%E3%83%BB4_%2820210418%29.jpg/500px-JR_Chuo-Main-Line%E3%83%BBTokyo_Metro_Tozai-Line_Nakano_Station_Platform_3%E3%83%BB4_%2820210418%29.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Iidabashi_Station_200719a.jpg/500px-Iidabashi_Station_200719a.jpg",
       "width": 500,
-      "height": 273,
-      "author": "Mister0124",
+      "height": 334,
+      "author": "江戸村のとくぞう This photo was taken with Nikon D3400",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:JR_Chuo-Main-Line%E3%83%BBTokyo_Metro_Tozai-Line_Nakano_Station_Platform_3%E3%83%BB4_(20210418).jpg",
-      "fullWidth": 4483
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Iidabashi_Station_200719a.jpg",
+      "fullWidth": 4496
      },
      "description": "Tokyo'da metro ve tren istasyonu"
+    },
+    {
+     "id": "wikidata/Q712476",
+     "name": "Imperial Hotel",
+     "lat": 35.67213,
+     "lon": 139.75891,
+     "wikipediaCount": 16,
+     "wikidataId": "Q712476",
+     "kinds": [
+      "business",
+      "hotel",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Hotel_Tokyo.JPG/500px-Imperial_Hotel_Tokyo.JPG",
+      "width": 500,
+      "height": 567,
+      "author": "Kakidai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Imperial_Hotel_Tokyo.JPG",
+      "fullWidth": 2206
+     },
+     "description": "Tokyo'da otel"
+    },
+    {
+     "id": "wikidata/Q1191191",
+     "name": "Japonya Devlet Yolu 1",
+     "localName": "Japan National Route 1",
+     "lat": 35.68411,
+     "lon": 139.77447,
+     "wikipediaCount": 16,
+     "wikidataId": "Q1191191",
+     "kinds": [
+      "road"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Tokyotower_sakurada.jpg/500px-Tokyotower_sakurada.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Jonny-mt",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyotower_sakurada.jpg",
+      "fullWidth": 1704
+     },
+     "description": "Tokyo-Osaka arasında otoyol"
+    },
+    {
+     "id": "wikidata/Q3082575",
+     "name": "Kabuki-za",
+     "lat": 35.66972,
+     "lon": 139.76806,
+     "wikipediaCount": 16,
+     "wikidataId": "Q3082575",
+     "kinds": [
+      "business",
+      "organization",
+      "performingArts",
+      "theatre"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/2019_Kabuki-za.jpg/500px-2019_Kabuki-za.jpg",
+      "width": 500,
+      "height": 316,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2019_Kabuki-za.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Tokyo'da tiyatro binası"
+    },
+    {
+     "id": "wikidata/Q670049",
+     "name": "Asakusa Shrine",
+     "lat": 35.71514,
+     "lon": 139.79744,
+     "wikipediaCount": 15,
+     "wikidataId": "Q670049",
+     "kinds": [
+      "heritage",
+      "organization",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Asakusa_shrine_2012.JPG/500px-Asakusa_shrine_2012.JPG",
+      "width": 500,
+      "height": 314,
+      "author": "Kakidai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Asakusa_shrine_2012.JPG",
+      "fullWidth": 2387
+     },
+     "description": "Shinto shrine in Tokyo, Japan",
+     "parentId": "Q615183",
+     "parentName": "Sensō-ji"
+    },
+    {
+     "id": "wikidata/Q1378533",
+     "name": "Hibiya Parkı",
+     "localName": "Hibiya Park",
+     "lat": 35.67148,
+     "lon": 139.75539,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1378533",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Hibiya_Park09bs3200.jpg/500px-Hibiya_Park09bs3200.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hibiya_Park09bs3200.jpg",
+      "fullWidth": 3200
+     },
+     "description": "Tokyo'da park"
+    },
+    {
+     "id": "wikidata/Q1369225",
+     "name": "Japonya Ulusal Tiyatrosu",
+     "localName": "National Theatre of Japan",
+     "lat": 35.68139,
+     "lon": 139.74306,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1369225",
+     "kinds": [
+      "business",
+      "organization",
+      "performingArts"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/2018_National_Theatre_of_Japan.jpg/500px-2018_National_Theatre_of_Japan.jpg",
+      "width": 500,
+      "height": 331,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018_National_Theatre_of_Japan.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Tokyo'da ulusal tiyatro binası"
+    },
+    {
+     "id": "wikidata/Q2660430",
+     "name": "Kutsal Diriliş Katedrali",
+     "localName": "Holy Resurrection Cathedral",
+     "lat": 35.69804,
+     "lon": 139.76553,
+     "wikipediaCount": 15,
+     "wikidataId": "Q2660430",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Nikolai-do.jpg/500px-Nikolai-do.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nikolai-do.jpg",
+      "fullWidth": 1280
+     },
+     "description": "church in Chiyoda ward Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q801296",
+     "name": "Okachimachi İstasyonu",
+     "localName": "Okachimachi Station",
+     "lat": 35.70733,
+     "lon": 139.77485,
+     "wikipediaCount": 15,
+     "wikidataId": "Q801296",
+     "kinds": [
+      "notPlace",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/JROkachimachiStation-northexit-2018-3-11.jpg/500px-JROkachimachiStation-northexit-2018-3-11.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "Nesnad",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:JROkachimachiStation-northexit-2018-3-11.jpg",
+      "fullWidth": 4592
+     },
+     "description": "Tokyo'da metro ve tren istasyonu"
+    },
+    {
+     "id": "wikidata/Q42311591",
+     "name": "Shiba Parkı",
+     "localName": "Shiba Park",
+     "lat": 35.65611,
+     "lon": 139.74833,
+     "wikipediaCount": 15,
+     "wikidataId": "Q42311591",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Tokyo_Tower_%289155613789%29.jpg/500px-Tokyo_Tower_%289155613789%29.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Guilhem Vellut from Annecy, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_(9155613789).jpg",
+      "fullWidth": 3648
+     },
+     "description": "Tokyo'da park"
     },
     {
      "id": "wikidata/Q801654",
@@ -624,27 +1473,78 @@
      "description": "Tokyo'da metro ve tren istasyonu"
     },
     {
-     "id": "wikidata/Q1131825",
-     "name": "Yoyogi-Uehara İstasyonu",
-     "localName": "Yoyogi-Uehara Station",
-     "lat": 35.66903,
-     "lon": 139.67972,
-     "wikipediaCount": 15,
-     "wikidataId": "Q1131825",
-     "kinds": [
-      "station"
-     ],
+     "id": "way/568436245",
+     "name": "六本木ヒルズ",
+     "osmNames": {
+      "en": "Roppongi Hills",
+      "latin": "Roppongi Hiruzu"
+     },
+     "labels": {
+      "tr": "Roppongi Hills",
+      "en": "Roppongi Hills"
+     },
+     "lat": 35.66022,
+     "lon": 139.73005,
+     "website": "https://www.roppongihills.com/",
+     "wikipediaCount": 14,
+     "wikidataId": "Q1071084",
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/TokyoMetro-C01-Yoyogi-uehara-station-sign-20190420-165814.jpg/500px-TokyoMetro-C01-Yoyogi-uehara-station-sign-20190420-165814.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Roppongi_Hills_from_Tokyo_Tower.jpg/500px-Roppongi_Hills_from_Tokyo_Tower.jpg",
       "width": 500,
-      "height": 281,
-      "author": "LERK",
+      "height": 375,
+      "author": "稲妻ノ歯鯨",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:TokyoMetro-C01-Yoyogi-uehara-station-sign-20190420-165814.jpg",
-      "fullWidth": 4000
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Roppongi_Hills_from_Tokyo_Tower.jpg",
+      "fullWidth": 4738
      },
-     "description": "Tokyo'da metro ve tren istasyonu"
+     "description": "Tokyo'da bina kompleksi"
+    },
+    {
+     "id": "wikidata/Q64225270",
+     "name": "Ariake Urban Sports Park",
+     "lat": 35.63933,
+     "lon": 139.78786,
+     "wikipediaCount": 14,
+     "wikidataId": "Q64225270",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ariake_Urban_Sports_Park_Tokyo.jpg/500px-Ariake_Urban_Sports_Park_Tokyo.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ariake_Urban_Sports_Park_Tokyo.jpg",
+      "fullWidth": 4862
+     },
+     "description": "stadium in Japan"
+    },
+    {
+     "id": "wikidata/Q702042",
+     "name": "Hie Tapınağı",
+     "localName": "Hie Shrine",
+     "lat": 35.67472,
+     "lon": 139.73958,
+     "wikipediaCount": 14,
+     "wikidataId": "Q702042",
+     "kinds": [
+      "organization",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Tokyo_Hie-Shrine_Gate.jpg/500px-Tokyo_Hie-Shrine_Gate.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MaedaAkihiko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Hie-Shrine_Gate.jpg",
+      "fullWidth": 5472
+     },
+     "description": "Tokyo'da Shinto tapınağı"
     },
     {
      "id": "wikidata/Q800947",
@@ -671,32 +1571,172 @@
      "description": "Tokyo'da tren ve metro istasyonu"
     },
     {
-     "id": "wikidata/Q1056064",
-     "name": "Tokyo Yeni Ulusal Tiyatrosu",
-     "localName": "New National Theatre Tokyo",
-     "lat": 35.6825,
-     "lon": 139.68556,
+     "id": "wikidata/Q1075966",
+     "name": "Kitanomaru Park",
+     "lat": 35.69153,
+     "lon": 139.75106,
      "wikipediaCount": 14,
-     "wikidataId": "Q1056064",
+     "wikidataId": "Q1075966",
      "kinds": [
-      "business",
-      "musicVenue",
-      "opera",
-      "organization",
-      "performingArts",
-      "theatre"
+      "adminArea"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/New_National_Theatre%2C_Tokyo_2010.jpg/500px-New_National_Theatre%2C_Tokyo_2010.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Kitanomaru_Park_01.jpg/500px-Kitanomaru_Park_01.jpg",
       "width": 500,
-      "height": 261,
-      "author": "Wiiii",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_National_Theatre,_Tokyo_2010.jpg",
-      "fullWidth": 3824
+      "height": 375,
+      "author": "Gary Bembridge from London/ New York, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kitanomaru_Park_01.jpg",
+      "fullWidth": 2530
      },
-     "description": "Tokyo'da ulusal tiyatro binası"
+     "description": "Japonya'da kasaba (chōchō)"
+    },
+    {
+     "id": "wikidata/Q801696",
+     "name": "Ōtsuka İstasyonu",
+     "localName": "Ōtsuka Station",
+     "lat": 35.73144,
+     "lon": 139.72869,
+     "wikipediaCount": 14,
+     "wikidataId": "Q801696",
+     "kinds": [
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Otsuka_Station_North.jpg/500px-Otsuka_Station_North.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MiNe",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Otsuka_Station_North.jpg",
+      "fullWidth": 3240
+     },
+     "description": "Tokyo'da metro ve tren istasyonu"
+    },
+    {
+     "id": "wikidata/Q1771772",
+     "name": "Roppongi Hills Mori Kulesi",
+     "localName": "Roppongi Hills Mori Tower",
+     "lat": 35.66056,
+     "lon": 139.72917,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1771772",
+     "kinds": [
+      "skyscraper"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Mori_Tower_-_Roppongi%2C_Tokyo%2C_Japan_-_DSC06760.JPG/500px-Mori_Tower_-_Roppongi%2C_Tokyo%2C_Japan_-_DSC06760.JPG",
+      "width": 500,
+      "height": 742,
+      "author": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mori_Tower_-_Roppongi,_Tokyo,_Japan_-_DSC06760.JPG",
+      "fullWidth": 3479
+     },
+     "description": "Tokyo'da gökdelen",
+     "parentId": "Q1071084",
+     "parentName": "Roppongi Hills"
+    },
+    {
+     "id": "wikidata/Q1376066",
+     "name": "Shin-Kiba Station",
+     "lat": 35.64611,
+     "lon": 139.82736,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1376066",
+     "kinds": [
+      "notPlace",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/JRE_Shin-Kiba-STA_Platform1-2.jpg/500px-JRE_Shin-Kiba-STA_Platform1-2.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "MaedaAkihiko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:JRE_Shin-Kiba-STA_Platform1-2.jpg",
+      "fullWidth": 5444
+     },
+     "description": "railway station and metro station in Koto, Tokyo, Japan"
+    },
+    {
+     "id": "wikidata/Q16724433",
+     "name": "Toranomon Hills",
+     "lat": 35.6669,
+     "lon": 139.749,
+     "wikipediaCount": 14,
+     "wikidataId": "Q16724433",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Toranomon_Hills.JPG/500px-Toranomon_Hills.JPG",
+      "width": 500,
+      "height": 765,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Toranomon_Hills.JPG",
+      "fullWidth": 1633
+     },
+     "description": "Tokyo'da gökdelen"
+    },
+    {
+     "id": "wikidata/Q801546",
+     "name": "Uguisudani İstasyonu",
+     "localName": "Uguisudani Station",
+     "lat": 35.7213,
+     "lon": 139.7783,
+     "wikipediaCount": 14,
+     "wikidataId": "Q801546",
+     "kinds": [
+      "notPlace",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Uguisudanistation-southexit-nov15-2014.jpg/500px-Uguisudanistation-southexit-nov15-2014.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Nesnad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Uguisudanistation-southexit-nov15-2014.jpg",
+      "fullWidth": 3648
+     },
+     "description": "Tokyo'da tren istasyonu"
+    },
+    {
+     "id": "node/5808073053",
+     "name": "大奥跡",
+     "osmNames": {
+      "en": "Site of Ōoku",
+      "latin": "Ōoku Ato"
+     },
+     "labels": {
+      "en": "Ōoku"
+     },
+     "lat": 35.68736,
+     "lon": 139.7554,
+     "wikipediaCount": 14,
+     "wikidataId": "Q1064983",
+     "kinds": [
+      "notPlace",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Ooku-utaawase.jpg/500px-Ooku-utaawase.jpg",
+      "width": 500,
+      "height": 248,
+      "author": "橋本（楊洲）周延（Hasimoto chikanobu）1838-1912",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ooku-utaawase.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Ooku-utaawase.jpg",
+      "fullWidth": 2013
+     },
+     "description": "term refers to the harem of Edo Castle",
+     "parentId": "Q865913",
+     "parentName": "Edo Kalesi"
     },
     {
      "id": "wikidata/Q1036028",
@@ -746,519 +1786,175 @@
      "description": "staff college of the Imperial Japanese Army"
     },
     {
-     "id": "wikidata/Q800921",
-     "name": "Higashi-Nakano İstasyonu",
-     "localName": "Higashi-Nakano Station",
-     "lat": 35.706,
-     "lon": 139.686,
+     "id": "wikidata/Q800404",
+     "name": "Asakusabashi İstasyonu",
+     "localName": "Asakusabashi Station",
+     "lat": 35.697,
+     "lon": 139.786,
      "wikipediaCount": 13,
-     "wikidataId": "Q800921",
-     "kinds": [
-      "station"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/JRE_Higashi-Nakano-STA_East.jpg/500px-JRE_Higashi-Nakano-STA_East.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "MaedaAkihiko",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:JRE_Higashi-Nakano-STA_East.jpg",
-      "fullWidth": 5323
-     },
-     "description": "Tokyo'da tren ve metro istasyonu"
-    },
-    {
-     "id": "wikidata/Q116259",
-     "name": "Ōkubo İstasyonu",
-     "localName": "Ōkubo Station",
-     "lat": 35.7007,
-     "lon": 139.697,
-     "wikipediaCount": 13,
-     "wikidataId": "Q116259",
+     "wikidataId": "Q800404",
      "kinds": [
       "notPlace",
       "station"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/JRE_Okubo-STA_Platform1-2.jpg/500px-JRE_Okubo-STA_Platform1-2.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "MaedaAkihiko",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:JRE_Okubo-STA_Platform1-2.jpg",
-      "fullWidth": 5472
-     },
-     "description": "Tokyo'da metro ve tren istasyonu"
-    },
-    {
-     "id": "wikidata/Q801428",
-     "name": "Sendagaya İstasyonu",
-     "localName": "Sendagaya Station",
-     "lat": 35.68111,
-     "lon": 139.71139,
-     "wikipediaCount": 13,
-     "wikidataId": "Q801428",
-     "kinds": [
-      "notPlace",
-      "station"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/JRE_Sendagaya-STA_Platform2.jpg/500px-JRE_Sendagaya-STA_Platform2.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "MaedaAkihiko",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:JRE_Sendagaya-STA_Platform2.jpg",
-      "fullWidth": 5472
-     },
-     "description": "Tokyo'da tren istasyonu"
-    },
-    {
-     "id": "wikidata/Q335677",
-     "name": "Shinanomachi İstasyonu",
-     "localName": "Shinanomachi Station",
-     "lat": 35.68,
-     "lon": 139.72028,
-     "wikipediaCount": 13,
-     "wikidataId": "Q335677",
-     "kinds": [
-      "notPlace",
-      "station"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/JRE_Shinanomachi-STA.jpg/500px-JRE_Shinanomachi-STA.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "MaedaAkihiko",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:JRE_Shinanomachi-STA.jpg",
-      "fullWidth": 5472
-     },
-     "description": "Tokyo'da tren istasyonu"
-    },
-    {
-     "id": "wikidata/Q944559",
-     "name": "Meiji Jingu Stadium",
-     "lat": 35.67457,
-     "lon": 139.71714,
-     "wikipediaCount": 12,
-     "wikidataId": "Q944559",
-     "kinds": [
-      "sportsVenue"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Meiji_Jingu_Stadium_2019c.jpg/500px-Meiji_Jingu_Stadium_2019c.jpg",
-      "width": 500,
-      "height": 334,
-      "author": "江戸村のとくぞう",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_Stadium_2019c.jpg",
-      "fullWidth": 4496
-     },
-     "description": "baseball stadium in Tokyo"
-    },
-    {
-     "id": "wikidata/Q1134395",
-     "name": "Shinjuku Center Building",
-     "lat": 35.69167,
-     "lon": 139.69556,
-     "wikipediaCount": 12,
-     "wikidataId": "Q1134395",
-     "kinds": [
-      "skyscraper"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Shinjuku-Center-Building-01.jpg/500px-Shinjuku-Center-Building-01.jpg",
-      "width": 500,
-      "height": 750,
-      "author": "Rs1421",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku-Center-Building-01.jpg",
-      "fullWidth": 1067
-     },
-     "description": "Tokyo'da gökdelen"
-    },
-    {
-     "id": "wikidata/Q2413330",
-     "name": "Shinjuku Mitsui Binası",
-     "localName": "Shinjuku Mitsui Building",
-     "lat": 35.6919,
-     "lon": 139.6939,
-     "wikipediaCount": 12,
-     "wikidataId": "Q2413330",
-     "kinds": [
-      "skyscraper"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Shinjuku_Mitsui_Building_2009_02.jpg/500px-Shinjuku_Mitsui_Building_2009_02.jpg",
-      "width": 500,
-      "height": 625,
-      "author": "Wiiii",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Mitsui_Building_2009_02.jpg",
-      "fullWidth": 1600
-     },
-     "description": "Tokyo'da gökdelen"
-    },
-    {
-     "id": "wikidata/Q4154095",
-     "name": "Daitabashi İstasyonu",
-     "localName": "Daitabashi Station",
-     "lat": 35.67097,
-     "lon": 139.65878,
-     "wikipediaCount": 11,
-     "wikidataId": "Q4154095",
-     "kinds": [
-      "station"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Daitabashi_Station_20230516a.jpg/500px-Daitabashi_Station_20230516a.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "江戸村のとくぞう",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Daitabashi_Station_20230516a.jpg",
-      "fullWidth": 6000
-     },
-     "description": "Tokyo'da tren istasyonu"
-    },
-    {
-     "id": "wikidata/Q841861",
-     "name": "Sasazuka İstasyonu",
-     "localName": "Sasazuka Station",
-     "lat": 35.67367,
-     "lon": 139.66722,
-     "wikipediaCount": 11,
-     "wikidataId": "Q841861",
-     "kinds": [
-      "station"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Sasazuka-Sta-Gate.JPG/500px-Sasazuka-Sta-Gate.JPG",
-      "width": 500,
-      "height": 304,
-      "author": "Nyao148",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sasazuka-Sta-Gate.JPG",
-      "fullWidth": 2000
-     },
-     "description": "Tokyo'da metro ve tren istasyonu"
-    },
-    {
-     "id": "wikidata/Q1138457",
-     "name": "Ulusal Nō Tiyatrosu",
-     "localName": "National Noh Theatre",
-     "lat": 35.68028,
-     "lon": 139.70814,
-     "wikipediaCount": 11,
-     "wikidataId": "Q1138457",
-     "kinds": [
-      "business",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/National-Noh-Theater-03.jpg/500px-National-Noh-Theater-03.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "Rs1421",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:National-Noh-Theater-03.jpg",
-      "fullWidth": 1600
-     },
-     "description": "Tokyo'da ulusal tiyatro binası"
-    },
-    {
-     "id": "way/97234607",
-     "name": "東宮御所",
-     "lat": 35.67809,
-     "lon": 139.72509,
-     "wikipediaCount": 11,
-     "wikidataId": "Q1036008",
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Geihinkan_Akasaka_Palace_Front_2010.jpg/500px-Geihinkan_Akasaka_Palace_Front_2010.jpg",
-      "width": 500,
-      "height": 347,
-      "author": "Wiiii",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Geihinkan_Akasaka_Palace_Front_2010.jpg",
-      "fullWidth": 2258
-     },
-     "description": "Tokyo'da saray"
-    },
-    {
-     "id": "relation/16562139",
-     "name": "新宿ゴールデン街",
-     "lat": 35.69406,
-     "lon": 139.70469,
-     "website": "http://goldengai.jp/",
-     "wikipediaCount": 6,
-     "wikidataId": "Q5363705",
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shinjuku_Golden_Gai.jpg/500px-Shinjuku_Golden_Gai.jpg",
-      "width": 500,
-      "height": 348,
-      "author": "てらたにこういち",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Golden_Gai.jpg",
-      "fullWidth": 600
-     },
-     "description": "Japonya'da mahalle"
-    },
-    {
-     "id": "way/863163760",
-     "name": "大隈庭園",
-     "lat": 35.70957,
-     "lon": 139.72205,
-     "wikipediaCount": 6,
-     "wikidataId": "Q3594031",
-     "kinds": [
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Okuma1.jpg/500px-Okuma1.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Asakusabashi_20220709054938_%2852267434998%29.jpg/500px-Asakusabashi_20220709054938_%2852267434998%29.jpg",
       "width": 500,
       "height": 375,
-      "author": "Irina Gelbukh",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Okuma1.jpg",
-      "fullWidth": 3648
+      "author": "inunami This photo was taken with iPhone XR",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Asakusabashi_20220709054938_(52267434998).jpg",
+      "fullWidth": 4032
      },
-     "description": "Japanese garden"
+     "description": "Tokyo'da metro ve tren istasyonu"
     },
     {
-     "id": "way/558850354",
-     "name": "赤坂御用地",
-     "lat": 35.67675,
-     "lon": 139.72697,
-     "wikipediaCount": 6,
-     "wikidataId": "Q11635414",
-     "description": "land in Akasaka, Tokyo"
-    },
-    {
-     "id": "way/94117018",
-     "name": "早稲田大学大隈記念講堂",
-     "lat": 35.70894,
-     "lon": 139.72158,
-     "address": "新宿区",
-     "website": "https://www.waseda.jp/culture/facility/auditorium/",
-     "wikipediaCount": 5,
-     "wikidataId": "Q2870807",
+     "id": "wikidata/Q1534481",
+     "name": "Gokoku-ji",
+     "localName": "Gokoku-ji Temple",
+     "lat": 35.72167,
+     "lon": 139.72556,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1534481",
      "kinds": [
       "heritage",
-      "tower"
+      "organization",
+      "religious"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Okuma_Auditorium.jpg/500px-Okuma_Auditorium.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Gokoku-ji_%28main_hall%29.jpg/500px-Gokoku-ji_%28main_hall%29.jpg",
       "width": 500,
-      "height": 500,
+      "height": 375,
+      "author": "Lombroso",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gokoku-ji_(main_hall).jpg",
+      "fullWidth": 2000
+     },
+     "description": "Tokyo'da Budist tapınağı"
+    },
+    {
+     "id": "wikidata/Q800873",
+     "name": "Hamamatsuchō İstasyonu",
+     "localName": "Hamamatsuchō Station",
+     "lat": 35.65523,
+     "lon": 139.75763,
+     "wikipediaCount": 13,
+     "wikidataId": "Q800873",
+     "kinds": [
+      "notPlace",
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/JR_Hamamatsucho_Station_North_Exit.jpg/500px-JR_Hamamatsucho_Station_North_Exit.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "RGB256",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:JR_Hamamatsucho_Station_North_Exit.jpg",
+      "fullWidth": 4272
+     },
+     "description": "Tokyo'da metro ve tren istasyonu"
+    },
+    {
+     "id": "wikidata/Q1143226",
+     "name": "Japonya Kadın Üniversitesi",
+     "localName": "Japan Women's University",
+     "lat": 35.71703,
+     "lon": 139.72043,
+     "wikipediaCount": 13,
+     "wikidataId": "Q1143226",
+     "kinds": [
+      "business",
+      "organization",
+      "school",
+      "university"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Nihion_jyoshi_university.jpg/500px-Nihion_jyoshi_university.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "The original uploader was Hykw-a4 at Japanese Wikipedia .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nihion_jyoshi_university.jpg",
+      "fullWidth": 1224
+     },
+     "description": "Tokyo'da özel üniversite"
+    },
+    {
+     "id": "wikidata/Q717682",
+     "name": "Kanda-myōjin",
+     "lat": 35.70194,
+     "lon": 139.76778,
+     "wikipediaCount": 13,
+     "wikidataId": "Q717682",
+     "kinds": [
+      "heritage",
+      "organization",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/KandaMyojinGate8837.jpg/500px-KandaMyojinGate8837.jpg",
+      "width": 500,
+      "height": 322,
+      "author": "No machine-readable author provided. Fg2 assumed (based on copyright claims).",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:KandaMyojinGate8837.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:KandaMyojinGate8837.jpg",
+      "fullWidth": 1500
+     },
+     "description": "Tokyo'da Shinto tapınağı"
+    },
+    {
+     "id": "wikidata/Q801032",
+     "name": "Komagome İstasyonu",
+     "localName": "Komagome Station",
+     "lat": 35.73662,
+     "lon": 139.74726,
+     "wikipediaCount": 13,
+     "wikidataId": "Q801032",
+     "kinds": [
+      "station"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Komagome-Station-North-exit.JPG/500px-Komagome-Station-North-exit.JPG",
+      "width": 500,
+      "height": 363,
+      "author": "まも",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Komagome-Station-North-exit.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Komagome-Station-North-exit.JPG",
+      "fullWidth": 1544
+     },
+     "description": "Tokyo'da metro istasyonu"
+    },
+    {
+     "id": "wikidata/Q335612",
+     "name": "Nezu Tapınağı",
+     "localName": "Nezu Shrine",
+     "lat": 35.72023,
+     "lon": 139.76072,
+     "wikipediaCount": 13,
+     "wikidataId": "Q335612",
+     "kinds": [
+      "heritage",
+      "organization",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Nezu_Shrine_2010.jpg/500px-Nezu_Shrine_2010.jpg",
+      "width": 500,
+      "height": 360,
       "author": "Wiiii",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Okuma_Auditorium.jpg",
-      "fullWidth": 2600
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nezu_Shrine_2010.jpg",
+      "fullWidth": 3543
      },
-     "description": "auditorium in Waseda University, Japan"
-    },
-    {
-     "id": "way/553522499",
-     "name": "神宮橋",
-     "lat": 35.66972,
-     "lon": 139.70241,
-     "wikipediaCount": 3,
-     "wikidataId": "Q11589493",
-     "kinds": [
-      "bridge"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Jingubashi_%28Shibuya%2C_Tokyo%29.jpg/500px-Jingubashi_%28Shibuya%2C_Tokyo%29.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "KENPEI",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Jingubashi_(Shibuya,_Tokyo).jpg",
-      "fullWidth": 3264
-     },
-     "description": "Tokyo'da köprü"
-    },
-    {
-     "id": "node/10849593505",
-     "name": "クロス新宿ビジョン",
-     "lat": 35.69262,
-     "lon": 139.7008,
-     "website": "https://shinjuku.xspace.tokyo/",
-     "openingHours": "Mo-Su 07:00-25:00",
-     "wikipediaCount": 2,
-     "wikidataId": "Q109702546",
-     "kinds": [
-      "notPlace"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Cross-Shinjuku-Vision_2023.jpg/500px-Cross-Shinjuku-Vision_2023.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "MaedaAkihiko",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cross-Shinjuku-Vision_2023.jpg",
-      "fullWidth": 5472
-     }
-    },
-    {
-     "id": "node/4154282189",
-     "name": "思い出横丁",
-     "lat": 35.69307,
-     "lon": 139.6995,
-     "address": "1丁目",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11501868",
-     "kinds": [
-      "road",
-      "street"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Shinjuku-West_Omoide-Yokocho.jpg/500px-Shinjuku-West_Omoide-Yokocho.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "MaedaAkihiko",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku-West_Omoide-Yokocho.jpg",
-      "fullWidth": 5472
-     }
-    },
-    {
-     "id": "node/10794948205",
-     "name": "ナツゲーミュージアム",
-     "lat": 35.71371,
-     "lon": 139.7036,
-     "website": "http://www.t-tax.net/natuge/",
-     "openingHours": "Mo-Th 13:00-22:00; Fr 13:00-23:30; Sa 12:00-23:30; Su 12:00-21:30"
-    },
-    {
-     "id": "node/2110245600",
-     "name": "ホビーセンターカトー",
-     "lat": 35.72148,
-     "lon": 139.68005,
-     "address": "新宿区",
-     "website": "https://www.katomodels.com/hobbycenter/"
-    },
-    {
-     "id": "node/8155277073",
-     "name": "C-11型蒸気機関車 368号機",
-     "lat": 35.70431,
-     "lon": 139.67114
-    },
-    {
-     "id": "node/6345031987",
-     "name": "Cat cafe Nyankoto",
-     "lat": 35.7128,
-     "lon": 139.70652
-    },
-    {
-     "id": "node/6340053385",
-     "name": "Harajuku Station",
-     "lat": 35.67094,
-     "lon": 139.70239
-    },
-    {
-     "id": "node/12880383001",
-     "name": "JOYSOUND カラオケ",
-     "lat": 35.65767,
-     "lon": 139.69895
-    },
-    {
-     "id": "node/4803759626",
-     "name": "La Porte Aoyama",
-     "lat": 35.66281,
-     "lon": 139.70954,
-     "address": "神宮前五丁目"
-    },
-    {
-     "id": "node/13012902080",
-     "name": "MIYASHITA PARK North",
-     "lat": 35.66284,
-     "lon": 139.70189
-    },
-    {
-     "id": "node/13012902081",
-     "name": "MIYASHITA PARK South",
-     "lat": 35.66115,
-     "lon": 139.70171
-    },
-    {
-     "id": "node/12850486293",
-     "name": "Samurai Museum Tokyo Ticket Centre",
-     "lat": 35.68549,
-     "lon": 139.69071,
-     "address": "西新宿三丁目"
-    },
-    {
-     "id": "node/12995300064",
-     "name": "shibuya-san tourist information＆art center",
-     "lat": 35.65759,
-     "lon": 139.70049
-    },
-    {
-     "id": "node/12866536485",
-     "name": "shrine ruins",
-     "lat": 35.66177,
-     "lon": 139.68103
-    },
-    {
-     "id": "node/4303422825",
-     "name": "Taito Station Shinjuku South Exit",
-     "lat": 35.6898,
-     "lon": 139.70228
-    },
-    {
-     "id": "node/13264304601",
-     "name": "Takeshita Street",
-     "lat": 35.67159,
-     "lon": 139.70307
-    },
-    {
-     "id": "node/12118392722",
-     "name": "Your Name (Kimi no na wa.) Stairs",
-     "lat": 35.68507,
-     "lon": 139.72334
-    },
-    {
-     "id": "node/3257774992",
-     "name": "ダイダラボッチ伝説の地",
-     "lat": 35.66594,
-     "lon": 139.66231
-    },
-    {
-     "id": "way/1551577357",
-     "name": "デハ268号",
-     "lat": 35.72162,
-     "lon": 139.68005
-    },
-    {
-     "id": "way/1551577349",
-     "name": "トキワ荘の電話ボックス",
-     "lat": 35.72444,
-     "lon": 139.68594
-    },
-    {
-     "id": "node/5920275585",
-     "name": "バードサンクチュアリ",
-     "lat": 35.67113,
-     "lon": 139.69828
+     "description": "Tokyo'da Shinto tapınağı"
     }
    ]
   },
@@ -1267,8 +1963,421 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "way/33439660",
+     "name": "東京国立博物館",
+     "osmNames": {
+      "en": "Tokyo National Museum",
+      "latin": "Tōkyō Kokuritsu-hakubutsukan"
+     },
+     "labels": {
+      "tr": "Tokyo Ulusal Müzesi",
+      "en": "Tokyo National Museum"
+     },
+     "lat": 35.71907,
+     "lon": 139.77582,
+     "address": "上野公園",
+     "website": "https://www.tnm.jp/",
+     "openingHours": "Mo, We-Th 09:30-17:00; Fr-Su 09:30-20:00",
+     "wikipediaCount": 52,
+     "wikidataId": "Q653433",
+     "kinds": [
+      "heritage",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/500px-Tokyo_National_Museum%2C_Honkan_2010.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_National_Museum,_Honkan_2010.jpg",
+      "fullWidth": 3476
+     },
+     "description": "Tokyo'da ulusal müze"
+    },
+    {
+     "id": "way/203960903",
+     "name": "国立西洋美術館",
+     "osmNames": {
+      "en": "The National Museum of Western Art",
+      "latin": "Kokuritsu seiyō bijutsukan"
+     },
+     "labels": {
+      "tr": "Ulusal Batı Sanatları Müzesi",
+      "en": "National Museum of Western Art"
+     },
+     "lat": 35.71541,
+     "lon": 139.77585,
+     "address": "台東区",
+     "website": "https://www.nmwa.go.jp/",
+     "openingHours": "Su,Tu-Th 09:30-17:30;Fr-Sa 09:30-20:00;Mo off;Dec 28-Jan 01 off",
+     "wikipediaCount": 34,
+     "wikidataId": "Q1362629",
+     "kinds": [
+      "business",
+      "heritage",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/National_museum_of_western_art05s3200.jpg/500px-National_museum_of_western_art05s3200.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "663highland",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_museum_of_western_art05s3200.jpg",
+      "fullWidth": 3872
+     },
+     "description": "art museum in Tokyo, Japan"
+    },
+    {
+     "id": "way/103425086",
+     "name": "国立新美術館",
+     "osmNames": {
+      "en": "National Art Center Tokyo",
+      "latin": "Kokuritsu-shin-bijutsukan"
+     },
+     "labels": {
+      "tr": "Tokyo Ulusal Sanat Müzesi",
+      "en": "National Art Center, Tokyo"
+     },
+     "lat": 35.66502,
+     "lon": 139.7265,
+     "website": "https://www.nact.jp/",
+     "openingHours": "Su-Mo,We-Th 10:00-18:00; Fr-Sa 10:00-20:00; Tu off; Dec 26-Jan 10 off",
+     "wikipediaCount": 26,
+     "wikidataId": "Q1362638",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/2018_National_Art_Center%2C_Tokyo_2.jpg/500px-2018_National_Art_Center%2C_Tokyo_2.jpg",
+      "width": 500,
+      "height": 336,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018_National_Art_Center,_Tokyo_2.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "way/203960902",
+     "name": "国立科学博物館",
+     "osmNames": {
+      "en": "National Museum of Nature and Science"
+     },
+     "labels": {
+      "tr": "Tokyo Ulusal Sanat Merkezi",
+      "en": "National Museum of Nature and Science"
+     },
+     "lat": 35.71599,
+     "lon": 139.77659,
+     "address": "台東区",
+     "website": "https://www.kahaku.go.jp/",
+     "openingHours": "Tu-Su 09:00-17:00",
+     "wikipediaCount": 24,
+     "wikidataId": "Q74940",
+     "kinds": [
+      "heritage",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/NMNC01s3200.jpg/500px-NMNC01s3200.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:NMNC01s3200.jpg",
+      "fullWidth": 3200
+     },
+     "description": "Tokyo'da ulusal müze"
+    },
+    {
+     "id": "way/43934324",
+     "name": "東京国立近代美術館",
+     "osmNames": {
+      "en": "National Museum of Modern Art, Tokyo"
+     },
+     "labels": {
+      "tr": "Tokyo Ulusal Modern Sanat Müzesi",
+      "en": "The National Museum of Modern Art"
+     },
+     "lat": 35.69049,
+     "lon": 139.75462,
+     "address": "1丁目",
+     "website": "https://www.momat.go.jp/",
+     "openingHours": "Sa-Th 10:00-17:00; Fr 10:00-20:00",
+     "wikipediaCount": 22,
+     "wikidataId": "Q1359908",
+     "kinds": [
+      "business",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/National_Museum_of_Modern_Art_Tokyo.jpg/500px-National_Museum_of_Modern_Art_Tokyo.jpg",
+      "width": 500,
+      "height": 290,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Modern_Art_Tokyo.jpg",
+      "fullWidth": 2500
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "way/33440458",
+     "name": "東京都美術館",
+     "osmNames": {
+      "en": "Tokyo Metropolitan Art Museum"
+     },
+     "labels": {
+      "tr": "Tokyo Metropoliten Sanat Müzesi",
+      "en": "Tokyo Metropolitan Art Museum"
+     },
+     "lat": 35.71711,
+     "lon": 139.77318,
+     "website": "https://www.tobikan.jp/",
+     "openingHours": "09:30-17:30",
+     "wikipediaCount": 17,
+     "wikidataId": "Q864957",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Tokyo_metropolitan_art_museum01_1920.jpg/500px-Tokyo_metropolitan_art_museum01_1920.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_metropolitan_art_museum01_1920.jpg",
+      "fullWidth": 2010
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "way/76187056",
+     "name": "江戸東京博物館",
+     "osmNames": {
+      "en": "Edo Tokyo Museum",
+      "latin": "Tōkyō-to Edo Tōkyō hakubutsukan"
+     },
+     "labels": {
+      "tr": "Edo-Tokyo Müzesi",
+      "en": "Edo-Tokyo Museum"
+     },
+     "lat": 35.69644,
+     "lon": 139.79608,
+     "address": "横網一丁目",
+     "website": "http://www.edo-tokyo-museum.or.jp/",
+     "openingHours": "Su, Tu-Fr 09:30-17:30; Sa 09:30-19:30; Mo off",
+     "wikipediaCount": 17,
+     "wikidataId": "Q1191042",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Edo-Tokyo_Museum.jpg/500px-Edo-Tokyo_Museum.jpg",
+      "width": 500,
+      "height": 400,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Edo-Tokyo_Museum.jpg",
+      "fullWidth": 2000
+     },
+     "description": "museum in Sumida, Tokyo, Japan"
+    },
+    {
+     "id": "node/250668618",
+     "name": "アーティゾン美術館",
+     "osmNames": {
+      "en": "Artizon Museum",
+      "latin": "Ātizon Bijutsukan"
+     },
+     "labels": {
+      "tr": "Artizon Müzesi",
+      "en": "Artizon Museum"
+     },
+     "lat": 35.67875,
+     "lon": 139.77213,
+     "address": "京橋一丁目",
+     "website": "https://www.artizon.museum/",
+     "openingHours": "Tu-Sa 10:00-20:00; Su 10:00-18:00",
+     "wikipediaCount": 16,
+     "wikidataId": "Q913808",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Artizon_Museum_lobby_view_201912.jpg/500px-Artizon_Museum_lobby_view_201912.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Wpcpey",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Artizon_Museum_lobby_view_201912.jpg",
+      "fullWidth": 2736
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "way/435082657",
+     "name": "日本科学未来館",
+     "osmNames": {
+      "en": "Miraikan",
+      "latin": "Nippon Kagaku Mirai-kan"
+     },
+     "labels": {
+      "tr": "Miraikan",
+      "en": "Miraikan"
+     },
+     "lat": 35.61924,
+     "lon": 139.77666,
+     "address": "青海二丁目",
+     "website": "https://www.miraikan.jst.go.jp/",
+     "openingHours": "We-Mo 10:00-17:00",
+     "wikipediaCount": 16,
+     "wikidataId": "Q656957",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Miraikan.jpg/500px-Miraikan.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Jason Ruck",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Miraikan.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Miraikan.jpg",
+      "fullWidth": 2000
+     },
+     "description": "building"
+    },
+    {
+     "id": "node/1350269516",
+     "name": "日本銀行金融研究所貨幣博物館",
+     "osmNames": {
+      "en": "Bank of Japan Currency Museum",
+      "latin": "Nippon Ginkō Kin’yū Kenkyūjo Kahei Hakubutsukan"
+     },
+     "labels": {
+      "en": "Currency Museum of the Bank of Japan"
+     },
+     "lat": 35.68544,
+     "lon": 139.7716,
+     "address": "日本橋本石町一丁目",
+     "website": "https://www.imes.boj.or.jp/cm/",
+     "openingHours": "Tu-Su 09:30-16:30",
+     "wikipediaCount": 15,
+     "wikidataId": "Q865607",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Japan_Currency_Museum.jpg/500px-Japan_Currency_Museum.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "PHGCOM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Japan_Currency_Museum.jpg",
+      "fullWidth": 2304
+     },
+     "description": "museum"
+    },
+    {
+     "id": "relation/12077221",
+     "name": "東京都現代美術館",
+     "osmNames": {
+      "en": "Museum of Contemporary Art Tokyo"
+     },
+     "labels": {
+      "en": "Museum of Contemporary Art Tokyo"
+     },
+     "lat": 35.67979,
+     "lon": 139.80807,
+     "address": "三好四丁目",
+     "website": "https://www.mot-art-museum.jp/",
+     "openingHours": "Tu-Su 10:00-18:00; Mo off",
+     "wikipediaCount": 11,
+     "wikidataId": "Q1649688",
+     "kinds": [
+      "business",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Museum_of_Contemporary_Art_Tokyo_2009.jpg/500px-Museum_of_Contemporary_Art_Tokyo_2009.jpg",
+      "width": 500,
+      "height": 430,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Contemporary_Art_Tokyo_2009.jpg",
+      "fullWidth": 2824
+     },
+     "description": "museum in Japan"
+    },
+    {
+     "id": "way/161011785",
+     "name": "東京都庭園美術館",
+     "osmNames": {
+      "en": "Tokyo Metropolitan Teien Art Museum",
+      "latin": "Tōkyōto Teien Bijutsukan",
+      "int": "Tokyo Metropolitan Teien Art Museum"
+     },
+     "labels": {
+      "tr": "Tokyo Teien Sanat Müzesi",
+      "en": "Tokyo Metropolitan Teien Art Museum"
+     },
+     "lat": 35.63687,
+     "lon": 139.71903,
+     "website": "http://www.teien-art-museum.ne.jp/index.html",
+     "wikipediaCount": 11,
+     "wikidataId": "Q743773",
+     "kinds": [
+      "heritage",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Tokyo_Metropolitan_Teien_Art_Museum.jpg/500px-Tokyo_Metropolitan_Teien_Art_Museum.jpg",
+      "width": 500,
+      "height": 339,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Teien_Art_Museum.jpg",
+      "fullWidth": 3069
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
      "id": "way/139043736",
      "name": "太田記念美術館",
+     "osmNames": {
+      "en": "Ota Memorial Museum of Art"
+     },
+     "labels": {
+      "tr": "Ōta Sanat Müzesi",
+      "en": "Ōta Memorial Museum of Art"
+     },
      "lat": 35.66941,
      "lon": 139.7049,
      "address": "神宮前一丁目",
@@ -1293,8 +2402,49 @@
      "description": "Tokyo'da sanat müzesi"
     },
     {
+     "id": "node/250668627",
+     "name": "東京都写真美術館",
+     "osmNames": {
+      "en": "Tokyo Photographic Art Museum"
+     },
+     "labels": {
+      "tr": "Tokyo Fotoğrafçılık Sanat Müzesi",
+      "en": "Tokyo Photographic Art Museum"
+     },
+     "lat": 35.64154,
+     "lon": 139.7134,
+     "address": "三田一丁目",
+     "website": "https://topmuseum.jp/",
+     "openingHours": "Tu-We, Sa-Su 10:00-18:00; Th-Fr 10:00-20:00",
+     "wikipediaCount": 10,
+     "wikidataId": "Q862884",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Tokyo_Metropolitan_Museum_of_Photography_entrance_2011_January.jpg/500px-Tokyo_Metropolitan_Museum_of_Photography_entrance_2011_January.jpg",
+      "width": 500,
+      "height": 368,
+      "author": "Morio",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Museum_of_Photography_entrance_2011_January.jpg",
+      "fullWidth": 2560
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
      "id": "way/139972313",
      "name": "根津美術館",
+     "osmNames": {
+      "en": "Nezu Museum",
+      "latin": "Nezu-bijutsukan"
+     },
+     "labels": {
+      "tr": "Nezu Müzesi",
+      "en": "Nezu Museum"
+     },
      "lat": 35.66219,
      "lon": 139.71735,
      "address": "6",
@@ -1319,8 +2469,362 @@
      "description": "Tokyo'da sanat müzesi"
     },
     {
+     "id": "node/1420786660",
+     "name": "森美術館",
+     "osmNames": {
+      "en": "Mori Art Museum"
+     },
+     "labels": {
+      "tr": "Mori Sanat Müzesi",
+      "en": "Mori Art Museum"
+     },
+     "lat": 35.66043,
+     "lon": 139.72926,
+     "address": "6丁目",
+     "website": "https://www.mori.art.museum/jp/index.html",
+     "openingHours": "We-Mo 10:00-22:00; Tu 10:00-17:00",
+     "wikipediaCount": 10,
+     "wikidataId": "Q4410434",
+     "kinds": [
+      "business",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Mori_Art_Museum_Entrance_2013.jpg/500px-Mori_Art_Museum_Entrance_2013.jpg",
+      "width": 500,
+      "height": 373,
+      "author": "Wing1990hk",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mori_Art_Museum_Entrance_2013.jpg",
+      "fullWidth": 2230
+     },
+     "description": "Tokyo'da sanat galerisi",
+     "parentId": "Q1071084",
+     "parentName": "Roppongi Hills"
+    },
+    {
+     "id": "way/173762751",
+     "name": "宗谷",
+     "osmNames": {
+      "en": "Sōya"
+     },
+     "labels": {
+      "en": "JCG Sōya"
+     },
+     "lat": 35.61906,
+     "lon": 139.77366,
+     "openingHours": "10:00-17:00",
+     "wikipediaCount": 10,
+     "wikidataId": "Q138537",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/So-ya.jpg/500px-So-ya.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "natto",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:So-ya.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:So-ya.jpg",
+      "fullWidth": 1936
+     },
+     "description": "1938 icebreaker used as museum"
+    },
+    {
+     "id": "node/4807675725",
+     "name": "サントリー美術館",
+     "osmNames": {
+      "en": "Suntory Museum of Art",
+      "latin": "Santorī-bijutsukan"
+     },
+     "labels": {
+      "tr": "Suntory Sanat Müzesi",
+      "en": "Suntory Museum of Art"
+     },
+     "lat": 35.66643,
+     "lon": 139.73046,
+     "website": "https://www.suntory.co.jp/sma/",
+     "openingHours": "Fr 10:00-20:00; Sa-We 10:00-18:00; Th off",
+     "wikipediaCount": 9,
+     "wikidataId": "Q11249110",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Tokyo-Midtown-Suntory-Museum-of-Art-01.jpg/500px-Tokyo-Midtown-Suntory-Museum-of-Art-01.jpg",
+      "width": 500,
+      "height": 750,
+      "author": "Rs1421",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo-Midtown-Suntory-Museum-of-Art-01.jpg",
+      "fullWidth": 1067
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "node/1420765471",
+     "name": "三井記念美術館",
+     "osmNames": {
+      "en": "Mitsui Memorial Museum"
+     },
+     "labels": {
+      "tr": "Mitsui Müzesi",
+      "en": "Mitsui Memorial Museum"
+     },
+     "lat": 35.68684,
+     "lon": 139.77307,
+     "address": "日本橋室町二丁目",
+     "website": "https://www.mitsui-museum.jp/",
+     "openingHours": "Tu-Su 10:00-17:00; Mo off",
+     "wikipediaCount": 9,
+     "wikidataId": "Q864700",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mitsui_Main_Building_2009.jpg/500px-Mitsui_Main_Building_2009.jpg",
+      "width": 500,
+      "height": 398,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mitsui_Main_Building_2009.jpg",
+      "fullWidth": 2700
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "node/988763541",
+     "name": "昭和館",
+     "osmNames": {
+      "en": "National Showa Memorial Museum",
+      "latin": "Shōwakan"
+     },
+     "labels": {
+      "tr": "Shōwa-kan",
+      "en": "National Showa Memorial Museum"
+     },
+     "lat": 35.69511,
+     "lon": 139.75091,
+     "website": "https://www.showakan.go.jp/",
+     "openingHours": "Tu-Su 10:00-17:30",
+     "wikipediaCount": 9,
+     "wikidataId": "Q3788883",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Showa_kan.jpg/500px-Showa_kan.jpg",
+      "width": 500,
+      "height": 550,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Showa_kan.jpg",
+      "fullWidth": 2000
+     },
+     "description": "Tokyo'da ulusal müze"
+    },
+    {
+     "id": "way/145501856",
+     "name": "皇居三の丸尚蔵館",
+     "osmNames": {
+      "en": "Sannomaru Shozokan",
+      "latin": "Kōkyo Sannomaru Shōzōkan"
+     },
+     "labels": {
+      "tr": "Japon İmparatorluk Koleksiyonu Müzesi",
+      "en": "Museum of the Imperial Collections"
+     },
+     "lat": 35.68654,
+     "lon": 139.75895,
+     "website": "https://shozokan.nich.go.jp/",
+     "openingHours": "Tu-Th, Su 09:30-16:30; Fr-Sa 09:30-19:30",
+     "wikipediaCount": 9,
+     "wikidataId": "Q3076188",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Sannomaru_Shozokan_190928a.jpg/500px-Sannomaru_Shozokan_190928a.jpg",
+      "width": 500,
+      "height": 334,
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sannomaru_Shozokan_190928a.jpg",
+      "fullWidth": 4496
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "way/144379628",
+     "name": "遊就館",
+     "osmNames": {
+      "en": "Yūshūkan"
+     },
+     "labels": {
+      "tr": "Yūshūkan",
+      "en": "Yūshūkan"
+     },
+     "lat": 35.69532,
+     "lon": 139.74337,
+     "website": "https://www.yasukuni.or.jp/yusyukan/",
+     "wikipediaCount": 9,
+     "wikidataId": "Q2855971",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Yasukuni_Yusyukan_2.jpg/500px-Yasukuni_Yusyukan_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bilinmeyen fotoğrafçı",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Yasukuni_Yusyukan_2.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Tokyo'da askeri müze",
+     "parentId": "Q242803",
+     "parentName": "Yasukuni Tapınağı"
+    },
+    {
+     "id": "way/109503139",
+     "name": "21_21 Design Sight",
+     "lat": 35.66744,
+     "lon": 139.7304,
+     "website": "http://www.2121designsight.jp/",
+     "openingHours": "We-Mo 10:00-19:00; Tu off; Dec 27-Jan 03 off",
+     "wikipediaCount": 8,
+     "wikidataId": "Q863044",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/21_21_DESIGN_SIGHT.jpg/500px-21_21_DESIGN_SIGHT.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:21_21_DESIGN_SIGHT.jpg",
+      "fullWidth": 4200
+     },
+     "description": "Tokyo'da tasarım müzesi"
+    },
+    {
+     "id": "way/306116935",
+     "name": "三菱一号館",
+     "osmNames": {
+      "en": "Mitsubishi Ichigokan Museum",
+      "latin": "Mitsubishi Ichigōkan Bijutsukan"
+     },
+     "labels": {
+      "tr": "Mitsubishi Ichigokan Müzesi",
+      "en": "Mitsubishi Ichigokan Museum"
+     },
+     "lat": 35.67847,
+     "lon": 139.76316,
+     "website": "https://mimt.jp/",
+     "openingHours": "Sa-Su, Tu-Th 10:00-18:00; Fr,We[2] 10:00-20:00; Mo off",
+     "wikipediaCount": 8,
+     "wikidataId": "Q3815458",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Mitsubishi_Ichigokan_Museum.JPG/500px-Mitsubishi_Ichigokan_Museum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Wish.F",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Ichigokan_Museum.JPG",
+      "fullWidth": 2560
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "node/1420771074",
+     "name": "古代オリエント博物館",
+     "osmNames": {
+      "en": "Ancient Orient Museum"
+     },
+     "labels": {
+      "en": "Ancient Orient Museum"
+     },
+     "lat": 35.72873,
+     "lon": 139.72097,
+     "openingHours": "Mo-Su 10:00-17:00",
+     "wikipediaCount": 8,
+     "wikidataId": "Q1048740",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/CleopatraVIICoin.jpg/500px-CleopatraVIICoin.jpg",
+      "width": 500,
+      "height": 495,
+      "author": "PHGCOM",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:CleopatraVIICoin.jpg",
+      "fullWidth": 1164
+     },
+     "description": "art museum"
+    },
+    {
+     "id": "node/1420789601",
+     "name": "国立映画アーカイブ",
+     "osmNames": {
+      "en": "National Film Archive of Japan"
+     },
+     "labels": {
+      "tr": "Japonya Ulusal Film Arşivi",
+      "en": "National Film Archive of Japan"
+     },
+     "lat": 35.67557,
+     "lon": 139.77066,
+     "website": "https://www.nfaj.go.jp/",
+     "wikipediaCount": 8,
+     "wikidataId": "Q51371009",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/MOMAT_FilmCenter.jpg/500px-MOMAT_FilmCenter.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Jmho",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:MOMAT_FilmCenter.jpg",
+      "fullWidth": 600
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
      "id": "way/572498043",
      "name": "SOMPO美術館",
+     "osmNames": {
+      "en": "Sompo Museum of Art",
+      "latin": "Sompo Bijutsukan"
+     },
+     "labels": {
+      "tr": "Sompo Sanat Müzesi",
+      "en": "Sompo Museum of Art"
+     },
      "lat": 35.69258,
      "lon": 139.69654,
      "address": "1丁目",
@@ -1345,8 +2849,212 @@
      "description": "Tokyo'da sanat müzesi"
     },
     {
+     "id": "node/5911509487",
+     "name": "刀剣博物館",
+     "osmNames": {
+      "en": "Japanese Sword Museum",
+      "latin": "Tōken Hakubutsukan"
+     },
+     "labels": {
+      "en": "Japanese Sword Museum"
+     },
+     "lat": 35.69882,
+     "lon": 139.79371,
+     "website": "https://www.touken.or.jp/museum/",
+     "openingHours": "Tu-Su 09:30-17:00",
+     "wikipediaCount": 7,
+     "wikidataId": "Q3329874",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Kyu_Yasuda_teien3.jpg/500px-Kyu_Yasuda_teien3.jpg",
+      "width": 500,
+      "height": 338,
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kyu_Yasuda_teien3.jpg",
+      "fullWidth": 3087
+     },
+     "description": "military museum in Japan"
+    },
+    {
+     "id": "node/2512414734",
+     "name": "山種美術館",
+     "osmNames": {
+      "en": "Yamatane Museum of Art"
+     },
+     "labels": {
+      "tr": "Yamatane Sanat Müzesi",
+      "en": "Yamatane Museum of Art"
+     },
+     "lat": 35.65317,
+     "lon": 139.71364,
+     "website": "http://www.yamatane-museum.or.jp/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 7,
+     "wikidataId": "Q3329572",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Yamatane_Museum_of_Art_-_Tokyo%2C_Japan_-_DSC05555.jpg/500px-Yamatane_Museum_of_Art_-_Tokyo%2C_Japan_-_DSC05555.jpg",
+      "width": 500,
+      "height": 578,
+      "author": "Daderot",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Yamatane_Museum_of_Art_-_Tokyo,_Japan_-_DSC05555.jpg",
+      "fullWidth": 3608
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "node/1420787694",
+     "name": "江東区深川江戸資料館",
+     "osmNames": {
+      "en": "Fukagawa Edo Museum"
+     },
+     "labels": {
+      "en": "Fukagawa Edo Museum"
+     },
+     "lat": 35.68105,
+     "lon": 139.80055,
+     "website": "https://www.kcf.or.jp/fukagawa/",
+     "openingHours": "Mo-Su 09:30-16:30",
+     "wikipediaCount": 7,
+     "wikidataId": "Q3090685",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Fukagawa_Edo_Museum.JPG/500px-Fukagawa_Edo_Museum.JPG",
+      "width": 500,
+      "height": 375,
+      "author": "Abasaa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Fukagawa_Edo_Museum.JPG",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Fukagawa_Edo_Museum.JPG",
+      "fullWidth": 2048
+     },
+     "description": "museum of local history in Tokyo, Japan"
+    },
+    {
+     "id": "way/145344198",
+     "name": "したまちミュージアム",
+     "osmNames": {
+      "en": "Shitamachi Museum"
+     },
+     "labels": {
+      "tr": "Shitamachi Müzesi",
+      "en": "Shitamachi Museum"
+     },
+     "lat": 35.71024,
+     "lon": 139.77275,
+     "address": "上野公園",
+     "website": "https://www.taitogeibun.net/shitamachi/",
+     "wikipediaCount": 7,
+     "wikidataId": "Q3915464",
+     "kinds": [
+      "attraction",
+      "business",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Shitamachi-museum-ueno-japan.jpg/500px-Shitamachi-museum-ueno-japan.jpg",
+      "width": 500,
+      "height": 323,
+      "author": "Tarourashima",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Shitamachi-museum-ueno-japan.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shitamachi-museum-ueno-japan.jpg",
+      "fullWidth": 3768
+     },
+     "description": "Tokyo'da müze",
+     "parentId": "Q746216",
+     "parentName": "Ueno Parkı"
+    },
+    {
+     "id": "way/444853841",
+     "name": "すみだ北斎美術館",
+     "osmNames": {
+      "en": "Sumida Hokusai Museum"
+     },
+     "labels": {
+      "en": "Sumida Hokusai Museum"
+     },
+     "lat": 35.69633,
+     "lon": 139.80049,
+     "address": "亀沢二丁目",
+     "website": "https://hokusai-museum.jp/",
+     "openingHours": "09:30-17:30",
+     "wikipediaCount": 6,
+     "wikidataId": "Q17220332",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/2018_Sumida_Hokusai_Museum_2.jpg/500px-2018_Sumida_Hokusai_Museum_2.jpg",
+      "width": 500,
+      "height": 329,
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:2018_Sumida_Hokusai_Museum_2.jpg",
+      "fullWidth": 2500
+     },
+     "description": "museum in Japan"
+    },
+    {
+     "id": "node/1420772919",
+     "name": "大倉集古館",
+     "osmNames": {
+      "en": "Okura Museum of Art"
+     },
+     "labels": {
+      "tr": "Okura Sanat Müzesi",
+      "en": "Okura Museum of Art"
+     },
+     "lat": 35.66692,
+     "lon": 139.74322,
+     "address": "2",
+     "website": "https://www.shukokan.org/",
+     "openingHours": "Tu-Su 10:00-16:30",
+     "wikipediaCount": 6,
+     "wikidataId": "Q3329598",
+     "kinds": [
+      "heritage",
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Okura-Shukokan-01.jpg/500px-Okura-Shukokan-01.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Rs1421",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Okura-Shukokan-01.jpg",
+      "fullWidth": 1600
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
      "id": "way/94104811",
      "name": "明治神宮聖徳記念絵画館",
+     "osmNames": {
+      "en": "Meiji Memorial Picture Gallery"
+     },
+     "labels": {
+      "tr": "Meiji Resim Galerisi",
+      "en": "Meiji Memorial Picture Gallery"
+     },
      "lat": 35.67877,
      "lon": 139.7176,
      "website": "https://www.meijijingugaien.jp/art-culture/seitoku-gallery/",
@@ -1371,35 +3079,62 @@
      "description": "Tokyo'da sanat müzesi"
     },
     {
-     "id": "way/133340564",
-     "name": "日本民藝館",
-     "lat": 35.66081,
-     "lon": 139.67928,
-     "address": "駒場四丁目",
-     "website": "https://mingeikan.or.jp/",
-     "openingHours": "Tu-Su 10:00-17:00",
+     "id": "node/6291685287",
+     "name": "teamLab Planets",
+     "lat": 35.64938,
+     "lon": 139.78973,
+     "address": "6",
+     "website": "https://planets.teamlab.art/tokyo/",
+     "openingHours": "Mo-Su 09:00-22:00",
      "wikipediaCount": 5,
-     "wikidataId": "Q3789149",
+     "wikidataId": "Q97613610",
      "kinds": [
-      "heritage",
+      "notPlace"
+     ],
+     "description": "art facility in Tokyo, Japan"
+    },
+    {
+     "id": "node/1420785912",
+     "name": "東武博物館",
+     "osmNames": {
+      "en": "Tobu Museum"
+     },
+     "labels": {
+      "en": "Tobu Museum"
+     },
+     "lat": 35.72346,
+     "lon": 139.81898,
+     "address": "東向島四丁目",
+     "website": "https://www.tobu.co.jp/museum/",
+     "openingHours": "Tu-Su 10:00-16:30",
+     "wikipediaCount": 5,
+     "wikidataId": "Q3915461",
+     "kinds": [
       "museum",
       "organization"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Nihon_mingeikan_meguro_2009.JPG/500px-Nihon_mingeikan_meguro_2009.JPG",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Tobu_Museum.jpg/500px-Tobu_Museum.jpg",
       "width": 500,
       "height": 375,
-      "author": "Kamemaru2000",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nihon_mingeikan_meguro_2009.JPG",
-      "fullWidth": 2592
+      "author": "Lover of Romance",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tobu_Museum.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tobu_Museum.jpg",
+      "fullWidth": 1600
      },
-     "description": "Tokyo'da sanat müzesi"
+     "description": "railway museum in Sumida, Tokyo Japan"
     },
     {
      "id": "way/372572644",
      "name": "永青文庫",
+     "osmNames": {
+      "en": "Eisei Bunko Museum"
+     },
+     "labels": {
+      "tr": "Eisei Bunko Müzesi",
+      "en": "Eisei Bunko Museum"
+     },
      "lat": 35.71311,
      "lon": 139.72336,
      "website": "https://www.eiseibunko.com/",
@@ -1424,685 +3159,100 @@
      "description": "Tokyo'da sanat müzesi"
     },
     {
-     "id": "way/139712014",
-     "name": "ワタリウム美術館",
-     "lat": 35.67073,
-     "lon": 139.71338,
-     "address": "神宮前三丁目",
-     "website": "http://www.watarium.co.jp/",
-     "openingHours": "Tu, Th-Su 11:00-19:00; We 11:00-21:00",
-     "wikipediaCount": 4,
-     "wikidataId": "Q3915469",
+     "id": "node/1420790339",
+     "name": "荏原 畠山美術館",
+     "osmNames": {
+      "en": "Ebara Hatakeyama Museum of Art"
+     },
+     "labels": {
+      "tr": "Hatakeyama Güzel Sanatlar Müzesi",
+      "en": "Ebara Hatakeyama Museum of Art"
+     },
+     "lat": 35.63224,
+     "lon": 139.72694,
+     "website": "https://www.hatakeyama-museum.org/exhibition/",
+     "openingHours": "Tu-Su 10:00-17:00",
+     "wikipediaCount": 5,
+     "wikidataId": "Q3330210",
      "kinds": [
       "museum",
       "organization"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Watarium.jpg/500px-Watarium.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Hatakeyama_Memorial_Museum.JPG/500px-Hatakeyama_Memorial_Museum.JPG",
       "width": 500,
-      "height": 625,
-      "author": "Wiiii",
+      "height": 375,
+      "author": "Elmo rainy day",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Watarium.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hatakeyama_Memorial_Museum.JPG",
+      "fullWidth": 3072
+     },
+     "description": "Tokyo'da sanat müzesi"
+    },
+    {
+     "id": "node/1420798047",
+     "name": "講談社野間記念館",
+     "osmNames": {
+      "en": "Kodansha Noma Memorial Museum"
+     },
+     "labels": {
+      "tr": "Kodansha Noma Müzesi",
+      "en": "Kodansha Noma Memorial Museum"
+     },
+     "lat": 35.71402,
+     "lon": 139.72503,
+     "address": "関口二丁目",
+     "website": "https://www.nomamuseum.kodansha.co.jp/",
+     "openingHours": "We-Su 10:00-17:00",
+     "wikipediaCount": 5,
+     "wikidataId": "Q3788846",
+     "kinds": [
+      "museum",
+      "organization"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Kodansha_Noma_Memorial_Museum_2.jpg/500px-Kodansha_Noma_Memorial_Museum_2.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Lombroso",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kodansha_Noma_Memorial_Museum_2.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kodansha_Noma_Memorial_Museum_2.jpg",
       "fullWidth": 2000
      },
      "description": "Tokyo'da sanat müzesi"
     },
     {
-     "id": "node/5165879121",
-     "name": "草間彌生美術館",
-     "lat": 35.7032,
-     "lon": 139.72648,
-     "address": "弁天町",
-     "website": "https://yayoikusamamuseum.jp/",
-     "openingHours": "Mo-We off; Th-Su,PH 11:00-17:30",
-     "wikipediaCount": 4,
-     "wikidataId": "Q65941212",
+     "id": "node/1420783697",
+     "name": "東京大空襲・戦災資料センター",
+     "osmNames": {
+      "en": "Center of the Tokyo Raids and War Damage",
+      "latin": "Tōkyō Daikūshū Sensai Shiryō Sentā"
+     },
+     "labels": {
+      "en": "Center of the Tokyo Raids and War Damage"
+     },
+     "lat": 35.68174,
+     "lon": 139.82226,
+     "website": "https://tokyo-sensai.net/",
+     "wikipediaCount": 5,
+     "wikidataId": "Q15961648",
      "kinds": [
       "museum",
       "organization"
      ],
      "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/YAYOI_KUSAMA_MUSEUM_%E8%8D%89%E9%96%93%E5%BD%8C%E7%94%9F%E7%BE%8E%E8%A1%93%E9%A4%A82018sideCIMG3596.jpg/500px-YAYOI_KUSAMA_MUSEUM_%E8%8D%89%E9%96%93%E5%BD%8C%E7%94%9F%E7%BE%8E%E8%A1%93%E9%A4%A82018sideCIMG3596.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Exterior_of_the_Center_of_the_Tokyo_Raids_and_War_Damage_in_January_2019.jpg/500px-Exterior_of_the_Center_of_the_Tokyo_Raids_and_War_Damage_in_January_2019.jpg",
       "width": 500,
-      "height": 667,
-      "author": "Bject",
+      "height": 375,
+      "author": "Nick-D",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:YAYOI_KUSAMA_MUSEUM_%E8%8D%89%E9%96%93%E5%BD%8C%E7%94%9F%E7%BE%8E%E8%A1%93%E9%A4%A82018sideCIMG3596.jpg",
-      "fullWidth": 2736
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Center_of_the_Tokyo_Raids_and_War_Damage_in_January_2019.jpg",
+      "fullWidth": 4482
      },
-     "description": "Tokyo'da sanat müzesi"
-    },
-    {
-     "id": "node/10289966935",
-     "name": "東京アニメセンター",
-     "lat": 35.66139,
-     "lon": 139.70057,
-     "address": "渋谷",
-     "openingHours": "Mo-Su 11:00-20:00",
-     "wikipediaCount": 4,
-     "wikidataId": "Q6128676",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tokyo_Anime_Center_20160211%282%29.JPG/500px-Tokyo_Anime_Center_20160211%282%29.JPG",
-      "width": 500,
-      "height": 375,
-      "author": "BreakdownDiode",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Anime_Center_20160211(2).JPG",
-      "fullWidth": 4032
-     },
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "node/1420767889",
-     "name": "切手の博物館",
-     "lat": 35.71827,
-     "lon": 139.70578,
-     "address": "1丁目",
-     "website": "https://kitte-museum.jp/",
-     "openingHours": "Tu-Su 10:30-17:00",
-     "wikipediaCount": 3,
-     "wikidataId": "Q11396206",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Kitte_no_Hakubutsukan.JPG/500px-Kitte_no_Hakubutsukan.JPG",
-      "width": 500,
-      "height": 375,
-      "author": "Abasaa",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kitte_no_Hakubutsukan.JPG",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kitte_no_Hakubutsukan.JPG",
-      "fullWidth": 1024
-     },
-     "description": "archive organization in Tokyo, Japan"
-    },
-    {
-     "id": "way/28144849",
-     "name": "日本近代文学館",
-     "lat": 35.6628,
-     "lon": 139.68092,
-     "address": "駒場四丁目",
-     "website": "https://www.bungakukan.or.jp/",
-     "openingHours": "Tu-Sa 09:30-16:30; Su-Mo off",
-     "wikipediaCount": 3,
-     "wikidataId": "Q1954709",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Nihon-kindai-bungakukan.jpg/500px-Nihon-kindai-bungakukan.jpg",
-      "width": 500,
-      "height": 284,
-      "author": "Sugitaro",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Nihon-kindai-bungakukan.jpg",
-      "fullWidth": 4006
-     },
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "way/94117009",
-     "name": "早稲田大学坪内博士記念演劇博物館",
-     "lat": 35.70995,
-     "lon": 139.71954,
-     "address": "新宿区",
-     "website": "https://enpaku.w.waseda.jp/",
-     "openingHours": "We-Th, Sa-Mo 10:00-17:00; Tu, Fr 10:00-19:00",
-     "wikipediaCount": 3,
-     "wikidataId": "Q3951945",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Tsubouchi_Memorial_Theatre_Museum.jpg/500px-Tsubouchi_Memorial_Theatre_Museum.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Wiiii",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tsubouchi_Memorial_Theatre_Museum.jpg",
-      "fullWidth": 2400
-     },
-     "description": "museum in Tokyo, Japan"
-    },
-    {
-     "id": "node/13569363447",
-     "name": "アクティブ・ミュージアム「女たちの戦争と平和資料館」（wam）",
-     "lat": 35.70792,
-     "lon": 139.71625,
-     "address": "2丁目",
-     "wikipediaCount": 3,
-     "wikidataId": "Q11446206",
-     "kinds": [
-      "museum",
-      "organization"
-     ]
-    },
-    {
-     "id": "node/1420780494",
-     "name": "戸栗美術館",
-     "lat": 35.66144,
-     "lon": 139.6928,
-     "address": "松濤一丁目",
-     "website": "https://www.toguri-museum.or.jp/",
-     "openingHours": "Tu-Su 10:00-17:00",
-     "wikipediaCount": 2,
-     "wikidataId": "Q11496415",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Toguri_Museum_of_Art_2010.jpg/500px-Toguri_Museum_of_Art_2010.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Asanagi ( talk )",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Toguri_Museum_of_Art_2010.jpg",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Toguri_Museum_of_Art_2010.jpg",
-      "fullWidth": 1024
-     },
-     "description": "Tokyo'da sanat müzesi"
-    },
-    {
-     "id": "node/1420784678",
-     "name": "東京消防庁消防防災資料センター消防博物館",
-     "lat": 35.68814,
-     "lon": 139.71994,
-     "website": "https://www.tfd.metro.tokyo.lg.jp/taiken/hkkan/index.html",
-     "openingHours": "Tu-Su 09:30-17:00; Mo off",
-     "wikipediaCount": 2,
-     "wikidataId": "Q11559505",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/TED-museum.jpg/500px-TED-museum.jpg",
-      "width": 500,
-      "height": 407,
-      "author": "Ypy31",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:TED-museum.jpg",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:TED-museum.jpg",
-      "fullWidth": 737
-     },
-     "description": "museum in Tokyo, Japan"
-    },
-    {
-     "id": "node/1966249089",
-     "name": "岡本太郎記念館",
-     "lat": 35.66127,
-     "lon": 139.71553,
-     "address": "南青山6丁目",
-     "website": "https://taro-okamoto.or.jp/",
-     "wikipediaCount": 2,
-     "wikidataId": "Q11473108",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Taro_Okamoto_Memorial_Museum.jpg/500px-Taro_Okamoto_Memorial_Museum.jpg",
-      "width": 500,
-      "height": 376,
-      "author": "Syced",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Taro_Okamoto_Memorial_Museum.jpg",
-      "fullWidth": 4080
-     },
-     "description": "Tokyo'da sanat müzesi"
-    },
-    {
-     "id": "way/883253737",
-     "name": "豊島区立 トキワ荘マンガミュージアム",
-     "lat": 35.72427,
-     "lon": 139.68608,
-     "website": "https://tokiwasomm.jp/",
-     "wikipediaCount": 2,
-     "wikidataId": "Q96707302",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Tokiwaso-Manga-Museum.jpg/500px-Tokiwaso-Manga-Museum.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Tokyo-Good",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokiwaso-Manga-Museum.jpg",
-      "fullWidth": 4032
-     },
-     "description": "museum in Toshima, Tokyo, Japan"
-    },
-    {
-     "id": "way/208656517",
-     "name": "霞会館記念学習院ミ",
-     "lat": 35.7195,
-     "lon": 139.70941,
-     "website": "https://www.museum.univ.gakushuin.ac.jp/",
-     "wikipediaCount": 2,
-     "wikidataId": "Q11448881",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Gakushuin_University_Museum_of_History_-_Jul_5%2C_2011_%281%29.jpg/500px-Gakushuin_University_Museum_of_History_-_Jul_5%2C_2011_%281%29.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Paul Trafford",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Gakushuin_University_Museum_of_History_-_Jul_5,_2011_(1).jpg",
-      "fullWidth": 3072
-     },
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "node/1420779754",
-     "name": "平和祈念展示資料館",
-     "lat": 35.69126,
-     "lon": 139.69251,
-     "wikipediaCount": 2,
-     "wikidataId": "Q56025796",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Memorial_Museum_for_Soldiers%2C_Detainees_in_Siberia%2C_and_Postwar_Repatriates_%2813835%29.jpg/500px-Memorial_Museum_for_Soldiers%2C_Detainees_in_Siberia%2C_and_Postwar_Repatriates_%2813835%29.jpg",
-      "width": 500,
-      "height": 376,
-      "author": "Syced",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Memorial_Museum_for_Soldiers,_Detainees_in_Siberia,_and_Postwar_Repatriates_(13835).jpg",
-      "fullWidth": 4080
-     }
-    },
-    {
-     "id": "way/755423586",
-     "name": "佐伯祐三アトリエ記念館",
-     "lat": 35.72088,
-     "lon": 139.69362,
-     "address": "中落合二丁目",
-     "website": "https://www.regasu-shinjuku.or.jp/rekihaku/saeki/",
-     "openingHours": "May-Sep Tu-Su 10:00-16:30; Oct-Apr Tu-Su 10:00-16:00; Mo off; Dec 29-Jan 03 off",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11382880",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Saeki_Yuzo_Atelier_Memorial_Hall_2023-03-12.jpg/500px-Saeki_Yuzo_Atelier_Memorial_Hall_2023-03-12.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Asanagi",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Saeki_Yuzo_Atelier_Memorial_Hall_2023-03-12.jpg",
-      "fullWidth": 4032
-     },
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "node/1420766948",
-     "name": "佐藤美術館",
-     "lat": 35.68168,
-     "lon": 139.71498,
-     "address": "大京町",
-     "website": "https://sato-museum.la.coocan.jp/",
-     "openingHours": "Tu-Th, Sa-Su 10:00-17:00; Fr 10:00-19:00",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11384365",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Sato_Museum_of_Art%2C_Shinjuku_01.jpg/500px-Sato_Museum_of_Art%2C_Shinjuku_01.jpg",
-      "width": 500,
-      "height": 725,
-      "author": "Braveheart",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Sato_Museum_of_Art,_Shinjuku_01.jpg",
-      "fullWidth": 2904
-     },
-     "description": "Tokyo'da sanat müzesi"
-    },
-    {
-     "id": "node/1420781298",
-     "name": "学會津八一記念博物館",
-     "lat": 35.70855,
-     "lon": 139.72036,
-     "address": "西早稲田一丁目",
-     "website": "https://www.waseda.jp/culture/aizu-museum/",
-     "openingHours": "Th-Tu,PH 10:00-17:00",
-     "wikipediaCount": 1,
-     "wikidataId": "Q30938116",
-     "kinds": [
-      "heritage",
-      "museum",
-      "organization"
-     ],
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "node/1420787066",
-     "name": "民音音楽博物館",
-     "lat": 35.68233,
-     "lon": 139.71938,
-     "address": "信濃町",
-     "website": "https://museum.min-on.or.jp/",
-     "openingHours": "Tu-Sa 11:00-16:00; Su 10:00-17:00",
-     "wikipediaCount": 1,
-     "wikidataId": "Q65272034",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Min-On_Music_Museum.JPG/500px-Min-On_Music_Museum.JPG",
-      "width": 500,
-      "height": 375,
-      "author": "Abasaa",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Min-On_Music_Museum.JPG",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Min-On_Music_Museum.JPG",
-      "fullWidth": 2048
-     }
-    },
-    {
-     "id": "way/95633646",
-     "name": "渋谷区立松濤美術館",
-     "lat": 35.65868,
-     "lon": 139.69179,
-     "address": "松濤2丁目",
-     "website": "https://shoto-museum.jp/",
-     "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11561694",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Shoto_Museum_of_Art_2010.jpg/500px-Shoto_Museum_of_Art_2010.jpg",
-      "width": 500,
-      "height": 336,
-      "author": "Wiiii",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shoto_Museum_of_Art_2010.jpg",
-      "fullWidth": 3129
-     },
-     "description": "Tokyo'da sanat müzesi"
-    },
-    {
-     "id": "node/1420780821",
-     "name": "新宿歴史博物館",
-     "lat": 35.69001,
-     "lon": 139.72563,
-     "address": "三栄町",
-     "openingHours": "Tu-Su 09:30-17:30",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11501857",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Shinjuku_historical_museum_2009.JPG/500px-Shinjuku_historical_museum_2009.JPG",
-      "width": 500,
-      "height": 375,
-      "author": "Kamemaru2000",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_historical_museum_2009.JPG",
-      "fullWidth": 2592
-     },
-     "description": "Tokyo'da tarih müzesi"
-    },
-    {
-     "id": "node/7125341600",
-     "name": "日本オリンピックミュージアム",
-     "lat": 35.67495,
-     "lon": 139.71516,
-     "website": "https://japan-olympicmuseum.jp/",
-     "wikipediaCount": 1,
-     "wikidataId": "Q140042196",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Japan_Olympic_Museum.jpg/500px-Japan_Olympic_Museum.jpg",
-      "width": 500,
-      "height": 667,
-      "author": "Syced",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Japan_Olympic_Museum.jpg",
-      "fullWidth": 3000
-     },
-     "description": "museum in Shinjuku, Tokyo, Japan"
-    },
-    {
-     "id": "way/1189531504",
-     "name": "本と活字館",
-     "lat": 35.69609,
-     "lon": 139.73173,
-     "website": "https://ichigaya-letterpress.jp/",
-     "wikipediaCount": 1,
-     "wikidataId": "Q140025038",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%E5%B8%82%E8%B0%B7%E3%81%AE%E6%9D%9C_%E6%9C%AC%E3%81%A8%E6%B4%BB%E5%AD%97%E9%A4%A8_202510.jpg/500px-%E5%B8%82%E8%B0%B7%E3%81%AE%E6%9D%9C_%E6%9C%AC%E3%81%A8%E6%B4%BB%E5%AD%97%E9%A4%A8_202510.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Vetalapancavimsatika",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E5%B8%82%E8%B0%B7%E3%81%AE%E6%9D%9C_%E6%9C%AC%E3%81%A8%E6%B4%BB%E5%AD%97%E9%A4%A8_202510.jpg",
-      "fullWidth": 4128
-     },
-     "description": "facility in Shinjuku, Tokyo, Japan"
-    },
-    {
-     "id": "node/1420782618",
-     "name": "東京オペラシティアートギャラリー",
-     "lat": 35.683,
-     "lon": 139.68676,
-     "address": "西新宿三丁目",
-     "openingHours": "Su, Tu-Th 11:00-19:00; Fr-Sa 11:00-20:00",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11524090",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/3_Chome-20_Nishishinjuku%2C_Shinjuku-ku%2C_T%C5%8Dky%C5%8D-to_160-0023%2C_Japan_-_panoramio.jpg/500px-3_Chome-20_Nishishinjuku%2C_Shinjuku-ku%2C_T%C5%8Dky%C5%8D-to_160-0023%2C_Japan_-_panoramio.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Nagono",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:3_Chome-20_Nishishinjuku,_Shinjuku-ku,_T%C5%8Dky%C5%8D-to_160-0023,_Japan_-_panoramio.jpg",
-      "fullWidth": 1600
-     },
-     "description": "Tokyo'da sanat müzesi",
-     "parentId": "Q1201889",
-     "parentName": "Tokyo Opera City Kulesi"
-    },
-    {
-     "id": "node/2179766912",
-     "name": "林芙美子記念館",
-     "lat": 35.71585,
-     "lon": 139.68427,
-     "openingHours": "Tu-Su 10:00-16:30",
-     "wikipediaCount": 1,
-     "wikidataId": "Q11533289",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Hayashi_fumiko_memorial_hall_shinjuku.JPG/500px-Hayashi_fumiko_memorial_hall_shinjuku.JPG",
-      "width": 500,
-      "height": 667,
-      "author": "Kamemaru2000",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Hayashi_fumiko_memorial_hall_shinjuku.JPG",
-      "fullWidth": 1944
-     },
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "way/168230264",
-     "name": "漱石山房記念館",
-     "lat": 35.70394,
-     "lon": 139.72545,
-     "website": "https://soseki-museum.jp/",
-     "wikipediaCount": 1,
-     "wikidataId": "Q24862403",
-     "kinds": [
-      "museum",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Natsume_Soseki_Memorial_Museum_2017-10-08.jpg/500px-Natsume_Soseki_Memorial_Museum_2017-10-08.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Asanagi",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Natsume_Soseki_Memorial_Museum_2017-10-08.jpg",
-      "fullWidth": 4032
-     },
-     "description": "Tokyo'da müze"
-    },
-    {
-     "id": "node/3243954081",
-     "name": "新宿眼科画廊",
-     "lat": 35.69473,
-     "lon": 139.70631,
-     "wikipediaCount": 1,
-     "wikidataId": "Q11501861",
-     "kinds": [
-      "business",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Shinjuku_Tanaka_Bldg_IMG_9720_R_20150126.JPG/500px-Shinjuku_Tanaka_Bldg_IMG_9720_R_20150126.JPG",
-      "width": 500,
-      "height": 667,
-      "author": "Ogiyoshisan",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Tanaka_Bldg_IMG_9720_R_20150126.JPG",
-      "fullWidth": 1200
-     },
-     "description": "Tokyo'da sanat galerisi"
-    },
-    {
-     "id": "node/13524208446",
-     "name": "GALLERY X BY PARCO",
-     "lat": 35.66188,
-     "lon": 139.69912,
-     "address": "宇田川町",
-     "website": "https://art.parco.jp/",
-     "openingHours": "Mo-Su 11:00-21:00"
-    },
-    {
-     "id": "node/13524208445",
-     "name": "Parco Museum Tokyo",
-     "lat": 35.66184,
-     "lon": 139.69901,
-     "address": "宇田川町",
-     "website": "https://art.parco.jp/",
-     "openingHours": "Mo-Su 11:00-20:30"
-    },
-    {
-     "id": "node/1420767888",
-     "name": "刀剣博物館",
-     "lat": 35.68149,
-     "lon": 139.69067,
-     "address": "代々木四丁目",
-     "website": "https://www.touken.or.jp/",
-     "openingHours": "Tu-Su 10:00-16:30"
-    },
-    {
-     "id": "node/1420771079",
-     "name": "古賀政男音楽博物館",
-     "lat": 35.66777,
-     "lon": 139.68009,
-     "address": "上原三丁目",
-     "website": "https://www.koga.or.jp/",
-     "openingHours": "Tu-Su 10:00-17:00"
-    },
-    {
-     "id": "node/1420780738",
-     "name": "文化学園服飾博物館",
-     "lat": 35.68632,
-     "lon": 139.69501,
-     "website": "https://museum.bunka.ac.jp/",
-     "openingHours": "Tu-Su 10:00-16:30"
-    },
-    {
-     "id": "way/375676164",
-     "name": "新宿区立中村彝アトリエ記念館",
-     "lat": 35.72085,
-     "lon": 139.7012,
-     "website": "https://www.regasu-shinjuku.or.jp/rekihaku/tsune/40357/",
-     "openingHours": "Tu-Su 10:00-16:30; Mo,PH off; Dec 29-Jan 03 off"
-    },
-    {
-     "id": "way/28145214",
-     "name": "旧前田家本邸和館",
-     "lat": 35.66231,
-     "lon": 139.68073,
-     "website": "https://www.city.meguro.tokyo.jp/douro/shigoto/kouen/komaba.html",
-     "openingHours": "Tu-Su 09:00-16:00; Mo off; Dec 28-Jan 04 off"
-    },
-    {
-     "id": "way/28144706",
-     "name": "旧前田家本邸洋館",
-     "lat": 35.66222,
-     "lon": 139.68012,
-     "website": "https://www.syougai.metro.tokyo.jp/sesaku/maedatei.html",
-     "openingHours": "We-Su 09:00-16:00; Mo-Tu off"
-    },
-    {
-     "id": "node/10933634354",
-     "name": "早稲田スポーツミュージアム",
-     "lat": 35.70619,
-     "lon": 139.71698,
-     "website": "https://www.waseda.jp/culture/spomu/",
-     "openingHours": "10:00-17:00"
+     "description": "history museum in Tokyo, Japan"
     }
    ]
   },
@@ -2143,12 +3293,111 @@
      "openingHours": "10:00-22:00"
     },
     {
+     "id": "node/1439037612",
+     "name": "Sky Circus",
+     "lat": 35.72944,
+     "lon": 139.71807,
+     "website": "https://sunshinecity.jp/en/observatory/",
+     "openingHours": "Mo-Su 11:00-21:00"
+    },
+    {
+     "id": "node/12151295691",
+     "name": "丸の内ハウス",
+     "osmNames": {
+      "en": "Marunouchi House",
+      "latin": "Maru-no-uchi hausu"
+     },
+     "lat": 35.68245,
+     "lon": 139.76468,
+     "website": "https://www.marunouchi-house.com/",
+     "openingHours": "Mo-Su 11:00-23:00"
+    },
+    {
+     "id": "node/919282252",
+     "name": "東京シティビュー",
+     "osmNames": {
+      "en": "Tokyo City View",
+      "latin": "Tōkyō shiti byū"
+     },
+     "labels": {
+      "en": "Tokyo City View"
+     },
+     "lat": 35.66043,
+     "lon": 139.72906,
+     "website": "https://tcv.roppongihills.com/",
+     "openingHours": "Mo-Su 10:00-22:00",
+     "wikidataId": "Q126417093",
+     "kinds": [
+      "attraction"
+     ],
+     "description": "indoor observation deck",
+     "parentId": "Q1071084",
+     "parentName": "Roppongi Hills"
+    },
+    {
      "id": "node/2388566137",
      "name": "東京都庁展望室 南",
+     "osmNames": {
+      "en": "Tokyo Metropolitan Government Office - South Observatory Deck"
+     },
      "lat": 35.68909,
      "lon": 139.69176,
      "website": "https://www.yokoso.metro.tokyo.lg.jp/en/tenbou/index.html",
      "openingHours": "Mo-Su 09:30-22:00"
+    },
+    {
+     "id": "node/3291293643",
+     "name": "Observation deck",
+     "lat": 35.70823,
+     "lon": 139.75222,
+     "openingHours": "Mo-Su 08:15-20:30; Dec29-Jan 03 off; May Su [3] off"
+    },
+    {
+     "id": "node/12208862374",
+     "name": "東京交通会館コリーヌ",
+     "osmNames": {
+      "en": "Tokyo Kotsu Kaikan Coline",
+      "latin": "Tōkyō kōtsū kaikan korīnu"
+     },
+     "lat": 35.67487,
+     "lon": 139.76394,
+     "openingHours": "Mo-Su 10:00-16:30"
+    },
+    {
+     "id": "node/11669259008",
+     "name": "球体展望室",
+     "osmNames": {
+      "latin": "Hachitama"
+     },
+     "lat": 35.62707,
+     "lon": 139.77459,
+     "openingHours": "Mo-Su 10:00-18:00"
+    },
+    {
+     "id": "node/3004012451",
+     "name": "荒川ロックゲート",
+     "osmNames": {
+      "en": "Arakawa lock gate"
+     },
+     "lat": 35.68299,
+     "lon": 139.84739,
+     "openingHours": "Jun-Aug 08:00-18:00"
+    },
+    {
+     "id": "node/2455026456",
+     "name": "２、３番ハッチ",
+     "lat": 35.61911,
+     "lon": 139.77354
+    },
+    {
+     "id": "node/5412443691",
+     "name": "46階展望スペース",
+     "osmNames": {
+      "en": "Caretta Shiodome Observation Deck 46th floor",
+      "latin": "46-kai tenbō supēsu"
+     },
+     "lat": 35.66427,
+     "lon": 139.76268
     },
     {
      "id": "node/6091770887",
@@ -2157,34 +3406,122 @@
      "lon": 139.71247
     },
     {
+     "id": "node/12059958249",
+     "name": "GINZA SIX ガーデン",
+     "osmNames": {
+      "en": "Ginza Six Garden",
+      "latin": "Ginza Shikkusu Gāden"
+     },
+     "lat": 35.66974,
+     "lon": 139.76377
+    },
+    {
+     "id": "node/5449713526",
+     "name": "Saint gobain",
+     "lat": 35.68312,
+     "lon": 139.74005
+    },
+    {
+     "id": "node/12067181245",
+     "name": "Sunshine observatory",
+     "lat": 35.72965,
+     "lon": 139.71794
+    },
+    {
+     "id": "node/12606699905",
+     "name": "Tokyo Station & Cat face Viewpoint 6F",
+     "lat": 35.68007,
+     "lon": 139.7651
+    },
+    {
+     "id": "node/12606700203",
+     "name": "Tokyo Station train tracks Viewpoint 6F",
+     "lat": 35.6794,
+     "lon": 139.76549
+    },
+    {
+     "id": "node/13359160501",
+     "name": "View of Tokyo Skytree across Sumida river",
+     "lat": 35.71361,
+     "lon": 139.80167
+    },
+    {
+     "id": "node/13359165601",
+     "name": "View of Tokyo Skytree from Sumida River Walk",
+     "lat": 35.71253,
+     "lon": 139.80046
+    },
+    {
+     "id": "node/13360999501",
+     "name": "View of trains at Ueno Station, and Ameyayokocho",
+     "lat": 35.71216,
+     "lon": 139.77471
+    },
+    {
      "id": "node/4316519292",
      "name": "Watch Shibuya Crossing",
      "lat": 35.65865,
      "lon": 139.69985
     },
     {
-     "id": "node/5580334182",
-     "name": "富士見台",
-     "lat": 35.68889,
-     "lon": 139.6902
+     "id": "node/6348359889",
+     "name": "おろちの松",
+     "lat": 35.63875,
+     "lon": 139.71757
     },
     {
-     "id": "node/2388566136",
-     "name": "東京都庁展望室 北",
-     "lat": 35.68991,
-     "lon": 139.69161
+     "id": "node/7972571994",
+     "name": "コナラ林",
+     "lat": 35.63777,
+     "lon": 139.71781
     },
     {
-     "id": "node/7166440685",
-     "name": "沖縄タウン",
-     "lat": 35.67227,
-     "lon": 139.65865
+     "id": "node/8513058923",
+     "name": "コボちゃん増",
+     "lat": 35.70297,
+     "lon": 139.73677
     },
     {
-     "id": "node/13432198601",
-     "name": "渋谷駅の歩道橋から見た渋谷交差点",
-     "lat": 35.65888,
-     "lon": 139.70032
+     "id": "node/1880385539",
+     "name": "テレコムセンター展望室",
+     "osmNames": {
+      "en": "Telecom Center Observatory"
+     },
+     "lat": 35.6171,
+     "lon": 139.78008
+    },
+    {
+     "id": "node/4437654809",
+     "name": "トレインミュージアム",
+     "osmNames": {
+      "en": "Train Museum"
+     },
+     "lat": 35.72857,
+     "lon": 139.77051
+    },
+    {
+     "id": "node/7972637473",
+     "name": "もみじの新緑・紅葉",
+     "lat": 35.63825,
+     "lon": 139.71962
+    },
+    {
+     "id": "node/6127216097",
+     "name": "六本木ヒルズイルクリスマスミネーション",
+     "osmNames": {
+      "en": "Roppongi Hills Christmas Illumination"
+     },
+     "lat": 35.65918,
+     "lon": 139.72988
+    },
+    {
+     "id": "node/2565864323",
+     "name": "出汐湊",
+     "osmNames": {
+      "en": "Deshio-no-minato"
+     },
+     "lat": 35.73286,
+     "lon": 139.74708
     }
    ]
   },
@@ -2193,58 +3530,13 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/1978123594",
-     "name": "CoCo壱番屋",
-     "lat": 35.65932,
-     "lon": 139.66775,
-     "address": "北沢二丁目",
-     "website": "https://www.ichibanya.co.jp/",
-     "openingHours": "Mo-Su 11:00-24:00",
-     "cuisine": "curry, japanese",
-     "detailed": true
-    },
-    {
-     "id": "node/1978200398",
-     "name": "CoCo壱番屋",
-     "lat": 35.66968,
-     "lon": 139.68132,
-     "address": "西原三丁目",
-     "website": "https://www.ichibanya.co.jp/",
-     "openingHours": "Mo-Su 11:00-01:00",
-     "cuisine": "curry, japanese",
-     "detailed": true
-    },
-    {
-     "id": "node/1988373957",
-     "name": "CoCo壱番屋",
-     "lat": 35.69791,
-     "lon": 139.67109,
-     "address": "中央三丁目",
-     "website": "https://www.ichibanya.co.jp/",
-     "openingHours": "Mo-Su 11:00-01:00",
-     "cuisine": "curry, japanese",
-     "detailed": true
-    },
-    {
-     "id": "node/1988390144",
-     "name": "CoCo壱番屋",
-     "lat": 35.70563,
-     "lon": 139.6829,
-     "address": "東中野一丁目",
-     "website": "https://www.ichibanya.co.jp/",
-     "openingHours": "Mo-Su 11:00-01:00",
-     "cuisine": "curry, japanese",
-     "detailed": true
-    },
-    {
-     "id": "node/1988412048",
-     "name": "CoCo壱番屋",
-     "lat": 35.68091,
-     "lon": 139.68543,
-     "address": "本町一丁目",
-     "website": "https://www.ichibanya.co.jp/",
-     "openingHours": "Mo-Su 11:00-01:00",
-     "cuisine": "curry, japanese",
+     "id": "node/919282425",
+     "name": "Café-Crêperie Le Bretagne",
+     "lat": 35.70189,
+     "lon": 139.73971,
+     "website": "http://www.le-bretagne.com/j/creperies/kagurazaka.html",
+     "openingHours": "Tu-Fr 11:30-22:30, Sa 11:00-22:30, Su 11:00-22:00",
+     "cuisine": "galette, crepe",
      "detailed": true
     },
     {
@@ -2269,86 +3561,221 @@
      "detailed": true
     },
     {
-     "id": "node/1934049722",
-     "name": "もうやんカレー",
-     "lat": 35.69511,
-     "lon": 139.68814,
-     "address": "6丁目",
-     "website": "https://www.moyan.jp/living/",
-     "openingHours": "11:30-15:00, 18:00-23:00",
-     "cuisine": "japanese",
-     "detailed": true
+     "id": "node/1138633153",
+     "name": "どぜう",
+     "osmNames": {
+      "en": "Dozeu"
+     },
+     "labels": {
+      "en": "Dojō Iida-ya"
+     },
+     "lat": 35.71403,
+     "lon": 139.79158,
+     "website": "https://dozeu.com/",
+     "openingHours": "Mo-Su 11:00-20:30",
+     "cuisine": "dojo",
+     "wikidataId": "Q134054028",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Dozeu_Iidaya_01.jpg/500px-Dozeu_Iidaya_01.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Higa4",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Dozeu_Iidaya_01.jpg",
+      "fullWidth": 4032
+     },
+     "description": "Japanese restaurant in Kappabashi, Asakusa"
     },
     {
-     "id": "node/1931844614",
-     "name": "千里眼",
-     "lat": 35.66402,
-     "lon": 139.6785,
-     "address": "4丁目",
-     "website": "https://senrigaaan.com/",
-     "openingHours": "11:00-15:00, 17:00-21:00; We off",
+     "id": "node/1148542967",
+     "name": "ら麺亭",
+     "osmNames": {
+      "en": "Ramen-tei;ramentei"
+     },
+     "lat": 35.71283,
+     "lon": 139.79451,
+     "address": "浅草一丁目",
+     "website": "https://ramen-restaurant-2020.business.site/",
+     "openingHours": "Mo-Fr 11:00-20:00; Sa-Su 10:00-20:00",
      "cuisine": "ramen",
      "detailed": true
     },
     {
-     "id": "node/1984360803",
-     "name": "杉並まん月",
-     "lat": 35.693,
-     "lon": 139.65714,
-     "address": "和田三丁目",
-     "website": "http://www18.ocn.ne.jp/~mangetsu/",
-     "openingHours": "Mo-Fr 11:30-14:00,18:00-23:00; Sa 11:30-23:00; Su,PH 11:30-22:00; Th off",
-     "cuisine": "noodle",
+     "id": "node/1145077214",
+     "name": "元祖久留米らーめん 福ヤ",
+     "osmNames": {
+      "en": "Fukuya"
+     },
+     "lat": 35.65468,
+     "lon": 139.73729,
+     "address": "4丁目",
+     "website": "https://www.alcazaba.co.jp/fukuya/fukuya.html",
+     "openingHours": "Mo-Sa 11:30-16:00, 18:00-03:00",
+     "cuisine": "ramen",
      "detailed": true
     },
     {
-     "id": "node/1138333049",
-     "name": "牛角",
-     "lat": 35.69228,
-     "lon": 139.6743,
-     "address": "弥生町二丁目",
-     "website": "https://www.gyukaku.ne.jp/menu/",
+     "id": "node/1608639577",
+     "name": "南山",
+     "osmNames": {
+      "en": "Nanzan"
+     },
+     "lat": 35.70089,
+     "lon": 139.74176,
+     "address": "神楽坂二丁目",
+     "website": "https://www.hotpepper.jp/strJ000684223/",
+     "openingHours": "Tu-Sa 11:00-15:00, 17:00-23:00; Su 17:00-22:00",
+     "cuisine": "reimen",
+     "detailed": true
+    },
+    {
+     "id": "node/1608361988",
+     "name": "水漫庭",
+     "osmNames": {
+      "en": "Suimantei"
+     },
+     "lat": 35.70081,
+     "lon": 139.74227,
+     "address": "神楽坂二丁目",
+     "website": "https://r.gnavi.co.jp/gax2600/",
+     "openingHours": "Mo-Fr 11:00-15:00, 17:00-23:00; Sa-Su 11:00-23:00",
+     "cuisine": "chinese",
+     "detailed": true
+    },
+    {
+     "id": "node/1316303076",
+     "name": "無敵家",
+     "osmNames": {
+      "en": "Muteki-ya",
+      "int": "Mutekiya"
+     },
+     "lat": 35.72692,
+     "lon": 139.71163,
+     "address": "南池袋一丁目",
+     "website": "https://www.mutekiya.com/",
+     "openingHours": "Mo-Su 10:30-04:00",
+     "cuisine": "ramen",
+     "detailed": true
+    },
+    {
+     "id": "node/1635279739",
+     "name": "神田まつや",
+     "osmNames": {
+      "en": "Kanda Matsuya"
+     },
+     "labels": {
+      "tr": "Kanda Matsuya",
+      "en": "Kanda Matsuya"
+     },
+     "lat": 35.69612,
+     "lon": 139.76878,
+     "address": "1丁目",
+     "website": "http://www.kanda-matsuya.jp/",
+     "openingHours": "Mo-Fr 11:00-20:00; Sa, PH 11:00-19:00; Su off",
+     "cuisine": "Soba",
+     "wikidataId": "Q11590540",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Kanda_Matsuya1.JPG/500px-Kanda_Matsuya1.JPG",
+      "width": 500,
+      "height": 667,
+      "author": "江戸村のとくぞう (Edomura no Tokuzo)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kanda_Matsuya1.JPG",
+      "fullWidth": 1536
+     },
+     "description": "Tokyo'da restoran"
+    },
+    {
+     "id": "node/688657370",
+     "name": "神田藪蕎麦 (Yabusoba)",
+     "osmNames": {
+      "en": "Kanda Yabu Soba"
+     },
+     "labels": {
+      "tr": "Kanda Yabusoba",
+      "en": "Kanda Yabusoba"
+     },
+     "lat": 35.69702,
+     "lon": 139.76867,
+     "website": "https://www.yabusoba.net/",
+     "openingHours": "Mo, Tu, Th-Su 11:30-20:30",
+     "cuisine": "Soba",
+     "wikidataId": "Q11264550",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Kanda_Yabusoba6.JPG/500px-Kanda_Yabusoba6.JPG",
+      "width": 500,
+      "height": 373,
+      "author": "江戸村のとくぞう (Edomura no Tokuzo)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kanda_Yabusoba6.JPG",
+      "fullWidth": 2592
+     },
+     "description": "Tokyo'da restoran"
+    },
+    {
+     "id": "node/1363293986",
+     "name": "過門香",
+     "lat": 35.71234,
+     "lon": 139.77472,
+     "address": "上野公園",
+     "website": "https://kamonka-tokyo.jp/",
      "openingHours": "Mo-Su 11:30-23:00",
-     "cuisine": "barbecue",
+     "cuisine": "chinese",
      "detailed": true
     },
     {
-     "id": "node/1996608790",
-     "name": "食堂コマニ DINING LABO",
-     "lat": 35.6611,
-     "lon": 139.67707,
-     "address": "4",
-     "website": "https://shokudo-komani.com/",
-     "openingHours": "10:00",
-     "cuisine": "japanese",
+     "id": "node/1509876356",
+     "name": "AFURI",
+     "lat": 35.66365,
+     "lon": 139.73263,
+     "address": "六本木四丁目",
+     "openingHours": "24/7",
+     "cuisine": "ramen",
      "detailed": true
     },
     {
-     "id": "node/1669746008",
-     "name": "LITTLE SHEEP",
-     "lat": 35.66076,
-     "lon": 139.69787,
-     "website": "https://xfy.co.jp/location/shibuya/",
-     "cuisine": "chinese, hot pot",
+     "id": "node/1647125721",
+     "name": "CoCo壱番屋",
+     "osmNames": {
+      "en": "CoCo ICHIBANYA"
+     },
+     "lat": 35.70761,
+     "lon": 139.75975,
+     "openingHours": "11:00-24:00",
+     "cuisine": "curry, japanese",
      "detailed": true
     },
     {
-     "id": "node/1676649140",
-     "name": "New School",
-     "lat": 35.70653,
-     "lon": 139.71773,
-     "address": "西早稲田二丁目",
-     "website": "https://newschool.jp/",
-     "openingHours": "Mo-Th 11:30-01:00; Fr-Sa 11:30-03:00; Su,PH off",
+     "id": "node/1582964275",
+     "name": "Grand Chapeau",
+     "lat": 35.71251,
+     "lon": 139.78193,
+     "website": "https://www.solarehotels.com/english/chisun/hotel-ueno/restaurant/detail.html",
+     "cuisine": "western, japanese",
      "detailed": true
     },
     {
-     "id": "node/2132098595",
-     "name": "POTPHAR",
-     "lat": 35.68571,
-     "lon": 139.69343,
-     "website": "https://www.instagram.com/indianrestaurantpotohar",
-     "cuisine": "indian",
+     "id": "node/1401944083",
+     "name": "Hard Rock Cafe",
+     "lat": 35.71207,
+     "lon": 139.77626,
+     "openingHours": "Mo-Su 09:00-22:00",
+     "cuisine": "american",
+     "detailed": true
+    },
+    {
+     "id": "node/1138564632",
+     "name": "T&M",
+     "lat": 35.68239,
+     "lon": 139.78554,
+     "openingHours": "11:30-21:30; Sa-Su off",
+     "cuisine": "curry, japanese",
      "detailed": true
     },
     {
@@ -2362,62 +3789,130 @@
      "detailed": true
     },
     {
-     "id": "node/1673403884",
+     "id": "node/1590215999",
+     "name": "アカス",
+     "osmNames": {
+      "en": "Aakash"
+     },
+     "lat": 35.69899,
+     "lon": 139.78383,
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
+     "id": "node/691320564",
      "name": "ガスト",
-     "lat": 35.66353,
-     "lon": 139.6994,
-     "openingHours": "07:00-03:00",
+     "osmNames": {
+      "en": "Gusto"
+     },
+     "lat": 35.70347,
+     "lon": 139.73596,
+     "openingHours": "Mo-Su 08:30-23:00",
      "cuisine": "western, japanese",
      "detailed": true
     },
     {
-     "id": "node/634262307",
-     "name": "ココス",
-     "lat": 35.70889,
-     "lon": 139.67313,
-     "openingHours": "06:00-05:00",
-     "cuisine": "western, japanese",
+     "id": "node/1352156072",
+     "name": "こむぎや",
+     "osmNames": {
+      "en": "Komugiya"
+     },
+     "lat": 35.7002,
+     "lon": 139.79909,
+     "openingHours": "Mo-Su 11:00-14:30,17:30-21:00",
+     "cuisine": "japanese, ramen",
      "detailed": true
     },
     {
-     "id": "node/1792514302",
-     "name": "すずや",
-     "lat": 35.69392,
-     "lon": 139.70096,
-     "website": "https://www.toncya-suzuya.co.jp/",
-     "cuisine": "japanese",
+     "id": "node/311316773",
+     "name": "シディーク",
+     "osmNames": {
+      "en": "Siddique"
+     },
+     "lat": 35.69596,
+     "lon": 139.77109,
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "indian, パキスタン",
      "detailed": true
     },
     {
-     "id": "node/1966280157",
-     "name": "そばうどんしまだ",
-     "lat": 35.66585,
-     "lon": 139.71388,
-     "website": "http://aoyama-shimada.co.jp/",
-     "cuisine": "soba, udon",
+     "id": "node/470283098",
+     "name": "ジョリーパスタ",
+     "osmNames": {
+      "en": "Jolly-Pasta"
+     },
+     "lat": 35.74274,
+     "lon": 139.81355,
+     "openingHours": "11:00-24:00",
+     "cuisine": "pasta",
      "detailed": true
     },
     {
-     "id": "node/1681588646",
-     "name": "タパス＆タパス",
-     "lat": 35.65986,
-     "lon": 139.7032,
-     "website": "http://www.tapas-tapas.com/shop/shibuya_miyamasu.html",
-     "openingHours": "Mo-Fr 11:30-15:00, 17:00-22:00; Sa, Su 11:30-22:00",
+     "id": "node/1668434850",
+     "name": "スター・オブ・インディア",
+     "osmNames": {
+      "en": "Star of India"
+     },
+     "lat": 35.65717,
+     "lon": 139.75413,
+     "openingHours": "Mo-Su 11:00-23:00",
+     "cuisine": "curry",
      "detailed": true
     },
     {
-     "id": "node/1966276365",
-     "name": "フラミンゴ",
-     "lat": 35.66228,
-     "lon": 139.71343,
-     "openingHours": "11:30-23:30",
+     "id": "node/265050658",
+     "name": "つばめグリル",
+     "osmNames": {
+      "en": "Tsubame Grill"
+     },
+     "lat": 35.62765,
+     "lon": 139.73739,
+     "website": "https://www.tsubame-grill.co.jp/",
+     "openingHours": "Mo-Su 11:30-22:30",
+     "detailed": true
+    },
+    {
+     "id": "node/1565011709",
+     "name": "はなまるうどん",
+     "osmNames": {
+      "en": "Hanamarūdon"
+     },
+     "lat": 35.69618,
+     "lon": 139.77091,
+     "address": "神田須田町一丁目",
+     "openingHours": "Mo-Su 10:00-22:30",
+     "cuisine": "japanese, udon",
+     "detailed": true
+    },
+    {
+     "id": "node/1452260419",
+     "name": "ぷれじでんと千房",
+     "osmNames": {
+      "en": "Chibo"
+     },
+     "lat": 35.6715,
+     "lon": 139.76028,
+     "website": "https://www.chibo.com/",
+     "cuisine": "savory pancakes",
+     "detailed": true
+    },
+    {
+     "id": "node/1507825507",
+     "name": "ボルコロッソ",
+     "lat": 35.64785,
+     "lon": 139.74569,
+     "address": "五丁目",
+     "website": "https://r.gnavi.co.jp/b044801/",
      "cuisine": "italian",
      "detailed": true
     },
     {
      "id": "node/428024369",
      "name": "メルシー",
+     "osmNames": {
+      "en": "Merci"
+     },
      "lat": 35.70653,
      "lon": 139.72052,
      "address": "63",
@@ -2426,68 +3921,30 @@
      "detailed": true
     },
     {
-     "id": "node/1762559530",
-     "name": "もーとん",
-     "lat": 35.67422,
-     "lon": 139.66745,
-     "openingHours": "17:00-05:00",
-     "cuisine": "焼肉",
-     "detailed": true
-    },
-    {
-     "id": "node/2066427276",
-     "name": "ルーシー",
-     "lat": 35.65861,
-     "lon": 139.68348,
-     "openingHours": "Mo-Su 11:30-22:00",
-     "cuisine": "curry",
-     "detailed": true
-    },
-    {
-     "id": "node/1669745961",
-     "name": "威風",
-     "lat": 35.66032,
-     "lon": 139.69842,
-     "openingHours": "24/7",
-     "cuisine": "ramen",
-     "detailed": true
-    },
-    {
-     "id": "node/1669670242",
-     "name": "牛角",
-     "lat": 35.66123,
-     "lon": 139.69796,
-     "openingHours": "Mo-Su,PH 11:30-23:30",
-     "cuisine": "barbecue",
-     "detailed": true
-    },
-    {
-     "id": "node/1933277284",
-     "name": "町田商店",
-     "lat": 35.7104,
-     "lon": 139.71245,
-     "website": "https://www.ippudo.com/",
-     "cuisine": "noodle",
-     "detailed": true
-    },
-    {
-     "id": "node/1424672779",
-     "name": "白鳳",
-     "lat": 35.6605,
-     "lon": 139.69972,
-     "website": "https://hakuhou.owst.jp/",
-     "cuisine": "chinese",
-     "detailed": true
-    },
-    {
-     "id": "node/2066427282",
-     "name": "菱田屋酒場",
-     "lat": 35.65757,
-     "lon": 139.6867,
-     "address": "1-11",
-     "website": "https://www.instagram.com/hishidaya_sakaba/",
-     "openingHours": "Mo-Su 17:00-22:00",
-     "detailed": true
+     "id": "node/1148542983",
+     "name": "三定",
+     "osmNames": {
+      "en": "Sansada"
+     },
+     "labels": {
+      "en": "Sansada"
+     },
+     "lat": 35.71101,
+     "lon": 139.79662,
+     "website": "http://www.tempura-sansada.co.jp/",
+     "cuisine": "tenpura",
+     "wikidataId": "Q24876395",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Wongwt_%E4%B8%89%E5%AE%9A%E5%A4%A9%E5%A9%A6%E7%BE%85_%2817076797847%29.jpg/500px-Wongwt_%E4%B8%89%E5%AE%9A%E5%A4%A9%E5%A9%A6%E7%BE%85_%2817076797847%29.jpg",
+      "width": 500,
+      "height": 333,
+      "author": "Wei-Te Wong from Taipei City, Taiwan, Republic of China",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Wongwt_%E4%B8%89%E5%AE%9A%E5%A4%A9%E5%A9%A6%E7%BE%85_(17076797847).jpg",
+      "fullWidth": 6000
+     }
     }
    ]
   },
@@ -2496,30 +3953,50 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/2530152516",
-     "name": "INTERSECT BY LEXUS - TOKYO",
-     "lat": 35.66385,
-     "lon": 139.71531,
-     "address": "南青山四丁目",
-     "website": "http://www.lexus-int.com/jp/intersect/tokyo/",
-     "openingHours": "09:00-23:00",
-     "cuisine": "regional",
+     "id": "node/692764851",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.69999,
+     "lon": 139.76235,
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 06:45-22:30; Sa,Su,PH 07:00-21:00",
+     "cuisine": "coffee shop",
      "detailed": true
     },
     {
-     "id": "node/2722519857",
-     "name": "The Roastery by Nozy Coffee",
-     "lat": 35.66549,
-     "lon": 139.70481,
-     "address": "神宮前五丁目",
-     "website": "https://www.tysons.jp/roastery",
-     "openingHours": "Mo-Su 10:00-20:00",
+     "id": "node/1145383263",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.64678,
+     "lon": 139.74618,
+     "website": "http://www.excelsiorcaffe.com/",
+     "openingHours": "Mo-Fr 06:45-23:00; Sa 07:00-22:00; Su 07:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1188381010",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.67338,
+     "lon": 139.73721,
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:00-23:00; Sa 08:00-21:00; Su,PH 08:00-20:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
     {
      "id": "node/1673403882",
      "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
      "lat": 35.6622,
      "lon": 139.69952,
      "website": "http://www.excelsiorcaffe.com/",
@@ -2530,6 +4007,9 @@
     {
      "id": "node/1746027104",
      "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
      "lat": 35.6848,
      "lon": 139.7328,
      "website": "http://www.doutor.co.jp/exc/",
@@ -2538,18 +4018,50 @@
      "detailed": true
     },
     {
-     "id": "node/1926587028",
+     "id": "node/1926413831",
      "name": "エクセルシオール カフェ",
-     "lat": 35.68528,
-     "lon": 139.69089,
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.62388,
+     "lon": 139.75077,
      "website": "http://www.doutor.co.jp/exc/",
-     "openingHours": "Mo-Fr 07:00-22:00; Sa 07:30-20:00; Su,PH 08:00-22:00",
+     "openingHours": "Mo-Fr 07:00-22:30; Sa 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1926429906",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.672,
+     "lon": 139.73314,
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 06:45-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1926554530",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.66717,
+     "lon": 139.77678,
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:00-22:00; Sa,Su,PH 08:00-20:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
     {
      "id": "node/1926673950",
      "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
      "lat": 35.65925,
      "lon": 139.69909,
      "website": "http://www.doutor.co.jp/exc/",
@@ -2558,18 +4070,24 @@
      "detailed": true
     },
     {
-     "id": "node/1926694823",
+     "id": "node/1926686240",
      "name": "エクセルシオール カフェ",
-     "lat": 35.6577,
-     "lon": 139.69748,
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.66927,
+     "lon": 139.75568,
      "website": "http://www.doutor.co.jp/exc/",
-     "openingHours": "Mo-Fr 07:00-23:00",
+     "openingHours": "Mo-Fr 07:00-21:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
     {
      "id": "node/1926698251",
      "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
      "lat": 35.66056,
      "lon": 139.69933,
      "website": "http://www.doutor.co.jp/exc/",
@@ -2580,6 +4098,9 @@
     {
      "id": "node/1926708603",
      "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
      "lat": 35.69525,
      "lon": 139.69869,
      "website": "http://www.doutor.co.jp/exc/",
@@ -2588,8 +4109,50 @@
      "detailed": true
     },
     {
+     "id": "node/1926727791",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.66256,
+     "lon": 139.74493,
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 06:45-22:50; Sa 07:00-21:00; Su,PH 08:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1929381005",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.72827,
+     "lon": 139.77144,
+     "website": "http://www.excelsiorcaffe.com/",
+     "openingHours": "Mo-Su 07:00-23:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1929568135",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.6573,
+     "lon": 139.7832,
+     "website": "http://www.excelsiorcaffe.com/",
+     "openingHours": "Mo-Fr 07:00-22:00; Sa,Su,PH 08:00-22:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/1929702724",
      "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
      "lat": 35.69051,
      "lon": 139.73588,
      "website": "http://www.excelsiorcaffe.com/",
@@ -2598,29 +4161,94 @@
      "detailed": true
     },
     {
-     "id": "node/2234204979",
+     "id": "node/1941116693",
      "name": "エクセルシオール カフェ",
-     "lat": 35.67325,
-     "lon": 139.66716,
-     "address": "笹塚一丁目",
-     "website": "https://www.doutor.co.jp/dcs/",
-     "openingHours": "Mo-Fr 07:00-21:00; Sa 07:30-21:00; Su,PH 07:30-20:00",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.6866,
+     "lon": 139.78238,
+     "address": "日本橋人形町三丁目",
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:00-22:00; Sa 08:00-21:00; Su,PH 08:00-19:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
     {
-     "id": "node/732207833",
+     "id": "node/1941149173",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFFE"
+     },
+     "lat": 35.65923,
+     "lon": 139.79303,
+     "address": "豊洲三丁目",
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1941154626",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.70822,
+     "lon": 139.75266,
+     "address": "春日一丁目",
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:30-21:45; Sa,Su,PH 08:00-21:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1941176943",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.65654,
+     "lon": 139.75919,
+     "address": "海岸一丁目",
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:30-20:00; Sa-Su,PH 09:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1941199253",
+     "name": "エクセルシオール カフェ",
+     "osmNames": {
+      "en": "EXCELSIOR CAFE"
+     },
+     "lat": 35.68422,
+     "lon": 139.73857,
+     "address": "麹町三丁目",
+     "website": "http://www.doutor.co.jp/exc/",
+     "openingHours": "Mo-Fr 07:00-22:00; Sa 08:00-21:00; Sa,PH 08:00-20:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1170225732",
      "name": "カフェ・ド・クリエ",
-     "lat": 35.6561,
-     "lon": 139.69809,
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
+     "lat": 35.67017,
+     "lon": 139.74123,
      "website": "https://www.pokkacreate.co.jp/",
-     "openingHours": "Mo-Fr 07:00-21:00; Sa 07:30-20:00; Su,PH 08:00-20:00",
+     "openingHours": "Mo-Fr 06:45-21:00; Sa-Su,PH 08:00-19:00",
      "cuisine": "coffee shop",
      "detailed": true
     },
     {
      "id": "node/1377643823",
      "name": "カフェ・ド・クリエ",
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
      "lat": 35.65748,
      "lon": 139.70409,
      "website": "https://www.pokkacreate.co.jp/",
@@ -2629,8 +4257,24 @@
      "detailed": true
     },
     {
+     "id": "node/1385607925",
+     "name": "カフェ・ド・クリエ",
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
+     "lat": 35.66617,
+     "lon": 139.75794,
+     "website": "https://www.pokkacreate.co.jp/",
+     "openingHours": "Mo-Fr 06:30-22:30; Sa,Su,PH 07:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/1699185469",
      "name": "カフェ・ド・クリエ",
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
      "lat": 35.68658,
      "lon": 139.69783,
      "website": "https://www.pokkacreate.co.jp/",
@@ -2639,8 +4283,24 @@
      "detailed": true
     },
     {
+     "id": "node/1914731596",
+     "name": "カフェ・ド・クリエ",
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
+     "lat": 35.68636,
+     "lon": 139.78263,
+     "website": "https://www.pokkacreate.co.jp/",
+     "openingHours": "Mo-Fr 06:45-22:00; Sa,Su,PH 08:00-19:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/1914757868",
      "name": "カフェ・ド・クリエ",
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
      "lat": 35.71358,
      "lon": 139.70343,
      "website": "https://www.pokkacreate.co.jp/",
@@ -2651,6 +4311,9 @@
     {
      "id": "node/1914769348",
      "name": "カフェ・ド・クリエ",
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
      "lat": 35.68732,
      "lon": 139.69521,
      "website": "https://www.pokkacreate.co.jp/",
@@ -2659,149 +4322,28 @@
      "detailed": true
     },
     {
-     "id": "node/1916857683",
+     "id": "node/1914788571",
      "name": "カフェ・ド・クリエ",
-     "lat": 35.68551,
-     "lon": 139.73217,
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
+     "lat": 35.7305,
+     "lon": 139.71454,
      "website": "https://www.pokkacreate.co.jp/",
-     "openingHours": "Mo-Fr 06:30-20:00; Sa 07:30-19:00",
+     "openingHours": "Mo-Su 07:00-22:30",
      "cuisine": "coffee shop",
      "detailed": true
     },
     {
-     "id": "node/1916873005",
+     "id": "node/1914793313",
      "name": "カフェ・ド・クリエ",
-     "lat": 35.69224,
-     "lon": 139.72334,
+     "osmNames": {
+      "en": "CAFE de CRIE"
+     },
+     "lat": 35.66661,
+     "lon": 139.7556,
      "website": "https://www.pokkacreate.co.jp/",
-     "openingHours": "Mo-Fr 07:30-21:00; Sa,Su,PH 08:00-20:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1917830069",
-     "name": "カフェ・ド・クリエ",
-     "lat": 35.65696,
-     "lon": 139.69556,
-     "address": "円山町",
-     "website": "https://www.pokkacreate.co.jp/",
-     "openingHours": "Mo-Fr 07:00-21:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1917941617",
-     "name": "カフェ・ド・クリエ",
-     "lat": 35.69308,
-     "lon": 139.70242,
-     "address": "3",
-     "website": "https://c-united.co.jp/store/detail/101172/",
-     "openingHours": "Mo-Fr 07:30-21:00; Sa 08:00-21:00; Su,PH 08:00-20:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1918935246",
-     "name": "カフェ・ド・クリエ",
-     "lat": 35.68375,
-     "lon": 139.7032,
-     "website": "https://www.pokkacreate.co.jp/",
-     "openingHours": "Mo-Fr 06:30-21:00; Sa 08:00-19:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1921435386",
-     "name": "カフェ・ド・クリエ",
-     "lat": 35.69606,
-     "lon": 139.68914,
-     "website": "https://www.pokkacreate.co.jp/",
-     "openingHours": "Mo-Fr 07:00-21:00; Sa,Su,PH 08:00-19:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/727340234",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.65579,
-     "lon": 139.7044,
-     "address": "渋谷三丁目",
-     "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
-     "openingHours": "Mo-Su 07:00-23:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1925087935",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.70866,
-     "lon": 139.6649,
-     "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
-     "openingHours": "Mo-Su 07:00-23:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1925097265",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.70535,
-     "lon": 139.66897,
-     "website": "http://www.chatnoir-jp.com/",
-     "openingHours": "Mo-Su 07:00-23:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1925130457",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.69727,
-     "lon": 139.66775,
-     "website": "http://www.chatnoir-jp.com/",
-     "openingHours": "Mo-Su 07:00-23:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/2136748360",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.68483,
-     "lon": 139.69238,
-     "address": "代々木三丁目",
-     "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
-     "openingHours": "Mo-Fr 07:00-22:00; Sa-Su,PH 07:00-21:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/2356783794",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.65992,
-     "lon": 139.70607,
-     "address": "渋谷二丁目",
-     "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
-     "openingHours": "Mo-Su 07:00-22:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/3101292829",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.69377,
-     "lon": 139.6978,
-     "address": "西新宿七丁目",
-     "website": "https://chatnoir-company.com/chatnoir/html/brand/brand_veloce.html",
-     "openingHours": "Mo-Fr 06:45-23:00; Sa-Su,PH 07:00-23:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/3175849762",
-     "name": "カフェ・ベローチェ",
-     "lat": 35.68758,
-     "lon": 139.69953,
-     "address": "代々木二丁目",
-     "website": "http://www.chatnoir-jp.com/",
-     "openingHours": "Mo-Su 07:00-23:00",
+     "openingHours": "Mo-Su 06:45-22:30",
      "cuisine": "coffee shop",
      "detailed": true
     }
@@ -2812,8 +4354,34 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
+     "id": "node/12531882601",
+     "name": "Bvlgari Ginza Bar",
+     "lat": 35.67295,
+     "lon": 139.76722,
+     "website": "https://www.bulgarihotels.com/ja_JP/tokyo-osaka-restaurants/tokyo/il-bar",
+     "openingHours": "Mo-Th 12:00-23:00; Fr 12:00-24:00; Sa 12:00-23:00; Su 12:00-18:30",
+     "detailed": true
+    },
+    {
+     "id": "node/11035667506",
+     "name": "バー センティフォリア",
+     "osmNames": {
+      "en": "Bar Centifolia",
+      "int": "Bar Centifolia"
+     },
+     "lat": 35.65635,
+     "lon": 139.73422,
+     "address": "麻布十番一丁目",
+     "website": "https://no/",
+     "openingHours": "Mo-Tu,Th-Sa 20:30-03:00; We off",
+     "detailed": true
+    },
+    {
      "id": "node/4486492894",
      "name": "石の華",
+     "osmNames": {
+      "en": "Bar Ishinohana"
+     },
      "lat": 35.65795,
      "lon": 139.70499,
      "address": "渋谷三丁目",
@@ -2822,11 +4390,24 @@
      "detailed": true
     },
     {
+     "id": "node/5411224788",
+     "name": "BAR WATERSHED",
+     "lat": 35.67063,
+     "lon": 139.7348,
+     "openingHours": "Mo-Sa 18:00-03:00"
+    },
+    {
      "id": "node/13464187301",
      "name": "Liquid Ruby",
      "lat": 35.69406,
      "lon": 139.69914,
      "openingHours": "Mo-Fr 18:00-02:00; Sa 18:00-01:00"
+    },
+    {
+     "id": "node/14208127101",
+     "name": "Bar Algernon",
+     "lat": 35.67576,
+     "lon": 139.73706
     }
    ]
   },
@@ -2837,11 +4418,71 @@
     {
      "id": "node/1905017536",
      "name": "ホブゴブリン",
+     "osmNames": {
+      "en": "Hobgoblin",
+      "int": "Hobgoblin"
+     },
      "lat": 35.65824,
      "lon": 139.69964,
      "website": "https://hobgoblin.jp/hobgoblin-shibuya",
      "openingHours": "Mo-Th 11:30-24:00; Fr 11:30-28:00; Sa 12:00-28:00; Su 12:00-24:00",
      "cuisine": "british",
+     "detailed": true
+    },
+    {
+     "id": "node/1608387934",
+     "name": "塩梅",
+     "osmNames": {
+      "en": "Anbai"
+     },
+     "lat": 35.70083,
+     "lon": 139.74223,
+     "address": "神楽坂二丁目",
+     "website": "https://r.gnavi.co.jp/ga48034/",
+     "openingHours": "Mo-Su 11:30-14:00, 17:00-24:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1608465463",
+     "name": "山笠",
+     "osmNames": {
+      "en": "Yamagasa"
+     },
+     "lat": 35.70085,
+     "lon": 139.74216,
+     "address": "神楽坂二丁目",
+     "website": "https://r.gnavi.co.jp/b329601/",
+     "openingHours": "Su-Th 17:30-24:00; Fr-Sa 17:30-04:30",
+     "cuisine": "motsunabe",
+     "detailed": true
+    },
+    {
+     "id": "node/1608455997",
+     "name": "庄や",
+     "osmNames": {
+      "en": "Shoya"
+     },
+     "lat": 35.70084,
+     "lon": 139.74219,
+     "address": "神楽坂二丁目",
+     "website": "https://www.hotpepper.jp/strJ000031851/",
+     "openingHours": "Su-Th 15:00-02:00, Fr-Sa 15:00-04:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1608629439",
+     "name": "萬月",
+     "osmNames": {
+      "en": "Mangetsu"
+     },
+     "lat": 35.70103,
+     "lon": 139.74183,
+     "address": "神楽坂二丁目",
+     "website": "https://r.gnavi.co.jp/g460100/",
+     "openingHours": "Mo-Sa 17:00-23:00",
+     "cuisine": "yakitori",
      "detailed": true
     },
     {
@@ -2851,15 +4492,6 @@
      "lon": 139.70485,
      "website": "http://www.plastic-model.net/",
      "openingHours": "20:00-05:00",
-     "detailed": true
-    },
-    {
-     "id": "node/2212639492",
-     "name": "Bistro 渋谷",
-     "lat": 35.65769,
-     "lon": 139.70481,
-     "openingHours": "Mo-Sa 11:30-15:00,17:00-24:00",
-     "cuisine": "french",
      "detailed": true
     },
     {
@@ -2884,6 +4516,9 @@
     {
      "id": "node/1952348374",
      "name": "ゴールデンダスト",
+     "osmNames": {
+      "en": "Golden Dust"
+     },
      "lat": 35.69397,
      "lon": 139.70471,
      "address": "あかるい花園三番街 １丁目１一８",
@@ -2892,8 +4527,51 @@
      "detailed": true
     },
     {
+     "id": "node/1914973970",
+     "name": "土間土間",
+     "osmNames": {
+      "en": "DOMA-DOMA"
+     },
+     "lat": 35.69799,
+     "lon": 139.77242,
+     "openingHours": "Mo-Su 16:00-05:00",
+     "cuisine": "japanese",
+     "detailed": true
+    },
+    {
+     "id": "node/1138633140",
+     "name": "神谷バー",
+     "osmNames": {
+      "en": "Kamiya Bar"
+     },
+     "labels": {
+      "en": "Kamiya Bar"
+     },
+     "lat": 35.71092,
+     "lon": 139.79751,
+     "address": "浅草一丁目",
+     "website": "http://www.kamiya-bar.com/",
+     "openingHours": "Mo,We-Su 11:30-22:00; Tu off",
+     "wikidataId": "Q11590836",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Kamiya_bar_at_Asakusa_Tokyo.JPG/500px-Kamiya_bar_at_Asakusa_Tokyo.JPG",
+      "width": 500,
+      "height": 663,
+      "author": "Kakidai",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Kamiya_bar_at_Asakusa_Tokyo.JPG",
+      "fullWidth": 2374
+     },
+     "description": "bar in Japan"
+    },
+    {
      "id": "node/1681588708",
      "name": "風月",
+     "osmNames": {
+      "en": "Fugetsu"
+     },
      "lat": 35.66048,
      "lon": 139.70278,
      "website": "http://f-shibuya.owst.jp/",
@@ -2903,6 +4581,9 @@
     {
      "id": "node/1693090865",
      "name": "鳥竹",
+     "osmNames": {
+      "en": "Toritake"
+     },
      "lat": 35.65805,
      "lon": 139.69899,
      "openingHours": "Mo-Su 14:00-00:30",
@@ -2910,27 +4591,22 @@
      "detailed": true
     },
     {
-     "id": "node/2845856508",
-     "name": "Bar Boots",
-     "lat": 35.66781,
-     "lon": 139.71721,
-     "website": "http://www.aoyama-boots.com/"
+     "id": "node/1963985662",
+     "name": "APPRIVOISER B.B",
+     "lat": 35.66251,
+     "lon": 139.72658,
+     "website": "http://apprivoiser-bb.blogspot.jp/"
     },
     {
      "id": "node/1951880754",
      "name": "BAR キャロット",
+     "osmNames": {
+      "en": "Bar Carrot"
+     },
      "lat": 35.69412,
      "lon": 139.70443,
      "address": "まねき通り １丁目１一６",
      "openingHours": "20:00-05:00"
-    },
-    {
-     "id": "node/2217822789",
-     "name": "COPAIN",
-     "lat": 35.70374,
-     "lon": 139.66604,
-     "address": "2",
-     "website": "https://highball-copain.com/nakano/index.html"
     },
     {
      "id": "node/1801259634",
@@ -2940,25 +4616,18 @@
      "website": "http://search.dartslive.jp/shop/10852536"
     },
     {
-     "id": "node/2242388685",
-     "name": "Haccho Miso Bar",
-     "lat": 35.67052,
-     "lon": 139.69013,
+     "id": "node/814235759",
+     "name": "DINING SHIMOI",
+     "lat": 35.64774,
+     "lon": 139.74227,
      "cuisine": "japanese"
     },
     {
-     "id": "node/2402294121",
-     "name": "mimpi manis",
-     "lat": 35.69589,
-     "lon": 139.66738,
-     "openingHours": "Mo,We-Fr 17:00-01:00, Sa,Su 16:00-01:00; Tu off"
-    },
-    {
-     "id": "node/2903627249",
-     "name": "Origami",
-     "lat": 35.66515,
-     "lon": 139.7129,
-     "website": "https://origamientertainment.jp/"
+     "id": "node/1048849850",
+     "name": "NIJYU-MARU",
+     "lat": 35.6973,
+     "lon": 139.77147,
+     "cuisine": "japanese"
     },
     {
      "id": "node/1669745931",
@@ -2966,6 +4635,14 @@
      "lat": 35.66054,
      "lon": 139.69811,
      "cuisine": "standing"
+    },
+    {
+     "id": "node/2115182250",
+     "name": "Sato BAR",
+     "lat": 35.66056,
+     "lon": 139.72401,
+     "address": "西麻布一丁目",
+     "openingHours": "19:00-02:00"
     },
     {
      "id": "node/1952348385",
@@ -2976,11 +4653,19 @@
      "openingHours": "20:00-04:00"
     },
     {
-     "id": "node/2892522123",
-     "name": "TANA",
-     "lat": 35.65733,
-     "lon": 139.69376,
-     "openingHours": "Tu-Sa 18:00-03:00, Su 18:00-23:00; Mo off"
+     "id": "node/1862474175",
+     "name": "The Rose & Crown",
+     "lat": 35.69875,
+     "lon": 139.77233,
+     "address": "外神田一丁目",
+     "openingHours": "Mo-Fr 11:00-23:30; Sa-Su,PH 11:00-23:00"
+    },
+    {
+     "id": "node/1894011409",
+     "name": "Yakitori MOE WEST",
+     "lat": 35.66075,
+     "lon": 139.728,
+     "cuisine": "yakitori"
     },
     {
      "id": "node/1673403755",
@@ -2990,15 +4675,18 @@
      "cuisine": "japanese"
     },
     {
-     "id": "node/2389061722",
-     "name": "イクタ",
-     "lat": 35.69003,
-     "lon": 139.69765,
-     "website": "https://barikuta.jp/"
+     "id": "node/1956074929",
+     "name": "Zoot",
+     "lat": 35.65717,
+     "lon": 139.75593,
+     "cuisine": "italian"
     },
     {
      "id": "node/1650479473",
      "name": "うまいもん酒場",
+     "osmNames": {
+      "en": "Umaimon Sakaba"
+     },
      "lat": 35.6611,
      "lon": 139.69663,
      "cuisine": "japanese"
@@ -3011,62 +4699,34 @@
      "cuisine": "asian"
     },
     {
-     "id": "node/1139430106",
-     "name": "さくら",
-     "lat": 35.66593,
-     "lon": 139.67012,
+     "id": "node/1475721973",
+     "name": "こかげ",
+     "osmNames": {
+      "en": "Kokage"
+     },
+     "lat": 35.65655,
+     "lon": 139.75319,
      "cuisine": "japanese"
     },
     {
-     "id": "node/2922027040",
-     "name": "すし居酒屋 八兵衛",
-     "lat": 35.66459,
-     "lon": 139.715,
-     "cuisine": "sushi"
+     "id": "node/1363176504",
+     "name": "せかいち",
+     "osmNames": {
+      "en": "Sekaichi"
+     },
+     "lat": 35.64785,
+     "lon": 139.74636,
+     "cuisine": "yakitori"
     },
     {
-     "id": "node/2291177895",
-     "name": "セコ",
-     "lat": 35.6611,
-     "lon": 139.70441,
-     "address": "渋谷一丁目",
-     "website": "http://secobar.jp/"
-    },
-    {
-     "id": "node/1657287381",
-     "name": "にゅう鳥金",
-     "lat": 35.65965,
-     "lon": 139.70113,
-     "cuisine": "japanese"
-    },
-    {
-     "id": "node/2212639576",
-     "name": "バチBAR",
-     "lat": 35.65759,
-     "lon": 139.70482,
-     "cuisine": "italian"
-    },
-    {
-     "id": "node/2212822408",
-     "name": "ひしゅうや",
-     "lat": 35.65698,
-     "lon": 139.69431,
-     "address": "円山町",
-     "cuisine": "japanese"
-    },
-    {
-     "id": "node/1650479485",
-     "name": "わん",
-     "lat": 35.66107,
-     "lon": 139.69658,
-     "cuisine": "japanese"
-    },
-    {
-     "id": "node/1893391591",
-     "name": "個室DININGダイニング　一粋",
-     "lat": 35.66283,
-     "lon": 139.69989,
-     "website": "https://www.hotpepper.jp/strJ000650369/"
+     "id": "node/1520913212",
+     "name": "つきよ",
+     "osmNames": {
+      "en": "Tsukiyo"
+     },
+     "lat": 35.64789,
+     "lon": 139.7452,
+     "cuisine": "yakitori"
     }
    ]
   },
@@ -3093,12 +4753,12 @@
      "detailed": true
     },
     {
-     "id": "node/12888174701",
-     "name": "FUTURE LAND TOKYO",
-     "lat": 35.66052,
-     "lon": 139.66841,
-     "website": "https://future-land-tokyo.com/",
-     "openingHours": "Mo-Su 18:00-05:00",
+     "id": "node/12024641377",
+     "name": "ROKUSAN ANGEL",
+     "lat": 35.66332,
+     "lon": 139.73422,
+     "website": "https://rokusanangel.jp/",
+     "openingHours": "17:00-24:00",
      "detailed": true
     },
     {
@@ -3112,11 +4772,51 @@
      "detailed": true
     },
     {
+     "id": "node/14115128101",
+     "name": "モグラ",
+     "osmNames": {
+      "en": "Mogra"
+     },
+     "lat": 35.70202,
+     "lon": 139.77509,
+     "website": "https://club-mogra.jp/",
+     "openingHours": "Tu-We 19:00-23:00; Th 18:00-23:00; Fr 23:00-05:00; Sa 14:00-20:00, 23:00-05:00; Su 14:00-21:00",
+     "detailed": true
+    },
+    {
+     "id": "node/4207657884",
+     "name": "ageha",
+     "lat": 35.64223,
+     "lon": 139.82529,
+     "address": "2",
+     "website": "http://www.ageha.com/schedule",
+     "wikidataId": "Q4691834",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/%E6%96%B0%E6%9C%A8%E5%A0%B4%E5%91%A8%E8%BE%BACIMG1362.jpg/500px-%E6%96%B0%E6%9C%A8%E5%A0%B4%E5%91%A8%E8%BE%BACIMG1362.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Bject",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E6%9C%A8%E5%A0%B4%E5%91%A8%E8%BE%BACIMG1362.jpg",
+      "fullWidth": 4608
+     },
+     "description": "weekend club event at the Usen Studio Coast event space in Shin-Kiba, Tokyo"
+    },
+    {
      "id": "node/5322316322",
      "name": "AiSOTOPE LOUNGE",
      "lat": 35.69047,
      "lon": 139.70789,
      "website": "https://aliving.net/"
+    },
+    {
+     "id": "node/7007158787",
+     "name": "All Of Me Club",
+     "lat": 35.66632,
+     "lon": 139.72862,
+     "address": "赤坂九丁目",
+     "openingHours": "18:00-04:00"
     },
     {
      "id": "node/5523545122",
@@ -3125,6 +4825,13 @@
      "lon": 139.70354,
      "address": "新宿四丁目",
      "website": "https://www.antiknock.net/"
+    },
+    {
+     "id": "node/13741907724",
+     "name": "B-flat",
+     "lat": 35.67038,
+     "lon": 139.73765,
+     "website": "https://bflat.yamano-music.co.jp/"
     },
     {
      "id": "node/13788595801",
@@ -3148,11 +4855,12 @@
      "website": "https://bon-courage.tokyo/"
     },
     {
-     "id": "node/13738547653",
-     "name": "Bright Brown",
-     "lat": 35.70756,
-     "lon": 139.66589,
-     "website": "https://brightbrownnakano.wixsite.com/brightbrown"
+     "id": "node/5323416499",
+     "name": "Circus Tokyo",
+     "lat": 35.65411,
+     "lon": 139.70556,
+     "address": "3",
+     "website": "http://circus-tokyo.jp/"
     },
     {
      "id": "node/2067993325",
@@ -3163,11 +4871,23 @@
      "website": "https://www.axxcis.net/shinjuku/index.html"
     },
     {
-     "id": "node/2246176829",
-     "name": "Club Harlem",
-     "lat": 35.65843,
-     "lon": 139.69531,
-     "website": "https://www.harlem.co.jp/"
+     "id": "node/13736495780",
+     "name": "Cotton Club",
+     "lat": 35.67871,
+     "lon": 139.76519,
+     "website": "https://www.cottonclubjapan.co.jp/",
+     "wikidataId": "Q104552771",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Cotton_Club.jpg/500px-Cotton_Club.jpg",
+      "width": 500,
+      "height": 667,
+      "author": "Vanbasten 23",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cotton_Club.jpg",
+      "fullWidth": 3000
+     },
+     "description": "Tokyo'da gece klübü"
     },
     {
      "id": "node/13736218433",
@@ -3175,6 +4895,14 @@
      "lat": 35.69285,
      "lon": 139.70354,
      "website": "http://www.dug.co.jp/"
+    },
+    {
+     "id": "node/2628346254",
+     "name": "ELE TOKYO",
+     "lat": 35.6569,
+     "lon": 139.73526,
+     "address": "麻布十番一丁目",
+     "website": "http://www.eletokyo.com/"
     },
     {
      "id": "node/13108533376",
@@ -3192,24 +4920,11 @@
      "openingHours": "20:00-24:00"
     },
     {
-     "id": "node/11367870069",
-     "name": "Forestlimit",
-     "lat": 35.67812,
-     "lon": 139.67706,
-     "address": "幡ヶ谷二丁目",
-     "website": "https://www.forestlimit.com/"
-    },
-    {
-     "id": "node/5372749428",
-     "name": "Grassroots",
-     "lat": 35.69893,
-     "lon": 139.65847,
-     "address": "高円寺南一丁目",
-     "website": "http://www.grassrootstribe.com/"
-    },
-    {
      "id": "node/13738652977",
      "name": "Jazz Barサムライ",
+     "osmNames": {
+      "en": "Jazz Bar Samurai"
+     },
      "lat": 35.68983,
      "lon": 139.70221,
      "website": "https://samurai.favy.jp/"
@@ -3220,6 +4935,13 @@
      "lat": 35.66599,
      "lon": 139.71367,
      "website": "https://jazzbird.jp/"
+    },
+    {
+     "id": "node/13744872804",
+     "name": "Jazz Spot Step!",
+     "lat": 35.69364,
+     "lon": 139.77001,
+     "website": "http://www.jazzspot-step.com/"
     },
     {
      "id": "node/13738752812",
@@ -3252,18 +4974,20 @@
      "website": "https://www.udagawacafe.com/kohaku/"
     },
     {
-     "id": "node/12378195270",
-     "name": "Los Angeles Club",
-     "lat": 35.69845,
-     "lon": 139.65792,
-     "website": "https://www.losangelesclub.jp/"
+     "id": "node/4467166190",
+     "name": "MOGRA",
+     "lat": 35.70207,
+     "lon": 139.77504,
+     "website": "https://club-mogra.jp/",
+     "wikidataId": "Q40040825",
+     "description": "Tokyo'da gece klübü"
     },
     {
-     "id": "node/13741164677",
-     "name": "Morgan Salon",
-     "lat": 35.672,
-     "lon": 139.65632,
-     "website": "https://www.morgan-fisher.com/"
+     "id": "node/5743621322",
+     "name": "Muse",
+     "lat": 35.65936,
+     "lon": 139.72339,
+     "website": "https://muse-web.com/"
     },
     {
      "id": "node/5350345208",
@@ -3272,37 +4996,6 @@
      "lon": 139.70764,
      "address": "2",
      "website": "https://numm.tokyo;https//numm.co.jp"
-    },
-    {
-     "id": "node/8435942917",
-     "name": "Reggae CLUB Garam",
-     "lat": 35.69392,
-     "lon": 139.70175,
-     "website": "https://camp-fire.jp/projects/view/273566"
-    },
-    {
-     "id": "node/2246253004",
-     "name": "Ruby Room",
-     "lat": 35.65957,
-     "lon": 139.69762,
-     "address": "道玄坂二丁目",
-     "website": "https://rubyroomtokyo.com/"
-    },
-    {
-     "id": "node/6408351384",
-     "name": "Soup",
-     "lat": 35.71075,
-     "lon": 139.68398,
-     "address": "新宿区",
-     "website": "https://ochiaisoup.com/"
-    },
-    {
-     "id": "node/13996076382",
-     "name": "Spotify O-EAST",
-     "lat": 35.65865,
-     "lon": 139.69552,
-     "address": "道玄坂2丁目",
-     "website": "https://shibuya-o.com/"
     }
    ]
   }

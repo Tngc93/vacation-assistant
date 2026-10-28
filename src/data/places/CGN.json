@@ -1,7 +1,7 @@
 {
  "version": 5,
  "cityCode": "CGN",
- "fetchedAt": "2026-10-23T12:45:15.909Z",
+ "fetchedAt": "2026-10-27T18:52:12.893Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -75,6 +75,7 @@
      "lon": 6.95811,
      "address": "Domkloster 4",
      "website": "https://www.koelner-dom.de/",
+     "openingHours": "06:00-20:00",
      "wikipediaCount": 84,
      "wikidataId": "Q4176",
      "kinds": [
@@ -610,7 +611,7 @@
      "name": "Rheinseilbahn",
      "lat": 50.95358,
      "lon": 6.97705,
-     "website": "http://www.koelner-seilbahn.de/",
+     "website": "https://www.koelner-seilbahn.de/",
      "wikipediaCount": 2,
      "wikidataId": "Q1685314",
      "kinds": [
@@ -749,8 +750,8 @@
     {
      "id": "way/60358008",
      "name": "Pegel Köln",
-     "lat": 50.93695,
-     "lon": 6.96329,
+     "lat": 50.93696,
+     "lon": 6.96328,
      "wikipediaCount": 1,
      "wikidataId": "Q2067319",
      "photo": {
@@ -809,6 +810,12 @@
      "website": "https://www.museenkoeln.de/archaeologische-zone/default.asp?s=2980&tid=424"
     },
     {
+     "id": "node/368244527",
+     "name": "Abwasser im Rhein",
+     "lat": 50.94871,
+     "lon": 6.96595
+    },
+    {
      "id": "way/481250554",
      "name": "Alt St. Urban Grundmauern Turmhaus",
      "lat": 50.93797,
@@ -852,12 +859,6 @@
      "name": "Brunnenfassung",
      "lat": 50.94032,
      "lon": 6.9592
-    },
-    {
-     "id": "relation/13262151",
-     "name": "CCAA Roemische Stadtmauer",
-     "lat": 50.93612,
-     "lon": 6.95262
     }
    ]
   },
@@ -867,12 +868,12 @@
    "places": [
     {
      "id": "way/334084512",
-     "name": "Wallraf-Richartz-Museum",
+     "name": "Wallraf-Richartz-Museum & Fondation Corboud",
      "lat": 50.93729,
      "lon": 6.95837,
      "address": "Obenmarspforten 40",
      "website": "https://www.wallraf.museum/",
-     "openingHours": "Mo off; Tu-Su 10:00-18:00; PH 10:00-18:00",
+     "openingHours": "off",
      "wikipediaCount": 24,
      "wikidataId": "Q700959",
      "kinds": [
@@ -996,13 +997,13 @@
      "description": "museum in Cologne, Germany"
     },
     {
-     "id": "way/23799547",
+     "id": "node/5739097722",
      "name": "Kolumba Kunstmuseum",
-     "lat": 50.93854,
-     "lon": 6.95427,
+     "lat": 50.93859,
+     "lon": 6.95399,
      "address": "Kolumbastraße 4",
      "website": "https://www.kolumba.de/",
-     "openingHours": "Mo,We-Su 12:00-17:00; Tu off, Jan 01,Aug 15-Sep 14,Dec 24,25,31 off",
+     "openingHours": "Mo,We-Su,PH 12:00-17:00; Tu off; Aug 15-Sep 14,Dec 24-25,Dec 31-Jan 01 off",
      "wikipediaCount": 8,
      "wikidataId": "Q1621165",
      "kinds": [
@@ -1284,7 +1285,7 @@
      "lat": 50.94172,
      "lon": 6.95853,
      "website": "https://www.dombau-koeln.de/index.php?id=11",
-     "openingHours": "Mo-Su,PH 10:00-18:00; Jan 01,Nov 11,Dec 24,25,31 off",
+     "openingHours": "Mo-Su,PH 10:00-18:00; Jan 01 off; Nov 11 off; Dec 24-25 off; Dec 31 off",
      "wikipediaCount": 2,
      "wikidataId": "Q1238676",
      "kinds": [
@@ -1311,7 +1312,7 @@
      "lat": 50.93975,
      "lon": 6.95931,
      "website": "https://museenkoeln.de/artothek/seite.aspx?s=542",
-     "openingHours": "Mo off; Tu-Fr 13:00-19:00; Sa 13:00-16:00; Su,PH off",
+     "openingHours": "Tu-Fr 13:00-19:00; Sa 13:00-16:00",
      "wikidataId": "Q76634814",
      "kinds": [
       "museum",
@@ -1327,6 +1328,15 @@
      "address": "Jülicher Straße 12",
      "website": "https://drei.cologne/",
      "openingHours": "We-Fr 14:00-18:00; Sa 11:00-16:00"
+    },
+    {
+     "id": "node/13999365451",
+     "name": "Galerie Bene Taschen",
+     "lat": 50.93376,
+     "lon": 6.93749,
+     "address": "Lindenstraße 19",
+     "website": "https://www.benetaschen.com/",
+     "openingHours": "We-Fr 13:00-18:00; Sa 11:00-16:00"
     },
     {
      "id": "node/8308325851",
@@ -1370,12 +1380,12 @@
     },
     {
      "id": "node/3416691017",
-     "name": "Kölner Senfmuseum (b.a.W. geschlossen)",
+     "name": "Kölner Senfmuseum",
      "lat": 50.93257,
      "lon": 6.96248,
      "address": "Holzmarkt 83",
      "website": "https://www.senfmuehle.net/",
-     "openingHours": "closed \"Bis auf Weiteres geschlossen.\""
+     "openingHours": "off"
     },
     {
      "id": "node/6191204236",
@@ -1458,6 +1468,13 @@
      "openingHours": "Tu-Fr 11:00-18:00; Sa 11:00-16:00"
     },
     {
+     "id": "node/7685019863",
+     "name": "Galerie Ulf Larsson",
+     "lat": 50.93518,
+     "lon": 6.94178,
+     "openingHours": "We-Fr 14:00-18:00; Sa 12:00-16:00"
+    },
+    {
      "id": "node/1967036080",
      "name": "Galerie Wasser",
      "lat": 50.93914,
@@ -1473,11 +1490,11 @@
      "website": "https://www.koelner-maler-kreis.de/malerwinkel"
     },
     {
-     "id": "node/2248763851",
+     "id": "node/643076863",
      "name": "JUBG",
-     "lat": 50.93923,
-     "lon": 6.94457,
-     "address": "Albertusstraße 13-17",
+     "lat": 50.93602,
+     "lon": 6.94289,
+     "address": "Hahnenstraße 8",
      "website": "https://jubg.space/"
     },
     {
@@ -1489,25 +1506,12 @@
      "openingHours": "Mo-Sa 11:00-19:00"
     },
     {
-     "id": "node/1442264186",
-     "name": "Mid Street Gallery 89 Fabrikat",
-     "lat": 50.93699,
-     "lon": 6.94264,
-     "openingHours": "Tu-Sa 11:00-18:00"
-    },
-    {
-     "id": "node/12520720125",
-     "name": "Narander Art",
-     "lat": 50.92528,
-     "lon": 6.9669,
-     "openingHours": "\"Nach Vereinbarung\""
-    },
-    {
-     "id": "node/10831661264",
-     "name": "ODO ART GALERIE",
-     "lat": 50.93959,
-     "lon": 6.93377,
-     "website": "https://www.odorumpf.de/"
+     "id": "node/13144789239",
+     "name": "Matjö - Raum für Kunst",
+     "lat": 50.93295,
+     "lon": 6.95914,
+     "address": "Mathiasstraße 15",
+     "website": "https://www.matjoe.de/matjoe/"
     }
    ]
   },
@@ -1542,8 +1546,19 @@
      "lon": 6.95248,
      "address": "Balthasarstraße 2",
      "website": "https://www.1992restaurant.de/",
-     "openingHours": "Mo-Su 11:30-22:30",
+     "openingHours": "Tu-Th 11:30-22:00; Fr,Sa 12:00-23:00; Su 11:30-22:00; Mo off",
      "cuisine": "vietnamese, sushi",
+     "detailed": true
+    },
+    {
+     "id": "node/409740993",
+     "name": "60 seconds to napoli",
+     "lat": 50.94858,
+     "lon": 6.94479,
+     "address": "Im Mediapark 5",
+     "website": "https://60secondstonapoli.de/standort/koeln-mediapark/",
+     "openingHours": "Mo-Su 11:30-23:00",
+     "cuisine": "pizza",
      "detailed": true
     },
     {
@@ -1632,6 +1647,17 @@
      "detailed": true
     },
     {
+     "id": "node/581887829",
+     "name": "Bar Brio",
+     "lat": 50.93809,
+     "lon": 6.93481,
+     "address": "Brüsseler Straße 68",
+     "website": "https://www.barbrio.de/",
+     "openingHours": "Mo-Th 12:00-24:00; Fr-Su 12:00-01:00",
+     "cuisine": "fine dining, mediterranean",
+     "detailed": true
+    },
+    {
      "id": "node/774696868",
      "name": "Beef Club",
      "lat": 50.93993,
@@ -1682,6 +1708,16 @@
      "website": "https://beibepi.geo.io/",
      "openingHours": "Mo-Sa 11:00-23:00; Su,PH off",
      "cuisine": "pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/5038198025",
+     "name": "Bibimbab",
+     "lat": 50.9401,
+     "lon": 6.93793,
+     "website": "https://bibimbab-brabanter.de/",
+     "openingHours": "We-Fr 17:00-21:30; Sa 13:00-21:30; Mo,Tu off",
+     "cuisine": "korean",
      "detailed": true
     },
     {
@@ -1741,6 +1777,17 @@
      "detailed": true
     },
     {
+     "id": "node/444326401",
+     "name": "Bowl Maker Society",
+     "lat": 50.93778,
+     "lon": 6.94755,
+     "address": "Wolfsstraße 2-4",
+     "website": "https://www.bowlmakersociety.de/",
+     "openingHours": "Mo-Sa 11:30-21:00; Su 12:30-21:00",
+     "cuisine": "ramen",
+     "detailed": true
+    },
+    {
      "id": "node/658930092",
      "name": "Brauhaus Reissdorf",
      "lat": 50.93121,
@@ -1763,16 +1810,6 @@
      "detailed": true
     },
     {
-     "id": "node/376563133",
-     "name": "Buddha's Eye",
-     "lat": 50.94113,
-     "lon": 6.95329,
-     "website": "https://www.buddhaseye.de/",
-     "openingHours": "Mo-Fr 11:30-22:30; Sa-Su, PH 12:00-22:30",
-     "cuisine": "nepal, tibet",
-     "detailed": true
-    },
-    {
      "id": "node/614681502",
      "name": "Bun Pho Vietnamesische Küche",
      "lat": 50.93516,
@@ -1780,6 +1817,16 @@
      "website": "https://www.bunpho.de/",
      "openingHours": "Mo-Sa 11:30-22:00; Su off;PH 13:00-22:00",
      "cuisine": "noodles, vietnamese, asian",
+     "detailed": true
+    },
+    {
+     "id": "node/4539113677",
+     "name": "Burgerneister",
+     "lat": 50.93803,
+     "lon": 6.93964,
+     "website": "https://burgermeister.com/",
+     "openingHours": "Su-Th 11:00-00:00; Fr-Sa 11:00-04:00",
+     "cuisine": "burger",
      "detailed": true
     },
     {
@@ -1824,48 +1871,6 @@
      "website": "https://www.caruso-pastabar.de/",
      "openingHours": "Mo-Sa 18:00-24:00",
      "cuisine": "pasta",
-     "detailed": true
-    },
-    {
-     "id": "node/571787802",
-     "name": "Casa di Modica",
-     "lat": 50.94016,
-     "lon": 6.94121,
-     "website": "https://www.casa-di-modica.de/",
-     "openingHours": "Mo-Sa 12:00-15:00,18:00-22:30",
-     "cuisine": "italian",
-     "detailed": true
-    },
-    {
-     "id": "node/964861578",
-     "name": "Celentano",
-     "lat": 50.95028,
-     "lon": 6.95337,
-     "address": "Maybachstraße 148",
-     "website": "https://barcelentano.de/",
-     "openingHours": "Tu-Su 17:30-23:00",
-     "cuisine": "italian",
-     "detailed": true
-    },
-    {
-     "id": "node/2578761773",
-     "name": "Chin Burger",
-     "lat": 50.9391,
-     "lon": 6.93883,
-     "website": "https://www.chin-burger.com/",
-     "openingHours": "Fr-Sa 12:00-22:30; Su-Th, PH 12:00-22:00",
-     "cuisine": "chinese",
-     "detailed": true
-    },
-    {
-     "id": "node/4396246187",
-     "name": "Chok Dee",
-     "lat": 50.93379,
-     "lon": 6.94779,
-     "address": "Bayardsgasse 4",
-     "website": "https://www.chokdee.de/",
-     "openingHours": "Tu-Fr 11:30-23:00, Sa 12:00-24:00, Su 12:00-23:00",
-     "cuisine": "thai",
      "detailed": true
     }
    ]
@@ -1943,23 +1948,12 @@
     {
      "id": "node/7817881884",
      "name": "Cafe Extrablatt",
-     "lat": 50.93585,
-     "lon": 6.9533,
+     "lat": 50.93598,
+     "lon": 6.95323,
      "address": "Antoniterstraße 14-16",
      "website": "https://cafe-extrablatt.de/standorte/details/cafe-extrablatt-koeln-antoniterquartier",
      "openingHours": "Mo-Th 09:30-22:00; Fr-Sa 09:30-23:00; Su,PH 09:30-18:00",
      "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/4496380790",
-     "name": "Café Hibiskus",
-     "lat": 50.94827,
-     "lon": 6.95134,
-     "address": "Ritterstraße 52",
-     "website": "https://cafehibiskus.de/",
-     "openingHours": "Th-Fr 12:00-18:00; Sa-Su 14:00-18:00",
-     "cuisine": "hot dog, coffee shop, cake, ice cream, salad",
      "detailed": true
     },
     {
@@ -2136,6 +2130,17 @@
      "detailed": true
     },
     {
+     "id": "way/1036100390",
+     "name": "Haferkater",
+     "lat": 50.94317,
+     "lon": 6.95874,
+     "address": "Trankgasse 11",
+     "website": "https://haferkater.com/stores/koeln",
+     "openingHours": "Mo-Fr 06:00-20:00; Sa-Su 07:00-20:00",
+     "cuisine": "coffee shop, porridge",
+     "detailed": true
+    },
+    {
      "id": "node/4275055556",
      "name": "Halli Galli",
      "lat": 50.93292,
@@ -2155,6 +2160,17 @@
      "website": "https://www.heimisch.cafe/",
      "openingHours": "Mo-Su 09:00-18:00",
      "cuisine": "regional",
+     "detailed": true
+    },
+    {
+     "id": "node/9803272017",
+     "name": "Hempies",
+     "lat": 50.93604,
+     "lon": 6.93716,
+     "address": "Händelstraße 55",
+     "website": "https://www.hempies-vegan.de/",
+     "openingHours": "Mo-Fr 07:30-18:00; Su 10:00-18:00; Sa 09:00-18:00",
+     "cuisine": "breakfast, sandwich",
      "detailed": true
     },
     {
@@ -2189,28 +2205,6 @@
      "openingHours": "Tu-Fr 17:00-24:00; Sa 15:00-24:00; Su 15:00-22:00",
      "cuisine": "french",
      "detailed": true
-    },
-    {
-     "id": "way/51799172",
-     "name": "Park-Café",
-     "lat": 50.94798,
-     "lon": 6.97523,
-     "address": "Auenweg 17",
-     "website": "https://parkcafe.koeln/",
-     "openingHours": "Tu-Su 11:00-18:00",
-     "cuisine": "breakfast, cake, german",
-     "wikidataId": "Q15273343",
-     "detailed": true,
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Parkcaf%C3%A9_im_Rheinpark_K%C3%B6ln-0715.jpg/500px-Parkcaf%C3%A9_im_Rheinpark_K%C3%B6ln-0715.jpg",
-      "width": 500,
-      "height": 333,
-      "author": "Raimond Spekking",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Parkcaf%C3%A9_im_Rheinpark_K%C3%B6ln-0715.jpg",
-      "fullWidth": 6720
-     }
     }
    ]
   },
@@ -2225,7 +2219,7 @@
      "lon": 6.95798,
      "address": "Schillingstraße 27",
      "website": "https://toddytapperbar.de/",
-     "openingHours": "Mo-Th 19:00-00:00; Fr-Sa 19:00-02:00; Su,PH off",
+     "openingHours": "Mo-Th 18:00-24:00; Fr,Sa 18:00-02:00",
      "detailed": true
     },
     {
@@ -2288,9 +2282,9 @@
      "name": "Daikan",
      "lat": 50.9382,
      "lon": 6.93817,
-     "website": "https://www.daikan.de/",
+     "website": "https://www.daikan.de/belgisches-viertel",
      "openingHours": "Mo-Su 11:30-00:00",
-     "cuisine": "japanese",
+     "cuisine": "japanese, ramen",
      "detailed": true
     },
     {
@@ -2454,6 +2448,16 @@
      "detailed": true
     },
     {
+     "id": "node/919586318",
+     "name": "Buskers",
+     "lat": 50.93215,
+     "lon": 6.93828,
+     "address": "Beethovenstraße 17-19",
+     "website": "https://buskers-irish-pub.9gg.de/",
+     "openingHours": "Mo 20:00-24:00; Tu-Su 20:00-02:00",
+     "detailed": true
+    },
+    {
      "id": "node/774757003",
      "name": "Clamotte",
      "lat": 50.93972,
@@ -2480,16 +2484,6 @@
      "address": "Trierer Straße 10",
      "website": "http://www.crazyball.eu/",
      "openingHours": "Mo-Fr 14:00-01:00; Sa, Su 12:00-01:00",
-     "detailed": true
-    },
-    {
-     "id": "way/52451476",
-     "name": "Delirium Cafe Köln",
-     "lat": 50.93753,
-     "lon": 6.96149,
-     "address": "Salzgasse 4",
-     "website": "https://www.deliriumcafe-koeln.de/",
-     "cuisine": "craft beer",
      "detailed": true
     },
     {
@@ -2571,7 +2565,7 @@
      "lat": 50.95099,
      "lon": 6.95638,
      "website": "https://kinggeorg.de/",
-     "openingHours": "Tu-Th 19:00-01:00, Fr,Sa 21:00-03:30",
+     "openingHours": "Tu-Th 19:00-01:00, Fr,Sa 21:00-03:00",
      "detailed": true
     },
     {
@@ -2618,7 +2612,7 @@
      "lat": 50.9517,
      "lon": 6.98195,
      "address": "Auenweg 173",
-     "website": "https://www.bootshaus.tv/",
+     "website": "https://bootshaus.tv/",
      "wikidataId": "Q19835620",
      "photo": {
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Bootshaus_Mainfloor.jpg/500px-Bootshaus_Mainfloor.jpg",
@@ -2768,12 +2762,6 @@
      "lat": 50.93774,
      "lon": 6.93726,
      "address": "Brabanter Straße 15"
-    },
-    {
-     "id": "node/12157963043",
-     "name": "Marie & Johann",
-     "lat": 50.93669,
-     "lon": 6.93186
     },
     {
      "id": "node/809813736",

@@ -104,6 +104,8 @@ export function checkPlan(plan: PlanAnswer, days: readonly DayWindow[], candidat
     else if (!window.window && d.stops.filter((id) => !inside.has(id)).length) errors.push(`day ${d.day} has no window, so it must have no stops`);
     const stops = d.stops.filter((id) => !inside.has(id)).length;
     if (stops > maxStops) errors.push(`day ${d.day} has ${stops} stops; at most ${maxStops}`);
+    const farAreas = [...new Set(d.stops.flatMap((id) => (inside.has(id) ? [] : (byId.get(id)?.farArea ?? []))))];
+    if (farAreas.length > 1) errors.push(`day ${d.day} goes to ${farAreas.length} far areas (${farAreas.join(", ")}); at most one a day`);
     for (const id of d.stops) {
       const c = byId.get(id);
       if (!c) errors.push(`day ${d.day}: "${id}" is not in DATA.candidates`);

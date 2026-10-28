@@ -83,6 +83,23 @@ describe("AI plan", () => {
     }
   });
 
+  it("marks far areas in the candidates, and refuses a day that goes to two of them", async () => {
+    const far = (id: string, lat: number, lon: number, wikipediaCount: number) => ({ ...SIGHTS[0], id, name: id, lat, lon, wikipediaCount, farKm: 5 });
+    const daytime = [...SIGHTS, far("way/9001", 41.39, 2.23, 52), far("way/9002", 41.39, 2.248, 49), far("way/9004", 41.445, 2.17, 51)];
+    const farTrip = { ...trip, candidates: candidatesFor(daytime, days, new Set()) };
+    const areaOf = (id: string) => farTrip.candidates.find((c) => c.id === id)?.farArea;
+    expect(areaOf("w9001")).toBe(areaOf("w9002"));
+    expect(areaOf("w9004")).toMatch(/^far\d+$/);
+    expect(areaOf("w9004")).not.toBe(areaOf("w9001"));
+    expect(areaOf("n100")).toBeUndefined();
+    const mock = mockProvider("anthropic", [answer({ 2: ["w9001", "w9004"] }), answer({ 2: ["w9001", "w9002"], 3: ["w9004"] })]);
+    const result = await requestAiPlan(conn("anthropic"), farTrip, mock.fetcher);
+    expect(result).toMatchObject({ ok: true, attempts: 2 });
+    const retry = JSON.parse(mock.requests[1].body) as { messages: Array<{ content: string }> };
+    expect(retry.messages.at(-1)?.content).toContain("day 2 goes to 2 far areas");
+    expect(JSON.parse(mock.requests[0].body).system).toContain("never put two different farArea values on the same day");
+  });
+
   it("reads JSON wrapped in a code fence", () => {
     expect(extractJson('```json\n{"a":1}\n```')).toEqual({ a: 1 });
     expect(() => extractJson("sorry")).toThrow();

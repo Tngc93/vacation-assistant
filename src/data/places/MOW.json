@@ -1,7 +1,7 @@
 {
  "version": 5,
  "cityCode": "MOW",
- "fetchedAt": "2026-10-23T14:04:45.598Z",
+ "fetchedAt": "2026-10-27T19:10:59.081Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -69,6 +69,14 @@
     {
      "id": "relation/1360641",
      "name": "Московский Кремль",
+     "osmNames": {
+      "en": "Moscow Kremlin",
+      "int": "The Kremlin"
+     },
+     "labels": {
+      "tr": "Kremlini",
+      "en": "Kremlin"
+     },
      "lat": 55.75162,
      "lon": 37.61782,
      "wikipediaCount": 91,
@@ -95,6 +103,13 @@
     {
      "id": "relation/3030568",
      "name": "Собор Василия Блаженного",
+     "osmNames": {
+      "en": "Saint Basil's Cathedral"
+     },
+     "labels": {
+      "tr": "Aziz Vasil Katedrali",
+      "en": "St. Basil's Cathedral"
+     },
      "lat": 55.75247,
      "lon": 37.6231,
      "address": "Красная площадь 2",
@@ -173,6 +188,13 @@
     {
      "id": "relation/3272726",
      "name": "Мавзолей В. И. Ленина",
+     "osmNames": {
+      "en": "Vladimir Lenin's Mausoleum"
+     },
+     "labels": {
+      "tr": "Lenin'in Mozolesi",
+      "en": "Lenin's Mausoleum"
+     },
      "lat": 55.75372,
      "lon": 37.6199,
      "address": "Красная площадь",
@@ -231,11 +253,9 @@
      "wikipediaCount": 58,
      "wikidataId": "Q181324",
      "kinds": [
+      "adminArea",
       "attraction",
-      "concertHall",
       "heritage",
-      "musicVenue",
-      "performingArts",
       "tower"
      ],
      "photo": {
@@ -277,6 +297,13 @@
     {
      "id": "relation/9938302",
      "name": "Мемориальная усадьба Ф. И. Шаляпина",
+     "osmNames": {
+      "en": "FI Chaliapin memorial"
+     },
+     "labels": {
+      "tr": "Feodor Chaliapin",
+      "en": "Feodor Chaliapin"
+     },
      "lat": 55.75675,
      "lon": 37.58294,
      "wikipediaCount": 52,
@@ -367,6 +394,13 @@
     {
      "id": "node/311999397",
      "name": "Царь-колокол",
+     "osmNames": {
+      "en": "Tsar Bell"
+     },
+     "labels": {
+      "tr": "Çar Çanı",
+      "en": "Tsar Bell"
+     },
      "lat": 55.75077,
      "lon": 37.61844,
      "wikipediaCount": 42,
@@ -438,6 +472,14 @@
     {
      "id": "relation/3330565",
      "name": "Государственный универсальный магазин (ГУМ)",
+     "osmNames": {
+      "en": "GUM department store",
+      "int": "GUM"
+     },
+     "labels": {
+      "tr": "GUM",
+      "en": "GUM"
+     },
      "lat": 55.7547,
      "lon": 37.62149,
      "address": "Красная площадь 3",
@@ -575,6 +617,40 @@
      "description": "mosque in Moscow"
     },
     {
+     "id": "relation/1359243",
+     "name": "Собор Михаила Архангела",
+     "osmNames": {
+      "en": "Cathedral of the Archangel"
+     },
+     "labels": {
+      "tr": "Başmelek Katedrali",
+      "en": "Cathedral of the Archangel"
+     },
+     "lat": 55.75017,
+     "lon": 37.6178,
+     "wikipediaCount": 34,
+     "wikidataId": "Q917830",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "notPlace",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg/500px-Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg",
+      "width": 500,
+      "height": 626,
+      "author": "shakko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg",
+      "fullWidth": 1432
+     },
+     "description": "church in Moscow, Russia",
+     "parentId": "Q133274",
+     "parentName": "Kremlini"
+    },
+    {
      "id": "wikidata/Q1200275",
      "name": "Komsomolskaya",
      "lat": 55.77649,
@@ -591,6 +667,13 @@
     {
      "id": "relation/225033",
      "name": "Большой Кремлёвский дворец",
+     "osmNames": {
+      "en": "Grand Kremlin Palace"
+     },
+     "labels": {
+      "tr": "Büyük Kremlin Sarayı",
+      "en": "Grand Kremlin Palace"
+     },
      "lat": 55.75019,
      "lon": 37.61562,
      "wikipediaCount": 33,
@@ -611,33 +694,6 @@
       "fullWidth": 5023
      },
      "description": "Rusya cumhurbaşkanının resmi çalışma konutu olarak hizmet veren saray",
-     "parentId": "Q133274",
-     "parentName": "Kremlini"
-    },
-    {
-     "id": "relation/1359243",
-     "name": "Собор Михаила Архангела",
-     "lat": 55.75017,
-     "lon": 37.6178,
-     "wikipediaCount": 33,
-     "wikidataId": "Q917830",
-     "kinds": [
-      "attraction",
-      "heritage",
-      "notPlace",
-      "religious"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg/500px-Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg",
-      "width": 500,
-      "height": 626,
-      "author": "shakko",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Archangel_in_Moscow_01_by_shakko.jpg",
-      "fullWidth": 1432
-     },
-     "description": "church in Moscow, Russia",
      "parentId": "Q133274",
      "parentName": "Kremlini"
     },
@@ -682,8 +738,48 @@
      "description": "Moscow Metro station"
     },
     {
+     "id": "relation/1359251",
+     "name": "Благовещенский собор",
+     "osmNames": {
+      "en": "Cathedral of the Annunciation"
+     },
+     "labels": {
+      "tr": "Müjde Katedrali (Moskova)",
+      "en": "Cathedral of the Annunciation"
+     },
+     "lat": 55.75,
+     "lon": 37.6169,
+     "wikipediaCount": 31,
+     "wikidataId": "Q1160154",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/The_Cathedral_of_the_Annunciation.jpg/500px-The_Cathedral_of_the_Annunciation.jpg",
+      "width": 500,
+      "height": 375,
+      "author": "Holger Zscheyge",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Cathedral_of_the_Annunciation.jpg",
+      "fullWidth": 1600
+     },
+     "description": "church in Moscow, Russia",
+     "parentId": "Q133274",
+     "parentName": "Kremlini"
+    },
+    {
      "id": "relation/1736667",
      "name": "Ленинградский вокзал",
+     "osmNames": {
+      "en": "Leningradsky Rail Terminal"
+     },
+     "labels": {
+      "tr": "Leningrad Garı",
+      "en": "Leningradsky railway station"
+     },
      "lat": 55.77676,
      "lon": 37.65502,
      "address": "Комсомольская площадь 3",
@@ -757,50 +853,18 @@
      "description": "theatre company in Moscow, Russia"
     },
     {
-     "id": "relation/1359251",
-     "name": "Благовещенский собор",
-     "lat": 55.75,
-     "lon": 37.6169,
-     "wikipediaCount": 30,
-     "wikidataId": "Q1160154",
-     "kinds": [
-      "attraction",
-      "heritage",
-      "religious"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/The_Cathedral_of_the_Annunciation.jpg/500px-The_Cathedral_of_the_Annunciation.jpg",
-      "width": 500,
-      "height": 375,
-      "author": "Holger Zscheyge",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Cathedral_of_the_Annunciation.jpg",
-      "fullWidth": 1600
-     },
-     "description": "church in Moscow, Russia",
-     "parentId": "Q133274",
-     "parentName": "Kremlini"
-    },
-    {
-     "id": "wikidata/Q32960",
-     "name": "Olimpiyskiy",
-     "localName": "Olympiysky Sports Complex",
-     "lat": 55.78104,
-     "lon": 37.62642,
-     "wikipediaCount": 29,
-     "wikidataId": "Q32960",
-     "kinds": [
-      "sportsVenue"
-     ],
-     "description": "indoor arena located in Moscow, Russia"
-    },
-    {
      "id": "relation/1360656",
      "name": "Спасская башня",
+     "osmNames": {
+      "en": "Saviour Tower"
+     },
+     "labels": {
+      "tr": "Spasskaya Kulesi",
+      "en": "Spasskaya Tower"
+     },
      "lat": 55.75253,
      "lon": 37.62138,
-     "wikipediaCount": 29,
+     "wikipediaCount": 30,
      "wikidataId": "Q2416732",
      "kinds": [
       "adminArea",
@@ -824,8 +888,28 @@
      "parentName": "Kremlini"
     },
     {
+     "id": "wikidata/Q32960",
+     "name": "Olimpiyskiy",
+     "localName": "Olympiysky Sports Complex",
+     "lat": 55.78104,
+     "lon": 37.62642,
+     "wikipediaCount": 29,
+     "wikidataId": "Q32960",
+     "kinds": [
+      "sportsVenue"
+     ],
+     "description": "indoor arena located in Moscow, Russia"
+    },
+    {
      "id": "relation/1453198",
      "name": "Шуховская башня",
+     "osmNames": {
+      "en": "Shukhov Tower"
+     },
+     "labels": {
+      "tr": "Şuhov Kulesi",
+      "en": "Shukhov Tower"
+     },
      "lat": 55.71732,
      "lon": 37.61159,
      "wikipediaCount": 29,
@@ -917,6 +1001,13 @@
     {
      "id": "relation/2261797",
      "name": "Киевский вокзал",
+     "osmNames": {
+      "en": "Kiyevsky Rail Terminal"
+     },
+     "labels": {
+      "tr": "Kiev Garı",
+      "en": "Moscow Kiyevsky railway station"
+     },
      "lat": 55.74312,
      "lon": 37.56547,
      "address": "площадь Киевского Вокзала 1",
@@ -942,6 +1033,14 @@
     {
      "id": "relation/16492515",
      "name": "Могила Неизвестного Солдата",
+     "osmNames": {
+      "en": "Tomb of the Unknown Soldier",
+      "int": "Mogila Neizvestnogo Soldata"
+     },
+     "labels": {
+      "tr": "Meçhul Asker Anıtı",
+      "en": "Tomb of the Unknown Soldier"
+     },
      "lat": 55.75484,
      "lon": 37.61605,
      "wikipediaCount": 27,
@@ -1073,6 +1172,13 @@
     {
      "id": "node/6055217813",
      "name": "Музей Отечественной войны 1812 года",
+     "osmNames": {
+      "en": "Museum of the Patriotic War of 1812"
+     },
+     "labels": {
+      "tr": "Napolyon'un Rusya Seferi",
+      "en": "French invasion of Russia"
+     },
      "lat": 55.75627,
      "lon": 37.61869,
      "address": "площадь Революции 2/3",
@@ -1099,6 +1205,13 @@
     {
      "id": "relation/1907261",
      "name": "Третьяковская галерея",
+     "osmNames": {
+      "en": "Tretyakov Gallery"
+     },
+     "labels": {
+      "tr": "Tretyakov Devlet Galerisi",
+      "en": "Tretyakov Gallery"
+     },
      "lat": 55.74136,
      "lon": 37.62018,
      "address": "Лаврушинский переулок 10",
@@ -1127,6 +1240,13 @@
     {
      "id": "relation/2421978",
      "name": "Государственный музей изобразительных искусств имени А. С. Пушкина",
+     "osmNames": {
+      "en": "The Pushkin State Museum of Fine Arts"
+     },
+     "labels": {
+      "tr": "Puşkin Müzesi",
+      "en": "Pushkin Museum of Fine Arts"
+     },
      "lat": 55.74727,
      "lon": 37.60518,
      "address": "улица Волхонка 12 с1",
@@ -1153,6 +1273,13 @@
     {
      "id": "relation/5963922",
      "name": "Исторический музей",
+     "osmNames": {
+      "en": "Historical Museum"
+     },
+     "labels": {
+      "tr": "Devlet Tarih Müzesi",
+      "en": "State Historical Museum"
+     },
      "lat": 55.75532,
      "lon": 37.61772,
      "address": "Красная площадь 1",
@@ -1182,6 +1309,13 @@
     {
      "id": "relation/1359335",
      "name": "Оружейная палата",
+     "osmNames": {
+      "en": "Armoury"
+     },
+     "labels": {
+      "tr": "Kremlin Cephaneliği",
+      "en": "Kremlin Armoury"
+     },
      "lat": 55.74959,
      "lon": 37.61342,
      "address": "Кремлёвская набережная 1 с3",
@@ -1210,6 +1344,13 @@
     {
      "id": "relation/2792560",
      "name": "Музей Вооружённых сил",
+     "osmNames": {
+      "en": "Central Armed Forces Museum"
+     },
+     "labels": {
+      "tr": "Merkez Silahlı Kuvvetler Müzesi",
+      "en": "Central Armed Forces Museum"
+     },
      "lat": 55.78486,
      "lon": 37.61811,
      "wikipediaCount": 21,
@@ -1233,6 +1374,13 @@
     {
      "id": "relation/7679578",
      "name": "Грановитая палата",
+     "osmNames": {
+      "en": "Palace of the Facets"
+     },
+     "labels": {
+      "tr": "Yönler Sarayı",
+      "en": "Palace of Facets"
+     },
      "lat": 55.75051,
      "lon": 37.61666,
      "wikipediaCount": 20,
@@ -1259,6 +1407,12 @@
     {
      "id": "node/4988219028",
      "name": "Алмазный фонд",
+     "osmNames": {
+      "en": "Diamond Fund"
+     },
+     "labels": {
+      "en": "Diamond Fund"
+     },
      "lat": 55.74961,
      "lon": 37.61376,
      "address": "Манежная улица",
@@ -1283,8 +1437,47 @@
      "description": "state owned diamond collection"
     },
     {
+     "id": "relation/1359337",
+     "name": "Потешный дворец",
+     "osmNames": {
+      "en": "Amusement Palace"
+     },
+     "labels": {
+      "en": "Amusement Palace"
+     },
+     "lat": 55.75123,
+     "lon": 37.6144,
+     "wikipediaCount": 15,
+     "wikidataId": "Q1877773",
+     "kinds": [
+      "attraction",
+      "heritage",
+      "palace"
+     ],
+     "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Moscou_Kremlin_%D0%9F%D0%BE%D1%82%D0%B5%D1%88%D0%BD%D1%8B%D0%B9_%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86.jpg",
+      "width": 500,
+      "height": 660,
+      "author": "Service photographique du Kremlin",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscou_Kremlin_%D0%9F%D0%BE%D1%82%D0%B5%D1%88%D0%BD%D1%8B%D0%B9_%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86.jpg",
+      "fullWidth": 500
+     },
+     "description": "palace in Tverskoy District, Russia",
+     "parentId": "Q133274",
+     "parentName": "Kremlini"
+    },
+    {
      "id": "node/2613597034",
      "name": "Музей искусства народов Востока",
+     "osmNames": {
+      "en": "Museum of Oriental Arts"
+     },
+     "labels": {
+      "tr": "Devlet Doğu Sanatları Müzesi",
+      "en": "State Museum of Oriental Art"
+     },
      "lat": 55.75639,
      "lon": 37.59989,
      "website": "https://www.orientmuseum.ru/",
@@ -1308,34 +1501,15 @@
      "description": "art museum in Moscow, Russia"
     },
     {
-     "id": "relation/1359337",
-     "name": "Потешный дворец",
-     "lat": 55.75123,
-     "lon": 37.6144,
-     "wikipediaCount": 14,
-     "wikidataId": "Q1877773",
-     "kinds": [
-      "attraction",
-      "heritage",
-      "palace"
-     ],
-     "photo": {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Moscou_Kremlin_%D0%9F%D0%BE%D1%82%D0%B5%D1%88%D0%BD%D1%8B%D0%B9_%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86.jpg",
-      "width": 500,
-      "height": 660,
-      "author": "Service photographique du Kremlin",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Moscou_Kremlin_%D0%9F%D0%BE%D1%82%D0%B5%D1%88%D0%BD%D1%8B%D0%B9_%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86.jpg",
-      "fullWidth": 500
-     },
-     "description": "palace in Tverskoy District, Russia",
-     "parentId": "Q133274",
-     "parentName": "Kremlini"
-    },
-    {
      "id": "way/48503927",
      "name": "Гараж",
+     "osmNames": {
+      "en": "Garage Museum of Contemporary Art"
+     },
+     "labels": {
+      "tr": "Garage Çağdaş Sanat Müzesi",
+      "en": "Garage Center for Contemporary Culture"
+     },
      "lat": 55.72782,
      "lon": 37.60164,
      "address": "улица Крымский Вал 9 с32",
@@ -1365,6 +1539,12 @@
     {
      "id": "node/1733057309",
      "name": "Музей холодной войны (экспозиционный комплекс Бункер-42)",
+     "osmNames": {
+      "en": "Bunker 42 -Tagansky Protected Command Point"
+     },
+     "labels": {
+      "en": "Tagansky Protected Command Point"
+     },
      "lat": 55.74165,
      "lon": 37.64911,
      "address": "5-й Котельнический переулок 11",
@@ -1391,6 +1571,12 @@
     {
      "id": "way/31482160",
      "name": "Зоологический музей МГУ",
+     "osmNames": {
+      "en": "Zoological Museum of Moscow University"
+     },
+     "labels": {
+      "en": "Zoological Museum of Moscow University"
+     },
      "lat": 55.75588,
      "lon": 37.60947,
      "address": "Большая Никитская улица 6",
@@ -1409,6 +1595,12 @@
     {
      "id": "way/193498236",
      "name": "Мультимедиа Арт Музей",
+     "osmNames": {
+      "en": "Multimedia Art Museum"
+     },
+     "labels": {
+      "en": "Multimedia Art Museum, Moscow"
+     },
      "lat": 55.74166,
      "lon": 37.59852,
      "address": "улица Остоженка 16",
@@ -1435,6 +1627,12 @@
     {
      "id": "way/32693733",
      "name": "Государственный музей архитектуры им. А. В. Щусева",
+     "osmNames": {
+      "en": "Schusev State Museum of Architecture"
+     },
+     "labels": {
+      "en": "Shchusev State Museum of Architecture"
+     },
      "lat": 55.75245,
      "lon": 37.60731,
      "address": "Староваганьковский переулок 25",
@@ -1461,6 +1659,12 @@
     {
      "id": "way/132469316",
      "name": "Музей Московской железной дороги",
+     "osmNames": {
+      "en": "Museum of Moscow railway"
+     },
+     "labels": {
+      "en": "Museum of the Moscow Railway"
+     },
      "lat": 55.72832,
      "lon": 37.64219,
      "address": "Кожевническая улица 2",
@@ -1487,6 +1691,9 @@
     {
      "id": "way/79561160",
      "name": "Музей памяти",
+     "labels": {
+      "en": "Gulag-Museum"
+     },
      "lat": 55.77706,
      "lon": 37.61362,
      "address": "1-й Самотёчный переулок 9 с1",
@@ -1512,6 +1719,12 @@
     {
      "id": "way/224146643",
      "name": "Дом архитектора Мельникова",
+     "osmNames": {
+      "en": "Melnikov House"
+     },
+     "labels": {
+      "en": "Melnikov House"
+     },
      "lat": 55.74803,
      "lon": 37.58947,
      "address": "Кривоарбатский переулок 10",
@@ -1538,6 +1751,12 @@
     {
      "id": "node/2161495261",
      "name": "Минералогический музей им. Ферсмана",
+     "osmNames": {
+      "en": "Fersman Mineralogical Museum"
+     },
+     "labels": {
+      "en": "Fersman Mineralogical Museum"
+     },
      "lat": 55.71874,
      "lon": 37.59278,
      "website": "https://www.fmm.ru/",
@@ -1563,6 +1782,12 @@
     {
      "id": "node/3361538621",
      "name": "Музей М. А. Булгакова",
+     "osmNames": {
+      "en": "Bulgakov Museum"
+     },
+     "labels": {
+      "en": "Bulgakov Museum in Moscow"
+     },
      "lat": 55.76703,
      "lon": 37.59394,
      "website": "http://bulgakovmuseum.ru/",
@@ -1589,6 +1814,12 @@
     {
      "id": "node/7887532120",
      "name": "Музей советских игровых автоматов",
+     "osmNames": {
+      "en": "Museum of Soviet arcade machines"
+     },
+     "labels": {
+      "en": "Museum of Soviet Arcade Machines"
+     },
      "lat": 55.76441,
      "lon": 37.62376,
      "website": "http://www.15kop.ru/",
@@ -1615,6 +1846,13 @@
     {
      "id": "relation/3224482",
      "name": "Парк искусств Музеон",
+     "osmNames": {
+      "en": "Muzeon Park of Arts"
+     },
+     "labels": {
+      "tr": "Muzeon Sanat Parkı",
+      "en": "Muzeon Park in Moscow"
+     },
      "lat": 55.73561,
      "lon": 37.60676,
      "address": "Крымский вал 2",
@@ -1642,6 +1880,12 @@
     {
      "id": "node/3848611737",
      "name": "Центральный дом художника",
+     "osmNames": {
+      "en": "Central House of Artists"
+     },
+     "labels": {
+      "en": "Central House of Artists, Moscow"
+     },
      "lat": 55.73439,
      "lon": 37.60438,
      "website": "http://www.cha.ru/",
@@ -1666,6 +1910,12 @@
     {
      "id": "relation/16685841",
      "name": "Государственный центральный музей современной истории России",
+     "osmNames": {
+      "en": "State Central Museum of Contemporary History of Russia"
+     },
+     "labels": {
+      "en": "State Central Museum of the Contemporary Russian History"
+     },
      "lat": 55.76616,
      "lon": 37.60161,
      "address": "Тверская улица 21",
@@ -1683,6 +1933,12 @@
     {
      "id": "node/4692951498",
      "name": "Мемориальный музей-квартира А. М. Горького",
+     "osmNames": {
+      "en": "Gorky Museum"
+     },
+     "labels": {
+      "en": "Gorky House Museum"
+     },
      "lat": 55.75824,
      "lon": 37.5963,
      "website": "http://www.museum.ru/M402",
@@ -1733,6 +1989,9 @@
     {
      "id": "way/222865578",
      "name": "Государственный центр современного искусства",
+     "labels": {
+      "en": "National Centre for Contemporary Arts"
+     },
      "lat": 55.76436,
      "lon": 37.5813,
      "address": "Зоологическая улица 13 с2",
@@ -1760,6 +2019,9 @@
     {
      "id": "node/3437732377",
      "name": "Музей воды",
+     "labels": {
+      "en": "Museum of water"
+     },
      "lat": 55.72935,
      "lon": 37.65668,
      "website": "https://www.mosvodokanal.ru/about/museum.php",
@@ -1785,6 +2047,9 @@
     {
      "id": "way/176331572",
      "name": "Центральный музей древнерусской культуры и искусства им. Андрея Рублева",
+     "labels": {
+      "en": "Andrey Rublev's museum"
+     },
      "lat": 55.74956,
      "lon": 37.67035,
      "address": "Андроньевская площадь 10 с8",
@@ -1811,6 +2076,12 @@
     {
      "id": "way/300426887",
      "name": "Дом-музей М. Ю. Лермонтова",
+     "osmNames": {
+      "en": "Lermontov Museum House"
+     },
+     "labels": {
+      "en": "Lermontov memorial house, Moscow"
+     },
      "lat": 55.75357,
      "lon": 37.59418,
      "address": "улица Малая Молчановка 2",
@@ -1837,6 +2108,12 @@
     {
      "id": "way/151077489",
      "name": "Музей русской иконы",
+     "osmNames": {
+      "en": "Museum of Russian Icons"
+     },
+     "labels": {
+      "en": "The Private Museum of Russian Icon"
+     },
      "lat": 55.74632,
      "lon": 37.64544,
      "address": "Гончарная улица 3 с3",
@@ -1863,6 +2140,9 @@
     {
      "id": "node/11741417323",
      "name": "Нехорошая квартира",
+     "labels": {
+      "en": "Bad apartment"
+     },
      "lat": 55.76705,
      "lon": 37.59391,
      "wikipediaCount": 4,
@@ -1888,6 +2168,12 @@
     {
      "id": "relation/10048315",
      "name": "Галерея Ильи Глазунова",
+     "osmNames": {
+      "en": "Ilya Glazunov Art Gallery"
+     },
+     "labels": {
+      "en": "Ilya Glazunov Art Gallery"
+     },
      "lat": 55.74638,
      "lon": 37.60673,
      "address": "улица Волхонка 13",
@@ -1914,6 +2200,12 @@
     {
      "id": "node/273355916",
      "name": "Государственный музей А.С.Пушкина",
+     "osmNames": {
+      "en": "Pushkin State Museum"
+     },
+     "labels": {
+      "en": "State Alexander Pushkin Museum in Moscow"
+     },
      "lat": 55.74407,
      "lon": 37.5969,
      "address": "улица Пречистенка 12/2",
@@ -1940,6 +2232,12 @@
     {
      "id": "node/2798179186",
      "name": "Государственный музей Л.Н. Толстого",
+     "osmNames": {
+      "en": "State Tolstoy Museum"
+     },
+     "labels": {
+      "en": "Leo Tolstoy State Museum"
+     },
      "lat": 55.74281,
      "lon": 37.59697,
      "website": "http://tolstoymuseum.ru/museums/museum_branchs/prechistenka",
@@ -1966,6 +2264,9 @@
     {
      "id": "way/45627008",
      "name": "Дом-музей В.М. Васнецова",
+     "labels": {
+      "en": "House museum of Viktor Vasnetsov"
+     },
      "lat": 55.77673,
      "lon": 37.62609,
      "address": "переулок Васнецова 13",
@@ -1993,6 +2294,9 @@
     {
      "id": "way/51545026",
      "name": "Дом-музей П. Д. Корина",
+     "labels": {
+      "en": "Pavel Korin's house-museum"
+     },
      "lat": 55.72884,
      "lon": 37.5668,
      "address": "Малая Пироговская улица 14 с5",
@@ -2020,6 +2324,12 @@
     {
      "id": "way/164210810",
      "name": "Музей В.А. Тропинина и московских художников его времени",
+     "osmNames": {
+      "en": "Tropinin and Moscow Artists of His Time Museum"
+     },
+     "labels": {
+      "en": "Museum of Tropinin and His Contemporaries, Moscow"
+     },
      "lat": 55.7338,
      "lon": 37.62279,
      "address": "Щетининский переулок 10 с1",
@@ -2048,6 +2358,12 @@
     {
      "id": "relation/5371132",
      "name": "Музей Н. В. Гоголя",
+     "osmNames": {
+      "en": "Gogol House"
+     },
+     "labels": {
+      "en": "Gogol house"
+     },
      "lat": 55.75414,
      "lon": 37.59981,
      "address": "Никитский бульвар 7А",
@@ -2076,6 +2392,9 @@
     {
      "id": "way/204855051",
      "name": "Огни Москвы",
+     "labels": {
+      "en": "Museum of city lighting, Moscow"
+     },
      "lat": 55.76086,
      "lon": 37.63548,
      "address": "Армянский переулок 3",
@@ -2366,6 +2685,9 @@
     {
      "id": "node/3104234130",
      "name": "Dr. Живаго",
+     "osmNames": {
+      "en": "Dr. Zhivago"
+     },
      "lat": 55.75683,
      "lon": 37.61434,
      "address": "Моховая улица 15/1",
@@ -2889,6 +3211,9 @@
     {
      "id": "node/3342282885",
      "name": "Жигули",
+     "osmNames": {
+      "en": "Zhiguli"
+     },
      "lat": 55.75224,
      "lon": 37.59675,
      "address": "улица Новый Арбат 11 с1",
@@ -2929,6 +3254,9 @@
     {
      "id": "node/7003294066",
      "name": "16 тонн",
+     "osmNames": {
+      "en": "16 tons"
+     },
      "lat": 55.74947,
      "lon": 37.59099,
      "website": "http://www.16tons.ru/",
@@ -3036,6 +3364,12 @@
     {
      "id": "way/37647635",
      "name": "16 тонн",
+     "osmNames": {
+      "en": "16 tons"
+     },
+     "labels": {
+      "en": "Sixteen Tons (Moscow club)"
+     },
      "lat": 55.76429,
      "lon": 37.56439,
      "address": "улица Пресненский Вал 6 с1",
@@ -3158,6 +3492,9 @@
     {
      "id": "node/3662579729",
      "name": "Алиби",
+     "osmNames": {
+      "en": "Alibi"
+     },
      "lat": 55.76764,
      "lon": 37.63455,
      "address": "Ащеулов переулок 9",
@@ -3168,6 +3505,9 @@
     {
      "id": "node/5459239958",
      "name": "Афиша",
+     "osmNames": {
+      "en": "Afisha"
+     },
      "lat": 55.77631,
      "lon": 37.66105,
      "website": "http://afishaclub.ru/",
@@ -3249,6 +3589,9 @@
     {
      "id": "node/2476422653",
      "name": "Петрович",
+     "osmNames": {
+      "en": "Petrovich"
+     },
      "lat": 55.76291,
      "lon": 37.63681,
      "website": "http://www.club-petrovich.ru/",

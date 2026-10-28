@@ -7,7 +7,7 @@ import { shortId } from "./ids";
 import { openCheck } from "./openCheck";
 import { withLocative } from "@/lib/places/hours";
 import { hhmm, roundDown, roundUp, toMinutes, weekdayOf } from "./time";
-import { travelBetween, type Travel } from "./travel";
+import { needsTransit, travelBetween, type Travel } from "./travel";
 
 /** A place the plan may use (from the pre-fetched city file). */
 export type PlanPlace = {
@@ -32,8 +32,11 @@ export type PlanPlace = {
   noVisit?: true;
   /** Seen from outside only, except in `openMonths` (Buckingham Palace's State Rooms open July–September). */
   exterior?: { visitMin?: number; openMonths?: readonly number[]; note?: string };
-  /** Far from the centre (the Atomium): an area of its own, never a filler. */
-  remote?: true;
+  /**
+   * Far from the centre (places/far.ts), in km: its far area (`farAreas`) gets one day, and a day goes to at most
+   * one far area; never a filler of a day that goes elsewhere.
+   */
+  farKm?: number;
   /** Wikidata item of the place it is inside (the Tsar Bell in the Kremlin): visited with that place, as a sub-stop. */
   parentId?: string;
   /** That place's name to show: "Moskova Kremlini". */
@@ -90,8 +93,8 @@ export type PlanStop = {
   travel: Travel | null;
   /** Seen from outside only on this day; `note` says why or what to see. */
   exterior: { note: string | null } | null;
-  /** Far from the centre: the card suggests public transport. */
-  remote: boolean;
+  /** Far from the centre (places/far.ts): "MERKEZE ~5 KM". Null when it is not; never set on a sub-stop. */
+  farKm: number | null;
   /** OpenStreetMap, or Wikidata for a must-see place OSM does not have. */
   sourceUrl: string;
   source: "OpenStreetMap" | "Wikidata";
@@ -217,18 +220,46 @@ const dist = (a: { lat: number; lon: number }, b: { lat: number; lon: number }) 
  * the ones already found keep their place, so the longest days still start in
  * clearly different areas.
  */
-export function chooseAnchors(ordered: PlanPlace[], count: number): PlanPlace[] {
+export function chooseAnchors(ordered: PlanPlace[], count: number, farArea: (p: PlanPlace) => number | undefined = () => undefined): PlanPlace[] {
   const target = Math.min(count, ordered.length);
   const anchors: PlanPlace[] = [];
+  // A far area is one area: at most one of its places is an anchor, so it never takes two days.
+  const sameFarArea = (p: PlanPlace) => farArea(p) !== undefined && anchors.some((a) => farArea(a) === farArea(p));
   for (let minKm: number = ITINERARY.anchorMinKm; anchors.length < target && minKm >= 0.01; minKm /= 2) {
     for (const p of ordered) {
       if (anchors.length === target) break;
-      if (!anchors.includes(p) && anchors.every((a) => dist(a, p) >= minKm)) anchors.push(p);
+      if (!anchors.includes(p) && !sameFarArea(p) && anchors.every((a) => dist(a, p) >= minKm)) anchors.push(p);
     }
   }
   // Places on top of each other: fill up in importance order.
-  for (const p of ordered) if (anchors.length < target && !anchors.includes(p)) anchors.push(p);
+  for (const p of ordered) if (anchors.length < target && !anchors.includes(p) && !sameFarArea(p)) anchors.push(p);
   return anchors;
+}
+
+/**
+ * The far places (places/far.ts) in far areas: two far places within walking distance of each other (the plan's
+ * walking rule, travel.ts) are one area, and so is a chain of them (the Eiffel Tower, the Trocadéro and the Arc de
+ * Triomphe). Place id → area number; areas are numbered in the order of `places`.
+ */
+export function farAreas(places: readonly PlanPlace[]): Map<string, number> {
+  const far = places.filter((p) => p.farKm !== undefined);
+  const area = new Map<string, number>();
+  let next = 0;
+  for (const seed of far) {
+    if (area.has(seed.id)) continue;
+    const n = next++;
+    area.set(seed.id, n);
+    for (const queue = [seed]; queue.length; ) {
+      const p = queue.pop()!;
+      for (const q of far) {
+        if (!area.has(q.id) && !needsTransit(dist(p, q))) {
+          area.set(q.id, n);
+          queue.push(q);
+        }
+      }
+    }
+  }
+  return area;
 }
 
 /** Absolute minutes from the first trip day's midnight. */
@@ -322,7 +353,7 @@ function toStop(
     ...(p.country ? { country: p.country } : {}),
     travel,
     exterior: outside ? { note: p.exterior?.note ?? null } : null,
-    remote: Boolean(p.remote),
+    farKm: p.farKm ?? null,
     ...sourceOf(p),
     ...(inside.length
       ? {
@@ -389,6 +420,10 @@ export function insideOf(places: readonly PlanPlace[]): Map<string, PlanPlace> {
  * A place inside another one (the Tsar Bell in the Kremlin) is never a stop of
  * its own while that place can be planned: it comes with it, as a sub-stop
  * right after it, and the visit lasts as long as the longest of them.
+ *
+ * Places far from the centre (places/far.ts) form far areas (`farAreas`): a
+ * far area's must-sees go to one day, a day goes to at most one far area, and
+ * a far place fills only a day that already goes to its area.
  */
 export function buildItinerary(input: ItineraryInput): Itinerary {
   const skip = new Set(input.skip);
@@ -432,10 +467,9 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const topFive = new Set(mustSees.slice(0, 5).map((p) => p.id));
 
   // 2. Areas: one anchor per day among the must-sees. The area with the most must-sees gets the longest day, so a
-  //    dense old town is not squeezed into an arrival afternoon.
-  // A remote must-see (the Atomium, 5 km out) is an area of its own when the trip has days enough.
-  const remoteFirst = order.length >= 3 ? [...mustSees.filter((p) => p.remote), ...mustSees.filter((p) => !p.remote)] : mustSees;
-  const chosenAnchors = chooseAnchors(mustSees.length ? remoteFirst : daytime, order.length);
+  //    dense old town is not squeezed into an arrival afternoon. A far area has at most one anchor.
+  const farAreaOf = farAreas(daytime);
+  const chosenAnchors = chooseAnchors(mustSees.length ? mustSees : daytime, order.length, (p) => farAreaOf.get(p.id));
   const nearestAnchor = (p: PlanPlace) =>
     chosenAnchors.reduce((best, a, i) => (dist(p, a) < dist(p, chosenAnchors[best]) - 1e-9 ? i : best), 0);
   const weight = chosenAnchors.map((_, i) => mustSees.filter((p) => nearestAnchor(p) === i).length);
@@ -473,17 +507,37 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
   const dayCapacity = (d: DayFrame) => Math.min(maxStops, Math.floor(length(d) / ITINERARY.mustSeeStopMin));
   const room = order.map(dayCapacity);
   const mustDay = new Map<string, number>();
+  // A far area's must-sees share one day (its anchor's, else the first one's), and a day takes one far area.
+  const farDay = new Map<number, number>();
+  const dayFar = new Map<number, number>();
+  const goesTo = (day: number, area: number) => {
+    farDay.set(area, day);
+    dayFar.set(day, area);
+  };
+  anchors.forEach((a, i) => {
+    const area = farAreaOf.get(a.id);
+    if (area !== undefined) goesTo(i, area);
+  });
   for (const p of mustSees) {
+    const area = farAreaOf.get(p.id);
+    const fits = (i: number) =>
+      i < room.length && room[i] > 0 && (area === undefined || (farDay.has(area) ? farDay.get(area) === i : !dayFar.has(i)));
     const byAnchor = anchors.map((a, i) => i).sort((i, j) => dist(p, anchors[i]) - dist(p, anchors[j]) || i - j);
-    const target = byAnchor.find((i) => i < room.length && room[i] > 0);
+    const target = byAnchor.find(fits);
     if (target === undefined) continue;
+    if (area !== undefined && !farDay.has(area)) goesTo(target, area);
     mustDay.set(p.id, target);
     room[target]--;
   }
 
-  // A day being built: its stops so far, where it is and when.
-  type Build = { day: DayFrame; area: number; stops: PlanStop[]; at: PlanPlace | null; clock: number; viewpoints: number };
-  const builds: Build[] = order.map((day, area) => ({ day, area, stops: [], at: null, clock: day.daytime!.start, viewpoints: 0 }));
+  // A day being built: its stops so far, where it is and when, and the far area it goes to.
+  type Build = { day: DayFrame; area: number; stops: PlanStop[]; at: PlanPlace | null; clock: number; viewpoints: number; far?: number };
+  const builds: Build[] = order.map((day, area) => ({ day, area, stops: [], at: null, clock: day.daytime!.start, viewpoints: 0, far: dayFar.get(area) }));
+  /** A day goes to one far area at most (a chosen plan is timed as given). */
+  const otherFarArea = (b: Build, p: PlanPlace) => {
+    const area = farAreaOf.get(p.id);
+    return !input.pinned && area !== undefined && b.far !== undefined && b.far !== area;
+  };
   const byPlace = new Map(available.map((p) => [p.id, p]));
   /** Another record of a place already in the plan (within 80 m): the same visit. */
   const sameSpotTaken = (p: PlanPlace) =>
@@ -499,7 +553,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
    * no time of their own, but the visit lasts as long as the longest of them.
    */
   const tryAppend = (b: Build, p: PlanPlace, wait = false): boolean => {
-    if (b.stops.length >= maxStops || used.has(p.id) || sameSpotTaken(p)) return false;
+    if (b.stops.length >= maxStops || used.has(p.id) || sameSpotTaken(p) || otherFarArea(b, p)) return false;
     const window = b.day.daytime!;
     const base = (b.day.number - 1) * 1440;
     const weekday = weekdayOf(b.day.date);
@@ -521,6 +575,7 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
         for (const c of inside) used.add(c.place.id);
         b.at = p;
         b.clock = start + duration;
+        b.far ??= farAreaOf.get(p.id);
         if (unnamedViewpoint(p)) b.viewpoints++;
         return true;
       }
@@ -563,25 +618,33 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
       const others = builds.filter((b) => b.area !== mustDay.get(p.id)).sort((a, b) => a.day.number - b.day.number);
       [...own, ...others].find((b) => tryAppend(b, p, true));
     }
-    // 4. Each day takes the rest of its must-sees, starting with the most important, then nearest neighbour.
+    // 4. Each day takes the rest of its must-sees, starting with the most important, then nearest neighbour. A day
+    //    that starts in its far area sees that area's must-sees first, one after another: one way out, not two.
     for (const b of builds) {
       const own = mustSees.filter((p) => mustDay.get(p.id) === b.area);
       if (b.at === null) own.find((p) => tryAppend(b, p));
+      const inFarArea = (p: PlanPlace) => b.far !== undefined && farAreaOf.get(p.id) === b.far;
+      if (b.at && inFarArea(b.at)) fill(b, () => own.filter((p) => !used.has(p.id) && inFarArea(p)));
       fill(b, () => own.filter((p) => !used.has(p.id)));
     }
     // 5. Must-sees that did not fit their area's day (time, or closed that day) go to another day with room, nearest first.
+    //    A far one goes to a day that already goes to its far area, else to a day that goes to none.
     for (const p of mustSees.filter((q) => !used.has(q.id))) {
       const byDistance = [...builds].sort(
         (a, b) => (a.at ? dist(a.at, p) : Infinity) - (b.at ? dist(b.at, p) : Infinity) || a.day.number - b.day.number,
       );
-      // A remote place stays in its own area: it is not carried into another area's day.
-      byDistance.filter((b) => !p.remote || b.area === mustDay.get(p.id)).find((b) => tryAppend(b, p));
+      const area = farAreaOf.get(p.id);
+      const days = area === undefined ? byDistance : [...byDistance.filter((b) => b.far === area), ...byDistance.filter((b) => b.far === undefined)];
+      days.find((b) => tryAppend(b, p));
     }
     // 6. Fill the remaining time: other known places, then little-known ones, then names that only say what they are,
-    //    and at most one viewpoint without a Wikidata item a day.
+    //    and at most one viewpoint without a Wikidata item a day. A far place fills only a day that goes to its area.
     for (const b of builds) {
-      const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id) && !p.remote);
+      const nearOrHere = (p: PlanPlace) => !farAreaOf.has(p.id) || (b.far !== undefined && farAreaOf.get(p.id) === b.far);
+      const rest = () => daytime.filter((p) => !used.has(p.id) && !isMust.has(p.id) && nearOrHere(p));
       const ownFirst = (list: PlanPlace[]) => [...list.filter((p) => areaOf.get(p.id) === b.area), ...list.filter((p) => areaOf.get(p.id) !== b.area)];
+      // On a day out to a far area, its other known places come first: it is seen in one go.
+      fill(b, () => rest().filter((p) => farAreaOf.has(p.id) && onMustSeeList(p)));
       fill(b, () => ownFirst(rest().filter(onMustSeeList)));
       fill(b, () => ownFirst(rest().filter((p) => !onMustSeeList(p) && !isGenericName(p) && !unnamedViewpoint(p))));
       fill(b, () => ownFirst(rest().filter((p) => isGenericName(p) && !unnamedViewpoint(p))));

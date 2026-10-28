@@ -20,8 +20,15 @@ export type Destination = {
   cityCode: string;
   /** IATA airport codes serving the city. */
   airports: readonly string[];
+  /** The city's Wikidata coordinate (P625), shown in the masthead. */
   lat: number;
   lon: number;
+  /**
+   * The tourist centre (historic centre, main square or "0 km" point), only where the Wikidata point is not it
+   * (Tokyo's is the Metropolitan Government in Shinjuku). The city guide is fetched around it, its map opens on it,
+   * and "far from the centre" is measured from it (`cityCentre`). `source` names the Wikidata item it comes from.
+   */
+  centre?: { lat: number; lon: number; source: string };
   /** City-guide search radius around the centre, by how spread out the city is. */
   radiusKm: number;
   wikidataId: string;
@@ -629,6 +636,7 @@ export const DESTINATIONS: readonly Destination[] = [
     airports: ["OTP"],
     lat: 44.4134,
     lon: 26.0978,
+    centre: { lat: 44.43555, lon: 26.10235, source: "Q1850614 University Square (P625)" },
     radiusKm: 3,
     wikidataId: "Q19660",
     timeZone: "Europe/Bucharest",
@@ -911,7 +919,9 @@ export const DESTINATIONS: readonly Destination[] = [
     airports: ["HND", "NRT"],
     lat: 35.6894,
     lon: 139.6917,
-    radiusKm: 4,
+    centre: { lat: 35.68406, lon: 139.77451, source: "Q75098535 Nihonbashi, Japan's road origin (P625)" },
+    // Shibuya Crossing is 7.2 km from Nihonbashi, the Meiji Shrine 6.9 km: the guide reaches them.
+    radiusKm: 7.5,
     wikidataId: "Q1490",
     timeZone: "Asia/Tokyo",
     currency: "JPY",
@@ -996,6 +1006,7 @@ export const DESTINATIONS: readonly Destination[] = [
     airports: ["JFK", "EWR", "LGA"],
     lat: 40.7128,
     lon: -74.0061,
+    centre: { lat: 40.73556, lon: -73.99056, source: "Q110007 Union Square, Manhattan (P625)" },
     radiusKm: 4,
     wikidataId: "Q60",
     timeZone: "America/New_York",
@@ -1008,6 +1019,11 @@ const BY_CITY_CODE = new Map(DESTINATIONS.map((d) => [d.cityCode, d]));
 
 export function findDestination(cityCode: string): Destination | undefined {
   return BY_CITY_CODE.get(cityCode.toUpperCase());
+}
+
+/** The city's tourist centre: `centre` where set, else its Wikidata coordinate. */
+export function cityCentre(d: Pick<Destination, "lat" | "lon" | "centre">): { lat: number; lon: number } {
+  return d.centre ? { lat: d.centre.lat, lon: d.centre.lon } : { lat: d.lat, lon: d.lon };
 }
 
 /**

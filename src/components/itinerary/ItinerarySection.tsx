@@ -1,5 +1,5 @@
 import { Skeleton } from "@/components/ui";
-import type { Destination } from "@/data/destinations";
+import { cityCentre, type Destination } from "@/data/destinations";
 import { airlineName } from "@/data/airlines";
 import type { EditBatch } from "@/lib/ai/edits";
 import { DAYTIME_CATEGORIES, EVENING_CATEGORIES, eveningCategoriesFor, type EveningCategory } from "@/lib/itinerary/config";
@@ -75,7 +75,7 @@ export async function ItinerarySection({ search, destination, categories, direct
       initialAi={aiPlan}
       initialEdits={edits}
       cityName={destination.nameTr}
-      center={{ lat: destination.lat, lon: destination.lon }}
+      center={cityCentre(destination)}
       flightTimesUnknown={webFlight}
     />
   );

@@ -164,15 +164,13 @@ describe("overrides on read", () => {
     }) as unknown as PlacesFile;
   const first = (f: ReturnType<typeof applyPlaceRules>) => (f.categories.see.status === "ok" ? f.categories.see.places[0] : undefined);
 
-  it("sets visit lengths from open and visit entries, and marks a remote included place", () => {
+  it("sets visit lengths from open and visit entries", () => {
     const kremlin = sight("Q133274", ["adminArea", "attraction", "residence"], false);
     const open = { open: [{ qid: "Q133274", name: "Kremlin", reason: "test", visitMin: 180 }] };
     expect(first(applyPlaceRules(one(kremlin, "XXX"), open))).toMatchObject({ visitMin: 180 });
     expect(first(applyPlaceRules(one(kremlin, "XXX"), open))?.noVisit).toBeUndefined();
     const visit = { visit: [{ qid: "Q191414", name: "Lenin's Mausoleum", reason: "test", visitMin: 30 }] };
     expect(first(applyPlaceRules(one(sight("Q191414", ["attraction"], false), "XXX"), visit))).toMatchObject({ visitMin: 30 });
-    const include = { include: [{ qid: "Q180901", name: "Atomium", reason: "test", remote: true as const }] };
-    expect(first(applyPlaceRules(one(sight("Q180901", ["attraction"]), "XXX"), include))).toMatchObject({ remote: true });
   });
 
   it("opens a residence visitors can enter, and marks exterior-only places with their months and note", () => {

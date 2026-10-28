@@ -22,7 +22,7 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { DESTINATIONS, type Destination } from "../src/data/destinations";
+import { cityCentre, DESTINATIONS, type Destination } from "../src/data/destinations";
 import { fetchCityPhoto } from "../src/lib/city/photo";
 import { buildCategoryEntry, mergeLandmarks, type LandmarkMerge } from "../src/lib/places/build";
 import { CATEGORY_IDS, type CategoryId } from "../src/lib/places/categories";
@@ -209,7 +209,8 @@ for (const [index, city] of cities.entries()) {
   log(`[${index + 1}/${cities.length}] ${city.cityCode} ${city.nameTr}`);
   let file: PlacesFile;
   try {
-    file = await fetchCity(city);
+    // Fetched around the tourist centre (Nihonbashi for Tokyo), the one the guide and "far from the centre" use.
+    file = await fetchCity({ ...city, ...cityCentre(city) });
   } catch (error) {
     failed.push(city.cityCode);
     log(`  ${city.cityCode} not written: ${(error as Error).message}`);

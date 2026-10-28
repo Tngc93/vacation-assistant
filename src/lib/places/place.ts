@@ -1,5 +1,6 @@
 import { classify, isCocktailBar, type CategoryId } from "./categories";
 import type { KindTag } from "./kinds";
+import { isLatin, osmLatinNames, type OsmLatinNames } from "./names";
 import type { OverpassElement } from "./overpass";
 
 export type Place = {
@@ -10,6 +11,8 @@ export type Place = {
   name: string;
   /** Local name when it differs from `name`. */
   localName?: string;
+  /** OSM's Latin-script names, only when `name` is in another script (names.ts picks one on read). */
+  osmNames?: OsmLatinNames;
   lat: number;
   lon: number;
   /** Street address or neighbourhood, whichever is available. */
@@ -54,11 +57,13 @@ export function toPlace(element: OverpassElement, category: CategoryId): Place |
 
   const turkish = tags["name:tr"]?.trim();
   const qid = tags.wikidata?.trim();
+  const osmNames = turkish || isLatin(local) ? undefined : osmLatinNames(tags);
   return {
     id: `${element.type}/${element.id}`,
     category,
     name: turkish || local,
     ...(turkish && turkish !== local ? { localName: local } : {}),
+    ...(osmNames ? { osmNames } : {}),
     lat,
     lon,
     ...(shortAddress(tags) ? { address: shortAddress(tags) } : {}),

@@ -3,8 +3,8 @@
  * item and says why in one line; src/data/place-overrides.test.ts checks every item against the city's data.
  *
  * - `include`: show a place the rules would leave out (a concert hall without a heritage listing); one the data
- *   does not have at all (beyond the city radius) is added by `npm run data:kinds`. `remote` marks it far from the
- *   centre: "MERKEZE UZAK · TOPLU TAŞIMA ÖNERİLİR", and the plan treats it as an area of its own.
+ *   does not have at all (beyond the city radius) is added by `npm run data:kinds`. Whether it is far from the
+ *   centre is not an override: the one rule in src/lib/places/far.ts decides that for every place.
  * - `visit`: only a visit length (Lenin's Mausoleum: a short visit, queue included).
  * - `exclude`: hide a place the rules would show.
  * - `open`: a residence the rules keep out of the plan, but which visitors can enter.
@@ -19,8 +19,6 @@ export type PlaceOverride = {
   reason: string;
   /** Visit length in the plan, in minutes, when the usual one does not fit (a facade seen from outside). */
   visitMin?: number;
-  /** `include` only: far from the centre (Atomium, 5 km), reached by public transport. */
-  remote?: true;
 };
 export type ExteriorOverride = PlaceOverride & {
   /** Months (1–12) when the inside is open and the visit is a normal one. */
@@ -65,7 +63,7 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
     ],
   },
   BRU: {
-    include: [{ qid: "Q180901", name: "Atomium", reason: "The symbol of Brussels, 5 km from the centre.", remote: true }],
+    include: [{ qid: "Q180901", name: "Atomium", reason: "The symbol of Brussels, 5 km from the centre." }],
     exteriorOnly: [{ qid: "Q152072", name: "Manneken Pis", reason: "A small statue, seen in minutes.", visitMin: 15 }],
   },
   DUB: {

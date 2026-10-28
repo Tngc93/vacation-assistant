@@ -1,9 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { findDestination } from "@/data/destinations";
 import { DAYTIME_CATEGORIES } from "@/lib/itinerary/config";
-import { buildItinerary, chooseMustSees, type ItineraryInput, type PlanPlace } from "@/lib/itinerary/plan";
+import { buildItinerary, chooseMustSees, farAreas, type ItineraryInput, type PlanPlace } from "@/lib/itinerary/plan";
 import type { CategoryId } from "@/lib/places/categories";
+import type { PlacesFile } from "@/lib/places/file";
 import { loadPlacesFile } from "@/lib/places/load";
+import { isLatin } from "@/lib/places/names";
 import { sameNameOnce } from "@/lib/places/twins";
 
 /**
@@ -114,7 +116,7 @@ describe("wrong links, residences and seasonal places (rules.ts, place-overrides
   });
 });
 
-describe("outside-only landmarks and the Atomium (place-overrides.ts)", () => {
+describe("outside-only landmarks (place-overrides.ts) and the Atomium", () => {
   const stopsIn = async (code: string) => (await planFor(code)).plan.days.flatMap((d) => d.stops);
 
   it("keeps fountains, statues and gates short, and the Kremlin long", async () => {
@@ -129,7 +131,8 @@ describe("outside-only landmarks and the Atomium (place-overrides.ts)", () => {
   it("plans the Atomium as an area of its own, with a transport note, and drops lost statues in Athens", async () => {
     const brussels = (await planFor("BRU")).plan.days;
     const day = brussels.find((d) => d.stops.some((s) => s.id === "wikidata/Q180901"))!;
-    expect(day.stops[0]).toMatchObject({ id: "wikidata/Q180901", remote: true });
+    // 5.4 km from the centre, beyond Brussels' 2 km radius: far by the rule (places/far.ts), with no override.
+    expect(day.stops[0]).toMatchObject({ id: "wikidata/Q180901", farKm: 5.4 });
     const athens = await stopsIn("ATH");
     expect(athens.some((s) => ["Athena Parthenos", "Αθήνα"].includes(s.name) || s.name.includes("Προμάχου"))).toBe(false);
   });
@@ -142,8 +145,8 @@ describe("places inside another place on real data (containment.ts)", () => {
     const stops = await stopsIn("MOW");
     const kremlin = stops.find((s) => s.id === "relation/1360641")!;
     const inside = (kremlin.inside ?? []).map((c) => c.name);
-    expect(inside).toEqual(expect.arrayContaining(["Çar Topu", "Царь-колокол"]));
-    expect(stops.some((s) => s.name === "Çar Topu" || s.name === "Царь-колокол")).toBe(false);
+    expect(inside).toEqual(expect.arrayContaining(["Çar Topu", "Çar Çanı"]));
+    expect(stops.some((s) => s.name === "Çar Topu" || s.name === "Çar Çanı")).toBe(false);
     expect(kremlin.durationMin).toBe(180);
   });
 
@@ -159,6 +162,96 @@ describe("places inside another place on real data (containment.ts)", () => {
       const file = (await loadPlacesFile(code))!;
       const names = new Set(Object.values(file.categories).flatMap((e) => (e.status === "ok" ? e.places.flatMap((p) => p.parentName ?? []) : [])));
       for (const area of ["Gamla stan", "Tunus Medinesi", "Floransa'nın Tarihi Merkezi", "Piccadilly"]) expect(names.has(area), `${code} ${area}`).toBe(false);
+    }
+  });
+});
+
+describe("far from the centre on real data (places/far.ts: beyond max(radius, 5 km) from the tourist centre)", () => {
+  const shownIn = async (code: string) =>
+    Object.values((await loadPlacesFile(code))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+  const farIn = async (code: string) =>
+    (await shownIn(code))
+      .filter((p) => p.farKm !== undefined)
+      .map((p) => p.name)
+      .sort();
+
+  it("keeps the Eiffel Tower, the Arc de Triomphe and Park Güell near; Schönbrunn and the Atomium are far", async () => {
+    // Barcelona: Park Güell is 4 km out, within the 5 km floor. Montserrat and Tibidabo are not in the data.
+    expect(await farIn("BCN")).toEqual([]);
+    const paris = await farIn("PAR");
+    expect(paris).not.toContain("Eyfel Kulesi");
+    expect(paris).not.toContain("Zafer Takı");
+    expect(paris).toEqual(expect.arrayContaining(["Boulogne Ormanı", "Vincennes Ormanı"]));
+    expect((await shownIn("PAR")).some((p) => /versailles/i.test(p.name))).toBe(false);
+    expect(await farIn("VIE")).toEqual(["Schönbrunn Sarayı"]);
+    expect((await shownIn("BRU")).find((p) => p.wikidataId === "Q180901")?.farKm).toBe(5.4);
+  });
+
+  it("measures New York from Union Square: Times Square is near, Liberty Island far", async () => {
+    const nyc = await shownIn("NYC");
+    expect(nyc.find((p) => p.name === "Times Square")?.farKm).toBeUndefined();
+    expect(nyc.find((p) => p.name === "Liberty Adası")?.farKm).toBeGreaterThan(5);
+  });
+
+  it("fetches Tokyo around Nihonbashi: Sensō-ji, Ueno, the Skytree, the Imperial Palace, Meiji, Shibuya and Shinjuku Gyoen are in, none far", async () => {
+    const tokyo = await shownIn("TYO");
+    // Sensō-ji, Ueno Park, Tokyo Skytree, the Imperial Palace, Meiji Shrine, Shibuya Crossing, Shinjuku Gyoen, Tokyo Tower.
+    for (const qid of ["Q615183", "Q746216", "Q57965", "Q500681", "Q287165", "Q21083961", "Q776863", "Q183536"]) {
+      const place = tokyo.find((p) => p.wikidataId === qid);
+      expect(place, qid).toBeDefined();
+      expect(place?.farKm, qid).toBeUndefined();
+    }
+  });
+
+  it.each(["BER", "BRU", "LIS", "MOW", "MUC", "NYC", "PAR", "VIE"])(
+    "%s: never sends a day to two far areas, keeps a far area's planned stops on one day, and labels every far stop",
+    async (code) => {
+      const { input, plan } = await planFor(code);
+      const area = farAreas(input.daytime);
+      const dayOfArea = new Map<number, number>();
+      for (const day of plan.days) {
+        const areas = new Set(day.stops.flatMap((s) => (area.has(s.id) ? [area.get(s.id)!] : [])));
+        expect(areas.size, `day ${day.number}`).toBeLessThanOrEqual(1);
+        for (const a of areas) {
+          expect(dayOfArea.get(a) ?? day.number, `far area ${a}`).toBe(day.number);
+          dayOfArea.set(a, day.number);
+        }
+        for (const s of day.stops) expect(s.farKm !== null).toBe(area.has(s.id) || input.evening.some((e) => e.id === s.id && e.farKm !== undefined));
+      }
+    },
+  );
+});
+
+describe("readable names on real data (places/names.ts)", () => {
+  const shownIn = async (code: string) =>
+    Object.values((await loadPlacesFile(code))!.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+  const byQid = async (code: string, qid: string) => (await shownIn(code)).find((p) => p.wikidataId === qid);
+
+  it("names Tokyo's and Moscow's best-known places in Turkish or English, with the local name second", async () => {
+    expect(await byQid("TYO", "Q183536")).toMatchObject({ name: "Tokyo Kulesi", localName: "東京タワー" });
+    expect(await byQid("TYO", "Q57965")).toMatchObject({ name: "Tokyo Skytree", localName: "東京スカイツリー" });
+    expect(await byQid("TYO", "Q500681")).toMatchObject({ name: "Tokyo İmparatorluk Sarayı", localName: "皇居" });
+    expect(await byQid("TYO", "Q615183")).toMatchObject({ name: "Sensō-ji" });
+    // Wikidata's Turkish label for the Moscow Kremlin reads "Kremlini" (2026-10-27).
+    const kremlin = await byQid("MOW", "Q133274");
+    expect(kremlin?.name).toMatch(/Kremlin/);
+    expect(isLatin(kremlin!.name)).toBe(true);
+    expect(kremlin?.localName).toBe("Московский Кремль");
+    expect((await byQid("MOW", "Q147875"))?.parentName).toBe(kremlin?.name);
+  });
+
+  it("never shows a name in another script first when the stored data has a Latin one", async () => {
+    for (const code of ["TYO", "MOW", "SEL", "ATH", "LED", "TBS"]) {
+      const stored = ((await import(`./${code}.json`)) as { default: PlacesFile }).default;
+      const shown = new Map((await shownIn(code)).map((p) => [p.id, p]));
+      const raw = Object.values(stored.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
+      for (const p of raw.filter((r) => shown.has(r.id) && !isLatin(r.name))) {
+        // A wrong link (rules.ts) loses its item's labels.
+        const labels = shown.get(p.id)!.wikidataId ? [p.labels?.tr, p.labels?.en] : [];
+        const alternatives = [...labels, p.osmNames?.en, p.osmNames?.latin, p.osmNames?.int];
+        const latin = alternatives.some((n) => n && isLatin(n));
+        expect(isLatin(shown.get(p.id)!.name), `${code} ${p.name}`).toBe(latin);
+      }
     }
   });
 });
