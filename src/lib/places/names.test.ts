@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import type { PlacesFile, StoredPlace } from "./file";
 import { isLatin, osmLatinNames, readableName } from "./names";
@@ -145,14 +147,46 @@ describe("applyPlaceRules shows the readable name", () => {
     expect(byId.get("way/1")).not.toHaveProperty("labels");
     expect(byId.get("node/3")).toMatchObject({ name: "Coffeemania", localName: "Кофемания" });
     expect(byId.get("node/3")).not.toHaveProperty("osmNames");
-    // No Latin alternative: the local name stays, and the parent's caption uses the parent's shown name.
-    expect(byId.get("node/2")).toMatchObject({ name: "Царь-колокол", parentName: "Moskova Kremlini" });
-    expect(byId.get("node/2")).not.toHaveProperty("localName");
+    // No Latin alternative: romanized by Russia's system (ICAO), and the parent's caption uses the parent's shown name.
+    expect(byId.get("node/2")).toMatchObject({ name: "Tsar-kolokol", localName: "Царь-колокол", parentName: "Moskova Kremlini" });
   });
 
   it("never shows a wrong link's labels", () => {
     const wrong: StoredPlace = { ...kremlin, kinds: ["farFromItem"] };
     const shown = applyPlaceRules(file([wrong]), {}).categories.see;
-    expect(shown.status === "ok" && shown.places.find((p) => p.id === "way/1")?.name).toBe("Московский Кремль");
+    expect(shown.status === "ok" && shown.places.find((p) => p.id === "way/1")).toMatchObject({
+      name: "Moskovskii Kreml",
+      localName: "Московский Кремль",
+    });
+  });
+
+  it("keeps the local name primary in a city whose language is not romanized, or without a country", () => {
+    const tokyo = { ...file([{ id: "node/9", name: "東京タワー", lat: 35.6586, lon: 139.7454 }]), cityCode: "TYO" };
+    const see = applyPlaceRules(tokyo, {}).categories.see;
+    expect(see.status === "ok" && see.places[0]).toMatchObject({ name: "東京タワー" });
+    expect(see.status === "ok" && see.places[0]).not.toHaveProperty("localName");
+    const unknown = applyPlaceRules({ ...file([bell]), cityCode: "XXX" }, {}).categories.see;
+    expect(unknown.status === "ok" && unknown.places[0].name).toBe("Царь-колокол");
+  });
+});
+
+describe("rename override: the Moscow Kremlin", () => {
+  const stored = (): PlacesFile => JSON.parse(readFileSync(path.join(process.cwd(), "src/data/places/MOW.json"), "utf8")) as PlacesFile;
+
+  it("is 'Moskova Kremlini' (Wikidata's Turkish label is 'Kremlini'), with the stored name under it", () => {
+    const kremlin = stored().categories.see;
+    const raw = kremlin.status === "ok" ? kremlin.places.find((p) => p.wikidataId === "Q133274") : undefined;
+    // The data still has the wrong label: when Wikidata is fixed, this fails and the override can go.
+    expect(raw?.labels?.tr).toBe("Kremlini");
+    const see = applyPlaceRules(stored()).categories.see;
+    const shown = see.status === "ok" ? see.places : [];
+    expect(shown.find((p) => p.wikidataId === "Q133274")).toMatchObject({ name: "Moskova Kremlini", localName: "Московский Кремль" });
+  });
+
+  it("names the parent in the caption of every place inside it", () => {
+    const all = Object.values(applyPlaceRules(stored()).categories).flatMap((c) => (c.status === "ok" ? c.places : []));
+    const inside = all.filter((p) => p.parentId === "Q133274");
+    expect(inside.length).toBeGreaterThan(2);
+    for (const p of inside) expect(p.parentName, p.name).toBe("Moskova Kremlini");
   });
 });

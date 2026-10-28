@@ -54,6 +54,8 @@ describe("place overrides", () => {
     expect(PLACE_OVERRIDES.LON?.exteriorOnly?.find((e) => e.qid === "Q42182")).toMatchObject({ openMonths: [7, 8, 9] });
     const relinks = Object.entries(PLACE_OVERRIDES).flatMap(([code, o]) => (o.relink ?? []).map((r) => `${code}:${r.from}>${r.qid}`));
     expect(relinks.sort()).toEqual(["DUB:Q204221>Q856559", "LON:Q37733713>Q41225", "NYC:Q10806>Q1136137"]);
+    const renames = Object.entries(PLACE_OVERRIDES).flatMap(([code, o]) => (o.rename ?? []).map((r) => `${code}:${r.qid}:${r.shownName}`));
+    expect(renames).toEqual(["MOW:Q133274:Moskova Kremlini"]);
   });
 
   describe.each(Object.entries(PLACE_OVERRIDES))("%s", (code, overrides) => {
@@ -65,6 +67,7 @@ describe("place overrides", () => {
       ...(overrides.visit ?? []),
     ];
     const relinks = overrides.relink ?? [];
+    const renames = overrides.rename ?? [];
 
     it("is a destination, and each entry has a Wikidata item and a one-line reason", () => {
       expect(DESTINATIONS.some((d) => d.cityCode === code)).toBe(true);
@@ -83,12 +86,17 @@ describe("place overrides", () => {
         expect([r.from, r.qid].every((q) => /^Q[1-9]\d*$/.test(q))).toBe(true);
         expect(r.reason).toMatch(/^[^\n]+$/);
       }
+      for (const r of renames) {
+        expect(r.qid).toMatch(/^Q[1-9]\d*$/);
+        expect(r.shownName.trim()).not.toBe("");
+        expect(r.reason).toMatch(/^[^\n]+$/);
+      }
       expect(new Set(entries.map((o) => o.qid)).size).toBe(entries.length);
     });
 
     it("names only items that are in the city's data", () => {
       const stored = storedQids(code);
-      for (const o of entries) expect(stored.has(o.qid), `${o.qid} (${o.name}) is not in ${code}.json`).toBe(true);
+      for (const o of [...entries, ...renames]) expect(stored.has(o.qid), `${o.qid} (${o.name}) is not in ${code}.json`).toBe(true);
       // A relink is applied by `npm run data:kinds`: the OSM object carries the right item, and no copy of it is left.
       const places = storedPlaces(code);
       for (const r of relinks) {

@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { findDestination } from "@/data/destinations";
+import { PLACE_OVERRIDES } from "@/data/place-overrides";
 import { DAYTIME_CATEGORIES } from "@/lib/itinerary/config";
 import { buildItinerary, chooseMustSees, farAreas, type ItineraryInput, type PlanPlace } from "@/lib/itinerary/plan";
 import type { CategoryId } from "@/lib/places/categories";
 import type { PlacesFile } from "@/lib/places/file";
 import { loadPlacesFile } from "@/lib/places/load";
 import { isLatin } from "@/lib/places/names";
+import { romanize } from "@/lib/places/romanize";
 import { sameNameOnce } from "@/lib/places/twins";
 
 /**
@@ -232,16 +234,15 @@ describe("readable names on real data (places/names.ts)", () => {
     expect(await byQid("TYO", "Q57965")).toMatchObject({ name: "Tokyo Skytree", localName: "東京スカイツリー" });
     expect(await byQid("TYO", "Q500681")).toMatchObject({ name: "Tokyo İmparatorluk Sarayı", localName: "皇居" });
     expect(await byQid("TYO", "Q615183")).toMatchObject({ name: "Sensō-ji" });
-    // Wikidata's Turkish label for the Moscow Kremlin reads "Kremlini" (2026-10-27).
+    // Wikidata's Turkish label for the Moscow Kremlin reads "Kremlini" (2026-10-27): a rename override fixes it.
     const kremlin = await byQid("MOW", "Q133274");
-    expect(kremlin?.name).toMatch(/Kremlin/);
-    expect(isLatin(kremlin!.name)).toBe(true);
-    expect(kremlin?.localName).toBe("Московский Кремль");
-    expect((await byQid("MOW", "Q147875"))?.parentName).toBe(kremlin?.name);
+    expect(kremlin).toMatchObject({ name: "Moskova Kremlini", localName: "Московский Кремль" });
+    expect((await byQid("MOW", "Q147875"))?.parentName).toBe("Moskova Kremlini");
   });
 
-  it("never shows a name in another script first when the stored data has a Latin one", async () => {
-    for (const code of ["TYO", "MOW", "SEL", "ATH", "LED", "TBS"]) {
+  it("shows the Latin name the data has, else the name romanized by the country's system (not in Tokyo)", async () => {
+    for (const code of ["TYO", "MOW", "SEL", "ATH", "LED", "TBS", "SOF", "SKP", "TAS"]) {
+      const countryCode = findDestination(code)!.countryCode;
       const stored = ((await import(`./${code}.json`)) as { default: PlacesFile }).default;
       const shown = new Map((await shownIn(code)).map((p) => [p.id, p]));
       const raw = Object.values(stored.categories).flatMap((e) => (e.status === "ok" ? e.places : []));
@@ -249,8 +250,11 @@ describe("readable names on real data (places/names.ts)", () => {
         // A wrong link (rules.ts) loses its item's labels.
         const labels = shown.get(p.id)!.wikidataId ? [p.labels?.tr, p.labels?.en] : [];
         const alternatives = [...labels, p.osmNames?.en, p.osmNames?.latin, p.osmNames?.int];
-        const latin = alternatives.some((n) => n && isLatin(n));
-        expect(isLatin(shown.get(p.id)!.name), `${code} ${p.name}`).toBe(latin);
+        const latin = alternatives.find((n) => n && isLatin(n));
+        const renamed = PLACE_OVERRIDES[code]?.rename?.find((r) => r.qid === shown.get(p.id)!.wikidataId)?.shownName;
+        const expected = renamed ?? latin ?? romanize(p.name, countryCode) ?? p.name;
+        expect(shown.get(p.id)!.name, `${code} ${p.name}`).toBe(expected.trim());
+        expect(isLatin(expected), `${code} ${p.name}`).toBe(code !== "TYO" || Boolean(latin));
       }
     }
   });
