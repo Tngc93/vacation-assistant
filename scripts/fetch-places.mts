@@ -28,7 +28,7 @@ import path from "node:path";
 import { cityCentre, DESTINATIONS, type Destination } from "../src/data/destinations";
 import { fetchCityPhoto } from "../src/lib/city/photo";
 import { buildCategoryEntry, mergeLandmarks, type LandmarkMerge } from "../src/lib/places/build";
-import { barsNear, fetchCocktailBars, matchCocktailBar, type CocktailBar } from "../src/lib/places/cocktails";
+import { barsNear, cocktailLookupQuery, fetchCocktailBars, matchCocktailBar, type CocktailBar } from "../src/lib/places/cocktails";
 import { CATEGORY_IDS, type CategoryId } from "../src/lib/places/categories";
 import { PLACE_OVERRIDES } from "../src/data/place-overrides";
 import type { KindTag } from "../src/lib/places/kinds";
@@ -135,15 +135,37 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
   }
   const overrides = PLACE_OVERRIDES[city.cityCode] ?? {};
 
-  // Wikidata cocktail bars among the OSM bars and pubs: those move to "Kokteyl bar".
+  // Wikidata cocktail bars among every OSM bar and pub: an OSM cocktail bar gets the item's QID, a bar or pub moves
+  // to "Kokteyl bar".
   const all = await cocktailBarsOnce();
   const bars = all ? barsNear(all, city, city.radiusKm) : undefined;
-  const pubElements = elementsBy.get("pub");
-  const pubs = Array.isArray(pubElements) ? pubElements.map((e) => toPlace(e, "pub")).filter((p) => p !== null) : [];
-  const fromPubs = (bars ?? []).flatMap((bar): Place[] => {
-    const match = matchCocktailBar(bar, pubs);
+  const placesOf = (category: "cocktail" | "pub") => {
+    const elements = elementsBy.get(category);
+    return Array.isArray(elements) ? elements.map((e) => toPlace(e, category)).filter((p) => p !== null) : [];
+  };
+  const cocktails = placesOf("cocktail");
+  const pubs = placesOf("pub");
+  // The city query stops at 400 bars and pubs: ask OSM for the ones around each Wikidata bar too.
+  if (bars?.length) {
+    try {
+      const nearby = await withBackoff(`${city.cityCode} cocktail lookup`, () => runOverpass(cocktailLookupQuery(bars), { timeoutMs: 90_000 }));
+      const seen = new Set([...cocktails, ...pubs].map((p) => p.id));
+      for (const e of nearby) {
+        if (seen.has(`${e.type}/${e.id}`)) continue;
+        const cocktail = toPlace(e, "cocktail");
+        const pub = toPlace(e, "pub");
+        if (cocktail) cocktails.push(cocktail);
+        if (pub) pubs.push(pub);
+      }
+    } catch (error) {
+      log(`  ${city.cityCode}: cocktail lookup failed, city query only`, (error as Error).message.slice(0, 120));
+    }
+  }
+  const linked = (bars ?? []).flatMap((bar): Place[] => {
+    const match = matchCocktailBar(bar, cocktails) ?? matchCocktailBar(bar, pubs);
     return match ? [{ ...match, category: "cocktail", wikidataId: bar.qid }] : [];
   });
+  if (bars?.length) log(`  ${city.cityCode}: ${linked.length} of ${bars.length} Wikidata cocktail bars matched in OSM`);
 
   for (const category of CATEGORY_IDS) {
     const elements = elementsBy.get(category)!;
@@ -157,7 +179,7 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
         landmarks,
         kinds,
         overrides,
-        cocktailBars: fromPubs,
+        cocktailBars: linked,
       });
       categories[category] = { status: "ok", wikipediaCountsAvailable, places };
     } catch (error) {

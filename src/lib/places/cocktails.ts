@@ -102,6 +102,23 @@ export function barsNear(bars: readonly CocktailBar[], centre: { lat: number; lo
   return bars.filter((b) => distanceKm(centre.lat, centre.lon, b.lat, b.lon) <= radiusKm);
 }
 
+/**
+ * The OSM bars and pubs near the city's Wikidata cocktail bars (75 m) and their own OSM objects (data:places only):
+ * the city query returns at most 400 bars and pubs, so in London or New York the one that is the Wikidata bar is
+ * often not among them. Exact key=value filters only, as in categories.ts.
+ */
+export function cocktailLookupQuery(bars: readonly CocktailBar[], timeoutS = 60): string {
+  const near = bars.flatMap((b) => {
+    const at = `around:${COCKTAIL_MATCH_KM * 1000},${b.lat.toFixed(6)},${b.lon.toFixed(6)}`;
+    return [`  nwr(${at})["amenity"="bar"]["name"];`, `  nwr(${at})["amenity"="pub"]["name"];`];
+  });
+  const ids = (type: "node" | "way") => {
+    const list = [...new Set(bars.flatMap((b) => b.osmIds.filter((id) => id.startsWith(`${type}/`)).map((id) => id.slice(type.length + 1))))];
+    return list.length ? [`  ${type}(id:${list.join(",")});`] : [];
+  };
+  return `[out:json][timeout:${timeoutS}];\n(\n${[...near, ...ids("node"), ...ids("way")].join("\n")}\n);\nout tags center;`;
+}
+
 type Matchable = { id: string; name: string; localName?: string; lat: number; lon: number; wikidataId?: string };
 
 /** The OSM place that is this Wikidata bar: by wikidata tag, by the item's OSM ID, else by a similar name within 75 m. */

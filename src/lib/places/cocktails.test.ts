@@ -3,6 +3,7 @@ import { buildCategoryEntry } from "./build";
 import {
   barsNear,
   cocktailBarsQuery,
+  cocktailLookupQuery,
   compareCocktailBars,
   fetchCocktailBars,
   matchCocktailBar,
@@ -62,6 +63,15 @@ describe("Wikidata cocktail bars", () => {
     await fetchCocktailBars({ fetcher });
     expect(calls).toHaveLength(1);
     expect((calls[0].headers as Record<string, string>)["User-Agent"]).toMatch(/^VacationAssistant\//);
+  });
+
+  it("asks OSM for the bars and pubs within 75 m of each bar, and for the bar's own OSM objects", () => {
+    const q = cocktailLookupQuery([{ ...boadas, osmIds: ["node/7", "way/8"] }]);
+    expect(q).toContain('nwr(around:75,41.384658,2.170274)["amenity"="bar"]["name"];');
+    expect(q).toContain('nwr(around:75,41.384658,2.170274)["amenity"="pub"]["name"];');
+    expect(q).toContain("node(id:7);");
+    expect(q).toContain("way(id:8);");
+    expect(q).toMatch(/out tags center;$/);
   });
 
   it("keeps the bars within the city's radius", () => {
@@ -160,6 +170,22 @@ describe("the data scripts", () => {
     const cocktail = await buildCategoryEntry(city, "cocktail", [], { cocktailBars: [moved] });
     expect(pub.places).toEqual([]);
     expect(cocktail.places).toEqual([{ id: "node/10", name: "Boadas", lat: 41.38466, lon: 2.17027, openingHours: "Mo-Sa 12:00-02:00", wikidataId: "Q122962985" }]);
+  });
+
+  it("data:places keeps a Wikidata-linked OSM cocktail bar first, ahead of more detailed ones", async () => {
+    const city = { cityCode: "BCN", lat: 41.3825, lon: 2.1769, radiusKm: 6 } as Destination;
+    const bar = (id: number, name: string, tags: Record<string, string> = {}) => ({
+      type: "node" as const,
+      id,
+      lat: boadas.lat,
+      lon: boadas.lon,
+      tags: { amenity: "bar", cocktails: "yes", name, ...tags },
+    });
+    const detailed = Array.from({ length: 30 }, (_, i) => bar(100 + i, `Bar ${i}`, { website: "https://x.example", opening_hours: "Mo-Su 18:00-02:00" }));
+    const linked: Place = { id: "node/10", category: "cocktail", name: "Boadas", lat: boadas.lat, lon: boadas.lon, wikidataId: boadas.qid };
+    const { places } = await buildCategoryEntry(city, "cocktail", [...detailed, bar(10, "Boadas")], { cocktailBars: [linked] });
+    expect(places).toHaveLength(30);
+    expect(places[0]).toMatchObject({ id: "node/10", wikidataId: "Q122962985" });
   });
 });
 

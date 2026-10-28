@@ -5,7 +5,7 @@ import type { Landmark } from "./landmarks";
 import { MAX_STORED_PER_CATEGORY, type StoredPlace } from "./file";
 import { distanceKm, type Fetcher, type OverpassElement } from "./overpass";
 import { toPlace, type Place } from "./place";
-import { rankPlaces, type RankedPlace } from "./rank";
+import { categoryCap, rankPlaces, type RankedPlace } from "./rank";
 import { isSight } from "./rules";
 import type { CityOverrides } from "@/data/place-overrides";
 import { fetchWikipediaCounts } from "./wikidata";
@@ -100,7 +100,8 @@ export type BuildOptions = {
   overrides?: CityOverrides;
   /**
    * OSM bars and pubs that are Wikidata cocktail bars (cocktails.ts), as cocktail places with the item's QID:
-   * they are left out of "Bar ve pub" and added to "Kokteyl bar".
+   * they are left out of "Bar ve pub" and stored among the cocktail bars, first (they would otherwise lose their
+   * place to more detailed records and come back from data:kinds as Wikidata places without hours).
    */
   cocktailBars?: readonly Place[];
   /** Wraps the Wikidata call (the data script adds retries and back-off). */
@@ -133,8 +134,8 @@ export async function buildCategoryEntry(
   const moved = new Set(cocktailBars.map((p) => p.id));
   // Landmarks were already limited to the radius, or twice it when very well known.
   const places = [
-    ...(category === "pub" ? osm.filter((p) => !moved.has(p.id)) : osm),
-    ...(category === "cocktail" ? cocktailBars.filter((p) => !osm.some((o) => o.id === p.id)) : []),
+    ...(category === "pub" || category === "cocktail" ? osm.filter((p) => !moved.has(p.id)) : osm),
+    ...(category === "cocktail" ? cocktailBars : []),
     ...(landmarks?.extras.filter((p) => p.category === category) ?? []),
   ]
     .map((p): Place => {
@@ -156,9 +157,15 @@ export async function buildCategoryEntry(
     }
   }
   // Keep the top 40 (or 30) that pass today's sight rules, and the candidates they leave out in between.
-  const ranked = rankPlaces(places, category, counts, {
-    counts: (p) => CATEGORIES[category].ranking !== "wikipedia" || isSight(p, category, overrides),
-    maxStored: MAX_STORED_PER_CATEGORY,
-  });
+  const rank = (list: readonly Place[]) =>
+    rankPlaces(list, category, counts, {
+      counts: (p) => CATEGORIES[category].ranking !== "wikipedia" || isSight(p, category, overrides),
+      maxStored: MAX_STORED_PER_CATEGORY,
+    });
+  // Cocktail bars Wikidata knows come first (cocktails.ts compareCocktailBars).
+  const ranked =
+    category === "cocktail"
+      ? [...rank(places.filter((p) => p.wikidataId)), ...rank(places.filter((p) => !p.wikidataId))].slice(0, categoryCap(category))
+      : rank(places);
   return { places: ranked.map(slimPlace), wikipediaCountsAvailable };
 }
