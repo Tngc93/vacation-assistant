@@ -1,6 +1,7 @@
 import type { CityOverrides } from "@/data/place-overrides";
 import { distanceKm } from "@/lib/geo";
 import { CATEGORIES, type CategoryId } from "./categories";
+import { mergeCocktailBars, type CocktailBar } from "./cocktails";
 import { chooseParents, fetchParents } from "./containment";
 import type { PlacesFile, StoredPlace } from "./file";
 import { linkTags, type KindTag } from "./kinds";
@@ -16,13 +17,23 @@ import { fetchEntitySummaries, fetchWikipediaCounts } from "./wikidata";
  * overrides (the right item's Wikipedia count; a Wikidata-only copy of that item goes, the OSM object is it),
  * adds included places the file does not have (the Atomium, beyond the city radius) from Wikidata, then
  * stores every sight's kinds and, for OSM objects, whether their item has a coordinate near them. A place
- * whose name is not in the Latin script keeps its item's Turkish and English labels (names.ts).
+ * whose name is not in the Latin script keeps its item's Turkish and English labels (names.ts). Given the city's
+ * Wikidata cocktail bars, it joins them to the stored bars and pubs (cocktails.ts).
  */
 export async function refreshKinds(
   file: PlacesFile,
   overrides: CityOverrides,
-  { fetcher, kinds: known }: { fetcher?: Fetcher; kinds?: ReadonlyMap<string, readonly KindTag[]> } = {},
-): Promise<{ file: PlacesFile; relinked: string[]; added: string[]; missing: string[] }> {
+  {
+    fetcher,
+    kinds: known,
+    cocktailBars,
+  }: {
+    fetcher?: Fetcher;
+    kinds?: ReadonlyMap<string, readonly KindTag[]>;
+    /** The Wikidata cocktail bars within the city's radius (cocktails.ts barsNear); left as they are when absent. */
+    cocktailBars?: readonly CocktailBar[];
+  } = {},
+): Promise<{ file: PlacesFile; relinked: string[]; added: string[]; missing: string[]; cocktails: { matched: string[]; added: string[] } }> {
   const ids = (Object.keys(file.categories) as CategoryId[]).filter((c) => CATEGORIES[c].ranking === "wikipedia");
   const categories = structuredClone(file.categories);
   const placesOf = (c: CategoryId) => {
@@ -81,6 +92,18 @@ export async function refreshKinds(
     }
   }
 
+  // 1c. Wikidata cocktail bars: matched bars and pubs move to the cocktail bars, the rest are added.
+  const cocktails = { matched: [] as string[], added: [] as string[] };
+  const cocktail = categories.cocktail;
+  const pub = categories.pub;
+  if (cocktailBars && cocktail?.status === "ok" && pub?.status === "ok") {
+    const merged = mergeCocktailBars({ cocktail: cocktail.places, pub: pub.places }, cocktailBars);
+    cocktail.places = merged.cocktail;
+    pub.places = merged.pub;
+    cocktails.matched = merged.matched;
+    cocktails.added = merged.added;
+  }
+
   // 2. Kinds and link tags.
   const qids = ids.flatMap(placesOf).flatMap((p) => p.wikidataId ?? []);
   // Kinds the caller already has are reused; the rest (all of them, or a relink's new item) are asked for.
@@ -128,5 +151,5 @@ export async function refreshKinds(
       return Object.keys(labels).length ? { ...rest, labels } : rest;
     });
   }
-  return { file: { ...file, categories }, relinked, added, missing };
+  return { file: { ...file, categories }, relinked, added, missing, cocktails };
 }

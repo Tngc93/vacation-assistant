@@ -15,4 +15,23 @@ describe("PlaceCard", () => {
     expect(screen.queryByText(/MERKEZE ~/)).not.toBeInTheDocument();
     expect(screen.queryByText("TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR")).not.toBeInTheDocument();
   });
+
+  it("shows a cocktail bar added from Wikidata without hours or OSM detail, with its map link", () => {
+    render(
+      <PlaceCard
+        {...props}
+        category="cocktail"
+        place={{ id: "wikidata/Q122962985", name: "Boadas Cocktail Bar", lat: 41.38466, lon: 2.17027, wikidataId: "Q122962985" }}
+      />,
+    );
+    expect(screen.getByRole("heading", { name: "Boadas Cocktail Bar" })).toBeInTheDocument();
+    expect(screen.getByText("Kokteyl bar")).toBeInTheDocument();
+    expect(screen.getByText("Wikidata'da kayıtlı")).toBeInTheDocument();
+    expect(screen.queryByText(/OSM'de ayrıntılı kayıtlı/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Açık|Kapalı/)).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Google Haritalar'da aç/ })).toHaveAttribute(
+      "href",
+      "https://www.google.com/maps/search/?api=1&query=41.384660%2C2.170270",
+    );
+  });
 });

@@ -19,12 +19,16 @@
  * change needs no refetch. Places with a Wikidata item get a card photo
  * (P18, licence-filtered like the city photo) and a short description
  * (photos.ts).
+ *
+ * Cocktail bars come from Wikidata too (one query for the whole run, cocktails.ts): an OSM bar or pub that is
+ * one moves to "Kokteyl bar", the others are added as Wikidata places (refresh.ts).
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { cityCentre, DESTINATIONS, type Destination } from "../src/data/destinations";
 import { fetchCityPhoto } from "../src/lib/city/photo";
 import { buildCategoryEntry, mergeLandmarks, type LandmarkMerge } from "../src/lib/places/build";
+import { barsNear, fetchCocktailBars, matchCocktailBar, type CocktailBar } from "../src/lib/places/cocktails";
 import { CATEGORY_IDS, type CategoryId } from "../src/lib/places/categories";
 import { PLACE_OVERRIDES } from "../src/data/place-overrides";
 import type { KindTag } from "../src/lib/places/kinds";
@@ -32,7 +36,7 @@ import { fetchKinds, fetchLandmarks } from "../src/lib/places/landmarks";
 import { addPhotosAndDescriptions } from "../src/lib/places/photos";
 import { refreshKinds } from "../src/lib/places/refresh";
 import { isSight } from "../src/lib/places/rules";
-import { toPlace } from "../src/lib/places/place";
+import { toPlace, type Place } from "../src/lib/places/place";
 import { ODBL, PLACES_FILE_VERSION, placesFileSchema, SOURCES, type PlacesFile } from "../src/lib/places/file";
 import { buildCityQuery, buildOverpassQuery, runOverpass, type OverpassElement } from "../src/lib/places/overpass";
 
@@ -65,6 +69,14 @@ const DAYTIME: readonly CategoryId[] = ["see", "museum", "viewpoint"];
 const addedFromWikidata = new Map<string, number>();
 /** Cities not written this run (their old file stays; a rerun fetches them again). */
 const failed: string[] = [];
+
+/** Wikidata's cocktail bars, asked for once per run; null when the query failed (the cities keep OSM's). */
+let allCocktailBars: Promise<CocktailBar[] | null> | undefined;
+const cocktailBarsOnce = () =>
+  (allCocktailBars ??= withBackoff("cocktail bars", () => fetchCocktailBars()).catch((error: Error) => {
+    log(`  cocktail bars failed, OSM only: ${error.message.slice(0, 120)}`);
+    return null;
+  }));
 
 async function fetchCity(city: Destination): Promise<PlacesFile> {
   const categories = {} as PlacesFile["categories"];
@@ -123,6 +135,16 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
   }
   const overrides = PLACE_OVERRIDES[city.cityCode] ?? {};
 
+  // Wikidata cocktail bars among the OSM bars and pubs: those move to "Kokteyl bar".
+  const all = await cocktailBarsOnce();
+  const bars = all ? barsNear(all, city, city.radiusKm) : undefined;
+  const pubElements = elementsBy.get("pub");
+  const pubs = Array.isArray(pubElements) ? pubElements.map((e) => toPlace(e, "pub")).filter((p) => p !== null) : [];
+  const fromPubs = (bars ?? []).flatMap((bar): Place[] => {
+    const match = matchCocktailBar(bar, pubs);
+    return match ? [{ ...match, category: "cocktail", wikidataId: bar.qid }] : [];
+  });
+
   for (const category of CATEGORY_IDS) {
     const elements = elementsBy.get(category)!;
     if (elements instanceof Error) {
@@ -135,6 +157,7 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
         landmarks,
         kinds,
         overrides,
+        cocktailBars: fromPubs,
       });
       categories[category] = { status: "ok", wikipediaCountsAvailable, places };
     } catch (error) {
@@ -169,7 +192,7 @@ async function fetchCity(city: Destination): Promise<PlacesFile> {
     categories,
   });
   // Relink overrides and link tags (an item without a coordinate near the OSM object), as `npm run data:kinds` does.
-  const refreshed = await withBackoff(`${city.cityCode} refresh`, () => refreshKinds(built, overrides, { kinds }));
+  const refreshed = await withBackoff(`${city.cityCode} refresh`, () => refreshKinds(built, overrides, { kinds, cocktailBars: bars }));
   if (refreshed.missing.length) log(`  ${city.cityCode}: override not found for ${refreshed.missing.join(" ")}`);
   // Card photos and descriptions: nice to have, so a failure leaves the city without them rather than unwritten.
   try {

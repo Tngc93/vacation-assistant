@@ -93,6 +93,11 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
           Vikipedi&apos;de {wikipediaCount.format(place.wikipediaCount)} dilde
         </Caption>
       ) : null}
+      {category === "cocktail" && place.wikidataId ? (
+        <Caption as="p" tone="sea" className="mt-3">
+          Wikidata&apos;da kayıtlı
+        </Caption>
+      ) : null}
       {place.detailed ? (
         <Caption as="p" tone="sea" className="mt-3">
           OSM&apos;de ayrıntılı kayıtlı

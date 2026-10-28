@@ -25,7 +25,8 @@ export function slimPlace(place: RankedPlace): StoredPlace {
 export const looseName = (name: string) =>
   name.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().replace(/ı/g, "i").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
-function similarNames(a: string, b: string): boolean {
+/** The same name, loosely, or one containing the other when both have at least five letters. */
+export function similarNames(a: string, b: string): boolean {
   const x = looseName(a);
   const y = looseName(b);
   if (!x || !y) return false;
@@ -97,6 +98,11 @@ export type BuildOptions = {
   kinds?: ReadonlyMap<string, readonly KindTag[]>;
   /** The city's hand-kept exceptions, so the places they include are counted as sights when choosing what to keep. */
   overrides?: CityOverrides;
+  /**
+   * OSM bars and pubs that are Wikidata cocktail bars (cocktails.ts), as cocktail places with the item's QID:
+   * they are left out of "Bar ve pub" and added to "Kokteyl bar".
+   */
+  cocktailBars?: readonly Place[];
   /** Wraps the Wikidata call (the data script adds retries and back-off). */
   retry?: <T>(label: string, task: () => Promise<T>) => Promise<T>;
 };
@@ -112,7 +118,7 @@ export async function buildCategoryEntry(
   city: Destination,
   category: CategoryId,
   elements: readonly OverpassElement[],
-  { fetcher, landmarks, kinds, overrides, retry = (_label, task) => task() }: BuildOptions = {},
+  { fetcher, landmarks, kinds, overrides, cocktailBars = [], retry = (_label, task) => task() }: BuildOptions = {},
 ): Promise<{ places: StoredPlace[]; wikipediaCountsAvailable: boolean }> {
   const osm = elements
     .map((e) => toPlace(e, category))
@@ -124,8 +130,13 @@ export async function buildCategoryEntry(
       const country = landmarks?.countryFor.get(p.id);
       return { ...p, ...(qid && !p.wikidataId ? { wikidataId: qid } : {}), ...(country ? { country } : {}) };
     });
+  const moved = new Set(cocktailBars.map((p) => p.id));
   // Landmarks were already limited to the radius, or twice it when very well known.
-  const places = [...osm, ...(landmarks?.extras.filter((p) => p.category === category) ?? [])]
+  const places = [
+    ...(category === "pub" ? osm.filter((p) => !moved.has(p.id)) : osm),
+    ...(category === "cocktail" ? cocktailBars.filter((p) => !osm.some((o) => o.id === p.id)) : []),
+    ...(landmarks?.extras.filter((p) => p.category === category) ?? []),
+  ]
     .map((p): Place => {
       const tags = p.wikidataId ? kinds?.get(p.wikidataId) : undefined;
       return tags?.length ? { ...p, kinds: [...tags] } : p;
