@@ -255,3 +255,32 @@ describe("readable names on real data (places/names.ts)", () => {
     }
   });
 });
+
+describe("cocktail bars from Wikidata (cocktails.ts)", () => {
+  it("adds Boadas to Barcelona's six OSM cocktail bars, and the plan says to check its hours", async () => {
+    const file = (await loadPlacesFile("BCN"))!;
+    const of = (c: CategoryId) => {
+      const entry = file.categories[c];
+      return entry.status === "ok" ? entry.places : [];
+    };
+    // OSM tagged six bars for cocktails (2026-10-28); Wikidata has Boadas, OSM does not have it near its point.
+    expect(of("cocktail").length).toBeGreaterThan(6);
+    const boadas = of("cocktail").find((p) => p.wikidataId === "Q122962985");
+    expect(boadas).toMatchObject({ id: "wikidata/Q122962985", name: "Boadas Cocktail Bar" });
+    expect(boadas?.openingHours).toBeUndefined();
+    expect(of("pub").some((p) => p.wikidataId === "Q122962985")).toBe(false);
+
+    const destination = findDestination("BCN")!;
+    const plan = buildItinerary({
+      depart: "2026-11-14",
+      return: "2026-11-15",
+      timeZone: destination.timeZone,
+      flight: null,
+      daytime: [],
+      evening: [{ ...boadas!, category: "cocktail" }],
+      skip: [],
+    });
+    const stop = plan.days.flatMap((d) => d.stops).find((s) => s.kind === "evening");
+    expect(stop).toMatchObject({ name: "Boadas Cocktail Bar", hours: "unknown", source: "Wikidata", sourceUrl: "https://www.wikidata.org/wiki/Q122962985" });
+  });
+});
