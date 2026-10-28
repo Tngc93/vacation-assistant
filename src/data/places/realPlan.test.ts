@@ -255,3 +255,45 @@ describe("readable names on real data (places/names.ts)", () => {
     }
   });
 });
+
+describe("cocktail bars from Wikidata (cocktails.ts)", () => {
+  const cocktailsOf = async (code: string, category: CategoryId = "cocktail") => {
+    const entry = (await loadPlacesFile(code))!.categories[category];
+    return entry.status === "ok" ? entry.places : [];
+  };
+  const eveningStop = (code: string, place: PlanPlace) =>
+    buildItinerary({
+      depart: "2026-11-14",
+      return: "2026-11-15",
+      timeZone: findDestination(code)!.timeZone,
+      flight: null,
+      daytime: [],
+      evening: [place],
+      skip: [],
+    })
+      .days.flatMap((d) => d.stops)
+      .find((s) => s.kind === "evening");
+
+  it("adds Boadas to Barcelona's six OSM cocktail bars: OSM's bar, linked to its Wikidata item, first", async () => {
+    // OSM tagged six bars for cocktails (2026-10-28); Boadas is an untagged OSM bar, joined by name within 75 m.
+    const cocktail = await cocktailsOf("BCN");
+    expect(cocktail.length).toBeGreaterThan(6);
+    expect(cocktail[0]).toMatchObject({ id: expect.stringMatching(/^node\//), name: "Boadas", wikidataId: "Q122962985" });
+    expect((await cocktailsOf("BCN", "pub")).some((p) => p.name === "Boadas")).toBe(false);
+  });
+
+  it("keeps OSM's hours for a matched bar, and asks to check them for a bar only Wikidata has", async () => {
+    const nyc = await cocktailsOf("NYC");
+    const attaboy = nyc.find((p) => p.wikidataId === "Q116245237")!;
+    expect(attaboy.id).toMatch(/^(node|way)\//);
+    expect(attaboy.openingHours).toBeTruthy();
+    const pegu = nyc.find((p) => p.wikidataId === "Q116371618")!;
+    expect(pegu).toMatchObject({ id: "wikidata/Q116371618", name: "Pegu Club" });
+    expect(eveningStop("NYC", { ...pegu, category: "cocktail" })).toMatchObject({
+      name: "Pegu Club",
+      hours: "unknown",
+      source: "Wikidata",
+      sourceUrl: "https://www.wikidata.org/wiki/Q116371618",
+    });
+  });
+});
