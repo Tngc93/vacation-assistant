@@ -65,7 +65,7 @@ test("the carousel moves with its arrows and the keyboard, and keeps count", asy
   await heroReady(page);
   const counter = page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/);
   await expect(counter).toHaveText(/^01 \/ /);
-  await expect(page.getByRole("button", { name: "Önceki yer" })).toBeDisabled();
+  await expect(page.getByRole("button", { name: "Önceki yer" })).toHaveAttribute("aria-disabled", "true");
   await page.getByRole("button", { name: "Sonraki yer" }).click();
   await expect(counter).toHaveText(/^02 \/ /);
   await page.getByRole("button", { name: "Önceki yer" }).click();

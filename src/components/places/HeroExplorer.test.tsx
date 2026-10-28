@@ -222,7 +222,12 @@ describe("HeroExplorer", () => {
     const scrollTo = vi.fn();
     Element.prototype.scrollTo = scrollTo as unknown as typeof Element.prototype.scrollTo;
     renderExplorer({ categories: ["see"], results: [{ category: "see", status: "ok", places: sights, wikipediaCountsAvailable: true }] });
-    expect(screen.getByRole("button", { name: "Önceki yer" })).toBeDisabled();
+    // At the start "Önceki yer" is aria-disabled: still focusable, and a press does nothing.
+    const previous = screen.getByRole("button", { name: "Önceki yer" });
+    expect(previous).toHaveAttribute("aria-disabled", "true");
+    expect(previous).not.toBeDisabled();
+    await user.click(previous);
+    expect(scrollTo).not.toHaveBeenCalled();
     await user.click(screen.getByRole("button", { name: "Sonraki yer" }));
     expect(scrollTo).toHaveBeenLastCalledWith(expect.objectContaining({ behavior: expect.stringMatching(/smooth|auto/) }));
     // The keyboard: from a focused card, the arrow moves focus to the next card.

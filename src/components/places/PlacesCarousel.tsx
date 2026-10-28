@@ -156,14 +156,18 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
   );
 }
 
+/**
+ * At either end an arrow is `aria-disabled`, not `disabled`: it stays focusable, so the focus is not dropped when
+ * the last "Sonraki yer" press disables it, and the Tab order after the carousel does not change while it scrolls.
+ */
 function ArrowButton({ label, disabled, onClick, children }: { label: string; disabled: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button
       type="button"
       aria-label={label}
-      disabled={disabled}
-      onClick={onClick}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink disabled:cursor-not-allowed disabled:opacity-40"
+      aria-disabled={disabled}
+      onClick={disabled ? undefined : onClick}
+      className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:border-rule"
     >
       {children}
     </button>
