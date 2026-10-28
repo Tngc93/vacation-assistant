@@ -59,8 +59,11 @@ describe("details", () => {
         { e: uri("Q102400"), site: { value: "https://www.oktoberfest.de/" } },
         { e: uri("Q102400"), img: { value: "http://commons.wikimedia.org/wiki/Special:FilePath/Oktoberfest%202023.jpg" } },
         { e: uri("Q102400"), venue: uri("Q700887"), venueCoord: { value: "Point(11.549 48.131)" } },
+        { e: uri("Q5464854"), adult: uri("Q190845") },
       ]),
     );
+    expect(details.get("Q5464854")?.adult).toBe(true);
+    expect(details.get("Q102400")?.adult).toBeUndefined();
     expect(details.get("Q102400")).toEqual({
       months: [9, 10],
       websites: ["https://www.oktoberfest.de/", "http://www.oktoberfest.de/"],
@@ -151,6 +154,19 @@ describe("stored events", () => {
   it("never stores an event without a date: no edition in the window and no months", () => {
     const pastOnly = raw({ details: { months: [], websites: [], files: [], venues: [], places: [], countries: [] }, editions: [{ qid: "Q1", start: "2025-09-20", end: "2025-10-05" }] });
     expect(toStoredEvent(pastOnly, "2026-10-28")).toBeNull();
+  });
+
+  it("leaves out adult content, by type, subject or genre and by name", () => {
+    const details = { months: [9], websites: [], files: [], venues: [], places: [], countries: [] };
+    // Folsom Europe: a street fair whose main subject (P921) is BDSM.
+    expect(toStoredEvent(raw({ labels: { en: "Folsom Europe" }, details: { ...details, adult: true } }), "2026-10-28")).toBeNull();
+    // The Brussels International Festival of Eroticism: typed only as a film festival.
+    expect(toStoredEvent(raw({ labels: { en: "Brussels International Festival of Eroticism" }, details }), "2026-10-28")).toBeNull();
+    expect(toStoredEvent(raw({ labels: { tr: "Erotik Film Festivali" }, details }), "2026-10-28")).toBeNull();
+    expect(toStoredEvent(raw({ labels: { en: "Fetish Week" }, details }), "2026-10-28")).toBeNull();
+    // Words that only start like them are fine.
+    expect(toStoredEvent(raw({ labels: { en: "Porto Wine Festival" }, details }), "2026-10-28")).not.toBeNull();
+    expect(toStoredEvent(raw({ labels: { en: "Erotokritos Days" }, details }), "2026-10-28")).not.toBeNull();
   });
 
   it("does not keep months covering more than half the year", () => {

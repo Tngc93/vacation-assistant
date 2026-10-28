@@ -36,6 +36,23 @@ export const EDITION_CLASS = "Q27968055";
 export const TRADE_FAIR_CLASS = "Q57305";
 /** A P276 that is one of these is the city or a district, not a venue. */
 export const NOT_A_VENUE_CLASSES = ["Q56061", "Q486972"] as const; // administrative territorial entity, human settlement
+/**
+ * Adult content (Berk, 2026-10-28): an event whose type (P31), main subject (P921) or genre (P136) is one of these
+ * or a subclass of one is left out (Folsom Europe: main subject BDSM). Checked on Wikidata 2026-10-28.
+ */
+export const ADULT_CLASSES = {
+  Q3519050: "eroticism",
+  Q181001: "erotica",
+  Q291: "pornography",
+  Q190845: "BDSM",
+  Q207791: "sexual fetishism",
+  Q837322: "sex industry",
+} as const;
+/**
+ * The same rule by name, for items Wikidata types only as a festival (the Brussels International Festival of
+ * Eroticism is a "film festival" with no subject): an erotic, fetish or porn word in the Turkish or English label.
+ */
+export const ADULT_NAME = /\b(erotic|erotik|erotis|erotiz|fetish|feti[sş]|porn)/i;
 
 /** Wikidata's month items, January to December. */
 export const MONTH_QIDS = ["Q108", "Q109", "Q110", "Q118", "Q119", "Q120", "Q121", "Q122", "Q123", "Q124", "Q125", "Q126"] as const;
@@ -154,7 +171,7 @@ export function classifyCandidates(json: unknown, classes: ClassMap): Map<string
 }
 
 export function detailsQuery(qids: readonly string[]): string {
-  return `SELECT ?e ?month ?site ?img ?venue ?venueCoord ?place ?placeCoord ?country ?cc WHERE {
+  return `SELECT ?e ?month ?site ?img ?venue ?venueCoord ?place ?placeCoord ?country ?cc ?adult WHERE {
   VALUES ?e { ${values(qids)} }
   VALUES ?m { ${values(MONTH_QIDS)} }
   {
@@ -175,6 +192,7 @@ export function detailsQuery(qids: readonly string[]): string {
     FILTER NOT EXISTS { ?place wdt:P31/wdt:P279* wd:Q10864048 }
   }
   UNION { ?e wdt:P17 ?country . OPTIONAL { ?country wdt:P297 ?cc } }
+  UNION { ?e wdt:P31|wdt:P921|wdt:P136 ?topic . ?topic wdt:P279* ?adult . VALUES ?adult { ${values(Object.keys(ADULT_CLASSES))} } }
 }`;
 }
 
@@ -190,6 +208,8 @@ export type EventDetails = {
   places: Array<{ lat: number; lon: number }>;
   /** ISO codes of the event's countries (P17); "" for a country without one (Ancient Rome). */
   countries: string[];
+  /** The type, main subject or genre falls under ADULT_CLASSES. */
+  adult?: boolean;
 };
 
 export function parseDetails(json: unknown): Map<string, EventDetails> {
@@ -202,6 +222,7 @@ export function parseDetails(json: unknown): Map<string, EventDetails> {
     const qid = qidOf(b.e?.value);
     if (!qid) continue;
     const d = get(qid);
+    if (qidOf(b.adult?.value) && qidOf(b.adult?.value)! in ADULT_CLASSES) d.adult = true;
     const month = MONTH_QIDS.indexOf(qidOf(b.month?.value) as (typeof MONTH_QIDS)[number]) + 1;
     if (month > 0 && !d.months.includes(month)) d.months.push(month);
     const site = b.site?.value;
@@ -290,13 +311,14 @@ export type RawEvent = {
 
 /**
  * The stored event, or null when it is too minor (fewer than `minWikipedias` languages), has no Latin or Turkish
- * name, or has neither an exact edition in the window nor months. Months covering more than half the year say
+ * name, is adult content (ADULT_CLASSES or ADULT_NAME), or has neither an exact edition in the window nor months. Months covering more than half the year say
  * nothing about when to go and are not kept.
  */
 export function toStoredEvent(raw: RawEvent, today: string, minWikipedias = MIN_EVENT_WIKIPEDIAS): Omit<StoredEvent, "photo"> | null {
   if (raw.wikipedias < minWikipedias) return null;
   const label = raw.labels.tr ?? raw.labels.en;
   if (!label) return null;
+  if (raw.details.adult || [raw.labels.tr, raw.labels.en].some((l) => l && ADULT_NAME.test(l))) return null;
   const { name, localName } = readableName({ name: label, labels: raw.labels });
   const editions = editionsInWindow(raw.editions, today);
   const months = raw.details.months.length <= 6 ? raw.details.months : [];
