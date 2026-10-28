@@ -8,14 +8,16 @@ import { useNearViewport } from "@/lib/useNearViewport";
 import { Skeleton } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
-import { serializeCategories, toggleCategory } from "@/lib/places/cats";
+import { serializeCats, toggleCategory } from "@/lib/places/cats";
+import type { TripEvent } from "@/lib/events/trip";
+import { EventCard } from "@/components/events/EventCard";
 import type { StoredPlace } from "@/lib/places/file";
 import type { ShownPlace } from "@/lib/places/rules";
 import { spreadInside } from "@/lib/places/spread";
 import { CategoryChips } from "./CategoryChips";
 import { MapFacade, useFirstInteraction } from "./MapFacade";
 import { PlaceCard } from "./PlaceCard";
-import { PlacesCarousel, type CarouselItem } from "./PlacesCarousel";
+import { carouselItemId, PlacesCarousel, type CarouselItem } from "./PlacesCarousel";
 
 // MapLibre is large and browser-only: load it on demand, never on the server.
 const PlacesMap = dynamic(() => import("./PlacesMap"), {
@@ -39,6 +41,10 @@ export type HeroExplorerProps = {
   results: readonly CategoryResult[];
   /** When the city file was fetched; null when there is no file for this city yet. */
   fetchedAt: string | null;
+  /** The events in the trip's dates (exact first); the "Etkinlik" chip shows only when there is one. */
+  events?: readonly TripEvent[];
+  /** `?cats=` lists "event", or is missing. */
+  showEvents?: boolean;
 };
 
 // A fixed zone, so the server render, the browser and every test agree on the day.
@@ -60,7 +66,7 @@ function osmUrl(center: { lat: number; lon: number }) {
  * viewport on wide screens. Chips filter the carousel and the map together (?cats= in the URL); a card and its
  * dot light up together, a dot picked on the map brings its card into view.
  */
-export function HeroExplorer({ title, photo, center, timeZone, categories, results, fetchedAt }: HeroExplorerProps) {
+export function HeroExplorer({ title, photo, center, timeZone, categories, results, fetchedAt, events = [], showEvents = false }: HeroExplorerProps) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -74,22 +80,30 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
   const liveMap = fullScreen || (interacted && (isWide || mapNear));
   const closeButton = useRef<HTMLButtonElement>(null);
 
+  const hasEvents = events.length > 0;
+  const eventsShown = hasEvents && showEvents;
   const items = useMemo<CarouselItem[]>(
-    () => results.flatMap((r) => (r.status === "ok" ? r.places.map((place, i) => ({ place, category: r.category, rank: i + 1 })) : [])),
-    [results],
+    () => [
+      // Events come first: they are why these dates differ from any others.
+      ...(eventsShown ? events.map((trip, i) => ({ kind: "event" as const, trip, rank: i + 1 })) : []),
+      ...results.flatMap((r) => (r.status === "ok" ? r.places.map((place, i) => ({ place, category: r.category, rank: i + 1 })) : [])),
+    ],
+    [results, events, eventsShown],
   );
-  const places = useMemo(() => items.map((i) => i.place), [items]);
+  // Events are not on the map: many have no single venue (their details link the venue when there is one).
+  const places = useMemo(() => items.flatMap((i) => (i.kind === "event" ? [] : [i.place])), [items]);
   // A place inside another (the Tsar Cannon in the Kremlin) is drawn a little off its parent's dot, never under it.
   const mapPlaces = useMemo(() => spreadInside(places), [places]);
-  const selected = items.find((i) => i.place.id === selectedId) ?? null;
+  const selected = items.find((i) => carouselItemId(i) === selectedId) ?? null;
   const missing = results.filter((r) => r.status === "missing").map((r) => CATEGORIES[r.category].label);
   const noRanking = results.some((r) => r.status === "ok" && CATEGORIES[r.category].ranking === "wikipedia" && !r.wikipediaCountsAvailable);
 
-  const onToggle = (id: CategoryId) => {
+  const writeCats = (next: readonly CategoryId[], nextEvents: boolean) => {
     const params = new URLSearchParams(window.location.search);
-    params.set("cats", serializeCategories(toggleCategory(categories, id)));
+    params.set("cats", serializeCats(next, hasEvents && nextEvents));
     startTransition(() => router.replace(`/plan?${params.toString()}`, { scroll: false }));
   };
+  const onToggle = (id: CategoryId) => writeCats(toggleCategory(categories, id), showEvents);
 
   const onSelectFromMap = (id: string) => {
     setSelectedId(id);
@@ -112,7 +126,9 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
     };
   }, [fullScreen]);
 
-  const detail = selected ? (
+  const detail = selected?.kind === "event" ? (
+    <EventCard item={selected.trip} active onActivate={setActiveId} onClose={() => setSelectedId(null)} className="shadow-ticket" />
+  ) : selected ? (
     <PlaceCard
       place={selected.place}
       category={selected.category}
@@ -127,7 +143,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
   const empty =
     !fetchedAt ? (
       <EmptyState text="Bu şehir için mekân verisi henüz hazır değil." action={<OsmLink center={center} />} />
-    ) : categories.length === 0 ? (
+    ) : categories.length === 0 && !eventsShown ? (
       <EmptyState text="Görmek istediğin mekân türlerini yukarıdan seç." />
     ) : items.length === 0 ? (
       <EmptyState
@@ -152,14 +168,18 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
 
       {fetchedAt ? (
         <div className="min-w-0 md:col-span-7 md:col-start-1 md:row-start-2">
-          <CategoryChips selected={categories} onToggle={onToggle} />
+          <CategoryChips
+            selected={categories}
+            onToggle={onToggle}
+            events={hasEvents ? { selected: showEvents, onToggle: () => writeCats(categories, !showEvents) } : undefined}
+          />
         </div>
       ) : null}
 
       <div className={cn("flex min-h-0 min-w-0 flex-col transition-opacity duration-200 md:col-span-7 md:col-start-1 md:row-start-3", pending && "opacity-60")} aria-busy={pending}>
         {empty ?? (
           <PlacesCarousel
-            key={categories.join(",")}
+            key={`${categories.join(",")}${eventsShown ? ",event" : ""}`}
             items={items}
             center={center}
             timeZone={timeZone}
@@ -184,6 +204,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
             </a>{" "}
             (ODbL), {fetchedDate.format(new Date(fetchedAt))} tarihinde alındı. Sıra: Vikipedi dil sayısı (Wikidata) ya da OSM kaydının ayrıntısı;
             puan verisi yok.{noRanking ? " Vikipedi dil sayıları şu an alınamadı; sıra ada göre." : ""}
+            {eventsShown ? " Etkinlikler: Wikidata (CC0); tarihleri resmî kaynaktan doğrula." : ""}
           </p>
         ) : null}
       </div>

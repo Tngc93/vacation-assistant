@@ -18,7 +18,8 @@ const SECTIONS = ["yerler", "gun-gun-plan", "konaklama", "ucuslar", "butce"] as 
  * (evaluate, evaluateAll, boundingBox) first waits, web-first, for what it measures to be in place.
  */
 async function heroReady(page: Page) {
-  await expect(chips(page)).toHaveCount(8);
+  // The eight place categories; an "Etkinlik" chip joins them only when an event falls in the dates.
+  await expect(chips(page).filter({ hasNotText: "Etkinlik" })).toHaveCount(8);
   await expect(chips(page).first()).toBeVisible();
   await expect(cards(page).first()).toBeVisible();
 }
@@ -88,13 +89,15 @@ test("a chip filters the carousel and the map together, in the URL", async ({ pa
   const counter = page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/);
   await expect(counter).toBeVisible();
   const total = (await counter.innerText()).split(" / ")[1];
-  expect(Number(total)).toBe(before);
+  // Events in the dates (src/data/events) head the carousel but are not dots on the map.
+  const events = await cards(page).filter({ hasText: "Etkinlik · " }).count();
+  expect(Number(total)).toBe(before + events);
 
   await page.getByRole("button", { name: "Restoran", exact: true }).click();
   await expect(page).toHaveURL(/cats=see%2Cmuseum/);
   await expect(map(page)).not.toHaveAttribute("data-places", String(before));
   const after = Number(await map(page).getAttribute("data-places"));
-  await expect(page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/)).toHaveText(new RegExp(`/ ${String(after).padStart(2, "0")}$`));
+  await expect(page.locator("#yerler").getByText(/^\d\d \/ \d\d+$/)).toHaveText(new RegExp(`/ ${String(after + events).padStart(2, "0")}$`));
   expect(after).toBeLessThan(before);
 });
 

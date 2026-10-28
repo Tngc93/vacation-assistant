@@ -9,6 +9,8 @@ import { loadFlights } from "@/lib/flights/load";
 import { chooseFlight } from "@/lib/flights/select";
 import type { FlightTicket } from "@/lib/flights/tickets";
 import { loadPlacesFile } from "@/lib/places/load";
+import { loadEventsFile } from "@/lib/events/load";
+import { dayNotes, eventsInTrip } from "@/lib/events/trip";
 import { addDays } from "@/lib/search/dates";
 import type { SearchState } from "@/lib/search/params";
 import { ItineraryView } from "./ItineraryView";
@@ -41,9 +43,10 @@ export function flightMoments(ticket: FlightTicket | null): ItineraryInput["flig
 
 /** Day-by-day plan (PRD 20–22): built from the pre-fetched places, deterministically; AI and chat edits are optional. */
 export async function ItinerarySection({ search, destination, categories, direct, flight, webFlight, skip, aiPlan, edits }: Props) {
-  const [file, flights] = await Promise.all([
+  const [file, flights, eventsFile] = await Promise.all([
     loadPlacesFile(destination.cityCode),
     loadFlights(search.from, search.to, search.depart, search.return, search.pax, direct),
+    loadEventsFile(destination.cityCode),
   ]);
   const choice = chooseFlight(flights, flight);
   const ticket = webFlight || choice.status === "none" ? null : choice.ticket;
@@ -77,6 +80,7 @@ export async function ItinerarySection({ search, destination, categories, direct
       cityName={destination.nameTr}
       center={cityCentre(destination)}
       flightTimesUnknown={webFlight}
+      eventNotes={dayNotes(eventsInTrip(eventsFile?.events ?? [], search.depart, search.return), search.depart, search.return)}
     />
   );
 }
