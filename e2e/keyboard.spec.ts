@@ -96,8 +96,10 @@ test("the plan by keyboard: chips, one stop for the carousel, the plan, the AI t
   await page.keyboard.press("Home");
   await expect(cards.first()).toBeFocused();
   await page.keyboard.press("ArrowRight");
+  // The arrows below stay in the Tab order at either end (aria-disabled), so the next stop does not depend on
+  // how far the smooth scroll has got.
   await page.keyboard.press("Tab");
-  await expect(page.getByRole("button", { name: "Sonraki yer" })).toBeFocused();
+  await expect(page.getByRole("button", { name: "Önceki yer" })).toBeFocused();
   // Coming back with Shift+Tab lands on the card used last.
   await page.keyboard.press("Shift+Tab");
   await expect(cards.nth(1)).toBeFocused();
@@ -120,4 +122,21 @@ test("the plan by keyboard: chips, one stop for the carousel, the plan, the AI t
   await tabTo(page, page.getByRole("contentinfo").getByRole("link", { name: "MIT lisansı" }), 20);
   // No trap: the next presses leave the page and come back to the top.
   await tabTo(page, page.getByRole("link", { name: "İçeriğe geç" }), 3);
+});
+
+test("the carousel's arrows keep the focus at the end of the row", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 });
+  // A short row: the viewpoints only.
+  await page.goto(`/plan?to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&cats=viewpoint`);
+  const next = page.getByRole("button", { name: "Sonraki yer" });
+  await expect(next).toHaveAttribute("aria-disabled", "false");
+  await next.focus();
+  // Enter until the row's end disables the arrow; the focus stays on it rather than dropping to the page.
+  await expect(async () => {
+    await page.keyboard.press("Enter");
+    await expect(next).toHaveAttribute("aria-disabled", "true", { timeout: 1_000 });
+  }).toPass();
+  await expect(next).toBeFocused();
+  await page.keyboard.press("Shift+Tab");
+  await expect(page.getByRole("button", { name: "Önceki yer" })).toBeFocused();
 });

@@ -9,7 +9,3 @@ Yapılması kararlaştırılmış ama henüz bir branch'e alınmamış işler. B
 ## Etkinlikler
 
 2. **Eksik Wikidata tarihleri:** Venedik Karnavalı, Edinburgh Fringe gibi büyük etkinliklerde Wikidata'da ay/tarih (P2922 ya da edisyon P580/P582) eksik; Wikidata'ya eklenirse aylık yenilemede otomatik gelir.
-
-## Test
-
-3. **Flaky klavye testi:** e2e klavye testi (`e2e/keyboard.spec.ts`) tam pakette ara sıra flaky (2026-10-28); kök nedeni araştırılacak.
