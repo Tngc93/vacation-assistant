@@ -65,13 +65,19 @@ export function stylePatches(layers: readonly Layer[], p: MapPalette): StylePatc
   return patches;
 }
 
+/**
+ * Road-number shields are dropped: they are not part of the quiet base map, and the upstream style's filters
+ * compare `ref_length` without a fallback, so MapLibre logged a warning per shield layer on every load.
+ */
+const DROPPED_LAYER = /shield/;
+
 /** Applies patches to a style JSON object (before the map is created). */
 export function applyPatches<T extends { layers: Layer[] }>(style: T, patches: readonly StylePatch[]): T {
   const byLayer = new Map<string, StylePatch[]>();
   for (const patch of patches) byLayer.set(patch.layer, [...(byLayer.get(patch.layer) ?? []), patch]);
   return {
     ...style,
-    layers: style.layers.map((layer) => {
+    layers: style.layers.filter((layer) => !DROPPED_LAYER.test(layer.id)).map((layer) => {
       const own = byLayer.get(layer.id);
       if (!own) return layer;
       const paint = { ...(layer.paint ?? {}) };
