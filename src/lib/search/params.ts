@@ -13,7 +13,7 @@ import { checkTripDates, isIsoDate } from "./dates";
  *
  * The origin can be any city with an airport (2026-10-29). The list is server-only, so here `from` is only checked
  * for shape (three letters); the server resolves it (src/lib/origins/data.ts `resolveOrigin`): a city code, or an
- * airport code mapped to its city (old `?from=ESB` links open Ankara), else İstanbul.
+ * airport code mapped to its city (`?from=SAW` opens İstanbul; Ankara is ESB itself), else İstanbul.
  */
 
 export const MIN_PASSENGERS = 1;

@@ -25,7 +25,7 @@ function toOrigin(city: StoredOrigin): Origin {
 
 const ORIGINS: Origin[] = file.cities.map(toOrigin);
 const byCity = new Map(ORIGINS.map((o) => [o.code, o]));
-/** Airport code → its city, for links that name an airport (?from=ESB opens Ankara, ?from=SAW İstanbul). */
+/** Airport code → its city, for links that name an airport (?from=SAW opens İstanbul, ?from=LHR London). */
 const byAirport = new Map(ORIGINS.flatMap((o) => o.airports.map((a) => [a.code, o] as const)));
 
 /** The city a code names: a city code first (IST is İstanbul, not only its new airport), then an airport code. */

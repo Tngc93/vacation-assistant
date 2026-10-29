@@ -29,8 +29,10 @@ jobs:
       - run: npm run data:places
       # Big recurring events from Wikidata (a few minutes); a city whose queries fail keeps its old file.
       - run: npm run data:events
-      # Departure cities: Travelpayouts' static city and airport files, Turkish names from Wikidata (about a minute).
+      # Departure cities: OurAirports airports, Turkish names from Wikidata, GeoNames time zones (about a minute).
       - run: npm run data:origins
+      # Airline names by IATA designator, from Wikidata (a few seconds).
+      - run: npm run data:airlines
       # Schema, coverage and attribution checks for the new files.
       - run: npm test
 
@@ -39,7 +41,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Ignore runs where only the fetch timestamps moved.
-          if ! git diff -U0 -- src/data/places src/data/events src/data/origins.json | grep -E '^[+-][^+-]' | grep -vq '"fetchedAt"' && [ -z "$(git ls-files --others --exclude-standard -- src/data/events)" ]; then
+          if ! git diff -U0 -- src/data/places src/data/events src/data/origins.json src/data/airlines.json | grep -E '^[+-][^+-]' | grep -vq '"fetchedAt"' && [ -z "$(git ls-files --others --exclude-standard -- src/data/events)" ]; then
             echo "No place data changes."
             exit 0
           fi
@@ -47,13 +49,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git add src/data/places src/data/events src/data/origins.json
+          git add src/data/places src/data/events src/data/origins.json src/data/airlines.json
           git commit -m "chore: refresh place data"
           git push origin "$branch"
           gh pr create --base main --head "$branch" --title "chore: refresh place data" --body "$(cat <<'BODY'
-          Monthly refresh of `src/data/places/` from OpenStreetMap (Overpass), Wikidata and Wikimedia Commons, made by `npm run data:places`, of `src/data/events/` from Wikidata, made by `npm run data:events`, and of `src/data/origins.json` (departure cities) from Travelpayouts' static data and Wikidata, made by `npm run data:origins`.
+          Monthly refresh of `src/data/places/` from OpenStreetMap (Overpass), Wikidata and Wikimedia Commons, made by `npm run data:places`, of `src/data/events/` from Wikidata, made by `npm run data:events`, of `src/data/origins.json` (departure cities) from OurAirports, Wikidata and GeoNames, made by `npm run data:origins`, and of `src/data/airlines.json` from Wikidata, made by `npm run data:airlines`.
 
-          - Data: © OpenStreetMap contributors, ODbL 1.0 (see `src/data/places/README.md`); events: Wikidata, CC0; departure cities: Travelpayouts static data (no licence stated, offered to partners to embed) and Wikidata labels, CC0.
+          - Data: © OpenStreetMap contributors, ODbL 1.0 (see `src/data/places/README.md`); events: Wikidata, CC0; departure cities: OurAirports (public domain), Wikidata labels (CC0) and GeoNames time zones (CC BY 4.0); airline names: Wikidata, CC0.
           - Tests (schema, one file per destination, at most 30 places per category, attribution fields) passed in the refresh workflow.
           - Pull requests opened with `GITHUB_TOKEN` do not start other workflows, so CI does not run on this PR automatically. Push an empty commit or re-run CI before merging.
           BODY

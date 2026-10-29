@@ -28,7 +28,7 @@ async function readSearch(searchParams: Props["searchParams"]) {
   // "Today" belongs to the request, not to the build.
   await connection();
   const result = parseSearch(params, todayInIstanbul(new Date()));
-  // `?from=` names a known city from here on: an airport code becomes its city (ESB → ANK), an unknown code İstanbul.
+  // `?from=` names a known city from here on: an airport code becomes its city (SAW → IST), an unknown code İstanbul.
   if (result.ok) result.value.from = resolveOrigin(result.value.from).code;
   return { params, result };
 }

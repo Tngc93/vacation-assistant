@@ -70,7 +70,7 @@ if (destinationCodes.size < 50 || originNames.length < 50) {
 }
 const originLeaks = originNames.filter((name) => bundle.includes(name));
 // The file's own first line of cities, as JSON, would show a bundled copy even if names were escaped differently.
-const originMarkers = ['"timeZone":"Europe/London","airports"', "Flight-data-by-Aviasales"].filter((m) => bundle.includes(m));
+const originMarkers = ['"timeZone":"Europe/London","airports"', "ourairports.com/data"].filter((m) => bundle.includes(m));
 if (originLeaks.length || originMarkers.length) {
   console.error(`Server-only origin data found in the client bundle: ${[...originLeaks.slice(0, 5), ...originMarkers].join(", ")}`);
   process.exit(1);

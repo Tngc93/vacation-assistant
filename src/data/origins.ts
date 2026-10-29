@@ -4,7 +4,7 @@
  * only what the browser needs to know without it.
  */
 
-/** IATA city code (IST, LON, ANK). Old links may carry an airport code (ESB, SAW); the server maps it to its city. */
+/** IATA metropolitan code (IST, LON) or a one-airport city's airport code (ESB for Ankara). A link may carry another airport's code (SAW); the server maps it to its city. */
 export type OriginCode = string;
 
 /** İstanbul (IST + SAW), when a link names no origin or one we do not know. Never written to the URL. */

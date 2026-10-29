@@ -91,13 +91,13 @@ test("an older link with from and pax opens the same plan", async ({ page }) => 
   await expect(page.locator("#ucuslar").getByRole("combobox", { name: "Kalkış" })).toHaveValue("Ankara");
   await expect(page.locator("#konaklama").getByRole("group", { name: "Kişi sayısı" }).locator("output")).toHaveText("3 kişi");
   await expect(page.locator("#konaklama").getByRole("link", { name: /Booking/ })).toHaveAttribute("href", /group_adults=3&/);
-  // "Düzenle" goes home with the city and the dates filled in; the airport code is now Ankara's city code.
+  // "Düzenle" goes home with the city and the dates filled in.
   await page.locator("#yerler").getByRole("link", { name: "Düzenle" }).click();
-  await expect(page).toHaveURL(/\/\?from=ANK&to=AMS&depart=.*&pax=3#arama$/);
+  await expect(page).toHaveURL(/\/\?from=ESB&to=AMS&depart=.*&pax=3#arama$/);
   await expect(page.getByRole("combobox", { name: "Varış şehri" })).toHaveValue("Amsterdam");
 });
 
-test("Ankara in the flights section moves the URL to ANK and the results to ESB, keeping the other params", async ({ page }) => {
+test("Ankara in the flights section moves the URL and the results to ESB, keeping the other params", async ({ page }) => {
   await page.goto(`/plan?${route("AMS")}&cats=see%2Cmuseum&skip=n1&stay=3000&daily=150`);
   const list = await cheapest(page);
   // IST → AMS has no sample prices; ESB → AMS has them on nearby dates.
@@ -108,7 +108,7 @@ test("Ankara in the flights section moves the URL to ANK and the results to ESB,
   });
 
   await chooseOrigin(page, "ankara", /^Ankara/);
-  await expect(page).toHaveURL(/[?&]from=ANK(&|$)/);
+  await expect(page).toHaveURL(/[?&]from=ESB(&|$)/);
   await expect(list.getByText(/^ESB · /)).toBeVisible();
   await expect(list.getByText(/FARKLI TARİH/)).toBeVisible();
   const url = new URL(page.url());
@@ -120,7 +120,7 @@ test("Ankara in the flights section moves the URL to ANK and the results to ESB,
     skip: "n1",
     stay: "3000",
     daily: "150",
-    from: "ANK",
+    from: "ESB",
   });
   // The page stays where it was.
   expect(Math.abs((await page.evaluate(() => window.scrollY)) - scrolled)).toBeLessThan(80);
@@ -154,7 +154,7 @@ test("a new origin takes the chosen flight out of the budget and says so, until 
   await expect(note).toHaveCount(0);
 
   await chooseOrigin(page, "ankara", /^Ankara/);
-  await expect(page).toHaveURL(/[?&]from=ANK(&|$)/);
+  await expect(page).toHaveURL(/[?&]from=ESB(&|$)/);
   await expect(page).not.toHaveURL(/[?&]flight=/);
   await expect(note).toBeVisible();
 

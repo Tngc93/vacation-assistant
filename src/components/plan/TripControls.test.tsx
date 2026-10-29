@@ -99,7 +99,7 @@ describe("OriginControl", () => {
   it("keeps the link's origin over the remembered one", async () => {
     window.history.replaceState(null, "", `${PLAN}&from=ESB`);
     rememberOrigin(LONDON);
-    render(<OriginControl value={{ code: "ANK", name: "Ankara", countryTr: "Türkiye", airports: ["ESB"] }} />);
+    render(<OriginControl value={{ code: "ESB", name: "Ankara", countryTr: "Türkiye", airports: ["ESB"] }} />);
     await act(async () => {});
     expect(replace).not.toHaveBeenCalled();
   });
