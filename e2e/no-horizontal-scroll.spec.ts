@@ -51,11 +51,19 @@ for (const width of WIDTHS) {
         const root = document.documentElement;
         const viewport = root.clientWidth;
         // Report the outermost elements that stick out, to make failures actionable.
+        // Children of a horizontal scroller (the category chips) are clipped, not overflowing the page.
+        const clipped = (el: HTMLElement) => {
+          for (let p = el.parentElement; p; p = p.parentElement) if (/auto|scroll|hidden|clip/.test(getComputedStyle(p).overflowX)) return true;
+          return false;
+        };
         const offenders = [...document.querySelectorAll<HTMLElement>("body *")]
-          .filter((el) => el.getBoundingClientRect().right > viewport + 0.5)
+          .filter((el) => el.getBoundingClientRect().right > viewport + 0.5 && !clipped(el))
           .filter((el) => !el.parentElement || el.parentElement.getBoundingClientRect().right <= viewport + 0.5)
           .slice(0, 5)
-          .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} → ${Math.round(el.getBoundingClientRect().right)}px`);
+          .map(
+            (el) =>
+              `${el.closest("section[id]")?.id ?? "-"} ${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} "${(el.textContent ?? "").trim().slice(0, 30)}" → ${Math.round(el.getBoundingClientRect().right)}px`,
+          );
         // Plan sections keep the 16px side gutter: one wide child would widen the whole column.
         const gutterBreaks = [...document.querySelectorAll<HTMLElement>("main section[id]")]
           .filter((el) => el.getBoundingClientRect().right > viewport - 16 + 0.5)
