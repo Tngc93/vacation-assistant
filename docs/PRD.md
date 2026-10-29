@@ -29,7 +29,7 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 ## Faz 1 kapsamı (bugün yayında)
 
 - **Akış:** ana sayfa yalnızca varış şehrini (68 şehir) ve tarihleri sorar; plan sayfası sırayla: şehir başlığı ve görülecek yerler (karusel + harita) → gün gün plan (yapay zekâ paneli sağdaki sekmenin arkasında) → konaklama (kişi) → uçuşlar (kalkış, kişi) → bütçe. Kalkış ve kişi isteğe bağlıdır (varsayılan İstanbul, 1 kişi); kalkış uçuşa açık havalimanı olan her şehir olabilir (~3.500 şehir, son seçim tarayıcıda hatırlanır).
-- **Veri:** mekânlar OpenStreetMap ve Wikidata'dan önceden çekilir ve ayda bir tazelenir; uçuşlar Travelpayouts önbelleği; kalkış şehirleri Travelpayouts'un statik şehir/havalimanı verisinden, Türkçe adları Wikidata'dan (ayda bir tazelenir); kur TCMB → Frankfurter → Exchange Rate API; etkinlikler Wikidata; fotoğraflar Commons. Çalışma anında Overpass ya da Wikidata çağrısı yok.
+- **Veri:** mekânlar OpenStreetMap ve Wikidata'dan önceden çekilir ve ayda bir tazelenir; uçuşlar Travelpayouts önbelleği; kalkış şehirleri OurAirports'tan (kamu malı), Türkçe adları Wikidata'dan, saat dilimleri GeoNames'ten, havayolu adları Wikidata'dan (ayda bir tazelenir); kur TCMB → Frankfurter → Exchange Rate API; etkinlikler Wikidata; fotoğraflar Commons. Çalışma anında Overpass ya da Wikidata çağrısı yok.
 - **Planlayıcı:** deterministik gün gün plan; alt duraklar (bir yerin içindeki yerler), merkeze uzak yerler ve uzak bölgeler, okunur (Latin ya da romanize) adlar, etkinlik notları, `.ics` ve yazdırma.
 - **Yapay zekâ (isteğe bağlı):** kullanıcının kendi anahtarıyla Anthropic, OpenAI ya da Gemini; plan seçimi, sohbetle düzenleme ve "Web'de ara".
 - **Ölçüm:** Vercel Web Analytics, yalnızca production'da ve yalnızca sayfa yolu.
@@ -50,7 +50,7 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 1. Kullanıcı çıkış şehrini seçer: uçuşa açık havalimanı olan her şehir (adı Türkçe, Türkçe karakter duyarsız arama; şehir adı, ülke ya da IATA koduyla). Çok havalimanlı şehirde şehrin bütün havalimanları birlikte aranır (İstanbul IST + SAW, Londra LHR + LGW + STN + LTN + LCY + SEN, New York JFK + EWR + LGA). *Ana sayfadan plan sayfasının Uçuşlar bölümüne taşındı (2026-10-22, Berk'in kararı); varsayılan İstanbul (IST + SAW). İstanbul ya da Ankara sınırı kalktı, her şehir (2026-10-29, Berk'in kararı); son seçim tarayıcıda hatırlanır, kalkış ile varış aynı şehirse sorgu atılmaz.*
 2. Kullanıcı varış ülkesini ve şehrini, gidiş ve dönüş tarihlerini ve kişi sayısını (1–9) seçer. *Ana sayfa yalnızca varış şehrini ve tarihleri sorar; kişi sayısı plan sayfasının Konaklama ve Uçuşlar bölümlerine taşındı, varsayılan 1 (2026-10-22, Berk'in kararı).*
-3. Arama durumu URL'de tutulur. Link paylaşıldığında aynı plan açılır (kayıt gerekmeden paylaşım). *`from` ve `pax` isteğe bağlı (varsayılanlar URL'ye yazılmaz); bunları içeren eski linkler aynı planı açar (2026-10-22). `from` şehir kodudur; eski `from=ESB` linki Ankara'yı (ANK) açar (2026-10-29).*
+3. Arama durumu URL'de tutulur. Link paylaşıldığında aynı plan açılır (kayıt gerekmeden paylaşım). *`from` ve `pax` isteğe bağlı (varsayılanlar URL'ye yazılmaz); bunları içeren eski linkler aynı planı açar (2026-10-22). `from` şehir kodudur (metropol kodu ya da tek havalimanlı şehirde havalimanı kodu); eski `from=ESB` linki Ankara'yı açar (2026-10-29).*
 
 ### Uçuşlar
 

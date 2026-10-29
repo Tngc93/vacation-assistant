@@ -51,7 +51,7 @@ Her fiyat, kur ve tahmin kaynağıyla ve "tahmini" etiketiyle gösterilir. Bir k
 | Döviz kurları | [TCMB günlük kurları](https://www.tcmb.gov.tr/kurlar/today.xml) (döviz satış) | Kaynak olarak "TCMB" gösterilir. |
 | Döviz kurları (yedek) | [Frankfurter](https://frankfurter.dev) — Avrupa Merkez Bankası verisi | Ücretsiz, anahtarsız. |
 | Döviz kurları (ikinci yedek) | [Rates By Exchange Rate API](https://www.exchangerate-api.com) (open access) | Kur gösterilen sayfada atıf linki zorunlu; uygulama bunu otomatik ekler. Verinin toplu olarak yeniden dağıtılması yasak. |
-| Kalkış şehirleri | [Travelpayouts statik verisi](https://support.travelpayouts.com/hc/en-us/articles/360018907280-Flight-data-by-Aviasales) (`data/en` ve `data/tr` altında `cities.json`, `airports.json`; fiyat API'siyle aynı şehir ve havalimanı kodları) · Türkçe adlar [Wikidata](https://www.wikidata.org)'dan (havalimanının IATA kodu P238 ve hizmet verdiği yer P931) | Travelpayouts dosyalar için açık bir lisans belirtmiyor; destek sayfası onları partnerlerin projelerine gömmesi için sunuyor (2026-10-29'da kontrol edildi). Wikidata CC0. `src/data/origins.json` `npm run data:origins` ile üretilir, ayda bir tazelenir ve yalnızca sunucuda okunur (tarayıcı `/api/origins?q=` ile birkaç satır alır). |
+| Kalkış şehirleri ve havayolları | [OurAirports](https://ourairports.com/data/) `airports.csv` (tarifeli büyük ve orta havalimanları) · Türkçe adlar ve havayolu adları [Wikidata](https://www.wikidata.org)'dan (havalimanı IATA kodu P238, hizmet verdiği yer P931, havayolu kodu P229) · saat dilimleri [GeoNames](https://www.geonames.org) `cities1000` | OurAirports kamu malı; Wikidata CC0; GeoNames [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (atıf footer'da). Çok havalimanlı şehirler IATA metropol koduyla gruplanır (`src/lib/origins/metros.ts`). `src/data/origins.json` `npm run data:origins`, `src/data/airlines.json` `npm run data:airlines` ile üretilir, ayda bir tazelenir ve yalnızca sunucuda okunur (tarayıcı `/api/origins?q=` ile birkaç satır alır). Travelpayouts'un statik dosyaları yeniden dağıtım izni olmadığı için kullanılmaz. |
 | Uçuş fiyatları | [Travelpayouts](https://www.travelpayouts.com) — [Aviasales Data API](https://support.travelpayouts.com/hc/en-us/articles/203956163) (`v3/prices_for_dates`) | Partner programı; token yalnızca sunucuda (`TRAVELPAYOUTS_TOKEN`). **Fiyatlar önbellekten, tahminidir:** Aviasales kullanıcılarının son 48 saatteki aramalarında bulunmuş, bir yetişkin için gidiş-dönüş fiyatlarıdır; satın alma anındaki fiyat farklı olabilir. Her bilette "ÖNBELLEKTEN · … · TAHMİNİ" yazar ve "Güncel fiyatı gör" Aviasales'te aynı aramayı Travelpayouts partner linkiyle (`tp.media`, marker + proje kimliği) açar. Google Flights'a yalnızca link verilir. |
 | Konaklama | [Booking](https://www.booking.com) ve [Google Hotels](https://www.google.com/travel/hotels) | Yalnızca link (API yok): şehir, giriş-çıkış tarihi ve kişi sayısı dolu arama. Google Hotels kişi sayısını linkten almıyor. Uygulama otel fiyatı göstermez; ücretsiz bir otel fiyat kaynağı yok. |
 | Bütçe | Uçuş: Travelpayouts önbelleği · konaklama ve günlük harcama: **kullanıcının girdiği değer** · kur: yukarıdaki kur zinciri | Konaklama ve günlük harcama için hazır ya da "ortalama" değer yoktur; girilmeyen satır toplama eklenmez ve toplam "KISMİ TOPLAM" olarak işaretlenir. Değerler URL'de durur (`&flight=…&stay=…&daily=…&cur=…`), paylaşılan link aynı bütçeyi açar. |
@@ -110,7 +110,8 @@ Sık kullanılan komutlar (tam liste ve ayrıntılar [AGENTS.md](AGENTS.md)'de):
 | `npm run test:e2e` | Playwright uçtan uca testleri, axe erişilebilirlik ve klavye turu dahil (önce `npm run build`) |
 | `npm run data:places` | Mekân verisini yeniden çeker (ağ ister, ~3 saat) |
 | `npm run data:events` | Etkinlikleri Wikidata'dan yeniden çeker (ağ ister, şehir başına ~30 sn) |
-| `npm run data:origins` | Kalkış şehirlerini Travelpayouts ve Wikidata'dan yeniden çeker (ağ ister, ~1 dk) |
+| `npm run data:origins` | Kalkış şehirlerini OurAirports, Wikidata ve GeoNames'ten yeniden çeker (ağ ister, ~1 dk) |
+| `npm run data:airlines` | Havayolu adlarını Wikidata'dan yeniden çeker (ağ ister, birkaç saniye) |
 
 Vercel'e kurulum, ortam değişkenleri, Travelpayouts hesabı ve aylık veri yenileme: [docs/DEPLOY.md](docs/DEPLOY.md).
 
@@ -136,7 +137,7 @@ Belgeler: [PRD](docs/PRD.md) · [DESIGN](docs/DESIGN.md) · [PLAN](docs/PLAN.md)
 
 ## Lisans
 
-Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](src/data/places/README.md). Open Graph kartlarındaki fontlar (`assets/og/`): SIL Open Font License 1.1. Her Commons fotoğrafı kendi lisansıyla, yazarı ve lisansı yanında gösterilir.
+Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](src/data/places/README.md). `src/data/origins.json`: OurAirports (kamu malı), Wikidata (CC0) ve saat dilimleri için GeoNames ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)); `src/data/airlines.json`: Wikidata (CC0). Open Graph kartlarındaki fontlar (`assets/og/`): SIL Open Font License 1.1. Her Commons fotoğrafı kendi lisansıyla, yazarı ve lisansı yanında gösterilir.
 
 ---
 
