@@ -4,7 +4,7 @@ type: prd
 
 # PRD: Vacationist
 
-Sahibi: Berk Arcak · Durum: Taslak · Faz: 1 (web, Türkiye'den çıkış)
+Sahibi: Berk Arcak · Durum: Faz 1 yayında (2026-10-23, <https://vacationist-app.vercel.app>) · Son gözden geçirme: 2026-10-29
 
 ## Problem
 
@@ -25,6 +25,15 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 | Aylık işletme maliyeti | 0 TL | 0 TL (koruma metriği) | sürekli |
 
 **Plan sayısı nasıl ölçülür:** Vercel Web Analytics'te (Hobby, ücretsiz) `/plan` sayfa görüntülemesi. Sorgu parametreleri ölçüme gitmez, custom event yok; bu yüzden hangi şehir ya da tarih planlandığı bilinmez. Plan içindeki değişiklikler (tarih, bütçe, durak çıkarma, yapay zekâ) yeni görüntüleme sayılmaz; aynı planın yeniden açılması ve rotasız `/plan` sayılır, yani sayı üst sınırdır. Hobby'de rapor penceresi 1 ay; haftalık değer panelde son 7 gün seçilerek okunur. Ayrıntı: [DEPLOY.md](DEPLOY.md#7-ölçüm-vercel-web-analytics).
+
+## Faz 1 kapsamı (bugün yayında)
+
+- **Akış:** ana sayfa yalnızca varış şehrini (68 şehir) ve tarihleri sorar; plan sayfası sırayla: şehir başlığı ve görülecek yerler (karusel + harita) → gün gün plan (yapay zekâ paneli sağdaki sekmenin arkasında) → konaklama (kişi) → uçuşlar (kalkış, kişi) → bütçe. Kalkış ve kişi isteğe bağlıdır (varsayılan İstanbul, 1 kişi).
+- **Veri:** mekânlar OpenStreetMap ve Wikidata'dan önceden çekilir ve ayda bir tazelenir; uçuşlar Travelpayouts önbelleği; kur TCMB → Frankfurter → Exchange Rate API; etkinlikler Wikidata; fotoğraflar Commons. Çalışma anında Overpass ya da Wikidata çağrısı yok.
+- **Planlayıcı:** deterministik gün gün plan; alt duraklar (bir yerin içindeki yerler), merkeze uzak yerler ve uzak bölgeler, okunur (Latin ya da romanize) adlar, etkinlik notları, `.ics` ve yazdırma.
+- **Yapay zekâ (isteğe bağlı):** kullanıcının kendi anahtarıyla Anthropic, OpenAI ya da Gemini; plan seçimi, sohbetle düzenleme ve "Web'de ara".
+- **Ölçüm:** Vercel Web Analytics, yalnızca production'da ve yalnızca sayfa yolu.
+- **Faz 1'de arayüzde yok:** vize (veri ve bileşen kodda duruyor, 11–12), otel fiyatı (ücretsiz kaynak yok, 9).
 
 ## Kapsam dışı
 
@@ -53,7 +62,7 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ### Konaklama
 
-9. Faz 1'de ücretsiz bir gerçek zamanlı otel fiyat kaynağı olmadığı için otel kartı semte göre bir fiyat aralığı gösterir. Bu aralık bağlı yapay zekâ ile web'den bulunur. Yapay zekâ yoksa kart yalnızca semt önerisini ve linkleri gösterir.
+9. Faz 1'de ücretsiz bir gerçek zamanlı otel fiyat kaynağı olmadığı için uygulama otel fiyatı göstermez. Yapay zekâ bağlıysa "Web'de ara" semte göre gecelik fiyat aralığı bulur (kaynak linkiyle, "tahmini"); kullanıcı aralığın ortasını bütçeye yazabilir. Yapay zekâ yoksa bölüm yalnızca linkleri gösterir.
 10. "Otelleri gör" butonu Booking ve Google Hotels'te tarih ve kişi sayısı doldurulmuş aramayı açar.
 
 ### Vize
@@ -63,21 +72,25 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ### Bütçe
 
-13. Toplam bütçe TL olarak gösterilir: uçuş (kişi × fiyat) + konaklama (gece × fiyat aralığı) + günlük harcama (gün × kişi × şehir tahmini).
-14. Döviz kurları TCMB'nin günlük kur dosyasından sunucu tarafında çekilir ve günde bir kez önbelleğe alınır. TCMB'ye ulaşılamazsa Frankfurter (ECB) kullanılır.
-15. Her bütçe satırında kaynağı ve "tahmini" etiketi bulunur. Kullanıcı günlük harcama tahminini elle değiştirebilir.
+13. Toplam bütçe TL olarak gösterilir: uçuş (kişi × fiyat) + konaklama (gece × gecelik fiyat) + günlük harcama (gün × kişi × günlük tutar). *Konaklama ve günlük harcama için hazır ya da ortalama değer yok; yalnızca kullanıcının girdiği değer. Girilmeyen satır toplama girmez, toplam "KISMİ TOPLAM" olur (2026-10-17, Berk'in kararı).*
+14. Döviz kurları TCMB'nin günlük kur dosyasından sunucu tarafında çekilir ve yaklaşık 6 saat önbelleğe alınır. TCMB'ye ulaşılamazsa Frankfurter (ECB), o da yoksa Exchange Rate API kullanılır; hiçbiri cevap vermezse TL karşılığı gösterilmez, kur uydurulmaz.
+15. Her bütçe satırında kaynağı ve "tahmini" etiketi bulunur. Konaklama ve günlük harcama tutarlarını kullanıcı girer; değerler URL'de durur.
 
 ### Şehir rehberi
 
-16. Görülecek yerler, restoranlar ve eğlence mekânları OpenStreetMap (Overpass API) verisinden çekilir.
+16. Görülecek yerler, restoranlar ve eğlence mekânları OpenStreetMap (Overpass API) ve Wikidata'dan önceden çekilir (`npm run data:places`, ayda bir otomatik); uygulama çalışırken dış kaynağa gitmez. Önemli yerler ve kokteyl barları Wikidata'dan takviye edilir.
 17. Kategori filtreleri: görülecek yer, müze, manzara noktası, restoran, kafe, kokteyl bar, bar ve pub, gece kulübü. Kullanıcı her birini açıp kapatabilir.
 18. "Mutlaka görülmeli" sıralaması Wikidata'daki Vikipedi dil sayısına göre yapılır.
+18a. **Okunur adlar** (2026-10-27/28): Latin harfli bir ad varsa birincil odur (Wikidata Türkçe → İngilizce etiket → OSM adları); hiçbiri yoksa ad şehrin ülkesinin resmî sistemiyle Latin harflerine çevrilir (Rusça, Sırpça, Bulgarca, Makedonca, Özbekçe, Yunanca, Gürcüce, Korece). Yerel ad küçük yazıyla ikincil kalır. Japonca, Çince, Arapça ve Tayca romanize edilmez.
+18b. **Merkeze uzaklık** (2026-10-27): şehrin turistik merkezine uzaklığı max(veri yarıçapı, 5 km)'den büyük yer "MERKEZE ~6 KM" etiketini taşır (karusel, ayrıntı, plan). 3 km'den uzun yürüyüşte "TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR".
 19. Mekânlar MapLibre ve OpenFreeMap karoları ile ücretsiz bir harita üzerinde gösterilir.
 19a. **Etkinlikler** (2026-10-28, Berk; kaynak yalnızca Wikidata): kullanıcının tarihlerinde şehirde büyük, yıllık bir etkinlik (festival, karnaval, panayır, Noel pazarı, film ya da müzik festivali) varsa "Etkinlik" çipiyle gösterilir; çakışan yoksa çip çıkmaz. Wikidata'da gün hassasiyetinde edisyon tarihi varsa kesin tarih ("14 KAS – 18 KAS"), yoksa serinin ayları "genelde" etiketiyle ("GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA"); ikisi de yoksa etkinlik gösterilmez, tarih tahmin edilmez. Kesin etkinlik masthead'de ("BU TARİHLERDE: …") ve gün gün planda o günlerin başlığında not olarak görünür; plana durak eklenmez. Her kartta kaynak (Wikidata), varsa resmî site ve "Tarihleri resmî kaynaktan doğrula". Yetişkin içerikli etkinlikler (erotik, fetiş, pornografik; türe, konuya ya da ada göre) gösterilmez.
 
 ### Gün gün plan
 
-20. Yapay zekâ bağlı değilse plan deterministik kurulur: mekânlar yakınlığa göre günlere bölünür, her gün en fazla 4 durak ve 1 akşam mekânı içerir.
+20. Yapay zekâ bağlı değilse plan deterministik kurulur: mekânlar önem ve yakınlığa göre günlere bölünür; gündüz uçuş ve açılış saatlerine göre 18:00'e kadar zamanla dolar (en fazla 6 durak), akşam bir mekân. 90 dakikadan uzun boşluk "SERBEST ZAMAN" olarak görünür, uydurma durakla doldurulmaz. *İlk sürümdeki "günde en fazla 4 durak" yalnızca yapay zekâyla istenen "sakin" tempoda kaldı.*
+20a. **Alt durak** (2026-10-23): bir yerin içindeki yerler (Moskova Kremlini'ndeki Çar Çanı) kendi başına durak olmaz; parent'la aynı gün, hemen altında gelir, kendi saati ve yürümesi yoktur, durak sınırına sayılmaz. Parent çıkarılınca onlar da çıkar.
+20b. **Uzak bölgeler** (2026-10-27): birbirine yürüme mesafesindeki uzak yerler bir bölgedir; bir bölgenin mutlaka görülecek yerleri tek güne, bir gün en fazla bir uzak bölgeye gider.
 21. Yapay zekâ bağlıysa plan model tarafından yazılır, ama yalnızca 16. maddede çekilen mekân listesinden seçim yapabilir. Liste dışı mekân üretemez. Çıktı bir JSON şemasıyla doğrulanır.
 22. Kullanıcı planı sohbetle değiştirebilir ("2. günü müzesiz yap", "daha ucuz akşam yemeği").
 
@@ -102,9 +115,14 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ## Açık sorular
 
+Son gözden geçirme: 2026-10-29. Kapananlar üstü çizili, cevabıyla duruyor.
+
 | Soru | Sahibi | Ne zamana |
 | --- | --- | --- |
-| ~~Arayüzde görünen Türkçe marka adı ne olacak? (repo adı: vacation-assistant)~~ **Kapandı:** Vacationist, 2026-10-22, Berk. Alt başlık: "Kısa şehir kaçamakları için planlayıcı". Repo, paket, Vercel proje adı ve URL'ler değişmez. | Berk | 23 Ekim 2026 |
-| Travelpayouts partner onayı Türkiye çıkışlı rotalarda yeterli veri veriyor mu? | Berk (hesap açar) + Claude Code (veriyi test eder) | 23 Ekim 2026 |
-| Günlük harcama tahmini için hangi şehir listesiyle başlıyoruz (ilk 30 şehir)? | Berk | 30 Ekim 2026 |
-| Gemini ücretsiz katmanındaki web arama limiti tek kullanıcı için yeterli mi? **Dokümana göre (21 Ekim 2026):** ücretsiz katmanda Google Search grounding yalnızca Gemini 2.5 Flash ve 2.5 Flash-Lite'ta var, ikisine ortak günde 500 istek; Gemini 3 modellerinde ücretsiz katmanda yok (ücretli katmanda ayda 5.000 ücretsiz, sonra 1.000 istekte 14 $). Kaynak: [ai.google.dev/gemini-api/docs/pricing](https://ai.google.dev/gemini-api/docs/pricing), sayfa 19 Ekim 2026'da güncellenmiş. **Güncelleme (checked 2026-10-21, gerçek test + dokümanlar):** yeni hesaplarda ücretsiz Gemini web araması **yok**. Google 2.5 modellerine erişimi yalnızca bunları daha önce kullanmış hesaplara açıyor ("we are limiting access to the 2.5 models to users who have actively used them in the past", [ai.google.dev/gemini-api/docs/deprecations](https://ai.google.dev/gemini-api/docs/deprecations)); yeni bir anahtarla `gemini-2.5-flash` HTTP 404 döndü. Pricing sayfasında Gemini 3.x modellerinin hepsinde (3.6/3.8 Flash, 3.5/3.1 Flash-Lite) ücretsiz katmanın "Grounding with Google Search" hücresi "Not available"; gerçek testte Gemini 3.6 Flash araması ayrıntısız 429 verdi. Sonuç: 500/gün yalnızca 2.5'e erişimi süren eski hesaplar için geçerli; yeni hesaplarda Gemini ile web araması ücretli katman ister (ayda 5.000 arama ücretsiz), ya da Anthropic/OpenAI bağlanır. Gemini aramasının başarılı yolu gerçek bir cevapla henüz doğrulanmadı (BACKLOG). | Claude Code (dener) | 30 Ekim 2026 |
+| ~~Arayüzde görünen Türkçe marka adı ne olacak? (repo adı: vacation-assistant)~~ **Kapandı:** Vacationist, 2026-10-22, Berk. Alt başlık: "Kısa şehir kaçamakları için planlayıcı". Repo ve paket adı değişmedi; canlı adres 2026-10-23'ten beri <https://vacationist-app.vercel.app>. | Berk | Kapandı |
+| Travelpayouts partner onayı Türkiye çıkışlı rotalarda yeterli veri veriyor mu? **Kısmen (2026-10-17 denemesi):** İstanbul → Barselona'da bol (IST 19, SAW 15+), Ankara → Amsterdam/Londra'da seçilen tarihte hiç yok. Tam tarihte sonuç yoksa ±3 gün yedeği "FARKLI TARİH" etiketiyle gösteriliyor; sonuç hiç yoksa Aviasales ve Google Flights linkleri. Canlı sitede hangi rotalarda boş kaldığı henüz ölçülmedi. | Berk + Claude Code | Açık |
+| ~~Günlük harcama tahmini için hangi şehir listesiyle başlıyoruz (ilk 30 şehir)?~~ **Kapandı (2026-10-17, Berk):** hazır ya da ortalama günlük harcama yok; yalnızca kullanıcının girdiği değer (13, 15). Uydurma veri kuralıyla çelişen bir şehir tahmini tablosu tutulmuyor. | Berk | Kapandı |
+| ~~Gemini ücretsiz katmanındaki web arama limiti tek kullanıcı için yeterli mi?~~ **Büyük ölçüde kapandı (2026-10-21):** **Dokümana göre (21 Ekim 2026):** ücretsiz katmanda Google Search grounding yalnızca Gemini 2.5 Flash ve 2.5 Flash-Lite'ta var, ikisine ortak günde 500 istek; Gemini 3 modellerinde ücretsiz katmanda yok (ücretli katmanda ayda 5.000 ücretsiz, sonra 1.000 istekte 14 $). Kaynak: [ai.google.dev/gemini-api/docs/pricing](https://ai.google.dev/gemini-api/docs/pricing), sayfa 19 Ekim 2026'da güncellenmiş. **Güncelleme (checked 2026-10-21, gerçek test + dokümanlar):** yeni hesaplarda ücretsiz Gemini web araması **yok**. Google 2.5 modellerine erişimi yalnızca bunları daha önce kullanmış hesaplara açıyor ("we are limiting access to the 2.5 models to users who have actively used them in the past", [ai.google.dev/gemini-api/docs/deprecations](https://ai.google.dev/gemini-api/docs/deprecations)); yeni bir anahtarla `gemini-2.5-flash` HTTP 404 döndü. Pricing sayfasında Gemini 3.x modellerinin hepsinde (3.6/3.8 Flash, 3.5/3.1 Flash-Lite) ücretsiz katmanın "Grounding with Google Search" hücresi "Not available"; gerçek testte Gemini 3.6 Flash araması ayrıntısız 429 verdi. Sonuç: 500/gün yalnızca 2.5'e erişimi süren eski hesaplar için geçerli; yeni hesaplarda Gemini ile web araması ücretli katman ister (ayda 5.000 arama ücretsiz), ya da Anthropic/OpenAI bağlanır. Gemini aramasının başarılı yolu gerçek bir cevapla henüz doğrulanmadı (BACKLOG). | Claude Code (dener) | Açık: başarılı yol (BACKLOG 1) |
+| Eski adresten yönlendirme ([DEPLOY.md](DEPLOY.md#1-vercel-projesi)) 307 (geçici); Vercel'de kalıcı (308) yapılsın mı? | Berk (Vercel ayarı) | Açık |
+| Moskova Kremlini'nin Wikidata Türkçe etiketi "Kremlini"; Wikidata'da düzeltilsin mi? Uygulama `rename` istisnasıyla "Moskova Kremlini" gösteriyor; etiket düzelince istisna kaldırılır. | Berk | Açık |
+| Venedik Karnavalı, Edinburgh Fringe gibi büyük etkinliklerin Wikidata'da tarihi ya da ayı yok, bu yüzden gösterilmiyorlar. Wikidata'ya eklensin mi? (BACKLOG 2) | Berk | Açık |

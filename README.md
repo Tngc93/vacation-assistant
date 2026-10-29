@@ -1,26 +1,31 @@
 # Vacationist
 
-**Kısa şehir kaçamakları için planlayıcı.** Türkiye'den (İstanbul ya da Ankara) yurt dışına birkaç günlük şehir tatili planlayanlar için: şehri ve günleri seç; görülecek yerler, gün gün plan, konaklama linkleri, en ucuz uçuş ve TL cinsinden bütçe tek sayfada.
+Türkiye'den (İstanbul ya da Ankara) kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günleri seç; 68 şehirde görülecek yerler, gün gün plan, en ucuz uçuş ve TL bütçe tek sayfada gelsin, yapay zekâ isteğe bağlı ve kendi anahtarınla.
 
 **Canlı:** <https://vacationist-app.vercel.app>
 
-Açık kaynak ve tamamen ücretsiz servislerle çalışır. Repo ve paket adı `vacation-assistant` olarak kalır.
+*Kısa şehir kaçamakları için planlayıcı.* Açık kaynak ve tamamen ücretsiz servislerle çalışır. Repo ve paket adı `vacation-assistant` olarak kalır.
 
 | Ana sayfa | Plan |
 | --- | --- |
-| ![Ana sayfa: "Nereye gidiyorsun?", varış şehri, tarihler ve Keşfet çipleri](docs/screenshots/home.png) | ![Plan sayfasının ilk ekranı: şehir adı, kategori çipleri, görülecek yerler karuseli, şehir fotoğrafı ve harita](docs/screenshots/plan-hero.png) |
-| **Gün gün plan** | **Uçuşlar** |
-| ![Gün gün plan: büyük gün numaraları, saatli duraklar ve gün haritası](docs/screenshots/day-by-day.png) | ![Uçuşlar: kalkış ve kişi seçimi, havalimanı başına en ucuz bilet](docs/screenshots/flights.png) |
+| ![Ana sayfa: "Nereye gidiyorsun?", varış şehri, gidiş ve dönüş tarihleri, "Planla" ve Keşfet çipleri](docs/screenshots/home.webp) | ![Plan sayfasının ilk ekranı: Barselona, tarih ve kur satırı, kategori çipleri, fotoğraflı görülecek yerler karuseli, şehir fotoğrafı ve harita](docs/screenshots/plan-hero.webp) |
+| **Gün gün plan ve yapay zekâ paneli** | **Alt duraklar: Moskova Kremlini** |
+| ![Gün gün plan solda, sağdan açılmış yapay zekâ paneli: bağlı sağlayıcı, "Planı sohbetle değiştir" ve son değişikliğin özeti, "Geri al"](docs/screenshots/plan-ai.webp) | ![Moskova'da bir gün: Kızıl Meydan, ardından Moskova Kremlini ve altında içindeki yerler (Çar Topu, Çar Çanı, katedraller), her biri "MOSKOVA KREMLİNİ İÇİNDE"; yanda günün haritası](docs/screenshots/sub-stops.webp) |
+| **Konaklama ve uçuşlar** | **Telefonda plan** |
+| ![Konaklama: kişi seçici, Booking ve Google Hotels linkleri; Uçuşlar: kalkış (İstanbul ya da Ankara), kişi, havalimanı başına en ucuz bilet](docs/screenshots/stays-flights.webp) | <img src="docs/screenshots/mobile-plan.webp" width="300" alt="Telefonda plan sayfası: Barselona, bilgi satırı, şehir fotoğrafı, tek satırda kayan kategori çipleri ve karuselin ilk kartı"> |
 
-<sub>Ekran görüntüleri yerel "örnek veri" moduyla alındı (`VA_FLIGHTS_FIXTURES=1`); uçuş fiyatları gerçek değildir.</sub>
+<sub>Ekran görüntüleri 2026-10-29'da yerel üretim build'inden, açık temada alındı (masaüstü 1440 px, telefon 390 px). Uçuşlar örnek veriyle (`VA_FLIGHTS_FIXTURES=1`; fiyatlar gerçek değildir), yapay zekâ paneli yerel bir sahte sağlayıcıyla; gerçek anahtar kullanılmadı.</sub>
 
 ## Ne yapar
 
-- **Nereye ve ne zaman:** ana sayfa yalnızca varış şehrini ve tarihleri sorar; Avrupa'dan Körfez'e, Kuzey Afrika'dan Uzak Doğu'ya 68 şehir.
-- **Görülecek yerler:** OpenStreetMap ve Wikidata'dan önceden çekilmiş mekânlar; Vikipedi'de kaç dilde olduğuna göre "mutlaka gör" sırası, kategoriler (görülecek yer, müze, manzara, restoran, kafe, bar…), harita ve Commons fotoğrafları.
-- **Gün gün plan:** deterministik; uçuş saatlerine, açılış saatlerine ve yürüme mesafesine göre. Durak çıkarılabilir, plan `.ics` olarak takvime eklenir.
-- **Konaklama:** Booking ve Google Hotels'te tarihleri dolu arama linkleri (otel fiyatı uydurulmaz).
-- **Uçuşlar:** IST, SAW ve ESB'den en ucuz biletler (Travelpayouts önbelleği, "tahmini" etiketiyle).
+- **Nereye ve ne zaman:** ana sayfa yalnızca varış şehrini ve tarihleri sorar ("Nereye gidiyorsun?"); Avrupa'dan Körfez'e, Kuzey Afrika'dan Uzak Doğu'ya 68 şehir. Kalkış (İstanbul: IST + SAW, Ankara: ESB) ve kişi sayısı plan sayfasında, Konaklama ve Uçuşlar bölümlerinde seçilir.
+- **Görülecek yerler:** OpenStreetMap ve Wikidata'dan önceden çekilmiş mekânlar; Vikipedi'de kaç dilde olduğuna göre "mutlaka gör" sırası, Commons fotoğraflı karusel, harita ve kategoriler (görülecek yer, müze, manzara, restoran, kafe, kokteyl bar, bar ve pub, gece kulübü). Kokteyl barları Wikidata'dan takviye edilir.
+- **Okunur adlar:** Latin harfli bir ad varsa o gösterilir ("Tokyo Kulesi · 東京タワー"); yoksa ad ülkenin resmî sistemiyle Latin harflerine çevrilir (Rusça, Sırpça, Bulgarca, Makedonca, Özbekçe, Yunanca, Gürcüce, Korece), yerel ad küçük yazıyla kalır.
+- **Merkeze uzaklık:** şehrin turistik merkezinden uzak yerler "MERKEZE ~6 KM" etiketini taşır; 3 km'den uzun yürüyüşte "TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR".
+- **Etkinlikler:** gezinin tarihlerinde şehirde büyük, yıllık bir etkinlik (festival, karnaval, Noel pazarı, film ya da müzik festivali) varsa "Etkinlik" çipiyle, tarihiyle ve kaynağıyla (Wikidata) gösterilir; kesin tarihli olanlar şehir başlığında ve gün gün planda not olarak da görünür. Tarih bilinmiyorsa etkinlik gösterilmez.
+- **Gün gün plan:** deterministik; uçuş saatlerine, açılış saatlerine ve yürüme mesafesine göre. Bir yerin içindeki yerler (Moskova Kremlini'ndeki Çar Çanı, Vatikan Müzeleri'ndeki Stanze di Raffaello) alt durak olarak onunla gelir; merkeze uzak bir bölge tek güne toplanır. Durak çıkarılabilir, plan `.ics` olarak takvime eklenir ve yazdırılabilir.
+- **Konaklama:** Booking ve Google Hotels'te tarihleri ve kişi sayısı dolu arama linkleri (otel fiyatı uydurulmaz).
+- **Uçuşlar:** IST, SAW ve ESB'den havalimanı başına en ucuz bilet, altında tam liste ve aktarmasız filtresi (Travelpayouts önbelleği, "tahmini" etiketiyle).
 - **Bütçe:** uçuş, konaklama ve günlük harcama TL'de, kaynak ve kurla; değerler URL'de, paylaşılan link aynı planı açar.
 
 ### Yapay zekâ olmadan tam çalışır
@@ -29,7 +34,7 @@ Plan, sıralama ve bütçe yapay zekâya ihtiyaç duymaz; aynı girdi her zaman 
 
 ### İstersen kendi anahtarınla yapay zekâ (BYOK)
 
-Anthropic, OpenAI ya da Google Gemini anahtarını bağlayıp planı sohbetle değiştirebilirsin ("ikinci günü daha sakin yap", "müzeleri azalt"). Anahtar **yalnızca tarayıcında** kalır (varsayılan sekme oturumu, istersen "Bu cihazda hatırla"); çağrılar tarayıcından doğrudan sağlayıcıya gider, sunucumuza hiç uğramaz, URL'ye yazılmaz, loglanmaz. Model yalnızca çekilmiş mekân listesinden seçer; saat, açılış ve yürüme kurallarını uygulama hesaplar.
+Anthropic, OpenAI ya da Google Gemini anahtarını bağlayıp planı sohbetle değiştirebilirsin ("ikinci günü daha sakin yap", "müzeleri azalt"). Panel gün gün planın yanındaki "Yapay zekâ ile planla" sekmesinden açılır: masaüstünde sağda, günler solda görünür kalır; telefonda alttan tam ekran. Anahtar **yalnızca tarayıcında** kalır (varsayılan sekme oturumu, istersen "Bu cihazda hatırla"); çağrılar tarayıcından doğrudan sağlayıcıya gider, sunucumuza hiç uğramaz, URL'ye yazılmaz, loglanmaz. Model yalnızca çekilmiş mekân listesinden seçer; saat, açılış ve yürüme kurallarını uygulama hesaplar.
 
 **Gemini ücretsiz katman notu:** Gemini'nin ücretsiz katmanı plan sohbeti için yeterli. "Web'de ara" (uçuş fiyatı ve semte göre otel aralığı) ise ücretsiz katmanda yalnızca Gemini 2.5 modellerinde vardı ve Google bu modelleri yeni hesaplara kapattı; Gemini 3'te ücretsiz katmanda Google Search yok (2026-10-21'de kontrol edildi). Anthropic ve OpenAI'da web araması sağlayıcının kendi ücretiyle çalışır.
 
@@ -49,16 +54,17 @@ Her fiyat, kur ve tahmin kaynağıyla ve "tahmini" etiketiyle gösterilir. Bir k
 | Uçuş fiyatları | [Travelpayouts](https://www.travelpayouts.com) — [Aviasales Data API](https://support.travelpayouts.com/hc/en-us/articles/203956163) (`v3/prices_for_dates`) | Partner programı; token yalnızca sunucuda (`TRAVELPAYOUTS_TOKEN`). **Fiyatlar önbellekten, tahminidir:** Aviasales kullanıcılarının son 48 saatteki aramalarında bulunmuş, bir yetişkin için gidiş-dönüş fiyatlarıdır; satın alma anındaki fiyat farklı olabilir. Her bilette "ÖNBELLEKTEN · … · TAHMİNİ" yazar ve "Güncel fiyatı gör" Aviasales'te aynı aramayı Travelpayouts partner linkiyle (`tp.media`, marker + proje kimliği) açar. Google Flights'a yalnızca link verilir. |
 | Konaklama | [Booking](https://www.booking.com) ve [Google Hotels](https://www.google.com/travel/hotels) | Yalnızca link (API yok): şehir, giriş-çıkış tarihi ve kişi sayısı dolu arama. Google Hotels kişi sayısını linkten almıyor. Uygulama otel fiyatı göstermez; ücretsiz bir otel fiyat kaynağı yok. |
 | Bütçe | Uçuş: Travelpayouts önbelleği · konaklama ve günlük harcama: **kullanıcının girdiği değer** · kur: yukarıdaki kur zinciri | Konaklama ve günlük harcama için hazır ya da "ortalama" değer yoktur; girilmeyen satır toplama eklenmez ve toplam "KISMİ TOPLAM" olarak işaretlenir. Değerler URL'de durur (`&flight=…&stay=…&daily=…&cur=…`), paylaşılan link aynı bütçeyi açar. |
-| Gün gün plan | Önceden çekilmiş mekân verisi (OpenStreetMap, Vikipedi dil sayısı) ve bütçedeki uçuş | Yapay zekâ bağlı değilse tamamen deterministik: aynı girdi her zaman aynı planı verir. Gündüz 18:00'e kadar zamana göre dolar (en fazla 6 durak), akşam mekânı 19:30'da; akşama 90 dakikadan uzun boşluk "SERBEST ZAMAN" olarak görünür, uydurma durakla doldurulmaz. Ziyaret süreleri, yürüme tahmini (kuş uçuşu × 1,3 ÷ 4,5 km/s) ve gün saatleri `src/lib/itinerary/config.ts`'te; hepsi "tahmini" etiketli. Açılış saati bilinmeyen durakta "SAATLERİ DOĞRULA" yazar. Çıkarılan duraklar URL'de (`&skip=…`); plan `.ics` olarak indirilebilir (istemcide üretilir). |
+| Gün gün plan | Önceden çekilmiş mekân verisi (OpenStreetMap, Wikidata, Vikipedi dil sayısı) ve bütçedeki uçuş | Yapay zekâ bağlı değilse tamamen deterministik: aynı girdi her zaman aynı planı verir. Gündüz 18:00'e kadar zamana göre dolar (en fazla 6 durak; bir yerin içindeki yerler alt durak olarak sayılmaz), akşam mekânı 19:30'da; akşama 90 dakikadan uzun boşluk "SERBEST ZAMAN" olarak görünür, uydurma durakla doldurulmaz. Ziyaret süreleri, yürüme tahmini (kuş uçuşu × 1,3 ÷ 4,5 km/s) ve gün saatleri `src/lib/itinerary/config.ts`'te; hepsi "tahmini" etiketli. Açılış saati bilinmeyen durakta "SAATLERİ DOĞRULA" yazar. Çıkarılan duraklar URL'de (`&skip=…`); plan `.ics` olarak indirilebilir (istemcide üretilir). |
 | Yapay zekâ (isteğe bağlı) | Kullanıcının kendi anahtarıyla [Anthropic](https://platform.claude.com/settings/keys), [OpenAI](https://platform.openai.com/api-keys) ya da [Google Gemini](https://aistudio.google.com/app/apikey) (ücretsiz katmanı var) | Anahtar yalnızca tarayıcıda durur (varsayılan sekme oturumu, "Bu cihazda hatırla" ile cihaz); çağrılar tarayıcıdan doğrudan sağlayıcıya gider, sunucumuza hiç uğramaz; kullanım kullanıcının hesabından ücretlendirilir. Model yalnızca çekilmiş mekân listesinden kimlikle seçer; cevap zod ile doğrulanır, liste dışı kimlikte bir kez daha sorulur, yine olmazsa deterministik plan kalır. Saat, açılış ve yürüme kurallarını uygulama hesaplar. Sohbet düzenlemeleri yapılandırılmış komutlardır (`&ai=…&edit=…` URL'de; anahtar asla URL'de değil). **Web'de ara:** modelin kendi web arama aracıyla uçuş fiyatı ve semte göre otel aralığı; Anthropic ve OpenAI'da yalnızca sağlayıcının kaynak listesindeki https sayfalara linklenen sonuçlar gösterilir, TL karşılığı tahminidir, Travelpayouts'tan ayrı durur; Gemini'nin Google Search cevabı, kullanım koşulları gereği, kaynakları ve arama önerileriyle değiştirilmeden gösterilir (fiyat okunmaz, bütçeye kullanıcı yazar). Arama Anthropic ve OpenAI'da ayrıca ücretlendirilir; Gemini'nin ücretsiz katmanında arama yalnızca 2.5 modellerinde var ve Google bunları yeni hesaplara kapattı (ücretli katmanda ayda 5.000 arama ücretsiz). |
 | Şehirler ve koordinatlar | [Wikidata](https://www.wikidata.org) | CC0. |
 | Mekânlar (görülecek yer, müze, restoran, bar…) | [OpenStreetMap](https://www.openstreetmap.org/copyright), [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) üzerinden | **ODbL 1.0.** `src/data/places/` OSM'den türetilmiş bir veritabanıdır ([lisans notu](src/data/places/README.md)); "© OpenStreetMap katkıcıları" atfı listede ve haritada. Veri `npm run data:places` ile önceden çekilir ve ayda bir tazelenir; uygulama çalışırken Overpass'a istek atmaz. |
 | "Vikipedi'de N dilde" sıralaması | [Wikidata](https://www.wikidata.org) sitelinks (`wbgetentities`, 50'şerlik toplu istek) | CC0; tanımlayıcı User-Agent ile. |
-| Önemli yerler ve türleri | [Wikidata Query Service](https://query.wikidata.org) (şehir başına birkaç küçük SPARQL sorgusu, yalnızca veri script'inde) | CC0; tanımlayıcı User-Agent ile, istekler sırayla ve geri çekilmeyle. |
-| Şehir fotoğrafı | [Wikimedia Commons](https://commons.wikimedia.org) (Wikidata P18) | Yalnızca CC0, kamu malı, CC BY ve CC BY-SA. Fotoğrafçı, lisans linki ve "renkleri düzenlendi" notu her fotoğrafın altında. Meta veri önceden çekilir; görsel Commons CDN'inden gelir. |
+| Önemli yerler, türleri, "içinde" bağları, kokteyl barları ve adlar | [Wikidata Query Service](https://query.wikidata.org) (şehir başına birkaç küçük SPARQL sorgusu, yalnızca veri script'inde) | CC0; tanımlayıcı User-Agent ile, istekler sırayla ve geri çekilmeyle. Latin harfli ad yoksa romanizasyon kod içindeki tablolarla yapılır (ICAO Doc 9303, ELOT 743, Korece Revised Romanization…). |
+| Etkinlikler | [Wikidata](https://www.wikidata.org) (festival, karnaval, panayır, Noel pazarı, film ve müzik festivali serileri; `npm run data:events`, ayda bir) | CC0. Tarih yalnızca Wikidata'dan: edisyonun gün hassasiyetinde tarihi ya da serinin ayları ("GENELDE"); ikisi de yoksa etkinlik gösterilmez. Her kartta "Tarihleri resmî kaynaktan doğrula". |
+| Şehir ve mekân fotoğrafları | [Wikimedia Commons](https://commons.wikimedia.org) (Wikidata P18) | Yalnızca CC0, kamu malı, CC BY ve CC BY-SA. Fotoğrafçı, lisans linki ve "renkleri düzenlendi" notu şehir fotoğrafının altında, mekân fotoğraflarında ayrıntı panelinde. Meta veri önceden çekilir; görsel Commons CDN'inden gelir. |
 | Harita karoları | [OpenFreeMap](https://openfreemap.org) (OpenMapTiles şeması), [MapLibre GL JS](https://maplibre.org) ile | Ücretsiz, anahtarsız; "© OpenStreetMap katkıcıları · OpenFreeMap" atfı haritada. |
 
-Her fiyat, kur ve vize bilgisi kaynağıyla ve tarihiyle gösterilir; bir kaynak cevap vermezse uygulama bunu açıkça söyler, tahmini ya da sabit değer uydurmaz. Sayfa sonunda da kaynaklar ve lisansları listelenir.
+Her fiyat, kur ve etkinlik tarihi kaynağıyla gösterilir; bir kaynak cevap vermezse uygulama bunu açıkça söyler, tahmini ya da sabit değer uydurmaz. Sayfa sonunda da kaynaklar ve lisansları listelenir.
 
 ## Ölçüm
 
@@ -102,6 +108,7 @@ Sık kullanılan komutlar (tam liste ve ayrıntılar [AGENTS.md](AGENTS.md)'de):
 | `npm run check:bundle` | Sunucuya özel veri ve token istemci paketine sızmamış mı |
 | `npm run test:e2e` | Playwright uçtan uca testleri, axe erişilebilirlik ve klavye turu dahil (önce `npm run build`) |
 | `npm run data:places` | Mekân verisini yeniden çeker (ağ ister, ~3 saat) |
+| `npm run data:events` | Etkinlikleri Wikidata'dan yeniden çeker (ağ ister, şehir başına ~30 sn) |
 
 Vercel'e kurulum, ortam değişkenleri, Travelpayouts hesabı ve aylık veri yenileme: [docs/DEPLOY.md](docs/DEPLOY.md).
 
@@ -123,7 +130,7 @@ Hata bildirimi ve PR'lar memnuniyetle karşılanır.
 - Kurallar: yalnızca ücretsiz servisler, kazıma yok, uydurma veri yok; arayüz metinleri Türkçe; ham renk değeri yalnızca `src/app/globals.css`'te.
 - Gizli anahtarlar asla commit'lenmez.
 
-Belgeler: [PRD](docs/PRD.md) · [DESIGN](docs/DESIGN.md) · [PLAN](docs/PLAN.md) · [DEPLOY](docs/DEPLOY.md) · [AGENTS](AGENTS.md)
+Belgeler: [PRD](docs/PRD.md) · [DESIGN](docs/DESIGN.md) · [PLAN](docs/PLAN.md) · [DEPLOY](docs/DEPLOY.md) · [BACKLOG](docs/BACKLOG.md) · [AGENTS](AGENTS.md)
 
 ## Lisans
 
@@ -133,11 +140,13 @@ Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](
 
 ## English summary
 
-**Vacationist** is an open source planner for short city breaks from Turkey (Istanbul or Ankara). Pick a city and dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from IST, SAW or ESB and a budget in Turkish lira on one page. Live: <https://vacationist-app.vercel.app>
+**Vacationist** is a free, open source planner for short city breaks from Turkey (Istanbul or Ankara). Pick one of 68 cities and your dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from IST, SAW or ESB and a budget in Turkish lira on one page. Live: <https://vacationist-app.vercel.app>
 
-- Works fully without AI: the plan is deterministic, built from pre-fetched OpenStreetMap and Wikidata data.
-- Optional bring-your-own-key AI (Anthropic, OpenAI, Gemini) to edit the plan by chat; the key stays in your browser and calls go straight to the provider. Gemini's free tier covers chat, but free web search is no longer available to new Gemini accounts.
-- Honest data: every price and estimate shows its source and an "estimated" label; nothing is made up and nothing is scraped.
+- Works fully without AI: the plan is deterministic, built from pre-fetched OpenStreetMap and Wikidata data. Places inside another place (the Tsar Bell in the Moscow Kremlin) come with it as sub-stops; far-off places carry a "~6 km from the centre" caption.
+- Readable names: a Latin-script name is preferred; otherwise the name is romanized with the country's official system, with the local name kept small.
+- Big yearly events (festivals, carnivals, Christmas markets) in your dates, from Wikidata only; no guessed dates.
+- Optional bring-your-own-key AI (Anthropic, OpenAI, Gemini) in a side panel to edit the plan by chat; the key stays in your browser and calls go straight to the provider. Gemini's free tier covers chat, but free web search is no longer available to new Gemini accounts.
+- Honest data: every price and estimate shows its source and an "estimated" label; nothing is made up and nothing is scraped. Privacy-friendly analytics count page paths only.
 - Runs on free services only (Vercel Hobby, Travelpayouts, TCMB/Frankfurter/open.er-api, OpenFreeMap).
 - Run locally with Node 22: `npm ci && npm run dev`; `VA_AI_MOCK=1` and `VA_FLIGHTS_FIXTURES=1` give keyless demos. Deploy guide: [docs/DEPLOY.md](docs/DEPLOY.md).
 - Code under MIT; place data under ODbL 1.0. The interface is in Turkish.

@@ -38,7 +38,11 @@ describe("map recolouring", () => {
     expect(paint("boundary_2")).toEqual({ "line-color": "MUTED" });
     expect(paint("label_city")).toEqual({ "text-color": "MUTED", "text-halo-color": "PAPER" });
     expect(paint("water_name_point_label")?.["text-color"]).toBe("SEA");
-    expect(paint("highway-shield-non-us")).toEqual({});
+  });
+
+  it("drops the road-number shields", () => {
+    expect(style.layers.map((l) => l.id)).not.toContain("highway-shield-non-us");
+    expect(style.layers).toHaveLength(layers.length - 1);
   });
 
   it("does not mutate the original style", () => {
