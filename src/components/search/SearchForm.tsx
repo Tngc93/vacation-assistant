@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type FormEvent } from "react";
 import { Button, Chip } from "@/components/ui";
 import { findDestination, DISCOVER_CITY_CODES } from "@/data/destinations";
-import { DEFAULT_ORIGIN } from "@/data/origins";
+import { DEFAULT_ORIGIN, readRememberedOrigin } from "@/data/origins";
 import { todayInIstanbul } from "@/lib/search/dates";
 import {
   DEFAULT_PASSENGERS,
@@ -69,7 +69,9 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const draft: SearchDraft = {
-      from: initial?.from ?? DEFAULT_ORIGIN,
+      // The link's origin, else the one this browser remembers (the plan's "Kalkış"), else İstanbul. Choosing
+      // İstanbul there forgets the remembered one, so a default in the link never hides a real choice.
+      from: initial?.from && initial.from !== DEFAULT_ORIGIN ? initial.from : (readRememberedOrigin()?.code ?? DEFAULT_ORIGIN),
       pax: initial?.pax ?? DEFAULT_PASSENGERS,
       to,
       depart: dates.depart,

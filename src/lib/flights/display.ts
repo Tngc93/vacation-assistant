@@ -1,7 +1,7 @@
 import { formatDay } from "@/lib/format";
 import { isoToDate } from "@/lib/search/dates";
 
-/** Turkish names of the phase-1 origin airports. */
+/** Short Turkish names of the airports most trips leave from; others show the name in the origins data. */
 export const AIRPORT_NAMES: Record<string, string> = {
   IST: "İstanbul Havalimanı",
   SAW: "Sabiha Gökçen",

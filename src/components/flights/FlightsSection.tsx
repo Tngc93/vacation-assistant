@@ -2,7 +2,6 @@ import { ArrowUpRight } from "lucide-react";
 import { Caption, SkeletonTicket } from "@/components/ui";
 import { airlineName } from "@/data/airlines";
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
 import { aiDemoEnabled } from "@/lib/ai/demo";
 import type { WebFlightChoice } from "@/lib/budget/params";
 import { loadRateTable } from "@/lib/rates/table";
@@ -18,7 +17,8 @@ import { FlightsLinks } from "./FlightsLinks";
 import { AddToBudgetButton } from "./AddToBudgetButton";
 import { FlightTicketCard, type CheapestMark } from "./FlightTicketCard";
 import { OriginControl, PeopleControl } from "@/components/plan/TripControls";
-import type { OriginCode } from "@/data/origins";
+import { type OriginCode, toOriginOption } from "@/data/origins";
+import { resolveOrigin } from "@/lib/origins/data";
 import { FlightsPanel } from "./FlightsPanel";
 import { WebFlightSearch } from "./WebFlightSearch";
 
@@ -42,10 +42,11 @@ type Props = {
  */
 export async function FlightsSection({ from, to, depart, return: ret, pax, direct, flight, webFlight }: Props) {
   const destination = findDestination(to)!;
+  const origin = resolveOrigin(from);
   const [result, rates] = await Promise.all([loadFlights(from, to, depart, ret, pax, direct), loadRateTable(destination.currency)]);
   const choice = chooseFlight(result, flight);
   const query = {
-    fromAirports: findOrigin(from)?.airports ?? [from],
+    fromAirports: origin.airports.map((a) => a.code),
     toCity: destination.nameEn,
     toAirports: destination.airports,
     depart,
@@ -57,7 +58,7 @@ export async function FlightsSection({ from, to, depart, return: ret, pax, direc
     <FlightsPanel
       controls={
         <>
-          <OriginControl value={from} />
+          <OriginControl value={toOriginOption(origin)} />
           <PeopleControl value={pax} />
         </>
       }
@@ -72,7 +73,9 @@ export async function FlightsSection({ from, to, depart, return: ret, pax, direc
       all={
         <>
           <FlightsView result={result} budgetRef={budgetRef} />
-          <WebFlightSearch query={query} rates={rates} demo={aiDemoEnabled()} inBudget={webFlight} />
+          {result.status === "unavailable" && result.reason === "same-city" ? null : (
+            <WebFlightSearch query={query} rates={rates} demo={aiDemoEnabled()} inBudget={webFlight} />
+          )}
         </>
       }
     />
@@ -85,7 +88,7 @@ export function CheapestByAirport({ result, budgetRef }: { result: FlightsResult
     return (
       <div>
         <p className="text-body text-ink-muted">{FLIGHTS_ERROR_MESSAGES[result.reason]}</p>
-        <FlightsLinks links={result.links} className="mt-4" />
+        {result.reason === "same-city" ? null : <FlightsLinks links={result.links} className="mt-4" />}
       </div>
     );
   }
@@ -97,7 +100,7 @@ export function CheapestByAirport({ result, budgetRef }: { result: FlightsResult
           ÖRNEK VERİ · GELİŞTİRME FIXTURE&apos;I · GERÇEK FİYAT DEĞİL
         </Caption>
       ) : null}
-      {rows.length === 0 ? <p className="text-body text-ink-muted">Bu tarihler ve ±3 gün için önbellekte fiyat yok.</p> : null}
+      {rows.length === 0 ? <NoCachedFlights links={result.links} /> : null}
       <ul aria-label="Havalimanı başına en ucuz bilet" className="grid gap-4 md:grid-cols-2">
         {rows.map(({ group, ticket }) => {
           const cheapest = ticket.id === result.cheapestId;
@@ -108,7 +111,7 @@ export function CheapestByAirport({ result, budgetRef }: { result: FlightsResult
             >
               <div className="min-w-0">
                 <Caption as="p">
-                  {group.airport} · {AIRPORT_NAMES[group.airport] ?? group.airport}
+                  {group.airport} · {airportName(group)}
                   {ticket.differentDates ? " · FARKLI TARİH" : ""}
                 </Caption>
                 <p className="mt-1 text-body">
@@ -137,6 +140,34 @@ export function CheapestByAirport({ result, budgetRef }: { result: FlightsResult
         })}
       </ul>
       <Caption as="p">{SOURCE_LINE}</Caption>
+    </div>
+  );
+}
+
+/** The airport's short Turkish name when we have one ("Sabiha Gökçen"), else the name in the origins data. */
+const airportName = (group: AirportGroup) => AIRPORT_NAMES[group.airport] ?? group.name;
+
+/**
+ * Nothing cached for any airport on these dates or ±3 days: an honest empty state, and the same search on
+ * Aviasales and Google Flights, filled in with this origin.
+ */
+function NoCachedFlights({ links }: { links: FlightsResult["links"] }) {
+  return (
+    <div className="rounded-md border border-dashed border-rule px-5 py-5 md:px-6">
+      <p className="text-body">Bu tarihler ve ±3 gün için önbellekte uçuş yok.</p>
+      <p className="mt-1 text-body text-ink-muted">
+        Önbellek yalnızca son 48 saatte aranan biletleri tutar; bu rotada uçuş olmadığı anlamına gelmez.
+      </p>
+      <p className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-body">
+        <a href={links.aviasales} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">
+          Güncel fiyatı gör
+          <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.5} />
+        </a>
+        <a href={links.googleFlights} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">
+          Google Flights&apos;ta aç
+          <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.5} />
+        </a>
+      </p>
     </div>
   );
 }
@@ -186,8 +217,12 @@ export function FlightsView({ result, budgetRef = null }: { result: FlightsResul
     return (
       <div className="rounded-md border border-dashed border-rule px-5 py-6 md:px-8">
         <p className="max-w-2xl text-body">{FLIGHTS_ERROR_MESSAGES[result.reason]}</p>
-        <p className="mt-2 max-w-2xl text-body text-ink-muted">Güncel fiyatlara buradan bakabilirsin:</p>
-        <FlightsLinks links={result.links} className="mt-4" />
+        {result.reason === "same-city" ? null : (
+          <>
+            <p className="mt-2 max-w-2xl text-body text-ink-muted">Güncel fiyatlara buradan bakabilirsin:</p>
+            <FlightsLinks links={result.links} className="mt-4" />
+          </>
+        )}
       </div>
     );
   }
@@ -211,7 +246,7 @@ export function FlightsView({ result, budgetRef = null }: { result: FlightsResul
             <section key={group.airport} aria-labelledby={`havalimani-${group.airport}`}>
               <div className="flex items-baseline justify-between gap-4 border-b border-rule pb-2">
                 <h3 id={`havalimani-${group.airport}`} className="font-display text-heading">
-                  {AIRPORT_NAMES[group.airport] ?? group.airport}
+                  {airportName(group)}
                 </h3>
                 <Caption>{group.airport}</Caption>
               </div>

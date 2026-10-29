@@ -1,10 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useOptimistic, useTransition } from "react";
-import { OriginPicker } from "@/components/search/OriginPicker";
+import { useEffect, useOptimistic, useTransition } from "react";
+import { OriginCombobox } from "@/components/search/OriginCombobox";
 import { PassengerStepper } from "@/components/search/PassengerStepper";
-import type { OriginCode } from "@/data/origins";
+import { readRememberedOrigin, rememberOrigin, type OriginOption } from "@/data/origins";
 import { BUDGET_FLIGHT_DROPPED_EVENT } from "@/lib/budget/params";
 import { cn } from "@/lib/cn";
 import { writeTripParams } from "@/lib/search/params";
@@ -34,10 +34,24 @@ function useTripParam<T>(value: T, toChange: (next: T) => Parameters<typeof writ
 
 const label = "font-mono text-micro uppercase tracking-[0.08em] text-ink-muted";
 
-/** "Kalkış": İstanbul (IST + SAW) or Ankara (ESB), in the flights section. */
-export function OriginControl({ value, className }: { value: OriginCode; className?: string }) {
-  const { shown, pending, change } = useTripParam(value, (from) => ({ from }));
-  return <OriginPicker value={shown} onChange={change} aria-busy={pending} className={className} />;
+/**
+ * "Kalkış": any city with an airport, in the flights section. The choice is remembered in this browser: a plan
+ * whose link names no origin opens with the remembered one (İstanbul when there is none or storage is blocked).
+ */
+export function OriginControl({ value, className }: { value: OriginOption; className?: string }) {
+  const { shown, pending, change } = useTripParam(value, (origin) => ({ from: origin.code }));
+  const choose = (origin: OriginOption) => {
+    rememberOrigin(origin);
+    change(origin);
+  };
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).has("from")) return;
+    const remembered = readRememberedOrigin();
+    if (remembered && remembered.code !== value.code) change(remembered);
+    // Once per page: later changes come from the person.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return <OriginCombobox value={shown} onChange={choose} aria-busy={pending} className={cn("w-full sm:w-80", className)} />;
 }
 
 /** "Kişi" (1–9), in the stay and the flight sections; both write the same `?pax=`. */

@@ -1,5 +1,5 @@
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
+import { findOrigin } from "@/lib/origins/data";
 import { daysBetween, isoToDate } from "./dates";
 import type { SearchState } from "./params";
 
@@ -23,9 +23,9 @@ export function describeSearch(state: SearchState): { title: string; description
   const nights = daysBetween(state.depart, state.return);
   const range = formatDateRange(state.depart, state.return);
   return {
-    title: `${origin.nameTr} → ${destination.nameTr} · ${range} · ${state.pax} kişi`,
+    title: `${origin.name} → ${destination.nameTr} · ${range} · ${state.pax} kişi`,
     description:
-      `${origin.nameTr} (${origin.airports.join(", ")}) çıkışlı ${destination.nameTr}, ${destination.countryTr} planı: ` +
+      `${origin.name} (${origin.airports.map((a) => a.code).join(", ")}) çıkışlı ${destination.nameTr}, ${destination.countryTr} planı: ` +
       `${range}, ${nights} gece, ${state.pax} kişi. Uçuş, TL bütçe, görülecek yerler ve gün gün plan.`,
   };
 }

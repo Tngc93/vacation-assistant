@@ -11,7 +11,7 @@ export default function Image() {
     eyebrow: "Uçuş · konaklama · gün gün plan · TL bütçe",
     title: BRAND_NAME,
     subtitle: BRAND_TAGLINE,
-    footnote: "İstanbul · Ankara çıkışlı",
+    footnote: "Her şehirden kalkış · 68 varış şehri",
     signature: new URL(SITE_URL).host,
   });
 }

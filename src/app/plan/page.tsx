@@ -18,6 +18,7 @@ import { parseDirect } from "@/lib/flights/display";
 import { parseEdits, parsePinned } from "@/lib/ai/edits";
 import { parseSkip } from "@/lib/itinerary/ids";
 import { parseCategories, parseShowEvents } from "@/lib/places/cats";
+import { resolveOrigin } from "@/lib/origins/data";
 import { hasRouteParams, parseSearch } from "@/lib/search/params";
 
 type Props = Pick<PageProps<"/plan">, "searchParams">;
@@ -26,7 +27,10 @@ async function readSearch(searchParams: Props["searchParams"]) {
   const params = await searchParams;
   // "Today" belongs to the request, not to the build.
   await connection();
-  return { params, result: parseSearch(params, todayInIstanbul(new Date())) };
+  const result = parseSearch(params, todayInIstanbul(new Date()));
+  // `?from=` names a known city from here on: an airport code becomes its city (ESB → ANK), an unknown code İstanbul.
+  if (result.ok) result.value.from = resolveOrigin(result.value.from).code;
+  return { params, result };
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {

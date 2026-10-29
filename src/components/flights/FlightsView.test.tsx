@@ -2,13 +2,13 @@ import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
+import { findOrigin } from "@/lib/origins/data";
 import { ESB_AMS_NOVEMBER as esbMonth } from "@/lib/flights/__fixtures__/samples";
 import { IST_BCN as ist } from "@/lib/flights/__fixtures__/samples";
 import { SAW_BCN as saw } from "@/lib/flights/__fixtures__/samples";
 import type { Fetcher } from "@/lib/flights/client";
 import { searchFlights, type FlightsResult, type FlightsSearch } from "@/lib/flights/search";
-import { FlightsView } from "./FlightsSection";
+import { CheapestByAirport, FlightsView } from "./FlightsSection";
 
 const replace = vi.fn();
 vi.mock("next/navigation", () => ({ useRouter: () => ({ replace }) }));
@@ -183,5 +183,35 @@ describe("FlightsView", () => {
     render(<FlightsView result={result} />);
     expect(screen.getByText(/KAYNAK: TRAVELPAYOUTS \(AVIASALES\).*TAHMİNİ/)).toBeInTheDocument();
     expect(screen.getByText(/ÖRNEK VERİ · GELİŞTİRME FIXTURE'I · GERÇEK FİYAT DEĞİL/)).toBeInTheDocument();
+  });
+
+  it("says when the origin is the destination, with no prices and no links", async () => {
+    const result = await resultFor({ ...istanbul, origin: findOrigin("BCN")! }, {});
+    const { unmount } = render(<CheapestByAirport result={result} budgetRef={null} />);
+    expect(screen.getByText("Kalkış ve varış aynı şehir.")).toBeInTheDocument();
+    expect(screen.queryAllByRole("link")).toEqual([]);
+    unmount();
+    render(<FlightsView result={result} />);
+    expect(screen.getByText("Kalkış ve varış aynı şehir.")).toBeInTheDocument();
+    expect(screen.queryAllByRole("link")).toEqual([]);
+  });
+
+  it("shows an honest empty state with live-price links filled in with the new origin", async () => {
+    const london = { ...istanbul, origin: findOrigin("LON")!, pax: 1 };
+    render(<CheapestByAirport result={await resultFor(london, {})} budgetRef={null} />);
+    expect(screen.getByText("Bu tarihler ve ±3 gün için önbellekte uçuş yok.")).toBeInTheDocument();
+    const live = screen.getByRole("link", { name: "Güncel fiyatı gör" });
+    expect(live.getAttribute("href")).toBe("https://www.aviasales.com/search/LON1411BCN18111?marker=4242");
+    expect(live.getAttribute("rel")).toContain("sponsored");
+    const google = new URL(screen.getByRole("link", { name: /Google Flights/ }).getAttribute("href")!);
+    expect(google.searchParams.get("q")).toBe("Flights to BCN from LON on 2026-11-14 through 2026-11-18");
+  });
+
+  it("names any city's airports from the origins data", async () => {
+    const london = { ...istanbul, origin: findOrigin("LON")!, pax: 1 };
+    const ticket = { ...ist.data[0], origin_airport: "LHR", origin: "LON" };
+    render(<FlightsView result={await resultFor(london, { "LHR-2026-11-14": [ticket] })} />);
+    expect(screen.getByRole("heading", { name: /Heathrow/ })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Gatwick/ })).toBeInTheDocument();
   });
 });

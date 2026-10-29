@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
       eyebrow: "Plan",
       title: BRAND_NAME,
       subtitle: BRAND_TAGLINE,
-      footnote: "İstanbul · Ankara çıkışlı",
+      footnote: "Her şehirden kalkış · 68 varış şehri",
       signature: new URL(SITE_URL).host,
     });
   }
