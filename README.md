@@ -13,8 +13,10 @@ Kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günl
 | ![Gün gün plan solda, sağdan açılmış yapay zekâ paneli: bağlı sağlayıcı, "Planı sohbetle değiştir" ve son değişikliğin özeti, "Geri al"](docs/screenshots/plan-ai.webp) | ![Moskova'da bir gün: Kızıl Meydan, ardından Moskova Kremlini ve altında içindeki yerler (Çar Topu, Çar Çanı, katedraller), her biri "MOSKOVA KREMLİNİ İÇİNDE"; yanda günün haritası](docs/screenshots/sub-stops.webp) |
 | **Konaklama ve uçuşlar** | **Telefonda plan** |
 | ![Konaklama: kişi seçici, Booking ve Google Hotels linkleri; Uçuşlar: kalkış şehri, kişi, havalimanı başına en ucuz bilet](docs/screenshots/stays-flights.webp) | <img src="docs/screenshots/mobile-plan.webp" width="300" alt="Telefonda plan sayfası: Barselona, bilgi satırı, şehir fotoğrafı, tek satırda kayan kategori çipleri ve karuselin ilk kartı"> |
+| **İngilizce arayüz (`/en/plan`)** | **İngilizce, telefonda** |
+| ![English plan page: Barcelona, the mono info line, the category chips in English, the sights carousel with Wikidata's English names ("Park Güell", "Casa Batlló"), the city photo and the map; EN / TR switch in the header](docs/screenshots/en-plan-desktop.webp) | <img src="docs/screenshots/en-plan-mobile.webp" width="300" alt="English plan page on a phone: Barcelona, the info line, the city photo, the chips and the first card, its long name cut after two lines"> |
 
-<sub>Ekran görüntüleri 2026-10-29'da yerel üretim build'inden, açık temada alındı (masaüstü 1440 px, telefon 390 px). Uçuşlar örnek veriyle (`VA_FLIGHTS_FIXTURES=1`; fiyatlar gerçek değildir), yapay zekâ paneli yerel bir sahte sağlayıcıyla; gerçek anahtar kullanılmadı.</sub>
+<sub>Ekran görüntüleri 2026-10-29'da yerel üretim build'inden, açık temada alındı (masaüstü 1440 px, telefon 390 px; İngilizce olanlar 375 px). Uçuşlar örnek veriyle (`VA_FLIGHTS_FIXTURES=1`; fiyatlar gerçek değildir), yapay zekâ paneli yerel bir sahte sağlayıcıyla; gerçek anahtar kullanılmadı.</sub>
 
 ## Ne yapar
 
@@ -27,6 +29,7 @@ Kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günl
 - **Konaklama:** Booking ve Google Hotels'te tarihleri ve kişi sayısı dolu arama linkleri (otel fiyatı uydurulmaz).
 - **Uçuşlar:** kalkış şehrinin her havalimanından (Londra'da LHR, LGW, STN, LTN, LCY, SEN) en ucuz bilet, altında tam liste ve aktarmasız filtresi (Travelpayouts önbelleği, "tahmini" etiketiyle).
 - **Bütçe:** uçuş, konaklama ve günlük harcama seçtiğin para biriminde (TL, EUR, USD, GBP; çapraz kur TL üzerinden), kaynak ve kurla; değerler ve para birimi URL'de, paylaşılan link aynı planı açar.
+- **Türkçe ve İngilizce:** Türkçe kökte (`/`, `/plan`), İngilizce `/en` altında (`/en`, `/en/plan`). Başlıktaki TR / EN anahtarı aynı sayfayı bütün parametreleriyle öbür dilde açar; tarayıcı diline göre otomatik yönlendirme yok. İngilizce sayfada yer, şehir, havalimanı ve etkinlik adları Wikidata'nın İngilizce etiketleriyle, tarih ve sayılar `en-GB` biçiminde, bütçe varsayılan olarak EUR; yapay zekâ cevapları da arayüz dilinde.
 
 ### Yapay zekâ olmadan tam çalışır
 
@@ -130,7 +133,7 @@ Hata bildirimi ve PR'lar memnuniyetle karşılanır.
 - Önce [AGENTS.md](AGENTS.md) (çalışma kuralları), [docs/DESIGN.md](docs/DESIGN.md) (görsel dil) ve [docs/PRD.md](docs/PRD.md) (ürün gereksinimleri).
 - Her iş kendi branch'inde: `feat/…`, `fix/…`, `docs/…`, `chore/…`; commit mesajları İngilizce, Conventional Commits.
 - PR'dan önce `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run check:bundle` ve `npm run test:e2e` geçmeli.
-- Kurallar: yalnızca ücretsiz servisler, kazıma yok, uydurma veri yok; arayüz metinleri Türkçe; ham renk değeri yalnızca `src/app/globals.css`'te.
+- Kurallar: yalnızca ücretsiz servisler, kazıma yok, uydurma veri yok; arayüz metinleri Türkçe ve İngilizce, yalnızca `src/i18n/messages/` altındaki mesaj dosyalarından (iki dosyanın anahtarları aynı); ham renk değeri yalnızca `src/app/globals.css`'te.
 - Gizli anahtarlar asla commit'lenmez.
 
 Belgeler: [PRD](docs/PRD.md) · [DESIGN](docs/DESIGN.md) · [PLAN](docs/PLAN.md) · [DEPLOY](docs/DEPLOY.md) · [BACKLOG](docs/BACKLOG.md) · [AGENTS](AGENTS.md)
@@ -143,7 +146,7 @@ Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](
 
 ## English summary
 
-**Vacationist** is a free, open source planner for short city breaks. Pick one of 68 cities and your dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from any city with an airport (Istanbul by default) and a budget in Turkish lira on one page. Live: <https://vacationist-app.vercel.app>
+**Vacationist** is a free, open source planner for short city breaks. Pick one of 68 cities and your dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from any city with an airport (Istanbul by default) and a budget (TRY, EUR, USD or GBP) on one page. Live: <https://vacationist-app.vercel.app>
 
 - Works fully without AI: the plan is deterministic, built from pre-fetched OpenStreetMap and Wikidata data. Places inside another place (the Tsar Bell in the Moscow Kremlin) come with it as sub-stops; far-off places carry a "~6 km from the centre" caption.
 - Readable names: a Latin-script name is preferred; otherwise the name is romanized with the country's official system, with the local name kept small.
@@ -152,4 +155,4 @@ Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](
 - Honest data: every price and estimate shows its source and an "estimated" label; nothing is made up and nothing is scraped. Privacy-friendly analytics count page paths only.
 - Runs on free services only (Vercel Hobby, Travelpayouts, TCMB/Frankfurter/open.er-api, OpenFreeMap).
 - Run locally with Node 22: `npm ci && npm run dev`; `VA_AI_MOCK=1` and `VA_FLIGHTS_FIXTURES=1` give keyless demos. Deploy guide: [docs/DEPLOY.md](docs/DEPLOY.md).
-- Code under MIT; place data under ODbL 1.0. The interface is in Turkish.
+- Code under MIT; place data under ODbL 1.0. The interface is in Turkish (at the root) and English (under [/en](https://vacationist-app.vercel.app/en)), with a TR / EN switch that keeps the trip's parameters; English pages use Wikidata's English names, British English formats and a EUR budget by default.
