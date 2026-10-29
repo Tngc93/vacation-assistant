@@ -49,15 +49,15 @@ Fiyatlar Aviasales'in son 48 saatteki aramalarından önbellektir; uygulama her 
 
 ## 4. Aylık mekân verisi yenileme
 
-`src/data/places/` (OpenStreetMap türevi, ODbL) ve `src/data/events/` (Wikidata, CC0) her ayın 1'inde 03:17 UTC'de `.github/workflows/refresh-places.yml` ile tazelenir:
+`src/data/places/` (OpenStreetMap türevi, ODbL) ve `src/data/events/` (Wikidata, CC0) ve `src/data/origins.json` (kalkış şehirleri: Travelpayouts statik verisi + Wikidata) her ayın 1'inde 03:17 UTC'de `.github/workflows/refresh-places.yml` ile tazelenir:
 
-1. Workflow `npm run data:places` (68 şehir, sırayla, ~3 saat) ve `npm run data:events` (etkinlikler, yalnızca Wikidata) çalıştırır, ardından `npm test`.
+1. Workflow `npm run data:places` (68 şehir, sırayla, ~3 saat) ve `npm run data:events` (etkinlikler, yalnızca Wikidata) ve `npm run data:origins` (kalkış şehirleri, ~1 dk) çalıştırır, ardından `npm test`.
 2. Veri değiştiyse `chore/refresh-places-YYYY-MM-DD` branch'ine commit atıp "chore: refresh place data" PR'ı açar.
 3. Bunun için repo ayarlarında **Settings → Actions → General → Workflow permissions** altında **"Allow GitHub Actions to create and approve pull requests"** açık olmalı.
 4. `GITHUB_TOKEN` ile açılan PR başka workflow'ları tetiklemez: merge'den önce CI'ı elle çalıştır (Actions → CI → Run workflow) ya da boş bir commit it.
 5. PR merge edilince Vercel üretimi yeniden derler; veri çalışma anında Overpass'a ya da Wikidata'ya gitmez.
 
-Elle tazelemek için: `npm run data:places` (yarıda kalırsa aynı komut kaldığı yerden sürer), tek şehir için `npm run data:places -- BCN`. Etkinlikler için `npm run data:events` (tek şehir: `npm run data:events -- MUC`). Yalnızca tür etiketleri ve `relink` istisnaları için `npm run data:kinds` (birkaç dakika).
+Elle tazelemek için: `npm run data:places` (yarıda kalırsa aynı komut kaldığı yerden sürer), tek şehir için `npm run data:places -- BCN`. Etkinlikler için `npm run data:events` (tek şehir: `npm run data:events -- MUC`). Kalkış şehirleri için `npm run data:origins`. Yalnızca tür etiketleri ve `relink` istisnaları için `npm run data:kinds` (birkaç dakika).
 
 ## 5. Vercel Hobby: ticari olmayan kullanım
 
