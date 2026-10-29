@@ -114,7 +114,7 @@ describe("invalid or missing params", () => {
   });
 
   it("keeps the valid fields and flags only the route", () => {
-    const result = parse("from=XYZ&to=QQQ&depart=2026-11-14&return=2026-11-18&pax=12");
+    const result = parse("from=X1&to=QQQ&depart=2026-11-14&return=2026-11-18&pax=12");
     expect(result.ok).toBe(false);
     if (result.ok) return;
     expect(result.draft).toEqual({ from: "IST", pax: 1, depart: "2026-11-14", return: "2026-11-18" });
@@ -125,8 +125,15 @@ describe("invalid or missing params", () => {
     expect(parse(`to=BCN&depart=2026-11-14&return=2026-11-18&pax=${pax}`)).toEqual({ ok: true, value: { ...VALID, pax: 1 } });
   });
 
-  it("falls back to İstanbul for an unknown origin", () => {
-    expect(parse("from=SAW&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2")).toEqual({ ok: true, value: VALID });
+  it.each(["IS", "ISTA", "1ST", "İST"])("falls back to İstanbul for a malformed origin (%s)", (from) => {
+    expect(parse(`from=${encodeURIComponent(from)}&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2`)).toEqual({ ok: true, value: VALID });
+  });
+
+  it.each(["LON", "esb", "SAW", "XYZ"])("keeps any three-letter origin (%s) for the server to resolve", (from) => {
+    expect(parse(`from=${from}&to=BCN&depart=2026-11-14&return=2026-11-18&pax=2`)).toEqual({
+      ok: true,
+      value: { ...VALID, from: from.toUpperCase() },
+    });
   });
 
   it("drops both dates when the departure is in the past", () => {

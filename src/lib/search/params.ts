@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { findDestination } from "@/data/destinations";
-import { DEFAULT_ORIGIN, ORIGINS, type OriginCode } from "@/data/origins";
+import { DEFAULT_ORIGIN, type OriginCode } from "@/data/origins";
 import { checkTripDates, isIsoDate } from "./dates";
 
 /**
@@ -10,6 +10,10 @@ import { checkTripDates, isIsoDate } from "./dates";
  * The home page asks only where and when; the origin (İstanbul, IST + SAW) and the number of people (1) are
  * defaults the plan page changes in its stay and flight sections (2026-10-22). Links that carry them still open
  * the same plan.
+ *
+ * The origin can be any city with an airport (2026-10-29). The list is server-only, so here `from` is only checked
+ * for shape (three letters); the server resolves it (src/lib/origins/data.ts `resolveOrigin`): a city code, or an
+ * airport code mapped to its city (`?from=SAW` opens İstanbul; Ankara is ESB itself), else İstanbul.
  */
 
 export const MIN_PASSENGERS = 1;
@@ -35,10 +39,9 @@ export type ParseResult =
   | { ok: true; value: SearchState }
   | { ok: false; draft: SearchDraft; issues: SearchIssue[] };
 
-const ORIGIN_CODES = ORIGINS.map((o) => o.code) as [OriginCode, ...OriginCode[]];
 const isoDate = z.string().refine(isIsoDate);
 
-const originField = z.preprocess((v) => (typeof v === "string" ? v.toUpperCase() : v), z.enum(ORIGIN_CODES));
+const originField = z.preprocess((v) => (typeof v === "string" ? v.toUpperCase() : v), z.string().regex(/^[A-Z]{3}$/));
 const paxField = z.coerce.number().int().min(MIN_PASSENGERS).max(MAX_PASSENGERS);
 
 const fields = {
@@ -68,7 +71,7 @@ function read(input: Input, key: string): string | undefined {
   return trimmed ? trimmed : undefined;
 }
 
-/** `?from=`, or İstanbul when it is missing or unknown (it is no longer chosen before the plan). */
+/** `?from=` (an IATA code, upper case), or İstanbul when it is missing or malformed; the server checks it is known. */
 export function parseOrigin(input: Input): OriginCode {
   const result = originField.safeParse(read(input, "from"));
   return result.success ? result.data : DEFAULT_ORIGIN;

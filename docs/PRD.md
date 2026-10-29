@@ -12,7 +12,7 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ## Kullanıcılar
 
-- **Birincil:** İstanbul ya da Ankara'dan kısa şehir tatili (2–7 gün) planlayan, bütçesine dikkat eden 22–40 yaş arası gezgin.
+- **Birincil:** Türkiye'den ya da dünyanın herhangi bir şehrinden kısa şehir tatili (2–7 gün) planlayan, bütçesine dikkat eden 22–40 yaş arası gezgin. *Kalkış 2026-10-29'dan beri her şehir olabilir (Berk'in kararı); arayüz Türkçe, fiyatlar TL.*
 - **İkincil:** Kendi yapay zekâ hesabını (Claude, ChatGPT, Gemini) bağlayıp planı sohbetle değiştirmek isteyen teknik kullanıcı.
 
 ## Hedefler ve metrikler
@@ -28,8 +28,8 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ## Faz 1 kapsamı (bugün yayında)
 
-- **Akış:** ana sayfa yalnızca varış şehrini (68 şehir) ve tarihleri sorar; plan sayfası sırayla: şehir başlığı ve görülecek yerler (karusel + harita) → gün gün plan (yapay zekâ paneli sağdaki sekmenin arkasında) → konaklama (kişi) → uçuşlar (kalkış, kişi) → bütçe. Kalkış ve kişi isteğe bağlıdır (varsayılan İstanbul, 1 kişi).
-- **Veri:** mekânlar OpenStreetMap ve Wikidata'dan önceden çekilir ve ayda bir tazelenir; uçuşlar Travelpayouts önbelleği; kur TCMB → Frankfurter → Exchange Rate API; etkinlikler Wikidata; fotoğraflar Commons. Çalışma anında Overpass ya da Wikidata çağrısı yok.
+- **Akış:** ana sayfa yalnızca varış şehrini (68 şehir) ve tarihleri sorar; plan sayfası sırayla: şehir başlığı ve görülecek yerler (karusel + harita) → gün gün plan (yapay zekâ paneli sağdaki sekmenin arkasında) → konaklama (kişi) → uçuşlar (kalkış, kişi) → bütçe. Kalkış ve kişi isteğe bağlıdır (varsayılan İstanbul, 1 kişi); kalkış uçuşa açık havalimanı olan her şehir olabilir (~3.500 şehir, son seçim tarayıcıda hatırlanır).
+- **Veri:** mekânlar OpenStreetMap ve Wikidata'dan önceden çekilir ve ayda bir tazelenir; uçuşlar Travelpayouts önbelleği; kalkış şehirleri OurAirports'tan (kamu malı), Türkçe adları Wikidata'dan, saat dilimleri GeoNames'ten, havayolu adları Wikidata'dan (ayda bir tazelenir); kur TCMB → Frankfurter → Exchange Rate API; etkinlikler Wikidata; fotoğraflar Commons. Çalışma anında Overpass ya da Wikidata çağrısı yok.
 - **Planlayıcı:** deterministik gün gün plan; alt duraklar (bir yerin içindeki yerler), merkeze uzak yerler ve uzak bölgeler, okunur (Latin ya da romanize) adlar, etkinlik notları, `.ics` ve yazdırma.
 - **Yapay zekâ (isteğe bağlı):** kullanıcının kendi anahtarıyla Anthropic, OpenAI ya da Gemini; plan seçimi, sohbetle düzenleme ve "Web'de ara".
 - **Ölçüm:** Vercel Web Analytics, yalnızca production'da ve yalnızca sayfa yolu.
@@ -42,20 +42,20 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 - Ücretli bir veri ya da yapay zekâ servisine bağımlılık.
 - Uçuş sitelerini (Google Flights, Skyscanner, havayolu siteleri) doğrudan kazıma. Kullanım koşullarını ihlal eder, bot korumasına takılır ve sık bozulur.
 - Mobil uygulama (faz 3).
-- Türkiye dışından çıkış (faz 2).
+- ~~Türkiye dışından çıkış (faz 2).~~ *2026-10-29'da faz 1'e alındı (madde 1).* Fiyatların TL dışında bir para biriminde gösterilmesi hâlâ kapsam dışı.
 
 ## Gereksinimler
 
 ### Arama ekranı
 
-1. Kullanıcı çıkış şehrini seçer: İstanbul ya da Ankara. İstanbul seçildiğinde IST ve SAW birlikte, Ankara seçildiğinde ESB aranır. *Ana sayfadan plan sayfasının Uçuşlar bölümüne taşındı (2026-10-22, Berk'in kararı); varsayılan İstanbul (IST + SAW).*
+1. Kullanıcı çıkış şehrini seçer: uçuşa açık havalimanı olan her şehir (adı Türkçe, Türkçe karakter duyarsız arama; şehir adı, ülke ya da IATA koduyla). Çok havalimanlı şehirde şehrin bütün havalimanları birlikte aranır (İstanbul IST + SAW, Londra LHR + LGW + STN + LTN + LCY + SEN, New York JFK + EWR + LGA). *Ana sayfadan plan sayfasının Uçuşlar bölümüne taşındı (2026-10-22, Berk'in kararı); varsayılan İstanbul (IST + SAW). İstanbul ya da Ankara sınırı kalktı, her şehir (2026-10-29, Berk'in kararı); son seçim tarayıcıda hatırlanır, kalkış ile varış aynı şehirse sorgu atılmaz.*
 2. Kullanıcı varış ülkesini ve şehrini, gidiş ve dönüş tarihlerini ve kişi sayısını (1–9) seçer. *Ana sayfa yalnızca varış şehrini ve tarihleri sorar; kişi sayısı plan sayfasının Konaklama ve Uçuşlar bölümlerine taşındı, varsayılan 1 (2026-10-22, Berk'in kararı).*
-3. Arama durumu URL'de tutulur. Link paylaşıldığında aynı plan açılır (kayıt gerekmeden paylaşım). *`from` ve `pax` isteğe bağlı (varsayılanlar URL'ye yazılmaz); bunları içeren eski linkler aynı planı açar (2026-10-22).*
+3. Arama durumu URL'de tutulur. Link paylaşıldığında aynı plan açılır (kayıt gerekmeden paylaşım). *`from` ve `pax` isteğe bağlı (varsayılanlar URL'ye yazılmaz); bunları içeren eski linkler aynı planı açar (2026-10-22). `from` şehir kodudur (metropol kodu ya da tek havalimanlı şehirde havalimanı kodu); eski `from=ESB` linki Ankara'yı açar (2026-10-29).*
 
 ### Uçuşlar
 
 4. Uçuş fiyatları Travelpayouts (Aviasales) Data API'sinden sunucu tarafında çekilir. Token yalnızca ortam değişkeninde durur, istemciye gönderilmez.
-5. Sonuçlar havalimanına göre gruplanır (IST / SAW / ESB) ve en ucuz seçenek işaretlenir.
+5. Sonuçlar kalkış havalimanına göre gruplanır (ör. IST / SAW; LHR / LGW / STN…) ve en ucuz seçenek işaretlenir. Önbellekte uçuş yoksa bunu söyleyen bir boş durum ve yeni kalkışla doldurulmuş "Güncel fiyatı gör" linki çıkar.
 6. Aktarmasız uçuş varsa ayrı bir filtreyle gösterilir. Yoksa "bu tarihlerde aktarmasız uçuş bulunamadı" yazar.
 7. Her fiyatın yanında "önbellekten, son 48 saatteki aramalara dayalı tahmini fiyat" etiketi ve sağlayıcı sitesinde hazır doldurulmuş aramayı açan "Güncel fiyatı gör" butonu bulunur.
 8. Kullanıcı kendi yapay zekâ hesabını bağladıysa "Web'de ara" butonu, modelin web arama aracıyla güncel fiyat arar. Bu sonuçlar kaynak linkiyle ve "yapay zekâ web'den buldu, satın almadan önce doğrula" etiketiyle ayrı listelenir.

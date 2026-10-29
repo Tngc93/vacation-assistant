@@ -46,7 +46,7 @@ export type FlightTicket = {
 };
 
 export type TicketContext = {
-  /** IANA zone of the origin airports (Istanbul for every phase-1 origin). */
+  /** IANA zone of the origin city (its airports share it). */
   originTimeZone: string;
   destinationTimeZone: string;
   /** IATA city code of the destination, for the booking link. */

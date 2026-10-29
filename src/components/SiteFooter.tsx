@@ -6,7 +6,9 @@ type Source = { links: ReadonlyArray<{ name: string; href: string }>; terms: str
 /** Where the data comes from and under which terms (README "Veri kaynakları ve atıflar" has the details). */
 const SOURCES: ReadonlyArray<Source> = [
   { links: [{ name: "OpenStreetMap", href: "https://www.openstreetmap.org/copyright" }], terms: "Mekânlar · ODbL" },
-  { links: [{ name: "Wikidata", href: "https://www.wikidata.org" }], terms: "Şehirler, önem sırası · CC0" },
+  { links: [{ name: "Wikidata", href: "https://www.wikidata.org" }], terms: "Şehirler, önem sırası, havayolu adları · CC0" },
+  { links: [{ name: "OurAirports", href: "https://ourairports.com/data/" }], terms: "Kalkış havalimanları · kamu malı" },
+  { links: [{ name: "GeoNames", href: "https://www.geonames.org" }], terms: "Kalkış saat dilimleri · CC BY 4.0" },
   { links: [{ name: "Wikimedia Commons", href: "https://commons.wikimedia.org" }], terms: "Fotoğraflar · her birinin kendi lisansı" },
   {
     links: [

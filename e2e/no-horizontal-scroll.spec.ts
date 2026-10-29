@@ -51,22 +51,49 @@ for (const width of WIDTHS) {
         const root = document.documentElement;
         const viewport = root.clientWidth;
         // Report the outermost elements that stick out, to make failures actionable.
-        const offenders = [...document.querySelectorAll<HTMLElement>("body *")]
-          .filter((el) => el.getBoundingClientRect().right > viewport + 0.5)
+        // Children of a horizontal scroller (the category chips) are clipped, not overflowing the page.
+        const clipped = (el: HTMLElement) => {
+          for (let p = el.parentElement; p; p = p.parentElement) if (/auto|scroll|hidden|clip/.test(getComputedStyle(p).overflowX)) return true;
+          return false;
+        };
+        const offenders: string[] = [...document.querySelectorAll<HTMLElement>("body *")]
+          .filter((el) => el.getBoundingClientRect().right > viewport + 0.5 && !clipped(el))
           .filter((el) => !el.parentElement || el.parentElement.getBoundingClientRect().right <= viewport + 0.5)
           .slice(0, 5)
-          .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} → ${Math.round(el.getBoundingClientRect().right)}px`);
+          .map(
+            (el) =>
+              `${el.closest("section[id]")?.id ?? "-"} ${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} "${(el.textContent ?? "").trim().slice(0, 30)}" → ${Math.round(el.getBoundingClientRect().right)}px`,
+          );
+        // Containers whose own content is wider than they are (and not scrolled or clipped): the deepest ones
+        // name the unbreakable content that widens the page.
+        const spills = (el: Element) =>
+          el.scrollWidth > el.clientWidth + 1 && !/auto|scroll|hidden|clip/.test(getComputedStyle(el).overflowX) && !clipped(el as HTMLElement);
+        const widest = [...document.querySelectorAll<HTMLElement>("main *")]
+          .filter((el) => spills(el) && ![...el.children].some(spills))
+          .slice(0, 6)
+          .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 50)} "${(el.textContent ?? "").trim().slice(0, 60)}" ${el.clientWidth}<${el.scrollWidth}`);
+        if (root.scrollWidth > viewport) offenders.push(`spilling: ${widest.join(" | ")}`);
         // Plan sections keep the 16px side gutter: one wide child would widen the whole column.
         const gutterBreaks = [...document.querySelectorAll<HTMLElement>("main section[id]")]
           .filter((el) => el.getBoundingClientRect().right > viewport - 16 + 0.5)
           .map((el) => `#${el.id} → ${Math.round(el.getBoundingClientRect().right)}px`);
-        return { scrollWidth: root.scrollWidth, clientWidth: viewport, offenders, gutterBreaks };
+        // Headroom for fonts that render wider elsewhere (CI's Linux): a section's narrowest layout must leave 16px
+        // inside the gutter, or one unbreakable line (an input's intrinsic 20-character width) widens every section.
+        const tight = [...document.querySelectorAll<HTMLElement>("main section[id]")].flatMap((el) => {
+          const prev = el.style.width;
+          el.style.width = "min-content";
+          const min = el.getBoundingClientRect().width;
+          el.style.width = prev;
+          return min > viewport - 32 - 16 ? [`#${el.id} min-content ${Math.round(min)}px`] : [];
+        });
+        return { scrollWidth: root.scrollWidth, clientWidth: viewport, offenders, gutterBreaks, tight };
       });
 
       expect(result.scrollWidth, `overflowing: ${result.offenders.join(" | ") || "none found"}`).toBeLessThanOrEqual(
         result.clientWidth,
       );
       expect(result.gutterBreaks, "sections past the 16px gutter").toEqual([]);
+      expect(result.tight, "sections with no headroom at this width").toEqual([]);
     });
   }
 }

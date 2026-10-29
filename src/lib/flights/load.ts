@@ -1,7 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
+import { resolveOrigin } from "@/lib/origins/data";
 import { todayInIstanbul } from "@/lib/search/dates";
 import { searchFlights } from "./search";
 
@@ -12,7 +12,7 @@ import { searchFlights } from "./search";
  */
 export const loadFlights = cache((from: string, to: string, depart: string, ret: string, pax: number, direct: boolean) =>
   searchFlights({
-    origin: findOrigin(from)!,
+    origin: resolveOrigin(from),
     destination: findDestination(to)!,
     depart,
     return: ret,

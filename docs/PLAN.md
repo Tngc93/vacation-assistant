@@ -18,7 +18,7 @@ One step = one branch = one PR. Ask Berk before opening each PR. Steps 0–9 are
 
 ## Lansman sonrası
 
-PRs after the launch step, in merge order. #17–#19 merged just before the launch PR (#20), on the same two days.
+PRs after the launch step, in merge order (an open one last). #17–#19 merged just before the launch PR (#20), on the same two days.
 
 | PR | Branch | Merged | Scope |
 | --- | --- | --- | --- |
@@ -34,3 +34,5 @@ PRs after the launch step, in merge order. #17–#19 merged just before the laun
 | #26 | `feat/events` | 2026-10-28 | Big yearly events from Wikidata: "Etkinlik" chip, masthead line, day notes; adult content excluded |
 | #27 | `feat/romanized-names` | 2026-10-28 | Non-Latin names romanized with each country's official system; "Moskova Kremlini" override |
 | #28 | `fix/e2e-keyboard-flaky` | 2026-10-29 | Carousel arrows `aria-disabled` at either end (focus no longer lost; flaky keyboard e2e fixed) |
+| #29 | `chore/final-review` | 2026-10-29 | Final review after launch: README (About line, screenshots), PRD/PLAN/AGENTS/DEPLOY/DESIGN, map shield warnings dropped, whole-flow e2e |
+| #30 | `feat/any-origin` | — (açık; squash ile merge edilecek) | Any city as the origin: departure cities from OurAirports (public domain), Turkish names from Wikidata, time zones from GeoNames; IATA metro codes (`metros.ts`); `/api/origins` server search and the "Kalkış" combobox; remembered origin (`localStorage`); same-city and empty states; airline names from Wikidata (P229). No Travelpayouts-derived file in the repo (its first version had one, hence the squash) |

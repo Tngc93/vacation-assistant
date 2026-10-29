@@ -1,6 +1,7 @@
 /**
  * Trip date rules. Dates are plain ISO calendar dates ("2026-11-14"),
- * interpreted in Istanbul time because every trip departs from Turkey.
+ * interpreted in Istanbul time, the site's home zone: trips first left only from Turkey, and "today" stays
+ * Istanbul's now that any city can be the origin (2026-10-29).
  */
 
 export const MAX_NIGHTS = 30;

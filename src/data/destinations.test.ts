@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { DESTINATIONS, findDestination, DISCOVER_CITY_CODES } from "./destinations";
-import { ORIGINS } from "./origins";
+import { findOrigin } from "@/lib/origins/data";
 
 const IATA = /^[A-Z]{3}$/;
 const regionNames = new Intl.DisplayNames("tr", { type: "region" });
@@ -29,12 +29,8 @@ describe("destinations data", () => {
     }
   });
 
-  it("does not list the departure cities as destinations", () => {
-    const originAirports = ORIGINS.flatMap((o) => [o.code, ...o.airports]);
-    for (const d of DESTINATIONS) {
-      expect(originAirports).not.toContain(d.cityCode);
-      for (const airport of d.airports) expect(originAirports).not.toContain(airport);
-    }
+  it("uses the price API's city codes (every destination is a city in the origins data)", () => {
+    for (const d of DESTINATIONS) expect(findOrigin(d.cityCode)?.code, d.cityCode).toBe(d.cityCode);
   });
 
   it.each(DESTINATIONS.map((d) => [d.cityCode, d] as const))("%s has well-formed fields", (_, d) => {

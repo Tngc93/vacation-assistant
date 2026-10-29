@@ -1,8 +1,11 @@
+import "server-only";
+import table from "./airlines.json";
+
 /**
- * Names of airlines that fly from Turkey, by IATA designator. Each code was
- * checked against Wikidata (P229, current airline item noted next to it) on
- * 2026-10-17; names are the common brand names. Codes not listed are shown
- * as they are.
+ * Airline names by IATA designator. Every current airline with one comes from Wikidata (src/data/airlines.json,
+ * `npm run data:airlines`, CC0; Turkish label, else English). The short brand names below win over it: they were
+ * checked against Wikidata (P229, item next to each) on 2026-10-17 for the airlines most trips from Turkey fly
+ * ("Pegasus", not "Pegasus Hava Yolları"). Codes in neither are shown as they are.
  */
 export const AIRLINE_NAMES: Readonly<Record<string, string>> = {
   TK: "Türk Hava Yolları", // Q4548
@@ -51,7 +54,11 @@ export const AIRLINE_NAMES: Readonly<Record<string, string>> = {
   TU: "Tunisair", // Q692811
 };
 
-/** "Lufthansa", or the code itself when it is not in the list. */
+/** Every airline Wikidata names, by designator. */
+export const WIKIDATA_AIRLINES: Readonly<Record<string, string>> = table.airlines;
+
+/** "Lufthansa", "IndiGo", or the code itself when no list has it. */
 export function airlineName(code: string): string {
-  return AIRLINE_NAMES[code.toUpperCase()] ?? code;
+  const c = code.toUpperCase();
+  return AIRLINE_NAMES[c] ?? WIKIDATA_AIRLINES[c] ?? code;
 }

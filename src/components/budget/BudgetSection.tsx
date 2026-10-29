@@ -23,7 +23,9 @@ export function flightLineFor(choice: FlightChoice, result: FlightsResult): Flig
         result.status === "unavailable"
           ? result.reason === "no-token"
             ? "TRAVELPAYOUTS BAĞLANTISI YOK"
-            : "TRAVELPAYOUTS ŞU AN CEVAP VERMİYOR"
+            : result.reason === "same-city"
+              ? "KALKIŞ VE VARIŞ AYNI ŞEHİR"
+              : "TRAVELPAYOUTS ŞU AN CEVAP VERMİYOR"
           : "SEÇİLEN TARİHLERDE ÖNBELLEKTE UÇUŞ YOK",
     };
   }

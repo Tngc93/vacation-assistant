@@ -27,7 +27,7 @@ for (const { name, path } of PAGES) {
     await expect(footer.getByText("Kısa şehir kaçamakları için planlayıcı")).toBeVisible();
     await expect(footer.getByRole("link", { name: "GitHub" })).toHaveAttribute("href", "https://github.com/Tngc93/vacation-assistant");
     await expect(footer.getByRole("link", { name: "MIT lisansı" })).toHaveAttribute("href", /\/LICENSE$/);
-    for (const source of ["OpenStreetMap", "Wikidata", "Wikimedia Commons", "Travelpayouts", "TCMB", "Frankfurter", "open.er-api", "passport-index-data"]) {
+    for (const source of ["OpenStreetMap", "Wikidata", "OurAirports", "GeoNames", "Wikimedia Commons", "Travelpayouts", "TCMB", "Frankfurter", "open.er-api", "passport-index-data"]) {
       await expect(footer.getByRole("link", { name: source, exact: true })).toBeVisible();
     }
     await expect(footer.getByText("Fiyatlar tahminidir; satın almadan önce sağlayıcıda doğrula.")).toBeVisible();

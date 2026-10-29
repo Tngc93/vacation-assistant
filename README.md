@@ -1,6 +1,6 @@
 # Vacationist
 
-Türkiye'den (İstanbul ya da Ankara) kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günleri seç; 68 şehirde görülecek yerler, gün gün plan, en ucuz uçuş ve TL bütçe tek sayfada gelsin, yapay zekâ isteğe bağlı ve kendi anahtarınla.
+Kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günleri seç, istediğin şehirden kalk; 68 şehirde görülecek yerler, gün gün plan, en ucuz uçuş ve TL bütçe tek sayfada gelsin, yapay zekâ isteğe bağlı ve kendi anahtarınla.
 
 **Canlı:** <https://vacationist-app.vercel.app>
 
@@ -12,20 +12,20 @@ Türkiye'den (İstanbul ya da Ankara) kısa şehir tatili için ücretsiz, açı
 | **Gün gün plan ve yapay zekâ paneli** | **Alt duraklar: Moskova Kremlini** |
 | ![Gün gün plan solda, sağdan açılmış yapay zekâ paneli: bağlı sağlayıcı, "Planı sohbetle değiştir" ve son değişikliğin özeti, "Geri al"](docs/screenshots/plan-ai.webp) | ![Moskova'da bir gün: Kızıl Meydan, ardından Moskova Kremlini ve altında içindeki yerler (Çar Topu, Çar Çanı, katedraller), her biri "MOSKOVA KREMLİNİ İÇİNDE"; yanda günün haritası](docs/screenshots/sub-stops.webp) |
 | **Konaklama ve uçuşlar** | **Telefonda plan** |
-| ![Konaklama: kişi seçici, Booking ve Google Hotels linkleri; Uçuşlar: kalkış (İstanbul ya da Ankara), kişi, havalimanı başına en ucuz bilet](docs/screenshots/stays-flights.webp) | <img src="docs/screenshots/mobile-plan.webp" width="300" alt="Telefonda plan sayfası: Barselona, bilgi satırı, şehir fotoğrafı, tek satırda kayan kategori çipleri ve karuselin ilk kartı"> |
+| ![Konaklama: kişi seçici, Booking ve Google Hotels linkleri; Uçuşlar: kalkış şehri, kişi, havalimanı başına en ucuz bilet](docs/screenshots/stays-flights.webp) | <img src="docs/screenshots/mobile-plan.webp" width="300" alt="Telefonda plan sayfası: Barselona, bilgi satırı, şehir fotoğrafı, tek satırda kayan kategori çipleri ve karuselin ilk kartı"> |
 
 <sub>Ekran görüntüleri 2026-10-29'da yerel üretim build'inden, açık temada alındı (masaüstü 1440 px, telefon 390 px). Uçuşlar örnek veriyle (`VA_FLIGHTS_FIXTURES=1`; fiyatlar gerçek değildir), yapay zekâ paneli yerel bir sahte sağlayıcıyla; gerçek anahtar kullanılmadı.</sub>
 
 ## Ne yapar
 
-- **Nereye ve ne zaman:** ana sayfa yalnızca varış şehrini ve tarihleri sorar ("Nereye gidiyorsun?"); Avrupa'dan Körfez'e, Kuzey Afrika'dan Uzak Doğu'ya 68 şehir. Kalkış (İstanbul: IST + SAW, Ankara: ESB) ve kişi sayısı plan sayfasında, Konaklama ve Uçuşlar bölümlerinde seçilir.
+- **Nereye ve ne zaman:** ana sayfa yalnızca varış şehrini ve tarihleri sorar ("Nereye gidiyorsun?"); Avrupa'dan Körfez'e, Kuzey Afrika'dan Uzak Doğu'ya 68 şehir. Kalkış (uçuşa açık havalimanı olan her şehir, varsayılan İstanbul: IST + SAW) ve kişi sayısı plan sayfasında, Konaklama ve Uçuşlar bölümlerinde seçilir; son kalkış tarayıcıda hatırlanır.
 - **Görülecek yerler:** OpenStreetMap ve Wikidata'dan önceden çekilmiş mekânlar; Vikipedi'de kaç dilde olduğuna göre "mutlaka gör" sırası, Commons fotoğraflı karusel, harita ve kategoriler (görülecek yer, müze, manzara, restoran, kafe, kokteyl bar, bar ve pub, gece kulübü). Kokteyl barları Wikidata'dan takviye edilir.
 - **Okunur adlar:** Latin harfli bir ad varsa o gösterilir ("Tokyo Kulesi · 東京タワー"); yoksa ad ülkenin resmî sistemiyle Latin harflerine çevrilir (Rusça, Sırpça, Bulgarca, Makedonca, Özbekçe, Yunanca, Gürcüce, Korece), yerel ad küçük yazıyla kalır.
 - **Merkeze uzaklık:** şehrin turistik merkezinden uzak yerler "MERKEZE ~6 KM" etiketini taşır; 3 km'den uzun yürüyüşte "TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR".
 - **Etkinlikler:** gezinin tarihlerinde şehirde büyük, yıllık bir etkinlik (festival, karnaval, Noel pazarı, film ya da müzik festivali) varsa "Etkinlik" çipiyle, tarihiyle ve kaynağıyla (Wikidata) gösterilir; kesin tarihli olanlar şehir başlığında ve gün gün planda not olarak da görünür. Tarih bilinmiyorsa etkinlik gösterilmez.
 - **Gün gün plan:** deterministik; uçuş saatlerine, açılış saatlerine ve yürüme mesafesine göre. Bir yerin içindeki yerler (Moskova Kremlini'ndeki Çar Çanı, Vatikan Müzeleri'ndeki Stanze di Raffaello) alt durak olarak onunla gelir; merkeze uzak bir bölge tek güne toplanır. Durak çıkarılabilir, plan `.ics` olarak takvime eklenir ve yazdırılabilir.
 - **Konaklama:** Booking ve Google Hotels'te tarihleri ve kişi sayısı dolu arama linkleri (otel fiyatı uydurulmaz).
-- **Uçuşlar:** IST, SAW ve ESB'den havalimanı başına en ucuz bilet, altında tam liste ve aktarmasız filtresi (Travelpayouts önbelleği, "tahmini" etiketiyle).
+- **Uçuşlar:** kalkış şehrinin her havalimanından (Londra'da LHR, LGW, STN, LTN, LCY, SEN) en ucuz bilet, altında tam liste ve aktarmasız filtresi (Travelpayouts önbelleği, "tahmini" etiketiyle).
 - **Bütçe:** uçuş, konaklama ve günlük harcama TL'de, kaynak ve kurla; değerler URL'de, paylaşılan link aynı planı açar.
 
 ### Yapay zekâ olmadan tam çalışır
@@ -51,6 +51,7 @@ Her fiyat, kur ve tahmin kaynağıyla ve "tahmini" etiketiyle gösterilir. Bir k
 | Döviz kurları | [TCMB günlük kurları](https://www.tcmb.gov.tr/kurlar/today.xml) (döviz satış) | Kaynak olarak "TCMB" gösterilir. |
 | Döviz kurları (yedek) | [Frankfurter](https://frankfurter.dev) — Avrupa Merkez Bankası verisi | Ücretsiz, anahtarsız. |
 | Döviz kurları (ikinci yedek) | [Rates By Exchange Rate API](https://www.exchangerate-api.com) (open access) | Kur gösterilen sayfada atıf linki zorunlu; uygulama bunu otomatik ekler. Verinin toplu olarak yeniden dağıtılması yasak. |
+| Kalkış şehirleri ve havayolları | [OurAirports](https://ourairports.com/data/) `airports.csv` (tarifeli büyük ve orta havalimanları) · Türkçe adlar ve havayolu adları [Wikidata](https://www.wikidata.org)'dan (havalimanı IATA kodu P238, hizmet verdiği yer P931, havayolu kodu P229) · saat dilimleri [GeoNames](https://www.geonames.org) `cities1000` | OurAirports kamu malı; Wikidata CC0; GeoNames [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (atıf footer'da). Çok havalimanlı şehirler IATA metropol koduyla gruplanır (`src/lib/origins/metros.ts`). `src/data/origins.json` `npm run data:origins`, `src/data/airlines.json` `npm run data:airlines` ile üretilir, ayda bir tazelenir ve yalnızca sunucuda okunur (tarayıcı `/api/origins?q=` ile birkaç satır alır). Travelpayouts'un statik dosyaları yeniden dağıtım izni olmadığı için kullanılmaz. |
 | Uçuş fiyatları | [Travelpayouts](https://www.travelpayouts.com) — [Aviasales Data API](https://support.travelpayouts.com/hc/en-us/articles/203956163) (`v3/prices_for_dates`) | Partner programı; token yalnızca sunucuda (`TRAVELPAYOUTS_TOKEN`). **Fiyatlar önbellekten, tahminidir:** Aviasales kullanıcılarının son 48 saatteki aramalarında bulunmuş, bir yetişkin için gidiş-dönüş fiyatlarıdır; satın alma anındaki fiyat farklı olabilir. Her bilette "ÖNBELLEKTEN · … · TAHMİNİ" yazar ve "Güncel fiyatı gör" Aviasales'te aynı aramayı Travelpayouts partner linkiyle (`tp.media`, marker + proje kimliği) açar. Google Flights'a yalnızca link verilir. |
 | Konaklama | [Booking](https://www.booking.com) ve [Google Hotels](https://www.google.com/travel/hotels) | Yalnızca link (API yok): şehir, giriş-çıkış tarihi ve kişi sayısı dolu arama. Google Hotels kişi sayısını linkten almıyor. Uygulama otel fiyatı göstermez; ücretsiz bir otel fiyat kaynağı yok. |
 | Bütçe | Uçuş: Travelpayouts önbelleği · konaklama ve günlük harcama: **kullanıcının girdiği değer** · kur: yukarıdaki kur zinciri | Konaklama ve günlük harcama için hazır ya da "ortalama" değer yoktur; girilmeyen satır toplama eklenmez ve toplam "KISMİ TOPLAM" olarak işaretlenir. Değerler URL'de durur (`&flight=…&stay=…&daily=…&cur=…`), paylaşılan link aynı bütçeyi açar. |
@@ -109,6 +110,8 @@ Sık kullanılan komutlar (tam liste ve ayrıntılar [AGENTS.md](AGENTS.md)'de):
 | `npm run test:e2e` | Playwright uçtan uca testleri, axe erişilebilirlik ve klavye turu dahil (önce `npm run build`) |
 | `npm run data:places` | Mekân verisini yeniden çeker (ağ ister, ~3 saat) |
 | `npm run data:events` | Etkinlikleri Wikidata'dan yeniden çeker (ağ ister, şehir başına ~30 sn) |
+| `npm run data:origins` | Kalkış şehirlerini OurAirports, Wikidata ve GeoNames'ten yeniden çeker (ağ ister, ~1 dk) |
+| `npm run data:airlines` | Havayolu adlarını Wikidata'dan yeniden çeker (ağ ister, birkaç saniye) |
 
 Vercel'e kurulum, ortam değişkenleri, Travelpayouts hesabı ve aylık veri yenileme: [docs/DEPLOY.md](docs/DEPLOY.md).
 
@@ -134,13 +137,13 @@ Belgeler: [PRD](docs/PRD.md) · [DESIGN](docs/DESIGN.md) · [PLAN](docs/PLAN.md)
 
 ## Lisans
 
-Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](src/data/places/README.md). Open Graph kartlarındaki fontlar (`assets/og/`): SIL Open Font License 1.1. Her Commons fotoğrafı kendi lisansıyla, yazarı ve lisansı yanında gösterilir.
+Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](src/data/places/README.md). `src/data/origins.json`: OurAirports (kamu malı), Wikidata (CC0) ve saat dilimleri için GeoNames ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)); `src/data/airlines.json`: Wikidata (CC0). Open Graph kartlarındaki fontlar (`assets/og/`): SIL Open Font License 1.1. Her Commons fotoğrafı kendi lisansıyla, yazarı ve lisansı yanında gösterilir.
 
 ---
 
 ## English summary
 
-**Vacationist** is a free, open source planner for short city breaks from Turkey (Istanbul or Ankara). Pick one of 68 cities and your dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from IST, SAW or ESB and a budget in Turkish lira on one page. Live: <https://vacationist-app.vercel.app>
+**Vacationist** is a free, open source planner for short city breaks. Pick one of 68 cities and your dates; it lays out the sights, a day-by-day plan, stay links, the cheapest flight from any city with an airport (Istanbul by default) and a budget in Turkish lira on one page. Live: <https://vacationist-app.vercel.app>
 
 - Works fully without AI: the plan is deterministic, built from pre-fetched OpenStreetMap and Wikidata data. Places inside another place (the Tsar Bell in the Moscow Kremlin) come with it as sub-stops; far-off places carry a "~6 km from the centre" caption.
 - Readable names: a Latin-script name is preferred; otherwise the name is romanized with the country's official system, with the local name kept small.

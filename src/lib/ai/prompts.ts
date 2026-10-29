@@ -88,7 +88,7 @@ const DATA_RULE =
 
 export function planSystemPrompt(maxStops: number): string {
   return [
-    "You plan a short city trip for a traveller from Turkey.",
+    "You plan a short city trip for a traveller.",
     "Choose and order daytime places only from DATA.candidates, by their id. Never invent places, times, prices or opening hours.",
     DATA_RULE,
     "Rules:",
@@ -119,7 +119,7 @@ export type PlanSummaryDay = {
 
 export function editSystemPrompt(): string {
   return [
-    "You edit a city trip plan for a traveller from Turkey. The traveller's request is in REQUEST; the plan and the places you may use are in DATA.",
+    "You edit a city trip plan for a traveller. The traveller's request is in REQUEST; the plan and the places you may use are in DATA.",
     DATA_RULE,
     "Answer with editing commands only; the app applies them and computes times, opening hours and walking.",
     "Commands (place ids only from DATA.plan or DATA.candidates):",

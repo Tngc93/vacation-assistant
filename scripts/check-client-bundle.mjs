@@ -51,6 +51,31 @@ if (eventLeaks.length) {
   process.exit(1);
 }
 
+// The departure cities (src/data/origins.json, ~3,500) are server-only too: the origin combobox asks
+// /api/origins?q= for a handful. Sample the longer names and airport names; our 68 destinations are left out
+// (their names are in the client's destination list on purpose).
+const destinationCodes = new Set(
+  [...readFileSync(path.join(root, "src", "data", "destinations.ts"), "utf8").matchAll(/cityCode: "([A-Z]{3})"/g)].map((m) => m[1]),
+);
+const origins = JSON.parse(readFileSync(path.join(root, "src", "data", "origins.json"), "utf8")).cities.filter(
+  (c) => !destinationCodes.has(c.code),
+);
+const originNames = origins
+  .flatMap((c) => [c.name, ...c.airports.map((a) => a.name)])
+  .filter((name) => name.length >= 14)
+  .filter((_, i) => i % 25 === 0);
+if (destinationCodes.size < 50 || originNames.length < 50) {
+  console.error(`Only ${originNames.length} sample origin names (${destinationCodes.size} destinations); is src/data/origins.json filled?`);
+  process.exit(1);
+}
+const originLeaks = originNames.filter((name) => bundle.includes(name));
+// The file's own first line of cities, as JSON, would show a bundled copy even if names were escaped differently.
+const originMarkers = ['"timeZone":"Europe/London","airports"', "ourairports.com/data"].filter((m) => bundle.includes(m));
+if (originLeaks.length || originMarkers.length) {
+  console.error(`Server-only origin data found in the client bundle: ${[...originLeaks.slice(0, 5), ...originMarkers].join(", ")}`);
+  process.exit(1);
+}
+
 // The Travelpayouts token must never reach the browser. CI builds with a fake
 // "canary" token; the API client and the variable name must not appear either.
 const secretMarkers = ["api.travelpayouts.com", "X-Access-Token", "TRAVELPAYOUTS_TOKEN"];
@@ -64,4 +89,5 @@ if (secretLeaks.length) {
 
 console.log(`OK: none of ${names.length} sampled place names are in the client bundle.`);
 console.log(`OK: none of ${eventNames.length} event names are in the client bundle.`);
+console.log(`OK: none of ${originNames.length} sampled origin city and airport names are in the client bundle.`);
 console.log(`OK: no Travelpayouts token, header or API address in the client bundle${canary ? " (checked against the build's token)" : ""}.`);

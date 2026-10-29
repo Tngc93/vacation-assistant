@@ -13,7 +13,7 @@ export const MONTH_LIMIT = 200;
 export const NEARBY_DAYS = 3;
 
 export type PricesQuery = {
-  /** IATA airport code (IST, SAW, ESB). */
+  /** IATA airport or city code (IST, SAW, ESB, LON). */
   origin: string;
   /** IATA city code of the destination (BCN, AMS, LON…). */
   destination: string;

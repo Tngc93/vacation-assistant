@@ -20,7 +20,10 @@ if (!window.matchMedia) {
 // jsdom does not lay out pages, so it has no scrollIntoView.
 Element.prototype.scrollIntoView ??= function scrollIntoView() {};
 
-// Tests never touch the network: real sources are replaced by fixtures and fake fetchers.
+// Tests never touch the network: real sources are replaced by fixtures and fake fetchers. The one exception is
+// the opt-in live check of the price API (src/lib/flights/live.test.ts: only with a token, never in CI), which
+// passes this to the code under test as its fetcher.
+(globalThis as { __vaNetworkFetch?: typeof fetch }).__vaNetworkFetch ??= globalThis.fetch;
 globalThis.fetch = (input: RequestInfo | URL) =>
   Promise.reject(new Error(`Network access in tests is not allowed: ${String(input)}`));
 

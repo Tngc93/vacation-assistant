@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
+import { findOrigin } from "@/lib/origins/data";
 import { IST_BCN, SAW_BCN } from "./__fixtures__/samples";
 import type { Fetcher } from "./client";
 import { searchFlights, type FlightsResult } from "./search";

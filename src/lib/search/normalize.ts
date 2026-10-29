@@ -15,7 +15,7 @@ export function normalizeForSearch(text: string): string {
 }
 
 /** Everyday Turkish names for countries whose CLDR name differs (search only). */
-const COUNTRY_ALIASES: Record<string, readonly string[]> = {
+export const COUNTRY_ALIASES: Record<string, readonly string[]> = {
   GB: ["İngiltere", "Britanya"],
   US: ["ABD", "Amerika"],
   AE: ["BAE", "Emirlikler"],

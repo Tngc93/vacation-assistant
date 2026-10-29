@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { findDestination } from "@/data/destinations";
-import { findOrigin } from "@/data/origins";
+import { findOrigin } from "@/lib/origins/data";
 import { ESB_AMS_NOVEMBER as esbMonth } from "./__fixtures__/samples";
 import { IST_BCN as ist } from "./__fixtures__/samples";
 import { SAW_BCN as saw } from "./__fixtures__/samples";
@@ -153,6 +153,59 @@ describe("searchFlights", () => {
     expect(down).toMatchObject({ status: "unavailable", reason: "server" });
     const denied = await searchFlights(ankara, deps(routes({ "ESB-2026-11-14": 401 })));
     expect(denied).toMatchObject({ status: "unavailable", reason: "unauthorized" });
+  });
+
+  it("searches every London airport and the city code, and groups the pooled answers by airport", async () => {
+    const london: FlightsSearch = { ...istanbul, origin: findOrigin("LON")!, destination: findDestination("BCN")!, pax: 1 };
+    const from = (airport: string, flight: string, price: number) => ({
+      ...ist.data[0],
+      origin_airport: airport,
+      origin: "LON",
+      flight_number: flight,
+      price,
+      departure_at: "2026-11-14T06:00:00+00:00",
+    });
+    // The LON answer carries a Luton ticket the LTN answer itself does not.
+    const fetcher = routes({
+      "LGW-2026-11-14": [from("LGW", "8001", 3100)],
+      "STN-2026-11-14": [from("STN", "8002", 2400)],
+      "LON-2026-11-14": [from("LGW", "8001", 3100), from("LTN", "8003", 1900)],
+    });
+    const result = await searchFlights(london, deps(fetcher));
+    const exactCalls = fetcher.mock.calls.map(([url]) => new URL(url).searchParams).filter((q) => q.get("departure_at") === "2026-11-14");
+    expect(exactCalls.map((q) => q.get("origin")).sort()).toEqual(["LCY", "LGW", "LHR", "LON", "LTN", "SEN", "STN"]);
+    if (result.status !== "ok") throw new Error(result.status);
+    const byAirport = Object.fromEntries(result.groups.map((g) => [g.airport, g.tickets.map((t) => t.flightNumber)]));
+    expect(byAirport).toMatchObject({ LGW: ["8001"], STN: ["8002"], LTN: ["8003"], LHR: [], LCY: [], SEN: [] });
+    expect(result.groups.find((g) => g.airport === "LHR")?.name).toMatch(/Heathrow/);
+    // Cheapest overall is the Luton ticket found only through the city code.
+    expect(result.groups.flatMap((g) => g.tickets).find((t) => t.id === result.cheapestId)?.flightNumber).toBe("8003");
+    // Three airports had nothing on the dates: the ±3 day fallback asks once, for the whole city.
+    const monthCalls = fetcher.mock.calls.map(([url]) => new URL(url).searchParams).filter((q) => q.get("departure_at")?.length === 7);
+    expect([...new Set(monthCalls.map((q) => q.get("origin")))]).toEqual(["LON"]);
+    // Departure times are local to the origin: 06:00 in London (it would be 09:00 in İstanbul).
+    expect(result.groups.find((g) => g.airport === "LTN")?.tickets[0].out.departTime).toBe("06:00");
+  });
+
+  it("groups New York under one city: JFK, EWR and LGA", async () => {
+    const nyc = findOrigin("NYC")!;
+    expect(nyc.airports.map((a) => a.code)).toEqual(["EWR", "JFK", "LGA"]);
+    const fetcher = routes({});
+    const result = await searchFlights({ ...istanbul, origin: nyc }, deps(fetcher));
+    if (result.status !== "ok") throw new Error(result.status);
+    expect(result.groups.map((g) => [g.airport, g.outcome])).toEqual([
+      ["EWR", "none"],
+      ["JFK", "none"],
+      ["LGA", "none"],
+    ]);
+    expect(result.links.aviasales).toBe("https://www.aviasales.com/search/NYC1411BCN18112");
+  });
+
+  it("does not search when the origin is the destination city", async () => {
+    const fetcher = routes({ "BCN-2026-11-14": ist.data });
+    const result = await searchFlights({ ...istanbul, origin: findOrigin("BCN")! }, deps(fetcher));
+    expect(fetcher).not.toHaveBeenCalled();
+    expect(result).toMatchObject({ status: "unavailable", reason: "same-city" });
   });
 
   it("serves labelled sample data in fixture mode without a token, for any trip dates", async () => {
