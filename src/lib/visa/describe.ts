@@ -1,3 +1,4 @@
+import type { I18n } from "@/i18n/i18n";
 import type { VisaRequirement } from "./requirements";
 
 /**
@@ -17,58 +18,30 @@ export type VisaPresentation = {
   sentence: string;
 };
 
-/** Stamp text, colour and explanation for a requirement. */
-export function describeVisa(requirement: VisaRequirement, countryTr: string): VisaPresentation {
+/** Stamp text, colour and explanation for a requirement, in the interface language. */
+export function describeVisa(requirement: VisaRequirement, country: string, { m, f }: Pick<I18n, "m" | "f">): VisaPresentation {
+  const t = m.visa;
   switch (requirement.kind) {
     case "visa-free":
       return requirement.days
         ? {
-            label: "Vizesiz",
-            detail: `${requirement.days} gün`,
+            label: t.visaFree,
+            detail: f(t.days, { count: requirement.days }),
             tone: "ok",
-            sentence: `${countryTr} için ${requirement.days} güne kadar vize gerekmiyor.`,
+            sentence: f(t.visaFreeDays, { country, count: requirement.days }),
           }
-        : {
-            label: "Vizesiz",
-            tone: "ok",
-            sentence: `${countryTr} için vize gerekmiyor; veride kalış süresi belirtilmemiş.`,
-          };
+        : { label: t.visaFree, tone: "ok", sentence: f(t.visaFreeNoDays, { country }) };
     case "visa-on-arrival":
-      return {
-        label: "Varışta vize",
-        tone: "sea",
-        sentence: `${countryTr} vizeyi varışta, sınır kapısında veriyor.`,
-      };
+      return { label: t.onArrival, tone: "sea", sentence: f(t.onArrivalSentence, { country }) };
     case "e-visa":
-      return {
-        label: "E-vize",
-        tone: "sea",
-        sentence: `${countryTr} için seyahatten önce çevrimiçi e-vize alman gerekiyor.`,
-      };
+      return { label: t.eVisa, tone: "sea", sentence: f(t.eVisaSentence, { country }) };
     case "eta":
-      return {
-        label: "ETA",
-        detail: "Elektronik izin",
-        tone: "sea",
-        sentence: `${countryTr} için seyahatten önce çevrimiçi elektronik seyahat izni (ETA) alman gerekiyor.`,
-      };
+      return { label: t.eta, detail: t.etaDetail, tone: "sea", sentence: f(t.etaSentence, { country }) };
     case "visa-required":
-      return {
-        label: "Vize gerekli",
-        tone: "warn",
-        sentence: `${countryTr} için seyahatten önce vize başvurusu yapman gerekiyor.`,
-      };
+      return { label: t.required, tone: "warn", sentence: f(t.requiredSentence, { country }) };
     case "no-admission":
-      return {
-        label: "Giriş yok",
-        tone: "warn",
-        sentence: `Veriye göre ${countryTr} şu an Türk vatandaşlarını kabul etmiyor.`,
-      };
+      return { label: t.noAdmission, tone: "warn", sentence: f(t.noAdmissionSentence, { country }) };
     case "unknown":
-      return {
-        label: "Bilinmiyor",
-        tone: "muted",
-        sentence: `${countryTr} için vize bilgimiz yok; resmî sayfadan kontrol et.`,
-      };
+      return { label: t.unknown, tone: "muted", sentence: f(t.unknownSentence, { country }) };
   }
 }

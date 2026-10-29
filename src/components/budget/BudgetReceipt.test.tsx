@@ -1,6 +1,8 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { I18nProvider } from "@/i18n/client";
+import { en } from "@/i18n/messages/en";
 import { CURRENCY_STORAGE_KEY } from "@/lib/budget/currency";
 import type { FlightLine } from "@/lib/budget/receipt";
 import { BUDGET_FLIGHT_DROPPED_EVENT, BUDGET_STAY_EVENT } from "@/lib/budget/params";
@@ -100,8 +102,8 @@ describe("BudgetReceipt", () => {
     expect(screen.getByLabelText("Gecelik konaklama (tüm odalar)")).toHaveValue("3000");
     expect(param("cur")).toBeNull();
     expect(param("stay")).toBe("3000");
-    // The default is not stored.
-    expect(window.localStorage.getItem(CURRENCY_STORAGE_KEY)).toBeNull();
+    // Stored too: the English pages default to EUR, so a chosen TRY must be remembered.
+    expect(window.localStorage.getItem(CURRENCY_STORAGE_KEY)).toBe("TRY");
   });
 
   it("converts between two foreign currencies through lira", async () => {
@@ -240,5 +242,37 @@ describe("BudgetReceipt", () => {
       <BudgetReceipt initial={{ ...empty, flight: "ESB-PC1234-202611140705-202611181010" }} flight={flight} rates={rates} nights={4} days={5} pax={2} />,
     );
     expect(screen.queryByText("Kalkış değişti; seçili uçuş bütçeden çıkarıldı.")).not.toBeInTheDocument();
+  });
+});
+
+describe("BudgetReceipt in English", () => {
+  beforeEach(() => window.history.replaceState(null, "", `/en/plan?${SEARCH}#butce`));
+  afterEach(() => {
+    window.localStorage.clear();
+    resetPickedCurrency();
+  });
+
+  const renderEnglish = () =>
+    render(
+      <I18nProvider locale="en" messages={en}>
+        <BudgetCurrencyPicker fromLink={null} />
+        <BudgetReceipt initial={empty} flight={flight} rates={rates} nights={4} days={5} pax={2} />
+      </I18nProvider>,
+    );
+
+  it("defaults to EUR, words the receipt in English and formats with Intl (en-GB)", () => {
+    renderEnglish();
+    const english = screen.getByRole("region", { name: "Budget receipt" });
+    expect(within(english).getByText("BUDGET RECEIPT · EUR")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "EUR" })).toHaveAttribute("aria-pressed", "true");
+    // 2 × 4.380 ₺ = 8.760 ₺ at 55,618 ₺/EUR.
+    expect(within(english).getByText("€158", { selector: "[aria-live]" })).toBeInTheDocument();
+    expect(screen.getByLabelText("Stay per night (all rooms)")).toBeInTheDocument();
+  });
+
+  it("lets the link's ?cur= and the visitor's own choice come before the default", () => {
+    window.localStorage.setItem(CURRENCY_STORAGE_KEY, "TRY");
+    renderEnglish();
+    expect(within(screen.getByRole("region", { name: "Budget receipt" })).getByText("BUDGET RECEIPT · TRY")).toBeInTheDocument();
   });
 });

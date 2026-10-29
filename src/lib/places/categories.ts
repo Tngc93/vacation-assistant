@@ -1,6 +1,6 @@
 /**
  * The single source of truth for city-guide categories: the URL id, the
- * Turkish label, the Overpass filters and how places are ranked.
+ * Overpass filters and how places are ranked. Their names are messages (`categories` in src/i18n/messages).
  */
 
 export type OsmTags = Record<string, string | undefined>;
@@ -15,7 +15,6 @@ export type Ranking = "wikipedia" | "detail";
 
 export type Category = {
   id: CategoryId;
-  label: string;
   /**
    * Overpass tag filters; each becomes one `nwr…(around)` statement. Exact
    * key=value pairs only: regex filters cannot use Overpass's index and time
@@ -28,7 +27,6 @@ export type Category = {
 export const CATEGORIES: Record<CategoryId, Category> = {
   see: {
     id: "see",
-    label: "Görülecek yer",
     filters: [
       '["tourism"="attraction"]',
       '["historic"="monument"]',
@@ -40,16 +38,14 @@ export const CATEGORIES: Record<CategoryId, Category> = {
   },
   museum: {
     id: "museum",
-    label: "Müze",
     filters: ['["tourism"="museum"]', '["tourism"="gallery"]'],
     ranking: "wikipedia",
   },
-  viewpoint: { id: "viewpoint", label: "Manzara noktası", filters: ['["tourism"="viewpoint"]'], ranking: "wikipedia" },
-  restaurant: { id: "restaurant", label: "Restoran", filters: ['["amenity"="restaurant"]'], ranking: "detail" },
-  cafe: { id: "cafe", label: "Kafe", filters: ['["amenity"="cafe"]'], ranking: "detail" },
+  viewpoint: { id: "viewpoint", filters: ['["tourism"="viewpoint"]'], ranking: "wikipedia" },
+  restaurant: { id: "restaurant", filters: ['["amenity"="restaurant"]'], ranking: "detail" },
+  cafe: { id: "cafe", filters: ['["amenity"="cafe"]'], ranking: "detail" },
   cocktail: {
     id: "cocktail",
-    label: "Kokteyl bar",
     filters: [
       '["amenity"="bar"]["cocktails"="yes"]',
       '["amenity"="bar"]["bar"="cocktail"]',
@@ -57,8 +53,8 @@ export const CATEGORIES: Record<CategoryId, Category> = {
     ],
     ranking: "detail",
   },
-  pub: { id: "pub", label: "Bar ve pub", filters: ['["amenity"="bar"]', '["amenity"="pub"]'], ranking: "detail" },
-  club: { id: "club", label: "Gece kulübü", filters: ['["amenity"="nightclub"]'], ranking: "detail" },
+  pub: { id: "pub", filters: ['["amenity"="bar"]', '["amenity"="pub"]'], ranking: "detail" },
+  club: { id: "club", filters: ['["amenity"="nightclub"]'], ranking: "detail" },
 };
 
 export function isCategoryId(value: string): value is CategoryId {

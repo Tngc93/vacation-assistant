@@ -4,6 +4,7 @@ import { travelBetween } from "@/lib/itinerary/travel";
 import { FAR_MIN_KM, farCaption, farFromCentreKm, transitFromCentre } from "./far";
 import type { PlacesFile, StoredPlace } from "./file";
 import { applyPlaceRules } from "./rules";
+import { EN, TR } from "@/test/i18n";
 
 // Barcelona's centre (destinations.ts), and points due east of it at a given straight-line distance.
 const CENTRE = { lat: 41.3825, lon: 2.1769 };
@@ -38,9 +39,10 @@ describe("farFromCentreKm: beyond the larger of the city's data radius and 5 km"
   });
 
   it("reads 'MERKEZE ~X KM' in whole kilometres (neutral, no UZAK)", () => {
-    expect(farCaption(5.42)).toBe("MERKEZE ~5 KM");
-    expect(farCaption(5.9)).toBe("MERKEZE ~6 KM");
-    expect(farCaption(0.4)).toBe("MERKEZE ~1 KM");
+    expect(farCaption(5.42, TR)).toBe("MERKEZE ~5 KM");
+    expect(farCaption(5.9, TR)).toBe("MERKEZE ~6 KM");
+    expect(farCaption(0.4, TR)).toBe("MERKEZE ~1 KM");
+    expect(farCaption(5.9, EN)).toBe("~6 KM FROM CENTRE");
   });
 
   it("suggests transport from the centre by the plan's walking rule (travel.ts)", () => {

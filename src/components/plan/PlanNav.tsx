@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 
+/** The plan's sections; the ids are the page's anchors in both languages, the labels messages (`plan.nav…`). */
 export const PLAN_NAV = [
-  { id: "yerler", label: "Yerler" },
-  { id: "gun-gun-plan", label: "Plan" },
-  { id: "konaklama", label: "Konaklama" },
-  { id: "ucuslar", label: "Uçuşlar" },
-  { id: "butce", label: "Bütçe" },
+  { id: "yerler", label: "navPlaces" },
+  { id: "gun-gun-plan", label: "navPlan" },
+  { id: "konaklama", label: "navStays" },
+  { id: "ucuslar", label: "navFlights" },
+  { id: "butce", label: "navBudget" },
 ] as const;
 
 /**
@@ -16,6 +18,7 @@ export const PLAN_NAV = [
  * (aria-current), the last one at the bottom of the page; on phones the menu scrolls sideways within itself.
  */
 export function PlanNav() {
+  const { m } = useI18n();
   const [active, setActive] = useState<string>(PLAN_NAV[0].id);
   useEffect(() => {
     if (typeof IntersectionObserver === "undefined") return;
@@ -46,7 +49,7 @@ export function PlanNav() {
   }, []);
 
   return (
-    <nav aria-label="Plan bölümleri" className="sticky top-0 z-30 -mx-4 border-b border-rule bg-paper px-4 md:-mx-8 md:px-8 print:hidden">
+    <nav aria-label={m.plan.sectionsNav} className="sticky top-0 z-30 -mx-4 border-b border-rule bg-paper px-4 md:-mx-8 md:px-8 print:hidden">
       <ul className="flex gap-6 overflow-x-auto [scrollbar-width:none]">
         {PLAN_NAV.map((item) => (
           <li key={item.id} className="shrink-0">
@@ -58,7 +61,7 @@ export function PlanNav() {
                 active === item.id ? "border-ink text-ink" : "border-transparent text-ink-muted hover:text-ink",
               )}
             >
-              {item.label}
+              {m.plan[item.label]}
             </a>
           </li>
         ))}

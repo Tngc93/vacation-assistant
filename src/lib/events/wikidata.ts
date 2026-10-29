@@ -13,13 +13,13 @@
  */
 import { distanceKm } from "@/lib/geo";
 import { externalFetch } from "@/lib/net";
-import { readableName } from "@/lib/places/names";
+import { isLatin, readableName } from "@/lib/places/names";
 import { sparql } from "@/lib/places/landmarks";
 import type { Fetcher } from "@/lib/places/overpass";
 import { commonsFileName, fetchCardPhotos } from "@/lib/places/photos";
 import { fetchEntitySummaries } from "@/lib/places/wikidata";
 import { addMonths } from "@/lib/search/dates";
-import type { EventType, StoredEvent } from "./file";
+import type { EventsFile, EventType, StoredEvent } from "./file";
 
 /** Classes that make an item an event we show, with all their subclasses; the first matching type wins. */
 export const EVENT_CLASSES: ReadonlyArray<readonly [string, EventType, string]> = [
@@ -320,12 +320,14 @@ export function toStoredEvent(raw: RawEvent, today: string, minWikipedias = MIN_
   if (!label) return null;
   if (raw.details.adult || [raw.labels.tr, raw.labels.en].some((l) => l && ADULT_NAME.test(l))) return null;
   const { name, localName } = readableName({ name: label, labels: raw.labels });
+  const nameEn = englishLabel(name, raw.labels);
   const editions = editionsInWindow(raw.editions, today);
   const months = raw.details.months.length <= 6 ? raw.details.months : [];
   if (!editions.length && !months.length) return null;
   return {
     qid: raw.qid,
     name,
+    ...(nameEn ? { nameEn } : {}),
     ...(localName ? { localName } : {}),
     type: raw.type,
     wikipedias: raw.wikipedias,
@@ -336,6 +338,34 @@ export function toStoredEvent(raw: RawEvent, today: string, minWikipedias = MIN_
 }
 
 const BATCH = 100;
+
+/** The English label for the English interface, when it is in the Latin script and differs from the stored name. */
+export function englishLabel(name: string, labels: { en?: string }): string | undefined {
+  const en = labels.en?.trim();
+  return en && isLatin(en) && en !== name ? en : undefined;
+}
+
+/**
+ * Adds only the English names of a stored file's events and venues (`npm run data:events -- --labels`); nothing else
+ * changes. Throws if a query fails.
+ */
+export async function addEnglishEventNames(file: EventsFile, { fetcher = externalFetch }: { fetcher?: Fetcher } = {}): Promise<EventsFile> {
+  const qids = file.events.flatMap((e) => [e.qid, ...(e.venue ? [e.venue.qid] : [])]);
+  const labels = qids.length ? await fetchEntitySummaries(qids, { fetcher }) : new Map<string, { en?: string }>();
+  return {
+    ...file,
+    events: file.events.map(({ nameEn: _n, ...event }) => {
+      const nameEn = englishLabel(event.name, labels.get(event.qid) ?? {});
+      let venue = event.venue;
+      if (venue) {
+        const { nameEn: _v, ...rest } = venue;
+        const venueEn = englishLabel(rest.name, labels.get(rest.qid) ?? {});
+        venue = venueEn ? { ...rest, nameEn: venueEn } : rest;
+      }
+      return { ...event, ...(nameEn ? { nameEn } : {}), ...(venue ? { venue } : {}) };
+    }),
+  };
+}
 
 /** Most known first, then by QID; at most MAX_EVENTS. */
 export function rankEvents<T extends Pick<StoredEvent, "qid" | "wikipedias">>(events: readonly T[]): T[] {
@@ -381,7 +411,9 @@ export async function fetchCityEvents(
     const v = d.venues.length === 1 ? d.venues[0] : undefined;
     const vInfo = v ? summaries.get(v.qid) : undefined;
     const vLabel = vInfo?.tr ?? vInfo?.en;
-    const venue = v && vLabel ? { qid: v.qid, name: readableName({ name: vLabel, labels: vInfo }).name, lat: v.lat, lon: v.lon } : undefined;
+    const venueName = vLabel ? readableName({ name: vLabel, labels: vInfo }).name : undefined;
+    const venueEn = venueName ? englishLabel(venueName, vInfo ?? {}) : undefined;
+    const venue = v && venueName ? { qid: v.qid, name: venueName, ...(venueEn ? { nameEn: venueEn } : {}), lat: v.lat, lon: v.lon } : undefined;
     const event = info
       ? toStoredEvent(
           { qid, type: types.get(qid)!, labels: { tr: info.tr, en: info.en }, wikipedias: info.wikipedias, details: d, editions: editions.get(qid) ?? [], venue },

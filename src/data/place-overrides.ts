@@ -25,8 +25,9 @@ export type PlaceOverride = {
 export type ExteriorOverride = PlaceOverride & {
   /** Months (1–12) when the inside is open and the visit is a normal one. */
   openMonths?: readonly number[];
-  /** Shown on the plan stop when it is seen from outside (Turkish, the UI's language). */
+  /** Shown on the plan stop when it is seen from outside, in Turkish and in English. */
   note?: string;
+  noteEn?: string;
 };
 export type RelinkOverride = {
   /** The OSM object, as stored ("way/278033604"). */
@@ -129,6 +130,7 @@ export const PLACE_OVERRIDES: Readonly<Record<string, CityOverrides>> = {
         visitMin: 30,
         openMonths: [7, 8, 9],
         note: "Devlet salonları yalnızca yazın açık; nöbet değişimini kaçırma",
+        noteEn: "The State Rooms open only in summer; don't miss the Changing of the Guard",
       },
       { qid: "Q842089", name: "Nelson's Column", reason: "A column, seen from outside.", visitMin: 15 },
     ],

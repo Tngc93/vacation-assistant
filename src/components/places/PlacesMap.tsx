@@ -1,5 +1,7 @@
 "use client";
 
+import { MapAttribution } from "@/components/places/MapAttribution";
+import { useI18n } from "@/i18n/client";
 import "maplibre-gl/dist/maplibre-gl.css";
 import {
   LngLatBounds,
@@ -14,7 +16,6 @@ import { cn } from "@/lib/cn";
 import type { StoredPlace } from "@/lib/places/file";
 import {
   applyPatches,
-  MAP_ATTRIBUTION,
   OPENFREEMAP_STYLE_URL,
   PALETTE_TOKENS,
   stylePatches,
@@ -64,6 +65,7 @@ function loadBaseStyle() {
 
 /** MapLibre + OpenFreeMap, recoloured from the design tokens and kept in step with the list. */
 export default function PlacesMap({ places, center, activeId, selectedId, onActivate, onSelect, className }: PlacesMapProps) {
+  const { m } = useI18n();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const readyRef = useRef(false);
@@ -243,7 +245,7 @@ export default function PlacesMap({ places, center, activeId, selectedId, onActi
     <div
       ref={containerRef}
       role="region"
-      aria-label="Mekân haritası"
+      aria-label={m.places.map}
       // What the map shows, readable without WebGL (end-to-end tests): how many places, the lit and the picked one.
       data-places={places.length}
       data-active={activeId ?? ""}
@@ -251,19 +253,9 @@ export default function PlacesMap({ places, center, activeId, selectedId, onActi
       className={cn("group relative w-full overflow-hidden rounded-md border border-rule bg-paper-raised", className ?? "h-80 md:h-[32rem]")}
     >
       <p className="absolute inset-0 hidden items-center justify-center p-6 text-center text-caption text-ink-muted group-data-[failed=true]:flex">
-        Harita şu an yüklenemedi; liste kullanılabilir.
+        {m.places.mapFailedList}
       </p>
-      {/* Our own attribution: every source named once (see MAP_ATTRIBUTION). */}
-      <p className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl-sm bg-paper-raised/90 px-2 py-0.5 text-[0.6875rem] text-ink-muted">
-        {MAP_ATTRIBUTION.map((source, index) => (
-          <span key={source.href}>
-            {index > 0 ? " · " : null}
-            <a href={source.href} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
-              {source.label}
-            </a>
-          </span>
-        ))}
-      </p>
+      <MapAttribution />
     </div>
   );
 }

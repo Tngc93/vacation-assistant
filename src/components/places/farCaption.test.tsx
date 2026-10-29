@@ -5,6 +5,7 @@ import { EVENING, SIGHTS } from "@/lib/itinerary/testCity";
 import { farCaption } from "@/lib/places/far";
 import { PlaceCard } from "./PlaceCard";
 import { PlacesCarousel } from "./PlacesCarousel";
+import { TR } from "@/test/i18n";
 
 // MapLibre needs WebGL; the captions are what is under test.
 vi.mock("next/dynamic", () => ({ default: () => () => <div data-testid="map" /> }));
@@ -12,7 +13,7 @@ vi.mock("next/dynamic", () => ({ default: () => () => <div data-testid="map" /> 
 // 5.4 km east of the test city's centre, beyond its radius (places/far.ts decides; here it is given).
 const FAR = { id: "wikidata/Q180901", name: "Atomium", lat: 41.39, lon: 2.235, wikipediaCount: 90, wikidataId: "Q180901", farKm: 5.4 };
 const CENTRE = { lat: 41.39, lon: 2.17 };
-const CAPTION = farCaption(FAR.farKm);
+const CAPTION = farCaption(FAR.farKm, TR);
 
 describe("the far-from-centre caption", () => {
   it("is the same text on the carousel card, in the place details and on the plan's stop", () => {

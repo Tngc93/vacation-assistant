@@ -3,10 +3,11 @@
 import { CalendarDays, ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { Caption } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
+import type { I18n } from "@/i18n/i18n";
 import { cn } from "@/lib/cn";
-import { EVENT_TYPE_LABELS } from "@/lib/events/file";
 import { eventItemId, tripEventCaption, type TripEvent } from "@/lib/events/trip";
-import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
+import type { CategoryId } from "@/lib/places/categories";
 import type { StoredPlace } from "@/lib/places/file";
 import { parseOpeningHours, todayStatus } from "@/lib/places/hours";
 import type { ShownPlace } from "@/lib/places/rules";
@@ -56,6 +57,7 @@ function prefersReducedMotion(): boolean {
  * move between cards, and the next Tab leaves the carousel.
  */
 export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, onActivate, onSelect, reveal }: Props) {
+  const { m } = useI18n();
   const track = useRef<HTMLUListElement>(null);
   const [index, setIndex] = useState(0);
   const [atEnd, setAtEnd] = useState(items.length <= 1);
@@ -113,7 +115,7 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
       <ul
         ref={track}
         role="list"
-        aria-label="Görülecek yerler"
+        aria-label={m.places.list}
         onScroll={onScroll}
         onKeyDown={onKeyDown}
         className="relative flex min-h-0 flex-1 snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-1 [scrollbar-width:none] motion-reduce:scroll-auto"
@@ -144,10 +146,10 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
           {pad(Math.min(index + 1, items.length))} / {pad(items.length)}
         </Caption>
         <div className="flex gap-2">
-          <ArrowButton label="Önceki yer" disabled={index === 0} onClick={() => goTo(index - 1)}>
+          <ArrowButton label={m.places.previous} disabled={index === 0} onClick={() => goTo(index - 1)}>
             <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.5} />
           </ArrowButton>
-          <ArrowButton label="Sonraki yer" disabled={atEnd} onClick={() => goTo(index + 1)}>
+          <ArrowButton label={m.places.next} disabled={atEnd} onClick={() => goTo(index + 1)}>
             <ChevronRight aria-hidden="true" size={16} strokeWidth={1.5} />
           </ArrowButton>
         </div>
@@ -176,10 +178,11 @@ function ArrowButton({ label, disabled, onClick, children }: { label: string; di
 
 /** "BUGÜN AÇIK · 09:00–20:00", computed in the browser only (never stale after hydration). */
 function TodayHours({ value, timeZone }: { value: string | undefined; timeZone: string }) {
+  const i18n = useI18n();
   const week = useMemo(() => parseOpeningHours(value), [value]);
   const now = useMinuteNow();
   if (!week || !now) return null;
-  const status = todayStatus(week, now, timeZone);
+  const status = todayStatus(week, now, timeZone, i18n);
   return status ? (
     <Caption as="span" tone={status.open ? "ok" : "muted"} className="mt-1 block">
       {status.text}
@@ -188,8 +191,8 @@ function TodayHours({ value, timeZone }: { value: string | undefined; timeZone: 
 }
 
 /** "Fotoğraf: Canaan · CC BY-SA 4.0 · Wikimedia Commons" (visually hidden in the card's name; the details link both). */
-export function photoCredit(photo: { author: string; license: string }): string {
-  return `Fotoğraf: ${photo.author} · ${photo.license} · Wikimedia Commons`;
+export function photoCredit(photo: { author: string; license: string }, { m, f }: Pick<I18n, "m" | "f">): string {
+  return f(m.common.photoCredit, { author: photo.author, license: photo.license });
 }
 
 /**
@@ -219,6 +222,8 @@ function PlaceTile({
   onActivate: (id: string | null) => void;
   onSelect: (id: string) => void;
 }) {
+  const i18n = useI18n();
+  const { intl, m, f } = i18n;
   const { place, category, rank } = item;
   const Icon = CATEGORY_ICONS[category];
   const mustSee = category === "see";
@@ -244,17 +249,17 @@ function PlaceTile({
       <span className="flex min-h-0 flex-1 flex-col p-4">
         {mustSee ? (
           <Caption as="span" tone="ink" className="block">
-            MUTLAKA GÖR · {pad(rank)}
+            {f(m.places.mustSee, { rank: pad(rank) })}
           </Caption>
         ) : null}{" "}
-        <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{place.name}</span>{" "}
+        <span className="mt-1 line-clamp-2 font-display text-heading leading-tight text-ink">{place.name}</span>{" "}
         {place.parentName ? (
           <Caption as="span" className="mt-1 block truncate">
-            {place.parentName.toLocaleUpperCase("tr")} İÇİNDE
+            {f(m.places.inside, { name: place.parentName.toLocaleUpperCase(intl) })}
           </Caption>
         ) : null}{" "}
         <Caption as="span" className="mt-auto block pt-2">
-          {CATEGORIES[category].label} · {place.farKm !== undefined ? farCaption(place.farKm) : walkToCentre(place, center)}
+          {m.categories[category]} · {place.farKm !== undefined ? farCaption(place.farKm, i18n) : walkToCentre(place, center, i18n)}
         </Caption>{" "}
         <TodayHours value={place.openingHours} timeZone={timeZone} />
       </span>{" "}
@@ -282,14 +287,14 @@ function PlaceTile({
         ) : (
           <span className="flex h-full flex-col justify-between gap-2 bg-paper px-4 pb-3 pt-10">
             <Icon aria-hidden="true" size={40} strokeWidth={1.5} className="text-ink-muted" />
-            {about ? <span className="line-clamp-3 block text-caption text-ink-muted">{about}</span> : null}
+            {about ? <span className="line-clamp-3 text-caption text-ink-muted">{about}</span> : null}
           </span>
         )}
         <span aria-hidden="true" className="absolute left-3 top-3 rounded-sm bg-paper-raised px-1.5 py-0.5 font-mono text-micro tabular text-ink">
           {pad(rank)}
         </span>
       </span>
-      {place.photo ? <span className="sr-only">. {photoCredit(place.photo)}</span> : null}
+      {place.photo ? <span className="sr-only">. {photoCredit(place.photo, i18n)}</span> : null}
     </button>
   );
 }
@@ -316,6 +321,8 @@ function EventTile({
   onActivate: (id: string | null) => void;
   onSelect: (id: string) => void;
 }) {
+  const i18n = useI18n();
+  const { m, f } = i18n;
   const { event } = item.trip;
   const id = eventItemId(event);
   return (
@@ -335,11 +342,11 @@ function EventTile({
     >
       <span className="flex min-h-0 flex-1 flex-col p-4">
         <Caption as="span" tone={item.trip.kind === "exact" ? "ink" : "warn"} className="block">
-          {tripEventCaption(item.trip)}
+          {tripEventCaption(item.trip, i18n)}
         </Caption>{" "}
-        <span className="mt-1 line-clamp-2 block font-display text-heading leading-tight text-ink">{event.name}</span>{" "}
+        <span className="mt-1 line-clamp-2 font-display text-heading leading-tight text-ink">{event.name}</span>{" "}
         <Caption as="span" className="mt-auto block pt-2">
-          Etkinlik · {EVENT_TYPE_LABELS[event.type]} · Wikidata
+          {f(m.places.eventCaption, { type: m.events.types[event.type] })}
         </Caption>
       </span>{" "}
       <span className="relative order-first block h-[58%] min-h-32 shrink-0 overflow-hidden border-b border-rule">
@@ -363,14 +370,14 @@ function EventTile({
         ) : (
           <span className="flex h-full flex-col justify-between gap-2 bg-paper px-4 pb-3 pt-10">
             <CalendarDays aria-hidden="true" size={40} strokeWidth={1.5} className="text-ink-muted" />
-            {event.venue ? <span className="line-clamp-3 block text-caption text-ink-muted">{event.venue.name}</span> : null}
+            {event.venue ? <span className="line-clamp-3 text-caption text-ink-muted">{event.venue.name}</span> : null}
           </span>
         )}
         <span aria-hidden="true" className="absolute left-3 top-3 rounded-sm bg-paper-raised px-1.5 py-0.5 font-mono text-micro tabular text-ink">
           {pad(item.rank)}
         </span>
       </span>
-      {event.photo ? <span className="sr-only">. {photoCredit(event.photo)}</span> : null}
+      {event.photo ? <span className="sr-only">. {photoCredit(event.photo, i18n)}</span> : null}
     </button>
   );
 }

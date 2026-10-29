@@ -5,6 +5,7 @@ import { DESTINATIONS } from "@/data/destinations";
 import { eventsFileSchema, type EventsFile } from "./file";
 import { dayNotes, eventsInTrip, mastheadLine, tripEventCaption } from "./trip";
 import { MAX_EVENTS } from "./wikidata";
+import { EN, TR } from "@/test/i18n";
 
 const dir = path.join(process.cwd(), "src/data/events");
 const read = (code: string): EventsFile => eventsFileSchema.parse(JSON.parse(readFileSync(path.join(dir, `${code}.json`), "utf8")));
@@ -35,10 +36,11 @@ describe("real data", () => {
     // Wikidata has no Oktoberfest edition with day-precise dates (checked 2026-10-28), only its months (P2922).
     if (oktoberfest!.kind === "exact") {
       expect(oktoberfest!.edition.start.slice(5, 7)).toBe("09");
-      expect(mastheadLine(found)).toBe("BU TARİHLERDE: OKTOBERFEST");
+      expect(mastheadLine(found, TR)).toBe("BU TARİHLERDE: OKTOBERFEST");
     } else {
-      expect(tripEventCaption(oktoberfest!)).toBe("GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA");
-      expect(dayNotes([oktoberfest!], "2027-09-22", "2027-09-26")).toEqual({});
+      expect(tripEventCaption(oktoberfest!, TR)).toBe("GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA");
+      expect(tripEventCaption(oktoberfest!, EN)).toBe("USUALLY SEPTEMBER–OCTOBER · CHECK THE DATES");
+      expect(dayNotes([oktoberfest!], "2027-09-22", "2027-09-26", TR)).toEqual({});
     }
   });
 

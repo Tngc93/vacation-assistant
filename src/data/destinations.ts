@@ -8,6 +8,8 @@
  * metropolitan-area codes (e.g. LON, PAR, MIL). Re-check with
  * `npm run verify:destinations`.
  */
+import type { Locale } from "@/i18n/locales";
+
 export type Destination = {
   /** Turkish city name shown in the UI. */
   nameTr: string;
@@ -1014,6 +1016,70 @@ export const DESTINATIONS: readonly Destination[] = [
     aliases: ["NYC"],
   },
 ];
+
+/**
+ * English country names of the destinations, from CLDR (Intl.DisplayNames "en-GB", 2026-10-29), written out so the
+ * server and every browser show the same name ("&" spelled "and").
+ */
+const COUNTRY_EN: Record<string, string> = {
+  AE: "United Arab Emirates",
+  AL: "Albania",
+  AT: "Austria",
+  AZ: "Azerbaijan",
+  BA: "Bosnia and Herzegovina",
+  BE: "Belgium",
+  BG: "Bulgaria",
+  CH: "Switzerland",
+  CZ: "Czechia",
+  DE: "Germany",
+  DK: "Denmark",
+  EE: "Estonia",
+  EG: "Egypt",
+  ES: "Spain",
+  FI: "Finland",
+  FR: "France",
+  GB: "United Kingdom",
+  GE: "Georgia",
+  GR: "Greece",
+  HR: "Croatia",
+  HU: "Hungary",
+  IE: "Ireland",
+  IT: "Italy",
+  JO: "Jordan",
+  JP: "Japan",
+  KR: "South Korea",
+  LV: "Latvia",
+  MA: "Morocco",
+  MK: "North Macedonia",
+  MT: "Malta",
+  MV: "Maldives",
+  MY: "Malaysia",
+  NL: "Netherlands",
+  NO: "Norway",
+  PL: "Poland",
+  PT: "Portugal",
+  QA: "Qatar",
+  RO: "Romania",
+  RS: "Serbia",
+  RU: "Russia",
+  SE: "Sweden",
+  SG: "Singapore",
+  SI: "Slovenia",
+  TH: "Thailand",
+  TN: "Tunisia",
+  US: "United States",
+  UZ: "Uzbekistan",
+};
+
+/** The city name in the interface language: "Barselona" or "Barcelona". */
+export function cityName(d: Pick<Destination, "nameTr" | "nameEn">, locale: Locale): string {
+  return locale === "en" ? d.nameEn : d.nameTr;
+}
+
+/** The country name in the interface language: "İspanya" or "Spain". */
+export function countryName(d: Pick<Destination, "countryTr" | "countryCode">, locale: Locale): string {
+  return locale === "en" ? (COUNTRY_EN[d.countryCode] ?? d.countryTr) : d.countryTr;
+}
 
 const BY_CITY_CODE = new Map(DESTINATIONS.map((d) => [d.cityCode, d]));
 

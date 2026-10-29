@@ -2,6 +2,7 @@
 
 import { Monitor, Moon, Sun, type LucideIcon } from "lucide-react";
 import { useCallback, useSyncExternalStore } from "react";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import {
   THEME_STORAGE_KEY,
@@ -10,10 +11,10 @@ import {
   type ThemePreference,
 } from "@/lib/theme";
 
-const OPTIONS: ReadonlyArray<{ value: ThemePreference; label: string; Icon: LucideIcon }> = [
-  { value: "system", label: "Sistem teması", Icon: Monitor },
-  { value: "light", label: "Açık tema", Icon: Sun },
-  { value: "dark", label: "Koyu tema", Icon: Moon },
+const OPTIONS: ReadonlyArray<{ value: ThemePreference; Icon: LucideIcon }> = [
+  { value: "system", Icon: Monitor },
+  { value: "light", Icon: Sun },
+  { value: "dark", Icon: Moon },
 ];
 
 const listeners = new Set<() => void>();
@@ -44,6 +45,7 @@ function subscribe(listener: () => void) {
 
 /** Three-way theme switch: follow the system, or force light / dark. */
 export function ThemeToggle({ className }: { className?: string }) {
+  const { m } = useI18n();
   const preference = useSyncExternalStore(subscribe, readPreference, () => "system" as const);
 
   const select = useCallback((value: ThemePreference) => {
@@ -63,10 +65,11 @@ export function ThemeToggle({ className }: { className?: string }) {
   return (
     <div
       role="group"
-      aria-label="Tema"
+      aria-label={m.theme.group}
       className={cn("inline-flex items-center gap-0.5 rounded-sm border border-rule bg-paper-raised p-0.5", className)}
     >
-      {OPTIONS.map(({ value, label, Icon }) => {
+      {OPTIONS.map(({ value, Icon }) => {
+        const label = m.theme[value];
         const pressed = preference === value;
         return (
           <button

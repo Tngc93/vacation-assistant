@@ -67,6 +67,14 @@ export function aviasalesSearchUrl(search: LinkSearch, partner?: Partner): strin
   return partnerUrl(`https://www.aviasales.com/search/${aviasalesParams(search)}`, partner);
 }
 
+/** A Google Flights link in the interface language (the search builds it in Turkish): `hl=en-GB` in English. */
+export function withGoogleLanguage(url: string, locale: "tr" | "en"): string {
+  if (locale === "tr" || !url.startsWith("https://www.google.com/")) return url;
+  const next = new URL(url);
+  next.searchParams.set("hl", "en-GB");
+  return next.toString();
+}
+
 /** The same round trip on Google Flights, as a plain link (no API), in Turkish and lira. */
 export function googleFlightsUrl(search: Omit<LinkSearch, "pax">): string {
   const url = new URL("https://www.google.com/travel/flights");

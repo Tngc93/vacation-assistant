@@ -5,6 +5,7 @@
  * holidays, months, sunrise, comments, fallback rules…). A refused value is
  * hidden in the UI: no information is better than wrong information.
  */
+import type { I18n } from "@/i18n/i18n";
 
 /** Minutes from the day's start; `end` may pass 1440 when a place closes after midnight. */
 export type Interval = { start: number; end: number };
@@ -12,7 +13,9 @@ export type Interval = { start: number; end: number };
 export type WeekSchedule = Interval[][];
 
 const DAYS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"] as const;
-export const DAY_NAMES_TR = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"];
+/** The hours texts are in the interface language (messages `hours`); Turkish times take their locative suffix. */
+type Lang = Pick<I18n, "locale" | "m" | "f">;
+const at = (time: string, { locale }: Pick<Lang, "locale">) => (locale === "tr" ? withLocative(time) : time);
 
 const DAY = "(?:Mo|Tu|We|Th|Fr|Sa|Su)";
 const DAY_SELECTOR = new RegExp(`^${DAY}(?:-${DAY})?(?:,${DAY}(?:-${DAY})?)*$`);
@@ -128,8 +131,12 @@ export type OpenStatus =
   | { open: true; text: string }
   | { open: false; text: string };
 
-/** "Şu an açık · 18:00'de kapanır" / "Şu an kapalı · yarın 09:30'da açılır", or null when it cannot be said. */
-export function openStatus(week: WeekSchedule, now: Date, timeZone: string): OpenStatus | null {
+/**
+ * "Şu an açık · 18:00'de kapanır" / "Şu an kapalı · yarın 09:30'da açılır" ("Open now · closes at 18:00" / "Closed
+ * now · opens tomorrow at 09:30"), or null when it cannot be said.
+ */
+export function openStatus(week: WeekSchedule, now: Date, timeZone: string, lang: Lang): OpenStatus | null {
+  const { m, f } = lang;
   const { day, minute } = localWeekMinute(now, timeZone);
   if (day < 0) return null;
   // Absolute minutes since this week's Monday 00:00, with the week repeated so overnight spans wrap.
@@ -151,41 +158,45 @@ export function openStatus(week: WeekSchedule, now: Date, timeZone: string): Ope
       if (!next) break;
       end = next.end;
     }
-    if (end - nowAbs >= 7 * 1440) return { open: true, text: "Şu an açık · 7/24" };
-    return { open: true, text: `Şu an açık · ${withLocative(clock(end))} kapanır` };
+    if (end - nowAbs >= 7 * 1440) return { open: true, text: m.hours.openAlways };
+    return { open: true, text: f(m.hours.closesAt, { time: at(clock(end), lang) }) };
   }
 
   const next = spans.find((s) => s.start > nowAbs);
   if (!next || next.start - nowAbs > 7 * 1440) return null;
   const nextDay = Math.floor(next.start / 1440);
   const when =
-    nextDay === day ? "bugün" : nextDay === day + 1 ? "yarın" : DAY_NAMES_TR[((nextDay % 7) + 7) % 7];
-  return { open: false, text: `Şu an kapalı · ${when} ${withLocative(clock(next.start))} açılır` };
+    nextDay === day ? m.hours.today : nextDay === day + 1 ? m.hours.tomorrow : f(m.hours.onDay, { day: m.hours.days[((nextDay % 7) + 7) % 7] });
+  return { open: false, text: f(m.hours.opensAt, { when, time: at(clock(next.start), lang) }) };
 }
 
-/** Readable week, grouping consecutive days with the same hours: "Pazartesi–Cuma 09:00–18:00". */
-export function describeWeek(week: WeekSchedule): string[] {
+/** Readable week, grouping consecutive days with the same hours: "Pazartesi–Cuma 09:00–18:00" ("Monday–Friday …"). */
+export function describeWeek(week: WeekSchedule, { m }: Pick<Lang, "m">): string[] {
+  const DAY_NAMES = m.hours.days;
   const label = (intervals: Interval[]) =>
     intervals.length === 0
-      ? "kapalı"
-      : intervals.map((i) => (i.end - i.start >= 1440 ? "tüm gün" : `${clock(i.start)}–${clock(i.end)}`)).join(", ");
+      ? m.hours.closed
+      : intervals.map((i) => (i.end - i.start >= 1440 ? m.hours.allDay : `${clock(i.start)}–${clock(i.end)}`)).join(", ");
   const lines: string[] = [];
   let from = 0;
   for (let d = 1; d <= 7; d++) {
     if (d < 7 && label(week[d]) === label(week[from])) continue;
-    const days = from === d - 1 ? DAY_NAMES_TR[from] : `${DAY_NAMES_TR[from]}–${DAY_NAMES_TR[d - 1]}`;
+    const days = from === d - 1 ? DAY_NAMES[from] : `${DAY_NAMES[from]}–${DAY_NAMES[d - 1]}`;
     lines.push(`${days} ${label(week[from])}`);
     from = d;
   }
   return lines;
 }
 
-/** "BUGÜN AÇIK · 09:00–20:00", "BUGÜN KAPALI": today's hours in the city's time zone; null outside the format. */
-export function todayStatus(week: WeekSchedule, now: Date, timeZone: string): { open: boolean; text: string } | null {
+/**
+ * "BUGÜN AÇIK · 09:00–20:00", "BUGÜN KAPALI" ("OPEN TODAY · …", "CLOSED TODAY"): today's hours in the city's time
+ * zone; null outside the format.
+ */
+export function todayStatus(week: WeekSchedule, now: Date, timeZone: string, { m, f }: Pick<Lang, "m" | "f">): { open: boolean; text: string } | null {
   const { day } = localWeekMinute(now, timeZone);
   if (day < 0) return null;
   const intervals = week[day] ?? [];
-  if (intervals.length === 0) return { open: false, text: "BUGÜN KAPALI" };
-  const hours = intervals.map((i) => (i.end - i.start >= 1440 ? "TÜM GÜN" : `${clock(i.start)}–${clock(i.end)}`)).join(", ");
-  return { open: true, text: `BUGÜN AÇIK · ${hours}` };
+  if (intervals.length === 0) return { open: false, text: m.hours.closedToday };
+  const hours = intervals.map((i) => (i.end - i.start >= 1440 ? m.hours.allDayCaps : `${clock(i.start)}–${clock(i.end)}`)).join(", ");
+  return { open: true, text: f(m.hours.openToday, { hours }) };
 }

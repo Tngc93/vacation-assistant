@@ -150,7 +150,7 @@ describe("invalid or missing params", () => {
     if (result.ok) return;
     expect(result.draft.depart).toBe("2026-11-01");
     expect(result.draft.return).toBeUndefined();
-    expect(result.issues).toEqual([{ field: "return", message: "Konaklama en fazla 30 gece olabilir." }]);
+    expect(result.issues).toEqual([{ field: "return", code: "returnTooLong" }]);
   });
 
   it("rejects impossible calendar dates", () => {

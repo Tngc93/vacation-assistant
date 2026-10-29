@@ -1,4 +1,5 @@
-import { DESTINATIONS, type Destination } from "@/data/destinations";
+import { cityName, countryName, DESTINATIONS, type Destination } from "@/data/destinations";
+import type { Locale } from "@/i18n/locales";
 
 /**
  * Folds text for search: Turkish-aware lowercase, no diacritics, dotless ı → i,
@@ -29,11 +30,15 @@ type Indexed = { destination: Destination; names: string[]; countries: string[];
 const INDEX: Indexed[] = DESTINATIONS.map((destination) => ({
   destination,
   names: [destination.nameTr, destination.nameEn, ...(destination.aliases ?? [])].map(normalizeForSearch),
-  countries: [destination.countryTr, ...(COUNTRY_ALIASES[destination.countryCode] ?? [])].map(normalizeForSearch),
+  countries: [
+    destination.countryTr,
+    countryName(destination, "en"),
+    ...(COUNTRY_ALIASES[destination.countryCode] ?? []),
+  ].map(normalizeForSearch),
   codes: [destination.cityCode, ...destination.airports].map(normalizeForSearch),
 }));
 
-const collator = new Intl.Collator("tr");
+const collators = { tr: new Intl.Collator("tr"), en: new Intl.Collator("en-GB") };
 
 function score(entry: Indexed, query: string): number | null {
   if (entry.codes.includes(query)) return 0;
@@ -46,12 +51,17 @@ function score(entry: Indexed, query: string): number | null {
   return null;
 }
 
-/** Destinations matching a city name, country name or IATA code, best matches first. */
-export function searchDestinations(query: string): Destination[] {
+/**
+ * Destinations matching a city name, country name (Turkish or English) or IATA code, best matches first; ties
+ * in the interface language's alphabetical order of its city names.
+ */
+export function searchDestinations(query: string, locale: Locale = "tr"): Destination[] {
   const q = normalizeForSearch(query);
-  if (!q) return [...DESTINATIONS].sort((a, b) => collator.compare(a.nameTr, b.nameTr));
+  const collator = collators[locale];
+  const byName = (a: Destination, b: Destination) => collator.compare(cityName(a, locale), cityName(b, locale));
+  if (!q) return [...DESTINATIONS].sort(byName);
   return INDEX.map((entry) => ({ entry, s: score(entry, q) }))
     .filter((r): r is { entry: Indexed; s: number } => r.s !== null)
-    .sort((a, b) => a.s - b.s || collator.compare(a.entry.destination.nameTr, b.entry.destination.nameTr))
+    .sort((a, b) => a.s - b.s || byName(a.entry.destination, b.entry.destination))
     .map((r) => r.entry.destination);
 }

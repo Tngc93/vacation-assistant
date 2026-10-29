@@ -5,7 +5,9 @@ import { LocalTime } from "@/components/city/LocalTime";
 import { HeroExplorer, type CategoryResult } from "@/components/places/HeroExplorer";
 import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
 import { Caption, Skeleton } from "@/components/ui";
-import { cityCentre, type Destination } from "@/data/destinations";
+import { cityCentre, cityName, countryName, type Destination } from "@/data/destinations";
+import type { Locale } from "@/i18n/locales";
+import { getI18n } from "@/i18n/server";
 import type { BudgetCurrency } from "@/lib/budget/currency";
 import { formatDay } from "@/lib/format";
 import type { CategoryId } from "@/lib/places/categories";
@@ -16,6 +18,7 @@ import { daysBetween, isoToDate } from "@/lib/search/dates";
 import { editHref, type SearchState } from "@/lib/search/params";
 
 type Props = {
+  locale: Locale;
   search: SearchState;
   destination: Destination;
   categories: CategoryId[];
@@ -25,10 +28,16 @@ type Props = {
 };
 
 /** The plan's first screen (DESIGN.md "Plan hero"): city, info line, chips and places carousel, photo and map. */
-export async function PlanHero({ search, destination, categories, showEvents, budgetCurrency }: Props) {
-  const [file, eventsFile] = await Promise.all([loadPlacesFile(destination.cityCode), loadEventsFile(destination.cityCode)]);
+export async function PlanHero({ locale, search, destination, categories, showEvents, budgetCurrency }: Props) {
+  const i18n = getI18n(locale);
+  const { intl, m, f } = i18n;
+  const [file, eventsFile] = await Promise.all([
+    loadPlacesFile(destination.cityCode, locale),
+    loadEventsFile(destination.cityCode, locale),
+  ]);
   const events = eventsInTrip(eventsFile?.events ?? [], search.depart, search.return);
-  const inTown = mastheadLine(events);
+  const inTown = mastheadLine(events, i18n);
+  const city = cityName(destination, locale);
   const results: CategoryResult[] = categories.map((category) => {
     const entry = file?.categories[category];
     return entry?.status === "ok"
@@ -36,23 +45,23 @@ export async function PlanHero({ search, destination, categories, showEvents, bu
       : { category, status: "missing" };
   });
   const nights = daysBetween(search.depart, search.return);
-  const day = (iso: string) => formatDay(isoToDate(iso)).toLocaleUpperCase("tr");
+  const day = (iso: string) => formatDay(isoToDate(iso), locale).toLocaleUpperCase(intl);
 
   const title = (
     <div>
-      <Caption as="p">Plan · {destination.countryTr}</Caption>
-      <h1 className="mt-2 break-words font-display text-headline">{destination.nameTr}</h1>
+      <Caption as="p">{f(m.og.planCountry, { country: countryName(destination, locale) })}</Caption>
+      <h1 className="mt-2 break-words font-display text-headline">{city}</h1>
       <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-micro uppercase tracking-[0.08em] text-ink-muted">
         <span className="tabular">
-          {day(search.depart)} → {day(search.return)} · {nights} GECE
+          {day(search.depart)} → {day(search.return)} · {f(m.plan.nightsCaps, { count: nights })}
         </span>
         <span aria-hidden="true">·</span>
         <LocalTime timeZone={destination.timeZone} />
         <Suspense fallback={<RateLineFallback className="inline-block" />}>
           <RateLine currency={destination.currency} fromLink={budgetCurrency} className="inline-flex" />
         </Suspense>
-        <Link href={editHref(search)} className="text-ink underline underline-offset-4">
-          Düzenle
+        <Link href={editHref(search, locale)} className="text-ink underline underline-offset-4">
+          {m.plan.edit}
         </Link>
       </div>
       {inTown ? <p className="mt-2 font-mono text-micro uppercase tracking-[0.08em] text-ink">{inTown}</p> : null}
@@ -62,7 +71,7 @@ export async function PlanHero({ search, destination, categories, showEvents, bu
   return (
     <HeroExplorer
       title={title}
-      photo={file?.photo ? <CityPhoto photo={file.photo} cityName={destination.nameTr} /> : null}
+      photo={file?.photo ? <CityPhoto photo={file.photo} cityName={city} i18n={i18n} /> : null}
       center={cityCentre(destination)}
       timeZone={destination.timeZone}
       categories={categories}
@@ -74,10 +83,10 @@ export async function PlanHero({ search, destination, categories, showEvents, bu
   );
 }
 
-export function PlanHeroSkeleton() {
+export function PlanHeroSkeleton({ locale }: { locale: Locale }) {
   return (
     <div aria-busy="true" className="grid gap-5 pb-8 pt-6 md:h-[calc(100svh-4rem-1px)] md:max-h-[60rem] md:grid-cols-12 md:gap-8">
-      <span className="sr-only">Plan yükleniyor</span>
+      <span className="sr-only">{getI18n(locale).m.plan.loading}</span>
       <div className="grid content-start gap-4 md:col-span-7">
         <Skeleton className="h-3 w-24" />
         <Skeleton className="h-12 w-full max-w-64" />

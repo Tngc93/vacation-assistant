@@ -2,7 +2,9 @@
 
 import { Search } from "lucide-react";
 import { useId, useMemo, useState, type KeyboardEvent } from "react";
-import { findDestination, type Destination } from "@/data/destinations";
+import { cityName, countryName, findDestination, type Destination } from "@/data/destinations";
+import { useI18n } from "@/i18n/client";
+import type { Locale } from "@/i18n/locales";
 import { cn } from "@/lib/cn";
 import { searchDestinations } from "@/lib/search/normalize";
 
@@ -14,8 +16,8 @@ export type DestinationComboboxProps = {
   className?: string;
 };
 
-function displayName(d: Destination | undefined): string {
-  return d ? d.nameTr : "";
+function displayName(d: Destination | undefined, locale: Locale): string {
+  return d ? cityName(d, locale) : "";
 }
 
 /**
@@ -26,26 +28,27 @@ function displayName(d: Destination | undefined): string {
  * Keys: ↓/↑ open and move, Alt+↓ opens, Enter picks, Esc closes (or clears
  * when already closed), Tab leaves without changing the choice.
  */
-export function DestinationCombobox({ value, onChange, label = "Nereye", error, className }: DestinationComboboxProps) {
+export function DestinationCombobox({ value, onChange, label, error, className }: DestinationComboboxProps) {
+  const { locale, m, f } = useI18n();
   const id = useId();
   const inputId = `${id}-input`;
   const listId = `${id}-list`;
   const errorId = `${id}-error`;
   const selected = value ? findDestination(value) : undefined;
 
-  const [query, setQuery] = useState(() => displayName(selected));
+  const [query, setQuery] = useState(() => displayName(selected, locale));
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
 
   // Show every city while the input still shows the current choice.
-  const showingSelection = selected !== undefined && query === displayName(selected);
-  const results = useMemo(() => searchDestinations(showingSelection ? "" : query), [query, showingSelection]);
+  const showingSelection = selected !== undefined && query === displayName(selected, locale);
+  const results = useMemo(() => searchDestinations(showingSelection ? "" : query, locale), [query, showingSelection, locale]);
 
   const [syncedValue, setSyncedValue] = useState(value);
   if (syncedValue !== value) {
     // Keep the text in step when the value changes from outside (e.g. the URL).
     setSyncedValue(value);
-    setQuery(displayName(selected));
+    setQuery(displayName(selected, locale));
   }
 
   const optionId = (index: number) => `${id}-option-${index}`;
@@ -63,7 +66,7 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
   const choose = (destination: Destination) => {
     onChange(destination.cityCode);
     setSyncedValue(destination.cityCode);
-    setQuery(displayName(destination));
+    setQuery(displayName(destination, locale));
     setOpen(false);
     setActive(-1);
   };
@@ -128,7 +131,7 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
   return (
     <div className={cn("relative", className)}>
       <label htmlFor={inputId} className="sr-only">
-        {label}
+        {label ?? m.search.where}
       </label>
       <div
         className={cn(
@@ -151,7 +154,7 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
           autoComplete="off"
           autoCapitalize="none"
           spellCheck={false}
-          placeholder="Şehir, ülke ya da kod"
+          placeholder={m.search.placeholder}
           value={query}
           onChange={(event) => {
             setQuery(event.target.value);
@@ -165,7 +168,7 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
           onBlur={() => {
             close();
             // Leaving the field restores the chosen city, or keeps the typed text for correction.
-            if (selected) setQuery(displayName(selected));
+            if (selected) setQuery(displayName(selected, locale));
           }}
           className="h-full min-w-0 flex-1 bg-transparent text-body text-ink outline-none placeholder:text-ink-muted"
         />
@@ -174,7 +177,7 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
       <ul
         id={listId}
         role="listbox"
-        aria-label="Varış şehirleri"
+        aria-label={m.search.destinations}
         hidden={!open}
         className="absolute inset-x-0 top-full z-40 mt-1 max-h-72 overflow-y-auto rounded-md border border-rule bg-paper-raised py-1 shadow-ticket"
       >
@@ -197,9 +200,9 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
               )}
             >
               <span className="min-w-0 truncate">
-                <span className="font-medium">{destination.nameTr}</span>
+                <span className="font-medium">{cityName(destination, locale)}</span>
                 <span className={cn("ml-2 text-caption", isActive ? "text-paper-raised" : "text-ink-muted")}>
-                  {destination.countryTr}
+                  {countryName(destination, locale)}
                 </span>
               </span>
               <span className="font-mono text-caption tabular tracking-[0.08em]">{destination.cityCode}</span>
@@ -208,13 +211,13 @@ export function DestinationCombobox({ value, onChange, label = "Nereye", error, 
         })}
         {results.length === 0 ? (
           <li role="presentation" className="px-3 py-2 text-caption text-ink-muted">
-            Bu aramayla eşleşen şehir yok. Şehir, ülke ya da IATA koduyla dene.
+            {m.search.noMatch}
           </li>
         ) : null}
       </ul>
 
       <p aria-live="polite" className="sr-only">
-        {open ? (results.length ? `${results.length} şehir bulundu.` : "Eşleşen şehir yok.") : ""}
+        {open ? (results.length ? f(m.search.found, { count: results.length }) : m.search.none) : ""}
       </p>
 
       {error ? (

@@ -70,7 +70,9 @@ export function isoToDate(iso: string): Date {
   return date;
 }
 
-export type DateIssue = { field: "depart" | "return"; message: string };
+/** A broken trip rule; the interface words it (messages `search.issues`). */
+export type DateIssueCode = "departPast" | "departTooFar" | "returnNotAfter" | "returnTooLong" | "returnTooFar";
+export type DateIssue = { field: "depart" | "return"; code: DateIssueCode };
 
 /** Checks the trip rules: no past dates, return after departure, at most 30 nights, at most 12 months ahead. */
 export function checkTripDates(depart: string, ret: string, today: string): DateIssue[] {
@@ -78,18 +80,18 @@ export function checkTripDates(depart: string, ret: string, today: string): Date
   const latest = latestTripDate(today);
 
   if (depart < today) {
-    issues.push({ field: "depart", message: "Gidiş tarihi geçmişte kalmış." });
+    issues.push({ field: "depart", code: "departPast" });
   } else if (depart > latest) {
-    issues.push({ field: "depart", message: "Gidiş tarihi en fazla 12 ay sonrası olabilir." });
+    issues.push({ field: "depart", code: "departTooFar" });
   }
 
   const nights = daysBetween(depart, ret);
   if (nights < 1) {
-    issues.push({ field: "return", message: "Dönüş, gidişten en az bir gün sonra olmalı." });
+    issues.push({ field: "return", code: "returnNotAfter" });
   } else if (nights > MAX_NIGHTS) {
-    issues.push({ field: "return", message: `Konaklama en fazla ${MAX_NIGHTS} gece olabilir.` });
+    issues.push({ field: "return", code: "returnTooLong" });
   } else if (ret > latest && depart <= latest) {
-    issues.push({ field: "return", message: "Dönüş tarihi en fazla 12 ay sonrası olabilir." });
+    issues.push({ field: "return", code: "returnTooFar" });
   }
 
   return issues;

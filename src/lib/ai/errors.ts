@@ -1,3 +1,4 @@
+import type { I18n } from "@/i18n/i18n";
 import type { ProviderId } from "./providers";
 
 export type AiErrorKind =
@@ -15,41 +16,21 @@ export type AiErrorKind =
   | "request"
   | "invalid";
 
-/** Calm, Turkish, and says what to do next. Never echoes the key or the provider's raw text. */
-export const AI_ERROR_MESSAGES: Record<AiErrorKind, string> = {
-  auth: "Anahtar geçersiz ya da bu sağlayıcıya ait değil. Anahtarı kontrol edip yeniden bağlan.",
-  quota: "Hesabındaki kota ya da kredi bitmiş görünüyor. Sağlayıcının panelinden kontrol edebilirsin.",
-  freeTier: "Bu model ücretsiz katmanda kullanılamıyor. Bağlantı ayarları'ndan başka bir model seç.",
-  /** Gemini's 429 with no QuotaFailure or RetryInfo: which limit is not said, so it is not taken for a per-minute one. */
-  quotaUnknown:
-    "Google kota sınırına takıldığını söylüyor ama hangi sınır olduğunu belirtmedi. Bir dakika bekleyip yeniden dene; tekrarlarsa ai.dev/rate-limit sayfasından kullanımına bak.",
-  rate: "Sağlayıcı şu an çok fazla istek aldığını söylüyor. Biraz bekleyip yeniden dene.",
-  model: "Seçilen model bu anahtarla kullanılamıyor. Listeden başka bir model seç.",
-  network: "Sağlayıcıya ulaşılamadı. İnternet bağlantını kontrol edip yeniden dene.",
-  timeout: "Sağlayıcı zamanında cevap vermedi. Yeniden dene ya da daha hızlı bir model seç.",
-  overloaded: "Bu model şu an çok yoğun. Biraz sonra yeniden dene ya da Bağlantı ayarları'ndan başka bir model seç.",
-  server: "Sağlayıcı tarafında geçici bir sorun var. Biraz sonra yeniden dene.",
-  refusal: "Model bu isteği yanıtlamadı. İsteği farklı sözcüklerle yeniden dene.",
-  /** HTTP 400 and other 4xx the provider gives no better reason for. */
-  request: "Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.",
-  /** Only for a model answer that fails our schema or rules (never an HTTP error). */
-  invalid: "Modelin cevabı kurallarımıza uymadı; hiçbir şey değişmedi.",
-};
-
 /** What the caption under an error may show: the HTTP status and the model name, nothing else. */
 export type AiErrorDetail = { status?: number; model?: string; retryAfterMs?: number };
 
-/** "yaklaşık 25 saniye", "yaklaşık 3 dakika" */
-function waitText(ms: number): string {
-  const seconds = Math.max(1, Math.ceil(ms / 1000));
-  return seconds < 120 ? `yaklaşık ${seconds} saniye` : `yaklaşık ${Math.ceil(seconds / 60)} dakika`;
-}
-
-function messageFor(kind: AiErrorKind, detail: AiErrorDetail): string {
-  if (kind === "rate" && detail.retryAfterMs !== undefined) {
-    return `Sağlayıcı şu an çok fazla istek aldığını söylüyor. ${waitText(detail.retryAfterMs).replace(/^y/, "Y")} sonra yeniden dene.`;
+/**
+ * The calm message, in the interface language (messages `ai.errors`), that says what to do next. Never echoes the
+ * key or the provider's raw text.
+ */
+export function aiErrorText(error: unknown, { m, f }: Pick<I18n, "m" | "f">): string {
+  const e = error instanceof AiError ? error : new AiError("network");
+  if (e.kind === "rate" && e.retryAfterMs !== undefined) {
+    const seconds = Math.max(1, Math.ceil(e.retryAfterMs / 1000));
+    const wait = seconds < 120 ? f(m.ai.waitSeconds, { count: seconds }) : f(m.ai.waitMinutes, { count: Math.ceil(seconds / 60) });
+    return f(m.ai.rateWait, { wait });
   }
-  return AI_ERROR_MESSAGES[kind];
+  return m.ai.errors[e.kind];
 }
 
 export class AiError extends Error {
@@ -62,7 +43,8 @@ export class AiError extends Error {
     readonly kind: AiErrorKind,
     detail: AiErrorDetail = {},
   ) {
-    super(messageFor(kind, detail));
+    // The kind only: the interface words it in its language (aiErrorText).
+    super(`AI error: ${kind}`);
     this.name = "AiError";
     this.status = detail.status;
     this.model = detail.model;

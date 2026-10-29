@@ -1,5 +1,6 @@
 "use client";
 
+import { useI18n } from "@/i18n/client";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 import type { StoredPlace } from "@/lib/places/file";
@@ -48,10 +49,11 @@ export function MapFacade({
   const x = (lon: number) => 5 + ((lon - minLon) * kx * 90) / w;
   const y = (lat: number) => 5 + ((maxLat - lat) * 90) / h;
   const lit = (id: string) => id === activeId || id === selectedId;
+  const { m } = useI18n();
   return (
     <div
       role="region"
-      aria-label="Mekân haritası"
+      aria-label={m.places.map}
       data-places={places.length}
       data-active={activeId ?? ""}
       data-selected={selectedId ?? ""}

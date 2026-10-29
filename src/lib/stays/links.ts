@@ -12,6 +12,8 @@ export type StaySearch = {
   checkIn: string;
   checkOut: string;
   adults: number;
+  /** The interface language: Google Hotels opens in it. */
+  locale?: "tr" | "en";
 };
 
 export function bookingUrl(search: StaySearch): string {
@@ -32,7 +34,7 @@ export const GOOGLE_HOTELS_DEFAULT_GUESTS = 2;
 export function googleHotelsUrl(search: Omit<StaySearch, "adults">): string {
   const params = new URLSearchParams({
     q: `hotels in ${search.city} from ${search.checkIn} to ${search.checkOut}`,
-    hl: "tr",
+    hl: search.locale === "en" ? "en-GB" : "tr",
     curr: "TRY",
   });
   return `https://www.google.com/travel/search?${params}`;

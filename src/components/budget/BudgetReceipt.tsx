@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useState } from "react";
 import { Caption } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { formatMoney } from "@/lib/format";
 import { convertAmount, currencyLabel, effectiveCurrency, parseBudgetCurrency } from "@/lib/budget/currency";
@@ -85,6 +86,7 @@ function AmountField({
 }
 
 function Row({ row, currency }: { row: ReceiptRow; currency: string }) {
+  const { locale } = useI18n();
   const hasNotes = Boolean(row.detail || row.captions.length || row.note);
   // A <dl> group holds only <dt> and <dd>: the dotted leader lives in the term, the notes in a second <dd>.
   return (
@@ -95,7 +97,7 @@ function Row({ row, currency }: { row: ReceiptRow; currency: string }) {
         <span aria-hidden="true" className="min-w-4 flex-1 translate-y-[-0.3em] border-b border-dotted border-ink-muted" />
       </dt>
       <dd className={cn("shrink-0 font-mono text-body tabular", row.amount === null && "text-ink-muted")}>
-        {row.amount === null ? row.missing : formatMoney(row.amount, currency)}
+        {row.amount === null ? row.missing : formatMoney(row.amount, currency, locale)}
       </dd>
       {hasNotes ? (
         <dd className="col-span-2">
@@ -114,13 +116,16 @@ function Row({ row, currency }: { row: ReceiptRow; currency: string }) {
 
 /** DESIGN.md "Budget receipt": dotted leaders, a mono source under each line, a double rule above the total. */
 export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Props) {
+  const i18n = useI18n();
+  const { locale, m, f } = i18n;
+  const toInput = (minor: number) => amountToInput(minor, locale);
   const chosen = useBudgetCurrency(parseBudgetCurrency(initial.cur));
   // Without the chosen currency's rate the budget stays in TRY and says so.
   const cur = effectiveCurrency(chosen, rates);
   // The currency of the two fields and of `?stay=`/`?daily=` (always the link's `?cur=`); `cur` once converted.
   const [amountCur, setAmountCur] = useState(initial.cur);
-  const [stayText, setStayText] = useState(initial.stay ? amountToInput(initial.stay) : "");
-  const [dailyText, setDailyText] = useState(initial.daily ? amountToInput(initial.daily) : "");
+  const [stayText, setStayText] = useState(initial.stay ? toInput(initial.stay) : "");
+  const [dailyText, setDailyText] = useState(initial.daily ? toInput(initial.daily) : "");
   const [entered, setEntered] = useState<{ stay: Entered; daily: Entered }>({
     stay: initial.stay ? { minor: initial.stay, currency: initial.cur } : null,
     daily: initial.daily ? { minor: initial.daily, currency: initial.cur } : null,
@@ -134,8 +139,8 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
     const stay = convert(entered.stay);
     const daily = convert(entered.daily);
     if (!(entered.stay && stay === null) && !(entered.daily && daily === null)) {
-      if (stay !== null) setStayText(amountToInput(stay));
-      if (daily !== null) setDailyText(amountToInput(daily));
+      if (stay !== null) setStayText(toInput(stay));
+      if (daily !== null) setDailyText(toInput(daily));
       setAmountCur(cur);
     }
   }
@@ -162,12 +167,12 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
       if (inField === null) return;
       event.preventDefault();
       setEntered((e) => ({ ...e, stay: { minor, currency } }));
-      setStayText(amountToInput(inField));
+      setStayText(amountToInput(inField, locale));
       writeUrl({ stay: inField });
     };
     window.addEventListener(BUDGET_STAY_EVENT, onStay);
     return () => window.removeEventListener(BUDGET_STAY_EVENT, onStay);
-  }, [amountCur, rates]);
+  }, [amountCur, rates, locale]);
 
   // A new origin took the chosen flight out (the link no longer has it); said once, until another flight is chosen.
   const [flightDropped, setFlightDropped] = useState(false);
@@ -181,17 +186,20 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
   const read = (text: string) => (text.trim() ? parseAmountInput(text) : null);
   const stay = read(stayText);
   const daily = read(dailyText);
-  const receipt = buildReceipt({
-    flight,
-    stay: stay?.ok ? stay.minor : null,
-    daily: daily?.ok ? daily.minor : null,
-    amountCur,
-    cur,
-    rates,
-    nights,
-    days,
-    pax,
-  });
+  const receipt = buildReceipt(
+    {
+      flight,
+      stay: stay?.ok ? stay.minor : null,
+      daily: daily?.ok ? daily.minor : null,
+      amountCur,
+      cur,
+      rates,
+      nights,
+      days,
+      pax,
+    },
+    i18n,
+  );
 
   const onAmount = (key: "stay" | "daily", set: (t: string) => void) => (text: string) => {
     set(text);
@@ -207,30 +215,28 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
       {/* Printed: only the total (the inputs and rows stay on screen). */}
       <div className="grid gap-5 print:hidden">
         <AmountField
-          label="Gecelik konaklama (tüm odalar)"
-          hint={`${nights} gece ile çarpılır. Otel fiyatını Booking ya da Google Hotels'te görüp buraya yazabilirsin.`}
+          label={m.budget.stayLabel}
+          hint={f(m.budget.stayHint, { nights })}
           currency={amountCur}
           value={stayText}
-          error={stay && !stay.ok ? stay.error : null}
+          error={stay && !stay.ok ? m.budget.amountErrors[stay.error] : null}
           onChange={onAmount("stay", setStayText)}
         />
         <AmountField
-          label="Kişi başı günlük harcama"
-          hint={`${days} gün × ${pax} kişi ile çarpılır: yemek, ulaşım, müze…`}
+          label={m.budget.dailyLabel}
+          hint={f(m.budget.dailyHint, { days, pax })}
           currency={amountCur}
           value={dailyText}
-          error={daily && !daily.ok ? daily.error : null}
+          error={daily && !daily.ok ? m.budget.amountErrors[daily.error] : null}
           onChange={onAmount("daily", setDailyText)}
         />
       </div>
 
-      <section aria-label="Bütçe fişi" className="rounded-md border border-rule bg-paper-raised px-5 py-4 shadow-ticket md:px-8 md:py-6">
-        <Caption as="p">BÜTÇE FİŞİ · {currencyLabel(receipt.cur)}</Caption>
-        {chosen !== cur ? (
-          <p className="mt-1 text-caption text-warn">{chosen} kuru şu an alınamadı; bütçe TL olarak gösteriliyor.</p>
-        ) : null}
+      <section aria-label={m.budget.receipt} className="rounded-md border border-rule bg-paper-raised px-5 py-4 shadow-ticket md:px-8 md:py-6">
+        <Caption as="p">{f(m.budget.heading, { currency: currencyLabel(receipt.cur, locale) })}</Caption>
+        {chosen !== cur ? <p className="mt-1 text-caption text-warn">{f(m.budget.noRate, { currency: chosen })}</p> : null}
         <p role="status" className="text-caption text-ink-muted empty:hidden print:hidden">
-          {showDropped ? "Kalkış değişti; seçili uçuş bütçeden çıkarıldı." : ""}
+          {showDropped ? m.budget.flightDropped : ""}
         </p>
         <dl className="mt-2 divide-y divide-dashed divide-rule print:hidden">
           {receipt.rows.map((row) => (
@@ -240,23 +246,21 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
         <div className="mt-2 border-t-[3px] border-double border-ink pt-3">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <p className="flex flex-wrap items-baseline gap-x-2">
-              <span className="font-display text-heading">Toplam</span>
-              {receipt.partial ? <Caption tone="warn">KISMİ TOPLAM</Caption> : null}
+              <span className="font-display text-heading">{m.budget.total}</span>
+              {receipt.partial ? <Caption tone="warn">{m.budget.partial}</Caption> : null}
             </p>
             <p className="font-mono text-title tabular" aria-live="polite">
-              {formatMoney(receipt.total, receipt.cur)}
+              {formatMoney(receipt.total, receipt.cur, locale)}
             </p>
           </div>
           <div className="mt-1 flex items-baseline justify-between gap-4">
-            <p className="text-body text-ink-muted">Kişi başı ({pax} kişi)</p>
-            <p className="font-mono text-body tabular">{formatMoney(receipt.perPerson, receipt.cur)}</p>
+            <p className="text-body text-ink-muted">{f(m.budget.perPerson, { count: pax })}</p>
+            <p className="font-mono text-body tabular">{formatMoney(receipt.perPerson, receipt.cur, locale)}</p>
           </div>
-          {receipt.partial ? (
-            <p className="mt-3 text-caption text-ink-muted">Değeri olmayan satırlar toplama eklenmedi.</p>
-          ) : null}
+          {receipt.partial ? <p className="mt-3 text-caption text-ink-muted">{m.budget.partialNote}</p> : null}
           {receipt.rates.length ? (
             <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 font-mono text-caption tabular text-ink-muted">
-              <span>{formatRateSources(receipt.rates)}</span>
+              <span>{formatRateSources(receipt.rates, i18n)}</span>
               {receipt.rates.some((r) => r.sourceId === "erapi") ? (
                 // Attribution required by the open access terms of exchangerate-api.com.
                 <a href={SOURCES.erapi.url} target="_blank" rel="noopener noreferrer" className="underline">

@@ -130,11 +130,34 @@ const DEMO_STAYS = {
   ],
 };
 
+/** The same sample answers with English titles, for the English interface. */
+const english = (demo: { text: string; sources: Array<{ url: string; title: string }> }, words: ReadonlyArray<[string, string]>) => {
+  const swap = (text: string) => words.reduce((t, [tr, en]) => t.replaceAll(tr, en), text);
+  return { text: swap(demo.text), sources: demo.sources.map((s) => ({ ...s, title: swap(s.title) })) };
+};
+const DEMO_WORDS: ReadonlyArray<[string, string]> = [
+  ["Örnek havayolu", "Sample airline"],
+  ["aktarmasız gidiş-dönüş", "non-stop return"],
+  ["tek aktarmalı", "one stop"],
+  ["Kaynaksız fiyat", "Price without a source"],
+  ["Örnek uçuş sayfası", "Sample flight page"],
+  ["Örnek semt", "Sample neighbourhood"],
+  ["merkez", "centre"],
+  ["sakin", "quiet"],
+  ["sahil", "seaside"],
+  ["Örnek otel sayfası", "Sample hotel page"],
+];
+const DEMO_FLIGHTS_EN = english(DEMO_FLIGHTS, DEMO_WORDS);
+const DEMO_STAYS_EN = english(DEMO_STAYS, DEMO_WORDS);
+
 /**
  * The keyless demo (VA_AI_MOCK=1, never on Vercel): fixed sample answers, flights or stays by the request, in the
  * OpenAI shape (the structured path with prices, lira estimates and budget buttons).
  */
 export const demoWebSearchFetcher: typeof fetch = async (_input, init) => {
   const body = typeof init?.body === "string" ? init.body : "";
-  return Response.json(searchAnswer("openai", body.includes("hotel prices") ? DEMO_STAYS : DEMO_FLIGHTS));
+  // The English interface asks for English titles (webPrices.ts `writtenIn`): the sample answers follow.
+  const english = body.includes("British English");
+  const stays = body.includes("hotel prices");
+  return Response.json(searchAnswer("openai", stays ? (english ? DEMO_STAYS_EN : DEMO_STAYS) : english ? DEMO_FLIGHTS_EN : DEMO_FLIGHTS));
 };

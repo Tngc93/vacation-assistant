@@ -2,7 +2,8 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { BRAND_NAME, BRAND_TAGLINE } from "@/lib/brand";
+import { INTL_LOCALE, type Locale } from "@/i18n/locales";
+import { BRAND_NAME } from "@/lib/brand";
 import { OG_SIZE } from "./size";
 
 /**
@@ -47,9 +48,10 @@ async function loadAssets() {
   };
 }
 
-const upper = (text: string) => text.toLocaleUpperCase("tr-TR");
 
 type Card = {
+  /** The card's language: the uppercase lines follow its rules (Turkish "İ"). */
+  locale: Locale;
   /** Small mono line on top. */
   eyebrow: string;
   /** The big Fraunces line. */
@@ -62,8 +64,9 @@ type Card = {
   signature?: string;
 };
 
-export async function renderOgCard({ eyebrow, title, subtitle, footnote, signature = BRAND_NAME }: Card): Promise<ImageResponse> {
+export async function renderOgCard({ locale, eyebrow, title, subtitle, footnote, signature = BRAND_NAME }: Card): Promise<ImageResponse> {
   const { palette, fonts } = await loadAssets();
+  const upper = (text: string) => text.toLocaleUpperCase(INTL_LOCALE[locale]);
   const mono = { fontFamily: "Geist Mono", fontSize: 22, letterSpacing: "0.08em", color: palette["ink-muted"] };
   const titleSize = title.length > 14 ? 112 : 148;
   return new ImageResponse(
@@ -105,7 +108,7 @@ export async function renderOgCard({ eyebrow, title, subtitle, footnote, signatu
           ) : (
             <div style={{ ...mono, color: palette.ink, letterSpacing: "0.02em" }}>{signature}</div>
           )}
-          <div style={mono}>{upper(footnote ?? BRAND_TAGLINE)}</div>
+          <div style={mono}>{footnote ? upper(footnote) : null}</div>
         </div>
       </div>
     ),

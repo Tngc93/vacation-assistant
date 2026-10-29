@@ -40,11 +40,6 @@ export function plainText(html: string | undefined): string {
     .trim();
 }
 
-/** "Fotoğraf: dronepicr · CC BY 2.0 · Wikimedia Commons · renkleri düzenlendi" (the duotone is a change CC BY asks us to mention). */
-export function attributionText(photo: Pick<CityPhoto, "author" | "license">): string {
-  return `Fotoğraf: ${photo.author} · ${photo.license} · Wikimedia Commons · renkleri düzenlendi`;
-}
-
 function preferredP18(json: unknown): string | null {
   const claims = (json as { claims?: { P18?: Array<{ rank?: string; mainsnak?: { datavalue?: { value?: unknown } } }> } })
     ?.claims?.P18;

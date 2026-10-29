@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore, useTransition, type ReactNode } from "react";
 import { useNearViewport } from "@/lib/useNearViewport";
 import { Skeleton } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { CATEGORIES, type CategoryId } from "@/lib/places/categories";
 import { serializeCats, toggleCategory } from "@/lib/places/cats";
@@ -47,8 +48,6 @@ export type HeroExplorerProps = {
   showEvents?: boolean;
 };
 
-// A fixed zone, so the server render, the browser and every test agree on the day.
-const fetchedDate = new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Istanbul" });
 
 const WIDE = "(min-width: 48rem)";
 function subscribeWide(callback: () => void) {
@@ -67,6 +66,9 @@ function osmUrl(center: { lat: number; lon: number }) {
  * dot light up together, a dot picked on the map brings its card into view.
  */
 export function HeroExplorer({ title, photo, center, timeZone, categories, results, fetchedAt, events = [], showEvents = false }: HeroExplorerProps) {
+  const { intl, m, f } = useI18n();
+  // A fixed zone, so the server render, the browser and every test agree on the day.
+  const fetchedDate = new Intl.DateTimeFormat(intl, { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Istanbul" });
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -95,13 +97,13 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
   // A place inside another (the Tsar Cannon in the Kremlin) is drawn a little off its parent's dot, never under it.
   const mapPlaces = useMemo(() => spreadInside(places), [places]);
   const selected = items.find((i) => carouselItemId(i) === selectedId) ?? null;
-  const missing = results.filter((r) => r.status === "missing").map((r) => CATEGORIES[r.category].label);
+  const missing = results.filter((r) => r.status === "missing").map((r) => m.categories[r.category]);
   const noRanking = results.some((r) => r.status === "ok" && CATEGORIES[r.category].ranking === "wikipedia" && !r.wikipediaCountsAvailable);
 
   const writeCats = (next: readonly CategoryId[], nextEvents: boolean) => {
     const params = new URLSearchParams(window.location.search);
     params.set("cats", serializeCats(next, hasEvents && nextEvents));
-    startTransition(() => router.replace(`/plan?${params.toString()}`, { scroll: false }));
+    startTransition(() => router.replace(`${window.location.pathname}?${params.toString()}`, { scroll: false }));
   };
   const onToggle = (id: CategoryId) => writeCats(toggleCategory(categories, id), showEvents);
 
@@ -142,12 +144,12 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
 
   const empty =
     !fetchedAt ? (
-      <EmptyState text="Bu şehir için mekân verisi henüz hazır değil." action={<OsmLink center={center} />} />
+      <EmptyState text={m.places.noData} action={<OsmLink center={center} />} />
     ) : categories.length === 0 && !eventsShown ? (
-      <EmptyState text="Görmek istediğin mekân türlerini yukarıdan seç." />
+      <EmptyState text={m.places.pickCategories} />
     ) : items.length === 0 ? (
       <EmptyState
-        text={missing.length ? `${missing.join(", ")} verisi henüz hazır değil.` : "Bu kategorilerde kayıt bulamadık."}
+        text={missing.length ? f(m.places.missing, { categories: missing.join(", ") }) : m.places.nothingFound}
         action={<OsmLink center={center} />}
       />
     ) : null;
@@ -155,7 +157,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
   return (
     <section
       id="yerler"
-      aria-label="Yerler"
+      aria-label={m.places.region}
       className={cn(
         "grid scroll-mt-16 grid-cols-1 gap-5 pb-8 pt-6 print:hidden",
         // Wide screens: everything in one viewport under the site header (4rem + its 1px rule).
@@ -193,18 +195,18 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
         {!isWide && detail ? <div className="mt-4">{detail}</div> : null}
         {items.length > 0 && missing.length ? (
           <p className="mt-2 text-caption text-ink-muted">
-            {missing.join(", ")} verisi henüz hazır değil. <OsmLink center={center} />
+            {f(m.places.missing, { categories: missing.join(", ") })} <OsmLink center={center} />
           </p>
         ) : null}
         {fetchedAt ? (
           <p className="mt-2 text-[0.6875rem] leading-snug text-ink-muted">
-            Mekân verisi:{" "}
+            {m.places.dataLine}{" "}
             <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="underline">
-              © OpenStreetMap katkıcıları
+              {m.places.osmContributors}
             </a>{" "}
-            (ODbL), {fetchedDate.format(new Date(fetchedAt))} tarihinde alındı. Sıra: Vikipedi dil sayısı (Wikidata) ya da OSM kaydının ayrıntısı;
-            puan verisi yok.{noRanking ? " Vikipedi dil sayıları şu an alınamadı; sıra ada göre." : ""}
-            {eventsShown ? " Etkinlikler: Wikidata (CC0); tarihleri resmî kaynaktan doğrula." : ""}
+            {f(m.places.fetchedOn, { date: fetchedDate.format(new Date(fetchedAt)) })}
+            {noRanking ? m.places.noRanking : ""}
+            {eventsShown ? m.places.eventsSource : ""}
           </p>
         ) : null}
       </div>
@@ -215,7 +217,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
             ref={mapBox}
             role={fullScreen ? "dialog" : undefined}
             aria-modal={fullScreen ? true : undefined}
-            aria-label={fullScreen ? "Harita" : undefined}
+            aria-label={fullScreen ? m.places.mapDialog : undefined}
             className={fullScreen ? "fixed inset-0 z-50 bg-paper p-3" : "relative h-[180px] md:h-full"}
           >
             {liveMap ? (
@@ -236,7 +238,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
               <button type="button" onClick={() => setFullScreen(true)} className="absolute inset-0 z-10 flex items-end justify-end rounded-md p-2">
                 <span className="inline-flex items-center gap-1.5 rounded-sm border border-rule bg-paper-raised px-2.5 py-1.5 text-caption text-ink">
                   <Maximize2 aria-hidden="true" size={14} strokeWidth={1.5} />
-                  Haritayı aç
+                  {m.places.openMap}
                 </span>
               </button>
             ) : null}
@@ -248,7 +250,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
                 className="absolute left-5 top-5 z-20 inline-flex items-center gap-1.5 rounded-sm border border-rule bg-paper-raised px-3 py-2 text-caption text-ink"
               >
                 <X aria-hidden="true" size={16} strokeWidth={1.5} />
-                Haritayı kapat
+                {m.places.closeMap}
               </button>
             ) : null}
             {isWide && detail ? <div className="absolute inset-x-3 bottom-8 z-10 max-h-[70%] overflow-y-auto">{detail}</div> : null}
@@ -260,9 +262,10 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
 }
 
 function OsmLink({ center }: { center: { lat: number; lon: number } }) {
+  const { m } = useI18n();
   return (
     <a href={osmUrl(center)} target="_blank" rel="noopener noreferrer" className="text-caption text-sea underline">
-      Bölgeye OpenStreetMap&apos;te bak
+      {m.places.lookOnOsm}
     </a>
   );
 }

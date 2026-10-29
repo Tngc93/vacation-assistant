@@ -46,7 +46,7 @@ describe("origins data (src/data/origins.json)", () => {
     expect(findOrigin("MUC")?.name).toBe("Münih");
     expect(findOrigin("NYC")?.name).toBe("New York");
     expect(findOrigin("MAD")?.name).toBe("Madrid");
-    expect(findOrigin("LON")?.countryTr).toBe("Birleşik Krallık");
+    expect(findOrigin("LON")?.countryName).toBe("Birleşik Krallık");
     expect(findOrigin("IST")?.timeZone).toBe("Europe/Istanbul");
     expect(findOrigin("LON")?.timeZone).toBe("Europe/London");
     expect(findOrigin("NYC")?.timeZone).toBe("America/New_York");
@@ -126,7 +126,8 @@ describe("searchOrigins", () => {
   });
 
   it("returns plain rows: code, Turkish name and country, airport codes", () => {
-    expect(searchOrigins("IST")[0]).toEqual({ code: "IST", name: "İstanbul", countryTr: "Türkiye", airports: ["IST", "SAW"] });
+    expect(searchOrigins("IST")[0]).toEqual({ code: "IST", name: "İstanbul", countryName: "Türkiye", airports: ["IST", "SAW"] });
+    expect(searchOrigins("IST", undefined, "en")[0]).toEqual({ code: "IST", name: "Istanbul", countryName: "Türkiye", airports: ["IST", "SAW"] });
   });
 });
 

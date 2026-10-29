@@ -1,18 +1,23 @@
 import { describe, expect, it } from "vitest";
 import { cacheCaption, formatDuration, formatStops, parseDirect } from "./display";
-import { FLIGHTS_ERROR_MESSAGES, reasonForStatus } from "./errors";
+import { reasonForStatus } from "./errors";
+import { EN, TR } from "@/test/i18n";
 
 describe("flight display", () => {
   it("says the price is cached and estimated, with the day it was found", () => {
-    expect(cacheCaption("2026-10-16")).toBe("ÖNBELLEKTEN · 16 EKİ TARİHİNDE BULUNDU · TAHMİNİ");
-    expect(cacheCaption(null)).toBe("ÖNBELLEKTEN · SON 48 SAATTE BULUNDU · TAHMİNİ");
+    expect(cacheCaption("2026-10-16", TR)).toBe("ÖNBELLEKTEN · 16 EKİ TARİHİNDE BULUNDU · TAHMİNİ");
+    expect(cacheCaption(null, TR)).toBe("ÖNBELLEKTEN · SON 48 SAATTE BULUNDU · TAHMİNİ");
   });
 
   it("formats durations and stops", () => {
-    expect(formatDuration(245)).toBe("4 sa 05 dk");
-    expect(formatDuration(55)).toBe("55 dk");
-    expect(formatStops(0)).toBe("AKTARMASIZ");
-    expect(formatStops(2)).toBe("2 AKTARMA");
+    expect(formatDuration(245, TR)).toBe("4 sa 05 dk");
+    expect(formatDuration(55, TR)).toBe("55 dk");
+    expect(formatStops(0, TR)).toBe("AKTARMASIZ");
+    expect(formatStops(2, TR)).toBe("2 AKTARMA");
+    expect(formatDuration(245, EN)).toBe("4 h 05 min");
+    expect(formatStops(0, EN)).toBe("NON-STOP");
+    expect(formatStops(1, EN)).toBe("1 STOP");
+    expect(cacheCaption("2026-10-16", EN)).toBe("CACHED · FOUND ON 16 OCT · ESTIMATED");
   });
 
   it("reads the non-stop filter from the URL", () => {
@@ -35,10 +40,10 @@ describe("flight errors", () => {
   });
 
   it("has a distinct, plain message for each reason", () => {
-    const messages = Object.values(FLIGHTS_ERROR_MESSAGES);
+    const messages = Object.values(TR.m.flights.errors);
     expect(new Set(messages).size).toBe(messages.length);
-    expect(FLIGHTS_ERROR_MESSAGES.unauthorized).toContain("401");
-    expect(FLIGHTS_ERROR_MESSAGES["rate-limited"]).toContain("429");
-    expect(FLIGHTS_ERROR_MESSAGES.timeout).toContain("4 saniye");
+    expect(TR.m.flights.errors.unauthorized).toContain("401");
+    expect(TR.m.flights.errors["rate-limited"]).toContain("429");
+    expect(TR.m.flights.errors.timeout).toContain("4 saniye");
   });
 });

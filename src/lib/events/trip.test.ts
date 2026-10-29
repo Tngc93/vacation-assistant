@@ -11,6 +11,7 @@ import {
   tripEventCaption,
   tripMonths,
 } from "./trip";
+import { EN, TR } from "@/test/i18n";
 
 const exact = (qid: string, name: string, wikipedias: number, start: string, end: string, venue?: string): StoredEvent => ({
   qid,
@@ -79,16 +80,19 @@ describe("captions", () => {
   });
 
   it("writes months as runs, wrapping over the new year", () => {
-    expect(monthsText([9, 10])).toBe("EYLÜL–EKİM");
-    expect(monthsText([11])).toBe("KASIM");
-    expect(monthsText([1, 12])).toBe("ARALIK–OCAK");
-    expect(monthsText([2, 6, 7])).toBe("ŞUBAT, HAZİRAN–TEMMUZ");
-    expect(approximateCaption([11])).toBe("GENELDE KASIM · TARİHİ DOĞRULA");
+    expect(monthsText([9, 10], TR)).toBe("EYLÜL–EKİM");
+    expect(monthsText([11], TR)).toBe("KASIM");
+    expect(monthsText([1, 12], TR)).toBe("ARALIK–OCAK");
+    expect(monthsText([2, 6, 7], TR)).toBe("ŞUBAT, HAZİRAN–TEMMUZ");
+    expect(approximateCaption([11], TR)).toBe("GENELDE KASIM · TARİHİ DOĞRULA");
+    expect(monthsText([1, 12], EN)).toBe("DECEMBER–JANUARY");
+    expect(approximateCaption([11], EN)).toBe("USUALLY NOVEMBER · CHECK THE DATES");
+    expect(editionCaption({ start: "2026-11-14", end: "2026-11-18" }, "en-GB")).toBe("14 NOV – 18 NOV");
   });
 
   it("labels approximate events as usual, never as dates", () => {
     const [item] = eventsInTrip([approx("Q3", "Big carnival", 50, [9, 10])], "2026-09-20", "2026-09-24");
-    expect(tripEventCaption(item)).toBe("GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA");
+    expect(tripEventCaption(item, TR)).toBe("GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA");
   });
 });
 
@@ -99,12 +103,12 @@ describe("masthead line", () => {
       "2026-11-14",
       "2026-11-18",
     );
-    expect(mastheadLine(found)).toBe("BU TARİHLERDE: OKTOBERFEST");
+    expect(mastheadLine(found, TR)).toBe("BU TARİHLERDE: OKTOBERFEST");
   });
 
   it("is empty with approximate events only", () => {
-    expect(mastheadLine(eventsInTrip([approx("Q3", "Big carnival", 50, [11])], "2026-11-14", "2026-11-18"))).toBeNull();
-    expect(mastheadLine([])).toBeNull();
+    expect(mastheadLine(eventsInTrip([approx("Q3", "Big carnival", 50, [11])], "2026-11-14", "2026-11-18"), TR)).toBeNull();
+    expect(mastheadLine([], TR)).toBeNull();
   });
 });
 
@@ -115,7 +119,7 @@ describe("day notes", () => {
       "2026-10-03",
       "2026-10-06",
     );
-    expect(dayNotes(found, "2026-10-03", "2026-10-06")).toEqual({
+    expect(dayNotes(found, "2026-10-03", "2026-10-06", TR)).toEqual({
       "2026-10-03": ["Bugün şehirde: Oktoberfest · Theresienwiese"],
       "2026-10-04": ["Bugün şehirde: Oktoberfest · Theresienwiese"],
     });
@@ -123,6 +127,6 @@ describe("day notes", () => {
 
   it("writes the name alone without a venue", () => {
     const found = eventsInTrip([exact("Q2", "Berlinale", 40, "2027-02-11", "2027-02-21")], "2027-02-20", "2027-02-22");
-    expect(dayNotes(found, "2027-02-20", "2027-02-22")["2027-02-21"]).toEqual(["Bugün şehirde: Berlinale"]);
+    expect(dayNotes(found, "2027-02-20", "2027-02-22", TR)["2027-02-21"]).toEqual(["Bugün şehirde: Berlinale"]);
   });
 });

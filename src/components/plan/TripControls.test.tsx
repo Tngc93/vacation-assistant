@@ -9,8 +9,8 @@ import { OriginControl } from "./TripControls";
 const replace = vi.fn();
 vi.mock("next/navigation", () => ({ useRouter: () => ({ replace }) }));
 
-const ISTANBUL: OriginOption = { code: "IST", name: "İstanbul", countryTr: "Türkiye", airports: ["IST", "SAW"] };
-const LONDON: OriginOption = { code: "LON", name: "Londra", countryTr: "Birleşik Krallık", airports: ["LCY", "LGW", "LHR", "LTN", "SEN", "STN"] };
+const ISTANBUL: OriginOption = { code: "IST", name: "İstanbul", countryName: "Türkiye", airports: ["IST", "SAW"] };
+const LONDON: OriginOption = { code: "LON", name: "Londra", countryName: "Birleşik Krallık", airports: ["LCY", "LGW", "LHR", "LTN", "SEN", "STN"] };
 const PLAN = "/plan?to=BCN&depart=2026-11-14&return=2026-11-18";
 
 /** /api/origins answered by the real server-side search, as the route does. */
@@ -99,7 +99,7 @@ describe("OriginControl", () => {
   it("keeps the link's origin over the remembered one", async () => {
     window.history.replaceState(null, "", `${PLAN}&from=ESB`);
     rememberOrigin(LONDON);
-    render(<OriginControl value={{ code: "ESB", name: "Ankara", countryTr: "Türkiye", airports: ["ESB"] }} />);
+    render(<OriginControl value={{ code: "ESB", name: "Ankara", countryName: "Türkiye", airports: ["ESB"] }} />);
     await act(async () => {});
     expect(replace).not.toHaveBeenCalled();
   });

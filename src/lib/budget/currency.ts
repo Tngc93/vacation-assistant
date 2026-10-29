@@ -13,7 +13,10 @@ export type BudgetCurrency = (typeof BUDGET_CURRENCIES)[number];
 
 export type UiLanguage = "tr" | "en";
 
-/** The default for a UI language: TRY in Turkish; EUR once the English UI comes. The one place to change it. */
+/**
+ * The default for an interface language: TRY in Turkish, EUR in English (Berk, 2026-10-29). The one place to change
+ * it. A link's `?cur=` and the visitor's own choice come first.
+ */
 export function defaultBudgetCurrency(language: UiLanguage = "tr"): BudgetCurrency {
   return language === "en" ? "EUR" : "TRY";
 }
@@ -27,9 +30,9 @@ export function parseBudgetCurrency(raw: unknown): BudgetCurrency | null {
   return (BUDGET_CURRENCIES as readonly string[]).includes(code) ? (code as BudgetCurrency) : null;
 }
 
-/** Short label in the picker and in the receipt's heading. */
-export function currencyLabel(code: string): string {
-  return code === "TRY" ? "TL" : code;
+/** Short label in the picker and in the receipt's heading: "TL" in Turkish, "TRY" in English. */
+export function currencyLabel(code: string, language: UiLanguage = "tr"): string {
+  return code === "TRY" && language === "tr" ? "TL" : code;
 }
 
 /** TRY per unit, by currency (TRY itself is 1); a currency without a rate is absent. */
@@ -51,11 +54,13 @@ export function readRememberedCurrency(): BudgetCurrency | null {
   }
 }
 
-/** The default is not stored, like İstanbul for the origin. */
+/**
+ * Every choice is stored, the default too: the two languages have different defaults, so a visitor who chose TRY
+ * keeps it on the English pages.
+ */
 export function rememberCurrency(code: BudgetCurrency): void {
   try {
-    if (code === DEFAULT_BUDGET_CURRENCY) window.localStorage.removeItem(CURRENCY_STORAGE_KEY);
-    else window.localStorage.setItem(CURRENCY_STORAGE_KEY, code);
+    window.localStorage.setItem(CURRENCY_STORAGE_KEY, code);
   } catch {
     // Storage blocked (private mode, quota): the choice still holds for this page.
   }

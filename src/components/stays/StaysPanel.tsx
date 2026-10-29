@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import { useAiConnection } from "@/components/ai/useAiConnection";
 import { DisclosureToggle } from "@/components/plan/DisclosureToggle";
+import { useI18n } from "@/i18n/client";
 
 type Props = {
   /** "Kişi". */
@@ -17,6 +18,7 @@ type Props = {
 
 /** "Konaklama": the number of people on top, the Booking and Google Hotels links, then "Web'de ara" with an AI connection. */
 export function StaysPanel({ controls, links, web, demo }: Props) {
+  const { m } = useI18n();
   const [open, setOpen] = useState(false);
   const connected = useAiConnection() !== null || demo;
   return (
@@ -25,11 +27,11 @@ export function StaysPanel({ controls, links, web, demo }: Props) {
       <div className="mt-6 rounded-md border border-rule bg-paper-raised px-5 py-6 md:px-6">{links}</div>
       {connected ? (
         <DisclosureToggle open={open} controls="konaklama-web" onClick={() => setOpen((o) => !o)}>
-          Web&apos;de ara
+          {m.stays.webSearch}
         </DisclosureToggle>
       ) : null}
       <div id="konaklama-web" hidden={!open || !connected} className="mt-8">
-        <h3 className="mb-4 font-display text-heading">Konaklama · web&apos;de ara</h3>
+        <h3 className="mb-4 font-display text-heading">{m.stays.webTitle}</h3>
         {web}
       </div>
     </div>

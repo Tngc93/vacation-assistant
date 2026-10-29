@@ -8,14 +8,15 @@ import { AiPanel } from "@/components/ai/AiPanel";
 import { Button, buttonClasses, Caption, Skeleton } from "@/components/ui";
 import type { AiPlan } from "@/lib/ai/assistant";
 import { applyEdits, diffPlans, encodeEdits, encodePinned, pinnedFromPlan, type EditBatch, type PlanDiff } from "@/lib/ai/edits";
+import { useI18n } from "@/i18n/client";
+import type { I18n } from "@/i18n/i18n";
 import { cn } from "@/lib/cn";
 import { formatDay } from "@/lib/format";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
-import { buildItinerary, type DayTag, type Itinerary, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop, type PlanSubStop } from "@/lib/itinerary/plan";
-import { CATEGORIES } from "@/lib/places/categories";
-import { farCaption, TRANSIT_CAPTION, transitFromCentre } from "@/lib/places/far";
+import { buildItinerary, type DayNote, type DayTag, type Itinerary, type ItineraryInput, type PlanDay, type PlanPlace, type PlanStop, type PlanSubStop } from "@/lib/itinerary/plan";
+import { farCaption, transitFromCentre } from "@/lib/places/far";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
 import { useNearViewport } from "@/lib/useNearViewport";
@@ -52,17 +53,29 @@ function subscribeWide(callback: () => void) {
   return () => query.removeEventListener("change", callback);
 }
 
-const regionNames = new Intl.DisplayNames(["tr"], { type: "region" });
-/** "VATİKAN" for VA. */
-const countryName = (code: string) => (regionNames.of(code) ?? code).toLocaleUpperCase("tr");
+type Lang = Pick<I18n, "locale" | "intl" | "m" | "f">;
 
-/** "14 KAS CMT" */
-const dayLabel = (iso: string) => formatDay(isoToDate(iso)).toLocaleUpperCase("tr");
+/** "VATİKAN" ("VATICAN CITY") for VA. */
+const countryName = (code: string, { intl }: Pick<Lang, "intl">) =>
+  (new Intl.DisplayNames([intl], { type: "region" }).of(code) ?? code).toLocaleUpperCase(intl);
 
-function durationText(minutes: number) {
+/** "14 KAS CMT" ("14 NOV SAT") */
+const dayLabel = (iso: string, { locale, intl }: Pick<Lang, "locale" | "intl">) => formatDay(isoToDate(iso), locale).toLocaleUpperCase(intl);
+
+function durationText(minutes: number, { m, f }: Pick<Lang, "m" | "f">) {
   const h = Math.floor(minutes / 60);
-  const m = minutes % 60;
-  return h && m ? `${h} sa ${m} dk` : h ? `${h} sa` : `${m} dk`;
+  const min = minutes % 60;
+  const t = m.itinerary;
+  return h && min ? f(t.hoursMinutes, { h, m: min }) : h ? f(t.hours, { h }) : f(t.minutes, { m: min });
+}
+
+/** A day's note in the interface language; the Turkish time takes its locative suffix ("13:30'da"). */
+function noteText(note: DayNote, { locale, m, f }: Pick<Lang, "locale" | "m" | "f">): string {
+  const t = m.itinerary.notes;
+  if (note.kind === "noTime" || note.kind === "noneOpen") return t[note.kind];
+  const time = locale === "tr" ? withLocative(note.time) : note.time;
+  const key = note.kind === "arrive" ? (note.evening ? "arriveEvening" : "arrive") : note.evening ? "leaveEvening" : "leave";
+  return f(t[key], { time });
 }
 
 /** How long a day stays marked after the panel changed it (the sheet has closed over it on a phone). */
@@ -98,18 +111,20 @@ function writeParams(values: { skip: string[]; ai: string[][] | null; edits: Edi
 }
 
 function TravelLine({ stop }: { stop: PlanStop }) {
+  const { m, f } = useI18n();
   if (!stop.travel) return null;
   return (
     <li aria-hidden={false} className="relative pb-3 pl-[4.75rem] md:pl-24">
       <Caption as="p">
-        YÜRÜME ~{stop.travel.walkMin} DK · TAHMİNİ
-        {stop.travel.transit ? ` · ${TRANSIT_CAPTION}` : ""}
+        {f(m.itinerary.walk, { min: stop.travel.walkMin })}
+        {stop.travel.transit ? ` · ${m.places.transit}` : ""}
       </Caption>
     </li>
   );
 }
 
 function SourceAndRemove({ stop, onRemove }: { stop: Pick<PlanStop, "name" | "sourceUrl" | "source">; onRemove: () => void }) {
+  const { m, f } = useI18n();
   return (
     <p className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-caption print:hidden">
       <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
@@ -119,10 +134,10 @@ function SourceAndRemove({ stop, onRemove }: { stop: Pick<PlanStop, "name" | "so
         type="button"
         onClick={onRemove}
         className="inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
-        aria-label={`${stop.name} durağını plandan çıkar`}
+        aria-label={f(m.itinerary.removeLabel, { name: stop.name })}
       >
         <X aria-hidden="true" size={12} strokeWidth={1.5} />
-        Çıkar
+        {m.itinerary.remove}
       </button>
     </p>
   );
@@ -130,6 +145,7 @@ function SourceAndRemove({ stop, onRemove }: { stop: Pick<PlanStop, "name" | "so
 
 /** A place inside the stop (the Tsar Bell in the Kremlin): indented under it, seen during its visit, no time of its own. */
 function SubStop({ sub, onRemove }: { sub: PlanSubStop; onRemove: (sub: PlanSubStop) => void }) {
+  const { intl, m, f } = useI18n();
   return (
     <li className="relative border-l border-rule pl-3">
       <p className="text-body">
@@ -137,8 +153,8 @@ function SubStop({ sub, onRemove }: { sub: PlanSubStop; onRemove: (sub: PlanSubS
         {sub.localName && sub.localName !== sub.name ? <span className="text-ink-muted"> · {sub.localName}</span> : null}
       </p>
       <Caption as="p" className="mt-0.5">
-        {sub.within.toLocaleUpperCase("tr")} İÇİNDE · {CATEGORIES[sub.category].label.toLocaleUpperCase("tr")}
-        {sub.hours === "unknown" ? " · SAATLERİ DOĞRULA" : ""}
+        {f(m.places.inside, { name: sub.within.toLocaleUpperCase(intl) })} · {m.categories[sub.category].toLocaleUpperCase(intl)}
+        {sub.hours === "unknown" ? ` · ${m.itinerary.checkHours}` : ""}
       </Caption>
       <SourceAndRemove stop={sub} onRemove={() => onRemove(sub)} />
     </li>
@@ -156,6 +172,8 @@ function Stop({
   onRemove: (stop: PlanStop) => void;
   onRemoveInside: (sub: PlanSubStop) => void;
 }) {
+  const i18n = useI18n();
+  const { intl, m, f } = i18n;
   return (
     <li className="relative grid grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]">
       <p className="pt-0.5 font-mono text-caption tabular text-ink">
@@ -177,41 +195,42 @@ function Stop({
           {stop.localName && stop.localName !== stop.name ? <span className="font-normal text-ink-muted"> · {stop.localName}</span> : null}
         </p>
         <Caption as="p" className="mt-0.5">
-          {stop.country ? `${countryName(stop.country)} · ` : ""}
-          {stop.kind === "evening" ? "AKŞAM · " : ""}
-          {CATEGORIES[stop.category].label.toLocaleUpperCase("tr")} · {durationText(stop.durationMin).toLocaleUpperCase("tr")} · TAHMİNİ
+          {stop.country ? `${countryName(stop.country, i18n)} · ` : ""}
+          {stop.kind === "evening" ? `${m.itinerary.evening} · ` : ""}
+          {m.categories[stop.category].toLocaleUpperCase(intl)} · {durationText(stop.durationMin, i18n).toLocaleUpperCase(intl)} ·{" "}
+          {m.itinerary.estimatedCaps}
         </Caption>
         {stop.farKm !== null ? (
           <Caption as="p" tone="sea" className="mt-0.5">
-            {farCaption(stop.farKm)}
+            {farCaption(stop.farKm, i18n)}
           </Caption>
         ) : null}
         {/* The day's first stop has no walking line: the way there starts at the centre. */}
         {stop.farKm !== null && !stop.travel && transitFromCentre(stop.farKm) ? (
           <Caption as="p" className="mt-0.5">
-            {TRANSIT_CAPTION}
+            {m.places.transit}
           </Caption>
         ) : null}
         {stop.exterior ? (
           <Caption as="p" tone="sea" className="mt-0.5">
-            YALNIZCA DIŞARIDAN
+            {m.itinerary.exteriorOnly}
           </Caption>
         ) : null}
         {stop.exterior?.note ? <p className="mt-0.5 text-caption text-ink-muted">{stop.exterior.note}</p> : null}
         {stop.closesSoon ? (
           <Caption as="p" tone="warn" className="mt-0.5">
-            KAPANIŞA YAKIN · {withLocative(stop.closesSoon).toLocaleUpperCase("tr")} KAPANIR
+            {f(m.itinerary.closesSoon, { time: (i18n.locale === "tr" ? withLocative(stop.closesSoon) : stop.closesSoon).toLocaleUpperCase(intl) })}
           </Caption>
         ) : null}
         {/* Unknown hours are common; a quiet note, not a warning (the plan's intro explains it). */}
         {stop.hours === "unknown" ? (
           <Caption as="p" className="mt-0.5">
-            SAATLERİ DOĞRULA
+            {m.itinerary.checkHours}
           </Caption>
         ) : null}
         <SourceAndRemove stop={stop} onRemove={() => onRemove(stop)} />
         {stop.inside?.length ? (
-          <ul aria-label={`${stop.name} içinde`} className="mt-3 grid gap-3">
+          <ul aria-label={f(m.itinerary.insideList, { name: stop.name })} className="mt-3 grid gap-3">
             {stop.inside.map((sub) => (
               <SubStop key={sub.id} sub={sub} onRemove={onRemoveInside} />
             ))}
@@ -224,6 +243,7 @@ function Stop({
 
 /** Unplanned time before the evening place: shown, never filled with made-up stops. */
 function FreeTime({ free }: { free: { start: string; end: string } }) {
+  const { m, f } = useI18n();
   return (
     <li className="relative grid grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]">
       <p className="font-mono text-caption tabular text-ink-muted">
@@ -232,15 +252,15 @@ function FreeTime({ free }: { free: { start: string; end: string } }) {
       </p>
       <div className="border-l border-dashed border-rule pl-4">
         <Caption as="p">
-          SERBEST ZAMAN · {free.start}–{free.end}
+          {f(m.itinerary.freeTime, free)}
         </Caption>
       </div>
     </li>
   );
 }
 
-function tagText(tags: DayTag[]) {
-  return tags.join(" · ");
+function tagText(tags: DayTag[], { m }: Pick<Lang, "m">) {
+  return tags.map((tag) => m.itinerary.tags[tag]).join(" · ");
 }
 
 function Day({
@@ -265,9 +285,11 @@ function Day({
   /** Events in town that day (exact dates only). */
   events?: string[];
 }) {
+  const i18n = useI18n();
+  const { m, f } = i18n;
   return (
     <section
-      aria-label={`${day.number}. gün · ${dayLabel(day.date)}`}
+      aria-label={f(m.itinerary.dayLabel, { number: day.number, date: dayLabel(day.date, i18n) })}
       data-changed={flash || undefined}
       className={cn(
         "-mx-3 break-inside-avoid rounded-md border-t border-rule px-3 pt-6 transition-colors duration-700 ease-out first:border-t-0 first:pt-0",
@@ -279,13 +301,13 @@ function Day({
           <span aria-hidden="true" className="font-display text-display leading-none">
             {String(day.number).padStart(2, "0")}
           </span>
-          <span className="sr-only">{day.number}. gün</span>
+          <span className="sr-only">{f(m.itinerary.day, { number: day.number })}</span>
           <span className="pb-1.5">
             <Caption as="span" tone="ink" className="block">
-              {dayLabel(day.date)}
+              {dayLabel(day.date, i18n)}
             </Caption>
             <Caption as="span" className="mt-0.5 block">
-              {tagText(day.tags)}
+              {tagText(day.tags, i18n)}
               {day.window ? ` · ${day.window.start}–${day.window.end}` : ""}
             </Caption>
           </span>
@@ -297,7 +319,7 @@ function Day({
             aria-pressed={selected}
             className={cn("text-caption underline-offset-4 print:hidden", selected ? "text-ink" : "text-ink-muted underline hover:text-ink")}
           >
-            {selected ? "Haritada gösteriliyor" : "Haritada göster"}
+            {selected ? m.itinerary.showingOnMap : m.itinerary.showOnMap}
           </button>
         ) : null}
       </div>
@@ -314,17 +336,17 @@ function Day({
       {reason ? (
         <div className="mt-4 border-l-2 border-sea pl-3">
           <Caption as="p" tone="sea">
-            YAPAY ZEKÂ GEREKÇESİ
+            {m.itinerary.aiReason}
           </Caption>
           <p className="mt-1 whitespace-pre-line text-caption text-ink">{reason}</p>
         </div>
       ) : null}
       {day.note ? (
         <div className="mt-4">
-          <p className="text-body text-ink-muted">{day.note}</p>
+          <p className="text-body text-ink-muted">{noteText(day.note, i18n)}</p>
           {day.flightNote ? (
             <a href="#ucuslar" className="mt-1 inline-block text-caption underline underline-offset-4 print:hidden">
-              Daha uygun saatli uçuşlara bak
+              {m.itinerary.betterFlights}
             </a>
           ) : null}
         </div>
@@ -356,6 +378,8 @@ export function ItineraryView({
   flightTimesUnknown = false,
   eventNotes,
 }: Props) {
+  const i18n = useI18n();
+  const { intl, m, f } = i18n;
   const [skip, setSkip] = useState(initialSkip);
   const [ai, setAi] = useState<{ pinned: string[][]; reasons: Record<number, string>; source: string | null } | null>(
     initialAi ? { pinned: initialAi, reasons: {}, source: null } : null,
@@ -483,11 +507,11 @@ export function ItineraryView({
   };
   const changes = skip.length + edits.length + (ai ? 1 : 0);
   const download = () => {
-    const ics = buildIcs(plan, { cityName, now: new Date() });
+    const ics = buildIcs(plan, { cityName, now: new Date(), i18n });
     const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${cityName.toLocaleLowerCase("tr").replace(/[^a-z0-9ğüşıöç]+/g, "-")}-gezi-plani.ics`;
+    a.download = `${f(m.itinerary.icsFile, { city: cityName.toLocaleLowerCase(intl).replace(/[^a-z0-9ğüşıöç]+/g, "-") })}.ics`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -502,44 +526,47 @@ export function ItineraryView({
           <div className="max-w-2xl">
             {flightTimesUnknown ? (
               <Caption as="p" tone="warn">
-                UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER
+                {m.itinerary.flightUnknown}
               </Caption>
             ) : plan.basis === "flight" && flight ? (
               <Caption as="p" tone="ink">
-                UÇUŞ: {flight.label.toLocaleUpperCase("tr")} · VARIŞ {flight.arrive?.time} · DÖNÜŞ KALKIŞI {flight.leave?.time} · SAATLER{" "}
-                {cityName.toLocaleUpperCase("tr")} SAATİYLE
+                {f(m.itinerary.flightLine, {
+                  flight: flight.label.toLocaleUpperCase(intl),
+                  arrive: flight.arrive?.time ?? "",
+                  leave: flight.leave?.time ?? "",
+                  city: cityName.toLocaleUpperCase(intl),
+                })}
               </Caption>
             ) : (
               <Caption as="p" tone="warn">
-                UÇUŞ SEÇİLMEDİ · VARSAYIM: İLK GÜN 13:00 SONRASI, SON GÜN 13:00 ÖNCESİ · SAATLER {cityName.toLocaleUpperCase("tr")} SAATİYLE
+                {f(m.itinerary.noFlight, { city: cityName.toLocaleUpperCase(intl) })}
               </Caption>
             )}
             {ai ? (
               <p className="mt-2 flex items-start gap-1.5 text-caption text-ink-muted">
                 <Sparkles aria-hidden="true" size={14} strokeWidth={1.5} className="mt-0.5 shrink-0" />
                 <span>
-                  Duraklar yapay zekâ{ai.source ? ` (${ai.source})` : ""} tarafından bu şehrin listesinden seçildi ve sıralandı; saatler, açılış
-                  kontrolü ve yürüme tahminini uygulama hesapladı.
-                  {ai.source ? "" : " Gerekçeler yalnızca planı kuran tarayıcıda görünür."}
+                  {f(m.itinerary.aiChose, { source: ai.source ? ` (${ai.source})` : "" })}
+                  {ai.source ? "" : m.itinerary.aiReasonsLocal}
                 </span>
               </p>
             ) : (
               <p className="mt-2 text-caption text-ink-muted">
-                Duraklar Vikipedi&apos;deki dil sayısına ve yakınlığa göre seçildi; süreler ve yürüme tahminidir.
-                {edits.length ? " Sohbetle düzenlendi." : " Yapay zekâ kullanılmadı."}
+                {m.itinerary.chosenBy}
+                {edits.length ? m.itinerary.editedByChat : m.itinerary.noAi}
               </p>
             )}
-            <p className="mt-1 text-caption text-ink-muted">Saat bilgisi olmayan mekânlar işaretlidir; gitmeden kontrol et.</p>
+            <p className="mt-1 text-caption text-ink-muted">{m.itinerary.unknownHours}</p>
           </div>
           <div className="flex flex-wrap gap-2 print:hidden">
             <Button variant="secondary" onClick={download}>
               <CalendarPlus aria-hidden="true" size={16} strokeWidth={1.5} />
-              Takvime ekle (.ics)
+              {m.itinerary.addToCalendar}
             </Button>
             {changes ? (
               <Button variant="ghost" onClick={reset}>
                 <RotateCcw aria-hidden="true" size={16} strokeWidth={1.5} />
-                Planı sıfırla ({changes})
+                {f(m.itinerary.reset, { count: changes })}
               </Button>
             ) : null}
           </div>
@@ -547,7 +574,7 @@ export function ItineraryView({
 
         {plan.dropped.length ? (
           <p className="mt-4 text-caption text-ink-muted">
-            Önerilen {plan.dropped.length} yer saat, açılış ya da günün süresi yüzünden plana sığmadı ve dışarıda kaldı.
+            {f(m.itinerary.dropped, { count: plan.dropped.length })}
           </p>
         ) : null}
 
@@ -574,7 +601,11 @@ export function ItineraryView({
               {isWide || mapOnPhone ? (
                 <>
                   <Caption as="p" className="mb-2">
-                    {String(day.number).padStart(2, "0")}. GÜN · {dayLabel(day.date)} · {day.stops.length} DURAK
+                    {f(m.itinerary.mapCaption, {
+                      number: String(day.number).padStart(2, "0"),
+                      date: dayLabel(day.date, i18n),
+                      count: day.stops.length,
+                    })}
                   </Caption>
                   {/* MapLibre starts when the map comes into view, not with the page. */}
                   {mapNear || mapOnPhone ? (
@@ -586,7 +617,7 @@ export function ItineraryView({
               ) : (
                 <button type="button" className={buttonClasses({ variant: "secondary", className: "w-full" })} onClick={() => setMapOnPhone(true)}>
                   <MapIcon aria-hidden="true" size={16} strokeWidth={1.5} />
-                  Günün haritasını göster
+                  {m.itinerary.showDayMap}
                 </button>
               )}
             </div>

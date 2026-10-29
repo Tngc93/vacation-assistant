@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { AiError, aiErrorCaption } from "./errors";
+import { EN, TR } from "@/test/i18n";
+import { AiError, aiErrorCaption, aiErrorText } from "./errors";
 import helpOnly429 from "./__fixtures__/gemini-429-help-only.json";
 import { mockProvider } from "./mockProvider";
 import { complete, listModels, PROVIDERS, suggestModel } from "./providers";
@@ -64,7 +65,8 @@ describe("provider errors in Turkish", () => {
     expect(await failing("openai", 404, { error: { code: "model_not_found" } })).toMatchObject({ kind: "model" });
     const error = await failing("anthropic", 401, {});
     expect(error).toBeInstanceOf(AiError);
-    expect(error.message).toBe("Anahtar geçersiz ya da bu sağlayıcıya ait değil. Anahtarı kontrol edip yeniden bağlan.");
+    expect(aiErrorText(error, TR)).toBe("Anahtar geçersiz ya da bu sağlayıcıya ait değil. Anahtarı kontrol edip yeniden bağlan.");
+    expect(aiErrorText(error, EN)).toBe("The key is invalid or not for this provider. Check the key and connect again.");
   });
 
   it("says when the network fails or the provider is too slow (fake clock)", async () => {
@@ -82,7 +84,9 @@ describe("provider errors in Turkish", () => {
       new Promise((_, reject) => init?.signal?.addEventListener("abort", () => reject(init.signal!.reason)));
     const pending = complete({ provider: "gemini", key: KEY, model: "m" }, { system: "s", messages: [] }, hanging).catch((e) => e);
     await vi.advanceTimersByTimeAsync(120_000);
-    expect(await pending).toMatchObject({ kind: "timeout", message: expect.stringContaining("zamanında cevap vermedi") });
+    const timeout = await pending;
+    expect(timeout).toMatchObject({ kind: "timeout" });
+    expect(aiErrorText(timeout, TR)).toContain("zamanında cevap vermedi");
   });
 });
 
@@ -125,7 +129,8 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
     const pending = ask(mock.fetcher);
     await vi.advanceTimersByTimeAsync(10_000);
     const error = await pending;
-    expect(error).toMatchObject({ kind: "overloaded", status: 503, message: expect.stringContaining("Bu model şu an çok yoğun.") });
+    expect(error).toMatchObject({ kind: "overloaded", status: 503 });
+    expect(aiErrorText(error, TR)).toContain("Bu model şu an çok yoğun.");
     expect(aiErrorCaption(error)).toBe("HTTP 503 · GEMINI-3.5-FLASH");
     expect(posts(mock)).toBe(3);
   });
@@ -159,7 +164,9 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
   it("names the wait when a per-minute limit is long, without trying again", async () => {
     const mock = mockProvider("gemini", [geminiLimit("GenerateRequestsPerMinutePerProjectPerModel-FreeTier", { quotaValue: "10" }, "24.3s")]);
     const error = await ask(mock.fetcher);
-    expect(error).toMatchObject({ kind: "rate", message: "Sağlayıcı şu an çok fazla istek aldığını söylüyor. Yaklaşık 25 saniye sonra yeniden dene." });
+    expect(error).toMatchObject({ kind: "rate" });
+    expect(aiErrorText(error, TR)).toBe("Sağlayıcı şu an çok fazla istek aldığını söylüyor. Yaklaşık 25 saniye sonra yeniden dene.");
+    expect(aiErrorText(error, EN)).toBe("The provider says it is getting too many requests right now. Try again in about 25 seconds.");
     expect(posts(mock)).toBe(1);
   });
 
@@ -173,10 +180,11 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
       kind: "quotaUnknown",
       status: 429,
       retryAfterMs: undefined,
-      message:
-        "Google kota sınırına takıldığını söylüyor ama hangi sınır olduğunu belirtmedi. Bir dakika bekleyip yeniden dene; tekrarlarsa ai.dev/rate-limit sayfasından kullanımına bak.",
     });
-    expect(error.message).not.toContain("exceeded");
+    expect(aiErrorText(error, TR)).toBe(
+      "Google kota sınırına takıldığını söylüyor ama hangi sınır olduğunu belirtmedi. Bir dakika bekleyip yeniden dene; tekrarlarsa ai.dev/rate-limit sayfasından kullanımına bak.",
+    );
+    expect(aiErrorText(error, TR)).not.toContain("exceeded");
     expect(posts(mock)).toBe(1);
   });
 
@@ -193,10 +201,9 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
 
   it("says a model with a free-tier limit of 0 cannot be used on the free tier", async () => {
     const mock = mockProvider("gemini", [geminiLimit("GenerateRequestsPerMinutePerProjectPerModel-FreeTier", { quotaValue: "0" }, "5s")]);
-    expect(await ask(mock.fetcher)).toMatchObject({
-      kind: "freeTier",
-      message: "Bu model ücretsiz katmanda kullanılamıyor. Bağlantı ayarları'ndan başka bir model seç.",
-    });
+    const error = await ask(mock.fetcher);
+    expect(error).toMatchObject({ kind: "freeTier" });
+    expect(aiErrorText(error, TR)).toBe("Bu model ücretsiz katmanda kullanılamıyor. Bağlantı ayarları'ndan başka bir model seç.");
     expect(posts(mock)).toBe(1);
   });
 
@@ -208,21 +215,17 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
     await vi.advanceTimersByTimeAsync(2_000);
     expect(await pending).toBe("ok");
     const long = mockProvider("openai", [{ status: 429, body: { error: { code: "rate_limit_exceeded" } }, headers: { "retry-after": "40" } }]);
-    expect(await complete({ provider: "openai", key: KEY, model: "m" }, { system: "s", messages: [] }, long.fetcher).catch((e) => e)).toMatchObject({
-      kind: "rate",
-      message: expect.stringContaining("Yaklaşık 40 saniye sonra yeniden dene."),
-    });
+    const error = await complete({ provider: "openai", key: KEY, model: "m" }, { system: "s", messages: [] }, long.fetcher).catch((e) => e);
+    expect(error).toMatchObject({ kind: "rate" });
+    expect(aiErrorText(error, TR)).toContain("Yaklaşık 40 saniye sonra yeniden dene.");
     expect(posts(long)).toBe(1);
   });
 
   it("never retries a 400 or an aborted request", async () => {
     const bad = mockProvider("gemini", [{ status: 400, body: { error: { code: 400, status: "INVALID_ARGUMENT" } } }, "plan"]);
     const error = await ask(bad.fetcher);
-    expect(error).toMatchObject({
-      kind: "request",
-      status: 400,
-      message: "Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.",
-    });
+    expect(error).toMatchObject({ kind: "request", status: 400 });
+    expect(aiErrorText(error, TR)).toBe("Sağlayıcı bu isteği kabul etmedi. Bağlantı ayarları'ndan başka bir model seçip yeniden dene.");
     expect(aiErrorCaption(error)).toBe("HTTP 400 · GEMINI-3.5-FLASH");
     expect(posts(bad)).toBe(1);
     // A 400 that says the key is wrong is still about the key.
@@ -264,8 +267,8 @@ describe("retries, rate limits and the diagnosis caption (fake clock)", () => {
     await vi.advanceTimersByTimeAsync(10_000);
     const error = (await pending) as AiError;
     expect(aiErrorCaption(error)).toBe("HTTP 503 · GEMINI-3.5-FLASH");
-    expect(JSON.stringify({ ...error, message: error.message, caption: aiErrorCaption(error) })).not.toContain(KEY);
-    expect(error.message).not.toContain("overloaded");
+    expect(JSON.stringify({ ...error, message: aiErrorText(error, TR), caption: aiErrorCaption(error) })).not.toContain(KEY);
+    expect(aiErrorText(error, TR)).not.toContain("overloaded");
   });
 });
 

@@ -12,23 +12,23 @@ export const DEFAULT_ORIGIN: OriginCode = "IST";
 
 export type OriginAirport = { code: string; name: string };
 
-/** A departure city as the server resolves it. Plain data, so it can cross to client components. */
+/** A departure city as the server resolves it, named in one interface language. Plain data, for client components. */
 export type Origin = {
   code: OriginCode;
-  /** Turkish name ("Londra", "Münih"). */
+  /** The name in the interface language ("Londra" / "London", "Münih" / "Munich"). */
   name: string;
   country: string;
-  /** Turkish country name ("Birleşik Krallık"). */
-  countryTr: string;
+  /** The country in the interface language ("Birleşik Krallık" / "United Kingdom"). */
+  countryName: string;
   timeZone: string;
   airports: OriginAirport[];
 };
 
 /** One row of the origin combobox (`/api/origins?q=`). */
-export type OriginOption = Pick<Origin, "code" | "name" | "countryTr"> & { airports: string[] };
+export type OriginOption = Pick<Origin, "code" | "name" | "countryName"> & { airports: string[] };
 
 export function toOriginOption(origin: Origin): OriginOption {
-  return { code: origin.code, name: origin.name, countryTr: origin.countryTr, airports: origin.airports.map((a) => a.code) };
+  return { code: origin.code, name: origin.name, countryName: origin.countryName, airports: origin.airports.map((a) => a.code) };
 }
 
 /** "IST + SAW" — the airport codes searched for an origin. */
@@ -36,9 +36,12 @@ export function originAirportsLabel(origin: Pick<OriginOption, "airports">): str
   return origin.airports.join(" + ");
 }
 
-/** The airports in little room: "IST + SAW" up to three, "LON · 6 HAVALİMANI" beyond (London, Moscow, Chicago). */
-export function originAirportsShort(origin: Pick<OriginOption, "code" | "airports">): string {
-  return origin.airports.length <= 3 ? originAirportsLabel(origin) : `${origin.code} · ${origin.airports.length} HAVALİMANI`;
+/**
+ * The airports in little room: "IST + SAW" up to three, "LON · 6 HAVALİMANI" ("LON · 6 AIRPORTS") beyond (London,
+ * Moscow, Chicago); `count` words the number in the interface language.
+ */
+export function originAirportsShort(origin: Pick<OriginOption, "code" | "airports">, count: (n: number) => string): string {
+  return origin.airports.length <= 3 ? originAirportsLabel(origin) : `${origin.code} · ${count(origin.airports.length)}`;
 }
 
 /** The browser remembers the last origin chosen (localStorage; per visitor, never sent anywhere but in `?from=`). */
@@ -53,7 +56,8 @@ function isOption(value: unknown): value is OriginOption {
     typeof v.code === "string" &&
     CODE.test(v.code) &&
     typeof v.name === "string" &&
-    typeof v.countryTr === "string" &&
+    // `countryTr`: remembered before the English interface (2026-10-29).
+    (typeof v.countryName === "string" || typeof v.countryTr === "string") &&
     Array.isArray(v.airports) &&
     v.airports.every((a) => typeof a === "string" && CODE.test(a))
   );
@@ -64,7 +68,9 @@ export function readRememberedOrigin(): OriginOption | null {
   try {
     const raw = window.localStorage.getItem(ORIGIN_STORAGE_KEY);
     const value: unknown = raw ? JSON.parse(raw) : null;
-    return isOption(value) ? value : null;
+    if (!isOption(value)) return null;
+    const { countryTr, ...rest } = value as OriginOption & { countryTr?: string };
+    return { ...rest, countryName: rest.countryName ?? countryTr ?? "" };
   } catch {
     return null;
   }

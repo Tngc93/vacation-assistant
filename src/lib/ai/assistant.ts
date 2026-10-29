@@ -17,6 +17,7 @@ import {
   type Candidate,
   type DayWindow,
   type PlanSummaryDay,
+  type ReplyLanguage,
 } from "./prompts";
 import { complete, type ChatMessage, type Connection } from "./providers";
 
@@ -171,13 +172,13 @@ async function askChecked<S extends z.ZodType, T>(
 
 export async function requestAiPlan(
   conn: Connection,
-  trip: { city: string; days: readonly DayWindow[]; candidates: readonly Candidate[]; maxStops: number },
+  trip: { city: string; days: readonly DayWindow[]; candidates: readonly Candidate[]; maxStops: number; locale?: ReplyLanguage },
   fetcher: Fetch = fetch,
 ): Promise<Attempted<AiPlan>> {
   if (!trip.candidates.length) return { ok: false, errors: ["no candidates"], attempts: 0 };
   return askChecked(
     conn,
-    planSystemPrompt(trip.maxStops),
+    planSystemPrompt(trip.maxStops, trip.locale),
     planUserMessage(trip.city, trip.days, trip.candidates),
     aiPlanSchema,
     (plan) => checkPlan(plan, trip.days, trip.candidates, trip.maxStops),
@@ -203,13 +204,14 @@ export async function requestAiEdit(
     candidates: readonly Candidate[];
     pace: string;
     evening: readonly string[];
+    locale?: ReplyLanguage;
   },
   fetcher: Fetch = fetch,
 ): Promise<Attempted<AiEdit>> {
   const known = new Set([...edit.candidates.map((c) => c.id), ...edit.plan.flatMap((d) => d.stops.map((s) => s.id))]);
   return askChecked(
     conn,
-    editSystemPrompt(),
+    editSystemPrompt(edit.locale),
     editUserMessage(edit.request.slice(0, 500), edit.city, edit.plan, edit.candidates, edit.pace, edit.evening),
     aiEditSchema,
     (value) => checkEdits(value, known, edit.plan.length),

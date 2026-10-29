@@ -1,10 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { formatCrossRate, formatRate, formatRateLine, formatRateSources, formatSourceDates } from "./format";
 import { SOURCES } from "./types";
+import { EN, TR } from "@/test/i18n";
 
 describe("rate formatting", () => {
   it("writes the plan's rate line", () => {
-    expect(formatRateLine({ ok: true, currency: "EUR", tryPerUnit: 38.4213, source: SOURCES.tcmb, date: "2026-10-16" })).toBe(
+    expect(formatRateLine({ ok: true, currency: "EUR", tryPerUnit: 38.4213, source: SOURCES.tcmb, date: "2026-10-16" }, TR)).toBe(
       "1 EUR = 38,42 ₺ · TCMB · 16 Eki",
     );
   });
@@ -28,8 +29,12 @@ describe("cross rates for the budget's currency", () => {
 
   it("names each source and date once", () => {
     const tcmb = { sourceName: "TCMB", date: "2026-10-29" };
-    expect(formatRateSources([tcmb])).toBe("Kur: TCMB · 29 Eki");
-    expect(formatRateSources([tcmb, tcmb])).toBe("Kur: TCMB · 29 Eki");
-    expect(formatSourceDates([tcmb, { sourceName: "Frankfurter (ECB)", date: "2026-10-28" }])).toBe("TCMB · 29 Eki; Frankfurter (ECB) · 28 Eki");
+    expect(formatRateSources([tcmb], TR)).toBe("Kur: TCMB · 29 Eki");
+    expect(formatRateSources([tcmb, tcmb], TR)).toBe("Kur: TCMB · 29 Eki");
+    expect(formatSourceDates([tcmb, { sourceName: "Frankfurter (ECB)", date: "2026-10-28" }], TR)).toBe("TCMB · 29 Eki; Frankfurter (ECB) · 28 Eki");
+    expect(formatRateSources([tcmb], EN)).toBe("Rate: TCMB · 29 Oct");
+    // The e2e sample bulletin says so in the page's language.
+    expect(formatRateSources([{ sourceName: "ÖRNEK VERİ (TCMB)", date: "2026-10-16" }], EN)).toBe("Rate: SAMPLE DATA (TCMB) · 16 Oct");
+    expect(formatCrossRate("EUR", 55.618, "USD", 49.4463, "en-GB")).toBe("1 EUR = 1.12 USD");
   });
 });

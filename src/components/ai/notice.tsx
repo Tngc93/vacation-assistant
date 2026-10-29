@@ -1,12 +1,13 @@
 import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import { AiError, aiErrorCaption } from "@/lib/ai/errors";
+import type { I18n } from "@/i18n/i18n";
+import { aiErrorCaption, aiErrorText } from "@/lib/ai/errors";
 
 export type Notice = { tone: "ink" | "warn"; text: string; detail?: string | null };
 
-/** The calm message and, under it, only the HTTP status and model name. */
-export function errorNotice(error: unknown): Notice {
-  return { tone: "warn", text: error instanceof AiError ? error.message : new AiError("network").message, detail: aiErrorCaption(error) };
+/** The calm message, in the interface language, and under it only the HTTP status and model name. */
+export function errorNotice(error: unknown, i18n: Pick<I18n, "m" | "f">): Notice {
+  return { tone: "warn", text: aiErrorText(error, i18n), detail: aiErrorCaption(error) };
 }
 
 export function NoticeText({ notice, alert }: { notice: Notice; alert?: boolean }) {
