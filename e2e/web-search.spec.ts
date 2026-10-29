@@ -1,7 +1,7 @@
 import { expect, test, type Request } from "./fixtures";
 
 // e2e server: VA_AI_MOCK=1 (the keyless demo: the mock provider answers web searches, labelled ÖRNEK VERİ),
-// VA_FLIGHTS_FIXTURES=1 and VA_OFFLINE=1 (no exchange rates, so only lira prices have a lira amount).
+// VA_FLIGHTS_FIXTURES=1, VA_RATES_FIXTURES=1 (sample TCMB rates: EUR, USD) and VA_OFFLINE=1.
 function isoDaysFromNow(days: number): string {
   const date = new Date();
   date.setUTCDate(date.getUTCDate() + days);
@@ -31,11 +31,11 @@ test("web search for flights and stays (mock provider): sample-labelled, linked,
   await expect(web.getByRole("article")).toHaveCount(2);
   await expect(web.getByText(/YAPAY ZEKÂ WEB'DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA/)).toBeVisible();
   await expect(web.getByText(/1 sonuç gösterilmedi/)).toBeVisible();
-  // The euro price has no rate offline: shown as found, without a lira amount or a budget button.
-  await expect(web.getByText("EUR KURU ALINAMADI · TL KARŞILIĞI YOK")).toBeVisible();
+  // The euro price in lira at the (sample) rate, with its source.
+  await expect(web.getByText("KUR: ÖRNEK VERİ (TCMB)")).toBeVisible();
   await expect(web.getByRole("link", { name: /Sitede gör · example\.com/ }).first()).toHaveAttribute("rel", "noopener noreferrer nofollow");
 
-  await web.getByRole("button", { name: "Bütçeye ekle" }).click();
+  await web.getByRole("button", { name: "Bütçeye ekle" }).first().click();
   await expect(page).toHaveURL(/wf=8450&wfs=example\.com/);
   await expect(page).not.toHaveURL(/[?&]flight=/);
   await expect(receipt.getByText("2 yolcu × 8.450 ₺ · web: example.com")).toBeVisible();
