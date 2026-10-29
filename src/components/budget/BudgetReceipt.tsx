@@ -1,21 +1,29 @@
 "use client";
 
 import { useEffect, useId, useState } from "react";
-import { Caption, Chip } from "@/components/ui";
+import { Caption } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import { amountToInput, formatMinor, parseAmountInput } from "@/lib/budget/money";
+import { formatMoney } from "@/lib/format";
+import { convertAmount, currencyLabel, effectiveCurrency, parseBudgetCurrency } from "@/lib/budget/currency";
+import { amountToInput, parseAmountInput } from "@/lib/budget/money";
 import { BUDGET_FLIGHT_DROPPED_EVENT, BUDGET_STAY_EVENT, writeBudgetParams, type BudgetParams } from "@/lib/budget/params";
-import { buildReceipt, type FlightLine, type RateInfo, type ReceiptRow } from "@/lib/budget/receipt";
+import { buildReceipt, type FlightLine, type ReceiptRow } from "@/lib/budget/receipt";
+import { formatRateSources } from "@/lib/rates/format";
+import { SOURCES, type RateTable } from "@/lib/rates/types";
+import { useBudgetCurrency } from "./useBudgetCurrency";
 
 type Props = {
   initial: BudgetParams;
   flight: FlightLine;
-  rate: RateInfo | null;
-  localCurrency: string;
+  /** TRY per unit for the budget's currencies (and the destination's, for older `?cur=` links). */
+  rates: RateTable;
   nights: number;
   days: number;
   pax: number;
 };
+
+/** What was typed (or came in the link), in the currency it was typed in: conversions start from it, so no drift. */
+type Entered = { minor: number; currency: string } | null;
 
 /** Keeps the shareable link in step with the inputs, without a server round trip. */
 function writeUrl(budget: Partial<BudgetParams>) {
@@ -76,7 +84,7 @@ function AmountField({
   );
 }
 
-function Row({ row }: { row: ReceiptRow }) {
+function Row({ row, currency }: { row: ReceiptRow; currency: string }) {
   const hasNotes = Boolean(row.detail || row.captions.length || row.note);
   // A <dl> group holds only <dt> and <dd>: the dotted leader lives in the term, the notes in a second <dd>.
   return (
@@ -87,7 +95,7 @@ function Row({ row }: { row: ReceiptRow }) {
         <span aria-hidden="true" className="min-w-4 flex-1 translate-y-[-0.3em] border-b border-dotted border-ink-muted" />
       </dt>
       <dd className={cn("shrink-0 font-mono text-body tabular", row.amount === null && "text-ink-muted")}>
-        {row.amount === null ? row.missing : formatMinor(row.amount, "TRY")}
+        {row.amount === null ? row.missing : formatMoney(row.amount, currency)}
       </dd>
       {hasNotes ? (
         <dd className="col-span-2">
@@ -105,20 +113,61 @@ function Row({ row }: { row: ReceiptRow }) {
 }
 
 /** DESIGN.md "Budget receipt": dotted leaders, a mono source under each line, a double rule above the total. */
-export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, days, pax }: Props) {
-  const [cur, setCur] = useState(initial.cur);
+export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Props) {
+  const chosen = useBudgetCurrency(parseBudgetCurrency(initial.cur));
+  // Without the chosen currency's rate the budget stays in TRY and says so.
+  const cur = effectiveCurrency(chosen, rates);
+  // The currency of the two fields and of `?stay=`/`?daily=` (always the link's `?cur=`); `cur` once converted.
+  const [amountCur, setAmountCur] = useState(initial.cur);
   const [stayText, setStayText] = useState(initial.stay ? amountToInput(initial.stay) : "");
   const [dailyText, setDailyText] = useState(initial.daily ? amountToInput(initial.daily) : "");
+  const [entered, setEntered] = useState<{ stay: Entered; daily: Entered }>({
+    stay: initial.stay ? { minor: initial.stay, currency: initial.cur } : null,
+    daily: initial.daily ? { minor: initial.daily, currency: initial.cur } : null,
+  });
 
-  // The stay card's "Bütçeye yaz" (web search) fills the nightly field; it has already updated the URL.
+  // Another currency chosen (or remembered, or an older link's TRY/local amounts): convert what was entered,
+  // during render like any state that follows a prop. Without a rate the amounts stay as they are, and their
+  // rows say so.
+  if (amountCur !== cur) {
+    const convert = (e: Entered) => (e ? convertAmount(e.minor, e.currency, cur, rates) : null);
+    const stay = convert(entered.stay);
+    const daily = convert(entered.daily);
+    if (!(entered.stay && stay === null) && !(entered.daily && daily === null)) {
+      if (stay !== null) setStayText(amountToInput(stay));
+      if (daily !== null) setDailyText(amountToInput(daily));
+      setAmountCur(cur);
+    }
+  }
+
+  // The link names the amounts' currency: once they are converted, both are written together.
+  useEffect(() => {
+    const linked = new URLSearchParams(window.location.search).get("cur")?.toUpperCase() || "TRY";
+    if (linked === amountCur) return;
+    const valid = (text: string) => {
+      const parsed = text.trim() ? parseAmountInput(text) : null;
+      return parsed?.ok ? parsed.minor : null;
+    };
+    writeUrl({ stay: valid(stayText), daily: valid(dailyText), cur: amountCur });
+  }, [amountCur, stayText, dailyText]);
+
+  // The stay card's "Bütçeye yaz" (web search) fills the nightly field, in the field's currency.
   useEffect(() => {
     const onStay = (event: Event) => {
-      const minor = (event as CustomEvent<{ minor?: unknown }>).detail?.minor;
-      if (typeof minor === "number" && Number.isInteger(minor) && minor > 0) setStayText(amountToInput(minor));
+      const detail = (event as CustomEvent<{ minor?: unknown; currency?: unknown }>).detail;
+      const minor = detail?.minor;
+      const currency = typeof detail?.currency === "string" ? detail.currency : null;
+      if (typeof minor !== "number" || !Number.isInteger(minor) || minor <= 0 || !currency) return;
+      const inField = convertAmount(minor, currency, amountCur, rates);
+      if (inField === null) return;
+      event.preventDefault();
+      setEntered((e) => ({ ...e, stay: { minor, currency } }));
+      setStayText(amountToInput(inField));
+      writeUrl({ stay: inField });
     };
     window.addEventListener(BUDGET_STAY_EVENT, onStay);
     return () => window.removeEventListener(BUDGET_STAY_EVENT, onStay);
-  }, []);
+  }, [amountCur, rates]);
 
   // A new origin took the chosen flight out (the link no longer has it); said once, until another flight is chosen.
   const [flightDropped, setFlightDropped] = useState(false);
@@ -136,8 +185,9 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
     flight,
     stay: stay?.ok ? stay.minor : null,
     daily: daily?.ok ? daily.minor : null,
+    amountCur,
     cur,
-    rate,
+    rates,
     nights,
     days,
     pax,
@@ -146,43 +196,20 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
   const onAmount = (key: "stay" | "daily", set: (t: string) => void) => (text: string) => {
     set(text);
     const parsed = read(text);
+    const minor = parsed?.ok ? parsed.minor : null;
+    setEntered((e) => ({ ...e, [key]: minor === null ? null : { minor, currency: amountCur } }));
     // The link always matches the receipt: a valid amount is written, an empty or invalid box removes it.
-    writeUrl({ [key]: parsed?.ok ? parsed.minor : null });
+    writeUrl({ [key]: minor });
   };
-  const currencies = localCurrency === "TRY" ? ["TRY"] : ["TRY", localCurrency];
 
   return (
     <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] md:items-start print:block">
       {/* Printed: only the total (the inputs and rows stay on screen). */}
       <div className="grid gap-5 print:hidden">
-        {currencies.length > 1 ? (
-          <div>
-            <p id="butce-para-birimi" className="text-caption font-medium">
-              Tutarları hangi para biriminde gireceksin?
-            </p>
-            <div role="group" aria-labelledby="butce-para-birimi" className="mt-1.5 flex gap-2">
-              {currencies.map((code) => (
-                <Chip
-                  key={code}
-                  selected={cur === code}
-                  onClick={() => {
-                    setCur(code);
-                    writeUrl({ cur: code });
-                  }}
-                >
-                  {code === "TRY" ? "TL (₺)" : code}
-                </Chip>
-              ))}
-            </div>
-            {cur !== "TRY" && rate && !rate.ok ? (
-              <p className="mt-2 text-caption text-warn">{rate.currency} kuru şu an alınamıyor; bu tutarlar toplama eklenemez.</p>
-            ) : null}
-          </div>
-        ) : null}
         <AmountField
           label="Gecelik konaklama (tüm odalar)"
           hint={`${nights} gece ile çarpılır. Otel fiyatını Booking ya da Google Hotels'te görüp buraya yazabilirsin.`}
-          currency={cur}
+          currency={amountCur}
           value={stayText}
           error={stay && !stay.ok ? stay.error : null}
           onChange={onAmount("stay", setStayText)}
@@ -190,7 +217,7 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
         <AmountField
           label="Kişi başı günlük harcama"
           hint={`${days} gün × ${pax} kişi ile çarpılır: yemek, ulaşım, müze…`}
-          currency={cur}
+          currency={amountCur}
           value={dailyText}
           error={daily && !daily.ok ? daily.error : null}
           onChange={onAmount("daily", setDailyText)}
@@ -198,13 +225,16 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
       </div>
 
       <section aria-label="Bütçe fişi" className="rounded-md border border-rule bg-paper-raised px-5 py-4 shadow-ticket md:px-8 md:py-6">
-        <Caption as="p">BÜTÇE FİŞİ · TL</Caption>
+        <Caption as="p">BÜTÇE FİŞİ · {currencyLabel(receipt.cur)}</Caption>
+        {chosen !== cur ? (
+          <p className="mt-1 text-caption text-warn">{chosen} kuru şu an alınamadı; bütçe TL olarak gösteriliyor.</p>
+        ) : null}
         <p role="status" className="text-caption text-ink-muted empty:hidden print:hidden">
           {showDropped ? "Kalkış değişti; seçili uçuş bütçeden çıkarıldı." : ""}
         </p>
         <dl className="mt-2 divide-y divide-dashed divide-rule print:hidden">
           {receipt.rows.map((row) => (
-            <Row key={row.id} row={row} />
+            <Row key={row.id} row={row} currency={receipt.cur} />
           ))}
         </dl>
         <div className="mt-2 border-t-[3px] border-double border-ink pt-3">
@@ -214,21 +244,26 @@ export function BudgetReceipt({ initial, flight, rate, localCurrency, nights, da
               {receipt.partial ? <Caption tone="warn">KISMİ TOPLAM</Caption> : null}
             </p>
             <p className="font-mono text-title tabular" aria-live="polite">
-              {formatMinor(receipt.total, "TRY")}
+              {formatMoney(receipt.total, receipt.cur)}
             </p>
           </div>
           <div className="mt-1 flex items-baseline justify-between gap-4">
             <p className="text-body text-ink-muted">Kişi başı ({pax} kişi)</p>
-            <p className="font-mono text-body tabular">{formatMinor(receipt.perPerson, "TRY")}</p>
+            <p className="font-mono text-body tabular">{formatMoney(receipt.perPerson, receipt.cur)}</p>
           </div>
           {receipt.partial ? (
             <p className="mt-3 text-caption text-ink-muted">Değeri olmayan satırlar toplama eklenmedi.</p>
           ) : null}
-          {receipt.rate?.sourceId === "erapi" ? (
-            // Attribution required by the open access terms of exchangerate-api.com.
-            <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-caption underline">
-              Rates By Exchange Rate API
-            </a>
+          {receipt.rates.length ? (
+            <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 font-mono text-caption tabular text-ink-muted">
+              <span>{formatRateSources(receipt.rates)}</span>
+              {receipt.rates.some((r) => r.sourceId === "erapi") ? (
+                // Attribution required by the open access terms of exchangerate-api.com.
+                <a href={SOURCES.erapi.url} target="_blank" rel="noopener noreferrer" className="underline">
+                  Rates By Exchange Rate API
+                </a>
+              ) : null}
+            </p>
           ) : null}
         </div>
       </section>

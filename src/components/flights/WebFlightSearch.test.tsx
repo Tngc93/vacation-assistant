@@ -12,7 +12,7 @@ vi.mock("next/navigation", () => ({ useRouter: () => ({ replace }) }));
 
 const KEY = "test-key-not-real";
 const query = { fromAirports: ["IST", "SAW"], toCity: "Barcelona", toAirports: ["BCN"], depart: "2026-11-14", return: "2026-11-18", adults: 2 };
-const rates: RateTable = { EUR: { tryPerUnit: 40, sourceName: "TCMB", date: "2026-10-21" } };
+const rates: RateTable = { EUR: { tryPerUnit: 40, sourceId: "tcmb", sourceName: "TCMB", date: "2026-10-21" } };
 const answer = {
   search: {
     text:
@@ -130,6 +130,25 @@ describe("flight prices from the model's web search", () => {
     const [cheapest] = await screen.findAllByRole("article");
     await user.click(within(cheapest).getByRole("button", { name: "Bütçeye ekle" }));
     expect(replace).toHaveBeenCalledWith("/plan?from=IST&to=BCN&wf=8200&wfs=vueling.com", { scroll: false });
+  });
+
+  it("shows the prices in the budget's currency; the budget still keeps the lira amount", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "anthropic", key: KEY, model: "claude-haiku-5-5" }, false);
+    window.history.replaceState(null, "", "/plan?from=IST&to=BCN&cur=EUR");
+    renderSearch(mockProvider("anthropic", [answer]).fetcher);
+    await user.click(screen.getByRole("button", { name: "Web'de ara" }));
+    const cards = await screen.findAllByRole("article");
+    const eur = (value: number) => new Intl.NumberFormat("tr-TR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value);
+    // 410 EUR for 2 = 205 EUR each, in its own currency: no rate to name.
+    expect(within(cards[0]).getByText(eur(205))).toBeInTheDocument();
+    expect(within(cards[0]).getByText(eur(410))).toBeInTheDocument();
+    expect(within(cards[0]).queryByText(/^KUR:/)).toBeNull();
+    // 9.000 ₺ ÷ 40 = 225 EUR, with the rate's source.
+    expect(within(cards[1]).getByText(eur(225))).toBeInTheDocument();
+    expect(within(cards[1]).getByText("KUR: TCMB")).toBeInTheDocument();
+    await user.click(within(cards[0]).getByRole("button", { name: "Bütçeye ekle" }));
+    expect(replace).toHaveBeenCalledWith("/plan?from=IST&to=BCN&cur=EUR&wf=8200&wfs=vueling.com", { scroll: false });
   });
 
   it("locks the button while searching and shows errors calmly with the status and model", async () => {

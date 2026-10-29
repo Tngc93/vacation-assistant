@@ -20,3 +20,25 @@ export function formatRate(rate: Pick<RateFound, "currency" | "tryPerUnit">): st
 export function formatRateLine(rate: RateFound): string {
   return `${formatRate(rate)} · ${rate.source.name} · ${shortDate.format(isoToDate(rate.date))}`;
 }
+
+/** Smallest of 1, 100, 1.000, 10.000 units of `from` worth at least one unit of the other currency. */
+function crossUnit(perUnit: number): number {
+  return [1, 100, 1_000, 10_000].find((u) => u * perUnit >= 1) ?? 10_000;
+}
+
+/** "1 EUR = 1,08 USD", "100 JPY = 0,57 EUR", "1 EUR = 55,62 ₺": through TRY, like every conversion here. */
+export function formatCrossRate(from: string, fromTryPerUnit: number, to: string, toTryPerUnit: number): string {
+  const perUnit = fromTryPerUnit / toTryPerUnit;
+  const unit = crossUnit(perUnit);
+  return `${units.format(unit)} ${from} = ${amount.format(unit * perUnit)} ${to === "TRY" ? "₺" : to}`;
+}
+
+/** "TCMB · 29 Eki"; each source and date once ("TCMB · 29 Eki; Frankfurter (ECB) · 28 Eki"). */
+export function formatSourceDates(rates: ReadonlyArray<{ sourceName: string; date: string }>): string {
+  return [...new Set(rates.map((r) => `${r.sourceName} · ${shortDate.format(isoToDate(r.date))}`))].join("; ");
+}
+
+/** The budget's source line: "Kur: TCMB · 29 Eki". */
+export function formatRateSources(rates: ReadonlyArray<{ sourceName: string; date: string }>): string {
+  return `Kur: ${formatSourceDates(rates)}`;
+}

@@ -66,14 +66,22 @@ export function fromKurus(kurus: number, tryPerUnit: number): number {
   return Number(divRound(BigInt(kurus) * MICROS, rateToMicros(tryPerUnit)));
 }
 
-/** Whole lira, half up, in kuruş (12345 → 12300, 12350 → 12400). */
-export function roundToLira(kurus: number): number {
-  return Number(divRound(BigInt(kurus), HUNDRED)) * 100;
+/**
+ * Minor units of one currency → minor units of another, through TRY (`tryPerUnit` of each; TRY itself is 1).
+ * One BigInt step, rounded half up once: `minor × from ÷ to`.
+ */
+export function convertMinor(minor: number, fromTryPerUnit: number, toTryPerUnit: number): number {
+  return Number(divRound(BigInt(minor) * rateToMicros(fromTryPerUnit), rateToMicros(toTryPerUnit)));
 }
 
-/** kuruş ÷ n, rounded half up to whole lira. */
-export function perPersonLira(kurus: number, people: number): number {
-  return Number(divRound(BigInt(kurus), BigInt(people) * HUNDRED)) * 100;
+/** Whole units, half up, in minor units (12345 → 12300, 12350 → 12400): lira, euro, dollar or pound alike. */
+export function roundToWhole(minor: number): number {
+  return Number(divRound(BigInt(minor), HUNDRED)) * 100;
+}
+
+/** minor ÷ n, rounded half up to whole units. */
+export function perPersonWhole(minor: number, people: number): number {
+  return Number(divRound(BigInt(minor), BigInt(people) * HUNDRED)) * 100;
 }
 
 /** "1.250,50 EUR", "300 EUR" in Turkish formatting with the ISO code. */

@@ -3,10 +3,12 @@ import { AiDrawerProvider, AiEdgeTab, AiTabButton } from "@/components/ai/AiDraw
 import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
 import type { SearchState } from "@/lib/search/params";
+import { BudgetCurrencyPicker } from "@/components/budget/BudgetCurrencyPicker";
 import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection";
 import { FlightsSection, FlightsSkeleton } from "@/components/flights/FlightsSection";
 import { ItinerarySection, ItinerarySkeleton } from "@/components/itinerary/ItinerarySection";
 import { StaysSection, StaysSkeleton } from "@/components/stays/StaysSection";
+import { parseBudgetCurrency } from "@/lib/budget/currency";
 import type { BudgetParams } from "@/lib/budget/params";
 import type { CategoryId } from "@/lib/places/categories";
 import type { EditBatch } from "@/lib/ai/edits";
@@ -84,6 +86,7 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
       id: "butce",
       title: "Bütçe",
       lead: "Seçtiğin uçuş, konaklama ve günlük harcamanın toplamı.",
+      action: <BudgetCurrencyPicker fromLink={parseBudgetCurrency(budget.cur)} />,
       body: (
         <Suspense fallback={<BudgetSkeleton />}>
           <BudgetSection search={search} destination={destination} direct={direct} budget={budget} />

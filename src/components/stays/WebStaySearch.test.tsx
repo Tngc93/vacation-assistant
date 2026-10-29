@@ -9,7 +9,7 @@ import { WebStaySearch } from "./WebStaySearch";
 
 const KEY = "test-key-not-real";
 const query = { city: "Barcelona", country: "ES", checkIn: "2026-11-14", checkOut: "2026-11-18", adults: 2 };
-const rates: RateTable = { EUR: { tryPerUnit: 40, sourceName: "TCMB", date: "2026-10-21" } };
+const rates: RateTable = { EUR: { tryPerUnit: 40, sourceId: "tcmb", sourceName: "TCMB", date: "2026-10-21" } };
 const answer = {
   search: {
     text: JSON.stringify({
@@ -48,8 +48,7 @@ describe("stay prices by neighbourhood", () => {
         <BudgetReceipt
           initial={{ flight: null, webFlight: null, stay: null, daily: null, cur: "TRY" }}
           flight={{ kind: "missing", reason: "YOK" }}
-          rate={null}
-          localCurrency="EUR"
+          rates={rates}
           nights={4}
           days={5}
           pax={2}
@@ -74,5 +73,51 @@ describe("stay prices by neighbourhood", () => {
     expect(within(receipt).getAllByText("24.000 ₺")).toHaveLength(2); // the row and the total
     expect(screen.getByText(/Eixample: gecelik 6\.000 ₺ bütçeye yazıldı/)).toBeInTheDocument();
     expect(document.body.innerHTML).not.toContain(KEY);
+  });
+
+  it("shows the ranges in the budget's currency and writes the middle in it", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "anthropic", key: KEY, model: "claude-haiku-5-5" }, false);
+    window.history.replaceState(null, "", "/plan?from=IST&to=BCN&pax=2&cur=EUR");
+    const mock = mockProvider("anthropic", [answer]);
+    render(
+      <>
+        <WebStaySearch query={query} rates={rates} demo={false} fetcher={mock.fetcher} />
+        <BudgetReceipt
+          initial={{ flight: null, webFlight: null, stay: null, daily: null, cur: "EUR" }}
+          flight={{ kind: "missing", reason: "YOK" }}
+          rates={rates}
+          nights={4}
+          days={5}
+          pax={2}
+        />
+      </>,
+    );
+    await user.click(screen.getByRole("button", { name: "Semte göre fiyat aralığını web'de ara" }));
+    const rows = await screen.findAllByRole("listitem");
+    const eur = (value: number) => new Intl.NumberFormat("tr-TR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value);
+    // In its own currency: as the site said, no rate.
+    expect(rows[0]).toHaveTextContent(`${eur(120)} – ${eur(180)}`);
+    expect(rows[0]).not.toHaveTextContent("SİTEDE");
+    // 3.000–4.000 ₺ ÷ 40 = 75–100 EUR, with the rate's source.
+    expect(rows[1]).toHaveTextContent(`${eur(75)} – ${eur(100)}`);
+    expect(rows[1]).toHaveTextContent("SİTEDE 3.000 ₺ – 4.000 ₺ · KUR: TCMB · TAHMİNİ");
+
+    await user.click(within(rows[0]).getByRole("button", { name: "Bütçeye yaz" }));
+    expect(screen.getByLabelText("Gecelik konaklama (tüm odalar)")).toHaveValue("150");
+    expect(new URLSearchParams(window.location.search).get("stay")).toBe("150");
+    expect(new URLSearchParams(window.location.search).get("cur")).toBe("EUR");
+    expect(screen.getByText(new RegExp(`Eixample: gecelik ${eur(150)} bütçeye yazıldı`))).toBeInTheDocument();
+  });
+
+  it("says so when the budget cannot take the price", async () => {
+    const user = userEvent.setup();
+    saveConnection({ provider: "anthropic", key: KEY, model: "claude-haiku-5-5" }, false);
+    render(<WebStaySearch query={query} rates={rates} demo={false} fetcher={mockProvider("anthropic", [answer]).fetcher} />);
+    await user.click(screen.getByRole("button", { name: "Semte göre fiyat aralığını web'de ara" }));
+    const rows = await screen.findAllByRole("listitem");
+    await user.click(within(rows[0]).getByRole("button", { name: "Bütçeye yaz" }));
+    expect(screen.getByText(/Bütçe şu an bu tutarı alamadı/)).toBeInTheDocument();
+    expect(new URLSearchParams(window.location.search).get("stay")).toBeNull();
   });
 });

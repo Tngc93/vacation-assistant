@@ -5,7 +5,7 @@ import { httpsUrl, matchSource, searchFlightPrices, searchGrounded, searchStayPr
 
 const KEY = "test-key-not-real";
 const NOW = Date.UTC(2026, 9, 21, 18, 40);
-const rates: RateTable = { EUR: { tryPerUnit: 40, sourceName: "TCMB", date: "2026-10-21" } };
+const rates: RateTable = { EUR: { tryPerUnit: 40, sourceId: "tcmb", sourceName: "TCMB", date: "2026-10-21" } };
 const query = { fromAirports: ["IST", "SAW"], toCity: "Barcelona", toAirports: ["BCN"], depart: "2026-11-14", return: "2026-11-18", adults: 2 };
 const stayQuery = { city: "Barcelona", country: "ES", checkIn: "2026-11-14", checkOut: "2026-11-18", adults: 2 };
 const fenced = (value: unknown) => `Here is what I found:\n\`\`\`json\n${JSON.stringify(value)}\n\`\`\``;

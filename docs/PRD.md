@@ -72,9 +72,9 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 
 ### Bütçe
 
-13. Toplam bütçe TL olarak gösterilir: uçuş (kişi × fiyat) + konaklama (gece × gecelik fiyat) + günlük harcama (gün × kişi × günlük tutar). *Konaklama ve günlük harcama için hazır ya da ortalama değer yok; yalnızca kullanıcının girdiği değer. Girilmeyen satır toplama girmez, toplam "KISMİ TOPLAM" olur (2026-10-17, Berk'in kararı).*
-14. Döviz kurları TCMB'nin günlük kur dosyasından sunucu tarafında çekilir ve yaklaşık 6 saat önbelleğe alınır. TCMB'ye ulaşılamazsa Frankfurter (ECB), o da yoksa Exchange Rate API kullanılır; hiçbiri cevap vermezse TL karşılığı gösterilmez, kur uydurulmaz.
-15. Her bütçe satırında kaynağı ve "tahmini" etiketi bulunur. Konaklama ve günlük harcama tutarlarını kullanıcı girer; değerler URL'de durur.
+13. Toplam bütçe seçilen para biriminde gösterilir: uçuş (kişi × fiyat) + konaklama (gece × gecelik fiyat) + günlük harcama (gün × kişi × günlük tutar). *Konaklama ve günlük harcama için hazır ya da ortalama değer yok; yalnızca kullanıcının girdiği değer. Girilmeyen satır toplama girmez, toplam "KISMİ TOPLAM" olur (2026-10-17, Berk'in kararı).* *Para birimi bütçenin başlığındaki seçiciden seçilir: TRY, EUR, USD, GBP; varsayılan TRY (İngilizce arayüzde EUR olacak). Seçim `?cur=` ile paylaşılır ve tarayıcıda hatırlanır. Uçuş fiyatları TL gelir ve yalnızca gösterimde çevrilir; konaklama ve günlük harcama seçilen para biriminde girilir, para birimi değişince çevrilip korunur (2026-10-29, Berk'in kararı).*
+14. Döviz kurları TCMB'nin günlük kur dosyasından sunucu tarafında çekilir ve yaklaşık 6 saat önbelleğe alınır. TCMB'ye ulaşılamazsa Frankfurter (ECB), o da yoksa Exchange Rate API kullanılır; hiçbiri cevap vermezse TL karşılığı gösterilmez, kur uydurulmaz. Çapraz kur her zaman TL üzerinden hesaplanır (EUR → USD = EUR'nun TL kuru ÷ USD'nin TL kuru). Seçilen para biriminin kuru alınamazsa bütçe TL'de kalır ve bunu açıkça yazar.
+15. Her bütçe satırında kaynağı ve "tahmini" etiketi bulunur; çevrilen tutarların altında kurun kaynağı ve tarihi yazar ("Kur: TCMB · 29 Eki"). Konaklama ve günlük harcama tutarlarını kullanıcı girer; değerler URL'de, `?cur=`'de yazan para biriminde durur (`?cur=` yoksa TL: eski linkler aynı bütçeyi açar).
 
 ### Şehir rehberi
 
