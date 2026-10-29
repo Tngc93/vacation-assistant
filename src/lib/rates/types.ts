@@ -34,4 +34,10 @@ export type RateMissing = {
 
 export type RateResult = RateFound | RateMissing;
 
+/**
+ * TRY per unit by currency (TCMB → Frankfurter → Exchange Rate API), serialisable for client components.
+ * A currency whose rate could not be fetched is absent: no conversion, never a guess.
+ */
+export type RateTable = Record<string, { tryPerUnit: number; sourceId: RateSourceId; sourceName: string; date: string }>;
+
 export type Fetcher = (url: string, init: RequestInit & { next?: { revalidate?: number } }) => Promise<Response>;

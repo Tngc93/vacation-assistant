@@ -8,7 +8,7 @@
  * The app never requests these URLs itself; people open them.
  */
 import { z } from "zod";
-import { fromKurus, roundToLira, toKurus } from "@/lib/budget/money";
+import { fromKurus, roundToWhole, toKurus } from "@/lib/budget/money";
 import { extractJson, plainText } from "./assistant";
 import { AiError } from "./errors";
 import { PROVIDERS, type Connection } from "./providers";
@@ -16,8 +16,9 @@ import { webSearch, type WebSource } from "./webSearch";
 
 type Fetch = typeof fetch;
 
-/** TRY per unit, from our rate sources (TCMB → Frankfurter → Exchange Rate API), serialisable for the client. */
-export type RateTable = Record<string, { tryPerUnit: number; sourceName: string; date: string }>;
+import type { RateTable } from "@/lib/rates/types";
+
+export type { RateTable };
 
 /** Currencies the page fetches rates for besides the destination's own. */
 export const COMMON_CURRENCIES = ["EUR", "USD", "GBP"] as const;
@@ -112,7 +113,7 @@ export function toTryMinor(minor: number, currency: string, rates: RateTable): n
 }
 
 /** Whole lira (in kuruş), so budget rows stay whole lira. */
-const wholeLira = roundToLira;
+const wholeLira = roundToWhole;
 
 const priceSchema = z.number().positive().max(10_000_000);
 const currencySchema = z

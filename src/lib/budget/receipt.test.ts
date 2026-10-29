@@ -2,8 +2,9 @@ import { describe, expect, it } from "vitest";
 import { buildReceipt, type ReceiptInput } from "./receipt";
 
 const flight = { kind: "ticket" as const, label: "Lufthansa · LH 1301 · IST → BCN", pricePerAdult: 14554, differentDates: false, sample: false, note: null };
-const tcmb = { ok: true as const, currency: "EUR", tryPerUnit: 55.618, sourceId: "tcmb", sourceName: "TCMB", date: "2026-10-16" };
-const base: ReceiptInput = { flight, stay: null, daily: null, cur: "TRY", rate: tcmb, nights: 4, days: 5, pax: 2 };
+const tcmb = (tryPerUnit: number) => ({ tryPerUnit, sourceId: "tcmb" as const, sourceName: "TCMB", date: "2026-10-16" });
+const rates = { EUR: tcmb(55.618), USD: tcmb(49.4463) };
+const base: ReceiptInput = { flight, stay: null, daily: null, amountCur: "TRY", cur: "TRY", rates, nights: 4, days: 5, pax: 2 };
 
 describe("buildReceipt", () => {
   it("uses only the flight when nothing is entered, and says the total is partial", () => {
@@ -31,21 +32,43 @@ describe("buildReceipt", () => {
     const r = buildReceipt({ ...base, stay: 300000, daily: 150000 });
     expect(r.rows[1]).toMatchObject({ detail: "4 gece × 3.000 ₺", amount: 1200000, captions: ["SENİN GİRDİĞİN · TAHMİNİ"] });
     expect(r.rows[2]).toMatchObject({ detail: "5 gün × 2 kişi × 1.500 ₺", amount: 1500000 });
-    expect(r).toMatchObject({ total: 2910800 + 1200000 + 1500000, partial: false, perPerson: 2805400, rate: null });
+    expect(r).toMatchObject({ total: 2910800 + 1200000 + 1500000, partial: false, perPerson: 2805400, rates: [], cur: "TRY" });
   });
 
-  it("converts local-currency entries with the rate and names its source and date", () => {
-    const r = buildReceipt({ ...base, stay: 12000, daily: 6000, cur: "EUR" });
-    // 4 × 120 EUR = 480 EUR × 55,618 = 26.696,64 → 26.697 ₺
-    expect(r.rows[1]).toMatchObject({ detail: "4 gece × 120 EUR = 480 EUR", amount: 2669700 });
-    expect(r.rows[1].captions).toEqual(["SENİN GİRDİĞİN · TAHMİNİ", "KUR: TCMB · 16 EKİ"]);
-    // 5 × 2 × 60 EUR = 600 EUR × 55,618 = 33.370,80 → 33.371 ₺
-    expect(r.rows[2].amount).toBe(3337100);
-    expect(r.rate).toEqual(tcmb);
+  it("shows the lira flight in the chosen currency, keeping the lira price in the detail", () => {
+    const r = buildReceipt({ ...base, amountCur: "EUR", cur: "EUR", stay: 12000, daily: 6000 });
+    // 2 × 14.554 ₺ = 29.108 ₺ ÷ 55,618 = 523,36 EUR → €523
+    expect(r.rows[0]).toMatchObject({ amount: 52300, detail: "2 yolcu × 14.554 ₺ · Lufthansa · LH 1301 · IST → BCN" });
+    expect(r.rows[0].captions).toEqual(["TRAVELPAYOUTS · ÖNBELLEKTEN · TAHMİNİ"]);
+    // Entered in euro: no conversion, the detail in euro (Intl places the symbol).
+    expect(r.rows[1]).toMatchObject({ detail: "4 gece × €120", amount: 48000, captions: ["SENİN GİRDİĞİN · TAHMİNİ"] });
+    expect(r.rows[2]).toMatchObject({ detail: "5 gün × 2 kişi × €60", amount: 60000 });
+    expect(r).toMatchObject({ cur: "EUR", total: 52300 + 48000 + 60000, perPerson: 80200 });
+    expect(r.rates).toEqual([{ currency: "EUR", ...tcmb(55.618) }]);
   });
 
-  it("leaves a local-currency row out of the total when there is no rate", () => {
-    const r = buildReceipt({ ...base, stay: 12000, cur: "EUR", rate: { ok: false, currency: "EUR" } });
+  it("converts a web-search flight price (lira per adult) like a ticket", () => {
+    const r = buildReceipt({ ...base, cur: "USD", flight: { kind: "web", host: "flypgs.com", perAdult: 820000 } });
+    // 16.400 ₺ ÷ 49,4463 = 331,67 USD → $332
+    expect(r.rows[0]).toMatchObject({ amount: 33200, detail: "2 yolcu × 8.200 ₺ · web: flypgs.com" });
+    expect(r.rows[0].captions).toContain("YAPAY ZEKÂ WEB'DEN BULDU · TAHMİNİ");
+  });
+
+  it("converts entries in another currency through lira and names both rates", () => {
+    const r = buildReceipt({ ...base, amountCur: "EUR", cur: "USD", stay: 12000 });
+    // 480 EUR × 55,618 ÷ 49,4463 = 539,92 USD → $540
+    expect(r.rows[1]).toMatchObject({ detail: "4 gece × €120 = €480", amount: 54000 });
+    expect(r.rates.map((rate) => rate.currency)).toEqual(["USD", "EUR"]);
+  });
+
+  it("converts lira entries into a foreign currency, each row rounded once", () => {
+    const r = buildReceipt({ ...base, amountCur: "TRY", cur: "EUR", stay: 300000 });
+    // 4 × 3.000 ₺ = 12.000 ₺ ÷ 55,618 = 215,76 EUR → €216
+    expect(r.rows[1]).toMatchObject({ detail: "4 gece × 3.000 ₺ = 12.000 ₺", amount: 21600 });
+  });
+
+  it("leaves a row out of the total when there is no rate for its currency", () => {
+    const r = buildReceipt({ ...base, stay: 12000, amountCur: "EUR", cur: "TRY", rates: {} });
     expect(r.rows[1]).toMatchObject({ amount: null, missing: "kur alınamadı" });
     expect(r.rows[1].captions[1]).toBe("EUR KURU ALINAMADI · TOPLAMA EKLENMEDİ");
     expect(r).toMatchObject({ total: 2910800, partial: true });
@@ -62,7 +85,13 @@ describe("buildReceipt", () => {
     expect(r.rows[0].captions).toEqual(["TRAVELPAYOUTS · ÖNBELLEKTEN · TAHMİNİ", "FARKLI TARİH", "ÖRNEK VERİ · GERÇEK FİYAT DEĞİL"]);
   });
 
-  it("rounds each row to whole lira so the rows add up to the total", () => {
+  it("never guesses a rate for the flight either", () => {
+    const r = buildReceipt({ ...base, cur: "GBP" });
+    expect(r.rows[0]).toMatchObject({ amount: null, missing: "kur alınamadı" });
+    expect(r.rows[0].captions).toContain("GBP KURU ALINAMADI · TOPLAMA EKLENMEDİ");
+  });
+
+  it("rounds each row to whole units so the rows add up to the total", () => {
     // 4 × 1250,10 = 5000,40 → 5000; 5 × 3 × 33,33 = 499,95 → 500
     const r = buildReceipt({ ...base, pax: 3, stay: 125010, daily: 3333 });
     expect(r.rows.map((row) => row.amount)).toEqual([4366200, 500000, 50000]);
@@ -70,5 +99,10 @@ describe("buildReceipt", () => {
     expect(r.rows.every((row) => (row.amount ?? 0) % 100 === 0)).toBe(true);
     // 4.916.200 kuruş ÷ 3 = 16.387,33 ₺ → 16.387 ₺
     expect(r.perPerson).toBe(1638700);
+    // The same in euro: 3 × 14.554 ₺ = 43.662 ₺ ÷ 55,618 = 785,03 → €785; 4 × 125,10 = 500,40 → €500; 15 × 3,33 = 49,95 → €50.
+    const eur = buildReceipt({ ...base, pax: 3, cur: "EUR", amountCur: "EUR", stay: 12510, daily: 333 });
+    expect(eur.rows.map((row) => row.amount)).toEqual([78500, 50000, 5000]);
+    expect(eur.total).toBe(78500 + 50000 + 5000);
+    expect(eur.rows.every((row) => (row.amount ?? 0) % 100 === 0)).toBe(true);
   });
 });

@@ -13,6 +13,7 @@ import { isoToDate } from "@/lib/search/dates";
 import { todayInIstanbul } from "@/lib/search/dates";
 import { describeSearch, formatDateRange } from "@/lib/search/describe";
 import { OG_SIZE } from "@/lib/og/size";
+import { parseBudgetCurrency } from "@/lib/budget/currency";
 import { parseBudgetParams } from "@/lib/budget/params";
 import { parseDirect } from "@/lib/flights/display";
 import { parseEdits, parsePinned } from "@/lib/ai/edits";
@@ -102,7 +103,13 @@ async function PlanContent({ searchParams }: Props) {
         </p>
       </header>
       <Suspense fallback={<PlanHeroSkeleton />}>
-        <PlanHero search={result.value} destination={destination} categories={categories} showEvents={parseShowEvents(params.cats)} />
+        <PlanHero
+          search={result.value}
+          destination={destination}
+          categories={categories}
+          showEvents={parseShowEvents(params.cats)}
+          budgetCurrency={parseBudgetCurrency(params.cur)}
+        />
       </Suspense>
       <PlanNav />
       <PlanSections

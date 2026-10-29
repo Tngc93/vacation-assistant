@@ -1,33 +1,16 @@
-import { Caption, Skeleton } from "@/components/ui";
-import { formatRateLine, getRate, SOURCES, type RateResult } from "@/lib/rates";
-import { cn } from "@/lib/cn";
+import { Skeleton } from "@/components/ui";
+import type { BudgetCurrency } from "@/lib/budget/currency";
+import { loadRateTable } from "@/lib/rates/table";
+import { MastheadRate } from "./MastheadRate";
 
-/** Mono line with the TRY rate for a currency and its source. Renders nothing for TRY itself. */
-export async function RateLine({ currency, className }: { currency: string; className?: string }) {
+/**
+ * Mono line with the destination currency's rate in the budget's currency, and its source. Renders nothing
+ * for TRY itself, or when the budget is shown in the destination's own currency.
+ */
+export async function RateLine({ currency, fromLink, className }: { currency: string; fromLink: BudgetCurrency | null; className?: string }) {
   if (currency === "TRY") return null;
-  const rate = await getRate(currency);
-  return <RateText rate={rate} className={className} />;
-}
-
-export function RateText({ rate, className }: { rate: RateResult; className?: string }) {
-  if (!rate.ok) {
-    return (
-      <Caption as="p" tone="warn" className={className}>
-        {rate.currency} kuru şu an alınamadı · TCMB, Frankfurter ve Exchange Rate API cevap vermedi
-      </Caption>
-    );
-  }
-  return (
-    <Caption as="p" tone="ink" className={cn("flex flex-wrap gap-x-3 gap-y-1", className)}>
-      <span>{formatRateLine(rate)}</span>
-      {rate.source.id === "erapi" ? (
-        // Attribution required by the open access terms of exchangerate-api.com.
-        <a href={SOURCES.erapi.url} target="_blank" rel="noopener noreferrer" className="text-ink-muted underline">
-          Rates By Exchange Rate API
-        </a>
-      ) : null}
-    </Caption>
-  );
+  const rates = await loadRateTable(currency);
+  return <MastheadRate local={currency} rates={rates} fromLink={fromLink} className={className} />;
 }
 
 export function RateLineFallback({ className }: { className?: string }) {

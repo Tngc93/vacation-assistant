@@ -6,6 +6,7 @@ import { HeroExplorer, type CategoryResult } from "@/components/places/HeroExplo
 import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
 import { Caption, Skeleton } from "@/components/ui";
 import { cityCentre, type Destination } from "@/data/destinations";
+import type { BudgetCurrency } from "@/lib/budget/currency";
 import { formatDay } from "@/lib/format";
 import type { CategoryId } from "@/lib/places/categories";
 import { loadPlacesFile } from "@/lib/places/load";
@@ -14,10 +15,17 @@ import { eventsInTrip, mastheadLine } from "@/lib/events/trip";
 import { daysBetween, isoToDate } from "@/lib/search/dates";
 import { editHref, type SearchState } from "@/lib/search/params";
 
-type Props = { search: SearchState; destination: Destination; categories: CategoryId[]; showEvents: boolean };
+type Props = {
+  search: SearchState;
+  destination: Destination;
+  categories: CategoryId[];
+  showEvents: boolean;
+  /** `?cur=` when the link names a budget currency: the rate line follows the budget's currency. */
+  budgetCurrency: BudgetCurrency | null;
+};
 
 /** The plan's first screen (DESIGN.md "Plan hero"): city, info line, chips and places carousel, photo and map. */
-export async function PlanHero({ search, destination, categories, showEvents }: Props) {
+export async function PlanHero({ search, destination, categories, showEvents, budgetCurrency }: Props) {
   const [file, eventsFile] = await Promise.all([loadPlacesFile(destination.cityCode), loadEventsFile(destination.cityCode)]);
   const events = eventsInTrip(eventsFile?.events ?? [], search.depart, search.return);
   const inTown = mastheadLine(events);
@@ -41,7 +49,7 @@ export async function PlanHero({ search, destination, categories, showEvents }: 
         <span aria-hidden="true">·</span>
         <LocalTime timeZone={destination.timeZone} />
         <Suspense fallback={<RateLineFallback className="inline-block" />}>
-          <RateLine currency={destination.currency} className="inline-flex" />
+          <RateLine currency={destination.currency} fromLink={budgetCurrency} className="inline-flex" />
         </Suspense>
         <Link href={editHref(search)} className="text-ink underline underline-offset-4">
           Düzenle

@@ -14,8 +14,19 @@ describe("budget URL params", () => {
     });
   });
 
+  it("reads the budget currencies, and keeps an older link's destination currency so its amounts are not misread", () => {
+    for (const cur of ["TRY", "eur", "USD", "gbp"]) {
+      expect(parseBudgetParams({ cur, stay: "120" }, "CZK")).toMatchObject({ cur: cur.toUpperCase(), stay: 12000 });
+    }
+    expect(parseBudgetParams({ cur: "CZK", stay: "3000" }, "CZK")).toMatchObject({ cur: "CZK", stay: 300000 });
+  });
+
+  it("reads amounts without a currency as lira, as every link before the currency picker", () => {
+    expect(parseBudgetParams({ stay: "3000", daily: "1500" }, "EUR")).toMatchObject({ cur: "TRY", stay: 300000, daily: 150000 });
+  });
+
   it("drops malformed values and unknown currencies", () => {
-    expect(parseBudgetParams({ flight: "x<y", stay: "1,5", daily: "-1", cur: "USD" }, "EUR")).toEqual({
+    expect(parseBudgetParams({ flight: "x<y", stay: "1,5", daily: "-1", cur: "JPY" }, "EUR")).toEqual({
       flight: null,
       webFlight: null,
       stay: null,

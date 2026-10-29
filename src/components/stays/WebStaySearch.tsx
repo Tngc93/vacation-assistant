@@ -13,9 +13,12 @@ import {
   useSearchConnection,
   useWebSearch,
 } from "@/components/ai/WebSearchParts";
+import { useBudgetCurrency } from "@/components/budget/useBudgetCurrency";
 import type { Connection } from "@/lib/ai/providers";
-import { formatMinor } from "@/lib/budget/money";
-import { BUDGET_STAY_EVENT, writeBudgetParams } from "@/lib/budget/params";
+import { convertAmount, currencyLabel, effectiveCurrency, type BudgetCurrency } from "@/lib/budget/currency";
+import { formatMinor, roundToWhole } from "@/lib/budget/money";
+import { BUDGET_STAY_EVENT } from "@/lib/budget/params";
+import { formatMoney } from "@/lib/format";
 import { webCacheKey } from "@/lib/ai/webCache";
 import { searchGrounded, searchStayPrices, stayMidpoint, type RateTable, type StayArea, type StayQuery } from "@/lib/ai/webPrices";
 
@@ -53,19 +56,21 @@ function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<Re
   const run = useCallback(() => searchStayPrices(conn, query, rates, { fetcher, now: Date.now(), sample: demo }), [conn, query, rates, fetcher, demo]);
   const { result, busy, error, search } = useWebSearch("stays", key, run);
   const [written, setWritten] = useState<{ ok: boolean; text: string } | null>(null);
+  const cur = effectiveCurrency(useBudgetCurrency(null), rates);
 
+  // The middle of the range in the budget's currency; the budget takes it (and writes the link) or says no.
   const write = (area: StayArea) => {
-    const params = new URLSearchParams(window.location.search);
-    const currency = params.get("cur")?.toUpperCase() || "TRY";
-    const minor = stayMidpoint(area, currency, rates);
+    const minor = stayMidpoint(area, cur, rates);
     if (minor === null) {
       setWritten({ ok: false, text: `${area.currency} kuru alınamadığı için bu aralık bütçeye yazılamadı.` });
       return;
     }
-    const next = writeBudgetParams(params, { stay: minor });
-    window.history.replaceState(null, "", `${window.location.pathname}?${next.toString()}${window.location.hash}`);
-    window.dispatchEvent(new CustomEvent(BUDGET_STAY_EVENT, { detail: { minor } }));
-    setWritten({ ok: true, text: `${area.name}: gecelik ${formatMinor(minor, currency)} bütçeye yazıldı (aralığın ortası). Bütçe'de değiştirebilirsin.` });
+    const event = new CustomEvent(BUDGET_STAY_EVENT, { detail: { minor, currency: cur }, cancelable: true });
+    if (window.dispatchEvent(event)) {
+      setWritten({ ok: false, text: "Bütçe şu an bu tutarı alamadı; gecelik tutarı Bütçe'de kendin yazabilirsin." });
+      return;
+    }
+    setWritten({ ok: true, text: `${area.name}: gecelik ${formatMoney(minor, cur)} bütçeye yazıldı (aralığın ortası). Bütçe'de değiştirebilirsin.` });
   };
 
   return (
@@ -78,7 +83,7 @@ function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<Re
         <ResultFrame result={result}>
           <ul className="grid gap-3">
             {result.items.map((area, i) => (
-              <AreaRow key={`${area.name}-${i}`} area={area} rates={rates} onWrite={() => write(area)} />
+              <AreaRow key={`${area.name}-${i}`} area={area} cur={cur} rates={rates} onWrite={() => write(area)} />
             ))}
           </ul>
           {written ? (
@@ -92,20 +97,32 @@ function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<Re
   );
 }
 
-function AreaRow({ area, rates, onWrite }: { area: StayArea; rates: RateTable; onWrite: () => void }) {
-  const local = area.currency !== "TRY";
-  const convertible = area.tryMin !== null && area.tryMax !== null;
+function AreaRow({ area, cur, rates, onWrite }: { area: StayArea; cur: BudgetCurrency; rates: RateTable; onWrite: () => void }) {
+  const foreign = area.currency !== cur;
+  const shown = (minor: number) => {
+    const converted = convertAmount(minor, area.currency, cur, rates);
+    return converted === null ? null : roundToWhole(converted);
+  };
+  const min = shown(area.minMinor);
+  const max = shown(area.maxMinor);
+  const convertible = min !== null && max !== null;
+  // The rates between the site's currency and the budget's (through TRY).
+  const sources = [...new Set([area.currency, cur].flatMap((c) => (c === "TRY" ? [] : (rates[c]?.sourceName ?? []))))];
   return (
     <li className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 rounded-md border border-dashed border-rule bg-paper px-4 py-3">
       <div className="min-w-0">
         <p className="text-body">{area.name}</p>
         <p className="mt-1 font-mono text-body tabular">
-          {convertible ? `${formatMinor(area.tryMin!, "TRY")} – ${formatMinor(area.tryMax!, "TRY")}` : `${formatMinor(area.minMinor, area.currency)} – ${formatMinor(area.maxMinor, area.currency)}`}
+          {convertible ? `${formatMoney(min, cur)} – ${formatMoney(max, cur)}` : `${formatMinor(area.minMinor, area.currency)} – ${formatMinor(area.maxMinor, area.currency)}`}
           <span className="text-caption text-ink-muted"> / gece</span>
         </p>
         <Caption as="p" className="mt-0.5">
-          {local ? `SİTEDE ${formatMinor(area.minMinor, area.currency)} – ${formatMinor(area.maxMinor, area.currency)} · ` : ""}
-          {convertible ? (local ? `KUR: ${rates[area.currency]?.sourceName.toLocaleUpperCase("tr")} · TAHMİNİ` : "TAHMİNİ") : `${area.currency} KURU ALINAMADI · TL KARŞILIĞI YOK`}
+          {foreign && convertible ? `SİTEDE ${formatMinor(area.minMinor, area.currency)} – ${formatMinor(area.maxMinor, area.currency)} · ` : ""}
+          {convertible
+            ? foreign
+              ? `KUR: ${sources.join(" · ").toLocaleUpperCase("tr")} · TAHMİNİ`
+              : "TAHMİNİ"
+            : `${area.currency} KURU ALINAMADI · ${currencyLabel(cur)} KARŞILIĞI YOK`}
         </Caption>
         <div className="mt-1">
           <SourceLink link={area.link} />

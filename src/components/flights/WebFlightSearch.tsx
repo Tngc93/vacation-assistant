@@ -14,8 +14,11 @@ import {
   useSearchConnection,
   useWebSearch,
 } from "@/components/ai/WebSearchParts";
+import { useBudgetCurrency } from "@/components/budget/useBudgetCurrency";
 import type { Connection } from "@/lib/ai/providers";
-import { formatMinor } from "@/lib/budget/money";
+import { convertAmount, currencyLabel, effectiveCurrency } from "@/lib/budget/currency";
+import { formatMinor, roundToWhole } from "@/lib/budget/money";
+import { formatMoney } from "@/lib/format";
 import { writeBudgetParams, type WebFlightChoice } from "@/lib/budget/params";
 import { cn } from "@/lib/cn";
 import { webCacheKey } from "@/lib/ai/webCache";
@@ -110,9 +113,16 @@ function Connected({
   );
 }
 
-/** Same ticket language as the cached prices, but dashed and never in accent: "EN UCUZ" stays with Travelpayouts. */
+/**
+ * Same ticket language as the cached prices, but dashed and never in accent: "EN UCUZ" stays with Travelpayouts.
+ * Shown in the budget's currency, from the lira amount the budget keeps (`?wf=`), so the card and the receipt agree.
+ */
 function WebOfferCard({ offer, adults, rates, inBudget }: { offer: FlightOffer; adults: number; rates: RateTable; inBudget: WebFlightChoice | null }) {
-  const rate = rates[offer.currency];
+  const cur = effectiveCurrency(useBudgetCurrency(null), rates);
+  const shown = (kurus: number) => roundToWhole(convertAmount(kurus, "TRY", cur, rates) ?? kurus);
+  // The rates between the site's currency and the budget's (through TRY); none when they are the same.
+  const sources =
+    offer.currency === cur ? [] : [...new Set([offer.currency, cur].flatMap((c) => (c === "TRY" ? [] : (rates[c]?.sourceName ?? []))))];
   const chosen = !!inBudget && offer.tryPerAdult === inBudget.perAdult && offer.link.host === inBudget.host;
   return (
     <Ticket
@@ -124,22 +134,22 @@ function WebOfferCard({ offer, adults, rates, inBudget }: { offer: FlightOffer; 
           <div>
             <Caption as="p">1 YETİŞKİN · TAHMİNİ</Caption>
             <p className="mt-1 font-mono text-title tabular text-ink">
-              {offer.tryPerAdult === null ? "—" : formatMinor(offer.tryPerAdult, "TRY")}
+              {offer.tryPerAdult === null ? "—" : formatMoney(shown(offer.tryPerAdult), cur)}
             </p>
             {offer.tryPerAdult === null ? (
               <Caption as="p" tone="warn" className="mt-0.5">
-                {offer.currency} KURU ALINAMADI · TL KARŞILIĞI YOK
+                {offer.currency} KURU ALINAMADI · {currencyLabel(cur)} KARŞILIĞI YOK
               </Caption>
-            ) : offer.currency !== "TRY" && rate ? (
+            ) : sources.length ? (
               <Caption as="p" className="mt-0.5">
-                KUR: {rate.sourceName.toLocaleUpperCase("tr")}
+                KUR: {sources.join(" · ").toLocaleUpperCase("tr")}
               </Caption>
             ) : null}
           </div>
           {offer.tryPerAdult !== null ? (
             <div>
               <Caption as="p">TAHMİNİ TOPLAM · {adults} YOLCU</Caption>
-              <p className="mt-1 font-mono text-body tabular">{formatMinor(offer.tryPerAdult * adults, "TRY")}</p>
+              <p className="mt-1 font-mono text-body tabular">{formatMoney(shown(offer.tryPerAdult * adults), cur)}</p>
             </div>
           ) : null}
           <div className="mt-auto">

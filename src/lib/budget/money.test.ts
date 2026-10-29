@@ -6,9 +6,10 @@ import {
   formatMinor,
   MAX_INPUT_MINOR,
   parseAmountInput,
-  perPersonLira,
+  perPersonWhole,
+  convertMinor,
   rateToMicros,
-  roundToLira,
+  roundToWhole,
   toKurus,
 } from "./money";
 
@@ -55,15 +56,37 @@ describe("amounts in minor units", () => {
   });
 
   it("rounds to whole lira half up and splits per person", () => {
-    expect(roundToLira(12349)).toBe(12300);
-    expect(roundToLira(12350)).toBe(12400);
-    expect(perPersonLira(1000000, 3)).toBe(333300);
-    expect(perPersonLira(1000050, 2)).toBe(500000);
+    expect(roundToWhole(12349)).toBe(12300);
+    expect(roundToWhole(12350)).toBe(12400);
+    expect(perPersonWhole(1000000, 3)).toBe(333300);
+    expect(perPersonWhole(1000050, 2)).toBe(500000);
   });
 
   it("formats in Turkish with the currency", () => {
     expect(formatMinor(1245000, "TRY")).toBe("12.450 ₺");
     expect(formatMinor(125050, "EUR")).toBe("1.250,50 EUR");
     expect(formatMinor(30000, "EUR")).toBe("300 EUR");
+  });
+});
+
+describe("conversion through lira", () => {
+  it("goes from one currency to another in one BigInt step, half up", () => {
+    // 120 EUR × 55,618 ÷ 49,4463 = 134,9787… USD → 134,98
+    expect(convertMinor(12000, 55.618, 49.4463)).toBe(13498);
+    // Lira is 1: 3.000 ₺ ÷ 55,618 = 53,9393… EUR → 53,94; and back 53,94 × 55,618 = 3.000,03 ₺.
+    expect(convertMinor(300000, 1, 55.618)).toBe(5394);
+    expect(convertMinor(5394, 55.618, 1)).toBe(300003);
+    // The same currency (same rate) is the identity.
+    expect(convertMinor(12345, 55.618, 55.618)).toBe(12345);
+  });
+
+  it("rounds a half cent up", () => {
+    // 1 cent at 0,5 TRY per unit into lira: 0,5 kuruş → 1.
+    expect(convertMinor(1, 0.5, 1)).toBe(1);
+    expect(convertMinor(1, 0.4, 1)).toBe(0);
+  });
+
+  it("agrees with the lira helpers", () => {
+    expect(convertMinor(1999, 55.618, 1)).toBe(toKurus(1999, 55.618));
   });
 });
