@@ -56,7 +56,7 @@ for (const width of WIDTHS) {
           for (let p = el.parentElement; p; p = p.parentElement) if (/auto|scroll|hidden|clip/.test(getComputedStyle(p).overflowX)) return true;
           return false;
         };
-        const offenders = [...document.querySelectorAll<HTMLElement>("body *")]
+        const offenders: string[] = [...document.querySelectorAll<HTMLElement>("body *")]
           .filter((el) => el.getBoundingClientRect().right > viewport + 0.5 && !clipped(el))
           .filter((el) => !el.parentElement || el.parentElement.getBoundingClientRect().right <= viewport + 0.5)
           .slice(0, 5)
@@ -64,6 +64,13 @@ for (const width of WIDTHS) {
             (el) =>
               `${el.closest("section[id]")?.id ?? "-"} ${el.tagName.toLowerCase()}.${String(el.className).slice(0, 60)} "${(el.textContent ?? "").trim().slice(0, 30)}" → ${Math.round(el.getBoundingClientRect().right)}px`,
           );
+        // The deepest elements past the gutter: the content that widens its column (e.g. an unbreakable line).
+        const pastGutter = (el: Element) => el.getBoundingClientRect().right > viewport - 16 + 0.5 && !clipped(el as HTMLElement);
+        const widest = [...document.querySelectorAll<HTMLElement>("main *")]
+          .filter((el) => pastGutter(el) && ![...el.children].some(pastGutter))
+          .slice(0, 5)
+          .map((el) => `${el.tagName.toLowerCase()}.${String(el.className).slice(0, 50)} "${(el.textContent ?? "").trim().slice(0, 50)}" w=${Math.round(el.getBoundingClientRect().width)}`);
+        if (root.scrollWidth > viewport) offenders.push(`deepest: ${widest.join(" | ")}`);
         // Plan sections keep the 16px side gutter: one wide child would widen the whole column.
         const gutterBreaks = [...document.querySelectorAll<HTMLElement>("main section[id]")]
           .filter((el) => el.getBoundingClientRect().right > viewport - 16 + 0.5)
