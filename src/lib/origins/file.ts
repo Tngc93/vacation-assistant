@@ -1,16 +1,17 @@
 import { z } from "zod";
 
 /**
- * src/data/origins.json: every city with an airport open to flights, from Travelpayouts' static data (the same
- * city and airport codes as the price API), with Turkish names from Wikidata. Written by `npm run data:origins`
- * (src/lib/origins/build.ts); read only on the server (src/lib/origins/data.ts).
+ * src/data/origins.json: every city with a scheduled large or medium airport (OurAirports), grouped by IATA
+ * metropolitan code or municipality, with Turkish names from Wikidata and time zones from GeoNames. Written by
+ * `npm run data:origins` (src/lib/origins/build.ts); read only on the server (src/lib/origins/data.ts).
+ * Version 2 (2026-10-29): no Travelpayouts-derived data (version 1 was built from its static files).
  */
-export const ORIGINS_FILE_VERSION = 1;
+export const ORIGINS_FILE_VERSION = 2;
 
 const iata = z.string().regex(/^[A-Z]{3}$/);
 
 export const storedOriginSchema = z.object({
-  /** IATA city code (IST, LON, NYC, ANK); for a one-airport city often the airport's code too. */
+  /** IATA metropolitan code (IST, LON, NYC), a destination's city code, or the airport's code (ESB for Ankara). */
   code: iata,
   /** Turkish name shown in the interface (see build.ts for the order of sources). */
   name: z.string().min(1),
@@ -18,7 +19,7 @@ export const storedOriginSchema = z.object({
   country: z.string().regex(/^[A-Z]{2}$/),
   /** IANA zone of the city: flight times are local to each airport. */
   timeZone: z.string().min(1),
-  /** Airports open to flights, IATA order of Travelpayouts' file; names as Travelpayouts gives them in Turkish. */
+  /** Scheduled airports, by code; names from Wikidata (Turkish, then English), else OurAirports. */
   airports: z.array(z.object({ code: iata, name: z.string().min(1) })).min(1),
   /** Other names searched but not shown: English, local, other spellings. */
   aliases: z.array(z.string().min(1)).optional(),
