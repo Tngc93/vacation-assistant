@@ -190,7 +190,8 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
             // Leaving the field without a choice keeps the current city.
             setQuery(value.name);
           }}
-          className="h-full min-w-0 flex-1 bg-transparent text-body text-ink outline-none placeholder:text-ink-muted"
+          // w-0: an input's intrinsic width (20 characters) would set the section's minimum width on narrow phones.
+          className="h-full w-0 min-w-0 flex-1 bg-transparent text-body text-ink outline-none placeholder:text-ink-muted"
         />
         <span aria-hidden="true" className="shrink-0 font-mono text-caption tabular tracking-[0.04em] text-ink-muted">
           {originAirportsShort(value)}

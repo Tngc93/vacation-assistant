@@ -77,13 +77,23 @@ for (const width of WIDTHS) {
         const gutterBreaks = [...document.querySelectorAll<HTMLElement>("main section[id]")]
           .filter((el) => el.getBoundingClientRect().right > viewport - 16 + 0.5)
           .map((el) => `#${el.id} → ${Math.round(el.getBoundingClientRect().right)}px`);
-        return { scrollWidth: root.scrollWidth, clientWidth: viewport, offenders, gutterBreaks };
+        // Headroom for fonts that render wider elsewhere (CI's Linux): a section's narrowest layout must leave 16px
+        // inside the gutter, or one unbreakable line (an input's intrinsic 20-character width) widens every section.
+        const tight = [...document.querySelectorAll<HTMLElement>("main section[id]")].flatMap((el) => {
+          const prev = el.style.width;
+          el.style.width = "min-content";
+          const min = el.getBoundingClientRect().width;
+          el.style.width = prev;
+          return min > viewport - 32 - 16 ? [`#${el.id} min-content ${Math.round(min)}px`] : [];
+        });
+        return { scrollWidth: root.scrollWidth, clientWidth: viewport, offenders, gutterBreaks, tight };
       });
 
       expect(result.scrollWidth, `overflowing: ${result.offenders.join(" | ") || "none found"}`).toBeLessThanOrEqual(
         result.clientWidth,
       );
       expect(result.gutterBreaks, "sections past the 16px gutter").toEqual([]);
+      expect(result.tight, "sections with no headroom at this width").toEqual([]);
     });
   }
 }
