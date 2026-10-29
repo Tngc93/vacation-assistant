@@ -110,13 +110,16 @@ describe("buildOrigins", () => {
         "IST",
         "İstanbul",
         [
-          { code: "IST", name: "İstanbul Havalimanı" },
+          { code: "IST", name: "İstanbul Havalimanı", nameEn: "Istanbul Airport" },
           { code: "SAW", name: "Sabiha Gökçen Airport" },
         ],
       ],
-      ["ADB", "İzmir", [{ code: "ADB", name: "Adnan Menderes Havalimanı" }]],
+      // No English label: OurAirports' (English) name.
+      ["ADB", "İzmir", [{ code: "ADB", name: "Adnan Menderes Havalimanı", nameEn: "Adnan Menderes International Airport" }]],
       ["XXX", "Nowhere", [{ code: "XXX", name: "Nowhere Field" }]],
     ]);
+    // English city names only where they differ ("İzmir" is the same in both).
+    expect(file.cities.map((c) => c.nameEn)).toEqual(["Istanbul", undefined, undefined]);
     expect(file.cities[1].aliases).toEqual(["Gaziemir"]);
     expect(file.sources.map((s) => s.terms)).toEqual(["Public Domain", "CC0 1.0", "CC BY 4.0"]);
     expect(JSON.stringify(file)).not.toMatch(/travelpayouts/i);

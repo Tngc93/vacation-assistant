@@ -17,7 +17,8 @@ import { fetchEntitySummaries, fetchWikipediaCounts } from "./wikidata";
  * overrides (the right item's Wikipedia count; a Wikidata-only copy of that item goes, the OSM object is it),
  * adds included places the file does not have (the Atomium, beyond the city radius) from Wikidata, then
  * stores every sight's kinds and, for OSM objects, whether their item has a coordinate near them. A place
- * whose name is not in the Latin script keeps its item's Turkish and English labels (names.ts). Given the city's
+ * whose name is not in the Latin script keeps its item's Turkish and English labels, every other item its English
+ * label when it differs (names.ts, `refreshLabels`). Given the city's
  * Wikidata cocktail bars, it joins them to the stored bars and pubs (cocktails.ts).
  */
 export async function refreshKinds(
@@ -137,19 +138,38 @@ export async function refreshKinds(
       return parent ? { ...rest, ...parent } : rest;
     });
   }
-  // 4. Latin labels for names in another script (names.ts), in every category: "東京タワー" → "Tokyo Kulesi".
+  const labelled = await refreshLabels({ ...file, categories }, { fetcher });
+    return { file: labelled, relinked, added, missing, cocktails };
+}
+
+/**
+ * The Wikidata labels a place keeps (names.ts), in every category: the Turkish and English ones of a name in another
+ * script ("東京タワー" → "Tokyo Kulesi", "Tokyo Tower"), and the English one of every other item when it differs from
+ * the stored name, for the English interface ("Güell Parkı" → "Park Güell"). Alone, it is `npm run data:kinds --
+ * --labels`: nothing else in the file changes.
+ */
+export async function refreshLabels(file: PlacesFile, { fetcher }: { fetcher?: Fetcher } = {}): Promise<PlacesFile> {
+  const categories = structuredClone(file.categories);
   const all = Object.keys(categories) as CategoryId[];
-  const unreadable = [...new Set(all.flatMap(placesOf).flatMap((p) => (p.wikidataId && !isLatin(p.name) ? [p.wikidataId] : [])))];
-  const labelsOf = unreadable.length ? await fetchEntitySummaries(unreadable, { fetcher }) : new Map<string, { tr?: string; en?: string }>();
+  const placesOf = (c: CategoryId) => {
+    const entry = categories[c];
+    return entry.status === "ok" ? entry.places : [];
+  };
+  const qids = [...new Set(all.flatMap(placesOf).flatMap((p) => p.wikidataId ?? []))];
+  const labelsOf = qids.length ? await fetchEntitySummaries(qids, { fetcher }) : new Map<string, { tr?: string; en?: string }>();
   for (const c of all) {
     const entry = categories[c];
     if (entry.status !== "ok") continue;
     entry.places = entry.places.map((p): StoredPlace => {
       const { labels: _labels, ...rest } = p;
-      const info = p.wikidataId && !isLatin(p.name) ? labelsOf.get(p.wikidataId) : undefined;
-      const labels = { ...(info?.tr ? { tr: info.tr } : {}), ...(info?.en ? { en: info.en } : {}) };
+      const info = p.wikidataId ? labelsOf.get(p.wikidataId) : undefined;
+      const foreign = !isLatin(p.name);
+      const labels = {
+        ...(foreign && info?.tr ? { tr: info.tr } : {}),
+        ...(info?.en && (foreign || info.en !== p.name) ? { en: info.en } : {}),
+      };
       return Object.keys(labels).length ? { ...rest, labels } : rest;
     });
   }
-  return { file: { ...file, categories }, relinked, added, missing, cocktails };
+  return { ...file, categories };
 }

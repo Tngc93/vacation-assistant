@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "BCN",
  "fetchedAt": "2026-10-28T13:52:14.986Z",
  "radiusKm": 3,
@@ -45,6 +45,9 @@
     {
      "id": "relation/9194723",
      "name": "Basílica de la Sagrada Família",
+     "labels": {
+      "en": "Basilica and Expiatory Church of the Holy Family"
+     },
      "lat": 41.4035,
      "lon": 2.17428,
      "website": "https://sagradafamilia.org/",
@@ -66,7 +69,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:SF_maig_2026.jpg",
       "fullWidth": 2588
      },
-     "description": "İspanya'nın Barselona şehrinde 1882'den beri inşa halinde olan bazilika"
+     "description": "İspanya'nın Barselona şehrinde 1882'den beri inşa halinde olan bazilika",
+     "descriptionEn": "basilica under construction since 1882 in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q159848",
@@ -89,12 +93,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Camp_Nou_aerial_(cropped).jpg",
       "fullWidth": 1826
      },
-     "description": "İspanya'nın en büyük stadyumu."
+     "description": "İspanya'nın en büyük stadyumu.",
+     "descriptionEn": "football stadium in Barcelona, Catalonia, Spain"
     },
     {
      "id": "wikidata/Q212867",
      "name": "Güell Parkı",
      "localName": "Park Güell",
+     "labels": {
+      "en": "Park Güell"
+     },
      "lat": 41.41361,
      "lon": 2.15278,
      "wikipediaCount": 52,
@@ -115,7 +123,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:G%C3%BCell_BCN_edited.jpg",
       "fullWidth": 6000
      },
-     "description": "Barselona'da park"
+     "description": "Barselona'da park",
+     "descriptionEn": "public park system in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q461371",
@@ -137,7 +146,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Batllo_Overview_Barcelona_Spain_cut.jpg",
       "fullWidth": 2244
      },
-     "description": "Barselona'da konut binası"
+     "description": "Barselona'da konut binası",
+     "descriptionEn": "modernist building in Barcelona"
     },
     {
      "id": "wikidata/Q207870",
@@ -159,7 +169,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Mil%C3%A0,_general_view.jpg",
       "fullWidth": 4299
      },
-     "description": "apartment building in Barcelona, designed by Antoni Gaudí"
+     "description": "apartment building in Barcelona, designed by Antoni Gaudí",
+     "descriptionEn": "apartment building in Barcelona, designed by Antoni Gaudí"
     },
     {
      "id": "way/377216661",
@@ -187,11 +198,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palau_m%C3%BAsica_catalana_exterior.jpg",
       "fullWidth": 3024
      },
-     "description": "Barselona'da saray"
+     "description": "Barselona'da saray",
+     "descriptionEn": "concert hall in Barcelona, Spain"
     },
     {
      "id": "relation/3298476",
      "name": "Catedral de la Santa Creu i Santa Eulàlia",
+     "labels": {
+      "en": "Cathedral of the Holy Cross and Saint Eulalia"
+     },
      "lat": 41.38393,
      "lon": 2.17635,
      "website": "https://www.catedralbcn.org/",
@@ -212,12 +227,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_Cathedral_Saint_Eulalia.jpg",
       "fullWidth": 3335
      },
-     "description": "Gothic cathedral and seat of the Archbishop of Barcelona, Spain"
+     "description": "Gothic cathedral and seat of the Archbishop of Barcelona, Spain",
+     "descriptionEn": "Gothic cathedral and seat of the Archbishop of Barcelona, Spain"
     },
     {
      "id": "wikidata/Q275715",
      "name": "Estadi Olímpic Lluís Companys",
      "localName": "Lluís Companys Olympic Stadium",
+     "labels": {
+      "en": "Lluís Companys Olympic Stadium"
+     },
      "lat": 41.36472,
      "lon": 2.15556,
      "wikipediaCount": 40,
@@ -236,7 +255,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:BCN-EstadiOlimpic-4860.jpg",
       "fullWidth": 1200
      },
-     "description": "olympic stadium at Montjuïc, Barcelona, Catalonia, Spain"
+     "description": "olympic stadium at Montjuïc, Barcelona, Catalonia, Spain",
+     "descriptionEn": "olympic stadium at Montjuïc, Barcelona, Catalonia, Spain"
     },
     {
      "id": "way/126336685",
@@ -250,12 +270,16 @@
       "road",
       "street"
      ],
-     "description": "thoroughfare in Barcelona, Spain"
+     "description": "thoroughfare in Barcelona, Spain",
+     "descriptionEn": "thoroughfare in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q822881",
      "name": "Catalunya Meydanı",
      "localName": "Plaça de Catalunya",
+     "labels": {
+      "en": "Plaça de Catalunya"
+     },
      "lat": 41.38703,
      "lon": 2.17008,
      "wikipediaCount": 35,
@@ -264,7 +288,8 @@
       "square",
       "station"
      ],
-     "description": "Barselona'da meydan"
+     "description": "Barselona'da meydan",
+     "descriptionEn": "historical public square in Barcelona, Catalonia, Spain"
     },
     {
      "id": "way/166565579",
@@ -289,12 +314,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palau_G%C3%BCell,_Antoni_Gaudi,_Barcelona_2.jpg",
       "fullWidth": 2829
      },
-     "description": "Barselona'da saray"
+     "description": "Barselona'da saray",
+     "descriptionEn": "mansion in Barcelona, Spain, designed by Antoni Gaudi"
     },
     {
      "id": "wikidata/Q630630",
      "name": "Sant Jordi Sarayı",
      "localName": "Palau Sant Jordi",
+     "labels": {
+      "en": "Palau Sant Jordi"
+     },
      "lat": 41.36339,
      "lon": 2.15256,
      "wikipediaCount": 31,
@@ -313,7 +342,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palau_Sant_Jordi_Barcelona_Catalonia.jpg",
       "fullWidth": 1280
      },
-     "description": "Barselona'da saray"
+     "description": "Barselona'da saray",
+     "descriptionEn": "sporting arena in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q941385",
@@ -336,11 +366,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcellona_ramblas_2004_09.jpg",
       "fullWidth": 640
      },
-     "description": "district of Barcelona"
+     "description": "district of Barcelona",
+     "descriptionEn": "district of Barcelona"
     },
     {
      "id": "way/51260215",
      "name": "Basílica de Santa Maria del Mar",
+     "labels": {
+      "en": "Basilica of Our Lady of the Sea"
+     },
      "lat": 41.3838,
      "lon": 2.182,
      "website": "https://www.santamariadelmarbarcelona.org/",
@@ -361,11 +395,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_del_Mar,_Barcelona_05.jpg",
       "fullWidth": 2477
      },
-     "description": "church"
+     "description": "church",
+     "descriptionEn": "church"
     },
     {
      "id": "way/67917935",
      "name": "Pavelló Mies van der Rohe",
+     "labels": {
+      "en": "German Pavilion, Barcelona"
+     },
      "lat": 41.37055,
      "lon": 2.14996,
      "address": "Avinguda de Francesc Ferrer i Guàrdia 7",
@@ -386,7 +424,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Barcelona_Pavilion,_Barcelona,_2010.jpg",
       "fullWidth": 5466
      },
-     "description": "historical building in Barcelona, Spain"
+     "description": "historical building in Barcelona, Spain",
+     "descriptionEn": "historical building in Barcelona, Spain"
     },
     {
      "id": "way/377875377",
@@ -408,7 +447,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomf_Barcelona.jpg",
       "fullWidth": 2406
      },
-     "description": "triumphal arch"
+     "description": "triumphal arch",
+     "descriptionEn": "triumphal arch"
     },
     {
      "id": "way/10426929",
@@ -435,11 +475,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_Liceu_Barcelone_3.jpg",
       "fullWidth": 10996
      },
-     "description": "opera house in Barcelona, Spain"
+     "description": "opera house in Barcelona, Spain",
+     "descriptionEn": "opera house in Barcelona, Spain"
     },
     {
      "id": "relation/6288735",
      "name": "Mercat de Sant Josep - La Boqueria",
+     "labels": {
+      "en": "La Boqueria"
+     },
      "lat": 41.38173,
      "lon": 2.17158,
      "address": "La Rambla 91",
@@ -460,11 +504,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Front_of_Mercat_de_Boqueria.jpg",
       "fullWidth": 4032
      },
-     "description": "Barselona'da halka açık pazar"
+     "description": "Barselona'da halka açık pazar",
+     "descriptionEn": "Public market in Barcelona, Spain"
     },
     {
      "id": "way/35816134",
      "name": "Font Màgica de Montjuïc",
+     "labels": {
+      "en": "Magic Fountain of Montjuïc"
+     },
      "lat": 41.37116,
      "lon": 2.15174,
      "openingHours": "Apr 01-May 31: Fr,Sa 21:00-22:00; Jun 01-Sep 30: We-Su 21:30-22:30; Oct 01-31: Th-Sa 21:00-22:00; Nov 01-Jan 06,Mar 01-31: Th-Sa 20:00-21:00; PH off",
@@ -483,12 +531,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:La_font_de_Montju%C3%AFc_amb_Collserola_al_fons.jpg",
       "fullWidth": 1602
      },
-     "description": "fountain in Barcelona, Spain"
+     "description": "fountain in Barcelona, Spain",
+     "descriptionEn": "fountain in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q301135",
      "name": "Ciutadella Parkı",
      "localName": "Parc de la Ciutadella",
+     "labels": {
+      "en": "Parc de la Ciutadella"
+     },
      "lat": 41.38811,
      "lon": 2.18752,
      "wikipediaCount": 24,
@@ -507,11 +559,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A8ria_Ciutadella_1960.jpg",
       "fullWidth": 1400
      },
-     "description": "Barselona'da park"
+     "description": "Barselona'da park",
+     "descriptionEn": "urban park in Barcelona"
     },
     {
      "id": "way/126451774",
      "name": "Monument a Colom",
+     "labels": {
+      "en": "Columbus Monument"
+     },
      "lat": 41.3758,
      "lon": 2.17777,
      "website": "https://thisisbarcelona.com/ca/tickets/monumento-mirador-colom",
@@ -531,7 +587,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Monument_a_Colom_2.jpg",
       "fullWidth": 1536
      },
-     "description": "monument in Barcelona"
+     "description": "monument in Barcelona",
+     "descriptionEn": "monument in Barcelona"
     },
     {
      "id": "wikidata/Q220013",
@@ -554,6 +611,7 @@
       "fullWidth": 2560
      },
      "description": "zoo in Spain",
+     "descriptionEn": "zoo in Spain",
      "parentId": "Q301135",
      "parentName": "Ciutadella Parkı"
     },
@@ -578,12 +636,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:24_Horas_de_Montjuich._10_de_julio_de_1966_8.jpg",
       "fullWidth": 1235
      },
-     "description": "former street circuit located on the Montjuïc mountain in Barcelona, Catalonia, Spain"
+     "description": "former street circuit located on the Montjuïc mountain in Barcelona, Catalonia, Spain",
+     "descriptionEn": "former street circuit located on the Montjuïc mountain in Barcelona, Catalonia, Spain"
     },
     {
      "id": "wikidata/Q2013874",
      "name": "Espanya Meydanı",
      "localName": "Plaça d'Espanya",
+     "labels": {
+      "en": "Plaça d'Espanya"
+     },
      "lat": 41.37504,
      "lon": 2.14911,
      "wikipediaCount": 22,
@@ -601,7 +663,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_d%27Espanya_(Barcelona)_03.jpg",
       "fullWidth": 5152
      },
-     "description": "Barselona'da meydan"
+     "description": "Barselona'da meydan",
+     "descriptionEn": "square in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q1333395",
@@ -615,7 +678,8 @@
       "heritage",
       "organization"
      ],
-     "description": "restaurant"
+     "description": "restaurant",
+     "descriptionEn": "restaurant"
     },
     {
      "id": "wikidata/Q1200948",
@@ -638,7 +702,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Queen_Angelfish_14-05-2009_15-24-48.JPG",
       "fullWidth": 3872
      },
-     "description": "aquarium located in Port Vell, a harbor in Barcelona, Catalonia, Spain"
+     "description": "aquarium located in Port Vell, a harbor in Barcelona, Catalonia, Spain",
+     "descriptionEn": "aquarium located in Port Vell, a harbor in Barcelona, Catalonia, Spain"
     },
     {
      "id": "wikidata/Q506814",
@@ -660,12 +725,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:CasaAmatller.jpg",
       "fullWidth": 675
      },
-     "description": "Barselona'da konut binası"
+     "description": "Barselona'da konut binası",
+     "descriptionEn": "Barcelona landmark"
     },
     {
      "id": "wikidata/Q791045",
      "name": "Diagonal Caddesi",
      "localName": "Avinguda Diagonal",
+     "labels": {
+      "en": "Avinguda Diagonal"
+     },
      "lat": 41.39639,
      "lon": 2.15806,
      "wikipediaCount": 20,
@@ -684,7 +753,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:AvingudaDiagonal.jpg",
       "fullWidth": 3968
      },
-     "description": "Barselona'da cadde"
+     "description": "Barselona'da cadde",
+     "descriptionEn": "thoroughfare in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q1425790",
@@ -707,7 +777,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Arts.jpg",
       "fullWidth": 2304
      },
-     "description": "skyscraper hotel in Barcelona, Spain"
+     "description": "skyscraper hotel in Barcelona, Spain",
+     "descriptionEn": "skyscraper hotel in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q1046405",
@@ -729,12 +800,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_Calvet_2.jpg",
       "fullWidth": 318
      },
-     "description": "Barselona'da konut binası"
+     "description": "Barselona'da konut binası",
+     "descriptionEn": "architectural structure"
     },
     {
      "id": "wikidata/Q800449",
      "name": "Fransa Tren Garı, Barselona",
      "localName": "Barcelona Estació de França",
+     "labels": {
+      "en": "Barcelona Estació de França"
+     },
      "lat": 41.384,
      "lon": 2.186,
      "wikipediaCount": 19,
@@ -753,7 +828,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Estacio_de_Fran%C3%A7a_Barcelona.JPG",
       "fullWidth": 2560
      },
-     "description": "railway station in Barcelona, Spain"
+     "description": "railway station in Barcelona, Spain",
+     "descriptionEn": "railway station in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q388195",
@@ -775,12 +851,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_Metro_-_Parc_de_Montjuic.jpg",
       "fullWidth": 1600
      },
-     "description": "funicular"
+     "description": "funicular",
+     "descriptionEn": "funicular"
     },
     {
      "id": "wikidata/Q1419892",
      "name": "passeig de Gràcia",
      "localName": "Passeig de Gràcia",
+     "labels": {
+      "en": "Passeig de Gràcia"
+     },
      "lat": 41.39304,
      "lon": 2.16379,
      "wikipediaCount": 19,
@@ -799,11 +879,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Via_Barcelona_Casa_Mil%C3%A0.JPG",
       "fullWidth": 1728
      },
-     "description": "thoroughfare in Barcelona, Spain"
+     "description": "thoroughfare in Barcelona, Spain",
+     "descriptionEn": "thoroughfare in Barcelona, Spain"
     },
     {
      "id": "way/163393541",
      "name": "Torre de Comunicacions de Montjuïc",
+     "labels": {
+      "en": "Montjuïc Communications Tower"
+     },
      "lat": 41.36428,
      "lon": 2.15061,
      "wikipediaCount": 19,
@@ -822,12 +906,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_de_comunicacions_de_Montjuic,_Barcelona,_Calavatra_01.jpg",
       "fullWidth": 4506
      },
-     "description": "communication tower in Barcelona, Spain"
+     "description": "communication tower in Barcelona, Spain",
+     "descriptionEn": "communication tower in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q1030045",
      "name": "Camp de la Indústria",
      "localName": "Camp del Carrer Indústria",
+     "labels": {
+      "en": "Camp del Carrer Indústria"
+     },
      "lat": 41.3903,
      "lon": 2.1483,
      "wikipediaCount": 18,
@@ -845,11 +933,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bar%C3%A7a_Tribuna_camp_c._Ind%C3%BAstria.webp",
       "fullWidth": 1680
      },
-     "description": "football stadium in Barcelona, Spain"
+     "description": "football stadium in Barcelona, Spain",
+     "descriptionEn": "football stadium in Barcelona, Spain"
     },
     {
      "id": "relation/19658818",
      "name": "Castell de Montjuïc",
+     "labels": {
+      "en": "Montjuïc Castle"
+     },
      "lat": 41.3627,
      "lon": 2.16478,
      "website": "https://ajuntament.barcelona.cat/castelldemontjuic/ca",
@@ -873,11 +965,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9A%CE%AC%CF%83%CF%84%CF%81%CE%BF_%CE%9C%CE%BF%CE%BD%CE%B6%CE%BF%CF%85%CE%AF%CE%BA_3231_-_3233.jpg",
       "fullWidth": 6436
      },
-     "description": "cultural property in Barcelona, Spain (European Union)"
+     "description": "cultural property in Barcelona, Spain (European Union)",
+     "descriptionEn": "cultural property in Barcelona, Spain (European Union)"
     },
     {
      "id": "way/625295824",
      "name": "Parròquia Basílica de Santa Maria del Pi",
+     "labels": {
+      "en": "Basilica of Our Lady of the Pine Tree"
+     },
      "lat": 41.38204,
      "lon": 2.17392,
      "website": "https://www.basilicadelpi.cat/",
@@ -898,7 +994,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilique_Ste_Marie_Pin_Barcelone_6.jpg",
       "fullWidth": 5722
      },
-     "description": "cultural property in Barcelona, Spain"
+     "description": "cultural property in Barcelona, Spain",
+     "descriptionEn": "cultural property in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q263293",
@@ -921,7 +1018,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:GranVia_Rambla.JPG",
       "fullWidth": 2560
      },
-     "description": "thoroughfare in Barcelona, Spain"
+     "description": "thoroughfare in Barcelona, Spain",
+     "descriptionEn": "thoroughfare in Barcelona, Spain"
     },
     {
      "id": "way/679019157",
@@ -944,11 +1042,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:DiM_Lleo_Morera_9826_copia.jpg",
       "fullWidth": 2574
      },
-     "description": "Barselona'da konut binası"
+     "description": "Barselona'da konut binası",
+     "descriptionEn": "Modernisme townhouse in Barcelona"
     },
     {
      "id": "way/541071062",
      "name": "Plaça Reial",
+     "labels": {
+      "en": "Royal Square"
+     },
      "lat": 41.38009,
      "lon": 2.17527,
      "wikipediaCount": 16,
@@ -967,7 +1069,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_Reial,_Barcelona.jpg",
       "fullWidth": 5616
      },
-     "description": "Barselona'da meydan"
+     "description": "Barselona'da meydan",
+     "descriptionEn": "square in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q568353",
@@ -986,12 +1089,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_Mapfre_Barcelona.jpg",
       "fullWidth": 2592
      },
-     "description": "tower block"
+     "description": "tower block",
+     "descriptionEn": "tower block"
     },
     {
      "id": "wikidata/Q337522",
      "name": "Barselona Monumental Arenası",
      "localName": "La Monumental",
+     "labels": {
+      "en": "La Monumental"
+     },
      "lat": 41.4,
      "lon": 2.18111,
      "wikipediaCount": 15,
@@ -1014,12 +1121,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:050529_Barcelona_027.jpg",
       "fullWidth": 2145
      },
-     "description": "bullring in Barcelona, Spain"
+     "description": "bullring in Barcelona, Spain",
+     "descriptionEn": "bullring in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q1048705",
      "name": "Castell dels Tres Dragons",
      "localName": "Castle of the Three Dragons",
+     "labels": {
+      "en": "Castle of the Three Dragons"
+     },
      "lat": 41.38807,
      "lon": 2.18339,
      "wikipediaCount": 15,
@@ -1038,6 +1149,7 @@
       "fullWidth": 4000
      },
      "description": "building in Barcelona, Catalonia, Spain",
+     "descriptionEn": "building in Barcelona, Catalonia, Spain",
      "parentId": "Q301135",
      "parentName": "Ciutadella Parkı"
     },
@@ -1061,11 +1173,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_Metro_-_Parallel.jpg",
       "fullWidth": 1600
      },
-     "description": "Barselona'da metro istasyonu"
+     "description": "Barselona'da metro istasyonu",
+     "descriptionEn": "Barcelona Metro station"
     },
     {
      "id": "relation/18708616",
      "name": "Plaça del Rei",
+     "labels": {
+      "en": "plaça del Rei"
+     },
      "lat": 41.38413,
      "lon": 2.17741,
      "wikipediaCount": 15,
@@ -1083,12 +1199,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palau_Reial_Major_2574.jpg",
       "fullWidth": 3360
      },
-     "description": "Barselona'da meydan"
+     "description": "Barselona'da meydan",
+     "descriptionEn": "square in Barcelona"
     },
     {
      "id": "wikidata/Q2082605",
      "name": "Sant Jaume Meydanı",
      "localName": "Plaça Sant Jaume",
+     "labels": {
+      "en": "Plaça Sant Jaume"
+     },
      "lat": 41.3825,
      "lon": 2.17694,
      "wikipediaCount": 15,
@@ -1107,12 +1227,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Pla%C3%A7a_Sant_Jaume.jpg",
       "fullWidth": 2370
      },
-     "description": "Barselona'da meydan"
+     "description": "Barselona'da meydan",
+     "descriptionEn": "square in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q2723971",
      "name": "Canaletes Çeşmesi (El Raval)",
      "localName": "Font de Canaletes",
+     "labels": {
+      "en": "Font de Canaletes"
+     },
      "lat": 41.38528,
      "lon": 2.17014,
      "wikipediaCount": 14,
@@ -1130,11 +1254,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Font_de_Canaletes.jpg",
       "fullWidth": 768
      },
-     "description": "Barselona'da çeşme"
+     "description": "Barselona'da çeşme",
+     "descriptionEn": "fountain in Barcelona, Spain"
     },
     {
      "id": "way/1091176334",
      "name": "Drassanes Reials de Barcelona",
+     "labels": {
+      "en": "Barcelona Royal Shipyard"
+     },
      "lat": 41.37531,
      "lon": 2.17586,
      "wikipediaCount": 14,
@@ -1154,12 +1282,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Drassanes_de_Barcelona.jpg",
       "fullWidth": 1203
      },
-     "description": "shipyard"
+     "description": "shipyard",
+     "descriptionEn": "shipyard"
     },
     {
      "id": "wikidata/Q1426190",
      "name": "Glòries Catalanes Meydanı",
      "localName": "plaça de les Glòries Catalanes",
+     "labels": {
+      "en": "plaça de les Glòries Catalanes"
+     },
      "lat": 41.40333,
      "lon": 2.18694,
      "wikipediaCount": 14,
@@ -1177,11 +1309,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Parc_de_les_Gl%C3%B2ries_(8).jpg",
       "fullWidth": 3264
      },
-     "description": "Barselona'da meydan"
+     "description": "Barselona'da meydan",
+     "descriptionEn": "square in Barcelona, Spain"
     },
     {
      "id": "relation/2874767",
      "name": "Palau de la Generalitat de Catalunya",
+     "labels": {
+      "en": "Palau de la Generalitat"
+     },
      "lat": 41.38311,
      "lon": 2.17632,
      "wikipediaCount": 14,
@@ -1200,7 +1336,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_generalitat_web.jpg",
       "fullWidth": 2000
      },
-     "description": "Barselona'da saray"
+     "description": "Barselona'da saray",
+     "descriptionEn": "historic palace and current government building in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q1114612",
@@ -1223,7 +1360,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_Port_Vell_2017_02.jpg",
       "fullWidth": 4912
      },
-     "description": "port of Barcelona, Spain"
+     "description": "port of Barcelona, Spain",
+     "descriptionEn": "port of Barcelona, Spain"
     },
     {
      "id": "wikidata/Q2037732",
@@ -1246,7 +1384,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_la_Merc%C3%A8_-_Barcelona_(Catalonia).jpg",
       "fullWidth": 2480
      },
-     "description": "church building in Barcelona, Spain"
+     "description": "church building in Barcelona, Spain",
+     "descriptionEn": "church building in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q2561516",
@@ -1268,11 +1407,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_de_les_Punxes_-_001.jpg",
       "fullWidth": 884
      },
-     "description": "Barselona'da konut binası"
+     "description": "Barselona'da konut binası",
+     "descriptionEn": "cultural property in Barcelona, Spain"
     },
     {
      "id": "relation/1819559",
      "name": "Les Quatre Columnes",
+     "labels": {
+      "en": "The Four Columns"
+     },
      "lat": 41.37065,
      "lon": 2.15208,
      "wikipediaCount": 12,
@@ -1291,7 +1434,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:(Barcelona)_Quatre_Columnes_(Four_Columns)_by_Josep_Puig_i_Cadafalch.jpg",
       "fullWidth": 7596
      },
-     "description": "architectural structure in Barcelona"
+     "description": "architectural structure in Barcelona",
+     "descriptionEn": "architectural structure in Barcelona"
     },
     {
      "id": "wikidata/Q2749521",
@@ -1315,7 +1459,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fossardelesmoreres3.jpg",
       "fullWidth": 512
      },
-     "description": "square in Barcelona"
+     "description": "square in Barcelona",
+     "descriptionEn": "square in Barcelona"
     }
    ]
   },
@@ -1347,7 +1492,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:WLM14ES_-_Palau_Nacional_i_seu_del_MNAC_de_Barcelona_-_MARIA_ROSA_FERRE.jpg",
       "fullWidth": 4856
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "art museum in Barcelona, Catalonia"
     },
     {
      "id": "way/188938001",
@@ -1372,12 +1518,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palau_Berenguer_d%27Aguilar.jpg",
       "fullWidth": 3072
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "art museum in Barcelona, Spain"
     },
     {
      "id": "wikidata/Q867072",
      "name": "Joan Miró Vakıf Müzesi",
      "localName": "Fundació Joan Miró",
+     "labels": {
+      "en": "Fundació Joan Miró"
+     },
      "lat": 41.36861,
      "lon": 2.16,
      "wikipediaCount": 30,
@@ -1397,11 +1547,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fundaci%C3%B3_Mir%C3%B3.JPG",
       "fullWidth": 2048
      },
-     "description": "museum of modern art about Joan Miró located in Barcelona (Spain)"
+     "description": "museum of modern art about Joan Miró located in Barcelona (Spain)",
+     "descriptionEn": "museum of modern art about Joan Miró located in Barcelona (Spain)"
     },
     {
      "id": "way/36930946",
      "name": "Museu d'Art Contemporani de Barcelona",
+     "labels": {
+      "en": "MACBA Barcelona Museum of Contemporary Art"
+     },
      "lat": 41.3831,
      "lon": 2.16675,
      "website": "https://www.macba.cat/",
@@ -1424,7 +1578,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Museu_d%27Art_Contemporani_de_Barcelona_(MACBA).jpg",
       "fullWidth": 2048
      },
-     "description": "Barselona Çağdaş Sanatlar Müzesi"
+     "description": "Barselona Çağdaş Sanatlar Müzesi",
+     "descriptionEn": "contemporary art museum in Barcelona, Spain"
     },
     {
      "id": "node/1643199193",
@@ -1450,11 +1605,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:MUHBA-_Fa%C3%A7ana.350002.JPG",
       "fullWidth": 1944
      },
-     "description": "Barselona'da tarih müzesi"
+     "description": "Barselona'da tarih müzesi",
+     "descriptionEn": "History museum in Barcelona, Spain"
     },
     {
      "id": "way/40547571",
      "name": "Poble Espanyol de Barcelona",
+     "labels": {
+      "en": "Poble Espanyol"
+     },
      "lat": 41.36865,
      "lon": 2.1485,
      "website": "https://poble-espanyol.com/",
@@ -1474,7 +1633,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Porta_del_Poble_Espanyol_de_Montju%C3%AFc_-_20200818_181705.jpg",
       "fullWidth": 4128
      },
-     "description": "museum in Barcelona, Spain"
+     "description": "museum in Barcelona, Spain",
+     "descriptionEn": "museum in Barcelona, Spain"
     },
     {
      "id": "way/167056918",
@@ -1499,11 +1659,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_de_la_Xocolata_de_Barcelona_fa%C3%A7ana.JPG",
       "fullWidth": 2592
      },
-     "description": "Barselona'da çikolata müzesi"
+     "description": "Barselona'da çikolata müzesi",
+     "descriptionEn": "Chocolate museum in Barcelona, Spain"
     },
     {
      "id": "node/14080861534",
      "name": "Museu Marítim de Barcelona",
+     "labels": {
+      "en": "Maritime Museum of Barcelona"
+     },
      "lat": 41.3755,
      "lon": 2.17643,
      "website": "https://www.mmb.cat/",
@@ -1525,11 +1689,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Drassanes_barcelona.jpg",
       "fullWidth": 1365
      },
-     "description": "museum"
+     "description": "museum",
+     "descriptionEn": "museum"
     },
     {
      "id": "way/132533806",
      "name": "Palau de la Virreina",
+     "labels": {
+      "en": "Virreina Palace"
+     },
      "lat": 41.38235,
      "lon": 2.17153,
      "wikipediaCount": 11,
@@ -1548,7 +1716,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Palau_de_la_Virreina_-_fa%C3%A7ana.jpg",
       "fullWidth": 6191
      },
-     "description": "Barselona'da yapımı 1778'de tamamlanan saray"
+     "description": "Barselona'da yapımı 1778'de tamamlanan saray",
+     "descriptionEn": "cultural property in Barcelona, Spain"
     },
     {
      "id": "way/217475661",
@@ -1573,11 +1742,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:PiC-Casarramona-0294.JPG",
       "fullWidth": 1200
      },
-     "description": "art museum in Barcelona, Spain"
+     "description": "art museum in Barcelona, Spain",
+     "descriptionEn": "art museum in Barcelona, Spain"
     },
     {
      "id": "node/2136227451",
      "name": "Museu de la Marihuana",
+     "labels": {
+      "en": "Hash Marihuana & Hemp Museum"
+     },
      "lat": 41.38081,
      "lon": 2.18012,
      "address": "Carrer Ample 35",
@@ -1599,11 +1772,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hash_Marihuana_%26_Hemp_Museum_Barcelona.jpg",
       "fullWidth": 2848
      },
-     "description": "museum located in Barcelona, Spain and dedicated to the culture of cannabis"
+     "description": "museum located in Barcelona, Spain and dedicated to the culture of cannabis",
+     "descriptionEn": "museum located in Barcelona, Spain and dedicated to the culture of cannabis"
     },
     {
      "id": "node/1962723905",
      "name": "Museu Tàpies",
+     "labels": {
+      "en": "Tàpies Museum"
+     },
      "lat": 41.39162,
      "lon": 2.16366,
      "address": "Carrer d'Aragó 255",
@@ -1626,7 +1803,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_T%C3%A0pies.jpg",
       "fullWidth": 2413
      },
-     "description": "cultural center and museum in Barcelona, Spain"
+     "description": "cultural center and museum in Barcelona, Spain",
+     "descriptionEn": "cultural center and museum in Barcelona, Spain"
     },
     {
      "id": "relation/2873579",
@@ -1651,11 +1829,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edifici_CCCB.jpg",
       "fullWidth": 699
      },
-     "description": "cultural center in Barcelona"
+     "description": "cultural center in Barcelona",
+     "descriptionEn": "cultural center in Barcelona"
     },
     {
      "id": "node/6742154244",
      "name": "Museu d'Història de Catalunya",
+     "labels": {
+      "en": "Museum of the History of Catalonia"
+     },
      "lat": 41.38082,
      "lon": 2.18587,
      "website": "https://mhcat.cat/",
@@ -1676,7 +1858,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Magatzems_generals_del_Dip%C3%B2sit_-_vista_general.JPG",
       "fullWidth": 2048
      },
-     "description": "Barselona'da tarih müzesi"
+     "description": "Barselona'da tarih müzesi",
+     "descriptionEn": "museum in Barcelona, Spain"
     },
     {
      "id": "way/454488169",
@@ -1703,11 +1886,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrada_Museu_Frederic_Mar%C3%A8s.jpg",
       "fullWidth": 557
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "museum in Barcelona"
     },
     {
      "id": "node/2456223233",
      "name": "Temple d'August",
+     "labels": {
+      "en": "Temple of Augustus in Barcelona"
+     },
      "lat": 41.38337,
      "lon": 2.17723,
      "address": "Carrer del Paradís 10",
@@ -1730,11 +1917,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Columnes_del_temple_d%27August_(I).jpg",
       "fullWidth": 2272
      },
-     "description": "cultural property in Barcelona, Spain"
+     "description": "cultural property in Barcelona, Spain",
+     "descriptionEn": "cultural property in Barcelona, Spain"
     },
     {
      "id": "relation/9589229",
      "name": "Museu d'Arqueologia de Catalunya",
+     "labels": {
+      "en": "Archaeology Museum of Catalonia"
+     },
      "lat": 41.36977,
      "lon": 2.15766,
      "website": "https://www.mac.cat/ca/Visita-ns-Portada/Barcelona-Portada-Seu",
@@ -1755,11 +1946,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:(Barcelona)_Museu_d%27Arqueologia_de_Catalunya_-_Entrance.jpg",
       "fullWidth": 7508
      },
-     "description": "Archaeology museum with 5 venues across Catalonia"
+     "description": "Archaeology museum with 5 venues across Catalonia",
+     "descriptionEn": "Archaeology museum with 5 venues across Catalonia"
     },
     {
      "id": "way/166566543",
      "name": "Museu de Cera",
+     "labels": {
+      "en": "Barcelona Wax Museum"
+     },
      "lat": 41.37742,
      "lon": 2.17728,
      "website": "https://www.museocerabcn.com/",
@@ -1779,11 +1974,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_de_Cera_de_Barcelona_(Catal%C3%A0).jpg",
       "fullWidth": 3072
      },
-     "description": "museum"
+     "description": "museum",
+     "descriptionEn": "museum"
     },
     {
      "id": "way/192944873",
      "name": "Can Framis",
+     "labels": {
+      "en": "Can Framis Museum"
+     },
      "lat": 41.40315,
      "lon": 2.19498,
      "website": "https://www.fundaciovilacasas.com/ca/museu/museu-can-framis-barcelona",
@@ -1804,11 +2003,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Can_Framis_Museum_of_Fundaci%C3%B3_Vila_Casas._Catalan_Contemporary_Art._Barcelona_(5).JPG",
       "fullWidth": 4320
      },
-     "description": "Contemporary art museum in Barcelona, Spain"
+     "description": "Contemporary art museum in Barcelona, Spain",
+     "descriptionEn": "Contemporary art museum in Barcelona, Spain"
     },
     {
      "id": "node/673264230",
      "name": "Museu de la Música",
+     "labels": {
+      "en": "Museu de la Música de Barcelona"
+     },
      "lat": 41.39889,
      "lon": 2.18558,
      "address": "Carrer de Lepant 150",
@@ -1830,11 +2033,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ana_del_Museu_de_la_M%C3%BAsica_de_Barcelona.JPG",
       "fullWidth": 2448
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "music museum in Barcelona, Spain"
     },
     {
      "id": "node/3647299861",
      "name": "Museu Europeu d'Art Modern",
+     "labels": {
+      "en": "European Museum of Modern Art"
+     },
      "lat": 41.38501,
      "lon": 2.18047,
      "address": "Carrer Barra de Ferro 5",
@@ -1856,11 +2063,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Modern_Art.jpg",
       "fullWidth": 4000
      },
-     "description": "museum in Barcelona (Spain)"
+     "description": "museum in Barcelona (Spain)",
+     "descriptionEn": "museum in Barcelona (Spain)"
     },
     {
      "id": "way/214435557",
      "name": "Museu Olímpic i de l'Esport Joan Antoni Samaranch",
+     "labels": {
+      "en": "Joan Antoni Samaranch Olympic and Sport Museum"
+     },
      "lat": 41.36603,
      "lon": 2.15771,
      "website": "https://www.museuolimpicbcn.cat/ca/",
@@ -1881,11 +2092,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Ol%C3%ADmpic_Joan_Antoni_Samaranch.JPG",
       "fullWidth": 2048
      },
-     "description": "sports museum in Catalonia, Spain"
+     "description": "sports museum in Catalonia, Spain",
+     "descriptionEn": "sports museum in Catalonia, Spain"
     },
     {
      "id": "node/8731194994",
      "name": "Museu de les Arts Escèniques",
+     "labels": {
+      "en": "Centre de Documentació i Museu de les Arts Escèniques"
+     },
      "lat": 41.37178,
      "lon": 2.15762,
      "address": "Plaça de Margarida Xirgu",
@@ -1908,11 +2123,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_de_les_Arts_Esc%C3%A8niques_hall.JPG",
       "fullWidth": 2592
      },
-     "description": "centre for information and research on the performing arts"
+     "description": "centre for information and research on the performing arts",
+     "descriptionEn": "centre for information and research on the performing arts"
     },
     {
      "id": "node/6357834157",
      "name": "Museu Egipci",
+     "labels": {
+      "en": "Egyptian Museum of Barcelona"
+     },
      "lat": 41.39362,
      "lon": 2.16474,
      "address": "Carrer de València 284",
@@ -1934,11 +2153,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Interior_Museu_Egipci_de_Barcelona_planta_1.jpg",
       "fullWidth": 425
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "archaeological museum in Barcelona, Spain"
     },
     {
      "id": "node/4724329201",
      "name": "Museu Eròtic de Barcelona",
+     "labels": {
+      "en": "Erotic Museum Barcelona"
+     },
      "lat": 41.38224,
      "lon": 2.17257,
      "website": "http://www.erotica-museum.com/",
@@ -1962,6 +2185,9 @@
     {
      "id": "node/4724895518",
      "name": "Museu i Centre d'Estudis de l'Esport Doctor Melcior Colet",
+     "labels": {
+      "en": "Museum and Study Center of Sport Doctor Melcior Colet"
+     },
      "lat": 41.39309,
      "lon": 2.14819,
      "website": "https://esport.gencat.cat/ca/secretaria_general_de_lesport/museu-i-centre-destudis-de-lesport-melcior-colet/",
@@ -1982,7 +2208,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:03_Casa_Pere_Company,_c._Casanova_-_Buenos_Aires.jpg",
       "fullWidth": 1968
      },
-     "description": "Barselona'da spor müzesi"
+     "description": "Barselona'da spor müzesi",
+     "descriptionEn": "sports museum in Barcelona, Spain"
     },
     {
      "id": "node/1962720907",
@@ -2008,7 +2235,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_del_Modernisme_Catal%C3%A0_01.JPG",
       "fullWidth": 2112
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "museum in Barcelona"
     },
     {
      "id": "relation/7363116",
@@ -2031,7 +2259,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_del_Rei_Barcelona_42.jpg",
       "fullWidth": 4032
      },
-     "description": "building in Barcelona in Ciutat Vella district"
+     "description": "building in Barcelona in Ciutat Vella district",
+     "descriptionEn": "building in Barcelona in Ciutat Vella district"
     },
     {
      "id": "node/6982850087",
@@ -2061,6 +2290,9 @@
     {
      "id": "node/14022328893",
      "name": "El Born",
+     "labels": {
+      "en": "El Born. Museu d'Història de Barcelona"
+     },
      "lat": 41.38571,
      "lon": 2.18364,
      "address": "Plaça Comercial 12",
@@ -2082,11 +2314,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:El_BornCC_setembre_2013_(2).JPG",
       "fullWidth": 2592
      },
-     "description": "Museum in Barcelona"
+     "description": "Museum in Barcelona",
+     "descriptionEn": "Museum in Barcelona"
     },
     {
      "id": "node/13977557087",
      "name": "Museu Diocesà de Barcelona",
+     "labels": {
+      "en": "Museo Diocesano de Barcelona"
+     },
      "lat": 41.38461,
      "lon": 2.17612,
      "address": "Pla de la Seu 7",
@@ -2113,6 +2349,9 @@
     {
      "id": "way/33570473",
      "name": "Centre Martorell d'Exposicions",
+     "labels": {
+      "en": "Museu Martorell"
+     },
      "lat": 41.38713,
      "lon": 2.18437,
      "website": "http://museuciencies.cat/visitans/em-museu-martorell",
@@ -2132,11 +2371,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:059_Museu_Martorell,_parc_de_la_Ciutadella.JPG",
       "fullWidth": 2272
      },
-     "description": "Barselona'da bilim müzesi"
+     "description": "Barselona'da bilim müzesi",
+     "descriptionEn": "museum in Barcelona"
     },
     {
      "id": "node/4316268495",
      "name": "Museu del Perfum",
+     "labels": {
+      "en": "Perfume Museum"
+     },
      "lat": 41.39137,
      "lon": 2.16532,
      "address": "Passeig de Gràcia 39",
@@ -2157,11 +2400,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Perfumeria_Regia_Barcelona.jpg",
       "fullWidth": 227
      },
-     "description": "museum in Barcelona"
+     "description": "museum in Barcelona",
+     "descriptionEn": "museum in Barcelona"
     },
     {
      "id": "way/118709755",
      "name": "Museu Etnològic",
+     "labels": {
+      "en": "Museu Etnològic de Barcelona"
+     },
      "lat": 41.36877,
      "lon": 2.15633,
      "website": "https://www.barcelona.cat/museu-etnologic-culturesmon",
@@ -2183,11 +2430,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Etnol%C3%B2gic_de_Barcelona_Fa%C3%A7ana.jpg",
       "fullWidth": 2048
      },
-     "description": "Barselona'da bilim müzesi"
+     "description": "Barselona'da bilim müzesi",
+     "descriptionEn": "Museum in Barcelona, Spain"
     },
     {
      "id": "way/217460151",
      "name": "Museu Fran Daurel",
+     "labels": {
+      "en": "Museo Fran Daurel"
+     },
      "lat": 41.36855,
      "lon": 2.14828,
      "website": "https://www.fundaciofrandaurel.com/barcelona/",
@@ -2213,6 +2464,9 @@
     {
      "id": "node/3797211477",
      "name": "Refugi 307",
+     "labels": {
+      "en": "Shelter 307"
+     },
      "lat": 41.37144,
      "lon": 2.16663,
      "website": "https://ajuntament.barcelona.cat/museuhistoria/muhba-refugi-307",
@@ -2232,11 +2486,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:01_Refugio_307.JPG",
       "fullWidth": 2048
      },
-     "description": "air-raid shelter in Barcelona"
+     "description": "air-raid shelter in Barcelona",
+     "descriptionEn": "air-raid shelter in Barcelona"
     },
     {
      "id": "relation/6056831",
      "name": "Disseny Hub Barcelona (DHUB)",
+     "labels": {
+      "en": "Disseny Hub Barcelona"
+     },
      "lat": 41.40257,
      "lon": 2.18801,
      "address": "Plaça de les Glòries Catalanes 37",
@@ -2257,11 +2515,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Disseny_Hub_Barcelona,_Museu_del_Disseny_de_Barcelona_4.jpg",
       "fullWidth": 1979
      },
-     "description": "Barselona'da bina"
+     "description": "Barselona'da bina",
+     "descriptionEn": "building in Barcelona Province, Spain"
     },
     {
      "id": "relation/3347844",
      "name": "Fundació Joan Miró",
+     "labels": {
+      "en": "Edifici de la Fundació Joan Miró"
+     },
      "lat": 41.36865,
      "lon": 2.15985,
      "address": "Parc de Montjuïc",
@@ -2284,7 +2546,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fundaci%C3%B3_Joan_Mir%C3%B3_-_Barcelona_(Catalonia).jpg",
       "fullWidth": 2000
      },
-     "description": "Barselona'da bina"
+     "description": "Barselona'da bina",
+     "descriptionEn": "building in Barcelona Province, Spain"
     },
     {
      "id": "node/5661441924",
@@ -2310,11 +2573,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museu_Cultures_del_m%C3%B3n_tardor_2015_4.jpg",
       "fullWidth": 2448
      },
-     "description": "Barselona'da sanat müzesi"
+     "description": "Barselona'da sanat müzesi",
+     "descriptionEn": "museum in Barcelona, Spain"
     },
     {
      "id": "node/1654108403",
      "name": "Museu de la Moto",
+     "labels": {
+      "en": "Barcelona Motor Museum"
+     },
      "lat": 41.38334,
      "lon": 2.17453,
      "address": "Carrer de la Palla 10",
@@ -2335,7 +2602,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrada_al_Museu_de_la_Moto_de_Barcelona.JPG",
       "fullWidth": 2112
      },
-     "description": "museum in Spain"
+     "description": "museum in Spain",
+     "descriptionEn": "museum in Spain"
     }
    ]
   },
@@ -2346,6 +2614,9 @@
     {
      "id": "node/9714435350",
      "name": "Mirador Torre Glòries",
+     "labels": {
+      "en": "Torre Glòries"
+     },
      "lat": 41.40352,
      "lon": 2.18952,
      "wikipediaCount": 40,
@@ -2364,11 +2635,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Torre_Agbar_-_Barcelona,_Spain_-_Jan_2007.jpg",
       "fullWidth": 2004
      },
-     "description": "38-story skyscraper in Barcelona"
+     "description": "38-story skyscraper in Barcelona",
+     "descriptionEn": "38-story skyscraper in Barcelona"
     },
     {
      "id": "node/12155870101",
      "name": "Mirador del Palau Nacional",
+     "labels": {
+      "en": "Palau Nacional"
+     },
      "lat": 41.36902,
      "lon": 2.15319,
      "wikipediaCount": 14,
@@ -2386,7 +2661,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palau_Nacional,_Barcelona.jpg",
       "fullWidth": 5361
      },
-     "description": "Barselona'da saray"
+     "description": "Barselona'da saray",
+     "descriptionEn": "palace in Barcelona, Catalonia, home to the National Art Museum of Catalonia"
     },
     {
      "id": "node/2509826686",
@@ -2469,6 +2745,9 @@
     {
      "id": "node/1192702494",
      "name": "7 Portes",
+     "labels": {
+      "en": "Resturant 7 Portes"
+     },
      "lat": 41.38217,
      "lon": 2.18325,
      "website": "https://7portes.com/catala/index2.php",
@@ -2486,7 +2765,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:007_Porxos_d%27en_Xifr%C3%A9,_7_Portes.JPG",
       "fullWidth": 2816
      },
-     "description": "restaurant in Barcelona, Spain"
+     "description": "restaurant in Barcelona, Spain",
+     "descriptionEn": "restaurant in Barcelona, Spain"
     },
     {
      "id": "node/3126271608",
@@ -2599,6 +2879,9 @@
     {
      "id": "node/1640963945",
      "name": "Can Ramonet",
+     "labels": {
+      "en": "Restaurant Casa Ramonet"
+     },
      "lat": 41.38082,
      "lon": 2.18892,
      "address": "Carrer de La Maquinista 17",
@@ -2826,7 +3109,8 @@
      "cuisine": "hot dog, sausage",
      "wikidataId": "Q139579933",
      "detailed": true,
-     "description": "Artisan hot dog restaurant in El Born, Barcelona"
+     "description": "Artisan hot dog restaurant in El Born, Barcelona",
+     "descriptionEn": "Artisan hot dog restaurant in El Born, Barcelona"
     }
    ]
   },
@@ -2837,6 +3121,9 @@
     {
      "id": "node/4446086989",
      "name": "Alsur Café",
+     "labels": {
+      "en": "Alsur Café, Llúria"
+     },
      "lat": 41.39107,
      "lon": 2.17137,
      "address": "Carrer de Roger de Llúria 23",
@@ -2855,7 +3142,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Alsur_Caf%C3%A9,_Ll%C3%BAria.jpg",
       "fullWidth": 3648
      },
-     "description": "cafe in Barcelona, Roger de Llúria 23"
+     "description": "cafe in Barcelona, Roger de Llúria 23",
+     "descriptionEn": "cafe in Barcelona, Roger de Llúria 23"
     },
     {
      "id": "node/4503193765",
@@ -3112,6 +3400,9 @@
     {
      "id": "node/704051187",
      "name": "Starbucks",
+     "labels": {
+      "en": "Centro de Documentación Montserrat Roig (CDMR) - Colegio de Periodistas de Cataluña"
+     },
      "lat": 41.38802,
      "lon": 2.16792,
      "address": "Rambla de Catalunya 10",
@@ -3120,7 +3411,8 @@
      "cuisine": "coffee shop",
      "wikidataId": "Q85693528",
      "detailed": true,
-     "description": "library in Spain"
+     "description": "library in Spain",
+     "descriptionEn": "library in Spain"
     },
     {
      "id": "node/2120131925",
@@ -3181,6 +3473,9 @@
     {
      "id": "node/672763035",
      "name": "Boadas",
+     "labels": {
+      "en": "Boadas Cocktail Bar"
+     },
      "lat": 41.38466,
      "lon": 2.17027,
      "wikidataId": "Q122962985",
@@ -3194,7 +3489,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cockteleria_boadas_barcelona.jpg",
       "fullWidth": 3968
      },
-     "description": "Cocktail Bar in Barcelona"
+     "description": "Cocktail Bar in Barcelona",
+     "descriptionEn": "Cocktail Bar in Barcelona"
     },
     {
      "id": "node/13069782185",
@@ -3340,6 +3636,9 @@
     {
      "id": "node/1497595784",
      "name": "4Gats",
+     "labels": {
+      "en": "Els Quatre Gats"
+     },
      "lat": 41.38574,
      "lon": 2.17364,
      "address": "Carrer de Montsió 3",
@@ -3352,7 +3651,8 @@
       "organization"
      ],
      "detailed": true,
-     "description": "restaurant"
+     "description": "restaurant",
+     "descriptionEn": "restaurant"
     },
     {
      "id": "node/4449149167",
@@ -3687,7 +3987,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Sala_Razzmatazz.jpg",
       "fullWidth": 1977
      },
-     "description": "concert hall"
+     "description": "concert hall",
+     "descriptionEn": "concert hall"
     },
     {
      "id": "node/3961122030",
@@ -3835,7 +4136,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:083_Sala_Apolo,_c._Nou_de_la_Rambla_113_(Barcelona).jpg",
       "fullWidth": 4160
      },
-     "description": "building in Barcelona Province, Spain"
+     "description": "building in Barcelona Province, Spain",
+     "descriptionEn": "building in Barcelona Province, Spain"
     },
     {
      "id": "node/2522915521",

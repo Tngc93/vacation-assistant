@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "ATH",
  "fetchedAt": "2026-10-28T14:19:02.295Z",
  "radiusKm": 3,
@@ -46,6 +46,9 @@
      "id": "wikidata/Q1524",
      "name": "Atina",
      "localName": "Athens",
+     "labels": {
+      "en": "Athens"
+     },
      "lat": 37.98417,
      "lon": 23.72806,
      "wikipediaCount": 239,
@@ -66,12 +69,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Akropolis_2015.jpg",
       "fullWidth": 9648
      },
-     "description": "Yunanistan'ın başkenti ve en büyük şehri"
+     "description": "Yunanistan'ın başkenti ve en büyük şehri",
+     "descriptionEn": "capital and largest city of Greece"
     },
     {
      "id": "way/910010406",
      "name": "Partenon",
      "localName": "Παρθενών",
+     "labels": {
+      "en": "Parthenon"
+     },
      "lat": 37.9715,
      "lon": 23.72662,
      "wikipediaCount": 134,
@@ -92,7 +99,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
       "fullWidth": 1144
      },
-     "description": "Atina Akropolisi'ndeki eski Athena tapınağı"
+     "description": "Atina Akropolisi'ndeki eski Athena tapınağı",
+     "descriptionEn": "former temple of Athena on the Athenian Acropolis, Greece"
     },
     {
      "id": "relation/11268149",
@@ -125,7 +133,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
       "fullWidth": 5000
      },
-     "description": "Atina'da yüksek bir kayalık üzerindeki birçok antik yapı kalıntılarını içeren eski bir hisar"
+     "description": "Atina'da yüksek bir kayalık üzerindeki birçok antik yapı kalıntılarını içeren eski bir hisar",
+     "descriptionEn": "ancient citadel above the city of Athens"
     },
     {
      "id": "node/3343545896",
@@ -159,7 +168,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Plato%27s_Academy_mosaic_from_Pompeii.jpg",
       "fullWidth": 1614
      },
-     "description": "Dünyadaki ilk yükseköğretim kurumu"
+     "description": "Dünyadaki ilk yükseköğretim kurumu",
+     "descriptionEn": "ancient philosophical, research and educative center, founded by Plato in Athens"
     },
     {
      "id": "relation/5688115",
@@ -191,7 +201,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Acropolis_Athens_(pixinn.net).jpg",
       "fullWidth": 1661
      },
-     "description": "Yunan anakarasında yer alan antik kent"
+     "description": "Yunan anakarasında yer alan antik kent",
+     "descriptionEn": "city-state in ancient Greece"
     },
     {
      "id": "way/910010334",
@@ -224,6 +235,7 @@
       "fullWidth": 6000
      },
      "description": "ancient Greek temple on the north side of the Acropolis of Athens",
+     "descriptionEn": "ancient Greek temple on the north side of the Acropolis of Athens",
      "parentId": "Q131013",
      "parentName": "Atina Akropolisi"
     },
@@ -258,7 +270,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:GR-athen-panathinaiko-stadion.jpg",
       "fullWidth": 2259
      },
-     "description": "stadium in Athens, Greece"
+     "description": "stadium in Athens, Greece",
+     "descriptionEn": "stadium in Athens, Greece"
     },
     {
      "id": "way/82150737",
@@ -291,7 +304,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens_Lyceum_Archaeological_Site_2.jpg",
       "fullWidth": 2272
      },
-     "description": "public meeting place in Classical Athens"
+     "description": "public meeting place in Classical Athens",
+     "descriptionEn": "public meeting place in Classical Athens"
     },
     {
      "id": "relation/12352554",
@@ -323,6 +337,7 @@
       "fullWidth": 5988
      },
      "description": "ancient Greek temple built in the fifth century CE on the Acropolis of Athens in honor of Athena as the goddess of victory, located in Athens Municipality, Greece",
+     "descriptionEn": "ancient Greek temple built in the fifth century CE on the Acropolis of Athens in honor of Athena as the goddess of victory, located in Athens Municipality, Greece",
      "parentId": "Q131013",
      "parentName": "Atina Akropolisi"
     },
@@ -357,7 +372,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Temple_of_Olympian_Zeus_Athens_Greece_1.jpg",
       "fullWidth": 4288
      },
-     "description": "ancient Greek temple in Athens"
+     "description": "ancient Greek temple in Athens",
+     "descriptionEn": "ancient Greek temple in Athens"
     },
     {
      "id": "way/27917370",
@@ -389,6 +405,7 @@
       "fullWidth": 3264
      },
      "description": "ancient Greek temple in Athens",
+     "descriptionEn": "ancient Greek temple in Athens",
      "parentId": "Q395367",
      "parentName": "Atina Agorası"
     },
@@ -421,7 +438,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A4%CE%BF_%CE%A9%CF%81%CE%BF%CE%BB%CF%8C%CE%B3%CE%B9%CE%BF%CE%BD_%CF%84%CE%BF%CF%85_%CE%91%CE%BD%CE%B4%CF%81%CE%BF%CE%BD%CE%AF%CE%BA%CE%BF%CF%85_%CE%9A%CF%85%CF%81%CF%81%CE%AE%CF%83%CF%84%CE%BF%CF%85_%CF%83%CF%84%CE%B9%CF%82_16_%CE%A3%CE%B5%CF%80%CF%84%CE%B5%CE%BC%CE%B2%CF%81%CE%AF%CE%BF%CF%85_2019.jpg",
       "fullWidth": 6000
      },
-     "description": "Atina, Roma Agorası'nda bulunan sekizgen mermer kule"
+     "description": "Atina, Roma Agorası'nda bulunan sekizgen mermer kule",
+     "descriptionEn": "a Roman tower in Athens that once housed an early weather vane, large clepsydra, and multiple sundials to function as an early clocktower"
     },
     {
      "id": "relation/13139942",
@@ -452,7 +470,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:AncientAgoraofAthensColour.jpg",
       "fullWidth": 800
      },
-     "description": "Antik Atina'da siyaset, ticaret, hukuk ve sosyal hayatın merkezi olan tarihi meydan"
+     "description": "Antik Atina'da siyaset, ticaret, hukuk ve sosyal hayatın merkezi olan tarihi meydan",
+     "descriptionEn": "major archaeological site of Athens"
     },
     {
      "id": "relation/16363966",
@@ -481,7 +500,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%A3%CF%85%CE%BD%CF%84%CE%AC%CE%B3%CE%BC%CE%B1%CF%84%CE%BF%CF%82_6386.jpg",
       "fullWidth": 4632
      },
-     "description": "square in Athens, Greece"
+     "description": "square in Athens, Greece",
+     "descriptionEn": "square in Athens, Greece"
     },
     {
      "id": "way/10973697",
@@ -515,6 +535,7 @@
       "fullWidth": 754
      },
      "description": "antik Yunan tiyatrosu",
+     "descriptionEn": "ancient theater in the Acropolis of Athens",
      "parentId": "Q131013",
      "parentName": "Atina Akropolisi"
     },
@@ -522,6 +543,9 @@
      "id": "wikidata/Q147478",
      "name": "Zappion",
      "localName": "Zappeion",
+     "labels": {
+      "en": "Zappeion"
+     },
      "lat": 37.97139,
      "lon": 23.73639,
      "wikipediaCount": 33,
@@ -539,7 +563,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_27_Zappeion.jpg",
       "fullWidth": 4359
      },
-     "description": "building in Athens, Greece"
+     "description": "building in Athens, Greece",
+     "descriptionEn": "building in Athens, Greece"
     },
     {
      "id": "relation/13249184",
@@ -573,7 +598,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wall_Theatre_Herodes_Atticus_Acropolis_Athens_Greece.jpg",
       "fullWidth": 6000
      },
-     "description": "Atina Akropolü'nün güneybatısında yer alan antik taş tiyatro"
+     "description": "Atina Akropolü'nün güneybatısında yer alan antik taş tiyatro",
+     "descriptionEn": "ancient theater in Athens Acropolis"
     },
     {
      "id": "wikidata/Q2070605",
@@ -596,6 +622,7 @@
       "fullWidth": 3456
      },
      "description": "Phidias yapımı heykeltıraş",
+     "descriptionEn": "sculpture by Phidias",
      "parentId": "Q10288",
      "parentName": "Partenon"
     },
@@ -626,7 +653,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:1999-Kienzle-Dia_(711).jpg",
       "fullWidth": 1388
      },
-     "description": "Antik Yunan mimarlığında meclis binaları gibi resmi yapılara verilen isim"
+     "description": "Antik Yunan mimarlığında meclis binaları gibi resmi yapılara verilen isim",
+     "descriptionEn": "council chambers of ancient Greek cities, the place where the Boulé, a senate, met."
     },
     {
      "id": "relation/2903266",
@@ -658,7 +686,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kerameikos_Cemetery_from_Melidone_Street_on_June_19,_2020.jpg",
       "fullWidth": 6000
      },
-     "description": "Yunanistan'ın başkenti Atina'nın semti"
+     "description": "Yunanistan'ın başkenti Atina'nın semti",
+     "descriptionEn": "ancient graveyard and neighborhood in Athens"
     },
     {
      "id": "way/729674865",
@@ -690,7 +719,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%92%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B8%CE%AE%CE%BA%CE%B7_%CE%91%CE%B4%CF%81%CE%B9%CE%B1%CE%BD%CE%BF%CF%8D_4165.jpg",
       "fullWidth": 4345
      },
-     "description": "İmparator Hadrian tarafından Atina'da yaptırılan antik kütüphane"
+     "description": "İmparator Hadrian tarafından Atina'da yaptırılan antik kütüphane",
+     "descriptionEn": "Roman library in Athens"
     },
     {
      "id": "way/145662891",
@@ -734,12 +764,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pnyx-berg2.png",
       "fullWidth": 1024
      },
-     "description": "hill and archaeological site in Athens"
+     "description": "hill and archaeological site in Athens",
+     "descriptionEn": "hill and archaeological site in Athens"
     },
     {
      "id": "wikidata/Q1263335",
      "name": "Attalos Stoası",
      "localName": "Stoa of Attalos",
+     "labels": {
+      "en": "Stoa of Attalos"
+     },
      "lat": 37.97513,
      "lon": 23.72421,
      "wikipediaCount": 26,
@@ -758,6 +792,7 @@
       "fullWidth": 1488
      },
      "description": "Bergama Kralı II. Attalos tarafından MÖ 2. yüzyılda inşa edilen antik revak",
+     "descriptionEn": "ancient stoa in Athens",
      "parentId": "Q395367",
      "parentName": "Atina Agorası"
     },
@@ -788,6 +823,7 @@
       "fullWidth": 612
      },
      "description": "ancient sculpture of Phidias in Athens Acropolis",
+     "descriptionEn": "ancient sculpture of Phidias in Athens Acropolis",
      "parentId": "Q131013",
      "parentName": "Atina Akropolisi"
     },
@@ -819,7 +855,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%B7%CF%84%CF%81%CF%8C%CF%80%CE%BF%CE%BB%CE%B7_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_3321.jpg",
       "fullWidth": 3808
      },
-     "description": "church building in Athens, Attica Region, Greece"
+     "description": "church building in Athens, Attica Region, Greece",
+     "descriptionEn": "church building in Athens, Attica Region, Greece"
     },
     {
      "id": "way/157180174",
@@ -849,12 +886,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Choragic_Monument_of_Lysicrates.jpg",
       "fullWidth": 1932
      },
-     "description": "Atina'da MÖ 334'de Lisikrat'ın Dionysos Tiyatrosu'ndaki ödülünü kutlamak amacıyla inşa edilmiş anıt"
+     "description": "Atina'da MÖ 334'de Lisikrat'ın Dionysos Tiyatrosu'ndaki ödülünü kutlamak amacıyla inşa edilmiş anıt",
+     "descriptionEn": "ancient Greek choragic monument in Athens"
     },
     {
      "id": "wikidata/Q1235440",
      "name": "Manastıraki",
      "localName": "Monastiraki",
+     "labels": {
+      "en": "Monastiraki"
+     },
      "lat": 37.97639,
      "lon": 23.72361,
      "wikipediaCount": 24,
@@ -872,12 +913,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9C%CE%BF%CE%BD%CE%B1%CF%83%CF%84%CE%B7%CF%81%CE%B1%CE%BA%CE%AF%CE%BF%CF%85_3645.jpg",
       "fullWidth": 4608
      },
-     "description": "square and neighborhood in Athens, Greece"
+     "description": "square and neighborhood in Athens, Greece",
+     "descriptionEn": "square and neighborhood in Athens, Greece"
     },
     {
      "id": "wikidata/Q582203",
      "name": "Atina Konser Salonu",
      "localName": "Athens Concert Hall",
+     "labels": {
+      "en": "Athens Concert Hall"
+     },
      "lat": 37.98111,
      "lon": 23.75416,
      "wikipediaCount": 22,
@@ -900,12 +945,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Christmas_Concert_of_the_Athens_State_Orchestra_(18-12-2021)_(03).jpg",
       "fullWidth": 4000
      },
-     "description": "Atina'da konser salonu, opera binası, tiyatro ve konferans merkezi"
+     "description": "Atina'da konser salonu, opera binası, tiyatro ve konferans merkezi",
+     "descriptionEn": "performing arts and conference centre in Athens, Greece"
     },
     {
      "id": "wikidata/Q646284",
      "name": "Ulusal Bahçe",
      "localName": "National Garden of Athens",
+     "labels": {
+      "en": "National Garden of Athens"
+     },
      "lat": 37.97417,
      "lon": 23.73833,
      "wikipediaCount": 22,
@@ -923,7 +972,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:20140410_60_Athens_National_Gardens_(13824726745).jpg",
       "fullWidth": 3648
      },
-     "description": "public park in Athens, Greece"
+     "description": "public park in Athens, Greece",
+     "descriptionEn": "public park in Athens, Greece"
     },
     {
      "id": "way/442128059",
@@ -954,7 +1004,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Monument_de_Philopappos_crop.jpg",
       "fullWidth": 2120
      },
-     "description": "Mouseion Tepesi'nde yer alan MS 119 yapımı anıt"
+     "description": "Mouseion Tepesi'nde yer alan MS 119 yapımı anıt",
+     "descriptionEn": "ancient Greek mausoleum in Muses hill in Athens"
     },
     {
      "id": "node/8262155401",
@@ -978,6 +1029,7 @@
       "fullWidth": 4000
      },
      "description": "Atina Agorası'nda yer alan ve Stoacılık felsefesine adını veren antik sütunlu galeri",
+     "descriptionEn": "ancient stoa in Athens",
      "parentId": "Q395367",
      "parentName": "Atina Agorası"
     },
@@ -985,6 +1037,9 @@
      "id": "wikidata/Q620473",
      "name": "Apostolos Nikolaidis Stadyumu",
      "localName": "Apostolos Nikolaidis Stadium",
+     "labels": {
+      "en": "Apostolos Nikolaidis Stadium"
+     },
      "lat": 37.98717,
      "lon": 23.75419,
      "wikipediaCount": 21,
@@ -1002,7 +1057,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Leoforos1.JPG",
       "fullWidth": 3072
      },
-     "description": "Atina, Yunanistan'da bir futbol stadyumu"
+     "description": "Atina, Yunanistan'da bir futbol stadyumu",
+     "descriptionEn": "football stadium"
     },
     {
      "id": "relation/2150086",
@@ -1034,12 +1090,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_09_Parliament.jpg",
       "fullWidth": 4870
      },
-     "description": "building of the Hellenic Parliament, formerly a royal palace"
+     "description": "building of the Hellenic Parliament, formerly a royal palace",
+     "descriptionEn": "building of the Hellenic Parliament, formerly a royal palace"
     },
     {
      "id": "wikidata/Q425754",
      "name": "Omonia Meydanı",
      "localName": "Omonoia Square",
+     "labels": {
+      "en": "Omonoia Square"
+     },
      "lat": 37.98408,
      "lon": 23.72834,
      "wikipediaCount": 20,
@@ -1057,7 +1117,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9F%CE%BC%CE%BF%CE%BD%CE%BF%CE%AF%CE%B1%CF%82_(Omonia_Square).jpg",
       "fullWidth": 3000
      },
-     "description": "square in Athens, Greece"
+     "description": "square in Athens, Greece",
+     "descriptionEn": "square in Athens, Greece"
     },
     {
      "id": "relation/12352555",
@@ -1088,6 +1149,7 @@
       "fullWidth": 1000
      },
      "description": "the gate of the Acropolis of Athens",
+     "descriptionEn": "the gate of the Acropolis of Athens",
      "parentId": "Q131013",
      "parentName": "Atina Akropolisi"
     },
@@ -1119,7 +1181,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_24_Arch_of_Hadrian.jpg",
       "fullWidth": 3373
      },
-     "description": "Antik Roma Kemeri"
+     "description": "Antik Roma Kemeri",
+     "descriptionEn": "Roman arch in Athens"
     },
     {
      "id": "way/729674900",
@@ -1151,12 +1214,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Tzistarakis_Mosque_on_March_7,_2020.jpg",
       "fullWidth": 6000
      },
-     "description": "Atina, Yunanistan'daki bir müze"
+     "description": "Atina, Yunanistan'daki bir müze",
+     "descriptionEn": "mosque in Greece"
     },
     {
      "id": "wikidata/Q2629065",
      "name": "Cumhurbaşkanlığı Sarayı",
      "localName": "Presidential Mansion",
+     "labels": {
+      "en": "Presidential Mansion"
+     },
      "lat": 37.97262,
      "lon": 23.74083,
      "wikipediaCount": 19,
@@ -1175,12 +1242,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Presidential_Mansion_in_Athens.jpg",
       "fullWidth": 2592
      },
-     "description": "building in Athens and official residence of the president of Greece"
+     "description": "building in Athens and official residence of the president of Greece",
+     "descriptionEn": "building in Athens and official residence of the president of Greece"
     },
     {
      "id": "wikidata/Q1035075",
      "name": "Hekatompedon",
      "localName": "Hekatompedon temple",
+     "labels": {
+      "en": "Hekatompedon temple"
+     },
      "lat": 37.9715,
      "lon": 23.7267,
      "wikipediaCount": 19,
@@ -1198,7 +1269,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Aufri%C3%9F_des_Hekatompedon_mit_Andeutung_der_spateren_Erweiterung.jpg",
       "fullWidth": 3707
      },
-     "description": "ancient temple in Athens Acropolis"
+     "description": "ancient temple in Athens Acropolis",
+     "descriptionEn": "ancient temple in Athens Acropolis"
     },
     {
      "id": "relation/11197557",
@@ -1228,12 +1300,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens_Roman_Agora.jpg",
       "fullWidth": 10188
      },
-     "description": "Atina'da bulunan bir agora"
+     "description": "Atina'da bulunan bir agora",
+     "descriptionEn": "ancient square in Athens"
     },
     {
      "id": "wikidata/Q2614287",
      "name": "Atina Kuleleri",
      "localName": "Athens Tower 1",
+     "labels": {
+      "en": "Athens Tower 1"
+     },
      "lat": 37.98459,
      "lon": 23.76087,
      "wikipediaCount": 18,
@@ -1248,7 +1324,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens_view_from_Kifissias_Avenue.JPG",
       "fullWidth": 3264
      },
-     "description": "building in Ampelokipoi, Attica Region, Greece"
+     "description": "building in Ampelokipoi, Attica Region, Greece",
+     "descriptionEn": "building in Ampelokipoi, Attica Region, Greece"
     },
     {
      "id": "wikidata/Q902329",
@@ -1273,6 +1350,7 @@
       "fullWidth": 460
      },
      "description": "ancient temple in the Acropolis of Athens",
+     "descriptionEn": "ancient temple in the Acropolis of Athens",
      "parentId": "Q131013",
      "parentName": "Atina Akropolisi"
     },
@@ -1280,6 +1358,9 @@
      "id": "wikidata/Q2615369",
      "name": "Kutsal Havariler Kilisesi, Atina",
      "localName": "Church of the Holy Apostles",
+     "labels": {
+      "en": "Church of the Holy Apostles"
+     },
      "lat": 37.97408,
      "lon": 23.72392,
      "wikipediaCount": 18,
@@ -1299,6 +1380,7 @@
       "fullWidth": 4862
      },
      "description": "restored medieval church in Agora excavations, Athens",
+     "descriptionEn": "restored medieval church in Agora excavations, Athens",
      "parentId": "Q395367",
      "parentName": "Atina Agorası"
     },
@@ -1331,7 +1413,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A6%CE%B5%CF%84%CE%B9%CF%87%CE%B9%CE%AD_%CE%A4%CE%B6%CE%B1%CE%BC%CE%AF,_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1_4250.jpg",
       "fullWidth": 4632
      },
-     "description": "Yunanistan'ın Atina kentinde tarihi cami"
+     "description": "Yunanistan'ın Atina kentinde tarihi cami",
+     "descriptionEn": "building in Athens, Attica Region, Greece"
     }
    ]
   },
@@ -1371,12 +1454,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg",
       "fullWidth": 11560
      },
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "way/983921252",
      "name": "Akropolis Müzesi",
      "localName": "Μουσείο Ακρόπολης",
+     "labels": {
+      "en": "Acropolis Museum"
+     },
      "lat": 37.96852,
      "lon": 23.72849,
      "address": "Διονυσίου Αρεοπαγίτου 15",
@@ -1398,7 +1485,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Acropolis_Museum_from_the_Acropolis_in_Athens.jpg",
       "fullWidth": 4032
      },
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "way/23183030",
@@ -1433,7 +1521,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Benaki_Museum_Athens.JPG",
       "fullWidth": 4000
      },
-     "description": "museum in Kolonaki, Athens, Greece"
+     "description": "museum in Kolonaki, Athens, Greece",
+     "descriptionEn": "museum in Kolonaki, Athens, Greece"
     },
     {
      "id": "way/220890927",
@@ -1466,7 +1555,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cycladic_female_figurine_2.jpg",
       "fullWidth": 527
      },
-     "description": "museum in Athens"
+     "description": "museum in Athens",
+     "descriptionEn": "museum in Athens"
     },
     {
      "id": "way/318587297",
@@ -1499,7 +1589,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:BCMA_Villa_Ilissia.jpg",
       "fullWidth": 3264
      },
-     "description": "Yunanistan'daki bir sanat müzesi"
+     "description": "Yunanistan'daki bir sanat müzesi",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "node/3844131091",
@@ -1531,7 +1622,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%99%CE%BB%CE%AF%CE%BF%CF%85_%CE%9C%CE%AD%CE%BB%CE%B1%CE%B8%CF%81%CE%BF%CE%BD_6649.jpg",
       "fullWidth": 4562
      },
-     "description": "museum"
+     "description": "museum",
+     "descriptionEn": "museum"
     },
     {
      "id": "wikidata/Q822101",
@@ -1554,7 +1646,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Balanos_Vasilopoulos_-_National_Historical_Museum,_Athens.jpg",
       "fullWidth": 5596
      },
-     "description": "museum in Athens"
+     "description": "museum in Athens",
+     "descriptionEn": "museum in Athens"
     },
     {
      "id": "way/318587299",
@@ -1588,7 +1681,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Artillery_Officer_pouch_(1852-1868)_-_Athens_War_Museum.jpg",
       "fullWidth": 2173
      },
-     "description": "Atina'da bulunan bir savaş müzesi"
+     "description": "Atina'da bulunan bir savaş müzesi",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "way/217268333",
@@ -1620,7 +1714,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:KAMA_Fa%C3%A7ade_mus%C3%A9e.jpg",
       "fullWidth": 800
      },
-     "description": "museum in Athens"
+     "description": "museum in Athens",
+     "descriptionEn": "museum in Athens"
     },
     {
      "id": "node/10655452393",
@@ -1642,6 +1737,7 @@
       "organization"
      ],
      "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece",
      "parentId": "Q395367",
      "parentName": "Atina Agorası"
     },
@@ -1675,7 +1771,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Jewish_Museum_of_Greece.jpg",
       "fullWidth": 1872
      },
-     "description": "museum in Athens"
+     "description": "museum in Athens",
+     "descriptionEn": "museum in Athens"
     },
     {
      "id": "relation/19040143",
@@ -1707,7 +1804,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%AD%CE%B3%CE%B1%CF%81%CE%BF_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CE%AC%CF%82_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg",
       "fullWidth": 5944
      },
-     "description": "neoclassical building in Athens, Greece"
+     "description": "neoclassical building in Athens, Greece",
+     "descriptionEn": "neoclassical building in Athens, Greece"
     },
     {
      "id": "node/3005463590",
@@ -1740,7 +1838,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Epigraphical_Museum_of_Athens.jpg",
       "fullWidth": 968
      },
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "way/285129067",
@@ -1771,7 +1870,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_the_City_of_Athens.jpg",
       "fullWidth": 837
      },
-     "description": "museum in Greece"
+     "description": "museum in Greece",
+     "descriptionEn": "museum in Greece"
     },
     {
      "id": "way/400456875",
@@ -1804,7 +1904,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Building_of_the_Basil_%26_Elise_Goulandris_Foundation_(cropped).jpg",
       "fullWidth": 3481
      },
-     "description": "museum in Pangrati, Athens, Greece"
+     "description": "museum in Pangrati, Athens, Greece",
+     "descriptionEn": "museum in Pangrati, Athens, Greece"
     },
     {
      "id": "way/220926060",
@@ -1836,7 +1937,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Building_during_the_day_(B._%26_M._Theocharakis_Foundation_for_the_Fine_Arts_and_Music).jpg",
       "fullWidth": 3024
      },
-     "description": "foundation and art gallery in Athens"
+     "description": "foundation and art gallery in Athens",
+     "descriptionEn": "foundation and art gallery in Athens"
     },
     {
      "id": "way/851609464",
@@ -1868,7 +1970,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%99%CF%83%CF%84%CE%BF%CF%81%CE%AF%CE%B1%CF%82_%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%B7%CE%BC%CE%AF%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_4257.jpg",
       "fullWidth": 4032
      },
-     "description": "university museum in Athens, Greece"
+     "description": "university museum in Athens, Greece",
+     "descriptionEn": "university museum in Athens, Greece"
     },
     {
      "id": "way/223175510",
@@ -1900,7 +2003,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9C%CE%BF%CF%85%CF%83%CE%B5%CE%AF%CE%BF_%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8E%CE%BD_%CE%9B%CE%B1%CF%8A%CE%BA%CF%8E%CE%BD_%CE%9F%CF%81%CE%B3%CE%AC%CE%BD%CF%89%CE%BD_1549.jpg",
       "fullWidth": 3283
      },
-     "description": "musical instrument museum in Athens, Greece"
+     "description": "musical instrument museum in Athens, Greece",
+     "descriptionEn": "musical instrument museum in Athens, Greece"
     },
     {
      "id": "node/10992115218",
@@ -1929,7 +2033,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%A0%CE%BD%CE%B5%CF%85%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C_%CE%9A%CE%AD%CE%BD%CF%84%CF%81%CE%BF_%CF%84%CE%BF%CF%85_%CE%94%CE%AE%CE%BC%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CE%B1%CE%AF%CF%89%CE%BD_6645.jpg",
       "fullWidth": 4512
      },
-     "description": "museum in Greece"
+     "description": "museum in Greece",
+     "descriptionEn": "museum in Greece"
     },
     {
      "id": "way/316768543",
@@ -1951,7 +2056,8 @@
       "museum",
       "organization"
      ],
-     "description": "car museum in Athens"
+     "description": "car museum in Athens",
+     "descriptionEn": "car museum in Athens"
     },
     {
      "id": "node/11486548887",
@@ -1976,7 +2082,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Maria_Callas_Museum.jpg",
       "fullWidth": 1718
      },
-     "description": "museum in Athens, Greece dedicated to the renowned Greek soprano Maria Callas"
+     "description": "museum in Athens, Greece dedicated to the renowned Greek soprano Maria Callas",
+     "descriptionEn": "museum in Athens, Greece dedicated to the renowned Greek soprano Maria Callas"
     },
     {
      "id": "way/219472242",
@@ -2007,7 +2114,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Municipal_Gallery_of_Athens_002.jpg",
       "fullWidth": 2309
      },
-     "description": "art museum"
+     "description": "art museum",
+     "descriptionEn": "art museum"
     },
     {
      "id": "way/267551016",
@@ -2039,7 +2147,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ilias_Lalaounis_Jewelry_Museum.jpg",
       "fullWidth": 840
      },
-     "description": "nonprofit museum specializing in the decorative arts and the art of jewelry"
+     "description": "nonprofit museum specializing in the decorative arts and the art of jewelry",
+     "descriptionEn": "nonprofit museum specializing in the decorative arts and the art of jewelry"
     },
     {
      "id": "way/177282540",
@@ -2070,7 +2179,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Frissiras_Museum.jpg",
       "fullWidth": 600
      },
-     "description": "contemporary art museum in Greece"
+     "description": "contemporary art museum in Greece",
+     "descriptionEn": "contemporary art museum in Greece"
     },
     {
      "id": "way/223018298",
@@ -2098,7 +2208,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%9B%CE%BF%CF%85%CF%84%CF%81%CF%8C_%CF%84%CF%89%CE%BD_%CE%91%CE%AD%CF%81%CE%B7%CE%B4%CF%89%CE%BD.jpg",
       "fullWidth": 3576
      },
-     "description": "Ottoman bath in Athens"
+     "description": "Ottoman bath in Athens",
+     "descriptionEn": "Ottoman bath in Athens"
     },
     {
      "id": "way/914492222",
@@ -2131,7 +2242,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%CE%91%CF%81%CF%87%CE%BF%CE%BD%CF%84%CE%B9%CE%BA%CF%8C_%CE%9C%CF%80%CE%B5%CE%BD%CE%B9%CE%B6%CE%AD%CE%BB%CE%BF%CF%85_6545.jpg",
       "fullWidth": 4632
      },
-     "description": "Ottoman-era house in Athens"
+     "description": "Ottoman-era house in Athens",
+     "descriptionEn": "Ottoman-era house in Athens"
     },
     {
      "id": "way/383407579",
@@ -2151,7 +2263,8 @@
       "museum",
       "organization"
      ],
-     "description": "film archive, museum and cinema in Athens, Greece"
+     "description": "film archive, museum and cinema in Athens, Greece",
+     "descriptionEn": "film archive, museum and cinema in Athens, Greece"
     },
     {
      "id": "way/449650393",
@@ -2168,7 +2281,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Athens Greece"
+     "description": "museum in Athens Greece",
+     "descriptionEn": "museum in Athens Greece"
     },
     {
      "id": "node/13556107171",
@@ -2194,7 +2308,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Athens,_Greece_-_panoramio_(214).jpg",
       "fullWidth": 3552
      },
-     "description": "archaeological museum in Athens, Greece"
+     "description": "archaeological museum in Athens, Greece",
+     "descriptionEn": "archaeological museum in Athens, Greece"
     },
     {
      "id": "way/220890939",
@@ -2223,7 +2338,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Stathatos_Mansion_side.jpg",
       "fullWidth": 2888
      },
-     "description": "building in Attica Region, Attica Region, Greece"
+     "description": "building in Attica Region, Attica Region, Greece",
+     "descriptionEn": "building in Attica Region, Attica Region, Greece"
     },
     {
      "id": "way/321114256",
@@ -2245,7 +2361,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Thiseio, Athens"
+     "description": "museum in Thiseio, Athens",
+     "descriptionEn": "museum in Thiseio, Athens"
     },
     {
      "id": "node/4840589548",
@@ -2263,7 +2380,8 @@
       "museum",
       "organization"
      ],
-     "description": "small museum in Athens with digital displays on Plato and his academy"
+     "description": "small museum in Athens with digital displays on Plato and his academy",
+     "descriptionEn": "small museum in Athens with digital displays on Plato and his academy"
     },
     {
      "id": "way/223874917",
@@ -2284,7 +2402,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "way/132639902",
@@ -2303,7 +2422,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "node/3912027436",
@@ -2325,7 +2445,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Athens, Greece"
+     "description": "museum in Athens, Greece",
+     "descriptionEn": "museum in Athens, Greece"
     },
     {
      "id": "way/175877498",
@@ -2347,7 +2468,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Greece"
+     "description": "museum in Greece",
+     "descriptionEn": "museum in Greece"
     },
     {
      "id": "way/219467101",
@@ -2378,7 +2500,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_traditional_pottery.jpg",
       "fullWidth": 999
      },
-     "description": "folk art museum in Athens, Greece"
+     "description": "folk art museum in Athens, Greece",
+     "descriptionEn": "folk art museum in Athens, Greece"
     },
     {
      "id": "way/834539464",
@@ -2409,7 +2532,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hatzimichali_house_in_Plaka,_Athens.jpg",
       "fullWidth": 1944
      },
-     "description": "museum in Greece"
+     "description": "museum in Greece",
+     "descriptionEn": "museum in Greece"
     },
     {
      "id": "node/4777483721",
@@ -3160,7 +3284,8 @@
      "lat": 37.98576,
      "lon": 23.73192,
      "wikidataId": "Q139853954",
-     "description": "bar in Athens"
+     "description": "bar in Athens",
+     "descriptionEn": "bar in Athens"
     }
    ]
   },

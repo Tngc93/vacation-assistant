@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "EDI",
  "fetchedAt": "2026-10-23T13:09:10.812Z",
  "radiusKm": 2,
@@ -46,6 +46,9 @@
      "id": "way/4301292",
      "name": "Edinburgh Kalesi",
      "localName": "Edinburgh Castle",
+     "labels": {
+      "en": "Edinburgh Castle"
+     },
      "lat": 55.94867,
      "lon": -3.20041,
      "address": "Castlehill",
@@ -71,11 +74,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_from_the_Grassmarket.jpg",
       "fullWidth": 3088
      },
-     "description": "İskoçya'da bir kale"
+     "description": "İskoçya'da bir kale",
+     "descriptionEn": "castle in Edinburgh, Scotland, UK"
     },
     {
      "id": "relation/4599",
      "name": "The Scottish Parliament",
+     "labels": {
+      "en": "Scottish Parliament"
+     },
      "lat": 55.95188,
      "lon": -3.17523,
      "website": "https://www.parliament.scot/",
@@ -94,11 +101,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:ScottishParliamentFront.JPG",
       "fullWidth": 2848
      },
-     "description": "İskoçya Yasama Organı"
+     "description": "İskoçya Yasama Organı",
+     "descriptionEn": "devolved parliament of Scotland"
     },
     {
      "id": "relation/16769442",
      "name": "Palace of Holyroodhouse",
+     "labels": {
+      "en": "Holyrood Palace"
+     },
      "lat": 55.9527,
      "lon": -3.17207,
      "address": "Canongate",
@@ -121,7 +132,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Holyrood_Palace_-_aerial_-_2025-04-19_04.jpg",
       "fullWidth": 4032
      },
-     "description": "official residence of the British monarch in Scotland"
+     "description": "official residence of the British monarch in Scotland",
+     "descriptionEn": "official residence of the British monarch in Scotland"
     },
     {
      "id": "way/42407060",
@@ -147,7 +159,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Giles%27_Cathedral_-_aerial_-_2025-04-19_04.jpg",
       "fullWidth": 4032
      },
-     "description": "Church of Scotland cathedral in Edinburgh, Scotland, UK"
+     "description": "Church of Scotland cathedral in Edinburgh, Scotland, UK",
+     "descriptionEn": "Church of Scotland cathedral in Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q591133",
@@ -169,7 +182,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:00_103_0325_Balmoral_Hotel,_Edinburgh,_Schottland.jpg",
       "fullWidth": 1860
      },
-     "description": "İskoçya'nın başkenti Edinburgh'un en eski bölümüne halk tarafından verilen isim"
+     "description": "İskoçya'nın başkenti Edinburgh'un en eski bölümüne halk tarafından verilen isim",
+     "descriptionEn": "name popularly given to the oldest part of Scotland's capital city of Edinburgh"
     },
     {
      "id": "wikidata/Q1278116",
@@ -191,7 +205,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Easter_Road_-_Edinburgh_Derby.jpg",
       "fullWidth": 2048
      },
-     "description": "Edinburgh'da bir futbol stadyumu"
+     "description": "Edinburgh'da bir futbol stadyumu",
+     "descriptionEn": "football stadium in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/41893742",
@@ -217,7 +232,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_-_Holyrood_Abbey,_precinct_and_associated_remains_-_20140427120646.jpg",
       "fullWidth": 2816
      },
-     "description": "monastery ruins in Holyrood, City of Edinburgh, Scotland, UK"
+     "description": "monastery ruins in Holyrood, City of Edinburgh, Scotland, UK",
+     "descriptionEn": "monastery ruins in Holyrood, City of Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q852908",
@@ -240,7 +256,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:High_Street,_Edinburgh.JPG",
       "fullWidth": 2560
      },
-     "description": "succession of streets forming the main thoroughfare of the Old Town of the city of Edinburgh in Scotland"
+     "description": "succession of streets forming the main thoroughfare of the Old Town of the city of Edinburgh in Scotland",
+     "descriptionEn": "succession of streets forming the main thoroughfare of the Old Town of the city of Edinburgh in Scotland"
     },
     {
      "id": "wikidata/Q1548664",
@@ -263,7 +280,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:00_2315_Edinburgh_-_Schottland.jpg",
       "fullWidth": 2710
      },
-     "description": "major thoroughfare in central Edinburgh, Scotland, UK"
+     "description": "major thoroughfare in central Edinburgh, Scotland, UK",
+     "descriptionEn": "major thoroughfare in central Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q1807521",
@@ -287,7 +305,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palmhouse.jpg",
       "fullWidth": 800
      },
-     "description": "Botanical garden in Edinburgh, Scotland, UK"
+     "description": "Botanical garden in Edinburgh, Scotland, UK",
+     "descriptionEn": "Botanical garden in Edinburgh, Scotland, UK"
     },
     {
      "id": "node/505014478",
@@ -308,6 +327,7 @@
       "fullWidth": 1600
      },
      "description": "large 15th century cannon in Scotland",
+     "descriptionEn": "large 15th century cannon in Scotland",
      "parentId": "Q212065",
      "parentName": "Edinburgh Kalesi"
     },
@@ -334,7 +354,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Schottland-Edinburgh-Sir_Walter_Scott_Monument.JPG",
       "fullWidth": 800
      },
-     "description": "Victorian Gothic monument to Scottish author Sir Walter Scott"
+     "description": "Victorian Gothic monument to Scottish author Sir Walter Scott",
+     "descriptionEn": "Victorian Gothic monument to Scottish author Sir Walter Scott"
     },
     {
      "id": "wikidata/Q2746031",
@@ -356,12 +377,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scottish_Parliament_Building_-_aerial_-_2025-04-18.jpg",
       "fullWidth": 4032
      },
-     "description": "home of the Scottish Parliament at Holyrood, Edinburgh"
+     "description": "home of the Scottish Parliament at Holyrood, Edinburgh",
+     "descriptionEn": "home of the Scottish Parliament at Holyrood, Edinburgh"
     },
     {
      "id": "wikidata/Q1144643",
      "name": "Edinburgh Merkez Camii",
      "localName": "Edinburgh Central Mosque",
+     "labels": {
+      "en": "Edinburgh Central Mosque"
+     },
      "lat": 55.945,
      "lon": -3.18611,
      "wikipediaCount": 16,
@@ -380,11 +405,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mosque,_central_Edinburgh_-_geograph.org.uk_-_1575285.jpg",
       "fullWidth": 402
      },
-     "description": "mosque in United Kingdom"
+     "description": "mosque in United Kingdom",
+     "descriptionEn": "mosque in United Kingdom"
     },
     {
      "id": "way/225470834",
      "name": "St Mary's Episcopal Cathedral",
+     "labels": {
+      "en": "St Mary's Cathedral"
+     },
      "lat": 55.94861,
      "lon": -3.21628,
      "address": "Palmerston Place 23",
@@ -405,7 +434,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Mary%27s_Cathedral,_Edinburgh.jpg",
       "fullWidth": 8162
      },
-     "description": "church building in Edinburgh, Scotland, UK"
+     "description": "church building in Edinburgh, Scotland, UK",
+     "descriptionEn": "church building in Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q980646",
@@ -424,12 +454,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh,_Scotland_(39616917631).jpg",
       "fullWidth": 5902
      },
-     "description": "park in Edinburgh, Scotland, UK"
+     "description": "park in Edinburgh, Scotland, UK",
+     "descriptionEn": "park in Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q519072",
      "name": "St.Mary Katedrali",
      "localName": "St Mary's Cathedral",
+     "labels": {
+      "en": "St Mary's Cathedral"
+     },
      "lat": 55.9562,
      "lon": -3.18786,
      "wikipediaCount": 14,
@@ -448,7 +482,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Mary%27s_Metropolitan_Cathedral_Edinburgh.jpg",
       "fullWidth": 2592
      },
-     "description": "cathedral in Edinburgh, Scotland, UK"
+     "description": "cathedral in Edinburgh, Scotland, UK",
+     "descriptionEn": "cathedral in Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q940770",
@@ -467,7 +502,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Avon_Aqueduct_-_geograph.org.uk_-_1691980.jpg",
       "fullWidth": 640
      },
-     "description": "canal in Scotland, running from Falkirk to Edinburgh"
+     "description": "canal in Scotland, running from Falkirk to Edinburgh",
+     "descriptionEn": "canal in Scotland, running from Falkirk to Edinburgh"
     },
     {
      "id": "wikidata/Q1636910",
@@ -492,7 +528,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Usher_Hall,_Edinburgh.jpg",
       "fullWidth": 4000
      },
-     "description": "concert hall in Edinburgh, Scotland, United Kingdom"
+     "description": "concert hall in Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "concert hall in Edinburgh, Scotland, United Kingdom"
     },
     {
      "id": "wikidata/Q2928830",
@@ -514,7 +551,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bute_House.jpg",
       "fullWidth": 3356
      },
-     "description": "official residence of the First Minister of Scotland"
+     "description": "official residence of the First Minister of Scotland",
+     "descriptionEn": "official residence of the First Minister of Scotland"
     },
     {
      "id": "way/22412844",
@@ -536,7 +574,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Monument_of_Scotland_View_from_Above.jpg",
       "fullWidth": 5184
      },
-     "description": "monument in City of Edinburgh, Scotland, UK"
+     "description": "monument in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "monument in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "wikidata/Q2033510",
@@ -559,11 +598,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Mound,_Edinburgh.jpg",
       "fullWidth": 2532
      },
-     "description": "street connecting the Old and New towns of Edinburgh, Scotland, UK"
+     "description": "street connecting the Old and New towns of Edinburgh, Scotland, UK",
+     "descriptionEn": "street connecting the Old and New towns of Edinburgh, Scotland, UK"
     },
     {
      "id": "node/6585283285",
      "name": "The Real Mary King's Close",
+     "labels": {
+      "en": "Mary King's Close"
+     },
      "lat": 55.94996,
      "lon": -3.19045,
      "address": "Warriston's Close 2",
@@ -585,7 +628,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Marykingsclose006.jpg",
       "fullWidth": 282
      },
-     "description": "underground streets and tourist attraction in Edinburgh, Scotland"
+     "description": "underground streets and tourist attraction in Edinburgh, Scotland",
+     "descriptionEn": "underground streets and tourist attraction in Edinburgh, Scotland"
     },
     {
      "id": "wikidata/Q3700280",
@@ -610,11 +654,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:00_103_0323_Edinburgh,_Schottland.jpg",
       "fullWidth": 2168
      },
-     "description": "hotel in Edinburgh, Scotland"
+     "description": "hotel in Edinburgh, Scotland",
+     "descriptionEn": "hotel in Edinburgh, Scotland"
     },
     {
      "id": "node/2265831236",
      "name": "Grassmarket 500th Anniversary Stone",
+     "labels": {
+      "en": "Grassmarket"
+     },
      "lat": 55.94726,
      "lon": -3.19716,
      "wikipediaCount": 11,
@@ -632,7 +680,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:East_end_of_the_Grassmarket,_Edinburgh_(composite).jpg",
       "fullWidth": 3547
      },
-     "description": "market square in Edinburgh"
+     "description": "market square in Edinburgh",
+     "descriptionEn": "market square in Edinburgh"
     },
     {
      "id": "wikidata/Q2061784",
@@ -656,6 +705,7 @@
       "fullWidth": 2592
      },
      "description": "chapel in Edinburgh Castle, Scotland",
+     "descriptionEn": "chapel in Edinburgh Castle, Scotland",
      "parentId": "Q212065",
      "parentName": "Edinburgh Kalesi"
     },
@@ -683,7 +733,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Greyfriars_Kirk_-_01.jpg",
       "fullWidth": 3355
      },
-     "description": "church in Edinburgh, Scotland, UK"
+     "description": "church in Edinburgh, Scotland, UK",
+     "descriptionEn": "church in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/62066717",
@@ -706,6 +757,7 @@
       "fullWidth": 1379
      },
      "description": "fountain in Edinburgh, Scotland",
+     "descriptionEn": "fountain in Edinburgh, Scotland",
      "parentId": "Q980646",
      "parentName": "Princes Street Gardens"
     },
@@ -732,11 +784,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_College,_Edinburgh_-_aerial_-_2025-04-19_02.jpg",
       "fullWidth": 4032
      },
-     "description": "university building in Edinburgh, Scotland, UK"
+     "description": "university building in Edinburgh, Scotland, UK",
+     "descriptionEn": "university building in Edinburgh, Scotland, UK"
     },
     {
      "id": "node/268408103",
      "name": "Camera Obscura & World of Illusions",
+     "labels": {
+      "en": "Camera Obscura"
+     },
      "lat": 55.94903,
      "lon": -3.1956,
      "address": "Castlehill 549",
@@ -759,7 +815,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:549,_Castlehill,_Outlook_Tower,_Edinburgh_(1).jpg",
       "fullWidth": 3024
      },
-     "description": "Museum in Edinburgh, Scotland, UK"
+     "description": "Museum in Edinburgh, Scotland, UK",
+     "descriptionEn": "Museum in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/465938528",
@@ -783,11 +840,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:00_3327_Nelson%27s_Monument,_Edinburgh_(Scotland).jpg",
       "fullWidth": 1594
      },
-     "description": "monument in Edinburgh, Scotland, UK"
+     "description": "monument in Edinburgh, Scotland, UK",
+     "descriptionEn": "monument in Edinburgh, Scotland, UK"
     },
     {
      "id": "node/2914760336",
      "name": "The Scotch Whisky Experience",
+     "labels": {
+      "en": "Scotch Whisky Heritage Centre"
+     },
      "lat": 55.94874,
      "lon": -3.19587,
      "address": "Castlehill 354",
@@ -808,7 +869,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scotch_Whisky_Heritage_Centre,_Edinburgh_-_geograph.org.uk_-_932290.jpg",
       "fullWidth": 640
      },
-     "description": "visitor attraction in Edinburgh, United Kingdom"
+     "description": "visitor attraction in Edinburgh, United Kingdom",
+     "descriptionEn": "visitor attraction in Edinburgh, United Kingdom"
     },
     {
      "id": "way/293890858",
@@ -832,7 +894,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:John_Knox%27s_House_-_geograph.org.uk_-_3060967.jpg",
       "fullWidth": 640
      },
-     "description": "architectural structure in City of Edinburgh, Scotland, UK"
+     "description": "architectural structure in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "architectural structure in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "way/320974678",
@@ -854,7 +917,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Dugald_Stewart_Monument_-_05.jpg",
       "fullWidth": 2726
      },
-     "description": "monument in City of Edinburgh, Scotland, UK"
+     "description": "monument in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "monument in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "way/239888879",
@@ -877,7 +941,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Martyr%27s_Monument.jpg",
       "fullWidth": 2448
      },
-     "description": "monument in City of Edinburgh, Scotland, UK"
+     "description": "monument in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "monument in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "node/4618730691",
@@ -901,11 +966,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Gladstones_Land_(4530213293).jpg",
       "fullWidth": 3521
      },
-     "description": "residential building in Edinburgh, Scotland, UK"
+     "description": "residential building in Edinburgh, Scotland, UK",
+     "descriptionEn": "residential building in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/62061248",
      "name": "Church of St John the Evangelist",
+     "labels": {
+      "en": "Church of St John the Evangelist, Edinburgh"
+     },
      "lat": 55.95004,
      "lon": -3.20648,
      "address": "Princes Street",
@@ -926,7 +995,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:00_2315_Edinburgh_-_Schottland.jpg",
       "fullWidth": 2710
      },
-     "description": "church in Edinburgh, Scotland, UK"
+     "description": "church in Edinburgh, Scotland, UK",
+     "descriptionEn": "church in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/465223757",
@@ -951,11 +1021,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St-Stephens-Edinburgh.jpg",
       "fullWidth": 1228
      },
-     "description": "church in Edinburgh, Scotland, UK"
+     "description": "church in Edinburgh, Scotland, UK",
+     "descriptionEn": "church in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/62061368",
      "name": "The Parish Church of St Cuthbert",
+     "labels": {
+      "en": "St Cuthbert's Church, Edinburgh"
+     },
      "lat": 55.94963,
      "lon": -3.20512,
      "address": "Lothian Road 5",
@@ -976,11 +1050,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_-_2016_-_panoramio_-_StevenL_(5).jpg",
       "fullWidth": 4928
      },
-     "description": "church in Edinburgh, Scotland, UK"
+     "description": "church in Edinburgh, Scotland, UK",
+     "descriptionEn": "church in Edinburgh, Scotland, UK"
     },
     {
      "id": "node/12223010635",
      "name": "Melville's Monument",
+     "labels": {
+      "en": "Melville Monument"
+     },
      "lat": 55.95422,
      "lon": -3.19315,
      "wikipediaCount": 3,
@@ -999,7 +1077,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Henry_Dundas_Melville_Monument.jpg",
       "fullWidth": 960
      },
-     "description": "monument in City of Edinburgh, Scotland, UK"
+     "description": "monument in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "monument in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "way/41558984",
@@ -1024,11 +1103,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Holyrood_Distillery_(geograph_6418456).jpg",
       "fullWidth": 1024
      },
-     "description": "distillery in Edinburgh, Scotland"
+     "description": "distillery in Edinburgh, Scotland",
+     "descriptionEn": "distillery in Edinburgh, Scotland"
     },
     {
      "id": "node/2853530751",
      "name": "Georgian House",
+     "labels": {
+      "en": "The Georgian House"
+     },
      "lat": 55.95249,
      "lon": -3.20821,
      "address": "Charlotte Square 7",
@@ -1048,11 +1131,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Charlottesq2.jpg",
       "fullWidth": 1351
      },
-     "description": "townhouse in Edinburgh, Scotland, UK, 7 Charlotte Square"
+     "description": "townhouse in Edinburgh, Scotland, UK, 7 Charlotte Square",
+     "descriptionEn": "townhouse in Edinburgh, Scotland, UK, 7 Charlotte Square"
     },
     {
      "id": "way/81243762",
      "name": "New Town Church",
+     "labels": {
+      "en": "St Andrew's and St George's West Church"
+     },
      "lat": 55.95408,
      "lon": -3.19587,
      "address": "George Street 15-17",
@@ -1064,11 +1151,15 @@
       "noCoordinate",
       "religious"
      ],
-     "description": "church in Edinburgh, Scotland, UK"
+     "description": "church in Edinburgh, Scotland, UK",
+     "descriptionEn": "church in Edinburgh, Scotland, UK"
     },
     {
      "id": "node/2973367148",
      "name": "The Edinburgh Dungeon",
+     "labels": {
+      "en": "Edinburgh Dungeon"
+     },
      "lat": 55.95108,
      "lon": -3.19088,
      "address": "Market Street 31",
@@ -1088,7 +1179,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Dungeon_01_(223052043).jpg",
       "fullWidth": 1538
      },
-     "description": "haunted attraction in City of Edinburgh, Scotland, UK"
+     "description": "haunted attraction in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "haunted attraction in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "way/164545444",
@@ -1111,11 +1203,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mercat_Cross,_Edinburgh.jpg",
       "fullWidth": 1920
      },
-     "description": "Market Cross in Edinburgh, Scotland, UK"
+     "description": "Market Cross in Edinburgh, Scotland, UK",
+     "descriptionEn": "Market Cross in Edinburgh, Scotland, UK"
     },
     {
      "id": "node/442615638",
      "name": "Brassfounders Column",
+     "labels": {
+      "en": "Brass Founders' Pillar"
+     },
      "lat": 55.94602,
      "lon": -3.1854,
      "wikipediaCount": 1,
@@ -1133,11 +1229,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Colonne_Brassfounders_%C3%89dimbourg_2.jpg",
       "fullWidth": 3456
      },
-     "description": "monument in Edinburgh, Scotland, UK"
+     "description": "monument in Edinburgh, Scotland, UK",
+     "descriptionEn": "monument in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/8043028",
      "name": "Dunbar's Close Garden",
+     "labels": {
+      "en": "Dunbar’s Close Garden"
+     },
      "lat": 55.95215,
      "lon": -3.17894,
      "wikipediaCount": 1,
@@ -1152,7 +1252,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Dunbar%27s_Close_Garden_01.jpg",
       "fullWidth": 3072
      },
-     "description": "garden in Edinburgh, Scotland, UK"
+     "description": "garden in Edinburgh, Scotland, UK",
+     "descriptionEn": "garden in Edinburgh, Scotland, UK"
     }
    ]
   },
@@ -1163,6 +1264,9 @@
     {
      "id": "way/5182746",
      "name": "National Gallery",
+     "labels": {
+      "en": "Scottish National Gallery"
+     },
      "lat": 55.95088,
      "lon": -3.19562,
      "website": "https://www.nationalgalleries.org/",
@@ -1185,7 +1289,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scottish_National_Gallery_-_aerial_-_2025-04-19_01.jpg",
       "fullWidth": 4032
      },
-     "description": "part of National Galleries Scotland in Edinburgh"
+     "description": "part of National Galleries Scotland in Edinburgh",
+     "descriptionEn": "part of National Galleries Scotland in Edinburgh"
     },
     {
      "id": "way/467226683",
@@ -1211,7 +1316,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Scotland.jpg",
       "fullWidth": 2288
      },
-     "description": "combined museum in Edinburgh"
+     "description": "combined museum in Edinburgh",
+     "descriptionEn": "combined museum in Edinburgh"
     },
     {
      "id": "way/73090302",
@@ -1238,7 +1344,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scottish_National_Portrait_Gallery.jpg",
       "fullWidth": 300
      },
-     "description": "art museum in Edinburgh, Scotland"
+     "description": "art museum in Edinburgh, Scotland",
+     "descriptionEn": "art museum in Edinburgh, Scotland"
     },
     {
      "id": "node/4618730690",
@@ -1264,7 +1371,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scottish_Writers%27_Museum.jpg",
       "fullWidth": 2000
      },
-     "description": "Museum in Edinburgh, Scotland, United Kingdom"
+     "description": "Museum in Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "Museum in Edinburgh, Scotland, United Kingdom"
     },
     {
      "id": "way/259067386",
@@ -1290,7 +1398,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Huntly_House_Museum_-_geograph.org.uk_-_1341300.jpg",
       "fullWidth": 640
      },
-     "description": "museum in Edinburgh, Scotland, United Kingdom"
+     "description": "museum in Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "museum in Edinburgh, Scotland, United Kingdom"
     },
     {
      "id": "way/25946269",
@@ -1314,7 +1423,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:DynamicEarth1.JPG",
       "fullWidth": 2048
      },
-     "description": "science center in Edinburgh, Scotland"
+     "description": "science center in Edinburgh, Scotland",
+     "descriptionEn": "science center in Edinburgh, Scotland"
     },
     {
      "id": "node/2955931322",
@@ -1340,7 +1450,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_Childhood,_Edinburg.jpg",
       "fullWidth": 2891
      },
-     "description": "Museum in City of Edinburgh, Scotland, United Kingdom"
+     "description": "Museum in City of Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "Museum in City of Edinburgh, Scotland, United Kingdom"
     },
     {
      "id": "node/4618730716",
@@ -1366,11 +1477,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:EdinburghMuseumOnTheMound-pjt.jpg",
       "fullWidth": 4295
      },
-     "description": "money museum in the headquarters of HBOS"
+     "description": "money museum in the headquarters of HBOS",
+     "descriptionEn": "money museum in the headquarters of HBOS"
     },
     {
      "id": "way/5182745",
      "name": "Royal Scottish Academy",
+     "labels": {
+      "en": "Royal Scottish Academy Building"
+     },
      "lat": 55.95167,
      "lon": -3.19627,
      "address": "The Mound",
@@ -1390,11 +1505,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:RSA_Edinburgh_by_George_Meikle_Kemp.jpg",
       "fullWidth": 540
      },
-     "description": "art museum in City of Edinburgh, Scotland, UK"
+     "description": "art museum in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "art museum in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "way/41893740",
      "name": "The King's Gallery",
+     "labels": {
+      "en": "King's Gallery"
+     },
      "lat": 55.95259,
      "lon": -3.17388,
      "wikipediaCount": 4,
@@ -1415,11 +1534,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Queen%27s_Gallery_-_Edinburgh.jpg",
       "fullWidth": 3210
      },
-     "description": "art gallery in Holyrood Palace, Edinburgh"
+     "description": "art gallery in Holyrood Palace, Edinburgh",
+     "descriptionEn": "art gallery in Holyrood Palace, Edinburgh"
     },
     {
      "id": "way/70826506",
      "name": "Fruitmarket",
+     "labels": {
+      "en": "Fruitmarket Gallery"
+     },
      "lat": 55.95126,
      "lon": -3.1897,
      "address": "Market Street 45",
@@ -1440,7 +1563,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fruitmarket_Gallery_Edinburgh.JPG",
       "fullWidth": 3544
      },
-     "description": "art gallery in Edinburgh"
+     "description": "art gallery in Edinburgh",
+     "descriptionEn": "art gallery in Edinburgh"
     },
     {
      "id": "way/41299975",
@@ -1466,7 +1590,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:National_War_Museum_of_Scotland.JPG",
       "fullWidth": 4931
      },
-     "description": "museum in Scotland"
+     "description": "museum in Scotland",
+     "descriptionEn": "museum in Scotland"
     },
     {
      "id": "node/291214494",
@@ -1492,11 +1617,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Lucy_Skaer,_%27Sticks_and_Stones_(Part_1)%27,_2013-15._Mahogany_with_inserts_of_porcelain,_limestone,_tin,_coins,_American_walnut,_Tasmanian_black_wood._Installation_view,_Green_Man,_2018._Image_courtesy_Talbot_Rice_Gallery.jpg",
       "fullWidth": 1200
      },
-     "description": "Art gallery in Edinburgh, Scotland, United Kingdom"
+     "description": "Art gallery in Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "Art gallery in Edinburgh, Scotland, United Kingdom"
     },
     {
      "id": "way/70954995",
      "name": "The People's Story Museum",
+     "labels": {
+      "en": "People's Story Museum"
+     },
      "lat": 55.95148,
      "lon": -3.17994,
      "address": "Canongate 163",
@@ -1518,11 +1647,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Canongate_Tolbooth_-_geograph.org.uk_-_1336771.jpg",
       "fullWidth": 640
      },
-     "description": "Museum in City of Edinburgh, Scotland, United Kingdom"
+     "description": "Museum in City of Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "Museum in City of Edinburgh, Scotland, United Kingdom"
     },
     {
      "id": "way/70955023",
      "name": "Trinity Apse",
+     "labels": {
+      "en": "Trinity College Kirk"
+     },
      "lat": 55.95096,
      "lon": -3.18568,
      "openingHours": "\"on appointment\"",
@@ -1541,7 +1674,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Trinity_College_Kirk_03.jpg",
       "fullWidth": 768
      },
-     "description": "royal collegiate church in Edinburgh, Scotland, UK, almost entirely demolished in 1848"
+     "description": "royal collegiate church in Edinburgh, Scotland, UK, almost entirely demolished in 1848",
+     "descriptionEn": "royal collegiate church in Edinburgh, Scotland, UK, almost entirely demolished in 1848"
     },
     {
      "id": "way/42261848",
@@ -1569,11 +1703,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Cecilia%27s_Hall,_Edinburgh,_by_Jim_Barton,_Geograph_4253114.jpg",
       "fullWidth": 1024
      },
-     "description": "Music museum, concert hall in Scotland, United Kingdom"
+     "description": "Music museum, concert hall in Scotland, United Kingdom",
+     "descriptionEn": "Music museum, concert hall in Scotland, United Kingdom"
     },
     {
      "id": "node/9422760984",
      "name": "Museum of Scottish Fire Heritage",
+     "labels": {
+      "en": "Museum of Fire"
+     },
      "lat": 55.96378,
      "lon": -3.18384,
      "address": "Dryden Terrace 1A",
@@ -1586,11 +1724,15 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Edinburgh, Scotland, UK"
+     "description": "museum in Edinburgh, Scotland, UK",
+     "descriptionEn": "museum in Edinburgh, Scotland, UK"
     },
     {
      "id": "way/57709519",
      "name": "RBGE Inverleith House",
+     "labels": {
+      "en": "Inverleith House"
+     },
      "lat": 55.965,
      "lon": -3.21015,
      "website": "http://www.rbge.org.uk/the-gardens/edinburgh/inverleith-house",
@@ -1610,12 +1752,16 @@
       "fullWidth": 640
      },
      "description": "architectural structure in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "architectural structure in City of Edinburgh, Scotland, UK",
      "parentId": "Q1807521",
      "parentName": "Royal Botanic Garden Edinburgh"
     },
     {
      "id": "node/6715804556",
      "name": "The Royal Scots Dragoon Guards Museum",
+     "labels": {
+      "en": "Royal Scots Dragoon Guards Museum"
+     },
      "lat": 55.94809,
      "lon": -3.20088,
      "website": "https://www.scotsdgmuseum.com/",
@@ -1636,12 +1782,16 @@
       "fullWidth": 640
      },
      "description": "regimental museum in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "regimental museum in City of Edinburgh, Scotland, UK",
      "parentId": "Q212065",
      "parentName": "Edinburgh Kalesi"
     },
     {
      "id": "way/446654897",
      "name": "The Royal Scots Regimental Museum",
+     "labels": {
+      "en": "Museum of the Royal Regiment of Scotland"
+     },
      "lat": 55.94824,
      "lon": -3.20038,
      "website": "https://www.theroyalscots.co.uk/museum/",
@@ -1662,6 +1812,7 @@
       "fullWidth": 640
      },
      "description": "regimental museum in Edinburgh, Scotland, United Kingdom",
+     "descriptionEn": "regimental museum in Edinburgh, Scotland, United Kingdom",
      "parentId": "Q212065",
      "parentName": "Edinburgh Kalesi"
     },
@@ -1687,7 +1838,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Elephant_skeleton,_Anatomical_Museum,_University_of_Edinburgh_(48638172423).jpg",
       "fullWidth": 3648
      },
-     "description": "Anatomical museum at the University of Edinburgh, United Kingdom"
+     "description": "Anatomical museum at the University of Edinburgh, United Kingdom",
+     "descriptionEn": "Anatomical museum at the University of Edinburgh, United Kingdom"
     },
     {
      "id": "node/11503362946",
@@ -1799,6 +1951,9 @@
     {
      "id": "way/70836441",
      "name": "City Art Centre",
+     "labels": {
+      "en": "City Art Centre, 1-6 Market Street, Edinburgh"
+     },
      "lat": 55.95102,
      "lon": -3.18919,
      "address": "Market Street 2",
@@ -1819,7 +1974,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh,_1-6_Market_Street,_City_Art_Centre.jpg",
       "fullWidth": 6000
      },
-     "description": "architectural structure in City of Edinburgh, Scotland, UK"
+     "description": "architectural structure in City of Edinburgh, Scotland, UK",
+     "descriptionEn": "architectural structure in City of Edinburgh, Scotland, UK"
     },
     {
      "id": "way/659876969",

@@ -47,6 +47,10 @@ describe("pickAirlines", () => {
 
   it("names a reused designator after its best known current airline, Turkish label first", () => {
     const json = { results: { bindings: [row("TK", 27, "AJet", "AJet"), row("TK", 89, "Türk Hava Yolları", "Turkish Airlines"), row("6E", 48, null, "IndiGo"), row("x1", 5, null, "Bad")] } };
-    expect(pickAirlines(json)).toEqual({ "6E": "IndiGo", TK: "Türk Hava Yolları", X1: "Bad" });
+    expect(pickAirlines(json)).toEqual({
+      airlines: { "6E": "IndiGo", TK: "Türk Hava Yolları", X1: "Bad" },
+      // English names only where they differ, for the English interface.
+      airlinesEn: { TK: "Turkish Airlines" },
+    });
   });
 });

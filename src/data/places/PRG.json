@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "PRG",
  "fetchedAt": "2026-10-28T14:12:59.204Z",
  "radiusKm": 3,
@@ -45,6 +45,9 @@
     {
      "id": "node/6815500185",
      "name": "Pražský Hrad",
+     "labels": {
+      "en": "Prague Castle"
+     },
      "lat": 50.09124,
      "lon": 14.40377,
      "website": "http://www.prazskyhrad.cz/",
@@ -66,11 +69,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_Praga,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_209.jpg",
       "fullWidth": 8688
      },
-     "description": "castle complex in Prague, Czech Republic, dating from the 9th century"
+     "description": "castle complex in Prague, Czech Republic, dating from the 9th century",
+     "descriptionEn": "castle complex in Prague, Czech Republic, dating from the 9th century"
     },
     {
      "id": "way/4053134",
      "name": "Karlův most",
+     "labels": {
+      "en": "Charles Bridge"
+     },
      "lat": 50.08647,
      "lon": 14.41137,
      "wikipediaCount": 61,
@@ -81,11 +88,15 @@
       "road",
       "street"
      ],
-     "description": "bridge in Prague, Czech Republic"
+     "description": "bridge in Prague, Czech Republic",
+     "descriptionEn": "bridge in Prague, Czech Republic"
     },
     {
      "id": "relation/15317899",
      "name": "Katedrála svatého Víta, Václava a Vojtěcha",
+     "labels": {
+      "en": "St. Vitus Cathedral"
+     },
      "lat": 50.09086,
      "lon": 14.40055,
      "website": "https://www.katedralasvatehovita.cz/",
@@ -107,6 +118,7 @@
       "fullWidth": 6160
      },
      "description": "Katedral",
+     "descriptionEn": "Roman Catholic cathedral in Prague",
      "parentId": "Q193369",
      "parentName": "Prag Kalesi"
     },
@@ -114,6 +126,9 @@
      "id": "node/4748580936",
      "name": "Astronomik Saat",
      "localName": "Staroměstský orloj",
+     "labels": {
+      "en": "Prague Astronomical Clock"
+     },
      "lat": 50.08698,
      "lon": 14.42071,
      "openingHours": "Mo 11:00-22:00; Tu-Su 09:00-22:00",
@@ -134,12 +149,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Astronomical_Clock_(8341899828).jpg",
       "fullWidth": 1068
      },
-     "description": "Astronomical Clock in Prague, Czech Republic"
+     "description": "Astronomical Clock in Prague, Czech Republic",
+     "descriptionEn": "Astronomical Clock in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q421678",
      "name": "Eski Kent Meydanı",
      "localName": "Old Town Square",
+     "labels": {
+      "en": "Old Town Square"
+     },
      "lat": 50.0875,
      "lon": 14.42139,
      "wikipediaCount": 40,
@@ -148,12 +167,16 @@
       "heritage",
       "square"
      ],
-     "description": "square in the Old Town quarter of Prague"
+     "description": "square in the Old Town quarter of Prague",
+     "descriptionEn": "square in the Old Town quarter of Prague"
     },
     {
      "id": "wikidata/Q847613",
      "name": "Vaclav Meydanı",
      "localName": "Wenceslas Square",
+     "labels": {
+      "en": "Wenceslas Square"
+     },
      "lat": 50.08231,
      "lon": 14.42614,
      "wikipediaCount": 40,
@@ -171,7 +194,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:V%C3%A1clavsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD_z_kupole_Muzea_3.jpg",
       "fullWidth": 2048
      },
-     "description": "Prag'ın ana meydanlarından biri"
+     "description": "Prag'ın ana meydanlarından biri",
+     "descriptionEn": "city square in Prague"
     },
     {
      "id": "relation/8001448",
@@ -195,11 +219,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_2,_Pevnost_Vy%C5%A1ehrad_20170808_014.jpg",
       "fullWidth": 6016
      },
-     "description": "Tarihî kale"
+     "description": "Tarihî kale",
+     "descriptionEn": "historic fort in Prague"
     },
     {
      "id": "way/379512802",
      "name": "Matka Boží před Týnem",
+     "labels": {
+      "en": "Church of Our Lady before Týn"
+     },
      "lat": 50.08771,
      "lon": 14.42271,
      "address": "Staroměstské náměstí 110",
@@ -211,11 +239,15 @@
       "heritage",
       "religious"
      ],
-     "description": "Prag'da kilise binası"
+     "description": "Prag'da kilise binası",
+     "descriptionEn": "church building in Old Town, Czech Republic"
     },
     {
      "id": "relation/6268801",
      "name": "Strahovský klášter",
+     "labels": {
+      "en": "Strahov Monastery"
+     },
      "lat": 50.08626,
      "lon": 14.38971,
      "website": "https://www.strahovskyklaster.cz/",
@@ -236,12 +268,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Hradcany_-_Strahovsky_klaster_(pohled_z_ulice_Uvoz).jpg",
       "fullWidth": 2400
      },
-     "description": "church complex in Prague"
+     "description": "church complex in Prague",
+     "descriptionEn": "church complex in Prague"
     },
     {
      "id": "wikidata/Q443107",
      "name": "Eski Yeni Sinagog",
      "localName": "Old New Synagogue",
+     "labels": {
+      "en": "Old New Synagogue"
+     },
      "lat": 50.09,
      "lon": 14.41861,
      "wikipediaCount": 32,
@@ -260,11 +296,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Old_New_Synagogue_01(js).jpg",
       "fullWidth": 5524
      },
-     "description": "synagogue in Prague, Czechia"
+     "description": "synagogue in Prague, Czechia",
+     "descriptionEn": "synagogue in Prague, Czechia"
     },
     {
      "id": "way/27376003",
      "name": "Starý židovský hřbitov",
+     "labels": {
+      "en": "Old Jewish Cemetery"
+     },
      "lat": 50.08998,
      "lon": 14.41728,
      "website": "https://www.jewishmuseum.cz/",
@@ -284,11 +324,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Jewish_Cemetery_2003.jpg",
       "fullWidth": 1024
      },
-     "description": "Pragdaki Bir Mezarlık"
+     "description": "Pragdaki Bir Mezarlık",
+     "descriptionEn": "cemetery in Prague"
     },
     {
      "id": "way/457404360",
      "name": "Žižkovský vysílač",
+     "labels": {
+      "en": "Žižkov Television Tower"
+     },
      "lat": 50.08102,
      "lon": 14.45106,
      "address": "Mahlerovy sady 1",
@@ -309,11 +353,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%BDi%C5%BEkov_tv_tower.jpg",
       "fullWidth": 1536
      },
-     "description": "TV tower in Prague, Czech Republic"
+     "description": "TV tower in Prague, Czech Republic",
+     "descriptionEn": "TV tower in Prague, Czech Republic"
     },
     {
      "id": "relation/3366616",
      "name": "Klementinum",
+     "labels": {
+      "en": "Clementinum"
+     },
      "lat": 50.08665,
      "lon": 14.41591,
      "website": "https://www.klementinum.com/",
@@ -333,12 +381,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Klementinum_z_Mari%C3%A1nsk%C3%A9ho_n%C3%A1m_1.jpg",
       "fullWidth": 2348
      },
-     "description": "building complex in Prague, currently used as library"
+     "description": "building complex in Prague, currently used as library",
+     "descriptionEn": "building complex in Prague, currently used as library"
     },
     {
      "id": "wikidata/Q60103",
      "name": "Generali Arena",
      "localName": "Letná Stadium",
+     "labels": {
+      "en": "Letná Stadium"
+     },
      "lat": 50.09972,
      "lon": 14.41612,
      "wikipediaCount": 27,
@@ -356,11 +408,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Sparta.jpg",
       "fullWidth": 3456
      },
-     "description": "football stadium in Prague, Czechia"
+     "description": "football stadium in Prague, Czechia",
+     "descriptionEn": "football stadium in Prague, Czechia"
     },
     {
      "id": "node/4172786092",
      "name": "Zlatá ulička",
+     "labels": {
+      "en": "Golden Lane"
+     },
      "lat": 50.09206,
      "lon": 14.40427,
      "wikipediaCount": 27,
@@ -381,6 +437,7 @@
       "fullWidth": 8280
      },
      "description": "Prag'da sokak",
+     "descriptionEn": "street in Prague, part of Prague Castle",
      "parentId": "Q193369",
      "parentName": "Prag Kalesi"
     },
@@ -388,6 +445,9 @@
      "id": "wikidata/Q1437065",
      "name": "St. George Bazilikası, Prag",
      "localName": "St. George's Basilica",
+     "labels": {
+      "en": "St. George's Basilica"
+     },
      "lat": 50.09111,
      "lon": 14.40222,
      "wikipediaCount": 26,
@@ -407,12 +467,16 @@
       "fullWidth": 6000
      },
      "description": "church in Prague, Czech Republic",
+     "descriptionEn": "church in Prague, Czech Republic",
      "parentId": "Q193369",
      "parentName": "Prag Kalesi"
     },
     {
      "id": "way/629201841",
      "name": "Lennonova zeď",
+     "labels": {
+      "en": "Lennon Wall"
+     },
      "lat": 50.08624,
      "lon": 14.40682,
      "openingHours": "24/7",
@@ -428,11 +492,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:JohnLennonWall.jpg",
       "fullWidth": 3872
      },
-     "description": "a wall in Prague, Czech Republic"
+     "description": "a wall in Prague, Czech Republic",
+     "descriptionEn": "a wall in Prague, Czech Republic"
     },
     {
      "id": "way/7645355",
      "name": "svatý Mikuláš",
+     "labels": {
+      "en": "St. Nicholas Church"
+     },
      "lat": 50.08798,
      "lon": 14.4032,
      "address": "Malostranské náměstí",
@@ -453,12 +521,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mal%C3%A1_Strana_kostel_sv._Mikul%C3%A1%C5%A1e_z_Pet%C5%99%C3%ADna-3.jpg",
       "fullWidth": 1365
      },
-     "description": "Prag'ın Malá Strana adlı küçük kasabasında bulunan Barok mimarisiyle yapılmış bir kilise"
+     "description": "Prag'ın Malá Strana adlı küçük kasabasında bulunan Barok mimarisiyle yapılmış bir kilise",
+     "descriptionEn": "church in Prague in Malá Strana neighborhood"
     },
     {
      "id": "wikidata/Q956163",
      "name": "Aziz Kiril ve Methodios Katedrali",
      "localName": "Ss. Cyril and Methodius Cathedral",
+     "labels": {
+      "en": "Ss. Cyril and Methodius Cathedral"
+     },
      "lat": 50.0759,
      "lon": 14.417,
      "wikipediaCount": 25,
@@ -477,7 +549,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pravoslavny_katedralni_chram_sv._Cyrila_a_Metodeje_Resslova_Praha.jpg",
       "fullWidth": 2292
      },
-     "description": "church in Prague"
+     "description": "church in Prague",
+     "descriptionEn": "church in Prague"
     },
     {
      "id": "wikidata/Q1353687",
@@ -490,7 +563,8 @@
       "heritage",
       "sportsVenue"
      ],
-     "description": "stadium in the Strahov district of Prague, Czechia"
+     "description": "stadium in the Strahov district of Prague, Czechia",
+     "descriptionEn": "stadium in the Strahov district of Prague, Czechia"
     },
     {
      "id": "wikidata/Q1130137",
@@ -515,7 +589,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Rudolfinum_Prague.jpg",
       "fullWidth": 3872
      },
-     "description": "Prag'da etkinlik merkezi"
+     "description": "Prag'da etkinlik merkezi",
+     "descriptionEn": "historical building in Prague"
     },
     {
      "id": "wikidata/Q521155",
@@ -541,11 +616,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Stavovsk%C3%A9_divadlo_5.jpg",
       "fullWidth": 2000
      },
-     "description": "theatre and opera house in Prague, Czech Republic, operated by the National Theatre company"
+     "description": "theatre and opera house in Prague, Czech Republic, operated by the National Theatre company",
+     "descriptionEn": "theatre and opera house in Prague, Czech Republic, operated by the National Theatre company"
     },
     {
      "id": "relation/73471",
      "name": "Valdštejnský palác",
+     "labels": {
+      "en": "Wallenstein Palace"
+     },
      "lat": 50.09002,
      "lon": 14.40571,
      "wikipediaCount": 24,
@@ -565,12 +644,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Valdstejnsky_Palace_Lobkowicz_wing.jpg",
       "fullWidth": 3072
      },
-     "description": "Prag'da saray"
+     "description": "Prag'da saray",
+     "descriptionEn": "Palace in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q2916171",
      "name": "Aziz Peter ve Aziz Paul Bazilikası",
      "localName": "Basilica of St Peter and St Paul",
+     "labels": {
+      "en": "Basilica of St Peter and St Paul"
+     },
      "lat": 50.06438,
      "lon": 14.41784,
      "wikipediaCount": 23,
@@ -589,7 +672,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Vy%C5%A1ehrad_bazilika_1.jpg",
       "fullWidth": 2048
      },
-     "description": "church in Prague"
+     "description": "church in Prague",
+     "descriptionEn": "church in Prague"
     },
     {
      "id": "wikidata/Q603573",
@@ -611,11 +695,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Child_Jesus_of_Prague_(original_statue).jpg",
       "fullWidth": 978
      },
-     "description": "wooden-wax statuette in the Church of Our Lady Victorious in Malá Strana in Prague"
+     "description": "wooden-wax statuette in the Church of Our Lady Victorious in Malá Strana in Prague",
+     "descriptionEn": "wooden-wax statuette in the Church of Our Lady Victorious in Malá Strana in Prague"
     },
     {
      "id": "way/255771323",
      "name": "Staroměstská radnice",
+     "labels": {
+      "en": "Old Town Hall"
+     },
      "lat": 50.08698,
      "lon": 14.42028,
      "openingHours": "Mo 11:00-22:00; Tu-Su 09:00-22:00",
@@ -637,12 +725,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Prag_Altstaedter_Ring_rathaus.jpg",
       "fullWidth": 1116
      },
-     "description": "historical building in the Czech Republic"
+     "description": "historical building in the Czech Republic",
+     "descriptionEn": "historical building in the Czech Republic"
     },
     {
      "id": "wikidata/Q2595999",
      "name": "Aziz Nicholas Kilisesi",
      "localName": "Church of Saint Nicholas",
+     "labels": {
+      "en": "Church of Saint Nicholas"
+     },
      "lat": 50.08778,
      "lon": 14.41986,
      "wikipediaCount": 22,
@@ -651,11 +743,15 @@
       "heritage",
       "religious"
      ],
-     "description": "Prag'da kilise binası"
+     "description": "Prag'da kilise binası",
+     "descriptionEn": "church in Prague, Czech Republic"
     },
     {
      "id": "relation/127987",
      "name": "palác Kinských",
+     "labels": {
+      "en": "Kinsky Palace"
+     },
      "lat": 50.08809,
      "lon": 14.42202,
      "wikipediaCount": 21,
@@ -674,12 +770,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_-_Palac_Goltz-Kinskych.jpg",
       "fullWidth": 2144
      },
-     "description": "Prag, Eski Kent'te bir saray"
+     "description": "Prag, Eski Kent'te bir saray",
+     "descriptionEn": "important rococo building in Prague's Old Town Square"
     },
     {
      "id": "wikidata/Q2334312",
      "name": "Belediye Konser Salonu",
      "localName": "Municipal House",
+     "labels": {
+      "en": "Municipal House"
+     },
      "lat": 50.08762,
      "lon": 14.42824,
      "wikipediaCount": 20,
@@ -702,12 +802,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_municipal,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_09.jpg",
       "fullWidth": 5693
      },
-     "description": "Prag'da konser salonu"
+     "description": "Prag'da konser salonu",
+     "descriptionEn": "concert hall and café in Prague, Czech RePublic"
     },
     {
      "id": "wikidata/Q632057",
      "name": "Azize Ludmila Kilisesi",
      "localName": "Basilica of St. Ludmila",
+     "labels": {
+      "en": "Basilica of St. Ludmila"
+     },
      "lat": 50.07528,
      "lon": 14.43722,
      "wikipediaCount": 19,
@@ -726,12 +830,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Prague-_N%C3%A1m%C4%9Bst%C3%AD_M%C3%ADru.jpg",
       "fullWidth": 2600
      },
-     "description": "Prag'da kilise binası"
+     "description": "Prag'da kilise binası",
+     "descriptionEn": "church in Prague"
     },
     {
      "id": "wikidata/Q1000684",
      "name": "Emmaus Manastırı",
      "localName": "Emmaus Monastery",
+     "labels": {
+      "en": "Emmaus Monastery"
+     },
      "lat": 50.07222,
      "lon": 14.4175,
      "wikipediaCount": 19,
@@ -751,11 +859,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Emauzsk%C3%BD_kl%C3%A1%C5%A1ter_6.jpg",
       "fullWidth": 1920
      },
-     "description": "abbey in Prague"
+     "description": "abbey in Prague",
+     "descriptionEn": "abbey in Prague"
     },
     {
      "id": "node/3408716566",
      "name": "Loretánská zvonohra",
+     "labels": {
+      "en": "Loreta"
+     },
      "lat": 50.08925,
      "lon": 14.39151,
      "wikipediaCount": 19,
@@ -775,12 +887,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hrad%C4%8Dany_Loreta_3.jpg",
       "fullWidth": 2048
      },
-     "description": "church"
+     "description": "church",
+     "descriptionEn": "church"
     },
     {
      "id": "wikidata/Q517766",
      "name": "Maisel Sinagogu",
      "localName": "Maisel Synagogue",
+     "labels": {
+      "en": "Maisel Synagogue"
+     },
      "lat": 50.08878,
      "lon": 14.41866,
      "wikipediaCount": 19,
@@ -799,12 +915,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Maiselova_synagoga_3.jpg",
       "fullWidth": 1768
      },
-     "description": "synagogue"
+     "description": "synagogue",
+     "descriptionEn": "synagogue"
     },
     {
      "id": "wikidata/Q1706629",
      "name": "Stalin Anıtı (Prag)",
      "localName": "Stalin Monument",
+     "labels": {
+      "en": "Stalin Monument"
+     },
      "lat": 50.09472,
      "lon": 14.41599,
      "wikipediaCount": 19,
@@ -822,7 +942,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Letna-park._Eur%C3%B3pa_legnagyobb,_30_m%C3%A9teres_Szt%C3%A1lin_szobra_volt_(%C3%A1llt_1962-ig)._Ma_egy_25_m%C3%A9teres,_m%C5%B1k%C3%B6d%C5%91_metron%C3%B3m_van_a_hely%C3%A9n._Fortepan_7365_(cropped).jpg",
       "fullWidth": 1386
      },
-     "description": "sculpture in Prague, Czech Republic"
+     "description": "sculpture in Prague, Czech Republic",
+     "descriptionEn": "sculpture in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q1886083",
@@ -848,7 +969,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St%C3%A1tn%C3%AD_opera_in_Prague,_2010.jpg",
       "fullWidth": 2340
      },
-     "description": "opera house in Prague, Czechia, operated by the National Theatre company"
+     "description": "opera house in Prague, Czechia, operated by the National Theatre company",
+     "descriptionEn": "opera house in Prague, Czechia, operated by the National Theatre company"
     },
     {
      "id": "wikidata/Q414009",
@@ -873,12 +995,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hlavn%C3%AD_budova_AVU.jpg",
       "fullWidth": 2850
      },
-     "description": "Art college in Prague, Czech Republic"
+     "description": "Art college in Prague, Czech Republic",
+     "descriptionEn": "Art college in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q942102",
      "name": "Jübile Sinagogu",
      "localName": "Jubilee Synagogue",
+     "labels": {
+      "en": "Jubilee Synagogue"
+     },
      "lat": 50.08472,
      "lon": 14.43167,
      "wikipediaCount": 18,
@@ -897,12 +1023,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Jeruzal%C3%A9msk%C3%A1_synagoga_%C4%8Delo_2.jpg",
       "fullWidth": 1413
      },
-     "description": "synagogue"
+     "description": "synagogue",
+     "descriptionEn": "synagogue"
     },
     {
      "id": "wikidata/Q1503199",
      "name": "Marie Vítězné Kilisesi",
      "localName": "Church of Our Lady of Victories",
+     "labels": {
+      "en": "Church of Our Lady of Victories"
+     },
      "lat": 50.0857,
      "lon": 14.4036,
      "wikipediaCount": 18,
@@ -921,7 +1051,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mal%C3%A1_Strana_kostel_PM_V%C3%ADt%C4%9Bzn%C3%A9_3.jpg",
       "fullWidth": 1523
      },
-     "description": "Prag'da kilise binası"
+     "description": "Prag'da kilise binası",
+     "descriptionEn": "church in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q1116389",
@@ -940,12 +1071,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Memorial_to_the_Victims_of_Communism,_Prague.jpg",
       "fullWidth": 2298
      },
-     "description": "Memorial designed by Olbram Zoubek in Prague, Czech Republic"
+     "description": "Memorial designed by Olbram Zoubek in Prague, Czech Republic",
+     "descriptionEn": "Memorial designed by Olbram Zoubek in Prague, Czech Republic"
     },
     {
      "id": "wikidata/Q1742720",
      "name": "Marie Sněžné Kilisesi",
      "localName": "Church of Our Lady of the Snow in Prague",
+     "labels": {
+      "en": "Church of Our Lady of the Snow in Prague"
+     },
      "lat": 50.08306,
      "lon": 14.42361,
      "wikipediaCount": 17,
@@ -964,7 +1099,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kostel_Panny_Marie_Sn%C4%9B%C5%BEn%C3%A9_z_Franti%C5%A1k%C3%A1nsk%C3%A9_4.JPG",
       "fullWidth": 2560
      },
-     "description": "Prag'da kilise binası"
+     "description": "Prag'da kilise binası",
+     "descriptionEn": "church building in New Town, Czech Republic"
     },
     {
      "id": "wikidata/Q1502676",
@@ -986,12 +1122,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Petrin_Funicular_2026_2.jpg",
       "fullWidth": 1907
      },
-     "description": "funicular railway in the Czech capital city of Prague"
+     "description": "funicular railway in the Czech capital city of Prague",
+     "descriptionEn": "funicular railway in the Czech capital city of Prague"
     },
     {
      "id": "wikidata/Q1164329",
      "name": "Rabbimizin En Kutsal Kalbi Kilisesi",
      "localName": "Church of the Most Sacred Heart of Our Lord",
+     "labels": {
+      "en": "Church of the Most Sacred Heart of Our Lord"
+     },
      "lat": 50.07803,
      "lon": 14.45075,
      "wikipediaCount": 17,
@@ -1010,7 +1150,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_kostel_NSP_bok_1.jpg",
       "fullWidth": 1979
      },
-     "description": "Katolik kilisesi"
+     "description": "Katolik kilisesi",
+     "descriptionEn": "Roman Catholic church in Prague"
     },
     {
      "id": "wikidata/Q1940904",
@@ -1032,11 +1173,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadion_Evzena_Rosickeho,_north_stand.jpg",
       "fullWidth": 2048
      },
-     "description": "sports stadium in Prague, Czech Republic"
+     "description": "sports stadium in Prague, Czech Republic",
+     "descriptionEn": "sports stadium in Prague, Czech Republic"
     },
     {
      "id": "relation/2403951",
      "name": "Černínský palác",
+     "labels": {
+      "en": "Černín Palace"
+     },
      "lat": 50.08875,
      "lon": 14.38988,
      "wikipediaCount": 16,
@@ -1056,7 +1201,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:2009-04-24_in_Prague_04.jpg",
       "fullWidth": 3888
      },
-     "description": "palace in Prague, Czech Republic"
+     "description": "palace in Prague, Czech Republic",
+     "descriptionEn": "palace in Prague, Czech Republic"
     }
    ]
   },
@@ -1067,6 +1213,9 @@
     {
      "id": "relation/85291",
      "name": "Národní muzeum",
+     "labels": {
+      "en": "National Museum in Prague"
+     },
      "lat": 50.07942,
      "lon": 14.43143,
      "address": "Václavské náměstí 68",
@@ -1088,11 +1237,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_Nacional,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_265-267_HDR.jpg",
       "fullWidth": 7178
      },
-     "description": "Czech museum institution"
+     "description": "Czech museum institution",
+     "descriptionEn": "Czech museum institution"
     },
     {
      "id": "node/3926969670",
      "name": "Národní galerie v Praze - Klášter sv. Anežky České",
+     "labels": {
+      "en": "National Gallery Prague"
+     },
      "lat": 50.09226,
      "lon": 14.42399,
      "address": "U Milosrdných 17",
@@ -1114,11 +1267,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Veletr%C5%BEn%C3%AD_pal%C3%A1c_jih.jpg",
       "fullWidth": 2144
      },
-     "description": "art museum in Prague, Czechia"
+     "description": "art museum in Prague, Czechia",
+     "descriptionEn": "art museum in Prague, Czechia"
     },
     {
      "id": "way/28517451",
      "name": "Španělská synagoga",
+     "labels": {
+      "en": "Spanish Synagogue"
+     },
      "lat": 50.09037,
      "lon": 14.42082,
      "address": "Vězeňská 1",
@@ -1140,7 +1297,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sinagoga_Espa%C3%B1ola,_Praga,_Rep%C3%BAblica_Checa,_2022-07-02,_DD_29.jpg",
       "fullWidth": 5020
      },
-     "description": "synagogue in Prague"
+     "description": "synagogue in Prague",
+     "descriptionEn": "synagogue in Prague"
     },
     {
      "id": "wikidata/Q2424070",
@@ -1166,6 +1324,7 @@
       "fullWidth": 3872
      },
      "description": "belvedere in Prague",
+     "descriptionEn": "belvedere in Prague",
      "parentId": "Q193369",
      "parentName": "Prag Kalesi"
     },
@@ -1173,6 +1332,9 @@
      "id": "node/443297509",
      "name": "Kafka Müzesi",
      "localName": "Kafka Museum",
+     "labels": {
+      "en": "Franz Kafka Museum"
+     },
      "lat": 50.08798,
      "lon": 14.41051,
      "address": "Cihelná 2b",
@@ -1194,7 +1356,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kafka_Museum_-_panoramio.jpg",
       "fullWidth": 1600
      },
-     "description": "Prag'da müze"
+     "description": "Prag'da müze",
+     "descriptionEn": "museum in Prague"
     },
     {
      "id": "wikidata/Q96482839",
@@ -1217,11 +1380,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Hole%C5%A1ovice,_zem%C4%9Bd%C4%9Blsk%C3%A9_a_technick%C3%A9_muzeum.JPG",
       "fullWidth": 2160
      },
-     "description": "Czech museum organization"
+     "description": "Czech museum organization",
+     "descriptionEn": "Czech museum organization"
     },
     {
      "id": "node/1269502274",
      "name": "Židovské muzeum",
+     "labels": {
+      "en": "Jewish Museum in Prague"
+     },
      "lat": 50.09029,
      "lon": 14.4211,
      "address": "U staré školy 141/1",
@@ -1243,11 +1410,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%C5%A0pan%C4%9Blsk%C3%A1_synagoga_a_Administrativn%C3%AD_budova_muzea_cropped.jpg",
       "fullWidth": 2322
      },
-     "description": "museum in Czechia"
+     "description": "museum in Czechia",
+     "descriptionEn": "museum in Czechia"
     },
     {
      "id": "way/179183380",
      "name": "Pinkasova synagoga",
+     "labels": {
+      "en": "Pinkas Synagogue"
+     },
      "lat": 50.08926,
      "lon": 14.417,
      "address": "U Staré Školy 141/1",
@@ -1269,11 +1440,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Pinkasova_synagoga_1.jpg",
       "fullWidth": 1795
      },
-     "description": "synagogue in Prague, Czech Republic"
+     "description": "synagogue in Prague, Czech Republic",
+     "descriptionEn": "synagogue in Prague, Czech Republic"
     },
     {
      "id": "relation/5389879",
      "name": "Národní památník na Vítkově",
+     "labels": {
+      "en": "National Monument in Vitkov"
+     },
      "lat": 50.08853,
      "lon": 14.45018,
      "openingHours": "We-Su 10:00-18:00",
@@ -1293,11 +1468,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pam%C3%A1tn%C3%ADk_N%C3%A1rodn%C3%AD_pam%C3%A1tn%C3%ADk_(%C5%BDi%C5%BEkov).JPG",
       "fullWidth": 1067
      },
-     "description": "War memorial in Prague"
+     "description": "War memorial in Prague",
+     "descriptionEn": "War memorial in Prague"
     },
     {
      "id": "node/1201707824",
      "name": "Muzeum Bedřicha Smetany",
+     "labels": {
+      "en": "Bedřich Smetana Museum"
+     },
      "lat": 50.08561,
      "lon": 14.41292,
      "website": "https://www.nm.cz/navstivte-nas/objekty/muzeum-bedricha-smetany",
@@ -1318,7 +1497,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_L%C3%A1vka_MBS_1.jpg",
       "fullWidth": 2000
      },
-     "description": "museum in Prague"
+     "description": "museum in Prague",
+     "descriptionEn": "museum in Prague"
     },
     {
      "id": "node/2517682988",
@@ -1344,7 +1524,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praga_-_panoramio_(118).jpg",
       "fullWidth": 2048
      },
-     "description": "Sex museum in Prague"
+     "description": "Sex museum in Prague",
+     "descriptionEn": "Sex museum in Prague"
     },
     {
      "id": "way/365967543",
@@ -1367,11 +1548,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bertramka_Mozart_Museum.JPG",
       "fullWidth": 3072
      },
-     "description": "Prag'da etkinlik merkezi"
+     "description": "Prag'da etkinlik merkezi",
+     "descriptionEn": "villa"
     },
     {
      "id": "node/3217484773",
      "name": "Muzeum Antonína Dvořáka",
+     "labels": {
+      "en": "Antonín Dvořák Museum"
+     },
      "lat": 50.07369,
      "lon": 14.42692,
      "address": "Ke Karlovu 462/20",
@@ -1393,11 +1578,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Vila_Amerika_deska_MAD.jpg",
       "fullWidth": 2000
      },
-     "description": "Prag'da müze"
+     "description": "Prag'da müze",
+     "descriptionEn": "museum in the Czech Republic"
     },
     {
      "id": "node/4986978223",
      "name": "Muzeum komunismu",
+     "labels": {
+      "en": "Museum of Communism"
+     },
      "lat": 50.08785,
      "lon": 14.43001,
      "address": "V Celnici 1031/4",
@@ -1419,11 +1608,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Nove_Mesto_V_celnici_4_Muzeum_komunismu.jpg",
       "fullWidth": 2448
      },
-     "description": "Czech Republic"
+     "description": "Czech Republic",
+     "descriptionEn": "Czech Republic"
     },
     {
      "id": "way/30825119",
      "name": "Uměleckoprůmyslové muzeum v Praze",
+     "labels": {
+      "en": "Museum of Decorative Arts in Prague"
+     },
      "lat": 50.08991,
      "lon": 14.41643,
      "website": "https://www.upm.cz/",
@@ -1444,11 +1637,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_UmPrum_1.jpg",
       "fullWidth": 2048
      },
-     "description": "art museum in Prague, Czech Republic"
+     "description": "art museum in Prague, Czech Republic",
+     "descriptionEn": "art museum in Prague, Czech Republic"
     },
     {
      "id": "node/4720384283",
      "name": "Lobkovický palác",
+     "labels": {
+      "en": "Lobkowicz Palace"
+     },
      "lat": 50.09155,
      "lon": 14.40487,
      "website": "https://www.lobkowicz.com/en/collections/lobkowicz-palace/museum/",
@@ -1469,12 +1666,16 @@
       "fullWidth": 4101
      },
      "description": "building in in Prague, Czech Republic",
+     "descriptionEn": "building in in Prague, Czech Republic",
      "parentId": "Q193369",
      "parentName": "Prag Kalesi"
     },
     {
      "id": "way/295285613",
      "name": "Obřadní síň",
+     "labels": {
+      "en": "Jewish Ceremonial Hall"
+     },
      "lat": 50.09004,
      "lon": 14.41702,
      "website": "https://www.jewishmuseum.cz/",
@@ -1496,12 +1697,16 @@
       "fullWidth": 3997
      },
      "description": "museum in Czech Republic",
+     "descriptionEn": "museum in Czech Republic",
      "parentId": "Q438026",
      "parentName": "Prag Eski Yahudi Mezarlığı"
     },
     {
      "id": "node/3270484912",
      "name": "Mucha museum",
+     "labels": {
+      "en": "Mucha Museum"
+     },
      "lat": 50.08418,
      "lon": 14.42772,
      "address": "Panská 890/7",
@@ -1523,7 +1728,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mucha_Museum_in_Prague.jpg",
       "fullWidth": 1136
      },
-     "description": "museum in Prague"
+     "description": "museum in Prague",
+     "descriptionEn": "museum in Prague"
     },
     {
      "id": "node/1083723494",
@@ -1549,11 +1755,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kampa_museum_Prague_3039.JPG",
       "fullWidth": 2272
      },
-     "description": "museum in Prague"
+     "description": "museum in Prague",
+     "descriptionEn": "museum in Prague"
     },
     {
      "id": "node/344975004",
      "name": "Náprstkovo muzeum",
+     "labels": {
+      "en": "Náprstek Museum"
+     },
      "lat": 50.08409,
      "lon": 14.41597,
      "address": "Betlémské náměstí 269/1",
@@ -1575,11 +1785,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Prague_CZ_Old_Town_Betlemske_namesti_U_Halanku.jpg",
       "fullWidth": 2048
      },
-     "description": "Prag'da müze"
+     "description": "Prag'da müze",
+     "descriptionEn": "museum in Prague, Czechia"
     },
     {
      "id": "node/5614223550",
      "name": "Muzeum hlavního města Prahy - Dům U Zlatého prstenu",
+     "labels": {
+      "en": "The City of Prague Museum"
+     },
      "lat": 50.08809,
      "lon": 14.42306,
      "website": "https://www.muzeumprahy.cz/",
@@ -1591,11 +1805,15 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Prague, Czechia"
+     "description": "museum in Prague, Czechia",
+     "descriptionEn": "museum in Prague, Czechia"
     },
     {
      "id": "node/3303681505",
      "name": "Poštovní muzeum",
+     "labels": {
+      "en": "Postal Museum"
+     },
      "lat": 50.09231,
      "lon": 14.4286,
      "address": "Nové mlýny 1239/2",
@@ -1617,11 +1835,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Po%C5%A1tovn%C3%AD_muzeum.JPG",
       "fullWidth": 2316
      },
-     "description": "museum in Prague, Czech Republic"
+     "description": "museum in Prague, Czech Republic",
+     "descriptionEn": "museum in Prague, Czech Republic"
     },
     {
      "id": "node/4360610699",
      "name": "Muzeum městské hromadné dopravy v Praze",
+     "labels": {
+      "en": "Public Transport Museum in Prague"
+     },
      "lat": 50.09395,
      "lon": 14.38867,
      "address": "Patočkova",
@@ -1643,11 +1865,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:OEPNVMuseumPrag001.jpg",
       "fullWidth": 1296
      },
-     "description": "museum"
+     "description": "museum",
+     "descriptionEn": "museum"
     },
     {
      "id": "node/4016973329",
      "name": "Galerie Roberta Guttmanna",
+     "labels": {
+      "en": "Robert Guttmann Gallery"
+     },
      "lat": 50.09057,
      "lon": 14.42089,
      "address": "U staré školy 153/3",
@@ -1668,11 +1894,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Stare_Mesto_U_Stare_skoly_3_2.jpg",
       "fullWidth": 2448
      },
-     "description": "gallery in Prague, Czech Republic"
+     "description": "gallery in Prague, Czech Republic",
+     "descriptionEn": "gallery in Prague, Czech Republic"
     },
     {
      "id": "way/22634016",
      "name": "Planetárium",
+     "labels": {
+      "en": "Planetárium Praha"
+     },
      "lat": 50.10552,
      "lon": 14.42751,
      "address": "Královská obora 233",
@@ -1692,11 +1922,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Planetum,_Praha_(2025-08-07).jpg",
       "fullWidth": 3287
      },
-     "description": "planetarium in Prague, Czech Republic"
+     "description": "planetarium in Prague, Czech Republic",
+     "descriptionEn": "planetarium in Prague, Czech Republic"
     },
     {
      "id": "way/28921026",
      "name": "České muzeum hudby",
+     "labels": {
+      "en": "Czech Museum of Music"
+     },
      "lat": 50.08474,
      "lon": 14.40474,
      "address": "Karmelitská 2",
@@ -1708,11 +1942,15 @@
       "museum",
       "organization"
      ],
-     "description": "museum in the Czech Repbublic"
+     "description": "museum in the Czech Repbublic",
+     "descriptionEn": "museum in the Czech Repbublic"
     },
     {
      "id": "node/2197547437",
      "name": "Muzeum Policie ČR",
+     "labels": {
+      "en": "Czech Police Museum"
+     },
      "lat": 50.0689,
      "lon": 14.4281,
      "address": "Ke Karlovu 453/1",
@@ -1734,11 +1972,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Policejni_motocykly_MPCR_00492.JPG",
       "fullWidth": 4272
      },
-     "description": "museum in Prague, Czech Republic"
+     "description": "museum in Prague, Czech Republic",
+     "descriptionEn": "museum in Prague, Czech Republic"
     },
     {
      "id": "way/9113427",
      "name": "Lapidárium Národního muzea",
+     "labels": {
+      "en": "Lapidarium, Prague"
+     },
      "lat": 50.10552,
      "lon": 14.43147,
      "address": "U Výstaviště 422",
@@ -1760,11 +2002,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hole%C5%A1ovice_v%C3%BDstavi%C5%A1t%C4%9B_Lapid%C3%A1rium_1.jpg",
       "fullWidth": 4012
      },
-     "description": "part of the National museum"
+     "description": "part of the National museum",
+     "descriptionEn": "part of the National museum"
     },
     {
      "id": "node/3235823267",
      "name": "Obrazárna Pražského hradu",
+     "labels": {
+      "en": "Prague Castle Picture Gallery"
+     },
      "lat": 50.09068,
      "lon": 14.39854,
      "address": "Praha 1",
@@ -1786,12 +2032,16 @@
       "fullWidth": 3648
      },
      "description": "special purpose gallery in Prague Castle",
+     "descriptionEn": "special purpose gallery in Prague Castle",
      "parentId": "Q193369",
      "parentName": "Prag Kalesi"
     },
     {
      "id": "way/41779392",
      "name": "Stará čistírna odpadních vod;Stará čistírna odpadních vod v Bubeneči",
+     "labels": {
+      "en": "Old Sewage Plant in Bubeneč"
+     },
      "lat": 50.11011,
      "lon": 14.40217,
      "website": "http://stara-cistirna.cz/",
@@ -1810,11 +2060,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bubene%C4%8Dsk%C3%A1_%C4%8Dist%C3%ADrna_(07).jpg",
       "fullWidth": 4217
      },
-     "description": "national monument in Prague, Czech Republic"
+     "description": "national monument in Prague, Czech Republic",
+     "descriptionEn": "national monument in Prague, Czech Republic"
     },
     {
      "id": "node/4437594389",
      "name": "Choco-Story Muzeum čokolády",
+     "labels": {
+      "en": "Choco-Story Prague"
+     },
      "lat": 50.08697,
      "lon": 14.42305,
      "website": "https://www.choco-story-praha.cz/",
@@ -1835,7 +2089,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:D%C5%AFm_U_B%C3%ADl%C3%A9ho_p%C3%A1va557-Praha2010.jpg",
       "fullWidth": 2848
      },
-     "description": "Prag'da müze"
+     "description": "Prag'da müze",
+     "descriptionEn": "museum in Prague, Czechia"
     },
     {
      "id": "node/1302407411",
@@ -1861,12 +2116,16 @@
       "fullWidth": 800
      },
      "description": "art museum in Prague",
+     "descriptionEn": "art museum in Prague",
      "parentId": "Q1130137",
      "parentName": "Rudolfinum"
     },
     {
      "id": "node/1302217408",
      "name": "Galerie Václava Špály",
+     "labels": {
+      "en": "The Václav Špála Gallery"
+     },
      "lat": 50.08241,
      "lon": 14.42033,
      "address": "Národní 30",
@@ -1889,11 +2148,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_GV%C5%A0_1.jpg",
       "fullWidth": 2942
      },
-     "description": "Prag'da müze"
+     "description": "Prag'da müze",
+     "descriptionEn": "museum in Czech Republic"
     },
     {
      "id": "node/296693693",
      "name": "Vojenský historický ústav Praha",
+     "labels": {
+      "en": "Military History Institute in Prague"
+     },
      "lat": 50.08766,
      "lon": 14.44516,
      "address": "U Památníku 1600/2",
@@ -1914,11 +2177,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:VHU4.jpg",
       "fullWidth": 800
      },
-     "description": "research and museum organisation in the Czech Republic"
+     "description": "research and museum organisation in the Czech Republic",
+     "descriptionEn": "research and museum organisation in the Czech Republic"
     },
     {
      "id": "node/3278327071",
      "name": "Galerie Josefa Sudka",
+     "labels": {
+      "en": "Josef Sudek Gallery"
+     },
      "lat": 50.08827,
      "lon": 14.39468,
      "address": "Úvoz 160/24",
@@ -1943,6 +2210,9 @@
     {
      "id": "way/30475391",
      "name": "Ateliér Josefa Sudka",
+     "labels": {
+      "en": "The Josef Sudek Studio"
+     },
      "lat": 50.08244,
      "lon": 14.40522,
      "address": "Újezd",
@@ -1993,6 +2263,9 @@
     {
      "id": "node/1058918765",
      "name": "Památník národního písemnictví",
+     "labels": {
+      "en": "Museum of Czech Literature"
+     },
      "lat": 50.08664,
      "lon": 14.39009,
      "address": "Strahovské nádvoří 132/1",
@@ -2015,7 +2288,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mal%C3%A1_vila_v_Pell%C3%A9ov%C4%9B_ulici.jpg",
       "fullWidth": 2599
      },
-     "description": "literary museum in Prague, Czech Republic"
+     "description": "literary museum in Prague, Czech Republic",
+     "descriptionEn": "literary museum in Prague, Czech Republic"
     },
     {
      "id": "way/10107260",
@@ -2044,6 +2318,9 @@
     {
      "id": "node/1268946125",
      "name": "Chlupáčovo muzeum historie Země",
+     "labels": {
+      "en": "Chlupáč Museum"
+     },
      "lat": 50.06875,
      "lon": 14.42428,
      "address": "Albertov",
@@ -2065,7 +2342,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Carnotaurus,_Chlup%C3%A1%C4%8D_Museum,_Prague-2.jpg",
       "fullWidth": 1559
      },
-     "description": "Prag'da müze"
+     "description": "Prag'da müze",
+     "descriptionEn": "museum in Czech Republic"
     }
    ]
   },
@@ -2076,6 +2354,9 @@
     {
      "id": "node/6485098585",
      "name": "Dancing House viewpoint",
+     "labels": {
+      "en": "Dancing House"
+     },
      "lat": 50.0755,
      "lon": 14.41407,
      "wikipediaCount": 48,
@@ -2093,11 +2374,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Casa_Danzante_de_Praga_1.JPG",
       "fullWidth": 1479
      },
-     "description": "building in Prague, Czech Republic"
+     "description": "building in Prague, Czech Republic",
+     "descriptionEn": "building in Prague, Czech Republic"
     },
     {
      "id": "way/27124370",
      "name": "Prašná brána",
+     "labels": {
+      "en": "Powder Tower"
+     },
      "lat": 50.08724,
      "lon": 14.42776,
      "website": "https://www.prague.eu/en/object/places/102/powder-gate-tower-prasna-brana?back=1",
@@ -2112,11 +2397,15 @@
       "organization",
       "tower"
      ],
-     "description": "tower in Prague, Czech Republic"
+     "description": "tower in Prague, Czech Republic",
+     "descriptionEn": "tower in Prague, Czech Republic"
     },
     {
      "id": "way/391354925",
      "name": "Radniční věž",
+     "labels": {
+      "en": "Old Town Hall"
+     },
      "lat": 50.08705,
      "lon": 14.42067,
      "openingHours": "Mo 11:00-22:00; Tu-Su 09:00-22:00",
@@ -2138,11 +2427,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Prag_Altstaedter_Ring_rathaus.jpg",
       "fullWidth": 1116
      },
-     "description": "historical building in the Czech Republic"
+     "description": "historical building in the Czech Republic",
+     "descriptionEn": "historical building in the Czech Republic"
     },
     {
      "id": "way/7645353",
      "name": "Petřínská rozhledna",
+     "labels": {
+      "en": "Petřín Lookout Tower"
+     },
      "lat": 50.08351,
      "lon": 14.3951,
      "website": "https://www.muzeumprahy.cz/",
@@ -2155,11 +2448,15 @@
       "heritage",
       "tower"
      ],
-     "description": "tower in Prague"
+     "description": "tower in Prague",
+     "descriptionEn": "tower in Prague"
     },
     {
      "id": "way/839278890",
      "name": "Staroměstská mostecká věž",
+     "labels": {
+      "en": "Old Town Bridge Tower"
+     },
      "lat": 50.08616,
      "lon": 14.41361,
      "website": "https://www.prague.eu/cs/objekt/mista/197/staromestska-mostecka-vez",
@@ -2182,11 +2479,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Karl%C5%AFv_most_v%C4%9B%C5%BE.jpg",
       "fullWidth": 1290
      },
-     "description": "national monument of the Czech Republic"
+     "description": "national monument of the Czech Republic",
+     "descriptionEn": "national monument of the Czech Republic"
     },
     {
      "id": "way/839278891",
      "name": "Malostranská mostecká věž",
+     "labels": {
+      "en": "Malá Strana Bridge Tower"
+     },
      "lat": 50.08731,
      "lon": 14.40685,
      "website": "https://www.muzeumprahy.cz/",
@@ -2208,11 +2509,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Roman_Boed_Karl%C5%AFv_most3.jpg",
       "fullWidth": 5879
      },
-     "description": "national monument of the Czech Republic"
+     "description": "national monument of the Czech Republic",
+     "descriptionEn": "national monument of the Czech Republic"
     },
     {
      "id": "node/288743366",
      "name": "Masarykova vyhlídka",
+     "labels": {
+      "en": "Masaryk lookout, Praha"
+     },
      "lat": 50.09159,
      "lon": 14.39512,
      "wikipediaCount": 1,
@@ -2230,7 +2535,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Jelen%C3%AD_p%C5%99%C3%ADkop_-_Masarykova_vyhl%C3%ADdka_02.jpg",
       "fullWidth": 3280
      },
-     "description": "place above the Jelení příkop (Dear moat) near the Prague Castle"
+     "description": "place above the Jelení příkop (Dear moat) near the Prague Castle",
+     "descriptionEn": "place above the Jelení příkop (Dear moat) near the Prague Castle"
     },
     {
      "id": "node/6734411585",
@@ -2954,7 +3260,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Grand_Cafe_Orient_Prague.JPG",
       "fullWidth": 1462
      },
-     "description": "café in Prague"
+     "description": "café in Prague",
+     "descriptionEn": "café in Prague"
     },
     {
      "id": "node/4531576138",
@@ -2998,12 +3305,16 @@
     {
      "id": "node/14087606979",
      "name": "Lost and Found",
+     "labels": {
+      "en": "Lost and Found Bar Prague"
+     },
      "lat": 50.07752,
      "lon": 14.4231,
      "address": "Žitná 11",
      "openingHours": "Su-Tu 18:00-00:00; We-Th 17:00-01:00; Fr-Sa 17:00-03:00",
      "wikidataId": "Q141651391",
-     "description": "Cocktail, craft beer bar and hookah lounge in Prague, Czech Republic"
+     "description": "Cocktail, craft beer bar and hookah lounge in Prague, Czech Republic",
+     "descriptionEn": "Cocktail, craft beer bar and hookah lounge in Prague, Czech Republic"
     },
     {
      "id": "node/296555731",
@@ -3387,7 +3698,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cross_Club_(1).jpg",
       "fullWidth": 2346
      },
-     "description": "music venue in Prague, Czech Republic"
+     "description": "music venue in Prague, Czech Republic",
+     "descriptionEn": "music venue in Prague, Czech Republic"
     },
     {
      "id": "node/2459457882",
@@ -3611,6 +3923,9 @@
     {
      "id": "node/4171015386",
      "name": "Euphoria Music Club",
+     "labels": {
+      "en": "Argentinská 1"
+     },
      "lat": 50.09862,
      "lon": 14.44292,
      "address": "Argentinská 1",
@@ -3626,7 +3941,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Praha_Holesovice_Argentinska_1.JPG",
       "fullWidth": 1704
      },
-     "description": "tenement in Czech Republic"
+     "description": "tenement in Czech Republic",
+     "descriptionEn": "tenement in Czech Republic"
     },
     {
      "id": "node/4997465840",

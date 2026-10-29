@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "LON",
  "fetchedAt": "2026-10-28T14:36:04.873Z",
  "radiusKm": 4,
@@ -46,6 +46,9 @@
      "id": "relation/5208404",
      "name": "Buckingham Sarayı",
      "localName": "Buckingham Palace",
+     "labels": {
+      "en": "Buckingham Palace"
+     },
      "lat": 51.50083,
      "lon": -0.14266,
      "website": "https://www.royalcollection.org.uk/visit/the-state-rooms-buckingham-palace",
@@ -68,7 +71,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace,_London_-_April_2009.jpg",
       "fullWidth": 3072
      },
-     "description": "official London residence and principal workplace of the British monarch"
+     "description": "official London residence and principal workplace of the British monarch",
+     "descriptionEn": "official London residence and principal workplace of the British monarch"
     },
     {
      "id": "node/1802652184",
@@ -95,6 +99,7 @@
       "fullWidth": 4347
      },
      "description": "Londra'daki saat kulesi",
+     "descriptionEn": "tower of the Palace of Westminster, London containing the bell Big Ben",
      "parentId": "Q62408",
      "parentName": "Westminster Sarayı"
     },
@@ -122,12 +127,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Westminster-Abbey.JPG",
       "fullWidth": 3000
      },
-     "description": "Gothic abbey church in London, England, UK"
+     "description": "Gothic abbey church in London, England, UK",
+     "descriptionEn": "Gothic abbey church in London, England, UK"
     },
     {
      "id": "way/370870741",
      "name": "Londra Kalesi",
      "localName": "Tower of London",
+     "labels": {
+      "en": "Tower of London"
+     },
      "lat": 51.50813,
      "lon": -0.07629,
      "address": "Tower Hill",
@@ -153,7 +162,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Tower_of_London_viewed_from_the_River_Thames.jpg",
       "fullWidth": 3948
      },
-     "description": "İngiltere'nin Londra şehrindeki kale"
+     "description": "İngiltere'nin Londra şehrindeki kale",
+     "descriptionEn": "castle in central London, United Kingdom"
     },
     {
      "id": "node/2079674503",
@@ -177,7 +187,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London_-_London_Tower_Bridge_-_140806_171049.jpg",
       "fullWidth": 4828
      },
-     "description": "Londra'da bulunan asma köprü"
+     "description": "Londra'da bulunan asma köprü",
+     "descriptionEn": "bascule and suspension bridge in London"
     },
     {
      "id": "relation/1567699",
@@ -202,7 +213,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Houses_of_Parliament_in_2022_(cropped).jpg",
       "fullWidth": 5616
      },
-     "description": "İngiltere Parlementosunun toplantı yeri"
+     "description": "İngiltere Parlementosunun toplantı yeri",
+     "descriptionEn": "meeting place of the Parliament of the United Kingdom, located in London, England, UK"
     },
     {
      "id": "way/204068874",
@@ -227,7 +239,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London_Eye_seen_from_the_north_bank_of_the_Thames,_London.jpg",
       "fullWidth": 6869
      },
-     "description": "observation wheel in London, England"
+     "description": "observation wheel in London, England",
+     "descriptionEn": "observation wheel in London, England"
     },
     {
      "id": "way/378493707",
@@ -249,7 +262,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London_Bridge_from_South_bank.jpg",
       "fullWidth": 3648
      },
-     "description": "road bridge across River Thames in London, opened in 1973"
+     "description": "road bridge across River Thames in London, opened in 1973",
+     "descriptionEn": "road bridge across River Thames in London, opened in 1973"
     },
     {
      "id": "way/4680891",
@@ -276,12 +290,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:British_Library_%2B_St_Pancras_7527-31hug.jpg",
       "fullWidth": 4419
      },
-     "description": "national library of the United Kingdom"
+     "description": "national library of the United Kingdom",
+     "descriptionEn": "national library of the United Kingdom"
     },
     {
      "id": "wikidata/Q163995",
      "name": "Emirates Stadyumu",
      "localName": "Emirates Stadium",
+     "labels": {
+      "en": "Emirates Stadium"
+     },
      "lat": 51.555,
      "lon": -0.10833,
      "wikipediaCount": 75,
@@ -299,7 +317,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London_Emirates_Stadium_arsenal.jpg",
       "fullWidth": 4241
      },
-     "description": "Londra'da futbol stadyumu"
+     "description": "Londra'da futbol stadyumu",
+     "descriptionEn": "association football stadium located in Islington, North London"
     },
     {
      "id": "wikidata/Q171458",
@@ -321,7 +340,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London_Stamford_Bridge.jpg",
       "fullWidth": 4316
      },
-     "description": "İngiltere'de bulunan chelsea takımının futbol Stadyumu"
+     "description": "İngiltere'de bulunan chelsea takımının futbol Stadyumu",
+     "descriptionEn": "association football stadium in London, England"
     },
     {
      "id": "relation/553472",
@@ -347,7 +367,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bank_of_England_Building,_London,_UK_-_Diliff.jpg",
       "fullWidth": 10000
      },
-     "description": "central bank of the United Kingdom"
+     "description": "central bank of the United Kingdom",
+     "descriptionEn": "central bank of the United Kingdom"
     },
     {
      "id": "way/369161987",
@@ -375,12 +396,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Pauls_aerial_(cropped).jpg",
       "fullWidth": 1833
      },
-     "description": "İngiltere'de tarihi bir katedral"
+     "description": "İngiltere'de tarihi bir katedral",
+     "descriptionEn": "cathedral in the City of London, England, UK"
     },
     {
      "id": "relation/3962877",
      "name": "Trafalgar Meydanı",
      "localName": "Trafalgar Square",
+     "labels": {
+      "en": "Trafalgar Square"
+     },
      "lat": 51.50817,
      "lon": -0.12827,
      "wikipediaCount": 72,
@@ -399,7 +424,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Trafalgar_Square,_London_2_-_Jun_2009.jpg",
       "fullWidth": 4161
      },
-     "description": "public space and tourist attraction in central London"
+     "description": "public space and tourist attraction in central London",
+     "descriptionEn": "public space and tourist attraction in central London"
     },
     {
      "id": "relation/1879842",
@@ -414,7 +440,8 @@
       "heritage",
       "residence"
      ],
-     "description": "Birleşik Krallık Başbakanlık Ofisi"
+     "description": "Birleşik Krallık Başbakanlık Ofisi",
+     "descriptionEn": "headquarters of His Majesty's Government"
     },
     {
      "id": "wikidata/Q189022",
@@ -438,7 +465,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Imperial_College_London_down_Exhibition_Road.jpg",
       "fullWidth": 4096
      },
-     "description": "Londra'da devlet araştırma üniversitesi"
+     "description": "Londra'da devlet araştırma üniversitesi",
+     "descriptionEn": "public research university located in London, United Kingdom"
     },
     {
      "id": "way/372975520",
@@ -460,7 +488,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hyde_Park_July_2015-1.jpg",
       "fullWidth": 11414
      },
-     "description": "Londra'da park"
+     "description": "Londra'da park",
+     "descriptionEn": "Royal Park in London, England, UK"
     },
     {
      "id": "way/31110737",
@@ -485,7 +514,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Shard_from_the_Sky_Garden_2015.jpg",
       "fullWidth": 5472
      },
-     "description": "Londra'da bir gökdelen"
+     "description": "Londra'da bir gökdelen",
+     "descriptionEn": "skyscraper in London, England"
     },
     {
      "id": "way/33721672",
@@ -513,12 +543,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Royal_Opera_House_and_ballerina.jpg",
       "fullWidth": 2124
      },
-     "description": "opera house and major performing arts venue in Covent Garden, central London (3rd theatre on the site, opened 1858)"
+     "description": "opera house and major performing arts venue in Covent Garden, central London (3rd theatre on the site, opened 1858)",
+     "descriptionEn": "opera house and major performing arts venue in Covent Garden, central London (3rd theatre on the site, opened 1858)"
     },
     {
      "id": "wikidata/Q207385",
      "name": "Kensington Sarayı",
      "localName": "Kensington Palace",
+     "labels": {
+      "en": "Kensington Palace"
+     },
      "lat": 51.50528,
      "lon": -0.18833,
      "wikipediaCount": 53,
@@ -539,7 +573,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kensington_Palace.jpg",
       "fullWidth": 3264
      },
-     "description": "royal residence set in Kensington Gardens, London, England, UK"
+     "description": "royal residence set in Kensington Gardens, London, England, UK",
+     "descriptionEn": "royal residence set in Kensington Gardens, London, England, UK"
     },
     {
      "id": "node/1937435160",
@@ -561,7 +596,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:New_Scotland_Yard_sign.jpg",
       "fullWidth": 6016
      },
-     "description": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016"
+     "description": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016",
+     "descriptionEn": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016"
     },
     {
      "id": "relation/8250949",
@@ -580,7 +616,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Picadilly_Circus,_London_(9308789313).jpg",
       "fullWidth": 4320
      },
-     "description": "road junction and public place in London, England, UK"
+     "description": "road junction and public place in London, England, UK",
+     "descriptionEn": "road junction and public place in London, England, UK"
     },
     {
      "id": "way/372860405",
@@ -608,11 +645,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hansom_cab_1904.jpg",
       "fullWidth": 307
      },
-     "description": "concert hall in South Kensington, London, England, United Kingdom"
+     "description": "concert hall in South Kensington, London, England, United Kingdom",
+     "descriptionEn": "concert hall in South Kensington, London, England, United Kingdom"
     },
     {
      "id": "relation/545040",
      "name": "Saint James's Palace",
+     "labels": {
+      "en": "St James's Palace"
+     },
      "lat": 51.50455,
      "lon": -0.13797,
      "wikipediaCount": 50,
@@ -631,12 +672,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_James%27s_Palace,_London_-_geograph.org.uk_-_7963883.jpg",
       "fullWidth": 4000
      },
-     "description": "royal palace in London, England"
+     "description": "royal palace in London, England",
+     "descriptionEn": "royal palace in London, England"
     },
     {
      "id": "wikidata/Q192687",
      "name": "Downing Sokağı",
      "localName": "Downing Street",
+     "labels": {
+      "en": "Downing Street"
+     },
      "lat": 51.50333,
      "lon": -0.1275,
      "wikipediaCount": 49,
@@ -655,7 +700,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Downing_Street.jpg",
       "fullWidth": 1006
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "street in London, England"
     },
     {
      "id": "wikidata/Q191161",
@@ -677,7 +723,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe_from_Leadenhall_Street.jpg",
       "fullWidth": 2631
      },
-     "description": "Londra'da bulunan bir gökdelen"
+     "description": "Londra'da bulunan bir gökdelen",
+     "descriptionEn": "skyscraper in London, England"
     },
     {
      "id": "way/216998718",
@@ -700,7 +747,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Westminster,_London_(7660306446).jpg",
       "fullWidth": 6000
      },
-     "description": "bridge over the River Thames in London"
+     "description": "bridge over the River Thames in London",
+     "descriptionEn": "bridge over the River Thames in London"
     },
     {
      "id": "wikidata/Q927198",
@@ -723,12 +771,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Londinium_Arch%C3%A4ologische_Karte.png",
       "fullWidth": 1008
      },
-     "description": "London during the Roman era"
+     "description": "London during the Roman era",
+     "descriptionEn": "London during the Roman era"
     },
     {
      "id": "wikidata/Q44057",
      "name": "Millennium Köprüsü",
      "localName": "Millennium Bridge",
+     "labels": {
+      "en": "Millennium Bridge"
+     },
      "lat": 51.51017,
      "lon": -0.09844,
      "wikipediaCount": 47,
@@ -746,7 +798,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mill.bridge.from.tate.modern.arp.jpg",
       "fullWidth": 2058
      },
-     "description": "bridge in London"
+     "description": "bridge in London",
+     "descriptionEn": "bridge in London"
     },
     {
      "id": "way/25739565",
@@ -773,12 +826,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:HarrodsDay.jpg",
       "fullWidth": 1600
      },
-     "description": "Giyim Markası"
+     "description": "Giyim Markası",
+     "descriptionEn": "British department store"
     },
     {
      "id": "wikidata/Q219867",
      "name": "King's Cross Tren İstasyonu",
      "localName": "London King's Cross railway station",
+     "labels": {
+      "en": "London King's Cross railway station"
+     },
      "lat": 51.53097,
      "lon": -0.12333,
      "wikipediaCount": 46,
@@ -797,7 +854,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:King%27s_Cross_station,_August_2014.jpg",
       "fullWidth": 1280
      },
-     "description": "railway station in the London Borough of Camden, England, UK"
+     "description": "railway station in the London Borough of Camden, England, UK",
+     "descriptionEn": "railway station in the London Borough of Camden, England, UK"
     },
     {
      "id": "way/10810446",
@@ -823,11 +881,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Westminster_Cathedral_London,_4th_May_2024_-_53708806889.jpg",
       "fullWidth": 2801
      },
-     "description": "Londra, İngiltere'de Roma Katolik Katedral"
+     "description": "Londra, İngiltere'de Roma Katolik Katedral",
+     "descriptionEn": "Catholic cathedral in London, England, UK"
     },
     {
      "id": "node/1948210427",
      "name": "Site of the original Globe Theatre",
+     "labels": {
+      "en": "Globe Theatre"
+     },
      "lat": 51.50684,
      "lon": -0.09474,
      "wikipediaCount": 45,
@@ -847,7 +909,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London,_UK_(August_2014)_-_156.JPG",
       "fullWidth": 4000
      },
-     "description": "former theatre in London, England, associated with William Shakespeare"
+     "description": "former theatre in London, England, associated with William Shakespeare",
+     "descriptionEn": "former theatre in London, England, associated with William Shakespeare"
     },
     {
      "id": "wikidata/Q214820",
@@ -870,7 +933,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Horse_guard_Whitehall_London.jpg",
       "fullWidth": 1314
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "road in the City of Westminster, in central London"
     },
     {
      "id": "wikidata/Q216185",
@@ -892,7 +956,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Westminster,_Charing_Cross_-_geograph.org.uk_-_865507.jpg",
       "fullWidth": 640
      },
-     "description": "Londra'da bölge"
+     "description": "Londra'da bölge",
+     "descriptionEn": "area of London, England"
     },
     {
      "id": "wikidata/Q318043",
@@ -914,11 +979,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Craven_Cottage_(Fulham).jpg",
       "fullWidth": 5553
      },
-     "description": "football stadium in Fulham, London"
+     "description": "football stadium in Fulham, London",
+     "descriptionEn": "football stadium in Fulham, London"
     },
     {
      "id": "node/11899012453",
      "name": "Former Whitehall Palace Steps",
+     "labels": {
+      "en": "Palace of Whitehall"
+     },
      "lat": 51.50456,
      "lon": -0.12403,
      "wikipediaCount": 44,
@@ -936,12 +1005,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Old_Palace_of_Whitehall_by_Hendrik_Danckerts.jpg",
       "fullWidth": 1000
      },
-     "description": "former building in the City of Westminster, London"
+     "description": "former building in the City of Westminster, London",
+     "descriptionEn": "former building in the City of Westminster, London"
     },
     {
      "id": "wikidata/Q270263",
      "name": "Londra Hayvanat Bahçesi",
      "localName": "London Zoo",
+     "labels": {
+      "en": "London Zoo"
+     },
      "lat": 51.53556,
      "lon": -0.15583,
      "wikipediaCount": 44,
@@ -959,12 +1032,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Snowdon_Aviary_at_London_Zoo,_England-16Aug2009.jpg",
       "fullWidth": 1504
      },
-     "description": "world's oldest scientific zoo, in London, England"
+     "description": "world's oldest scientific zoo, in London, England",
+     "descriptionEn": "world's oldest scientific zoo, in London, England"
     },
     {
      "id": "wikidata/Q214788",
      "name": "Londra Paddington Tren İstasyonu",
      "localName": "London Paddington station",
+     "labels": {
+      "en": "London Paddington station"
+     },
      "lat": 51.51667,
      "lon": -0.17722,
      "wikipediaCount": 44,
@@ -983,7 +1060,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:4_GWR_Class_80X_at_Paddington,_from_overbridge_above_pl_4,_Nov_2021.jpg",
       "fullWidth": 4032
      },
-     "description": "railway station in the London Borough of Westminster, England, UK"
+     "description": "railway station in the London Borough of Westminster, England, UK",
+     "descriptionEn": "railway station in the London Borough of Westminster, England, UK"
     },
     {
      "id": "wikidata/Q209714",
@@ -1006,12 +1084,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Oxford_Street_December_2006.jpeg",
       "fullWidth": 2100
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "major road in the City of Westminster in London"
     },
     {
      "id": "wikidata/Q216914",
      "name": "St. James's Park",
      "localName": "St James's Park",
+     "labels": {
+      "en": "St James's Park"
+     },
      "lat": 51.5025,
      "lon": -0.135,
      "wikipediaCount": 43,
@@ -1029,12 +1111,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Big_Ben_Parketik_-_panoramio.jpg",
       "fullWidth": 1200
      },
-     "description": "Londra'da park"
+     "description": "Londra'da park",
+     "descriptionEn": "Royal Park in central London"
     },
     {
      "id": "wikidata/Q207699",
      "name": "Waterloo & City Hattı",
      "localName": "Waterloo & City line",
+     "labels": {
+      "en": "Waterloo & City line"
+     },
      "lat": 51.51306,
      "lon": -0.08806,
      "wikipediaCount": 43,
@@ -1052,7 +1138,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bank_station_Waterloo_%26_City_line_train.JPG",
       "fullWidth": 1600
      },
-     "description": "Londra Metrosunun, 8 Ağustos 1898 tarihinde açılmış, 2.37 km uzunlukta ve 2 duraklı hattı"
+     "description": "Londra Metrosunun, 8 Ağustos 1898 tarihinde açılmış, 2.37 km uzunlukta ve 2 duraklı hattı",
+     "descriptionEn": "London Underground line"
     },
     {
      "id": "wikidata/Q331613",
@@ -1074,7 +1161,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Lords-Cricket-Ground-Pavilion-06-08-2017.jpg",
       "fullWidth": 1788
      },
-     "description": "cricket venue in St John's Wood, London"
+     "description": "cricket venue in St John's Wood, London",
+     "descriptionEn": "cricket venue in St John's Wood, London"
     },
     {
      "id": "wikidata/Q739341",
@@ -1096,12 +1184,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Regent%27s_Park_London.jpg",
       "fullWidth": 3072
      },
-     "description": "Londra'da park"
+     "description": "Londra'da park",
+     "descriptionEn": "Royal Park of London, England, UK"
     },
     {
      "id": "wikidata/Q720102",
      "name": "St Pancras Uluslararası Tren İstasyonu",
      "localName": "St Pancras railway station",
+     "labels": {
+      "en": "St Pancras railway station"
+     },
      "lat": 51.53,
      "lon": -0.12528,
      "wikipediaCount": 41,
@@ -1121,12 +1213,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Pancras_Railway_Station_2012-06-23.jpg",
       "fullWidth": 8466
      },
-     "description": "Londra'da bir tren istasyonu"
+     "description": "Londra'da bir tren istasyonu",
+     "descriptionEn": "railway station terminus in London, England, UK"
     },
     {
      "id": "wikidata/Q823412",
      "name": "Azize Margaret Kilisesi",
      "localName": "St Margaret's Church, Westminster",
+     "labels": {
+      "en": "St Margaret's Church, Westminster"
+     },
      "lat": 51.49988,
      "lon": -0.12673,
      "wikipediaCount": 40,
@@ -1145,12 +1241,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St-Margaret%27s-_Westminster.P1130954-PS_(cropped).jpg",
       "fullWidth": 2793
      },
-     "description": "church in Westminster, London, United Kingdom"
+     "description": "church in Westminster, London, United Kingdom",
+     "descriptionEn": "church in Westminster, London, United Kingdom"
     },
     {
      "id": "wikidata/Q501003",
      "name": "Waterloo Köprüsü",
      "localName": "Waterloo Bridge",
+     "labels": {
+      "en": "Waterloo Bridge"
+     },
      "lat": 51.50861,
      "lon": -0.11694,
      "wikipediaCount": 40,
@@ -1170,7 +1270,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Waterloo_bridge.jpg",
       "fullWidth": 630
      },
-     "description": "Londra'da Köprü, İngiltere"
+     "description": "Londra'da Köprü, İngiltere",
+     "descriptionEn": "bridge in London, England, UK"
     },
     {
      "id": "wikidata/Q119892",
@@ -1192,7 +1293,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Green_Park,_London,_England.jpg",
       "fullWidth": 600
      },
-     "description": "Londra'da park"
+     "description": "Londra'da park",
+     "descriptionEn": "one of the Royal Parks of London"
     },
     {
      "id": "wikidata/Q1124023",
@@ -1214,7 +1316,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:A4_Piccadilly_-_DSC04251.JPG",
       "fullWidth": 3648
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "road in the City of Westminster, London, England"
     },
     {
      "id": "way/150920358",
@@ -1237,12 +1340,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Nelson%27s_Column,_Trafalgar_Square,_London.JPG",
       "fullWidth": 1805
      },
-     "description": "victory column in London"
+     "description": "victory column in London",
+     "descriptionEn": "victory column in London"
     },
     {
      "id": "wikidata/Q804402",
      "name": "Baker Sokağı",
      "localName": "Baker Street",
+     "labels": {
+      "en": "Baker Street"
+     },
      "lat": 51.52,
      "lon": -0.1566,
      "wikipediaCount": 37,
@@ -1261,12 +1368,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Baker_Street,_London,_22_May_2011.jpg",
       "fullWidth": 3000
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "street in the Marylebone district of the City of Westminster in London"
     },
     {
      "id": "wikidata/Q846686",
      "name": "Fleet Sokağı",
      "localName": "Fleet Street",
+     "labels": {
+      "en": "Fleet Street"
+     },
      "lat": 51.51378,
      "lon": -0.11153,
      "wikipediaCount": 37,
@@ -1285,7 +1396,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Londres_-_Fleet_Street.JPG",
       "fullWidth": 2816
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "street in the City of London, England"
     },
     {
      "id": "way/30734422",
@@ -1310,7 +1422,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_martin_in_the_fields_exterior.jpg",
       "fullWidth": 479
      },
-     "description": "church in London"
+     "description": "church in London",
+     "descriptionEn": "church in London"
     },
     {
      "id": "wikidata/Q756819",
@@ -1333,7 +1446,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Strand_02.jpg",
       "fullWidth": 2590
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "major thoroughfare in the City of Westminster, London, England"
     },
     {
      "id": "node/4800377221",
@@ -1355,7 +1469,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Mall_London.jpg",
       "fullWidth": 5616
      },
-     "description": "Londra'da sokak"
+     "description": "Londra'da sokak",
+     "descriptionEn": "road in London, England"
     },
     {
      "id": "way/54478457",
@@ -1380,7 +1495,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Clarence_house.jpg",
       "fullWidth": 800
      },
-     "description": "Londra'da konak"
+     "description": "Londra'da konak",
+     "descriptionEn": "official residence of king Charles III, and his wife Camilla"
     },
     {
      "id": "way/4082589",
@@ -1403,7 +1519,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Redeveloped_Leicester_Square.jpg",
       "fullWidth": 2560
      },
-     "description": "square in London, United Kingdom"
+     "description": "square in London, United Kingdom",
+     "descriptionEn": "square in London, United Kingdom"
     },
     {
      "id": "wikidata/Q822607",
@@ -1425,7 +1542,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hyde_Park_Albert_Memorial_Jan_2006.jpg",
       "fullWidth": 2047
      },
-     "description": "Londra'da park"
+     "description": "Londra'da park",
+     "descriptionEn": "park in London, England, UK"
     }
    ]
   },
@@ -1458,7 +1576,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:British_Museum_from_NE_2_(cropped).JPG",
       "fullWidth": 2560
      },
-     "description": "Birleşik Krallık, Londra'da bir ulusal müze"
+     "description": "Birleşik Krallık, Londra'da bir ulusal müze",
+     "descriptionEn": "national museum in London, United Kingdom"
     },
     {
      "id": "way/4372002",
@@ -1484,7 +1603,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Nacional,_Londres,_Inglaterra,_2014-08-07,_DD_036.JPG",
       "fullWidth": 5023
      },
-     "description": "art museum in London, England, UK"
+     "description": "art museum in London, England, UK",
+     "descriptionEn": "art museum in London, England, UK"
     },
     {
      "id": "way/684695074",
@@ -1510,7 +1630,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:MadameTussaudMuseumLondon.JPG",
       "fullWidth": 3072
      },
-     "description": "wax museum in London"
+     "description": "wax museum in London",
+     "descriptionEn": "wax museum in London"
     },
     {
      "id": "relation/29795",
@@ -1536,7 +1657,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Victoria_%26_Albert_Museum_Entrance,_London,_UK_-_Diliff.jpg",
       "fullWidth": 5312
      },
-     "description": "museum in London, England, United Kingdom"
+     "description": "museum in London, England, United Kingdom",
+     "descriptionEn": "museum in London, England, United Kingdom"
     },
     {
      "id": "way/24642569",
@@ -1562,12 +1684,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Tate_Modern_viewed_from_Thames_Pleasure_Boat_-_geograph.org.uk_-_307445.jpg",
       "fullWidth": 640
      },
-     "description": "modern art gallery located in Bankside, London, England"
+     "description": "modern art gallery located in Bankside, London, England",
+     "descriptionEn": "modern art gallery located in Bankside, London, England"
     },
     {
      "id": "way/24436446",
      "name": "Doğa Tarihi Müzesi",
      "localName": "Natural History Museum",
+     "labels": {
+      "en": "Natural History Museum"
+     },
      "lat": 51.49646,
      "lon": -0.17602,
      "address": "Cromwell Road",
@@ -1590,7 +1716,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_Natural_History_Museum,_Cromwell_Road,_London_SW7_-_geograph.org.uk_-_1034304.jpg",
       "fullWidth": 424
      },
-     "description": "museum in London, England, UK"
+     "description": "museum in London, England, UK",
+     "descriptionEn": "museum in London, England, UK"
     },
     {
      "id": "way/59161723",
@@ -1616,7 +1743,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Portrait_Gallery,_London,_June_2023_34.jpg",
       "fullWidth": 4032
      },
-     "description": "art museum in London, England, United Kingdom"
+     "description": "art museum in London, England, United Kingdom",
+     "descriptionEn": "art museum in London, England, United Kingdom"
     },
     {
      "id": "way/27765411",
@@ -1642,7 +1770,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Science_Museum,_Exhibition_Road_(cropped).jpg",
       "fullWidth": 3748
      },
-     "description": "Londra'da bulunan bir bilim müzesi"
+     "description": "Londra'da bulunan bir bilim müzesi",
+     "descriptionEn": "science museum in London, United Kingdom"
     },
     {
      "id": "way/31510288",
@@ -1671,7 +1800,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Burlington_House.jpg",
       "fullWidth": 3888
      },
-     "description": "Londra'da bulunan sanat akademisi"
+     "description": "Londra'da bulunan sanat akademisi",
+     "descriptionEn": "art institution in London, England, United Kingdom"
     },
     {
      "id": "way/8614496",
@@ -1698,12 +1828,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Imperial_War_Museum._London,_UK.jpg",
       "fullWidth": 5218
      },
-     "description": "military museum in London"
+     "description": "military museum in London",
+     "descriptionEn": "military museum in London"
     },
     {
      "id": "wikidata/Q917820",
      "name": "Londra Müzesi",
      "localName": "London Museum",
+     "labels": {
+      "en": "London Museum"
+     },
      "lat": 51.5179,
      "lon": -0.1048,
      "wikipediaCount": 36,
@@ -1722,7 +1856,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museum_of_London_interior_Lord_Mayors_Coach.jpg",
       "fullWidth": 3840
      },
-     "description": "museum in the City of London"
+     "description": "museum in the City of London",
+     "descriptionEn": "museum in the City of London"
     },
     {
      "id": "way/24553580",
@@ -1749,7 +1884,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Tate_Britain,_Millbank_-_panoramio_(1).jpg",
       "fullWidth": 3648
      },
-     "description": "art museum on Millbank, Westminster, London, UK"
+     "description": "art museum on Millbank, Westminster, London, UK",
+     "descriptionEn": "art museum on Millbank, Westminster, London, UK"
     },
     {
      "id": "wikidata/Q653858",
@@ -1777,7 +1913,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barbican-arts-centre-large.jpg",
       "fullWidth": 800
      },
-     "description": "Performing arts centre in the City of London"
+     "description": "Performing arts centre in the City of London",
+     "descriptionEn": "Performing arts centre in the City of London"
     },
     {
      "id": "way/110753809",
@@ -1803,7 +1940,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cmglee_Royal_Institute_of_British_Architects.jpg",
       "fullWidth": 2048
      },
-     "description": "Birleşik Krallık'ta 1834'te kurulan meslek kurumu"
+     "description": "Birleşik Krallık'ta 1834'te kurulan meslek kurumu",
+     "descriptionEn": "professional body for architects primarily in the United Kingdom"
     },
     {
      "id": "node/3916613190",
@@ -1829,11 +1967,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:221B_Baker_Street,_London_-_Sherlock_Holmes_Museum.jpg",
       "fullWidth": 1280
      },
-     "description": "museum in London, England"
+     "description": "museum in London, England",
+     "descriptionEn": "museum in London, England"
     },
     {
      "id": "way/83488820",
      "name": "The Wallace Collection",
+     "labels": {
+      "en": "Wallace Collection"
+     },
      "lat": 51.51751,
      "lon": -0.15304,
      "address": "Manchester Square",
@@ -1854,7 +1996,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Manchester_House,_home_of_the_Wallace_Collectiion.jpg",
       "fullWidth": 3149
      },
-     "description": "art museum in London, England, UK"
+     "description": "art museum in London, England, UK",
+     "descriptionEn": "art museum in London, England, UK"
     },
     {
      "id": "wikidata/Q1459037",
@@ -1877,7 +2020,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
       "fullWidth": 3990
      },
-     "description": "art collection of the British royal family spread among more than thirteen royal residences and former residences"
+     "description": "art collection of the British royal family spread among more than thirteen royal residences and former residences",
+     "descriptionEn": "art collection of the British royal family spread among more than thirteen royal residences and former residences"
     },
     {
      "id": "way/120316250",
@@ -1904,11 +2048,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Apsley_House_-_geograph.org.uk_-_3763141.jpg",
       "fullWidth": 3790
      },
-     "description": "London townhouse of the Dukes of Wellington"
+     "description": "London townhouse of the Dukes of Wellington",
+     "descriptionEn": "London townhouse of the Dukes of Wellington"
     },
     {
      "id": "way/27703085",
      "name": "Petrie Museum of Egyptian Archeology",
+     "labels": {
+      "en": "Petrie Museum of Egyptian Archaeology"
+     },
      "lat": 51.52358,
      "lon": -0.13298,
      "address": "Malet Place",
@@ -1930,7 +2078,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Petrie_Museum_of_Egyptian_Archaeology.jpg",
       "fullWidth": 3072
      },
-     "description": "university museum in London, United Kingdom"
+     "description": "university museum in London, United Kingdom",
+     "descriptionEn": "university museum in London, United Kingdom"
     },
     {
      "id": "way/61453261",
@@ -1958,7 +2107,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sir_John_Soane_Museum_(13952611347).jpg",
       "fullWidth": 2724
      },
-     "description": "museum in London"
+     "description": "museum in London",
+     "descriptionEn": "museum in London"
     },
     {
      "id": "wikidata/Q591086",
@@ -1983,6 +2133,7 @@
       "fullWidth": 640
      },
      "description": "Londradaki Hyde Park'da bulunan bir sanat galerisi",
+     "descriptionEn": "a complex of two contemporary art galleries in Kensington Gardens and Hyde Park, in the center of London. These are the Serpentine Gallery and the Serpentine Sackler Gallery",
      "parentId": "Q822607",
      "parentName": "Kensington Gardens"
     },
@@ -2011,12 +2162,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:SaatchiGallery.jpg",
       "fullWidth": 1280
      },
-     "description": "physical and online contemporary art gallery in Chelsea, London"
+     "description": "physical and online contemporary art gallery in Chelsea, London",
+     "descriptionEn": "physical and online contemporary art gallery in Chelsea, London"
     },
     {
      "id": "wikidata/Q1786933",
      "name": "Mansion House (Londra)",
      "localName": "Mansion House",
+     "labels": {
+      "en": "Mansion House"
+     },
      "lat": 51.51325,
      "lon": -0.08936,
      "wikipediaCount": 22,
@@ -2036,7 +2191,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mansion_House,_City_of_London_(40478193673).jpg",
       "fullWidth": 3780
      },
-     "description": "official residence of the Lord Mayor of London"
+     "description": "official residence of the Lord Mayor of London",
+     "descriptionEn": "official residence of the Lord Mayor of London"
     },
     {
      "id": "way/44599803",
@@ -2062,7 +2218,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London_Transport_Museum_(42206944281).jpg",
       "fullWidth": 6000
      },
-     "description": "transport museum, United Kingdom"
+     "description": "transport museum, United Kingdom",
+     "descriptionEn": "transport museum, United Kingdom"
     },
     {
      "id": "wikidata/Q1417172",
@@ -2075,7 +2232,8 @@
       "museum",
       "organization"
      ],
-     "description": "Asya çalışmaları alanında Birleşik Krallık'ın en üst düzey eğitim topluluğu"
+     "description": "Asya çalışmaları alanında Birleşik Krallık'ın en üst düzey eğitim topluluğu",
+     "descriptionEn": "Learned society in the field of Asian studies in the United Kingdom"
     },
     {
      "id": "way/197206542",
@@ -2101,11 +2259,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cabinet_war_rooms.jpg",
       "fullWidth": 2448
      },
-     "description": "museum in London"
+     "description": "museum in London",
+     "descriptionEn": "museum in London"
     },
     {
      "id": "node/2647639741",
      "name": "The Courtauld Gallery",
+     "labels": {
+      "en": "Courtauld Gallery"
+     },
      "lat": 51.51162,
      "lon": -0.1177,
      "address": "Strand",
@@ -2127,7 +2289,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Somerset_House,_Strand.jpg",
       "fullWidth": 640
      },
-     "description": "art museum of the Courtauld Institute of Art, located in Somerset House, London"
+     "description": "art museum of the Courtauld Institute of Art, located in Somerset House, London",
+     "descriptionEn": "art museum of the Courtauld Institute of Art, located in Somerset House, London"
     },
     {
      "id": "node/334631276",
@@ -2154,7 +2317,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Charles_Dickens_Museum_-_geograph.org.uk_-_7006672.jpg",
       "fullWidth": 2320
      },
-     "description": "author's house museum in London, United Kingdom"
+     "description": "author's house museum in London, United Kingdom",
+     "descriptionEn": "author's house museum in London, United Kingdom"
     },
     {
      "id": "way/25913653",
@@ -2180,7 +2344,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hayward-gallery-london_I.jpg",
       "fullWidth": 700
      },
-     "description": "art gallery in London"
+     "description": "art gallery in London",
+     "descriptionEn": "art gallery in London"
     },
     {
      "id": "wikidata/Q1415097",
@@ -2203,7 +2368,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Into_the_tunnel_(13267799644).jpg",
       "fullWidth": 6016
      },
-     "description": "Closed railway system in London"
+     "description": "Closed railway system in London",
+     "descriptionEn": "Closed railway system in London"
     },
     {
      "id": "wikidata/Q1283541",
@@ -2226,11 +2392,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Royal_Armouries,_Clarence_Dock_-_geograph.org.uk_-_359138.jpg",
       "fullWidth": 457
      },
-     "description": "national museum of arms and armour, United Kingdom"
+     "description": "national museum of arms and armour, United Kingdom",
+     "descriptionEn": "national museum of arms and armour, United Kingdom"
     },
     {
      "id": "node/1493424622",
      "name": "Handel & Hendrix",
+     "labels": {
+      "en": "Handel Hendrix House"
+     },
      "lat": 51.51294,
      "lon": -0.14588,
      "address": "Brook Street 25",
@@ -2252,11 +2422,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Handel_Hendrix_House_May_2023_(cropped).jpg",
       "fullWidth": 3066
      },
-     "description": "museum in Mayfair, London, England, United Kingdom"
+     "description": "museum in Mayfair, London, England, United Kingdom",
+     "descriptionEn": "museum in Mayfair, London, England, United Kingdom"
     },
     {
      "id": "node/1289223308",
      "name": "The King's Gallery",
+     "labels": {
+      "en": "King's Gallery"
+     },
      "lat": 51.49983,
      "lon": -0.14255,
      "website": "https://www.rct.uk/visit/the-kings-gallery-buckingham-palace",
@@ -2278,6 +2452,7 @@
       "fullWidth": 4032
      },
      "description": "the main public art gallery of Buckingham Palace",
+     "descriptionEn": "the main public art gallery of Buckingham Palace",
      "parentId": "Q42182",
      "parentName": "Buckingham Sarayı"
     },
@@ -2302,11 +2477,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:RUSI,_the_Royal_United_Services_Institute_headquarters,_built_in_1894.png",
       "fullWidth": 200
      },
-     "description": "British defence and security think tank"
+     "description": "British defence and security think tank",
+     "descriptionEn": "British defence and security think tank"
     },
     {
      "id": "node/5741257603",
      "name": "The Florence Nightingale Museum",
+     "labels": {
+      "en": "Florence Nightingale Museum"
+     },
      "lat": 51.50001,
      "lon": -0.11767,
      "address": "Lambeth Palace Road 2",
@@ -2328,7 +2507,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Florence_Nightingale_Museum_-_Joy_of_Museums.jpg",
       "fullWidth": 4769
      },
-     "description": "museum in London, United Kingdom, about life of Florence Nightingale and modern nursing"
+     "description": "museum in London, United Kingdom, about life of Florence Nightingale and modern nursing",
+     "descriptionEn": "museum in London, United Kingdom, about life of Florence Nightingale and modern nursing"
     },
     {
      "id": "way/10807015",
@@ -2352,7 +2532,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:National_Army_Museum_-_Joy_of_Museums.jpg",
       "fullWidth": 5318
      },
-     "description": "museum in London, England, United Kingdom"
+     "description": "museum in London, England, United Kingdom",
+     "descriptionEn": "museum in London, England, United Kingdom"
     },
     {
      "id": "node/4513341393",
@@ -2377,7 +2558,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:London.bankofengland.arp.jpg",
       "fullWidth": 2047
      },
-     "description": "museum in the City of London"
+     "description": "museum in the City of London",
+     "descriptionEn": "museum in the City of London"
     },
     {
      "id": "node/5247197725",
@@ -2403,7 +2585,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Charterhouse_Great_Chamber.jpg",
       "fullWidth": 2764
      },
-     "description": "historic complex of buildings in Smithfield, London, United Kingdom"
+     "description": "historic complex of buildings in Smithfield, London, United Kingdom",
+     "descriptionEn": "historic complex of buildings in Smithfield, London, United Kingdom"
     },
     {
      "id": "node/2617821322",
@@ -2430,7 +2613,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:The_Wellcome_Building.jpg",
       "fullWidth": 5970
      },
-     "description": "museum and library in London, United Kingdom"
+     "description": "museum and library in London, United Kingdom",
+     "descriptionEn": "museum and library in London, United Kingdom"
     },
     {
      "id": "way/28269975",
@@ -2456,7 +2640,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Foundling_Museum_-Brunswick_Square_-London_-15July2009.jpg",
       "fullWidth": 3450
      },
-     "description": "museum in Bloomsbury, London, England, United Kingdom"
+     "description": "museum in Bloomsbury, London, England, United Kingdom",
+     "descriptionEn": "museum in Bloomsbury, London, England, United Kingdom"
     }
    ]
   },
@@ -2772,6 +2957,9 @@
     {
      "id": "node/333726500",
      "name": "Indian YMCA",
+     "labels": {
+      "en": "Indian Students' Union and Hostel"
+     },
      "lat": 51.52277,
      "lon": -0.13896,
      "address": "Fitzroy Street 41",
@@ -2790,7 +2978,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:YMCA_Indian_Student_Hostel,_Fitzroy_Street_(geograph_2659106).jpg",
       "fullWidth": 640
      },
-     "description": "Camden, Greater London, W1T"
+     "description": "Camden, Greater London, W1T",
+     "descriptionEn": "Camden, Greater London, W1T"
     },
     {
      "id": "node/670649313",
@@ -2868,7 +3057,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Lima,_Fitzrovia,_W1.jpg",
       "fullWidth": 2210
      },
-     "description": "Londra'da restoran"
+     "description": "Londra'da restoran",
+     "descriptionEn": "Peruvian restaurant in London, England"
     },
     {
      "id": "node/677316017",
@@ -3225,6 +3415,9 @@
     {
      "id": "way/163827695",
      "name": "Callooh Callay",
+     "labels": {
+      "en": "Callooh Callay Bar"
+     },
      "lat": 51.5263,
      "lon": -0.07988,
      "address": "Rivington Street 65",
@@ -3242,11 +3435,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Callooh_Callay_Bar.jpg",
       "fullWidth": 6000
      },
-     "description": "cocktail bar in Shoreditch, London"
+     "description": "cocktail bar in Shoreditch, London",
+     "descriptionEn": "cocktail bar in Shoreditch, London"
     },
     {
      "id": "node/3898185143",
      "name": "Cellar Door",
+     "labels": {
+      "en": "CellarDoor"
+     },
      "lat": 51.51143,
      "lon": -0.11942,
      "address": "Aldwych 0",
@@ -3262,11 +3459,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cellar_Door,_Covent_Garden,_WC2.jpg",
       "fullWidth": 2520
      },
-     "description": "subterranean cocktail bar in London, England, United Kingdom"
+     "description": "subterranean cocktail bar in London, England, United Kingdom",
+     "descriptionEn": "subterranean cocktail bar in London, England, United Kingdom"
     },
     {
      "id": "way/279088481",
      "name": "Simmons",
+     "labels": {
+      "en": "Pillars of Hercules"
+     },
      "lat": 51.51461,
      "lon": -0.13106,
      "address": "Greek Street 7",
@@ -3282,11 +3483,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pillars_of_Hercules_-_Soho_-_W1.jpg",
       "fullWidth": 1200
      },
-     "description": "pub in London, UK"
+     "description": "pub in London, UK",
+     "descriptionEn": "pub in London, UK"
     },
     {
      "id": "way/279007871",
      "name": "The Lower Third",
+     "labels": {
+      "en": "12 Bar Club"
+     },
      "lat": 51.51555,
      "lon": -0.1292,
      "address": "Denmark Street 26",
@@ -3302,7 +3507,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:12_Bar_Club.JPG",
       "fullWidth": 2592
      },
-     "description": "music venue in London"
+     "description": "music venue in London",
+     "descriptionEn": "music venue in London"
     },
     {
      "id": "wikidata/Q6857969",
@@ -3310,7 +3516,8 @@
      "lat": 51.5137,
      "lon": -0.1366,
      "wikidataId": "Q6857969",
-     "description": "London cocktail bar"
+     "description": "London cocktail bar",
+     "descriptionEn": "London cocktail bar"
     },
     {
      "id": "node/13970985701",
@@ -3328,7 +3535,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wagtail_(1).jpg",
       "fullWidth": 893
      },
-     "description": "Rooftop cocktail bar in London"
+     "description": "Rooftop cocktail bar in London",
+     "descriptionEn": "Rooftop cocktail bar in London"
     },
     {
      "id": "node/21593238",
@@ -3580,6 +3788,9 @@
     {
      "id": "node/383980821",
      "name": "Green Man",
+     "labels": {
+      "en": "Green Man Public House"
+     },
      "lat": 51.51554,
      "lon": -0.13666,
      "address": "Berwick Street 57",
@@ -3598,7 +3809,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Green_Man,_Soho,_W1_(2534865794).jpg",
       "fullWidth": 1280
      },
-     "description": "pub in Westminster, London, England, UK"
+     "description": "pub in Westminster, London, England, UK",
+     "descriptionEn": "pub in Westminster, London, England, UK"
     },
     {
      "id": "node/288045288",
@@ -3621,7 +3833,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hoop_and_Grapes,_Aldgate,_EC3_(2581221888).jpg",
       "fullWidth": 1280
      },
-     "description": "pub on Aldgate High Street, City of London"
+     "description": "pub on Aldgate High Street, City of London",
+     "descriptionEn": "pub on Aldgate High Street, City of London"
     },
     {
      "id": "node/1561417481",
@@ -3677,7 +3890,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Barrel_Vault,_St_Pancras_International_Station,_N1.jpg",
       "fullWidth": 4160
      },
-     "description": "pub in London, UK"
+     "description": "pub in London, UK",
+     "descriptionEn": "pub in London, UK"
     },
     {
      "id": "node/313234121",
@@ -3700,7 +3914,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Lavender,_Vauxhall,_SE11_(2950609098).jpg",
       "fullWidth": 1280
      },
-     "description": "pub in Vauxhall, London, England, UK"
+     "description": "pub in Vauxhall, London, England, UK",
+     "descriptionEn": "pub in Vauxhall, London, England, UK"
     },
     {
      "id": "node/302410081",
@@ -3777,7 +3992,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Wetherspoons,_Victoria_Station,_SW1.jpg",
       "fullWidth": 1280
      },
-     "description": "pub in London, UK"
+     "description": "pub in London, UK",
+     "descriptionEn": "pub in London, UK"
     },
     {
      "id": "node/401529129",
@@ -4003,7 +4219,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Roxy,_Fitzrovia,_W1_(2534879930).jpg",
       "fullWidth": 960
      },
-     "description": "Londra'da gece klübü"
+     "description": "Londra'da gece klübü",
+     "descriptionEn": "nightclub in London, in Rathbone Place"
     },
     {
      "id": "node/313349354",
@@ -4023,7 +4240,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Jimmy_Mc_Cracklin.jpg",
       "fullWidth": 500
      },
-     "description": "Jazz club in Oxford Street, London"
+     "description": "Jazz club in Oxford Street, London",
+     "descriptionEn": "Jazz club in Oxford Street, London"
     },
     {
      "id": "node/11876483273",
@@ -4088,7 +4306,8 @@
      "address": "Elephant Road 4/5",
      "website": "https://www.corsicastudios.com/",
      "wikidataId": "Q115651239",
-     "description": "Venue for clubnights, live music and arts in Elephant and Castle, London, UK"
+     "description": "Venue for clubnights, live music and arts in Elephant and Castle, London, UK",
+     "descriptionEn": "Venue for clubnights, live music and arts in Elephant and Castle, London, UK"
     },
     {
      "id": "node/7904778383",
@@ -4101,12 +4320,16 @@
     {
      "id": "node/6772902785",
      "name": "Egg London Nightclub",
+     "labels": {
+      "en": "Egg London"
+     },
      "lat": 51.54183,
      "lon": -0.12479,
      "address": "York Way 200",
      "website": "https://www.egglondon.co.uk/",
      "wikidataId": "Q47508589",
-     "description": "nightclub in Kings Cross, North London"
+     "description": "nightclub in Kings Cross, North London",
+     "descriptionEn": "nightclub in Kings Cross, North London"
     },
     {
      "id": "node/14206898628",
@@ -4126,7 +4349,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Electric_Ballroom_entrance_2.jpg",
       "fullWidth": 1280
      },
-     "description": "Londra'da gece klübü"
+     "description": "Londra'da gece klübü",
+     "descriptionEn": "Performance venue in Camden Town, London, England"
     },
     {
      "id": "way/331438863",
@@ -4162,7 +4386,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Heaven_entrance.jpg",
       "fullWidth": 2118
      },
-     "description": "Londra'da gece klübü"
+     "description": "Londra'da gece klübü",
+     "descriptionEn": "superclub in London, United Kingdom"
     },
     {
      "id": "node/5683818786",
@@ -4190,7 +4415,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Koko_London.jpg",
       "fullWidth": 2751
      },
-     "description": "Londra'da sinema salonu"
+     "description": "Londra'da sinema salonu",
+     "descriptionEn": "Music venue and former theatre in London, England, UK"
     },
     {
      "id": "node/9697951364",
@@ -4226,17 +4452,22 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mahiki_Outside.jpg",
       "fullWidth": 4000
      },
-     "description": "Londra'da gece klübü"
+     "description": "Londra'da gece klübü",
+     "descriptionEn": "nightclub in London, England"
     },
     {
      "id": "node/14178896068",
      "name": "Milk and Honey",
+     "labels": {
+      "en": "Milk & Honey"
+     },
      "lat": 51.5137,
      "lon": -0.13654,
      "address": "Poland Street 61",
      "website": "https://www.mlkhny.com/",
      "wikidataId": "Q6857969",
-     "description": "London cocktail bar"
+     "description": "London cocktail bar",
+     "descriptionEn": "London cocktail bar"
     },
     {
      "id": "way/380605745",
@@ -4246,7 +4477,8 @@
      "address": "Gaunt Street 103",
      "website": "http://www.ministryofsound.com/",
      "wikidataId": "Q23087",
-     "description": "British record label"
+     "description": "British record label",
+     "descriptionEn": "British record label"
     },
     {
      "id": "node/5643033215",
@@ -4274,7 +4506,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:O2_Academy_Islington.jpg",
       "fullWidth": 4032
      },
-     "description": "Londra'da sinema salonu"
+     "description": "Londra'da sinema salonu",
+     "descriptionEn": "music venue in London, England"
     }
    ]
   }

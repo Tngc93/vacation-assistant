@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "ROM",
  "fetchedAt": "2026-10-23T12:02:37.446Z",
  "radiusKm": 3,
@@ -46,6 +46,9 @@
      "id": "wikidata/Q237",
      "name": "Vatikan",
      "localName": "Vatican City",
+     "labels": {
+      "en": "Vatican City"
+     },
      "lat": 41.904,
      "lon": 12.453,
      "wikipediaCount": 275,
@@ -69,12 +72,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:0_Basilique_Saint-Pierre_-_Rome_(1).JPG",
       "fullWidth": 3833
      },
-     "description": "İtalya'nın Roma kentiyle çevrili bir şehir devleti"
+     "description": "İtalya'nın Roma kentiyle çevrili bir şehir devleti",
+     "descriptionEn": "Holy See's independent state, an enclave within Rome, Italy"
     },
     {
      "id": "relation/1834818",
      "name": "Kolezyum",
      "localName": "Colosseo",
+     "labels": {
+      "en": "Colosseum"
+     },
      "lat": 41.89026,
      "lon": 12.49237,
      "address": "Piazza del Colosseo",
@@ -102,11 +109,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
       "fullWidth": 12051
      },
-     "description": "İtalya'da tiyatro"
+     "description": "İtalya'da tiyatro",
+     "descriptionEn": "ancient Roman amphitheatre, a landmark of Rome, Italy"
     },
     {
      "id": "way/244159210",
      "name": "Basilica di San Pietro",
+     "labels": {
+      "en": "St. Peter's Basilica"
+     },
      "lat": 41.90216,
      "lon": 12.45371,
      "address": "Piazza San Pietro",
@@ -130,11 +141,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
       "fullWidth": 13066
      },
-     "description": "Roma'da bazilika"
+     "description": "Roma'da bazilika",
+     "descriptionEn": "church in Vatican City"
     },
     {
      "id": "way/215289671",
      "name": "Cappella Sistina",
+     "labels": {
+      "en": "Sistine Chapel"
+     },
      "lat": 41.90293,
      "lon": 12.4544,
      "openingHours": "Mo-Sa 09:00-18:00",
@@ -154,7 +169,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sistina-interno.jpg",
       "fullWidth": 782
      },
-     "description": "Roma'da şapel"
+     "description": "Roma'da şapel",
+     "descriptionEn": "chapel in the Apostolic Palace, Vatican City"
     },
     {
      "id": "relation/3374342",
@@ -183,7 +199,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Right_side_and_front.jpg",
       "fullWidth": 7512
      },
-     "description": "Roma'da bir tapınak"
+     "description": "Roma'da bir tapınak",
+     "descriptionEn": "ancient Roman temple in Rome, Italy"
     },
     {
      "id": "wikidata/Q159884",
@@ -205,11 +222,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Stadio_Olimpico_2024.jpg",
       "fullWidth": 3384
      },
-     "description": "İtalya'nın Roma şehrinde bulunan bir stat"
+     "description": "İtalya'nın Roma şehrinde bulunan bir stat",
+     "descriptionEn": "sports venue in Rome, Italy"
     },
     {
      "id": "relation/1841080",
      "name": "Forum Romanum",
+     "labels": {
+      "en": "Roman Forum"
+     },
      "lat": 41.89168,
      "lon": 12.48708,
      "wikipediaCount": 68,
@@ -230,11 +251,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Foro_Romano_Musei_Capitolini_Roma.jpg",
       "fullWidth": 17000
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "Ancient Roman center of the city, a landmark of Rome, Italy"
     },
     {
      "id": "relation/13448560",
      "name": "Fontana di Trevi",
+     "labels": {
+      "en": "Trevi Fountain"
+     },
      "lat": 41.90096,
      "lon": 12.48328,
      "wikipediaCount": 66,
@@ -252,11 +277,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Trevi_Fountain_-_Roma.jpg",
       "fullWidth": 8734
      },
-     "description": "Roma'da çeşme"
+     "description": "Roma'da çeşme",
+     "descriptionEn": "Baroque fountain in Rome, Italy"
     },
     {
      "id": "relation/10044166",
      "name": "Piazza San Pietro",
+     "labels": {
+      "en": "Saint Peter's Square"
+     },
      "lat": 41.90223,
      "lon": 12.45736,
      "wikipediaCount": 63,
@@ -275,11 +304,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Peter%27s_Square,_Vatican_City_-_April_2007.jpg",
       "fullWidth": 4200
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "piazza in Vatican City"
     },
     {
      "id": "relation/36444",
      "name": "Basilica di San Giovanni in Laterano",
+     "labels": {
+      "en": "Archbasilica of St. John Lateran"
+     },
      "lat": 41.88576,
      "lon": 12.50559,
      "address": "Piazza di San Giovanni in Laterano",
@@ -303,11 +336,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giovanni_in_Laterano_2021.jpg",
       "fullWidth": 8874
      },
-     "description": "Roma'da bazilika"
+     "description": "Roma'da bazilika",
+     "descriptionEn": "cathedral in Rome, Italy"
     },
     {
      "id": "node/365475871",
      "name": "Colle Palatino",
+     "labels": {
+      "en": "Palatine Hill"
+     },
      "lat": 41.88931,
      "lon": 12.48711,
      "openingHours": "Jan 02-Feb 15,Oct 28-Dec 31 08:30-16:30; Jan 16-Mar 15 08:30-17:00; Mar 16-24 08:30-17:30; Mar 25-Aug 31 08:30-19:15; Sep 01-30 08:30-19:00",
@@ -328,11 +365,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palatine_Hill.Pavement.jpg",
       "fullWidth": 2736
      },
-     "description": "Roma'nın yedi tepesinden en merkezde olanı ve Roma kentinin tarihî kalıntılar açısından en zengin bölgesi"
+     "description": "Roma'nın yedi tepesinden en merkezde olanı ve Roma kentinin tarihî kalıntılar açısından en zengin bölgesi",
+     "descriptionEn": "centremost of the seven hills of Rome, Italy"
     },
     {
      "id": "relation/49690",
      "name": "Palatium Apostolicum",
+     "labels": {
+      "en": "Apostolic Palace"
+     },
      "lat": 41.90325,
      "lon": 12.45531,
      "wikipediaCount": 59,
@@ -354,12 +395,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:2018-03-18_Apostolischer_Palast.jpg",
       "fullWidth": 5472
      },
-     "description": "official residence of the Pope in Vatican City"
+     "description": "official residence of the Pope in Vatican City",
+     "descriptionEn": "official residence of the Pope in Vatican City"
     },
     {
      "id": "way/8035487",
      "name": "Sant'Angelo Kalesi",
      "localName": "Castel Sant’Angelo",
+     "labels": {
+      "en": "Castel Sant'Angelo"
+     },
      "lat": 41.90308,
      "lon": 12.46633,
      "openingHours": "Mo-Su 09:00-19:30",
@@ -384,12 +429,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Castel_Sant%27Angelo_at_Night.jpg",
       "fullWidth": 4301
      },
-     "description": "castle and museum in Rome, formerly the imperial mausoleum of the emperor Hadrian and subsequent Roman emperors"
+     "description": "castle and museum in Rome, formerly the imperial mausoleum of the emperor Hadrian and subsequent Roman emperors",
+     "descriptionEn": "castle and museum in Rome, formerly the imperial mausoleum of the emperor Hadrian and subsequent Roman emperors"
     },
     {
      "id": "wikidata/Q231699",
      "name": "San Paolo fuori le mura Bazilikası",
      "localName": "Basilica of Saint Paul outside the Walls",
+     "labels": {
+      "en": "Basilica of Saint Paul outside the Walls"
+     },
      "lat": 41.85861,
      "lon": 12.47722,
      "wikipediaCount": 55,
@@ -410,12 +459,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:StPaul.jpg",
       "fullWidth": 8272
      },
-     "description": "Roma'da bazilika"
+     "description": "Roma'da bazilika",
+     "descriptionEn": "church in Rome, Italy"
     },
     {
      "id": "way/131564482",
      "name": "Santa Maria Maggiore Bazilikası",
      "localName": "Basilica di Santa Maria Maggiore",
+     "labels": {
+      "en": "Basilica di Santa Maria Maggiore"
+     },
      "lat": 41.89761,
      "lon": 12.49846,
      "address": "Piazza di Santa Maria Maggiore",
@@ -439,11 +492,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
       "fullWidth": 6906
      },
-     "description": "Roma'da bazilika"
+     "description": "Roma'da bazilika",
+     "descriptionEn": "largest Catholic Marian church in Rome"
     },
     {
      "id": "relation/3376015",
      "name": "Colonna di Traiano",
+     "labels": {
+      "en": "Trajan's Column"
+     },
      "lat": 41.89581,
      "lon": 12.48427,
      "wikipediaCount": 54,
@@ -463,12 +520,16 @@
       "fullWidth": 5695
      },
      "description": "ancient Roman victory column, a landmark of Rome, Italy",
+     "descriptionEn": "ancient Roman victory column, a landmark of Rome, Italy",
      "parentId": "Q211295",
      "parentName": "Foro di Traiano"
     },
     {
      "id": "relation/2707110",
      "name": "Palazzo del Quirinale",
+     "labels": {
+      "en": "Quirinal Palace"
+     },
      "lat": 41.90066,
      "lon": 12.48761,
      "address": "Piazza del Quirinale",
@@ -491,11 +552,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Quirinale_palazzo_e_obelisco_con_dioscuri_Roma.jpg",
       "fullWidth": 6965
      },
-     "description": "historic building in Rome, Italy; official residence of the President of the Italian Republic"
+     "description": "historic building in Rome, Italy; official residence of the President of the Italian Republic",
+     "descriptionEn": "historic building in Rome, Italy; official residence of the President of the Italian Republic"
     },
     {
      "id": "relation/11384819",
      "name": "Circo Massimo",
+     "labels": {
+      "en": "Circus Maximus"
+     },
      "lat": 41.886,
      "lon": 12.4857,
      "wikipediaCount": 51,
@@ -514,11 +579,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Circus_Maximus_2025.jpg",
       "fullWidth": 8981
      },
-     "description": "Ancient Roman circus in Rome"
+     "description": "Ancient Roman circus in Rome",
+     "descriptionEn": "Ancient Roman circus in Rome"
     },
     {
      "id": "way/23590989",
      "name": "Arco di Costantino",
+     "labels": {
+      "en": "Arch of Constantine"
+     },
      "lat": 41.88976,
      "lon": 12.49067,
      "wikipediaCount": 47,
@@ -537,12 +606,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Arch_of_Constantine_(Rome)_-_South_side,_from_Via_triumphalis.jpg",
       "fullWidth": 6272
      },
-     "description": "triumphal arch in Rome"
+     "description": "triumphal arch in Rome",
+     "descriptionEn": "triumphal arch in Rome"
     },
     {
      "id": "wikidata/Q625149",
      "name": "Aurelianus Surları",
      "localName": "Aurelian Walls",
+     "labels": {
+      "en": "Aurelian Walls"
+     },
      "lat": 41.87329,
      "lon": 12.49896,
      "wikipediaCount": 46,
@@ -562,7 +635,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Celio_-_le_mura_tra_porta_san_Sebastiano_e_porta_Ardeatina_1974.JPG",
       "fullWidth": 2272
      },
-     "description": "historic line of walls built around the city of Rome, Italy"
+     "description": "historic line of walls built around the city of Rome, Italy",
+     "descriptionEn": "historic line of walls built around the city of Rome, Italy"
     },
     {
      "id": "way/4247138",
@@ -584,11 +658,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Servizio_fotografico_(Roma,_1966)_-_BEIC_6329173.jpg",
       "fullWidth": 816
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "public square in Rome, Italy"
     },
     {
      "id": "relation/1754380",
      "name": "Foro di Traiano",
+     "labels": {
+      "en": "Trajan's Forum"
+     },
      "lat": 41.89516,
      "lon": 12.48517,
      "website": "https://www.mercatiditraiano.it/",
@@ -610,7 +688,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:IT-Rom-kaiserforen.jpg",
       "fullWidth": 1215
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "Trajan's Forum was the last of the Imperial fora to be constructed in ancient Rome. The architect Apollodorus of Damascus oversaw its construction. monumental square in Rome"
     },
     {
      "id": "relation/1849830",
@@ -634,11 +713,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Altare_della_Patria_(Roma).jpg",
       "fullWidth": 8314
      },
-     "description": "monument built in honour of Victor Emmanuel II of Italy"
+     "description": "monument built in honour of Victor Emmanuel II of Italy",
+     "descriptionEn": "monument built in honour of Victor Emmanuel II of Italy"
     },
     {
      "id": "way/23913953",
      "name": "Arco di Tito",
+     "labels": {
+      "en": "Arch of Titus"
+     },
      "lat": 41.89067,
      "lon": 12.48858,
      "wikipediaCount": 42,
@@ -657,12 +740,16 @@
       "fullWidth": 3315
      },
      "description": "triumphal arch in Rome (constructed c. 81 AD)",
+     "descriptionEn": "triumphal arch in Rome (constructed c. 81 AD)",
      "parentId": "Q180212",
      "parentName": "Roma Forumu"
     },
     {
      "id": "way/201882369",
      "name": "Basilica di San Pietro in Vincoli",
+     "labels": {
+      "en": "San Pietro in Vincoli"
+     },
      "lat": 41.89386,
      "lon": 12.49316,
      "address": "Piazza di San Pietro in Vincoli 4/a",
@@ -684,11 +771,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Pietro_in_Vincoli_-_Roma,_facciata.jpg",
       "fullWidth": 5226
      },
-     "description": "Roma'da bazilika"
+     "description": "Roma'da bazilika",
+     "descriptionEn": "church in Rome"
     },
     {
      "id": "relation/13476232",
      "name": "Terme di Caracalla",
+     "labels": {
+      "en": "Baths of Caracalla"
+     },
      "lat": 41.87891,
      "lon": 12.49239,
      "website": "https://www.coopculture.it/heritage.cfm?id=6",
@@ -711,11 +802,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Apodyterium_at_Baths_of_Caracalla.jpg",
       "fullWidth": 4420
      },
-     "description": "public baths in ancient Rome"
+     "description": "public baths in ancient Rome",
+     "descriptionEn": "public baths in ancient Rome"
     },
     {
      "id": "way/201291264",
      "name": "Ara Pacis Augustae",
+     "labels": {
+      "en": "Ara Pacis"
+     },
      "lat": 41.90615,
      "lon": 12.4755,
      "wikipediaCount": 39,
@@ -736,12 +831,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ara_Pacis_(SW).jpg",
       "fullWidth": 5417
      },
-     "description": "Roma'da bina"
+     "description": "Roma'da bina",
+     "descriptionEn": "ancient Roman monument in Rome"
     },
     {
      "id": "wikidata/Q719794",
      "name": "Gesù Kilisesi",
      "localName": "Church of the Gesù",
+     "labels": {
+      "en": "Church of the Gesù"
+     },
      "lat": 41.89583,
      "lon": 12.47972,
      "wikipediaCount": 39,
@@ -761,12 +860,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Jesus_Church.jpg",
       "fullWidth": 4485
      },
-     "description": "Roma'da kilise"
+     "description": "Roma'da kilise",
+     "descriptionEn": "church in Rome, Italy, and precursor of the Baroque style"
     },
     {
      "id": "wikidata/Q467025",
      "name": "Gregoriana Papalık Üniversitesi",
      "localName": "Pontifical Gregorian University",
+     "labels": {
+      "en": "Pontifical Gregorian University"
+     },
      "lat": 41.89889,
      "lon": 12.48472,
      "wikipediaCount": 39,
@@ -786,12 +889,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:832RomaUnivGregoriana.JPG",
       "fullWidth": 800
      },
-     "description": "Roma'da üniversite"
+     "description": "Roma'da üniversite",
+     "descriptionEn": "pontifical university located in Rome, Italy"
     },
     {
      "id": "way/134400816",
      "name": "Ispanyol merdivenleri",
      "localName": "Scalinata della Trinità dei Monti",
+     "labels": {
+      "en": "Spanish Steps"
+     },
      "lat": 41.90607,
      "lon": 12.48281,
      "wikipediaCount": 39,
@@ -806,11 +913,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scalinata_della_Trinit%C3%A0_dei_Monti.jpg",
       "fullWidth": 4833
      },
-     "description": "stairs in Rome, Italy"
+     "description": "stairs in Rome, Italy",
+     "descriptionEn": "stairs in Rome, Italy"
     },
     {
      "id": "relation/2752093",
      "name": "Palazzo Lateranense",
+     "labels": {
+      "en": "Lateran Palace"
+     },
      "lat": 41.88656,
      "lon": 12.50574,
      "website": "https://www.palazzolateranense.com/",
@@ -830,12 +941,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Western_facade_Palazzo_del_Laterano_2006-09-07.jpg",
       "fullWidth": 2700
      },
-     "description": "ancient palace in Rome"
+     "description": "ancient palace in Rome",
+     "descriptionEn": "ancient palace in Rome"
     },
     {
      "id": "wikidata/Q770847",
      "name": "Augustus Anıt Mezarı",
      "localName": "Mausoleum of Augustus",
+     "labels": {
+      "en": "Mausoleum of Augustus"
+     },
      "lat": 41.90611,
      "lon": 12.47639,
      "wikipediaCount": 38,
@@ -854,7 +969,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Photographs_of_the_Mausoleum_of_Augustus_14_(cropped).jpg",
       "fullWidth": 3176
      },
-     "description": "Roma'da Augustus'a ait mezar kalıntıları"
+     "description": "Roma'da Augustus'a ait mezar kalıntıları",
+     "descriptionEn": "building in Campo Marzio, Italy"
     },
     {
      "id": "relation/13474926",
@@ -876,12 +992,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scalinata_della_Trinit%C3%A0_dei_Monti.jpg",
       "fullWidth": 4833
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "square in Rome, Italy"
     },
     {
      "id": "wikidata/Q824997",
      "name": "Popolo Meydanı",
      "localName": "piazza del Popolo",
+     "labels": {
+      "en": "piazza del Popolo"
+     },
      "lat": 41.91071,
      "lon": 12.47632,
      "wikipediaCount": 38,
@@ -899,11 +1019,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:PIAZZA_DEL_POPOLO_VISTA_AEREA.jpg",
       "fullWidth": 4253
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "square in Rome, Italy"
     },
     {
      "id": "relation/1842062",
      "name": "Tempio di Vesta",
+     "labels": {
+      "en": "Temple of Vesta"
+     },
      "lat": 41.89169,
      "lon": 12.4862,
      "wikipediaCount": 38,
@@ -923,12 +1047,16 @@
       "fullWidth": 795
      },
      "description": "Roma'da tapınak",
+     "descriptionEn": "ancient religious monument in Rome, Italy",
      "parentId": "Q180212",
      "parentName": "Roma Forumu"
     },
     {
      "id": "way/49824161",
      "name": "Arco di Settimio Severo",
+     "labels": {
+      "en": "Arch of Septimius Severus (Roman Forum)"
+     },
      "lat": 41.89283,
      "lon": 12.48474,
      "wikipediaCount": 37,
@@ -948,12 +1076,16 @@
       "fullWidth": 1594
      },
      "description": "Roma Forumu'nun kuzeydoğusundaki, 194/195 ve 197-199 yıllarında Partlara karşı kazanılmış zaferi simgeleyen kemer",
+     "descriptionEn": "Celebratory monument/triumphal arch in the Roman Forum",
      "parentId": "Q180212",
      "parentName": "Roma Forumu"
     },
     {
      "id": "way/201735339",
      "name": "Colonna di Marco Aurelio",
+     "labels": {
+      "en": "Column of Marcus Aurelius"
+     },
      "lat": 41.90085,
      "lon": 12.47999,
      "wikipediaCount": 37,
@@ -971,11 +1103,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Colonna_di_Marco_aurelio_-_Frontale.jpg",
       "fullWidth": 3799
      },
-     "description": "Roman victory column (completed 193)"
+     "description": "Roman victory column (completed 193)",
+     "descriptionEn": "Roman victory column (completed 193)"
     },
     {
      "id": "way/105281826",
      "name": "Mura Serviane",
+     "labels": {
+      "en": "Servian Wall"
+     },
      "lat": 41.89793,
      "lon": 12.50228,
      "wikipediaCount": 37,
@@ -994,12 +1130,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ripa_-_le_mura_a_via_di_sant_anselmo_051211-06.JPG",
       "fullWidth": 2272
      },
-     "description": "sur"
+     "description": "sur",
+     "descriptionEn": "defensive barrier around the ancient city of Rome"
     },
     {
      "id": "wikidata/Q874832",
      "name": "Venezia Meydanı",
      "localName": "piazza Venezia",
+     "labels": {
+      "en": "piazza Venezia"
+     },
      "lat": 41.89639,
      "lon": 12.4825,
      "wikipediaCount": 37,
@@ -1017,7 +1157,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_Venezia_a_Roma.jpg",
       "fullWidth": 2560
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "square in Rome, Italy"
     },
     {
      "id": "relation/22289",
@@ -1040,7 +1181,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Farnese.jpg",
       "fullWidth": 3263
      },
-     "description": "Roma'da saray"
+     "description": "Roma'da saray",
+     "descriptionEn": "palazzo in Rome, Italy"
     },
     {
      "id": "way/134399943",
@@ -1064,7 +1206,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma_-_Ponte_s._Angelo.jpg",
       "fullWidth": 4608
      },
-     "description": "Roma'da köprü"
+     "description": "Roma'da köprü",
+     "descriptionEn": "bridge in Rome"
     },
     {
      "id": "node/13119048948",
@@ -1092,12 +1235,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Domus_Aurea_NEUTRA.png",
       "fullWidth": 2601
      },
-     "description": "domus, palace of Roman emperor Nero, \"Golden house\""
+     "description": "domus, palace of Roman emperor Nero, \"Golden house\"",
+     "descriptionEn": "domus, palace of Roman emperor Nero, \"Golden house\""
     },
     {
      "id": "wikidata/Q28303",
      "name": "Campo de' Fiori Meydanı",
      "localName": "Campo de' Fiori",
+     "labels": {
+      "en": "Campo de' Fiori"
+     },
      "lat": 41.89566,
      "lon": 12.47205,
      "wikipediaCount": 35,
@@ -1115,7 +1262,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Il_Valle_delle_Rose_....JPG",
       "fullWidth": 4608
      },
-     "description": "Roma'da meydan"
+     "description": "Roma'da meydan",
+     "descriptionEn": "square in Rome, Italy"
     }
    ]
   },
@@ -1126,6 +1274,9 @@
     {
      "id": "way/112137587",
      "name": "Musei Vaticani",
+     "labels": {
+      "en": "Vatican Museums"
+     },
      "lat": 41.90627,
      "lon": 12.45274,
      "website": "https://www.museivaticani.va/",
@@ -1147,7 +1298,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Mura_vaticane_-_ingresso_ai_Musei_00410.JPG",
       "fullWidth": 1536
      },
-     "description": "museums of the Vatican City"
+     "description": "museums of the Vatican City",
+     "descriptionEn": "museums of the Vatican City"
     },
     {
      "id": "node/1440405490",
@@ -1174,11 +1326,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma_Museo_Borghese.jpg",
       "fullWidth": 2304
      },
-     "description": "Roma'da müze"
+     "description": "Roma'da müze",
+     "descriptionEn": "art museum in Rome, Italy"
     },
     {
      "id": "relation/9909127",
      "name": "Musei Capitolini",
+     "labels": {
+      "en": "Capitoline Museums"
+     },
      "lat": 41.89289,
      "lon": 12.48276,
      "website": "https://www.museicapitolini.org/",
@@ -1200,11 +1356,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_dei_Conservatori_in_Rome_(2).jpg",
       "fullWidth": 5617
      },
-     "description": "Arkeoloji, Sanat Müzesi, Roma'da tarihi bir alan, İtalya"
+     "description": "Arkeoloji, Sanat Müzesi, Roma'da tarihi bir alan, İtalya",
+     "descriptionEn": "municipal museum of the city of Rome, Italy"
     },
     {
      "id": "node/10774102107",
      "name": "Stanze di Raffaello",
+     "labels": {
+      "en": "Raphael Rooms"
+     },
      "lat": 41.9033,
      "lon": 12.45454,
      "wikipediaCount": 34,
@@ -1223,6 +1383,7 @@
       "fullWidth": 1200
      },
      "description": "suite of reception rooms in the Palace of the Vatican painted by Raphael and his workshop between 1509 and 1524",
+     "descriptionEn": "suite of reception rooms in the Palace of the Vatican painted by Raphael and his workshop between 1509 and 1524",
      "parentId": "Q182955",
      "parentName": "Vatikan Müzeleri"
     },
@@ -1230,6 +1391,9 @@
      "id": "wikidata/Q1135392",
      "name": "Ulusal Roma Müzesi",
      "localName": "Museo Nazionale Romano",
+     "labels": {
+      "en": "Museo Nazionale Romano"
+     },
      "lat": 41.90343,
      "lon": 12.49902,
      "wikipediaCount": 34,
@@ -1248,7 +1412,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Therme-vum-Diokletian.jpg",
       "fullWidth": 800
      },
-     "description": "Roma'daki bir müze"
+     "description": "Roma'daki bir müze",
+     "descriptionEn": "museum in Italy"
     },
     {
      "id": "node/2122709063",
@@ -1275,11 +1440,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_corsini_alla_lungara,_facciata_lato_giardino_01.JPG",
       "fullWidth": 3052
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "art museum in Rome, Italy"
     },
     {
      "id": "relation/2980622",
      "name": "Galleria Nazionale d'Arte Moderna e Contemporanea",
+     "labels": {
+      "en": "Galleria Nazionale d'Arte Moderna e Contemporanea di Roma"
+     },
      "lat": 41.91724,
      "lon": 12.48232,
      "address": "Viale delle Belle Arti 131",
@@ -1303,11 +1472,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Galleria_nazionale_d%27arte_moderna_-_Rome,_Italy_-_DSC05142.jpg",
       "fullWidth": 5419
      },
-     "description": "Roma'da müze"
+     "description": "Roma'da müze",
+     "descriptionEn": "National Museum in Rome, Italy"
     },
     {
      "id": "node/706793341",
      "name": "Palazzo Doria Pamphilj",
+     "labels": {
+      "en": "Galleria Doria Pamphilj"
+     },
      "lat": 41.89782,
      "lon": 12.48156,
      "address": "Via del Corso 305",
@@ -1330,11 +1503,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma-palazzodoriapamphili.jpg",
       "fullWidth": 2272
      },
-     "description": "Roma'da müze"
+     "description": "Roma'da müze",
+     "descriptionEn": "art museum in Rome"
     },
     {
      "id": "relation/1849827",
      "name": "Carcere Mamertino",
+     "labels": {
+      "en": "Mamertine Prison"
+     },
      "lat": 41.89314,
      "lon": 12.48458,
      "openingHours": "09:00-17:00",
@@ -1356,6 +1533,7 @@
       "fullWidth": 5306
      },
      "description": "prison",
+     "descriptionEn": "prison",
      "parentId": "Q180212",
      "parentName": "Roma Forumu"
     },
@@ -1386,11 +1564,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Acc.San_Luca_Rop.jpg",
       "fullWidth": 2587
      },
-     "description": "Italian association of artists in Rome"
+     "description": "Italian association of artists in Rome",
+     "descriptionEn": "Italian association of artists in Rome"
     },
     {
      "id": "node/11204178550",
      "name": "Museo del Tesoro Lateranense",
+     "labels": {
+      "en": "Lateran"
+     },
      "lat": 41.88599,
      "lon": 12.50494,
      "website": "https://www.basilicasangiovanni.va/it/san-giovanni-in-laterano/basilica/il-museo.html",
@@ -1409,12 +1591,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Archbasilica_of_St._John_Lateran_HD.jpg",
       "fullWidth": 7507
      },
-     "description": "building complex in Rome"
+     "description": "building complex in Rome",
+     "descriptionEn": "building complex in Rome"
     },
     {
      "id": "node/13460785710",
      "name": "Villa Giulia Ulusal Etrüsk Müzesi",
      "localName": "Museo Nazionale Etrusco di Villa Giulia",
+     "labels": {
+      "en": "Museo Nazionale Etrusco di Villa Giulia"
+     },
      "lat": 41.91823,
      "lon": 12.4781,
      "address": "Piazzale di Villa Giulia 9",
@@ -1437,11 +1623,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Giulia_modified.jpg",
       "fullWidth": 2848
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "archaeological museum in Rome"
     },
     {
      "id": "node/4891858022",
      "name": "Accademia di Francia a Roma",
+     "labels": {
+      "en": "French Academy in Rome"
+     },
      "lat": 41.90827,
      "lon": 12.48272,
      "website": "https://www.villamedici.it/",
@@ -1461,11 +1651,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Villa_Medici_-_fronte.jpg",
       "fullWidth": 6409
      },
-     "description": "art school in Rome, Italy"
+     "description": "art school in Rome, Italy",
+     "descriptionEn": "art school in Rome, Italy"
     },
     {
      "id": "node/1649776329",
      "name": "Galleria Colonna",
+     "labels": {
+      "en": "Palazzo Colonna"
+     },
      "lat": 41.89745,
      "lon": 12.48484,
      "address": "Via della Pilotta 17",
@@ -1488,11 +1682,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Trevi_-_palazzo_colonna_e_basilica_santi_apostoli_01.JPG",
       "fullWidth": 2002
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "palace in Rome, Italy"
     },
     {
      "id": "node/2296913458",
      "name": "Stadio di Domiziano",
+     "labels": {
+      "en": "Stadium of Domitian"
+     },
      "lat": 41.9002,
      "lon": 12.47256,
      "address": "Via di Tor Sanguigna 3",
@@ -1514,7 +1712,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_navona_-_stadio_di_Domiziano_2152-7st.JPG",
       "fullWidth": 1644
      },
-     "description": "ancient Roman circus"
+     "description": "ancient Roman circus",
+     "descriptionEn": "ancient Roman circus"
     },
     {
      "id": "node/3612947728",
@@ -1536,7 +1735,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giovanni_(line_C_platform).jpg",
       "fullWidth": 1024
      },
-     "description": "Rome Metro station"
+     "description": "Rome Metro station",
+     "descriptionEn": "Rome Metro station"
     },
     {
      "id": "wikidata/Q498557",
@@ -1561,12 +1761,16 @@
       "fullWidth": 2592
      },
      "description": "suite of rooms in the Apostolic Palace in Vatican City",
+     "descriptionEn": "suite of rooms in the Apostolic Palace in Vatican City",
      "parentId": "Q145093",
      "parentName": "Apostolik Sarayı"
     },
     {
      "id": "way/132581385",
      "name": "Casa di Augusto",
+     "labels": {
+      "en": "House of Augustus"
+     },
      "lat": 41.88857,
      "lon": 12.48533,
      "wikipediaCount": 16,
@@ -1586,12 +1790,16 @@
       "fullWidth": 800
      },
      "description": "domus",
+     "descriptionEn": "domus",
      "parentId": "Q200642",
      "parentName": "Palatino Tepesi"
     },
     {
      "id": "relation/1391821",
      "name": "MACRO - Museo d'Arte Contemporanea di Roma",
+     "labels": {
+      "en": "Museum of Contemporary Art of Rome"
+     },
      "lat": 41.91314,
      "lon": 12.50291,
      "address": "Via Nizza 138",
@@ -1614,7 +1822,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Macro_Rome2.jpg",
       "fullWidth": 2048
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "museum in Italy"
     },
     {
      "id": "way/51930840",
@@ -1639,7 +1848,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_delle_Esposizioni_(2034877959).jpg",
       "fullWidth": 1024
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "museum in Italy"
     },
     {
      "id": "node/656532697",
@@ -1666,7 +1876,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Galleria_spada,_sala_3,_01.jpg",
       "fullWidth": 3456
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "museum in Rome, Italy"
     },
     {
      "id": "way/35027800",
@@ -1692,6 +1903,7 @@
       "fullWidth": 2612
      },
      "description": "branch of the Vatican Museums",
+     "descriptionEn": "branch of the Vatican Museums",
      "parentId": "Q182955",
      "parentName": "Vatikan Müzeleri"
     },
@@ -1718,12 +1930,16 @@
       "fullWidth": 3570
      },
      "description": "branch of the Vatican Museums",
+     "descriptionEn": "branch of the Vatican Museums",
      "parentId": "Q182955",
      "parentName": "Vatikan Müzeleri"
     },
     {
      "id": "node/10074889581",
      "name": "Museo di scultura antica Giovanni Barracco",
+     "labels": {
+      "en": "Museo di Scultura Antica Giovanni Barracco"
+     },
      "lat": 41.8968,
      "lon": 12.47259,
      "website": "https://www.museobarracco.it/",
@@ -1745,11 +1961,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzetto_Le_Roy_Rome.jpg",
       "fullWidth": 2200
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "art museum, historic site in Rome, Italy"
     },
     {
      "id": "node/10774102205",
      "name": "Galleria delle Carte Geografiche",
+     "labels": {
+      "en": "Gallery of Maps"
+     },
      "lat": 41.90451,
      "lon": 12.45421,
      "wikipediaCount": 10,
@@ -1768,11 +1988,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museos_Vaticanos,_Ciudad_del_Vaticano,_2022-09-14,_DD_56-58_HDR.jpg",
       "fullWidth": 3970
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "map-filled art museum in the Vatican"
     },
     {
      "id": "node/6718428617",
      "name": "Museo Pio Clementino",
+     "labels": {
+      "en": "Pio-Clementino museum"
+     },
      "lat": 41.90655,
      "lon": 12.45458,
      "wikipediaCount": 9,
@@ -1792,12 +2016,16 @@
       "fullWidth": 1600
      },
      "description": "branch of the Vatican Museums",
+     "descriptionEn": "branch of the Vatican Museums",
      "parentId": "Q182955",
      "parentName": "Vatikan Müzeleri"
     },
     {
      "id": "relation/13475193",
      "name": "Polo museale ATAC Porta San Paolo",
+     "labels": {
+      "en": "Porta San Paolo Railway Museum"
+     },
      "lat": 41.87504,
      "lon": 12.48117,
      "address": "Via Bartolomeo Bossi 7",
@@ -1819,11 +2047,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Roma,_Museo_p.ta_San_Paolo_VL01.JPG",
       "fullWidth": 2432
      },
-     "description": "Roma'da bir demiryolu müzesi"
+     "description": "Roma'da bir demiryolu müzesi",
+     "descriptionEn": "Italian Railway Museum"
     },
     {
      "id": "node/4470099910",
      "name": "Museo Ebraico di Roma",
+     "labels": {
+      "en": "Jewish Museum of Rome"
+     },
      "lat": 41.89196,
      "lon": 12.47799,
      "address": "Largo Stefano Gaj Tachè",
@@ -1845,11 +2077,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Great_Synagogue_of_Rome.jpg",
       "fullWidth": 3187
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "Jewish museum in Via Catalana"
     },
     {
      "id": "relation/1857985",
      "name": "Museo Palatino",
+     "labels": {
+      "en": "Palatine Museum"
+     },
      "lat": 41.88829,
      "lon": 12.48661,
      "openingHours": "08:30-(sunset-01:00)",
@@ -1871,12 +2107,16 @@
       "fullWidth": 1200
      },
      "description": "museum in Rome, Italy",
+     "descriptionEn": "museum in Rome, Italy",
      "parentId": "Q200642",
      "parentName": "Palatino Tepesi"
     },
     {
      "id": "node/2408805739",
      "name": "Museo Storico della Liberazione",
+     "labels": {
+      "en": "Museum of the Liberation of Rome"
+     },
      "lat": 41.88872,
      "lon": 12.50635,
      "address": "Via Tasso 145",
@@ -1898,11 +2138,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museo_di_Via_Tasso_-_first_floor_hall.jpg",
       "fullWidth": 2272
      },
-     "description": "Roman museum"
+     "description": "Roman museum",
+     "descriptionEn": "Roman museum"
     },
     {
      "id": "node/3456447054",
      "name": "Museo Boncompagni Ludovisi per le arti decorative",
+     "labels": {
+      "en": "Boncompagni Ludovisi Decorative Art Museum"
+     },
      "lat": 41.90867,
      "lon": 12.49515,
      "address": "Via Boncompagni 18",
@@ -1925,7 +2169,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sallustiano_-_v_Boncompagni_villino_Boncompagni_Ludovisi_e_Museo_1280048.JPG",
       "fullWidth": 2816
      },
-     "description": "Roma'da müze"
+     "description": "Roma'da müze",
+     "descriptionEn": "museum of 19th and 20th century art in Rome"
     },
     {
      "id": "node/656829698",
@@ -1953,11 +2198,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Braschi_-_Rome_(IT62)_-_2021-08-29_-_3.jpg",
       "fullWidth": 3805
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "museum in Rome"
     },
     {
      "id": "node/4376017562",
      "name": "Museo Nazionale del Palazzo di Venezia",
+     "labels": {
+      "en": "Museo di Palazzo Venezia"
+     },
      "lat": 41.89637,
      "lon": 12.48153,
      "address": "Piazza Venezia 1",
@@ -1980,7 +2229,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Venezia_(Rome)_-_Exterior.jpg",
       "fullWidth": 8388
      },
-     "description": "Roma'da sanat müzesi"
+     "description": "Roma'da sanat müzesi",
+     "descriptionEn": "museum in Rome, Italy"
     },
     {
      "id": "node/2244843070",
@@ -2006,7 +2256,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_di_goethe_fassade.JPG",
       "fullWidth": 4176
      },
-     "description": "museum in Rome"
+     "description": "museum in Rome",
+     "descriptionEn": "museum in Rome"
     },
     {
      "id": "way/202110420",
@@ -2031,11 +2282,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Keats-Shelley_House.jpg",
       "fullWidth": 1019
      },
-     "description": "Italian museum about John Keats and Percy Bysshe Shelley"
+     "description": "Italian museum about John Keats and Percy Bysshe Shelley",
+     "descriptionEn": "Italian museum about John Keats and Percy Bysshe Shelley"
     },
     {
      "id": "node/4292016589",
      "name": "Real Academia de España",
+     "labels": {
+      "en": "Real Academia de España en Roma"
+     },
      "lat": 41.8889,
      "lon": 12.46661,
      "address": "Piazza di San Pietro in Montorio 3",
@@ -2056,7 +2311,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:%22Real_Academia_de_Espa%C3%B1a_en_Roma%22._Italia.jpg",
       "fullWidth": 5806
      },
-     "description": "organization"
+     "description": "organization",
+     "descriptionEn": "organization"
     },
     {
      "id": "way/130039228",
@@ -2083,11 +2339,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_mus%C3%A9e_de_la_centrale_Montemartini_(Rome)_(34321364485).jpg",
       "fullWidth": 1525
      },
-     "description": "museum in Italy"
+     "description": "museum in Italy",
+     "descriptionEn": "museum in Italy"
     },
     {
      "id": "way/201293294",
      "name": "Museo dell'Ara Pacis",
+     "labels": {
+      "en": "Museum of the Ara Pacis"
+     },
      "lat": 41.9061,
      "lon": 12.47547,
      "address": "Lungotevere in Augusta",
@@ -2100,11 +2360,15 @@
       "museum",
       "organization"
      ],
-     "description": "Roma'da arkeoloji müzesi"
+     "description": "Roma'da arkeoloji müzesi",
+     "descriptionEn": "archeological museum in Rome, Italy"
     },
     {
      "id": "node/6718428616",
      "name": "Museo Gregoriano Etrusco",
+     "labels": {
+      "en": "Gregorian Etruscan Museum"
+     },
      "lat": 41.90663,
      "lon": 12.45484,
      "openingHours": "Mo-Sa 09:00-18:00",
@@ -2125,6 +2389,7 @@
       "fullWidth": 1200
      },
      "description": "branch of the Vatican Museums",
+     "descriptionEn": "branch of the Vatican Museums",
      "parentId": "Q182955",
      "parentName": "Vatikan Müzeleri"
     },
@@ -2150,6 +2415,7 @@
       "fullWidth": 1500
      },
      "description": "Roma'da müze",
+     "descriptionEn": "branch of the Vatican Museums",
      "parentId": "Q182955",
      "parentName": "Vatikan Müzeleri"
     }
@@ -2162,6 +2428,9 @@
     {
      "id": "node/4978038129",
      "name": "Punto panoramico di Ponte Umberto I",
+     "labels": {
+      "en": "Ponte Umberto I"
+     },
      "lat": 41.90235,
      "lon": 12.47141,
      "wikipediaCount": 13,
@@ -2180,11 +2449,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_Umberto_a_Roma_102_2054.jpg",
       "fullWidth": 778
      },
-     "description": "Roma'da köprü"
+     "description": "Roma'da köprü",
+     "descriptionEn": "bridge in Rome (Italy)"
     },
     {
      "id": "node/5108555139",
      "name": "Cupola di San Pietro",
+     "labels": {
+      "en": "St. Peter's Dome"
+     },
      "lat": 41.90217,
      "lon": 12.45346,
      "website": "https://www.vatican.va/various/basiliche/san_pietro/it/cupola/orari.htm",
@@ -2202,6 +2475,7 @@
       "fullWidth": 3504
      },
      "description": "dome of St. Peter's Basilica in Vatican City",
+     "descriptionEn": "dome of St. Peter's Basilica in Vatican City",
      "parentId": "Q12512",
      "parentName": "San Pietro Bazilikası"
     },
@@ -2445,7 +2719,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Cencio_la_Parolaccia.jpeg",
       "fullWidth": 538
      },
-     "description": "restaurant in Rome"
+     "description": "restaurant in Rome",
+     "descriptionEn": "restaurant in Rome"
     },
     {
      "id": "node/3693023670",
