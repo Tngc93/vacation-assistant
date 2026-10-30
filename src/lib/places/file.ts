@@ -12,7 +12,8 @@ import { KIND_TAGS } from "./kinds";
  * 3: Wikidata must-sees stored as raw candidates with their kinds; the sight rules run on read (rules.ts).
  * 4: card photos (Wikidata P18, Commons author and licence) and short descriptions for places with an item.
  * 5: the place another place is inside (Wikidata P361/P276, containment.ts): `parentId` and `parentName`.
- * 6: English for the English interface: every item's English label when it differs from `name` (`labels.en`) and its
+ * 6: English for the English interface: every item's English Wikipedia title (`labels.enwiki`, raw: "Pantheon, Rome")
+ *    and English label when they differ from `name` (`labels.en`), and its
  *    English description (`descriptionEn`).
  */
 export const PLACES_FILE_VERSION = 6;
@@ -36,7 +37,9 @@ export const storedPlaceSchema = z.object({
    * The item's Wikidata labels (names.ts): Turkish and English when `name` is not in the Latin script, else the
    * English one when it differs from `name`.
    */
-  labels: z.object({ tr: z.string().min(1).optional(), en: z.string().min(1).optional() }).optional(),
+  labels: z
+    .object({ tr: z.string().min(1).optional(), en: z.string().min(1).optional(), enwiki: z.string().min(1).optional() })
+    .optional(),
   lat: coordinate(-90, 90),
   lon: coordinate(-180, 180),
   address: z.string().min(1).optional(),

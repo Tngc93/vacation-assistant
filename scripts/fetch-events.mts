@@ -6,7 +6,7 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { cityCentre, DESTINATIONS } from "../src/data/destinations";
+import { cityCentre, DESTINATIONS, englishPlaceWords } from "../src/data/destinations";
 import { EVENT_EXCLUSIONS } from "../src/data/event-overrides";
 import { EVENTS_FILE_VERSION, eventsFileSchema, type EventsFile } from "../src/lib/events/file";
 import { addEnglishEventNames, fetchCityEvents, fetchEventClasses, MIN_EVENT_WIKIPEDIAS } from "../src/lib/events/wikidata";
@@ -27,7 +27,7 @@ if (args.includes("--labels")) {
     const raw = JSON.parse(readFileSync(at, "utf8")) as Record<string, unknown>;
     const file = eventsFileSchema.parse({ ...raw, version: EVENTS_FILE_VERSION });
     try {
-      writeFileSync(at, `${JSON.stringify(eventsFileSchema.parse(await addEnglishEventNames(file)), null, 1)}\n`);
+      writeFileSync(at, `${JSON.stringify(eventsFileSchema.parse(await addEnglishEventNames(file, { placeWords: englishPlaceWords(destination) })), null, 1)}\n`);
       log(`${destination.cityCode} English names`);
     } catch (error) {
       failed.push(destination.cityCode);
@@ -45,7 +45,7 @@ for (const destination of cities) {
   for (let attempt = 0; attempt < 3 && !events; attempt++) {
     try {
       events = await fetchCityEvents(
-        { wikidataId: destination.wikidataId, countryCode: destination.countryCode, ...cityCentre(destination), radiusKm: destination.radiusKm },
+        { wikidataId: destination.wikidataId, countryCode: destination.countryCode, ...cityCentre(destination), radiusKm: destination.radiusKm, placeWords: englishPlaceWords(destination) },
         { now, classes, exclude: (EVENT_EXCLUSIONS[destination.cityCode] ?? []).map((e) => e.qid) },
       );
     } catch (error) {

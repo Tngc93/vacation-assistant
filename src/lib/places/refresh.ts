@@ -10,7 +10,7 @@ import { isLatin } from "./names";
 import type { Fetcher } from "./overpass";
 import { compareRanked } from "./rank";
 import { sameNameOnce } from "./twins";
-import { fetchEntitySummaries, fetchWikipediaCounts } from "./wikidata";
+import { fetchEntitySummaries, fetchWikipediaCounts, type EntitySummary } from "./wikidata";
 
 /**
  * Brings a stored file's Wikidata facts up to date without Overpass (data script only): applies the relink
@@ -145,7 +145,8 @@ export async function refreshKinds(
 /**
  * The Wikidata labels a place keeps (names.ts), in every category: the Turkish and English ones of a name in another
  * script ("東京タワー" → "Tokyo Kulesi", "Tokyo Tower"), and the English one of every other item when it differs from
- * the stored name, for the English interface ("Güell Parkı" → "Park Güell"). Alone, it is `npm run data:kinds --
+ * the stored name, for the English interface ("Güell Parkı" → "Park Güell"); and the item's English Wikipedia title
+ * when it differs from both ("Sagrada Família", where the label is "Basilica and Expiatory Church of the Holy Family"). Alone, it is `npm run data:kinds --
  * --labels`: nothing else in the file changes.
  */
 export async function refreshLabels(file: PlacesFile, { fetcher }: { fetcher?: Fetcher } = {}): Promise<PlacesFile> {
@@ -156,7 +157,7 @@ export async function refreshLabels(file: PlacesFile, { fetcher }: { fetcher?: F
     return entry.status === "ok" ? entry.places : [];
   };
   const qids = [...new Set(all.flatMap(placesOf).flatMap((p) => p.wikidataId ?? []))];
-  const labelsOf = qids.length ? await fetchEntitySummaries(qids, { fetcher }) : new Map<string, { tr?: string; en?: string }>();
+  const labelsOf = qids.length ? await fetchEntitySummaries(qids, { fetcher }) : new Map<string, EntitySummary>();
   for (const c of all) {
     const entry = categories[c];
     if (entry.status !== "ok") continue;
@@ -167,6 +168,8 @@ export async function refreshLabels(file: PlacesFile, { fetcher }: { fetcher?: F
       const labels = {
         ...(foreign && info?.tr ? { tr: info.tr } : {}),
         ...(info?.en && (foreign || info.en !== p.name) ? { en: info.en } : {}),
+        // The English article's title, the name English readers know ("Sagrada Família", "Colosseum").
+        ...(info?.enwiki && info.enwiki !== p.name && info.enwiki !== info.en ? { enwiki: info.enwiki } : {}),
       };
       return Object.keys(labels).length ? { ...rest, labels } : rest;
     });

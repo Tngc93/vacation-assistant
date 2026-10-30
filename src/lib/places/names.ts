@@ -10,7 +10,7 @@ import { romanize } from "./romanize";
  * Wikidata labels of the place's item: Turkish and English when the stored name is not in the Latin script, the
  * English one otherwise when it differs from the stored name.
  */
-export type WikidataLabels = { tr?: string; en?: string };
+export type WikidataLabels = { tr?: string; en?: string; enwiki?: string };
 /** OSM name:en, name:latin (or a name:xx-Latn) and int_name, stored only when the stored name is not Latin. */
 export type OsmLatinNames = { en?: string; latin?: string; int?: string };
 
@@ -35,8 +35,13 @@ type Named = {
   osmNames?: OsmLatinNames;
 };
 
-export function readableName(place: Named, countryCode?: string, locale: "tr" | "en" = "tr"): { name: string; localName?: string } {
-  if (locale === "en") return englishName(place, countryCode);
+export function readableName(
+  place: Named,
+  countryCode?: string,
+  locale: "tr" | "en" = "tr",
+  placeWords: readonly string[] = [],
+): { name: string; localName?: string } {
+  if (locale === "en") return englishName(place, countryCode, placeWords);
   const own = { name: place.name, ...(place.localName ? { localName: place.localName } : {}) };
   if (isLatin(place.name)) return own;
   const { labels, osmNames } = place;
@@ -48,17 +53,32 @@ export function readableName(place: Named, countryCode?: string, locale: "tr" | 
 }
 
 /**
- * The name for the English interface: the Wikidata English label, then the local name in the Latin script (OSM's
+ * An English Wikipedia title as a name: without its disambiguation, "X (Barcelona)" → "X", and "Pantheon, Rome" →
+ * "Pantheon" when what follows the comma is one of `placeWords` (the city's and its country's English names).
+ */
+export function wikipediaTitleName(title: string, placeWords: readonly string[] = []): string {
+  const plain = title.replace(/\s+\([^()]*\)$/, "").trim();
+  const comma = plain.lastIndexOf(", ");
+  if (comma > 0) {
+    const tail = plain.slice(comma + 2).toLowerCase();
+    if (placeWords.some((w) => w.toLowerCase() === tail)) return plain.slice(0, comma).trim();
+  }
+  return plain;
+}
+
+/**
+ * The name for the English interface: the English Wikipedia article's title (the name English readers use:
+ * "Sagrada Família", "Colosseum"), then the Wikidata English label, then the local name in the Latin script (OSM's
  * own name, or its name:en, name:latin, int_name), else the local name romanized by the official system of the
  * city's country, else the local name. The local name stays under it when it differs ("Red Square · Красная
  * площадь", "Tokyo Tower · 東京タワー", "Park Güell" alone). A Turkish name is used only when nothing else exists.
  */
-export function englishName(place: Named, countryCode?: string): { name: string; localName?: string } {
+export function englishName(place: Named, countryCode?: string, placeWords: readonly string[] = []): { name: string; localName?: string } {
   // The local name: OSM's own `name`. A Wikidata-only place has none, only labels (its localName is the English one).
   const wikidataOnly = place.id?.startsWith("wikidata/") ?? false;
   const local = wikidataOnly ? (isLatin(place.name) ? undefined : place.name) : (place.localName ?? place.name);
   const { labels, osmNames } = place;
-  const latin = [labels?.en, local, osmNames?.en, osmNames?.latin, osmNames?.int]
+  const latin = [labels?.enwiki ? wikipediaTitleName(labels.enwiki, placeWords) : undefined, labels?.en, local, osmNames?.en, osmNames?.latin, osmNames?.int]
     .map((n) => n?.trim())
     .find((n): n is string => Boolean(n) && isLatin(n!));
   const original = local ?? place.name;
