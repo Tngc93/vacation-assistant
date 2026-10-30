@@ -262,12 +262,30 @@ describe("BudgetReceipt in English", () => {
 
   it("defaults to EUR, words the receipt in English and formats with Intl (en-GB)", () => {
     renderEnglish();
+    // The language's default is not written to the link.
+    expect(param("cur")).toBeNull();
     const english = screen.getByRole("region", { name: "Budget receipt" });
     expect(within(english).getByText("BUDGET RECEIPT · EUR")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "EUR" })).toHaveAttribute("aria-pressed", "true");
     // 2 × 4.380 ₺ = 8.760 ₺ at 55,618 ₺/EUR.
     expect(within(english).getByText("€158", { selector: "[aria-live]" })).toBeInTheDocument();
     expect(screen.getByLabelText("Stay per night (all rooms)")).toBeInTheDocument();
+  });
+
+  it("writes ?cur= once the picker is used, or when amounts need it", async () => {
+    const user = userEvent.setup();
+    renderEnglish();
+    await user.click(screen.getByRole("button", { name: "USD" }));
+    expect(param("cur")).toBe("USD");
+  });
+
+  it("labels typed amounts with the default currency, without the picker", async () => {
+    const user = userEvent.setup();
+    renderEnglish();
+    expect(param("cur")).toBeNull();
+    await user.type(screen.getByLabelText("Stay per night (all rooms)"), "120");
+    expect(param("stay")).toBe("120");
+    expect(param("cur")).toBe("EUR");
   });
 
   it("lets the link's ?cur= and the visitor's own choice come before the default", () => {

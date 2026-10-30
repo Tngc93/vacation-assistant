@@ -1081,6 +1081,14 @@ export function countryName(d: Pick<Destination, "countryTr" | "countryCode">, l
   return locale === "en" ? (COUNTRY_EN[d.countryCode] ?? d.countryTr) : d.countryTr;
 }
 
+/**
+ * The English words that name the city and its country, as English Wikipedia titles end with them ("Pantheon,
+ * Rome"): used to take such a disambiguation off a title (names.ts `wikipediaTitleName`).
+ */
+export function englishPlaceWords(d: Destination): string[] {
+  return [d.nameEn, ...(d.aliases ?? []), countryName(d, "en")];
+}
+
 const BY_CITY_CODE = new Map(DESTINATIONS.map((d) => [d.cityCode, d]));
 
 export function findDestination(cityCode: string): Destination | undefined {

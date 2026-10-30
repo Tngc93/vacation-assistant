@@ -1,4 +1,4 @@
-import { cityCentre, findDestination } from "@/data/destinations";
+import { cityCentre, englishPlaceWords, findDestination } from "@/data/destinations";
 import { PLACE_OVERRIDES, type CityOverrides } from "@/data/place-overrides";
 import { CATEGORIES, type CategoryId } from "./categories";
 import { farFromCentreKm } from "./far";
@@ -158,9 +158,10 @@ function shownName(
   overrides: CityOverrides,
   countryCode: string | undefined,
   locale: Locale,
+  placeWords: readonly string[] = [],
 ): { name: string; localName?: string } {
   const renamed = locale === "tr" && place.wikidataId ? overrides.rename?.find((o) => o.qid === place.wikidataId) : undefined;
-  const readable = readableName(place, countryCode, locale);
+  const readable = readableName(place, countryCode, locale, placeWords);
   if (!renamed) return readable;
   const localName = readable.name === place.name ? place.localName : place.name;
   return { name: renamed.shownName, ...(localName && localName !== renamed.shownName ? { localName } : {}) };
@@ -173,6 +174,7 @@ function toShown(
   nameOf: ReadonlyMap<string, string>,
   countryCode: string | undefined,
   locale: Locale,
+  placeWords: readonly string[],
 ): ShownPlace {
   const {
     kinds: _kinds,
@@ -201,7 +203,7 @@ function toShown(
   const exteriorNote = locale === "en" ? exterior?.noteEn : exterior?.note;
   const open = Boolean(qid && overrides.open?.some((o) => o.qid === qid));
   return {
-    ...shownName(place, overrides, countryCode, locale),
+    ...shownName(place, overrides, countryCode, locale, placeWords),
     ...rest,
     ...(description ? { description } : {}),
     ...(parentName ? { parentName } : {}),
@@ -262,6 +264,8 @@ export function applyPlaceRules(
   countryCode: string | undefined = findDestination(file.cityCode)?.countryCode,
   locale: Locale = "tr",
 ): ShownPlacesFile {
+  const destination = findDestination(file.cityCode);
+  const placeWords = destination ? englishPlaceWords(destination) : [];
   const kept = {} as Partial<Record<CategoryId, StoredPlace[]>>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
     if (entry.status !== "ok") continue;
@@ -279,12 +283,12 @@ export function applyPlaceRules(
   const nameOf = new Map(
     Object.values(kept)
       .flat()
-      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, shownName(p, overrides, countryCode, locale).name] as const] : [])),
+      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, shownName(p, overrides, countryCode, locale, placeWords).name] as const] : [])),
   );
   const categories = {} as Record<CategoryId, ShownCategory>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
     const places = kept[id];
-    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf, countryCode, locale)) } : entry;
+    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf, countryCode, locale, placeWords)) } : entry;
   }
   return { ...file, categories };
 }

@@ -54,8 +54,9 @@ test("a discover city chip picks the city and opens the calendar; 'Planla' opens
   const calendar = page.getByRole("dialog", { name: "Gidiş tarihini seç" });
   await expect(calendar).toBeVisible();
 
-  // A day that can still be picked, then the return three days later.
-  const day = calendar.locator("td[data-day]:not([data-disabled])").nth(2);
+  // A day that can still be picked (not a hidden day of the next month at the end of this one), then the return
+  // three days later.
+  const day = calendar.locator("td[data-day]:not([data-disabled]):not([data-outside])").nth(2);
   const departIso = (await day.getAttribute("data-day"))!;
   await day.getByRole("button").click();
   const back = new Date(`${departIso}T00:00:00Z`);

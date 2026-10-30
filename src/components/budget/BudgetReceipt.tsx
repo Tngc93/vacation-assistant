@@ -11,7 +11,7 @@ import { BUDGET_FLIGHT_DROPPED_EVENT, BUDGET_STAY_EVENT, writeBudgetParams, type
 import { buildReceipt, type FlightLine, type ReceiptRow } from "@/lib/budget/receipt";
 import { formatRateSources } from "@/lib/rates/format";
 import { SOURCES, type RateTable } from "@/lib/rates/types";
-import { useBudgetCurrency } from "./useBudgetCurrency";
+import { pickedOnThisPage, useBudgetCurrency } from "./useBudgetCurrency";
 
 type Props = {
   initial: BudgetParams;
@@ -145,7 +145,9 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
     }
   }
 
-  // The link names the amounts' currency: once they are converted, both are written together.
+  // The link names the amounts' currency: once they are converted, both are written together. A language's
+  // default (TRY, EUR in English) is not written on its own: `?cur=` goes in when the picker was used, or when there
+  // are amounts the link must label.
   useEffect(() => {
     const linked = new URLSearchParams(window.location.search).get("cur")?.toUpperCase() || "TRY";
     if (linked === amountCur) return;
@@ -153,7 +155,10 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
       const parsed = text.trim() ? parseAmountInput(text) : null;
       return parsed?.ok ? parsed.minor : null;
     };
-    writeUrl({ stay: valid(stayText), daily: valid(dailyText), cur: amountCur });
+    const stay = valid(stayText);
+    const daily = valid(dailyText);
+    if (stay === null && daily === null && !pickedOnThisPage()) return;
+    writeUrl({ stay, daily, cur: amountCur });
   }, [amountCur, stayText, dailyText]);
 
   // The stay card's "Bütçeye yaz" (web search) fills the nightly field, in the field's currency.

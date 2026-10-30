@@ -29,7 +29,7 @@ Kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günl
 - **Konaklama:** Booking ve Google Hotels'te tarihleri ve kişi sayısı dolu arama linkleri (otel fiyatı uydurulmaz).
 - **Uçuşlar:** kalkış şehrinin her havalimanından (Londra'da LHR, LGW, STN, LTN, LCY, SEN) en ucuz bilet, altında tam liste ve aktarmasız filtresi (Travelpayouts önbelleği, "tahmini" etiketiyle).
 - **Bütçe:** uçuş, konaklama ve günlük harcama seçtiğin para biriminde (TL, EUR, USD, GBP; çapraz kur TL üzerinden), kaynak ve kurla; değerler ve para birimi URL'de, paylaşılan link aynı planı açar.
-- **Türkçe ve İngilizce:** Türkçe kökte (`/`, `/plan`), İngilizce `/en` altında (`/en`, `/en/plan`). Başlıktaki TR / EN anahtarı aynı sayfayı bütün parametreleriyle öbür dilde açar; tarayıcı diline göre otomatik yönlendirme yok. İngilizce sayfada yer, şehir, havalimanı ve etkinlik adları Wikidata'nın İngilizce etiketleriyle, tarih ve sayılar `en-GB` biçiminde, bütçe varsayılan olarak EUR; yapay zekâ cevapları da arayüz dilinde.
+- **Türkçe ve İngilizce:** Türkçe kökte (`/`, `/plan`), İngilizce `/en` altında (`/en`, `/en/plan`). Başlıktaki TR / EN anahtarı aynı sayfayı bütün parametreleriyle öbür dilde açar; tarayıcı diline göre otomatik yönlendirme yok. İngilizce sayfada yer ve etkinlik adları İngilizce Vikipedi başlığıyla (yoksa Wikidata'nın İngilizce etiketiyle; "Sagrada Família", "Colosseum"), şehir ve havalimanı adları İngilizce, tarih ve sayılar `en-GB` biçiminde, bütçe varsayılan olarak EUR; yapay zekâ cevapları da arayüz dilinde.
 
 ### Yapay zekâ olmadan tam çalışır
 
@@ -155,4 +155,4 @@ Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](
 - Honest data: every price and estimate shows its source and an "estimated" label; nothing is made up and nothing is scraped. Privacy-friendly analytics count page paths only.
 - Runs on free services only (Vercel Hobby, Travelpayouts, TCMB/Frankfurter/open.er-api, OpenFreeMap).
 - Run locally with Node 22: `npm ci && npm run dev`; `VA_AI_MOCK=1` and `VA_FLIGHTS_FIXTURES=1` give keyless demos. Deploy guide: [docs/DEPLOY.md](docs/DEPLOY.md).
-- Code under MIT; place data under ODbL 1.0. The interface is in Turkish (at the root) and English (under [/en](https://vacationist-app.vercel.app/en)), with a TR / EN switch that keeps the trip's parameters; English pages use Wikidata's English names, British English formats and a EUR budget by default.
+- Code under MIT; place data under ODbL 1.0. The interface is in Turkish (at the root) and English (under [/en](https://vacationist-app.vercel.app/en)), with a TR / EN switch that keeps the trip's parameters; English pages use English Wikipedia's names (else Wikidata's English labels), British English formats and a EUR budget by default.

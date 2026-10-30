@@ -13,7 +13,7 @@
  */
 import { distanceKm } from "@/lib/geo";
 import { externalFetch } from "@/lib/net";
-import { isLatin, readableName } from "@/lib/places/names";
+import { isLatin, readableName, wikipediaTitleName } from "@/lib/places/names";
 import { sparql } from "@/lib/places/landmarks";
 import type { Fetcher } from "@/lib/places/overpass";
 import { commonsFileName, fetchCardPhotos } from "@/lib/places/photos";
@@ -302,7 +302,8 @@ export function editionsInWindow(editions: readonly Edition[], today: string): E
 export type RawEvent = {
   qid: string;
   type: EventType;
-  labels: { tr?: string; en?: string };
+  /** `enwiki`: the English Wikipedia title, its disambiguation already taken off. */
+  labels: { tr?: string; en?: string; enwiki?: string };
   wikipedias: number;
   details: EventDetails;
   editions: Edition[];
@@ -339,27 +340,39 @@ export function toStoredEvent(raw: RawEvent, today: string, minWikipedias = MIN_
 
 const BATCH = 100;
 
-/** The English label for the English interface, when it is in the Latin script and differs from the stored name. */
-export function englishLabel(name: string, labels: { en?: string }): string | undefined {
-  const en = labels.en?.trim();
-  return en && isLatin(en) && en !== name ? en : undefined;
+/**
+ * The English name for the English interface: the English Wikipedia title (without its disambiguation), else the
+ * English label, when it is in the Latin script and differs from the stored name.
+ */
+export function englishLabel(name: string, labels: { en?: string; enwiki?: string }): string | undefined {
+  const en = [labels.enwiki, labels.en].map((l) => l?.trim()).find((l): l is string => Boolean(l) && isLatin(l!));
+  return en && en !== name ? en : undefined;
 }
+
+/** Labels with the English Wikipedia title made a plain name ("Carnival of Venice"), for `englishLabel`. */
+const withTitle = (info: { en?: string; enwiki?: string } | undefined, placeWords: readonly string[]) => ({
+  ...(info?.en ? { en: info.en } : {}),
+  ...(info?.enwiki ? { enwiki: wikipediaTitleName(info.enwiki, placeWords) } : {}),
+});
 
 /**
  * Adds only the English names of a stored file's events and venues (`npm run data:events -- --labels`); nothing else
  * changes. Throws if a query fails.
  */
-export async function addEnglishEventNames(file: EventsFile, { fetcher = externalFetch }: { fetcher?: Fetcher } = {}): Promise<EventsFile> {
+export async function addEnglishEventNames(
+  file: EventsFile,
+  { fetcher = externalFetch, placeWords = [] }: { fetcher?: Fetcher; placeWords?: readonly string[] } = {},
+): Promise<EventsFile> {
   const qids = file.events.flatMap((e) => [e.qid, ...(e.venue ? [e.venue.qid] : [])]);
   const labels = qids.length ? await fetchEntitySummaries(qids, { fetcher }) : new Map<string, { en?: string }>();
   return {
     ...file,
     events: file.events.map(({ nameEn: _n, ...event }) => {
-      const nameEn = englishLabel(event.name, labels.get(event.qid) ?? {});
+      const nameEn = englishLabel(event.name, withTitle(labels.get(event.qid), placeWords));
       let venue = event.venue;
       if (venue) {
         const { nameEn: _v, ...rest } = venue;
-        const venueEn = englishLabel(rest.name, labels.get(rest.qid) ?? {});
+        const venueEn = englishLabel(rest.name, withTitle(labels.get(rest.qid), placeWords));
         venue = venueEn ? { ...rest, nameEn: venueEn } : rest;
       }
       return { ...event, ...(nameEn ? { nameEn } : {}), ...(venue ? { venue } : {}) };
@@ -379,7 +392,7 @@ export async function fetchEventClasses({ fetcher = externalFetch }: { fetcher?:
 
 /** All of a city's events, ready to store. Throws if a query fails (the caller keeps the old file). */
 export async function fetchCityEvents(
-  city: { wikidataId: string; countryCode: string; lat: number; lon: number; radiusKm: number },
+  city: { wikidataId: string; countryCode: string; lat: number; lon: number; radiusKm: number; placeWords?: readonly string[] },
   {
     now,
     classes,
@@ -412,11 +425,11 @@ export async function fetchCityEvents(
     const vInfo = v ? summaries.get(v.qid) : undefined;
     const vLabel = vInfo?.tr ?? vInfo?.en;
     const venueName = vLabel ? readableName({ name: vLabel, labels: vInfo }).name : undefined;
-    const venueEn = venueName ? englishLabel(venueName, vInfo ?? {}) : undefined;
+    const venueEn = venueName ? englishLabel(venueName, withTitle(vInfo, city.placeWords ?? [])) : undefined;
     const venue = v && venueName ? { qid: v.qid, name: venueName, ...(venueEn ? { nameEn: venueEn } : {}), lat: v.lat, lon: v.lon } : undefined;
     const event = info
       ? toStoredEvent(
-          { qid, type: types.get(qid)!, labels: { tr: info.tr, en: info.en }, wikipedias: info.wikipedias, details: d, editions: editions.get(qid) ?? [], venue },
+          { qid, type: types.get(qid)!, labels: { tr: info.tr, ...withTitle(info, city.placeWords ?? []) }, wikipedias: info.wikipedias, details: d, editions: editions.get(qid) ?? [], venue },
           today,
           minWikipedias,
         )

@@ -58,7 +58,8 @@ export async function fetchWikipediaCounts(
   return counts;
 }
 
-export type EntitySummary = { wikipedias: number; tr?: string; en?: string };
+/** Sitelinks count, Turkish and English labels, and the English Wikipedia article's title (as Wikipedia writes it). */
+export type EntitySummary = { wikipedias: number; tr?: string; en?: string; enwiki?: string };
 
 /** Wikipedia language counts and Turkish/English labels per Wikidata ID, in batches of 50. Throws if any batch fails. */
 export async function fetchEntitySummaries(
@@ -69,13 +70,14 @@ export async function fetchEntitySummaries(
   for (const url of wikidataBatchUrls(ids, "sitelinks|labels")) {
     const res = await fetcher(url, { headers: { "User-Agent": USER_AGENT }, signal: timeoutSignal(timeoutMs) });
     if (!res.ok) throw new Error(`Wikidata HTTP ${res.status}`);
-    type Entity = { sitelinks?: Record<string, unknown>; labels?: Record<string, { value: string }> };
+    type Entity = { sitelinks?: Record<string, { title?: string } | undefined>; labels?: Record<string, { value: string }> };
     const json = (await res.json()) as { entities?: Record<string, Entity> };
     if (!json.entities) throw new Error("Wikidata: no entities");
     for (const [id, entity] of Object.entries(json.entities)) {
       const tr = entity.labels?.tr?.value;
       const en = entity.labels?.en?.value;
-      out.set(id, { wikipedias: countWikipedias(entity.sitelinks), ...(tr ? { tr } : {}), ...(en ? { en } : {}) });
+      const enwiki = entity.sitelinks?.enwiki?.title;
+      out.set(id, { wikipedias: countWikipedias(entity.sitelinks), ...(tr ? { tr } : {}), ...(en ? { en } : {}), ...(enwiki ? { enwiki } : {}) });
     }
   }
   return out;

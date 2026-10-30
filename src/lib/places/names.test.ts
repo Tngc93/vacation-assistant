@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import type { PlacesFile, StoredPlace } from "./file";
-import { isLatin, osmLatinNames, readableName } from "./names";
+import { isLatin, osmLatinNames, readableName, wikipediaTitleName } from "./names";
 import type { Fetcher } from "./overpass";
 import { toPlace } from "./place";
 import { refreshKinds } from "./refresh";
@@ -204,7 +204,29 @@ describe("English names (the English interface)", () => {
     return all.find((p) => p.wikidataId === qid);
   };
 
-  it("takes the Wikidata English label first, the local name under it (Tokyo, Moscow, Barcelona)", () => {
+  it("takes the English Wikipedia title first, its disambiguation off (Barcelona, Rome, Thessaloniki, Tokyo)", () => {
+    // Wikidata's label is "Basilica and Expiatory Church of the Holy Family"; Wikipedia's title is the common name.
+    expect(shown("BCN", "Q48435")).toMatchObject({ name: "Sagrada Família", localName: "Basílica de la Sagrada Família" });
+    expect(shown("ROM", "Q10285")).toMatchObject({ name: "Colosseum", localName: "Colosseo" });
+    // "Pantheon, Rome" → "Pantheon".
+    expect(shown("ROM", "Q99309")?.name).toBe("Pantheon");
+    // "Hagia Sophia, Thessaloniki" → "Hagia Sophia".
+    expect(shown("SKG", "Q1568660")?.name).toBe("Hagia Sophia");
+    expect(shown("TYO", "Q183536")).toMatchObject({ name: "Tokyo Tower", localName: "東京タワー" });
+  });
+
+  it("takes a Wikipedia title's disambiguation off only when it names the place", () => {
+    expect(wikipediaTitleName("Roman Theatre (Amman)", ["Amman", "Jordan"])).toBe("Roman Theatre");
+    expect(wikipediaTitleName("Pantheon, Rome", ["Rome", "Roma", "Italy"])).toBe("Pantheon");
+    expect(wikipediaTitleName("Hagia Sophia, Thessaloniki", ["Thessaloniki", "Greece"])).toBe("Hagia Sophia");
+    // A comma that is part of the name stays.
+    expect(wikipediaTitleName("Huis Marseille, Museum for Photography", ["Amsterdam", "Netherlands"])).toBe(
+      "Huis Marseille, Museum for Photography",
+    );
+    expect(wikipediaTitleName("Tokyo Tower", ["Tokyo", "Japan"])).toBe("Tokyo Tower");
+  });
+
+  it("takes the Wikidata English label next, the local name under it (Tokyo, Moscow, Barcelona)", () => {
     // 東京タワー: Turkish "Tokyo Kulesi", English "Tokyo Tower".
     expect(shown("TYO", "Q183536")).toMatchObject({ name: "Tokyo Tower", localName: "東京タワー" });
     // OSM's Turkish name "Kızıl Meydan" is not used; the Russian name stays under the English one.
