@@ -2,6 +2,8 @@ import { Fragment, Suspense, type ReactNode } from "react";
 import { AiDrawerProvider, AiEdgeTab, AiTabButton } from "@/components/ai/AiDrawer";
 import { Caption } from "@/components/ui";
 import { findDestination } from "@/data/destinations";
+import type { Locale } from "@/i18n/locales";
+import { getI18n } from "@/i18n/server";
 import type { SearchState } from "@/lib/search/params";
 import { BudgetCurrencyPicker } from "@/components/budget/BudgetCurrencyPicker";
 import { BudgetSection, BudgetSkeleton } from "@/components/budget/BudgetSection";
@@ -29,17 +31,26 @@ type Section = { id: string; title: string; lead?: string; status?: string; acti
 /** The plan's own URL state: `?skip=`, `?ai=` and `?edit=`. */
 export type PlanEdits = { skip: string[]; ai: string[][] | null; edits: EditBatch[] };
 
-function sectionsFor(search: SearchState, categories: CategoryId[], direct: boolean, budget: BudgetParams, planEdits: PlanEdits): Section[] {
+function sectionsFor(
+  locale: Locale,
+  search: SearchState,
+  categories: CategoryId[],
+  direct: boolean,
+  budget: BudgetParams,
+  planEdits: PlanEdits,
+): Section[] {
+  const { m } = getI18n(locale);
   const destination = findDestination(search.to)!;
   return [
     {
       id: "gun-gun-plan",
-      title: "Gün gün plan",
+      title: m.plan.itinerary,
       action: <AiTabButton />,
       aiDrawer: true,
       body: (
-        <Suspense fallback={<ItinerarySkeleton />}>
+        <Suspense fallback={<ItinerarySkeleton locale={locale} />}>
           <ItinerarySection
+            locale={locale}
             search={search}
             destination={destination}
             categories={categories}
@@ -53,23 +64,24 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
         </Suspense>
       ),
     },
-    ...(SHOW_VISA ? [{ id: "vize", title: "Vize", body: <VisaCard destination={destination} /> }] : []),
+    ...(SHOW_VISA ? [{ id: "vize", title: m.plan.visa, body: <VisaCard destination={destination} locale={locale} /> }] : []),
     {
       id: "konaklama",
-      title: "Konaklama",
+      title: m.plan.stays,
       print: false,
       body: (
-        <Suspense fallback={<StaysSkeleton />}>
-          <StaysSection search={search} destination={destination} />
+        <Suspense fallback={<StaysSkeleton locale={locale} />}>
+          <StaysSection locale={locale} search={search} destination={destination} />
         </Suspense>
       ),
     },
     {
       id: "ucuslar",
-      title: "Uçuşlar",
+      title: m.plan.flights,
       body: (
-        <Suspense fallback={<FlightsSkeleton />}>
+        <Suspense fallback={<FlightsSkeleton locale={locale} />}>
           <FlightsSection
+            locale={locale}
             from={search.from}
             to={search.to}
             depart={search.depart}
@@ -84,12 +96,12 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
     },
     {
       id: "butce",
-      title: "Bütçe",
-      lead: "Seçtiğin uçuş, konaklama ve günlük harcamanın toplamı.",
+      title: m.plan.budget,
+      lead: m.plan.budgetLead,
       action: <BudgetCurrencyPicker fromLink={parseBudgetCurrency(budget.cur)} />,
       body: (
-        <Suspense fallback={<BudgetSkeleton />}>
-          <BudgetSection search={search} destination={destination} direct={direct} budget={budget} />
+        <Suspense fallback={<BudgetSkeleton locale={locale} />}>
+          <BudgetSection locale={locale} search={search} destination={destination} direct={direct} budget={budget} />
         </Suspense>
       ),
     },
@@ -98,12 +110,14 @@ function sectionsFor(search: SearchState, categories: CategoryId[], direct: bool
 
 /** The plan's sections under the hero. */
 export function PlanSections({
+  locale,
   search,
   categories,
   direct,
   budget,
   planEdits,
 }: {
+  locale: Locale;
   search: SearchState;
   categories: CategoryId[];
   direct: boolean;
@@ -113,7 +127,7 @@ export function PlanSections({
 }) {
   return (
     <div className="mt-12 grid gap-16 md:mt-16 md:gap-20">
-      {sectionsFor(search, categories, direct, budget, planEdits).map((section) => {
+      {sectionsFor(locale, search, categories, direct, budget, planEdits).map((section) => {
         const Wrap = section.aiDrawer ? AiDrawerProvider : Fragment;
         return (
           <Wrap key={section.id}>

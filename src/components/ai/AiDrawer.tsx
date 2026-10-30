@@ -1,5 +1,6 @@
 "use client";
 
+import { useI18n } from "@/i18n/client";
 import { Sparkles } from "lucide-react";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
@@ -75,6 +76,7 @@ function Dot({ show }: { show: boolean }) {
 
 /** "✦ Yapay zekâ ile planla" next to the plan section's title (full width under it on phones). */
 export function AiTabButton() {
+  const { m } = useI18n();
   const drawer = useAiDrawer();
   const ref = useRef<HTMLButtonElement>(null);
   return (
@@ -93,7 +95,7 @@ export function AiTabButton() {
       )}
     >
       <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} />
-      Yapay zekâ ile planla
+      {m.ai.title}
       <Dot show={drawer.changed && !drawer.open} />
     </button>
   );
@@ -104,6 +106,7 @@ export function AiTabButton() {
  * panel stays one click away while scrolling through the days.
  */
 export function AiEdgeTab({ sectionId }: { sectionId: string }) {
+  const { m } = useI18n();
   const drawer = useAiDrawer();
   const ref = useRef<HTMLButtonElement>(null);
   const [inView, setInView] = useState(false);
@@ -122,7 +125,7 @@ export function AiEdgeTab({ sectionId }: { sectionId: string }) {
       type="button"
       aria-expanded={drawer.open}
       aria-controls={AI_PANEL_ID}
-      aria-label="Yapay zekâ panelini aç"
+      aria-label={m.ai.open}
       aria-hidden={shown ? undefined : true}
       tabIndex={shown ? undefined : -1}
       onClick={() => drawer.show(ref.current)}
@@ -132,7 +135,7 @@ export function AiEdgeTab({ sectionId }: { sectionId: string }) {
       )}
     >
       <Sparkles aria-hidden="true" size={14} strokeWidth={1.5} />
-      Yapay zekâ
+      {m.ai.tab}
       <Dot show={drawer.changed} />
     </button>
   );

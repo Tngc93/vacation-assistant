@@ -62,12 +62,13 @@ const capitalise = (text: string) => text.charAt(0).toUpperCase() + text.slice(1
 /**
  * "indian, pizza" → "Hint, Pizza". Values outside the dictionary are kept,
  * only capitalised ("catalan" → "Catalan"); repeated names are shown once.
+ * In English the OSM words themselves, capitalised ("Indian, Pizza", "Coffee shop").
  */
-export function describeCuisine(value: string): string {
+export function describeCuisine(value: string, locale: "tr" | "en" = "tr"): string {
   const names = value
     .split(/[,;]/)
     .map((part) => part.trim().toLowerCase())
     .filter(Boolean)
-    .map((part) => CUISINE_TR[part.replace(/\s+/g, "_")] ?? capitalise(part.replace(/_/g, " ")));
+    .map((part) => (locale === "tr" ? CUISINE_TR[part.replace(/\s+/g, "_")] : undefined) ?? capitalise(part.replace(/_/g, " ")));
   return [...new Set(names)].join(", ");
 }

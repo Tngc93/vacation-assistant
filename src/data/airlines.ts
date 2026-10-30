@@ -54,11 +54,23 @@ export const AIRLINE_NAMES: Readonly<Record<string, string>> = {
   TU: "Tunisair", // Q692811
 };
 
+/** The English interface's names where the brand above is Turkish. */
+export const AIRLINE_NAMES_EN: Readonly<Record<string, string>> = {
+  TK: "Turkish Airlines", // Q4548
+};
+
 /** Every airline Wikidata names, by designator. */
 export const WIKIDATA_AIRLINES: Readonly<Record<string, string>> = table.airlines;
+/** Wikidata's English names where they differ. */
+export const WIKIDATA_AIRLINES_EN: Readonly<Record<string, string>> = table.airlinesEn;
 
-/** "Lufthansa", "IndiGo", or the code itself when no list has it. */
-export function airlineName(code: string): string {
+/** "Lufthansa", "IndiGo", or the code itself when no list has it; English names in English ("Turkish Airlines"). */
+export function airlineName(code: string, locale: "tr" | "en" = "tr"): string {
   const c = code.toUpperCase();
+  if (locale === "en") {
+    const brand = AIRLINE_NAMES_EN[c] ?? AIRLINE_NAMES[c];
+    if (brand) return brand;
+    return WIKIDATA_AIRLINES_EN[c] ?? WIKIDATA_AIRLINES[c] ?? code;
+  }
   return AIRLINE_NAMES[c] ?? WIKIDATA_AIRLINES[c] ?? code;
 }

@@ -3,6 +3,7 @@
 import { KeyRound, MessageSquare, Sparkles, Trash2, Undo2, X } from "lucide-react";
 import { useId, useMemo, useRef, useState, type FormEvent } from "react";
 import { Button, Caption, Chip } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
 import { requestAiEdit, requestAiPlan, type AiPlan } from "@/lib/ai/assistant";
 import type { EditBatch, PlanDiff } from "@/lib/ai/edits";
 import { AiError, aiErrorCaption } from "@/lib/ai/errors";
@@ -13,7 +14,6 @@ import { candidatesFor, dayWindows, type PlanSummaryDay } from "@/lib/ai/prompts
 import { listModels, PROVIDER_IDS, PROVIDERS, suggestModel, type ModelInfo, type ProviderId } from "@/lib/ai/providers";
 import { ITINERARY } from "@/lib/itinerary/config";
 import type { Itinerary, PlanPlace } from "@/lib/itinerary/plan";
-import { CATEGORIES } from "@/lib/places/categories";
 
 type Props = {
   plan: Itinerary;
@@ -33,10 +33,9 @@ type Props = {
   onClose?: () => void;
 };
 
-const EXAMPLES = ["2. günü müzesiz yap", "Daha az yürüyelim", "Akşamları kokteyl bar"];
-
 /** PRD 21–26: connect your own provider, let the model plan from the fetched list, edit by chatting. */
 export function AiPanel(props: Props) {
+  const { m, f } = useI18n();
   const connection = useAiConnection();
   const [settings, setSettings] = useState(false);
 
@@ -46,15 +45,15 @@ export function AiPanel(props: Props) {
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-2 gap-y-1 pt-2">
           <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} className="shrink-0" />
           <h3 id="ai-title" className="whitespace-nowrap text-body font-medium">
-            Yapay zekâ ile planla
+            {m.ai.title}
           </h3>
-          <Caption>İSTEĞE BAĞLI</Caption>
+          <Caption>{m.ai.optional}</Caption>
         </div>
         {props.onClose ? (
           <button
             type="button"
             onClick={props.onClose}
-            aria-label="Yapay zekâ panelini kapat"
+            aria-label={m.ai.close}
             className="inline-flex size-9 shrink-0 items-center justify-center rounded-sm border border-rule text-ink transition-colors duration-150 ease-out hover:border-ink"
           >
             <X aria-hidden="true" size={16} strokeWidth={1.5} />
@@ -63,7 +62,7 @@ export function AiPanel(props: Props) {
       </div>
       {connection && !settings ? (
         <button type="button" onClick={() => setSettings(true)} className="mt-2 text-left text-caption text-ink-muted underline underline-offset-4 hover:text-ink">
-          {PROVIDERS[connection.provider].label} · {connection.model} · Bağlantı ayarları
+          {f(m.ai.settings, { provider: PROVIDERS[connection.provider].label, model: connection.model })}
         </button>
       ) : null}
       {!connection || settings ? (
@@ -87,6 +86,8 @@ function ConnectForm({
   onStart: () => void;
   onDone: () => void;
 }) {
+  const i18n = useI18n();
+  const { m, f } = i18n;
   const id = useId();
   const [provider, setProvider] = useState<ProviderId>(initial?.provider ?? "gemini");
   const [key, setKey] = useState(initial?.key ?? "");
@@ -108,10 +109,10 @@ function ConnectForm({
       setModels(list);
       setModel(suggested);
       if (!saveConnection({ provider, key: key.trim(), model: suggested }, remember)) {
-        setError({ tone: "warn", text: "Tarayıcın bu sitenin depolama alanını engelliyor; anahtar saklanamadı." });
+        setError({ tone: "warn", text: m.ai.storageBlocked });
       }
     } catch (e) {
-      setError(errorNotice(e));
+      setError(errorNotice(e, i18n));
     } finally {
       setBusy(false);
     }
@@ -125,11 +126,11 @@ function ConnectForm({
   return (
     <div className="mt-4 grid gap-4">
       <p className="text-caption text-ink-muted">
-        Anahtarın bu tarayıcıda kalır, sunucumuza gönderilmez. Kullanım senin hesabından ücretlendirilir.
+        {m.ai.keyStaysHere}
       </p>
       <form onSubmit={connect} className="grid gap-4">
         <fieldset>
-          <legend className="text-caption font-medium text-ink">Sağlayıcı</legend>
+          <legend className="text-caption font-medium text-ink">{m.ai.provider}</legend>
           <div className="mt-2 flex flex-wrap gap-2">
             {PROVIDER_IDS.map((p) => (
               <Chip
@@ -147,7 +148,7 @@ function ConnectForm({
         </fieldset>
         <div>
           <label htmlFor={`${id}-key`} className="text-caption font-medium text-ink">
-            API anahtarı
+            {m.ai.apiKey}
           </label>
           <div className="mt-1.5 flex h-11 items-center gap-2 rounded-sm border border-rule bg-paper px-3 focus-within:border-ink field-focus-ring">
             <KeyRound aria-hidden="true" size={14} strokeWidth={1.5} className="shrink-0 text-ink-muted" />
@@ -166,9 +167,9 @@ function ConnectForm({
               <span key={p}>
                 {i ? " · " : ""}
                 <a href={PROVIDERS[p].keyPage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
-                  {PROVIDERS[p].label} anahtarı al
+                  {f(m.ai.getKey, { provider: PROVIDERS[p].label })}
                 </a>
-                {PROVIDERS[p].freeTier ? " (ücretsiz katmanı var)" : ""}
+                {PROVIDERS[p].freeTier ? m.ai.freeTier : ""}
               </span>
             ))}
           </p>
@@ -176,12 +177,12 @@ function ConnectForm({
         {/* The note sits under the label (not beside it), so a narrow panel doesn't split them into two columns. */}
         <label className="grid grid-cols-[auto_1fr] items-center gap-x-2 gap-y-0.5 text-caption text-ink">
           <input type="checkbox" checked={remember} onChange={(e) => setRemember(e.target.checked)} className="size-4 accent-ink" />
-          <span>Bu cihazda hatırla</span>
-          <span className="col-start-2 text-ink-muted">Kapalıysa anahtar sekme kapanınca silinir.</span>
+          <span>{m.ai.remember}</span>
+          <span className="col-start-2 text-ink-muted">{m.ai.rememberNote}</span>
         </label>
         <div className="flex flex-wrap gap-2">
           <Button type="submit" disabled={busy || !key.trim()}>
-            {busy ? "Anahtar deneniyor…" : "Bağlan"}
+            {busy ? m.ai.trying : m.ai.connect}
           </Button>
           {initial ? (
             <Button
@@ -194,12 +195,12 @@ function ConnectForm({
               }}
             >
               <Trash2 aria-hidden="true" size={16} strokeWidth={1.5} />
-              Anahtarı sil
+              {m.ai.deleteKey}
             </Button>
           ) : null}
           {initial && !models ? (
             <Button variant="ghost" onClick={onDone}>
-              Vazgeç
+              {m.ai.cancel}
             </Button>
           ) : null}
         </div>
@@ -208,7 +209,7 @@ function ConnectForm({
       {models ? (
         <div>
           <label htmlFor={`${id}-model`} className="text-caption font-medium text-ink">
-            Model <span className="font-normal text-ink-muted">(hızlı ve ucuz olanı önerdik; değiştirebilirsin)</span>
+            {m.ai.model} <span className="font-normal text-ink-muted">{m.ai.modelNote}</span>
           </label>
           <select
             id={`${id}-model`}
@@ -223,7 +224,7 @@ function ConnectForm({
             ))}
           </select>
           <Button className="mt-3" variant="secondary" onClick={onDone}>
-            Bağlandı, devam et
+            {m.ai.connected}
           </Button>
         </div>
       ) : null}
@@ -246,6 +247,8 @@ function Assistant({
   fetcher,
   connection,
 }: Props & { connection: NonNullable<ReturnType<typeof loadConnection>> }) {
+  const i18n = useI18n();
+  const { locale, m, f } = i18n;
   const id = useId();
   const [busy, setBusy] = useState<"plan" | "edit" | null>(null);
   const [status, setStatus] = useState<Notice | null>(null);
@@ -264,21 +267,17 @@ function Assistant({
     setStatus(null);
     try {
       const maxStops = pace === "relaxed" ? ITINERARY.relaxedMaxDaytimeStops : ITINERARY.maxDaytimeStops;
-      const result = await requestAiPlan(connection, { city: cityName, days, candidates, maxStops }, fetcher);
+      const result = await requestAiPlan(connection, { city: cityName, days, candidates, maxStops, locale }, fetcher);
       if (result.ok) {
         onPlan(result.value, source);
-        setStatus({ tone: "ink", text: "Plan yapay zekânın seçimiyle güncellendi; saatleri ve yürüme sürelerini uygulama hesapladı." });
+        setStatus({ tone: "ink", text: m.ai.planned });
       } else if (result.attempts === 0) {
-        setStatus({ tone: "warn", text: "Listede seçilecek yer kalmadı; mevcut plan kaldı." });
+        setStatus({ tone: "warn", text: m.ai.nothingLeft });
       } else {
-        setStatus({
-          tone: "warn",
-          text: "Model iki denemede de yalnızca listedeki yerlerle geçerli bir plan veremedi; mevcut plan kaldı.",
-          detail: aiErrorCaption(result.error),
-        });
+        setStatus({ tone: "warn", text: m.ai.twoTries, detail: aiErrorCaption(result.error) });
       }
     } catch (e) {
-      setStatus(errorNotice(e));
+      setStatus(errorNotice(e, i18n));
     } finally {
       inFlight.current = false;
       setBusy(null);
@@ -298,10 +297,10 @@ function Assistant({
         window: d.daytime ? `${d.daytime.start}-${d.daytime.end}` : null,
         stops: d.stops
           .filter((s) => s.kind === "daytime")
-          .map((s) => ({ id: s.shortId, name: s.name, category: CATEGORIES[s.category].label })),
+          .map((s) => ({ id: s.shortId, name: s.name, category: s.category })),
         evening: d.stops.find((s) => s.kind === "evening")?.name ?? null,
       }));
-      const result = await requestAiEdit(connection, { request: text, city: cityName, plan: summary, candidates, pace, evening }, fetcher);
+      const result = await requestAiEdit(connection, { request: text, city: cityName, plan: summary, candidates, pace, evening, locale }, fetcher);
       if (result.ok) {
         if (result.value.batch.length) {
           onEdit(result.value.batch, result.value.reply);
@@ -310,10 +309,10 @@ function Assistant({
           setStatus({ tone: "ink", text: result.value.reply });
         }
       } else {
-        setStatus({ tone: "warn", text: "Model bu isteği geçerli düzenlemelere çeviremedi; plan değişmedi.", detail: aiErrorCaption(result.error) });
+        setStatus({ tone: "warn", text: m.ai.editFailed, detail: aiErrorCaption(result.error) });
       }
     } catch (e) {
-      setStatus(errorNotice(e));
+      setStatus(errorNotice(e, i18n));
     } finally {
       inFlight.current = false;
       setBusy(null);
@@ -325,15 +324,15 @@ function Assistant({
       <div className="flex flex-wrap items-center gap-3">
         <Button onClick={makePlan} disabled={busy !== null}>
           <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} />
-          {busy === "plan" ? "Plan hazırlanıyor…" : "Yapay zekâyla planla"}
+          {busy === "plan" ? m.ai.planning : m.ai.plan}
         </Button>
-        <p className="text-caption text-ink-muted">Model yalnızca bu şehrin listesinden seçer; saatleri, açılışları ve yürümeyi uygulama hesaplar.</p>
+        <p className="text-caption text-ink-muted">{m.ai.planNote}</p>
       </div>
 
       <form onSubmit={edit} className="grid gap-2">
         <label htmlFor={`${id}-chat`} className="flex items-center gap-2 text-caption font-medium text-ink">
           <MessageSquare aria-hidden="true" size={14} strokeWidth={1.5} />
-          Planı sohbetle değiştir
+          {m.ai.chat}
         </label>
         <div className="flex flex-col gap-2 sm:flex-row">
           <input
@@ -342,15 +341,15 @@ function Assistant({
             value={request}
             maxLength={500}
             onChange={(e) => setRequest(e.target.value)}
-            placeholder={`Örn. ${EXAMPLES.join(" · ")}`}
+            placeholder={f(m.ai.examplePlaceholder, { examples: m.ai.examples.join(" · ") })}
             className="h-11 w-full min-w-0 flex-1 rounded-sm border border-rule bg-paper px-3 text-body text-ink focus:border-ink"
           />
           <Button type="submit" variant="secondary" disabled={busy !== null || !request.trim()}>
-            {busy === "edit" ? "Düzenleniyor…" : "Uygula"}
+            {busy === "edit" ? m.ai.editing : m.ai.apply}
           </Button>
         </div>
         <div className="flex flex-wrap gap-2">
-          {EXAMPLES.map((example) => (
+          {m.ai.examples.map((example) => (
             <Chip key={example} onClick={() => setRequest(example)}>
               {example}
             </Chip>
@@ -367,16 +366,19 @@ function Assistant({
 }
 
 function ChangeSummary({ change, onUndo, canUndo }: { change: { diff: PlanDiff; reply: string }; onUndo: () => void; canUndo: boolean }) {
+  const { m, f } = useI18n();
   const { diff } = change;
   const lines = [
-    ...diff.added.map((a) => `Eklendi: ${a.name} (${a.day}. gün)`),
-    ...diff.removed.map((r) => `Çıkarıldı: ${r.name} (${r.day}. gün)`),
-    ...diff.moved.map((m) => `Taşındı: ${m.name} (${m.from}. günden ${m.to}. güne)`),
-    ...diff.evening.map((e) => `${e.day}. gün akşam: ${e.to ?? "mekân yok"}${e.from ? ` (önce ${e.from})` : ""}`),
+    ...diff.added.map((a) => f(m.ai.added, { name: a.name, day: a.day })),
+    ...diff.removed.map((r) => f(m.ai.removed, { name: r.name, day: r.day })),
+    ...diff.moved.map((x) => f(m.ai.moved, { name: x.name, from: x.from, to: x.to })),
+    ...diff.evening.map((e) =>
+      e.from ? f(m.ai.eveningBefore, { day: e.day, to: e.to ?? m.ai.noPlace, from: e.from }) : f(m.ai.evening, { day: e.day, to: e.to ?? m.ai.noPlace }),
+    ),
   ];
   return (
     <div className="rounded-sm border border-rule p-3">
-      <Caption as="p">SON DEĞİŞİKLİK</Caption>
+      <Caption as="p">{m.ai.lastChange}</Caption>
       <p className="mt-1 whitespace-pre-line text-caption text-ink">{change.reply}</p>
       {lines.length ? (
         <ul className="mt-2 grid gap-0.5 text-caption text-ink-muted">
@@ -385,12 +387,12 @@ function ChangeSummary({ change, onUndo, canUndo }: { change: { diff: PlanDiff; 
           ))}
         </ul>
       ) : (
-        <p className="mt-2 text-caption text-ink-muted">Duraklar aynı kaldı.</p>
+        <p className="mt-2 text-caption text-ink-muted">{m.ai.unchanged}</p>
       )}
       {canUndo ? (
         <Button className="mt-3" variant="ghost" onClick={onUndo}>
           <Undo2 aria-hidden="true" size={16} strokeWidth={1.5} />
-          Geri al
+          {m.ai.undo}
         </Button>
       ) : null}
     </div>

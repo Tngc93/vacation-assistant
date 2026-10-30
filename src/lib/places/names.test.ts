@@ -71,8 +71,8 @@ describe("OSM Latin names on fetch", () => {
   });
 });
 
-describe("Wikidata labels for names in another script (refreshKinds)", () => {
-  it("stores the item's Turkish and English labels for those places only, in every category", async () => {
+describe("Wikidata labels (refreshKinds)", () => {
+  it("stores Turkish and English labels for names in another script, and every other item's English label when it differs", async () => {
     const asked: string[] = [];
     const fetcher: Fetcher = async (url, init) => {
       if (url.startsWith("https://www.wikidata.org/w/api.php")) {
@@ -81,6 +81,8 @@ describe("Wikidata labels for names in another script (refreshKinds)", () => {
         const labels: Record<string, Record<string, { value: string }>> = {
           Q183536: { tr: { value: "Tokyo Kulesi" }, en: { value: "Tokyo Tower" } },
           Q2: { en: { value: "Some Café" } },
+          Q3: { tr: { value: "Senso-ji" }, en: { value: "Sensō-ji" } },
+          Q4: { en: { value: "Kaminarimon" } },
         };
         return Response.json({ entities: Object.fromEntries(ids.map((id) => [id, { labels: labels[id] ?? {}, sitelinks: {} }])) });
       }
@@ -92,7 +94,7 @@ describe("Wikidata labels for names in another script (refreshKinds)", () => {
       version: 5,
       cityCode: "TYO",
       categories: {
-        see: { status: "ok", wikipediaCountsAvailable: true, places: [at("way/1", "東京タワー", "Q183536"), at("way/3", "Senso-ji", "Q3")] },
+        see: { status: "ok", wikipediaCountsAvailable: true, places: [at("way/1", "東京タワー", "Q183536"), at("way/3", "Senso-ji", "Q3"), at("way/4", "Kaminarimon", "Q4")] },
         cafe: { status: "ok", wikipediaCountsAvailable: false, places: [at("node/2", "カフェ", "Q2")] },
       },
     } as unknown as PlacesFile;
@@ -100,9 +102,10 @@ describe("Wikidata labels for names in another script (refreshKinds)", () => {
     const all = Object.values(file.categories).flatMap((c) => (c.status === "ok" ? c.places : []));
     expect(all.find((p) => p.id === "way/1")?.labels).toEqual({ tr: "Tokyo Kulesi", en: "Tokyo Tower" });
     expect(all.find((p) => p.id === "node/2")?.labels).toEqual({ en: "Some Café" });
-    // A Latin name keeps no labels, and is not asked for.
-    expect(all.find((p) => p.id === "way/3")).not.toHaveProperty("labels");
-    expect(asked).not.toContain("Q3");
+    // A Latin name keeps only an English label that differs from it, for the English interface; never a Turkish one.
+    expect(all.find((p) => p.id === "way/3")?.labels).toEqual({ en: "Sensō-ji" });
+    expect(all.find((p) => p.id === "way/4")).not.toHaveProperty("labels");
+    expect(asked).toEqual(expect.arrayContaining(["Q3", "Q4"]));
   });
 });
 
@@ -188,5 +191,48 @@ describe("rename override: the Moscow Kremlin", () => {
     const inside = all.filter((p) => p.parentId === "Q133274");
     expect(inside.length).toBeGreaterThan(2);
     for (const p of inside) expect(p.parentName, p.name).toBe("Moskova Kremlini");
+  });
+});
+
+describe("English names (the English interface)", () => {
+  const stored = (code: string): PlacesFile =>
+    JSON.parse(readFileSync(path.join(process.cwd(), "src/data/places", `${code}.json`), "utf8")) as PlacesFile;
+  const shown = (code: string, qid: string) => {
+    const all = Object.values(applyPlaceRules(stored(code), undefined, undefined, undefined, "en").categories).flatMap((c) =>
+      c.status === "ok" ? c.places : [],
+    );
+    return all.find((p) => p.wikidataId === qid);
+  };
+
+  it("takes the Wikidata English label first, the local name under it (Tokyo, Moscow, Barcelona)", () => {
+    // 東京タワー: Turkish "Tokyo Kulesi", English "Tokyo Tower".
+    expect(shown("TYO", "Q183536")).toMatchObject({ name: "Tokyo Tower", localName: "東京タワー" });
+    // OSM's Turkish name "Kızıl Meydan" is not used; the Russian name stays under the English one.
+    expect(shown("MOW", "Q41116")).toMatchObject({ name: "Red Square", localName: "Красная площадь" });
+    // The Turkish rename ("Moskova Kremlini") is for the Turkish label only.
+    expect(shown("MOW", "Q133274")).toMatchObject({ name: "Kremlin", localName: "Московский Кремль" });
+    // A Wikidata-only place: "Güell Parkı" in Turkish, Wikidata's English label here.
+    expect(shown("BCN", "Q212867")).toMatchObject({ name: "Park Güell" });
+    expect(shown("BCN", "Q212867")).not.toHaveProperty("localName");
+  });
+
+  it("gives English descriptions, never Turkish ones, and names the parent in English", () => {
+    expect(shown("BCN", "Q212867")?.description).toBe("public park system in Barcelona, Spain");
+    const inside = Object.values(applyPlaceRules(stored("MOW"), undefined, undefined, undefined, "en").categories)
+      .flatMap((c) => (c.status === "ok" ? c.places : []))
+      .filter((p) => p.parentId === "Q133274");
+    expect(inside.length).toBeGreaterThan(2);
+    for (const p of inside) expect(p.parentName, p.name).toBe("Kremlin");
+  });
+
+  it("falls back to the Latin local name, then romanizes, then keeps the local name", () => {
+    // No English label: OSM's own (Latin) name, not the Turkish one.
+    expect(readableName({ name: "Güell Sarayı", localName: "Palau Güell" }, "ES", "en")).toEqual({ name: "Palau Güell" });
+    // Only a Cyrillic name: romanized by Russia's official system, the original under it.
+    expect(readableName({ name: "Красная площадь" }, "RU", "en")).toEqual({ name: "Krasnaia ploshchad", localName: "Красная площадь" });
+    // Japanese is not romanized: the local name stays.
+    expect(readableName({ name: "カフェ" }, "JP", "en")).toEqual({ name: "カフェ" });
+    // OSM's English name for a name in another script.
+    expect(readableName({ name: "東京タワー", osmNames: { en: "Tokyo Tower" } }, "JP", "en")).toEqual({ name: "Tokyo Tower", localName: "東京タワー" });
   });
 });

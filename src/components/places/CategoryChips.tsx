@@ -2,7 +2,8 @@
 
 import { CalendarDays } from "lucide-react";
 import { Chip } from "@/components/ui";
-import { CATEGORIES, CATEGORY_IDS, type CategoryId } from "@/lib/places/categories";
+import { useI18n } from "@/i18n/client";
+import { CATEGORY_IDS, type CategoryId } from "@/lib/places/categories";
 import { CATEGORY_ICONS } from "./categoryIcons";
 
 export type CategoryChipsProps = {
@@ -15,11 +16,12 @@ export type CategoryChipsProps = {
 
 /** Square-cornered filter chips with Lucide icons; selected chips are ink-filled. */
 export function CategoryChips({ selected, onToggle, disabled, events }: CategoryChipsProps) {
+  const { m } = useI18n();
   return (
     // Phones: one row that scrolls sideways, fading at the right edge as a hint; wider screens wrap.
     <div
       role="group"
-      aria-label="Mekân kategorileri"
+      aria-label={m.places.categories}
       className="-mx-4 flex gap-2 overflow-x-auto px-4 [mask-image:linear-gradient(to_right,black_85%,transparent)] [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0 md:[mask-image:none]"
     >
       {events ? (
@@ -30,7 +32,7 @@ export function CategoryChips({ selected, onToggle, disabled, events }: Category
           icon={<CalendarDays size={14} strokeWidth={1.5} />}
           className="shrink-0"
         >
-          Etkinlik
+          {m.places.event}
         </Chip>
       ) : null}
       {CATEGORY_IDS.map((id) => {
@@ -44,7 +46,7 @@ export function CategoryChips({ selected, onToggle, disabled, events }: Category
             icon={<Icon size={14} strokeWidth={1.5} />}
             className="shrink-0"
           >
-            {CATEGORIES[id].label}
+            {m.categories[id]}
           </Chip>
         );
       })}

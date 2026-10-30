@@ -21,7 +21,7 @@ export const CARD_PHOTO_WIDTH = 500;
 const COMMONS_BATCH = 50;
 const COMMONS_TIMEOUT_MS = 15_000;
 
-export type PlaceExtras = { file?: string; description?: string };
+export type PlaceExtras = { file?: string; description?: string; descriptionEn?: string };
 
 const qidOf = (uri: string | undefined) => /Q[1-9]\d*$/.exec(uri ?? "")?.[0] ?? null;
 
@@ -55,7 +55,8 @@ export function parseExtras(json: unknown): Map<string, PlaceExtras> {
     if (!item) continue;
     const file = commonsFileName(b.image?.value) ?? undefined;
     const description = (b.tr?.value ?? b.en?.value)?.trim() || undefined;
-    out.set(item, { ...(file ? { file } : {}), ...(description ? { description } : {}) });
+    const descriptionEn = b.en?.value?.trim() || undefined;
+    out.set(item, { ...(file ? { file } : {}), ...(description ? { description } : {}), ...(descriptionEn ? { descriptionEn } : {}) });
   }
   return out;
 }
@@ -101,17 +102,44 @@ export async function fetchCardPhotos(
   return out;
 }
 
-/**
- * Adds `photo` and `description` to every stored place that has a Wikidata item. Throws if a query fails (the
- * caller decides whether the city is written without them).
- */
-export async function addPhotosAndDescriptions(file: PlacesFile, { fetcher = externalFetch }: { fetcher?: Fetcher } = {}): Promise<PlacesFile> {
+async function fetchExtras(file: PlacesFile, fetcher: Fetcher): Promise<Map<string, PlaceExtras>> {
   const places = Object.values(file.categories).flatMap((c) => (c.status === "ok" ? c.places : []));
   const qids = [...new Set(places.flatMap((p) => p.wikidataId ?? []))].sort();
   const extras = new Map<string, PlaceExtras>();
   for (let i = 0; i < qids.length; i += KINDS_BATCH) {
     for (const [qid, value] of parseExtras(await sparql(extrasQuery(qids.slice(i, i + KINDS_BATCH)), fetcher))) extras.set(qid, value);
   }
+  return extras;
+}
+
+const mapPlaces = (file: PlacesFile, f: (p: StoredPlace) => StoredPlace): PlacesFile => ({
+  ...file,
+  categories: Object.fromEntries(
+    Object.entries(file.categories).map(([id, c]) => [id, c.status === "ok" ? { ...c, places: c.places.map(f) } : c]),
+  ) as PlacesFile["categories"],
+});
+
+/** The English description of a place with an item, for the English interface (none when Wikidata has none). */
+const withEnglishDescription = (p: StoredPlace, extra: PlaceExtras | undefined): StoredPlace => {
+  const { descriptionEn: _old, ...rest } = p;
+  return extra?.descriptionEn ? { ...rest, descriptionEn: extra.descriptionEn.slice(0, 200) } : rest;
+};
+
+/**
+ * Adds only the English descriptions to a stored file (`npm run data:kinds -- --labels`): nothing else changes, no
+ * photo is asked for again.
+ */
+export async function addEnglishDescriptions(file: PlacesFile, { fetcher = externalFetch }: { fetcher?: Fetcher } = {}): Promise<PlacesFile> {
+  const extras = await fetchExtras(file, fetcher);
+  return mapPlaces(file, (p) => withEnglishDescription(p, p.wikidataId ? extras.get(p.wikidataId) : undefined));
+}
+
+/**
+ * Adds `photo`, `description` (Turkish first, then English) and `descriptionEn` to every stored place that has a
+ * Wikidata item. Throws if a query fails (the caller decides whether the city is written without them).
+ */
+export async function addPhotosAndDescriptions(file: PlacesFile, { fetcher = externalFetch }: { fetcher?: Fetcher } = {}): Promise<PlacesFile> {
+  const extras = await fetchExtras(file, fetcher);
   const photos = await fetchCardPhotos(
     [...extras.values()].flatMap((e) => e.file ?? []),
     { fetcher },
@@ -122,14 +150,12 @@ export async function addPhotosAndDescriptions(file: PlacesFile, { fetcher = ext
     delete rest.description;
     const extra = p.wikidataId ? extras.get(p.wikidataId) : undefined;
     const photo = extra?.file ? photos.get(extra.file) : undefined;
-    return { ...rest, ...(photo ? { photo } : {}), ...(extra?.description ? { description: extra.description.slice(0, 200) } : {}) };
+    return withEnglishDescription(
+      { ...rest, ...(photo ? { photo } : {}), ...(extra?.description ? { description: extra.description.slice(0, 200) } : {}) },
+      extra,
+    );
   };
-  return {
-    ...file,
-    categories: Object.fromEntries(
-      Object.entries(file.categories).map(([id, c]) => [id, c.status === "ok" ? { ...c, places: c.places.map(enrich) } : c]),
-    ) as PlacesFile["categories"],
-  };
+  return mapPlaces(file, enrich);
 }
 
 /**

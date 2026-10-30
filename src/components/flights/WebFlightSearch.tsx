@@ -1,5 +1,7 @@
 "use client";
 
+import { useI18n } from "@/i18n/client";
+import { sourceLabel } from "@/lib/rates/format";
 import { Check, Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useTransition } from "react";
@@ -37,14 +39,15 @@ type Props = {
 
 /** PRD 8: the model's own web search for flight prices, apart from (and never mixed with) the Travelpayouts list. */
 export function WebFlightSearch({ query, rates, demo, inBudget, fetcher }: Props) {
+  const { m } = useI18n();
   const search = useSearchConnection(demo);
   return (
     <section aria-labelledby="web-ucus-title" className="mt-10 grid gap-4 print:hidden">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-rule pb-2">
         <h3 id="web-ucus-title" className="font-display text-heading">
-          Web&apos;de ara
+          {m.ai.webFlights.title}
         </h3>
-        <Caption>YAPAY ZEKÂ · TRAVELPAYOUTS&apos;TAN AYRI</Caption>
+        <Caption>{m.ai.webFlights.apart}</Caption>
       </div>
       {search?.conn.provider === "gemini" ? (
         <Grounded query={query} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
@@ -52,9 +55,9 @@ export function WebFlightSearch({ query, rates, demo, inBudget, fetcher }: Props
         <Connected query={query} rates={rates} demo={demo} inBudget={inBudget} conn={search.conn} fetcher={search.fetcher ?? fetcher} />
       ) : (
         <p className="text-body text-ink-muted">
-          Güncel fiyatı web&apos;de aratmak için{" "}
+          {m.ai.webFlights.connectBefore}{" "}
           <a href="#yapay-zeka" className="text-ink underline underline-offset-4">
-            yapay zekâ bağla
+            {m.ai.webFlights.connect}
           </a>
         </p>
       )}
@@ -64,14 +67,18 @@ export function WebFlightSearch({ query, rates, demo, inBudget, fetcher }: Props
 
 /** Gemini: the grounded answer shown as it came (no prices read out, no lira, no cache, no budget button). */
 function Grounded({ query, conn, fetcher }: { query: FlightQuery; conn: Connection; fetcher?: typeof fetch }) {
-  const run = useCallback((c: Connection) => searchGrounded(c, "flights", query, { fetcher, now: Date.now() }), [query, fetcher]);
+  const { locale, m, f } = useI18n();
+  const t = m.ai.webFlights;
+  const run = useCallback(
+    (c: Connection) => searchGrounded(c, "flights", query, { fetcher, now: Date.now(), language: locale }),
+    [query, fetcher, locale],
+  );
   return (
     <div className="grid gap-4">
       <p className="max-w-2xl text-body text-ink-muted">
-        {query.fromAirports.join(" / ")} → {query.toAirports.join(" / ")} · {query.adults} yetişkin. Gemini Google&apos;da arar; cevabı ve
-        kaynaklarını olduğu gibi gösteririz. Satın alma o sitede.
+        {f(t.route, { from: query.fromAirports.join(" / "), to: query.toAirports.join(" / "), count: query.adults })} {t.groundedNote}
       </p>
-      <GroundedSearch label="Web'de ara" conn={conn} run={run} fetcher={fetcher} rows={2} />
+      <GroundedSearch label={t.search} conn={conn} run={run} fetcher={fetcher} rows={2} />
     </div>
   );
 }
@@ -84,19 +91,20 @@ function Connected({
   conn,
   fetcher,
 }: Props & { conn: NonNullable<ReturnType<typeof useSearchConnection>>["conn"]; fetcher?: typeof fetch }) {
-  const key = webCacheKey("flights", [query.fromAirports.join("+"), query.toCity, query.depart, query.return, query.adults]);
+  const { locale, m, f } = useI18n();
+  const t = m.ai.webFlights;
+  const key = webCacheKey("flights", [locale, query.fromAirports.join("+"), query.toCity, query.depart, query.return, query.adults]);
   const run = useCallback(
-    () => searchFlightPrices(conn, query, rates, { fetcher, now: Date.now(), sample: demo }),
-    [conn, query, rates, fetcher, demo],
+    () => searchFlightPrices(conn, query, rates, { fetcher, now: Date.now(), sample: demo, language: locale }),
+    [conn, query, rates, fetcher, demo, locale],
   );
   const { result, busy, error, search } = useWebSearch("flights", key, run);
   return (
     <div className="grid gap-4">
       <p className="max-w-2xl text-body text-ink-muted">
-        {query.fromAirports.join(" / ")} → {query.toAirports.join(" / ")} · {query.adults} yetişkin. Model web&apos;de arar; yalnızca
-        bulduğu sayfaya linklenebilen fiyatları gösteririz. Satın alma o sitede.
+        {f(t.route, { from: query.fromAirports.join(" / "), to: query.toAirports.join(" / "), count: query.adults })} {t.note}
       </p>
-      <SearchButton label="Web'de ara" busy={busy} done={!!result} onSearch={search} provider={conn.provider} demo={demo} />
+      <SearchButton label={t.search} busy={busy} done={!!result} onSearch={search} provider={conn.provider} demo={demo} />
       {error ? <NoticeText notice={error} alert /> : null}
       {busy ? (
         <SearchSkeleton rows={2} />
@@ -118,42 +126,47 @@ function Connected({
  * Shown in the budget's currency, from the lira amount the budget keeps (`?wf=`), so the card and the receipt agree.
  */
 function WebOfferCard({ offer, adults, rates, inBudget }: { offer: FlightOffer; adults: number; rates: RateTable; inBudget: WebFlightChoice | null }) {
+  const i18n = useI18n();
+  const { locale, intl, m, f } = i18n;
+  const t = m.ai.webFlights;
   const cur = effectiveCurrency(useBudgetCurrency(null), rates);
   const shown = (kurus: number) => roundToWhole(convertAmount(kurus, "TRY", cur, rates) ?? kurus);
   // The rates between the site's currency and the budget's (through TRY); none when they are the same.
   const sources =
-    offer.currency === cur ? [] : [...new Set([offer.currency, cur].flatMap((c) => (c === "TRY" ? [] : (rates[c]?.sourceName ?? []))))];
+    offer.currency === cur
+      ? []
+      : [...new Set([offer.currency, cur].flatMap((c) => (c === "TRY" || !rates[c] ? [] : [sourceLabel(rates[c].sourceName, i18n)])))];
   const chosen = !!inBudget && offer.tryPerAdult === inBudget.perAdult && offer.link.host === inBudget.host;
   return (
     <Ticket
       stubBeside="md"
       className="border-dashed bg-paper"
-      aria-label={`${offer.title}, web'de bulunan fiyat`}
+      aria-label={f(t.offerLabel, { title: offer.title })}
       stub={
         <div className="flex h-full flex-col gap-3">
           <div>
-            <Caption as="p">1 YETİŞKİN · TAHMİNİ</Caption>
+            <Caption as="p">{t.adultEstimated}</Caption>
             <p className="mt-1 font-mono text-title tabular text-ink">
-              {offer.tryPerAdult === null ? "—" : formatMoney(shown(offer.tryPerAdult), cur)}
+              {offer.tryPerAdult === null ? "—" : formatMoney(shown(offer.tryPerAdult), cur, locale)}
             </p>
             {offer.tryPerAdult === null ? (
               <Caption as="p" tone="warn" className="mt-0.5">
-                {offer.currency} KURU ALINAMADI · {currencyLabel(cur)} KARŞILIĞI YOK
+                {f(t.noRate, { currency: offer.currency, budget: currencyLabel(cur, locale) })}
               </Caption>
             ) : sources.length ? (
               <Caption as="p" className="mt-0.5">
-                KUR: {sources.join(" · ").toLocaleUpperCase("tr")}
+                {f(t.rateSources, { sources: sources.join(" · ").toLocaleUpperCase(intl) })}
               </Caption>
             ) : null}
           </div>
           {offer.tryPerAdult !== null ? (
             <div>
-              <Caption as="p">TAHMİNİ TOPLAM · {adults} YOLCU</Caption>
-              <p className="mt-1 font-mono text-body tabular">{formatMoney(shown(offer.tryPerAdult * adults), cur)}</p>
+              <Caption as="p">{f(t.total, { count: adults })}</Caption>
+              <p className="mt-1 font-mono text-body tabular">{formatMoney(shown(offer.tryPerAdult * adults), cur, locale)}</p>
             </div>
           ) : null}
           <div className="mt-auto">
-            <SourceLink link={offer.link}>Sitede gör · {offer.link.host}</SourceLink>
+            <SourceLink link={offer.link}>{f(t.onSite, { host: offer.link.host })}</SourceLink>
           </div>
           {offer.tryPerAdult !== null ? (
             <AddWebFlightButton choice={{ perAdult: offer.tryPerAdult, host: offer.link.host }} inBudget={chosen} />
@@ -163,7 +176,10 @@ function WebOfferCard({ offer, adults, rates, inBudget }: { offer: FlightOffer; 
     >
       <p className="text-body">{offer.title}</p>
       <p className="mt-3 font-mono text-caption tabular text-ink-muted">
-        Sitedeki fiyat: {formatMinor(offer.priceMinor, offer.currency)} · {offer.basis === "per_person" ? "kişi başı" : `${adults} yolcu toplam`}
+        {f(t.sitePrice, {
+          price: formatMinor(offer.priceMinor, offer.currency, locale),
+          basis: offer.basis === "per_person" ? t.perPerson : f(t.allPassengers, { count: adults }),
+        })}
       </p>
     </Ticket>
   );
@@ -171,12 +187,13 @@ function WebOfferCard({ offer, adults, rates, inBudget }: { offer: FlightOffer; 
 
 /** Like AddToBudgetButton: puts this web price in the budget (?wf=…&wfs=…) instead of a cached ticket. */
 function AddWebFlightButton({ choice, inBudget }: { choice: WebFlightChoice; inBudget: boolean }) {
+  const { m } = useI18n();
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const add = () => {
     if (inBudget) return;
     const params = writeBudgetParams(new URLSearchParams(window.location.search), { flight: null, webFlight: choice });
-    startTransition(() => router.replace(`/plan?${params.toString()}${window.location.hash}`, { scroll: false }));
+    startTransition(() => router.replace(`${window.location.pathname}?${params.toString()}${window.location.hash}`, { scroll: false }));
   };
   return (
     <button
@@ -187,7 +204,7 @@ function AddWebFlightButton({ choice, inBudget }: { choice: WebFlightChoice; inB
       className={cn("inline-flex items-center gap-1 self-center text-caption underline-offset-4", inBudget ? "text-ink" : "text-ink-muted underline hover:text-ink")}
     >
       {inBudget ? <Check aria-hidden="true" size={14} strokeWidth={1.5} /> : <Plus aria-hidden="true" size={14} strokeWidth={1.5} />}
-      {inBudget ? "Bütçede" : "Bütçeye ekle"}
+      {inBudget ? m.flights.inBudget : m.flights.addToBudget}
     </button>
   );
 }

@@ -3,6 +3,7 @@
 import { ArrowUpRight, RotateCw, Search } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { buttonClasses, Caption, Skeleton } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
 import { AiError } from "@/lib/ai/errors";
 import { listModels, type Connection, type ModelInfo, type ProviderId } from "@/lib/ai/providers";
 import { parseWebCache, readWebCacheRaw, subscribeWebCache, writeWebCache, type WebKind } from "@/lib/ai/webCache";
@@ -11,13 +12,14 @@ import { demoWebSearchFetcher } from "@/lib/ai/mockProvider";
 import { errorNotice, NoticeText, type Notice } from "./notice";
 import { useAiConnection } from "./useAiConnection";
 
-/** The keyless demo's connection: no key, the mock provider answers (never the network). */
-const DEMO_CONNECTION: Connection = { provider: "openai", key: "", model: "örnek" };
-
-/** The connection to search with, the demo's when the demo is on, or null (not connected). */
+/**
+ * The connection to search with, the demo's when the demo is on (no key, the mock provider answers, never the
+ * network; its model is named "örnek" / "sample"), or null (not connected).
+ */
 export function useSearchConnection(demo: boolean): { conn: Connection; fetcher?: typeof fetch } | null {
+  const { m } = useI18n();
   const connection = useAiConnection();
-  if (demo) return { conn: DEMO_CONNECTION, fetcher: demoWebSearchFetcher };
+  if (demo) return { conn: { provider: "openai", key: "", model: m.ai.web.demoModel }, fetcher: demoWebSearchFetcher };
   return connection ? { conn: connection } : null;
 }
 
@@ -35,6 +37,7 @@ export function useWebSearch<K extends WebKind>(kind: K, cacheKey: string, run: 
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<Notice | null>(null);
   const inFlight = useRef(false);
+  const i18n = useI18n();
 
   const search = useCallback(async () => {
     if (inFlight.current) return;
@@ -45,12 +48,12 @@ export function useWebSearch<K extends WebKind>(kind: K, cacheKey: string, run: 
       const next = await run();
       setUnstored(writeWebCache(cacheKey, next) ? null : { key: cacheKey, value: next });
     } catch (e) {
-      setError(errorNotice(e));
+      setError(errorNotice(e, i18n));
     } finally {
       inFlight.current = false;
       setBusy(false);
     }
-  }, [cacheKey, run]);
+  }, [cacheKey, run, i18n]);
 
   const result = unstored?.key === cacheKey ? unstored.value : cached;
   return { result, busy, error, search };
@@ -58,38 +61,40 @@ export function useWebSearch<K extends WebKind>(kind: K, cacheKey: string, run: 
 
 const serverSnapshot = () => null;
 
-const searchedAtFormat = new Intl.DateTimeFormat("tr-TR", {
-  day: "numeric",
-  month: "short",
-  hour: "2-digit",
-  minute: "2-digit",
-  hourCycle: "h23",
-  timeZone: "Europe/Istanbul",
-});
-
 /** "YAPAY ZEKÂ WEB'DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · Google Gemini · gemini-2.5-flash · 21 Eki 21:40" */
 export function WebSourceCaption({ result }: { result: Pick<WebPrices<unknown>, "source" | "searchedAt"> }) {
+  const { intl, m } = useI18n();
+  const searchedAt = new Intl.DateTimeFormat(intl, {
+    day: "numeric",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+    timeZone: "Europe/Istanbul",
+  });
   return (
     <Caption as="p">
-      YAPAY ZEKÂ WEB&apos;DEN BULDU · SATIN ALMADAN ÖNCE DOĞRULA · {/* Names and model ids: uppercased by English rules (GEMINI, not GEMİNİ). */}
-      <span lang="en">{result.source}</span> · {searchedAtFormat.format(result.searchedAt)}
+      {m.ai.web.foundBy} {/* Names and model ids: uppercased by English rules (GEMINI, not GEMİNİ). */}
+      <span lang="en">{result.source}</span> · {searchedAt.format(result.searchedAt)}
     </Caption>
   );
 }
 
 export function SampleBanner() {
+  const { m } = useI18n();
   return (
     <Caption as="p" tone="warn" className="rounded-sm border border-warn px-3 py-2">
-      ÖRNEK VERİ · ÖRNEK SAĞLAYICI · GERÇEK FİYAT DEĞİL
+      {m.ai.web.sample}
     </Caption>
   );
 }
 
 /** A page the provider listed: opened by the person in a new tab; the app never requests it. */
 export function SourceLink({ link, children }: { link: WebLink; children?: ReactNode }) {
+  const { m, f } = useI18n();
   return (
     <a href={link.url} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 text-caption underline underline-offset-4">
-      {children ?? `Kaynak: ${link.host}`}
+      {children ?? f(m.ai.web.source, { host: link.host })}
       <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
     </a>
   );
@@ -114,6 +119,7 @@ function activeContent(doc: Document): boolean {
  * non-https links, it is not inserted and the search queries are shown as plain text instead.
  */
 export function SearchSuggestions({ html, queries }: { html: string; queries: readonly string[] }) {
+  const { m, f } = useI18n();
   const host = useRef<HTMLDivElement>(null);
   const safe = useMemo(() => typeof DOMParser !== "undefined" && !activeContent(new DOMParser().parseFromString(html, "text/html")), [html]);
   useEffect(() => {
@@ -123,27 +129,17 @@ export function SearchSuggestions({ html, queries }: { html: string; queries: re
     root.innerHTML = html;
   }, [html, safe]);
   if (!safe) {
-    return queries.length ? <p className="text-caption text-ink-muted">Google araması: {queries.join(" · ")}</p> : null;
+    return queries.length ? <p className="text-caption text-ink-muted">{f(m.ai.web.googleQueries, { queries: queries.join(" · ") })}</p> : null;
   }
   return <div ref={host} data-testid="search-suggestions" className="w-full" />;
 }
 
 /** What a search may cost, from each provider's docs (checked 2026-10-21). */
 export function CostNote({ provider, demo }: { provider: ProviderId; demo: boolean }) {
-  if (demo) return <p className="text-caption text-ink-muted">Örnek sağlayıcı: arama yapılmaz, ücret yok.</p>;
-  if (provider === "gemini") {
-    return (
-      <p className="text-caption text-ink-muted">
-        Gemini&apos;nin ücretsiz katmanında web araması yalnızca 2.5 modellerinde var ve Google bu modelleri yeni hesaplara kapattı. Ücretli
-        katmanda ayda 5.000 arama ücretsiz.
-      </p>
-    );
-  }
-  return (
-    <p className="text-caption text-ink-muted">
-      Web araması kendi hesabından ücretlendirilebilir. {provider === "anthropic" ? "Anthropic" : "OpenAI"}: 1.000 aramada 10 $, model kullanımı ayrıca.
-    </p>
-  );
+  const { m, f } = useI18n();
+  if (demo) return <p className="text-caption text-ink-muted">{m.ai.web.costDemo}</p>;
+  if (provider === "gemini") return <p className="text-caption text-ink-muted">{m.ai.web.costGemini}</p>;
+  return <p className="text-caption text-ink-muted">{f(m.ai.web.cost, { provider: provider === "anthropic" ? "Anthropic" : "OpenAI" })}</p>;
 }
 
 /** The search / search-again button, locked while a request runs, with the cost note under it. */
@@ -162,6 +158,7 @@ export function SearchButton({
   provider: ProviderId;
   demo: boolean;
 }) {
+  const { m } = useI18n();
   return (
     <div className="grid gap-2">
       <div>
@@ -174,7 +171,7 @@ export function SearchButton({
           className={buttonClasses({ variant: "secondary", wrap: true, className: "w-full sm:w-auto" })}
         >
           {done ? <RotateCw aria-hidden="true" size={16} strokeWidth={1.5} /> : <Search aria-hidden="true" size={16} strokeWidth={1.5} />}
-          {busy ? "Web'de aranıyor…" : done ? "Yeniden ara" : label}
+          {busy ? m.ai.web.searching : done ? m.ai.web.again : label}
         </button>
       </div>
       <CostNote provider={provider} demo={demo} />
@@ -183,9 +180,10 @@ export function SearchButton({
 }
 
 export function SearchSkeleton({ rows }: { rows: number }) {
+  const { m } = useI18n();
   return (
     <div role="status" className="grid gap-3">
-      <span className="sr-only">Web&apos;de aranıyor</span>
+      <span className="sr-only">{m.ai.web.searchingSr}</span>
       {Array.from({ length: rows }, (_, i) => (
         <div key={i} className="rounded-md border border-dashed border-rule p-5">
           <Skeleton className="h-4 w-2/3" />
@@ -198,16 +196,13 @@ export function SearchSkeleton({ rows }: { rows: number }) {
 
 /** What every finished search shows around its results: the sample banner, the source line, dropped results. */
 export function ResultFrame({ result, children }: { result: WebPrices<unknown>; children: ReactNode }) {
+  const { m, f } = useI18n();
   return (
     <div className="grid gap-3">
       {result.sample ? <SampleBanner /> : null}
       <WebSourceCaption result={result} />
-      {result.items.length ? children : <p className="text-body text-ink-muted">Web&apos;de doğrulanabilir bir fiyat bulunamadı.</p>}
-      {result.dropped ? (
-        <p className="text-caption text-ink-muted">
-          Kaynağı aramada bulunan sayfalar arasında olmayan {result.dropped} sonuç gösterilmedi.
-        </p>
-      ) : null}
+      {result.items.length ? children : <p className="text-body text-ink-muted">{m.ai.web.nothing}</p>}
+      {result.dropped ? <p className="text-caption text-ink-muted">{f(m.ai.web.dropped, { count: result.dropped })}</p> : null}
     </div>
   );
 }
@@ -225,6 +220,7 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
   const [error, setError] = useState<Notice | null>(null);
   const [fallback, setFallback] = useState<string | null>(null);
   const inFlight = useRef(false);
+  const i18n = useI18n();
 
   const search = useCallback(
     async (model?: string) => {
@@ -243,8 +239,10 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
         if (no25) markNo25();
         // A bare quota error on a search with a model outside the 2.5 family: Gemini 3 has no free-tier search.
         const noFreeSearch = gemini && (e.kind === "freeTier" || (e.kind === "quotaUnknown" && !GEMINI_25.test(used)));
-        const notice = errorNotice(e);
-        setError(no25 ? { ...notice, text: NO_25_ACCESS } : noFreeSearch && e.kind === "quotaUnknown" ? { ...notice, text: NO_FREE_SEARCH } : notice);
+        const notice = errorNotice(e, i18n);
+        setError(
+          no25 ? { ...notice, text: i18n.m.ai.web.no25 } : noFreeSearch && e.kind === "quotaUnknown" ? { ...notice, text: i18n.m.ai.web.noFreeSearch } : notice,
+        );
         if (noFreeSearch && !no25Before()) {
           const models = await listModels("gemini", conn.key, fetcher).catch(() => []);
           setFallback(freeTierSearchModel(models, used));
@@ -254,23 +252,21 @@ export function useGroundedSearch(conn: Connection, run: (conn: Connection) => P
         setBusy(false);
       }
     },
-    [conn, run, fetcher],
+    [conn, run, fetcher, i18n],
   );
   return { result, busy, error, fallback, search };
 }
 
 /** Gemini 2.5 family (the free tier's only models with Google Search, pricing page 2026-10-19). */
 const GEMINI_25 = /^gemini-2\.5-/;
-const NO_FREE_SEARCH = "Google bu aramaya kota sınırı uyguladı. Gemini 3 modelleri ücretsiz katmanda web araması yapamıyor.";
 /**
  * Gemini 2.5 answering 404 to a key: "we are limiting access to the 2.5 models to users who have actively used
  * them in the past" (ai.google.dev/gemini-api/docs/deprecations, checked 2026-10-21). New accounts have no
  * free-tier web search at all: Gemini 3 has none (ai.google.dev/gemini-api/docs/pricing, checked 2026-10-21).
+ * The messages say so: `ai.web.no25` and `ai.web.noFreeSearch`.
+ *
+ * Once 2.5 has answered 404 in this tab, the 2.5 Flash button is not offered again (sessionStorage, tab-scoped).
  */
-const NO_25_ACCESS =
-  "Google 2.5 modellerini yalnızca bunları daha önce kullanmış hesaplara açıyor. Yeni hesaplarda Gemini ile web araması için ücretli katman gerekiyor; ya da başka bir sağlayıcı bağlayabilirsin.";
-
-/** Once 2.5 has answered 404 in this tab, the 2.5 Flash button is not offered again (sessionStorage, tab-scoped). */
 const NO_25_KEY = "va.gemini25.unavailable";
 function markNo25() {
   try {
@@ -297,6 +293,7 @@ export function freeTierSearchModel(models: readonly ModelInfo[], failed: string
  * gave them, and the Search Suggestions, all the same width. Our caption sits above and our note below, outside it.
  */
 export function GroundedResult({ result }: { result: GroundedAnswer }) {
+  const { m } = useI18n();
   return (
     <div className="grid gap-3">
       <WebSourceCaption result={result} />
@@ -322,7 +319,7 @@ export function GroundedResult({ result }: { result: GroundedAnswer }) {
         ) : null}
         {result.suggestionsHtml ? <SearchSuggestions html={result.suggestionsHtml} queries={result.queries} /> : null}
       </div>
-      <p className="text-caption text-ink-muted">Fiyatı doğruladıktan sonra bütçeye kendin yazabilirsin.</p>
+      <p className="text-caption text-ink-muted">{m.ai.web.writeYourself}</p>
     </div>
   );
 }
@@ -341,6 +338,7 @@ export function GroundedSearch({
   fetcher?: typeof fetch;
   rows: number;
 }) {
+  const { m } = useI18n();
   const { result, busy, error, fallback, search } = useGroundedSearch(conn, run, fetcher);
   return (
     <div className="grid gap-4">
@@ -352,7 +350,7 @@ export function GroundedSearch({
             <div>
               <button type="button" onClick={() => search(fallback)} disabled={busy} className={buttonClasses({ variant: "secondary", wrap: true })}>
                 <Search aria-hidden="true" size={16} strokeWidth={1.5} />
-                Gemini 2.5 Flash ile ara
+                {m.ai.web.with25}
               </button>
             </div>
           ) : null}

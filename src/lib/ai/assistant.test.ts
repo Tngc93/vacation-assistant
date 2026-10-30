@@ -6,6 +6,8 @@ import { mockProvider } from "./mockProvider";
 import { candidatesFor, dayWindows } from "./prompts";
 import { AI_ORIGINS } from "./origins";
 import { listModels, type Connection } from "./providers";
+import { TR } from "@/test/i18n";
+import { aiErrorText } from "./errors";
 
 const KEY = "test-key-not-real";
 const input: ItineraryInput = {
@@ -57,7 +59,7 @@ describe("AI plan", () => {
       expect(result.errors.join(" ")).toMatch(/days\.0\.stops\.0/);
       // A schema failure is "invalid", the only place that kind is used; it names the model, not an HTTP status.
       expect(result.error).toMatchObject({ kind: "invalid", model: "test-model", status: undefined });
-      expect(result.error?.message).toBe("Modelin cevabı kurallarımıza uymadı; hiçbir şey değişmedi.");
+      expect(aiErrorText(result.error, TR)).toBe("Modelin cevabı kurallarımıza uymadı; hiçbir şey değişmedi.");
     }
   });
 

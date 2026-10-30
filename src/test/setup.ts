@@ -1,6 +1,9 @@
 import "@testing-library/jest-dom/vitest";
 import { cleanup } from "@testing-library/react";
 import { afterEach, beforeEach, vi } from "vitest";
+import { setFallbackI18n } from "@/i18n/client";
+import { createI18n } from "@/i18n/i18n";
+import { tr } from "@/i18n/messages/tr";
 
 // jsdom has no matchMedia; components treat the viewport as narrow.
 if (!window.matchMedia) {
@@ -42,3 +45,7 @@ afterEach(() => {
   cleanup();
   vi.useRealTimers();
 });
+
+// Components rendered without the root layout's provider read the Turkish messages; a test of the English
+// interface wraps its tree in <I18nProvider locale="en">.
+setFallbackI18n(createI18n("tr", tr));

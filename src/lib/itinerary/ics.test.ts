@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { buildIcs, escapeText, foldLine, localToInstant, offsetMinutes } from "./ics";
 import { buildItinerary } from "./plan";
 import { EVENING, SIGHTS } from "./testCity";
+import { TR } from "@/test/i18n";
 
 const NOW = new Date("2026-10-17T09:00:00Z");
 const plan = buildItinerary({ depart: "2026-11-14", return: "2026-11-18", timeZone: "Europe/Madrid", flight: null, daytime: SIGHTS, evening: EVENING, skip: [] });
@@ -53,7 +54,7 @@ function validate(ics: string) {
 
 describe("buildIcs", () => {
   it("is a valid calendar with one event per stop in the city's time zone", () => {
-    const ics = buildIcs(plan, { cityName: "Barselona", now: NOW });
+    const ics = buildIcs(plan, { cityName: "Barselona", now: NOW, i18n: TR });
     const { errors, events, lines } = validate(ics);
     expect(errors).toEqual([]);
     const stops = plan.days.flatMap((d) => d.stops);
@@ -69,7 +70,7 @@ describe("buildIcs", () => {
   });
 
   it("is reproducible for the same plan and time", () => {
-    expect(buildIcs(plan, { cityName: "Barselona", now: NOW })).toBe(buildIcs(plan, { cityName: "Barselona", now: NOW }));
+    expect(buildIcs(plan, { cityName: "Barselona", now: NOW, i18n: TR })).toBe(buildIcs(plan, { cityName: "Barselona", now: NOW, i18n: TR }));
   });
 
   it("escapes text and folds long lines without splitting characters", () => {
@@ -85,7 +86,7 @@ describe("buildIcs", () => {
     expect(offsetMinutes("Europe/Madrid", localToInstant("2026-10-24", "12:00", "Europe/Madrid"))).toBe(120);
     expect(offsetMinutes("Europe/Madrid", localToInstant("2026-10-26", "12:00", "Europe/Madrid"))).toBe(60);
     const trip = buildItinerary({ depart: "2026-10-23", return: "2026-10-27", timeZone: "Europe/Madrid", flight: null, daytime: SIGHTS, evening: EVENING, skip: [] });
-    const { errors, lines } = validate(buildIcs(trip, { cityName: "Barselona", now: NOW }));
+    const { errors, lines } = validate(buildIcs(trip, { cityName: "Barselona", now: NOW, i18n: TR }));
     expect(errors).toEqual([]);
     const i = lines.indexOf("DTSTART:20261025T030000");
     expect(i).toBeGreaterThan(0);
@@ -94,7 +95,7 @@ describe("buildIcs", () => {
 
   it("keeps local wall times right in other zones (Tokyo has no DST)", () => {
     const tokyo = buildItinerary({ depart: "2026-11-14", return: "2026-11-16", timeZone: "Asia/Tokyo", flight: null, daytime: SIGHTS, evening: EVENING, skip: [] });
-    const { errors, lines } = validate(buildIcs(tokyo, { cityName: "Tokyo", now: NOW }));
+    const { errors, lines } = validate(buildIcs(tokyo, { cityName: "Tokyo", now: NOW, i18n: TR }));
     expect(errors).toEqual([]);
     expect(lines.filter((l) => l.startsWith("TZOFFSETTO:"))).toEqual(["TZOFFSETTO:+0900"]);
   });

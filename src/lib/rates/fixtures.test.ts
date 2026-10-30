@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { getFixtureRate, rateFixturesEnabled, SAMPLE_SOURCE_NAME } from "./fixtures";
+import { getFixtureRate, rateFixturesEnabled } from "./fixtures";
+import { SAMPLE_SOURCE_NAME } from "./types";
 
 describe("sample rates (VA_RATES_FIXTURES=1)", () => {
   afterEach(() => vi.unstubAllEnvs());

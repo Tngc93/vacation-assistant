@@ -1,4 +1,4 @@
-import { CATEGORIES } from "@/lib/places/categories";
+import type { I18n } from "@/i18n/i18n";
 import type { Itinerary, PlanStop } from "./plan";
 
 /**
@@ -103,16 +103,17 @@ export function vtimezone(timeZone: string, from: number, to: number): string[] 
   return lines;
 }
 
-function description(stop: PlanStop): string {
+function description(stop: PlanStop, { m, f }: Pick<I18n, "m" | "f">): string {
+  const t = m.itinerary.ics;
   return [
-    `${CATEGORIES[stop.category].label} · ${stop.durationMin} dk (tahmini)`,
-    stop.address ? `Adres: ${stop.address}` : null,
-    stop.exterior ? `Yalnızca dışarıdan görülür.${stop.exterior.note ? ` ${stop.exterior.note}.` : ""}` : null,
-    stop.hours === "unknown" ? "Açılış saatlerini doğrula." : null,
-    stop.closesSoon ? `Kapanış: ${stop.closesSoon}` : null,
+    f(t.duration, { category: m.categories[stop.category], min: stop.durationMin }),
+    stop.address ? f(t.address, { address: stop.address }) : null,
+    stop.exterior ? `${t.exterior}${stop.exterior.note ? ` ${stop.exterior.note}.` : ""}` : null,
+    stop.hours === "unknown" ? t.checkHours : null,
+    stop.closesSoon ? f(t.closes, { time: stop.closesSoon }) : null,
     `${stop.source}: ${stop.sourceUrl}`,
     // Places inside the stop are seen during its visit: listed here, not events of their own.
-    ...(stop.inside?.length ? [`İçinde: ${stop.inside.map((s) => s.name).join(", ")}`] : []),
+    ...(stop.inside?.length ? [f(t.inside, { names: stop.inside.map((s) => s.name).join(", ") })] : []),
   ]
     .filter(Boolean)
     .join("\n");
@@ -120,11 +121,15 @@ function description(stop: PlanStop): string {
 
 const utcStamp = (date: Date) => `${date.toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`;
 
-/** The whole plan as an iCalendar file. `now` sets DTSTAMP (passed in so the output is reproducible). */
-export function buildIcs(plan: Itinerary, { cityName, now }: { cityName: string; now: Date }): string {
+/**
+ * The whole plan as an iCalendar file, its texts in the interface language. `now` sets DTSTAMP (passed in so the
+ * output is reproducible).
+ */
+export function buildIcs(plan: Itinerary, { cityName, now, i18n }: { cityName: string; now: Date; i18n: Pick<I18n, "m" | "f"> }): string {
+  const t = i18n.m.itinerary.ics;
   const stops = plan.days.flatMap((d) => d.stops.map((s) => ({ day: d, stop: s })));
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Vacationist//Gün gün plan//TR", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
-  lines.push(`X-WR-CALNAME:${escapeText(`${cityName} gezisi`)}`, `X-WR-TIMEZONE:${plan.timeZone}`);
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", `PRODID:${t.prodId}`, "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+  lines.push(`X-WR-CALNAME:${escapeText(i18n.f(t.calendar, { city: cityName }))}`, `X-WR-TIMEZONE:${plan.timeZone}`);
   if (stops.length) {
     const firstDay = plan.days[0].date;
     const lastDay = plan.days.at(-1)!.date;
@@ -140,7 +145,7 @@ export function buildIcs(plan: Itinerary, { cityName, now }: { cityName: string;
       `SUMMARY:${escapeText(stop.name)}`,
       `LOCATION:${escapeText(stop.address ?? stop.name)}`,
       `GEO:${stop.lat.toFixed(6)};${stop.lon.toFixed(6)}`,
-      `DESCRIPTION:${escapeText(description(stop))}`,
+      `DESCRIPTION:${escapeText(description(stop, i18n))}`,
       `URL:${stop.sourceUrl}`,
       "END:VEVENT",
     );

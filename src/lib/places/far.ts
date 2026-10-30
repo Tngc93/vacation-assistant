@@ -1,3 +1,4 @@
+import type { I18n } from "@/i18n/i18n";
 import { distanceKm } from "@/lib/geo";
 import { needsTransit } from "@/lib/itinerary/travel";
 
@@ -17,13 +18,12 @@ export function farFromCentreKm(place: Point, centre: Point, radiusKm: number): 
   return km > Math.max(radiusKm, FAR_MIN_KM) ? km : null;
 }
 
-/** "MERKEZE ~5 KM": the same caption on the carousel card, the place details and the plan's stop. */
-export function farCaption(km: number): string {
-  return `MERKEZE ~${Math.max(1, Math.round(km))} KM`;
+/** "MERKEZE ~5 KM" ("~5 KM FROM CENTRE"): the same caption on the carousel card, the place details and the plan's stop. */
+export function farCaption(km: number, { m, f }: Pick<I18n, "m" | "f">): string {
+  return f(m.places.farFromCentre, { km: Math.max(1, Math.round(km)) });
 }
 
-/** Shown where the plan's walking rule (travel.ts) says it is too far to walk. */
-export const TRANSIT_CAPTION = "TOPLU TAŞIMA YA DA TAKSİ ÖNERİLİR";
+/** Shown where the plan's walking rule (travel.ts) says it is too far to walk: messages `places.transit`. */
 
 /** From the centre, by the plan's walking rule (travel.ts): public transport or a taxi when it is too far to walk. */
 export const transitFromCentre = (km: number): boolean => needsTransit(km);

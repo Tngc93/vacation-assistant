@@ -3,6 +3,8 @@
 import { PlaneTakeoff } from "lucide-react";
 import { useEffect, useId, useState, type KeyboardEvent } from "react";
 import { originAirportsLabel, originAirportsShort, type OriginOption } from "@/data/origins";
+import { useI18n } from "@/i18n/client";
+import type { Locale } from "@/i18n/locales";
 import { cn } from "@/lib/cn";
 
 export type OriginComboboxProps = {
@@ -18,12 +20,13 @@ const SEARCH_DELAY_MS = 150;
 type Answer = { status: "ok"; results: OriginOption[] } | { status: "error" };
 const answers = new Map<string, Answer>();
 
-export async function fetchOrigins(query: string, signal?: AbortSignal): Promise<Answer> {
-  const key = query.trim().toLocaleLowerCase("tr");
+export async function fetchOrigins(query: string, signal?: AbortSignal, locale: Locale = "tr"): Promise<Answer> {
+  const q = query.trim().toLocaleLowerCase("tr");
+  const key = `${locale}:${q}`;
   const known = answers.get(key);
   if (known) return known;
   try {
-    const res = await fetch(`/api/origins?${new URLSearchParams({ q: key })}`, { signal });
+    const res = await fetch(`/api/origins?${new URLSearchParams(locale === "tr" ? { q } : { q, lang: locale })}`, { signal });
     if (!res.ok) return { status: "error" };
     const json = (await res.json()) as { results?: OriginOption[] };
     const answer: Answer = { status: "ok", results: Array.isArray(json.results) ? json.results : [] };
@@ -44,6 +47,7 @@ export async function fetchOrigins(query: string, signal?: AbortSignal): Promise
  * changing the choice.
  */
 export function OriginCombobox({ value, onChange, className, "aria-busy": busy }: OriginComboboxProps) {
+  const { locale, m, f } = useI18n();
   const id = useId();
   const inputId = `${id}-input`;
   const listId = `${id}-list`;
@@ -67,7 +71,7 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
     const controller = new AbortController();
     const timer = setTimeout(
       () => {
-        fetchOrigins(term, controller.signal).then(
+        fetchOrigins(term, controller.signal, locale).then(
           (next) => {
             setAnswer({ ...next, term });
             if (next.status === "ok") setActive((a) => (term.trim() ? 0 : Math.min(a, next.results.length - 1)));
@@ -81,7 +85,7 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
       clearTimeout(timer);
       controller.abort();
     };
-  }, [open, term]);
+  }, [open, term, locale]);
 
   const results = answer?.status === "ok" ? answer.results : [];
   // Enter picks only from the answer to what is typed now, never from the list of a shorter query.
@@ -146,15 +150,15 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
     : answer === null
       ? ""
       : answer.status === "error"
-        ? "Şehir listesi şu an alınamadı."
+        ? m.search.originsUnavailable
         : results.length
-          ? `${results.length} şehir bulundu.`
-          : "Eşleşen şehir yok.";
+          ? f(m.search.found, { count: results.length })
+          : m.search.none;
 
   return (
     <div className={cn("relative min-w-0", className)} aria-busy={busy}>
       <label htmlFor={inputId} className="font-mono text-micro uppercase tracking-[0.08em] text-ink-muted">
-        Kalkış
+        {m.search.origin}
       </label>
       <div
         className={cn(
@@ -174,7 +178,7 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
           autoComplete="off"
           autoCapitalize="none"
           spellCheck={false}
-          placeholder="Şehir, ülke ya da kod"
+          placeholder={m.search.placeholder}
           value={query}
           onChange={(event) => {
             setQuery(event.target.value);
@@ -193,15 +197,15 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
           // w-0: an input's intrinsic width (20 characters) would set the section's minimum width on narrow phones.
           className="h-full w-0 min-w-0 flex-1 bg-transparent text-body text-ink outline-none placeholder:text-ink-muted"
         />
-        <span aria-hidden="true" className="shrink-0 font-mono text-caption tabular tracking-[0.04em] text-ink-muted">
-          {originAirportsShort(value)}
+        <span aria-hidden="true" className="shrink-0 font-mono text-caption uppercase tabular tracking-[0.04em] text-ink-muted">
+          {originAirportsShort(value, (count) => f(m.search.airportsCount, { count }))}
         </span>
       </div>
 
       <ul
         id={listId}
         role="listbox"
-        aria-label="Kalkış şehirleri"
+        aria-label={m.search.origins}
         hidden={!open}
         className="absolute inset-x-0 top-full z-40 mt-1 max-h-72 overflow-y-auto rounded-md border border-rule bg-paper-raised py-1 shadow-ticket"
       >
@@ -222,7 +226,7 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
               <span className="min-w-0">
                 <span className="block truncate">
                   <span className="font-medium">{origin.name}</span>
-                  <span className={cn("ml-2 text-caption", isActive ? "text-paper-raised" : "text-ink-muted")}>{origin.countryTr}</span>
+                  <span className={cn("ml-2 text-caption", isActive ? "text-paper-raised" : "text-ink-muted")}>{origin.countryName}</span>
                 </span>
                 {origin.airports.length > 1 ? (
                   <span className={cn("block font-mono text-micro tabular tracking-[0.04em]", isActive ? "text-paper-raised" : "text-ink-muted")}>
@@ -236,12 +240,12 @@ export function OriginCombobox({ value, onChange, className, "aria-busy": busy }
         })}
         {answer?.status === "ok" && results.length === 0 ? (
           <li role="presentation" className="px-3 py-2 text-caption text-ink-muted">
-            Bu aramayla eşleşen şehir yok. Şehir, ülke ya da IATA koduyla dene.
+            {m.search.noMatch}
           </li>
         ) : null}
         {answer?.status === "error" ? (
           <li role="presentation" className="px-3 py-2 text-caption text-warn">
-            Şehir listesi şu an alınamadı. Biraz sonra yeniden dene.
+            {m.search.originsRetry}
           </li>
         ) : null}
       </ul>

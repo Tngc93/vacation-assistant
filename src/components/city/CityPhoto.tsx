@@ -1,4 +1,5 @@
 import { preload } from "react-dom";
+import type { I18n } from "@/i18n/i18n";
 import type { StoredPhoto } from "@/lib/places/file";
 
 /** Commons thumbnail widths it serves (see places/photos.ts); 960 is enough for a phone's full width. */
@@ -18,7 +19,7 @@ export function cityPhotoSrcSet(photo: Pick<StoredPhoto, "src" | "width">): stri
  * Served from the Commons CDN at a standard width for the screen. On wide screens it is the plan's largest
  * paint and is preloaded; on phones the first place card is, so the strip doesn't jump the queue there.
  */
-export function CityPhoto({ photo, cityName }: { photo: StoredPhoto; cityName: string }) {
+export function CityPhoto({ photo, cityName, i18n: { m, f } }: { photo: StoredPhoto; cityName: string; i18n: Pick<I18n, "m" | "f"> }) {
   const srcSet = cityPhotoSrcSet(photo);
   preload(photo.src, {
     as: "image",
@@ -39,7 +40,7 @@ export function CityPhoto({ photo, cityName }: { photo: StoredPhoto; cityName: s
           sizes={srcSet ? SIZES : undefined}
           width={photo.width}
           height={photo.height}
-          alt={`${cityName} fotoğrafı`}
+          alt={f(m.city.photoAlt, { city: cityName })}
           // No credentials: Commons answers with CORS headers, and the browser keeps none of its cookies.
           crossOrigin="anonymous"
           // Low on phones, where the first card is the largest paint; on wide screens the preload above is high.
@@ -49,7 +50,7 @@ export function CityPhoto({ photo, cityName }: { photo: StoredPhoto; cityName: s
         />
       </div>
       <figcaption className="mt-1.5 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
-        Fotoğraf:{" "}
+        {m.city.photo}{" "}
         <a href={photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
           {photo.author}
         </a>{" "}
@@ -57,7 +58,7 @@ export function CityPhoto({ photo, cityName }: { photo: StoredPhoto; cityName: s
         <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline">
           {photo.license}
         </a>{" "}
-        · Wikimedia Commons · renkleri düzenlendi
+        · Wikimedia Commons · {m.city.recoloured}
       </figcaption>
     </figure>
   );

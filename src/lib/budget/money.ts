@@ -6,7 +6,9 @@
 /** Largest amount a user can enter (10 million units), so totals stay far inside safe integers. */
 export const MAX_INPUT_MINOR = 10_000_000_00;
 
-export type AmountParse = { ok: true; minor: number } | { ok: false; error: string };
+/** Why a typed amount is refused; the interface words it (messages `budget.amountErrors`). */
+export type AmountError = "empty" | "format" | "zero" | "tooLarge";
+export type AmountParse = { ok: true; minor: number } | { ok: false; error: AmountError };
 
 /**
  * What a person types: "1250", "1250,5", "1250.50". Digits with at most one
@@ -15,12 +17,12 @@ export type AmountParse = { ok: true; minor: number } | { ok: false; error: stri
  */
 export function parseAmountInput(text: string): AmountParse {
   const value = text.trim().replace(/\s/g, "");
-  if (!value) return { ok: false, error: "Tutar gir." };
+  if (!value) return { ok: false, error: "empty" };
   const match = /^(\d{1,9})(?:[.,](\d{1,2}))?$/.exec(value);
-  if (!match) return { ok: false, error: "Yalnızca rakam ve en fazla iki ondalık (virgülle) yaz." };
+  if (!match) return { ok: false, error: "format" };
   const minor = Number(match[1]) * 100 + Number((match[2] ?? "").padEnd(2, "0"));
-  if (minor <= 0) return { ok: false, error: "Sıfırdan büyük bir tutar gir." };
-  if (minor > MAX_INPUT_MINOR) return { ok: false, error: "Tutar çok büyük." };
+  if (minor <= 0) return { ok: false, error: "zero" };
+  if (minor > MAX_INPUT_MINOR) return { ok: false, error: "tooLarge" };
   return { ok: true, minor };
 }
 
@@ -38,9 +40,9 @@ export function amountFromParam(raw: string | null | undefined): number | null {
   return parsed.ok ? parsed.minor : null;
 }
 
-/** Input box form: "1250,5" (Turkish decimal comma). */
-export function amountToInput(minor: number): string {
-  return amountToParam(minor).replace(".", ",");
+/** Input box form: "1250,5" with the Turkish decimal comma, "1250.5" in English. */
+export function amountToInput(minor: number, locale: "tr" | "en" = "tr"): string {
+  return locale === "tr" ? amountToParam(minor).replace(".", ",") : amountToParam(minor);
 }
 
 /** A TRY-per-unit rate as an integer with six decimals (55.618 → 55618000). */
@@ -84,11 +86,11 @@ export function perPersonWhole(minor: number, people: number): number {
   return Number(divRound(BigInt(minor), BigInt(people) * HUNDRED)) * 100;
 }
 
-/** "1.250,50 EUR", "300 EUR" in Turkish formatting with the ISO code. */
-export function formatMinor(minor: number, currency: string): string {
+/** "1.250,50 EUR", "300 EUR" with the ISO code, in Turkish formatting ("1,250.50 EUR" in English). */
+export function formatMinor(minor: number, currency: string, locale: "tr" | "en" = "tr"): string {
   const whole = Math.floor(minor / 100);
   const cents = minor % 100;
-  const grouped = new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 0 }).format(whole);
-  const amount = cents ? `${grouped},${String(cents).padStart(2, "0")}` : grouped;
+  const grouped = new Intl.NumberFormat(locale === "tr" ? "tr-TR" : "en-GB", { maximumFractionDigits: 0 }).format(whole);
+  const amount = cents ? `${grouped}${locale === "tr" ? "," : "."}${String(cents).padStart(2, "0")}` : grouped;
   return currency === "TRY" ? `${amount} ₺` : `${amount} ${currency}`;
 }

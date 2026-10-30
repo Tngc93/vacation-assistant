@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { describeWeek, openStatus, parseOpeningHours } from "@/lib/places/hours";
 import { useMinuteNow } from "@/lib/time/clock";
@@ -12,10 +13,11 @@ import { useMinuteNow } from "@/lib/time/clock";
  * mismatched after hydration.
  */
 export function OpeningHours({ value, timeZone }: { value: string; timeZone: string }) {
+  const i18n = useI18n();
   const week = useMemo(() => parseOpeningHours(value), [value]);
   const now = useMinuteNow();
   if (!week) return null;
-  const status = now ? openStatus(week, now, timeZone) : null;
+  const status = now ? openStatus(week, now, timeZone, i18n) : null;
 
   return (
     <div className="mt-2">
@@ -30,9 +32,9 @@ export function OpeningHours({ value, timeZone }: { value: string; timeZone: str
         </p>
       ) : null}
       <details className="mt-1 text-caption text-ink-muted">
-        <summary className="cursor-pointer select-none underline underline-offset-4">Tüm saatler</summary>
+        <summary className="cursor-pointer select-none underline underline-offset-4">{i18n.m.hours.all}</summary>
         <ul className="mt-1.5 grid gap-0.5 font-mono text-micro tabular">
-          {describeWeek(week).map((line) => (
+          {describeWeek(week, i18n).map((line) => (
             <li key={line}>{line}</li>
           ))}
         </ul>

@@ -7,9 +7,15 @@ function isoDaysFromNow(days: number): string {
 }
 const plan = `/plan?from=IST&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`;
 
-const cards = (page: Page) => page.getByRole("list", { name: "Görülecek yerler" }).getByRole("button");
-const map = (page: Page) => page.getByRole("region", { name: "Mekân haritası" });
-const chips = (page: Page) => page.getByRole("group", { name: "Mekân kategorileri" }).getByRole("button");
+/** The hero's names in each language (the English page's words are longer). */
+const HERO = {
+  tr: { prefix: "", city: "Barselona", list: "Görülecek yerler", map: "Mekân haritası", chips: "Mekân kategorileri", event: "Etkinlik" },
+  en: { prefix: "/en", city: "Barcelona", list: "Sights", map: "Map of places", chips: "Place categories", event: "Event" },
+} as const;
+
+const cards = (page: Page, l: keyof typeof HERO = "tr") => page.getByRole("list", { name: HERO[l].list }).getByRole("button");
+const map = (page: Page, l: keyof typeof HERO = "tr") => page.getByRole("region", { name: HERO[l].map });
+const chips = (page: Page, l: keyof typeof HERO = "tr") => page.getByRole("group", { name: HERO[l].chips }).getByRole("button");
 const SECTIONS = ["yerler", "gun-gun-plan", "konaklama", "ucuslar", "butce"] as const;
 
 /*
@@ -17,11 +23,11 @@ const SECTIONS = ["yerler", "gun-gun-plan", "konaklama", "ucuslar", "butce"] as 
  * after `load` a section may still sit in a hidden holder at the end of <body>. Anything that measures
  * (evaluate, evaluateAll, boundingBox) first waits, web-first, for what it measures to be in place.
  */
-async function heroReady(page: Page) {
+async function heroReady(page: Page, l: keyof typeof HERO = "tr") {
   // The eight place categories; an "Etkinlik" chip joins them only when an event falls in the dates.
-  await expect(chips(page).filter({ hasNotText: "Etkinlik" })).toHaveCount(8);
-  await expect(chips(page).first()).toBeVisible();
-  await expect(cards(page).first()).toBeVisible();
+  await expect(chips(page, l).filter({ hasNotText: HERO[l].event })).toHaveCount(8);
+  await expect(chips(page, l).first()).toBeVisible();
+  await expect(cards(page, l).first()).toBeVisible();
 }
 
 async function sectionsReady(page: Page) {
@@ -36,27 +42,29 @@ async function bottomWithin(page: Page, locator: ReturnType<Page["locator"]>, he
   expect(box!.y + box!.height).toBeLessThanOrEqual(height);
 }
 
-for (const [width, height] of [
-  [1280, 720],
-  [1440, 900],
-  [1512, 982],
-] as const) {
-  test(`at ${width}×${height} the hero fits without scrolling: title, chips, three cards and the map`, async ({ page }) => {
-    await page.setViewportSize({ width, height });
-    await page.goto(plan);
-    await heroReady(page);
-    const hero = page.locator("#yerler");
-    await bottomWithin(page, hero.getByRole("heading", { level: 1, name: "Barselona" }), height);
-    await bottomWithin(page, hero.getByRole("group", { name: "Mekân kategorileri" }), height);
-    for (let i = 0; i < 3; i++) await bottomWithin(page, cards(page).nth(i), height);
-    // The cards are side by side: the third ends inside the carousel, the fourth does not.
-    const list = await page.getByRole("list", { name: "Görülecek yerler" }).boundingBox();
-    const third = await cards(page).nth(2).boundingBox();
-    expect(third!.x + third!.width).toBeLessThanOrEqual(list!.x + list!.width + 1);
-    await bottomWithin(page, map(page), height);
-    await bottomWithin(page, hero, height);
-    expect(await page.evaluate(() => window.scrollY)).toBe(0);
-  });
+for (const l of ["tr", "en"] as const) {
+  for (const [width, height] of [
+    [1280, 720],
+    [1440, 900],
+    [1512, 982],
+  ] as const) {
+    test(`${l}: at ${width}×${height} the hero fits without scrolling: title, chips, three cards and the map`, async ({ page }) => {
+      await page.setViewportSize({ width, height });
+      await page.goto(`${HERO[l].prefix}${plan}`);
+      await heroReady(page, l);
+      const hero = page.locator("#yerler");
+      await bottomWithin(page, hero.getByRole("heading", { level: 1, name: HERO[l].city }), height);
+      await bottomWithin(page, hero.getByRole("group", { name: HERO[l].chips }), height);
+      for (let i = 0; i < 3; i++) await bottomWithin(page, cards(page, l).nth(i), height);
+      // The cards are side by side: the third ends inside the carousel, the fourth does not.
+      const list = await page.getByRole("list", { name: HERO[l].list }).boundingBox();
+      const third = await cards(page, l).nth(2).boundingBox();
+      expect(third!.x + third!.width).toBeLessThanOrEqual(list!.x + list!.width + 1);
+      await bottomWithin(page, map(page, l), height);
+      await bottomWithin(page, hero, height);
+      expect(await page.evaluate(() => window.scrollY)).toBe(0);
+    });
+  }
 }
 
 test("the carousel moves with its arrows and the keyboard, and keeps count", async ({ page }) => {

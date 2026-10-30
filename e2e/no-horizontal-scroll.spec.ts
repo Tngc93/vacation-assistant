@@ -35,6 +35,21 @@ const PAGES = [
   },
   { name: "plan (invalid link)", path: "/plan?from=IST&to=XXX&depart=2020-01-01&pax=12" },
   { name: "styleguide", path: "/styleguide" },
+  // English: longer words in buttons, captions and the receipt.
+  { name: "English home", path: "/en" },
+  {
+    name: "English plan (all city-guide categories)",
+    path: `/en/plan?from=ESB&to=BCN&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=1&cats=see,museum,viewpoint,restaurant,cafe,cocktail,pub,club`,
+  },
+  {
+    name: "English plan (flight tickets)",
+    path: `/en/plan?from=IST&to=MOW&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`,
+  },
+  {
+    name: "English plan (filled budget)",
+    path: `/en/plan?from=ESB&to=LON&depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=4&stay=1234567.89&daily=98765.43&cur=GBP`,
+  },
+  { name: "English plan (invalid link)", path: "/en/plan?from=IST&to=XXX&depart=2020-01-01&pax=12" },
 ];
 
 for (const width of WIDTHS) {

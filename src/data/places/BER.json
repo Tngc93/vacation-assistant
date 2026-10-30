@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "BER",
  "fetchedAt": "2026-10-28T13:54:13.677Z",
  "radiusKm": 3,
@@ -46,6 +46,9 @@
      "id": "way/518071791",
      "name": "Brandenburg Kapısı",
      "localName": "Brandenburger Tor",
+     "labels": {
+      "en": "Brandenburg Gate"
+     },
      "lat": 52.51627,
      "lon": 13.3777,
      "address": "Pariser Platz 1",
@@ -69,11 +72,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
       "fullWidth": 5009
      },
-     "description": "Almanya'nın Berlin şehrinin ana sembollerinden biri"
+     "description": "Almanya'nın Berlin şehrinin ana sembollerinden biri",
+     "descriptionEn": "triumphal arch in Berlin, Germany"
     },
     {
      "id": "relation/2201742",
      "name": "Reichstagsgebäude",
+     "labels": {
+      "en": "Reichstag"
+     },
      "lat": 52.5186,
      "lon": 13.3761,
      "address": "Platz der Republik 1",
@@ -94,11 +101,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Reichstagsgeb%C3%A4ude_von_Westen.jpg",
       "fullWidth": 8483
      },
-     "description": "Alman Federal Meclisi'nin ve 1945'ten önce Weimar Cumhuriyeti'nin kendi adını taşıyan parlamentosunun merkezi"
+     "description": "Alman Federal Meclisi'nin ve 1945'ten önce Weimar Cumhuriyeti'nin kendi adını taşıyan parlamentosunun merkezi",
+     "descriptionEn": "seat of the German Bundestag and, before 1945, the eponymous parliament of the Weimar Republic"
     },
     {
      "id": "way/556435241",
      "name": "Berliner Fernsehturm",
+     "labels": {
+      "en": "Fernsehturm Berlin"
+     },
      "lat": 52.52082,
      "lon": 13.40942,
      "address": "Panoramastraße 1a",
@@ -122,11 +133,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Tv-turm_-_panoramio.jpg",
       "fullWidth": 1447
      },
-     "description": "television tower in Berlin"
+     "description": "television tower in Berlin",
+     "descriptionEn": "television tower in Berlin"
     },
     {
      "id": "way/330840129",
      "name": "Museumsinsel",
+     "labels": {
+      "en": "Museum Island"
+     },
      "lat": 52.52,
      "lon": 13.39718,
      "website": "https://www.museumsinsel-berlin.de/",
@@ -146,11 +161,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg",
       "fullWidth": 5454
      },
-     "description": "İnteraktif olarak faaliyet gösteren Almanya'da yer alan tarihi ve sanat müzesi"
+     "description": "İnteraktif olarak faaliyet gösteren Almanya'da yer alan tarihi ve sanat müzesi",
+     "descriptionEn": "northern part of Spree Island in the Spree river in central Berlin"
     },
     {
      "id": "way/313670734",
      "name": "Berliner Dom",
+     "labels": {
+      "en": "Berlin Cathedral"
+     },
      "lat": 52.51909,
      "lon": 13.40103,
      "address": "Am Lustgarten",
@@ -172,12 +191,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berliner_Dom_von_Humboldt-Box.jpg",
       "fullWidth": 17932
      },
-     "description": "Berlin'de bulunan Protestan kilisesi"
+     "description": "Berlin'de bulunan Protestan kilisesi",
+     "descriptionEn": "main lutheran church in Berlin"
     },
     {
      "id": "node/417346627",
      "name": "Çarli Kontrol Noktası",
      "localName": "Checkpoint Charlie",
+     "labels": {
+      "en": "Checkpoint Charlie"
+     },
      "lat": 52.50743,
      "lon": 13.39038,
      "address": "Friedrichstraße 43-45",
@@ -197,12 +220,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:06_Friedrichstrasse,_Berlin_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
       "fullWidth": 689
      },
-     "description": "border checkpoint between East Berlin and West Berlin"
+     "description": "border checkpoint between East Berlin and West Berlin",
+     "descriptionEn": "border checkpoint between East Berlin and West Berlin"
     },
     {
      "id": "wikidata/Q154828",
      "name": "Berlin Zoolojik Bahçesi",
      "localName": "Berlin Zoological Garden",
+     "labels": {
+      "en": "Berlin Zoological Garden"
+     },
      "lat": 52.50833,
      "lon": 13.3375,
      "wikipediaCount": 49,
@@ -222,7 +249,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Giraffe-berlin-zoo.jpg",
       "fullWidth": 2263
      },
-     "description": "zoo in Germany"
+     "description": "zoo in Germany",
+     "descriptionEn": "zoo in Germany"
     },
     {
      "id": "relation/3200536",
@@ -244,7 +272,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:PotsdamerPlatz_Vogelperspektive_2004_1.jpg",
       "fullWidth": 997
      },
-     "description": "square in Berlin, Germany"
+     "description": "square in Berlin, Germany",
+     "descriptionEn": "square in Berlin, Germany"
     },
     {
      "id": "wikidata/Q160899",
@@ -267,7 +296,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Unter_den_Linden_von_oben.jpg",
       "fullWidth": 1920
      },
-     "description": "street in Berlin, Germany"
+     "description": "street in Berlin, Germany",
+     "descriptionEn": "street in Berlin, Germany"
     },
     {
      "id": "wikidata/Q152783",
@@ -279,11 +309,15 @@
      "kinds": [
       "square"
      ],
-     "description": "square in Berlin, Germany"
+     "description": "square in Berlin, Germany",
+     "descriptionEn": "square in Berlin, Germany"
     },
     {
      "id": "relation/910651",
      "name": "Berlin Hauptbahnhof",
+     "labels": {
+      "en": "Berlin Central Station"
+     },
      "lat": 52.52501,
      "lon": 13.36895,
      "address": "Europaplatz 1",
@@ -303,11 +337,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berl%C3%ADn_hlavn%C3%AD_n%C3%A1dra%C5%BE%C3%AD.jpg",
       "fullWidth": 4720
      },
-     "description": "Almanya'da tren istasyonu"
+     "description": "Almanya'da tren istasyonu",
+     "descriptionEn": "main railway station of Berlin"
     },
     {
      "id": "relation/3007958",
      "name": "Berliner Schloss",
+     "labels": {
+      "en": "Berlin Palace"
+     },
      "lat": 52.51722,
      "lon": 13.40161,
      "address": "Schloßplatz 1",
@@ -328,7 +366,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg",
       "fullWidth": 3078
      },
-     "description": "Almanya, Berlin'da saray"
+     "description": "Almanya, Berlin'da saray",
+     "descriptionEn": "former residence of the Prussian kings, seat of the Humboldt Forum"
     },
     {
      "id": "way/718035022",
@@ -352,12 +391,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Siegessaeule_Berlin09072023.png",
       "fullWidth": 3428
      },
-     "description": "Almanya, Berlin'de bir anıt sütunu"
+     "description": "Almanya, Berlin'de bir anıt sütunu",
+     "descriptionEn": "classical triumphal column in Berlin, Germany"
     },
     {
      "id": "way/172234733",
      "name": "Katledilen Avrupalı Yahudiler Anıtı",
      "localName": "Denkmal für die ermordeten Juden Europas",
+     "labels": {
+      "en": "Memorial to the Murdered Jews of Europe"
+     },
      "lat": 52.5139,
      "lon": 13.37871,
      "address": "Cora-Berliner-Straße 1",
@@ -375,7 +418,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg",
       "fullWidth": 4454
      },
-     "description": "Memorial in Berlin for the Jews murdered under the National Socialist regime"
+     "description": "Memorial in Berlin for the Jews murdered under the National Socialist regime",
+     "descriptionEn": "Memorial in Berlin for the Jews murdered under the National Socialist regime"
     },
     {
      "id": "relation/4211905",
@@ -401,7 +445,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ayuntamiento_Rojo,_Berl%C3%ADn,_Alemania,_2026-05-02,_DD_46.jpg",
       "fullWidth": 7161
      },
-     "description": "Berlin belediye binası"
+     "description": "Berlin belediye binası",
+     "descriptionEn": "city hall of Berlin, Germany"
     },
     {
      "id": "wikidata/Q162684",
@@ -426,11 +471,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:2016_Charite_Hospital.jpg",
       "fullWidth": 930
      },
-     "description": "university hospital in Berlin, Germany"
+     "description": "university hospital in Berlin, Germany",
+     "descriptionEn": "university hospital in Berlin, Germany"
     },
     {
      "id": "way/1034456118",
      "name": "Schloss Bellevue",
+     "labels": {
+      "en": "Bellevue Palace"
+     },
      "lat": 52.51725,
      "lon": 13.35315,
      "address": "Spreeweg 1",
@@ -453,12 +502,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:0_3494_Berlin_-_Schloss_Bellevue.jpg",
       "fullWidth": 2490
      },
-     "description": "Almanya cumhurbaşkanının resmî konutu ve çalışma yeri"
+     "description": "Almanya cumhurbaşkanının resmî konutu ve çalışma yeri",
+     "descriptionEn": "official residence in Berlin for the President of the Federal Republic of Germany"
     },
     {
      "id": "wikidata/Q158058",
      "name": "Bergama Zeus Sunağı",
      "localName": "Pergamon Altar",
+     "labels": {
+      "en": "Pergamon Altar"
+     },
      "lat": 52.52111,
      "lon": 13.39694,
      "wikipediaCount": 36,
@@ -474,6 +527,7 @@
       "fullWidth": 2556
      },
      "description": "ancient Greek building from Pergamon, today in the Antikensammlung Berlin",
+     "descriptionEn": "ancient Greek building from Pergamon, today in the Antikensammlung Berlin",
      "parentId": "Q157298",
      "parentName": "Bergama Müzesi"
     },
@@ -481,6 +535,9 @@
      "id": "wikidata/Q312576",
      "name": "Berlin Devlet Operası",
      "localName": "Berlin State Opera",
+     "labels": {
+      "en": "Berlin State Opera"
+     },
      "lat": 52.51667,
      "lon": 13.39472,
      "wikipediaCount": 36,
@@ -502,11 +559,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_-_Staatsoper_Unter_den_Linden.jpg",
       "fullWidth": 5368
      },
-     "description": "German opera house in Berlin"
+     "description": "German opera house in Berlin",
+     "descriptionEn": "German opera house in Berlin"
     },
     {
      "id": "way/58608090",
      "name": "St. Hedwigs-Kathedrale Berlin",
+     "labels": {
+      "en": "St. Hedwig's Cathedral"
+     },
      "lat": 52.51576,
      "lon": 13.39484,
      "address": "Hinter der Katholischen Kirche 3",
@@ -518,7 +579,8 @@
       "heritage",
       "religious"
      ],
-     "description": "Roman Catholic cathedral in Berlin, Germany"
+     "description": "Roman Catholic cathedral in Berlin, Germany",
+     "descriptionEn": "Roman Catholic cathedral in Berlin, Germany"
     },
     {
      "id": "wikidata/Q694020",
@@ -540,7 +602,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bln_Tiergtn8.jpg",
       "fullWidth": 2272
      },
-     "description": "park in Berlin, Germany"
+     "description": "park in Berlin, Germany",
+     "descriptionEn": "park in Berlin, Germany"
     },
     {
      "id": "wikidata/Q156716",
@@ -563,12 +626,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pariser_Platz_(Berlin-Mitte)_msu-1602-.jpg",
       "fullWidth": 6224
      },
-     "description": "town square in Berlin, Germany"
+     "description": "town square in Berlin, Germany",
+     "descriptionEn": "town square in Berlin, Germany"
     },
     {
      "id": "way/24054915",
      "name": "Yeni Sinagog",
      "localName": "Neue Synagoge",
+     "labels": {
+      "en": "New Synagogue Berlin"
+     },
      "lat": 52.52499,
      "lon": 13.39432,
      "address": "Oranienburger Straße 28-30",
@@ -590,11 +657,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Neue_Synagoge,_Berlin-Mitte,_160328,_ako.jpg",
       "fullWidth": 2882
      },
-     "description": "synagoge in Berlin"
+     "description": "synagoge in Berlin",
+     "descriptionEn": "synagoge in Berlin"
     },
     {
      "id": "way/474111581",
      "name": "St. Marienkirche",
+     "labels": {
+      "en": "Marienkirche (Berlin-Mitte)"
+     },
      "lat": 52.52055,
      "lon": 13.40722,
      "address": "Karl-Liebknecht-Straße 8",
@@ -616,7 +687,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:2018-08-09_DE_Berlin-Mitte,_Marienkirche_(49912530273).jpg",
       "fullWidth": 5671
      },
-     "description": "Bezirk Mitte von Berlin, Almanya'da kilise"
+     "description": "Bezirk Mitte von Berlin, Almanya'da kilise",
+     "descriptionEn": "church in Berlin"
     },
     {
      "id": "way/844740667",
@@ -639,11 +711,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Gendarmenmarkt_2010_11_01.jpg",
       "fullWidth": 1024
      },
-     "description": "Berlin'de bir meydan"
+     "description": "Berlin'de bir meydan",
+     "descriptionEn": "square in Berlin, Germany"
     },
     {
      "id": "way/157390075",
      "name": "Bundeskanzleramt",
+     "labels": {
+      "en": "Federal Chancellery of Germany"
+     },
      "lat": 52.52016,
      "lon": 13.36816,
      "address": "Willy-Brandt-Straße 1",
@@ -664,11 +740,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:07.08.21.Bundeskanzleramt.jpg",
       "fullWidth": 6028
      },
-     "description": "Office of the Federal Chancellor of Germany"
+     "description": "Office of the Federal Chancellor of Germany",
+     "descriptionEn": "Office of the Federal Chancellor of Germany"
     },
     {
      "id": "way/28248283",
      "name": "Französischer Dom",
+     "labels": {
+      "en": "French Cathedral"
+     },
      "lat": 52.5144,
      "lon": 13.39236,
      "address": "Gendarmenmarkt 7",
@@ -689,7 +769,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Franz%C3%B6sischer_Dom_--_2013_--_4581.jpg",
       "fullWidth": 3345
      },
-     "description": "Berlin, Fransız Katedrali"
+     "description": "Berlin, Fransız Katedrali",
+     "descriptionEn": "church in Berlin, Germany"
     },
     {
      "id": "way/217512230",
@@ -716,12 +797,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:150418_Konzerthaus_Berlin.jpg",
       "fullWidth": 4936
      },
-     "description": "concert hall and former theatre in Berlin, Germany"
+     "description": "concert hall and former theatre in Berlin, Germany",
+     "descriptionEn": "concert hall and former theatre in Berlin, Germany"
     },
     {
      "id": "wikidata/Q698950",
      "name": "Berlin Gözlemevi",
      "localName": "Berlin Observatory",
+     "labels": {
+      "en": "Berlin Observatory"
+     },
      "lat": 52.50389,
      "lon": 13.39417,
      "wikipediaCount": 26,
@@ -739,11 +824,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sternwarte_Berlin_Schinkel.jpg",
       "fullWidth": 529
      },
-     "description": "astronomik gözlemevi"
+     "description": "astronomik gözlemevi",
+     "descriptionEn": "astronomical observatory"
     },
     {
      "id": "relation/3626485",
      "name": "Philharmonie",
+     "labels": {
+      "en": "Berliner Philharmonie"
+     },
      "lat": 52.50999,
      "lon": 13.36959,
      "address": "Herbert-von-Karajan-Straße 1",
@@ -758,6 +847,7 @@
       "performingArts"
      ],
      "description": "concert hall in Berlin, Germany",
+     "descriptionEn": "concert hall in Berlin, Germany",
      "parentId": "Q386482",
      "parentName": "Kulturforum"
     },
@@ -772,7 +862,8 @@
       "heritage",
       "square"
      ],
-     "description": "square in Berlin, Germany"
+     "description": "square in Berlin, Germany",
+     "descriptionEn": "square in Berlin, Germany"
     },
     {
      "id": "way/43347270",
@@ -798,7 +889,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Gendarmenmarkt,_Deutscher_Dom_02.jpg",
       "fullWidth": 2768
      },
-     "description": "Bezirk Mitte von Berlin, Almanya'da kilise"
+     "description": "Bezirk Mitte von Berlin, Almanya'da kilise",
+     "descriptionEn": "church building in Mitte, Germany"
     },
     {
      "id": "wikidata/Q702512",
@@ -821,7 +913,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Altes_Museum_%26_Lustgarten.jpg",
       "fullWidth": 1139
      },
-     "description": "square in Berlin"
+     "description": "square in Berlin",
+     "descriptionEn": "square in Berlin"
     },
     {
      "id": "way/24240381",
@@ -845,7 +938,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:150214_Neue_Wache_Berlin.jpg",
       "fullWidth": 4563
      },
-     "description": "historical building in Berlin, Germany"
+     "description": "historical building in Berlin, Germany",
+     "descriptionEn": "historical building in Berlin, Germany"
     },
     {
      "id": "wikidata/Q687694",
@@ -872,7 +966,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Behrenstra%C3%9Fe,_Komische_Oper_02.jpg",
       "fullWidth": 2680
      },
-     "description": "opera house"
+     "description": "opera house",
+     "descriptionEn": "opera house"
     },
     {
      "id": "wikidata/Q317094",
@@ -894,12 +989,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Siegess%C3%A4ule_View4.JPG",
       "fullWidth": 2288
      },
-     "description": "thoroughfare in Berlin, Germany"
+     "description": "thoroughfare in Berlin, Germany",
+     "descriptionEn": "thoroughfare in Berlin, Germany"
     },
     {
      "id": "wikidata/Q698497",
      "name": "Berlin Alexanderplatz Garı",
      "localName": "Berlin Alexanderplatz station",
+     "labels": {
+      "en": "Berlin Alexanderplatz station"
+     },
      "lat": 52.52139,
      "lon": 13.41194,
      "wikipediaCount": 23,
@@ -908,12 +1007,16 @@
       "heritage",
       "station"
      ],
-     "description": "Almanya'da tren istasyonu"
+     "description": "Almanya'da tren istasyonu",
+     "descriptionEn": "German train station"
     },
     {
      "id": "wikidata/Q702402",
      "name": "Berlin Friedrichstraße Garı",
      "localName": "Berlin-Friedrichstraße railway station",
+     "labels": {
+      "en": "Berlin-Friedrichstraße railway station"
+     },
      "lat": 52.52028,
      "lon": 13.38694,
      "wikipediaCount": 23,
@@ -923,7 +1026,8 @@
       "office",
       "station"
      ],
-     "description": "Berlin'de tren istasyonu"
+     "description": "Berlin'de tren istasyonu",
+     "descriptionEn": "railway station in Berlin"
     },
     {
      "id": "wikidata/Q269622",
@@ -935,7 +1039,8 @@
      "kinds": [
       "adminArea"
      ],
-     "description": "human settlement in Germany"
+     "description": "human settlement in Germany",
+     "descriptionEn": "human settlement in Germany"
     },
     {
      "id": "wikidata/Q316893",
@@ -958,11 +1063,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Downtown_Friedrichstra%C3%9Fe.jpg",
       "fullWidth": 1024
      },
-     "description": "Berlin'de bir cadde"
+     "description": "Berlin'de bir cadde",
+     "descriptionEn": "street in Berlin, Germany"
     },
     {
      "id": "way/183272253",
      "name": "Das Center am Potsdamer Platz",
+     "labels": {
+      "en": "Sony Center"
+     },
      "lat": 52.51018,
      "lon": 13.37352,
      "website": "https://www.das-center-am-potsdamer-platz.de/",
@@ -978,7 +1087,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Sony_Center_Berlin_Innenansicht_72dpi_01.jpg",
       "fullWidth": 1224
      },
-     "description": "ensemble of buildings in Berlin, Germany"
+     "description": "ensemble of buildings in Berlin, Germany",
+     "descriptionEn": "ensemble of buildings in Berlin, Germany"
     },
     {
      "id": "wikidata/Q565670",
@@ -1002,11 +1112,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Friedrichstadtpalast-BLN.jpg",
       "fullWidth": 1024
      },
-     "description": "revue theatre in Berlin"
+     "description": "revue theatre in Berlin",
+     "descriptionEn": "revue theatre in Berlin"
     },
     {
      "id": "way/41368167",
      "name": "Sowjetisches Ehrenmal Tiergarten",
+     "labels": {
+      "en": "Soviet War Memorial"
+     },
      "lat": 52.51664,
      "lon": 13.37195,
      "wikipediaCount": 22,
@@ -1027,6 +1141,7 @@
       "fullWidth": 3704
      },
      "description": "Almanya'da mezarlık",
+     "descriptionEn": "war memorial in Berlin-Tiergarten, Germany",
      "parentId": "Q694020",
      "parentName": "Großer Tiergarten"
     },
@@ -1040,7 +1155,8 @@
      "kinds": [
       "heritage"
      ],
-     "description": "fountain in Berlin, Germany"
+     "description": "fountain in Berlin, Germany",
+     "descriptionEn": "fountain in Berlin, Germany"
     },
     {
      "id": "way/312391532",
@@ -1064,12 +1180,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Nikolaivrtl_1a.jpg",
       "fullWidth": 1420
      },
-     "description": "old quarter of the German capital of Berlin"
+     "description": "old quarter of the German capital of Berlin",
+     "descriptionEn": "old quarter of the German capital of Berlin"
     },
     {
      "id": "wikidata/Q30447692",
      "name": "İbn Rüşd-Goethe Camii",
      "localName": "Ibn Rushd-Goethe mosque",
+     "labels": {
+      "en": "Ibn Rushd-Goethe mosque"
+     },
      "lat": 52.525,
      "lon": 13.34944,
      "wikipediaCount": 20,
@@ -1078,7 +1198,8 @@
       "organization",
       "religious"
      ],
-     "description": "mosque in Germany"
+     "description": "mosque in Germany",
+     "descriptionEn": "mosque in Germany"
     },
     {
      "id": "way/43723722",
@@ -1090,7 +1211,8 @@
      "kinds": [
       "heritage"
      ],
-     "description": "collection of cultural buildings in Berlin, Germany"
+     "description": "collection of cultural buildings in Berlin, Germany",
+     "descriptionEn": "collection of cultural buildings in Berlin, Germany"
     }
    ]
   },
@@ -1101,6 +1223,9 @@
     {
      "id": "way/313659704",
      "name": "Pergamonmuseum",
+     "labels": {
+      "en": "Pergamon Museum"
+     },
      "lat": 52.52091,
      "lon": 13.39647,
      "address": "Am Kupfergraben 5",
@@ -1123,12 +1248,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pergamonmuseum_Front.jpg",
       "fullWidth": 1024
      },
-     "description": "museum building in Berlin, part of the Museumsinsel, presents the Vorderasiatisches Museum, the Museum für Islamische Kunst and parts of the Antikensammlung"
+     "description": "museum building in Berlin, part of the Museumsinsel, presents the Vorderasiatisches Museum, the Museum für Islamische Kunst and parts of the Antikensammlung",
+     "descriptionEn": "museum building in Berlin, part of the Museumsinsel, presents the Vorderasiatisches Museum, the Museum für Islamische Kunst and parts of the Antikensammlung"
     },
     {
      "id": "wikidata/Q154996",
      "name": "Charlottenburg Sarayı",
      "localName": "Charlottenburg Palace",
+     "labels": {
+      "en": "Charlottenburg Palace"
+     },
      "lat": 52.52111,
      "lon": 13.29583,
      "wikipediaCount": 47,
@@ -1148,7 +1277,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Charlottenburg_2025.jpg",
       "fullWidth": 7728
      },
-     "description": "Berlin'in en büyük sarayı ve Hohenzollern Hanedanı'nın Berlin'deki tek mirası"
+     "description": "Berlin'in en büyük sarayı ve Hohenzollern Hanedanı'nın Berlin'deki tek mirası",
+     "descriptionEn": "Baroque palace in Berlin, Germany"
     },
     {
      "id": "way/18578139",
@@ -1175,7 +1305,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Neues_Museum_-_Joy_of_Museums.jpg",
       "fullWidth": 6000
      },
-     "description": "Name of one of the museum buildings on the Museum Island in Berlin, Germany"
+     "description": "Name of one of the museum buildings on the Museum Island in Berlin, Germany",
+     "descriptionEn": "Name of one of the museum buildings on the Museum Island in Berlin, Germany"
     },
     {
      "id": "relation/3619",
@@ -1203,11 +1334,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg",
       "fullWidth": 2000
      },
-     "description": "antiquities museum in Berlin, Germany"
+     "description": "antiquities museum in Berlin, Germany",
+     "descriptionEn": "antiquities museum in Berlin, Germany"
     },
     {
      "id": "relation/4211594",
      "name": "Bode-Museum",
+     "labels": {
+      "en": "Bode Museum"
+     },
      "lat": 52.52165,
      "lon": 13.39502,
      "address": "Am Kupfergraben 1-3",
@@ -1230,12 +1365,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg",
       "fullWidth": 5454
      },
-     "description": "art museum in Berlin"
+     "description": "art museum in Berlin",
+     "descriptionEn": "art museum in Berlin"
     },
     {
      "id": "wikidata/Q254156",
      "name": "Berlin Mısır Müzesi",
      "localName": "Egyptian Museum of Berlin",
+     "labels": {
+      "en": "Egyptian Museum of Berlin"
+     },
      "lat": 52.52024,
      "lon": 13.39774,
      "wikipediaCount": 40,
@@ -1255,12 +1394,16 @@
       "fullWidth": 6000
      },
      "description": "part of the Neues Museum, collection of Ancient Egyptian artifacts",
+     "descriptionEn": "part of the Neues Museum, collection of Ancient Egyptian artifacts",
      "parentId": "Q157316",
      "parentName": "Neues Museum"
     },
     {
      "id": "relation/3626233",
      "name": "Gemäldegalerie am Kulturforum",
+     "labels": {
+      "en": "Gemäldegalerie Berlin"
+     },
      "lat": 52.50851,
      "lon": 13.36493,
      "website": "https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/home/",
@@ -1281,7 +1424,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kulturforum.Berlin.Portal.jpg",
       "fullWidth": 10368
      },
-     "description": "art museum in Berlin, Germany"
+     "description": "art museum in Berlin, Germany",
+     "descriptionEn": "art museum in Berlin, Germany"
     },
     {
      "id": "way/313670733",
@@ -1308,11 +1452,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg",
       "fullWidth": 2272
      },
-     "description": "art museum in Berlin, Germany"
+     "description": "art museum in Berlin, Germany",
+     "descriptionEn": "art museum in Berlin, Germany"
     },
     {
      "id": "way/302942554",
      "name": "Jüdisches Museum",
+     "labels": {
+      "en": "Jewish Museum Berlin"
+     },
      "lat": 52.50194,
      "lon": 13.39624,
      "address": "Lindenstraße 9-14",
@@ -1334,11 +1482,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_J%C3%BCdisches_Museum_und_der_Libeskind-Bau_(cropped).jpg",
       "fullWidth": 9267
      },
-     "description": "museum in Berlin"
+     "description": "museum in Berlin",
+     "descriptionEn": "museum in Berlin"
     },
     {
      "id": "node/538692583",
      "name": "Museum für Naturkunde",
+     "labels": {
+      "en": "Museum für Naturkunde - Leibniz Institute for Evolution and Biodiversity Science"
+     },
      "lat": 52.53049,
      "lon": 13.37912,
      "address": "Invalidenstraße 43",
@@ -1361,7 +1513,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Invalidenstrasse_43,_Museum_f%C3%BCr_Naturkunde.jpg",
       "fullWidth": 2247
      },
-     "description": "natural history museum in Berlin, Germany"
+     "description": "natural history museum in Berlin, Germany",
+     "descriptionEn": "natural history museum in Berlin, Germany"
     },
     {
      "id": "node/3203167561",
@@ -1387,11 +1540,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Unter_den_Linden,_Zeughaus_09.jpg",
       "fullWidth": 2839
      },
-     "description": "museum of German history in Berlin"
+     "description": "museum of German history in Berlin",
+     "descriptionEn": "museum of German history in Berlin"
     },
     {
      "id": "way/31622818",
      "name": "Deutsches Technikmuseum",
+     "labels": {
+      "en": "German Museum of Technology"
+     },
      "lat": 52.49721,
      "lon": 13.3765,
      "address": "Trebbiner Straße 9",
@@ -1413,11 +1570,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin-49410.jpg",
       "fullWidth": 5060
      },
-     "description": "museum in Berlin, Germany"
+     "description": "museum in Berlin, Germany",
+     "descriptionEn": "museum in Berlin, Germany"
     },
     {
      "id": "way/23813200",
      "name": "Nikolaikirche",
+     "labels": {
+      "en": "Nikolaikirche (Berlin)"
+     },
      "lat": 52.51682,
      "lon": 13.40751,
      "address": "Nikolaikirchplatz",
@@ -1439,7 +1600,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:View_Berlin_TV_Tower_Jan2015_img4.jpg",
       "fullWidth": 5472
      },
-     "description": "Bezirk Mitte von Berlin, Almanya'da kilise"
+     "description": "Bezirk Mitte von Berlin, Almanya'da kilise",
+     "descriptionEn": "church in Berlin, Germany"
     },
     {
      "id": "node/8413352835",
@@ -1465,7 +1627,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:At_Berlin_2024_241.jpg",
       "fullWidth": 6960
      },
-     "description": "museum in Berlin, Germany"
+     "description": "museum in Berlin, Germany",
+     "descriptionEn": "museum in Berlin, Germany"
     },
     {
      "id": "way/25652321",
@@ -1482,6 +1645,7 @@
       "organization"
      ],
      "description": "art museum in Berlin, Germany",
+     "descriptionEn": "art museum in Berlin, Germany",
      "parentId": "Q700216",
      "parentName": "Berlin Devlet Müzeleri"
     },
@@ -1489,6 +1653,9 @@
      "id": "wikidata/Q414110",
      "name": "Sanat Akademisi (Berlin)",
      "localName": "Academy of Arts, Berlin",
+     "labels": {
+      "en": "Academy of Arts, Berlin"
+     },
      "lat": 52.515,
      "lon": 13.37944,
      "wikipediaCount": 24,
@@ -1510,12 +1677,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Akademie_der_k%C3%BCnste_berlin.JPG",
       "fullWidth": 3072
      },
-     "description": "national German academic institution for the advancement of the arts; created in 1993 through the merger of the West and East German academies"
+     "description": "national German academic institution for the advancement of the arts; created in 1993 through the merger of the West and East German academies",
+     "descriptionEn": "national German academic institution for the advancement of the arts; created in 1993 through the merger of the West and East German academies"
     },
     {
      "id": "wikidata/Q700216",
      "name": "Berlin Devlet Müzeleri",
      "localName": "Staatliche Museen zu Berlin",
+     "labels": {
+      "en": "Staatliche Museen zu Berlin"
+     },
      "lat": 52.50929,
      "lon": 13.3645,
      "wikipediaCount": 23,
@@ -1534,11 +1705,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Institut_f%C3%BCr_Museumsforschung.jpg",
       "fullWidth": 4000
      },
-     "description": "group of institutions in Berlin, Germany"
+     "description": "group of institutions in Berlin, Germany",
+     "descriptionEn": "group of institutions in Berlin, Germany"
     },
     {
      "id": "node/1860480265",
      "name": "Hamburger Bahnhof - Nationalgalerie der Gegenwart",
+     "labels": {
+      "en": "Hamburger Bahnhof"
+     },
      "lat": 52.52844,
      "lon": 13.37204,
      "address": "Invalidenstraße 50-51",
@@ -1560,11 +1735,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hamburger_Bahnhof,_Berlin,_Eingangsbereich-49290.jpg",
       "fullWidth": 3606
      },
-     "description": "museum of contemporary art located in a former railway station in Berlin-Moabit"
+     "description": "museum of contemporary art located in a former railway station in Berlin-Moabit",
+     "descriptionEn": "museum of contemporary art located in a former railway station in Berlin-Moabit"
     },
     {
      "id": "node/2818117012",
      "name": "Schwules Museum *",
+     "labels": {
+      "en": "Schwules Museum"
+     },
      "lat": 52.50425,
      "lon": 13.35822,
      "address": "Lützowstraße 73",
@@ -1587,11 +1766,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Schwules_Museum_Berlin,_Bibliothek.jpg",
       "fullWidth": 3199
      },
-     "description": "museum of LGBTQ history in Berlin, Germany"
+     "description": "museum of LGBTQ history in Berlin, Germany",
+     "descriptionEn": "museum of LGBTQ history in Berlin, Germany"
     },
     {
      "id": "way/24368681",
      "name": "Topographie des Terrors",
+     "labels": {
+      "en": "Topography of Terror"
+     },
      "lat": 52.50619,
      "lon": 13.38434,
      "address": "Niederkirchnerstraße 8",
@@ -1613,12 +1796,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Topographie_des_Terrors_Neubau.jpg",
       "fullWidth": 1995
      },
-     "description": "military museum"
+     "description": "military museum",
+     "descriptionEn": "military museum"
     },
     {
      "id": "way/1065864180",
      "name": "Dünya Kültürleri Evi",
      "localName": "Haus der Kulturen der Welt",
+     "labels": {
+      "en": "Haus der Kulturen der Welt"
+     },
      "lat": 52.51874,
      "lon": 13.36485,
      "address": "John-Foster-Dulles-Allee 10",
@@ -1645,7 +1832,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Kongresshalle_BW_3.jpg",
       "fullWidth": 3375
      },
-     "description": "exhibition space and events venue in Berlin"
+     "description": "exhibition space and events venue in Berlin",
+     "descriptionEn": "exhibition space and events venue in Berlin"
     },
     {
      "id": "way/33743630",
@@ -1671,12 +1859,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlinische_Galerie_aussen.JPG",
       "fullWidth": 2138
      },
-     "description": "Berlin'de bir müze"
+     "description": "Berlin'de bir müze",
+     "descriptionEn": "museum of modern art, photography and architecture in Berlin's Kreuzberg district"
     },
     {
      "id": "wikidata/Q811389",
      "name": "Bauhaus Arşivi",
      "localName": "Bauhaus-Archiv",
+     "labels": {
+      "en": "Bauhaus-Archiv"
+     },
      "lat": 52.50634,
      "lon": 13.35383,
      "wikipediaCount": 19,
@@ -1697,12 +1889,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus_archiv_berlijn.JPG",
       "fullWidth": 2048
      },
-     "description": "museum and archive in Berlin"
+     "description": "museum and archive in Berlin",
+     "descriptionEn": "museum and archive in Berlin"
     },
     {
      "id": "wikidata/Q688353",
      "name": "Berlin Etnoloji Müzesi",
      "localName": "Ethnological Museum Berlin",
+     "labels": {
+      "en": "Ethnological Museum Berlin"
+     },
      "lat": 52.5175,
      "lon": 13.40278,
      "wikipediaCount": 18,
@@ -1721,11 +1917,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Humboldt_Forum-9148.jpg",
       "fullWidth": 5472
      },
-     "description": "museum in Berlin (part of Berlin State Museums)"
+     "description": "museum in Berlin (part of Berlin State Museums)",
+     "descriptionEn": "museum in Berlin (part of Berlin State Museums)"
     },
     {
      "id": "way/175149971",
      "name": "DDR-Museum",
+     "labels": {
+      "en": "DDR Museum"
+     },
      "lat": 52.51942,
      "lon": 13.40226,
      "address": "Karl-Liebknecht-Straße 1",
@@ -1747,11 +1947,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Spree_-_panoramio_(3).jpg",
       "fullWidth": 1920
      },
-     "description": "Berlin museum showing everyday life in East Germany"
+     "description": "Berlin museum showing everyday life in East Germany",
+     "descriptionEn": "Berlin museum showing everyday life in East Germany"
     },
     {
      "id": "node/2401869345",
      "name": "Mauermuseum",
+     "labels": {
+      "en": "Wall Museum"
+     },
      "lat": 52.50719,
      "lon": 13.39068,
      "address": "Friedrichstraße 43-45",
@@ -1773,11 +1977,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin-Mauermuseum_am_Checkpoint_Charlie.jpg",
       "fullWidth": 1500
      },
-     "description": "museum in Berlin, Germany"
+     "description": "museum in Berlin, Germany",
+     "descriptionEn": "museum in Berlin, Germany"
     },
     {
      "id": "relation/28134",
      "name": "Kunstgewerbemuseum",
+     "labels": {
+      "en": "Kunstgewerbemuseum Berlin"
+     },
      "lat": 52.5097,
      "lon": 13.36739,
      "website": "https://www.smb.museum/museen-einrichtungen/kunstgewerbemuseum/home/",
@@ -1799,12 +2007,16 @@
       "fullWidth": 1136
      },
      "description": "museum of Decorative Arts in Berlin",
+     "descriptionEn": "museum of Decorative Arts in Berlin",
      "parentId": "Q700216",
      "parentName": "Berlin Devlet Müzeleri"
     },
     {
      "id": "way/22990151",
      "name": "Musikinstrumenten-Museum",
+     "labels": {
+      "en": "Berlin Musical Instrument Museum"
+     },
      "lat": 52.51049,
      "lon": 13.37084,
      "address": "Tiergartenstraße 1",
@@ -1827,12 +2039,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Musikinstrumentenmuseum_01.jpg",
       "fullWidth": 3264
      },
-     "description": "museum in Germany"
+     "description": "museum in Germany",
+     "descriptionEn": "museum in Germany"
     },
     {
      "id": "wikidata/Q1954632",
      "name": "Museum für Islamische Kunst",
      "localName": "Museum of Islamic Art",
+     "labels": {
+      "en": "Museum of Islamic Art"
+     },
      "lat": 52.5208,
      "lon": 13.3964,
      "wikipediaCount": 15,
@@ -1852,12 +2068,16 @@
       "fullWidth": 2450
      },
      "description": "museum in Berlin, Germany",
+     "descriptionEn": "museum in Berlin, Germany",
      "parentId": "Q157298",
      "parentName": "Bergama Müzesi"
     },
     {
      "id": "relation/11516702",
      "name": "Gropius-Bau",
+     "labels": {
+      "en": "Martin-Gropius-Bau"
+     },
      "lat": 52.50672,
      "lon": 13.38193,
      "address": "Niederkirchnerstraße 7",
@@ -1882,7 +2102,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Martin-Gropius-Bau_Berlin_cropped.jpg",
       "fullWidth": 2350
      },
-     "description": "museum in Berlin-Kreuzberg, Germany"
+     "description": "museum in Berlin-Kreuzberg, Germany",
+     "descriptionEn": "museum in Berlin-Kreuzberg, Germany"
     },
     {
      "id": "wikidata/Q162610",
@@ -1905,7 +2126,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg",
       "fullWidth": 2272
      },
-     "description": "national gallery of Germany at Berlin"
+     "description": "national gallery of Germany at Berlin",
+     "descriptionEn": "national gallery of Germany at Berlin"
     },
     {
      "id": "wikidata/Q542084",
@@ -1929,12 +2151,16 @@
       "fullWidth": 1800
      },
      "description": "archaeological museum in Berlin",
+     "descriptionEn": "archaeological museum in Berlin",
      "parentId": "Q157298",
      "parentName": "Bergama Müzesi"
     },
     {
      "id": "way/194422265",
      "name": "James-Simon-Galerie",
+     "labels": {
+      "en": "James Simon Gallery"
+     },
      "lat": 52.51993,
      "lon": 13.39701,
      "website": "https://www.museumsinsel-berlin.de/",
@@ -1945,11 +2171,15 @@
       "museum",
       "organization"
      ],
-     "description": "visitor center and art museum in Berlin"
+     "description": "visitor center and art museum in Berlin",
+     "descriptionEn": "visitor center and art museum in Berlin"
     },
     {
      "id": "way/22990276",
      "name": "Kupferstichkabinett",
+     "labels": {
+      "en": "Kupferstichkabinett Berlin"
+     },
      "lat": 52.50841,
      "lon": 13.36666,
      "website": "https://www.smb.museum/museen-einrichtungen/kupferstichkabinett/home/",
@@ -1971,6 +2201,7 @@
       "fullWidth": 3264
      },
      "description": "prints museum in Berlin, Germany",
+     "descriptionEn": "prints museum in Berlin, Germany",
      "parentId": "Q700216",
      "parentName": "Berlin Devlet Müzeleri"
     },
@@ -1999,7 +2230,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:M%C3%A4rkisches_Museum_Berlin.jpg",
       "fullWidth": 2702
      },
-     "description": "museum of the city of Berlin and the region around Berlin in Berlin"
+     "description": "museum of the city of Berlin and the region around Berlin in Berlin",
+     "descriptionEn": "museum of the city of Berlin and the region around Berlin in Berlin"
     },
     {
      "id": "wikidata/Q370045",
@@ -2023,6 +2255,7 @@
       "fullWidth": 5472
      },
      "description": "museum in Berlin, Germany",
+     "descriptionEn": "museum in Berlin, Germany",
      "parentId": "Q20196262",
      "parentName": "Humboldt Forumu"
     },
@@ -2050,11 +2283,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Anne-frank-zentrum.jpg",
       "fullWidth": 2448
      },
-     "description": "museum"
+     "description": "museum",
+     "descriptionEn": "museum"
     },
     {
      "id": "node/73696610",
      "name": "Gedenkstätte Deutscher Widerstand",
+     "labels": {
+      "en": "German Resistance Memorial Center"
+     },
      "lat": 52.50761,
      "lon": 13.36299,
      "address": "Stauffenbergstraße 13-14",
@@ -2077,11 +2314,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bendlerblock.jpg",
       "fullWidth": 1600
      },
-     "description": "memorial and museum in Berlin, Germany"
+     "description": "memorial and museum in Berlin, Germany",
+     "descriptionEn": "memorial and museum in Berlin, Germany"
     },
     {
      "id": "node/3749451170",
      "name": "Deutsches Spionagemuseum",
+     "labels": {
+      "en": "Germany Spy Museum"
+     },
      "lat": 52.50901,
      "lon": 13.37929,
      "address": "Leipziger Platz 9",
@@ -2093,7 +2334,8 @@
       "museum",
       "organization"
      ],
-     "description": "museum in Berlin"
+     "description": "museum in Berlin",
+     "descriptionEn": "museum in Berlin"
     },
     {
      "id": "way/285972948",
@@ -2121,7 +2363,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Nikolaiviertel,_Palais_Ephraim.jpg",
       "fullWidth": 1678
      },
-     "description": "Rokoko building in Berlin. Location for special exhibitions by the Stadtmuseum Berlin on wide-ranging themes related to the history and culture of Berlin."
+     "description": "Rokoko building in Berlin. Location for special exhibitions by the Stadtmuseum Berlin on wide-ranging themes related to the history and culture of Berlin.",
+     "descriptionEn": "Rokoko building in Berlin. Location for special exhibitions by the Stadtmuseum Berlin on wide-ranging themes related to the history and culture of Berlin."
     }
    ]
   },
@@ -2132,6 +2375,9 @@
     {
      "id": "node/2432753840",
      "name": "Reichstagskuppel",
+     "labels": {
+      "en": "Reichstag dome"
+     },
      "lat": 52.51859,
      "lon": 13.37611,
      "address": "Platz der Republik 1",
@@ -2150,6 +2396,7 @@
       "fullWidth": 900
      },
      "description": "addition to the Reichstag by Norman Foster 1995–1999",
+     "descriptionEn": "addition to the Reichstag by Norman Foster 1995–1999",
      "parentId": "Q151897",
      "parentName": "Reichstag"
     },
@@ -2597,6 +2844,9 @@
     {
      "id": "node/1412218896",
      "name": "Cafe Einstein",
+     "labels": {
+      "en": "Café Einstein Unter den Linden"
+     },
      "lat": 52.5171,
      "lon": 13.38595,
      "address": "Unter den Linden 42",
@@ -2615,7 +2865,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_Einstein_Unter_den_Linden_Berlin.jpg",
       "fullWidth": 640
      },
-     "description": "café"
+     "description": "café",
+     "descriptionEn": "café"
     },
     {
      "id": "node/336139006",
@@ -2868,7 +3119,8 @@
      "lat": 52.53194,
      "lon": 13.41156,
      "wikidataId": "Q141865661",
-     "description": "restaurant, cocktail bar and event venue in Berlin, Germany"
+     "description": "restaurant, cocktail bar and event venue in Berlin, Germany",
+     "descriptionEn": "restaurant, cocktail bar and event venue in Berlin, Germany"
     }
    ]
   },
@@ -2974,7 +3226,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Schokoladen_ackerstr_2017-05-09.png",
       "fullWidth": 2727
      },
-     "description": "chocolate factory turned music venue"
+     "description": "chocolate factory turned music venue",
+     "descriptionEn": "chocolate factory turned music venue"
     },
     {
      "id": "node/322178039",
@@ -3242,7 +3495,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Dircksenstrasse_40,_Mietshaus.jpg",
       "fullWidth": 1453
      },
-     "description": "jazz club in Berlin"
+     "description": "jazz club in Berlin",
+     "descriptionEn": "jazz club in Berlin"
     },
     {
      "id": "node/910429971",
@@ -3257,6 +3511,9 @@
     {
      "id": "node/429735547",
      "name": "Clärchens Ballhaus",
+     "labels": {
+      "en": "Clärchens Ballroom"
+     },
      "lat": 52.52647,
      "lon": 13.39691,
      "address": "Auguststraße 24",
@@ -3274,7 +3531,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mitte,_Auguststrasse_24-25,_Claerchens_Ballhaus.jpg",
       "fullWidth": 1775
      },
-     "description": "Ballroom in Berlin, Germany"
+     "description": "Ballroom in Berlin, Germany",
+     "descriptionEn": "Ballroom in Berlin, Germany"
     },
     {
      "id": "way/36908987",
@@ -3306,7 +3564,8 @@
      "openingHours": "\"zu Veranstaltungen\"",
      "wikidataId": "Q1724204",
      "detailed": true,
-     "description": "event location, a former theatre with concert hall, later cinema and discotheque, in Schöneberg, Berlin, Germany"
+     "description": "event location, a former theatre with concert hall, later cinema and discotheque, in Schöneberg, Berlin, Germany",
+     "descriptionEn": "event location, a former theatre with concert hall, later cinema and discotheque, in Schöneberg, Berlin, Germany"
     },
     {
      "id": "node/7230925407",
@@ -3347,7 +3606,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Ritterstra%C3%9Fe_Aqua_Carr%C3%A9_Haus_D.jpg",
       "fullWidth": 2448
      },
-     "description": "techno club in Berlin"
+     "description": "techno club in Berlin",
+     "descriptionEn": "techno club in Berlin"
     },
     {
      "id": "node/3830239588",
@@ -3440,7 +3700,8 @@
      "lon": 13.41693,
      "website": "https://www.goldengate-berlin.de/",
      "wikidataId": "Q21036515",
-     "description": "club in Berlin"
+     "description": "club in Berlin",
+     "descriptionEn": "club in Berlin"
     },
     {
      "id": "way/136852556",
@@ -3466,11 +3727,15 @@
      "address": "Holzmarktstraße 25",
      "website": "http://www.katerblau.de/",
      "wikidataId": "Q2658747",
-     "description": "techno club in Berlin"
+     "description": "techno club in Berlin",
+     "descriptionEn": "techno club in Berlin"
     },
     {
      "id": "node/729294555",
      "name": "Kit Kat Club",
+     "labels": {
+      "en": "KitKatClub"
+     },
      "lat": 52.51121,
      "lon": 13.41692,
      "address": "Köpenicker Straße 76",
@@ -3486,7 +3751,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Kit-Kat_Club_6454.jpg",
       "fullWidth": 7107
      },
-     "description": "Berlin nightclub"
+     "description": "Berlin nightclub",
+     "descriptionEn": "Berlin nightclub"
     },
     {
      "id": "node/12137704154",

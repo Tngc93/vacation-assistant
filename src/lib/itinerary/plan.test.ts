@@ -89,7 +89,7 @@ describe("buildItinerary", () => {
       for (const s of daytime) expect(toMinutes(s.end)).toBeLessThanOrEqual(ITINERARY.daytimeEnd);
     }
     const full = plan.days[1];
-    expect(full.tags).toEqual(["TAM GÜN"]);
+    expect(full.tags).toEqual(["full"]);
     expect(full.window).toEqual({ start: "09:00", end: "21:30" });
     // More than the old fixed four: the day is filled by time.
     expect(full.stops.filter((s) => s.kind === "daytime").length).toBeGreaterThan(4);
@@ -136,13 +136,13 @@ describe("buildItinerary", () => {
     const plan = buildItinerary(base);
     expect(plan.basis).toBe("assumed");
     const [first, last] = [plan.days[0], plan.days.at(-1)!];
-    expect(first.tags).toEqual(["VARIŞ GÜNÜ", "YARIM GÜN"]);
+    expect(first.tags).toEqual(["arrival", "half"]);
     expect(first.window).toEqual({ start: "13:00", end: "21:30" });
     const firstDaytime = first.stops.filter((s) => s.kind === "daytime");
     expect(firstDaytime.length).toBeGreaterThan(0);
     expect(firstDaytime.every((s) => s.start >= "13:00" && s.end <= "18:00")).toBe(true);
     expect(first.stops.at(-1)?.kind).toBe("evening");
-    expect(last.tags).toEqual(["DÖNÜŞ GÜNÜ", "YARIM GÜN"]);
+    expect(last.tags).toEqual(["return", "half"]);
     expect(last.window).toEqual({ start: "09:00", end: "13:00" });
     expect(last.stops.length).toBeGreaterThan(0);
     expect(last.stops.every((s) => s.end <= "13:00" && s.kind === "daytime")).toBe(true);
@@ -172,13 +172,13 @@ describe("buildItinerary", () => {
       flight: { arrive: { date: "2026-11-14", time: "19:30" }, leave: { date: "2026-11-18", time: "06:55" }, label: "PC 438" },
     });
     expect(evening.days[0]).toMatchObject({
-      note: "Bu uçuşla varış 19:30'da; ilk gün yalnızca yerleşme ve akşam yemeği.",
+      note: { kind: "arrive", time: "19:30", evening: true },
       flightNote: true,
       window: { start: "21:30", end: "23:30" },
     });
     expect(evening.days[0].stops.map((s) => [s.kind, s.start])).toEqual([["evening", "21:30"]]);
     expect(evening.days.at(-1)).toMatchObject({
-      note: "Bu uçuşla dönüş kalkışı 06:55'te; son gün havalimanına geçiş için.",
+      note: { kind: "leave", time: "06:55", evening: false },
       flightNote: true,
       stops: [],
       window: null,
@@ -188,18 +188,18 @@ describe("buildItinerary", () => {
       ...base,
       flight: { arrive: { date: "2026-11-14", time: "19:30" }, leave: { date: "2026-11-18", time: "06:55" }, label: "PC 438" },
     });
-    expect(early.days[0]).toMatchObject({ note: "Bu uçuşla varış 19:30'da; ilk gün yalnızca yerleşme.", stops: [] });
+    expect(early.days[0]).toMatchObject({ note: { kind: "arrive", time: "19:30", evening: false }, stops: [] });
     // Lands 23:10: no time for dinner either.
     const late = buildItinerary({
       ...base,
       flight: { arrive: { date: "2026-11-14", time: "23:10" }, leave: { date: "2026-11-18", time: "18:00" }, label: "X" },
     });
-    expect(late.days[0]).toMatchObject({ note: "Bu uçuşla varış 23:10'da; ilk gün yalnızca yerleşme.", flightNote: true, stops: [], window: null });
+    expect(late.days[0]).toMatchObject({ note: { kind: "arrive", time: "23:10", evening: false }, flightNote: true, stops: [], window: null });
     expect(late.days.at(-1)?.flightNote).toBe(false);
   });
   it("starts each full day in a different area, with its most important place", () => {
     const plan = buildItinerary(base);
-    const firsts = plan.days.filter((d) => d.tags.includes("TAM GÜN")).map((d) => d.stops[0]);
+    const firsts = plan.days.filter((d) => d.tags.includes("full")).map((d) => d.stops[0]);
     // Full days start in different areas (in any order), and the best-known place opens one of them.
     expect(new Set(firsts.map((s) => s.name.slice(6, 7))).size).toBe(firsts.length);
     expect(firsts.map((s) => s.name)).toContain("Sight 0-0");
@@ -214,10 +214,10 @@ describe("buildItinerary", () => {
       p.name === "Sight 2-0" ? { ...p, wikipediaCount: 150 } : p.name.startsWith("Sight 2-") ? { ...p, wikipediaCount: undefined } : p,
     );
     const plan = buildItinerary({ ...base, daytime });
-    const firstFull = plan.days.find((d) => d.tags.includes("TAM GÜN"))!;
+    const firstFull = plan.days.find((d) => d.tags.includes("full"))!;
     expect(firstFull.stops.map((s) => s.name)).toContain("Sight 2-0");
     // Without the fix the lighter area got the last full day.
-    const lastFull = plan.days.filter((d) => d.tags.includes("TAM GÜN")).at(-1)!;
+    const lastFull = plan.days.filter((d) => d.tags.includes("full")).at(-1)!;
     expect(lastFull.stops.map((s) => s.name)).not.toContain("Sight 2-0");
   });
 

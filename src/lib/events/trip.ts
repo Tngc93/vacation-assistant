@@ -3,7 +3,8 @@
  * ("2026-11-14"); no clock is read here.
  */
 import { addDays } from "@/lib/search/dates";
-import type { EventEdition, StoredEvent } from "./file";
+import type { I18n } from "@/i18n/i18n";
+import { eventName, type EventEdition, type StoredEvent } from "./file";
 
 /** An event in the trip: exact (an edition overlaps the dates) or approximate (one of its months does). */
 export type TripEvent =
@@ -46,65 +47,80 @@ export function eventsInTrip(events: readonly StoredEvent[], depart: string, ret
   return [...exact.sort(byImportance), ...approximate.sort(byImportance)];
 }
 
-const SHORT_MONTHS = ["OCA", "ŞUB", "MAR", "NİS", "MAY", "HAZ", "TEM", "AĞU", "EYL", "EKİ", "KAS", "ARA"];
-const MONTHS = ["OCAK", "ŞUBAT", "MART", "NİSAN", "MAYIS", "HAZİRAN", "TEMMUZ", "AĞUSTOS", "EYLÜL", "EKİM", "KASIM", "ARALIK"];
+/** The event captions need the interface language: its Intl locale (month names) and messages. */
+type Lang = Pick<I18n, "locale" | "intl" | "m" | "f">;
 
-/** "14 KAS" */
-function shortDay(iso: string): string {
-  return `${Number(iso.slice(8, 10))} ${SHORT_MONTHS[Number(iso.slice(5, 7)) - 1]}`;
+const monthFormatters = new Map<string, { short: Intl.DateTimeFormat; long: Intl.DateTimeFormat }>();
+function monthName(month: number, intl: string, width: "short" | "long"): string {
+  let f = monthFormatters.get(intl);
+  if (!f) {
+    f = {
+      short: new Intl.DateTimeFormat(intl, { month: "short", timeZone: "UTC" }),
+      long: new Intl.DateTimeFormat(intl, { month: "long", timeZone: "UTC" }),
+    };
+    monthFormatters.set(intl, f);
+  }
+  return f[width].format(new Date(Date.UTC(2026, month - 1, 15))).replace(/\.$/, "").toLocaleUpperCase(intl);
 }
 
-/** "14 KAS – 18 KAS", or "14 KAS" for one day. */
-export function editionCaption(edition: Pick<EventEdition, "start" | "end">): string {
-  return edition.start === edition.end ? shortDay(edition.start) : `${shortDay(edition.start)} – ${shortDay(edition.end)}`;
+/** "14 KAS" ("14 NOV") */
+function shortDay(iso: string, intl: string): string {
+  return `${Number(iso.slice(8, 10))} ${monthName(Number(iso.slice(5, 7)), intl, "short")}`;
+}
+
+/** "14 KAS – 18 KAS", or "14 KAS" for one day ("14 NOV – 18 NOV" in English). */
+export function editionCaption(edition: Pick<EventEdition, "start" | "end">, intl = "tr-TR"): string {
+  return edition.start === edition.end ? shortDay(edition.start, intl) : `${shortDay(edition.start, intl)} – ${shortDay(edition.end, intl)}`;
 }
 
 /**
  * Months as runs, wrapping over the new year: [9, 10] → "EYLÜL–EKİM", [1, 12] → "ARALIK–OCAK",
- * [2, 6] → "ŞUBAT, HAZİRAN".
+ * [2, 6] → "ŞUBAT, HAZİRAN" (in English "SEPTEMBER–OCTOBER").
  */
-export function monthsText(months: readonly number[]): string {
+export function monthsText(months: readonly number[], { intl, m }: Pick<Lang, "intl" | "m">): string {
   const set = [...new Set(months)].sort((a, b) => a - b);
   if (set.length === 0) return "";
-  if (set.length === 12) return "YIL BOYU";
+  if (set.length === 12) return m.events.allYear;
   // Start a run at a month whose previous month is not in the set, so December–January stays together.
-  const starts = set.filter((m) => !set.includes(m === 1 ? 12 : m - 1));
+  const starts = set.filter((x) => !set.includes(x === 1 ? 12 : x - 1));
+  const name = (x: number) => monthName(x, intl, "long");
   const runs = starts.map((start) => {
     let end = start;
     while (set.includes(end === 12 ? 1 : end + 1)) end = end === 12 ? 1 : end + 1;
-    return start === end ? MONTHS[start - 1] : `${MONTHS[start - 1]}–${MONTHS[end - 1]}`;
+    return start === end ? name(start) : `${name(start)}–${name(end)}`;
   });
   return runs.join(", ");
 }
 
-/** "GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA" */
-export function approximateCaption(months: readonly number[]): string {
-  return `GENELDE ${monthsText(months)} · TARİHİ DOĞRULA`;
+/** "GENELDE EYLÜL–EKİM · TARİHİ DOĞRULA" ("USUALLY SEPTEMBER–OCTOBER · CHECK THE DATES") */
+export function approximateCaption(months: readonly number[], lang: Lang): string {
+  return lang.f(lang.m.events.usually, { months: monthsText(months, lang) });
 }
 
 /** The card's date caption. */
-export function tripEventCaption(item: TripEvent): string {
-  return item.kind === "exact" ? editionCaption(item.edition) : approximateCaption(item.months);
+export function tripEventCaption(item: TripEvent, lang: Lang): string {
+  return item.kind === "exact" ? editionCaption(item.edition, lang.intl) : approximateCaption(item.months, lang);
 }
 
 /** The masthead line: the most important exact event, "BU TARİHLERDE: OKTOBERFEST"; null without one. */
-export function mastheadLine(items: readonly TripEvent[]): string | null {
+export function mastheadLine(items: readonly TripEvent[], lang: Lang): string | null {
   const first = items.find((i) => i.kind === "exact");
-  return first ? `BU TARİHLERDE: ${first.event.name.toLocaleUpperCase("tr")}` : null;
+  return first ? lang.f(lang.m.events.onTheseDates, { name: eventName(first.event, lang.locale).toLocaleUpperCase(lang.intl) }) : null;
 }
 
 /**
  * Notes for the plan's day headers: on each day inside an exact event's edition, "Bugün şehirde: Oktoberfest ·
  * Theresienwiese" (most important first). Approximate events never get a day note: their days are not known.
  */
-export function dayNotes(items: readonly TripEvent[], depart: string, ret: string): Record<string, string[]> {
+export function dayNotes(items: readonly TripEvent[], depart: string, ret: string, lang: Lang): Record<string, string[]> {
   const notes: Record<string, string[]> = {};
+  const en = lang.locale === "en";
   for (let day = depart; day <= ret; day = addDays(day, 1)) {
-    const here = items.flatMap((i) =>
-      i.kind === "exact" && i.edition.start <= day && day <= i.edition.end
-        ? [`Bugün şehirde: ${i.event.name}${i.event.venue ? ` · ${i.event.venue.name}` : ""}`]
-        : [],
-    );
+    const here = items.flatMap((i) => {
+      if (i.kind !== "exact" || day < i.edition.start || i.edition.end < day) return [];
+      const venue = i.event.venue ? (en ? (i.event.venue.nameEn ?? i.event.venue.name) : i.event.venue.name) : undefined;
+      return [lang.f(lang.m.events.inTownToday, { name: `${eventName(i.event, lang.locale)}${venue ? ` · ${venue}` : ""}` })];
+    });
     if (here.length) notes[day] = here;
   }
   return notes;

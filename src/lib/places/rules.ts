@@ -4,6 +4,7 @@ import { CATEGORIES, type CategoryId } from "./categories";
 import { farFromCentreKm } from "./far";
 import type { PlacesFile, StoredPlace } from "./file";
 import { FAR_FROM_ITEM_TAG, HERITAGE_TAG, NO_COORDINATE_TAG, UNESCO_TAG, type KindTag } from "./kinds";
+import type { Locale } from "@/i18n/locales";
 import { isLatin, readableName } from "./names";
 import { categoryCap, compareRanked } from "./rank";
 
@@ -129,7 +130,7 @@ export function isWalkThrough(place: RulePlace): boolean {
  * A place as the guide and the plan see it: no raw kinds, a walk-through flag instead; a name in the Latin script
  * when there is one (names.ts), the stored name in another script then the local name.
  */
-export type ShownPlace = Omit<StoredPlace, "kinds" | "labels" | "osmNames"> & {
+export type ShownPlace = Omit<StoredPlace, "kinds" | "labels" | "osmNames" | "descriptionEn"> & {
   walkThrough?: true;
   /** Visit length set by an override (place-overrides.ts). */
   visitMin?: number;
@@ -148,10 +149,18 @@ export type ShownCategory =
   | Extract<PlacesFile["categories"][CategoryId], { status: "missing" }>;
 export type ShownPlacesFile = Omit<PlacesFile, "categories"> & { categories: Record<CategoryId, ShownCategory> };
 
-/** The name and local name shown: a `rename` override, else the name rule (names.ts) with the country's romanization. */
-function shownName(place: StoredPlace, overrides: CityOverrides, countryCode: string | undefined): { name: string; localName?: string } {
-  const renamed = place.wikidataId ? overrides.rename?.find((o) => o.qid === place.wikidataId) : undefined;
-  const readable = readableName(place, countryCode);
+/**
+ * The name and local name shown: a `rename` override (it corrects a Turkish label, so Turkish only), else the name
+ * rule of the interface language (names.ts) with the country's romanization.
+ */
+function shownName(
+  place: StoredPlace,
+  overrides: CityOverrides,
+  countryCode: string | undefined,
+  locale: Locale,
+): { name: string; localName?: string } {
+  const renamed = locale === "tr" && place.wikidataId ? overrides.rename?.find((o) => o.qid === place.wikidataId) : undefined;
+  const readable = readableName(place, countryCode, locale);
   if (!renamed) return readable;
   const localName = readable.name === place.name ? place.localName : place.name;
   return { name: renamed.shownName, ...(localName && localName !== renamed.shownName ? { localName } : {}) };
@@ -163,22 +172,38 @@ function toShown(
   farKm: number | null,
   nameOf: ReadonlyMap<string, string>,
   countryCode: string | undefined,
+  locale: Locale,
 ): ShownPlace {
-  const { kinds: _kinds, labels: _labels, osmNames: _osmNames, name: _name, localName: _localName, ...rest } = place;
-  // The parent's name as shown, for a stored parentName in another script or a renamed parent.
-  const renamedParent = place.parentId ? overrides.rename?.find((o) => o.qid === place.parentId)?.shownName : undefined;
+  const {
+    kinds: _kinds,
+    labels: _labels,
+    osmNames: _osmNames,
+    name: _name,
+    localName: _localName,
+    description: _description,
+    descriptionEn: _descriptionEn,
+    ...rest
+  } = place;
+  // The parent's name as shown: in English always the parent's English name; in Turkish for a stored parentName in
+  // another script or a renamed parent.
+  const renamedParent = locale === "tr" && place.parentId ? overrides.rename?.find((o) => o.qid === place.parentId)?.shownName : undefined;
   const parentName =
-    renamedParent ?? (place.parentId && place.parentName && !isLatin(place.parentName) ? nameOf.get(place.parentId) : undefined);
+    renamedParent ??
+    (place.parentId && place.parentName && (locale === "en" || !isLatin(place.parentName)) ? nameOf.get(place.parentId) : undefined);
+  // The description in the interface language; an English page shows none rather than a Turkish one.
+  const description = locale === "en" ? place.descriptionEn : place.description;
   const qid = place.wikidataId;
   const included = qid ? overrides.include?.find((o) => o.qid === qid) : undefined;
   const visitMin = [included, ...[overrides.open, overrides.visit].map((list) => (qid ? list?.find((o) => o.qid === qid) : undefined))].find(
     (o) => o?.visitMin,
   )?.visitMin;
   const exterior = qid ? overrides.exteriorOnly?.find((o) => o.qid === qid) : undefined;
+  const exteriorNote = locale === "en" ? exterior?.noteEn : exterior?.note;
   const open = Boolean(qid && overrides.open?.some((o) => o.qid === qid));
   return {
-    ...shownName(place, overrides, countryCode),
+    ...shownName(place, overrides, countryCode, locale),
     ...rest,
+    ...(description ? { description } : {}),
     ...(parentName ? { parentName } : {}),
     ...(isWalkThrough(place) ? { walkThrough: true } : {}),
     ...(visitMin ? { visitMin } : {}),
@@ -188,7 +213,7 @@ function toShown(
           exterior: {
             ...(exterior.visitMin ? { visitMin: exterior.visitMin } : {}),
             ...(exterior.openMonths ? { openMonths: exterior.openMonths } : {}),
-            ...(exterior.note ? { note: exterior.note } : {}),
+            ...(exteriorNote ? { note: exteriorNote } : {}),
           },
         }
       : isResidence(place) && !open
@@ -227,13 +252,15 @@ function centreOf(cityCode: string) {
 /**
  * Applies the sight rules and the city's overrides, then the per-category limit (40 sights or museums, 30 others),
  * and marks the places far from the centre (far.ts; the centre is the destination's tourist centre, `cityCentre`).
- * Names in another script are romanized by the official system of the destination's country (names.ts).
+ * Names in another script are romanized by the official system of the destination's country (names.ts); names and
+ * descriptions follow the interface language.
  */
 export function applyPlaceRules(
   file: PlacesFile,
   overrides: CityOverrides = PLACE_OVERRIDES[file.cityCode] ?? {},
   centre: { lat: number; lon: number } | undefined = centreOf(file.cityCode),
   countryCode: string | undefined = findDestination(file.cityCode)?.countryCode,
+  locale: Locale = "tr",
 ): ShownPlacesFile {
   const kept = {} as Partial<Record<CategoryId, StoredPlace[]>>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
@@ -252,12 +279,12 @@ export function applyPlaceRules(
   const nameOf = new Map(
     Object.values(kept)
       .flat()
-      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, shownName(p, overrides, countryCode).name] as const] : [])),
+      .flatMap((p) => (p.wikidataId ? [[p.wikidataId, shownName(p, overrides, countryCode, locale).name] as const] : [])),
   );
   const categories = {} as Record<CategoryId, ShownCategory>;
   for (const [id, entry] of Object.entries(file.categories) as Array<[CategoryId, PlacesFile["categories"][CategoryId]]>) {
     const places = kept[id];
-    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf, countryCode)) } : entry;
+    categories[id] = entry.status === "ok" && places ? { ...entry, places: places.map((p) => toShown(p, overrides, far.get(p.id) ?? null, nameOf, countryCode, locale)) } : entry;
   }
   return { ...file, categories };
 }

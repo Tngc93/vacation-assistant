@@ -3,7 +3,8 @@
 import { CalendarDays, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useId, useImperativeHandle, useRef, useState, useSyncExternalStore, type ReactNode, type Ref } from "react";
 import { DayPicker, type ChevronProps, type Matcher } from "react-day-picker";
-import { tr } from "react-day-picker/locale";
+import { enGB, tr } from "react-day-picker/locale";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { formatDay } from "@/lib/format";
 import { addDays, daysBetween, isoToDate, latestTripDate, MAX_NIGHTS, todayInIstanbul } from "@/lib/search/dates";
@@ -58,11 +59,12 @@ const dayButton =
   "transition-colors duration-150 ease-out hover:bg-rule";
 
 /**
- * Departure and return dates in one range calendar (tr-TR, weeks start on
+ * Departure and return dates in one range calendar (in the interface language, weeks start on
  * Monday). The first pick is the departure, the second the return; picking a
  * day on or before the departure starts again.
  */
 export function DateRangeField({ ref, value, onChange, departError, returnError, today: todayOverride }: DateRangeFieldProps) {
+  const { locale, m, f } = useI18n();
   const id = useId();
   const dialogId = `${id}-calendar`;
   const [open, setOpen] = useState(false);
@@ -122,7 +124,7 @@ export function DateRangeField({ ref, value, onChange, departError, returnError,
       <div className="grid grid-cols-2 gap-4">
         <DateTrigger
           ref={departButtonRef}
-          label="Gidiş"
+          label={m.search.depart}
           value={value.depart}
           error={departError}
           expanded={open}
@@ -131,7 +133,7 @@ export function DateRangeField({ ref, value, onChange, departError, returnError,
         />
         <DateTrigger
           ref={returnButtonRef}
-          label="Dönüş"
+          label={m.search.return}
           value={value.return}
           error={returnError}
           expanded={open}
@@ -144,7 +146,7 @@ export function DateRangeField({ ref, value, onChange, departError, returnError,
         <div
           id={dialogId}
           role="dialog"
-          aria-label={pickingReturn ? "Dönüş tarihini seç" : "Gidiş tarihini seç"}
+          aria-label={pickingReturn ? m.search.pickReturn : m.search.pickDepart}
           onKeyDown={(event) => {
             if (event.key === "Escape") {
               event.stopPropagation();
@@ -155,15 +157,15 @@ export function DateRangeField({ ref, value, onChange, departError, returnError,
         >
           <div className="mb-3 flex items-baseline justify-between gap-4">
             <p className="font-mono text-micro uppercase tracking-[0.08em] text-accent">
-              {pickingReturn ? "Dönüş tarihini seç" : "Gidiş tarihini seç"}
+              {pickingReturn ? m.search.pickReturn : m.search.pickDepart}
             </p>
             <p className="font-mono text-micro uppercase tracking-[0.08em] text-ink-muted">
-              En fazla {MAX_NIGHTS} gece
+              {f(m.search.maxNights, { count: MAX_NIGHTS })}
             </p>
           </div>
           <DayPicker
             mode="range"
-            locale={tr}
+            locale={locale === "en" ? enGB : tr}
             weekStartsOn={1}
             numberOfMonths={wide ? 2 : 1}
             autoFocus
@@ -214,14 +216,18 @@ export function DateRangeField({ ref, value, onChange, departError, returnError,
           />
           <div className="mt-3 flex items-center justify-between gap-4 border-t border-rule pt-3">
             <p className="font-mono text-caption tabular text-ink-muted" aria-live="polite">
-              {nights ? `${nights} gece` : value.depart ? `Gidiş: ${formatDay(isoToDate(value.depart))}` : "Önce gidiş tarihini seç"}
+              {nights
+                ? f(m.search.nights, { count: nights })
+                : value.depart
+                  ? f(m.search.departOn, { date: formatDay(isoToDate(value.depart), locale) })
+                  : m.search.pickDepartFirst}
             </p>
             <button
               type="button"
               onClick={() => closeCalendar(pickingReturn ? "return" : "depart")}
               className="h-9 rounded-sm px-3 text-caption font-medium text-ink hover:bg-rule"
             >
-              Kapat
+              {m.search.close}
             </button>
           </div>
         </div>
@@ -241,6 +247,7 @@ type DateTriggerProps = {
 };
 
 function DateTrigger({ ref, label, value, error, expanded, controls, onClick }: DateTriggerProps): ReactNode {
+  const { locale, m } = useI18n();
   const errorId = useId();
   return (
     <div className="min-w-0">
@@ -253,7 +260,7 @@ function DateTrigger({ ref, label, value, error, expanded, controls, onClick }: 
         aria-haspopup="dialog"
         aria-expanded={expanded}
         aria-controls={expanded ? controls : undefined}
-        aria-label={`${label}: ${value ? formatDay(isoToDate(value)) : "tarih seçilmedi"}`}
+        aria-label={`${label}: ${value ? formatDay(isoToDate(value), locale) : m.search.noDate}`}
         aria-describedby={error ? errorId : undefined}
         onClick={onClick}
         className={cn(
@@ -263,7 +270,7 @@ function DateTrigger({ ref, label, value, error, expanded, controls, onClick }: 
       >
         <CalendarDays aria-hidden="true" size={16} strokeWidth={1.5} className="shrink-0 text-ink-muted" />
         <span className={cn("truncate font-mono text-caption tabular sm:text-body", value ? "text-ink" : "text-ink-muted")}>
-          {value ? formatDay(isoToDate(value)) : "Tarih seç"}
+          {value ? formatDay(isoToDate(value), locale) : m.search.pickDate}
         </span>
       </button>
       {error ? (

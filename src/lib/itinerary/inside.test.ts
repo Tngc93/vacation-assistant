@@ -4,6 +4,7 @@ import { applyEdits, pinnedFromPlan } from "@/lib/ai/edits";
 import { candidatesFor, dayWindows } from "@/lib/ai/prompts";
 import { buildIcs } from "./ics";
 import { buildItinerary, type ItineraryInput, type PlanPlace } from "./plan";
+import { TR } from "@/test/i18n";
 
 // Moscow, Sat 14 → Tue 17 Nov 2026: the Kremlin with the Tsar Bell, the Tsar Cannon and the Armoury inside it.
 const at = (id: string, name: string, lat: number, lon: number, extra: Partial<PlanPlace> = {}): PlanPlace => ({
@@ -153,7 +154,7 @@ describe("places inside another place", () => {
 
   it("lists the places inside in the parent's calendar event, not as events of their own", () => {
     const plan = buildItinerary(base);
-    const ics = buildIcs(plan, { cityName: "Moskova", now: new Date("2026-10-17T09:00:00Z") });
+    const ics = buildIcs(plan, { cityName: "Moskova", now: new Date("2026-10-17T09:00:00Z"), i18n: TR });
     const unfolded = ics.replace(/\r\n /g, "");
     expect(unfolded).not.toMatch(/SUMMARY:Çar Çanı/);
     expect(unfolded).toMatch(/SUMMARY:Московский Кремль\r\nLOCATION:[^\r]*\r\nGEO:[^\r]*\r\nDESCRIPTION:[^\r]*İçinde: Çar Çanı\\, Çar Topu\\, Silah Dairesi/);

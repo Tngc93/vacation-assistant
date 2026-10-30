@@ -6,6 +6,7 @@ import { OriginCombobox } from "@/components/search/OriginCombobox";
 import { PassengerStepper } from "@/components/search/PassengerStepper";
 import { readRememberedOrigin, rememberOrigin, type OriginOption } from "@/data/origins";
 import { BUDGET_FLIGHT_DROPPED_EVENT } from "@/lib/budget/params";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { writeTripParams } from "@/lib/search/params";
 
@@ -27,7 +28,7 @@ function useTripParam<T>(value: T, toChange: (next: T) => Parameters<typeof writ
       if (FLIGHT_KEYS.some((k) => before.has(k)) && !FLIGHT_KEYS.some((k) => params.has(k))) {
         window.dispatchEvent(new Event(BUDGET_FLIGHT_DROPPED_EVENT));
       }
-      router.replace(`/plan?${params.toString()}${window.location.hash}`, { scroll: false });
+      router.replace(`${window.location.pathname}?${params.toString()}${window.location.hash}`, { scroll: false });
     });
   return { shown, pending, change };
 }
@@ -56,11 +57,12 @@ export function OriginControl({ value, className }: { value: OriginOption; class
 
 /** "Kişi" (1–9), in the stay and the flight sections; both write the same `?pax=`. */
 export function PeopleControl({ value, className }: { value: number; className?: string }) {
+  const { m } = useI18n();
   const { shown, pending, change } = useTripParam(value, (pax) => ({ pax }));
   return (
     <div className={cn("min-w-0", className)} aria-busy={pending}>
       <span aria-hidden="true" className={label}>
-        Kişi
+        {m.plan.people}
       </span>
       <PassengerStepper value={shown} onChange={change} className="mt-1.5" />
     </div>

@@ -2,18 +2,17 @@
 
 import { ExternalLink, X } from "lucide-react";
 import { Caption } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
-import { EVENT_TYPE_LABELS } from "@/lib/events/file";
 import { eventItemId, tripEventCaption, type TripEvent } from "@/lib/events/trip";
 import { googleMapsUrl } from "@/components/places/PlaceCard";
 
-const wikipediaCount = new Intl.NumberFormat("tr-TR");
-
 function NewTab() {
+  const { m } = useI18n();
   return (
     <>
       <ExternalLink aria-hidden="true" size={12} strokeWidth={1.5} />
-      <span className="sr-only">(yeni sekmede açılır)</span>
+      <span className="sr-only">{m.common.newTab}</span>
     </>
   );
 }
@@ -36,6 +35,8 @@ export function EventCard({
   onClose?: () => void;
   className?: string;
 }) {
+  const i18n = useI18n();
+  const { m, f } = i18n;
   const { event } = item;
   const id = eventItemId(event);
   return (
@@ -52,9 +53,9 @@ export function EventCard({
           {event.localName ? <p className="text-caption text-ink-muted">{event.localName}</p> : null}
         </div>
         <div className="flex shrink-0 items-start gap-2">
-          <Caption>Etkinlik · {EVENT_TYPE_LABELS[event.type]}</Caption>
+          <Caption>{f(m.places.eventType, { type: m.events.types[event.type] })}</Caption>
           {onClose ? (
-            <button type="button" onClick={onClose} aria-label="Ayrıntıyı kapat" className="-mr-1 -mt-1 rounded-sm p-1 text-ink-muted hover:text-ink">
+            <button type="button" onClick={onClose} aria-label={m.common.closeDetail} className="-mr-1 -mt-1 rounded-sm p-1 text-ink-muted hover:text-ink">
               <X aria-hidden="true" size={16} strokeWidth={1.5} />
             </button>
           ) : null}
@@ -62,19 +63,19 @@ export function EventCard({
       </div>
 
       <Caption as="p" tone={item.kind === "exact" ? "ink" : "warn"} className="mt-2">
-        {tripEventCaption(item)}
+        {tripEventCaption(item, i18n)}
       </Caption>
-      {event.venue ? <p className="mt-2 text-caption text-ink-muted">Yer: {event.venue.name}</p> : null}
+      {event.venue ? <p className="mt-2 text-caption text-ink-muted">{f(m.places.venue, { name: event.venue.name })}</p> : null}
       <Caption as="p" tone="warn" className="mt-3">
-        Tarihleri resmî kaynaktan doğrula
+        {m.places.checkDates}
       </Caption>
       <Caption as="p" tone="sea" className="mt-1">
-        Kaynak: Wikidata · Vikipedi&apos;de {wikipediaCount.format(event.wikipedias)} dilde
+        {f(m.places.eventSource, { count: event.wikipedias })}
       </Caption>
 
       {event.photo ? (
         <p className="mt-3 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
-          Fotoğraf:{" "}
+          {m.city.photo}{" "}
           <a href={event.photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
             {event.photo.author}
           </a>{" "}
@@ -82,13 +83,13 @@ export function EventCard({
           <a href={event.photo.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline">
             {event.photo.license}
           </a>{" "}
-          · Wikimedia Commons · renkleri düzenlendi
+          · Wikimedia Commons · {m.city.recoloured}
         </p>
       ) : null}
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-caption">
         {event.website ? (
           <a href={event.website} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-1 font-medium text-ink underline underline-offset-4">
-            Resmî site
+            {m.places.officialSite}
             <NewTab />
           </a>
         ) : null}
@@ -98,7 +99,7 @@ export function EventCard({
         </a>
         {event.venue ? (
           <a href={googleMapsUrl(event.venue)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sea underline">
-            Google Haritalar&apos;da aç
+            {m.common.openInGoogleMaps}
             <NewTab />
           </a>
         ) : null}

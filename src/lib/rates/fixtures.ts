@@ -2,19 +2,17 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { getTryRate } from "./getRate";
-import { SOURCES, type RateResult } from "./types";
+import { SAMPLE_SOURCE_NAME, SOURCES, type RateResult } from "./types";
 
 /**
  * Sample rates for development and end-to-end tests, which run offline (VA_OFFLINE=1): the saved TCMB
  * bulletin in __fixtures__ (EUR, USD, JPY, KRW; no GBP, so a missing rate shows too). Not today's rates: the
- * source is named "ÖRNEK VERİ (TCMB)" wherever it is shown. Enabled only with VA_RATES_FIXTURES=1 and never
+ * source is named "ÖRNEK VERİ (TCMB)" ("SAMPLE DATA (TCMB)" in English) wherever it is shown. Enabled only with VA_RATES_FIXTURES=1 and never
  * on Vercel.
  */
 export function rateFixturesEnabled(): boolean {
   return process.env.VA_RATES_FIXTURES === "1" && !process.env.VERCEL;
 }
-
-export const SAMPLE_SOURCE_NAME = "ÖRNEK VERİ (TCMB)";
 
 export async function getFixtureRate(currency: string): Promise<RateResult> {
   const xml = readFileSync(path.join(process.cwd(), "src/lib/rates/__fixtures__/tcmb-today.xml"), "utf8");

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { EN, TR } from "@/test/i18n";
 import { applyPatches, MAP_ATTRIBUTION, stylePatches, type MapPalette } from "./mapStyle";
 
 const palette: MapPalette = {
@@ -50,8 +51,12 @@ describe("map recolouring", () => {
   });
 
   it("credits each source exactly once", () => {
-    const text = MAP_ATTRIBUTION.map((a) => a.label).join(" · ");
+    // OpenStreetMap's credit is a message, in the interface language.
+    const text = MAP_ATTRIBUTION.map((a) => a.label ?? TR.m.places.osmContributors).join(" · ");
     expect(text).toBe("© OpenStreetMap katkıcıları · OpenFreeMap · © OpenMapTiles");
+    expect(MAP_ATTRIBUTION.map((a) => a.label ?? EN.m.places.osmContributors).join(" · ")).toBe(
+      "© OpenStreetMap contributors · OpenFreeMap · © OpenMapTiles",
+    );
     for (const name of ["OpenStreetMap", "OpenFreeMap", "OpenMapTiles"]) expect(text.split(name)).toHaveLength(2);
     expect(MAP_ATTRIBUTION[0].href).toBe("https://www.openstreetmap.org/copyright");
   });

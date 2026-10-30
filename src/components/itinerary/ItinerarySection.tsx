@@ -1,6 +1,8 @@
 import { Skeleton } from "@/components/ui";
-import { cityCentre, type Destination } from "@/data/destinations";
+import { cityCentre, cityName, type Destination } from "@/data/destinations";
 import { airlineName } from "@/data/airlines";
+import type { Locale } from "@/i18n/locales";
+import { getI18n } from "@/i18n/server";
 import type { EditBatch } from "@/lib/ai/edits";
 import { DAYTIME_CATEGORIES, EVENING_CATEGORIES, eveningCategoriesFor, type EveningCategory } from "@/lib/itinerary/config";
 import type { ItineraryInput, PlanPlace } from "@/lib/itinerary/plan";
@@ -16,6 +18,7 @@ import type { SearchState } from "@/lib/search/params";
 import { ItineraryView } from "./ItineraryView";
 
 type Props = {
+  locale: Locale;
   search: SearchState;
   destination: Destination;
   categories: CategoryId[];
@@ -32,21 +35,22 @@ type Props = {
 };
 
 /** The budget's flight in destination local time (the API's legs are already local to each airport). */
-export function flightMoments(ticket: FlightTicket | null): ItineraryInput["flight"] {
+export function flightMoments(ticket: FlightTicket | null, locale: Locale = "tr"): ItineraryInput["flight"] {
   if (!ticket) return null;
   return {
     arrive: ticket.out.arriveTime ? { date: addDays(ticket.out.departDate, ticket.out.arriveDayOffset), time: ticket.out.arriveTime } : null,
     leave: ticket.back ? { date: ticket.back.departDate, time: ticket.back.departTime } : null,
-    label: `${airlineName(ticket.airline)} · ${ticket.airline} ${ticket.flightNumber}`,
+    label: `${airlineName(ticket.airline, locale)} · ${ticket.airline} ${ticket.flightNumber}`,
   };
 }
 
 /** Day-by-day plan (PRD 20–22): built from the pre-fetched places, deterministically; AI and chat edits are optional. */
-export async function ItinerarySection({ search, destination, categories, direct, flight, webFlight, skip, aiPlan, edits }: Props) {
+export async function ItinerarySection({ locale, search, destination, categories, direct, flight, webFlight, skip, aiPlan, edits }: Props) {
+  const i18n = getI18n(locale);
   const [file, flights, eventsFile] = await Promise.all([
-    loadPlacesFile(destination.cityCode),
+    loadPlacesFile(destination.cityCode, locale),
     loadFlights(search.from, search.to, search.depart, search.return, search.pax, direct),
-    loadEventsFile(destination.cityCode),
+    loadEventsFile(destination.cityCode, locale),
   ]);
   const choice = chooseFlight(flights, flight);
   const ticket = webFlight || choice.status === "none" ? null : choice.ticket;
@@ -57,13 +61,13 @@ export async function ItinerarySection({ search, destination, categories, direct
     });
 
   if (!file) {
-    return <p className="text-body text-ink-muted">Bu şehir için mekân verisi henüz hazır değil; plan kurulamıyor.</p>;
+    return <p className="text-body text-ink-muted">{i18n.m.itinerary.noData}</p>;
   }
   const input: Omit<ItineraryInput, "skip"> = {
     depart: search.depart,
     return: search.return,
     timeZone: destination.timeZone,
-    flight: flightMoments(ticket),
+    flight: flightMoments(ticket, locale),
     daytime: take(DAYTIME_CATEGORIES),
     evening: take(eveningCategoriesFor(categories)),
   };
@@ -77,18 +81,18 @@ export async function ItinerarySection({ search, destination, categories, direct
       initialEvening={eveningCategoriesFor(categories)}
       initialAi={aiPlan}
       initialEdits={edits}
-      cityName={destination.nameTr}
+      cityName={cityName(destination, locale)}
       center={cityCentre(destination)}
       flightTimesUnknown={webFlight}
-      eventNotes={dayNotes(eventsInTrip(eventsFile?.events ?? [], search.depart, search.return), search.depart, search.return)}
+      eventNotes={dayNotes(eventsInTrip(eventsFile?.events ?? [], search.depart, search.return), search.depart, search.return, i18n)}
     />
   );
 }
 
-export function ItinerarySkeleton() {
+export function ItinerarySkeleton({ locale }: { locale: Locale }) {
   return (
     <div aria-busy="true" className="grid gap-6">
-      <span className="sr-only">Plan hazırlanıyor</span>
+      <span className="sr-only">{getI18n(locale).m.itinerary.preparing}</span>
       {[0, 1].map((i) => (
         <div key={i} className="grid gap-3">
           <Skeleton className="h-16 w-24" />

@@ -41,3 +41,6 @@ export type RateResult = RateFound | RateMissing;
 export type RateTable = Record<string, { tryPerUnit: number; sourceId: RateSourceId; sourceName: string; date: string }>;
 
 export type Fetcher = (url: string, init: RequestInit & { next?: { revalidate?: number } }) => Promise<Response>;
+
+/** The e2e sample bulletin's source name (fixtures.ts); shown as `rates.sample` in the interface language. */
+export const SAMPLE_SOURCE_NAME = "ÖRNEK VERİ (TCMB)";

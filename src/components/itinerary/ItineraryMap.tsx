@@ -1,10 +1,12 @@
 "use client";
 
+import { MapAttribution } from "@/components/places/MapAttribution";
+import { useI18n } from "@/i18n/client";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { LngLatBounds, Map as MapLibreMap, NavigationControl, setWorkerUrl, type GeoJSONSource, type StyleSpecification } from "maplibre-gl";
 import { useEffect, useRef } from "react";
 import type { PlanStop } from "@/lib/itinerary/plan";
-import { applyPatches, MAP_ATTRIBUTION, OPENFREEMAP_STYLE_URL, PALETTE_TOKENS, stylePatches, type MapPalette } from "@/lib/places/mapStyle";
+import { applyPatches, OPENFREEMAP_STYLE_URL, PALETTE_TOKENS, stylePatches, type MapPalette } from "@/lib/places/mapStyle";
 
 function readPalette(): MapPalette {
   const css = getComputedStyle(document.documentElement);
@@ -31,6 +33,7 @@ function fit(map: MapLibreMap, stops: readonly PlanStop[]) {
 
 /** One day's stops, numbered in order, on the recoloured OpenFreeMap style. */
 export default function ItineraryMap({ stops, center }: { stops: readonly PlanStop[]; center: { lat: number; lon: number } }) {
+  const { m } = useI18n();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const readyRef = useRef(false);
@@ -124,22 +127,13 @@ export default function ItineraryMap({ stops, center }: { stops: readonly PlanSt
     <div
       ref={containerRef}
       role="region"
-      aria-label="Günün haritası"
+      aria-label={m.itinerary.dayMap}
       className="group relative h-80 w-full overflow-hidden rounded-md border border-rule bg-paper-raised md:h-[28rem]"
     >
       <p className="absolute inset-0 hidden items-center justify-center p-6 text-center text-caption text-ink-muted group-data-[failed=true]:flex">
-        Harita şu an yüklenemedi; plan kullanılabilir.
+        {m.places.mapFailedPlan}
       </p>
-      <p className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl-sm bg-paper-raised/90 px-2 py-0.5 text-[0.6875rem] text-ink-muted">
-        {MAP_ATTRIBUTION.map((source, index) => (
-          <span key={source.href}>
-            {index > 0 ? " · " : null}
-            <a href={source.href} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
-              {source.label}
-            </a>
-          </span>
-        ))}
-      </p>
+      <MapAttribution />
     </div>
   );
 }

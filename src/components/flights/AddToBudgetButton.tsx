@@ -1,5 +1,6 @@
 "use client";
 
+import { useI18n } from "@/i18n/client";
 import { Check, Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
@@ -8,12 +9,13 @@ import { cn } from "@/lib/cn";
 
 /** Puts a ticket in the budget (?flight=…); the budget recalculates on the server with the same cached prices. */
 export function AddToBudgetButton({ flightRef, inBudget, className }: { flightRef: string; inBudget: boolean; className?: string }) {
+  const { m } = useI18n();
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const add = () => {
     if (inBudget) return;
     const params = writeBudgetParams(new URLSearchParams(window.location.search), { flight: flightRef, webFlight: null });
-    startTransition(() => router.replace(`/plan?${params.toString()}${window.location.hash}`, { scroll: false }));
+    startTransition(() => router.replace(`${window.location.pathname}?${params.toString()}${window.location.hash}`, { scroll: false }));
   };
   return (
     <button
@@ -28,7 +30,7 @@ export function AddToBudgetButton({ flightRef, inBudget, className }: { flightRe
       )}
     >
       {inBudget ? <Check aria-hidden="true" size={14} strokeWidth={1.5} /> : <Plus aria-hidden="true" size={14} strokeWidth={1.5} />}
-      {inBudget ? "Bütçede" : "Bütçeye ekle"}
+      {inBudget ? m.flights.inBudget : m.flights.addToBudget}
     </button>
   );
 }

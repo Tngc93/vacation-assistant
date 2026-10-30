@@ -1,5 +1,6 @@
 "use client";
 
+import { useI18n } from "@/i18n/client";
 import { useState, type ReactNode } from "react";
 import { DisclosureToggle } from "@/components/plan/DisclosureToggle";
 
@@ -18,13 +19,14 @@ type Props = {
  * so an opened return list or a web search survives closing and reopening.
  */
 export function FlightsPanel({ controls, cheapest, all }: Props) {
+  const { m } = useI18n();
   const [open, setOpen] = useState(false);
   return (
     <div>
       <div className="flex flex-wrap items-start gap-x-8 gap-y-4 print:hidden">{controls}</div>
       <div className="mt-6 print:mt-0">{cheapest}</div>
       <DisclosureToggle open={open} controls="tum-ucuslar" onClick={() => setOpen((o) => !o)}>
-        Tüm uçuşları gör
+        {m.flights.showAll}
       </DisclosureToggle>
       <div id="tum-ucuslar" hidden={!open} className="mt-8 print:hidden">
         {all}

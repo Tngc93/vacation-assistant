@@ -170,8 +170,8 @@ export default function StyleguidePage() {
 
       <Section title="İskelet" note="Yükleme hâli: --rule renginde bilet iskeletleri, ortada dönen ikon yok.">
         <div className="grid gap-4 md:grid-cols-2">
-          <SkeletonTicket />
-          <SkeletonTicket />
+          <SkeletonTicket label="Yükleniyor" />
+          <SkeletonTicket label="Yükleniyor" />
         </div>
       </Section>
 

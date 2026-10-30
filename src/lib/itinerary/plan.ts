@@ -5,7 +5,6 @@ import { addDays, daysBetween } from "@/lib/search/dates";
 import { DAYTIME_CATEGORIES, ITINERARY, type DaytimeCategory } from "./config";
 import { shortId } from "./ids";
 import { openCheck } from "./openCheck";
-import { withLocative } from "@/lib/places/hours";
 import { hhmm, roundDown, roundUp, toMinutes, weekdayOf } from "./time";
 import { needsTransit, travelBetween, type Travel } from "./travel";
 
@@ -108,7 +107,17 @@ export type PlanSubStop = Pick<PlanStop, "id" | "shortId" | "name" | "localName"
   within: string;
 };
 
-export type DayTag = "VARIŞ GÜNÜ" | "DÖNÜŞ GÜNÜ" | "YARIM GÜN" | "TAM GÜN";
+/** The day's tags; the interface words them (messages `itinerary.tags`: "VARIŞ GÜNÜ", "ARRIVAL DAY"…). */
+export type DayTag = "arrival" | "return" | "half" | "full";
+
+/**
+ * Why a day has fewer or no stops; the interface words it (messages `itinerary.notes`): the flight arrives at `time`
+ * or leaves at `time` (with or without an evening place), no plan time is left, or nothing open fits.
+ */
+export type DayNote =
+  | { kind: "arrive" | "leave"; time: string; evening: boolean }
+  | { kind: "noTime" }
+  | { kind: "noneOpen" };
 
 export type PlanDay = {
   number: number;
@@ -122,7 +131,7 @@ export type PlanDay = {
   /** Unplanned time between the last daytime stop and the evening place, when longer than 90 minutes. */
   free: { start: string; end: string } | null;
   /** Why a day has fewer or no stops. */
-  note: string | null;
+  note: DayNote | null;
   /** True when the note is about the flight's times: the page links to the flights section. */
   flightNote: boolean;
 };
@@ -299,9 +308,9 @@ function frames(input: ItineraryInput): DayFrame[] {
       eveningAt <= base + ITINERARY.eveningLatestStart && eveningAt + ITINERARY.visitMin.evening <= deadline ? eveningAt : null;
     const full = daytime?.start === base + ITINERARY.dayStart && daytime.end === base + ITINERARY.daytimeEnd && evening !== null;
     const tags: DayTag[] = [];
-    if (i === 0) tags.push("VARIŞ GÜNÜ");
-    if (i === count - 1) tags.push("DÖNÜŞ GÜNÜ");
-    tags.push(full ? "TAM GÜN" : "YARIM GÜN");
+    if (i === 0) tags.push("arrival");
+    if (i === count - 1) tags.push("return");
+    tags.push(full ? "full" : "half");
     return { number: i + 1, date: addDays(input.depart, i), tags, daytime, evening };
   });
 }
@@ -312,13 +321,9 @@ export function freeTimeBlock(from: number, to: number): { start: string; end: s
 }
 
 /** The calm note for a first or last day the flight leaves without daytime stops. */
-function flightDayNote(first: boolean, flight: NonNullable<ItineraryInput["flight"]>, withEvening: boolean): string | null {
-  if (first && flight.arrive) {
-    return `Bu uçuşla varış ${withLocative(flight.arrive.time)}; ilk gün yalnızca yerleşme${withEvening ? " ve akşam yemeği" : ""}.`;
-  }
-  if (!first && flight.leave) {
-    return `Bu uçuşla dönüş kalkışı ${withLocative(flight.leave.time)}; son gün ${withEvening ? "akşam yemeği ve " : ""}havalimanına geçiş için.`;
-  }
+function flightDayNote(first: boolean, flight: NonNullable<ItineraryInput["flight"]>, withEvening: boolean): DayNote | null {
+  if (first && flight.arrive) return { kind: "arrive", time: flight.arrive.time, evening: withEvening };
+  if (!first && flight.leave) return { kind: "leave", time: flight.leave.time, evening: withEvening };
   return null;
 }
 
@@ -704,9 +709,9 @@ export function buildItinerary(input: ItineraryInput): Itinerary {
       const note =
         flightNote ??
         (!d.daytime && d.evening === null
-          ? "Bu gün için plan zamanı kalmıyor."
+          ? ({ kind: "noTime" } as const)
           : stops.length === 0
-            ? "Bu zaman aralığına uyan açık bir mekân bulunamadı."
+            ? ({ kind: "noneOpen" } as const)
             : null);
       const daytime = d.daytime ? { start: hhmm(d.daytime.start - base), end: hhmm(d.daytime.end - base) } : null;
       return { number: d.number, date: d.date, tags: d.tags, window, daytime, stops, free, note, flightNote: flightNote !== null };

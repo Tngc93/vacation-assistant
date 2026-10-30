@@ -5,20 +5,12 @@ import { storedPhotoSchema } from "@/lib/places/file";
  * Shape of src/data/events/<CODE>.json: the city's big recurring events (festivals, carnivals, fairs, Christmas
  * markets, film and music festivals), fetched ahead of time from Wikidata by `npm run data:events`. The app only
  * reads these files; it never queries Wikidata at request time.
+ * Version 2 (2026-10-29): English names (`nameEn`, the venue's too) for the English interface.
  */
-export const EVENTS_FILE_VERSION = 1;
+export const EVENTS_FILE_VERSION = 2;
 
 export const EVENT_TYPES = ["christmasMarket", "carnival", "film", "music", "fair", "festival"] as const;
 export type EventType = (typeof EVENT_TYPES)[number];
-
-export const EVENT_TYPE_LABELS: Record<EventType, string> = {
-  christmasMarket: "Noel pazarı",
-  carnival: "Karnaval",
-  film: "Film festivali",
-  music: "Müzik festivali",
-  fair: "Panayır",
-  festival: "Festival",
-};
 
 const isoDate = z.iso.date();
 const qid = z.string().regex(/^Q[1-9]\d*$/);
@@ -34,6 +26,8 @@ export const storedEventSchema = z
     qid,
     /** names.ts: Turkish label, else English; never a non-Latin name when a Latin one exists. */
     name: z.string().min(1),
+    /** The English Wikidata label, only when it differs from `name` and is in the Latin script. */
+    nameEn: z.string().min(1).optional(),
     localName: z.string().min(1).optional(),
     type: z.enum(EVENT_TYPES),
     /** Wikipedia language editions with an article: the ranking, and the threshold that drops minor events. */
@@ -47,7 +41,13 @@ export const storedEventSchema = z
     months: z.array(z.number().int().min(1).max(12)).min(1).max(6).optional(),
     /** The one venue (P276) that is a place rather than the city or a district, with its coordinates. */
     venue: z
-      .object({ qid, name: z.string().min(1), lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) })
+      .object({
+        qid,
+        name: z.string().min(1),
+        nameEn: z.string().min(1).optional(),
+        lat: z.number().min(-90).max(90),
+        lon: z.number().min(-180).max(180),
+      })
       .optional(),
     /** Official website (P856). */
     website: z.url({ protocol: /^https?$/ }).optional(),
@@ -70,3 +70,7 @@ export const eventsFileSchema = z.object({
 export type StoredEvent = z.infer<typeof storedEventSchema>;
 export type EventEdition = z.infer<typeof editionSchema>;
 export type EventsFile = z.infer<typeof eventsFileSchema>;
+
+/** The event's name in the interface language: its English label in English, when there is one. */
+export const eventName = (event: Pick<StoredEvent, "name" | "nameEn">, locale: "tr" | "en"): string =>
+  locale === "en" ? (event.nameEn ?? event.name) : event.name;

@@ -4,9 +4,11 @@ import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useId, useRef, useState, type FormEvent } from "react";
 import { Button, Chip } from "@/components/ui";
-import { findDestination, DISCOVER_CITY_CODES } from "@/data/destinations";
+import { cityName, findDestination, DISCOVER_CITY_CODES } from "@/data/destinations";
 import { DEFAULT_ORIGIN, readRememberedOrigin } from "@/data/origins";
-import { todayInIstanbul } from "@/lib/search/dates";
+import { useI18n } from "@/i18n/client";
+import type { I18n } from "@/i18n/i18n";
+import { MAX_NIGHTS, todayInIstanbul } from "@/lib/search/dates";
 import {
   DEFAULT_PASSENGERS,
   parseSearch,
@@ -27,12 +29,17 @@ export type SearchFormProps = {
   today?: string;
 };
 
-type Errors = Partial<Record<SearchField, string>>;
+type Errors = Partial<Record<SearchField, SearchIssue["code"]>>;
 
 function toErrors(issues: SearchIssue[]): Errors {
   const errors: Errors = {};
-  for (const issue of issues) errors[issue.field] ??= issue.message;
+  for (const issue of issues) errors[issue.field] ??= issue.code;
   return errors;
+}
+
+/** An issue in the interface language. */
+export function issueText({ m, f }: Pick<I18n, "m" | "f">, code: SearchIssue["code"] | undefined): string | undefined {
+  return code ? f(m.search.issues[code], { max: MAX_NIGHTS }) : undefined;
 }
 
 const fieldLabel = "font-mono text-micro uppercase tracking-[0.08em] text-ink-muted";
@@ -43,6 +50,8 @@ const fieldLabel = "font-mono text-micro uppercase tracking-[0.08em] text-ink-mu
  */
 export function SearchForm({ initial, initialIssues = [], today }: SearchFormProps) {
   const router = useRouter();
+  const i18n = useI18n();
+  const { locale, m } = i18n;
   const titleId = useId();
   const datesRef = useRef<DateRangeFieldHandle>(null);
   const [to, setTo] = useState<string | undefined>(initial?.to);
@@ -84,10 +93,10 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
     }
     setErrors({});
     setSubmitting(true);
-    router.push(planHref(result.value));
+    router.push(planHref(result.value, locale));
   };
 
-  const errorList = Object.values(errors);
+  const errorList = Object.values(errors).map((code) => issueText(i18n, code)!);
 
   return (
     <div>
@@ -99,14 +108,20 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
         className="scroll-mt-8 rounded-md border border-rule bg-paper-raised p-4 shadow-ticket md:p-5"
       >
         <h2 id={titleId} className="sr-only">
-          Şehir ve tarihler
+          {m.search.formTitle}
         </h2>
         <div className="grid gap-5 md:grid-cols-[minmax(0,5fr)_minmax(0,6fr)_auto] md:items-start md:gap-4">
           <div className="min-w-0">
             <span aria-hidden="true" className={fieldLabel}>
-              Nereye
+              {m.search.where}
             </span>
-            <DestinationCombobox value={to} onChange={chooseCity} label="Varış şehri" error={errors.to} className="mt-1" />
+            <DestinationCombobox
+              value={to}
+              onChange={chooseCity}
+              label={m.search.destination}
+              error={issueText(i18n, errors.to)}
+              className="mt-1"
+            />
           </div>
           <DateRangeField
             ref={datesRef}
@@ -115,20 +130,20 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
               setDates(next);
               clearError("depart", "return");
             }}
-            departError={errors.depart}
-            returnError={errors.return}
+            departError={issueText(i18n, errors.depart)}
+            returnError={issueText(i18n, errors.return)}
             today={today}
           />
           <div className="md:pt-[1.125rem]">
             <Button type="submit" size="lg" className="w-full md:h-11 md:w-auto" disabled={submitting}>
-              {submitting ? "Plan hazırlanıyor" : "Planla"}
+              {submitting ? m.search.submitting : m.search.submit}
               <ArrowRight aria-hidden="true" size={16} strokeWidth={1.5} />
             </Button>
           </div>
         </div>
         {errorList.length ? (
           <div role="alert" className="mt-4 border-t border-rule pt-3 text-caption text-warn">
-            <p className="font-medium">Planı çıkarmak için:</p>
+            <p className="font-medium">{m.search.fixToPlan}</p>
             <ul className="mt-1 list-inside list-disc">
               {errorList.map((message) => (
                 <li key={message}>{message}</li>
@@ -140,7 +155,7 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
 
       <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
         <span id={`${titleId}-discover`} className={fieldLabel}>
-          Keşfet:
+          {m.search.discover}
         </span>
         <ul aria-labelledby={`${titleId}-discover`} className="flex flex-wrap gap-2">
           {DISCOVER_CITY_CODES.map((code) => {
@@ -154,7 +169,7 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
                     datesRef.current?.open();
                   }}
                 >
-                  {city.nameTr}
+                  {cityName(city, locale)}
                 </Chip>
               </li>
             );

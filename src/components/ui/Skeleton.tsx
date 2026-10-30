@@ -14,7 +14,7 @@ export function Skeleton({ className, ...props }: HTMLAttributes<HTMLDivElement>
 }
 
 /** Ticket-shaped loading state used for result lists. */
-export function SkeletonTicket({ label = "Yükleniyor", className }: { label?: string; className?: string }) {
+export function SkeletonTicket({ label, className }: { label: string; className?: string }) {
   return (
     <div role="status" className={cn("rounded-md border border-rule bg-paper-raised p-5", className)}>
       <span className="sr-only">{label}</span>

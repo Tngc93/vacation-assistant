@@ -1,5 +1,7 @@
 "use client";
 
+import { useI18n } from "@/i18n/client";
+import { sourceLabel } from "@/lib/rates/format";
 import { PencilLine } from "lucide-react";
 import { useCallback, useState } from "react";
 import { Caption } from "@/components/ui";
@@ -43,17 +45,26 @@ export function WebStaySearch({ query, rates, demo, fetcher }: Props) {
 
 /** Gemini: the grounded answer shown as it came (no ranges read out, no lira, no cache, no "Bütçeye yaz"). */
 function Grounded({ query, conn, fetcher }: { query: StayQuery; conn: Connection; fetcher?: typeof fetch }) {
-  const run = useCallback((c: Connection) => searchGrounded(c, "stays", query, { fetcher, now: Date.now() }), [query, fetcher]);
+  const { locale, m } = useI18n();
+  const run = useCallback(
+    (c: Connection) => searchGrounded(c, "stays", query, { fetcher, now: Date.now(), language: locale }),
+    [query, fetcher, locale],
+  );
   return (
     <div className="mt-4">
-      <GroundedSearch label="Semte göre fiyat aralığını web'de ara" conn={conn} run={run} fetcher={fetcher} rows={3} />
+      <GroundedSearch label={m.ai.webStays.search} conn={conn} run={run} fetcher={fetcher} rows={3} />
     </div>
   );
 }
 
 function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<ReturnType<typeof useSearchConnection>>) {
-  const key = webCacheKey("stays", [query.city, query.checkIn, query.checkOut, query.adults]);
-  const run = useCallback(() => searchStayPrices(conn, query, rates, { fetcher, now: Date.now(), sample: demo }), [conn, query, rates, fetcher, demo]);
+  const { locale, m, f } = useI18n();
+  const t = m.ai.webStays;
+  const key = webCacheKey("stays", [locale, query.city, query.checkIn, query.checkOut, query.adults]);
+  const run = useCallback(
+    () => searchStayPrices(conn, query, rates, { fetcher, now: Date.now(), sample: demo, language: locale }),
+    [conn, query, rates, fetcher, demo, locale],
+  );
   const { result, busy, error, search } = useWebSearch("stays", key, run);
   const [written, setWritten] = useState<{ ok: boolean; text: string } | null>(null);
   const cur = effectiveCurrency(useBudgetCurrency(null), rates);
@@ -62,20 +73,20 @@ function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<Re
   const write = (area: StayArea) => {
     const minor = stayMidpoint(area, cur, rates);
     if (minor === null) {
-      setWritten({ ok: false, text: `${area.currency} kuru alınamadığı için bu aralık bütçeye yazılamadı.` });
+      setWritten({ ok: false, text: f(t.noRate, { currency: area.currency }) });
       return;
     }
     const event = new CustomEvent(BUDGET_STAY_EVENT, { detail: { minor, currency: cur }, cancelable: true });
     if (window.dispatchEvent(event)) {
-      setWritten({ ok: false, text: "Bütçe şu an bu tutarı alamadı; gecelik tutarı Bütçe'de kendin yazabilirsin." });
+      setWritten({ ok: false, text: t.notTaken });
       return;
     }
-    setWritten({ ok: true, text: `${area.name}: gecelik ${formatMoney(minor, cur)} bütçeye yazıldı (aralığın ortası). Bütçe'de değiştirebilirsin.` });
+    setWritten({ ok: true, text: f(t.written, { area: area.name, price: formatMoney(minor, cur, locale) }) });
   };
 
   return (
     <div className="mt-4 grid gap-4">
-      <SearchButton label="Semte göre fiyat aralığını web'de ara" busy={busy} done={!!result} onSearch={search} provider={conn.provider} demo={demo} />
+      <SearchButton label={t.search} busy={busy} done={!!result} onSearch={search} provider={conn.provider} demo={demo} />
       {error ? <NoticeText notice={error} alert /> : null}
       {busy ? (
         <SearchSkeleton rows={3} />
@@ -98,6 +109,10 @@ function Connected({ query, rates, demo, conn, fetcher }: Props & NonNullable<Re
 }
 
 function AreaRow({ area, cur, rates, onWrite }: { area: StayArea; cur: BudgetCurrency; rates: RateTable; onWrite: () => void }) {
+  const i18n = useI18n();
+  const { locale, intl, m, f } = i18n;
+  const t = m.ai.webStays;
+  const site = (minor: number) => formatMinor(minor, area.currency, locale);
   const foreign = area.currency !== cur;
   const shown = (minor: number) => {
     const converted = convertAmount(minor, area.currency, cur, rates);
@@ -107,22 +122,22 @@ function AreaRow({ area, cur, rates, onWrite }: { area: StayArea; cur: BudgetCur
   const max = shown(area.maxMinor);
   const convertible = min !== null && max !== null;
   // The rates between the site's currency and the budget's (through TRY).
-  const sources = [...new Set([area.currency, cur].flatMap((c) => (c === "TRY" ? [] : (rates[c]?.sourceName ?? []))))];
+  const sources = [...new Set([area.currency, cur].flatMap((c) => (c === "TRY" || !rates[c] ? [] : [sourceLabel(rates[c].sourceName, i18n)])))];
   return (
     <li className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 rounded-md border border-dashed border-rule bg-paper px-4 py-3">
       <div className="min-w-0">
         <p className="text-body">{area.name}</p>
         <p className="mt-1 font-mono text-body tabular">
-          {convertible ? `${formatMoney(min, cur)} – ${formatMoney(max, cur)}` : `${formatMinor(area.minMinor, area.currency)} – ${formatMinor(area.maxMinor, area.currency)}`}
-          <span className="text-caption text-ink-muted"> / gece</span>
+          {convertible ? `${formatMoney(min, cur, locale)} – ${formatMoney(max, cur, locale)}` : `${site(area.minMinor)} – ${site(area.maxMinor)}`}
+          <span className="text-caption text-ink-muted">{t.perNight}</span>
         </p>
         <Caption as="p" className="mt-0.5">
-          {foreign && convertible ? `SİTEDE ${formatMinor(area.minMinor, area.currency)} – ${formatMinor(area.maxMinor, area.currency)} · ` : ""}
+          {foreign && convertible ? f(t.onSite, { range: `${site(area.minMinor)} – ${site(area.maxMinor)}` }) : ""}
           {convertible
             ? foreign
-              ? `KUR: ${sources.join(" · ").toLocaleUpperCase("tr")} · TAHMİNİ`
-              : "TAHMİNİ"
-            : `${area.currency} KURU ALINAMADI · ${currencyLabel(cur)} KARŞILIĞI YOK`}
+              ? f(t.rateEstimated, { sources: sources.join(" · ").toLocaleUpperCase(intl) })
+              : t.estimated
+            : f(m.ai.webFlights.noRate, { currency: area.currency, budget: currencyLabel(cur, locale) })}
         </Caption>
         <div className="mt-1">
           <SourceLink link={area.link} />
@@ -134,7 +149,7 @@ function AreaRow({ area, cur, rates, onWrite }: { area: StayArea; cur: BudgetCur
         className="inline-flex items-center gap-1 text-caption text-ink-muted underline underline-offset-4 hover:text-ink"
       >
         <PencilLine aria-hidden="true" size={14} strokeWidth={1.5} />
-        Bütçeye yaz
+        {t.write}
       </button>
     </li>
   );

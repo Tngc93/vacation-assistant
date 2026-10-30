@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "cityCode": "VCE",
  "fetchedAt": "2026-10-23T12:04:56.120Z",
  "radiusKm": 2,
@@ -45,6 +45,9 @@
     {
      "id": "way/138800932",
      "name": "Basilica di San Marco",
+     "labels": {
+      "en": "St Mark's Basilica"
+     },
      "lat": 45.43456,
      "lon": 12.33984,
      "website": "https://www.basilicasanmarco.it/",
@@ -65,11 +68,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Venice_-_St._Marc%27s_Basilica_01.jpg",
       "fullWidth": 3072
      },
-     "description": "Bazilika"
+     "description": "Bazilika",
+     "descriptionEn": "church in Venice, Italy"
     },
     {
      "id": "way/138803915",
      "name": "Palazzo Ducale",
+     "labels": {
+      "en": "Doge's Palace"
+     },
      "lat": 45.43421,
      "lon": 12.34034,
      "openingHours": "Apr 01-Oct 31 08:30-19:00; Nov 01-Mar 31 08:30-17:30",
@@ -91,11 +98,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:(Venice)_Doge%27s_Palace_facing_the_sea.jpg",
       "fullWidth": 8280
      },
-     "description": "İtalya'da saray"
+     "description": "İtalya'da saray",
+     "descriptionEn": "palace in Venice, Italy"
     },
     {
      "id": "relation/2289364",
      "name": "Ponte di Rialto",
+     "labels": {
+      "en": "Rialto Bridge"
+     },
      "lat": 45.43804,
      "lon": 12.33593,
      "wikipediaCount": 51,
@@ -113,12 +124,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Rialto_2025_4.jpg",
       "fullWidth": 5100
      },
-     "description": "Venedik, İtalya'da bulunan bir taş köprü"
+     "description": "Venedik, İtalya'da bulunan bir taş köprü",
+     "descriptionEn": "one of four bridges spanning the Grand Canal in Venice, Italy"
     },
     {
      "id": "wikidata/Q309243",
      "name": "Büyük Kanal",
      "localName": "Grand Canal",
+     "labels": {
+      "en": "Grand Canal"
+     },
      "lat": 45.44222,
      "lon": 12.32639,
      "wikipediaCount": 50,
@@ -133,7 +148,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg",
       "fullWidth": 5387
      },
-     "description": "canal and major water-traffic corridor in Venice, Italy"
+     "description": "canal and major water-traffic corridor in Venice, Italy",
+     "descriptionEn": "canal and major water-traffic corridor in Venice, Italy"
     },
     {
      "id": "way/172349507",
@@ -155,11 +171,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_San_Marco_(Venice)_at_night-msu-2021-6449-.jpg",
       "fullWidth": 4984
      },
-     "description": "square in Venice, Italy"
+     "description": "square in Venice, Italy",
+     "descriptionEn": "square in Venice, Italy"
     },
     {
      "id": "way/138803225",
      "name": "Ponte dei Sospiri",
+     "labels": {
+      "en": "Bridge of Sighs"
+     },
      "lat": 45.43406,
      "lon": 12.34086,
      "wikipediaCount": 50,
@@ -177,7 +197,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Antonio_Contin_-_Ponte_dei_sospiri_(Venice).jpg",
       "fullWidth": 5958
      },
-     "description": "Venedik'te 1603 yılında yapılmış bir köprü"
+     "description": "Venedik'te 1603 yılında yapılmış bir köprü",
+     "descriptionEn": "Bridge over a canal in Venice"
     },
     {
      "id": "way/138801509",
@@ -200,7 +221,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_della_Salute_from_Hotel_Monaco.jpg",
       "fullWidth": 3973
      },
-     "description": "church in Venice, Italy"
+     "description": "church in Venice, Italy",
+     "descriptionEn": "church in Venice, Italy"
     },
     {
      "id": "node/251501878",
@@ -227,7 +249,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Teatro_La_Fenice_(Venice)_-_Facade.jpg",
       "fullWidth": 6556
      },
-     "description": "İtalya'da tiyatro"
+     "description": "İtalya'da tiyatro",
+     "descriptionEn": "opera house in Venice, Italy"
     },
     {
      "id": "way/206333242",
@@ -253,12 +276,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Libreria_Marciana_Venezia_sera.jpg",
       "fullWidth": 6500
      },
-     "description": "library in Venice, Italy"
+     "description": "library in Venice, Italy",
+     "descriptionEn": "library in Venice, Italy"
     },
     {
      "id": "way/252637693",
      "name": "Aziz Mark'ın Çan kulesi",
      "localName": "Campanile di San Marco",
+     "labels": {
+      "en": "St Mark's Campanile"
+     },
      "lat": 45.43404,
      "lon": 12.33904,
      "wikipediaCount": 34,
@@ -277,12 +304,16 @@
       "fullWidth": 5889
      },
      "description": "bell tower of St Mark's Basilica in Venice, Italy",
+     "descriptionEn": "bell tower of St Mark's Basilica in Venice, Italy",
      "parentId": "Q172988",
      "parentName": "San Marco Bazilikası"
     },
     {
      "id": "node/2189685759",
      "name": "Arsenale di Venezia",
+     "labels": {
+      "en": "Venetian Arsenal"
+     },
      "lat": 45.43543,
      "lon": 12.35334,
      "website": "https://arsenale.comune.venezia.it/",
@@ -306,11 +337,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Arsenal_-_Venice,_Italy_-_panoramio.jpg",
       "fullWidth": 2599
      },
-     "description": "complex of former shipyards and armories in Venice, Italy"
+     "description": "complex of former shipyards and armories in Venice, Italy",
+     "descriptionEn": "complex of former shipyards and armories in Venice, Italy"
     },
     {
      "id": "way/138841819",
      "name": "Basilica di Santa Maria Gloriosa dei Frari",
+     "labels": {
+      "en": "Santa Maria Gloriosa dei Frari"
+     },
      "lat": 45.43687,
      "lon": 12.32636,
      "website": "https://www.basilicadeifrari.it/",
@@ -331,11 +366,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Facade_of_Santa_Maria_Gloriosa_dei_Frari_(Venice).jpg",
       "fullWidth": 5386
      },
-     "description": "church in Venice"
+     "description": "church in Venice",
+     "descriptionEn": "church in Venice"
     },
     {
      "id": "way/154856677",
      "name": "Chiesa del Redentore",
+     "labels": {
+      "en": "Il Redentore"
+     },
      "lat": 45.42495,
      "lon": 12.33238,
      "wikipediaCount": 31,
@@ -353,11 +392,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_del_Redentore_(Venice).jpg",
       "fullWidth": 4246
      },
-     "description": "Roman Catholic church in Venice, Italy"
+     "description": "Roman Catholic church in Venice, Italy",
+     "descriptionEn": "Roman Catholic church in Venice, Italy"
     },
     {
      "id": "way/138804537",
      "name": "Basilica di San Giorgio Maggiore",
+     "labels": {
+      "en": "Church of San Giorgio Maggiore"
+     },
      "lat": 45.42937,
      "lon": 12.34331,
      "openingHours": "Mo-Su 07:00-18:00",
@@ -377,12 +420,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Giorgio_Maggiore_(Venice).jpg",
       "fullWidth": 2587
      },
-     "description": "basilica on the Island of San Giorgio Maggiore in Venice"
+     "description": "basilica on the Island of San Giorgio Maggiore in Venice",
+     "descriptionEn": "basilica on the Island of San Giorgio Maggiore in Venice"
     },
     {
      "id": "wikidata/Q52509",
      "name": "Accademia Köprüsü",
      "localName": "Ponte dell'Accademia",
+     "labels": {
+      "en": "Ponte dell'Accademia"
+     },
      "lat": 45.43166,
      "lon": 12.32899,
      "wikipediaCount": 27,
@@ -400,12 +447,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_dell%27Accademia_Venezia.jpg",
       "fullWidth": 5100
      },
-     "description": "Venedik'te bir köprü"
+     "description": "Venedik'te bir köprü",
+     "descriptionEn": "bridge in Venice, Italy"
     },
     {
      "id": "wikidata/Q957551",
      "name": "Palazzo Foscari",
      "localName": "Ca' Foscari",
+     "labels": {
+      "en": "Ca' Foscari"
+     },
      "lat": 45.43446,
      "lon": 12.3266,
      "wikipediaCount": 27,
@@ -423,11 +474,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:(Venice)_Ca%27_Foscari.jpg",
       "fullWidth": 9824
      },
-     "description": "palace in Venice"
+     "description": "palace in Venice",
+     "descriptionEn": "palace in Venice"
     },
     {
      "id": "way/153483298",
      "name": "Basilica dei santi Giovanni e Paolo",
+     "labels": {
+      "en": "Santi Giovanni e Paolo"
+     },
      "lat": 45.43925,
      "lon": 12.3422,
      "openingHours": "Mo-Sa 09:00-18:00; Su 12:00-18:00",
@@ -447,11 +502,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Basilica_dei_Santi_Giovanni_e_Paolo.jpg",
       "fullWidth": 5116
      },
-     "description": "church in Venice, Italy"
+     "description": "church in Venice, Italy",
+     "descriptionEn": "church in Venice, Italy"
     },
     {
      "id": "way/162035005",
      "name": "Chiesa di San Zaccaria",
+     "labels": {
+      "en": "San Zaccaria"
+     },
      "lat": 45.43471,
      "lon": 12.3436,
      "openingHours": "Mo-Sa 10:00-12:00, 16:00-18:00; Su 16:00-18:00",
@@ -470,11 +529,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Zaccaria_Venezia.jpg",
       "fullWidth": 3446
      },
-     "description": "church in Venice"
+     "description": "church in Venice",
+     "descriptionEn": "church in Venice"
     },
     {
      "id": "node/13195470201",
      "name": "Ghetto di Venezia",
+     "labels": {
+      "en": "Venetian Ghetto"
+     },
      "lat": 45.44536,
      "lon": 12.32684,
      "website": "https://www.ghettovenezia.com/",
@@ -490,7 +553,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Venetian_Ghetto_from_above.jpg",
       "fullWidth": 1280
      },
-     "description": "İtalya'da ada"
+     "description": "İtalya'da ada",
+     "descriptionEn": "neighbourhood in Venice"
     },
     {
      "id": "wikidata/Q52501",
@@ -512,11 +576,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_della_Costituzione.JPG",
       "fullWidth": 2048
      },
-     "description": "bridge in Venice, Italy"
+     "description": "bridge in Venice, Italy",
+     "descriptionEn": "bridge in Venice, Italy"
     },
     {
      "id": "way/138800840",
      "name": "Chiesa di Santa Maria dei Miracoli",
+     "labels": {
+      "en": "Santa Maria dei Miracoli, Venice"
+     },
      "lat": 45.4395,
      "lon": 12.33924,
      "openingHours": "Mo-Sa 10:30-16:30",
@@ -535,7 +603,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_dei_Miracoli_(facciata).jpg",
       "fullWidth": 3056
      },
-     "description": "church in Cannaregio, Venice"
+     "description": "church in Cannaregio, Venice",
+     "descriptionEn": "church in Cannaregio, Venice"
     },
     {
      "id": "wikidata/Q1052167",
@@ -554,7 +623,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27da_Mosto_e_gondola_sul_Canal_Grande_Venezia.jpg",
       "fullWidth": 4912
      },
-     "description": "palace in Venice, Italy"
+     "description": "palace in Venice, Italy",
+     "descriptionEn": "palace in Venice, Italy"
     },
     {
      "id": "wikidata/Q960610",
@@ -567,11 +637,15 @@
       "business",
       "organization"
      ],
-     "description": "coffeehouse in San Marco, Italy"
+     "description": "coffeehouse in San Marco, Italy",
+     "descriptionEn": "coffeehouse in San Marco, Italy"
     },
     {
      "id": "way/410344943",
      "name": "Torre dell'orologio",
+     "labels": {
+      "en": "St Mark's Clocktower"
+     },
      "lat": 45.43474,
      "lon": 12.33893,
      "wikipediaCount": 21,
@@ -592,12 +666,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:St_Mark%27s_Clocktower_2.jpg",
       "fullWidth": 4600
      },
-     "description": "clock tower on piazza San Marco, Venice, Italy"
+     "description": "clock tower on piazza San Marco, Venice, Italy",
+     "descriptionEn": "clock tower on piazza San Marco, Venice, Italy"
     },
     {
      "id": "wikidata/Q182708",
      "name": "Türk Hanı",
      "localName": "Fondaco dei Turchi",
+     "labels": {
+      "en": "Fondaco dei Turchi"
+     },
      "lat": 45.442,
      "lon": 12.32868,
      "wikipediaCount": 21,
@@ -617,7 +695,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fondaco_dei_Turchi.jpg",
       "fullWidth": 5876
      },
-     "description": "historical building in Venice"
+     "description": "historical building in Venice",
+     "descriptionEn": "historical building in Venice"
     },
     {
      "id": "wikidata/Q1259067",
@@ -636,7 +715,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Fontego_dei_Tedeschi_Venedig.jpg",
       "fullWidth": 4024
      },
-     "description": "palace in Venice"
+     "description": "palace in Venice",
+     "descriptionEn": "palace in Venice"
     },
     {
      "id": "wikidata/Q1265593",
@@ -658,7 +738,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27_Vendramin_Calergi.jpg",
       "fullWidth": 6048
      },
-     "description": "15th-century Venetian palace"
+     "description": "15th-century Venetian palace",
+     "descriptionEn": "15th-century Venetian palace"
     },
     {
      "id": "wikidata/Q861436",
@@ -680,7 +761,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Madonna_dell%27Orto.jpg",
       "fullWidth": 3740
      },
-     "description": "church in Venice, Italy"
+     "description": "church in Venice, Italy",
+     "descriptionEn": "church in Venice, Italy"
     },
     {
      "id": "wikidata/Q922677",
@@ -702,7 +784,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Giacomo_di_Rialto_(Facade).jpg",
       "fullWidth": 4592
      },
-     "description": "church in Venice, Italy"
+     "description": "church in Venice, Italy",
+     "descriptionEn": "church in Venice, Italy"
     },
     {
      "id": "wikidata/Q1028202",
@@ -724,7 +807,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Salvador.jpg",
       "fullWidth": 4024
      },
-     "description": "church in San Marco, Venice"
+     "description": "church in San Marco, Venice",
+     "descriptionEn": "church in San Marco, Venice"
     },
     {
      "id": "wikidata/Q1816328",
@@ -750,7 +834,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ospedale_della_Piet%C3%A0.jpg",
       "fullWidth": 375
      },
-     "description": "convent, orphanage, and music school in Venice"
+     "description": "convent, orphanage, and music school in Venice",
+     "descriptionEn": "convent, orphanage, and music school in Venice"
     },
     {
      "id": "wikidata/Q946542",
@@ -772,7 +857,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Francesco_della_vigna.jpg",
       "fullWidth": 2592
      },
-     "description": "Roman Catholic church in the Sestiere of Castello in Venice, Italy"
+     "description": "Roman Catholic church in the Sestiere of Castello in Venice, Italy",
+     "descriptionEn": "Roman Catholic church in the Sestiere of Castello in Venice, Italy"
     },
     {
      "id": "wikidata/Q748689",
@@ -794,12 +880,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_degli_Scalzi_1_(7227498868)-edit.jpg",
       "fullWidth": 2992
      },
-     "description": "church in Venice"
+     "description": "church in Venice",
+     "descriptionEn": "church in Venice"
     },
     {
      "id": "wikidata/Q974832",
      "name": "Santo Stefano di Venezia",
      "localName": "Santo Stefano, Venice",
+     "labels": {
+      "en": "Santo Stefano, Venice"
+     },
      "lat": 45.43373,
      "lon": 12.33087,
      "wikipediaCount": 18,
@@ -818,12 +908,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Campo_Santo_Stefano_(Venice).jpg",
       "fullWidth": 7020
      },
-     "description": "church in venice"
+     "description": "church in venice",
+     "descriptionEn": "church in venice"
     },
     {
      "id": "wikidata/Q52508",
      "name": "Yalınayak Köprüsü",
      "localName": "Ponte degli Scalzi",
+     "labels": {
+      "en": "Ponte degli Scalzi"
+     },
      "lat": 45.44104,
      "lon": 12.32278,
      "wikipediaCount": 18,
@@ -841,11 +935,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ponte_degli_Scalzi_(Venice).jpg",
       "fullWidth": 7277
      },
-     "description": "bridge in Venice"
+     "description": "bridge in Venice",
+     "descriptionEn": "bridge in Venice"
     },
     {
      "id": "way/118714648",
      "name": "Santa Maria del Rosario",
+     "labels": {
+      "en": "Gesuati"
+     },
      "lat": 45.42954,
      "lon": 12.32733,
      "website": "https://www.chorusvenezia.org/chiesa-di-santa-maria-del-rosario-gesuati",
@@ -865,11 +963,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Venezia_Gesuati_R01.jpg",
       "fullWidth": 4835
      },
-     "description": "Venetian church"
+     "description": "Venetian church",
+     "descriptionEn": "Venetian church"
     },
     {
      "id": "way/138804072",
      "name": "Chiesa di San Moisè",
+     "labels": {
+      "en": "San Moisè"
+     },
      "lat": 45.43309,
      "lon": 12.33615,
      "wikipediaCount": 17,
@@ -887,7 +989,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:San_Moise_(Venice).jpg",
       "fullWidth": 6829
      },
-     "description": "church in Venice"
+     "description": "church in Venice",
+     "descriptionEn": "church in Venice"
     },
     {
      "id": "wikidata/Q2936058",
@@ -906,7 +1009,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:0_Venise,_le_Canal_de_la_Guidecca_vu_du_campanile_de_San_Giorgio_Maggiore.JPG",
       "fullWidth": 4776
      },
-     "description": "canal in Venice, Italy"
+     "description": "canal in Venice, Italy",
+     "descriptionEn": "canal in Venice, Italy"
     },
     {
      "id": "wikidata/Q1586965",
@@ -929,7 +1033,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Italy_-_Venice,_Harry%27s_Bar,_San_Marco.jpg",
       "fullWidth": 3264
      },
-     "description": "restaurant in Venice, Italy"
+     "description": "restaurant in Venice, Italy",
+     "descriptionEn": "restaurant in Venice, Italy"
     },
     {
      "id": "wikidata/Q1784082",
@@ -951,7 +1056,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_S.Giorgio_dei_Greci.jpg",
       "fullWidth": 4032
      },
-     "description": "church in Venice"
+     "description": "church in Venice",
+     "descriptionEn": "church in Venice"
     },
     {
      "id": "wikidata/Q473237",
@@ -973,11 +1079,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg",
       "fullWidth": 4468
      },
-     "description": "sculpture by Andrea del Verrocchio in Venice, Italy"
+     "description": "sculpture by Andrea del Verrocchio in Venice, Italy",
+     "descriptionEn": "sculpture by Andrea del Verrocchio in Venice, Italy"
     },
     {
      "id": "way/138804512",
      "name": "Chiesa di Santa Maria Formosa",
+     "labels": {
+      "en": "Santa Maria Formosa"
+     },
      "lat": 45.43703,
      "lon": 12.34101,
      "wikipediaCount": 16,
@@ -995,12 +1105,16 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_Formosa_Facciata_e_campanile.jpg",
       "fullWidth": 4707
      },
-     "description": "church in Venice, Italy"
+     "description": "church in Venice, Italy",
+     "descriptionEn": "church in Venice, Italy"
     },
     {
      "id": "wikidata/Q169575",
      "name": "Zecca di Venezia",
      "localName": "Zecca of Venice",
+     "labels": {
+      "en": "Zecca of Venice"
+     },
      "lat": 45.43333,
      "lon": 12.33917,
      "wikipediaCount": 16,
@@ -1018,7 +1132,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:La_Zecca_Venice.jpg",
       "fullWidth": 4204
      },
-     "description": "16th century building in Venice"
+     "description": "16th century building in Venice",
+     "descriptionEn": "16th century building in Venice"
     }
    ]
   },
@@ -1051,7 +1166,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Accademia_(Venice).jpg",
       "fullWidth": 3171
      },
-     "description": "art museum in Venice, Italy"
+     "description": "art museum in Venice, Italy",
+     "descriptionEn": "art museum in Venice, Italy"
     },
     {
      "id": "way/162227289",
@@ -1077,7 +1193,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27_d%27Oro_facciata.jpg",
       "fullWidth": 4272
      },
-     "description": "palace and art gallery in Venice, Italy"
+     "description": "palace and art gallery in Venice, Italy",
+     "descriptionEn": "palace and art gallery in Venice, Italy"
     },
     {
      "id": "relation/2382783",
@@ -1102,11 +1219,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg",
       "fullWidth": 6632
      },
-     "description": "palace and museum in Venice, Italy"
+     "description": "palace and museum in Venice, Italy",
+     "descriptionEn": "palace and museum in Venice, Italy"
     },
     {
      "id": "relation/1927025",
      "name": "Museo Ca' Rezzonico",
+     "labels": {
+      "en": "Ca' Rezzonico"
+     },
      "lat": 45.43354,
      "lon": 12.32655,
      "address": "Fondamenta Rezzonico 3136",
@@ -1130,11 +1251,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_(Venice).jpg",
       "fullWidth": 5904
      },
-     "description": "palazzo and art museum in Venice, Italy"
+     "description": "palazzo and art museum in Venice, Italy",
+     "descriptionEn": "palazzo and art museum in Venice, Italy"
     },
     {
      "id": "node/5366368715",
      "name": "Collezione Peggy Guggenheim",
+     "labels": {
+      "en": "Peggy Guggenheim Collection"
+     },
      "lat": 45.4308,
      "lon": 12.33154,
      "address": "Corte Venier dai Leoni",
@@ -1156,7 +1281,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Pal_Venier_dei_Leone.jpg",
       "fullWidth": 3767
      },
-     "description": "modern art museum on the Grand Canal in Venice"
+     "description": "modern art museum on the Grand Canal in Venice",
+     "descriptionEn": "modern art museum on the Grand Canal in Venice"
     },
     {
      "id": "way/173619525",
@@ -1181,7 +1307,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palais_Grassi.jpg",
       "fullWidth": 9120
      },
-     "description": "palace and museum of arts on the Grand Canal, Venice"
+     "description": "palace and museum of arts on the Grand Canal, Venice",
+     "descriptionEn": "palace and museum of arts on the Grand Canal, Venice"
     },
     {
      "id": "node/4121738102",
@@ -1196,7 +1323,8 @@
       "museum",
       "organization"
      ],
-     "description": "art museum"
+     "description": "art museum",
+     "descriptionEn": "art museum"
     },
     {
      "id": "way/138843143",
@@ -1221,7 +1349,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Scuola_Grande_di_San_Rocco_(Venice).jpg",
       "fullWidth": 7360
      },
-     "description": "building in Venice, northern Italy"
+     "description": "building in Venice, northern Italy",
+     "descriptionEn": "building in Venice, northern Italy"
     },
     {
      "id": "relation/2317795",
@@ -1245,7 +1374,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:0_Venise,_Canal_della_Giudecca,_Dogana,_Santa._Maria_della_Salute_et_Canal_Grande.JPG",
       "fullWidth": 5166
      },
-     "description": "the triangular point where the Grand Canal meets the Giudecca Canal, its buildings, and the art gallery at the triangle's tip"
+     "description": "the triangular point where the Grand Canal meets the Giudecca Canal, its buildings, and the art gallery at the triangle's tip",
+     "descriptionEn": "the triangular point where the Grand Canal meets the Giudecca Canal, its buildings, and the art gallery at the triangle's tip"
     },
     {
      "id": "way/314636453",
@@ -1268,7 +1398,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Giorgio_degli_Schiavoni.jpg",
       "fullWidth": 2124
      },
-     "description": "historical scuola (confraternity house), now art gallery, in Venice, Italy"
+     "description": "historical scuola (confraternity house), now art gallery, in Venice, Italy",
+     "descriptionEn": "historical scuola (confraternity house), now art gallery, in Venice, Italy"
     },
     {
      "id": "node/3158707594",
@@ -1295,6 +1426,7 @@
       "fullWidth": 5876
      },
      "description": "Italian museum",
+     "descriptionEn": "Italian museum",
      "parentId": "Q182708",
      "parentName": "Türk Hanı"
     },
@@ -1320,7 +1452,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:6224_-_Venezia_-_Museo_navale_-_Foto_Giovanni_Dall%27Orto_3-Aug-2007.jpg",
       "fullWidth": 2048
      },
-     "description": "maritime museum in Venice, Italy"
+     "description": "maritime museum in Venice, Italy",
+     "descriptionEn": "maritime museum in Venice, Italy"
     },
     {
      "id": "relation/2317696",
@@ -1348,11 +1481,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_grimani_di_s.m._formosa,_ingresso_attr._al_sanmichelio_con_tre_busti_romani.jpg",
       "fullWidth": 2712
      },
-     "description": "İtalya'da saray"
+     "description": "İtalya'da saray",
+     "descriptionEn": "palace and museum near Santa Maria Formosa, Castello, Venice"
     },
     {
      "id": "node/4330799289",
      "name": "Casa di Carlo Goldoni",
+     "labels": {
+      "en": "Casa di Goldoni"
+     },
      "lat": 45.4362,
      "lon": 12.32829,
      "website": "https://carlogoldoni.visitmuve.it/",
@@ -1373,11 +1510,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Casa_goldoni,_01.jpg",
       "fullWidth": 2304
      },
-     "description": "museum in Italy"
+     "description": "museum in Italy",
+     "descriptionEn": "museum in Italy"
     },
     {
      "id": "node/4121738103",
      "name": "Museo archeologico nazionale di Venezia",
+     "labels": {
+      "en": "Museo Archeologico Nazionale, Venice"
+     },
      "lat": 45.43372,
      "lon": 12.33889,
      "website": "https://archeologicovenezia.cultura.gov.it/",
@@ -1413,11 +1554,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Querini_Stampalia_(Venice).jpg",
       "fullWidth": 6800
      },
-     "description": "cultural institution in Venice"
+     "description": "cultural institution in Venice",
+     "descriptionEn": "cultural institution in Venice"
     },
     {
      "id": "node/4479285990",
      "name": "Palazzo Mocenigo",
+     "labels": {
+      "en": "Museo di Palazzo Mocenigo"
+     },
      "lat": 45.4407,
      "lon": 12.32983,
      "website": "https://mocenigo.visitmuve.it/en/home/",
@@ -1440,7 +1585,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:(Venice)_Mocenigo_Palace-Museum_seen_from_Ca%27_Pesaro.jpg",
       "fullWidth": 7898
      },
-     "description": "palazzo in the sestiere of Santa Croce in Venice, Italy; it is now a museum of fabrics and costumes"
+     "description": "palazzo in the sestiere of Santa Croce in Venice, Italy; it is now a museum of fabrics and costumes",
+     "descriptionEn": "palazzo in the sestiere of Santa Croce in Venice, Italy; it is now a museum of fabrics and costumes"
     },
     {
      "id": "way/138842976",
@@ -1463,11 +1609,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:CANAL_GRANDE_-_palazzo_loredan_cini.jpg",
       "fullWidth": 3672
      },
-     "description": "palace along the Canal Grande, Venice"
+     "description": "palace along the Canal Grande, Venice",
+     "descriptionEn": "palace along the Canal Grande, Venice"
     },
     {
      "id": "node/2205844954",
      "name": "Museo Diocesano",
+     "labels": {
+      "en": "Museo diocesano d'arte sacra Sant'Apollonia"
+     },
      "lat": 45.43467,
      "lon": 12.34081,
      "openingHours": "Tu-Su 10:00-18:00",
@@ -1487,11 +1637,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:VeniceSantApolloniaCloister.jpg",
       "fullWidth": 3031
      },
-     "description": "museum in Italy"
+     "description": "museum in Italy",
+     "descriptionEn": "museum in Italy"
     },
     {
      "id": "node/250421435",
      "name": "Museo Ebraico",
+     "labels": {
+      "en": "Museo Ebraico di Venezia"
+     },
      "lat": 45.44513,
      "lon": 12.32718,
      "openingHours": "Su-Fr 10:00-17:30",
@@ -1511,7 +1665,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Museoebraicove.baldari.museo_entrata_.jpg",
       "fullWidth": 3264
      },
-     "description": "museum of the Jewish community in Venice"
+     "description": "museum of the Jewish community in Venice",
+     "descriptionEn": "museum of the Jewish community in Venice"
     },
     {
      "id": "way/316454133",
@@ -1536,11 +1691,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Campo_dei_gesuiti_-_Oratorio_dei_Crociferi,_Venice.jpg",
       "fullWidth": 5327
      },
-     "description": "art museum in former charity hospital in Venice, Italy"
+     "description": "art museum in former charity hospital in Venice, Italy",
+     "descriptionEn": "art museum in former charity hospital in Venice, Italy"
     },
     {
      "id": "node/4237129800",
      "name": "Istituto Veneto di Scienze Lettere ed Arti",
+     "labels": {
+      "en": "Istituto Veneto di Scienze, Lettere ed Arti"
+     },
      "lat": 45.43195,
      "lon": 12.32963,
      "wikipediaCount": 4,
@@ -1558,11 +1717,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_Loredan_in_Campo_Santo_Stefano_(Venice).jpg",
       "fullWidth": 7168
      },
-     "description": "academy of sciences in Venice"
+     "description": "academy of sciences in Venice",
+     "descriptionEn": "academy of sciences in Venice"
     },
     {
      "id": "node/4372320704",
      "name": "Museo d'Arte Orientale",
+     "labels": {
+      "en": "Museum of Oriental Art"
+     },
      "lat": 45.4412,
      "lon": 12.33162,
      "address": "Sestriere Santa Croce 2076",
@@ -1585,11 +1748,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Ca%27Pesaro_di_Baldassarre_Longhena_facciata_sul_Canal_Grande.jpg",
       "fullWidth": 6632
      },
-     "description": "art museum in Venice, Italy"
+     "description": "art museum in Venice, Italy",
+     "descriptionEn": "art museum in Venice, Italy"
     },
     {
      "id": "node/10572768074",
      "name": "Museo di icone",
+     "labels": {
+      "en": "Museum of icons"
+     },
      "lat": 45.4356,
      "lon": 12.34459,
      "address": "Fondamenta dei Greci",
@@ -1611,11 +1778,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Hellenic_Institute_for_Byzantine_and_Post-Byzantine_Studies_(Istituto_Ellenico_di_Studi_Bizantini_e_Postbizantini_di_Venezia),_Venice_(31290497375).jpg",
       "fullWidth": 4608
      },
-     "description": "museum in Venice"
+     "description": "museum in Venice",
+     "descriptionEn": "museum in Venice"
     },
     {
      "id": "node/4493365870",
      "name": "Negozio Olivetti",
+     "labels": {
+      "en": "Olivetti Exhibition centre in Venice, Italy"
+     },
      "lat": 45.43415,
      "lon": 12.33753,
      "address": "Piazza San Marco 101",
@@ -1633,11 +1804,15 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Le_magasin_Olivetti_de_Carlo_Scarpa_(Venise)_(8068024216).jpg",
       "fullWidth": 683
      },
-     "description": "Olivetti store located in Venice"
+     "description": "Olivetti store located in Venice",
+     "descriptionEn": "Olivetti store located in Venice"
     },
     {
      "id": "way/138802191",
      "name": "Magazzini del Sale",
+     "labels": {
+      "en": "Magazzini del sale"
+     },
      "lat": 45.42894,
      "lon": 12.33341,
      "wikipediaCount": 3,
@@ -1655,7 +1830,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Venezia_-_Magazzini_del_Sale_-_Foto_di_Paolo_Steffan.jpg",
       "fullWidth": 668
      },
-     "description": "historical building in Venice, Italy"
+     "description": "historical building in Venice, Italy",
+     "descriptionEn": "historical building in Venice, Italy"
     },
     {
      "id": "node/11952442769",
@@ -1772,7 +1948,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Venezia-Murano-Burano,_Venezia,_Italy_-_panoramio_(688).jpg",
       "fullWidth": 3264
      },
-     "description": "building in Venice, Italy"
+     "description": "building in Venice, Italy",
+     "descriptionEn": "building in Venice, Italy"
     },
     {
      "id": "node/10568329920",
@@ -1790,6 +1967,9 @@
     {
      "id": "node/7578687313",
      "name": "Campanile di San Marco",
+     "labels": {
+      "en": "St Mark's Campanile"
+     },
      "lat": 45.43404,
      "lon": 12.33905,
      "wikipediaCount": 34,
@@ -1808,6 +1988,7 @@
       "fullWidth": 5889
      },
      "description": "bell tower of St Mark's Basilica in Venice, Italy",
+     "descriptionEn": "bell tower of St Mark's Basilica in Venice, Italy",
      "parentId": "Q172988",
      "parentName": "San Marco Bazilikası"
     },
@@ -2191,7 +2372,8 @@
       "organization"
      ],
      "detailed": true,
-     "description": "coffeehouse in San Marco, Italy"
+     "description": "coffeehouse in San Marco, Italy",
+     "descriptionEn": "coffeehouse in San Marco, Italy"
     },
     {
      "id": "node/10009205442",
@@ -2260,7 +2442,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:Piazza_San_Marco,_Venezia_-_panoramio_(6).jpg",
       "fullWidth": 2556
      },
-     "description": "coffeehouse in Venice, Italy"
+     "description": "coffeehouse in Venice, Italy",
+     "descriptionEn": "coffeehouse in Venice, Italy"
     },
     {
      "id": "node/5149219332",

@@ -94,7 +94,7 @@ describe("card photos from Wikidata P18", () => {
     const extras = parseExtras({
       results: { bindings: [{ item: { value: "http://www.wikidata.org/entity/Q1" }, en: { value: "a palace" } }] },
     });
-    expect(extras.get("Q1")).toEqual({ description: "a palace" });
+    expect(extras.get("Q1")).toEqual({ description: "a palace", descriptionEn: "a palace" });
   });
 
   it("keeps only allowed licences (the city photo's filter): CC BY-ND is left out", async () => {

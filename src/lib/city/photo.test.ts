@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Fetcher } from "@/lib/places/overpass";
 import commons from "./__fixtures__/commons-imageinfo.json";
-import { attributionText, fetchCityPhoto, isAllowedLicense, photoFromImageInfo, plainText } from "./photo";
+import { fetchCityPhoto, isAllowedLicense, photoFromImageInfo, plainText } from "./photo";
 
 const info = commons.query.pages[0].imageinfo[0];
 const withLicense = (License: string, LicenseShortName: string) => ({
@@ -59,10 +59,7 @@ describe("Commons photo", () => {
     expect(photoFromImageInfo({ ...info, thumburl: "https://example.org/a.jpg" })).toBeNull();
   });
 
-  it("writes the credit with author, licence and the colour change", () => {
-    expect(attributionText({ author: "Julian Nyča", license: "CC BY-SA 4.0" })).toBe(
-      "Fotoğraf: Julian Nyča · CC BY-SA 4.0 · Wikimedia Commons · renkleri düzenlendi",
-    );
+  it("reads the author as plain text", () => {
     expect(plainText('<a href="x">dronepicr</a> &amp; <b>friends</b>')).toBe("dronepicr & friends");
   });
 

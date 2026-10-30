@@ -1,3 +1,4 @@
+import type { I18n } from "@/i18n/i18n";
 import { formatMoney } from "@/lib/format";
 import type { RateSourceId, RateTable } from "@/lib/rates/types";
 import { convertAmount, type BudgetCurrency } from "./currency";
@@ -71,18 +72,17 @@ export type Receipt = {
   rates: UsedRate[];
 };
 
-const ESTIMATE = "TAHMİNİ";
-const ENTERED = `SENİN GİRDİĞİN · ${ESTIMATE}`;
-
 /**
  * The budget receipt (PRD 13, 15). Flight × passengers, nights × the nightly
  * price the user entered, days × people × the daily spend the user entered.
  * Nothing is filled in for the user: a row without a value is missing, and the
  * total says it is partial. Every row is in whole units of the chosen currency,
  * so the rows add up to the total exactly. Flight prices come in TRY and are
- * converted only here, for display; every conversion goes through TRY.
+ * converted only here, for display; every conversion goes through TRY. The texts are in the interface language.
  */
-export function buildReceipt(input: ReceiptInput): Receipt {
+export function buildReceipt(input: ReceiptInput, { locale, m, f }: Pick<I18n, "locale" | "m" | "f">): Receipt {
+  const t = m.budget;
+  const money = (minor: number, currency: string) => formatMoney(minor, currency, locale);
   const used = new Map<string, UsedRate>();
   /** Minor units of `from` → minor units of `cur`, or null without a rate (never a guessed one). */
   const convert = (minor: number, from: string): number | null => {
@@ -102,53 +102,65 @@ export function buildReceipt(input: ReceiptInput): Receipt {
   const flightRow = (): ReceiptRow => {
     const { flight, pax } = input;
     if (flight.kind === "missing") {
-      return { id: "flight", label: "Uçuş", detail: null, amount: null, missing: "uçuş fiyatı yok", captions: [flight.reason] };
+      return { id: "flight", label: t.rows.flight, detail: null, amount: null, missing: t.missing.flight, captions: [flight.reason] };
     }
     const perAdult = flight.kind === "ticket" ? Math.round(flight.pricePerAdult * 100) : flight.perAdult;
     const amount = whole(perAdult * pax, "TRY");
-    const detail = `${pax} yolcu × ${formatMoney(perAdult, "TRY")} · ${flight.kind === "ticket" ? flight.label : `web: ${flight.host}`}`;
-    const noRate = amount === null ? [`${input.cur} KURU ALINAMADI · TOPLAMA EKLENMEDİ`] : [];
+    const detail = f(t.detail.flight, {
+      pax,
+      price: money(perAdult, "TRY"),
+      label: flight.kind === "ticket" ? flight.label : f(t.detail.web, { host: flight.host }),
+    });
+    const noRate = amount === null ? [f(t.captions.noRate, { currency: input.cur })] : [];
     return flight.kind === "ticket"
       ? {
           id: "flight",
-          label: "Uçuş",
+          label: t.rows.flight,
           detail,
           amount,
-          missing: amount === null ? "kur alınamadı" : null,
+          missing: amount === null ? t.missing.rate : null,
           captions: [
-            ["TRAVELPAYOUTS · ÖNBELLEKTEN", ESTIMATE].join(" · "),
-            ...(flight.differentDates ? ["FARKLI TARİH"] : []),
-            ...(flight.sample ? ["ÖRNEK VERİ · GERÇEK FİYAT DEĞİL"] : []),
+            t.captions.cached,
+            ...(flight.differentDates ? [t.captions.differentDate] : []),
+            ...(flight.sample ? [t.captions.sample] : []),
             ...noRate,
           ],
           note: flight.note,
         }
       : {
           id: "flight",
-          label: "Uçuş",
+          label: t.rows.flight,
           detail,
           amount,
-          missing: amount === null ? "kur alınamadı" : null,
-          captions: ["YAPAY ZEKÂ WEB'DEN BULDU · TAHMİNİ", "SATIN ALMADAN ÖNCE DOĞRULA", ...noRate],
+          missing: amount === null ? t.missing.rate : null,
+          captions: [t.captions.web, t.captions.verify, ...noRate],
           note: null,
         };
   };
 
-  const enteredRow = (id: "stay" | "daily", label: string, minor: number | null, count: number, countText: string): ReceiptRow => {
-    if (minor === null) return { id, label, detail: null, amount: null, missing: "girilmedi", captions: [] };
+  const enteredRow = (id: "stay" | "daily", minor: number | null, count: number, countText: string): ReceiptRow => {
+    const label = t.rows[id];
+    if (minor === null) return { id, label, detail: null, amount: null, missing: t.missing.entered, captions: [] };
     const from = input.amountCur;
-    const detail = `${countText} × ${formatMoney(minor, from)}${from === input.cur ? "" : ` = ${formatMoney(minor * count, from)}`}`;
+    const detail = `${countText} × ${money(minor, from)}${from === input.cur ? "" : ` = ${money(minor * count, from)}`}`;
     const amount = whole(minor * count, from);
     if (amount === null) {
-      return { id, label, detail, amount: null, missing: "kur alınamadı", captions: [ENTERED, `${from} KURU ALINAMADI · TOPLAMA EKLENMEDİ`] };
+      return {
+        id,
+        label,
+        detail,
+        amount: null,
+        missing: t.missing.rate,
+        captions: [t.captions.entered, f(t.captions.noRate, { currency: from })],
+      };
     }
-    return { id, label, detail, amount, missing: null, captions: [ENTERED] };
+    return { id, label, detail, amount, missing: null, captions: [t.captions.entered] };
   };
 
   const rows = [
     flightRow(),
-    enteredRow("stay", "Konaklama", input.stay, input.nights, `${input.nights} gece`),
-    enteredRow("daily", "Günlük harcama", input.daily, input.days * input.pax, `${input.days} gün × ${input.pax} kişi`),
+    enteredRow("stay", input.stay, input.nights, f(t.detail.nights, { count: input.nights })),
+    enteredRow("daily", input.daily, input.days * input.pax, f(t.detail.daysPeople, { days: input.days, pax: input.pax })),
   ];
   const total = rows.reduce((sum, row) => sum + (row.amount ?? 0), 0);
   return {

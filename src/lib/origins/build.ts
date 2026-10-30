@@ -19,6 +19,8 @@ import type { MetroArea } from "./metros";
  *   destination's item, or of the place an airport serves (P931) whose label is the municipality's (or the one
  *   place served, when it lies within 50 km); OurAirports' municipality;
  * - airport: the Wikidata Turkish label, then English, of the airport's item (P238); OurAirports' name.
+ * - English (`nameEn`, stored only when it differs): a destination's `nameEn`, the English label of the same item,
+ *   the metro's English name, the municipality; an airport's English label, then OurAirports' (English) name.
  *
  * Time zone: the IANA zone of the nearest GeoNames place (cities1000, CC BY 4.0) in the airport's country; in
  * China always Asia/Shanghai (one official zone; airports in Xinjiang keep Beijing time).
@@ -205,6 +207,7 @@ export function buildOrigins(input: BuildInput): OriginsFile {
     const wd = qid ? input.wdPlaces.get(qid) : undefined;
     const municipality = municipalityParts(main.municipality)[0];
     const name = group.destination?.nameTr ?? wd?.tr ?? wd?.en ?? group.metro?.nameEn ?? municipality ?? main.name;
+    const nameEn = group.destination?.nameEn ?? wd?.en ?? group.metro?.nameEn ?? municipality ?? main.name;
 
     const shown = normalizeForSearch(name);
     const aliases: string[] = [];
@@ -228,11 +231,14 @@ export function buildOrigins(input: BuildInput): OriginsFile {
       origin: {
         code: group.code,
         name,
+        ...(nameEn !== name ? { nameEn } : {}),
         country: main.country,
         timeZone,
         airports: airports.map((a) => {
           const item = wdAirports.get(a.iata);
-          return { code: a.iata, name: item?.tr ?? item?.en ?? a.name };
+          const airportName = item?.tr ?? item?.en ?? a.name;
+          const airportEn = item?.en ?? a.name;
+          return { code: a.iata, name: airportName, ...(airportEn !== airportName ? { nameEn: airportEn } : {}) };
         }),
         ...(aliases.length ? { aliases } : {}),
       },

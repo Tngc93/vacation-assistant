@@ -2,6 +2,7 @@
 
 import { useBudgetCurrency } from "@/components/budget/useBudgetCurrency";
 import { Caption } from "@/components/ui";
+import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import { effectiveCurrency, type BudgetCurrency } from "@/lib/budget/currency";
 import { formatCrossRate, formatSourceDates } from "@/lib/rates/format";
@@ -21,13 +22,15 @@ type Props = {
  * TRY, like the budget). Nothing when the budget is in the destination's own currency.
  */
 export function MastheadRate({ local, rates, fromLink, className }: Props) {
+  const i18n = useI18n();
+  const { m, f } = i18n;
   const cur = effectiveCurrency(useBudgetCurrency(fromLink), rates);
   if (local === cur) return null;
   const localRate = rates[local];
   if (!localRate) {
     return (
       <Caption as="p" tone="warn" className={className}>
-        {local} kuru şu an alınamadı · TCMB, Frankfurter ve Exchange Rate API cevap vermedi
+        {f(m.rates.unavailable, { currency: local })}
       </Caption>
     );
   }
@@ -36,7 +39,7 @@ export function MastheadRate({ local, rates, fromLink, className }: Props) {
   return (
     <Caption as="p" tone="ink" className={cn("flex flex-wrap gap-x-3 gap-y-1", className)}>
       <span>
-        {formatCrossRate(local, localRate.tryPerUnit, cur, target?.tryPerUnit ?? 1)} · {formatSourceDates(used)}
+        {formatCrossRate(local, localRate.tryPerUnit, cur, target?.tryPerUnit ?? 1, i18n.intl)} · {formatSourceDates(used, i18n)}
       </span>
       {used.some((r) => r.sourceId === "erapi") ? (
         // Attribution required by the open access terms of exchangerate-api.com.

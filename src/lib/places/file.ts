@@ -12,8 +12,10 @@ import { KIND_TAGS } from "./kinds";
  * 3: Wikidata must-sees stored as raw candidates with their kinds; the sight rules run on read (rules.ts).
  * 4: card photos (Wikidata P18, Commons author and licence) and short descriptions for places with an item.
  * 5: the place another place is inside (Wikidata P361/P276, containment.ts): `parentId` and `parentName`.
+ * 6: English for the English interface: every item's English label when it differs from `name` (`labels.en`) and its
+ *    English description (`descriptionEn`).
  */
-export const PLACES_FILE_VERSION = 5;
+export const PLACES_FILE_VERSION = 6;
 
 export const ODBL = {
   name: "ODbL-1.0",
@@ -30,7 +32,10 @@ export const storedPlaceSchema = z.object({
   localName: z.string().min(1).optional(),
   /** OSM name:en, name:latin (or name:xx-Latn) and int_name, only when `name` is not in the Latin script (names.ts). */
   osmNames: z.object({ en: z.string().min(1).optional(), latin: z.string().min(1).optional(), int: z.string().min(1).optional() }).optional(),
-  /** The item's Wikidata Turkish and English labels, only when `name` is not in the Latin script (names.ts). */
+  /**
+   * The item's Wikidata labels (names.ts): Turkish and English when `name` is not in the Latin script, else the
+   * English one when it differs from `name`.
+   */
   labels: z.object({ tr: z.string().min(1).optional(), en: z.string().min(1).optional() }).optional(),
   lat: coordinate(-90, 90),
   lon: coordinate(-180, 180),
@@ -53,6 +58,8 @@ export const storedPlaceSchema = z.object({
   photo: z.lazy(() => cardPhotoSchema).optional(),
   /** Wikidata description, Turkish first, then English. */
   description: z.string().min(1).max(200).optional(),
+  /** The English Wikidata description, for the English interface. */
+  descriptionEn: z.string().min(1).max(200).optional(),
   /** Wikidata item of the city's place this one is inside (the Tsar Bell in the Kremlin); one level only. */
   parentId: z.string().regex(/^Q[1-9]\d*$/).optional(),
   /** That place's Turkish Wikidata label, else its stored name: "Moskova Kremlini". */

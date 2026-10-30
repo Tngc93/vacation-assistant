@@ -63,6 +63,33 @@ test("home to plan by keyboard: city, dates, 'Planla'", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1, name: "Barselona" })).toBeVisible();
 });
 
+test("the English home to the English plan by keyboard: city, dates, 'Plan'", async ({ page }) => {
+  await page.goto("/en");
+  const city = page.getByRole("combobox", { name: "Destination" });
+  await tabTo(page, city, 12);
+  await page.keyboard.type("Barcelona");
+  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("Enter");
+  await expect(city).toHaveValue("Barcelona");
+
+  await tabTo(page, page.getByRole("button", { name: /^Depart/ }), 3);
+  await page.keyboard.press("Enter");
+  const departCalendar = page.getByRole("dialog", { name: "Pick the departure date" });
+  await expect(departCalendar.locator(":focus")).toHaveCount(1);
+  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("Enter");
+  const returnCalendar = page.getByRole("dialog", { name: "Pick the return date" });
+  await expect(returnCalendar.locator(":focus")).toHaveCount(1);
+  for (let i = 0; i < 3; i++) await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("Enter");
+  await expect(returnCalendar).toBeHidden();
+
+  await tabTo(page, page.getByRole("button", { name: "Plan", exact: true }), 5);
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(/\/en\/plan\?to=BCN&depart=\d{4}-\d\d-\d\d&return=\d{4}-\d\d-\d\d$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Barcelona" })).toBeVisible();
+});
+
 function isoDaysFromNow(days: number): string {
   const date = new Date();
   date.setUTCDate(date.getUTCDate() + days);

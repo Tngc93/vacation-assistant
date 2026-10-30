@@ -19,7 +19,7 @@ describe("budget currency", () => {
     vi.restoreAllMocks();
   });
 
-  it("offers TRY, EUR, USD and GBP; TRY by default in Turkish, EUR once the English UI comes", () => {
+  it("offers TRY, EUR, USD and GBP; TRY by default in Turkish, EUR in English", () => {
     expect(BUDGET_CURRENCIES).toEqual(["TRY", "EUR", "USD", "GBP"]);
     expect(DEFAULT_BUDGET_CURRENCY).toBe("TRY");
     expect(defaultBudgetCurrency("tr")).toBe("TRY");
@@ -47,13 +47,13 @@ describe("budget currency", () => {
     expect(convertAmount(12000, "EUR", "GBP", rates)).toBeNull();
   });
 
-  it("remembers the last choice, but not the default", () => {
+  it("remembers the last choice, the default too (each language has its own)", () => {
     expect(readRememberedCurrency()).toBeNull();
     rememberCurrency("USD");
     expect(window.localStorage.getItem(CURRENCY_STORAGE_KEY)).toBe("USD");
     expect(readRememberedCurrency()).toBe("USD");
     rememberCurrency("TRY");
-    expect(window.localStorage.getItem(CURRENCY_STORAGE_KEY)).toBeNull();
+    expect(window.localStorage.getItem(CURRENCY_STORAGE_KEY)).toBe("TRY");
   });
 
   it("ignores a stored value it does not know", () => {

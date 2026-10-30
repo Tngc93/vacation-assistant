@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { findDestination } from "@/data/destinations";
 import { DEFAULT_ORIGIN, type OriginCode } from "@/data/origins";
-import { checkTripDates, isIsoDate } from "./dates";
+import { localePath, type Locale } from "@/i18n/locales";
+import { checkTripDates, isIsoDate, type DateIssueCode } from "./dates";
 
 /**
  * The single place where search state is read from and written to the URL:
@@ -33,7 +34,9 @@ export type SearchDraft = Pick<SearchState, "from" | "pax"> & Partial<Pick<Searc
 
 /** The fields a person chooses on the home page; only these can make a link incomplete. */
 export type SearchField = "to" | "depart" | "return";
-export type SearchIssue = { field: SearchField; message: string };
+/** Why a field cannot make a plan; the interface words it (messages `search.issues`). */
+export type SearchIssueCode = `${SearchField}${"Missing" | "Invalid"}` | DateIssueCode;
+export type SearchIssue = { field: SearchField; code: SearchIssueCode };
 
 export type ParseResult =
   | { ok: true; value: SearchState }
@@ -52,12 +55,6 @@ const fields = {
   depart: isoDate,
   return: isoDate,
 } satisfies Record<SearchField, z.ZodType>;
-
-const MESSAGES: Record<SearchField, { missing: string; invalid: string }> = {
-  to: { missing: "Bir varış şehri seç.", invalid: "Bu varış şehrini tanımıyoruz; listeden bir şehir seç." },
-  depart: { missing: "Gidiş tarihini seç.", invalid: "Gidiş tarihi okunamadı." },
-  return: { missing: "Dönüş tarihini seç.", invalid: "Dönüş tarihi okunamadı." },
-};
 
 /** The route fields, in URL order. */
 export const SEARCH_FIELDS: readonly SearchField[] = ["to", "depart", "return"];
@@ -96,14 +93,14 @@ export function parseSearch(input: Input, today: string): ParseResult {
   for (const field of SEARCH_FIELDS) {
     const raw = read(input, field);
     if (raw === undefined) {
-      issues.push({ field, message: MESSAGES[field].missing });
+      issues.push({ field, code: `${field}Missing` });
       continue;
     }
     const result = fields[field].safeParse(raw);
     if (result.success) {
       Object.assign(draft, { [field]: result.data });
     } else {
-      issues.push({ field, message: MESSAGES[field].invalid });
+      issues.push({ field, code: `${field}Invalid` });
     }
   }
 
@@ -167,12 +164,12 @@ export function writeTripParams(params: URLSearchParams, change: { from?: Origin
   return next;
 }
 
-export function planHref(state: SearchState): string {
-  return `/plan?${serializeSearch(state)}`;
+export function planHref(state: SearchState, locale: Locale = "tr"): string {
+  return `${localePath(locale, "/plan")}?${serializeSearch(state)}`;
 }
 
 /** Link back to the home form with the city and the dates filled in (and a non-default origin or group, kept for the next plan). */
-export function editHref(state: Partial<SearchState>): string {
+export function editHref(state: Partial<SearchState>, locale: Locale = "tr"): string {
   const query = serializeSearch(state);
-  return query ? `/?${query}#arama` : "/#arama";
+  return `${localePath(locale, "/")}${query ? `?${query}` : ""}#arama`;
 }
