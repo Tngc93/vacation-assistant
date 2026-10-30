@@ -29,6 +29,11 @@ describe("Content-Security-Policy", () => {
     expect(directive(dev, "connect-src")).toContain("ws:");
   });
 
+  it("names the manifests as our own", () => {
+    const csp = contentSecurityPolicy({ dev: false });
+    expect(directive(csp, "manifest-src")).toEqual(["'self'"]);
+  });
+
   it("is sent with every page", async () => {
     const rules = await nextConfig.headers!();
     expect(rules).toEqual([

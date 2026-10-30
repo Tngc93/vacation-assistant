@@ -8,7 +8,7 @@ import { AI_ORIGINS } from "../ai/origins";
 /** OpenFreeMap serves the style, the vector tiles, the glyphs and the sprites from this one origin. */
 export const MAP_TILES_ORIGIN = "https://tiles.openfreemap.org";
 /** City photos: Wikimedia Commons, loaded as images (never fetched by scripts). */
-const IMAGE_ORIGINS = ["https://upload.wikimedia.org", "https://thumb.wikimedia.org"];
+export const IMAGE_ORIGINS = ["https://upload.wikimedia.org", "https://thumb.wikimedia.org"];
 
 export function contentSecurityPolicy({ dev }: { dev: boolean }): string {
   const connect = ["'self'", MAP_TILES_ORIGIN, ...Object.values(AI_ORIGINS), ...(dev ? ["ws:", "wss:"] : [])];
@@ -22,6 +22,8 @@ export function contentSecurityPolicy({ dev }: { dev: boolean }): string {
     `connect-src ${connect.join(" ")}`,
     // MapLibre's worker is served from /vendor and may start from a blob.
     "worker-src 'self' blob:",
+    // The web app manifests are ours (/manifest.webmanifest, /en/manifest.webmanifest).
+    "manifest-src 'self'",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",

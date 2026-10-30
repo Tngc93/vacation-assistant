@@ -9,6 +9,8 @@ import { getI18n, MESSAGES } from "@/i18n/server";
 import { analyticsEnabled } from "@/lib/analytics";
 import { BRAND_NAME, SITE_URL } from "@/lib/brand";
 import { cn } from "@/lib/cn";
+import { APP_ICONS, manifestPath } from "@/lib/pwa/manifest";
+import { THEME_TOKENS } from "@/lib/pwa/theme";
 import { themeInitScript } from "@/lib/theme";
 import { fraunces, geist, geistMono } from "../fonts";
 import "../globals.css";
@@ -25,6 +27,10 @@ export function rootMetadata(locale: Locale): Metadata {
       template: `%s · ${BRAND_NAME}`,
     },
     description: m.brand.description,
+    // Each language installs as its own app (src/lib/pwa/manifest.ts).
+    manifest: manifestPath(locale),
+    icons: { apple: APP_ICONS.apple180 },
+    appleWebApp: { capable: true, title: BRAND_NAME, statusBarStyle: "default" },
     openGraph: { type: "website", locale: OG_LOCALE[locale], siteName: BRAND_NAME, title: BRAND_NAME, description: m.brand.description },
     twitter: { card: "summary_large_image", title: BRAND_NAME, description: m.brand.description },
   };
@@ -33,6 +39,11 @@ export function rootMetadata(locale: Locale): Metadata {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  // The browser's and the installed app's bars take the page's paper, light or dark (globals.css).
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: THEME_TOKENS.light.paper },
+    { media: "(prefers-color-scheme: dark)", color: THEME_TOKENS.dark.paper },
+  ],
 };
 
 /**
