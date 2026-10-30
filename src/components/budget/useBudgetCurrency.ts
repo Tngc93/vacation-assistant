@@ -54,6 +54,11 @@ export function chooseBudgetCurrency(code: BudgetCurrency): void {
   window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
+/** True once the picker was used on this page: only then is a currency written to the link without amounts. */
+export function pickedOnThisPage(): boolean {
+  return picked !== null;
+}
+
 /** Tests only: forget the picker's choice between tests. */
 export function resetPickedCurrency(): void {
   picked = null;

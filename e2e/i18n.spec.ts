@@ -31,7 +31,8 @@ test("every section of /en/plan is in English, with English names and the EUR bu
   ]) {
     await expect(page.locator(`#${id}`).getByRole("heading", { level: 2 })).toHaveText(title);
   }
-  // Wikidata's English labels: "Park Güell", not "Güell Parkı".
+  // English names: Wikipedia's title "Sagrada Família" (not Wikidata's long label), "Park Güell" (not "Güell Parkı").
+  await expect(page.getByRole("list", { name: "Sights" })).toContainText("Sagrada Família");
   await expect(page.getByRole("list", { name: "Sights" })).toContainText("Park Güell");
   // The budget defaults to EUR in English.
   await expect(page.locator("#butce").getByText(/^BUDGET RECEIPT · EUR$/)).toBeVisible();
@@ -63,6 +64,27 @@ test("the TR / EN switch opens the same plan in the other language with every pa
   await page.waitForURL((url) => url.pathname === "/plan");
   expect(new URL(page.url()).search).toBe(`?${query}`);
   await expect(page.getByRole("heading", { level: 1, name: "Barselona" })).toBeVisible();
+});
+
+test("the language's default currency stays out of the link; a picked one is written and kept across the switch", async ({ page }) => {
+  await page.goto(`/en/plan?${trip}`);
+  await planReady(page, /^Day 1 · /);
+  await expect(page.locator("#butce").getByText(/^BUDGET RECEIPT · EUR$/)).toBeVisible();
+  expect(new URL(page.url()).searchParams.has("cur")).toBe(false);
+  // To Turkish: no ?cur=, so the Turkish default.
+  await page.getByRole("link", { name: /^TR/ }).click();
+  await page.waitForURL((url) => url.pathname === "/plan");
+  await expect(page.locator("#butce").getByText(/^BÜTÇE FİŞİ · TL$/)).toBeVisible();
+  expect(new URL(page.url()).searchParams.has("cur")).toBe(false);
+  // Back in English, USD picked: written, and kept in Turkish.
+  await page.getByRole("link", { name: /^EN/ }).click();
+  await page.waitForURL("**/en/plan?**");
+  await page.locator("#butce").getByRole("button", { name: "USD" }).click();
+  await expect(page).toHaveURL(/[?&]cur=USD/);
+  await page.getByRole("link", { name: /^TR/ }).click();
+  await page.waitForURL((url) => url.pathname === "/plan");
+  expect(new URL(page.url()).searchParams.get("cur")).toBe("USD");
+  await expect(page.locator("#butce").getByText(/^BÜTÇE FİŞİ · USD$/)).toBeVisible();
 });
 
 test("there is no automatic language redirect: an English browser gets Turkish at the root", async ({ browser }) => {
