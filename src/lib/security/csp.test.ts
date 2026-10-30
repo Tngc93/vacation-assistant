@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import nextConfig from "../../../next.config";
 import { AI_ORIGINS } from "../ai/origins";
 import { OPENFREEMAP_STYLE_URL } from "../places/mapStyle";
-import { contentSecurityPolicy, MAP_TILES_ORIGIN } from "./csp";
+import { contentSecurityPolicy, IMAGE_ORIGINS, MAP_TILES_ORIGIN, serviceWorkerContentSecurityPolicy } from "./csp";
 
 const directive = (csp: string, name: string) => csp.split("; ").find((d) => d.startsWith(`${name} `))!.split(" ").slice(1);
 
@@ -29,15 +29,30 @@ describe("Content-Security-Policy", () => {
     expect(directive(dev, "connect-src")).toContain("ws:");
   });
 
-  it("names the manifests as our own", () => {
+  it("names the manifests and the service worker as our own", () => {
     const csp = contentSecurityPolicy({ dev: false });
     expect(directive(csp, "manifest-src")).toEqual(["'self'"]);
+    expect(directive(csp, "worker-src")).toContain("'self'");
   });
 
-  it("is sent with every page", async () => {
+  it("lets the service worker reach only our origin, the map tiles and Commons, never an AI provider", () => {
+    const csp = serviceWorkerContentSecurityPolicy();
+    expect(directive(csp, "default-src")).toEqual(["'none'"]);
+    expect(directive(csp, "connect-src")).toEqual(["'self'", MAP_TILES_ORIGIN, ...IMAGE_ORIGINS]);
+    for (const origin of Object.values(AI_ORIGINS)) expect(csp).not.toContain(origin);
+  });
+
+  it("is sent with every page, and the service worker gets its own, later rule", async () => {
     const rules = await nextConfig.headers!();
     expect(rules).toEqual([
       { source: "/:path*", headers: [{ key: "Content-Security-Policy", value: expect.stringContaining("connect-src 'self'") }] },
+      {
+        source: "/sw.js",
+        headers: [
+          { key: "Content-Security-Policy", value: serviceWorkerContentSecurityPolicy() },
+          { key: "Cache-Control", value: "no-cache" },
+        ],
+      },
     ]);
   });
 });

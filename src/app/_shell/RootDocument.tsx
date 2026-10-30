@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { OfflineBanner } from "@/components/pwa/OfflineBanner";
+import { PwaClient } from "@/components/pwa/PwaClient";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -70,10 +72,12 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
             {m.shell.skipToContent}
           </a>
           <SiteHeader locale={locale} />
+          <OfflineBanner />
           <main id="icerik" className="flex-1">
             {children}
           </main>
           <SiteFooter locale={locale} />
+          <PwaClient />
         </I18nProvider>
         {analyticsEnabled() ? <SiteAnalytics /> : null}
       </body>
