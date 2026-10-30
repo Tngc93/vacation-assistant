@@ -29,6 +29,7 @@ Kısa şehir tatili için ücretsiz, açık kaynak planlayıcı: şehri ve günl
 - **Konaklama:** Booking ve Google Hotels'te tarihleri ve kişi sayısı dolu arama linkleri (otel fiyatı uydurulmaz).
 - **Uçuşlar:** kalkış şehrinin her havalimanından (Londra'da LHR, LGW, STN, LTN, LCY, SEN) en ucuz bilet, altında tam liste ve aktarmasız filtresi (Travelpayouts önbelleği, "tahmini" etiketiyle).
 - **Bütçe:** uçuş, konaklama ve günlük harcama seçtiğin para biriminde (TL, EUR, USD, GBP; çapraz kur TL üzerinden), kaynak ve kurla; değerler ve para birimi URL'de, paylaşılan link aynı planı açar.
+- **Telefona kur, çevrimdışı aç:** site bir PWA'dır; tarayıcının "Ana Ekrana Ekle" / "Uygulamayı yükle" akışıyla kurulur (footer'da "Uygulamayı telefona ekle"). Açtığın son 10 plan internet olmadan da son açtığın hâliyle açılır; üstte bunu söyleyen bir şerit, uçuşlarda "fiyatlar güncel değil" notu çıkar. API istekleri (uçuş, kur, kalkış araması), Analytics ve yapay zekâ çağrıları asla önbelleğe alınmaz; yapay zekâ anahtarın service worker'a hiç uğramaz.
 - **Türkçe ve İngilizce:** Türkçe kökte (`/`, `/plan`), İngilizce `/en` altında (`/en`, `/en/plan`). Başlıktaki TR / EN anahtarı aynı sayfayı bütün parametreleriyle öbür dilde açar; tarayıcı diline göre otomatik yönlendirme yok. İngilizce sayfada yer ve etkinlik adları İngilizce Vikipedi başlığıyla (yoksa Wikidata'nın İngilizce etiketiyle; "Sagrada Família", "Colosseum"), şehir ve havalimanı adları İngilizce, tarih ve sayılar `en-GB` biçiminde, bütçe varsayılan olarak EUR; yapay zekâ cevapları da arayüz dilinde.
 
 ### Yapay zekâ olmadan tam çalışır
@@ -115,6 +116,7 @@ Sık kullanılan komutlar (tam liste ve ayrıntılar [AGENTS.md](AGENTS.md)'de):
 | `npm run data:events` | Etkinlikleri Wikidata'dan yeniden çeker (ağ ister, şehir başına ~30 sn) |
 | `npm run data:origins` | Kalkış şehirlerini OurAirports, Wikidata ve GeoNames'ten yeniden çeker (ağ ister, ~1 dk) |
 | `npm run data:airlines` | Havayolu adlarını Wikidata'dan yeniden çeker (ağ ister, birkaç saniye) |
+| `npm run icons` | Uygulama ikonlarını ve favicon'u renk token'larından yeniden üretir |
 
 Vercel'e kurulum, ortam değişkenleri, Travelpayouts hesabı ve aylık veri yenileme: [docs/DEPLOY.md](docs/DEPLOY.md).
 
@@ -152,6 +154,7 @@ Kod: [MIT](LICENSE). `src/data/places/` altındaki OSM türevi veri: [ODbL 1.0](
 - Readable names: a Latin-script name is preferred; otherwise the name is romanized with the country's official system, with the local name kept small.
 - Big yearly events (festivals, carnivals, Christmas markets) in your dates, from Wikidata only; no guessed dates.
 - Optional bring-your-own-key AI (Anthropic, OpenAI, Gemini) in a side panel to edit the plan by chat; the key stays in your browser and calls go straight to the provider. Gemini's free tier covers chat, but free web search is no longer available to new Gemini accounts.
+- Installable (PWA): add it to your home screen with the browser's own install flow; the last ten plans you opened open offline under an "offline" strip, with flight prices marked as not current. API calls, analytics and AI calls are never cached, and your AI key never touches the service worker.
 - Honest data: every price and estimate shows its source and an "estimated" label; nothing is made up and nothing is scraped. Privacy-friendly analytics count page paths only.
 - Runs on free services only (Vercel Hobby, Travelpayouts, TCMB/Frankfurter/open.er-api, OpenFreeMap).
 - Run locally with Node 22: `npm ci && npm run dev`; `VA_AI_MOCK=1` and `VA_FLIGHTS_FIXTURES=1` give keyless demos. Deploy guide: [docs/DEPLOY.md](docs/DEPLOY.md).

@@ -110,7 +110,7 @@ Türkiye'den yurt dışına tatil planlayan biri bugün en az beş farklı yere 
 ## Yayın planı
 
 - **Faz 1 (bu PRD):** İstanbul ve Ankara çıkışlı web uygulaması, GitHub'da açık kaynak, Vercel'de yayında.
-- **Faz 2:** İzmir ve Antalya çıkışları, gerçek otel fiyat API'si (affiliate onayı ile), PWA.
+- **Faz 2:** İzmir ve Antalya çıkışları, gerçek otel fiyat API'si (affiliate onayı ile), ~~PWA~~. *PWA 2026-10-30'da yapıldı (`feat/pwa`; Berk'in 2026-10-29 kararı, mobil uygulamaya giden ilk adım): telefona uygulama gibi kurulur (dil başına manifest, "V" ikonları), açılan son 10 plan çevrimdışı açılır (üstte şerit, uçuş fiyatları "güncel değil"), açılmamış sayfa için çevrimdışı sayfası, yeni sürümde sessiz "Yenile" bildirimi; API, Analytics ve yapay zekâ istekleri asla önbelleğe alınmaz.*
 - **Faz 3:** Kullanıcı kaydı, kayıtlı planlar, mobil uygulama.
 
 ## Açık sorular
