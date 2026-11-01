@@ -1,7 +1,7 @@
 {
  "version": 6,
  "cityCode": "LON",
- "fetchedAt": "2026-10-28T14:36:04.873Z",
+ "fetchedAt": "2026-11-01T10:33:02.015Z",
  "radiusKm": 4,
  "license": {
   "name": "ODbL-1.0",
@@ -51,6 +51,7 @@
      },
      "lat": 51.50083,
      "lon": -0.14266,
+     "address": "Buckingham Gate",
      "website": "https://www.royalcollection.org.uk/visit/the-state-rooms-buckingham-palace",
      "openingHours": "Mo-Su 10:00-17:30",
      "wikipediaCount": 93,
@@ -553,6 +554,32 @@
      "descriptionEn": "opera house and major performing arts venue in Covent Garden, central London (3rd theatre on the site, opened 1858)"
     },
     {
+     "id": "node/1937435160",
+     "name": "New Scotland Yard",
+     "labels": {
+      "enwiki": "Scotland Yard"
+     },
+     "lat": 51.50297,
+     "lon": -0.12396,
+     "wikipediaCount": 54,
+     "wikidataId": "Q184619",
+     "kinds": [
+      "office"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/New_Scotland_Yard_sign.jpg/500px-New_Scotland_Yard_sign.jpg",
+      "width": 500,
+      "height": 332,
+      "author": "Matt Brown",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_Scotland_Yard_sign.jpg",
+      "fullWidth": 6016
+     },
+     "description": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016",
+     "descriptionEn": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016"
+    },
+    {
      "id": "wikidata/Q207385",
      "name": "Kensington Sarayı",
      "localName": "Kensington Palace",
@@ -581,32 +608,6 @@
      },
      "description": "royal residence set in Kensington Gardens, London, England, UK",
      "descriptionEn": "royal residence set in Kensington Gardens, London, England, UK"
-    },
-    {
-     "id": "node/1937435160",
-     "name": "New Scotland Yard",
-     "labels": {
-      "enwiki": "Scotland Yard"
-     },
-     "lat": 51.50297,
-     "lon": -0.12396,
-     "wikipediaCount": 53,
-     "wikidataId": "Q184619",
-     "kinds": [
-      "office"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/New_Scotland_Yard_sign.jpg/500px-New_Scotland_Yard_sign.jpg",
-      "width": 500,
-      "height": 332,
-      "author": "Matt Brown",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:New_Scotland_Yard_sign.jpg",
-      "fullWidth": 6016
-     },
-     "description": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016",
-     "descriptionEn": "headquarters of the Metropolitan Police Service, Westminster, Greater London from October 2016"
     },
     {
      "id": "relation/8250949",
@@ -3152,6 +3153,17 @@
      "detailed": true
     },
     {
+     "id": "node/3306596294",
+     "name": "Blank Street Coffee",
+     "lat": 51.51061,
+     "lon": -0.08541,
+     "address": "Eastcheap 2A",
+     "website": "https://www.blankstreet.com/en-GB/locations/london/LB9VF0QD2PKPT-monument",
+     "openingHours": "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 07:30-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/666475916",
      "name": "Cafe Below",
      "lat": 51.51387,
@@ -3434,17 +3446,6 @@
      "website": "https://www.lbpedlar.com/",
      "openingHours": "Mo-Fr 08:00-15:00, Sa-Su 09:00-16:00",
      "cuisine": "coffee shop, sandwich, pastry",
-     "detailed": true
-    },
-    {
-     "id": "node/2466428731",
-     "name": "Nero Express",
-     "lat": 51.49522,
-     "lon": -0.14424,
-     "address": "Victoria Place",
-     "website": "https://www.caffenero.com/uk/stores/victoria-central",
-     "openingHours": "Mo-We 05:30-23:00; Th-Fr 05:30-24:00; Sa 05:30-00:30; Su 05:30-23:00",
-     "cuisine": "coffee shop",
      "detailed": true
     }
    ]

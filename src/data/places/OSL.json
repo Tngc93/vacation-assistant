@@ -1,7 +1,7 @@
 {
  "version": 6,
  "cityCode": "OSL",
- "fetchedAt": "2026-10-23T13:04:11.078Z",
+ "fetchedAt": "2026-11-01T11:54:05.153Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -229,8 +229,8 @@
       "fileUrl": "https://commons.wikimedia.org/wiki/File:NOR-2016-Oslo-National_Theatre.jpg",
       "fullWidth": 5315
      },
-     "description": "theatre in Oslo, Norway",
-     "descriptionEn": "theatre in Oslo, Norway"
+     "description": "theatre building in Oslo, Norway",
+     "descriptionEn": "theatre building in Oslo, Norway"
     },
     {
      "id": "wikidata/Q1490775",
@@ -415,6 +415,33 @@
      "descriptionEn": "building in Norway"
     },
     {
+     "id": "wikidata/Q2842096",
+     "name": "Trinity Church",
+     "labels": {
+      "enwiki": "Trinity Church (Oslo)"
+     },
+     "lat": 59.91667,
+     "lon": 10.74528,
+     "wikipediaCount": 12,
+     "wikidataId": "Q2842096",
+     "kinds": [
+      "heritage",
+      "religious"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Trefoldighetskirken_Oslo.jpg/500px-Trefoldighetskirken_Oslo.jpg",
+      "width": 500,
+      "height": 335,
+      "author": "Bjørn Erik Pedersen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trefoldighetskirken_Oslo.jpg",
+      "fullWidth": 3888
+     },
+     "description": "church in Oslo, Norway",
+     "descriptionEn": "church in Oslo, Norway"
+    },
+    {
      "id": "wikidata/Q1782787",
      "name": "Christiania Theatre",
      "lat": 59.90848,
@@ -477,33 +504,6 @@
      },
      "description": "area in Oslo, Norway, housing governmental administrative offices",
      "descriptionEn": "area in Oslo, Norway, housing governmental administrative offices"
-    },
-    {
-     "id": "wikidata/Q2842096",
-     "name": "Trinity Church",
-     "labels": {
-      "enwiki": "Trinity Church (Oslo)"
-     },
-     "lat": 59.91667,
-     "lon": 10.74528,
-     "wikipediaCount": 11,
-     "wikidataId": "Q2842096",
-     "kinds": [
-      "heritage",
-      "religious"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Trefoldighetskirken_Oslo.jpg/500px-Trefoldighetskirken_Oslo.jpg",
-      "width": 500,
-      "height": 335,
-      "author": "Bjørn Erik Pedersen",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Trefoldighetskirken_Oslo.jpg",
-      "fullWidth": 3888
-     },
-     "description": "church in Oslo, Norway",
-     "descriptionEn": "church in Oslo, Norway"
     },
     {
      "id": "way/457724681",
@@ -2108,6 +2108,17 @@
      "detailed": true
     },
     {
+     "id": "node/1660928662",
+     "name": "Blitz-Kafé",
+     "lat": 59.9185,
+     "lon": 10.73737,
+     "address": "Pilestredet 30",
+     "website": "https://blitz.no/",
+     "openingHours": "Mo-Fr 12:00-18:00",
+     "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
      "id": "node/12609573667",
      "name": "Bloom & Brew",
      "lat": 59.91335,
@@ -2156,6 +2167,33 @@
      "openingHours": "Mo-Fr 08:00-18:00; Sa-Su 09:00-17:00",
      "cuisine": "cake, coffee shop, french, tea",
      "detailed": true
+    },
+    {
+     "id": "node/667383137",
+     "name": "Engebret Kafé",
+     "labels": {
+      "en": "Engebret Café"
+     },
+     "lat": 59.90889,
+     "lon": 10.74217,
+     "address": "Bankplassen 1",
+     "website": "https://www.engebret-cafe.no/",
+     "openingHours": "Mo-Fr 11:30-15:15; Mo-Sa 16:00-23:15; Nov-Dec Mo-Fr 11:30-14:30; Nov-Dec Mo-Sa 16:30-23:15",
+     "cuisine": "fine dining",
+     "wikidataId": "Q11967476",
+     "detailed": true,
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Bankplassen_1b_Oslo.jpg/500px-Bankplassen_1b_Oslo.jpg",
+      "width": 500,
+      "height": 281,
+      "author": "User:Mahlum",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bankplassen_1b_Oslo.jpg",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Bankplassen_1b_Oslo.jpg",
+      "fullWidth": 1060
+     },
+     "description": "Historic Oslo restaurant specializing in Norwegian cuisine.",
+     "descriptionEn": "Historic Oslo restaurant specializing in Norwegian cuisine."
     },
     {
      "id": "node/2919371562",
@@ -2286,26 +2324,6 @@
      "openingHours": "Mo 08:00-19:00, Tu 08:00-20:00, We 08:00-19:00, Fr 08:00-19:00, Sa 09:30-18:00",
      "cuisine": "coffee shop",
      "detailed": true
-    },
-    {
-     "id": "node/3729794625",
-     "name": "Espresso House Trelastgata",
-     "lat": 59.90871,
-     "lon": 10.75808,
-     "website": "https://no.espressohouse.com/coffee-shops/trelastgata/",
-     "openingHours": "Mo-Fr 07:00-18:00, Sa-Su 11:00-16:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/1769606915",
-     "name": "Fuglen",
-     "lat": 59.917,
-     "lon": 10.74013,
-     "website": "https://fuglen.no/Fuglen-Oslo-Sentrum",
-     "openingHours": "Mo-Tu 07:30-20:00; We-Th 07:30-00:00; Fr 07:30-01:00; Sa 09:00-01:00; Su 09:00-20:00",
-     "cuisine": "coffee shop",
-     "detailed": true
     }
    ]
   },
@@ -2403,6 +2421,7 @@
      "name": "Alchemist Bar & Bakgård",
      "lat": 59.91406,
      "lon": 10.74901,
+     "address": "Pløens gate 4",
      "website": "https://alchemistbar.no/",
      "openingHours": "Su-Th 15:00-02:30; Fr 14:00-03:30; Sa 15:00-03:30",
      "detailed": true
@@ -2699,12 +2718,6 @@
      "lat": 59.91416,
      "lon": 10.7608,
      "website": "https://oslobdsm.no/"
-    },
-    {
-     "id": "way/111845747",
-     "name": "Elsker",
-     "lat": 59.91543,
-     "lon": 10.73794
     },
     {
      "id": "node/12749752010",

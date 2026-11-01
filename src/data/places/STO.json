@@ -1,7 +1,7 @@
 {
  "version": 6,
  "cityCode": "STO",
- "fetchedAt": "2026-10-23T13:03:03.799Z",
+ "fetchedAt": "2026-11-01T11:52:56.299Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -134,8 +134,8 @@
      "labels": {
       "en": "Stockholm Palace"
      },
-     "lat": 59.32689,
-     "lon": 18.07169,
+     "lat": 59.32694,
+     "lon": 18.07163,
      "address": "Slottsbacken 1",
      "website": "https://www.kungligaslotten.se/",
      "wikipediaCount": 44,
@@ -269,7 +269,7 @@
      "id": "way/8049504",
      "name": "Storkyrkan",
      "lat": 59.32577,
-     "lon": 18.07039,
+     "lon": 18.07041,
      "website": "https://www.svenskakyrkan.se/stockholmsdomkyrkoforsamling/visitors",
      "wikipediaCount": 34,
      "wikidataId": "Q1133075",
@@ -534,7 +534,7 @@
       "enwiki": "German Church, Stockholm"
      },
      "lat": 59.32414,
-     "lon": 18.07172,
+     "lon": 18.0717,
      "openingHours": "10:30-16:30",
      "wikipediaCount": 20,
      "wikidataId": "Q2164087",
@@ -1455,8 +1455,8 @@
     {
      "id": "way/24968329",
      "name": "Nationalmuseum",
-     "lat": 59.32848,
-     "lon": 18.07818,
+     "lat": 59.32849,
+     "lon": 18.0782,
      "website": "https://www.nationalmuseum.se/",
      "openingHours": "Mo off; Tu-We,Fr-Su 11:00-17:00; Th 11:00-20:00",
      "wikipediaCount": 39,
@@ -1485,10 +1485,10 @@
      "labels": {
       "en": "Vasa Museum"
      },
-     "lat": 59.3281,
+     "lat": 59.32814,
      "lon": 18.09139,
      "website": "https://vasamuseet.se/",
-     "openingHours": "Mo-Su 08:30-18:00",
+     "openingHours": "Th-Tu 10:00-17:00; We 10:00-20:00",
      "wikipediaCount": 39,
      "wikidataId": "Q901371",
      "kinds": [
@@ -1697,9 +1697,8 @@
      },
      "lat": 59.32738,
      "lon": 18.08167,
-     "address": "Tyghusplan 4",
      "website": "https://www.ostasiatiskamuseet.se/",
-     "openingHours": "closed \"Closed due to renovation; reopening is scheduled for autumn 2026.\"",
+     "openingHours": "Tu 11:00-20:00; We-Su 11:00-17:00",
      "wikipediaCount": 20,
      "wikidataId": "Q298289",
      "kinds": [
@@ -2470,8 +2469,7 @@
      },
      "lat": 59.32658,
      "lon": 18.09493,
-     "address": "Djurgårdsvägen 17",
-     "website": "https://www.vikingaliv.se/",
+     "website": "https://thevikingmuseum.com/",
      "openingHours": "Mo-Su 10:00-19:00",
      "wikipediaCount": 4,
      "wikidataId": "Q31871457",
@@ -2781,6 +2779,16 @@
      "detailed": true
     },
     {
+     "id": "node/320553891",
+     "name": "Banyan",
+     "lat": 59.33146,
+     "lon": 18.02974,
+     "website": "http://www.restaurangbanyan.se/",
+     "openingHours": "Mo-Fr 16:00-21:00; Sa,Su 13:00-21:00",
+     "cuisine": "indian",
+     "detailed": true
+    },
+    {
      "id": "node/449884393",
      "name": "Bao Asian Tapas",
      "lat": 59.33437,
@@ -2966,7 +2974,7 @@
      "lat": 59.31858,
      "lon": 18.06194,
      "website": "https://www.cantopapa.se/",
-     "openingHours": "Mo closed; Tu-Fr 16:30-22:00; Sa,Su 12:00-22:00",
+     "openingHours": "Mo off; Tu-Fr 17:00-22:00; Sa-Su 13:00-22:00",
      "cuisine": "chinese",
      "detailed": true
     },
@@ -3004,16 +3012,6 @@
       "fullWidth": 3968
      },
      "description": "Stockholm'da restoran"
-    },
-    {
-     "id": "node/525494515",
-     "name": "Chapter's",
-     "lat": 59.34631,
-     "lon": 18.0348,
-     "website": "https://chapters.se/",
-     "openingHours": "Mo-Th 11:00-23:00; Sa 11:00-01:00; Mo,Su 14:00-01:00",
-     "cuisine": "swedish",
-     "detailed": true
     }
    ]
   },
@@ -3082,6 +3080,16 @@
      "detailed": true
     },
     {
+     "id": "node/11887345512",
+     "name": "Bröd & Salt",
+     "lat": 59.31694,
+     "lon": 18.07179,
+     "website": "https://brodsalt.se/",
+     "openingHours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-18:00",
+     "cuisine": "pizza, salad",
+     "detailed": true
+    },
+    {
      "id": "node/6594663371",
      "name": "Café Koya",
      "lat": 59.34073,
@@ -3139,6 +3147,16 @@
      "website": "https://shop.caffellini.nu/",
      "openingHours": "Mo-Fr 08:00-16:00; Sa 10:00-18:00; Su off",
      "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/1402697511",
+     "name": "Chaikhana",
+     "lat": 59.3241,
+     "lon": 18.07231,
+     "website": "https://chaikhana.se/",
+     "openingHours": "Tu-Su 11:00-19:00; Mo closed",
+     "cuisine": "tea",
      "detailed": true
     },
     {
@@ -3298,26 +3316,6 @@
      "lon": 18.0626,
      "website": "https://www.espressohouse.se/",
      "openingHours": "Mo-Fr 07:30-21:00; Sa 09:00-21:00; Su 09:00-21:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/3758991516",
-     "name": "Espresso House",
-     "lat": 59.31816,
-     "lon": 18.07147,
-     "website": "https://www.espressohouse.se/",
-     "openingHours": "Mo-Th 06:30-22:00, Fr 06:30-24:00, Sa 08:00-24:00, Su 08:00-22:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/5124175622",
-     "name": "Espresso House",
-     "lat": 59.33901,
-     "lon": 18.09125,
-     "website": "https://espressohouse.com/",
-     "openingHours": "Mo-Fr 07:00-20:00; Sa 08:00-18:00; Su 08:00-17:00",
      "cuisine": "coffee shop",
      "detailed": true
     }
@@ -3555,7 +3553,7 @@
      "lat": 59.33489,
      "lon": 18.08535,
      "website": "http://tudorarms.se/",
-     "openingHours": "Mo-Fr 11:30-23:00;Sa 13:00-23:00;Su 13:00-19:00",
+     "openingHours": "Mo-Tu 16:00-22:00; We-Th 16:00-23:00, Fr-Sa 15:00-23:00; Su 15:00-20:00",
      "cuisine": "british",
      "wikidataId": "Q10706003",
      "detailed": true,
@@ -3857,6 +3855,13 @@
      "lat": 59.32251,
      "lon": 18.07216,
      "openingHours": "Mo-Th off; Fr-Sa 22:00-03:00; Su 03:00-24:00 off"
+    },
+    {
+     "id": "node/14177701760",
+     "name": "Noppe Bar",
+     "lat": 59.33373,
+     "lon": 18.07621,
+     "website": "https://www.noppe.se/"
     },
     {
      "id": "node/2407774345",
