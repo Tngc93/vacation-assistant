@@ -1,7 +1,7 @@
 {
  "version": 6,
  "cityCode": "AMM",
- "fetchedAt": "2026-10-27T19:19:46.994Z",
+ "fetchedAt": "2026-11-01T13:14:47.514Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -107,8 +107,8 @@
       "en": "Roman Theatre of Amman",
       "enwiki": "Roman Theatre (Amman)"
      },
-     "lat": 31.95162,
-     "lon": 35.93932,
+     "lat": 31.95163,
+     "lon": 35.93931,
      "wikipediaCount": 17,
      "wikidataId": "Q2634316",
      "kinds": [
@@ -249,42 +249,28 @@
      "descriptionEn": "roman nymphaeum in Amman"
     },
     {
-     "id": "way/757688579",
-     "name": "قصر الأمويين",
-     "osmNames": {
-      "en": "Umayyad Palace"
-     },
-     "labels": {
-      "tr": "Emevi Sarayı",
-      "en": "Umayyad Palace"
-     },
-     "lat": 31.95589,
-     "lon": 35.93368,
-     "wikipediaCount": 6,
-     "wikidataId": "Q21188319",
-     "kinds": [
-      "palace"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Amman_Citadel_49.jpg/500px-Amman_Citadel_49.jpg",
-      "width": 500,
-      "height": 335,
-      "author": "Jean Housen",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Amman_Citadel_49.jpg",
-      "fullWidth": 3872
-     },
-     "description": "palace complex in Amman, Jordan",
-     "descriptionEn": "palace complex in Amman, Jordan",
-     "parentId": "Q3157009",
-     "parentName": "Amman Kalesi"
-    },
-    {
      "id": "node/4788766570",
      "name": "Ammonite Watchtower",
      "lat": 31.9577,
      "lon": 35.90457
+    },
+    {
+     "id": "way/757668998",
+     "name": "Ayyubid Watch Tower",
+     "lat": 31.9534,
+     "lon": 35.93504
+    },
+    {
+     "id": "way/428913211",
+     "name": "Cistern Birka",
+     "lat": 31.95554,
+     "lon": 35.93469
+    },
+    {
+     "id": "way/757880133",
+     "name": "Colonnaded Street",
+     "lat": 31.95591,
+     "lon": 35.93381
     },
     {
      "id": "way/659422039",
@@ -311,10 +297,22 @@
      "lon": 35.93454
     },
     {
+     "id": "way/758135470",
+     "name": "Umayyad Audience Hall and Throne Chamber",
+     "lat": 31.95622,
+     "lon": 35.93339
+    },
+    {
      "id": "way/757688568",
      "name": "Umayyad Market place \"Souk\"",
      "lat": 31.95517,
      "lon": 35.93454
+    },
+    {
+     "id": "way/523701385",
+     "name": "Umayyad Mosque",
+     "lat": 31.9547,
+     "lon": 35.93432
     },
     {
      "id": "way/757801476",
@@ -340,15 +338,6 @@
      "lon": 35.91667
     },
     {
-     "id": "way/428913211",
-     "name": "الصهريج الأموي المفتوح",
-     "osmNames": {
-      "en": "Cistern Birka"
-     },
-     "lat": 31.95557,
-     "lon": 35.93462
-    },
-    {
      "id": "way/608092189",
      "name": "الكنيسة البيزنطية",
      "osmNames": {
@@ -358,31 +347,13 @@
      "lon": 35.93517
     },
     {
-     "id": "way/523701385",
-     "name": "المسجد الأموي",
-     "osmNames": {
-      "en": "Umayyad Mosque"
-     },
-     "lat": 31.9547,
-     "lon": 35.93432
-    },
-    {
-     "id": "way/757668998",
-     "name": "برج المراقبة الأيوبي",
-     "osmNames": {
-      "en": "Ayyubid Watch Tower"
-     },
-     "lat": 31.9534,
-     "lon": 35.93504
-    },
-    {
      "id": "way/486630396",
      "name": "حدائق الساحة الهاشمية",
      "osmNames": {
       "en": "Hashemite Square Gardens"
      },
      "lat": 31.95212,
-     "lon": 35.93997
+     "lon": 35.93998
     },
     {
      "id": "node/5285724421",
@@ -412,22 +383,13 @@
      "lon": 35.93555
     },
     {
-     "id": "way/757880133",
-     "name": "شارع الأعمدة",
+     "id": "way/757688579",
+     "name": "قصر الأمويين",
      "osmNames": {
-      "en": "Colonnaded Street"
+      "en": "Umayyad Palace"
      },
-     "lat": 31.95591,
-     "lon": 35.93381
-    },
-    {
-     "id": "way/758135470",
-     "name": "قاعة الاجتماعات الأموية وقاعة العرش",
-     "osmNames": {
-      "en": "Umayyad Audience Hall and Throne Chamber"
-     },
-     "lat": 31.95622,
-     "lon": 35.93339
+     "lat": 31.95589,
+     "lon": 35.93368
     },
     {
      "id": "node/6768714853",
@@ -472,11 +434,10 @@
       "en": "The Jordan Museum",
       "enwiki": "Jordan Museum"
      },
-     "lat": 31.94562,
-     "lon": 35.92725,
+     "lat": 31.94558,
+     "lon": 35.92732,
      "address": "شارع علي بن أبي طالب",
      "website": "https://jordanmuseum.jo/",
-     "openingHours": "Sa-Mo,We,Th 09:00-17:00; Fr 14:00-18:00",
      "wikipediaCount": 16,
      "wikidataId": "Q24521524",
      "kinds": [
@@ -497,17 +458,14 @@
      "descriptionEn": "art museum, archaeological museum in Amman, Jordan"
     },
     {
-     "id": "way/381723554",
-     "name": "متحف القلعة",
-     "osmNames": {
-      "en": "Jordan Archaeological Museum"
-     },
+     "id": "wikidata/Q1444552",
+     "name": "Ürdün Arkeoloji Müzesi",
+     "localName": "Jordan Archaeological Museum",
      "labels": {
-      "tr": "Ürdün Arkeoloji Müzesi",
       "en": "Jordan Archaeological Museum"
      },
-     "lat": 31.95412,
-     "lon": 35.93429,
+     "lat": 31.954,
+     "lon": 35.9343,
      "wikipediaCount": 12,
      "wikidataId": "Q1444552",
      "kinds": [
@@ -564,16 +522,6 @@
      "lon": 35.93185,
      "address": "شارع عثمان بن عفان 30",
      "openingHours": "Sa-Th 10:00-18:00"
-    },
-    {
-     "id": "node/6032290185",
-     "name": "المتحف الشعبي للحلي والأزياء",
-     "osmNames": {
-      "en": "Museum of Popular Traditions"
-     },
-     "lat": 31.95185,
-     "lon": 35.93955,
-     "openingHours": "Mo,We,Th,Sa,Su 09:00-18:00; Fr 15:00-19:00; Tu off"
     },
     {
      "id": "node/3907302486",
@@ -650,6 +598,12 @@
      "lon": 35.93216
     },
     {
+     "id": "node/10690423805",
+     "name": "المدرج الروماني عمان m&h",
+     "lat": 31.95226,
+     "lon": 35.93908
+    },
+    {
      "id": "node/5824803762",
      "name": "لجنة دعم المساجدوالمشاريع الخيرية",
      "lat": 31.96826,
@@ -670,8 +624,17 @@
      "osmNames": {
       "en": "Jordan Folklore Museum"
      },
-     "lat": 31.95173,
-     "lon": 35.93899
+     "lat": 31.95174,
+     "lon": 35.93894
+    },
+    {
+     "id": "way/381723554",
+     "name": "متحف القلعة",
+     "osmNames": {
+      "en": "Jordan Archaeological Museum"
+     },
+     "lat": 31.95412,
+     "lon": 35.93429
     }
    ]
   },
@@ -698,6 +661,15 @@
      "lon": 35.92297,
      "website": "https://www.buffalowingsandrings.com/",
      "cuisine": "american, chicken, fried chicken, fries",
+     "detailed": true
+    },
+    {
+     "id": "node/5233980421",
+     "name": "Fakhreldin",
+     "lat": 31.95563,
+     "lon": 35.90985,
+     "website": "https://fakhreldin.com/",
+     "cuisine": "mediterranean, lebanese, regional",
      "detailed": true
     },
     {
@@ -905,7 +877,7 @@
      "name": "Qamar Deen Restaurant",
      "lat": 31.95143,
      "lon": 35.92578,
-     "cuisine": "arab"
+     "cuisine": "arabic"
     },
     {
      "id": "node/9414954417",
@@ -913,13 +885,6 @@
      "lat": 31.95674,
      "lon": 35.92306,
      "cuisine": "arab"
-    },
-    {
-     "id": "node/4671703314",
-     "name": "restaurant institut",
-     "lat": 31.95598,
-     "lon": 35.92665,
-     "cuisine": "french"
     }
    ]
   },
@@ -952,15 +917,6 @@
      "detailed": true
     },
     {
-     "id": "node/2530704864",
-     "name": "Books@Café",
-     "lat": 31.94802,
-     "lon": 35.93138,
-     "openingHours": "Mo-Su 09:00+",
-     "cuisine": "cake, coffee shop, pizza",
-     "detailed": true
-    },
-    {
      "id": "node/7104098853",
      "name": "Dimitri's Coffee",
      "lat": 31.95647,
@@ -976,16 +932,6 @@
      "lon": 35.9324,
      "address": "شارع عثمان بن عفان",
      "openingHours": "Mo-Sa 10:00-20:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
-     "id": "node/6130325761",
-     "name": "QahwaBLK",
-     "lat": 31.95807,
-     "lon": 35.9087,
-     "address": "Arar Street, Jabal al-Webdeh, Amman",
-     "website": "https://blk.jo/locations/training-branch/",
      "cuisine": "coffee shop",
      "detailed": true
     },
@@ -1023,6 +969,13 @@
      "lon": 35.92656,
      "address": "amman 1",
      "cuisine": "coffee shop"
+    },
+    {
+     "id": "node/2530704864",
+     "name": "Books@Café",
+     "lat": 31.94802,
+     "lon": 35.93138,
+     "cuisine": "cake, coffee shop, pizza"
     },
     {
      "id": "node/4779945121",
@@ -1155,6 +1108,12 @@
      "name": "Esquires Coffee",
      "lat": 31.95699,
      "lon": 35.92497
+    },
+    {
+     "id": "node/8894686351",
+     "name": "Fan wa Chai",
+     "lat": 31.95591,
+     "lon": 35.92039
     }
    ]
   },

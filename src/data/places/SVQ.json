@@ -1,7 +1,7 @@
 {
  "version": 6,
  "cityCode": "SVQ",
- "fetchedAt": "2026-10-23T12:16:25.932Z",
+ "fetchedAt": "2026-11-01T10:53:03.304Z",
  "radiusKm": 2,
  "license": {
   "name": "ODbL-1.0",
@@ -528,6 +528,35 @@
      "descriptionEn": "square in Sevilla"
     },
     {
+     "id": "node/4893960522",
+     "name": "Tumba de Cristóbal Colón",
+     "labels": {
+      "en": "Tomb of Christopher Columbus (Seville)",
+      "enwiki": "Tomb of Christopher Columbus"
+     },
+     "lat": 37.38547,
+     "lon": -5.99305,
+     "wikipediaCount": 4,
+     "wikidataId": "Q6153784",
+     "kinds": [
+      "notPlace"
+     ],
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tumba_de_Colon-Sevilla.jpg/500px-Tumba_de_Colon-Sevilla.jpg",
+      "width": 500,
+      "height": 695,
+      "author": "Sevilla_cathedral_-_tomb_of_christopher_columbus.jpg : Pom² derivative work: Miguel Ángel \"fotógrafo\" ( talk )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tumba_de_Colon-Sevilla.jpg",
+      "fullWidth": 1627
+     },
+     "description": "Tomb of Christopher Columbus, Cathedral of Seville, Spain",
+     "descriptionEn": "Tomb of Christopher Columbus, Cathedral of Seville, Spain",
+     "parentId": "Q231606",
+     "parentName": "Sevilla Katedrali"
+    },
+    {
      "id": "node/4888559522",
      "name": "Arco del Postigo",
      "labels": {
@@ -632,35 +661,6 @@
      },
      "description": "cultural property in Sevilla, Spain",
      "descriptionEn": "cultural property in Sevilla, Spain"
-    },
-    {
-     "id": "node/4893960522",
-     "name": "Tumba de Cristóbal Colón",
-     "labels": {
-      "en": "Tomb of Christopher Columbus (Seville)",
-      "enwiki": "Tomb of Christopher Columbus"
-     },
-     "lat": 37.38547,
-     "lon": -5.99305,
-     "wikipediaCount": 3,
-     "wikidataId": "Q6153784",
-     "kinds": [
-      "notPlace"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Tumba_de_Colon-Sevilla.jpg/500px-Tumba_de_Colon-Sevilla.jpg",
-      "width": 500,
-      "height": 695,
-      "author": "Sevilla_cathedral_-_tomb_of_christopher_columbus.jpg : Pom² derivative work: Miguel Ángel \"fotógrafo\" ( talk )",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Tumba_de_Colon-Sevilla.jpg",
-      "fullWidth": 1627
-     },
-     "description": "Tomb of Christopher Columbus, Cathedral of Seville, Spain",
-     "descriptionEn": "Tomb of Christopher Columbus, Cathedral of Seville, Spain",
-     "parentId": "Q231606",
-     "parentName": "Sevilla Katedrali"
     },
     {
      "id": "relation/6054646",
@@ -787,32 +787,6 @@
      "descriptionEn": "museum in Spain"
     },
     {
-     "id": "way/1528556994",
-     "name": "Monumento a Fray Bartolomé de las Casas",
-     "labels": {
-      "en": "Monument to Bartolomé de las Casas"
-     },
-     "lat": 37.38712,
-     "lon": -6.00239,
-     "wikipediaCount": 1,
-     "wikidataId": "Q16608881",
-     "kinds": [
-      "notPlace"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Monumento_a_Bartolom%C3%A9_de_las_Casas_%28Sevilla%29.JPG/500px-Monumento_a_Bartolom%C3%A9_de_las_Casas_%28Sevilla%29.JPG",
-      "width": 500,
-      "height": 375,
-      "author": "Hispalois",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Monumento_a_Bartolom%C3%A9_de_las_Casas_(Sevilla).JPG",
-      "fullWidth": 3264
-     },
-     "description": "memorial in Seville",
-     "descriptionEn": "memorial in Seville"
-    },
-    {
      "id": "way/660053486",
      "name": "Monumento a Martínez Montañés",
      "lat": 37.39012,
@@ -919,6 +893,12 @@
      "name": "Cabildo Catedral",
      "lat": 37.38524,
      "lon": -5.99339
+    },
+    {
+     "id": "way/294549128",
+     "name": "Calesitas del Tardón",
+     "lat": 37.38057,
+     "lon": -6.00955
     }
    ]
   },
@@ -1763,27 +1743,6 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/3214724182",
-     "name": "Alimentari e Diversi",
-     "lat": 37.38994,
-     "lon": -6.00066,
-     "address": "Calle Julio César",
-     "website": "https://alimentariediversi.es/",
-     "openingHours": "Mo-Th 13:30-16:00,20:30-23:30; Fr-Su 13:30-16:30,20:00-23:30",
-     "cuisine": "italian",
-     "detailed": true
-    },
-    {
-     "id": "node/2290757466",
-     "name": "Arabesca",
-     "lat": 37.38195,
-     "lon": -5.99095,
-     "website": "https://www.arabesca.es/",
-     "openingHours": "Mo-Su 12:00-23:00",
-     "cuisine": "arab",
-     "detailed": true
-    },
-    {
      "id": "node/4494222189",
      "name": "Bar Bistec",
      "lat": 37.38278,
@@ -1803,6 +1762,16 @@
      "website": "http://bodeguitaromero.es/",
      "openingHours": "Tu-Sa 12:00-17:00,20:00-00:00; Su 12:00-17:00",
      "cuisine": "regional, tapas",
+     "detailed": true
+    },
+    {
+     "id": "node/4356109084",
+     "name": "El Coliseo",
+     "lat": 37.38233,
+     "lon": -5.994,
+     "website": "http://www.cafeteriacoliseo.es/",
+     "openingHours": "Mo-Su,PH 12:30-23:30",
+     "cuisine": "regional",
      "detailed": true
     },
     {
@@ -1929,6 +1898,15 @@
      "address": "Calle Luis Montoto 71",
      "openingHours": "Mo-Su 12:30-17:00,20:00-01:00",
      "cuisine": "kebab, pizza",
+     "detailed": true
+    },
+    {
+     "id": "node/2290757466",
+     "name": "Arabesca",
+     "lat": 37.38195,
+     "lon": -5.99095,
+     "website": "https://www.arabesca.es/",
+     "cuisine": "arab",
      "detailed": true
     },
     {
@@ -2075,17 +2053,6 @@
    "wikipediaCountsAvailable": true,
    "places": [
     {
-     "id": "node/3869788461",
-     "name": "Manolo Bakes",
-     "lat": 37.37842,
-     "lon": -6.00132,
-     "address": "Avenida República Argentina 22",
-     "website": "https://www.manolobakes.com/",
-     "openingHours": "Mo-Fr 07:00-21:00; Sa-Su 09:00-21:00",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
      "id": "node/5094362130",
      "name": "Milk Away",
      "lat": 37.38794,
@@ -2188,15 +2155,6 @@
      "detailed": true
     },
     {
-     "id": "node/6788426788",
-     "name": "INASS BRUNCH RESTAURANTE",
-     "lat": 37.38979,
-     "lon": -6.0003,
-     "openingHours": "Mo 09:00-24:00; Tu,Th-Su 10:00-24:00; We off",
-     "cuisine": "brunch, regional, italian",
-     "detailed": true
-    },
-    {
      "id": "node/747525520",
      "name": "La Gitane Loca",
      "lat": 37.38973,
@@ -2222,6 +2180,16 @@
      "lon": -5.99763,
      "openingHours": "Mo 08:00-13:30, 16:30-21:30; Tu-Fr 08:00-21:30; Sa-Su 08:30-21:30",
      "cuisine": "coffee shop",
+     "detailed": true
+    },
+    {
+     "id": "node/3869788461",
+     "name": "Manolo Bakes",
+     "lat": 37.37842,
+     "lon": -6.00132,
+     "address": "Avenida República Argentina 22",
+     "website": "https://www.manolobakes.com/",
+     "openingHours": "Mo-Fr 07:00-21:00; Sa-Su 09:00-21:00",
      "detailed": true
     },
     {
@@ -2312,15 +2280,6 @@
      "detailed": true
     },
     {
-     "id": "node/366546241",
-     "name": "Starbucks",
-     "lat": 37.39267,
-     "lon": -5.99447,
-     "website": "https://www.caixabank.es/",
-     "cuisine": "coffee shop",
-     "detailed": true
-    },
-    {
      "id": "node/960842348",
      "name": "Syra Coffee - Tetuan",
      "lat": 37.39017,
@@ -2357,11 +2316,26 @@
      "cuisine": "burger, cake, breakfast, coffee shop"
     },
     {
+     "id": "node/960296905",
+     "name": "Bar El Comercio",
+     "lat": 37.39081,
+     "lon": -5.99244,
+     "openingHours": "Mo-Sa 06:30-20:30"
+    },
+    {
      "id": "node/10282482210",
      "name": "Billy Brunch",
      "lat": 37.39186,
      "lon": -6.00058,
      "openingHours": "Mo-Su 09:30-17:00"
+    },
+    {
+     "id": "node/366535282",
+     "name": "Bodegon Alfonso XII",
+     "lat": 37.39296,
+     "lon": -5.99905,
+     "address": "Calle Alfonso XII 33",
+     "cuisine": "local"
     }
    ]
   },
@@ -2435,26 +2409,6 @@
      "address": "Avenida de Eduardo Dato 39",
      "openingHours": "Mo-Fr 08:00-24:00; Sa 09:00-24:00 \"Winter\"; Sa 09:00-16:00,20:00-00:00 \"Summer\"; Su 11:00-00:00",
      "cuisine": "tapas",
-     "detailed": true
-    },
-    {
-     "id": "node/4356109084",
-     "name": "Bar Coliseo",
-     "lat": 37.38235,
-     "lon": -5.99415,
-     "address": "Calle Almirante Lobo 17",
-     "website": "https://barcoliseo.es/",
-     "openingHours": "Mo-Su,PH 12:30-23:30",
-     "detailed": true
-    },
-    {
-     "id": "node/4609386389",
-     "name": "Bar Estrella",
-     "lat": 37.38841,
-     "lon": -5.99146,
-     "address": "Calle Estrella 3",
-     "website": "https://www.barestrellasevilla.com/",
-     "openingHours": "Mo-Su,PH 12:00-24:00",
      "detailed": true
     },
     {
@@ -2604,6 +2558,14 @@
      "cuisine": "tapas"
     },
     {
+     "id": "node/4609386289",
+     "name": "Berlín",
+     "lat": 37.3909,
+     "lon": -5.99081,
+     "address": "Calle Boteros 26",
+     "openingHours": "Mo-Su 22:00-05:00"
+    },
+    {
      "id": "node/4609804500",
      "name": "Bodega Góngora",
      "lat": 37.38945,
@@ -2614,7 +2576,7 @@
     {
      "id": "node/2166010822",
      "name": "Bodega La Aurora",
-     "lat": 37.39093,
+     "lat": 37.39091,
      "lon": -5.99099,
      "address": "Calle Pérez Galdós 9",
      "openingHours": "12:00-03:00"
@@ -2640,6 +2602,14 @@
      "lat": 37.37966,
      "lon": -6.00426,
      "cuisine": "tapas"
+    },
+    {
+     "id": "node/1468342830",
+     "name": "Casa Casimiro",
+     "lat": 37.38093,
+     "lon": -6.01162,
+     "address": "Avenida de Coria 19",
+     "cuisine": "galician, regional"
     }
    ]
   },
@@ -2671,16 +2641,16 @@
      "address": "Alameda de Hércules 93"
     },
     {
-     "id": "node/7057772186",
-     "name": "Alameda 47",
-     "lat": 37.40111,
-     "lon": -5.99391
-    },
-    {
      "id": "node/5375755646",
      "name": "Bicicleteria",
      "lat": 37.39733,
      "lon": -5.99117
+    },
+    {
+     "id": "node/7057772186",
+     "name": "carambolo",
+     "lat": 37.40109,
+     "lon": -5.99389
     },
     {
      "id": "node/2154134761",
@@ -2693,12 +2663,6 @@
      "name": "Discoteca Buda",
      "lat": 37.39105,
      "lon": -6.00257
-    },
-    {
-     "id": "node/14265467849",
-     "name": "Koko",
-     "lat": 37.39361,
-     "lon": -5.99146
     },
     {
      "id": "node/7010628085",
@@ -2718,6 +2682,12 @@
      "name": "Sala Malandar",
      "lat": 37.39856,
      "lon": -6.00019
+    },
+    {
+     "id": "node/5347945204",
+     "name": "Vinilo",
+     "lat": 37.40034,
+     "lon": -5.99232
     }
    ]
   }

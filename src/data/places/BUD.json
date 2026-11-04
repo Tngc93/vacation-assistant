@@ -1,7 +1,7 @@
 {
  "version": 6,
  "cityCode": "BUD",
- "fetchedAt": "2026-10-23T12:56:43.665Z",
+ "fetchedAt": "2026-11-01T11:35:36.236Z",
  "radiusKm": 3,
  "license": {
   "name": "ODbL-1.0",
@@ -278,7 +278,7 @@
      "lon": 19.06072,
      "address": "Dohány utca 2",
      "website": "https://www.dohany-zsinagoga.hu/",
-     "openingHours": "Mar-Sep Su-Th 10:00-20:00;\nMar-Oct Fr 10:00-16:00;\nNov-Feb Su-Th 10:00-16:00;\nNov-Feb Fr 10:00-14:00;\nMar-Apr Su-Th 10:00-16:00;\nOct Su-Th 10:00-16:00;\nJan 01-04,Mar 01-Apr 27,Oct 01-26 10:00-17:30;",
+     "openingHours": "Mar-Sep Su-Th 10:00-20:00; Mar-Oct Fr 10:00-16:00; Nov-Feb Su-Th 10:00-16:00; Nov-Feb Fr 10:00-14:00; Mar-Apr Su-Th 10:00-16:00; Oct Su-Th 10:00-16:00; Jan 01-04,Mar 01-Apr 27,Oct 01-26 10:00-17:30",
      "wikipediaCount": 35,
      "wikidataId": "Q754397",
      "kinds": [
@@ -354,34 +354,6 @@
      },
      "description": "bridge over the Danube in Budapest",
      "descriptionEn": "bridge over the Danube in Budapest"
-    },
-    {
-     "id": "wikidata/Q1063819",
-     "name": "Ulusal Széchényi Kütüphanesi",
-     "localName": "National Széchényi Library",
-     "labels": {
-      "en": "National Széchényi Library"
-     },
-     "lat": 47.49521,
-     "lon": 19.03935,
-     "wikipediaCount": 33,
-     "wikidataId": "Q1063819",
-     "kinds": [
-      "business",
-      "organization"
-     ],
-     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Orsz%C3%A1gos_Sz%C3%A9ch%C3%A9nyi_K%C3%B6nyvt%C3%A1r.jpg/500px-Orsz%C3%A1gos_Sz%C3%A9ch%C3%A9nyi_K%C3%B6nyvt%C3%A1r.jpg",
-      "width": 500,
-      "height": 250,
-      "author": "Gothika",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "fileUrl": "https://commons.wikimedia.org/wiki/File:Orsz%C3%A1gos_Sz%C3%A9ch%C3%A9nyi_K%C3%B6nyvt%C3%A1r.jpg",
-      "fullWidth": 3302
-     },
-     "description": "Hungarian national library",
-     "descriptionEn": "Hungarian national library"
     },
     {
      "id": "relation/156392",
@@ -2371,23 +2343,6 @@
      "descriptionEn": "museum in Budapest, Hungary"
     },
     {
-     "id": "node/2126973730",
-     "name": "Postamúzeum",
-     "lat": 47.5109,
-     "lon": 19.07514,
-     "address": "Benczúr utca 27",
-     "website": "https://postamuzeum.hu/hu/muzeumok/1/postamuzeum-budapest",
-     "openingHours": "Tu-Su 10:00-18:00",
-     "wikipediaCount": 1,
-     "wikidataId": "Q1239676",
-     "kinds": [
-      "noCoordinate",
-      "notPlace"
-     ],
-     "description": "Wikimedia disambiguation page",
-     "descriptionEn": "Wikimedia disambiguation page"
-    },
-    {
      "id": "way/139794534",
      "name": "Radnóti Miklós Művelődési Központ",
      "labels": {
@@ -2428,6 +2383,31 @@
       "noCoordinate",
       "organization"
      ]
+    },
+    {
+     "id": "way/197544901",
+     "name": "MOM Kulturális Központ",
+     "labels": {
+      "en": "MOM cultural centre"
+     },
+     "lat": 47.49013,
+     "lon": 19.01834,
+     "address": "Csörsz utca 18",
+     "website": "https://momkult.hu/",
+     "wikipediaCount": 1,
+     "wikidataId": "Q1161037",
+     "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/005c_MOM_kult%C3%BArh%C3%A1z.jpg/500px-005c_MOM_kult%C3%BArh%C3%A1z.jpg",
+      "width": 500,
+      "height": 379,
+      "author": "hu:User:Rimanóczyjeno",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fileUrl": "https://commons.wikimedia.org/wiki/File:005c_MOM_kult%C3%BArh%C3%A1z.jpg",
+      "fullWidth": 1000
+     },
+     "description": "Budapeşte'de bina",
+     "descriptionEn": "house of culture in Budapest, Hungary"
     }
    ]
   },
