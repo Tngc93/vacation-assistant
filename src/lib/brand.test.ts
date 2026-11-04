@@ -2,9 +2,9 @@ import { execFileSync } from "node:child_process";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import manifest from "@/app/manifest";
 import { en } from "@/i18n/messages/en";
 import { tr } from "@/i18n/messages/tr";
+import { webManifest } from "@/lib/pwa/manifest";
 import { BRAND_NAME, SITE_URL } from "./brand";
 
 const OLD_NAME = /vacation\s+assistant/i;
@@ -44,11 +44,14 @@ describe("brand", () => {
     expect(en.brand.description.startsWith(en.brand.tagline)).toBe(true);
   });
 
-  it("names the web manifest", () => {
-    const m = manifest();
-    expect(m.name).toBe(BRAND_NAME);
-    expect(m.short_name).toBe(BRAND_NAME);
-    expect(m.description).toBe(tr.brand.description);
+  it("names the web manifest in both languages", () => {
+    for (const [locale, messages] of [["tr", tr], ["en", en]] as const) {
+      const m = webManifest(locale, { paper: "" });
+      expect(m.name).toBe(BRAND_NAME);
+      expect(m.short_name).toBe(BRAND_NAME);
+      expect(m.description).toBe(messages.pwa.description);
+      expect(messages.pwa.description.startsWith(messages.brand.tagline)).toBe(true);
+    }
   });
 
   it("leaves the old name nowhere in the app's source (the slug and the VacationAssistant User-Agent stay)", () => {

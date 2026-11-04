@@ -9,7 +9,9 @@ export default defineConfig({
   forbidOnly: Boolean(process.env.CI),
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? [["github"], ["list"]] : "list",
-  use: { baseURL: `http://localhost:${PORT}` },
+  // The service worker would answer requests before page.route sees them (e2e/fixtures.ts aborts Commons there),
+  // so it is blocked everywhere except pwa.spec.ts, which tests it with context.route.
+  use: { baseURL: `http://localhost:${PORT}`, serviceWorkers: "block" },
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
   webServer: {
     command: `npm run start -- -p ${PORT}`,

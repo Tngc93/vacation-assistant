@@ -42,6 +42,15 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <p className="mt-1 text-caption text-ink-muted">{m.brand.tagline}</p>
           <p className="mt-6 max-w-sm text-caption text-ink">{m.footer.estimates}</p>
           <p className="mt-2 max-w-sm text-caption text-ink-muted">{m.footer.analytics}</p>
+          {/* Installing is the browser's own flow; this only says where to find it. */}
+          <details className="mt-6 max-w-sm">
+            <summary className={`cursor-pointer text-caption ${LINK}`}>{m.pwa.install}</summary>
+            <p className="mt-2 text-caption text-ink-muted">{m.pwa.installLead}</p>
+            <ul className="mt-2 grid gap-1 text-caption text-ink">
+              <li>{m.pwa.installIos}</li>
+              <li>{m.pwa.installAndroid}</li>
+            </ul>
+          </details>
         </div>
         <div className="md:col-span-7">
           <Caption as="h2">{m.footer.sources}</Caption>
