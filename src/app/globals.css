@@ -330,21 +330,17 @@ body::before {
 }
 
 /*
- * Paper scrim (DESIGN.md "Home background", "Plan background"): put on each line of words over a background — the
- * home hero's tagline, title, lead and "Keşfet" label (`.home-scrim`), the plan hero's words and the route strip's
- * codes (`.plan-scrim`) —, plain paper under the element's own box, fading out around it, so the background never
- * sits under text and the words keep the contrast they have on paper. Solid over the box; the shadow only softens
- * the edge.
+ * Home page scrim (DESIGN.md "Home background"): put on each line of the hero's words (tagline, title, lead,
+ * "Keşfet" label), plain paper under the element's own box, fading out around it, so the route map never sits under
+ * text and the words keep the contrast they have on paper. Solid over the box; the shadow only softens the edge.
  */
-.home-scrim,
-.plan-scrim {
+.home-scrim {
   position: relative;
   isolation: isolate;
   width: fit-content;
 }
 
-.home-scrim::before,
-.plan-scrim::before {
+.home-scrim::before {
   content: "";
   position: absolute;
   inset: -0.25rem -0.5rem;
@@ -359,10 +355,12 @@ body::before {
  * Plan background (DESIGN.md "Plan background"). Every number comes from src/lib/plan-background/config.ts as a
  * custom property (`planBackgroundVars`, set on the plan page's wrapper); tune it there.
  *
- * Atmosphere: the masthead photo, drawn small into a canvas, scaled up full width behind the hero, blurred, in the
- * photos' duotone, at a low opacity and fading into the paper; a token gradient without a photo. It sits first in the
- * hero zone and the hero's content is positioned after it, so it paints under everything without a stacking context
- * (the phone map's full-screen dialog must stay above the sticky menu).
+ * Atmosphere: the masthead photo, drawn into a canvas in the city's tritone (PlanBackdrop), scaled up full width
+ * behind the hero with a light blur, masked so it is strongest at the top right (behind the photo and the map) and
+ * almost paper behind the words on the left, fading into the paper downwards; a token gradient without a photo. No
+ * scrims: the mask keeps the words' contrast. It sits first in the hero zone and the hero's content is positioned
+ * after it, so it paints under everything without a stacking context (the phone map's full-screen dialog must stay
+ * above the sticky menu).
  */
 .plan-backdrop {
   position: absolute;
@@ -373,7 +371,19 @@ body::before {
   overflow: hidden;
   pointer-events: none;
   opacity: var(--pb-opacity-light);
-  mask-image: linear-gradient(to bottom, black var(--pb-solid), transparent);
+  mask-image:
+    linear-gradient(to bottom, black var(--pb-solid), transparent),
+    linear-gradient(to right, rgb(0 0 0 / var(--pb-left)) var(--pb-ramp-from), black var(--pb-ramp-to));
+  mask-composite: intersect;
+}
+
+/* Phones: one column, words full width; only the top right corner, behind the route's end. */
+@media (width < 48rem) {
+  .plan-backdrop {
+    mask-image:
+      linear-gradient(to bottom, black var(--pb-narrow-solid), transparent var(--pb-narrow-fade-end)),
+      linear-gradient(to right, transparent var(--pb-narrow-ramp-from), black var(--pb-narrow-ramp-to));
+  }
 }
 
 :root[data-theme="dark"] .plan-backdrop {
@@ -402,8 +412,7 @@ body::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.1) blur(var(--pb-blur));
-  mix-blend-mode: multiply;
+  filter: blur(var(--pb-blur));
 }
 
 /* Without a photo: the city's light (`--accent` towards the equator) over a `--sea` wash into the paper. */

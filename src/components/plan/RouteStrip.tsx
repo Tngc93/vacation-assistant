@@ -16,7 +16,7 @@ export function RouteStrip({ from, to, className }: { from: string; to: string; 
       data-to={to}
       className={cn("plan-route relative z-[1] flex items-center gap-3 font-mono text-micro uppercase tracking-[0.08em] text-ink print:hidden", className)}
     >
-      <span className="plan-scrim tabular">{from}</span>
+      <span className="tabular">{from}</span>
       {sameCity ? null : (
         <span key={`${from}-${to}`} className="relative flex flex-1 items-center">
           <span className="size-1.5 shrink-0 rounded-full border border-ink" />
@@ -24,7 +24,7 @@ export function RouteStrip({ from, to, className }: { from: string; to: string; 
           <span className="plan-route-end size-1.5 shrink-0 rounded-full bg-accent" />
         </span>
       )}
-      {sameCity ? null : <span className="plan-scrim tabular">{to}</span>}
+      {sameCity ? null : <span className="tabular">{to}</span>}
     </div>
   );
 }

@@ -195,12 +195,12 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
         )}
         {!isWide && detail ? <div className="mt-4">{detail}</div> : null}
         {items.length > 0 && missing.length ? (
-          <p className="plan-scrim mt-2 text-caption text-ink-muted">
+          <p className="mt-2 text-caption text-ink-muted">
             {f(m.places.missing, { categories: missing.join(", ") })} <OsmLink center={center} />
           </p>
         ) : null}
         {fetchedAt ? (
-          <p className="plan-scrim mt-2 text-[0.6875rem] leading-snug text-ink-muted">
+          <p className="mt-2 text-[0.6875rem] leading-snug text-ink-muted">
             {m.places.dataLine}{" "}
             <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="underline">
               {m.places.osmContributors}

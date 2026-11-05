@@ -50,9 +50,9 @@ export async function PlanHero({ locale, search, destination, categories, showEv
 
   const title = (
     <div>
-      <Caption as="p" className="plan-scrim">{f(m.og.planCountry, { country: countryName(destination, locale) })}</Caption>
-      <h1 className="plan-scrim mt-2 break-words font-display text-headline">{city}</h1>
-      <div className="plan-scrim mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-micro uppercase tracking-[0.08em] text-ink-muted">
+      <Caption as="p">{f(m.og.planCountry, { country: countryName(destination, locale) })}</Caption>
+      <h1 className="mt-2 break-words font-display text-headline">{city}</h1>
+      <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-micro uppercase tracking-[0.08em] text-ink-muted">
         <span className="tabular">
           {day(search.depart)} → {day(search.return)} · {f(m.plan.nightsCaps, { count: nights })}
         </span>
@@ -65,7 +65,7 @@ export async function PlanHero({ locale, search, destination, categories, showEv
           {m.plan.edit}
         </Link>
       </div>
-      {inTown ? <p className="plan-scrim mt-2 font-mono text-micro uppercase tracking-[0.08em] text-ink">{inTown}</p> : null}
+      {inTown ? <p className="mt-2 font-mono text-micro uppercase tracking-[0.08em] text-ink">{inTown}</p> : null}
     </div>
   );
 

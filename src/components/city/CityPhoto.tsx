@@ -30,8 +30,9 @@ export function CityPhoto({ photo, cityName, i18n: { m, f } }: { photo: StoredPh
     media: "(min-width: 768px)",
   });
   return (
-    <figure className="min-w-0">
-      <div className="duotone aspect-[16/7] overflow-hidden rounded-md">
+    // A framed card: the credit sits on its own paper, so the plan's atmosphere behind the photo never reaches it.
+    <figure className="min-w-0 overflow-hidden rounded-md border border-rule bg-paper-raised">
+      <div className="duotone aspect-[16/7] overflow-hidden">
         {/* Commons serves sized thumbnails itself; next/image optimisation would add nothing. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -51,7 +52,7 @@ export function CityPhoto({ photo, cityName, i18n: { m, f } }: { photo: StoredPh
           className="h-full w-full object-cover"
         />
       </div>
-      <figcaption className="plan-scrim mt-1.5 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
+      <figcaption className="px-2.5 py-1.5 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
         {m.city.photo}{" "}
         <a href={photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
           {photo.author}
