@@ -185,6 +185,9 @@ export const en: Messages = {
     photoAlt: "Photo of {city}",
     recoloured: "colours adjusted",
     localTime: "Local time",
+    /** A coordinate in the plan's section gaps: "41°23′ N". */
+    degreesMinutes: "{degrees}°{minutes}′ {hemisphere}",
+    compass: { north: "N", south: "S", east: "E", west: "W" },
   },
   rates: {
     sample: "SAMPLE DATA (TCMB)",

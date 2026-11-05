@@ -110,6 +110,24 @@ Harita motoru ve nokta ızgarası ayrı bir chunk'ta (+1 istek, ~8 KB sıkışt�
 
 Toplam ana iş parçacığı süresi mobilde ~0,59 sn → ~0,64 sn (daha çok nokta ve rota); 50 ms'yi aşan görev yok.
 
+**Plan arka planı (`feat/plan-background`, 2026-11-05).** Atmosfer, rota şeridi ve bölüm aralarındaki ızgaranın plan sayfasına etkisi, aynı makinede üretim build'ine karşı (`next start`, `VA_FLIGHTS_FIXTURES=1`, gerçek Commons görselleri), `npx lighthouse@12`, `/plan?to=BCN&depart=…&return=…` (30 gün sonrası, 4 gece), her satır 3 ölçümün medyanı; "önce" `main` (`594245e`), "sonra" `feat/plan-background`:
+
+| Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobil | 82 → **81** | 100 → **100** | 100 → **100** | 92 → 92* | 4,9 sn → 4,9 sn | 78 ms → 80 ms |
+| Masaüstü | 96 → **97** | 100 → **100** | 100 → **100** | 92 → 92* | 1,36 sn → 1,28 sn | 0 ms → 0 ms |
+
+En büyük boyama öğesi değişmedi (masaüstünde şehir fotoğrafı, telefonda ilk kartın fotoğrafı): atmosfer ikinci bir `<img>` değil, masthead fotoğrafının yüklendikten sonra kopyalandığı 64 px'lik bir canvas (yeni istek yok, LCP adayı değil). Mobil 81–82 ölçümler arası oynuyor (önce 78/82/82, sonra 81/81/81); hedef (≥80) tutuyor.
+
+**Plan arka planı, düzeltme (aynı branch, 2026-11-05).** Örtüler kalktı, atmosfer sağ üste maskelendi, 256 px canvas şehrin tritone'uyla piksel piksel boyanıyor. Aynı koşullarda, 3 ölçümün medyanı; "önce" yukarıdaki `main`:
+
+| Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobil | 82 → **81** | 100 → **100** | 100 → **100** | 92 → 92* | 4,9 sn → 4,8 sn | 78 ms → 102 ms |
+| Masaüstü | 96 → **96** | 100 → **100** | 100 → **100** | 92 → 92* | 1,36 sn → 1,42 sn | 0 ms → 0 ms |
+
+LCP öğesi yine aynı. Mobilde TBT ~25 ms arttı (fotoğraf yüklenince 256 × ~170 pikselin boyanması, Lighthouse'un 4× yavaşlatılmış işlemcisinde); hedefler (masaüstü ≥95, mobil ≥80) tutuyor.
+
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
 
 ## 7. Ölçüm (Vercel Web Analytics)

@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { CityPhoto } from "@/components/city/CityPhoto";
 import { LocalTime } from "@/components/city/LocalTime";
 import { HeroExplorer, type CategoryResult } from "@/components/places/HeroExplorer";
+import { PlanBackdrop } from "@/components/plan/PlanBackdrop";
 import { RateLine, RateLineFallback } from "@/components/plan/RateLine";
 import { Caption, Skeleton } from "@/components/ui";
 import { cityCentre, cityName, countryName, type Destination } from "@/data/destinations";
@@ -69,23 +70,27 @@ export async function PlanHero({ locale, search, destination, categories, showEv
   );
 
   return (
-    <HeroExplorer
-      title={title}
-      photo={file?.photo ? <CityPhoto photo={file.photo} cityName={city} i18n={i18n} /> : null}
-      center={cityCentre(destination)}
-      timeZone={destination.timeZone}
-      categories={categories}
-      results={results}
-      fetchedAt={file?.fetchedAt ?? null}
-      events={events}
-      showEvents={showEvents}
-    />
+    <>
+      {/* First in the hero zone, so the hero paints over it (DESIGN.md "Plan background"). */}
+      <PlanBackdrop hasPhoto={Boolean(file?.photo)} lat={destination.lat} lon={destination.lon} />
+      <HeroExplorer
+        title={title}
+        photo={file?.photo ? <CityPhoto photo={file.photo} cityName={city} i18n={i18n} /> : null}
+        center={cityCentre(destination)}
+        timeZone={destination.timeZone}
+        categories={categories}
+        results={results}
+        fetchedAt={file?.fetchedAt ?? null}
+        events={events}
+        showEvents={showEvents}
+      />
+    </>
   );
 }
 
 export function PlanHeroSkeleton({ locale }: { locale: Locale }) {
   return (
-    <div aria-busy="true" className="grid gap-5 pb-8 pt-6 md:h-[calc(100svh-4rem-1px)] md:max-h-[60rem] md:grid-cols-12 md:gap-8">
+    <div aria-busy="true" className="grid gap-5 pb-8 pt-3 md:h-[calc(100svh-4rem-1px-var(--pr-height,0px))] md:max-h-[60rem] md:grid-cols-12 md:gap-8">
       <span className="sr-only">{getI18n(locale).m.plan.loading}</span>
       <div className="grid content-start gap-4 md:col-span-7">
         <Skeleton className="h-3 w-24" />

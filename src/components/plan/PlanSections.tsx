@@ -14,6 +14,8 @@ import { parseBudgetCurrency } from "@/lib/budget/currency";
 import type { BudgetParams } from "@/lib/budget/params";
 import type { CategoryId } from "@/lib/places/categories";
 import type { EditBatch } from "@/lib/ai/edits";
+import { degreesMinutes } from "@/lib/plan-background/coordinates";
+import { SectionGap } from "./SectionGap";
 import { VisaCard } from "./VisaCard";
 
 /**
@@ -125,12 +127,19 @@ export function PlanSections({
   /** `?skip=`, `?ai=`, `?edit=`: the day-by-day plan's removals, AI plan and chat edits. */
   planEdits: PlanEdits;
 }) {
+  const i18n = getI18n(locale);
+  const destination = findDestination(search.to)!;
+  // The gaps between the sections carry the city's coordinate, latitude and longitude in turn (DESIGN.md "Plan
+  // background"): the Wikidata point the masthead names.
+  const gapLabel = (i: number) =>
+    i % 2 === 0 ? degreesMinutes(destination.lat, "lat", i18n) : degreesMinutes(destination.lon, "lon", i18n);
   return (
-    <div className="mt-12 grid gap-16 md:mt-16 md:gap-20">
-      {sectionsFor(locale, search, categories, direct, budget, planEdits).map((section) => {
+    <div className="mt-12 grid md:mt-16">
+      {sectionsFor(locale, search, categories, direct, budget, planEdits).map((section, i) => {
         const Wrap = section.aiDrawer ? AiDrawerProvider : Fragment;
         return (
           <Wrap key={section.id}>
+            {i > 0 ? <SectionGap label={gapLabel(i - 1)} /> : null}
             <section
               id={section.id}
               aria-labelledby={`${section.id}-title`}

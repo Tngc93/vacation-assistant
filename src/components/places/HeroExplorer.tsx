@@ -159,9 +159,10 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
       id="yerler"
       aria-label={m.places.region}
       className={cn(
-        "grid scroll-mt-16 grid-cols-1 gap-5 pb-8 pt-6 print:hidden",
-        // Wide screens: everything in one viewport under the site header (4rem + its 1px rule).
-        "md:h-[calc(100svh-4rem-1px)] md:max-h-[60rem] md:min-h-[34rem] md:grid-cols-12 md:grid-rows-[auto_auto_minmax(0,1fr)] md:gap-x-8 md:gap-y-4",
+        // Positioned, so it paints over the plan's atmosphere drawn before it (DESIGN.md "Plan background").
+        "relative grid scroll-mt-16 grid-cols-1 gap-5 pb-8 pt-3 print:hidden",
+        // Wide screens: everything in one viewport under the site header (4rem + its 1px rule) and the route strip.
+        "md:h-[calc(100svh-4rem-1px-var(--pr-height,0px))] md:max-h-[60rem] md:min-h-[34rem] md:grid-cols-12 md:grid-rows-[auto_auto_minmax(0,1fr)] md:gap-x-8 md:gap-y-4",
       )}
     >
       <div className="min-w-0 md:col-span-7">{title}</div>
@@ -272,7 +273,7 @@ function OsmLink({ center }: { center: { lat: number; lon: number } }) {
 
 function EmptyState({ text, action }: { text: string; action?: ReactNode }) {
   return (
-    <div className="rounded-md border border-dashed border-rule px-5 py-6">
+    <div className="rounded-md border border-dashed border-rule bg-paper px-5 py-6">
       <p className="text-body text-ink-muted">{text}</p>
       {action ? <div className="mt-3">{action}</div> : null}
     </div>

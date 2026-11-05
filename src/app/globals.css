@@ -350,3 +350,159 @@ body::before {
   box-shadow: 0 0 16px 8px var(--paper);
   pointer-events: none;
 }
+
+/*
+ * Plan background (DESIGN.md "Plan background"). Every number comes from src/lib/plan-background/config.ts as a
+ * custom property (`planBackgroundVars`, set on the plan page's wrapper); tune it there.
+ *
+ * Atmosphere: the masthead photo, drawn into a canvas in the city's tritone (PlanBackdrop), scaled up full width
+ * behind the hero with a light blur, masked so it is strongest at the top right (behind the photo and the map) and
+ * almost paper behind the words on the left, fading into the paper downwards; a token gradient without a photo. No
+ * scrims: the mask keeps the words' contrast. It sits first in the hero zone and the hero's content is positioned
+ * after it, so it paints under everything without a stacking context (the phone map's full-screen dialog must stay
+ * above the sticky menu).
+ */
+.plan-backdrop {
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  width: 100vw;
+  translate: -50% 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: var(--pb-opacity-light);
+  mask-image:
+    linear-gradient(to bottom, black var(--pb-solid), transparent),
+    linear-gradient(to right, rgb(0 0 0 / var(--pb-left)) var(--pb-ramp-from), black var(--pb-ramp-to));
+  mask-composite: intersect;
+}
+
+/* Phones: one column, words full width; only the top right corner, behind the route's end. */
+@media (width < 48rem) {
+  .plan-backdrop {
+    mask-image:
+      linear-gradient(to bottom, black var(--pb-narrow-solid), transparent var(--pb-narrow-fade-end)),
+      linear-gradient(to right, transparent var(--pb-narrow-ramp-from), black var(--pb-narrow-ramp-to));
+  }
+}
+
+:root[data-theme="dark"] .plan-backdrop {
+  opacity: var(--pb-opacity-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .plan-backdrop {
+    opacity: var(--pb-opacity-dark);
+  }
+}
+
+.plan-backdrop-layer {
+  position: absolute;
+  /* Past the edges by twice the blur, so the blur never pulls the paper in at the sides. */
+  inset: calc(var(--pb-blur) * -2);
+  transition: opacity var(--pb-fade-in) var(--ease-out);
+}
+
+.plan-backdrop[data-state="pending"] .plan-backdrop-layer {
+  opacity: 0;
+}
+
+.plan-backdrop-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(var(--pb-blur));
+}
+
+/* Without a photo: the city's light (`--accent` towards the equator) over a `--sea` wash into the paper. */
+.plan-backdrop-gradient {
+  background:
+    radial-gradient(
+      ellipse 70% 90% at var(--pb-sun-x) 0%,
+      color-mix(in oklab, var(--accent) var(--pb-warm), var(--sea)) 0%,
+      transparent 70%
+    ),
+    linear-gradient(var(--pb-angle), var(--sea), var(--paper));
+}
+
+/* Route strip: a dashed `--accent` line from the origin's code to the destination's, drawn once, then still. */
+.plan-route {
+  height: var(--pr-height);
+}
+
+.plan-route-line {
+  height: var(--pr-width);
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--accent) 0 var(--pr-dash),
+    transparent var(--pr-dash) calc(var(--pr-dash) + var(--pr-gap))
+  );
+}
+
+/*
+ * Graticule: faint parallels and meridians of `--ink`, only in the gaps between the plan's sections, full width and
+ * aligned from one gap to the next (meridians centred on the page), fading at the gap's edges.
+ */
+.plan-graticule {
+  --pg-line: color-mix(in srgb, var(--ink) var(--pg-opacity), transparent);
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  width: 100vw;
+  translate: -50% 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), var(--pg-line) 0 calc(50% + 0.5px), transparent 0),
+    linear-gradient(to right, var(--pg-line) 1px, transparent 0);
+  background-size:
+    100% 100%,
+    var(--pg-spacing) 100%;
+  background-repeat: no-repeat, repeat-x;
+  background-position:
+    0 0,
+    50% 0;
+  mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
+}
+
+@keyframes plan-drift {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+
+  to {
+    transform: scale(var(--pb-drift-scale)) translate(var(--pb-drift-x), var(--pb-drift-y));
+  }
+}
+
+@keyframes plan-route-draw {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes plan-route-arrive {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+/* Motion only when nobody asked for less: with reduced motion the atmosphere is still and the route already drawn. */
+@media (prefers-reduced-motion: no-preference) {
+  .plan-backdrop-layer {
+    animation: plan-drift var(--pb-drift-duration) ease-in-out infinite alternate;
+  }
+
+  .plan-route-line {
+    animation: plan-route-draw var(--pr-draw) ease-in-out both;
+  }
+
+  .plan-route-end {
+    animation: plan-route-arrive 250ms var(--ease-out) var(--pr-draw) both;
+  }
+}
