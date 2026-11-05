@@ -56,6 +56,7 @@ describe("message files", () => {
     expect(same.map(([key]) => key).sort()).toEqual([
       "ai.model",
       "budget.detail.web",
+      "city.degreesMinutes",
       "events.types.festival",
       "flights.airports.ESB",
       "flights.airports.SAW",

@@ -186,6 +186,9 @@ export const tr = {
     photoAlt: "{city} fotoğrafı",
     recoloured: "renkleri düzenlendi",
     localTime: "Yerel saat",
+    /** A coordinate in the plan's section gaps: "41°23′ K". */
+    degreesMinutes: "{degrees}°{minutes}′ {hemisphere}",
+    compass: { north: "K", south: "G", east: "D", west: "B" },
   },
   rates: {
     sample: "ÖRNEK VERİ (TCMB)",
