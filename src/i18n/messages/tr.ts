@@ -24,6 +24,7 @@ export const tr = {
     wikidata: "Şehirler, önem sırası, havayolu adları · CC0",
     ourAirports: "Kalkış havalimanları · kamu malı",
     geoNames: "Kalkış saat dilimleri · CC BY 4.0",
+    naturalEarth: "Ana sayfa haritası · kamu malı",
     commons: "Fotoğraflar · her birinin kendi lisansı",
     flights: "Uçuş fiyatları · önbellekten, tahmini",
     rates: "Döviz kurları",

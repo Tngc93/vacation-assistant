@@ -11,6 +11,7 @@ const SOURCES: ReadonlyArray<Source> = [
   { links: [{ name: "Wikidata", href: "https://www.wikidata.org" }], terms: "wikidata" },
   { links: [{ name: "OurAirports", href: "https://ourairports.com/data/" }], terms: "ourAirports" },
   { links: [{ name: "GeoNames", href: "https://www.geonames.org" }], terms: "geoNames" },
+  { links: [{ name: "Natural Earth", href: "https://www.naturalearthdata.com" }], terms: "naturalEarth" },
   { links: [{ name: "Wikimedia Commons", href: "https://commons.wikimedia.org" }], terms: "commons" },
   {
     links: [
