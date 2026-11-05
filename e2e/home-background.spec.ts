@@ -120,11 +120,15 @@ for (const colorScheme of ["light", "dark"] as const) {
       });
       expect(covers).toBe(true);
       expect(contrast(text, scrim)).toBeGreaterThanOrEqual(4.5);
-      // The words look the same with and without the map under them: nothing of it shows through.
+      // Behind the words, the page looks the same with and without the map: nothing of it shows through. The glyphs
+      // are made transparent for this comparison: how text is antialiased depends on the layers under it (on Linux,
+      // Chromium uses LCD antialiasing on an opaque layer and grayscale over the canvas), which is not the map showing.
+      const glyphs = await page.addStyleTag({ content: ".home-scrim, .home-scrim * { color: transparent !important; }" });
       const withMap = await word.screenshot();
       await map(page).evaluate((c) => (c.style.visibility = "hidden"));
       const withoutMap = await word.screenshot();
       await map(page).evaluate((c) => (c.style.visibility = ""));
+      await glyphs.evaluate((style) => (style as Element).remove());
       if (!withMap.equals(withoutMap)) {
         const name = (await word.textContent())?.slice(0, 24);
         await testInfo.attach(`${name} with map`, { body: withMap, contentType: "image/png" });
