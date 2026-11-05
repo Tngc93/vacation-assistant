@@ -9,3 +9,7 @@ Yapılması kararlaştırılmış ama henüz bir branch'e alınmamış işler. B
 ## Etkinlikler
 
 2. **Eksik Wikidata tarihleri:** Venedik Karnavalı, Edinburgh Fringe gibi büyük etkinliklerde Wikidata'da ay/tarih (P2922 ya da edisyon P580/P582) eksik; Wikidata'ya eklenirse aylık yenilemede otomatik gelir.
+
+## Konaklama
+
+3. **Gerçek otel fiyatları:** Bir otel sağlayıcısının affiliate onayı gerekiyor (Hotellook/Travelpayouts, Booking vb.); başvuruyu Berk yapacak, sonra entegrasyon.
