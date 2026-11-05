@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { PlanSections } from "@/components/plan/PlanSections";
 import { PlanHero, PlanHeroSkeleton } from "@/components/plan/PlanHero";
 import { PlanNav } from "@/components/plan/PlanNav";
+import { RouteStrip } from "@/components/plan/RouteStrip";
 import { SearchForm } from "@/components/search/SearchForm";
 import { Caption } from "@/components/ui";
 import { cityName, countryName, findDestination } from "@/data/destinations";
@@ -117,8 +118,9 @@ async function PlanContent({ searchParams, locale }: LocaleProps) {
           {f(m.search.peopleCount, { count: result.value.pax })}
         </p>
       </header>
-      {/* The hero zone: the hero's atmosphere fills it, behind the hero. */}
+      {/* The hero zone: the route strip, then the hero; the hero's atmosphere fills the zone behind both. */}
       <div className="relative">
+        <RouteStrip from={result.value.from} to={destination.cityCode} />
         <Suspense fallback={<PlanHeroSkeleton locale={locale} />}>
           <PlanHero
             locale={locale}

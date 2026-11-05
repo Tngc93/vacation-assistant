@@ -417,6 +417,20 @@ body::before {
     linear-gradient(var(--pb-angle), var(--sea), var(--paper));
 }
 
+/* Route strip: a dashed `--accent` line from the origin's code to the destination's, drawn once, then still. */
+.plan-route {
+  height: var(--pr-height);
+}
+
+.plan-route-line {
+  height: var(--pr-width);
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--accent) 0 var(--pr-dash),
+    transparent var(--pr-dash) calc(var(--pr-dash) + var(--pr-gap))
+  );
+}
+
 @keyframes plan-drift {
   from {
     transform: scale(1) translate(0, 0);
@@ -427,9 +441,34 @@ body::before {
   }
 }
 
-/* Motion only when nobody asked for less: with reduced motion the atmosphere is still. */
+@keyframes plan-route-draw {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes plan-route-arrive {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+/* Motion only when nobody asked for less: with reduced motion the atmosphere is still and the route already drawn. */
 @media (prefers-reduced-motion: no-preference) {
   .plan-backdrop-layer {
     animation: plan-drift var(--pb-drift-duration) ease-in-out infinite alternate;
+  }
+
+  .plan-route-line {
+    animation: plan-route-draw var(--pr-draw) ease-in-out both;
+  }
+
+  .plan-route-end {
+    animation: plan-route-arrive 250ms var(--ease-out) var(--pr-draw) both;
   }
 }
