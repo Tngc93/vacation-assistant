@@ -142,7 +142,7 @@ export function PlacesCarousel({ items, center, timeZone, activeId, selectedId, 
         })}
       </ul>
       <div className="mt-3 flex items-center justify-between gap-4">
-        <Caption as="p" aria-live="polite" className="tabular">
+        <Caption as="p" aria-live="polite" className="plan-scrim tabular">
           {pad(Math.min(index + 1, items.length))} / {pad(items.length)}
         </Caption>
         <div className="flex gap-2">

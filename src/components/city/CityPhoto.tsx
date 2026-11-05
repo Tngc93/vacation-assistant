@@ -43,13 +43,15 @@ export function CityPhoto({ photo, cityName, i18n: { m, f } }: { photo: StoredPh
           alt={f(m.city.photoAlt, { city: cityName })}
           // No credentials: Commons answers with CORS headers, and the browser keeps none of its cookies.
           crossOrigin="anonymous"
+          // The plan's atmosphere copies this very image into a canvas (PlanBackdrop): no second request.
+          data-city-photo=""
           // Low on phones, where the first card is the largest paint; on wide screens the preload above is high.
           fetchPriority="low"
           decoding="async"
           className="h-full w-full object-cover"
         />
       </div>
-      <figcaption className="mt-1.5 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
+      <figcaption className="plan-scrim mt-1.5 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
         {m.city.photo}{" "}
         <a href={photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
           {photo.author}

@@ -17,6 +17,7 @@ import { todayInIstanbul } from "@/lib/search/dates";
 import { describeSearch, formatDateRange } from "@/lib/search/describe";
 import { OG_SIZE } from "@/lib/og/size";
 import { parseBudgetCurrency } from "@/lib/budget/currency";
+import { planBackgroundVars } from "@/lib/plan-background/config";
 import { parseBudgetParams } from "@/lib/budget/params";
 import { parseDirect } from "@/lib/flights/display";
 import { parseEdits, parsePinned } from "@/lib/ai/edits";
@@ -73,10 +74,15 @@ export async function planMetadata({ searchParams, locale }: LocaleProps): Promi
 
 export function PlanPage({ searchParams, locale }: LocaleProps) {
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 pb-24 md:px-8">
-      <Suspense fallback={<PlanFallback locale={locale} />}>
-        <PlanContent searchParams={searchParams} locale={locale} />
-      </Suspense>
+    // The background's full-width layers (the hero's atmosphere, the gaps' graticule) are 100vw wide: clipped here,
+    // so a classic scrollbar never makes the page scroll sideways. `clip` is not a scroll container: the menu stays
+    // sticky. Every tunable reaches the CSS from one object (src/lib/plan-background/config.ts).
+    <div className="overflow-x-clip" style={planBackgroundVars()}>
+      <div className="mx-auto w-full max-w-6xl px-4 pb-24 md:px-8">
+        <Suspense fallback={<PlanFallback locale={locale} />}>
+          <PlanContent searchParams={searchParams} locale={locale} />
+        </Suspense>
+      </div>
     </div>
   );
 }
@@ -111,16 +117,19 @@ async function PlanContent({ searchParams, locale }: LocaleProps) {
           {f(m.search.peopleCount, { count: result.value.pax })}
         </p>
       </header>
-      <Suspense fallback={<PlanHeroSkeleton locale={locale} />}>
-        <PlanHero
-          locale={locale}
-          search={result.value}
-          destination={destination}
-          categories={categories}
-          showEvents={parseShowEvents(params.cats)}
-          budgetCurrency={parseBudgetCurrency(params.cur)}
-        />
-      </Suspense>
+      {/* The hero zone: the hero's atmosphere fills it, behind the hero. */}
+      <div className="relative">
+        <Suspense fallback={<PlanHeroSkeleton locale={locale} />}>
+          <PlanHero
+            locale={locale}
+            search={result.value}
+            destination={destination}
+            categories={categories}
+            showEvents={parseShowEvents(params.cats)}
+            budgetCurrency={parseBudgetCurrency(params.cur)}
+          />
+        </Suspense>
+      </div>
       <PlanNav />
       <PlanSections
         locale={locale}
