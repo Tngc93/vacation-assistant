@@ -92,6 +92,15 @@ Düzeltilenler: bütçe fişinin `<dl>` yapısı ve karusel kartlarının erişi
 
 **PWA (`feat/pwa`, 2026-10-30).** Lighthouse 12'de PWA kategorisi ve `installable-manifest` denetimi yok (12.8.2 ile doğrulandı). Kurulabilirlik Chrome'un kendi kontrolüyle e2e'de sınanır: `e2e/pwa.spec.ts` her dilde `Page.getAppManifest` ve `Page.getInstallabilityErrors`'ın (DevTools Protocol) boş döndüğünü bekler. Aynı build'de tek ölçüm (`next start`, `VA_FLIGHTS_FIXTURES=1`, service worker kayıtlı): ana sayfa masaüstü 100 / 100 / 100 / 100, mobil 88 / 100 / 100 / 100; plan masaüstü 95 / 100 / 100 / 92\*, mobil 82 / 100 / 100 / 92\* (Performance / Accessibility / Best Practices / SEO). Hedeflerin hepsi tutuyor; tek ölçüm olduğu için ±2 puan oynar. Service worker için Vercel'de ayar gerekmez: build adı Vercel'in kendi `VERCEL_GIT_COMMIT_SHA`'sından gelir.
 
+**Ana sayfa arka planı (`feat/home-background`, 2026-11-05).** Rota haritasının ana sayfaya etkisi, aynı makinede üretim build'ine karşı (`next start`, `VA_FLIGHTS_FIXTURES=1`), `npx lighthouse@12`, her satır 3 ölçümün medyanı; "önce" `main` (`589aec8`), "sonra" `feat/home-background`:
+
+| Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobil | 88 → **89** | 100 → **100** | 100 → **100** | 100 → **100** | 3,9 sn → 3,8 sn | 14 ms → 13 ms |
+| Masaüstü | 100 → **100** | 100 → **100** | 100 → **100** | 100 → **100** | 0,77 sn → 0,77 sn | 0 ms → 0 ms |
+
+Harita motoru ve nokta ızgarası ayrı bir chunk'ta (+1 istek, ~8 KB sıkıştırılmış) sayfa yüklendikten ve tarayıcı boşaldıktan sonra gelir; canvas LCP adayı değildir. Lighthouse'un ölçtüğü toplam ana iş parçacığı süresi döngü yüzünden artar (mobil ~0,3 sn → ~0,7 sn), ama 50 ms'yi aşan görev yoktur, TBT değişmez.
+
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
 
 ## 7. Ölçüm (Vercel Web Analytics)
