@@ -3,9 +3,8 @@
 export type LatLon = { lat: number; lon: number };
 export type Point = { x: number; y: number };
 
-/** The latitudes the dot grid covers (src/lib/home/worldDots.ts `WORLD_GRID`). */
+/** The top latitude of the dot grid (src/lib/home/worldDots.ts `WORLD_GRID`). */
 const LAT_TOP = 80;
-const LAT_BOTTOM = -56;
 
 /** Wraps a longitude difference into [-180, 180). */
 export function wrapLon(lon: number): number {
@@ -17,33 +16,27 @@ export type View = {
   height: number;
   /** CSS pixels per degree. */
   scale: number;
-  /** The longitude drawn at the horizontal middle. */
+  /** The anchor longitude, drawn at `anchorX`; longitudes wrap around it. */
   centerLon: number;
+  anchorX: number;
   /** y of latitude `LAT_TOP`. */
   top: number;
 };
 
+/** Where the map is anchored: latitude `lat`, longitude `lon` drawn at `x`, `y` (CSS px), `scale` px per degree. */
+export type Anchor = { lat: number; lon: number; x: number; y: number; scale: number };
+
 /**
- * The map covers the box: the latitude band fills the height (the Americas to India on a desktop screen), or the width
- * on very wide boxes, where it is centred on 35°N. `centerLon` puts Europe right of the hero text on desktop.
- *
- * With `focus` (phones) the map is zoomed to `focus.scale` and `focus.lat` is drawn at `focus.y`: Europe and the
- * Middle East in the free band under the search, where a route can be seen between the words and the form; the paper
- * north of the grid stays empty.
+ * An equirectangular view of the box anchored at one point. The home map anchors Europe right of the hero text on
+ * desktop and in the band under the search on a phone (src/lib/home/config.ts `frame`); what falls outside the box
+ * is simply not drawn.
  */
-export function makeView(width: number, height: number, centerLon: number, focus?: { lat: number; y: number; scale: number }): View {
-  if (focus) {
-    const scale = Math.max(focus.scale, width / 360);
-    return { width, height, scale, centerLon, top: focus.y - (LAT_TOP - focus.lat) * scale };
-  }
-  const scale = Math.max(width / 360, height / (LAT_TOP - LAT_BOTTOM));
-  const mapHeight = (LAT_TOP - LAT_BOTTOM) * scale;
-  const top = Math.min(0, Math.max(height - mapHeight, height / 2 - (LAT_TOP - 35) * scale));
-  return { width, height, scale, centerLon, top };
+export function makeView(width: number, height: number, { lat, lon, x, y, scale }: Anchor): View {
+  return { width, height, scale, centerLon: lon, anchorX: x, top: y - (LAT_TOP - lat) * scale };
 }
 
 export function project(view: View, { lat, lon }: LatLon): Point {
-  return { x: view.width / 2 + wrapLon(lon - view.centerLon) * view.scale, y: view.top + (LAT_TOP - lat) * view.scale };
+  return { x: view.anchorX + wrapLon(lon - view.centerLon) * view.scale, y: view.top + (LAT_TOP - lat) * view.scale };
 }
 
 /** The point is inside the box, `margin` pixels in from every edge. */
@@ -94,7 +87,7 @@ export function projectPath(view: View, path: readonly LatLon[]): Point[] {
     let lon = wrapLon(p.lon - view.centerLon);
     if (i > 0) lon = prevLon + wrapLon(lon - prevLon);
     prevLon = lon;
-    out.push({ x: view.width / 2 + lon * view.scale, y: view.top + (LAT_TOP - p.lat) * view.scale });
+    out.push({ x: view.anchorX + lon * view.scale, y: view.top + (LAT_TOP - p.lat) * view.scale });
   });
   return out;
 }

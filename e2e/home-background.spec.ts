@@ -43,6 +43,56 @@ for (const { name, path, chip, other } of [
   });
 }
 
+/** WCAG relative luminance contrast of two `rgb()` colours. */
+function contrast(a: string, b: string): number {
+  const lum = (c: string) => {
+    const [r, g, bl] = c.match(/[\d.]+/g)!.slice(0, 3).map((v) => {
+      const x = Number(v) / 255;
+      return x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+    });
+    return 0.2126 * r + 0.7152 * g + 0.0722 * bl;
+  };
+  const [hi, lo] = [lum(a), lum(b)].sort((x, y) => y - x);
+  return (hi + 0.05) / (lo + 0.05);
+}
+
+for (const colorScheme of ["light", "dark"] as const) {
+  test(`keeps every word on solid paper over the map, in the ${colorScheme} theme`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme });
+    await page.goto("/");
+    await mapReady(page);
+    // Routes, labels and the pointer's glow all on screen.
+    await page.getByRole("button", { name: "Roma", exact: true }).click();
+    await page.keyboard.press("Escape");
+    // The tagline, the title, the lead and the "Keşfet" label.
+    const scrimmed = page.locator("main .home-scrim");
+    await expect(scrimmed).toHaveCount(4);
+    const words = await scrimmed.all();
+    const title = (await page.getByRole("heading", { level: 1 }).boundingBox())!;
+    await page.mouse.move(title.x + title.width, title.y);
+    await page.waitForTimeout(2500);
+
+    for (const word of words) {
+      const { text, scrim, covers } = await word.evaluate((el) => {
+        const before = getComputedStyle(el, "::before");
+        return {
+          text: getComputedStyle(el).color,
+          scrim: before.backgroundColor,
+          covers: ["top", "right", "bottom", "left"].every((side) => parseFloat(before.getPropertyValue(side)) <= 0),
+        };
+      });
+      expect(covers).toBe(true);
+      expect(contrast(text, scrim)).toBeGreaterThanOrEqual(4.5);
+      // The words look the same with and without the map under them: nothing of it shows through.
+      const withMap = await word.screenshot();
+      await map(page).evaluate((c) => (c.style.visibility = "hidden"));
+      const withoutMap = await word.screenshot();
+      await map(page).evaluate((c) => (c.style.visibility = ""));
+      expect(withMap.equals(withoutMap)).toBe(true);
+    }
+  });
+}
+
 test("is still with reduced motion: no loop, no routes", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");

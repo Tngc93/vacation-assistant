@@ -7,6 +7,7 @@ import { Button, Chip } from "@/components/ui";
 import { cityName, findDestination, DISCOVER_CITY_CODES } from "@/data/destinations";
 import { DEFAULT_ORIGIN, readRememberedOrigin } from "@/data/origins";
 import { useI18n } from "@/i18n/client";
+import { cn } from "@/lib/cn";
 import type { I18n } from "@/i18n/i18n";
 import { setHomeRoute } from "@/lib/home/homeRoute";
 import { MAX_NIGHTS, todayInIstanbul } from "@/lib/search/dates";
@@ -160,9 +161,9 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
         ) : null}
       </form>
 
-      <div className="relative isolate mt-6 flex w-fit max-w-full flex-wrap items-center gap-x-3 gap-y-2">
-        <span aria-hidden="true" className="home-scrim absolute inset-0 -z-10" />
-        <span id={`${titleId}-discover`} className={fieldLabel}>
+      <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
+        {/* The chips are opaque; only the label needs the paper scrim over the home page's map. */}
+        <span id={`${titleId}-discover`} className={cn(fieldLabel, "home-scrim")}>
           {m.search.discover}
         </span>
         <ul aria-labelledby={`${titleId}-discover`} className="flex flex-wrap gap-2">

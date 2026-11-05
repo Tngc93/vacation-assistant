@@ -12,17 +12,13 @@ describe("route map geometry", () => {
     expect(wrapLon(30)).toBe(30);
   });
 
-  it("covers a desktop box with the latitude band and centres the chosen longitude", () => {
-    const view = makeView(1440, 836, -12);
-    expect(view.top).toBe(0);
-    expect(project(view, { lat: 0, lon: -12 }).x).toBe(720);
+  it("draws the anchor where it is asked, at the scale asked", () => {
+    const view = makeView(1440, 836, { lat: 44, lon: 18, x: 1051, y: 250, scale: 10 });
+    expect(project(view, { lat: 44, lon: 18 })).toEqual({ x: 1051, y: 250 });
+    expect(project(view, { lat: 34, lon: 28 })).toEqual({ x: 1151, y: 350 });
     expect(isVisible(view, project(view, IST))).toBe(true);
-    expect(isVisible(view, project(view, NYC))).toBe(true);
-  });
-
-  it("puts the focus latitude where a phone asks", () => {
-    const view = makeView(375, 760, 16, { lat: 46, y: 700, scale: 7 });
-    expect(project(view, { lat: 46, lon: 16 })).toEqual({ x: 187.5, y: 700 });
+    // Tokyo lies far right of a frame on Europe.
+    expect(isVisible(view, project(view, { lat: 35.68, lon: 139.69 }))).toBe(false);
   });
 
   it("follows the great circle from end to end", () => {
@@ -35,7 +31,7 @@ describe("route map geometry", () => {
   });
 
   it("keeps a route across the edge of the view continuous", () => {
-    const view = makeView(1440, 836, 0);
+    const view = makeView(1440, 836, { lat: 0, lon: 0, x: 720, y: 418, scale: 4 });
     const points = projectPath(view, greatCircle({ lat: 35, lon: 170 }, { lat: 35, lon: -170 }, 8));
     for (let i = 1; i < points.length; i++) expect(Math.abs(points[i].x - points[i - 1].x)).toBeLessThan(40);
   });

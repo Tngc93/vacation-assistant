@@ -3,12 +3,13 @@
  * each one has come at a given moment. Pure and deterministic (a seeded sequence picks the ambient cities), so the
  * timing is tested with plain numbers instead of animation frames; the canvas only draws what this says.
  */
+import { HOME_MAP } from "./config";
 import { angularDistance, clamp01, easeInOut, greatCircle, type LatLon } from "./geo";
 
 export type Place = LatLon & { code: string };
 
 /**
- * `ambient`: drawn, held a moment, faded. `selected`: the city chosen in "Nereye"; stays as a thin line while it is
+ * `ambient`: drawn, held a moment, faded. `selected`: the city chosen in "Nereye"; stays, labelled, while it is
  * chosen. `preview`: a "Keşfet" chip under the pointer or the focus; fades when it leaves.
  */
 export type RouteKind = "ambient" | "selected" | "preview";
@@ -24,24 +25,13 @@ export type Route = {
   leaving?: number;
 };
 
-export const TIMING = {
-  /** Drawing a route: 2.5 s for a short hop up to 4 s for a long haul, ease-in-out. */
-  minDrawMs: 2500,
-  maxDrawMs: 4000,
-  /** An ambient route stays drawn this long before it fades. */
-  holdMs: 1200,
-  fadeMs: 1200,
-  /** The accent dot at the head goes out after arrival. */
-  tipFadeMs: 700,
-  /** Pause between two ambient routes. */
-  gapMinMs: 1400,
-  gapMaxMs: 3000,
-} as const;
+/** Timing of the routes: src/lib/home/config.ts `timing`. */
+export const TIMING = HOME_MAP.timing;
 
 export type Scene = {
   origin: Place;
   routes: Route[];
-  /** At most this many routes at once (3 on desktop, 1 on phones), chosen and previewed ones included. */
+  /** At most this many routes at once (config `routes.max`), chosen and previewed ones included. */
   maxRoutes: number;
   nextSpawnAt: number;
   /** State of the seeded sequence. */
@@ -62,7 +52,7 @@ function random(scene: Scene): number {
 
 export function createScene(origin: Place, { maxRoutes, now, seed = 20261105 }: { maxRoutes: number; now: number; seed?: number }): Scene {
   // The first ambient route starts soon after the map appears.
-  return { origin, routes: [], maxRoutes, nextSpawnAt: now + 600, seed, recent: [], nextId: 1 };
+  return { origin, routes: [], maxRoutes, nextSpawnAt: now + TIMING.firstMs, seed, recent: [], nextId: 1 };
 }
 
 function drawMsFor(from: LatLon, to: LatLon): number {
@@ -91,8 +81,15 @@ export type RouteLook = {
   /** Opacity of the line and of the head dot (0–1), before the kind's own opacity. */
   line: number;
   tip: number;
-  /** 0 while drawing, rising to 1 once arrived: a chosen route settles into a thin line. */
+  /** 0 while drawing, rising to 1 as the head goes out after arrival. */
   settled: number;
+  /** The ring opening from the city on arrival: 0–1 through it, null outside it. */
+  pulse: number | null;
+  /**
+   * Opacity of the city's code beside it (0–1): an ambient route shows it for a moment on arrival; a chosen or
+   * previewed one keeps it (with the origin's) while it stays.
+   */
+  label: number;
 };
 
 export function routeLook(route: Route, now: number): RouteLook {
@@ -104,7 +101,18 @@ export function routeLook(route: Route, now: number): RouteLook {
     line: fade,
     tip: (arrivedFor <= 0 ? 1 : 1 - clamp01(arrivedFor / TIMING.tipFadeMs)) * fade,
     settled: clamp01(arrivedFor / TIMING.tipFadeMs),
+    pulse: arrivedFor >= 0 && arrivedFor < LOOK.pulseMs ? arrivedFor / LOOK.pulseMs : null,
+    label: labelOpacity(route, arrivedFor) * fade,
   };
+}
+
+const LOOK = HOME_MAP.routes;
+
+function labelOpacity(route: Route, arrivedFor: number): number {
+  if (arrivedFor < 0) return 0;
+  const shown = clamp01(arrivedFor / LOOK.labelFadeMs);
+  if (route.kind !== "ambient") return shown;
+  return Math.min(shown, 1 - clamp01((arrivedFor - LOOK.labelMs) / LOOK.labelFadeMs));
 }
 
 export type Wanted = { selected: string | null; preview: string | null };

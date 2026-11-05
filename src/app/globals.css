@@ -330,17 +330,23 @@ body::before {
 }
 
 /*
- * Home page scrim (DESIGN.md "Home background"): plain paper under the hero's words, fading out around them, so
- * the route map never sits under text and the words keep the contrast they have on paper. Solid over the element's
- * own box; the shadow's spread and blur only soften the edge.
+ * Home page scrim (DESIGN.md "Home background"): put on each line of the hero's words (tagline, title, lead,
+ * "Keşfet" label), plain paper under the element's own box, fading out around it, so the route map never sits under
+ * text and the words keep the contrast they have on paper. Solid over the box; the shadow only softens the edge.
  */
 .home-scrim {
-  background: var(--paper);
-  box-shadow: 0 0 20px 10px var(--paper);
+  position: relative;
+  isolation: isolate;
+  width: fit-content;
 }
 
-@media (min-width: 48rem) {
-  .home-scrim {
-    box-shadow: 0 0 40px 28px var(--paper);
-  }
+.home-scrim::before {
+  content: "";
+  position: absolute;
+  inset: -0.25rem -0.5rem;
+  z-index: -1;
+  border-radius: 1rem;
+  background: var(--paper);
+  box-shadow: 0 0 16px 8px var(--paper);
+  pointer-events: none;
 }

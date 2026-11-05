@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { HOME_MAP } from "./config";
 import { ISTANBUL } from "./origin";
 import { TIMING, createScene, isGone, priorityCode, routeLook, setWanted, stepScene, type Place } from "./routes";
 
@@ -11,7 +12,8 @@ const PLACES: Place[] = [
 const MAP = new Map(PLACES.map((p) => [p.code, p]));
 
 describe("home route scene", () => {
-  it("starts an ambient route after a short pause and draws it in 2.5–4 s", () => {
+  it("starts an ambient route after a short pause and draws it in 3–5 s", () => {
+    expect([TIMING.minDrawMs, TIMING.maxDrawMs]).toEqual([3000, 5000]);
     const scene = createScene(ISTANBUL, { maxRoutes: 3, now: 0 });
     stepScene(scene, 100, PLACES);
     expect(scene.routes).toHaveLength(0);
@@ -34,6 +36,22 @@ describe("home route scene", () => {
     expect(routeLook(route, arrived + TIMING.tipFadeMs).tip).toBe(0);
     expect(routeLook(route, arrived + TIMING.holdMs).line).toBe(1);
     expect(isGone(route, arrived + TIMING.holdMs + TIMING.fadeMs)).toBe(true);
+  });
+
+  it("rings the city on arrival and shows its code for a moment", () => {
+    const scene = createScene(ISTANBUL, { maxRoutes: 1, now: 0 });
+    stepScene(scene, 600, PLACES);
+    const [route] = scene.routes;
+    const arrived = route.start + route.drawMs;
+    expect(routeLook(route, arrived - 1)).toMatchObject({ pulse: null, label: 0 });
+    expect(routeLook(route, arrived).pulse).toBe(0);
+    expect(routeLook(route, arrived + HOME_MAP.routes.pulseMs / 2).pulse).toBeCloseTo(0.5);
+    expect(routeLook(route, arrived + HOME_MAP.routes.pulseMs).pulse).toBeNull();
+    // The code fades in, stays 1–2 s and goes out, before the route itself fades.
+    expect(HOME_MAP.routes.labelMs).toBeGreaterThanOrEqual(1000);
+    expect(HOME_MAP.routes.labelMs).toBeLessThanOrEqual(2000);
+    expect(routeLook(route, arrived + HOME_MAP.routes.labelFadeMs).label).toBe(1);
+    expect(routeLook(route, arrived + HOME_MAP.routes.labelMs + HOME_MAP.routes.labelFadeMs).label).toBe(0);
   });
 
   it("never shows more routes than allowed", () => {
@@ -63,10 +81,9 @@ describe("home route scene", () => {
     expect(priorityCode(scene)).toBe("PAR");
     const route = scene.routes.find((r) => r.code === "PAR")!;
     expect(route.kind).toBe("selected");
-    // Long after drawing it is still there, settled into a thin line.
+    // Long after drawing it is still there, whole, with its code.
     expect(isGone(route, 60_000)).toBe(false);
-    expect(routeLook(route, 60_000).settled).toBe(1);
-    expect(routeLook(route, 60_000).line).toBe(1);
+    expect(routeLook(route, 60_000)).toMatchObject({ line: 1, progress: 1, label: 1 });
 
     setWanted(scene, { selected: null, preview: null }, MAP, 61_000);
     expect(priorityCode(scene)).toBeNull();

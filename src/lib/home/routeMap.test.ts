@@ -1,6 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { setHomeRoute } from "./homeRoute";
-import { startRouteMap, type RouteMapEnv, type RouteMapHandle } from "./routeMap";
+import { HOME_MAP } from "./config";
+import { project } from "./geo";
+import { frameView, isLightColor, startRouteMap, type RouteMapEnv, type RouteMapHandle } from "./routeMap";
 
 /** A 2D context that accepts every call and draws nothing (jsdom has no canvas). */
 function fakeContext(calls: Record<string, unknown> = {}): CanvasRenderingContext2D {
@@ -15,6 +17,10 @@ function fakeContext(calls: Record<string, unknown> = {}): CanvasRenderingContex
 
 type Harness = {
   env: RouteMapEnv;
+  /** The opacity of each fill of the still layer (land dots, then the destinations). */
+  baseFills: number[];
+  /** Every text drawn on the visible canvas. */
+  texts: string[];
   frames: Map<number, (now: number) => void>;
   /** Each paint of the visible canvas starts with the dot layer. */
   paints: ReturnType<typeof vi.fn>;
@@ -35,7 +41,11 @@ function harness({ reducedMotion = false, saveData = false } = {}): Harness {
   });
   const cancelFrame = vi.fn((h: number) => frames.delete(h));
   const paints = vi.fn();
-  const main = fakeContext({ drawImage: paints });
+  const texts: string[] = [];
+  const main = fakeContext({ drawImage: paints, measureText: () => ({ width: 20 }), fillText: (t: string) => texts.push(t) });
+  const baseFills: number[] = [];
+  const baseCalls: Record<string, unknown> = {};
+  const base = fakeContext(Object.assign(baseCalls, { fill: () => baseFills.push(baseCalls.globalAlpha as number) }));
   const env: RouteMapEnv = {
     requestFrame,
     cancelFrame,
@@ -46,7 +56,7 @@ function harness({ reducedMotion = false, saveData = false } = {}): Harness {
       removeEventListener: () => {},
     }),
     saveData: () => saveData,
-    context: (c) => (c === canvas ? main : fakeContext()),
+    context: (c) => (c === canvas ? main : base),
     observeIntersection: (_, onChange) => {
       onIntersection = onChange;
       return () => {};
@@ -55,6 +65,8 @@ function harness({ reducedMotion = false, saveData = false } = {}): Harness {
   };
   return {
     env,
+    baseFills,
+    texts,
     frames,
     paints,
     requestFrame,
@@ -86,6 +98,7 @@ afterEach(() => {
   handle = undefined;
   document.body.innerHTML = "";
   Object.defineProperty(document, "hidden", { configurable: true, value: false });
+  document.documentElement.style.removeProperty("--ink");
 });
 
 describe("home route map loop", () => {
@@ -99,6 +112,19 @@ describe("home route map loop", () => {
     setHomeRoute({ selected: "PAR" });
     expect(canvas.dataset.route).toBeUndefined();
     expect(h.requestFrame).not.toHaveBeenCalled();
+  });
+
+  it("still draws the map and the 68 destinations, at the theme's opacity", () => {
+    document.documentElement.style.setProperty("--ink", "#16181d");
+    let h = harness({ reducedMotion: true });
+    handle = startRouteMap(canvas, h.env);
+    expect(h.baseFills).toEqual([HOME_MAP.dots.opacityLight, HOME_MAP.cities.opacityLight]);
+    handle.stop();
+
+    document.documentElement.style.setProperty("--ink", "#ede7dc");
+    h = harness({ reducedMotion: true });
+    handle = startRouteMap(canvas, h.env);
+    expect(h.baseFills).toEqual([HOME_MAP.dots.opacityDark, HOME_MAP.cities.opacityDark]);
   });
 
   it("stays still with a data saver", () => {
@@ -161,6 +187,17 @@ describe("home route map loop", () => {
     expect(canvas.dataset.route).toBeUndefined();
   });
 
+  it("keeps the chosen route labelled with the origin's code and the city's", () => {
+    const h = harness();
+    handle = startRouteMap(canvas, h.env);
+    setHomeRoute({ selected: "ROM" });
+    h.runFrames(HOME_MAP.timing.maxDrawMs + 1000);
+    expect(h.texts).toEqual(expect.arrayContaining(["ROM", "IST"]));
+    h.texts.length = 0;
+    h.runFrames(60_000);
+    expect(h.texts).toEqual(expect.arrayContaining(["ROM", "IST"]));
+  });
+
   it("picks up a city chosen before the map loaded", () => {
     setHomeRoute({ selected: "ROM" });
     handle = startRouteMap(canvas, harness().env);
@@ -174,5 +211,47 @@ describe("home route map loop", () => {
     expect(h.frames.size).toBe(0);
     setHomeRoute({ selected: "PAR" });
     expect(canvas.dataset.route).toBeUndefined();
+  });
+});
+
+describe("home route map frame", () => {
+  it("puts Europe, the Middle East and North Africa right of the hero text on desktop", () => {
+    const { view, narrow } = frameView(1440, 836);
+    expect(narrow).toBe(false);
+    for (const [lat, lon] of [
+      [41.01, 28.96], // İstanbul
+      [41.9, 12.5], // Rome
+      [51.5, -0.1], // London
+      [30.0, 31.2], // Cairo
+      [35.7, 51.4], // Tehran
+    ]) {
+      const p = project(view, { lat, lon });
+      expect(p.x).toBeGreaterThan(720);
+      expect(p.x).toBeLessThan(1440);
+      expect(p.y).toBeGreaterThan(0);
+    }
+    // Tokyo lies outside: its route leaves the box.
+    expect(project(view, { lat: 35.7, lon: 139.7 }).x).toBeGreaterThan(1440);
+  });
+
+  it("puts the same region in the band under the search on a phone", () => {
+    const { view, narrow } = frameView(375, 1200);
+    expect(narrow).toBe(true);
+    for (const [lat, lon] of [
+      [41.01, 28.96],
+      [41.9, 12.5],
+    ]) {
+      const p = project(view, { lat, lon });
+      expect(p.x).toBeGreaterThan(0);
+      expect(p.x).toBeLessThan(375);
+      expect(p.y).toBeGreaterThan(1200 - 176);
+    }
+  });
+
+  it("tells a dark theme by its light ink", () => {
+    expect(isLightColor("#ede7dc")).toBe(true);
+    expect(isLightColor("#16181d")).toBe(false);
+    expect(isLightColor("rgb(237, 231, 220)")).toBe(true);
+    expect(isLightColor("currentColor")).toBe(false);
   });
 });
