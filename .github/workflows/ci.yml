@@ -83,3 +83,11 @@ jobs:
       - run: npm run test:e2e
         env:
           NEXT_TELEMETRY_DISABLED: 1
+      # A failing e2e run leaves its attachments (screenshots, diffs) for `gh run download`.
+      - name: Upload e2e results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-results
+          path: test-results/
+          retention-days: 7

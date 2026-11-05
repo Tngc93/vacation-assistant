@@ -56,8 +56,45 @@ function contrast(a: string, b: string): number {
   return (hi + 0.05) / (lo + 0.05);
 }
 
+/** Where two same-sized PNG screenshots differ, decoded in the page (no image package): count, box, largest change. */
+async function pixelDiff(page: Page, a: Buffer, b: Buffer) {
+  return page.evaluate(
+    async ([a64, b64]) => {
+      const read = async (src: string) => {
+        const img = new Image();
+        img.src = `data:image/png;base64,${src}`;
+        await img.decode();
+        const c = document.createElement("canvas");
+        c.width = img.width;
+        c.height = img.height;
+        const ctx = c.getContext("2d")!;
+        ctx.drawImage(img, 0, 0);
+        return ctx.getImageData(0, 0, c.width, c.height);
+      };
+      const [x, y] = [await read(a64), await read(b64)];
+      if (x.width !== y.width || x.height !== y.height) return { size: `${x.width}x${x.height} vs ${y.width}x${y.height}` };
+      let count = 0;
+      let max = 0;
+      let box = [Infinity, Infinity, -1, -1];
+      const samples: string[] = [];
+      for (let i = 0; i < x.data.length; i += 4) {
+        const d = Math.max(...[0, 1, 2, 3].map((k) => Math.abs(x.data[i + k] - y.data[i + k])));
+        if (!d) continue;
+        count++;
+        max = Math.max(max, d);
+        const px = (i / 4) % x.width;
+        const py = Math.floor(i / 4 / x.width);
+        box = [Math.min(box[0], px), Math.min(box[1], py), Math.max(box[2], px), Math.max(box[3], py)];
+        if (samples.length < 6) samples.push(`(${px},${py}) ${x.data.slice(i, i + 4).join("/")} vs ${y.data.slice(i, i + 4).join("/")}`);
+      }
+      return { size: `${x.width}x${x.height}`, count, max, box, samples };
+    },
+    [a.toString("base64"), b.toString("base64")],
+  );
+}
+
 for (const colorScheme of ["light", "dark"] as const) {
-  test(`keeps every word on solid paper over the map, in the ${colorScheme} theme`, async ({ page }) => {
+  test(`keeps every word on solid paper over the map, in the ${colorScheme} theme`, async ({ page }, testInfo) => {
     await page.emulateMedia({ colorScheme });
     await page.goto("/");
     await mapReady(page);
@@ -88,7 +125,12 @@ for (const colorScheme of ["light", "dark"] as const) {
       await map(page).evaluate((c) => (c.style.visibility = "hidden"));
       const withoutMap = await word.screenshot();
       await map(page).evaluate((c) => (c.style.visibility = ""));
-      expect(withMap.equals(withoutMap)).toBe(true);
+      if (!withMap.equals(withoutMap)) {
+        const name = (await word.textContent())?.slice(0, 24);
+        await testInfo.attach(`${name} with map`, { body: withMap, contentType: "image/png" });
+        await testInfo.attach(`${name} without map`, { body: withoutMap, contentType: "image/png" });
+        expect(await pixelDiff(page, withMap, withoutMap), `"${name}" differs with the map under it`).toEqual({});
+      }
     }
   });
 }
