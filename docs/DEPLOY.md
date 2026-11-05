@@ -119,6 +119,15 @@ Toplam ana iş parçacığı süresi mobilde ~0,59 sn → ~0,64 sn (daha çok no
 
 En büyük boyama öğesi değişmedi (masaüstünde şehir fotoğrafı, telefonda ilk kartın fotoğrafı): atmosfer ikinci bir `<img>` değil, masthead fotoğrafının yüklendikten sonra kopyalandığı 64 px'lik bir canvas (yeni istek yok, LCP adayı değil). Mobil 81–82 ölçümler arası oynuyor (önce 78/82/82, sonra 81/81/81); hedef (≥80) tutuyor.
 
+**Plan arka planı, düzeltme (aynı branch, 2026-11-05).** Örtüler kalktı, atmosfer sağ üste maskelendi, 256 px canvas şehrin tritone'uyla piksel piksel boyanıyor. Aynı koşullarda, 3 ölçümün medyanı; "önce" yukarıdaki `main`:
+
+| Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobil | 82 → **81** | 100 → **100** | 100 → **100** | 92 → 92* | 4,9 sn → 4,8 sn | 78 ms → 102 ms |
+| Masaüstü | 96 → **96** | 100 → **100** | 100 → **100** | 92 → 92* | 1,36 sn → 1,42 sn | 0 ms → 0 ms |
+
+LCP öğesi yine aynı. Mobilde TBT ~25 ms arttı (fotoğraf yüklenince 256 × ~170 pikselin boyanması, Lighthouse'un 4× yavaşlatılmış işlemcisinde); hedefler (masaüstü ≥95, mobil ≥80) tutuyor.
+
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
 
 ## 7. Ölçüm (Vercel Web Analytics)
