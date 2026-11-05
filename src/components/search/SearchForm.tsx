@@ -2,12 +2,13 @@
 
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useId, useRef, useState, type FormEvent } from "react";
+import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { Button, Chip } from "@/components/ui";
 import { cityName, findDestination, DISCOVER_CITY_CODES } from "@/data/destinations";
 import { DEFAULT_ORIGIN, readRememberedOrigin } from "@/data/origins";
 import { useI18n } from "@/i18n/client";
 import type { I18n } from "@/i18n/i18n";
+import { setHomeRoute } from "@/lib/home/homeRoute";
 import { MAX_NIGHTS, todayInIstanbul } from "@/lib/search/dates";
 import {
   DEFAULT_PASSENGERS,
@@ -61,6 +62,12 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
   });
   const [errors, setErrors] = useState<Errors>(() => toErrors(initialIssues));
   const [submitting, setSubmitting] = useState(false);
+
+  // The home page's route map draws a route to the chosen city (src/lib/home/homeRoute.ts); nothing else reads it.
+  useEffect(() => {
+    setHomeRoute({ selected: to ?? null });
+  }, [to]);
+  useEffect(() => () => setHomeRoute({ selected: null, preview: null }), []);
 
   const clearError = (...fields: SearchField[]) =>
     setErrors((current) => {
@@ -153,7 +160,8 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
         ) : null}
       </form>
 
-      <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
+      <div className="relative isolate mt-6 flex w-fit max-w-full flex-wrap items-center gap-x-3 gap-y-2">
+        <span aria-hidden="true" className="home-scrim absolute inset-0 -z-10" />
         <span id={`${titleId}-discover`} className={fieldLabel}>
           {m.search.discover}
         </span>
@@ -164,6 +172,11 @@ export function SearchForm({ initial, initialIssues = [], today }: SearchFormPro
               <li key={code}>
                 <Chip
                   selected={to === code}
+                  // A chip under the pointer or the focus previews its route on the home page's map.
+                  onPointerEnter={() => setHomeRoute({ preview: code })}
+                  onPointerLeave={() => setHomeRoute({ preview: null })}
+                  onFocus={() => setHomeRoute({ preview: code })}
+                  onBlur={() => setHomeRoute({ preview: null })}
                   onClick={() => {
                     chooseCity(code);
                     datesRef.current?.open();

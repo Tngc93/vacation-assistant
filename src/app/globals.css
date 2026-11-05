@@ -328,3 +328,19 @@ body::before {
     transition-duration: 0.01ms !important;
   }
 }
+
+/*
+ * Home page scrim (DESIGN.md "Home background"): plain paper under the hero's words, fading out around them, so
+ * the route map never sits under text and the words keep the contrast they have on paper. Solid over the element's
+ * own box; the shadow's spread and blur only soften the edge.
+ */
+.home-scrim {
+  background: var(--paper);
+  box-shadow: 0 0 20px 10px var(--paper);
+}
+
+@media (min-width: 48rem) {
+  .home-scrim {
+    box-shadow: 0 0 40px 28px var(--paper);
+  }
+}
