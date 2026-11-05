@@ -224,36 +224,42 @@ function contrast(a: string, b: string): number {
   return (hi + 0.05) / (lo + 0.05);
 }
 
-/** Where two same-sized PNG screenshots differ, decoded in the page (no image package). */
-async function pixelDiff(page: Page, a: Buffer, b: Buffer) {
+/**
+ * The lowest WCAG contrast between a text colour and any pixel of a PNG screenshot, decoded in the page (no image
+ * package), with where it is.
+ */
+async function lowestContrast(page: Page, png: Buffer, text: string) {
   return page.evaluate(
-    async ([a64, b64]) => {
-      const read = async (src: string) => {
-        const img = new Image();
-        img.src = `data:image/png;base64,${src}`;
-        await img.decode();
-        const c = document.createElement("canvas");
-        c.width = img.width;
-        c.height = img.height;
-        const ctx = c.getContext("2d")!;
-        ctx.drawImage(img, 0, 0);
-        return ctx.getImageData(0, 0, c.width, c.height);
+    async ([b64, colour]) => {
+      const img = new Image();
+      img.src = `data:image/png;base64,${b64}`;
+      await img.decode();
+      const c = document.createElement("canvas");
+      c.width = img.width;
+      c.height = img.height;
+      const ctx = c.getContext("2d")!;
+      ctx.drawImage(img, 0, 0);
+      const { data } = ctx.getImageData(0, 0, c.width, c.height);
+      const lin = (v: number) => {
+        const x = v / 255;
+        return x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
       };
-      const [x, y] = [await read(a64), await read(b64)];
-      if (x.width !== y.width || x.height !== y.height) return { size: `${x.width}x${x.height} vs ${y.width}x${y.height}` };
-      let count = 0;
-      let max = 0;
-      const samples: string[] = [];
-      for (let i = 0; i < x.data.length; i += 4) {
-        const d = Math.max(...[0, 1, 2, 3].map((k) => Math.abs(x.data[i + k] - y.data[i + k])));
-        if (!d) continue;
-        count++;
-        max = Math.max(max, d);
-        if (samples.length < 6) samples.push(`(${(i / 4) % x.width},${Math.floor(i / 4 / x.width)}) ${x.data.slice(i, i + 4).join("/")} vs ${y.data.slice(i, i + 4).join("/")}`);
+      const lum = (r: number, g: number, b: number) => 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+      const [tr, tg, tb] = colour.match(/[\d.]+/g)!.map(Number);
+      const t = lum(tr, tg, tb);
+      let min = Infinity;
+      let at = "";
+      for (let i = 0; i < data.length; i += 4) {
+        const l = lum(data[i], data[i + 1], data[i + 2]);
+        const ratio = (Math.max(l, t) + 0.05) / (Math.min(l, t) + 0.05);
+        if (ratio < min) {
+          min = ratio;
+          at = `(${(i / 4) % c.width},${Math.floor(i / 4 / c.width)}) ${data.slice(i, i + 3).join("/")}`;
+        }
       }
-      return { size: `${x.width}x${x.height}`, count, max, samples };
+      return { min, at };
     },
-    [a.toString("base64"), b.toString("base64")],
+    [png.toString("base64"), text] as const,
   );
 }
 
@@ -261,66 +267,109 @@ async function pixelDiff(page: Page, a: Buffer, b: Buffer) {
 const ownBackground = (el: Locator) => el.evaluate((e) => getComputedStyle(e).backgroundColor);
 const opaque = (colour: string) => /^rgb\(/.test(colour) || /^rgba\(.*,\s*1\)$/.test(colour);
 
+/**
+ * Every bit of text over the atmosphere: the strip's codes, the country, the city, the info line (each of its
+ * parts), the in-town line, the photo credit, the carousel's counter and the data line. Leaves only: an element
+ * with its own text, outside the opaque cards, chips, buttons and the map.
+ */
+async function wordsOverTheAtmosphere(page: Page) {
+  const count = await page.evaluate(() => {
+    const roots = [document.querySelector("[data-route-strip]"), document.querySelector("#yerler")].filter(Boolean) as Element[];
+    const opaqueParts = "button, [role=region], [role=list], [role=group], [role=dialog]";
+    let n = 0;
+    for (const root of roots) {
+      for (const el of root.querySelectorAll<HTMLElement>("*")) {
+        if (el.closest(opaqueParts)) continue;
+        const own = [...el.childNodes].some((node) => node.nodeType === Node.TEXT_NODE && node.textContent!.trim());
+        if (!own || el.getBoundingClientRect().width === 0) continue;
+        el.setAttribute("data-contrast-probe", String(n++));
+      }
+    }
+    return n;
+  });
+  return Array.from({ length: count }, (_, i) => page.locator(`[data-contrast-probe="${i}"]`));
+}
+
 for (const colorScheme of ["light", "dark"] as const) {
-  test(`keeps every word of the hero readable over the atmosphere, in the ${colorScheme} theme`, async ({ page }, testInfo) => {
+  for (const [width, height] of [
+    [1440, 900],
+    [375, 812],
+  ] as const) {
+    test(`every word of the hero keeps AA over the atmosphere, without scrims, ${colorScheme} theme at ${width}px`, async ({ page }, testInfo) => {
+      await page.setViewportSize({ width, height });
+      await page.emulateMedia({ colorScheme, reducedMotion: "reduce" });
+      // The hardest photo there is: pure black and white, so the tritone's two ends both sit somewhere under the words.
+      await servePhotos(page);
+      await page.goto(plan("BCN"));
+      await heroReady(page);
+      await expect(backdrop(page)).toHaveAttribute("data-state", "photo");
+      await expect(page.locator(".plan-scrim")).toHaveCount(0);
+
+      const words = await wordsOverTheAtmosphere(page);
+      expect(words.length).toBeGreaterThanOrEqual(8);
+      const colours = await Promise.all(words.map((w) => w.evaluate((el) => [el.textContent!.trim().slice(0, 24), getComputedStyle(el).color] as const)));
+      // Measured behind the glyphs: each word made transparent, so the screenshot is only what lies under it.
+      await page.addStyleTag({ content: "[data-route-strip] *, #yerler * { color: transparent !important; text-decoration-color: transparent !important; }" });
+      for (const [i, word] of words.entries()) {
+        const [name, colour] = colours[i];
+        if (!(await word.isVisible())) continue;
+        await word.scrollIntoViewIfNeeded();
+        // Only where the text is: each line box of its own text, not the empty rest of a wide block.
+        const lines = await word.evaluate((el) =>
+          [...el.childNodes]
+            .filter((node) => node.nodeType === Node.TEXT_NODE && node.textContent!.trim())
+            .flatMap((node) => {
+              const range = document.createRange();
+              range.selectNodeContents(node);
+              return [...range.getClientRects()].map((r) => ({ x: r.x, y: r.y, width: r.width, height: r.height }));
+            })
+            .filter((r) => r.width >= 1 && r.height >= 1),
+        );
+        for (const clip of lines) {
+          const shot = await page.screenshot({ clip });
+          const { min, at } = await lowestContrast(page, shot, colour);
+          if (min < 4.5) await testInfo.attach(`${name} (${colorScheme}, ${width}px)`, { body: shot, contentType: "image/png" });
+          expect(min, `"${name}" in ${colour}: lowest ${min.toFixed(2)} at ${at}`).toBeGreaterThanOrEqual(4.5);
+        }
+      }
+    });
+  }
+
+  test(`chips, cards, arrows, the photo card and the map paint their own surface, ${colorScheme} theme`, async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.emulateMedia({ colorScheme, reducedMotion: "reduce" });
     await servePhotos(page);
     await page.goto(plan("BCN"));
     await heroReady(page);
-    await expect(backdrop(page)).toHaveAttribute("data-state", "photo");
-
-    // Words over the atmosphere sit on paper scrims: the country, the city, the info line, the photo credit, the
-    // carousel's counter, the data line and the strip's codes.
-    const scrimmed = page.locator("main .plan-scrim");
-    expect(await scrimmed.count()).toBeGreaterThanOrEqual(8);
-    const words = await scrimmed.all();
-    for (const word of words) {
-      const { name, text, scrim, covers } = await word.evaluate((el) => {
-        const before = getComputedStyle(el, "::before");
-        return {
-          name: el.textContent?.trim().slice(0, 24),
-          text: getComputedStyle(el).color,
-          scrim: before.backgroundColor,
-          covers: ["top", "right", "bottom", "left"].every((side) => parseFloat(before.getPropertyValue(side)) <= 0),
-        };
-      });
-      expect(covers, `"${name}": its scrim covers it`).toBe(true);
-      expect(contrast(text, scrim), `"${name}": ${text} on ${scrim}`).toBeGreaterThanOrEqual(4.5);
-    }
-
-    // Behind the words, the page looks the same with and without the atmosphere (a black-and-white photo under
-    // them). The glyphs are transparent for this comparison: how text is antialiased depends on the layers under it
-    // (Linux Chromium uses LCD antialiasing on an opaque layer and grayscale over a composited one), which is not
-    // the photo showing. The same paper may round one level apart where a neighbour's scrim edge overlaps it in a
-    // composited layer: at most 2 of 255 per channel is rounding, the photo would show as far more.
-    await page.addStyleTag({ content: ".plan-scrim, .plan-scrim * { color: transparent !important; text-decoration-color: transparent !important; }" });
-    for (const word of words) {
-      const name = (await word.textContent())?.trim().slice(0, 24);
-      const withBackdrop = await word.screenshot();
-      await backdrop(page).evaluate((el) => ((el as HTMLElement).style.visibility = "hidden"));
-      const withoutBackdrop = await word.screenshot();
-      await backdrop(page).evaluate((el) => ((el as HTMLElement).style.visibility = ""));
-      if (withBackdrop.equals(withoutBackdrop)) continue;
-      const diff = await pixelDiff(page, withBackdrop, withoutBackdrop);
-      if ("max" in diff && (diff.max ?? 0) <= 2) continue;
-      await testInfo.attach(`${name} with the atmosphere`, { body: withBackdrop, contentType: "image/png" });
-      await testInfo.attach(`${name} without it`, { body: withoutBackdrop, contentType: "image/png" });
-      expect(diff, `"${name}" differs with the atmosphere under it`).toEqual({});
-    }
-
-    // Chips, carousel cards, the arrows and the map paint their own opaque surface: their contrast is the tokens'.
     const surfaces = [
       ...(await page.getByRole("group", { name: "Mekân kategorileri" }).getByRole("button").all()),
       ...(await page.getByRole("list", { name: "Görülecek yerler" }).getByRole("button").all()).slice(0, 3),
       page.getByRole("button", { name: "Sonraki yer" }),
       page.getByRole("region", { name: "Mekân haritası" }),
+      page.locator("#yerler figure"),
     ];
     for (const surface of surfaces) {
       const background = await ownBackground(surface);
-      expect(opaque(background), `${await surface.getAttribute("aria-label") ?? await surface.textContent()}: ${background}`).toBe(true);
+      expect(opaque(background), `${(await surface.getAttribute("aria-label")) ?? (await surface.textContent())}: ${background}`).toBe(true);
       const text = await surface.evaluate((el) => getComputedStyle(el).color);
       expect(contrast(text, background)).toBeGreaterThanOrEqual(4.5);
     }
   });
 }
+
+test("the tone follows the photo: a warm photo takes the accent, a cool or grey one the sea", async ({ page }) => {
+  await servePhotos(page);
+  await page.goto(plan("BCN"));
+  await heroReady(page);
+  // The test photo is black and white: no colour, so cool.
+  await expect(backdrop(page)).toHaveAttribute("data-tone", "cool");
+});
+
+test("the atmosphere is strongest at the top right and almost paper behind the words on the left", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await servePhotos(page);
+  await page.goto(plan("BCN"));
+  await heroReady(page);
+  const mask = await backdrop(page).evaluate((el) => getComputedStyle(el).maskImage);
+  expect(mask).toMatch(/linear-gradient\(to right, rgba\(0, 0, 0, 0\.05\) 58%, rgb\(0, 0, 0\) 85%\)/);
+});
