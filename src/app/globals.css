@@ -431,6 +431,31 @@ body::before {
   );
 }
 
+/*
+ * Graticule: faint parallels and meridians of `--ink`, only in the gaps between the plan's sections, full width and
+ * aligned from one gap to the next (meridians centred on the page), fading at the gap's edges.
+ */
+.plan-graticule {
+  --pg-line: color-mix(in srgb, var(--ink) var(--pg-opacity), transparent);
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  width: 100vw;
+  translate: -50% 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), var(--pg-line) 0 calc(50% + 0.5px), transparent 0),
+    linear-gradient(to right, var(--pg-line) 1px, transparent 0);
+  background-size:
+    100% 100%,
+    var(--pg-spacing) 100%;
+  background-repeat: no-repeat, repeat-x;
+  background-position:
+    0 0,
+    50% 0;
+  mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
+}
+
 @keyframes plan-drift {
   from {
     transform: scale(1) translate(0, 0);
