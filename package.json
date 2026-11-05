@@ -23,7 +23,8 @@
     "verify:place-links": "tsx scripts/verify-place-links.mts",
     "data:origins": "tsx scripts/fetch-origins.mts",
     "data:airlines": "tsx scripts/fetch-airlines.mts",
-    "icons": "tsx scripts/generate-icons.mts"
+    "icons": "tsx scripts/generate-icons.mts",
+    "data:world-dots": "tsx scripts/fetch-world-dots.mts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

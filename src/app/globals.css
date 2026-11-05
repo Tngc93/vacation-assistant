@@ -328,3 +328,25 @@ body::before {
     transition-duration: 0.01ms !important;
   }
 }
+
+/*
+ * Home page scrim (DESIGN.md "Home background"): put on each line of the hero's words (tagline, title, lead,
+ * "Keşfet" label), plain paper under the element's own box, fading out around it, so the route map never sits under
+ * text and the words keep the contrast they have on paper. Solid over the box; the shadow only softens the edge.
+ */
+.home-scrim {
+  position: relative;
+  isolation: isolate;
+  width: fit-content;
+}
+
+.home-scrim::before {
+  content: "";
+  position: absolute;
+  inset: -0.25rem -0.5rem;
+  z-index: -1;
+  border-radius: 1rem;
+  background: var(--paper);
+  box-shadow: 0 0 16px 8px var(--paper);
+  pointer-events: none;
+}

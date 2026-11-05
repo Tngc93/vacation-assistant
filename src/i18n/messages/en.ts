@@ -23,6 +23,7 @@ export const en: Messages = {
     wikidata: "Cities, ranking, airline names · CC0",
     ourAirports: "Departure airports · public domain",
     geoNames: "Departure time zones · CC BY 4.0",
+    naturalEarth: "Home page map · public domain",
     commons: "Photos · each under its own licence",
     flights: "Flight prices · cached, estimated",
     rates: "Exchange rates",

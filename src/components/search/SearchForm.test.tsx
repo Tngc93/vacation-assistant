@@ -1,6 +1,7 @@
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { getHomeRoute, setHomeRoute } from "@/lib/home/homeRoute";
 import { SearchForm } from "./SearchForm";
 
 const push = vi.fn();
@@ -95,5 +96,27 @@ describe("SearchForm", () => {
     expect(alert).toHaveTextContent("Gidiş tarihini seç.");
     expect(alert).toHaveTextContent("Dönüş tarihini seç.");
     expect(screen.getByRole("combobox", { name: "Varış şehri" })).toHaveAttribute("aria-invalid", "true");
+  });
+
+  it("tells the home page's route map the chosen city and the chip under the pointer or the focus", async () => {
+    setHomeRoute({ selected: null, preview: null });
+    const user = userEvent.setup();
+    const { unmount } = render(<SearchForm today={TODAY} />);
+    const rome = screen.getByRole("button", { name: "Roma" });
+
+    await user.hover(rome);
+    expect(getHomeRoute().preview).toBe("ROM");
+    await user.unhover(rome);
+    expect(getHomeRoute().preview).toBeNull();
+
+    await user.click(screen.getByRole("combobox", { name: "Varış şehri" }));
+    await user.keyboard("barse{Enter}");
+    expect(getHomeRoute().selected).toBe("BCN");
+
+    await user.click(screen.getByRole("button", { name: "Paris" }));
+    expect(getHomeRoute().selected).toBe("PAR");
+
+    unmount();
+    expect(getHomeRoute()).toEqual({ selected: null, preview: null });
   });
 });
