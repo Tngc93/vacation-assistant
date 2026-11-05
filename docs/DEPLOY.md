@@ -101,6 +101,15 @@ Düzeltilenler: bütçe fişinin `<dl>` yapısı ve karusel kartlarının erişi
 
 Harita motoru ve nokta ızgarası ayrı bir chunk'ta (+1 istek, ~8 KB sıkıştırılmış) sayfa yüklendikten ve tarayıcı boşaldıktan sonra gelir; canvas LCP adayı değildir. Lighthouse'un ölçtüğü toplam ana iş parçacığı süresi döngü yüzünden artar (mobil ~0,3 sn → ~0,7 sn), ama 50 ms'yi aşan görev yoktur, TBT değişmez.
 
+**Daha belirgin rota haritası (aynı branch, 2026-11-05).** Avrupa–Orta Doğu–Kuzey Afrika kadrajı, yarım derecelik nokta ızgarası (`world-dots.json` ~33 KB, sıkıştırılmış ~4,5 KB), accent rotalar, iz, varış halkası ve kod etiketleri. Aynı koşullarda, 3 ölçümün medyanı; "önce" bu değişiklikten önceki `feat/home-background` (`089c447`):
+
+| Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobil | 89 → **89** | 100 → **100** | 100 → **100** | 100 → **100** | 3,8 sn → 3,8 sn | 16 ms → 14 ms |
+| Masaüstü | 100 → **100** | 100 → **100** | 100 → **100** | 100 → **100** | 0,77 sn → 0,77 sn | 0 ms → 0 ms |
+
+Toplam ana iş parçacığı süresi mobilde ~0,59 sn → ~0,64 sn (daha çok nokta ve rota); 50 ms'yi aşan görev yok.
+
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
 
 ## 7. Ölçüm (Vercel Web Analytics)
