@@ -9,7 +9,7 @@ export type Position = readonly [number, number];
 /** An outer ring followed by its holes. */
 export type Polygon = readonly (readonly Position[])[];
 
-export const WORLD_DOTS_FILE_VERSION = 1;
+export const WORLD_DOTS_FILE_VERSION = 2;
 
 /** The grid: one cell per `step` degrees, rows from `latMax` southwards, columns from `lonMin` eastwards. */
 export type GridSpec = { lonMin: number; latMax: number; step: number; cols: number; rows: number };
@@ -23,10 +23,11 @@ export type WorldDotsFile = GridSpec & {
 };
 
 /**
- * 1° cells from 80°N to 56°S: Antarctica and the high Arctic carry no destination and would only stretch the
- * equirectangular map.
+ * Half-degree cells from 80°N to 56°S: Antarctica and the high Arctic carry no destination and would only stretch
+ * the equirectangular map. Half a degree gives the zoomed home frame (Europe and the Mediterranean) a dense grid and
+ * readable coasts; `landDots` thins it where the map is drawn smaller. Version 2 (version 1 was a 1° grid).
  */
-export const WORLD_GRID: GridSpec = { lonMin: -180, latMax: 80, step: 1, cols: 360, rows: 136 };
+export const WORLD_GRID: GridSpec = { lonMin: -180, latMax: 80, step: 0.5, cols: 720, rows: 272 };
 
 /** Ray casting; points exactly on an edge may fall either way, which a dot grid never notices. */
 export function pointInRing(lon: number, lat: number, ring: readonly Position[]): boolean {
@@ -114,8 +115,8 @@ export function decodeBits(base64: string, count: number): Uint8Array {
 export type Dot = { lon: number; lat: number; row: number; col: number };
 
 /**
- * The dots of every `every`-th row and column (2 on desktop, 3 on phones: a sparser grid), so the same file serves
- * both densities.
+ * The dots of every `every`-th row and column, so the same file serves every density (src/lib/home/config.ts
+ * `dots.spacingPx`).
  */
 export function landDots(file: Pick<WorldDotsFile, keyof GridSpec | "bits">, every = 1): Dot[] {
   const bits = decodeBits(file.bits, file.rows * file.cols);

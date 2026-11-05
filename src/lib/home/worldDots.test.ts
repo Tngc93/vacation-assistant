@@ -42,7 +42,8 @@ describe("world dots", () => {
     expect(file.version).toBe(WORLD_DOTS_FILE_VERSION);
     expect({ lonMin: file.lonMin, latMax: file.latMax, step: file.step, cols: file.cols, rows: file.rows }).toEqual(WORLD_GRID);
     const bits = decodeBits(file.bits, file.rows * file.cols);
-    const at = (lat: number, lon: number) => bits[Math.floor(file.latMax - lat) * file.cols + Math.floor(lon - file.lonMin)];
+    const at = (lat: number, lon: number) =>
+      bits[Math.floor((file.latMax - lat) / file.step) * file.cols + Math.floor((lon - file.lonMin) / file.step)];
     expect(at(48.9, 2.4)).toBe(1); // Paris
     expect(at(39.9, 32.9)).toBe(1); // Ankara
     expect(at(-15, 25)).toBe(1); // Zambia
@@ -50,11 +51,11 @@ describe("world dots", () => {
     expect(at(0, -140)).toBe(0); // the Pacific
   });
 
-  it("thins the grid for phones", () => {
+  it("thins the grid where the map is drawn smaller", () => {
     const all = landDots(file).length;
     const desktop = landDots(file, 2).length;
     const phone = landDots(file, 3).length;
-    expect(all).toBeGreaterThan(10_000);
+    expect(all).toBeGreaterThan(50_000);
     expect(desktop).toBeLessThan(all / 3);
     expect(phone).toBeLessThan(desktop);
   });

@@ -1,5 +1,5 @@
 /**
- * Writes src/data/world-dots.json: the home page's dot map, a 1° land grid built from Natural Earth's 1:110m land
+ * Writes src/data/world-dots.json: the home page's dot map, a half-degree land grid built from Natural Earth's 1:110m land
  * polygons (public domain); src/lib/home/worldDots.ts. Run with `npm run data:world-dots`; a few seconds.
  */
 import { writeFileSync } from "node:fs";
