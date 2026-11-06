@@ -12,7 +12,7 @@ const trip = `depart=${isoDaysFromNow(30)}&return=${isoDaysFromNow(34)}&pax=2`;
 test("Barcelona: a 5-day plan that follows the budget's flight, with remove, reset and a shareable link", async ({ page, context }) => {
   await page.goto(`/plan?from=IST&to=BCN&${trip}`);
   const plan = page.locator("#gun-gun-plan");
-  await expect(plan.getByText(/^UÇUŞ: /)).toBeVisible();
+  await expect(plan.getByText(/^UÇUŞ:\s/)).toBeVisible();
   await expect(plan.getByRole("region", { name: /\. gün · / })).toHaveCount(5);
 
   const remove = plan.getByRole("button", { name: /durağını plandan çıkar$/ }).first();
