@@ -5,14 +5,16 @@ import { gradientVars, PLAN_BACKGROUND, planBackgroundVars, warmShare } from "./
 const city = (code: string) => DESTINATIONS.find((d) => d.cityCode === code)!;
 
 describe("plan background config", () => {
-  it("keeps the atmosphere low and the motion slow (DESIGN.md: 3–5% over 40–60 s, ~70% fade)", () => {
+  it("keeps the words' column almost paper, phones lighter, and the motion slow (DESIGN.md: 3–5% over 40–60 s)", () => {
     const a = PLAN_BACKGROUND.atmosphere;
-    for (const opacity of [a.opacityLight, a.opacityDark]) expect(opacity).toBeLessThanOrEqual(0.5);
+    for (const opacity of [a.opacityLight, a.opacityDark]) expect(opacity).toBeLessThanOrEqual(0.6);
+    expect(a.leftLevel * a.opacityLight).toBeLessThanOrEqual(0.03);
+    expect(a.narrow.opacityLight).toBeLessThan(a.opacityLight);
+    expect(a.narrow.opacityDark).toBeLessThan(a.opacityDark);
     expect(a.drift.scale).toBeGreaterThanOrEqual(1.03);
     expect(a.drift.scale).toBeLessThanOrEqual(1.05);
     expect(a.drift.seconds).toBeGreaterThanOrEqual(40);
     expect(a.drift.seconds).toBeLessThanOrEqual(60);
-    expect(1 - a.solidShare).toBeCloseTo(0.7, 1);
     expect(PLAN_BACKGROUND.graticule.opacity).toBeGreaterThanOrEqual(0.05);
     expect(PLAN_BACKGROUND.graticule.opacity).toBeLessThanOrEqual(0.08);
   });
