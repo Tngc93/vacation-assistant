@@ -55,7 +55,7 @@ describe("FlightsView", () => {
     expect(within(tk).getByText("TK 1853")).toBeInTheDocument();
     const lh = within(istGroup).getByRole("article", { name: /5\.310 ₺/ });
     expect(within(lh).getByText(/^Lufthansa ·/).textContent).toBe("Lufthansa · LH 1301");
-    expect(within(tk).getByText("1 YETİŞKİN")).toBeInTheDocument();
+    expect(within(tk).getByText("KİŞİ BAŞI")).toBeInTheDocument();
     expect(within(tk).getByText("TAHMİNİ TOPLAM · 2 YOLCU")).toBeInTheDocument();
     expect(within(tk).getByText("14.960 ₺")).toBeInTheDocument();
     expect(within(tk).getByText("ÖNBELLEKTEN · 16 EKİ TARİHİNDE BULUNDU · TAHMİNİ")).toBeInTheDocument();

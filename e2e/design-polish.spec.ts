@@ -295,7 +295,7 @@ test.describe("design decisions", () => {
     await expect(card).toBeVisible();
     const price = card.locator("[data-ticket-price] p").first();
     const caption = card.locator("[data-ticket-price] p").nth(1);
-    await expect(caption).toHaveText(/1\sYETİŞKİN$/);
+    await expect(caption).toHaveText(/KİŞİ\sBAŞI$/);
     const [cardBox, priceBox, captionBox] = await Promise.all([card.boundingBox(), price.boundingBox(), caption.boundingBox()]);
     // The price starts at the card's left padding, not at its right edge.
     expect(priceBox!.x - cardBox!.x).toBeLessThan(32);

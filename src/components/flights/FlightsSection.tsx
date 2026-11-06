@@ -139,8 +139,8 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
                     {formatTRY(ticket.pricePerAdult, locale)}
                   </p>
                   <Caption as="p" tone={cheapest ? "accent" : "muted"}>
-                    {/* The price is per adult whatever the number of people, so the caption says one adult. */}
-                    {keepPartsTogether(cheapest ? m.flights.cheapestAdult : m.flights.adult)}
+                    {/* The price is per person whatever the number of people. */}
+                    {keepPartsTogether(cheapest ? m.flights.cheapestPerPerson : m.flights.perPerson)}
                   </Caption>
                 </div>
                 <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 @md:justify-end">

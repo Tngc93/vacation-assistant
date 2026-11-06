@@ -297,8 +297,9 @@ export const tr = {
     cheapestPerAirport: "Havalimanı başına en ucuz bilet",
     differentDate: " · FARKLI TARİH",
     returnStops: " · DÖNÜŞ {stops}",
-    cheapestAdult: "EN UCUZ · 1 YETİŞKİN",
-    adult: "1 YETİŞKİN",
+    /** The ticket price is per person (the API prices one adult). */
+    cheapestPerPerson: "EN UCUZ · KİŞİ BAŞI",
+    perPerson: "KİŞİ BAŞI",
     seePrice: "Güncel fiyatı gör",
     noCache: "Bu tarihler ve ±3 gün için önbellekte uçuş yok.",
     noCacheWhy: "Önbellek yalnızca son 48 saatte aranan biletleri tutar; bu rotada uçuş olmadığı anlamına gelmez.",

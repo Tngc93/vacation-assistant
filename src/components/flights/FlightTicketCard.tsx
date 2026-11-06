@@ -62,7 +62,7 @@ export function FlightTicketCard({
       stub={
         <div className="flex h-full flex-col gap-3">
           <div>
-            <Caption as="p">{m.flights.adult}</Caption>
+            <Caption as="p">{m.flights.perPerson}</Caption>
             <p className={cn("mt-1 font-mono text-title tabular", mark ? "text-accent" : "text-ink")}>
               {price(ticket.pricePerAdult)}
             </p>

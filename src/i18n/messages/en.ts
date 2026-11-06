@@ -296,8 +296,9 @@ export const en: Messages = {
     cheapestPerAirport: "Cheapest ticket per airport",
     differentDate: " · DIFFERENT DATE",
     returnStops: " · RETURN {stops}",
-    cheapestAdult: "CHEAPEST · 1 ADULT",
-    adult: "1 ADULT",
+    /** The ticket price is per person (the API prices one adult). */
+    cheapestPerPerson: "CHEAPEST · PER PERSON",
+    perPerson: "PER PERSON",
     seePrice: "See the current price",
     noCache: "No cached flights for these dates or ±3 days.",
     noCacheWhy: "The cache keeps only tickets searched in the last 48 hours; it does not mean there are no flights on this route.",
