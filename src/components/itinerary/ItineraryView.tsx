@@ -266,6 +266,7 @@ function tagText(tags: DayTag[], { m }: Pick<Lang, "m">) {
 function Day({
   day,
   selected,
+  mapShown,
   onSelect,
   onRemove,
   onRemoveInside,
@@ -275,6 +276,11 @@ function Day({
 }: {
   day: PlanDay;
   selected: boolean;
+  /**
+   * The day map is on the page (always on wider screens; on phones once opened). Until then no day says
+   * "Haritada gösteriliyor": every day offers "Haritada göster", which opens the map on that day.
+   */
+  mapShown: boolean;
   /** Just changed by the AI panel: marked for a moment. */
   flash?: boolean;
   onSelect: () => void;
@@ -324,10 +330,13 @@ function Day({
           <button
             type="button"
             onClick={onSelect}
-            aria-pressed={selected}
-            className={cn("touch-target text-caption underline-offset-4 print:hidden", selected ? "text-ink" : "text-ink-muted underline hover:text-ink")}
+            aria-pressed={selected && mapShown}
+            className={cn(
+              "touch-target text-caption underline-offset-4 print:hidden",
+              selected && mapShown ? "text-ink" : "text-ink-muted underline hover:text-ink",
+            )}
           >
-            {selected ? m.itinerary.showingOnMap : m.itinerary.showOnMap}
+            {selected && mapShown ? m.itinerary.showingOnMap : m.itinerary.showOnMap}
           </button>
         ) : null}
       </div>
@@ -596,6 +605,7 @@ export function ItineraryView({
                 key={d.number}
                 day={d}
                 selected={d.number === day.number}
+                mapShown={isWide || mapOnPhone}
                 onSelect={() => selectDay(d.number)}
                 onRemove={remove}
                 onRemoveInside={removeInside}

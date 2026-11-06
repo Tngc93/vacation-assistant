@@ -208,6 +208,15 @@ describe("ItineraryView", () => {
     scroll.mockRestore();
   });
 
+  it("on a phone, no day says it is shown on the map until the map is open", async () => {
+    const user = userEvent.setup();
+    renderView();
+    expect(screen.queryByText("Haritada gösteriliyor")).not.toBeInTheDocument();
+    expect(within(day(1)).getByRole("button", { name: "Haritada göster" })).toHaveAttribute("aria-pressed", "false");
+    await user.click(screen.getByRole("button", { name: "Günün haritasını göster" }));
+    expect(within(day(1)).getByRole("button", { name: "Haritada gösteriliyor" })).toHaveAttribute("aria-pressed", "true");
+  });
+
   it("downloads the plan as an .ics file", async () => {
     const user = userEvent.setup();
     const created: Blob[] = [];
