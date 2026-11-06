@@ -1,4 +1,15 @@
-import { expect, test, type Page, type Request } from "./fixtures";
+import { expect, test, type Locator, type Page, type Request } from "./fixtures";
+
+/** A section card's content box (inside its border and padding), where its content is laid out. */
+async function contentBox(locator: Locator) {
+  return locator.evaluate((el) => {
+    const r = el.getBoundingClientRect();
+    const s = getComputedStyle(el);
+    const left = parseFloat(s.borderLeftWidth) + parseFloat(s.paddingLeft);
+    const right = parseFloat(s.borderRightWidth) + parseFloat(s.paddingRight);
+    return { x: r.x + left, width: r.width - left - right };
+  });
+}
 
 // The AI provider is mocked with page.route: no key, no network. The page calls the provider straight from the
 // browser, so the mock sits where api.openai.com would answer.
@@ -82,7 +93,9 @@ test("the plan comes first: the first day is on screen before the AI panel, whic
   // Not modal: the days stay on screen, left of the panel.
   await expect(firstDay).toBeVisible();
   // Measured once the slide-in has settled.
-  await expect.poll(async () => Math.round((await aiPanel(page).boundingBox())!.x)).toBe(Math.round((await page.locator("#gun-gun-plan").boundingBox())!.x + (await page.locator("#gun-gun-plan").boundingBox())!.width - 420));
+  // At the right of the section card's content.
+  const plan = await contentBox(page.locator("#gun-gun-plan"));
+  await expect.poll(async () => Math.round((await aiPanel(page).boundingBox())!.x)).toBe(Math.round(plan.x + plan.width - 420));
   const dayBox = await firstDay.boundingBox();
   const panelBox = await aiPanel(page).boundingBox();
   expect(panelBox!.x).toBeGreaterThanOrEqual(dayBox!.x + dayBox!.width);
@@ -108,7 +121,8 @@ test("on a phone the panel is a full-screen sheet; applying a chat edit closes i
   // Full width under the section title.
   await expect(aiTab(page)).toBeVisible();
   const tabBox = await aiTab(page).boundingBox();
-  expect(Math.round(tabBox!.width)).toBe(375 - 32);
+  // Full width inside the section card.
+  expect(Math.round(tabBox!.width)).toBe(Math.round((await contentBox(page.locator("#gun-gun-plan"))).width));
 
   await openPanel(page);
   const sheet = page.getByRole("dialog", { name: "Yapay zekâ ile planla" });
