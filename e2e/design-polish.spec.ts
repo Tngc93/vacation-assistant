@@ -304,14 +304,26 @@ test.describe("design decisions", () => {
     expect(Math.abs(captionBox!.y + captionBox!.height - (priceBox!.y + priceBox!.height))).toBeLessThan(8);
   });
 
-  test("desktop: the cheapest ticket's price stays at the right, beside the airline", async ({ page }) => {
-    await page.setViewportSize({ width: 1440, height: 900 });
-    await page.goto(plan());
-    const card = page.getByRole("list", { name: "Havalimanı başına en ucuz bilet" }).locator("li").first();
-    await expect(card).toBeVisible();
-    const [cardBox, priceBox] = await Promise.all([card.boundingBox(), card.locator("[data-ticket-price] p").first().boundingBox()]);
-    expect(cardBox!.x + cardBox!.width - (priceBox!.x + priceBox!.width)).toBeLessThan(40);
-  });
+  // The price must not depend on how wide the fonts measure: with the web fonts the airline and the price fit
+  // beside each other by a few pixels, with the wider fallback fonts (before they load, other systems) they don't.
+  for (const fonts of ["web fonts", "fallback fonts"] as const) {
+    test(`desktop: the cheapest ticket's price stays at the right, beside the airline, with ${fonts}`, async ({ page }) => {
+      if (fonts === "fallback fonts") await page.route(/\.woff2?$/, (route) => route.abort());
+      await page.setViewportSize({ width: 1440, height: 900 });
+      await page.goto(plan());
+      for (const card of await page.getByRole("list", { name: "Havalimanı başına en ucuz bilet" }).locator("li").all()) {
+        await expect(card).toBeVisible();
+        const [cardBox, priceBox, airlineBox] = await Promise.all([
+          card.boundingBox(),
+          card.locator("[data-ticket-price] p").first().boundingBox(),
+          card.locator("p.text-body").first().boundingBox(),
+        ]);
+        // At the card's right padding, and beside the airline rather than under it.
+        expect(cardBox!.x + cardBox!.width - (priceBox!.x + priceBox!.width)).toBeLessThan(40);
+        expect(priceBox!.x).toBeGreaterThan(airlineBox!.x + airlineBox!.width);
+      }
+    });
+  }
 
   test("the flights' source line and sample band show once, even with the full list open", async ({ page }) => {
     await page.goto(plan());

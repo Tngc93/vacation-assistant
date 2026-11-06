@@ -113,42 +113,46 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
         {rows.map(({ group, ticket }) => {
           const cheapest = ticket.id === result.cheapestId;
           return (
-            // A container: where the price fits beside the airline it sits on the right; where it drops to its own
-            // row (phones, narrow columns) it starts on the left with its caption beside it, so no half is empty.
+            // The card is a container. From 28rem inside it is two columns: the airline takes what is left and wraps,
+            // the price keeps its own width at the right, whatever the fonts measure (no flex-wrap guess that could drop
+            // the price under the airline, left-aligned, on desktop). Narrower (phones) it is one column: the price
+            // starts on the left with its caption beside it, so no half of the card is empty.
             <li
               key={group.airport}
               data-object-card=""
-              className="@container flex flex-wrap items-end justify-between gap-x-4 gap-y-3 rounded-md border border-rule bg-paper-raised px-5 py-5 md:px-6"
+              className="@container rounded-md border border-rule bg-paper-raised px-5 py-5 md:px-6"
             >
-              <div className="min-w-0">
-                <Caption as="p">
-                  {group.airport} · {airportName(group, i18n)}
-                  {ticket.differentDates ? m.flights.differentDate : ""}
-                </Caption>
-                <p className="mt-1 text-body">
-                  {airlineName(ticket.airline, locale)} · <span className="font-mono tabular">{formatTicketDay(ticket.out.departDate, locale)}</span>
-                </p>
-                <Caption as="p" className="mt-0.5">
-                  {formatStops(ticket.out.stops, i18n)}
-                  {ticket.back ? f(m.flights.returnStops, { stops: formatStops(ticket.back.stops, i18n) }) : ""}
-                </Caption>
-              </div>
-              <div data-ticket-price="" className="w-full @md:w-auto @md:text-right">
-                <div className="flex flex-wrap items-baseline gap-x-3 @md:block">
-                  <p className={cheapest ? "font-mono text-heading tabular text-accent" : "font-mono text-heading tabular"}>
-                    {formatTRY(ticket.pricePerAdult, locale)}
+              <div className="grid gap-x-4 gap-y-3 @md:grid-cols-[minmax(0,1fr)_auto] @md:items-end">
+                <div className="min-w-0">
+                  <Caption as="p">
+                    {group.airport} · {airportName(group, i18n)}
+                    {ticket.differentDates ? m.flights.differentDate : ""}
+                  </Caption>
+                  <p className="mt-1 text-body">
+                    {airlineName(ticket.airline, locale)} · <span className="font-mono tabular">{formatTicketDay(ticket.out.departDate, locale)}</span>
                   </p>
-                  <Caption as="p" tone={cheapest ? "accent" : "muted"}>
-                    {/* The price is per person whatever the number of people. */}
-                    {keepPartsTogether(cheapest ? m.flights.cheapestPerPerson : m.flights.perPerson)}
+                  <Caption as="p" className="mt-0.5">
+                    {formatStops(ticket.out.stops, i18n)}
+                    {ticket.back ? f(m.flights.returnStops, { stops: formatStops(ticket.back.stops, i18n) }) : ""}
                   </Caption>
                 </div>
-                <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 @md:justify-end">
-                  <a href={ticket.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="touch-target inline-flex items-center gap-1 text-caption underline underline-offset-4">
-                    {m.flights.seePrice}
-                    <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
-                  </a>
-                  <AddToBudgetButton flightRef={ticket.ref} inBudget={ticket.ref === budgetRef} />
+                <div data-ticket-price="" className="@md:text-right">
+                  <div className="flex flex-wrap items-baseline gap-x-3 @md:block">
+                    <p className={cheapest ? "font-mono text-heading tabular text-accent" : "font-mono text-heading tabular"}>
+                      {formatTRY(ticket.pricePerAdult, locale)}
+                    </p>
+                    <Caption as="p" tone={cheapest ? "accent" : "muted"}>
+                      {/* The price is per person whatever the number of people. */}
+                      {keepPartsTogether(cheapest ? m.flights.cheapestPerPerson : m.flights.perPerson)}
+                    </Caption>
+                  </div>
+                  <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 @md:justify-end">
+                    <a href={ticket.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="touch-target inline-flex items-center gap-1 text-caption underline underline-offset-4">
+                      {m.flights.seePrice}
+                      <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
+                    </a>
+                    <AddToBudgetButton flightRef={ticket.ref} inBudget={ticket.ref === budgetRef} />
+                  </div>
                 </div>
               </div>
             </li>
