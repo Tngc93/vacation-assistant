@@ -268,22 +268,31 @@ const ownBackground = (el: Locator) => el.evaluate((e) => getComputedStyle(e).ba
 const opaque = (colour: string) => /^rgb\(/.test(colour) || /^rgba\(.*,\s*1\)$/.test(colour);
 
 /**
- * Every bit of text over the atmosphere: the strip's codes, the country, the city, the info line (each of its
- * parts), the in-town line, the photo credit, the carousel's counter and the data line. Leaves only: an element
- * with its own text, outside the opaque cards, chips, buttons and the map.
+ * Every bit of text on the plan page above the footer: over the atmosphere (the strip's codes, the hero's words, the
+ * gaps' coordinates, the menu) and inside the section cards. Leaves only: an element with its own text. Not measured:
+ * buttons, chips and the carousel's cards and map (opaque, token colours, checked below), disabled controls (exempt
+ * from AA) and the maps' own attributions.
  */
-async function wordsOverTheAtmosphere(page: Page) {
+async function wordsOnThePage(page: Page) {
   const count = await page.evaluate(() => {
-    const roots = [document.querySelector("[data-route-strip]"), document.querySelector("#yerler")].filter(Boolean) as Element[];
-    const opaqueParts = "button, [role=region], [role=list], [role=group], [role=dialog]";
+    const skip = [
+      "button",
+      "[role=dialog]",
+      "#yerler [role=region]",
+      "#yerler [role=list]",
+      "#yerler [role=group]",
+      "[aria-disabled=true]",
+      ":disabled",
+      ".maplibregl-map",
+      "svg",
+    ].join(", ");
     let n = 0;
-    for (const root of roots) {
-      for (const el of root.querySelectorAll<HTMLElement>("*")) {
-        if (el.closest(opaqueParts)) continue;
-        const own = [...el.childNodes].some((node) => node.nodeType === Node.TEXT_NODE && node.textContent!.trim());
-        if (!own || el.getBoundingClientRect().width === 0) continue;
-        el.setAttribute("data-contrast-probe", String(n++));
-      }
+    for (const el of document.querySelectorAll<HTMLElement>("main *")) {
+      if (el.closest(skip)) continue;
+      const own = [...el.childNodes].some((node) => node.nodeType === Node.TEXT_NODE && node.textContent!.trim());
+      const box = el.getBoundingClientRect();
+      if (!own || box.width <= 2 || box.height <= 2) continue;
+      el.setAttribute("data-contrast-probe", String(n++));
     }
     return n;
   });
@@ -295,7 +304,8 @@ for (const colorScheme of ["light", "dark"] as const) {
     [1440, 900],
     [375, 812],
   ] as const) {
-    test(`every word of the hero keeps AA over the atmosphere, without scrims, ${colorScheme} theme at ${width}px`, async ({ page }, testInfo) => {
+    test(`every word on the plan keeps AA, over the atmosphere and in the cards, ${colorScheme} theme at ${width}px`, async ({ page }, testInfo) => {
+      test.setTimeout(120_000);
       await page.setViewportSize({ width, height });
       await page.emulateMedia({ colorScheme, reducedMotion: "reduce" });
       // The hardest photo there is: pure black and white, so the tritone's two ends both sit somewhere under the words.
@@ -305,11 +315,13 @@ for (const colorScheme of ["light", "dark"] as const) {
       await expect(backdrop(page)).toHaveAttribute("data-state", "photo");
       await expect(page.locator(".plan-scrim")).toHaveCount(0);
 
-      const words = await wordsOverTheAtmosphere(page);
-      expect(words.length).toBeGreaterThanOrEqual(8);
+      for (const id of ["gun-gun-plan", "konaklama", "ucuslar", "butce"]) await expect(page.locator(`main section#${id}`)).toBeVisible();
+      await expect(page.locator('main [aria-busy="true"]')).toHaveCount(0);
+      const words = await wordsOnThePage(page);
+      expect(words.length).toBeGreaterThanOrEqual(60);
       const colours = await Promise.all(words.map((w) => w.evaluate((el) => [el.textContent!.trim().slice(0, 24), getComputedStyle(el).color] as const)));
       // Measured behind the glyphs: each word made transparent, so the screenshot is only what lies under it.
-      await page.addStyleTag({ content: "[data-route-strip] *, #yerler * { color: transparent !important; text-decoration-color: transparent !important; }" });
+      await page.addStyleTag({ content: "main * { color: transparent !important; text-decoration-color: transparent !important; caret-color: transparent !important; }" });
       for (const [i, word] of words.entries()) {
         const [name, colour] = colours[i];
         if (!(await word.isVisible())) continue;
@@ -335,7 +347,7 @@ for (const colorScheme of ["light", "dark"] as const) {
     });
   }
 
-  test(`chips, cards, arrows, the photo card and the map paint their own surface, ${colorScheme} theme`, async ({ page }) => {
+  test(`chips, cards, arrows, the photo card, the map, the section cards and the menu paint their own surface, ${colorScheme} theme`, async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.emulateMedia({ colorScheme, reducedMotion: "reduce" });
     await servePhotos(page);
@@ -347,6 +359,8 @@ for (const colorScheme of ["light", "dark"] as const) {
       page.getByRole("button", { name: "Sonraki yer" }),
       page.getByRole("region", { name: "Mekân haritası" }),
       page.locator("#yerler figure"),
+      ...(await page.locator("main section[id]:not(#yerler)").all()),
+      page.getByRole("navigation", { name: "Plan bölümleri" }),
     ];
     for (const surface of surfaces) {
       const background = await ownBackground(surface);
@@ -365,11 +379,17 @@ test("the tone follows the photo: a warm photo takes the accent, a cool or grey 
   await expect(backdrop(page)).toHaveAttribute("data-tone", "cool");
 });
 
-test("the atmosphere is strongest at the top right and almost paper behind the words on the left", async ({ page }) => {
+test("the atmosphere is a fixed layer, strongest over the photo and map column, almost paper behind the words", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await servePhotos(page);
   await page.goto(plan("BCN"));
   await heroReady(page);
   const mask = await backdrop(page).evaluate((el) => getComputedStyle(el).maskImage);
-  expect(mask).toMatch(/linear-gradient\(to right, rgba\(0, 0, 0, 0\.05\) 58%, rgb\(0, 0, 0\) 85%\)/);
+  expect(mask).toMatch(/linear-gradient\(to right, rgba\(0, 0, 0, 0\.05\) 58\.5%, rgb\(0, 0, 0\) 72%\)/);
+  // Fixed to the viewport: the same place after a scroll, and it never moves with it.
+  await expect(backdrop(page)).toHaveCSS("position", "fixed");
+  const before = await backdrop(page).boundingBox();
+  await page.mouse.wheel(0, 1500);
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(1000);
+  expect(await backdrop(page).boundingBox()).toEqual(before);
 });
