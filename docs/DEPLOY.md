@@ -137,6 +137,17 @@ LCP öğesi yine aynı. Mobilde TBT ~25 ms arttı (fotoğraf yüklenince 256 × 
 
 LCP öğesi aynı; sabit katman kaydırmada yeniden boyanmaz (kendi compositor katmanında, kayma yalnızca `transform`). Mobil Best Practices 96: "okunur yazı boyutu" denetimi (yazının en az %60'ı ≥12 px) sınırda; 2026-11-06'da `main` de aynı denetimden kalıyor (%59,78 — tarihler kaydıkça plan içeriği değişiyor; küçük yazının çoğu karuseldeki kart açıklamaları ve gün gün plan), branch %57,9. Hedef (≥95) tutuyor; ayrı bir iş olarak bakılabilir.
 
+**Tasarım cilası (`feat/design-polish`, 2026-11-06).** Kart içinde kart yok, telefonda 12 px'ten küçük yazı yok, 44 px dokunma alanları, telefonda daha görünür atmosfer. Aynı makinede üretim build'ine karşı (`next start`, `VA_FLIGHTS_FIXTURES=1`, gerçek Commons görselleri ve kurlar), `npx lighthouse@12`, plan `/plan?to=BCN&depart=2026-12-06&return=2026-12-10`, her satır 3 ölçümün medyanı; "önce" aynı gün derlenmiş `main` (`7a1c626`):
+
+| Sayfa | Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Ana sayfa | Mobil | 89 → **89** | 100 → **100** | 100 → **100** | 100 → **100** | 3,76 sn → 3,76 sn | 15 ms → 14 ms |
+| Ana sayfa | Masaüstü | 100 → **100** | 100 → **100** | 100 → **100** | 100 → **100** | 0,76 sn → 0,76 sn | 0 ms → 0 ms |
+| Plan | Mobil | 81 → **81** | 100 → **100** | 96 → **100** | 92 → 92* | 4,82 sn → 4,88 sn | 97 ms → 81 ms |
+| Plan | Masaüstü | 97 → **95** | 100 → **100** | 100 → **100** | 92 → 92* | 1,31 sn → 1,46 sn | 0 ms → 0 ms |
+
+Mobil Best Practices 100'e döndü: "okunur yazı boyutu" denetimi %58,3'ten %100'e çıktı (telefonda en küçük yazı 12 px). Plan masaüstündeki fark Commons'taki şehir fotoğrafının indirilme süresinde (LCP "Load Time" 1,10–1,19 sn → 1,25–1,28 sn; render gecikmesi aynı, ~65 ms); aynı build'de 3 ölçüm daha 96 / 95 / 96 ve LCP 1,36 sn verdi. Hedefler (masaüstü ≥95, mobil ≥80, Best Practices ≥95) tutuyor.
+
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
 
 ## 7. Ölçüm (Vercel Web Analytics)
