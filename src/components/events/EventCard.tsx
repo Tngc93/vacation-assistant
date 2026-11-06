@@ -74,7 +74,7 @@ export function EventCard({
       </Caption>
 
       {event.photo ? (
-        <p className="mt-3 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
+        <p className="mt-3 font-mono text-fine tracking-[0.02em] text-ink-muted">
           {m.city.photo}{" "}
           <a href={event.photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
             {event.photo.author}

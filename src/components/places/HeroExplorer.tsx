@@ -161,8 +161,9 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
       className={cn(
         // Positioned, so it paints over the plan's atmosphere drawn before it (DESIGN.md "Plan background").
         "relative grid scroll-mt-16 grid-cols-1 gap-5 pb-8 pt-3 print:hidden",
-        // Phones: one column, words full width, so the hero is a card over the atmosphere like the sections.
-        "max-md:rounded-md max-md:border max-md:border-rule max-md:bg-paper-raised max-md:px-3 max-md:pb-4 max-md:shadow-ticket",
+        // Phones: one column, words full width, so the hero is a card over the atmosphere like the sections (the same
+        // 16px padding), a band of the atmosphere between it and the route strip.
+        "max-md:mt-6 max-md:rounded-md max-md:border max-md:border-rule max-md:bg-paper-raised max-md:px-4 max-md:pb-4 max-md:pt-4 max-md:shadow-ticket",
         // Wide screens: everything in one viewport under the site header (4rem + its 1px rule) and the route strip.
         "md:h-[calc(100svh-4rem-1px-var(--pr-height,0px))] md:max-h-[60rem] md:min-h-[34rem] md:grid-cols-12 md:grid-rows-[auto_auto_minmax(0,1fr)] md:gap-x-8 md:gap-y-4",
       )}
@@ -202,7 +203,7 @@ export function HeroExplorer({ title, photo, center, timeZone, categories, resul
           </p>
         ) : null}
         {fetchedAt ? (
-          <p className="mt-2 text-[0.6875rem] leading-snug text-ink-muted">
+          <p className="mt-2 text-micro leading-snug text-ink-muted">
             {m.places.dataLine}{" "}
             <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="underline">
               {m.places.osmContributors}

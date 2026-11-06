@@ -107,7 +107,7 @@ export function PlaceCard({ place, category, timeZone, active, ref, onActivate, 
 
       {place.photo ? (
         // The card shows the photo in duotone: CC BY asks us to say it was changed.
-        <p className="mt-3 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
+        <p className="mt-3 font-mono text-fine tracking-[0.02em] text-ink-muted">
           {m.city.photo}{" "}
           <a href={place.photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
             {place.photo.author}
