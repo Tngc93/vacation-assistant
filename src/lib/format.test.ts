@@ -42,6 +42,7 @@ describe("keepPartsTogether", () => {
   it("breaks a caption only between its parts", () => {
     expect(keepPartsTogether("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ")).toBe(`4${nb}GECE · 6${nb}ARA${nb}PAZ${nb}→${nb}10${nb}ARA${nb}PER · 1${nb}KİŞİ`);
     expect(keepPartsTogether("TAM GÜN")).toBe(`TAM${nb}GÜN`);
+    expect(keepPartsTogether("SERBEST ZAMAN · 17:10–19:05")).toBe(`SERBEST${nb}ZAMAN · 17:10\u2060–\u206019:05`);
   });
 
   it("leaves a part too long for a narrow phone free to wrap", () => {

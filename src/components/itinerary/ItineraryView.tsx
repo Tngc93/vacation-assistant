@@ -252,7 +252,7 @@ function FreeTime({ free }: { free: { start: string; end: string } }) {
       </p>
       <div className="border-l border-dashed border-rule pl-4">
         <Caption as="p">
-          {f(m.itinerary.freeTime, free)}
+          {keepPartsTogether(f(m.itinerary.freeTime, free))}
         </Caption>
       </div>
     </li>
@@ -292,8 +292,9 @@ function Day({
       aria-label={f(m.itinerary.dayLabel, { number: day.number, date: dayLabel(day.date, i18n) })}
       data-changed={flash || undefined}
       className={cn(
-        "-mx-3 break-inside-avoid rounded-md border-t border-rule px-3 pt-6 transition-colors duration-700 ease-out first:border-t-0 first:pt-0",
-        flash ? "bg-paper-raised ring-1 ring-accent" : "ring-0 ring-transparent",
+        "-mx-3 break-inside-avoid border-t border-rule px-3 pt-6 transition-colors duration-700 ease-out first:border-t-0 first:pt-0",
+        // Corners only while the changed day is marked: a plain rule between the days otherwise, with square ends.
+        flash ? "rounded-md bg-paper-raised ring-1 ring-accent" : "ring-0 ring-transparent",
       )}
     >
       <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">

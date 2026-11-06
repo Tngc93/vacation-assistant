@@ -150,7 +150,7 @@ describe("ItineraryView", () => {
     expect(within(day(1)).getByRole("link", { name: "Daha uygun saatli uçuşlara bak" })).toHaveAttribute("href", "#ucuslar");
     expect(within(day(5)).getByText("Bu uçuşla dönüş kalkışı 06:55'te; son gün havalimanına geçiş için.")).toBeInTheDocument();
     const withSight = screen.getByText("Sight 0-0").closest("section")!;
-    expect(within(withSight).getByText(/^SERBEST ZAMAN · \d{2}:\d{2}–\d{2}:\d{2}$/)).toBeInTheDocument();
+    expect(within(withSight).getByText(/^SERBEST ZAMAN · \d{2}:\d{2}\u2060?–\u2060?\d{2}:\d{2}$/)).toBeInTheDocument();
     expect(within(day(3)).queryByRole("link", { name: "Daha uygun saatli uçuşlara bak" })).not.toBeInTheDocument();
   });
 

@@ -77,11 +77,12 @@ const LONGEST_KEPT_PART = 24;
 /**
  * A mono caption of " · "-separated parts ("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ") that may break only between
  * its parts, never inside one ("1 / KİŞİ"): the spaces inside each part become no-break spaces. A part too long for
- * a narrow phone keeps its spaces, so nothing ever overflows. One text node, so it reads and matches as before.
+ * a narrow phone keeps its spaces, so nothing ever overflows; a time range never breaks at its dash. One text node, so it reads and matches as before.
  */
 export function keepPartsTogether(text: string): string {
   return text
     .split(" · ")
-    .map((part) => (part.length <= LONGEST_KEPT_PART ? part.replace(/ /g, "\u00a0") : part))
+    // No-break spaces inside a part, and word joiners around a range's dash ("17:10–19:05" breaks after "–" otherwise).
+    .map((part) => (part.length <= LONGEST_KEPT_PART ? part.replace(/ /g, "\u00a0").replace(/(\d)–(\d)/g, "$1\u2060–\u2060$2") : part))
     .join(" · ");
 }
