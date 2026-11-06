@@ -145,7 +145,7 @@ function WebOfferCard({ offer, adults, rates, inBudget }: { offer: FlightOffer; 
       stub={
         <div className="flex h-full flex-col gap-3">
           <div>
-            <Caption as="p">{t.adultEstimated}</Caption>
+            <Caption as="p">{t.perPersonEstimated}</Caption>
             <p className="mt-1 font-mono text-title tabular text-ink">
               {offer.tryPerAdult === null ? "—" : formatMoney(shown(offer.tryPerAdult), cur, locale)}
             </p>

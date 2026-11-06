@@ -79,7 +79,7 @@ describe("FlightsView", () => {
     expect(list).toHaveAttribute("open");
     expect(within(list).getByText("DÖNÜŞ · 18 Kas Çar")).toBeVisible();
     expect(within(list).getByText("6.150 ₺")).toBeVisible();
-    expect(within(list).getByText("1 YETİŞKİN · TOPLAM 12.300 ₺")).toBeVisible();
+    expect(within(list).getByText("KİŞİ BAŞI · TOPLAM 12.300 ₺")).toBeVisible();
     expect(within(list).getByRole("link", { name: /Güncel fiyatı gör/ })).toHaveAttribute(
       "href",
       "https://www.aviasales.com/search/IST1411BCN18112?marker=4242",

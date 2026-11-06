@@ -329,7 +329,7 @@ export const tr = {
     back: "DÖNÜŞ",
     otherReturns: "Diğer dönüş saatleri ({count})",
     backOn: "DÖNÜŞ · {date}",
-    adultTotal: "1 YETİŞKİN · TOPLAM {total}",
+    perPersonTotal: "KİŞİ BAŞI · TOPLAM {total}",
     airports: { IST: "İstanbul Havalimanı", SAW: "Sabiha Gökçen", ESB: "Esenboğa" },
   },
   stays: {
@@ -489,7 +489,7 @@ export const tr = {
       note: "Model web'de arar; yalnızca bulduğu sayfaya linklenebilen fiyatları gösteririz. Satın alma o sitede.",
       search: "Web'de ara",
       offerLabel: "{title}, web'de bulunan fiyat",
-      adultEstimated: "1 YETİŞKİN · TAHMİNİ",
+      perPersonEstimated: "KİŞİ BAŞI · TAHMİNİ",
       noRate: "{currency} KURU ALINAMADI · {budget} KARŞILIĞI YOK",
       rateSources: "KUR: {sources}",
       total: "TAHMİNİ TOPLAM · {count} YOLCU",

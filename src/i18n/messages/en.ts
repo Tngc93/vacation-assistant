@@ -328,7 +328,7 @@ export const en: Messages = {
     back: "RETURN",
     otherReturns: "Other return times ({count})",
     backOn: "RETURN · {date}",
-    adultTotal: "1 ADULT · TOTAL {total}",
+    perPersonTotal: "PER PERSON · TOTAL {total}",
     airports: { IST: "Istanbul Airport", SAW: "Sabiha Gökçen", ESB: "Esenboğa" },
   },
   stays: {
@@ -488,7 +488,7 @@ export const en: Messages = {
       note: "The model searches the web; we show only prices it can link to the page it found them on. You buy on that site.",
       search: "Search the web",
       offerLabel: "{title}, price found on the web",
-      adultEstimated: "1 ADULT · ESTIMATED",
+      perPersonEstimated: "PER PERSON · ESTIMATED",
       noRate: "NO {currency} RATE · NO {budget} AMOUNT",
       rateSources: "RATE: {sources}",
       total: "ESTIMATED TOTAL · {count, plural, one {# PASSENGER} other {# PASSENGERS}}",

@@ -142,7 +142,7 @@ function OtherReturns({ tickets, budgetRef, locale }: { tickets: FlightTicket[];
               </div>
               <div className="text-right">
                 <p className="font-mono text-body tabular">{formatTRY(t.pricePerAdult, locale)}</p>
-                <Caption as="p">{f(m.flights.adultTotal, { total: formatTRY(t.totalPrice, locale) })}</Caption>
+                <Caption as="p">{f(m.flights.perPersonTotal, { total: formatTRY(t.totalPrice, locale) })}</Caption>
                 <a href={t.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="mt-1 inline-flex items-center gap-1 text-caption underline underline-offset-4">
                   {m.flights.seePrice}
                   <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />

@@ -95,7 +95,7 @@ describe("flight prices from the model's web search", () => {
     expect(within(cards[0]).getByText(/Sitedeki fiyat: 410 EUR · 2 yolcu toplam/)).toBeInTheDocument();
     expect(within(cards[0]).getByText("KUR: TCMB")).toBeInTheDocument();
     expect(within(cards[1]).getByText("9.000 ₺")).toBeInTheDocument();
-    expect(screen.getAllByText("1 YETİŞKİN · TAHMİNİ")).toHaveLength(2);
+    expect(screen.getAllByText("KİŞİ BAŞI · TAHMİNİ")).toHaveLength(2);
     expect(screen.queryByText("EN UCUZ")).toBeNull();
     const link = within(cards[1]).getByRole("link", { name: /Sitede gör · flypgs\.com/ });
     // The page from the provider's own list, always visible and clickable.
