@@ -80,7 +80,7 @@ export function ThemeToggle({ className }: { className?: string }) {
             title={label}
             onClick={() => select(value)}
             className={cn(
-              "inline-flex size-8 items-center justify-center rounded-sm transition-colors duration-150 ease-out",
+              "touch-target inline-flex size-8 items-center justify-center rounded-sm transition-colors duration-150 ease-out",
               pressed ? "bg-ink text-paper-raised" : "text-ink-muted hover:text-ink",
             )}
           >

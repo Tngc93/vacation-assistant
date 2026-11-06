@@ -13,7 +13,7 @@ export type PassengerStepperProps = {
 };
 
 const stepButton =
-  "inline-flex size-9 items-center justify-center rounded-sm border border-rule text-ink " +
+  "touch-target inline-flex size-9 items-center justify-center rounded-sm border border-rule text-ink " +
   "transition-colors duration-150 ease-out hover:border-ink disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:border-rule";
 
 /** The number of people (1–9): passengers on the flight and guests at the stay. */

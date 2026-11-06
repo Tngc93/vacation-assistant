@@ -24,7 +24,7 @@ export function AddToBudgetButton({ flightRef, inBudget, className }: { flightRe
       aria-pressed={inBudget}
       aria-busy={pending}
       className={cn(
-        "inline-flex items-center gap-1 text-caption underline-offset-4",
+        "touch-target inline-flex items-center gap-1 text-caption underline-offset-4",
         inBudget ? "text-ink" : "text-ink-muted underline hover:text-ink",
         className,
       )}

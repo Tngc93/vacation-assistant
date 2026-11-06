@@ -5,7 +5,7 @@ export type ButtonVariant = "primary" | "secondary" | "ghost";
 export type ButtonSize = "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-sm font-sans font-medium " +
+  "touch-target inline-flex items-center justify-center gap-2 rounded-sm font-sans font-medium " +
   "transition-[background-color,color,border-color,opacity] duration-200 ease-out " +
   "disabled:cursor-not-allowed disabled:opacity-50";
 

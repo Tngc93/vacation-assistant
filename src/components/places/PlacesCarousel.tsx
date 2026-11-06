@@ -169,7 +169,7 @@ function ArrowButton({ label, disabled, onClick, children }: { label: string; di
       aria-label={label}
       aria-disabled={disabled}
       onClick={disabled ? undefined : onClick}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:border-rule"
+      className="touch-target inline-flex h-9 w-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:border-rule"
     >
       {children}
     </button>

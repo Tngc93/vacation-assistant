@@ -41,7 +41,7 @@ export function LanguageSwitch() {
         onPointerEnter={withQuery}
         onFocus={withQuery}
         onClick={onClick}
-        className="inline-flex min-h-8 items-center px-1 text-ink-muted no-underline hover:text-ink sm:px-1.5"
+        className="touch-target inline-flex min-h-8 items-center px-1 text-ink-muted no-underline hover:text-ink sm:px-1.5"
       >
         {target.toUpperCase()}
         <span className="sr-only"> · {m.shell.otherLanguage}</span>
