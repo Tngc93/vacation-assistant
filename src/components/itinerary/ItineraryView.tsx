@@ -11,7 +11,7 @@ import { applyEdits, diffPlans, encodeEdits, encodePinned, pinnedFromPlan, type 
 import { useI18n } from "@/i18n/client";
 import type { I18n } from "@/i18n/i18n";
 import { cn } from "@/lib/cn";
-import { formatDay } from "@/lib/format";
+import { formatDay, keepPartsTogether } from "@/lib/format";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
@@ -195,10 +195,10 @@ function Stop({
           {stop.localName && stop.localName !== stop.name ? <span className="font-normal text-ink-muted"> · {stop.localName}</span> : null}
         </p>
         <Caption as="p" className="mt-0.5">
-          {stop.country ? `${countryName(stop.country, i18n)} · ` : ""}
-          {stop.kind === "evening" ? `${m.itinerary.evening} · ` : ""}
-          {m.categories[stop.category].toLocaleUpperCase(intl)} · {durationText(stop.durationMin, i18n).toLocaleUpperCase(intl)} ·{" "}
-          {m.itinerary.estimatedCaps}
+          {keepPartsTogether(
+            `${stop.country ? `${countryName(stop.country, i18n)} · ` : ""}${stop.kind === "evening" ? `${m.itinerary.evening} · ` : ""}` +
+              `${m.categories[stop.category].toLocaleUpperCase(intl)} · ${durationText(stop.durationMin, i18n).toLocaleUpperCase(intl)} · ${m.itinerary.estimatedCaps}`,
+          )}
         </Caption>
         {stop.farKm !== null ? (
           <Caption as="p" tone="sea" className="mt-0.5">
@@ -537,12 +537,14 @@ export function ItineraryView({
               </Caption>
             ) : plan.basis === "flight" && flight ? (
               <Caption as="p" tone="ink">
-                {f(m.itinerary.flightLine, {
-                  flight: flight.label.toLocaleUpperCase(intl),
-                  arrive: flight.arrive?.time ?? "",
-                  leave: flight.leave?.time ?? "",
-                  city: cityName.toLocaleUpperCase(intl),
-                })}
+                {keepPartsTogether(
+                  f(m.itinerary.flightLine, {
+                    flight: flight.label.toLocaleUpperCase(intl),
+                    arrive: flight.arrive?.time ?? "",
+                    leave: flight.leave?.time ?? "",
+                    city: cityName.toLocaleUpperCase(intl),
+                  }),
+                )}
               </Caption>
             ) : (
               <Caption as="p" tone="warn">

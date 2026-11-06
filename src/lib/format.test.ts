@@ -38,8 +38,13 @@ describe("money in the budget's currency", () => {
 });
 
 describe("keepPartsTogether", () => {
+  const nb = "\u00a0";
   it("breaks a caption only between its parts", () => {
-    expect(keepPartsTogether("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ")).toBe("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ");
-    expect(keepPartsTogether("TAM GÜN")).toBe("TAM GÜN");
+    expect(keepPartsTogether("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ")).toBe(`4${nb}GECE · 6${nb}ARA${nb}PAZ${nb}→${nb}10${nb}ARA${nb}PER · 1${nb}KİŞİ`);
+    expect(keepPartsTogether("TAM GÜN")).toBe(`TAM${nb}GÜN`);
+  });
+
+  it("leaves a part too long for a narrow phone free to wrap", () => {
+    expect(keepPartsTogether("UÇUŞ: SCANDINAVIAN AIRLINES SYSTEM · VARIŞ 12:35")).toBe(`UÇUŞ: SCANDINAVIAN AIRLINES SYSTEM · VARIŞ${nb}12:35`);
   });
 });
