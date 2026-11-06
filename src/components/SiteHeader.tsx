@@ -8,7 +8,7 @@ import { BRAND_NAME } from "@/lib/brand";
 export function SiteHeader({ locale }: { locale: Locale }) {
   const { m } = getI18n(locale);
   return (
-    <header className="border-b border-rule print:hidden">
+    <header className="border-b border-rule bg-paper print:hidden">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 md:px-8">
         <Link href={localePath(locale, "/")} className="font-display text-heading tracking-tight text-ink no-underline">
           {BRAND_NAME}

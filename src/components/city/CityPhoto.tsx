@@ -52,7 +52,7 @@ export function CityPhoto({ photo, cityName, i18n: { m, f } }: { photo: StoredPh
           className="h-full w-full object-cover"
         />
       </div>
-      <figcaption className="px-2.5 py-1.5 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
+      <figcaption className="px-2.5 py-1 font-mono text-[0.625rem] leading-snug tracking-[0.02em] text-ink-muted">
         {m.city.photo}{" "}
         <a href={photo.fileUrl} target="_blank" rel="noopener noreferrer" className="underline">
           {photo.author}

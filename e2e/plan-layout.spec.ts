@@ -1,4 +1,15 @@
-import { expect, test, type Page } from "./fixtures";
+import { expect, test, type Locator, type Page } from "./fixtures";
+
+/** A section card's content box (inside its border and padding), where its content is laid out. */
+async function contentBox(locator: Locator) {
+  return locator.evaluate((el) => {
+    const r = el.getBoundingClientRect();
+    const s = getComputedStyle(el);
+    const left = parseFloat(s.borderLeftWidth) + parseFloat(s.paddingLeft);
+    const right = parseFloat(s.borderRightWidth) + parseFloat(s.paddingRight);
+    return { x: r.x + left, width: r.width - left - right };
+  });
+}
 
 function isoDaysFromNow(days: number): string {
   const date = new Date();
@@ -193,8 +204,8 @@ test("'Tüm uçuşları gör' is closed by default and opens the list and its fi
   const cheapest = page.locator("#ucuslar").getByRole("list", { name: "Havalimanı başına en ucuz bilet" });
   await expect(cheapest).toBeVisible();
 
-  // Under the cheapest tickets, as wide as the section.
-  const section = await page.locator("#ucuslar").boundingBox();
+  // Under the cheapest tickets, as wide as the section card's content.
+  const section = await contentBox(page.locator("#ucuslar"));
   const list = await all.boundingBox();
   const cards = await cheapest.boundingBox();
   expect(Math.abs(list!.width - section!.width)).toBeLessThanOrEqual(1);

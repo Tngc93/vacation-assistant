@@ -128,6 +128,15 @@ En büyük boyama öğesi değişmedi (masaüstünde şehir fotoğrafı, telefon
 
 LCP öğesi yine aynı. Mobilde TBT ~25 ms arttı (fotoğraf yüklenince 256 × ~170 pikselin boyanması, Lighthouse'un 4× yavaşlatılmış işlemcisinde); hedefler (masaüstü ≥95, mobil ≥80) tutuyor.
 
+**Plan arka planı, sabit atmosfer ve bölüm kartları (aynı branch, 2026-11-06).** Atmosfer tam sayfa sabit katman, bölümler kart. Aynı koşullarda, 3 ölçümün medyanı; "önce" yukarıdaki `main` ölçümü (2026-11-05):
+
+| Cihaz | Performance | Accessibility | Best Practices | SEO | LCP | TBT |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobil | 82 → **81** | 100 → **100** | 100 → **96** | 92 → 92* | 4,9 sn → 4,9 sn | 78 ms → 94 ms |
+| Masaüstü | 96 → **96** | 100 → **100** | 100 → **100** | 92 → 92* | 1,36 sn → 1,32 sn | 0 ms → 0 ms |
+
+LCP öğesi aynı; sabit katman kaydırmada yeniden boyanmaz (kendi compositor katmanında, kayma yalnızca `transform`). Mobil Best Practices 96: "okunur yazı boyutu" denetimi (yazının en az %60'ı ≥12 px) sınırda; 2026-11-06'da `main` de aynı denetimden kalıyor (%59,78 — tarihler kaydıkça plan içeriği değişiyor; küçük yazının çoğu karuseldeki kart açıklamaları ve gün gün plan), branch %57,9. Hedef (≥95) tutuyor; ayrı bir iş olarak bakılabilir.
+
 Kalan: plan sayfası mobil performansı hedefin (80) hemen üstünde. En büyük boyama ilk kartın Commons fotoğrafı; süresini çoğunlukla Commons CDN'inin cevap süresi belirliyor, ölçümler arasında ±1–2 puan oynuyor.
 
 ## 7. Ölçüm (Vercel Web Analytics)
