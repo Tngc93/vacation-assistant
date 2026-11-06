@@ -36,7 +36,7 @@ const LINK = "text-ink underline decoration-rule hover:decoration-ink";
 export function SiteFooter({ locale }: { locale: Locale }) {
   const { m } = getI18n(locale);
   return (
-    <footer className="border-t border-rule print:hidden">
+    <footer className="border-t border-rule bg-paper print:hidden">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 md:grid-cols-12 md:gap-8 md:px-8 md:py-16">
         <div className="md:col-span-5">
           <p className="font-display text-heading tracking-tight text-ink">{BRAND_NAME}</p>

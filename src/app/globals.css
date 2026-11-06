@@ -355,35 +355,25 @@ body::before {
  * Plan background (DESIGN.md "Plan background"). Every number comes from src/lib/plan-background/config.ts as a
  * custom property (`planBackgroundVars`, set on the plan page's wrapper); tune it there.
  *
- * Atmosphere: the masthead photo, drawn into a canvas in the city's tritone (PlanBackdrop), scaled up full width
- * behind the hero with a light blur, masked so it is strongest at the top right (behind the photo and the map) and
- * almost paper behind the words on the left, fading into the paper downwards; a token gradient without a photo. No
- * scrims: the mask keeps the words' contrast. It sits first in the hero zone and the hero's content is positioned
- * after it, so it paints under everything without a stacking context (the phone map's full-screen dialog must stay
- * above the sticky menu).
+ * Atmosphere: the masthead photo, drawn into a canvas in the city's tritone (PlanBackdrop), a fixed layer behind the
+ * whole plan page (it never moves with the scroll; only its slow Ken Burns drift moves), lightly blurred, masked so it
+ * is strongest over the photo and map column, above it and at the right edge, and almost paper behind the words'
+ * column; a token gradient without a photo. The sections are opaque cards: it shows in the hero and between them.
+ * `z-index: -1` in the root stacking context paints it over the page's own paper (the body's background is the
+ * canvas's) and under everything else, with no stacking context of its own (the phone map's full-screen dialog must
+ * stay above the sticky menu). The site header and footer paint their own paper over it.
  */
 .plan-backdrop {
-  position: absolute;
-  inset-block: 0;
-  left: 50%;
-  width: 100vw;
-  translate: -50% 0;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   overflow: hidden;
   pointer-events: none;
   opacity: var(--pb-opacity-light);
   mask-image:
-    linear-gradient(to bottom, black var(--pb-solid), transparent),
+    linear-gradient(to bottom, black var(--pb-top), rgb(0 0 0 / var(--pb-bottom))),
     linear-gradient(to right, rgb(0 0 0 / var(--pb-left)) var(--pb-ramp-from), black var(--pb-ramp-to));
   mask-composite: intersect;
-}
-
-/* Phones: one column, words full width; only the top right corner, behind the route's end. */
-@media (width < 48rem) {
-  .plan-backdrop {
-    mask-image:
-      linear-gradient(to bottom, black var(--pb-narrow-solid), transparent var(--pb-narrow-fade-end)),
-      linear-gradient(to right, transparent var(--pb-narrow-ramp-from), black var(--pb-narrow-ramp-to));
-  }
 }
 
 :root[data-theme="dark"] .plan-backdrop {
@@ -396,10 +386,30 @@ body::before {
   }
 }
 
+/* Phones: one column, the hero and the sections are cards; lighter, and wider than the corner it was. */
+@media (width < 48rem) {
+  .plan-backdrop {
+    opacity: var(--pb-narrow-opacity-light);
+    mask-image: linear-gradient(to right, rgb(0 0 0 / var(--pb-narrow-left)) var(--pb-narrow-ramp-from), black var(--pb-narrow-ramp-to));
+  }
+
+  :root[data-theme="dark"] .plan-backdrop {
+    opacity: var(--pb-narrow-opacity-dark);
+  }
+}
+
+@media (width < 48rem) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .plan-backdrop {
+    opacity: var(--pb-narrow-opacity-dark);
+  }
+}
+
 .plan-backdrop-layer {
   position: absolute;
   /* Past the edges by twice the blur, so the blur never pulls the paper in at the sides. */
   inset: calc(var(--pb-blur) * -2);
+  /* Its own compositor layer: the drift is a transform, the scroll never repaints it. */
+  will-change: transform;
   transition: opacity var(--pb-fade-in) var(--ease-out);
 }
 
@@ -441,8 +451,9 @@ body::before {
 }
 
 /*
- * Graticule: faint parallels and meridians of `--ink`, only in the gaps between the plan's sections, full width and
- * aligned from one gap to the next (meridians centred on the page), fading at the gap's edges.
+ * Graticule: a faint parallel and meridians of `--ink`, only in the gaps between the plan's section cards, full width
+ * and aligned from one gap to the next (meridians centred on the page, hanging under the parallel), fading at the
+ * gap's edges.
  */
 .plan-graticule {
   --pg-line: color-mix(in srgb, var(--ink) var(--pg-opacity), transparent);
@@ -455,13 +466,14 @@ body::before {
   background-image:
     linear-gradient(to bottom, transparent calc(50% - 0.5px), var(--pg-line) 0 calc(50% + 0.5px), transparent 0),
     linear-gradient(to right, var(--pg-line) 1px, transparent 0);
+  /* The meridians hang from the parallel into the lower half only: the coordinate sits above it, on clear paper. */
   background-size:
     100% 100%,
-    var(--pg-spacing) 100%;
+    var(--pg-spacing) 50%;
   background-repeat: no-repeat, repeat-x;
   background-position:
     0 0,
-    50% 0;
+    50% 100%;
   mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
 }
 

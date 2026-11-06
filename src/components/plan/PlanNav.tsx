@@ -49,7 +49,7 @@ export function PlanNav() {
   }, []);
 
   return (
-    <nav aria-label={m.plan.sectionsNav} className="sticky top-0 z-30 -mx-4 border-b border-rule bg-paper px-4 md:-mx-8 md:px-8 print:hidden">
+    <nav aria-label={m.plan.sectionsNav} className="sticky top-0 z-30 -mx-4 border-b border-rule bg-paper px-4 [box-shadow:0_0_0_100vmax_var(--paper)] [clip-path:inset(0_-100vmax)] md:-mx-8 md:px-8 print:hidden">
       <ul className="flex gap-6 overflow-x-auto [scrollbar-width:none]">
         {PLAN_NAV.map((item) => (
           <li key={item.id} className="shrink-0">
