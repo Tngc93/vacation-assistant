@@ -24,14 +24,16 @@ export const PLAN_BACKGROUND = {
      * Where it shows (a mask over the viewport). Horizontally `leftLevel` of the full strength over the words' column
      * up to `rampFrom` of the width, full from `rampTo` (the photo and map column, above it and the right edge).
      * Vertically full over the top `topShare` of the viewport, easing to `bottomLevel` at its bottom. Phones (one
-     * column; the hero and the sections are cards there): lighter and wider.
+     * column; the hero and the sections are opaque cards there, so it shows only in the band above the top card, in
+     * the gaps between the cards and in the gutters): no vertical fade, `leftLevel` over the gaps' coordinate at the
+     * left (up to `quietRem`), full from `fullAt` of the width to the right edge.
      */
     leftLevel: 0.05,
     rampFrom: 0.585,
     rampTo: 0.72,
     topShare: 0.35,
     bottomLevel: 0.65,
-    narrow: { opacityLight: 0.4, opacityDark: 0.35, leftLevel: 0.08, rampFrom: 0.35, rampTo: 1 },
+    narrow: { opacityLight: 0.56, opacityDark: 0.48, leftLevel: 0.05, quietRem: 6.5, fullAt: 0.6 },
     /** Ken Burns: zoom to this scale and pan this far (share of the box), then back, ease-in-out. */
     drift: { scale: 1.04, panX: -0.015, panY: -0.01, seconds: 50 },
     /** Fade-in once the photo (or its stand-in) is ready. */
@@ -100,8 +102,8 @@ export function planBackgroundVars(): Record<string, string> {
     "--pb-narrow-opacity-light": String(a.narrow.opacityLight),
     "--pb-narrow-opacity-dark": String(a.narrow.opacityDark),
     "--pb-narrow-left": String(a.narrow.leftLevel),
-    "--pb-narrow-ramp-from": `${a.narrow.rampFrom * 100}%`,
-    "--pb-narrow-ramp-to": `${a.narrow.rampTo * 100}%`,
+    "--pb-narrow-quiet": `${a.narrow.quietRem}rem`,
+    "--pb-narrow-full": `${a.narrow.fullAt * 100}%`,
     "--pb-drift-scale": String(a.drift.scale),
     "--pb-drift-x": `${a.drift.panX * 100}%`,
     "--pb-drift-y": `${a.drift.panY * 100}%`,

@@ -50,14 +50,14 @@ export function PlanNav() {
 
   return (
     <nav aria-label={m.plan.sectionsNav} className="sticky top-0 z-30 -mx-4 border-b border-rule bg-paper px-4 [box-shadow:0_0_0_100vmax_var(--paper)] [clip-path:inset(0_-100vmax)] md:-mx-8 md:px-8 print:hidden">
-      <ul className="flex gap-6 overflow-x-auto [scrollbar-width:none]">
+      <ul className="flex gap-4 overflow-x-auto [scrollbar-width:none] sm:gap-6">
         {PLAN_NAV.map((item) => (
           <li key={item.id} className="shrink-0">
             <a
               href={`#${item.id}`}
               aria-current={active === item.id ? "location" : undefined}
               className={cn(
-                "-mb-px inline-block border-b py-3 font-mono text-micro uppercase tracking-[0.08em] no-underline transition-colors duration-150 ease-out",
+                "touch-target -mb-px inline-flex min-h-11 items-center border-b font-mono md:min-h-0 md:py-3 text-micro uppercase tracking-[0.08em] no-underline transition-colors duration-150 ease-out",
                 active === item.id ? "border-ink text-ink" : "border-transparent text-ink-muted hover:text-ink",
               )}
             >

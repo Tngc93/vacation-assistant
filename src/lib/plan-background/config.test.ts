@@ -11,6 +11,10 @@ describe("plan background config", () => {
     expect(a.leftLevel * a.opacityLight).toBeLessThanOrEqual(0.03);
     expect(a.narrow.opacityLight).toBeLessThan(a.opacityLight);
     expect(a.narrow.opacityDark).toBeLessThan(a.opacityDark);
+    // Phones: quiet over the gaps' coordinate at the left, clearly there from the middle to the right edge.
+    expect(a.narrow.leftLevel * a.narrow.opacityLight).toBeLessThanOrEqual(0.03);
+    expect(a.narrow.opacityLight).toBeGreaterThanOrEqual(0.5);
+    expect(a.narrow.fullAt).toBeLessThanOrEqual(0.65);
     expect(a.drift.scale).toBeGreaterThanOrEqual(1.03);
     expect(a.drift.scale).toBeLessThanOrEqual(1.05);
     expect(a.drift.seconds).toBeGreaterThanOrEqual(40);

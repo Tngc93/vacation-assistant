@@ -14,7 +14,15 @@ export const en: Messages = {
     /** The link to the other language, read in that language. */
     otherLanguage: "Türkçe sürüm",
   },
-  theme: { group: "Theme", system: "System theme", light: "Light theme", dark: "Dark theme" },
+  theme: {
+    /** The one theme button: the mode it is in now and the one a press switches to. */
+    toggle: "Theme: {current}. Press for: {next}",
+    /** Read out after a press. */
+    changed: "Theme: {current}",
+    system: "System",
+    light: "Light",
+    dark: "Dark",
+  },
   footer: {
     estimates: "Prices are estimates; check with the provider before you buy.",
     analytics: "Visits are counted without cookies and anonymously (Vercel Web Analytics); your plan is never measured.",
@@ -288,8 +296,9 @@ export const en: Messages = {
     cheapestPerAirport: "Cheapest ticket per airport",
     differentDate: " · DIFFERENT DATE",
     returnStops: " · RETURN {stops}",
-    cheapestAdult: "CHEAPEST · 1 ADULT",
-    adult: "1 ADULT",
+    /** The ticket price is per person (the API prices one adult). */
+    cheapestPerPerson: "CHEAPEST · PER PERSON",
+    perPerson: "PER PERSON",
     seePrice: "See the current price",
     noCache: "No cached flights for these dates or ±3 days.",
     noCacheWhy: "The cache keeps only tickets searched in the last 48 hours; it does not mean there are no flights on this route.",
@@ -319,7 +328,7 @@ export const en: Messages = {
     back: "RETURN",
     otherReturns: "Other return times ({count})",
     backOn: "RETURN · {date}",
-    adultTotal: "1 ADULT · TOTAL {total}",
+    perPersonTotal: "PER PERSON · TOTAL {total}",
     airports: { IST: "Istanbul Airport", SAW: "Sabiha Gökçen", ESB: "Esenboğa" },
   },
   stays: {
@@ -328,10 +337,10 @@ export const en: Messages = {
     webTitle: "Stays · search the web",
     summary: "{nights, plural, one {# NIGHT} other {# NIGHTS}} · {checkIn} → {checkOut} · {people, plural, one {# PERSON} other {# PEOPLE}}",
     noPrice:
-      "There is no free source of hotel prices, so we show none here. Open the search for {city} with your dates filled in and write the nightly price in the Budget section.",
+      "We open hotels in {city} with your dates and number of guests already filled in. Prices aren't shown here: add the nightly rate of the one you like to your budget.",
     booking: "See hotels · Booking",
     googleHotels: "See hotels · Google Hotels",
-    googlePeople: "Google Hotels does not take the number of guests from the link; choose {count} there.",
+    googlePeople: "On Google Hotels, set the guests once on the page: {count, plural, one {#\u00a0guest} other {#\u00a0guests}}.",
   },
   budget: {
     loading: "Loading the budget",
@@ -389,6 +398,8 @@ export const en: Messages = {
     optional: "OPTIONAL",
     open: "Open the AI panel",
     close: "Close the AI panel",
+    /** Read after the AI tab when it has a change to summarise (the accent dot). */
+    newChange: "(new change)",
     tab: "AI",
     settings: "{provider} · {model} · Connection settings",
     keyStaysHere: "Your key stays in this browser and is never sent to our server. Usage is billed to your own account.",
@@ -477,7 +488,7 @@ export const en: Messages = {
       note: "The model searches the web; we show only prices it can link to the page it found them on. You buy on that site.",
       search: "Search the web",
       offerLabel: "{title}, price found on the web",
-      adultEstimated: "1 ADULT · ESTIMATED",
+      perPersonEstimated: "PER PERSON · ESTIMATED",
       noRate: "NO {currency} RATE · NO {budget} AMOUNT",
       rateSources: "RATE: {sources}",
       total: "ESTIMATED TOTAL · {count, plural, one {# PASSENGER} other {# PASSENGERS}}",

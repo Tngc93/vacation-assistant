@@ -128,6 +128,7 @@ export default function ItineraryMap({ stops, center }: { stops: readonly PlanSt
       ref={containerRef}
       role="region"
       aria-label={m.itinerary.dayMap}
+      data-object-card=""
       className="group relative h-80 w-full overflow-hidden rounded-md border border-rule bg-paper-raised md:h-[28rem]"
     >
       <p className="absolute inset-0 hidden items-center justify-center p-6 text-center text-caption text-ink-muted group-data-[failed=true]:flex">

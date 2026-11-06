@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatDay, formatMoney, formatTime, formatTRY } from "./format";
+import { formatDay, formatMoney, formatTime, formatTRY, keepPartsTogether } from "./format";
 
 describe("Turkish formatting", () => {
   it("formats lira with Turkish grouping and the symbol after the amount", () => {
@@ -34,5 +34,18 @@ describe("money in the budget's currency", () => {
     // Turkish grouping and decimal comma whatever the symbol's place.
     expect(formatMoney(124050, "EUR")).toMatch(/1\.240,50/);
     expect(formatMoney(124000, "EUR")).toContain("€");
+  });
+});
+
+describe("keepPartsTogether", () => {
+  const nb = "\u00a0";
+  it("breaks a caption only between its parts", () => {
+    expect(keepPartsTogether("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ")).toBe(`4${nb}GECE · 6${nb}ARA${nb}PAZ${nb}→${nb}10${nb}ARA${nb}PER · 1${nb}KİŞİ`);
+    expect(keepPartsTogether("TAM GÜN")).toBe(`TAM${nb}GÜN`);
+    expect(keepPartsTogether("SERBEST ZAMAN · 17:10–19:05")).toBe(`SERBEST${nb}ZAMAN · 17:10\u2060–\u206019:05`);
+  });
+
+  it("leaves a part too long for a narrow phone free to wrap", () => {
+    expect(keepPartsTogether("UÇUŞ: SCANDINAVIAN AIRLINES SYSTEM · VARIŞ 12:35")).toBe(`UÇUŞ: SCANDINAVIAN AIRLINES SYSTEM · VARIŞ${nb}12:35`);
   });
 });

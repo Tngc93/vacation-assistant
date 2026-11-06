@@ -24,7 +24,8 @@ export function StaysPanel({ controls, links, web, demo }: Props) {
   return (
     <div>
       <div className="flex flex-wrap items-start gap-x-8 gap-y-4">{controls}</div>
-      <div className="mt-6 rounded-md border border-rule bg-paper-raised px-5 py-6 md:px-6">{links}</div>
+      {/* Straight in the section card: no second frame (DESIGN.md "Plan background", section cards). */}
+      <div className="mt-6">{links}</div>
       {connected ? (
         <DisclosureToggle open={open} controls="konaklama-web" onClick={() => setOpen((o) => !o)}>
           {m.stays.webSearch}

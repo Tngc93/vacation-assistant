@@ -7,7 +7,7 @@ import { MAP_ATTRIBUTION } from "@/lib/places/mapStyle";
 export function MapAttribution() {
   const { m } = useI18n();
   return (
-    <p className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl-sm bg-paper-raised/90 px-2 py-0.5 text-[0.6875rem] text-ink-muted">
+    <p className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl-sm bg-paper-raised/90 px-2 py-0.5 text-micro text-ink-muted">
       {MAP_ATTRIBUTION.map((source, index) => (
         <span key={source.href}>
           {index > 0 ? " · " : null}

@@ -40,7 +40,7 @@ export function AiPanel(props: Props) {
   const [settings, setSettings] = useState(false);
 
   return (
-    <section id="yapay-zeka" aria-labelledby="ai-title" className="scroll-mt-6 rounded-md border border-rule bg-paper-raised p-4 md:p-5 print:hidden">
+    <section id="yapay-zeka" aria-labelledby="ai-title" className="scroll-mt-6 print:hidden">
       <div className="flex items-start gap-3">
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-2 gap-y-1 pt-2">
           <Sparkles aria-hidden="true" size={16} strokeWidth={1.5} className="shrink-0" />
@@ -54,7 +54,7 @@ export function AiPanel(props: Props) {
             type="button"
             onClick={props.onClose}
             aria-label={m.ai.close}
-            className="inline-flex size-9 shrink-0 items-center justify-center rounded-sm border border-rule text-ink transition-colors duration-150 ease-out hover:border-ink"
+            className="touch-target inline-flex size-9 shrink-0 items-center justify-center rounded-sm border border-rule text-ink transition-colors duration-150 ease-out hover:border-ink"
           >
             <X aria-hidden="true" size={16} strokeWidth={1.5} />
           </button>
@@ -377,7 +377,7 @@ function ChangeSummary({ change, onUndo, canUndo }: { change: { diff: PlanDiff; 
     ),
   ];
   return (
-    <div className="rounded-sm border border-rule p-3">
+    <div className="border-l-2 border-rule pl-3">
       <Caption as="p">{m.ai.lastChange}</Caption>
       <p className="mt-1 whitespace-pre-line text-caption text-ink">{change.reply}</p>
       {lines.length ? (

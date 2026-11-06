@@ -37,7 +37,8 @@ const dash: Record<Breakpoint, string> = {
 
 /**
  * A paper ticket with a perforated divider: a dashed rule with two
- * half-circle notches cut out of the edges (filled with the page colour).
+ * half-circle notches cut out of the edges, filled with the surface behind the ticket (`--ticket-notch`: the page
+ * colour, or the card's inside a plan section).
  * Notches are clipped with clip-path rather than overflow, so popovers
  * inside the ticket (listbox, calendar) are not cut off.
  */
@@ -45,6 +46,8 @@ export function Ticket({ stub, raised = false, stubBeside = "md", className, chi
   const l = layout[stubBeside];
   return (
     <article
+      // An object, not a frame: the one kind of card that may sit inside a plan section card (DESIGN.md).
+      data-object-card=""
       className={cn(
         "relative flex flex-col rounded-md border border-rule bg-paper-raised text-ink",
         l.row,
@@ -60,13 +63,13 @@ export function Ticket({ stub, raised = false, stubBeside = "md", className, chi
             <span className={cn("absolute inset-x-5 top-0 border-t border-dashed border-rule", dash[stubBeside])} />
             <span
               className={cn(
-                "absolute -left-px top-0 size-5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-rule bg-paper [clip-path:inset(0_0_0_50%)]",
+                "absolute -left-px top-0 size-5 -translate-x-1/2 -translate-y-1/2 rounded-full border border-rule bg-(--ticket-notch,var(--paper)) [clip-path:inset(0_0_0_50%)]",
                 l.start,
               )}
             />
             <span
               className={cn(
-                "absolute -right-px top-0 size-5 translate-x-1/2 -translate-y-1/2 rounded-full border border-rule bg-paper [clip-path:inset(0_50%_0_0)]",
+                "absolute -right-px top-0 size-5 translate-x-1/2 -translate-y-1/2 rounded-full border border-rule bg-(--ticket-notch,var(--paper)) [clip-path:inset(0_50%_0_0)]",
                 l.end,
               )}
             />

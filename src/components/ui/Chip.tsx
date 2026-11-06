@@ -13,7 +13,7 @@ export function Chip({ selected = false, icon, className, children, type = "butt
       type={type}
       aria-pressed={selected}
       className={cn(
-        "inline-flex h-9 items-center gap-1.5 rounded-sm border px-3 text-caption font-medium",
+        "touch-target inline-flex h-9 items-center gap-1.5 rounded-sm border px-3 text-caption font-medium",
         "transition-[background-color,color,border-color] duration-150 ease-out",
         "disabled:cursor-not-allowed disabled:opacity-50",
         selected

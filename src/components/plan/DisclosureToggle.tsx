@@ -12,7 +12,7 @@ export function DisclosureToggle({ open, controls, onClick, children }: { open: 
       aria-expanded={open}
       aria-controls={controls}
       onClick={onClick}
-      className="mt-5 inline-flex items-center gap-1.5 text-caption font-medium text-ink print:hidden"
+      className="touch-target mt-5 inline-flex items-center gap-1.5 text-caption font-medium text-ink print:hidden"
     >
       <ChevronDown aria-hidden="true" size={16} strokeWidth={1.5} className={cn("transition-transform duration-200", open && "rotate-180")} />
       {children}

@@ -24,7 +24,7 @@ test("Istanbul flights are grouped by IST and SAW, with a non-stop filter in the
   // The summary: each airport's cheapest ticket, the overall cheapest marked; the list is closed.
   const summary = page.locator("#ucuslar");
   await expect(summary.getByText(/ÖRNEK VERİ/).first()).toBeVisible();
-  await expect(summary.getByText("EN UCUZ · 1 YETİŞKİN")).toHaveCount(1);
+  await expect(summary.getByText(/^EN\sUCUZ · KİŞİ\sBAŞI$/)).toHaveCount(1);
   await expect(summary.getByRole("link", { name: /Güncel fiyatı gör/ })).toHaveCount(2);
   await expect(page.getByRole("heading", { name: "İstanbul Havalimanı" })).toBeHidden();
   await expect(page.getByRole("button", { name: "Aktarmasız" })).toBeHidden();

@@ -11,7 +11,7 @@ import { applyEdits, diffPlans, encodeEdits, encodePinned, pinnedFromPlan, type 
 import { useI18n } from "@/i18n/client";
 import type { I18n } from "@/i18n/i18n";
 import { cn } from "@/lib/cn";
-import { formatDay } from "@/lib/format";
+import { formatDay, keepPartsTogether } from "@/lib/format";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
@@ -127,13 +127,13 @@ function SourceAndRemove({ stop, onRemove }: { stop: Pick<PlanStop, "name" | "so
   const { m, f } = useI18n();
   return (
     <p className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-caption print:hidden">
-      <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+      <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="touch-target underline underline-offset-4">
         {stop.source}
       </a>
       <button
         type="button"
         onClick={onRemove}
-        className="inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
+        className="touch-target inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
         aria-label={f(m.itinerary.removeLabel, { name: stop.name })}
       >
         <X aria-hidden="true" size={12} strokeWidth={1.5} />
@@ -184,7 +184,7 @@ function Stop({
         <span
           aria-hidden="true"
           className={cn(
-            "absolute -left-[0.6875rem] top-0.5 flex size-5 items-center justify-center rounded-full font-mono text-[0.625rem]",
+            "absolute -left-[0.6875rem] top-0.5 flex size-5 items-center justify-center rounded-full font-mono text-fine leading-none",
             stop.kind === "evening" ? "bg-paper-raised text-ink ring-1 ring-ink" : "bg-ink text-paper-raised",
           )}
         >
@@ -195,10 +195,10 @@ function Stop({
           {stop.localName && stop.localName !== stop.name ? <span className="font-normal text-ink-muted"> · {stop.localName}</span> : null}
         </p>
         <Caption as="p" className="mt-0.5">
-          {stop.country ? `${countryName(stop.country, i18n)} · ` : ""}
-          {stop.kind === "evening" ? `${m.itinerary.evening} · ` : ""}
-          {m.categories[stop.category].toLocaleUpperCase(intl)} · {durationText(stop.durationMin, i18n).toLocaleUpperCase(intl)} ·{" "}
-          {m.itinerary.estimatedCaps}
+          {keepPartsTogether(
+            `${stop.country ? `${countryName(stop.country, i18n)} · ` : ""}${stop.kind === "evening" ? `${m.itinerary.evening} · ` : ""}` +
+              `${m.categories[stop.category].toLocaleUpperCase(intl)} · ${durationText(stop.durationMin, i18n).toLocaleUpperCase(intl)} · ${m.itinerary.estimatedCaps}`,
+          )}
         </Caption>
         {stop.farKm !== null ? (
           <Caption as="p" tone="sea" className="mt-0.5">
@@ -252,7 +252,7 @@ function FreeTime({ free }: { free: { start: string; end: string } }) {
       </p>
       <div className="border-l border-dashed border-rule pl-4">
         <Caption as="p">
-          {f(m.itinerary.freeTime, free)}
+          {keepPartsTogether(f(m.itinerary.freeTime, free))}
         </Caption>
       </div>
     </li>
@@ -266,6 +266,7 @@ function tagText(tags: DayTag[], { m }: Pick<Lang, "m">) {
 function Day({
   day,
   selected,
+  mapShown,
   onSelect,
   onRemove,
   onRemoveInside,
@@ -275,6 +276,11 @@ function Day({
 }: {
   day: PlanDay;
   selected: boolean;
+  /**
+   * The day map is on the page (always on wider screens; on phones once opened). Until then no day says
+   * "Haritada gösteriliyor": every day offers "Haritada göster", which opens the map on that day.
+   */
+  mapShown: boolean;
   /** Just changed by the AI panel: marked for a moment. */
   flash?: boolean;
   onSelect: () => void;
@@ -292,8 +298,9 @@ function Day({
       aria-label={f(m.itinerary.dayLabel, { number: day.number, date: dayLabel(day.date, i18n) })}
       data-changed={flash || undefined}
       className={cn(
-        "-mx-3 break-inside-avoid rounded-md border-t border-rule px-3 pt-6 transition-colors duration-700 ease-out first:border-t-0 first:pt-0",
-        flash ? "bg-paper-raised ring-1 ring-accent" : "ring-0 ring-transparent",
+        "-mx-3 break-inside-avoid border-t border-rule px-3 pt-6 transition-colors duration-700 ease-out first:border-t-0 first:pt-0",
+        // Corners only while the changed day is marked: a plain rule between the days otherwise, with square ends.
+        flash ? "rounded-md bg-paper-raised ring-1 ring-accent" : "ring-0 ring-transparent",
       )}
     >
       <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
@@ -308,7 +315,14 @@ function Day({
             </Caption>
             <Caption as="span" className="mt-0.5 block">
               {tagText(day.tags, i18n)}
-              {day.window ? ` · ${day.window.start}–${day.window.end}` : ""}
+              {day.window ? (
+                <>
+                  {" · "}
+                  <span className="whitespace-nowrap">
+                    {day.window.start}–{day.window.end}
+                  </span>
+                </>
+              ) : null}
             </Caption>
           </span>
         </h3>
@@ -316,10 +330,13 @@ function Day({
           <button
             type="button"
             onClick={onSelect}
-            aria-pressed={selected}
-            className={cn("text-caption underline-offset-4 print:hidden", selected ? "text-ink" : "text-ink-muted underline hover:text-ink")}
+            aria-pressed={selected && mapShown}
+            className={cn(
+              "touch-target text-caption underline-offset-4 print:hidden",
+              selected && mapShown ? "text-ink" : "text-ink-muted underline hover:text-ink",
+            )}
           >
-            {selected ? m.itinerary.showingOnMap : m.itinerary.showOnMap}
+            {selected && mapShown ? m.itinerary.showingOnMap : m.itinerary.showOnMap}
           </button>
         ) : null}
       </div>
@@ -345,7 +362,7 @@ function Day({
         <div className="mt-4">
           <p className="text-body text-ink-muted">{noteText(day.note, i18n)}</p>
           {day.flightNote ? (
-            <a href="#ucuslar" className="mt-1 inline-block text-caption underline underline-offset-4 print:hidden">
+            <a href="#ucuslar" className="touch-target mt-1 inline-block text-caption underline underline-offset-4 print:hidden">
               {m.itinerary.betterFlights}
             </a>
           ) : null}
@@ -520,7 +537,7 @@ export function ItineraryView({
   const sidePanel = drawer.open && isDesktop;
 
   return (
-    <div className={cn(sidePanel && "grid grid-cols-[minmax(0,1fr)_26.25rem] items-start gap-8")}>
+    <div className={cn(sidePanel && "grid grid-cols-[minmax(0,1fr)_28.25rem] items-start gap-8")}>
       <div className="min-w-0">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">
@@ -530,12 +547,14 @@ export function ItineraryView({
               </Caption>
             ) : plan.basis === "flight" && flight ? (
               <Caption as="p" tone="ink">
-                {f(m.itinerary.flightLine, {
-                  flight: flight.label.toLocaleUpperCase(intl),
-                  arrive: flight.arrive?.time ?? "",
-                  leave: flight.leave?.time ?? "",
-                  city: cityName.toLocaleUpperCase(intl),
-                })}
+                {keepPartsTogether(
+                  f(m.itinerary.flightLine, {
+                    flight: flight.label.toLocaleUpperCase(intl),
+                    arrive: flight.arrive?.time ?? "",
+                    leave: flight.leave?.time ?? "",
+                    city: cityName.toLocaleUpperCase(intl),
+                  }),
+                )}
               </Caption>
             ) : (
               <Caption as="p" tone="warn">
@@ -586,6 +605,7 @@ export function ItineraryView({
                 key={d.number}
                 day={d}
                 selected={d.number === day.number}
+                mapShown={isWide || mapOnPhone}
                 onSelect={() => selectDay(d.number)}
                 onRemove={remove}
                 onRemoveInside={removeInside}
@@ -645,7 +665,7 @@ export function ItineraryView({
         }}
         className={cn(
           "outline-none print:hidden",
-          sidePanel && "sticky top-14 max-h-[calc(100svh-4.5rem)] overflow-y-auto motion-safe:animate-panel-in",
+          sidePanel && "sticky top-14 max-h-[calc(100svh-4.5rem)] overflow-y-auto border-l border-rule pl-8 motion-safe:animate-panel-in",
           sheetOpen && "fixed inset-0 z-50 overflow-y-auto bg-paper p-4 motion-safe:animate-sheet-in",
         )}
       >

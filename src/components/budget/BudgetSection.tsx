@@ -74,7 +74,7 @@ export async function BudgetSection({ locale, search, destination, direct, budge
 
 export function BudgetSkeleton({ locale }: { locale: Locale }) {
   return (
-    <div aria-busy="true" className="grid gap-3 rounded-md border border-rule bg-paper-raised p-5 md:p-8">
+    <div aria-busy="true" className="grid gap-3">
       <span className="sr-only">{getI18n(locale).m.budget.loading}</span>
       {[0, 1, 2].map((i) => (
         <Skeleton key={i} className="h-5 w-full" />

@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import { useMemo } from "react";
 import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
@@ -31,8 +32,12 @@ export function OpeningHours({ value, timeZone }: { value: string; timeZone: str
           {status.text}
         </p>
       ) : null}
-      <details className="mt-1 text-caption text-ink-muted">
-        <summary className="cursor-pointer select-none underline underline-offset-4">{i18n.m.hours.all}</summary>
+      <details className="group mt-1 text-caption text-ink-muted">
+        {/* The section toggles' Lucide chevron, not the browser's triangle. */}
+        <summary className="touch-target inline-flex cursor-pointer select-none list-none items-center gap-1 [&::-webkit-details-marker]:hidden">
+          <ChevronDown aria-hidden="true" size={14} strokeWidth={1.5} className="shrink-0 transition-transform duration-200 group-open:rotate-180" />
+          <span className="underline underline-offset-4">{i18n.m.hours.all}</span>
+        </summary>
         <ul className="mt-1.5 grid gap-0.5 font-mono text-micro tabular">
           {describeWeek(week, i18n).map((line) => (
             <li key={line}>{line}</li>

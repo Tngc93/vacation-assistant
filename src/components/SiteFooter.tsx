@@ -1,3 +1,4 @@
+import { ChevronDown } from "lucide-react";
 import { Caption } from "@/components/ui";
 import type { Locale } from "@/i18n/locales";
 import { getI18n, type Messages } from "@/i18n/server";
@@ -44,8 +45,12 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <p className="mt-6 max-w-sm text-caption text-ink">{m.footer.estimates}</p>
           <p className="mt-2 max-w-sm text-caption text-ink-muted">{m.footer.analytics}</p>
           {/* Installing is the browser's own flow; this only says where to find it. */}
-          <details className="mt-6 max-w-sm">
-            <summary className={`cursor-pointer text-caption ${LINK}`}>{m.pwa.install}</summary>
+          <details className="group mt-6 max-w-sm">
+            {/* The section toggles' Lucide chevron, not the browser's triangle. */}
+            <summary className="touch-target inline-flex cursor-pointer list-none items-center gap-1.5 text-caption text-ink [&::-webkit-details-marker]:hidden">
+              <ChevronDown aria-hidden="true" size={16} strokeWidth={1.5} className="transition-transform duration-200 group-open:rotate-180" />
+              <span className={LINK}>{m.pwa.install}</span>
+            </summary>
             <p className="mt-2 text-caption text-ink-muted">{m.pwa.installLead}</p>
             <ul className="mt-2 grid gap-1 text-caption text-ink">
               <li>{m.pwa.installIos}</li>

@@ -66,10 +66,11 @@ export function useAiDrawer(): Drawer {
 }
 
 function Dot({ show }: { show: boolean }) {
+  const { m } = useI18n();
   return show ? (
     <>
       <span aria-hidden="true" className="size-2 shrink-0 rounded-full bg-accent" />
-      <span className="sr-only">(yeni değişiklik)</span>
+      <span className="sr-only">{m.ai.newChange}</span>
     </>
   ) : null;
 }
@@ -90,7 +91,7 @@ export function AiTabButton() {
         if (event.key === "Escape" && drawer.open) drawer.close();
       }}
       className={cn(
-        "inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm border px-4 text-body font-medium transition-colors duration-150 ease-out lg:w-auto print:hidden",
+        "touch-target inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm border px-4 text-body font-medium transition-colors duration-150 ease-out lg:w-auto print:hidden",
         drawer.open ? "border-ink bg-ink text-paper-raised" : "border-ink text-ink hover:bg-ink hover:text-paper-raised",
       )}
     >

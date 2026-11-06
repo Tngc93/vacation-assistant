@@ -61,7 +61,7 @@ export async function PlanHero({ locale, search, destination, categories, showEv
         <Suspense fallback={<RateLineFallback className="inline-block" />}>
           <RateLine currency={destination.currency} fromLink={budgetCurrency} className="inline-flex" />
         </Suspense>
-        <Link href={editHref(search, locale)} className="text-ink underline underline-offset-4">
+        <Link href={editHref(search, locale)} className="touch-target text-ink underline underline-offset-4">
           {m.plan.edit}
         </Link>
       </div>

@@ -359,7 +359,7 @@ for (const colorScheme of ["light", "dark"] as const) {
       page.getByRole("button", { name: "Sonraki yer" }),
       page.getByRole("region", { name: "Mekân haritası" }),
       page.locator("#yerler figure"),
-      ...(await page.locator("main section[id]:not(#yerler)").all()),
+      ...(await page.locator("main section[data-plan-section]").all()),
       page.getByRole("navigation", { name: "Plan bölümleri" }),
     ];
     for (const surface of surfaces) {

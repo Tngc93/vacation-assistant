@@ -15,7 +15,15 @@ export const tr = {
     /** The link to the other language, read in that language. */
     otherLanguage: "English version",
   },
-  theme: { group: "Tema", system: "Sistem teması", light: "Açık tema", dark: "Koyu tema" },
+  theme: {
+    /** The one theme button: the mode it is in now and the one a press switches to. */
+    toggle: "Tema: {current}. Basınca: {next}",
+    /** Read out after a press. */
+    changed: "Tema: {current}",
+    system: "Sistem",
+    light: "Açık",
+    dark: "Koyu",
+  },
   footer: {
     estimates: "Fiyatlar tahminidir; satın almadan önce sağlayıcıda doğrula.",
     analytics: "Ziyaretler çerezsiz ve anonim sayılır (Vercel Web Analytics); plan içeriğin ölçülmez.",
@@ -289,8 +297,9 @@ export const tr = {
     cheapestPerAirport: "Havalimanı başına en ucuz bilet",
     differentDate: " · FARKLI TARİH",
     returnStops: " · DÖNÜŞ {stops}",
-    cheapestAdult: "EN UCUZ · 1 YETİŞKİN",
-    adult: "1 YETİŞKİN",
+    /** The ticket price is per person (the API prices one adult). */
+    cheapestPerPerson: "EN UCUZ · KİŞİ BAŞI",
+    perPerson: "KİŞİ BAŞI",
     seePrice: "Güncel fiyatı gör",
     noCache: "Bu tarihler ve ±3 gün için önbellekte uçuş yok.",
     noCacheWhy: "Önbellek yalnızca son 48 saatte aranan biletleri tutar; bu rotada uçuş olmadığı anlamına gelmez.",
@@ -320,7 +329,7 @@ export const tr = {
     back: "DÖNÜŞ",
     otherReturns: "Diğer dönüş saatleri ({count})",
     backOn: "DÖNÜŞ · {date}",
-    adultTotal: "1 YETİŞKİN · TOPLAM {total}",
+    perPersonTotal: "KİŞİ BAŞI · TOPLAM {total}",
     airports: { IST: "İstanbul Havalimanı", SAW: "Sabiha Gökçen", ESB: "Esenboğa" },
   },
   stays: {
@@ -329,10 +338,10 @@ export const tr = {
     webTitle: "Konaklama · web'de ara",
     summary: "{nights} GECE · {checkIn} → {checkOut} · {people} KİŞİ",
     noPrice:
-      "Ücretsiz bir otel fiyat kaynağı olmadığı için burada fiyat göstermiyoruz. {city} için tarihlerin dolu aramayı açıp gecelik fiyatı Bütçe bölümüne yazabilirsin.",
+      "{city} otellerini tarihlerin ve kişi sayınla hazır açıyoruz. Fiyatları burada göstermiyoruz; beğendiğin otelin gecelik fiyatını bütçene sen ekle.",
     booking: "Otelleri gör · Booking",
     googleHotels: "Otelleri gör · Google Hotels",
-    googlePeople: "Google Hotels kişi sayısını linkten almıyor; {count} kişi için orada seçmen gerekiyor.",
+    googlePeople: "Google Hotels'te kişi sayısını sayfada bir kez seç: {count}\u00a0kişi.",
   },
   budget: {
     loading: "Bütçe yükleniyor",
@@ -390,6 +399,8 @@ export const tr = {
     optional: "İSTEĞE BAĞLI",
     open: "Yapay zekâ panelini aç",
     close: "Yapay zekâ panelini kapat",
+    /** Read after the AI tab when it has a change to summarise (the accent dot). */
+    newChange: "(yeni değişiklik)",
     tab: "Yapay zekâ",
     settings: "{provider} · {model} · Bağlantı ayarları",
     keyStaysHere: "Anahtarın bu tarayıcıda kalır, sunucumuza gönderilmez. Kullanım senin hesabından ücretlendirilir.",
@@ -478,7 +489,7 @@ export const tr = {
       note: "Model web'de arar; yalnızca bulduğu sayfaya linklenebilen fiyatları gösteririz. Satın alma o sitede.",
       search: "Web'de ara",
       offerLabel: "{title}, web'de bulunan fiyat",
-      adultEstimated: "1 YETİŞKİN · TAHMİNİ",
+      perPersonEstimated: "KİŞİ BAŞI · TAHMİNİ",
       noRate: "{currency} KURU ALINAMADI · {budget} KARŞILIĞI YOK",
       rateSources: "KUR: {sources}",
       total: "TAHMİNİ TOPLAM · {count} YOLCU",

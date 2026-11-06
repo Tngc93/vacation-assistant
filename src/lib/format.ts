@@ -70,3 +70,19 @@ export function formatMoney(minor: number, currency: string, locale: Locale = "t
 export function formatTRY(amount: number, locale: Locale = "tr"): string {
   return formatMoney(Math.round(amount) * 100, "TRY", locale);
 }
+
+/** The longest part kept on one line: 24 mono characters fit a 320px phone's card (about 256px) at 12px. */
+const LONGEST_KEPT_PART = 24;
+
+/**
+ * A mono caption of " · "-separated parts ("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ") that may break only between
+ * its parts, never inside one ("1 / KİŞİ"): the spaces inside each part become no-break spaces. A part too long for
+ * a narrow phone keeps its spaces, so nothing ever overflows; a time range never breaks at its dash. One text node, so it reads and matches as before.
+ */
+export function keepPartsTogether(text: string): string {
+  return text
+    .split(" · ")
+    // No-break spaces inside a part, and word joiners around a range's dash ("17:10–19:05" breaks after "–" otherwise).
+    .map((part) => (part.length <= LONGEST_KEPT_PART ? part.replace(/ /g, "\u00a0").replace(/(\d)–(\d)/g, "$1\u2060–\u2060$2") : part))
+    .join(" · ");
+}

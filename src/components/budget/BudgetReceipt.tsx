@@ -237,7 +237,7 @@ export function BudgetReceipt({ initial, flight, rates, nights, days, pax }: Pro
         />
       </div>
 
-      <section aria-label={m.budget.receipt} className="rounded-md border border-rule bg-paper-raised px-5 py-4 shadow-ticket md:px-8 md:py-6">
+      <section aria-label={m.budget.receipt} data-object-card="" className="rounded-md border border-rule bg-paper-raised px-5 py-4 md:px-8 md:py-6">
         <Caption as="p">{f(m.budget.heading, { currency: currencyLabel(receipt.cur, locale) })}</Caption>
         {chosen !== cur ? <p className="mt-1 text-caption text-warn">{f(m.budget.noRate, { currency: chosen })}</p> : null}
         <p role="status" className="text-caption text-ink-muted empty:hidden print:hidden">

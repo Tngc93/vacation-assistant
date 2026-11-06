@@ -5,6 +5,7 @@ import { cityName, type Destination } from "@/data/destinations";
 import type { Locale } from "@/i18n/locales";
 import { getI18n } from "@/i18n/server";
 import { formatTicketDay } from "@/lib/flights/display";
+import { keepPartsTogether } from "@/lib/format";
 import { daysBetween } from "@/lib/search/dates";
 import { bookingUrl, GOOGLE_HOTELS_DEFAULT_GUESTS, googleHotelsUrl } from "@/lib/stays/links";
 
@@ -29,12 +30,12 @@ export function StayCard({ locale = "tr", destination, checkIn, checkOut, adults
   return (
     <div>
       <Caption as="p">
-        {f(m.stays.summary, {
+        {keepPartsTogether(f(m.stays.summary, {
           nights,
           checkIn: formatTicketDay(checkIn, locale).toLocaleUpperCase(intl),
           checkOut: formatTicketDay(checkOut, locale).toLocaleUpperCase(intl),
           people: adults,
-        })}
+        }))}
       </Caption>
       <p className="mt-3 max-w-2xl text-body">
         {f(m.stays.noPrice, { city: cityName(destination, locale) })}

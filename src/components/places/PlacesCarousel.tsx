@@ -169,7 +169,7 @@ function ArrowButton({ label, disabled, onClick, children }: { label: string; di
       aria-label={label}
       aria-disabled={disabled}
       onClick={disabled ? undefined : onClick}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:border-rule"
+      className="touch-target inline-flex h-9 w-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:border-rule"
     >
       {children}
     </button>
@@ -252,7 +252,7 @@ function PlaceTile({
             {f(m.places.mustSee, { rank: pad(rank) })}
           </Caption>
         ) : null}{" "}
-        <span className="mt-1 line-clamp-2 font-display text-heading leading-tight text-ink">{place.name}</span>{" "}
+        <span className="mt-1 line-clamp-2 font-display text-heading leading-tight text-ink md:line-clamp-3">{place.name}</span>{" "}
         {place.parentName ? (
           <Caption as="span" className="mt-1 block truncate">
             {f(m.places.inside, { name: place.parentName.toLocaleUpperCase(intl) })}
@@ -344,7 +344,7 @@ function EventTile({
         <Caption as="span" tone={item.trip.kind === "exact" ? "ink" : "warn"} className="block">
           {tripEventCaption(item.trip, i18n)}
         </Caption>{" "}
-        <span className="mt-1 line-clamp-2 font-display text-heading leading-tight text-ink">{event.name}</span>{" "}
+        <span className="mt-1 line-clamp-2 font-display text-heading leading-tight text-ink md:line-clamp-3">{event.name}</span>{" "}
         <Caption as="span" className="mt-auto block pt-2">
           {f(m.places.eventCaption, { type: m.events.types[event.type] })}
         </Caption>

@@ -93,13 +93,15 @@ test("the plan comes first: the first day is on screen before the AI panel, whic
   // Not modal: the days stay on screen, left of the panel.
   await expect(firstDay).toBeVisible();
   // Measured once the slide-in has settled.
-  // At the right of the section card's content.
+  // At the right of the section card's content: a 452px column (its left hairline and 32px before the panel itself).
   const plan = await contentBox(page.locator("#gun-gun-plan"));
-  await expect.poll(async () => Math.round((await aiPanel(page).boundingBox())!.x)).toBe(Math.round(plan.x + plan.width - 420));
+  await expect.poll(async () => Math.round((await aiPanel(page).boundingBox())!.x)).toBe(Math.round(plan.x + plan.width - 452));
   const dayBox = await firstDay.boundingBox();
   const panelBox = await aiPanel(page).boundingBox();
   expect(panelBox!.x).toBeGreaterThanOrEqual(dayBox!.x + dayBox!.width);
-  expect(Math.round(panelBox!.width)).toBe(420);
+  expect(Math.round(panelBox!.width)).toBe(452);
+  // The panel itself is about 420px wide inside its column.
+  expect(Math.round((await page.locator("#yapay-zeka").boundingBox())!.width)).toBe(419);
 
   await page.keyboard.press("Escape");
   await expect(aiPanel(page)).toBeHidden();

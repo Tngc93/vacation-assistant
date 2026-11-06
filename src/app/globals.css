@@ -88,10 +88,23 @@
   }
 }
 
-/* Fluid type: the top two steps shrink on mobile (44 / 32 instead of 72 / 48). */
+/*
+ * Fluid type: the top two steps shrink on mobile (44 / 32 instead of 72 / 48). The two smallest sizes, micro (11px)
+ * and fine (10px: photo credits, the stop numbers), never go under 12px on phones (≤ 480px): small screens are held
+ * further away and Lighthouse's legible-font-size check wants 12px (DESIGN.md "Type").
+ */
 :root {
   --size-display: 2.75rem;
   --size-headline: 2rem;
+  --size-micro: 0.75rem;
+  --size-fine: 0.75rem;
+}
+
+@media (width > 30rem) {
+  :root {
+    --size-micro: 0.6875rem;
+    --size-fine: 0.625rem;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -135,8 +148,10 @@
   --text-body--line-height: 1.5;
   --text-caption: 0.8125rem;
   --text-caption--line-height: 1.4;
-  --text-micro: 0.6875rem;
+  --text-micro: var(--size-micro);
   --text-micro--line-height: 1.3;
+  --text-fine: var(--size-fine);
+  --text-fine--line-height: 1.375;
 
   --radius-*: initial;
   --radius-sm: 4px;
@@ -235,6 +250,26 @@
   :root:not([data-theme="light"]) {
     --duo-shadow: var(--paper);
     --duo-highlight: var(--sea);
+  }
+}
+
+/*
+ * Phones: every control is at least 44 × 44 px to tap (DESIGN.md "Quality bar") without looking any bigger: an
+ * invisible hit area centred on it. Only on controls that are not positioned themselves.
+ */
+@utility touch-target {
+  @media (width < 48rem) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: max(100%, 2.75rem);
+      height: max(100%, 2.75rem);
+      translate: -50% -50%;
+    }
   }
 }
 
@@ -386,11 +421,14 @@ body::before {
   }
 }
 
-/* Phones: one column, the hero and the sections are cards; lighter, and wider than the corner it was. */
+/*
+ * Phones: one column of opaque cards, so the atmosphere shows in the band above the top card, the gaps and the
+ * gutters; quiet only over the gaps' coordinate at the left, full from the middle to the right edge.
+ */
 @media (width < 48rem) {
   .plan-backdrop {
     opacity: var(--pb-narrow-opacity-light);
-    mask-image: linear-gradient(to right, rgb(0 0 0 / var(--pb-narrow-left)) var(--pb-narrow-ramp-from), black var(--pb-narrow-ramp-to));
+    mask-image: linear-gradient(to right, rgb(0 0 0 / var(--pb-narrow-left)) var(--pb-narrow-quiet), black var(--pb-narrow-full));
   }
 
   :root[data-theme="dark"] .plan-backdrop {

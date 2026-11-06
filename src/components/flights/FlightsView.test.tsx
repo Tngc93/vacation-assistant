@@ -55,7 +55,7 @@ describe("FlightsView", () => {
     expect(within(tk).getByText("TK 1853")).toBeInTheDocument();
     const lh = within(istGroup).getByRole("article", { name: /5\.310 ₺/ });
     expect(within(lh).getByText(/^Lufthansa ·/).textContent).toBe("Lufthansa · LH 1301");
-    expect(within(tk).getByText("1 YETİŞKİN")).toBeInTheDocument();
+    expect(within(tk).getByText("KİŞİ BAŞI")).toBeInTheDocument();
     expect(within(tk).getByText("TAHMİNİ TOPLAM · 2 YOLCU")).toBeInTheDocument();
     expect(within(tk).getByText("14.960 ₺")).toBeInTheDocument();
     expect(within(tk).getByText("ÖNBELLEKTEN · 16 EKİ TARİHİNDE BULUNDU · TAHMİNİ")).toBeInTheDocument();
@@ -79,7 +79,7 @@ describe("FlightsView", () => {
     expect(list).toHaveAttribute("open");
     expect(within(list).getByText("DÖNÜŞ · 18 Kas Çar")).toBeVisible();
     expect(within(list).getByText("6.150 ₺")).toBeVisible();
-    expect(within(list).getByText("1 YETİŞKİN · TOPLAM 12.300 ₺")).toBeVisible();
+    expect(within(list).getByText("KİŞİ BAŞI · TOPLAM 12.300 ₺")).toBeVisible();
     expect(within(list).getByRole("link", { name: /Güncel fiyatı gör/ })).toHaveAttribute(
       "href",
       "https://www.aviasales.com/search/IST1411BCN18112?marker=4242",
@@ -178,11 +178,16 @@ describe("FlightsView", () => {
     }
   });
 
-  it("states the source and that prices are cached estimates, and flags sample data", async () => {
+  it("states the source and that prices are cached estimates, and flags sample data, once at the head of the section", async () => {
     const result = await searchFlights(istanbul, { token: null, partner: { marker: null, trs: null }, fixture: true });
-    render(<FlightsView result={result} />);
+    const { unmount } = render(<CheapestByAirport result={result} budgetRef={null} />);
     expect(screen.getByText(/KAYNAK: TRAVELPAYOUTS \(AVIASALES\).*TAHMİNİ/)).toBeInTheDocument();
     expect(screen.getByText(/ÖRNEK VERİ · GELİŞTİRME FIXTURE'I · GERÇEK FİYAT DEĞİL/)).toBeInTheDocument();
+    unmount();
+    // The full list under "Tüm uçuşları gör" does not repeat them.
+    render(<FlightsView result={result} />);
+    expect(screen.queryByText(/KAYNAK: TRAVELPAYOUTS/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/ÖRNEK VERİ/)).not.toBeInTheDocument();
   });
 
   it("says when the origin is the destination, with no prices and no links", async () => {
