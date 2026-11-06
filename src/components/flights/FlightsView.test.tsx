@@ -178,11 +178,16 @@ describe("FlightsView", () => {
     }
   });
 
-  it("states the source and that prices are cached estimates, and flags sample data", async () => {
+  it("states the source and that prices are cached estimates, and flags sample data, once at the head of the section", async () => {
     const result = await searchFlights(istanbul, { token: null, partner: { marker: null, trs: null }, fixture: true });
-    render(<FlightsView result={result} />);
+    const { unmount } = render(<CheapestByAirport result={result} budgetRef={null} />);
     expect(screen.getByText(/KAYNAK: TRAVELPAYOUTS \(AVIASALES\).*TAHMİNİ/)).toBeInTheDocument();
     expect(screen.getByText(/ÖRNEK VERİ · GELİŞTİRME FIXTURE'I · GERÇEK FİYAT DEĞİL/)).toBeInTheDocument();
+    unmount();
+    // The full list under "Tüm uçuşları gör" does not repeat them.
+    render(<FlightsView result={result} />);
+    expect(screen.queryByText(/KAYNAK: TRAVELPAYOUTS/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/ÖRNEK VERİ/)).not.toBeInTheDocument();
   });
 
   it("says when the origin is the destination, with no prices and no links", async () => {

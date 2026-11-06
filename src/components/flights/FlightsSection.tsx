@@ -10,7 +10,7 @@ import type { Locale } from "@/i18n/locales";
 import { getI18n } from "@/i18n/server";
 import { cacheCaption, formatStops, formatTicketDay, shortAirportName } from "@/lib/flights/display";
 import { withGoogleLanguage } from "@/lib/flights/links";
-import { formatTRY } from "@/lib/format";
+import { formatTRY, keepPartsTogether } from "@/lib/format";
 import { loadFlights } from "@/lib/flights/load";
 import type { AirportGroup, FlightsResult } from "@/lib/flights/search";
 import { choiceRef, chooseFlight } from "@/lib/flights/select";
@@ -101,20 +101,24 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
   const rows = result.groups.flatMap((g) => (g.tickets[0] ? [{ group: g, ticket: g.tickets[0] }] : []));
   return (
     <div className="grid gap-3">
+      {/* The honesty labels stand once, at the head of the section; the full list under it does not repeat them. */}
       {result.fixture ? (
         <Caption as="p" tone="warn" className="rounded-sm border border-warn px-3 py-2">
           {m.flights.sample}
         </Caption>
       ) : null}
+      <Caption as="p">{m.flights.source}</Caption>
       {rows.length === 0 ? <NoCachedFlights links={result.links} locale={locale} /> : null}
       <ul aria-label={m.flights.cheapestPerAirport} className="grid gap-4 md:grid-cols-2">
         {rows.map(({ group, ticket }) => {
           const cheapest = ticket.id === result.cheapestId;
           return (
+            // A container: where the price fits beside the airline it sits on the right; where it drops to its own
+            // row (phones, narrow columns) it starts on the left with its caption beside it, so no half is empty.
             <li
               key={group.airport}
               data-object-card=""
-              className="flex flex-wrap items-end justify-between gap-x-4 gap-y-3 rounded-md border border-rule bg-paper-raised px-5 py-5 md:px-6"
+              className="@container flex flex-wrap items-end justify-between gap-x-4 gap-y-3 rounded-md border border-rule bg-paper-raised px-5 py-5 md:px-6"
             >
               <div className="min-w-0">
                 <Caption as="p">
@@ -129,14 +133,17 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
                   {ticket.back ? f(m.flights.returnStops, { stops: formatStops(ticket.back.stops, i18n) }) : ""}
                 </Caption>
               </div>
-              <div className="text-right">
-                <p className={cheapest ? "font-mono text-heading tabular text-accent" : "font-mono text-heading tabular"}>
-                  {formatTRY(ticket.pricePerAdult, locale)}
-                </p>
-                <Caption as="p" tone={cheapest ? "accent" : "muted"}>
-                  {cheapest ? m.flights.cheapestAdult : m.flights.adult}
-                </Caption>
-                <div className="mt-1 flex flex-wrap justify-end gap-x-4 gap-y-1">
+              <div data-ticket-price="" className="w-full @md:w-auto @md:text-right">
+                <div className="flex flex-wrap items-baseline gap-x-3 @md:block">
+                  <p className={cheapest ? "font-mono text-heading tabular text-accent" : "font-mono text-heading tabular"}>
+                    {formatTRY(ticket.pricePerAdult, locale)}
+                  </p>
+                  <Caption as="p" tone={cheapest ? "accent" : "muted"}>
+                    {/* The price is per adult whatever the number of people, so the caption says one adult. */}
+                    {keepPartsTogether(cheapest ? m.flights.cheapestAdult : m.flights.adult)}
+                  </Caption>
+                </div>
+                <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 @md:justify-end">
                   <a href={ticket.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="touch-target inline-flex items-center gap-1 text-caption underline underline-offset-4">
                     {m.flights.seePrice}
                     <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
@@ -148,7 +155,6 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
           );
         })}
       </ul>
-      <Caption as="p">{m.flights.source}</Caption>
     </div>
   );
 }
@@ -243,15 +249,8 @@ export function FlightsView({ result, budgetRef = null, locale = "tr" }: { resul
 
   return (
     <div>
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <DirectChip selected={result.direct} />
-        <Caption as="p">{m.flights.source}</Caption>
-      </div>
-      {result.fixture ? (
-        <Caption as="p" tone="warn" className="mt-4 rounded-sm border border-warn px-3 py-2">
-          {m.flights.sample}
-        </Caption>
-      ) : null}
+      {/* The source and the sample-data band are at the head of the section (CheapestByAirport), once. */}
+      <DirectChip selected={result.direct} />
 
       <div className="mt-8 grid gap-10">
         {result.groups.map((group) => {
