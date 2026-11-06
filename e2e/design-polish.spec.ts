@@ -255,3 +255,90 @@ for (const [name, path] of [
     expect(await smallTargets(page)).toEqual([]);
   });
 }
+
+/** Berk's decisions on PR #40 (2026-11-06). */
+test.describe("design decisions", () => {
+  test("the theme is one icon button: system → light → dark → system, from the keyboard, named in both languages", async ({ page }) => {
+    await page.goto("/");
+    const header = page.locator("header");
+    const button = header.getByRole("button", { name: /^Tema:/ });
+    await expect(button).toHaveCount(1);
+    await expect(button).toHaveAccessibleName("Tema: Sistem. Basınca: Açık");
+    await expect(button).toHaveAttribute("title", "Tema: Sistem. Basınca: Açık");
+    await expect(button.locator("svg")).toHaveCount(1);
+
+    // Tab reaches it from the top of the page (after the wordmark and the language switch); Enter and Space move it on.
+    for (let i = 0; i < 6 && !(await button.evaluate((el) => el === document.activeElement)); i++) await page.keyboard.press("Tab");
+    await expect(button).toBeFocused();
+    await page.keyboard.press("Enter");
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    await expect(button).toHaveAccessibleName("Tema: Açık. Basınca: Koyu");
+    await expect(header.getByRole("status")).toHaveText("Tema: Açık");
+    await page.keyboard.press("Space");
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+    await expect(button).toBeFocused();
+    await expect(button).toHaveAccessibleName("Tema: Koyu. Basınca: Sistem");
+    await page.keyboard.press("Enter");
+    await expect(page.locator("html")).not.toHaveAttribute("data-theme");
+
+    // Remembered across pages and named in English under /en.
+    await page.keyboard.press("Enter");
+    await page.goto("/en");
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    await expect(page.locator("header").getByRole("button", { name: /^Theme:/ })).toHaveAccessibleName("Theme: Light. Press for: Dark");
+  });
+
+  test("phones: the cheapest ticket's price starts on the left with its caption beside it", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto(plan());
+    const card = page.getByRole("list", { name: "Havalimanı başına en ucuz bilet" }).locator("li").first();
+    await expect(card).toBeVisible();
+    const price = card.locator("[data-ticket-price] p").first();
+    const caption = card.locator("[data-ticket-price] p").nth(1);
+    await expect(caption).toHaveText(/1\sYETİŞKİN$/);
+    const [cardBox, priceBox, captionBox] = await Promise.all([card.boundingBox(), price.boundingBox(), caption.boundingBox()]);
+    // The price starts at the card's left padding, not at its right edge.
+    expect(priceBox!.x - cardBox!.x).toBeLessThan(32);
+    // Its caption beside it, on the same line.
+    expect(captionBox!.x).toBeGreaterThan(priceBox!.x + priceBox!.width);
+    expect(Math.abs(captionBox!.y + captionBox!.height - (priceBox!.y + priceBox!.height))).toBeLessThan(8);
+  });
+
+  test("desktop: the cheapest ticket's price stays at the right, beside the airline", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto(plan());
+    const card = page.getByRole("list", { name: "Havalimanı başına en ucuz bilet" }).locator("li").first();
+    await expect(card).toBeVisible();
+    const [cardBox, priceBox] = await Promise.all([card.boundingBox(), card.locator("[data-ticket-price] p").first().boundingBox()]);
+    expect(cardBox!.x + cardBox!.width - (priceBox!.x + priceBox!.width)).toBeLessThan(40);
+  });
+
+  test("the flights' source line and sample band show once, even with the full list open", async ({ page }) => {
+    await page.goto(plan());
+    const flights = page.locator("#ucuslar");
+    await flights.getByRole("button", { name: "Tüm uçuşları gör" }).click();
+    await expect(page.locator("#tum-ucuslar").getByRole("heading", { name: "İstanbul Havalimanı" })).toBeVisible();
+    await expect(flights.getByText(/^KAYNAK: TRAVELPAYOUTS/)).toHaveCount(1);
+    await expect(flights.getByText(/^ÖRNEK VERİ · GELİŞTİRME/)).toHaveCount(1);
+  });
+
+  test("phones: no day says it is on the map until the day map is open", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto(plan());
+    const days = page.locator("#gun-gun-plan");
+    await expect(days.getByRole("button", { name: "Haritada göster" }).first()).toBeVisible();
+    await expect(days.getByRole("button", { name: "Haritada gösteriliyor" })).toHaveCount(0);
+    await days.getByRole("button", { name: "Günün haritasını göster" }).click();
+    await expect(days.getByRole("button", { name: "Haritada gösteriliyor" })).toHaveCount(1);
+  });
+
+  test("desktop: place names in the carousel run up to three lines", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto(plan());
+    const name = page.locator("#yerler [role=list] button").first().locator("span.font-display").first();
+    await expect(name).toBeVisible();
+    await expect(name).toHaveCSS("-webkit-line-clamp", "3");
+    await page.setViewportSize({ width: 375, height: 812 });
+    await expect(name).toHaveCSS("-webkit-line-clamp", "2");
+  });
+});
