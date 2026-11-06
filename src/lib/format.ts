@@ -70,3 +70,15 @@ export function formatMoney(minor: number, currency: string, locale: Locale = "t
 export function formatTRY(amount: number, locale: Locale = "tr"): string {
   return formatMoney(Math.round(amount) * 100, "TRY", locale);
 }
+
+/**
+ * A mono caption of " · "-separated parts ("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ") that may break only between
+ * its parts, never inside one ("1 / KİŞİ"): the spaces inside each part become no-break spaces. One text node, so
+ * it reads and matches as before.
+ */
+export function keepPartsTogether(text: string): string {
+  return text
+    .split(" · ")
+    .map((part) => part.replace(/ /g, " "))
+    .join(" · ");
+}

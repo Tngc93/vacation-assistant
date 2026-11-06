@@ -329,10 +329,10 @@ export const tr = {
     webTitle: "Konaklama · web'de ara",
     summary: "{nights} GECE · {checkIn} → {checkOut} · {people} KİŞİ",
     noPrice:
-      "Ücretsiz bir otel fiyat kaynağı olmadığı için burada fiyat göstermiyoruz. {city} için tarihlerin dolu aramayı açıp gecelik fiyatı Bütçe bölümüne yazabilirsin.",
+      "{city} otellerini tarihlerin ve kişi sayınla hazır açıyoruz. Fiyatları burada göstermiyoruz; beğendiğin otelin gecelik fiyatını bütçene sen ekle.",
     booking: "Otelleri gör · Booking",
     googleHotels: "Otelleri gör · Google Hotels",
-    googlePeople: "Google Hotels kişi sayısını linkten almıyor; {count} kişi için orada seçmen gerekiyor.",
+    googlePeople: "Google Hotels'te kişi sayısını sayfada bir kez seç: {count}\u00a0kişi.",
   },
   budget: {
     loading: "Bütçe yükleniyor",
@@ -390,6 +390,8 @@ export const tr = {
     optional: "İSTEĞE BAĞLI",
     open: "Yapay zekâ panelini aç",
     close: "Yapay zekâ panelini kapat",
+    /** Read after the AI tab when it has a change to summarise (the accent dot). */
+    newChange: "(yeni değişiklik)",
     tab: "Yapay zekâ",
     settings: "{provider} · {model} · Bağlantı ayarları",
     keyStaysHere: "Anahtarın bu tarayıcıda kalır, sunucumuza gönderilmez. Kullanım senin hesabından ücretlendirilir.",

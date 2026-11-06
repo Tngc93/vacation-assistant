@@ -328,10 +328,10 @@ export const en: Messages = {
     webTitle: "Stays · search the web",
     summary: "{nights, plural, one {# NIGHT} other {# NIGHTS}} · {checkIn} → {checkOut} · {people, plural, one {# PERSON} other {# PEOPLE}}",
     noPrice:
-      "There is no free source of hotel prices, so we show none here. Open the search for {city} with your dates filled in and write the nightly price in the Budget section.",
+      "We open hotels in {city} with your dates and number of guests already filled in. Prices aren't shown here: add the nightly rate of the one you like to your budget.",
     booking: "See hotels · Booking",
     googleHotels: "See hotels · Google Hotels",
-    googlePeople: "Google Hotels does not take the number of guests from the link; choose {count} there.",
+    googlePeople: "On Google Hotels, set the guests once on the page: {count, plural, one {#\u00a0guest} other {#\u00a0guests}}.",
   },
   budget: {
     loading: "Loading the budget",
@@ -389,6 +389,8 @@ export const en: Messages = {
     optional: "OPTIONAL",
     open: "Open the AI panel",
     close: "Close the AI panel",
+    /** Read after the AI tab when it has a change to summarise (the accent dot). */
+    newChange: "(new change)",
     tab: "AI",
     settings: "{provider} · {model} · Connection settings",
     keyStaysHere: "Your key stays in this browser and is never sent to our server. Usage is billed to your own account.",

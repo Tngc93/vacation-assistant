@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatDay, formatMoney, formatTime, formatTRY } from "./format";
+import { formatDay, formatMoney, formatTime, formatTRY, keepPartsTogether } from "./format";
 
 describe("Turkish formatting", () => {
   it("formats lira with Turkish grouping and the symbol after the amount", () => {
@@ -34,5 +34,12 @@ describe("money in the budget's currency", () => {
     // Turkish grouping and decimal comma whatever the symbol's place.
     expect(formatMoney(124050, "EUR")).toMatch(/1\.240,50/);
     expect(formatMoney(124000, "EUR")).toContain("€");
+  });
+});
+
+describe("keepPartsTogether", () => {
+  it("breaks a caption only between its parts", () => {
+    expect(keepPartsTogether("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ")).toBe("4 GECE · 6 ARA PAZ → 10 ARA PER · 1 KİŞİ");
+    expect(keepPartsTogether("TAM GÜN")).toBe("TAM GÜN");
   });
 });
