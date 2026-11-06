@@ -1,7 +1,7 @@
 "use client";
 
 import { Monitor, Moon, Sun, type LucideIcon } from "lucide-react";
-import { useCallback, useSyncExternalStore } from "react";
+import { useCallback, useState, useSyncExternalStore } from "react";
 import { useI18n } from "@/i18n/client";
 import { cn } from "@/lib/cn";
 import {
@@ -11,11 +11,10 @@ import {
   type ThemePreference,
 } from "@/lib/theme";
 
-const OPTIONS: ReadonlyArray<{ value: ThemePreference; Icon: LucideIcon }> = [
-  { value: "system", Icon: Monitor },
-  { value: "light", Icon: Sun },
-  { value: "dark", Icon: Moon },
-];
+const ICONS: Record<ThemePreference, LucideIcon> = { system: Monitor, light: Sun, dark: Moon };
+
+/** Each press moves one step: system → light → dark → system. */
+export const NEXT_THEME: Record<ThemePreference, ThemePreference> = { system: "light", light: "dark", dark: "system" };
 
 const listeners = new Set<() => void>();
 
@@ -43,12 +42,18 @@ function subscribe(listener: () => void) {
   };
 }
 
-/** Three-way theme switch: follow the system, or force light / dark. */
+/**
+ * One icon button for the theme: the icon shows the mode it is in now (system, light, dark), each press moves to
+ * the next one. Its name and tooltip say both ("Tema: Sistem. Basınca: Açık"); after a press the new mode is also
+ * read out from a polite status, since not every screen reader announces a focused button's new name.
+ */
 export function ThemeToggle({ className }: { className?: string }) {
-  const { m } = useI18n();
+  const { m, f } = useI18n();
   const preference = useSyncExternalStore(subscribe, readPreference, () => "system" as const);
+  const [announced, setAnnounced] = useState("");
 
-  const select = useCallback((value: ThemePreference) => {
+  const cycle = useCallback(() => {
+    const value = NEXT_THEME[readPreference()];
     try {
       if (value === "system") {
         window.localStorage.removeItem(THEME_STORAGE_KEY);
@@ -60,34 +65,29 @@ export function ThemeToggle({ className }: { className?: string }) {
     }
     applyThemePreference(value);
     listeners.forEach((listener) => listener());
-  }, []);
+    setAnnounced(f(m.theme.changed, { current: m.theme[value] }));
+  }, [f, m]);
 
+  const Icon = ICONS[preference];
+  const label = f(m.theme.toggle, { current: m.theme[preference], next: m.theme[NEXT_THEME[preference]] });
   return (
-    <div
-      role="group"
-      aria-label={m.theme.group}
-      className={cn("inline-flex items-center gap-0.5 rounded-sm border border-rule bg-paper-raised p-0.5", className)}
-    >
-      {OPTIONS.map(({ value, Icon }) => {
-        const label = m.theme[value];
-        const pressed = preference === value;
-        return (
-          <button
-            key={value}
-            type="button"
-            aria-pressed={pressed}
-            aria-label={label}
-            title={label}
-            onClick={() => select(value)}
-            className={cn(
-              "touch-target inline-flex size-8 items-center justify-center rounded-sm transition-colors duration-150 ease-out",
-              pressed ? "bg-ink text-paper-raised" : "text-ink-muted hover:text-ink",
-            )}
-          >
-            <Icon aria-hidden="true" size={16} strokeWidth={1.5} />
-          </button>
-        );
-      })}
-    </div>
+    <>
+      <button
+        type="button"
+        aria-label={label}
+        title={label}
+        data-theme-preference={preference}
+        onClick={cycle}
+        className={cn(
+          "touch-target inline-flex size-9 items-center justify-center rounded-sm border border-rule bg-paper-raised text-ink transition-colors duration-150 ease-out hover:border-ink",
+          className,
+        )}
+      >
+        <Icon aria-hidden="true" size={16} strokeWidth={1.5} />
+      </button>
+      <span role="status" className="sr-only">
+        {announced}
+      </span>
+    </>
   );
 }

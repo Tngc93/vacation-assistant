@@ -14,7 +14,15 @@ export const en: Messages = {
     /** The link to the other language, read in that language. */
     otherLanguage: "Türkçe sürüm",
   },
-  theme: { group: "Theme", system: "System theme", light: "Light theme", dark: "Dark theme" },
+  theme: {
+    /** The one theme button: the mode it is in now and the one a press switches to. */
+    toggle: "Theme: {current}. Press for: {next}",
+    /** Read out after a press. */
+    changed: "Theme: {current}",
+    system: "System",
+    light: "Light",
+    dark: "Dark",
+  },
   footer: {
     estimates: "Prices are estimates; check with the provider before you buy.",
     analytics: "Visits are counted without cookies and anonymously (Vercel Web Analytics); your plan is never measured.",

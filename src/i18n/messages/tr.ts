@@ -15,7 +15,15 @@ export const tr = {
     /** The link to the other language, read in that language. */
     otherLanguage: "English version",
   },
-  theme: { group: "Tema", system: "Sistem teması", light: "Açık tema", dark: "Koyu tema" },
+  theme: {
+    /** The one theme button: the mode it is in now and the one a press switches to. */
+    toggle: "Tema: {current}. Basınca: {next}",
+    /** Read out after a press. */
+    changed: "Tema: {current}",
+    system: "Sistem",
+    light: "Açık",
+    dark: "Koyu",
+  },
   footer: {
     estimates: "Fiyatlar tahminidir; satın almadan önce sağlayıcıda doğrula.",
     analytics: "Ziyaretler çerezsiz ve anonim sayılır (Vercel Web Analytics); plan içeriğin ölçülmez.",
