@@ -1,6 +1,7 @@
 import { Fragment, Suspense, type ReactNode } from "react";
 import { AiDrawerProvider, AiEdgeTab, AiTabButton } from "@/components/ai/AiDrawer";
 import { Caption } from "@/components/ui";
+import { cn } from "@/lib/cn";
 import { findDestination } from "@/data/destinations";
 import type { Locale } from "@/i18n/locales";
 import { getI18n } from "@/i18n/server";
@@ -143,7 +144,12 @@ export function PlanSections({
             <section
               id={section.id}
               aria-labelledby={`${section.id}-title`}
-              className={section.print === false ? "scroll-mt-16 print:hidden" : "scroll-mt-16"}
+              className={cn(
+                // A card over the atmosphere (DESIGN.md "Plan background"); plain paper again in print.
+                "scroll-mt-16 rounded-md border border-rule bg-paper-raised p-4 shadow-ticket md:p-8",
+                "print:rounded-none print:border-0 print:bg-transparent print:p-0 print:shadow-none",
+                section.print === false && "print:hidden",
+              )}
             >
               <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-3 border-b border-rule pb-3">
                 <h2 id={`${section.id}-title`} className="font-display text-title">
