@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { buttonClasses, Caption, Ticket } from "@/components/ui";
 import { airlineName } from "@/data/airlines";
 import type { Locale } from "@/i18n/locales";
@@ -119,9 +119,11 @@ function OtherReturns({ tickets, budgetRef, locale }: { tickets: FlightTicket[];
   const i18n = getI18n(locale);
   const { m, f } = i18n;
   return (
-    <details className="mt-5 border-t border-rule pt-4">
-      <summary className="cursor-pointer select-none text-caption underline underline-offset-4">
-        {f(m.flights.otherReturns, { count: tickets.length })}
+    <details className="group mt-5 border-t border-rule pt-4">
+      {/* The section toggles' Lucide chevron, not the browser's triangle. */}
+      <summary className="touch-target inline-flex cursor-pointer select-none list-none items-center gap-1.5 text-caption [&::-webkit-details-marker]:hidden">
+        <ChevronDown aria-hidden="true" size={16} strokeWidth={1.5} className="shrink-0 transition-transform duration-200 group-open:rotate-180" />
+        <span className="underline underline-offset-4">{f(m.flights.otherReturns, { count: tickets.length })}</span>
       </summary>
       <ul className="mt-3 grid gap-3">
         {tickets.map((t) =>

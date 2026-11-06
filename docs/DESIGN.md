@@ -111,6 +111,7 @@ Scale (desktop): 72 / 48 / 32 / 22 / 16 / 13, with two small mono steps under it
 - Design mobile first at 375px, then check at 768px and 1280px. No horizontal scroll.
 - WCAG AA contrast in both themes; visible focus ring (2px `--accent`, 2px offset); everything keyboard-reachable.
 - Touch targets at least 44 × 44 px on phones, without making the control look bigger: small controls (chips, steppers, the currency chips, arrows, the stops' "Wikidata" and "Çıkar", "Bütçeye ekle") carry `touch-target`, an invisible hit area centred on them. Links inside a sentence are exempt.
+- Disclosures ("Tüm uçuşları gör", "Diğer dönüş saatleri", "Tüm saatler", the footer's "Uygulamayı telefona ekle") open with the Lucide `ChevronDown` (1.5px, turning over when open), never the browser's triangle.
 - Captions of " · "-separated parts break only between the parts, never inside one ("1 / KİŞİ"); times ("14:35–21:30") never break.
 - Turkish formatting with `Intl` and the `tr-TR` locale: `12.450 ₺`, `€1.240` (Intl places the other symbols), `14 Kas Cum`, 24-hour times. English pages use `en-GB`: `₺12,450`, `€1,240`, `14 Nov Sat`, 24-hour times; captions stay mono uppercase ("~6 KM FROM CENTRE", "INSIDE MOSCOW KREMLIN").
 - Loading states are skeleton tickets in `--rule`, never spinners in the middle of the page.
