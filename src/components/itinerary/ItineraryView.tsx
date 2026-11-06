@@ -127,13 +127,13 @@ function SourceAndRemove({ stop, onRemove }: { stop: Pick<PlanStop, "name" | "so
   const { m, f } = useI18n();
   return (
     <p className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-caption print:hidden">
-      <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+      <a href={stop.sourceUrl} target="_blank" rel="noopener noreferrer" className="touch-target underline underline-offset-4">
         {stop.source}
       </a>
       <button
         type="button"
         onClick={onRemove}
-        className="inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
+        className="touch-target inline-flex items-center gap-1 text-ink-muted underline underline-offset-4 hover:text-ink"
         aria-label={f(m.itinerary.removeLabel, { name: stop.name })}
       >
         <X aria-hidden="true" size={12} strokeWidth={1.5} />
@@ -184,7 +184,7 @@ function Stop({
         <span
           aria-hidden="true"
           className={cn(
-            "absolute -left-[0.6875rem] top-0.5 flex size-5 items-center justify-center rounded-full font-mono text-[0.625rem]",
+            "absolute -left-[0.6875rem] top-0.5 flex size-5 items-center justify-center rounded-full font-mono text-fine leading-none",
             stop.kind === "evening" ? "bg-paper-raised text-ink ring-1 ring-ink" : "bg-ink text-paper-raised",
           )}
         >
@@ -308,7 +308,14 @@ function Day({
             </Caption>
             <Caption as="span" className="mt-0.5 block">
               {tagText(day.tags, i18n)}
-              {day.window ? ` · ${day.window.start}–${day.window.end}` : ""}
+              {day.window ? (
+                <>
+                  {" · "}
+                  <span className="whitespace-nowrap">
+                    {day.window.start}–{day.window.end}
+                  </span>
+                </>
+              ) : null}
             </Caption>
           </span>
         </h3>
@@ -317,7 +324,7 @@ function Day({
             type="button"
             onClick={onSelect}
             aria-pressed={selected}
-            className={cn("text-caption underline-offset-4 print:hidden", selected ? "text-ink" : "text-ink-muted underline hover:text-ink")}
+            className={cn("touch-target text-caption underline-offset-4 print:hidden", selected ? "text-ink" : "text-ink-muted underline hover:text-ink")}
           >
             {selected ? m.itinerary.showingOnMap : m.itinerary.showOnMap}
           </button>
@@ -345,7 +352,7 @@ function Day({
         <div className="mt-4">
           <p className="text-body text-ink-muted">{noteText(day.note, i18n)}</p>
           {day.flightNote ? (
-            <a href="#ucuslar" className="mt-1 inline-block text-caption underline underline-offset-4 print:hidden">
+            <a href="#ucuslar" className="touch-target mt-1 inline-block text-caption underline underline-offset-4 print:hidden">
               {m.itinerary.betterFlights}
             </a>
           ) : null}
@@ -520,7 +527,7 @@ export function ItineraryView({
   const sidePanel = drawer.open && isDesktop;
 
   return (
-    <div className={cn(sidePanel && "grid grid-cols-[minmax(0,1fr)_26.25rem] items-start gap-8")}>
+    <div className={cn(sidePanel && "grid grid-cols-[minmax(0,1fr)_28.25rem] items-start gap-8")}>
       <div className="min-w-0">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">
@@ -645,7 +652,7 @@ export function ItineraryView({
         }}
         className={cn(
           "outline-none print:hidden",
-          sidePanel && "sticky top-14 max-h-[calc(100svh-4.5rem)] overflow-y-auto motion-safe:animate-panel-in",
+          sidePanel && "sticky top-14 max-h-[calc(100svh-4.5rem)] overflow-y-auto border-l border-rule pl-8 motion-safe:animate-panel-in",
           sheetOpen && "fixed inset-0 z-50 overflow-y-auto bg-paper p-4 motion-safe:animate-sheet-in",
         )}
       >

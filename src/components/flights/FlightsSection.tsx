@@ -113,6 +113,7 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
           return (
             <li
               key={group.airport}
+              data-object-card=""
               className="flex flex-wrap items-end justify-between gap-x-4 gap-y-3 rounded-md border border-rule bg-paper-raised px-5 py-5 md:px-6"
             >
               <div className="min-w-0">
@@ -136,7 +137,7 @@ export function CheapestByAirport({ result, budgetRef, locale = "tr" }: { result
                   {cheapest ? m.flights.cheapestAdult : m.flights.adult}
                 </Caption>
                 <div className="mt-1 flex flex-wrap justify-end gap-x-4 gap-y-1">
-                  <a href={ticket.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center gap-1 text-caption underline underline-offset-4">
+                  <a href={ticket.bookingUrl} target="_blank" rel="sponsored noopener noreferrer" className="touch-target inline-flex items-center gap-1 text-caption underline underline-offset-4">
                     {m.flights.seePrice}
                     <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.5} />
                   </a>
@@ -167,15 +168,15 @@ const airportName = (group: AirportGroup, i18n: Pick<I18n, "locale" | "m">) =>
 function NoCachedFlights({ links, locale }: { links: FlightsResult["links"]; locale: Locale }) {
   const { m } = getI18n(locale);
   return (
-    <div className="rounded-md border border-dashed border-rule px-5 py-5 md:px-6">
+    <div>
       <p className="text-body">{m.flights.noCache}</p>
       <p className="mt-1 text-body text-ink-muted">{m.flights.noCacheWhy}</p>
       <p className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-body">
-        <a href={links.aviasales} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">
+        <a href={links.aviasales} target="_blank" rel="sponsored noopener noreferrer" className="touch-target inline-flex items-center gap-1 underline underline-offset-4">
           {m.flights.seePrice}
           <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.5} />
         </a>
-        <a href={withGoogleLanguage(links.googleFlights, locale)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">
+        <a href={withGoogleLanguage(links.googleFlights, locale)} target="_blank" rel="noopener noreferrer" className="touch-target inline-flex items-center gap-1 underline underline-offset-4">
           {m.flights.openGoogleFlights}
           <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.5} />
         </a>
@@ -228,7 +229,7 @@ export function FlightsView({ result, budgetRef = null, locale = "tr" }: { resul
   const { m } = i18n;
   if (result.status === "unavailable") {
     return (
-      <div className="rounded-md border border-dashed border-rule px-5 py-6 md:px-8">
+      <div>
         <p className="max-w-2xl text-body">{m.flights.errors[result.reason]}</p>
         {result.reason === "same-city" ? null : (
           <>

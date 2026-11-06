@@ -124,7 +124,7 @@ function AreaRow({ area, cur, rates, onWrite }: { area: StayArea; cur: BudgetCur
   // The rates between the site's currency and the budget's (through TRY).
   const sources = [...new Set([area.currency, cur].flatMap((c) => (c === "TRY" || !rates[c] ? [] : [sourceLabel(rates[c].sourceName, i18n)])))];
   return (
-    <li className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 rounded-md border border-dashed border-rule bg-paper px-4 py-3">
+    <li data-object-card="" className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 rounded-md border border-dashed border-rule bg-paper px-4 py-3">
       <div className="min-w-0">
         <p className="text-body">{area.name}</p>
         <p className="mt-1 font-mono text-body tabular">

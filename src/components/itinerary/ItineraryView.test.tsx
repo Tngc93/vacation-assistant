@@ -33,8 +33,8 @@ describe("ItineraryView", () => {
     expect(screen.getByText(/UÇUŞ SEÇİLMEDİ · VARSAYIM: İLK GÜN 13:00 SONRASI, SON GÜN 13:00 ÖNCESİ/)).toBeInTheDocument();
     expect(screen.getAllByText(/^0[1-5]$/)).toHaveLength(5);
     expect(within(day(1)).getByText("14 KAS CMT")).toBeInTheDocument();
-    expect(within(day(1)).getByText(/VARIŞ GÜNÜ · YARIM GÜN · 13:00–21:30/)).toBeInTheDocument();
-    expect(within(day(2)).getByText(/TAM GÜN · 09:00–21:30/)).toBeInTheDocument();
+    expect(within(day(1)).getByText(/VARIŞ GÜNÜ · YARIM GÜN/)).toHaveTextContent("VARIŞ GÜNÜ · YARIM GÜN · 13:00–21:30");
+    expect(within(day(2)).getByText(/TAM GÜN/)).toHaveTextContent("TAM GÜN · 09:00–21:30");
     // A full day: more than the old four daytime stops, plus the evening place.
     expect(within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).length).toBeGreaterThan(5);
   });
@@ -60,7 +60,7 @@ describe("ItineraryView", () => {
     render(<ItineraryView input={input} initialSkip={[]} cityName="Barselona" center={{ lat: 41.39, lon: 2.17 }} flightTimesUnknown />);
     expect(screen.getByText("UÇUŞ SAATİ BİLİNMİYOR · VARSAYILAN SAATLER")).toBeInTheDocument();
     expect(screen.queryByText(/^UÇUŞ: /)).toBeNull();
-    expect(within(day(1)).getByText(/VARIŞ GÜNÜ · YARIM GÜN · 13:00–21:30/)).toBeInTheDocument();
+    expect(within(day(1)).getByText(/VARIŞ GÜNÜ · YARIM GÜN/)).toHaveTextContent("VARIŞ GÜNÜ · YARIM GÜN · 13:00–21:30");
   });
 
   it("shows times, category, duration, the walk between stops and 'check the hours'", () => {

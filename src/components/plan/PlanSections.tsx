@@ -144,9 +144,12 @@ export function PlanSections({
             <section
               id={section.id}
               aria-labelledby={`${section.id}-title`}
+              data-plan-section=""
               className={cn(
-                // A card over the atmosphere (DESIGN.md "Plan background"); plain paper again in print.
-                "scroll-mt-16 rounded-md border border-rule bg-paper-raised p-4 shadow-ticket md:p-8",
+                // A card over the atmosphere (DESIGN.md "Plan background"); plain paper again in print. Inside it
+                // nothing else is framed except objects (`data-object-card`: tickets, the receipt, web results, maps),
+                // and a ticket's notches show the card's paper.
+                "scroll-mt-16 rounded-md border border-rule bg-paper-raised p-4 shadow-ticket [--ticket-notch:var(--paper-raised)] md:p-8",
                 "print:rounded-none print:border-0 print:bg-transparent print:p-0 print:shadow-none",
                 section.print === false && "print:hidden",
               )}

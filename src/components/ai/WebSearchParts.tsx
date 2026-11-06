@@ -185,7 +185,7 @@ export function SearchSkeleton({ rows }: { rows: number }) {
     <div role="status" className="grid gap-3">
       <span className="sr-only">{m.ai.web.searchingSr}</span>
       {Array.from({ length: rows }, (_, i) => (
-        <div key={i} className="rounded-md border border-dashed border-rule p-5">
+        <div key={i} data-object-card="" className="rounded-md border border-dashed border-rule p-5">
           <Skeleton className="h-4 w-2/3" />
           <Skeleton className="mt-3 h-6 w-28" />
         </div>
@@ -297,7 +297,7 @@ export function GroundedResult({ result }: { result: GroundedAnswer }) {
   return (
     <div className="grid gap-3">
       <WebSourceCaption result={result} />
-      <div data-testid="grounded-result" className="grid gap-3 rounded-md border border-dashed border-rule bg-paper p-4">
+      <div data-testid="grounded-result" data-object-card="" className="grid gap-3 rounded-md border border-dashed border-rule bg-paper p-4">
         <p data-testid="grounded-text" className="whitespace-pre-wrap break-words text-body">
           {result.text}
         </p>
