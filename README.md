@@ -241,7 +241,7 @@ docs/                  PRD, DESIGN, PLAN, DEPLOY, BACKLOG and the README screens
 
 ## Quality
 
-- **Tests:** 1,791 unit and component tests in 119 files (Vitest; 4 skipped, which call live APIs only when a token is present) and 106 end-to-end tests in 21 Playwright specs, all run in CI on every push and pull request. The unit suite also runs in five time-zone and clock combinations, so nothing depends on the machine's zone or clock.
+- **Tests:** 1,871 unit and component tests in 120 files (Vitest; 4 of them skipped, as they call live APIs only when a token is present) and 191 end-to-end tests in 21 Playwright specs, all run in CI on every push and pull request. The unit suite also runs in five time-zone and clock combinations, so nothing depends on the machine's zone or clock.
 - **Accessibility:** axe in light and dark themes with zero serious or critical violations, a full keyboard tour from the home page to the budget, WCAG AA contrast checked for every colour token and measured behind every text on the plan page, 44 px touch targets and no text under 12 px on phones.
 - **Lighthouse** (production build, `npx lighthouse@12`, median of three runs, 2026-11-06; from [docs/DEPLOY.md](docs/DEPLOY.md#son-lighthouse-ölçümü)):
 

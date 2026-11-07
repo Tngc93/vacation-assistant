@@ -194,7 +194,7 @@ Vercel'e kurulum, ortam değişkenleri, Travelpayouts hesabı ve aylık veri yen
 
 ## Kalite
 
-- **Testler:** {UNIT} birim ve bileşen testi ({UNITFILES} dosya, Vitest) ve {E2E} uçtan uca test ({E2EFILES} Playwright dosyası); hepsi CI'da her push ve PR'da koşar, birim testleri beş saat dilimi/saat birleşiminde.
+- **Testler:** 1.871 birim ve bileşen testi (120 dosya, Vitest; 4'ü yalnızca token varken canlı API'ye gittiği için atlanır) ve 191 uçtan uca test (21 Playwright dosyası); hepsi CI'da her push ve PR'da koşar, birim testleri beş saat dilimi/saat birleşiminde.
 - **Erişilebilirlik:** açık ve koyu temada axe (ciddi/kritik ihlal sıfır), ana sayfadan bütçeye klavyeyle tam tur, her renk token'ı için WCAG AA kontrastı, telefonda 44 px dokunma alanı ve 12 px'ten küçük yazı yok.
 - **Lighthouse:** son ölçüm (2026-11-06, üretim build'i, 3 ölçümün medyanı) ana sayfa mobil 89 / 100 / 100 / 100, masaüstü 100 / 100 / 100 / 100; plan mobil 81 / 100 / 100 / 92\*, masaüstü 95 / 100 / 100 / 92\* (Performance / Accessibility / Best Practices / SEO). \* Plan sayfası bilerek `noindex`. Ayrıntı: [docs/DEPLOY.md](docs/DEPLOY.md#son-lighthouse-ölçümü).
 
