@@ -7,7 +7,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { I18nProvider } from "@/i18n/client";
 import { OG_LOCALE, type Locale } from "@/i18n/locales";
-import { getI18n, MESSAGES } from "@/i18n/server";
+import { clientMessages, getI18n } from "@/i18n/server";
 import { analyticsEnabled } from "@/lib/analytics";
 import { BRAND_NAME, SITE_URL } from "@/lib/brand";
 import { cn } from "@/lib/cn";
@@ -64,7 +64,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="flex min-h-dvh flex-col">
-        <I18nProvider locale={locale} messages={MESSAGES[locale]}>
+        <I18nProvider locale={locale} messages={clientMessages(locale)}>
           <a
             href="#icerik"
             className="sr-only rounded-sm bg-ink px-3 py-2 text-paper-raised focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60]"

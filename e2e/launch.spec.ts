@@ -74,11 +74,11 @@ test("robots.txt lets crawlers in and points at the sitemap", async ({ request }
   expect(body.split("\n")).toContain(`Sitemap: ${SITE_URL}/sitemap.xml`);
 });
 
-test("the sitemap lists only the home page, in Turkish and in English", async ({ request }) => {
+test("the sitemap lists only the home and privacy pages, in Turkish and in English", async ({ request }) => {
   const response = await request.get("/sitemap.xml");
   expect(response.ok()).toBe(true);
   const locs = [...(await response.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  expect(locs).toEqual([SITE_URL, `${SITE_URL}/en`]);
+  expect(locs).toEqual([SITE_URL, `${SITE_URL}/en`, `${SITE_URL}/gizlilik`, `${SITE_URL}/en/privacy`]);
 });
 
 test("the home page is indexable, a plan is not", async ({ page }) => {
