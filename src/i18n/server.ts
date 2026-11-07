@@ -20,3 +20,22 @@ export function getI18n(locale: Locale): I18n {
   }
   return i18n;
 }
+
+/** Sections only server components read; the client dictionary leaves them out (each page would carry them). */
+const SERVER_ONLY_SECTIONS = ["privacy"] as const satisfies ReadonlyArray<keyof Messages>;
+
+/**
+ * The language's messages for `<I18nProvider>`: everything but the server-only sections (the privacy page's long
+ * copy). Typed as Messages so the client types stay one; no client component reads those sections.
+ */
+const clientCache = new Map<Locale, Messages>();
+export function clientMessages(locale: Locale): Messages {
+  let messages = clientCache.get(locale);
+  if (!messages) {
+    const copy: Partial<Messages> = { ...MESSAGES[locale] };
+    for (const section of SERVER_ONLY_SECTIONS) delete copy[section];
+    messages = copy as Messages;
+    clientCache.set(locale, messages);
+  }
+  return messages;
+}

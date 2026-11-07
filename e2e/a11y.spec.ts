@@ -22,8 +22,8 @@ async function expectNoSeriousViolations(page: Page) {
 
 /** Each language's pages and the names the checks wait for. */
 const LANGUAGES = [
-  { name: "Turkish", prefix: "", home: "Nereye gidiyorsun?", day: /^1\. gün · /, ai: /^Yapay zekâ ile planla/, missing: "/bu-sayfa-yok" },
-  { name: "English", prefix: "/en", home: "Where are you going?", day: /^Day 1 · /, ai: /^Plan with AI/, missing: "/en/no-such-page" },
+  { name: "Turkish", prefix: "", home: "Nereye gidiyorsun?", day: /^1\. gün · /, ai: /^Yapay zekâ ile planla/, missing: "/bu-sayfa-yok", privacy: "/gizlilik" },
+  { name: "English", prefix: "/en", home: "Where are you going?", day: /^Day 1 · /, ai: /^Plan with AI/, missing: "/en/no-such-page", privacy: "/en/privacy" },
 ] as const;
 
 /** The plan streams in; axe runs once every section is in place (see plan-layout.spec.ts). */
@@ -56,6 +56,12 @@ for (const language of LANGUAGES) {
         await planReady(page, language.day);
         await page.locator("#gun-gun-plan").getByRole("button", { name: language.ai }).click();
         await expect(page.locator("main #yapay-zeka-panel")).toBeVisible();
+        await expectNoSeriousViolations(page);
+      });
+
+      test("privacy page has no serious accessibility violations", async ({ page }) => {
+        await page.goto(language.privacy);
+        await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
         await expectNoSeriousViolations(page);
       });
 

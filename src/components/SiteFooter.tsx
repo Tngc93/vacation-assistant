@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 import { Caption } from "@/components/ui";
-import type { Locale } from "@/i18n/locales";
+import { localePath, PRIVACY_PATH, type Locale } from "@/i18n/locales";
 import { getI18n, type Messages } from "@/i18n/server";
 import { BRAND_NAME, REPO_URL } from "@/lib/brand";
 
@@ -94,7 +95,11 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             className={LINK}
           >
             {m.footer.license}
-          </a>
+          </a>{" "}
+          ·{" "}
+          <Link href={localePath(locale, PRIVACY_PATH)} className={LINK}>
+            {m.footer.privacy}
+          </Link>
         </Caption>
       </div>
     </footer>
