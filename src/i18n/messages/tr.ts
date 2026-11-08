@@ -351,7 +351,9 @@ export const tr = {
     addToCalendar: "Takvime ekle (.ics)",
     reset: "Planı sıfırla ({count})",
     dropped: "Önerilen {count} yer saat, açılış ya da günün süresi yüzünden plana sığmadı ve dışarıda kaldı.",
-    mapCaption: "{number}. GÜN · {date} · {count} DURAK",
+    /** The day map's caption at its top left: "02 · 12 ARA CMT". */
+    mapDay: "{number} · {date}",
+    mapMarker: "{number}. durak: {name}. Planda göster",
     showDayMap: "Günün haritasını göster",
     icsFile: "{city}-gezi-plani",
     ics: {

@@ -203,9 +203,22 @@ describe("ItineraryView", () => {
     expect(screen.queryByTestId("map")).not.toBeInTheDocument();
     await user.click(within(day(3)).getByRole("button", { name: "Haritada göster" }));
     expect(screen.getByTestId("map")).toBeInTheDocument();
-    expect(screen.getByText(/^03\. GÜN · 16 KAS PZT · \d+ DURAK$/)).toBeInTheDocument();
+    // The day caption at the map's top left, read out politely when the day changes.
+    const caption = screen.getByText("03 · 16 KAS PZT");
+    expect(caption).toHaveAttribute("aria-live", "polite");
+    expect(caption.closest("[data-day-map]")).toHaveAttribute("data-active-day", "3");
+    // Phones keep the map opened per day: it does not follow the scroll.
+    expect(caption.closest("[data-day-map]")).toHaveAttribute("data-following", "manual");
     expect(scroll).toHaveBeenCalledTimes(1);
     scroll.mockRestore();
+  });
+
+  it("numbers the stops as the map numbers its markers, each with an anchor a marker click scrolls to", () => {
+    renderView();
+    const stops = within(day(2)).getAllByRole("button", { name: /durağını plandan çıkar$/ }).map((b) => b.closest("li[data-stop]")!);
+    expect(stops.map((li) => li.getAttribute("data-stop"))).toEqual(stops.map((_, i) => String(i + 1)));
+    expect(stops.map((li) => li.id)).toEqual(stops.map((_, i) => `gun-2-durak-${i + 1}`));
+    expect(stops[0]).toHaveAttribute("tabindex", "-1");
   });
 
   it("on a phone, no day says it is shown on the map until the map is open", async () => {
