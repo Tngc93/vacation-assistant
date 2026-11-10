@@ -2,7 +2,7 @@
 
 import { CalendarDays, CalendarPlus, Map as MapIcon, RotateCcw, Sparkles, X } from "lucide-react";
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type FocusEvent } from "react";
 import { AI_PANEL_ID, useAiDrawer, useIsDesktop } from "@/components/ai/AiDrawer";
 import { AiPanel } from "@/components/ai/AiPanel";
 import { Button, buttonClasses, Caption, Skeleton } from "@/components/ui";
@@ -12,6 +12,7 @@ import { useI18n } from "@/i18n/client";
 import type { I18n } from "@/i18n/i18n";
 import { cn } from "@/lib/cn";
 import { formatDay, keepPartsTogether } from "@/lib/format";
+import { numberedStops, stopAnchorId } from "@/lib/itinerary/dayMap";
 import { buildIcs } from "@/lib/itinerary/ics";
 import { serializeSkip } from "@/lib/itinerary/ids";
 import type { EveningCategory } from "@/lib/itinerary/config";
@@ -20,6 +21,7 @@ import { farCaption, transitFromCentre } from "@/lib/places/far";
 import { withLocative } from "@/lib/places/hours";
 import { isoToDate } from "@/lib/search/dates";
 import { useNearViewport } from "@/lib/useNearViewport";
+import { useActiveDay } from "./useActiveDay";
 
 const ItineraryMap = dynamic(() => import("./ItineraryMap"), {
   ssr: false,
@@ -163,19 +165,38 @@ function SubStop({ sub, onRemove }: { sub: PlanSubStop; onRemove: (sub: PlanSubS
 
 function Stop({
   stop,
+  day,
   number,
   onRemove,
   onRemoveInside,
+  onHighlight,
 }: {
   stop: PlanStop;
+  day: number;
+  /** As the day map numbers its marker (`numberedStops`). */
   number: number;
   onRemove: (stop: PlanStop) => void;
   onRemoveInside: (sub: PlanSubStop) => void;
+  /** Hovered or focused (its places inside too): the map lights its marker; null when it is left. */
+  onHighlight: (number: number | null) => void;
 }) {
   const i18n = useI18n();
   const { intl, m, f } = i18n;
+  const leave = (event: FocusEvent<HTMLLIElement>) => {
+    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) onHighlight(null);
+  };
   return (
-    <li className="relative grid grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]">
+    // A click on its map marker scrolls here and moves the focus here (tabIndex -1: no Tab stop of its own).
+    <li
+      id={stopAnchorId(day, number)}
+      tabIndex={-1}
+      data-stop={number}
+      onMouseEnter={() => onHighlight(number)}
+      onMouseLeave={() => onHighlight(null)}
+      onFocus={() => onHighlight(number)}
+      onBlur={leave}
+      className="relative grid scroll-mt-28 grid-cols-[4rem_minmax(0,1fr)] gap-3 pb-5 md:grid-cols-[5rem_minmax(0,1fr)]"
+    >
       <p className="pt-0.5 font-mono text-caption tabular text-ink">
         {stop.start}
         <span className="block text-ink-muted">{stop.end}</span>
@@ -270,6 +291,7 @@ function Day({
   onSelect,
   onRemove,
   onRemoveInside,
+  onHighlight,
   reason,
   events,
   flash = false,
@@ -286,6 +308,7 @@ function Day({
   onSelect: () => void;
   onRemove: (stop: PlanStop) => void;
   onRemoveInside: (sub: PlanSubStop) => void;
+  onHighlight: (number: number | null) => void;
   /** The model's one or two sentences for the day (plain text). */
   reason?: string;
   /** Events in town that day (exact dates only). */
@@ -370,10 +393,18 @@ function Day({
       ) : null}
       {day.stops.length ? (
         <ol className="mt-5">
-          {day.stops.flatMap((stop, i) => [
+          {numberedStops(day).flatMap(({ number, stop }) => [
             ...(stop.kind === "evening" && day.free ? [<FreeTime key="free" free={day.free} />] : []),
             <TravelLine key={`${stop.id}-travel`} stop={stop} />,
-            <Stop key={stop.id} stop={stop} number={i + 1} onRemove={onRemove} onRemoveInside={onRemoveInside} />,
+            <Stop
+              key={stop.id}
+              stop={stop}
+              day={day.number}
+              number={number}
+              onRemove={onRemove}
+              onRemoveInside={onRemoveInside}
+              onHighlight={onHighlight}
+            />,
           ])}
         </ol>
       ) : null}
@@ -442,6 +473,8 @@ export function ItineraryView({
     if (mapScroll > 0) mapRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [mapScroll]);
   const selectDay = (number: number) => {
+    // Forces the day onto the map; scroll-following goes on from there (a change still waiting is dropped).
+    holdFollowing();
     setSelectedDay(number);
     if (!isWide) {
       setMapOnPhone(true);
@@ -451,6 +484,25 @@ export function ItineraryView({
 
   const drawer = useAiDrawer();
   const isDesktop = useIsDesktop();
+  const sidePanel = drawer.open && isDesktop;
+  /*
+   * Beside the days (the map sticks next to them from md up, unless the AI side panel puts it under them) the map
+   * follows the scroll: the day whose heading has crossed the top 40% of the viewport. Phones keep their own map,
+   * opened per day.
+   */
+  const following = isWide && !sidePanel;
+  const daysWithStops = plan.days.filter((d) => d.stops.length).map((d) => d.number);
+  const holdFollowing = useActiveDay(daysWithStops, following, setSelectedDay);
+  /** The stop hovered or focused in the list; its marker is lit while its day is on the map. */
+  const [highlight, setHighlight] = useState<{ day: number; number: number } | null>(null);
+  /** A marker was clicked: bring its stop into view in the list and give it the focus. */
+  const showStop = (number: number) => {
+    const el = document.getElementById(stopAnchorId(day.number, number));
+    if (!el) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    el.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+    el.focus({ preventScroll: true });
+  };
   const panelRef = useRef<HTMLDivElement>(null);
   const [flash, setFlash] = useState<number[]>([]);
   const flashTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -534,7 +586,6 @@ export function ItineraryView({
   };
   const flight = input.flight;
 
-  const sidePanel = drawer.open && isDesktop;
 
   return (
     <div className={cn(sidePanel && "grid grid-cols-[minmax(0,1fr)_28.25rem] items-start gap-8")}>
@@ -609,31 +660,40 @@ export function ItineraryView({
                 onSelect={() => selectDay(d.number)}
                 onRemove={remove}
                 onRemoveInside={removeInside}
+                onHighlight={(number) => setHighlight(number === null ? null : { day: d.number, number })}
                 reason={ai?.reasons[d.number]}
                 events={eventNotes?.[d.date]}
                 flash={flash.includes(d.number)}
               />
             ))}
           </div>
-          <div ref={mapRef} className={cn("min-w-0 scroll-mt-6 print:hidden", !sidePanel && "md:sticky md:top-6")}>
+          <div ref={mapRef} className={cn("min-w-0 scroll-mt-6 print:hidden", !sidePanel && "md:sticky md:top-14")}>
             {/* Always rendered, so the in-view check has an element from the first render on. */}
             <div ref={mapBox}>
               {isWide || mapOnPhone ? (
-                <>
-                  <Caption as="p" className="mb-2">
-                    {f(m.itinerary.mapCaption, {
-                      number: String(day.number).padStart(2, "0"),
-                      date: dayLabel(day.date, i18n),
-                      count: day.stops.length,
-                    })}
+                <div className="relative" data-day-map="" data-active-day={day.number} data-following={following ? "scroll" : "manual"}>
+                  {/* The day on the map, read out when it changes (its text changes only then: the scroll is debounced). */}
+                  <Caption
+                    as="p"
+                    tone="ink"
+                    aria-live="polite"
+                    className="pointer-events-none absolute left-3 top-3 z-10 rounded-sm bg-paper-raised px-2 py-1"
+                  >
+                    {f(m.itinerary.mapDay, { number: String(day.number).padStart(2, "0"), date: dayLabel(day.date, i18n) })}
                   </Caption>
                   {/* MapLibre starts when the map comes into view, not with the page. */}
                   {mapNear || mapOnPhone ? (
-                    <ItineraryMap stops={day.stops} center={center} />
+                    <ItineraryMap
+                      stops={day.stops}
+                      center={center}
+                      day={day.number}
+                      highlighted={highlight?.day === day.number ? highlight.number : null}
+                      onMarkerClick={showStop}
+                    />
                   ) : (
                     <Skeleton className="h-80 w-full rounded-md md:h-[28rem]" />
                   )}
-                </>
+                </div>
               ) : (
                 <button type="button" className={buttonClasses({ variant: "secondary", className: "w-full" })} onClick={() => setMapOnPhone(true)}>
                   <MapIcon aria-hidden="true" size={16} strokeWidth={1.5} />

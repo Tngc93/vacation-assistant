@@ -60,6 +60,7 @@ describe("message files", () => {
       "events.types.festival",
       "flights.airports.ESB",
       "flights.airports.SAW",
+      "itinerary.mapDay",
       "og.planCountry",
     ]);
   });

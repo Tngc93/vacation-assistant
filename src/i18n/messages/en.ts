@@ -349,7 +349,9 @@ export const en: Messages = {
     addToCalendar: "Add to calendar (.ics)",
     reset: "Reset the plan ({count})",
     dropped: "{count, plural, one {# suggested place} other {# suggested places}} did not fit the plan because of the time, opening hours or the length of the day.",
-    mapCaption: "DAY {number} · {date} · {count, plural, one {# STOP} other {# STOPS}}",
+    /** The day map's caption at its top left: "02 · 12 DEC SAT". */
+    mapDay: "{number} · {date}",
+    mapMarker: "Stop {number}: {name}. Show in the plan",
     showDayMap: "Show the day's map",
     icsFile: "{city}-trip-plan",
     ics: {
